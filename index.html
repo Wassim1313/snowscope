@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SnowScope snow depth map — Alps &amp; North America ski resorts</title>
+<meta name="description" content="Free live snow depth map for ski resorts in the Alps and North America: today's snow depth, fresh snow, where to ski and a 7-day forecast for every resort.">
+<link rel="canonical" href="https://wassim1313.github.io/snowscope/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowScope">
+<meta property="og:title" content="SnowScope snow depth map">
+<meta property="og:description" content="Free live snow depth map and snow forecasts for ski resorts.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0f8b8d">
+<link rel="icon" href="static/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css"
+      integrity="sha384-MinO0mNliZ3vwppuPOUnGa+iq619pfMhLVUXfC4LHwSCvF9H+6P/KO4Q7qBOYV5V" crossorigin="anonymous">
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div id="map" role="region" aria-label="Snow depth map"></div>
+
+<div class="ui top">
+  <form class="card search" id="search" role="search" autocomplete="off">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.8l-.3-.3A6.5 6.5 0 1 0 9.5 16a6.5 6.5 0 0 0 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></svg>
+    <input id="q" type="search" placeholder="Search ski resorts" aria-label="Search ski resorts" minlength="2" maxlength="64">
+    <ul id="results" class="results" role="listbox" hidden></ul>
+  </form>
+  <div class="card legend" id="legend">
+    <div class="lg-row"><span class="lg-title">Snow depth <small>cm</small></span>
+      <span class="ramp" aria-hidden="true"></span>
+      <span class="lg-ticks"><span>1</span><span>50</span><span>150+</span></span></div>
+    <div class="lg-meta" id="legend-meta">5 km snow model</div>
+  </div>
+</div>
+
+<div class="ui side">
+  <button class="fab" id="layers-btn" aria-label="Layers" aria-expanded="false">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16.5 4.6 10.8 3 12l9 7 9-7-1.6-1.2zM12 14l9-7-9-7-9 7z"/></svg></button>
+  <div class="card layers" id="layers" hidden>
+    <label><input type="checkbox" data-layer="snow" checked> Snow depth</label>
+    <label><input type="checkbox" data-layer="spots" checked> Where to ski</label>
+    <label><input type="checkbox" data-layer="resorts" checked> Resorts</label>
+    <label><input type="checkbox" data-layer="pistes" checked> Pistes &amp; lifts</label>
+  </div>
+  <button class="fab" id="locate-btn" aria-label="My location">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm9 3h-2.1A7 7 0 0 0 13 5.1V3h-2v2.1A7 7 0 0 0 5.1 11H3v2h2.1a7 7 0 0 0 5.9 5.9V21h2v-2.1a7 7 0 0 0 5.9-5.9H21zm-9 6a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/></svg></button>
+</div>
+
+<div class="ui bottom">
+  <div class="card app-banner" id="app-banner">
+    <span><strong>SnowScope app</strong> · 1 km snow, alerts, offline maps</span>
+    <a class="btn" id="app-link" href="https://play.google.com/store/apps/details?id=ma.atlaslabs.snowscope" rel="noopener">Get the app</a>
+    <button class="x" id="banner-x" aria-label="Hide">×</button>
+  </div>
+  <div class="card days">
+    <div class="days-head"><strong id="day-label">Today</strong>
+      <span class="pill" id="day-kind">forecast</span>
+      <span class="hint" id="hint"></span></div>
+    <div class="day-chips" id="days" role="tablist" aria-label="Day"></div>
+  </div>
+  <p class="foot"><a href="privacy/">Privacy</a> · No cookies, no tracking ·
+    <button class="link" id="credits-btn">Data credits</button></p>
+</div>
+
+<dialog id="credits"><h2>Data credits</h2><div id="credits-body">Loading…</div>
+  <form method="dialog"><button class="btn">Close</button></form></dialog>
+
+<noscript><div class="noscript"><h1>SnowScope snow depth map</h1>
+  <p>The interactive map needs JavaScript. Browse the <a href="https://wassim1313.github.io/snowscope/">snow forecast for every ski resort</a>.</p></div></noscript>
+
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"
+        integrity="sha384-SYKAG6cglRMN0RVvhNeBY0r3FYKNOJtznwA0v7B5Vp9tr31xAHsZC0DqkQ/pZDmj" crossorigin="anonymous"></script>
+<script src="config.js"></script>
+<script src="static/app.js" defer></script>
+</body>
+</html>
