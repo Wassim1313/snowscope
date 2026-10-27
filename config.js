@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://recommends-regions-decorative-owned.trycloudflare.com";
+window.SNOWSCOPE_API = "https://describing-larger-persistent-watches.trycloudflare.com";
