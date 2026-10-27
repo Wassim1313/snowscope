@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://pills-sprint-bingo-worthy.trycloudflare.com";
+window.SNOWSCOPE_API = "https://partnership-accounts-space-occupational.trycloudflare.com";
