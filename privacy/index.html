@@ -2,9 +2,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>SnowScope privacy policy</title>
 <link rel="icon" href="../static/icon.svg"><link rel="stylesheet" href="../static/page.css"></head>
 <body><main class="doc" style="max-width:760px;margin:0 auto;padding:16px"><h1>SnowScope privacy policy</h1>
-<p><em>Version 1.0 — 25 October 2026. Publisher: Atlas Labs. Contact: atlaslabsdaba@gmail.com.</em></p>
+<p><em>Version 1.1 — 27 October 2026. Publisher: Atlas Labs. Contact: atlaslabsdaba@gmail.com.</em></p>
 <p>SnowScope shows snow forecasts, snow maps and ski-touring information. We collect as little as
-possible: no advertising, no analytics or crash-reporting SDK, no selling of data.</p>
+possible: no analytics SDK and no selling of data. Free users may see ads (see below); during the current
+test phase all features are free and no ads are shown.</p>
 <h2>What the app sends, and why</h2>
 <table>
 <thead>
@@ -80,6 +81,27 @@ possible: no advertising, no analytics or crash-reporting SDK, no selling of dat
 <td>Draw peak names over the view</td>
 <td>Not kept</td>
 </tr>
+<tr>
+<td>Snow-depth photo (Measure snow)</td>
+<td>Only when you measure</td>
+<td>Our server, which reads the depth and <strong>deletes the photo</strong> right away</td>
+<td>Measure snow depth</td>
+<td>Not kept — unless you tick "share as observation": then the photo, its depth and the map point are shown to other users on the snow-photos layer (location metadata in the image is removed)</td>
+</tr>
+<tr>
+<td>App language and phone time zone</td>
+<td>With every request / device registration</td>
+<td>Our server</td>
+<td>Answer in your language, no alerts at night</td>
+<td>Until you delete your data</td>
+</tr>
+<tr>
+<td>Crash report (error text, app version, phone model)</td>
+<td>Only after the app crashed</td>
+<td>Our server</td>
+<td>Fix bugs</td>
+<td>90 days</td>
+</tr>
 </tbody>
 </table>
 <p>Location is used only while you use the map's "my location", record a track or open the skyline
@@ -90,6 +112,15 @@ tiles), Amazon Web Services public datasets (terrain tiles), OpenStreetMap Overp
 (peak names for the skyline camera), GitHub Pages (the app's server address) and Cloudflare
 (which carries the traffic to our server). Weather data from Open-Meteo is fetched <strong>by our
 server</strong>, so Open-Meteo does not see you.</p>
+<h2>Advertising (free version only)</h2>
+<p>When advertising is active (not during the current test phase), free users may see Google AdMob ads. Google
+may use the advertising ID and cookies to show and measure ads; in the EU/UK/Switzerland we ask for your
+consent first (Google's consent form), and you can change it in About → Privacy options. Premium users see
+no ads. Google's privacy policy: https://policies.google.com/privacy</p>
+<h2>Hotel and chalet links</h2>
+<p>"Hotels &amp; chalets nearby" opens Booking.com (or a partner such as Stay22) in your browser with only the
+place, dates and number of guests in the link — never your account, id or position. Those sites have their
+own privacy policies; we may earn a commission from bookings.</p>
 <h2>Payments</h2>
 <p>Subscriptions are handled by Google Play; we never see card details. Cancel any time in Google
 Play → Subscriptions.</p>
