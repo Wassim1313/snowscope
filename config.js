@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://sampling-rocket-likewise-plenty.trycloudflare.com";
+window.SNOWSCOPE_API = "https://governor-colon-static-mixture.trycloudflare.com";
