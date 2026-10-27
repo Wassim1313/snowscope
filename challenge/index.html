@@ -27,6 +27,15 @@ h2{font-size:17px;color:var(--navy);margin:22px 0 6px}
 ol,ul{padding-left:20px;margin:6px 0}
 li{margin:3px 0}
 .meta{background:var(--ice);border-radius:14px;padding:12px 14px;font-size:14px;color:var(--navy)}
+.lb{border:1px solid var(--line);border-radius:16px;padding:6px 16px 12px;margin:0 0 18px}
+.lb h2{margin:12px 0 4px}
+.lb ol{list-style:none;padding:0;margin:6px 0 0}
+.lb li{display:flex;gap:10px;align-items:center;padding:7px 0;border-top:1px solid var(--line);font-size:15px}
+.lb li:first-child{border-top:0}
+.lb .rk{width:28px;font-weight:800;color:var(--blue)}
+.lb .nm{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lb .ct{font-weight:700;color:var(--navy)}
+.lbnote{margin:0;color:var(--mute);font-size:14px}
 footer{margin-top:30px;font-size:13px;color:var(--mute)}
 a{color:var(--blue)}
 </style>
@@ -34,6 +43,7 @@ a{color:var(--blue)}
 <body>
 <main>
 <header><h1>SnowScope Snow Challenge 2026-27</h1><p>€500 · 6 Nov 2026 – 30 Apr 2027 · #SnowScopeChallenge</p></header>
+<div class="lb" id="lb"><h2 id="lb-h">Leaderboard</h2><p class="lbnote" id="lb-note"></p><ol id="lb-list"></ol></div>
 <nav id="langs">
   <button data-l="en">English</button><button data-l="fr">Français</button><button data-l="de">Deutsch</button>
   <button data-l="it">Italiano</button><button data-l="es">Español</button>
@@ -41,16 +51,20 @@ a{color:var(--blue)}
 
 <section data-l="en">
 <p class="meta">Organiser: Atlas Labs, publisher of the SnowScope app. Contact: <a href="mailto:atlaslabsdaba@gmail.com">atlaslabsdaba@gmail.com</a></p>
-<h2>1. Prize and dates</h2>
-<p>The best snow photo or video of the season wins one prize of €500, paid by bank transfer or PayPal. Entries are accepted from 6 November 2026 to 30 April 2027 (23:59 Paris time). The winner is announced by 15 May 2027.</p>
+<h2>1. Prizes and dates</h2>
+<p><b>Prize 1: €500</b> — most verified referred installs</p>
+<p>Prizes are paid by bank transfer or PayPal. Entries are accepted from 6 November 2026 to 30 April 2027 (23:59 Paris time). The winners are announced by 15 May 2027.</p>
 <h2>2. Who can enter</h2>
 <p>Anyone aged 18 or over. Entry is free, no purchase necessary. Void where prohibited by law. Atlas Labs staff and their families cannot win.</p>
 <h2>3. How to enter</h2>
-<ol><li>Post your photo or video on Instagram with <b>#SnowScopeChallenge</b> and tag <b>@snowscope.app</b> (your account must be public so we can see it), or</li>
-<li>submit it in the SnowScope app (share card or snow photo) and tick “Enter the challenge”.</li></ol>
-<p>You may enter several times; each entry is judged separately. One prize per person.</p>
-<h2>4. Judging</h2>
-<p>The SnowScope team picks the winner on: the snow (how well it shows the conditions), creativity, and mountain spirit. The decision is final. If the winner does not answer within 14 days, another entry may be chosen.</p>
+<ol><li>Post a snow photo or video on Instagram with <b>#SnowScopeChallenge</b>, tag <b>@snowscope.app</b> and add your personal SnowScope link (in the app: Share → my link / QR). Your account must be public so we can see the post.</li>
+<li>Register your post in the SnowScope app (“Enter the challenge”) so we can match your link to your post and show your name on the leaderboard.</li></ol>
+<p>Share your link or QR code as much as you like. One prize per person.</p>
+<h2>4. How the winner is chosen</h2>
+<ul><li>The prize goes to the participant who brings the most people to SnowScope through their own link or QR code: the number of <b>verified referred installs</b>.</li>
+<li>A referred install is verified when a new device installed SnowScope through your link and opened the app on at least 3 different days within 14 days of installing. Each device counts once. Your own phone or account does not count.</li>
+<li>Tie-break: if participants have the same number of verified installs, the most Instagram likes on their entry post (checked by the SnowScope team on the public post) wins.</li>
+<li>Fraud is excluded: installs bought or generated in bulk (for example many installs on one day with no use), fake accounts or devices. The organiser may disqualify any participant for fraud. The SnowScope team's count is final. If a winner does not answer within 14 days, the next participant wins.</li></ul>
 <h2>5. Your content</h2>
 <ul><li>You confirm the content is yours and that everyone shown agrees to appear in it.</li>
 <li>You give Atlas Labs a free, non-exclusive licence to repost your entry on SnowScope channels (app, website, social media), always with credit to you. You keep your rights.</li>
@@ -65,16 +79,20 @@ a{color:var(--blue)}
 
 <section data-l="fr">
 <p class="meta">Organisateur : Atlas Labs, éditeur de l'application SnowScope. Contact : <a href="mailto:atlaslabsdaba@gmail.com">atlaslabsdaba@gmail.com</a></p>
-<h2>1. Lot et dates</h2>
-<p>La plus belle photo ou vidéo de neige de la saison gagne un lot unique de 500 €, versé par virement bancaire ou PayPal. Participations du 6 novembre 2026 au 30 avril 2027 (23 h 59, heure de Paris). Le gagnant est annoncé au plus tard le 15 mai 2027.</p>
+<h2>1. Lots et dates</h2>
+<p><b>Lot 1 : 500 €</b> — le plus d'installations parrainées vérifiées</p>
+<p>Les lots sont versés par virement bancaire ou PayPal. Participations du 6 novembre 2026 au 30 avril 2027 (23 h 59, heure de Paris). Les gagnants sont annoncés au plus tard le 15 mai 2027.</p>
 <h2>2. Qui peut participer</h2>
 <p>Toute personne âgée de 18 ans ou plus. Participation gratuite et sans obligation d'achat. Nul là où la loi l'interdit. Le personnel d'Atlas Labs et sa famille ne peuvent pas gagner.</p>
 <h2>3. Comment participer</h2>
-<ol><li>Publiez votre photo ou vidéo sur Instagram avec <b>#SnowScopeChallenge</b> et identifiez <b>@snowscope.app</b> (compte public pour que nous puissions la voir), ou</li>
-<li>envoyez-la dans l'application SnowScope (carte de partage ou photo de neige) en cochant « Participer au concours ».</li></ol>
-<p>Plusieurs participations possibles, chacune jugée séparément. Un seul lot par personne.</p>
-<h2>4. Jury</h2>
-<p>L'équipe SnowScope choisit le gagnant selon : la neige (comment la photo montre les conditions), la créativité et l'esprit montagne. La décision est définitive. Sans réponse du gagnant sous 14 jours, une autre participation peut être choisie.</p>
+<ol><li>Publiez une photo ou une vidéo de neige sur Instagram avec <b>#SnowScopeChallenge</b>, identifiez <b>@snowscope.app</b> et ajoutez votre lien SnowScope personnel (dans l'application : Partager → mon lien / QR). Votre compte doit être public pour que nous puissions voir la publication.</li>
+<li>Enregistrez votre publication dans l'application SnowScope (« Participer au concours ») pour que nous puissions relier votre lien à votre publication et afficher votre nom dans le classement.</li></ol>
+<p>Partagez votre lien ou votre QR code autant que vous voulez. Un seul lot par personne.</p>
+<h2>4. Désignation du gagnant</h2>
+<ul><li>Le lot revient au participant qui amène le plus de personnes sur SnowScope avec son propre lien ou QR code : le nombre d'<b>installations parrainées vérifiées</b>.</li>
+<li>Une installation parrainée est vérifiée quand un nouvel appareil a installé SnowScope via votre lien et ouvert l'application au moins 3 jours différents dans les 14 jours suivant l'installation. Chaque appareil compte une fois. Votre propre téléphone ou compte ne compte pas.</li>
+<li>Départage : en cas d'égalité du nombre d'installations vérifiées, le plus de « J'aime » Instagram sur la publication du concours (vérifié par l'équipe SnowScope sur la publication publique) l'emporte.</li>
+<li>La fraude est exclue : installations achetées ou générées en masse (par exemple beaucoup d'installations le même jour sans utilisation), faux comptes ou faux appareils. L'organisateur peut disqualifier tout participant pour fraude. Le décompte de l'équipe SnowScope fait foi. Sans réponse d'un gagnant sous 14 jours, le participant suivant gagne.</li></ul>
 <h2>5. Votre contenu</h2>
 <ul><li>Vous confirmez être l'auteur du contenu et que toutes les personnes visibles acceptent d'y figurer.</li>
 <li>Vous accordez à Atlas Labs une licence gratuite et non exclusive pour republier votre participation sur les canaux SnowScope (application, site, réseaux sociaux), toujours avec votre nom. Vous gardez vos droits.</li>
@@ -89,16 +107,20 @@ a{color:var(--blue)}
 
 <section data-l="de">
 <p class="meta">Veranstalter: Atlas Labs, Herausgeber der App SnowScope. Kontakt: <a href="mailto:atlaslabsdaba@gmail.com">atlaslabsdaba@gmail.com</a></p>
-<h2>1. Preis und Zeitraum</h2>
-<p>Das beste Schneefoto oder -video der Saison gewinnt einen Preis von 500 €, ausgezahlt per Banküberweisung oder PayPal. Teilnahme vom 6. November 2026 bis 30. April 2027 (23:59 Uhr Pariser Zeit). Der Gewinner wird bis zum 15. Mai 2027 bekannt gegeben.</p>
+<h2>1. Preise und Zeitraum</h2>
+<p><b>1. Preis: 500 €</b> — die meisten bestätigten geworbenen Installationen</p>
+<p>Die Preise werden per Banküberweisung oder PayPal ausgezahlt. Teilnahme vom 6. November 2026 bis 30. April 2027 (23:59 Uhr Pariser Zeit). Die Gewinner werden bis zum 15. Mai 2027 bekannt gegeben.</p>
 <h2>2. Teilnahmeberechtigt</h2>
 <p>Alle ab 18 Jahren. Die Teilnahme ist kostenlos und unabhängig von einem Kauf. Ungültig, wo gesetzlich verboten. Mitarbeitende von Atlas Labs und ihre Angehörigen sind vom Gewinn ausgeschlossen.</p>
 <h2>3. So machst du mit</h2>
-<ol><li>Poste dein Foto oder Video auf Instagram mit <b>#SnowScopeChallenge</b> und markiere <b>@snowscope.app</b> (öffentliches Konto, damit wir es sehen), oder</li>
-<li>reiche es in der SnowScope-App ein (Teilen-Karte oder Schneefoto) und setze das Häkchen „An der Challenge teilnehmen“.</li></ol>
-<p>Mehrere Beiträge sind möglich, jeder wird einzeln bewertet. Ein Preis pro Person.</p>
-<h2>4. Bewertung</h2>
-<p>Das SnowScope-Team wählt den Gewinner nach: Schnee (wie gut die Bedingungen zu sehen sind), Kreativität und Bergspirit. Die Entscheidung ist endgültig. Meldet sich der Gewinner nicht innerhalb von 14 Tagen, kann ein anderer Beitrag gewählt werden.</p>
+<ol><li>Poste ein Schneefoto oder -video auf Instagram mit <b>#SnowScopeChallenge</b>, markiere <b>@snowscope.app</b> und füge deinen persönlichen SnowScope-Link hinzu (in der App: Teilen → mein Link / QR). Dein Konto muss öffentlich sein, damit wir den Beitrag sehen.</li>
+<li>Melde deinen Beitrag in der SnowScope-App an („An der Challenge teilnehmen“), damit wir deinen Link deinem Beitrag zuordnen und deinen Namen in der Rangliste zeigen können.</li></ol>
+<p>Teile deinen Link oder QR-Code so oft du willst. Ein Preis pro Person.</p>
+<h2>4. So wird der Gewinner ermittelt</h2>
+<ul><li>Den Preis gewinnt, wer über den eigenen Link oder QR-Code die meisten Menschen zu SnowScope bringt: die Zahl der <b>bestätigten geworbenen Installationen</b>.</li>
+<li>Eine geworbene Installation ist bestätigt, wenn ein neues Gerät SnowScope über deinen Link installiert und die App an mindestens 3 verschiedenen Tagen innerhalb von 14 Tagen nach der Installation geöffnet hat. Jedes Gerät zählt einmal. Dein eigenes Handy oder Konto zählt nicht.</li>
+<li>Gleichstand: Bei gleicher Zahl bestätigter Installationen gewinnt, wer die meisten Instagram-Likes auf dem Challenge-Beitrag hat (vom SnowScope-Team am öffentlichen Beitrag geprüft).</li>
+<li>Betrug ist ausgeschlossen: gekaufte oder massenhaft erzeugte Installationen (z. B. viele Installationen an einem Tag ohne Nutzung), falsche Konten oder Geräte. Der Veranstalter kann Teilnehmende wegen Betrugs ausschließen. Die Zählung des SnowScope-Teams ist maßgeblich. Meldet sich ein Gewinner nicht innerhalb von 14 Tagen, gewinnt der Nächste.</li></ul>
 <h2>5. Deine Inhalte</h2>
 <ul><li>Du bestätigst, dass der Inhalt von dir stammt und alle gezeigten Personen einverstanden sind.</li>
 <li>Du gibst Atlas Labs eine kostenlose, nicht exklusive Lizenz, deinen Beitrag auf SnowScope-Kanälen (App, Website, soziale Medien) mit Namensnennung erneut zu veröffentlichen. Deine Rechte bleiben bei dir.</li>
@@ -113,16 +135,20 @@ a{color:var(--blue)}
 
 <section data-l="it">
 <p class="meta">Organizzatore: Atlas Labs, editore dell'app SnowScope. Contatto: <a href="mailto:atlaslabsdaba@gmail.com">atlaslabsdaba@gmail.com</a></p>
-<h2>1. Premio e date</h2>
-<p>La migliore foto o video di neve della stagione vince un premio unico di 500 €, pagato con bonifico bancario o PayPal. Partecipazioni dal 6 novembre 2026 al 30 aprile 2027 (ore 23:59, ora di Parigi). Il vincitore sarà annunciato entro il 15 maggio 2027.</p>
+<h2>1. Premi e date</h2>
+<p><b>Premio 1: 500 €</b> — il maggior numero di installazioni invitate verificate</p>
+<p>I premi sono pagati con bonifico bancario o PayPal. Partecipazioni dal 6 novembre 2026 al 30 aprile 2027 (ore 23:59, ora di Parigi). I vincitori saranno annunciati entro il 15 maggio 2027.</p>
 <h2>2. Chi può partecipare</h2>
 <p>Chiunque abbia almeno 18 anni. Partecipazione gratuita, nessun acquisto necessario. Nullo dove vietato dalla legge. Il personale di Atlas Labs e i loro familiari non possono vincere.</p>
 <h2>3. Come partecipare</h2>
-<ol><li>Pubblica la tua foto o il tuo video su Instagram con <b>#SnowScopeChallenge</b> e tagga <b>@snowscope.app</b> (profilo pubblico, così possiamo vederlo), oppure</li>
-<li>invialo nell'app SnowScope (scheda di condivisione o foto della neve) spuntando “Partecipa alla sfida”.</li></ol>
-<p>Puoi partecipare più volte; ogni contenuto è valutato separatamente. Un solo premio per persona.</p>
-<h2>4. Giuria</h2>
-<p>Il team SnowScope sceglie il vincitore in base a: la neve (quanto bene mostra le condizioni), la creatività e lo spirito di montagna. La decisione è definitiva. Se il vincitore non risponde entro 14 giorni, può essere scelto un altro contenuto.</p>
+<ol><li>Pubblica una foto o un video di neve su Instagram con <b>#SnowScopeChallenge</b>, tagga <b>@snowscope.app</b> e aggiungi il tuo link personale SnowScope (nell'app: Condividi → il mio link / QR). Il profilo deve essere pubblico perché possiamo vedere il post.</li>
+<li>Registra il tuo post nell'app SnowScope (“Partecipa alla sfida”) così possiamo collegare il tuo link al tuo post e mostrare il tuo nome in classifica.</li></ol>
+<p>Condividi il tuo link o QR code quanto vuoi. Un solo premio per persona.</p>
+<h2>4. Come si sceglie il vincitore</h2>
+<ul><li>Il premio va al partecipante che porta più persone su SnowScope con il proprio link o QR code: il numero di <b>installazioni invitate verificate</b>.</li>
+<li>Un'installazione invitata è verificata quando un nuovo dispositivo ha installato SnowScope dal tuo link e ha aperto l'app in almeno 3 giorni diversi entro 14 giorni dall'installazione. Ogni dispositivo conta una volta. Il tuo telefono o account non conta.</li>
+<li>Spareggio: a parità di installazioni verificate vince chi ha più like Instagram sul post della sfida (controllati dal team SnowScope sul post pubblico).</li>
+<li>Le frodi sono escluse: installazioni acquistate o generate in massa (ad esempio molte installazioni nello stesso giorno senza utilizzo), account o dispositivi falsi. L'organizzatore può squalificare qualsiasi partecipante per frode. Il conteggio del team SnowScope è definitivo. Se un vincitore non risponde entro 14 giorni, vince il partecipante successivo.</li></ul>
 <h2>5. I tuoi contenuti</h2>
 <ul><li>Confermi che il contenuto è tuo e che tutte le persone ritratte acconsentono.</li>
 <li>Concedi ad Atlas Labs una licenza gratuita e non esclusiva per ripubblicare il tuo contenuto sui canali SnowScope (app, sito, social), sempre citandoti. I diritti restano tuoi.</li>
@@ -137,16 +163,20 @@ a{color:var(--blue)}
 
 <section data-l="es">
 <p class="meta">Organizador: Atlas Labs, editor de la app SnowScope. Contacto: <a href="mailto:atlaslabsdaba@gmail.com">atlaslabsdaba@gmail.com</a></p>
-<h2>1. Premio y fechas</h2>
-<p>La mejor foto o vídeo de nieve de la temporada gana un único premio de 500 €, pagado por transferencia bancaria o PayPal. Participaciones del 6 de noviembre de 2026 al 30 de abril de 2027 (23:59, hora de París). El ganador se anunciará antes del 15 de mayo de 2027.</p>
+<h2>1. Premios y fechas</h2>
+<p><b>Premio 1: 500 €</b> — más instalaciones referidas verificadas</p>
+<p>Los premios se pagan por transferencia bancaria o PayPal. Participaciones del 6 de noviembre de 2026 al 30 de abril de 2027 (23:59, hora de París). Los ganadores se anunciarán antes del 15 de mayo de 2027.</p>
 <h2>2. Quién puede participar</h2>
 <p>Cualquier persona mayor de 18 años. Participación gratuita, sin obligación de compra. Nulo donde lo prohíba la ley. El personal de Atlas Labs y sus familiares no pueden ganar.</p>
 <h2>3. Cómo participar</h2>
-<ol><li>Publica tu foto o vídeo en Instagram con <b>#SnowScopeChallenge</b> y etiqueta a <b>@snowscope.app</b> (cuenta pública para que podamos verlo), o</li>
-<li>envíalo en la app SnowScope (tarjeta para compartir o foto de nieve) marcando «Participar en el concurso».</li></ol>
-<p>Puedes participar varias veces; cada participación se valora por separado. Un premio por persona.</p>
-<h2>4. Jurado</h2>
-<p>El equipo de SnowScope elige al ganador según: la nieve (lo bien que muestra las condiciones), la creatividad y el espíritu de montaña. La decisión es definitiva. Si el ganador no responde en 14 días, se podrá elegir otra participación.</p>
+<ol><li>Publica una foto o un vídeo de nieve en Instagram con <b>#SnowScopeChallenge</b>, etiqueta a <b>@snowscope.app</b> y añade tu enlace personal de SnowScope (en la app: Compartir → mi enlace / QR). Tu cuenta debe ser pública para que podamos ver la publicación.</li>
+<li>Registra tu publicación en la app SnowScope («Participar en el concurso») para que podamos relacionar tu enlace con tu publicación y mostrar tu nombre en la clasificación.</li></ol>
+<p>Comparte tu enlace o código QR todo lo que quieras. Un premio por persona.</p>
+<h2>4. Cómo se elige al ganador</h2>
+<ul><li>El premio es para el participante que lleve a más personas a SnowScope con su propio enlace o código QR: el número de <b>instalaciones referidas verificadas</b>.</li>
+<li>Una instalación referida está verificada cuando un dispositivo nuevo instaló SnowScope desde tu enlace y abrió la app al menos 3 días distintos en los 14 días siguientes a la instalación. Cada dispositivo cuenta una vez. Tu propio móvil o cuenta no cuenta.</li>
+<li>Desempate: con el mismo número de instalaciones verificadas gana quien tenga más «me gusta» de Instagram en su publicación del concurso (comprobado por el equipo de SnowScope en la publicación pública).</li>
+<li>Se excluye el fraude: instalaciones compradas o generadas en masa (por ejemplo muchas instalaciones el mismo día sin uso), cuentas o dispositivos falsos. El organizador puede descalificar a cualquier participante por fraude. El recuento del equipo de SnowScope es definitivo. Si un ganador no responde en 14 días, gana el siguiente participante.</li></ul>
 <h2>5. Tu contenido</h2>
 <ul><li>Confirmas que el contenido es tuyo y que todas las personas que aparecen están de acuerdo.</li>
 <li>Concedes a Atlas Labs una licencia gratuita y no exclusiva para volver a publicar tu participación en los canales de SnowScope (app, web, redes sociales), siempre citándote. Conservas tus derechos.</li>
@@ -159,7 +189,7 @@ a{color:var(--blue)}
 <p>Atlas Labs puede modificar o cancelar el concurso si no puede desarrollarse como estaba previsto (fraude, problemas técnicos), avisando en esta página. Los impuestos sobre el premio corren a cargo del ganador.</p>
 </section>
 
-<footer>SnowScope by Atlas Labs · <a href="../">Snow map</a> · <a href="../privacy/">Privacy</a> · Version 2026-10-27</footer>
+<footer>SnowScope by Atlas Labs · <a href="../">Snow map</a> · <a href="../privacy/">Privacy</a> · Version 2026-10-27b</footer>
 </main>
 <script>
 (function () {
@@ -175,6 +205,42 @@ a{color:var(--blue)}
     b.addEventListener('click', function () { show(b.dataset.l); });
   });
   show(want);
+  var LB = {
+    en: {h: 'Leaderboard', v: 'verified', soon: 'The leaderboard starts on 6 November 2026.', none: 'No verified referrals yet. Share your link!', off: 'Leaderboard unavailable right now.'},
+    fr: {h: 'Classement', v: 'vérifiés', soon: 'Le classement démarre le 6 novembre 2026.', none: 'Aucun parrainage vérifié pour le moment. Partagez votre lien !', off: 'Classement indisponible pour le moment.'},
+    de: {h: 'Rangliste', v: 'bestätigt', soon: 'Die Rangliste startet am 6. November 2026.', none: 'Noch keine bestätigten Empfehlungen. Teile deinen Link!', off: 'Rangliste gerade nicht verfügbar.'},
+    it: {h: 'Classifica', v: 'verificati', soon: 'La classifica parte il 6 novembre 2026.', none: 'Ancora nessun invito verificato. Condividi il tuo link!', off: 'Classifica non disponibile al momento.'},
+    es: {h: 'Clasificación', v: 'verificados', soon: 'La clasificación empieza el 6 de noviembre de 2026.', none: 'Aún no hay referidos verificados. ¡Comparte tu enlace!', off: 'Clasificación no disponible ahora.'}
+  };
+  var lbData = null, lbErr = false;
+  function drawLb() {
+    var l = document.documentElement.lang, t = LB[l] || LB.en;
+    document.getElementById('lb-h').textContent = t.h;
+    var note = document.getElementById('lb-note'), list = document.getElementById('lb-list');
+    list.textContent = '';
+    if (lbErr) { note.textContent = t.off; return; }
+    if (!lbData) { note.textContent = ''; return; }
+    if (lbData.phase === 'early') { note.textContent = t.soon; return; }
+    if (!lbData.top.length) { note.textContent = t.none; return; }
+    note.textContent = '';
+    lbData.top.forEach(function (r) {
+      var li = document.createElement('li');
+      [['rk', r.rank], ['nm', r.name], ['ct', r.verified + ' ' + t.v]].forEach(function (x) {
+        var sp = document.createElement('span'); sp.className = x[0]; sp.textContent = x[1]; li.appendChild(sp);
+      });
+      list.appendChild(li);
+    });
+  }
+  var origShow = show;
+  show = function (l) { origShow(l); drawLb(); };
+  Array.prototype.forEach.call(document.querySelectorAll('nav button'), function (b) {
+    b.addEventListener('click', function () { drawLb(); });
+  });
+  drawLb();
+  fetch('../config.json', {cache: 'no-store'}).then(function (r) { return r.json(); }).then(function (c) {
+    return fetch(String(c.api).replace(/\/$/, '') + '/v1/challenge/leaderboard');
+  }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (j) { lbData = j; drawLb(); }).catch(function () { lbErr = true; drawLb(); });
 })();
 </script>
 <noscript><style>section{display:block}</style></noscript>
