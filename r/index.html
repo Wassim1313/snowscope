@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SnowScope snow card</title>
+<meta name="description" content="Live snow depth, new snow and powder score from SnowScope.">
+<meta property="og:title" content="Snow report on SnowScope">
+<meta property="og:description" content="Snow depth, new snow and powder score: open it in SnowScope.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#165CC4">
+<link rel="icon" href="../static/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#165CC4;--navy:#09265C;--ink:#0F1B33;--mute:#5B6880;--line:#E3E8F1;--bg:#F5F7FB;--card:#FFFFFF;--ice:#EAF1FC}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:460px;margin:0 auto;padding:20px 16px 40px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--navy);letter-spacing:-.01em;margin:4px 0 18px}
+.brand img{width:30px;height:30px;border-radius:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:0 10px 30px rgba(9,38,92,.08);overflow:hidden}
+.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--blue) 100%);color:#fff;padding:22px 20px 20px;position:relative}
+.hero::after{content:"";position:absolute;right:-30px;bottom:-40px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.07)}
+.day{font-size:13px;font-weight:600;opacity:.85;text-transform:uppercase;letter-spacing:.06em}
+h1{font-size:28px;line-height:1.15;margin:6px 0 4px;font-weight:800;letter-spacing:-.02em}
+.where{font-size:14px;opacity:.85;min-height:18px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.stat{padding:16px 10px 18px;text-align:center}
+.stat+.stat{border-left:1px solid var(--line)}
+.v{font-size:28px;font-weight:800;color:var(--navy);letter-spacing:-.02em;line-height:1.1}
+.v small{font-size:14px;font-weight:600;color:var(--mute);margin-left:2px}
+.k{font-size:12px;color:var(--mute);font-weight:500;margin-top:4px}
+.score .v{color:var(--blue)}
+.note{font-size:13px;color:var(--mute);text-align:center;padding:0 16px 16px;min-height:16px}
+.cta{display:block;width:100%;margin:20px 0 10px;padding:17px 20px;border:0;border-radius:16px;background:var(--blue);color:#fff;font:700 17px Inter,system-ui,sans-serif;text-align:center;text-decoration:none;box-shadow:0 8px 20px rgba(22,92,196,.28)}
+.cta:active{transform:translateY(1px)}
+.sub{display:block;text-align:center;color:var(--blue);font-weight:600;font-size:15px;text-decoration:none;padding:8px}
+.qr{display:none;margin:18px auto 0;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.qr svg{width:180px;height:180px}
+.qr p{margin:10px 0 0;color:var(--mute);font-size:13px}
+.skel{display:inline-block;min-width:44px;height:26px;border-radius:8px;background:var(--ice);vertical-align:middle}
+footer{margin-top:26px;text-align:center;font-size:12px;color:var(--mute)}
+footer a{color:var(--mute)}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><img src="../static/icon.svg" alt="">SnowScope</div>
+  <div class="card" id="card">
+    <div class="hero">
+      <div class="day" id="day">&nbsp;</div>
+      <h1 id="name">SnowScope</h1>
+      <div class="where" id="where"></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="v" id="depth"><span class="skel"></span></div><div class="k" data-t="depth">Snow depth</div></div>
+      <div class="stat"><div class="v" id="new"><span class="skel"></span></div><div class="k" data-t="new">New snow</div></div>
+      <div class="stat score"><div class="v" id="score"><span class="skel"></span></div><div class="k" data-t="score">Powder score</div></div>
+    </div>
+    <div class="note" id="note"></div>
+  </div>
+  <a class="cta" id="open" href="#" data-t="open">Open in SnowScope</a>
+  <a class="sub" id="play" href="#" data-t="play">Get it on Google Play</a>
+  <div class="qr" id="qr"><div id="qrcode"></div><p data-t="scan">Scan with your Android phone</p></div>
+  <footer>SnowScope by Atlas Labs · <a href="../">Snow map</a> · <a href="../privacy/">Privacy</a></footer>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
+<script>
+(function () {
+  var PKG = 'ma.atlaslabs.snowscope';
+  var PLAY = 'https://play.google.com/store/apps/details?id=' + PKG;
+  var T = {
+    en: {depth: 'Snow depth', new: 'New snow', score: 'Powder score', open: 'Open in SnowScope', play: 'Get it on Google Play',
+         scan: 'Scan with your Android phone', today: 'Today', off: 'Live numbers unavailable right now: open the app for the latest snow.',
+         generic: 'Snow, powder and the best resorts this weekend', title: 'snow on SnowScope'},
+    fr: {depth: 'Neige au sol', new: 'Neige fraîche', score: 'Indice poudreuse', open: 'Ouvrir dans SnowScope', play: 'Disponible sur Google Play',
+         scan: 'Scannez avec votre téléphone Android', today: "Aujourd'hui", off: "Données en direct indisponibles : ouvrez l'app pour la neige la plus récente.",
+         generic: 'Neige, poudreuse et les meilleures stations ce week-end', title: 'neige sur SnowScope'},
+    de: {depth: 'Schneehöhe', new: 'Neuschnee', score: 'Pulverwert', open: 'In SnowScope öffnen', play: 'Jetzt bei Google Play',
+         scan: 'Mit deinem Android-Handy scannen', today: 'Heute', off: 'Live-Werte gerade nicht verfügbar: öffne die App für den aktuellen Schnee.',
+         generic: 'Schnee, Pulver und die besten Skigebiete am Wochenende', title: 'Schnee auf SnowScope'},
+    it: {depth: 'Neve al suolo', new: 'Neve fresca', score: 'Indice neve fresca', open: 'Apri in SnowScope', play: 'Disponibile su Google Play',
+         scan: 'Inquadra con il tuo telefono Android', today: 'Oggi', off: "Dati in tempo reale non disponibili: apri l'app per la neve più recente.",
+         generic: 'Neve, powder e le migliori stazioni nel weekend', title: 'neve su SnowScope'},
+    es: {depth: 'Espesor de nieve', new: 'Nieve nueva', score: 'Índice de nieve polvo', open: 'Abrir en SnowScope', play: 'Disponible en Google Play',
+         scan: 'Escanea con tu móvil Android', today: 'Hoy', off: 'Datos en directo no disponibles ahora: abre la app para ver la nieve más reciente.',
+         generic: 'Nieve, nieve polvo y las mejores estaciones este fin de semana', title: 'nieve en SnowScope'}
+  };
+  var lang = ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').slice(0, 2).toLowerCase();
+  if (!T[lang]) lang = 'en';
+  var L = T[lang];
+  document.documentElement.lang = lang;
+  Array.prototype.forEach.call(document.querySelectorAll('[data-t]'), function (el) { el.textContent = L[el.getAttribute('data-t')]; });
+
+  var q = new URLSearchParams(location.search);
+  var clean = function (v, re) { v = (v || '').trim(); return re.test(v) ? v : ''; };
+  var slug = clean(q.get('s'), /^[A-Za-z0-9_\-]{1,80}$/).toLowerCase();
+  var day = clean(q.get('d'), /^\d{4}-\d{2}-\d{2}$/);
+  var ref = clean(q.get('ref'), /^[A-Za-z0-9_]{3,20}$/).toUpperCase();
+  var medium = clean(q.get('m'), /^[a-z_]{2,20}$/) || 'qr';
+  var appSlug = slug.replace(/-/g, '_');
+
+  var referrer = 'utm_source=share&utm_medium=' + medium + (ref ? '&utm_campaign=' + ref : '&utm_campaign=organic') +
+                 (appSlug ? '&utm_content=' + appSlug : '');
+  var playUrl = PLAY + '&referrer=' + encodeURIComponent(referrer);
+  var path = appSlug ? 'resort/' + appSlug : 'open';
+  var qs = [];
+  if (day) qs.push('day=' + day);
+  if (ref) qs.push('ref=' + ref);
+  var intentUrl = 'intent://' + path + (qs.length ? '?' + qs.join('&') : '') +
+                  '#Intent;scheme=snowscope;package=' + PKG + ';S.browser_fallback_url=' + encodeURIComponent(playUrl) + ';end';
+  var android = /Android/i.test(navigator.userAgent);
+  var open = document.getElementById('open'), play = document.getElementById('play');
+  open.href = android ? intentUrl : playUrl;
+  play.href = playUrl;
+  if (!android) {
+    try {
+      var qr = qrcode(0, 'M');
+      qr.addData(location.href);
+      qr.make();
+      document.getElementById('qrcode').innerHTML = qr.createSvgTag({cellSize: 4, margin: 2, scalable: true});
+      document.getElementById('qr').style.display = 'block';
+    } catch (e) { /* QR library unavailable: the Play link still works */ }
+  }
+
+  function fmtDay(iso, today) {
+    if (!iso) return '';
+    if (iso === today) return L.today;
+    try {
+      return new Intl.DateTimeFormat(lang, {weekday: 'long', day: 'numeric', month: 'long', timeZone: 'UTC'})
+        .format(new Date(iso + 'T12:00:00Z'));
+    } catch (e) { return iso; }
+  }
+  function set(id, v, unit) {
+    var el = document.getElementById(id);
+    el.textContent = '';
+    if (v === null || v === undefined) { el.textContent = '–'; return; }
+    el.appendChild(document.createTextNode(String(v)));
+    if (unit) { var s = document.createElement('small'); s.textContent = unit; el.appendChild(s); }
+  }
+  function offline() {
+    set('depth', null); set('new', null); set('score', null);
+    document.getElementById('note').textContent = L.off;
+    if (!slug) document.getElementById('name').textContent = L.generic;
+  }
+  function withTimeout(p, ms) {
+    return Promise.race([p, new Promise(function (_, rej) { setTimeout(function () { rej(new Error('timeout')); }, ms); })]);
+  }
+  document.getElementById('day').textContent = day ? fmtDay(day, null) : '';
+  if (!slug) { offline(); document.getElementById('note').textContent = ''; return; }
+  document.getElementById('name').textContent = appSlug.replace(/_/g, ' ').replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+
+  withTimeout(fetch('../config.json', {cache: 'no-store'}).then(function (r) { return r.json(); }), 5000).then(function (c) {
+    var api = String(c.api || '').replace(/\/$/, '');
+    if (!api) throw new Error('no api');
+    if (ref) { try { fetch(api + '/v1/ref/open?code=' + encodeURIComponent(ref) + '&s=' + encodeURIComponent(appSlug), {mode: 'cors', keepalive: true}); } catch (e) {} }
+    var url = api + '/v1/share/card?s=' + encodeURIComponent(appSlug) + (day ? '&d=' + day : '') + '&lang=' + lang;
+    return withTimeout(fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }), 9000);
+  }).then(function (j) {
+    document.getElementById('name').textContent = j.short_name || j.name;
+    document.title = (j.short_name || j.name) + ' · ' + L.title;
+    document.getElementById('where').textContent = [j.region, j.country].filter(Boolean).join(', ') +
+      (j.top_m ? ' · ' + j.top_m + ' m' : '');
+    document.getElementById('day').textContent = fmtDay(j.day, j.today);
+    set('depth', j.depth_cm, ' cm');
+    set('new', j.new_cm, ' cm');
+    set('score', j.powder_score === null || j.powder_score === undefined ? null :
+      Number(j.powder_score).toLocaleString(lang, {maximumFractionDigits: 1}), '/10');
+  }).catch(offline);
+})();
+</script>
+</body>
+</html>
