@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://pickup-tomatoes-greene-clerk.trycloudflare.com";
+window.SNOWSCOPE_API = "https://continental-find-generating-stake.trycloudflare.com";
