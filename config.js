@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://fold-surprised-reproduced-oasis.trycloudflare.com";
+window.SNOWSCOPE_API = "https://pickup-tomatoes-greene-clerk.trycloudflare.com";
