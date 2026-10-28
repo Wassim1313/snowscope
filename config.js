@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://continental-find-generating-stake.trycloudflare.com";
+window.SNOWSCOPE_API = "https://horizontal-adding-program-size.trycloudflare.com";
