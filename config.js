@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://algebra-mysql-prairie-peripheral.trycloudflare.com";
+window.SNOWSCOPE_API = "https://kodak-faculty-jews-earliest.trycloudflare.com";
