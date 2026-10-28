@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://describing-larger-persistent-watches.trycloudflare.com";
+window.SNOWSCOPE_API = "https://fold-surprised-reproduced-oasis.trycloudflare.com";
