@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://horizontal-adding-program-size.trycloudflare.com";
+window.SNOWSCOPE_API = "https://classification-thus-collectables-furnishings.trycloudflare.com";
