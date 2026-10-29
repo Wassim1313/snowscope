@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://magnet-oaks-installing-findarticles.trycloudflare.com";
+window.SNOWSCOPE_API = "https://kits-mattress-finally-modes.trycloudflare.com";
