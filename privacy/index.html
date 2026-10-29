@@ -1,11 +1,14 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>SnowScope privacy policy</title>
-<link rel="icon" href="../static/icon.svg"><link rel="stylesheet" href="../static/page.css"></head>
-<body><main class="doc" style="max-width:760px;margin:0 auto;padding:16px"><h1>SnowScope privacy policy</h1>
-<p><em>Version 1.1 — 27 October 2026. Publisher: Atlas Labs. Contact: atlaslabsdaba@gmail.com.</em></p>
-<p>SnowScope shows snow forecasts, snow maps and ski-touring information. We collect as little as
-possible: no analytics SDK and no selling of data. Free users may see ads (see below); during the current
-test phase all features are free and no ads are shown.</p>
+<link rel="icon" href="../static/icon.svg"><link rel="stylesheet" href="../static/page.css">
+<style>.doc table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px}
+.doc th,.doc td{border:1px solid #e3e8ec;padding:6px 8px;vertical-align:top;text-align:left}
+.langs{font-size:14px;margin:0 0 8px} .langs a,.langs b{margin-right:10px}</style></head>
+<body><main class="doc" style="max-width:860px;margin:0 auto;padding:16px"><p class="langs"><b>English</b> <a href="../privacy/fr/" hreflang="fr">Français</a> <a href="../privacy/de/" hreflang="de">Deutsch</a> <a href="../privacy/it/" hreflang="it">Italiano</a> <a href="../privacy/es/" hreflang="es">Español</a></p><h1>SnowScope privacy policy</h1>
+<p><em>Version 1.3 — 29 October 2026. Publisher: Atlas Labs. Contact: atlaslabsdaba@gmail.com.</em></p>
+<p>SnowScope shows snow maps, snow forecasts, summit information and ski-touring information. We collect as little as
+possible: no analytics SDK of our own and no selling of data. Free users may see ads (see "Advertising"); during the
+current test phase every feature is free and no ads are shown.</p>
 <h2>What the app sends, and why</h2>
 <table>
 <thead>
@@ -26,24 +29,24 @@ test phase all features are free and no ads are shown.</p>
 <td>14 days</td>
 </tr>
 <tr>
-<td>Random install id (no name or email)</td>
+<td>Random install id (no name or e-mail)</td>
 <td>First start</td>
 <td>Our server</td>
 <td>Keeps favourites and alert settings without an account</td>
 <td>Until you delete your data</td>
 </tr>
 <tr>
-<td>Account: email address + password hash</td>
+<td>Account: e-mail address, password (hashed), e-mail verification status</td>
 <td>Only if you create an account</td>
-<td>Our server</td>
-<td>Sign-in, restore Premium and settings on a new phone</td>
+<td>Google Firebase Authentication (our provider) and our server (e-mail + account id)</td>
+<td>Sign-in, e-mail verification, restore Pro and settings on a new phone</td>
 <td>Until you delete the account</td>
 </tr>
 <tr>
 <td>Favourite resorts, alert rules, phone time zone</td>
 <td>When you use favourites or alerts</td>
 <td>Our server</td>
-<td>Powder alerts, quiet hours</td>
+<td>Powder alerts, no alerts at night</td>
 <td>Until you delete them or your data</td>
 </tr>
 <tr>
@@ -54,6 +57,20 @@ test phase all features are free and no ads are shown.</p>
 <td>14 days (logs)</td>
 </tr>
 <tr>
+<td>Your position (GPS), one point</td>
+<td>When you ask Summit AI for the climb time "from where you stand", or tap "my location" in the trip planner</td>
+<td>Our server</td>
+<td>Compute the route and times from your position</td>
+<td>Not stored (14 days in logs)</td>
+</tr>
+<tr>
+<td>Your phone's approximate location (rounded to about 2 km, on the phone and again on our server)</td>
+<td>Only if you switch on "Powder near you" alerts (opt-in, off by default)</td>
+<td>Our server</td>
+<td>Send you at most one alert a day when fresh snow is coming within the distance you chose</td>
+<td>Ignored after 7 days without an update; erased when you turn the alerts off or delete your data</td>
+</tr>
+<tr>
 <td>Push token (Firebase Cloud Messaging)</td>
 <td>If you allow notifications</td>
 <td>Our server + Google Firebase</td>
@@ -62,31 +79,45 @@ test phase all features are free and no ads are shown.</p>
 </tr>
 <tr>
 <td>Google Play purchase token</td>
-<td>When you subscribe</td>
+<td>When you subscribe to Pro or buy "Remove ads"</td>
 <td>Our server + Google Play</td>
-<td>Verify Premium</td>
-<td>While subscribed, then as required by law</td>
+<td>Verify the purchase</td>
+<td>While it is valid, then as required by law</td>
 </tr>
 <tr>
-<td>GPS track</td>
+<td>GPS track of a ski day</td>
 <td>Only while a recording you started runs</td>
 <td><strong>Stays on your phone</strong></td>
 <td>Distance, vertical, GPX export</td>
-<td>Until you delete it; leaves the phone only if you share it</td>
+<td>Until you delete it; leaves the phone only if you share the file</td>
 </tr>
 <tr>
 <td>Camera image</td>
-<td>Only while the skyline camera is open</td>
-<td><strong>Stays on your phone</strong> (not stored, not sent)</td>
-<td>Draw peak names over the view</td>
-<td>Not kept</td>
+<td>Only while the Summit AI camera or Measure snow is open</td>
+<td><strong>Stays on your phone</strong> (the camera preview is not stored or sent)</td>
+<td>Draw summit names over the view; frame your measurement</td>
+<td>Not kept. Photos and clips you save or share are your own files</td>
 </tr>
 <tr>
 <td>Snow-depth photo (Measure snow)</td>
 <td>Only when you measure</td>
 <td>Our server, which reads the depth and <strong>deletes the photo</strong> right away</td>
 <td>Measure snow depth</td>
-<td>Not kept — unless you tick "share as observation": then the photo, its depth and the map point are shown to other users on the snow-photos layer (location metadata in the image is removed)</td>
+<td>Not kept</td>
+</tr>
+<tr>
+<td>Snow report on the community snow map: depth, how it was measured, time, spot (exact, or only the ~500 m square if you choose "approximate"), its altitude, the nearest resort, your photo (optional, location data removed from the image) and a display name (optional, else "Skier")</td>
+<td><strong>Only if you publish</strong> after measuring (you are asked the first time; you can switch it off)</td>
+<td>Our server; shown to everyone on the "Snow reports" map</td>
+<td>Show real snow depths to other skiers; improve our snow map</td>
+<td>Until you delete the report (tap it → Delete) or your data</td>
+</tr>
+<tr>
+<td>"Useful" taps and abuse reports on snow reports, with a one-way hash of your install id</td>
+<td>When you tap them</td>
+<td>Our server</td>
+<td>Count useful reports once per person, hide abusive ones</td>
+<td>Until you delete your data</td>
 </tr>
 <tr>
 <td>App language and phone time zone</td>
@@ -96,10 +127,10 @@ test phase all features are free and no ads are shown.</p>
 <td>Until you delete your data</td>
 </tr>
 <tr>
-<td>Share link / install source: the referral code and campaign of the link you installed from (from Google Play), stored with a one-way hash of your install id</td>
+<td>Share link / install source: the referral code and campaign of the link you installed from (from Google Play), with a one-way hash of your install id</td>
 <td>First start, if you installed from a shared link</td>
 <td>Our server</td>
-<td>Count installs per shared link or partner creator; partner creators' hotel links get their campaign name</td>
+<td>Count installs per shared link or partner creator; give you the referral discount</td>
 <td>Until you delete your data (anonymous counts kept)</td>
 </tr>
 <tr>
@@ -117,7 +148,7 @@ test phase all features are free and no ads are shown.</p>
 <td>Kept as anonymous counts</td>
 </tr>
 <tr>
-<td>Snow Challenge entry: display name, photo or post link, optional email, language</td>
+<td>Snow Challenge entry: display name, photo or post link, optional e-mail, language</td>
 <td>Only if you enter the challenge</td>
 <td>Our server</td>
 <td>Run the contest (judging, contacting and paying the winner, credit when reposting)</td>
@@ -132,38 +163,60 @@ test phase all features are free and no ads are shown.</p>
 </tr>
 </tbody>
 </table>
-<p>Location is used only while you use the map's "my location", record a track or open the skyline
-camera. SnowScope has no background-location permission.</p>
+<p>Location is used only while you use the map's "my location", record a track, open the Summit AI camera, ask for a
+climb time, measure snow (to put a report you publish on the map) or keep "Powder near you" alerts on (coarse location only, about 2 km).
+SnowScope has no background-location permission. A snow report is published only when you choose to; "Approximate
+location" keeps only the ~500 m square, never the exact point. Deleting your data or account deletes all your snow
+reports and their photos.</p>
 <h2>Services the phone contacts directly</h2>
-<p>They see your IP address and the area requested, nothing else from us: OpenFreeMap (map
-tiles), Amazon Web Services public datasets (terrain tiles), OpenStreetMap Overpass mirrors
-(peak names for the skyline camera), GitHub Pages (the app's server address) and Cloudflare
-(which carries the traffic to our server). Weather data from Open-Meteo is fetched <strong>by our
-server</strong>, so Open-Meteo does not see you.</p>
+<p>They see your IP address and the area requested, nothing else from us: the map-tile provider, public terrain-tile
+servers, GitHub Pages (the app's server address) and Cloudflare (which carries the traffic to our server). Weather
+data is fetched <strong>by our server</strong>, so the weather providers do not see you. The full list of data providers is in the
+app under About &amp; credits.</p>
+<h2>Accounts (Firebase Authentication)</h2>
+<p>Creating an account is optional. We use Google Firebase Authentication to store your e-mail address and password
+(hashed) and to send the verification e-mail (some account features, such as keeping Pro on a new phone, need a verified
+e-mail); Google acts as our provider and does not use this data for its own
+purposes. Your account id links your favourites, alert rules and purchases on our server. You can delete the account
+in the app (Profile → Delete account) or at <a href="https://wassim1313.github.io/snowscope/delete/">https://wassim1313.github.io/snowscope/delete/</a> — this erases the Firebase
+user and everything stored on our server for it.</p>
 <h2>Advertising (free version only)</h2>
-<p>When advertising is active (not during the current test phase), free users may see Google AdMob ads. Google
-may use the advertising ID and cookies to show and measure ads; in the EU/UK/Switzerland we ask for your
-consent first (Google's consent form), and you can change it in About → Privacy options. Premium users see
-no ads. Google's privacy policy: https://policies.google.com/privacy</p>
+<p>When advertising is active (not during the current test phase), free users may see Google AdMob ads. Google may use the
+advertising ID, the IP address (approximate location) and ad interactions to show and measure ads, and reports crashes
+and diagnostics of its own ad code to Google; in the EEA, the UK and Switzerland we ask for your consent first
+(Google's consent form) and you can change it in About → Privacy options. Without consent you get non-personalised ads.
+Pro subscribers and users who bought "Remove ads" see no ads. Google's privacy policy:
+<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h2>Purchases</h2>
+<p>SnowScope Pro (monthly or yearly subscription) and "Remove ads" (one-time purchase) are handled by Google Play; we
+never see card details. We store the Google Play purchase token to verify the purchase. Cancel a subscription any time
+in Google Play → Subscriptions. Users who installed through a referral link may get a discount; this is read from
+the referral code only.</p>
 <h2>Hotel and chalet links</h2>
-<p>"Hotels &amp; chalets nearby" opens Booking.com (or a partner such as Stay22) in your browser with only the
-place, dates and number of guests in the link — never your account, id or position. Those sites have their
-own privacy policies; we may earn a commission from bookings. The link also carries the app language, the
-currency of your country and a campaign name (the partner creator's name if you installed through one).</p>
-<h2>Payments</h2>
-<p>Subscriptions are handled by Google Play; we never see card details. Cancel any time in Google
-Play → Subscriptions.</p>
+<p>"Hotels &amp; chalets nearby" opens a partner site (Stay22, which forwards to Booking.com or a similar site) in your
+browser with only the place, dates, number of guests, language and currency in the link — never your account, id or
+position. Those sites have their own privacy policies; we may earn a commission from bookings.</p>
+<h2>Community content</h2>
+<p>Snow reports you publish (depth, photo, spot, time, name) are public and may be shown in the app, on the web map and
+in share cards. You can delete each report yourself. Reports are moderated: three abuse reports hide a report, and we
+can remove content that breaks the Terms of use. Measurements also improve our snow map in aggregated form, without
+any identity.</p>
 <h2>Delete your data</h2>
-<p>In the app: menu → About → "Delete my data" (or "Delete account" when signed in). This erases
-everything stored on our server for your install or account. Uninstalling the app removes what is
-stored on the phone. You can also write to atlaslabsdaba@gmail.com; we answer within 30 days.</p>
+<p>In the app: Menu → About → "Delete my data" (or Profile → "Delete account" when signed in). This erases everything
+stored on our server for your install or account, including your published snow reports and their photos, and your
+Firebase account. A single snow report can be deleted from its card on the map. Uninstalling the app removes what is
+stored on the phone. You can also use <a href="https://wassim1313.github.io/snowscope/delete/">https://wassim1313.github.io/snowscope/delete/</a> or write to
+atlaslabsdaba@gmail.com; we answer within 30 days.</p>
 <h2>Your rights (GDPR / UK GDPR / CCPA)</h2>
-<p>Access, correction, deletion, portability and objection: atlaslabsdaba@gmail.com. Controller:
-Atlas Labs (contact above). You may also complain to your data-protection authority.</p>
+<p>Access, correction, deletion, portability and objection: atlaslabsdaba@gmail.com. Controller: Atlas Labs (contact
+above). You may also complain to your data-protection authority.</p>
 <h2>Safety</h2>
-<p>Snow and weather values are model forecasts, not observations. SnowScope never replaces the
-official avalanche bulletin; the danger levels shown are copied unchanged from the official
-services, with a link to their bulletin.</p>
+<p>Snow and weather values are forecasts and estimates, not measurements. Summit AI climb times, difficulties and routes
+are estimates from terrain and trail data. SnowScope never replaces the official avalanche bulletin, a mountain guide
+or your own judgement; the danger levels shown are copied unchanged from the official services, with a link to their
+bulletin. See the Terms of use.</p>
 <h2>Changes</h2>
-<p>We will update this page and its date when the app's data use changes.</p>
+<p>We update this page and its version when the app's data use changes. Previous versions: 1.0 (25 Oct 2026, first
+release), 1.1 (27 Oct, ads and hotel links), 1.2 (27 Oct, community snow reports), 1.3 (29 Oct, accounts via Firebase,
+Summit AI position, "Powder near you" alerts, one-time Remove ads).</p><p><a href="../terms/">Terms of use</a> · <a href="../delete/">Delete data / account</a> · atlaslabsdaba@gmail.com</p>
 <p><a href="../">← Snow map</a></p></main></body></html>

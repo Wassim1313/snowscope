@@ -1,0 +1,224 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Datenschutzerklärung von SnowScope</title>
+<link rel="icon" href="../../static/icon.svg"><link rel="stylesheet" href="../../static/page.css">
+<style>.doc table{display:block;overflow-x:auto;border-collapse:collapse;font-size:14px}
+.doc th,.doc td{border:1px solid #e3e8ec;padding:6px 8px;vertical-align:top;text-align:left}
+.langs{font-size:14px;margin:0 0 8px} .langs a,.langs b{margin-right:10px}</style></head>
+<body><main class="doc" style="max-width:860px;margin:0 auto;padding:16px"><p class="langs"><a href="../../privacy/" hreflang="en">English</a> <a href="../../privacy/fr/" hreflang="fr">Français</a> <b>Deutsch</b> <a href="../../privacy/it/" hreflang="it">Italiano</a> <a href="../../privacy/es/" hreflang="es">Español</a></p><h1>Datenschutzerklärung von SnowScope</h1>
+<p><em>Version 1.3 — 29. Oktober 2026. Herausgeber: Atlas Labs. Kontakt: atlaslabsdaba@gmail.com.</em></p>
+<p>SnowScope zeigt Schneekarten, Schneevorhersagen, Informationen zu Gipfeln und zu Skitouren. Wir erheben so wenig wie
+möglich: kein eigenes Analyse-SDK, kein Verkauf von Daten. Kostenlose Nutzer können Werbung sehen (siehe „Werbung“);
+während der aktuellen Testphase sind alle Funktionen kostenlos und es wird keine Werbung gezeigt.</p>
+<h2>Was die App sendet, und warum</h2>
+<table>
+<thead>
+<tr>
+<th>Daten</th>
+<th>Wann</th>
+<th>Wohin</th>
+<th>Warum</th>
+<th>Aufbewahrung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IP-Adresse, angefragtes Skigebiet / Kartenausschnitt</td>
+<td>Bei jedem Bildschirm, der Daten lädt</td>
+<td>Unser Server (Zugriffsprotokolle)</td>
+<td>Vorhersagen liefern, Sicherheit</td>
+<td>14 Tage</td>
+</tr>
+<tr>
+<td>Zufällige Installations-ID (kein Name, keine E-Mail)</td>
+<td>Erster Start</td>
+<td>Unser Server</td>
+<td>Favoriten und Alarmeinstellungen ohne Konto behalten</td>
+<td>Bis du deine Daten löschst</td>
+</tr>
+<tr>
+<td>Konto: E-Mail-Adresse, Passwort (gehasht), Status der E-Mail-Bestätigung</td>
+<td>Nur wenn du ein Konto anlegst</td>
+<td>Google Firebase Authentication (unser Dienstleister) und unser Server (E-Mail + Konto-ID)</td>
+<td>Anmeldung, E-Mail-Bestätigung, Pro und Einstellungen auf einem neuen Handy wiederherstellen</td>
+<td>Bis du das Konto löschst</td>
+</tr>
+<tr>
+<td>Lieblingsgebiete, Alarmregeln, Zeitzone des Handys</td>
+<td>Wenn du Favoriten oder Alarme nutzt</td>
+<td>Unser Server</td>
+<td>Powder-Alarm, keine Alarme nachts</td>
+<td>Bis du sie oder deine Daten löschst</td>
+</tr>
+<tr>
+<td>Ein angetippter Kartenpunkt</td>
+<td>Wenn du dort Schnee oder Vorhersage abfragst</td>
+<td>Unser Server</td>
+<td>Werte zurückgeben</td>
+<td>14 Tage (Protokolle)</td>
+</tr>
+<tr>
+<td>Deine Position (GPS), ein Punkt</td>
+<td>Wenn du Summit AI nach der Aufstiegszeit „von deinem Standort“ fragst oder im Tourenplaner „mein Standort“ antippst</td>
+<td>Unser Server</td>
+<td>Route und Zeiten von deiner Position berechnen</td>
+<td>Nicht gespeichert (14 Tage in Protokollen)</td>
+</tr>
+<tr>
+<td>Ungefährer Standort des Handys (auf etwa 2 km gerundet, auf dem Handy und nochmals auf unserem Server)</td>
+<td>Nur wenn du den Alarm „Powder in deiner Nähe“ einschaltest (freiwillig, standardmäßig aus)</td>
+<td>Unser Server</td>
+<td>Dir höchstens einen Alarm pro Tag schicken, wenn im gewählten Umkreis Neuschnee kommt</td>
+<td>Nach 7 Tagen ohne Aktualisierung ignoriert; gelöscht, wenn du den Alarm ausschaltest oder deine Daten löschst</td>
+</tr>
+<tr>
+<td>Push-Token (Firebase Cloud Messaging)</td>
+<td>Wenn du Benachrichtigungen erlaubst</td>
+<td>Unser Server + Google Firebase</td>
+<td>Die von dir eingestellten Alarme zustellen</td>
+<td>Bis das Token nicht mehr funktioniert</td>
+</tr>
+<tr>
+<td>Google-Play-Kauftoken</td>
+<td>Wenn du Pro abonnierst oder „Werbung entfernen“ kaufst</td>
+<td>Unser Server + Google Play</td>
+<td>Kauf prüfen</td>
+<td>Solange gültig, danach wie gesetzlich vorgeschrieben</td>
+</tr>
+<tr>
+<td>GPS-Track eines Skitags</td>
+<td>Nur während einer von dir gestarteten Aufzeichnung</td>
+<td><strong>Bleibt auf deinem Handy</strong></td>
+<td>Strecke, Höhenmeter, GPX-Export</td>
+<td>Bis du ihn löschst; verlässt das Handy nur, wenn du die Datei teilst</td>
+</tr>
+<tr>
+<td>Kamerabild</td>
+<td>Nur solange die Summit-AI-Kamera oder „Schnee messen“ geöffnet ist</td>
+<td><strong>Bleibt auf deinem Handy</strong> (die Vorschau wird weder gespeichert noch gesendet)</td>
+<td>Gipfelnamen über das Bild legen; Messung ausrichten</td>
+<td>Nicht aufbewahrt. Fotos und Clips, die du speicherst oder teilst, sind deine eigenen Dateien</td>
+</tr>
+<tr>
+<td>Schneehöhen-Foto („Schnee messen“)</td>
+<td>Nur wenn du misst</td>
+<td>Unser Server, der die Höhe ausliest und <strong>das Foto sofort löscht</strong></td>
+<td>Schneehöhe messen</td>
+<td>Nicht aufbewahrt</td>
+</tr>
+<tr>
+<td>Schneemeldung auf der Community-Schneekarte: Höhe, Messmethode, Zeit, Ort (exakt oder nur das ~500-m-Quadrat bei „ungefähr“), dessen Höhe, nächstes Skigebiet, dein Foto (optional, Ortsdaten aus dem Bild entfernt) und ein Anzeigename (optional, sonst „Skifahrer“)</td>
+<td><strong>Nur wenn du nach dem Messen veröffentlichst</strong> (beim ersten Mal wirst du gefragt; du kannst es abschalten)</td>
+<td>Unser Server; für alle auf der Karte „Schneemeldungen“ sichtbar</td>
+<td>Anderen Skifahrern echte Schneehöhen zeigen; unsere Schneekarte verbessern</td>
+<td>Bis du die Meldung löschst (antippen → Löschen) oder deine Daten</td>
+</tr>
+<tr>
+<td>„Hilfreich“-Tipps und Missbrauchsmeldungen zu Schneemeldungen, mit einem Einweg-Hash deiner Installations-ID</td>
+<td>Wenn du sie antippst</td>
+<td>Unser Server</td>
+<td>Hilfreiche Meldungen einmal pro Person zählen, missbräuchliche ausblenden</td>
+<td>Bis du deine Daten löschst</td>
+</tr>
+<tr>
+<td>App-Sprache und Zeitzone</td>
+<td>Bei jeder Anfrage / Geräteregistrierung</td>
+<td>Unser Server</td>
+<td>In deiner Sprache antworten, keine Alarme nachts</td>
+<td>Bis du deine Daten löschst</td>
+</tr>
+<tr>
+<td>Teilen-Link / Installationsquelle: Empfehlungscode und Kampagne des Links, über den du installiert hast (von Google Play), mit einem Einweg-Hash deiner Installations-ID</td>
+<td>Erster Start, wenn du über einen geteilten Link installiert hast</td>
+<td>Unser Server</td>
+<td>Installationen pro Link oder Partner-Creator zählen; dir den Empfehlungsrabatt geben</td>
+<td>Bis du deine Daten löschst (anonyme Zählungen bleiben)</td>
+</tr>
+<tr>
+<td>Tage, an denen die App geöffnet wurde (nur Datum), mit einem Einweg-Hash deiner Installations-ID</td>
+<td>Einmal täglich beim Öffnen</td>
+<td>Unser Server</td>
+<td>Prüfen, dass Installationen über geteilte Links echt sind (Snow Challenge, Rabatt)</td>
+<td>Bis du deine Daten löschst</td>
+</tr>
+<tr>
+<td>Aufrufe eines geteilten SnowScope-Links</td>
+<td>Wenn jemand die Link-Seite öffnet</td>
+<td>Unser Server (Zählung nur pro Link, Skigebiet und Tag, keine IP oder ID)</td>
+<td>Teilungen zählen</td>
+<td>Anonyme Zählungen</td>
+</tr>
+<tr>
+<td>Snow-Challenge-Teilnahme: Anzeigename, Foto oder Beitragslink, optionale E-Mail, Sprache</td>
+<td>Nur wenn du teilnimmst</td>
+<td>Unser Server</td>
+<td>Wettbewerb durchführen (Jury, Kontakt und Auszahlung des Gewinners, Nennung beim Reposten)</td>
+<td>Nach dem Wettbewerb gelöscht</td>
+</tr>
+<tr>
+<td>Absturzbericht (Fehlertext, App-Version, Handymodell)</td>
+<td>Nur nach einem Absturz</td>
+<td>Unser Server</td>
+<td>Fehler beheben</td>
+<td>90 Tage</td>
+</tr>
+</tbody>
+</table>
+<p>Der Standort wird nur verwendet, solange du „mein Standort“ auf der Karte nutzt, einen Track aufzeichnest, die
+Summit-AI-Kamera öffnest, eine Aufstiegszeit abfragst, Schnee misst (um eine veröffentlichte Meldung auf der Karte zu
+platzieren) oder den Alarm „Powder in deiner Nähe“ eingeschaltet lässt (nur ungefährer Standort, etwa 2 km). SnowScope hat keine Berechtigung
+für Standort im Hintergrund. Eine Schneemeldung wird nur veröffentlicht, wenn du es willst; „Ungefährer Standort“
+behält nur das ~500-m-Quadrat, nie den genauen Punkt. Das Löschen deiner Daten oder deines Kontos löscht alle deine
+Schneemeldungen und ihre Fotos.</p>
+<h2>Dienste, die das Handy direkt kontaktiert</h2>
+<p>Sie sehen deine IP-Adresse und den angefragten Bereich, sonst nichts von uns: der Kartenkachel-Anbieter, öffentliche
+Geländekachel-Server, GitHub Pages (die Serveradresse der App) und Cloudflare (leitet den Verkehr zu unserem Server).
+Wetterdaten holt <strong>unser Server</strong>, die Wetteranbieter sehen dich also nicht. Die vollständige Liste der Datenquellen
+steht in der App unter „Über &amp; Quellen“.</p>
+<h2>Konten (Firebase Authentication)</h2>
+<p>Ein Konto ist freiwillig. Wir nutzen Google Firebase Authentication, um E-Mail-Adresse und Passwort (gehasht) zu
+speichern und die Bestätigungs-E-Mail zu senden (manche Kontofunktionen, etwa Pro auf einem neuen Handy, brauchen eine bestätigte
+E-Mail); Google handelt als unser Dienstleister und nutzt diese Daten nicht für
+eigene Zwecke. Deine Konto-ID verknüpft Favoriten, Alarmregeln und Käufe auf unserem Server. Du kannst das Konto in
+der App (Profil → Konto löschen) oder unter <a href="https://wassim1313.github.io/snowscope/delete/">https://wassim1313.github.io/snowscope/delete/</a> löschen — das entfernt den
+Firebase-Nutzer und alles, was unser Server dazu speichert.</p>
+<h2>Werbung (nur kostenlose Version)</h2>
+<p>Wenn Werbung aktiv ist (nicht während der Testphase), können kostenlose Nutzer Google-AdMob-Anzeigen sehen. Google
+kann die Werbe-ID, die IP-Adresse (ungefährer Standort) und Interaktionen mit Anzeigen nutzen, um Werbung zu zeigen
+und zu messen, und meldet Abstürze und Diagnosen seines eigenen Werbecodes an Google; im EWR, im Vereinigten
+Königreich und in der Schweiz fragen wir zuerst nach deiner Einwilligung (Googles Einwilligungsformular), änderbar
+unter Über → Datenschutzoptionen. Ohne Einwilligung bekommst du nicht personalisierte Werbung. Pro-Abonnenten und
+Käufer von „Werbung entfernen“ sehen keine Werbung. Googles Datenschutzerklärung: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+<h2>Käufe</h2>
+<p>SnowScope Pro (Monats- oder Jahresabo) und „Werbung entfernen“ (Einmalkauf) wickelt Google Play ab; wir sehen nie
+Zahlungsdaten. Wir speichern das Google-Play-Kauftoken, um den Kauf zu prüfen. Kündigen kannst du jederzeit in
+Google Play → Abos. Wer über einen Empfehlungslink installiert hat, kann einen Rabatt erhalten; das ergibt sich nur aus
+dem Empfehlungscode.</p>
+<h2>Hotel- und Chalet-Links</h2>
+<p>„Hotels &amp; Chalets in der Nähe“ öffnet eine Partnerseite (Stay22, die zu Booking.com oder einer ähnlichen Seite
+weiterleitet) im Browser, nur mit Ort, Daten, Gästezahl, Sprache und Währung im Link — nie mit deinem Konto, deiner
+ID oder Position. Diese Seiten haben eigene Datenschutzerklärungen; wir können an Buchungen eine Provision verdienen.</p>
+<h2>Community-Inhalte</h2>
+<p>Schneemeldungen, die du veröffentlichst (Höhe, Foto, Ort, Zeit, Name), sind öffentlich und können in der App, auf der
+Web-Karte und in Teilen-Karten erscheinen. Jede Meldung kannst du selbst löschen. Meldungen werden moderiert: drei
+Missbrauchsmeldungen blenden eine Meldung aus, und wir können Inhalte entfernen, die gegen die Nutzungsbedingungen
+verstoßen. Messungen verbessern außerdem unsere Schneekarte, aggregiert und ohne Identität.</p>
+<h2>Deine Daten löschen</h2>
+<p>In der App: Menü → Über → „Meine Daten löschen“ (oder Profil → „Konto löschen“, wenn du angemeldet bist). Das löscht
+alles, was unser Server für deine Installation oder dein Konto speichert, einschließlich deiner veröffentlichten
+Schneemeldungen mit Fotos und deines Firebase-Kontos. Eine einzelne Schneemeldung löschst du über ihre Karte. Das
+Deinstallieren der App entfernt, was auf dem Handy gespeichert ist. Du kannst auch
+<a href="https://wassim1313.github.io/snowscope/delete/">https://wassim1313.github.io/snowscope/delete/</a> nutzen oder an atlaslabsdaba@gmail.com schreiben; wir antworten
+innerhalb von 30 Tagen.</p>
+<h2>Deine Rechte (DSGVO / UK GDPR / CCPA)</h2>
+<p>Auskunft, Berichtigung, Löschung, Übertragbarkeit und Widerspruch: atlaslabsdaba@gmail.com. Verantwortlicher: Atlas
+Labs (Kontakt oben). Du kannst dich außerdem bei deiner Datenschutzbehörde beschweren.</p>
+<h2>Sicherheit</h2>
+<p>Schnee- und Wetterwerte sind Vorhersagen und Schätzungen, keine Messungen. Aufstiegszeiten, Schwierigkeiten und
+Routen von Summit AI sind Schätzungen aus Gelände- und Wegedaten. SnowScope ersetzt nie den offiziellen
+Lawinenlagebericht, einen Bergführer oder dein eigenes Urteil; die angezeigten Gefahrenstufen werden unverändert von
+den offiziellen Diensten übernommen, mit Link zu deren Bericht. Siehe Nutzungsbedingungen.</p>
+<h2>Änderungen</h2>
+<p>Wir aktualisieren diese Seite und ihre Version, wenn sich die Datennutzung der App ändert. Frühere Versionen: 1.0
+(25. Okt. 2026, erste Veröffentlichung), 1.1 (27. Okt., Werbung und Hotel-Links), 1.2 (27. Okt., Community-
+Schneemeldungen), 1.3 (29. Okt., Konten über Firebase, Position für Summit AI, Alarm „Powder in deiner Nähe“, Einmalkauf „Werbung entfernen“).</p><p><a href="../../terms/de/">Nutzungsbedingungen</a> · <a href="../../delete/">Delete data / account</a> · atlaslabsdaba@gmail.com</p>
+<p><a href="../../">← Schneekarte</a></p></main></body></html>
