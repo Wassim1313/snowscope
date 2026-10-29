@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://surprising-style-grip-transmitted.trycloudflare.com";
+window.SNOWSCOPE_API = "https://browsers-hope-zealand-config.trycloudflare.com";
