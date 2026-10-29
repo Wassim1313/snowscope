@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://grande-cargo-ciao-surfaces.trycloudflare.com";
+window.SNOWSCOPE_API = "https://surprising-style-grip-transmitted.trycloudflare.com";
