@@ -5,7 +5,7 @@
 .doc th,.doc td{border:1px solid #e3e8ec;padding:6px 8px;vertical-align:top;text-align:left}
 .langs{font-size:14px;margin:0 0 8px} .langs a,.langs b{margin-right:10px}</style></head>
 <body><main class="doc" style="max-width:860px;margin:0 auto;padding:16px"><p class="langs"><a href="../../privacy/" hreflang="en">English</a> <a href="../../privacy/fr/" hreflang="fr">Français</a> <b>Deutsch</b> <a href="../../privacy/it/" hreflang="it">Italiano</a> <a href="../../privacy/es/" hreflang="es">Español</a></p><h1>Datenschutzerklärung von SnowScope</h1>
-<p><em>Version 1.3 — 29. Oktober 2026. Herausgeber: Atlas Labs. Kontakt: atlaslabsdaba@gmail.com.</em></p>
+<p><em>Version 1.4 — 31. Oktober 2026. Herausgeber: Atlas Labs. Kontakt: atlaslabsdaba@gmail.com.</em></p>
 <p>SnowScope zeigt Schneekarten, Schneevorhersagen, Informationen zu Gipfeln und zu Skitouren. Wir erheben so wenig wie
 möglich: kein eigenes Analyse-SDK, kein Verkauf von Daten. Kostenlose Nutzer können Werbung sehen (siehe „Werbung“);
 während der aktuellen Testphase sind alle Funktionen kostenlos und es wird keine Werbung gezeigt.</p>
@@ -113,6 +113,27 @@ während der aktuellen Testphase sind alle Funktionen kostenlos und es wird kein
 <td>Bis du die Meldung löschst (antippen → Löschen) oder deine Daten</td>
 </tr>
 <tr>
+<td>Öffentliches Profil: Benutzername, Anzeigename, kurzer „Über dich“-Text, Heimatskigebiet sowie Saisonzahlen und Abzeichen, berechnet aus deinen veröffentlichten Schneemeldungen</td>
+<td><strong>Nur wenn du „Mein Profil allen zeigen“ einschaltest</strong> (standardmäßig aus; braucht ein Konto mit bestätigter E-Mail oder Telefonnummer)</td>
+<td>Unser Server; für alle in der App sichtbar (Profilseite, Autorname bei deinen Schneemeldungen, Feed „Frische Schneemeldungen“)</td>
+<td>Anderen Skifahrern ermöglichen, deine Schneemeldungen zu sehen und dir zu folgen</td>
+<td>Bis du es abschaltest und löschst (Öffentliches Profil → Löschen) oder deine Daten löschst</td>
+</tr>
+<tr>
+<td>Folgen: welche öffentlichen Profile du folgst, mit einem Einweg-Hash deiner Installations- oder Konto-ID; die Zahl der Follower eines Profils</td>
+<td>Wenn du auf Folgen tippst</td>
+<td>Unser Server (die Follower-Liste selbst wird nie angezeigt, nur die Zahl)</td>
+<td>Die Meldungen der Skifahrer zeigen, denen du folgst</td>
+<td>Bis du nicht mehr folgst oder deine Daten löschst</td>
+</tr>
+<tr>
+<td>Missbrauchsmeldungen zu öffentlichen Profilen, mit einem Einweg-Hash deiner Installations- oder Konto-ID</td>
+<td>Wenn du ein Profil meldest</td>
+<td>Unser Server</td>
+<td>Missbräuchliche Profile ausblenden (drei Meldungen blenden ein Profil aus)</td>
+<td>Bis du deine Daten löschst</td>
+</tr>
+<tr>
 <td>„Hilfreich“-Tipps und Missbrauchsmeldungen zu Schneemeldungen, mit einem Einweg-Hash deiner Installations-ID</td>
 <td>Wenn du sie antippst</td>
 <td>Unser Server</td>
@@ -161,6 +182,13 @@ während der aktuellen Testphase sind alle Funktionen kostenlos und es wird kein
 <td>Fehler beheben</td>
 <td>90 Tage</td>
 </tr>
+<tr>
+<td>Absturzbericht über Firebase Crashlytics: Stacktrace des Absturzes, App-Version, Handymodell, Android-Version und eine Crashlytics-Installations-ID</td>
+<td><strong>Nur wenn du „Absturzberichte senden“</strong> unter Über <strong>einschaltest</strong> (standardmäßig aus)</td>
+<td>Google Firebase Crashlytics (unser Dienstleister)</td>
+<td>Abstürze beheben</td>
+<td>90 Tage (Firebase-Aufbewahrung); Ausschalten löscht noch nicht gesendete Berichte</td>
+</tr>
 </tbody>
 </table>
 <p>Der Standort wird nur verwendet, solange du „mein Standort“ auf der Karte nutzt, einen Track aufzeichnest, die
@@ -171,9 +199,15 @@ behält nur das ~500-m-Quadrat, nie den genauen Punkt. Das Löschen deiner Daten
 Schneemeldungen und ihre Fotos.</p>
 <h2>Dienste, die das Handy direkt kontaktiert</h2>
 <p>Sie sehen deine IP-Adresse und den angefragten Bereich, sonst nichts von uns: der Kartenkachel-Anbieter, öffentliche
-Geländekachel-Server, GitHub Pages (die Serveradresse der App) und Cloudflare (leitet den Verkehr zu unserem Server).
+Geländekachel-Server, GitHub Pages (die Serveradresse der App), Cloudflare (leitet den Verkehr zu unserem Server) und,
+solange die Niederschlagsradar-Ebene eingeschaltet ist, RainViewer (die Radarbilder).
 Wetterdaten holt <strong>unser Server</strong>, die Wetteranbieter sehen dich also nicht. Die vollständige Liste der Datenquellen
 steht in der App unter „Über &amp; Quellen“.</p>
+<h2>Absturzberichte (Firebase Crashlytics)</h2>
+<p>„Absturzberichte senden“ unter Über ist standardmäßig aus. Nur wenn du es einschaltest, sendet ein Absturz den
+Stacktrace, die App-Version, das Handymodell, die Android-Version und eine Crashlytics-Installations-ID an Google
+Firebase Crashlytics, das als unser Dienstleister handelt; Firebase bewahrt Absturzberichte 90 Tage auf. Ausschalten
+beendet die Erfassung und löscht noch nicht gesendete Berichte.</p>
 <h2>Konten (Firebase Authentication)</h2>
 <p>Ein Konto ist freiwillig. Wir nutzen Google Firebase Authentication, um E-Mail-Adresse und Passwort (gehasht) zu
 speichern und die Bestätigungs-E-Mail zu senden (manche Kontofunktionen, etwa Pro auf einem neuen Handy, brauchen eine bestätigte
@@ -201,11 +235,17 @@ ID oder Position. Diese Seiten haben eigene Datenschutzerklärungen; wir können
 <p>Schneemeldungen, die du veröffentlichst (Höhe, Foto, Ort, Zeit, Name), sind öffentlich und können in der App, auf der
 Web-Karte und in Teilen-Karten erscheinen. Jede Meldung kannst du selbst löschen. Meldungen werden moderiert: drei
 Missbrauchsmeldungen blenden eine Meldung aus, und wir können Inhalte entfernen, die gegen die Nutzungsbedingungen
-verstoßen. Messungen verbessern außerdem unsere Schneekarte, aggregiert und ohne Identität.</p>
+verstoßen. Messungen verbessern außerdem unsere Schneekarte, aggregiert und ohne Identität. Ein öffentliches Profil ist optional und standardmäßig aus; ist es an, sind dein
+Benutzername, Anzeigename, „Über dich“-Text, Heimatskigebiet und deine Saisonzahlen öffentlich, und deine
+veröffentlichten Schneemeldungen zeigen deinen Namen mit einem Link zum Profil. Orte auf einem Profil und im Feed sind
+nur das ~500-m-Quadrat, nie der exakte Punkt. Benutzernamen und Texte werden auf beleidigende Wörter geprüft; drei
+Missbrauchsmeldungen blenden ein Profil aus. Skitage aus deinen aufgezeichneten Skitagen werden nur auf deinem Handy
+und auf Story-Karten angezeigt, die du selbst teilst; sie werden nie an uns gesendet.</p>
 <h2>Deine Daten löschen</h2>
 <p>In der App: Menü → Über → „Meine Daten löschen“ (oder Profil → „Konto löschen“, wenn du angemeldet bist). Das löscht
 alles, was unser Server für deine Installation oder dein Konto speichert, einschließlich deiner veröffentlichten
-Schneemeldungen mit Fotos und deines Firebase-Kontos. Eine einzelne Schneemeldung löschst du über ihre Karte. Das
+Schneemeldungen mit Fotos, deines öffentlichen Profils, seiner Follower und der Profile, denen du folgst, sowie
+deines Firebase-Kontos. Eine einzelne Schneemeldung löschst du über ihre Karte. Das
 Deinstallieren der App entfernt, was auf dem Handy gespeichert ist. Du kannst auch
 <a href="https://wassim1313.github.io/snowscope/delete/">https://wassim1313.github.io/snowscope/delete/</a> nutzen oder an atlaslabsdaba@gmail.com schreiben; wir antworten
 innerhalb von 30 Tagen.</p>
@@ -220,5 +260,6 @@ den offiziellen Diensten übernommen, mit Link zu deren Bericht. Siehe Nutzungsb
 <h2>Änderungen</h2>
 <p>Wir aktualisieren diese Seite und ihre Version, wenn sich die Datennutzung der App ändert. Frühere Versionen: 1.0
 (25. Okt. 2026, erste Veröffentlichung), 1.1 (27. Okt., Werbung und Hotel-Links), 1.2 (27. Okt., Community-
-Schneemeldungen), 1.3 (29. Okt., Konten über Firebase, Position für Summit AI, Alarm „Powder in deiner Nähe“, Einmalkauf „Werbung entfernen“).</p><p><a href="../../terms/de/">Nutzungsbedingungen</a> · <a href="../../delete/">Delete data / account</a> · atlaslabsdaba@gmail.com</p>
+Schneemeldungen), 1.3 (29. Okt., Konten über Firebase, Position für Summit AI, Alarm „Powder in deiner Nähe“, Einmalkauf „Werbung entfernen“), 1.4 (31. Okt., optionales öffentliches Profil, Folgen und
+Profil-Missbrauchsmeldungen, optionale Crashlytics-Absturzberichte, Radarbilder direkt von RainViewer).</p><p><a href="../../terms/de/">Nutzungsbedingungen</a> · <a href="../../delete/">Delete data / account</a> · atlaslabsdaba@gmail.com</p>
 <p><a href="../../">← Schneekarte</a></p></main></body></html>

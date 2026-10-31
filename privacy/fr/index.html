@@ -5,7 +5,7 @@
 .doc th,.doc td{border:1px solid #e3e8ec;padding:6px 8px;vertical-align:top;text-align:left}
 .langs{font-size:14px;margin:0 0 8px} .langs a,.langs b{margin-right:10px}</style></head>
 <body><main class="doc" style="max-width:860px;margin:0 auto;padding:16px"><p class="langs"><a href="../../privacy/" hreflang="en">English</a> <b>Français</b> <a href="../../privacy/de/" hreflang="de">Deutsch</a> <a href="../../privacy/it/" hreflang="it">Italiano</a> <a href="../../privacy/es/" hreflang="es">Español</a></p><h1>Politique de confidentialité de SnowScope</h1>
-<p><em>Version 1.3 — 29 octobre 2026. Éditeur : Atlas Labs. Contact : atlaslabsdaba@gmail.com.</em></p>
+<p><em>Version 1.4 — 31 octobre 2026. Éditeur : Atlas Labs. Contact : atlaslabsdaba@gmail.com.</em></p>
 <p>SnowScope affiche des cartes de la neige, des prévisions neige, des informations sur les sommets et sur le ski de
 randonnée. Nous collectons le moins possible : aucun SDK d'analyse à nous, aucune vente de données. Les utilisateurs
 gratuits peuvent voir des publicités (voir « Publicité ») ; pendant la phase de test actuelle, toutes les fonctions
@@ -114,6 +114,27 @@ sont gratuites et aucune publicité n'est affichée.</p>
 <td>Jusqu'à la suppression du relevé (touchez-le → Supprimer) ou de vos données</td>
 </tr>
 <tr>
+<td>Profil public : nom d'utilisateur, nom d'affichage, court texte « à propos de vous », station de prédilection, ainsi que les chiffres de saison et badges calculés à partir de vos relevés publiés</td>
+<td><strong>Seulement si vous activez « Montrer mon profil à tous »</strong> (désactivé par défaut ; nécessite un compte avec un e-mail ou un téléphone confirmé)</td>
+<td>Notre serveur ; visible par tous dans l'appli (page de profil, nom de l'auteur sur vos relevés, fil « Relevés de neige frais »)</td>
+<td>Permettre aux autres skieurs de voir et de suivre vos relevés</td>
+<td>Jusqu'à ce que vous le désactiviez et le supprimiez (Profil public → Supprimer) ou supprimiez vos données</td>
+</tr>
+<tr>
+<td>Abonnements : les profils publics que vous suivez, avec un hachage à sens unique de votre identifiant d'installation ou de compte ; le nombre d'abonnés d'un profil</td>
+<td>Quand vous touchez Suivre</td>
+<td>Notre serveur (la liste des abonnés n'est jamais affichée, seulement leur nombre)</td>
+<td>Afficher les relevés des skieurs que vous suivez</td>
+<td>Jusqu'à ce que vous ne suiviez plus le profil ou supprimiez vos données</td>
+</tr>
+<tr>
+<td>Signalements de profils publics, avec un hachage à sens unique de votre identifiant d'installation ou de compte</td>
+<td>Quand vous signalez un profil</td>
+<td>Notre serveur</td>
+<td>Masquer les profils abusifs (trois signalements masquent un profil)</td>
+<td>Jusqu'à la suppression de vos données</td>
+</tr>
+<tr>
 <td>Votes « Utile » et signalements sur les relevés, avec un hachage à sens unique de votre identifiant d'installation</td>
 <td>Quand vous les touchez</td>
 <td>Notre serveur</td>
@@ -162,6 +183,13 @@ sont gratuites et aucune publicité n'est affichée.</p>
 <td>Corriger les bugs</td>
 <td>90 jours</td>
 </tr>
+<tr>
+<td>Rapport de plantage via Firebase Crashlytics : trace de la pile du plantage, version de l'appli, modèle de téléphone, version d'Android et un identifiant d'installation Crashlytics</td>
+<td><strong>Seulement si vous activez « Envoyer les rapports de plantage »</strong> dans À propos (désactivé par défaut)</td>
+<td>Google Firebase Crashlytics (notre prestataire)</td>
+<td>Corriger les plantages</td>
+<td>90 jours (conservation Firebase) ; le désactiver supprime les rapports pas encore envoyés</td>
+</tr>
 </tbody>
 </table>
 <p>La localisation n'est utilisée que lorsque vous utilisez « ma position » sur la carte, enregistrez une trace, ouvrez la
@@ -172,9 +200,14 @@ le carré d'environ 500 m, jamais le point exact. Supprimer vos données ou votr
 leurs photos.</p>
 <h2>Services contactés directement par le téléphone</h2>
 <p>Ils voient votre adresse IP et la zone demandée, rien d'autre venant de nous : le fournisseur de fonds de carte, des
-serveurs publics de tuiles de relief, GitHub Pages (l'adresse de notre serveur) et Cloudflare (qui achemine le trafic
-vers notre serveur). Les données météo sont récupérées <strong>par notre serveur</strong> : les fournisseurs météo ne vous voient
+serveurs publics de tuiles de relief, GitHub Pages (l'adresse de notre serveur), Cloudflare (qui achemine le trafic
+vers notre serveur) et, tant que la couche radar des précipitations est activée, RainViewer (les images radar). Les données météo sont récupérées <strong>par notre serveur</strong> : les fournisseurs météo ne vous voient
 pas. La liste complète des fournisseurs de données est dans l'application, sous À propos &amp; crédits.</p>
+<h2>Rapports de plantage (Firebase Crashlytics)</h2>
+<p>« Envoyer les rapports de plantage », dans À propos, est désactivé par défaut. Seulement si vous l'activez, un plantage
+envoie la trace de la pile, la version de l'appli, le modèle de téléphone, la version d'Android et un identifiant
+d'installation Crashlytics à Google Firebase Crashlytics, qui agit comme notre prestataire ; Firebase conserve les
+rapports de plantage 90 jours. Le désactiver arrête la collecte et supprime les rapports pas encore envoyés.</p>
 <h2>Comptes (Firebase Authentication)</h2>
 <p>Créer un compte est facultatif. Nous utilisons Google Firebase Authentication pour stocker votre e-mail et votre mot de
 passe (haché) et envoyer l'e-mail de vérification (certaines fonctions du compte, comme retrouver Pro sur un nouveau téléphone,
@@ -205,11 +238,18 @@ pouvons toucher une commission sur les réservations.</p>
 <p>Les relevés que vous publiez (hauteur, photo, lieu, heure, nom) sont publics et peuvent apparaître dans l'appli, sur
 la carte web et dans les cartes de partage. Vous pouvez supprimer chaque relevé vous-même. Les relevés sont modérés :
 trois signalements masquent un relevé, et nous pouvons retirer tout contenu contraire aux Conditions d'utilisation.
-Les mesures améliorent aussi notre carte de la neige, sous forme agrégée et sans aucune identité.</p>
+Les mesures améliorent aussi notre carte de la neige, sous forme agrégée et sans aucune identité. Le profil public est facultatif et désactivé par défaut ; quand il est
+activé, votre nom d'utilisateur, votre nom d'affichage, votre texte « à propos de vous », votre station de prédilection
+et vos chiffres de saison sont publics, et vos relevés publiés affichent votre nom avec un lien vers le profil. Les lieux
+sur un profil et dans le fil ne sont que le carré d'environ 500 m, jamais le point exact. Les noms d'utilisateur et les
+textes sont filtrés contre les mots injurieux ; trois signalements masquent un profil. Les jours de ski issus de vos
+journées enregistrées ne s'affichent que sur votre téléphone et sur les cartes story que vous choisissez de partager ;
+ils ne nous sont jamais envoyés.</p>
 <h2>Supprimer vos données</h2>
 <p>Dans l'appli : Menu → À propos → « Supprimer mes données » (ou Profil → « Supprimer le compte » si vous êtes
 connecté). Cela efface tout ce que notre serveur conserve pour votre installation ou votre compte, y compris vos
-relevés publiés et leurs photos, ainsi que votre compte Firebase. Un relevé isolé se supprime depuis sa fiche sur la
+relevés publiés et leurs photos, votre profil public, ses abonnés et les profils que vous suivez, ainsi que votre
+compte Firebase. Un relevé isolé se supprime depuis sa fiche sur la
 carte. Désinstaller l'appli supprime ce qui est stocké sur le téléphone. Vous pouvez aussi utiliser
 <a href="https://wassim1313.github.io/snowscope/delete/">https://wassim1313.github.io/snowscope/delete/</a> ou écrire à atlaslabsdaba@gmail.com ; nous répondons sous 30 jours.</p>
 <h2>Vos droits (RGPD / UK GDPR / CCPA)</h2>
@@ -224,5 +264,6 @@ Conditions d'utilisation.</p>
 <h2>Modifications</h2>
 <p>Nous mettons à jour cette page et sa version quand l'usage des données change. Versions précédentes : 1.0 (25 oct.
 2026, première publication), 1.1 (27 oct., publicités et liens hôtels), 1.2 (27 oct., relevés de neige
-communautaires), 1.3 (29 oct., comptes via Firebase, position pour Summit AI, alertes « Poudreuse près de vous », achat unique « Retirer les publicités »).</p><p><a href="../../terms/fr/">Conditions d'utilisation</a> · <a href="../../delete/">Delete data / account</a> · atlaslabsdaba@gmail.com</p>
+communautaires), 1.3 (29 oct., comptes via Firebase, position pour Summit AI, alertes « Poudreuse près de vous », achat unique « Retirer les publicités »), 1.4 (31 oct., profil public facultatif, abonnements et signalements de
+profils, rapports de plantage Crashlytics sur option, images radar chargées depuis RainViewer).</p><p><a href="../../terms/fr/">Conditions d'utilisation</a> · <a href="../../delete/">Delete data / account</a> · atlaslabsdaba@gmail.com</p>
 <p><a href="../../">← Carte de la neige</a></p></main></body></html>

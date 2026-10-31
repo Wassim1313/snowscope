@@ -5,7 +5,7 @@
 .doc th,.doc td{border:1px solid #e3e8ec;padding:6px 8px;vertical-align:top;text-align:left}
 .langs{font-size:14px;margin:0 0 8px} .langs a,.langs b{margin-right:10px}</style></head>
 <body><main class="doc" style="max-width:860px;margin:0 auto;padding:16px"><p class="langs"><a href="../../privacy/" hreflang="en">English</a> <a href="../../privacy/fr/" hreflang="fr">Français</a> <a href="../../privacy/de/" hreflang="de">Deutsch</a> <b>Italiano</b> <a href="../../privacy/es/" hreflang="es">Español</a></p><h1>Informativa sulla privacy di SnowScope</h1>
-<p><em>Versione 1.3 — 29 ottobre 2026. Editore: Atlas Labs. Contatto: atlaslabsdaba@gmail.com.</em></p>
+<p><em>Versione 1.4 — 31 ottobre 2026. Editore: Atlas Labs. Contatto: atlaslabsdaba@gmail.com.</em></p>
 <p>SnowScope mostra mappe della neve, previsioni neve, informazioni sulle cime e sullo scialpinismo. Raccogliamo il meno
 possibile: nessun SDK di analisi nostro, nessuna vendita di dati. Gli utenti gratuiti possono vedere annunci (vedi
 "Pubblicità"); durante l'attuale fase di test tutte le funzioni sono gratuite e non vengono mostrati annunci.</p>
@@ -113,6 +113,27 @@ possibile: nessun SDK di analisi nostro, nessuna vendita di dati. Gli utenti gra
 <td>Finché non cancelli la segnalazione (toccala → Elimina) o i tuoi dati</td>
 </tr>
 <tr>
+<td>Profilo pubblico: nome utente, nome visualizzato, breve testo "su di te", località preferita, e numeri della stagione e badge calcolati dalle segnalazioni che hai pubblicato</td>
+<td><strong>Solo se attivi "Mostra il mio profilo a tutti"</strong> (disattivato di default; serve un account con e-mail o telefono confermati)</td>
+<td>Il nostro server; visibile a tutti nell'app (pagina del profilo, nome dell'autore sulle tue segnalazioni, feed "Segnalazioni fresche")</td>
+<td>Permettere agli altri sciatori di vedere e seguire le tue segnalazioni</td>
+<td>Finché non lo disattivi e lo elimini (Profilo pubblico → Elimina) o cancelli i tuoi dati</td>
+</tr>
+<tr>
+<td>Profili seguiti: quali profili pubblici segui, con un hash unidirezionale del tuo identificativo di installazione o di account; il numero di follower di un profilo</td>
+<td>Quando tocchi Segui</td>
+<td>Il nostro server (l'elenco dei follower non viene mai mostrato, solo il numero)</td>
+<td>Mostrare le segnalazioni degli sciatori che segui</td>
+<td>Finché non smetti di seguire o cancelli i tuoi dati</td>
+</tr>
+<tr>
+<td>Segnalazioni di abuso sui profili pubblici, con un hash unidirezionale del tuo identificativo di installazione o di account</td>
+<td>Quando segnali un profilo</td>
+<td>Il nostro server</td>
+<td>Nascondere i profili abusivi (tre segnalazioni nascondono un profilo)</td>
+<td>Finché non cancelli i tuoi dati</td>
+</tr>
+<tr>
 <td>Voti "Utile" e segnalazioni di abuso, con un hash unidirezionale del tuo identificativo di installazione</td>
 <td>Quando li tocchi</td>
 <td>Il nostro server</td>
@@ -161,6 +182,13 @@ possibile: nessun SDK di analisi nostro, nessuna vendita di dati. Gli utenti gra
 <td>Correggere i bug</td>
 <td>90 giorni</td>
 </tr>
+<tr>
+<td>Rapporto di arresto anomalo tramite Firebase Crashlytics: stack trace dell'arresto, versione dell'app, modello del telefono, versione di Android e un identificativo di installazione Crashlytics</td>
+<td><strong>Solo se attivi "Invia i rapporti di arresto anomalo"</strong> in Info (disattivato di default)</td>
+<td>Google Firebase Crashlytics (nostro fornitore)</td>
+<td>Correggere gli arresti anomali</td>
+<td>90 giorni (conservazione di Firebase); disattivarlo cancella i rapporti non ancora inviati</td>
+</tr>
 </tbody>
 </table>
 <p>La posizione è usata solo quando usi "la mia posizione" sulla mappa, registri una traccia, apri la fotocamera di Summit
@@ -171,9 +199,14 @@ quadrato di circa 500 m, mai il punto esatto. Cancellare i tuoi dati o l'account
 le loro foto.</p>
 <h2>Servizi contattati direttamente dal telefono</h2>
 <p>Vedono il tuo indirizzo IP e la zona richiesta, nient'altro da parte nostra: il fornitore delle mappe di base, server
-pubblici di tile del rilievo, GitHub Pages (l'indirizzo del nostro server) e Cloudflare (che porta il traffico al
-nostro server). I dati meteo li scarica <strong>il nostro server</strong>, quindi i fornitori meteo non ti vedono. L'elenco completo
+pubblici di tile del rilievo, GitHub Pages (l'indirizzo del nostro server), Cloudflare (che porta il traffico al
+nostro server) e, finché il livello del radar delle precipitazioni è attivo, RainViewer (le immagini radar). I dati meteo li scarica <strong>il nostro server</strong>, quindi i fornitori meteo non ti vedono. L'elenco completo
 dei fornitori di dati è nell'app, in Info e crediti.</p>
+<h2>Rapporti di arresto anomalo (Firebase Crashlytics)</h2>
+<p>"Invia i rapporti di arresto anomalo", in Info, è disattivato di default. Solo se lo attivi, un arresto anomalo invia lo
+stack trace, la versione dell'app, il modello del telefono, la versione di Android e un identificativo di installazione
+Crashlytics a Google Firebase Crashlytics, che agisce come nostro fornitore; Firebase conserva i rapporti per 90 giorni.
+Disattivarlo interrompe la raccolta e cancella i rapporti non ancora inviati.</p>
 <h2>Account (Firebase Authentication)</h2>
 <p>Creare un account è facoltativo. Usiamo Google Firebase Authentication per conservare e-mail e password (in hash) e
 inviare l'e-mail di verifica (alcune funzioni dell'account, come ritrovare Pro su un nuovo telefono, richiedono un'e-mail
@@ -201,11 +234,16 @@ hanno le proprie informative; possiamo ricevere una commissione sulle prenotazio
 <p>Le segnalazioni che pubblichi (altezza, foto, punto, ora, nome) sono pubbliche e possono comparire nell'app, sulla
 mappa web e nelle schede di condivisione. Puoi cancellare ogni segnalazione da solo. Le segnalazioni sono moderate: tre
 segnalazioni di abuso nascondono un contenuto, e possiamo rimuovere ciò che viola i Termini d'uso. Le misure migliorano
-anche la nostra mappa della neve, in forma aggregata e senza identità.</p>
+anche la nostra mappa della neve, in forma aggregata e senza identità. Il profilo pubblico è facoltativo e disattivato di default; quando è attivo, il
+tuo nome utente, il nome visualizzato, il testo "su di te", la località preferita e i numeri della stagione sono
+pubblici, e le segnalazioni che pubblichi mostrano il tuo nome con un link al profilo. I punti su un profilo e nel feed
+sono solo il quadrato di circa 500 m, mai il punto esatto. Nomi utente e testi vengono controllati contro le parole
+offensive; tre segnalazioni di abuso nascondono un profilo. I giorni sulla neve delle tue giornate registrate compaiono
+solo sul tuo telefono e sulle schede story che scegli di condividere; non ci vengono mai inviati.</p>
 <h2>Cancellare i tuoi dati</h2>
 <p>Nell'app: Menu → Info → "Elimina i miei dati" (o Profilo → "Elimina account" se hai effettuato l'accesso). Viene
 cancellato tutto ciò che il nostro server conserva per la tua installazione o il tuo account, comprese le segnalazioni
-pubblicate con le foto e il tuo account Firebase. Una singola segnalazione si cancella dalla sua scheda sulla mappa.
+pubblicate con le foto, il tuo profilo pubblico, i suoi follower e i profili che segui, e il tuo account Firebase. Una singola segnalazione si cancella dalla sua scheda sulla mappa.
 Disinstallare l'app rimuove ciò che è salvato sul telefono. Puoi anche usare
 <a href="https://wassim1313.github.io/snowscope/delete/">https://wassim1313.github.io/snowscope/delete/</a> o scrivere a atlaslabsdaba@gmail.com; rispondiamo entro 30 giorni.</p>
 <h2>I tuoi diritti (GDPR / UK GDPR / CCPA)</h2>
@@ -219,5 +257,6 @@ bollettino. Vedi i Termini d'uso.</p>
 <h2>Modifiche</h2>
 <p>Aggiorniamo questa pagina e la sua versione quando cambia l'uso dei dati dell'app. Versioni precedenti: 1.0 (25 ott.
 2026), 1.1 (27 ott., pubblicità e link hotel), 1.2 (27 ott., segnalazioni neve), 1.3 (29 ott., account con Firebase,
-posizione per Summit AI, avvisi "Powder vicino a te", acquisto unico "Rimuovi annunci").</p><p><a href="../../terms/it/">Termini d'uso</a> · <a href="../../delete/">Delete data / account</a> · atlaslabsdaba@gmail.com</p>
+posizione per Summit AI, avvisi "Powder vicino a te", acquisto unico "Rimuovi annunci"), 1.4 (31 ott., profilo pubblico facoltativo, profili seguiti e segnalazioni
+di profili, rapporti di arresto anomalo Crashlytics su scelta, immagini radar caricate da RainViewer).</p><p><a href="../../terms/it/">Termini d'uso</a> · <a href="../../delete/">Delete data / account</a> · atlaslabsdaba@gmail.com</p>
 <p><a href="../../">← Mappa della neve</a></p></main></body></html>

@@ -5,7 +5,7 @@
 .doc th,.doc td{border:1px solid #e3e8ec;padding:6px 8px;vertical-align:top;text-align:left}
 .langs{font-size:14px;margin:0 0 8px} .langs a,.langs b{margin-right:10px}</style></head>
 <body><main class="doc" style="max-width:860px;margin:0 auto;padding:16px"><p class="langs"><b>English</b> <a href="../privacy/fr/" hreflang="fr">Français</a> <a href="../privacy/de/" hreflang="de">Deutsch</a> <a href="../privacy/it/" hreflang="it">Italiano</a> <a href="../privacy/es/" hreflang="es">Español</a></p><h1>SnowScope privacy policy</h1>
-<p><em>Version 1.3 — 29 October 2026. Publisher: Atlas Labs. Contact: atlaslabsdaba@gmail.com.</em></p>
+<p><em>Version 1.4 — 31 October 2026. Publisher: Atlas Labs. Contact: atlaslabsdaba@gmail.com.</em></p>
 <p>SnowScope shows snow maps, snow forecasts, summit information and ski-touring information. We collect as little as
 possible: no analytics SDK of our own and no selling of data. Free users may see ads (see "Advertising"); during the
 current test phase every feature is free and no ads are shown.</p>
@@ -113,6 +113,27 @@ current test phase every feature is free and no ads are shown.</p>
 <td>Until you delete the report (tap it → Delete) or your data</td>
 </tr>
 <tr>
+<td>Public profile: username, display name, short "about you" text, home resort, and season numbers and badges computed from your published snow reports</td>
+<td><strong>Only if you switch on "Show my profile to everyone"</strong> (off by default; needs an account with a confirmed e-mail or phone)</td>
+<td>Our server; shown to everyone in the app (profile page, author name on your snow reports, "Fresh snow reports" feed)</td>
+<td>Let other skiers see and follow your snow reports</td>
+<td>Until you switch it off and delete it (Public profile → Delete) or delete your data</td>
+</tr>
+<tr>
+<td>Follows: which public profiles you follow, with a one-way hash of your install or account id; the number of followers of a profile</td>
+<td>When you tap Follow</td>
+<td>Our server (the follower list itself is never shown; only the count)</td>
+<td>Show the reports of the skiers you follow</td>
+<td>Until you unfollow or delete your data</td>
+</tr>
+<tr>
+<td>Abuse reports on public profiles, with a one-way hash of your install or account id</td>
+<td>When you report a profile</td>
+<td>Our server</td>
+<td>Hide abusive profiles (three reports hide a profile)</td>
+<td>Until you delete your data</td>
+</tr>
+<tr>
 <td>"Useful" taps and abuse reports on snow reports, with a one-way hash of your install id</td>
 <td>When you tap them</td>
 <td>Our server</td>
@@ -161,6 +182,13 @@ current test phase every feature is free and no ads are shown.</p>
 <td>Fix bugs</td>
 <td>90 days</td>
 </tr>
+<tr>
+<td>Crash report via Firebase Crashlytics: crash stack trace, app version, phone model, Android version and a Crashlytics installation id</td>
+<td><strong>Only if you switch on "Send crash reports"</strong> in About (off by default)</td>
+<td>Google Firebase Crashlytics (our provider)</td>
+<td>Fix crashes</td>
+<td>90 days (Firebase retention); switching it off deletes reports not yet sent</td>
+</tr>
 </tbody>
 </table>
 <p>Location is used only while you use the map's "my location", record a track, open the Summit AI camera, ask for a
@@ -170,9 +198,15 @@ location" keeps only the ~500 m square, never the exact point. Deleting your dat
 reports and their photos.</p>
 <h2>Services the phone contacts directly</h2>
 <p>They see your IP address and the area requested, nothing else from us: the map-tile provider, public terrain-tile
-servers, GitHub Pages (the app's server address) and Cloudflare (which carries the traffic to our server). Weather
+servers, GitHub Pages (the app's server address), Cloudflare (which carries the traffic to our server) and, while the
+precipitation radar layer is on, RainViewer (the radar pictures). Weather
 data is fetched <strong>by our server</strong>, so the weather providers do not see you. The full list of data providers is in the
 app under About &amp; credits.</p>
+<h2>Crash reports (Firebase Crashlytics)</h2>
+<p>"Send crash reports" in About is off by default. Only if you switch it on, a crash sends the crash stack trace, app
+version, phone model, Android version and a Crashlytics installation id to Google Firebase Crashlytics, which acts
+as our provider; Firebase keeps crash reports for 90 days. Switching it off stops collection and deletes reports not
+yet sent.</p>
 <h2>Accounts (Firebase Authentication)</h2>
 <p>Creating an account is optional. We use Google Firebase Authentication to store your e-mail address and password
 (hashed) and to send the verification e-mail (some account features, such as keeping Pro on a new phone, need a verified
@@ -200,11 +234,15 @@ position. Those sites have their own privacy policies; we may earn a commission 
 <p>Snow reports you publish (depth, photo, spot, time, name) are public and may be shown in the app, on the web map and
 in share cards. You can delete each report yourself. Reports are moderated: three abuse reports hide a report, and we
 can remove content that breaks the Terms of use. Measurements also improve our snow map in aggregated form, without
-any identity.</p>
+any identity. A public profile is optional and off by default; when it is on, your username, display name, "about you"
+text, home resort and season numbers are public, and your published snow reports show your name with a link to the
+profile. Spots on a profile and in the feed are only the ~500 m square, never the exact point. Usernames and texts are
+checked for offensive words; three abuse reports hide a profile. Days on snow from your recorded ski days are shown only
+on your phone and on story cards you choose to share; they are never sent to us.</p>
 <h2>Delete your data</h2>
 <p>In the app: Menu → About → "Delete my data" (or Profile → "Delete account" when signed in). This erases everything
-stored on our server for your install or account, including your published snow reports and their photos, and your
-Firebase account. A single snow report can be deleted from its card on the map. Uninstalling the app removes what is
+stored on our server for your install or account, including your published snow reports and their photos, your public profile, its followers and the profiles you
+follow, and your Firebase account. A single snow report can be deleted from its card on the map. Uninstalling the app removes what is
 stored on the phone. You can also use <a href="https://wassim1313.github.io/snowscope/delete/">https://wassim1313.github.io/snowscope/delete/</a> or write to
 atlaslabsdaba@gmail.com; we answer within 30 days.</p>
 <h2>Your rights (GDPR / UK GDPR / CCPA)</h2>
@@ -218,5 +256,6 @@ bulletin. See the Terms of use.</p>
 <h2>Changes</h2>
 <p>We update this page and its version when the app's data use changes. Previous versions: 1.0 (25 Oct 2026, first
 release), 1.1 (27 Oct, ads and hotel links), 1.2 (27 Oct, community snow reports), 1.3 (29 Oct, accounts via Firebase,
-Summit AI position, "Powder near you" alerts, one-time Remove ads).</p><p><a href="../terms/">Terms of use</a> · <a href="../delete/">Delete data / account</a> · atlaslabsdaba@gmail.com</p>
+Summit AI position, "Powder near you" alerts, one-time Remove ads), 1.4 (31 Oct, optional public profile, follows and
+profile abuse reports, opt-in Crashlytics crash reports, radar pictures loaded from RainViewer).</p><p><a href="../terms/">Terms of use</a> · <a href="../delete/">Delete data / account</a> · atlaslabsdaba@gmail.com</p>
 <p><a href="../">← Snow map</a></p></main></body></html>
