@@ -6,7 +6,7 @@
 <title>SnowScope snow card</title>
 <meta name="description" content="Live snow depth, new snow and powder score from SnowScope.">
 <meta property="og:title" content="Snow report on SnowScope">
-<meta property="og:description" content="Snow depth, new snow and powder score: open it in SnowScope.">
+<meta property="og:description" content="Snow depth, new snow and powder score: get SnowScope for Android.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#165CC4">
 <link rel="icon" href="../static/icon.svg">
@@ -36,10 +36,18 @@ h1{font-size:28px;line-height:1.15;margin:6px 0 4px;font-weight:800;letter-spaci
 .note{font-size:13px;color:var(--mute);text-align:center;padding:0 16px 16px;min-height:16px}
 .cta{display:block;width:100%;margin:20px 0 10px;padding:17px 20px;border:0;border-radius:16px;background:var(--blue);color:#fff;font:700 17px Inter,system-ui,sans-serif;text-align:center;text-decoration:none;box-shadow:0 8px 20px rgba(22,92,196,.28)}
 .cta:active{transform:translateY(1px)}
+.cta.alt{background:var(--card);color:var(--blue);border:1.5px solid var(--blue);box-shadow:none;margin-top:0}
 .sub{display:block;text-align:center;color:var(--blue);font-weight:600;font-size:15px;text-decoration:none;padding:8px}
-.qr{display:none;margin:18px auto 0;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+.get{margin:18px 0 0;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 16px}
+.get h2{margin:0 0 4px;font-size:17px;font-weight:800;color:var(--navy)}
+.get .hint{margin:0 0 12px;color:var(--mute);font-size:13px}
+.badge{display:inline-block}
+.badge img{height:58px;width:auto}
+.qr{display:none;margin:14px auto 0}
 .qr svg{width:180px;height:180px}
-.qr p{margin:10px 0 0;color:var(--mute);font-size:13px}
+.qr p{margin:8px 0 0;color:var(--mute);font-size:13px}
+.ios{display:none;margin:12px 0 0;font-size:13px;color:var(--mute)}
+.test{display:none}
 .skel{display:inline-block;min-width:44px;height:26px;border-radius:8px;background:var(--ice);vertical-align:middle}
 footer{margin-top:26px;text-align:center;font-size:12px;color:var(--mute)}
 footer a{color:var(--mute)}
@@ -62,31 +70,140 @@ footer a{color:var(--mute)}
     <div class="note" id="note"></div>
   </div>
   <a class="cta" id="open" href="#" data-t="open">Open in SnowScope</a>
-  <a class="sub" id="play" href="#" data-t="play">Get it on Google Play</a>
-  <div class="qr" id="qr"><div id="qrcode"></div><p data-t="scan">Scan with your Android phone</p></div>
+  <div class="get" id="get">
+    <h2 data-t="get">Get SnowScope</h2>
+    <p class="hint" id="hint" data-t="hint">Free snow forecasts, live snow depth and powder alerts.</p>
+    <a class="badge" id="play" href="#"><img id="badge" alt="Get it on Google Play"
+       src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"></a>
+    <div class="test" id="test">
+      <a class="cta" id="join" href="#" data-t="join">Join the test on Google Play</a>
+      <a class="cta alt" id="apk" href="#" data-t="apk">Download the Android app (APK)</a>
+    </div>
+    <div class="qr" id="qr"><div id="qrcode"></div><p data-t="scan">Scan with your Android phone</p></div>
+    <p class="ios" id="ios" data-t="ios">The iPhone version is coming soon.</p>
+  </div>
   <footer>SnowScope by Atlas Labs · <a href="../">Snow map</a> · <a href="../privacy/">Privacy</a></footer>
 </main>
+<script id="ss-landing-logic">
+/*
+ * Pure logic (no DOM): tests/test_share_landing.py runs this block in node. docs/SHARING.md.
+ * PLAY_PUBLIC: false while the app is in CLOSED testing on Google Play (non-testers get "item not found" on the
+ * listing): Android then shows the testers' opt-in link + the direct APK. Flip to true when the listing is public:
+ * Android then goes straight to the Play listing with the install referrer (or opens the app when it is installed).
+ */
+var PLAY_PUBLIC = false;
+var SSLanding = (function () {
+  var PKG = 'ma.atlaslabs.snowscope';
+  var C = {
+    PKG: PKG,
+    PLAY: 'https://play.google.com/store/apps/details?id=' + PKG,
+    MARKET: 'market://details?id=' + PKG,
+    TESTING: 'https://play.google.com/apps/testing/' + PKG,
+    APK: 'https://wassim1313.github.io/snowscope/download/'
+  };
+  function clean(v, re) { v = (v || '').trim(); return re.test(v) ? v : ''; }
+  function get(search, k) {
+    var m = new RegExp('[?&]' + k + '=([^&#]*)').exec(search || '');
+    if (!m) return '';
+    try { return decodeURIComponent(m[1].replace(/\+/g, ' ')); } catch (e) { return ''; }
+  }
+  /** ?s=<slug>&d=<day>&ref=<code>&c=<card>&m=<medium> (invalid parts dropped). */
+  function parse(search) {
+    var slug = clean(get(search, 's'), /^[A-Za-z0-9_\-]{1,80}$/).toLowerCase().replace(/-/g, '_');
+    return {
+      slug: slug,
+      day: clean(get(search, 'd'), /^\d{4}-\d{2}-\d{2}$/),
+      ref: clean(get(search, 'ref'), /^[A-Za-z0-9_]{3,20}$/).toUpperCase(),
+      card: clean(get(search, 'c'), /^[a-z0-9_]{2,24}$/) || 'share',
+      medium: clean(get(search, 'm'), /^[a-z_]{2,20}$/) || 'link',
+      noapp: get(search, 'noapp') === '1'
+    };
+  }
+  /** Play install referrer (same string as the app's data/ShareQr.referrer). */
+  function referrer(p) {
+    return 'utm_source=share&utm_medium=' + p.medium + '&utm_campaign=' + p.card + '&utm_content=' + (p.ref || 'organic') +
+      (p.slug ? '&utm_term=' + p.slug : '');
+  }
+  function playUrl(p) { return C.PLAY + '&referrer=' + encodeURIComponent(referrer(p)); }
+  function marketUrl(p) { return C.MARKET + '&referrer=' + encodeURIComponent(referrer(p)); }
+  /** Opens the app when installed (resort + day), else Chrome follows [fallback]. */
+  function intentUrl(p, fallback) {
+    var qs = [];
+    if (p.day) qs.push('day=' + p.day);
+    if (p.ref) qs.push('ref=' + p.ref);
+    return 'intent://' + (p.slug ? 'resort/' + p.slug : 'open') + (qs.length ? '?' + qs.join('&') : '') +
+      '#Intent;scheme=snowscope;package=' + PKG + ';S.browser_fallback_url=' + encodeURIComponent(fallback) + ';end';
+  }
+  function platform(ua) {
+    if (/Android/i.test(ua)) return 'android';
+    if (/iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && /Mobile\//.test(ua))) return 'ios';
+    return 'desktop';
+  }
+  function withNoApp(href) {
+    var h = String(href || '').split('#')[0];
+    return /[?&]noapp=1/.test(h) ? h : h + (h.indexOf('?') >= 0 ? '&' : '?') + 'noapp=1';
+  }
+  /**
+   * What the page does: {platform, auto: [first navigation, delayed store navigation | null], store (the "get" button),
+   * test (show opt-in + APK), qr (desktop/iOS: the page's own link for an Android phone), ios (coming-soon note)}.
+   */
+  function plan(search, ua, href, playPublic) {
+    var p = parse(search);
+    var os = platform(ua);
+    var out = {platform: os, params: p, referrer: referrer(p), auto: null, later: null, open: null,
+               store: playPublic ? playUrl(p) : C.TESTING, test: !playPublic, apk: C.APK, qr: null, ios: os === 'ios'};
+    if (os === 'android') {
+      // installed app first (intent://); Chrome falls back to the store (public) or to this page with noapp=1 (testing)
+      out.open = intentUrl(p, playPublic ? playUrl(p) : withNoApp(href));
+      if (!p.noapp) out.auto = out.open;
+      // in-app browsers (Instagram, Telegram...) ignore intent://: go to the Play app if the page is still showing
+      if (playPublic) out.later = marketUrl(p);
+    } else {
+      out.open = out.store;
+      var h = String(href || '').split('#')[0];
+      out.qr = /[?&]m=/.test(h) ? h : h + (h.indexOf('?') >= 0 ? '&' : '?') + 'm=qr';
+    }
+    return out;
+  }
+  return {C: C, parse: parse, referrer: referrer, playUrl: playUrl, marketUrl: marketUrl, intentUrl: intentUrl,
+          platform: platform, plan: plan};
+})();
+if (typeof module !== 'undefined') module.exports = {SSLanding: SSLanding, PLAY_PUBLIC: PLAY_PUBLIC};
+</script>
 <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
 <script>
 (function () {
-  var PKG = 'ma.atlaslabs.snowscope';
-  var PLAY = 'https://play.google.com/store/apps/details?id=' + PKG;
   var T = {
-    en: {depth: 'Snow depth', new: 'New snow', score: 'Powder score', open: 'Open in SnowScope', play: 'Get it on Google Play',
-         scan: 'Scan with your Android phone', today: 'Today', off: 'Live numbers unavailable right now: open the app for the latest snow.',
-         generic: 'Snow, powder and the best resorts this weekend', title: 'snow on SnowScope'},
-    fr: {depth: 'Neige au sol', new: 'Neige fraîche', score: 'Indice poudreuse', open: 'Ouvrir dans SnowScope', play: 'Disponible sur Google Play',
-         scan: 'Scannez avec votre téléphone Android', today: "Aujourd'hui", off: "Données en direct indisponibles : ouvrez l'app pour la neige la plus récente.",
-         generic: 'Neige, poudreuse et les meilleures stations ce week-end', title: 'neige sur SnowScope'},
-    de: {depth: 'Schneehöhe', new: 'Neuschnee', score: 'Pulverwert', open: 'In SnowScope öffnen', play: 'Jetzt bei Google Play',
-         scan: 'Mit deinem Android-Handy scannen', today: 'Heute', off: 'Live-Werte gerade nicht verfügbar: öffne die App für den aktuellen Schnee.',
-         generic: 'Schnee, Pulver und die besten Skigebiete am Wochenende', title: 'Schnee auf SnowScope'},
-    it: {depth: 'Neve al suolo', new: 'Neve fresca', score: 'Indice neve fresca', open: 'Apri in SnowScope', play: 'Disponibile su Google Play',
-         scan: 'Inquadra con il tuo telefono Android', today: 'Oggi', off: "Dati in tempo reale non disponibili: apri l'app per la neve più recente.",
-         generic: 'Neve, powder e le migliori stazioni nel weekend', title: 'neve su SnowScope'},
-    es: {depth: 'Espesor de nieve', new: 'Nieve nueva', score: 'Índice de nieve polvo', open: 'Abrir en SnowScope', play: 'Disponible en Google Play',
-         scan: 'Escanea con tu móvil Android', today: 'Hoy', off: 'Datos en directo no disponibles ahora: abre la app para ver la nieve más reciente.',
-         generic: 'Nieve, nieve polvo y las mejores estaciones este fin de semana', title: 'nieve en SnowScope'}
+    en: {depth: 'Snow depth', new: 'New snow', score: 'Powder score', open: 'Open in SnowScope', get: 'Get SnowScope',
+         hint: 'Free snow forecasts, live snow depth and powder alerts.', join: 'Join the test on Google Play',
+         apk: 'Download the Android app (APK)', testhint: 'SnowScope is in testing on Google Play: join the test, or install the app directly.',
+         scan: 'Scan with your Android phone', ios: 'The iPhone version is coming soon.', today: 'Today',
+         off: 'Live numbers unavailable right now: open the app for the latest snow.',
+         generic: 'Snow, powder and the best resorts this weekend', title: 'snow on SnowScope', badge: 'en'},
+    fr: {depth: 'Neige au sol', new: 'Neige fraîche', score: 'Indice poudreuse', open: 'Ouvrir dans SnowScope', get: 'Télécharger SnowScope',
+         hint: 'Prévisions neige gratuites, hauteur de neige en direct et alertes poudreuse.', join: 'Rejoindre le test sur Google Play',
+         apk: "Télécharger l'app Android (APK)", testhint: "SnowScope est en test sur Google Play : rejoignez le test ou installez l'app directement.",
+         scan: 'Scannez avec votre téléphone Android', ios: "La version iPhone arrive bientôt.", today: "Aujourd'hui",
+         off: "Données en direct indisponibles : ouvrez l'app pour la neige la plus récente.",
+         generic: 'Neige, poudreuse et les meilleures stations ce week-end', title: 'neige sur SnowScope', badge: 'fr'},
+    de: {depth: 'Schneehöhe', new: 'Neuschnee', score: 'Pulverwert', open: 'In SnowScope öffnen', get: 'SnowScope holen',
+         hint: 'Kostenlose Schneeprognosen, Live-Schneehöhen und Pulveralarme.', join: 'Beim Test auf Google Play mitmachen',
+         apk: 'Android-App herunterladen (APK)', testhint: 'SnowScope ist bei Google Play im Test: mach beim Test mit oder installiere die App direkt.',
+         scan: 'Mit deinem Android-Handy scannen', ios: 'Die iPhone-Version kommt bald.', today: 'Heute',
+         off: 'Live-Werte gerade nicht verfügbar: öffne die App für den aktuellen Schnee.',
+         generic: 'Schnee, Pulver und die besten Skigebiete am Wochenende', title: 'Schnee auf SnowScope', badge: 'de'},
+    it: {depth: 'Neve al suolo', new: 'Neve fresca', score: 'Indice neve fresca', open: 'Apri in SnowScope', get: 'Scarica SnowScope',
+         hint: 'Previsioni neve gratuite, altezza neve in tempo reale e avvisi powder.', join: 'Partecipa al test su Google Play',
+         apk: "Scarica l'app Android (APK)", testhint: "SnowScope è in test su Google Play: partecipa al test o installa l'app direttamente.",
+         scan: 'Inquadra con il tuo telefono Android', ios: 'La versione per iPhone arriva presto.', today: 'Oggi',
+         off: "Dati in tempo reale non disponibili: apri l'app per la neve più recente.",
+         generic: 'Neve, powder e le migliori stazioni nel weekend', title: 'neve su SnowScope', badge: 'it'},
+    es: {depth: 'Espesor de nieve', new: 'Nieve nueva', score: 'Índice de nieve polvo', open: 'Abrir en SnowScope', get: 'Descarga SnowScope',
+         hint: 'Previsiones de nieve gratis, espesor de nieve en directo y alertas de nieve polvo.', join: 'Únete a la prueba en Google Play',
+         apk: 'Descarga la app de Android (APK)', testhint: 'SnowScope está en pruebas en Google Play: únete a la prueba o instala la app directamente.',
+         scan: 'Escanea con tu móvil Android', ios: 'La versión para iPhone llegará pronto.', today: 'Hoy',
+         off: 'Datos en directo no disponibles ahora: abre la app para ver la nieve más reciente.',
+         generic: 'Nieve, nieve polvo y las mejores estaciones este fin de semana', title: 'nieve en SnowScope', badge: 'es'}
   };
   var lang = ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').slice(0, 2).toLowerCase();
   if (!T[lang]) lang = 'en';
@@ -94,35 +211,38 @@ footer a{color:var(--mute)}
   document.documentElement.lang = lang;
   Array.prototype.forEach.call(document.querySelectorAll('[data-t]'), function (el) { el.textContent = L[el.getAttribute('data-t')]; });
 
-  var q = new URLSearchParams(location.search);
-  var clean = function (v, re) { v = (v || '').trim(); return re.test(v) ? v : ''; };
-  var slug = clean(q.get('s'), /^[A-Za-z0-9_\-]{1,80}$/).toLowerCase();
-  var day = clean(q.get('d'), /^\d{4}-\d{2}-\d{2}$/);
-  var ref = clean(q.get('ref'), /^[A-Za-z0-9_]{3,20}$/).toUpperCase();
-  var medium = clean(q.get('m'), /^[a-z_]{2,20}$/) || 'qr';
-  var appSlug = slug.replace(/-/g, '_');
-
-  var referrer = 'utm_source=share&utm_medium=' + medium + (ref ? '&utm_campaign=' + ref : '&utm_campaign=organic') +
-                 (appSlug ? '&utm_content=' + appSlug : '');
-  var playUrl = PLAY + '&referrer=' + encodeURIComponent(referrer);
-  var path = appSlug ? 'resort/' + appSlug : 'open';
-  var qs = [];
-  if (day) qs.push('day=' + day);
-  if (ref) qs.push('ref=' + ref);
-  var intentUrl = 'intent://' + path + (qs.length ? '?' + qs.join('&') : '') +
-                  '#Intent;scheme=snowscope;package=' + PKG + ';S.browser_fallback_url=' + encodeURIComponent(playUrl) + ';end';
-  var android = /Android/i.test(navigator.userAgent);
-  var open = document.getElementById('open'), play = document.getElementById('play');
-  open.href = android ? intentUrl : playUrl;
-  play.href = playUrl;
-  if (!android) {
+  var P = SSLanding.plan(location.search, navigator.userAgent, location.href, PLAY_PUBLIC);
+  var p = P.params, slug = p.slug, day = p.day, ref = p.ref;
+  var $ = function (id) { return document.getElementById(id); };
+  $('open').href = P.open;
+  $('play').href = P.store;
+  $('badge').src = 'https://play.google.com/intl/en_us/badges/static/images/badges/' + L.badge + '_badge_web_generic.png';
+  $('join').href = SSLanding.C.TESTING;
+  $('apk').href = P.apk;
+  if (P.test) {
+    // closed testing: the listing is not public yet, so the Play badge would say "item not found" to non-testers
+    $('play').style.display = 'none';
+    $('test').style.display = 'block';
+    $('hint').textContent = L.testhint;
+  }
+  if (P.platform !== 'android') $('open').style.display = 'none';
+  if (P.ios) $('ios').style.display = 'block';
+  if (P.qr) {
     try {
       var qr = qrcode(0, 'M');
-      qr.addData(location.href);
+      qr.addData(P.qr);
       qr.make();
-      document.getElementById('qrcode').innerHTML = qr.createSvgTag({cellSize: 4, margin: 2, scalable: true});
-      document.getElementById('qr').style.display = 'block';
-    } catch (e) { /* QR library unavailable: the Play link still works */ }
+      $('qrcode').innerHTML = qr.createSvgTag({cellSize: 4, margin: 4, scalable: true});
+      $('qr').style.display = 'block';
+    } catch (e) { /* QR library unavailable: the links still work */ }
+  }
+  // Android: straight into the app (installed) or the store; the page stays as the fallback with the buttons
+  if (P.auto) {
+    var left = false;
+    document.addEventListener('visibilitychange', function () { if (document.hidden) left = true; });
+    window.addEventListener('pagehide', function () { left = true; });
+    try { location.href = P.auto; } catch (e) {}
+    if (P.later) setTimeout(function () { if (!left && !document.hidden) location.href = P.later; }, 1600);
   }
 
   function fmtDay(iso, today) {
@@ -134,7 +254,7 @@ footer a{color:var(--mute)}
     } catch (e) { return iso; }
   }
   function set(id, v, unit) {
-    var el = document.getElementById(id);
+    var el = $(id);
     el.textContent = '';
     if (v === null || v === undefined) { el.textContent = '–'; return; }
     el.appendChild(document.createTextNode(String(v)));
@@ -142,28 +262,31 @@ footer a{color:var(--mute)}
   }
   function offline() {
     set('depth', null); set('new', null); set('score', null);
-    document.getElementById('note').textContent = L.off;
-    if (!slug) document.getElementById('name').textContent = L.generic;
+    $('note').textContent = L.off;
+    if (!slug) $('name').textContent = L.generic;
   }
-  function withTimeout(p, ms) {
-    return Promise.race([p, new Promise(function (_, rej) { setTimeout(function () { rej(new Error('timeout')); }, ms); })]);
+  function withTimeout(pr, ms) {
+    return Promise.race([pr, new Promise(function (_, rej) { setTimeout(function () { rej(new Error('timeout')); }, ms); })]);
   }
-  document.getElementById('day').textContent = day ? fmtDay(day, null) : '';
-  if (!slug) { offline(); document.getElementById('note').textContent = ''; return; }
-  document.getElementById('name').textContent = appSlug.replace(/_/g, ' ').replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+  $('day').textContent = day ? fmtDay(day, null) : '';
+  if (!slug) $('card').style.display = 'none';
+  else $('name').textContent = slug.replace(/_/g, ' ').replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+  if (!slug && !ref) return;
 
   withTimeout(fetch('../config.json', {cache: 'no-store'}).then(function (r) { return r.json(); }), 5000).then(function (c) {
     var api = String(c.api || '').replace(/\/$/, '');
     if (!api) throw new Error('no api');
-    if (ref) { try { fetch(api + '/v1/ref/open?code=' + encodeURIComponent(ref) + '&s=' + encodeURIComponent(appSlug), {mode: 'cors', keepalive: true}); } catch (e) {} }
-    var url = api + '/v1/share/card?s=' + encodeURIComponent(appSlug) + (day ? '&d=' + day : '') + '&lang=' + lang;
+    // opens are counted per (code, resort, day) only (engine/referral.py record_open)
+    if (ref) { try { fetch(api + '/v1/ref/open?code=' + encodeURIComponent(ref) + '&s=' + encodeURIComponent(slug || '-'), {mode: 'cors', keepalive: true}); } catch (e) {} }
+    if (!slug) return null;
+    var url = api + '/v1/share/card?s=' + encodeURIComponent(slug) + (day ? '&d=' + day : '') + '&lang=' + lang;
     return withTimeout(fetch(url).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }), 9000);
   }).then(function (j) {
-    document.getElementById('name').textContent = j.short_name || j.name;
+    if (!j) return;
+    $('name').textContent = j.short_name || j.name;
     document.title = (j.short_name || j.name) + ' · ' + L.title;
-    document.getElementById('where').textContent = [j.region, j.country].filter(Boolean).join(', ') +
-      (j.top_m ? ' · ' + j.top_m + ' m' : '');
-    document.getElementById('day').textContent = fmtDay(j.day, j.today);
+    $('where').textContent = [j.region, j.country].filter(Boolean).join(', ') + (j.top_m ? ' · ' + j.top_m + ' m' : '');
+    $('day').textContent = fmtDay(j.day, j.today);
     set('depth', j.depth_cm, ' cm');
     set('new', j.new_cm, ' cm');
     set('score', j.powder_score === null || j.powder_score === undefined ? null :
