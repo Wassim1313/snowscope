@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://installing-feelings-subtle-seminar.trycloudflare.com";
+window.SNOWSCOPE_API = "https://strength-isbn-broadcast-mile.trycloudflare.com";
