@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://kits-mattress-finally-modes.trycloudflare.com";
+window.SNOWSCOPE_API = "https://caught-farms-innovative-helpful.trycloudflare.com";
