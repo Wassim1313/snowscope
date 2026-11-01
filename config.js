@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://singles-closes-arthritis-disclose.trycloudflare.com";
+window.SNOWSCOPE_API = "https://sept-alone-studying-platform.trycloudflare.com";
