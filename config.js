@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://individuals-anaheim-raised-coating.trycloudflare.com";
+window.SNOWSCOPE_API = "https://webster-encyclopedia-radius-changing.trycloudflare.com";
