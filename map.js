@@ -73,7 +73,8 @@
     map.on("click", onClick);
     map.on("moveend", () => {
       const c = map.getCenter();
-      history.replaceState(null, "", "#@" + c.lat.toFixed(3) + "," + c.lng.toFixed(3) + "," + map.getZoom().toFixed(1));
+      if (regionMove) regionMove = false;               // keep the region link (#alps) after a region jump
+      else history.replaceState(null, "", "#@" + c.lat.toFixed(3) + "," + c.lng.toFixed(3) + "," + map.getZoom().toFixed(1));
       if (st.over.pistes) loadPistes();
     });
     map.getCanvas().style.cursor = "crosshair";
@@ -84,7 +85,12 @@
   onAccount(SS.S);
 
   // ------------------------------------------------------------------ regions, updated time
+  const slugOf = (code) => code.toLowerCase().replace("_ne", "-northeast").replace("_", "-");
+  let regionMove = false;
   function homeRegion() {
+    const h = location.hash.slice(1);
+    const fromHash = DATA.regions.find((r) => slugOf(r.code) === h);
+    if (fromHash) return fromHash.code;
     const saved = SS.store.get("ss_region");
     if (saved && DATA.regions.some((r) => r.code === saved)) return saved;
     let tz = "";
@@ -97,16 +103,25 @@
   function flyRegion(code, instant) {
     const r = DATA.regions.find((x) => x.code === code);
     if (!r || !map) return;
-    map.fitBounds([r.coords[3], r.coords[1]], { padding: { top: 64, bottom: 40, left: 16, right: 16 }, maxZoom: 7, duration: instant ? 0 : 600 });
+    regionMove = true;
+    map.fitBounds([r.coords[3], r.coords[1]], { padding: { top: 64, bottom: 40, left: 16, right: 16 }, maxZoom: 7, duration: instant ? 0 : 900, essential: true });
     SS.store.set("ss_region", code);
+    history.replaceState(null, "", "#" + slugOf(code));
     document.querySelectorAll("#regions [data-r]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.r === code));
   }
   function drawRegions() {
     const box = $("regions");
     if (!box) return;
     const cur = homeRegion();
-    box.innerHTML = DATA.regions.map((r) => '<button class="pill" data-r="' + r.code + '" aria-pressed="' + (r.code === cur) + '">' + esc(r.name) + "</button>").join("");
-    box.onclick = (e) => { const b = e.target.closest("[data-r]"); if (b) flyRegion(b.dataset.r); };
+    box.innerHTML = DATA.regions.map((r) => '<button class="pill" data-r="' + r.code + '" aria-pressed="' + (r.code === cur) + '">' + esc(r.name) + "</button>").join("") +
+      ("geolocation" in navigator ? '<button class="pill" data-me><span class="ms" style="font-size:18px">near_me</span> Near me</button>' : "");
+    box.onclick = (e) => {
+      const b = e.target.closest("[data-r]");
+      if (b) { flyRegion(b.dataset.r); return; }
+      if (e.target.closest("[data-me]")) navigator.geolocation.getCurrentPosition(
+        (p) => map && map.flyTo({ center: [p.coords.longitude, p.coords.latitude], zoom: 9, duration: 1200 }),
+        () => toast("Location not available"), { maximumAge: 6e5, timeout: 10000 });
+    };
   }
   function drawUpdated() {
     const t = Date.parse(DATA.built_utc.replace("Z", ":00Z"));
