@@ -5,7 +5,7 @@
 .doc th,.doc td{border:1px solid #e3e8ec;padding:6px 8px;vertical-align:top;text-align:left}
 .langs{font-size:14px;margin:0 0 8px} .langs a,.langs b{margin-right:10px}</style></head>
 <body><main class="doc" style="max-width:860px;margin:0 auto;padding:16px"><p class="langs"><a href="../../privacy/" hreflang="en">English</a> <a href="../../privacy/fr/" hreflang="fr">Français</a> <a href="../../privacy/de/" hreflang="de">Deutsch</a> <a href="../../privacy/it/" hreflang="it">Italiano</a> <b>Español</b></p><h1>Política de privacidad de SnowScope</h1>
-<p><em>Versión 1.4 — 31 de octubre de 2026. Editor: Atlas Labs. Contacto: atlaslabsdaba@gmail.com.</em></p>
+<p><em>Versión 1.5 — 2 de noviembre de 2026. Editor: Atlas Labs. Contacto: atlaslabsdaba@gmail.com.</em></p>
 <p>SnowScope muestra mapas de nieve, previsiones de nieve, información de cumbres y de esquí de travesía. Recogemos lo
 mínimo: ningún SDK de analítica propio y ninguna venta de datos. Los usuarios gratuitos pueden ver anuncios (ver
 "Publicidad"); durante la fase de pruebas actual todas las funciones son gratis y no se muestran anuncios.</p>
@@ -211,7 +211,7 @@ Desactivarlo detiene la recogida y borra los informes aún no enviados.</p>
 enviar el e-mail de verificación (algunas funciones de la cuenta, como recuperar Pro en un móvil nuevo, requieren un
 e-mail verificado); Google actúa como nuestro proveedor y no usa estos datos para fines propios. Tu id de cuenta une tus
 favoritos, reglas de alerta y compras en nuestro servidor. Puedes borrar la cuenta en la app (Perfil → Borrar cuenta) o
-en <a href="https://wassim1313.github.io/snowscope/delete/:">https://wassim1313.github.io/snowscope/delete/:</a> se borran el usuario de Firebase y todo lo que nuestro servidor
+en https://wassim1313.github.io/snowscope/delete/: se borran el usuario de Firebase y todo lo que nuestro servidor
 guarda para él.</p>
 <h2>Publicidad (solo versión gratuita)</h2>
 <p>Cuando la publicidad está activa (no durante la fase de pruebas), los usuarios gratuitos pueden ver anuncios de Google
@@ -220,7 +220,7 @@ anuncios para mostrar y medir la publicidad, y envía a Google los fallos y diag
 publicitario; en el EEE, el Reino Unido y Suiza pedimos primero tu consentimiento (formulario de consentimiento de
 Google), que puedes cambiar en Acerca de → Opciones de privacidad. Sin consentimiento recibes anuncios no
 personalizados. Los suscriptores de Pro y quienes compraron "Quitar anuncios" no ven anuncios. Política de privacidad
-de Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
+de Google: https://policies.google.com/privacy</p>
 <h2>Compras</h2>
 <p>SnowScope Pro (suscripción mensual o anual) y "Quitar anuncios" (compra única) los gestiona Google Play; nunca vemos los
 datos de pago. Guardamos el token de compra de Google Play para verificar la compra. Cancela la suscripción cuando
@@ -240,11 +240,31 @@ públicos, y tus reportes publicados muestran tu nombre con un enlace al perfil.
 solo el cuadrado de unos 500 m, nunca el punto exacto. Los nombres de usuario y los textos se revisan para filtrar
 palabras ofensivas; tres denuncias ocultan un perfil. Los días en la nieve de tus jornadas grabadas solo se muestran en
 tu móvil y en las tarjetas de historia que decidas compartir; nunca se nos envían.</p>
+<h2>El sitio web de SnowScope (mapa de nieve y páginas de estaciones)</h2>
+<p>El sitio funciona sin cuenta. Como cualquier web, lo sirve GitHub Pages, que ve tu dirección IP; los mosaicos del
+mapa vienen del proveedor de mapas (Mapbox u OpenFreeMap) y las fuentes de Google Fonts.</p>
+<ul>
+<li><strong>Publicidad (solo visitantes gratuitos):</strong> el sitio muestra anuncios de Google AdSense. Google puede usar cookies,
+  tu dirección IP (ubicación aproximada) y tus interacciones con los anuncios para mostrarlos y medirlos. En el EEE, el
+  Reino Unido y Suiza, el mensaje de consentimiento de Google te lo pregunta antes; sin consentimiento ves anuncios no
+  personalizados (limitados). "Cookie settings" al pie de la página cambia tu elección. Los miembros Pro conectados y
+  quienes compraron "Quitar anuncios" no ven anuncios.</li>
+<li><strong>Enlaces a hoteles:</strong> "Stay near …" y "Hotels map" abren o cargan Stay22 (que redirige a Booking.com o un sitio
+  similar) solo con el lugar, las fechas, el número de huéspedes y el idioma. El mapa de hoteles solo se carga si lo
+  tocas. Son enlaces patrocinados: podemos ganar una comisión por las reservas.</li>
+<li><strong>Inicio de sesión (opcional):</strong> el sitio usa la misma cuenta de Google Firebase Authentication que la app (correo +
+  contraseña, o Google). Tras iniciar sesión, tu navegador envía el token de Firebase a nuestro servidor para comprobar
+  si tienes Pro; no se nos envía nada más de tu navegación.</li>
+<li><strong>Guardado en tu navegador:</strong> si ya iniciaste sesión, tu último estado Pro (para que los anuncios sigan ocultos
+  mientras lo comprobamos) y la última región vista. Borrar los datos del sitio los elimina.</li>
+<li><strong>Tocar el mapa</strong> para un valor se calcula en tu navegador a partir de archivos del sitio; para las capas Pro el punto
+  se envía a nuestro servidor (14 días en los registros, como en la app).</li>
+</ul>
 <h2>Borrar tus datos</h2>
 <p>En la app: Menú → Acerca de → "Borrar mis datos" (o Perfil → "Borrar cuenta" si has iniciado sesión). Se borra todo lo
 que nuestro servidor guarda para tu instalación o tu cuenta, incluidos tus reportes publicados con sus fotos, tu perfil público, sus seguidores y los perfiles que sigues, y tu
 cuenta de Firebase. Un reporte suelto se borra desde su ficha en el mapa. Desinstalar la app elimina lo guardado en el móvil.
-También puedes usar <a href="https://wassim1313.github.io/snowscope/delete/">https://wassim1313.github.io/snowscope/delete/</a> o escribir a atlaslabsdaba@gmail.com; respondemos en
+También puedes usar https://wassim1313.github.io/snowscope/delete/ o escribir a atlaslabsdaba@gmail.com; respondemos en
 30 días.</p>
 <h2>Tus derechos (RGPD / UK GDPR / CCPA)</h2>
 <p>Acceso, rectificación, supresión, portabilidad y oposición: atlaslabsdaba@gmail.com. Responsable del tratamiento: Atlas
@@ -258,5 +278,5 @@ de los servicios oficiales, con un enlace a su boletín. Ver las Condiciones de 
 <p>Actualizamos esta página y su versión cuando cambia el uso de datos de la app. Versiones anteriores: 1.0 (25 oct. 2026),
 1.1 (27 oct., publicidad y enlaces de hoteles), 1.2 (27 oct., reportes de nieve), 1.3 (29 oct., cuentas con Firebase,
 posición para Summit AI, alertas "Nieve polvo cerca de ti", compra única "Quitar anuncios"), 1.4 (31 oct., perfil público opcional, seguimientos y denuncias de
-perfiles, informes de fallos de Crashlytics opcionales, imágenes de radar cargadas desde RainViewer).</p><p><a href="../../terms/es/">Condiciones de uso</a> · <a href="../../delete/">Delete data / account</a> · atlaslabsdaba@gmail.com</p>
+perfiles, informes de fallos de Crashlytics opcionales, imágenes de radar cargadas desde RainViewer), 1.5 (2 nov., sitio web: anuncios AdSense, enlaces y mapas de hoteles Stay22, inicio de sesión opcional).</p><p><a href="../../terms/es/">Condiciones de uso</a> · <a href="../../delete/">Delete data / account</a> · atlaslabsdaba@gmail.com</p>
 <p><a href="../../">← Mapa de nieve</a></p></main></body></html>
