@@ -19,7 +19,8 @@
     ar: "{big} {when} في {place}. الثلج اليوم وأين تتزلج: snowscope.app #ثلج #تزلج #snowscope",
   };
   function caption(o) {
-    return (o.caption || CAP[lang] || CAP.en).replace("{big}", o.big).replace("{when}", t(o.sub || "")).replace("{place}", o.place || "");
+    return (o.caption || CAP[lang] || CAP.en).replace("{big}", o.big + (o.big2 ? " " + o.big2 : "")).replace("{when}", t(o.sub || "")).replace("{place}", o.place || "")
+      + (o.url ? " " + o.url : "");
   }
   function cover(ctx, img, x, y, w, h) {
     const r = Math.max(w / img.width, h / img.height), sw = w / r, sh = h / r;
@@ -32,7 +33,7 @@
     const cv = document.createElement("canvas"); cv.width = W; cv.height = H;
     const c = cv.getContext("2d");
     c.fillStyle = "#0A0F17"; c.fillRect(0, 0, W, H);
-    const mh = Math.round(H * (H > W ? 0.56 : 0.5));
+    const mh = Math.round(H * (H >= 1900 ? 0.6 : H > W ? 0.56 : 0.5));
     if (o.snapshot) cover(c, o.snapshot, 0, 0, W, mh);
     let g = c.createLinearGradient(0, mh * 0.55, 0, mh);
     g.addColorStop(0, "rgba(10,15,23,0)"); g.addColorStop(1, "rgba(10,15,23,1)");
@@ -47,10 +48,12 @@
     c.textBaseline = "alphabetic"; c.textAlign = rtl ? "right" : "left";
     const X = rtl ? W - 64 : 64;
     c.fillStyle = "#fff"; c.font = (o.lines ? "700 108px" : "700 170px") + " Inter, sans-serif"; c.fillText(o.big, X, y + (o.lines ? 80 : 120));
+    if (o.big2) { const w = c.measureText(o.big + " ").width; c.fillStyle = "#8DBBFF"; c.font = "700 72px Inter, sans-serif"; c.fillText(o.big2, rtl ? X - w : X + w, y + (o.lines ? 80 : 120)); }
     y += o.lines ? 130 : 180;
     c.fillStyle = "#9FB3CC"; c.font = "500 40px Inter, sans-serif"; c.fillText(t(o.sub || ""), X, y); y += 70;
     c.fillStyle = "#fff"; c.font = "700 58px Inter, sans-serif"; c.fillText(o.place || "", X, y); y += 52;
     c.fillStyle = "#C5CEDA"; c.font = "500 32px Inter, sans-serif"; c.fillText(o.date || "", X, y); y += 40;
+    if (o.extra) { y += 18; c.fillStyle = "#8DBBFF"; c.font = "600 34px Inter, sans-serif"; c.fillText(t(o.extra), X, y); y += 30; }
     if (o.lines) {
       c.font = "600 34px Inter, sans-serif";
       for (const [a, b] of o.lines.slice(0, H > W ? 5 : 3)) {
@@ -74,19 +77,22 @@
     c.fillStyle = "#9FB3CC"; c.font = "500 28px Inter, sans-serif"; c.fillText(t("Snow depth on every slope, every day"), X, H - 52);
     return cv;
   }
+  const SIZE = { p: 1350, t: 1920, s: 1080 };
   const blob = (cv) => new Promise((ok) => cv.toBlob(ok, "image/png"));
   /** o: {big, sub, place, date, url, snapshot (canvas/image), lines?, locked?, file} */
   async function open(o) {
     const esc = SS.esc;
-    const m = SS.modal(SS.head(t("Post image")) + '<div class="seg2" role="group" style="margin-bottom:10px"><button data-f="p" aria-pressed="true">4:5</button><button data-f="s" aria-pressed="false">1:1</button></div>' +
+    if (SS.track) SS.track(o.lines ? "create_post" : "share_image", { kind: o.file || "post" });
+    const m = SS.modal(SS.head(t("Post image")) + '<div class="seg2" role="group" style="margin-bottom:10px"><button data-f="p" aria-pressed="true">4:5</button><button data-f="t" aria-pressed="false">' + t("Story") + '</button><button data-f="s" aria-pressed="false">1:1</button></div>' +
       '<div class="postprev"><p class="none">' + t("Loading…") + "</p></div>" +
       (o.locked ? '<div class="prolock" style="margin-top:10px"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>' + t("Share posts are in Pro") + "</b><br>" + t("Ready-made images with your resorts, for Instagram and TikTok.") + '</p><button class="btn ink" data-up>' + t("Get Pro in the app") + "</button></div>"
         : '<div class="filters" style="margin-top:10px"><button class="btn ink" data-dl><span class="ms">download</span>' + t("Download") + '</button><button class="btn tonal" data-share><span class="ms">share</span>' + t("Share") + "</button></div>" +
-          '<label class="field"><span>' + t("Caption") + '</span><textarea rows="3" style="width:100%;border-radius:12px;border:1px solid var(--outline);background:var(--surface2);color:var(--ink);padding:10px;font:inherit">' + esc(caption(o)) + '</textarea></label><button class="btn ghost" data-copy><span class="ms">content_copy</span>' + t("Copy caption") + "</button>"));
+          '<label class="field"><span>' + t("Caption") + '</span><textarea rows="3" style="width:100%;border-radius:12px;border:1px solid var(--outline);background:var(--surface2);color:var(--ink);padding:10px;font:inherit">' + esc(caption(o)) + '</textarea></label><div class="filters"><button class="btn ghost" data-copy><span class="ms">content_copy</span>' + t("Copy caption") + "</button>" +
+          (o.url ? '<a class="btn ghost" target="_blank" rel="noopener" href="https://wa.me/?text=' + encodeURIComponent(caption(o) + " " + o.url) + '"><span class="ms">chat</span>WhatsApp</a>' : "") + "</div>"));
     const prev = m.el.querySelector(".postprev");
     const pics = {};
     const show = async (f) => {
-      pics[f] = pics[f] || await render(o, 1080, f === "p" ? 1350 : 1080);
+      pics[f] = pics[f] || await render(o, 1080, SIZE[f]);
       const cv = pics[f];
       cv.style.cssText = "width:100%;height:auto;border-radius:14px;display:block" + (o.locked ? ";filter:blur(9px)" : "");
       prev.innerHTML = ""; prev.appendChild(cv);
@@ -97,15 +103,15 @@
       const f = e.target.closest("[data-f]");
       if (f) { fmt = f.dataset.f; m.el.querySelectorAll("[data-f]").forEach((b) => b.setAttribute("aria-pressed", b === f)); show(fmt); return; }
       if (e.target.closest("[data-up]")) { m.close(); SS.upsell(t("Share posts are in Pro")); return; }
-      const name = (o.file || "snowscope") + (fmt === "p" ? "-4x5" : "-1x1") + ".png";
+      const name = (o.file || "snowscope") + ({ p: "-4x5", t: "-story", s: "-1x1" })[fmt] + ".png";
       if (e.target.closest("[data-dl]")) {
-        const b = await blob(pics[fmt] || await render(o, 1080, fmt === "p" ? 1350 : 1080));
+        const b = await blob(pics[fmt] || await render(o, 1080, SIZE[fmt]));
         const a = document.createElement("a"); a.href = URL.createObjectURL(b); a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
       }
       if (e.target.closest("[data-share]")) {
         const b = await blob(pics[fmt]);
         const file = new File([b], name, { type: "image/png" });
-        const text = m.el.querySelector("textarea").value;
+        const text = m.el.querySelector("textarea").value + (o.url && !m.el.querySelector("textarea").value.includes(o.url) ? " " + o.url : "");
         if (navigator.canShare && navigator.canShare({ files: [file] })) { try { await navigator.share({ files: [file], text }); } catch { /* cancelled */ } }
         else { try { await navigator.clipboard.writeText(text); } catch { /* ignore */ } const a = document.createElement("a"); a.href = URL.createObjectURL(b); a.download = name; a.click(); }
       }

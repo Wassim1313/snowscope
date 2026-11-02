@@ -71,6 +71,22 @@
   }
 
   // ------------------------------------------------------------------ ads (AdSense, config-driven)
+  let houseN = 0;
+  function houseAd(el) {
+    const d = el.dataset, stay = d.lat && S.cfg && S.cfg.stay22 && !(S.pro && store.get("ss_nostay"));
+    const pro = !S.pro;
+    const pick = (houseN++ % 2 === 0 && stay) || !pro ? "stay" : "pro";
+    if (pick === "stay" && stay) {
+      let u = stayLink(+d.lat, +d.lon, d.place || "", d.day || null);
+      if (!u) return "";
+      u = u.replace("campaign=snowscope_web", "campaign=snowscope_web_slot");
+      return '<a class="housead" target="_blank" rel="sponsored noopener" href="' + esc(u) + '"><span class="hl">Sponsored</span><span class="ic"><span class="ms f">hotel</span></span>' +
+        "<span><b>Sleep near " + esc(d.place || "the slopes") + "</b><small>Hotels and chalets for your dates</small></span></a>";
+    }
+    if (!pro) return "";
+    return '<a class="housead pro" href="' + ROOT + 'pricing/"><span class="hl">Sponsored</span><span class="ic"><span class="ms f">workspace_premium</span></span>' +
+      "<span><b>SnowScope Pro</b><small>15-day snow, every layer, no ads</small></span></a>";
+  }
   const Ads = {
     loaded: false,
     client() { const c = ((S.cfg && S.cfg.adsense) || {}).client || ""; return /^ca-pub-\d{10,20}$/.test(c) ? c : ""; },
@@ -93,14 +109,22 @@
       if (!this.allowed() || el.dataset.filled) return;
       const a = S.cfg.adsense || {};
       const slot = a["slot_" + el.dataset.ad];
-      if (!/^\d{5,20}$/.test(slot || "")) { el.hidden = true; return; }         // no slot id: collapsed (Auto ads only)
+      // house ad first (until AdSense is approved and fills the unit): a Stay22 card or the Pro card, alternating
+      const house = houseAd(el);
+      if (!/^\d{5,20}$/.test(slot || "")) {
+        el.innerHTML = house; el.hidden = !house; el.dataset.filled = "1"; el.classList.add("filled", "house"); return;
+      }
       const fluid = el.dataset.ad === "infeed" && a.infeed_layout_key;
-      el.innerHTML = '<div class="adl">Advertisement</div><ins class="adsbygoogle" style="display:block;min-height:250px" data-ad-client="' +
+      el.innerHTML = '<div class="adl">Advertisement</div><div class="housewrap">' + house + '</div><ins class="adsbygoogle" style="display:block;min-height:250px" data-ad-client="' +
         esc(this.client()) + '" data-ad-slot="' + esc(slot) + '"' +
         (fluid ? ' data-ad-format="fluid" data-ad-layout-key="' + esc(a.infeed_layout_key) + '"'
                : ' data-ad-format="auto" data-full-width-responsive="true"') + "></ins>";
       el.hidden = false; el.dataset.filled = "1"; el.classList.add("filled");
       try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch { /* blocked */ }
+      const ins = el.querySelector("ins.adsbygoogle"), hw = el.querySelector(".housewrap");
+      if (ins && hw) new MutationObserver(() => { const f = ins.getAttribute("data-ad-status") === "filled"; hw.hidden = f; ins.style.display = f ? "block" : "none"; })
+        .observe(ins, { attributes: true, attributeFilter: ["data-ad-status"] });
+      if (ins) ins.style.display = "none";            // shown only once Google says "filled"
     },
     hideAll() {
       document.querySelectorAll("[data-ad]").forEach((el) => { el.hidden = true; el.innerHTML = ""; delete el.dataset.filled; });
@@ -195,6 +219,7 @@
       const cred = await m.createUserWithEmailAndPassword(S.fb.auth, email, pw);
       if (name) await m.updateProfile(cred.user, { displayName: name });
       await m.sendEmailVerification(cred.user);
+      track("sign_up", { method: "password" });
     },
     async reset(email) { await S.fb.m.sendPasswordResetEmail(S.fb.auth, email); },
     async verify() { await S.fb.m.sendEmailVerification(S.user); },
@@ -232,8 +257,12 @@
     return "https://www.stay22.com/embed/gm?" + q.toString();
   }
   /** "Stay near <place>" block: affiliate link + a hotels map that only loads when asked (no third-party load before). */
-  function stayBlock(lat, lon, place, { map = true } = {}) {
-    const href = stayLink(lat, lon, place);
+  // Pro members can hide hotel suggestions (You tab); everyone else sees them (useful + they pay for the site)
+  const staysHidden = () => !!(S.pro && store.get("ss_nostay"));
+  function stayBlock(lat, lon, place, { map = true, day = null, where = "panel" } = {}) {
+    if (staysHidden()) return "";
+    let href = stayLink(lat, lon, place, day);
+    if (href) href = href.replace("campaign=snowscope_web", "campaign=snowscope_web_" + where);
     if (!href) return "";
     const id = "st" + Math.random().toString(36).slice(2, 8);
     return '<div class="stay"><div class="acts">' +
@@ -419,20 +448,49 @@
   // ------------------------------------------------------------------ map library (Mapbox with the owner token, else MapLibre)
   function loadScript(src) { return new Promise((ok, ko) => { const s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = ko; document.head.appendChild(s); }); }
   function loadCss(href) { const l = document.createElement("link"); l.rel = "stylesheet"; l.href = href; document.head.appendChild(l); }
-  async function mapLib() {
-    const mb = (S.cfg && S.cfg.mapbox) || {};
-    if (mb.token && /^pk\./.test(mb.token)) {
-      loadCss("https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css");
-      await loadScript("https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js");
-      window.mapboxgl.accessToken = mb.token;
-      return { lib: window.mapboxgl, style: mb.style || "mapbox://styles/mapbox/outdoors-v12", mapbox: true };
-    }
+  async function mapLib() {       // MapLibre + free OpenFreeMap styles (no key, no per-load cost)
     loadCss("https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css");
     await loadScript("https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js");
-    return { lib: window.maplibregl, style: "https://tiles.openfreemap.org/styles/positron", mapbox: false };
+    return { lib: window.maplibregl, style: "https://tiles.openfreemap.org/styles/liberty", mapbox: false };
   }
 
+
   // ------------------------------------------------------------------ start
+  // ------------------------------------------------------------------ analytics: GA4 with Consent Mode v2 + own counter
+  const BOT = /bot|crawl|spider|slurp|headless|lighthouse|preview/i.test(navigator.userAgent);
+  const EEA = ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL",
+    "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];
+  function analytics() {
+    const id = ((S.cfg && S.cfg.analytics) || {}).ga4_id;
+    if (!id || !/^G-[A-Z0-9]{6,12}$/.test(id) || BOT) return;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    // denied by default in Europe until Google's consent message (AdSense Privacy & messaging) updates it
+    gtag("consent", "default", { ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied", analytics_storage: "denied", region: EEA, wait_for_update: 500 });
+    gtag("consent", "default", { ad_storage: "granted", ad_user_data: "granted", ad_personalization: "granted", analytics_storage: "granted" });
+    gtag("js", new Date());
+    gtag("config", id, { send_page_view: false });
+    const sc = document.createElement("script"); sc.async = true; sc.src = "https://www.googletagmanager.com/gtag/js?id=" + id;
+    document.head.appendChild(sc);
+  }
+  function track(name, params) { if (window.gtag && !BOT) try { gtag("event", name, params || {}); } catch { /* ignore */ } }
+  let lastPath = null;
+  function pageView(path) {
+    path = path || location.pathname + location.search;
+    if (BOT || path === lastPath) return;
+    lastPath = path;
+    if (window.gtag) gtag("event", "page_view", { page_location: location.origin + path, page_path: path, page_title: document.title });
+    if (S.api && navigator.sendBeacon) {              // first-party counter: no cookie, hashed + daily-rotating id
+      try {
+        navigator.sendBeacon(S.api + "/v1/hit", new Blob([JSON.stringify({ path: path.slice(0, 200), ref: document.referrer ? new URL(document.referrer).hostname : "",
+          src: "web", lang: (window.I18N && I18N.lang) || "" })], { type: "text/plain" }));
+      } catch { /* ignore */ }
+    }
+  }
+  document.addEventListener("click", (e) => {            // which Stay22 placement works (no personal data)
+    const a = e.target.closest('a[href*="stay22.com"]');
+    if (a) { const m = /campaign=([a-z0-9_]+)/.exec(a.href); track("book_click", { placement: m ? m[1] : "web" }); }
+  }, true);
   async function start() {
     await loadConfig();
     const cf = ((S.cfg && S.cfg.analytics) || {}).cf_beacon_token;
@@ -442,6 +500,7 @@
       b.setAttribute("data-cf-beacon", JSON.stringify({ token: cf }));
       document.head.appendChild(b);
     }
+    analytics();
     setupFind();
     // web payments (Paddle overlay checkout, paddle.js): only when the owner config has a client-side token
     if (S.cfg.paddle && S.cfg.paddle.client_token) loadScript(ROOT + "paddle.js").catch(() => {});
@@ -457,9 +516,10 @@
     S.started = true;
     if (!S.user) { S.noAds = false; S.pro = false; }
     emit();
+    pageView();
     return S;
   }
 
-  window.SS = { S, start, api, refreshMe, ensureAuth, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
+  window.SS = { S, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
                 resorts, mapLib, transformRequest, onChange: (f) => S.listeners.push(f), store, ROOT };
 })();

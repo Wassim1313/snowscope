@@ -23,10 +23,15 @@
   const AVAL = { 1: "#CCFF66", 2: "#FFFF00", 3: "#FF9900", 4: "#FF0000", 5: "#7A0000" };
   const AVAL_NAME = { 1: "Low", 2: "Moderate", 3: "Considerable", 4: "High", 5: "Very high" };
   const NAMES = { ALPS: "Alps", PYRENEES: "Pyrenees", US_WEST: "US West", US_NE: "US Northeast", ATLAS: "Atlas (Morocco)", SCANDES: "Scandinavia", CA_WEST: "Canada West" };
-  const STYLES = { outdoors: ["Outdoors", "mapbox://styles/mapbox/outdoors-v12"], satellite: ["Satellite", "mapbox://styles/mapbox/satellite-streets-v12"], light: ["Light", "mapbox://styles/mapbox/light-v11"] };
+  // free, no-key basemaps (owner 2026-11-02: no Mapbox): OpenFreeMap vector styles + AWS Terrain Tiles (terrarium) for
+  // relief and 3D. No satellite basemap (no free source that allows a site with ads).
+  const STYLES = { outdoors: ["Outdoors", "https://tiles.openfreemap.org/styles/liberty"], light: ["Light", "https://tiles.openfreemap.org/styles/positron"] };
+  const DEM = { type: "raster-dem", tiles: ["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"], encoding: "terrarium", tileSize: 256, maxzoom: 14,
+    attribution: "Terrain: Mapzen, AWS Open Data" };
+  const ensureDem = () => { if (!map.getSource("dem")) map.addSource("dem", DEM); };
   const get = (k, d) => { const v = store.get(k); return v == null ? d : v; };
 
-  const st = { day: null, main: "depth", p72: false, over: { pistes: false, aval: false, pins: true }, scale: get("ss_scale", 100),
+  const st = { day: null, main: "depth", p72: false, over: { pistes: false, aval: false, pins: true, stays: !!get("ss_stays", 1) }, scale: get("ss_scale", 100),
     sharp: !!get("ss_sharp", false), style: get("ss_style", "outdoors"), terrain: !!get("ss_terrain", false), tab: "map", slug: null,
     region: null, pro: false, proIdx: null, proDates: null, gen: 0, fields: {}, pistes: { idx: null, loaded: new Set(), feats: [] },
     aval: null, radar: undefined, sheet: "peek", pushed: false, ski: { region: null, country: "", when: "today", radius: get("ss_radius", 200), min: 0, fresh: false, q: "" },
@@ -46,7 +51,6 @@
   const prod = () => (st.main === "powder" ? (p72on() ? "n3" : "n") : "d");
 
   function styleUrl() {
-    if (!ML.mapbox) return ML.style;
     return (STYLES[st.style] || STYLES.outdoors)[1];
   }
   function onStyle() {
@@ -55,14 +59,15 @@
     for (const l of map.getStyle().layers || []) {
       if (l.type === "symbol" && /state|poi|settlement-subdivision|airport|transit/.test(l.id)) map.setLayoutProperty(l.id, "visibility", "none");
     }
-    if (ML.mapbox && st.terrain) {
-      if (!map.getSource("dem")) map.addSource("dem", { type: "raster-dem", url: "mapbox://mapbox.mapbox-terrain-dem-v1", tileSize: 512, maxzoom: 14 });
-      map.setTerrain({ source: "dem", exaggeration: 1.4 });
+    ensureDem();
+    if (st.style === "outdoors" && !map.getLayer("hill")) {     // relief shading under the labels and the snow
+      map.addLayer({ id: "hill", type: "hillshade", source: "dem", paint: { "hillshade-exaggeration": 0.35, "hillshade-shadow-color": "#4b5b6b" } }, firstSymbol());
     }
+    if (st.terrain) map.setTerrain({ source: "dem", exaggeration: 1.4 });
     addOverlaySources();
     renderMain();
     applyOverlays(true);
-    drawPins();
+    drawPins(); drawStays();
   }
 
   // ------------------------------------------------------------------ regions
@@ -162,6 +167,16 @@
     document.querySelectorAll("#days [data-d]:not([aria-disabled])").forEach((b) => b.setAttribute("aria-pressed", b.dataset.d === d));
     renderMain(); drawLegend(); drawPins();
     if (!st.slug && st.tab === "map") renderPanel();
+    prefetchAround(d);
+  }
+  function prefetchAround(d) {     // the next / previous day open instantly (pictures decoded in the background)
+    const i = DATA.dates.indexOf(d), p = prod();
+    for (const k of [i + 1, i - 1]) {
+      const dd = DATA.dates[k];
+      if (!dd) continue;
+      const run = () => DATA.regions.forEach((r) => { const x = r.days.find((y) => y.date === dd); if (x && x.ov[p]) codesOf(BASE + x.ov[p]); });
+      (window.requestIdleCallback || setTimeout)(run, 300);
+    }
   }
   let playT = 0;
   function play() {
@@ -290,7 +305,7 @@
       if (!d) return;
       const cd = await codesOf(BASE + d.ov[p]);
       if (!cd || gen !== st.gen) return;
-      addCanvas("m_" + r.code, paint(cd, p), r.coords, { max: r.fine ? 7.5 : 24 });
+      addCanvas("m_" + r.code, paint(cd, p), r.coords);   // no max zoom: the picture is upsampled at z13-16
     }));
     loadFine();
   }
@@ -390,17 +405,38 @@
     map.addLayer({ id: "aval_line", type: "line", source: "aval", layout: { visibility: "none" }, paint: { "line-color": "rgba(11,18,32,.35)", "line-width": 0.6 } }, "pistes");
     map.addSource("pt", { type: "geojson", data: fc });
     map.addLayer({ id: "pt", type: "circle", source: "pt", paint: { "circle-radius": 7, "circle-color": "#0B1220", "circle-stroke-color": "#fff", "circle-stroke-width": 3 } });
+    map.addSource("stays", { type: "geojson", data: fc });
+    // "BOOK" chip under each resort label from zoom 10 (Stay22, dates = the selected day); collides like labels
+    map.addLayer({ id: "stays", type: "symbol", source: "stays", minzoom: 10.5,
+      layout: { "text-field": "BOOK", "text-size": 10.5, "text-offset": [0, 3.2], "text-anchor": "top", "text-letter-spacing": 0.08,
+        "text-allow-overlap": true, "text-ignore-placement": true,
+        "text-font": ["Noto Sans Bold"] },
+      paint: { "text-color": "#fff", "text-halo-color": "#1463F3", "text-halo-width": 3.5 } });
+    map.on("click", "stays", (e) => {
+      const f = e.features && e.features[0]; if (!f) return;
+      st.stayClick = Date.now();
+      const [lon, lat] = f.geometry.coordinates, u = stayHref(lat, lon, f.properties.n, "pin");
+      if (u) window.open(u, "_blank", "noopener");
+    });
     map.addSource("pins", { type: "geojson", data: fc });
-    const font = ML.mapbox ? ["DIN Pro Medium", "Arial Unicode MS Regular"] : ["Noto Sans Regular"];
+    const font = ["Noto Sans Regular"];
     map.addLayer({ id: "pins", type: "circle", source: "pins", minzoom: 6,
       paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 6, 2.5, 10, 5], "circle-color": "#0B1220", "circle-stroke-color": "#fff", "circle-stroke-width": 1.5 } });
-    map.addLayer({ id: "pin_lbl", type: "symbol", source: "pins", minzoom: 8.5,
+    map.addLayer({ id: "pin_lbl", type: "symbol", source: "pins", minzoom: 9,
       layout: { "text-field": ["get", "t"], "text-font": font, "text-size": 12, "text-offset": [0, 1.1], "text-anchor": "top", "text-optional": true },
       paint: { "text-color": "#0B1220", "text-halo-color": "#fff", "text-halo-width": 1.6 } });
     for (const id of ["pins", "pin_lbl"]) {
       map.on("mouseenter", id, () => { map.getCanvas().style.cursor = "pointer"; });
       map.on("mouseleave", id, () => { map.getCanvas().style.cursor = ""; });
     }
+  }
+  async function drawStays() {
+    if (!ready || !map.getSource("stays")) return;
+    const res = await RES.catch(() => null);
+    const on = st.over.stays && !SS.staysHidden() && res;
+    // one bed pin per resort, ~1 km south-east of the resort point (the village side), shown from zoom 10
+    map.getSource("stays").setData({ type: "FeatureCollection", features: on ? res.rows.map((x) => ({ type: "Feature",
+      geometry: { type: "Point", coordinates: [x.lon, x.lat] }, properties: { n: x.short } })) : [] });
   }
   async function drawPins() {
     if (!ready || !map.getSource("pins")) return;
@@ -481,6 +517,7 @@
     return best && bd < 25 ? [best, bd] : null;
   }
   async function onClick(e) {
+    if (st.stayClick && Date.now() - st.stayClick < 400) return;
     const pin = map.queryRenderedFeatures(e.point, { layers: ["pins", "pin_lbl"].filter((l) => map.getLayer(l)) })[0];
     if (pin) { openResort(pin.properties.s); return; }
     const ll = e.lngLat;
@@ -545,14 +582,14 @@
       (pro && !st.pro ? '<span class="pro"><span class="ms f">lock</span>PRO</span>' : "") + "<span>" + name + "</span></button>";
     const rows = [["wind", "Wind", "Around midday", "air", true, true], ["freeze", "Freezing level", "Where 0 °C sits", "device_thermostat", true, true],
       ["radar", "Rain & snow radar", "Right now", "radar", false, true], ["p72", "3-day snow", "Powder over 3 days", "ac_unit", true],
-      ["pins", "Resorts", "Name and snow on each resort", "location_on"], ["pistes", "Pistes & lifts", "Coloured by difficulty", "downhill_skiing"]];
+      ["pins", "Resorts", "Name and snow on each resort", "location_on"], ["stays", "Places to stay", "BOOK chips on resorts · Partner", "hotel"], ["pistes", "Pistes & lifts", "Coloured by difficulty", "downhill_skiing"]];
     const row = ([id, name, sub, icon, pro, main]) => {
       const on = main ? st.main === id : id === "p72" ? st.p72 : !!st.over[id];
       const dis = id === "radar" && st.radar === false;
       return '<button class="row" role="switch" data-over="' + id + '" aria-checked="' + on + '"' + (dis ? ' aria-disabled="true"' : "") + '><span class="ic"><span class="ms">' + icon + '</span></span><span class="tx"><b>' + name +
         (pro && !st.pro ? ' <span class="pro"><span class="ms f">lock</span>PRO</span>' : "") + "</b><small>" + (dis ? "Not available right now" : sub) + '</small></span><span class="sw-t"></span></button>';
     };
-    const styles = ML.mapbox ? '<div class="over sec">Map</div><div class="seg2" role="group">' + Object.entries(STYLES).map(([k, v]) => '<button data-style="' + k + '" aria-pressed="' + (st.style === k) + '">' + v[0] + "</button>").join("") + "</div>" +
+    const styles = true ? '<div class="over sec">Map</div><div class="seg2" role="group">' + Object.entries(STYLES).map(([k, v]) => '<button data-style="' + k + '" aria-pressed="' + (st.style === k) + '">' + v[0] + "</button>").join("") + "</div>" +
       '<button class="row" role="switch" data-over="terrain" aria-checked="' + st.terrain + '"><span class="ic"><span class="ms">landscape</span></span><span class="tx"><b>3D mountains</b><small>Tilt the map with two fingers or right-drag</small></span><span class="sw-t"></span></button>' : "";
     const m = SS.modal(SS.head("Map layers") + '<div class="over sec">Snow</div><div class="tiles">' + tiles.map(tile).join("") + "</div>" +
       (st.pro ? "" : '<p style="color:var(--ink3);font-size:13px;margin:10px 0 0">Powder is free for today. Pro adds every day, 3-day snow and the layers with a lock.</p>') +
@@ -579,7 +616,7 @@
         if (["wind", "freeze", "radar"].includes(id)) { setMain(st.main === id ? "depth" : id); }
         else if (id === "p72") { st.p72 = !st.p72; if (st.p72) st.main = "powder"; renderMain(); drawLegend(); drawDays(); }
         else if (id === "terrain") { st.terrain = !st.terrain; store.set("ss_terrain", st.terrain); applyTerrain(); }
-        else { st.over[id] = !st.over[id]; if (id === "pins") drawPins(); else applyOverlays(); drawLegend(); }
+        else { st.over[id] = !st.over[id]; if (id === "pins") drawPins(); else if (id === "stays") { store.set("ss_stays", st.over.stays ? 1 : 0); drawStays(); } else applyOverlays(); drawLegend(); }
         m.el.querySelectorAll("[data-over]").forEach((b) => { const x = b.dataset.over; b.setAttribute("aria-checked", ["wind", "freeze", "radar"].includes(x) ? st.main === x : x === "p72" ? st.p72 : x === "terrain" ? st.terrain : !!st.over[x]); });
         m.el.querySelectorAll("[data-main]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.main === st.main));
       } else if (sy) {
@@ -596,13 +633,10 @@
     drawDays(); drawLegend(); renderMain();
   }
   function applyTerrain() {
-    if (!ML.mapbox) return;
-    if (st.terrain) {
-      if (!map.getSource("dem")) map.addSource("dem", { type: "raster-dem", url: "mapbox://mapbox.mapbox-terrain-dem-v1", tileSize: 512, maxzoom: 14 });
-      map.setTerrain({ source: "dem", exaggeration: 1.4 });
-      map.easeTo({ pitch: 55, duration: 900 });
-    } else { map.setTerrain(null); map.easeTo({ pitch: 0, duration: 600 }); }
+    if (st.terrain) { ensureDem(); map.setTerrain({ source: "dem", exaggeration: 1.4 }); map.easeTo({ pitch: 55, duration: 900 }); }
+    else { map.setTerrain(null); map.easeTo({ pitch: 0, duration: 600 }); }
   }
+
 
   // ------------------------------------------------------------------ panel / sheet / tabs
   function setupTabs() {
@@ -610,6 +644,7 @@
       const b = e.target.closest("[data-tab]");
       if (!b) return;
       st.tab = b.dataset.tab;
+      SS.pageView("/#" + st.tab);
       if (st.slug) closeResort(true);
       st.point = null;
       renderPanel();
@@ -624,17 +659,27 @@
   }
   function setupSheet() {
     const g = $("grab"), order = ["peek", "half", "full"];
-    g.onclick = () => setSheet(order[(order.indexOf(st.sheet) + 1) % 3]);
-    let y0 = null;
-    const down = (e) => { y0 = e.clientY; };
+    const P = $("panel");
+    let y0 = null, t0 = 0, base = 0, moved = false;
+    const posOf = (name) => { const h = P.offsetHeight, peek = 168; return name === "full" ? 0 : name === "half" ? h * 0.45 : h - peek; };
+    const down = (e) => { if (innerWidth > 760) return; y0 = e.clientY; t0 = performance.now(); base = posOf(st.sheet); moved = false; P.style.transition = "none"; try { g.setPointerCapture(e.pointerId); } catch { /* old browser */ } };
+    const move = (e) => {
+      if (y0 == null) return;
+      const dy = e.clientY - y0;
+      if (Math.abs(dy) > 4) moved = true;
+      P.style.transform = "translateY(" + Math.max(0, Math.min(posOf("peek"), base + dy)) + "px)";
+    };
     const up = (e) => {
       if (y0 == null) return;
-      const dy = e.clientY - y0; y0 = null;
-      if (Math.abs(dy) < 30) return;
-      const i = order.indexOf(st.sheet);
-      setSheet(order[Math.max(0, Math.min(2, i + (dy < 0 ? 1 : -1)))]);
+      const dy = e.clientY - y0, v = dy / Math.max(1, performance.now() - t0);   // px per ms; a flick wins
+      y0 = null; P.style.transition = ""; P.style.transform = "";
+      if (!moved) return;
+      const y = base + dy + v * 180;
+      setSheet(order.map((n) => [n, Math.abs(posOf(n) - y)]).sort((a, b) => a[1] - b[1])[0][0]);
+      g.dataset.dragged = "1"; setTimeout(() => { delete g.dataset.dragged; }, 50);
     };
-    g.addEventListener("pointerdown", down); window.addEventListener("pointerup", up);
+    g.onclick = () => { if (!g.dataset.dragged) setSheet(order[(order.indexOf(st.sheet) + 1) % 3]); };
+    g.addEventListener("pointerdown", down); g.addEventListener("pointermove", move); g.addEventListener("pointerup", up); g.addEventListener("pointercancel", up);
     $("pbody").addEventListener("scroll", () => { if (innerWidth <= 760 && st.sheet === "peek" && $("pbody").scrollTop > 10) setSheet("half"); });
   }
   function markTabs() {
@@ -661,6 +706,10 @@
     box.querySelectorAll("[data-goregion]").forEach((b) => { b.onclick = () => flyRegion(b.dataset.goregion); });
     if (SS.S.started) SS.Ads.start();
   }
+  function adSlot(kind, x, day) {    // place + dates for the house ad (Stay22) until AdSense fills the unit
+    return '<aside class="ad' + (kind === "infeed" ? " infeed" : "") + '" data-ad="' + kind + '" aria-label="Advertisement" hidden' +
+      (x ? ' data-lat="' + x.lat + '" data-lon="' + x.lon + '" data-place="' + esc(x.short || x.name || "") + '" data-day="' + (day || st.day) + '"' : "") + "></aside>";
+  }
   const footer = () => {
     const c = (SS.S.cfg && SS.S.cfg.contact) || {};
     return '<nav class="flinks"><a href="' + BASE + 'resorts/">All resorts</a><a href="' + BASE + 'sources.html">About &amp; sources</a>' +
@@ -686,7 +735,7 @@
       '<div class="stat"><b>' + (best ? best.depth_cm + "<small>cm</small>" : "–") + "</b><small>deepest resort</small></div>" +
       '<div class="stat"><b>' + (x.new_max_cm >= 1 ? "+" + x.new_max_cm + "<small>cm</small>" : "–") + "</b><small>new snow</small></div></div></div>" +
       '<div class="sect">Deepest snow on the upper slopes</div>' + (x.top.length ? x.top.map((t, i) => resRow({ slug: t.slug, short: t.name }, i, t.depth_cm, t.country, t.new_cm)).join("") : '<p class="none">No resort has snow yet.</p>');
-    h += '<aside class="ad infeed" data-ad="infeed" aria-label="Advertisement" hidden></aside>';
+    h += adSlot("infeed", best && BY[best.slug]);
     h += '<div class="sect">Other regions</div>' + DATA.regions.filter((y) => y.code !== r.code).map((y) => {
       const z = dayOf(y);
       return '<button class="rrow" style="width:100%;border-left:0;border-right:0;border-top:0;background:none;text-align:left" data-goregion="' + y.code + '"><span class="nm"><b>' + esc(y.name) + "</b><small>" +
@@ -699,6 +748,7 @@
   }
   // ------------------------------------------------------------------ recommender (Where to ski / Powder near you)
   const RADII = [50, 100, 200, 400, 0];
+  const nextSat = () => { for (let k = 1; k < 8; k++) { const d = addDays(DATA.today, k); if (D(d).getUTCDay() === 6) return d; } return null; };
   const kmTo = (o, x) => Math.hypot((x.lon - o.lon) * Math.cos(o.lat * Math.PI / 180), x.lat - o.lat) * 111.2;
   const dayIdx = (res, when) => {
     if (when === "tomorrow") return res.dates.indexOf(addDays(DATA.today, 1));
@@ -734,6 +784,7 @@
       '<div class="stat"><b>' + (n72 ? "+" + n72 + "<small>cm</small>" : "–") + "</b><small>new, 3 days</small></div></div>" +
       (bestDay(res, x) ? '<p class="none" style="padding:0 0 8px">Best day: <b style="color:var(--ink)">' + bestDay(res, x) + "</b></p>" : "") +
       '<div class="acts3"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a>' +
+      (stayHref(x.lat, x.lon, x.short, "card", res.dates[ti]) ? '<a class="btn tonal staychip" target="_blank" rel="sponsored noopener" title="Partner link: we may earn a commission" href="' + esc(stayHref(x.lat, x.lon, x.short, "card", res.dates[ti])) + '"><span class="ms">hotel</span>Stay</a>' : "") +
       '<button class="btn tonal" data-open="' + esc(x.slug) + '"><span class="ms">info</span>Details</button>' +
       '<button class="btn ink" data-share="' + esc(x.slug) + '" data-sd="' + (res.dates[ti] || DATA.today) + '"><span class="ms">share</span>Share</button></div></article>';
   }
@@ -746,11 +797,14 @@
   async function placeSearch(q) {
     const res = await RES.catch(() => null), norm = (t) => t.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(), nq = norm(q);
     const out = res ? res.rows.filter((x) => norm(x.name).includes(nq)).slice(0, 4).map((x) => ({ label: x.short, sub: x.country, lat: x.lat, lon: x.lon })) : [];
-    const tok = SS.S.cfg && SS.S.cfg.mapbox && SS.S.cfg.mapbox.token;
-    if (tok && q.length >= 3) {
+    if (q.length >= 3) {              // Photon (komoot, OpenStreetMap data): free place search, no key
       try {
-        const j = await SS.getJSON("https://api.mapbox.com/geocoding/v5/mapbox.places/" + encodeURIComponent(q) + ".json?types=place,locality,region,district,poi&limit=5&language=" + ((window.I18N && I18N.lang) || "en") + "&access_token=" + encodeURIComponent(tok));
-        for (const f of j.features || []) out.push({ label: f.text, sub: (f.place_name || "").split(", ").slice(1, 3).join(", "), lat: f.center[1], lon: f.center[0] });
+        const lg = ["en", "de", "fr", "it"].includes((window.I18N && I18N.lang) || "en") ? I18N.lang : "en";
+        const j = await SS.getJSON("https://photon.komoot.io/api/?limit=5&lang=" + lg + "&q=" + encodeURIComponent(q));
+        for (const f of j.features || []) {
+          const pr = f.properties || {};
+          out.push({ label: pr.name || q, sub: [pr.state, pr.country].filter(Boolean).join(", "), lat: f.geometry.coordinates[1], lon: f.geometry.coordinates[0] });
+        }
       } catch { /* resorts only */ }
     }
     return out.slice(0, 8);
@@ -779,7 +833,7 @@
     rows = rows.slice(0, 25);
     h += '<p class="none" style="padding:2px 0 8px"><span>' + (o ? (o.me ? "Around you" : "Around " + esc(o.label)) : esc(NAMES[st.region] || "")) + "</span> · <span>" + rows.length + " resorts</span></p>";
     if (!rows.length) h += '<p class="none">No resort with snow matches. Try a bigger distance or "Anywhere".</p>';
-    h += rows.map(([x, d], i) => (i === 5 ? '<aside class="ad" data-ad="banner" aria-label="Advertisement" hidden></aside>' : "") + card(res, x, i, ti, d)).join("");
+    h += rows.map(([x, d], i) => (i === 5 ? adSlot("banner", rows[0][0], res.dates[ti]) : "") + card(res, x, i, ti, d)).join("");
     if (rows.length) h += '<button class="btn ghost" data-propost="ski" style="margin:4px 0 8px"><span class="ms">add_photo_alternate</span>Create post' + (st.pro ? "" : ' <span class="pro">PRO</span>') + "</button>";
     return h + footer();
   }
@@ -802,6 +856,12 @@
       '</em></span><button class="btn icon" data-storm="' + i + '" aria-label="Create post image"><span class="ms">add_photo_alternate</span></button></div>').join("")
       : '<p class="none">No snow storm right now (20 cm or more).</p>');
     h += '<button class="btn ghost" data-viewpost style="margin-top:10px"><span class="ms">photo_camera</span>Post of this map view</button>';
+    let shown = false; try { shown = !!sessionStorage.getItem("ss_stormstay"); } catch { /* private */ }
+    const s0 = storms.find((x) => x.slug);
+    if (s0 && !shown && stayHref(s0.lat, s0.lon, s0.place, "storm")) {
+      try { sessionStorage.setItem("ss_stormstay", "1"); } catch { /* private */ }
+      h += '<a class="teaser" target="_blank" rel="sponsored noopener" href="' + esc(stayHref(s0.lat, s0.lon, s0.place, "storm", nextSat())) + '" style="margin-top:12px"><span class="ic" style="background:linear-gradient(160deg,#3B8BFF,#1463F3)"><span class="ms f">hotel</span></span><span><b>Powder this weekend?</b><small>Book a bed near ' + esc(s0.place) + ' · <span class="partner">Partner</span></small></span></a>';
+    }
     h += '<a class="teaser" href="' + esc(SS.appUrl()) + '" style="margin-top:16px"><span class="ic" style="background:linear-gradient(160deg,#3B8BFF,#1463F3)"><span class="ms f">notifications</span></span><span><b>Powder alerts</b><small>Get a message when fresh snow is coming to your resorts. In the app.</small></span></a>';
     return h + footer();
   }
@@ -813,7 +873,8 @@
     else acc = '<div class="card"><b>' + esc(u.displayName || u.email || "Signed in") + '</b><p class="none" style="padding:2px 0 8px">' + (S.pro ? '<span class="pro"><span class="ms f">workspace_premium</span>PRO</span> You have SnowScope Pro.' : S.state === "no_account" ? "Open the app once with this account to connect it." : S.state === "api_down" ? "Pro data is updating, try again in a minute." : "Free plan") + '</p><a class="btn tonal" href="' + BASE + 'account.html">Manage account</a></div>';
     const pro = S.pro ? "" : '<div class="card"><span class="pro"><span class="ms f">workspace_premium</span>PRO</span><p style="margin:8px 0;font-size:14px;color:var(--ink2)">No ads, the sharpest snow map, 15 days, powder on every day, wind, freezing level, satellite snow, 7-day resort forecasts and past winters.</p>' + (window.SSPay && SSPay.enabled() ? '<button class="btn ink" data-buy-pro>Get Pro</button>' : '<a class="btn ink" href="' + esc(SS.appUrl()) + '">Get Pro in the app</a>') + '</div>';
     const teaser = (icon, bg, t, s) => '<a class="teaser" href="' + esc(SS.appUrl()) + '"><span class="ic" style="background:' + bg + '"><span class="ms f">' + icon + "</span></span><span><b>" + t + "</b><small>" + s + "</small></span></a>";
-    return '<div class="over">You</div><h1>Your SnowScope</h1>' + acc + pro + '<div class="sect">Only in the app</div>' +
+    const hide = S.pro ? '<button class="row" role="switch" data-nostay aria-checked="' + !store.get("ss_nostay") + '"><span class="ic"><span class="ms">hotel</span></span><span class="tx"><b>Hotel suggestions</b><small>Places to stay near resorts</small></span><span class="sw-t"></span></button>' : "";
+    return '<div class="over">You</div><h1>Your SnowScope</h1>' + acc + pro + hide + '<div class="sect">Only in the app</div>' +
       teaser("landscape", "linear-gradient(160deg,#F2662B,#C9381A)", "Peak finder", "Point your camera at the mountains to name every summit.") +
       teaser("timeline", "linear-gradient(160deg,#3B8BFF,#1463F3)", "Ski days", "Record your day: distance, runs, vertical.") +
       teaser("notifications", "linear-gradient(160deg,#3B8BFF,#1463F3)", "Powder alerts", "A message when fresh snow is coming.") + footer();
@@ -830,6 +891,7 @@
     if (p7) { const on = p7.dataset.p72 === "1"; if (on && !st.pro) { SS.upsell("Powder over 3 days is in Pro"); return; } st.p72 = on; renderPanel(); if (st.main === "powder") { renderMain(); drawLegend(); } }
     if (e.target.closest("[data-showpowder]")) { setMain("powder"); if (innerWidth <= 760) setSheet("peek"); }
     if (e.target.closest("[data-signup]")) SS.signInModal("up");
+    if (e.target.closest("[data-nostay]")) { store.set("ss_nostay", store.get("ss_nostay") ? null : 1); drawStays(); renderPanel(); }
     const sb = e.target.closest("[data-storm]");
     if (sb) stormPost(DATA.storms[+sb.dataset.storm]);
     if (e.target.closest("[data-viewpost]")) viewPost();
@@ -862,6 +924,7 @@
     if (innerWidth <= 760 && !quiet) setSheet("half");
     $("pbody").scrollTop = 0;
     renderPanel();
+    SS.pageView("/?p=" + st.point.lat + "," + st.point.lon);
   }
   function closePoint() {
     st.point = null;
@@ -956,17 +1019,50 @@
   }
   async function sharePoint(pt, n, today) {
     const url = "https://snowscope.app/?p=" + pt.lat + "," + pt.lon + "&d=" + st.day;
+    if (window.SSPost) {
+      toast("Preparing the image…", 3000);
+      const snap = await shot3d(pt.lat, pt.lon);
+      window.SSPost.open({ big: today.dep != null ? today.dep + " cm" : "–", big2: today.nw ? "+" + today.nw + " cm" : "", sub: "Snow on the ground",
+        place: n ? "Near " + n[0].short : "", date: longDay(st.day), snapshot: snap, file: "snowscope-spot", url });
+      return;
+    }
     const text = (n ? n[0].short + ": " : "") + (today.dep != null ? today.dep + " cm" : "") + (today.nw ? ", +" + today.nw + " cm new" : "");
     if (navigator.share && matchMedia("(pointer:coarse)").matches) { try { await navigator.share({ title: "SnowScope", text, url }); return; } catch (e) { if (e && e.name === "AbortError") return; } }
     shareModal(text, url);
   }
-  function stayHref(lat, lon, place, where) {
-    const u = SS.stayLink(lat, lon, place, st.day);
+  function stayHref(lat, lon, place, where, day) {
+    if (SS.staysHidden()) return "";
+    const u = SS.stayLink(lat, lon, place, day || st.day);
     return u ? u.replace("campaign=snowscope_web", "campaign=snowscope_web_" + where) : "";
   }
 
   // ------------------------------------------------------------------ share a resort with friends
+  async function shot3d(lat, lon) {
+    // the map itself, flown to the spot: pitched 3D terrain (Mapbox) with the snow draped on it, then restored
+    const cam = { center: map.getCenter(), zoom: map.getZoom(), pitch: map.getPitch(), bearing: map.getBearing() };
+    const hadTerrain = st.terrain;
+    if (!hadTerrain) { ensureDem(); map.setTerrain({ source: "dem", exaggeration: 1.5 }); }
+    map.jumpTo({ center: [lon, lat], zoom: 11.2, pitch: 62, bearing: -18 });
+    if (map.getSource("pt")) map.getSource("pt").setData({ type: "Feature", geometry: { type: "Point", coordinates: [lon, lat] } });
+    loadFine();
+    await idle(); await new Promise((r) => setTimeout(r, 250));
+    const img = snapshot();
+    if (!hadTerrain) map.setTerrain(null);
+    map.jumpTo(cam);
+    return img;
+  }
   async function shareResort(slug, date) {
+    const res = await RES.catch(() => null), x = BY[slug];
+    if (!x || !res) return;
+    const i0 = res.dates.indexOf(date), sn = x.snow[i0 >= 0 ? i0 : res.dates.indexOf(DATA.today)] || [];
+    toast("Preparing the image…", 3000);
+    const snap = await shot3d(x.lat, x.lon);
+    const bd = bestDay(res, x);
+    window.SSPost.open({ big: sn[0] != null ? sn[0] + " cm" : "–", big2: sn[1] ? "+" + sn[1] + " cm" : "", sub: "on the upper slopes", place: x.short,
+      date: longDay(date), extra: bd ? "Best day: " + bd : "", snapshot: snap, file: "snowscope-" + slug,
+      url: "https://snowscope.app/resorts/" + encodeURIComponent(slug) + ".html?d=" + date });
+  }
+  async function shareResortLink(slug, date) {
     const res = await RES.catch(() => null), x = BY[slug];
     if (!x || !res) return;
     const i = res.dates.indexOf(date), s = x.snow[i >= 0 ? i : res.dates.indexOf(DATA.today)] || [];
@@ -1036,6 +1132,7 @@
     const x = BY[slug];
     st.slug = slug;
     if (push) { history.pushState({ slug }, "", BASE + "resorts/" + encodeURIComponent(slug) + ".html"); st.pushed = true; }
+    setTimeout(() => SS.pageView(), 50);
     if (popup) popup.remove();
     if (x && map) map.flyTo({ center: [x.lon, x.lat], zoom: Math.max(map.getZoom(), 10), duration: 1100, padding: innerWidth > 760 ? { left: 420 } : { bottom: 300 } });
     if (innerWidth <= 760) setSheet("half");
@@ -1069,12 +1166,13 @@
       '<div class="hero2"><div class="card"><div class="over">Upper slopes today</div><b class="n">' + (d0 == null ? "–" : d0 + "<small>cm</small>") + '</b><small class="none">' + verdict + "</small></div>" +
       '<div class="card"><div class="over">New snow</div>' + (n0 >= 1 ? '<b class="n acc">+' + n0 + "<small>cm</small></b><small class=\"none\">in 24 hours</small>" : '<b class="n">–</b><small class="none">No new snow in 24 h</small>') + "</div></div>" +
       '<div class="sect">Snow depth on the upper slopes, cm</div><div id="rDays"></div>' +
-      '<aside class="ad" data-ad="resort" aria-label="Advertisement" hidden></aside>' +
+      adSlot("resort", x) +
       '<div class="sect">This season vs past winters</div><div id="rHist"></div>' +
       '<div class="sect">Next 7 days</div><div id="rFc"></div>' +
-      '<div class="sect">Stay near ' + esc(x.short) + "</div>" + (SS.stayBlock(x.lat, x.lon, x.short) || '<p class="none">No partner here yet.</p>') +
+      '<div class="sect">Stay near ' + esc(x.short) + "</div>" + (SS.stayBlock(x.lat, x.lon, x.short, { day: st.day, where: "panel" }) || '<p class="none">No partner here yet.</p>') +
       '<div class="sect">Nearby resorts</div>' + near.map(([km, y]) => resRow(y, null, (y.snow[ti] || [])[0], Math.round(km) + " km", (y.snow[ti] || [])[1])).join("") + appCard() + footer();
     box.querySelector("[data-back]").onclick = () => (st.pushed ? history.back() : closeResort());
+    box.querySelector(".hero2").insertAdjacentHTML("afterend", '<div class="acts3" style="margin-bottom:6px"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a><button class="btn ink" data-share="' + esc(slug) + '" data-sd="' + st.day + '"><span class="ms">share</span>Share</button></div>');
     afterRender();
     daysChart(x, res);
     histChart(x);
@@ -1193,8 +1291,8 @@
   const R0 = DATA.regions.find((r) => r.code === st.region) || DATA.regions[0];
   const hash = /^#@(-?[\d.]+),(-?[\d.]+),([\d.]+)$/.exec(location.hash);
   map = new LIB.Map({ container: "map", style: styleUrl(), center: R0.center, zoom: 5, minZoom: 2, attributionControl: { compact: true },
-    transformRequest: (url) => SS.transformRequest(url), preserveDrawingBuffer: true, ...(ML.mapbox ? { projection: "mercator" } : {}), dragRotate: !!ML.mapbox, pitchWithRotate: !!ML.mapbox });
-  map.addControl(new LIB.NavigationControl({ showCompass: !!ML.mapbox, visualizePitch: true }), "top-right");
+    transformRequest: (url) => SS.transformRequest(url), preserveDrawingBuffer: true, maxPitch: 75, dragRotate: true, pitchWithRotate: true });
+  map.addControl(new LIB.NavigationControl({ showCompass: true, visualizePitch: true }), "top-right");
   map.on("style.load", onStyle);
   map.on("load", () => {
     const r = initialSlug && BY[initialSlug];
