@@ -204,7 +204,7 @@
       else h += '<div class="row2">';
     } else if (mode === "powder") {
       h = ramp(p72on() ? "New snow, 3 days" : "New snow, 24 h", newStops(), p72on() ? ["1", "15", "45", "120+ cm"] : ["1", "10", "30", "80+ cm"]) + '<div class="row2">';
-    } else if (mode === "sat") h = '<b>Seen from space</b><div class="sw"><span><i style="background:#F6FAFF"></i>Snow</span><span><i style="background:#A0C4E4"></i>Patchy</span><span><i style="background:#96693E"></i>No snow</span><span><i style="background:#7D7D8A"></i>Cloud</span></div><div class="row2">';
+    } else if (mode === "sat") h = '<b>Latest clear view</b>' + (DATA.regions.find((r) => r.sat) ? '<small class="none" style="padding:0 0 4px;display:block">' + esc(I18N.t("Clear view up to") + " " + D(DATA.regions.find((r) => r.sat).sat.asof).toLocaleDateString(LOC, { day: "numeric", month: "short", timeZone: "UTC" })) + "</small>" : "") + '<div class="sw"><span><i style="background:#F6FAFF"></i>Snow</span><span><i style="background:#A0C4E4"></i>Patchy</span><span><i style="background:#96693E"></i>No snow</span><span><i style="background:#7D7D8A"></i>Cloud</span></div><div class="row2">';
     else if (mode === "wind") h = ramp("Wind at midday", WIND, ["0", "20", "50", "100 km/h"]) + '<div class="row2">';
     else if (mode === "freeze") h = ramp("Freezing level", FREEZE, ["0", "1,500", "3,000", "4,500 m"]) + '<div class="row2">';
     else if (mode === "radar") h = "<b>Rain & snow now</b><div class=\"row2\">";
@@ -242,6 +242,15 @@
     const key = p + ":" + st.scale + ":" + p72on();
     if (LUTS[key]) return LUTS[key];
     const t = new Uint8ClampedArray(256 * 4), stops = p === "d" ? depthStops() : newStops();
+    if (p === "sat") {
+      const COL = { 1: [236, 244, 255], 2: [150, 105, 62], 3: [140, 186, 228] };
+      for (let c = 0; c < 255; c++) {
+        const s0 = c & 3, age = c >> 2;
+        if (s0 === 0) t.set([125, 125, 138, 90], c * 4);
+        else t.set([...COL[s0], Math.max(110, 235 - 12 * age)], c * 4);
+      }
+      return (LUTS[key] = t);
+    }
     for (let c = 1; c < 255; c++) {
       const v = p === "d" ? decDepth(c) : c;
       if (v < 1) continue;
@@ -294,9 +303,16 @@
     if (mode === "off") return;
     if (mode === "wind" || mode === "freeze") { renderField(mode); return; }
     if (mode === "radar") { renderRadar(); return; }
-    if (mode === "sat") { renderLive("sat"); return; }
+    if (mode === "sat") { renderSat(); return; }
     if (isStatic(st.day)) { renderStatic(); return; }
     if (proLive()) renderLive(mode);
+  }
+  async function renderSat() {      // latest clear satellite view (free, static, same for every day)
+    const gen = st.gen;
+    await Promise.all(DATA.regions.filter((r) => r.sat).map(async (r) => {
+      const cd = await codesOf(BASE + r.sat.img);
+      if (cd && gen === st.gen) addCanvas("m_sat_" + r.code, paint(cd, "sat"), r.coords);
+    }));
   }
   async function renderStatic() {
     const gen = st.gen, p = prod();
@@ -420,7 +436,7 @@
     });
     map.addSource("pins", { type: "geojson", data: fc });
     const font = ["Noto Sans Regular"];
-    map.addLayer({ id: "pins", type: "circle", source: "pins", minzoom: 6,
+    map.addLayer({ id: "pins", type: "circle", source: "pins", minzoom: 7,
       paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 6, 2.5, 10, 5], "circle-color": "#0B1220", "circle-stroke-color": "#fff", "circle-stroke-width": 1.5 } });
     map.addLayer({ id: "pin_lbl", type: "symbol", source: "pins", minzoom: 9,
       layout: { "text-field": ["get", "t"], "text-font": font, "text-size": 12, "text-offset": [0, 1.1], "text-anchor": "top", "text-optional": true },
@@ -537,6 +553,17 @@
           h = '<span class="k">Wind at midday · ' + when + '</span><span class="big">' + Math.round(v) + '<small>km/h</small></span><div class="line">from the ' + dir + "</div>";
         } else if (v != null) h = '<span class="k">Freezing level · ' + when + '</span><span class="big">' + fmt(v) + "<small>m</small></span>";
       }
+    } else if (mode === "sat") {
+      const rr = r && r.sat ? r : null;
+      if (rr) {
+        const cd = await codesOf(BASE + rr.sat.img);
+        const row = cd && Math.floor((mercY(rr.coords[0][1]) - mercY(ll.lat)) / (mercY(rr.coords[0][1]) - mercY(rr.coords[2][1])) * cd.h);
+        const col = cd && Math.floor((ll.lng - rr.coords[0][0]) / (rr.coords[1][0] - rr.coords[0][0]) * cd.w);
+        const c = cd && row >= 0 && row < cd.h && col >= 0 && col < cd.w ? cd.c[row * cd.w + col] : 255;
+        const seen = addDays(rr.sat.asof, -(c >> 2)), when2 = D(seen).toLocaleDateString(LOC, { day: "numeric", month: "short", timeZone: "UTC" });
+        h = '<span class="k">Latest clear view</span><div class="line"><b>' + (c === 255 ? "No satellite view here." : (c & 3) === 0 ? "No clear view in the last 10 days." :
+          ({ 1: "Seen snow-covered on ", 2: "Seen without snow on ", 3: "Patchy snow seen on " })[c & 3] + when2) + "</b></div>";
+      }
     } else if (mode === "depth" || mode === "powder") {
       if (isStatic(st.day) && r) {
         const [cd, cn] = await Promise.all([codeAt(r, "d", ll), codeAt(r, p72on() ? "n3" : "n", ll)]);
@@ -576,7 +603,7 @@
   function layersSheet() {
     const tiles = [["depth", "Snow depth", "linear-gradient(135deg,#9ECAE1,#2171B5 60%,#08306B)"],
       ["powder", "Powder", "linear-gradient(135deg,#F7FCB9,#41B6C4 55%,#0C2C84)"],
-      ["sat", "Satellite snow", "linear-gradient(135deg,#F6FAFF,#A0C4E4 50%,#96693E)", true],
+      ["sat", "Satellite snow", "linear-gradient(135deg,#F6FAFF,#A0C4E4 50%,#96693E)"],
       ["off", "Off", "linear-gradient(135deg,var(--surface2),var(--surface3))"]];
     const tile = ([id, name, sw, pro]) => '<button class="tile" data-main="' + id + '" aria-pressed="' + (st.main === id) + '"><div class="sw2" style="background:' + sw + '"></div>' +
       (pro && !st.pro ? '<span class="pro"><span class="ms f">lock</span>PRO</span>' : "") + "<span>" + name + "</span></button>";
@@ -604,8 +631,6 @@
       if (sh) { st.sharp = sh.dataset.sharp === "1"; store.set("ss_sharp", st.sharp); m.el.querySelectorAll("[data-sharp]").forEach((b) => b.setAttribute("aria-pressed", b === sh)); drawLegend(); setResampling(); return; }
       if (t) {
         const id = t.dataset.main;
-        if (id === "sat" && !st.pro) { m.close(); SS.upsell("Satellite snow is a Pro layer"); return; }
-        if (id === "sat" && !proLive()) { toast("Pro data is updating, try again in a minute."); return; }
         setMain(id);
         m.el.querySelectorAll("[data-main]").forEach((b) => b.setAttribute("aria-pressed", b === t));
       } else if (o) {
