@@ -48,6 +48,7 @@
     return (STYLES[st.style] || STYLES.outdoors)[1];
   }
   function onStyle() {
+    ready = true;
     // quieter basemap (W22): no admin-1 / POI labels; snow is the only strong colour
     for (const l of map.getStyle().layers || []) {
       if (l.type === "symbol" && /state|poi|settlement-subdivision|airport|transit/.test(l.id)) map.setLayoutProperty(l.id, "visibility", "none");
@@ -269,7 +270,7 @@
     map.addLayer({ id, type: "raster", source: id, minzoom: opt.min || 0, maxzoom: opt.max || 24, paint: rasterPaint(opt.opacity || 0.9) }, beneath());
   }
   function renderMain() {
-    if (!ready || !map.isStyleLoaded()) return;
+    if (!ready) return;
     st.gen++;
     clearMain();
     const mode = st.main;
@@ -388,7 +389,7 @@
     map.addSource("pins", { type: "geojson", data: fc });
     const font = ML.mapbox ? ["DIN Pro Medium", "Arial Unicode MS Regular"] : ["Noto Sans Regular"];
     map.addLayer({ id: "pins", type: "circle", source: "pins", minzoom: 6,
-      paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 6, 3, 10, 7], "circle-color": "#0B1220", "circle-stroke-color": "#fff", "circle-stroke-width": 2 } });
+      paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 6, 2.5, 10, 5], "circle-color": "#0B1220", "circle-stroke-color": "#fff", "circle-stroke-width": 1.5 } });
     map.addLayer({ id: "pin_lbl", type: "symbol", source: "pins", minzoom: 8.5,
       layout: { "text-field": ["get", "t"], "text-font": font, "text-size": 12, "text-offset": [0, 1.1], "text-anchor": "top", "text-optional": true },
       paint: { "text-color": "#0B1220", "text-halo-color": "#fff", "text-halo-width": 1.6 } });
@@ -549,9 +550,14 @@
     const m = SS.modal(SS.head("Map layers") + '<div class="over sec">Snow</div><div class="tiles">' + tiles.map(tile).join("") + "</div>" +
       (st.pro ? "" : '<p style="color:var(--ink3);font-size:13px;margin:10px 0 0">Powder is free for today. Pro adds every day, 3-day snow and the layers with a lock.</p>') +
       '<div class="over sec">Weather and more</div>' + rows.map(row).join("") +
-      '<div class="over sec">Safety</div>' + row(["aval", "Avalanche danger", "Official daily levels", "warning"]) + styles);
+      '<div class="over sec">Safety</div>' + row(["aval", "Avalanche danger", "Official daily levels", "warning"]) +
+      '<div class="over sec">Snow colours</div><div class="filters"><div class="seg2" role="group" aria-label="Colour scale">' + [100, 200, 400].map((v) => '<button data-scale="' + v + '" aria-pressed="' + (st.scale === v) + '">0–' + v + " cm</button>").join("") +
+      '</div><div class="seg2" role="group" aria-label="Look"><button data-sharp="0" aria-pressed="' + !st.sharp + '">Clear</button><button data-sharp="1" aria-pressed="' + st.sharp + '">Sharp</button></div></div>' + styles);
     m.el.addEventListener("click", (e) => {
       const t = e.target.closest("[data-main]"), o = e.target.closest("[data-over]"), sy = e.target.closest("[data-style]");
+      const sc = e.target.closest("[data-scale]"), sh = e.target.closest("[data-sharp]");
+      if (sc) { st.scale = +sc.dataset.scale; store.set("ss_scale", st.scale); m.el.querySelectorAll("[data-scale]").forEach((b) => b.setAttribute("aria-pressed", b === sc)); drawLegend(); recolour(); return; }
+      if (sh) { st.sharp = sh.dataset.sharp === "1"; store.set("ss_sharp", st.sharp); m.el.querySelectorAll("[data-sharp]").forEach((b) => b.setAttribute("aria-pressed", b === sh)); drawLegend(); setResampling(); return; }
       if (t) {
         const id = t.dataset.main;
         if (id === "sat" && !st.pro) { m.close(); SS.upsell("Satellite snow is a Pro layer"); return; }
@@ -904,7 +910,6 @@
   map.addControl(new LIB.NavigationControl({ showCompass: !!ML.mapbox, visualizePitch: true }), "top-right");
   map.on("style.load", onStyle);
   map.on("load", () => {
-    ready = true;
     const r = initialSlug && BY[initialSlug];
     if (r) map.jumpTo({ center: [r.lon, r.lat], zoom: 10 });
     else if (hash) map.jumpTo({ center: [+hash[2], +hash[1]], zoom: +hash[3] });
@@ -916,6 +921,7 @@
       if (st.over.pistes) loadPistes();
       loadFine();
     });
+    loadFine();
   });
   await started;
   SS.onChange(onAccount);
