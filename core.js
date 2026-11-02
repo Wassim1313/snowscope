@@ -99,6 +99,7 @@
         const s = document.createElement("script");
         s.async = true; s.crossOrigin = "anonymous";
         s.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + encodeURIComponent(this.client());
+        s.onload = () => this.flush();
         document.head.appendChild(s);
         this.loaded = true;
         document.querySelectorAll("[data-ad-choices]").forEach((e) => { e.hidden = false; });
@@ -123,10 +124,19 @@
         (fluid ? ' data-ad-format="fluid" data-ad-layout-key="' + esc(a.infeed_layout_key) + '"'
                : ' data-ad-format="auto" data-full-width-responsive="true"') + "></ins></div>";
       el.hidden = false; el.dataset.filled = "1"; el.classList.add("filled");
-      try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch { /* blocked */ }
+      this.flush();
       const ins = el.querySelector("ins.adsbygoogle"), hw = el.querySelector(".housewrap"), sl = el.querySelector(".adslot");
       if (ins && hw) new MutationObserver(() => { const f = ins.getAttribute("data-ad-status") === "filled"; hw.hidden = f; sl.style.height = f ? "" : "0"; el.querySelector(".adl").hidden = !f; })
         .observe(ins, { attributes: true, attributeFilter: ["data-ad-status"] });
+    },
+    flush() {       // one push per <ins> still on the page and not yet served; pushes queued before the tag loaded
+      // used to outnumber the units after a panel re-render ("All 'ins' elements ... already have ads")
+      const a = (window.adsbygoogle = window.adsbygoogle || []);
+      if (!a.loaded) return;                           // the tag flushes itself once loaded (s.onload)
+      for (const ins of document.querySelectorAll("ins.adsbygoogle:not([data-adsbygoogle-status])")) {
+        if (!ins.isConnected) continue;
+        try { a.push({}); } catch { return; }
+      }
     },
     hideAll() {
       document.querySelectorAll("[data-ad]").forEach((el) => { el.hidden = true; el.innerHTML = ""; delete el.dataset.filled; });

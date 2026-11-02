@@ -31,7 +31,7 @@
   const ensureDem = () => { if (!map.getSource("dem")) map.addSource("dem", DEM); };
   const get = (k, d) => { const v = store.get(k); return v == null ? d : v; };
 
-  const st = { day: null, main: "depth", p72: false, over: { pistes: false, aval: false, pins: true, stays: !!get("ss_stays", 1), stn: !!get("ss_stn", 1), s30: !!get("ss_s30", 1) }, monly: !!get("ss_monly", 0), s30: undefined, s30fail: false, scale: get("ss_scale", 100),
+  const st = { day: null, main: "depth", p72: false, over: { pistes: false, aval: false, pins: true, stays: !!get("ss_stays", 1), stn: !!get("ss_stn", 1), s30: !!get("ss_s30", 1) }, monly: !!get("ss_monly", 0), s30: undefined, s30fail: false, s30loaded: false, covered: false, scale: get("ss_scale", 100),
     sharp: !!get("ss_sharp", false), style: get("ss_style", "outdoors"), terrain: !!get("ss_terrain", false), tab: "map", slug: null,
     region: null, pro: false, proIdx: null, proDates: null, gen: 0, fields: {}, pistes: { idx: null, loaded: new Set(), feats: [] },
     aval: null, radar: undefined, sheet: "peek", pushed: false, ski: { region: null, country: "", when: "today", radius: get("ss_radius", 200), min: 0, fresh: false, q: "" },
@@ -185,7 +185,7 @@
         if (!map.getLayer(id)) continue;
         const vis = op > 0 ? "visible" : "none";
         if (map.getLayoutProperty(id, "visibility") !== vis) map.setLayoutProperty(id, "visibility", vis);
-        if (op > 0) map.setPaintProperty(id, "raster-opacity", op);
+        if (op > 0) map.setPaintProperty(id, "raster-opacity", st.covered ? 0 : op);
       }
     }
   }
@@ -206,6 +206,7 @@
     chip30();
   }
   function removeS30() {
+    st.s30loaded = false;
     for (const l of (map.getStyle().layers || []).filter((x) => x.id.startsWith("m_s30_"))) map.removeLayer(l.id);
     for (const id of Object.keys(map.getStyle().sources || {}).filter((x) => x.startsWith("m_s30_"))) map.removeSource(id);
   }
@@ -215,7 +216,17 @@
     const b = map.getBounds();
     return (c.domains || []).some((d) => d.bbox[0] < b.getEast() && d.bbox[2] > b.getWest() && d.bbox[1] < b.getNorth() && d.bbox[3] > b.getSouth());
   }
-  function chip30() { const e = $("chip30"); if (e) e.hidden = !s30InView(); }
+  function chip30() {            // legend chip + the swap: the 1 km / 500 m pictures fade out once the first 30 m tiles are on screen
+    const on = s30InView();
+    const e = $("chip30"); if (e) e.hidden = !on;
+    const cover = on && st.s30loaded;
+    if (cover === st.covered) return;
+    st.covered = cover;
+    for (const l of (map.getStyle().layers || []).filter((x) => x.type === "raster" && x.id.startsWith("m_") && !x.id.startsWith("m_s30_"))) {
+      const vis = map.getLayoutProperty(l.id, "visibility") !== "none";
+      if (vis) map.setPaintProperty(l.id, "raster-opacity", cover ? 0 : 0.95 * (st.monly ? 0.22 : 1));
+    }
+  }
   async function loadS30() {
     if (!SS.S.api) return;
     try { const c = await SS.api("/v1/config", { auth: false, timeout: 12000 }); st.s30 = c && c.snow30 && c.snow30.enabled ? c.snow30 : null; } catch { st.s30 = null; }
@@ -364,7 +375,7 @@
     if (BLOBS.size > 200) BLOBS.delete(BLOBS.keys().next().value);
     return BLOBS.get(key);
   }
-  const rasterPaint = (op) => ({ "raster-opacity": op * (st.monly ? 0.22 : 1), "raster-fade-duration": 0, "raster-resampling": st.sharp ? "nearest" : "linear" });
+  const rasterPaint = (op) => ({ "raster-opacity": st.covered ? 0 : op * (st.monly ? 0.22 : 1), "raster-opacity-transition": { duration: 300 }, "raster-fade-duration": 0, "raster-resampling": st.sharp ? "nearest" : "linear" });
   function setResampling() {
     for (const l of (map.getStyle().layers || []).filter((x) => x.id.startsWith("m_") && x.type === "raster")) map.setPaintProperty(l.id, "raster-resampling", st.sharp ? "nearest" : "linear");
   }
@@ -1619,6 +1630,8 @@
     const res = await RES.catch(() => null);
     await loadStations();
     const x = res && BY[slug];
+    const s30 = x ? await s30Point(x.lat, x.lon) : null;
+    if (st.slug !== slug) return;
     if (!x) { box.innerHTML = '<button class="back" data-back><span class="ms">arrow_back</span>Back</button><p class="msg">This resort could not be loaded.</p>'; box.querySelector("[data-back]").onclick = () => closeResort(); return; }
     document.title = x.short + " snow depth today · SnowScope";
     const ti = res.dates.indexOf(DATA.today) >= 0 ? res.dates.indexOf(DATA.today) : 2;
@@ -1630,6 +1643,7 @@
       (x.base_m && x.top_m ? (x.name !== x.short ? " · " : "") + fmt(x.base_m) + "–" + fmt(x.top_m) + " m" : "") + "</p>" +
       '<div class="hero2"><div class="card"><div class="over">Upper slopes today</div><b class="n">' + (d0 == null ? "–" : d0 + "<small>cm</small>") + '</b><small class="none">' + verdict + "</small></div>" +
       '<div class="card"><div class="over">New snow</div>' + (n0 >= 1 ? '<b class="n acc">+' + n0 + "<small>cm</small></b><small class=\"none\">in 24 hours</small>" : '<b class="n">–</b><small class="none">No new snow in 24 h</small>') + "</div></div>" +
+      (s30 ? '<p class="measured s30"><span class="k">Sharp 30 m</span> <b>' + Math.round(s30.depth_cm) + " cm</b>" + (s30.elevation_m ? " · " + fmt(s30.elevation_m) + " m" : "") + "</p>" : "") +
       measuredHtml(x.lat, x.lon, x.top_m || null, false) +
       '<div class="sect">Snow depth on the upper slopes, cm</div><div id="rDays"></div>' +
       adSlot("resort", x) +
@@ -1784,7 +1798,8 @@
     map.on("error", (e) => {      // tiles refused (not signed in on a Pro-only server): the static map stays, chip off
       if (e && e.sourceId && String(e.sourceId).startsWith("m_s30_") && !st.s30fail && e.error && [401, 402, 403].includes(e.error.status)) { st.s30fail = true; removeS30(); chip30(); }
     });
-    map.on("sourcedata", (e) => { if (e && e.sourceId && String(e.sourceId).startsWith("m_s30_") && e.isSourceLoaded) chip30(); });
+    map.on("sourcedata", (e) => { if (e && e.sourceId && String(e.sourceId).startsWith("m_s30_") && e.isSourceLoaded && map.getSource(e.sourceId)) { st.s30loaded = true; chip30(); } });
+    map.on("zoom", chip30);
     map.on("moveend", () => {
       chip30();
       if (!st.slug && !regionMove) history.replaceState(history.state, "", location.pathname + location.search + "#@" + map.getCenter().lat.toFixed(3) + "," + map.getCenter().lng.toFixed(3) + "," + map.getZoom().toFixed(1));
