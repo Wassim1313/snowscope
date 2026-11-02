@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://oem-installation-beta-designer.trycloudflare.com";
+window.SNOWSCOPE_API = "https://charges-ideal-displays-robust.trycloudflare.com";
