@@ -75,29 +75,44 @@
     return paddleReady;
   }
 
-  // visitor's country + currency: our API's Cloudflare country first, then Paddle's own location, then the time zone
+  // visitor's country + Paddle's localized, formatted prices for every price (PricePreview); our API's Cloudflare
+  // country first, then Paddle's own IP location, then the time zone. Fallback text only when Paddle can't be reached.
+  const PRICE = {};
   async function locate(session) {
-    country = (session && session.country) || null;
+    country = (session && session.country) || country || null;
     try {
       const P = await loadPaddle();
-      const pv = await P.PricePreview({ items: [{ priceId: cfg().prices.pro_yearly, quantity: 1 }], ...(country ? { address: { countryCode: country } } : {}) });
+      const ids = Object.entries(cfg().prices || {}).filter(([, v]) => v);
+      const pv = await P.PricePreview({ items: ids.map(([, id]) => ({ priceId: id, quantity: 1 })),
+                                        ...(country ? { address: { countryCode: country } } : {}) });
       const d = (pv && pv.data) || {};
       if (d.currencyCode) cur = d.currencyCode;
       if (!country && d.address && d.address.countryCode) country = d.address.countryCode;
+      const byId = Object.fromEntries(ids.map(([k, id]) => [id, k]));
+      ((d.details || {}).lineItems || []).forEach((li) => {
+        const k = byId[(li.price || {}).id];
+        if (k && li.formattedTotals) PRICE[k] = li.formattedTotals.total;
+      });
     } catch { /* preview blocked: fall back below */ }
     if (!country) { try { if (Intl.DateTimeFormat().resolvedOptions().timeZone === "Africa/Casablanca") country = "MA"; } catch { /* old browser */ } }
     if (country === "MA") cur = "USD";
+    return { country, prices: PRICE };
   }
+  const fmt = (k) => PRICE[k] || money(AMT[k === "pro_yearly_trial" ? "trial" : k]);
 
-  async function open() {
+  async function open(key) {
     if (!enabled()) { SS.upsell(); return; }
-    if (!S.user) { pending = "open"; SS.signInModal("in"); return; }
+    if (!S.user) { pending = key || "open"; SS.signInModal("in"); return; }
     let session;
     try { session = await SS.api("/v1/billing/paddle/session", { timeout: 15000 }); }
     catch (e) { msgModal(t("Payments are not available right now. Try again in a minute.")); return; }
     if (S.state === "no_account") await SS.refreshMe();         // the session call just created the shared account
     if ((session.entitlement || {}).tier === "premium") { msgModal(t("You already have Pro.")); return; }
     await locate(session);
+    if (key && cfg().prices[key]) {               // pricing page: the exact price the visitor clicked
+      checkout(key === "pro_yearly_trial" && !session.trial_eligible ? "pro_yearly" : key, session);
+      return;
+    }
     offers(session);
   }
 
@@ -109,12 +124,12 @@
     const ma = country === "MA" && cfg().prices.pro_lifetime_ma;
     let h = head('<span class="pro"><span class="ms f">workspace_premium</span>PRO</span> ' + esc(t("Get SnowScope Pro")));
     h += '<p style="color:var(--ink2);margin:2px 0 6px">' + esc(t("One account for the website and the app: Pro bought here works in the Android app too, after you sign in with the same account.")) + "</p>";
-    if (ma) h += offer("pro_lifetime_ma", t("SnowScope Pro for life") + " · " + t("the price of a coffee"), t("One payment of {p} (about 10 MAD), yours forever.", money(AMT.pro_lifetime_ma)), true);
+    if (ma) h += offer("pro_lifetime_ma", t("SnowScope Pro for life") + " · " + t("the price of a coffee"), t("One payment of {p} (about 10 MAD), yours forever.", fmt("pro_lifetime_ma")), true);
     else {
-      if (session.trial_eligible && cfg().prices.pro_yearly_trial) h += offer("pro_yearly_trial", t("Try 3 days for {p}", money(AMT.trial)), t("then {p} a year. Cancel anytime before the 3 days end and you pay nothing more.", money(AMT.pro_yearly)), true);
-      h += offer("pro_yearly", t("Yearly"), t("{p} a year", money(AMT.pro_yearly)), !session.trial_eligible);
-      h += offer("pro_monthly", t("Monthly"), t("{p} a month", money(AMT.pro_monthly)));
-      if (!(session.entitlement || {}).no_ads && cfg().prices.noads_once) h += offer("noads_once", t("Remove ads"), t("{p} once, no ads for good (Pro features not included)", money(AMT.noads_once)));
+      if (session.trial_eligible && cfg().prices.pro_yearly_trial) h += offer("pro_yearly_trial", t("Try 3 days for {p}", fmt("pro_yearly_trial")), t("then {p} a year. Cancel anytime before the 3 days end and you pay nothing more.", fmt("pro_yearly")), true);
+      h += offer("pro_yearly", t("Yearly"), t("{p} a year", fmt("pro_yearly")), !session.trial_eligible);
+      h += offer("pro_monthly", t("Monthly"), t("{p} a month", fmt("pro_monthly")));
+      if (!(session.entitlement || {}).no_ads && cfg().prices.noads_once) h += offer("noads_once", t("Remove ads"), t("{p} once, no ads for good (Pro features not included)", fmt("noads_once")));
     }
     h += '<p style="color:var(--ink2);font-size:13px;margin:12px 0 0">' + esc(t("Secure payment by Paddle, our reseller. Prices include tax.")) +
       ' <a href="' + SS.ROOT + 'refund.html">' + esc(t("Refunds and cancelling")) + "</a></p>";
@@ -136,7 +151,8 @@
         items: [{ priceId, quantity: 1 }],
         ...(session.email ? { customer: { email: session.email } } : {}),
         customData: { account_id: session.account_id },
-        settings: { displayMode: "overlay", locale: lang(), allowLogout: false,
+        settings: { displayMode: "overlay", variant: "one-page", locale: lang(), allowLogout: false,
+                    successUrl: new URL(SS.ROOT + "welcome.html?p=" + encodeURIComponent(key), location.href).href,
                     theme: matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light" },
       });
     } catch { msgModal(t("Payments are not available right now. Try again in a minute.")); }
@@ -168,14 +184,27 @@
   }
 
   // reopen the offers once the visitor has signed in from the "Get Pro" button
-  SS.onChange(() => { if (pending && S.user && S.state !== "checking") { pending = null; open(); } });
+  SS.onChange(() => { if (pending && S.user && S.state !== "checking") { const k = pending; pending = null; open(k === "open" ? undefined : k); } });
   document.addEventListener("click", (e) => {
     const b = e.target.closest("[data-buy-pro]");
     if (b && enabled()) { e.preventDefault(); const x = b.closest(".scrim") && b.closest(".scrim").querySelector("[data-close]"); if (x) x.click(); open(); }
     if (e.target.closest("[data-manage-pro]")) { e.preventDefault(); manage(); }
+    const bp = e.target.closest("[data-buy-price]");
+    if (bp && enabled()) { e.preventDefault(); open(bp.dataset.buyPrice); }
   });
 
-  window.SSPay = { enabled, open, manage, t };
+  // pricing page: Paddle's localized prices in [data-price-of], Morocco card only for visitors in Morocco
+  async function pricingPage() {
+    const r = await locate(null);
+    document.querySelectorAll("[data-price-of]").forEach((el) => { const v = r.prices[el.dataset.priceOf]; if (v) el.textContent = v; });
+    document.querySelectorAll("[data-ma-only]").forEach((el) => { el.hidden = r.country !== "MA"; });
+    document.querySelectorAll("[data-not-ma]").forEach((el) => { el.hidden = r.country === "MA"; });
+  }
+  // Paddle links (default payment link ?_ptxn=..., update payment method) open the checkout on any page with Paddle.js
+  if (/[?&]_ptxn=/.test(location.search)) loadPaddle().catch(() => {});
+  if (document.body && document.body.dataset.page === "pricing" && enabled()) pricingPage();
+
+  window.SSPay = { enabled, open, manage, t, locate };
   // pages drawn before this file loaded swap their "Get Pro in the app" link for the web checkout
   S.listeners.forEach((f) => { try { f(S); } catch (e) { console.error(e); } });
 })();

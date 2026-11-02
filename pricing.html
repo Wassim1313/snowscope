@@ -14,15 +14,16 @@
 <style>
 .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px}
 .plans .card{margin:0;display:flex;flex-direction:column;gap:6px}
+[hidden]{display:none!important}
 .plans h2{font-size:17px;margin:0}.plans .price{font-size:26px;font-weight:700;letter-spacing:-.01em}
 .plans .price small{font-size:14px;font-weight:500;color:var(--ink2)}.plans p{margin:0;color:var(--ink2);font-size:14px}
-.plans .btn{margin-top:auto}
+.plans .btn{margin-top:auto}.plans .btn+.btn{margin-top:6px}.seg{display:flex;gap:6px}.seg .pill[aria-pressed=true]{background:var(--ink);color:var(--surface)}
 .cmp{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
 .cmp th,.cmp td{padding:9px 8px;border-bottom:1px solid var(--outline);text-align:start}
 .cmp td.c,.cmp th.c{text-align:center;width:72px}.cmp .y{color:var(--good);font-weight:700}.cmp .n{color:var(--ink2)}
 </style>
 </head>
-<body>
+<body data-page="pricing">
 <header class="top"><div class="wrap">
   <a class="brand" href="./"><img src="logo.svg" alt="" width="30" height="30">SnowScope</a>
   <button class="btn icon langbtn" data-lang aria-label="Language"><span class="ms">language</span></button>
@@ -33,24 +34,30 @@
   <h1 style="margin-top:8px">Pricing</h1>
   <p class="lede">SnowScope is free, with ads. Pro adds the sharpest snow map, more days and more layers, without ads. One account for the website and the Android app: what you buy here works in both.</p>
 
+  <div class="seg" role="group" aria-label="Billing period" style="margin-top:16px">
+    <button class="pill" data-period="year" aria-pressed="true">Yearly</button>
+    <button class="pill" data-period="month" aria-pressed="false">Monthly</button>
+  </div>
   <div class="plans">
     <div class="card"><h2>Free</h2><div class="price">€0 <small>/ $0</small></div>
-      <p>Snow map and resort snow for today and two days either side, with ads.</p>
+      <p>Snow map and resort snow for today and the days around it, with ads.</p>
       <a class="btn ghost" href="./">Open the snow map</a></div>
-    <div class="card"><h2>Pro yearly</h2><div class="price">€29.99 <small>/ $29.99 a year</small></div>
-      <p><b>New to Pro: first 3 days for €1 / $1.</b> Then €29.99 / $29.99 a year, renewing every year until you cancel. Cancel before the 3 days end and the yearly price is never charged.</p>
-      <button class="btn ski" data-buy-pro>Get Pro</button></div>
-    <div class="card"><h2>Pro monthly</h2><div class="price">€4.99 <small>/ $4.99 a month</small></div>
+    <div class="card" data-plan="year"><h2>Pro yearly</h2><div class="price"><span data-price-of="pro_yearly">€29.99 / $29.99</span> <small>a year</small></div>
+      <p><b>New to Pro: first 3 days for <span data-price-of="pro_yearly_trial">€1 / $1</span>.</b> Then <span data-price-of="pro_yearly">€29.99 / $29.99</span> a year, renewing every year until you cancel. Cancel before the 3 days end and the yearly price is never charged.</p>
+      <button class="btn ski" data-buy-price="pro_yearly_trial">Start 3 days for <span data-price-of="pro_yearly_trial">€1 / $1</span></button>
+      <button class="btn ghost" data-buy-price="pro_yearly">Subscribe yearly</button></div>
+    <div class="card" data-plan="month" hidden><h2>Pro monthly</h2><div class="price"><span data-price-of="pro_monthly">€4.99 / $4.99</span> <small>a month</small></div>
       <p>Renews every month until you cancel. Cancel any time: Pro stays until the end of the month you paid for.</p>
-      <button class="btn tonal" data-buy-pro>Get Pro</button></div>
-    <div class="card"><h2>Remove ads</h2><div class="price">€0.99 <small>/ $0.99 once</small></div>
+      <button class="btn ski" data-buy-price="pro_monthly">Subscribe monthly</button></div>
+    <div class="card"><h2>Remove ads</h2><div class="price"><span data-price-of="noads_once">€0.99 / $0.99</span> <small>once</small></div>
       <p>One payment, no ads for good. Does not include the Pro features.</p>
-      <button class="btn tonal" data-buy-pro>Remove ads</button></div>
+      <button class="btn tonal" data-buy-price="noads_once">Remove ads</button></div>
   </div>
 
   <div class="card" style="margin-top:12px">
     <h2 style="font-size:17px;margin:0 0 6px">Skiing in Morocco? Pro for life, the price of a coffee</h2>
-    <p>Visitors in Morocco get SnowScope Pro for life with one payment of about 10 MAD ($1.09), instead of the subscriptions. Offered only to visitors in Morocco.</p>
+    <p>Visitors in Morocco get SnowScope Pro for life with one payment of about 10 MAD (<span data-price-of="pro_lifetime_ma">$1.09</span>), instead of the subscriptions. Offered only to visitors in Morocco.</p>
+    <button class="btn ski" data-buy-price="pro_lifetime_ma" data-ma-only hidden style="margin-top:8px">Get Pro for life</button>
   </div>
 
   <div class="card" style="margin-top:12px">
@@ -81,6 +88,13 @@
 </main>
 <script src="i18n.js"></script>
 <script src="core.js"></script>
-<script>SS.start();</script>
+<script>
+SS.start();
+document.addEventListener("click", (e) => {          // yearly / monthly toggle
+  const b = e.target.closest("[data-period]"); if (!b) return;
+  document.querySelectorAll("[data-period]").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+  document.querySelectorAll("[data-plan]").forEach((c) => { c.hidden = c.dataset.plan !== b.dataset.period; });
+});
+</script>
 </body>
 </html>
