@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://northeast-previous-budget-showtimes.trycloudflare.com";
+window.SNOWSCOPE_API = "https://fully-variation-array-under.trycloudflare.com";
