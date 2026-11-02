@@ -1,78 +1,68 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-root="">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>SnowScope snow depth map — Alps &amp; North America ski resorts</title>
-<meta name="description" content="Free live snow depth map for ski resorts in the Alps and North America: today's snow depth, fresh snow, where to ski and a 7-day forecast for every resort.">
-<link rel="canonical" href="https://wassim1313.github.io/snowscope/">
+<title>SnowScope · Snow depth today in the Alps, Pyrenees, Scandinavia and North America</title>
+<meta name="description" content="Where the snow is today: a daily snow-depth map of the Alps, Pyrenees, Scandinavia, the US, Canada and the Atlas, with the deepest ski resorts, new snow and places to stay.">
+<link rel="canonical" href="https://snowscope.app/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SnowScope">
-<meta property="og:title" content="SnowScope snow depth map">
-<meta property="og:description" content="Free live snow depth map and snow forecasts for ski resorts.">
-<meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#0f8b8d">
-<link rel="icon" href="static/icon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css"
-      integrity="sha384-MinO0mNliZ3vwppuPOUnGa+iq619pfMhLVUXfC4LHwSCvF9H+6P/KO4Q7qBOYV5V" crossorigin="anonymous">
-<link rel="stylesheet" href="static/style.css">
+<meta property="og:title" content="SnowScope · Where the snow is today">
+<meta property="og:description" content="Daily snow-depth map and the deepest ski resorts in the Alps, Pyrenees, Scandinavia and North America.">
+<meta property="og:url" content="https://snowscope.app/">
+<meta property="og:image" content="https://snowscope.app/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F4F6F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0F17" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..750&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
+<link rel="preload" href="snow/data.json" as="fetch" crossorigin>
+<link rel="stylesheet" href="site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"SnowScope","url":"https://snowscope.app/","potentialAction":{"@type":"SearchAction","target":"https://snowscope.app/resorts/?q={q}","query-input":"required name=q"}}</script>
 </head>
 <body>
-<div id="map" role="region" aria-label="Snow depth map"></div>
+<a class="skip" href="#map">Skip to the map</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><img src="logo.svg" alt="" width="30" height="30">SnowScope</a>
+  <div class="find" role="search"><span class="ms">search</span><input type="search" placeholder="Find a ski resort" aria-label="Find a ski resort" autocomplete="off"><ul hidden></ul></div>
+  <button class="btn tonal only-s" data-find-open aria-label="Find a ski resort" style="margin-left:auto;padding:0 10px"><span class="ms">search</span></button>
+  <div class="acct" id="acct"></div>
+</div></header>
 
-<div class="ui top">
-  <form class="card search" id="search" role="search" autocomplete="off">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.8l-.3-.3A6.5 6.5 0 1 0 9.5 16a6.5 6.5 0 0 0 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></svg>
-    <input id="q" type="search" placeholder="Search ski resorts" aria-label="Search ski resorts" minlength="2" maxlength="64">
-    <ul id="results" class="results" role="listbox" hidden></ul>
-  </form>
-  <div class="card legend" id="legend">
-    <div class="lg-row"><span class="lg-title">Snow depth <small>cm</small></span>
-      <span class="ramp" aria-hidden="true"></span>
-      <span class="lg-ticks"><span>1</span><span>50</span><span>150+</span></span></div>
-    <div class="lg-meta" id="legend-meta">5 km snow model</div>
+<main class="wrap">
+  <section class="hero">
+    <div><div class="over">Snow today</div><h1>Fresh snow in US West: up to +61 cm</h1>
+      <p class="lede">Deepest today: Kendall Mountain Recreation Area, 101 cm. Tap the map for the snow on any slope.</p></div>
+    <div class="updated" id="upd"></div>
+  </section>
+  <div class="pills" id="regions" role="group" aria-label="Region"></div>
+  <div class="mapbox">
+    <div id="map" role="region" aria-label="Snow map. The region cards below list the same values."></div>
+    <button class="mapbtn layers" id="layersBtn" aria-haspopup="dialog"><span class="ms">layers</span>Layers</button>
+    <div class="legend" id="legend"></div>
+    <div class="toast" id="toast" hidden></div>
   </div>
-</div>
+  <div class="days" id="days" role="group" aria-label="Day"></div>
+  <aside class="ad" data-ad="banner" aria-label="Advertisement" hidden></aside>
 
-<div class="ui side">
-  <button class="fab" id="layers-btn" aria-label="Layers" aria-expanded="false">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16.5 4.6 10.8 3 12l9 7 9-7-1.6-1.2zM12 14l9-7-9-7-9 7z"/></svg></button>
-  <div class="card layers" id="layers" hidden>
-    <label><input type="checkbox" data-layer="snow" checked> Snow depth</label>
-    <label><input type="checkbox" data-layer="spots" checked> Where to ski</label>
-    <label><input type="checkbox" data-layer="resorts" checked> Resorts</label>
-    <label><input type="checkbox" data-layer="pistes" checked> Pistes &amp; lifts</label>
-  </div>
-  <button class="fab" id="locate-btn" aria-label="My location">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm9 3h-2.1A7 7 0 0 0 13 5.1V3h-2v2.1A7 7 0 0 0 5.1 11H3v2h2.1a7 7 0 0 0 5.9 5.9V21h2v-2.1a7 7 0 0 0 5.9-5.9H21zm-9 6a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/></svg></button>
-</div>
+  <div class="sect-h"><h2>Deepest snow today</h2><a href="resorts/">All resorts →</a></div>
+  <div class="grid" id="cardsA"></div>
+  <aside class="ad infeed" data-ad="infeed" aria-label="Advertisement" hidden></aside>
+  <div class="grid" id="cardsB"></div>
 
-<div class="ui bottom">
-  <div class="card app-banner" id="app-banner">
-    <span><strong>SnowScope app</strong> · 1 km snow, alerts, offline maps</span>
-    <a class="btn" id="app-link" href="https://play.google.com/store/apps/details?id=ma.atlaslabs.snowscope" rel="noopener">Get the app</a>
-    <button class="x" id="banner-x" aria-label="Hide">×</button>
-  </div>
-  <div class="card days">
-    <div class="days-head"><strong id="day-label">Today</strong>
-      <span class="pill" id="day-kind">forecast</span>
-      <span class="hint" id="hint"></span></div>
-    <div class="day-chips" id="days" role="tablist" aria-label="Day"></div>
-  </div>
-  <p class="foot"><a href="privacy/">Privacy</a> · No cookies, no tracking ·
-    <button class="link" id="credits-btn">Data credits</button></p>
-</div>
-
-<dialog id="credits"><h2>Data credits</h2><div id="credits-body">Loading…</div>
-  <form method="dialog"><button class="btn">Close</button></form></dialog>
-
-<noscript><div class="noscript"><h1>SnowScope snow depth map</h1>
-  <p>The interactive map needs JavaScript. Browse the <a href="https://wassim1313.github.io/snowscope/">snow forecast for every ski resort</a>.</p></div></noscript>
-
-<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"
-        integrity="sha384-SYKAG6cglRMN0RVvhNeBY0r3FYKNOJtznwA0v7B5Vp9tr31xAHsZC0DqkQ/pZDmj" crossorigin="anonymous"></script>
-<script src="config.js"></script>
-<script src="static/app.js" defer></script>
+  <section class="appcta">
+    <div><div class="over" style="color:#9FB3CC">The app</div><h2>Every slope, every day.</h2><p>The sharpest snow map, powder alerts and Peak finder in your pocket.</p></div>
+    <a class="btn big" data-app-link href="download/"><span class="ms f">android</span>Get the app</a>
+  </section>
+  <footer class="foot">
+    <nav><a href="resorts/">All resorts</a><a href="sources.html">About &amp; sources</a><a href="account.html">Your account</a><a href="privacy/">Privacy</a><a href="terms/">Terms</a><a href="delete/">Delete your data</a><a href="#" data-ad-choices hidden>Cookie settings</a></nav>
+    Hotel links marked “Partner” may earn us a commission from bookings, at no cost to you. © 2026 SnowScope · Atlas Labs
+  </footer>
+</main>
+<script src="core.js"></script>
+<script src="map.js"></script>
 </body>
 </html>
