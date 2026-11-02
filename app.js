@@ -31,11 +31,11 @@
   const ensureDem = () => { if (!map.getSource("dem")) map.addSource("dem", DEM); };
   const get = (k, d) => { const v = store.get(k); return v == null ? d : v; };
 
-  const st = { day: null, main: "depth", p72: false, over: { pistes: false, aval: false, pins: true, stays: !!get("ss_stays", 1), stn: !!get("ss_stn", 1) }, scale: get("ss_scale", 100),
+  const st = { day: null, main: "depth", p72: false, over: { pistes: false, aval: false, pins: true, stays: !!get("ss_stays", 1), stn: !!get("ss_stn", 1) }, monly: !!get("ss_monly", 0), scale: get("ss_scale", 100),
     sharp: !!get("ss_sharp", false), style: get("ss_style", "outdoors"), terrain: !!get("ss_terrain", false), tab: "map", slug: null,
     region: null, pro: false, proIdx: null, proDates: null, gen: 0, fields: {}, pistes: { idx: null, loaded: new Set(), feats: [] },
     aval: null, radar: undefined, sheet: "peek", pushed: false, ski: { region: null, country: "", when: "today", radius: get("ss_radius", 200), min: 0, fresh: false, q: "" },
-    origin: get("ss_origin", null) };
+    origin: get("ss_origin", null), hour: null, deck: null, radarFrames: null, frame: null };
   let DATA, RES, BY = {}, map, LIB, ML, popup, toastT, ready = false, initialSlug = null;
 
   function toast(t, ms = 3200) { const e = $("toast"); e.textContent = t; e.hidden = !t; clearTimeout(toastT); if (t) toastT = setTimeout(() => { e.hidden = true; }, ms); }
@@ -134,6 +134,7 @@
     }
     if (was !== st.pro || st.pro) { drawDays(); drawLegend(); if (ready) renderMain(); }
     renderPanel();
+    if (window.SSX) SSX.refresh();
   }
   const proLive = () => st.pro && st.proIdx;
   const isStatic = (d) => DATA.dates.includes(d);
@@ -165,17 +166,49 @@
     st.day = d;
     if (popup) popup.remove();
     document.querySelectorAll("#days [data-d]:not([aria-disabled])").forEach((b) => b.setAttribute("aria-pressed", b.dataset.d === d));
-    renderMain(); drawLegend(); drawPins(); drawBest();
+    // every free day is already on the map (the "deck", renderStatic): switching is an opacity change, no decode
+    if (deckReady(d)) { deckShow(d); clearFine(); loadFine(); } else renderMain();
+    drawLegend(); drawPins(); drawBest();
     if (!st.slug && st.tab === "map") renderPanel();
     prefetchAround(d);
+    if (window.SSX) SSX.onDay();
+  }
+  const deckKey = () => prod() + ":" + st.scale + ":" + p72on();
+  const deckReady = (d) => !!(st.deck && ["depth", "powder"].includes(st.main) && st.deck.key === deckKey() && st.deck.dates.includes(d) && st.deck.done.has(d));
+  function deckShow(d, next, t) {       // t in [0,1): cross-fade from day d to day next (timeline scrub)
+    if (!st.deck) return;
+    // only the two days taking part stay visible; the others are switched off so a frame costs two layers
+    for (const dd of st.deck.dates) {
+      const op = dd === d ? 0.95 * (1 - (t || 0)) : dd === next ? 0.95 * t : 0;
+      for (const r of DATA.regions) {
+        const id = "m_" + r.code + "_" + dd;
+        if (!map.getLayer(id)) continue;
+        const vis = op > 0 ? "visible" : "none";
+        if (map.getLayoutProperty(id, "visibility") !== vis) map.setLayoutProperty(id, "visibility", vis);
+        if (op > 0) map.setPaintProperty(id, "raster-opacity", op);
+      }
+    }
+  }
+  function clearFine() {
+    for (const l of (map.getStyle().layers || []).filter((x) => x.id.startsWith("m_f_"))) map.removeLayer(l.id);
+    for (const id of Object.keys(map.getStyle().sources || {}).filter((x) => x.startsWith("m_f_"))) map.removeSource(id);
+  }
+  function scrub(a, b, t) {             // fluid timeline: fade between two days that are both on the deck; else snap
+    if (!deckReady(a) || (b && !deckReady(b))) { const d = t < 0.5 || !b ? a : b; if (d !== st.day) setDay(d); return; }
+    for (const l of (map.getStyle().layers || []).filter((x) => x.id.startsWith("m_f_"))) map.setPaintProperty(l.id, "raster-opacity", 0);
+    deckShow(a, b, t);
+  }
+  function settle(d) {                  // scrub released
+    if (d !== st.day) { setDay(d); return; }
+    if (deckReady(d)) { deckShow(d); for (const l of (map.getStyle().layers || []).filter((x) => x.id.startsWith("m_f_"))) map.setPaintProperty(l.id, "raster-opacity", 0.95); loadFine(); }
   }
   function prefetchAround(d) {     // the next / previous day open instantly (pictures decoded in the background)
     const i = DATA.dates.indexOf(d), p = prod();
     for (const k of [i + 1, i - 1]) {
       const dd = DATA.dates[k];
       if (!dd) continue;
-      const run = () => DATA.regions.forEach((r) => { const x = r.days.find((y) => y.date === dd); if (x && x.ov[p]) codesOf(BASE + x.ov[p]); });
-      (window.requestIdleCallback || setTimeout)(run, 300);
+      const run = () => DATA.regions.forEach((r) => { const x = r.days.find((y) => y.date === dd); if (x && x.ov[p]) coloured(BASE + x.ov[p], p); });
+      if (window.requestIdleCallback) requestIdleCallback(run, { timeout: 1500 }); else setTimeout(run, 300);
     }
   }
   let playT = 0;
@@ -279,10 +312,19 @@
   function firstSymbol() { const l = (map.getStyle().layers || []).find((x) => x.type === "symbol"); return l ? l.id : undefined; }
   function beneath() { return map.getLayer("aval_fill") ? "aval_fill" : map.getLayer("pistes") ? "pistes" : firstSymbol(); }
   function clearMain() {
+    st.deck = null;
     for (const l of (map.getStyle().layers || []).filter((x) => x.id.startsWith("m_"))) map.removeLayer(l.id);
     for (const id of Object.keys(map.getStyle().sources || {}).filter((x) => x.startsWith("m_"))) map.removeSource(id);
   }
-  const rasterPaint = (op) => ({ "raster-opacity": op, "raster-fade-duration": 0, "raster-resampling": st.sharp ? "nearest" : "linear" });
+  // coloured picture (object URL) per picture + colour scale, painted once and kept: the deck and the scrub reuse it
+  const BLOBS = new Map();
+  function coloured(url, p) {
+    const key = url + "|" + p + ":" + st.scale + ":" + p72on();
+    if (!BLOBS.has(key)) BLOBS.set(key, codesOf(url).then((cd) => cd && new Promise((ok) => paint(cd, p).toBlob((b) => ok(b ? URL.createObjectURL(b) : null), "image/png"))));
+    if (BLOBS.size > 200) BLOBS.delete(BLOBS.keys().next().value);
+    return BLOBS.get(key);
+  }
+  const rasterPaint = (op) => ({ "raster-opacity": op * (st.monly ? 0.22 : 1), "raster-fade-duration": 0, "raster-resampling": st.sharp ? "nearest" : "linear" });
   function setResampling() {
     for (const l of (map.getStyle().layers || []).filter((x) => x.id.startsWith("m_") && x.type === "raster")) map.setPaintProperty(l.id, "raster-resampling", st.sharp ? "nearest" : "linear");
   }
@@ -334,15 +376,31 @@
     }));
   }
   async function renderStatic() {
+    // the deck: the selected day first, then every other free day of the same product at opacity 0, so the timeline
+    // (chips, keys, scrub, play) only changes opacities afterwards: no decode, no upload, no layout shift
     const gen = st.gen, p = prod();
-    await Promise.all(DATA.regions.map(async (r) => {
-      const d = r.days.find((x) => x.date === st.day);
-      if (!d) return;
-      const cd = await codesOf(BASE + d.ov[p]);
-      if (!cd || gen !== st.gen) return;
-      addCanvas("m_" + r.code, paint(cd, p), r.coords);   // no max zoom: the picture is upsampled at z13-16
-    }));
+    const dates = DATA.dates.filter((d0) => DATA.regions.some((r) => { const d = r.days.find((x) => x.date === d0); return d && d.ov[p]; }));
+    st.deck = { key: deckKey(), dates, done: new Set() };
+    const addDay = async (d0) => {
+      await Promise.all(DATA.regions.map(async (r) => {
+        const d = r.days.find((x) => x.date === d0);
+        if (!d || !d.ov[p]) return;
+        const url = await coloured(BASE + d.ov[p], p);
+        const id = "m_" + r.code + "_" + d0;
+        if (!url || gen !== st.gen || map.getSource(id)) return;
+        map.addSource(id, { type: "image", url, coordinates: r.coords });          // no max zoom: upsampled at z13-16
+        map.addLayer({ id, type: "raster", source: id, layout: { visibility: d0 === st.day ? "visible" : "none" }, paint: rasterPaint(0.95) }, beneath());
+      }));
+      if (gen === st.gen && st.deck) st.deck.done.add(d0);
+    };
+    await addDay(st.day);
     loadFine();
+    // the other days only after the first complete render: MapLibre's "load" event (URL view, click wiring) waits
+    // for every source, so adding 40 pictures up front would hold the whole page back
+    if (!map.loaded()) await new Promise((ok) => { map.once("load", ok); setTimeout(ok, 15000); });
+    const rest = dates.filter((d) => d !== st.day).sort((a, b) => Math.abs(D(a) - D(st.day)) - Math.abs(D(b) - D(st.day)));
+    for (const d0 of rest) { if (gen !== st.gen) return; await addDay(d0); await new Promise((ok) => setTimeout(ok, 120)); }
+    if (window.SSX && gen === st.gen) SSX.onDeck();
   }
   async function loadFine() {
     if (!ready || !isStatic(st.day) || !["depth", "powder"].includes(st.main) || map.getZoom() < 7) return;
@@ -358,7 +416,7 @@
       }
     }
   }
-  function recolour() { if (isStatic(st.day)) renderMain(); }
+  function recolour() { if (isStatic(st.day)) renderMain(); stnRecolour(); }
   function renderLive(mode) {
     if (!proLive()) return;
     const A = SS.S.api;
@@ -380,7 +438,8 @@
       const dom = r.code.toLowerCase();
       try {
         const ix = st.fields[dom] || (st.fields[dom] = await SS.api("/v1/fields/" + dom + "/index"));
-        let best = -1, bd = 1e18; const want = Date.parse(day + "T12:00:00Z");
+        // midday by default; the timeline's hour row (expert.js) sets st.hour (0..23 UTC) for 3-hour steps
+        let best = -1, bd = 1e18; const want = Date.parse(day + "T" + String(st.hour == null ? 12 : st.hour).padStart(2, "0") + ":00:00Z");
         ix.times.forEach((t, i) => { const d = Math.abs(Date.parse(t) - want); if (d < bd && d <= 9 * 3600e3) { bd = d; best = i; } });
         if (best < 0) return;
         const key = dom + "/" + v + "/" + best;
@@ -423,8 +482,20 @@
       if (!r.available || !r.frames || !r.frames.length) { st.radar = false; toast("Radar is not available right now"); return; }
       st.radar = true;
       if (st.main !== "radar") return;
-      addRaster("m_radar", r.frames[r.frames.length - 1].tiles, { tileSize: r.tile_size || 256, srcMax: r.max_zoom || 7, opacity: 0.7, attribution: "RainViewer" });
+      st.radarFrames = r.frames.slice(-8); st.radarMeta = { tileSize: r.tile_size || 256, srcMax: r.max_zoom || 7 };
+      st.frame = st.radarFrames.length - 1;
+      radarFrame(st.frame);
+      if (window.SSX) SSX.onDay();
     } catch { toast("Radar is updating, try again in a minute."); }
+  }
+  function radarFrame(i) {              // the last ~2 h of radar, one tile layer per frame, shown by opacity
+    if (!st.radarFrames || st.main !== "radar") return;
+    st.frame = i;
+    st.radarFrames.forEach((f, k) => {
+      const id = "m_radar_" + k;
+      if (!map.getLayer(id) && (k === i || Math.abs(k - i) <= 1)) addRaster(id, f.tiles, { ...st.radarMeta, opacity: k === i ? 0.7 : 0, attribution: "RainViewer" });
+      if (map.getLayer(id)) map.setPaintProperty(id, "raster-opacity", k === i ? 0.7 : 0);
+    });
   }
 
   // ------------------------------------------------------------------ overlays (pistes, avalanche, resort pins)
@@ -457,21 +528,41 @@
       map.on("mouseenter", id, () => { map.getCanvas().style.cursor = "pointer"; });
       map.on("mouseleave", id, () => { map.getCanvas().style.cursor = ""; });
     }
-    // measured snow at stations (free, static snow/stations.json), coloured like the snow ramp
-    map.addSource("stn", { type: "geojson", data: fc });
-    const ramp = ["interpolate", ["linear"], ["get", "d"], 0, "#C3CCD8", 1, "#C6DBEF", 10, "#9ECAE1", 25, "#6BAED6", 50, "#4292C6", 100, "#2171B5", 150, "#08519C", 250, "#08306B", 400, "#25004F"];
-    map.addLayer({ id: "stn", type: "circle", source: "stn", minzoom: 5, layout: { visibility: st.over.stn ? "visible" : "none" },
-      paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 5, 2.5, 10, 6], "circle-color": ramp, "circle-stroke-color": "#fff", "circle-stroke-width": 1.2 } });
-    map.addLayer({ id: "stn_lbl", type: "symbol", source: "stn", minzoom: 8, layout: { visibility: st.over.stn ? "visible" : "none",
-      "text-field": ["get", "t"], "text-size": 11, "text-font": ["Noto Sans Regular"], "text-offset": [0, 0.9], "text-anchor": "top", "text-optional": true },
-      paint: { "text-color": "#364152", "text-halo-color": "#fff", "text-halo-width": 1.5 } });
-    map.on("click", "stn", (e) => {
-      const f = e.features && e.features[0]; if (!f) return;
-      st.stayClick = Date.now();
-      stnPopup(f.properties, f.geometry.coordinates);
-    });
-    map.on("mouseenter", "stn", () => { map.getCanvas().style.cursor = "pointer"; });
-    map.on("mouseleave", "stn", () => { map.getCanvas().style.cursor = ""; });
+    // measured snow at stations (free, static snow/stations.json): depth-coloured pill badges "42 cm" with the station
+    // name + elevation under them from z8.5, 50 km clusters (max depth, count) at z5-8, the 10 deepest per region
+    // below z5, a "+12" chip for >= 5 cm since yesterday. Added before the resort pins so resort labels win collisions.
+    pillImages();
+    map.addSource("stn", { type: "geojson", data: fc, cluster: true, clusterRadius: 46, clusterMaxZoom: 7,
+      clusterProperties: { max: ["max", ["get", "d"]] } });
+    map.addSource("stn_top", { type: "geojson", data: fc });
+    map.addSource("stn_hi", { type: "geojson", data: fc });
+    map.addSource("pt_line", { type: "geojson", data: fc });
+    const svis = { visibility: st.over.stn ? "visible" : "none" };
+    const nameText = ["format", ["get", "nu"], { "font-scale": 0.9, "text-font": ["literal", ["Noto Sans Bold"]] }, "\n", {}, ["get", "el"], { "font-scale": 0.86, "text-color": "#8A94A6" }];
+    // the badge ("42 cm" in a depth-coloured pill) is the icon, the name + elevation the optional text: a station
+    // without room for its badge is dropped whole, a badge without room for its name keeps the badge
+    const badge = (id, src, min, max, dField, filter, text) => map.addLayer({ id, type: "symbol", source: src, minzoom: min, maxzoom: max, ...(filter ? { filter } : {}),
+      layout: { ...svis, "icon-image": badgeExpr(dField), "icon-anchor": "center", "text-field": text, "text-size": 11.5, "text-font": ["Noto Sans Regular"], "text-anchor": "top",
+        "text-offset": [0, 1.25], "text-optional": true, "text-max-width": 9, "text-letter-spacing": 0.05, "text-padding": 1, "symbol-sort-key": ["-", 2000, ["get", dField]] },
+      paint: { "text-color": "#4B5563", "text-halo-color": "#ffffff", "text-halo-width": 1.4 } });
+    badge("stn_top", "stn_top", 0, 5, "d", null, nameText);
+    badge("stn_cl", "stn", 5, 8.5, "max", ["has", "point_count"], ["concat", "× ", ["get", "point_count"]]);
+    badge("stn_badge", "stn", 5, 24, "d", ["!", ["has", "point_count"]], nameText);
+    map.setLayoutProperty("stn_badge", "text-field", ["step", ["zoom"], "", 8.5, nameText]);
+    map.addLayer({ id: "stn_new", type: "symbol", source: "stn", minzoom: 8, filter: ["all", ["!", ["has", "point_count"]], [">=", ["get", "n2"], 5]],
+      layout: { ...svis, "icon-image": "pill_new", "icon-text-fit": "both", "icon-text-fit-padding": [0, 3, 0, 3], "text-field": ["concat", "+", ["get", "n2"]], "text-font": ["Noto Sans Bold"], "text-size": 10,
+        "text-offset": [1.3, -1.5], "text-anchor": "bottom-left", "icon-allow-overlap": true, "text-allow-overlap": true, "icon-ignore-placement": true, "text-ignore-placement": true },
+      paint: { "text-color": "#ffffff" } });
+    map.addLayer({ id: "pt_line", type: "line", source: "pt_line", paint: { "line-color": "#1463F3", "line-width": 1.6, "line-dasharray": [2, 2] } });
+    map.addLayer({ id: "stn_hi", type: "circle", source: "stn_hi", paint: { "circle-radius": 20, "circle-color": "rgba(20,99,243,.12)", "circle-stroke-color": "#1463F3", "circle-stroke-width": 2.5 } });
+    for (const id of ["stn_badge", "stn_top"]) {
+      map.on("click", id, (e) => { const f = e.features && e.features[0]; if (!f) return; st.stayClick = Date.now(); stnCard(f.properties.i, false); });
+      map.on("mouseenter", id, (e) => { map.getCanvas().style.cursor = "pointer"; const f = e.features && e.features[0]; if (f && matchMedia("(hover:hover)").matches && !popupPinned) stnCard(f.properties.i, true); });
+      map.on("mouseleave", id, () => { map.getCanvas().style.cursor = ""; if (popup && popupHover) { popup.remove(); popup = null; } });
+    }
+    map.on("click", "stn_cl", (e) => { const f = e.features && e.features[0]; if (!f) return; st.stayClick = Date.now(); map.easeTo({ center: f.geometry.coordinates, zoom: Math.min(map.getZoom() + 2.5, 10), duration: 700 }); });
+    map.on("mouseenter", "stn_cl", () => { map.getCanvas().style.cursor = "pointer"; });
+    map.on("mouseleave", "stn_cl", () => { map.getCanvas().style.cursor = ""; });
     map.addSource("stays", { type: "geojson", data: fc });
     // "BOOK" chip under each resort label from zoom 10 (Stay22, dates = the selected day); collides like labels
     map.addLayer({ id: "stays", type: "symbol", source: "stays", minzoom: 10.5,
@@ -503,27 +594,97 @@
       map.on("mouseleave", id, () => { map.getCanvas().style.cursor = ""; });
     }
   }
-  // measured snow at stations: snow/stations.json rows [lat, lon, name, elev_m, depth_cm, time_utc, network, url, new_cm]
-  let stnLoad = null;
+  // ------------------------------------------------------------------ measured snow at stations
+  // snow/stations.json rows [lat, lon, name, elev_m, depth_cm, time_utc, network, url, new_cm]; stations_hist.json 14-day series
+  let stnLoad = null, histLoad = null, popupHover = false, popupPinned = false;
+  const STN_LAYERS = ["stn_top", "stn_cl", "stn_badge", "stn_new"];
   function loadStations() {
-    if (!stnLoad) stnLoad = SS.getJSON(BASE + "snow/stations.json?v=" + DATA.digest).catch(() => ({ rows: [] })).then((j) => { st.stations = j; refreshStations(); return j; });
+    if (!stnLoad) stnLoad = SS.getJSON(BASE + "snow/stations.json?v=" + DATA.digest).catch(() => ({ rows: [] })).then((j) => { st.stations = j; refreshStations(); fillMeasured(); return j; });
     return stnLoad;
   }
+  function loadHist() {
+    if (!histLoad) histLoad = SS.getJSON(BASE + "snow/stations_hist.json?v=" + DATA.digest).catch(() => ({ dates: [], rows: [] })).then((j) => { st.stnHist = j; return j; });
+    return histLoad;
+  }
+  const depthCol = (v) => "rgb(" + rampAt(depthStops(), v).join(",") + ")";
+  // badge images: "42 cm" baked into a depth-coloured pill (8 px radius, 1.2 px white rim), one image per depth value
+  // and colour scale ("b<scale>_<cm>"); the "+12" new-snow chip is a stretchable plain pill
+  const BADGES = new Set();
+  function roundRect(g, x, y, w, h, r) { g.beginPath(); g.moveTo(x + r, y); g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r); g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath(); }
+  function pillImages() {
+    if (map.hasImage("pill_new")) return;
+    const W = 72, H = 56, R = 16, c = document.createElement("canvas"); c.width = W; c.height = H; const g = c.getContext("2d");
+    g.fillStyle = "#fff"; roundRect(g, 6, 6, W - 12, H - 12, R + 2.5); g.fill(); g.fillStyle = "#1463F3"; roundRect(g, 8.5, 8.5, W - 17, H - 17, R); g.fill();
+    map.addImage("pill_new", g.getImageData(0, 0, W, H), { pixelRatio: 2, stretchX: [[R + 8, W - R - 8]], stretchY: [[R + 8, H - R - 8]], content: [10, 10, W - 10, H - 10] });
+    BADGES.clear();
+  }
+  const badgeKey = () => "b" + st.scale + "_";
+  function badgeImage(d) {
+    const id = badgeKey() + d;
+    if (BADGES.has(id) || !map) return;
+    const c = document.createElement("canvas"), g = c.getContext("2d"), txt = d + " cm";
+    g.font = "600 26px Inter, system-ui, sans-serif";
+    const tw = Math.ceil(g.measureText(txt).width), W = tw + 36, H = 50, R = 16;
+    c.width = W; c.height = H; g.font = "600 26px Inter, system-ui, sans-serif"; g.textAlign = "center"; g.textBaseline = "middle";
+    g.fillStyle = "#fff"; roundRect(g, 1, 1, W - 2, H - 2, R + 2.5); g.fill();
+    g.fillStyle = depthCol(d); roundRect(g, 3.4, 3.4, W - 6.8, H - 6.8, R); g.fill();
+    g.fillStyle = d < depthStops()[3][0] ? "#0B1220" : "#ffffff"; g.fillText(txt, W / 2, H / 2 + 1);
+    map.addImage(id, g.getImageData(0, 0, W, H), { pixelRatio: 2 });
+    BADGES.add(id);
+  }
+  const badgeExpr = (field) => ["concat", badgeKey(), ["to-string", ["get", field]]];
+  function stnRecolour() {
+    if (!ready || !map.getLayer("stn_badge") || !st.stations) return;
+    for (const r of st.stations.rows) badgeImage(r[4]);
+    for (const [id, f] of [["stn_top", "d"], ["stn_cl", "max"], ["stn_badge", "d"]]) map.setLayoutProperty(id, "icon-image", badgeExpr(f));
+  }
+  const inBox = (c, lat, lon) => lon >= c[0][0] && lon <= c[1][0] && lat <= c[0][1] && lat >= c[2][1];
   async function drawStations() {
     if (!ready || !map.getSource("stn")) return;
     const j = await loadStations();
-    map.getSource("stn").setData({ type: "FeatureCollection", features: j.rows.map((r, i) => ({ type: "Feature", geometry: { type: "Point", coordinates: [r[1], r[0]] },
-      properties: { i, n: r[2], e: r[3], d: r[4], tm: r[5], u: r[7], n2: r[8], t: r[4] + " cm" + (r[3] ? " · " + fmt(r[3]) + " m" : "") } })) });
-    for (const id of ["stn", "stn_lbl"]) map.setLayoutProperty(id, "visibility", st.over.stn ? "visible" : "none");
+    pillImages();
+    for (const r of j.rows) badgeImage(r[4]);
+    const feat = (r, i) => ({ type: "Feature", geometry: { type: "Point", coordinates: [r[1], r[0]] },
+      properties: { i, n: r[2], nu: r[2].toUpperCase(), e: r[3] || 0, el: r[3] ? fmt(r[3]) + " m" : "", d: r[4], tm: r[5], u: r[7] || "", n2: r[8] || 0 } });
+    map.getSource("stn").setData({ type: "FeatureCollection", features: j.rows.map(feat) });
+    const top = [];
+    for (const r of DATA.regions) {
+      const c = r.coords; if (!c) continue;
+      top.push(...j.rows.map((x, i) => [x, i]).filter(([x]) => inBox(c, x[0], x[1])).sort((p, q) => q[0][4] - p[0][4]).slice(0, 10).map(([x, i]) => feat(x, i)));
+    }
+    map.getSource("stn_top").setData({ type: "FeatureCollection", features: top });
+    for (const id of STN_LAYERS) if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", st.over.stn ? "visible" : "none");
     refreshStations();
   }
   const stnTime = (tm) => { const t = new Date(tm); return isNaN(t) ? "" : (tm.slice(0, 10) === DATA.today ? t.toLocaleTimeString(LOC, { hour: "2-digit", minute: "2-digit" }) : t.toLocaleDateString(LOC, { day: "numeric", month: "short" })); };
-  function stnPopup(p, lngLat) {
+  const newChip = (n) => (n >= 1 ? '<em class="nw"><span class="ms">arrow_upward</span>+' + n + "</em>" : "");
+  function sparkline(i) {        // 14-day depth of one station (from stations_hist.json)
+    const h = st.stnHist; if (!h || !h.rows[i]) return "";
+    const v = h.rows[i], W = 220, H = 44, n = v.length, max = Math.max(5, ...v.filter((x) => x != null));
+    const X = (k) => (n > 1 ? (k / (n - 1)) * (W - 8) + 4 : W / 2), Y = (x) => H - 4 - (x / max) * (H - 12);
+    let d = "", pen = false, last = null;
+    v.forEach((x, k) => { if (x == null) { pen = false; return; } d += (pen ? "L" : "M") + X(k).toFixed(1) + "," + Y(x).toFixed(1); pen = true; last = k; });
+    if (!d) return "";
+    return '<svg class="spark" viewBox="0 0 ' + W + " " + H + '" aria-hidden="true"><path d="' + d + '" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/>' +
+      (last != null ? '<circle cx="' + X(last) + '" cy="' + Y(v[last]) + '" r="3" fill="var(--ink)"/>' : "") +
+      '<text x="' + (W - 2) + '" y="10" text-anchor="end" class="lbl">' + max + " cm</text></svg>" +
+      '<div class="line" style="font-size:11.5px">' + esc(I18N.t("Last {a} days").replace("{a}", n)) + "</div>";
+  }
+  function stnCardHtml(i) {
+    const r = st.stations.rows[i];
+    return '<div class="pv stn"><span class="k">' + esc(I18N.t("Measured")) + " · " + esc(stnTime(r[5])) + '</span>' +
+      '<div class="stnhead"><i class="chip" style="background:' + depthCol(r[4]) + '"></i><b class="dep">' + r[4] + "<small>cm</small></b>" + newChip(r[8]) + "</div>" +
+      '<div class="stnname">' + esc(r[2]) + "</div>" + (r[3] ? '<div class="line light">' + fmt(r[3]) + " m</div>" : "") +
+      '<div id="stnSpark">' + sparkline(i) + "</div>" +
+      (r[7] ? '<a class="near" href="' + esc(r[7]) + '" target="_blank" rel="noopener">' + esc(I18N.t("Station page")) + "</a>" : "") + "</div>";
+  }
+  function stnCard(i, hover) {   // hover card (desktop) or pinned card (tap / table row)
+    const r = st.stations && st.stations.rows[i]; if (!r) return;
     if (popup) popup.remove();
-    popup = new LIB.Popup({ closeButton: true, maxWidth: "260px", offset: 8 }).setLngLat(lngLat).setHTML('<div class="pv"><span class="k">' + esc(I18N.t("Measured")) + " · " + esc(p.n) +
-      '</span><span class="big">' + p.d + "<small>cm</small></span>" + (p.n2 >= 1 ? '<div class="line"><em>+' + p.n2 + " " + esc(I18N.t("new")) + "</em></div>" : "") +
-      '<div class="line">' + (p.e ? fmt(p.e) + " m · " : "") + esc(stnTime(p.tm || "")) + "</div>" +
-      (p.u ? '<a href="' + esc(p.u) + '" target="_blank" rel="noopener">' + esc(I18N.t("Station page")) + "</a>" : "") + "</div>").addTo(map);
+    popupHover = !!hover; popupPinned = !hover;
+    popup = new LIB.Popup({ closeButton: !hover, closeOnClick: !hover, maxWidth: "280px", offset: 16, className: hover ? "hovercard" : "" }).setLngLat([r[1], r[0]]).setHTML(stnCardHtml(i)).addTo(map);
+    popup.on("close", () => { popupPinned = false; popupHover = false; });
+    if (!st.stnHist) loadHist().then(() => { const e = $("stnSpark"); if (e && popup) e.innerHTML = sparkline(i); });
   }
   // the stations in view as a table in the panel (desktop) / bottom sheet (phone): deepest first, a row flies there
   function stationsHtml() {
@@ -533,10 +694,14 @@
     const rows = st.stations.rows.map((r, i) => [r, i]).filter(([r]) => r[0] >= b.getSouth() && r[0] <= b.getNorth() && r[1] >= b.getWest() && r[1] <= b.getEast())
       .sort((a, c) => c[0][4] - a[0][4]);
     let h = '<div id="stnbox"><div class="sect">Measured snow in view</div>';
-    if (!rows.length) h += '<p class="none">No measuring station in this view.</p>';
-    else h += '<table class="fc stn"><thead><tr><th>Station</th><th>Elev.</th><th>Depth</th><th>New</th><th>Time</th><th></th></tr></thead><tbody>' +
-      rows.slice(0, 30).map(([r, i]) => '<tr data-stn="' + i + '"><td class="nm" title="' + esc(r[2]) + '">' + esc(r[2]) + "</td><td>" + (r[3] ? fmt(r[3]) + " m" : "–") + "</td><td><b>" + r[4] + "</b> cm</td><td>" +
-        (r[8] >= 1 ? '<em class="nw">+' + r[8] + "</em>" : "–") + "</td><td>" + esc(stnTime(r[5])) + "</td><td>" +
+    if (!rows.length) return h + '<p class="none">No measuring station in this view.</p></div>';
+    const t = rows[0][0];
+    h += '<div class="stntop"><div><div class="over">Deepest measured</div><b>' + esc(t[2]) + '</b><small>' + (t[3] ? fmt(t[3]) + " m · " : "") + esc(stnTime(t[5])) + "</small></div>" +
+      '<span class="val" data-stn="' + rows[0][1] + '"><i class="chip" style="background:' + depthCol(t[4]) + '"></i><b>' + t[4] + "<small>cm</small></b>" + newChip(t[8]) + "</span></div>" +
+      '<div class="mini" role="group" aria-label="Map layers"><button data-monly aria-pressed="' + st.monly + '"><span class="ms">sensors</span>Measured only</button></div>';
+    h += '<table class="fc stn"><thead><tr><th>Station</th><th>Elev.</th><th>Depth</th><th>New</th><th>Time</th><th></th></tr></thead><tbody>' +
+      rows.slice(0, 30).map(([r, i]) => '<tr data-stn="' + i + '"><td class="nm" title="' + esc(r[2]) + '"><i class="chip" style="background:' + depthCol(r[4]) + '"></i>' + esc(r[2]) + "</td><td>" + (r[3] ? fmt(r[3]) + " m" : "–") + "</td><td><b>" + r[4] + "</b> cm</td><td>" +
+        (newChip(r[8]) || "–") + "</td><td>" + esc(stnTime(r[5])) + "</td><td>" +
         (r[7] ? '<a href="' + esc(r[7]) + '" target="_blank" rel="noopener" title="Station page" data-stop><span class="ms">open_in_new</span></a>' : "") + "</td></tr>").join("") +
       "</tbody></table>" + (rows.length > 30 ? '<p class="none">' + esc(I18N.t("Showing the 30 deepest of {a} stations in view").replace("{a}", rows.length)) + "</p>" : "");
     return h + "</div>";
@@ -547,9 +712,12 @@
       const r = st.stations.rows[+tr.dataset.stn]; if (!r) return;
       st.stayClick = Date.now();
       map.flyTo({ center: [r[1], r[0]], zoom: Math.max(map.getZoom(), 11), duration: 900 });
-      stnPopup({ n: r[2], e: r[3], d: r[4], tm: r[5], u: r[7], n2: r[8] }, [r[1], r[0]]);
+      stnCard(+tr.dataset.stn, false);
       if (innerWidth <= 760) setSheet("peek");
     }; });
+    box.querySelectorAll("[data-stnfly]").forEach((el) => { el.onclick = () => { const r = st.stations.rows[+el.dataset.stnfly]; if (!r) return; map.flyTo({ center: [r[1], r[0]], zoom: Math.max(map.getZoom(), 11), duration: 900 }); stnCard(+el.dataset.stnfly, false); }; });
+    const mo = box.querySelector("[data-monly]");
+    if (mo) mo.onclick = () => { st.monly = !st.monly; store.set("ss_monly", st.monly ? 1 : 0); mo.setAttribute("aria-pressed", st.monly); renderMain(); };
   }
   function refreshStations() {           // on map move: only the table section is rewritten (no panel flicker)
     const box = $("stnbox");
@@ -558,6 +726,53 @@
     if (!h) { box.remove(); return; }
     box.outerHTML = h;
     bindStations($("pbody"));
+  }
+  // nearest measuring station to a modelled value: within 25 km and 36 h; when two are within 5 km of each other the one
+  // in the same elevation band (± 400 m) wins
+  const kmLL = (a1, o1, a2, o2) => { const q = Math.sin((a2 - a1) * Math.PI / 360) ** 2 + Math.cos(a1 * Math.PI / 180) * Math.cos(a2 * Math.PI / 180) * Math.sin((o2 - o1) * Math.PI / 360) ** 2; return 12742 * Math.asin(Math.sqrt(q)); };
+  function nearestStation(lat, lon, refElev) {
+    if (!st.stations) return undefined;
+    const fresh = Date.now() - 36 * 3600e3, c = [];
+    st.stations.rows.forEach((r, i) => {
+      if (Math.abs(r[0] - lat) > 0.25 || Math.abs(r[1] - lon) > 0.4) return;
+      const t = Date.parse(r[5]); if (isNaN(t) || t < fresh) return;
+      const km = kmLL(lat, lon, r[0], r[1]); if (km <= 25) c.push({ r, i, km });
+    });
+    if (!c.length) return null;
+    c.sort((a, b) => a.km - b.km);
+    let best = c[0];
+    if (refElev != null && c.length > 1 && c[1].km - c[0].km <= 5 && c[0].r[3] && c[1].r[3] && Math.abs(c[0].r[3] - refElev) > 400 && Math.abs(c[1].r[3] - refElev) <= 400) best = c[1];
+    return best;
+  }
+  const kmText = (km) => (km < 10 ? km.toFixed(1) : String(Math.round(km))) + " km away";
+  function measuredHtml(lat, lon, refElev, short) {
+    const n = nearestStation(lat, lon, refElev);
+    if (n === undefined) return '<p class="measured" data-measured="' + lat + "," + lon + "," + (refElev == null ? "" : refElev) + "," + (short ? 1 : 0) + '"></p>';
+    if (!n) return '<p class="measured none">' + esc(I18N.t("No measurement within 25 km")) + "</p>";
+    const r = n.r, dE = refElev != null && r[3] ? Math.round((r[3] - refElev) / 10) * 10 : null;
+    return '<p class="measured" data-stnfly="' + n.i + '"><span class="k">Measured nearby</span> <i class="chip" style="background:' + depthCol(r[4]) + '"></i><b>' + esc(r[2]) + " " + r[4] + " cm</b>" +
+      (short ? " · " + kmText(n.km) : " · " + (r[3] ? fmt(r[3]) + " m · " : "") + kmText(n.km) + " · " + esc(stnTime(r[5])) +
+        (dE != null && Math.abs(dE) >= 50 ? " · " + esc(I18N.t(dE > 0 ? "{a} m higher" : "{a} m lower").replace("{a}", fmt(Math.abs(dE)))) : "")) + "</p>";
+  }
+  function fillMeasured() {              // placeholders written before stations.json had arrived
+    document.querySelectorAll("[data-measured]").forEach((el) => { const [la, lo, e, sh] = el.dataset.measured.split(","); el.outerHTML = measuredHtml(+la, +lo, e === "" ? null : +e, sh === "1"); });
+    bindStations($("pbody"));
+  }
+  function showMeasuredLink(pt, n) {     // tapped point -> dashed line to its nearest station + highlighted badge
+    if (!map || !map.getSource("pt_line")) return;
+    const r = n && n.r;
+    map.getSource("pt_line").setData(r ? { type: "Feature", geometry: { type: "LineString", coordinates: [[pt.lon, pt.lat], [r[1], r[0]]] } } : { type: "FeatureCollection", features: [] });
+    map.getSource("stn_hi").setData(r ? { type: "Feature", geometry: { type: "Point", coordinates: [r[1], r[0]] } } : { type: "FeatureCollection", features: [] });
+  }
+  const DEMC = new Map();
+  async function elevAt(lat, lon) {      // ground height from the relief tiles (one 256 px tile, cached)
+    const z = 11, n = 2 ** z, x = Math.floor((lon + 180) / 360 * n), yf = (1 - Math.log(Math.tan(lat * Math.PI / 180) + 1 / Math.cos(lat * Math.PI / 180)) / Math.PI) / 2 * n, y = Math.floor(yf), key = x + "/" + y;
+    if (!DEMC.has(key)) DEMC.set(key, new Promise((ok) => { const im = new Image(); im.crossOrigin = "anonymous";
+      im.onload = () => { const c = document.createElement("canvas"); c.width = c.height = 256; const g = c.getContext("2d"); g.drawImage(im, 0, 0); ok(g.getImageData(0, 0, 256, 256).data); };
+      im.onerror = () => ok(null); im.src = DEM.tiles[0].replace("{z}", z).replace("{x}", x).replace("{y}", y); }));
+    const d = await DEMC.get(key); if (!d) return null;
+    const px = Math.min(255, Math.floor(((lon + 180) / 360 * n - x) * 256)), py = Math.min(255, Math.floor((yf - y) * 256)), i = (py * 256 + px) * 4;
+    return Math.round(d[i] * 256 + d[i + 1] + d[i + 2] / 256 - 32768);
   }
   async function drawBest() {
     if (!ready || !map.getSource("best")) return;
@@ -792,8 +1007,30 @@
     st.main = id;
     if (id === "powder" && !st.pro && st.day !== DATA.today) st.day = DATA.today;
     if (id !== "powder") st.p72 = false;
+    if (id !== "wind" && id !== "freeze") st.hour = null;
     drawDays(); drawLegend(); renderMain();
+    if (window.SSX) SSX.refresh();
   }
+  // one switch for every layer, used by the layers sheet, the layer rail (expert.js) and the keyboard
+  function toggleOver(id) {
+    if (["wind", "freeze", "p72"].includes(id) && !st.pro) { SS.upsell({ wind: "Wind", freeze: "Freezing level", p72: "3-day snow" }[id] + " is in Pro"); return false; }
+    if (["wind", "freeze"].includes(id) && !proLive()) { toast("Pro data is updating, try again in a minute."); return false; }
+    if (id === "radar" && st.radar === false) { toast("Radar is not available right now"); return false; }
+    if (["depth", "powder", "sat", "wind", "freeze", "radar"].includes(id)) { setMain(st.main === id && id !== "depth" ? "depth" : id); return true; }
+    if (id === "p72") { st.p72 = !st.p72; if (st.p72) st.main = "powder"; renderMain(); drawLegend(); drawDays(); }
+    else if (id === "terrain") { st.terrain = !st.terrain; store.set("ss_terrain", st.terrain); applyTerrain(); const b = $("btn3d"); if (b) b.setAttribute("aria-pressed", st.terrain); }
+    else if (id in st.over) {
+      st.over[id] = !st.over[id];
+      if (id === "pins") drawPins();
+      else if (id === "stays") { store.set("ss_stays", st.over.stays ? 1 : 0); drawStays(); }
+      else if (id === "stn") { store.set("ss_stn", st.over.stn ? 1 : 0); if (typeof drawStations === "function") drawStations(); if (!st.slug && st.tab === "map" && !st.point) renderPanel(); }
+      else applyOverlays();
+      drawLegend();
+    } else return false;
+    if (window.SSX) SSX.refresh();
+    return true;
+  }
+  const overOn = (id) => (["depth", "powder", "sat", "wind", "freeze", "radar"].includes(id) ? st.main === id : id === "p72" ? st.p72 : id === "terrain" ? st.terrain : !!st.over[id]);
   function applyTerrain() {
     if (st.terrain) { ensureDem(); map.setTerrain({ source: "dem", exaggeration: 1.5 }); map.easeTo({ pitch: 60, duration: 900 }); }
     else { map.setTerrain(null); map.easeTo({ pitch: 0, duration: 600 }); }
@@ -1004,19 +1241,20 @@
   async function powderView() {
     const res = await RES.catch(() => null);
     if (!res) return '<p class="msg">Resorts are loading…</p>';
+    await loadStations();
     const ti = res.dates.indexOf(DATA.today), k = st.p72 ? 2 : 1, o = st.origin, R = st.ski.radius;
     const rows = res.rows.filter((x) => x.snow[ti] && x.snow[ti][k] >= 1 && (!o || !R || kmTo(o, x) <= R)).sort((a, b) => b.snow[ti][k] - a.snow[ti][k]).slice(0, 25);
     let h = '<div class="over">Powder</div><h1>' + (rows.length ? (o ? "Powder near you" : "Fresh snow today") : (o ? "No fresh snow near you" : "No fresh snow today")) + "</h1>" + originBar(res) +
       '<div class="filters"><div class="seg2" role="group"><button data-p72="0" aria-pressed="' + !st.p72 + '">24 hours</button><button data-p72="1" aria-pressed="' + st.p72 + '">3 days' + (st.pro ? "" : ' <span class="ms f" style="font-size:14px">lock</span>') + "</button></div>" +
       '<button class="btn tonal" data-showpowder><span class="ms">map</span>Show on the map</button></div>';
     h += rows.length ? rows.map((x, i) => '<a class="rrow" href="' + BASE + "resorts/" + encodeURIComponent(x.slug) + '.html" data-open="' + esc(x.slug) + '"><span class="rk">' + (i + 1) + '</span><span class="nm"><b>' + esc(x.short) + "</b><small>" + esc([NAMES[x.dom] || "", x.country].filter(Boolean).join(" · ")) +
-      (o ? " · " + Math.round(kmTo(o, x)) + " km" : "") + '</small></span><span class="val"><b style="color:var(--accent-ink)">+' + x.snow[ti][k] + "<small>cm</small></b><em style=\"color:var(--ink3)\">" + (x.snow[ti][0] || 0) + " cm deep</em></span></a>" +
+      (o ? " · " + Math.round(kmTo(o, x)) + " km" : "") + '</small>' + measuredHtml(x.lat, x.lon, x.top_m || null, true) + '</span><span class="val"><b style="color:var(--accent-ink)">+' + x.snow[ti][k] + "<small>cm</small></b><em style=\"color:var(--ink3)\">" + (x.snow[ti][0] || 0) + " cm deep</em></span></a>" +
       '<div class="acts3 slim"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a><button class="btn tonal" data-share="' + esc(x.slug) + '" data-sd="' + DATA.today + '"><span class="ms">share</span>Share</button></div>').join("")
       : '<p class="none">Nothing over 1 cm in the last ' + (st.p72 ? "3 days" : "24 hours") + ". Check tomorrow.</p>";
     if (rows.length) h += '<button class="btn ghost" data-propost="powder" style="margin-top:10px"><span class="ms">add_photo_alternate</span>Create post' + (st.pro ? "" : ' <span class="pro">PRO</span>') + "</button>";
     const storms = DATA.storms || [];
     h += '<div class="sect">Snow storms</div>' + (storms.length ? storms.map((x, i) => '<div class="rrow"><span class="nm"><b>' + esc(x.place || NAMES[x.region] || x.region) + "</b><small>" +
-      esc((x.date === DATA.today ? "Today" : wd(x.date) + " " + dnum(x.date)) + " · " + (NAMES[x.region] || "")) + '</small></span><span class="val"><b style="color:var(--accent-ink)">+' + x.cm + "<small>cm</small></b><em style=\"color:var(--ink3)\">" + (x.hours === 72 ? "in 3 days" : "in 24 hours") +
+      esc((x.date === DATA.today ? "Today" : wd(x.date) + " " + dnum(x.date)) + " · " + (NAMES[x.region] || "")) + '</small>' + measuredHtml(x.lat, x.lon, null, true) + '</span><span class="val"><b style="color:var(--accent-ink)">+' + x.cm + "<small>cm</small></b><em style=\"color:var(--ink3)\">" + (x.hours === 72 ? "in 3 days" : "in 24 hours") +
       '</em></span><button class="btn icon" data-storm="' + i + '" aria-label="Create post image"><span class="ms">add_photo_alternate</span></button></div>').join("")
       : '<p class="none">No snow storm right now (20 cm or more).</p>');
     h += '<button class="btn ghost" data-viewpost style="margin-top:10px"><span class="ms">photo_camera</span>Post of this map view</button>';
@@ -1092,6 +1330,7 @@
   }
   function closePoint() {
     st.point = null;
+    showMeasuredLink(null, null);
     if (map && map.getSource("pt")) map.getSource("pt").setData({ type: "FeatureCollection", features: [] });
     history.replaceState(null, "", BASE + "#" + slugOf(st.region));
     renderPanel();
@@ -1105,12 +1344,19 @@
     if (st.point !== pt) return;
     const today = days.find((d) => d.date === DATA.today) || {};
     const n = await nearest(ll);
+    await loadStations();
+    const elev = await elevAt(pt.lat, pt.lon).catch(() => null);
+    if (st.point !== pt) return;
+    const ns = nearestStation(pt.lat, pt.lon, elev);
+    showMeasuredLink(pt, ns);
     box.innerHTML = '<button class="back" data-back><span class="ms">arrow_back</span>' + esc(r ? r.name : "Back") + "</button>" +
       '<div class="over">Snow here</div><h1>' + (n ? "Near " + esc(n[0].short) : esc(r ? r.name : "This spot")) + '</h1><p class="lede" id="ptMeta">' +
-      pt.lat.toFixed(3) + ", " + pt.lon.toFixed(3) + "</p>" +
+      (elev != null ? fmt(elev) + " m · " : "") + pt.lat.toFixed(3) + ", " + pt.lon.toFixed(3) + "</p>" +
       '<div class="hero2"><div class="card"><div class="over">Snow today</div><b class="n">' + (today.dep == null ? "–" : today.dep >= 1 ? today.dep + "<small>cm</small>" : "0<small>cm</small>") + "</b></div>" +
       '<div class="card"><div class="over">New snow</div>' + (today.nw >= 1 ? '<b class="n acc">+' + today.nw + "<small>cm</small></b>" : '<b class="n">–</b>') + "</div></div>" +
+      measuredHtml(pt.lat, pt.lon, elev, false) +
       '<p id="ptVerdict" style="font-weight:620;margin:4px 0 10px"></p>' +
+      (window.SSX ? '<div class="sect">Hour by hour</div><div id="ptMeteo"><div class="skel" style="height:230px"></div></div>' : "") +
       '<div class="sect">This season and the next days</div><div id="ptChart"><div class="skel" style="height:190px"></div></div>' +
       '<div class="acts3" style="margin-top:12px"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + pt.lat + "," + pt.lon + '"><span class="ms">directions_car</span>Directions</a>' +
       '<button class="btn tonal" data-sharept><span class="ms">share</span>Share</button>' +
@@ -1119,6 +1365,7 @@
     box.querySelector("[data-back]").onclick = closePoint;
     box.querySelector("[data-sharept]").onclick = () => sharePoint(pt, n, today);
     afterRender();
+    if (window.SSX) SSX.meteogram(pt, days, r);
     pointChart(pt, days);
   }
   async function pointChart(pt, days) {
@@ -1186,7 +1433,8 @@
     if (window.SSPost) {
       toast("Preparing the image…", 3000);
       const snap = await shot3d(pt.lat, pt.lon);
-      window.SSPost.open({ big: today.dep != null ? today.dep + " cm" : "–", big2: today.nw ? "+" + today.nw + " cm" : "", sub: "Snow on the ground",
+      const ms = nearestStation(pt.lat, pt.lon, null);
+      window.SSPost.open({ big: today.dep != null ? today.dep + " cm" : "–", big2: today.nw ? "+" + today.nw + " cm" : "", sub: "Snow on the ground" + (ms ? " · " + I18N.t("Measured nearby") + ": " + ms.r[2] + " " + ms.r[4] + " cm" : ""),
         place: n ? "Near " + n[0].short : "", date: longDay(st.day), snapshot: snap, file: "snowscope-spot", url });
       return;
     }
@@ -1325,6 +1573,7 @@
   async function resortView(slug) {
     const box = $("pbody");
     const res = await RES.catch(() => null);
+    await loadStations();
     const x = res && BY[slug];
     if (!x) { box.innerHTML = '<button class="back" data-back><span class="ms">arrow_back</span>Back</button><p class="msg">This resort could not be loaded.</p>'; box.querySelector("[data-back]").onclick = () => closeResort(); return; }
     document.title = x.short + " snow depth today · SnowScope";
@@ -1337,6 +1586,7 @@
       (x.base_m && x.top_m ? (x.name !== x.short ? " · " : "") + fmt(x.base_m) + "–" + fmt(x.top_m) + " m" : "") + "</p>" +
       '<div class="hero2"><div class="card"><div class="over">Upper slopes today</div><b class="n">' + (d0 == null ? "–" : d0 + "<small>cm</small>") + '</b><small class="none">' + verdict + "</small></div>" +
       '<div class="card"><div class="over">New snow</div>' + (n0 >= 1 ? '<b class="n acc">+' + n0 + "<small>cm</small></b><small class=\"none\">in 24 hours</small>" : '<b class="n">–</b><small class="none">No new snow in 24 h</small>') + "</div></div>" +
+      measuredHtml(x.lat, x.lon, x.top_m || null, false) +
       '<div class="sect">Snow depth on the upper slopes, cm</div><div id="rDays"></div>' +
       adSlot("resort", x) +
       '<div class="sect">This season vs past winters</div><div id="rHist"></div>' +
@@ -1453,7 +1703,12 @@
   st.ski.region = st.region;
   initialSlug = document.body.dataset.slug || null;
   window.SSApp = { open: (slug) => openResort(slug) };
+  // bridge for the expert chrome (expert.js: layer rail, timeline scrub, hour steps, meteogram, keyboard, theme)
+  window.SSApp.x = { st, data: () => DATA, map: () => map, setMain, setDay, toggleOver, overOn, layersSheet, play, isPlaying: () => !!playT, scrub, settle, radarFrame,
+    isStatic, dayLocked, proLive, addDays, wd, dnum, longDay, D, fmt, toast, codeAt, regionAt, decDepth, renderMain, drawLegend, openPoint, closePoint,
+    has: (id) => id === "stn" ? typeof drawStations === "function" : true, LOC, DEPTH, NEW, rampAt };
   drawRegions(); drawDays(); drawLegend(); setupSheet(); setupTabs();
+  if (window.SSX) SSX.init(window.SSApp.x);
   $("layersBtn").onclick = layersSheet;
   $("btn3d").onclick = () => { st.terrain = !st.terrain; store.set("ss_terrain", st.terrain); $("btn3d").setAttribute("aria-pressed", st.terrain); applyTerrain(); };
   $("btn3d").setAttribute("aria-pressed", st.terrain);
@@ -1468,7 +1723,7 @@
   map = new LIB.Map({ container: "map", style: styleUrl(), center: R0.center, zoom: 5, minZoom: 2, attributionControl: { compact: true },
     transformRequest: (url) => SS.transformRequest(url), preserveDrawingBuffer: true, maxPitch: 75, dragRotate: true, pitchWithRotate: true });
   window.SSApp.map = map;
-  map.addControl(new LIB.NavigationControl({ showCompass: true, visualizePitch: true }), "top-right");
+  map.addControl(new LIB.NavigationControl({ showCompass: true, visualizePitch: true }), "bottom-right");   // the layer rail owns the top-right
   map.on("style.load", onStyle);
   map.on("load", () => {
     const r = initialSlug && BY[initialSlug];
