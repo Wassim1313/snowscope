@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://seminars-fortune-closely-gifts.trycloudflare.com";
+window.SNOWSCOPE_API = "https://certainly-yet-attended-neutral.trycloudflare.com";
