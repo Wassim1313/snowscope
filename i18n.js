@@ -9,6 +9,30 @@
   const LOCALE = { en: "en-GB", fr: "fr-FR", de: "de-DE", it: "it-IT", es: "es-ES", ar: "ar-MA" };
   // columns: fr, de, it, es, ar
   const T = {
+    "Where to ski tomorrow": ["Où skier demain", "Wo morgen Ski fahren", "Dove sciare domani", "Dónde esquiar mañana", "أين تتزلج غدًا"],
+    "Tomorrow": ["Demain", "Morgen", "Domani", "Mañana", "غدًا"],
+    "City or resort": ["Ville ou station", "Stadt oder Skigebiet", "Città o stazione", "Ciudad o estación", "مدينة أو محطة"],
+    "Use my location": ["Utiliser ma position", "Meinen Standort nutzen", "Usa la mia posizione", "Usar mi ubicación", "استخدم موقعي"],
+    "Anywhere": ["Partout", "Überall", "Ovunque", "En cualquier lugar", "في أي مكان"],
+    "Any snow": ["Toute neige", "Jeder Schnee", "Qualsiasi neve", "Cualquier nieve", "أي ثلج"],
+    "Fresh snow only": ["Neige fraîche seulement", "Nur Neuschnee", "Solo neve fresca", "Solo nieve nueva", "الثلج الجديد فقط"],
+    "Around you": ["Autour de vous", "In deiner Nähe", "Intorno a te", "A tu alrededor", "حولك"],
+    "Powder near you": ["Poudreuse près de vous", "Pulverschnee in deiner Nähe", "Neve fresca vicino a te", "Nieve polvo cerca de ti", "ثلج طازج بالقرب منك"],
+    "No fresh snow near you": ["Pas de neige fraîche près de vous", "Kein Neuschnee in deiner Nähe", "Niente neve fresca vicino a te", "Sin nieve nueva cerca de ti", "لا ثلج جديد بالقرب منك"],
+    "upper slopes": ["haut des pistes", "oben am Berg", "alta quota", "cotas altas", "المنحدرات العليا"],
+    "new, 24 h": ["fraîche, 24 h", "neu, 24 h", "fresca, 24 h", "nueva, 24 h", "جديد، 24 ساعة"],
+    "new, 3 days": ["fraîche, 3 jours", "neu, 3 Tage", "fresca, 3 giorni", "nueva, 3 días", "جديد، 3 أيام"],
+    "Best day:": ["Meilleur jour :", "Bester Tag:", "Giorno migliore:", "Mejor día:", "أفضل يوم:"],
+    "Directions": ["Itinéraire", "Route", "Indicazioni", "Cómo llegar", "الاتجاهات"],
+    "Details": ["Détails", "Details", "Dettagli", "Detalles", "التفاصيل"],
+    "Share with friends": ["Partager avec des amis", "Mit Freunden teilen", "Condividi con gli amici", "Compartir con amigos", "شارك مع الأصدقاء"],
+    "Copy link": ["Copier le lien", "Link kopieren", "Copia il link", "Copiar enlace", "انسخ الرابط"],
+    "on the upper slopes": ["en haut des pistes", "oben am Berg", "in alta quota", "en cotas altas", "في المنحدرات العليا"],
+    "new": ["de fraîche", "neu", "di fresca", "nueva", "جديد"],
+    "snow report": ["bulletin neige", "Schneebericht", "bollettino neve", "parte de nieve", "تقرير الثلج"],
+    "Powder day: lots of fresh snow.": ["Jour de poudreuse : beaucoup de neige fraîche.", "Powdertag: viel Neuschnee.", "Giornata di neve fresca: tanta neve nuova.", "Día de nieve polvo: mucha nieve nueva.", "يوم ثلج طازج: ثلج جديد كثير."],
+    "Fresh snow in the last days.": ["De la neige fraîche ces derniers jours.", "Neuschnee in den letzten Tagen.", "Neve fresca negli ultimi giorni.", "Nieve nueva en los últimos días.", "ثلج جديد في الأيام الأخيرة."],
+    "This day is further than the free days.": ["Ce jour dépasse les jours gratuits.", "Dieser Tag liegt nach den Gratis-Tagen.", "Questo giorno è oltre i giorni gratuiti.", "Este día queda fuera de los días gratis.", "هذا اليوم خارج الأيام المجانية."],
     "Snow storms": ["Tempêtes de neige", "Schneestürme", "Bufere di neve", "Temporales de nieve", "عواصف ثلجية"],
     "Create post": ["Créer une publication", "Beitrag erstellen", "Crea un post", "Crear publicación", "أنشئ منشورًا"],
     "Create post image": ["Créer une image", "Bild erstellen", "Crea un'immagine", "Crear imagen", "أنشئ صورة"],
@@ -189,6 +213,12 @@
   };
   // patterns: {a} {b} are kept (numbers, names); a captured value found in T is translated too
   const P = {
+    "Around {a}": ["Autour de {a}", "Rund um {a}", "Intorno a {a}", "Alrededor de {a}", "حول {a}"],
+    "In {a}": ["{a}", "{a}", "{a}", "{a}", "{a}"],
+    "within {a} km": ["à {a} km", "bis {a} km", "entro {a} km", "a {a} km", "ضمن {a} كم"],
+    "{a} km away": ["à {a} km", "{a} km entfernt", "a {a} km", "a {a} km", "على بعد {a} كم"],
+    "{a} resorts": ["{a} stations", "{a} Skigebiete", "{a} stazioni", "{a} estaciones", "{a} محطة"],
+    "top {a} m": ["sommet {a} m", "Gipfel {a} m", "vetta {a} m", "cima {a} m", "القمة {a} م"],
     "Fresh snow in {a}: up to +{b} cm": ["Neige fraîche – {a} : jusqu'à +{b} cm", "Neuschnee – {a}: bis +{b} cm", "Neve fresca – {a}: fino a +{b} cm", "Nieve nueva – {a}: hasta +{b} cm", "ثلج جديد في {a}: حتى ‎+{b}‎ سم"],
     "Snow at {a} resorts in {b} today": ["{b} : neige dans {a} stations aujourd'hui", "{b}: heute Schnee in {a} Skigebieten", "{b}: neve oggi in {a} stazioni", "{b}: nieve hoy en {a} estaciones", "{b}: ثلج اليوم في {a} محطة"],
     "Snow at {a} resorts in {b}": ["{b} : neige dans {a} stations", "{b}: Schnee in {a} Skigebieten", "{b}: neve in {a} stazioni", "{b}: nieve en {a} estaciones", "{b}: ثلج في {a} محطة"],

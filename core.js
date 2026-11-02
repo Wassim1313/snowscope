@@ -303,7 +303,9 @@
     const m = modal(head('<span class="pro"><span class="ms f">lock</span>PRO</span>') +
       '<p style="font-size:17px;font-weight:620;margin:6px 0 4px">' + esc(what || "This is a Pro feature") + "</p>" +
       '<p style="color:var(--ink2);margin:0 0 14px">SnowScope Pro adds the sharper snow map, 15 days instead of 5, new snow, wind, freezing level, satellite snow and the 7-day resort forecast, without ads. Get it in the Android app, then sign in here with the same account.</p>' +
-      '<a class="btn ski big full" href="' + esc(appUrl()) + '"><span class="ms f">downhill_skiing</span>Get Pro in the Android app</a>' +
+      (window.SSPay && SSPay.enabled() ? '<button class="btn ski big full" data-buy-pro><span class="ms f">workspace_premium</span>Get Pro</button>' +
+        '<a class="btn ghost big full" style="margin-top:8px" href="' + esc(appUrl()) + '"><span class="ms f">downhill_skiing</span>Get the Android app</a>'
+        : '<a class="btn ski big full" href="' + esc(appUrl()) + '"><span class="ms f">downhill_skiing</span>Get Pro in the Android app</a>') +
       (fbEnabled() && !S.user ? '<button class="btn ghost big full" style="margin-top:8px" data-signin>Already Pro? Sign in</button>' : "") +
       (S.user && S.state === "no_account" ? '<p class="msg">Open the app once and sign in with this account, then come back.</p>' : "") +
       (S.user && S.state === "api_down" ? '<p class="msg">Pro data is updating, try again in a minute.</p>' : ""));
@@ -438,6 +440,8 @@
       document.head.appendChild(b);
     }
     setupFind();
+    // web payments (Paddle overlay checkout, paddle.js): only when the owner config has a client-side token
+    if (S.cfg.paddle && S.cfg.paddle.client_token) loadScript(ROOT + "paddle.js").catch(() => {});
     document.querySelectorAll("[data-app-link]").forEach((a) => { a.href = appUrl(); });
     // a visitor who was Pro last time: wait (max 4 s) for the sign-in check before any ad loads
     const c = store.get("ss_ent");
@@ -453,6 +457,6 @@
     return S;
   }
 
-  window.SS = { S, start, api, ensureAuth, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
+  window.SS = { S, start, api, refreshMe, ensureAuth, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
                 resorts, mapLib, transformRequest, onChange: (f) => S.listeners.push(f), store, ROOT };
 })();

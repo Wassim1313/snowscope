@@ -29,7 +29,8 @@
   const st = { day: null, main: "depth", p72: false, over: { pistes: false, aval: false, pins: true }, scale: get("ss_scale", 100),
     sharp: !!get("ss_sharp", false), style: get("ss_style", "outdoors"), terrain: !!get("ss_terrain", false), tab: "map", slug: null,
     region: null, pro: false, proIdx: null, proDates: null, gen: 0, fields: {}, pistes: { idx: null, loaded: new Set(), feats: [] },
-    aval: null, radar: undefined, sheet: "peek", pushed: false, ski: { region: null, country: "", when: "today" } };
+    aval: null, radar: undefined, sheet: "peek", pushed: false, ski: { region: null, country: "", when: "today", radius: get("ss_radius", 200), min: 0, fresh: false, q: "" },
+    origin: get("ss_origin", null) };
   let DATA, RES, BY = {}, map, LIB, ML, popup, toastT, ready = false, initialSlug = null;
 
   function toast(t, ms = 3200) { const e = $("toast"); e.textContent = t; e.hidden = !t; clearTimeout(toastT); if (t) toastT = setTimeout(() => { e.hidden = true; }, ms); }
@@ -657,6 +658,7 @@
     const c = (SS.S.cfg && SS.S.cfg.contact) || {};
     return '<nav class="flinks"><a href="' + BASE + 'resorts/">All resorts</a><a href="' + BASE + 'sources.html">About &amp; sources</a>' +
       (SS.Auth.enabled() ? '<a href="' + BASE + 'account.html">Your account</a>' : "") + '<a href="' + BASE + 'privacy/">Privacy</a><a href="' + BASE + 'terms/">Terms</a>' +
+      (window.SSPay && SSPay.enabled() ? '<a href="' + BASE + 'refund.html">Refunds</a>' : "") +
       (c.support ? '<a href="mailto:' + esc(c.support) + '">Help</a>' : "") + '<a href="#" data-ad-choices hidden>Cookie settings</a>' +
       '<span>Hotel links marked “Partner” may earn us a commission. © 2026 SnowScope · Atlas Labs</span></nav>';
   };
@@ -689,37 +691,103 @@
   function appCard() {
     return '<a class="teaser" href="' + esc(SS.appUrl()) + '" style="margin-top:18px"><span class="ic" style="background:linear-gradient(160deg,#3B8BFF,#1463F3)"><span class="ms f">android</span></span><span><b>Every slope, every day</b><small>The sharpest snow map, powder alerts and Peak finder in the app.</small></span></a>';
   }
+  // ------------------------------------------------------------------ recommender (Where to ski / Powder near you)
+  const RADII = [50, 100, 200, 400, 0];
+  const kmTo = (o, x) => Math.hypot((x.lon - o.lon) * Math.cos(o.lat * Math.PI / 180), x.lat - o.lat) * 111.2;
+  const dayIdx = (res, when) => {
+    if (when === "tomorrow") return res.dates.indexOf(addDays(DATA.today, 1));
+    if (when === "weekend") { for (let k = 0; k < 7; k++) { const d = addDays(DATA.today, k); if (D(d).getUTCDay() === 6) return res.dates.indexOf(d); } return -1; }
+    return res.dates.indexOf(DATA.today);
+  };
+  function setOrigin(o) { st.origin = o; store.set("ss_origin", o); renderPanel(); if (map && o) map.flyTo({ center: [o.lon, o.lat], zoom: o.zoom || 8, duration: 1200 }); }
+  function locate(quiet) {
+    if (!("geolocation" in navigator)) { if (!quiet) toast("Location not available"); return; }
+    navigator.geolocation.getCurrentPosition((p) => setOrigin({ lat: +p.coords.latitude.toFixed(3), lon: +p.coords.longitude.toFixed(3), label: "Near me", me: true }),
+      () => { st.geoDenied = true; if (!quiet) toast("Location not available"); renderPanel(); }, { maximumAge: 6e5, timeout: 10000 });
+  }
+  function verdictOf(dep, n24, n72) {
+    if (n24 >= 20) return "Powder day: lots of fresh snow.";
+    if (n72 >= 20) return "Fresh snow in the last days.";
+    if (dep >= 100) return "Deep snow.";
+    if (dep >= 40) return "Good snow cover.";
+    if (dep >= 10) return "Some snow.";
+    return dep >= 1 ? "A thin layer." : "No snow yet.";
+  }
+  function bestDay(res, x) {
+    let b = null;
+    res.dates.forEach((d, i) => { if (d < DATA.today) return; const s = x.snow[i] || []; const v = (s[1] || 0) * 3 + (s[0] || 0); if (s[0] != null && (!b || v > b[1])) b = [d, v]; });
+    return b ? (b[0] === DATA.today ? "Today" : wd(b[0]) + " " + dnum(b[0])) : "";
+  }
+  function card(res, x, i, ti, dist) {
+    const s = x.snow[ti] || [], n72 = (x.snow[res.dates.indexOf(DATA.today)] || [])[2];
+    return '<article class="card reco"><div class="rh"><span class="rk">' + (i + 1) + '</span><span class="nm"><b>' + esc(x.short) + "</b><small>" +
+      esc([x.country, dist != null ? Math.round(dist) + " km away" : "", x.top_m ? "top " + fmt(x.top_m) + " m" : ""].filter(Boolean).join(" · ")) + "</small></span></div>" +
+      '<p class="verdict">' + verdictOf(s[0] || 0, s[1] || 0, n72 || 0) + "</p>" +
+      '<div class="stats"><div class="stat"><b>' + (s[0] != null ? s[0] + "<small>cm</small>" : "–") + "</b><small>upper slopes</small></div>" +
+      '<div class="stat"><b>' + (s[1] ? "+" + s[1] + "<small>cm</small>" : "–") + "</b><small>new, 24 h</small></div>" +
+      '<div class="stat"><b>' + (n72 ? "+" + n72 + "<small>cm</small>" : "–") + "</b><small>new, 3 days</small></div></div>" +
+      (bestDay(res, x) ? '<p class="none" style="padding:0 0 8px">Best day: <b style="color:var(--ink)">' + bestDay(res, x) + "</b></p>" : "") +
+      '<div class="acts3"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a>' +
+      '<button class="btn tonal" data-open="' + esc(x.slug) + '"><span class="ms">info</span>Details</button>' +
+      '<button class="btn ink" data-share="' + esc(x.slug) + '" data-sd="' + (res.dates[ti] || DATA.today) + '"><span class="ms">share</span>Share</button></div></article>';
+  }
+  function originBar(res) {
+    const o = st.origin, S2 = st.ski;
+    return '<div class="origin"><span class="ms">' + (o && o.me ? "near_me" : "location_on") + '</span><div class="find2"><input id="skiQ" type="search" autocomplete="off" placeholder="City or resort" aria-label="City or resort" value="' +
+      esc(o && !o.me ? o.label : "") + '"><ul id="skiQl" hidden></ul></div><button class="btn tonal" data-locate><span class="ms">my_location</span>' + (o && o.me ? "Near me" : "Use my location") + "</button></div>" +
+      '<div class="pills inl" role="group" aria-label="Distance">' + RADII.map((r) => '<button class="pill" data-radius="' + r + '" aria-pressed="' + (S2.radius === r) + '">' + (r ? "within " + r + " km" : "Anywhere") + "</button>").join("") + "</div>";
+  }
+  async function placeSearch(q) {
+    const res = await RES.catch(() => null), norm = (t) => t.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(), nq = norm(q);
+    const out = res ? res.rows.filter((x) => norm(x.name).includes(nq)).slice(0, 4).map((x) => ({ label: x.short, sub: x.country, lat: x.lat, lon: x.lon })) : [];
+    const tok = SS.S.cfg && SS.S.cfg.mapbox && SS.S.cfg.mapbox.token;
+    if (tok && q.length >= 3) {
+      try {
+        const j = await SS.getJSON("https://api.mapbox.com/geocoding/v5/mapbox.places/" + encodeURIComponent(q) + ".json?types=place,locality,region,district,poi&limit=5&language=" + ((window.I18N && I18N.lang) || "en") + "&access_token=" + encodeURIComponent(tok));
+        for (const f of j.features || []) out.push({ label: f.text, sub: (f.place_name || "").split(", ").slice(1, 3).join(", "), lat: f.center[1], lon: f.center[0] });
+      } catch { /* resorts only */ }
+    }
+    return out.slice(0, 8);
+  }
   async function skiView() {
     const res = await RES.catch(() => null);
     if (!res) return '<p class="msg">Resorts are loading…</p>';
-    const S2 = st.ski, ti = res.dates.indexOf(DATA.today);
-    const sat = (() => { for (let k = 0; k < 7; k++) { const d = addDays(DATA.today, k); if (D(d).getUTCDay() === 6) return d; } return null; })();
-    const wi = S2.when === "weekend" ? res.dates.indexOf(sat) : ti;
-    const regionRows = res.rows.filter((x) => x.dom === S2.region);
-    const countries = [...new Set(regionRows.map((x) => x.country).filter(Boolean))].sort();
-    const rows = regionRows.filter((x) => !S2.country || x.country === S2.country).map((x) => [x, (x.snow[wi] || [])]).filter(([, s]) => s[0] != null)
-      .sort((a, b) => (b[1][0] + 3 * (b[1][1] || 0)) - (a[1][0] + 3 * (a[1][1] || 0))).slice(0, 30);
-    let h = '<div class="over">Ski finder</div><h1>Where to ski ' + (S2.when === "weekend" ? "this weekend" : "today") + "</h1>" +
-      '<p class="lede">Resorts with the most snow, fresh snow counts more.</p><div class="filters">' +
-      '<select id="skiRegion" aria-label="Region">' + DATA.regions.map((r) => '<option value="' + r.code + '"' + (r.code === S2.region ? " selected" : "") + ">" + esc(r.name) + "</option>").join("") + "</select>" +
-      '<select id="skiCountry" aria-label="Country"><option value="">All countries</option>' + countries.map((c) => '<option' + (c === S2.country ? " selected" : "") + ">" + esc(c) + "</option>").join("") + "</select>" +
-      '<div class="seg2" role="group"><button data-when="today" aria-pressed="' + (S2.when === "today") + '">Today</button><button data-when="weekend" aria-pressed="' + (S2.when === "weekend") + '">Weekend</button></div></div>';
-    if (S2.when === "weekend" && wi < 0) h += '<div class="prolock"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>The weekend is further than the free days.</b> Pro shows the full week ahead.</p></div>';
-    else if (!rows.length) h += '<p class="none">No resort has snow here yet.</p>';
+    const S2 = st.ski, o = st.origin;
+    if (!o && !st.geoDenied && !st.geoAsked) { st.geoAsked = true; locate(true); }
+    const ti = dayIdx(res, S2.when);
+    let h = '<div class="over">Ski finder</div><h1>Where to ski ' + ({ today: "today", tomorrow: "tomorrow", weekend: "this weekend" })[S2.when] + "</h1>" + originBar(res) +
+      '<div class="filters"><div class="seg2" role="group" aria-label="Day">' + ["today", "tomorrow", "weekend"].map((w) => '<button data-when="' + w + '" aria-pressed="' + (S2.when === w) + '">' + ({ today: "Today", tomorrow: "Tomorrow", weekend: "Weekend" })[w] + "</button>").join("") + "</div>" +
+      '<div class="seg2" role="group" aria-label="Snow on the upper slopes">' + [0, 10, 30, 60].map((v) => '<button data-min="' + v + '" aria-pressed="' + (S2.min === v) + '">' + (v ? v + "+ cm" : "Any snow") + "</button>").join("") + "</div>" +
+      '<button class="pill" data-fresh aria-pressed="' + S2.fresh + '">Fresh snow only</button></div>';
+    if (ti < 0) return h + '<div class="prolock"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>This day is further than the free days.</b> Pro shows the full week ahead.</p></div>' + footer();
+    const t3 = res.dates.indexOf(DATA.today);
+    let rows = res.rows.map((x) => [x, o ? kmTo(o, x) : null]).filter(([x, d]) => {
+      const sn = x.snow[ti] || [];
+      if (sn[0] == null || sn[0] < Math.max(1, S2.min)) return false;
+      if (S2.fresh && !((sn[1] || 0) >= 1 || ((x.snow[t3] || [])[2] || 0) >= 1)) return false;
+      if (!o) return x.dom === st.region;
+      return !S2.radius || d <= S2.radius;
+    });
+    const score = ([x, d]) => { const sn = x.snow[ti] || []; return (sn[0] || 0) + 3 * (sn[1] || 0) + 1.5 * ((x.snow[t3] || [])[2] || 0) - (d != null && S2.radius ? d / 10 : 0); };
+    rows.sort((a, b) => score(b) - score(a));
+    rows = rows.slice(0, 25);
+    h += '<p class="none" style="padding:2px 0 8px"><span>' + (o ? (o.me ? "Around you" : "Around " + esc(o.label)) : esc(NAMES[st.region] || "")) + "</span> · <span>" + rows.length + " resorts</span></p>";
+    if (!rows.length) h += '<p class="none">No resort with snow matches. Try a bigger distance or "Anywhere".</p>';
+    h += rows.map(([x, d], i) => (i === 5 ? '<aside class="ad" data-ad="banner" aria-label="Advertisement" hidden></aside>' : "") + card(res, x, i, ti, d)).join("");
     if (rows.length) h += '<button class="btn ghost" data-propost="ski" style="margin:4px 0 8px"><span class="ms">add_photo_alternate</span>Create post' + (st.pro ? "" : ' <span class="pro">PRO</span>') + "</button>";
-    else h += rows.map(([x, s], i) => (i === 5 ? '<aside class="ad" data-ad="banner" aria-label="Advertisement" hidden></aside>' : "") + resRow(x, i, s[0], [x.country, x.top_m ? fmt(x.top_m) + " m" : ""].filter(Boolean).join(" · "), s[1])).join("");
     return h + footer();
   }
   async function powderView() {
     const res = await RES.catch(() => null);
     if (!res) return '<p class="msg">Resorts are loading…</p>';
-    const ti = res.dates.indexOf(DATA.today), k = st.p72 ? 2 : 1;
-    const rows = res.rows.filter((x) => x.snow[ti] && x.snow[ti][k] >= 1).sort((a, b) => b.snow[ti][k] - a.snow[ti][k]).slice(0, 25);
-    let h = '<div class="over">Powder</div><h1>' + (rows.length ? "Fresh snow today" : "No fresh snow today") + "</h1>" +
+    const ti = res.dates.indexOf(DATA.today), k = st.p72 ? 2 : 1, o = st.origin, R = st.ski.radius;
+    const rows = res.rows.filter((x) => x.snow[ti] && x.snow[ti][k] >= 1 && (!o || !R || kmTo(o, x) <= R)).sort((a, b) => b.snow[ti][k] - a.snow[ti][k]).slice(0, 25);
+    let h = '<div class="over">Powder</div><h1>' + (rows.length ? (o ? "Powder near you" : "Fresh snow today") : (o ? "No fresh snow near you" : "No fresh snow today")) + "</h1>" + originBar(res) +
       '<div class="filters"><div class="seg2" role="group"><button data-p72="0" aria-pressed="' + !st.p72 + '">24 hours</button><button data-p72="1" aria-pressed="' + st.p72 + '">3 days' + (st.pro ? "" : ' <span class="ms f" style="font-size:14px">lock</span>') + "</button></div>" +
       '<button class="btn tonal" data-showpowder><span class="ms">map</span>Show on the map</button></div>';
     h += rows.length ? rows.map((x, i) => '<a class="rrow" href="' + BASE + "resorts/" + encodeURIComponent(x.slug) + '.html" data-open="' + esc(x.slug) + '"><span class="rk">' + (i + 1) + '</span><span class="nm"><b>' + esc(x.short) + "</b><small>" + esc([NAMES[x.dom] || "", x.country].filter(Boolean).join(" · ")) +
-      '</small></span><span class="val"><b style="color:var(--accent-ink)">+' + x.snow[ti][k] + "<small>cm</small></b><em style=\"color:var(--ink3)\">" + (x.snow[ti][0] || 0) + " cm deep</em></span></a>").join("")
+      (o ? " · " + Math.round(kmTo(o, x)) + " km" : "") + '</small></span><span class="val"><b style="color:var(--accent-ink)">+' + x.snow[ti][k] + "<small>cm</small></b><em style=\"color:var(--ink3)\">" + (x.snow[ti][0] || 0) + " cm deep</em></span></a>" +
+      '<div class="acts3 slim"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a><button class="btn tonal" data-share="' + esc(x.slug) + '" data-sd="' + DATA.today + '"><span class="ms">share</span>Share</button></div>').join("")
       : '<p class="none">Nothing over 1 cm in the last ' + (st.p72 ? "3 days" : "24 hours") + ". Check tomorrow.</p>";
     if (rows.length) h += '<button class="btn ghost" data-propost="powder" style="margin-top:10px"><span class="ms">add_photo_alternate</span>Create post' + (st.pro ? "" : ' <span class="pro">PRO</span>') + "</button>";
     const storms = DATA.storms || [];
@@ -737,7 +805,7 @@
     if (!SS.Auth.enabled()) acc = '<div class="card"><b>Your SnowScope account</b><p class="none" style="padding:4px 0 0">Your account and Pro live in the app. Signing in here is coming soon.</p></div>';
     else if (!u) acc = '<div class="card"><b>One account for the app and the website</b><p class="none" style="padding:4px 0 8px">Sign in to remove ads and unlock Pro if you have it.</p><button class="btn ink" data-signin>Sign in</button> <button class="btn ghost" data-signup>Create an account</button></div>';
     else acc = '<div class="card"><b>' + esc(u.displayName || u.email || "Signed in") + '</b><p class="none" style="padding:2px 0 8px">' + (S.pro ? '<span class="pro"><span class="ms f">workspace_premium</span>PRO</span> You have SnowScope Pro.' : S.state === "no_account" ? "Open the app once with this account to connect it." : S.state === "api_down" ? "Pro data is updating, try again in a minute." : "Free plan") + '</p><a class="btn tonal" href="' + BASE + 'account.html">Manage account</a></div>';
-    const pro = S.pro ? "" : '<div class="card"><span class="pro"><span class="ms f">workspace_premium</span>PRO</span><p style="margin:8px 0;font-size:14px;color:var(--ink2)">No ads, the sharpest snow map, 15 days, powder on every day, wind, freezing level, satellite snow, 7-day resort forecasts and past winters.</p><a class="btn ink" href="' + esc(SS.appUrl()) + '">Get Pro in the app</a></div>';
+    const pro = S.pro ? "" : '<div class="card"><span class="pro"><span class="ms f">workspace_premium</span>PRO</span><p style="margin:8px 0;font-size:14px;color:var(--ink2)">No ads, the sharpest snow map, 15 days, powder on every day, wind, freezing level, satellite snow, 7-day resort forecasts and past winters.</p>' + (window.SSPay && SSPay.enabled() ? '<button class="btn ink" data-buy-pro>Get Pro</button>' : '<a class="btn ink" href="' + esc(SS.appUrl()) + '">Get Pro in the app</a>') + '</div>';
     const teaser = (icon, bg, t, s) => '<a class="teaser" href="' + esc(SS.appUrl()) + '"><span class="ic" style="background:' + bg + '"><span class="ms f">' + icon + "</span></span><span><b>" + t + "</b><small>" + s + "</small></span></a>";
     return '<div class="over">You</div><h1>Your SnowScope</h1>' + acc + pro + '<div class="sect">Only in the app</div>' +
       teaser("landscape", "linear-gradient(160deg,#F2662B,#C9381A)", "Peak finder", "Point your camera at the mountains to name every summit.") +
@@ -747,6 +815,12 @@
   $("pbody").addEventListener("click", (e) => {
     const w = e.target.closest("[data-when]"), p7 = e.target.closest("[data-p72]");
     if (w) { st.ski.when = w.dataset.when; renderPanel(); }
+    const rb = e.target.closest("[data-radius]"); if (rb) { st.ski.radius = +rb.dataset.radius; store.set("ss_radius", st.ski.radius); renderPanel(); }
+    const mb = e.target.closest("[data-min]"); if (mb) { st.ski.min = +mb.dataset.min; renderPanel(); }
+    if (e.target.closest("[data-fresh]")) { st.ski.fresh = !st.ski.fresh; renderPanel(); }
+    if (e.target.closest("[data-locate]")) locate(false);
+    const shb = e.target.closest("[data-share]"); if (shb) { e.preventDefault(); shareResort(shb.dataset.share, shb.dataset.sd); }
+    const ql = e.target.closest("[data-place]"); if (ql) { const pl = st.places[+ql.dataset.place]; setOrigin({ lat: pl.lat, lon: pl.lon, label: pl.label, zoom: 8 }); }
     if (p7) { const on = p7.dataset.p72 === "1"; if (on && !st.pro) { SS.upsell("Powder over 3 days is in Pro"); return; } st.p72 = on; renderPanel(); if (st.main === "powder") { renderMain(); drawLegend(); } }
     if (e.target.closest("[data-showpowder]")) { setMain("powder"); if (innerWidth <= 760) setSheet("peek"); }
     if (e.target.closest("[data-signup]")) SS.signInModal("up");
@@ -756,10 +830,39 @@
     const pp = e.target.closest("[data-propost]");
     if (pp) proPost(pp.dataset.propost);
   });
+  let qT = 0;
+  $("pbody").addEventListener("input", (e) => {
+    if (e.target.id !== "skiQ") return;
+    clearTimeout(qT);
+    const q = e.target.value.trim();
+    qT = setTimeout(async () => {
+      const ul = $("skiQl"); if (!ul) return;
+      if (q.length < 2) { ul.hidden = true; return; }
+      st.places = await placeSearch(q);
+      ul.innerHTML = st.places.map((p, i) => '<li><button data-place="' + i + '"><b>' + esc(p.label) + "</b> <small>" + esc(p.sub || "") + "</small></button></li>").join("");
+      ul.hidden = !st.places.length;
+    }, 250);
+  });
   $("pbody").addEventListener("change", (e) => {
     if (e.target.id === "skiRegion") { st.ski.region = e.target.value; st.ski.country = ""; renderPanel(); }
     if (e.target.id === "skiCountry") { st.ski.country = e.target.value; renderPanel(); }
   });
+
+  // ------------------------------------------------------------------ share a resort with friends
+  async function shareResort(slug, date) {
+    const res = await RES.catch(() => null), x = BY[slug];
+    if (!x || !res) return;
+    const i = res.dates.indexOf(date), s = x.snow[i >= 0 ? i : res.dates.indexOf(DATA.today)] || [];
+    const url = "https://snowscope.app/resorts/" + encodeURIComponent(slug) + ".html?d=" + date;
+    const t = (q) => (window.I18N ? I18N.t(q) : q);
+    const text = x.short + ": " + (s[0] != null ? s[0] + " cm " + t("on the upper slopes") : t("snow report")) + (s[1] ? ", +" + s[1] + " cm " + t("new") : "") +
+      " (" + (date === DATA.today ? t("Today") : wd(date) + " " + dnum(date)) + ")";
+    if (navigator.share && matchMedia("(pointer:coarse)").matches) { try { await navigator.share({ title: "SnowScope", text, url }); return; } catch (e) { if (e && e.name === "AbortError") return; } }
+    const m = SS.modal(SS.head(t("Share with friends")) + '<p style="margin:0 0 10px">' + esc(text) + '</p><div class="filters"><a class="btn ink" target="_blank" rel="noopener" href="https://wa.me/?text=' + encodeURIComponent(text + " " + url) +
+      '"><span class="ms">chat</span>WhatsApp</a><button class="btn tonal" data-copylink><span class="ms">link</span>' + t("Copy link") + "</button></div>" +
+      '<input readonly class="filter" style="max-width:none;width:100%" value="' + esc(url) + '">');
+    m.el.querySelector("[data-copylink]").onclick = async (e) => { try { await navigator.clipboard.writeText(text + " " + url); e.currentTarget.lastChild.textContent = t("Copied"); } catch { m.el.querySelector("input").select(); } };
+  }
 
   // ------------------------------------------------------------------ post images (post.js)
   function snapshot() {
@@ -952,6 +1055,8 @@
   catch { toast("Today's snow could not be loaded. Try again in a minute.", 8000); return; }
   RES = SS.resorts().then((r) => { BY = Object.fromEntries(r.rows.map((x) => [x.slug, x])); return r; });
   st.day = DATA.dates.includes(DATA.today) ? DATA.today : DATA.dates[DATA.dates.length - 1];
+  const dq = new URLSearchParams(location.search).get("d");
+  if (dq && DATA.dates.includes(dq)) st.day = dq;
   st.region = homeRegion();
   st.ski.region = st.region;
   initialSlug = document.body.dataset.slug || null;
