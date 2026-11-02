@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snow Today · SnowScope</title>
+<meta name="description" content="Snow depth today in the Alps, Pyrenees, Scandinavia, the US and the Atlas, updated every day.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#0f1720;--mute:#5b6675;--line:#e3e7ec;--accent:#2171b5;--chip:#eef3f8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1117;--card:#161b22;--ink:#e6edf3;--mute:#9aa6b2;--line:#2a313a;--accent:#6baed6;--chip:#1f2630}}
+:root[data-theme="dark"]{--bg:#0d1117;--card:#161b22;--ink:#e6edf3;--mute:#9aa6b2;--line:#2a313a;--accent:#6baed6;--chip:#1f2630}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 Inter,system-ui,sans-serif}
+header{max-width:1180px;margin:0 auto;padding:20px 16px 8px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;justify-content:space-between}
+h1{font-size:26px;margin:0;font-weight:700;letter-spacing:-.01em}
+.sub{color:var(--mute);font-size:14px}
+main{max-width:1180px;margin:0 auto;padding:0 16px 32px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:10px 0 12px}
+.days{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin;max-width:100%}
+.day{flex:0 0 auto;min-width:58px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:6px 8px;font:inherit;font-size:13px;cursor:pointer;text-align:center}
+.day small{display:block;color:var(--mute);font-size:11px}
+.day[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.day[aria-pressed="true"] small{color:var(--bg);opacity:.75}
+#map{height:min(62vh,560px);border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.legend{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--mute);margin:8px 2px 18px;flex-wrap:wrap}
+.ramp{display:flex;height:10px;border-radius:5px;overflow:hidden;width:260px;max-width:60vw}
+.ramp i{flex:1}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 14px 10px;cursor:pointer}
+.card:hover{border-color:var(--accent)}
+.card h2{font-size:16px;margin:0 0 8px;display:flex;justify-content:space-between;gap:8px}
+.card h2 span{font-weight:500;font-size:12px;color:var(--mute);background:var(--chip);border-radius:20px;padding:2px 8px;white-space:nowrap}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:8px}
+.stat b{display:block;font-size:20px;font-variant-numeric:tabular-nums}
+.stat small{color:var(--mute);font-size:11.5px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+td{padding:4px 0;border-top:1px solid var(--line)}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td.nm{max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.none{color:var(--mute);font-size:13px;padding:6px 0}
+.cta{display:inline-block;margin-top:22px;background:var(--ink);color:var(--bg);text-decoration:none;padding:10px 16px;border-radius:10px;font-weight:600}
+footer{color:var(--mute);font-size:12px;margin-top:22px;line-height:1.6}
+</style>
+</head>
+<body>
+<header>
+  <h1>Snow today</h1>
+  <div class="sub" id="upd">Loading…</div>
+</header>
+<main>
+  <div class="bar"><div class="days" id="days" role="group" aria-label="Day"></div></div>
+  <div id="map" role="region" aria-label="Snow depth map"></div>
+  <div class="legend" id="legend"></div>
+  <div class="grid" id="cards"></div>
+  <a class="cta" href="../download/">Get SnowScope for Android</a>
+  <footer id="foot"></footer>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script>
+const fmt = n => n.toLocaleString('en-US');
+const dayLabel = d => new Date(d + 'T12:00:00Z').toLocaleDateString('en-GB', {weekday: 'short', day: 'numeric', timeZone: 'UTC'});
+let DATA, cur, map;
+
+fetch('data.json?v=' + Date.now()).then(r => r.json()).then(d => { DATA = d; init(); })
+  .catch(() => { document.getElementById('upd').textContent = 'Could not load today’s snow. Try again later.'; });
+
+function init() {
+  cur = DATA.dates.includes(DATA.today) ? DATA.today : DATA.dates[DATA.dates.length - 1];
+  document.getElementById('upd').textContent = 'Updated ' + DATA.built_utc.replace('T', ' ').replace('Z', ' UTC');
+  const box = document.getElementById('days');
+  for (const d of DATA.dates) {
+    const b = document.createElement('button');
+    b.className = 'day'; b.dataset.d = d;
+    b.innerHTML = (d === DATA.today ? 'Today' : dayLabel(d)) + '<small>' + (d < DATA.today ? 'past' : d === DATA.today ? dayLabel(d) : 'forecast') + '</small>';
+    b.onclick = () => setDay(d);
+    box.appendChild(b);
+  }
+  const st = DATA.ramp, leg = document.getElementById('legend');
+  leg.innerHTML = 'Snow depth <span>1 cm</span><div class="ramp">' +
+    st.map(s => '<i style="background:rgb(' + s[1].join(',') + ')"></i>').join('') + '</div><span>4 m+</span>';
+  document.getElementById('foot').innerHTML = 'Modelled snow depth on a 5 km grid; resort values are the grid cell around the resort. ' +
+    'Contains modified Copernicus Climate Change Service information. Map © OpenFreeMap, © OpenMapTiles, data © OpenStreetMap contributors.';
+  map = new maplibregl.Map({container: 'map', style: 'https://tiles.openfreemap.org/styles/positron',
+    center: [6, 40], zoom: 2.3, attributionControl: {compact: true}, cooperativeGestures: false});
+  map.addControl(new maplibregl.NavigationControl({showCompass: false}));
+  map.on('load', () => {
+    for (const r of DATA.regions) {
+      const d = r.days.find(x => x.date === cur) || r.days[0];
+      map.addSource('s_' + r.code, {type: 'image', url: d.img, coordinates: r.coords});
+      map.addLayer({id: 'l_' + r.code, type: 'raster', source: 's_' + r.code, paint: {'raster-opacity': .9, 'raster-resampling': 'linear'}});
+    }
+    const b = new maplibregl.LngLatBounds();
+    DATA.regions.forEach(r => r.coords.forEach(c => b.extend(c)));
+    map.fitBounds(b, {padding: 24, duration: 0});
+  });
+  setDay(cur);
+}
+
+function setDay(d) {
+  cur = d;
+  document.querySelectorAll('.day').forEach(b => b.setAttribute('aria-pressed', b.dataset.d === d));
+  if (map && map.loaded()) for (const r of DATA.regions) {
+    const x = r.days.find(y => y.date === d); const s = map.getSource('s_' + r.code);
+    if (x && s) s.updateImage({url: x.img, coordinates: r.coords});
+  }
+  const cards = document.getElementById('cards'); cards.innerHTML = '';
+  for (const r of DATA.regions) {
+    const x = r.days.find(y => y.date === d);
+    if (!x) continue;
+    const c = document.createElement('div'); c.className = 'card';
+    c.onclick = () => map.fitBounds([r.coords[3], r.coords[1]], {padding: 20});
+    const rows = x.top.length ? '<table>' + x.top.map(t =>
+      '<tr><td class="nm" title="' + t.name + '">' + t.name + ' <span style="color:var(--mute)">' + t.country + '</span></td>' +
+      '<td class="n">' + t.depth_cm + ' cm' + (t.new_cm >= 1 ? ' · +' + t.new_cm : '') + '</td></tr>').join('') + '</table>'
+      : '<div class="none">No resort has snow yet.</div>';
+    c.innerHTML = '<h2>' + r.name + '<span>' + x.resorts_with_snow + ' / ' + r.n_resorts + ' resorts with snow</span></h2>' +
+      '<div class="stats"><div class="stat"><b>' + fmt(x.snow_km2) + '</b><small>km² of snow</small></div>' +
+      '<div class="stat"><b>' + x.mean_cm + ' cm</b><small>average depth</small></div>' +
+      '<div class="stat"><b>' + (x.new_max_cm >= 1 ? '+' + x.new_max_cm + ' cm' : '—') + '</b><small>most new snow</small></div></div>' + rows;
+    cards.appendChild(c);
+  }
+}
+</script>
+</body>
+</html>
