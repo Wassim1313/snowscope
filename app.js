@@ -85,6 +85,16 @@
     const today = (r) => r.days.find((y) => y.date === DATA.today) || r.days[r.days.length - 1] || {};
     return DATA.regions.slice().sort((a, b) => (today(b).resorts_with_snow || 0) - (today(a).resorts_with_snow || 0) || (today(b).max_cm || 0) - (today(a).max_cm || 0))[0].code;
   }
+  // framed on the snow: the snowiest cluster (resorts with snow within ~150 km of the deepest one), else the region
+  function snowBounds(r) {
+    const day = r.days.find((y) => y.date === DATA.today) || r.days[r.days.length - 1] || { top: [] };
+    const all = (day.top || []).slice(0, 12).map((t) => BY[t.slug]).filter(Boolean);
+    const c0 = all[0], pts = c0 ? all.filter((x) => Math.hypot((x.lon - c0.lon) * Math.cos(c0.lat * Math.PI / 180), x.lat - c0.lat) * 111 <= 150) : [];
+    if (pts.length < 2) return [r.coords[3], r.coords[1]];
+    const lo = pts.map((x) => x.lon), la = pts.map((x) => x.lat);
+    return [[Math.min(...lo) - 0.35, Math.min(...la) - 0.25], [Math.max(...lo) + 0.35, Math.max(...la) + 0.25]];
+  }
+  const startPad = () => ({ top: 90, bottom: innerWidth > 760 ? 150 : 320, left: (innerWidth > 760 ? 424 : 0) + 16, right: 80 });
   function flyRegion(code, instant) {
     const r = DATA.regions.find((x) => x.code === code);
     if (!r) return;
@@ -93,18 +103,7 @@
     if ($("regName")) $("regName").textContent = r.name;
     if (map) {
       regionMove = true;
-      const side = innerWidth > 760 ? 400 + 24 : 0;
-      // framed on the snow: the resorts with snow today (deepest 12), else the whole region
-      const day = r.days.find((y) => y.date === DATA.today) || r.days[r.days.length - 1] || { top: [] };
-      // the snowiest cluster: resorts with snow within ~150 km of the deepest one (a tight, snowy first view)
-      const all = (day.top || []).slice(0, 12).map((t) => BY[t.slug]).filter(Boolean);
-      const c0 = all[0], pts = c0 ? all.filter((x) => Math.hypot((x.lon - c0.lon) * Math.cos(c0.lat * Math.PI / 180), x.lat - c0.lat) * 111 <= 150) : [];
-      let bb = [r.coords[3], r.coords[1]];
-      if (pts.length >= 2) {
-        const lo = pts.map((x) => x.lon), la = pts.map((x) => x.lat);
-        bb = [[Math.min(...lo) - 0.35, Math.min(...la) - 0.25], [Math.max(...lo) + 0.35, Math.max(...la) + 0.25]];
-      }
-      map.fitBounds(bb, { padding: { top: 90, bottom: innerWidth > 760 ? 150 : 300, left: side + 16, right: 80 }, maxZoom: 8.2, duration: instant ? 0 : 1100, essential: true });
+      map.fitBounds(snowBounds(r), { padding: startPad(), maxZoom: 8.2, duration: instant ? 0 : 1100, essential: true });
     }
     if (!st.slug) history.replaceState(null, "", location.pathname + "#" + slugOf(code));
     if (!st.slug && (st.tab === "map" || st.tab === "ski" || st.tab === "powder")) renderPanel();
@@ -1323,7 +1322,7 @@
     const ds = r.days.slice(-9), mx = Math.max(5, ...ds.map((y) => y.new_max_cm || 0));
     const bars = '<div class="hbars" aria-hidden="true">' + ds.map((y) => '<span class="' + (y.date === st.day ? "on" : "") + (y.date > DATA.today ? " fc" : "") + '"><i style="height:' + Math.max(3, Math.round(((y.new_max_cm || 0) / mx) * 44)) + 'px"></i><b>' +
       (y.new_max_cm >= 1 ? U.dep(y.new_max_cm) : "") + "</b><small>" + (y.date === DATA.today ? esc(I18N.t("Today")) : wd(y.date)) + "</small></span>").join("") + "</div>";
-    let h = '<section class="rhero"><div class="hk">' + esc(when) + " · " + esc(r.name) + '</div><div class="hn">' + big + '</div><div class="hw">' + esc(what) + (where ? ' <span class="hp">' + esc(where) + "</span>" : "") + "</div>" +
+    let h = '<section class="rhero"><div class="hk">' + esc(when) + " · " + esc(I18N.t(r.name)) + '</div><div class="hn">' + big + '</div><div class="hw">' + esc(what) + (where ? ' <span class="hp">' + esc(where) + "</span>" : "") + "</div>" +
       '<div class="hs"><span><b>' + fmt(x.resorts_with_snow || 0) + "</b> " + esc(I18N.t("resorts with snow")) + "</span>" + (fresh && best ? "<span><b>" + U.depth(best.depth_cm) + "</b> " + esc(I18N.t("deepest")) + "</span>" : "") + "</div>" +
       '<div class="hc"><div class="hk2">' + esc(I18N.t("Fresh snow, last days and next days")) + "</div>" + bars + "</div></section>";
     if (x.top.length) {
@@ -2014,8 +2013,10 @@
       '<div class="sect">Nearby resorts</div>' + near.map(([km, y]) => resRow(y, null, (y.snow[ti] || [])[0], U.dist(Math.round(km)), (y.snow[ti] || [])[1])).join("") + appCard() + footer();
     box.querySelector("[data-back]").onclick = () => (st.pushed ? history.back() : closeResort());
     box.querySelector(".hero2").insertAdjacentHTML("afterend", '<div class="acts3" style="margin-bottom:6px"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a><button class="btn ink" data-share="' + esc(slug) + '" data-sd="' + st.day + '"><span class="ms">share</span>Share</button>' +
-      (stayHref(x.lat, x.lon, x.short, "panel") ? '<a class="btn tonal" target="_blank" rel="sponsored noopener" title="Partner link: we may earn a commission" href="' + esc(stayHref(x.lat, x.lon, x.short, "panel")) + '"><span class="ms">hotel</span>Sleep near</a>' : "") + "</div>" +
+      (stayModule(0, 0, "", "x") ? '<button class="btn tonal" data-gostays><span class="ms">hotel</span>Stays</button>' : "") + "</div>" +
       '<a class="rowlink" href="' + BASE + "studio.html?slug=" + encodeURIComponent(slug) + '"><span class="ms">movie</span><span><b>Create a 3D video</b><small>A short flyover of ' + esc(x.short) + ' with today\'s snow</small></span><span class="ms">chevron_right</span></a>');
+    const gs = box.querySelector("[data-gostays]");
+    if (gs) gs.onclick = () => { const d = box.querySelector("details.stays"); if (d) { d.open = true; d.scrollIntoView({ behavior: "smooth", block: "start" }); } };
     afterRender();
     daysChart(x, res);
     histChart(x);
@@ -2151,7 +2152,12 @@
   LIB = ML.lib;
   const R0 = DATA.regions.find((r) => r.code === st.region) || DATA.regions[0];
   const hash = /^#@(-?[\d.]+),(-?[\d.]+),([\d.]+)$/.exec(location.hash);
+  // first paint already framed on the snow (no z5 overview that waits for the "load" event before jumping)
+  const plain = !hash && !initialSlug && !new URLSearchParams(location.search).get("p") && !new URLSearchParams(location.search).get("r");
+  if (plain) await Promise.race([RES.catch(() => null), new Promise((ok) => setTimeout(ok, 2500))]);
+  const b0 = plain ? snowBounds(R0) : null;
   map = new LIB.Map({ container: "map", style: styleUrl(), center: R0.center, zoom: 5, minZoom: 2, attributionControl: { compact: true },
+    ...(b0 ? { bounds: b0, fitBoundsOptions: { padding: startPad(), maxZoom: 8.2 } } : {}),
     transformRequest: (url) => SS.transformRequest(url), preserveDrawingBuffer: true, maxPitch: 75, dragRotate: true, pitchWithRotate: true });
   window.SSApp.map = map;
   zoomControls();   // own + / − / north / locate stack (owner 2026-11-02 "zoom in / zoom out, add them"), replaces the small MapLibre control
