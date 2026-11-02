@@ -85,8 +85,8 @@
   onAccount(SS.S);
 
   // ------------------------------------------------------------------ regions, updated time
-  const slugOf = (code) => code.toLowerCase().replace("_ne", "-northeast").replace("_", "-");
-  let regionMove = false;
+  function slugOf(code) { return code.toLowerCase().replace("_ne", "-northeast").replace("_", "-"); }
+  var regionMove = false;
   function homeRegion() {
     const h = location.hash.slice(1);
     const fromHash = DATA.regions.find((r) => slugOf(r.code) === h);
