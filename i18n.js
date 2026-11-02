@@ -9,6 +9,22 @@
   const LOCALE = { en: "en-GB", fr: "fr-FR", de: "de-DE", it: "it-IT", es: "es-ES", ar: "ar-MA" };
   // columns: fr, de, it, es, ar
   const T = {
+    "Snow storms": ["Tempêtes de neige", "Schneestürme", "Bufere di neve", "Temporales de nieve", "عواصف ثلجية"],
+    "Create post": ["Créer une publication", "Beitrag erstellen", "Crea un post", "Crear publicación", "أنشئ منشورًا"],
+    "Create post image": ["Créer une image", "Bild erstellen", "Crea un'immagine", "Crear imagen", "أنشئ صورة"],
+    "Post of this map view": ["Publication de cette vue", "Beitrag dieser Kartenansicht", "Post di questa vista", "Publicación de esta vista", "منشور لهذا العرض"],
+    "Post image": ["Image à publier", "Beitragsbild", "Immagine del post", "Imagen para publicar", "صورة المنشور"],
+    "Download": ["Télécharger", "Herunterladen", "Scarica", "Descargar", "تنزيل"],
+    "Share": ["Partager", "Teilen", "Condividi", "Compartir", "مشاركة"],
+    "Caption": ["Légende", "Bildtext", "Didascalia", "Texto", "النص"],
+    "Copy caption": ["Copier la légende", "Text kopieren", "Copia il testo", "Copiar texto", "انسخ النص"],
+    "Copied": ["Copié", "Kopiert", "Copiato", "Copiado", "تم النسخ"],
+    "in 3 days": ["en 3 jours", "in 3 Tagen", "in 3 giorni", "en 3 días", "خلال 3 أيام"],
+    "Preparing the image…": ["Préparation de l'image…", "Bild wird erstellt…", "Preparazione dell'immagine…", "Preparando la imagen…", "جارٍ تجهيز الصورة…"],
+    "No snow storm right now (20 cm or more).": ["Pas de tempête de neige en ce moment (20 cm ou plus).", "Gerade kein Schneesturm (20 cm oder mehr).", "Nessuna bufera di neve ora (20 cm o più).", "Ningún temporal de nieve ahora (20 cm o más).", "لا عاصفة ثلجية الآن (20 سم أو أكثر)."],
+    "Share posts are in Pro": ["Les publications sont dans Pro", "Beiträge gibt es mit Pro", "I post sono in Pro", "Las publicaciones están en Pro", "المنشورات متاحة في Pro"],
+    "Ready-made images with your resorts, for Instagram and TikTok.": ["Des images prêtes avec vos stations, pour Instagram et TikTok.", "Fertige Bilder mit deinen Skigebieten, für Instagram und TikTok.", "Immagini pronte con le tue stazioni, per Instagram e TikTok.", "Imágenes listas con tus estaciones, para Instagram y TikTok.", "صور جاهزة بمحطاتك لإنستغرام وتيك توك."],
+    "Snow depth on every slope, every day": ["La neige sur chaque pente, chaque jour", "Schnee an jedem Hang, jeden Tag", "La neve su ogni pendio, ogni giorno", "La nieve en cada ladera, cada día", "الثلج على كل منحدر، كل يوم"],
     "Snow today": ["Neige aujourd'hui", "Schnee heute", "Neve oggi", "Nieve hoy", "الثلج اليوم"],
     "Where to ski": ["Où skier", "Skifinder", "Dove sciare", "Dónde esquiar", "أين تتزلج"],
     "Powder": ["Poudreuse", "Pulverschnee", "Neve fresca", "Nieve polvo", "ثلج طازج"],

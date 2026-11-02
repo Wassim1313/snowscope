@@ -706,6 +706,7 @@
       '<div class="seg2" role="group"><button data-when="today" aria-pressed="' + (S2.when === "today") + '">Today</button><button data-when="weekend" aria-pressed="' + (S2.when === "weekend") + '">Weekend</button></div></div>';
     if (S2.when === "weekend" && wi < 0) h += '<div class="prolock"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>The weekend is further than the free days.</b> Pro shows the full week ahead.</p></div>';
     else if (!rows.length) h += '<p class="none">No resort has snow here yet.</p>';
+    if (rows.length) h += '<button class="btn ghost" data-propost="ski" style="margin:4px 0 8px"><span class="ms">add_photo_alternate</span>Create post' + (st.pro ? "" : ' <span class="pro">PRO</span>') + "</button>";
     else h += rows.map(([x, s], i) => (i === 5 ? '<aside class="ad" data-ad="banner" aria-label="Advertisement" hidden></aside>' : "") + resRow(x, i, s[0], [x.country, x.top_m ? fmt(x.top_m) + " m" : ""].filter(Boolean).join(" · "), s[1])).join("");
     return h + footer();
   }
@@ -720,6 +721,13 @@
     h += rows.length ? rows.map((x, i) => '<a class="rrow" href="' + BASE + "resorts/" + encodeURIComponent(x.slug) + '.html" data-open="' + esc(x.slug) + '"><span class="rk">' + (i + 1) + '</span><span class="nm"><b>' + esc(x.short) + "</b><small>" + esc([NAMES[x.dom] || "", x.country].filter(Boolean).join(" · ")) +
       '</small></span><span class="val"><b style="color:var(--accent-ink)">+' + x.snow[ti][k] + "<small>cm</small></b><em style=\"color:var(--ink3)\">" + (x.snow[ti][0] || 0) + " cm deep</em></span></a>").join("")
       : '<p class="none">Nothing over 1 cm in the last ' + (st.p72 ? "3 days" : "24 hours") + ". Check tomorrow.</p>";
+    if (rows.length) h += '<button class="btn ghost" data-propost="powder" style="margin-top:10px"><span class="ms">add_photo_alternate</span>Create post' + (st.pro ? "" : ' <span class="pro">PRO</span>') + "</button>";
+    const storms = DATA.storms || [];
+    h += '<div class="sect">Snow storms</div>' + (storms.length ? storms.map((x, i) => '<div class="rrow"><span class="nm"><b>' + esc(x.place || NAMES[x.region] || x.region) + "</b><small>" +
+      esc((x.date === DATA.today ? "Today" : wd(x.date) + " " + dnum(x.date)) + " · " + (NAMES[x.region] || "")) + '</small></span><span class="val"><b style="color:var(--accent-ink)">+' + x.cm + "<small>cm</small></b><em style=\"color:var(--ink3)\">" + (x.hours === 72 ? "in 3 days" : "in 24 hours") +
+      '</em></span><button class="btn icon" data-storm="' + i + '" aria-label="Create post image"><span class="ms">add_photo_alternate</span></button></div>').join("")
+      : '<p class="none">No snow storm right now (20 cm or more).</p>');
+    h += '<button class="btn ghost" data-viewpost style="margin-top:10px"><span class="ms">photo_camera</span>Post of this map view</button>';
     h += '<a class="teaser" href="' + esc(SS.appUrl()) + '" style="margin-top:16px"><span class="ic" style="background:linear-gradient(160deg,#3B8BFF,#1463F3)"><span class="ms f">notifications</span></span><span><b>Powder alerts</b><small>Get a message when fresh snow is coming to your resorts. In the app.</small></span></a>';
     return h + footer();
   }
@@ -742,11 +750,62 @@
     if (p7) { const on = p7.dataset.p72 === "1"; if (on && !st.pro) { SS.upsell("Powder over 3 days is in Pro"); return; } st.p72 = on; renderPanel(); if (st.main === "powder") { renderMain(); drawLegend(); } }
     if (e.target.closest("[data-showpowder]")) { setMain("powder"); if (innerWidth <= 760) setSheet("peek"); }
     if (e.target.closest("[data-signup]")) SS.signInModal("up");
+    const sb = e.target.closest("[data-storm]");
+    if (sb) stormPost(DATA.storms[+sb.dataset.storm]);
+    if (e.target.closest("[data-viewpost]")) viewPost();
+    const pp = e.target.closest("[data-propost]");
+    if (pp) proPost(pp.dataset.propost);
   });
   $("pbody").addEventListener("change", (e) => {
     if (e.target.id === "skiRegion") { st.ski.region = e.target.value; st.ski.country = ""; renderPanel(); }
     if (e.target.id === "skiCountry") { st.ski.country = e.target.value; renderPanel(); }
   });
+
+  // ------------------------------------------------------------------ post images (post.js)
+  function snapshot() {
+    const src = map.getCanvas(), c = document.createElement("canvas");
+    c.width = src.width; c.height = src.height; c.getContext("2d").drawImage(src, 0, 0);
+    return c;
+  }
+  const idle = () => new Promise((ok) => { let done = false; const f = () => { if (!done) { done = true; ok(); } }; map.once("idle", f); setTimeout(f, 6000); });
+  async function stormPost(x) {
+    if (!x || !map) return;
+    toast("Preparing the image…", 4000);
+    st.day = x.date; st.main = "powder"; st.p72 = x.hours === 72; drawDays(); drawLegend();
+    map.jumpTo({ center: [x.lon, x.lat], zoom: 8 });
+    renderMain(); await idle(); await new Promise((r) => setTimeout(r, 400));
+    const place = x.place || NAMES[x.region] || "";
+    SSPost.open({ big: "+" + x.cm + " cm", sub: x.hours === 72 ? "in 3 days" : "in 24 hours", place, date: longDay(x.date),
+      url: "https://snowscope.app/?r=" + (x.slug || x.lat + "," + x.lon), snapshot: snapshot(), file: "snowscope-storm-" + (x.slug || x.region.toLowerCase()) });
+    if (!st.pro) { st.p72 = false; }
+  }
+  async function viewPost() {
+    await idle();
+    const r = regionAt(map.getCenter()) || DATA.regions.find((y) => y.code === st.region), d = r ? dayOf(r) : null;
+    const big = d ? (st.main === "powder" ? "+" + d.new_max_cm + " cm" : (d.top[0] ? d.top[0].depth_cm + " cm" : "–")) : "–";
+    const c = map.getCenter();
+    SSPost.open({ big, sub: st.main === "powder" ? "New snow" : "Snow depth", place: r ? r.name : "", date: longDay(st.day),
+      url: "https://snowscope.app/#@" + c.lat.toFixed(3) + "," + c.lng.toFixed(3) + "," + map.getZoom().toFixed(1), snapshot: snapshot(), file: "snowscope-map" });
+  }
+  async function proPost(kind) {
+    const res = await RES.catch(() => null);
+    if (!res) return;
+    const ti = res.dates.indexOf(DATA.today);
+    const r = DATA.regions.find((y) => y.code === (kind === "ski" ? st.ski.region : st.region)) || DATA.regions[0];
+    let rows;
+    if (kind === "powder") rows = res.rows.filter((x) => x.snow[ti] && x.snow[ti][st.p72 ? 2 : 1] >= 1).sort((a, b) => b.snow[ti][st.p72 ? 2 : 1] - a.snow[ti][st.p72 ? 2 : 1]).slice(0, 5)
+      .map((x) => [x.short, "+" + x.snow[ti][st.p72 ? 2 : 1] + " cm · " + (x.snow[ti][0] || 0) + " cm"]);
+    else rows = res.rows.filter((x) => x.dom === r.code && x.snow[ti] && x.snow[ti][0] != null).sort((a, b) => (b.snow[ti][0] + 3 * (b.snow[ti][1] || 0)) - (a.snow[ti][0] + 3 * (a.snow[ti][1] || 0))).slice(0, 5)
+      .map((x) => [x.short, x.snow[ti][0] + " cm" + (x.snow[ti][1] ? " · +" + x.snow[ti][1] : "")]);
+    const d = dayOf(r);
+    const best = (() => { let b = null; for (const y of r.days) if (y.date >= DATA.today && (!b || y.new_max_cm > b.new_max_cm)) b = y; return b; })();
+    await idle();
+    SSPost.open({ big: kind === "powder" ? "+" + (d.new_max_cm || 0) + " cm" : (d.top[0] ? d.top[0].depth_cm + " cm" : "–"),
+      sub: kind === "powder" ? "Fresh snow today" : "Where to ski today", place: r.name,
+      date: longDay(DATA.today) + (best && best.new_max_cm >= 5 ? " · " + wd(best.date) + " +" + best.new_max_cm + " cm" : ""),
+      lines: rows, url: "https://snowscope.app/#" + slugOf(r.code), snapshot: snapshot(), locked: !st.pro, file: "snowscope-" + kind,
+      caption: null });
+  }
 
   // ------------------------------------------------------------------ resort panel
   function openResort(slug, { push = true } = {}) {
@@ -908,11 +967,15 @@
   const R0 = DATA.regions.find((r) => r.code === st.region) || DATA.regions[0];
   const hash = /^#@(-?[\d.]+),(-?[\d.]+),([\d.]+)$/.exec(location.hash);
   map = new LIB.Map({ container: "map", style: styleUrl(), center: R0.center, zoom: 5, minZoom: 2, attributionControl: { compact: true },
-    transformRequest: (url) => SS.transformRequest(url), ...(ML.mapbox ? { projection: "mercator" } : {}), dragRotate: !!ML.mapbox, pitchWithRotate: !!ML.mapbox });
+    transformRequest: (url) => SS.transformRequest(url), preserveDrawingBuffer: true, ...(ML.mapbox ? { projection: "mercator" } : {}), dragRotate: !!ML.mapbox, pitchWithRotate: !!ML.mapbox });
   map.addControl(new LIB.NavigationControl({ showCompass: !!ML.mapbox, visualizePitch: true }), "top-right");
   map.on("style.load", onStyle);
   map.on("load", () => {
     const r = initialSlug && BY[initialSlug];
+    const rq = new URLSearchParams(location.search).get("r");
+    const rll = rq && /^(-?[\d.]+),(-?[\d.]+)$/.exec(rq);
+    if (rq && BY[rq] && !r) openResort(rq, { push: false });
+    else if (rll) { map.jumpTo({ center: [+rll[2], +rll[1]], zoom: 8.5 }); setMain("powder"); }
     if (r) map.jumpTo({ center: [r.lon, r.lat], zoom: 10 });
     else if (hash) map.jumpTo({ center: [+hash[2], +hash[1]], zoom: +hash[3] });
     else flyRegion(st.region, true);
