@@ -1,0 +1,83 @@
+/* SnowScope Web · 3D Studio page (studio.html). Uses the site.css tokens only. */
+[hidden]{display:none!important}
+.st{max-width:980px;margin:0 auto;padding-bottom:24px}
+.st-hero h1{margin:22px 0 0;font-size:clamp(26px,5vw,36px);letter-spacing:-.02em;font-weight:720}
+.st-sec{margin-top:26px}
+.st-sec h2{font-size:18px;font-weight:680;margin:0 0 10px}
+.st-acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.st-hint{color:var(--ink3);font-size:13px;margin:6px 0}
+.st-empty{margin:0}
+.warn{color:var(--fair)}
+/* demo reels: 9:16 cards, 2 across on a phone, up to 4 on a wide screen */
+.st-demos{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+@media (min-width:720px){.st-demos{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}}
+.st-demo{margin:0;min-width:0;display:flex;flex-direction:column;gap:8px}
+.st-demo .st-v{position:relative;aspect-ratio:9/16;border-radius:var(--r-md);overflow:hidden;background:var(--surface3);box-shadow:var(--e1)}
+.st-demo.skel{aspect-ratio:9/16}
+.st-demo video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.st-demo figcaption{display:flex;flex-direction:column;gap:2px;padding:0 2px}
+.st-demo figcaption b{font-size:15px;font-weight:680;line-height:1.2}
+.st-demo figcaption small{font-size:12.5px;color:var(--ink3)}
+.st-demo .st-kind{align-self:flex-start;margin-bottom:2px}
+.st-kind{background:rgba(255,255,255,.18);color:#fff;align-self:flex-start;margin-bottom:4px}
+.st-kind{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.02em;text-transform:uppercase;padding:2px 7px;border-radius:999px;
+  background:var(--accent-tint);color:var(--accent-ink)}
+/* status */
+.st-quota{color:var(--ink2);font-size:14px;margin:0 0 8px}
+.st-note{display:flex;gap:12px;align-items:flex-start}.st-note>.ms{color:var(--fair);margin-top:2px}
+.st-note p,.st-upsell p,.st-status p{margin:0;color:var(--ink2)}
+.st-upsell h3{font-size:17px;margin:8px 0 4px;font-weight:660}
+#st-status .card{margin-bottom:12px}
+/* form */
+.st-formcard{display:flex;flex-direction:column;gap:16px}
+.st-field{display:flex;flex-direction:column;gap:8px;min-width:0}
+.st-lbl{font-size:13px;font-weight:650;color:var(--ink3)}
+.st-kinds{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media (max-width:420px){.st-kinds{grid-template-columns:1fr}}
+.st-kindbtn{display:flex;gap:10px;align-items:flex-start;text-align:start;padding:12px;border-radius:var(--r-sm);border:1.5px solid var(--outline);
+  background:var(--surface);cursor:pointer;min-width:0}
+.st-kindbtn span:last-child{display:flex;flex-direction:column;min-width:0}
+.st-kindbtn b{font-weight:650}.st-kindbtn small{color:var(--ink3);font-size:12.5px}
+.st-kindbtn[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-tint)}
+.st-kindbtn[aria-pressed="true"] .ms{color:var(--accent)}
+.st-find{position:relative;display:flex;align-items:center;gap:8px;height:46px;border-radius:12px;border:1px solid var(--outline);background:var(--surface2);padding:0 12px}
+.st-find .ms{color:var(--ink3)}
+.st-find input{flex:1;min-width:0;border:0;background:none;color:var(--ink);font:inherit;height:100%;outline:none}
+.st-find:focus-within{border-color:var(--accent)}
+.st-find ul{position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:5;list-style:none;margin:0;padding:4px;background:var(--surface);
+  border-radius:12px;box-shadow:var(--e2);max-height:320px;overflow:auto}
+.st-find li button{display:flex;justify-content:space-between;gap:10px;width:100%;padding:10px;border:0;background:none;border-radius:8px;cursor:pointer;text-align:start}
+.st-find li button small{color:var(--ink3);flex:none}
+.st-find li button:hover,.st-find li button.on{background:var(--surface3)}
+.st-loc{align-self:flex-start}
+.st-picked{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;background:var(--surface2)}
+.st-picked>span:nth-child(2){flex:1;min-width:0;display:flex;flex-direction:column}
+.st-picked small{color:var(--ink3);font-size:12.5px}
+.st-picked .ms{color:var(--accent)}
+.st-rfilter{display:flex;gap:10px;align-items:center}
+.st-rfilter input{flex:1;min-width:0;height:40px;border-radius:10px;border:1px solid var(--outline);background:var(--surface2);color:var(--ink);padding:0 10px;font:inherit}
+.st-runs{display:flex;flex-wrap:wrap;gap:6px;max-height:300px;overflow:auto;padding:2px}
+.st-run{display:inline-flex;align-items:center;gap:6px;max-width:100%;padding:7px 10px;border-radius:999px;border:1px solid var(--outline);background:var(--surface);cursor:pointer;font-size:13.5px}
+.st-run .st-rn{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.st-run small{color:var(--ink3);font-size:12px;flex:none}
+.st-run.on{border-color:var(--accent);background:var(--accent-tint)}
+.st-dot{width:10px;height:10px;border-radius:50%;flex:none;box-shadow:0 0 0 1px var(--hair)}
+.st-n{display:inline-grid;place-items:center;min-width:20px;height:20px;border-radius:10px;background:var(--accent);color:#fff;font-size:11.5px;font-weight:700;flex:none}
+/* jobs */
+#st-active .st-jobs{margin-top:12px}
+.st-jobs{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+#st-active .st-jobs{grid-template-columns:1fr}
+.st-job{display:flex;flex-direction:column;gap:8px;min-width:0}
+.st-job.row{flex-direction:row;gap:12px}
+.st-jb{display:flex;flex-direction:column;gap:6px;min-width:0;flex:1}
+.st-jh{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px}
+.st-jh b{font-weight:650}.st-jh small{color:var(--ink3);font-size:12.5px;margin-inline-start:auto}
+.st-thumb{width:72px;aspect-ratio:9/16;object-fit:cover;border-radius:10px;background:var(--surface3);flex:none}
+.st-out{width:100%;max-width:360px;aspect-ratio:9/16;border-radius:var(--r-md);background:#000;display:block;margin:4px 0}
+.st-state{display:flex;align-items:center;gap:8px;margin:0;color:var(--ink2);font-size:14px}
+.st-state.ok{color:var(--good);font-weight:600}
+.st-bar{height:6px;border-radius:3px;background:var(--surface3);overflow:hidden}
+.st-bar i{display:block;height:100%;background:var(--accent);border-radius:3px;transition:width .6s ease}
+.st-spin{width:14px;height:14px;border-radius:50%;border:2px solid var(--surface3);border-top-color:var(--accent);animation:stsp 0.9s linear infinite;flex:none}
+@keyframes stsp{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.st-spin{animation:none}.st-bar i{transition:none}}

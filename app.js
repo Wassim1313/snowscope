@@ -628,6 +628,8 @@
     map.on("click", "stays", (e) => {
       const f = e.features && e.features[0]; if (!f) return;
       st.stayClick = Date.now();
+      // BOOK chip -> the resort panel with "Stays near the slopes" open (owner 2026-11-02), the old popup as fallback
+      if (f.properties.s && BY[f.properties.s] && stayModule(0, 0, "", "x")) { st.openStays = true; openResort(f.properties.s); if (innerWidth <= 760) setSheet("full"); return; }
       const [lon, lat] = f.geometry.coordinates, n = f.properties.n, u = stayHref(lat, lon, n, "mappin");
       const other = stayMapHref(lat, lon, n);
       if (!u) return;
@@ -917,7 +919,7 @@
       }
     }
     map.getSource("stays").setData({ type: "FeatureCollection", features: best ? [{ type: "Feature",
-      geometry: { type: "Point", coordinates: [best.lon, best.lat] }, properties: { n: best.short } }] : [] });
+      geometry: { type: "Point", coordinates: [best.lon, best.lat] }, properties: { n: best.short, s: best.slug } }] : [] });
   }
   async function drawPins() {
     if (!ready || !map.getSource("pins")) return;
@@ -1253,6 +1255,8 @@
   }
   function afterRender() {
     const box = $("pbody");
+    fillDemos();
+    bindFolds(box); bindStays(box);
     box.querySelectorAll("[data-open]").forEach((b) => { b.onclick = (e) => { e.preventDefault(); openResort(b.dataset.open); }; });
     box.querySelectorAll("[data-goregion]").forEach((b) => { b.onclick = () => flyRegion(b.dataset.goregion); });
     bindStations(box);
@@ -1314,6 +1318,29 @@
     if (!("geolocation" in navigator)) { if (!quiet) toast("Location not available"); return; }
     navigator.geolocation.getCurrentPosition((p) => setOrigin({ lat: +p.coords.latitude.toFixed(3), lon: +p.coords.longitude.toFixed(3), label: "Near me", me: true }),
       () => { st.geoDenied = true; if (!quiet) toast("Location not available"); renderPanel(); }, { maximumAge: 6e5, timeout: 10000 });
+  }
+  function zoomControls() {
+    if ($("zoomctl")) return;
+    const z = document.createElement("div");
+    z.id = "zoomctl"; z.className = "zoomctl glass"; z.setAttribute("role", "group"); z.setAttribute("aria-label", "Map controls");
+    z.innerHTML = '<button data-z="1" aria-label="Zoom in" title="Zoom in"><span class="ms">add</span></button><span class="sep"></span>' +
+      '<button data-z="-1" aria-label="Zoom out" title="Zoom out"><span class="ms">remove</span></button>' +
+      '<button id="northBtn" aria-label="Reset north" title="Reset north" hidden><span class="ms" id="northIc">navigation</span></button>' +
+      '<button data-me aria-label="Show my position" title="Show my position"><span class="ms">my_location</span></button>';
+    $("panel").parentNode.appendChild(z);
+    z.onclick = (e) => {
+      const b = e.target.closest("button"); if (!b || !map) return;
+      if (b.dataset.z) map.easeTo({ zoom: map.getZoom() + +b.dataset.z, duration: 260 });
+      else if (b.id === "northBtn") map.easeTo({ bearing: 0, pitch: 0, duration: 500 });
+      else if (b.hasAttribute("data-me")) {
+        if (!("geolocation" in navigator)) { toast("Location not available"); return; }
+        b.classList.add("busy");
+        navigator.geolocation.getCurrentPosition((p) => { b.classList.remove("busy"); setOrigin({ lat: +p.coords.latitude.toFixed(3), lon: +p.coords.longitude.toFixed(3), label: "Near me", me: true, zoom: Math.max(10, map.getZoom()) }); },
+          () => { b.classList.remove("busy"); toast("Location not available"); }, { maximumAge: 6e5, timeout: 10000 });
+      }
+    };
+    const north = () => { const nb = $("northBtn"); if (!nb) return; const r = Math.abs(map.getBearing()) > 0.5 || map.getPitch() > 1; nb.hidden = !r; $("northIc").style.transform = "rotate(" + (-map.getBearing()) + "deg)"; };
+    map.on("rotate", north); map.on("pitch", north); map.on("load", north);
   }
   function verdictOf(dep, n24, n72) {
     if (n24 >= 20) return "Powder day: lots of fresh snow.";
@@ -1448,6 +1475,7 @@
       '<button class="btn ink" data-storm="' + i + '"><span class="ms">add_photo_alternate</span>Post image</button></div></article>').join("")
       : '<p class="none">' + esc(I18N.tu("No snow storm right now ({a} cm or more).", U.depN(20))) + "</p>");
     h += '<button class="btn ghost" data-viewpost style="margin-top:10px"><span class="ms">photo_camera</span>Post of this map view</button>';
+    h += '<div id="demos3d"></div>';
     let shown = false; try { shown = !!sessionStorage.getItem("ss_stormstay"); } catch { /* private */ }
     const s0 = (DATA.storms || []).find((x) => x.slug);
     if (s0 && !shown && stayHref(s0.lat, s0.lon, s0.place, "storm")) {
@@ -1467,7 +1495,9 @@
     const teaser = (icon, bg, t, s) => '<a class="teaser" href="' + esc(SS.appUrl()) + '"><span class="ic" style="background:' + bg + '"><span class="ms f">' + icon + "</span></span><span><b>" + t + "</b><small>" + s + "</small></span></a>";
     const hide = S.pro ? '<button class="row" role="switch" data-nostay aria-checked="' + !store.get("ss_nostay") + '"><span class="ic"><span class="ms">hotel</span></span><span class="tx"><b>Hotel suggestions</b><small>Places to stay near resorts</small></span><span class="sw-t"></span></button>' : "";
     const units = '<div class="sect">Units</div><div class="seg2" role="group" aria-label="Units"><button data-units="metric" aria-pressed="' + !U.us() + '">Metric · cm, m, km, °C</button><button data-units="us" aria-pressed="' + U.us() + '">US · in, ft, mi, °F</button></div>';
-    return '<div class="over">You</div><h1>Your SnowScope</h1>' + acc + pro + hide + units + '<div class="sect">Only in the app</div>' +
+    return '<div class="over">You</div><h1>Your SnowScope</h1>' + acc + pro + hide + units + '<div class="sect">3D videos</div>' +
+      '<a class="teaser" href="' + BASE + 'studio.html"><span class="ic" style="background:linear-gradient(160deg,#6E59F2,#4330C9)"><span class="ms f">movie</span></span><span><b>Create a 3D video</b><small>A flyover of any summit or ski circuit with today\'s snow.</small></span></a>' +
+      '<div class="sect">Only in the app</div>' +
       teaser("landscape", "linear-gradient(160deg,#F2662B,#C9381A)", "Peak finder", "Point your camera at the mountains to name every summit.") +
       teaser("timeline", "linear-gradient(160deg,#3B8BFF,#1463F3)", "Ski days", "Record your day: distance, runs, vertical.") +
       teaser("notifications", "linear-gradient(160deg,#3B8BFF,#1463F3)", "Powder alerts", "A message when fresh snow is coming.") + footer();
@@ -1556,7 +1586,6 @@
       '<button class="btn tonal" data-sharept><span class="ms">share</span>Share</button>' +
       (SS.stayLink(pt.lat, pt.lon, n ? n[0].short : "") ? '<a class="btn tonal" target="_blank" rel="sponsored noopener" href="' + esc(stayHref(pt.lat, pt.lon, n ? n[0].short : "", "point")) + '"><span class="ms">hotel</span>Stay</a>' : "") + "</div>" +
       (n ? '<button class="rrow" style="width:100%;border:0;background:none;text-align:start;margin-top:8px" data-open="' + esc(n[0].slug) + '"><span class="nm"><b>' + esc(n[0].short) + "</b><small>" + U.dist(Math.round(n[1])) + '</small></span><span class="ms">chevron_right</span></button>' : "") + footer();
-    bindFolds(box);
     box.querySelector("[data-back]").onclick = closePoint;
     box.querySelector("[data-sharept]").onclick = () => sharePoint(pt, n, today);
     afterRender();
@@ -1733,6 +1762,69 @@
       adults: "2", campaign: "snowscope_web_mappin_map" });
     return "https://www.stay22.com/embed/gm?" + q.toString();
   }
+  // "Stays near the slopes": the Stay22 map of places to stay around a resort / piste, inside a collapsible card
+  // (collapsed by default on phones, open state remembered), dates + guests + 3 quick filters drive the embed URL,
+  // the iframe loads only when the card is open (and, in Europe, after consent or an explicit click)
+  const STAYF = { budget: "Under {a}", rentals: "Chalets & apartments", rated: "Top rated" };
+  function stayUrl(o) {
+    const c = SS.S.cfg && SS.S.cfg.stay22;
+    if (!c || !c.aid) return "";
+    const q = new URLSearchParams({ aid: c.aid, lat: o.lat.toFixed(5), lng: o.lon.toFixed(5), venue: o.place, checkin: o.cin, checkout: o.cout, adults: String(o.adults),
+      campaign: "snowscope_web_" + o.where + "map", maincolor: "1463F3", zoom: "13", hidesettings: "true", hidebrandlogo: "true", hidefooter: "true",
+      ljs: (I18N.lang || "en"), currency: U.us() ? "USD" : "EUR", unitsystem: U.us() ? "imperial" : "metric", mapstyle: isDarkTheme() ? "dark" : "light" });
+    if (o.f.budget) { q.set("max", "150"); q.set("priceper", "nightly"); }
+    if (o.f.rentals) q.set("showhotels", "false");
+    if (o.f.rated) q.set("minguestrating", "8");
+    return "https://www.stay22.com/embed/gm?" + q.toString();
+  }
+  function stayModule(lat, lon, place, where) {
+    if (SS.staysHidden() || !(SS.S.cfg && SS.S.cfg.stay22 && SS.S.cfg.stay22.aid)) return "";
+    const cin0 = st.day > DATA.today ? st.day : DATA.today;
+    const sv = (() => { try { return JSON.parse(sessionStorage.getItem("ss_staysel") || "null") || {}; } catch { return {}; } })();
+    const cin = sv.cin && sv.cin >= DATA.today ? sv.cin : cin0, cout = sv.cout && sv.cout > cin ? sv.cout : addDays(cin, 1), ad = sv.adults || 2;
+    const open = get("ss_fold_stays", innerWidth > 760 ? 1 : 0);
+    return '<details class="fold stays" data-fold="stays" data-lat="' + lat + '" data-lon="' + lon + '" data-place="' + esc(place) + '" data-where="' + where + '"' + (open ? " open" : "") + ">" +
+      '<summary>Stays near the slopes<span class="partner">Partner</span></summary>' +
+      '<p class="note" style="margin:0 0 8px">Partner · we may earn a commission from bookings.</p>' +
+      '<div class="stayctl"><label><span>Check-in</span><input type="date" data-cin value="' + cin + '" min="' + DATA.today + '"></label>' +
+      '<label><span>Check-out</span><input type="date" data-cout value="' + cout + '" min="' + addDays(cin, 1) + '"></label>' +
+      '<label><span>Guests</span><select data-adults>' + [1, 2, 3, 4, 5, 6, 8].map((n) => '<option value="' + n + '"' + (n === ad ? " selected" : "") + ">" + n + "</option>").join("") + "</select></label></div>" +
+      '<div class="pills inl stayf" role="group" aria-label="Filters">' + Object.entries(STAYF).map(([k, v]) => '<button class="pill" data-sf="' + k + '" aria-pressed="' + !!(sv.f && sv.f[k]) + '">' +
+        esc(k === "budget" ? I18N.tu(v, U.us() ? "$150" : "€150") : v) + "</button>").join("") + "</div>" +
+      '<div class="staymap" data-staybox><div class="skel"></div></div>' +
+      '<a class="btn tonal stayout" target="_blank" rel="sponsored noopener" data-stayout href="#"><span class="ms">open_in_new</span>Open the full map</a></details>';
+  }
+  function bindStays(box) {
+    box.querySelectorAll("details.stays").forEach((d) => {
+      const read = () => ({ lat: +d.dataset.lat, lon: +d.dataset.lon, place: d.dataset.place, where: d.dataset.where,
+        cin: d.querySelector("[data-cin]").value || DATA.today, cout: d.querySelector("[data-cout]").value, adults: +d.querySelector("[data-adults]").value || 2,
+        f: Object.fromEntries([...d.querySelectorAll("[data-sf]")].map((b) => [b.dataset.sf, b.getAttribute("aria-pressed") === "true"])) });
+      let consent = null;
+      const load = async (force) => {
+        if (!d.open) return;
+        const o = read();
+        if (!o.cout || o.cout <= o.cin) { o.cout = addDays(o.cin, 1); d.querySelector("[data-cout]").value = o.cout; }
+        d.querySelector("[data-cout]").min = addDays(o.cin, 1);
+        try { sessionStorage.setItem("ss_staysel", JSON.stringify({ cin: o.cin, cout: o.cout, adults: o.adults, f: o.f })); } catch { /* private */ }
+        const u = stayUrl(o), a = d.querySelector("[data-stayout]"); if (a) a.href = u;
+        const sb = d.querySelector("[data-staybox]");
+        if (consent === null) consent = await SS.stayConsent();
+        if (!consent && !force) {
+          sb.innerHTML = '<div class="stayask"><span class="ms">map</span><p>The map of places to stay comes from our booking partner.</p><button class="btn ink" data-stayload>Show the map</button></div>';
+          sb.querySelector("[data-stayload]").onclick = () => { consent = true; load(true); };
+          return;
+        }
+        const f = sb.querySelector("iframe");
+        if (f) { if (f.src !== u) f.src = u; return; }
+        sb.innerHTML = '<iframe loading="lazy" title="' + esc(I18N.t("Places to stay near") + " " + o.place) + '" src="' + esc(u) + '" referrerpolicy="strict-origin-when-cross-origin"></iframe>';
+      };
+      d.addEventListener("toggle", () => { if (d.open) load(); });
+      d.addEventListener("change", (e) => { if (e.target.matches("input,select")) load(); });
+      d.querySelectorAll("[data-sf]").forEach((b) => { b.onclick = () => { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") !== "true"); load(); }; });
+      if (d.open) load();
+      if (st.openStays) { st.openStays = false; d.open = true; load(); setTimeout(() => d.scrollIntoView({ behavior: "smooth", block: "start" }), 250); }
+    });
+  }
   function stayHref(lat, lon, place, where, day) {
     if (SS.staysHidden()) return "";
     const u = SS.stayLink(lat, lon, place, day || st.day);
@@ -1877,15 +1969,27 @@
       adSlot("resort", x) +
       '<div class="sect">This season vs past winters</div><div id="rHist"></div>' +
       '<div class="sect">Next 7 days</div><div id="rFc"></div>' +
-      '<div class="sect">Stay near ' + esc(x.short) + "</div>" + (SS.stayBlock(x.lat, x.lon, x.short, { day: st.day, where: "panel" }) || '<p class="none">No partner here yet.</p>') +
+      stayModule(x.lat, x.lon, x.short, "panel") +
       '<div class="sect">Nearby resorts</div>' + near.map(([km, y]) => resRow(y, null, (y.snow[ti] || [])[0], U.dist(Math.round(km)), (y.snow[ti] || [])[1])).join("") + appCard() + footer();
     box.querySelector("[data-back]").onclick = () => (st.pushed ? history.back() : closeResort());
     box.querySelector(".hero2").insertAdjacentHTML("afterend", '<div class="acts3" style="margin-bottom:6px"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a><button class="btn ink" data-share="' + esc(slug) + '" data-sd="' + st.day + '"><span class="ms">share</span>Share</button>' +
-      (stayHref(x.lat, x.lon, x.short, "panel") ? '<a class="btn tonal" target="_blank" rel="sponsored noopener" title="Partner link: we may earn a commission" href="' + esc(stayHref(x.lat, x.lon, x.short, "panel")) + '"><span class="ms">hotel</span>Sleep near</a>' : "") + "</div>");
+      (stayHref(x.lat, x.lon, x.short, "panel") ? '<a class="btn tonal" target="_blank" rel="sponsored noopener" title="Partner link: we may earn a commission" href="' + esc(stayHref(x.lat, x.lon, x.short, "panel")) + '"><span class="ms">hotel</span>Sleep near</a>' : "") + "</div>" +
+      '<a class="rowlink" href="' + BASE + "studio.html?slug=" + encodeURIComponent(slug) + '"><span class="ms">movie</span><span><b>Create a 3D video</b><small>A short flyover of ' + esc(x.short) + ' with today\'s snow</small></span><span class="ms">chevron_right</span></a>');
     afterRender();
     daysChart(x, res);
     histChart(x);
     forecast(x);
+  }
+  // "3D videos" card (Powder tab): the first demo cover from the static studio/demos.json, opens the 3D Studio page
+  let demosLoad = null;
+  function fillDemos() {
+    const el = $("demos3d"); if (!el) return;
+    if (!demosLoad) demosLoad = SS.getJSON(BASE + "studio/demos.json").catch(() => ({ demos: [] }));
+    demosLoad.then((j) => {
+      const e2 = $("demos3d"), d = (j.demos || [])[0]; if (!e2 || !d) return;
+      e2.innerHTML = '<a class="card demo3d" href="' + BASE + 'studio.html"><img src="' + esc(BASE + d.cover_url) + '" alt="" loading="lazy"><span class="tx"><span class="over">3D videos</span><b>' + esc(d.title) + "</b><small>" +
+        esc((d.subtitle || "").replace(/(\d+(?:\.\d+)?) ?cm\b/g, (m, v) => U.depth(+v))) + '</small><span class="lnk">See the 3D demos<span class="ms">chevron_right</span></span></span></a>';
+    });
   }
   function svgBars(days, todayD, locked) {
     const W = 360, H = 150, n = days.length, bw = W / n, max = Math.max(20, ...days.map((d) => d.dep || 0)) * 1.15;
@@ -2009,7 +2113,7 @@
   map = new LIB.Map({ container: "map", style: styleUrl(), center: R0.center, zoom: 5, minZoom: 2, attributionControl: { compact: true },
     transformRequest: (url) => SS.transformRequest(url), preserveDrawingBuffer: true, maxPitch: 75, dragRotate: true, pitchWithRotate: true });
   window.SSApp.map = map;
-  map.addControl(new LIB.NavigationControl({ showCompass: true, visualizePitch: true }), "bottom-right");   // the layer rail owns the top-right
+  zoomControls();   // own + / − / north / locate stack (owner 2026-11-02 "zoom in / zoom out, add them"), replaces the small MapLibre control
   map.on("style.load", onStyle);
   map.on("load", () => {
     const r = initialSlug && BY[initialSlug];

@@ -371,6 +371,28 @@
     },
   };
 
+  // may a Stay22 iframe load now? outside Europe yes; in Europe only with Google's consent message saying yes
+  // (purpose 1); without an answer the page shows a "load the map" button (an explicit click loads it)
+  function stayConsent() {
+    return new Promise((ok) => {
+      if (!LMA.europe()) { ok(true); return; }
+      let done = false, tries = 0;
+      const fin = (v) => { if (!done) { done = true; ok(v); } };
+      const poll = () => {
+        if (typeof window.__tcfapi === "function") {
+          window.__tcfapi("addEventListener", 2, (tc, good) => {
+            if (!good || !tc) return;
+            if (tc.eventStatus !== "tcloaded" && tc.eventStatus !== "useractioncomplete") return;
+            fin(tc.gdprApplies === false || !!(tc.purpose && tc.purpose.consents && tc.purpose.consents[1]));
+          });
+          setTimeout(() => fin(false), 3000);
+        } else if (++tries < 6) setTimeout(poll, 400);
+        else fin(false);
+      };
+      poll();
+    });
+  }
+
   // ------------------------------------------------------------------ modals
   function modal(html, { onClose } = {}) {
     const sc = document.createElement("div");
@@ -506,6 +528,15 @@
   async function mapLib() {       // MapLibre + free OpenFreeMap styles (no key, no per-load cost)
     loadCss("https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css");
     await loadScript("https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js");
+    // Arabic / Hebrew labels (Casablanca, Rabat... on the basemap, Arabic station / resort names): MapLibre shapes
+    // right-to-left text only with the RTL plugin (0.2.3: the classic worker build MapLibre 4 can importScripts; 0.3.0 is an ES module and fails); lazy = loaded the first time such a label is on screen
+    try {
+      const ml = window.maplibregl;
+      if (ml && ml.setRTLTextPlugin && (!ml.getRTLTextPluginStatus || ml.getRTLTextPluginStatus() === "unavailable")) {
+        const p = ml.setRTLTextPlugin("https://cdn.jsdelivr.net/npm/@mapbox/mapbox-gl-rtl-text@0.2.3/mapbox-gl-rtl-text.min.js", true);
+        if (p && p.catch) p.catch(() => {});
+      }
+    } catch { /* already set / old browser: labels stay as before */ }
     return { lib: window.maplibregl, style: "https://tiles.openfreemap.org/styles/liberty", mapbox: false };
   }
 
@@ -575,6 +606,6 @@
     return S;
   }
 
-  window.SS = { U, S, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
+  window.SS = { U, S, stayConsent, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
                 resorts, mapLib, transformRequest, onChange: (f) => S.listeners.push(f), store, ROOT };
 })();
