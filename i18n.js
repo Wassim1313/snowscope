@@ -82,6 +82,8 @@
     "{a} m higher": ["{a} m plus haut", "{a} m höher", "{a} m più in alto", "{a} m más alto", "أعلى بـ {a} م"],
     "{a} m lower": ["{a} m plus bas", "{a} m tiefer", "{a} m più in basso", "{a} m más bajo", "أدنى بـ {a} م"],
     "Last {a} days": ["{a} derniers jours", "Letzte {a} Tage", "Ultimi {a} giorni", "Últimos {a} días", "آخر {a} أيام"],
+    "Sharp 30 m": ["Net 30 m", "Scharf 30 m", "Nitido 30 m", "Nítido 30 m", "دقيق 30 م"],
+    "The sharpest snow picture, where available": ["L'image de neige la plus fine, là où elle existe", "Das schärfste Schneebild, wo vorhanden", "L'immagine della neve più nitida, dove disponibile", "La imagen de nieve más nítida, donde existe", "أدق صورة للثلج حيثما توفرت"],
     "3D view": ["Vue 3D", "3D-Ansicht", "Vista 3D", "Vista 3D", "عرض ثلاثي الأبعاد"],
     "Snow storms": ["Tempêtes de neige", "Schneestürme", "Bufere di neve", "Temporales de nieve", "عواصف ثلجية"],
     "Create post": ["Créer une publication", "Beitrag erstellen", "Crea un post", "Crear publicación", "أنشئ منشورًا"],

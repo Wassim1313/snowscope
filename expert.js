@@ -29,6 +29,7 @@
     { id: "powder", icon: "cloudy_snowing", label: "New snow", key: "2" },
     { id: "p72", icon: "weather_snowy", label: "3 days", key: "3", pro: true },
     { id: "sat", icon: "satellite_alt", label: "Satellite", key: "4" },
+    { id: "s30", icon: "grid_on", label: "Sharp 30 m", key: "s" },
     { sep: true },
     { id: "wind", icon: "air", label: "Wind", key: "5", pro: true },
     { id: "freeze", icon: "device_thermostat", label: "0 °C", key: "6", pro: true },
