@@ -227,8 +227,9 @@
       if (vis) map.setPaintProperty(l.id, "raster-opacity", cover ? 0 : 0.95 * (st.monly ? 0.22 : 1));
     }
   }
+  const s30Enabled = () => !!(SS.S.cfg && SS.S.cfg.snow30_enabled);     // owner switch (data/web_config.json): off = no 30 m anywhere
   async function loadS30() {
-    if (!SS.S.api) return;
+    if (!SS.S.api || !s30Enabled()) { st.s30 = null; return; }
     try { const c = await SS.api("/v1/config", { auth: false, timeout: 12000 }); st.s30 = c && c.snow30 && c.snow30.enabled ? c.snow30 : null; } catch { st.s30 = null; }
     if (st.s30) refreshS30();
   }
@@ -1012,7 +1013,7 @@
       (pro && !st.pro ? '<span class="pro"><span class="ms f">lock</span>PRO</span>' : "") + "<span>" + name + "</span></button>";
     const rows = [["wind", "Wind", "Around midday", "air", true, true], ["freeze", "Freezing level", "Where 0 °C sits", "device_thermostat", true, true],
       ["radar", "Rain & snow radar", "Right now", "radar", false, true], ["p72", "3-day snow", "Powder over 3 days", "ac_unit", true],
-      ["s30", "Sharp 30 m", "The sharpest snow picture, where available", "grid_on"], ["stn", "Measured snow", "Snow depth measured at stations", "sensors"], ["pins", "Resorts", "Name and snow on each resort", "location_on"], ["stays", "Places to stay", "BOOK chips on resorts · Partner", "hotel"], ["pistes", "Pistes & lifts", "Coloured by difficulty", "downhill_skiing"]];
+      ...(s30Enabled() ? [["s30", "Sharp 30 m", "The sharpest snow picture, where available", "grid_on"]] : []), ["stn", "Measured snow", "Snow depth measured at stations", "sensors"], ["pins", "Resorts", "Name and snow on each resort", "location_on"], ["stays", "Places to stay", "BOOK chips on resorts · Partner", "hotel"], ["pistes", "Pistes & lifts", "Coloured by difficulty", "downhill_skiing"]];
     const row = ([id, name, sub, icon, pro, main]) => {
       const on = main ? st.main === id : id === "p72" ? st.p72 : !!st.over[id];
       const dis = id === "radar" && st.radar === false;
@@ -1766,7 +1767,7 @@
   // bridge for the expert chrome (expert.js: layer rail, timeline scrub, hour steps, meteogram, keyboard, theme)
   window.SSApp.x = { st, data: () => DATA, map: () => map, setMain, setDay, toggleOver, overOn, layersSheet, play, isPlaying: () => !!playT, scrub, settle, radarFrame,
     isStatic, dayLocked, proLive, addDays, wd, dnum, longDay, D, fmt, toast, codeAt, regionAt, decDepth, renderMain, drawLegend, openPoint, closePoint,
-    has: (id) => id === "stn" ? typeof drawStations === "function" : true, LOC, DEPTH, NEW, rampAt };
+    has: (id) => id === "stn" ? typeof drawStations === "function" : id === "s30" ? s30Enabled() : true, LOC, DEPTH, NEW, rampAt };
   drawRegions(); drawDays(); drawLegend(); setupSheet(); setupTabs();
   if (window.SSX) SSX.init(window.SSApp.x);
   $("layersBtn").onclick = layersSheet;
