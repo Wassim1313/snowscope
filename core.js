@@ -212,10 +212,13 @@
     const iso = (x) => x.getFullYear() + "-" + String(x.getMonth() + 1).padStart(2, "0") + "-" + String(x.getDate()).padStart(2, "0");
     return [iso(fri), iso(new Date(fri.getFullYear(), fri.getMonth(), fri.getDate() + 2))];
   }
-  function stayLink(lat, lon, place) {
+  function stayLink(lat, lon, place, day) {
     const s = S.cfg && S.cfg.stay22;
     if (!s || !s.link) return null;
-    const [cin, cout] = nextWeekend();
+    // date-aware: the chosen day as check-in (if not past), else the next weekend
+    const today = new Date().toISOString().slice(0, 10);
+    let [cin, cout] = nextWeekend();
+    if (day && day > today) { cin = day; const d = new Date(day + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + 1); cout = d.toISOString().slice(0, 10); }
     const lang = (navigator.language || "en").slice(0, 2).toLowerCase();
     const v = { lat: lat.toFixed(4), lon: lon.toFixed(4), place, checkin: cin, checkout: cout, adults: "2", lang };
     return s.link.replace(/\{([a-z_]+)\}/g, (m, k) => (k in v ? encodeURIComponent(v[k]) : m));

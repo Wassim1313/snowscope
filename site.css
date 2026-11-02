@@ -399,3 +399,4 @@ body.app .legend{position:fixed;left:auto;right:12px;bottom:84px;z-index:14;max-
 .pills.inl .pill,.filters .pill{height:36px}
 .filters .pill[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 @media (max-width:760px){.origin .btn .ms+*{display:none}}
+.skel{border-radius:14px;background:linear-gradient(90deg,var(--surface2),var(--surface3),var(--surface2));background-size:200% 100%;animation:sk 1.2s linear infinite}@keyframes sk{to{background-position:-200% 0}}

@@ -388,6 +388,8 @@
     map.addLayer({ id: "aval_fill", type: "fill", source: "aval", layout: { visibility: "none" },
       paint: { "fill-color": ["match", ["get", "lvl"], 1, AVAL[1], 2, AVAL[2], 3, AVAL[3], 4, AVAL[4], 5, AVAL[5], "rgba(0,0,0,0)"], "fill-opacity": 0.45 } }, "pistes");
     map.addLayer({ id: "aval_line", type: "line", source: "aval", layout: { visibility: "none" }, paint: { "line-color": "rgba(11,18,32,.35)", "line-width": 0.6 } }, "pistes");
+    map.addSource("pt", { type: "geojson", data: fc });
+    map.addLayer({ id: "pt", type: "circle", source: "pt", paint: { "circle-radius": 7, "circle-color": "#0B1220", "circle-stroke-color": "#fff", "circle-stroke-width": 3 } });
     map.addSource("pins", { type: "geojson", data: fc });
     const font = ML.mapbox ? ["DIN Pro Medium", "Arial Unicode MS Regular"] : ["Noto Sans Regular"];
     map.addLayer({ id: "pins", type: "circle", source: "pins", minzoom: 6,
@@ -451,8 +453,8 @@
   function regionAt(ll) {
     return DATA.regions.find((r) => { const L = r.lattice; return ll.lng >= L.west && ll.lng < L.west + L.nx * L.dlon && ll.lat <= L.north && ll.lat > L.north - L.ny * L.dlat; });
   }
-  async function codeAt(r, p, ll) {
-    const d = r.days.find((x) => x.date === st.day);
+  async function codeAt(r, p, ll, date = st.day, fineZoom = map && map.getZoom() >= 7) {
+    const d = r.days.find((x) => x.date === date);
     if (!d) return null;
     const pick = async (url, n, s, w, e) => {
       const cd = await codesOf(url);
@@ -460,12 +462,13 @@
       const row = Math.floor((mercY(n) - mercY(ll.lat)) / (mercY(n) - mercY(s)) * cd.h), col = Math.floor((ll.lng - w) / (e - w) * cd.w);
       return row >= 0 && row < cd.h && col >= 0 && col < cd.w ? cd.c[row * cd.w + col] : null;
     };
-    if (r.fine && map.getZoom() >= 7) {
+    if (!d.ov[p]) return null;
+    if (r.fine && fineZoom && d.fine[p]) {
       const L = r.lattice500, CH = r.chunk;
       const cr = Math.floor((L.north - ll.lat) / L.dlat / CH), cc = Math.floor((ll.lng - L.west) / L.dlon / CH);
       if (!(d.fine[p] || []).some(([a, b]) => a === cr && b === cc)) return p === "d" ? await pick(BASE + d.ov.d, r.coords[0][1], r.coords[2][1], r.coords[0][0], r.coords[1][0]) : 0;
       const bx = chunkBox(r, cr, cc);
-      return pick(fineUrl(r, st.day, p, cr, cc), bx.n, bx.s, bx.w, bx.e);
+      return pick(fineUrl(r, date, p, cr, cc), bx.n, bx.s, bx.w, bx.e);
     }
     return pick(BASE + d.ov[p], r.coords[0][1], r.coords[2][1], r.coords[0][0], r.coords[1][0]);
   }
@@ -482,6 +485,8 @@
     if (pin) { openResort(pin.properties.s); return; }
     const ll = e.lngLat;
     if (popup) popup.remove();
+    const avalHit = st.over.aval && map.getLayer("aval_fill") && map.queryRenderedFeatures(e.point, { layers: ["aval_fill"] })[0];
+    if ((st.main === "depth" || st.main === "powder") && !avalHit) { openPoint({ lat: ll.lat, lon: ll.lng }); return; }
     popup = new LIB.Popup({ closeButton: true, maxWidth: "280px", offset: 8 }).setLngLat(ll).setHTML('<div class="pv"><span class="k">Loading…</span></div>').addTo(map);
     const when = st.day === DATA.today ? "Today" : longDay(st.day);
     const r = regionAt(ll), mode = st.main;
@@ -606,6 +611,7 @@
       if (!b) return;
       st.tab = b.dataset.tab;
       if (st.slug) closeResort(true);
+      st.point = null;
       renderPanel();
       if (innerWidth <= 760) setSheet(st.sheet === "peek" || st.tab !== "map" ? "half" : st.sheet);
     };
@@ -642,6 +648,7 @@
     markTabs();
     const box = $("pbody");
     if (st.slug) { await resortView(st.slug); return; }
+    if (st.point) { await pointView(st.point); return; }
     if (st.tab === "ski") box.innerHTML = await skiView();
     else if (st.tab === "powder") box.innerHTML = await powderView();
     else if (st.tab === "you") box.innerHTML = youView();
@@ -847,6 +854,117 @@
     if (e.target.id === "skiCountry") { st.ski.country = e.target.value; renderPanel(); }
   });
 
+  // ------------------------------------------------------------------ any point: season vs past winters + next days
+  function openPoint(pt, { quiet = false } = {}) {
+    st.point = { lat: +pt.lat.toFixed(4), lon: +pt.lon.toFixed(4) }; st.slug = null;
+    history.replaceState(null, "", BASE + "?p=" + st.point.lat + "," + st.point.lon + (st.day !== DATA.today ? "&d=" + st.day : "") + location.hash.replace(/^#@.*/, ""));
+    if (map && map.getSource("pt")) map.getSource("pt").setData({ type: "Feature", geometry: { type: "Point", coordinates: [st.point.lon, st.point.lat] } });
+    if (innerWidth <= 760 && !quiet) setSheet("half");
+    $("pbody").scrollTop = 0;
+    renderPanel();
+  }
+  function closePoint() {
+    st.point = null;
+    if (map && map.getSource("pt")) map.getSource("pt").setData({ type: "FeatureCollection", features: [] });
+    history.replaceState(null, "", BASE + "#" + slugOf(st.region));
+    renderPanel();
+  }
+  async function pointView(pt) {
+    const box = $("pbody"), ll = { lat: pt.lat, lng: pt.lon }, r = regionAt(ll);
+    const days = r ? await Promise.all(DATA.dates.map(async (d) => {
+      const [cd, cn] = await Promise.all([codeAt(r, "d", ll, d, true), codeAt(r, "n", ll, d, true)]);
+      return { date: d, dep: cd == null || cd === 255 ? null : decDepth(cd), nw: cn == null || cn === 255 ? 0 : cn };
+    })) : [];
+    if (st.point !== pt) return;
+    const today = days.find((d) => d.date === DATA.today) || {};
+    const n = await nearest(ll);
+    box.innerHTML = '<button class="back" data-back><span class="ms">arrow_back</span>' + esc(r ? r.name : "Back") + "</button>" +
+      '<div class="over">Snow here</div><h1>' + (n ? "Near " + esc(n[0].short) : esc(r ? r.name : "This spot")) + '</h1><p class="lede" id="ptMeta">' +
+      pt.lat.toFixed(3) + ", " + pt.lon.toFixed(3) + "</p>" +
+      '<div class="hero2"><div class="card"><div class="over">Snow today</div><b class="n">' + (today.dep == null ? "–" : today.dep >= 1 ? today.dep + "<small>cm</small>" : "0<small>cm</small>") + "</b></div>" +
+      '<div class="card"><div class="over">New snow</div>' + (today.nw >= 1 ? '<b class="n acc">+' + today.nw + "<small>cm</small></b>" : '<b class="n">–</b>') + "</div></div>" +
+      '<p id="ptVerdict" style="font-weight:620;margin:4px 0 10px"></p>' +
+      '<div class="sect">This season and the next days</div><div id="ptChart"><div class="skel" style="height:190px"></div></div>' +
+      '<div class="acts3" style="margin-top:12px"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + pt.lat + "," + pt.lon + '"><span class="ms">directions_car</span>Directions</a>' +
+      '<button class="btn tonal" data-sharept><span class="ms">share</span>Share</button>' +
+      (SS.stayLink(pt.lat, pt.lon, n ? n[0].short : "") ? '<a class="btn tonal" target="_blank" rel="sponsored noopener" href="' + esc(stayHref(pt.lat, pt.lon, n ? n[0].short : "", "point")) + '"><span class="ms">hotel</span>Stay</a>' : "") + "</div>" +
+      (n ? '<button class="rrow" style="width:100%;border:0;background:none;text-align:start;margin-top:8px" data-open="' + esc(n[0].slug) + '"><span class="nm"><b>' + esc(n[0].short) + "</b><small>" + Math.round(n[1]) + ' km</small></span><span class="ms">chevron_right</span></button>' : "") + footer();
+    box.querySelector("[data-back]").onclick = closePoint;
+    box.querySelector("[data-sharept]").onclick = () => sharePoint(pt, n, today);
+    afterRender();
+    pointChart(pt, days);
+  }
+  async function pointChart(pt, days) {
+    const box = $("ptChart");
+    let h = null, live = null;
+    try { h = await SS.api("/v1/history/point?lat=" + pt.lat + "&lon=" + pt.lon, { auth: true, timeout: 20000 }); } catch (e) { h = null; }
+    if (st.pro && proLive()) {
+      try {
+        const fine = DATA.regions.some((r) => r.fine && regionAt({ lat: pt.lat, lng: pt.lon }) === r);
+        const p = await SS.api((fine ? "/v1/g500/point" : "/v1/grid/point") + "?lat=" + pt.lat + "&lon=" + pt.lon);
+        live = (p.days || []).map((d) => ({ date: d.date, dep: d.depth_cm == null ? null : Math.round(d.depth_cm), nw: Math.round(d.new_cm || 0) }));
+        if (p.elev_m && $("ptMeta")) $("ptMeta").textContent = fmt(p.elev_m) + " m";
+      } catch { live = null; }
+    }
+    if (!box || st.point !== pt) return;
+    // series: past from the history "current", then the free days, then (Pro) the live days up to +7
+    const byDate = {};
+    if (h) for (const q of h.current || []) if (q.depth_cm != null) byDate[q.date] = { dep: q.depth_cm, past: true };
+    for (const d of days) if (d.dep != null) byDate[d.date] = { dep: d.dep, nw: d.nw };
+    for (const d of live || []) if (d.dep != null && (d.date > DATA.today || !byDate[d.date])) byDate[d.date] = { dep: d.dep, nw: d.nw };
+    const freeEnd = addDays(DATA.today, 3), end = addDays(DATA.today, 15);
+    const year = +DATA.today.slice(0, 4), m = +DATA.today.slice(5, 7);
+    const start = (m >= 8 ? year : year - 1) + "-10-01";
+    const nDays = Math.round((D(end) - D(start)) / 864e5);
+    const X = (d) => Math.round((D(d) - D(start)) / 864e5);
+    const clim = h && h.climatology, idx = clim ? Object.fromEntries(clim.mmdd.map((k, i) => [k, i])) : {};
+    const at = (key, d) => (clim && clim[key] ? clim[key][idx[d.slice(5)]] : null);
+    const W = 360, H = 190, top = 14, bot = 24;
+    const all = Object.values(byDate).map((v) => v.dep);
+    let max = Math.max(20, ...all);
+    for (let k = 0; k <= nDays; k += 3) { const v = at("max", addDays(start, k)) ?? at("p90", addDays(start, k)); if (v != null) max = Math.max(max, Math.min(v, Math.max(...all, 20) * 3)); }
+    max *= 1.08;
+    const px = (k) => (k / nDays) * W, py = (v) => H - bot - (Math.min(v, max) / max) * (H - bot - top);
+    const band = (lo, hi) => {
+      let a = "", b = "";
+      for (let k = 0; k <= nDays; k++) { const d = addDays(start, k), l = at(lo, d), u = at(hi, d); if (l == null || u == null) continue; a += (a ? "L" : "M") + px(k).toFixed(1) + "," + py(u).toFixed(1); b = "L" + px(k).toFixed(1) + "," + py(l).toFixed(1) + b; }
+      return a ? a + b + "Z" : "";
+    };
+    const line = (key) => { let a = ""; for (let k = 0; k <= nDays; k++) { const v = at(key, addDays(start, k)); if (v != null) a += (a ? "L" : "M") + px(k).toFixed(1) + "," + py(v).toFixed(1); } return a; };
+    const pts = Object.keys(byDate).filter((d) => d >= start && d <= end).sort();
+    const path = (from, to) => pts.filter((d) => d >= from && d <= to).map((d, i) => (i ? "L" : "M") + px(X(d)).toFixed(1) + "," + py(byDate[d].dep).toFixed(1)).join("");
+    const lockX = px(X(freeEnd));
+    let s = '<svg class="chart" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Snow depth this season compared with past winters">' +
+      (clim ? '<path d="' + band("min", "max") + '" fill="var(--accent-tint)" opacity=".55"/><path d="' + band("p25", "p75") + '" fill="var(--accent-tint)"/><path d="' + line("p50") + '" fill="none" stroke="var(--accent)" stroke-width="1.4" stroke-dasharray="4 3"/>' : "") +
+      '<path d="' + path(start, DATA.today) + '" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linejoin="round"/>' +
+      '<path d="' + path(DATA.today, st.pro ? end : freeEnd) + '" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-dasharray="5 4"/>' +
+      '<line x1="' + px(X(DATA.today)) + '" x2="' + px(X(DATA.today)) + '" y1="' + top + '" y2="' + (H - bot) + '" stroke="var(--ink3)" stroke-dasharray="2 3"/>' +
+      (!st.pro ? '<rect x="' + lockX + '" y="' + top + '" width="' + (W - lockX) + '" height="' + (H - bot - top) + '" fill="var(--surface2)" opacity=".85"/><text x="' + ((lockX + W) / 2) + '" y="' + (H / 2) + '" text-anchor="middle" class="lbl">PRO</text>' : "");
+    const mn = [["10-01", "Oct"], ["11-01", "Nov"], ["12-01", "Dec"], ["01-01", "Jan"], ["02-01", "Feb"], ["03-01", "Mar"], ["04-01", "Apr"], ["05-01", "May"]];
+    for (let k = 0; k <= nDays; k++) { const d = addDays(start, k), q = mn.find((x) => x[0] === d.slice(5)); if (q) s += '<text x="' + px(k) + '" y="' + (H - 6) + '">' + q[1] + "</text>"; }
+    s += '<text x="' + (W - 2) + '" y="11" text-anchor="end">' + Math.round(max / 1.08) + " cm</text></svg>";
+    let verdict = "";
+    const t0 = byDate[DATA.today], p50 = at("p50", DATA.today), p25 = at("p25", DATA.today), p75 = at("p75", DATA.today);
+    if (t0 && p50 != null) verdict = t0.dep > (p75 ?? p50 * 1.3) + 2 ? "Above normal for " : t0.dep < (p25 ?? p50 * 0.7) - 2 ? "Below normal for " : "About normal for ";
+    if (verdict) { const dd = D(DATA.today).getUTCDate(); verdict += (dd <= 10 ? "early " : dd <= 20 ? "mid " : "late ") + D(DATA.today).toLocaleDateString("en-GB", { month: "long", timeZone: "UTC" }) + "."; }
+    const next = Object.keys(byDate).sort().find((d) => d > DATA.today && d <= (st.pro ? end : freeEnd) && (byDate[d].nw || 0) >= 5);
+    $("ptVerdict").innerHTML = [verdict ? "<span>" + verdict + "</span>" : "", next ? "<span>Snow expected " + D(next).toLocaleDateString("en-GB", { weekday: "long", timeZone: "UTC" }) + ": +" + byDate[next].nw + " cm</span>" : ""].filter(Boolean).join("<br>");
+    box.innerHTML = s + '<div class="keyrow"><span><i style="background:var(--ink)"></i>this season</span><span><i style="background:var(--accent)"></i>usual</span><span><i style="background:var(--accent-tint)"></i>past winters</span><span>- - next days</span></div>' +
+      (!h ? '<p class="none">Past winters are updating, try again in a minute.</p>' : "") +
+      (!st.pro ? '<div class="prolock" style="margin-top:10px"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>The next 3 days are free.</b><br>Pro adds the whole week ahead and the outlook.</p><button class="btn ink" data-up>Unlock the week</button></div>' : "");
+    const up = box.querySelector("[data-up]"); if (up) up.onclick = () => SS.upsell("The week ahead is in Pro");
+  }
+  async function sharePoint(pt, n, today) {
+    const url = "https://snowscope.app/?p=" + pt.lat + "," + pt.lon + "&d=" + st.day;
+    const text = (n ? n[0].short + ": " : "") + (today.dep != null ? today.dep + " cm" : "") + (today.nw ? ", +" + today.nw + " cm new" : "");
+    if (navigator.share && matchMedia("(pointer:coarse)").matches) { try { await navigator.share({ title: "SnowScope", text, url }); return; } catch (e) { if (e && e.name === "AbortError") return; } }
+    shareModal(text, url);
+  }
+  function stayHref(lat, lon, place, where) {
+    const u = SS.stayLink(lat, lon, place, st.day);
+    return u ? u.replace("campaign=snowscope_web", "campaign=snowscope_web_" + where) : "";
+  }
+
   // ------------------------------------------------------------------ share a resort with friends
   async function shareResort(slug, date) {
     const res = await RES.catch(() => null), x = BY[slug];
@@ -857,6 +975,10 @@
     const text = x.short + ": " + (s[0] != null ? s[0] + " cm " + t("on the upper slopes") : t("snow report")) + (s[1] ? ", +" + s[1] + " cm " + t("new") : "") +
       " (" + (date === DATA.today ? t("Today") : wd(date) + " " + dnum(date)) + ")";
     if (navigator.share && matchMedia("(pointer:coarse)").matches) { try { await navigator.share({ title: "SnowScope", text, url }); return; } catch (e) { if (e && e.name === "AbortError") return; } }
+    shareModal(text, url);
+  }
+  function shareModal(text, url) {
+    const t = (q) => (window.I18N ? I18N.t(q) : q);
     const m = SS.modal(SS.head(t("Share with friends")) + '<p style="margin:0 0 10px">' + esc(text) + '</p><div class="filters"><a class="btn ink" target="_blank" rel="noopener" href="https://wa.me/?text=' + encodeURIComponent(text + " " + url) +
       '"><span class="ms">chat</span>WhatsApp</a><button class="btn tonal" data-copylink><span class="ms">link</span>' + t("Copy link") + "</button></div>" +
       '<input readonly class="filter" style="max-width:none;width:100%" value="' + esc(url) + '">');
@@ -1076,16 +1198,18 @@
   map.on("style.load", onStyle);
   map.on("load", () => {
     const r = initialSlug && BY[initialSlug];
+    const pq = /^(-?[\d.]+),(-?[\d.]+)$/.exec(new URLSearchParams(location.search).get("p") || "");
+    if (pq) { map.jumpTo({ center: [+pq[2], +pq[1]], zoom: 9 }); openPoint({ lat: +pq[1], lon: +pq[2] }, { quiet: true }); }
     const rq = new URLSearchParams(location.search).get("r");
     const rll = rq && /^(-?[\d.]+),(-?[\d.]+)$/.exec(rq);
     if (rq && BY[rq] && !r) openResort(rq, { push: false });
     else if (rll) { map.jumpTo({ center: [+rll[2], +rll[1]], zoom: 8.5 }); setMain("powder"); }
     if (r) map.jumpTo({ center: [r.lon, r.lat], zoom: 10 });
     else if (hash) map.jumpTo({ center: [+hash[2], +hash[1]], zoom: +hash[3] });
-    else flyRegion(st.region, true);
+    else if (!new URLSearchParams(location.search).get("p") && !new URLSearchParams(location.search).get("r")) flyRegion(st.region, true);
     map.on("click", onClick);
     map.on("moveend", () => {
-      if (!st.slug && !regionMove) history.replaceState(history.state, "", location.pathname + "#@" + map.getCenter().lat.toFixed(3) + "," + map.getCenter().lng.toFixed(3) + "," + map.getZoom().toFixed(1));
+      if (!st.slug && !regionMove) history.replaceState(history.state, "", location.pathname + location.search + "#@" + map.getCenter().lat.toFixed(3) + "," + map.getCenter().lng.toFixed(3) + "," + map.getZoom().toFixed(1));
       regionMove = false;
       if (st.over.pistes) loadPistes();
       loadFine();
