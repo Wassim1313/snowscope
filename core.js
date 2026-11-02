@@ -2,7 +2,8 @@
    Every page sets <html data-root="">  (or "../" one folder down) and calls SS.start(). */
 (() => {
   "use strict";
-  const ROOT = document.documentElement.dataset.root || "";
+  // absolute base of the site (pages under /resorts/ say data-root="../"); stays right after history.pushState
+  const ROOT = new URL(document.documentElement.dataset.root || "", location.href).href;
   const FB_VER = "10.14.1";
   const NOADS = document.documentElement.dataset.noads === "1";      // account / sources pages: never ads
   const S = { cfg: null, api: null, apiAlt: null, user: null, idToken: null, me: null, state: "anon", pro: false, noAds: false,
@@ -233,8 +234,8 @@
     if (!href) return "";
     const id = "st" + Math.random().toString(36).slice(2, 8);
     return '<div class="stay"><div class="acts">' +
-      '<a class="btn tonal" target="_blank" rel="sponsored noopener" href="' + esc(href) + '"><span class="ms">hotel</span>Stay near ' + esc(place) + "</a>" +
-      (map ? '<button class="btn ghost" type="button" data-staymap="' + id + '" data-lat="' + lat + '" data-lon="' + lon + '" data-place="' + esc(place) + '"><span class="ms">map</span>Hotels map</button>' : "") +
+      '<a class="btn tonal" target="_blank" rel="sponsored noopener" href="' + esc(href) + '"><span class="ms">hotel</span><span class="t">Hotels near ' + esc(place) + "</span></a>" +
+      (map ? '<button class="btn ghost" type="button" data-staymap="' + id + '" data-lat="' + lat + '" data-lon="' + lon + '" data-place="' + esc(place) + '"><span class="ms">map</span><span class="t">Hotels map</span></button>' : "") +
       '<span class="partner" tabindex="0" title="Partner link: we may earn a commission from bookings">Partner <span class="ms">info</span></span></div><div id="' + id + '"></div></div>';
   }
   document.addEventListener("click", (ev) => {
@@ -385,8 +386,13 @@
     const draw = () => {
       ul.hidden = !items.length;
       ul.innerHTML = items.map((r, i) => '<li><a class="' + (i === sel ? "on" : "") + '" href="' + ROOT + "resorts/" + encodeURIComponent(r.slug) + '.html"><span>' +
-        esc(r.name) + "</span><small>" + esc(r.country) + "</small></a></li>").join("");
+        esc(r.short || r.name) + "</span><small>" + esc(r.country) + "</small></a></li>").join("");
     };
+    const go = (slug) => {
+      items = []; draw(); inp.blur(); box.classList.remove("show");
+      if (window.SSApp) window.SSApp.open(slug); else location.href = ROOT + "resorts/" + encodeURIComponent(slug) + ".html";
+    };
+    ul.addEventListener("mousedown", (e) => { const a = e.target.closest("a"); if (a && window.SSApp) { e.preventDefault(); go(decodeURIComponent(a.pathname.split("/").pop().replace(/\.html$/, ""))); } });
     inp.addEventListener("focus", () => resorts());
     inp.addEventListener("input", async () => {
       const q = norm(inp.value.trim());
@@ -398,7 +404,7 @@
     inp.addEventListener("keydown", (e) => {
       if (e.key === "ArrowDown") { sel = Math.min(items.length - 1, sel + 1); draw(); e.preventDefault(); }
       else if (e.key === "ArrowUp") { sel = Math.max(0, sel - 1); draw(); e.preventDefault(); }
-      else if (e.key === "Enter" && items.length) { location.href = ROOT + "resorts/" + encodeURIComponent(items[Math.max(0, sel)].slug) + ".html"; }
+      else if (e.key === "Enter" && items.length) { go(items[Math.max(0, sel)].slug); }
       else if (e.key === "Escape") { items = []; draw(); box.classList.remove("show"); }
     });
     inp.addEventListener("blur", () => setTimeout(() => { items = []; draw(); box.classList.remove("show"); }, 200));
@@ -423,6 +429,13 @@
   // ------------------------------------------------------------------ start
   async function start() {
     await loadConfig();
+    const cf = ((S.cfg && S.cfg.analytics) || {}).cf_beacon_token;
+    if (cf && /^[0-9a-f]{20,40}$/i.test(cf)) {          // Cloudflare Web Analytics: cookieless, no consent needed
+      const b = document.createElement("script");
+      b.defer = true; b.src = "https://static.cloudflareinsights.com/beacon.min.js";
+      b.setAttribute("data-cf-beacon", JSON.stringify({ token: cf }));
+      document.head.appendChild(b);
+    }
     setupFind();
     document.querySelectorAll("[data-app-link]").forEach((a) => { a.href = appUrl(); });
     // a visitor who was Pro last time: wait (max 4 s) for the sign-in check before any ad loads
