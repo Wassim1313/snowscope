@@ -1,10 +1,27 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "ma.atlaslabs.snowscope",
-    "sha256_cert_fingerprints": [
-      "5E:1C:A0:AC:3A:B7:BB:02:9E:EC:68:AB:4C:F5:CB:45:EE:7C:95:5B:05:BF:C5:66:6F:B5:0E:72:FF:93:E3:F9"
-    ]
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "ma.atlaslabs.snowscope",
+      "sha256_cert_fingerprints": [
+        "5E:1C:A0:AC:3A:B7:BB:02:9E:EC:68:AB:4C:F5:CB:45:EE:7C:95:5B:05:BF:C5:66:6F:B5:0E:72:FF:93:E3:F9"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "snowruler.app",
+      "sha256_cert_fingerprints": [
+        "5C:0E:01:09:BB:87:D0:FD:EB:8F:F1:BD:46:E4:49:43:96:ED:57:72:13:9B:09:EA:F4:3C:38:2C:23:D9:1C:76",
+        "36:5B:54:8C:C0:39:1B:FE:52:4D:6C:58:28:95:8A:2C:AF:70:AB:CF:98:98:68:DF:96:A0:38:11:18:4B:D4:FD"
+      ]
+    }
   }
-}]
+]
