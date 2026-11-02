@@ -912,8 +912,8 @@
     map.getSource("stn_hi").setData(r ? { type: "Feature", geometry: { type: "Point", coordinates: [r[1], r[0]] } } : { type: "FeatureCollection", features: [] });
   }
   const DEMC = new Map();
-  async function elevAt(lat, lon) {      // ground height from the relief tiles (one 256 px tile, cached)
-    const z = 11, n = 2 ** z, x = Math.floor((lon + 180) / 360 * n), yf = (1 - Math.log(Math.tan(lat * Math.PI / 180) + 1 / Math.cos(lat * Math.PI / 180)) / Math.PI) / 2 * n, y = Math.floor(yf), key = x + "/" + y;
+  async function elevAt(lat, lon, z = 11) {      // ground height from the relief tiles (one 256 px tile, cached)
+    const n = 2 ** z, x = Math.floor((lon + 180) / 360 * n), yf = (1 - Math.log(Math.tan(lat * Math.PI / 180) + 1 / Math.cos(lat * Math.PI / 180)) / Math.PI) / 2 * n, y = Math.floor(yf), key = z + "/" + x + "/" + y;
     if (!DEMC.has(key)) DEMC.set(key, new Promise((ok) => { const im = new Image(); im.crossOrigin = "anonymous";
       im.onload = () => { const c = document.createElement("canvas"); c.width = c.height = 256; const g = c.getContext("2d"); g.drawImage(im, 0, 0); ok(g.getImageData(0, 0, 256, 256).data); };
       im.onerror = () => ok(null); im.src = DEM.tiles[0].replace("{z}", z).replace("{x}", x).replace("{y}", y); }));
@@ -1066,6 +1066,10 @@
     if (st.stayClick && Date.now() - st.stayClick < 400) return;
     const pin = map.queryRenderedFeatures(e.point, { layers: ["pins", "pin_lbl"].filter((l) => map.getLayer(l)) })[0];
     if (pin) { openResort(pin.properties.s); return; }
+    if (st.over.pistes && map.getLayer("pistes") && map.getZoom() >= 11) {
+      const q = map.queryRenderedFeatures([[e.point.x - 6, e.point.y - 6], [e.point.x + 6, e.point.y + 6]], { layers: ["pistes"] }).filter((f) => f.properties.kind !== "lift" && /LineString/.test(f.geometry.type));   // runs, not piste areas
+      if (q.length) { openPiste(q[0], e.lngLat); return; }
+    }
     const ll = e.lngLat;
     if (popup) popup.remove();
     const avalHit = st.over.aval && map.getLayer("aval_fill") && map.queryRenderedFeatures(e.point, { layers: ["aval_fill"] })[0];
@@ -1277,6 +1281,7 @@
     markTabs();
     const box = $("pbody");
     if (st.slug) { await resortView(st.slug); return; }
+    if (st.piste) { await pisteView(st.piste); return; }
     if (st.point) { await pointView(st.point); return; }
     if (st.tab === "ski") box.innerHTML = await skiView();
     else if (st.tab === "powder") box.innerHTML = await powderView();
@@ -1583,13 +1588,96 @@
 
   // ------------------------------------------------------------------ any point: season vs past winters + next days
   function openPoint(pt, { quiet = false } = {}) {
-    st.point = { lat: +pt.lat.toFixed(4), lon: +pt.lon.toFixed(4) }; st.slug = null;
+    st.point = { lat: +pt.lat.toFixed(4), lon: +pt.lon.toFixed(4) }; st.slug = null; clearPiste();
     history.replaceState(null, "", BASE + "?p=" + st.point.lat + "," + st.point.lon + (st.day !== DATA.today ? "&d=" + st.day : "") + location.hash.replace(/^#@.*/, ""));
     if (map && map.getSource("pt")) map.getSource("pt").setData({ type: "Feature", geometry: { type: "Point", coordinates: [st.point.lon, st.point.lat] } });
     if (innerWidth <= 760 && !quiet) setSheet("half");
     $("pbody").scrollTop = 0;
     renderPanel();
     SS.pageView("/?p=" + st.point.lat + "," + st.point.lon);
+  }
+  // ------------------------------------------------------------------ piste transect: tap a piste (pistes layer on)
+  const PCOL = { novice: "#0B7A53", easy: "#1463F3", intermediate: "#D7263D", advanced: "#111111", expert: "#111111", freeride: "#E58A00" };
+  const PNAME = { novice: "Beginner", easy: "Easy", intermediate: "Intermediate", advanced: "Advanced", expert: "Expert", freeride: "Freeride" };
+  const llKm = (a, b) => kmLL(a[1], a[0], b[1], b[0]);
+  function clearPiste() { st.piste = null; if (map && map.getSource("pist_hi")) map.getSource("pist_hi").setData({ type: "FeatureCollection", features: [] }); }
+  function openPiste(f, at) {
+    // the full line from the loaded tiles (rendered geometry is cut at tile edges): same name + difficulty, nearest
+    const lines = (g) => (g.type === "LineString" ? [g.coordinates] : g.type === "MultiLineString" ? g.coordinates : []);
+    let best = null, bd = 1e9;
+    for (const x of st.pistes.feats) {
+      if (x.properties.kind === "lift" || x.properties.name !== f.properties.name || x.properties.difficulty !== f.properties.difficulty) continue;
+      for (const ln of lines(x.geometry)) for (const c of ln) { const d = llKm(c, [at.lng, at.lat]); if (d < bd) { bd = d; best = ln; } }
+    }
+    const coords = best && bd < 0.3 ? best : lines(f.geometry)[0];
+    if (!coords || coords.length < 2) return;
+    st.point = null; st.slug = null; showMeasuredLink(null, null);
+    if (map.getSource("pt")) map.getSource("pt").setData({ type: "FeatureCollection", features: [] });
+    st.piste = { name: f.properties.name || "", diff: f.properties.difficulty || "", coords, id: Date.now() };
+    if (!map.getSource("pist_hi")) {
+      map.addSource("pist_hi", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
+      map.addLayer({ id: "pist_hi_case", type: "line", source: "pist_hi", layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": "#ffffff", "line-width": 9, "line-opacity": 0.95 } });
+      map.addLayer({ id: "pist_hi", type: "line", source: "pist_hi", layout: { "line-cap": "round", "line-join": "round" }, paint: { "line-color": ["get", "c"], "line-width": 5 } });
+    }
+    map.getSource("pist_hi").setData({ type: "Feature", geometry: { type: "LineString", coordinates: coords }, properties: { c: PCOL[st.piste.diff] || "#7A8590" } });
+    if (innerWidth <= 760) setSheet("half");
+    $("pbody").scrollTop = 0;
+    renderPanel();
+  }
+  async function pisteView(P) {
+    const box = $("pbody"), id = P.id;
+    const name = P.name || I18N.t("Unnamed run"), col = PCOL[P.diff] || "#7A8590";
+    box.innerHTML = '<div class="phead"><button class="back" data-back><span class="ms">arrow_back</span>Back</button><div class="over"><i class="pdot" style="background:' + col + '"></i>' +
+      esc(I18N.t(PNAME[P.diff] || "Piste")) + '</div><h1>' + esc(name) + '</h1><p class="lede" id="psMeta"><span class="skel" style="display:inline-block;height:14px;width:60%"></span></p></div>' +
+      '<div class="card"><div class="over">Snow depth along the run</div><small class="none">' + esc(st.day === DATA.today ? I18N.t("Today") : longDay(st.day)) + '</small><div id="psChart"><div class="skel" style="height:180px;margin-top:8px"></div></div><p class="verdict" id="psVerdict"></p></div>' +
+      '<table class="kv" id="psKv"></table>' + stayModule(P.coords[0][1], P.coords[0][0], name, "piste") + footer();
+    box.querySelector("[data-back]").onclick = () => { clearPiste(); renderPanel(); };
+    afterRender();
+    // resample the line every ~50 m (max 160 points), top first
+    const pts = [[...P.coords[0], 0]];
+    for (let i = 1; i < P.coords.length; i++) {
+      const a = P.coords[i - 1], b = P.coords[i], d = llKm(a, b) * 1000, n = Math.max(1, Math.ceil(d / 50));
+      for (let k = 1; k <= n; k++) pts.push([a[0] + (b[0] - a[0]) * k / n, a[1] + (b[1] - a[1]) * k / n, pts[pts.length - 1][2] + d / n]);
+    }
+    const step = Math.max(1, Math.ceil(pts.length / 160)), S = pts.filter((_, i) => i % step === 0 || i === pts.length - 1);
+    const r = regionAt({ lat: S[0][1], lng: S[0][0] });
+    const els = await Promise.all(S.map((q) => elevAt(q[1], q[0], 13).catch(() => null)));
+    const deps = r ? await Promise.all(S.map(async (q) => { const c = await codeAt(r, "d", { lat: q[1], lng: q[0] }, st.day, true); return c == null || c === 255 ? null : decDepth(c); })) : S.map(() => null);
+    if (!st.piste || st.piste.id !== id) return;
+    let rows = S.map((q, i) => ({ d: q[2], e: els[i], v: deps[i] }));
+    if (rows[0].e != null && rows[rows.length - 1].e != null && rows[0].e < rows[rows.length - 1].e) { const L = rows[rows.length - 1].d; rows = rows.reverse().map((x) => ({ ...x, d: L - x.d })); }
+    const len = rows[rows.length - 1].d, ev = rows.map((x) => x.e).filter((x) => x != null), dv = rows.map((x) => x.v).filter((x) => x != null);
+    const top = ev.length ? Math.max(...ev) : null, bot = ev.length ? Math.min(...ev) : null;
+    const mn = dv.length ? Math.min(...dv) : null, mean = dv.length ? dv.reduce((a, b) => a + b, 0) / dv.length : null;
+    $("psMeta").textContent = [len >= 1000 ? U.dist(len / 1000) : U.us() ? Math.round(len * 3.28084).toLocaleString("en-US") + "\u00a0ft" : Math.round(len) + " m", top != null ? U.ev(top) + " → " + U.elev(bot) : ""].filter(Boolean).join(" · ");
+    // chart: depth (bars-like area, ink) over the run, elevation profile as a faint area behind (own scale)
+    const W = 360, H = 180, L0 = 30, T = 12, B = 24, R0 = 6;
+    const X = (d) => L0 + (d / Math.max(1, len)) * (W - L0 - R0), dmax = Math.max(20, ...dv) * 1.15;
+    const Y = (v) => H - B - (v / dmax) * (H - B - T);
+    const eY = (e) => (top == null || top === bot ? H - B : H - B - ((e - bot) / (top - bot)) * (H - B - T) * 0.9);
+    const elevA = ev.length ? "M" + X(0) + "," + (H - B) + rows.filter((x) => x.e != null).map((x) => "L" + X(x.d).toFixed(1) + "," + eY(x.e).toFixed(1)).join("") + "L" + X(len) + "," + (H - B) + "Z" : "";
+    const depA = dv.length ? "M" + X(0) + "," + (H - B) + rows.map((x) => "L" + X(x.d).toFixed(1) + "," + Y(x.v || 0).toFixed(1)).join("") + "L" + X(len) + "," + (H - B) + "Z" : "";
+    const depL = rows.map((x, i) => (i ? "L" : "M") + X(x.d).toFixed(1) + "," + Y(x.v || 0).toFixed(1)).join("");
+    $("psChart").innerHTML = dv.length ? '<svg class="chart" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Snow depth along the run, from the top">' +
+      (elevA ? '<path d="' + elevA + '" fill="var(--ink3)" opacity=".12"/>' : "") +
+      '<path d="' + depA + '" fill="var(--accent)" opacity=".28"/><path d="' + depL + '" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linejoin="round"/>' +
+      '<line x1="' + L0 + '" x2="' + (W - R0) + '" y1="' + (H - B) + '" y2="' + (H - B) + '" stroke="var(--hair)"/>' +
+      '<text x="' + (L0 - 4) + '" y="' + (T + 4) + '" text-anchor="end">' + U.dep(dmax / 1.15) + '</text><text x="' + (L0 - 4) + '" y="' + (H - B) + '" text-anchor="end">0</text>' +
+      '<text x="' + L0 + '" y="' + (H - 6) + '">' + esc(I18N.t("Top")) + (top != null ? " " + U.elev(top) : "") + '</text><text x="' + (W - R0) + '" y="' + (H - 6) + '" text-anchor="end">' + (bot != null ? U.elev(bot) : "") + "</text></svg>" +
+      '<div class="keyrow"><span><i style="background:var(--accent)"></i>' + esc(I18N.t("snow depth")) + " (" + U.du() + ')</span><span><i style="background:var(--ink3);opacity:.35"></i>' + esc(I18N.t("height")) + "</span></div>"
+      : '<p class="none">No snow data along this run.</p>';
+    // verdict: well covered / thin lower part below X / little snow
+    let verdict = "";
+    if (dv.length) {
+      const thin = rows.filter((x) => x.v != null && x.v < 15 && x.e != null);
+      if (mean < 5) verdict = I18N.t("Little or no snow on this run.");
+      else if (!thin.length) verdict = I18N.t("Well covered from top to bottom.");
+      else verdict = I18N.tu("Thin lower part below {a} m.", U.ev(Math.max(...thin.map((x) => x.e))));
+    }
+    $("psVerdict").textContent = verdict;
+    const row = (k, v) => "<tr><td>" + esc(I18N.t(k)) + "</td><td>" + v + "</td></tr>";
+    $("psKv").innerHTML = row("Length", $("psMeta").textContent.split(" · ")[0]) + (top != null ? row("Top", U.elev(top)) + row("Bottom", U.elev(bot)) : "") +
+      (mn != null ? row("Least snow on the run", U.depth(mn)) + row("Average snow on the run", U.depth(mean)) : "");
   }
   function closePoint() {
     st.point = null;
@@ -1968,6 +2056,7 @@
 
   // ------------------------------------------------------------------ resort panel
   function openResort(slug, { push = true } = {}) {
+    clearPiste();
     const x = BY[slug];
     st.slug = slug;
     if (push) { history.pushState({ slug }, "", BASE + "resorts/" + encodeURIComponent(slug) + ".html"); st.pushed = true; }
@@ -2187,7 +2276,7 @@
   window.SSApp = { open: (slug) => openResort(slug) };
   // bridge for the expert chrome (expert.js: layer rail, timeline scrub, hour steps, meteogram, keyboard, theme)
   window.SSApp.x = { st, data: () => DATA, map: () => map, setMain, setDay, toggleOver, overOn, layersSheet, play, isPlaying: () => !!playT, scrub, settle, radarFrame,
-    isStatic, dayLocked, proLive, addDays, wd, dnum, longDay, D, fmt, toast, codeAt, regionAt, decDepth, renderMain, drawLegend, openPoint, closePoint,
+    isStatic, dayLocked, proLive, addDays, wd, dnum, longDay, D, fmt, toast, codeAt, regionAt, decDepth, renderMain, drawLegend, openPoint, closePoint, openPiste,
     has: (id) => id === "stn" ? typeof drawStations === "function" : id === "s30" ? s30Enabled() : true, LOC, DEPTH, NEW, rampAt };
   drawRegions(); drawDays(); drawLegend(); setupSheet(); setupTabs();
   if (window.SSX) SSX.init(window.SSApp.x);
