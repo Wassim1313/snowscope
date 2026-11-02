@@ -3,7 +3,7 @@
 (() => {
   "use strict";
   // absolute base of the site (pages under /resorts/ say data-root="../"); stays right after history.pushState
-  const ROOT = new URL(document.documentElement.dataset.root || "", location.href).href;
+  const ROOT = new URL(document.documentElement.dataset.root || "./", location.href).href;
   const FB_VER = "10.14.1";
   const NOADS = document.documentElement.dataset.noads === "1";      // account / sources pages: never ads
   const S = { cfg: null, api: null, apiAlt: null, user: null, idToken: null, me: null, state: "anon", pro: false, noAds: false,
@@ -365,6 +365,7 @@
   document.addEventListener("click", (e) => {
     if (e.target.closest("[data-signin]") && !e.target.closest(".sheet")) signInModal();
     if (e.target.closest("[data-ad-choices]")) { e.preventDefault(); Ads.choices(); }
+    const lb = e.target.closest("[data-lang]"); if (lb && window.I18N) I18N.menu(lb);
     if (e.target.closest("[data-find-open]")) { const f = document.querySelector(".find"); f.classList.add("show"); f.querySelector("input").focus(); }
   });
 

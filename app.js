@@ -6,12 +6,13 @@
   "use strict";
   const { esc } = SS;
   const $ = (id) => document.getElementById(id);
-  const BASE = new URL(document.documentElement.dataset.root || "", location.href).href;
+  const LOC = (window.I18N && I18N.locale) || "en-GB";
+  const BASE = new URL(document.documentElement.dataset.root || "./", location.href).href;
   const fmt = (n) => Math.round(n).toLocaleString("en-US");
   const D = (d) => new Date(d + "T12:00:00Z");
-  const wd = (d) => D(d).toLocaleDateString("en-GB", { weekday: "short", timeZone: "UTC" });
+  const wd = (d) => D(d).toLocaleDateString(LOC, { weekday: "short", timeZone: "UTC" });
   const dnum = (d) => D(d).getUTCDate();
-  const longDay = (d) => D(d).toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
+  const longDay = (d) => D(d).toLocaleDateString(LOC, { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
   const addDays = (d, k) => { const x = D(d); x.setUTCDate(x.getUTCDate() + k); return x.toISOString().slice(0, 10); };
   const mercY = (lat) => Math.log(Math.tan(Math.PI / 4 + lat * Math.PI / 360));
   const store = SS.store;
@@ -670,7 +671,7 @@
       : x.resorts_with_snow ? "Snow at " + fmt(x.resorts_with_snow) + " resorts in " + the(r.name)
       : x.max_cm >= 1 ? "Snow on the high peaks in " + the(r.name) + ", up to " + x.max_cm + " cm" : "No snow in " + the(r.name) + " yet";
     const other = DATA.regions.filter((y) => y.code !== r.code).map((y) => [y, dayOf(y)]).sort((a, b) => b[1].new_max_cm - a[1].new_max_cm)[0];
-    const lede = other && other[1].new_max_cm >= 5 ? 'Biggest snowfall elsewhere: <button data-goregion="' + other[0].code + '">' + esc(other[0].name) + "</button>, +" + other[1].new_max_cm + " cm." : "Tap the map for the snow on any slope.";
+    const lede = other && other[1].new_max_cm >= 5 ? '<button data-goregion="' + other[0].code + '">' + esc("Biggest snowfall elsewhere: " + other[0].name + ", +" + other[1].new_max_cm + " cm.") + "</button>" : "Tap the map for the snow on any slope.";
     const best = x.top[0];
     let h = '<div class="over">' + (st.day === DATA.today ? "Snow today" : esc(longDay(st.day))) + "</div><h1>" + esc(h1) + '</h1><p class="lede">' + lede + "</p>" +
       '<div class="card rc"><div class="stats"><div class="stat"><b>' + fmt(x.resorts_with_snow) + "</b><small>resorts with snow</small></div>" +
@@ -766,7 +767,7 @@
     if (!silent) renderPanel();
   }
   const seasonBest = (weeks) => {
-    const name = (w) => { const d = new Date(Date.UTC(2027, 0, 4 + (w - 1) * 7)); const m = d.toLocaleDateString("en-GB", { month: "long", timeZone: "UTC" }); const day = d.getUTCDate(); return (day <= 10 ? "early " : day <= 20 ? "mid " : "late ") + m; };
+    const name = (w) => { const d = new Date(Date.UTC(2027, 0, 4 + (w - 1) * 7)); const m = d.toLocaleDateString(LOC, { month: "long", timeZone: "UTC" }); const day = d.getUTCDate(); return (day <= 10 ? "early " : day <= 20 ? "mid " : "late ") + m; };
     return [...new Set(weeks.map(name))].slice(0, 2).join(" and ");
   };
   async function resortView(slug) {
