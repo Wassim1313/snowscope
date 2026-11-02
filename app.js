@@ -667,7 +667,8 @@
   function mapView() {
     const r = DATA.regions.find((x) => x.code === st.region) || DATA.regions[0], x = dayOf(r);
     const h1 = x.new_max_cm >= 10 ? "Fresh snow in " + the(r.name) + ": up to +" + x.new_max_cm + " cm"
-      : x.resorts_with_snow ? "Snow at " + fmt(x.resorts_with_snow) + " resorts in " + the(r.name) : "Little snow in " + the(r.name) + " so far";
+      : x.resorts_with_snow ? "Snow at " + fmt(x.resorts_with_snow) + " resorts in " + the(r.name)
+      : x.max_cm >= 1 ? "Snow on the high peaks in " + the(r.name) + ", up to " + x.max_cm + " cm" : "No snow in " + the(r.name) + " yet";
     const other = DATA.regions.filter((y) => y.code !== r.code).map((y) => [y, dayOf(y)]).sort((a, b) => b[1].new_max_cm - a[1].new_max_cm)[0];
     const lede = other && other[1].new_max_cm >= 5 ? 'Biggest snowfall elsewhere: <button data-goregion="' + other[0].code + '">' + esc(other[0].name) + "</button>, +" + other[1].new_max_cm + " cm." : "Tap the map for the snow on any slope.";
     const best = x.top[0];
@@ -675,7 +676,7 @@
       '<div class="card rc"><div class="stats"><div class="stat"><b>' + fmt(x.resorts_with_snow) + "</b><small>resorts with snow</small></div>" +
       '<div class="stat"><b>' + (best ? best.depth_cm + "<small>cm</small>" : "–") + "</b><small>deepest resort</small></div>" +
       '<div class="stat"><b>' + (x.new_max_cm >= 1 ? "+" + x.new_max_cm + "<small>cm</small>" : "–") + "</b><small>new snow</small></div></div></div>" +
-      '<div class="sect">Deepest snow</div>' + (x.top.length ? x.top.map((t, i) => resRow({ slug: t.slug, short: t.name }, i, t.depth_cm, t.country, t.new_cm)).join("") : '<p class="none">No resort has snow yet.</p>');
+      '<div class="sect">Deepest snow on the upper slopes</div>' + (x.top.length ? x.top.map((t, i) => resRow({ slug: t.slug, short: t.name }, i, t.depth_cm, t.country, t.new_cm)).join("") : '<p class="none">No resort has snow yet.</p>');
     h += '<aside class="ad infeed" data-ad="infeed" aria-label="Advertisement" hidden></aside>';
     h += '<div class="sect">Other regions</div>' + DATA.regions.filter((y) => y.code !== r.code).map((y) => {
       const z = dayOf(y);
@@ -704,7 +705,7 @@
       '<div class="seg2" role="group"><button data-when="today" aria-pressed="' + (S2.when === "today") + '">Today</button><button data-when="weekend" aria-pressed="' + (S2.when === "weekend") + '">Weekend</button></div></div>';
     if (S2.when === "weekend" && wi < 0) h += '<div class="prolock"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>The weekend is further than the free days.</b> Pro shows the full week ahead.</p></div>';
     else if (!rows.length) h += '<p class="none">No resort has snow here yet.</p>';
-    else h += rows.map(([x, s], i) => (i === 10 ? '<aside class="ad" data-ad="banner" aria-label="Advertisement" hidden></aside>' : "") + resRow(x, i, s[0], [x.country, x.top_m ? fmt(x.top_m) + " m" : ""].filter(Boolean).join(" · "), s[1])).join("");
+    else h += rows.map(([x, s], i) => (i === 5 ? '<aside class="ad" data-ad="banner" aria-label="Advertisement" hidden></aside>' : "") + resRow(x, i, s[0], [x.country, x.top_m ? fmt(x.top_m) + " m" : ""].filter(Boolean).join(" · "), s[1])).join("");
     return h + footer();
   }
   async function powderView() {
@@ -781,11 +782,11 @@
     box.innerHTML = '<button class="back" data-back><span class="ms">arrow_back</span>' + esc(NAMES[x.dom] || "Back") + "</button>" +
       '<div class="over">' + esc([x.region, x.country].filter(Boolean).join(" · ")) + "</div><h1>" + esc(x.short) + '</h1><p class="lede">' + esc(x.name !== x.short ? x.name : "") +
       (x.base_m && x.top_m ? (x.name !== x.short ? " · " : "") + fmt(x.base_m) + "–" + fmt(x.top_m) + " m" : "") + "</p>" +
-      '<div class="hero2"><div class="card"><div class="over">Snow today</div><b class="n">' + (d0 == null ? "–" : d0 + "<small>cm</small>") + '</b><small class="none">' + verdict + "</small></div>" +
+      '<div class="hero2"><div class="card"><div class="over">Upper slopes today</div><b class="n">' + (d0 == null ? "–" : d0 + "<small>cm</small>") + '</b><small class="none">' + verdict + "</small></div>" +
       '<div class="card"><div class="over">New snow</div>' + (n0 >= 1 ? '<b class="n acc">+' + n0 + "<small>cm</small></b><small class=\"none\">in 24 hours</small>" : '<b class="n">–</b><small class="none">No new snow in 24 h</small>') + "</div></div>" +
-      '<div class="sect">Snow depth, cm</div><div id="rDays"></div>' +
-      '<div class="sect">This season vs past winters</div><div id="rHist"></div>' +
+      '<div class="sect">Snow depth on the upper slopes, cm</div><div id="rDays"></div>' +
       '<aside class="ad" data-ad="resort" aria-label="Advertisement" hidden></aside>' +
+      '<div class="sect">This season vs past winters</div><div id="rHist"></div>' +
       '<div class="sect">Next 7 days</div><div id="rFc"></div>' +
       '<div class="sect">Stay near ' + esc(x.short) + "</div>" + (SS.stayBlock(x.lat, x.lon, x.short) || '<p class="none">No partner here yet.</p>') +
       '<div class="sect">Nearby resorts</div>' + near.map(([km, y]) => resRow(y, null, (y.snow[ti] || [])[0], Math.round(km) + " km", (y.snow[ti] || [])[1])).join("") + appCard() + footer();

@@ -362,3 +362,6 @@ body.app .legend{position:fixed;left:auto;right:12px;bottom:84px;z-index:14;max-
   .bottomnav button[aria-current="page"] .ms{background:var(--surface3);border-radius:14px;width:52px;height:28px;line-height:28px;text-align:center;overflow:visible}
   .toast{top:120px}
 }
+@media (max-width:640px){.rt th:nth-child(4),.rt td:nth-child(4){display:none}.rt td small{display:block;margin:2px 0 0}
+  .rt td:first-child{overflow-wrap:anywhere}}
+.rt{table-layout:auto;max-width:100%}
