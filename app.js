@@ -1704,8 +1704,9 @@
   function pastBlock(h, byDate, at, herr) {
     const box = $("ptPast"), rk = $("ptRank");
     if (!box) return;
-    const t0 = byDate[DATA.today];
-    const B = ["min", "p10", "p25", "p50", "p75", "p90", "max"].map((k) => at(k, DATA.today));
+    const cp = h && h.compare && h.compare.today && h.compare.today.normal ? h.compare : null;   // v2: exact per-winter values
+    const t0 = cp && cp.today.value_cm != null ? { dep: cp.today.value_cm } : byDate[DATA.today];
+    const B = ["min", "p10", "p25", "p50", "p75", "p90", "max"].map((k) => (cp ? cp.today.normal[k] : at(k, DATA.today)));
     if (!h || !t0 || B.some((v) => v == null)) {
       box.innerHTML = '<p class="none">' + (!h ? (herr && herr.status === 503 ? "Past winters for this spot are being prepared. Try again tomorrow." : "Past winters are updating, try again in a minute.") : "No past winters for this spot.") + "</p>";
       if (rk) rk.textContent = "";
@@ -1714,7 +1715,7 @@
     const [mn, p10, p25, p50, p75, p90, mx] = B, v = t0.dep, P = [0, 10, 25, 50, 75, 90, 100];
     // share of past winters below a depth x (interpolated between the bands; ties count as "not below")
     const below = (x) => { if (x <= B[0]) return 0; if (x > B[6]) return 100; for (let i = 0; i < 6; i++) if (x > B[i] && x <= B[i + 1]) return P[i] + (P[i + 1] - P[i]) * (x - B[i]) / (B[i + 1] - B[i]); return 100; };
-    const pct = mx < 1 && v < 1 ? null : below(v), k10 = pct == null ? null : Math.round(pct / 10);
+    const pct = mx < 1 && v < 1 ? null : cp ? cp.today.percentile : below(v), k10 = pct == null ? null : Math.round(pct / 10);
     const had = Math.round((100 - below(1)) / 10);          // past winters (of 10) with snow on this date
     const verdict = pct == null ? "No snow here on this date in past winters either."
       : v < 1 ? (had <= 2 ? "No snow yet, like most past winters on this date." : I18N.tu("No snow yet, while {a} of 10 past winters had snow on this date.", had))
@@ -1722,6 +1723,7 @@
       : v < mn ? "Less snow than every past winter on this date."
       : k10 >= 10 ? "Deeper than nearly every past winter on this date."
       : k10 <= 0 ? "Less snow than nearly every past winter on this date."
+      : cp ? I18N.tu("More snow than {a} of {b} past winters on this date.", Math.round(cp.today.percentile / 100 * cp.today.n_winters), cp.today.n_winters)
       : "Deeper than " + k10 + " of 10 past winters on this date.";
     const d = v - p50, dp = p50 >= 5 ? Math.round(100 * d / p50) : null;
     const sign = (x) => (x > 0 ? "+" : x < 0 ? "−" : "±");
@@ -1743,6 +1745,8 @@
     box.innerHTML = '<p class="verdict">' + esc(verdict) + '</p><p class="anom">' + esc(anom) + "</p>" + bar +
       '<table class="kv">' + row("Today", U.depth(v)) + row("Usual on this date", U.depth(p50)) + row("Normal range", U.dep(p25) + "–" + U.depth(p75)) +
       row("Lowest – highest", U.dep(mn) + "–" + U.depth(mx)) +
+      (cp && cp.extremes && cp.extremes.best_today && cp.extremes.best_today.cm > (cp.extremes.worst_today || {}).cm ? row("Most snow on this date", U.depth(cp.extremes.best_today.cm) + ' <small class="none">' + sz(cp.extremes.best_today) + "</small>") +
+        row("Least snow on this date", U.depth(cp.extremes.worst_today.cm) + ' <small class="none">' + sz(cp.extremes.worst_today) + "</small>") : "") +
       (best ? row("Deepest winter peak", U.depth(best.max_depth_cm) + ' <small class="none">' + sz(best) + "</small>") : "") + (worst && best && worst !== best ? row("Lowest winter peak", U.depth(worst.max_depth_cm) + ' <small class="none">' + sz(worst) + "</small>") : "") + "</table>" +
       (seas.length ? '<p class="note">' + esc(I18N.tu("Compared with {a} past winters.", seas.length)) + (far ? " " + esc(I18N.t("Past winters are estimated for the mountain around this spot, so take the comparison as a guide.")) : "") + "</p>" : "");
   }
@@ -2015,6 +2019,8 @@
     box.querySelector(".hero2").insertAdjacentHTML("afterend", '<div class="acts3" style="margin-bottom:6px"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a><button class="btn ink" data-share="' + esc(slug) + '" data-sd="' + st.day + '"><span class="ms">share</span>Share</button>' +
       (stayModule(0, 0, "", "x") ? '<button class="btn tonal" data-gostays><span class="ms">hotel</span>Stays</button>' : "") + "</div>" +
       '<a class="rowlink" href="' + BASE + "studio.html?slug=" + encodeURIComponent(slug) + '"><span class="ms">movie</span><span><b>Create a 3D video</b><small>A short flyover of ' + esc(x.short) + ' with today\'s snow</small></span><span class="ms">chevron_right</span></a>');
+    const hb = box.querySelector(".hero2");
+    if (hb) { hb.insertAdjacentHTML("afterend", '<div class="seasonrow" id="rSeason"><span class="ms">event</span><span class="tx"><span class="skel" style="display:block;height:16px;width:60%"></span></span></div>'); seasonRow(slug); }
     const gs = box.querySelector("[data-gostays]");
     if (gs) gs.onclick = () => { const d = box.querySelector("details.stays"); if (d) { d.open = true; d.scrollIntoView({ behavior: "smooth", block: "start" }); } };
     afterRender();
@@ -2032,6 +2038,50 @@
       e2.innerHTML = '<a class="card demo3d" href="' + BASE + 'studio.html"><img src="' + esc(BASE + d.cover_url) + '" alt="" loading="lazy"><span class="tx"><span class="over">3D videos</span><b>' + esc(d.title) + "</b><small>" +
         esc((d.subtitle || "").replace(/(\d+(?:\.\d+)?) ?cm\b/g, (m, v) => U.depth(+v))) + '</small><span class="lnk">See the 3D demos<span class="ms">chevron_right</span></span></span></a>';
     });
+  }
+  // Season row: the opening / closing dates with their source; when unknown or old, "Check opening dates" asks the
+  // server to research them on the web (progress/data_requests.md, season research contract) and polls the job
+  const fmtD = (iso) => (iso ? D(iso.slice(0, 10)).toLocaleDateString(LOC, { day: "numeric", month: "short", timeZone: "UTC" }) : "");
+  async function seasonRow(slug) {
+    const el = $("rSeason"); if (!el) return;
+    let sz = null;
+    try { sz = await SS.api("/v1/resorts/" + encodeURIComponent(slug) + "/season", { auth: false, timeout: 12000 }); } catch { sz = null; }
+    if (!$("rSeason") || st.slug !== slug) return;
+    const a = sz && sz.announced, on = !(SS.S.cfg && SS.S.cfg.season_research_enabled === false);
+    const stale = !a || !a.retrieved || (Date.now() - Date.parse(a.retrieved)) > 45 * 864e5;
+    const src = (u, n) => (u ? ' <a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(n || new URL(u).hostname) + "</a>" : "");
+    const tx = !sz ? '<b>Season dates</b><small>Not available right now.</small>'
+      : '<b>' + esc(sz.label || "Season dates not published yet") + "</b><small>" +
+        (a && (a.opening || a.closing) ? esc([a.opening ? I18N.t("Opens") + " " + fmtD(a.opening) : "", a.closing ? I18N.t("closes") + " " + fmtD(a.closing) : ""].filter(Boolean).join(" · ")) + " · " : "") +
+        (a ? esc(I18N.t("Source")) + ":" + src(a.source_url, a.source_name) + (a.retrieved ? " · " + esc(I18N.tu("checked {a}", fmtD(a.retrieved))) : "") : esc(I18N.t("No dates found yet."))) + "</small>";
+    el.innerHTML = '<span class="ms">event</span><span class="tx">' + tx + "</span>" + (on && sz && (sz.state === "unknown" || stale) ? '<button class="btn tonal sm" data-research>Check opening dates</button>' : "");
+    const btn = el.querySelector("[data-research]");
+    if (btn) btn.onclick = () => research(slug, el);
+  }
+  async function research(slug, el) {
+    const out = (m) => { const t = el.querySelector(".tx small"); if (t) t.textContent = m; };
+    const btn = el.querySelector("[data-research]"); if (btn) { btn.disabled = true; btn.innerHTML = '<span class="ms spin">progress_activity</span>Checking…'; }
+    let r = null, t0 = Date.now();
+    try {
+      r = await SS.api("/v1/season/research?slug=" + encodeURIComponent(slug), { auth: false, timeout: 20000 });
+      while (r && (r.status === "queued" || r.status === "running") && Date.now() - t0 < 150000) {
+        out(r.message || I18N.t("Looking this up on the web, this takes about half a minute."));
+        await new Promise((ok) => setTimeout(ok, Math.max(3, r.poll_after_s || 5) * 1000));
+        if (!$("rSeason") || st.slug !== slug) return;
+        r = await SS.api("/v1/season/research/" + encodeURIComponent(r.job_id), { auth: false, timeout: 20000 });
+      }
+    } catch { r = null; }
+    if (!$("rSeason") || st.slug !== slug) return;
+    const x = r && r.resorts && r.resorts[0];
+    if (r && r.status === "done" && x) {
+      el.querySelector(".tx").innerHTML = "<b>" + esc(x.label || r.message || "") + "</b><small>" +
+        (x.quote ? "“" + esc(x.quote) + "” · " : "") + (x.source_url ? '<a href="' + esc(x.source_url) + '" target="_blank" rel="noopener">' + esc(x.source_name || new URL(x.source_url).hostname) + "</a> · " : "") +
+        esc(I18N.tu("checked {a}", fmtD(x.checked_utc || new Date().toISOString()))) + "</small>";
+      if (btn) btn.remove();
+    } else {
+      out((r && r.message) || I18N.t("We could not check the dates right now, try again later."));
+      if (btn) { btn.disabled = false; btn.textContent = I18N.t("Try again"); }
+    }
   }
   function svgBars(days, todayD, locked) {
     const W = 360, H = 150, n = days.length, bw = W / n, max = Math.max(20, ...days.map((d) => d.dep || 0)) * 1.15;

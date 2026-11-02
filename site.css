@@ -722,3 +722,11 @@ body.app .timeline .legend>small{grid-column:3}
   .rhero .hn{font-size:48px;line-height:52px}
 }
 .measured .k,.pv .k{font-size:13px;letter-spacing:0;text-transform:none;font-weight:650}
+/* season row (resort panel) */
+.seasonrow{display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:16px;box-shadow:var(--e1);padding:12px 14px;margin:8px 0}
+.seasonrow>.ms{color:var(--accent-ink);font-size:24px;flex:none}
+.seasonrow .tx{flex:1;min-width:0}.seasonrow .tx b{display:block;font-size:16px;font-weight:650}
+.seasonrow .tx small{display:block;font-size:13px;color:var(--ink3);line-height:1.4}
+.seasonrow .tx a{color:var(--accent-ink)}
+.btn.sm{height:36px;padding:0 12px;font-size:13px;flex:none}
+.ms.spin{animation:spin 1s linear infinite;font-size:18px}
