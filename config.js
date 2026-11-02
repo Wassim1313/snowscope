@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://fully-variation-array-under.trycloudflare.com";
+window.SNOWSCOPE_API = "https://enhancements-crew-bio-pavilion.trycloudflare.com";
