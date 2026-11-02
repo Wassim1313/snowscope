@@ -42,6 +42,8 @@ td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 td.nm{max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .none{color:var(--mute);font-size:13px;padding:6px 0}
 .cta{display:inline-block;margin-top:22px;background:var(--ink);color:var(--bg);text-decoration:none;padding:10px 16px;border-radius:10px;font-weight:600}
+.maplibregl-popup-content{font:13px/1.4 Inter,system-ui,sans-serif;padding:10px 12px;border-radius:10px;color:#0f1720}
+.pv b{font-size:20px;display:block}.pv small{color:#5b6675}
 footer{color:var(--mute);font-size:12px;margin-top:22px;line-height:1.6}
 </style>
 </head>
@@ -95,12 +97,44 @@ function init() {
     const b = new maplibregl.LngLatBounds();
     DATA.regions.forEach(r => r.coords.forEach(c => b.extend(c)));
     map.fitBounds(b, {padding: 24, duration: 0});
+    map.on('click', e => showValue(e.lngLat));
+    map.getCanvas().style.cursor = 'crosshair';
   });
   setDay(cur);
 }
 
+
+const VALS = {};
+async function loadVals(r) {
+  if (!VALS[r.code]) VALS[r.code] = fetch(r.vals + '?v=' + DATA.built_utc).then(res => {
+    const ds = res.body.pipeThrough(new DecompressionStream('deflate'));
+    return new Response(ds).arrayBuffer();
+  }).then(b => new Uint16Array(b));
+  return VALS[r.code];
+}
+let popup;
+async function showValue(ll) {
+  const r = DATA.regions.find(r => { const L = r.lattice;
+    return ll.lng >= L.west && ll.lng < L.west + L.nx * L.dlon && ll.lat <= L.north && ll.lat > L.north - L.ny * L.dlat; });
+  if (popup) popup.remove();
+  popup = new maplibregl.Popup({closeButton: true, maxWidth: '240px'}).setLngLat(ll);
+  if (!r) { popup.setHTML('<small>No snow data here.</small>').addTo(map); return; }
+  popup.setHTML('<small>Loading…</small>').addTo(map);
+  const L = r.lattice, v = await loadVals(r);
+  const row = Math.floor((L.north - ll.lat) / L.dlat), col = Math.floor((ll.lng - L.west) / L.dlon);
+  const di = r.days.findIndex(x => x.date === cur);
+  const at = k => v[((di * 2 + k) * L.ny + row) * L.nx + col];
+  const dep = at(0), nw = at(1);
+  const when = cur === DATA.today ? 'Today' : dayLabel(cur) + (cur > DATA.today ? ' (forecast)' : '');
+  if (di < 0 || dep === 65535) { popup.setHTML('<small>' + r.name + '</small><br>No snow data for this spot.'); return; }
+  popup.setHTML('<div class="pv"><small>' + r.name + ' · ' + when + '</small>' +
+    '<b>' + (dep >= 1 ? dep + ' cm' : 'No snow') + '</b>' +
+    (nw >= 1 ? '<small>+' + nw + ' cm new snow that day</small><br>' : '') +
+    '<small>' + ll.lat.toFixed(3) + ', ' + ll.lng.toFixed(3) + ' · 5 km average</small></div>');
+}
+
 function setDay(d) {
-  cur = d;
+  cur = d; if (popup) popup.remove();
   document.querySelectorAll('.day').forEach(b => b.setAttribute('aria-pressed', b.dataset.d === d));
   if (map && map.loaded()) for (const r of DATA.regions) {
     const x = r.days.find(y => y.date === d); const s = map.getSource('s_' + r.code);
