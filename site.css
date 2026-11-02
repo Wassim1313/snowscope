@@ -261,7 +261,7 @@ body.app #map{position:fixed;inset:0}
 .regions .pill[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
 .mapctl{position:fixed;z-index:15;right:12px;top:124px;display:flex;flex-direction:column;gap:8px}
 .mapbtn{position:static;height:44px;border-radius:22px}
-body.app .maplibregl-ctrl-top-right,body.app .mapboxgl-ctrl-top-right{top:172px}
+body.app .maplibregl-ctrl-top-right,body.app .mapboxgl-ctrl-top-right{top:228px}
 .panel{position:fixed;z-index:12;left:12px;top:78px;bottom:12px;width:var(--panel);border-radius:22px;background:var(--surface);
   box-shadow:var(--e2);display:flex;flex-direction:column;overflow:hidden}
 .panel .grab{display:none}
@@ -338,7 +338,7 @@ body.app .legend{position:fixed;left:auto;right:12px;bottom:84px;z-index:14;max-
   .appbar{left:8px;right:8px;top:8px;height:52px}
   .regions{left:8px;right:8px;top:66px;padding:0 0 4px}
   .mapctl{top:112px;right:8px}.mapbtn .lbl{display:none}.mapbtn{width:44px;padding:0;justify-content:center}
-  body.app .maplibregl-ctrl-top-right,body.app .mapboxgl-ctrl-top-right{top:156px}
+  body.app .maplibregl-ctrl-top-right,body.app .mapboxgl-ctrl-top-right{top:216px}
   .panel{left:0;right:0;width:auto;top:auto;bottom:var(--nav);height:calc(100dvh - var(--nav) - 70px);border-radius:24px 24px 0 0;
     transform:translateY(calc(100% - var(--peek,168px)));transition:transform .28s cubic-bezier(.2,.8,.2,1);box-shadow:var(--e3,0 -10px 36px rgba(11,18,32,.16))}
   .panel.half{transform:translateY(45%)}.panel.full{transform:none}
@@ -407,3 +407,7 @@ body.app .legend{position:fixed;left:auto;right:12px;bottom:84px;z-index:14;max-
 .housead b{display:block;font-size:15px}.housead small{color:var(--ink3);font-size:13px}
 .housead .hl{position:absolute;top:6px;inset-inline-end:10px;font-size:10.5px;color:var(--ink3);letter-spacing:.4px}
 .ad.house{min-height:0;background:none;padding:0}
+.mapbtn[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.staycard .acts3 .btn{min-height:40px;font-size:13px}
+table.fc.stn td.nm{max-width:150px;overflow:hidden;text-overflow:ellipsis}table.fc.stn tr[data-stn]{cursor:pointer}table.fc.stn tr[data-stn]:hover td{background:var(--surface3)}
+table.fc.stn em.nw{font-style:normal;font-weight:650;color:var(--accent-ink)}table.fc.stn td a{color:var(--ink3);text-decoration:none}table.fc.stn td a .ms{font-size:18px;vertical-align:middle}

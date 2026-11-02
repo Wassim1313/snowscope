@@ -115,16 +115,18 @@
         el.innerHTML = house; el.hidden = !house; el.dataset.filled = "1"; el.classList.add("filled", "house"); return;
       }
       const fluid = el.dataset.ad === "infeed" && a.infeed_layout_key;
-      el.innerHTML = '<div class="adl">Advertisement</div><div class="housewrap">' + house + '</div><ins class="adsbygoogle" style="display:block;min-height:250px" data-ad-client="' +
+      // the unit keeps its width while collapsed (height 0): Google measures availableWidth at push time and logs an
+      // error for a display:none unit; it is unrolled only once Google says "filled", the house ad shows until then
+      el.innerHTML = '<div class="adl" hidden>Advertisement</div><div class="housewrap">' + house + '</div><div class="adslot" style="height:0;overflow:hidden">' +
+        '<ins class="adsbygoogle" style="display:block;min-height:250px" data-ad-client="' +
         esc(this.client()) + '" data-ad-slot="' + esc(slot) + '"' +
         (fluid ? ' data-ad-format="fluid" data-ad-layout-key="' + esc(a.infeed_layout_key) + '"'
-               : ' data-ad-format="auto" data-full-width-responsive="true"') + "></ins>";
+               : ' data-ad-format="auto" data-full-width-responsive="true"') + "></ins></div>";
       el.hidden = false; el.dataset.filled = "1"; el.classList.add("filled");
       try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch { /* blocked */ }
-      const ins = el.querySelector("ins.adsbygoogle"), hw = el.querySelector(".housewrap");
-      if (ins && hw) new MutationObserver(() => { const f = ins.getAttribute("data-ad-status") === "filled"; hw.hidden = f; ins.style.display = f ? "block" : "none"; })
+      const ins = el.querySelector("ins.adsbygoogle"), hw = el.querySelector(".housewrap"), sl = el.querySelector(".adslot");
+      if (ins && hw) new MutationObserver(() => { const f = ins.getAttribute("data-ad-status") === "filled"; hw.hidden = f; sl.style.height = f ? "" : "0"; el.querySelector(".adl").hidden = !f; })
         .observe(ins, { attributes: true, attributeFilter: ["data-ad-status"] });
-      if (ins) ins.style.display = "none";            // shown only once Google says "filled"
     },
     hideAll() {
       document.querySelectorAll("[data-ad]").forEach((el) => { el.hidden = true; el.innerHTML = ""; delete el.dataset.filled; });
