@@ -369,6 +369,8 @@ body.app .legend{position:fixed;left:auto;right:12px;bottom:84px;z-index:14;max-
 .langmenu{position:fixed;z-index:80;border-radius:14px;padding:6px;display:flex;flex-direction:column;min-width:160px}
 .langmenu button{border:0;background:none;text-align:start;padding:10px 12px;border-radius:10px;font:inherit;font-size:14.5px;cursor:pointer;color:var(--ink)}
 .langmenu button:hover,.langmenu button[aria-current]{background:var(--surface3)}
+.langmenu hr{border:0;border-top:1px solid var(--hair);margin:6px 4px}
+.langmenu .unitsrow{display:flex;gap:4px}.langmenu .unitsrow button{flex:1;text-align:center;font-size:13.5px;padding:8px 10px}
 /* right-to-left (Arabic): mirrored panels, numbers stay left-to-right */
 [dir="rtl"] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
 [dir="rtl"] .panel{left:auto;right:12px}
@@ -497,6 +499,7 @@ body.app .legend .ramp{width:180px}
 }
 /* measured stations: chips, cards, table head, comparison line */
 .chip{display:inline-block;width:10px;height:10px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(11,18,32,.18);margin-inline-end:6px;vertical-align:middle;flex:none}
+i.chip{min-width:0;min-height:0;padding:0;border:0}
 em.nw{font-style:normal;font-weight:650;color:var(--accent-ink);font-size:12.5px;white-space:nowrap}em.nw .ms{font-size:14px;vertical-align:-2px}
 .pv.stn{min-width:210px}.pv.stn .stnhead{display:flex;align-items:baseline;gap:8px;margin:4px 0 2px}.pv.stn .dep{font-size:34px;line-height:36px;font-weight:600;letter-spacing:-1px}
 .pv.stn .dep small{font-size:14px;color:var(--ink3);font-weight:520;margin-left:2px;letter-spacing:0}.pv.stn .stnname{font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--ink2)}

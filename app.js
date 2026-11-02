@@ -9,6 +9,7 @@
   const LOC = (window.I18N && I18N.locale) || "en-GB";
   const BASE = new URL(document.documentElement.dataset.root || "./", location.href).href;
   const fmt = (n) => Math.round(n).toLocaleString("en-US");
+  const U = SS.U, cmS = (v) => U.dep(v) + "<small>" + U.du() + "</small>";   // US units: one formatter (core.js SS.U)
   const D = (d) => new Date(d + "T12:00:00Z");
   const wd = (d) => D(d).toLocaleDateString(LOC, { weekday: "short", timeZone: "UTC" });
   const dnum = (d) => D(d).getUTCDate();
@@ -280,17 +281,18 @@
     const ramp = (title, stops, ticks) => "<b>" + title + when + '</b><div class="ramp">' + stops.map((s) => '<i style="background:rgb(' + s[1].join(",") + ')"></i>').join("") +
       '</div><div class="ramp-l">' + ticks.map((t) => "<span>" + t + "</span>").join("") + "</div>";
     const live = !isStatic(st.day);
+    const ticks = (a) => a.map((v, i) => { const n = U.depN(v); return (n < 1 ? String(n) : fmt(n)) + (i === a.length - 1 ? "+ " + U.du() : ""); });
     let h = "";
     if (mode === "depth") {
       const m = st.scale;
-      h = ramp("Snow depth", depthStops(), live ? ["1", "25", "100", "400+ cm"] : ["1", fmt(m / 4), fmt(m / 2), fmt(m) + "+ cm"]).replace("</b>", ' <span class="chip30" id="chip30" hidden>30 m</span></b>');
-      if (!live) h += '<div class="row2"><div class="mini" role="group" aria-label="Colour scale">' + [100, 200, 400].map((v) => '<button data-scale="' + v + '" aria-pressed="' + (st.scale === v) + '">' + v + " cm</button>").join("") + "</div>";
+      h = ramp("Snow depth", depthStops(), ticks(live ? [1, 25, 100, 400] : [1, m / 4, m / 2, m])).replace("</b>", ' <span class="chip30" id="chip30" hidden>30 m</span></b>');
+      if (!live) h += '<div class="row2"><div class="mini" role="group" aria-label="Colour scale">' + [100, 200, 400].map((v) => '<button data-scale="' + v + '" aria-pressed="' + (st.scale === v) + '">' + U.depN(v) + " " + U.du() + "</button>").join("") + "</div>";
       else h += '<div class="row2">';
     } else if (mode === "powder") {
-      h = ramp(p72on() ? "New snow, 3 days" : "New snow, 24 h", newStops(), p72on() ? ["1", "15", "45", "120+ cm"] : ["1", "10", "30", "80+ cm"]) + '<div class="row2">';
+      h = ramp(p72on() ? "New snow, 3 days" : "New snow, 24 h", newStops(), ticks(p72on() ? [1, 15, 45, 120] : [1, 10, 30, 80])) + '<div class="row2">';
     } else if (mode === "sat") h = '<b>Latest clear view</b>' + (DATA.regions.find((r) => r.sat) ? '<small class="none" style="padding:0 0 4px;display:block">' + esc(I18N.t("Clear view up to") + " " + D(DATA.regions.find((r) => r.sat).sat.asof).toLocaleDateString(LOC, { day: "numeric", month: "short", timeZone: "UTC" })) + "</small>" : "") + '<div class="sw"><span><i style="background:#F6FAFF"></i>Snow</span><span><i style="background:#A0C4E4"></i>Patchy</span><span><i style="background:#96693E"></i>No snow</span><span><i style="background:#7D7D8A"></i>Cloud</span></div><div class="row2">';
-    else if (mode === "wind") h = ramp("Wind at midday", WIND, ["0", "20", "50", "100 km/h"]) + '<div class="row2">';
-    else if (mode === "freeze") h = ramp("Freezing level", FREEZE, ["0", "1,500", "3,000", "4,500 m"]) + '<div class="row2">';
+    else if (mode === "wind") h = ramp("Wind at midday", WIND, [0, 20, 50, 100].map((v, i, a) => U.wv(v) + (i === a.length - 1 ? " " + U.wu() : ""))) + '<div class="row2">';
+    else if (mode === "freeze") h = ramp("Freezing level", FREEZE, [0, 1500, 3000, 4500].map((v, i, a) => U.ev(v) + (i === a.length - 1 ? " " + U.eu() : ""))) + '<div class="row2">';
     else if (mode === "radar") h = "<b>Rain & snow now</b><div class=\"row2\">";
     if (h && (mode === "depth" || mode === "powder")) h += '<div class="mini" role="group" aria-label="Look"><button data-sharp="0" aria-pressed="' + !st.sharp + '">Clear</button><button data-sharp="1" aria-pressed="' + st.sharp + '">Sharp</button></div>';
     if (h) h += "</div>";
@@ -603,7 +605,7 @@
     badge("stn_badge", "stn", 5, 24, "d", ["all", ["!", ["has", "point_count"]], [">=", ["get", "d"], 1]], nameText);
     map.setLayoutProperty("stn_badge", "text-field", ["step", ["zoom"], "", 8.5, nameText]);
     map.addLayer({ id: "stn_new", type: "symbol", source: "stn", minzoom: 8, filter: ["all", ["!", ["has", "point_count"]], [">=", ["get", "n2"], 5]],
-      layout: { ...svis, "icon-image": "pill_new", "icon-text-fit": "both", "icon-text-fit-padding": [0, 3, 0, 3], "text-field": ["concat", "+", ["get", "n2"]], "text-font": ["Noto Sans Bold"], "text-size": 10,
+      layout: { ...svis, "icon-image": "pill_new", "icon-text-fit": "both", "icon-text-fit-padding": [0, 3, 0, 3], "text-field": ["concat", "+", ["get", "n2s"]], "text-font": ["Noto Sans Bold"], "text-size": 10,
         "text-offset": [1.3, -1.5], "text-anchor": "bottom-left", "icon-allow-overlap": true, "text-allow-overlap": true, "icon-ignore-placement": true, "text-ignore-placement": true },
       paint: { "text-color": "#ffffff" } });
     map.addLayer({ id: "pt_line", type: "line", source: "pt_line", paint: { "line-color": "#1463F3", "line-width": 1.6, "line-dasharray": [2, 2] } });
@@ -653,7 +655,7 @@
         "text-anchor": "top", "text-offset": [0, 0.35], "text-optional": true, "text-max-width": 9, "text-letter-spacing": 0.02 },
       paint: { "text-color": "#0B1220", "text-halo-color": "#ffffff", "text-halo-width": 1.5 } });
     map.addLayer({ id: "pin_new", type: "symbol", source: "pins", minzoom: 8, filter: ["all", ["has", "v"], [">=", ["get", "nw"], 3]],
-      layout: { "icon-image": "pill_new", "icon-text-fit": "both", "icon-text-fit-padding": [0, 3, 0, 3], "text-field": ["concat", "+", ["get", "nw"]], "text-font": ["Noto Sans Bold"], "text-size": 10,
+      layout: { "icon-image": "pill_new", "icon-text-fit": "both", "icon-text-fit-padding": [0, 3, 0, 3], "text-field": ["concat", "+", ["get", "nws"]], "text-font": ["Noto Sans Bold"], "text-size": 10,
         "text-offset": [1.4, -3.4], "text-anchor": "bottom-left", "icon-allow-overlap": true, "text-allow-overlap": true, "icon-ignore-placement": true, "text-ignore-placement": true },
       paint: { "text-color": "#ffffff" } });
     for (const id of ["pins", "pin_lbl", "pin_chip"]) {
@@ -663,7 +665,7 @@
     // powder bubbles (map mode "New snow"): sized and coloured by the fresh snow, the number inside, top 3 with a glow
     map.addSource("pow", { type: "geojson", data: fc });
     map.addLayer({ id: "pow", type: "symbol", source: "pow", minzoom: 4,
-      layout: { "icon-image": ["concat", "pw", ["case", ["<=", ["get", "rk"], 3], "g", ""], "_", ["to-string", ["get", "n"]]], "icon-size": ["interpolate", ["linear"], ["zoom"], 4, ["*", 0.7, ["interpolate", ["linear"], ["get", "n"], 1, 0.8, 30, 1, 80, 1.2]], 8, ["*", 0.9, ["interpolate", ["linear"], ["get", "n"], 1, 0.8, 30, 1, 80, 1.2]], 12, ["interpolate", ["linear"], ["get", "n"], 1, 0.8, 30, 1, 80, 1.2]],
+      layout: { "icon-image": ["concat", "pw", ["case", ["<=", ["get", "rk"], 3], "g", ""], U.us() ? "u" : "", "_", ["to-string", ["get", "n"]]], "icon-size": ["interpolate", ["linear"], ["zoom"], 4, ["*", 0.7, ["interpolate", ["linear"], ["get", "n"], 1, 0.8, 30, 1, 80, 1.2]], 8, ["*", 0.9, ["interpolate", ["linear"], ["get", "n"], 1, 0.8, 30, 1, 80, 1.2]], 12, ["interpolate", ["linear"], ["get", "n"], 1, 0.8, 30, 1, 80, 1.2]],
         "symbol-sort-key": ["-", 1000, ["get", "n"]], "text-field": ["step", ["zoom"], "", 8, ["get", "t"]], "text-font": ["Noto Sans Bold"], "text-size": 11.5, "text-anchor": "top", "text-offset": [0, 1.9], "text-optional": true, "text-max-width": 9 },
       paint: { "text-color": "#0B1220", "text-halo-color": "#ffffff", "text-halo-width": 1.5 } });
     map.on("click", "pow", (e) => { const f = e.features && e.features[0]; if (f) { st.stayClick = Date.now(); openResort(f.properties.s); } });
@@ -676,9 +678,9 @@
   function pinImage(v, th) {
     const id = "pin" + th + "_" + v;
     if (PINS.has(id) || !map) return;
-    const c = document.createElement("canvas"), g = c.getContext("2d"), dark = th === "d";
-    g.font = "600 24px Inter, system-ui, sans-serif"; const tw = Math.ceil(g.measureText(String(v)).width);
-    g.font = "500 16px Inter, system-ui, sans-serif"; const uw = Math.ceil(g.measureText("cm").width);
+    const c = document.createElement("canvas"), g = c.getContext("2d"), dark = th[0] === "d", vs = U.dep(v), un = U.du();
+    g.font = "600 24px Inter, system-ui, sans-serif"; const tw = Math.ceil(g.measureText(vs).width);
+    g.font = "500 16px Inter, system-ui, sans-serif"; const uw = Math.ceil(g.measureText(un).width);
     const W = 16 + 12 + 8 + tw + 4 + uw + 16 + 8, H = 44 + 10 + 10, R = 16; c.width = W; c.height = H;
     g.shadowColor = "rgba(11,18,32,.28)"; g.shadowBlur = 8; g.shadowOffsetY = 3;
     g.fillStyle = dark ? "#F4F6FA" : "#0B1220"; roundRect(g, 4, 2, W - 8, 44, R); g.fill();
@@ -687,13 +689,13 @@
     g.fillStyle = depthCol(v); g.beginPath(); g.arc(4 + 16 + 6, 24, 6, 0, Math.PI * 2); g.fill();
     g.strokeStyle = "rgba(255,255,255,.55)"; g.lineWidth = 1.5; g.stroke();
     g.textBaseline = "middle"; g.textAlign = "left"; g.fillStyle = dark ? "#0B1220" : "#ffffff";
-    g.font = "600 24px Inter, system-ui, sans-serif"; g.fillText(String(v), 4 + 16 + 12 + 8, 25);
-    g.fillStyle = dark ? "#5B6473" : "#B8C0CC"; g.font = "500 16px Inter, system-ui, sans-serif"; g.fillText("cm", 4 + 16 + 12 + 8 + tw + 4, 26);
+    g.font = "600 24px Inter, system-ui, sans-serif"; g.fillText(vs, 4 + 16 + 12 + 8, 25);
+    g.fillStyle = dark ? "#5B6473" : "#B8C0CC"; g.font = "500 16px Inter, system-ui, sans-serif"; g.fillText(un, 4 + 16 + 12 + 8 + tw + 4, 26);
     map.addImage(id, g.getImageData(0, 0, W, H), { pixelRatio: 2 });
     PINS.add(id);
   }
   function bubbleImage(n, glow) {
-    const id = "pw" + (glow ? "g" : "") + "_" + n;
+    const id = "pw" + (glow ? "g" : "") + (U.us() ? "u" : "") + "_" + n;
     if (PINS.has(id) || !map) return;
     const c = document.createElement("canvas"), g = c.getContext("2d"), S = 72, pad = glow ? 14 : 6, W = S + pad * 2; c.width = c.height = W;
     const col = rampAt(NEW, n);
@@ -702,7 +704,7 @@
     g.shadowColor = "transparent";
     g.fillStyle = "rgb(" + col.join(",") + ")"; g.beginPath(); g.arc(W / 2, W / 2, S / 2 - 2.5, 0, Math.PI * 2); g.fill();
     g.textBaseline = "middle"; g.textAlign = "center"; g.fillStyle = n >= 20 ? "#ffffff" : "#0B1220";
-    g.font = "700 24px Inter, system-ui, sans-serif"; g.fillText("+" + n, W / 2, W / 2 + 1);
+    g.font = "700 24px Inter, system-ui, sans-serif"; g.fillText("+" + U.dep(n), W / 2, W / 2 + 1);
     map.addImage(id, g.getImageData(0, 0, W, W), { pixelRatio: 2 });
     PINS.add(id);
   }
@@ -730,11 +732,11 @@
     map.addImage("pill_new", g.getImageData(0, 0, W, H), { pixelRatio: 2, stretchX: [[R + 8, W - R - 8]], stretchY: [[R + 8, H - R - 8]], content: [10, 10, W - 10, H - 10] });
     BADGES.clear();
   }
-  const badgeKey = () => "b" + st.scale + "_";
+  const badgeKey = () => "b" + st.scale + (U.us() ? "u" : "") + "_";
   function badgeImage(d) {
     const id = badgeKey() + d;
     if (BADGES.has(id) || !map) return;
-    const c = document.createElement("canvas"), g = c.getContext("2d"), txt = d + " cm";
+    const c = document.createElement("canvas"), g = c.getContext("2d"), txt = U.depth(d);
     g.font = "600 26px Inter, system-ui, sans-serif";
     const tw = Math.ceil(g.measureText(txt).width), W = tw + 36, H = 50, R = 16;
     c.width = W; c.height = H; g.font = "600 26px Inter, system-ui, sans-serif"; g.textAlign = "center"; g.textBaseline = "middle";
@@ -757,7 +759,7 @@
     pillImages();
     for (const r of j.rows) badgeImage(r[4]);
     const feat = (r, i) => ({ type: "Feature", geometry: { type: "Point", coordinates: [r[1], r[0]] },
-      properties: { i, n: r[2], nu: r[2].toUpperCase(), e: r[3] || 0, el: r[3] ? fmt(r[3]) + " m" : "", d: r[4], tm: r[5], u: r[7] || "", n2: r[8] || 0 } });
+      properties: { i, n: r[2], nu: r[2].toUpperCase(), e: r[3] || 0, el: r[3] ? U.elev(r[3]) : "", d: r[4], tm: r[5], u: r[7] || "", n2: r[8] || 0, n2s: U.dep(r[8] || 0) } });
     map.getSource("stn").setData({ type: "FeatureCollection", features: j.rows.map(feat) });
     const top = [];
     for (const r of DATA.regions) {
@@ -769,7 +771,7 @@
     refreshStations();
   }
   const stnTime = (tm) => { const t = new Date(tm); return isNaN(t) ? "" : (tm.slice(0, 10) === DATA.today ? t.toLocaleTimeString(LOC, { hour: "2-digit", minute: "2-digit" }) : t.toLocaleDateString(LOC, { day: "numeric", month: "short" })); };
-  const newChip = (n) => (n >= 1 ? '<em class="nw"><span class="ms">arrow_upward</span>+' + n + "</em>" : "");
+  const newChip = (n) => (n >= 1 ? '<em class="nw"><span class="ms">arrow_upward</span>+' + U.dep(n) + "</em>" : "");
   function sparkline(i) {        // 14-day depth of one station (from stations_hist.json)
     const h = st.stnHist; if (!h || !h.rows[i]) return "";
     const v = h.rows[i], W = 220, H = 44, n = v.length, max = Math.max(5, ...v.filter((x) => x != null));
@@ -779,14 +781,14 @@
     if (!d) return "";
     return '<svg class="spark" viewBox="0 0 ' + W + " " + H + '" aria-hidden="true"><path d="' + d + '" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linejoin="round"/>' +
       (last != null ? '<circle cx="' + X(last) + '" cy="' + Y(v[last]) + '" r="3" fill="var(--ink)"/>' : "") +
-      '<text x="' + (W - 2) + '" y="10" text-anchor="end" class="lbl">' + max + " cm</text></svg>" +
+      '<text x="' + (W - 2) + '" y="10" text-anchor="end" class="lbl">' + U.depth(max) + "</text></svg>" +
       '<div class="line" style="font-size:11.5px">' + esc(I18N.t("Last {a} days").replace("{a}", n)) + "</div>";
   }
   function stnCardHtml(i) {
     const r = st.stations.rows[i];
     return '<div class="pv stn"><span class="k">' + esc(I18N.t("Measured")) + " · " + esc(stnTime(r[5])) + '</span>' +
-      '<div class="stnhead"><i class="chip" style="background:' + depthCol(r[4]) + '"></i><b class="dep">' + r[4] + "<small>cm</small></b>" + newChip(r[8]) + "</div>" +
-      '<div class="stnname">' + esc(r[2]) + "</div>" + (r[3] ? '<div class="line light">' + fmt(r[3]) + " m</div>" : "") +
+      '<div class="stnhead"><i class="chip" style="background:' + depthCol(r[4]) + '"></i><b class="dep">' + cmS(r[4]) + "</b>" + newChip(r[8]) + "</div>" +
+      '<div class="stnname">' + esc(r[2]) + "</div>" + (r[3] ? '<div class="line light">' + U.elev(r[3]) + "</div>" : "") +
       '<div id="stnSpark">' + sparkline(i) + "</div>" +
       (r[7] ? '<a class="near" href="' + esc(r[7]) + '" target="_blank" rel="noopener">' + esc(I18N.t("Station page")) + "</a>" : "") + "</div>";
   }
@@ -808,11 +810,11 @@
     let h = '<div id="stnbox"><div class="sect">Measured snow in view</div>';
     if (!rows.length) return h + '<p class="none">No measuring station in this view.</p></div>';
     const t = rows[0][0];
-    h += '<div class="stntop"><div><div class="over">Deepest measured</div><b>' + esc(t[2]) + '</b><small>' + (t[3] ? fmt(t[3]) + " m · " : "") + esc(stnTime(t[5])) + "</small></div>" +
-      '<span class="val" data-stn="' + rows[0][1] + '"><i class="chip" style="background:' + depthCol(t[4]) + '"></i><b>' + t[4] + "<small>cm</small></b>" + newChip(t[8]) + "</span></div>" +
+    h += '<div class="stntop"><div><div class="over">Deepest measured</div><b>' + esc(t[2]) + '</b><small>' + (t[3] ? U.elev(t[3]) + " · " : "") + esc(stnTime(t[5])) + "</small></div>" +
+      '<span class="val" data-stn="' + rows[0][1] + '"><i class="chip" style="background:' + depthCol(t[4]) + '"></i><b>' + cmS(t[4]) + "</b>" + newChip(t[8]) + "</span></div>" +
       '<div class="mini" role="group" aria-label="Map layers"><button data-monly aria-pressed="' + st.monly + '"><span class="ms">sensors</span>Measured only</button></div>';
     h += '<table class="fc stn"><thead><tr><th>Station</th><th>Elev.</th><th>Depth</th><th>New</th><th>Time</th><th></th></tr></thead><tbody>' +
-      rows.slice(0, 30).map(([r, i]) => '<tr data-stn="' + i + '"><td class="nm" title="' + esc(r[2]) + '"><i class="chip" style="background:' + depthCol(r[4]) + '"></i>' + esc(r[2]) + "</td><td>" + (r[3] ? fmt(r[3]) + " m" : "–") + "</td><td><b>" + r[4] + "</b> cm</td><td>" +
+      rows.slice(0, 30).map(([r, i]) => '<tr data-stn="' + i + '"><td class="nm" title="' + esc(r[2]) + '"><i class="chip" style="background:' + depthCol(r[4]) + '"></i>' + esc(r[2]) + "</td><td>" + (r[3] ? U.elev(r[3]) : "–") + "</td><td><b>" + U.dep(r[4]) + "</b> " + U.du() + "</td><td>" +
         (newChip(r[8]) || "–") + "</td><td>" + esc(stnTime(r[5])) + "</td><td>" +
         (r[7] ? '<a href="' + esc(r[7]) + '" target="_blank" rel="noopener" title="Station page" data-stop><span class="ms">open_in_new</span></a>' : "") + "</td></tr>").join("") +
       "</tbody></table>" + (rows.length > 30 ? '<p class="none">' + esc(I18N.t("Showing the 30 deepest of {a} stations in view").replace("{a}", rows.length)) + "</p>" : "");
@@ -856,15 +858,15 @@
     if (refElev != null && c.length > 1 && c[1].km - c[0].km <= 5 && c[0].r[3] && c[1].r[3] && Math.abs(c[0].r[3] - refElev) > 400 && Math.abs(c[1].r[3] - refElev) <= 400) best = c[1];
     return best;
   }
-  const kmText = (km) => (km < 10 ? km.toFixed(1) : String(Math.round(km))) + " km away";
+  const kmText = (km) => U.dist(km) + " away";
   function measuredHtml(lat, lon, refElev, short) {
     const n = nearestStation(lat, lon, refElev);
     if (n === undefined) return '<p class="measured" data-measured="' + lat + "," + lon + "," + (refElev == null ? "" : refElev) + "," + (short ? 1 : 0) + '"></p>';
-    if (!n) return '<p class="measured none">' + esc(I18N.t("No measurement within 25 km")) + "</p>";
+    if (!n) return '<p class="measured none">' + esc(I18N.tu("No measurement within {a} km", U.kmN(25))) + "</p>";
     const r = n.r, dE = refElev != null && r[3] ? Math.round((r[3] - refElev) / 10) * 10 : null;
-    return '<p class="measured" data-stnfly="' + n.i + '"><span class="k">Measured nearby</span> <i class="chip" style="background:' + depthCol(r[4]) + '"></i><b>' + esc(r[2]) + " " + r[4] + " cm</b>" +
-      (short ? " · " + kmText(n.km) : " · " + (r[3] ? fmt(r[3]) + " m · " : "") + kmText(n.km) + " · " + esc(stnTime(r[5])) +
-        (dE != null && Math.abs(dE) >= 50 ? " · " + esc(I18N.t(dE > 0 ? "{a} m higher" : "{a} m lower").replace("{a}", fmt(Math.abs(dE)))) : "")) + "</p>";
+    return '<p class="measured" data-stnfly="' + n.i + '"><span class="k">Measured nearby</span> <i class="chip" style="background:' + depthCol(r[4]) + '"></i><b>' + esc(r[2]) + " " + U.depth(r[4]) + "</b>" +
+      (short ? " · " + kmText(n.km) : " · " + (r[3] ? U.elev(r[3]) + " · " : "") + kmText(n.km) + " · " + esc(stnTime(r[5])) +
+        (dE != null && Math.abs(dE) >= 50 ? " · " + esc(I18N.tu(dE > 0 ? "{a} m higher" : "{a} m lower", U.ev(Math.abs(dE)))) : "")) + "</p>";
   }
   function fillMeasured() {              // placeholders written before stations.json had arrived
     document.querySelectorAll("[data-measured]").forEach((el) => { const [la, lo, e, sh] = el.dataset.measured.split(","); el.outerHTML = measuredHtml(+la, +lo, e === "" ? null : +e, sh === "1"); });
@@ -894,7 +896,7 @@
       (d ? d.top.slice(0, 5) : []).forEach((t, i) => {
         const x = BY[t.slug]; if (!x) return;
         feats.push({ type: "Feature", geometry: { type: "Point", coordinates: [x.lon, x.lat] }, properties: { s: t.slug, rk: i + 1, nw: t.new_cm || 0,
-          t: t.name + " · " + t.depth_cm + " cm" + (t.new_cm >= 1 ? " +" + t.new_cm : "") } });
+          t: t.name + " · " + U.depth(t.depth_cm) + (t.new_cm >= 1 ? " +" + U.dep(t.new_cm) : "") } });
       });
     }
     map.getSource("best").setData({ type: "FeatureCollection", features: feats });
@@ -921,11 +923,11 @@
     if (!ready || !map.getSource("pins")) return;
     const res = await RES.catch(() => null);
     if (!res) return;
-    const i = res.dates.indexOf(st.day), th = isDarkTheme() ? "d" : "l", on = st.over.pins && st.main !== "powder";
+    const i = res.dates.indexOf(st.day), th = (isDarkTheme() ? "d" : "l") + (U.us() ? "u" : ""), on = st.over.pins && st.main !== "powder";
     if (map.hasImage && !map.hasImage("pill_new")) pillImages();
     const feats = on ? res.rows.map((x) => {
       const v = i >= 0 && x.snow[i] ? x.snow[i][0] : null, nw = i >= 0 && x.snow[i] ? x.snow[i][1] || 0 : 0;
-      const pr = { s: x.slug, n: x.short, km: x.km || 0, sz: x.km >= 100 ? 1 : x.km >= 30 ? 0.9 : 0.8, nw, th };
+      const pr = { s: x.slug, n: x.short, km: x.km || 0, sz: x.km >= 100 ? 1 : x.km >= 30 ? 0.9 : 0.8, nw, nws: U.dep(nw), th };
       if (v) { pr.v = v; pinImage(v, th); }
       return { type: "Feature", geometry: { type: "Point", coordinates: [x.lon, x.lat] }, properties: pr };
     }) : [];
@@ -1045,8 +1047,8 @@
         const c = Math.round((ll.lng - cur.ix.lon[0]) / 0.25), rr = Math.round((cur.ix.lat[0] - ll.lat) / 0.25), v = fieldVal(cur.f, mode, rr, c);
         if (v != null && mode === "wind") {
           const dir = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"][Math.round(((Math.atan2(-cur.f.u[rr][c], -cur.f.v[rr][c]) * 180 / Math.PI) + 360) % 360 / 45) % 8];
-          h = '<span class="k">Wind at midday · ' + when + '</span><span class="big">' + Math.round(v) + '<small>km/h</small></span><div class="line">from the ' + dir + "</div>";
-        } else if (v != null) h = '<span class="k">Freezing level · ' + when + '</span><span class="big">' + fmt(v) + "<small>m</small></span>";
+          h = '<span class="k">Wind at midday · ' + when + '</span><span class="big">' + U.wv(v) + '<small>' + U.wu() + '</small></span><div class="line">from the ' + dir + "</div>";
+        } else if (v != null) h = '<span class="k">Freezing level · ' + when + '</span><span class="big">' + U.ev(v) + "<small>" + U.eu() + "</small></span>";
       }
     } else if (mode === "sat") {
       const rr = r && r.sat ? r : null;
@@ -1064,21 +1066,21 @@
         const [cd, cn] = await Promise.all([codeAt(r, "d", ll), codeAt(r, p72on() ? "n3" : "n", ll)]);
         if (cd != null && cd !== 255) {
           const dep = decDepth(cd), nw = cn != null && cn !== 255 ? cn : 0;
-          if (mode === "powder") h = '<span class="k">New snow' + (p72on() ? ", 3 days" : "") + " · " + when + '</span><span class="big">' + (nw >= 1 ? "+" + nw + "<small>cm</small>" : "None") + '</span><div class="line">' + (dep >= 1 ? dep + " cm on the ground" : "No snow on the ground") + "</div>";
-          else h = '<span class="k">Snow on the ground · ' + when + '</span><span class="big">' + (dep >= 1 ? dep + "<small>cm</small>" : "No snow") + "</span>" + (nw >= 1 ? '<span class="badge">+' + nw + " cm new</span>" : "");
+          if (mode === "powder") h = '<span class="k">New snow' + (p72on() ? ", 3 days" : "") + " · " + when + '</span><span class="big">' + (nw >= 1 ? "+" + cmS(nw) : "None") + '</span><div class="line">' + (dep >= 1 ? U.depth(dep) + " on the ground" : "No snow on the ground") + "</div>";
+          else h = '<span class="k">Snow on the ground · ' + when + '</span><span class="big">' + (dep >= 1 ? cmS(dep) : "No snow") + "</span>" + (nw >= 1 ? '<span class="badge">+' + U.depth(nw) + " new</span>" : "");
         }
       } else if (proLive()) {
         try {
           const fine = r && st.proIdx.g500[r.code];
           const p = await SS.api((fine ? "/v1/g500/point" : "/v1/grid/point") + "?lat=" + ll.lat.toFixed(4) + "&lon=" + ll.lng.toFixed(4));
           const d = (p.days || []).find((x) => x.date === st.day);
-          if (d) h = '<span class="k">Snow on the ground · ' + when + '</span><span class="big">' + (d.depth_cm >= 1 ? Math.round(d.depth_cm) + "<small>cm</small>" : "No snow") + "</span>" +
-            (d.new_cm >= 1 ? '<span class="badge">+' + Math.round(d.new_cm) + " cm new</span>" : "") + (p.elev_m ? '<div class="line">at ' + fmt(p.elev_m) + " m</div>" : "");
+          if (d) h = '<span class="k">Snow on the ground · ' + when + '</span><span class="big">' + (d.depth_cm >= 1 ? cmS(Math.round(d.depth_cm)) : "No snow") + "</span>" +
+            (d.new_cm >= 1 ? '<span class="badge">+' + U.depth(Math.round(d.new_cm)) + " new</span>" : "") + (p.elev_m ? '<div class="line">at ' + U.elev(p.elev_m) + "</div>" : "");
         } catch (er) { h = er.down ? '<div class="line">Pro data is updating, try again in a minute.</div>' : ""; }
       }
       if (!h) h = '<span class="k">' + when + '</span><div class="line">No snow data here.</div>';
       const n = await nearest(ll);
-      if (n) h += '<button class="near linkbtn" data-open="' + esc(n[0].slug) + '">' + esc(n[0].short) + " · " + Math.max(1, Math.round(n[1])) + " km →</button>";
+      if (n) h += '<button class="near linkbtn" data-open="' + esc(n[0].slug) + '">' + esc(n[0].short) + " · " + U.dist(Math.max(1, Math.round(n[1]))) + " →</button>";
     }
     if (st.over.aval && map.getLayer("aval_fill")) {
       const f = map.queryRenderedFeatures(e.point, { layers: ["aval_fill"] })[0];
@@ -1102,7 +1104,7 @@
       ["off", "Off", "linear-gradient(135deg,var(--surface2),var(--surface3))"]];
     const tile = ([id, name, sw, pro]) => '<button class="tile" data-main="' + id + '" aria-pressed="' + (st.main === id) + '"><div class="sw2" style="background:' + sw + '"></div>' +
       (pro && !st.pro ? '<span class="pro"><span class="ms f">lock</span>PRO</span>' : "") + "<span>" + name + "</span></button>";
-    const rows = [["wind", "Wind", "Around midday", "air", true, true], ["freeze", "Freezing level", "Where 0 °C sits", "device_thermostat", true, true],
+    const rows = [["wind", "Wind", "Around midday", "air", true, true], ["freeze", "Freezing level", U.us() ? "Where 32 °F sits" : "Where 0 °C sits", "device_thermostat", true, true],
       ["radar", "Rain & snow radar", "Right now", "radar", false, true], ["p72", "3-day snow", "Powder over 3 days", "ac_unit", true],
       ...(s30Enabled() ? [["s30", "Sharp 30 m", "The sharpest snow picture, where available", "grid_on"]] : []), ["stn", "Measured snow", "Snow depth measured at stations", "sensors"], ["pins", "Resorts", "Name and snow on each resort", "location_on"], ["stays", "Places to stay", "BOOK chips on resorts · Partner", "hotel"], ["pistes", "Pistes & lifts", "Coloured by difficulty", "downhill_skiing"]];
     const row = ([id, name, sub, icon, pro, main]) => {
@@ -1117,7 +1119,7 @@
       (st.pro ? "" : '<p style="color:var(--ink3);font-size:13px;margin:10px 0 0">Powder is free for today. Pro adds every day, 3-day snow and the layers with a lock.</p>') +
       '<div class="over sec">Weather and more</div>' + rows.map(row).join("") +
       '<div class="over sec">Safety</div>' + row(["aval", "Avalanche danger", "Official daily levels", "warning"]) +
-      '<div class="over sec">Snow colours</div><div class="filters"><div class="seg2" role="group" aria-label="Colour scale">' + [100, 200, 400].map((v) => '<button data-scale="' + v + '" aria-pressed="' + (st.scale === v) + '">0–' + v + " cm</button>").join("") +
+      '<div class="over sec">Snow colours</div><div class="filters"><div class="seg2" role="group" aria-label="Colour scale">' + [100, 200, 400].map((v) => '<button data-scale="' + v + '" aria-pressed="' + (st.scale === v) + '">0–' + U.depN(v) + " " + U.du() + "</button>").join("") +
       '</div><div class="seg2" role="group" aria-label="Look"><button data-sharp="0" aria-pressed="' + !st.sharp + '">Clear</button><button data-sharp="1" aria-pressed="' + st.sharp + '">Sharp</button></div></div>' + styles);
     m.el.addEventListener("click", (e) => {
       const t = e.target.closest("[data-main]"), o = e.target.closest("[data-over]"), sy = e.target.closest("[data-style]");
@@ -1270,27 +1272,27 @@
   const dayOf = (r) => r.days.find((y) => y.date === st.day) || r.days.find((y) => y.date === DATA.today) || r.days[r.days.length - 1];
   const the = (n) => (n === "Alps" || n === "Pyrenees" ? "the " + n : n);
   const resRow = (x, i, v, sub, nw) => '<a class="rrow' + (v ? "" : " dim") + '" href="' + BASE + "resorts/" + encodeURIComponent(x.slug) + '.html" data-open="' + esc(x.slug) + '">' +
-    (i != null ? '<span class="rk">' + (i + 1) + "</span>" : "") + '<span class="nm"><b>' + esc(x.short || x.name) + "</b><small>" + esc(sub) + '</small></span><span class="val"><b>' + (v != null ? v + "<small>cm</small>" : "–") + "</b>" + (nw ? "<em>+" + nw + " new</em>" : "") + "</span></a>";
+    (i != null ? '<span class="rk">' + (i + 1) + "</span>" : "") + '<span class="nm"><b>' + esc(x.short || x.name) + "</b><small>" + esc(sub) + '</small></span><span class="val"><b>' + (v != null ? cmS(v) : "–") + "</b>" + (nw ? "<em>+" + U.dep(nw) + " new</em>" : "") + "</span></a>";
 
   function mapView() {
     const r = DATA.regions.find((x) => x.code === st.region) || DATA.regions[0], x = dayOf(r);
-    const h1 = x.new_max_cm >= 10 ? "Fresh snow in " + the(r.name) + ": up to +" + x.new_max_cm + " cm"
+    const h1 = x.new_max_cm >= 10 ? "Fresh snow in " + the(r.name) + ": up to +" + U.depth(x.new_max_cm)
       : x.resorts_with_snow ? "Snow at " + fmt(x.resorts_with_snow) + " resorts in " + the(r.name)
-      : x.max_cm >= 1 ? "Snow on the high peaks in " + the(r.name) + ", up to " + x.max_cm + " cm" : "No snow in " + the(r.name) + " yet";
+      : x.max_cm >= 1 ? "Snow on the high peaks in " + the(r.name) + ", up to " + U.depth(x.max_cm) : "No snow in " + the(r.name) + " yet";
     const other = DATA.regions.filter((y) => y.code !== r.code).map((y) => [y, dayOf(y)]).sort((a, b) => b[1].new_max_cm - a[1].new_max_cm)[0];
-    const lede = other && other[1].new_max_cm >= 5 ? '<button data-goregion="' + other[0].code + '">' + esc("Biggest snowfall elsewhere: " + other[0].name + ", +" + other[1].new_max_cm + " cm.") + "</button>" : "Tap the map for the snow on any slope.";
+    const lede = other && other[1].new_max_cm >= 5 ? '<button data-goregion="' + other[0].code + '">' + esc("Biggest snowfall elsewhere: " + other[0].name + ", +" + U.depth(other[1].new_max_cm) + ".") + "</button>" : "Tap the map for the snow on any slope.";
     const best = x.top[0];
     let h = '<div class="over">' + (st.day === DATA.today ? "Snow today" : esc(longDay(st.day))) + "</div><h1>" + esc(h1) + '</h1><p class="lede">' + lede + "</p>" +
       '<div class="card rc"><div class="stats"><div class="stat"><b>' + fmt(x.resorts_with_snow) + "</b><small>resorts with snow</small></div>" +
-      '<div class="stat"><b>' + (best ? best.depth_cm + "<small>cm</small>" : "–") + "</b><small>deepest resort</small></div>" +
-      '<div class="stat"><b>' + (x.new_max_cm >= 1 ? "+" + x.new_max_cm + "<small>cm</small>" : "–") + "</b><small>new snow</small></div></div></div>" +
+      '<div class="stat"><b>' + (best ? cmS(best.depth_cm) : "–") + "</b><small>deepest resort</small></div>" +
+      '<div class="stat"><b>' + (x.new_max_cm >= 1 ? "+" + cmS(x.new_max_cm) : "–") + "</b><small>new snow</small></div></div></div>" +
       '<div class="sect">Deepest snow on the upper slopes</div>' + (x.top.length ? x.top.map((t, i) => resRow({ slug: t.slug, short: t.name }, i, t.depth_cm, t.country, t.new_cm)).join("") : '<p class="none">No resort has snow yet.</p>');
     h += stationsHtml();
     h += adSlot("infeed", best && BY[best.slug]);
     h += '<div class="sect">Other regions</div>' + DATA.regions.filter((y) => y.code !== r.code).map((y) => {
       const z = dayOf(y);
       return '<button class="rrow" style="width:100%;border-left:0;border-right:0;border-top:0;background:none;text-align:left" data-goregion="' + y.code + '"><span class="nm"><b>' + esc(y.name) + "</b><small>" +
-        (z.resorts_with_snow ? fmt(z.resorts_with_snow) + " resorts have snow" : "No snow at the resorts yet") + '</small></span><span class="val">' + (z.new_max_cm >= 1 ? "<em>+" + z.new_max_cm + " cm new</em>" : "") + "</span></button>";
+        (z.resorts_with_snow ? fmt(z.resorts_with_snow) + " resorts have snow" : "No snow at the resorts yet") + '</small></span><span class="val">' + (z.new_max_cm >= 1 ? "<em>+" + U.depth(z.new_max_cm) + " new</em>" : "") + "</span></button>";
     }).join("");
     h += adSlot("banner", best && BY[best.slug]);
     return h + appCard() + footer();
@@ -1329,11 +1331,11 @@
   function card(res, x, i, ti, dist) {
     const s = x.snow[ti] || [], n72 = (x.snow[res.dates.indexOf(DATA.today)] || [])[2];
     return '<article class="card reco"><div class="rh"><span class="rk">' + (i + 1) + '</span><span class="nm"><b>' + esc(x.short) + "</b><small>" +
-      esc([x.country, dist != null ? Math.round(dist) + " km away" : "", x.top_m ? "top " + fmt(x.top_m) + " m" : ""].filter(Boolean).join(" · ")) + "</small></span></div>" +
+      esc([x.country, dist != null ? U.dist(Math.round(dist)) + " away" : "", x.top_m ? "top " + U.elev(x.top_m) : ""].filter(Boolean).join(" · ")) + "</small></span></div>" +
       '<p class="verdict">' + verdictOf(s[0] || 0, s[1] || 0, n72 || 0) + "</p>" +
-      '<div class="stats"><div class="stat"><b>' + (s[0] != null ? s[0] + "<small>cm</small>" : "–") + "</b><small>upper slopes</small></div>" +
-      '<div class="stat"><b>' + (s[1] ? "+" + s[1] + "<small>cm</small>" : "–") + "</b><small>new, 24 h</small></div>" +
-      '<div class="stat"><b>' + (n72 ? "+" + n72 + "<small>cm</small>" : "–") + "</b><small>new, 3 days</small></div></div>" +
+      '<div class="stats"><div class="stat"><b>' + (s[0] != null ? cmS(s[0]) : "–") + "</b><small>upper slopes</small></div>" +
+      '<div class="stat"><b>' + (s[1] ? "+" + cmS(s[1]) : "–") + "</b><small>new, 24 h</small></div>" +
+      '<div class="stat"><b>' + (n72 ? "+" + cmS(n72) : "–") + "</b><small>new, 3 days</small></div></div>" +
       (bestDay(res, x) ? '<p class="none" style="padding:0 0 8px">Best day: <b style="color:var(--ink)">' + bestDay(res, x) + "</b></p>" : "") +
       '<div class="acts3"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a>' +
       (stayHref(x.lat, x.lon, x.short, "card", res.dates[ti]) ? '<a class="btn tonal staychip" target="_blank" rel="sponsored noopener" title="Partner link: we may earn a commission" href="' + esc(stayHref(x.lat, x.lon, x.short, "card", res.dates[ti])) + '"><span class="ms">hotel</span>Stay</a>' : "") +
@@ -1344,7 +1346,7 @@
     const o = st.origin, S2 = st.ski;
     return '<div class="origin"><span class="ms">' + (o && o.me ? "near_me" : "location_on") + '</span><div class="find2"><input id="skiQ" type="search" autocomplete="off" placeholder="City or resort" aria-label="City or resort" value="' +
       esc(o && !o.me ? o.label : "") + '"><ul id="skiQl" hidden></ul></div><button class="btn tonal" data-locate><span class="ms">my_location</span>' + (o && o.me ? "Near me" : "Use my location") + "</button></div>" +
-      '<div class="pills inl" role="group" aria-label="Distance">' + RADII.map((r) => '<button class="pill" data-radius="' + r + '" aria-pressed="' + (S2.radius === r) + '">' + (r ? "within " + r + " km" : "Anywhere") + "</button>").join("") + "</div>";
+      '<div class="pills inl" role="group" aria-label="Distance">' + RADII.map((r) => '<button class="pill" data-radius="' + r + '" aria-pressed="' + (S2.radius === r) + '">' + (r ? "within " + U.dist(r) : "Anywhere") + "</button>").join("") + "</div>";
   }
   async function placeSearch(q) {
     const res = await RES.catch(() => null), norm = (t) => t.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(), nq = norm(q);
@@ -1369,7 +1371,7 @@
     const ti = dayIdx(res, S2.when);
     let h = '<div class="over">Ski finder</div><h1>Where to ski ' + ({ today: "today", tomorrow: "tomorrow", weekend: "this weekend" })[S2.when] + "</h1>" + originBar(res) +
       '<div class="filters"><div class="seg2" role="group" aria-label="Day">' + ["today", "tomorrow", "weekend"].map((w) => '<button data-when="' + w + '" aria-pressed="' + (S2.when === w) + '">' + ({ today: "Today", tomorrow: "Tomorrow", weekend: "Weekend" })[w] + "</button>").join("") + "</div>" +
-      '<div class="seg2" role="group" aria-label="Snow on the upper slopes">' + [0, 10, 30, 60].map((v) => '<button data-min="' + v + '" aria-pressed="' + (S2.min === v) + '">' + (v ? v + "+ cm" : "Any snow") + "</button>").join("") + "</div>" +
+      '<div class="seg2" role="group" aria-label="Snow on the upper slopes">' + [0, 10, 30, 60].map((v) => '<button data-min="' + v + '" aria-pressed="' + (S2.min === v) + '">' + (v ? U.dep(v) + "+ " + U.du() : "Any snow") + "</button>").join("") + "</div>" +
       '<button class="pill" data-fresh aria-pressed="' + S2.fresh + '">Fresh snow only</button></div>';
     if (ti < 0) return h + '<div class="prolock"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>This day is further than the free days.</b> Pro shows the full week ahead.</p></div>' + footer();
     const t3 = res.dates.indexOf(DATA.today);
@@ -1398,12 +1400,12 @@
     let o = '<svg class="strip7" viewBox="0 0 ' + W + " " + H + '" aria-hidden="true">';
     res.dates.forEach((d, i) => { const h = (vals[i] / max) * 24, today = d === DATA.today;
       o += '<rect x="' + (i * bw + bw * 0.2) + '" y="' + (36 - h) + '" width="' + bw * 0.6 + '" height="' + Math.max(h, 1.5) + '" rx="2" fill="' + (today ? "var(--ink)" : d > DATA.today ? "var(--accent-tint)" : "var(--accent)") + '"/>' +
-        (vals[i] >= 1 ? '<text x="' + (i * bw + bw / 2) + '" y="' + (32 - h) + '" text-anchor="middle" class="lbl">+' + vals[i] + "</text>" : "") +
+        (vals[i] >= 1 ? '<text x="' + (i * bw + bw / 2) + '" y="' + (32 - h) + '" text-anchor="middle" class="lbl">+' + U.dep(vals[i]) + "</text>" : "") +
         '<text x="' + (i * bw + bw / 2) + '" y="50" text-anchor="middle">' + esc(today ? "Today" : wd(d).slice(0, 2)) + "</text>"; });
     return o + "</svg>";
   }
   const trendOf = (x, ti) => { const a = (x.snow[ti] || [])[0], b = (x.snow[ti - 1] || [])[0]; if (a == null || b == null) return ""; const d = a - b;
-    return d >= 1 ? '<em class="nw"><span class="ms">arrow_upward</span>' + d + " vs yesterday</em>" : d <= -1 ? '<em class="dn"><span class="ms">arrow_downward</span>' + (-d) + " vs yesterday</em>" : ""; };
+    return d >= 1 ? '<em class="nw"><span class="ms">arrow_upward</span>' + U.dep(d) + " vs yesterday</em>" : d <= -1 ? '<em class="dn"><span class="ms">arrow_downward</span>' + U.dep(-d) + " vs yesterday</em>" : ""; };
   async function powderView() {
     const res = await RES.catch(() => null);
     if (!res) return '<p class="msg">Resorts are loading…</p>';
@@ -1420,31 +1422,31 @@
     const ri = RADII.indexOf(R) < 0 ? 2 : RADII.indexOf(R);
     h += '<div class="filters"><div class="seg2" role="group" aria-label="Period"><button data-p72="0" aria-pressed="' + !st.p72 + '">24 hours</button><button data-p72="1" aria-pressed="' + st.p72 + '">3 days</button></div>' +
       '<button class="btn tonal" data-showpowder><span class="ms">map</span>Show on the map</button></div>' +
-      '<label class="range"><span>' + (R ? "within " + R + " km" : "Anywhere") + '</span><input type="range" min="0" max="' + (RADII.length - 1) + '" step="1" value="' + ri + '" data-radius-range aria-label="Distance"></label>';
+      '<label class="range"><span>' + (R ? "within " + U.dist(R) : "Anywhere") + '</span><input type="range" min="0" max="' + (RADII.length - 1) + '" step="1" value="' + ri + '" data-radius-range aria-label="Distance"></label>';
     if (top) {
       const tsn = top.snow[ti] || [], n72 = tsn[2] || 0;
       h += '<article class="card pwhero"><div class="over">' + (far ? "Nearest fresh snow" : st.p72 ? "Best powder, 3 days" : "Best powder today") + '</div>' +
-        '<div class="pwtop"><div class="nm"><b>' + esc(top.short) + "</b><small>" + flagOf(top.country) + " " + esc([top.country, o ? Math.round(kmTo(o, top)) + " km away" : ""].filter(Boolean).join(" · ")) + "</small></div>" +
-        '<b class="big" style="color:' + newTier(tsn[k]) + '">+' + tsn[k] + "<small>cm</small></b></div>" +
-        '<div class="stats"><div class="stat"><b>' + (tsn[0] != null ? tsn[0] + "<small>cm</small>" : "–") + "</b><small>on the upper slopes</small></div>" +
-        '<div class="stat"><b>' + (st.p72 ? (tsn[1] ? "+" + tsn[1] + "<small>cm</small>" : "–") : (n72 ? "+" + n72 + "<small>cm</small>" : "–")) + "</b><small>" + (st.p72 ? "in 24 hours" : "in 3 days") + "</small></div>" +
+        '<div class="pwtop"><div class="nm"><b>' + esc(top.short) + "</b><small>" + flagOf(top.country) + " " + esc([top.country, o ? U.dist(Math.round(kmTo(o, top))) + " away" : ""].filter(Boolean).join(" · ")) + "</small></div>" +
+        '<b class="big" style="color:' + newTier(tsn[k]) + '">+' + cmS(tsn[k]) + "</b></div>" +
+        '<div class="stats"><div class="stat"><b>' + (tsn[0] != null ? cmS(tsn[0]) : "–") + "</b><small>on the upper slopes</small></div>" +
+        '<div class="stat"><b>' + (st.p72 ? (tsn[1] ? "+" + cmS(tsn[1]) : "–") : (n72 ? "+" + cmS(n72) : "–")) + "</b><small>" + (st.p72 ? "in 24 hours" : "in 3 days") + "</small></div>" +
         '<div class="stat"><b>' + (top.top_m ? fmt(top.top_m) + "<small>m</small>" : "–") + "</b><small>upper slopes</small></div></div>" +
         strip7(res, top) + measuredHtml(top.lat, top.lon, top.top_m || null, false) +
         '<div class="acts3"><button class="btn ink" data-open="' + esc(top.slug) + '"><span class="ms">info</span>Details</button><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + top.lat + "," + top.lon + '"><span class="ms">directions_car</span>Directions</a>' +
         '<button class="btn tonal" data-share="' + esc(top.slug) + '" data-sd="' + DATA.today + '"><span class="ms">share</span>Share</button></div></article>';
     }
     h += rows.length ? rows.map((x, i) => (i === 5 ? adSlot("infeed", rows[0], DATA.today) : "") + '<a class="rrow pw" href="' + BASE + "resorts/" + encodeURIComponent(x.slug) + '.html" data-open="' + esc(x.slug) + '"><span class="rk' + (i < 3 ? " top" : "") + '">' + (i + 1) + '</span><span class="nm"><b>' + flagOf(x.country) + " " + esc(x.short) + "</b><small>" +
-      esc([x.country, o ? Math.round(kmTo(o, x)) + " km away" : NAMES[x.dom] || ""].filter(Boolean).join(" · ")) + " " + trendOf(x, ti) + '</small>' + measuredHtml(x.lat, x.lon, x.top_m || null, true) + '</span>' +
-      '<span class="val"><b style="color:' + newTier(x.snow[ti][k]) + '">+' + x.snow[ti][k] + "<small>cm</small></b><em>" + (st.p72 ? "+" + (x.snow[ti][1] || 0) + " in 24 h" : "+" + (x.snow[ti][2] || 0) + " in 3 days") + " · " + (x.snow[ti][0] || 0) + " cm deep</em></span></a>").join("")
-      : '<p class="none">Nothing over 1 cm in the last ' + (st.p72 ? "3 days" : "24 hours") + ". Check tomorrow.</p>";
+      esc([x.country, o ? U.dist(Math.round(kmTo(o, x))) + " away" : NAMES[x.dom] || ""].filter(Boolean).join(" · ")) + " " + trendOf(x, ti) + '</small>' + measuredHtml(x.lat, x.lon, x.top_m || null, true) + '</span>' +
+      '<span class="val"><b style="color:' + newTier(x.snow[ti][k]) + '">+' + cmS(x.snow[ti][k]) + "</b><em>" + (st.p72 ? "+" + U.dep(x.snow[ti][1] || 0) + " in 24 h" : "+" + U.dep(x.snow[ti][2] || 0) + " in 3 days") + " · " + U.depth(x.snow[ti][0] || 0) + " deep</em></span></a>").join("")
+      : '<p class="none">' + esc(I18N.tu("Nothing over {b} cm in the last {a}. Check tomorrow.", I18N.t(st.p72 ? "3 days" : "24 hours"), U.dep(1))) + "</p>";
     if (rows.length) h += '<button class="btn ghost" data-propost="powder" style="margin-top:10px"><span class="ms">add_photo_alternate</span>Create post' + (st.pro ? "" : ' <span class="pro">PRO</span>') + "</button>";
     const storms = (DATA.storms || []).map((x, i) => [x, i]).sort((a, b) => b[0].cm - a[0].cm).slice(0, 8);
     h += '<div class="sect">Snow storms</div>' + (storms.length ? storms.map(([x, i]) => '<article class="card storm"><div class="over">' + esc((x.date === DATA.today ? "Today" : wd(x.date) + " " + dnum(x.date)) + " · " + (NAMES[x.region] || "")) + '</div>' +
-      '<div class="pwtop"><div class="nm"><b>' + esc(x.place || NAMES[x.region] || x.region) + "</b><small>" + (x.hours === 72 ? "in 3 days" : "in 24 hours") + "</small></div><b class=\"big\" style=\"color:" + newTier(x.cm) + '">+' + x.cm + "<small>cm</small></b></div>" +
+      '<div class="pwtop"><div class="nm"><b>' + esc(x.place || NAMES[x.region] || x.region) + "</b><small>" + (x.hours === 72 ? "in 3 days" : "in 24 hours") + "</small></div><b class=\"big\" style=\"color:" + newTier(x.cm) + '">+' + cmS(x.cm) + "</b></div>" +
       measuredHtml(x.lat, x.lon, null, true) + '<div class="acts3">' + (x.slug ? '<button class="btn tonal" data-open="' + esc(x.slug) + '"><span class="ms">info</span>Details</button>' : "") +
       '<a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a>' +
       '<button class="btn ink" data-storm="' + i + '"><span class="ms">add_photo_alternate</span>Post image</button></div></article>').join("")
-      : '<p class="none">No snow storm right now (20 cm or more).</p>');
+      : '<p class="none">' + esc(I18N.tu("No snow storm right now ({a} cm or more).", U.depN(20))) + "</p>");
     h += '<button class="btn ghost" data-viewpost style="margin-top:10px"><span class="ms">photo_camera</span>Post of this map view</button>';
     let shown = false; try { shown = !!sessionStorage.getItem("ss_stormstay"); } catch { /* private */ }
     const s0 = (DATA.storms || []).find((x) => x.slug);
@@ -1464,7 +1466,8 @@
     const pro = S.pro ? "" : '<div class="card"><span class="pro"><span class="ms f">workspace_premium</span>PRO</span><p style="margin:8px 0;font-size:14px;color:var(--ink2)">No ads, the sharpest snow map, 15 days, powder on every day, wind, freezing level, satellite snow, 7-day resort forecasts and past winters.</p>' + (window.SSPay && SSPay.enabled() ? '<button class="btn ink" data-buy-pro>Get Pro</button>' : '<a class="btn ink" href="' + esc(SS.appUrl()) + '">Get Pro in the app</a>') + '</div>';
     const teaser = (icon, bg, t, s) => '<a class="teaser" href="' + esc(SS.appUrl()) + '"><span class="ic" style="background:' + bg + '"><span class="ms f">' + icon + "</span></span><span><b>" + t + "</b><small>" + s + "</small></span></a>";
     const hide = S.pro ? '<button class="row" role="switch" data-nostay aria-checked="' + !store.get("ss_nostay") + '"><span class="ic"><span class="ms">hotel</span></span><span class="tx"><b>Hotel suggestions</b><small>Places to stay near resorts</small></span><span class="sw-t"></span></button>' : "";
-    return '<div class="over">You</div><h1>Your SnowScope</h1>' + acc + pro + hide + '<div class="sect">Only in the app</div>' +
+    const units = '<div class="sect">Units</div><div class="seg2" role="group" aria-label="Units"><button data-units="metric" aria-pressed="' + !U.us() + '">Metric · cm, m, km, °C</button><button data-units="us" aria-pressed="' + U.us() + '">US · in, ft, mi, °F</button></div>';
+    return '<div class="over">You</div><h1>Your SnowScope</h1>' + acc + pro + hide + units + '<div class="sect">Only in the app</div>' +
       teaser("landscape", "linear-gradient(160deg,#F2662B,#C9381A)", "Peak finder", "Point your camera at the mountains to name every summit.") +
       teaser("timeline", "linear-gradient(160deg,#3B8BFF,#1463F3)", "Ski days", "Record your day: distance, runs, vertical.") +
       teaser("notifications", "linear-gradient(160deg,#3B8BFF,#1463F3)", "Powder alerts", "A message when fresh snow is coming.") + footer();
@@ -1482,6 +1485,7 @@
     if (p7) { const on = p7.dataset.p72 === "1"; st.p72 = on; renderPanel(); drawPins(); if (st.main === "powder") { renderMain(); drawLegend(); } }
     if (e.target.closest("[data-showpowder]")) { setMain("powder"); if (innerWidth <= 760) setSheet("peek"); }
     if (e.target.closest("[data-signup]")) SS.signInModal("up");
+    const ub = e.target.closest("[data-units]"); if (ub && ub.dataset.units !== U.mode()) { U.set(ub.dataset.units); location.reload(); }
     if (e.target.closest("[data-nostay]")) { store.set("ss_nostay", store.get("ss_nostay") ? null : 1); drawStays(); renderPanel(); }
     const sb = e.target.closest("[data-storm]");
     if (sb) stormPost(DATA.storms[+sb.dataset.storm]);
@@ -1540,10 +1544,10 @@
     showMeasuredLink(pt, ns);
     box.innerHTML = '<button class="back" data-back><span class="ms">arrow_back</span>' + esc(r ? r.name : "Back") + "</button>" +
       '<div class="over">Snow here</div><h1>' + (n ? "Near " + esc(n[0].short) : esc(r ? r.name : "This spot")) + '</h1><p class="lede" id="ptMeta">' +
-      (elev != null ? fmt(elev) + " m · " : "") + pt.lat.toFixed(3) + ", " + pt.lon.toFixed(3) + "</p>" +
-      '<div class="hero2"><div class="card"><div class="over">Snow today</div><b class="n">' + (today.dep == null ? "–" : today.dep >= 1 ? today.dep + "<small>cm</small>" : "0<small>cm</small>") + "</b></div>" +
-      '<div class="card"><div class="over">New snow</div>' + (today.nw >= 1 ? '<b class="n acc">+' + today.nw + "<small>cm</small></b>" : '<b class="n">–</b>') + "</div></div>" +
-      (s30 ? '<p class="measured s30"><span class="k">Sharp 30 m</span> <b>' + Math.round(s30.depth_cm) + " cm</b>" + (s30.elevation_m ? " · " + fmt(s30.elevation_m) + " m" : "") + "</p>" : "") +
+      (elev != null ? U.elev(elev) + " · " : "") + pt.lat.toFixed(3) + ", " + pt.lon.toFixed(3) + "</p>" +
+      '<div class="hero2"><div class="card"><div class="over">Snow today</div><b class="n">' + (today.dep == null ? "–" : today.dep >= 1 ? cmS(today.dep) : cmS(0)) + "</b></div>" +
+      '<div class="card"><div class="over">New snow</div>' + (today.nw >= 1 ? '<b class="n acc">+' + cmS(today.nw) + "</b>" : '<b class="n">–</b>') + "</div></div>" +
+      (s30 ? '<p class="measured s30"><span class="k">Sharp 30 m</span> <b>' + U.depth(Math.round(s30.depth_cm)) + "</b>" + (s30.elevation_m ? " · " + U.elev(s30.elevation_m) : "") + "</p>" : "") +
       measuredHtml(pt.lat, pt.lon, elev, false) +
       '<p id="ptVerdict" style="font-weight:620;margin:4px 0 10px"></p>' +
       (window.SSX ? '<div class="sect">Hour by hour</div><div id="ptMeteo"><div class="skel" style="height:230px"></div></div>' : "") +
@@ -1551,7 +1555,7 @@
       '<div class="acts3" style="margin-top:12px"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + pt.lat + "," + pt.lon + '"><span class="ms">directions_car</span>Directions</a>' +
       '<button class="btn tonal" data-sharept><span class="ms">share</span>Share</button>' +
       (SS.stayLink(pt.lat, pt.lon, n ? n[0].short : "") ? '<a class="btn tonal" target="_blank" rel="sponsored noopener" href="' + esc(stayHref(pt.lat, pt.lon, n ? n[0].short : "", "point")) + '"><span class="ms">hotel</span>Stay</a>' : "") + "</div>" +
-      (n ? '<button class="rrow" style="width:100%;border:0;background:none;text-align:start;margin-top:8px" data-open="' + esc(n[0].slug) + '"><span class="nm"><b>' + esc(n[0].short) + "</b><small>" + Math.round(n[1]) + ' km</small></span><span class="ms">chevron_right</span></button>' : "") + footer();
+      (n ? '<button class="rrow" style="width:100%;border:0;background:none;text-align:start;margin-top:8px" data-open="' + esc(n[0].slug) + '"><span class="nm"><b>' + esc(n[0].short) + "</b><small>" + U.dist(Math.round(n[1])) + '</small></span><span class="ms">chevron_right</span></button>' : "") + footer();
     box.querySelector("[data-back]").onclick = closePoint;
     box.querySelector("[data-sharept]").onclick = () => sharePoint(pt, n, today);
     afterRender();
@@ -1567,7 +1571,7 @@
         const fine = DATA.regions.some((r) => r.fine && regionAt({ lat: pt.lat, lng: pt.lon }) === r);
         const p = await SS.api((fine ? "/v1/g500/point" : "/v1/grid/point") + "?lat=" + pt.lat + "&lon=" + pt.lon);
         live = (p.days || []).map((d) => ({ date: d.date, dep: d.depth_cm == null ? null : Math.round(d.depth_cm), nw: Math.round(d.new_cm || 0) }));
-        if (p.elev_m && $("ptMeta")) $("ptMeta").textContent = fmt(p.elev_m) + " m";
+        if (p.elev_m && $("ptMeta")) $("ptMeta").textContent = U.elev(p.elev_m);
       } catch { live = null; }
     }
     if (!box || st.point !== pt) return;
@@ -1606,13 +1610,13 @@
       (!st.pro ? '<rect x="' + lockX + '" y="' + top + '" width="' + (W - lockX) + '" height="' + (H - bot - top) + '" fill="var(--surface2)" opacity=".85"/><text x="' + ((lockX + W) / 2) + '" y="' + (H / 2) + '" text-anchor="middle" class="lbl">PRO</text>' : "");
     const mn = [["10-01", "Oct"], ["11-01", "Nov"], ["12-01", "Dec"], ["01-01", "Jan"], ["02-01", "Feb"], ["03-01", "Mar"], ["04-01", "Apr"], ["05-01", "May"]];
     for (let k = 0; k <= nDays; k++) { const d = addDays(start, k), q = mn.find((x) => x[0] === d.slice(5)); if (q) s += '<text x="' + px(k) + '" y="' + (H - 6) + '">' + q[1] + "</text>"; }
-    s += '<text x="' + (W - 2) + '" y="11" text-anchor="end">' + Math.round(max / 1.08) + " cm</text></svg>";
+    s += '<text x="' + (W - 2) + '" y="11" text-anchor="end">' + U.depth(Math.round(max / 1.08)) + "</text></svg>";
     let verdict = "";
     const t0 = byDate[DATA.today], p50 = at("p50", DATA.today), p25 = at("p25", DATA.today), p75 = at("p75", DATA.today);
     if (t0 && p50 != null) verdict = t0.dep > (p75 ?? p50 * 1.3) + 2 ? "Above normal for " : t0.dep < (p25 ?? p50 * 0.7) - 2 ? "Below normal for " : "About normal for ";
     if (verdict) { const dd = D(DATA.today).getUTCDate(); verdict += (dd <= 10 ? "early " : dd <= 20 ? "mid " : "late ") + D(DATA.today).toLocaleDateString("en-GB", { month: "long", timeZone: "UTC" }) + "."; }
     const next = Object.keys(byDate).sort().find((d) => d > DATA.today && d <= (st.pro ? end : freeEnd) && (byDate[d].nw || 0) >= 5);
-    $("ptVerdict").innerHTML = [verdict ? "<span>" + verdict + "</span>" : "", next ? "<span>Snow expected " + D(next).toLocaleDateString("en-GB", { weekday: "long", timeZone: "UTC" }) + ": +" + byDate[next].nw + " cm</span>" : ""].filter(Boolean).join("<br>");
+    $("ptVerdict").innerHTML = [verdict ? "<span>" + verdict + "</span>" : "", next ? "<span>Snow expected " + D(next).toLocaleDateString("en-GB", { weekday: "long", timeZone: "UTC" }) + ": +" + U.depth(byDate[next].nw) + "</span>" : ""].filter(Boolean).join("<br>");
     box.innerHTML = s + '<div class="keyrow"><span><i style="background:var(--ink)"></i>this season</span><span><i style="background:var(--accent)"></i>usual</span><span><i style="background:var(--accent-tint)"></i>past winters</span><span>- - next days</span></div>' +
       (!h ? '<p class="none">Past winters are updating, try again in a minute.</p>' : "") +
       (!st.pro ? '<div class="prolock" style="margin-top:10px"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>The next 3 days are free.</b><br>Pro adds the whole week ahead and the outlook.</p><button class="btn ink" data-up>Unlock the week</button></div>' : "");
@@ -1624,11 +1628,11 @@
       toast("Preparing the image…", 3000);
       const snap = await shot3d(pt.lat, pt.lon);
       const ms = nearestStation(pt.lat, pt.lon, null);
-      window.SSPost.open({ big: today.dep != null ? today.dep + " cm" : "–", big2: today.nw ? "+" + today.nw + " cm" : "", sub: "Snow on the ground" + (ms ? " · " + I18N.t("Measured nearby") + ": " + ms.r[2] + " " + ms.r[4] + " cm" : ""),
+      window.SSPost.open({ big: today.dep != null ? U.depth(today.dep) : "–", big2: today.nw ? "+" + U.depth(today.nw) : "", sub: "Snow on the ground" + (ms ? " · " + I18N.t("Measured nearby") + ": " + ms.r[2] + " " + U.depth(ms.r[4]) : ""),
         place: n ? "Near " + n[0].short : "", date: longDay(st.day), snapshot: snap, file: "snowscope-spot", url });
       return;
     }
-    const text = (n ? n[0].short + ": " : "") + (today.dep != null ? today.dep + " cm" : "") + (today.nw ? ", +" + today.nw + " cm new" : "");
+    const text = (n ? n[0].short + ": " : "") + (today.dep != null ? U.depth(today.dep) : "") + (today.nw ? ", +" + U.depth(today.nw) + " new" : "");
     if (navigator.share && matchMedia("(pointer:coarse)").matches) { try { await navigator.share({ title: "SnowScope", text, url }); return; } catch (e) { if (e && e.name === "AbortError") return; } }
     shareModal(text, url);
   }
@@ -1668,7 +1672,7 @@
     toast("Preparing the image…", 3000);
     const snap = await shot3d(x.lat, x.lon);
     const bd = bestDay(res, x);
-    window.SSPost.open({ big: sn[0] != null ? sn[0] + " cm" : "–", big2: sn[1] ? "+" + sn[1] + " cm" : "", sub: "on the upper slopes", place: x.short,
+    window.SSPost.open({ big: sn[0] != null ? U.depth(sn[0]) : "–", big2: sn[1] ? "+" + U.depth(sn[1]) : "", sub: "on the upper slopes", place: x.short,
       date: longDay(date), extra: bd ? "Best day: " + bd : "", snapshot: snap, file: "snowscope-" + slug,
       url: "https://snowscope.app/resorts/" + encodeURIComponent(slug) + ".html?d=" + date });
   }
@@ -1678,7 +1682,7 @@
     const i = res.dates.indexOf(date), s = x.snow[i >= 0 ? i : res.dates.indexOf(DATA.today)] || [];
     const url = "https://snowscope.app/resorts/" + encodeURIComponent(slug) + ".html?d=" + date;
     const t = (q) => (window.I18N ? I18N.t(q) : q);
-    const text = x.short + ": " + (s[0] != null ? s[0] + " cm " + t("on the upper slopes") : t("snow report")) + (s[1] ? ", +" + s[1] + " cm " + t("new") : "") +
+    const text = x.short + ": " + (s[0] != null ? U.depth(s[0]) + " " + t("on the upper slopes") : t("snow report")) + (s[1] ? ", +" + U.depth(s[1]) + " " + t("new") : "") +
       " (" + (date === DATA.today ? t("Today") : wd(date) + " " + dnum(date)) + ")";
     if (navigator.share && matchMedia("(pointer:coarse)").matches) { try { await navigator.share({ title: "SnowScope", text, url }); return; } catch (e) { if (e && e.name === "AbortError") return; } }
     shareModal(text, url);
@@ -1705,14 +1709,14 @@
     map.jumpTo({ center: [x.lon, x.lat], zoom: 8 });
     renderMain(); await idle(); await new Promise((r) => setTimeout(r, 400));
     const place = x.place || NAMES[x.region] || "";
-    SSPost.open({ big: "+" + x.cm + " cm", sub: x.hours === 72 ? "in 3 days" : "in 24 hours", place, date: longDay(x.date),
+    SSPost.open({ big: "+" + U.depth(x.cm), sub: x.hours === 72 ? "in 3 days" : "in 24 hours", place, date: longDay(x.date),
       url: "https://snowscope.app/?r=" + (x.slug || x.lat + "," + x.lon), snapshot: snapshot(), file: "snowscope-storm-" + (x.slug || x.region.toLowerCase()) });
     if (!st.pro) { st.p72 = false; }
   }
   async function viewPost() {
     await idle();
     const r = regionAt(map.getCenter()) || DATA.regions.find((y) => y.code === st.region), d = r ? dayOf(r) : null;
-    const big = d ? (st.main === "powder" ? "+" + d.new_max_cm + " cm" : (d.top[0] ? d.top[0].depth_cm + " cm" : "–")) : "–";
+    const big = d ? (st.main === "powder" ? "+" + U.depth(d.new_max_cm) : (d.top[0] ? U.depth(d.top[0].depth_cm) : "–")) : "–";
     const c = map.getCenter();
     SSPost.open({ big, sub: st.main === "powder" ? "New snow" : "Snow depth", place: r ? r.name : "", date: longDay(st.day),
       url: "https://snowscope.app/#@" + c.lat.toFixed(3) + "," + c.lng.toFixed(3) + "," + map.getZoom().toFixed(1), snapshot: snapshot(), file: "snowscope-map" });
@@ -1724,15 +1728,15 @@
     const r = DATA.regions.find((y) => y.code === (kind === "ski" ? st.ski.region : st.region)) || DATA.regions[0];
     let rows;
     if (kind === "powder") rows = res.rows.filter((x) => x.snow[ti] && x.snow[ti][st.p72 ? 2 : 1] >= 1).sort((a, b) => b.snow[ti][st.p72 ? 2 : 1] - a.snow[ti][st.p72 ? 2 : 1]).slice(0, 5)
-      .map((x) => [x.short, "+" + x.snow[ti][st.p72 ? 2 : 1] + " cm · " + (x.snow[ti][0] || 0) + " cm"]);
+      .map((x) => [x.short, "+" + U.depth(x.snow[ti][st.p72 ? 2 : 1]) + " · " + U.depth(x.snow[ti][0] || 0)]);
     else rows = res.rows.filter((x) => x.dom === r.code && x.snow[ti] && x.snow[ti][0] != null).sort((a, b) => (b.snow[ti][0] + 3 * (b.snow[ti][1] || 0)) - (a.snow[ti][0] + 3 * (a.snow[ti][1] || 0))).slice(0, 5)
-      .map((x) => [x.short, x.snow[ti][0] + " cm" + (x.snow[ti][1] ? " · +" + x.snow[ti][1] : "")]);
+      .map((x) => [x.short, U.depth(x.snow[ti][0]) + (x.snow[ti][1] ? " · +" + U.dep(x.snow[ti][1]) : "")]);
     const d = dayOf(r);
     const best = (() => { let b = null; for (const y of r.days) if (y.date >= DATA.today && (!b || y.new_max_cm > b.new_max_cm)) b = y; return b; })();
     await idle();
-    SSPost.open({ big: kind === "powder" ? "+" + (d.new_max_cm || 0) + " cm" : (d.top[0] ? d.top[0].depth_cm + " cm" : "–"),
+    SSPost.open({ big: kind === "powder" ? "+" + U.depth(d.new_max_cm || 0) : (d.top[0] ? U.depth(d.top[0].depth_cm) : "–"),
       sub: kind === "powder" ? "Fresh snow today" : "Where to ski today", place: r.name,
-      date: longDay(DATA.today) + (best && best.new_max_cm >= 5 ? " · " + wd(best.date) + " +" + best.new_max_cm + " cm" : ""),
+      date: longDay(DATA.today) + (best && best.new_max_cm >= 5 ? " · " + wd(best.date) + " +" + U.depth(best.new_max_cm) : ""),
       lines: rows, url: "https://snowscope.app/#" + slugOf(r.code), snapshot: snapshot(), locked: !st.pro, file: "snowscope-" + kind,
       caption: null });
   }
@@ -1775,17 +1779,17 @@
     const near = res.rows.filter((y) => y.dom === x.dom && y.slug !== slug).map((y) => [Math.hypot((y.lon - x.lon) * Math.cos(x.lat * Math.PI / 180), y.lat - x.lat) * 111, y]).sort((a, b) => a[0] - b[0]).slice(0, 6);
     box.innerHTML = '<button class="back" data-back><span class="ms">arrow_back</span>' + esc(NAMES[x.dom] || "Back") + "</button>" +
       '<div class="over">' + esc([x.region, x.country].filter(Boolean).join(" · ")) + "</div><h1>" + esc(x.short) + '</h1><p class="lede">' + esc(x.name !== x.short ? x.name : "") +
-      (x.base_m && x.top_m ? (x.name !== x.short ? " · " : "") + fmt(x.base_m) + "–" + fmt(x.top_m) + " m" : "") + "</p>" +
-      '<div class="hero2"><div class="card"><div class="over">Upper slopes today</div><b class="n">' + (d0 == null ? "–" : d0 + "<small>cm</small>") + '</b><small class="none">' + verdict + "</small></div>" +
-      '<div class="card"><div class="over">New snow</div>' + (n0 >= 1 ? '<b class="n acc">+' + n0 + "<small>cm</small></b><small class=\"none\">in 24 hours</small>" : '<b class="n">–</b><small class="none">No new snow in 24 h</small>') + "</div></div>" +
-      (s30 ? '<p class="measured s30"><span class="k">Sharp 30 m</span> <b>' + Math.round(s30.depth_cm) + " cm</b>" + (s30.elevation_m ? " · " + fmt(s30.elevation_m) + " m" : "") + "</p>" : "") +
+      (x.base_m && x.top_m ? (x.name !== x.short ? " · " : "") + U.ev(x.base_m) + "–" + U.elev(x.top_m) : "") + "</p>" +
+      '<div class="hero2"><div class="card"><div class="over">Upper slopes today</div><b class="n">' + (d0 == null ? "–" : cmS(d0)) + '</b><small class="none">' + verdict + "</small></div>" +
+      '<div class="card"><div class="over">New snow</div>' + (n0 >= 1 ? '<b class="n acc">+' + cmS(n0) + "</b><small class=\"none\">in 24 hours</small>" : '<b class="n">–</b><small class="none">No new snow in 24 h</small>') + "</div></div>" +
+      (s30 ? '<p class="measured s30"><span class="k">Sharp 30 m</span> <b>' + U.depth(Math.round(s30.depth_cm)) + "</b>" + (s30.elevation_m ? " · " + U.elev(s30.elevation_m) : "") + "</p>" : "") +
       measuredHtml(x.lat, x.lon, x.top_m || null, false) +
-      '<div class="sect">Snow depth on the upper slopes, cm</div><div id="rDays"></div>' +
+      '<div class="sect">Snow depth on the upper slopes, ' + U.du() + '</div><div id="rDays"></div>' +
       adSlot("resort", x) +
       '<div class="sect">This season vs past winters</div><div id="rHist"></div>' +
       '<div class="sect">Next 7 days</div><div id="rFc"></div>' +
       '<div class="sect">Stay near ' + esc(x.short) + "</div>" + (SS.stayBlock(x.lat, x.lon, x.short, { day: st.day, where: "panel" }) || '<p class="none">No partner here yet.</p>') +
-      '<div class="sect">Nearby resorts</div>' + near.map(([km, y]) => resRow(y, null, (y.snow[ti] || [])[0], Math.round(km) + " km", (y.snow[ti] || [])[1])).join("") + appCard() + footer();
+      '<div class="sect">Nearby resorts</div>' + near.map(([km, y]) => resRow(y, null, (y.snow[ti] || [])[0], U.dist(Math.round(km)), (y.snow[ti] || [])[1])).join("") + appCard() + footer();
     box.querySelector("[data-back]").onclick = () => (st.pushed ? history.back() : closeResort());
     box.querySelector(".hero2").insertAdjacentHTML("afterend", '<div class="acts3" style="margin-bottom:6px"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a><button class="btn ink" data-share="' + esc(slug) + '" data-sd="' + st.day + '"><span class="ms">share</span>Share</button>' +
       (stayHref(x.lat, x.lon, x.short, "panel") ? '<a class="btn tonal" target="_blank" rel="sponsored noopener" title="Partner link: we may earn a commission" href="' + esc(stayHref(x.lat, x.lon, x.short, "panel")) + '"><span class="ms">hotel</span>Sleep near</a>' : "") + "</div>");
@@ -1801,8 +1805,8 @@
       const x = i * bw, h = d.dep ? (d.dep / max) * (H - 46) : 0, today = d.date === todayD;
       const col = d.date > todayD ? "var(--accent-tint)" : "var(--accent)";
       s += '<rect x="' + (x + bw * 0.18) + '" y="' + (H - 30 - h) + '" width="' + bw * 0.64 + '" height="' + Math.max(h, 1) + '" rx="3" fill="' + (today ? "var(--ink)" : col) + '"' + (d.date > todayD ? ' stroke="var(--accent)" stroke-width="1"' : "") + "/>";
-      if (d.dep != null) s += '<text class="lbl" x="' + (x + bw / 2) + '" y="' + (H - 34 - h) + '" text-anchor="middle">' + d.dep + "</text>";
-      if (d.nw >= 1) s += '<text x="' + (x + bw / 2) + '" y="' + 12 + '" text-anchor="middle" style="fill:var(--accent-ink);font-weight:650">+' + d.nw + "</text>";
+      if (d.dep != null) s += '<text class="lbl" x="' + (x + bw / 2) + '" y="' + (H - 34 - h) + '" text-anchor="middle">' + U.dep(d.dep) + "</text>";
+      if (d.nw >= 1) s += '<text x="' + (x + bw / 2) + '" y="' + 12 + '" text-anchor="middle" style="fill:var(--accent-ink);font-weight:650">+' + U.dep(d.nw) + "</text>";
       s += '<text x="' + (x + bw / 2) + '" y="' + (H - 16) + '" text-anchor="middle">' + (today ? "Today" : wd(d.date)) + '</text><text x="' + (x + bw / 2) + '" y="' + (H - 3) + '" text-anchor="middle">' + dnum(d.date) + "</text>";
     });
     return s + "</svg>" + '<div class="keyrow"><span><i style="background:var(--accent)"></i>past</span><span><i style="background:var(--accent-tint);outline:1px solid var(--accent)"></i>forecast</span><span style="color:var(--accent-ink)">+N new snow</span></div>' + (locked || "");
@@ -1853,7 +1857,7 @@
       (line ? '<path d="' + line + '" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linejoin="round"/>' : "") +
       (ti != null ? '<line x1="' + X(ti) + '" x2="' + X(ti) + '" y1="4" y2="' + (H - 22) + '" stroke="var(--ink3)" stroke-dasharray="2 3"/>' : "") +
       months.map((m, k) => (idx[m] != null ? '<text x="' + X(idx[m]) + '" y="' + (H - 6) + '">' + mn[k] + "</text>" : "")).join("") +
-      '<text x="' + (W - 2) + '" y="12" text-anchor="end">' + Math.round(max / 1.1) + " cm</text></svg>";
+      '<text x="' + (W - 2) + '" y="12" text-anchor="end">' + U.depth(Math.round(max / 1.1)) + "</text></svg>";
     const last = cur[cur.length - 1];
     let verdict = "";
     if (last && h.p50[last[0]] != null) {
@@ -1878,8 +1882,8 @@
       const m = (q) => (q && q.median != null ? q.median : null);
       box.innerHTML = (rep.powder_score ? '<p style="margin:0 0 8px">Powder score today: <b>' + (Math.round(rep.powder_score.score * 10) / 10) + " / 10</b></p>" : "") +
         '<table class="fc"><thead><tr><th>Day</th><th>New snow</th><th>Low / high</th><th>Wind</th></tr></thead><tbody>' +
-        (rep.outlook || []).map((d) => "<tr><td>" + wd(d.date) + " " + dnum(d.date) + "</td><td>" + (m(d.snowfall_cm) >= 1 ? Math.round(m(d.snowfall_cm)) + " cm" : "–") + "</td><td>" +
-          (m(d.temp_min_c) != null ? Math.round(m(d.temp_min_c)) + "° / " + Math.round(m(d.temp_max_c)) + "°" : "–") + "</td><td>" + (m(d.wind_max_kmh) != null ? Math.round(m(d.wind_max_kmh)) + " km/h" : "–") + "</td></tr>").join("") + "</tbody></table>" +
+        (rep.outlook || []).map((d) => "<tr><td>" + wd(d.date) + " " + dnum(d.date) + "</td><td>" + (m(d.snowfall_cm) >= 1 ? U.depth(Math.round(m(d.snowfall_cm))) + "" : "–") + "</td><td>" +
+          (m(d.temp_min_c) != null ? U.tv(m(d.temp_min_c)) + "° / " + U.tv(m(d.temp_max_c)) + "°" : "–") + "</td><td>" + (m(d.wind_max_kmh) != null ? U.wind(m(d.wind_max_kmh)) : "–") + "</td></tr>").join("") + "</tbody></table>" +
         (rep.bulletin && rep.bulletin.url ? '<p style="margin:8px 0 0;font-size:13.5px"><a target="_blank" rel="noopener" href="' + esc(rep.bulletin.url) + '">Official avalanche bulletin · ' + esc(rep.bulletin.provider || "") + "</a></p>" : "");
     } catch (e) { box.innerHTML = '<p class="msg">' + (e.status === 422 ? "No forecast for this resort yet." : "Pro data is updating, try again in a minute.") + "</p>"; }
   }

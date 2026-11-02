@@ -32,7 +32,7 @@
     { id: "s30", icon: "grid_on", label: "Sharp 30 m", key: "s" },
     { sep: true },
     { id: "wind", icon: "air", label: "Wind", key: "5", pro: true },
-    { id: "freeze", icon: "device_thermostat", label: "0 °C", key: "6", pro: true },
+    { id: "freeze", icon: "device_thermostat", label: SS.U.us() ? "32 °F" : "0 °C", key: "6", pro: true },
     { id: "radar", icon: "radar", label: "Radar", key: "7" },
     { sep: true },
     { id: "stn", icon: "sensors", label: "Measured", key: "8" },
@@ -253,7 +253,7 @@
       const dd = (days || []).find((q) => q.date === d), tot = sum(bins.filter((b) => b.day === d).map((b) => b.snow));
       const label = (d === DATA.today ? t("Today") : X.wd(d) + " " + X.dnum(d));
       s += '<text class="lbl" x="' + xm + '" y="10" text-anchor="middle">' + esc(label) + "</text>";
-      const sub = [dd && dd.dep != null ? dd.dep + " cm" : "", tot >= 0.5 ? "+" + Math.round(tot) : ""].filter(Boolean).join(" · ");
+      const sub = [dd && dd.dep != null ? SS.U.depth(dd.dep) : "", tot >= 0.5 ? "+" + SS.U.dep(tot) : ""].filter(Boolean).join(" · ");
       if (sub) s += '<text x="' + xm + '" y="21" text-anchor="middle" style="' + (tot >= 0.5 ? "fill:var(--accent-ink);font-weight:650" : "") + '">' + esc(sub) + "</text>";
     }
     // new snow bars (cm per 3 h), spread as a lighter extension
@@ -263,7 +263,7 @@
       if (b.snow >= 0.1) s += '<rect x="' + (x(k) + 2) + '" y="' + sy(b.snow) + '" width="' + (BW - 4) + '" height="' + (rows.sn[1] - sy(b.snow)) + '" rx="2" fill="var(--accent)"/>';
       if (b.rain >= 0.3 && b.snow < 0.1) s += '<circle cx="' + (x(k) + BW / 2) + '" cy="' + (rows.sn[1] - 3) + '" r="1.8" fill="var(--ink3)"/>';
     });
-    s += '<text x="' + (PAD - 4) + '" y="' + (rows.sn[0] + 9) + '" text-anchor="end">' + Math.round(smax) + " cm</text><text x=\"" + (PAD - 4) + '" y="' + (rows.sn[1] - 1) + '" text-anchor="end">' + esc(t("snow")) + "</text>";
+    s += '<text x="' + (PAD - 4) + '" y="' + (rows.sn[0] + 9) + '" text-anchor="end">' + SS.U.depth(smax) + "</text><text x=\"" + (PAD - 4) + '" y="' + (rows.sn[1] - 1) + '" text-anchor="end">' + esc(t("snow")) + "</text>";
     // temperature: band lo-hi, median line, 0 degree line
     const temps = bins.flatMap((b) => [b.tlo, b.thi, b.temp]).filter((v) => v != null);
     if (temps.length) {
@@ -281,8 +281,8 @@
           s += '<path d="' + p + '" fill="none" stroke="var(--ink2)" stroke-width="1" stroke-dasharray="' + (DASH[m % DASH.length]) + '" opacity=".9"/>';
         });
       }
-      s += '<text x="' + (PAD - 4) + '" y="' + (rows.tp[0] + 9) + '" text-anchor="end">' + tmax + "°</text><text x=\"" + (PAD - 4) + '" y="' + (rows.tp[1] - 1) + '" text-anchor="end">' + tmin + "°</text>" +
-        '<text x="' + (PAD - 4) + '" y="' + (ty(0) + 3).toFixed(1) + '" text-anchor="end" class="lbl">0°</text>';
+      s += '<text x="' + (PAD - 4) + '" y="' + (rows.tp[0] + 9) + '" text-anchor="end">' + SS.U.tv(tmax) + "°</text><text x=\"" + (PAD - 4) + '" y="' + (rows.tp[1] - 1) + '" text-anchor="end">' + SS.U.tv(tmin) + "°</text>" +
+        '<text x="' + (PAD - 4) + '" y="' + (ty(0) + 3).toFixed(1) + '" text-anchor="end" class="lbl">' + SS.U.tv(0) + "°</text>";
     }
     // freezing level vs the height of this spot: snow falls here when the line is above the spot
     const fzs = bins.map((b) => b.fz).filter((v) => v != null), elev = fc.elevation_m;
@@ -292,9 +292,9 @@
       let p = ""; bins.forEach((b, k) => { if (b.fz != null) p += (p ? "L" : "M") + (x(k) + BW / 2) + "," + fy(b.fz).toFixed(1); });
       bins.forEach((b, k) => { if (elev && b.fz != null && b.fz <= elev + 150 && (b.snow >= 0.1 || b.rain >= 0.3)) s += '<rect x="' + x(k) + '" y="' + rows.fz[0] + '" width="' + BW + '" height="' + (rows.fz[1] - rows.fz[0]) + '" fill="var(--accent)" opacity=".10"/>'; });
       if (elev) s += '<line x1="' + PAD + '" x2="' + (W - 2) + '" y1="' + fy(elev).toFixed(1) + '" y2="' + fy(elev).toFixed(1) + '" stroke="var(--ink)" stroke-dasharray="2 3" opacity=".7"/>' +
-        '<text x="' + (W - 2) + '" y="' + (fy(elev) - 3).toFixed(1) + '" text-anchor="end" class="lbl">' + esc(t("here") + " " + X.fmt(elev) + " m") + "</text>";
+        '<text x="' + (W - 2) + '" y="' + (fy(elev) - 3).toFixed(1) + '" text-anchor="end" class="lbl">' + esc(t("here") + " " + SS.U.elev(elev)) + "</text>";
       s += '<path d="' + p + '" fill="none" stroke="var(--accent-ink)" stroke-width="1.8"/>' +
-        '<text x="' + (PAD - 4) + '" y="' + (rows.fz[0] + 9) + '" text-anchor="end">' + X.fmt(fmax) + "</text><text x=\"" + (PAD - 4) + '" y="' + (rows.fz[1] - 1) + '" text-anchor="end">' + X.fmt(fmin) + "</text>";
+        '<text x="' + (PAD - 4) + '" y="' + (rows.fz[0] + 9) + '" text-anchor="end">' + SS.U.ev(fmax) + "</text><text x=\"" + (PAD - 4) + '" y="' + (rows.fz[1] - 1) + '" text-anchor="end">' + SS.U.ev(fmin) + "</text>";
     }
     // wind: arrows (direction the wind blows to), speed every second bin, gusts as a thin tail
     const wmax = Math.max(20, ...bins.map((b) => b.gust || b.wind));
@@ -302,9 +302,9 @@
       const xc = x(k) + BW / 2, yc = rows.wd[0] + 12, L = 5 + 7 * Math.min(1, b.wind / wmax);
       if (b.dir != null) s += '<g transform="translate(' + xc + ' ' + yc + ') rotate(' + (b.dir + 180) + ')"><line x1="0" y1="' + L + '" x2="0" y2="' + -L + '" stroke="var(--ink2)" stroke-width="1.5"/><path d="M-3.5,' + (-L + 4) + ' L0,' + -L + ' L3.5,' + (-L + 4) + '" fill="none" stroke="var(--ink2)" stroke-width="1.5"/></g>';
       else s += '<rect x="' + (xc - 2) + '" y="' + (yc - L) + '" width="4" height="' + (2 * L) + '" rx="2" fill="var(--ink3)"/>';
-      if (k % 2 === 0) s += '<text x="' + xc + '" y="' + (rows.wd[1] - 2) + '" text-anchor="middle">' + Math.round(b.wind) + "</text>";
+      if (k % 2 === 0) s += '<text x="' + xc + '" y="' + (rows.wd[1] - 2) + '" text-anchor="middle">' + SS.U.wv(b.wind) + "</text>";
     });
-    s += '<text x="' + (PAD - 4) + '" y="' + (rows.wd[1] - 2) + '" text-anchor="end">km/h</text>';
+    s += '<text x="' + (PAD - 4) + '" y="' + (rows.wd[1] - 2) + '" text-anchor="end">' + SS.U.wu() + "</text>";
     // time axis
     bins.forEach((b, k) => { if (b.h % 6 === 0) s += '<text x="' + (x(k) + BW / 2) + '" y="' + (rows.ax[1] - 4) + '" text-anchor="middle">' + String(b.h).padStart(2, "0") + "</text>"; });
     s += "</svg>";
@@ -315,9 +315,9 @@
       const tots = Object.values(pm).map((arr) => sum(arr.slice(0, hours))).sort((a, b) => a - b);
       if (tots.length >= 2) {
         const lo2 = Math.round(tots[0]), hi2 = Math.round(tots[tots.length - 1]);
-        agree = hi2 < 1 ? t("No snow in sight in any forecast.") : hi2 - lo2 <= Math.max(3, hi2 * 0.3) ? t("{a} forecasts agree: {b} cm over this period.").replace("{a}", tots.length).replace("{b}", lo2 === hi2 ? String(hi2) : lo2 + "–" + hi2)
-          : t("{a} forecasts differ: {b} cm over this period.").replace("{a}", tots.length).replace("{b}", lo2 + "–" + hi2);
-        if (cmp) agree += " " + tots.map((v, i) => t("Forecast") + " " + (i + 1) + ": " + Math.round(v) + " cm").join(" · ");
+        agree = hi2 < 1 ? t("No snow in sight in any forecast.") : hi2 - lo2 <= Math.max(3, hi2 * 0.3) ? I18N.tu("{a} forecasts agree: {b} cm over this period.", tots.length, lo2 === hi2 ? SS.U.dep(hi2) : SS.U.dep(lo2) + "–" + SS.U.dep(hi2))
+          : I18N.tu("{a} forecasts differ: {b} cm over this period.", tots.length, SS.U.dep(lo2) + "–" + SS.U.dep(hi2));
+        if (cmp) agree += " " + tots.map((v, i) => t("Forecast") + " " + (i + 1) + ": " + SS.U.depth(v)).join(" · ");
       }
     }
     return '<div class="meteo">' + s + "</div>" +

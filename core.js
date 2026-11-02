@@ -20,6 +20,49 @@
     return r.json();
   }
 
+  // ------------------------------------------------------------------ units (owner 2026-11-02: US units)
+  // Data stays metric everywhere; only what is written on screen changes. Metric: cm, m, km, °C, km/h. US: in, ft, mi,
+  // °F, mph. Default by the visitor (not the map): a US time zone, or en-US as the first browser language outside
+  // Europe / Africa; Canada stays metric. Remembered in localStorage "ss_units". In US mode number and unit are joined
+  // by a no-break space so i18n.js can translate "+{a} in new" on its metric key and swap the unit back.
+  const U = (() => {
+    const US_TZ = /^(America\/(New_York|Chicago|Denver|Los_Angeles|Phoenix|Anchorage|Boise|Detroit|Juneau|Sitka|Nome|Adak|Menominee|Metlakatla|Yakutat|Indiana\/.*|Kentucky\/.*|North_Dakota\/.*)|Pacific\/Honolulu|US\/.*)$/;
+    const guess = () => {
+      let tz = ""; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch { /* old browser */ }
+      if (US_TZ.test(tz)) return "us";
+      const l0 = String((navigator.languages && navigator.languages[0]) || navigator.language || "");
+      return /^en-US$/i.test(l0) && !/^(Europe|Africa|Atlantic\/(Canary|Madeira|Azores|Reykjavik))/.test(tz) && !/^America\/(Toronto|Vancouver|Edmonton|Winnipeg|Halifax|Montreal|Regina|St_Johns|Whitehorse|Yellowknife)/.test(tz) ? "us" : "metric";
+    };
+    let mode = null;
+    try { const v = localStorage.getItem("ss_units"); if (v === "us" || v === "metric") mode = v; } catch { /* private */ }
+    if (!mode) mode = guess();
+    const us = () => mode === "us";
+    const sp = () => (us() ? "\u00a0" : " ");
+    const loc = (n) => n.toLocaleString("en-US");
+    // depth / new snow: in with 1 decimal under 10 in, whole above; cm whole
+    const dep = (cm) => { if (cm == null || isNaN(cm)) return "–"; if (!us()) return String(Math.round(cm)); const i = cm / 2.54; return i < 9.95 ? String(Math.round(i * 10) / 10) : String(Math.round(i)); };
+    const du = () => (us() ? "in" : "cm");
+    const depth = (cm) => dep(cm) + sp() + du();
+    const ev = (m) => (m == null || isNaN(m) ? "–" : loc(Math.round(us() ? m * 3.28084 : m)));
+    const eu = () => (us() ? "ft" : "m");
+    const elev = (m) => ev(m) + sp() + eu();
+    const dv = (km) => { const v = us() ? km / 1.609344 : km; return v < 10 ? String(Math.round(v * 10) / 10) : loc(Math.round(v)); };
+    const dvu = () => (us() ? "mi" : "km");
+    const dist = (km) => dv(km) + sp() + dvu();
+    const tv = (c) => (c == null || isNaN(c) ? null : Math.round(us() ? c * 9 / 5 + 32 : c));
+    const tu = () => (us() ? "°F" : "°C");
+    const wv = (kmh) => (kmh == null || isNaN(kmh) ? null : Math.round(us() ? kmh / 1.609344 : kmh));
+    const wu = () => (us() ? "mph" : "km/h");
+    const wind = (kmh) => wv(kmh) + sp() + wu();
+    // a "round" number in the display unit for thresholds / scale labels written in metric (25 km -> 15 mi, 100 cm -> 40 in)
+    const nice = (v) => { const a = Math.abs(v); const st = a >= 1000 ? 500 : a >= 200 ? 50 : a >= 40 ? 10 : a >= 10 ? 5 : a >= 2 ? 1 : 0.5; return Math.round(v / st) * st; };
+    const depN = (cm) => (us() ? nice(cm / 2.54) : cm);          // tick / scale labels
+    const elN = (m) => (us() ? nice(m * 3.28084) : m);
+    const kmN = (km) => (us() ? nice(km / 1.609344) : km);
+    const set = (v) => { mode = v === "us" ? "us" : "metric"; try { localStorage.setItem("ss_units", mode); } catch { /* private */ } };
+    return { us, set, mode: () => mode, sp, dep, du, depth, ev, eu, elev, dv, dvu, dist, tv, tu, wv, wu, wind, depN, elN, kmN, nice };
+  })();
+
   // ------------------------------------------------------------------ config
   async function loadConfig() {
     const [cfg, site] = await Promise.all([
@@ -532,6 +575,6 @@
     return S;
   }
 
-  window.SS = { S, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
+  window.SS = { U, S, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
                 resorts, mapLib, transformRequest, onChange: (f) => S.listeners.push(f), store, ROOT };
 })();

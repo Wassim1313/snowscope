@@ -9,6 +9,11 @@
   const LOCALE = { en: "en-GB", fr: "fr-FR", de: "de-DE", it: "it-IT", es: "es-ES", ar: "ar-MA" };
   // columns: fr, de, it, es, ar
   const T = {
+    "Units": ["Unités", "Einheiten", "Unità", "Unidades", "الوحدات"],
+    "Metric": ["Métrique", "Metrisch", "Metrico", "Métrico", "متري"],
+    "US units": ["Unités US", "US-Einheiten", "Unità USA", "Unidades EE. UU.", "وحدات أمريكية"],
+    "Metric · cm, m, km, °C": ["Métrique · cm, m, km, °C", "Metrisch · cm, m, km, °C", "Metrico · cm, m, km, °C", "Métrico · cm, m, km, °C", "متري · سم، م، كم، °م"],
+    "US · in, ft, mi, °F": ["US · in, ft, mi, °F", "US · in, ft, mi, °F", "USA · in, ft, mi, °F", "EE. UU. · in, ft, mi, °F", "أمريكي · إنش، قدم، ميل، °ف"],
     "Where to ski tomorrow": ["Où skier demain", "Wo morgen Ski fahren", "Dove sciare domani", "Dónde esquiar mañana", "أين تتزلج غدًا"],
     "Tomorrow": ["Demain", "Morgen", "Domani", "Mañana", "غدًا"],
     "City or resort": ["Ville ou station", "Stadt oder Skigebiet", "Città o stazione", "Ciudad o estación", "مدينة أو محطة"],
@@ -354,6 +359,25 @@
     "7 more days at {a}": ["7 jours de plus à {a}", "7 weitere Tage in {a}", "7 giorni in più a {a}", "7 días más en {a}", "7 أيام أخرى في {a}"],
     "15 days at {a}": ["15 jours à {a}", "15 Tage in {a}", "15 giorni a {a}", "15 días en {a}", "15 يومًا في {a}"],
   };
+  // US units (core.js SS.U): templates derived from the metric keys (numbers become {a} / {b}, units swap on output)
+  const der = (from, to, f) => { if (T[from] && !T[to]) T[to] = T[from].map(f); };
+  der("No measurement within 25 km", "No measurement within {a} km", (x) => x.replace("25", "{a}"));
+  der("Snow depth on the upper slopes, cm", "Snow depth on the upper slopes, in", (x) => x.replace(/cm$/, "in").replace("سم", "إنش"));
+  der("Snow, cm", "Snow, in", (x) => x.replace(/cm$/, "in").replace("سم", "إنش"));
+  der("Where 0 °C sits", "Where 32 °F sits", (x) => x.replace("0 °C", "32 °F"));
+  for (const [k, v] of Object.entries(P)) {
+    if (k === "No snow storm right now (20 cm or more).") T["No snow storm right now ({a} cm or more)."] = v.map((x) => x.replace(/20/, "{a}"));
+  }
+  if (T["No snow storm right now (20 cm or more)."] && !T["No snow storm right now ({a} cm or more)."]) T["No snow storm right now ({a} cm or more)."] = T["No snow storm right now (20 cm or more)."].map((x) => x.replace(/20/, "{a}"));
+  for (const src of [T, P]) {
+    const q = src["Nothing over 1 cm in the last {a}. Check tomorrow."];
+    if (q && !T["Nothing over {b} cm in the last {a}. Check tomorrow."]) T["Nothing over {b} cm in the last {a}. Check tomorrow."] = q.map((x) => x.replace(/1(?=\s?(cm|سم))/, "{b}"));
+  }
+  const usOn = () => !!(window.SS && SS.U && SS.U.us());
+  const US_IN = /\u00a0(in|ft|mi|mph|°F)(?![\w])/;
+  const toMetric = (k) => k.replace(/\u00a0mph(?![\w])/g, " km/h").replace(/\u00a0in(?![\w])/g, " cm").replace(/\u00a0ft(?![\w])/g, " m").replace(/\u00a0mi(?![\w])/g, " km");
+  const toUS = (r) => r.replace(/ km\/h(?![\w])/g, "\u00a0mph").replace(/ cm(?![\w])/g, "\u00a0in").replace(/ km(?![\w])/g, "\u00a0mi").replace(/ m(?![\w])/g, "\u00a0ft")
+    .replace(/كم\/س/g, "ميل/س").replace(/سم/g, "إنش").replace(/كم/g, "ميل").replace(/(^|\s)م(?=\s|$|[.,،])/g, "$1قدم");
   const COL = { fr: 0, de: 1, it: 2, es: 3, ar: 4 };
   const pick = () => {
     let q = null;
@@ -374,19 +398,27 @@
   });
   function tr(s) {
     if (col == null) return s;
-    const k = s.trim();
-    if (!k || k.length > 400) return s;
+    const k0 = s.trim();
+    if (!k0 || k0.length > 400) return s;
+    const us = US_IN.test(k0), k = us ? toMetric(k0) : k0;     // "+4.7 in new" is translated on "+4.7 cm new"
     const hit = T[k];
-    if (hit) return s.replace(k, hit[col]);
+    if (hit) return s.replace(k0, us ? toUS(hit[col]) : hit[col]);
     for (const [re, names, out] of pats) {
       const m = re.exec(k);
       if (m) {
         let r = out;
         names.forEach((n, i) => { const v = m[i + 1], tv = T[v] || T[v.replace(/^the /, "")]; r = r.replace("{" + n + "}", tv ? tv[col] : v); });
-        return s.replace(k, r);
+        return s.replace(k0, us ? toUS(r) : r);
       }
     }
     return s;
+  }
+  // a template with metric units ("{a} m higher"), translated, units swapped when US is on, then filled
+  function tu(tpl, ...vals) {
+    let r = col == null ? tpl : (T[tpl] ? T[tpl][col] : tr(tpl));
+    if (usOn()) r = toUS(r);
+    vals.forEach((v, i) => { r = r.replace("{" + "ab"[i] + "}", v); });
+    return r;
   }
   const ATTRS = ["placeholder", "title", "aria-label"];
   function walk(node) {
@@ -412,7 +444,9 @@
   function menu(anchor) {
     const ul = document.createElement("div");
     ul.className = "langmenu glass";
-    ul.innerHTML = Object.entries(LANGS).map(([k, v]) => '<button data-l="' + k + '"' + (k === lang ? ' aria-current="true"' : "") + ' lang="' + k + '">' + v + "</button>").join("");
+    const um = window.SS && SS.U ? SS.U.mode() : "metric";
+    ul.innerHTML = Object.entries(LANGS).map(([k, v]) => '<button data-l="' + k + '"' + (k === lang ? ' aria-current="true"' : "") + ' lang="' + k + '">' + v + "</button>").join("") +
+      '<hr><div class="unitsrow" role="group" aria-label="' + tr("Units") + '"><button data-u="metric"' + (um === "metric" ? ' aria-current="true"' : "") + ">" + tr("Metric") + '</button><button data-u="us"' + (um === "us" ? ' aria-current="true"' : "") + ">" + tr("US units") + "</button></div>";
     document.body.appendChild(ul);
     const r = anchor.getBoundingClientRect();
     ul.style.top = r.bottom + 6 + "px";
@@ -420,11 +454,13 @@
     const close = (e) => { if (!ul.contains(e.target)) { ul.remove(); document.removeEventListener("click", close, true); } };
     setTimeout(() => document.addEventListener("click", close, true));
     ul.onclick = (e) => {
+      const ub = e.target.closest("[data-u]");
+      if (ub) { if (window.SS && SS.U && ub.dataset.u !== SS.U.mode()) { SS.U.set(ub.dataset.u); location.reload(); } return; }
       const b = e.target.closest("[data-l]");
       if (!b) return;
       try { localStorage.setItem("ss_lang", b.dataset.l); } catch { /* private */ }
       const u = new URL(location.href); u.searchParams.set("lang", b.dataset.l); location.href = u.href;
     };
   }
-  window.I18N = { lang, locale: LOCALE[lang], t: tr, menu, LANGS };
+  window.I18N = { lang, locale: LOCALE[lang], t: tr, tu, menu, LANGS };
 })();
