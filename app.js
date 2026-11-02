@@ -31,7 +31,7 @@
   const ensureDem = () => { if (!map.getSource("dem")) map.addSource("dem", DEM); };
   const get = (k, d) => { const v = store.get(k); return v == null ? d : v; };
 
-  const st = { day: null, main: "depth", p72: false, over: { pistes: false, aval: false, pins: true, stays: !!get("ss_stays", 1), stn: !!get("ss_stn", 1), s30: !!get("ss_s30", 1) }, monly: !!get("ss_monly", 0), s30: undefined, s30fail: false, s30loaded: false, covered: false, scale: get("ss_scale", 100),
+  const st = { day: null, main: "depth", p72: false, over: { pistes: !!get("ss_pistes", 0), aval: false, pins: true, stays: !!get("ss_stays", 1), stn: !!get("ss_stn", 1), s30: !!get("ss_s30", 1) }, monly: !!get("ss_monly", 0), s30: undefined, s30fail: false, s30loaded: false, covered: false, scale: get("ss_scale", 100),
     sharp: !!get("ss_sharp", false), style: get("ss_style", "outdoors"), terrain: !!get("ss_terrain", false), tab: "map", slug: null,
     region: null, pro: false, proIdx: null, proDates: null, gen: 0, fields: {}, pistes: { idx: null, loaded: new Set(), feats: [] },
     aval: null, radar: undefined, sheet: "peek", pushed: false, ski: { region: null, country: "", when: "today", radius: get("ss_radius", 200), min: 0, fresh: false, q: "" },
@@ -950,21 +950,35 @@
     map.setLayoutProperty("pistes", "visibility", vis(st.over.pistes));
     map.setLayoutProperty("aval_fill", "visibility", vis(st.over.aval));
     map.setLayoutProperty("aval_line", "visibility", vis(st.over.aval));
-    if (st.over.pistes) { if (map.getZoom() < 9 && !quiet) toast("Zoom in to see pistes and lifts"); st.pistes.loaded.clear(); st.pistes.feats = []; loadPistes(); }
+    if (st.over.pistes) { if (map.getZoom() < 9 && !quiet) toast("Zoom in to see pistes and lifts"); st.pistes.loaded.clear(); st.pistes.feats = []; st.pistes.gen = (st.pistes.gen || 0) + 1; loadPistes(); }
     if (st.over.aval) loadAval(quiet);
   }
-  async function loadPistes() {
-    if (map.getZoom() < 9) return;
-    try { if (!st.pistes.idx) st.pistes.idx = (await SS.api("/v1/pistes/index", { auth: false })).tiles || []; }
-    catch { toast("Pistes are updating, try again in a minute."); return; }
+  // pistes: 0.5 degree GeoJSON tiles from the API, loaded for the view from z9 (on toggle, on every moveend and once
+  // after the start view: a shared link / remembered choice switches them on while the map still sits at z5).
+  // A failed tile is retried (3 times, 4 s apart) instead of waiting for the next pan.
+  async function loadPistes(retry = 0) {
+    if (!map || !ready || !st.over.pistes || !map.getSource("pistes") || map.getZoom() < 9) return;
+    const gen = st.pistes.gen;
+    try { if (!st.pistes.idx) st.pistes.idx = (await SS.api("/v1/pistes/index", { auth: false, timeout: 20000 })).tiles || []; }
+    catch {
+      if (retry < 3) { clearTimeout(st.pistes.rt); st.pistes.rt = setTimeout(() => loadPistes(retry + 1), 4000); }
+      else toast("Pistes are updating, try again in a minute.");
+      return;
+    }
     const b = map.getBounds();
     const hit = st.pistes.idx.filter((t) => !(t.e < b.getWest() || t.w > b.getEast() || t.n < b.getSouth() || t.s > b.getNorth()) && !st.pistes.loaded.has(t.id)).slice(0, 12);
     if (!hit.length) return;
+    let failed = 0;
     await Promise.all(hit.map(async (t) => {
       st.pistes.loaded.add(t.id);
-      try { const g = await SS.api("/v1/pistes/" + encodeURIComponent(t.id) + ".geojson", { auth: false }); st.pistes.feats.push(...(g.features || [])); } catch { st.pistes.loaded.delete(t.id); }
+      try {
+        const g = await SS.api("/v1/pistes/" + encodeURIComponent(t.id) + ".geojson", { auth: false, timeout: 25000 });
+        if (gen === st.pistes.gen) st.pistes.feats.push(...(g.features || []));
+      } catch { st.pistes.loaded.delete(t.id); failed++; }
     }));
+    if (gen !== st.pistes.gen || !map.getSource("pistes")) return;     // switched off / style reloaded meanwhile
     map.getSource("pistes").setData({ type: "FeatureCollection", features: st.pistes.feats });
+    if (failed && retry < 3) { clearTimeout(st.pistes.rt); st.pistes.rt = setTimeout(() => loadPistes(retry + 1), 4000); }
   }
   async function loadAval(quiet) {
     try {
@@ -1122,7 +1136,7 @@
         if (["wind", "freeze", "radar"].includes(id)) { setMain(st.main === id ? "depth" : id); }
         else if (id === "p72") { st.p72 = !st.p72; if (st.p72) st.main = "powder"; renderMain(); drawLegend(); drawDays(); }
         else if (id === "terrain") { st.terrain = !st.terrain; store.set("ss_terrain", st.terrain); applyTerrain(); }
-        else { st.over[id] = !st.over[id]; if (id === "pins") drawPins(); else if (id === "stays") { store.set("ss_stays", st.over.stays ? 1 : 0); drawStays(); }
+        else { st.over[id] = !st.over[id]; if (id === "pistes") store.set("ss_pistes", st.over.pistes ? 1 : 0); if (id === "pins") drawPins(); else if (id === "stays") { store.set("ss_stays", st.over.stays ? 1 : 0); drawStays(); }
           else if (id === "stn") { store.set("ss_stn", st.over.stn ? 1 : 0); drawStations(); if (!st.slug && st.tab === "map") renderPanel(); }
           else if (id === "s30") { store.set("ss_s30", st.over.s30 ? 1 : 0); refreshS30(); } else applyOverlays(); drawLegend(); }
         m.el.querySelectorAll("[data-over]").forEach((b) => { const x = b.dataset.over; b.setAttribute("aria-checked", ["wind", "freeze", "radar"].includes(x) ? st.main === x : x === "p72" ? st.p72 : x === "terrain" ? st.terrain : !!st.over[x]); });
@@ -1154,6 +1168,8 @@
     else if (id === "terrain") { st.terrain = !st.terrain; store.set("ss_terrain", st.terrain); applyTerrain(); const b = $("btn3d"); if (b) b.setAttribute("aria-pressed", st.terrain); }
     else if (id in st.over) {
       st.over[id] = !st.over[id];
+      if (id === "pistes") store.set("ss_pistes", st.over.pistes ? 1 : 0);
+      if (!map || !ready) { if (window.SSX) SSX.refresh(); return true; }   // applied by onStyle once the map is up
       if (id === "pins") drawPins();
       else if (id === "stays") { store.set("ss_stays", st.over.stays ? 1 : 0); drawStays(); }
       else if (id === "stn") { store.set("ss_stn", st.over.stn ? 1 : 0); if (typeof drawStations === "function") drawStations(); if (!st.slug && st.tab === "map" && !st.point) renderPanel(); }
@@ -1930,6 +1946,7 @@
     });
     refreshStations();                 // the start view was set above, before this listener existed
     loadFine();
+    if (st.over.pistes) loadPistes();  // same: onStyle ran at the z5 start view
   });
   await started;
   SS.onChange(onAccount);
