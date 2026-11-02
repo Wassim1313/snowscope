@@ -599,8 +599,8 @@
         "text-offset": [0, 1.25], "text-optional": true, "text-max-width": 9, "text-letter-spacing": 0.05, "text-padding": 1, "symbol-sort-key": ["-", 2000, ["get", dField]] },
       paint: { "text-color": "#4B5563", "text-halo-color": "#ffffff", "text-halo-width": 1.4 } });
     badge("stn_top", "stn_top", 0, 5, "d", null, nameText);
-    badge("stn_cl", "stn", 5, 8.5, "max", ["has", "point_count"], ["concat", "× ", ["get", "point_count"]]);
-    badge("stn_badge", "stn", 5, 24, "d", ["!", ["has", "point_count"]], nameText);
+    badge("stn_cl", "stn", 5, 8.5, "max", ["all", ["has", "point_count"], [">=", ["get", "max"], 1]], ["concat", "× ", ["get", "point_count"]]);
+    badge("stn_badge", "stn", 5, 24, "d", ["all", ["!", ["has", "point_count"]], [">=", ["get", "d"], 1]], nameText);
     map.setLayoutProperty("stn_badge", "text-field", ["step", ["zoom"], "", 8.5, nameText]);
     map.addLayer({ id: "stn_new", type: "symbol", source: "stn", minzoom: 8, filter: ["all", ["!", ["has", "point_count"]], [">=", ["get", "n2"], 5]],
       layout: { ...svis, "icon-image": "pill_new", "icon-text-fit": "both", "icon-text-fit-padding": [0, 3, 0, 3], "text-field": ["concat", "+", ["get", "n2"]], "text-font": ["Noto Sans Bold"], "text-size": 10,
@@ -635,17 +635,76 @@
         '</div><div class="acts3" style="margin-top:8px"><a class="btn ink" target="_blank" rel="sponsored noopener" href="' + esc(u) + '">' + esc(I18N.t("Book")) + "</a>" +
         (other ? '<a class="btn tonal" target="_blank" rel="sponsored noopener" href="' + esc(other) + '">' + esc(I18N.t("See other deals")) + "</a>" : "") + "</div></div>").addTo(map);
     });
+    // resort pins: a value chip ("42 cm" with the depth colour as a dot) on a pointer, sized by the resort's size (km of
+    // pistes) and placed in that order so the big resorts win collisions; the name under it only when there is room;
+    // "+N" chip for fresh snow; a soft halo under the hovered pin; dark / light chip follows the page theme
     map.addSource("pins", { type: "geojson", data: fc });
-    const font = ["Noto Sans Regular"];
-    map.addLayer({ id: "pins", type: "circle", source: "pins", minzoom: 7,
-      paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 6, 2.5, 10, 5], "circle-color": "#0B1220", "circle-stroke-color": "#fff", "circle-stroke-width": 1.5 } });
-    map.addLayer({ id: "pin_lbl", type: "symbol", source: "pins", minzoom: 9,
-      layout: { "text-field": ["get", "t"], "text-font": font, "text-size": 12, "text-offset": [0, 1.1], "text-anchor": "top", "text-optional": true },
-      paint: { "text-color": "#0B1220", "text-halo-color": "#fff", "text-halo-width": 1.6 } });
-    for (const id of ["pins", "pin_lbl"]) {
-      map.on("mouseenter", id, () => { map.getCanvas().style.cursor = "pointer"; });
-      map.on("mouseleave", id, () => { map.getCanvas().style.cursor = ""; });
+    map.addSource("pin_hover", { type: "geojson", data: fc });
+    map.addLayer({ id: "pin_halo", type: "circle", source: "pin_hover", paint: { "circle-radius": 26, "circle-color": "rgba(20,99,243,.14)", "circle-blur": 0.6 } });
+    map.addLayer({ id: "pins", type: "circle", source: "pins", minzoom: 7, filter: ["!", ["has", "v"]],
+      paint: { "circle-radius": ["interpolate", ["linear"], ["zoom"], 6, 2.5, 10, 4.5], "circle-color": "#0B1220", "circle-stroke-color": "#fff", "circle-stroke-width": 1.5, "circle-opacity": 0.7 } });
+    map.addLayer({ id: "pin_lbl", type: "symbol", source: "pins", minzoom: 10, filter: ["!", ["has", "v"]],
+      layout: { "text-field": ["get", "n"], "text-font": ["Noto Sans Regular"], "text-size": 11.5, "text-offset": [0, 0.9], "text-anchor": "top", "text-optional": true },
+      paint: { "text-color": "#4B5563", "text-halo-color": "#fff", "text-halo-width": 1.4 } });
+    map.addLayer({ id: "pin_chip", type: "symbol", source: "pins", minzoom: 7, filter: ["has", "v"],
+      layout: { "icon-image": ["concat", "pin", ["get", "th"], "_", ["to-string", ["get", "v"]]], "icon-anchor": "bottom", "icon-padding": 1,
+        "icon-size": ["interpolate", ["linear"], ["zoom"], 7, ["*", 0.6, ["get", "sz"]], 10, ["*", 0.86, ["get", "sz"]], 13, ["get", "sz"]],
+        "symbol-sort-key": ["-", 100000, ["get", "km"]], "text-field": ["step", ["zoom"], "", 9.5, ["get", "n"]], "text-font": ["Noto Sans Bold"], "text-size": 12,
+        "text-anchor": "top", "text-offset": [0, 0.35], "text-optional": true, "text-max-width": 9, "text-letter-spacing": 0.02 },
+      paint: { "text-color": "#0B1220", "text-halo-color": "#ffffff", "text-halo-width": 1.5 } });
+    map.addLayer({ id: "pin_new", type: "symbol", source: "pins", minzoom: 8, filter: ["all", ["has", "v"], [">=", ["get", "nw"], 3]],
+      layout: { "icon-image": "pill_new", "icon-text-fit": "both", "icon-text-fit-padding": [0, 3, 0, 3], "text-field": ["concat", "+", ["get", "nw"]], "text-font": ["Noto Sans Bold"], "text-size": 10,
+        "text-offset": [1.4, -3.4], "text-anchor": "bottom-left", "icon-allow-overlap": true, "text-allow-overlap": true, "icon-ignore-placement": true, "text-ignore-placement": true },
+      paint: { "text-color": "#ffffff" } });
+    for (const id of ["pins", "pin_lbl", "pin_chip"]) {
+      map.on("mouseenter", id, (e) => { map.getCanvas().style.cursor = "pointer"; const f = e.features && e.features[0]; if (f) map.getSource("pin_hover").setData(f); });
+      map.on("mouseleave", id, () => { map.getCanvas().style.cursor = ""; map.getSource("pin_hover").setData(fc); });
     }
+    // powder bubbles (map mode "New snow"): sized and coloured by the fresh snow, the number inside, top 3 with a glow
+    map.addSource("pow", { type: "geojson", data: fc });
+    map.addLayer({ id: "pow", type: "symbol", source: "pow", minzoom: 4,
+      layout: { "icon-image": ["concat", "pw", ["case", ["<=", ["get", "rk"], 3], "g", ""], "_", ["to-string", ["get", "n"]]], "icon-size": ["interpolate", ["linear"], ["zoom"], 4, ["*", 0.7, ["interpolate", ["linear"], ["get", "n"], 1, 0.8, 30, 1, 80, 1.2]], 8, ["*", 0.9, ["interpolate", ["linear"], ["get", "n"], 1, 0.8, 30, 1, 80, 1.2]], 12, ["interpolate", ["linear"], ["get", "n"], 1, 0.8, 30, 1, 80, 1.2]],
+        "symbol-sort-key": ["-", 1000, ["get", "n"]], "text-field": ["step", ["zoom"], "", 8, ["get", "t"]], "text-font": ["Noto Sans Bold"], "text-size": 11.5, "text-anchor": "top", "text-offset": [0, 1.9], "text-optional": true, "text-max-width": 9 },
+      paint: { "text-color": "#0B1220", "text-halo-color": "#ffffff", "text-halo-width": 1.5 } });
+    map.on("click", "pow", (e) => { const f = e.features && e.features[0]; if (f) { st.stayClick = Date.now(); openResort(f.properties.s); } });
+    map.on("mouseenter", "pow", () => { map.getCanvas().style.cursor = "pointer"; });
+    map.on("mouseleave", "pow", () => { map.getCanvas().style.cursor = ""; });
+  }
+  // pin / bubble images (2x), one per value and theme, drawn on demand
+  const PINS = new Set();
+  const isDarkTheme = () => document.documentElement.dataset.theme === "dark" || (!document.documentElement.dataset.theme && matchMedia("(prefers-color-scheme: dark)").matches);
+  function pinImage(v, th) {
+    const id = "pin" + th + "_" + v;
+    if (PINS.has(id) || !map) return;
+    const c = document.createElement("canvas"), g = c.getContext("2d"), dark = th === "d";
+    g.font = "600 24px Inter, system-ui, sans-serif"; const tw = Math.ceil(g.measureText(String(v)).width);
+    g.font = "500 16px Inter, system-ui, sans-serif"; const uw = Math.ceil(g.measureText("cm").width);
+    const W = 16 + 12 + 8 + tw + 4 + uw + 16 + 8, H = 44 + 10 + 10, R = 16; c.width = W; c.height = H;
+    g.shadowColor = "rgba(11,18,32,.28)"; g.shadowBlur = 8; g.shadowOffsetY = 3;
+    g.fillStyle = dark ? "#F4F6FA" : "#0B1220"; roundRect(g, 4, 2, W - 8, 44, R); g.fill();
+    g.beginPath(); g.moveTo(W / 2 - 7, 45); g.lineTo(W / 2 + 7, 45); g.lineTo(W / 2, 54); g.closePath(); g.fill();
+    g.shadowColor = "transparent";
+    g.fillStyle = depthCol(v); g.beginPath(); g.arc(4 + 16 + 6, 24, 6, 0, Math.PI * 2); g.fill();
+    g.strokeStyle = "rgba(255,255,255,.55)"; g.lineWidth = 1.5; g.stroke();
+    g.textBaseline = "middle"; g.textAlign = "left"; g.fillStyle = dark ? "#0B1220" : "#ffffff";
+    g.font = "600 24px Inter, system-ui, sans-serif"; g.fillText(String(v), 4 + 16 + 12 + 8, 25);
+    g.fillStyle = dark ? "#5B6473" : "#B8C0CC"; g.font = "500 16px Inter, system-ui, sans-serif"; g.fillText("cm", 4 + 16 + 12 + 8 + tw + 4, 26);
+    map.addImage(id, g.getImageData(0, 0, W, H), { pixelRatio: 2 });
+    PINS.add(id);
+  }
+  function bubbleImage(n, glow) {
+    const id = "pw" + (glow ? "g" : "") + "_" + n;
+    if (PINS.has(id) || !map) return;
+    const c = document.createElement("canvas"), g = c.getContext("2d"), S = 72, pad = glow ? 14 : 6, W = S + pad * 2; c.width = c.height = W;
+    const col = rampAt(NEW, n);
+    if (glow) { g.shadowColor = "rgba(" + col.join(",") + ",.75)"; g.shadowBlur = 16; }
+    g.fillStyle = "#ffffff"; g.beginPath(); g.arc(W / 2, W / 2, S / 2, 0, Math.PI * 2); g.fill();
+    g.shadowColor = "transparent";
+    g.fillStyle = "rgb(" + col.join(",") + ")"; g.beginPath(); g.arc(W / 2, W / 2, S / 2 - 2.5, 0, Math.PI * 2); g.fill();
+    g.textBaseline = "middle"; g.textAlign = "center"; g.fillStyle = n >= 20 ? "#ffffff" : "#0B1220";
+    g.font = "700 24px Inter, system-ui, sans-serif"; g.fillText("+" + n, W / 2, W / 2 + 1);
+    map.addImage(id, g.getImageData(0, 0, W, W), { pixelRatio: 2 });
+    PINS.add(id);
   }
   // ------------------------------------------------------------------ measured snow at stations
   // snow/stations.json rows [lat, lon, name, elev_m, depth_cm, time_utc, network, url, new_cm]; stations_hist.json 14-day series
@@ -862,12 +921,30 @@
     if (!ready || !map.getSource("pins")) return;
     const res = await RES.catch(() => null);
     if (!res) return;
-    const i = res.dates.indexOf(st.day);
-    map.getSource("pins").setData({ type: "FeatureCollection", features: st.over.pins ? res.rows.map((x) => {
-      const v = i >= 0 && x.snow[i] ? x.snow[i][0] : null;
-      return { type: "Feature", geometry: { type: "Point", coordinates: [x.lon, x.lat] }, properties: { s: x.slug, t: x.short + (v ? " · " + v + " cm" : "") } };
-    }) : [] });
+    const i = res.dates.indexOf(st.day), th = isDarkTheme() ? "d" : "l", on = st.over.pins && st.main !== "powder";
+    if (map.hasImage && !map.hasImage("pill_new")) pillImages();
+    const feats = on ? res.rows.map((x) => {
+      const v = i >= 0 && x.snow[i] ? x.snow[i][0] : null, nw = i >= 0 && x.snow[i] ? x.snow[i][1] || 0 : 0;
+      const pr = { s: x.slug, n: x.short, km: x.km || 0, sz: x.km >= 100 ? 1 : x.km >= 30 ? 0.9 : 0.8, nw, th };
+      if (v) { pr.v = v; pinImage(v, th); }
+      return { type: "Feature", geometry: { type: "Point", coordinates: [x.lon, x.lat] }, properties: pr };
+    }) : [];
+    map.getSource("pins").setData({ type: "FeatureCollection", features: feats });
+    drawPowder(res);
   }
+  function drawPowder(res) {        // map mode "New snow": bubbles for every resort with fresh snow on the selected day
+    if (!ready || !map.getSource("pow") || !res) return;
+    const i = res.dates.indexOf(st.day), k = p72on() ? 2 : 1;
+    const rows = st.main === "powder" && i >= 0 ? res.rows.filter((x) => x.snow[i] && x.snow[i][k] >= 1).sort((a, b) => b.snow[i][k] - a.snow[i][k]) : [];
+    for (const id of ["best", "best_lbl", "best_name"]) if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", st.main === "powder" ? "none" : "visible");
+    map.getSource("pow").setData({ type: "FeatureCollection", features: rows.map((x, rk) => {
+      const n = x.snow[i][k]; bubbleImage(n, rk < 3);
+      return { type: "Feature", geometry: { type: "Point", coordinates: [x.lon, x.lat] }, properties: { s: x.slug, n, rk: rk + 1, t: x.short } };
+    }) });
+  }
+  const themeWatch = new MutationObserver(() => { if (ready) drawPins(); });
+  themeWatch.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+  matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { if (ready) drawPins(); });
   function applyOverlays(quiet) {
     const vis = (on) => (on ? "visible" : "none");
     map.setLayoutProperty("pistes", "visibility", vis(st.over.pistes));
@@ -1064,12 +1141,12 @@
     if (id === "powder" && !st.pro && st.day !== DATA.today) st.day = DATA.today;
     if (id !== "powder") st.p72 = false;
     if (id !== "wind" && id !== "freeze") st.hour = null;
-    drawDays(); drawLegend(); renderMain();
+    drawDays(); drawLegend(); renderMain(); drawPins();
     if (window.SSX) SSX.refresh();
   }
   // one switch for every layer, used by the layers sheet, the layer rail (expert.js) and the keyboard
   function toggleOver(id) {
-    if (["wind", "freeze", "p72"].includes(id) && !st.pro) { SS.upsell({ wind: "Wind", freeze: "Freezing level", p72: "3-day snow" }[id] + " is in Pro"); return false; }
+    if (["wind", "freeze"].includes(id) && !st.pro) { SS.upsell({ wind: "Wind", freeze: "Freezing level" }[id] + " is in Pro"); return false; }
     if (["wind", "freeze"].includes(id) && !proLive()) { toast("Pro data is updating, try again in a minute."); return false; }
     if (id === "radar" && st.radar === false) { toast("Radar is not available right now"); return false; }
     if (["depth", "powder", "sat", "wind", "freeze", "radar"].includes(id)) { setMain(st.main === id && id !== "depth" ? "depth" : id); return true; }
@@ -1199,6 +1276,7 @@
       return '<button class="rrow" style="width:100%;border-left:0;border-right:0;border-top:0;background:none;text-align:left" data-goregion="' + y.code + '"><span class="nm"><b>' + esc(y.name) + "</b><small>" +
         (z.resorts_with_snow ? fmt(z.resorts_with_snow) + " resorts have snow" : "No snow at the resorts yet") + '</small></span><span class="val">' + (z.new_max_cm >= 1 ? "<em>+" + z.new_max_cm + " cm new</em>" : "") + "</span></button>";
     }).join("");
+    h += adSlot("banner", best && BY[best.slug]);
     return h + appCard() + footer();
   }
   function appCard() {
@@ -1295,28 +1373,65 @@
     if (rows.length) h += '<button class="btn ghost" data-propost="ski" style="margin:4px 0 8px"><span class="ms">add_photo_alternate</span>Create post' + (st.pro ? "" : ' <span class="pro">PRO</span>') + "</button>";
     return h + footer();
   }
+  const FLAG = { Switzerland: "🇨🇭", "United States": "🇺🇸", Austria: "🇦🇹", Norway: "🇳🇴", France: "🇫🇷", Italy: "🇮🇹", Germany: "🇩🇪", Finland: "🇫🇮", Sweden: "🇸🇪", Canada: "🇨🇦",
+    Slovenia: "🇸🇮", Spain: "🇪🇸", Andorra: "🇦🇩", Morocco: "🇲🇦", Liechtenstein: "🇱🇮", Croatia: "🇭🇷", Estonia: "🇪🇪", Russia: "🇷🇺" };
+  const flagOf = (c) => (c || "").split(" / ").map((x) => FLAG[x.trim()] || "").join("");
+  const newTier = (n) => (n >= 30 ? "#0C2C84" : n >= 10 ? "var(--accent-ink)" : "var(--ink)");
+  function strip7(res, x) {         // fresh snow per day over the free window: small bars with the day letters
+    const n = res.dates.length, W = 300, H = 54, bw = W / n, vals = res.dates.map((d, i) => (x.snow[i] || [])[1] || 0), max = Math.max(5, ...vals);
+    let o = '<svg class="strip7" viewBox="0 0 ' + W + " " + H + '" aria-hidden="true">';
+    res.dates.forEach((d, i) => { const h = (vals[i] / max) * 24, today = d === DATA.today;
+      o += '<rect x="' + (i * bw + bw * 0.2) + '" y="' + (36 - h) + '" width="' + bw * 0.6 + '" height="' + Math.max(h, 1.5) + '" rx="2" fill="' + (today ? "var(--ink)" : d > DATA.today ? "var(--accent-tint)" : "var(--accent)") + '"/>' +
+        (vals[i] >= 1 ? '<text x="' + (i * bw + bw / 2) + '" y="' + (32 - h) + '" text-anchor="middle" class="lbl">+' + vals[i] + "</text>" : "") +
+        '<text x="' + (i * bw + bw / 2) + '" y="50" text-anchor="middle">' + esc(today ? "Today" : wd(d).slice(0, 2)) + "</text>"; });
+    return o + "</svg>";
+  }
+  const trendOf = (x, ti) => { const a = (x.snow[ti] || [])[0], b = (x.snow[ti - 1] || [])[0]; if (a == null || b == null) return ""; const d = a - b;
+    return d >= 1 ? '<em class="nw"><span class="ms">arrow_upward</span>' + d + " vs yesterday</em>" : d <= -1 ? '<em class="dn"><span class="ms">arrow_downward</span>' + (-d) + " vs yesterday</em>" : ""; };
   async function powderView() {
     const res = await RES.catch(() => null);
     if (!res) return '<p class="msg">Resorts are loading…</p>';
     await loadStations();
     const ti = res.dates.indexOf(DATA.today), k = st.p72 ? 2 : 1, o = st.origin, R = st.ski.radius;
-    const rows = res.rows.filter((x) => x.snow[ti] && x.snow[ti][k] >= 1 && (!o || !R || kmTo(o, x) <= R)).sort((a, b) => b.snow[ti][k] - a.snow[ti][k]).slice(0, 25);
-    let h = '<div class="over">Powder</div><h1>' + (rows.length ? (o ? "Powder near you" : "Fresh snow today") : (o ? "No fresh snow near you" : "No fresh snow today")) + "</h1>" + originBar(res) +
-      '<div class="filters"><div class="seg2" role="group"><button data-p72="0" aria-pressed="' + !st.p72 + '">24 hours</button><button data-p72="1" aria-pressed="' + st.p72 + '">3 days' + (st.pro ? "" : ' <span class="ms f" style="font-size:14px">lock</span>') + "</button></div>" +
-      '<button class="btn tonal" data-showpowder><span class="ms">map</span>Show on the map</button></div>';
-    h += rows.length ? rows.map((x, i) => '<a class="rrow" href="' + BASE + "resorts/" + encodeURIComponent(x.slug) + '.html" data-open="' + esc(x.slug) + '"><span class="rk">' + (i + 1) + '</span><span class="nm"><b>' + esc(x.short) + "</b><small>" + esc([NAMES[x.dom] || "", x.country].filter(Boolean).join(" · ")) +
-      (o ? " · " + Math.round(kmTo(o, x)) + " km" : "") + '</small>' + measuredHtml(x.lat, x.lon, x.top_m || null, true) + '</span><span class="val"><b style="color:var(--accent-ink)">+' + x.snow[ti][k] + "<small>cm</small></b><em style=\"color:var(--ink3)\">" + (x.snow[ti][0] || 0) + " cm deep</em></span></a>" +
-      '<div class="acts3 slim"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a><button class="btn tonal" data-share="' + esc(x.slug) + '" data-sd="' + DATA.today + '"><span class="ms">share</span>Share</button></div>').join("")
+    const fresh = res.rows.filter((x) => x.snow[ti] && x.snow[ti][k] >= 1);
+    let rows = fresh.filter((x) => !o || !R || kmTo(o, x) <= R).sort((a, b) => b.snow[ti][k] - a.snow[ti][k]).slice(0, 25);
+    let title = rows.length ? (o ? "Powder near you" : "Fresh snow today") : (o ? "No fresh snow near you" : "No fresh snow today"), far = false;
+    if (o && !rows.length && fresh.length) {       // outside the snow regions (or nothing within the radius): the nearest fresh snow from the position
+      rows = fresh.sort((a, b) => kmTo(o, a) - kmTo(o, b)).slice(0, 25); far = true; title = "Nearest powder from your position";
+    }
+    const top = rows[0];
+    let h = '<div class="over">Powder</div><h1>' + title + '</h1><div class="nopills">' + originBar(res) + "</div>";
+    const ri = RADII.indexOf(R) < 0 ? 2 : RADII.indexOf(R);
+    h += '<div class="filters"><div class="seg2" role="group" aria-label="Period"><button data-p72="0" aria-pressed="' + !st.p72 + '">24 hours</button><button data-p72="1" aria-pressed="' + st.p72 + '">3 days</button></div>' +
+      '<button class="btn tonal" data-showpowder><span class="ms">map</span>Show on the map</button></div>' +
+      '<label class="range"><span>' + (R ? "within " + R + " km" : "Anywhere") + '</span><input type="range" min="0" max="' + (RADII.length - 1) + '" step="1" value="' + ri + '" data-radius-range aria-label="Distance"></label>';
+    if (top) {
+      const tsn = top.snow[ti] || [], n72 = tsn[2] || 0;
+      h += '<article class="card pwhero"><div class="over">' + (far ? "Nearest fresh snow" : st.p72 ? "Best powder, 3 days" : "Best powder today") + '</div>' +
+        '<div class="pwtop"><div class="nm"><b>' + esc(top.short) + "</b><small>" + flagOf(top.country) + " " + esc([top.country, o ? Math.round(kmTo(o, top)) + " km away" : ""].filter(Boolean).join(" · ")) + "</small></div>" +
+        '<b class="big" style="color:' + newTier(tsn[k]) + '">+' + tsn[k] + "<small>cm</small></b></div>" +
+        '<div class="stats"><div class="stat"><b>' + (tsn[0] != null ? tsn[0] + "<small>cm</small>" : "–") + "</b><small>on the upper slopes</small></div>" +
+        '<div class="stat"><b>' + (st.p72 ? (tsn[1] ? "+" + tsn[1] + "<small>cm</small>" : "–") : (n72 ? "+" + n72 + "<small>cm</small>" : "–")) + "</b><small>" + (st.p72 ? "in 24 hours" : "in 3 days") + "</small></div>" +
+        '<div class="stat"><b>' + (top.top_m ? fmt(top.top_m) + "<small>m</small>" : "–") + "</b><small>upper slopes</small></div></div>" +
+        strip7(res, top) + measuredHtml(top.lat, top.lon, top.top_m || null, false) +
+        '<div class="acts3"><button class="btn ink" data-open="' + esc(top.slug) + '"><span class="ms">info</span>Details</button><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + top.lat + "," + top.lon + '"><span class="ms">directions_car</span>Directions</a>' +
+        '<button class="btn tonal" data-share="' + esc(top.slug) + '" data-sd="' + DATA.today + '"><span class="ms">share</span>Share</button></div></article>';
+    }
+    h += rows.length ? rows.map((x, i) => (i === 5 ? adSlot("infeed", rows[0], DATA.today) : "") + '<a class="rrow pw" href="' + BASE + "resorts/" + encodeURIComponent(x.slug) + '.html" data-open="' + esc(x.slug) + '"><span class="rk' + (i < 3 ? " top" : "") + '">' + (i + 1) + '</span><span class="nm"><b>' + flagOf(x.country) + " " + esc(x.short) + "</b><small>" +
+      esc([x.country, o ? Math.round(kmTo(o, x)) + " km away" : NAMES[x.dom] || ""].filter(Boolean).join(" · ")) + " " + trendOf(x, ti) + '</small>' + measuredHtml(x.lat, x.lon, x.top_m || null, true) + '</span>' +
+      '<span class="val"><b style="color:' + newTier(x.snow[ti][k]) + '">+' + x.snow[ti][k] + "<small>cm</small></b><em>" + (st.p72 ? "+" + (x.snow[ti][1] || 0) + " in 24 h" : "+" + (x.snow[ti][2] || 0) + " in 3 days") + " · " + (x.snow[ti][0] || 0) + " cm deep</em></span></a>").join("")
       : '<p class="none">Nothing over 1 cm in the last ' + (st.p72 ? "3 days" : "24 hours") + ". Check tomorrow.</p>";
     if (rows.length) h += '<button class="btn ghost" data-propost="powder" style="margin-top:10px"><span class="ms">add_photo_alternate</span>Create post' + (st.pro ? "" : ' <span class="pro">PRO</span>') + "</button>";
-    const storms = DATA.storms || [];
-    h += '<div class="sect">Snow storms</div>' + (storms.length ? storms.map((x, i) => '<div class="rrow"><span class="nm"><b>' + esc(x.place || NAMES[x.region] || x.region) + "</b><small>" +
-      esc((x.date === DATA.today ? "Today" : wd(x.date) + " " + dnum(x.date)) + " · " + (NAMES[x.region] || "")) + '</small>' + measuredHtml(x.lat, x.lon, null, true) + '</span><span class="val"><b style="color:var(--accent-ink)">+' + x.cm + "<small>cm</small></b><em style=\"color:var(--ink3)\">" + (x.hours === 72 ? "in 3 days" : "in 24 hours") +
-      '</em></span><button class="btn icon" data-storm="' + i + '" aria-label="Create post image"><span class="ms">add_photo_alternate</span></button></div>').join("")
+    const storms = (DATA.storms || []).map((x, i) => [x, i]).sort((a, b) => b[0].cm - a[0].cm).slice(0, 8);
+    h += '<div class="sect">Snow storms</div>' + (storms.length ? storms.map(([x, i]) => '<article class="card storm"><div class="over">' + esc((x.date === DATA.today ? "Today" : wd(x.date) + " " + dnum(x.date)) + " · " + (NAMES[x.region] || "")) + '</div>' +
+      '<div class="pwtop"><div class="nm"><b>' + esc(x.place || NAMES[x.region] || x.region) + "</b><small>" + (x.hours === 72 ? "in 3 days" : "in 24 hours") + "</small></div><b class=\"big\" style=\"color:" + newTier(x.cm) + '">+' + x.cm + "<small>cm</small></b></div>" +
+      measuredHtml(x.lat, x.lon, null, true) + '<div class="acts3">' + (x.slug ? '<button class="btn tonal" data-open="' + esc(x.slug) + '"><span class="ms">info</span>Details</button>' : "") +
+      '<a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a>' +
+      '<button class="btn ink" data-storm="' + i + '"><span class="ms">add_photo_alternate</span>Post image</button></div></article>').join("")
       : '<p class="none">No snow storm right now (20 cm or more).</p>');
     h += '<button class="btn ghost" data-viewpost style="margin-top:10px"><span class="ms">photo_camera</span>Post of this map view</button>';
     let shown = false; try { shown = !!sessionStorage.getItem("ss_stormstay"); } catch { /* private */ }
-    const s0 = storms.find((x) => x.slug);
+    const s0 = (DATA.storms || []).find((x) => x.slug);
     if (s0 && !shown && stayHref(s0.lat, s0.lon, s0.place, "storm")) {
       try { sessionStorage.setItem("ss_stormstay", "1"); } catch { /* private */ }
       h += '<a class="teaser" target="_blank" rel="sponsored noopener" href="' + esc(stayHref(s0.lat, s0.lon, s0.place, "storm", nextSat())) + '" style="margin-top:12px"><span class="ic" style="background:linear-gradient(160deg,#3B8BFF,#1463F3)"><span class="ms f">hotel</span></span><span><b>Powder this weekend?</b><small>Book a bed near ' + esc(s0.place) + ' · <span class="partner">Partner</span></small></span></a>';
@@ -1342,12 +1457,13 @@
     const w = e.target.closest("[data-when]"), p7 = e.target.closest("[data-p72]");
     if (w) { st.ski.when = w.dataset.when; renderPanel(); }
     const rb = e.target.closest("[data-radius]"); if (rb) { st.ski.radius = +rb.dataset.radius; store.set("ss_radius", st.ski.radius); renderPanel(); }
+    const rr = e.target.closest("[data-radius-range]"); if (rr) { st.ski.radius = RADII[+rr.value] || 0; store.set("ss_radius", st.ski.radius); renderPanel(); }
     const mb = e.target.closest("[data-min]"); if (mb) { st.ski.min = +mb.dataset.min; renderPanel(); }
     if (e.target.closest("[data-fresh]")) { st.ski.fresh = !st.ski.fresh; renderPanel(); }
     if (e.target.closest("[data-locate]")) locate(false);
     const shb = e.target.closest("[data-share]"); if (shb) { e.preventDefault(); shareResort(shb.dataset.share, shb.dataset.sd); }
     const ql = e.target.closest("[data-place]"); if (ql) { const pl = st.places[+ql.dataset.place]; setOrigin({ lat: pl.lat, lon: pl.lon, label: pl.label, zoom: 8 }); }
-    if (p7) { const on = p7.dataset.p72 === "1"; if (on && !st.pro) { SS.upsell("Powder over 3 days is in Pro"); return; } st.p72 = on; renderPanel(); if (st.main === "powder") { renderMain(); drawLegend(); } }
+    if (p7) { const on = p7.dataset.p72 === "1"; st.p72 = on; renderPanel(); drawPins(); if (st.main === "powder") { renderMain(); drawLegend(); } }
     if (e.target.closest("[data-showpowder]")) { setMain("powder"); if (innerWidth <= 760) setSheet("peek"); }
     if (e.target.closest("[data-signup]")) SS.signInModal("up");
     if (e.target.closest("[data-nostay]")) { store.set("ss_nostay", store.get("ss_nostay") ? null : 1); drawStays(); renderPanel(); }

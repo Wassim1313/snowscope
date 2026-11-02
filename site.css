@@ -511,3 +511,13 @@ em.nw{font-style:normal;font-weight:650;color:var(--accent-ink);font-size:12.5px
 .rrow .nm .measured{margin:2px 0 0;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rrow .nm .measured b{display:inline;font-size:12px}.rrow .nm .measured .k{font-size:10px}
 .chip30{display:inline-block;background:var(--accent-tint);color:var(--accent-ink);border-radius:6px;padding:1px 6px;font-size:10.5px;font-weight:700;letter-spacing:.3px;vertical-align:1px;margin-left:4px}
 .measured.s30{cursor:default}.measured .chip{width:10px;height:10px;min-width:0;flex:none}
+/* powder: hero, rich rows, storms, radius slider */
+.pwhero,.card.storm{margin:10px 0 12px}.pwtop{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:4px 0 10px}
+.pwtop .nm b{display:block;font-size:19px;font-weight:650;letter-spacing:-.2px}.pwtop .nm small{color:var(--ink3);font-size:12.5px}
+.pwtop .big{font-size:40px;line-height:40px;font-weight:340;letter-spacing:-1.5px;white-space:nowrap;font-variant-numeric:tabular-nums}.pwtop .big small{font-size:15px;color:var(--ink3);font-weight:520;letter-spacing:0;margin-left:3px}
+.strip7{display:block;width:100%;height:56px;margin:2px 0 6px;font-size:10px}.strip7 text{fill:var(--ink3)}.strip7 .lbl{fill:var(--accent-ink);font-weight:650}
+.range{display:flex;align-items:center;gap:10px;margin:0 0 10px;font-size:13px;color:var(--ink2)}.range span{min-width:96px;font-weight:620}.range input{flex:1;accent-color:var(--accent)}
+.rrow .rk.top{background:var(--ink);color:var(--bg);border-radius:12px;height:24px;line-height:24px}
+.rrow.pw .val b{font-variant-numeric:tabular-nums}.rrow .nm em.dn{font-style:normal;font-weight:650;color:var(--ink3);font-size:12px}.rrow .nm em.dn .ms,.rrow .nm em.nw .ms{font-size:13px;vertical-align:-2px}
+.rrow .nm small em.nw{font-size:12px}
+.nopills .pills{display:none}
