@@ -286,10 +286,15 @@
   function setResampling() {
     for (const l of (map.getStyle().layers || []).filter((x) => x.id.startsWith("m_") && x.type === "raster")) map.setPaintProperty(l.id, "raster-resampling", st.sharp ? "nearest" : "linear");
   }
-  function addCanvas(id, cv, coords, opt = {}) {
-    if (map.getSource(id)) return;
-    map.addSource(id, { type: "canvas", canvas: cv, coordinates: coords, animate: false });
-    map.addLayer({ id, type: "raster", source: id, minzoom: opt.min || 0, maxzoom: opt.max || 24, paint: rasterPaint(0.95) }, beneath());
+  function addCanvas(id, cv, coords, opt = {}) { addImage(id, cv, coords, opt); }   // see addImage (MapLibre canvas = black)
+
+  function addImage(id, cv, coords, opt = {}) {
+    const gen = st.gen;
+    cv.toBlob((b) => {
+      if (!b || map.getSource(id) || gen !== st.gen) return;
+      map.addSource(id, { type: "image", url: URL.createObjectURL(b), coordinates: coords });
+      map.addLayer({ id, type: "raster", source: id, minzoom: opt.min || 0, maxzoom: opt.max || 24, paint: rasterPaint(0.95) }, beneath());
+    }, "image/png");
   }
   function addRaster(id, tiles, opt) {
     map.addSource(id, { type: "raster", tiles: [tiles], tileSize: opt.tileSize || 256, bounds: opt.bounds, minzoom: opt.srcMin || 0, maxzoom: opt.srcMax || 10, attribution: opt.attribution || "" });
@@ -334,7 +339,8 @@
       for (const [cr, cc] of (d && d.fine[p]) || []) {
         const bx = chunkBox(r, cr, cc), id = "m_f_" + r.code + "_" + cr + "_" + cc;
         if (bx.e < b.getWest() || bx.w > b.getEast() || bx.n < b.getSouth() || bx.s > b.getNorth() || map.getSource(id)) continue;
-        codesOf(fineUrl(r, st.day, p, cr, cc)).then((cd) => { if (cd && gen === st.gen) addCanvas(id, paint(cd, p), corners(bx), { min: 7 }); });
+        // MapLibre draws late-added canvas sources black: hand the coloured chunk over as an image instead
+        codesOf(fineUrl(r, st.day, p, cr, cc)).then((cd) => { if (cd && gen === st.gen) addImage(id, paint(cd, p), corners(bx), { min: 7 }); });
       }
     }
   }
@@ -1317,6 +1323,7 @@
   const hash = /^#@(-?[\d.]+),(-?[\d.]+),([\d.]+)$/.exec(location.hash);
   map = new LIB.Map({ container: "map", style: styleUrl(), center: R0.center, zoom: 5, minZoom: 2, attributionControl: { compact: true },
     transformRequest: (url) => SS.transformRequest(url), preserveDrawingBuffer: true, maxPitch: 75, dragRotate: true, pitchWithRotate: true });
+  window.SSApp.map = map;
   map.addControl(new LIB.NavigationControl({ showCompass: true, visualizePitch: true }), "top-right");
   map.on("style.load", onStyle);
   map.on("load", () => {
