@@ -74,43 +74,75 @@
   // ------------------------------------------------------------------ regions
   const slugOf = (code) => code.toLowerCase().replace("_ne", "-northeast").replace("_", "-");
   let regionMove = false;
+  // start region (v2): link > a region the visitor picked > the region with the most resorts with snow today
+  // (the time zone no longer decides: a Moroccan visitor saw an empty Atlas map)
   function homeRegion() {
     const h = location.hash.slice(1);
     const fh = DATA.regions.find((r) => slugOf(r.code) === h);
     if (fh) return fh.code;
     const saved = store.get("ss_region");
-    if (saved && DATA.regions.some((r) => r.code === saved)) return saved;
-    let tz = "";
-    try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch { /* old browser */ }
-    const want = /America\/(Los_Angeles|Denver|Boise|Phoenix|Vancouver|Edmonton)/.test(tz) ? "US_WEST"
-      : /America\/(New_York|Toronto|Montreal|Detroit)/.test(tz) ? "US_NE" : /Africa\/Casablanca/.test(tz) ? "ATLAS"
-      : /Europe\/Madrid|Europe\/Andorra/.test(tz) ? "PYRENEES" : "ALPS";
-    return DATA.regions.some((r) => r.code === want) ? want : DATA.regions[0].code;
+    if (saved && store.get("ss_region_pick") && DATA.regions.some((r) => r.code === saved)) return saved;
+    const today = (r) => r.days.find((y) => y.date === DATA.today) || r.days[r.days.length - 1] || {};
+    return DATA.regions.slice().sort((a, b) => (today(b).resorts_with_snow || 0) - (today(a).resorts_with_snow || 0) || (today(b).max_cm || 0) - (today(a).max_cm || 0))[0].code;
   }
   function flyRegion(code, instant) {
     const r = DATA.regions.find((x) => x.code === code);
     if (!r) return;
     st.region = code; st.ski.region = code;
     store.set("ss_region", code);
-    document.querySelectorAll("#regions [data-r]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.r === code));
+    if ($("regName")) $("regName").textContent = r.name;
     if (map) {
       regionMove = true;
       const side = innerWidth > 760 ? 400 + 24 : 0;
-      map.fitBounds([r.coords[3], r.coords[1]], { padding: { top: 120, bottom: innerWidth > 760 ? 90 : 260, left: side + 16, right: 64 }, maxZoom: 7.2, duration: instant ? 0 : 1100, essential: true });
+      // framed on the snow: the resorts with snow today (deepest 12), else the whole region
+      const day = r.days.find((y) => y.date === DATA.today) || r.days[r.days.length - 1] || { top: [] };
+      // the snowiest cluster: resorts with snow within ~150 km of the deepest one (a tight, snowy first view)
+      const all = (day.top || []).slice(0, 12).map((t) => BY[t.slug]).filter(Boolean);
+      const c0 = all[0], pts = c0 ? all.filter((x) => Math.hypot((x.lon - c0.lon) * Math.cos(c0.lat * Math.PI / 180), x.lat - c0.lat) * 111 <= 150) : [];
+      let bb = [r.coords[3], r.coords[1]];
+      if (pts.length >= 2) {
+        const lo = pts.map((x) => x.lon), la = pts.map((x) => x.lat);
+        bb = [[Math.min(...lo) - 0.35, Math.min(...la) - 0.25], [Math.max(...lo) + 0.35, Math.max(...la) + 0.25]];
+      }
+      map.fitBounds(bb, { padding: { top: 90, bottom: innerWidth > 760 ? 150 : 300, left: side + 16, right: 80 }, maxZoom: 8.2, duration: instant ? 0 : 1100, essential: true });
     }
     if (!st.slug) history.replaceState(null, "", location.pathname + "#" + slugOf(code));
     if (!st.slug && (st.tab === "map" || st.tab === "ski" || st.tab === "powder")) renderPanel();
   }
+  // region picker (v2): one "Alps ▾" button in the top bar opens a menu (the chip row is gone)
   function drawRegions() {
-    const box = $("regions");
-    box.innerHTML = DATA.regions.map((r) => '<button class="pill" data-r="' + r.code + '" aria-pressed="' + (r.code === st.region) + '">' + esc(r.name) + "</button>").join("") +
-      ("geolocation" in navigator ? '<button class="pill" data-me><span class="ms" style="font-size:18px">near_me</span> Near me</button>' : "");
-    box.onclick = (e) => {
-      const b = e.target.closest("[data-r]");
-      if (b) { if (st.slug) closeResort(); flyRegion(b.dataset.r); return; }
-      if (e.target.closest("[data-me]")) navigator.geolocation.getCurrentPosition(
-        (p) => map && map.flyTo({ center: [p.coords.longitude, p.coords.latitude], zoom: 9, duration: 1400 }),
-        () => toast("Location not available"), { maximumAge: 6e5, timeout: 10000 });
+    const bar = document.querySelector(".appbar"), brand = bar && bar.querySelector(".brand");
+    let btn = $("regBtn");
+    if (!btn && brand) {
+      brand.insertAdjacentHTML("afterend", '<button class="regbtn" id="regBtn" aria-haspopup="menu" aria-expanded="false"><span class="ms">landscape</span><span class="rn" id="regName"></span><span class="ms">expand_more</span></button>');
+      btn = $("regBtn");
+      btn.onclick = (e) => { e.stopPropagation(); regionMenu(); };
+    }
+    const r = DATA.regions.find((x) => x.code === st.region);
+    if ($("regName")) $("regName").textContent = r ? r.name : "Region";
+    const box = $("regions"); if (box) box.innerHTML = "";
+  }
+  function regionMenu() {
+    const old = $("regMenu"); if (old) { old.remove(); $("regBtn").setAttribute("aria-expanded", "false"); return; }
+    const m = document.createElement("div");
+    m.id = "regMenu"; m.className = "regmenu glass"; m.setAttribute("role", "menu");
+    const today = (r) => r.days.find((y) => y.date === DATA.today) || r.days[r.days.length - 1] || {};
+    m.innerHTML = DATA.regions.map((r) => { const z = today(r);
+      return '<button role="menuitemradio" data-r="' + r.code + '" aria-checked="' + (r.code === st.region) + '"><span class="nm"><b>' + esc(r.name) + "</b><small>" +
+        (z.resorts_with_snow ? esc(I18N.tu("{a} resorts with snow", fmt(z.resorts_with_snow))) : esc(I18N.t("No snow at the resorts yet"))) + "</small></span>" +
+        (z.new_max_cm >= 1 ? '<em class="nw">+' + U.depth(z.new_max_cm) + "</em>" : "") + "</button>"; }).join("") +
+      ("geolocation" in navigator ? '<button role="menuitem" data-me><span class="nm"><b><span class="ms">near_me</span> Near me</b></span></button>' : "");
+    document.body.appendChild(m);
+    const b = $("regBtn").getBoundingClientRect();
+    m.style.top = b.bottom + 8 + "px";
+    if (document.documentElement.dir === "rtl") m.style.right = (innerWidth - b.right) + "px"; else m.style.left = Math.max(8, b.left) + "px";
+    $("regBtn").setAttribute("aria-expanded", "true");
+    const close = (e) => { if (e && m.contains(e.target)) return; m.remove(); $("regBtn").setAttribute("aria-expanded", "false"); document.removeEventListener("click", close, true); };
+    setTimeout(() => document.addEventListener("click", close, true));
+    m.onclick = (e) => {
+      const it = e.target.closest("[data-r]");
+      if (it) { store.set("ss_region_pick", 1); if (st.slug) closeResort(); flyRegion(it.dataset.r); close(); return; }
+      if (e.target.closest("[data-me]")) { close(); navigator.geolocation.getCurrentPosition((p) => map && map.flyTo({ center: [p.coords.longitude, p.coords.latitude], zoom: 9, duration: 1400 }), () => toast("Location not available"), { maximumAge: 6e5, timeout: 10000 }); }
     };
   }
 
@@ -151,7 +183,7 @@
     const dates = proLive() && st.proDates ? st.proDates : Array.from({ length: 9 }, (_, i) => addDays(DATA.today, i - 4));
     box.innerHTML = dates.map((d) => {
       const lk = dayLocked(d);
-      return '<button class="chip' + (lk ? " locked" : "") + '" data-d="' + d + '"' + (lk ? ' aria-disabled="true" aria-label="' + wd(d) + " " + dnum(d) + ', Pro"' : ' aria-pressed="' + (d === st.day) + '"') + ">" +
+      return '<button class="chip' + (lk ? " locked" : "") + (d === DATA.today ? " today" : "") + '" data-d="' + d + '"' + (lk ? ' aria-disabled="true" aria-label="' + wd(d) + " " + dnum(d) + ', Pro"' : ' aria-pressed="' + (d === st.day) + '"') + ">" +
         "<small>" + (d === DATA.today ? "Today" : wd(d)) + "</small>" + dnum(d) + (lk ? '<span class="ms f lk">lock</span>' : "") + "</button>";
     }).join("");
     box.onclick = (e) => {
@@ -286,15 +318,14 @@
     if (mode === "depth") {
       const m = st.scale;
       h = ramp("Snow depth", depthStops(), ticks(live ? [1, 25, 100, 400] : [1, m / 4, m / 2, m])).replace("</b>", ' <span class="chip30" id="chip30" hidden>30 m</span></b>');
-      if (!live) h += '<div class="row2"><div class="mini" role="group" aria-label="Colour scale">' + [100, 200, 400].map((v) => '<button data-scale="' + v + '" aria-pressed="' + (st.scale === v) + '">' + U.depN(v) + " " + U.du() + "</button>").join("") + "</div>";
-      else h += '<div class="row2">';
+      h += '<div class="row2">';            // v2: colour scale + Clear / Sharp live in the layers sheet only
     } else if (mode === "powder") {
       h = ramp(p72on() ? "New snow, 3 days" : "New snow, 24 h", newStops(), ticks(p72on() ? [1, 15, 45, 120] : [1, 10, 30, 80])) + '<div class="row2">';
     } else if (mode === "sat") h = '<b>Latest clear view</b>' + (DATA.regions.find((r) => r.sat) ? '<small class="none" style="padding:0 0 4px;display:block">' + esc(I18N.t("Clear view up to") + " " + D(DATA.regions.find((r) => r.sat).sat.asof).toLocaleDateString(LOC, { day: "numeric", month: "short", timeZone: "UTC" })) + "</small>" : "") + '<div class="sw"><span><i style="background:#F6FAFF"></i>Snow</span><span><i style="background:#A0C4E4"></i>Patchy</span><span><i style="background:#96693E"></i>No snow</span><span><i style="background:#7D7D8A"></i>Cloud</span></div><div class="row2">';
     else if (mode === "wind") h = ramp("Wind at midday", WIND, [0, 20, 50, 100].map((v, i, a) => U.wv(v) + (i === a.length - 1 ? " " + U.wu() : ""))) + '<div class="row2">';
     else if (mode === "freeze") h = ramp("Freezing level", FREEZE, [0, 1500, 3000, 4500].map((v, i, a) => U.ev(v) + (i === a.length - 1 ? " " + U.eu() : ""))) + '<div class="row2">';
     else if (mode === "radar") h = "<b>Rain & snow now</b><div class=\"row2\">";
-    if (h && (mode === "depth" || mode === "powder")) h += '<div class="mini" role="group" aria-label="Look"><button data-sharp="0" aria-pressed="' + !st.sharp + '">Clear</button><button data-sharp="1" aria-pressed="' + st.sharp + '">Sharp</button></div>';
+    // v2: Clear / Sharp only in the layers sheet
     if (h) h += "</div>";
     if (st.over.aval) h += (h ? '<div style="height:7px"></div>' : "") + '<b>Avalanche danger</b><div class="sw">' + [1, 2, 3, 4, 5].map((k) => '<span><i style="background:' + AVAL[k] + '"></i>' + k + "</span>").join("") + "</div>";
     L.innerHTML = h; L.hidden = !h;
@@ -803,14 +834,15 @@
     if (!st.stnHist) loadHist().then(() => { const e = $("stnSpark"); if (e && popup) e.innerHTML = sparkline(i); });
   }
   // the stations in view as a table in the panel (desktop) / bottom sheet (phone): deepest first, a row flies there
-  function stationsHtml() {
+  function stationsHtml(hideEmpty) {
     if (!st.over.stn) return "";
+    if (hideEmpty !== undefined) st.stnHideEmpty = !!hideEmpty;
     if (!st.stations) { loadStations(); return '<div id="stnbox"></div>'; }
     const b = map.getBounds();
     const rows = st.stations.rows.map((r, i) => [r, i]).filter(([r]) => r[0] >= b.getSouth() && r[0] <= b.getNorth() && r[1] >= b.getWest() && r[1] <= b.getEast())
       .sort((a, c) => c[0][4] - a[0][4]);
-    let h = '<div id="stnbox"><div class="sect">Measured snow in view</div>';
-    if (!rows.length) return h + '<p class="none">No measuring station in this view.</p></div>';
+    let h = '<div id="stnbox"><h2 class="h2">Measured snow in view</h2>';
+    if (!rows.length) return st.stnHideEmpty ? '<div id="stnbox"></div>' : h + '<p class="none">No measuring station in this view.</p></div>';
     const t = rows[0][0];
     h += '<div class="stntop"><div><div class="over">Deepest measured</div><b>' + esc(t[2]) + '</b><small>' + (t[3] ? U.elev(t[3]) + " · " : "") + esc(stnTime(t[5])) + "</small></div>" +
       '<span class="val" data-stn="' + rows[0][1] + '"><i class="chip" style="background:' + depthCol(t[4]) + '"></i><b>' + cmS(t[4]) + "</b>" + newChip(t[8]) + "</span></div>" +
@@ -1258,7 +1290,7 @@
     fillDemos();
     bindFolds(box); bindStays(box);
     box.querySelectorAll("[data-open]").forEach((b) => { b.onclick = (e) => { e.preventDefault(); openResort(b.dataset.open); }; });
-    box.querySelectorAll("[data-goregion]").forEach((b) => { b.onclick = () => flyRegion(b.dataset.goregion); });
+    box.querySelectorAll("[data-goregion]").forEach((b) => { b.onclick = () => { store.set("ss_region_pick", 1); flyRegion(b.dataset.goregion); }; });
     bindStations(box);
     if (SS.S.started) SS.Ads.start();
   }
@@ -1278,27 +1310,34 @@
   const resRow = (x, i, v, sub, nw) => '<a class="rrow' + (v ? "" : " dim") + '" href="' + BASE + "resorts/" + encodeURIComponent(x.slug) + '.html" data-open="' + esc(x.slug) + '">' +
     (i != null ? '<span class="rk">' + (i + 1) + "</span>" : "") + '<span class="nm"><b>' + esc(x.short || x.name) + "</b><small>" + esc(sub) + '</small></span><span class="val"><b>' + (v != null ? cmS(v) : "–") + "</b>" + (nw ? "<em>+" + U.dep(nw) + " new</em>" : "") + "</span></a>";
 
+  // v2 home panel: ONE hero (big number + place + date + 7-day fresh-snow bars), a ranked list with visual weight,
+  // compact region chips; empty sections are not shown
   function mapView() {
     const r = DATA.regions.find((x) => x.code === st.region) || DATA.regions[0], x = dayOf(r);
-    const h1 = x.new_max_cm >= 10 ? "Fresh snow in " + the(r.name) + ": up to +" + U.depth(x.new_max_cm)
-      : x.resorts_with_snow ? "Snow at " + fmt(x.resorts_with_snow) + " resorts in " + the(r.name)
-      : x.max_cm >= 1 ? "Snow on the high peaks in " + the(r.name) + ", up to " + U.depth(x.max_cm) : "No snow in " + the(r.name) + " yet";
-    const other = DATA.regions.filter((y) => y.code !== r.code).map((y) => [y, dayOf(y)]).sort((a, b) => b[1].new_max_cm - a[1].new_max_cm)[0];
-    const lede = other && other[1].new_max_cm >= 5 ? '<button data-goregion="' + other[0].code + '">' + esc("Biggest snowfall elsewhere: " + other[0].name + ", +" + U.depth(other[1].new_max_cm) + ".") + "</button>" : "Tap the map for the snow on any slope.";
-    const best = x.top[0];
-    let h = '<div class="over">' + (st.day === DATA.today ? "Snow today" : esc(longDay(st.day))) + "</div><h1>" + esc(h1) + '</h1><p class="lede">' + lede + "</p>" +
-      '<div class="card rc"><div class="stats"><div class="stat"><b>' + fmt(x.resorts_with_snow) + "</b><small>resorts with snow</small></div>" +
-      '<div class="stat"><b>' + (best ? cmS(best.depth_cm) : "–") + "</b><small>deepest resort</small></div>" +
-      '<div class="stat"><b>' + (x.new_max_cm >= 1 ? "+" + cmS(x.new_max_cm) : "–") + "</b><small>new snow</small></div></div></div>" +
-      '<div class="sect">Deepest snow on the upper slopes</div>' + (x.top.length ? x.top.map((t, i) => resRow({ slug: t.slug, short: t.name }, i, t.depth_cm, t.country, t.new_cm)).join("") : '<p class="none">No resort has snow yet.</p>');
-    h += stationsHtml();
+    const best = x.top[0], fresh = x.new_max_cm >= 5;
+    const when = st.day === DATA.today ? I18N.t("Today") : longDay(st.day);
+    const big = fresh ? "+" + cmS(x.new_max_cm) : best ? cmS(best.depth_cm) : cmS(x.max_cm || 0);
+    const what = fresh ? "Fresh snow in " + the(r.name) : best ? "Deepest snow in " + the(r.name) : x.max_cm >= 1 ? "On the high peaks of " + the(r.name) : "No snow in " + the(r.name) + " yet";
+    const where = fresh ? "" : best ? best.name : "";
+    // 7 days of the region's biggest fresh snow (bars), today / the shown day highlighted
+    const ds = r.days.slice(-9), mx = Math.max(5, ...ds.map((y) => y.new_max_cm || 0));
+    const bars = '<div class="hbars" aria-hidden="true">' + ds.map((y) => '<span class="' + (y.date === st.day ? "on" : "") + (y.date > DATA.today ? " fc" : "") + '"><i style="height:' + Math.max(3, Math.round(((y.new_max_cm || 0) / mx) * 44)) + 'px"></i><b>' +
+      (y.new_max_cm >= 1 ? U.dep(y.new_max_cm) : "") + "</b><small>" + (y.date === DATA.today ? esc(I18N.t("Today")) : wd(y.date)) + "</small></span>").join("") + "</div>";
+    let h = '<section class="rhero"><div class="hk">' + esc(when) + " · " + esc(r.name) + '</div><div class="hn">' + big + '</div><div class="hw">' + esc(what) + (where ? ' <span class="hp">' + esc(where) + "</span>" : "") + "</div>" +
+      '<div class="hs"><span><b>' + fmt(x.resorts_with_snow || 0) + "</b> " + esc(I18N.t("resorts with snow")) + "</span>" + (fresh && best ? "<span><b>" + U.depth(best.depth_cm) + "</b> " + esc(I18N.t("deepest")) + "</span>" : "") + "</div>" +
+      '<div class="hc"><div class="hk2">' + esc(I18N.t("Fresh snow, last days and next days")) + "</div>" + bars + "</div></section>";
+    if (x.top.length) {
+      const dmax = Math.max(...x.top.map((t) => t.depth_cm || 0), 1);
+      h += '<h2 class="h2">Deepest snow today</h2><ol class="rank">' + x.top.map((t, i) => '<li><a href="' + BASE + "resorts/" + encodeURIComponent(t.slug) + '.html" data-open="' + esc(t.slug) + '">' +
+        '<span class="rk">' + (i + 1) + '</span><span class="nm"><b>' + esc(t.name) + "</b><small>" + esc(t.country || "") + (t.new_cm >= 1 ? ' · <em class="nw">+' + U.depth(t.new_cm) + "</em>" : "") + "</small>" +
+        '<span class="bar"><i style="width:' + Math.round((t.depth_cm / dmax) * 100) + "%;background:" + depthCol(t.depth_cm) + '"></i></span></span><span class="v">' + cmS(t.depth_cm) + "</span></a></li>").join("") + "</ol>";
+    }
+    h += stationsHtml(true);
     h += adSlot("infeed", best && BY[best.slug]);
-    h += '<div class="sect">Other regions</div>' + DATA.regions.filter((y) => y.code !== r.code).map((y) => {
+    h += '<h2 class="h2">Other regions</h2><div class="regchips">' + DATA.regions.filter((y) => y.code !== r.code).map((y) => {
       const z = dayOf(y);
-      return '<button class="rrow" style="width:100%;border-left:0;border-right:0;border-top:0;background:none;text-align:left" data-goregion="' + y.code + '"><span class="nm"><b>' + esc(y.name) + "</b><small>" +
-        (z.resorts_with_snow ? fmt(z.resorts_with_snow) + " resorts have snow" : "No snow at the resorts yet") + '</small></span><span class="val">' + (z.new_max_cm >= 1 ? "<em>+" + U.depth(z.new_max_cm) + " new</em>" : "") + "</span></button>";
-    }).join("");
-    h += adSlot("banner", best && BY[best.slug]);
+      return '<button data-goregion="' + y.code + '"><b>' + esc(y.name) + "</b><small>" + (z.new_max_cm >= 1 ? "+" + U.depth(z.new_max_cm) : z.resorts_with_snow ? esc(I18N.tu("{a} resorts with snow", fmt(z.resorts_with_snow))) : esc(I18N.t("No snow yet"))) + "</small></button>";
+    }).join("") + "</div>";
     return h + appCard() + footer();
   }
   function appCard() {
@@ -1326,12 +1365,14 @@
     z.innerHTML = '<button data-z="1" aria-label="Zoom in" title="Zoom in"><span class="ms">add</span></button><span class="sep"></span>' +
       '<button data-z="-1" aria-label="Zoom out" title="Zoom out"><span class="ms">remove</span></button>' +
       '<button id="northBtn" aria-label="Reset north" title="Reset north" hidden><span class="ms" id="northIc">navigation</span></button>' +
-      '<button data-me aria-label="Show my position" title="Show my position"><span class="ms">my_location</span></button>';
+      '<button data-me aria-label="Show my position" title="Show my position"><span class="ms">my_location</span></button>' +
+      '<button data-3d aria-pressed="' + !!st.terrain + '" aria-label="3D view" title="3D view (T)"><span class="t3">3D</span></button>';
     $("panel").parentNode.appendChild(z);
     z.onclick = (e) => {
       const b = e.target.closest("button"); if (!b || !map) return;
       if (b.dataset.z) map.easeTo({ zoom: map.getZoom() + +b.dataset.z, duration: 260 });
       else if (b.id === "northBtn") map.easeTo({ bearing: 0, pitch: 0, duration: 500 });
+      else if (b.hasAttribute("data-3d")) { toggleOver("terrain"); b.setAttribute("aria-pressed", !!st.terrain); }
       else if (b.hasAttribute("data-me")) {
         if (!("geolocation" in navigator)) { toast("Location not available"); return; }
         b.classList.add("busy");
@@ -2125,7 +2166,7 @@
     else if (rll) { map.jumpTo({ center: [+rll[2], +rll[1]], zoom: 8.5 }); setMain("powder"); }
     if (r) map.jumpTo({ center: [r.lon, r.lat], zoom: 10 });
     else if (hash) map.jumpTo({ center: [+hash[2], +hash[1]], zoom: +hash[3] });
-    else if (!new URLSearchParams(location.search).get("p") && !new URLSearchParams(location.search).get("r")) flyRegion(st.region, true);
+    else if (!new URLSearchParams(location.search).get("p") && !new URLSearchParams(location.search).get("r")) RES.finally(() => flyRegion(st.region, true));   // framed on the snowy resorts
     map.on("click", onClick);
     map.on("error", (e) => {      // tiles refused (not signed in on a Pro-only server): the static map stays, chip off
       if (e && e.sourceId && String(e.sourceId).startsWith("m_s30_") && !st.s30fail && e.error && [401, 402, 403].includes(e.error.status)) { st.s30fail = true; removeS30(); chip30(); }

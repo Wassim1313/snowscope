@@ -25,7 +25,7 @@
   // ------------------------------------------------------------------ layer rail
   // id = app.js layer id; main = exclusive snow / weather picture; the rest are switches. key = keyboard shortcut.
   const RAIL = [
-    { id: "depth", icon: "ac_unit", label: "Snow depth", key: "1" },
+    { id: "depth", icon: "ac_unit", label: "Snow", key: "1" },
     { id: "powder", icon: "cloudy_snowing", label: "New snow", key: "2" },
     { id: "p72", icon: "weather_snowy", label: "3 days", key: "3" },
     { id: "sat", icon: "satellite_alt", label: "Satellite", key: "4" },
@@ -41,13 +41,16 @@
     { id: "aval", icon: "warning", label: "Avalanche", key: "a" },
     { sep: true },
     { id: "terrain", icon: "landscape", label: "3D", key: "t" },
-    { id: "more", icon: "tune", label: "More", key: "l" },
+    { id: "more", icon: "layers", label: "More", key: "l" },
   ];
+  // v2 (owner: "14 tiny icons"): the rail shows 5 primary layers + More; every other layer (and its keyboard key) lives
+  // in the layers sheet
+  const PRIMARY = ["depth", "powder", "sat", "stn", "pistes", "more"];
   function buildRail() {
     if ($("rail")) return;
     const nav = document.createElement("nav");
     nav.id = "rail"; nav.className = "rail glass"; nav.setAttribute("aria-label", "Map layers");
-    nav.innerHTML = RAIL.map((r) => r.sep ? '<i class="sep"></i>'
+    nav.innerHTML = RAIL.filter((r) => !r.sep && PRIMARY.includes(r.id)).map((r) => r.sep ? '<i class="sep"></i>'
       : '<button class="rb" data-l="' + r.id + '" aria-pressed="false" title="' + esc(r.label) + (r.key ? " (" + r.key.toUpperCase() + ")" : "") + '"><span class="ms">' + r.icon + '</span><span class="rl">' + esc(r.label) + '</span>' +
         (r.pro ? '<span class="ms f lk" aria-label="Pro">lock</span>' : "") + "</button>").join("");
     nav.addEventListener("click", (e) => {
@@ -55,7 +58,9 @@
       if (b.dataset.l === "more") { X.layersSheet(); return; }
       X.toggleOver(b.dataset.l);
     });
-    $("legend").insertAdjacentElement("beforebegin", nav);
+    $("timeline").insertAdjacentElement("beforebegin", nav);
+    // v2: the legend is a slim row inside the timeline card (one chrome less)
+    const lg = $("legend"), tl = $("timeline"); if (lg && tl && lg.parentNode !== tl) tl.insertBefore(lg, tl.firstChild);
   }
   function refresh() {
     if (!X) return;
@@ -94,6 +99,16 @@
     });
     $("play").addEventListener("click", (e) => { e.stopImmediatePropagation(); togglePlay(); });
     if (window.ResizeObserver) new ResizeObserver(() => document.body.style.setProperty("--tl", tl.offsetHeight + "px")).observe(tl);
+    // v2: the day strip itself scrubs (drag across the days); the separate slider row is hidden
+    const dz = $("days");
+    if (dz) {
+      let drag = false;
+      const at = (e) => { const el = document.elementFromPoint(e.clientX, e.clientY); const b = el && el.closest && el.closest("#days [data-d]"); return b && b.getAttribute("aria-disabled") !== "true" ? b.dataset.d : null; };
+      dz.addEventListener("pointerdown", (e) => { if (e.pointerType === "mouse" && e.button !== 0) return; drag = true; stopPlay(); });
+      dz.addEventListener("pointermove", (e) => { if (!drag || (e.pointerType === "mouse" && !e.buttons)) return; const d = at(e); if (d && d !== X.st.day) X.setDay(d); });
+      const end = () => { drag = false; };
+      dz.addEventListener("pointerup", end); dz.addEventListener("pointercancel", end); dz.addEventListener("pointerleave", end);
+    }
   }
   function knobAt(p, label) {
     const ds = dates(), n = ds.length, k = $("knob"), sc = $("scrub");

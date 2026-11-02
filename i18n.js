@@ -60,6 +60,10 @@
     "Show the map": ["Afficher la carte", "Karte anzeigen", "Mostra la mappa", "Mostrar el mapa", "اعرض الخريطة"],
     "Open the full map": ["Ouvrir la carte complète", "Ganze Karte öffnen", "Apri la mappa completa", "Abrir el mapa completo", "افتح الخريطة كاملة"],
     "Places to stay near": ["Logements près de", "Unterkünfte nahe", "Alloggi vicino a", "Alojamiento cerca de", "أماكن إقامة قرب"],
+    "Deepest snow today": ["La neige la plus épaisse aujourd'hui", "Am meisten Schnee heute", "La neve più alta oggi", "La nieve más espesa hoy", "أعمق ثلج اليوم"],
+    "deepest": ["le plus épais", "am meisten", "la più alta", "la más espesa", "الأعمق"],
+    "Fresh snow, last days and next days": ["Neige fraîche, jours passés et à venir", "Neuschnee, letzte und nächste Tage", "Neve fresca, giorni passati e prossimi", "Nieve nueva, días pasados y próximos", "الثلج الجديد، الأيام الماضية والقادمة"],
+    "No snow yet": ["Pas encore de neige", "Noch kein Schnee", "Ancora niente neve", "Aún sin nieve", "لا ثلج بعد"],
     "Where to ski tomorrow": ["Où skier demain", "Wo morgen Ski fahren", "Dove sciare domani", "Dónde esquiar mañana", "أين تتزلج غدًا"],
     "Tomorrow": ["Demain", "Morgen", "Domani", "Mañana", "غدًا"],
     "City or resort": ["Ville ou station", "Stadt oder Skigebiet", "Città o stazione", "Ciudad o estación", "مدينة أو محطة"],
@@ -358,6 +362,10 @@
   };
   // patterns: {a} {b} are kept (numbers, names); a captured value found in T is translated too
   const P = {
+    "{a} resorts with snow": ["{a} stations enneigées", "{a} Skigebiete mit Schnee", "{a} stazioni con neve", "{a} estaciones con nieve", "{a} محطة بها ثلج"],
+    "Fresh snow in {a}": ["Neige fraîche – {a}", "Neuschnee – {a}", "Neve fresca – {a}", "Nieve nueva – {a}", "ثلج جديد في {a}"],
+    "Deepest snow in {a}": ["Neige la plus épaisse – {a}", "Am meisten Schnee – {a}", "Neve più alta – {a}", "Nieve más espesa – {a}", "أعمق ثلج في {a}"],
+    "On the high peaks of {a}": ["Sur les hauts sommets – {a}", "Auf den hohen Gipfeln – {a}", "Sulle vette – {a}", "En las cumbres – {a}", "على القمم العالية في {a}"],
     "Under {a}": ["Moins de {a}", "Unter {a}", "Sotto {a}", "Menos de {a}", "أقل من {a}"],
     "A short flyover of {a} with today's snow": ["Un court survol de {a} avec la neige du jour", "Ein kurzer Flug über {a} mit dem Schnee von heute", "Un breve sorvolo di {a} con la neve di oggi", "Un breve vuelo sobre {a} con la nieve de hoy", "تحليق قصير فوق {a} مع ثلج اليوم"],
     "Deeper than {a} of 10 past winters on this date.": ["Plus épais que {a} hivers passés sur 10 à cette date.", "Mehr als in {a} von 10 früheren Wintern an diesem Tag.", "Più alta di {a} inverni passati su 10 in questa data.", "Más espesa que en {a} de cada 10 inviernos pasados en esta fecha.", "أعمق من {a} من كل 10 شتاءات سابقة في هذا التاريخ."],
