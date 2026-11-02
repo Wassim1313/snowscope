@@ -1052,7 +1052,9 @@
       } else if (sy) {
         st.style = sy.dataset.style; store.set("ss_style", st.style);
         m.el.querySelectorAll("[data-style]").forEach((b) => b.setAttribute("aria-pressed", b === sy));
-        map.setStyle(styleUrl());
+        // full reload: MapLibre 4 diffs by default, which drops every source / layer we added without firing
+        // style.load (pistes, stations, snow gone after a basemap switch); onStyle re-adds everything on style.load
+        map.setStyle(styleUrl(), { diff: false });
       }
     });
   }
