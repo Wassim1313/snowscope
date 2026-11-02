@@ -1,162 +1,68 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-root="">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Snow Today · SnowScope</title>
-<meta name="description" content="Snow depth today in the Alps, Pyrenees, Scandinavia, the US and the Atlas, updated every day.">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#f6f7f9;--card:#fff;--ink:#0f1720;--mute:#5b6675;--line:#e3e7ec;--accent:#2171b5;--chip:#eef3f8}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1117;--card:#161b22;--ink:#e6edf3;--mute:#9aa6b2;--line:#2a313a;--accent:#6baed6;--chip:#1f2630}}
-:root[data-theme="dark"]{--bg:#0d1117;--card:#161b22;--ink:#e6edf3;--mute:#9aa6b2;--line:#2a313a;--accent:#6baed6;--chip:#1f2630}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 Inter,system-ui,sans-serif}
-header{max-width:1180px;margin:0 auto;padding:20px 16px 8px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;justify-content:space-between}
-h1{font-size:26px;margin:0;font-weight:700;letter-spacing:-.01em}
-.sub{color:var(--mute);font-size:14px}
-main{max-width:1180px;margin:0 auto;padding:0 16px 32px}
-.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:10px 0 12px}
-.days{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin;max-width:100%}
-.day{flex:0 0 auto;min-width:58px;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:6px 8px;font:inherit;font-size:13px;cursor:pointer;text-align:center}
-.day small{display:block;color:var(--mute);font-size:11px}
-.day[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
-.day[aria-pressed="true"] small{color:var(--bg);opacity:.75}
-#map{height:min(62vh,560px);border-radius:14px;overflow:hidden;border:1px solid var(--line)}
-.legend{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--mute);margin:8px 2px 18px;flex-wrap:wrap}
-.ramp{display:flex;height:10px;border-radius:5px;overflow:hidden;width:260px;max-width:60vw}
-.ramp i{flex:1}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 14px 10px;cursor:pointer}
-.card:hover{border-color:var(--accent)}
-.card h2{font-size:16px;margin:0 0 8px;display:flex;justify-content:space-between;gap:8px}
-.card h2 span{font-weight:500;font-size:12px;color:var(--mute);background:var(--chip);border-radius:20px;padding:2px 8px;white-space:nowrap}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:8px}
-.stat b{display:block;font-size:20px;font-variant-numeric:tabular-nums}
-.stat small{color:var(--mute);font-size:11.5px}
-table{width:100%;border-collapse:collapse;font-size:13px}
-td{padding:4px 0;border-top:1px solid var(--line)}
-td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-td.nm{max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.none{color:var(--mute);font-size:13px;padding:6px 0}
-.cta{display:inline-block;margin-top:22px;background:var(--ink);color:var(--bg);text-decoration:none;padding:10px 16px;border-radius:10px;font-weight:600}
-.maplibregl-popup-content{font:13px/1.4 Inter,system-ui,sans-serif;padding:10px 12px;border-radius:10px;color:#0f1720}
-.pv b{font-size:20px;display:block}.pv small{color:#5b6675}
-footer{color:var(--mute);font-size:12px;margin-top:22px;line-height:1.6}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SnowScope · Snow depth today in the Alps, Pyrenees, Scandinavia and North America</title>
+<meta name="description" content="Where the snow is today: a daily snow-depth map of the Alps, Pyrenees, Scandinavia, the US, Canada and the Atlas, with the deepest ski resorts, new snow and places to stay.">
+<link rel="canonical" href="https://wassim1313.github.io/snowscope/snow-today/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowScope">
+<meta property="og:title" content="SnowScope · Where the snow is today">
+<meta property="og:description" content="Daily snow-depth map and the deepest ski resorts in the Alps, Pyrenees, Scandinavia and North America.">
+<meta property="og:url" content="https://wassim1313.github.io/snowscope/snow-today/">
+<meta property="og:image" content="https://wassim1313.github.io/snowscope/snow-today/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F4F6F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0F17" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../static/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..750&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
+<link rel="preload" href="data.json" as="fetch" crossorigin>
+<link rel="stylesheet" href="site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"SnowScope","url":"https://wassim1313.github.io/snowscope/snow-today/","potentialAction":{"@type":"SearchAction","target":"https://wassim1313.github.io/snowscope/snow-today/resorts/?q={q}","query-input":"required name=q"}}</script>
 </head>
 <body>
-<header>
-  <h1>Snow today</h1>
-  <div class="sub" id="upd">Loading…</div>
-</header>
-<main>
-  <div class="bar"><div class="days" id="days" role="group" aria-label="Day"></div></div>
-  <div id="map" role="region" aria-label="Snow depth map"></div>
-  <div class="legend" id="legend"></div>
-  <div class="grid" id="cards"></div>
-  <a class="cta" href="../download/">Get SnowScope for Android</a>
-  <footer id="foot"></footer>
+<a class="skip" href="#map">Skip to the map</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><img src="../static/icon.svg" alt="" width="30" height="30">SnowScope</a>
+  <div class="find" role="search"><span class="ms">search</span><input type="search" placeholder="Find a ski resort" aria-label="Find a ski resort" autocomplete="off"><ul hidden></ul></div>
+  <button class="btn tonal only-s" data-find-open aria-label="Find a ski resort" style="margin-left:auto;padding:0 10px"><span class="ms">search</span></button>
+  <div class="acct" id="acct"></div>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <div><div class="over">Snow today</div><h1>Fresh snow in US West: up to +61 cm</h1>
+      <p class="lede">Deepest today: Kendall Mountain Recreation Area, 101 cm. Tap the map for the snow on any slope.</p></div>
+    <div class="updated" id="upd"></div>
+  </section>
+  <div class="pills" id="regions" role="group" aria-label="Region"></div>
+  <div class="mapbox">
+    <div id="map" role="region" aria-label="Snow map. The region cards below list the same values."></div>
+    <button class="mapbtn layers" id="layersBtn" aria-haspopup="dialog"><span class="ms">layers</span>Layers</button>
+    <div class="legend" id="legend"></div>
+    <div class="toast" id="toast" hidden></div>
+  </div>
+  <div class="days" id="days" role="group" aria-label="Day"></div>
+  <aside class="ad" data-ad="banner" aria-label="Advertisement" hidden></aside>
+
+  <div class="sect-h"><h2>Deepest snow today</h2><a href="resorts/">All resorts →</a></div>
+  <div class="grid" id="cardsA"></div>
+  <aside class="ad infeed" data-ad="infeed" aria-label="Advertisement" hidden></aside>
+  <div class="grid" id="cardsB"></div>
+
+  <section class="appcta">
+    <div><div class="over" style="color:#9FB3CC">The app</div><h2>Every slope, every day.</h2><p>The sharpest snow map, powder alerts and Peak finder in your pocket.</p></div>
+    <a class="btn big" data-app-link href="../download/"><span class="ms f">android</span>Get the app</a>
+  </section>
+  <footer class="foot">
+    <nav><a href="resorts/">All resorts</a><a href="sources.html">About &amp; sources</a><a href="account.html">Your account</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="../delete/">Delete your data</a><a href="#" data-ad-choices hidden>Cookie settings</a></nav>
+    © 2026 SnowScope · Atlas Labs
+  </footer>
 </main>
-<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
-<script>
-const fmt = n => n.toLocaleString('en-US');
-const dayLabel = d => new Date(d + 'T12:00:00Z').toLocaleDateString('en-GB', {weekday: 'short', day: 'numeric', timeZone: 'UTC'});
-let DATA, cur, map;
-
-fetch('data.json?v=' + Date.now()).then(r => r.json()).then(d => { DATA = d; init(); })
-  .catch(() => { document.getElementById('upd').textContent = 'Could not load today’s snow. Try again later.'; });
-
-function init() {
-  cur = DATA.dates.includes(DATA.today) ? DATA.today : DATA.dates[DATA.dates.length - 1];
-  document.getElementById('upd').textContent = 'Updated ' + DATA.built_utc.replace('T', ' ').replace('Z', ' UTC');
-  const box = document.getElementById('days');
-  for (const d of DATA.dates) {
-    const b = document.createElement('button');
-    b.className = 'day'; b.dataset.d = d;
-    b.innerHTML = (d === DATA.today ? 'Today' : dayLabel(d)) + '<small>' + (d < DATA.today ? 'past' : d === DATA.today ? dayLabel(d) : 'forecast') + '</small>';
-    b.onclick = () => setDay(d);
-    box.appendChild(b);
-  }
-  const st = DATA.ramp, leg = document.getElementById('legend');
-  leg.innerHTML = 'Snow depth <span>1 cm</span><div class="ramp">' +
-    st.map(s => '<i style="background:rgb(' + s[1].join(',') + ')"></i>').join('') + '</div><span>4 m+</span>';
-  document.getElementById('foot').innerHTML = 'Modelled snow depth on a 5 km grid; resort values are the grid cell around the resort. ' +
-    'Contains modified Copernicus Climate Change Service information. Map © OpenFreeMap, © OpenMapTiles, data © OpenStreetMap contributors.';
-  map = new maplibregl.Map({container: 'map', style: 'https://tiles.openfreemap.org/styles/positron',
-    center: [6, 40], zoom: 2.3, attributionControl: {compact: true}, cooperativeGestures: false});
-  map.addControl(new maplibregl.NavigationControl({showCompass: false}));
-  map.on('load', () => {
-    for (const r of DATA.regions) {
-      const d = r.days.find(x => x.date === cur) || r.days[0];
-      map.addSource('s_' + r.code, {type: 'image', url: d.img, coordinates: r.coords});
-      map.addLayer({id: 'l_' + r.code, type: 'raster', source: 's_' + r.code, paint: {'raster-opacity': .9, 'raster-resampling': 'linear'}});
-    }
-    const b = new maplibregl.LngLatBounds();
-    DATA.regions.forEach(r => r.coords.forEach(c => b.extend(c)));
-    map.fitBounds(b, {padding: 24, duration: 0});
-    map.on('click', e => showValue(e.lngLat));
-    map.getCanvas().style.cursor = 'crosshair';
-  });
-  setDay(cur);
-}
-
-
-const VALS = {};
-async function loadVals(r) {
-  if (!VALS[r.code]) VALS[r.code] = fetch(r.vals + '?v=' + DATA.built_utc).then(res => {
-    const ds = res.body.pipeThrough(new DecompressionStream('deflate'));
-    return new Response(ds).arrayBuffer();
-  }).then(b => new Uint16Array(b));
-  return VALS[r.code];
-}
-let popup;
-async function showValue(ll) {
-  const r = DATA.regions.find(r => { const L = r.lattice;
-    return ll.lng >= L.west && ll.lng < L.west + L.nx * L.dlon && ll.lat <= L.north && ll.lat > L.north - L.ny * L.dlat; });
-  if (popup) popup.remove();
-  popup = new maplibregl.Popup({closeButton: true, maxWidth: '240px'}).setLngLat(ll);
-  if (!r) { popup.setHTML('<small>No snow data here.</small>').addTo(map); return; }
-  popup.setHTML('<small>Loading…</small>').addTo(map);
-  const L = r.lattice, v = await loadVals(r);
-  const row = Math.floor((L.north - ll.lat) / L.dlat), col = Math.floor((ll.lng - L.west) / L.dlon);
-  const di = r.days.findIndex(x => x.date === cur);
-  const at = k => v[((di * 2 + k) * L.ny + row) * L.nx + col];
-  const dep = at(0), nw = at(1);
-  const when = cur === DATA.today ? 'Today' : dayLabel(cur) + (cur > DATA.today ? ' (forecast)' : '');
-  if (di < 0 || dep === 65535) { popup.setHTML('<small>' + r.name + '</small><br>No snow data for this spot.'); return; }
-  popup.setHTML('<div class="pv"><small>' + r.name + ' · ' + when + '</small>' +
-    '<b>' + (dep >= 1 ? dep + ' cm' : 'No snow') + '</b>' +
-    (nw >= 1 ? '<small>+' + nw + ' cm new snow that day</small><br>' : '') +
-    '<small>' + ll.lat.toFixed(3) + ', ' + ll.lng.toFixed(3) + ' · 5 km average</small></div>');
-}
-
-function setDay(d) {
-  cur = d; if (popup) popup.remove();
-  document.querySelectorAll('.day').forEach(b => b.setAttribute('aria-pressed', b.dataset.d === d));
-  if (map && map.loaded()) for (const r of DATA.regions) {
-    const x = r.days.find(y => y.date === d); const s = map.getSource('s_' + r.code);
-    if (x && s) s.updateImage({url: x.img, coordinates: r.coords});
-  }
-  const cards = document.getElementById('cards'); cards.innerHTML = '';
-  for (const r of DATA.regions) {
-    const x = r.days.find(y => y.date === d);
-    if (!x) continue;
-    const c = document.createElement('div'); c.className = 'card';
-    c.onclick = () => map.fitBounds([r.coords[3], r.coords[1]], {padding: 20});
-    const rows = x.top.length ? '<table>' + x.top.map(t =>
-      '<tr><td class="nm" title="' + t.name + '">' + t.name + ' <span style="color:var(--mute)">' + t.country + '</span></td>' +
-      '<td class="n">' + t.depth_cm + ' cm' + (t.new_cm >= 1 ? ' · +' + t.new_cm : '') + '</td></tr>').join('') + '</table>'
-      : '<div class="none">No resort has snow yet.</div>';
-    c.innerHTML = '<h2>' + r.name + '<span>' + x.resorts_with_snow + ' / ' + r.n_resorts + ' resorts with snow</span></h2>' +
-      '<div class="stats"><div class="stat"><b>' + fmt(x.snow_km2) + '</b><small>km² of snow</small></div>' +
-      '<div class="stat"><b>' + x.mean_cm + ' cm</b><small>average depth</small></div>' +
-      '<div class="stat"><b>' + (x.new_max_cm >= 1 ? '+' + x.new_max_cm + ' cm' : '—') + '</b><small>most new snow</small></div></div>' + rows;
-    cards.appendChild(c);
-  }
-}
-</script>
+<script src="core.js"></script>
+<script src="map.js"></script>
 </body>
 </html>
