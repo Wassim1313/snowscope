@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" data-root="" data-noads="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pricing · SnowScope Free and Pro</title>
+<meta name="description" content="SnowScope is free with ads. Pro: €29.99 / $29.99 a year (first 3 days for €1 / $1), €4.99 / $4.99 a month. Remove ads: €0.99 / $0.99 once.">
+<link rel="canonical" href="https://snowscope.app/pricing.html">
+<link rel="icon" href="logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..750&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
+<link rel="stylesheet" href="site.css">
+<style>
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px}
+.plans .card{margin:0;display:flex;flex-direction:column;gap:6px}
+.plans h2{font-size:17px;margin:0}.plans .price{font-size:26px;font-weight:700;letter-spacing:-.01em}
+.plans .price small{font-size:14px;font-weight:500;color:var(--ink2)}.plans p{margin:0;color:var(--ink2);font-size:14px}
+.plans .btn{margin-top:auto}
+.cmp{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
+.cmp th,.cmp td{padding:9px 8px;border-bottom:1px solid var(--outline);text-align:start}
+.cmp td.c,.cmp th.c{text-align:center;width:72px}.cmp .y{color:var(--good);font-weight:700}.cmp .n{color:var(--ink2)}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><img src="logo.svg" alt="" width="30" height="30">SnowScope</a>
+  <button class="btn icon langbtn" data-lang aria-label="Language"><span class="ms">language</span></button>
+  <div class="acct" id="acct" style="margin-left:auto"></div>
+</div></header>
+<main class="wrap" style="max-width:860px">
+  <div class="crumbs"><a href="./">Snow today</a> › Pricing</div>
+  <h1 style="margin-top:8px">Pricing</h1>
+  <p class="lede">SnowScope is free, with ads. Pro adds the sharpest snow map, more days and more layers, without ads. One account for the website and the Android app: what you buy here works in both.</p>
+
+  <div class="plans">
+    <div class="card"><h2>Free</h2><div class="price">€0 <small>/ $0</small></div>
+      <p>Snow map and resort snow for today and two days either side, with ads.</p>
+      <a class="btn ghost" href="./">Open the snow map</a></div>
+    <div class="card"><h2>Pro yearly</h2><div class="price">€29.99 <small>/ $29.99 a year</small></div>
+      <p><b>New to Pro: first 3 days for €1 / $1.</b> Then €29.99 / $29.99 a year, renewing every year until you cancel. Cancel before the 3 days end and the yearly price is never charged.</p>
+      <button class="btn ski" data-buy-pro>Get Pro</button></div>
+    <div class="card"><h2>Pro monthly</h2><div class="price">€4.99 <small>/ $4.99 a month</small></div>
+      <p>Renews every month until you cancel. Cancel any time: Pro stays until the end of the month you paid for.</p>
+      <button class="btn tonal" data-buy-pro>Get Pro</button></div>
+    <div class="card"><h2>Remove ads</h2><div class="price">€0.99 <small>/ $0.99 once</small></div>
+      <p>One payment, no ads for good. Does not include the Pro features.</p>
+      <button class="btn tonal" data-buy-pro>Remove ads</button></div>
+  </div>
+
+  <div class="card" style="margin-top:12px">
+    <h2 style="font-size:17px;margin:0 0 6px">Skiing in Morocco? Pro for life, the price of a coffee</h2>
+    <p>Visitors in Morocco get SnowScope Pro for life with one payment of about 10 MAD ($1.09), instead of the subscriptions. Offered only to visitors in Morocco.</p>
+  </div>
+
+  <div class="card" style="margin-top:12px">
+    <h2 style="font-size:17px;margin:0 0 6px">What you get</h2>
+    <table class="cmp">
+      <thead><tr><th>Feature</th><th class="c">Free</th><th class="c">Pro</th></tr></thead>
+      <tbody>
+        <tr><td>Snow depth map, deepest resorts, resort pages</td><td class="c y">✓</td><td class="c y">✓</td></tr>
+        <tr><td>Days on the map</td><td class="c">5</td><td class="c">15</td></tr>
+        <tr><td>Sharper snow map</td><td class="c n">–</td><td class="c y">✓</td></tr>
+        <tr><td>Powder on every day, new snow over 3 days</td><td class="c n">–</td><td class="c y">✓</td></tr>
+        <tr><td>Wind and freezing level</td><td class="c n">–</td><td class="c y">✓</td></tr>
+        <tr><td>Satellite snow</td><td class="c n">–</td><td class="c y">✓</td></tr>
+        <tr><td>7-day resort forecast and past winters</td><td class="c n">–</td><td class="c y">✓</td></tr>
+        <tr><td>No ads</td><td class="c n">–</td><td class="c y">✓</td></tr>
+        <tr><td>Same account in the Android app</td><td class="c y">✓</td><td class="c y">✓</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card" style="margin-top:12px">
+    <h2 style="font-size:17px;margin:0 0 6px">Payments</h2>
+    <p>Payments are processed by Paddle.com, our online reseller and Merchant of Record for all our orders. Paddle handles payment questions, receipts and refunds. Prices include tax where it applies; customers outside the euro area pay in US dollars.</p>
+    <p>Refund within 14 days of any payment, cancel any time: see <a href="refund.html">Refunds and cancelling</a>. Purchases made in the Android app go through Google Play instead.</p>
+    <p><a href="terms/">Terms of use</a> · <a href="privacy/">Privacy policy</a> · <a href="refund.html">Refund policy</a></p>
+  </div>
+  <footer class="foot"><nav><a href="./">Snow today</a><a href="pricing.html">Pricing</a><a href="terms/">Terms</a><a href="privacy/">Privacy</a><a href="refund.html">Refund</a></nav><p>Help: <a href="mailto:support@snowscope.app">support@snowscope.app</a> · Business and press: <a href="mailto:contact@snowscope.app">contact@snowscope.app</a> · Privacy requests: <a href="mailto:privacy@snowscope.app">privacy@snowscope.app</a></p>© 2026 SnowScope · Atlas Labs</footer>
+</main>
+<script src="i18n.js"></script>
+<script src="core.js"></script>
+<script>SS.start();</script>
+</body>
+</html>
