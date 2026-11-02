@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://charges-ideal-displays-robust.trycloudflare.com";
+window.SNOWSCOPE_API = "https://scope-lay-jewel-code.trycloudflare.com";
