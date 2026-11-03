@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://rehabilitation-quantum-left-canyon.trycloudflare.com";
+window.SNOWSCOPE_API = "https://compensation-systems-gig-apparent.trycloudflare.com";
