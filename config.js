@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://taught-badge-percentage-lottery.trycloudflare.com";
+window.SNOWSCOPE_API = "https://disc-walnut-penn-temp.trycloudflare.com";
