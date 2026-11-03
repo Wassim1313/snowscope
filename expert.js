@@ -45,7 +45,7 @@
   ];
   // v2 (owner: "14 tiny icons"): the rail shows 5 primary layers + More; every other layer (and its keyboard key) lives
   // in the layers sheet
-  const PRIMARY = ["depth", "powder", "sat", "stn", "pistes", "more"];
+  const PRIMARY = ["depth", "powder", "radar", "sat", "stn", "pistes", "more"];   // v3: + open radar (LIVE-DATA)
   function buildRail() {
     if ($("rail")) return;
     const nav = document.createElement("nav");

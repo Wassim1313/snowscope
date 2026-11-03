@@ -334,7 +334,8 @@
     } else if (mode === "sat") h = '<b>Latest clear view</b>' + (DATA.regions.find((r) => r.sat) ? '<small class="none" style="padding:0 0 4px;display:block">' + esc(I18N.t("Clear view up to") + " " + D(DATA.regions.find((r) => r.sat).sat.asof).toLocaleDateString(LOC, { day: "numeric", month: "short", timeZone: "UTC" })) + "</small>" : "") + '<div class="sw"><span><i style="background:#F6FAFF"></i>Snow</span><span><i style="background:#A0C4E4"></i>Patchy</span><span><i style="background:#96693E"></i>No snow</span><span><i style="background:#7D7D8A"></i>Cloud</span></div><div class="row2">';
     else if (mode === "wind") h = ramp("Wind at midday", WIND, [0, 20, 50, 100].map((v, i, a) => U.wv(v) + (i === a.length - 1 ? " " + U.wu() : ""))) + '<div class="row2">';
     else if (mode === "freeze") h = ramp("Freezing level", FREEZE, [0, 1500, 3000, 4500].map((v, i, a) => U.ev(v) + (i === a.length - 1 ? " " + U.eu() : ""))) + '<div class="row2">';
-    else if (mode === "radar") h = "<b>Rain & snow now</b><div class=\"row2\">";
+    else if (mode === "radar") h = st.radarCol ? '<b>Rain & snow now</b><div class="ramp">' + st.radarCol.map((c) => '<i style="background:rgb(' + c.rgba.slice(0, 3).join(",") + ')"></i>').join("") +
+      '</div><div class="ramp-l"><span>' + esc(I18N.t("Light rain or snow")) + "</span><span>" + esc(I18N.t("Heavy")) + '</span></div><div class="row2">' : "<b>Rain & snow now</b><div class=\"row2\">";
     // v2: Clear / Sharp only in the layers sheet
     if (h) h += "</div>";
     if (st.over.aval) h += (h ? '<div style="height:7px"></div>' : "") + '<b>Avalanche danger</b><div class="sw">' + [1, 2, 3, 4, 5].map((k) => '<span><i style="background:' + AVAL[k] + '"></i>' + k + "</span>").join("") + "</div>";
@@ -572,26 +573,46 @@
     ctx.putImageData(im, 0, 0);
     return { cv, coords: [[W, N], [E, N], [E, S], [W, S]] };
   }
+  // open radar (LIVE-DATA 2026-11-03, /v1/radar/open): NOAA NEXRAD over the US + EUMETNET OPERA over Europe, frames
+  // aligned from the newest (frame k = each network's k-th newest picture), one tile layer per network and frame,
+  // shown by opacity; RainViewer (/v1/radar/frames) only when the open radar is not available
   async function renderRadar() {
     try {
-      const r = await SS.api("/v1/radar/frames", { auth: false });
-      if (!r.available || !r.frames || !r.frames.length) { st.radar = false; toast("Radar is not available right now"); return; }
+      let frames = null, meta = null;
+      try {
+        const o = await SS.api("/v1/radar/open", { auth: false, timeout: 15000 });
+        const ls = o && o.available ? (o.layers || []).filter((l) => l.frames && l.frames.length) : [];
+        if (o && o.colours && o.colours.length) { st.radarCol = o.colours; drawLegend(); }
+        if (ls.length) {
+          const n = Math.min(8, ...ls.map((l) => l.frames.length));
+          const abs = (t) => (/^https?:/.test(t) ? t : SS.S.api + t);
+          frames = Array.from({ length: n }, (_, k) => {
+            const parts = ls.map((l) => ({ id: l.id, f: l.frames[l.frames.length - n + k], bbox: l.bbox, max: l.max_zoom || 9, ts: l.tile_size || 256 }));
+            return { time: Math.max(...parts.map((p) => p.f.time)), parts: parts.map((p) => ({ id: p.id, tiles: abs(p.f.tiles), bounds: p.bbox, srcMax: p.max, tileSize: p.ts })) };
+          });
+        }
+      } catch { frames = null; }
+      if (!frames) {
+        const r = await SS.api("/v1/radar/frames", { auth: false });
+        if (r.available && r.frames && r.frames.length) { meta = { tileSize: r.tile_size || 256, srcMax: r.max_zoom || 7 }; frames = r.frames.slice(-8).map((f) => ({ time: f.time, parts: [{ id: "rv", tiles: f.tiles, ...meta }] })); }
+      }
+      if (!frames || !frames.length) { st.radar = false; toast("Radar is not available right now"); return; }
       st.radar = true;
       if (st.main !== "radar") return;
-      st.radarFrames = r.frames.slice(-8); st.radarMeta = { tileSize: r.tile_size || 256, srcMax: r.max_zoom || 7 };
+      st.radarFrames = frames;
       st.frame = st.radarFrames.length - 1;
       radarFrame(st.frame);
       if (window.SSX) SSX.onDay();
-    } catch { toast("Radar is updating, try again in a minute."); }
+    } catch { toast(I18N.t("Couldn't load the radar.")); }
   }
-  function radarFrame(i) {              // the last ~2 h of radar, one tile layer per frame, shown by opacity
+  function radarFrame(i) {              // the last ~1-2 h of radar, shown by opacity (neighbours preloaded)
     if (!st.radarFrames || st.main !== "radar") return;
     st.frame = i;
-    st.radarFrames.forEach((f, k) => {
-      const id = "m_radar_" + k;
-      if (!map.getLayer(id) && (k === i || Math.abs(k - i) <= 1)) addRaster(id, f.tiles, { ...st.radarMeta, opacity: k === i ? 0.7 : 0, attribution: "RainViewer" });
+    st.radarFrames.forEach((f, k) => f.parts.forEach((p) => {
+      const id = "m_radar_" + k + "_" + p.id;
+      if (!map.getLayer(id) && (k === i || Math.abs(k - i) <= 1)) addRaster(id, p.tiles, { tileSize: p.tileSize, srcMax: p.srcMax, bounds: p.bounds, opacity: k === i ? 0.7 : 0 });
       if (map.getLayer(id)) map.setPaintProperty(id, "raster-opacity", k === i ? 0.7 : 0);
-    });
+    }));
   }
 
   // ------------------------------------------------------------------ overlays (pistes, avalanche, resort pins)
@@ -1549,6 +1570,7 @@
         strip7(res, top) + measuredHtml(top.lat, top.lon, top.top_m || null, false) +
         (staysOn() ? '<button class="rowlink stayrow" data-openstays="' + esc(top.slug) + '" data-via="powder"><span class="ms">hotel</span><span><b>' + esc(I18N.tu("Places to stay near {a}", top.short)) + "</b><small>" +
           esc(D(st.day > DATA.today ? st.day : DATA.today).toLocaleDateString(LOC, { weekday: "long", day: "numeric", month: "short", timeZone: "UTC" })) + ' · <span class="partner">' + esc(I18N.t("Partner")) + '</span></small></span><span class="ms">chevron_right</span></button>' : "") +
+        '<button class="rowlink alertrow" data-alert="' + esc(top.slug) + '"><span class="ms">notifications_active</span><span><b>' + esc(I18N.t("Get a powder alert")) + "</b><small>" + esc(I18N.tu("An e-mail when {a} gets fresh snow overnight.", top.short)) + '</small></span><span class="ms">chevron_right</span></button>' +
         '<div class="acts3"><button class="btn ink" data-open="' + esc(top.slug) + '"><span class="ms">info</span>Details</button><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + top.lat + "," + top.lon + '"><span class="ms">directions_car</span>Directions</a>' +
         '<button class="btn tonal" data-share="' + esc(top.slug) + '" data-sd="' + DATA.today + '"><span class="ms">share</span>Share</button></div></article>';
     }
@@ -1612,6 +1634,7 @@
     const sb = e.target.closest("[data-storm]");
     if (sb) stormPost(DATA.storms[+sb.dataset.storm]);
     if (e.target.closest("[data-viewpost]")) viewPost();
+    const al = e.target.closest("[data-alert]"); if (al) alertSheet(al.dataset.alert);
     const pp = e.target.closest("[data-propost]");
     if (pp) proPost(pp.dataset.propost);
   });
@@ -2483,6 +2506,12 @@
       '<a class="rowlink" href="' + BASE + "studio.html?slug=" + encodeURIComponent(slug) + '"><span class="ms">movie</span><span><b>Create a 3D video</b><small>A short flyover of ' + esc(x.short) + ' with today\'s snow</small></span><span class="ms">chevron_right</span></a>');
     const hb = box.querySelector(".hero2");
     if (hb) { hb.insertAdjacentHTML("afterend", '<div class="seasonrow" id="rSeason"><span class="ms">event</span><span class="tx"><span class="skel" style="display:block;height:16px;width:60%"></span></span></div>'); seasonRow(slug); }
+    // LIVE-DATA (2026-11-03): new-snow totals right under the hero, the powder-alert button, lifts / webcams only with data
+    if (hb) { hb.insertAdjacentHTML("afterend", '<div id="rFall"><div class="skel" style="height:132px;margin:0 0 8px"></div></div>'); snowfallRow(x); }
+    const ra = box.querySelector(".acts3");
+    if (ra) ra.insertAdjacentHTML("afterend", '<button class="rowlink alertrow" data-alert="' + esc(slug) + '"><span class="ms">notifications_active</span><span><b>' + esc(I18N.t("Get a powder alert")) +
+      "</b><small>" + esc(I18N.t("An e-mail when fresh snow falls here")) + '</small></span><span class="ms">chevron_right</span></button><div id="rLive"></div>');
+    liveRows(x);
     const gs = box.querySelector("[data-gostays]");
     if (gs) gs.onclick = () => { const d = box.querySelector("details.stays"); if (d) { d.open = true; d.scrollIntoView({ behavior: "smooth", block: "start" }); } };
     afterRender();
@@ -2504,6 +2533,77 @@
   // Season row: the opening / closing dates with their source; when unknown or old, "Check opening dates" asks the
   // server to research them on the web (progress/data_requests.md, season research contract) and polls the job
   const fmtD = (iso) => (iso ? D(iso.slice(0, 10)).toLocaleDateString(LOC, { day: "numeric", month: "short", timeZone: "UTC" }) : "");
+  // ---- new-snow totals (CONTRACT live data, /v1/resorts/{id}/snowfall): Base / Mid / Top x last | next 24 h, 48 h, 7 days,
+  // big numbers, a dot when measured; no source names (owner rule)
+  async function snowfallRow(x) {
+    let sf = null;
+    try { sf = await SS.api("/v1/resorts/" + encodeURIComponent(x.slug) + "/snowfall", { auth: false, timeout: 15000 }); } catch { sf = null; }
+    const box = $("rFall"); if (!box || st.slug !== x.slug) return;
+    const L = sf && sf.levels, lv = L ? ["base", "mid", "top"].filter((k) => L[k]) : [];
+    if (!lv.length) { box.innerHTML = ""; return; }
+    const NM = { base: "Base", mid: "Mid", top: "Top" };
+    const cell = (q) => { if (!q || q.cm == null) return "<td>–</td>"; const v = Math.round(q.cm); return "<td>" + (v >= 1 ? "<b>" + U.dep(v) + "</b>" : '<span class="z">0</span>') + (q.kind === "measured" ? '<i class="mdot" title="' + esc(I18N.t("measured")) + '"></i>' : "") + "</td>"; };
+    const rows = (pre) => [["24h", "24 h"], ["48h", "48 h"], ["7d", "7 days"]].map(([k, lab]) => "<tr><th>" + esc(I18N.t(lab)) + "</th>" + lv.map((l) => cell(L[l].windows && L[l].windows[pre + "_" + k])).join("") + "</tr>").join("");
+    const nextSum = lv.reduce((a, l) => a + ((L[l].windows && L[l].windows.next_7d && L[l].windows.next_7d.cm) || 0), 0), pastSum = lv.reduce((a, l) => a + ((L[l].windows && L[l].windows.past_7d && L[l].windows.past_7d.cm) || 0), 0);
+    let mode = pastSum < 1 && nextSum >= 1 ? "next" : "past";
+    const meas = lv.some((l) => L[l].windows && Object.values(L[l].windows).some((w) => w && w.kind === "measured"));
+    const draw = () => {
+      box.innerHTML = '<div class="card fall"><div class="fallh"><b>' + esc(I18N.t("New snow")) + ' <span class="unit">' + U.du() + '</span></b><div class="seg2" role="group" aria-label="' + esc(I18N.t("New snow")) + '"><button data-fm="past" aria-pressed="' + (mode === "past") + '">' + esc(I18N.t("Last days")) +
+        '</button><button data-fm="next" aria-pressed="' + (mode === "next") + '">' + esc(I18N.t("Next days")) + "</button></div></div>" +
+        '<table class="falltb"><thead><tr><th></th>' + lv.map((l) => "<th>" + esc(I18N.t(NM[l])) + "<small>" + esc(U.elev(L[l].elev_m)) + "</small></th>").join("") + "</tr></thead><tbody>" + rows(mode) +
+        '<tr class="dep"><th>' + esc(I18N.t("Snow depth")) + "</th>" + lv.map((l) => { const d = L[l].depth_cm && L[l].depth_cm.best; return "<td>" + (d == null ? "–" : U.dep(Math.round(d))) + (L[l].depth_cm && L[l].depth_cm.measured != null ? '<i class="mdot"></i>' : "") + "</td>"; }).join("") + "</tr></tbody></table>" +
+        (meas ? '<p class="note"><i class="mdot"></i> ' + esc(I18N.t("measured")) + "</p>" : "") + "</div>";
+      box.querySelectorAll("[data-fm]").forEach((b) => { b.onclick = () => { mode = b.dataset.fm; draw(); }; });
+    };
+    draw();
+  }
+  // lifts / webcams: rows only when there is something to show (CONTRACT live data 2 + 3)
+  async function liveRows(x) {
+    const [lf, wc] = await Promise.all([
+      SS.api("/v1/resorts/" + encodeURIComponent(x.slug) + "/lifts", { auth: false, timeout: 12000 }).catch(() => null),
+      SS.api("/v1/resorts/" + encodeURIComponent(x.slug) + "/webcams", { auth: false, timeout: 12000 }).catch(() => null)]);
+    const box = $("rLive"); if (!box || st.slug !== x.slug) return;
+    let h = "";
+    if (lf && lf.available && lf.total) h += '<div class="rowlink static"><span class="ms">cable_car</span><span><b>' + esc(I18N.tu("{a} / {b} lifts open", lf.open, lf.total)) + "</b>" +
+      (lf.updated ? "<small>" + esc(I18N.tu("Updated {a}", new Date(lf.updated).toLocaleTimeString(LOC, { hour: "2-digit", minute: "2-digit" }))) + "</small>" : "") + "</span></div>";
+    else if (lf && lf.status_url) h += '<a class="rowlink" target="_blank" rel="noopener" href="' + esc(lf.status_url) + '"><span class="ms">cable_car</span><span><b>' + (lf.total_mapped ? esc(I18N.tu("{a} lifts", lf.total_mapped)) : esc(I18N.t("Lifts"))) +
+      "</b><small>" + esc(I18N.t("Lift status on the resort's site")) + '</small></span><span class="ms">open_in_new</span></a>';
+    if (wc && wc.available && wc.webcams && wc.webcams.length) {
+      const A = wc.attribution || {}, lk = A.links || {};
+      h += '<div class="sect">' + esc(I18N.t("Webcams")) + '</div><div class="cams">' + wc.webcams.slice(0, 6).map((c) => '<a class="cam" target="_blank" rel="noopener" href="' + esc(c.link || "#") + '"><img src="' + esc(c.thumb_url || c.image_url) + '" alt="' + esc(c.title || "") + '" loading="lazy"><span>' + esc(c.title || "") + (c.elev_m ? " · " + esc(U.elev(c.elev_m)) : "") + "</span></a>").join("") + "</div>" +
+        (A.text ? '<p class="camattr">' + (lk.windy ? '<a href="' + esc(lk.windy) + '" target="_blank" rel="noopener">' + esc(A.text) + "</a>" : esc(A.text)) + (A.add_text ? " - " + (lk.add ? '<a href="' + esc(lk.add) + '" target="_blank" rel="noopener">' + esc(A.add_text) + "</a>" : esc(A.add_text)) : "") + "</p>" : "");
+    }
+    box.innerHTML = h;
+  }
+  // ---- powder alert sign-up (CONTRACT powder alert): e-mail + threshold + storm, GET subscribe, double opt-in
+  function alertSheet(slug) {
+    const x = BY[slug]; if (!x) return;
+    const us = U.us(), TH = [10, 20, 30];
+    const m = SS.modal(SS.head(esc(I18N.t("Get a powder alert"))) + '<p class="none" style="margin:0 0 8px">' + esc(I18N.tu("An e-mail when {a} gets fresh snow overnight.", x.short)) + "</p>" +
+      '<label class="field"><span>' + esc(I18N.t("E-mail")) + '</span><input type="email" data-ae autocomplete="email" required></label>' +
+      '<div class="over" style="margin:10px 0 6px">' + esc(I18N.t("Tell me from")) + '</div><div class="seg2" role="group" data-at>' + TH.map((t, i) => '<button data-t="' + t + '" aria-pressed="' + (i === 0) + '">' + (us ? [4, 8, 12][i] + " in" : t + " cm") + "</button>").join("") + "</div>" +
+      '<label class="chk"><input type="checkbox" data-as checked> ' + esc(I18N.t("Also tell me when a big storm is coming")) + "</label>" +
+      '<button class="btn ink full" data-ago style="margin-top:12px">' + esc(I18N.t("Get alerts")) + '</button><p class="msg" data-amsg hidden></p>' +
+      '<p class="note" style="margin-top:10px">' + esc(I18N.t("We'll e-mail you only about these resorts. You can unsubscribe in one click. We keep your e-mail address and choices only for this.")) + "</p>");
+    const el = m.el;
+    el.querySelectorAll("[data-t]").forEach((b) => { b.onclick = () => el.querySelectorAll("[data-t]").forEach((q) => q.setAttribute("aria-pressed", q === b)); });
+    el.querySelector("[data-ago]").onclick = async () => {
+      const em = el.querySelector("[data-ae]").value.trim(), msg = el.querySelector("[data-amsg]"), btn = el.querySelector("[data-ago]");
+      const say = (t, cls) => { msg.hidden = false; msg.className = "msg" + (cls ? " " + cls : ""); msg.textContent = t; };
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { say(I18N.t("Please enter a valid e-mail address."), "err"); return; }
+      const th = +(el.querySelector('[data-t][aria-pressed="true"]') || {}).dataset.t || 10;
+      const q = new URLSearchParams({ email: em, resorts: slug, threshold: String(th), storm: el.querySelector("[data-as]").checked ? "1" : "0",
+        lang: ["fr", "de", "it", "es"].includes(I18N.lang) ? I18N.lang : "en", units: us ? "imperial" : "metric" });
+      btn.disabled = true;
+      try {
+        const r = await SS.api("/v1/alerts/powder/subscribe?" + q.toString(), { auth: false, timeout: 15000 });
+        say(r && r.status === "active" ? I18N.t("Done - alerts updated.") : I18N.t("Check your inbox to confirm."), "ok");
+        SS.hit("/alert/powder/subscribe", "web");
+      } catch (e) {
+        say(e.status === 429 ? I18N.t("Please try again later.") : e.status === 422 ? I18N.t("Please enter a valid e-mail address.") : I18N.t("Couldn't sign you up right now. Please try again later."), "err");
+      } finally { btn.disabled = false; }
+    };
+  }
   async function seasonRow(slug) {
     const el = $("rSeason"); if (!el) return;
     let sz = null;

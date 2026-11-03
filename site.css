@@ -890,3 +890,27 @@ details.fold[open]>:not(summary),details.morefilt[open]>:not(summary),details.ws
 @media (prefers-reduced-motion:reduce){details[open]>:not(summary),.minihead{animation:none!important;transition:none!important}}
 /* v3: the day strip scrolls on desktop too now that every day is free: fade both edges */
 .timeline .days{-webkit-mask-image:linear-gradient(90deg,transparent,#000 14px,#000 calc(100% - 14px),transparent);mask-image:linear-gradient(90deg,transparent,#000 14px,#000 calc(100% - 14px),transparent)}
+/* v3 live data: new-snow totals (resort panel), powder alert row + sheet, lifts / webcams */
+.card.fall{padding:12px 14px;margin:8px 0}
+.fallh{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 6px}
+.fallh b{font-size:15px;font-weight:650}.fallh .unit{font-size:13px;color:var(--ink3);font-weight:550}
+.fallh .seg2 button{height:32px;font-size:13px;padding:0 10px}
+table.falltb{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;table-layout:fixed}
+table.falltb th,table.falltb td{padding:6px 4px;text-align:center;font-size:13px}
+table.falltb thead th{font-weight:650;color:var(--ink2)}table.falltb thead th small{display:block;font-weight:500;color:var(--ink3);font-size:12px}
+table.falltb tbody th{text-align:start;font-weight:550;color:var(--ink2);width:30%}
+table.falltb td b{font-size:20px;font-weight:600;color:var(--accent-ink)}
+table.falltb td .z{font-size:16px;color:var(--ink3)}
+table.falltb tbody tr+tr{border-top:1px solid var(--hair)}
+table.falltb tr.dep td{font-weight:620;font-size:15px}
+.mdot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--good);margin-inline-start:4px;vertical-align:2px}
+.card.fall .note{margin:4px 0 0!important}
+.rowlink.alertrow{width:100%;border-left:0;border-right:0;background:none;font:inherit;cursor:pointer;text-align:start;margin:8px 0}
+.rowlink.static{cursor:default}
+label.chk{display:flex;align-items:center;gap:10px;margin:12px 0 0;font-size:14px;min-height:44px;cursor:pointer}
+label.chk input{width:20px;height:20px;accent-color:var(--accent)}
+.cams{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.cam{display:block;text-decoration:none;color:var(--ink);font-size:13px}
+.cam img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px;background:var(--surface2);display:block}
+.cam span{display:block;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.camattr{font-size:13px;color:var(--ink3);margin:6px 0 0}
