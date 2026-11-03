@@ -74,7 +74,12 @@
     const fixed = S.cfg.site && S.cfg.site.api_url ? String(S.cfg.site.api_url).replace(/\/$/, "") : null;
     S.api = fixed || tunnel;                          // stable API address first, the tunnel as the fallback
     S.apiAlt = fixed && tunnel && tunnel !== fixed ? tunnel : null;
+    S.apiPc = S.apiAlt;                               // the PC (tunnel) while it is still the single DB writer
   }
+  // Accounts, payments, Studio jobs, visit counter, community writes stay on the PC until the app DB moves to Railway
+  // (docs/RAILWAY.md §5): those paths use S.apiPc when the site's main API is another host.
+  const PC_ONLY = /^\/v1\/(me\b|billing\/|studio\/(?!demos)|hit\b|account|users\/|devices|ref\/|challenge|community|obs\/|profiles?\b|feed\b|location|rules)/;
+  function base(path) { return S.apiPc && PC_ONLY.test(path) ? S.apiPc : S.api; }
   function appUrl() {
     const a = (S.cfg && S.cfg.app) || {};
     if (a.play_live && a.play_package) return "https://play.google.com/store/apps/details?id=" + encodeURIComponent(a.play_package);
@@ -86,19 +91,21 @@
   async function api(path, opt = {}) {
     try { return await api1(path, opt); }
     catch (e) {
+      if (e.down && S.apiPc && PC_ONLY.test(path)) return api1(path, { ...opt, base: S.api });   // PC down: main host
       if (!e.down || !S.apiAlt) throw e;
       [S.api, S.apiAlt] = [S.apiAlt, S.api];           // the other address answered last time: swap and retry once
       return api1(path, opt);
     }
   }
-  async function api1(path, { auth = true, timeout = 12000 } = {}) {
+  async function api1(path, { auth = true, timeout = 12000, base: b0 = null } = {}) {
     if (!S.api) { const e = new Error("no api"); e.down = true; throw e; }
+    const b = b0 || base(path);
     const ctl = new AbortController();
     const t = setTimeout(() => ctl.abort(), timeout);
     const headers = {};
     if (auth && S.idToken) headers.Authorization = "Bearer " + S.idToken;
     try {
-      const r = await fetch(S.api + path, { headers, signal: ctl.signal });
+      const r = await fetch(b + path, { headers, signal: ctl.signal });
       if (r.status === 402) {
         // regional Pro (Morocco lifetime = High Atlas only): {reason:"pro_scope", scope:["ATLAS"], upsell:"subscription"}
         let b = null; try { b = await r.json(); } catch { /* no body */ }
@@ -613,7 +620,7 @@
     if (window.gtag) gtag("event", "page_view", { page_location: location.origin + path, page_path: path, page_title: document.title });
     if (S.api && navigator.sendBeacon) {              // first-party counter: no cookie, hashed + daily-rotating id
       try {
-        navigator.sendBeacon(S.api + "/v1/hit", new Blob([JSON.stringify({ path: path.slice(0, 200), ref: document.referrer ? new URL(document.referrer).hostname : "",
+        navigator.sendBeacon(base("/v1/hit") + "/v1/hit", new Blob([JSON.stringify({ path: path.slice(0, 200), ref: document.referrer ? new URL(document.referrer).hostname : "",
           src: "web", lang: (window.I18N && I18N.lang) || "" })], { type: "text/plain" }));
       } catch { /* ignore */ }
     }
@@ -625,7 +632,7 @@
     if (BOT || !S.api || !navigator.sendBeacon) return;
     if (once) { if (HITS.has(once)) return; HITS.add(once); }
     try {
-      navigator.sendBeacon(S.api + "/v1/hit", new Blob([JSON.stringify({ path: String(path).slice(0, 200), ref: "", src: src || "web",
+      navigator.sendBeacon(base("/v1/hit") + "/v1/hit", new Blob([JSON.stringify({ path: String(path).slice(0, 200), ref: "", src: src || "web",
         lang: (window.I18N && I18N.lang) || "" })], { type: "text/plain" }));
     } catch { /* ignore */ }
   }
@@ -675,6 +682,6 @@
     return S;
   }
 
-  window.SS = { webPro, proHere, proIn, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
+  window.SS = { base, webPro, proHere, proIn, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
                 resorts, mapLib, transformRequest, onChange: (f) => S.listeners.push(f), store, ROOT };
 })();

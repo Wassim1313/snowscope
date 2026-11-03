@@ -1946,8 +1946,10 @@
     const pts = Object.keys(byDate).filter((d) => d >= start && d <= end).sort();
     const path = (from, to) => pts.filter((d) => d >= from && d <= to).map((d, i) => (i ? "L" : "M") + px(X(d)).toFixed(1) + "," + py(byDate[d].dep).toFixed(1)).join("");
     const lockX = px(X(freeEnd));
+    const ep = clim ? epiLayers((key, k) => at(key, addDays(start, k)), nDays + 1, px, py, top, H - bot) : null;
     let s = '<svg class="chart" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Snow depth this season compared with past winters">' +
-      (clim ? '<path d="' + band("min", "max") + '" fill="var(--accent-tint)" opacity=".55"/><path d="' + band("p25", "p75") + '" fill="var(--accent-tint)"/><path d="' + line("p50") + '" fill="none" stroke="var(--accent)" stroke-width="1.4" stroke-dasharray="4 3"/>' : "") +
+      (clim ? '<path d="' + band("min", "max") + '" fill="var(--accent-tint)" opacity=".55"/><path d="' + ep.norm + '" fill="var(--accent-tint)"/><path d="' + ep.wet + '" fill="var(--accent)" opacity=".28"/><path d="' + ep.med + '" fill="none" stroke="var(--accent)" stroke-width="1.4" stroke-dasharray="4 3"/>' +
+        (ep.freq ? '<path d="' + ep.freq + '" fill="none" stroke="var(--ink3)" stroke-width="1" opacity=".8"/>' : "") : "") +
       '<path d="' + path(start, DATA.today) + '" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linejoin="round"/>' +
       '<path d="' + path(DATA.today, st.pro ? end : freeEnd) + '" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-dasharray="5 4"/>' +
       '<line x1="' + px(X(DATA.today)) + '" x2="' + px(X(DATA.today)) + '" y1="' + top + '" y2="' + (H - bot) + '" stroke="var(--ink3)" stroke-dasharray="2 3"/>' +
@@ -1960,7 +1962,7 @@
     if ($("ptNext")) $("ptNext").textContent = next ? "Snow expected " + D(next).toLocaleDateString("en-GB", { weekday: "long", timeZone: "UTC" }) + ": +" + U.depth(byDate[next].nw) : "";
     pastBlock(h, byDate, at, herr);
     stationBlock(pt, ctx, byDate);
-    box.innerHTML = s + '<div class="keyrow"><span><i style="background:var(--ink)"></i>this season</span><span><i style="background:var(--accent)"></i>usual</span><span><i style="background:var(--accent-tint)"></i>past winters</span><span>- - next days</span></div>' +
+    box.innerHTML = s + '<div class="keyrow"><span><i style="background:var(--ink)"></i>this season</span><span><i style="background:var(--accent)"></i>usual</span><span><i style="background:var(--accent-tint)"></i>past winters</span>' + (ep && ep.any ? epiKey() : "") + '<span>- - next days</span></div>' +
       (!st.pro ? '<div class="prolock" style="margin-top:10px"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>The next 3 days are free.</b><br>Pro adds the whole week ahead and the outlook.</p><button class="btn ink" data-up>Unlock the week</button></div>' : "");
     const up = box.querySelector("[data-up]"); if (up) up.onclick = () => SS.upsell("The week ahead is in Pro");
   }
@@ -1977,12 +1979,42 @@
   // as a big marker with its value, the rank line; tap / Enter on a dot -> "2017–18: 142 cm". ADVANCED ("More"): the
   // season fan (min-max, 10-90, 25-75, median, this season, today), the 5 deepest / 5 thinnest winters on this date and
   // the pixel band (low / median / high) when the history answer has it. Data: /v1/history/point compare (v2).
+  // episodic snow (HISTORY 2026-11-03, owner: Oukaimeden "envelope up to 40 cm but normal 0"): where fewer than half
+  // of the past winters have snow on a date, the median of all winters is ~0 although snowy winters hold tens of cm.
+  // There the charts show the "when snowy" band (wet_p25..wet_p75 of the winters with snow) instead of the 25-75 %
+  // band and the median line, plus a thin line = share of winters with snow (0-100 % of the plot height).
+  const EPI = 50;
+  function epiLayers(get, n, X, Y, y0, y1) {
+    const epi = (k) => { const f = get("snow_days_pct", k); return f != null && f < EPI && get("wet_p25", k) != null; };
+    const seg = (lo, hi, want) => {
+      let out = "", a = "", b = "";
+      const flush = () => { if (a) out += a + b + "Z"; a = ""; b = ""; };
+      for (let k = 0; k < n; k++) {
+        const l = get(lo, k), u = get(hi, k);
+        if (l == null || u == null || epi(k) !== want) { flush(); continue; }
+        a += (a ? "L" : "M") + X(k).toFixed(1) + "," + Y(u).toFixed(1); b = "L" + X(k).toFixed(1) + "," + Y(l).toFixed(1) + b;
+      }
+      flush(); return out;
+    };
+    const ln = (key, want) => { let o = "", on = false; for (let k = 0; k < n; k++) { const v = get(key, k); if (v == null || epi(k) !== want) { on = false; continue; } o += (on ? "L" : "M") + X(k).toFixed(1) + "," + Y(v).toFixed(1); on = true; } return o; };
+    let fq = "", any = false, on = false;
+    for (let k = 0; k < n; k++) { const f = get("snow_days_pct", k); if (f == null) { on = false; continue; } if (f < EPI) any = true; fq += (on ? "L" : "M") + X(k).toFixed(1) + "," + (y1 - (f / 100) * (y1 - y0)).toFixed(1); on = true; }
+    return { any, norm: seg("p25", "p75", false), wet: seg("wet_p25", "wet_p75", true), med: ln("p50", false), freq: any ? fq : "" };
+  }
+  const epiKey = () => '<span><i style="background:var(--accent);opacity:.35"></i>' + esc(I18N.t("when snowy")) + '</span><span><i style="background:var(--ink3);height:1px"></i>' + esc(I18N.t("% of winters with snow")) + "</span>";
   function rampCol(cm) {
     const R = DEPTH;
     if (cm == null || cm < 1) return "var(--surface3)";
     let c = R[R.length - 1][1];
     for (let i = 0; i < R.length; i++) { if (cm <= R[i][0]) { const a = R[Math.max(0, i - 1)], b = R[i], t = i ? (cm - a[0]) / Math.max(1, b[0] - a[0]) : 1; c = a[1].map((q, k) => Math.round(q + (b[1][k] - q) * t)); break; } }
     return "rgb(" + c.join(",") + ")";
+  }
+  // the episodic headline: "Snow on this date in 14 of 46 past winters. When there is snow, usually about 25 cm (up to 89 cm)."
+  function epiHead(t, v) {
+    if (!t || !t.episodic || t.typical_when_snowy_cm == null || t.snowy_winters == null || !t.n_winters) return "";
+    const lead = v == null ? "" : v < 1 ? I18N.t("No snow today.") + " " : I18N.tu("Today: {a}.", U.depth(v)) + " ";
+    return lead + I18N.tu("Snow on this date in {a} of {b} past winters.", t.snowy_winters, t.n_winters) + " " +
+      I18N.tu("When there is snow, usually about {a} (up to {b}).", U.depth(t.typical_when_snowy_cm), U.depth(t.wet_max != null ? t.wet_max : t.typical_when_snowy_cm));
   }
   function stripRank(v, ys, t) {
     const n = t && t.rank_of ? t.rank_of - 1 : ys.length, below = t && t.rank ? t.rank_of - t.rank : ys.filter((y) => y < v - 0.5).length, snowy = ys.filter((y) => y >= 1).length;
@@ -2002,20 +2034,23 @@
     const rows = [], dots = by.map((y) => ({ y, x: X(y.today_cm) })).sort((a, b) => a.x - b.x);
     for (const d of dots) { let r = 0; while (rows[r] != null && d.x - rows[r] < 9 && r < 3) r++; rows[r] = d.x; d.r = r; }
     const sz = (s) => String(s).replace("-", "–");
-    const rank = stripRank(v, ys, cp.today);
+    const rank = epiHead(cp.today, v) || stripRank(v, ys, cp.today);
+    const t = cp.today, wetOn = t.episodic && t.typical_when_snowy_cm != null;
+    const q25 = wetOn ? (t.wet_p25 != null ? t.wet_p25 : t.typical_when_snowy_cm) : nm.p25, q75 = wetOn ? (t.wet_p75 != null ? t.wet_p75 : t.typical_when_snowy_cm) : nm.p75;
+    const q50 = wetOn ? t.typical_when_snowy_cm : nm.p50;
     let s = '<svg class="wstrip" viewBox="0 0 ' + W + " " + H + '" role="group" aria-label="' + esc(rank) + '">' +
-      '<rect x="' + X(nm.p25).toFixed(1) + '" y="' + (base - 40) + '" width="' + Math.max(2, X(nm.p75) - X(nm.p25)).toFixed(1) + '" height="46" rx="6" class="ws-iq"/>' +
+      '<rect x="' + X(q25).toFixed(1) + '" y="' + (base - 40) + '" width="' + Math.max(2, X(q75) - X(q25)).toFixed(1) + '" height="46" rx="6" class="ws-iq"/>' +
       '<line x1="' + L + '" x2="' + (W - R0) + '" y1="' + (base + 6) + '" y2="' + (base + 6) + '" class="ws-ax"/>' +
-      '<line x1="' + X(nm.p50).toFixed(1) + '" x2="' + X(nm.p50).toFixed(1) + '" y1="' + (base - 42) + '" y2="' + (base + 10) + '" class="ws-md"/>';
+      '<line x1="' + X(q50).toFixed(1) + '" x2="' + X(q50).toFixed(1) + '" y1="' + (base - 42) + '" y2="' + (base + 10) + '" class="ws-md"/>';
     for (const d of dots) s += '<circle cx="' + d.x.toFixed(1) + '" cy="' + (base - d.r * 9) + '" r="4.2" fill="' + rampCol(d.y.today_cm) + '" class="ws-dot" tabindex="0" role="button" data-ws="' +
       esc(sz(d.y.season) + ": " + U.depth(d.y.today_cm)) + '" aria-label="' + esc(sz(d.y.season) + ": " + U.depth(d.y.today_cm)) + '"/>';
     const tx = X(v), lab = U.depth(v), anchor = tx > W - 50 ? "end" : tx < 50 ? "start" : "middle";
     s += '<circle cx="' + tx.toFixed(1) + '" cy="' + (base - 10) + '" r="9" fill="' + rampCol(v) + '" class="ws-me"/>' +
       '<line x1="' + tx.toFixed(1) + '" x2="' + tx.toFixed(1) + '" y1="20" y2="' + (base - 19) + '" class="ws-ml"/><text x="' + tx.toFixed(1) + '" y="15" text-anchor="' + anchor + '" class="ws-v">' + esc(I18N.t("Today")) + " " + esc(lab) + "</text>" +
       '<text x="' + L + '" y="' + (H - 4) + '" class="ws-t">0</text><text x="' + (W - R0) + '" y="' + (H - 4) + '" text-anchor="end" class="ws-t">' + esc(U.depth(Math.round(mx / 1.06))) + "</text>" +
-      '<text x="' + X(nm.p50).toFixed(1) + '" y="' + (H - 4) + '" text-anchor="middle" class="ws-t">' + esc(I18N.t("usual")) + "</text></svg>";
+      '<text x="' + X(q50).toFixed(1) + '" y="' + (H - 4) + '" text-anchor="middle" class="ws-t">' + esc(I18N.t(wetOn ? "usual when snowy" : "usual")) + "</text></svg>";
     return '<div class="wsbox">' + (noRank ? "" : '<p class="ws-rank">' + esc(rank) + "</p>") + s +
-      '<p class="ws-out" aria-live="polite"></p><div class="keyrow"><span><i class="kdot"></i>' + esc(I18N.t("one dot per past winter")) + '</span><span><i style="background:var(--accent-tint)"></i>' + esc(I18N.t("normal range")) +
+      '<p class="ws-out" aria-live="polite"></p><div class="keyrow"><span><i class="kdot"></i>' + esc(I18N.t("one dot per past winter")) + '</span><span><i style="background:var(--accent-tint)"></i>' + esc(I18N.t(wetOn ? "when snowy" : "normal range")) +
       '</span><span><i style="background:var(--ink)"></i>' + esc(I18N.t("today")) + "</span></div></div>";
   }
   function bindStrip(root) {
@@ -2036,18 +2071,19 @@
       const top = Math.max(20, ...keep.map((_, k) => g("p90", k) || 0), ...cur.map((c) => c[1])) * 1.1;
       const W = 360, H = 170, X = (k) => (k / (n - 1)) * W, Y = (v) => H - 22 - (Math.min(v, top) / top) * (H - 30);
       const band = (lo, hi) => { let a = "", b = ""; for (let k = 0; k < n; k++) { const l = g(lo, k), u = g(hi, k); if (l == null || u == null) continue; a += (a ? "L" : "M") + X(k).toFixed(1) + "," + Y(u).toFixed(1); b = "L" + X(k).toFixed(1) + "," + Y(l).toFixed(1) + b; } return a ? a + b + "Z" : ""; };
-      let med = ""; for (let k = 0; k < n; k++) { const v = g("p50", k); if (v != null) med += (med ? "L" : "M") + X(k).toFixed(1) + "," + Y(v).toFixed(1); }
+      const ep = epiLayers(g, n, X, Y, 4, H - 22);
       const line = cur.map(([k, v], i) => (i ? "L" : "M") + X(k).toFixed(1) + "," + Y(v).toFixed(1)).join("");
       const ti = idx[DATA.today.slice(5)], tv = cp && cp.today ? cp.today.value_cm : null;
       const mo = [["10-01", "Oct"], ["11-01", "Nov"], ["12-01", "Dec"], ["01-01", "Jan"], ["02-01", "Feb"], ["03-01", "Mar"], ["04-01", "Apr"], ["05-01", "May"]];
       fan = '<div class="over" style="margin-top:6px">' + esc(I18N.t("This season among past winters")) + '</div><svg class="chart" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + esc(I18N.t("This season among past winters")) + '">' +
         '<path d="' + band("min", "max") + '" fill="var(--accent-tint)" opacity=".45"/><path d="' + band("p10", "p90") + '" fill="var(--accent-tint)" opacity=".8"/>' +
-        '<path d="' + band("p25", "p75") + '" fill="var(--accent)" opacity=".22"/><path d="' + med + '" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4 3"/>' +
+        '<path d="' + ep.norm + '" fill="var(--accent)" opacity=".22"/><path d="' + ep.wet + '" fill="var(--accent)" opacity=".32"/><path d="' + ep.med + '" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4 3"/>' +
+        (ep.freq ? '<path d="' + ep.freq + '" fill="none" stroke="var(--ink3)" stroke-width="1" opacity=".8"/>' : "") +
         (line ? '<path d="' + line + '" fill="none" stroke="var(--ink)" stroke-width="2.6" stroke-linejoin="round"/>' : "") +
         (ti != null ? '<line x1="' + X(ti).toFixed(1) + '" x2="' + X(ti).toFixed(1) + '" y1="4" y2="' + (H - 22) + '" stroke="var(--ink3)" stroke-dasharray="2 3"/>' + (tv != null ? '<circle cx="' + X(ti).toFixed(1) + '" cy="' + Y(tv).toFixed(1) + '" r="4.5" fill="var(--ink)" stroke="var(--surface)" stroke-width="2"/>' : "") : "") +
         mo.map(([m, t]) => (idx[m] != null ? '<text x="' + X(idx[m]).toFixed(1) + '" y="' + (H - 6) + '">' + esc(I18N.t(t)) + "</text>" : "")).join("") +
         '<text x="' + (W - 2) + '" y="12" text-anchor="end">' + esc(U.depth(Math.round(top / 1.1))) + "</text></svg>" +
-        '<div class="keyrow"><span><i style="background:var(--ink)"></i>' + esc(I18N.t("this season")) + '</span><span><i style="background:var(--accent);opacity:.5"></i>25–75 %</span><span><i style="background:var(--accent-tint)"></i>10–90 %</span><span><i style="background:var(--accent-tint);opacity:.5"></i>' + esc(I18N.t("lowest – highest")) + "</span></div>";
+        '<div class="keyrow"><span><i style="background:var(--ink)"></i>' + esc(I18N.t("this season")) + '</span><span><i style="background:var(--accent);opacity:.5"></i>25–75 %</span><span><i style="background:var(--accent-tint)"></i>10–90 %</span><span><i style="background:var(--accent-tint);opacity:.5"></i>' + esc(I18N.t("lowest – highest")) + "</span>" + (ep.any ? epiKey() : "") + "</div>";
     }
     const by = (cp && cp.by_year || []).filter((y) => y.today_cm != null);
     let bars = "";
@@ -2104,8 +2140,9 @@
     const anom = Math.abs(d) < 1 ? "Same as usual" : sign(d) + U.depth(Math.abs(d)) + (dp != null ? " (" + sign(dp) + Math.abs(dp) + " %)" : "") + " vs usual";
     // one verdict for the whole panel (v3): the exact per-winter rank when the answer has it, else the band verdict
     const by0 = cp && (cp.by_year || []).filter((y) => y.today_cm != null);
+    const epi = cp ? epiHead(cp.today, v) : "";
     const exact = cp && by0 && by0.length >= 3 ? stripRank(v, by0.map((y) => y.today_cm), cp.today) : null;
-    const head = exact || verdict;
+    const head = epi || exact || verdict;
     if (rk) rk.textContent = head;
     // range bar: min..max, 25-75 % band, median tick, today's marker (clamped)
     const hi = Math.max(mx, v, 1), X = (x) => Math.max(0, Math.min(100, (x / hi) * 100)).toFixed(1) + "%";
@@ -2121,9 +2158,13 @@
     const far = (h.note_codes || []).includes("far_elevation");
     if (pct == null) { box.innerHTML = (rk ? "" : '<p class="verdict">' + esc(verdict) + "</p>") + (seas.length ? '<p class="note">' + esc(I18N.tu("Compared with {a} past winters.", seas.length)) + "</p>" : ""); return; }
     const strip = cp ? winterStrip(cp, !!rk) : "";
-    box.innerHTML = (rk ? "" : '<p class="verdict">' + esc(verdict) + "</p>") + '<p class="anom">' + esc(anom) + "</p>" + (strip || bar) +
+    const tt = cp && cp.today;
+    box.innerHTML = (rk ? "" : '<p class="verdict">' + esc(epi || verdict) + "</p>") + (epi ? "" : '<p class="anom">' + esc(anom) + "</p>") + (strip || bar) +
       (strip ? '<details class="wsmore"><summary>' + esc(I18N.t("More")) + "</summary>" + winterMore(h, cp) : "") +
-      '<table class="kv">' + row("Today", U.depth(v)) + row("Usual on this date", U.depth(p50)) + row("Normal range", U.dep(p25) + "–" + U.depth(p75)) +
+      '<table class="kv">' + row("Today", U.depth(v)) +
+      (epi ? row(esc(I18N.t("Winters with snow on this date")), esc(I18N.tu("{a} of {b}", tt.snowy_winters, tt.n_winters))) + row(esc(I18N.t("Usual depth when snowy")), U.depth(tt.typical_when_snowy_cm)) +
+        (tt.wet_p25 != null && tt.wet_p75 != null ? row(esc(I18N.t("When snowy, most winters")), U.dep(tt.wet_p25) + "–" + U.depth(tt.wet_p75)) : "")
+        : row("Usual on this date", U.depth(p50)) + row("Normal range", U.dep(p25) + "–" + U.depth(p75))) +
       row("Lowest – highest", U.dep(mn) + "–" + U.depth(mx)) +
       (cp && cp.extremes && cp.extremes.best_today && cp.extremes.best_today.cm > (cp.extremes.worst_today || {}).cm ? row("Most snow on this date", U.depth(cp.extremes.best_today.cm) + ' <small class="none">' + sz(cp.extremes.best_today) + "</small>") +
         row("Least snow on this date", U.depth(cp.extremes.worst_today.cm) + ' <small class="none">' + sz(cp.extremes.worst_today) + "</small>") : "") +
@@ -2697,6 +2738,8 @@
         const v = await SS.api("/v1/history/resort/" + encodeURIComponent(x.slug));
         const c = v.climatology, keep = c.mmdd.map((m, i) => [m, i]).filter(([m]) => m >= "10-01" || m <= "05-31");
         h = { mmdd: keep.map(([m]) => m), p10: keep.map(([, i]) => c.p10[i]), p50: keep.map(([, i]) => c.p50[i]), p90: keep.map(([, i]) => c.p90[i]),
+          p25: c.p25 && keep.map(([, i]) => c.p25[i]), p75: c.p75 && keep.map(([, i]) => c.p75[i]), snow_days_pct: c.snow_days_pct && keep.map(([, i]) => c.snow_days_pct[i]),
+          wet_p25: c.wet_p25 && keep.map(([, i]) => c.wet_p25[i]), wet_p75: c.wet_p75 && keep.map(([, i]) => c.wet_p75[i]), typical_when_snowy_cm: c.typical_when_snowy_cm && keep.map(([, i]) => c.typical_when_snowy_cm[i]), wet_max: c.wet_max && keep.map(([, i]) => c.wet_max[i]),
           current: v.current.map((q) => [q.date, q.depth_cm]), best_weeks: v.best_weeks.slice(0, 3).map((w) => w.week) };
       } catch (e) { box.innerHTML = '<p class="msg">' + (e.down ? esc(I18N.t("Couldn't load past winters.")) : "No past winters for this resort yet.") + "</p>"; return; }
     }
@@ -2712,25 +2755,31 @@
     let band = "", med = "";
     h.mmdd.forEach((m, i) => { if (h.p90[i] != null) band += (band ? "L" : "M") + X(i).toFixed(1) + "," + Y(h.p90[i]).toFixed(1); });
     for (let i = n - 1; i >= 0; i--) if (h.p10[i] != null) band += "L" + X(i).toFixed(1) + "," + Y(h.p10[i]).toFixed(1);
-    h.mmdd.forEach((m, i) => { if (h.p50[i] != null) med += (med ? "L" : "M") + X(i).toFixed(1) + "," + Y(h.p50[i]).toFixed(1); });
+    const ep = h.snow_days_pct ? epiLayers((key, k) => (h[key] ? h[key][k] : null), n, X, Y, 4, H - 22) : null;
+    if (ep) med = ep.med; else h.mmdd.forEach((m, i) => { if (h.p50[i] != null) med += (med ? "L" : "M") + X(i).toFixed(1) + "," + Y(h.p50[i]).toFixed(1); });
     const line = cur.map(([i, v], k) => (k ? "L" : "M") + X(i).toFixed(1) + "," + Y(v).toFixed(1)).join("");
     const months = ["10-01", "11-01", "12-01", "01-01", "02-01", "03-01", "04-01", "05-01"], mn = ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"];
     const ti = idx[DATA.today.slice(5)];
     let s = '<svg class="chart" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Snow depth this season compared with past winters">' +
-      '<path d="' + band + 'Z" fill="var(--accent-tint)"/><path d="' + med + '" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4 3"/>' +
+      '<path d="' + band + 'Z" fill="var(--accent-tint)"/>' + (ep ? '<path d="' + ep.wet + '" fill="var(--accent)" opacity=".3"/>' + (ep.freq ? '<path d="' + ep.freq + '" fill="none" stroke="var(--ink3)" stroke-width="1" opacity=".8"/>' : "") : "") +
+      '<path d="' + med + '" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4 3"/>' +
       (line ? '<path d="' + line + '" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linejoin="round"/>' : "") +
       (ti != null ? '<line x1="' + X(ti) + '" x2="' + X(ti) + '" y1="4" y2="' + (H - 22) + '" stroke="var(--ink3)" stroke-dasharray="2 3"/>' : "") +
       months.map((m, k) => (idx[m] != null ? '<text x="' + X(idx[m]) + '" y="' + (H - 6) + '">' + mn[k] + "</text>" : "")).join("") +
       '<text x="' + (W - 2) + '" y="12" text-anchor="end">' + U.depth(Math.round(max / 1.1)) + "</text></svg>";
     const last = cur[cur.length - 1];
     let verdict = "";
-    if (last && h.p50[last[0]] != null) {
+    const lf = last && h.snow_days_pct ? h.snow_days_pct[last[0]] : null;
+    if (last && lf != null && lf < EPI && h.typical_when_snowy_cm && h.typical_when_snowy_cm[last[0]] != null) {
+      verdict = (last[1] < 1 ? I18N.t("No snow today.") : I18N.tu("Today: {a}.", U.depth(last[1]))) + " " + I18N.tu("Snow on this date in {a} % of past winters.", lf) + " " +
+        I18N.tu("When there is snow, usually about {a} (up to {b}).", U.depth(h.typical_when_snowy_cm[last[0]]), U.depth(h.wet_max && h.wet_max[last[0]] != null ? h.wet_max[last[0]] : h.typical_when_snowy_cm[last[0]]));
+    } else if (last && h.p50[last[0]] != null) {
       const p50 = h.p50[last[0]], p10 = h.p10[last[0]], p90 = h.p90[last[0]];
       verdict = last[1] > p90 ? "Much more snow than usual for this time of year." : last[1] > p50 * 1.2 + 2 ? "More snow than usual for this time of year."
         : last[1] < p10 ? "Much less snow than usual for this time of year." : last[1] < p50 * 0.8 - 2 ? "Less snow than usual for this time of year." : "About as much snow as usual for this time of year.";
     }
     box.innerHTML = (verdict ? '<p style="margin:0 0 8px;font-weight:620">' + verdict + "</p>" : "") + s +
-      '<div class="keyrow"><span><i style="background:var(--ink)"></i>this season</span><span><i style="background:var(--accent)"></i>usual</span><span><i style="background:var(--accent-tint)"></i>most winters</span></div>' +
+      '<div class="keyrow"><span><i style="background:var(--ink)"></i>this season</span><span><i style="background:var(--accent)"></i>usual</span><span><i style="background:var(--accent-tint)"></i>most winters</span>' + (ep && ep.any ? epiKey() : "") + "</div>" +
       (h.best_weeks && h.best_weeks.length ? '<p style="margin:10px 0 0;font-size:14px"><span class="ms" style="font-size:18px;color:var(--accent)">event</span> Usually the best time to go: <b>' + seasonBest(h.best_weeks) + "</b></p>" : "");
   }
   async function forecast(x) {

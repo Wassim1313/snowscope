@@ -112,14 +112,15 @@
 
   // ---------------------------------------------------------------- API (own fetch: we need the error body's detail)
   const S = SS.S;
-  const abs = (u) => (!u ? "" : /^https?:/.test(u) ? u : (S.api || "") + u);
+  const B = (p) => (SS.base ? SS.base(p) : S.api) || "";   // Studio jobs live on the PC until the DB switch
+  const abs = (u) => (!u ? "" : /^https?:/.test(u) ? u : B(u) + u);
   async function call1(path, auth) {
     if (!S.api) { const e = new Error("no api"); e.net = true; throw e; }
     const ctl = new AbortController(), tm = setTimeout(() => ctl.abort(), 20000);
     const headers = { "Accept-Language": LANG };
     if (auth && S.idToken) headers.Authorization = "Bearer " + S.idToken;
     let r;
-    try { r = await fetch(S.api + path, { headers, signal: ctl.signal }); }
+    try { r = await fetch(B(path) + path, { headers, signal: ctl.signal }); }
     catch (er) { const e = new Error("network"); e.net = true; throw e; }
     finally { clearTimeout(tm); }
     let body = null;

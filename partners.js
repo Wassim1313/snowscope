@@ -149,7 +149,7 @@
       if (typeof window.SS.hit === "function") { window.SS.hit(path, "partner", once); return; }
       if (once) { if (SENT.has(once)) return; SENT.add(once); }        // older core.js without SS.hit: same beacon
       if (navigator.sendBeacon && window.SS.S.api && !/bot|crawl|spider|headless/i.test(navigator.userAgent))
-        navigator.sendBeacon(window.SS.S.api + "/v1/hit", new Blob([JSON.stringify({ path, ref: "", src: "partner", lang: lang() })], { type: "text/plain" }));
+        navigator.sendBeacon((window.SS.base ? window.SS.base("/v1/hit") : window.SS.S.api) + "/v1/hit", new Blob([JSON.stringify({ path, ref: "", src: "partner", lang: lang() })], { type: "text/plain" }));
     } catch { /* ignore */ }
   }
 
