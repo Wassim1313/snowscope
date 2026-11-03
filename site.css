@@ -592,7 +592,27 @@ details.stays>summary .partner{margin-inline-start:auto;margin-inline-end:6px;fo
 .stayask{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:16px;color:var(--ink2);font-size:14px}
 .stayask .ms{font-size:32px;color:var(--accent-ink)}.stayask p{margin:0;max-width:260px}
 .stayout{margin-top:10px}
-@media (max-width:760px){.staymap{height:260px}}
+.staymap{position:relative}
+.staymap iframe{position:relative;z-index:1;background:transparent}
+.stayload{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--ink3);font-size:13px}
+.stayload .ms{font-size:28px;color:var(--accent-ink);animation:stpulse 1.4s ease-in-out infinite}.stayload p{margin:0}
+@keyframes stpulse{50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){.stayload .ms{animation:none}}
+.stayask .acts3{display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.stayask.still{background:linear-gradient(160deg,var(--accent-tint),var(--surface2))}
+details.stays>summary .stsum{display:flex;flex-direction:column;gap:3px;min-width:0}
+details.stays>summary .stsum small{font-size:12.5px;font-weight:500;letter-spacing:0;text-transform:none;color:var(--ink3)}
+details.stays[open]>summary .stsum small{display:none}
+/* lodging chip on the map (one at a time, under the resort nearest the view centre) */
+.staychip{display:flex;align-items:center;gap:8px;max-width:270px;padding:6px 10px 6px 6px;border:0;border-radius:999px;background:var(--surface);color:var(--ink);box-shadow:var(--e2);font:inherit;cursor:pointer;text-align:start;line-height:1.15}
+.staychip:hover{box-shadow:var(--e2),0 0 0 2px var(--accent)}
+.staychip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.staychip .sci{flex:none;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff}
+.staychip .sct{display:flex;flex-direction:column;min-width:0}
+.staychip .sct b{font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.staychip .sct small{font-size:11.5px;color:var(--ink3);white-space:nowrap}
+.staychip .partner{flex:none;font-size:9.5px;letter-spacing:.3px;padding:2px 6px;border-radius:999px;background:var(--surface2);color:var(--ink3)}
+@media (max-width:760px){.staymap{height:260px}.staychip{max-width:240px}}
 
 /* =====================================================================================================================
    v2 shell (owner 2026-11-02 "the UI/UX is very very very bad", docs/web/REDESIGN_V2.md): one grid (12 px gutters),
@@ -733,3 +753,7 @@ body.app .timeline .legend>small{grid-column:3}
 /* piste transect card */
 .pdot{display:inline-block;width:10px;height:10px;border-radius:5px;margin-inline-end:6px;vertical-align:0;box-shadow:0 0 0 1.5px var(--surface)}
 #psChart .chart{margin-top:8px}
+
+/* "Updating…" in the day strip while the newest run is older than yesterday (real date vs data date) */
+.updchip{flex:none;display:inline-flex;align-items:center;gap:4px;align-self:center;padding:3px 8px;margin-inline-end:4px;border-radius:999px;background:var(--accent-tint);color:var(--accent-ink);font-size:11px;font-weight:650;white-space:nowrap}
+.updchip .ms{font-size:14px}

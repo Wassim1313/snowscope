@@ -180,7 +180,7 @@
   function drawDays() {
     const box = $("days");
     const dates = proLive() && st.proDates ? st.proDates : Array.from({ length: 9 }, (_, i) => addDays(DATA.today, i - 4));
-    box.innerHTML = dates.map((d) => {
+    box.innerHTML = (DATA.stale ? '<span class="updchip" title="' + esc(I18N.t("New snow pictures are on their way")) + '"><span class="ms">sync</span>' + esc(I18N.t("Updating…")) + "</span>" : "") + dates.map((d) => {
       const lk = dayLocked(d);
       return '<button class="chip' + (lk ? " locked" : "") + (d === DATA.today ? " today" : "") + '" data-d="' + d + '"' + (lk ? ' aria-disabled="true" aria-label="' + wd(d) + " " + dnum(d) + ', Pro"' : ' aria-pressed="' + (d === st.day) + '"') + ">" +
         "<small>" + (d === DATA.today ? "Today" : wd(d)) + "</small>" + dnum(d) + (lk ? '<span class="ms f lk">lock</span>' : "") + "</button>";
@@ -649,26 +649,7 @@
     map.on("mouseenter", "stn_cl", () => { map.getCanvas().style.cursor = "pointer"; });
     map.on("mouseleave", "stn_cl", () => { map.getCanvas().style.cursor = ""; });
     map.addSource("stays", { type: "geojson", data: fc });
-    // "BOOK" chip under each resort label from zoom 10 (Stay22, dates = the selected day); collides like labels
-    map.addLayer({ id: "stays", type: "symbol", source: "stays", minzoom: 10.5,
-      layout: { "text-field": "BOOK", "text-size": 10.5, "text-offset": [0, 3.2], "text-anchor": "top", "text-letter-spacing": 0.08,
-        "text-allow-overlap": true, "text-ignore-placement": true,
-        "text-font": ["Noto Sans Bold"] },
-      paint: { "text-color": "#fff", "text-halo-color": "#1463F3", "text-halo-width": 3.5 } });
-    map.on("click", "stays", (e) => {
-      const f = e.features && e.features[0]; if (!f) return;
-      st.stayClick = Date.now();
-      // BOOK chip -> the resort panel with "Stays near the slopes" open (owner 2026-11-02), the old popup as fallback
-      if (f.properties.s && BY[f.properties.s] && stayModule(0, 0, "", "x")) { st.openStays = true; openResort(f.properties.s); if (innerWidth <= 760) setSheet("full"); return; }
-      const [lon, lat] = f.geometry.coordinates, n = f.properties.n, u = stayHref(lat, lon, n, "mappin");
-      const other = stayMapHref(lat, lon, n);
-      if (!u) return;
-      if (popup) popup.remove();
-      popup = new LIB.Popup({ closeButton: true, maxWidth: "260px", offset: 14 }).setLngLat([lon, lat]).setHTML('<div class="pv staycard"><span class="k">' +
-        esc(I18N.t("Stays near") + " " + n) + ' · <span class="partner">Partner</span></span><div class="line">' + esc(D(st.day > DATA.today ? st.day : DATA.today).toLocaleDateString(LOC, { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" })) +
-        '</div><div class="acts3" style="margin-top:8px"><a class="btn ink" target="_blank" rel="sponsored noopener" href="' + esc(u) + '">' + esc(I18N.t("Book")) + "</a>" +
-        (other ? '<a class="btn tonal" target="_blank" rel="sponsored noopener" href="' + esc(other) + '">' + esc(I18N.t("See other deals")) + "</a>" : "") + "</div></div>").addTo(map);
-    });
+    // stay chip (owner 2026-11-03): one HTML chip under the resort nearest the view centre (drawStays) -> stayChipClick
     // resort pins: a value chip ("42 cm" with the depth colour as a dot) on a pointer, sized by the resort's size (km of
     // pistes) and placed in that order so the big resorts win collisions; the name under it only when there is room;
     // "+N" chip for fresh snow; a soft halo under the hovered pin; dark / light chip follows the page theme
@@ -934,6 +915,36 @@
     }
     map.getSource("best").setData({ type: "FeatureCollection", features: feats });
   }
+  // the lodging chip on the map: bed glyph, "Stays near <resort>", "see prices" + Partner. Stay22 gives partners no
+  // listing / price data in the browser (its Direct Travel API needs an approved server key, sign-ups paused, no
+  // storing), so no hotel name or price is invented here. Tap -> the resort panel with the Stays map open.
+  let stayMk = null;
+  function stayChipClick(x) {
+    st.stayClick = Date.now();
+    if (x.slug && BY[x.slug] && stayModule(0, 0, "", "x")) { st.openStays = true; openResort(x.slug); if (innerWidth <= 760) setSheet("full"); return; }
+    const u = stayHref(x.lat, x.lon, x.short, "mappin"), other = stayMapHref(x.lat, x.lon, x.short);
+    if (!u) return;
+    if (popup) popup.remove();
+    popup = new LIB.Popup({ closeButton: true, maxWidth: "260px", offset: 14 }).setLngLat([x.lon, x.lat]).setHTML('<div class="pv staycard"><span class="k">' +
+      esc(I18N.tu("Stays near {a}", x.short)) + ' · <span class="partner">Partner</span></span><div class="line">' + esc(D(st.day > DATA.today ? st.day : DATA.today).toLocaleDateString(LOC, { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" })) +
+      '</div><div class="acts3" style="margin-top:8px"><a class="btn ink" target="_blank" rel="sponsored noopener" href="' + esc(u) + '">' + esc(I18N.t("Book")) + "</a>" +
+      (other ? '<a class="btn tonal" target="_blank" rel="sponsored noopener" href="' + esc(other) + '">' + esc(I18N.t("See other deals")) + "</a>" : "") + "</div></div>").addTo(map);
+  }
+  function stayChip(x) {
+    if (!x) { if (stayMk) { stayMk.remove(); stayMk = null; } return; }
+    if (stayMk && stayMk._slug === x.slug) return;
+    if (stayMk) stayMk.remove();
+    const el = document.createElement("button");
+    el.className = "staychip"; el.type = "button";
+    el.setAttribute("aria-label", I18N.tu("Stays near {a}", x.short));
+    const nm = x.short.length > 22 ? x.short.slice(0, 21) + "…" : x.short;
+    el.innerHTML = '<span class="sci" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M3 6a1 1 0 0 1 2 0v7h6V9a1 1 0 0 1 1-1h6a3 3 0 0 1 3 3v7a1 1 0 0 1-2 0v-2H5v2a1 1 0 0 1-2 0V6Zm4.5 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg></span>' +
+      '<span class="sct"><b>' + esc(I18N.tu("Stays near {a}", nm)) + '</b><small>' + esc(I18N.t("Places to stay · see prices")) + '</small></span><span class="partner">' + esc(I18N.t("Partner")) + "</span>";
+    el.addEventListener("click", (e) => { e.stopPropagation(); stayChipClick(x); });
+    stayMk = new LIB.Marker({ element: el, anchor: "top", offset: [0, 36] }).setLngLat([x.lon, x.lat]).addTo(map);
+    el.setAttribute("aria-label", I18N.tu("Stays near {a}", x.short));       // the map library sets "Map marker"
+    stayMk._slug = x.slug;
+  }
   async function drawStays() {
     if (!ready || !map.getSource("stays")) return;
     const res = await RES.catch(() => null);
@@ -951,6 +962,7 @@
     }
     map.getSource("stays").setData({ type: "FeatureCollection", features: best ? [{ type: "Feature",
       geometry: { type: "Point", coordinates: [best.lon, best.lat] }, properties: { n: best.short, s: best.slug } }] : [] });
+    stayChip(best);
   }
   async function drawPins() {
     if (!ready || !map.getSource("pins")) return;
@@ -1143,7 +1155,7 @@
       (pro && !st.pro ? '<span class="pro"><span class="ms f">lock</span>PRO</span>' : "") + "<span>" + name + "</span></button>";
     const rows = [["wind", "Wind", "Around midday", "air", true, true], ["freeze", "Freezing level", U.us() ? "Where 32 °F sits" : "Where 0 °C sits", "device_thermostat", true, true],
       ["radar", "Rain & snow radar", "Right now", "radar", false, true], ["p72", "3-day snow", "Powder over 3 days", "ac_unit", true],
-      ...(s30Enabled() ? [["s30", "Sharp 30 m", "The sharpest snow picture, where available", "grid_on"]] : []), ["stn", "Measured snow", "Snow depth measured at stations", "sensors"], ["pins", "Resorts", "Name and snow on each resort", "location_on"], ["stays", "Places to stay", "BOOK chips on resorts · Partner", "hotel"], ["pistes", "Pistes & lifts", "Coloured by difficulty", "downhill_skiing"]];
+      ...(s30Enabled() ? [["s30", "Sharp 30 m", "The sharpest snow picture, where available", "grid_on"]] : []), ["stn", "Measured snow", "Snow depth measured at stations", "sensors"], ["pins", "Resorts", "Name and snow on each resort", "location_on"], ["stays", "Places to stay", "A stay chip on the resort in view · Partner", "hotel"], ["pistes", "Pistes & lifts", "Coloured by difficulty", "downhill_skiing"]];
     const row = ([id, name, sub, icon, pro, main]) => {
       const on = main ? st.main === id : id === "p72" ? st.p72 : !!st.over[id];
       const dis = id === "radar" && st.radar === false;
@@ -1886,75 +1898,160 @@
     if (navigator.share && matchMedia("(pointer:coarse)").matches) { try { await navigator.share({ title: "SnowScope", text, url }); return; } catch (e) { if (e && e.name === "AbortError") return; } }
     shareModal(text, url);
   }
-  function stayMapHref(lat, lon, place) {      // "See other deals": the Stay22 map of the area for the selected dates
-    const c = SS.S.cfg && SS.S.cfg.stay22;
-    if (!c || !c.aid || SS.staysHidden()) return "";
-    const day = st.day > DATA.today ? st.day : DATA.today;
-    const q = new URLSearchParams({ aid: c.aid, lat: lat.toFixed(4), lng: lon.toFixed(4), venue: place, checkin: day, checkout: addDays(day, 1),
-      adults: "2", campaign: "snowscope_web_mappin_map" });
-    return "https://www.stay22.com/embed/gm?" + q.toString();
+  // ---- Stay22 map embed. Root cause of "We fell asleep for a second there" (2026-11-03): Stay22 answers /embed/gm with a
+  // 404 page for most lat/lng (its reverse geocoder replies "accessDenied" except for a few cached points; ~88 % of our
+  // resort points failed, e.g. Val Thorens 45.2845,6.577), while address= (forward geocoding) works for most names. So
+  // the map is located by an address and framed by a bounding box (nelat/nelng/swlat/swlng = the view, verified), and
+  // each candidate location is checked first (the embed answers with CORS *, 404 = refused) -> first that loads wins,
+  // remembered per place. Nothing works / network blocked -> "Couldn't load the map" + the Allez link + Try again.
+  const STAY_LJS = new Set(["en", "fr", "de", "es", "pt", "it", "nl", "pl", "zh", "ja", "cs", "no", "tr", "sv", "uk"]);  // dev.stay22.com/docs/maps/parameters
+  const STAY_OK = new Map();
+  const localToday = () => { const d = new Date(); return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); };
+  const stayToday = () => { const t = localToday(); return DATA && DATA.today > t ? DATA.today : t; };
+  function stayClean(s) {      // "Saas-Fee / Saas-Grund" -> "Saas-Fee", "Skilifte Sinswang" -> "Sinswang", "Bormio Ski" -> "Bormio"
+    let t = String(s || "").split(/\s*[\/|(]\s*|\s+[-–]\s+|\s*,\s*/)[0];
+    t = t.replace(/\b(ski\s*(area|resort|lifts?|cent(er|re)|bowl)?|skilifte?|skilift|skigebiet|skisenter|skicenter|skistadion|alpinsenter|alpinanlegg|skibakke|bergbahnen?|resort|domaine skiable)\b/gi, " ");
+    return t.replace(/[&+]/g, " ").replace(/\s+/g, " ").trim().slice(0, 48);
   }
-  // "Stays near the slopes": the Stay22 map of places to stay around a resort / piste, inside a collapsible card
-  // (collapsed by default on phones, open state remembered), dates + guests + 3 quick filters drive the embed URL,
-  // the iframe loads only when the card is open (and, in Europe, after consent or an explicit click)
-  const STAYF = { budget: "Under {a}", rentals: "Chalets & apartments", rated: "Top rated" };
-  function stayUrl(o) {
+  function stayNear(lat, lon) {       // the resort nearest a point (piste card) for country / region
+    let b = null, bd = 1e9;
+    for (const x of Object.values(BY)) { const d = Math.hypot(x.lat - lat, (x.lon - lon) * Math.cos(lat * Math.PI / 180)); if (d < bd) { bd = d; b = x; } }
+    return bd < 0.25 ? b : null;
+  }
+  function stayLocs(o) {             // candidate locations, best first (address + box, plain lat/lng, cleaner names, region, country)
+    const x = stayNear(o.lat, o.lon) || {}, cty = String(x.country || "").split(/\s*\/\s*/)[0], dl = 0.035, dn = 0.05;
+    const box = { nelat: (o.lat + dl).toFixed(4), nelng: (o.lon + dn).toFixed(4), swlat: (o.lat - dl).toFixed(4), swlng: (o.lon - dn).toFixed(4) };
+    const names = [o.place, stayClean(o.place), x.short, stayClean(x.short), x.region].filter(Boolean).map((s) => String(s).trim()).filter((s) => s.length >= 2);
+    const out = [], seen = new Set();
+    const add = (p) => { const k = JSON.stringify(p); if (!seen.has(k)) { seen.add(k); out.push(p); } };
+    names.slice(0, 2).forEach((n) => add({ address: cty ? n + ", " + cty : n, ...box }));
+    add({ lat: o.lat.toFixed(5), lng: o.lon.toFixed(5) });
+    names.slice(2).forEach((n) => add({ address: cty ? n + ", " + cty : n, ...box }));
+    if (cty) add({ address: cty, ...box });
+    return out;
+  }
+  function stayDates(o) {            // check-in never in the past (local day), check-out after it, at most 21 nights (Stay22 caps at 22)
+    const t = stayToday();
+    const cin = o.cin && o.cin >= t ? o.cin : t;
+    let cout = o.cout && o.cout > cin ? o.cout : addDays(cin, 1);
+    if (cout > addDays(cin, 21)) cout = addDays(cin, 21);
+    return [cin, cout];
+  }
+  function stayUrl(o, loc) {
     const c = SS.S.cfg && SS.S.cfg.stay22;
     if (!c || !c.aid) return "";
-    const q = new URLSearchParams({ aid: c.aid, lat: o.lat.toFixed(5), lng: o.lon.toFixed(5), venue: o.place, checkin: o.cin, checkout: o.cout, adults: String(o.adults),
-      campaign: "snowscope_web_" + o.where + "map", maincolor: "1463F3", zoom: "13", hidesettings: "true", hidebrandlogo: "true", hidefooter: "true",
-      ljs: (I18N.lang || "en"), currency: U.us() ? "USD" : "EUR", unitsystem: U.us() ? "imperial" : "metric", mapstyle: isDarkTheme() ? "dark" : "light" });
-    if (o.f.budget) { q.set("max", "150"); q.set("priceper", "nightly"); }
-    if (o.f.rentals) q.set("showhotels", "false");
-    if (o.f.rated) q.set("minguestrating", "8");
+    const [cin, cout] = stayDates(o), lang = String(I18N.lang || "en").toLowerCase();
+    const q = new URLSearchParams({ aid: c.aid, ...(loc || stayLocs(o)[0]), checkin: cin, checkout: cout, adults: String(Math.min(Math.max(o.adults | 0 || 2, 1), 16)),
+      campaign: ("snowscope_web_" + o.where + "map").replace(/[^a-z0-9_]/gi, ""), maincolor: "1463F3", hidesettings: "true", hidebrandlogo: "true", hidefooter: "true",
+      ljs: STAY_LJS.has(lang) ? lang : lang === "ar" ? "fr" : "en", currency: U.us() ? "USD" : "EUR", unitsystem: U.us() ? "imperial" : "metric", mapstyle: isDarkTheme() ? "dark" : "light" });
+    if (o.f && o.f.budget) { q.set("max", "150"); q.set("priceper", "nightly"); }
+    if (o.f && o.f.rentals) q.set("showhotels", "false");
+    if (o.f && o.f.rated) q.set("minguestrating", "8");
     return "https://www.stay22.com/embed/gm?" + q.toString();
   }
+  async function stayResolve(o) {    // -> the first candidate location Stay22 accepts, or null (nothing / blocked)
+    const key = o.lat.toFixed(4) + "," + o.lon.toFixed(4) + "|" + o.place;
+    if (STAY_OK.has(key)) return STAY_OK.get(key);
+    try { const v = JSON.parse(sessionStorage.getItem("ss_s22|" + key) || "null"); if (v) { STAY_OK.set(key, v); return v; } } catch { /* private */ }
+    let reached = false;
+    for (const loc of stayLocs(o)) {
+      const u = stayUrl({ ...o, f: {} }, loc);
+      try {
+        const ctl = new AbortController(), tm = setTimeout(() => ctl.abort(), 9000);
+        const r = await fetch(u, { mode: "cors", credentials: "omit", signal: ctl.signal }).finally(() => clearTimeout(tm));
+        reached = true;
+        if (r.ok) { STAY_OK.set(key, loc); try { sessionStorage.setItem("ss_s22|" + key, JSON.stringify(loc)); } catch { /* private */ } return loc; }
+      } catch { if (!reached) return undefined; }       // network / blocker: undefined = unknown (not "refused")
+    }
+    return null;
+  }
+  function stayAllez(o, loc) {        // Allez deep link (Stay22 picks the best site) with the location that works for the map
+    const c = SS.S.cfg && SS.S.cfg.stay22;
+    if (!c || !c.aid) return "";
+    const [cin, cout] = stayDates(o);
+    const q = new URLSearchParams({ aid: c.aid });
+    if (loc && loc.address) q.set("address", loc.address); else { q.set("lat", o.lat.toFixed(4)); q.set("lng", o.lon.toFixed(4)); if (o.place) q.set("address", o.place); }
+    q.set("checkin", cin); q.set("checkout", cout); q.set("adults", String(o.adults || 2)); q.set("campaign", "snowscope_web_" + o.where + "allez");
+    return "https://www.stay22.com/allez/roam?" + q.toString();
+  }
+  function stayMapHref(lat, lon, place) {      // "See other deals" in the map popup: the same checked map, full page
+    if (SS.staysHidden()) return "";
+    const o = { lat, lon, place, where: "mappin_", adults: 2, cin: st.day, f: {} }, key = lat.toFixed(4) + "," + lon.toFixed(4) + "|" + place;
+    return stayUrl(o, STAY_OK.get(key) || stayLocs(o)[0]);
+  }
+  // "Stays near the slopes": the Stay22 map of places to stay around a resort / piste, inside a collapsible card
+  // (open on desktop, a one-line preview on phones until opened, open state remembered). The map loads by itself when
+  // the card is open and on screen; in Europe only once the visitor has accepted (Google consent message / TCF), else a
+  // still preview with the partner link, which turns into the map as soon as consent is given.
+  const STAYF = { budget: "Under {a}", rentals: "Chalets & apartments", rated: "Top rated" };
   function stayModule(lat, lon, place, where) {
     if (SS.staysHidden() || !(SS.S.cfg && SS.S.cfg.stay22 && SS.S.cfg.stay22.aid)) return "";
-    const cin0 = st.day > DATA.today ? st.day : DATA.today;
+    const cin0 = st.day > stayToday() ? st.day : stayToday();
     const sv = (() => { try { return JSON.parse(sessionStorage.getItem("ss_staysel") || "null") || {}; } catch { return {}; } })();
-    const cin = sv.cin && sv.cin >= DATA.today ? sv.cin : cin0, cout = sv.cout && sv.cout > cin ? sv.cout : addDays(cin, 1), ad = sv.adults || 2;
+    const cin = sv.cin && sv.cin >= stayToday() ? sv.cin : cin0, cout = sv.cout && sv.cout > cin ? sv.cout : addDays(cin, 1), ad = sv.adults || 2;
     const open = get("ss_fold_stays", innerWidth > 760 ? 1 : 0);
     return '<details class="fold stays" data-fold="stays" data-lat="' + lat + '" data-lon="' + lon + '" data-place="' + esc(place) + '" data-where="' + where + '"' + (open ? " open" : "") + ">" +
-      '<summary>Stays near the slopes<span class="partner">Partner</span></summary>' +
+      '<summary><span class="stsum"><span>Stays near the slopes</span><small>Hotels and chalets near the slopes for your dates.</small></span><span class="partner">Partner</span></summary>' +
       '<p class="note" style="margin:0 0 8px">Partner · we may earn a commission from bookings.</p>' +
-      '<div class="stayctl"><label><span>Check-in</span><input type="date" data-cin value="' + cin + '" min="' + DATA.today + '"></label>' +
+      '<div class="stayctl"><label><span>Check-in</span><input type="date" data-cin value="' + cin + '" min="' + stayToday() + '"></label>' +
       '<label><span>Check-out</span><input type="date" data-cout value="' + cout + '" min="' + addDays(cin, 1) + '"></label>' +
       '<label><span>Guests</span><select data-adults>' + [1, 2, 3, 4, 5, 6, 8].map((n) => '<option value="' + n + '"' + (n === ad ? " selected" : "") + ">" + n + "</option>").join("") + "</select></label></div>" +
       '<div class="pills inl stayf" role="group" aria-label="Filters">' + Object.entries(STAYF).map(([k, v]) => '<button class="pill" data-sf="' + k + '" aria-pressed="' + !!(sv.f && sv.f[k]) + '">' +
         esc(k === "budget" ? I18N.tu(v, U.us() ? "$150" : "€150") : v) + "</button>").join("") + "</div>" +
-      '<div class="staymap" data-staybox><div class="skel"></div></div>' +
+      '<div class="staymap" data-staybox><div class="stayload"><span class="ms">hotel</span><p>Loading places to stay…</p></div></div>' +
       '<a class="btn tonal stayout" target="_blank" rel="sponsored noopener" data-stayout href="#"><span class="ms">open_in_new</span>Open the full map</a></details>';
   }
   function bindStays(box) {
     box.querySelectorAll("details.stays").forEach((d) => {
       const read = () => ({ lat: +d.dataset.lat, lon: +d.dataset.lon, place: d.dataset.place, where: d.dataset.where,
-        cin: d.querySelector("[data-cin]").value || DATA.today, cout: d.querySelector("[data-cout]").value, adults: +d.querySelector("[data-adults]").value || 2,
+        cin: d.querySelector("[data-cin]").value || stayToday(), cout: d.querySelector("[data-cout]").value, adults: +d.querySelector("[data-adults]").value || 2,
         f: Object.fromEntries([...d.querySelectorAll("[data-sf]")].map((b) => [b.dataset.sf, b.getAttribute("aria-pressed") === "true"])) });
-      let consent = null;
-      const load = async (force) => {
-        if (!d.open) return;
-        const o = read();
-        if (!o.cout || o.cout <= o.cin) { o.cout = addDays(o.cin, 1); d.querySelector("[data-cout]").value = o.cout; }
+      const sb = d.querySelector("[data-staybox]"), out = d.querySelector("[data-stayout]");
+      let consent = null, seen = false, gen = 0, watching = false;
+      const fail = (o, loc) => {
+        sb.innerHTML = '<div class="stayask"><span class="ms">wrong_location</span><p>Couldn\'t load the map of places to stay.</p><div class="acts3">' +
+          '<a class="btn ink" target="_blank" rel="sponsored noopener" href="' + esc(stayAllez(o, loc)) + '"><span class="ms">open_in_new</span>Open places to stay</a>' +
+          '<button class="btn tonal" data-stayretry><span class="ms">refresh</span>Try again</button></div></div>';
+        if (out) out.href = stayAllez(o, loc);
+        sb.querySelector("[data-stayretry]").onclick = () => { const k = o.lat.toFixed(4) + "," + o.lon.toFixed(4) + "|" + o.place; STAY_OK.delete(k); try { sessionStorage.removeItem("ss_s22|" + k); } catch { /* private */ } sb.innerHTML = '<div class="stayload"><span class="ms">hotel</span><p>Loading places to stay…</p></div>'; load(); };
+      };
+      const preview = (o) => {      // no consent (EEA): a still card with the partner link, no third-party load
+        sb.innerHTML = '<div class="stayask still"><span class="ms">hotel</span><p>Best prices for your dates on our partner\'s map.</p>' +
+          '<a class="btn ink" target="_blank" rel="sponsored noopener" href="' + esc(stayAllez(o, null)) + '"><span class="ms">open_in_new</span>See places to stay</a></div>';
+        if (out) out.href = stayAllez(o, null);
+        if (!watching) { watching = true; SS.stayConsentWatch(() => { consent = true; load(); }); }
+      };
+      const load = async () => {
+        if (!d.open || !seen) return;
+        const o = read(), my = ++gen;
+        const [cin, cout] = stayDates(o);
+        if (o.cin !== cin) d.querySelector("[data-cin]").value = o.cin = cin;
+        if (o.cout !== cout) d.querySelector("[data-cout]").value = o.cout = cout;
         d.querySelector("[data-cout]").min = addDays(o.cin, 1);
         try { sessionStorage.setItem("ss_staysel", JSON.stringify({ cin: o.cin, cout: o.cout, adults: o.adults, f: o.f })); } catch { /* private */ }
-        const u = stayUrl(o), a = d.querySelector("[data-stayout]"); if (a) a.href = u;
-        const sb = d.querySelector("[data-staybox]");
         if (consent === null) consent = await SS.stayConsent();
-        if (!consent && !force) {
-          sb.innerHTML = '<div class="stayask"><span class="ms">map</span><p>The map of places to stay comes from our booking partner.</p><button class="btn ink" data-stayload>Show the map</button></div>';
-          sb.querySelector("[data-stayload]").onclick = () => { consent = true; load(true); };
-          return;
-        }
-        const f = sb.querySelector("iframe");
+        if (my !== gen) return;
+        if (!consent) { preview(o); return; }
+        const loc = await stayResolve(o);
+        if (my !== gen) return;
+        if (!loc) { fail(o, loc); return; }
+        const u = stayUrl(o, loc);
+        if (out) out.href = u;
+        let f = sb.querySelector("iframe");
         if (f) { if (f.src !== u) f.src = u; return; }
-        sb.innerHTML = '<iframe loading="lazy" title="' + esc(I18N.t("Places to stay near") + " " + o.place) + '" src="' + esc(u) + '" referrerpolicy="strict-origin-when-cross-origin"></iframe>';
+        sb.innerHTML = '<div class="stayload"><span class="ms">hotel</span><p>Loading places to stay…</p></div><iframe title="' + esc(I18N.tu("Stays near {a}", o.place)) + '" src="' + esc(u) + '" referrerpolicy="strict-origin-when-cross-origin"></iframe>';
+        f = sb.querySelector("iframe");
+        const tm = setTimeout(() => { if (my === gen && !f.dataset.ok) fail(o, loc); }, 20000);      // the frame never answered
+        f.addEventListener("load", () => { clearTimeout(tm); f.dataset.ok = 1; sb.classList.add("ok"); }, { once: true });
       };
       d.addEventListener("toggle", () => { if (d.open) load(); });
       d.addEventListener("change", (e) => { if (e.target.matches("input,select")) load(); });
       d.querySelectorAll("[data-sf]").forEach((b) => { b.onclick = () => { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") !== "true"); load(); }; });
-      if (d.open) load();
-      if (st.openStays) { st.openStays = false; d.open = true; load(); setTimeout(() => d.scrollIntoView({ behavior: "smooth", block: "start" }), 250); }
+      if ("IntersectionObserver" in window) {
+        const io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { io.disconnect(); seen = true; load(); } }, { rootMargin: "300px 0px" });
+        io.observe(d);
+      } else { seen = true; load(); }
+      if (st.openStays) { st.openStays = false; d.open = true; seen = true; load(); setTimeout(() => d.scrollIntoView({ behavior: "smooth", block: "start" }), 250); }
     });
   }
   function stayHref(lat, lon, place, where, day) {
@@ -2266,6 +2363,11 @@
   const started = SS.start();
   try { DATA = await SS.getJSON(BASE + "snow/data.json?v=" + Math.floor(Date.now() / 3e5)); }
   catch { toast("Today's snow could not be loaded. Try again in a minute.", 8000); return; }
+  // "Today" is the visitor's real date, not the date of the last published run (owner 2026-11-03: before the morning run
+  // the site said "Today 2" on the 3rd). The published days hold the next days as forecast, so today's values are there;
+  // days before today read as analysis, today and later as forecast. A run older than yesterday -> "Updating…" chip.
+  DATA.runDay = DATA.today;
+  { const real = localToday(); if (DATA.dates.includes(real)) DATA.today = real; DATA.stale = !!DATA.run && DATA.run < addDays(real, -1); }
   RES = SS.resorts().then((r) => { BY = Object.fromEntries(r.rows.map((x) => [x.slug, x])); return r; });
   st.day = DATA.dates.includes(DATA.today) ? DATA.today : DATA.dates[DATA.dates.length - 1];
   const dq = new URLSearchParams(location.search).get("d");
@@ -2327,6 +2429,7 @@
       refreshStations();
       loadFine();
     });
+    map.once("idle", () => drawStays());   // the start view was set before the moveend listener: show the stay chip now
     refreshStations();                 // the start view was set above, before this listener existed
     loadFine();
     if (st.over.pistes) loadPistes();  // same: onStyle ran at the z5 start view

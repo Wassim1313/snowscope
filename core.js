@@ -307,7 +307,8 @@
     const s = S.cfg && S.cfg.stay22;
     if (!s || !s.aid) return null;
     const [cin, cout] = nextWeekend();
-    const q = new URLSearchParams({ aid: s.aid, lat: lat.toFixed(4), lng: lon.toFixed(4), venue: place, checkin: cin,
+    // address + view box, not lat/lng: Stay22 refuses most lat/lng (its reverse geocoder, 2026-11-03, see app.js stayLocs)
+    const q = new URLSearchParams({ aid: s.aid, address: place || "", nelat: (lat + 0.035).toFixed(4), nelng: (lon + 0.05).toFixed(4), swlat: (lat - 0.035).toFixed(4), swlng: (lon - 0.05).toFixed(4), checkin: cin,
                                     checkout: cout, adults: "2", campaign: s.campaign || "snowscope_web", maincolor: "1463F3" });
     return "https://www.stay22.com/embed/gm?" + q.toString();
   }
@@ -391,6 +392,20 @@
       };
       poll();
     });
+  }
+
+  // consent given later (the visitor answers the Google consent message after the page opened) -> cb() once
+  function stayConsentWatch(cb) {
+    let done = false, tries = 0;
+    const go = () => { if (!done) { done = true; cb(); } };
+    const hook = () => {
+      if (typeof window.__tcfapi !== "function") { if (++tries < 40) setTimeout(hook, 1500); return; }
+      window.__tcfapi("addEventListener", 2, (tc, good) => {
+        if (!good || !tc || (tc.eventStatus !== "tcloaded" && tc.eventStatus !== "useractioncomplete")) return;
+        if (tc.gdprApplies === false || (tc.purpose && tc.purpose.consents && tc.purpose.consents[1])) go();
+      });
+    };
+    hook();
   }
 
   // ------------------------------------------------------------------ modals
@@ -606,6 +621,6 @@
     return S;
   }
 
-  window.SS = { U, S, stayConsent, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
+  window.SS = { U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
                 resorts, mapLib, transformRequest, onChange: (f) => S.listeners.push(f), store, ROOT };
 })();
