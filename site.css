@@ -796,3 +796,13 @@ details.wsmore[open]>summary::after{content:" ▴"}
 .wspix .bar{position:relative;height:10px;border-radius:5px;background:var(--surface2);direction:ltr}
 .wspix .bar .rg{position:absolute;top:0;bottom:0;border-radius:5px;background:var(--accent-tint);box-shadow:inset 0 0 0 1px var(--accent)}
 .wspix .bar .md{position:absolute;top:-3px;bottom:-3px;width:3px;margin-left:-1.5px;border-radius:2px;background:var(--accent)}
+/* Stays card v3 (Stay22 viewability, owner 2026-11-03): compact, map first, high in the resort panel */
+details.stays .staymap{height:220px;margin:0 0 10px}
+details.stays .stayctl{margin:0 0 6px}
+details.stays .stayf{margin:0 0 6px}
+.stayfoot{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.stayfoot .note{margin:0!important;font-size:12px!important}
+.stayfoot .btn.sm{min-height:40px}
+.rowlink.stayrow{width:100%;border-left:0;border-right:0;background:none;font:inherit;cursor:pointer;text-align:start;margin:8px 0}
+.rowlink.stayrow small .partner{font-size:11px;padding:1px 6px;border-radius:999px;background:var(--surface2)}
+@media (max-width:760px){details.stays .staymap{height:180px}}

@@ -612,9 +612,25 @@
       } catch { /* ignore */ }
     }
   }
+  // first-party event beacon (same counter as page views, src "stay22"): /ad/stay22/<placement>/<load|view|click|tap>
+  // (docs/WEB.md "Stay22 viewability"); no cookie, no personal data
+  const HITS = new Set();
+  function hit(path, src, once) {
+    if (BOT || !S.api || !navigator.sendBeacon) return;
+    if (once) { if (HITS.has(once)) return; HITS.add(once); }
+    try {
+      navigator.sendBeacon(S.api + "/v1/hit", new Blob([JSON.stringify({ path: String(path).slice(0, 200), ref: "", src: src || "web",
+        lang: (window.I18N && I18N.lang) || "" })], { type: "text/plain" }));
+    } catch { /* ignore */ }
+  }
   document.addEventListener("click", (e) => {            // which Stay22 placement works (no personal data)
     const a = e.target.closest('a[href*="stay22.com"]');
-    if (a) { const m = /campaign=([a-z0-9_]+)/.exec(a.href); track("book_click", { placement: m ? m[1] : "web" }); }
+    if (a) {
+      const m = /campaign=([a-z0-9_]+)/.exec(a.href);
+      track("book_click", { placement: m ? m[1] : "web" });
+      const pl = a.dataset.s22 || (m ? m[1].replace(/^snowscope_web_?/, "").replace(/(map|allez)$/, "") : "") || "web";
+      hit("/ad/stay22/" + pl + "/click", "stay22");
+    }
   }, true);
   async function start() {
     await loadConfig();
@@ -645,6 +661,6 @@
     return S;
   }
 
-  window.SS = { proHere, proIn, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
+  window.SS = { proHere, proIn, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
                 resorts, mapLib, transformRequest, onChange: (f) => S.listeners.push(f), store, ROOT };
 })();

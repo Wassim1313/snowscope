@@ -17,7 +17,9 @@
   const addDays = (d, k) => { const x = D(d); x.setUTCDate(x.getUTCDate() + k); return x.toISOString().slice(0, 10); };
   const mercY = (lat) => Math.log(Math.tan(Math.PI / 4 + lat * Math.PI / 360));
   const store = SS.store;
-  const DEPTH = [[1, [198, 219, 239]], [10, [158, 202, 225]], [25, [107, 174, 214]], [50, [66, 146, 198]], [100, [33, 113, 181]], [150, [8, 81, 156]], [250, [8, 48, 107]], [400, [37, 0, 79]]];
+  // thin snow (1-10 cm on the 400 scale, 1-2.5 cm on the default 100 scale) is a clear sky blue, not the near-white
+  // of the ColorBrewer ramp that vanished on the light basemap (owner 2026-11-03: "Oukaïmeden snow not visible")
+  const DEPTH = [[1, [128, 184, 236]], [10, [116, 178, 228]], [25, [107, 174, 214]], [50, [66, 146, 198]], [100, [33, 113, 181]], [150, [8, 81, 156]], [250, [8, 48, 107]], [400, [37, 0, 79]]];
   const NEW = [[1, [247, 252, 185]], [5, [199, 233, 180]], [10, [127, 205, 187]], [20, [65, 182, 196]], [30, [29, 145, 192]], [50, [34, 94, 168]], [80, [12, 44, 132]]];
   const WIND = [[0, [214, 236, 246]], [10, [158, 210, 226]], [20, [107, 191, 143]], [35, [242, 212, 92]], [50, [242, 155, 63]], [70, [224, 83, 58]], [100, [158, 31, 99]]];
   const FREEZE = [[0, [44, 62, 145]], [1000, [74, 120, 194]], [1500, [111, 168, 220]], [2000, [168, 213, 226]], [2500, [243, 231, 155]], [3000, [246, 178, 107]], [3500, [224, 102, 102]], [4500, [166, 28, 60]]];
@@ -919,9 +921,19 @@
   // listing / price data in the browser (its Direct Travel API needs an approved server key, sign-ups paused, no
   // storing), so no hotel name or price is invented here. Tap -> the resort panel with the Stays map open.
   let stayMk = null;
+  // contextual "Stays" entry points (Powder hero, Where-to-ski cards, point panel, map chip): open the resort panel with
+  // the Stays card scrolled into view; the card then counts load / view / click under the placement it came from
+  const staysOn = () => !!stayModule(0, 0, "", "x");
+  function openStays(slug, via) {
+    if (!slug || !BY[slug]) return;
+    SS.hit("/ad/stay22/" + via + "/tap", "stay22");
+    st.openStays = true; st.staysVia = via;
+    if (st.slug === slug) { renderPanel(); } else openResort(slug);
+    if (innerWidth <= 760) setSheet("full");
+  }
   function stayChipClick(x) {
     st.stayClick = Date.now();
-    if (x.slug && BY[x.slug] && stayModule(0, 0, "", "x")) { st.openStays = true; openResort(x.slug); if (innerWidth <= 760) setSheet("full"); return; }
+    if (x.slug && BY[x.slug] && staysOn()) { openStays(x.slug, "mapchip"); return; }
     const u = stayHref(x.lat, x.lon, x.short, "mappin"), other = stayMapHref(x.lat, x.lon, x.short);
     if (!u) return;
     if (popup) popup.remove();
@@ -941,14 +953,14 @@
     el.innerHTML = '<span class="sci" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M3 6a1 1 0 0 1 2 0v7h6V9a1 1 0 0 1 1-1h6a3 3 0 0 1 3 3v7a1 1 0 0 1-2 0v-2H5v2a1 1 0 0 1-2 0V6Zm4.5 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg></span>' +
       '<span class="sct"><b>' + esc(I18N.tu("Stays near {a}", nm)) + '</b><small>' + esc(I18N.t("Places to stay · see prices")) + '</small></span><span class="partner">' + esc(I18N.t("Partner")) + "</span>";
     el.addEventListener("click", (e) => { e.stopPropagation(); stayChipClick(x); });
-    stayMk = new LIB.Marker({ element: el, anchor: "top", offset: [0, 36] }).setLngLat([x.lon, x.lat]).addTo(map);
+    stayMk = new LIB.Marker({ element: el, anchor: document.documentElement.dir === "rtl" ? "right" : "left", offset: [document.documentElement.dir === "rtl" ? -16 : 16, -10] }).setLngLat([x.lon, x.lat]).addTo(map);
     el.setAttribute("aria-label", I18N.tu("Stays near {a}", x.short));       // the map library sets "Map marker"
     stayMk._slug = x.slug;
   }
   async function drawStays() {
     if (!ready || !map.getSource("stays")) return;
     const res = await RES.catch(() => null);
-    const on = st.over.stays && !SS.staysHidden() && res && map.getZoom() >= 10;
+    const on = st.over.stays && !SS.staysHidden() && res && map.getZoom() >= 11;
     // owner rule: never more than one stay chip on screen -> the resort nearest the centre of the view
     let best = null;
     if (on) {
@@ -1306,6 +1318,7 @@
     fillDemos();
     bindFolds(box); bindStays(box);
     box.querySelectorAll("[data-open]").forEach((b) => { b.onclick = (e) => { e.preventDefault(); openResort(b.dataset.open); }; });
+    box.querySelectorAll("[data-openstays]").forEach((b) => { b.onclick = (e) => { e.preventDefault(); openStays(b.dataset.openstays, b.dataset.via || "panel"); }; });
     box.querySelectorAll("[data-goregion]").forEach((b) => { b.onclick = () => { store.set("ss_region_pick", 1); flyRegion(b.dataset.goregion); }; });
     bindStations(box);
     if (SS.S.started) SS.Ads.start();
@@ -1422,7 +1435,7 @@
       '<div class="stat"><b>' + (n72 ? "+" + cmS(n72) : "–") + "</b><small>new, 3 days</small></div></div>" +
       (bestDay(res, x) ? '<p class="none" style="padding:0 0 8px">Best day: <b style="color:var(--ink)">' + bestDay(res, x) + "</b></p>" : "") +
       '<div class="acts3"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a>' +
-      (stayHref(x.lat, x.lon, x.short, "card", res.dates[ti]) ? '<a class="btn tonal staychip" target="_blank" rel="sponsored noopener" title="Partner link: we may earn a commission" href="' + esc(stayHref(x.lat, x.lon, x.short, "card", res.dates[ti])) + '"><span class="ms">hotel</span>Stay</a>' : "") +
+      (staysOn() ? '<button class="btn tonal" data-openstays="' + esc(x.slug) + '" data-via="ski" title="Places to stay (partner)"><span class="ms">hotel</span>Stay</button>' : "") +
       '<button class="btn tonal" data-open="' + esc(x.slug) + '"><span class="ms">info</span>Details</button>' +
       '<button class="btn ink" data-share="' + esc(x.slug) + '" data-sd="' + (res.dates[ti] || DATA.today) + '"><span class="ms">share</span>Share</button></div></article>';
   }
@@ -1516,6 +1529,8 @@
         '<div class="stat"><b>' + (st.p72 ? (tsn[1] ? "+" + cmS(tsn[1]) : "–") : (n72 ? "+" + cmS(n72) : "–")) + "</b><small>" + (st.p72 ? "in 24 hours" : "in 3 days") + "</small></div>" +
         '<div class="stat"><b>' + (top.top_m ? fmt(top.top_m) + "<small>m</small>" : "–") + "</b><small>upper slopes</small></div></div>" +
         strip7(res, top) + measuredHtml(top.lat, top.lon, top.top_m || null, false) +
+        (staysOn() ? '<button class="rowlink stayrow" data-openstays="' + esc(top.slug) + '" data-via="powder"><span class="ms">hotel</span><span><b>' + esc(I18N.tu("Places to stay near {a}", top.short)) + "</b><small>" +
+          esc(D(st.day > DATA.today ? st.day : DATA.today).toLocaleDateString(LOC, { weekday: "long", day: "numeric", month: "short", timeZone: "UTC" })) + ' · <span class="partner">' + esc(I18N.t("Partner")) + '</span></small></span><span class="ms">chevron_right</span></button>' : "") +
         '<div class="acts3"><button class="btn ink" data-open="' + esc(top.slug) + '"><span class="ms">info</span>Details</button><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + top.lat + "," + top.lon + '"><span class="ms">directions_car</span>Directions</a>' +
         '<button class="btn tonal" data-share="' + esc(top.slug) + '" data-sd="' + DATA.today + '"><span class="ms">share</span>Share</button></div></article>';
     }
@@ -1698,7 +1713,7 @@
     box.innerHTML = '<div class="phead"><button class="back" data-back><span class="ms">arrow_back</span>Back</button><div class="over"><i class="pdot" style="background:' + col + '"></i>' +
       esc(I18N.t(PNAME[P.diff] || "Piste")) + '</div><h1>' + esc(name) + '</h1><p class="lede" id="psMeta"><span class="skel" style="display:inline-block;height:14px;width:60%"></span></p></div>' +
       '<div class="card"><div class="over">Snow depth along the run</div><small class="none">' + esc(st.day === DATA.today ? I18N.t("Today") : longDay(st.day)) + '</small><div id="psChart"><div class="skel" style="height:180px;margin-top:8px"></div></div><p class="verdict" id="psVerdict"></p></div>' +
-      '<table class="kv" id="psKv"></table>' + stayModule(P.coords[0][1], P.coords[0][0], name, "piste") + footer();
+      stayModule(P.coords[0][1], P.coords[0][0], name, "piste") + '<table class="kv" id="psKv"></table>' + footer();
     box.querySelector("[data-back]").onclick = () => { clearPiste(); renderPanel(); };
     afterRender();
     if (await pisteProfileV2(P, id)) return;      // /v1/pistes/profile (height-corrected); the client sampling below is the fallback
@@ -1755,6 +1770,7 @@
     history.replaceState(null, "", BASE + "#" + slugOf(st.region));
     renderPanel();
   }
+  const PTDAYS = new WeakMap(), PTCTX = new WeakMap();
   async function pointView(pt) {
     const box = $("pbody"), ll = { lat: pt.lat, lng: pt.lon }, r = regionAt(ll);
     const days = r ? await Promise.all(DATA.dates.map(async (d) => {
@@ -1781,19 +1797,33 @@
       (window.SSX ? fold("hours", "Hour by hour", '<div id="ptMeteo"><div class="skel" style="height:230px"></div></div>') : "") +
       '<div class="acts3" style="margin-top:14px"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + pt.lat + "," + pt.lon + '"><span class="ms">directions_car</span>Directions</a>' +
       '<button class="btn tonal" data-sharept><span class="ms">share</span>Share</button>' +
-      (SS.stayLink(pt.lat, pt.lon, n ? n[0].short : "") ? '<a class="btn tonal" target="_blank" rel="sponsored noopener" href="' + esc(stayHref(pt.lat, pt.lon, n ? n[0].short : "", "point")) + '"><span class="ms">hotel</span>Stay</a>' : "") + "</div>" +
+      (n && staysOn() ? '<button class="btn tonal" data-openstays="' + esc(n[0].slug) + '" data-via="point" title="Places to stay (partner)"><span class="ms">hotel</span>Stay</button>' : "") + "</div>" +
       (n ? '<button class="rrow" style="width:100%;border:0;background:none;text-align:start;margin-top:8px" data-open="' + esc(n[0].slug) + '"><span class="nm"><b>' + esc(n[0].short) + "</b><small>" + U.dist(Math.round(n[1])) + '</small></span><span class="ms">chevron_right</span></button>' : "") + footer();
     box.querySelector("[data-back]").onclick = closePoint;
     box.querySelector("[data-sharept]").onclick = () => sharePoint(pt, n, today);
     afterRender();
     if (window.SSX) SSX.meteogram(pt, days, r);
+    PTDAYS.set(pt, days); PTCTX.set(pt, { elev, ns });
     pointChart(pt, days, { elev, ns });
+  }
+  // past winters for a spot (/v1/history/point, precomputed, answers in < 1 s): 15 s per try, one retry (the tunnel or
+  // an expired sign-in token can fail once), answers kept for the visit (failures are never cached)
+  const HIST = new Map();
+  async function histPoint(lat, lon, auth) {
+    const k = (+lat).toFixed(4) + "," + (+lon).toFixed(4);
+    if (HIST.has(k)) return HIST.get(k);
+    const q = "/v1/history/point?lat=" + lat + "&lon=" + lon;
+    let h;
+    try { h = await SS.api(q, { auth, timeout: 15000 }); }
+    catch (e) { await new Promise((ok) => setTimeout(ok, 1200)); h = await SS.api(q, { auth: false, timeout: 15000 }); }
+    if (h) HIST.set(k, h);
+    return h;
   }
   async function pointChart(pt, days, ctx = {}) {
     const box = $("ptChart");
     let h = null, live = null;
     let herr = null;
-    try { h = await SS.api("/v1/history/point?lat=" + pt.lat + "&lon=" + pt.lon, { auth: true, timeout: 20000 }); } catch (e) { h = null; herr = e; }
+    try { h = await histPoint(pt.lat, pt.lon, true); } catch (e) { h = null; herr = e; }
     if (st.pro && proLive()) {
       try {
         const fine = DATA.regions.some((r) => r.fine && regionAt({ lat: pt.lat, lng: pt.lon }) === r);
@@ -1862,7 +1892,7 @@
   // season fan (min-max, 10-90, 25-75, median, this season, today), the 5 deepest / 5 thinnest winters on this date and
   // the pixel band (low / median / high) when the history answer has it. Data: /v1/history/point compare (v2).
   function rampCol(cm) {
-    const R = (DATA && DATA.ramp) || [[1, [198, 219, 239]], [400, [37, 0, 79]]];
+    const R = DEPTH;
     if (cm == null || cm < 1) return "var(--surface3)";
     let c = R[R.length - 1][1];
     for (let i = 0; i < R.length; i++) { if (cm <= R[i][0]) { const a = R[Math.max(0, i - 1)], b = R[i], t = i ? (cm - a[0]) / Math.max(1, b[0] - a[0]) : 1; c = a[1].map((q, k) => Math.round(q + (b[1][k] - q) * t)); break; } }
@@ -1962,8 +1992,10 @@
     const t0 = cp && cp.today.value_cm != null ? { dep: cp.today.value_cm } : byDate[DATA.today];
     const B = ["min", "p10", "p25", "p50", "p75", "p90", "max"].map((k) => (cp ? cp.today.normal[k] : at(k, DATA.today)));
     if (!h || !t0 || B.some((v) => v == null)) {
-      box.innerHTML = '<p class="none">' + (!h ? (herr && herr.status === 503 ? "Past winters for this spot are being prepared. Try again tomorrow." : "Past winters are updating, try again in a minute.") : "No past winters for this spot.") + "</p>";
+      box.innerHTML = '<p class="none">' + (!h ? esc(I18N.t("Couldn't load past winters.")) + ' <button class="linkbtn" data-hretry><span class="ms" style="font-size:18px;vertical-align:-4px">refresh</span>' + esc(I18N.t("Retry")) + "</button>" : "No past winters for this spot.") + "</p>";
       if (rk) rk.textContent = "";
+      const rb = box.querySelector("[data-hretry]");
+      if (rb) rb.onclick = () => { const pt = st.point; if (!pt) return; box.innerHTML = '<div class="skel" style="height:118px"></div>'; if ($("ptChart")) $("ptChart").innerHTML = '<div class="skel" style="height:190px;margin-top:10px"></div>'; pointChart(pt, PTDAYS.get(pt) || [], PTCTX.get(pt) || {}); };
       return;
     }
     const [mn, p10, p25, p50, p75, p90, mx] = B, v = t0.dep, P = [0, 10, 25, 50, 75, 90, 100];
@@ -2147,17 +2179,19 @@
     const cin0 = st.day > stayToday() ? st.day : stayToday();
     const sv = (() => { try { return JSON.parse(sessionStorage.getItem("ss_staysel") || "null") || {}; } catch { return {}; } })();
     const cin = sv.cin && sv.cin >= stayToday() ? sv.cin : cin0, cout = sv.cout && sv.cout > cin ? sv.cout : addDays(cin, 1), ad = sv.adults || 2;
-    const open = get("ss_fold_stays", innerWidth > 760 ? 1 : 0);
-    return '<details class="fold stays" data-fold="stays" data-lat="' + lat + '" data-lon="' + lon + '" data-place="' + esc(place) + '" data-where="' + where + '"' + (open ? " open" : "") + ">" +
+    // compact card, open by default (owner 2026-11-03, Stay22 viewability): live map first (220 px desktop, 180 px phone),
+    // then dates / guests / filters; the map loads only once the card is half on screen (bindStays)
+    const open = get("ss_fold_stays2", 1);
+    return '<details class="fold stays" data-fold="stays2" data-lat="' + lat + '" data-lon="' + lon + '" data-place="' + esc(place) + '" data-where="' + where + '"' + (open ? " open" : "") + ">" +
       '<summary><span class="stsum"><span>Stays near the slopes</span><small>Hotels and chalets near the slopes for your dates.</small></span><span class="partner">Partner</span></summary>' +
-      '<p class="note" style="margin:0 0 8px">Partner · we may earn a commission from bookings.</p>' +
+      '<div class="staymap" data-staybox><div class="stayload"><span class="ms">hotel</span><p>Loading places to stay…</p></div></div>' +
       '<div class="stayctl"><label><span>Check-in</span><input type="date" data-cin value="' + cin + '" min="' + stayToday() + '"></label>' +
       '<label><span>Check-out</span><input type="date" data-cout value="' + cout + '" min="' + addDays(cin, 1) + '"></label>' +
       '<label><span>Guests</span><select data-adults>' + [1, 2, 3, 4, 5, 6, 8].map((n) => '<option value="' + n + '"' + (n === ad ? " selected" : "") + ">" + n + "</option>").join("") + "</select></label></div>" +
       '<div class="pills inl stayf" role="group" aria-label="Filters">' + Object.entries(STAYF).map(([k, v]) => '<button class="pill" data-sf="' + k + '" aria-pressed="' + !!(sv.f && sv.f[k]) + '">' +
         esc(k === "budget" ? I18N.tu(v, U.us() ? "$150" : "€150") : v) + "</button>").join("") + "</div>" +
-      '<div class="staymap" data-staybox><div class="stayload"><span class="ms">hotel</span><p>Loading places to stay…</p></div></div>' +
-      '<a class="btn tonal stayout" target="_blank" rel="sponsored noopener" data-stayout href="#"><span class="ms">open_in_new</span>Open the full map</a></details>';
+      '<div class="stayfoot"><a class="btn tonal sm stayout" target="_blank" rel="sponsored noopener" data-stayout data-s22="' + esc(where) + '" href="#"><span class="ms">open_in_new</span>Open the full map</a>' +
+      '<p class="note">Partner · we may earn a commission from bookings.</p></div></details>';
   }
   function bindStays(box) {
     box.querySelectorAll("details.stays").forEach((d) => {
@@ -2199,17 +2233,29 @@
         if (f) { if (f.src !== u) f.src = u; return; }
         sb.innerHTML = '<div class="stayload"><span class="ms">hotel</span><p>Loading places to stay…</p></div><iframe title="' + esc(I18N.tu("Stays near {a}", o.place)) + '" src="' + esc(u) + '" referrerpolicy="strict-origin-when-cross-origin"></iframe>';
         f = sb.querySelector("iframe");
+        SS.hit("/ad/stay22/" + (d.dataset.where || "panel") + "/load", "stay22", "l|" + (d.dataset.where || "panel") + "|" + d.dataset.lat + "," + d.dataset.lon);
         const tm = setTimeout(() => { if (my === gen && !f.dataset.ok) fail(o, loc); }, 20000);      // the frame never answered
-        f.addEventListener("load", () => { clearTimeout(tm); f.dataset.ok = 1; sb.classList.add("ok"); }, { once: true });
+        f.addEventListener("load", () => { clearTimeout(tm); f.dataset.ok = 1; sb.classList.add("ok"); sb.dispatchEvent(new Event("s22load")); }, { once: true });
       };
       d.addEventListener("toggle", () => { if (d.open) load(); });
       d.addEventListener("change", (e) => { if (e.target.matches("input,select")) load(); });
       d.querySelectorAll("[data-sf]").forEach((b) => { b.onclick = () => { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") !== "true"); load(); }; });
+      // viewability (owner 2026-11-03): the Stay22 frame (and its location check) loads only once the map box is at
+      // least half on screen; "view" = frame loaded + half on screen for 1 s; "click" = focus moved into the frame
+      const pl = d.dataset.where || "panel", key = pl + "|" + d.dataset.lat + "," + d.dataset.lon;
+      let vis = false, viewT = 0;
+      const tryView = () => { clearTimeout(viewT); const f = sb.querySelector("iframe"); if (vis && f && f.dataset.ok) viewT = setTimeout(() => { if (vis) SS.hit("/ad/stay22/" + pl + "/view", "stay22", "v|" + key); }, 1000); };
+      sb.addEventListener("s22load", tryView);
       if ("IntersectionObserver" in window) {
-        const io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { io.disconnect(); seen = true; load(); } }, { rootMargin: "300px 0px" });
-        io.observe(d);
+        const io = new IntersectionObserver((es) => {
+          const e = es[es.length - 1]; vis = e.isIntersecting && e.intersectionRatio >= 0.5;
+          if (vis && !seen) { seen = true; load(); }
+          tryView();
+        }, { threshold: [0, 0.5, 1] });
+        io.observe(sb);
       } else { seen = true; load(); }
-      if (st.openStays) { st.openStays = false; d.open = true; seen = true; load(); setTimeout(() => d.scrollIntoView({ behavior: "smooth", block: "start" }), 250); }
+      window.addEventListener("blur", () => { const f = sb.querySelector("iframe"); if (f && document.activeElement === f) SS.hit("/ad/stay22/" + pl + "/click", "stay22", "c|" + key); });
+      if (st.openStays) { st.openStays = false; d.open = true; setTimeout(() => d.scrollIntoView({ behavior: "smooth", block: "start" }), 250); }
     });
   }
   function stayHref(lat, lon, place, where, day) {
@@ -2354,11 +2400,12 @@
       (s30 ? '<p class="measured s30"><span class="k">Sharp 30 m</span> <b>' + U.depth(Math.round(s30.depth_cm)) + "</b>" + (s30.elevation_m ? " · " + U.elev(s30.elevation_m) : "") + "</p>" : "") +
       measuredHtml(x.lat, x.lon, x.top_m || null, false) +
       '<div class="sect">Snow depth on the upper slopes, ' + U.du() + '</div><div id="rDays"></div>' +
+      stayModule(x.lat, x.lon, x.short, st.staysVia || "panel") +
       adSlot("resort", x) +
-      '<div class="sect">This season vs past winters</div><div id="rStrip"></div><div id="rHist"></div>' +
+      '<div class="sect">This season vs past winters</div><div id="rStrip"><div class="skel" style="height:118px"></div></div><div id="rHist"></div>' +
       '<div class="sect">Next 7 days</div><div id="rFc"></div>' +
-      stayModule(x.lat, x.lon, x.short, "panel") +
       '<div class="sect">Nearby resorts</div>' + near.map(([km, y]) => resRow(y, null, (y.snow[ti] || [])[0], U.dist(Math.round(km)), (y.snow[ti] || [])[1])).join("") + appCard() + footer();
+    st.staysVia = null;
     box.querySelector("[data-back]").onclick = () => (st.pushed ? history.back() : closeResort());
     box.querySelector(".hero2").insertAdjacentHTML("afterend", '<div class="acts3" style="margin-bottom:6px"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a><button class="btn ink" data-share="' + esc(slug) + '" data-sd="' + st.day + '"><span class="ms">share</span>Share</button>' +
       (stayModule(0, 0, "", "x") ? '<button class="btn tonal" data-gostays><span class="ms">hotel</span>Stays</button>' : "") + "</div>" +
@@ -2456,11 +2503,17 @@
   async function resortStrip(x) {     // the winter strip for the resort point (free /v1/history/point), same component as a point
     const box = $("rStrip"); if (!box || !SS.S.api) return;
     let h = null;
-    try { h = await SS.api("/v1/history/point?lat=" + x.lat + "&lon=" + x.lon, { auth: false, timeout: 20000 }); } catch { return; }
+    try { h = await histPoint(x.lat, x.lon, false); } catch {
+      if ($("rStrip") && st.slug === x.slug) {
+        $("rStrip").innerHTML = '<p class="none">' + esc(I18N.t("Couldn't load past winters.")) + ' <button class="linkbtn" data-hretry><span class="ms" style="font-size:18px;vertical-align:-4px">refresh</span>' + esc(I18N.t("Retry")) + "</button></p>";
+        $("rStrip").querySelector("[data-hretry]").onclick = () => { $("rStrip").innerHTML = '<div class="skel" style="height:118px"></div>'; resortStrip(x); };
+      }
+      return;
+    }
     const cp = h && h.compare && h.compare.today ? h.compare : null;
-    if (!cp || !$("rStrip") || st.slug !== x.slug) return;
-    const strip = winterStrip(cp);
-    if (!strip) return;
+    if (!$("rStrip") || st.slug !== x.slug) return;
+    const strip = cp ? winterStrip(cp) : "";
+    if (!strip) { $("rStrip").innerHTML = ""; return; }
     $("rStrip").innerHTML = strip + '<details class="wsmore"><summary>' + esc(I18N.t("More")) + "</summary>" + winterMore(h, cp, true) + "</details>";
     bindStrip($("rStrip"));
   }
@@ -2474,7 +2527,7 @@
         const c = v.climatology, keep = c.mmdd.map((m, i) => [m, i]).filter(([m]) => m >= "10-01" || m <= "05-31");
         h = { mmdd: keep.map(([m]) => m), p10: keep.map(([, i]) => c.p10[i]), p50: keep.map(([, i]) => c.p50[i]), p90: keep.map(([, i]) => c.p90[i]),
           current: v.current.map((q) => [q.date, q.depth_cm]), best_weeks: v.best_weeks.slice(0, 3).map((w) => w.week) };
-      } catch (e) { box.innerHTML = '<p class="msg">' + (e.down ? "Pro data is updating, try again in a minute." : "No past winters for this resort yet.") + "</p>"; return; }
+      } catch (e) { box.innerHTML = '<p class="msg">' + (e.down ? esc(I18N.t("Couldn't load past winters.")) : "No past winters for this resort yet.") + "</p>"; return; }
     }
     if (!h) {
       box.innerHTML = '<div class="prolock"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>Is this a good winter?</b><br>This season against the last 34 winters, and the best weeks to go.</p><button class="btn ink" data-up>See past winters</button></div>';
@@ -2525,7 +2578,7 @@
         (rep.outlook || []).map((d) => "<tr><td>" + wd(d.date) + " " + dnum(d.date) + "</td><td>" + (m(d.snowfall_cm) >= 1 ? U.depth(Math.round(m(d.snowfall_cm))) + "" : "–") + "</td><td>" +
           (m(d.temp_min_c) != null ? U.tv(m(d.temp_min_c)) + "° / " + U.tv(m(d.temp_max_c)) + "°" : "–") + "</td><td>" + (m(d.wind_max_kmh) != null ? U.wind(m(d.wind_max_kmh)) : "–") + "</td></tr>").join("") + "</tbody></table>" +
         (rep.bulletin && rep.bulletin.url ? '<p style="margin:8px 0 0;font-size:13.5px"><a target="_blank" rel="noopener" href="' + esc(rep.bulletin.url) + '">Official avalanche bulletin · ' + esc(rep.bulletin.provider || "") + "</a></p>" : "");
-    } catch (e) { box.innerHTML = '<p class="msg">' + (e.status === 422 ? "No forecast for this resort yet." : "Pro data is updating, try again in a minute.") + "</p>"; }
+    } catch (e) { box.innerHTML = '<p class="msg">' + (e.status === 422 ? "No forecast for this resort yet." : esc(I18N.t("Couldn't load the forecast."))) + "</p>"; }
   }
   // ------------------------------------------------------------------ boot (runs after every helper is defined)
   async function main() {
