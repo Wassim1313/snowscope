@@ -1,0 +1,762 @@
+{
+ "id": "2026-11-03-us_west-deepest",
+ "slug": "us-west-snow-depth-today-3-november-2026",
+ "date": "2026-11-03",
+ "published_utc": "2026-11-03T15:36:29Z",
+ "updated_utc": "2026-11-03T15:36:29Z",
+ "region": "US_WEST",
+ "angle": "deepest",
+ "score": 70,
+ "signature": "kendall_mountain_recreation_area:130|telluride_ski_area:130|crested_butte_mountain_resort:100",
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "US West",
+  "date": "2026-11-03",
+  "weekday": "Tuesday",
+  "model_run": "2026-11-03",
+  "forecast_days": [
+   "2026-11-04",
+   "2026-11-05",
+   "2026-11-06"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 247680,
+   "resorts_with_snow": 143,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-01",
+   "snow_covered_area_km2": 265320,
+   "resorts_with_snow": 139
+  },
+  "region_forecast": {
+   "date": "2026-11-06",
+   "snow_covered_area_km2": 202830,
+   "resorts_with_snow": 136
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Kendall Mountain",
+    "country": "United States",
+    "top_m": 2904,
+    "base_m": 2835,
+    "depth_cm_upper_slopes_today": 134,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 62,
+    "new_cm_forecast_next_days": 3,
+    "slug": "kendall_mountain_recreation_area",
+    "new_cm_by_day": {
+     "2026-11-01": 36,
+     "2026-11-02": 25,
+     "2026-11-03": 1,
+     "2026-11-04": 2,
+     "2026-11-05": 1,
+     "2026-11-06": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2835,
+      "depth_cm_model": 11,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 2869,
+      "depth_cm_model": 12,
+      "new_cm_next_7_days": 2
+     },
+     "top": {
+      "elev_m": 2904,
+      "depth_cm_model": 13,
+      "new_cm_next_7_days": 2
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-03": {
+      "min": 2310,
+      "max": 3500
+     },
+     "2026-11-04": {
+      "min": 1980,
+      "max": 3210
+     },
+     "2026-11-05": {
+      "min": 1490,
+      "max": 3440
+     },
+     "2026-11-06": {
+      "min": 1670,
+      "max": 1800
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 3,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 2869,
+     "snow_cm_at_this_height_today_model": 9,
+     "deeper_than_n_of_past_winters": 27,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 5
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-30"
+    },
+    "nearest_station": {
+     "station": "Mineral Creek",
+     "elev_m": 3057,
+     "depth_cm_measured": 13,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 7.4
+    }
+   },
+   {
+    "name": "Telluride",
+    "country": "United States",
+    "top_m": 3812,
+    "base_m": 2662,
+    "depth_cm_upper_slopes_today": 130,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 64,
+    "new_cm_forecast_next_days": 5,
+    "slug": "telluride_ski_area",
+    "new_cm_by_day": {
+     "2026-11-01": 35,
+     "2026-11-02": 28,
+     "2026-11-03": 1,
+     "2026-11-04": 3,
+     "2026-11-05": 2,
+     "2026-11-06": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2662,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 3237,
+      "depth_cm_model": 28,
+      "new_cm_next_7_days": 4
+     },
+     "top": {
+      "elev_m": 3812,
+      "depth_cm_model": 109,
+      "new_cm_next_7_days": 5
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-03": {
+      "min": 2680,
+      "max": 3450
+     },
+     "2026-11-04": {
+      "min": 2180,
+      "max": 3270
+     },
+     "2026-11-05": {
+      "min": 1660,
+      "max": 3380
+     },
+     "2026-11-06": {
+      "min": 1990,
+      "max": 2160
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 3,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 3237,
+     "snow_cm_at_this_height_today_model": 35,
+     "deeper_than_n_of_past_winters": 38,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 10
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-30"
+    },
+    "nearest_station": {
+     "station": "Alta Lakes",
+     "elev_m": 3441,
+     "depth_cm_measured": 46,
+     "new_cm_measured_24h": 18,
+     "measured_on": "2026-11-01",
+     "km_away": 3.5
+    }
+   },
+   {
+    "name": "Crested Butte",
+    "country": "United States",
+    "top_m": 3488,
+    "base_m": 2783,
+    "depth_cm_upper_slopes_today": 98,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 17,
+    "new_cm_forecast_next_days": 7,
+    "slug": "crested_butte_mountain_resort",
+    "new_cm_by_day": {
+     "2026-11-01": 5,
+     "2026-11-02": 13,
+     "2026-11-03": 0,
+     "2026-11-04": 1,
+     "2026-11-05": 5,
+     "2026-11-06": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2783,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 4,
+      "depth_cm_measured": 2
+     },
+     "mid": {
+      "elev_m": 3135,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 6,
+      "depth_cm_measured": 2
+     },
+     "top": {
+      "elev_m": 3488,
+      "depth_cm_model": 29,
+      "new_cm_next_7_days": 6
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-03": {
+      "min": 2410,
+      "max": 3320
+     },
+     "2026-11-04": {
+      "min": 2380,
+      "max": 3320
+     },
+     "2026-11-05": {
+      "min": 1370,
+      "max": 3290
+     },
+     "2026-11-06": {
+      "min": 2050,
+      "max": 2250
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 3,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 3135,
+     "snow_cm_at_this_height_today_model": 6,
+     "deeper_than_n_of_past_winters": 16,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 12
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-27"
+    },
+    "nearest_station": {
+     "station": "Butte",
+     "elev_m": 3106,
+     "depth_cm_measured": 3,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 0.6
+    }
+   },
+   {
+    "name": "Lee's Ski Hill",
+    "country": "United States",
+    "top_m": 2421,
+    "base_m": 2401,
+    "depth_cm_upper_slopes_today": 87,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 40,
+    "new_cm_forecast_next_days": 5,
+    "slug": "lee_s_ski_hill",
+    "new_cm_by_day": {
+     "2026-11-01": 15,
+     "2026-11-02": 24,
+     "2026-11-03": 1,
+     "2026-11-04": 3,
+     "2026-11-05": 2,
+     "2026-11-06": 0
+    }
+   },
+   {
+    "name": "Lake City Ski Hill",
+    "country": "United States",
+    "top_m": 2768,
+    "base_m": 2701,
+    "depth_cm_upper_slopes_today": 79,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 31,
+    "new_cm_forecast_next_days": 4,
+    "slug": "lake_city_ski_hill",
+    "new_cm_by_day": {
+     "2026-11-01": 16,
+     "2026-11-02": 16,
+     "2026-11-03": 1,
+     "2026-11-04": 2,
+     "2026-11-05": 2,
+     "2026-11-06": 0
+    }
+   }
+  ],
+  "measured_at_stations": [
+   {
+    "station": "Rat Creek",
+    "elev_m": 3560,
+    "depth_cm_measured": 66,
+    "new_cm_measured_24h": 23,
+    "measured_on": "2026-11-01",
+    "network": "snotel"
+   },
+   {
+    "station": "Beartown",
+    "elev_m": 3530,
+    "depth_cm_measured": 66,
+    "new_cm_measured_24h": 5,
+    "measured_on": "2026-11-01",
+    "network": "snotel"
+   },
+   {
+    "station": "Red Mountain Pass",
+    "elev_m": 3371,
+    "depth_cm_measured": 61,
+    "new_cm_measured_24h": 28,
+    "measured_on": "2026-11-01",
+    "network": "snotel"
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-snow-depth-today-3-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-snow-depth-today-3-november-2026/map_t.webp",
+   "bytes": 67256
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "US West snow depth today: Kendall Mountain leads with 134 cm (3 November)",
+   "description": "The most snow in the US West is at Kendall Mountain: about 134 cm (53 in) on the upper slopes, according to our snow model. Next come Telluride with …",
+   "lede": "The most snow in the US West is at Kendall Mountain: about 134 cm (53 in) on the upper slopes, according to our snow model. Next come Telluride with 130 cm (51 in) and Crested Butte with 98 cm (39 in). 143 of 195 resorts in the US West have snow on their upper slopes today, and our model counts 247,680 km² of snow-covered ground.",
+   "sections": [
+    {
+     "h": "Today's snow",
+     "p": [
+      "The snow cover shrank from 265,320 km² on 1 November to 247,680 km² today, and our forecast gives 202,830 km² on 6 November.",
+      "Height matters: at Kendall Mountain, our model gives 13 cm (5 in) at the top (2,904 m / 9,528 ft), 12 cm (5 in) at mid-mountain (2,869 m / 9,413 ft) and 11 cm (4 in) at the base (2,835 m / 9,301 ft)."
+     ]
+    },
+    {
+     "h": "Measured on the ground",
+     "p": [
+      "The Rat Creek station (3,560 m / 11,680 ft) measured 66 cm (26 in) of snow on the ground on 1 November, with 23 cm (9 in) of new snow in 24 hours. The Beartown station (3,530 m / 11,581 ft) measured 66 cm (26 in) of snow on the ground on 1 November, with 5 cm (2 in) of new snow in 24 hours. The Red Mountain Pass station (3,371 m / 11,060 ft) measured 61 cm (24 in) of snow on the ground on 1 November, with 28 cm (11 in) of new snow in 24 hours.",
+      "Keep in mind: resort values come from our snow model and describe an area, while stations measure one point."
+     ]
+    },
+    {
+     "h": "Is it a good start?",
+     "p": [
+      "At 2,869 m (9,413 ft) on Kendall Mountain, today's 9 cm (4 in) is close to normal for the date: deeper than in 27 of the past 46 winters (usual: 5 cm (2 in)).",
+      "This is a good start at Telluride. At 3,237 m (10,620 ft), our model has 35 cm (14 in) today, deeper than on this date in 38 of the past 46 winters (usual: 10 cm (4 in)).",
+      "At 3,135 m (10,285 ft) on Crested Butte, today's 6 cm (2 in) is close to normal for the date: deeper than in 16 of the past 46 winters (usual: 12 cm (5 in))."
+     ]
+    },
+    {
+     "h": "The next days",
+     "p": [
+      "More snow is on the way: by 6 November our forecast gives 7 cm (3 in) at Crested Butte, 5 cm (2 in) at Telluride and 5 cm (2 in) at Lee's Ski Hill.",
+      "At Kendall Mountain, the freezing level reaches 2,310 m (7,579 ft) to 3,500 m (11,483 ft) on 3 November, above the top of the resort (2,904 m / 9,528 ft): rain or wet snow is possible on every slope that day.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "Look for snow high up and on north-facing slopes: they keep it longest, while south-facing slopes lose it first in the sun.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Kendall Mountain gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the US West on 3 November 2026 (SnowScope snow model): Kendall Mountain, Telluride, Crested Butte, Lee's Ski Hill, Lake City Ski Hill."
+   }
+  },
+  "fr": {
+   "title": "Neige dans l'Ouest américain : Kendall Mountain en tête avec 134 cm (3 novembre)",
+   "description": "C'est à Kendall Mountain qu'il y a le plus de neige dans l'Ouest américain : environ 134 cm sur le haut du domaine, selon notre modèle de neige. …",
+   "lede": "C'est à Kendall Mountain qu'il y a le plus de neige dans l'Ouest américain : environ 134 cm sur le haut du domaine, selon notre modèle de neige. Viennent ensuite Telluride (130 cm) et Crested Butte (98 cm). 143 stations sur 195 dans l'Ouest américain ont de la neige sur le haut du domaine aujourd'hui, et notre modèle compte 247 680 km² de surface enneigée.",
+   "sections": [
+    {
+     "h": "Où est la neige aujourd'hui",
+     "p": [
+      "La surface enneigée est passée de 265 320 km² le 1 novembre à 247 680 km² aujourd'hui, et notre prévision donne 202 830 km² le 6 novembre.",
+      "L'altitude compte : à Kendall Mountain, notre modèle donne 13 cm au sommet (2 904 m), 12 cm à mi-pente (2 869 m) et 11 cm en bas (2 835 m)."
+     ]
+    },
+    {
+     "h": "Ce que mesurent les stations",
+     "p": [
+      "La station de mesure Rat Creek (3 560 m) a mesuré 66 cm de neige au sol le 1 novembre, dont 23 cm de neige fraîche en 24 heures. La station de mesure Beartown (3 530 m) a mesuré 66 cm de neige au sol le 1 novembre, dont 5 cm de neige fraîche en 24 heures. La station de mesure Red Mountain Pass (3 371 m) a mesuré 61 cm de neige au sol le 1 novembre, dont 28 cm de neige fraîche en 24 heures.",
+      "Les chiffres des stations de ski sont des estimations du modèle pour le haut du domaine ; ceux des stations de mesure sont mesurés en un point, à la date indiquée."
+     ]
+    },
+    {
+     "h": "Comparé aux hivers passés",
+     "p": [
+      "À 2 869 m à Kendall Mountain, les 9 cm d'aujourd'hui sont proches de la normale pour la date : plus que lors de 27 des 46 hivers passés (habituel : 5 cm).",
+      "C'est un bon début à Telluride. À 3 237 m, notre modèle donne 35 cm aujourd'hui, plus qu'à cette date lors de 38 des 46 hivers passés (habituel : 10 cm).",
+      "À 3 135 m à Crested Butte, les 6 cm d'aujourd'hui sont proches de la normale pour la date : plus que lors de 16 des 46 hivers passés (habituel : 12 cm)."
+     ]
+    },
+    {
+     "h": "Ce qui arrive",
+     "p": [
+      "D'ici le 6 novembre, notre prévision donne 7 cm à Crested Butte, 5 cm à Telluride et 5 cm à Lee's Ski Hill.",
+      "À Kendall Mountain, l'isotherme 0 °C monte entre 2 310 m et 3 500 m le 3 novembre, au-dessus du sommet de la station (2 904 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Cherchez la neige en altitude et sur les pentes orientées au nord : elles la gardent le plus longtemps, les pentes sud la perdent en premier.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Kendall Mountain reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest américain le 3 novembre 2026 (modèle de neige SnowScope) : Kendall Mountain, Telluride, Crested Butte, Lee's Ski Hill, Lake City Ski Hill."
+   }
+  },
+  "de": {
+   "title": "Schneehöhen im US-Westen: Kendall Mountain vorn mit 134 cm (3. November)",
+   "description": "Am meisten Schnee im US-Westen liegt in Kendall Mountain: etwa 134 cm in den oberen Hängen, laut unserem Schneemodell. Danach kommen Telluride …",
+   "lede": "Am meisten Schnee im US-Westen liegt in Kendall Mountain: etwa 134 cm in den oberen Hängen, laut unserem Schneemodell. Danach kommen Telluride (130 cm) und Crested Butte (98 cm). 143 von 195 Skigebieten im US-Westen haben heute Schnee in den oberen Hängen, und unser Modell zählt 247.680 km² Schneefläche.",
+   "sections": [
+    {
+     "h": "Wo heute Schnee liegt",
+     "p": [
+      "Die Schneefläche schrumpfte von 265.320 km² am 1. November auf heute 247.680 km², und unsere Prognose ergibt 202.830 km² am 6. November.",
+      "Die Höhe macht den Unterschied: In Kendall Mountain zeigt unser Modell 13 cm am Gipfel (2.904 m), 12 cm an der Mittelstation (2.869 m) und 11 cm im Tal (2.835 m)."
+     ]
+    },
+    {
+     "h": "Was die Messstationen zeigen",
+     "p": [
+      "Die Messstation Rat Creek (3.560 m) maß am 1. November eine Schneehöhe von 66 cm, davon 23 cm Neuschnee in 24 Stunden. Die Messstation Beartown (3.530 m) maß am 1. November eine Schneehöhe von 66 cm, davon 5 cm Neuschnee in 24 Stunden. Die Messstation Red Mountain Pass (3.371 m) maß am 1. November eine Schneehöhe von 61 cm, davon 28 cm Neuschnee in 24 Stunden.",
+      "Die Werte der Skigebiete sind Modellschätzungen für die oberen Hänge; Messstationen messen an einem Punkt, am angegebenen Tag."
+     ]
+    },
+    {
+     "h": "Im Vergleich mit früheren Wintern",
+     "p": [
+      "Auf 2.869 m in Kendall Mountain liegen die heutigen 9 cm nahe am Normalwert: mehr als in 27 der letzten 46 Winter (üblich: 5 cm).",
+      "Ein guter Start in Telluride: Auf 3.237 m zeigt unser Modell heute 35 cm, mehr als an diesem Datum in 38 der letzten 46 Winter (üblich: 10 cm).",
+      "Auf 3.135 m in Crested Butte liegen die heutigen 6 cm nahe am Normalwert: mehr als in 16 der letzten 46 Winter (üblich: 12 cm)."
+     ]
+    },
+    {
+     "h": "Was als Nächstes kommt",
+     "p": [
+      "Bis zum 6. November ergibt unsere Prognose 7 cm in Crested Butte, 5 cm in Telluride und 5 cm in Lee's Ski Hill.",
+      "In Kendall Mountain liegt die Nullgradgrenze am 3. November zwischen 2.310 m und 3.500 m, über dem höchsten Punkt des Skigebiets (2.904 m): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich.",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Früher Schnee ist dünn. Bleib auf offenen, präparierten Pisten: Steine und Gras liegen oft knapp darunter.",
+    "Such den Schnee weit oben und an Nordhängen: Dort hält er am längsten, Südhänge verlieren ihn zuerst in der Sonne.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Kendall Mountain Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe im US-Westen am 3. November 2026 (SnowScope-Schneemodell): Kendall Mountain, Telluride, Crested Butte, Lee's Ski Hill, Lake City Ski Hill."
+   }
+  },
+  "it": {
+   "title": "Neve nell'Ovest degli USA: Kendall Mountain in testa con 134 cm (3 novembre)",
+   "description": "La neve più abbondante nell'Ovest degli USA è a Kendall Mountain: circa 134 cm sui pendii superiori, secondo il nostro modello neve. Poi vengono …",
+   "lede": "La neve più abbondante nell'Ovest degli USA è a Kendall Mountain: circa 134 cm sui pendii superiori, secondo il nostro modello neve. Poi vengono Telluride (130 cm) e Crested Butte (98 cm). 143 località su 195 nell'Ovest degli USA hanno oggi neve sui pendii superiori, e il nostro modello conta 247.680 km² di superficie innevata.",
+   "sections": [
+    {
+     "h": "Dove c'è neve oggi",
+     "p": [
+      "La superficie innevata è passata da 265.320 km² il 1 novembre a 247.680 km² oggi, e la nostra previsione indica 202.830 km² il 6 novembre.",
+      "La quota conta: a Kendall Mountain il nostro modello indica 13 cm in vetta (2.904 m), 12 cm a metà montagna (2.869 m) e 11 cm alla base (2.835 m)."
+     ]
+    },
+    {
+     "h": "Cosa misurano le stazioni",
+     "p": [
+      "La stazione di Rat Creek (3.560 m) ha misurato 66 cm di neve al suolo il 1 novembre, con 23 cm di neve fresca in 24 ore. La stazione di Beartown (3.530 m) ha misurato 66 cm di neve al suolo il 1 novembre, con 5 cm di neve fresca in 24 ore. La stazione di Red Mountain Pass (3.371 m) ha misurato 61 cm di neve al suolo il 1 novembre, con 28 cm di neve fresca in 24 ore.",
+      "I valori delle località sono stime del modello per i pendii superiori; le stazioni misurano in un punto, alla data indicata."
+     ]
+    },
+    {
+     "h": "Rispetto agli inverni passati",
+     "p": [
+      "A 2.869 m a Kendall Mountain i 9 cm di oggi sono vicini alla norma: più che in 27 dei 46 inverni passati (abituale: 5 cm).",
+      "Un buon inizio a Telluride: a 3.237 m il nostro modello indica oggi 35 cm, più che in questa data in 38 dei 46 inverni passati (abituale: 10 cm).",
+      "A 3.135 m a Crested Butte i 6 cm di oggi sono vicini alla norma: più che in 16 dei 46 inverni passati (abituale: 12 cm)."
+     ]
+    },
+    {
+     "h": "Cosa arriva",
+     "p": [
+      "Fino al 6 novembre la nostra previsione indica 7 cm a Crested Butte, 5 cm a Telluride e 5 cm a Lee's Ski Hill.",
+      "A Kendall Mountain lo zero termico sale tra 2.310 m e 3.500 m il 3 novembre, sopra la quota massima della località (2.904 m): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii.",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "La neve di inizio stagione è sottile. Resta sulle piste aperte e battute: sassi ed erba sono appena sotto.",
+    "Cerca la neve in quota e sui versanti nord: la conservano più a lungo, mentre i versanti sud la perdono per primi al sole.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Kendall Mountain riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve nell'Ovest degli USA il 3 novembre 2026 (modello neve SnowScope): Kendall Mountain, Telluride, Crested Butte, Lee's Ski Hill, Lake City Ski Hill."
+   }
+  },
+  "es": {
+   "title": "Nieve en el oeste de EE. UU.: Kendall Mountain en cabeza con 134 cm (3 de noviembre)",
+   "description": "Donde más nieve hay en el oeste de EE. UU. es en Kendall Mountain: unos 134 cm en las pistas altas, según nuestro modelo de nieve. Después vienen …",
+   "lede": "Donde más nieve hay en el oeste de EE. UU. es en Kendall Mountain: unos 134 cm en las pistas altas, según nuestro modelo de nieve. Después vienen Telluride (130 cm) y Crested Butte (98 cm). 143 de 195 estaciones en el oeste de EE. UU. tienen hoy nieve en las pistas altas, y nuestro modelo cuenta 247.680 km² de superficie nevada.",
+   "sections": [
+    {
+     "h": "Dónde está la nieve hoy",
+     "p": [
+      "La superficie nevada pasó de 265.320 km² el 1 de noviembre a 247.680 km² hoy, y nuestra previsión da 202.830 km² el 6 de noviembre.",
+      "La altitud cuenta: en Kendall Mountain, nuestro modelo da 13 cm en la cota alta (2904 m), 12 cm a media montaña (2869 m) y 11 cm en la base (2835 m)."
+     ]
+    },
+    {
+     "h": "Lo que miden las estaciones",
+     "p": [
+      "La estación de medida Rat Creek (3560 m) midió 66 cm de nieve en el suelo el 1 de noviembre, con 23 cm de nieve nueva en 24 horas. La estación de medida Beartown (3530 m) midió 66 cm de nieve en el suelo el 1 de noviembre, con 5 cm de nieve nueva en 24 horas. La estación de medida Red Mountain Pass (3371 m) midió 61 cm de nieve en el suelo el 1 de noviembre, con 28 cm de nieve nueva en 24 horas.",
+      "Las cifras de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida miden en un punto, en la fecha indicada."
+     ]
+    },
+    {
+     "h": "Comparado con los inviernos pasados",
+     "p": [
+      "A 2869 m en Kendall Mountain, los 9 cm de hoy están cerca de lo normal para la fecha: más que en 27 de los 46 inviernos pasados (lo habitual: 5 cm).",
+      "Buen comienzo en Telluride: a 3237 m, nuestro modelo da hoy 35 cm, más que en esta fecha en 38 de los 46 inviernos pasados (lo habitual: 10 cm).",
+      "A 3135 m en Crested Butte, los 6 cm de hoy están cerca de lo normal para la fecha: más que en 16 de los 46 inviernos pasados (lo habitual: 12 cm)."
+     ]
+    },
+    {
+     "h": "Lo que viene",
+     "p": [
+      "Hasta el 6 de noviembre, nuestra previsión da 7 cm en Crested Butte, 5 cm en Telluride y 5 cm en Lee's Ski Hill.",
+      "En Kendall Mountain, la cota de congelación llega a 2310 m-3500 m el 3 de noviembre, por encima de la cota alta de la estación (2904 m): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "La nieve de principio de temporada es fina. Quédate en pistas abiertas y pisadas: piedras y hierba están justo debajo.",
+    "Busca la nieve en lo alto y en las laderas orientadas al norte: la guardan más tiempo; las orientadas al sur la pierden antes.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Kendall Mountain recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de EE. UU. el 3 de noviembre 2026 (modelo de nieve de SnowScope): Kendall Mountain, Telluride, Crested Butte, Lee's Ski Hill, Lake City Ski Hill."
+   }
+  },
+  "ar": {
+   "title": "التلج فغرب ميريكان: Kendall Mountain فالمقدمة ب 134 سم (3 نونبر)",
+   "description": "أكثر تلج فغرب ميريكان كاين ف Kendall Mountain: تقريبا 134 سم فالجهة الفوقانية، حسب الموديل ديال التلج ديالنا. من بعدها Telluride (130 سم) و Crested …",
+   "lede": "أكثر تلج فغرب ميريكان كاين ف Kendall Mountain: تقريبا 134 سم فالجهة الفوقانية، حسب الموديل ديال التلج ديالنا. من بعدها Telluride (130 سم) و Crested Butte (98 سم). 143 محطة من 195 فغرب ميريكان فيهم التلج فالجهة الفوقانية اليوم، والموديل ديالنا كيحسب 247680 كم² ديال الأرض اللي فيها التلج.",
+   "sections": [
+    {
+     "h": "فين كاين التلج اليوم",
+     "p": [
+      "المساحة اللي فيها التلج دازت من 265320 كم² نهار 1 نونبر ل 247680 كم² اليوم، والتوقعات ديالنا كتعطي 202830 كم² نهار 6 نونبر.",
+      "العلو مهم: ف Kendall Mountain، الموديل ديالنا كيعطي 13 سم فالفوق (2904 م)، 12 سم فالوسط (2869 م) و 11 سم فالتحت (2835 م)."
+     ]
+    },
+    {
+     "h": "شنو قاسو المحطات",
+     "p": [
+      "محطة القياس Rat Creek (3560 م) قاست 66 سم ديال التلج فالأرض نهار 1 نونبر، منهم 23 سم تلج جديد ف 24 ساعة. محطة القياس Beartown (3530 م) قاست 66 سم ديال التلج فالأرض نهار 1 نونبر، منهم 5 سم تلج جديد ف 24 ساعة. محطة القياس Red Mountain Pass (3371 م) قاست 61 سم ديال التلج فالأرض نهار 1 نونبر، منهم 28 سم تلج جديد ف 24 ساعة.",
+      "الأرقام ديال المحطات ديال التزلج تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس كتقيس فنقطة وحدة، فالتاريخ المكتوب."
+     ]
+    },
+    {
+     "h": "مقارنة مع الشتوات اللي فاتو",
+     "p": [
+      "على علو 2869 م ف Kendall Mountain، 9 سم ديال اليوم قريبة من العادي فهاد التاريخ: أكثر من 27 من 46 ديال الشتوات اللي فاتو (العادي: 5 سم).",
+      "بداية مزيانة ف Telluride: على علو 3237 م، الموديل ديالنا فيه اليوم 35 سم، أكثر من هاد التاريخ ف 38 من 46 ديال الشتوات اللي فاتو (العادي: 10 سم).",
+      "على علو 3135 م ف Crested Butte، 6 سم ديال اليوم قريبة من العادي فهاد التاريخ: أكثر من 16 من 46 ديال الشتوات اللي فاتو (العادي: 12 سم)."
+     ]
+    },
+    {
+     "h": "شنو جاي",
+     "p": [
+      "حتى ل 6 نونبر، التوقعات ديالنا كتعطي 7 سم ف Crested Butte، 5 سم ف Telluride و 5 سم ف Lee's Ski Hill.",
+      "ف Kendall Mountain، علو الجليد غادي يكون بين 2310 م و 3500 م نهار 3 نونبر، فوق أعلى نقطة فالمحطة (2904 م): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات.",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "التلج ديال بداية الموسم رقيق. بقى فالبيستات المحلولة والمدكوكة: الحجر والربيع يمكن يكونو تحت نيشان.",
+    "قلب على التلج فالعلو وفالجهات اللي كتشوف للشمال: كيحافظو عليه كثر، والجهات اللي كتشوف للجنوب كيمشي ليهم بالشمس.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Kendall Mountain يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب ميريكان نهار 3 نونبر 2026 (الموديل ديال SnowScope): Kendall Mountain, Telluride, Crested Butte, Lee's Ski Hill, Lake City Ski Hill."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  },
+  "fr": {
+   "writer": "template"
+  },
+  "de": {
+   "writer": "template"
+  },
+  "it": {
+   "writer": "template"
+  },
+  "es": {
+   "writer": "template"
+  },
+  "ar": {
+   "writer": "template"
+  }
+ },
+ "words_en": 447,
+ "indexable": true,
+ "main": {
+  "slug": "kendall_mountain_recreation_area",
+  "name": "Kendall Mountain",
+  "lat": 37.8115,
+  "lon": -107.6563
+ },
+ "places": [
+  {
+   "name": "Kendall Mountain",
+   "lat": 37.8115,
+   "lon": -107.6563
+  },
+  {
+   "name": "Telluride",
+   "lat": 37.9197,
+   "lon": -107.8348
+  },
+  {
+   "name": "Crested Butte",
+   "lat": 38.8994,
+   "lon": -106.9498
+  },
+  {
+   "name": "Lee's Ski Hill",
+   "lat": 38.0187,
+   "lon": -107.6688
+  },
+  {
+   "name": "Lake City Ski Hill",
+   "lat": 38.0103,
+   "lon": -107.3137
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "kendall_mountain_recreation_area",
+   "name": "Kendall Mountain"
+  },
+  {
+   "slug": "telluride_ski_area",
+   "name": "Telluride"
+  },
+  {
+   "slug": "crested_butte_mountain_resort",
+   "name": "Crested Butte"
+  },
+  {
+   "slug": "lee_s_ski_hill",
+   "name": "Lee's Ski Hill"
+  },
+  {
+   "slug": "lake_city_ski_hill",
+   "name": "Lake City Ski Hill"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "kendall_mountain_recreation_area",
+    "name": "Kendall Mountain",
+    "depth": 134,
+    "new72": 62,
+    "next": 3,
+    "top_m": 2904
+   },
+   {
+    "slug": "telluride_ski_area",
+    "name": "Telluride",
+    "depth": 130,
+    "new72": 64,
+    "next": 5,
+    "top_m": 3812
+   },
+   {
+    "slug": "crested_butte_mountain_resort",
+    "name": "Crested Butte",
+    "depth": 98,
+    "new72": 17,
+    "next": 7,
+    "top_m": 3488
+   },
+   {
+    "slug": "lee_s_ski_hill",
+    "name": "Lee's Ski Hill",
+    "depth": 87,
+    "new72": 40,
+    "next": 5,
+    "top_m": 2421
+   },
+   {
+    "slug": "lake_city_ski_hill",
+    "name": "Lake City Ski Hill",
+    "depth": 79,
+    "new72": 31,
+    "next": 4,
+    "top_m": 2768
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Colorado Avalanche Information Center",
+   "url": "https://avalanche.state.co.us/"
+  }
+ ],
+ "trip_day": "2026-11-07",
+ "map_link": "https://snowscope.app/#@37.812,-107.656,9.0",
+ "seconds": 0.0
+}

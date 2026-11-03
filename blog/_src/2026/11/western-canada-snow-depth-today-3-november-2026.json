@@ -1,0 +1,698 @@
+{
+ "id": "2026-11-03-ca_west-deepest",
+ "slug": "western-canada-snow-depth-today-3-november-2026",
+ "date": "2026-11-03",
+ "published_utc": "2026-11-03T15:36:29Z",
+ "updated_utc": "2026-11-03T15:36:29Z",
+ "region": "CA_WEST",
+ "angle": "deepest",
+ "score": 62.8,
+ "signature": "big_white_ski_resort:90|silver_star_mountain_resort:80|harper_mountain:70",
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "Western Canada",
+  "date": "2026-11-03",
+  "weekday": "Tuesday",
+  "model_run": "2026-11-03",
+  "forecast_days": [
+   "2026-11-04",
+   "2026-11-05",
+   "2026-11-06"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 329280,
+   "resorts_with_snow": 51,
+   "resorts_in_region": 57
+  },
+  "region_before": {
+   "date": "2026-11-01",
+   "snow_covered_area_km2": 370180,
+   "resorts_with_snow": 54
+  },
+  "region_forecast": {
+   "date": "2026-11-06",
+   "snow_covered_area_km2": 302380,
+   "resorts_with_snow": 49
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Big White",
+    "country": "Canada",
+    "top_m": 2271,
+    "base_m": 1512,
+    "depth_cm_upper_slopes_today": 91,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 2,
+    "slug": "big_white_ski_resort",
+    "new_cm_by_day": {
+     "2026-11-01": 0,
+     "2026-11-02": 0,
+     "2026-11-03": 0,
+     "2026-11-04": 0,
+     "2026-11-05": 2,
+     "2026-11-06": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1512,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 3
+     },
+     "mid": {
+      "elev_m": 1891,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 3
+     },
+     "top": {
+      "elev_m": 2271,
+      "depth_cm_model": 58,
+      "new_cm_next_7_days": 4
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-03": {
+      "min": 1120,
+      "max": 2600
+     },
+     "2026-11-04": {
+      "min": 1590,
+      "max": 2560
+     },
+     "2026-11-05": {
+      "min": 600,
+      "max": 1830
+     },
+     "2026-11-06": {
+      "min": 610,
+      "max": 1200
+     }
+    },
+    "past_winters": {
+     "height_m": 1891,
+     "snow_cm_at_this_height_today_model": 39,
+     "deeper_than_n_of_past_winters": 43,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 13
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-02"
+    }
+   },
+   {
+    "name": "Silver Star",
+    "country": "Canada",
+    "top_m": 1886,
+    "base_m": 1146,
+    "depth_cm_upper_slopes_today": 84,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 3,
+    "slug": "silver_star_mountain_resort",
+    "new_cm_by_day": {
+     "2026-11-01": 0,
+     "2026-11-02": 0,
+     "2026-11-03": 0,
+     "2026-11-04": 0,
+     "2026-11-05": 2,
+     "2026-11-06": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1146,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 1516,
+      "depth_cm_model": 3,
+      "new_cm_next_7_days": 4
+     },
+     "top": {
+      "elev_m": 1886,
+      "depth_cm_model": 9,
+      "new_cm_next_7_days": 4
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-03": {
+      "min": 2400,
+      "max": 2940
+     },
+     "2026-11-04": {
+      "min": 1700,
+      "max": 2650
+     },
+     "2026-11-05": {
+      "min": 1650,
+      "max": 2200
+     },
+     "2026-11-06": {
+      "min": 1790,
+      "max": 1900
+     }
+    },
+    "past_winters": {
+     "height_m": 1516,
+     "snow_cm_at_this_height_today_model": 9,
+     "deeper_than_n_of_past_winters": 39,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 2
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-02"
+    }
+   },
+   {
+    "name": "Harper Mountain",
+    "country": "Canada",
+    "top_m": 1483,
+    "base_m": 1083,
+    "depth_cm_upper_slopes_today": 74,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 1,
+    "slug": "harper_mountain",
+    "new_cm_by_day": {
+     "2026-11-01": 0,
+     "2026-11-02": 0,
+     "2026-11-03": 0,
+     "2026-11-04": 0,
+     "2026-11-05": 1,
+     "2026-11-06": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1083,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 1283,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 1
+     },
+     "top": {
+      "elev_m": 1483,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 1
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-03": {
+      "min": 2190,
+      "max": 2840
+     },
+     "2026-11-04": {
+      "min": 1520,
+      "max": 2340
+     },
+     "2026-11-05": {
+      "min": 1410,
+      "max": 2120
+     },
+     "2026-11-06": {
+      "min": 1720,
+      "max": 1810
+     }
+    },
+    "past_winters": {
+     "height_m": 1283,
+     "snow_cm_at_this_height_today_model": 53,
+     "deeper_than_n_of_past_winters": 46,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 2
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-02"
+    }
+   },
+   {
+    "name": "Mount Cain Alpine Park",
+    "country": "Canada",
+    "top_m": 1616,
+    "base_m": 1190,
+    "depth_cm_upper_slopes_today": 68,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 3,
+    "new_cm_forecast_next_days": 31,
+    "slug": "mount_cain_alpine_park",
+    "new_cm_by_day": {
+     "2026-11-01": 0,
+     "2026-11-02": 1,
+     "2026-11-03": 2,
+     "2026-11-04": 4,
+     "2026-11-05": 8,
+     "2026-11-06": 19
+    }
+   },
+   {
+    "name": "Whistler Blackcomb",
+    "country": "Canada",
+    "top_m": 2259,
+    "base_m": 653,
+    "depth_cm_upper_slopes_today": 61,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 25,
+    "slug": "whistler",
+    "new_cm_by_day": {
+     "2026-11-01": 0,
+     "2026-11-02": 0,
+     "2026-11-03": 1,
+     "2026-11-04": 0,
+     "2026-11-05": 11,
+     "2026-11-06": 14
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/western-canada-snow-depth-today-3-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/western-canada-snow-depth-today-3-november-2026/map_t.webp",
+   "bytes": 94954
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Western Canada snow depth today: Big White leads with 91 cm (3 November)",
+   "description": "The most snow in Western Canada is at Big White: about 91 cm (36 in) on the upper slopes, according to our snow model. Next come Silver Star with …",
+   "lede": "The most snow in Western Canada is at Big White: about 91 cm (36 in) on the upper slopes, according to our snow model. Next come Silver Star with 84 cm (33 in) and Harper Mountain with 74 cm (29 in). 51 of 57 resorts in Western Canada have snow on their upper slopes today, and our model counts 329,280 km² of snow-covered ground.",
+   "sections": [
+    {
+     "h": "Today's snow",
+     "p": [
+      "The snow cover shrank from 370,180 km² on 1 November to 329,280 km² today, and our forecast gives 302,380 km² on 6 November.",
+      "Height matters: at Big White, our model gives 58 cm (23 in) at the top (2,271 m / 7,451 ft), 8 cm (3 in) at mid-mountain (1,891 m / 6,204 ft) and 0 cm at the base (1,512 m / 4,961 ft)."
+     ]
+    },
+    {
+     "h": "Measured on the ground",
+     "p": [
+      "Keep in mind: resort values come from our snow model and describe an area, while stations measure one point."
+     ]
+    },
+    {
+     "h": "Is it a good start?",
+     "p": [
+      "This is a good start at Big White. At 1,891 m (6,204 ft), our model has 39 cm (15 in) today, deeper than on this date in 43 of the past 46 winters (usual: 13 cm (5 in)).",
+      "This is a good start at Silver Star. At 1,516 m (4,974 ft), our model has 9 cm (4 in) today, deeper than on this date in 39 of the past 46 winters (usual: 2 cm (1 in)).",
+      "This is a good start at Harper Mountain. At 1,283 m (4,209 ft), our model has 53 cm (21 in) today, deeper than on this date in 46 of the past 46 winters (usual: 2 cm (1 in))."
+     ]
+    },
+    {
+     "h": "What is coming next",
+     "p": [
+      "Until 6 November, our forecast gives 31 cm (12 in) at Mount Cain Alpine Park, 25 cm (10 in) at Whistler Blackcomb and 3 cm (1 in) at Silver Star.",
+      "At Big White, the freezing level reaches 1,120 m (3,675 ft) to 2,600 m (8,530 ft) on 3 November, above the top of the resort (2,271 m / 7,451 ft): rain or wet snow is possible on every slope that day.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "Look for snow high up and on north-facing slopes: they keep it longest, while south-facing slopes lose it first in the sun.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Big White gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in Western Canada on 3 November 2026 (SnowScope snow model): Big White, Silver Star, Harper Mountain, Mount Cain Alpine Park, Whistler Blackcomb."
+   }
+  },
+  "fr": {
+   "title": "Neige dans l'Ouest canadien : Big White en tête avec 91 cm (3 novembre)",
+   "description": "C'est à Big White qu'il y a le plus de neige dans l'Ouest canadien : environ 91 cm sur le haut du domaine, selon notre modèle de neige. Viennent …",
+   "lede": "C'est à Big White qu'il y a le plus de neige dans l'Ouest canadien : environ 91 cm sur le haut du domaine, selon notre modèle de neige. Viennent ensuite Silver Star (84 cm) et Harper Mountain (74 cm). 51 stations sur 57 dans l'Ouest canadien ont de la neige sur le haut du domaine aujourd'hui, et notre modèle compte 329 280 km² de surface enneigée.",
+   "sections": [
+    {
+     "h": "Où est la neige aujourd'hui",
+     "p": [
+      "La surface enneigée est passée de 370 180 km² le 1 novembre à 329 280 km² aujourd'hui, et notre prévision donne 302 380 km² le 6 novembre.",
+      "L'altitude compte : à Big White, notre modèle donne 58 cm au sommet (2 271 m), 8 cm à mi-pente (1 891 m) et 0 cm en bas (1 512 m)."
+     ]
+    },
+    {
+     "h": "Ce que mesurent les stations",
+     "p": [
+      "Les chiffres des stations de ski sont des estimations du modèle pour le haut du domaine ; ceux des stations de mesure sont mesurés en un point, à la date indiquée."
+     ]
+    },
+    {
+     "h": "Comparé aux hivers passés",
+     "p": [
+      "C'est un bon début à Big White. À 1 891 m, notre modèle donne 39 cm aujourd'hui, plus qu'à cette date lors de 43 des 46 hivers passés (habituel : 13 cm).",
+      "C'est un bon début à Silver Star. À 1 516 m, notre modèle donne 9 cm aujourd'hui, plus qu'à cette date lors de 39 des 46 hivers passés (habituel : 2 cm).",
+      "C'est un bon début à Harper Mountain. À 1 283 m, notre modèle donne 53 cm aujourd'hui, plus qu'à cette date lors de 46 des 46 hivers passés (habituel : 2 cm)."
+     ]
+    },
+    {
+     "h": "Ce qui arrive",
+     "p": [
+      "D'ici le 6 novembre, notre prévision donne 31 cm à Mount Cain Alpine Park, 25 cm à Whistler Blackcomb et 3 cm à Silver Star.",
+      "À Big White, l'isotherme 0 °C monte entre 1 120 m et 2 600 m le 3 novembre, au-dessus du sommet de la station (2 271 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Cherchez la neige en altitude et sur les pentes orientées au nord : elles la gardent le plus longtemps, les pentes sud la perdent en premier.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Big White reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest canadien le 3 novembre 2026 (modèle de neige SnowScope) : Big White, Silver Star, Harper Mountain, Mount Cain Alpine Park, Whistler Blackcomb."
+   }
+  },
+  "de": {
+   "title": "Schneehöhen in Westkanada: Big White vorn mit 91 cm (3. November)",
+   "description": "Am meisten Schnee in Westkanada liegt in Big White: etwa 91 cm in den oberen Hängen, laut unserem Schneemodell. Danach kommen Silver Star (84 cm) und …",
+   "lede": "Am meisten Schnee in Westkanada liegt in Big White: etwa 91 cm in den oberen Hängen, laut unserem Schneemodell. Danach kommen Silver Star (84 cm) und Harper Mountain (74 cm). 51 von 57 Skigebieten in Westkanada haben heute Schnee in den oberen Hängen, und unser Modell zählt 329.280 km² Schneefläche.",
+   "sections": [
+    {
+     "h": "Wo heute Schnee liegt",
+     "p": [
+      "Die Schneefläche schrumpfte von 370.180 km² am 1. November auf heute 329.280 km², und unsere Prognose ergibt 302.380 km² am 6. November.",
+      "Die Höhe macht den Unterschied: In Big White zeigt unser Modell 58 cm am Gipfel (2.271 m), 8 cm an der Mittelstation (1.891 m) und 0 cm im Tal (1.512 m)."
+     ]
+    },
+    {
+     "h": "Was die Messstationen zeigen",
+     "p": [
+      "Die Werte der Skigebiete sind Modellschätzungen für die oberen Hänge; Messstationen messen an einem Punkt, am angegebenen Tag."
+     ]
+    },
+    {
+     "h": "Im Vergleich mit früheren Wintern",
+     "p": [
+      "Ein guter Start in Big White: Auf 1.891 m zeigt unser Modell heute 39 cm, mehr als an diesem Datum in 43 der letzten 46 Winter (üblich: 13 cm).",
+      "Ein guter Start in Silver Star: Auf 1.516 m zeigt unser Modell heute 9 cm, mehr als an diesem Datum in 39 der letzten 46 Winter (üblich: 2 cm).",
+      "Ein guter Start in Harper Mountain: Auf 1.283 m zeigt unser Modell heute 53 cm, mehr als an diesem Datum in 46 der letzten 46 Winter (üblich: 2 cm)."
+     ]
+    },
+    {
+     "h": "Was als Nächstes kommt",
+     "p": [
+      "Bis zum 6. November ergibt unsere Prognose 31 cm in Mount Cain Alpine Park, 25 cm in Whistler Blackcomb und 3 cm in Silver Star.",
+      "In Big White liegt die Nullgradgrenze am 3. November zwischen 1.120 m und 2.600 m, über dem höchsten Punkt des Skigebiets (2.271 m): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich.",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Früher Schnee ist dünn. Bleib auf offenen, präparierten Pisten: Steine und Gras liegen oft knapp darunter.",
+    "Such den Schnee weit oben und an Nordhängen: Dort hält er am längsten, Südhänge verlieren ihn zuerst in der Sonne.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Big White Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe in Westkanada am 3. November 2026 (SnowScope-Schneemodell): Big White, Silver Star, Harper Mountain, Mount Cain Alpine Park, Whistler Blackcomb."
+   }
+  },
+  "it": {
+   "title": "Neve nel Canada occidentale: Big White in testa con 91 cm (3 novembre)",
+   "description": "La neve più abbondante nel Canada occidentale è a Big White: circa 91 cm sui pendii superiori, secondo il nostro modello neve. Poi vengono Silver …",
+   "lede": "La neve più abbondante nel Canada occidentale è a Big White: circa 91 cm sui pendii superiori, secondo il nostro modello neve. Poi vengono Silver Star (84 cm) e Harper Mountain (74 cm). 51 località su 57 nel Canada occidentale hanno oggi neve sui pendii superiori, e il nostro modello conta 329.280 km² di superficie innevata.",
+   "sections": [
+    {
+     "h": "Dove c'è neve oggi",
+     "p": [
+      "La superficie innevata è passata da 370.180 km² il 1 novembre a 329.280 km² oggi, e la nostra previsione indica 302.380 km² il 6 novembre.",
+      "La quota conta: a Big White il nostro modello indica 58 cm in vetta (2.271 m), 8 cm a metà montagna (1.891 m) e 0 cm alla base (1.512 m)."
+     ]
+    },
+    {
+     "h": "Cosa misurano le stazioni",
+     "p": [
+      "I valori delle località sono stime del modello per i pendii superiori; le stazioni misurano in un punto, alla data indicata."
+     ]
+    },
+    {
+     "h": "Rispetto agli inverni passati",
+     "p": [
+      "Un buon inizio a Big White: a 1.891 m il nostro modello indica oggi 39 cm, più che in questa data in 43 dei 46 inverni passati (abituale: 13 cm).",
+      "Un buon inizio a Silver Star: a 1.516 m il nostro modello indica oggi 9 cm, più che in questa data in 39 dei 46 inverni passati (abituale: 2 cm).",
+      "Un buon inizio a Harper Mountain: a 1.283 m il nostro modello indica oggi 53 cm, più che in questa data in 46 dei 46 inverni passati (abituale: 2 cm)."
+     ]
+    },
+    {
+     "h": "Cosa arriva",
+     "p": [
+      "Fino al 6 novembre la nostra previsione indica 31 cm a Mount Cain Alpine Park, 25 cm a Whistler Blackcomb e 3 cm a Silver Star.",
+      "A Big White lo zero termico sale tra 1.120 m e 2.600 m il 3 novembre, sopra la quota massima della località (2.271 m): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii.",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "La neve di inizio stagione è sottile. Resta sulle piste aperte e battute: sassi ed erba sono appena sotto.",
+    "Cerca la neve in quota e sui versanti nord: la conservano più a lungo, mentre i versanti sud la perdono per primi al sole.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Big White riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve nel Canada occidentale il 3 novembre 2026 (modello neve SnowScope): Big White, Silver Star, Harper Mountain, Mount Cain Alpine Park, Whistler Blackcomb."
+   }
+  },
+  "es": {
+   "title": "Nieve en el oeste de Canadá: Big White en cabeza con 91 cm (3 de noviembre)",
+   "description": "Donde más nieve hay en el oeste de Canadá es en Big White: unos 91 cm en las pistas altas, según nuestro modelo de nieve. Después vienen Silver Star …",
+   "lede": "Donde más nieve hay en el oeste de Canadá es en Big White: unos 91 cm en las pistas altas, según nuestro modelo de nieve. Después vienen Silver Star (84 cm) y Harper Mountain (74 cm). 51 de 57 estaciones en el oeste de Canadá tienen hoy nieve en las pistas altas, y nuestro modelo cuenta 329.280 km² de superficie nevada.",
+   "sections": [
+    {
+     "h": "Dónde está la nieve hoy",
+     "p": [
+      "La superficie nevada pasó de 370.180 km² el 1 de noviembre a 329.280 km² hoy, y nuestra previsión da 302.380 km² el 6 de noviembre.",
+      "La altitud cuenta: en Big White, nuestro modelo da 58 cm en la cota alta (2271 m), 8 cm a media montaña (1891 m) y 0 cm en la base (1512 m)."
+     ]
+    },
+    {
+     "h": "Lo que miden las estaciones",
+     "p": [
+      "Las cifras de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida miden en un punto, en la fecha indicada."
+     ]
+    },
+    {
+     "h": "Comparado con los inviernos pasados",
+     "p": [
+      "Buen comienzo en Big White: a 1891 m, nuestro modelo da hoy 39 cm, más que en esta fecha en 43 de los 46 inviernos pasados (lo habitual: 13 cm).",
+      "Buen comienzo en Silver Star: a 1516 m, nuestro modelo da hoy 9 cm, más que en esta fecha en 39 de los 46 inviernos pasados (lo habitual: 2 cm).",
+      "Buen comienzo en Harper Mountain: a 1283 m, nuestro modelo da hoy 53 cm, más que en esta fecha en 46 de los 46 inviernos pasados (lo habitual: 2 cm)."
+     ]
+    },
+    {
+     "h": "Lo que viene",
+     "p": [
+      "Hasta el 6 de noviembre, nuestra previsión da 31 cm en Mount Cain Alpine Park, 25 cm en Whistler Blackcomb y 3 cm en Silver Star.",
+      "En Big White, la cota de congelación llega a 1120 m-2600 m el 3 de noviembre, por encima de la cota alta de la estación (2271 m): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "La nieve de principio de temporada es fina. Quédate en pistas abiertas y pisadas: piedras y hierba están justo debajo.",
+    "Busca la nieve en lo alto y en las laderas orientadas al norte: la guardan más tiempo; las orientadas al sur la pierden antes.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Big White recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de Canadá el 3 de noviembre 2026 (modelo de nieve de SnowScope): Big White, Silver Star, Harper Mountain, Mount Cain Alpine Park, Whistler Blackcomb."
+   }
+  },
+  "ar": {
+   "title": "التلج فغرب كندا: Big White فالمقدمة ب 91 سم (3 نونبر)",
+   "description": "أكثر تلج فغرب كندا كاين ف Big White: تقريبا 91 سم فالجهة الفوقانية، حسب الموديل ديال التلج ديالنا. من بعدها Silver Star (84 سم) و Harper Mountain (74 …",
+   "lede": "أكثر تلج فغرب كندا كاين ف Big White: تقريبا 91 سم فالجهة الفوقانية، حسب الموديل ديال التلج ديالنا. من بعدها Silver Star (84 سم) و Harper Mountain (74 سم). 51 محطة من 57 فغرب كندا فيهم التلج فالجهة الفوقانية اليوم، والموديل ديالنا كيحسب 329280 كم² ديال الأرض اللي فيها التلج.",
+   "sections": [
+    {
+     "h": "فين كاين التلج اليوم",
+     "p": [
+      "المساحة اللي فيها التلج دازت من 370180 كم² نهار 1 نونبر ل 329280 كم² اليوم، والتوقعات ديالنا كتعطي 302380 كم² نهار 6 نونبر.",
+      "العلو مهم: ف Big White، الموديل ديالنا كيعطي 58 سم فالفوق (2271 م)، 8 سم فالوسط (1891 م) و 0 سم فالتحت (1512 م)."
+     ]
+    },
+    {
+     "h": "شنو قاسو المحطات",
+     "p": [
+      "الأرقام ديال المحطات ديال التزلج تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس كتقيس فنقطة وحدة، فالتاريخ المكتوب."
+     ]
+    },
+    {
+     "h": "مقارنة مع الشتوات اللي فاتو",
+     "p": [
+      "بداية مزيانة ف Big White: على علو 1891 م، الموديل ديالنا فيه اليوم 39 سم، أكثر من هاد التاريخ ف 43 من 46 ديال الشتوات اللي فاتو (العادي: 13 سم).",
+      "بداية مزيانة ف Silver Star: على علو 1516 م، الموديل ديالنا فيه اليوم 9 سم، أكثر من هاد التاريخ ف 39 من 46 ديال الشتوات اللي فاتو (العادي: 2 سم).",
+      "بداية مزيانة ف Harper Mountain: على علو 1283 م، الموديل ديالنا فيه اليوم 53 سم، أكثر من هاد التاريخ ف 46 من 46 ديال الشتوات اللي فاتو (العادي: 2 سم)."
+     ]
+    },
+    {
+     "h": "شنو جاي",
+     "p": [
+      "حتى ل 6 نونبر، التوقعات ديالنا كتعطي 31 سم ف Mount Cain Alpine Park، 25 سم ف Whistler Blackcomb و 3 سم ف Silver Star.",
+      "ف Big White، علو الجليد غادي يكون بين 1120 م و 2600 م نهار 3 نونبر، فوق أعلى نقطة فالمحطة (2271 م): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات.",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "التلج ديال بداية الموسم رقيق. بقى فالبيستات المحلولة والمدكوكة: الحجر والربيع يمكن يكونو تحت نيشان.",
+    "قلب على التلج فالعلو وفالجهات اللي كتشوف للشمال: كيحافظو عليه كثر، والجهات اللي كتشوف للجنوب كيمشي ليهم بالشمس.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Big White يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب كندا نهار 3 نونبر 2026 (الموديل ديال SnowScope): Big White, Silver Star, Harper Mountain, Mount Cain Alpine Park, Whistler Blackcomb."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  },
+  "fr": {
+   "writer": "template"
+  },
+  "de": {
+   "writer": "template"
+  },
+  "it": {
+   "writer": "template"
+  },
+  "es": {
+   "writer": "template"
+  },
+  "ar": {
+   "writer": "template"
+  }
+ },
+ "words_en": 350,
+ "indexable": true,
+ "main": {
+  "slug": "big_white_ski_resort",
+  "name": "Big White",
+  "lat": 49.7358,
+  "lon": -118.9487
+ },
+ "places": [
+  {
+   "name": "Big White",
+   "lat": 49.7358,
+   "lon": -118.9487
+  },
+  {
+   "name": "Silver Star",
+   "lat": 50.3657,
+   "lon": -119.0516
+  },
+  {
+   "name": "Harper Mountain",
+   "lat": 50.7221,
+   "lon": -120.1335
+  },
+  {
+   "name": "Mount Cain Alpine Park",
+   "lat": 50.2232,
+   "lon": -126.3468
+  },
+  {
+   "name": "Whistler Blackcomb",
+   "lat": 50.0888,
+   "lon": -122.9419
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "big_white_ski_resort",
+   "name": "Big White"
+  },
+  {
+   "slug": "silver_star_mountain_resort",
+   "name": "Silver Star"
+  },
+  {
+   "slug": "harper_mountain",
+   "name": "Harper Mountain"
+  },
+  {
+   "slug": "mount_cain_alpine_park",
+   "name": "Mount Cain Alpine Park"
+  },
+  {
+   "slug": "whistler",
+   "name": "Whistler Blackcomb"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "big_white_ski_resort",
+    "name": "Big White",
+    "depth": 91,
+    "new72": 0,
+    "next": 2,
+    "top_m": 2271
+   },
+   {
+    "slug": "silver_star_mountain_resort",
+    "name": "Silver Star",
+    "depth": 84,
+    "new72": 0,
+    "next": 3,
+    "top_m": 1886
+   },
+   {
+    "slug": "harper_mountain",
+    "name": "Harper Mountain",
+    "depth": 74,
+    "new72": 0,
+    "next": 1,
+    "top_m": 1483
+   },
+   {
+    "slug": "mount_cain_alpine_park",
+    "name": "Mount Cain Alpine Park",
+    "depth": 68,
+    "new72": 3,
+    "next": 31,
+    "top_m": 1616
+   },
+   {
+    "slug": "whistler",
+    "name": "Whistler Blackcomb",
+    "depth": 61,
+    "new72": 1,
+    "next": 25,
+    "top_m": 2259
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Avalanche Canada",
+   "url": "https://avalanche.ca/"
+  }
+ ],
+ "trip_day": "2026-11-07",
+ "map_link": "https://snowscope.app/#@49.736,-118.949,9.0",
+ "seconds": 0.0
+}
