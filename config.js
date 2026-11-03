@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://compensation-systems-gig-apparent.trycloudflare.com";
+window.SNOWSCOPE_API = "https://hispanic-versus-color-cost.trycloudflare.com";
