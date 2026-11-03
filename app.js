@@ -673,7 +673,7 @@
       layout: { "text-field": ["get", "n"], "text-font": ["Noto Sans Regular"], "text-size": 11.5, "text-offset": [0, 0.9], "text-anchor": "top", "text-optional": true },
       paint: { "text-color": "#4B5563", "text-halo-color": "#fff", "text-halo-width": 1.4 } });
     map.addLayer({ id: "pin_chip", type: "symbol", source: "pins", minzoom: 7, filter: ["has", "v"],
-      layout: { "icon-image": ["concat", "pin", ["get", "th"], "_", ["to-string", ["get", "v"]]], "icon-anchor": "bottom", "icon-padding": 1,
+      layout: { "icon-image": ["concat", "pin", ["get", "th"], "_", ["to-string", ["get", "v"]]], "icon-anchor": "bottom", "icon-padding": 6,
         "icon-size": ["interpolate", ["linear"], ["zoom"], 7, ["*", 0.82, ["get", "sz"]], 10, ["*", 0.95, ["get", "sz"]], 13, ["get", "sz"]],
         "symbol-sort-key": ["-", 100000, ["get", "km"]], "text-field": ["step", ["zoom"], "", 9.5, ["get", "n"]], "text-font": ["Noto Sans Bold"], "text-size": 12,
         "text-anchor": "top", "text-offset": [0, 0.35], "text-optional": true, "text-max-width": 9, "text-letter-spacing": 0.02 },
@@ -838,10 +838,11 @@
     h += '<div class="stntop"><div><div class="over">Deepest measured</div><b>' + esc(t[2]) + '</b><small>' + (t[3] ? U.elev(t[3]) + " · " : "") + esc(stnTime(t[5])) + "</small></div>" +
       '<span class="val" data-stn="' + rows[0][1] + '"><i class="chip" style="background:' + depthCol(t[4]) + '"></i><b>' + cmS(t[4]) + "</b>" + newChip(t[8]) + "</span></div>" +
       '<div class="mini" role="group" aria-label="Map layers"><button data-monly aria-pressed="' + st.monly + '"><span class="ms">sensors</span>Measured only</button></div>';
-    h += '<table class="fc stn"><thead><tr><th>Station</th><th>Elev.</th><th>Depth</th><th>New</th><th>Time</th><th></th></tr></thead><tbody>' +
-      rows.slice(0, 30).map(([r, i]) => '<tr data-stn="' + i + '"><td class="nm" title="' + esc(r[2]) + '"><i class="chip" style="background:' + depthCol(r[4]) + '"></i>' + esc(r[2]) + "</td><td>" + (r[3] ? U.elev(r[3]) : "–") + "</td><td><b>" + U.dep(r[4]) + "</b> " + U.du() + "</td><td>" +
-        (newChip(r[8]) || "–") + "</td><td>" + esc(stnTime(r[5])) + "</td><td>" +
-        (r[7] ? '<a href="' + esc(r[7]) + '" target="_blank" rel="noopener" title="Station page" data-stop><span class="ms">open_in_new</span></a>' : "") + "</td></tr>").join("") +
+    // v3: 3 columns that fit the 368 px panel (name with height · time under it | depth + new | link)
+    h += '<table class="fc stn stn3"><thead><tr><th>Station</th><th class="n">Depth</th><th><span class="sr">Station page</span></th></tr></thead><tbody>' +
+      rows.slice(0, 30).map(([r, i]) => '<tr data-stn="' + i + '"><td class="nm" title="' + esc(r[2]) + '"><i class="chip" style="background:' + depthCol(r[4]) + '"></i><span class="sn"><b>' + esc(r[2]) + "</b><small>" +
+        esc([r[3] ? U.elev(r[3]) : "", stnTime(r[5])].filter(Boolean).join(" · ")) + '</small></span></td><td class="n"><b>' + U.dep(r[4]) + "</b> " + U.du() + (newChip(r[8]) ? "<br>" + newChip(r[8]) : "") + "</td><td>" +
+        (r[7] ? '<a href="' + esc(r[7]) + '" target="_blank" rel="noopener" title="Station page" aria-label="Station page" data-stop><span class="ms">open_in_new</span></a>' : "") + "</td></tr>").join("") +
       "</tbody></table>" + (rows.length > 30 ? '<p class="none">' + esc(I18N.t("Showing the 30 deepest of {a} stations in view").replace("{a}", rows.length)) + "</p>" : "");
     return h + "</div>";
   }
@@ -958,9 +959,9 @@
     const el = document.createElement("button");
     el.className = "staychip"; el.type = "button";
     el.setAttribute("aria-label", I18N.tu("Stays near {a}", x.short));
-    const nm = x.short.length > 22 ? x.short.slice(0, 21) + "…" : x.short;
+    const nm = x.short;                // CSS ellipsis (v3): a JS slice cut names mid-word and broke right-to-left text
     el.innerHTML = '<span class="sci" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M3 6a1 1 0 0 1 2 0v7h6V9a1 1 0 0 1 1-1h6a3 3 0 0 1 3 3v7a1 1 0 0 1-2 0v-2H5v2a1 1 0 0 1-2 0V6Zm4.5 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg></span>' +
-      '<span class="sct"><b>' + esc(I18N.tu("Stays near {a}", nm)) + '</b><small>' + esc(I18N.t("Places to stay · see prices")) + '</small></span><span class="partner">' + esc(I18N.t("Partner")) + "</span>";
+      '<span class="sct"><b><bdi>' + esc(I18N.tu("Stays near {a}", nm)) + '</bdi></b><small>' + esc(I18N.t("Places to stay · see prices")) + '</small></span><span class="partner">' + esc(I18N.t("Partner")) + "</span>";
     el.addEventListener("click", (e) => { e.stopPropagation(); stayChipClick(x); });
     stayMk = new LIB.Marker({ element: el, anchor: document.documentElement.dir === "rtl" ? "right" : "left", offset: [document.documentElement.dir === "rtl" ? -16 : 16, -10] }).setLngLat([x.lon, x.lat]).addTo(map);
     el.setAttribute("aria-label", I18N.tu("Stays near {a}", x.short));       // the map library sets "Map marker"
@@ -1361,7 +1362,10 @@
     const ds = r.days.slice(-9), mx = Math.max(5, ...ds.map((y) => y.new_max_cm || 0));
     const bars = '<div class="hbars" aria-hidden="true">' + ds.map((y) => '<span class="' + (y.date === st.day ? "on" : "") + (y.date > DATA.today ? " fc" : "") + '"><i style="height:' + Math.max(3, Math.round(((y.new_max_cm || 0) / mx) * 44)) + 'px"></i><b>' +
       (y.new_max_cm >= 1 ? U.dep(y.new_max_cm) : "") + "</b><small>" + (y.date === DATA.today ? esc(I18N.t("Today")) : wd(y.date)) + "</small></span>").join("") + "</div>";
-    let h = '<section class="rhero"><div class="hk">' + esc(when) + " · " + esc(I18N.t(r.name)) + '</div><div class="hn">' + big + '</div><div class="hw">' + esc(what) + (where ? ' <span class="hp">' + esc(where) + "</span>" : "") + "</div>" +
+    // freshness (v3 trust cue): when the pictures were built, in the visitor's time ("Updated 07:12" / "Updated 2 Nov")
+    const bu = DATA.built_utc ? new Date(DATA.built_utc) : null, sameDay = bu && bu.toDateString() === new Date().toDateString();
+    const upd = bu && !isNaN(bu) ? '<span class="upd" title="' + esc(bu.toLocaleString(LOC)) + '">' + esc(I18N.tu("Updated {a}", sameDay ? bu.toLocaleTimeString(LOC, { hour: "2-digit", minute: "2-digit" }) : bu.toLocaleDateString(LOC, { day: "numeric", month: "short" }))) + "</span>" : "";
+    let h = '<section class="rhero"><div class="hk"><span>' + esc(when) + " · " + esc(I18N.t(r.name)) + "</span>" + upd + '</div><div class="hn">' + big + '</div><div class="hw">' + esc(what) + (where ? ' <span class="hp">' + esc(where) + "</span>" : "") + "</div>" +
       '<div class="hs"><span><b>' + fmt(x.resorts_with_snow || 0) + "</b> " + esc(I18N.t("resorts with snow")) + "</span>" + (fresh && best ? "<span><b>" + U.depth(best.depth_cm) + "</b> " + esc(I18N.t("deepest")) + "</span>" : "") + "</div>" +
       '<div class="hc"><div class="hk2">' + esc(I18N.t("Fresh snow, last days and next days")) + "</div>" + bars + "</div></section>";
     if (x.top.length) {
@@ -1556,7 +1560,9 @@
     const storms = (DATA.storms || []).map((x, i) => [x, i]).sort((a, b) => b[0].cm - a[0].cm).slice(0, 8);
     h += '<div class="sect">Snow storms</div>' + (storms.length ? storms.map(([x, i]) => '<article class="card storm"><div class="over">' + esc((x.date === DATA.today ? "Today" : wd(x.date) + " " + dnum(x.date)) + " · " + (NAMES[x.region] || "")) + '</div>' +
       '<div class="pwtop"><div class="nm"><b>' + esc(x.place || NAMES[x.region] || x.region) + "</b><small>" + (x.hours === 72 ? "in 3 days" : "in 24 hours") + "</small></div><b class=\"big\" style=\"color:" + newTier(x.cm) + '">+' + cmS(x.cm) + "</b></div>" +
-      measuredHtml(x.lat, x.lon, null, true) + '<div class="acts3">' + (x.slug ? '<button class="btn tonal" data-open="' + esc(x.slug) + '"><span class="ms">info</span>Details</button>' : "") +
+      measuredHtml(x.lat, x.lon, null, true) +
+      '<div data-ptrip data-ptrip-mode="chip" data-where="storm" data-lat="' + x.lat + '" data-lon="' + x.lon + '" data-place="' + esc(x.place || "") + '" data-day="' + esc(x.date) + '"></div>' +
+      '<div class="acts3">' + (x.slug ? '<button class="btn tonal" data-open="' + esc(x.slug) + '"><span class="ms">info</span>Details</button>' : "") +
       '<a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a>' +
       '<button class="btn ink" data-storm="' + i + '"><span class="ms">add_photo_alternate</span>Post image</button></div></article>').join("")
       : '<p class="none">' + esc(I18N.tu("No snow storm right now ({a} cm or more).", U.depN(20))) + "</p>");
@@ -1577,7 +1583,7 @@
     if (!SS.Auth.enabled()) acc = '<div class="card"><b>Your SnowScope account</b><p class="none" style="padding:4px 0 0">Your account and Pro live in the app. Signing in here is coming soon.</p></div>';
     else if (!u) acc = '<div class="card"><b>One account for the app and the website</b><p class="none" style="padding:4px 0 8px">Sign in to remove ads and unlock Pro if you have it.</p><button class="btn ink" data-signin>Sign in</button> <button class="btn ghost" data-signup>Create an account</button></div>';
     else acc = '<div class="card"><b>' + esc(u.displayName || u.email || "Signed in") + '</b><p class="none" style="padding:2px 0 8px">' + (S.pro ? '<span class="pro"><span class="ms f">workspace_premium</span>PRO</span> You have SnowScope Pro.' : S.state === "no_account" ? "Open the app once with this account to connect it." : S.state === "api_down" ? "Pro data is updating, try again in a minute." : "Free plan") + '</p><a class="btn tonal" href="' + BASE + 'account.html">Manage account</a></div>';
-    const pro = S.pro ? "" : '<div class="card"><span class="pro"><span class="ms f">workspace_premium</span>PRO</span><p style="margin:8px 0;font-size:14px;color:var(--ink2)">No ads, the sharpest snow map, 15 days, powder on every day, wind, freezing level, satellite snow, 7-day resort forecasts and past winters.</p>' + (window.SSPay && SSPay.enabled() ? '<button class="btn ink" data-buy-pro>Get Pro</button>' : '<a class="btn ink" href="' + esc(SS.appUrl()) + '">Get Pro in the app</a>') + '</div>';
+    const pro = S.pro ? "" : !SS.webPro() ? '<div class="card"><span class="pro"><span class="ms f">workspace_premium</span>PRO</span><p style="margin:8px 0;font-size:14px;color:var(--ink2)">Everything on the website is free. In the Android app, SnowScope Pro names every peak around you, creates 3D videos and removes the ads.</p><a class="btn ink" href="' + esc(SS.appUrl()) + '">Get the app</a></div>' : '<div class="card"><span class="pro"><span class="ms f">workspace_premium</span>PRO</span><p style="margin:8px 0;font-size:14px;color:var(--ink2)">No ads, the sharpest snow map, 15 days, powder on every day, wind, freezing level, satellite snow, 7-day resort forecasts and past winters.</p>' + (window.SSPay && SSPay.enabled() ? '<button class="btn ink" data-buy-pro>Get Pro</button>' : '<a class="btn ink" href="' + esc(SS.appUrl()) + '">Get Pro in the app</a>') + '</div>';
     const teaser = (icon, bg, t, s) => '<a class="teaser" href="' + esc(SS.appUrl()) + '"><span class="ic" style="background:' + bg + '"><span class="ms f">' + icon + "</span></span><span><b>" + t + "</b><small>" + s + "</small></span></a>";
     const hide = S.pro ? '<button class="row" role="switch" data-nostay aria-checked="' + !store.get("ss_nostay") + '"><span class="ic"><span class="ms">hotel</span></span><span class="tx"><b>Hotel suggestions</b><small>Places to stay near resorts</small></span><span class="sw-t"></span></button>' : "";
     const units = '<div class="sect">Units</div><div class="seg2" role="group" aria-label="Units"><button data-units="metric" aria-pressed="' + !U.us() + '">Metric · cm, m, km, °C</button><button data-units="us" aria-pressed="' + U.us() + '">US · in, ft, mi, °F</button></div>';
@@ -1824,7 +1830,7 @@
       '<div class="acts3 ptacts"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + pt.lat + "," + pt.lon + '"><span class="ms">directions_car</span>Directions</a>' +
       '<button class="btn tonal" data-sharept><span class="ms">share</span>Share</button>' +
       (n && staysOn() ? '<button class="btn tonal" data-openstays="' + esc(n[0].slug) + '" data-via="point" title="Places to stay (partner)"><span class="ms">hotel</span>Stay</button>' : "") + "</div>" +
-      (s30 ? '<p class="measured s30"><span class="k">Sharp 30 m</span> <b>' + U.depth(Math.round(s30.depth_cm)) + "</b>" + (s30.elevation_m ? " · " + U.elev(s30.elevation_m) : "") + "</p>" : "") +
+      (s30 ? '<p class="measured s30"><span class="k">' + esc(I18N.t("Sharper view")) + '</span> <b>' + U.depth(Math.round(s30.depth_cm)) + "</b>" + (s30.elevation_m ? " · " + U.elev(s30.elevation_m) : "") + "</p>" : "") +
       fold("past", "Compared with past winters", '<div id="ptPast"><div class="skel" style="height:118px"></div></div><div id="ptChart"><div class="skel" style="height:190px;margin-top:10px"></div></div>') +
       fold("stn", "Closest measured station", '<div id="ptStn"><div class="skel" style="height:120px"></div></div>') +
       (window.SSX ? fold("hours", "Hour by hour", '<div id="ptMeteo"><div class="skel" style="height:230px"></div></div>') : "") +
@@ -2239,9 +2245,9 @@
   const STAYF = { budget: "Under {a}", rentals: "Chalets & apartments", rated: "Top rated" };
   function stayModule(lat, lon, place, where) {
     if (SS.staysHidden() || !(SS.S.cfg && SS.S.cfg.stay22 && SS.S.cfg.stay22.aid)) return "";
-    const cin0 = st.day > stayToday() ? st.day : stayToday();
+    const cin0 = st.stayDay && st.stayDay >= stayToday() ? st.stayDay : st.day > stayToday() ? st.day : stayToday();
     const sv = (() => { try { return JSON.parse(sessionStorage.getItem("ss_staysel") || "null") || {}; } catch { return {}; } })();
-    const cin = sv.cin && sv.cin >= stayToday() ? sv.cin : cin0, cout = sv.cout && sv.cout > cin ? sv.cout : addDays(cin, 1), ad = sv.adults || 2;
+    const cin = !st.stayDay && sv.cin && sv.cin >= stayToday() ? sv.cin : cin0, cout = sv.cout && sv.cout > cin ? sv.cout : addDays(cin, 1), ad = sv.adults || 2;
     // compact card, open by default (owner 2026-11-03, Stay22 viewability): live map first (220 px desktop, 180 px phone),
     // then dates / guests / filters; the map loads only once the card is half on screen (bindStays)
     const open = get("ss_fold_stays2", 1);
@@ -2460,9 +2466,11 @@
       (x.base_m && x.top_m ? (x.name !== x.short ? " · " : "") + U.ev(x.base_m) + "–" + U.elev(x.top_m) : "") + "</p>" +
       '<div class="hero2"><div class="card"><div class="over">Upper slopes today</div><b class="n">' + (d0 == null ? "–" : cmS(d0)) + '</b><small class="none">' + verdict + "</small></div>" +
       '<div class="card"><div class="over">New snow</div>' + (n0 >= 1 ? '<b class="n acc">+' + cmS(n0) + "</b><small class=\"none\">in 24 hours</small>" : '<b class="n">–</b><small class="none">No new snow in 24 h</small>') + "</div></div>" +
-      (s30 ? '<p class="measured s30"><span class="k">Sharp 30 m</span> <b>' + U.depth(Math.round(s30.depth_cm)) + "</b>" + (s30.elevation_m ? " · " + U.elev(s30.elevation_m) : "") + "</p>" : "") +
+      (s30 ? '<p class="measured s30"><span class="k">' + esc(I18N.t("Sharper view")) + '</span> <b>' + U.depth(Math.round(s30.depth_cm)) + "</b>" + (s30.elevation_m ? " · " + U.elev(s30.elevation_m) : "") + "</p>" : "") +
       measuredHtml(x.lat, x.lon, x.top_m || null, false) +
       '<div class="sect">Snow depth on the upper slopes, ' + U.du() + '</div><div id="rDays"></div>' +
+      // partners.js (MONETIZATION): "Plan your trip" right under the snow numbers + day strip, above the Stays card
+      '<div data-ptrip data-where="panel" data-lat="' + x.lat + '" data-lon="' + x.lon + '" data-place="' + esc(x.short) + '"' + (st.stayDay ? ' data-day="' + st.stayDay + '"' : "") + "></div>" +
       stayModule(x.lat, x.lon, x.short, st.staysVia || "panel") +
       adSlot("resort", x) +
       '<div class="sect">This season vs past winters</div><div id="rStrip"><div class="skel" style="height:118px"></div></div><div id="rHist"></div>' +
@@ -2657,6 +2665,8 @@
   st.day = DATA.dates.includes(DATA.today) ? DATA.today : DATA.dates[DATA.dates.length - 1];
   const dq = new URLSearchParams(location.search).get("d");
   if (dq && DATA.dates.includes(dq)) st.day = dq;
+  // powder-alert deep links (?d=<storm day>, MONETIZATION): the Stays card checks in on that day even beyond the map days
+  if (dq && /^\d{4}-\d{2}-\d{2}$/.test(dq) && dq >= DATA.today && dq <= addDays(DATA.today, 30)) st.stayDay = dq;
   st.region = homeRegion();
   st.ski.region = st.region;
   initialSlug = document.body.dataset.slug || null;

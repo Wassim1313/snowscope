@@ -857,3 +857,36 @@ details.morefilt .nfb{display:inline-grid;place-items:center;min-width:20px;heig
 .prng .me{top:2px;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--ink);box-shadow:0 0 0 2.5px var(--surface)}
 .prng-l{display:flex;justify-content:space-between;font-size:13px;color:var(--ink3);font-variant-numeric:tabular-nums;margin:2px 0 0}
 #ptRange .note{margin:6px 0 0}
+/* v3 step 3: type floor (micro-labels 12-13 px), measured table in 3 columns, freshness cue, Measured-only pill */
+.rb .rl{font-size:12px;line-height:14px}
+.timeline .chip small{font-size:12px;line-height:14px}
+.hbars b,.hbars small{font-size:12px;height:15px}
+body.app .timeline .legend .ramp-l{font-size:12px}
+.chart text{font-size:12px}
+.meteo text{font-size:11.5px}
+.keyrow{font-size:13px}
+.staychip .partner,details.stays>summary .partner{font-size:11px}
+@media (max-width:760px){.bottomnav button{font-size:12px}.rb .rl{font-size:11.5px}}
+.rhero .hk{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.rhero .hk .upd{font-size:12px;font-weight:550;color:var(--ink3);white-space:nowrap}
+table.fc.stn3{table-layout:fixed}
+table.fc.stn3 th:nth-child(2),table.fc.stn3 td:nth-child(2){width:84px;text-align:end}
+table.fc.stn3 th:nth-child(3),table.fc.stn3 td:nth-child(3){width:40px;text-align:end;padding-inline-end:0}
+table.fc.stn3 td{white-space:normal;vertical-align:middle}
+table.fc.stn3 td.nm{max-width:none;overflow:hidden}
+table.fc.stn3 .sn{display:inline-flex;flex-direction:column;vertical-align:middle;max-width:calc(100% - 18px)}
+table.fc.stn3 .sn b{font-weight:620;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+table.fc.stn3 .sn small{font-size:12.5px;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+table.fc.stn3 td.n b{font-size:16px}
+table.fc.stn3 td a{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:10px}
+table.fc.stn3 td a:hover{background:var(--surface3)}
+#stnbox .mini{display:flex;background:none;padding:0;margin:0 0 8px}
+#stnbox .mini button{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 14px;border-radius:18px;border:1px solid var(--outline);background:var(--surface);color:var(--ink2);font:inherit;font-size:13.5px;font-weight:620;cursor:pointer}
+#stnbox .mini button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.staychip .sct b bdi{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* v3 motion: sections ease open (no layout jump), reduced-motion respected */
+@keyframes v3in{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+details.fold[open]>:not(summary),details.morefilt[open]>:not(summary),details.wsmore[open]>:not(summary){animation:v3in .18s ease-out}
+@media (prefers-reduced-motion:reduce){details[open]>:not(summary),.minihead{animation:none!important;transition:none!important}}
+/* v3: the day strip scrolls on desktop too now that every day is free: fade both edges */
+.timeline .days{-webkit-mask-image:linear-gradient(90deg,transparent,#000 14px,#000 calc(100% - 14px),transparent);mask-image:linear-gradient(90deg,transparent,#000 14px,#000 calc(100% - 14px),transparent)}

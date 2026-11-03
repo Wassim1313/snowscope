@@ -69,7 +69,8 @@
       getJSON(ROOT + "web_config.json?v=" + Math.floor(Date.now() / 6e5)).catch(() => ({})),
       getJSON(ROOT + "config.json", { cache: "no-store" }).catch(() => null)]);
     S.cfg = cfg || {};
-    const tunnel = site && site.api ? String(site.api).replace(/\/$/, "") : null;
+    const alt = site && (site.fallback || site.api);  // config.json: "api" (apps) + "fallback" = the tunnel (docs/RAILWAY.md)
+    const tunnel = alt ? String(alt).replace(/\/$/, "") : null;
     const fixed = S.cfg.site && S.cfg.site.api_url ? String(S.cfg.site.api_url).replace(/\/$/, "") : null;
     S.api = fixed || tunnel;                          // stable API address first, the tunnel as the fallback
     S.apiAlt = fixed && tunnel && tunnel !== fixed ? tunnel : null;
@@ -435,7 +436,11 @@
   // Regional Pro (owner 2026-11-03): the Morocco lifetime covers the High Atlas only (engine/domains.py ATLAS box).
   const SCOPE_BOX = { ATLAS: [-10.5, 29.0, -1.5, 36.0] };
   /** Pro at this place ({lat, lng|lon}); everywhere for subscriptions / comp / gating off. */
+  // Freemium (owner 2026-11-03, docs/TIERS.md): the website is free for everyone (ads + Stay22 + partners); the old Pro
+  // locks and the web checkout come back only with web_config "web_pro_enabled": true (Paddle code kept dormant).
+  const webPro = () => !!(S.cfg && S.cfg.web_pro_enabled === true);
   function proHere(c) {
+    if (!webPro()) return true;
     if (!S.pro) return false;
     if (!S.scope) return true;
     const lat = c && +c.lat, lon = c && +(c.lng != null ? c.lng : c.lon);
@@ -443,14 +448,15 @@
     return S.scope.some((k) => { const b = SCOPE_BOX[k]; return !!b && lon >= b[0] && lat >= b[1] && lon <= b[2] && lat <= b[3]; });
   }
   /** Pro for a domain / region code ("ATLAS", "ALPS", ...). */
-  const proIn = (code) => !!S.pro && (!S.scope || S.scope.includes(String(code || "").toUpperCase()));
+  const proIn = (code) => !webPro() || !!S.pro && (!S.scope || S.scope.includes(String(code || "").toUpperCase()));
 
   function upsell(what) {
     const scoped = !!(S.pro && S.scope);
     const m = modal(head('<span class="pro"><span class="ms f">lock</span>PRO</span>') +
       '<p style="font-size:17px;font-weight:620;margin:6px 0 4px">' + esc(what || "This is a Pro feature") + "</p>" +
       (scoped ? '<p style="margin:0 0 10px"><b>Your Pro covers the High Atlas. Get Pro everywhere</b> (Alps, Pyrenees, North America…) with a subscription.</p>' : "") +
-      '<p style="color:var(--ink2);margin:0 0 14px">SnowScope Pro adds the sharper snow map, 15 days instead of 5, new snow, wind, freezing level, satellite snow and the 7-day resort forecast, without ads. Get it in the Android app, then sign in here with the same account.</p>' +
+      (!webPro() ? '<p style="color:var(--ink2);margin:0 0 14px">Everything on the website is free. In the Android app, SnowScope Pro names every peak around you, creates 3D videos and removes the ads.</p>' : "") +
+      (!webPro() ? "" : '<p style="color:var(--ink2);margin:0 0 14px">SnowScope Pro adds the sharper snow map, 15 days instead of 5, new snow, wind, freezing level, satellite snow and the 7-day resort forecast, without ads. Get it in the Android app, then sign in here with the same account.</p>') +
       (window.SSPay && SSPay.enabled() ? '<button class="btn ski big full" data-buy-pro><span class="ms f">workspace_premium</span>Get Pro</button>' +
         '<a class="btn ghost big full" style="margin-top:8px" href="' + esc(appUrl()) + '"><span class="ms f">downhill_skiing</span>Get the Android app</a>'
         : '<a class="btn ski big full" href="' + esc(appUrl()) + '"><span class="ms f">downhill_skiing</span>Get Pro in the Android app</a>') +
@@ -652,7 +658,7 @@
     analytics();
     setupFind();
     // web payments (Paddle overlay checkout, paddle.js): only when the owner config has a client-side token
-    if (S.cfg.paddle && S.cfg.paddle.client_token) loadScript(ROOT + "paddle.js").catch(() => {});
+    if (webPro() && S.cfg.paddle && S.cfg.paddle.client_token) loadScript(ROOT + "paddle.js").catch(() => {});
     document.querySelectorAll("[data-app-link]").forEach((a) => { a.href = appUrl(); });
     // a visitor who was Pro last time: wait (max 4 s) for the sign-in check before any ad loads
     const c = store.get("ss_ent");
@@ -669,6 +675,6 @@
     return S;
   }
 
-  window.SS = { proHere, proIn, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
+  window.SS = { webPro, proHere, proIn, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
                 resorts, mapLib, transformRequest, onChange: (f) => S.listeners.push(f), store, ROOT };
 })();

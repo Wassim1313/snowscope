@@ -1,0 +1,30 @@
+/* "Plan your trip" partner row (partners.js). Theme tokens come from site.css (light / dark already handled there). */
+.ptrip{margin:10px 0 14px;padding:10px 12px 12px;border-radius:var(--r-md,16px);background:var(--surface);box-shadow:var(--e1);display:flex;flex-direction:column;gap:8px}
+.ptrip.pending{margin:0;padding:0;box-shadow:none;min-height:0;background:none}
+.ptrip-h{display:flex;align-items:center;gap:8px}
+.ptrip-t{font-weight:650;font-size:13.5px;color:var(--ink)}
+.ptrip-h .partner{margin-inline-start:auto;font-size:11px;letter-spacing:.3px;padding:2px 7px;border-radius:999px;background:var(--surface2);color:var(--ink3)}
+.ptrip-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(118px,1fr));gap:6px}
+.pslot{display:flex;align-items:center;gap:8px;min-height:44px;padding:8px 10px;border-radius:var(--r-sm,12px);background:var(--surface2);color:var(--ink);
+  text-decoration:none;border:0;font:inherit;cursor:pointer;text-align:start}
+.pslot:hover,.pslot:focus-visible{background:var(--surface3)}
+.pslot:focus-visible,.pchip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.pslot .ms{font-size:20px;color:var(--accent-ink)}
+.pslot .pl{display:flex;flex-direction:column;line-height:1.2;min-width:0}
+.pslot .pl b{font-size:13px;font-weight:600}
+.pslot .pl small{font-size:11.5px;color:var(--ink3);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pchip{display:flex;align-items:center;gap:8px;min-height:44px;padding:8px 12px;border-radius:var(--r-sm,12px);background:var(--accent-tint);color:var(--accent-ink);
+  text-decoration:none;font-size:13.5px;font-weight:600}
+.pchip .ms{font-size:20px}
+.pchip .go{margin-inline-start:auto;font-size:18px}
+[dir="rtl"] .pchip .go{transform:scaleX(-1)}
+@media (max-width:480px){.ptrip-row{grid-template-columns:repeat(2,1fr)}}
+/* storm trigger card (>= 20 cm within 7 days): the one highlighted partner unit */
+.ptrip.storm{background:linear-gradient(180deg,var(--accent-tint),var(--surface) 70%)}
+.pstorm{display:flex;flex-direction:column;gap:8px}
+.pst-h{display:flex;align-items:center;gap:8px;font-size:15px;color:var(--ink)}
+.pst-h .ms{font-size:22px;color:var(--accent-ink)}
+.pst-a{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:6px}
+button.pchip{border:0;font:inherit;font-weight:600;cursor:pointer;text-align:start;width:100%}
+.pchip.alt{background:var(--surface2);color:var(--ink)}
+.pchip small{margin-inline-start:auto;font-weight:500;font-size:11.5px;color:var(--ink3)}

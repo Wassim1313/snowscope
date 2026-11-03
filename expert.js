@@ -228,8 +228,11 @@
     const fc = await FC.get(key);
     if (!$("ptMeteo") || st.point !== pt) return;
     if (!fc || fc.err || !fc.times || !fc.times.length) {
-      if (fc && fc.err && !fc.err.down && fc.err.status !== 503) FC.delete(key);
-      $("ptMeteo").innerHTML = '<p class="none">' + esc(t("The hour-by-hour forecast is updating, try again in a minute.")) + "</p>"; return;
+      FC.delete(key);                     // never keep a failure (v3): the next open / Retry asks again
+      $("ptMeteo").innerHTML = '<p class="none">' + esc(t("Couldn't load the hour-by-hour forecast.")) + ' <button class="linkbtn" data-mretry>' + esc(t("Retry")) + "</button></p>";
+      const rb = $("ptMeteo").querySelector("[data-mretry]");
+      if (rb) rb.onclick = () => { $("ptMeteo").innerHTML = '<div class="skel" style="height:230px"></div>'; meteogram(pt, days, region); };
+      return;
     }
     const draw = (cmp) => { $("ptMeteo").innerHTML = meteoHtml(fc, days, cmp); bind(); };
     const bind = () => {

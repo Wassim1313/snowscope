@@ -54,7 +54,8 @@
 
   let paddleReady = null, cur = "USD", country = null, pending = null;
   const money = (v) => { try { return new Intl.NumberFormat((window.I18N && I18N.locale) || "en-GB", { style: "currency", currency: cur }).format(v); } catch { return "$" + v; } };
-  const enabled = () => !!(cfg().client_token && cfg().prices && cfg().prices.pro_yearly);
+  // freemium (2026-11-03): the web checkout sleeps unless web_config "web_pro_enabled": true (docs/TIERS.md)
+  const enabled = () => !!(window.SS && SS.webPro && SS.webPro()) && !!(cfg().client_token && cfg().prices && cfg().prices.pro_yearly);
 
   function loadPaddle() {
     if (paddleReady) return paddleReady;

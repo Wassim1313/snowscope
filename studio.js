@@ -199,7 +199,7 @@
     else if (!st.me.verified) h = '<div class="card st-note"><span class="ms">mark_email_unread</span><div><p>' + esc(t("verify")) +
       '</p><div class="st-acts"><a class="btn tonal" href="account.html">' + esc(t("myAccount")) + '</a><button class="btn ghost" data-st-retry>' + esc(t("retry")) + "</button></div></div></div>";
     else if (!st.me.premium && !st.me.pro_for_all) h = '<div class="card st-upsell"><span class="pro"><span class="ms f">workspace_premium</span>PRO</span><h3>' + esc(t("proTitle")) +
-      "</h3><p>" + esc(t("proText")) + '</p><div class="st-acts"><a class="btn ski" href="pricing.html">' + esc(t("seePlans")) + "</a></div></div>";
+      "</h3><p>" + esc(t("proText")) + '</p><div class="st-acts">' + (SS.webPro && SS.webPro() ? '<a class="btn ski" href="pricing.html">' + esc(t("seePlans")) + "</a>" : appBtn()) + "</div></div>";   // free website (FREEMIUM): Pro is in the app
     else {
       const q = st.me.quota;
       if (q && q.limit != null) h = '<p class="st-quota">' + (q.left > 0 ? esc(t("left", { n: q.left, m: q.limit })) : '<span class="warn">' + esc(t("noneLeft", { t: when(q.resets_at) })) + "</span>") + "</p>";
