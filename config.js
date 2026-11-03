@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://rules-upgrade-packet-option.trycloudflare.com";
+window.SNOWSCOPE_API = "https://exhibits-presentation-ment-herbal.trycloudflare.com";
