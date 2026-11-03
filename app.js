@@ -97,6 +97,15 @@
     return [[Math.min(...lo) - 0.35, Math.min(...la) - 0.25], [Math.max(...lo) + 0.35, Math.max(...la) + 0.25]];
   }
   const startPad = () => ({ top: 90, bottom: innerWidth > 760 ? 150 : 320, left: (innerWidth > 760 ? 424 : 0) + 16, right: 80 });
+  // v3: the region button and the panel follow the map (panning from the Alps to the Atlas still said "Alps")
+  function syncRegion() {
+    if (!map || map.getZoom() < 5) return;
+    const rr = regionAt(map.getCenter());
+    if (!rr || rr.code === st.region) return;
+    st.region = rr.code; st.ski.region = rr.code;
+    if ($("regName")) $("regName").textContent = rr.name;
+    if (!st.slug && !st.point && !st.piste && st.tab === "map") renderPanel();
+  }
   function flyRegion(code, instant) {
     const r = DATA.regions.find((x) => x.code === code);
     if (!r) return;
@@ -665,7 +674,7 @@
       paint: { "text-color": "#4B5563", "text-halo-color": "#fff", "text-halo-width": 1.4 } });
     map.addLayer({ id: "pin_chip", type: "symbol", source: "pins", minzoom: 7, filter: ["has", "v"],
       layout: { "icon-image": ["concat", "pin", ["get", "th"], "_", ["to-string", ["get", "v"]]], "icon-anchor": "bottom", "icon-padding": 1,
-        "icon-size": ["interpolate", ["linear"], ["zoom"], 7, ["*", 0.6, ["get", "sz"]], 10, ["*", 0.86, ["get", "sz"]], 13, ["get", "sz"]],
+        "icon-size": ["interpolate", ["linear"], ["zoom"], 7, ["*", 0.82, ["get", "sz"]], 10, ["*", 0.95, ["get", "sz"]], 13, ["get", "sz"]],
         "symbol-sort-key": ["-", 100000, ["get", "km"]], "text-field": ["step", ["zoom"], "", 9.5, ["get", "n"]], "text-font": ["Noto Sans Bold"], "text-size": 12,
         "text-anchor": "top", "text-offset": [0, 0.35], "text-optional": true, "text-max-width": 9, "text-letter-spacing": 0.02 },
       paint: { "text-color": "#0B1220", "text-halo-color": "#ffffff", "text-halo-width": 1.5 } });
@@ -694,8 +703,8 @@
     const id = "pin" + th + "_" + v;
     if (PINS.has(id) || !map) return;
     const c = document.createElement("canvas"), g = c.getContext("2d"), dark = th[0] === "d", vs = U.dep(v), un = U.du();
-    g.font = "600 24px Inter, system-ui, sans-serif"; const tw = Math.ceil(g.measureText(vs).width);
-    g.font = "500 16px Inter, system-ui, sans-serif"; const uw = Math.ceil(g.measureText(un).width);
+    g.font = "650 28px Inter, system-ui, sans-serif"; const tw = Math.ceil(g.measureText(vs).width);
+    g.font = "550 19px Inter, system-ui, sans-serif"; const uw = Math.ceil(g.measureText(un).width);
     const W = 16 + 12 + 8 + tw + 4 + uw + 16 + 8, H = 44 + 10 + 10, R = 16; c.width = W; c.height = H;
     g.shadowColor = "rgba(11,18,32,.28)"; g.shadowBlur = 8; g.shadowOffsetY = 3;
     g.fillStyle = dark ? "#F4F6FA" : "#0B1220"; roundRect(g, 4, 2, W - 8, 44, R); g.fill();
@@ -704,8 +713,8 @@
     g.fillStyle = depthCol(v); g.beginPath(); g.arc(4 + 16 + 6, 24, 6, 0, Math.PI * 2); g.fill();
     g.strokeStyle = "rgba(255,255,255,.55)"; g.lineWidth = 1.5; g.stroke();
     g.textBaseline = "middle"; g.textAlign = "left"; g.fillStyle = dark ? "#0B1220" : "#ffffff";
-    g.font = "600 24px Inter, system-ui, sans-serif"; g.fillText(vs, 4 + 16 + 12 + 8, 25);
-    g.fillStyle = dark ? "#5B6473" : "#B8C0CC"; g.font = "500 16px Inter, system-ui, sans-serif"; g.fillText(un, 4 + 16 + 12 + 8 + tw + 4, 26);
+    g.font = "650 28px Inter, system-ui, sans-serif"; g.fillText(vs, 4 + 16 + 12 + 8, 25);
+    g.fillStyle = dark ? "#4B5563" : "#C5CEDA"; g.font = "550 19px Inter, system-ui, sans-serif"; g.fillText(un, 4 + 16 + 12 + 8 + tw + 4, 26);
     map.addImage(id, g.getImageData(0, 0, W, H), { pixelRatio: 2 });
     PINS.add(id);
   }
@@ -984,7 +993,7 @@
     if (map.hasImage && !map.hasImage("pill_new")) pillImages();
     const feats = on ? res.rows.map((x) => {
       const v = i >= 0 && x.snow[i] ? x.snow[i][0] : null, nw = i >= 0 && x.snow[i] ? x.snow[i][1] || 0 : 0;
-      const pr = { s: x.slug, n: x.short, km: x.km || 0, sz: x.km >= 100 ? 1 : x.km >= 30 ? 0.9 : 0.8, nw, nws: U.dep(nw), th };
+      const pr = { s: x.slug, n: x.short, km: x.km || 0, sz: x.km >= 100 ? 1 : x.km >= 30 ? 0.95 : 0.9, nw, nws: U.dep(nw), th };
       if (v) { pr.v = v; pinImage(v, th); }
       return { type: "Feature", geometry: { type: "Point", coordinates: [x.lon, x.lat] }, properties: pr };
     }) : [];
@@ -1273,7 +1282,7 @@
     const g = $("grab"), order = ["peek", "half", "full"];
     const P = $("panel");
     let y0 = null, t0 = 0, base = 0, moved = false;
-    const posOf = (name) => { const h = P.offsetHeight, peek = 168; return name === "full" ? 0 : name === "half" ? h * 0.45 : h - peek; };
+    const posOf = (name) => { const h = P.offsetHeight, peek = parseFloat(getComputedStyle(document.body).getPropertyValue("--peek")) || 128; return name === "full" ? 0 : name === "half" ? h * 0.45 : h - peek; };
     const down = (e) => { if (innerWidth > 760) return; y0 = e.clientY; t0 = performance.now(); base = posOf(st.sheet); moved = false; P.style.transition = "none"; try { g.setPointerCapture(e.pointerId); } catch { /* old browser */ } };
     const move = (e) => {
       if (y0 == null) return;
@@ -1466,10 +1475,15 @@
     const S2 = st.ski, o = st.origin;
     if (!o && !st.geoDenied && !st.geoAsked) { st.geoAsked = true; locate(true); }
     const ti = dayIdx(res, S2.when);
-    let h = '<div class="over">Ski finder</div><h1>Where to ski ' + ({ today: "today", tomorrow: "tomorrow", weekend: "this weekend" })[S2.when] + "</h1>" + originBar(res) +
-      '<div class="filters"><div class="seg2" role="group" aria-label="Day">' + ["today", "tomorrow", "weekend"].map((w) => '<button data-when="' + w + '" aria-pressed="' + (S2.when === w) + '">' + ({ today: "Today", tomorrow: "Tomorrow", weekend: "Weekend" })[w] + "</button>").join("") + "</div>" +
-      '<div class="seg2" role="group" aria-label="Snow on the upper slopes">' + [0, 10, 30, 60].map((v) => '<button data-min="' + v + '" aria-pressed="' + (S2.min === v) + '">' + (v ? U.dep(v) + "+ " + U.du() : "Any snow") + "</button>").join("") + "</div>" +
-      '<button class="pill" data-fresh aria-pressed="' + S2.fresh + '">Fresh snow only</button></div>';
+    // v3 (UX audit P1): the same distance slider as Powder instead of 5 pills; depth / fresh snow folded under "Filters"
+    // (open when one is set), so the first result shows without scrolling
+    const ri = RADII.indexOf(S2.radius) < 0 ? 2 : RADII.indexOf(S2.radius), nf = (S2.min ? 1 : 0) + (S2.fresh ? 1 : 0);
+    let h = '<div class="over">Ski finder</div><h1>Where to ski ' + ({ today: "today", tomorrow: "tomorrow", weekend: "this weekend" })[S2.when] + '</h1><div class="nopills">' + originBar(res) + "</div>" +
+      '<label class="range"><span>' + (S2.radius ? "within " + U.dist(S2.radius) : "Anywhere") + '</span><input type="range" min="0" max="' + (RADII.length - 1) + '" step="1" value="' + ri + '" data-radius-range aria-label="Distance"></label>' +
+      '<div class="filters"><div class="seg2" role="group" aria-label="Day">' + ["today", "tomorrow", "weekend"].map((w) => '<button data-when="' + w + '" aria-pressed="' + (S2.when === w) + '">' + ({ today: "Today", tomorrow: "Tomorrow", weekend: "Weekend" })[w] + "</button>").join("") + "</div></div>" +
+      '<details class="morefilt"' + (nf ? " open" : "") + '><summary><span class="ms">tune</span>Filters' + (nf ? ' <span class="nfb">' + nf + "</span>" : "") + "</summary>" +
+      '<div class="filters"><div class="seg2" role="group" aria-label="Snow on the upper slopes">' + [0, 10, 30, 60].map((v) => '<button data-min="' + v + '" aria-pressed="' + (S2.min === v) + '">' + (v ? U.dep(v) + "+ " + U.du() : "Any snow") + "</button>").join("") + "</div>" +
+      '<button class="pill" data-fresh aria-pressed="' + S2.fresh + '">Fresh snow only</button></div></details>';
     if (ti < 0) return h + '<div class="prolock"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>This day is further than the free days.</b> Pro shows the full week ahead.</p></div>' + footer();
     const t3 = res.dates.indexOf(DATA.today);
     let rows = res.rows.map((x) => [x, o ? kmTo(o, x) : null]).filter(([x, d]) => {
@@ -1594,6 +1608,9 @@
     if (e.target.closest("[data-viewpost]")) viewPost();
     const pp = e.target.closest("[data-propost]");
     if (pp) proPost(pp.dataset.propost);
+  });
+  $("pbody").addEventListener("change", (e) => {     // the distance slider by keyboard (click covers the mouse)
+    const rr = e.target.closest("[data-radius-range]"); if (rr && RADII[+rr.value] !== st.ski.radius) { st.ski.radius = RADII[+rr.value] || 0; store.set("ss_radius", st.ski.radius); renderPanel(); }
   });
   let qT = 0;
   $("pbody").addEventListener("input", (e) => {
@@ -1771,6 +1788,13 @@
     renderPanel();
   }
   const PTDAYS = new WeakMap(), PTCTX = new WeakMap();
+  // sticky mini-header (point / resort / piste panels): shown once the page head has scrolled out of the panel
+  function miniHead(box, id) {
+    const mh = $(id), hd = box.querySelector(".phead, h1");
+    if (!mh || !hd || !("IntersectionObserver" in window)) return;
+    const io = new IntersectionObserver((es) => { const e = es[es.length - 1]; if (!document.body.contains(mh)) { io.disconnect(); return; } mh.classList.toggle("on", !e.isIntersecting); }, { root: box, threshold: 0 });
+    io.observe(hd);
+  }
   async function pointView(pt) {
     const box = $("pbody"), ll = { lat: pt.lat, lng: pt.lon }, r = regionAt(ll);
     const days = r ? await Promise.all(DATA.dates.map(async (d) => {
@@ -1788,17 +1812,24 @@
     const head = '<div class="phead"><button class="back" data-back><span class="ms">arrow_back</span>' + esc(r ? r.name : "Back") + "</button>" +
       '<div class="over">Snow here</div><h1>' + (n ? "Near " + esc(n[0].short) : esc(r ? r.name : "This spot")) + '</h1><p class="lede" id="ptMeta">' +
       (elev != null ? '<span class="ms">landscape</span>' + U.elev(elev) + " · " : "") + pt.lat.toFixed(3) + ", " + pt.lon.toFixed(3) + "</p></div>";
-    box.innerHTML = head +
-      '<div class="hero2"><div class="card"><div class="over">Snow today</div><b class="n">' + (today.dep == null ? "–" : today.dep >= 1 ? cmS(today.dep) : cmS(0)) + '</b><small class="none" id="ptRank"><span class="skel" style="display:block;height:14px;width:80%"></span></small></div>' +
-      '<div class="card"><div class="over">New snow, 24 h</div>' + (today.nw >= 1 ? '<b class="n acc">+' + cmS(today.nw) + "</b>" : '<b class="n">–</b>') + '<small class="none" id="ptNext"></small></div></div>' +
+    // v3 (UX audit P0): one headline card (today's depth, the verdict vs past winters, new snow and the next snow as
+    // one line each), the key actions right under it, then collapsible sections; a sticky mini-header keeps the place
+    // in view while scrolling
+    const place = n ? "Near " + esc(n[0].short) : esc(r ? r.name : "This spot");
+    box.innerHTML = '<div class="minihead" id="ptMini" aria-hidden="true"><b>' + place + "</b><span>" + (elev != null ? U.elev(elev) + " · " : "") +
+      (today.dep == null ? "–" : U.depth(today.dep >= 1 ? today.dep : 0)) + "</span></div>" + head +
+      '<div class="card pthero"><div class="over">' + esc(I18N.t("Snow today")) + '</div><div class="pthn"><b class="n">' + (today.dep == null ? "–" : today.dep >= 1 ? cmS(today.dep) : cmS(0)) + "</b>" +
+      '<span class="ptside">' + (today.nw >= 1 ? '<span class="ptnew">+' + cmS(today.nw) + " <small>" + esc(I18N.t("in 24 hours")) + "</small></span>" : '<span class="ptnew none">' + esc(I18N.t("No new snow in 24 h")) + "</span>") + "</span></div>" +
+      '<p class="ptverd" id="ptRank"><span class="skel" style="display:block;height:16px;width:80%"></span></p><p class="ptnext" id="ptNext"></p><div id="ptRange"></div></div>' +
+      '<div class="acts3 ptacts"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + pt.lat + "," + pt.lon + '"><span class="ms">directions_car</span>Directions</a>' +
+      '<button class="btn tonal" data-sharept><span class="ms">share</span>Share</button>' +
+      (n && staysOn() ? '<button class="btn tonal" data-openstays="' + esc(n[0].slug) + '" data-via="point" title="Places to stay (partner)"><span class="ms">hotel</span>Stay</button>' : "") + "</div>" +
       (s30 ? '<p class="measured s30"><span class="k">Sharp 30 m</span> <b>' + U.depth(Math.round(s30.depth_cm)) + "</b>" + (s30.elevation_m ? " · " + U.elev(s30.elevation_m) : "") + "</p>" : "") +
       fold("past", "Compared with past winters", '<div id="ptPast"><div class="skel" style="height:118px"></div></div><div id="ptChart"><div class="skel" style="height:190px;margin-top:10px"></div></div>') +
       fold("stn", "Closest measured station", '<div id="ptStn"><div class="skel" style="height:120px"></div></div>') +
       (window.SSX ? fold("hours", "Hour by hour", '<div id="ptMeteo"><div class="skel" style="height:230px"></div></div>') : "") +
-      '<div class="acts3" style="margin-top:14px"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + pt.lat + "," + pt.lon + '"><span class="ms">directions_car</span>Directions</a>' +
-      '<button class="btn tonal" data-sharept><span class="ms">share</span>Share</button>' +
-      (n && staysOn() ? '<button class="btn tonal" data-openstays="' + esc(n[0].slug) + '" data-via="point" title="Places to stay (partner)"><span class="ms">hotel</span>Stay</button>' : "") + "</div>" +
       (n ? '<button class="rrow" style="width:100%;border:0;background:none;text-align:start;margin-top:8px" data-open="' + esc(n[0].slug) + '"><span class="nm"><b>' + esc(n[0].short) + "</b><small>" + U.dist(Math.round(n[1])) + '</small></span><span class="ms">chevron_right</span></button>' : "") + footer();
+    miniHead(box, "ptMini");
     box.querySelector("[data-back]").onclick = closePoint;
     box.querySelector("[data-sharept]").onclick = () => sharePoint(pt, n, today);
     afterRender();
@@ -1819,6 +1850,31 @@
     if (h) HIST.set(k, h);
     return h;
   }
+  // BLEND contract (progress/data_requests.md "CONTRACT point blend + pixel range", Pro /v1/g500/point): the point's
+  // recommended value as the headline ("A light dusting" for a 1 cm blend), a compact low-middle-high bar for the
+  // ~500 m area with one plain sentence, and a hint when the forecasts disagree. Absent fields -> nothing changes.
+  function pointBlend(p) {
+    const today = !p.extras_day || p.extras_day === DATA.today;
+    if (!today || st.day !== DATA.today) return;
+    const b = p.blend, R = p.pixel_range, hb = document.querySelector(".pthero b.n"), out = $("ptRange");
+    st.blendV = b && b.value != null ? { pt: st.point, v: b.value } : null;
+    if (b && b.value != null && hb) {
+      if (b.value >= 1 && b.value < 1.5 && b.method === "blend") hb.innerHTML = '<span class="dust">' + esc(I18N.t("A light dusting")) + "</span>";
+      else hb.innerHTML = cmS(b.value >= 1 ? Math.round(b.value) : 0);
+    }
+    if (!out) return;
+    let h = "";
+    if (R && R.low && R.high && R.low.depth_cm != null && R.high.depth_cm != null && R.high.depth_cm - R.low.depth_cm >= 2) {
+      const mx = Math.max(1, R.high.depth_cm, (R.point && R.point.depth_cm) || 0), X = (v) => Math.max(0, Math.min(100, (v / mx) * 100)).toFixed(1) + "%";
+      const dot = (q, cls) => (q && q.depth_cm != null ? '<i class="' + cls + '" style="left:' + X(q.depth_cm) + '"></i>' : "");
+      h += '<div class="prng" role="img" aria-hidden="true"><span class="tr"></span><span class="rg" style="left:' + X(R.low.depth_cm) + ";width:calc(" + X(R.high.depth_cm) + " - " + X(R.low.depth_cm) + ')"></span>' +
+        dot(R.median, "md") + dot(R.point, "me") + '</div><div class="prng-l"><span dir="ltr">' + esc(U.depth(Math.round(R.low.depth_cm))) + " · " + esc(U.elev(R.low.elev_m)) + '</span><span dir="ltr">' +
+        esc(U.depth(Math.round(R.high.depth_cm))) + " · " + esc(U.elev(R.high.elev_m)) + "</span></div>" +
+        '<p class="note">' + esc(I18N.tu("Snow changes a lot with height: in this ~500 m area it ranges from {a} on the lowest ground to {b} on the highest.", U.depth(Math.round(R.low.depth_cm)) + " (" + U.elev(R.low.elev_m) + ")", U.depth(Math.round(R.high.depth_cm)) + " (" + U.elev(R.high.elev_m) + ")")) + "</p>";
+    }
+    if (b && b.agreement === "differ") h += '<p class="note">' + esc(I18N.t("Forecasts disagree a little here; treat this as a rough guide.")) + "</p>";
+    out.innerHTML = h;
+  }
   async function pointChart(pt, days, ctx = {}) {
     const box = $("ptChart");
     let h = null, live = null;
@@ -1829,6 +1885,7 @@
         const fine = DATA.regions.some((r) => r.fine && regionAt({ lat: pt.lat, lng: pt.lon }) === r);
         const p = await SS.api((fine ? "/v1/g500/point" : "/v1/grid/point") + "?lat=" + pt.lat + "&lon=" + pt.lon);
         live = (p.days || []).map((d) => ({ date: d.date, dep: d.depth_cm == null ? null : Math.round(d.depth_cm), nw: Math.round(d.new_cm || 0) }));
+        if (st.point === pt) pointBlend(p);
         if (p.elev_m && !ctx.elev && $("ptMeta")) $("ptMeta").textContent = U.elev(p.elev_m);
       } catch { live = null; }
     }
@@ -1905,7 +1962,7 @@
     if (below === 0) return I18N.tu("Less snow than all {a} winters", n);
     return I18N.tu("Deeper than {a} of {b} winters", below, n);
   }
-  function winterStrip(cp) {
+  function winterStrip(cp, noRank) {
     const by = (cp && cp.by_year || []).filter((y) => y.today_cm != null);
     const v = cp && cp.today ? cp.today.value_cm : null, nm = cp && cp.today && cp.today.normal;
     if (by.length < 3 || v == null || !nm) return "";
@@ -1928,7 +1985,7 @@
       '<line x1="' + tx.toFixed(1) + '" x2="' + tx.toFixed(1) + '" y1="20" y2="' + (base - 19) + '" class="ws-ml"/><text x="' + tx.toFixed(1) + '" y="15" text-anchor="' + anchor + '" class="ws-v">' + esc(I18N.t("Today")) + " " + esc(lab) + "</text>" +
       '<text x="' + L + '" y="' + (H - 4) + '" class="ws-t">0</text><text x="' + (W - R0) + '" y="' + (H - 4) + '" text-anchor="end" class="ws-t">' + esc(U.depth(Math.round(mx / 1.06))) + "</text>" +
       '<text x="' + X(nm.p50).toFixed(1) + '" y="' + (H - 4) + '" text-anchor="middle" class="ws-t">' + esc(I18N.t("usual")) + "</text></svg>";
-    return '<div class="wsbox"><p class="ws-rank">' + esc(rank) + "</p>" + s +
+    return '<div class="wsbox">' + (noRank ? "" : '<p class="ws-rank">' + esc(rank) + "</p>") + s +
       '<p class="ws-out" aria-live="polite"></p><div class="keyrow"><span><i class="kdot"></i>' + esc(I18N.t("one dot per past winter")) + '</span><span><i style="background:var(--accent-tint)"></i>' + esc(I18N.t("normal range")) +
       '</span><span><i style="background:var(--ink)"></i>' + esc(I18N.t("today")) + "</span></div></div>";
   }
@@ -1998,7 +2055,9 @@
       if (rb) rb.onclick = () => { const pt = st.point; if (!pt) return; box.innerHTML = '<div class="skel" style="height:118px"></div>'; if ($("ptChart")) $("ptChart").innerHTML = '<div class="skel" style="height:190px;margin-top:10px"></div>'; pointChart(pt, PTDAYS.get(pt) || [], PTCTX.get(pt) || {}); };
       return;
     }
-    const [mn, p10, p25, p50, p75, p90, mx] = B, v = t0.dep, P = [0, 10, 25, 50, 75, 90, 100];
+    // a 1 cm "light dusting" from the blend (Pro) wins over the plain 0 so the verdict never says "No snow" under it
+    const bv = st.blendV && st.blendV.pt === st.point && st.blendV.v >= 1 && t0.dep < 1 ? st.blendV.v : t0.dep;
+    const [mn, p10, p25, p50, p75, p90, mx] = B, v = bv, P = [0, 10, 25, 50, 75, 90, 100];
     // share of past winters below a depth x (interpolated between the bands; ties count as "not below")
     const below = (x) => { if (x <= B[0]) return 0; if (x > B[6]) return 100; for (let i = 0; i < 6; i++) if (x > B[i] && x <= B[i + 1]) return P[i] + (P[i + 1] - P[i]) * (x - B[i]) / (B[i + 1] - B[i]); return 100; };
     const pct = mx < 1 && v < 1 ? null : cp ? cp.today.percentile : below(v), k10 = pct == null ? null : Math.round(pct / 10);
@@ -2014,7 +2073,11 @@
     const d = v - p50, dp = p50 >= 5 ? Math.round(100 * d / p50) : null;
     const sign = (x) => (x > 0 ? "+" : x < 0 ? "−" : "±");
     const anom = Math.abs(d) < 1 ? "Same as usual" : sign(d) + U.depth(Math.abs(d)) + (dp != null ? " (" + sign(dp) + Math.abs(dp) + " %)" : "") + " vs usual";
-    if (rk) rk.textContent = pct == null || (v < 1 && had <= 2) ? "" : k10 >= 7 ? "More than usual" : k10 <= 3 ? "Less than usual" : "About usual";
+    // one verdict for the whole panel (v3): the exact per-winter rank when the answer has it, else the band verdict
+    const by0 = cp && (cp.by_year || []).filter((y) => y.today_cm != null);
+    const exact = cp && by0 && by0.length >= 3 ? stripRank(v, by0.map((y) => y.today_cm), cp.today) : null;
+    const head = exact || verdict;
+    if (rk) rk.textContent = head;
     // range bar: min..max, 25-75 % band, median tick, today's marker (clamped)
     const hi = Math.max(mx, v, 1), X = (x) => Math.max(0, Math.min(100, (x / hi) * 100)).toFixed(1) + "%";
     const bar = '<div class="pbar" role="img" aria-label="' + esc(verdict) + '"><span class="rng" style="left:' + X(mn) + ";width:calc(" + X(mx) + " - " + X(mn) + ')"></span>' +
@@ -2027,9 +2090,9 @@
     const sz = (x) => x.season.replace("-", "–");
     const row = (k, val) => "<tr><td>" + k + "</td><td>" + val + "</td></tr>";
     const far = (h.note_codes || []).includes("far_elevation");
-    if (pct == null) { box.innerHTML = '<p class="verdict">' + esc(verdict) + "</p>" + (seas.length ? '<p class="note">' + esc(I18N.tu("Compared with {a} past winters.", seas.length)) + "</p>" : ""); return; }
-    const strip = cp ? winterStrip(cp) : "";
-    box.innerHTML = '<p class="verdict">' + esc(verdict) + '</p><p class="anom">' + esc(anom) + "</p>" + (strip || bar) +
+    if (pct == null) { box.innerHTML = (rk ? "" : '<p class="verdict">' + esc(verdict) + "</p>") + (seas.length ? '<p class="note">' + esc(I18N.tu("Compared with {a} past winters.", seas.length)) + "</p>" : ""); return; }
+    const strip = cp ? winterStrip(cp, !!rk) : "";
+    box.innerHTML = (rk ? "" : '<p class="verdict">' + esc(verdict) + "</p>") + '<p class="anom">' + esc(anom) + "</p>" + (strip || bar) +
       (strip ? '<details class="wsmore"><summary>' + esc(I18N.t("More")) + "</summary>" + winterMore(h, cp) : "") +
       '<table class="kv">' + row("Today", U.depth(v)) + row("Usual on this date", U.depth(p50)) + row("Normal range", U.dep(p25) + "–" + U.depth(p75)) +
       row("Lowest – highest", U.dep(mn) + "–" + U.depth(mx)) +
@@ -2600,7 +2663,7 @@
   window.SSApp = { open: (slug) => openResort(slug) };
   // bridge for the expert chrome (expert.js: layer rail, timeline scrub, hour steps, meteogram, keyboard, theme)
   window.SSApp.x = { st, data: () => DATA, map: () => map, setMain, setDay, toggleOver, overOn, layersSheet, play, isPlaying: () => !!playT, scrub, settle, radarFrame,
-    isStatic, dayLocked, proLive, addDays, wd, dnum, longDay, D, fmt, toast, codeAt, regionAt, decDepth, renderMain, drawLegend, openPoint, closePoint, openPiste,
+    isStatic, dayLocked, proLive, addDays, wd, dnum, longDay, D, fmt, toast, codeAt, regionAt, decDepth, renderMain, drawLegend, openPoint, closePoint, openPiste, pointBlend,
     has: (id) => id === "stn" ? typeof drawStations === "function" : id === "s30" ? s30Enabled() : true, LOC, DEPTH, NEW, rampAt };
   drawRegions(); drawDays(); drawLegend(); setupSheet(); setupTabs();
   if (window.SSX) SSX.init(window.SSApp.x);
@@ -2646,6 +2709,7 @@
       if (SS.S.scope && SS.proHere(map.getCenter()) !== st.pro) onAccount(SS.S);   // regional Pro: entered / left the Atlas
       chip30();
       if (!st.slug && !regionMove) history.replaceState(history.state, "", location.pathname + location.search + "#@" + map.getCenter().lat.toFixed(3) + "," + map.getCenter().lng.toFixed(3) + "," + map.getZoom().toFixed(1));
+      if (!regionMove) syncRegion();
       regionMove = false;
       if (st.over.pistes) loadPistes();
       drawStays();
@@ -2653,6 +2717,7 @@
       loadFine();
     });
     map.once("idle", () => drawStays());   // the start view was set before the moveend listener: show the stay chip now
+    syncRegion();                      // same: a shared link / hash straight into another region
     refreshStations();                 // the start view was set above, before this listener existed
     loadFine();
     if (st.over.pistes) loadPistes();  // same: onStyle ran at the z5 start view

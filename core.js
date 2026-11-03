@@ -632,6 +632,14 @@
       hit("/ad/stay22/" + pl + "/click", "stay22");
     }
   }, true);
+  // icon font guard: until Material Symbols has loaded, its ligature names ("search", "layers") would show as text
+  // (slow networks, font blocked): keep the glyph boxes empty instead (.ms is transparent until html.msok)
+  try {
+    const ok = () => document.documentElement.classList.add("msok");
+    if (document.fonts && document.fonts.load) document.fonts.load('24px "Material Symbols Rounded"', "search").then((f) => { if (f && f.length) ok(); }, () => {});
+    else ok();
+    if (document.fonts && document.fonts.check && document.fonts.check('24px "Material Symbols Rounded"', "search")) ok();
+  } catch { document.documentElement.classList.add("msok"); }
   async function start() {
     await loadConfig();
     const cf = ((S.cfg && S.cfg.analytics) || {}).cf_beacon_token;

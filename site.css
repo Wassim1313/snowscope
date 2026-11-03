@@ -806,3 +806,54 @@ details.stays .stayf{margin:0 0 6px}
 .rowlink.stayrow{width:100%;border-left:0;border-right:0;background:none;font:inherit;cursor:pointer;text-align:start;margin:8px 0}
 .rowlink.stayrow small .partner{font-size:11px;padding:1px 6px;border-radius:999px;background:var(--surface2)}
 @media (max-width:760px){details.stays .staymap{height:180px}}
+/* v3: icon font guard (core.js adds html.msok once Material Symbols has loaded) */
+html:not(.msok) .ms{color:transparent!important}
+html:not(.msok) details.fold>summary::after{color:transparent}
+/* v3 point panel: one headline card + sticky mini-header */
+.pthero{padding:16px;margin:10px 0 8px}
+.pthn{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:2px 0 6px}
+.pthn b.n{font-size:48px;line-height:50px;font-weight:340;letter-spacing:-1.6px;font-variant-numeric:tabular-nums}
+.pthn b.n small{font-size:17px;color:var(--ink3);font-weight:520;letter-spacing:0;margin-left:3px}
+.ptside{text-align:end;padding-bottom:6px}
+.ptnew{font-size:17px;font-weight:650;color:var(--accent-ink);white-space:nowrap}
+.ptnew small{font-size:13px;font-weight:550;color:var(--ink3)}
+.ptnew.none{font-size:13px;font-weight:550;color:var(--ink3);padding:0}
+.ptverd{margin:0;font-size:16px;line-height:1.35;font-weight:650;color:var(--ink)}
+.ptnext{margin:4px 0 0;font-size:13px;color:var(--accent-ink);font-weight:600}
+.ptnext:empty{display:none}
+.ptacts{margin:0 0 4px}
+.minihead{position:sticky;top:-16px;z-index:3;display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:-16px -16px 0;padding:10px 16px;
+  background:color-mix(in srgb,var(--surface) 94%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--hair);
+  font-size:15px;opacity:0;transform:translateY(-6px);pointer-events:none;transition:opacity .18s,transform .18s;height:44px;margin-bottom:-44px}
+.minihead.on{opacity:1;transform:none}
+.minihead b{font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.minihead span{color:var(--ink2);font-size:13px;white-space:nowrap;font-variant-numeric:tabular-nums}
+@media (max-width:760px){.minihead{top:-4px;margin-top:-4px}.pthn b.n{font-size:44px;line-height:46px}}
+/* v3 phone: lower peek with a compact hero that fits it (number + headline side by side), day strip edge fade */
+@media (max-width:760px){
+  body.app{--peek:124px}
+  body.app .panel{bottom:var(--nav)}   /* was var(--g): the peek sat 56 px under the bottom nav, hero number hidden */
+  .rhero{display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-items:center;padding:12px 14px}
+  .rhero .hk{grid-column:1 / -1}
+  .rhero .hn{font-size:44px;line-height:48px;margin:2px 0 0}
+  .rhero .hw{font-size:15px;line-height:1.3}
+  .rhero .hs,.rhero .hc{grid-column:1 / -1}
+  .timeline .days{-webkit-mask-image:linear-gradient(90deg,transparent,#000 14px,#000 calc(100% - 14px),transparent);mask-image:linear-gradient(90deg,transparent,#000 14px,#000 calc(100% - 14px),transparent)}
+}
+/* v3 ski finder: filters folded */
+details.morefilt{margin:0 0 8px}
+details.morefilt>summary{list-style:none;display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 12px;border-radius:12px;background:var(--surface2);font-size:14px;font-weight:620;color:var(--ink2);cursor:pointer}
+details.morefilt>summary::-webkit-details-marker{display:none}
+details.morefilt>summary .ms{font-size:18px}
+details.morefilt[open]>summary{margin-bottom:8px}
+details.morefilt .nfb{display:inline-grid;place-items:center;min-width:20px;height:20px;border-radius:10px;background:var(--ink);color:var(--bg);font-size:12px;font-weight:700}
+/* v3 point: blend dusting + ~500 m area range bar */
+.pthn b.n .dust{font-size:28px;line-height:34px;font-weight:550;letter-spacing:-.4px}
+.prng{position:relative;height:18px;margin:10px 7px 0;direction:ltr}
+.prng .tr{position:absolute;left:0;right:0;top:7px;height:4px;border-radius:2px;background:var(--surface3)}
+.prng .rg{position:absolute;top:4px;height:10px;border-radius:5px;background:var(--accent-tint);box-shadow:inset 0 0 0 1px var(--accent)}
+.prng i{position:absolute;display:block}
+.prng .md{top:1px;width:2px;height:16px;margin-left:-1px;background:var(--accent);border-radius:1px}
+.prng .me{top:2px;width:14px;height:14px;margin-left:-7px;border-radius:50%;background:var(--ink);box-shadow:0 0 0 2.5px var(--surface)}
+.prng-l{display:flex;justify-content:space-between;font-size:13px;color:var(--ink3);font-variant-numeric:tabular-nums;margin:2px 0 0}
+#ptRange .note{margin:6px 0 0}
