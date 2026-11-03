@@ -1352,6 +1352,7 @@
     box.querySelectorAll("[data-openstays]").forEach((b) => { b.onclick = (e) => { e.preventDefault(); openStays(b.dataset.openstays, b.dataset.via || "panel"); }; });
     box.querySelectorAll("[data-goregion]").forEach((b) => { b.onclick = () => { store.set("ss_region_pick", 1); flyRegion(b.dataset.goregion); }; });
     bindStations(box);
+    if (window.SSC) SSC.bind(box);
     if (SS.S.started) SS.Ads.start();
   }
   function adSlot(kind, x, day) {    // place + dates for the house ad (Stay22) until AdSense fills the unit
@@ -1421,6 +1422,7 @@
     navigator.geolocation.getCurrentPosition((p) => setOrigin({ lat: +p.coords.latitude.toFixed(3), lon: +p.coords.longitude.toFixed(3), label: "Near me", me: true }),
       () => { st.geoDenied = true; if (!quiet) toast("Location not available"); renderPanel(); }, { maximumAge: 6e5, timeout: 10000 });
   }
+  document.querySelectorAll("a[data-blog]").forEach((a) => { a.href = BASE + "blog/" + ((window.I18N && I18N.lang) || "en") + "/"; });
   function zoomControls() {
     if ($("zoomctl")) return;
     const z = document.createElement("div");
@@ -1574,6 +1576,7 @@
         '<div class="acts3"><button class="btn ink" data-open="' + esc(top.slug) + '"><span class="ms">info</span>Details</button><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + top.lat + "," + top.lon + '"><span class="ms">directions_car</span>Directions</a>' +
         '<button class="btn tonal" data-share="' + esc(top.slug) + '" data-sd="' + DATA.today + '"><span class="ms">share</span>Share</button></div></article>';
     }
+    if (window.SSC && rows.length >= 3) h += SSC.powder(rows.map((x) => ({ slug: x.slug, name: x.short, n24: x.snow[ti][1] || 0, n72: x.snow[ti][2] || 0, dep: x.snow[ti][0] || 0, href: BASE + "resorts/" + encodeURIComponent(x.slug) + ".html" })), !!st.p72, rampCol);
     h += rows.length ? rows.map((x, i) => (i === 5 ? adSlot("infeed", rows[0], DATA.today) : "") + '<a class="rrow pw" href="' + BASE + "resorts/" + encodeURIComponent(x.slug) + '.html" data-open="' + esc(x.slug) + '"><span class="rk' + (i < 3 ? " top" : "") + '">' + (i + 1) + '</span><span class="nm"><b>' + flagOf(x.country) + " " + esc(x.short) + "</b><small>" +
       esc([x.country, o ? U.dist(Math.round(kmTo(o, x))) + " away" : NAMES[x.dom] || ""].filter(Boolean).join(" · ")) + " " + trendOf(x, ti) + '</small>' + measuredHtml(x.lat, x.lon, x.top_m || null, true) + '</span>' +
       '<span class="val"><b style="color:' + newTier(x.snow[ti][k]) + '">+' + cmS(x.snow[ti][k]) + "</b><em>" + (st.p72 ? "+" + U.dep(x.snow[ti][1] || 0) + " in 24 h" : "+" + U.dep(x.snow[ti][2] || 0) + " in 3 days") + " · " + U.depth(x.snow[ti][0] || 0) + " deep</em></span></a>").join("")
@@ -1609,7 +1612,9 @@
     const teaser = (icon, bg, t, s) => '<a class="teaser" href="' + esc(SS.appUrl()) + '"><span class="ic" style="background:' + bg + '"><span class="ms f">' + icon + "</span></span><span><b>" + t + "</b><small>" + s + "</small></span></a>";
     const hide = S.pro ? '<button class="row" role="switch" data-nostay aria-checked="' + !store.get("ss_nostay") + '"><span class="ic"><span class="ms">hotel</span></span><span class="tx"><b>Hotel suggestions</b><small>Places to stay near resorts</small></span><span class="sw-t"></span></button>' : "";
     const units = '<div class="sect">Units</div><div class="seg2" role="group" aria-label="Units"><button data-units="metric" aria-pressed="' + !U.us() + '">Metric · cm, m, km, °C</button><button data-units="us" aria-pressed="' + U.us() + '">US · in, ft, mi, °F</button></div>';
-    return '<div class="over">You</div><h1>Your SnowScope</h1>' + acc + pro + hide + units + '<div class="sect">3D videos</div>' +
+    return '<div class="over">You</div><h1>Your SnowScope</h1>' + acc + pro + hide + units +
+      '<a class="teaser" data-blog href="' + BASE + "blog/" + (I18N.lang || "en") + '/" style="margin-top:14px"><span class="ic" style="background:linear-gradient(160deg,#3B8BFF,#1463F3)"><span class="ms f">article</span></span><span><b>Snow reports</b><small>Daily snow reports for every region</small></span></a>' +
+      '<div class="sect">3D videos</div>' +
       '<a class="teaser" href="' + BASE + 'studio.html"><span class="ic" style="background:linear-gradient(160deg,#6E59F2,#4330C9)"><span class="ms f">movie</span></span><span><b>Create a 3D video</b><small>A flyover of any summit or ski circuit with today\'s snow.</small></span></a>' +
       '<div class="sect">Only in the app</div>' +
       teaser("landscape", "linear-gradient(160deg,#F2662B,#C9381A)", "Peak finder", "Point your camera at the mountains to name every summit.") +
@@ -1893,7 +1898,11 @@
     }
     if (!out) return;
     let h = "";
-    if (R && R.low && R.high && R.low.depth_cm != null && R.high.depth_cm != null && R.high.depth_cm - R.low.depth_cm >= 2) {
+    const ns = window.SSC && R && R.low && R.high ? SSC.elev({ box: out, fit: R.fit && R.fit.b_cm_per_100m != null ? { b: R.fit.b_cm_per_100m, snowline: R.fit.snowline_m } : null,
+      pts: ["low", "median", "high"].filter((k) => R[k]).map((k) => ({ elev: R[k].elev_m, cm: R[k].depth_cm, kind: k })), here: R.point ? { elev: R.point.elev_m, cm: R.point.depth_cm } : null,
+      stations: nearStations(st.point.lat, st.point.lon, 15) }) : null;
+    if (ns) h += ns.html;
+    else if (R && R.low && R.high && R.low.depth_cm != null && R.high.depth_cm != null && R.high.depth_cm - R.low.depth_cm >= 2) {
       const mx = Math.max(1, R.high.depth_cm, (R.point && R.point.depth_cm) || 0), X = (v) => Math.max(0, Math.min(100, (v / mx) * 100)).toFixed(1) + "%";
       const dot = (q, cls) => (q && q.depth_cm != null ? '<i class="' + cls + '" style="left:' + X(q.depth_cm) + '"></i>' : "");
       h += '<div class="prng" role="img" aria-hidden="true"><span class="tr"></span><span class="rg" style="left:' + X(R.low.depth_cm) + ";width:calc(" + X(R.high.depth_cm) + " - " + X(R.low.depth_cm) + ')"></span>' +
@@ -1903,6 +1912,7 @@
     }
     if (b && b.agreement === "differ") h += '<p class="note">' + esc(I18N.t("Forecasts disagree a little here; treat this as a rough guide.")) + "</p>";
     out.innerHTML = h;
+    if (window.SSC) SSC.bind(out);
   }
   async function pointChart(pt, days, ctx = {}) {
     const box = $("ptChart");
@@ -1946,25 +1956,17 @@
     const pts = Object.keys(byDate).filter((d) => d >= start && d <= end).sort();
     const path = (from, to) => pts.filter((d) => d >= from && d <= to).map((d, i) => (i ? "L" : "M") + px(X(d)).toFixed(1) + "," + py(byDate[d].dep).toFixed(1)).join("");
     const lockX = px(X(freeEnd));
-    const ep = clim ? epiLayers((key, k) => at(key, addDays(start, k)), nDays + 1, px, py, top, H - bot) : null;
-    let s = '<svg class="chart" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Snow depth this season compared with past winters">' +
-      (clim ? '<path d="' + band("min", "max") + '" fill="var(--accent-tint)" opacity=".55"/><path d="' + ep.norm + '" fill="var(--accent-tint)"/><path d="' + ep.wet + '" fill="var(--accent)" opacity=".28"/><path d="' + ep.med + '" fill="none" stroke="var(--accent)" stroke-width="1.4" stroke-dasharray="4 3"/>' +
-        (ep.freq ? '<path d="' + ep.freq + '" fill="none" stroke="var(--ink3)" stroke-width="1" opacity=".8"/>' : "") : "") +
-      '<path d="' + path(start, DATA.today) + '" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linejoin="round"/>' +
-      '<path d="' + path(DATA.today, st.pro ? end : freeEnd) + '" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-dasharray="5 4"/>' +
-      '<line x1="' + px(X(DATA.today)) + '" x2="' + px(X(DATA.today)) + '" y1="' + top + '" y2="' + (H - bot) + '" stroke="var(--ink3)" stroke-dasharray="2 3"/>' +
-      (byDate[DATA.today] ? '<circle cx="' + px(X(DATA.today)).toFixed(1) + '" cy="' + py(byDate[DATA.today].dep).toFixed(1) + '" r="4.5" fill="var(--ink)" stroke="var(--surface)" stroke-width="2"/>' : "") +
-      (!st.pro ? '<rect x="' + lockX + '" y="' + top + '" width="' + (W - lockX) + '" height="' + (H - bot - top) + '" fill="var(--surface2)" opacity=".85"/><text x="' + ((lockX + W) / 2) + '" y="' + (H / 2) + '" text-anchor="middle" class="lbl">PRO</text>' : "");
-    const mn = [["10-01", "Oct"], ["11-01", "Nov"], ["12-01", "Dec"], ["01-01", "Jan"], ["02-01", "Feb"], ["03-01", "Mar"], ["04-01", "Apr"], ["05-01", "May"]];
-    for (let k = 0; k <= nDays; k++) { const d = addDays(start, k), q = mn.find((x) => x[0] === d.slice(5)); if (q) s += '<text x="' + px(k) + '" y="' + (H - 6) + '">' + q[1] + "</text>"; }
-    s += '<text x="' + (W - 2) + '" y="11" text-anchor="end">' + U.depth(Math.round(max / 1.08)) + "</text></svg>";
+    // DATAVIZ 2026-11-03: the season curve is drawn by charts.js (takeaway title, fan, today + storms labelled)
+    const series = pts.filter((d) => d <= (st.pro ? end : freeEnd)).map((d) => ({ d, v: byDate[d].dep, nw: byDate[d].nw, fc: d > DATA.today }));
+    const SC = window.SSC ? SSC.season({ box, start, end, today: DATA.today, series, clim: clim ? at : null, lockFrom: st.pro ? null : freeEnd }) : null;
     const next = Object.keys(byDate).sort().find((d) => d > DATA.today && d <= (st.pro ? end : freeEnd) && (byDate[d].nw || 0) >= 5);
     if ($("ptNext")) $("ptNext").textContent = next ? "Snow expected " + D(next).toLocaleDateString("en-GB", { weekday: "long", timeZone: "UTC" }) + ": +" + U.depth(byDate[next].nw) : "";
     pastBlock(h, byDate, at, herr);
     stationBlock(pt, ctx, byDate);
-    box.innerHTML = s + '<div class="keyrow"><span><i style="background:var(--ink)"></i>this season</span><span><i style="background:var(--accent)"></i>usual</span><span><i style="background:var(--accent-tint)"></i>past winters</span>' + (ep && ep.any ? epiKey() : "") + '<span>- - next days</span></div>' +
+    box.innerHTML = (SC ? SC.html : "") +
       (!st.pro ? '<div class="prolock" style="margin-top:10px"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>The next 3 days are free.</b><br>Pro adds the whole week ahead and the outlook.</p><button class="btn ink" data-up>Unlock the week</button></div>' : "");
     const up = box.querySelector("[data-up]"); if (up) up.onclick = () => SS.upsell("The week ahead is in Pro");
+    if (window.SSC) SSC.bind(box);
   }
   // collapsible sections (point / resort panels): <details> with the open state remembered per section
   const fold = (key, title, body, open) => {
@@ -2038,52 +2040,29 @@
     const t = cp.today, wetOn = t.episodic && t.typical_when_snowy_cm != null;
     const q25 = wetOn ? (t.wet_p25 != null ? t.wet_p25 : t.typical_when_snowy_cm) : nm.p25, q75 = wetOn ? (t.wet_p75 != null ? t.wet_p75 : t.typical_when_snowy_cm) : nm.p75;
     const q50 = wetOn ? t.typical_when_snowy_cm : nm.p50;
-    let s = '<svg class="wstrip" viewBox="0 0 ' + W + " " + H + '" role="group" aria-label="' + esc(rank) + '">' +
-      '<rect x="' + X(q25).toFixed(1) + '" y="' + (base - 40) + '" width="' + Math.max(2, X(q75) - X(q25)).toFixed(1) + '" height="46" rx="6" class="ws-iq"/>' +
-      '<line x1="' + L + '" x2="' + (W - R0) + '" y1="' + (base + 6) + '" y2="' + (base + 6) + '" class="ws-ax"/>' +
-      '<line x1="' + X(q50).toFixed(1) + '" x2="' + X(q50).toFixed(1) + '" y1="' + (base - 42) + '" y2="' + (base + 10) + '" class="ws-md"/>';
-    for (const d of dots) s += '<circle cx="' + d.x.toFixed(1) + '" cy="' + (base - d.r * 9) + '" r="4.2" fill="' + rampCol(d.y.today_cm) + '" class="ws-dot" tabindex="0" role="button" data-ws="' +
-      esc(sz(d.y.season) + ": " + U.depth(d.y.today_cm)) + '" aria-label="' + esc(sz(d.y.season) + ": " + U.depth(d.y.today_cm)) + '"/>';
-    const tx = X(v), lab = U.depth(v), anchor = tx > W - 50 ? "end" : tx < 50 ? "start" : "middle";
-    s += '<circle cx="' + tx.toFixed(1) + '" cy="' + (base - 10) + '" r="9" fill="' + rampCol(v) + '" class="ws-me"/>' +
-      '<line x1="' + tx.toFixed(1) + '" x2="' + tx.toFixed(1) + '" y1="20" y2="' + (base - 19) + '" class="ws-ml"/><text x="' + tx.toFixed(1) + '" y="15" text-anchor="' + anchor + '" class="ws-v">' + esc(I18N.t("Today")) + " " + esc(lab) + "</text>" +
-      '<text x="' + L + '" y="' + (H - 4) + '" class="ws-t">0</text><text x="' + (W - R0) + '" y="' + (H - 4) + '" text-anchor="end" class="ws-t">' + esc(U.depth(Math.round(mx / 1.06))) + "</text>" +
-      '<text x="' + X(q50).toFixed(1) + '" y="' + (H - 4) + '" text-anchor="middle" class="ws-t">' + esc(I18N.t(wetOn ? "usual when snowy" : "usual")) + "</text></svg>";
+    const sy = +DATA.today.slice(0, 4) - (+DATA.today.slice(5, 7) >= 8 ? 0 : 1), lastSeason = (sy - 1) + "-" + String(sy).slice(2);
+    const s = window.SSC ? SSC.strip({ W: panelW(), by, v, q25, q50, q75, wetOn, title: rank, lastSeason, col: rampCol }).html : "";
     return '<div class="wsbox">' + (noRank ? "" : '<p class="ws-rank">' + esc(rank) + "</p>") + s +
       '<p class="ws-out" aria-live="polite"></p><div class="keyrow"><span><i class="kdot"></i>' + esc(I18N.t("one dot per past winter")) + '</span><span><i style="background:var(--accent-tint)"></i>' + esc(I18N.t(wetOn ? "when snowy" : "normal range")) +
-      '</span><span><i style="background:var(--ink)"></i>' + esc(I18N.t("today")) + "</span></div></div>";
+      "</span></div></div>";
   }
+  const panelW = () => Math.max(280, Math.min(560, (($("pbody") && $("pbody").clientWidth) || 372) - 32));
   function bindStrip(root) {
     root.querySelectorAll(".wsbox").forEach((b) => {
       const out = b.querySelector(".ws-out");
       const pick = (el) => { b.querySelectorAll(".ws-dot.on").forEach((x) => x.classList.remove("on")); el.classList.add("on"); out.innerHTML = '<bdi dir="ltr">' + esc(el.dataset.ws) + "</bdi>"; };
       b.querySelectorAll(".ws-dot").forEach((el) => { el.addEventListener("click", () => pick(el)); el.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(el); } }); });
     });
+    if (window.SSC) SSC.bind(root);
   }
   function winterMore(h, cp, noFan) {
     const clim = !noFan && h && h.climatology;
     let fan = "";
-    if (clim && clim.mmdd) {
-      const keep = clim.mmdd.map((m, i) => [m, i]).filter(([m]) => m >= "10-01" || m <= "05-31");
-      const n = keep.length, idx = Object.fromEntries(keep.map(([m], k) => [m, k]));
-      const g = (key, k) => (clim[key] ? clim[key][keep[k][1]] : null);
-      const cur = (h.current || []).filter((q) => q.depth_cm != null && idx[q.date.slice(5)] != null).map((q) => [idx[q.date.slice(5)], q.depth_cm]);
-      const top = Math.max(20, ...keep.map((_, k) => g("p90", k) || 0), ...cur.map((c) => c[1])) * 1.1;
-      const W = 360, H = 170, X = (k) => (k / (n - 1)) * W, Y = (v) => H - 22 - (Math.min(v, top) / top) * (H - 30);
-      const band = (lo, hi) => { let a = "", b = ""; for (let k = 0; k < n; k++) { const l = g(lo, k), u = g(hi, k); if (l == null || u == null) continue; a += (a ? "L" : "M") + X(k).toFixed(1) + "," + Y(u).toFixed(1); b = "L" + X(k).toFixed(1) + "," + Y(l).toFixed(1) + b; } return a ? a + b + "Z" : ""; };
-      const ep = epiLayers(g, n, X, Y, 4, H - 22);
-      const line = cur.map(([k, v], i) => (i ? "L" : "M") + X(k).toFixed(1) + "," + Y(v).toFixed(1)).join("");
-      const ti = idx[DATA.today.slice(5)], tv = cp && cp.today ? cp.today.value_cm : null;
-      const mo = [["10-01", "Oct"], ["11-01", "Nov"], ["12-01", "Dec"], ["01-01", "Jan"], ["02-01", "Feb"], ["03-01", "Mar"], ["04-01", "Apr"], ["05-01", "May"]];
-      fan = '<div class="over" style="margin-top:6px">' + esc(I18N.t("This season among past winters")) + '</div><svg class="chart" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + esc(I18N.t("This season among past winters")) + '">' +
-        '<path d="' + band("min", "max") + '" fill="var(--accent-tint)" opacity=".45"/><path d="' + band("p10", "p90") + '" fill="var(--accent-tint)" opacity=".8"/>' +
-        '<path d="' + ep.norm + '" fill="var(--accent)" opacity=".22"/><path d="' + ep.wet + '" fill="var(--accent)" opacity=".32"/><path d="' + ep.med + '" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4 3"/>' +
-        (ep.freq ? '<path d="' + ep.freq + '" fill="none" stroke="var(--ink3)" stroke-width="1" opacity=".8"/>' : "") +
-        (line ? '<path d="' + line + '" fill="none" stroke="var(--ink)" stroke-width="2.6" stroke-linejoin="round"/>' : "") +
-        (ti != null ? '<line x1="' + X(ti).toFixed(1) + '" x2="' + X(ti).toFixed(1) + '" y1="4" y2="' + (H - 22) + '" stroke="var(--ink3)" stroke-dasharray="2 3"/>' + (tv != null ? '<circle cx="' + X(ti).toFixed(1) + '" cy="' + Y(tv).toFixed(1) + '" r="4.5" fill="var(--ink)" stroke="var(--surface)" stroke-width="2"/>' : "") : "") +
-        mo.map(([m, t]) => (idx[m] != null ? '<text x="' + X(idx[m]).toFixed(1) + '" y="' + (H - 6) + '">' + esc(I18N.t(t)) + "</text>" : "")).join("") +
-        '<text x="' + (W - 2) + '" y="12" text-anchor="end">' + esc(U.depth(Math.round(top / 1.1))) + "</text></svg>" +
-        '<div class="keyrow"><span><i style="background:var(--ink)"></i>' + esc(I18N.t("this season")) + '</span><span><i style="background:var(--accent);opacity:.5"></i>25–75 %</span><span><i style="background:var(--accent-tint)"></i>10–90 %</span><span><i style="background:var(--accent-tint);opacity:.5"></i>' + esc(I18N.t("lowest – highest")) + "</span>" + (ep.any ? epiKey() : "") + "</div>";
+    if (clim && clim.mmdd && window.SSC) {        // DATAVIZ: the whole season (Oct - May), all bands, this season, today, storms
+      const idx = Object.fromEntries(clim.mmdd.map((k, i) => [k, i])), g = (key, d) => (clim[key] && idx[d.slice(5)] != null ? clim[key][idx[d.slice(5)]] : null);
+      const sy = +DATA.today.slice(0, 4) - (+DATA.today.slice(5, 7) >= 8 ? 0 : 1), start = sy + "-10-01", end = (sy + 1) + "-05-31";
+      const ser = (h.current || []).filter((q) => q.depth_cm != null && q.date >= start && q.date <= end).map((q) => ({ d: q.date, v: q.depth_cm, fc: q.date > DATA.today }));
+      fan = SSC.season({ W: panelW(), start, end, today: DATA.today, series: ser, clim: g, title: SSC.t("Snow depth this season compared with past winters"), key: true }).html;
     }
     const by = (cp && cp.by_year || []).filter((y) => y.today_cm != null);
     let bars = "";
@@ -2189,19 +2168,7 @@
     const mod = dates.map((d) => (byDate[d] ? byDate[d].dep : null));
     let chart = "";
     const all = [...mv, ...mod].filter((x) => x != null);
-    if (dates.length > 1 && all.length) {
-      const W = 340, H = 120, L = 30, T = 10, B = 22, R = 18, mxv = Math.max(10, ...all) * 1.12;
-      const x = (k) => L + (k / (dates.length - 1)) * (W - L - R), y = (q) => H - B - (q / mxv) * (H - B - T);
-      const ln = (arr) => { let a = "", pen = false; arr.forEach((q, k) => { if (q == null) { pen = false; return; } a += (pen ? "L" : "M") + x(k).toFixed(1) + "," + y(q).toFixed(1); pen = true; }); return a; };
-      const dots = (arr, f) => arr.map((q, k) => (q == null ? "" : '<circle cx="' + x(k).toFixed(1) + '" cy="' + y(q).toFixed(1) + '" r="2.6" fill="' + f + '"/>')).join("");
-      chart = '<svg class="chart" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Measured at the station and modelled here, last days">' +
-        '<line x1="' + L + '" x2="' + W + '" y1="' + (H - B) + '" y2="' + (H - B) + '" stroke="var(--hair)"/>' +
-        '<text x="' + (L - 4) + '" y="' + (T + 4) + '" text-anchor="end">' + U.dep(mxv / 1.12) + "</text><text x=\"" + (L - 4) + '" y="' + (H - B) + '" text-anchor="end">0</text>' +
-        '<path d="' + ln(mod) + '" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="5 3"/>' + dots(mod, "var(--accent)") +
-        '<path d="' + ln(mv) + '" fill="none" stroke="var(--ink)" stroke-width="2.2"/>' + dots(mv, "var(--ink)") +
-        dates.map((d, k) => (k % 2 === (dates.length - 1) % 2 ? '<text x="' + x(k).toFixed(1) + '" y="' + (H - 6) + '" text-anchor="middle">' + (d === DATA.today ? esc(I18N.t("Today")) : dnum(d)) + "</text>" : "")).join("") + "</svg>" +
-        '<div class="keyrow"><span><i style="background:var(--ink)"></i>measured at the station</span><span><i style="background:var(--accent)"></i>modelled here</span></div>';
-    }
+    if (dates.length > 1 && all.length && window.SSC) { const P = SSC.paired({ box, dates, mv, mod, today: DATA.today }); chart = P ? P.html : ""; }
     const tm = byDate[DATA.today];
     box.innerHTML = '<div class="stncmp" data-stnfly="' + ns.i + '"><div class="sv"><div class="over">Measured</div><b>' + cmS(r[4]) + "</b><small>" + esc(r[2]) + "</small></div>" +
       '<div class="sv"><div class="over">Modelled here</div><b>' + (tm ? cmS(tm.dep) : "–") + "</b><small>" + (ctx.elev != null ? U.elev(ctx.elev) : "") + "</small></div></div>" +
@@ -2209,6 +2176,7 @@
       (r[3] ? "<tr><td>Station height</td><td>" + U.elev(r[3]) + (dE != null && Math.abs(dE) >= 50 ? ' <small class="none">' + esc(I18N.tu(dE > 0 ? "{a} m higher" : "{a} m lower", U.ev(Math.abs(dE)))) + "</small>" : "") + "</td></tr>" : "") +
       "<tr><td>Measured at</td><td>" + esc(stnTime(r[5])) + "</td></tr></table>" + chart;
     bindStations($("pbody"));
+    if (window.SSC) SSC.bind(box);
   }
   async function sharePoint(pt, n, today) {
     const url = "https://snowscope.app/?p=" + pt.lat + "," + pt.lon + "&d=" + st.day;
@@ -2551,7 +2519,7 @@
     const hb = box.querySelector(".hero2");
     if (hb) { hb.insertAdjacentHTML("afterend", '<div class="seasonrow" id="rSeason"><span class="ms">event</span><span class="tx"><span class="skel" style="display:block;height:16px;width:60%"></span></span></div>'); seasonRow(slug); }
     // LIVE-DATA (2026-11-03): new-snow totals right under the hero, the powder-alert button, lifts / webcams only with data
-    if (hb) { hb.insertAdjacentHTML("afterend", '<div id="rFall"><div class="skel" style="height:132px;margin:0 0 8px"></div></div>'); snowfallRow(x); }
+    if (hb) { hb.insertAdjacentHTML("afterend", '<div id="rFall"><div class="skel" style="height:132px;margin:0 0 8px"></div></div><div id="rElev"></div>'); snowfallRow(x); }
     const ra = box.querySelector(".acts3");
     if (ra) ra.insertAdjacentHTML("afterend", '<button class="rowlink alertrow" data-alert="' + esc(slug) + '"><span class="ms">notifications_active</span><span><b>' + esc(I18N.t("Get a powder alert")) +
       "</b><small>" + esc(I18N.t("An e-mail when fresh snow falls here")) + '</small></span><span class="ms">chevron_right</span></button><div id="rLive"></div>');
@@ -2586,20 +2554,51 @@
     const L = sf && sf.levels, lv = L ? ["base", "mid", "top"].filter((k) => L[k]) : [];
     if (!lv.length) { box.innerHTML = ""; return; }
     const NM = { base: "Base", mid: "Mid", top: "Top" };
-    const cell = (q) => { if (!q || q.cm == null) return "<td>–</td>"; const v = Math.round(q.cm); return "<td>" + (v >= 1 ? "<b>" + U.dep(v) + "</b>" : '<span class="z">0</span>') + (q.kind === "measured" ? '<i class="mdot" title="' + esc(I18N.t("measured")) + '"></i>' : "") + "</td>"; };
-    const rows = (pre) => [["24h", "24 h"], ["48h", "48 h"], ["7d", "7 days"]].map(([k, lab]) => "<tr><th>" + esc(I18N.t(lab)) + "</th>" + lv.map((l) => cell(L[l].windows && L[l].windows[pre + "_" + k])).join("") + "</tr>").join("");
+    // DATAVIZ: each cell = the value + a bullet bar against the "big day" mark (charts.js fallCell)
+    const cell = (q, k, mx) => { if (window.SSC) return SSC.fallCell(q && q.cm, k, mx, q && q.kind === "measured"); if (!q || q.cm == null) return "<td>–</td>"; const v = Math.round(q.cm); return "<td>" + (v >= 1 ? "<b>" + U.dep(v) + "</b>" : '<span class="z">0</span>') + (q.kind === "measured" ? '<i class="mdot" title="' + esc(I18N.t("measured")) + '"></i>' : "") + "</td>"; };
+    const rows = (pre) => [["24h", "24 h"], ["48h", "48 h"], ["7d", "7 days"]].map(([k, lab]) => { const mx = Math.max(0, ...lv.map((l) => ((L[l].windows && L[l].windows[pre + "_" + k]) || {}).cm || 0));
+      return "<tr><th>" + esc(I18N.t(lab)) + "</th>" + lv.map((l) => cell(L[l].windows && L[l].windows[pre + "_" + k], k, mx)).join("") + "</tr>"; }).join("");
     const nextSum = lv.reduce((a, l) => a + ((L[l].windows && L[l].windows.next_7d && L[l].windows.next_7d.cm) || 0), 0), pastSum = lv.reduce((a, l) => a + ((L[l].windows && L[l].windows.past_7d && L[l].windows.past_7d.cm) || 0), 0);
     let mode = pastSum < 1 && nextSum >= 1 ? "next" : "past";
     const meas = lv.some((l) => L[l].windows && Object.values(L[l].windows).some((w) => w && w.kind === "measured"));
     const draw = () => {
       box.innerHTML = '<div class="card fall"><div class="fallh"><b>' + esc(I18N.t("New snow")) + ' <span class="unit">' + U.du() + '</span></b><div class="seg2" role="group" aria-label="' + esc(I18N.t("New snow")) + '"><button data-fm="past" aria-pressed="' + (mode === "past") + '">' + esc(I18N.t("Last days")) +
         '</button><button data-fm="next" aria-pressed="' + (mode === "next") + '">' + esc(I18N.t("Next days")) + "</button></div></div>" +
+        (window.SSC ? '<p class="ssc-t falltt" data-noi18n>' + esc(SSC.fallTitle(L, lv, mode)) + "</p>" : "") +
         '<table class="falltb"><thead><tr><th></th>' + lv.map((l) => "<th>" + esc(I18N.t(NM[l])) + "<small>" + esc(U.elev(L[l].elev_m)) + "</small></th>").join("") + "</tr></thead><tbody>" + rows(mode) +
         '<tr class="dep"><th>' + esc(I18N.t("Snow depth")) + "</th>" + lv.map((l) => { const d = L[l].depth_cm && L[l].depth_cm.best; return "<td>" + (d == null ? "–" : U.dep(Math.round(d))) + (L[l].depth_cm && L[l].depth_cm.measured != null ? '<i class="mdot"></i>' : "") + "</td>"; }).join("") + "</tr></tbody></table>" +
         (meas ? '<p class="note"><i class="mdot"></i> ' + esc(I18N.t("measured")) + "</p>" : "") + "</div>";
+      if (window.SSC) box.querySelector(".fall").insertAdjacentHTML("beforeend", '<div class="ssc-key" data-noi18n><span><em class="kbig"></em>' + esc(SSC.t("big day")) + " (" + esc(U.depth(20)) + ", 24 h)</span></div>");
       box.querySelectorAll("[data-fm]").forEach((b) => { b.onclick = () => { mode = b.dataset.fm; draw(); }; });
     };
     draw();
+    resortElev(x, L, lv);
+  }
+  // DATAVIZ: snow depth by height at the resort (base / mid / top from our map, the local height line of the 500 m map
+  // around the resort when the Pro point answers, measured stations nearby) -> charts.js elev
+  async function resortElev(x, L, lv) {
+    const box = $("rElev"); if (!box || !window.SSC) return;
+    const NM = { base: "base", mid: "mid", top: "top" };
+    const pts = lv.map((l) => ({ elev: L[l].elev_m, cm: L[l].depth_cm && L[l].depth_cm.model != null ? L[l].depth_cm.model : L[l].depth_cm && L[l].depth_cm.best, kind: NM[l] }));
+    let fit = null;
+    try {
+      const fine = DATA.regions.some((r) => r.code === x.dom && r.fine);
+      if (fine) { const p = await SS.api("/v1/g500/point?lat=" + x.lat + "&lon=" + x.lon, { timeout: 12000 }); const f = p && p.pixel_range && p.pixel_range.fit; if (f && f.b_cm_per_100m != null && f.snowline_m != null) fit = { b: f.b_cm_per_100m, snowline: f.snowline_m }; }
+    } catch { fit = null; }
+    if (!$("rElev") || st.slug !== x.slug) return;
+    const E = SSC.elev({ box, fit, pts, stations: nearStations(x.lat, x.lon, 15, lv.flatMap((l) => (L[l].stations || []).map((q) => ({ name: q.name, elev: q.elev_m, cm: q.depth_cm })))) });
+    box.innerHTML = E ? E.html : "";
+    SSC.bind(box);
+  }
+  // measured stations within km (fresh, with a height), the API's own stations first, max 4
+  function nearStations(lat, lon, km, first) {
+    const out = (first || []).filter((q) => q.elev != null && q.cm != null), seen = new Set(out.map((q) => q.name));
+    if (st.stations) {
+      const fresh = Date.now() - 36 * 3600e3;
+      st.stations.rows.map((r) => [r, kmLL(lat, lon, r[0], r[1])]).filter(([r, d]) => d <= km && r[3] && r[4] != null && Date.parse(r[5]) >= fresh).sort((a, b) => a[1] - b[1])
+        .forEach(([r]) => { if (!seen.has(r[2])) { seen.add(r[2]); out.push({ name: r[2], elev: r[3], cm: r[4] }); } });
+    }
+    return out.slice(0, 4);
   }
   // lifts / webcams: rows only when there is something to show (CONTRACT live data 2 + 3)
   async function liveRows(x) {
@@ -2751,25 +2750,13 @@
       box.querySelector("[data-up]").onclick = () => SS.upsell("Past winters at " + x.short + " are in Pro");
       return;
     }
-    const W = 360, H = 170, n = h.mmdd.length, idx = Object.fromEntries(h.mmdd.map((m, i) => [m, i]));
-    const cur = h.current.filter(([d, v]) => v != null && idx[d.slice(5)] != null).map(([d, v]) => [idx[d.slice(5)], v]);
-    const max = Math.max(30, ...h.p90.filter((v) => v != null), ...cur.map((c) => c[1])) * 1.1;
-    const X = (i) => (i / (n - 1)) * W, Y = (v) => H - 22 - (v / max) * (H - 30);
-    let band = "", med = "";
-    h.mmdd.forEach((m, i) => { if (h.p90[i] != null) band += (band ? "L" : "M") + X(i).toFixed(1) + "," + Y(h.p90[i]).toFixed(1); });
-    for (let i = n - 1; i >= 0; i--) if (h.p10[i] != null) band += "L" + X(i).toFixed(1) + "," + Y(h.p10[i]).toFixed(1);
-    const ep = h.snow_days_pct ? epiLayers((key, k) => (h[key] ? h[key][k] : null), n, X, Y, 4, H - 22) : null;
-    if (ep) med = ep.med; else h.mmdd.forEach((m, i) => { if (h.p50[i] != null) med += (med ? "L" : "M") + X(i).toFixed(1) + "," + Y(h.p50[i]).toFixed(1); });
-    const line = cur.map(([i, v], k) => (k ? "L" : "M") + X(i).toFixed(1) + "," + Y(v).toFixed(1)).join("");
-    const months = ["10-01", "11-01", "12-01", "01-01", "02-01", "03-01", "04-01", "05-01"], mn = ["Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"];
-    const ti = idx[DATA.today.slice(5)];
-    let s = '<svg class="chart" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Snow depth this season compared with past winters">' +
-      '<path d="' + band + 'Z" fill="var(--accent-tint)"/>' + (ep ? '<path d="' + ep.wet + '" fill="var(--accent)" opacity=".3"/>' + (ep.freq ? '<path d="' + ep.freq + '" fill="none" stroke="var(--ink3)" stroke-width="1" opacity=".8"/>' : "") : "") +
-      '<path d="' + med + '" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4 3"/>' +
-      (line ? '<path d="' + line + '" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linejoin="round"/>' : "") +
-      (ti != null ? '<line x1="' + X(ti) + '" x2="' + X(ti) + '" y1="4" y2="' + (H - 22) + '" stroke="var(--ink3)" stroke-dasharray="2 3"/>' : "") +
-      months.map((m, k) => (idx[m] != null ? '<text x="' + X(idx[m]) + '" y="' + (H - 6) + '">' + mn[k] + "</text>" : "")).join("") +
-      '<text x="' + (W - 2) + '" y="12" text-anchor="end">' + U.depth(Math.round(max / 1.1)) + "</text></svg>";
+    const n = h.mmdd.length, idx = Object.fromEntries(h.mmdd.map((m, i) => [m, i]));
+    const sy = +DATA.today.slice(0, 4) - (+DATA.today.slice(5, 7) >= 8 ? 0 : 1), start = sy + "-10-01", end = (sy + 1) + "-05-31";
+    // this season only (the cached history can still hold last winter's days: they were drawn on top of this one)
+    const cur = h.current.filter(([d, v]) => v != null && d >= start && d <= DATA.today && idx[d.slice(5)] != null).map(([d, v]) => [idx[d.slice(5)], v, d]);
+    const ser = h.current.filter(([d, v]) => v != null && d >= start && d <= end).map(([d, v]) => ({ d, v, fc: d > DATA.today }));
+    const g = (key, d) => (h[key] && idx[d.slice(5)] != null ? h[key][idx[d.slice(5)]] : null);
+    const SC = window.SSC && $("rHist") ? SSC.season({ box, start, end, today: DATA.today, series: ser, clim: g }) : null;
     const last = cur[cur.length - 1];
     let verdict = "";
     const lf = last && h.snow_days_pct ? h.snow_days_pct[last[0]] : null;
@@ -2781,9 +2768,10 @@
       verdict = last[1] > p90 ? "Much more snow than usual for this time of year." : last[1] > p50 * 1.2 + 2 ? "More snow than usual for this time of year."
         : last[1] < p10 ? "Much less snow than usual for this time of year." : last[1] < p50 * 0.8 - 2 ? "Less snow than usual for this time of year." : "About as much snow as usual for this time of year.";
     }
-    box.innerHTML = (verdict ? '<p style="margin:0 0 8px;font-weight:620">' + verdict + "</p>" : "") + s +
-      '<div class="keyrow"><span><i style="background:var(--ink)"></i>this season</span><span><i style="background:var(--accent)"></i>usual</span><span><i style="background:var(--accent-tint)"></i>most winters</span>' + (ep && ep.any ? epiKey() : "") + "</div>" +
+    const epiV = last && lf != null && lf < EPI;
+    box.innerHTML = (SC ? SC.html : "") + (epiV && verdict ? '<p class="note">' + esc(verdict) + "</p>" : "") +
       (h.best_weeks && h.best_weeks.length ? '<p style="margin:10px 0 0;font-size:14px"><span class="ms" style="font-size:18px;color:var(--accent)">event</span> Usually the best time to go: <b>' + seasonBest(h.best_weeks) + "</b></p>" : "");
+    if (window.SSC) SSC.bind(box);
   }
   async function forecast(x) {
     const box = $("rFc");
@@ -2796,11 +2784,14 @@
     try {
       const rep = await SS.api("/v1/resorts/" + encodeURIComponent(x.slug) + "/report");
       const m = (q) => (q && q.median != null ? q.median : null);
-      box.innerHTML = (rep.powder_score ? '<p style="margin:0 0 8px">Powder score today: <b>' + (Math.round(rep.powder_score.score * 10) / 10) + " / 10</b></p>" : "") +
+      const WK = window.SSC && (rep.outlook || []).length >= 3 ? SSC.week({ box, days: rep.outlook.map((d) => ({ date: d.date, sn: d.snowfall_cm, fl: d.freezing_level_max_m })),
+        base: x.base_m, top: x.top_m, mid: x.base_m && x.top_m ? Math.round((x.base_m + x.top_m) / 2 / 10) * 10 : null }) : null;
+      box.innerHTML = (WK ? WK.html : "") + (rep.powder_score ? '<p style="margin:0 0 8px">Powder score today: <b>' + (Math.round(rep.powder_score.score * 10) / 10) + " / 10</b></p>" : "") +
         '<table class="fc"><thead><tr><th>Day</th><th>New snow</th><th>Low / high</th><th>Wind</th></tr></thead><tbody>' +
         (rep.outlook || []).map((d) => "<tr><td>" + wd(d.date) + " " + dnum(d.date) + "</td><td>" + (m(d.snowfall_cm) >= 1 ? U.depth(Math.round(m(d.snowfall_cm))) + "" : "–") + "</td><td>" +
           (m(d.temp_min_c) != null ? U.tv(m(d.temp_min_c)) + "° / " + U.tv(m(d.temp_max_c)) + "°" : "–") + "</td><td>" + (m(d.wind_max_kmh) != null ? U.wind(m(d.wind_max_kmh)) : "–") + "</td></tr>").join("") + "</tbody></table>" +
         (rep.bulletin && rep.bulletin.url ? '<p style="margin:8px 0 0;font-size:13.5px"><a target="_blank" rel="noopener" href="' + esc(rep.bulletin.url) + '">Official avalanche bulletin · ' + esc(rep.bulletin.provider || "") + "</a></p>" : "");
+      if (window.SSC) SSC.bind(box);
     } catch (e) { box.innerHTML = '<p class="msg">' + (e.status === 422 ? "No forecast for this resort yet." : esc(I18N.t("Couldn't load the forecast."))) + "</p>"; }
   }
   // ------------------------------------------------------------------ boot (runs after every helper is defined)

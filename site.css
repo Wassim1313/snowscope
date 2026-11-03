@@ -366,6 +366,7 @@ body.app .legend{position:fixed;left:auto;right:12px;bottom:84px;z-index:14;max-
   .rt td:first-child{overflow-wrap:anywhere}}
 .rt{table-layout:auto;max-width:100%}
 .langbtn{background:transparent}
+.blogbtn{flex:none;padding:0 12px;gap:6px;background:transparent}@media (max-width:640px){.blogbtn{width:44px;padding:0}}
 .langmenu{position:fixed;z-index:80;border-radius:14px;padding:6px;display:flex;flex-direction:column;min-width:160px}
 .langmenu button{border:0;background:none;text-align:start;padding:10px 12px;border-radius:10px;font:inherit;font-size:14.5px;cursor:pointer;color:var(--ink)}
 .langmenu button:hover,.langmenu button[aria-current]{background:var(--surface3)}
