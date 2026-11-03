@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://meaningful-videos-maximize-peace.trycloudflare.com";
+window.SNOWSCOPE_API = "https://destinations-techniques-fat-batteries.trycloudflare.com";
