@@ -1,0 +1,973 @@
+{
+ "id": "2026-11-03-world-early_season_snow_check",
+ "slug": "early-season-snow-check-3-november-2026",
+ "date": "2026-11-03",
+ "published_utc": "2026-11-03T15:01:34Z",
+ "updated_utc": "2026-11-03T15:01:34Z",
+ "region": "WORLD",
+ "angle": "early_season_snow_check",
+ "score": 70,
+ "signature": "ALPS:25000:Bonneval-sur-Arc|PYRENEES:4000:Estació d'esquí de Port-Ainé|US_WEST:248000:Kendall Mountain|CA_WEST:329000:Big White|US_NE:0:Tuckerman Ravine|ATLAS:1000:None",
+ "tags": [
+  "snow-depth",
+  "compare",
+  "early-season",
+  "forecast",
+  "stations"
+ ],
+ "facts": {
+  "angle": "early_season_snow_check",
+  "date": "2026-11-03",
+  "weekday": "Tuesday",
+  "model_run": "2026-11-03",
+  "question": "Where is the snow today in the ski regions SnowScope maps, and what is coming in the next days?",
+  "regions_ranked_by_snow_covered_area": [
+   "Western Canada",
+   "US West",
+   "Alps",
+   "Pyrenees",
+   "Atlas (Morocco)",
+   "US Northeast"
+  ],
+  "regions": [
+   {
+    "region": "Alps",
+    "code": "ALPS",
+    "snow_covered_area_km2_today": 25190,
+    "resorts_with_snow_today": 584,
+    "resorts_in_region": 1178,
+    "deepest_resorts_today": [
+     {
+      "name": "Bonneval-sur-Arc",
+      "country": "France",
+      "top_m": 2948,
+      "base_m": 1794,
+      "depth_cm_upper_slopes_today": 55,
+      "new_cm_last_24h": 0,
+      "new_cm_last_72h": 4,
+      "new_cm_forecast_next_days": 14,
+      "slug": "bonneval_sur_arc"
+     },
+     {
+      "name": "Schnalstal",
+      "country": "Austria / Italy",
+      "top_m": 3200,
+      "base_m": 2005,
+      "depth_cm_upper_slopes_today": 48,
+      "new_cm_last_24h": 0,
+      "new_cm_last_72h": 2,
+      "new_cm_forecast_next_days": 1,
+      "slug": "schnalstal"
+     },
+     {
+      "name": "La Grave",
+      "country": "France",
+      "top_m": 3543,
+      "base_m": 3196,
+      "depth_cm_upper_slopes_today": 46,
+      "new_cm_last_24h": 0,
+      "new_cm_last_72h": 1,
+      "new_cm_forecast_next_days": 28,
+      "slug": "la_grave"
+     }
+    ],
+    "resorts_with_most_snow_forecast_next_days": [
+     {
+      "name": "Chabanon",
+      "new_cm_forecast_next_days": 37
+     },
+     {
+      "name": "Dévoluy",
+      "new_cm_forecast_next_days": 34
+     },
+     {
+      "name": "Chaillol",
+      "new_cm_forecast_next_days": 33
+     }
+    ],
+    "forecast_days": [
+     "2026-11-04",
+     "2026-11-05",
+     "2026-11-06"
+    ],
+    "snow_covered_area_km2_on_2026-11-01": 37780,
+    "snow_covered_area_km2_forecast_2026-11-06": 28740,
+    "measured_at_stations": [
+     {
+      "station": "Rosskar",
+      "elev_m": 2680,
+      "depth_cm_measured": 32,
+      "new_cm_measured_24h": 0,
+      "measured_on": "2026-11-02",
+      "network": "euregio"
+     },
+     {
+      "station": "Plattkopf",
+      "elev_m": 2220,
+      "depth_cm_measured": 30,
+      "new_cm_measured_24h": 8,
+      "measured_on": "2026-11-02",
+      "network": "euregio"
+     },
+     {
+      "station": "Pian Camuno Roncaglia SCM2",
+      "elev_m": 600,
+      "depth_cm_measured": 26,
+      "new_cm_measured_24h": null,
+      "measured_on": "2026-11-01",
+      "network": "lombardia"
+     }
+    ],
+    "past_winters_at_Bonneval-sur-Arc": {
+     "height_m": 2371,
+     "snow_cm_at_this_height_today_model": 2,
+     "deeper_than_n_of_past_winters": 14,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 10,
+     "period": "1980-81 to 2025-26"
+    }
+   },
+   {
+    "region": "Pyrenees",
+    "code": "PYRENEES",
+    "snow_covered_area_km2_today": 3970,
+    "resorts_with_snow_today": 40,
+    "resorts_in_region": 53,
+    "deepest_resorts_today": [
+     {
+      "name": "Estació d'esquí de Port-Ainé",
+      "country": "Spain",
+      "top_m": 2424,
+      "base_m": 1680,
+      "depth_cm_upper_slopes_today": 17,
+      "new_cm_last_24h": 5,
+      "new_cm_last_72h": 5,
+      "new_cm_forecast_next_days": 3,
+      "slug": "estacio_d_esqui_de_port_aine"
+     },
+     {
+      "name": "Cauterets Cirque du Lys",
+      "country": "France",
+      "top_m": 2420,
+      "base_m": 1725,
+      "depth_cm_upper_slopes_today": 16,
+      "new_cm_last_24h": 4,
+      "new_cm_last_72h": 4,
+      "new_cm_forecast_next_days": 2,
+      "slug": "cauterets"
+     },
+     {
+      "name": "Masella",
+      "country": "Spain",
+      "top_m": 2509,
+      "base_m": 1615,
+      "depth_cm_upper_slopes_today": 15,
+      "new_cm_last_24h": 10,
+      "new_cm_last_72h": 10,
+      "new_cm_forecast_next_days": 4,
+      "slug": "masella"
+     }
+    ],
+    "resorts_with_most_snow_forecast_next_days": [
+     {
+      "name": "Aramón Cerler",
+      "new_cm_forecast_next_days": 6
+     },
+     {
+      "name": "Estació d'esquí i muntanya Vallt",
+      "new_cm_forecast_next_days": 5
+     },
+     {
+      "name": "Estació d'esquí Port del Comte",
+      "new_cm_forecast_next_days": 5
+     }
+    ],
+    "forecast_days": [
+     "2026-11-04",
+     "2026-11-05",
+     "2026-11-06"
+    ],
+    "snow_covered_area_km2_on_2026-11-01": 590,
+    "snow_covered_area_km2_forecast_2026-11-06": 1300,
+    "measured_at_stations": [
+     {
+      "station": "Núria (1.971 m)",
+      "elev_m": 1971,
+      "depth_cm_measured": 8,
+      "new_cm_measured_24h": 1,
+      "measured_on": "2026-11-02",
+      "network": "smc_xema"
+     },
+     {
+      "station": "Boí (2.537 m)",
+      "elev_m": 2537,
+      "depth_cm_measured": 5,
+      "new_cm_measured_24h": 0,
+      "measured_on": "2026-11-02",
+      "network": "smc_xema"
+     },
+     {
+      "station": "Das - Aeròdrom",
+      "elev_m": 1096,
+      "depth_cm_measured": 3,
+      "new_cm_measured_24h": 0,
+      "measured_on": "2026-11-02",
+      "network": "smc_xema"
+     }
+    ],
+    "past_winters_at_Estació d'esquí de Port-Ainé": {
+     "height_m": 2052,
+     "snow_cm_at_this_height_today_model": 1,
+     "deeper_than_n_of_past_winters": 30,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 0,
+     "period": "1980-81 to 2025-26"
+    }
+   },
+   {
+    "region": "US West",
+    "code": "US_WEST",
+    "snow_covered_area_km2_today": 247680,
+    "resorts_with_snow_today": 143,
+    "resorts_in_region": 195,
+    "deepest_resorts_today": [
+     {
+      "name": "Kendall Mountain",
+      "country": "United States",
+      "top_m": 2904,
+      "base_m": 2835,
+      "depth_cm_upper_slopes_today": 134,
+      "new_cm_last_24h": 1,
+      "new_cm_last_72h": 62,
+      "new_cm_forecast_next_days": 3,
+      "slug": "kendall_mountain_recreation_area"
+     },
+     {
+      "name": "Silverton Mountain",
+      "country": "United States",
+      "top_m": 3345,
+      "base_m": 3143,
+      "depth_cm_upper_slopes_today": 131,
+      "new_cm_last_24h": 1,
+      "new_cm_last_72h": 66,
+      "new_cm_forecast_next_days": 5,
+      "slug": "silverton_mountain"
+     },
+     {
+      "name": "Telluride",
+      "country": "United States",
+      "top_m": 3812,
+      "base_m": 2662,
+      "depth_cm_upper_slopes_today": 130,
+      "new_cm_last_24h": 1,
+      "new_cm_last_72h": 64,
+      "new_cm_forecast_next_days": 5,
+      "slug": "telluride_ski_area"
+     }
+    ],
+    "resorts_with_most_snow_forecast_next_days": [
+     {
+      "name": "Mt Baker",
+      "new_cm_forecast_next_days": 28
+     },
+     {
+      "name": "Monarch Mountain",
+      "new_cm_forecast_next_days": 14
+     },
+     {
+      "name": "Alpental",
+      "new_cm_forecast_next_days": 12
+     }
+    ],
+    "forecast_days": [
+     "2026-11-04",
+     "2026-11-05",
+     "2026-11-06"
+    ],
+    "snow_covered_area_km2_on_2026-11-01": 265320,
+    "snow_covered_area_km2_forecast_2026-11-06": 202830,
+    "measured_at_stations": [
+     {
+      "station": "Rat Creek",
+      "elev_m": 3560,
+      "depth_cm_measured": 66,
+      "new_cm_measured_24h": 23,
+      "measured_on": "2026-11-01",
+      "network": "snotel"
+     },
+     {
+      "station": "Beartown",
+      "elev_m": 3530,
+      "depth_cm_measured": 66,
+      "new_cm_measured_24h": 5,
+      "measured_on": "2026-11-01",
+      "network": "snotel"
+     },
+     {
+      "station": "Red Mountain Pass",
+      "elev_m": 3371,
+      "depth_cm_measured": 61,
+      "new_cm_measured_24h": 28,
+      "measured_on": "2026-11-01",
+      "network": "snotel"
+     }
+    ],
+    "past_winters_at_Kendall Mountain": {
+     "height_m": 2869,
+     "snow_cm_at_this_height_today_model": 9,
+     "deeper_than_n_of_past_winters": 27,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 5,
+     "period": "1980-81 to 2025-26"
+    }
+   },
+   {
+    "region": "Western Canada",
+    "code": "CA_WEST",
+    "snow_covered_area_km2_today": 329280,
+    "resorts_with_snow_today": 51,
+    "resorts_in_region": 57,
+    "deepest_resorts_today": [
+     {
+      "name": "Big White",
+      "country": "Canada",
+      "top_m": 2271,
+      "base_m": 1512,
+      "depth_cm_upper_slopes_today": 91,
+      "new_cm_last_24h": 0,
+      "new_cm_last_72h": 0,
+      "new_cm_forecast_next_days": 2,
+      "slug": "big_white_ski_resort"
+     },
+     {
+      "name": "Silver Star",
+      "country": "Canada",
+      "top_m": 1886,
+      "base_m": 1146,
+      "depth_cm_upper_slopes_today": 84,
+      "new_cm_last_24h": 0,
+      "new_cm_last_72h": 0,
+      "new_cm_forecast_next_days": 3,
+      "slug": "silver_star_mountain_resort"
+     },
+     {
+      "name": "Harper Mountain",
+      "country": "Canada",
+      "top_m": 1483,
+      "base_m": 1083,
+      "depth_cm_upper_slopes_today": 74,
+      "new_cm_last_24h": 0,
+      "new_cm_last_72h": 0,
+      "new_cm_forecast_next_days": 1,
+      "slug": "harper_mountain"
+     }
+    ],
+    "resorts_with_most_snow_forecast_next_days": [
+     {
+      "name": "Ski Callaghan",
+      "new_cm_forecast_next_days": 33
+     },
+     {
+      "name": "Mount Cain Alpine Park",
+      "new_cm_forecast_next_days": 31
+     },
+     {
+      "name": "Whistler Blackcomb",
+      "new_cm_forecast_next_days": 25
+     }
+    ],
+    "forecast_days": [
+     "2026-11-04",
+     "2026-11-05",
+     "2026-11-06"
+    ],
+    "snow_covered_area_km2_on_2026-11-01": 370180,
+    "snow_covered_area_km2_forecast_2026-11-06": 302380,
+    "past_winters_at_Big White": {
+     "height_m": 1891,
+     "snow_cm_at_this_height_today_model": 39,
+     "deeper_than_n_of_past_winters": 43,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 13,
+     "period": "1980-81 to 2025-26"
+    }
+   },
+   {
+    "region": "US Northeast",
+    "code": "US_NE",
+    "snow_covered_area_km2_today": 360,
+    "resorts_with_snow_today": 15,
+    "resorts_in_region": 111,
+    "deepest_resorts_today": [
+     {
+      "name": "Tuckerman Ravine",
+      "country": "United States",
+      "top_m": null,
+      "base_m": null,
+      "depth_cm_upper_slopes_today": 9,
+      "new_cm_last_24h": 0,
+      "new_cm_last_72h": 0,
+      "new_cm_forecast_next_days": 0,
+      "slug": "tuckerman_ravine"
+     },
+     {
+      "name": "Wildcat Mountain",
+      "country": "United States",
+      "top_m": 1211,
+      "base_m": 593,
+      "depth_cm_upper_slopes_today": 8,
+      "new_cm_last_24h": 0,
+      "new_cm_last_72h": 0,
+      "new_cm_forecast_next_days": 0,
+      "slug": "wildcat_mountain"
+     },
+     {
+      "name": "Attitash",
+      "country": "United States",
+      "top_m": 695,
+      "base_m": 190,
+      "depth_cm_upper_slopes_today": 6,
+      "new_cm_last_24h": 0,
+      "new_cm_last_72h": 0,
+      "new_cm_forecast_next_days": 0,
+      "slug": "attitash_mountain_resort"
+     }
+    ],
+    "resorts_with_most_snow_forecast_next_days": [],
+    "forecast_days": [
+     "2026-11-04",
+     "2026-11-05",
+     "2026-11-06"
+    ],
+    "snow_covered_area_km2_on_2026-11-01": 1050,
+    "snow_covered_area_km2_forecast_2026-11-06": 0
+   },
+   {
+    "region": "Atlas (Morocco)",
+    "code": "ATLAS",
+    "snow_covered_area_km2_today": 750,
+    "resorts_with_snow_today": 1,
+    "resorts_in_region": 3,
+    "deepest_resorts_today": [],
+    "resorts_with_most_snow_forecast_next_days": [],
+    "forecast_days": [
+     "2026-11-04",
+     "2026-11-05",
+     "2026-11-06"
+    ],
+    "snow_covered_area_km2_on_2026-11-01": 10,
+    "snow_covered_area_km2_forecast_2026-11-06": 30
+   }
+  ],
+  "notes": [
+   "Resort depth = deepest snow on the resort's upper slopes from the SnowScope snow model (about 1 km)",
+   "Station values are measurements on the date given",
+   "Snow-covered area counts every map cell with at least 1 cm of snow in the region"
+  ]
+ },
+ "media": [
+  {
+   "id": "map_europe",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/early-season-snow-check-3-november-2026/map_europe.webp",
+   "thumb": "blog/media/2026/11/early-season-snow-check-3-november-2026/map_europe_t.webp",
+   "bytes": 26308
+  },
+  {
+   "id": "map_north_america",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/early-season-snow-check-3-november-2026/map_north_america.webp",
+   "thumb": "blog/media/2026/11/early-season-snow-check-3-november-2026/map_north_america_t.webp",
+   "bytes": 22886
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Early-season snow check, 3 November: Western Canada and the US West lead",
+   "description": "Snow on 3 November 2026: Kendall Mountain 134 cm after a storm, Big White 91 cm, the Alps up to 55 cm at Bonneval-sur-Arc. Model and station data.",
+   "lede": "Right now the deepest snow is in North America. Our snow model puts 329,280 km² (127,137 sq mi) of Western Canada under snow today, and a storm in the US West left up to 66 cm (26 in) in 72 hours. In the Alps the snow is still thin and high, but new snow is forecast for several French resorts this week.",
+   "sections": [
+    {
+     "h": "US West: a storm brings the deepest snow",
+     "p": [
+      "The deepest resort snow today is in the US West. After a storm, Kendall Mountain has about 134 cm (53 in) on its upper slopes, Silverton Mountain 131 cm (52 in) and Telluride 130 cm (51 in), according to our snow model. Most of it is new: these three resorts got between 62 and 66 cm (24 to 26 in) in the last 72 hours.",
+      "Snow stations confirm the storm. On 1 November, the Red Mountain Pass station at 3,371 m (11,060 ft) measured 61 cm (24 in) of snow on the ground, with 28 cm (11 in) of new snow in 24 hours, and Rat Creek at 3,560 m (11,680 ft) measured 66 cm (26 in). These are measurements at one point; the resort numbers are model estimates for the area.",
+      "The snow cover is already shrinking at lower heights: in the US West it went from 265,320 km² on 1 November to 247,680 km² today, and our forecast gives 202,830 km² on 6 November."
+     ]
+    },
+    {
+     "h": "Western Canada: the widest snow cover, and well above normal",
+     "p": [
+      "Western Canada has the largest snow cover of all our regions: 329,280 km² today, with snow at 51 of 57 resorts. Big White leads with 91 cm (36 in), ahead of Silver Star with 84 cm (33 in) and Harper Mountain with 74 cm (29 in).",
+      "This is an unusually good start. At 1,891 m (6,204 ft) on Big White, our model has 39 cm (15 in) of snow today. That is deeper than on this date in 43 of the past 46 winters; the usual depth here on 3 November is 13 cm (5 in).",
+      "More snow is on the way for other resorts. In the next three days our forecast gives 33 cm (13 in) at Ski Callaghan, 31 cm (12 in) at Mount Cain Alpine Park and 25 cm (10 in) at Whistler Blackcomb. In the US West, Mt Baker could get 28 cm (11 in). Big White expects only 2 cm (1 in)."
+     ]
+    },
+    {
+     "h": "Alps: thin snow up high, new snow on the way",
+     "p": [
+      "In the Alps, 584 of 1,178 resorts have some snow today, but it is thin. The deepest is Bonneval-sur-Arc in France with about 55 cm (22 in) on its upper slopes, then Schnalstal (Austria / Italy) with 48 cm (19 in) and La Grave with 46 cm (18 in).",
+      "Lower down there is very little. At 2,371 m (7,779 ft) at Bonneval-sur-Arc our model has only 2 cm (1 in), below the usual 10 cm (4 in) for this date: only 14 of the past 46 winters had less snow there on 3 November.",
+      "The snow-covered area fell from 37,780 km² on 1 November to 25,190 km² today, and our forecast brings it back to 28,740 km² on 6 November. The biggest totals in the next three days are in France: Chabanon 37 cm (15 in), Dévoluy 34 cm (13 in), Chaillol 33 cm (13 in) and La Grave 28 cm (11 in).",
+      "Stations show the same picture. On 2 November the Plattkopf station at 2,220 m (7,283 ft) measured 30 cm (12 in) of snow, with 8 cm (3 in) of new snow in 24 hours, and Rosskar at 2,680 m (8,793 ft) measured 32 cm (13 in)."
+     ]
+    },
+    {
+     "h": "Pyrenees, US Northeast and the Atlas: first flakes",
+     "p": [
+      "The Pyrenees got fresh snow. Masella had 10 cm (4 in) in the last 24 hours and now has about 15 cm (6 in) on its upper slopes; Estació d'esquí de Port-Ainé has 17 cm (7 in) and Cauterets Cirque du Lys 16 cm (6 in). The Núria station at 1,971 m (6,467 ft) measured 8 cm (3 in) on 2 November.",
+      "In the US Northeast the early snow is going: 15 of 111 resorts have a little snow today, with at most 9 cm (4 in) at Tuckerman Ravine, and our forecast shows none left on the map by 6 November. In the Atlas (Morocco), our model shows snow at only 1 of 3 resorts, and only a few centimetres."
+     ]
+    }
+   ],
+   "advice": [
+    "Snow on the map does not mean a resort is open. Check the resort's own website for lifts and opening dates before you travel.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can be just under the surface.",
+    "In the US West the new snow after the storm lies on bare ground and the wind moves it. If you go off-piste or ski touring, read the official avalanche bulletin first.",
+    "Planning a weekend in the Alps? Watch the French resorts with the biggest forecast, like Chabanon, Dévoluy and La Grave, and check the map again before you go: forecasts change.",
+    "Get a powder alert in the SnowScope app to know when your resort gets fresh snow."
+   ],
+   "captions": {
+    "map_europe": "Snow depth in the Alps and Pyrenees on 3 November 2026 (SnowScope snow model), with the resorts that have the most snow.",
+    "map_north_america": "Snow depth in the US West and Western Canada on 3 November 2026 (SnowScope snow model), with the deepest resorts."
+   }
+  },
+  "fr": {
+   "title": "Point neige de début de saison, 3 novembre : l'Ouest canadien et l'Ouest américain en tête",
+   "description": "La neige au 3 novembre 2026 : Kendall Mountain 134 cm après une tempête, Big White 91 cm, les Alpes jusqu'à 55 cm à Bonneval-sur-Arc. Modèle et mesures.",
+   "lede": "Pour l'instant, c'est en Amérique du Nord que la neige est la plus épaisse. Notre modèle de neige compte aujourd'hui 329 280 km² enneigés dans l'Ouest canadien, et une tempête a laissé jusqu'à 66 cm en 72 heures dans l'Ouest américain. Dans les Alpes, la neige reste fine et en altitude, mais de la neige fraîche est prévue cette semaine dans plusieurs stations françaises.",
+   "sections": [
+    {
+     "h": "Ouest américain : une tempête apporte la neige la plus épaisse",
+     "p": [
+      "C'est dans l'Ouest américain que les stations ont le plus de neige aujourd'hui. Après une tempête, Kendall Mountain compte environ 134 cm sur le haut du domaine, Silverton Mountain 131 cm et Telluride 130 cm, selon notre modèle de neige. L'essentiel est récent : ces trois stations ont reçu entre 62 et 66 cm au cours des 72 dernières heures.",
+      "Les stations de mesure confirment la tempête. Le 1er novembre, la station de Red Mountain Pass, à 3 371 m, a mesuré 61 cm de neige au sol, dont 28 cm de neige fraîche en 24 heures, et Rat Creek, à 3 560 m, a mesuré 66 cm. Ce sont des mesures en un point ; les chiffres des stations de ski sont des estimations du modèle pour la zone.",
+      "La surface enneigée recule déjà à basse altitude : dans l'Ouest américain, elle est passée de 265 320 km² le 1er novembre à 247 680 km² aujourd'hui, et notre prévision donne 202 830 km² le 6 novembre."
+     ]
+    },
+    {
+     "h": "Ouest canadien : la plus grande surface enneigée, bien au-dessus de la normale",
+     "p": [
+      "L'Ouest canadien a la plus grande surface enneigée de toutes nos régions : 329 280 km² aujourd'hui, avec de la neige dans 51 stations sur 57. Big White est en tête avec 91 cm, devant Silver Star avec 84 cm et Harper Mountain avec 74 cm.",
+      "C'est un début de saison exceptionnel. À 1 891 m à Big White, notre modèle donne 39 cm de neige aujourd'hui. C'est plus qu'à cette date lors de 43 des 46 hivers passés ; la hauteur habituelle ici le 3 novembre est de 13 cm.",
+      "D'autres stations vont recevoir de la neige. Pour les trois prochains jours, notre prévision donne 33 cm à Ski Callaghan, 31 cm à Mount Cain Alpine Park et 25 cm à Whistler Blackcomb. Dans l'Ouest américain, Mt Baker pourrait recevoir 28 cm. Big White n'attend que 2 cm."
+     ]
+    },
+    {
+     "h": "Alpes : une neige fine en altitude, de la neige fraîche en vue",
+     "p": [
+      "Dans les Alpes, 584 stations sur 1 178 ont un peu de neige aujourd'hui, mais elle est fine. La plus enneigée est Bonneval-sur-Arc, en France, avec environ 55 cm sur le haut du domaine, puis Schnalstal (Autriche / Italie) avec 48 cm et La Grave avec 46 cm.",
+      "Plus bas, il y a très peu de neige. À 2 371 m à Bonneval-sur-Arc, notre modèle ne donne que 2 cm, moins que les 10 cm habituels à cette date : seuls 14 des 46 hivers passés avaient moins de neige à cet endroit un 3 novembre.",
+      "La surface enneigée est passée de 37 780 km² le 1er novembre à 25 190 km² aujourd'hui, et notre prévision la fait remonter à 28 740 km² le 6 novembre. Les plus gros cumuls des trois prochains jours sont en France : Chabanon 37 cm, Dévoluy 34 cm, Chaillol 33 cm et La Grave 28 cm.",
+      "Les stations de mesure montrent la même chose. Le 2 novembre, la station du Plattkopf, à 2 220 m, a mesuré 30 cm de neige, dont 8 cm de neige fraîche en 24 heures, et celle du Rosskar, à 2 680 m, 32 cm."
+     ]
+    },
+    {
+     "h": "Pyrénées, Nord-Est américain et Atlas : les premiers flocons",
+     "p": [
+      "Les Pyrénées ont reçu de la neige fraîche. Masella a eu 10 cm en 24 heures et compte maintenant environ 15 cm sur le haut du domaine ; Estació d'esquí de Port-Ainé a 17 cm et Cauterets Cirque du Lys 16 cm. La station de mesure de Núria, à 1 971 m, a mesuré 8 cm le 2 novembre.",
+      "Dans le Nord-Est américain, la neige précoce disparaît : 15 stations sur 111 ont un peu de neige aujourd'hui, avec au plus 9 cm à Tuckerman Ravine, et notre prévision n'en montre plus sur la carte le 6 novembre. Dans l'Atlas (Maroc), notre modèle ne montre de la neige que dans 1 station sur 3, et seulement quelques centimètres."
+     ]
+    }
+   ],
+   "advice": [
+    "De la neige sur la carte ne veut pas dire que la station est ouverte. Vérifiez les remontées et les dates d'ouverture sur le site de la station avant de partir.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : des cailloux et de l'herbe peuvent se cacher juste sous la surface.",
+    "Dans l'Ouest américain, la neige fraîche de la tempête repose sur un sol nu et le vent la déplace. Avant le hors-piste ou le ski de randonnée, lisez le bulletin d'avalanche officiel.",
+    "Un week-end dans les Alpes ? Surveillez les stations françaises avec la plus forte prévision, comme Chabanon, Dévoluy et La Grave, et regardez la carte à nouveau avant de partir : les prévisions changent.",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand votre station reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map_europe": "Hauteur de neige dans les Alpes et les Pyrénées le 3 novembre 2026 (modèle de neige SnowScope), avec les stations les plus enneigées.",
+    "map_north_america": "Hauteur de neige dans l'Ouest américain et l'Ouest canadien le 3 novembre 2026 (modèle de neige SnowScope), avec les stations les plus enneigées."
+   }
+  },
+  "de": {
+   "title": "Schnee-Check zum Saisonstart, 3. November: Westkanada und der US-Westen vorn",
+   "description": "Schnee am 3. November 2026: Kendall Mountain 134 cm nach einem Sturm, Big White 91 cm, die Alpen bis 55 cm in Bonneval-sur-Arc. Modell- und Messdaten.",
+   "lede": "Im Moment liegt der meiste Schnee in Nordamerika. Unser Schneemodell zählt heute 329.280 km² Schneefläche in Westkanada, und ein Sturm hat im US-Westen bis zu 66 cm in 72 Stunden gebracht. In den Alpen ist der Schnee noch dünn und liegt nur weit oben, aber für mehrere französische Skigebiete ist diese Woche Neuschnee angesagt.",
+   "sections": [
+    {
+     "h": "US-Westen: Ein Sturm bringt den meisten Schnee",
+     "p": [
+      "Den meisten Schnee haben heute die Skigebiete im US-Westen. Nach einem Sturm liegen laut unserem Schneemodell am Kendall Mountain etwa 134 cm in den oberen Hängen, am Silverton Mountain 131 cm und in Telluride 130 cm. Das meiste ist frisch: Diese drei Skigebiete bekamen in den letzten 72 Stunden zwischen 62 und 66 cm.",
+      "Messstationen bestätigen den Sturm. Am 1. November maß die Station Red Mountain Pass auf 3.371 m eine Schneehöhe von 61 cm, davon 28 cm Neuschnee in 24 Stunden, und Rat Creek auf 3.560 m maß 66 cm. Das sind Messungen an einem Punkt; die Werte der Skigebiete sind Modellschätzungen für die Fläche.",
+      "Weiter unten schrumpft die Schneefläche schon: Im US-Westen ging sie von 265.320 km² am 1. November auf heute 247.680 km² zurück, und unsere Prognose ergibt 202.830 km² am 6. November."
+     ]
+    },
+    {
+     "h": "Westkanada: die größte Schneefläche, weit über dem Normalwert",
+     "p": [
+      "Westkanada hat die größte Schneefläche all unserer Regionen: heute 329.280 km², mit Schnee in 51 von 57 Skigebieten. Big White liegt mit 91 cm vorn, vor Silver Star mit 84 cm und Harper Mountain mit 74 cm.",
+      "Das ist ein ungewöhnlich guter Start. Auf 1.891 m am Big White zeigt unser Modell heute 39 cm Schnee. Das ist mehr als an diesem Datum in 43 der letzten 46 Winter; üblich sind hier am 3. November 13 cm.",
+      "Für andere Skigebiete kommt mehr Schnee. Für die nächsten drei Tage gibt unsere Prognose 33 cm für Ski Callaghan, 31 cm für Mount Cain Alpine Park und 25 cm für Whistler Blackcomb. Im US-Westen könnte Mt Baker 28 cm bekommen. Big White erwartet nur 2 cm."
+     ]
+    },
+    {
+     "h": "Alpen: dünner Schnee weit oben, Neuschnee unterwegs",
+     "p": [
+      "In den Alpen haben heute 584 von 1.178 Skigebieten etwas Schnee, aber er ist dünn. Am meisten hat Bonneval-sur-Arc in Frankreich mit etwa 55 cm in den oberen Hängen, dann Schnalstal (Österreich / Italien) mit 48 cm und La Grave mit 46 cm.",
+      "Weiter unten liegt sehr wenig. Auf 2.371 m in Bonneval-sur-Arc zeigt unser Modell nur 2 cm, weniger als die üblichen 10 cm an diesem Datum: Nur 14 der letzten 46 Winter hatten dort am 3. November weniger Schnee.",
+      "Die Schneefläche fiel von 37.780 km² am 1. November auf heute 25.190 km², und unsere Prognose bringt sie bis zum 6. November wieder auf 28.740 km². Die größten Mengen der nächsten drei Tage gibt es in Frankreich: Chabanon 37 cm, Dévoluy 34 cm, Chaillol 33 cm und La Grave 28 cm.",
+      "Die Messstationen zeigen dasselbe Bild. Am 2. November maß die Station Plattkopf auf 2.220 m eine Schneehöhe von 30 cm, davon 8 cm Neuschnee in 24 Stunden, und Rosskar auf 2.680 m 32 cm."
+     ]
+    },
+    {
+     "h": "Pyrenäen, Nordosten der USA und Atlas: die ersten Flocken",
+     "p": [
+      "Die Pyrenäen haben Neuschnee bekommen. Masella bekam 10 cm in 24 Stunden und hat jetzt etwa 15 cm in den oberen Hängen; Estació d'esquí de Port-Ainé hat 17 cm und Cauterets Cirque du Lys 16 cm. Die Messstation Núria auf 1.971 m maß am 2. November 8 cm.",
+      "Im Nordosten der USA verschwindet der frühe Schnee: 15 von 111 Skigebieten haben heute etwas Schnee, höchstens 9 cm in Tuckerman Ravine, und laut Prognose ist am 6. November keiner mehr auf der Karte. Im Atlas (Marokko) zeigt unser Modell nur in 1 von 3 Skigebieten Schnee, und nur wenige Zentimeter."
+     ]
+    }
+   ],
+   "advice": [
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist. Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets, bevor du losfährst.",
+    "Früher Schnee ist dünn. Bleib auf offenen, präparierten Pisten: Steine und Gras können knapp unter der Oberfläche liegen.",
+    "Im US-Westen liegt der Neuschnee nach dem Sturm auf blankem Boden, und der Wind verfrachtet ihn. Lies vor dem Freeriden oder einer Skitour zuerst den offiziellen Lawinenlagebericht.",
+    "Ein Wochenende in den Alpen geplant? Behalte die französischen Skigebiete mit der größten Prognose im Auge, etwa Chabanon, Dévoluy und La Grave, und schau vor der Abfahrt noch einmal auf die Karte: Prognosen ändern sich.",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann dein Skigebiet Neuschnee bekommt."
+   ],
+   "captions": {
+    "map_europe": "Schneehöhe in den Alpen und Pyrenäen am 3. November 2026 (SnowScope-Schneemodell), mit den Skigebieten mit dem meisten Schnee.",
+    "map_north_america": "Schneehöhe im US-Westen und in Westkanada am 3. November 2026 (SnowScope-Schneemodell), mit den schneereichsten Skigebieten."
+   }
+  },
+  "it": {
+   "title": "Punto neve di inizio stagione, 3 novembre: in testa Canada occidentale e Ovest degli USA",
+   "description": "La neve al 3 novembre 2026: Kendall Mountain 134 cm dopo una tempesta, Big White 91 cm, le Alpi fino a 55 cm a Bonneval-sur-Arc. Dati del modello e delle stazioni.",
+   "lede": "Per ora la neve più alta è in Nord America. Il nostro modello neve conta oggi 329.280 km² innevati nel Canada occidentale, e una tempesta ha portato fino a 66 cm in 72 ore nell'Ovest degli USA. Sulle Alpi la neve è ancora sottile e solo in quota, ma questa settimana è prevista neve fresca in diverse località francesi.",
+   "sections": [
+    {
+     "h": "Ovest degli USA: una tempesta porta la neve più alta",
+     "p": [
+      "Oggi le località con più neve sono nell'Ovest degli USA. Dopo una tempesta, secondo il nostro modello neve, Kendall Mountain ha circa 134 cm sui pendii superiori, Silverton Mountain 131 cm e Telluride 130 cm. Quasi tutta è neve nuova: queste tre località hanno ricevuto tra 62 e 66 cm nelle ultime 72 ore.",
+      "Le stazioni di misura confermano la tempesta. Il 1° novembre la stazione di Red Mountain Pass, a 3.371 m, ha misurato 61 cm di neve al suolo, con 28 cm di neve fresca in 24 ore, e Rat Creek, a 3.560 m, ha misurato 66 cm. Sono misure in un punto; i valori delle località sono stime del modello per l'area.",
+      "Alle quote più basse la superficie innevata si sta già riducendo: nell'Ovest degli USA è passata da 265.320 km² il 1° novembre a 247.680 km² oggi, e la nostra previsione indica 202.830 km² il 6 novembre."
+     ]
+    },
+    {
+     "h": "Canada occidentale: la superficie innevata più ampia, ben sopra la norma",
+     "p": [
+      "Il Canada occidentale ha la superficie innevata più ampia di tutte le nostre regioni: 329.280 km² oggi, con neve in 51 località su 57. In testa c'è Big White con 91 cm, davanti a Silver Star con 84 cm e Harper Mountain con 74 cm.",
+      "È un inizio insolitamente buono. A 1.891 m a Big White il nostro modello indica oggi 39 cm di neve. È più che in questa data in 43 dei 46 inverni passati; il valore abituale qui il 3 novembre è di 13 cm.",
+      "Altre località riceveranno neve. Per i prossimi tre giorni la nostra previsione indica 33 cm a Ski Callaghan, 31 cm a Mount Cain Alpine Park e 25 cm a Whistler Blackcomb. Nell'Ovest degli USA, Mt Baker potrebbe ricevere 28 cm. Big White si aspetta solo 2 cm."
+     ]
+    },
+    {
+     "h": "Alpi: neve sottile in quota, neve fresca in arrivo",
+     "p": [
+      "Sulle Alpi 584 località su 1.178 hanno un po' di neve oggi, ma è sottile. La più innevata è Bonneval-sur-Arc, in Francia, con circa 55 cm sui pendii superiori, poi Schnalstal (Austria / Italia) con 48 cm e La Grave con 46 cm.",
+      "Più in basso ce n'è pochissima. A 2.371 m a Bonneval-sur-Arc il nostro modello indica solo 2 cm, meno dei 10 cm abituali in questa data: solo 14 dei 46 inverni passati avevano meno neve lì il 3 novembre.",
+      "La superficie innevata è scesa da 37.780 km² il 1° novembre a 25.190 km² oggi, e la nostra previsione la riporta a 28.740 km² il 6 novembre. I totali più alti dei prossimi tre giorni sono in Francia: Chabanon 37 cm, Dévoluy 34 cm, Chaillol 33 cm e La Grave 28 cm.",
+      "Le stazioni di misura mostrano lo stesso quadro. Il 2 novembre la stazione del Plattkopf, a 2.220 m, ha misurato 30 cm di neve, con 8 cm di neve fresca in 24 ore, e quella del Rosskar, a 2.680 m, 32 cm."
+     ]
+    },
+    {
+     "h": "Pirenei, Nord-est degli USA e Atlante: i primi fiocchi",
+     "p": [
+      "Sui Pirenei è arrivata neve fresca. Masella ha ricevuto 10 cm in 24 ore e ora ha circa 15 cm sui pendii superiori; Estació d'esquí de Port-Ainé ha 17 cm e Cauterets Cirque du Lys 16 cm. La stazione di Núria, a 1.971 m, ha misurato 8 cm il 2 novembre.",
+      "Nel Nord-est degli USA la neve precoce sta sparendo: 15 località su 111 hanno un po' di neve oggi, al massimo 9 cm a Tuckerman Ravine, e la nostra previsione non ne mostra più sulla mappa il 6 novembre. Sull'Atlante (Marocco) il nostro modello mostra neve solo in 1 località su 3, e solo pochi centimetri."
+     ]
+    }
+   ],
+   "advice": [
+    "Neve sulla mappa non significa che la località sia aperta. Controlla impianti e date di apertura sul sito della località prima di partire.",
+    "La neve di inizio stagione è sottile. Resta sulle piste aperte e battute: sassi ed erba possono essere appena sotto la superficie.",
+    "Nell'Ovest degli USA la neve fresca della tempesta poggia su terreno nudo e il vento la sposta. Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale.",
+    "Un weekend sulle Alpi? Tieni d'occhio le località francesi con la previsione più alta, come Chabanon, Dévoluy e La Grave, e ricontrolla la mappa prima di partire: le previsioni cambiano.",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando la tua località riceve neve fresca."
+   ],
+   "captions": {
+    "map_europe": "Altezza neve su Alpi e Pirenei il 3 novembre 2026 (modello neve SnowScope), con le località più innevate.",
+    "map_north_america": "Altezza neve nell'Ovest degli USA e nel Canada occidentale il 3 novembre 2026 (modello neve SnowScope), con le località più innevate."
+   }
+  },
+  "es": {
+   "title": "Parte de nieve de inicio de temporada, 3 de noviembre: el oeste de Canadá y de EE. UU. en cabeza",
+   "description": "La nieve el 3 de noviembre de 2026: Kendall Mountain 134 cm tras una tormenta, Big White 91 cm, los Alpes hasta 55 cm en Bonneval-sur-Arc. Modelo y estaciones.",
+   "lede": "Por ahora, la nieve más profunda está en Norteamérica. Nuestro modelo de nieve cuenta hoy 329.280 km² nevados en el oeste de Canadá, y una tormenta dejó hasta 66 cm en 72 horas en el oeste de EE. UU. En los Alpes la nieve todavía es fina y solo está en lo alto, pero esta semana se espera nieve nueva en varias estaciones francesas.",
+   "sections": [
+    {
+     "h": "Oeste de EE. UU.: una tormenta trae la nieve más profunda",
+     "p": [
+      "Las estaciones con más nieve hoy están en el oeste de EE. UU. Tras una tormenta, según nuestro modelo de nieve, Kendall Mountain tiene unos 134 cm en las pistas altas, Silverton Mountain 131 cm y Telluride 130 cm. Casi toda es nueva: estas tres estaciones recibieron entre 62 y 66 cm en las últimas 72 horas.",
+      "Las estaciones de medida confirman la tormenta. El 1 de noviembre, la estación de Red Mountain Pass, a 3371 m, midió 61 cm de nieve en el suelo, con 28 cm de nieve nueva en 24 horas, y Rat Creek, a 3560 m, midió 66 cm. Son medidas en un punto; las cifras de las estaciones de esquí son estimaciones del modelo para la zona.",
+      "En las cotas bajas la superficie nevada ya se reduce: en el oeste de EE. UU. pasó de 265.320 km² el 1 de noviembre a 247.680 km² hoy, y nuestra previsión da 202.830 km² el 6 de noviembre."
+     ]
+    },
+    {
+     "h": "Oeste de Canadá: la mayor superficie nevada, muy por encima de lo normal",
+     "p": [
+      "El oeste de Canadá tiene la mayor superficie nevada de todas nuestras regiones: 329.280 km² hoy, con nieve en 51 de 57 estaciones. Big White va en cabeza con 91 cm, por delante de Silver Star con 84 cm y Harper Mountain con 74 cm.",
+      "Es un inicio poco habitual. A 1891 m en Big White, nuestro modelo da hoy 39 cm de nieve. Es más que en esta fecha en 43 de los 46 inviernos pasados; lo habitual aquí el 3 de noviembre son 13 cm.",
+      "Llega más nieve para otras estaciones. Para los próximos tres días, nuestra previsión da 33 cm en Ski Callaghan, 31 cm en Mount Cain Alpine Park y 25 cm en Whistler Blackcomb. En el oeste de EE. UU., Mt Baker podría recibir 28 cm. Big White solo espera 2 cm."
+     ]
+    },
+    {
+     "h": "Alpes: nieve fina en lo alto y nieve nueva en camino",
+     "p": [
+      "En los Alpes, 584 de 1178 estaciones tienen algo de nieve hoy, pero es fina. La que más tiene es Bonneval-sur-Arc, en Francia, con unos 55 cm en las pistas altas, seguida de Schnalstal (Austria / Italia) con 48 cm y La Grave con 46 cm.",
+      "Más abajo hay muy poca. A 2371 m en Bonneval-sur-Arc nuestro modelo da solo 2 cm, por debajo de los 10 cm habituales en esta fecha: solo 14 de los 46 inviernos pasados tenían menos nieve allí un 3 de noviembre.",
+      "La superficie nevada bajó de 37.780 km² el 1 de noviembre a 25.190 km² hoy, y nuestra previsión la vuelve a subir a 28.740 km² el 6 de noviembre. Los mayores totales de los próximos tres días están en Francia: Chabanon 37 cm, Dévoluy 34 cm, Chaillol 33 cm y La Grave 28 cm.",
+      "Las estaciones de medida muestran lo mismo. El 2 de noviembre, la estación de Plattkopf, a 2220 m, midió 30 cm de nieve, con 8 cm de nieve nueva en 24 horas, y la de Rosskar, a 2680 m, 32 cm."
+     ]
+    },
+    {
+     "h": "Pirineos, noreste de EE. UU. y Atlas: los primeros copos",
+     "p": [
+      "Los Pirineos han recibido nieve nueva. Masella tuvo 10 cm en 24 horas y ahora tiene unos 15 cm en las pistas altas; Estació d'esquí de Port-Ainé tiene 17 cm y Cauterets Cirque du Lys 16 cm. La estación de medida de Núria, a 1971 m, midió 8 cm el 2 de noviembre.",
+      "En el noreste de EE. UU. la nieve temprana se va: 15 de 111 estaciones tienen algo de nieve hoy, como mucho 9 cm en Tuckerman Ravine, y nuestra previsión ya no muestra nieve en el mapa el 6 de noviembre. En el Atlas (Marruecos), nuestro modelo solo muestra nieve en 1 de 3 estaciones, y solo unos pocos centímetros."
+     ]
+    }
+   ],
+   "advice": [
+    "Nieve en el mapa no significa que la estación esté abierta. Consulta los remontes y las fechas de apertura en la web de la estación antes de viajar.",
+    "La nieve de principio de temporada es fina. Quédate en pistas abiertas y pisadas: puede haber piedras y hierba justo debajo.",
+    "En el oeste de EE. UU. la nieve nueva de la tormenta descansa sobre suelo desnudo y el viento la mueve. Antes de salir fuera de pista o de hacer esquí de travesía, lee el boletín oficial de aludes.",
+    "¿Un fin de semana en los Alpes? Sigue las estaciones francesas con la mayor previsión, como Chabanon, Dévoluy y La Grave, y vuelve a mirar el mapa antes de salir: las previsiones cambian.",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo tu estación recibe nieve nueva."
+   ],
+   "captions": {
+    "map_europe": "Espesor de nieve en los Alpes y los Pirineos el 3 de noviembre de 2026 (modelo de nieve de SnowScope), con las estaciones con más nieve.",
+    "map_north_america": "Espesor de nieve en el oeste de EE. UU. y el oeste de Canadá el 3 de noviembre de 2026 (modelo de nieve de SnowScope), con las estaciones con más nieve."
+   }
+  },
+  "ar": {
+   "title": "حالة التلج فبداية الموسم، 3 نونبر: غرب كندا وغرب ميريكان فالمقدمة",
+   "description": "التلج نهار 3 نونبر 2026: Kendall Mountain فيها 134 سم من بعد عاصفة، Big White فيها 91 سم، والألب حتى 55 سم ف Bonneval-sur-Arc. أرقام الموديل والمحطات.",
+   "lede": "دابا أكثر تلج كاين فأمريكا الشمالية. الموديل ديالنا كيحسب اليوم 329280 كم² فيها التلج فغرب كندا، وعاصفة فغرب ميريكان خلات حتى 66 سم ف 72 ساعة. فجبال الألب التلج باقي رقيق وغير فالعلو، ولكن كاين تلج جديد متوقع هاد السيمانة فبزاف ديال المحطات الفرنسية.",
+   "sections": [
+    {
+     "h": "غرب ميريكان: عاصفة جابت أكثر تلج",
+     "p": [
+      "المحطات اللي فيهم أكثر تلج اليوم كاينين فغرب ميريكان. من بعد العاصفة، حسب الموديل ديال التلج ديالنا، Kendall Mountain فيها تقريبا 134 سم فالجهة الفوقانية، Silverton Mountain فيها 131 سم و Telluride فيها 130 سم. أغلبو جديد: هاد التلاتة ديال المحطات طاح فيهم بين 62 و 66 سم ف 72 ساعة اللي فاتو.",
+      "محطات القياس كيأكدو العاصفة. نهار 1 نونبر، المحطة ديال Red Mountain Pass على علو 3371 م قاست 61 سم ديال التلج فالأرض، منهم 28 سم ديال تلج جديد ف 24 ساعة، و Rat Creek على علو 3560 م قاست 66 سم. هادو قياسات فنقطة وحدة؛ الأرقام ديال المحطات ديال التزلج تقديرات ديال الموديل للمنطقة.",
+      "المساحة اللي فيها التلج بدات كتنقص فالعلو المنخفض: فغرب ميريكان دازت من 265320 كم² نهار 1 نونبر ل 247680 كم² اليوم، والتوقعات ديالنا كتعطي 202830 كم² نهار 6 نونبر."
+     ]
+    },
+    {
+     "h": "غرب كندا: أكبر مساحة فيها التلج، وفوق العادة بزاف",
+     "p": [
+      "غرب كندا عندها أكبر مساحة فيها التلج فكاع المناطق ديالنا: 329280 كم² اليوم، والتلج كاين ف 51 محطة من 57. Big White فالمقدمة ب 91 سم، من بعدها Silver Star ب 84 سم و Harper Mountain ب 74 سم.",
+      "هادي بداية مزيانة بزاف. على علو 1891 م ف Big White، الموديل ديالنا فيه اليوم 39 سم ديال التلج. هادشي أكثر من هاد التاريخ ف 43 من 46 ديال الشتوات اللي فاتو؛ العادي هنا نهار 3 نونبر هو 13 سم.",
+      "كاين تلج جاي لمحطات أخرى. ف التلاتة ديال الأيام الجاية، التوقعات ديالنا كتعطي 33 سم ف Ski Callaghan، و 31 سم ف Mount Cain Alpine Park، و 25 سم ف Whistler Blackcomb. فغرب ميريكان، Mt Baker يمكن ياخد 28 سم. Big White ماكتسنى غير 2 سم."
+     ]
+    },
+    {
+     "h": "جبال الألب: تلج رقيق فالفوق، وتلج جديد جاي",
+     "p": [
+      "فجبال الألب، 584 محطة من 1178 فيهم شوية ديال التلج اليوم، ولكن رقيق. أكثر وحدة فيها التلج هي Bonneval-sur-Arc ففرنسا، فيها تقريبا 55 سم فالجهة الفوقانية، من بعدها Schnalstal (النمسا / إيطاليا) ب 48 سم و La Grave ب 46 سم.",
+      "فالتحت كاين شوية بزاف. على علو 2371 م ف Bonneval-sur-Arc، الموديل ديالنا فيه غير 2 سم، أقل من 10 سم العادية فهاد التاريخ: غير 14 من 46 ديال الشتوات اللي فاتو كان فيهم تلج أقل تما نهار 3 نونبر.",
+      "المساحة اللي فيها التلج نقصات من 37780 كم² نهار 1 نونبر ل 25190 كم² اليوم، والتوقعات ديالنا كترجعها ل 28740 كم² نهار 6 نونبر. أكبر كميات ف التلاتة ديال الأيام الجاية كاينين ففرنسا: Chabanon ب 37 سم، Dévoluy ب 34 سم، Chaillol ب 33 سم و La Grave ب 28 سم.",
+      "محطات القياس كيبينو نفس الشي. نهار 2 نونبر، المحطة ديال Plattkopf على علو 2220 م قاست 30 سم ديال التلج، منهم 8 سم تلج جديد ف 24 ساعة، و Rosskar على علو 2680 م قاست 32 سم."
+     ]
+    },
+    {
+     "h": "جبال البرانس، شمال شرق ميريكان والأطلس: أول حبات التلج",
+     "p": [
+      "جبال البرانس جاها تلج جديد. Masella طاح فيها 10 سم ف 24 ساعة، ودابا فيها تقريبا 15 سم فالجهة الفوقانية؛ Estació d'esquí de Port-Ainé فيها 17 سم و Cauterets Cirque du Lys فيها 16 سم. محطة القياس ديال Núria على علو 1971 م قاست 8 سم نهار 2 نونبر.",
+      "فشمال شرق ميريكان التلج اللي طاح بكري غادي ويمشي: 15 محطة من 111 فيهم شوية ديال التلج اليوم، أكثر شي 9 سم ف Tuckerman Ravine، والتوقعات ديالنا ماكتبين حتى تلج فالخريطة نهار 6 نونبر. فالأطلس (المغرب)، الموديل ديالنا كيبين التلج غير ف 1 محطة من 3، وغير شي سنتيمترات قليلة."
+     ]
+    }
+   ],
+   "advice": [
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة. شوف التيليسييج والتواريخ ديال الافتتاح فالموقع ديال المحطة قبل ما تسافر.",
+    "التلج ديال بداية الموسم رقيق. بقى فالبيستات المحلولة والمدكوكة: يمكن يكون الحجر والربيع تحت السطح نيشان.",
+    "فغرب ميريكان، التلج الجديد ديال العاصفة طايح على أرض عريانة والريح كتحركو. إلا غادي تخرج من البيست ولا دير السكي ديال الجولات، قرا النشرة الرسمية ديال الانهيارات قبل.",
+    "ناوي ويكاند فجبال الألب؟ تبع المحطات الفرنسية اللي فيهم أكبر توقعات، بحال Chabanon و Dévoluy و La Grave، وعاود شوف الخريطة قبل ما تمشي: التوقعات كتبدل.",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى المحطة ديالك جاها تلج جديد."
+   ],
+   "captions": {
+    "map_europe": "العلو ديال التلج فجبال الألب والبرانس نهار 3 نونبر 2026 (الموديل ديال التلج ديال SnowScope)، مع المحطات اللي فيهم أكثر تلج.",
+    "map_north_america": "العلو ديال التلج فغرب ميريكان وغرب كندا نهار 3 نونبر 2026 (الموديل ديال التلج ديال SnowScope)، مع المحطات اللي فيهم أكثر تلج."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "claude (agent-written from the fact sheet, number-checked)"
+  },
+  "fr": {
+   "writer": "claude (agent-written from the fact sheet, number-checked)"
+  },
+  "de": {
+   "writer": "claude (agent-written from the fact sheet, number-checked)"
+  },
+  "it": {
+   "writer": "claude (agent-written from the fact sheet, number-checked)"
+  },
+  "es": {
+   "writer": "claude (agent-written from the fact sheet, number-checked)"
+  },
+  "ar": {
+   "writer": "claude (agent-written from the fact sheet, number-checked)"
+  }
+ },
+ "words_en": 705,
+ "indexable": true,
+ "main": {
+  "slug": "bonneval_sur_arc",
+  "name": "Bonneval-sur-Arc",
+  "lat": 45.3614,
+  "lon": 7.0569
+ },
+ "places": [
+  {
+   "name": "Bonneval-sur-Arc",
+   "lat": 45.3614,
+   "lon": 7.0569
+  },
+  {
+   "name": "Estació d'esquí de Port-Ainé",
+   "lat": 42.4192,
+   "lon": 1.2122
+  },
+  {
+   "name": "Kendall Mountain",
+   "lat": 37.8115,
+   "lon": -107.6563
+  },
+  {
+   "name": "Big White",
+   "lat": 49.7358,
+   "lon": -118.9487
+  },
+  {
+   "name": "Tuckerman Ravine",
+   "lat": 44.2614,
+   "lon": -71.2799
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "bonneval_sur_arc",
+   "name": "Bonneval-sur-Arc"
+  },
+  {
+   "slug": "schnalstal",
+   "name": "Schnalstal"
+  },
+  {
+   "slug": "la_grave",
+   "name": "La Grave"
+  },
+  {
+   "slug": "estacio_d_esqui_de_port_aine",
+   "name": "Estació d'esquí de Port-Ainé"
+  },
+  {
+   "slug": "cauterets",
+   "name": "Cauterets Cirque du Lys"
+  },
+  {
+   "slug": "masella",
+   "name": "Masella"
+  },
+  {
+   "slug": "kendall_mountain_recreation_area",
+   "name": "Kendall Mountain"
+  },
+  {
+   "slug": "silverton_mountain",
+   "name": "Silverton Mountain"
+  },
+  {
+   "slug": "telluride_ski_area",
+   "name": "Telluride"
+  },
+  {
+   "slug": "big_white_ski_resort",
+   "name": "Big White"
+  },
+  {
+   "slug": "silver_star_mountain_resort",
+   "name": "Silver Star"
+  },
+  {
+   "slug": "harper_mountain",
+   "name": "Harper Mountain"
+  },
+  {
+   "slug": "tuckerman_ravine",
+   "name": "Tuckerman Ravine"
+  },
+  {
+   "slug": "wildcat_mountain",
+   "name": "Wildcat Mountain"
+  },
+  {
+   "slug": "attitash_mountain_resort",
+   "name": "Attitash"
+  }
+ ],
+ "table": {
+  "kind": "regions",
+  "rows": [
+   {
+    "code": "CA_WEST",
+    "area": 329280,
+    "with": 51,
+    "of": 57,
+    "deep_name": "Big White",
+    "deep_cm": 91
+   },
+   {
+    "code": "US_WEST",
+    "area": 247680,
+    "with": 143,
+    "of": 195,
+    "deep_name": "Kendall Mountain",
+    "deep_cm": 134
+   },
+   {
+    "code": "ALPS",
+    "area": 25190,
+    "with": 584,
+    "of": 1178,
+    "deep_name": "Bonneval-sur-Arc",
+    "deep_cm": 55
+   },
+   {
+    "code": "PYRENEES",
+    "area": 3970,
+    "with": 40,
+    "of": 53,
+    "deep_name": "Estació d'esquí de Port-Ainé",
+    "deep_cm": 17
+   },
+   {
+    "code": "ATLAS",
+    "area": 750,
+    "with": 1,
+    "of": 3,
+    "deep_name": null,
+    "deep_cm": null
+   },
+   {
+    "code": "US_NE",
+    "area": 360,
+    "with": 15,
+    "of": 111,
+    "deep_name": "Tuckerman Ravine",
+    "deep_cm": 9
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "EAWS (Europe)",
+   "url": "https://www.avalanches.org/"
+  },
+  {
+   "provider": "avalanche.org (US)",
+   "url": "https://avalanche.org/"
+  },
+  {
+   "provider": "Avalanche Canada",
+   "url": "https://avalanche.ca/"
+  }
+ ],
+ "trip_day": "2026-11-07",
+ "map_link": "https://snowscope.app/#@46.000,10.000,5.0",
+ "seconds": 0.0
+}
