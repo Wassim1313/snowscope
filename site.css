@@ -757,3 +757,42 @@ body.app .timeline .legend>small{grid-column:3}
 /* "Updating…" in the day strip while the newest run is older than yesterday (real date vs data date) */
 .updchip{flex:none;display:inline-flex;align-items:center;gap:4px;align-self:center;padding:3px 8px;margin-inline-end:4px;border-radius:999px;background:var(--accent-tint);color:var(--accent-ink);font-size:11px;font-weight:650;white-space:nowrap}
 .updchip .ms{font-size:14px}
+.chart.prof text.pl{font-size:10px;font-weight:650;fill:var(--ink2)}
+.proflapse{margin:6px 0 0;font-size:11.5px;color:var(--ink3)}
+/* winter strip: today among every past winter on this date (point + resort panels) */
+.wsbox{margin:10px 0 4px}
+.ws-rank{margin:0 0 2px;font-size:15px;font-weight:700;color:var(--ink)}
+.wstrip{width:100%;height:auto;display:block;overflow:visible}
+.wstrip .ws-iq{fill:var(--accent-tint)}
+.wstrip .ws-ax{stroke:var(--outline);stroke-width:1}
+.wstrip .ws-md{stroke:var(--accent);stroke-width:1.6;stroke-dasharray:3 2}
+.wstrip .ws-dot{stroke:var(--surface);stroke-width:1.2;cursor:pointer}
+.wstrip .ws-dot:hover,.wstrip .ws-dot:focus-visible,.wstrip .ws-dot.on{stroke:var(--ink);stroke-width:2;outline:none}
+.wstrip .ws-me{stroke:var(--ink);stroke-width:2.6}
+.wstrip .ws-v{font-size:13px;font-weight:750;fill:var(--ink)}
+.wstrip .ws-t{font-size:13px;fill:var(--ink3)}
+.ws-out{min-height:18px;margin:2px 0 0;font-size:13px;font-weight:650;color:var(--accent-ink);font-variant-numeric:tabular-nums}
+.keyrow .kdot{border-radius:50%;background:rgb(66,146,198)}
+details.wsmore{margin-top:8px}
+details.wsmore>summary{cursor:pointer;font-size:13px;font-weight:700;color:var(--accent-ink);list-style:none;padding:6px 0}
+details.wsmore>summary::-webkit-details-marker{display:none}
+details.wsmore>summary::after{content:" ▾"}
+details.wsmore[open]>summary::after{content:" ▴"}
+.wsbars{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0 6px}
+.wsbars ol{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-direction:column;gap:4px}
+.wsbars li{display:grid;grid-template-columns:62px 1fr auto;align-items:center;gap:6px;font-size:13px;font-variant-numeric:tabular-nums}
+.wsbars .yr{color:var(--ink3);white-space:nowrap}
+.wsbars .bar{height:8px;border-radius:4px;background:var(--surface2);overflow:hidden}
+.wsbars .bar i{display:block;height:100%;border-radius:4px}
+.ws-pix{margin:4px 0 2px;font-size:14px}
+@media (max-width:420px){.wsbars{grid-template-columns:1fr}}
+.wstrip{direction:ltr}
+.wstrip .ws-ml{stroke:var(--ink);stroke-width:1.4}
+.wsbars .bar{direction:ltr}
+.wspix{list-style:none;margin:6px 0 4px;padding:0;display:flex;flex-direction:column;gap:6px}
+.wspix li{display:grid;grid-template-columns:118px 1fr 56px;align-items:center;gap:8px;font-size:13px}
+.wspix small{color:var(--ink3)}
+.wspix b{text-align:end;font-variant-numeric:tabular-nums}
+.wspix .bar{position:relative;height:10px;border-radius:5px;background:var(--surface2);direction:ltr}
+.wspix .bar .rg{position:absolute;top:0;bottom:0;border-radius:5px;background:var(--accent-tint);box-shadow:inset 0 0 0 1px var(--accent)}
+.wspix .bar .md{position:absolute;top:-3px;bottom:-3px;width:3px;margin-left:-1.5px;border-radius:2px;background:var(--accent)}

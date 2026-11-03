@@ -148,7 +148,7 @@
   // ------------------------------------------------------------------ account / Pro
   async function onAccount(S) {
     const was = st.pro;
-    st.pro = !!S.pro;
+    st.pro = SS.proHere ? SS.proHere(map && map.getCenter()) : !!S.pro;   // High Atlas lifetime: Pro only inside its scope
     if (st.pro && !st.proIdx) {
       try {
         const [g, grid] = await Promise.all([SS.api("/v1/g500/index"), SS.api("/v1/grid")]);
@@ -1636,6 +1636,62 @@
     $("pbody").scrollTop = 0;
     renderPanel();
   }
+  // Transect v2 (owner 2026-11-03): the API profile (depth corrected for the local height gradient, lo-hi band, per-point
+  // flags, worst 200 m, lapse). Band = lo..hi, line coloured by segment (thin < 15 cm, ok < 40 cm, good >= 40 cm), labels top /
+  // bottom / least, a marker on the worst 200 m, the local gradient in small print. false -> caller samples the pictures.
+  async function pisteProfileV2(P, id) {
+    if (!SS.S.api) return false;
+    let c = P.coords;
+    if (c.length > 300) { const k = Math.ceil(c.length / 299); c = c.filter((_, i) => i % k === 0 || i === c.length - 1); }
+    let J;
+    try { J = await SS.api("/v1/pistes/profile?coords=" + c.map((q) => q[0].toFixed(5) + "," + q[1].toFixed(5)).join(";") + "&day=" + st.day, { auth: false, timeout: 15000 }); }
+    catch { return false; }
+    if (!st.piste || st.piste.id !== id) return true;
+    const pts = (J && J.points || []).filter((x) => x && x.d_m != null), sm = (J && J.summary) || {};
+    if (pts.length < 2) return false;
+    const len = sm.length_m || pts[pts.length - 1].d_m, top = sm.top_m, bot = sm.bottom_m;
+    $("psMeta").textContent = [len >= 1000 ? U.dist(len / 1000) : U.us() ? Math.round(len * 3.28084).toLocaleString("en-US") + " ft" : Math.round(len) + " m", top != null && bot != null ? U.ev(top) + " → " + U.elev(bot) : ""].filter(Boolean).join(" · ");
+    const W = 360, H = 200, L0 = 30, T = 16, B = 26, R0 = 8;
+    const X = (d) => L0 + (d / Math.max(1, len)) * (W - L0 - R0);
+    const vmax = Math.max(20, ...pts.map((x) => x.hi != null ? x.hi : x.depth_cm || 0)) * 1.12;
+    const Y = (v) => H - B - (Math.max(0, v || 0) / vmax) * (H - B - T);
+    const zs = pts.map((x) => x.z_m).filter((z) => z != null), zt = zs.length ? Math.max(...zs) : null, zb = zs.length ? Math.min(...zs) : null;
+    const eY = (z) => (zt == null || zt === zb ? H - B : H - B - ((z - zb) / (zt - zb)) * (H - B - T) * 0.9);
+    const band = pts.filter((x) => x.lo != null && x.hi != null);
+    const bandP = band.length > 1 ? "M" + band.map((x) => X(x.d_m).toFixed(1) + "," + Y(x.hi).toFixed(1)).join("L") + "L" + band.slice().reverse().map((x) => X(x.d_m).toFixed(1) + "," + Y(x.lo).toFixed(1)).join("L") + "Z" : "";
+    const elevA = zs.length ? "M" + X(0) + "," + (H - B) + pts.filter((x) => x.z_m != null).map((x) => "L" + X(x.d_m).toFixed(1) + "," + eY(x.z_m).toFixed(1)).join("") + "L" + X(len) + "," + (H - B) + "Z" : "";
+    const cls = (v) => (v == null ? "na" : v < 15 ? "thin" : v < 40 ? "ok" : "good");
+    const COL = { thin: "#E5484D", ok: "#F5A524", good: "#1463F3", na: "var(--ink4)" };
+    let segs = "";
+    for (let i = 1; i < pts.length; i++) {
+      const a = pts[i - 1], b = pts[i], k = cls(((a.depth_cm || 0) + (b.depth_cm || 0)) / 2);
+      segs += '<line x1="' + X(a.d_m).toFixed(1) + '" y1="' + Y(a.depth_cm).toFixed(1) + '" x2="' + X(b.d_m).toFixed(1) + '" y2="' + Y(b.depth_cm).toFixed(1) + '" stroke="' + COL[k] + '" stroke-width="3" stroke-linecap="round"/>';
+    }
+    const least = pts.reduce((m, x) => (x.depth_cm != null && (m == null || x.depth_cm < m.depth_cm) ? x : m), null);
+    const w2 = sm.worst_200m, lbl = (x, y, t, a) => '<text x="' + x.toFixed(1) + '" y="' + y.toFixed(1) + '" text-anchor="' + (a || "middle") + '" class="pl">' + esc(t) + "</text>";
+    const first = pts[0], last = pts[pts.length - 1];
+    $("psChart").innerHTML = '<svg class="chart prof" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + esc(I18N.t("Snow depth along the run, from the top")) + '">' +
+      (elevA ? '<path d="' + elevA + '" fill="var(--ink3)" opacity=".10"/>' : "") +
+      (w2 && w2.to_m > w2.from_m ? '<rect x="' + X(w2.from_m).toFixed(1) + '" y="' + T + '" width="' + Math.max(3, X(w2.to_m) - X(w2.from_m)).toFixed(1) + '" height="' + (H - B - T) + '" fill="#E5484D" opacity=".10"/>' +
+        lbl((X(w2.from_m) + X(w2.to_m)) / 2, T - 4, I18N.t("worst 200 m")) : "") +
+      (bandP ? '<path d="' + bandP + '" fill="var(--accent)" opacity=".16"/>' : "") + segs +
+      '<line x1="' + L0 + '" x2="' + (W - R0) + '" y1="' + (H - B) + '" y2="' + (H - B) + '" stroke="var(--hair)"/>' +
+      '<text x="' + (L0 - 4) + '" y="' + (T + 4) + '" text-anchor="end">' + U.dep(vmax / 1.12) + '</text><text x="' + (L0 - 4) + '" y="' + (H - B) + '" text-anchor="end">0</text>' +
+      (first.depth_cm != null ? lbl(X(first.d_m) + 2, Y(first.depth_cm) - 6, U.depth(first.depth_cm), "start") : "") +
+      (last.depth_cm != null ? lbl(X(last.d_m) - 2, Y(last.depth_cm) - 6, U.depth(last.depth_cm), "end") : "") +
+      (least && least !== first && least !== last && X(least.d_m) > L0 + 40 && X(least.d_m) < W - R0 - 40 ? '<circle cx="' + X(least.d_m).toFixed(1) + '" cy="' + Y(least.depth_cm).toFixed(1) + '" r="3.5" fill="var(--surface)" stroke="#E5484D" stroke-width="2"/>' + lbl(X(least.d_m), Math.min(H - B - 6, Y(least.depth_cm) + 14), I18N.t("least") + " " + U.depth(least.depth_cm)) : "") +
+      '<text x="' + L0 + '" y="' + (H - 8) + '">' + esc(I18N.t("Top")) + (top != null ? " " + U.elev(top) : "") + '</text><text x="' + (W - R0) + '" y="' + (H - 8) + '" text-anchor="end">' + esc(I18N.t("Bottom")) + (bot != null ? " " + U.elev(bot) : "") + "</text></svg>" +
+      '<div class="keyrow"><span><i style="background:#1463F3"></i>' + esc(I18N.t("good")) + '</span><span><i style="background:#F5A524"></i>' + esc(I18N.t("ok")) + '</span><span><i style="background:#E5484D"></i>' + esc(I18N.t("thin")) +
+      '</span><span><i style="background:var(--accent);opacity:.3"></i>' + esc(I18N.t("likely range")) + "</span></div>" +
+      (J.lapse && J.lapse.b_cm_per_100m != null ? '<p class="note proflapse">' + esc(I18N.tu("Locally {a} per 100 m of height", (J.lapse.b_cm_per_100m >= 0 ? "+" : "") + U.depth(Math.round(J.lapse.b_cm_per_100m)))) + (J.lapse.snowline_m ? " · " + esc(I18N.tu("snow line {a}", U.elev(J.lapse.snowline_m))) : "") + "</p>" : "");
+    const V = { well_covered: "Well covered from top to bottom.", no_snow: "Little or no snow on this run.", thin_patches: "Thin patches along the run." };
+    $("psVerdict").textContent = sm.verdict_code === "thin_lower" && sm.thin_below_m ? I18N.tu("Thin lower part below {a} m.", U.ev(sm.thin_below_m)) : V[sm.verdict_code] ? I18N.t(V[sm.verdict_code]) : "";
+    const row = (k, v) => "<tr><td>" + esc(I18N.t(k)) + "</td><td>" + v + "</td></tr>";
+    $("psKv").innerHTML = row("Length", $("psMeta").textContent.split(" · ")[0]) + (top != null ? row("Top", U.elev(top)) + row("Bottom", U.elev(bot)) : "") +
+      (sm.min != null ? row("Least snow on the run", U.depth(sm.min)) + row("Average snow on the run", U.depth(sm.mean)) : "") +
+      (sm.new24_max >= 1 ? row("New snow in 24 h", "+" + U.depth(sm.new24_max)) : "");
+    return true;
+  }
   async function pisteView(P) {
     const box = $("pbody"), id = P.id;
     const name = P.name || I18N.t("Unnamed run"), col = PCOL[P.diff] || "#7A8590";
@@ -1645,6 +1701,7 @@
       '<table class="kv" id="psKv"></table>' + stayModule(P.coords[0][1], P.coords[0][0], name, "piste") + footer();
     box.querySelector("[data-back]").onclick = () => { clearPiste(); renderPanel(); };
     afterRender();
+    if (await pisteProfileV2(P, id)) return;      // /v1/pistes/profile (height-corrected); the client sampling below is the fallback
     // resample the line every ~50 m (max 160 points), top first
     const pts = [[...P.coords[0], 0]];
     for (let i = 1; i < P.coords.length; i++) {
@@ -1799,6 +1856,103 @@
   function bindFolds(box) {
     box.querySelectorAll("details[data-fold]").forEach((d) => d.addEventListener("toggle", () => store.set("ss_fold_" + d.dataset.fold, d.open ? 1 : 0)));
   }
+  // ---- winter strip (owner 2026-11-03): today's depth among every past winter on this date. SIMPLE: one dot per past
+  // winter (x = depth on this date, colour from the snow ramp), the normal range (25-75 %) shaded, the median tick, today
+  // as a big marker with its value, the rank line; tap / Enter on a dot -> "2017–18: 142 cm". ADVANCED ("More"): the
+  // season fan (min-max, 10-90, 25-75, median, this season, today), the 5 deepest / 5 thinnest winters on this date and
+  // the pixel band (low / median / high) when the history answer has it. Data: /v1/history/point compare (v2).
+  function rampCol(cm) {
+    const R = (DATA && DATA.ramp) || [[1, [198, 219, 239]], [400, [37, 0, 79]]];
+    if (cm == null || cm < 1) return "var(--surface3)";
+    let c = R[R.length - 1][1];
+    for (let i = 0; i < R.length; i++) { if (cm <= R[i][0]) { const a = R[Math.max(0, i - 1)], b = R[i], t = i ? (cm - a[0]) / Math.max(1, b[0] - a[0]) : 1; c = a[1].map((q, k) => Math.round(q + (b[1][k] - q) * t)); break; } }
+    return "rgb(" + c.join(",") + ")";
+  }
+  function stripRank(v, ys, t) {
+    const n = t && t.rank_of ? t.rank_of - 1 : ys.length, below = t && t.rank ? t.rank_of - t.rank : ys.filter((y) => y < v - 0.5).length, snowy = ys.filter((y) => y >= 1).length;
+    if (v < 1) return snowy ? I18N.tu("No snow today · {a} of {b} winters had snow on this date", snowy, n) : I18N.tu("No snow, like all {a} winters on this date", n);
+    if (below === n) return I18N.tu("Deeper than all {a} winters", n);
+    if (below === 0) return I18N.tu("Less snow than all {a} winters", n);
+    return I18N.tu("Deeper than {a} of {b} winters", below, n);
+  }
+  function winterStrip(cp) {
+    const by = (cp && cp.by_year || []).filter((y) => y.today_cm != null);
+    const v = cp && cp.today ? cp.today.value_cm : null, nm = cp && cp.today && cp.today.normal;
+    if (by.length < 3 || v == null || !nm) return "";
+    const ys = by.map((y) => y.today_cm), mx = Math.max(10, v, ...ys) * 1.06;
+    const W = 340, H = 104, L = 14, R0 = 14, base = 78;
+    const X = (cm) => L + (Math.max(0, cm) / mx) * (W - L - R0);
+    // stack dots that would overlap (dot 9 px) in up to 4 rows above the axis
+    const rows = [], dots = by.map((y) => ({ y, x: X(y.today_cm) })).sort((a, b) => a.x - b.x);
+    for (const d of dots) { let r = 0; while (rows[r] != null && d.x - rows[r] < 9 && r < 3) r++; rows[r] = d.x; d.r = r; }
+    const sz = (s) => String(s).replace("-", "–");
+    const rank = stripRank(v, ys, cp.today);
+    let s = '<svg class="wstrip" viewBox="0 0 ' + W + " " + H + '" role="group" aria-label="' + esc(rank) + '">' +
+      '<rect x="' + X(nm.p25).toFixed(1) + '" y="' + (base - 40) + '" width="' + Math.max(2, X(nm.p75) - X(nm.p25)).toFixed(1) + '" height="46" rx="6" class="ws-iq"/>' +
+      '<line x1="' + L + '" x2="' + (W - R0) + '" y1="' + (base + 6) + '" y2="' + (base + 6) + '" class="ws-ax"/>' +
+      '<line x1="' + X(nm.p50).toFixed(1) + '" x2="' + X(nm.p50).toFixed(1) + '" y1="' + (base - 42) + '" y2="' + (base + 10) + '" class="ws-md"/>';
+    for (const d of dots) s += '<circle cx="' + d.x.toFixed(1) + '" cy="' + (base - d.r * 9) + '" r="4.2" fill="' + rampCol(d.y.today_cm) + '" class="ws-dot" tabindex="0" role="button" data-ws="' +
+      esc(sz(d.y.season) + ": " + U.depth(d.y.today_cm)) + '" aria-label="' + esc(sz(d.y.season) + ": " + U.depth(d.y.today_cm)) + '"/>';
+    const tx = X(v), lab = U.depth(v), anchor = tx > W - 50 ? "end" : tx < 50 ? "start" : "middle";
+    s += '<circle cx="' + tx.toFixed(1) + '" cy="' + (base - 10) + '" r="9" fill="' + rampCol(v) + '" class="ws-me"/>' +
+      '<line x1="' + tx.toFixed(1) + '" x2="' + tx.toFixed(1) + '" y1="20" y2="' + (base - 19) + '" class="ws-ml"/><text x="' + tx.toFixed(1) + '" y="15" text-anchor="' + anchor + '" class="ws-v">' + esc(I18N.t("Today")) + " " + esc(lab) + "</text>" +
+      '<text x="' + L + '" y="' + (H - 4) + '" class="ws-t">0</text><text x="' + (W - R0) + '" y="' + (H - 4) + '" text-anchor="end" class="ws-t">' + esc(U.depth(Math.round(mx / 1.06))) + "</text>" +
+      '<text x="' + X(nm.p50).toFixed(1) + '" y="' + (H - 4) + '" text-anchor="middle" class="ws-t">' + esc(I18N.t("usual")) + "</text></svg>";
+    return '<div class="wsbox"><p class="ws-rank">' + esc(rank) + "</p>" + s +
+      '<p class="ws-out" aria-live="polite"></p><div class="keyrow"><span><i class="kdot"></i>' + esc(I18N.t("one dot per past winter")) + '</span><span><i style="background:var(--accent-tint)"></i>' + esc(I18N.t("normal range")) +
+      '</span><span><i style="background:var(--ink)"></i>' + esc(I18N.t("today")) + "</span></div></div>";
+  }
+  function bindStrip(root) {
+    root.querySelectorAll(".wsbox").forEach((b) => {
+      const out = b.querySelector(".ws-out");
+      const pick = (el) => { b.querySelectorAll(".ws-dot.on").forEach((x) => x.classList.remove("on")); el.classList.add("on"); out.innerHTML = '<bdi dir="ltr">' + esc(el.dataset.ws) + "</bdi>"; };
+      b.querySelectorAll(".ws-dot").forEach((el) => { el.addEventListener("click", () => pick(el)); el.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(el); } }); });
+    });
+  }
+  function winterMore(h, cp, noFan) {
+    const clim = !noFan && h && h.climatology;
+    let fan = "";
+    if (clim && clim.mmdd) {
+      const keep = clim.mmdd.map((m, i) => [m, i]).filter(([m]) => m >= "10-01" || m <= "05-31");
+      const n = keep.length, idx = Object.fromEntries(keep.map(([m], k) => [m, k]));
+      const g = (key, k) => (clim[key] ? clim[key][keep[k][1]] : null);
+      const cur = (h.current || []).filter((q) => q.depth_cm != null && idx[q.date.slice(5)] != null).map((q) => [idx[q.date.slice(5)], q.depth_cm]);
+      const top = Math.max(20, ...keep.map((_, k) => g("p90", k) || 0), ...cur.map((c) => c[1])) * 1.1;
+      const W = 360, H = 170, X = (k) => (k / (n - 1)) * W, Y = (v) => H - 22 - (Math.min(v, top) / top) * (H - 30);
+      const band = (lo, hi) => { let a = "", b = ""; for (let k = 0; k < n; k++) { const l = g(lo, k), u = g(hi, k); if (l == null || u == null) continue; a += (a ? "L" : "M") + X(k).toFixed(1) + "," + Y(u).toFixed(1); b = "L" + X(k).toFixed(1) + "," + Y(l).toFixed(1) + b; } return a ? a + b + "Z" : ""; };
+      let med = ""; for (let k = 0; k < n; k++) { const v = g("p50", k); if (v != null) med += (med ? "L" : "M") + X(k).toFixed(1) + "," + Y(v).toFixed(1); }
+      const line = cur.map(([k, v], i) => (i ? "L" : "M") + X(k).toFixed(1) + "," + Y(v).toFixed(1)).join("");
+      const ti = idx[DATA.today.slice(5)], tv = cp && cp.today ? cp.today.value_cm : null;
+      const mo = [["10-01", "Oct"], ["11-01", "Nov"], ["12-01", "Dec"], ["01-01", "Jan"], ["02-01", "Feb"], ["03-01", "Mar"], ["04-01", "Apr"], ["05-01", "May"]];
+      fan = '<div class="over" style="margin-top:6px">' + esc(I18N.t("This season among past winters")) + '</div><svg class="chart" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + esc(I18N.t("This season among past winters")) + '">' +
+        '<path d="' + band("min", "max") + '" fill="var(--accent-tint)" opacity=".45"/><path d="' + band("p10", "p90") + '" fill="var(--accent-tint)" opacity=".8"/>' +
+        '<path d="' + band("p25", "p75") + '" fill="var(--accent)" opacity=".22"/><path d="' + med + '" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-dasharray="4 3"/>' +
+        (line ? '<path d="' + line + '" fill="none" stroke="var(--ink)" stroke-width="2.6" stroke-linejoin="round"/>' : "") +
+        (ti != null ? '<line x1="' + X(ti).toFixed(1) + '" x2="' + X(ti).toFixed(1) + '" y1="4" y2="' + (H - 22) + '" stroke="var(--ink3)" stroke-dasharray="2 3"/>' + (tv != null ? '<circle cx="' + X(ti).toFixed(1) + '" cy="' + Y(tv).toFixed(1) + '" r="4.5" fill="var(--ink)" stroke="var(--surface)" stroke-width="2"/>' : "") : "") +
+        mo.map(([m, t]) => (idx[m] != null ? '<text x="' + X(idx[m]).toFixed(1) + '" y="' + (H - 6) + '">' + esc(I18N.t(t)) + "</text>" : "")).join("") +
+        '<text x="' + (W - 2) + '" y="12" text-anchor="end">' + esc(U.depth(Math.round(top / 1.1))) + "</text></svg>" +
+        '<div class="keyrow"><span><i style="background:var(--ink)"></i>' + esc(I18N.t("this season")) + '</span><span><i style="background:var(--accent);opacity:.5"></i>25–75 %</span><span><i style="background:var(--accent-tint)"></i>10–90 %</span><span><i style="background:var(--accent-tint);opacity:.5"></i>' + esc(I18N.t("lowest – highest")) + "</span></div>";
+    }
+    const by = (cp && cp.by_year || []).filter((y) => y.today_cm != null);
+    let bars = "";
+    if (by.length >= 6) {
+      const srt = by.slice().sort((a, b) => b.today_cm - a.today_cm), mx = Math.max(1, srt[0].today_cm);
+      const li = (y) => '<li><span class="yr" dir="ltr">' + esc(String(y.season).replace("-", "–")) + '</span><span class="bar"><i style="width:' + Math.max(1, (y.today_cm / mx) * 100).toFixed(1) + "%;background:" + rampCol(y.today_cm) + '"></i></span><b dir="ltr">' + esc(U.depth(y.today_cm)) + "</b></li>";
+      bars = '<div class="wsbars"><div><div class="over">' + esc(I18N.t("Deepest on this date")) + '</div><ol>' + srt.slice(0, 5).map(li).join("") + '</ol></div><div><div class="over">' + esc(I18N.t("Thinnest on this date")) + "</div><ol>" + srt.slice(-5).reverse().map(li).join("") + "</ol></div></div>";
+    }
+    // pixel band (HISTORY agent, /v1/history/point `pixel`): the usual depth on this date at the low / median / high
+    // ground height of the surrounding model cell (5th / 50th / 95th percentile of the terrain)
+    const px = (h && h.pixel) || (cp && cp.pixel);
+    let pix = "";
+    const lv = px ? ["low", "median", "high"].map((k) => [k, px[k]]).filter(([, q]) => q && q.today && q.today.p50 != null && q.elev_m != null) : [];
+    if (lv.length >= 2) {
+      const NM = { low: "Low ground", median: "Middle ground", high: "High ground" }, vmx = Math.max(5, ...lv.map(([, q]) => q.today.p75 != null ? q.today.p75 : q.today.p50));
+      pix = '<div class="over" style="margin-top:12px">' + esc(I18N.t("Around this spot")) + '</div><ul class="wspix">' + lv.map(([k, q]) =>
+        '<li><span>' + esc(I18N.t(NM[k])) + ' <small dir="ltr">' + esc(U.elev(q.elev_m)) + '</small></span><span class="bar"><i class="rg" style="left:' + ((q.today.p25 || 0) / vmx * 100).toFixed(1) + "%;width:" + Math.max(1, ((q.today.p75 != null ? q.today.p75 : q.today.p50) - (q.today.p25 || 0)) / vmx * 100).toFixed(1) + '%"></i><i class="md" style="left:' + (q.today.p50 / vmx * 100).toFixed(1) + '%"></i></span><b dir="ltr">' + esc(U.depth(q.today.p50)) + "</b></li>").join("") + "</ul>" +
+        '<p class="note">' + esc(I18N.tu("Usual depth on this date at the low, middle and high ground of the area around this spot ({a} – {b}); the bar shows the normal range.", U.ev(lv[0][1].elev_m), U.elev(lv[lv.length - 1][1].elev_m))) + "</p>";
+    }
+    return fan + bars + pix;
+  }
   // today vs the same calendar day in past winters: percentile from the climatology bands, anomaly, range bar, table,
   // snowiest / leanest winter by peak (exact per-winter values on this date: progress/data_requests.md, day_values)
   function pastBlock(h, byDate, at, herr) {
@@ -1823,7 +1977,7 @@
       : v < mn ? "Less snow than every past winter on this date."
       : k10 >= 10 ? "Deeper than nearly every past winter on this date."
       : k10 <= 0 ? "Less snow than nearly every past winter on this date."
-      : cp ? I18N.tu("More snow than {a} of {b} past winters on this date.", Math.round(cp.today.percentile / 100 * cp.today.n_winters), cp.today.n_winters)
+      : cp ? I18N.tu("More snow than {a} of {b} past winters on this date.", cp.today.rank ? cp.today.rank_of - cp.today.rank : Math.round(cp.today.percentile / 100 * cp.today.n_winters), cp.today.rank_of ? cp.today.rank_of - 1 : cp.today.n_winters)
       : "Deeper than " + k10 + " of 10 past winters on this date.";
     const d = v - p50, dp = p50 >= 5 ? Math.round(100 * d / p50) : null;
     const sign = (x) => (x > 0 ? "+" : x < 0 ? "−" : "±");
@@ -1842,13 +1996,17 @@
     const row = (k, val) => "<tr><td>" + k + "</td><td>" + val + "</td></tr>";
     const far = (h.note_codes || []).includes("far_elevation");
     if (pct == null) { box.innerHTML = '<p class="verdict">' + esc(verdict) + "</p>" + (seas.length ? '<p class="note">' + esc(I18N.tu("Compared with {a} past winters.", seas.length)) + "</p>" : ""); return; }
-    box.innerHTML = '<p class="verdict">' + esc(verdict) + '</p><p class="anom">' + esc(anom) + "</p>" + bar +
+    const strip = cp ? winterStrip(cp) : "";
+    box.innerHTML = '<p class="verdict">' + esc(verdict) + '</p><p class="anom">' + esc(anom) + "</p>" + (strip || bar) +
+      (strip ? '<details class="wsmore"><summary>' + esc(I18N.t("More")) + "</summary>" + winterMore(h, cp) : "") +
       '<table class="kv">' + row("Today", U.depth(v)) + row("Usual on this date", U.depth(p50)) + row("Normal range", U.dep(p25) + "–" + U.depth(p75)) +
       row("Lowest – highest", U.dep(mn) + "–" + U.depth(mx)) +
       (cp && cp.extremes && cp.extremes.best_today && cp.extremes.best_today.cm > (cp.extremes.worst_today || {}).cm ? row("Most snow on this date", U.depth(cp.extremes.best_today.cm) + ' <small class="none">' + sz(cp.extremes.best_today) + "</small>") +
         row("Least snow on this date", U.depth(cp.extremes.worst_today.cm) + ' <small class="none">' + sz(cp.extremes.worst_today) + "</small>") : "") +
       (best ? row("Deepest winter peak", U.depth(best.max_depth_cm) + ' <small class="none">' + sz(best) + "</small>") : "") + (worst && best && worst !== best ? row("Lowest winter peak", U.depth(worst.max_depth_cm) + ' <small class="none">' + sz(worst) + "</small>") : "") + "</table>" +
-      (seas.length ? '<p class="note">' + esc(I18N.tu("Compared with {a} past winters.", seas.length)) + (far ? " " + esc(I18N.t("Past winters are estimated for the mountain around this spot, so take the comparison as a guide.")) : "") + "</p>" : "");
+      (seas.length ? '<p class="note">' + esc(I18N.tu("Compared with {a} past winters.", seas.length)) + (far ? " " + esc(I18N.t("Past winters are estimated for the mountain around this spot, so take the comparison as a guide.")) : "") + "</p>" : "") +
+      (strip ? "</details>" : "");
+    bindStrip(box);
   }
   // the nearest QC-ok measuring station (25 km, 36 h) next to the model at this spot: values, distance, height
   // difference and both last days side by side (measured at the station vs modelled here)
@@ -2197,7 +2355,7 @@
       measuredHtml(x.lat, x.lon, x.top_m || null, false) +
       '<div class="sect">Snow depth on the upper slopes, ' + U.du() + '</div><div id="rDays"></div>' +
       adSlot("resort", x) +
-      '<div class="sect">This season vs past winters</div><div id="rHist"></div>' +
+      '<div class="sect">This season vs past winters</div><div id="rStrip"></div><div id="rHist"></div>' +
       '<div class="sect">Next 7 days</div><div id="rFc"></div>' +
       stayModule(x.lat, x.lon, x.short, "panel") +
       '<div class="sect">Nearby resorts</div>' + near.map(([km, y]) => resRow(y, null, (y.snow[ti] || [])[0], U.dist(Math.round(km)), (y.snow[ti] || [])[1])).join("") + appCard() + footer();
@@ -2211,7 +2369,7 @@
     if (gs) gs.onclick = () => { const d = box.querySelector("details.stays"); if (d) { d.open = true; d.scrollIntoView({ behavior: "smooth", block: "start" }); } };
     afterRender();
     daysChart(x, res);
-    histChart(x);
+    histChart(x); resortStrip(x);
     forecast(x);
   }
   // "3D videos" card (Powder tab): the first demo cover from the static studio/demos.json, opens the 3D Studio page
@@ -2294,6 +2452,17 @@
       const days = (p.days || []).filter((d) => d.date >= addDays(DATA.today, -7) && d.date <= addDays(DATA.today, 7)).map((d) => ({ date: d.date, dep: d.depth_cm == null ? null : Math.round(d.depth_cm), nw: Math.round(d.new_cm || 0) }));
       if (days.length > stat.length && st.slug === x.slug) box.innerHTML = svgBars(days, DATA.today);
     } catch { /* keep the free days */ }
+  }
+  async function resortStrip(x) {     // the winter strip for the resort point (free /v1/history/point), same component as a point
+    const box = $("rStrip"); if (!box || !SS.S.api) return;
+    let h = null;
+    try { h = await SS.api("/v1/history/point?lat=" + x.lat + "&lon=" + x.lon, { auth: false, timeout: 20000 }); } catch { return; }
+    const cp = h && h.compare && h.compare.today ? h.compare : null;
+    if (!cp || !$("rStrip") || st.slug !== x.slug) return;
+    const strip = winterStrip(cp);
+    if (!strip) return;
+    $("rStrip").innerHTML = strip + '<details class="wsmore"><summary>' + esc(I18N.t("More")) + "</summary>" + winterMore(h, cp, true) + "</details>";
+    bindStrip($("rStrip"));
   }
   async function histChart(x) {
     const box = $("rHist");
@@ -2421,6 +2590,7 @@
     map.on("sourcedata", (e) => { if (e && e.sourceId && String(e.sourceId).startsWith("m_s30_") && e.isSourceLoaded && map.getSource(e.sourceId)) { st.s30loaded = true; chip30(); } });
     map.on("zoom", chip30);
     map.on("moveend", () => {
+      if (SS.S.scope && SS.proHere(map.getCenter()) !== st.pro) onAccount(SS.S);   // regional Pro: entered / left the Atlas
       chip30();
       if (!st.slug && !regionMove) history.replaceState(history.state, "", location.pathname + location.search + "#@" + map.getCenter().lat.toFixed(3) + "," + map.getCenter().lng.toFixed(3) + "," + map.getZoom().toFixed(1));
       regionMove = false;

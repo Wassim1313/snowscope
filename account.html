@@ -30,7 +30,7 @@
   const { esc, Auth } = SS, box = document.getElementById("acc");
   const S = await SS.start();
   let note = location.hash === "#verify" ? "We sent you an e-mail. Click the link in it to confirm your address." : "";
-  const date = (s) => s ? new Date(s).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" }) : "";
+  const date = (s) => s ? new Date(s).toLocaleDateString((window.I18N && I18N.locale) || "en-GB", { day: "numeric", month: "long", year: "numeric" }) : "";
   function draw() {
     if (!Auth.enabled()) { box.innerHTML = '<h1>Your account</h1><div class="card"><p>Signing in on the website is coming soon. Your account and Pro are in the SnowScope app.</p><a class="btn ski" style="margin-top:8px" href="' + esc(SS.appUrl()) + '">Get the app</a></div>'; return; }
     const u = S.user;

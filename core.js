@@ -98,7 +98,13 @@
     if (auth && S.idToken) headers.Authorization = "Bearer " + S.idToken;
     try {
       const r = await fetch(S.api + path, { headers, signal: ctl.signal });
-      if (r.status === 402) { const e = new Error("pro_required"); e.status = 402; throw e; }
+      if (r.status === 402) {
+        // regional Pro (Morocco lifetime = High Atlas only): {reason:"pro_scope", scope:["ATLAS"], upsell:"subscription"}
+        let b = null; try { b = await r.json(); } catch { /* no body */ }
+        const d = b && (typeof b.detail === "object" && b.detail ? b.detail : b);
+        const scoped = !!d && (d.reason === "pro_scope" || d.detail === "pro_scope");
+        const e = new Error(scoped ? "pro_scope" : "pro_required"); e.status = 402; e.scope = scoped ? d.scope : null; throw e;
+      }
       if (r.status >= 500 || r.status === 429) { const e = new Error("down"); e.down = true; e.status = r.status; throw e; }
       if (!r.ok) { const e = new Error("HTTP " + r.status); e.status = r.status; throw e; }
       return await r.json();
@@ -233,11 +239,14 @@
       S.me = me;
       const acc = me.account || {}, ent = me.entitlement || {};
       S.pro = acc.tier === "premium" || ent.tier === "premium" || me.gating === false;
+      // where Pro applies (owner 2026-11-03): null = everywhere; ["ATLAS"] = the Morocco lifetime (High Atlas only)
+      S.scope = me.gating !== false && Array.isArray(ent.scope) && ent.scope.length ? ent.scope.map((x) => String(x).toUpperCase()) : null;
       S.noAds = S.pro || !!ent.no_ads;
       S.state = "ok";
       store.set("ss_ent", { uid: S.user.uid, pro: S.pro, noAds: S.noAds, t: Date.now() });
     } catch (e) {
       S.me = null;
+      S.scope = null;
       if (e.status === 401) { S.state = "no_account"; S.pro = false; S.noAds = false; store.set("ss_ent", null); }
       else {   // API / tunnel down: keep the last known answer for ads only (no Pro data without the API)
         S.state = "api_down";
@@ -423,9 +432,24 @@
   }
   const head = (t) => '<div class="hd"><h2>' + t + '</h2><button class="x" data-close aria-label="Close"><span class="ms">close</span></button></div>';
 
+  // Regional Pro (owner 2026-11-03): the Morocco lifetime covers the High Atlas only (engine/domains.py ATLAS box).
+  const SCOPE_BOX = { ATLAS: [-10.5, 29.0, -1.5, 36.0] };
+  /** Pro at this place ({lat, lng|lon}); everywhere for subscriptions / comp / gating off. */
+  function proHere(c) {
+    if (!S.pro) return false;
+    if (!S.scope) return true;
+    const lat = c && +c.lat, lon = c && +(c.lng != null ? c.lng : c.lon);
+    if (!c || !isFinite(lat) || !isFinite(lon)) return false;
+    return S.scope.some((k) => { const b = SCOPE_BOX[k]; return !!b && lon >= b[0] && lat >= b[1] && lon <= b[2] && lat <= b[3]; });
+  }
+  /** Pro for a domain / region code ("ATLAS", "ALPS", ...). */
+  const proIn = (code) => !!S.pro && (!S.scope || S.scope.includes(String(code || "").toUpperCase()));
+
   function upsell(what) {
+    const scoped = !!(S.pro && S.scope);
     const m = modal(head('<span class="pro"><span class="ms f">lock</span>PRO</span>') +
       '<p style="font-size:17px;font-weight:620;margin:6px 0 4px">' + esc(what || "This is a Pro feature") + "</p>" +
+      (scoped ? '<p style="margin:0 0 10px"><b>Your Pro covers the High Atlas. Get Pro everywhere</b> (Alps, Pyrenees, North America…) with a subscription.</p>' : "") +
       '<p style="color:var(--ink2);margin:0 0 14px">SnowScope Pro adds the sharper snow map, 15 days instead of 5, new snow, wind, freezing level, satellite snow and the 7-day resort forecast, without ads. Get it in the Android app, then sign in here with the same account.</p>' +
       (window.SSPay && SSPay.enabled() ? '<button class="btn ski big full" data-buy-pro><span class="ms f">workspace_premium</span>Get Pro</button>' +
         '<a class="btn ghost big full" style="margin-top:8px" href="' + esc(appUrl()) + '"><span class="ms f">downhill_skiing</span>Get the Android app</a>'
@@ -621,6 +645,6 @@
     return S;
   }
 
-  window.SS = { U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
+  window.SS = { proHere, proIn, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
                 resorts, mapLib, transformRequest, onChange: (f) => S.listeners.push(f), store, ROOT };
 })();
