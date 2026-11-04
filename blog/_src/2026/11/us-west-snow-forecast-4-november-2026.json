@@ -1,0 +1,795 @@
+{
+ "id": "2026-11-04-us_west-coming",
+ "slug": "us-west-snow-forecast-4-november-2026",
+ "date": "2026-11-04",
+ "published_utc": "2026-11-04T14:49:22Z",
+ "updated_utc": "2026-11-04T14:49:22Z",
+ "region": "US_WEST",
+ "angle": "coming",
+ "score": 70.0,
+ "signature": "mt_baker:40|crystal_mountain:10|stevens_pass:10",
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "snow_forecast",
+  "region": "US West",
+  "date": "2026-11-04",
+  "weekday": "Wednesday",
+  "model_run": "2026-11-04",
+  "forecast_days": [
+   "2026-11-05",
+   "2026-11-06",
+   "2026-11-07"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 224030,
+   "resorts_with_snow": 149,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-02",
+   "snow_covered_area_km2": 289090,
+   "resorts_with_snow": 159
+  },
+  "region_forecast": {
+   "date": "2026-11-07",
+   "snow_covered_area_km2": 178500,
+   "resorts_with_snow": 131
+  },
+  "question": "Where will new snow fall in the next days, and at which height?",
+  "resorts": [
+   {
+    "name": "Mt Baker",
+    "country": "United States",
+    "top_m": 1556,
+    "base_m": 1106,
+    "depth_cm_upper_slopes_today": 36,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 44,
+    "slug": "mt_baker",
+    "new_cm_by_day": {
+     "2026-11-02": 0,
+     "2026-11-03": 0,
+     "2026-11-04": 0,
+     "2026-11-05": 17,
+     "2026-11-06": 13,
+     "2026-11-07": 14
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1106,
+      "depth_cm_model": 7,
+      "new_cm_next_7_days": 3
+     },
+     "mid": {
+      "elev_m": 1331,
+      "depth_cm_model": 12,
+      "new_cm_next_7_days": 25
+     },
+     "top": {
+      "elev_m": 1556,
+      "depth_cm_model": 19,
+      "new_cm_next_7_days": 35
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-04": {
+      "min": 1500,
+      "max": 2650
+     },
+     "2026-11-05": {
+      "min": 1280,
+      "max": 1650
+     },
+     "2026-11-06": {
+      "min": 1290,
+      "max": 2730
+     },
+     "2026-11-07": {
+      "min": 2320,
+      "max": 2710
+     }
+    },
+    "past_winters": {
+     "height_m": 1331,
+     "snow_cm_at_this_height_today_model": 8,
+     "deeper_than_n_of_past_winters": 26,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 7
+    },
+    "nearest_station": {
+     "station": "Wells Creek",
+     "elev_m": 1231,
+     "depth_cm_measured": 13,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 9.2
+    }
+   },
+   {
+    "name": "Crystal Mountain",
+    "country": "United States",
+    "top_m": 2072,
+    "base_m": 1344,
+    "depth_cm_upper_slopes_today": 21,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 14,
+    "slug": "crystal_mountain",
+    "new_cm_by_day": {
+     "2026-11-02": 0,
+     "2026-11-03": 0,
+     "2026-11-04": 0,
+     "2026-11-05": 5,
+     "2026-11-06": 5,
+     "2026-11-07": 4
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1344,
+      "depth_cm_model": 5,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 1708,
+      "depth_cm_model": 12,
+      "new_cm_next_7_days": 8
+     },
+     "top": {
+      "elev_m": 2072,
+      "depth_cm_model": 19,
+      "new_cm_next_7_days": 12
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-04": {
+      "min": 1900,
+      "max": 2800
+     },
+     "2026-11-05": {
+      "min": 1520,
+      "max": 2660
+     },
+     "2026-11-06": {
+      "min": 2180,
+      "max": 3260
+     },
+     "2026-11-07": {
+      "min": 2660,
+      "max": 3210
+     }
+    },
+    "past_winters": {
+     "height_m": 1708,
+     "snow_cm_at_this_height_today_model": 17,
+     "deeper_than_n_of_past_winters": 31,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 8
+    },
+    "nearest_station": {
+     "station": "Morse Lake",
+     "elev_m": 1646,
+     "depth_cm_measured": 30,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 3.3
+    }
+   },
+   {
+    "name": "Stevens Pass",
+    "country": "United States",
+    "top_m": 1727,
+    "base_m": 1166,
+    "depth_cm_upper_slopes_today": 23,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 14,
+    "slug": "stevens_pass",
+    "new_cm_by_day": {
+     "2026-11-02": 0,
+     "2026-11-03": 0,
+     "2026-11-04": 0,
+     "2026-11-05": 7,
+     "2026-11-06": 6,
+     "2026-11-07": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1166,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 1446,
+      "depth_cm_model": 11,
+      "new_cm_next_7_days": 7
+     },
+     "top": {
+      "elev_m": 1727,
+      "depth_cm_model": 19,
+      "new_cm_next_7_days": 12
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-04": {
+      "min": 1220,
+      "max": 2780
+     },
+     "2026-11-05": {
+      "min": 1510,
+      "max": 1910
+     },
+     "2026-11-06": {
+      "min": 1220,
+      "max": 2770
+     },
+     "2026-11-07": {
+      "min": 2460,
+      "max": 2980
+     }
+    },
+    "past_winters": {
+     "height_m": 1446,
+     "snow_cm_at_this_height_today_model": 9,
+     "deeper_than_n_of_past_winters": 24,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 9
+    },
+    "nearest_station": {
+     "station": "Stevens Pass",
+     "elev_m": 1201,
+     "depth_cm_measured": 5,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 1.0
+    }
+   },
+   {
+    "name": "Monarch Mountain",
+    "country": "United States",
+    "top_m": 3598,
+    "base_m": 3260,
+    "depth_cm_upper_slopes_today": 19,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 9,
+    "new_cm_forecast_next_days": 13,
+    "slug": "monarch_mountain",
+    "new_cm_by_day": {
+     "2026-11-02": 7,
+     "2026-11-03": 0,
+     "2026-11-04": 2,
+     "2026-11-05": 13,
+     "2026-11-06": 0,
+     "2026-11-07": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3260,
+      "depth_cm_model": 5,
+      "new_cm_next_7_days": 11
+     },
+     "mid": {
+      "elev_m": 3429,
+      "depth_cm_model": 10,
+      "new_cm_next_7_days": 12
+     },
+     "top": {
+      "elev_m": 3598,
+      "depth_cm_model": 14,
+      "new_cm_next_7_days": 13
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-04": {
+      "min": 2530,
+      "max": 3510
+     },
+     "2026-11-05": {
+      "min": 1890,
+      "max": 3420
+     },
+     "2026-11-06": {
+      "min": 2250,
+      "max": 3330
+     },
+     "2026-11-07": {
+      "min": 2070,
+      "max": 2220
+     }
+    },
+    "past_winters": {
+     "height_m": 3429,
+     "snow_cm_at_this_height_today_model": 14,
+     "deeper_than_n_of_past_winters": 27,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 11
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-27"
+    },
+    "nearest_station": {
+     "station": "Porphyry Creek",
+     "elev_m": 3289,
+     "depth_cm_measured": 0,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 3.2
+    }
+   },
+   {
+    "name": "Sahalie Ski Club",
+    "country": "United States",
+    "top_m": 934,
+    "base_m": 901,
+    "depth_cm_upper_slopes_today": 19,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 13,
+    "slug": "sahalie_ski_club",
+    "new_cm_by_day": {
+     "2026-11-02": 0,
+     "2026-11-03": 0,
+     "2026-11-04": 0,
+     "2026-11-05": 8,
+     "2026-11-06": 5,
+     "2026-11-07": 0
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-snow-forecast-4-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-snow-forecast-4-november-2026/map_t.webp",
+   "bytes": 31078
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">2/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">17</text><rect x=\"475\" y=\"36\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"532\" y=\"49\" class=\"vl\">13</text><rect x=\"555\" y=\"36\" width=\"58\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"610\" y=\"49\" text-anchor=\"end\" class=\"vl in\">14</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Crystal Mountain</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"419\" y=\"83\" class=\"vl\">5</text><rect x=\"475\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"83\" class=\"vl\">5</text><rect x=\"555\" y=\"70\" width=\"16\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"574\" y=\"83\" class=\"vl\">4</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Stevens Pass</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"427\" y=\"117\" class=\"vl\">7</text><rect x=\"475\" y=\"104\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"503\" y=\"117\" class=\"vl\">6</text><rect x=\"555\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"562\" y=\"117\" class=\"vl\">1</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"138\" width=\"29\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"187\" y=\"151\" class=\"vl\">7</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"452\" y=\"151\" class=\"vl\">13</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Sahalie Ski Club</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"33\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"431\" y=\"185\" class=\"vl\">8</text><rect x=\"475\" y=\"172\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">2/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">17</text><rect x=\"475\" y=\"36\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"532\" y=\"49\" class=\"vl\">13</text><rect x=\"555\" y=\"36\" width=\"58\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"610\" y=\"49\" text-anchor=\"end\" class=\"vl in\">14</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Crystal Mountain</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"419\" y=\"83\" class=\"vl\">5</text><rect x=\"475\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"83\" class=\"vl\">5</text><rect x=\"555\" y=\"70\" width=\"16\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"574\" y=\"83\" class=\"vl\">4</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Stevens Pass</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"427\" y=\"117\" class=\"vl\">7</text><rect x=\"475\" y=\"104\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"503\" y=\"117\" class=\"vl\">6</text><rect x=\"555\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"562\" y=\"117\" class=\"vl\">1</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"138\" width=\"29\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"187\" y=\"151\" class=\"vl\">7</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"452\" y=\"151\" class=\"vl\">13</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Sahalie Ski Club</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"33\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"431\" y=\"185\" class=\"vl\">8</text><rect x=\"475\" y=\"172\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">2.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">17</text><rect x=\"475\" y=\"36\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"532\" y=\"49\" class=\"vl\">13</text><rect x=\"555\" y=\"36\" width=\"58\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"610\" y=\"49\" text-anchor=\"end\" class=\"vl in\">14</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Crystal Mountain</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"419\" y=\"83\" class=\"vl\">5</text><rect x=\"475\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"83\" class=\"vl\">5</text><rect x=\"555\" y=\"70\" width=\"16\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"574\" y=\"83\" class=\"vl\">4</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Stevens Pass</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"427\" y=\"117\" class=\"vl\">7</text><rect x=\"475\" y=\"104\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"503\" y=\"117\" class=\"vl\">6</text><rect x=\"555\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"562\" y=\"117\" class=\"vl\">1</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"138\" width=\"29\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"187\" y=\"151\" class=\"vl\">7</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"452\" y=\"151\" class=\"vl\">13</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Sahalie Ski Club</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"33\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"431\" y=\"185\" class=\"vl\">8</text><rect x=\"475\" y=\"172\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">2/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">17</text><rect x=\"475\" y=\"36\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"532\" y=\"49\" class=\"vl\">13</text><rect x=\"555\" y=\"36\" width=\"58\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"610\" y=\"49\" text-anchor=\"end\" class=\"vl in\">14</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Crystal Mountain</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"419\" y=\"83\" class=\"vl\">5</text><rect x=\"475\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"83\" class=\"vl\">5</text><rect x=\"555\" y=\"70\" width=\"16\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"574\" y=\"83\" class=\"vl\">4</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Stevens Pass</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"427\" y=\"117\" class=\"vl\">7</text><rect x=\"475\" y=\"104\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"503\" y=\"117\" class=\"vl\">6</text><rect x=\"555\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"562\" y=\"117\" class=\"vl\">1</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"138\" width=\"29\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"187\" y=\"151\" class=\"vl\">7</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"452\" y=\"151\" class=\"vl\">13</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Sahalie Ski Club</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"33\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"431\" y=\"185\" class=\"vl\">8</text><rect x=\"475\" y=\"172\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">2/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">17</text><rect x=\"475\" y=\"36\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"532\" y=\"49\" class=\"vl\">13</text><rect x=\"555\" y=\"36\" width=\"58\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"610\" y=\"49\" text-anchor=\"end\" class=\"vl in\">14</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Crystal Mountain</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"419\" y=\"83\" class=\"vl\">5</text><rect x=\"475\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"83\" class=\"vl\">5</text><rect x=\"555\" y=\"70\" width=\"16\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"574\" y=\"83\" class=\"vl\">4</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Stevens Pass</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"427\" y=\"117\" class=\"vl\">7</text><rect x=\"475\" y=\"104\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"503\" y=\"117\" class=\"vl\">6</text><rect x=\"555\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"562\" y=\"117\" class=\"vl\">1</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"138\" width=\"29\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"187\" y=\"151\" class=\"vl\">7</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"452\" y=\"151\" class=\"vl\">13</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Sahalie Ski Club</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"33\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"431\" y=\"185\" class=\"vl\">8</text><rect x=\"475\" y=\"172\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">2/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">17</text><rect x=\"475\" y=\"36\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"532\" y=\"49\" class=\"vl\">13</text><rect x=\"555\" y=\"36\" width=\"58\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"610\" y=\"49\" text-anchor=\"end\" class=\"vl in\">14</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Crystal Mountain</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"419\" y=\"83\" class=\"vl\">5</text><rect x=\"475\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"83\" class=\"vl\">5</text><rect x=\"555\" y=\"70\" width=\"16\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"574\" y=\"83\" class=\"vl\">4</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Stevens Pass</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"427\" y=\"117\" class=\"vl\">7</text><rect x=\"475\" y=\"104\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"503\" y=\"117\" class=\"vl\">6</text><rect x=\"555\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"562\" y=\"117\" class=\"vl\">1</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"138\" width=\"29\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"187\" y=\"151\" class=\"vl\">7</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"452\" y=\"151\" class=\"vl\">13</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Sahalie Ski Club</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"33\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"431\" y=\"185\" class=\"vl\">8</text><rect x=\"475\" y=\"172\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Snow forecast in the US West: up to 17 in at Mt Baker by 7 November",
+   "description": "Until 7 November, our forecast gives 17 in (44 cm) at Mt Baker, 6 in (14 cm) at Crystal Mountain and 6 in (14 cm) at Stevens Pass. Resort numbers are …",
+   "lede": "Until 7 November, our forecast gives 17 in (44 cm) at Mt Baker, 6 in (14 cm) at Crystal Mountain and 6 in (14 cm) at Stevens Pass. Resort numbers are model estimates for the upper slopes; station numbers are measurements at one point, on the date shown.",
+   "sections": [
+    {
+     "h": "What is coming next",
+     "p": [
+      "Until 7 November, our forecast gives 5 in (13 cm) at Monarch Mountain and 5 in (13 cm) at Sahalie Ski Club.",
+      "The snow cover shrank from 111,618 sq mi (289,090 km²) on 2 November to 86,498 sq mi (224,030 km²) today, and our forecast gives 68,919 sq mi (178,500 km²) on 7 November."
+     ]
+    },
+    {
+     "h": "Which height to ski",
+     "p": [
+      "At Mt Baker, the freezing level reaches 4,232 ft (1,290 m) to 8,957 ft (2,730 m) on 6 November, above the top of the resort (5,105 ft / 1,556 m): rain or wet snow is possible on every slope that day.",
+      "At Crystal Mountain, the freezing level reaches 7,152 ft (2,180 m) to 10,696 ft (3,260 m) on 6 November, above the top of the resort (6,798 ft / 2,072 m): rain or wet snow is possible on every slope that day.",
+      "At Stevens Pass, the freezing level reaches 8,071 ft (2,460 m) to 9,777 ft (2,980 m) on 7 November, above the top of the resort (5,666 ft / 1,727 m): rain or wet snow is possible on every slope that day.",
+      "Height matters: at Mt Baker, our model gives 7 in (19 cm) at the top (5,105 ft / 1,556 m), 5 in (12 cm) at mid-mountain (4,367 ft / 1,331 m) and 3 in (7 cm) at the base (3,629 ft / 1,106 m)."
+     ]
+    },
+    {
+     "h": "Today's snow",
+     "p": [
+      "Of these resorts, Mt Baker has the most snow on its upper slopes today, about 14 in (36 cm); then come Stevens Pass 9 in (23 cm) and Crystal Mountain 8 in (21 cm).",
+      "Our snow model shows 86,498 sq mi (224,030 km²) of snow-covered ground in the US West today, with snow at 149 of 195 resorts."
+     ]
+    },
+    {
+     "h": "Safety and avalanche level",
+     "p": [
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Forecasts a few days ahead can change: look at the map again the day before you travel.",
+    "Where the freezing level goes above the resort, plan for wet snow and use the highest lifts.",
+    "Fresh snow is best in the first hours after it stops: go early, before the sun and the crowds.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Mt Baker gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the US West on 4 November 2026 (SnowScope snow model): Mt Baker, Crystal Mountain, Stevens Pass, Monarch Mountain, Sahalie Ski Club.",
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast)."
+   }
+  },
+  "fr": {
+   "title": "Prévisions neige dans l'Ouest américain : jusqu'à 17 in à Mt Baker d'ici le 7 novembre",
+   "description": "D'ici le 7 novembre, notre prévision donne 17 in (44 cm) à Mt Baker, 6 in (14 cm) à Crystal Mountain et 6 in (14 cm) à Stevens Pass. Les chiffres des …",
+   "lede": "D'ici le 7 novembre, notre prévision donne 17 in (44 cm) à Mt Baker, 6 in (14 cm) à Crystal Mountain et 6 in (14 cm) à Stevens Pass. Les chiffres des stations de ski sont des estimations du modèle pour le haut du domaine ; ceux des stations de mesure sont mesurés en un point, à la date indiquée.",
+   "sections": [
+    {
+     "h": "Ce qui arrive",
+     "p": [
+      "D'ici le 7 novembre, notre prévision donne 5 in (13 cm) à Monarch Mountain et 5 in (13 cm) à Sahalie Ski Club.",
+      "La surface enneigée est passée de 111 618 sq mi (289 090 km²) le 2 novembre à 86 498 sq mi (224 030 km²) aujourd'hui, et notre prévision donne 68 919 sq mi (178 500 km²) le 7 novembre."
+     ]
+    },
+    {
+     "h": "Altitude, pentes et limite pluie-neige",
+     "p": [
+      "À Mt Baker, l'isotherme 0 °C monte entre 4 232 ft (1 290 m) et 8 957 ft (2 730 m) le 6 novembre, au-dessus du sommet de la station (5 105 ft / 1 556 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là.",
+      "À Crystal Mountain, l'isotherme 0 °C monte entre 7 152 ft (2 180 m) et 10 696 ft (3 260 m) le 6 novembre, au-dessus du sommet de la station (6 798 ft / 2 072 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là.",
+      "À Stevens Pass, l'isotherme 0 °C monte entre 8 071 ft (2 460 m) et 9 777 ft (2 980 m) le 7 novembre, au-dessus du sommet de la station (5 666 ft / 1 727 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là.",
+      "L'altitude compte : à Mt Baker, notre modèle donne 7 in (19 cm) au sommet (5 105 ft / 1 556 m), 5 in (12 cm) à mi-pente (4 367 ft / 1 331 m) et 3 in (7 cm) en bas (3 629 ft / 1 106 m)."
+     ]
+    },
+    {
+     "h": "Où est la neige aujourd'hui",
+     "p": [
+      "Parmi ces stations, Mt Baker a le plus de neige sur le haut du domaine aujourd'hui, environ 14 in (36 cm) ; suivent Stevens Pass 9 in (23 cm) et Crystal Mountain 8 in (21 cm).",
+      "149 stations sur 195 dans l'Ouest américain ont de la neige sur le haut du domaine aujourd'hui, et notre modèle compte 86 498 sq mi (224 030 km²) de surface enneigée."
+     ]
+    },
+    {
+     "h": "Sécurité et risque d'avalanche",
+     "p": [
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ.",
+    "Là où l'isotherme 0 °C passe au-dessus de la station, prévoyez une neige mouillée et skiez sur les remontées les plus hautes.",
+    "La neige fraîche est la meilleure dans les premières heures : partez tôt, avant le soleil et la foule.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Mt Baker reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest américain le 4 novembre 2026 (modèle de neige SnowScope) : Mt Baker, Crystal Mountain, Stevens Pass, Monarch Mountain, Sahalie Ski Club.",
+    "bars": "Neige fraîche par jour dans les stations en tête (jours passés : modèle ; barres claires : prévision)."
+   }
+  },
+  "de": {
+   "title": "Schneeprognose im US-Westen: bis zu 17 in in Mt Baker bis zum 7. November",
+   "description": "Bis zum 7. November ergibt unsere Prognose 17 in (44 cm) in Mt Baker, 6 in (14 cm) in Crystal Mountain und 6 in (14 cm) in Stevens Pass. Die Werte …",
+   "lede": "Bis zum 7. November ergibt unsere Prognose 17 in (44 cm) in Mt Baker, 6 in (14 cm) in Crystal Mountain und 6 in (14 cm) in Stevens Pass. Die Werte der Skigebiete sind Modellschätzungen für die oberen Hänge; Messstationen messen an einem Punkt, am angegebenen Tag.",
+   "sections": [
+    {
+     "h": "Was als Nächstes kommt",
+     "p": [
+      "Bis zum 7. November ergibt unsere Prognose 5 in (13 cm) in Monarch Mountain und 5 in (13 cm) in Sahalie Ski Club.",
+      "Die Schneefläche schrumpfte von 111.618 sq mi (289.090 km²) am 2. November auf heute 86.498 sq mi (224.030 km²), und unsere Prognose ergibt 68.919 sq mi (178.500 km²) am 7. November."
+     ]
+    },
+    {
+     "h": "Höhe, Hänge und Schneefallgrenze",
+     "p": [
+      "In Mt Baker liegt die Nullgradgrenze am 6. November zwischen 4.232 ft (1.290 m) und 8.957 ft (2.730 m), über dem höchsten Punkt des Skigebiets (5.105 ft (1.556 m)): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich.",
+      "In Crystal Mountain liegt die Nullgradgrenze am 6. November zwischen 7.152 ft (2.180 m) und 10.696 ft (3.260 m), über dem höchsten Punkt des Skigebiets (6.798 ft (2.072 m)): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich.",
+      "In Stevens Pass liegt die Nullgradgrenze am 7. November zwischen 8.071 ft (2.460 m) und 9.777 ft (2.980 m), über dem höchsten Punkt des Skigebiets (5.666 ft (1.727 m)): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich.",
+      "Die Höhe macht den Unterschied: In Mt Baker zeigt unser Modell 7 in (19 cm) am Gipfel (5.105 ft / 1.556 m), 5 in (12 cm) an der Mittelstation (4.367 ft / 1.331 m) und 3 in (7 cm) im Tal (3.629 ft / 1.106 m)."
+     ]
+    },
+    {
+     "h": "Wo heute Schnee liegt",
+     "p": [
+      "Von diesen Skigebieten hat Mt Baker heute den meisten Schnee in den oberen Hängen, etwa 14 in (36 cm); danach folgen Stevens Pass 9 in (23 cm) und Crystal Mountain 8 in (21 cm).",
+      "149 von 195 Skigebieten im US-Westen haben heute Schnee in den oberen Hängen, und unser Modell zählt 86.498 sq mi (224.030 km²) Schneefläche."
+     ]
+    },
+    {
+     "h": "Sicherheit und Lawinengefahr",
+     "p": [
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte.",
+    "Wo die Nullgradgrenze über das Skigebiet steigt, rechne mit nassem Schnee und fahr an den höchsten Liften.",
+    "Neuschnee ist in den ersten Stunden am besten: Starte früh, vor der Sonne und dem Andrang.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Mt Baker Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe im US-Westen am 4. November 2026 (SnowScope-Schneemodell): Mt Baker, Crystal Mountain, Stevens Pass, Monarch Mountain, Sahalie Ski Club.",
+    "bars": "Neuschnee pro Tag in den führenden Skigebieten (vergangene Tage: Modell; helle Balken: Prognose)."
+   }
+  },
+  "it": {
+   "title": "Previsioni neve nell'Ovest degli USA: fino a 17 in a Mt Baker entro il 7 novembre",
+   "description": "Fino al 7 novembre la nostra previsione indica 17 in (44 cm) a Mt Baker, 6 in (14 cm) a Crystal Mountain e 6 in (14 cm) a Stevens Pass. I valori …",
+   "lede": "Fino al 7 novembre la nostra previsione indica 17 in (44 cm) a Mt Baker, 6 in (14 cm) a Crystal Mountain e 6 in (14 cm) a Stevens Pass. I valori delle località sono stime del modello per i pendii superiori; le stazioni misurano in un punto, alla data indicata.",
+   "sections": [
+    {
+     "h": "Cosa arriva",
+     "p": [
+      "Fino al 7 novembre la nostra previsione indica 5 in (13 cm) a Monarch Mountain e 5 in (13 cm) a Sahalie Ski Club.",
+      "La superficie innevata è passata da 111.618 sq mi (289.090 km²) il 2 novembre a 86.498 sq mi (224.030 km²) oggi, e la nostra previsione indica 68.919 sq mi (178.500 km²) il 7 novembre."
+     ]
+    },
+    {
+     "h": "Quota, pendii e quota neve",
+     "p": [
+      "A Mt Baker lo zero termico sale tra 4.232 ft (1.290 m) e 8.957 ft (2.730 m) il 6 novembre, sopra la quota massima della località (5.105 ft (1.556 m)): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii.",
+      "A Crystal Mountain lo zero termico sale tra 7.152 ft (2.180 m) e 10.696 ft (3.260 m) il 6 novembre, sopra la quota massima della località (6.798 ft (2.072 m)): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii.",
+      "A Stevens Pass lo zero termico sale tra 8.071 ft (2.460 m) e 9.777 ft (2.980 m) il 7 novembre, sopra la quota massima della località (5.666 ft (1.727 m)): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii.",
+      "La quota conta: a Mt Baker il nostro modello indica 7 in (19 cm) in vetta (5.105 ft / 1.556 m), 5 in (12 cm) a metà montagna (4.367 ft / 1.331 m) e 3 in (7 cm) alla base (3.629 ft / 1.106 m)."
+     ]
+    },
+    {
+     "h": "Dove c'è neve oggi",
+     "p": [
+      "Tra queste località, Mt Baker ha oggi più neve sui pendii superiori, circa 14 in (36 cm); seguono Stevens Pass 9 in (23 cm) e Crystal Mountain 8 in (21 cm).",
+      "149 località su 195 nell'Ovest degli USA hanno oggi neve sui pendii superiori, e il nostro modello conta 86.498 sq mi (224.030 km²) di superficie innevata."
+     ]
+    },
+    {
+     "h": "Sicurezza e pericolo valanghe",
+     "p": [
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire.",
+    "Dove lo zero termico sale sopra la località, aspettati neve bagnata e usa gli impianti più alti.",
+    "La neve fresca è migliore nelle prime ore: parti presto, prima del sole e della folla.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Mt Baker riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve nell'Ovest degli USA il 4 novembre 2026 (modello neve SnowScope): Mt Baker, Crystal Mountain, Stevens Pass, Monarch Mountain, Sahalie Ski Club.",
+    "bars": "Neve fresca al giorno nelle località in testa (giorni passati: modello; barre chiare: previsione)."
+   }
+  },
+  "es": {
+   "title": "Previsión de nieve en el oeste de EE. UU.: hasta 17 in en Mt Baker hasta el 7 de noviembre",
+   "description": "Hasta el 7 de noviembre, nuestra previsión da 17 in (44 cm) en Mt Baker, 6 in (14 cm) en Crystal Mountain y 6 in (14 cm) en Stevens Pass. Las cifras …",
+   "lede": "Hasta el 7 de noviembre, nuestra previsión da 17 in (44 cm) en Mt Baker, 6 in (14 cm) en Crystal Mountain y 6 in (14 cm) en Stevens Pass. Las cifras de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida miden en un punto, en la fecha indicada.",
+   "sections": [
+    {
+     "h": "Lo que viene",
+     "p": [
+      "Hasta el 7 de noviembre, nuestra previsión da 5 in (13 cm) en Monarch Mountain y 5 in (13 cm) en Sahalie Ski Club.",
+      "La superficie nevada pasó de 111.618 sq mi (289.090 km²) el 2 de noviembre a 86.498 sq mi (224.030 km²) hoy, y nuestra previsión da 68.919 sq mi (178.500 km²) el 7 de noviembre."
+     ]
+    },
+    {
+     "h": "Altitud, laderas y cota de nieve",
+     "p": [
+      "En Mt Baker, la cota de congelación llega a 4232 ft (1290 m)-8957 ft (2730 m) el 6 de noviembre, por encima de la cota alta de la estación (5105 ft (1556 m)): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
+      "En Crystal Mountain, la cota de congelación llega a 7152 ft (2180 m)-10.696 ft (3260 m) el 6 de noviembre, por encima de la cota alta de la estación (6798 ft (2072 m)): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
+      "En Stevens Pass, la cota de congelación llega a 8071 ft (2460 m)-9777 ft (2980 m) el 7 de noviembre, por encima de la cota alta de la estación (5666 ft (1727 m)): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
+      "La altitud cuenta: en Mt Baker, nuestro modelo da 7 in (19 cm) en la cota alta (5105 ft / 1556 m), 5 in (12 cm) a media montaña (4367 ft / 1331 m) y 3 in (7 cm) en la base (3629 ft / 1106 m)."
+     ]
+    },
+    {
+     "h": "Dónde está la nieve hoy",
+     "p": [
+      "De estas estaciones, Mt Baker tiene hoy más nieve en las pistas altas, unos 14 in (36 cm); después vienen Stevens Pass 9 in (23 cm) y Crystal Mountain 8 in (21 cm).",
+      "149 de 195 estaciones en el oeste de EE. UU. tienen hoy nieve en las pistas altas, y nuestro modelo cuenta 86.498 sq mi (224.030 km²) de superficie nevada."
+     ]
+    },
+    {
+     "h": "Seguridad y peligro de aludes",
+     "p": [
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar.",
+    "Donde la cota de congelación suba por encima de la estación, cuenta con nieve húmeda y usa los remontes más altos.",
+    "La nieve nueva es mejor en las primeras horas: sal temprano, antes del sol y de la gente.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Mt Baker recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de EE. UU. el 4 de noviembre 2026 (modelo de nieve de SnowScope): Mt Baker, Crystal Mountain, Stevens Pass, Monarch Mountain, Sahalie Ski Club.",
+    "bars": "Nieve nueva por día en las estaciones líderes (días pasados: modelo; barras claras: previsión)."
+   }
+  },
+  "ar": {
+   "title": "توقعات التلج فغرب ميريكان: حتى ل 17 إنش ف Mt Baker حتى ل 7 نونبر",
+   "description": "حتى ل 7 نونبر، التوقعات ديالنا كتعطي 17 إنش (44 سم) ف Mt Baker، 6 إنش (14 سم) ف Crystal Mountain و 6 إنش (14 سم) ف Stevens Pass. الأرقام ديال المحطات …",
+   "lede": "حتى ل 7 نونبر، التوقعات ديالنا كتعطي 17 إنش (44 سم) ف Mt Baker، 6 إنش (14 سم) ف Crystal Mountain و 6 إنش (14 سم) ف Stevens Pass. الأرقام ديال المحطات ديال التزلج تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس كتقيس فنقطة وحدة، فالتاريخ المكتوب.",
+   "sections": [
+    {
+     "h": "شنو جاي",
+     "p": [
+      "حتى ل 7 نونبر، التوقعات ديالنا كتعطي 5 إنش (13 سم) ف Monarch Mountain و 5 إنش (13 سم) ف Sahalie Ski Club.",
+      "المساحة اللي فيها التلج دازت من 111618 ميل² (289090 كم²) نهار 2 نونبر ل 86498 ميل² (224030 كم²) اليوم، والتوقعات ديالنا كتعطي 68919 ميل² (178500 كم²) نهار 7 نونبر."
+     ]
+    },
+    {
+     "h": "العلو، الجهات والحد ديال التلج",
+     "p": [
+      "ف Mt Baker، علو الجليد غادي يكون بين 4232 قدم (1290 م) و 8957 قدم (2730 م) نهار 6 نونبر، فوق أعلى نقطة فالمحطة (5105 قدم (1556 م)): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات.",
+      "ف Crystal Mountain، علو الجليد غادي يكون بين 7152 قدم (2180 م) و 10696 قدم (3260 م) نهار 6 نونبر، فوق أعلى نقطة فالمحطة (6798 قدم (2072 م)): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات.",
+      "ف Stevens Pass، علو الجليد غادي يكون بين 8071 قدم (2460 م) و 9777 قدم (2980 م) نهار 7 نونبر، فوق أعلى نقطة فالمحطة (5666 قدم (1727 م)): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات.",
+      "العلو مهم: ف Mt Baker، الموديل ديالنا كيعطي 7 إنش (19 سم) فالفوق (5105 قدم / 1556 م)، 5 إنش (12 سم) فالوسط (4367 قدم / 1331 م) و 3 إنش (7 سم) فالتحت (3629 قدم / 1106 م)."
+     ]
+    },
+    {
+     "h": "فين كاين التلج اليوم",
+     "p": [
+      "من هاد المحطات، Mt Baker فيها أكثر تلج فالجهة الفوقانية اليوم، تقريبا 14 إنش (36 سم)؛ من بعدها Stevens Pass 9 إنش (23 سم) و Crystal Mountain 8 إنش (21 سم).",
+      "149 محطة من 195 فغرب ميريكان فيهم التلج فالجهة الفوقانية اليوم، والموديل ديالنا كيحسب 86498 ميل² (224030 كم²) ديال الأرض اللي فيها التلج."
+     ]
+    },
+    {
+     "h": "السلامة وخطر الانهيارات",
+     "p": [
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر.",
+    "فين علو الجليد طالع فوق المحطة، توقع تلج مبلول وطلع للتيليسييج اللي فالفوق.",
+    "التلج الجديد كيكون مزيان فالساعات الأولى: سير بكري، قبل الشمس والناس.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Mt Baker يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب ميريكان نهار 4 نونبر 2026 (الموديل ديال SnowScope): Mt Baker, Crystal Mountain, Stevens Pass, Monarch Mountain, Sahalie Ski Club.",
+    "bars": "التلج الجديد فكل نهار فالمحطات اللولين (الأيام اللي فاتو من الموديل، والخطوط الفاتحة = التوقعات)."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template (a translation was rejected)",
+   "usd": 0.004094
+  },
+  "fr": {
+   "error": "gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.",
+   "writer": "template (a translation was rejected)"
+  },
+  "de": {
+   "error": "gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.",
+   "writer": "template (a translation was rejected)"
+  },
+  "it": {
+   "writer": "template (a translation was rejected)",
+   "usd": 0.00313
+  },
+  "es": {
+   "error": "gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.",
+   "writer": "template (a translation was rejected)"
+  },
+  "ar": {
+   "error": "gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.",
+   "writer": "template (a translation was rejected)"
+  }
+ },
+ "words_en": 344,
+ "indexable": true,
+ "main": {
+  "slug": "mt_baker",
+  "name": "Mt Baker",
+  "lat": 48.8571,
+  "lon": -121.6652
+ },
+ "places": [
+  {
+   "name": "Mt Baker",
+   "lat": 48.8571,
+   "lon": -121.6652
+  },
+  {
+   "name": "Crystal Mountain",
+   "lat": 46.9348,
+   "lon": -121.4902
+  },
+  {
+   "name": "Stevens Pass",
+   "lat": 47.7374,
+   "lon": -121.091
+  },
+  {
+   "name": "Monarch Mountain",
+   "lat": 38.5168,
+   "lon": -106.3444
+  },
+  {
+   "name": "Sahalie Ski Club",
+   "lat": 47.4314,
+   "lon": -121.4166
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "mt_baker",
+   "name": "Mt Baker"
+  },
+  {
+   "slug": "crystal_mountain",
+   "name": "Crystal Mountain"
+  },
+  {
+   "slug": "stevens_pass",
+   "name": "Stevens Pass"
+  },
+  {
+   "slug": "monarch_mountain",
+   "name": "Monarch Mountain"
+  },
+  {
+   "slug": "sahalie_ski_club",
+   "name": "Sahalie Ski Club"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "mt_baker",
+    "name": "Mt Baker",
+    "depth": 36,
+    "new72": 0,
+    "next": 44,
+    "top_m": 1556
+   },
+   {
+    "slug": "crystal_mountain",
+    "name": "Crystal Mountain",
+    "depth": 21,
+    "new72": 0,
+    "next": 14,
+    "top_m": 2072
+   },
+   {
+    "slug": "stevens_pass",
+    "name": "Stevens Pass",
+    "depth": 23,
+    "new72": 0,
+    "next": 14,
+    "top_m": 1727
+   },
+   {
+    "slug": "monarch_mountain",
+    "name": "Monarch Mountain",
+    "depth": 19,
+    "new72": 9,
+    "next": 13,
+    "top_m": 3598
+   },
+   {
+    "slug": "sahalie_ski_club",
+    "name": "Sahalie Ski Club",
+    "depth": 19,
+    "new72": 0,
+    "next": 13,
+    "top_m": 934
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-07",
+ "map_link": "https://snowscope.app/#@48.857,-121.665,9.0",
+ "seconds": 31.2
+}
