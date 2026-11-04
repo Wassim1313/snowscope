@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://lamp-exceptions-ruling-courage.trycloudflare.com";
+window.SNOWSCOPE_API = "https://mechanics-intervals-ted-fibre.trycloudflare.com";
