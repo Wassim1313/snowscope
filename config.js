@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://levitra-nicole-guides-outlined.trycloudflare.com";
+window.SNOWSCOPE_API = "https://sur-mlb-grande-her.trycloudflare.com";
