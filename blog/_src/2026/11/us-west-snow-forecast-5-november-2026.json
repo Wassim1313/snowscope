@@ -1,0 +1,560 @@
+{
+ "id": "2026-11-05-us_west-coming",
+ "slug": "us-west-snow-forecast-5-november-2026",
+ "date": "2026-11-05",
+ "published_utc": "2026-11-05T10:27:36Z",
+ "updated_utc": "2026-11-05T10:27:36Z",
+ "region": "US_WEST",
+ "angle": "coming",
+ "score": 69.0,
+ "signature": "mt_baker:40|hurricane_ridge:10",
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "snow_forecast",
+  "region": "US West",
+  "date": "2026-11-05",
+  "weekday": "Thursday",
+  "model_run": "2026-11-05",
+  "forecast_days": [
+   "2026-11-06",
+   "2026-11-07",
+   "2026-11-08"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 237620,
+   "resorts_with_snow": 145,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-03",
+   "snow_covered_area_km2": 253300,
+   "resorts_with_snow": 150
+  },
+  "region_forecast": {
+   "date": "2026-11-08",
+   "snow_covered_area_km2": 186250,
+   "resorts_with_snow": 133
+  },
+  "question": "Where will new snow fall in the next days, and at which height?",
+  "resorts": [
+   {
+    "name": "Mt Baker",
+    "country": "United States",
+    "top_m": 1556,
+    "base_m": 1106,
+    "depth_cm_upper_slopes_today": 42,
+    "new_cm_last_24h": 16,
+    "new_cm_last_72h": 16,
+    "new_cm_forecast_next_days": 42,
+    "slug": "mt_baker",
+    "new_cm_by_day": {
+     "2026-11-03": 0,
+     "2026-11-04": 0,
+     "2026-11-05": 16,
+     "2026-11-06": 11,
+     "2026-11-07": 6,
+     "2026-11-08": 25
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1106,
+      "depth_cm_model": 4,
+      "new_cm_next_7_days": 4
+     },
+     "mid": {
+      "elev_m": 1331,
+      "depth_cm_model": 14,
+      "new_cm_next_7_days": 16
+     },
+     "top": {
+      "elev_m": 1556,
+      "depth_cm_model": 22,
+      "new_cm_next_7_days": 24
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-05": {
+      "min": 1280,
+      "max": 1730
+     },
+     "2026-11-06": {
+      "min": 1310,
+      "max": 3060
+     },
+     "2026-11-07": {
+      "min": 2200,
+      "max": 2900
+     }
+    },
+    "nearest_station": {
+     "station": "Wells Creek",
+     "elev_m": 1231,
+     "depth_cm_measured": 13,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 9.2
+    }
+   },
+   {
+    "name": "Hurricane Ridge",
+    "country": "United States",
+    "top_m": 1660,
+    "base_m": 1485,
+    "depth_cm_upper_slopes_today": 23,
+    "new_cm_last_24h": 4,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 13,
+    "slug": "hurricane_ridge",
+    "new_cm_by_day": {
+     "2026-11-03": 0,
+     "2026-11-04": 0,
+     "2026-11-05": 4,
+     "2026-11-06": 2,
+     "2026-11-07": 0,
+     "2026-11-08": 11
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1485,
+      "depth_cm_model": 12,
+      "new_cm_next_7_days": 4
+     },
+     "mid": {
+      "elev_m": 1572,
+      "depth_cm_model": 14,
+      "new_cm_next_7_days": 6
+     },
+     "top": {
+      "elev_m": 1660,
+      "depth_cm_model": 17,
+      "new_cm_next_7_days": 7
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-05": {
+      "min": 1590,
+      "max": 2620
+     },
+     "2026-11-06": {
+      "min": 1890,
+      "max": 3210
+     },
+     "2026-11-07": {
+      "min": 1650,
+      "max": 3060
+     }
+    },
+    "past_winters": {
+     "height_m": 1572,
+     "snow_cm_at_this_height_today_model": 15,
+     "deeper_than_n_of_past_winters": 41,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 0
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-28"
+    },
+    "nearest_station": {
+     "station": "Waterhole",
+     "elev_m": 1527,
+     "depth_cm_measured": 13,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 5.9
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-snow-forecast-5-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-snow-forecast-5-november-2026/map_t.webp",
+   "bytes": 56182
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 108\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"363\" y=\"49\" class=\"vl\">16</text><rect x=\"395\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"429\" y=\"49\" class=\"vl\">11</text><rect x=\"475\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"495\" y=\"49\" class=\"vl\">6</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Hurricane Ridge</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"83\" class=\"vl\">4</text><rect x=\"395\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"83\" class=\"vl\">2</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"31\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"589\" y=\"83\" class=\"vl\">11</text></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 108\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"363\" y=\"49\" class=\"vl\">16</text><rect x=\"395\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"429\" y=\"49\" class=\"vl\">11</text><rect x=\"475\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"495\" y=\"49\" class=\"vl\">6</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Hurricane Ridge</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"83\" class=\"vl\">4</text><rect x=\"395\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"83\" class=\"vl\">2</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"31\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"589\" y=\"83\" class=\"vl\">11</text></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 108\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"363\" y=\"49\" class=\"vl\">16</text><rect x=\"395\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"429\" y=\"49\" class=\"vl\">11</text><rect x=\"475\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"495\" y=\"49\" class=\"vl\">6</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Hurricane Ridge</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"83\" class=\"vl\">4</text><rect x=\"395\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"83\" class=\"vl\">2</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"31\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"589\" y=\"83\" class=\"vl\">11</text></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 108\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"363\" y=\"49\" class=\"vl\">16</text><rect x=\"395\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"429\" y=\"49\" class=\"vl\">11</text><rect x=\"475\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"495\" y=\"49\" class=\"vl\">6</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Hurricane Ridge</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"83\" class=\"vl\">4</text><rect x=\"395\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"83\" class=\"vl\">2</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"31\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"589\" y=\"83\" class=\"vl\">11</text></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 108\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"363\" y=\"49\" class=\"vl\">16</text><rect x=\"395\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"429\" y=\"49\" class=\"vl\">11</text><rect x=\"475\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"495\" y=\"49\" class=\"vl\">6</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Hurricane Ridge</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"83\" class=\"vl\">4</text><rect x=\"395\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"83\" class=\"vl\">2</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"31\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"589\" y=\"83\" class=\"vl\">11</text></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 108\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"363\" y=\"49\" class=\"vl\">16</text><rect x=\"395\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"429\" y=\"49\" class=\"vl\">11</text><rect x=\"475\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"495\" y=\"49\" class=\"vl\">6</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Hurricane Ridge</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"83\" class=\"vl\">4</text><rect x=\"395\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"83\" class=\"vl\">2</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"31\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"589\" y=\"83\" class=\"vl\">11</text></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Snow forecast in the US West: up to 17 in at Mt Baker by 8 November",
+   "description": "More snow is on the way: by 8 November our forecast gives 17 in (42 cm) at Mt Baker and 5 in (13 cm) at Hurricane Ridge. Resort numbers are model …",
+   "lede": "More snow is on the way: by 8 November our forecast gives 17 in (42 cm) at Mt Baker and 5 in (13 cm) at Hurricane Ridge. Resort numbers are model estimates for the upper slopes; station numbers are measurements at one point, on the date shown.",
+   "sections": [
+    {
+     "h": "What is coming next",
+     "p": [
+      "The snow cover shrank from 97,800 sq mi (253,300 km²) on 3 November to 91,746 sq mi (237,620 km²) today, and our forecast gives 71,911 sq mi (186,250 km²) on 8 November."
+     ]
+    },
+    {
+     "h": "Height, slopes and snow line",
+     "p": [
+      "At Mt Baker, the freezing level reaches 4,298 ft (1,310 m) to 10,039 ft (3,060 m) on 6 November, above the top of the resort (5,105 ft / 1,556 m): rain or wet snow is possible on every slope that day.",
+      "At Hurricane Ridge, the freezing level reaches 6,201 ft (1,890 m) to 10,531 ft (3,210 m) on 6 November, above the top of the resort (5,446 ft / 1,660 m): rain or wet snow is possible on every slope that day.",
+      "Height matters: at Mt Baker, our model gives 9 in (22 cm) at the top (5,105 ft / 1,556 m), 6 in (14 cm) at mid-mountain (4,367 ft / 1,331 m) and 2 in (4 cm) at the base (3,629 ft / 1,106 m)."
+     ]
+    },
+    {
+     "h": "Today's snow",
+     "p": [
+      "Of these resorts, Mt Baker has the most snow on its upper slopes today, about 17 in (42 cm); then come Hurricane Ridge 9 in (23 cm).",
+      "145 of 195 resorts in the US West have snow on their upper slopes today, and our model counts 91,746 sq mi (237,620 km²) of snow-covered ground."
+     ]
+    },
+    {
+     "h": "Safety and avalanche level",
+     "p": [
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Forecasts a few days ahead can change: look at the map again the day before you travel.",
+    "Where the freezing level goes above the resort, plan for wet snow and use the highest lifts.",
+    "Fresh snow is best in the first hours after it stops: go early, before the sun and the crowds.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Mt Baker gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the US West on 5 November 2026 (SnowScope snow model): Mt Baker, Hurricane Ridge.",
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast)."
+   }
+  },
+  "fr": {
+   "title": "Prévisions neige dans l'Ouest américain : jusqu'à 17 in à Mt Baker d'ici le 8 novembre",
+   "description": "D'ici le 8 novembre, notre prévision donne 17 in (42 cm) à Mt Baker et 5 in (13 cm) à Hurricane Ridge. Les chiffres des stations de ski sont des …",
+   "lede": "D'ici le 8 novembre, notre prévision donne 17 in (42 cm) à Mt Baker et 5 in (13 cm) à Hurricane Ridge. Les chiffres des stations de ski sont des estimations du modèle pour le haut du domaine ; ceux des stations de mesure sont mesurés en un point, à la date indiquée.",
+   "sections": [
+    {
+     "h": "Ce qui arrive",
+     "p": [
+      "La surface enneigée est passée de 97 800 sq mi (253 300 km²) le 3 novembre à 91 746 sq mi (237 620 km²) aujourd'hui, et notre prévision donne 71 911 sq mi (186 250 km²) le 8 novembre."
+     ]
+    },
+    {
+     "h": "Altitude, pentes et limite pluie-neige",
+     "p": [
+      "À Mt Baker, l'isotherme 0 °C monte entre 4 298 ft (1 310 m) et 10 039 ft (3 060 m) le 6 novembre, au-dessus du sommet de la station (5 105 ft / 1 556 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là.",
+      "À Hurricane Ridge, l'isotherme 0 °C monte entre 6 201 ft (1 890 m) et 10 531 ft (3 210 m) le 6 novembre, au-dessus du sommet de la station (5 446 ft / 1 660 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là.",
+      "L'altitude compte : à Mt Baker, notre modèle donne 9 in (22 cm) au sommet (5 105 ft / 1 556 m), 6 in (14 cm) à mi-pente (4 367 ft / 1 331 m) et 2 in (4 cm) en bas (3 629 ft / 1 106 m)."
+     ]
+    },
+    {
+     "h": "Où est la neige aujourd'hui",
+     "p": [
+      "Parmi ces stations, Mt Baker a le plus de neige sur le haut du domaine aujourd'hui, environ 17 in (42 cm) ; suivent Hurricane Ridge 9 in (23 cm).",
+      "145 stations sur 195 dans l'Ouest américain ont de la neige sur le haut du domaine aujourd'hui, et notre modèle compte 91 746 sq mi (237 620 km²) de surface enneigée."
+     ]
+    },
+    {
+     "h": "Sécurité et risque d'avalanche",
+     "p": [
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ.",
+    "Là où l'isotherme 0 °C passe au-dessus de la station, prévoyez une neige mouillée et skiez sur les remontées les plus hautes.",
+    "La neige fraîche est la meilleure dans les premières heures : partez tôt, avant le soleil et la foule.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Mt Baker reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest américain le 5 novembre 2026 (modèle de neige SnowScope) : Mt Baker, Hurricane Ridge.",
+    "bars": "Neige fraîche par jour dans les stations en tête (jours passés : modèle ; barres claires : prévision)."
+   }
+  },
+  "de": {
+   "title": "Schneeprognose im US-Westen: bis zu 17 in in Mt Baker bis zum 8. November",
+   "description": "Bis zum 8. November ergibt unsere Prognose 17 in (42 cm) in Mt Baker und 5 in (13 cm) in Hurricane Ridge. Die Werte der Skigebiete sind …",
+   "lede": "Bis zum 8. November ergibt unsere Prognose 17 in (42 cm) in Mt Baker und 5 in (13 cm) in Hurricane Ridge. Die Werte der Skigebiete sind Modellschätzungen für die oberen Hänge; Messstationen messen an einem Punkt, am angegebenen Tag.",
+   "sections": [
+    {
+     "h": "Was als Nächstes kommt",
+     "p": [
+      "Die Schneefläche schrumpfte von 97.800 sq mi (253.300 km²) am 3. November auf heute 91.746 sq mi (237.620 km²), und unsere Prognose ergibt 71.911 sq mi (186.250 km²) am 8. November."
+     ]
+    },
+    {
+     "h": "Höhe, Hänge und Schneefallgrenze",
+     "p": [
+      "In Mt Baker liegt die Nullgradgrenze am 6. November zwischen 4.298 ft (1.310 m) und 10.039 ft (3.060 m), über dem höchsten Punkt des Skigebiets (5.105 ft (1.556 m)): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich.",
+      "In Hurricane Ridge liegt die Nullgradgrenze am 6. November zwischen 6.201 ft (1.890 m) und 10.531 ft (3.210 m), über dem höchsten Punkt des Skigebiets (5.446 ft (1.660 m)): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich.",
+      "Die Höhe macht den Unterschied: In Mt Baker zeigt unser Modell 9 in (22 cm) am Gipfel (5.105 ft / 1.556 m), 6 in (14 cm) an der Mittelstation (4.367 ft / 1.331 m) und 2 in (4 cm) im Tal (3.629 ft / 1.106 m)."
+     ]
+    },
+    {
+     "h": "Wo heute Schnee liegt",
+     "p": [
+      "Von diesen Skigebieten hat Mt Baker heute den meisten Schnee in den oberen Hängen, etwa 17 in (42 cm); danach folgen Hurricane Ridge 9 in (23 cm).",
+      "145 von 195 Skigebieten im US-Westen haben heute Schnee in den oberen Hängen, und unser Modell zählt 91.746 sq mi (237.620 km²) Schneefläche."
+     ]
+    },
+    {
+     "h": "Sicherheit und Lawinengefahr",
+     "p": [
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte.",
+    "Wo die Nullgradgrenze über das Skigebiet steigt, rechne mit nassem Schnee und fahr an den höchsten Liften.",
+    "Neuschnee ist in den ersten Stunden am besten: Starte früh, vor der Sonne und dem Andrang.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Mt Baker Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe im US-Westen am 5. November 2026 (SnowScope-Schneemodell): Mt Baker, Hurricane Ridge.",
+    "bars": "Neuschnee pro Tag in den führenden Skigebieten (vergangene Tage: Modell; helle Balken: Prognose)."
+   }
+  },
+  "it": {
+   "title": "Previsioni neve nell'Ovest degli USA: fino a 17 in a Mt Baker entro il 8 novembre",
+   "description": "Fino al 8 novembre la nostra previsione indica 17 in (42 cm) a Mt Baker e 5 in (13 cm) a Hurricane Ridge. I valori delle località sono stime del …",
+   "lede": "Fino al 8 novembre la nostra previsione indica 17 in (42 cm) a Mt Baker e 5 in (13 cm) a Hurricane Ridge. I valori delle località sono stime del modello per i pendii superiori; le stazioni misurano in un punto, alla data indicata.",
+   "sections": [
+    {
+     "h": "Cosa arriva",
+     "p": [
+      "La superficie innevata è passata da 97.800 sq mi (253.300 km²) il 3 novembre a 91.746 sq mi (237.620 km²) oggi, e la nostra previsione indica 71.911 sq mi (186.250 km²) il 8 novembre."
+     ]
+    },
+    {
+     "h": "Quota, pendii e quota neve",
+     "p": [
+      "A Mt Baker lo zero termico sale tra 4.298 ft (1.310 m) e 10.039 ft (3.060 m) il 6 novembre, sopra la quota massima della località (5.105 ft (1.556 m)): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii.",
+      "A Hurricane Ridge lo zero termico sale tra 6.201 ft (1.890 m) e 10.531 ft (3.210 m) il 6 novembre, sopra la quota massima della località (5.446 ft (1.660 m)): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii.",
+      "La quota conta: a Mt Baker il nostro modello indica 9 in (22 cm) in vetta (5.105 ft / 1.556 m), 6 in (14 cm) a metà montagna (4.367 ft / 1.331 m) e 2 in (4 cm) alla base (3.629 ft / 1.106 m)."
+     ]
+    },
+    {
+     "h": "Dove c'è neve oggi",
+     "p": [
+      "Tra queste località, Mt Baker ha oggi più neve sui pendii superiori, circa 17 in (42 cm); seguono Hurricane Ridge 9 in (23 cm).",
+      "145 località su 195 nell'Ovest degli USA hanno oggi neve sui pendii superiori, e il nostro modello conta 91.746 sq mi (237.620 km²) di superficie innevata."
+     ]
+    },
+    {
+     "h": "Sicurezza e pericolo valanghe",
+     "p": [
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire.",
+    "Dove lo zero termico sale sopra la località, aspettati neve bagnata e usa gli impianti più alti.",
+    "La neve fresca è migliore nelle prime ore: parti presto, prima del sole e della folla.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Mt Baker riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve nell'Ovest degli USA il 5 novembre 2026 (modello neve SnowScope): Mt Baker, Hurricane Ridge.",
+    "bars": "Neve fresca al giorno nelle località in testa (giorni passati: modello; barre chiare: previsione)."
+   }
+  },
+  "es": {
+   "title": "Previsión de nieve en el oeste de EE. UU.: hasta 17 in en Mt Baker hasta el 8 de noviembre",
+   "description": "Hasta el 8 de noviembre, nuestra previsión da 17 in (42 cm) en Mt Baker y 5 in (13 cm) en Hurricane Ridge. Las cifras de las estaciones de esquí son …",
+   "lede": "Hasta el 8 de noviembre, nuestra previsión da 17 in (42 cm) en Mt Baker y 5 in (13 cm) en Hurricane Ridge. Las cifras de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida miden en un punto, en la fecha indicada.",
+   "sections": [
+    {
+     "h": "Lo que viene",
+     "p": [
+      "La superficie nevada pasó de 97.800 sq mi (253.300 km²) el 3 de noviembre a 91.746 sq mi (237.620 km²) hoy, y nuestra previsión da 71.911 sq mi (186.250 km²) el 8 de noviembre."
+     ]
+    },
+    {
+     "h": "Altitud, laderas y cota de nieve",
+     "p": [
+      "En Mt Baker, la cota de congelación llega a 4298 ft (1310 m)-10.039 ft (3060 m) el 6 de noviembre, por encima de la cota alta de la estación (5105 ft (1556 m)): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
+      "En Hurricane Ridge, la cota de congelación llega a 6201 ft (1890 m)-10.531 ft (3210 m) el 6 de noviembre, por encima de la cota alta de la estación (5446 ft (1660 m)): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
+      "La altitud cuenta: en Mt Baker, nuestro modelo da 9 in (22 cm) en la cota alta (5105 ft / 1556 m), 6 in (14 cm) a media montaña (4367 ft / 1331 m) y 2 in (4 cm) en la base (3629 ft / 1106 m)."
+     ]
+    },
+    {
+     "h": "Dónde está la nieve hoy",
+     "p": [
+      "De estas estaciones, Mt Baker tiene hoy más nieve en las pistas altas, unos 17 in (42 cm); después vienen Hurricane Ridge 9 in (23 cm).",
+      "145 de 195 estaciones en el oeste de EE. UU. tienen hoy nieve en las pistas altas, y nuestro modelo cuenta 91.746 sq mi (237.620 km²) de superficie nevada."
+     ]
+    },
+    {
+     "h": "Seguridad y peligro de aludes",
+     "p": [
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar.",
+    "Donde la cota de congelación suba por encima de la estación, cuenta con nieve húmeda y usa los remontes más altos.",
+    "La nieve nueva es mejor en las primeras horas: sal temprano, antes del sol y de la gente.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Mt Baker recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de EE. UU. el 5 de noviembre 2026 (modelo de nieve de SnowScope): Mt Baker, Hurricane Ridge.",
+    "bars": "Nieve nueva por día en las estaciones líderes (días pasados: modelo; barras claras: previsión)."
+   }
+  },
+  "ar": {
+   "title": "توقعات التلج فغرب ميريكان: حتى ل 17 إنش ف Mt Baker حتى ل 8 نونبر",
+   "description": "حتى ل 8 نونبر، التوقعات ديالنا كتعطي 17 إنش (42 سم) ف Mt Baker و 5 إنش (13 سم) ف Hurricane Ridge. الأرقام ديال المحطات ديال التزلج تقديرات ديال …",
+   "lede": "حتى ل 8 نونبر، التوقعات ديالنا كتعطي 17 إنش (42 سم) ف Mt Baker و 5 إنش (13 سم) ف Hurricane Ridge. الأرقام ديال المحطات ديال التزلج تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس كتقيس فنقطة وحدة، فالتاريخ المكتوب.",
+   "sections": [
+    {
+     "h": "شنو جاي",
+     "p": [
+      "المساحة اللي فيها التلج دازت من 97800 ميل² (253300 كم²) نهار 3 نونبر ل 91746 ميل² (237620 كم²) اليوم، والتوقعات ديالنا كتعطي 71911 ميل² (186250 كم²) نهار 8 نونبر."
+     ]
+    },
+    {
+     "h": "العلو، الجهات والحد ديال التلج",
+     "p": [
+      "ف Mt Baker، علو الجليد غادي يكون بين 4298 قدم (1310 م) و 10039 قدم (3060 م) نهار 6 نونبر، فوق أعلى نقطة فالمحطة (5105 قدم (1556 م)): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات.",
+      "ف Hurricane Ridge، علو الجليد غادي يكون بين 6201 قدم (1890 م) و 10531 قدم (3210 م) نهار 6 نونبر، فوق أعلى نقطة فالمحطة (5446 قدم (1660 م)): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات.",
+      "العلو مهم: ف Mt Baker، الموديل ديالنا كيعطي 9 إنش (22 سم) فالفوق (5105 قدم / 1556 م)، 6 إنش (14 سم) فالوسط (4367 قدم / 1331 م) و 2 إنش (4 سم) فالتحت (3629 قدم / 1106 م)."
+     ]
+    },
+    {
+     "h": "فين كاين التلج اليوم",
+     "p": [
+      "من هاد المحطات، Mt Baker فيها أكثر تلج فالجهة الفوقانية اليوم، تقريبا 17 إنش (42 سم)؛ من بعدها Hurricane Ridge 9 إنش (23 سم).",
+      "145 محطة من 195 فغرب ميريكان فيهم التلج فالجهة الفوقانية اليوم، والموديل ديالنا كيحسب 91746 ميل² (237620 كم²) ديال الأرض اللي فيها التلج."
+     ]
+    },
+    {
+     "h": "السلامة وخطر الانهيارات",
+     "p": [
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر.",
+    "فين علو الجليد طالع فوق المحطة، توقع تلج مبلول وطلع للتيليسييج اللي فالفوق.",
+    "التلج الجديد كيكون مزيان فالساعات الأولى: سير بكري، قبل الشمس والناس.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Mt Baker يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب ميريكان نهار 5 نونبر 2026 (الموديل ديال SnowScope): Mt Baker, Hurricane Ridge.",
+    "bars": "التلج الجديد فكل نهار فالمحطات اللولين (الأيام اللي فاتو من الموديل، والخطوط الفاتحة = التوقعات)."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template (a translation was rejected)",
+   "usd": 0.003823
+  },
+  "fr": {
+   "error": "The read operation timed out",
+   "writer": "template (a translation was rejected)"
+  },
+  "de": {
+   "writer": "template (a translation was rejected)",
+   "usd": 0.003161
+  },
+  "it": {
+   "error": "The read operation timed out",
+   "writer": "template (a translation was rejected)"
+  },
+  "es": {
+   "writer": "template (a translation was rejected)",
+   "usd": 0.003267
+  },
+  "ar": {
+   "writer": "template (a translation was rejected)",
+   "usd": 0.004454
+  }
+ },
+ "words_en": 276,
+ "indexable": true,
+ "main": {
+  "slug": "mt_baker",
+  "name": "Mt Baker",
+  "lat": 48.8571,
+  "lon": -121.6652
+ },
+ "places": [
+  {
+   "name": "Mt Baker",
+   "lat": 48.8571,
+   "lon": -121.6652
+  },
+  {
+   "name": "Hurricane Ridge",
+   "lat": 47.971,
+   "lon": -123.4945
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "mt_baker",
+   "name": "Mt Baker"
+  },
+  {
+   "slug": "hurricane_ridge",
+   "name": "Hurricane Ridge"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "mt_baker",
+    "name": "Mt Baker",
+    "depth": 42,
+    "new72": 16,
+    "next": 42,
+    "top_m": 1556
+   },
+   {
+    "slug": "hurricane_ridge",
+    "name": "Hurricane Ridge",
+    "depth": 23,
+    "new72": 4,
+    "next": 13,
+    "top_m": 1660
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-07",
+ "map_link": "https://snowscope.app/#@48.857,-121.665,9.0",
+ "seconds": 302.8
+}

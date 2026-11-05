@@ -1,0 +1,729 @@
+{
+ "id": "2026-11-05-us_west-deepest",
+ "slug": "us-west-snow-depth-today-5-november-2026",
+ "date": "2026-11-05",
+ "published_utc": "2026-11-05T10:27:36Z",
+ "updated_utc": "2026-11-05T10:27:36Z",
+ "region": "US_WEST",
+ "angle": "deepest",
+ "score": 60,
+ "signature": "kendall_mountain_recreation_area:130|telluride_ski_area:130|lee_s_ski_hill:90",
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "US West",
+  "date": "2026-11-05",
+  "weekday": "Thursday",
+  "model_run": "2026-11-05",
+  "forecast_days": [
+   "2026-11-06",
+   "2026-11-07",
+   "2026-11-08"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 237620,
+   "resorts_with_snow": 145,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-03",
+   "snow_covered_area_km2": 253300,
+   "resorts_with_snow": 150
+  },
+  "region_forecast": {
+   "date": "2026-11-08",
+   "snow_covered_area_km2": 186250,
+   "resorts_with_snow": 133
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Kendall Mountain",
+    "country": "United States",
+    "top_m": 2904,
+    "base_m": 2835,
+    "depth_cm_upper_slopes_today": 130,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 3,
+    "new_cm_forecast_next_days": 2,
+    "slug": "kendall_mountain_recreation_area",
+    "new_cm_by_day": {
+     "2026-11-03": 0,
+     "2026-11-04": 2,
+     "2026-11-05": 1,
+     "2026-11-06": 1,
+     "2026-11-07": 1,
+     "2026-11-08": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2835,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 2869,
+      "depth_cm_model": 9,
+      "new_cm_next_7_days": 2
+     },
+     "top": {
+      "elev_m": 2904,
+      "depth_cm_model": 10,
+      "new_cm_next_7_days": 2
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-05": {
+      "min": 1700,
+      "max": 3440
+     },
+     "2026-11-06": {
+      "min": 2160,
+      "max": 3280
+     },
+     "2026-11-07": {
+      "min": 1710,
+      "max": 3550
+     }
+    },
+    "past_winters": {
+     "height_m": 2869,
+     "snow_cm_at_this_height_today_model": 9,
+     "deeper_than_n_of_past_winters": 25,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 5
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-30"
+    },
+    "nearest_station": {
+     "station": "Mineral Creek",
+     "elev_m": 3057,
+     "depth_cm_measured": 13,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 7.4
+    }
+   },
+   {
+    "name": "Telluride",
+    "country": "United States",
+    "top_m": 3812,
+    "base_m": 2662,
+    "depth_cm_upper_slopes_today": 126,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 2,
+    "slug": "telluride_ski_area",
+    "new_cm_by_day": {
+     "2026-11-03": 0,
+     "2026-11-04": 2,
+     "2026-11-05": 2,
+     "2026-11-06": 1,
+     "2026-11-07": 1,
+     "2026-11-08": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2662,
+      "depth_cm_model": 3,
+      "new_cm_next_7_days": 1
+     },
+     "mid": {
+      "elev_m": 3237,
+      "depth_cm_model": 29,
+      "new_cm_next_7_days": 3
+     },
+     "top": {
+      "elev_m": 3812,
+      "depth_cm_model": 108,
+      "new_cm_next_7_days": 4
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-05": {
+      "min": 1960,
+      "max": 3450
+     },
+     "2026-11-06": {
+      "min": 2410,
+      "max": 3280
+     },
+     "2026-11-07": {
+      "min": 2110,
+      "max": 3580
+     }
+    },
+    "past_winters": {
+     "height_m": 3237,
+     "snow_cm_at_this_height_today_model": 36,
+     "deeper_than_n_of_past_winters": 36,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 11
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-30"
+    },
+    "nearest_station": {
+     "station": "Alta Lakes",
+     "elev_m": 3441,
+     "depth_cm_measured": 46,
+     "new_cm_measured_24h": 18,
+     "measured_on": "2026-11-01",
+     "km_away": 3.5
+    }
+   },
+   {
+    "name": "Lee's Ski Hill",
+    "country": "United States",
+    "top_m": 2421,
+    "base_m": 2401,
+    "depth_cm_upper_slopes_today": 88,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 2,
+    "slug": "lee_s_ski_hill",
+    "new_cm_by_day": {
+     "2026-11-03": 1,
+     "2026-11-04": 2,
+     "2026-11-05": 1,
+     "2026-11-06": 1,
+     "2026-11-07": 1,
+     "2026-11-08": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2401,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 2411,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "top": {
+      "elev_m": 2421,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-05": {
+      "min": 2080,
+      "max": 3440
+     },
+     "2026-11-06": {
+      "min": 2400,
+      "max": 3250
+     },
+     "2026-11-07": {
+      "min": 2110,
+      "max": 3580
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-30"
+    },
+    "nearest_station": {
+     "station": "Ouray .23 NNW",
+     "elev_m": 2352,
+     "depth_cm_measured": 0,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 0.9
+    }
+   },
+   {
+    "name": "Wolf Creek",
+    "country": "United States",
+    "top_m": 3585,
+    "base_m": 3128,
+    "depth_cm_upper_slopes_today": 82,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 0,
+    "slug": "wolf_creek_ski_area",
+    "new_cm_by_day": {
+     "2026-11-03": 0,
+     "2026-11-04": 1,
+     "2026-11-05": 0,
+     "2026-11-06": 0,
+     "2026-11-07": 0,
+     "2026-11-08": 0
+    }
+   },
+   {
+    "name": "Cimarron Mountain Club",
+    "country": "United States",
+    "top_m": 3461,
+    "base_m": 2991,
+    "depth_cm_upper_slopes_today": 78,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 6,
+    "new_cm_forecast_next_days": 0,
+    "slug": "cimarron_mountain_club",
+    "new_cm_by_day": {
+     "2026-11-03": 2,
+     "2026-11-04": 3,
+     "2026-11-05": 2,
+     "2026-11-06": 0,
+     "2026-11-07": 0,
+     "2026-11-08": 0
+    }
+   }
+  ],
+  "measured_at_stations": [
+   {
+    "station": "Rat Creek",
+    "elev_m": 3560,
+    "depth_cm_measured": 66,
+    "new_cm_measured_24h": 23,
+    "measured_on": "2026-11-01",
+    "network": "snotel"
+   },
+   {
+    "station": "Beartown",
+    "elev_m": 3530,
+    "depth_cm_measured": 66,
+    "new_cm_measured_24h": 5,
+    "measured_on": "2026-11-01",
+    "network": "snotel"
+   },
+   {
+    "station": "Red Mountain Pass",
+    "elev_m": 3371,
+    "depth_cm_measured": 61,
+    "new_cm_measured_24h": 28,
+    "measured_on": "2026-11-01",
+    "network": "snotel"
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-snow-depth-today-5-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-snow-depth-today-5-november-2026/map_t.webp",
+   "bytes": 65170
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "US West snow depth today: Kendall Mountain leads with 51 in (5 November)",
+   "description": "The most snow in the US West is at Kendall Mountain: about 51 in (130 cm) on the upper slopes, according to our snow model. Next come Telluride with …",
+   "lede": "The most snow in the US West is at Kendall Mountain: about 51 in (130 cm) on the upper slopes, according to our snow model. Next come Telluride with 50 in (126 cm) and Lee's Ski Hill with 35 in (88 cm). 145 of 195 resorts in the US West have snow on their upper slopes today, and our model counts 91,746 sq mi (237,620 km²) of snow-covered ground.",
+   "sections": [
+    {
+     "h": "Today's snow",
+     "p": [
+      "The snow cover shrank from 97,800 sq mi (253,300 km²) on 3 November to 91,746 sq mi (237,620 km²) today, and our forecast gives 71,911 sq mi (186,250 km²) on 8 November.",
+      "Height matters: at Telluride, our model gives 43 in (108 cm) at the top (12,507 ft / 3,812 m), 11 in (29 cm) at mid-mountain (10,620 ft / 3,237 m) and 1 in (3 cm) at the base (8,734 ft / 2,662 m)."
+     ]
+    },
+    {
+     "h": "Measured on the ground",
+     "p": [
+      "The Rat Creek station (11,680 ft / 3,560 m) measured 26 in (66 cm) of snow on the ground on 1 November, with 9 in (23 cm) of new snow in 24 hours. The Beartown station (11,581 ft / 3,530 m) measured 26 in (66 cm) of snow on the ground on 1 November, with 2 in (5 cm) of new snow in 24 hours. The Red Mountain Pass station (11,060 ft / 3,371 m) measured 24 in (61 cm) of snow on the ground on 1 November, with 11 in (28 cm) of new snow in 24 hours.",
+      "Resort numbers are model estimates for the upper slopes; station numbers are measurements at one point, on the date shown."
+     ]
+    },
+    {
+     "h": "Compared with past winters",
+     "p": [
+      "At 9,413 ft (2,869 m) on Kendall Mountain, today's 4 in (9 cm) is close to normal for the date: deeper than in 25 of the past 46 winters (usual: 2 in (5 cm)).",
+      "This is a good start at Telluride. At 10,620 ft (3,237 m), our model has 14 in (36 cm) today, deeper than on this date in 36 of the past 46 winters (usual: 4 in (11 cm))."
+     ]
+    },
+    {
+     "h": "What is coming next",
+     "p": [
+      "More snow is on the way: by 8 November our forecast gives 1 in (2 cm) at Kendall Mountain, 1 in (2 cm) at Telluride and 1 in (2 cm) at Lee's Ski Hill.",
+      "At Kendall Mountain, the freezing level reaches 5,610 ft (1,710 m) to 11,647 ft (3,550 m) on 7 November, above the top of the resort (9,528 ft / 2,904 m): rain or wet snow is possible on every slope that day.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "Look for snow high up and on north-facing slopes: they keep it longest, while south-facing slopes lose it first in the sun.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Kendall Mountain gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the US West on 5 November 2026 (SnowScope snow model): Kendall Mountain, Telluride, Lee's Ski Hill, Wolf Creek, Cimarron Mountain Club."
+   }
+  },
+  "fr": {
+   "title": "Neige dans l'Ouest américain : Kendall Mountain en tête avec 51 in (5 novembre)",
+   "description": "C'est à Kendall Mountain qu'il y a le plus de neige dans l'Ouest américain : environ 51 in (130 cm) sur le haut du domaine, selon notre modèle de …",
+   "lede": "C'est à Kendall Mountain qu'il y a le plus de neige dans l'Ouest américain : environ 51 in (130 cm) sur le haut du domaine, selon notre modèle de neige. Viennent ensuite Telluride (50 in (126 cm)) et Lee's Ski Hill (35 in (88 cm)). 145 stations sur 195 dans l'Ouest américain ont de la neige sur le haut du domaine aujourd'hui, et notre modèle compte 91 746 sq mi (237 620 km²) de surface enneigée.",
+   "sections": [
+    {
+     "h": "Où est la neige aujourd'hui",
+     "p": [
+      "La surface enneigée est passée de 97 800 sq mi (253 300 km²) le 3 novembre à 91 746 sq mi (237 620 km²) aujourd'hui, et notre prévision donne 71 911 sq mi (186 250 km²) le 8 novembre.",
+      "L'altitude compte : à Telluride, notre modèle donne 43 in (108 cm) au sommet (12 507 ft / 3 812 m), 11 in (29 cm) à mi-pente (10 620 ft / 3 237 m) et 1 in (3 cm) en bas (8 734 ft / 2 662 m)."
+     ]
+    },
+    {
+     "h": "Ce que mesurent les stations",
+     "p": [
+      "La station de mesure Rat Creek (11 680 ft / 3 560 m) a mesuré 26 in (66 cm) de neige au sol le 1 novembre, dont 9 in (23 cm) de neige fraîche en 24 heures. La station de mesure Beartown (11 581 ft / 3 530 m) a mesuré 26 in (66 cm) de neige au sol le 1 novembre, dont 2 in (5 cm) de neige fraîche en 24 heures. La station de mesure Red Mountain Pass (11 060 ft / 3 371 m) a mesuré 24 in (61 cm) de neige au sol le 1 novembre, dont 11 in (28 cm) de neige fraîche en 24 heures.",
+      "Les chiffres des stations de ski sont des estimations du modèle pour le haut du domaine ; ceux des stations de mesure sont mesurés en un point, à la date indiquée."
+     ]
+    },
+    {
+     "h": "Comparé aux hivers passés",
+     "p": [
+      "À 9 413 ft (2 869 m) à Kendall Mountain, les 4 in (9 cm) d'aujourd'hui sont proches de la normale pour la date : plus que lors de 25 des 46 hivers passés (habituel : 2 in (5 cm)).",
+      "C'est un bon début à Telluride. À 10 620 ft (3 237 m), notre modèle donne 14 in (36 cm) aujourd'hui, plus qu'à cette date lors de 36 des 46 hivers passés (habituel : 4 in (11 cm))."
+     ]
+    },
+    {
+     "h": "Ce qui arrive",
+     "p": [
+      "D'ici le 8 novembre, notre prévision donne 1 in (2 cm) à Kendall Mountain, 1 in (2 cm) à Telluride et 1 in (2 cm) à Lee's Ski Hill.",
+      "À Kendall Mountain, l'isotherme 0 °C monte entre 5 610 ft (1 710 m) et 11 647 ft (3 550 m) le 7 novembre, au-dessus du sommet de la station (9 528 ft / 2 904 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Cherchez la neige en altitude et sur les pentes orientées au nord : elles la gardent le plus longtemps, les pentes sud la perdent en premier.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Kendall Mountain reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest américain le 5 novembre 2026 (modèle de neige SnowScope) : Kendall Mountain, Telluride, Lee's Ski Hill, Wolf Creek, Cimarron Mountain Club."
+   }
+  },
+  "de": {
+   "title": "Schneehöhen im US-Westen: Kendall Mountain vorn mit 51 in (5. November)",
+   "description": "Am meisten Schnee im US-Westen liegt in Kendall Mountain: etwa 51 in (130 cm) in den oberen Hängen, laut unserem Schneemodell. Danach kommen …",
+   "lede": "Am meisten Schnee im US-Westen liegt in Kendall Mountain: etwa 51 in (130 cm) in den oberen Hängen, laut unserem Schneemodell. Danach kommen Telluride (50 in (126 cm)) und Lee's Ski Hill (35 in (88 cm)). 145 von 195 Skigebieten im US-Westen haben heute Schnee in den oberen Hängen, und unser Modell zählt 91.746 sq mi (237.620 km²) Schneefläche.",
+   "sections": [
+    {
+     "h": "Wo heute Schnee liegt",
+     "p": [
+      "Die Schneefläche schrumpfte von 97.800 sq mi (253.300 km²) am 3. November auf heute 91.746 sq mi (237.620 km²), und unsere Prognose ergibt 71.911 sq mi (186.250 km²) am 8. November.",
+      "Die Höhe macht den Unterschied: In Telluride zeigt unser Modell 43 in (108 cm) am Gipfel (12.507 ft / 3.812 m), 11 in (29 cm) an der Mittelstation (10.620 ft / 3.237 m) und 1 in (3 cm) im Tal (8.734 ft / 2.662 m)."
+     ]
+    },
+    {
+     "h": "Was die Messstationen zeigen",
+     "p": [
+      "Die Messstation Rat Creek (11.680 ft / 3.560 m) maß am 1. November eine Schneehöhe von 26 in (66 cm), davon 9 in (23 cm) Neuschnee in 24 Stunden. Die Messstation Beartown (11.581 ft / 3.530 m) maß am 1. November eine Schneehöhe von 26 in (66 cm), davon 2 in (5 cm) Neuschnee in 24 Stunden. Die Messstation Red Mountain Pass (11.060 ft / 3.371 m) maß am 1. November eine Schneehöhe von 24 in (61 cm), davon 11 in (28 cm) Neuschnee in 24 Stunden.",
+      "Die Werte der Skigebiete sind Modellschätzungen für die oberen Hänge; Messstationen messen an einem Punkt, am angegebenen Tag."
+     ]
+    },
+    {
+     "h": "Im Vergleich mit früheren Wintern",
+     "p": [
+      "Auf 9.413 ft (2.869 m) in Kendall Mountain liegen die heutigen 4 in (9 cm) nahe am Normalwert: mehr als in 25 der letzten 46 Winter (üblich: 2 in (5 cm)).",
+      "Ein guter Start in Telluride: Auf 10.620 ft (3.237 m) zeigt unser Modell heute 14 in (36 cm), mehr als an diesem Datum in 36 der letzten 46 Winter (üblich: 4 in (11 cm))."
+     ]
+    },
+    {
+     "h": "Was als Nächstes kommt",
+     "p": [
+      "Bis zum 8. November ergibt unsere Prognose 1 in (2 cm) in Kendall Mountain, 1 in (2 cm) in Telluride und 1 in (2 cm) in Lee's Ski Hill.",
+      "In Kendall Mountain liegt die Nullgradgrenze am 7. November zwischen 5.610 ft (1.710 m) und 11.647 ft (3.550 m), über dem höchsten Punkt des Skigebiets (9.528 ft (2.904 m)): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich.",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Früher Schnee ist dünn. Bleib auf offenen, präparierten Pisten: Steine und Gras liegen oft knapp darunter.",
+    "Such den Schnee weit oben und an Nordhängen: Dort hält er am längsten, Südhänge verlieren ihn zuerst in der Sonne.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Kendall Mountain Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe im US-Westen am 5. November 2026 (SnowScope-Schneemodell): Kendall Mountain, Telluride, Lee's Ski Hill, Wolf Creek, Cimarron Mountain Club."
+   }
+  },
+  "it": {
+   "title": "Neve nell'Ovest degli USA: Kendall Mountain in testa con 51 in (5 novembre)",
+   "description": "La neve più abbondante nell'Ovest degli USA è a Kendall Mountain: circa 51 in (130 cm) sui pendii superiori, secondo il nostro modello neve. Poi …",
+   "lede": "La neve più abbondante nell'Ovest degli USA è a Kendall Mountain: circa 51 in (130 cm) sui pendii superiori, secondo il nostro modello neve. Poi vengono Telluride (50 in (126 cm)) e Lee's Ski Hill (35 in (88 cm)). 145 località su 195 nell'Ovest degli USA hanno oggi neve sui pendii superiori, e il nostro modello conta 91.746 sq mi (237.620 km²) di superficie innevata.",
+   "sections": [
+    {
+     "h": "Dove c'è neve oggi",
+     "p": [
+      "La superficie innevata è passata da 97.800 sq mi (253.300 km²) il 3 novembre a 91.746 sq mi (237.620 km²) oggi, e la nostra previsione indica 71.911 sq mi (186.250 km²) il 8 novembre.",
+      "La quota conta: a Telluride il nostro modello indica 43 in (108 cm) in vetta (12.507 ft / 3.812 m), 11 in (29 cm) a metà montagna (10.620 ft / 3.237 m) e 1 in (3 cm) alla base (8.734 ft / 2.662 m)."
+     ]
+    },
+    {
+     "h": "Cosa misurano le stazioni",
+     "p": [
+      "La stazione di Rat Creek (11.680 ft / 3.560 m) ha misurato 26 in (66 cm) di neve al suolo il 1 novembre, con 9 in (23 cm) di neve fresca in 24 ore. La stazione di Beartown (11.581 ft / 3.530 m) ha misurato 26 in (66 cm) di neve al suolo il 1 novembre, con 2 in (5 cm) di neve fresca in 24 ore. La stazione di Red Mountain Pass (11.060 ft / 3.371 m) ha misurato 24 in (61 cm) di neve al suolo il 1 novembre, con 11 in (28 cm) di neve fresca in 24 ore.",
+      "I valori delle località sono stime del modello per i pendii superiori; le stazioni misurano in un punto, alla data indicata."
+     ]
+    },
+    {
+     "h": "Rispetto agli inverni passati",
+     "p": [
+      "A 9.413 ft (2.869 m) a Kendall Mountain i 4 in (9 cm) di oggi sono vicini alla norma: più che in 25 dei 46 inverni passati (abituale: 2 in (5 cm)).",
+      "Un buon inizio a Telluride: a 10.620 ft (3.237 m) il nostro modello indica oggi 14 in (36 cm), più che in questa data in 36 dei 46 inverni passati (abituale: 4 in (11 cm))."
+     ]
+    },
+    {
+     "h": "Cosa arriva",
+     "p": [
+      "Fino al 8 novembre la nostra previsione indica 1 in (2 cm) a Kendall Mountain, 1 in (2 cm) a Telluride e 1 in (2 cm) a Lee's Ski Hill.",
+      "A Kendall Mountain lo zero termico sale tra 5.610 ft (1.710 m) e 11.647 ft (3.550 m) il 7 novembre, sopra la quota massima della località (9.528 ft (2.904 m)): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii.",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "La neve di inizio stagione è sottile. Resta sulle piste aperte e battute: sassi ed erba sono appena sotto.",
+    "Cerca la neve in quota e sui versanti nord: la conservano più a lungo, mentre i versanti sud la perdono per primi al sole.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Kendall Mountain riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve nell'Ovest degli USA il 5 novembre 2026 (modello neve SnowScope): Kendall Mountain, Telluride, Lee's Ski Hill, Wolf Creek, Cimarron Mountain Club."
+   }
+  },
+  "es": {
+   "title": "Nieve en el oeste de EE. UU.: Kendall Mountain en cabeza con 51 in (5 de noviembre)",
+   "description": "Donde más nieve hay en el oeste de EE. UU. es en Kendall Mountain: unos 51 in (130 cm) en las pistas altas, según nuestro modelo de nieve. Después …",
+   "lede": "Donde más nieve hay en el oeste de EE. UU. es en Kendall Mountain: unos 51 in (130 cm) en las pistas altas, según nuestro modelo de nieve. Después vienen Telluride (50 in (126 cm)) y Lee's Ski Hill (35 in (88 cm)). 145 de 195 estaciones en el oeste de EE. UU. tienen hoy nieve en las pistas altas, y nuestro modelo cuenta 91.746 sq mi (237.620 km²) de superficie nevada.",
+   "sections": [
+    {
+     "h": "Dónde está la nieve hoy",
+     "p": [
+      "La superficie nevada pasó de 97.800 sq mi (253.300 km²) el 3 de noviembre a 91.746 sq mi (237.620 km²) hoy, y nuestra previsión da 71.911 sq mi (186.250 km²) el 8 de noviembre.",
+      "La altitud cuenta: en Telluride, nuestro modelo da 43 in (108 cm) en la cota alta (12.507 ft / 3812 m), 11 in (29 cm) a media montaña (10.620 ft / 3237 m) y 1 in (3 cm) en la base (8734 ft / 2662 m)."
+     ]
+    },
+    {
+     "h": "Lo que miden las estaciones",
+     "p": [
+      "La estación de medida Rat Creek (11.680 ft / 3560 m) midió 26 in (66 cm) de nieve en el suelo el 1 de noviembre, con 9 in (23 cm) de nieve nueva en 24 horas. La estación de medida Beartown (11.581 ft / 3530 m) midió 26 in (66 cm) de nieve en el suelo el 1 de noviembre, con 2 in (5 cm) de nieve nueva en 24 horas. La estación de medida Red Mountain Pass (11.060 ft / 3371 m) midió 24 in (61 cm) de nieve en el suelo el 1 de noviembre, con 11 in (28 cm) de nieve nueva en 24 horas.",
+      "Las cifras de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida miden en un punto, en la fecha indicada."
+     ]
+    },
+    {
+     "h": "Comparado con los inviernos pasados",
+     "p": [
+      "A 9413 ft (2869 m) en Kendall Mountain, los 4 in (9 cm) de hoy están cerca de lo normal para la fecha: más que en 25 de los 46 inviernos pasados (lo habitual: 2 in (5 cm)).",
+      "Buen comienzo en Telluride: a 10.620 ft (3237 m), nuestro modelo da hoy 14 in (36 cm), más que en esta fecha en 36 de los 46 inviernos pasados (lo habitual: 4 in (11 cm))."
+     ]
+    },
+    {
+     "h": "Lo que viene",
+     "p": [
+      "Hasta el 8 de noviembre, nuestra previsión da 1 in (2 cm) en Kendall Mountain, 1 in (2 cm) en Telluride y 1 in (2 cm) en Lee's Ski Hill.",
+      "En Kendall Mountain, la cota de congelación llega a 5610 ft (1710 m)-11.647 ft (3550 m) el 7 de noviembre, por encima de la cota alta de la estación (9528 ft (2904 m)): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "La nieve de principio de temporada es fina. Quédate en pistas abiertas y pisadas: piedras y hierba están justo debajo.",
+    "Busca la nieve en lo alto y en las laderas orientadas al norte: la guardan más tiempo; las orientadas al sur la pierden antes.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Kendall Mountain recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de EE. UU. el 5 de noviembre 2026 (modelo de nieve de SnowScope): Kendall Mountain, Telluride, Lee's Ski Hill, Wolf Creek, Cimarron Mountain Club."
+   }
+  },
+  "ar": {
+   "title": "التلج فغرب ميريكان: Kendall Mountain فالمقدمة ب 51 إنش (5 نونبر)",
+   "description": "أكثر تلج فغرب ميريكان كاين ف Kendall Mountain: تقريبا 51 إنش (130 سم) فالجهة الفوقانية، حسب الموديل ديال التلج ديالنا. من بعدها Telluride (50 إنش …",
+   "lede": "أكثر تلج فغرب ميريكان كاين ف Kendall Mountain: تقريبا 51 إنش (130 سم) فالجهة الفوقانية، حسب الموديل ديال التلج ديالنا. من بعدها Telluride (50 إنش (126 سم)) و Lee's Ski Hill (35 إنش (88 سم)). 145 محطة من 195 فغرب ميريكان فيهم التلج فالجهة الفوقانية اليوم، والموديل ديالنا كيحسب 91746 ميل² (237620 كم²) ديال الأرض اللي فيها التلج.",
+   "sections": [
+    {
+     "h": "فين كاين التلج اليوم",
+     "p": [
+      "المساحة اللي فيها التلج دازت من 97800 ميل² (253300 كم²) نهار 3 نونبر ل 91746 ميل² (237620 كم²) اليوم، والتوقعات ديالنا كتعطي 71911 ميل² (186250 كم²) نهار 8 نونبر.",
+      "العلو مهم: ف Telluride، الموديل ديالنا كيعطي 43 إنش (108 سم) فالفوق (12507 قدم / 3812 م)، 11 إنش (29 سم) فالوسط (10620 قدم / 3237 م) و 1 إنش (3 سم) فالتحت (8734 قدم / 2662 م)."
+     ]
+    },
+    {
+     "h": "شنو قاسو المحطات",
+     "p": [
+      "محطة القياس Rat Creek (11680 قدم / 3560 م) قاست 26 إنش (66 سم) ديال التلج فالأرض نهار 1 نونبر، منهم 9 إنش (23 سم) تلج جديد ف 24 ساعة. محطة القياس Beartown (11581 قدم / 3530 م) قاست 26 إنش (66 سم) ديال التلج فالأرض نهار 1 نونبر، منهم 2 إنش (5 سم) تلج جديد ف 24 ساعة. محطة القياس Red Mountain Pass (11060 قدم / 3371 م) قاست 24 إنش (61 سم) ديال التلج فالأرض نهار 1 نونبر، منهم 11 إنش (28 سم) تلج جديد ف 24 ساعة.",
+      "الأرقام ديال المحطات ديال التزلج تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس كتقيس فنقطة وحدة، فالتاريخ المكتوب."
+     ]
+    },
+    {
+     "h": "مقارنة مع الشتوات اللي فاتو",
+     "p": [
+      "على علو 9413 قدم (2869 م) ف Kendall Mountain، 4 إنش (9 سم) ديال اليوم قريبة من العادي فهاد التاريخ: أكثر من 25 من 46 ديال الشتوات اللي فاتو (العادي: 2 إنش (5 سم)).",
+      "بداية مزيانة ف Telluride: على علو 10620 قدم (3237 م)، الموديل ديالنا فيه اليوم 14 إنش (36 سم)، أكثر من هاد التاريخ ف 36 من 46 ديال الشتوات اللي فاتو (العادي: 4 إنش (11 سم))."
+     ]
+    },
+    {
+     "h": "شنو جاي",
+     "p": [
+      "حتى ل 8 نونبر، التوقعات ديالنا كتعطي 1 إنش (2 سم) ف Kendall Mountain، 1 إنش (2 سم) ف Telluride و 1 إنش (2 سم) ف Lee's Ski Hill.",
+      "ف Kendall Mountain، علو الجليد غادي يكون بين 5610 قدم (1710 م) و 11647 قدم (3550 م) نهار 7 نونبر، فوق أعلى نقطة فالمحطة (9528 قدم (2904 م)): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات.",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "التلج ديال بداية الموسم رقيق. بقى فالبيستات المحلولة والمدكوكة: الحجر والربيع يمكن يكونو تحت نيشان.",
+    "قلب على التلج فالعلو وفالجهات اللي كتشوف للشمال: كيحافظو عليه كثر، والجهات اللي كتشوف للجنوب كيمشي ليهم بالشمس.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Kendall Mountain يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب ميريكان نهار 5 نونبر 2026 (الموديل ديال SnowScope): Kendall Mountain, Telluride, Lee's Ski Hill, Wolf Creek, Cimarron Mountain Club."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  },
+  "fr": {
+   "writer": "template"
+  },
+  "de": {
+   "writer": "template"
+  },
+  "it": {
+   "writer": "template"
+  },
+  "es": {
+   "writer": "template"
+  },
+  "ar": {
+   "writer": "template"
+  }
+ },
+ "words_en": 426,
+ "indexable": true,
+ "main": {
+  "slug": "kendall_mountain_recreation_area",
+  "name": "Kendall Mountain",
+  "lat": 37.8115,
+  "lon": -107.6563
+ },
+ "places": [
+  {
+   "name": "Kendall Mountain",
+   "lat": 37.8115,
+   "lon": -107.6563
+  },
+  {
+   "name": "Telluride",
+   "lat": 37.9197,
+   "lon": -107.8348
+  },
+  {
+   "name": "Lee's Ski Hill",
+   "lat": 38.0187,
+   "lon": -107.6688
+  },
+  {
+   "name": "Wolf Creek",
+   "lat": 37.4632,
+   "lon": -106.7905
+  },
+  {
+   "name": "Cimarron Mountain Club",
+   "lat": 38.2978,
+   "lon": -107.619
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "kendall_mountain_recreation_area",
+   "name": "Kendall Mountain"
+  },
+  {
+   "slug": "telluride_ski_area",
+   "name": "Telluride"
+  },
+  {
+   "slug": "lee_s_ski_hill",
+   "name": "Lee's Ski Hill"
+  },
+  {
+   "slug": "wolf_creek_ski_area",
+   "name": "Wolf Creek"
+  },
+  {
+   "slug": "cimarron_mountain_club",
+   "name": "Cimarron Mountain Club"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "kendall_mountain_recreation_area",
+    "name": "Kendall Mountain",
+    "depth": 130,
+    "new72": 3,
+    "next": 2,
+    "top_m": 2904
+   },
+   {
+    "slug": "telluride_ski_area",
+    "name": "Telluride",
+    "depth": 126,
+    "new72": 4,
+    "next": 2,
+    "top_m": 3812
+   },
+   {
+    "slug": "lee_s_ski_hill",
+    "name": "Lee's Ski Hill",
+    "depth": 88,
+    "new72": 4,
+    "next": 2,
+    "top_m": 2421
+   },
+   {
+    "slug": "wolf_creek_ski_area",
+    "name": "Wolf Creek",
+    "depth": 82,
+    "new72": 1,
+    "next": 0,
+    "top_m": 3585
+   },
+   {
+    "slug": "cimarron_mountain_club",
+    "name": "Cimarron Mountain Club",
+    "depth": 78,
+    "new72": 6,
+    "next": 0,
+    "top_m": 3461
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-07",
+ "map_link": "https://snowscope.app/#@37.812,-107.656,9.0",
+ "seconds": 0.0
+}
