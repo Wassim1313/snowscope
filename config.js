@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://property-last-behind-charles.trycloudflare.com";
+window.SNOWSCOPE_API = "https://correctly-arising-kernel-ceramic.trycloudflare.com";
