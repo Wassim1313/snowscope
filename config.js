@@ -1,1 +1,1 @@
-window.SNOWSCOPE_API = "https://nor-owen-blend-michelle.trycloudflare.com";
+window.SNOWSCOPE_API = "https://vid-where-surface-uni.trycloudflare.com";
