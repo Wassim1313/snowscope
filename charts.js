@@ -4,7 +4,7 @@
    past winters muted, the snow ramp for depth, the theme tokens of site.css (light + dark), tabular numbers, units
    through SS.U (metric / US), a screen-reader table under every chart, hover + keyboard tooltips (SSC.bind).
    The chart roots carry data-noi18n: charts.js translates its own strings (table T below) so the page translator
-   never touches them twice.  API: window.SSC = { season, strip, week, elev, fallCell, fallTitle, paired, powder, bind, t }. */
+   never touches them twice.  API: window.SSC = { season, strip, verdict, rankBars, bands, week, elev, fallCell, fallTitle, paired, powder, bind, t }. */
 (() => {
   "use strict";
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
@@ -47,6 +47,36 @@
     "last winter": ["l'hiver dernier", "letzter Winter", "l'inverno scorso", "el invierno pasado", "الشتا اللي فاتت"],
     "Winter": ["Hiver", "Winter", "Inverno", "Invierno", "الشتا"],
     "Depth on this date": ["Hauteur à cette date", "Höhe an diesem Tag", "Altezza in questa data", "Espesor en esta fecha", "العلو فهاد النهار"],
+    // past-winters verdict + rank bars + band chart (owner 2026-11-06: plain answers, "is there more or less snow than usual?")
+    "Snow is unusual here {a}": ["Neige inhabituelle ici {a}", "Schnee ist hier ungewöhnlich {a}", "Neve insolita qui {a}", "Nieve poco habitual aquí {a}", "التلج ماشي عادي هنا {a}"],
+    "No snow yet, though most winters have some by now": ["Pas encore de neige, alors que la plupart des hivers en ont déjà", "Noch kein Schnee, obwohl die meisten Winter jetzt schon welchen haben", "Ancora niente neve, mentre quasi tutti gli inverni ne hanno già", "Aún sin nieve, cuando la mayoría de inviernos ya tienen", "مازال ما كاينش التلج، وأغلب الشتوات كيكون فيهم دابا"],
+    "Much more snow than usual {a}": ["Beaucoup plus de neige que d'habitude {a}", "Viel mehr Schnee als üblich {a}", "Molta più neve del solito {a}", "Mucha más nieve de lo habitual {a}", "تلج كثر بزاف من العادة {a}"],
+    "More snow than usual {a}": ["Plus de neige que d'habitude {a}", "Mehr Schnee als üblich {a}", "Più neve del solito {a}", "Más nieve de lo habitual {a}", "تلج كثر من العادة {a}"],
+    "Today {a} · usually about {b} on {c}": ["Aujourd'hui {a} · d'habitude environ {b} le {c}", "Heute {a} · sonst meist etwa {b} am {c}", "Oggi {a} · di solito circa {b} il {c}", "Hoy {a} · lo habitual, unos {b} el {c}", "اليوم {a} · العادة تقريبا {b} نهار {c}"],
+    "Today {a} · most winters have none on {b}": ["Aujourd'hui {a} · la plupart des hivers n'en ont pas le {b}", "Heute {a} · die meisten Winter haben am {b} keinen", "Oggi {a} · quasi tutti gli inverni non ne hanno il {b}", "Hoy {a} · la mayoría de inviernos no tienen el {b}", "اليوم {a} · أغلب الشتوات ما فيهمش التلج نهار {b}"],
+    "Usually about {a} on {b}": ["D'habitude environ {a} le {b}", "Sonst meist etwa {a} am {b}", "Di solito circa {a} il {b}", "Lo habitual: unos {a} el {b}", "العادة تقريبا {a} نهار {b}"],
+    "When there was snow on {a}, usually about {b}": ["Quand il y avait de la neige le {a} : environ {b}", "Wenn am {a} Schnee lag, meist etwa {b}", "Quando c'era neve il {a}, di solito circa {b}", "Cuando hubo nieve el {a}, unos {b}", "ملي كان التلج نهار {a}، العادة تقريبا {b}"],
+    "More snow than {a} in 10 past winters": ["Plus de neige que {a} sur 10 des hivers passés", "Mehr Schnee als {a} von 10 früheren Wintern", "Più neve di {a} su 10 inverni passati", "Más nieve que {a} de cada 10 inviernos pasados", "تلج كثر من {a} من 10 ديال الشتوات اللي فاتو"],
+    "Less snow than {a} in 10 past winters": ["Moins de neige que {a} sur 10 des hivers passés", "Weniger Schnee als {a} von 10 früheren Wintern", "Meno neve di {a} su 10 inverni passati", "Menos nieve que {a} de cada 10 inviernos pasados", "تلج قل من {a} من 10 ديال الشتوات اللي فاتو"],
+    "More snow than any past winter on this date": ["Plus de neige que tous les hivers passés à cette date", "Mehr Schnee als jeder frühere Winter an diesem Tag", "Più neve di ogni inverno passato in questa data", "Más nieve que cualquier invierno pasado en esta fecha", "تلج كثر من حتى شتا فاتت فهاد النهار"],
+    "Less snow than any past winter on this date": ["Moins de neige que tous les hivers passés à cette date", "Weniger Schnee als jeder frühere Winter an diesem Tag", "Meno neve di ogni inverno passato in questa data", "Menos nieve que cualquier invierno pasado en esta fecha", "تلج قل من حتى شتا فاتت فهاد النهار"],
+    "Only {a} in 10 winters had snow on this date": ["Seulement {a} sur 10 des hivers passés avaient de la neige à cette date", "Nur {a} von 10 Wintern hatten an diesem Tag Schnee", "Solo {a} su 10 inverni avevano neve in questa data", "Solo {a} de cada 10 inviernos tenían nieve en esta fecha", "غير {a} من 10 ديال الشتوات كان فيهم التلج فهاد النهار"],
+    "Only {a} of the last {b} winters had snow on this date": ["Seulement {a} des {b} derniers hivers avaient de la neige à cette date", "Nur {a} der letzten {b} Winter hatten an diesem Tag Schnee", "Solo {a} degli ultimi {b} inverni avevano neve in questa data", "Solo {a} de los últimos {b} inviernos tenían nieve en esta fecha", "غير {a} من آخر {b} شتوات كان فيهم التلج فهاد النهار"],
+    "No past winter had snow on this date": ["Aucun hiver passé n'avait de neige à cette date", "Kein früherer Winter hatte an diesem Tag Schnee", "Nessun inverno passato aveva neve in questa data", "Ningún invierno pasado tenía nieve en esta fecha", "حتى شتا فاتت ما كان فيها التلج فهاد النهار"],
+    "{a} in 10 winters had snow on this date": ["{a} sur 10 des hivers passés avaient de la neige à cette date", "{a} von 10 Wintern hatten an diesem Tag Schnee", "{a} su 10 inverni avevano neve in questa data", "{a} de cada 10 inviernos tenían nieve en esta fecha", "{a} من 10 ديال الشتوات كان فيهم التلج فهاد النهار"],
+    "Every past winter had snow on this date": ["Tous les hivers passés avaient de la neige à cette date", "Jeder frühere Winter hatte an diesem Tag Schnee", "Ogni inverno passato aveva neve in questa data", "Todos los inviernos pasados tenían nieve en esta fecha", "كل الشتوات اللي فاتو كان فيهم التلج فهاد النهار"],
+    "One bar per past winter on {a}, least to most snow": ["Une barre par hiver passé, le {a}, du moins au plus de neige", "Ein Balken pro früherem Winter am {a}, von wenig zu viel Schnee", "Una barra per ogni inverno passato il {a}, da meno a più neve", "Una barra por invierno pasado el {a}, de menos a más nieve", "عمود لكل شتا فاتت نهار {a}، من القل للكثر"],
+    "Right in the middle of past winters": ["Pile dans la moyenne des hivers passés", "Genau in der Mitte früherer Winter", "Proprio nella media degli inverni passati", "Justo en la media de los inviernos pasados", "بالضبط فالوسط ديال الشتوات اللي فاتو"],
+    "no snow": ["pas de neige", "kein Schnee", "niente neve", "sin nieve", "بلا تلج"],
+    "least snow": ["moins de neige", "wenig Schnee", "meno neve", "menos nieve", "قل تلج"],
+    "most snow": ["plus de neige", "viel Schnee", "più neve", "más nieve", "كثر تلج"],
+    "This winter against past winters": ["Cet hiver face aux hivers passés", "Dieser Winter im Vergleich zu früheren Wintern", "Quest'inverno rispetto agli inverni passati", "Este invierno frente a inviernos pasados", "هاد الشتا مقارنة مع الشتوات اللي فاتو"],
+    "The whole season": ["Toute la saison", "Die ganze Saison", "Tutta la stagione", "Toda la temporada", "الموسم كامل"],
+    "this winter": ["cet hiver", "dieser Winter", "quest'inverno", "este invierno", "هاد الشتا"],
+    "forecast": ["prévision", "Vorhersage", "previsione", "previsión", "التوقعات"],
+    "normal (half of winters)": ["normal (un hiver sur deux)", "normal (jeder zweite Winter)", "normale (metà degli inverni)", "normal (la mitad de los inviernos)", "عادي (نص الشتوات)"],
+    "8 in 10 winters": ["8 hivers sur 10", "8 von 10 Wintern", "8 inverni su 10", "8 de cada 10 inviernos", "8 شتوات من 10"],
+    "normal": ["normal", "normal", "normale", "normal", "عادي"],
     // week ahead
     "Snow on {a}: +{b}": ["Neige {a} : +{b}", "Schnee am {a}: +{b}", "Neve {a}: +{b}", "Nieve el {a}: +{b}", "التلج نهار {a}: +{b}"],
     "rain below {a}": ["pluie sous {a}", "Regen unter {a}", "pioggia sotto {a}", "lluvia por debajo de {a}", "الشتا تحت {a}"],
@@ -319,6 +349,180 @@
     const table = "<caption>" + esc(o.title) + "</caption>" + trow([t("Winter"), t("Depth on this date")], true) +
       o.by.slice().sort((a, b) => b.today_cm - a.today_cm).map((y) => trow([sz(y.season), dep(y.today_cm)])).join("");
     return { title: o.title, html: wrap("c-strip", "", s, table, null) };
+  }
+
+  // ======================================================================== 2b. past winters on this date (owner 2026-11-06)
+  // One plain answer to "is there more or less snow than usual here today?", from the exact per-winter values on this
+  // date (compare.by_year). o: { by:[{season, today_cm}], v (today, cm), date } -> { head, sub, rank, ... } | null.
+  // Rare-snow dates (fewer than half of the winters had snow) are said plainly ("Only 2 in 10 winters had snow...").
+  const qtl = (s, q) => { if (!s.length) return null; const i = (s.length - 1) * q, a = Math.floor(i), b = Math.ceil(i); return s[a] + (s[b] - s[a]) * (i - a); };
+  function verdict(o) {
+    const ys = (o.by || []).map((y) => y.today_cm).filter((y) => y != null), n = ys.length;
+    if (n < 3 || o.v == null) return null;
+    const v = Math.max(0, o.v), has = v >= 1, srt = ys.slice().sort((a, b) => a - b), mx = srt[n - 1];
+    const snowy = ys.filter((y) => y >= 1).length, wet = srt.filter((y) => y >= 1), med = qtl(srt, 0.5), wetMed = qtl(wet, 0.5);
+    const less = has ? ys.filter((y) => y < v - 0.5).length : 0, more = ys.filter((y) => y >= 1 && y > v + 0.5).length, ties = n - less - more;
+    const p = (less + ties / 2) / n, pr = period(o.date), day = dayMon(o.date);
+    const in10 = (k) => Math.min(9, Math.max(1, Math.round((10 * k) / n)));
+    let head, sub = "", rank, tone;
+    if (snowy / n < 0.5) {          // snow is the exception on this date
+      head = has ? t("Snow is unusual here {a}", pr) : t("No snow yet, as usual {a}", pr);
+      tone = has ? "more" : "same";
+      sub = has ? t("Today {a} · most winters have none on {b}", dep(v), day) : snowy && wetMed != null ? t("When there was snow on {a}, usually about {b}", day, dep(wetMed)) : "";
+      rank = !snowy ? t("No past winter had snow on this date") : snowy <= 3 ? t("Only {a} of the last {b} winters had snow on this date", snowy, n) : t("Only {a} in 10 winters had snow on this date", in10(snowy));
+      if (has && v > mx + 0.5) rank = t("More snow than any past winter on this date");
+    } else if (!has) {
+      head = t("No snow yet, though most winters have some by now"); tone = "less";
+      const u = med >= 1 ? med : wetMed;
+      sub = u != null ? t("Usually about {a} on {b}", dep(u), day) : "";
+      rank = snowy === n ? t("Every past winter had snow on this date") : t("{a} in 10 winters had snow on this date", in10(snowy));
+    } else {
+      head = t(p >= 0.9 ? "Much more snow than usual {a}" : p >= 0.6 ? "More snow than usual {a}" : p > 0.4 ? "About as much snow as usual {a}" : p > 0.1 ? "Less snow than usual {a}" : "Much less snow than usual {a}", pr);
+      tone = p >= 0.6 ? "more" : p > 0.4 ? "same" : "less";
+      sub = t("Today {a} · usually about {b} on {c}", dep(v), dep(Math.max(med, 0)), day);
+      rank = less === n ? t("More snow than any past winter on this date") : more === n ? t("Less snow than any past winter on this date")
+        : p >= 0.45 && p <= 0.55 ? t("Right in the middle of past winters")
+        : p >= 0.5 ? t("More snow than {a} in 10 past winters", in10(less)) : t("Less snow than {a} in 10 past winters", in10(more));
+    }
+    return { head, sub, rank, tone, n, snowy, less, more, med, wetMed, v };
+  }
+  // rounded-top column anchored to the baseline
+  const col = (x, y0, w, h, r) => { r = Math.min(r, w / 2, h); return "M" + f1(x) + "," + f1(y0) + "V" + f1(y0 - h + r) + "Q" + f1(x) + "," + f1(y0 - h) + " " + f1(x + r) + "," + f1(y0 - h) +
+    "H" + f1(x + w - r) + "Q" + f1(x + w) + "," + f1(y0 - h) + " " + f1(x + w) + "," + f1(y0 - h + r) + "V" + f1(y0) + "Z"; };
+  // the rank bars: every past winter on this date as one column, sorted from least to most snow, today's column in the
+  // accent at its rank, the usual depth as a hairline. o: { W, by, v, date, lastSeason, title }
+  function rankBars(o) {
+    const W = o.W || width(o.box, 280, 620), by = o.by.filter((y) => y.today_cm != null), vd = verdict(o);
+    if (!vd) return { html: "" };
+    const v = Math.max(0, o.v), past = by.slice().sort((a, b) => a.today_cm - b.today_cm);
+    const at = vd.less + Math.floor((by.length - vd.less - vd.more) / 2) * (v >= 1 ? 1 : 0);
+    const items = past.map((y) => ({ cm: y.today_cm, season: y.season })); items.splice(v >= 1 ? at : 0, 0, { cm: v, me: true });
+    const N = items.length, top = 22, ph = 104, y0 = top + ph, H = y0 + 26, slot = W / N, gap = slot >= 6 ? 2 : 1, bw = Math.max(1.5, slot - gap);
+    const mx = Math.max(5, ...items.map((q) => q.cm)) * 1.08, Y = (cm) => Math.max(0, Math.min(1, cm / mx)) * ph;
+    const sz = (s) => String(s).replace("-", "–");
+    let s = '<svg class="chart rbars" width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + esc(o.title || vd.rank) + '">';
+    const boxes = [];
+    items.forEach((q, i) => {
+      const x = i * slot + gap / 2, h = q.cm >= 1 ? Math.max(3, Y(q.cm)) : 2, lab = q.me ? t("Today") + " " + dep(q.cm) : sz(q.season) + ": " + dep(q.cm);
+      s += '<g class="hit" data-tip="' + esc(lab) + '"><rect class="hb" x="' + f1(i * slot) + '" y="' + top + '" width="' + f1(slot) + '" height="' + ph + '"/>' +
+        '<path class="rb' + (q.me ? " me" : q.cm < 1 ? " z" : "") + (q.season && q.season === o.lastSeason ? " last" : "") + '" d="' + col(x, y0, bw, h, 2) + '"/></g>';
+      q.x = x + bw / 2; q.h = h;
+    });
+    s += '<line class="ax0" x1="0" x2="' + W + '" y1="' + y0 + '" y2="' + y0 + '"/>';
+    // the usual depth on this date (median of past winters) as a hairline, labelled at the end with the most room
+    if (vd.med >= 1) {
+      const uy = y0 - Y(vd.med), lab = t("usual") + " " + dep(vd.med), w = tw(lab, 10.5) + 4;
+      s += '<line class="ru" x1="0" x2="' + W + '" y1="' + f1(uy) + '" y2="' + f1(uy) + '"/>';
+      const meX = (items.findIndex((q) => q.me) + 0.5) * slot, lx = meX < W / 2 ? W - w : 2, b = { x: lx, y: uy - 13, w, h: 12 };
+      s += '<text class="ul" x="' + lx + '" y="' + f1(uy - 4) + '">' + esc(lab) + "</text>"; boxes.push(b);
+    }
+    // today: label above its column (marker dot when the column is only a stub)
+    const me = items.find((q) => q.me), lab = t("Today") + " " + dep(v), w = tw(lab, 12) + 4;
+    const ly = Math.max(12, y0 - me.h - 6), lx = Math.min(W - w, Math.max(0, me.x - w / 2));
+    // label at the top of the plot, a leader down to today's column (so it never sits on the usual line)
+    const ty = 12;
+    s += '<line class="rld" x1="' + f1(me.x) + '" x2="' + f1(me.x) + '" y1="' + (ty + 4) + '" y2="' + f1(y0 - me.h - 2) + '"/>';
+    if (me.h < 4) s += '<circle class="rme" cx="' + f1(me.x) + '" cy="' + f1(y0 - 5) + '" r="4"/>';
+    s += '<text class="vl" x="' + f1(lx) + '" y="' + ty + '">' + esc(lab) + "</text>";
+    boxes.push({ x: lx, y: 0, w, h: 16 });
+    // the snowiest past winter, labelled on its column when there is room
+    const best = items.filter((q) => !q.me).slice(-1)[0];
+    if (best && best.cm >= 1) {
+      const bl = sz(best.season) + " · " + dep(best.cm), bw2 = tw(bl, 10.5) + 4, bx = Math.min(W - bw2, Math.max(0, best.x - bw2 / 2)), by2 = Math.max(10, y0 - best.h - 5), bb = { x: bx, y: by2 - 11, w: bw2, h: 12 };
+      if (!hits(boxes, bb)) { s += '<text class="an" x="' + f1(bx) + '" y="' + f1(by2) + '">' + esc(bl) + "</text>"; boxes.push(bb); }
+    }
+    // under the axis: the run of winters with no snow, then the reading direction
+    const zs = items.filter((q) => !q.me && q.cm < 1).length, zi = items.map((q, i) => (!q.me && q.cm < 1 ? i : -1)).filter((i) => i >= 0);
+    let zb = null;
+    if (zs >= 3) {
+      const x1 = zi[0] * slot + 1, x2 = (zi[zi.length - 1] + 1) * slot - 1, zl = t("no snow") + " (" + zs + ")";
+      s += '<path class="zbr" d="M' + f1(x1) + "," + (y0 + 5) + "V" + (y0 + 9) + "H" + f1(x2) + "V" + (y0 + 5) + '"/>';
+      const zx = Math.min(W - tw(zl, 10.5) - 2, Math.max(0, (x1 + x2) / 2 - tw(zl, 10.5) / 2));
+      s += '<text class="bl" x="' + f1(zx) + '" y="' + (y0 + 21) + '">' + esc(zl) + "</text>"; zb = { x: zx, w: tw(zl, 10.5) };
+    }
+    const ll = t("least snow"), rl = t("most snow") + " →";
+    if (!zb || zb.x > tw("← " + ll, 10.5) + 8) s += '<text class="ax" x="0" y="' + (y0 + 21) + '">' + esc("← " + ll) + "</text>";
+    if (!zb || zb.x + zb.w < W - tw(rl, 10.5) - 8) s += '<text class="ax" x="' + W + '" y="' + (y0 + 21) + '" text-anchor="end">' + esc(rl) + "</text>";
+    s += "</svg>";
+    const table = "<caption>" + esc(o.title || vd.rank) + "</caption>" + trow([t("Winter"), t("Depth on this date")], true) + trow([t("Today"), dep(v)]) +
+      past.slice().reverse().map((y) => trow([sz(y.season), dep(y.today_cm)])).join("");
+    return { title: o.title || vd.rank, html: wrap("c-rank", o.title || vd.rank, s, table, null, t("One bar per past winter on {a}, least to most snow", dayMon(o.date))), verdict: vd };
+  }
+  // the season as percentile bands of past winters (10-90 % and 25-75 %), the usual line, this winter, its forecast and
+  // today. Window: ~8 weeks either side of today inside the season (o.start / o.end override, e.g. the whole season).
+  // o: { W, today, series:[{d, v, fc}], clim(key, date), lockFrom, start, end, title, H }
+  function bands(o) {
+    const W = o.W || width(o.box, 280, 620), H = o.H || 200, top = 12, bot = 22, L = 4, R = 6, today = o.today;
+    const sy = +today.slice(0, 4) - (+today.slice(5, 7) >= 8 ? 0 : 1), s0 = sy + "-10-01", s1 = (sy + 1) + "-06-15";
+    const fcEnd = (o.series || []).reduce((m, p) => (p.d > m ? p.d : m), today);
+    let start = o.start || (addDays(today, -42) < s0 ? s0 : addDays(today, -42));
+    let end = o.end || (addDays(today, 42) > s1 ? s1 : addDays(today, 42));
+    if (!o.end && fcEnd > end) end = fcEnd;
+    if (!o.start && days(start, end) < 84) start = addDays(end, -84) < s0 ? s0 : addDays(end, -84);
+    if (!o.end && days(start, end) < 84) end = addDays(start, 84);
+    const n = days(start, end), g = (k, d) => (o.clim ? o.clim(k, d) : null);
+    const ser = (o.series || []).filter((p) => p.v != null && p.d >= start && p.d <= end).sort((a, b) => (a.d < b.d ? -1 : 1));
+    let max = Math.max(10, ...ser.map((p) => p.v));
+    for (let k = 0; k <= n; k += 2) { const v = g("p90", addDays(start, k)); if (v != null) max = Math.max(max, v); }
+    max *= 1.1;
+    const y0 = H - bot, X = (d) => L + (days(start, d) / n) * (W - L - R), Y = (v) => y0 - (Math.min(Math.max(v, 0), max) / max) * (y0 - top);
+    const band = (lo, hi) => { let a = "", b = "", out = "";
+      for (let k = 0; k <= n; k++) { const d = addDays(start, k), l = g(lo, d), u = g(hi, d); if (l == null || u == null) { if (a) out += a + b + "Z"; a = b = ""; continue; }
+        a += (a ? "L" : "M") + f1(X(d)) + "," + f1(Y(u)); b = "L" + f1(X(d)) + "," + f1(Y(l)) + b; }
+      return a ? out + a + b + "Z" : out; };
+    const line = (key) => { let s = "", on = false; for (let k = 0; k <= n; k++) { const d = addDays(start, k), v = g(key, d); if (v == null) { on = false; continue; } s += (on ? "L" : "M") + f1(X(d)) + "," + f1(Y(v)); on = true; } return s; };
+    const path = (pts) => pts.map((p, i) => (i ? "L" : "M") + f1(X(p.d)) + "," + f1(Y(p.v))).join("");
+    const past = ser.filter((p) => p.d <= today && !p.fc), fut = ser.filter((p) => p.d > today || p.fc);
+    const now = past.length ? past[past.length - 1] : null;
+    if (now && fut.length && fut[0].d > now.d) fut.unshift(now);
+    const title = o.title || t("This winter against past winters");
+    let s = '<svg class="chart" width="' + W + '" height="' + H + '" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + esc(title) + '">';
+    const boxes = [];
+    const dt = U().us() ? ticks(max / 1.1 / 2.54).map((i) => i * 2.54) : ticks(max / 1.1);      // round numbers in the shown unit
+    for (const v of dt) { s += '<line class="g" x1="' + L + '" x2="' + (W - R) + '" y1="' + f1(Y(v)) + '" y2="' + f1(Y(v)) + '"/><text class="ax" x="' + (L + 1) + '" y="' + f1(Y(v) - 3) + '">' + esc(dep(v)) + "</text>"; boxes.push({ x: L, y: Y(v) - 13, w: tw(dep(v)) + 4, h: 12 }); }
+    const has25 = !!line("p25");
+    if (o.clim) s += '<path class="q1" d="' + band("p10", "p90") + '"/>' + (has25 ? '<path class="q2" d="' + band("p25", "p75") + '"/>' : "") + '<path class="q50" d="' + line("p50") + '"/>';
+    s += '<line class="ax0" x1="' + L + '" x2="' + (W - R) + '" y1="' + y0 + '" y2="' + y0 + '"/>';
+    const span = n > 160;
+    for (let k = 0; k <= n; k++) { const d = addDays(start, k); if ((d.slice(8) === "01" || (!span && d.slice(8) === "15")) && X(d) < W - 22 && X(d) > 14) s += '<line class="tk" x1="' + f1(X(d)) + '" x2="' + f1(X(d)) + '" y1="' + y0 + '" y2="' + (y0 + 4) + '"/><text class="ax" x="' + f1(X(d)) + '" y="' + (H - 6) + '" text-anchor="middle">' + esc(d.slice(8) === "01" ? monShort(d) : dayMon(d)) + "</text>"; }
+    if (o.lockFrom && o.lockFrom < end) { const lx = X(o.lockFrom); s += '<rect class="lock" x="' + f1(lx) + '" y="' + top + '" width="' + f1(W - R - lx) + '" height="' + (y0 - top) + '"/><text class="lbl" x="' + f1((lx + W) / 2) + '" y="' + f1((top + y0) / 2) + '" text-anchor="middle">PRO</text>'; }
+    const tx = X(today);
+    if (tx >= L && tx <= W - R) s += '<line class="tl" x1="' + f1(tx) + '" x2="' + f1(tx) + '" y1="' + top + '" y2="' + y0 + '"/>';
+    if (fut.length > 1) s += '<path class="fc" d="' + path(fut) + '"/>';
+    if (past.length) s += '<path class="cur" d="' + path(past) + '"/>';
+    if (now) {
+      const lab = t("Today") + " " + dep(now.v), w = tw(lab, 12) + 4, ny = Y(now.v), ly = ny - 10 < top + 10 ? ny + 20 : ny - 10;
+      const lx = Math.min(W - R - w, Math.max(L, X(now.d) - w / 2));
+      s += '<circle class="now" cx="' + f1(X(now.d)) + '" cy="' + f1(ny) + '" r="5"/><text class="vl" x="' + f1(lx) + '" y="' + f1(ly) + '">' + esc(lab) + "</text>";
+      boxes.push({ x: lx, y: ly - 12, w, h: 14 }, { x: X(now.d) - 6, y: ny - 6, w: 12, h: 12 });
+    }
+    // direct labels: "usual" on the median, "normal" inside the 25-75 band, at the widest point away from today
+    if (o.clim) {
+      let bk = -1, bw = 0;
+      for (let k = 0; k <= n; k += 2) { const d = addDays(start, k), a = g("p75", d), b = g("p25", d); if (a != null && b != null && a - b > bw && X(d) > 40 && X(d) < W - 70 && Math.abs(X(d) - tx) > 56) { bw = a - b; bk = k; } }
+      if (bk >= 0) {
+        const d = addDays(start, bk), x = X(d) - 18, m = g("p50", d);
+        if (m != null && m >= 1) { const ly = Y(m) - 5, b = { x, y: ly - 10, w: tw(t("usual"), 10.5), h: 12 }; if (!hits(boxes, b)) { s += '<text class="ul" x="' + f1(x) + '" y="' + f1(ly) + '">' + esc(t("usual")) + "</text>"; boxes.push(b); } }
+        const ny = Y(g("p75", d)) + 12, nb = { x, y: ny - 10, w: tw(t("normal"), 10.5), h: 12 };
+        if (Y(g("p25", d)) - Y(g("p75", d)) > 30 && Math.abs(ny - (Y(m || 0) - 5)) > 12 && !hits(boxes, nb)) { s += '<text class="bl" x="' + f1(x) + '" y="' + f1(ny) + '">' + esc(t("normal")) + "</text>"; boxes.push(nb); }
+      }
+    }
+    s += "</svg>";
+    const id = "s" + ++SEQ, xs = [], tips = [], byD = Object.fromEntries(ser.map((p) => [p.d, p])), rows = [];
+    for (let k = 0; k <= n; k++) {
+      const d = addDays(start, k), p = byD[d], u = g("p50", d), q25 = g("p25", d), q75 = g("p75", d), lo = g("p10", d), hi = g("p90", d);
+      xs.push(X(d));
+      tips.push("<b>" + esc(dayMon(d)) + "</b>" + (p ? '<span><i class="k ' + (p.d > today || p.fc ? "fc" : "cur") + '"></i>' + esc(t(p.d > today || p.fc ? "forecast" : "this winter")) + " " + esc(dep(p.v)) + "</span>" : "") +
+        (u != null ? '<span><i class="k q50"></i>' + esc(t("usual")) + " " + esc(dep(u)) + "</span>" : "") +
+        (q25 != null && q75 != null ? '<span><i class="k q2"></i>' + esc(t("normal")) + " " + esc(U().dep(q25) + "–" + dep(q75)) + "</span>" : "") +
+        (lo != null && hi != null ? '<span><i class="k q1"></i>' + esc(t("8 in 10 winters")) + " " + esc(U().dep(lo) + "–" + dep(hi)) + "</span>" : ""));
+      if (k % 7 === 0) rows.push(trow([dayMon(d), p ? dep(p.v) : "–", u != null ? dep(u) : "–", q25 != null && q75 != null ? U().dep(q25) + "–" + dep(q75) : "–", lo != null && hi != null ? U().dep(lo) + "–" + dep(hi) : "–"]));
+    }
+    REG.set(id, { xs, tips, y0: top, y1: y0 });
+    const table = "<caption>" + esc(title) + "</caption>" + trow([t("Date"), t("this winter"), t("usual"), t("normal (half of winters)"), t("8 in 10 winters")], true) + rows.join("");
+    const key = '<div class="ssc-key"><span><i class="k cur"></i>' + esc(t("this winter")) + "</span>" + (fut.length > 1 ? '<span><i class="k fc"></i>' + esc(t("forecast")) + "</span>" : "") +
+      (o.clim ? '<span><i class="k q50"></i>' + esc(t("usual")) + "</span>" + (has25 ? '<span><i class="k q2"></i>' + esc(t("normal (half of winters)")) + "</span>" : "") + '<span><i class="k q1"></i>' + esc(t("8 in 10 winters")) + "</span>" : "") + "</div>";
+    return { title, html: wrap("c-bands", title, s, table, id).replace("</figure>", key + "</figure>") };
   }
 
   // ======================================================================== 3. next 7 days: new snow + snow line
@@ -643,6 +847,26 @@
 .ssc .k.s24{background:var(--accent)}.ssc .k.s72{background:var(--accent);opacity:.38}.ssc .k.dd{background:rgb(33,113,181);border-radius:50%;width:9px;height:9px}
 .ssc-key{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--ink3);margin-top:4px}
 .ssc-key .kr{margin-inline-start:auto}
+.ssc.c-bands{margin-top:16px}
+.ssc svg .q1{fill:var(--accent-tint)}
+.ssc svg .q2{fill:var(--accent);opacity:.2}
+.ssc svg .q50{fill:none;stroke:var(--accent-ink);stroke-width:1.5;stroke-linejoin:round}
+.ssc svg .tk{stroke:var(--outline);stroke-width:1}
+.ssc svg .rb{fill:var(--ink4);opacity:.5}
+.ssc svg .rb.z{opacity:.35}
+.ssc svg .rb.me{fill:var(--accent);opacity:1}
+.ssc svg .rld{stroke:var(--accent);stroke-width:1.2}
+.ssc svg text.ul,.ssc svg text.vl,.ssc svg text.an,.ssc svg text.bl{paint-order:stroke;stroke:var(--surface);stroke-width:3px;stroke-linejoin:round}
+.ssc svg .rme{fill:var(--accent);stroke:var(--surface);stroke-width:2}
+.ssc svg .ru{stroke:var(--accent-ink);stroke-width:1;opacity:.75}
+.ssc svg .zbr{fill:none;stroke:var(--ink4);stroke-width:1}
+.ssc svg .hit:hover .rb,.ssc svg .hit.on .rb{opacity:.85}
+.ssc .k.q1,.ssc-tip .k.q1{background:var(--accent-tint);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--accent) 25%,transparent)}
+.ssc .k.q2,.ssc-tip .k.q2{background:color-mix(in srgb,var(--accent) 24%,var(--surface))}
+.ssc .k.q50,.ssc-tip .k.q50{background:var(--accent-ink);height:2px;vertical-align:3px}
+.ssc .k.fc,.ssc-tip .k.fc{background:none;border-top:2px dashed var(--ink);height:0;vertical-align:3px}
+.ssc-tip .k.cur{background:var(--ink);height:3px;vertical-align:2px}
+.ptverd .ptsub{display:block;margin-top:4px;font-size:14px;line-height:1.35;font-weight:500;color:var(--ink2)}
 .ssc.c-strip .wstrip text.ws-t{font-size:10.5px;fill:var(--ink3)}
 .ssc.c-strip .wstrip text.ws-t.b{font-weight:650;fill:var(--ink2)}
 .ssc.c-strip .wstrip text.ws-u{font-size:10.5px;font-weight:650;fill:var(--accent-ink)}
@@ -675,5 +899,5 @@ td.bb.big .bbt i{background:var(--accent-ink)}
 `;
   if (!document.getElementById("ssc-css")) { const st = document.createElement("style"); st.id = "ssc-css"; st.textContent = css; document.head.appendChild(st); }
 
-  window.SSC = { season, strip, week, elev, fallCell, fallTitle, paired, powder, bind, t, stormsOf };
+  window.SSC = { season, strip, verdict, rankBars, bands, week, elev, fallCell, fallTitle, paired, powder, bind, t, stormsOf };
 })();

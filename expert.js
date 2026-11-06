@@ -27,7 +27,8 @@
   const RAIL = [
     { id: "depth", icon: "ac_unit", label: "Snow", key: "1" },
     { id: "powder", icon: "cloudy_snowing", label: "New snow", key: "2" },
-    { id: "p72", icon: "weather_snowy", label: "3 days", key: "3" },
+    { id: "nw48", icon: "weather_snowy", label: "48 h", key: "3" },
+    { id: "nw7", icon: "weather_snowy", label: "7 days", key: "w" },
     { id: "sat", icon: "satellite_alt", label: "Satellite", key: "4" },
     { id: "s30", icon: "grid_on", label: "Sharp 30 m", key: "s" },
     { sep: true },

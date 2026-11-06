@@ -74,7 +74,7 @@
     const fixed = S.cfg.site && S.cfg.site.api_url ? String(S.cfg.site.api_url).replace(/\/$/, "") : null;
     S.api = fixed || tunnel;                          // stable API address first, the tunnel as the fallback
     S.apiAlt = fixed && tunnel && tunnel !== fixed ? tunnel : null;
-    S.apiPc = S.apiAlt;                               // the PC (tunnel) while it is still the single DB writer
+    S.apiPc = null;                                   // 2026-11-05: app DB moved to Railway -> one host for everything
   }
   // Accounts, payments, Studio jobs, visit counter, community writes stay on the PC until the app DB moves to Railway
   // (docs/RAILWAY.md §5): those paths use S.apiPc when the site's main API is another host.
@@ -147,7 +147,7 @@
   const Ads = {
     loaded: false,
     client() { const c = ((S.cfg && S.cfg.adsense) || {}).client || ""; return /^ca-pub-\d{10,20}$/.test(c) ? c : ""; },
-    allowed() { return !!this.client() && !S.pro && !S.noAds && !NOADS; },
+    allowed() { return !!this.client() && !S.noAds && !NOADS; },
     start() {
       if (!this.allowed()) { this.hideAll(); return; }
       if (!this.loaded) {
@@ -179,6 +179,10 @@
         '<ins class="adsbygoogle" style="display:block;min-height:250px" data-ad-client="' +
         esc(this.client()) + '" data-ad-slot="' + esc(slot) + '"' +
         (fluid ? ' data-ad-format="fluid" data-ad-layout-key="' + esc(a.infeed_layout_key) + '"'
+         // AdSense native formats (owner creates the units, pastes slot_inarticle / slot_multiplex in web_config):
+         // in-article between paragraphs of a blog post, multiplex (related-content grid) at the end of a post
+         : el.dataset.ad === "inarticle" ? ' data-ad-format="fluid" data-ad-layout="in-article" style="text-align:center"'
+         : el.dataset.ad === "multiplex" ? ' data-ad-format="autorelaxed"'
                : ' data-ad-format="auto" data-full-width-responsive="true"') + "></ins></div>";
       el.hidden = false; el.dataset.filled = "1"; el.classList.add("filled");
       this.flush();
@@ -246,10 +250,13 @@
       const me = await api("/v1/me");
       S.me = me;
       const acc = me.account || {}, ent = me.entitlement || {};
-      S.pro = acc.tier === "premium" || ent.tier === "premium" || me.gating === false;
+      const paid = acc.tier === "premium" || ent.tier === "premium";
+      S.pro = paid || me.gating === false;
       // where Pro applies (owner 2026-11-03): null = everywhere; ["ATLAS"] = the Morocco lifetime (High Atlas only)
       S.scope = me.gating !== false && Array.isArray(ent.scope) && ent.scope.length ? ent.scope.map((x) => String(x).toUpperCase()) : null;
-      S.noAds = S.pro || !!ent.no_ads;
+      // ads follow what was PAID (Pro or "remove ads"), not the app's testing phase (gating off = everyone Pro in the
+      // apps): before 2026-11-05 every signed-in web visitor was ad-free while gating was off
+      S.noAds = paid || !!ent.no_ads;
       S.state = "ok";
       store.set("ss_ent", { uid: S.user.uid, pro: S.pro, noAds: S.noAds, t: Date.now() });
     } catch (e) {
@@ -266,7 +273,7 @@
     emit();
   }
   function emit() {
-    if (S.pro || S.noAds) Ads.hideAll(); else if (S.started) { Ads.start(); LMA.start(); }
+    if (S.noAds) Ads.hideAll(); else if (S.started) { Ads.start(); LMA.start(); }
     renderAcct();
     S.listeners.forEach((f) => { try { f(S); } catch (e) { console.error(e); } });
   }
@@ -357,7 +364,7 @@
   // rule as ads: free visitors only, never on account pages, and in Europe only after consent in Google's message.
   const LMA = {
     loaded: false,
-    want() { const s = S.cfg && S.cfg.stay22; return !!(s && s.aid && s.lma) && !S.pro && !S.noAds && !NOADS; },
+    want() { const s = S.cfg && S.cfg.stay22; return !!(s && s.aid && s.lma) && !S.noAds && !NOADS; },
     europe() { try { return /^(Europe|Atlantic\/(Canary|Madeira|Azores|Reykjavik|Faroe))/.test(Intl.DateTimeFormat().resolvedOptions().timeZone || ""); } catch { return true; } },
     start() {
       if (this.loaded || this.waiting || !this.want()) return;

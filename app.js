@@ -1,7 +1,7 @@
 /* SnowScope Web app: full-screen map + panel (desktop) / bottom sheet (phone), timeline, layers, Ski finder,
    Powder, You, resort panel with shareable URLs (history.pushState to the static resort pages).
    Free: static pictures in snow/ (500 m where there is snow, 1 km overview), values read from the same pixels.
-   Pro (signed in, GET /v1/me): 15 days, satellite snow, wind, freezing level, 3-day snow, forecasts, past winters. */
+   Pro (signed in, GET /v1/me): 15 days, satellite snow, wind, freezing level, 48 h / 7-day snow, forecasts, past winters. */
 (async () => {
   "use strict";
   const { esc } = SS;
@@ -34,7 +34,7 @@
   const ensureDem = () => { if (!map.getSource("dem")) map.addSource("dem", DEM); };
   const get = (k, d) => { const v = store.get(k); return v == null ? d : v; };
 
-  const st = { day: null, main: "depth", p72: false, over: { pistes: !!get("ss_pistes", 0), aval: false, pins: true, stays: !!get("ss_stays", 1), stn: !!get("ss_stn", 1), s30: !!get("ss_s30", 1) }, monly: !!get("ss_monly", 0), s30: undefined, s30fail: false, s30loaded: false, covered: false, scale: get("ss_scale", 100),
+  const st = { day: null, main: "depth", nw: 1, over: { pistes: !!get("ss_pistes", 0), aval: false, pins: true, stays: !!get("ss_stays", 1), stn: !!get("ss_stn", 1), s30: !!get("ss_s30", 1) }, monly: !!get("ss_monly", 0), s30: undefined, s30fail: false, s30loaded: false, covered: false, scale: get("ss_scale", 100),
     sharp: !!get("ss_sharp", false), style: get("ss_style", "outdoors"), terrain: !!get("ss_terrain", false), tab: "map", slug: null,
     region: null, pro: false, proIdx: null, proDates: null, gen: 0, fields: {}, pistes: { idx: null, loaded: new Set(), feats: [] },
     aval: null, radar: undefined, sheet: "peek", pushed: false, ski: { region: null, country: "", when: "today", radius: get("ss_radius", 200), min: 0, fresh: false, q: "" },
@@ -48,10 +48,21 @@
     return stops[stops.length - 1][1];
   };
   const depthStops = () => DEPTH.map(([v, c], i) => [i === 0 ? 1 : v * st.scale / 400, c]);
-  const p72on = () => st.p72 && st.day === DATA.today;      // 3-day snow pictures exist for today
-  const newStops = () => (p72on() ? NEW.map(([v, c], i) => [i === 0 ? 1 : v * 1.5, c]) : NEW);
+  // new-snow window (owner 2026-11-06): 24 h, 48 h or 7 days (3 = the snow storms' 3-day picture, storm posts only).
+  // The 48 h / 3-day / 7-day pictures exist for today; the other days show 24 h. Stops: the 24 h ramp x1.4 / x1.5 / x2.5
+  // rounded (engine/grid5km.py NEW48_STOPS / NEW7D_STOPS)
+  const nwin = () => (st.nw > 1 && st.day === DATA.today ? st.nw : 1);
+  const p72on = () => nwin() > 1;
+  const NEW_W = { 1: NEW, 2: [1, 7, 15, 30, 40, 70, 110], 3: [1, 7.5, 15, 30, 45, 75, 120], 7: [1, 15, 25, 50, 75, 125, 200] };
+  for (const w of [2, 3, 7]) NEW_W[w] = NEW_W[w].map((v, i) => [v, NEW[i][1]]);
+  const NW_KEY = { 1: "n", 2: "n2", 3: "n3", 7: "n7" };          // picture of each window
+  const NW_RES = { 1: 1, 2: 3, 3: 2, 7: 4 };                     // resorts.json snow [depth, 24 h, 3 days, 48 h, 7 days]
+  const NW_TITLE = { 1: "New snow, 24 h", 2: "New snow, 48 h", 3: "New snow, 3 days", 7: "New snow, 7 days" };
+  const NW_TICKS = { 1: [1, 10, 30, 80], 2: [1, 15, 40, 110], 3: [1, 15, 45, 120], 7: [1, 25, 75, 200] };
+  const NW_LABEL = { 1: "Last 24 h", 2: "Last 48 h", 7: "Last 7 days" };
+  const newStops = () => NEW_W[nwin()];
   const decDepth = (c) => (c <= 150 ? c : 150 + (c - 150) * 5);
-  const prod = () => (st.main === "powder" ? (p72on() ? "n3" : "n") : "d");
+  const prod = () => (st.main === "powder" ? NW_KEY[nwin()] : "d");
 
   function styleUrl() {
     return (STYLES[st.style] || STYLES.outdoors)[1];
@@ -76,14 +87,56 @@
   // ------------------------------------------------------------------ regions
   const slugOf = (code) => code.toLowerCase().replace("_ne", "-northeast").replace("_", "-");
   let regionMove = false;
-  // start region (v2): link > a region the visitor picked > the region with the most resorts with snow today
-  // (the time zone no longer decides: a Moroccan visitor saw an empty Atlas map)
+  // start region (v3, owner 2026-11-06 "zoom on the closest mountain range"): link > a region the visitor picked >
+  // the range closest to the visitor (time zone, then browser country / language; a granted GPS refines it after the
+  // map loads, see nearMe) > the region with the most resorts with snow today
+  const RANGE_BOX = { ALPS: [4.5, 43.5, 16.5, 48.5], PYRENEES: [-2, 42, 3.5, 43.4], ATLAS: [-10.5, 29, -1.5, 36],
+    US_WEST: [-125, 33, -104, 49], CA_WEST: [-128, 49, -113, 54.5], US_NE: [-75.5, 42.5, -70.5, 45.5] };
+  const hasRegion = (c) => DATA.regions.some((r) => r.code === c);
+  function nearestRange(lat, lon) {
+    let best = null, bd = Infinity;
+    for (const [c, b] of Object.entries(RANGE_BOX)) {
+      if (!hasRegion(c)) continue;
+      const x = Math.min(Math.max(lon, b[0]), b[2]), y = Math.min(Math.max(lat, b[1]), b[3]);
+      const d = Math.hypot((lon - x) * Math.cos(lat * Math.PI / 180), lat - y);
+      if (d < bd) { bd = d; best = c; }
+    }
+    return best;
+  }
+  function guessRange() {
+    let tz = ""; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch { /* old browser */ }
+    const langs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""]).map(String);
+    const l0 = langs[0] || "", cc = (/[-_]([A-Za-z]{2})$/.exec(l0) || [])[1], lang = l0.slice(0, 2).toLowerCase();
+    const byTz = /^Africa\/(Casablanca|El_Aaiun|Algiers|Tunis)$/.test(tz) ? "ATLAS"
+      : /^Europe\/(Madrid|Andorra|Lisbon)$/.test(tz) ? "PYRENEES"
+      : /^America\/(Vancouver|Edmonton|Calgary|Whitehorse|Yellowknife|Dawson_Creek|Fort_Nelson|Creston)$/.test(tz) ? "CA_WEST"
+      : /^America\/(New_York|Toronto|Montreal|Detroit|Halifax|Moncton|Indiana\/.*|Kentucky\/.*|St_Johns)$|^US\/Eastern$/.test(tz) ? "US_NE"
+      : /^(America\/|US\/|Pacific\/Honolulu)/.test(tz) ? "US_WEST"
+      : /^(Europe|Atlantic)\//.test(tz) ? "ALPS" : null;
+    const byCc = { MA: "ATLAS", DZ: "ATLAS", TN: "ATLAS", ES: "PYRENEES", AD: "PYRENEES", PT: "PYRENEES", US: "US_WEST", CA: "CA_WEST" }[(cc || "").toUpperCase()];
+    const byLang = { ar: "ATLAS", es: "PYRENEES", ca: "PYRENEES", eu: "PYRENEES", fr: "ALPS", de: "ALPS", it: "ALPS", sl: "ALPS" }[lang];
+    return [byTz, byCc, byLang].find((c) => c && hasRegion(c)) || null;
+  }
+  const startFixed = () => !!(DATA.regions.find((r) => slugOf(r.code) === location.hash.slice(1)) || (store.get("ss_region") && store.get("ss_region_pick")));
+  // GPS only when the visitor already granted it (never a prompt at start): fly to the range nearest to them
+  function nearMe() {
+    if (startFixed() || !navigator.permissions || !navigator.geolocation) return;
+    navigator.permissions.query({ name: "geolocation" }).then((p) => {
+      if (p.state !== "granted") return;
+      navigator.geolocation.getCurrentPosition((pos) => {
+        const c = nearestRange(pos.coords.latitude, pos.coords.longitude);
+        if (c && c !== st.region && !st.slug && !st.point && !st.origin) flyRegion(c);
+      }, () => {}, { maximumAge: 6e5, timeout: 8000 });
+    }).catch(() => {});
+  }
   function homeRegion() {
     const h = location.hash.slice(1);
     const fh = DATA.regions.find((r) => slugOf(r.code) === h);
     if (fh) return fh.code;
     const saved = store.get("ss_region");
     if (saved && store.get("ss_region_pick") && DATA.regions.some((r) => r.code === saved)) return saved;
+    const g = guessRange();
+    if (g) return g;
     const today = (r) => r.days.find((y) => y.date === DATA.today) || r.days[r.days.length - 1] || {};
     return DATA.regions.slice().sort((a, b) => (today(b).resorts_with_snow || 0) - (today(a).resorts_with_snow || 0) || (today(b).max_cm || 0) - (today(a).max_cm || 0))[0].code;
   }
@@ -172,7 +225,7 @@
     }
     if (!st.pro) {
       if (["sat", "wind", "freeze"].includes(st.main)) st.main = "depth";
-      st.p72 = false;
+      st.nw = 1;
       if (!DATA.dates.includes(st.day)) st.day = DATA.today;
     }
     if (was !== st.pro || st.pro) { drawDays(); drawLegend(); if (ready) renderMain(); }
@@ -216,7 +269,7 @@
     prefetchAround(d);
     if (window.SSX) SSX.onDay();
   }
-  const deckKey = () => prod() + ":" + st.scale + ":" + p72on();
+  const deckKey = () => prod() + ":" + st.scale + ":" + nwin();
   const deckReady = (d) => !!(st.deck && ["depth", "powder"].includes(st.main) && st.deck.key === deckKey() && st.deck.dates.includes(d) && st.deck.done.has(d));
   function deckShow(d, next, t) {       // t in [0,1): cross-fade from day d to day next (timeline scrub)
     if (!st.deck) return;
@@ -318,6 +371,7 @@
   // ------------------------------------------------------------------ legend: scale + Clear / Sharp
   function drawLegend() {
     const L = $("legend");
+    if (L && !L.dataset.nwWired) { L.dataset.nwWired = "1"; L.addEventListener("click", (e) => { const b = e.target.closest("[data-nw]"); if (b) { e.stopPropagation(); setNw(+b.dataset.nw); } }); }
     const mode = st.main;
     const when = st.day > DATA.today ? " · forecast" : "";
     const ramp = (title, stops, ticks) => "<b>" + title + when + '</b><div class="ramp">' + stops.map((s) => '<i style="background:rgb(' + s[1].join(",") + ')"></i>').join("") +
@@ -330,7 +384,7 @@
       h = ramp("Snow depth", depthStops(), ticks(live ? [1, 25, 100, 400] : [1, m / 4, m / 2, m])).replace("</b>", ' <span class="chip30" id="chip30" hidden>30 m</span></b>');
       h += '<div class="row2">';            // v2: colour scale + Clear / Sharp live in the layers sheet only
     } else if (mode === "powder") {
-      h = ramp(p72on() ? "New snow, 3 days" : "New snow, 24 h", newStops(), ticks(p72on() ? [1, 15, 45, 120] : [1, 10, 30, 80])) + '<div class="row2">';
+      h = ramp(NW_TITLE[nwin()], newStops(), ticks(NW_TICKS[nwin()])) + nwSeg() + '<div class="row2">';
     } else if (mode === "sat") h = '<b>Latest clear view</b>' + (DATA.regions.find((r) => r.sat) ? '<small class="none" style="padding:0 0 4px;display:block">' + esc(I18N.t("Clear view up to") + " " + D(DATA.regions.find((r) => r.sat).sat.asof).toLocaleDateString(LOC, { day: "numeric", month: "short", timeZone: "UTC" })) + "</small>" : "") + '<div class="sw"><span><i style="background:#F6FAFF"></i>Snow</span><span><i style="background:#A0C4E4"></i>Patchy</span><span><i style="background:#96693E"></i>No snow</span><span><i style="background:#7D7D8A"></i>Cloud</span></div><div class="row2">';
     else if (mode === "wind") h = ramp("Wind at midday", WIND, [0, 20, 50, 100].map((v, i, a) => U.wv(v) + (i === a.length - 1 ? " " + U.wu() : ""))) + '<div class="row2">';
     else if (mode === "freeze") h = ramp("Freezing level", FREEZE, [0, 1500, 3000, 4500].map((v, i, a) => U.ev(v) + (i === a.length - 1 ? " " + U.eu() : ""))) + '<div class="row2">';
@@ -368,7 +422,7 @@
   }
   const LUTS = {};
   function lut(p) {
-    const key = p + ":" + st.scale + ":" + p72on();
+    const key = p + ":" + st.scale + ":" + nwin();
     if (LUTS[key]) return LUTS[key];
     const t = new Uint8ClampedArray(256 * 4), stops = p === "d" ? depthStops() : newStops();
     if (p === "sat") {
@@ -415,7 +469,7 @@
   // coloured picture (object URL) per picture + colour scale, painted once and kept: the deck and the scrub reuse it
   const BLOBS = new Map();
   function coloured(url, p, coords) {   // -> { url, coords } (padded to non-power-of-two, see npot)
-    const key = url + "|" + p + ":" + st.scale + ":" + p72on();
+    const key = url + "|" + p + ":" + st.scale + ":" + nwin();
     if (!BLOBS.has(key)) BLOBS.set(key, codesOf(url).then((cd) => cd && new Promise((ok) => { const [cv, cc] = npot(paint(cd, p), coords); cv.toBlob((b) => ok(b ? { url: URL.createObjectURL(b), coords: cc } : null), "image/png"); })));
     if (BLOBS.size > 200) BLOBS.delete(BLOBS.keys().next().value);
     return BLOBS.get(key);
@@ -526,7 +580,7 @@
       if (gi >= 0) addRaster("m_" + code + "_f", A + "/v1/g500/" + code + "/tiles/" + (nw ? "new" : "depth") + "/" + gi + "/{z}/{x}/{y}.png", { bounds: g.bbox, srcMin: 6, srcMax: 12, min: 6 });
     }
     if (mode === "sat" && map.getZoom() < 6) toast("Zoom in to see satellite snow");
-    if (mode === "powder" && st.p72) toast("3-day snow is shown for today");
+    if (mode === "powder" && st.nw > 1) toast("48 h and 7-day snow are shown for today");
   }
   async function renderField(kind) {
     const v = kind === "wind" ? "wind" : "freezing_level", day = st.day, gen = st.gen;
@@ -1024,7 +1078,7 @@
   }
   function drawPowder(res) {        // map mode "New snow": bubbles for every resort with fresh snow on the selected day
     if (!ready || !map.getSource("pow") || !res) return;
-    const i = res.dates.indexOf(st.day), k = p72on() ? 2 : 1;
+    const i = res.dates.indexOf(st.day), k = NW_RES[nwin()];
     const rows = st.main === "powder" && i >= 0 ? res.rows.filter((x) => x.snow[i] && x.snow[i][k] >= 1).sort((a, b) => b.snow[i][k] - a.snow[i][k]) : [];
     for (const id of ["best", "best_lbl", "best_name"]) if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", st.main === "powder" ? "none" : "visible");
     map.getSource("pow").setData({ type: "FeatureCollection", features: rows.map((x, rk) => {
@@ -1155,10 +1209,10 @@
       }
     } else if (mode === "depth" || mode === "powder") {
       if (isStatic(st.day) && r) {
-        const [cd, cn] = await Promise.all([codeAt(r, "d", ll), codeAt(r, p72on() ? "n3" : "n", ll)]);
+        const [cd, cn] = await Promise.all([codeAt(r, "d", ll), codeAt(r, NW_KEY[nwin()], ll)]);
         if (cd != null && cd !== 255) {
           const dep = decDepth(cd), nw = cn != null && cn !== 255 ? cn : 0;
-          if (mode === "powder") h = '<span class="k">New snow' + (p72on() ? ", 3 days" : "") + " · " + when + '</span><span class="big">' + (nw >= 1 ? "+" + cmS(nw) : "None") + '</span><div class="line">' + (dep >= 1 ? U.depth(dep) + " on the ground" : "No snow on the ground") + "</div>";
+          if (mode === "powder") h = '<span class="k">' + NW_TITLE[nwin()] + " · " + when + '</span><span class="big">' + (nw >= 1 ? "+" + cmS(nw) : "None") + '</span><div class="line">' + (dep >= 1 ? U.depth(dep) + " on the ground" : "No snow on the ground") + "</div>";
           else h = '<span class="k">Snow on the ground · ' + when + '</span><span class="big">' + (dep >= 1 ? cmS(dep) : "No snow") + "</span>" + (nw >= 1 ? '<span class="badge">+' + U.depth(nw) + " new</span>" : "");
         }
       } else if (proLive()) {
@@ -1197,10 +1251,10 @@
     const tile = ([id, name, sw, pro]) => '<button class="tile" data-main="' + id + '" aria-pressed="' + (st.main === id) + '"><div class="sw2" style="background:' + sw + '"></div>' +
       (pro && !st.pro ? '<span class="pro"><span class="ms f">lock</span>PRO</span>' : "") + "<span>" + name + "</span></button>";
     const rows = [["wind", "Wind", "Around midday", "air", true, true], ["freeze", "Freezing level", U.us() ? "Where 32 °F sits" : "Where 0 °C sits", "device_thermostat", true, true],
-      ["radar", "Rain & snow radar", "Right now", "radar", false, true], ["p72", "3-day snow", "Powder over 3 days", "ac_unit", true],
+      ["radar", "Rain & snow radar", "Right now", "radar", false, true],
       ...(s30Enabled() ? [["s30", "Sharp 30 m", "The sharpest snow picture, where available", "grid_on"]] : []), ["stn", "Measured snow", "Snow depth measured at stations", "sensors"], ["pins", "Resorts", "Name and snow on each resort", "location_on"], ["stays", "Places to stay", "A stay chip on the resort in view · Partner", "hotel"], ["pistes", "Pistes & lifts", "Coloured by difficulty", "downhill_skiing"]];
     const row = ([id, name, sub, icon, pro, main]) => {
-      const on = main ? st.main === id : id === "p72" ? st.p72 : !!st.over[id];
+      const on = main ? st.main === id : !!st.over[id];
       const dis = id === "radar" && st.radar === false;
       return '<button class="row" role="switch" data-over="' + id + '" aria-checked="' + on + '"' + (dis ? ' aria-disabled="true"' : "") + '><span class="ic"><span class="ms">' + icon + '</span></span><span class="tx"><b>' + name +
         (pro && !st.pro ? ' <span class="pro"><span class="ms f">lock</span>PRO</span>' : "") + "</b><small>" + (dis ? "Not available right now" : sub) + '</small></span><span class="sw-t"></span></button>';
@@ -1208,14 +1262,16 @@
     const styles = true ? '<div class="over sec">Map</div><div class="seg2" role="group">' + Object.entries(STYLES).map(([k, v]) => '<button data-style="' + k + '" aria-pressed="' + (st.style === k) + '">' + v[0] + "</button>").join("") + "</div>" +
       '<button class="row" role="switch" data-over="terrain" aria-checked="' + st.terrain + '"><span class="ic"><span class="ms">landscape</span></span><span class="tx"><b>3D mountains</b><small>Tilt the map with two fingers or right-drag</small></span><span class="sw-t"></span></button>' : "";
     const m = SS.modal(SS.head("Map layers") + '<div class="over sec">Snow</div><div class="tiles">' + tiles.map(tile).join("") + "</div>" +
-      (st.pro ? "" : '<p style="color:var(--ink3);font-size:13px;margin:10px 0 0">Powder is free for today. Pro adds every day, 3-day snow and the layers with a lock.</p>') +
+      '<div class="over sec">New snow</div>' + nwSeg(true) +
+      (st.pro ? "" : '<p style="color:var(--ink3);font-size:13px;margin:10px 0 0">Powder is free for today. Pro adds every day, 48 h and 7-day snow and the layers with a lock.</p>') +
       '<div class="over sec">Weather and more</div>' + rows.map(row).join("") +
       '<div class="over sec">Safety</div>' + row(["aval", "Avalanche danger", "Official daily levels", "warning"]) +
       '<div class="over sec">Snow colours</div><div class="filters"><div class="seg2" role="group" aria-label="Colour scale">' + [100, 200, 400].map((v) => '<button data-scale="' + v + '" aria-pressed="' + (st.scale === v) + '">0–' + U.depN(v) + " " + U.du() + "</button>").join("") +
       '</div><div class="seg2" role="group" aria-label="Look"><button data-sharp="0" aria-pressed="' + !st.sharp + '">Clear</button><button data-sharp="1" aria-pressed="' + st.sharp + '">Sharp</button></div></div>' + styles);
     m.el.addEventListener("click", (e) => {
       const t = e.target.closest("[data-main]"), o = e.target.closest("[data-over]"), sy = e.target.closest("[data-style]");
-      const sc = e.target.closest("[data-scale]"), sh = e.target.closest("[data-sharp]");
+      const sc = e.target.closest("[data-scale]"), sh = e.target.closest("[data-sharp]"), nb = e.target.closest("[data-nw]");
+      if (nb) { if (+nb.dataset.nw > 1 && !st.pro) m.close(); setNw(+nb.dataset.nw); nwPressed(m.el); m.el.querySelectorAll("[data-main]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.main === st.main)); return; }
       if (sc) { st.scale = +sc.dataset.scale; store.set("ss_scale", st.scale); m.el.querySelectorAll("[data-scale]").forEach((b) => b.setAttribute("aria-pressed", b === sc)); drawLegend(); recolour(); return; }
       if (sh) { st.sharp = sh.dataset.sharp === "1"; store.set("ss_sharp", st.sharp); m.el.querySelectorAll("[data-sharp]").forEach((b) => b.setAttribute("aria-pressed", b === sh)); drawLegend(); setResampling(); return; }
       if (t) {
@@ -1225,15 +1281,14 @@
       } else if (o) {
         const id = o.dataset.over;
         if (o.getAttribute("aria-disabled") === "true") return;
-        if (["wind", "freeze", "p72"].includes(id) && !st.pro) { m.close(); SS.upsell(o.querySelector("b").firstChild.textContent.trim() + " is in Pro"); return; }
+        if (["wind", "freeze"].includes(id) && !st.pro) { m.close(); SS.upsell(o.querySelector("b").firstChild.textContent.trim() + " is in Pro"); return; }
         if (["wind", "freeze"].includes(id) && !proLive()) { toast("Pro data is updating, try again in a minute."); return; }
         if (["wind", "freeze", "radar"].includes(id)) { setMain(st.main === id ? "depth" : id); }
-        else if (id === "p72") { st.p72 = !st.p72; if (st.p72) st.main = "powder"; renderMain(); drawLegend(); drawDays(); }
         else if (id === "terrain") { st.terrain = !st.terrain; store.set("ss_terrain", st.terrain); applyTerrain(); }
         else { st.over[id] = !st.over[id]; if (id === "pistes") store.set("ss_pistes", st.over.pistes ? 1 : 0); if (id === "pins") drawPins(); else if (id === "stays") { store.set("ss_stays", st.over.stays ? 1 : 0); drawStays(); }
           else if (id === "stn") { store.set("ss_stn", st.over.stn ? 1 : 0); drawStations(); if (!st.slug && st.tab === "map") renderPanel(); }
           else if (id === "s30") { store.set("ss_s30", st.over.s30 ? 1 : 0); refreshS30(); } else applyOverlays(); drawLegend(); }
-        m.el.querySelectorAll("[data-over]").forEach((b) => { const x = b.dataset.over; b.setAttribute("aria-checked", ["wind", "freeze", "radar"].includes(x) ? st.main === x : x === "p72" ? st.p72 : x === "terrain" ? st.terrain : !!st.over[x]); });
+        m.el.querySelectorAll("[data-over]").forEach((b) => { const x = b.dataset.over; b.setAttribute("aria-checked", ["wind", "freeze", "radar"].includes(x) ? st.main === x : x === "terrain" ? st.terrain : !!st.over[x]); });
         m.el.querySelectorAll("[data-main]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.main === st.main));
       } else if (sy) {
         st.style = sy.dataset.style; store.set("ss_style", st.style);
@@ -1244,10 +1299,26 @@
       }
     });
   }
+  // the 24 h / 48 h / 7 days choice (legend + layers sheet); 48 h and 7 days are Pro, shown for today
+  function nwSeg(sheet) {
+    const lock = '<span class="ms f" aria-label="Pro" style="font-size:14px;margin-inline-start:3px;vertical-align:-2px">lock</span>';
+    return '<div class="' + (sheet ? "seg2" : "mini") + ' nwseg" role="group" aria-label="New snow period">' + [1, 2, 7].map((w) =>
+      '<button data-nw="' + w + '" aria-pressed="' + (st.main === "powder" && nwin() === w) + '">' + NW_LABEL[w] + (w > 1 && !st.pro ? lock : "") + "</button>").join("") + "</div>";
+  }
+  const nwPressed = (el) => el.querySelectorAll("[data-nw]").forEach((b) => b.setAttribute("aria-pressed", st.main === "powder" && nwin() === +b.dataset.nw));
+  function setNw(w) {
+    if (w > 1 && !st.pro) { SS.upsell("New snow over 48 h and 7 days is in Pro"); return; }
+    st.nw = w;
+    if (st.main !== "powder" && st.main !== "rain") st.main = "powder";
+    if (w > 1 && st.day !== DATA.today) st.day = DATA.today;     // the 48 h / 7-day pictures are today's
+    drawDays(); drawLegend(); renderMain(); drawPins();
+    if (st.tab === "powder") renderPanel();
+    if (window.SSX) SSX.refresh();
+  }
   function setMain(id) {
     st.main = id;
     if (id === "powder" && !st.pro && st.day !== DATA.today) st.day = DATA.today;
-    if (id !== "powder") st.p72 = false;
+    if (id !== "powder" && id !== "rain") st.nw = 1;
     if (id !== "wind" && id !== "freeze") st.hour = null;
     drawDays(); drawLegend(); renderMain(); drawPins();
     if (window.SSX) SSX.refresh();
@@ -1258,8 +1329,9 @@
     if (["wind", "freeze"].includes(id) && !proLive()) { toast("Pro data is updating, try again in a minute."); return false; }
     if (id === "radar" && st.radar === false) { toast("Radar is not available right now"); return false; }
     if (["depth", "powder", "sat", "wind", "freeze", "radar"].includes(id)) { setMain(st.main === id && id !== "depth" ? "depth" : id); return true; }
-    if (id === "p72") { st.p72 = !st.p72; if (st.p72) st.main = "powder"; renderMain(); drawLegend(); drawDays(); }
-    else if (id === "terrain") { st.terrain = !st.terrain; store.set("ss_terrain", st.terrain); applyTerrain(); const b = $("btn3d"); if (b) b.setAttribute("aria-pressed", st.terrain); }
+    // new snow over 48 h / 7 days (expert keys 3 / W; "p72" = the former 3-day switch, now 48 h)
+    if (id === "nw48" || id === "nw7" || id === "p72") { const w = id === "nw7" ? 7 : 2; setNw(st.nw === w && st.main === "powder" ? 1 : w); return true; }
+    if (id === "terrain") { st.terrain = !st.terrain; store.set("ss_terrain", st.terrain); applyTerrain(); const b = $("btn3d"); if (b) b.setAttribute("aria-pressed", st.terrain); }
     else if (id in st.over) {
       st.over[id] = !st.over[id];
       if (id === "pistes") store.set("ss_pistes", st.over.pistes ? 1 : 0);
@@ -1274,7 +1346,7 @@
     if (window.SSX) SSX.refresh();
     return true;
   }
-  const overOn = (id) => (["depth", "powder", "sat", "wind", "freeze", "radar"].includes(id) ? st.main === id : id === "p72" ? st.p72 : id === "terrain" ? st.terrain : !!st.over[id]);
+  const overOn = (id) => (["depth", "powder", "sat", "wind", "freeze", "radar", "rain", "phase"].includes(id) ? st.main === id : id === "p72" || id === "nw48" ? st.main === "powder" && st.nw === 2 : id === "nw7" ? st.main === "powder" && st.nw === 7 : id === "terrain" ? st.terrain : !!st.over[id]);
   function applyTerrain() {
     if (st.terrain) { ensureDem(); map.setTerrain({ source: "dem", exaggeration: 1.5 }); map.easeTo({ pitch: 60, duration: 900 }); }
     else { map.setTerrain(null); map.easeTo({ pitch: 0, duration: 600 }); }
@@ -1548,7 +1620,8 @@
     const res = await RES.catch(() => null);
     if (!res) return '<p class="msg">Resorts are loading…</p>';
     await loadStations();
-    const ti = res.dates.indexOf(DATA.today), k = st.p72 ? 2 : 1, o = st.origin, R = st.ski.radius;
+    const ti = res.dates.indexOf(DATA.today), k = NW_RES[st.nw === 3 ? 2 : st.nw] || 1, o = st.origin, R = st.ski.radius;
+    const nwk = st.nw === 7 ? 7 : st.nw > 1 ? 2 : 1;
     const fresh = res.rows.filter((x) => x.snow[ti] && x.snow[ti][k] >= 1);
     let rows = fresh.filter((x) => !o || !R || kmTo(o, x) <= R).sort((a, b) => b.snow[ti][k] - a.snow[ti][k]).slice(0, 25);
     let title = rows.length ? (o ? "Powder near you" : "Fresh snow today") : (o ? "No fresh snow near you" : "No fresh snow today"), far = false;
@@ -1558,16 +1631,16 @@
     const top = rows[0];
     let h = '<div class="over">Powder</div><h1>' + title + '</h1><div class="nopills">' + originBar(res) + "</div>";
     const ri = RADII.indexOf(R) < 0 ? 2 : RADII.indexOf(R);
-    h += '<div class="filters"><div class="seg2" role="group" aria-label="Period"><button data-p72="0" aria-pressed="' + !st.p72 + '">24 hours</button><button data-p72="1" aria-pressed="' + st.p72 + '">3 days</button></div>' +
+    h += '<div class="filters"><div class="seg2" role="group" aria-label="Period">' + [[1, "24 hours"], [2, "48 hours"], [7, "7 days"]].map(([w, l]) => '<button data-pnw="' + w + '" aria-pressed="' + (nwk === w) + '">' + l + "</button>").join("") + "</div>" +
       '<button class="btn tonal" data-showpowder><span class="ms">map</span>Show on the map</button></div>' +
       '<label class="range"><span>' + (R ? "within " + U.dist(R) : "Anywhere") + '</span><input type="range" min="0" max="' + (RADII.length - 1) + '" step="1" value="' + ri + '" data-radius-range aria-label="Distance"></label>';
     if (top) {
-      const tsn = top.snow[ti] || [], n72 = tsn[2] || 0;
-      h += '<article class="card pwhero"><div class="over">' + (far ? "Nearest fresh snow" : st.p72 ? "Best powder, 3 days" : "Best powder today") + '</div>' +
+      const tsn = top.snow[ti] || [], n7 = tsn[4] || 0;
+      h += '<article class="card pwhero"><div class="over">' + (far ? "Nearest fresh snow" : nwk === 7 ? "Best powder, 7 days" : nwk === 2 ? "Best powder, 48 h" : "Best powder today") + '</div>' +
         '<div class="pwtop"><div class="nm"><b>' + esc(top.short) + "</b><small>" + flagOf(top.country) + " " + esc([top.country, o ? U.dist(Math.round(kmTo(o, top))) + " away" : ""].filter(Boolean).join(" · ")) + "</small></div>" +
         '<b class="big" style="color:' + newTier(tsn[k]) + '">+' + cmS(tsn[k]) + "</b></div>" +
         '<div class="stats"><div class="stat"><b>' + (tsn[0] != null ? cmS(tsn[0]) : "–") + "</b><small>on the upper slopes</small></div>" +
-        '<div class="stat"><b>' + (st.p72 ? (tsn[1] ? "+" + cmS(tsn[1]) : "–") : (n72 ? "+" + cmS(n72) : "–")) + "</b><small>" + (st.p72 ? "in 24 hours" : "in 3 days") + "</small></div>" +
+        '<div class="stat"><b>' + (nwk > 1 ? (tsn[1] ? "+" + cmS(tsn[1]) : "–") : (n7 ? "+" + cmS(n7) : "–")) + "</b><small>" + (nwk > 1 ? "in 24 hours" : "in 7 days") + "</small></div>" +
         '<div class="stat"><b>' + (top.top_m ? fmt(top.top_m) + "<small>m</small>" : "–") + "</b><small>upper slopes</small></div></div>" +
         strip7(res, top) + measuredHtml(top.lat, top.lon, top.top_m || null, false) +
         (staysOn() ? '<button class="rowlink stayrow" data-openstays="' + esc(top.slug) + '" data-via="powder"><span class="ms">hotel</span><span><b>' + esc(I18N.tu("Places to stay near {a}", top.short)) + "</b><small>" +
@@ -1576,11 +1649,11 @@
         '<div class="acts3"><button class="btn ink" data-open="' + esc(top.slug) + '"><span class="ms">info</span>Details</button><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + top.lat + "," + top.lon + '"><span class="ms">directions_car</span>Directions</a>' +
         '<button class="btn tonal" data-share="' + esc(top.slug) + '" data-sd="' + DATA.today + '"><span class="ms">share</span>Share</button></div></article>';
     }
-    if (window.SSC && rows.length >= 3) h += SSC.powder(rows.map((x) => ({ slug: x.slug, name: x.short, n24: x.snow[ti][1] || 0, n72: x.snow[ti][2] || 0, dep: x.snow[ti][0] || 0, href: BASE + "resorts/" + encodeURIComponent(x.slug) + ".html" })), !!st.p72, rampCol);
+    if (window.SSC && rows.length >= 3) h += SSC.powder(rows.map((x) => ({ slug: x.slug, name: x.short, n24: x.snow[ti][1] || 0, n72: x.snow[ti][2] || 0, dep: x.snow[ti][0] || 0, href: BASE + "resorts/" + encodeURIComponent(x.slug) + ".html" })), nwk > 1, rampCol);
     h += rows.length ? rows.map((x, i) => (i === 5 ? adSlot("infeed", rows[0], DATA.today) : "") + '<a class="rrow pw" href="' + BASE + "resorts/" + encodeURIComponent(x.slug) + '.html" data-open="' + esc(x.slug) + '"><span class="rk' + (i < 3 ? " top" : "") + '">' + (i + 1) + '</span><span class="nm"><b>' + flagOf(x.country) + " " + esc(x.short) + "</b><small>" +
       esc([x.country, o ? U.dist(Math.round(kmTo(o, x))) + " away" : NAMES[x.dom] || ""].filter(Boolean).join(" · ")) + " " + trendOf(x, ti) + '</small>' + measuredHtml(x.lat, x.lon, x.top_m || null, true) + '</span>' +
-      '<span class="val"><b style="color:' + newTier(x.snow[ti][k]) + '">+' + cmS(x.snow[ti][k]) + "</b><em>" + (st.p72 ? "+" + U.dep(x.snow[ti][1] || 0) + " in 24 h" : "+" + U.dep(x.snow[ti][2] || 0) + " in 3 days") + " · " + U.depth(x.snow[ti][0] || 0) + " deep</em></span></a>").join("")
-      : '<p class="none">' + esc(I18N.tu("Nothing over {b} cm in the last {a}. Check tomorrow.", I18N.t(st.p72 ? "3 days" : "24 hours"), U.dep(1))) + "</p>";
+      '<span class="val"><b style="color:' + newTier(x.snow[ti][k]) + '">+' + cmS(x.snow[ti][k]) + "</b><em>" + (nwk > 1 ? "+" + U.dep(x.snow[ti][1] || 0) + " in 24 h" : "+" + U.dep(x.snow[ti][4] || 0) + " in 7 days") + " · " + U.depth(x.snow[ti][0] || 0) + " deep</em></span></a>").join("")
+      : '<p class="none">' + esc(I18N.tu("Nothing over {b} cm in the last {a}. Check tomorrow.", I18N.t(nwk === 7 ? "7 days" : nwk === 2 ? "48 hours" : "24 hours"), U.dep(1))) + "</p>";
     if (rows.length) h += '<button class="btn ghost" data-propost="powder" style="margin-top:10px"><span class="ms">add_photo_alternate</span>Create post' + (st.pro ? "" : ' <span class="pro">PRO</span>') + "</button>";
     const storms = (DATA.storms || []).map((x, i) => [x, i]).sort((a, b) => b[0].cm - a[0].cm).slice(0, 8);
     h += '<div class="sect">Snow storms</div>' + (storms.length ? storms.map(([x, i]) => '<article class="card storm"><div class="over">' + esc((x.date === DATA.today ? "Today" : wd(x.date) + " " + dnum(x.date)) + " · " + (NAMES[x.region] || "")) + '</div>' +
@@ -1622,7 +1695,7 @@
       teaser("notifications", "linear-gradient(160deg,#3B8BFF,#1463F3)", "Powder alerts", "A message when fresh snow is coming.") + footer();
   }
   $("pbody").addEventListener("click", (e) => {
-    const w = e.target.closest("[data-when]"), p7 = e.target.closest("[data-p72]");
+    const w = e.target.closest("[data-when]"), p7 = e.target.closest("[data-pnw]");
     if (w) { st.ski.when = w.dataset.when; renderPanel(); }
     const rb = e.target.closest("[data-radius]"); if (rb) { st.ski.radius = +rb.dataset.radius; store.set("ss_radius", st.ski.radius); renderPanel(); }
     const rr = e.target.closest("[data-radius-range]"); if (rr) { st.ski.radius = RADII[+rr.value] || 0; store.set("ss_radius", st.ski.radius); renderPanel(); }
@@ -1631,7 +1704,7 @@
     if (e.target.closest("[data-locate]")) locate(false);
     const shb = e.target.closest("[data-share]"); if (shb) { e.preventDefault(); shareResort(shb.dataset.share, shb.dataset.sd); }
     const ql = e.target.closest("[data-place]"); if (ql) { const pl = st.places[+ql.dataset.place]; setOrigin({ lat: pl.lat, lon: pl.lon, label: pl.label, zoom: 8 }); }
-    if (p7) { const on = p7.dataset.p72 === "1"; st.p72 = on; renderPanel(); drawPins(); if (st.main === "powder") { renderMain(); drawLegend(); } }
+    if (p7) { st.nw = +p7.dataset.pnw; renderPanel(); drawPins(); if (st.main === "powder") { renderMain(); drawLegend(); } }
     if (e.target.closest("[data-showpowder]")) { setMain("powder"); if (innerWidth <= 760) setSheet("peek"); }
     if (e.target.closest("[data-signup]")) SS.signInModal("up");
     const ub = e.target.closest("[data-units]"); if (ub && ub.dataset.units !== U.mode()) { U.set(ub.dataset.units); location.reload(); }
@@ -1859,7 +1932,7 @@
       '<button class="btn tonal" data-sharept><span class="ms">share</span>Share</button>' +
       (n && staysOn() ? '<button class="btn tonal" data-openstays="' + esc(n[0].slug) + '" data-via="point" title="Places to stay (partner)"><span class="ms">hotel</span>Stay</button>' : "") + "</div>" +
       (s30 ? '<p class="measured s30"><span class="k">' + esc(I18N.t("Sharper view")) + '</span> <b>' + U.depth(Math.round(s30.depth_cm)) + "</b>" + (s30.elevation_m ? " · " + U.elev(s30.elevation_m) : "") + "</p>" : "") +
-      fold("past", "Compared with past winters", '<div id="ptPast"><div class="skel" style="height:118px"></div></div><div id="ptChart"><div class="skel" style="height:190px;margin-top:10px"></div></div>') +
+      fold("past", "Compared with past winters", '<div id="ptPast"><div class="skel" style="height:118px"></div></div><div id="ptChart"><div class="skel" style="height:190px;margin-top:10px"></div></div><div id="ptMore"></div>') +
       fold("stn", "Closest measured station", '<div id="ptStn"><div class="skel" style="height:120px"></div></div>') +
       (window.SSX ? fold("hours", "Hour by hour", '<div id="ptMeteo"><div class="skel" style="height:230px"></div></div>') : "") +
       (n ? '<button class="rrow" style="width:100%;border:0;background:none;text-align:start;margin-top:8px" data-open="' + esc(n[0].slug) + '"><span class="nm"><b>' + esc(n[0].short) + "</b><small>" + U.dist(Math.round(n[1])) + '</small></span><span class="ms">chevron_right</span></button>' : "") + footer();
@@ -1958,7 +2031,8 @@
     const lockX = px(X(freeEnd));
     // DATAVIZ 2026-11-03: the season curve is drawn by charts.js (takeaway title, fan, today + storms labelled)
     const series = pts.filter((d) => d <= (st.pro ? end : freeEnd)).map((d) => ({ d, v: byDate[d].dep, nw: byDate[d].nw, fc: d > DATA.today }));
-    const SC = window.SSC ? SSC.season({ box, start, end, today: DATA.today, series, clim: clim ? at : null, lockFrom: st.pro ? null : freeEnd }) : null;
+    // HISTORY VIZ 2026-11-06: percentile bands of past winters (10-90, 25-75, usual) around today, this winter + forecast
+    const SC = window.SSC ? SSC.bands({ box, today: DATA.today, series, clim: clim ? at : null, lockFrom: st.pro ? null : freeEnd }) : null;
     const next = Object.keys(byDate).sort().find((d) => d > DATA.today && d <= (st.pro ? end : freeEnd) && (byDate[d].nw || 0) >= 5);
     if ($("ptNext")) $("ptNext").textContent = next ? "Snow expected " + D(next).toLocaleDateString("en-GB", { weekday: "long", timeZone: "UTC" }) + ": +" + U.depth(byDate[next].nw) : "";
     pastBlock(h, byDate, at, herr);
@@ -2025,26 +2099,18 @@
     if (below === 0) return I18N.tu("Less snow than all {a} winters", n);
     return I18N.tu("Deeper than {a} of {b} winters", below, n);
   }
-  function winterStrip(cp, noRank) {
+  // HISTORY VIZ 2026-11-06 (owner: "not parlant"): the verdict (SSC.verdict, plain words) + the rank bars (every past
+  // winter on this date as one column, least to most snow, today highlighted). noHead: the verdict is shown elsewhere.
+  function winterStrip(cp, noHead, v0) {
     const by = (cp && cp.by_year || []).filter((y) => y.today_cm != null);
-    const v = cp && cp.today ? cp.today.value_cm : null, nm = cp && cp.today && cp.today.normal;
-    if (by.length < 3 || v == null || !nm) return "";
-    const ys = by.map((y) => y.today_cm), mx = Math.max(10, v, ...ys) * 1.06;
-    const W = 340, H = 104, L = 14, R0 = 14, base = 78;
-    const X = (cm) => L + (Math.max(0, cm) / mx) * (W - L - R0);
-    // stack dots that would overlap (dot 9 px) in up to 4 rows above the axis
-    const rows = [], dots = by.map((y) => ({ y, x: X(y.today_cm) })).sort((a, b) => a.x - b.x);
-    for (const d of dots) { let r = 0; while (rows[r] != null && d.x - rows[r] < 9 && r < 3) r++; rows[r] = d.x; d.r = r; }
-    const sz = (s) => String(s).replace("-", "–");
-    const rank = epiHead(cp.today, v) || stripRank(v, ys, cp.today);
-    const t = cp.today, wetOn = t.episodic && t.typical_when_snowy_cm != null;
-    const q25 = wetOn ? (t.wet_p25 != null ? t.wet_p25 : t.typical_when_snowy_cm) : nm.p25, q75 = wetOn ? (t.wet_p75 != null ? t.wet_p75 : t.typical_when_snowy_cm) : nm.p75;
-    const q50 = wetOn ? t.typical_when_snowy_cm : nm.p50;
+    const v = v0 != null ? v0 : cp && cp.today ? cp.today.value_cm : null;
+    if (by.length < 3 || v == null || !window.SSC) return "";
+    const vd = SSC.verdict({ by, v, date: DATA.today });
+    if (!vd) return "";
+    const head = noHead ? "" : '<p class="ws-rank">' + esc(vd.head) + "</p>" + (vd.sub ? '<p class="note" style="margin:0 0 6px">' + esc(vd.sub) + "</p>" : "");
+    if (!vd.snowy && v < 1) return '<div class="wsbox">' + head + '<p class="note">' + esc(vd.rank) + "</p></div>";
     const sy = +DATA.today.slice(0, 4) - (+DATA.today.slice(5, 7) >= 8 ? 0 : 1), lastSeason = (sy - 1) + "-" + String(sy).slice(2);
-    const s = window.SSC ? SSC.strip({ W: panelW(), by, v, q25, q50, q75, wetOn, title: rank, lastSeason, col: rampCol }).html : "";
-    return '<div class="wsbox">' + (noRank ? "" : '<p class="ws-rank">' + esc(rank) + "</p>") + s +
-      '<p class="ws-out" aria-live="polite"></p><div class="keyrow"><span><i class="kdot"></i>' + esc(I18N.t("one dot per past winter")) + '</span><span><i style="background:var(--accent-tint)"></i>' + esc(I18N.t(wetOn ? "when snowy" : "normal range")) +
-      "</span></div></div>";
+    return '<div class="wsbox">' + head + SSC.rankBars({ W: panelW(), by, v, date: DATA.today, lastSeason }).html + "</div>";
   }
   const panelW = () => Math.max(280, Math.min(560, (($("pbody") && $("pbody").clientWidth) || 372) - 32));
   function bindStrip(root) {
@@ -2062,7 +2128,7 @@
       const idx = Object.fromEntries(clim.mmdd.map((k, i) => [k, i])), g = (key, d) => (clim[key] && idx[d.slice(5)] != null ? clim[key][idx[d.slice(5)]] : null);
       const sy = +DATA.today.slice(0, 4) - (+DATA.today.slice(5, 7) >= 8 ? 0 : 1), start = sy + "-10-01", end = (sy + 1) + "-05-31";
       const ser = (h.current || []).filter((q) => q.depth_cm != null && q.date >= start && q.date <= end).map((q) => ({ d: q.date, v: q.depth_cm, fc: q.date > DATA.today }));
-      fan = SSC.season({ W: panelW(), start, end, today: DATA.today, series: ser, clim: g, title: SSC.t("Snow depth this season compared with past winters"), key: true }).html;
+      fan = SSC.bands({ W: panelW(), start, end, today: DATA.today, series: ser, clim: g, title: SSC.t("The whole season"), H: 180 }).html;
     }
     const by = (cp && cp.by_year || []).filter((y) => y.today_cm != null);
     let bars = "";
@@ -2119,13 +2185,13 @@
       : "Deeper than " + k10 + " of 10 past winters on this date.";
     const d = v - p50, dp = p50 >= 5 ? Math.round(100 * d / p50) : null;
     const sign = (x) => (x > 0 ? "+" : x < 0 ? "−" : "±");
-    const anom = Math.abs(d) < 1 ? "Same as usual" : sign(d) + U.depth(Math.abs(d)) + (dp != null ? " (" + sign(dp) + Math.abs(dp) + " %)" : "") + " vs usual";
     // one verdict for the whole panel (v3): the exact per-winter rank when the answer has it, else the band verdict
     const by0 = cp && (cp.by_year || []).filter((y) => y.today_cm != null);
     const epi = cp ? epiHead(cp.today, v) : "";
     const exact = cp && by0 && by0.length >= 3 ? stripRank(v, by0.map((y) => y.today_cm), cp.today) : null;
-    const head = epi || exact || verdict;
-    if (rk) rk.textContent = head;
+    const vd = window.SSC && by0 && by0.length >= 3 ? SSC.verdict({ by: by0, v, date: DATA.today }) : null;
+    const head = vd ? vd.head : epi || exact || verdict;
+    if (rk) rk.innerHTML = esc(head) + (vd && vd.sub ? '<small class="ptsub">' + esc(vd.sub) + "</small>" : "");
     // range bar: min..max, 25-75 % band, median tick, today's marker (clamped)
     const hi = Math.max(mx, v, 1), X = (x) => Math.max(0, Math.min(100, (x / hi) * 100)).toFixed(1) + "%";
     const bar = '<div class="pbar" role="img" aria-label="' + esc(verdict) + '"><span class="rng" style="left:' + X(mn) + ";width:calc(" + X(mx) + " - " + X(mn) + ')"></span>' +
@@ -2138,11 +2204,14 @@
     const sz = (x) => x.season.replace("-", "–");
     const row = (k, val) => "<tr><td>" + k + "</td><td>" + val + "</td></tr>";
     const far = (h.note_codes || []).includes("far_elevation");
-    if (pct == null) { box.innerHTML = (rk ? "" : '<p class="verdict">' + esc(verdict) + "</p>") + (seas.length ? '<p class="note">' + esc(I18N.tu("Compared with {a} past winters.", seas.length)) + "</p>" : ""); return; }
-    const strip = cp ? winterStrip(cp, !!rk) : "";
+    if (pct == null) { box.innerHTML = (rk ? "" : '<p class="verdict">' + esc(head) + "</p>") + (vd ? '<p class="note">' + esc(vd.rank) + "</p>" : "") + (seas.length ? '<p class="note">' + esc(I18N.tu("Compared with {a} past winters.", seas.length)) + "</p>" : ""); return; }
+    const strip = cp ? winterStrip(cp, !!rk, v) : "";
     const tt = cp && cp.today;
-    box.innerHTML = (rk ? "" : '<p class="verdict">' + esc(epi || verdict) + "</p>") + (epi ? "" : '<p class="anom">' + esc(anom) + "</p>") + (strip || bar) +
-      (strip ? '<details class="wsmore"><summary>' + esc(I18N.t("More")) + "</summary>" + winterMore(h, cp) : "") +
+    const moreBox = strip && $("ptMore");     // the details go under the season chart when the point panel has the slot
+    box.innerHTML = (rk ? "" : '<p class="verdict">' + esc(head) + "</p>") + (strip || bar) + (moreBox ? "" : MORE());
+    if (moreBox) { moreBox.innerHTML = MORE(); bindStrip(moreBox); }
+    bindStrip(box);
+    function MORE() { return (strip ? '<details class="wsmore"><summary>' + esc(I18N.t("More")) + "</summary>" + winterMore(h, cp) : "") +
       '<table class="kv">' + row("Today", U.depth(v)) +
       (epi ? row(esc(I18N.t("Winters with snow on this date")), esc(I18N.tu("{a} of {b}", tt.snowy_winters, tt.n_winters))) + row(esc(I18N.t("Usual depth when snowy")), U.depth(tt.typical_when_snowy_cm)) +
         (tt.wet_p25 != null && tt.wet_p75 != null ? row(esc(I18N.t("When snowy, most winters")), U.dep(tt.wet_p25) + "–" + U.depth(tt.wet_p75)) : "")
@@ -2152,8 +2221,7 @@
         row("Least snow on this date", U.depth(cp.extremes.worst_today.cm) + ' <small class="none">' + sz(cp.extremes.worst_today) + "</small>") : "") +
       (best ? row("Deepest winter peak", U.depth(best.max_depth_cm) + ' <small class="none">' + sz(best) + "</small>") : "") + (worst && best && worst !== best ? row("Lowest winter peak", U.depth(worst.max_depth_cm) + ' <small class="none">' + sz(worst) + "</small>") : "") + "</table>" +
       (seas.length ? '<p class="note">' + esc(I18N.tu("Compared with {a} past winters.", seas.length)) + (far ? " " + esc(I18N.t("Past winters are estimated for the mountain around this spot, so take the comparison as a guide.")) : "") + "</p>" : "") +
-      (strip ? "</details>" : "");
-    bindStrip(box);
+      (strip ? "</details>" : ""); }
   }
   // the nearest QC-ok measuring station (25 km, 36 h) next to the model at this spot: values, distance, height
   // difference and both last days side by side (measured at the station vs modelled here)
@@ -2423,13 +2491,13 @@
   async function stormPost(x) {
     if (!x || !map) return;
     toast("Preparing the image…", 4000);
-    st.day = x.date; st.main = "powder"; st.p72 = x.hours === 72; drawDays(); drawLegend();
+    st.day = x.date; st.main = "powder"; st.nw = x.hours === 72 ? 3 : 1; drawDays(); drawLegend();
     map.jumpTo({ center: [x.lon, x.lat], zoom: 8 });
     renderMain(); await idle(); await new Promise((r) => setTimeout(r, 400));
     const place = x.place || NAMES[x.region] || "";
     SSPost.open({ big: "+" + U.depth(x.cm), sub: x.hours === 72 ? "in 3 days" : "in 24 hours", place, date: longDay(x.date),
       url: "https://snowscope.app/?r=" + (x.slug || x.lat + "," + x.lon), snapshot: snapshot(), file: "snowscope-storm-" + (x.slug || x.region.toLowerCase()) });
-    if (!st.pro) { st.p72 = false; }
+    if (!st.pro) { st.nw = 1; }
   }
   async function viewPost() {
     await idle();
@@ -2445,8 +2513,9 @@
     const ti = res.dates.indexOf(DATA.today);
     const r = DATA.regions.find((y) => y.code === (kind === "ski" ? st.ski.region : st.region)) || DATA.regions[0];
     let rows;
-    if (kind === "powder") rows = res.rows.filter((x) => x.snow[ti] && x.snow[ti][st.p72 ? 2 : 1] >= 1).sort((a, b) => b.snow[ti][st.p72 ? 2 : 1] - a.snow[ti][st.p72 ? 2 : 1]).slice(0, 5)
-      .map((x) => [x.short, "+" + U.depth(x.snow[ti][st.p72 ? 2 : 1]) + " · " + U.depth(x.snow[ti][0] || 0)]);
+    const pk = NW_RES[st.nw] || 1;
+    if (kind === "powder") rows = res.rows.filter((x) => x.snow[ti] && x.snow[ti][pk] >= 1).sort((a, b) => b.snow[ti][pk] - a.snow[ti][pk]).slice(0, 5)
+      .map((x) => [x.short, "+" + U.depth(x.snow[ti][pk]) + " · " + U.depth(x.snow[ti][0] || 0)]);
     else rows = res.rows.filter((x) => x.dom === r.code && x.snow[ti] && x.snow[ti][0] != null).sort((a, b) => (b.snow[ti][0] + 3 * (b.snow[ti][1] || 0)) - (a.snow[ti][0] + 3 * (a.snow[ti][1] || 0))).slice(0, 5)
       .map((x) => [x.short, U.depth(x.snow[ti][0]) + (x.snow[ti][1] ? " · +" + U.dep(x.snow[ti][1]) : "")]);
     const d = dayOf(r);
@@ -2851,7 +2920,7 @@
     else if (rll) { map.jumpTo({ center: [+rll[2], +rll[1]], zoom: 8.5 }); setMain("powder"); }
     if (r) map.jumpTo({ center: [r.lon, r.lat], zoom: 10 });
     else if (hash) map.jumpTo({ center: [+hash[2], +hash[1]], zoom: +hash[3] });
-    else if (!new URLSearchParams(location.search).get("p") && !new URLSearchParams(location.search).get("r")) RES.finally(() => flyRegion(st.region, true));   // framed on the snowy resorts
+    else if (!new URLSearchParams(location.search).get("p") && !new URLSearchParams(location.search).get("r")) RES.finally(() => { flyRegion(st.region, true); nearMe(); });   // framed on the snowy resorts, then the visitor's own range
     map.on("click", onClick);
     map.on("error", (e) => {      // tiles refused (not signed in on a Pro-only server): the static map stays, chip off
       if (e && e.sourceId && String(e.sourceId).startsWith("m_s30_") && !st.s30fail && e.error && [401, 402, 403].includes(e.error.status)) { st.s30fail = true; removeS30(); chip30(); }
