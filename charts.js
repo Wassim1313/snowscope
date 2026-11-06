@@ -129,6 +129,8 @@
     "in 3 days": ["en 3 jours", "in 3 Tagen", "in 3 giorni", "en 3 días", "ف3 أيام"],
     "24 h": ["24 h", "24 Std.", "24 h", "24 h", "24 ساعة"],
     "3 days": ["3 jours", "3 Tage", "3 giorni", "3 días", "3 أيام"],
+    "48 h": ["48 h", "48 Std.", "48 h", "48 h", "48 ساعة"],
+    "7 days": ["7 jours", "7 Tage", "7 giorni", "7 días", "7 أيام"],
     "deep": ["de fond", "Schneehöhe", "di fondo", "de espesor", "علو"],
     "Top 10 for new snow": ["Top 10 neige fraîche", "Top 10 Neuschnee", "Top 10 neve fresca", "Top 10 nieve nueva", "أحسن 10 فالتلج الجديد"],
   };
@@ -721,21 +723,24 @@
   }
 
   // ======================================================================== 7. powder ranking (HTML bars, RTL-safe)
-  // rows: [{slug, name, n24, n72, dep, href}], p72 (rank by 3 days), col(cm) = snow ramp
-  function powder(rows, p72, col) {
+  // rows: [{slug, name, n24, nw, dep, href}], win = the chosen new-snow window in days (1 = 24 h, 2 = 48 h, 7 = 7 days;
+  // true = the old 3-day call, n72), col(cm) = snow ramp. The bars stack the last 24 h + the rest of the chosen window.
+  function powder(rows, win, col) {
     const R = rows.slice(0, 10);
     if (R.length < 3) return "";
-    const mx = Math.max(5, ...R.map((r) => Math.max(r.n24 || 0, r.n72 || 0)));
-    const lead = R[0], lv = p72 ? lead.n72 : lead.n24;
-    const title = t("{a} got the most: +{b} {c}", lead.name, dep(lv), t(p72 ? "in 3 days" : "in 24 h"));
+    const w = win === true ? 3 : +win > 1 ? +win : 1;
+    const WK = { 1: ["24 h", "in 24 h"], 2: ["48 h", "in 48 h"], 3: ["3 days", "in 3 days"], 7: ["7 days", "in 7 days"] }[w] || ["24 h", "in 24 h"];
+    const tot0 = (r) => (w === 1 ? r.n24 || 0 : r.nw != null ? r.nw : r.n72 || 0);
+    const mx = Math.max(5, ...R.map((r) => Math.max(r.n24 || 0, tot0(r))));
+    const title = t("{a} got the most: +{b} {c}", R[0].name, dep(tot0(R[0])), t(WK[1]));
     const li = R.map((r, i) => {
-      const a = Math.max(0, r.n24 || 0), b = Math.max(0, (r.n72 || 0) - a), tot = p72 ? a + b : a;
+      const a = Math.max(0, r.n24 || 0), b = w === 1 ? 0 : Math.max(0, tot0(r) - a), tot = a + b;
       return '<li><a href="' + esc(r.href) + '" data-open="' + esc(r.slug) + '"><span class="pn"><span class="rk">' + (i + 1) + '</span><bdi dir="auto">' + esc(r.name) + '</bdi></span><span class="pb" aria-hidden="true">' +
         '<i class="s24" style="width:' + ((a / mx) * 100).toFixed(1) + '%"></i>' + (b >= 0.5 ? '<i class="s72" style="width:' + ((b / mx) * 100).toFixed(1) + '%"></i>' : "") + '<b dir="ltr">+' + esc(U().dep(tot)) + "</b></span>" +
-        '<span class="pd" dir="ltr"><i style="background:' + col(r.dep) + '"></i>' + esc(dep(r.dep || 0)) + '</span><span class="sr">' + esc("+" + dep(a) + " " + t("in 24 h") + ", +" + dep(a + b) + " " + t("in 3 days") + ", " + dep(r.dep || 0) + " " + t("deep")) + "</span></a></li>";
+        '<span class="pd" dir="ltr"><i style="background:' + col(r.dep) + '"></i>' + esc(dep(r.dep || 0)) + '</span><span class="sr">' + esc("+" + dep(a) + " " + t("in 24 h") + (w > 1 ? ", +" + dep(tot) + " " + t(WK[1]) : "") + ", " + dep(r.dep || 0) + " " + t("deep")) + "</span></a></li>";
     }).join("");
     return '<figure class="ssc pwr" data-noi18n><figcaption class="ssc-t">' + esc(title) + "<small>" + esc(t("Top 10 for new snow")) + "</small></figcaption>" +
-      '<div class="ssc-key"><span><i class="k s24"></i>' + esc(t("24 h")) + '</span><span><i class="k s72"></i>' + esc(t("3 days")) + '</span><span class="kr"><i class="k dd"></i>' + esc(t("Snow depth")) + "</span></div><ol>" + li + "</ol></figure>";
+      '<div class="ssc-key"><span><i class="k s24"></i>' + esc(t("24 h")) + "</span>" + (w > 1 ? '<span><i class="k s72"></i>' + esc(t(WK[0])) + "</span>" : "") + '<span class="kr"><i class="k dd"></i>' + esc(t("Snow depth")) + "</span></div><ol>" + li + "</ol></figure>";
   }
 
   // ======================================================================== hover / keyboard tooltips

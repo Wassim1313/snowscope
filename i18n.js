@@ -265,6 +265,7 @@
     "Sign in": ["Se connecter", "Anmelden", "Accedi", "Iniciar sesión", "دخل"],
     "Get the app": ["Obtenir l'appli", "App holen", "Scarica l'app", "Descargar la app", "جيب التطبيق"],
     "Today": ["Aujourd'hui", "Heute", "Oggi", "Hoy", "اليوم"],
+    "Today (day chip)": ["Auj.", "Heute", "Oggi", "Hoy", "اليوم"],
     "Near me": ["Près de moi", "In meiner Nähe", "Vicino a me", "Cerca de mí", "قريب مني"],
     "Alps": ["Alpes", "Alpen", "Alpi", "Alpes", "جبال الألب"],
     "Pyrenees": ["Pyrénées", "Pyrenäen", "Pirenei", "Pirineos", "جبال البيريني"],
@@ -312,7 +313,8 @@
     "Last 7 days": ["7 derniers jours", "Letzte 7 Tage", "Ultimi 7 giorni", "Últimos 7 días", "آخر 7 أيام"],
     "New snow period": ["Période de neige fraîche", "Neuschnee-Zeitraum", "Periodo della neve fresca", "Periodo de nieve nueva", "المدة ديال التلج الجديد"],
     "New snow over 48 h and 7 days is in Pro": ["La neige fraîche sur 48 h et 7 jours est dans Pro", "Neuschnee über 48 h und 7 Tage gibt es in Pro", "La neve fresca su 48 h e 7 giorni è in Pro", "La nieve nueva en 48 h y 7 días está en Pro", "التلج الجديد ديال 48 ساعة و 7 أيام كاين ف Pro"],
-    "48 h and 7-day snow are shown for today": ["La neige sur 48 h et 7 jours est affichée pour aujourd'hui", "Schnee über 48 h und 7 Tage wird für heute gezeigt", "La neve su 48 h e 7 giorni è mostrata per oggi", "La nieve en 48 h y 7 días se muestra para hoy", "التلج ديال 48 ساعة و 7 أيام كيبان غير لليوم"],
+    "Zoom in to see 48 h and 7-day snow": ["Zoomez pour voir la neige sur 48 h et 7 jours", "Hineinzoomen für Schnee über 48 h und 7 Tage", "Ingrandisci per vedere la neve su 48 h e 7 giorni", "Acerca el mapa para ver la nieve en 48 h y 7 días", "قرب الخريطة باش تشوف التلج ديال 48 ساعة و 7 أيام"],
+    "No 48 h or 7-day snow for this day: showing 24 h": ["Pas de neige sur 48 h ou 7 jours pour ce jour : affichage sur 24 h", "Kein Schnee über 48 h oder 7 Tage für diesen Tag: 24 h werden gezeigt", "Niente neve su 48 h o 7 giorni per questo giorno: si vedono le 24 h", "No hay nieve en 48 h o 7 días para este día: se muestran 24 h", "ما كاينش التلج ديال 48 ساعة ولا 7 أيام لهاد النهار: كيبان ديال 24 ساعة"],
     "Powder is free for today. Pro adds every day, 48 h and 7-day snow and the layers with a lock.": ["La poudreuse est gratuite pour aujourd'hui. Pro ajoute tous les jours, la neige sur 48 h et 7 jours et les calques avec un cadenas.", "Pulverschnee ist heute gratis. Pro bringt alle Tage, Schnee über 48 h und 7 Tage und die Ebenen mit Schloss.", "La neve fresca di oggi è gratis. Pro aggiunge tutti i giorni, la neve su 48 h e 7 giorni e i livelli con il lucchetto.", "La nieve polvo de hoy es gratis. Pro añade todos los días, la nieve en 48 h y 7 días y las capas con candado.", "التلج الطري فابور لليوم. Pro كيزيد گاع الأيام، التلج ديال 48 ساعة و 7 أيام والطبقات اللي فيهم القفل."],
     "Best powder, 48 h": ["Meilleure poudreuse sur 48 h", "Bester Pulverschnee, 48 h", "Miglior neve fresca, 48 h", "Mejor nieve polvo, 48 h", "أحسن تلج طري، 48 ساعة"],
     "Best powder, 7 days": ["Meilleure poudreuse sur 7 jours", "Bester Pulverschnee, 7 Tage", "Miglior neve fresca, 7 giorni", "Mejor nieve polvo, 7 días", "أحسن تلج طري، 7 أيام"],
@@ -413,6 +415,10 @@
     "Less snow than usual for this time of year.": ["Moins de neige que d'habitude à cette période.", "Weniger Schnee als sonst um diese Zeit.", "Meno neve del solito in questo periodo.", "Menos nieve de lo habitual en esta época.", "التلج قل من العادة فهاد الوقت ديال العام."],
     "Much less snow than usual for this time of year.": ["Beaucoup moins de neige que d'habitude à cette période.", "Viel weniger Schnee als sonst um diese Zeit.", "Molta meno neve del solito in questo periodo.", "Mucha menos nieve de lo habitual en esta época.", "التلج قل بزاف من العادة فهاد الوقت ديال العام."],
     "About as much snow as usual for this time of year.": ["Autant de neige que d'habitude à cette période.", "Etwa so viel Schnee wie sonst um diese Zeit.", "Neve nella media per questo periodo.", "Nieve como de costumbre en esta época.", "التلج بحال العادة فهاد الوقت ديال العام."],
+    "early {a}": ["début {a}", "Anfang {a}", "inizio {a}", "principios de {a}", "بداية {a}"],
+    "mid-{a}": ["mi-{a}", "Mitte {a}", "metà {a}", "mediados de {a}", "وسط {a}"],
+    "late {a}": ["fin {a}", "Ende {a}", "fine {a}", "finales de {a}", "آخر {a}"],
+    "{a} and {b}": ["{a} et {b}", "{a} und {b}", "{a} e {b}", "{a} y {b}", "{a} و{b}"],
     "Usually the best time to go:": ["Meilleure période en général :", "Meist die beste Zeit:", "Di solito il periodo migliore:", "Normalmente la mejor época:", "عادة أحسن وقت باش تمشي:"],
     "Advertisement": ["Publicité", "Anzeige", "Pubblicità", "Publicidad", "إشهار"],
     "Hotels map": ["Carte des hôtels", "Hotelkarte", "Mappa hotel", "Mapa de hoteles", "خريطة الأوطيلات"],
@@ -884,6 +890,8 @@
     "Stay near {a}·": ["Dormir près de {a}", "Übernachten bei {a}", "Dormire vicino a {a}", "Alojarse cerca de {a}", "بات قريب من {a}"],
     "7 more days at {a}": ["7 jours de plus à {a}", "7 weitere Tage in {a}", "7 giorni in più a {a}", "7 días más en {a}", "7 أيام زايدين فـ {a}"],
     "15 days at {a}": ["15 jours à {a}", "15 Tage in {a}", "15 giorni a {a}", "15 días en {a}", "15 يوم فـ {a}"],
+    // polish 0.9.34: the resort page's past-winters section says which height it is for
+    "At mid-mountain ({a}): this season and past winters": ["À mi-pente ({a}) : cette saison et les hivers passés", "Auf mittlerer Höhe ({a}): diese Saison und frühere Winter", "A metà montagna ({a}): questa stagione e gli inverni passati", "A media montaña ({a}): esta temporada y los inviernos pasados", "فوسط الجبل ({a}): هاد الموسم والشتوات اللي فاتو"],
     // last: any "x · y" gets its known parts translated ("Today · US West", "United States · US West")
     "{a} · {b}": ["{a} · {b}", "{a} · {b}", "{a} · {b}", "{a} · {b}", "{a} · {b}"],
   };

@@ -58,6 +58,8 @@ SS.start();
     document.querySelectorAll("[data-unit-h]").forEach((x) => { x.textContent = "Snow, in"; });
     document.querySelectorAll("td[data-cm]").forEach((td) => { const v = +td.dataset.cm; if (!v) return; const b = td.querySelector("b"); if (b) b.textContent = U.dep(v); else td.textContent = "+" + U.dep(v); });
     document.querySelectorAll("td[data-m]").forEach((td) => { const v = +td.dataset.m; if (v) td.textContent = U.elev(v); });
+  } else if (SS.U && window.I18N && I18N.lang !== "en") {   // other languages: heights grouped the local way ("2 472 m")
+    document.querySelectorAll("td[data-m]").forEach((td) => { const v = +td.dataset.m; if (v) td.textContent = SS.U.elev(v); });
   }
   tabs.onclick = (e) => { const b = e.target.closest("[data-tab]"); if (b) { cur = b.dataset.tab; q.value = ""; run(); } };
   document.getElementById("list").onclick = (e) => { const m = e.target.closest(".more"); if (m) { m.closest("section").dataset.all = "1"; run(); } };

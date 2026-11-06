@@ -38,7 +38,11 @@
     if (!mode) mode = guess();
     const us = () => mode === "us";
     const sp = () => (us() ? "\u00a0" : " ");
-    const loc = (n) => n.toLocaleString("en-US");
+    // grouping in the page language (fix 0.9.34b): en "2,472", fr "2 472" (narrow no-break space), de / Darija "2.472"
+    // (Latin digits), it / es "2472" (ICU: no grouping under 10 000). The separators are never a plain space or a
+    // no-break space, so i18n.js still finds "{a} m" / "+{a} in new" keys and its unit swap is untouched.
+    const LOCN = () => (window.I18N && I18N.locale) || "en-GB";
+    const loc = (n) => { try { return n.toLocaleString(LOCN(), { numberingSystem: "latn" }); } catch { return String(n); } };
     // depth / new snow: in with 1 decimal under 10 in, whole above; cm whole
     const dep = (cm) => { if (cm == null || isNaN(cm)) return "–"; if (!us()) return String(Math.round(cm)); const i = cm / 2.54; return i < 9.95 ? String(Math.round(i * 10) / 10) : String(Math.round(i)); };
     const du = () => (us() ? "in" : "cm");
@@ -60,7 +64,7 @@
     const elN = (m) => (us() ? nice(m * 3.28084) : m);
     const kmN = (km) => (us() ? nice(km / 1.609344) : km);
     const set = (v) => { mode = v === "us" ? "us" : "metric"; try { localStorage.setItem("ss_units", mode); } catch { /* private */ } };
-    return { us, set, mode: () => mode, sp, dep, du, depth, ev, eu, elev, dv, dvu, dist, tv, tu, wv, wu, wind, depN, elN, kmN, nice };
+    return { us, set, mode: () => mode, sp, dep, du, depth, ev, eu, elev, dv, dvu, dist, tv, tu, wv, wu, wind, depN, elN, kmN, nice, num: loc };
   })();
 
   // ------------------------------------------------------------------ config
