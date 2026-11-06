@@ -1,0 +1,788 @@
+{
+ "id": "2026-11-06-us_west-powder",
+ "slug": "us-west-fresh-snow-powder-alert-6-november-2026",
+ "date": "2026-11-06",
+ "published_utc": "2026-11-06T15:30:00Z",
+ "updated_utc": "2026-11-06T15:30:00Z",
+ "region": "US_WEST",
+ "angle": "powder",
+ "score": 58.5,
+ "signature": "mt_baker:30|buttermilk:20|dutch_henry_ski_hill:20",
+ "tags": [
+  "powder",
+  "stations",
+  "where-to-ski",
+  "avalanche"
+ ],
+ "facts": {
+  "angle": "powder_alert",
+  "region": "US West",
+  "date": "2026-11-06",
+  "weekday": "Friday",
+  "model_run": "2026-11-05",
+  "forecast_days": [
+   "2026-11-07",
+   "2026-11-08",
+   "2026-11-09"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 213690,
+   "resorts_with_snow": 140,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-04",
+   "snow_covered_area_km2": 248560,
+   "resorts_with_snow": 148
+  },
+  "region_forecast": {
+   "date": "2026-11-09",
+   "snow_covered_area_km2": 176750,
+   "resorts_with_snow": 130
+  },
+  "question": "Where did fresh snow fall in the last 72 hours, and is more coming?",
+  "resorts": [
+   {
+    "name": "Mt Baker",
+    "country": "United States",
+    "top_m": 1556,
+    "base_m": 1106,
+    "depth_cm_upper_slopes_today": 47,
+    "new_cm_last_24h": 11,
+    "new_cm_last_72h": 27,
+    "new_cm_forecast_next_days": 33,
+    "slug": "mt_baker",
+    "new_cm_by_day": {
+     "2026-11-04": 0,
+     "2026-11-05": 16,
+     "2026-11-06": 11,
+     "2026-11-07": 6,
+     "2026-11-08": 25,
+     "2026-11-09": 2
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1106,
+      "depth_cm_model": 5,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 1331,
+      "depth_cm_model": 15,
+      "new_cm_next_7_days": 16
+     },
+     "top": {
+      "elev_m": 1556,
+      "depth_cm_model": 25,
+      "new_cm_next_7_days": 22
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-06": {
+      "min": 1220,
+      "max": 2880
+     },
+     "2026-11-07": {
+      "min": 2100,
+      "max": 2760
+     },
+     "2026-11-08": {
+      "min": 830,
+      "max": 1710
+     }
+    },
+    "nearest_station": {
+     "station": "Wells Creek",
+     "elev_m": 1231,
+     "depth_cm_measured": 13,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 9.2
+    }
+   },
+   {
+    "name": "Buttermilk",
+    "country": "United States",
+    "top_m": 3012,
+    "base_m": 2402,
+    "depth_cm_upper_slopes_today": 46,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 15,
+    "new_cm_forecast_next_days": 0,
+    "slug": "buttermilk",
+    "new_cm_by_day": {
+     "2026-11-04": 1,
+     "2026-11-05": 15,
+     "2026-11-06": 0,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2402,
+      "depth_cm_model": 13,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 2707,
+      "depth_cm_model": 18,
+      "new_cm_next_7_days": 0
+     },
+     "top": {
+      "elev_m": 3012,
+      "depth_cm_model": 31,
+      "new_cm_next_7_days": 0
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-06": {
+      "min": 2480,
+      "max": 3260
+     },
+     "2026-11-07": {
+      "min": 2400,
+      "max": 3580
+     },
+     "2026-11-08": {
+      "min": 2460,
+      "max": 4130
+     }
+    },
+    "past_winters": {
+     "height_m": 2707,
+     "snow_cm_at_this_height_today_model": 21,
+     "deeper_than_n_of_past_winters": 36,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 9
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-10-27"
+    }
+   },
+   {
+    "name": "Dutch Henry Ski Hill",
+    "country": "United States",
+    "top_m": 3056,
+    "base_m": 3031,
+    "depth_cm_upper_slopes_today": 21,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 15,
+    "new_cm_forecast_next_days": 0,
+    "slug": "dutch_henry_ski_hill",
+    "new_cm_by_day": {
+     "2026-11-04": 3,
+     "2026-11-05": 12,
+     "2026-11-06": 0,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3031,
+      "depth_cm_model": 21,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 3043,
+      "depth_cm_model": 21,
+      "new_cm_next_7_days": 0
+     },
+     "top": {
+      "elev_m": 3056,
+      "depth_cm_model": 21,
+      "new_cm_next_7_days": 0
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-06": {
+      "min": 2300,
+      "max": 3440
+     },
+     "2026-11-07": {
+      "min": 2300,
+      "max": 3680
+     },
+     "2026-11-08": {
+      "min": 2600,
+      "max": 4160
+     }
+    },
+    "past_winters": {
+     "height_m": 3043,
+     "snow_cm_at_this_height_today_model": 21,
+     "deeper_than_n_of_past_winters": 33,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 11
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-10-27"
+    },
+    "nearest_station": {
+     "station": "Buckskin Joe",
+     "elev_m": 3402,
+     "depth_cm_measured": 8,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 18.0
+    }
+   },
+   {
+    "name": "Ski Cooper",
+    "country": "United States",
+    "top_m": 3579,
+    "base_m": 3226,
+    "depth_cm_upper_slopes_today": 37,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 14,
+    "new_cm_forecast_next_days": 0,
+    "slug": "ski_cooper",
+    "new_cm_by_day": {
+     "2026-11-04": 3,
+     "2026-11-05": 11,
+     "2026-11-06": 1,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 0
+    }
+   },
+   {
+    "name": "Monarch Mountain",
+    "country": "United States",
+    "top_m": 3598,
+    "base_m": 3260,
+    "depth_cm_upper_slopes_today": 30,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 12,
+    "new_cm_forecast_next_days": 0,
+    "slug": "monarch_mountain",
+    "new_cm_by_day": {
+     "2026-11-04": 2,
+     "2026-11-05": 11,
+     "2026-11-06": 0,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 0
+    }
+   }
+  ],
+  "measured_new_snow_at_stations": [
+   {
+    "station": "Chepeta",
+    "elev_m": 3197,
+    "new_cm_measured_24h": 30,
+    "depth_cm_measured": 51,
+    "measured_on": "2026-11-01"
+   },
+   {
+    "station": "Red Mountain Pass",
+    "elev_m": 3371,
+    "new_cm_measured_24h": 28,
+    "depth_cm_measured": 61,
+    "measured_on": "2026-11-01"
+   },
+   {
+    "station": "Bison Lake",
+    "elev_m": 3338,
+    "new_cm_measured_24h": 25,
+    "depth_cm_measured": 38,
+    "measured_on": "2026-11-01"
+   }
+  ],
+  "storm_cells_72h": [
+   {
+    "near": "Mt Baker",
+    "cm_in_72h": 33,
+    "km_from_resort": 14
+   },
+   {
+    "near": "Dutch Henry Ski Hill",
+    "cm_in_72h": 29,
+    "km_from_resort": 30
+   },
+   {
+    "near": "Mt Baker",
+    "cm_in_72h": 39,
+    "km_from_resort": 14
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map_new",
+   "kind": "new_map",
+   "file": "blog/media/2026/11/us-west-fresh-snow-powder-alert-6-november-2026/map_new.webp",
+   "thumb": "blog/media/2026/11/us-west-fresh-snow-powder-alert-6-november-2026/map_new_t.webp",
+   "bytes": 25044
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"49\" class=\"vl\">16</text><rect x=\"315\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"349\" y=\"49\" class=\"vl\">11</text><rect x=\"395\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"415\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><rect x=\"555\" y=\"36\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"49\" class=\"vl\">2</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Buttermilk</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dutch Henry Ski Hill</text><rect x=\"155\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"117\" class=\"vl\">3</text><rect x=\"235\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"272\" y=\"117\" class=\"vl\">12</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Ski Cooper</text><rect x=\"155\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"172\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"185\" class=\"vl\">11</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"49\" class=\"vl\">16</text><rect x=\"315\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"349\" y=\"49\" class=\"vl\">11</text><rect x=\"395\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"415\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><rect x=\"555\" y=\"36\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"49\" class=\"vl\">2</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Buttermilk</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dutch Henry Ski Hill</text><rect x=\"155\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"117\" class=\"vl\">3</text><rect x=\"235\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"272\" y=\"117\" class=\"vl\">12</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Ski Cooper</text><rect x=\"155\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"172\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"185\" class=\"vl\">11</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"49\" class=\"vl\">16</text><rect x=\"315\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"349\" y=\"49\" class=\"vl\">11</text><rect x=\"395\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"415\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><rect x=\"555\" y=\"36\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"49\" class=\"vl\">2</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Buttermilk</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dutch Henry Ski Hill</text><rect x=\"155\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"117\" class=\"vl\">3</text><rect x=\"235\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"272\" y=\"117\" class=\"vl\">12</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Ski Cooper</text><rect x=\"155\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"172\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"185\" class=\"vl\">11</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"49\" class=\"vl\">16</text><rect x=\"315\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"349\" y=\"49\" class=\"vl\">11</text><rect x=\"395\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"415\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><rect x=\"555\" y=\"36\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"49\" class=\"vl\">2</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Buttermilk</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dutch Henry Ski Hill</text><rect x=\"155\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"117\" class=\"vl\">3</text><rect x=\"235\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"272\" y=\"117\" class=\"vl\">12</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Ski Cooper</text><rect x=\"155\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"172\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"185\" class=\"vl\">11</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"49\" class=\"vl\">16</text><rect x=\"315\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"349\" y=\"49\" class=\"vl\">11</text><rect x=\"395\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"415\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><rect x=\"555\" y=\"36\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"49\" class=\"vl\">2</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Buttermilk</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dutch Henry Ski Hill</text><rect x=\"155\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"117\" class=\"vl\">3</text><rect x=\"235\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"272\" y=\"117\" class=\"vl\">12</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Ski Cooper</text><rect x=\"155\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"172\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"185\" class=\"vl\">11</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"49\" class=\"vl\">16</text><rect x=\"315\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"349\" y=\"49\" class=\"vl\">11</text><rect x=\"395\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"415\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><rect x=\"555\" y=\"36\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"49\" class=\"vl\">2</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Buttermilk</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dutch Henry Ski Hill</text><rect x=\"155\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"117\" class=\"vl\">3</text><rect x=\"235\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"272\" y=\"117\" class=\"vl\">12</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Ski Cooper</text><rect x=\"155\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"172\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"185\" class=\"vl\">11</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Fresh snow in the US West: 11 in in 72 hours at Mt Baker (6 November)",
+   "description": "Mt Baker got 11 in (27 cm) of new snow in the last 72 hours, 4 in (11 cm) of it in the last 24 hours. It now has about 19 in (47 cm) on its upper …",
+   "lede": "Mt Baker got 11 in (27 cm) of new snow in the last 72 hours, 4 in (11 cm) of it in the last 24 hours. It now has about 19 in (47 cm) on its upper slopes, according to our snow model.",
+   "sections": [
+    {
+     "h": "The new snow",
+     "p": [
+      "Elsewhere, Buttermilk, Dutch Henry Ski Hill and Ski Cooper got 6 in (15 cm), 6 in (15 cm) and 6 in (14 cm) in the last 72 hours.",
+      "Our snow model shows 82,506 sq mi (213,690 km²) of snow-covered ground in the US West today, with snow at 140 of 195 resorts."
+     ]
+    },
+    {
+     "h": "What the stations measured",
+     "p": [
+      "The Chepeta station (10,489 ft / 3,197 m) measured 20 in (51 cm) of snow on the ground on 1 November, with 12 in (30 cm) of new snow in 24 hours. The Red Mountain Pass station (11,060 ft / 3,371 m) measured 24 in (61 cm) of snow on the ground on 1 November, with 11 in (28 cm) of new snow in 24 hours. The Bison Lake station (10,951 ft / 3,338 m) measured 15 in (38 cm) of snow on the ground on 1 November, with 10 in (25 cm) of new snow in 24 hours.",
+      "Keep in mind: resort values come from our snow model and describe an area, while stations measure one point."
+     ]
+    },
+    {
+     "h": "Height, slopes and snow line",
+     "p": [
+      "Height matters: at Mt Baker, our model gives 10 in (25 cm) at the top (5,105 ft / 1,556 m), 6 in (15 cm) at mid-mountain (4,367 ft / 1,331 m) and 2 in (5 cm) at the base (3,629 ft / 1,106 m).",
+      "At Mt Baker, the freezing level reaches 4,003 ft (1,220 m) to 9,449 ft (2,880 m) on 6 November, above the top of the resort (5,105 ft / 1,556 m): rain or wet snow is possible on every slope that day."
+     ]
+    },
+    {
+     "h": "The next days",
+     "p": [
+      "Until 9 November, our forecast gives 13 in (33 cm) at Mt Baker.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    },
+    {
+     "h": "Safety and avalanche level",
+     "p": [
+      "After fresh snow, wind builds drifts on sheltered slopes. Off-piste, the first days after a snowfall need the most care."
+     ]
+    }
+   ],
+   "advice": [
+    "Fresh snow is best in the first hours after it stops: go early, before the sun and the crowds.",
+    "Look for snow high up and on north-facing slopes: they keep it longest, while south-facing slopes lose it first in the sun.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Get a powder alert in the SnowScope app to know when Mt Baker gets fresh snow."
+   ],
+   "captions": {
+    "map_new": "New snow in the last 72 hours in the US West, up to 6 November 2026 (SnowScope snow model).",
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast)."
+   }
+  },
+  "fr": {
+   "title": "Neige fraîche dans l'Ouest américain : 11 in en 72 heures à Mt Baker (6 novembre)",
+   "description": "Mt Baker a reçu 11 in (27 cm) de neige fraîche en 72 heures, dont 4 in (11 cm) au cours des dernières 24 heures. La station compte maintenant environ …",
+   "lede": "Mt Baker a reçu 11 in (27 cm) de neige fraîche en 72 heures, dont 4 in (11 cm) au cours des dernières 24 heures. La station compte maintenant environ 19 in (47 cm) sur le haut du domaine, selon notre modèle de neige.",
+   "sections": [
+    {
+     "h": "Où est tombée la neige fraîche",
+     "p": [
+      "Ailleurs, Buttermilk, Dutch Henry Ski Hill et Ski Cooper ont reçu 6 in (15 cm), 6 in (15 cm) et 6 in (14 cm) en 72 heures.",
+      "140 stations sur 195 dans l'Ouest américain ont de la neige sur le haut du domaine aujourd'hui, et notre modèle compte 82 506 sq mi (213 690 km²) de surface enneigée."
+     ]
+    },
+    {
+     "h": "Ce que mesurent les stations",
+     "p": [
+      "La station de mesure Chepeta (10 489 ft / 3 197 m) a mesuré 20 in (51 cm) de neige au sol le 1 novembre, dont 12 in (30 cm) de neige fraîche en 24 heures. La station de mesure Red Mountain Pass (11 060 ft / 3 371 m) a mesuré 24 in (61 cm) de neige au sol le 1 novembre, dont 11 in (28 cm) de neige fraîche en 24 heures. La station de mesure Bison Lake (10 951 ft / 3 338 m) a mesuré 15 in (38 cm) de neige au sol le 1 novembre, dont 10 in (25 cm) de neige fraîche en 24 heures.",
+      "Les chiffres des stations de ski sont des estimations du modèle pour le haut du domaine ; ceux des stations de mesure sont mesurés en un point, à la date indiquée."
+     ]
+    },
+    {
+     "h": "Altitude, pentes et limite pluie-neige",
+     "p": [
+      "L'altitude compte : à Mt Baker, notre modèle donne 10 in (25 cm) au sommet (5 105 ft / 1 556 m), 6 in (15 cm) à mi-pente (4 367 ft / 1 331 m) et 2 in (5 cm) en bas (3 629 ft / 1 106 m).",
+      "À Mt Baker, l'isotherme 0 °C monte entre 4 003 ft (1 220 m) et 9 449 ft (2 880 m) le 6 novembre, au-dessus du sommet de la station (5 105 ft / 1 556 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là."
+     ]
+    },
+    {
+     "h": "Ce qui arrive",
+     "p": [
+      "D'ici le 9 novembre, notre prévision donne 13 in (33 cm) à Mt Baker.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    },
+    {
+     "h": "Sécurité et risque d'avalanche",
+     "p": [
+      "Après une chute de neige, le vent forme des plaques sur les pentes abritées. En hors-piste, les premiers jours demandent le plus de prudence."
+     ]
+    }
+   ],
+   "advice": [
+    "La neige fraîche est la meilleure dans les premières heures : partez tôt, avant le soleil et la foule.",
+    "Cherchez la neige en altitude et sur les pentes orientées au nord : elles la gardent le plus longtemps, les pentes sud la perdent en premier.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Mt Baker reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map_new": "Neige fraîche des 72 dernières heures dans l'Ouest américain, jusqu'au 6 novembre 2026 (modèle SnowScope).",
+    "bars": "Neige fraîche par jour dans les stations en tête (jours passés : modèle ; barres claires : prévision)."
+   }
+  },
+  "de": {
+   "title": "Neuschnee im US-Westen: 11 in in 72 Stunden in Mt Baker (6. November)",
+   "description": "Mt Baker bekam in den letzten 72 Stunden 11 in (27 cm) Neuschnee, davon 4 in (11 cm) in den letzten 24 Stunden. Jetzt liegen dort laut unserem …",
+   "lede": "Mt Baker bekam in den letzten 72 Stunden 11 in (27 cm) Neuschnee, davon 4 in (11 cm) in den letzten 24 Stunden. Jetzt liegen dort laut unserem Schneemodell etwa 19 in (47 cm) in den oberen Hängen.",
+   "sections": [
+    {
+     "h": "Wo der Neuschnee fiel",
+     "p": [
+      "Außerdem bekamen Buttermilk, Dutch Henry Ski Hill und Ski Cooper in den letzten 72 Stunden 6 in (15 cm), 6 in (15 cm) und 6 in (14 cm).",
+      "140 von 195 Skigebieten im US-Westen haben heute Schnee in den oberen Hängen, und unser Modell zählt 82.506 sq mi (213.690 km²) Schneefläche."
+     ]
+    },
+    {
+     "h": "Was die Messstationen zeigen",
+     "p": [
+      "Die Messstation Chepeta (10.489 ft / 3.197 m) maß am 1. November eine Schneehöhe von 20 in (51 cm), davon 12 in (30 cm) Neuschnee in 24 Stunden. Die Messstation Red Mountain Pass (11.060 ft / 3.371 m) maß am 1. November eine Schneehöhe von 24 in (61 cm), davon 11 in (28 cm) Neuschnee in 24 Stunden. Die Messstation Bison Lake (10.951 ft / 3.338 m) maß am 1. November eine Schneehöhe von 15 in (38 cm), davon 10 in (25 cm) Neuschnee in 24 Stunden.",
+      "Die Werte der Skigebiete sind Modellschätzungen für die oberen Hänge; Messstationen messen an einem Punkt, am angegebenen Tag."
+     ]
+    },
+    {
+     "h": "Höhe, Hänge und Schneefallgrenze",
+     "p": [
+      "Die Höhe macht den Unterschied: In Mt Baker zeigt unser Modell 10 in (25 cm) am Gipfel (5.105 ft / 1.556 m), 6 in (15 cm) an der Mittelstation (4.367 ft / 1.331 m) und 2 in (5 cm) im Tal (3.629 ft / 1.106 m).",
+      "In Mt Baker liegt die Nullgradgrenze am 6. November zwischen 4.003 ft (1.220 m) und 9.449 ft (2.880 m), über dem höchsten Punkt des Skigebiets (5.105 ft (1.556 m)): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich."
+     ]
+    },
+    {
+     "h": "Was als Nächstes kommt",
+     "p": [
+      "Bis zum 9. November ergibt unsere Prognose 13 in (33 cm) in Mt Baker.",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    },
+    {
+     "h": "Sicherheit und Lawinengefahr",
+     "p": [
+      "Nach Neuschnee bildet der Wind Triebschnee in windabgewandten Hängen. Abseits der Piste sind die ersten Tage am heikelsten."
+     ]
+    }
+   ],
+   "advice": [
+    "Neuschnee ist in den ersten Stunden am besten: Starte früh, vor der Sonne und dem Andrang.",
+    "Such den Schnee weit oben und an Nordhängen: Dort hält er am längsten, Südhänge verlieren ihn zuerst in der Sonne.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Mt Baker Neuschnee bekommt."
+   ],
+   "captions": {
+    "map_new": "Neuschnee der letzten 72 Stunden im US-Westen, bis 6. November 2026 (SnowScope-Modell).",
+    "bars": "Neuschnee pro Tag in den führenden Skigebieten (vergangene Tage: Modell; helle Balken: Prognose)."
+   }
+  },
+  "it": {
+   "title": "Neve fresca nell'Ovest degli USA: 11 in in 72 ore a Mt Baker (6 novembre)",
+   "description": "Mt Baker ha ricevuto 11 in (27 cm) di neve fresca nelle ultime 72 ore, di cui 4 in (11 cm) nelle ultime 24 ore. Ora ha circa 19 in (47 cm) sui pendii …",
+   "lede": "Mt Baker ha ricevuto 11 in (27 cm) di neve fresca nelle ultime 72 ore, di cui 4 in (11 cm) nelle ultime 24 ore. Ora ha circa 19 in (47 cm) sui pendii superiori, secondo il nostro modello neve.",
+   "sections": [
+    {
+     "h": "Dove è caduta la neve fresca",
+     "p": [
+      "Altrove, Buttermilk, Dutch Henry Ski Hill e Ski Cooper hanno ricevuto 6 in (15 cm), 6 in (15 cm) e 6 in (14 cm) nelle ultime 72 ore.",
+      "140 località su 195 nell'Ovest degli USA hanno oggi neve sui pendii superiori, e il nostro modello conta 82.506 sq mi (213.690 km²) di superficie innevata."
+     ]
+    },
+    {
+     "h": "Cosa misurano le stazioni",
+     "p": [
+      "La stazione di Chepeta (10.489 ft / 3.197 m) ha misurato 20 in (51 cm) di neve al suolo il 1 novembre, con 12 in (30 cm) di neve fresca in 24 ore. La stazione di Red Mountain Pass (11.060 ft / 3.371 m) ha misurato 24 in (61 cm) di neve al suolo il 1 novembre, con 11 in (28 cm) di neve fresca in 24 ore. La stazione di Bison Lake (10.951 ft / 3.338 m) ha misurato 15 in (38 cm) di neve al suolo il 1 novembre, con 10 in (25 cm) di neve fresca in 24 ore.",
+      "I valori delle località sono stime del modello per i pendii superiori; le stazioni misurano in un punto, alla data indicata."
+     ]
+    },
+    {
+     "h": "Quota, pendii e quota neve",
+     "p": [
+      "La quota conta: a Mt Baker il nostro modello indica 10 in (25 cm) in vetta (5.105 ft / 1.556 m), 6 in (15 cm) a metà montagna (4.367 ft / 1.331 m) e 2 in (5 cm) alla base (3.629 ft / 1.106 m).",
+      "A Mt Baker lo zero termico sale tra 4.003 ft (1.220 m) e 9.449 ft (2.880 m) il 6 novembre, sopra la quota massima della località (5.105 ft (1.556 m)): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii."
+     ]
+    },
+    {
+     "h": "Cosa arriva",
+     "p": [
+      "Fino al 9 novembre la nostra previsione indica 13 in (33 cm) a Mt Baker.",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    },
+    {
+     "h": "Sicurezza e pericolo valanghe",
+     "p": [
+      "Dopo una nevicata il vento forma accumuli sui pendii sottovento. In fuoripista i primi giorni richiedono più prudenza."
+     ]
+    }
+   ],
+   "advice": [
+    "La neve fresca è migliore nelle prime ore: parti presto, prima del sole e della folla.",
+    "Cerca la neve in quota e sui versanti nord: la conservano più a lungo, mentre i versanti sud la perdono per primi al sole.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Mt Baker riceve neve fresca."
+   ],
+   "captions": {
+    "map_new": "Neve fresca delle ultime 72 ore nell'Ovest degli USA, fino al 6 novembre 2026 (modello SnowScope).",
+    "bars": "Neve fresca al giorno nelle località in testa (giorni passati: modello; barre chiare: previsione)."
+   }
+  },
+  "es": {
+   "title": "Nieve nueva en el oeste de EE. UU.: 11 in en 72 horas en Mt Baker (6 de noviembre)",
+   "description": "Mt Baker recibió 11 in (27 cm) de nieve nueva en las últimas 72 horas, 4 in (11 cm) de ellos en las últimas 24 horas. Ahora tiene unos 19 in (47 cm) …",
+   "lede": "Mt Baker recibió 11 in (27 cm) de nieve nueva en las últimas 72 horas, 4 in (11 cm) de ellos en las últimas 24 horas. Ahora tiene unos 19 in (47 cm) en las pistas altas, según nuestro modelo de nieve.",
+   "sections": [
+    {
+     "h": "Dónde cayó la nieve nueva",
+     "p": [
+      "En otras estaciones, Buttermilk, Dutch Henry Ski Hill y Ski Cooper recibieron 6 in (15 cm), 6 in (15 cm) y 6 in (14 cm) en las últimas 72 horas.",
+      "140 de 195 estaciones en el oeste de EE. UU. tienen hoy nieve en las pistas altas, y nuestro modelo cuenta 82.506 sq mi (213.690 km²) de superficie nevada."
+     ]
+    },
+    {
+     "h": "Lo que miden las estaciones",
+     "p": [
+      "La estación de medida Chepeta (10.489 ft / 3197 m) midió 20 in (51 cm) de nieve en el suelo el 1 de noviembre, con 12 in (30 cm) de nieve nueva en 24 horas. La estación de medida Red Mountain Pass (11.060 ft / 3371 m) midió 24 in (61 cm) de nieve en el suelo el 1 de noviembre, con 11 in (28 cm) de nieve nueva en 24 horas. La estación de medida Bison Lake (10.951 ft / 3338 m) midió 15 in (38 cm) de nieve en el suelo el 1 de noviembre, con 10 in (25 cm) de nieve nueva en 24 horas.",
+      "Las cifras de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida miden en un punto, en la fecha indicada."
+     ]
+    },
+    {
+     "h": "Altitud, laderas y cota de nieve",
+     "p": [
+      "La altitud cuenta: en Mt Baker, nuestro modelo da 10 in (25 cm) en la cota alta (5105 ft / 1556 m), 6 in (15 cm) a media montaña (4367 ft / 1331 m) y 2 in (5 cm) en la base (3629 ft / 1106 m).",
+      "En Mt Baker, la cota de congelación llega a 4003 ft (1220 m)-9449 ft (2880 m) el 6 de noviembre, por encima de la cota alta de la estación (5105 ft (1556 m)): ese día puede haber lluvia o nieve húmeda en todas las pistas."
+     ]
+    },
+    {
+     "h": "Lo que viene",
+     "p": [
+      "Hasta el 9 de noviembre, nuestra previsión da 13 in (33 cm) en Mt Baker.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    },
+    {
+     "h": "Seguridad y peligro de aludes",
+     "p": [
+      "Tras una nevada, el viento forma placas en las laderas resguardadas. Fuera de pista, los primeros días piden más prudencia."
+     ]
+    }
+   ],
+   "advice": [
+    "La nieve nueva es mejor en las primeras horas: sal temprano, antes del sol y de la gente.",
+    "Busca la nieve en lo alto y en las laderas orientadas al norte: la guardan más tiempo; las orientadas al sur la pierden antes.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Mt Baker recibe nieve nueva."
+   ],
+   "captions": {
+    "map_new": "Nieve nueva de las últimas 72 horas en el oeste de EE. UU., hasta el 6 de noviembre 2026 (modelo SnowScope).",
+    "bars": "Nieve nueva por día en las estaciones líderes (días pasados: modelo; barras claras: previsión)."
+   }
+  },
+  "ar": {
+   "title": "تلج جديد فغرب ميريكان: 11 إنش ف 72 ساعة ف Mt Baker (6 نونبر)",
+   "description": "Mt Baker طاح فيها 11 إنش (27 سم) ديال تلج جديد ف 72 ساعة اللي فاتو، منهم 4 إنش (11 سم) ف 24 ساعة اللي فاتو. دابا فيها تقريبا 19 إنش (47 سم) فالجهة …",
+   "lede": "Mt Baker طاح فيها 11 إنش (27 سم) ديال تلج جديد ف 72 ساعة اللي فاتو، منهم 4 إنش (11 سم) ف 24 ساعة اللي فاتو. دابا فيها تقريبا 19 إنش (47 سم) فالجهة الفوقانية، حسب الموديل ديال التلج ديالنا.",
+   "sections": [
+    {
+     "h": "فين طاح التلج الجديد",
+     "p": [
+      "فبلايص أخرى، Buttermilk، Dutch Henry Ski Hill و Ski Cooper طاح فيهم 6 إنش (15 سم)، 6 إنش (15 سم) و 6 إنش (14 سم) ف 72 ساعة اللي فاتو.",
+      "140 محطة من 195 فغرب ميريكان فيهم التلج فالجهة الفوقانية اليوم، والموديل ديالنا كيحسب 82506 ميل² (213690 كم²) ديال الأرض اللي فيها التلج."
+     ]
+    },
+    {
+     "h": "شنو قاسو المحطات",
+     "p": [
+      "محطة القياس Chepeta (10489 قدم / 3197 م) قاست 20 إنش (51 سم) ديال التلج فالأرض نهار 1 نونبر، منهم 12 إنش (30 سم) تلج جديد ف 24 ساعة. محطة القياس Red Mountain Pass (11060 قدم / 3371 م) قاست 24 إنش (61 سم) ديال التلج فالأرض نهار 1 نونبر، منهم 11 إنش (28 سم) تلج جديد ف 24 ساعة. محطة القياس Bison Lake (10951 قدم / 3338 م) قاست 15 إنش (38 سم) ديال التلج فالأرض نهار 1 نونبر، منهم 10 إنش (25 سم) تلج جديد ف 24 ساعة.",
+      "الأرقام ديال المحطات ديال التزلج تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس كتقيس فنقطة وحدة، فالتاريخ المكتوب."
+     ]
+    },
+    {
+     "h": "العلو، الجهات والحد ديال التلج",
+     "p": [
+      "العلو مهم: ف Mt Baker، الموديل ديالنا كيعطي 10 إنش (25 سم) فالفوق (5105 قدم / 1556 م)، 6 إنش (15 سم) فالوسط (4367 قدم / 1331 م) و 2 إنش (5 سم) فالتحت (3629 قدم / 1106 م).",
+      "ف Mt Baker، علو الجليد غادي يكون بين 4003 قدم (1220 م) و 9449 قدم (2880 م) نهار 6 نونبر، فوق أعلى نقطة فالمحطة (5105 قدم (1556 م)): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات."
+     ]
+    },
+    {
+     "h": "شنو جاي",
+     "p": [
+      "حتى ل 9 نونبر، التوقعات ديالنا كتعطي 13 إنش (33 سم) ف Mt Baker.",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    },
+    {
+     "h": "السلامة وخطر الانهيارات",
+     "p": [
+      "من بعد التلج الجديد، الريح كتجمعو فالجهات المحمية. برا البيست، الأيام الأولى هي اللي خاصها حذر كثر."
+     ]
+    }
+   ],
+   "advice": [
+    "التلج الجديد كيكون مزيان فالساعات الأولى: سير بكري، قبل الشمس والناس.",
+    "قلب على التلج فالعلو وفالجهات اللي كتشوف للشمال: كيحافظو عليه كثر، والجهات اللي كتشوف للجنوب كيمشي ليهم بالشمس.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Mt Baker يجيها تلج جديد."
+   ],
+   "captions": {
+    "map_new": "التلج الجديد ديال 72 ساعة اللي فاتو فغرب ميريكان، حتى ل 6 نونبر 2026 (الموديل ديال SnowScope).",
+    "bars": "التلج الجديد فكل نهار فالمحطات اللولين (الأيام اللي فاتو من الموديل، والخطوط الفاتحة = التوقعات)."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  },
+  "fr": {
+   "writer": "template"
+  },
+  "de": {
+   "writer": "template"
+  },
+  "it": {
+   "writer": "template"
+  },
+  "es": {
+   "writer": "template"
+  },
+  "ar": {
+   "writer": "template"
+  }
+ },
+ "words_en": 348,
+ "indexable": true,
+ "main": {
+  "slug": "mt_baker",
+  "name": "Mt Baker",
+  "lat": 48.8571,
+  "lon": -121.6652
+ },
+ "places": [
+  {
+   "name": "Mt Baker",
+   "lat": 48.8571,
+   "lon": -121.6652
+  },
+  {
+   "name": "Buttermilk",
+   "lat": 39.1923,
+   "lon": -106.8701
+  },
+  {
+   "name": "Dutch Henry Ski Hill",
+   "lat": 39.2378,
+   "lon": -106.304
+  },
+  {
+   "name": "Ski Cooper",
+   "lat": 39.3559,
+   "lon": -106.2889
+  },
+  {
+   "name": "Monarch Mountain",
+   "lat": 38.5168,
+   "lon": -106.3444
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "mt_baker",
+   "name": "Mt Baker"
+  },
+  {
+   "slug": "buttermilk",
+   "name": "Buttermilk"
+  },
+  {
+   "slug": "dutch_henry_ski_hill",
+   "name": "Dutch Henry Ski Hill"
+  },
+  {
+   "slug": "ski_cooper",
+   "name": "Ski Cooper"
+  },
+  {
+   "slug": "monarch_mountain",
+   "name": "Monarch Mountain"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "mt_baker",
+    "name": "Mt Baker",
+    "depth": 47,
+    "new72": 27,
+    "next": 33,
+    "top_m": 1556
+   },
+   {
+    "slug": "buttermilk",
+    "name": "Buttermilk",
+    "depth": 46,
+    "new72": 15,
+    "next": 0,
+    "top_m": 3012
+   },
+   {
+    "slug": "dutch_henry_ski_hill",
+    "name": "Dutch Henry Ski Hill",
+    "depth": 21,
+    "new72": 15,
+    "next": 0,
+    "top_m": 3056
+   },
+   {
+    "slug": "ski_cooper",
+    "name": "Ski Cooper",
+    "depth": 37,
+    "new72": 14,
+    "next": 0,
+    "top_m": 3579
+   },
+   {
+    "slug": "monarch_mountain",
+    "name": "Monarch Mountain",
+    "depth": 30,
+    "new72": 12,
+    "next": 0,
+    "top_m": 3598
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-07",
+ "map_link": "https://snowscope.app/#@48.857,-121.665,9.0",
+ "seconds": 0.0,
+ "publish_utc": "2026-11-06T15:30:00Z"
+}
