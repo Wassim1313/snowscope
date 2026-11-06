@@ -1,0 +1,772 @@
+{
+ "id": "2026-11-06-us_west-history",
+ "slug": "us-west-snow-vs-past-winters-6-november-2026",
+ "date": "2026-11-06",
+ "published_utc": "2026-11-06T18:30:00Z",
+ "updated_utc": "2026-11-06T18:30:00Z",
+ "region": "US_WEST",
+ "angle": "history",
+ "score": 49,
+ "signature": "kendall_mountain_recreation_area:4|telluride_ski_area:7|wolf_creek_ski_area:7",
+ "tags": [
+  "past-winters",
+  "snow-depth"
+ ],
+ "facts": {
+  "angle": "snow_vs_past_winters",
+  "region": "US West",
+  "date": "2026-11-06",
+  "weekday": "Friday",
+  "model_run": "2026-11-05",
+  "forecast_days": [
+   "2026-11-07",
+   "2026-11-08",
+   "2026-11-09"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 213690,
+   "resorts_with_snow": 140,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-04",
+   "snow_covered_area_km2": 248560,
+   "resorts_with_snow": 148
+  },
+  "region_forecast": {
+   "date": "2026-11-09",
+   "snow_covered_area_km2": 176750,
+   "resorts_with_snow": 130
+  },
+  "question": "Is there more or less snow than usual for the date, compared with the past 46 winters?",
+  "past_winters_period": "1980-81 to 2025-26",
+  "resorts": [
+   {
+    "name": "Kendall Mountain",
+    "country": "United States",
+    "top_m": 2904,
+    "base_m": 2835,
+    "depth_cm_upper_slopes_today": 129,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 1,
+    "slug": "kendall_mountain_recreation_area",
+    "new_cm_by_day": {
+     "2026-11-04": 2,
+     "2026-11-05": 1,
+     "2026-11-06": 1,
+     "2026-11-07": 1,
+     "2026-11-08": 0,
+     "2026-11-09": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2835,
+      "depth_cm_model": 5,
+      "new_cm_next_7_days": 1
+     },
+     "mid": {
+      "elev_m": 2869,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 1
+     },
+     "top": {
+      "elev_m": 2904,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 1
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-06": {
+      "min": 2150,
+      "max": 3400
+     },
+     "2026-11-07": {
+      "min": 2130,
+      "max": 3600
+     },
+     "2026-11-08": {
+      "min": 2030,
+      "max": 4260
+     }
+    },
+    "past_winters": {
+     "height_m": 2869,
+     "snow_cm_at_this_height_today_model": 5,
+     "deeper_than_n_of_past_winters": 21,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 6
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-30"
+    },
+    "nearest_station": {
+     "station": "Mineral Creek",
+     "elev_m": 3057,
+     "depth_cm_measured": 13,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 7.4
+    }
+   },
+   {
+    "name": "Telluride",
+    "country": "United States",
+    "top_m": 3812,
+    "base_m": 2662,
+    "depth_cm_upper_slopes_today": 126,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 5,
+    "new_cm_forecast_next_days": 1,
+    "slug": "telluride_ski_area",
+    "new_cm_by_day": {
+     "2026-11-04": 2,
+     "2026-11-05": 2,
+     "2026-11-06": 1,
+     "2026-11-07": 1,
+     "2026-11-08": 0,
+     "2026-11-09": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2662,
+      "depth_cm_model": 3,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 3237,
+      "depth_cm_model": 29,
+      "new_cm_next_7_days": 1
+     },
+     "top": {
+      "elev_m": 3812,
+      "depth_cm_model": 108,
+      "new_cm_next_7_days": 1
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-06": {
+      "min": 2560,
+      "max": 3400
+     },
+     "2026-11-07": {
+      "min": 2530,
+      "max": 3620
+     },
+     "2026-11-08": {
+      "min": 2620,
+      "max": 4230
+     }
+    },
+    "past_winters": {
+     "height_m": 3237,
+     "snow_cm_at_this_height_today_model": 36,
+     "deeper_than_n_of_past_winters": 37,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 13
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-30"
+    },
+    "nearest_station": {
+     "station": "Alta Lakes",
+     "elev_m": 3441,
+     "depth_cm_measured": 46,
+     "new_cm_measured_24h": 18,
+     "measured_on": "2026-11-01",
+     "km_away": 3.5
+    }
+   },
+   {
+    "name": "Wolf Creek",
+    "country": "United States",
+    "top_m": 3585,
+    "base_m": 3128,
+    "depth_cm_upper_slopes_today": 80,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 0,
+    "slug": "wolf_creek_ski_area",
+    "new_cm_by_day": {
+     "2026-11-04": 1,
+     "2026-11-05": 0,
+     "2026-11-06": 0,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3128,
+      "depth_cm_model": 7,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 3356,
+      "depth_cm_model": 35,
+      "new_cm_next_7_days": 0
+     },
+     "top": {
+      "elev_m": 3585,
+      "depth_cm_model": 46,
+      "new_cm_next_7_days": 0
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-06": {
+      "min": 2370,
+      "max": 3380
+     },
+     "2026-11-07": {
+      "min": 2400,
+      "max": 3640
+     },
+     "2026-11-08": {
+      "min": 2330,
+      "max": 4250
+     }
+    },
+    "past_winters": {
+     "height_m": 3356,
+     "snow_cm_at_this_height_today_model": 57,
+     "deeper_than_n_of_past_winters": 35,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 13
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-27"
+    },
+    "nearest_station": {
+     "station": "Wolf Creek Summit",
+     "elev_m": 3331,
+     "depth_cm_measured": 46,
+     "new_cm_measured_24h": 10,
+     "measured_on": "2026-11-01",
+     "km_away": 2.0
+    }
+   },
+   {
+    "name": "Cimarron Mountain Club",
+    "country": "United States",
+    "top_m": 3461,
+    "base_m": 2991,
+    "depth_cm_upper_slopes_today": 78,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 5,
+    "new_cm_forecast_next_days": 0,
+    "slug": "cimarron_mountain_club",
+    "new_cm_by_day": {
+     "2026-11-04": 3,
+     "2026-11-05": 2,
+     "2026-11-06": 0,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2991,
+      "depth_cm_model": 17,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 3226,
+      "depth_cm_model": 30,
+      "new_cm_next_7_days": 0
+     },
+     "top": {
+      "elev_m": 3461,
+      "depth_cm_model": 54,
+      "new_cm_next_7_days": 0
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-06": {
+      "min": 2790,
+      "max": 3380
+     },
+     "2026-11-07": {
+      "min": 2610,
+      "max": 3660
+     },
+     "2026-11-08": {
+      "min": 2840,
+      "max": 4400
+     }
+    },
+    "past_winters": {
+     "height_m": 3226,
+     "snow_cm_at_this_height_today_model": 19,
+     "deeper_than_n_of_past_winters": 31,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 9
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-27"
+    }
+   },
+   {
+    "name": "Lake City Ski Hill",
+    "country": "United States",
+    "top_m": 2768,
+    "base_m": 2701,
+    "depth_cm_upper_slopes_today": 77,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 3,
+    "new_cm_forecast_next_days": 1,
+    "slug": "lake_city_ski_hill",
+    "new_cm_by_day": {
+     "2026-11-04": 1,
+     "2026-11-05": 1,
+     "2026-11-06": 1,
+     "2026-11-07": 1,
+     "2026-11-08": 0,
+     "2026-11-09": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2701,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 2734,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "top": {
+      "elev_m": 2768,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-06": {
+      "min": 2340,
+      "max": 3480
+     },
+     "2026-11-07": {
+      "min": 2070,
+      "max": 3680
+     },
+     "2026-11-08": {
+      "min": 2170,
+      "max": 4260
+     }
+    },
+    "past_winters": {
+     "height_m": 2734,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 4,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 3
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-27"
+    },
+    "nearest_station": {
+     "station": "Slumgullion",
+     "elev_m": 3523,
+     "depth_cm_measured": 58,
+     "new_cm_measured_24h": 23,
+     "measured_on": "2026-11-01",
+     "km_away": 9.9
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-snow-vs-past-winters-6-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-snow-vs-past-winters-6-november-2026/map_t.webp",
+   "bytes": 66340
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "US West: is the snow above or below normal? (6 November)",
+   "description": "We compared today's snow at 5 resorts in the US West with the same date in each of the past 46 winters. 3 of them are clearly above normal.",
+   "lede": "We compared today's snow at 5 resorts in the US West with the same date in each of the past 46 winters. 3 of them are clearly above normal.",
+   "sections": [
+    {
+     "h": "Compared with past winters",
+     "p": [
+      "At 9,413 ft (2,869 m) on Kendall Mountain, today's 2 in (5 cm) is close to normal for the date: deeper than in 21 of the past 46 winters (usual: 2 in (6 cm)).",
+      "This is a good start at Telluride. At 10,620 ft (3,237 m), our model has 14 in (36 cm) today, deeper than on this date in 37 of the past 46 winters (usual: 5 in (13 cm)).",
+      "This is a good start at Wolf Creek. At 11,010 ft (3,356 m), our model has 22 in (57 cm) today, deeper than on this date in 35 of the past 46 winters (usual: 5 in (13 cm)).",
+      "This is a good start at Cimarron Mountain Club. At 10,584 ft (3,226 m), our model has 7 in (19 cm) today, deeper than on this date in 31 of the past 46 winters (usual: 4 in (9 cm)).",
+      "At 8,970 ft (2,734 m) on Lake City Ski Hill the season has not started yet: our model has no snow there today (usual for the date: 1 in (3 cm)). Only 4 of the past 46 winters had as little."
+     ]
+    },
+    {
+     "h": "Today's snow",
+     "p": [
+      "Of these resorts, Kendall Mountain has the most snow on its upper slopes today, about 51 in (129 cm); then come Telluride 50 in (126 cm) and Wolf Creek 31 in (80 cm).",
+      "140 of 195 resorts in the US West have snow on their upper slopes today, and our model counts 82,506 sq mi (213,690 km²) of snow-covered ground.",
+      "Keep in mind: resort values come from our snow model and describe an area, while stations measure one point."
+     ]
+    },
+    {
+     "h": "What is coming next",
+     "p": [
+      "Until 9 November, our forecast gives 0 in (1 cm) at Kendall Mountain, 0 in (1 cm) at Telluride and 0 in (1 cm) at Lake City Ski Hill.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Look for snow high up and on north-facing slopes: they keep it longest, while south-facing slopes lose it first in the sun.",
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "Get a powder alert in the SnowScope app to know when Kendall Mountain gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the US West on 6 November 2026 (SnowScope snow model): Kendall Mountain, Telluride, Wolf Creek, Cimarron Mountain Club, Lake City Ski Hill."
+   }
+  },
+  "fr": {
+   "title": "Ouest américain : la neige au-dessus ou en dessous de la normale ? (6 novembre)",
+   "description": "Nous avons comparé la neige du jour dans 5 stations dans l'Ouest américain avec la même date lors de chacun des 46 hivers passés. 3 sont nettement …",
+   "lede": "Nous avons comparé la neige du jour dans 5 stations dans l'Ouest américain avec la même date lors de chacun des 46 hivers passés. 3 sont nettement au-dessus de la normale.",
+   "sections": [
+    {
+     "h": "Comparé aux hivers passés",
+     "p": [
+      "À 9 413 ft (2 869 m) à Kendall Mountain, les 2 in (5 cm) d'aujourd'hui sont proches de la normale pour la date : plus que lors de 21 des 46 hivers passés (habituel : 2 in (6 cm)).",
+      "C'est un bon début à Telluride. À 10 620 ft (3 237 m), notre modèle donne 14 in (36 cm) aujourd'hui, plus qu'à cette date lors de 37 des 46 hivers passés (habituel : 5 in (13 cm)).",
+      "C'est un bon début à Wolf Creek. À 11 010 ft (3 356 m), notre modèle donne 22 in (57 cm) aujourd'hui, plus qu'à cette date lors de 35 des 46 hivers passés (habituel : 5 in (13 cm)).",
+      "C'est un bon début à Cimarron Mountain Club. À 10 584 ft (3 226 m), notre modèle donne 7 in (19 cm) aujourd'hui, plus qu'à cette date lors de 31 des 46 hivers passés (habituel : 4 in (9 cm)).",
+      "À 8 970 ft (2 734 m) à Lake City Ski Hill, la saison n'a pas encore commencé : notre modèle n'y donne pas de neige aujourd'hui (habituel à cette date : 1 in (3 cm)). Seuls 4 des 46 hivers passés en avaient aussi peu."
+     ]
+    },
+    {
+     "h": "Où est la neige aujourd'hui",
+     "p": [
+      "Parmi ces stations, Kendall Mountain a le plus de neige sur le haut du domaine aujourd'hui, environ 51 in (129 cm) ; suivent Telluride 50 in (126 cm) et Wolf Creek 31 in (80 cm).",
+      "140 stations sur 195 dans l'Ouest américain ont de la neige sur le haut du domaine aujourd'hui, et notre modèle compte 82 506 sq mi (213 690 km²) de surface enneigée.",
+      "Les chiffres des stations de ski sont des estimations du modèle pour le haut du domaine ; ceux des stations de mesure sont mesurés en un point, à la date indiquée."
+     ]
+    },
+    {
+     "h": "Ce qui arrive",
+     "p": [
+      "D'ici le 9 novembre, notre prévision donne 0 in (1 cm) à Kendall Mountain, 0 in (1 cm) à Telluride et 0 in (1 cm) à Lake City Ski Hill.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Cherchez la neige en altitude et sur les pentes orientées au nord : elles la gardent le plus longtemps, les pentes sud la perdent en premier.",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Kendall Mountain reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest américain le 6 novembre 2026 (modèle de neige SnowScope) : Kendall Mountain, Telluride, Wolf Creek, Cimarron Mountain Club, Lake City Ski Hill."
+   }
+  },
+  "de": {
+   "title": "US-Westen: Mehr oder weniger Schnee als üblich? (6. November)",
+   "description": "Wir haben den Schnee von heute in 5 Skigebieten im US-Westen mit demselben Datum in jedem der letzten 46 Winter verglichen. 3 liegen deutlich über …",
+   "lede": "Wir haben den Schnee von heute in 5 Skigebieten im US-Westen mit demselben Datum in jedem der letzten 46 Winter verglichen. 3 liegen deutlich über dem Normalwert.",
+   "sections": [
+    {
+     "h": "Im Vergleich mit früheren Wintern",
+     "p": [
+      "Auf 9.413 ft (2.869 m) in Kendall Mountain liegen die heutigen 2 in (5 cm) nahe am Normalwert: mehr als in 21 der letzten 46 Winter (üblich: 2 in (6 cm)).",
+      "Ein guter Start in Telluride: Auf 10.620 ft (3.237 m) zeigt unser Modell heute 14 in (36 cm), mehr als an diesem Datum in 37 der letzten 46 Winter (üblich: 5 in (13 cm)).",
+      "Ein guter Start in Wolf Creek: Auf 11.010 ft (3.356 m) zeigt unser Modell heute 22 in (57 cm), mehr als an diesem Datum in 35 der letzten 46 Winter (üblich: 5 in (13 cm)).",
+      "Ein guter Start in Cimarron Mountain Club: Auf 10.584 ft (3.226 m) zeigt unser Modell heute 7 in (19 cm), mehr als an diesem Datum in 31 der letzten 46 Winter (üblich: 4 in (9 cm)).",
+      "Auf 8.970 ft (2.734 m) in Lake City Ski Hill hat die Saison noch nicht begonnen: Unser Modell zeigt dort heute keinen Schnee (üblich an diesem Datum: 1 in (3 cm)). Nur 4 der letzten 46 Winter hatten so wenig."
+     ]
+    },
+    {
+     "h": "Wo heute Schnee liegt",
+     "p": [
+      "Von diesen Skigebieten hat Kendall Mountain heute den meisten Schnee in den oberen Hängen, etwa 51 in (129 cm); danach folgen Telluride 50 in (126 cm) und Wolf Creek 31 in (80 cm).",
+      "140 von 195 Skigebieten im US-Westen haben heute Schnee in den oberen Hängen, und unser Modell zählt 82.506 sq mi (213.690 km²) Schneefläche.",
+      "Die Werte der Skigebiete sind Modellschätzungen für die oberen Hänge; Messstationen messen an einem Punkt, am angegebenen Tag."
+     ]
+    },
+    {
+     "h": "Was als Nächstes kommt",
+     "p": [
+      "Bis zum 9. November ergibt unsere Prognose 0 in (1 cm) in Kendall Mountain, 0 in (1 cm) in Telluride und 0 in (1 cm) in Lake City Ski Hill.",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Such den Schnee weit oben und an Nordhängen: Dort hält er am längsten, Südhänge verlieren ihn zuerst in der Sonne.",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Früher Schnee ist dünn. Bleib auf offenen, präparierten Pisten: Steine und Gras liegen oft knapp darunter.",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Kendall Mountain Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe im US-Westen am 6. November 2026 (SnowScope-Schneemodell): Kendall Mountain, Telluride, Wolf Creek, Cimarron Mountain Club, Lake City Ski Hill."
+   }
+  },
+  "it": {
+   "title": "Ovest degli USA: neve sopra o sotto la norma? (6 novembre)",
+   "description": "Abbiamo confrontato la neve di oggi in 5 località nell'Ovest degli USA con la stessa data in ciascuno dei 46 inverni passati. 3 sono nettamente sopra …",
+   "lede": "Abbiamo confrontato la neve di oggi in 5 località nell'Ovest degli USA con la stessa data in ciascuno dei 46 inverni passati. 3 sono nettamente sopra la norma.",
+   "sections": [
+    {
+     "h": "Rispetto agli inverni passati",
+     "p": [
+      "A 9.413 ft (2.869 m) a Kendall Mountain i 2 in (5 cm) di oggi sono vicini alla norma: più che in 21 dei 46 inverni passati (abituale: 2 in (6 cm)).",
+      "Un buon inizio a Telluride: a 10.620 ft (3.237 m) il nostro modello indica oggi 14 in (36 cm), più che in questa data in 37 dei 46 inverni passati (abituale: 5 in (13 cm)).",
+      "Un buon inizio a Wolf Creek: a 11.010 ft (3.356 m) il nostro modello indica oggi 22 in (57 cm), più che in questa data in 35 dei 46 inverni passati (abituale: 5 in (13 cm)).",
+      "Un buon inizio a Cimarron Mountain Club: a 10.584 ft (3.226 m) il nostro modello indica oggi 7 in (19 cm), più che in questa data in 31 dei 46 inverni passati (abituale: 4 in (9 cm)).",
+      "A 8.970 ft (2.734 m) a Lake City Ski Hill la stagione non è ancora iniziata: il nostro modello oggi non indica neve (abituale in questa data: 1 in (3 cm)). Solo 4 dei 46 inverni passati ne avevano così poca."
+     ]
+    },
+    {
+     "h": "Dove c'è neve oggi",
+     "p": [
+      "Tra queste località, Kendall Mountain ha oggi più neve sui pendii superiori, circa 51 in (129 cm); seguono Telluride 50 in (126 cm) e Wolf Creek 31 in (80 cm).",
+      "140 località su 195 nell'Ovest degli USA hanno oggi neve sui pendii superiori, e il nostro modello conta 82.506 sq mi (213.690 km²) di superficie innevata.",
+      "I valori delle località sono stime del modello per i pendii superiori; le stazioni misurano in un punto, alla data indicata."
+     ]
+    },
+    {
+     "h": "Cosa arriva",
+     "p": [
+      "Fino al 9 novembre la nostra previsione indica 0 in (1 cm) a Kendall Mountain, 0 in (1 cm) a Telluride e 0 in (1 cm) a Lake City Ski Hill.",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Cerca la neve in quota e sui versanti nord: la conservano più a lungo, mentre i versanti sud la perdono per primi al sole.",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "La neve di inizio stagione è sottile. Resta sulle piste aperte e battute: sassi ed erba sono appena sotto.",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Kendall Mountain riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve nell'Ovest degli USA il 6 novembre 2026 (modello neve SnowScope): Kendall Mountain, Telluride, Wolf Creek, Cimarron Mountain Club, Lake City Ski Hill."
+   }
+  },
+  "es": {
+   "title": "Oeste de EE. UU.: ¿nieve por encima o por debajo de lo normal? (6 de noviembre)",
+   "description": "Comparamos la nieve de hoy en 5 estaciones en el oeste de EE. UU. con la misma fecha de cada uno de los 46 inviernos pasados. 3 están claramente por …",
+   "lede": "Comparamos la nieve de hoy en 5 estaciones en el oeste de EE. UU. con la misma fecha de cada uno de los 46 inviernos pasados. 3 están claramente por encima de lo normal.",
+   "sections": [
+    {
+     "h": "Comparado con los inviernos pasados",
+     "p": [
+      "A 9413 ft (2869 m) en Kendall Mountain, los 2 in (5 cm) de hoy están cerca de lo normal para la fecha: más que en 21 de los 46 inviernos pasados (lo habitual: 2 in (6 cm)).",
+      "Buen comienzo en Telluride: a 10.620 ft (3237 m), nuestro modelo da hoy 14 in (36 cm), más que en esta fecha en 37 de los 46 inviernos pasados (lo habitual: 5 in (13 cm)).",
+      "Buen comienzo en Wolf Creek: a 11.010 ft (3356 m), nuestro modelo da hoy 22 in (57 cm), más que en esta fecha en 35 de los 46 inviernos pasados (lo habitual: 5 in (13 cm)).",
+      "Buen comienzo en Cimarron Mountain Club: a 10.584 ft (3226 m), nuestro modelo da hoy 7 in (19 cm), más que en esta fecha en 31 de los 46 inviernos pasados (lo habitual: 4 in (9 cm)).",
+      "A 8970 ft (2734 m) en Lake City Ski Hill la temporada aún no ha empezado: nuestro modelo no da nieve hoy (lo habitual en esta fecha: 1 in (3 cm)). Solo 4 de los 46 inviernos pasados tenían tan poca."
+     ]
+    },
+    {
+     "h": "Dónde está la nieve hoy",
+     "p": [
+      "De estas estaciones, Kendall Mountain tiene hoy más nieve en las pistas altas, unos 51 in (129 cm); después vienen Telluride 50 in (126 cm) y Wolf Creek 31 in (80 cm).",
+      "140 de 195 estaciones en el oeste de EE. UU. tienen hoy nieve en las pistas altas, y nuestro modelo cuenta 82.506 sq mi (213.690 km²) de superficie nevada.",
+      "Las cifras de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida miden en un punto, en la fecha indicada."
+     ]
+    },
+    {
+     "h": "Lo que viene",
+     "p": [
+      "Hasta el 9 de noviembre, nuestra previsión da 0 in (1 cm) en Kendall Mountain, 0 in (1 cm) en Telluride y 0 in (1 cm) en Lake City Ski Hill.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Busca la nieve en lo alto y en las laderas orientadas al norte: la guardan más tiempo; las orientadas al sur la pierden antes.",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "La nieve de principio de temporada es fina. Quédate en pistas abiertas y pisadas: piedras y hierba están justo debajo.",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Kendall Mountain recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de EE. UU. el 6 de noviembre 2026 (modelo de nieve de SnowScope): Kendall Mountain, Telluride, Wolf Creek, Cimarron Mountain Club, Lake City Ski Hill."
+   }
+  },
+  "ar": {
+   "title": "غرب ميريكان: التلج فوق ولا تحت العادي؟ (6 نونبر)",
+   "description": "قارنّا التلج ديال اليوم ف 5 محطات فغرب ميريكان مع نفس التاريخ فكل وحدة من 46 ديال الشتوات اللي فاتو. 3 منهم فوق العادي بوضوح.",
+   "lede": "قارنّا التلج ديال اليوم ف 5 محطات فغرب ميريكان مع نفس التاريخ فكل وحدة من 46 ديال الشتوات اللي فاتو. 3 منهم فوق العادي بوضوح.",
+   "sections": [
+    {
+     "h": "مقارنة مع الشتوات اللي فاتو",
+     "p": [
+      "على علو 9413 قدم (2869 م) ف Kendall Mountain، 2 إنش (5 سم) ديال اليوم قريبة من العادي فهاد التاريخ: أكثر من 21 من 46 ديال الشتوات اللي فاتو (العادي: 2 إنش (6 سم)).",
+      "بداية مزيانة ف Telluride: على علو 10620 قدم (3237 م)، الموديل ديالنا فيه اليوم 14 إنش (36 سم)، أكثر من هاد التاريخ ف 37 من 46 ديال الشتوات اللي فاتو (العادي: 5 إنش (13 سم)).",
+      "بداية مزيانة ف Wolf Creek: على علو 11010 قدم (3356 م)، الموديل ديالنا فيه اليوم 22 إنش (57 سم)، أكثر من هاد التاريخ ف 35 من 46 ديال الشتوات اللي فاتو (العادي: 5 إنش (13 سم)).",
+      "بداية مزيانة ف Cimarron Mountain Club: على علو 10584 قدم (3226 م)، الموديل ديالنا فيه اليوم 7 إنش (19 سم)، أكثر من هاد التاريخ ف 31 من 46 ديال الشتوات اللي فاتو (العادي: 4 إنش (9 سم)).",
+      "على علو 8970 قدم (2734 م) ف Lake City Ski Hill الموسم مازال مابداش: الموديل ديالنا مافيهش التلج تما اليوم (العادي فهاد التاريخ: 1 إنش (3 سم)). غير 4 من 46 ديال الشتوات اللي فاتو كان فيهم هاد القلة."
+     ]
+    },
+    {
+     "h": "فين كاين التلج اليوم",
+     "p": [
+      "من هاد المحطات، Kendall Mountain فيها أكثر تلج فالجهة الفوقانية اليوم، تقريبا 51 إنش (129 سم)؛ من بعدها Telluride 50 إنش (126 سم) و Wolf Creek 31 إنش (80 سم).",
+      "140 محطة من 195 فغرب ميريكان فيهم التلج فالجهة الفوقانية اليوم، والموديل ديالنا كيحسب 82506 ميل² (213690 كم²) ديال الأرض اللي فيها التلج.",
+      "الأرقام ديال المحطات ديال التزلج تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس كتقيس فنقطة وحدة، فالتاريخ المكتوب."
+     ]
+    },
+    {
+     "h": "شنو جاي",
+     "p": [
+      "حتى ل 9 نونبر، التوقعات ديالنا كتعطي 0 إنش (1 سم) ف Kendall Mountain، 0 إنش (1 سم) ف Telluride و 0 إنش (1 سم) ف Lake City Ski Hill.",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "قلب على التلج فالعلو وفالجهات اللي كتشوف للشمال: كيحافظو عليه كثر، والجهات اللي كتشوف للجنوب كيمشي ليهم بالشمس.",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "التلج ديال بداية الموسم رقيق. بقى فالبيستات المحلولة والمدكوكة: الحجر والربيع يمكن يكونو تحت نيشان.",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Kendall Mountain يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب ميريكان نهار 6 نونبر 2026 (الموديل ديال SnowScope): Kendall Mountain, Telluride, Wolf Creek, Cimarron Mountain Club, Lake City Ski Hill."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  },
+  "fr": {
+   "writer": "template"
+  },
+  "de": {
+   "writer": "template"
+  },
+  "it": {
+   "writer": "template"
+  },
+  "es": {
+   "writer": "template"
+  },
+  "ar": {
+   "writer": "template"
+  }
+ },
+ "words_en": 343,
+ "indexable": true,
+ "main": {
+  "slug": "kendall_mountain_recreation_area",
+  "name": "Kendall Mountain",
+  "lat": 37.8115,
+  "lon": -107.6563
+ },
+ "places": [
+  {
+   "name": "Kendall Mountain",
+   "lat": 37.8115,
+   "lon": -107.6563
+  },
+  {
+   "name": "Telluride",
+   "lat": 37.9197,
+   "lon": -107.8348
+  },
+  {
+   "name": "Wolf Creek",
+   "lat": 37.4632,
+   "lon": -106.7905
+  },
+  {
+   "name": "Cimarron Mountain Club",
+   "lat": 38.2978,
+   "lon": -107.619
+  },
+  {
+   "name": "Lake City Ski Hill",
+   "lat": 38.0103,
+   "lon": -107.3137
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "kendall_mountain_recreation_area",
+   "name": "Kendall Mountain"
+  },
+  {
+   "slug": "telluride_ski_area",
+   "name": "Telluride"
+  },
+  {
+   "slug": "wolf_creek_ski_area",
+   "name": "Wolf Creek"
+  },
+  {
+   "slug": "cimarron_mountain_club",
+   "name": "Cimarron Mountain Club"
+  },
+  {
+   "slug": "lake_city_ski_hill",
+   "name": "Lake City Ski Hill"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "kendall_mountain_recreation_area",
+    "name": "Kendall Mountain",
+    "depth": 129,
+    "new72": 4,
+    "next": 1,
+    "top_m": 2904
+   },
+   {
+    "slug": "telluride_ski_area",
+    "name": "Telluride",
+    "depth": 126,
+    "new72": 5,
+    "next": 1,
+    "top_m": 3812
+   },
+   {
+    "slug": "wolf_creek_ski_area",
+    "name": "Wolf Creek",
+    "depth": 80,
+    "new72": 1,
+    "next": 0,
+    "top_m": 3585
+   },
+   {
+    "slug": "cimarron_mountain_club",
+    "name": "Cimarron Mountain Club",
+    "depth": 78,
+    "new72": 5,
+    "next": 0,
+    "top_m": 3461
+   },
+   {
+    "slug": "lake_city_ski_hill",
+    "name": "Lake City Ski Hill",
+    "depth": 77,
+    "new72": 3,
+    "next": 1,
+    "top_m": 2768
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-07",
+ "map_link": "https://snowscope.app/#@37.812,-107.656,9.0",
+ "seconds": 0.0,
+ "publish_utc": "2026-11-06T18:30:00Z"
+}
