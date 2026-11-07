@@ -1,0 +1,779 @@
+{
+ "id": "2026-11-07-us_west-coming",
+ "slug": "us-west-snow-forecast-7-november-2026",
+ "date": "2026-11-07",
+ "published_utc": "2026-11-07T15:30:00Z",
+ "updated_utc": "2026-11-07T15:30:00Z",
+ "region": "US_WEST",
+ "angle": "coming",
+ "score": 74.5,
+ "signature": "mt_baker:50|mt_hood_meadows_ski_resort:20|hurricane_ridge:10",
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "snow_forecast",
+  "region": "US West",
+  "date": "2026-11-07",
+  "weekday": "Saturday",
+  "model_run": "2026-11-06",
+  "forecast_days": [
+   "2026-11-08",
+   "2026-11-09",
+   "2026-11-10"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 192600,
+   "resorts_with_snow": 136,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-05",
+   "snow_covered_area_km2": 234620,
+   "resorts_with_snow": 146
+  },
+  "region_forecast": {
+   "date": "2026-11-10",
+   "snow_covered_area_km2": 163310,
+   "resorts_with_snow": 124
+  },
+  "question": "Where will new snow fall in the next days, and at which height?",
+  "resorts": [
+   {
+    "name": "Mt Baker",
+    "country": "United States",
+    "top_m": 1556,
+    "base_m": 1106,
+    "depth_cm_upper_slopes_today": 44,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 32,
+    "new_cm_forecast_next_days": 53,
+    "slug": "mt_baker",
+    "new_cm_by_day": {
+     "2026-11-05": 16,
+     "2026-11-06": 13,
+     "2026-11-07": 3,
+     "2026-11-08": 29,
+     "2026-11-09": 2,
+     "2026-11-10": 22
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1106,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 1331,
+      "depth_cm_model": 11,
+      "new_cm_next_7_days": 16
+     },
+     "top": {
+      "elev_m": 1556,
+      "depth_cm_model": 21,
+      "new_cm_next_7_days": 25
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 1820,
+      "max": 2820
+     },
+     "2026-11-08": {
+      "min": 1000,
+      "max": 1630
+     },
+     "2026-11-09": {
+      "min": 880,
+      "max": 2080
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-04"
+    },
+    "nearest_station": {
+     "station": "Wells Creek",
+     "elev_m": 1231,
+     "depth_cm_measured": 13,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 9.2
+    }
+   },
+   {
+    "name": "Mt. Hood Meadows",
+    "country": "United States",
+    "top_m": 2226,
+    "base_m": 1380,
+    "depth_cm_upper_slopes_today": 38,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 7,
+    "new_cm_forecast_next_days": 18,
+    "slug": "mt_hood_meadows_ski_resort",
+    "new_cm_by_day": {
+     "2026-11-05": 4,
+     "2026-11-06": 0,
+     "2026-11-07": 3,
+     "2026-11-08": 8,
+     "2026-11-09": 1,
+     "2026-11-10": 9
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1380,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 1803,
+      "depth_cm_model": 22,
+      "new_cm_next_7_days": 0
+     },
+     "top": {
+      "elev_m": 2226,
+      "depth_cm_model": 34,
+      "new_cm_next_7_days": 4
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 2140,
+      "max": 3730
+     },
+     "2026-11-08": {
+      "min": 1380,
+      "max": 2440
+     },
+     "2026-11-09": {
+      "min": 1780,
+      "max": 2570
+     }
+    },
+    "past_winters": {
+     "height_m": 1803,
+     "snow_cm_at_this_height_today_model": 11,
+     "deeper_than_n_of_past_winters": 33,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 0
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-04"
+    },
+    "nearest_station": {
+     "station": "Mud Ridge",
+     "elev_m": 1241,
+     "depth_cm_measured": 0,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 10.8
+    }
+   },
+   {
+    "name": "Hurricane Ridge",
+    "country": "United States",
+    "top_m": 1660,
+    "base_m": 1485,
+    "depth_cm_upper_slopes_today": 15,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 14,
+    "slug": "hurricane_ridge",
+    "new_cm_by_day": {
+     "2026-11-05": 4,
+     "2026-11-06": 1,
+     "2026-11-07": 0,
+     "2026-11-08": 12,
+     "2026-11-09": 1,
+     "2026-11-10": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1485,
+      "depth_cm_model": 3,
+      "new_cm_next_7_days": 7
+     },
+     "mid": {
+      "elev_m": 1572,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 10
+     },
+     "top": {
+      "elev_m": 1660,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 15
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 1560,
+      "max": 2950
+     },
+     "2026-11-08": {
+      "min": 1340,
+      "max": 1590
+     },
+     "2026-11-09": {
+      "min": 1400,
+      "max": 2330
+     }
+    },
+    "past_winters": {
+     "height_m": 1572,
+     "snow_cm_at_this_height_today_model": 5,
+     "deeper_than_n_of_past_winters": 31,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 0
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-01"
+    },
+    "nearest_station": {
+     "station": "Waterhole",
+     "elev_m": 1527,
+     "depth_cm_measured": 13,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 5.9
+    }
+   },
+   {
+    "name": "Crystal Mountain",
+    "country": "United States",
+    "top_m": 2072,
+    "base_m": 1344,
+    "depth_cm_upper_slopes_today": 26,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 5,
+    "new_cm_forecast_next_days": 13,
+    "slug": "crystal_mountain",
+    "new_cm_by_day": {
+     "2026-11-05": 3,
+     "2026-11-06": 1,
+     "2026-11-07": 1,
+     "2026-11-08": 5,
+     "2026-11-09": 1,
+     "2026-11-10": 7
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1344,
+      "depth_cm_model": 3,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 1708,
+      "depth_cm_model": 13,
+      "new_cm_next_7_days": 2
+     },
+     "top": {
+      "elev_m": 2072,
+      "depth_cm_model": 23,
+      "new_cm_next_7_days": 10
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 2130,
+      "max": 3340
+     },
+     "2026-11-08": {
+      "min": 1130,
+      "max": 1930
+     },
+     "2026-11-09": {
+      "min": 1100,
+      "max": 2320
+     }
+    },
+    "past_winters": {
+     "height_m": 1708,
+     "snow_cm_at_this_height_today_model": 18,
+     "deeper_than_n_of_past_winters": 24,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 14
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-01"
+    },
+    "nearest_station": {
+     "station": "Morse Lake",
+     "elev_m": 1646,
+     "depth_cm_measured": 30,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 3.3
+    }
+   },
+   {
+    "name": "Stevens Pass",
+    "country": "United States",
+    "top_m": 1727,
+    "base_m": 1166,
+    "depth_cm_upper_slopes_today": 28,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 7,
+    "new_cm_forecast_next_days": 12,
+    "slug": "stevens_pass",
+    "new_cm_by_day": {
+     "2026-11-05": 4,
+     "2026-11-06": 3,
+     "2026-11-07": 0,
+     "2026-11-08": 5,
+     "2026-11-09": 1,
+     "2026-11-10": 6
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-snow-forecast-7-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-snow-forecast-7-november-2026/map_t.webp",
+   "bytes": 37352
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"39\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"197\" y=\"49\" class=\"vl\">16</text><rect x=\"235\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"49\" class=\"vl\">13</text><rect x=\"315\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">29</text><rect x=\"475\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"49\" class=\"vl\">2</text><rect x=\"555\" y=\"36\" width=\"53\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"611\" y=\"49\" class=\"vl\">22</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mt. Hood Meadows</text><rect x=\"155\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"83\" class=\"vl\">3</text><rect x=\"395\" y=\"70\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"83\" class=\"vl\">8</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"22\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"580\" y=\"83\" class=\"vl\">9</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Hurricane Ridge</text><rect x=\"155\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"117\" class=\"vl\">4</text><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"240\" y=\"117\" class=\"vl\">1</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"427\" y=\"117\" class=\"vl\">12</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"117\" class=\"vl\">1</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Crystal Mountain</text><rect x=\"155\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"240\" y=\"151\" class=\"vl\">1</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"151\" class=\"vl\">5</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"575\" y=\"151\" class=\"vl\">7</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Stevens Pass</text><rect x=\"155\" y=\"172\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"185\" class=\"vl\">4</text><rect x=\"235\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"245\" y=\"185\" class=\"vl\">3</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"185\" class=\"vl\">5</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"14\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"572\" y=\"185\" class=\"vl\">6</text></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"39\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"197\" y=\"49\" class=\"vl\">16</text><rect x=\"235\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"49\" class=\"vl\">13</text><rect x=\"315\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">29</text><rect x=\"475\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"49\" class=\"vl\">2</text><rect x=\"555\" y=\"36\" width=\"53\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"611\" y=\"49\" class=\"vl\">22</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mt. Hood Meadows</text><rect x=\"155\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"83\" class=\"vl\">3</text><rect x=\"395\" y=\"70\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"83\" class=\"vl\">8</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"22\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"580\" y=\"83\" class=\"vl\">9</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Hurricane Ridge</text><rect x=\"155\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"117\" class=\"vl\">4</text><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"240\" y=\"117\" class=\"vl\">1</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"427\" y=\"117\" class=\"vl\">12</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"117\" class=\"vl\">1</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Crystal Mountain</text><rect x=\"155\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"240\" y=\"151\" class=\"vl\">1</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"151\" class=\"vl\">5</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"575\" y=\"151\" class=\"vl\">7</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Stevens Pass</text><rect x=\"155\" y=\"172\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"185\" class=\"vl\">4</text><rect x=\"235\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"245\" y=\"185\" class=\"vl\">3</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"185\" class=\"vl\">5</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"14\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"572\" y=\"185\" class=\"vl\">6</text></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"39\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"197\" y=\"49\" class=\"vl\">16</text><rect x=\"235\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"49\" class=\"vl\">13</text><rect x=\"315\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">29</text><rect x=\"475\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"49\" class=\"vl\">2</text><rect x=\"555\" y=\"36\" width=\"53\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"611\" y=\"49\" class=\"vl\">22</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mt. Hood Meadows</text><rect x=\"155\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"83\" class=\"vl\">3</text><rect x=\"395\" y=\"70\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"83\" class=\"vl\">8</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"22\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"580\" y=\"83\" class=\"vl\">9</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Hurricane Ridge</text><rect x=\"155\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"117\" class=\"vl\">4</text><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"240\" y=\"117\" class=\"vl\">1</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"427\" y=\"117\" class=\"vl\">12</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"117\" class=\"vl\">1</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Crystal Mountain</text><rect x=\"155\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"240\" y=\"151\" class=\"vl\">1</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"151\" class=\"vl\">5</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"575\" y=\"151\" class=\"vl\">7</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Stevens Pass</text><rect x=\"155\" y=\"172\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"185\" class=\"vl\">4</text><rect x=\"235\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"245\" y=\"185\" class=\"vl\">3</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"185\" class=\"vl\">5</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"14\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"572\" y=\"185\" class=\"vl\">6</text></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"39\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"197\" y=\"49\" class=\"vl\">16</text><rect x=\"235\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"49\" class=\"vl\">13</text><rect x=\"315\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">29</text><rect x=\"475\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"49\" class=\"vl\">2</text><rect x=\"555\" y=\"36\" width=\"53\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"611\" y=\"49\" class=\"vl\">22</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mt. Hood Meadows</text><rect x=\"155\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"83\" class=\"vl\">3</text><rect x=\"395\" y=\"70\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"83\" class=\"vl\">8</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"22\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"580\" y=\"83\" class=\"vl\">9</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Hurricane Ridge</text><rect x=\"155\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"117\" class=\"vl\">4</text><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"240\" y=\"117\" class=\"vl\">1</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"427\" y=\"117\" class=\"vl\">12</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"117\" class=\"vl\">1</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Crystal Mountain</text><rect x=\"155\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"240\" y=\"151\" class=\"vl\">1</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"151\" class=\"vl\">5</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"575\" y=\"151\" class=\"vl\">7</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Stevens Pass</text><rect x=\"155\" y=\"172\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"185\" class=\"vl\">4</text><rect x=\"235\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"245\" y=\"185\" class=\"vl\">3</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"185\" class=\"vl\">5</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"14\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"572\" y=\"185\" class=\"vl\">6</text></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"39\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"197\" y=\"49\" class=\"vl\">16</text><rect x=\"235\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"49\" class=\"vl\">13</text><rect x=\"315\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">29</text><rect x=\"475\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"49\" class=\"vl\">2</text><rect x=\"555\" y=\"36\" width=\"53\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"611\" y=\"49\" class=\"vl\">22</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mt. Hood Meadows</text><rect x=\"155\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"83\" class=\"vl\">3</text><rect x=\"395\" y=\"70\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"83\" class=\"vl\">8</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"22\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"580\" y=\"83\" class=\"vl\">9</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Hurricane Ridge</text><rect x=\"155\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"117\" class=\"vl\">4</text><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"240\" y=\"117\" class=\"vl\">1</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"427\" y=\"117\" class=\"vl\">12</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"117\" class=\"vl\">1</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Crystal Mountain</text><rect x=\"155\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"240\" y=\"151\" class=\"vl\">1</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"151\" class=\"vl\">5</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"575\" y=\"151\" class=\"vl\">7</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Stevens Pass</text><rect x=\"155\" y=\"172\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"185\" class=\"vl\">4</text><rect x=\"235\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"245\" y=\"185\" class=\"vl\">3</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"185\" class=\"vl\">5</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"14\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"572\" y=\"185\" class=\"vl\">6</text></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"39\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"197\" y=\"49\" class=\"vl\">16</text><rect x=\"235\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"49\" class=\"vl\">13</text><rect x=\"315\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">29</text><rect x=\"475\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"49\" class=\"vl\">2</text><rect x=\"555\" y=\"36\" width=\"53\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"611\" y=\"49\" class=\"vl\">22</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mt. Hood Meadows</text><rect x=\"155\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"83\" class=\"vl\">3</text><rect x=\"395\" y=\"70\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"83\" class=\"vl\">8</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"22\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"580\" y=\"83\" class=\"vl\">9</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Hurricane Ridge</text><rect x=\"155\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"117\" class=\"vl\">4</text><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"240\" y=\"117\" class=\"vl\">1</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"427\" y=\"117\" class=\"vl\">12</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"117\" class=\"vl\">1</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Crystal Mountain</text><rect x=\"155\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"240\" y=\"151\" class=\"vl\">1</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"151\" class=\"vl\">5</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"575\" y=\"151\" class=\"vl\">7</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Stevens Pass</text><rect x=\"155\" y=\"172\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"185\" class=\"vl\">4</text><rect x=\"235\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"245\" y=\"185\" class=\"vl\">3</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"185\" class=\"vl\">5</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"14\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"572\" y=\"185\" class=\"vl\">6</text></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Snow forecast in the US West: up to 21 in at Mt Baker by 10 November",
+   "description": "Until 10 November, our forecast gives 21 in (53 cm) at Mt Baker, 7 in (18 cm) at Mt. Hood Meadows and 6 in (14 cm) at Hurricane Ridge. Keep in mind: …",
+   "lede": "Until 10 November, our forecast gives 21 in (53 cm) at Mt Baker, 7 in (18 cm) at Mt. Hood Meadows and 6 in (14 cm) at Hurricane Ridge. Keep in mind: resort values come from our snow model and describe an area, while stations measure one point.",
+   "sections": [
+    {
+     "h": "The next days",
+     "p": [
+      "Until 10 November, our forecast gives 5 in (13 cm) at Crystal Mountain and 5 in (12 cm) at Stevens Pass.",
+      "The snow cover shrank from 90,587 sq mi (234,620 km²) on 5 November to 74,363 sq mi (192,600 km²) today, and our forecast gives 63,054 sq mi (163,310 km²) on 10 November."
+     ]
+    },
+    {
+     "h": "Height, slopes and snow line",
+     "p": [
+      "At Mt Baker, the freezing level reaches 5,971 ft (1,820 m) to 9,252 ft (2,820 m) on 7 November, above the top of the resort (5,105 ft / 1,556 m): rain or wet snow is possible on every slope that day.",
+      "At Mt. Hood Meadows, the freezing level reaches 7,021 ft (2,140 m) to 12,238 ft (3,730 m) on 7 November, above the top of the resort (7,303 ft / 2,226 m): rain or wet snow is possible on every slope that day.",
+      "At Hurricane Ridge, the freezing level reaches 5,118 ft (1,560 m) to 9,678 ft (2,950 m) on 7 November, above the top of the resort (5,446 ft / 1,660 m): rain or wet snow is possible on every slope that day.",
+      "Height matters: at Mt Baker, our model gives 8 in (21 cm) at the top (5,105 ft / 1,556 m), 4 in (11 cm) at mid-mountain (4,367 ft / 1,331 m) and 1 in (2 cm) at the base (3,629 ft / 1,106 m)."
+     ]
+    },
+    {
+     "h": "Where the snow is today",
+     "p": [
+      "Of these resorts, Mt Baker has the most snow on its upper slopes today, about 17 in (44 cm); then come Mt. Hood Meadows 15 in (38 cm) and Stevens Pass 11 in (28 cm).",
+      "136 of 195 resorts in the US West have snow on their upper slopes today, and our model counts 74,363 sq mi (192,600 km²) of snow-covered ground."
+     ]
+    },
+    {
+     "h": "Safety and avalanche level",
+     "p": [
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Forecasts a few days ahead can change: look at the map again the day before you travel.",
+    "Where the freezing level goes above the resort, plan for wet snow and use the highest lifts.",
+    "Fresh snow is best in the first hours after it stops: go early, before the sun and the crowds.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Mt Baker gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the US West on 7 November 2026 (SnowScope snow model): Mt Baker, Mt. Hood Meadows, Hurricane Ridge, Crystal Mountain, Stevens Pass.",
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast)."
+   }
+  },
+  "fr": {
+   "title": "Prévisions neige dans l'Ouest américain : jusqu'à 21 in à Mt Baker d'ici le 10 novembre",
+   "description": "D'ici le 10 novembre, notre prévision donne 21 in (53 cm) à Mt Baker, 7 in (18 cm) à Mt. Hood Meadows et 6 in (14 cm) à Hurricane Ridge. Les chiffres …",
+   "lede": "D'ici le 10 novembre, notre prévision donne 21 in (53 cm) à Mt Baker, 7 in (18 cm) à Mt. Hood Meadows et 6 in (14 cm) à Hurricane Ridge. Les chiffres des stations de ski sont des estimations du modèle pour le haut du domaine ; ceux des stations de mesure sont mesurés en un point, à la date indiquée.",
+   "sections": [
+    {
+     "h": "Ce qui arrive",
+     "p": [
+      "D'ici le 10 novembre, notre prévision donne 5 in (13 cm) à Crystal Mountain et 5 in (12 cm) à Stevens Pass.",
+      "La surface enneigée est passée de 90 587 sq mi (234 620 km²) le 5 novembre à 74 363 sq mi (192 600 km²) aujourd'hui, et notre prévision donne 63 054 sq mi (163 310 km²) le 10 novembre."
+     ]
+    },
+    {
+     "h": "Altitude, pentes et limite pluie-neige",
+     "p": [
+      "À Mt Baker, l'isotherme 0 °C monte entre 5 971 ft (1 820 m) et 9 252 ft (2 820 m) le 7 novembre, au-dessus du sommet de la station (5 105 ft / 1 556 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là.",
+      "À Mt. Hood Meadows, l'isotherme 0 °C monte entre 7 021 ft (2 140 m) et 12 238 ft (3 730 m) le 7 novembre, au-dessus du sommet de la station (7 303 ft / 2 226 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là.",
+      "À Hurricane Ridge, l'isotherme 0 °C monte entre 5 118 ft (1 560 m) et 9 678 ft (2 950 m) le 7 novembre, au-dessus du sommet de la station (5 446 ft / 1 660 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là.",
+      "L'altitude compte : à Mt Baker, notre modèle donne 8 in (21 cm) au sommet (5 105 ft / 1 556 m), 4 in (11 cm) à mi-pente (4 367 ft / 1 331 m) et 1 in (2 cm) en bas (3 629 ft / 1 106 m)."
+     ]
+    },
+    {
+     "h": "Où est la neige aujourd'hui",
+     "p": [
+      "Parmi ces stations, Mt Baker a le plus de neige sur le haut du domaine aujourd'hui, environ 17 in (44 cm) ; suivent Mt. Hood Meadows 15 in (38 cm) et Stevens Pass 11 in (28 cm).",
+      "136 stations sur 195 dans l'Ouest américain ont de la neige sur le haut du domaine aujourd'hui, et notre modèle compte 74 363 sq mi (192 600 km²) de surface enneigée."
+     ]
+    },
+    {
+     "h": "Sécurité et risque d'avalanche",
+     "p": [
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ.",
+    "Là où l'isotherme 0 °C passe au-dessus de la station, prévoyez une neige mouillée et skiez sur les remontées les plus hautes.",
+    "La neige fraîche est la meilleure dans les premières heures : partez tôt, avant le soleil et la foule.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Mt Baker reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest américain le 7 novembre 2026 (modèle de neige SnowScope) : Mt Baker, Mt. Hood Meadows, Hurricane Ridge, Crystal Mountain, Stevens Pass.",
+    "bars": "Neige fraîche par jour dans les stations en tête (jours passés : modèle ; barres claires : prévision)."
+   }
+  },
+  "de": {
+   "title": "Schneeprognose im US-Westen: bis zu 21 in in Mt Baker bis zum 10. November",
+   "description": "Bis zum 10. November ergibt unsere Prognose 21 in (53 cm) in Mt Baker, 7 in (18 cm) in Mt. Hood Meadows und 6 in (14 cm) in Hurricane Ridge. Die …",
+   "lede": "Bis zum 10. November ergibt unsere Prognose 21 in (53 cm) in Mt Baker, 7 in (18 cm) in Mt. Hood Meadows und 6 in (14 cm) in Hurricane Ridge. Die Werte der Skigebiete sind Modellschätzungen für die oberen Hänge; Messstationen messen an einem Punkt, am angegebenen Tag.",
+   "sections": [
+    {
+     "h": "Was als Nächstes kommt",
+     "p": [
+      "Bis zum 10. November ergibt unsere Prognose 5 in (13 cm) in Crystal Mountain und 5 in (12 cm) in Stevens Pass.",
+      "Die Schneefläche schrumpfte von 90.587 sq mi (234.620 km²) am 5. November auf heute 74.363 sq mi (192.600 km²), und unsere Prognose ergibt 63.054 sq mi (163.310 km²) am 10. November."
+     ]
+    },
+    {
+     "h": "Höhe, Hänge und Schneefallgrenze",
+     "p": [
+      "In Mt Baker liegt die Nullgradgrenze am 7. November zwischen 5.971 ft (1.820 m) und 9.252 ft (2.820 m), über dem höchsten Punkt des Skigebiets (5.105 ft (1.556 m)): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich.",
+      "In Mt. Hood Meadows liegt die Nullgradgrenze am 7. November zwischen 7.021 ft (2.140 m) und 12.238 ft (3.730 m), über dem höchsten Punkt des Skigebiets (7.303 ft (2.226 m)): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich.",
+      "In Hurricane Ridge liegt die Nullgradgrenze am 7. November zwischen 5.118 ft (1.560 m) und 9.678 ft (2.950 m), über dem höchsten Punkt des Skigebiets (5.446 ft (1.660 m)): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich.",
+      "Die Höhe macht den Unterschied: In Mt Baker zeigt unser Modell 8 in (21 cm) am Gipfel (5.105 ft / 1.556 m), 4 in (11 cm) an der Mittelstation (4.367 ft / 1.331 m) und 1 in (2 cm) im Tal (3.629 ft / 1.106 m)."
+     ]
+    },
+    {
+     "h": "Wo heute Schnee liegt",
+     "p": [
+      "Von diesen Skigebieten hat Mt Baker heute den meisten Schnee in den oberen Hängen, etwa 17 in (44 cm); danach folgen Mt. Hood Meadows 15 in (38 cm) und Stevens Pass 11 in (28 cm).",
+      "136 von 195 Skigebieten im US-Westen haben heute Schnee in den oberen Hängen, und unser Modell zählt 74.363 sq mi (192.600 km²) Schneefläche."
+     ]
+    },
+    {
+     "h": "Sicherheit und Lawinengefahr",
+     "p": [
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte.",
+    "Wo die Nullgradgrenze über das Skigebiet steigt, rechne mit nassem Schnee und fahr an den höchsten Liften.",
+    "Neuschnee ist in den ersten Stunden am besten: Starte früh, vor der Sonne und dem Andrang.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Mt Baker Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe im US-Westen am 7. November 2026 (SnowScope-Schneemodell): Mt Baker, Mt. Hood Meadows, Hurricane Ridge, Crystal Mountain, Stevens Pass.",
+    "bars": "Neuschnee pro Tag in den führenden Skigebieten (vergangene Tage: Modell; helle Balken: Prognose)."
+   }
+  },
+  "it": {
+   "title": "Previsioni neve nell'Ovest degli USA: fino a 21 in a Mt Baker entro il 10 novembre",
+   "description": "Fino al 10 novembre la nostra previsione indica 21 in (53 cm) a Mt Baker, 7 in (18 cm) a Mt. Hood Meadows e 6 in (14 cm) a Hurricane Ridge. I valori …",
+   "lede": "Fino al 10 novembre la nostra previsione indica 21 in (53 cm) a Mt Baker, 7 in (18 cm) a Mt. Hood Meadows e 6 in (14 cm) a Hurricane Ridge. I valori delle località sono stime del modello per i pendii superiori; le stazioni misurano in un punto, alla data indicata.",
+   "sections": [
+    {
+     "h": "Cosa arriva",
+     "p": [
+      "Fino al 10 novembre la nostra previsione indica 5 in (13 cm) a Crystal Mountain e 5 in (12 cm) a Stevens Pass.",
+      "La superficie innevata è passata da 90.587 sq mi (234.620 km²) il 5 novembre a 74.363 sq mi (192.600 km²) oggi, e la nostra previsione indica 63.054 sq mi (163.310 km²) il 10 novembre."
+     ]
+    },
+    {
+     "h": "Quota, pendii e quota neve",
+     "p": [
+      "A Mt Baker lo zero termico sale tra 5.971 ft (1.820 m) e 9.252 ft (2.820 m) il 7 novembre, sopra la quota massima della località (5.105 ft (1.556 m)): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii.",
+      "A Mt. Hood Meadows lo zero termico sale tra 7.021 ft (2.140 m) e 12.238 ft (3.730 m) il 7 novembre, sopra la quota massima della località (7.303 ft (2.226 m)): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii.",
+      "A Hurricane Ridge lo zero termico sale tra 5.118 ft (1.560 m) e 9.678 ft (2.950 m) il 7 novembre, sopra la quota massima della località (5.446 ft (1.660 m)): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii.",
+      "La quota conta: a Mt Baker il nostro modello indica 8 in (21 cm) in vetta (5.105 ft / 1.556 m), 4 in (11 cm) a metà montagna (4.367 ft / 1.331 m) e 1 in (2 cm) alla base (3.629 ft / 1.106 m)."
+     ]
+    },
+    {
+     "h": "Dove c'è neve oggi",
+     "p": [
+      "Tra queste località, Mt Baker ha oggi più neve sui pendii superiori, circa 17 in (44 cm); seguono Mt. Hood Meadows 15 in (38 cm) e Stevens Pass 11 in (28 cm).",
+      "136 località su 195 nell'Ovest degli USA hanno oggi neve sui pendii superiori, e il nostro modello conta 74.363 sq mi (192.600 km²) di superficie innevata."
+     ]
+    },
+    {
+     "h": "Sicurezza e pericolo valanghe",
+     "p": [
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire.",
+    "Dove lo zero termico sale sopra la località, aspettati neve bagnata e usa gli impianti più alti.",
+    "La neve fresca è migliore nelle prime ore: parti presto, prima del sole e della folla.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Mt Baker riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve nell'Ovest degli USA il 7 novembre 2026 (modello neve SnowScope): Mt Baker, Mt. Hood Meadows, Hurricane Ridge, Crystal Mountain, Stevens Pass.",
+    "bars": "Neve fresca al giorno nelle località in testa (giorni passati: modello; barre chiare: previsione)."
+   }
+  },
+  "es": {
+   "title": "Previsión de nieve en el oeste de EE. UU.: hasta 21 in en Mt Baker hasta el 10 de noviembre",
+   "description": "Hasta el 10 de noviembre, nuestra previsión da 21 in (53 cm) en Mt Baker, 7 in (18 cm) en Mt. Hood Meadows y 6 in (14 cm) en Hurricane Ridge. Las …",
+   "lede": "Hasta el 10 de noviembre, nuestra previsión da 21 in (53 cm) en Mt Baker, 7 in (18 cm) en Mt. Hood Meadows y 6 in (14 cm) en Hurricane Ridge. Las cifras de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida miden en un punto, en la fecha indicada.",
+   "sections": [
+    {
+     "h": "Lo que viene",
+     "p": [
+      "Hasta el 10 de noviembre, nuestra previsión da 5 in (13 cm) en Crystal Mountain y 5 in (12 cm) en Stevens Pass.",
+      "La superficie nevada pasó de 90.587 sq mi (234.620 km²) el 5 de noviembre a 74.363 sq mi (192.600 km²) hoy, y nuestra previsión da 63.054 sq mi (163.310 km²) el 10 de noviembre."
+     ]
+    },
+    {
+     "h": "Altitud, laderas y cota de nieve",
+     "p": [
+      "En Mt Baker, la cota de congelación llega a 5971 ft (1820 m)-9252 ft (2820 m) el 7 de noviembre, por encima de la cota alta de la estación (5105 ft (1556 m)): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
+      "En Mt. Hood Meadows, la cota de congelación llega a 7021 ft (2140 m)-12.238 ft (3730 m) el 7 de noviembre, por encima de la cota alta de la estación (7303 ft (2226 m)): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
+      "En Hurricane Ridge, la cota de congelación llega a 5118 ft (1560 m)-9678 ft (2950 m) el 7 de noviembre, por encima de la cota alta de la estación (5446 ft (1660 m)): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
+      "La altitud cuenta: en Mt Baker, nuestro modelo da 8 in (21 cm) en la cota alta (5105 ft / 1556 m), 4 in (11 cm) a media montaña (4367 ft / 1331 m) y 1 in (2 cm) en la base (3629 ft / 1106 m)."
+     ]
+    },
+    {
+     "h": "Dónde está la nieve hoy",
+     "p": [
+      "De estas estaciones, Mt Baker tiene hoy más nieve en las pistas altas, unos 17 in (44 cm); después vienen Mt. Hood Meadows 15 in (38 cm) y Stevens Pass 11 in (28 cm).",
+      "136 de 195 estaciones en el oeste de EE. UU. tienen hoy nieve en las pistas altas, y nuestro modelo cuenta 74.363 sq mi (192.600 km²) de superficie nevada."
+     ]
+    },
+    {
+     "h": "Seguridad y peligro de aludes",
+     "p": [
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar.",
+    "Donde la cota de congelación suba por encima de la estación, cuenta con nieve húmeda y usa los remontes más altos.",
+    "La nieve nueva es mejor en las primeras horas: sal temprano, antes del sol y de la gente.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Mt Baker recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de EE. UU. el 7 de noviembre 2026 (modelo de nieve de SnowScope): Mt Baker, Mt. Hood Meadows, Hurricane Ridge, Crystal Mountain, Stevens Pass.",
+    "bars": "Nieve nueva por día en las estaciones líderes (días pasados: modelo; barras claras: previsión)."
+   }
+  },
+  "ar": {
+   "title": "توقعات التلج فغرب ميريكان: حتى ل 21 إنش ف Mt Baker حتى ل 10 نونبر",
+   "description": "حتى ل 10 نونبر، التوقعات ديالنا كتعطي 21 إنش (53 سم) ف Mt Baker، 7 إنش (18 سم) ف Mt. Hood Meadows و 6 إنش (14 سم) ف Hurricane Ridge. الأرقام ديال …",
+   "lede": "حتى ل 10 نونبر، التوقعات ديالنا كتعطي 21 إنش (53 سم) ف Mt Baker، 7 إنش (18 سم) ف Mt. Hood Meadows و 6 إنش (14 سم) ف Hurricane Ridge. الأرقام ديال المحطات ديال التزلج تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس كتقيس فنقطة وحدة، فالتاريخ المكتوب.",
+   "sections": [
+    {
+     "h": "شنو جاي",
+     "p": [
+      "حتى ل 10 نونبر، التوقعات ديالنا كتعطي 5 إنش (13 سم) ف Crystal Mountain و 5 إنش (12 سم) ف Stevens Pass.",
+      "المساحة اللي فيها التلج دازت من 90587 ميل² (234620 كم²) نهار 5 نونبر ل 74363 ميل² (192600 كم²) اليوم، والتوقعات ديالنا كتعطي 63054 ميل² (163310 كم²) نهار 10 نونبر."
+     ]
+    },
+    {
+     "h": "العلو، الجهات والحد ديال التلج",
+     "p": [
+      "ف Mt Baker، علو الجليد غادي يكون بين 5971 قدم (1820 م) و 9252 قدم (2820 م) نهار 7 نونبر، فوق أعلى نقطة فالمحطة (5105 قدم (1556 م)): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات.",
+      "ف Mt. Hood Meadows، علو الجليد غادي يكون بين 7021 قدم (2140 م) و 12238 قدم (3730 م) نهار 7 نونبر، فوق أعلى نقطة فالمحطة (7303 قدم (2226 م)): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات.",
+      "ف Hurricane Ridge، علو الجليد غادي يكون بين 5118 قدم (1560 م) و 9678 قدم (2950 م) نهار 7 نونبر، فوق أعلى نقطة فالمحطة (5446 قدم (1660 م)): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات.",
+      "العلو مهم: ف Mt Baker، الموديل ديالنا كيعطي 8 إنش (21 سم) فالفوق (5105 قدم / 1556 م)، 4 إنش (11 سم) فالوسط (4367 قدم / 1331 م) و 1 إنش (2 سم) فالتحت (3629 قدم / 1106 م)."
+     ]
+    },
+    {
+     "h": "فين كاين التلج اليوم",
+     "p": [
+      "من هاد المحطات، Mt Baker فيها أكثر تلج فالجهة الفوقانية اليوم، تقريبا 17 إنش (44 سم)؛ من بعدها Mt. Hood Meadows 15 إنش (38 سم) و Stevens Pass 11 إنش (28 سم).",
+      "136 محطة من 195 فغرب ميريكان فيهم التلج فالجهة الفوقانية اليوم، والموديل ديالنا كيحسب 74363 ميل² (192600 كم²) ديال الأرض اللي فيها التلج."
+     ]
+    },
+    {
+     "h": "السلامة وخطر الانهيارات",
+     "p": [
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر.",
+    "فين علو الجليد طالع فوق المحطة، توقع تلج مبلول وطلع للتيليسييج اللي فالفوق.",
+    "التلج الجديد كيكون مزيان فالساعات الأولى: سير بكري، قبل الشمس والناس.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Mt Baker يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب ميريكان نهار 7 نونبر 2026 (الموديل ديال SnowScope): Mt Baker, Mt. Hood Meadows, Hurricane Ridge, Crystal Mountain, Stevens Pass.",
+    "bars": "التلج الجديد فكل نهار فالمحطات اللولين (الأيام اللي فاتو من الموديل، والخطوط الفاتحة = التوقعات)."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  },
+  "fr": {
+   "writer": "template"
+  },
+  "de": {
+   "writer": "template"
+  },
+  "it": {
+   "writer": "template"
+  },
+  "es": {
+   "writer": "template"
+  },
+  "ar": {
+   "writer": "template"
+  }
+ },
+ "words_en": 348,
+ "indexable": true,
+ "main": {
+  "slug": "mt_baker",
+  "name": "Mt Baker",
+  "lat": 48.8571,
+  "lon": -121.6652
+ },
+ "places": [
+  {
+   "name": "Mt Baker",
+   "lat": 48.8571,
+   "lon": -121.6652
+  },
+  {
+   "name": "Mt. Hood Meadows",
+   "lat": 45.3352,
+   "lon": -121.6618
+  },
+  {
+   "name": "Hurricane Ridge",
+   "lat": 47.971,
+   "lon": -123.4945
+  },
+  {
+   "name": "Crystal Mountain",
+   "lat": 46.9348,
+   "lon": -121.4902
+  },
+  {
+   "name": "Stevens Pass",
+   "lat": 47.7374,
+   "lon": -121.091
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "mt_baker",
+   "name": "Mt Baker"
+  },
+  {
+   "slug": "mt_hood_meadows_ski_resort",
+   "name": "Mt. Hood Meadows"
+  },
+  {
+   "slug": "hurricane_ridge",
+   "name": "Hurricane Ridge"
+  },
+  {
+   "slug": "crystal_mountain",
+   "name": "Crystal Mountain"
+  },
+  {
+   "slug": "stevens_pass",
+   "name": "Stevens Pass"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "mt_baker",
+    "name": "Mt Baker",
+    "depth": 44,
+    "new72": 32,
+    "next": 53,
+    "top_m": 1556
+   },
+   {
+    "slug": "mt_hood_meadows_ski_resort",
+    "name": "Mt. Hood Meadows",
+    "depth": 38,
+    "new72": 7,
+    "next": 18,
+    "top_m": 2226
+   },
+   {
+    "slug": "hurricane_ridge",
+    "name": "Hurricane Ridge",
+    "depth": 15,
+    "new72": 4,
+    "next": 14,
+    "top_m": 1660
+   },
+   {
+    "slug": "crystal_mountain",
+    "name": "Crystal Mountain",
+    "depth": 26,
+    "new72": 5,
+    "next": 13,
+    "top_m": 2072
+   },
+   {
+    "slug": "stevens_pass",
+    "name": "Stevens Pass",
+    "depth": 28,
+    "new72": 7,
+    "next": 12,
+    "top_m": 1727
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@48.857,-121.665,9.0",
+ "seconds": 0.0,
+ "publish_utc": "2026-11-07T15:30:00Z"
+}
