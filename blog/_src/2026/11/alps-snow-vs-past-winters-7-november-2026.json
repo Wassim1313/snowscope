@@ -1,0 +1,590 @@
+{
+ "id": "2026-11-07-alps-history",
+ "slug": "alps-snow-vs-past-winters-7-november-2026",
+ "date": "2026-11-07",
+ "published_utc": "2026-11-07T13:14:00Z",
+ "updated_utc": "2026-11-07T13:14:00Z",
+ "region": "ALPS",
+ "angle": "history",
+ "score": 49,
+ "signature": "la_grave:1|orelle:1|les_deux_alpes:1",
+ "tags": [
+  "past-winters",
+  "snow-depth"
+ ],
+ "facts": {
+  "angle": "snow_vs_past_winters",
+  "region": "Alps",
+  "date": "2026-11-07",
+  "weekday": "Saturday",
+  "model_run": "2026-11-06",
+  "forecast_days": [
+   "2026-11-08",
+   "2026-11-09",
+   "2026-11-10"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 32120,
+   "resorts_with_snow": 661,
+   "resorts_in_region": 1178
+  },
+  "region_before": {
+   "date": "2026-11-05",
+   "snow_covered_area_km2": 37950,
+   "resorts_with_snow": 795
+  },
+  "region_forecast": {
+   "date": "2026-11-10",
+   "snow_covered_area_km2": 37470,
+   "resorts_with_snow": 695
+  },
+  "question": "Is there more or less snow than usual for the date, compared with the past 46 winters?",
+  "past_winters_period": "1980-81 to 2025-26",
+  "resorts": [
+   {
+    "name": "La Grave",
+    "country": "France",
+    "top_m": 3543,
+    "base_m": 3196,
+    "depth_cm_upper_slopes_today": 50,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 20,
+    "new_cm_forecast_next_days": 32,
+    "slug": "la_grave",
+    "new_cm_by_day": {
+     "2026-11-05": 6,
+     "2026-11-06": 14,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 13,
+     "2026-11-10": 19
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3196,
+      "depth_cm_model": 33,
+      "new_cm_next_7_days": 34
+     },
+     "mid": {
+      "elev_m": 3369,
+      "depth_cm_model": 39,
+      "new_cm_next_7_days": 34
+     },
+     "top": {
+      "elev_m": 3543,
+      "depth_cm_model": 39,
+      "new_cm_next_7_days": 35
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 2700,
+      "max": 2860
+     },
+     "2026-11-08": {
+      "min": 2680,
+      "max": 3210
+     },
+     "2026-11-09": {
+      "min": 2790,
+      "max": 3210
+     },
+     "2026-11-10": {
+      "min": 2840,
+      "max": 3120
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Météo-France BERA",
+    "past_winters": {
+     "height_m": 3369,
+     "snow_cm_at_this_height_today_model": 3,
+     "deeper_than_n_of_past_winters": 9,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 38
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-01"
+    }
+   },
+   {
+    "name": "Orelle",
+    "country": "France",
+    "top_m": 3221,
+    "base_m": 2338,
+    "depth_cm_upper_slopes_today": 47,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 12,
+    "new_cm_forecast_next_days": 21,
+    "slug": "orelle",
+    "new_cm_by_day": {
+     "2026-11-05": 4,
+     "2026-11-06": 8,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 6,
+     "2026-11-10": 15
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2338,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 17
+     },
+     "mid": {
+      "elev_m": 2779,
+      "depth_cm_model": 14,
+      "new_cm_next_7_days": 22
+     },
+     "top": {
+      "elev_m": 3221,
+      "depth_cm_model": 34,
+      "new_cm_next_7_days": 24
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 2280,
+      "max": 2630
+     },
+     "2026-11-08": {
+      "min": 2280,
+      "max": 2780
+     },
+     "2026-11-09": {
+      "min": 2610,
+      "max": 2990
+     },
+     "2026-11-10": {
+      "min": 2970,
+      "max": 3130
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Météo-France BERA",
+    "past_winters": {
+     "height_m": 2779,
+     "snow_cm_at_this_height_today_model": 2,
+     "deeper_than_n_of_past_winters": 6,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 28
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-01"
+    }
+   },
+   {
+    "name": "Les Deux Alpes",
+    "country": "France",
+    "top_m": 3511,
+    "base_m": 1284,
+    "depth_cm_upper_slopes_today": 46,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 15,
+    "new_cm_forecast_next_days": 33,
+    "slug": "les_deux_alpes",
+    "new_cm_by_day": {
+     "2026-11-05": 4,
+     "2026-11-06": 11,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 13,
+     "2026-11-10": 20
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1284,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 2397,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 18
+     },
+     "top": {
+      "elev_m": 3511,
+      "depth_cm_model": 39,
+      "new_cm_next_7_days": 29
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 2150,
+      "max": 2340
+     },
+     "2026-11-08": {
+      "min": 2200,
+      "max": 2450
+     },
+     "2026-11-09": {
+      "min": 2520,
+      "max": 3000
+     },
+     "2026-11-10": {
+      "min": 3020,
+      "max": 3180
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Météo-France BERA",
+    "past_winters": {
+     "height_m": 2397,
+     "snow_cm_at_this_height_today_model": 1,
+     "deeper_than_n_of_past_winters": 8,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 14
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-01"
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/alps-snow-vs-past-winters-7-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/alps-snow-vs-past-winters-7-november-2026/map_t.webp",
+   "bytes": 50564
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Alps: is the snow above or below normal? (7 November)",
+   "description": "We compared today's snow at 3 resorts in the Alps with the same date in each of the past 46 winters. 0 of them are clearly above normal.",
+   "lede": "We compared today's snow at 3 resorts in the Alps with the same date in each of the past 46 winters. 0 of them are clearly above normal.",
+   "sections": [
+    {
+     "h": "Is it a good start?",
+     "p": [
+      "At 3,369 m on La Grave the season is late: our model has only 3 cm today, below the usual 38 cm. Only 9 of the past 46 winters had less snow there on 7 November.",
+      "At 2,779 m on Orelle the season is late: our model has only 2 cm today, below the usual 28 cm. Only 6 of the past 46 winters had less snow there on 7 November.",
+      "At 2,397 m on Les Deux Alpes the season is late: our model has only 1 cm today, below the usual 14 cm. Only 8 of the past 46 winters had less snow there on 7 November."
+     ]
+    },
+    {
+     "h": "Where the snow is today",
+     "p": [
+      "Of these resorts, La Grave has the most snow on its upper slopes today, about 50 cm; then come Orelle 47 cm and Les Deux Alpes 46 cm.",
+      "Our snow model shows 32,120 km² of snow-covered ground in the Alps today, with snow at 661 of 1,178 resorts.",
+      "Resort numbers are model estimates for the upper slopes; station numbers are measurements at one point, on the date shown."
+     ]
+    },
+    {
+     "h": "The next days",
+     "p": [
+      "More snow is on the way: by 10 November our forecast gives 33 cm at Les Deux Alpes, 32 cm at La Grave and 21 cm at Orelle.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Look for snow high up and on north-facing slopes: they keep it longest, while south-facing slopes lose it first in the sun.",
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "Get a powder alert in the SnowScope app to know when La Grave gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the Alps on 7 November 2026 (SnowScope snow model): La Grave, Orelle, Les Deux Alpes."
+   }
+  },
+  "fr": {
+   "title": "Alpes : la neige au-dessus ou en dessous de la normale ? (7 novembre)",
+   "description": "Nous avons comparé la neige du jour dans 3 stations dans les Alpes avec la même date lors de chacun des 46 hivers passés. 0 sont nettement au-dessus …",
+   "lede": "Nous avons comparé la neige du jour dans 3 stations dans les Alpes avec la même date lors de chacun des 46 hivers passés. 0 sont nettement au-dessus de la normale.",
+   "sections": [
+    {
+     "h": "Comparé aux hivers passés",
+     "p": [
+      "À 3 369 m à La Grave, la saison est en retard : notre modèle ne donne que 3 cm, moins que les 38 cm habituels. Seuls 9 des 46 hivers passés avaient moins de neige à cet endroit un 7 novembre.",
+      "À 2 779 m à Orelle, la saison est en retard : notre modèle ne donne que 2 cm, moins que les 28 cm habituels. Seuls 6 des 46 hivers passés avaient moins de neige à cet endroit un 7 novembre.",
+      "À 2 397 m à Les Deux Alpes, la saison est en retard : notre modèle ne donne que 1 cm, moins que les 14 cm habituels. Seuls 8 des 46 hivers passés avaient moins de neige à cet endroit un 7 novembre."
+     ]
+    },
+    {
+     "h": "Où est la neige aujourd'hui",
+     "p": [
+      "Parmi ces stations, La Grave a le plus de neige sur le haut du domaine aujourd'hui, environ 50 cm ; suivent Orelle 47 cm et Les Deux Alpes 46 cm.",
+      "661 stations sur 1 178 dans les Alpes ont de la neige sur le haut du domaine aujourd'hui, et notre modèle compte 32 120 km² de surface enneigée.",
+      "Les chiffres des stations de ski sont des estimations du modèle pour le haut du domaine ; ceux des stations de mesure sont mesurés en un point, à la date indiquée."
+     ]
+    },
+    {
+     "h": "Ce qui arrive",
+     "p": [
+      "D'ici le 10 novembre, notre prévision donne 33 cm à Les Deux Alpes, 32 cm à La Grave et 21 cm à Orelle.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Cherchez la neige en altitude et sur les pentes orientées au nord : elles la gardent le plus longtemps, les pentes sud la perdent en premier.",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand La Grave reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans les Alpes le 7 novembre 2026 (modèle de neige SnowScope) : La Grave, Orelle, Les Deux Alpes."
+   }
+  },
+  "de": {
+   "title": "Alpen: Mehr oder weniger Schnee als üblich? (7. November)",
+   "description": "Wir haben den Schnee von heute in 3 Skigebieten in den Alpen mit demselben Datum in jedem der letzten 46 Winter verglichen. 0 liegen deutlich über …",
+   "lede": "Wir haben den Schnee von heute in 3 Skigebieten in den Alpen mit demselben Datum in jedem der letzten 46 Winter verglichen. 0 liegen deutlich über dem Normalwert.",
+   "sections": [
+    {
+     "h": "Im Vergleich mit früheren Wintern",
+     "p": [
+      "Auf 3.369 m in La Grave ist die Saison spät dran: Unser Modell zeigt nur 3 cm, weniger als die üblichen 38 cm. Nur 9 der letzten 46 Winter hatten dort am 7. November weniger Schnee.",
+      "Auf 2.779 m in Orelle ist die Saison spät dran: Unser Modell zeigt nur 2 cm, weniger als die üblichen 28 cm. Nur 6 der letzten 46 Winter hatten dort am 7. November weniger Schnee.",
+      "Auf 2.397 m in Les Deux Alpes ist die Saison spät dran: Unser Modell zeigt nur 1 cm, weniger als die üblichen 14 cm. Nur 8 der letzten 46 Winter hatten dort am 7. November weniger Schnee."
+     ]
+    },
+    {
+     "h": "Wo heute Schnee liegt",
+     "p": [
+      "Von diesen Skigebieten hat La Grave heute den meisten Schnee in den oberen Hängen, etwa 50 cm; danach folgen Orelle 47 cm und Les Deux Alpes 46 cm.",
+      "661 von 1.178 Skigebieten in den Alpen haben heute Schnee in den oberen Hängen, und unser Modell zählt 32.120 km² Schneefläche.",
+      "Die Werte der Skigebiete sind Modellschätzungen für die oberen Hänge; Messstationen messen an einem Punkt, am angegebenen Tag."
+     ]
+    },
+    {
+     "h": "Was als Nächstes kommt",
+     "p": [
+      "Bis zum 10. November ergibt unsere Prognose 33 cm in Les Deux Alpes, 32 cm in La Grave und 21 cm in Orelle.",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Such den Schnee weit oben und an Nordhängen: Dort hält er am längsten, Südhänge verlieren ihn zuerst in der Sonne.",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Früher Schnee ist dünn. Bleib auf offenen, präparierten Pisten: Steine und Gras liegen oft knapp darunter.",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann La Grave Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe in den Alpen am 7. November 2026 (SnowScope-Schneemodell): La Grave, Orelle, Les Deux Alpes."
+   }
+  },
+  "it": {
+   "title": "Alpi: neve sopra o sotto la norma? (7 novembre)",
+   "description": "Abbiamo confrontato la neve di oggi in 3 località sulle Alpi con la stessa data in ciascuno dei 46 inverni passati. 0 sono nettamente sopra la norma.",
+   "lede": "Abbiamo confrontato la neve di oggi in 3 località sulle Alpi con la stessa data in ciascuno dei 46 inverni passati. 0 sono nettamente sopra la norma.",
+   "sections": [
+    {
+     "h": "Rispetto agli inverni passati",
+     "p": [
+      "A 3.369 m a La Grave la stagione è in ritardo: il nostro modello indica solo 3 cm, meno dei 38 cm abituali. Solo 9 dei 46 inverni passati avevano meno neve lì il 7 novembre.",
+      "A 2.779 m a Orelle la stagione è in ritardo: il nostro modello indica solo 2 cm, meno dei 28 cm abituali. Solo 6 dei 46 inverni passati avevano meno neve lì il 7 novembre.",
+      "A 2.397 m a Les Deux Alpes la stagione è in ritardo: il nostro modello indica solo 1 cm, meno dei 14 cm abituali. Solo 8 dei 46 inverni passati avevano meno neve lì il 7 novembre."
+     ]
+    },
+    {
+     "h": "Dove c'è neve oggi",
+     "p": [
+      "Tra queste località, La Grave ha oggi più neve sui pendii superiori, circa 50 cm; seguono Orelle 47 cm e Les Deux Alpes 46 cm.",
+      "661 località su 1.178 sulle Alpi hanno oggi neve sui pendii superiori, e il nostro modello conta 32.120 km² di superficie innevata.",
+      "I valori delle località sono stime del modello per i pendii superiori; le stazioni misurano in un punto, alla data indicata."
+     ]
+    },
+    {
+     "h": "Cosa arriva",
+     "p": [
+      "Fino al 10 novembre la nostra previsione indica 33 cm a Les Deux Alpes, 32 cm a La Grave e 21 cm a Orelle.",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Cerca la neve in quota e sui versanti nord: la conservano più a lungo, mentre i versanti sud la perdono per primi al sole.",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "La neve di inizio stagione è sottile. Resta sulle piste aperte e battute: sassi ed erba sono appena sotto.",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando La Grave riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve sulle Alpi il 7 novembre 2026 (modello neve SnowScope): La Grave, Orelle, Les Deux Alpes."
+   }
+  },
+  "es": {
+   "title": "Alpes: ¿nieve por encima o por debajo de lo normal? (7 de noviembre)",
+   "description": "Comparamos la nieve de hoy en 3 estaciones en los Alpes con la misma fecha de cada uno de los 46 inviernos pasados. 0 están claramente por encima de …",
+   "lede": "Comparamos la nieve de hoy en 3 estaciones en los Alpes con la misma fecha de cada uno de los 46 inviernos pasados. 0 están claramente por encima de lo normal.",
+   "sections": [
+    {
+     "h": "Comparado con los inviernos pasados",
+     "p": [
+      "A 3369 m en La Grave la temporada va con retraso: nuestro modelo da solo 3 cm, menos que los 38 cm habituales. Solo 9 de los 46 inviernos pasados tenían menos nieve allí el 7 de noviembre.",
+      "A 2779 m en Orelle la temporada va con retraso: nuestro modelo da solo 2 cm, menos que los 28 cm habituales. Solo 6 de los 46 inviernos pasados tenían menos nieve allí el 7 de noviembre.",
+      "A 2397 m en Les Deux Alpes la temporada va con retraso: nuestro modelo da solo 1 cm, menos que los 14 cm habituales. Solo 8 de los 46 inviernos pasados tenían menos nieve allí el 7 de noviembre."
+     ]
+    },
+    {
+     "h": "Dónde está la nieve hoy",
+     "p": [
+      "De estas estaciones, La Grave tiene hoy más nieve en las pistas altas, unos 50 cm; después vienen Orelle 47 cm y Les Deux Alpes 46 cm.",
+      "661 de 1178 estaciones en los Alpes tienen hoy nieve en las pistas altas, y nuestro modelo cuenta 32.120 km² de superficie nevada.",
+      "Las cifras de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida miden en un punto, en la fecha indicada."
+     ]
+    },
+    {
+     "h": "Lo que viene",
+     "p": [
+      "Hasta el 10 de noviembre, nuestra previsión da 33 cm en Les Deux Alpes, 32 cm en La Grave y 21 cm en Orelle.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Busca la nieve en lo alto y en las laderas orientadas al norte: la guardan más tiempo; las orientadas al sur la pierden antes.",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "La nieve de principio de temporada es fina. Quédate en pistas abiertas y pisadas: piedras y hierba están justo debajo.",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo La Grave recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en los Alpes el 7 de noviembre 2026 (modelo de nieve de SnowScope): La Grave, Orelle, Les Deux Alpes."
+   }
+  },
+  "ar": {
+   "title": "جبال الألب: التلج فوق ولا تحت العادي؟ (7 نونبر)",
+   "description": "قارنّا التلج ديال اليوم ف 3 محطات فجبال الألب مع نفس التاريخ فكل وحدة من 46 ديال الشتوات اللي فاتو. 0 منهم فوق العادي بوضوح.",
+   "lede": "قارنّا التلج ديال اليوم ف 3 محطات فجبال الألب مع نفس التاريخ فكل وحدة من 46 ديال الشتوات اللي فاتو. 0 منهم فوق العادي بوضوح.",
+   "sections": [
+    {
+     "h": "مقارنة مع الشتوات اللي فاتو",
+     "p": [
+      "على علو 3369 م ف La Grave الموسم متأخر: الموديل ديالنا فيه غير 3 سم، أقل من 38 سم العادية. غير 9 من 46 ديال الشتوات اللي فاتو كان فيهم تلج أقل تما نهار 7 نونبر.",
+      "على علو 2779 م ف Orelle الموسم متأخر: الموديل ديالنا فيه غير 2 سم، أقل من 28 سم العادية. غير 6 من 46 ديال الشتوات اللي فاتو كان فيهم تلج أقل تما نهار 7 نونبر.",
+      "على علو 2397 م ف Les Deux Alpes الموسم متأخر: الموديل ديالنا فيه غير 1 سم، أقل من 14 سم العادية. غير 8 من 46 ديال الشتوات اللي فاتو كان فيهم تلج أقل تما نهار 7 نونبر."
+     ]
+    },
+    {
+     "h": "فين كاين التلج اليوم",
+     "p": [
+      "من هاد المحطات، La Grave فيها أكثر تلج فالجهة الفوقانية اليوم، تقريبا 50 سم؛ من بعدها Orelle 47 سم و Les Deux Alpes 46 سم.",
+      "661 محطة من 1178 فجبال الألب فيهم التلج فالجهة الفوقانية اليوم، والموديل ديالنا كيحسب 32120 كم² ديال الأرض اللي فيها التلج.",
+      "الأرقام ديال المحطات ديال التزلج تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس كتقيس فنقطة وحدة، فالتاريخ المكتوب."
+     ]
+    },
+    {
+     "h": "شنو جاي",
+     "p": [
+      "حتى ل 10 نونبر، التوقعات ديالنا كتعطي 33 سم ف Les Deux Alpes، 32 سم ف La Grave و 21 سم ف Orelle.",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "قلب على التلج فالعلو وفالجهات اللي كتشوف للشمال: كيحافظو عليه كثر، والجهات اللي كتشوف للجنوب كيمشي ليهم بالشمس.",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "التلج ديال بداية الموسم رقيق. بقى فالبيستات المحلولة والمدكوكة: الحجر والربيع يمكن يكونو تحت نيشان.",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى La Grave يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فجبال الألب نهار 7 نونبر 2026 (الموديل ديال SnowScope): La Grave, Orelle, Les Deux Alpes."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  },
+  "fr": {
+   "writer": "template"
+  },
+  "de": {
+   "writer": "template"
+  },
+  "it": {
+   "writer": "template"
+  },
+  "es": {
+   "writer": "template"
+  },
+  "ar": {
+   "writer": "template"
+  }
+ },
+ "words_en": 249,
+ "indexable": false,
+ "main": {
+  "slug": "la_grave",
+  "name": "La Grave",
+  "lat": 45.0195,
+  "lon": 6.2771
+ },
+ "places": [
+  {
+   "name": "La Grave",
+   "lat": 45.0195,
+   "lon": 6.2771
+  },
+  {
+   "name": "Orelle",
+   "lat": 45.2542,
+   "lon": 6.5773
+  },
+  {
+   "name": "Les Deux Alpes",
+   "lat": 45.0083,
+   "lon": 6.15
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "la_grave",
+   "name": "La Grave"
+  },
+  {
+   "slug": "orelle",
+   "name": "Orelle"
+  },
+  {
+   "slug": "les_deux_alpes",
+   "name": "Les Deux Alpes"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "la_grave",
+    "name": "La Grave",
+    "depth": 50,
+    "new72": 20,
+    "next": 32,
+    "top_m": 3543
+   },
+   {
+    "slug": "orelle",
+    "name": "Orelle",
+    "depth": 47,
+    "new72": 12,
+    "next": 21,
+    "top_m": 3221
+   },
+   {
+    "slug": "les_deux_alpes",
+    "name": "Les Deux Alpes",
+    "depth": 46,
+    "new72": 15,
+    "next": 33,
+    "top_m": 3511
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Météo-France BERA",
+   "url": "https://meteofrance.com/meteo-montagne"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@45.020,6.277,9.0",
+ "seconds": 0.0,
+ "publish_utc": "2026-11-07T13:14:00Z"
+}

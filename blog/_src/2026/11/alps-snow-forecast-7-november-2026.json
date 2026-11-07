@@ -1,0 +1,784 @@
+{
+ "id": "2026-11-07-alps-coming",
+ "slug": "alps-snow-forecast-7-november-2026",
+ "date": "2026-11-07",
+ "published_utc": "2026-11-07T13:36:37Z",
+ "updated_utc": "2026-11-07T13:36:37Z",
+ "region": "ALPS",
+ "angle": "coming",
+ "score": 58.0,
+ "signature": "orcieres_merlette:40|les_deux_alpes:30|la_grave:30",
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "snow_forecast",
+  "region": "Alps",
+  "date": "2026-11-07",
+  "weekday": "Saturday",
+  "model_run": "2026-11-06",
+  "forecast_days": [
+   "2026-11-08",
+   "2026-11-09",
+   "2026-11-10"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 32120,
+   "resorts_with_snow": 661,
+   "resorts_in_region": 1178
+  },
+  "region_before": {
+   "date": "2026-11-05",
+   "snow_covered_area_km2": 37950,
+   "resorts_with_snow": 795
+  },
+  "region_forecast": {
+   "date": "2026-11-10",
+   "snow_covered_area_km2": 37470,
+   "resorts_with_snow": 695
+  },
+  "question": "Where will new snow fall in the next days, and at which height?",
+  "resorts": [
+   {
+    "name": "Orcières Merlette",
+    "country": "France",
+    "top_m": 2731,
+    "base_m": 1826,
+    "depth_cm_upper_slopes_today": 13,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 16,
+    "new_cm_forecast_next_days": 36,
+    "slug": "orcieres_merlette",
+    "new_cm_by_day": {
+     "2026-11-05": 6,
+     "2026-11-06": 10,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 17,
+     "2026-11-10": 19
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1826,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 2278,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 28
+     },
+     "top": {
+      "elev_m": 2731,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 37
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 2160,
+      "max": 2290
+     },
+     "2026-11-08": {
+      "min": 2020,
+      "max": 2330
+     },
+     "2026-11-09": {
+      "min": 2400,
+      "max": 2840
+     },
+     "2026-11-10": {
+      "min": 2900,
+      "max": 3160
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 2,
+    "avalanche_bulletin": "Météo-France BERA",
+    "past_winters": {
+     "height_m": 2278,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 9,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 9
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-01"
+    }
+   },
+   {
+    "name": "Les Deux Alpes",
+    "country": "France",
+    "top_m": 3511,
+    "base_m": 1284,
+    "depth_cm_upper_slopes_today": 46,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 15,
+    "new_cm_forecast_next_days": 33,
+    "slug": "les_deux_alpes",
+    "new_cm_by_day": {
+     "2026-11-05": 4,
+     "2026-11-06": 11,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 13,
+     "2026-11-10": 20
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1284,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 2397,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 18
+     },
+     "top": {
+      "elev_m": 3511,
+      "depth_cm_model": 39,
+      "new_cm_next_7_days": 29
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 2150,
+      "max": 2340
+     },
+     "2026-11-08": {
+      "min": 2200,
+      "max": 2450
+     },
+     "2026-11-09": {
+      "min": 2520,
+      "max": 3000
+     },
+     "2026-11-10": {
+      "min": 3020,
+      "max": 3180
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Météo-France BERA",
+    "past_winters": {
+     "height_m": 2397,
+     "snow_cm_at_this_height_today_model": 1,
+     "deeper_than_n_of_past_winters": 8,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 14
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-01"
+    }
+   },
+   {
+    "name": "La Grave",
+    "country": "France",
+    "top_m": 3543,
+    "base_m": 3196,
+    "depth_cm_upper_slopes_today": 50,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 20,
+    "new_cm_forecast_next_days": 32,
+    "slug": "la_grave",
+    "new_cm_by_day": {
+     "2026-11-05": 6,
+     "2026-11-06": 14,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 13,
+     "2026-11-10": 19
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3196,
+      "depth_cm_model": 33,
+      "new_cm_next_7_days": 34
+     },
+     "mid": {
+      "elev_m": 3369,
+      "depth_cm_model": 39,
+      "new_cm_next_7_days": 34
+     },
+     "top": {
+      "elev_m": 3543,
+      "depth_cm_model": 39,
+      "new_cm_next_7_days": 35
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 2700,
+      "max": 2860
+     },
+     "2026-11-08": {
+      "min": 2680,
+      "max": 3210
+     },
+     "2026-11-09": {
+      "min": 2790,
+      "max": 3210
+     },
+     "2026-11-10": {
+      "min": 2840,
+      "max": 3120
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Météo-France BERA",
+    "past_winters": {
+     "height_m": 3369,
+     "snow_cm_at_this_height_today_model": 3,
+     "deeper_than_n_of_past_winters": 9,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 38
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-01"
+    }
+   },
+   {
+    "name": "Puy-Saint-Vincent",
+    "country": "France",
+    "top_m": 2664,
+    "base_m": 1411,
+    "depth_cm_upper_slopes_today": 7,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 14,
+    "new_cm_forecast_next_days": 30,
+    "slug": "puy_saint_vincent",
+    "new_cm_by_day": {
+     "2026-11-05": 7,
+     "2026-11-06": 9,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 14,
+     "2026-11-10": 16
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1411,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 2037,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 9
+     },
+     "top": {
+      "elev_m": 2664,
+      "depth_cm_model": 5,
+      "new_cm_next_7_days": 36
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 1930,
+      "max": 2230
+     },
+     "2026-11-08": {
+      "min": 1880,
+      "max": 2500
+     },
+     "2026-11-09": {
+      "min": 2530,
+      "max": 2840
+     },
+     "2026-11-10": {
+      "min": 2870,
+      "max": 3080
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 2,
+    "avalanche_bulletin": "Météo-France BERA",
+    "past_winters": {
+     "height_m": 2037,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 7,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 11
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-11-01"
+    }
+   },
+   {
+    "name": "Chaillol",
+    "country": "France",
+    "top_m": 1929,
+    "base_m": 1457,
+    "depth_cm_upper_slopes_today": 5,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 15,
+    "new_cm_forecast_next_days": 29,
+    "slug": "chaillol_chalhol",
+    "new_cm_by_day": {
+     "2026-11-05": 5,
+     "2026-11-06": 10,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 13,
+     "2026-11-10": 16
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/alps-snow-forecast-7-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/alps-snow-forecast-7-november-2026/map_t.webp",
+   "bytes": 56832
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"36\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"179\" y=\"49\" class=\"vl\">6</text><rect x=\"235\" y=\"36\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"49\" class=\"vl\">10</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"60\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"532\" y=\"49\" text-anchor=\"end\" class=\"vl in\">17</text><rect x=\"555\" y=\"36\" width=\"66\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"618\" y=\"49\" text-anchor=\"end\" class=\"vl in\">19</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Les Deux Alpes</text><rect x=\"155\" y=\"70\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"172\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"38\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"276\" y=\"83\" class=\"vl\">11</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"83\" class=\"vl\">13</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">20</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"104\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"179\" y=\"117\" class=\"vl\">6</text><rect x=\"235\" y=\"104\" width=\"49\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"287\" y=\"117\" class=\"vl\">14</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"117\" class=\"vl\">13</text><rect x=\"555\" y=\"104\" width=\"66\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"618\" y=\"117\" text-anchor=\"end\" class=\"vl in\">19</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Puy-Saint-Vincent</text><rect x=\"155\" y=\"138\" width=\"24\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"182\" y=\"151\" class=\"vl\">7</text><rect x=\"235\" y=\"138\" width=\"32\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"270\" y=\"151\" class=\"vl\">9</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"49\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"527\" y=\"151\" class=\"vl\">14</text><rect x=\"555\" y=\"138\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"151\" class=\"vl\">16</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Chaillol</text><rect x=\"155\" y=\"172\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"176\" y=\"185\" class=\"vl\">5</text><rect x=\"235\" y=\"172\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"185\" class=\"vl\">10</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"185\" class=\"vl\">13</text><rect x=\"555\" y=\"172\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"185\" class=\"vl\">16</text></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"36\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"179\" y=\"49\" class=\"vl\">6</text><rect x=\"235\" y=\"36\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"49\" class=\"vl\">10</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"60\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"532\" y=\"49\" text-anchor=\"end\" class=\"vl in\">17</text><rect x=\"555\" y=\"36\" width=\"66\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"618\" y=\"49\" text-anchor=\"end\" class=\"vl in\">19</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Les Deux Alpes</text><rect x=\"155\" y=\"70\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"172\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"38\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"276\" y=\"83\" class=\"vl\">11</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"83\" class=\"vl\">13</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">20</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"104\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"179\" y=\"117\" class=\"vl\">6</text><rect x=\"235\" y=\"104\" width=\"49\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"287\" y=\"117\" class=\"vl\">14</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"117\" class=\"vl\">13</text><rect x=\"555\" y=\"104\" width=\"66\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"618\" y=\"117\" text-anchor=\"end\" class=\"vl in\">19</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Puy-Saint-Vincent</text><rect x=\"155\" y=\"138\" width=\"24\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"182\" y=\"151\" class=\"vl\">7</text><rect x=\"235\" y=\"138\" width=\"32\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"270\" y=\"151\" class=\"vl\">9</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"49\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"527\" y=\"151\" class=\"vl\">14</text><rect x=\"555\" y=\"138\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"151\" class=\"vl\">16</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Chaillol</text><rect x=\"155\" y=\"172\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"176\" y=\"185\" class=\"vl\">5</text><rect x=\"235\" y=\"172\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"185\" class=\"vl\">10</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"185\" class=\"vl\">13</text><rect x=\"555\" y=\"172\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"185\" class=\"vl\">16</text></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"36\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"179\" y=\"49\" class=\"vl\">6</text><rect x=\"235\" y=\"36\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"49\" class=\"vl\">10</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"60\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"532\" y=\"49\" text-anchor=\"end\" class=\"vl in\">17</text><rect x=\"555\" y=\"36\" width=\"66\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"618\" y=\"49\" text-anchor=\"end\" class=\"vl in\">19</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Les Deux Alpes</text><rect x=\"155\" y=\"70\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"172\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"38\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"276\" y=\"83\" class=\"vl\">11</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"83\" class=\"vl\">13</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">20</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"104\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"179\" y=\"117\" class=\"vl\">6</text><rect x=\"235\" y=\"104\" width=\"49\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"287\" y=\"117\" class=\"vl\">14</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"117\" class=\"vl\">13</text><rect x=\"555\" y=\"104\" width=\"66\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"618\" y=\"117\" text-anchor=\"end\" class=\"vl in\">19</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Puy-Saint-Vincent</text><rect x=\"155\" y=\"138\" width=\"24\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"182\" y=\"151\" class=\"vl\">7</text><rect x=\"235\" y=\"138\" width=\"32\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"270\" y=\"151\" class=\"vl\">9</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"49\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"527\" y=\"151\" class=\"vl\">14</text><rect x=\"555\" y=\"138\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"151\" class=\"vl\">16</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Chaillol</text><rect x=\"155\" y=\"172\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"176\" y=\"185\" class=\"vl\">5</text><rect x=\"235\" y=\"172\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"185\" class=\"vl\">10</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"185\" class=\"vl\">13</text><rect x=\"555\" y=\"172\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"185\" class=\"vl\">16</text></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"36\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"179\" y=\"49\" class=\"vl\">6</text><rect x=\"235\" y=\"36\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"49\" class=\"vl\">10</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"60\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"532\" y=\"49\" text-anchor=\"end\" class=\"vl in\">17</text><rect x=\"555\" y=\"36\" width=\"66\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"618\" y=\"49\" text-anchor=\"end\" class=\"vl in\">19</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Les Deux Alpes</text><rect x=\"155\" y=\"70\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"172\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"38\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"276\" y=\"83\" class=\"vl\">11</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"83\" class=\"vl\">13</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">20</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"104\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"179\" y=\"117\" class=\"vl\">6</text><rect x=\"235\" y=\"104\" width=\"49\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"287\" y=\"117\" class=\"vl\">14</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"117\" class=\"vl\">13</text><rect x=\"555\" y=\"104\" width=\"66\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"618\" y=\"117\" text-anchor=\"end\" class=\"vl in\">19</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Puy-Saint-Vincent</text><rect x=\"155\" y=\"138\" width=\"24\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"182\" y=\"151\" class=\"vl\">7</text><rect x=\"235\" y=\"138\" width=\"32\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"270\" y=\"151\" class=\"vl\">9</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"49\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"527\" y=\"151\" class=\"vl\">14</text><rect x=\"555\" y=\"138\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"151\" class=\"vl\">16</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Chaillol</text><rect x=\"155\" y=\"172\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"176\" y=\"185\" class=\"vl\">5</text><rect x=\"235\" y=\"172\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"185\" class=\"vl\">10</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"185\" class=\"vl\">13</text><rect x=\"555\" y=\"172\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"185\" class=\"vl\">16</text></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"36\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"179\" y=\"49\" class=\"vl\">6</text><rect x=\"235\" y=\"36\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"49\" class=\"vl\">10</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"60\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"532\" y=\"49\" text-anchor=\"end\" class=\"vl in\">17</text><rect x=\"555\" y=\"36\" width=\"66\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"618\" y=\"49\" text-anchor=\"end\" class=\"vl in\">19</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Les Deux Alpes</text><rect x=\"155\" y=\"70\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"172\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"38\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"276\" y=\"83\" class=\"vl\">11</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"83\" class=\"vl\">13</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">20</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"104\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"179\" y=\"117\" class=\"vl\">6</text><rect x=\"235\" y=\"104\" width=\"49\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"287\" y=\"117\" class=\"vl\">14</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"117\" class=\"vl\">13</text><rect x=\"555\" y=\"104\" width=\"66\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"618\" y=\"117\" text-anchor=\"end\" class=\"vl in\">19</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Puy-Saint-Vincent</text><rect x=\"155\" y=\"138\" width=\"24\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"182\" y=\"151\" class=\"vl\">7</text><rect x=\"235\" y=\"138\" width=\"32\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"270\" y=\"151\" class=\"vl\">9</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"49\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"527\" y=\"151\" class=\"vl\">14</text><rect x=\"555\" y=\"138\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"151\" class=\"vl\">16</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Chaillol</text><rect x=\"155\" y=\"172\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"176\" y=\"185\" class=\"vl\">5</text><rect x=\"235\" y=\"172\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"185\" class=\"vl\">10</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"185\" class=\"vl\">13</text><rect x=\"555\" y=\"172\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"185\" class=\"vl\">16</text></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"36\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"179\" y=\"49\" class=\"vl\">6</text><rect x=\"235\" y=\"36\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"49\" class=\"vl\">10</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"60\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"532\" y=\"49\" text-anchor=\"end\" class=\"vl in\">17</text><rect x=\"555\" y=\"36\" width=\"66\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"618\" y=\"49\" text-anchor=\"end\" class=\"vl in\">19</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Les Deux Alpes</text><rect x=\"155\" y=\"70\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"172\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"38\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"276\" y=\"83\" class=\"vl\">11</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"83\" class=\"vl\">13</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">20</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"104\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"179\" y=\"117\" class=\"vl\">6</text><rect x=\"235\" y=\"104\" width=\"49\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"287\" y=\"117\" class=\"vl\">14</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"117\" class=\"vl\">13</text><rect x=\"555\" y=\"104\" width=\"66\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"618\" y=\"117\" text-anchor=\"end\" class=\"vl in\">19</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Puy-Saint-Vincent</text><rect x=\"155\" y=\"138\" width=\"24\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"182\" y=\"151\" class=\"vl\">7</text><rect x=\"235\" y=\"138\" width=\"32\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"270\" y=\"151\" class=\"vl\">9</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"49\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"527\" y=\"151\" class=\"vl\">14</text><rect x=\"555\" y=\"138\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"151\" class=\"vl\">16</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Chaillol</text><rect x=\"155\" y=\"172\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"176\" y=\"185\" class=\"vl\">5</text><rect x=\"235\" y=\"172\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"185\" class=\"vl\">10</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"46\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"524\" y=\"185\" class=\"vl\">13</text><rect x=\"555\" y=\"172\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"185\" class=\"vl\">16</text></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Snow forecast in the Alps: up to 36 cm at Orcières Merlette by 10 November",
+   "description": "More snow is on the way: by 10 November our forecast gives 36 cm at Orcières Merlette, 33 cm at Les Deux Alpes and 32 cm at La Grave. Keep in mind: …",
+   "lede": "More snow is on the way: by 10 November our forecast gives 36 cm at Orcières Merlette, 33 cm at Les Deux Alpes and 32 cm at La Grave. Keep in mind: resort values come from our snow model and describe an area, while stations measure one point.",
+   "sections": [
+    {
+     "h": "What is coming next",
+     "p": [
+      "More snow is on the way: by 10 November our forecast gives 30 cm at Puy-Saint-Vincent and 29 cm at Chaillol.",
+      "The snow cover shrank from 37,950 km² on 5 November to 32,120 km² today, and our forecast gives 37,470 km² on 10 November."
+     ]
+    },
+    {
+     "h": "Which height to ski",
+     "p": [
+      "At Orcières Merlette, the freezing level reaches 2,900 m to 3,160 m on 10 November, above the top of the resort (2,731 m): rain or wet snow is possible on every slope that day.",
+      "At Les Deux Alpes, the freezing level reaches 3,020 m to 3,180 m on 10 November, so the lower slopes may get wet snow while the top stays wintry.",
+      "At La Grave, the freezing level reaches 2,680 m to 3,210 m on 8 November, so the lower slopes may get wet snow while the top stays wintry.",
+      "Height matters: at Orcières Merlette, our model gives 6 cm at the top (2,731 m), 2 cm at mid-mountain (2,278 m) and 0 cm at the base (1,826 m)."
+     ]
+    },
+    {
+     "h": "Today's snow",
+     "p": [
+      "Of these resorts, La Grave has the most snow on its upper slopes today, about 50 cm; then come Les Deux Alpes 46 cm and Orcières Merlette 13 cm.",
+      "Our snow model shows 32,120 km² of snow-covered ground in the Alps today, with snow at 661 of 1,178 resorts."
+     ]
+    },
+    {
+     "h": "Safety and avalanche level",
+     "p": [
+      "The official avalanche danger level for the Orcières Merlette area today is 2 on the 5-level scale (Météo-France BERA).",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Forecasts a few days ahead can change: look at the map again the day before you travel.",
+    "Where the freezing level goes above the resort, plan for wet snow and use the highest lifts.",
+    "Fresh snow is best in the first hours after it stops: go early, before the sun and the crowds.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Orcières Merlette gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the Alps on 7 November 2026 (SnowScope snow model): Orcières Merlette, Les Deux Alpes, La Grave, Puy-Saint-Vincent, Chaillol.",
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast)."
+   }
+  },
+  "fr": {
+   "title": "Prévisions neige dans les Alpes : jusqu'à 36 cm à Orcières Merlette d'ici le 10 novembre",
+   "description": "D'ici le 10 novembre, notre prévision donne 36 cm à Orcières Merlette, 33 cm à Les Deux Alpes et 32 cm à La Grave. Les chiffres des stations de ski …",
+   "lede": "D'ici le 10 novembre, notre prévision donne 36 cm à Orcières Merlette, 33 cm à Les Deux Alpes et 32 cm à La Grave. Les chiffres des stations de ski sont des estimations du modèle pour le haut du domaine ; ceux des stations de mesure sont mesurés en un point, à la date indiquée.",
+   "sections": [
+    {
+     "h": "Ce qui arrive",
+     "p": [
+      "D'ici le 10 novembre, notre prévision donne 30 cm à Puy-Saint-Vincent et 29 cm à Chaillol.",
+      "La surface enneigée est passée de 37 950 km² le 5 novembre à 32 120 km² aujourd'hui, et notre prévision donne 37 470 km² le 10 novembre."
+     ]
+    },
+    {
+     "h": "Altitude, pentes et limite pluie-neige",
+     "p": [
+      "À Orcières Merlette, l'isotherme 0 °C monte entre 2 900 m et 3 160 m le 10 novembre, au-dessus du sommet de la station (2 731 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là.",
+      "À Les Deux Alpes, l'isotherme 0 °C monte entre 3 020 m et 3 180 m le 10 novembre : le bas du domaine peut recevoir de la neige mouillée, le haut reste bien hivernal.",
+      "À La Grave, l'isotherme 0 °C monte entre 2 680 m et 3 210 m le 8 novembre : le bas du domaine peut recevoir de la neige mouillée, le haut reste bien hivernal.",
+      "L'altitude compte : à Orcières Merlette, notre modèle donne 6 cm au sommet (2 731 m), 2 cm à mi-pente (2 278 m) et 0 cm en bas (1 826 m)."
+     ]
+    },
+    {
+     "h": "Où est la neige aujourd'hui",
+     "p": [
+      "Parmi ces stations, La Grave a le plus de neige sur le haut du domaine aujourd'hui, environ 50 cm ; suivent Les Deux Alpes 46 cm et Orcières Merlette 13 cm.",
+      "661 stations sur 1 178 dans les Alpes ont de la neige sur le haut du domaine aujourd'hui, et notre modèle compte 32 120 km² de surface enneigée."
+     ]
+    },
+    {
+     "h": "Sécurité et risque d'avalanche",
+     "p": [
+      "Le niveau de risque d'avalanche officiel pour le secteur de Orcières Merlette est aujourd'hui de 2 sur l'échelle à 5 niveaux (Météo-France BERA).",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ.",
+    "Là où l'isotherme 0 °C passe au-dessus de la station, prévoyez une neige mouillée et skiez sur les remontées les plus hautes.",
+    "La neige fraîche est la meilleure dans les premières heures : partez tôt, avant le soleil et la foule.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Orcières Merlette reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans les Alpes le 7 novembre 2026 (modèle de neige SnowScope) : Orcières Merlette, Les Deux Alpes, La Grave, Puy-Saint-Vincent, Chaillol.",
+    "bars": "Neige fraîche par jour dans les stations en tête (jours passés : modèle ; barres claires : prévision)."
+   }
+  },
+  "de": {
+   "title": "Schneeprognose in den Alpen: bis zu 36 cm in Orcières Merlette bis zum 10. November",
+   "description": "Bis zum 10. November ergibt unsere Prognose 36 cm in Orcières Merlette, 33 cm in Les Deux Alpes und 32 cm in La Grave. Die Werte der Skigebiete sind …",
+   "lede": "Bis zum 10. November ergibt unsere Prognose 36 cm in Orcières Merlette, 33 cm in Les Deux Alpes und 32 cm in La Grave. Die Werte der Skigebiete sind Modellschätzungen für die oberen Hänge; Messstationen messen an einem Punkt, am angegebenen Tag.",
+   "sections": [
+    {
+     "h": "Was als Nächstes kommt",
+     "p": [
+      "Bis zum 10. November ergibt unsere Prognose 30 cm in Puy-Saint-Vincent und 29 cm in Chaillol.",
+      "Die Schneefläche schrumpfte von 37.950 km² am 5. November auf heute 32.120 km², und unsere Prognose ergibt 37.470 km² am 10. November."
+     ]
+    },
+    {
+     "h": "Höhe, Hänge und Schneefallgrenze",
+     "p": [
+      "In Orcières Merlette liegt die Nullgradgrenze am 10. November zwischen 2.900 m und 3.160 m, über dem höchsten Punkt des Skigebiets (2.731 m): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich.",
+      "In Les Deux Alpes liegt die Nullgradgrenze am 10. November zwischen 3.020 m und 3.180 m: Unten kann der Schnee nass werden, oben bleibt es winterlich.",
+      "In La Grave liegt die Nullgradgrenze am 8. November zwischen 2.680 m und 3.210 m: Unten kann der Schnee nass werden, oben bleibt es winterlich.",
+      "Die Höhe macht den Unterschied: In Orcières Merlette zeigt unser Modell 6 cm am Gipfel (2.731 m), 2 cm an der Mittelstation (2.278 m) und 0 cm im Tal (1.826 m)."
+     ]
+    },
+    {
+     "h": "Wo heute Schnee liegt",
+     "p": [
+      "Von diesen Skigebieten hat La Grave heute den meisten Schnee in den oberen Hängen, etwa 50 cm; danach folgen Les Deux Alpes 46 cm und Orcières Merlette 13 cm.",
+      "661 von 1.178 Skigebieten in den Alpen haben heute Schnee in den oberen Hängen, und unser Modell zählt 32.120 km² Schneefläche."
+     ]
+    },
+    {
+     "h": "Sicherheit und Lawinengefahr",
+     "p": [
+      "Die offizielle Lawinengefahrenstufe für das Gebiet um Orcières Merlette ist heute 2 auf der fünfstufigen Skala (Météo-France BERA).",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte.",
+    "Wo die Nullgradgrenze über das Skigebiet steigt, rechne mit nassem Schnee und fahr an den höchsten Liften.",
+    "Neuschnee ist in den ersten Stunden am besten: Starte früh, vor der Sonne und dem Andrang.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Orcières Merlette Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe in den Alpen am 7. November 2026 (SnowScope-Schneemodell): Orcières Merlette, Les Deux Alpes, La Grave, Puy-Saint-Vincent, Chaillol.",
+    "bars": "Neuschnee pro Tag in den führenden Skigebieten (vergangene Tage: Modell; helle Balken: Prognose)."
+   }
+  },
+  "it": {
+   "title": "Previsioni neve sulle Alpi: fino a 36 cm a Orcières Merlette entro il 10 novembre",
+   "description": "Fino al 10 novembre la nostra previsione indica 36 cm a Orcières Merlette, 33 cm a Les Deux Alpes e 32 cm a La Grave. I valori delle località sono …",
+   "lede": "Fino al 10 novembre la nostra previsione indica 36 cm a Orcières Merlette, 33 cm a Les Deux Alpes e 32 cm a La Grave. I valori delle località sono stime del modello per i pendii superiori; le stazioni misurano in un punto, alla data indicata.",
+   "sections": [
+    {
+     "h": "Cosa arriva",
+     "p": [
+      "Fino al 10 novembre la nostra previsione indica 30 cm a Puy-Saint-Vincent e 29 cm a Chaillol.",
+      "La superficie innevata è passata da 37.950 km² il 5 novembre a 32.120 km² oggi, e la nostra previsione indica 37.470 km² il 10 novembre."
+     ]
+    },
+    {
+     "h": "Quota, pendii e quota neve",
+     "p": [
+      "A Orcières Merlette lo zero termico sale tra 2.900 m e 3.160 m il 10 novembre, sopra la quota massima della località (2.731 m): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii.",
+      "A Les Deux Alpes lo zero termico sale tra 3.020 m e 3.180 m il 10 novembre: in basso la neve può essere bagnata, mentre in alto resta invernale.",
+      "A La Grave lo zero termico sale tra 2.680 m e 3.210 m il 8 novembre: in basso la neve può essere bagnata, mentre in alto resta invernale.",
+      "La quota conta: a Orcières Merlette il nostro modello indica 6 cm in vetta (2.731 m), 2 cm a metà montagna (2.278 m) e 0 cm alla base (1.826 m)."
+     ]
+    },
+    {
+     "h": "Dove c'è neve oggi",
+     "p": [
+      "Tra queste località, La Grave ha oggi più neve sui pendii superiori, circa 50 cm; seguono Les Deux Alpes 46 cm e Orcières Merlette 13 cm.",
+      "661 località su 1.178 sulle Alpi hanno oggi neve sui pendii superiori, e il nostro modello conta 32.120 km² di superficie innevata."
+     ]
+    },
+    {
+     "h": "Sicurezza e pericolo valanghe",
+     "p": [
+      "Il grado di pericolo valanghe ufficiale per la zona di Orcières Merlette oggi è 2 sulla scala a 5 gradi (Météo-France BERA).",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire.",
+    "Dove lo zero termico sale sopra la località, aspettati neve bagnata e usa gli impianti più alti.",
+    "La neve fresca è migliore nelle prime ore: parti presto, prima del sole e della folla.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Orcières Merlette riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve sulle Alpi il 7 novembre 2026 (modello neve SnowScope): Orcières Merlette, Les Deux Alpes, La Grave, Puy-Saint-Vincent, Chaillol.",
+    "bars": "Neve fresca al giorno nelle località in testa (giorni passati: modello; barre chiare: previsione)."
+   }
+  },
+  "es": {
+   "title": "Previsión de nieve en los Alpes: hasta 36 cm en Orcières Merlette hasta el 10 de noviembre",
+   "description": "Hasta el 10 de noviembre, nuestra previsión da 36 cm en Orcières Merlette, 33 cm en Les Deux Alpes y 32 cm en La Grave. Las cifras de las estaciones …",
+   "lede": "Hasta el 10 de noviembre, nuestra previsión da 36 cm en Orcières Merlette, 33 cm en Les Deux Alpes y 32 cm en La Grave. Las cifras de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida miden en un punto, en la fecha indicada.",
+   "sections": [
+    {
+     "h": "Lo que viene",
+     "p": [
+      "Hasta el 10 de noviembre, nuestra previsión da 30 cm en Puy-Saint-Vincent y 29 cm en Chaillol.",
+      "La superficie nevada pasó de 37.950 km² el 5 de noviembre a 32.120 km² hoy, y nuestra previsión da 37.470 km² el 10 de noviembre."
+     ]
+    },
+    {
+     "h": "Altitud, laderas y cota de nieve",
+     "p": [
+      "En Orcières Merlette, la cota de congelación llega a 2900 m-3160 m el 10 de noviembre, por encima de la cota alta de la estación (2731 m): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
+      "En Les Deux Alpes, la cota de congelación llega a 3020 m-3180 m el 10 de noviembre: abajo la nieve puede ser húmeda, mientras arriba sigue siendo invernal.",
+      "En La Grave, la cota de congelación llega a 2680 m-3210 m el 8 de noviembre: abajo la nieve puede ser húmeda, mientras arriba sigue siendo invernal.",
+      "La altitud cuenta: en Orcières Merlette, nuestro modelo da 6 cm en la cota alta (2731 m), 2 cm a media montaña (2278 m) y 0 cm en la base (1826 m)."
+     ]
+    },
+    {
+     "h": "Dónde está la nieve hoy",
+     "p": [
+      "De estas estaciones, La Grave tiene hoy más nieve en las pistas altas, unos 50 cm; después vienen Les Deux Alpes 46 cm y Orcières Merlette 13 cm.",
+      "661 de 1178 estaciones en los Alpes tienen hoy nieve en las pistas altas, y nuestro modelo cuenta 32.120 km² de superficie nevada."
+     ]
+    },
+    {
+     "h": "Seguridad y peligro de aludes",
+     "p": [
+      "El nivel oficial de peligro de aludes para la zona de Orcières Merlette es hoy 2 en la escala de 5 niveles (Météo-France BERA).",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar.",
+    "Donde la cota de congelación suba por encima de la estación, cuenta con nieve húmeda y usa los remontes más altos.",
+    "La nieve nueva es mejor en las primeras horas: sal temprano, antes del sol y de la gente.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Orcières Merlette recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en los Alpes el 7 de noviembre 2026 (modelo de nieve de SnowScope): Orcières Merlette, Les Deux Alpes, La Grave, Puy-Saint-Vincent, Chaillol.",
+    "bars": "Nieve nueva por día en las estaciones líderes (días pasados: modelo; barras claras: previsión)."
+   }
+  },
+  "ar": {
+   "title": "توقعات التلج فجبال الألب: حتى ل 36 سم ف Orcières Merlette حتى ل 10 نونبر",
+   "description": "حتى ل 10 نونبر، التوقعات ديالنا كتعطي 36 سم ف Orcières Merlette، 33 سم ف Les Deux Alpes و 32 سم ف La Grave. الأرقام ديال المحطات ديال التزلج تقديرات …",
+   "lede": "حتى ل 10 نونبر، التوقعات ديالنا كتعطي 36 سم ف Orcières Merlette، 33 سم ف Les Deux Alpes و 32 سم ف La Grave. الأرقام ديال المحطات ديال التزلج تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس كتقيس فنقطة وحدة، فالتاريخ المكتوب.",
+   "sections": [
+    {
+     "h": "شنو جاي",
+     "p": [
+      "حتى ل 10 نونبر، التوقعات ديالنا كتعطي 30 سم ف Puy-Saint-Vincent و 29 سم ف Chaillol.",
+      "المساحة اللي فيها التلج دازت من 37950 كم² نهار 5 نونبر ل 32120 كم² اليوم، والتوقعات ديالنا كتعطي 37470 كم² نهار 10 نونبر."
+     ]
+    },
+    {
+     "h": "العلو، الجهات والحد ديال التلج",
+     "p": [
+      "ف Orcières Merlette، علو الجليد غادي يكون بين 2900 م و 3160 م نهار 10 نونبر، فوق أعلى نقطة فالمحطة (2731 م): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات.",
+      "ف Les Deux Alpes، علو الجليد غادي يكون بين 3020 م و 3180 م نهار 10 نونبر، يعني التحت يمكن يكون التلج مبلول، والفوق يبقى بارد.",
+      "ف La Grave، علو الجليد غادي يكون بين 2680 م و 3210 م نهار 8 نونبر، يعني التحت يمكن يكون التلج مبلول، والفوق يبقى بارد.",
+      "العلو مهم: ف Orcières Merlette، الموديل ديالنا كيعطي 6 سم فالفوق (2731 م)، 2 سم فالوسط (2278 م) و 0 سم فالتحت (1826 م)."
+     ]
+    },
+    {
+     "h": "فين كاين التلج اليوم",
+     "p": [
+      "من هاد المحطات، La Grave فيها أكثر تلج فالجهة الفوقانية اليوم، تقريبا 50 سم؛ من بعدها Les Deux Alpes 46 سم و Orcières Merlette 13 سم.",
+      "661 محطة من 1178 فجبال الألب فيهم التلج فالجهة الفوقانية اليوم، والموديل ديالنا كيحسب 32120 كم² ديال الأرض اللي فيها التلج."
+     ]
+    },
+    {
+     "h": "السلامة وخطر الانهيارات",
+     "p": [
+      "المستوى الرسمي ديال خطر الانهيارات فالمنطقة ديال Orcières Merlette اليوم هو 2 من 5 (Météo-France BERA).",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر.",
+    "فين علو الجليد طالع فوق المحطة، توقع تلج مبلول وطلع للتيليسييج اللي فالفوق.",
+    "التلج الجديد كيكون مزيان فالساعات الأولى: سير بكري، قبل الشمس والناس.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Orcières Merlette يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فجبال الألب نهار 7 نونبر 2026 (الموديل ديال SnowScope): Orcières Merlette, Les Deux Alpes, La Grave, Puy-Saint-Vincent, Chaillol.",
+    "bars": "التلج الجديد فكل نهار فالمحطات اللولين (الأيام اللي فاتو من الموديل، والخطوط الفاتحة = التوقعات)."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  },
+  "fr": {
+   "writer": "template"
+  },
+  "de": {
+   "writer": "template"
+  },
+  "it": {
+   "writer": "template"
+  },
+  "es": {
+   "writer": "template"
+  },
+  "ar": {
+   "writer": "template"
+  }
+ },
+ "words_en": 297,
+ "indexable": true,
+ "main": {
+  "slug": "orcieres_merlette",
+  "name": "Orcières Merlette",
+  "lat": 44.7122,
+  "lon": 6.3247
+ },
+ "places": [
+  {
+   "name": "Orcières Merlette",
+   "lat": 44.7122,
+   "lon": 6.3247
+  },
+  {
+   "name": "Les Deux Alpes",
+   "lat": 45.0083,
+   "lon": 6.15
+  },
+  {
+   "name": "La Grave",
+   "lat": 45.0195,
+   "lon": 6.2771
+  },
+  {
+   "name": "Puy-Saint-Vincent",
+   "lat": 44.8126,
+   "lon": 6.4794
+  },
+  {
+   "name": "Chaillol",
+   "lat": 44.6897,
+   "lon": 6.1619
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "orcieres_merlette",
+   "name": "Orcières Merlette"
+  },
+  {
+   "slug": "les_deux_alpes",
+   "name": "Les Deux Alpes"
+  },
+  {
+   "slug": "la_grave",
+   "name": "La Grave"
+  },
+  {
+   "slug": "puy_saint_vincent",
+   "name": "Puy-Saint-Vincent"
+  },
+  {
+   "slug": "chaillol_chalhol",
+   "name": "Chaillol"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "orcieres_merlette",
+    "name": "Orcières Merlette",
+    "depth": 13,
+    "new72": 16,
+    "next": 36,
+    "top_m": 2731
+   },
+   {
+    "slug": "les_deux_alpes",
+    "name": "Les Deux Alpes",
+    "depth": 46,
+    "new72": 15,
+    "next": 33,
+    "top_m": 3511
+   },
+   {
+    "slug": "la_grave",
+    "name": "La Grave",
+    "depth": 50,
+    "new72": 20,
+    "next": 32,
+    "top_m": 3543
+   },
+   {
+    "slug": "puy_saint_vincent",
+    "name": "Puy-Saint-Vincent",
+    "depth": 7,
+    "new72": 14,
+    "next": 30,
+    "top_m": 2664
+   },
+   {
+    "slug": "chaillol_chalhol",
+    "name": "Chaillol",
+    "depth": 5,
+    "new72": 15,
+    "next": 29,
+    "top_m": 1929
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Météo-France BERA",
+   "url": "https://meteofrance.com/meteo-montagne"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@44.712,6.325,9.0",
+ "seconds": 0.0,
+ "publish_utc": "2026-11-07T12:29:00Z"
+}
