@@ -133,3 +133,11 @@ h2.day a{color:inherit;text-decoration:none}
 .readalso li{margin:4px 0}
 .readalso li span{color:var(--ink3);font-size:.9em;white-space:nowrap}
 .readalso .series{display:inline-block;margin-top:8px;font-weight:600}
+/* app call-to-action under the lede (every post, owner 2026-11-07) */
+.cta-app{display:flex;align-items:center;gap:12px;margin:14px 0 18px;padding:12px 14px;border-radius:12px;border:1px solid var(--outline);
+  background:var(--accent-tint);color:var(--ink);text-decoration:none}
+.cta-app:hover{border-color:var(--accent)}
+.cta-app>.ms{color:var(--accent);font-size:26px;flex:none}
+.cta-app>span:nth-child(2){flex:1;min-width:0}
+.cta-app b{display:block;font-size:15px;line-height:1.3}
+.cta-app small{display:block;color:var(--ink3);font-size:13px;margin-top:2px}
