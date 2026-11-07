@@ -126,3 +126,10 @@ ul.arch li span{color:var(--ink3);font-size:14px;white-space:nowrap}
 h2.day a{color:inherit;text-decoration:none}
 @media (max-width:560px){.regionnav{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-inline:-16px;padding-inline:16px}
   .regionnav::-webkit-scrollbar{display:none}.regionnav a{flex:0 0 auto}}
+/* engine/blog/seo.py: in-body links inside the post's cluster */
+.readalso{margin:22px 0;padding:14px 16px;border:1px solid var(--outline);border-inline-start:4px solid var(--accent);background:var(--accent-tint);border-radius:10px}
+.readalso b{display:block;margin-bottom:6px}
+.readalso ul{margin:0;padding-inline-start:18px}
+.readalso li{margin:4px 0}
+.readalso li span{color:var(--ink3);font-size:.9em;white-space:nowrap}
+.readalso .series{display:inline-block;margin-top:8px;font-weight:600}
