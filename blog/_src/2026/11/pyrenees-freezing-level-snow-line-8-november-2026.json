@@ -1,0 +1,773 @@
+{
+ "id": "2026-11-08-pyrenees-isotherm",
+ "slug": "pyrenees-freezing-level-snow-line-8-november-2026",
+ "date": "2026-11-08",
+ "published_utc": "2026-11-08T20:51:32Z",
+ "updated_utc": "2026-11-08T20:51:32Z",
+ "region": "PYRENEES",
+ "angle": "isotherm",
+ "score": 58,
+ "signature": "boi_taull:3400|grandvalira:3800|masella:3500",
+ "keyword": {
+  "family": "snow-line",
+  "entity": "pyrenees",
+  "region": "PYRENEES",
+  "date": "2026-11-08"
+ },
+ "tags": [
+  "snow-line",
+  "forecast",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "freezing_level_analysis",
+  "region": "Pyrenees",
+  "date": "2026-11-08",
+  "weekday": "Sunday",
+  "model_run": "2026-11-08",
+  "forecast_days": [
+   "2026-11-09",
+   "2026-11-10",
+   "2026-11-11"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 1550,
+   "resorts_with_snow": 45,
+   "resorts_in_region": 53
+  },
+  "region_before": {
+   "date": "2026-11-06",
+   "snow_covered_area_km2": 2670,
+   "resorts_with_snow": 47
+  },
+  "region_forecast": {
+   "date": "2026-11-11",
+   "snow_covered_area_km2": 390,
+   "resorts_with_snow": 29
+  },
+  "question": "How high is the 0 °C level in the next days, where does rain turn to snow, and is rain falling on the snowpack?",
+  "snow_line_below_freezing_level_m": 300,
+  "region_freezing_level_m_by_day": {
+   "2026-11-09": {
+    "lowest": 2940,
+    "highest": 3840
+   },
+   "2026-11-10": {
+    "lowest": 2710,
+    "highest": 3500
+   },
+   "2026-11-11": {
+    "lowest": 2610,
+    "highest": 3520
+   }
+  },
+  "forecast_points": [
+   {
+    "place": "Baqueira-Beret",
+    "elev_m": 2510,
+    "precip_mm_total_next_days": 43,
+    "precip_mm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 1,
+     "2026-11-10": 3,
+     "2026-11-11": 1,
+     "2026-11-12": 24,
+     "2026-11-13": 13
+    },
+    "freezing_level_m_when_wet": 2980,
+    "snow_line_m_when_wet": 2680,
+    "share_of_precip_as_snow_at_this_height_pct": 42
+   },
+   {
+    "place": "Saint-Lary",
+    "elev_m": 2515,
+    "precip_mm_total_next_days": 55,
+    "precip_mm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 6,
+     "2026-11-10": 12,
+     "2026-11-11": 7,
+     "2026-11-12": 25,
+     "2026-11-13": 5
+    },
+    "freezing_level_m_when_wet": 3150,
+    "snow_line_m_when_wet": 2850,
+    "share_of_precip_as_snow_at_this_height_pct": 18
+   }
+  ],
+  "notes": [
+   "0 °C level = height where the air temperature crosses 0 °C (forecast, daily lowest and highest)",
+   "snow line = about 300 m below the 0 °C level, at the warmest hours of the day",
+   "rain-on-snow risk = snow on the slopes and a snow line above mid-mountain on a day with precipitation"
+  ],
+  "resorts": [
+   {
+    "name": "Boí Taüll",
+    "country": "Spain",
+    "top_m": 2747,
+    "base_m": 2039,
+    "depth_cm_upper_slopes_today": 5,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 3,
+    "slug": "boi_taull",
+    "freezing_level_m_by_day": {
+     "2026-11-09": {
+      "min": 3010,
+      "max": 3430
+     },
+     "2026-11-10": {
+      "min": 2810,
+      "max": 3230
+     },
+     "2026-11-11": {
+      "min": 2780,
+      "max": 3240
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-09": 3100,
+     "2026-11-10": 2900,
+     "2026-11-11": 2900
+    },
+    "days_snow_line_above_top": [
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ]
+   },
+   {
+    "name": "GrandValira",
+    "country": "Andorra / France",
+    "top_m": 2619,
+    "base_m": 1674,
+    "depth_cm_upper_slopes_today": 15,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "grandvalira",
+    "freezing_level_m_by_day": {
+     "2026-11-09": {
+      "min": 3110,
+      "max": 3840
+     },
+     "2026-11-10": {
+      "min": 3060,
+      "max": 3500
+     },
+     "2026-11-11": {
+      "min": 2980,
+      "max": 3410
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-09": 3500,
+     "2026-11-10": 3200,
+     "2026-11-11": 3100
+    },
+    "days_snow_line_above_top": [
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ]
+   },
+   {
+    "name": "Masella",
+    "country": "Spain",
+    "top_m": 2509,
+    "base_m": 1615,
+    "depth_cm_upper_slopes_today": 17,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "masella",
+    "freezing_level_m_by_day": {
+     "2026-11-09": {
+      "min": 3150,
+      "max": 3510
+     },
+     "2026-11-10": {
+      "min": 3140,
+      "max": 3400
+     },
+     "2026-11-11": {
+      "min": 3070,
+      "max": 3520
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-09": 3200,
+     "2026-11-10": 3100,
+     "2026-11-11": 3200
+    },
+    "days_snow_line_above_top": [
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ]
+   },
+   {
+    "name": "Espace Cambre d'Aze",
+    "country": "France",
+    "top_m": 2377,
+    "base_m": 1631,
+    "depth_cm_upper_slopes_today": 21,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "espace_cambre_d_aze",
+    "freezing_level_m_by_day": {
+     "2026-11-09": {
+      "min": 3140,
+      "max": 3600
+     },
+     "2026-11-10": {
+      "min": 3110,
+      "max": 3460
+     },
+     "2026-11-11": {
+      "min": 3070,
+      "max": 3510
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-09": 3300,
+     "2026-11-10": 3200,
+     "2026-11-11": 3200
+    },
+    "days_snow_line_above_top": [
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ]
+   },
+   {
+    "name": "Astun",
+    "country": "Spain",
+    "top_m": 2272,
+    "base_m": 1659,
+    "depth_cm_upper_slopes_today": 5,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "astun",
+    "freezing_level_m_by_day": {
+     "2026-11-09": {
+      "min": 2940,
+      "max": 3500
+     },
+     "2026-11-10": {
+      "min": 2710,
+      "max": 3290
+     },
+     "2026-11-11": {
+      "min": 2610,
+      "max": 3070
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-09": 3200,
+     "2026-11-10": 3000,
+     "2026-11-11": 2800
+    },
+    "days_snow_line_above_top": [
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ]
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/pyrenees-freezing-level-snow-line-8-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/pyrenees-freezing-level-snow-line-8-november-2026/map_t.webp",
+   "bytes": 51864
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Rain or snow in the Pyrenees? The snow line climbs to 3,500 m at GrandValira (8 November)",
+   "description": "Our forecast puts the 0 °C level in the Pyrenees between 2,610 m and 3,840 m over the next days. At the warmest hours the snow line, about 300 m …",
+   "lede": "Our forecast puts the 0 °C level in the Pyrenees between 2,610 m and 3,840 m over the next days. At the warmest hours the snow line, about 300 m lower, reaches 3,500 m at GrandValira on Monday 9 November.",
+   "sections": [
+    {
+     "h": "The 0 °C level day by day",
+     "p": [
+      "The 0 °C level at the resorts below, from the coldest to the warmest hour of each day: Monday 9 November: from 2,940 m to 3,840 m. Tuesday 10 November: from 2,710 m to 3,500 m. Wednesday 11 November: from 2,610 m to 3,520 m."
+     ]
+    },
+    {
+     "h": "Snow line at each resort",
+     "p": [
+      "Boí Taüll (base 2,039 m, top 2,747 m): snow line up to about 3,100 m on 9 November, above the top: rain or wet snow on the whole mountain if precipitation falls.",
+      "GrandValira (base 1,674 m, top 2,619 m): snow line up to about 3,500 m on 9 November, above the top: rain or wet snow on the whole mountain if precipitation falls.",
+      "Masella (base 1,615 m, top 2,509 m): snow line up to about 3,200 m on 9 November, above the top: rain or wet snow on the whole mountain if precipitation falls.",
+      "Espace Cambre d'Aze (base 1,631 m, top 2,377 m): snow line up to about 3,300 m on 9 November, above the top: rain or wet snow on the whole mountain if precipitation falls.",
+      "Astun (base 1,659 m, top 2,272 m): snow line up to about 3,200 m on 9 November, above the top: rain or wet snow on the whole mountain if precipitation falls."
+     ]
+    },
+    {
+     "h": "Rain on the snowpack?",
+     "p": [
+      "Boí Taüll has about 5 cm on its upper slopes, and on 9 November, 10 November and 11 November the snow line sits above mid-mountain: rain on that snow would make it heavy and wet, then icy when it freezes again.",
+      "GrandValira has about 15 cm on its upper slopes, and on 9 November, 10 November and 11 November the snow line sits above mid-mountain: rain on that snow would make it heavy and wet, then icy when it freezes again.",
+      "Masella has about 17 cm on its upper slopes, and on 9 November, 10 November and 11 November the snow line sits above mid-mountain: rain on that snow would make it heavy and wet, then icy when it freezes again.",
+      "At Baqueira-Beret (2,510 m) the forecast gives 43 mm of precipitation; during the wet hours the snow line is near 2,680 m.",
+      "At Saint-Lary (2,515 m) the forecast gives 55 mm of precipitation; during the wet hours the snow line is near 2,850 m."
+     ]
+    },
+    {
+     "h": "Why the snow line sits below the 0 °C level",
+     "p": [
+      "Air usually gets colder with height. Flakes that fall below the 0 °C level start to melt, and because melting takes time, snow turns to rain only some 300 m lower: that is the snow line. In dry air, evaporation cools the falling snow and the snow line can drop further."
+     ]
+    }
+   ],
+   "advice": [
+    "On warm days, ski the highest lifts and north-facing slopes in the morning, before the snow softens.",
+    "The 0 °C level is a forecast and can move by several hundred metres: check the map again the day before you go.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website."
+   ],
+   "captions": {
+    "map": "Snow depth in the Pyrenees on 8 November (SnowScope snow model) with the resorts of this freezing-level analysis and their top heights."
+   }
+  },
+  "fr": {
+   "title": "Pluie ou neige dans les Pyrénées ? La limite pluie-neige monte à 3 500 m à GrandValira (8 novembre)",
+   "description": "Notre prévision place l'isotherme 0 °C dans les Pyrénées entre 2 610 m et 3 840 m ces prochains jours. Aux heures les plus douces, la limite …",
+   "lede": "Notre prévision place l'isotherme 0 °C dans les Pyrénées entre 2 610 m et 3 840 m ces prochains jours. Aux heures les plus douces, la limite pluie-neige, environ 300 m plus bas, atteint 3 500 m à GrandValira le lundi 9 novembre.",
+   "sections": [
+    {
+     "h": "L'isotherme 0 °C jour par jour",
+     "p": [
+      "L'isotherme 0 °C au-dessus des stations ci-dessous, de l'heure la plus froide à la plus douce de chaque jour : lundi 9 novembre : de 2 940 m à 3 840 m. mardi 10 novembre : de 2 710 m à 3 500 m. mercredi 11 novembre : de 2 610 m à 3 520 m."
+     ]
+    },
+    {
+     "h": "La limite pluie-neige station par station",
+     "p": [
+      "Boí Taüll (bas 2 039 m, sommet 2 747 m) : limite pluie-neige jusque vers 3 100 m le 9 novembre, au-dessus du sommet : pluie ou neige mouillée sur tout le domaine s'il y a des précipitations.",
+      "GrandValira (bas 1 674 m, sommet 2 619 m) : limite pluie-neige jusque vers 3 500 m le 9 novembre, au-dessus du sommet : pluie ou neige mouillée sur tout le domaine s'il y a des précipitations.",
+      "Masella (bas 1 615 m, sommet 2 509 m) : limite pluie-neige jusque vers 3 200 m le 9 novembre, au-dessus du sommet : pluie ou neige mouillée sur tout le domaine s'il y a des précipitations.",
+      "Espace Cambre d'Aze (bas 1 631 m, sommet 2 377 m) : limite pluie-neige jusque vers 3 300 m le 9 novembre, au-dessus du sommet : pluie ou neige mouillée sur tout le domaine s'il y a des précipitations.",
+      "Astun (bas 1 659 m, sommet 2 272 m) : limite pluie-neige jusque vers 3 200 m le 9 novembre, au-dessus du sommet : pluie ou neige mouillée sur tout le domaine s'il y a des précipitations."
+     ]
+    },
+    {
+     "h": "De la pluie sur la neige ?",
+     "p": [
+      "Boí Taüll a environ 5 cm en haut du domaine, et le 9 novembre, 10 novembre et 11 novembre la limite pluie-neige passe au-dessus de mi-pente : de la pluie sur cette neige la rendrait lourde et mouillée, puis glacée au regel.",
+      "GrandValira a environ 15 cm en haut du domaine, et le 9 novembre, 10 novembre et 11 novembre la limite pluie-neige passe au-dessus de mi-pente : de la pluie sur cette neige la rendrait lourde et mouillée, puis glacée au regel.",
+      "Masella a environ 17 cm en haut du domaine, et le 9 novembre, 10 novembre et 11 novembre la limite pluie-neige passe au-dessus de mi-pente : de la pluie sur cette neige la rendrait lourde et mouillée, puis glacée au regel.",
+      "À Baqueira-Beret (2 510 m), la prévision donne 43 mm de précipitations ; pendant les heures humides, la limite pluie-neige est vers 2 680 m.",
+      "À Saint-Lary (2 515 m), la prévision donne 55 mm de précipitations ; pendant les heures humides, la limite pluie-neige est vers 2 850 m."
+     ]
+    },
+    {
+     "h": "Pourquoi la limite pluie-neige est sous l'isotherme 0 °C",
+     "p": [
+      "L'air se refroidit en général avec l'altitude. Les flocons qui passent sous l'isotherme 0 °C commencent à fondre, et comme la fonte prend du temps, la neige ne se change en pluie qu'environ 300 m plus bas : c'est la limite pluie-neige. Dans un air sec, l'évaporation refroidit la neige qui tombe et la limite peut descendre encore."
+     ]
+    }
+   ],
+   "advice": [
+    "Les jours doux, skiez le matin sur les remontées les plus hautes et les pentes nord, avant que la neige ne ramollisse.",
+    "L'isotherme 0 °C est une prévision et peut bouger de plusieurs centaines de mètres : revoyez la carte la veille.",
+    "Avant toute sortie hors-piste ou en randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates sur son site."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans les Pyrénées le 8 novembre (modèle SnowScope), avec les stations de cette analyse et l'altitude de leur sommet."
+   }
+  },
+  "de": {
+   "title": "Regen oder Schnee in den Pyrenäen? Die Schneefallgrenze steigt in GrandValira auf 3.500 m (8. November)",
+   "description": "Unsere Prognose sieht die Nullgradgrenze in den Pyrenäen in den nächsten Tagen zwischen 2.610 m und 3.840 m. In den wärmsten Stunden erreicht die …",
+   "lede": "Unsere Prognose sieht die Nullgradgrenze in den Pyrenäen in den nächsten Tagen zwischen 2.610 m und 3.840 m. In den wärmsten Stunden erreicht die Schneefallgrenze, etwa 300 m tiefer, am Montag, 9. November in GrandValira 3.500 m.",
+   "sections": [
+    {
+     "h": "Die Nullgradgrenze Tag für Tag",
+     "p": [
+      "Die Nullgradgrenze über den Skigebieten unten, von der kältesten bis zur wärmsten Stunde jedes Tages: Montag, 9. November: von 2.940 m bis 3.840 m. Dienstag, 10. November: von 2.710 m bis 3.500 m. Mittwoch, 11. November: von 2.610 m bis 3.520 m."
+     ]
+    },
+    {
+     "h": "Schneefallgrenze je Skigebiet",
+     "p": [
+      "Boí Taüll (Tal 2.039 m, Gipfel 2.747 m): Schneefallgrenze bis etwa 3.100 m am 9. November, über dem Gipfel: bei Niederschlag Regen oder nasser Schnee am ganzen Berg.",
+      "GrandValira (Tal 1.674 m, Gipfel 2.619 m): Schneefallgrenze bis etwa 3.500 m am 9. November, über dem Gipfel: bei Niederschlag Regen oder nasser Schnee am ganzen Berg.",
+      "Masella (Tal 1.615 m, Gipfel 2.509 m): Schneefallgrenze bis etwa 3.200 m am 9. November, über dem Gipfel: bei Niederschlag Regen oder nasser Schnee am ganzen Berg.",
+      "Espace Cambre d'Aze (Tal 1.631 m, Gipfel 2.377 m): Schneefallgrenze bis etwa 3.300 m am 9. November, über dem Gipfel: bei Niederschlag Regen oder nasser Schnee am ganzen Berg.",
+      "Astun (Tal 1.659 m, Gipfel 2.272 m): Schneefallgrenze bis etwa 3.200 m am 9. November, über dem Gipfel: bei Niederschlag Regen oder nasser Schnee am ganzen Berg."
+     ]
+    },
+    {
+     "h": "Regen auf die Schneedecke?",
+     "p": [
+      "Boí Taüll hat etwa 5 cm in den oberen Hängen, und am 9. November, 10. November und 11. November liegt die Schneefallgrenze über der Mittelstation: Regen auf diesen Schnee macht ihn schwer und nass, nach dem Gefrieren eisig.",
+      "GrandValira hat etwa 15 cm in den oberen Hängen, und am 9. November, 10. November und 11. November liegt die Schneefallgrenze über der Mittelstation: Regen auf diesen Schnee macht ihn schwer und nass, nach dem Gefrieren eisig.",
+      "Masella hat etwa 17 cm in den oberen Hängen, und am 9. November, 10. November und 11. November liegt die Schneefallgrenze über der Mittelstation: Regen auf diesen Schnee macht ihn schwer und nass, nach dem Gefrieren eisig.",
+      "In Baqueira-Beret (2.510 m) zeigt die Prognose 43 mm Niederschlag; in den nassen Stunden liegt die Schneefallgrenze bei etwa 2.680 m.",
+      "In Saint-Lary (2.515 m) zeigt die Prognose 55 mm Niederschlag; in den nassen Stunden liegt die Schneefallgrenze bei etwa 2.850 m."
+     ]
+    },
+    {
+     "h": "Warum die Schneefallgrenze unter der Nullgradgrenze liegt",
+     "p": [
+      "Die Luft wird mit der Höhe meist kälter. Flocken, die unter die Nullgradgrenze fallen, beginnen zu schmelzen; weil das Zeit braucht, wird Schnee erst etwa 300 m tiefer zu Regen: Das ist die Schneefallgrenze. In trockener Luft kühlt Verdunstung den fallenden Schnee, und die Grenze kann weiter sinken."
+     ]
+    }
+   ],
+   "advice": [
+    "An warmen Tagen fahr morgens an den höchsten Liften und Nordhängen, bevor der Schnee weich wird.",
+    "Die Nullgradgrenze ist eine Prognose und kann sich um mehrere hundert Meter verschieben: Schau am Vortag noch einmal auf die Karte.",
+    "Lies vor jedem Tag abseits der Piste oder auf Tour den offiziellen Lawinenlagebericht (Links unten).",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Termine auf seiner Website."
+   ],
+   "captions": {
+    "map": "Schneehöhe in den Pyrenäen am 8. November (SnowScope-Modell) mit den Skigebieten dieser Analyse und ihrer Gipfelhöhe."
+   }
+  },
+  "it": {
+   "title": "Pioggia o neve sui Pirenei? La quota neve sale a 3.500 m a GrandValira (8 novembre)",
+   "description": "La nostra previsione colloca lo zero termico sui Pirenei tra 2.610 m e 3.840 m nei prossimi giorni. Nelle ore più miti la quota neve, circa 300 m più …",
+   "lede": "La nostra previsione colloca lo zero termico sui Pirenei tra 2.610 m e 3.840 m nei prossimi giorni. Nelle ore più miti la quota neve, circa 300 m più in basso, arriva a 3.500 m a GrandValira il lunedì 9 novembre.",
+   "sections": [
+    {
+     "h": "Lo zero termico giorno per giorno",
+     "p": [
+      "Lo zero termico sulle località qui sotto, dall'ora più fredda alla più mite di ogni giorno: lunedì 9 novembre: da 2.940 m a 3.840 m. martedì 10 novembre: da 2.710 m a 3.500 m. mercoledì 11 novembre: da 2.610 m a 3.520 m."
+     ]
+    },
+    {
+     "h": "La quota neve località per località",
+     "p": [
+      "Boí Taüll (base 2.039 m, vetta 2.747 m): quota neve fino a circa 3.100 m il 9 novembre, sopra la vetta: pioggia o neve bagnata su tutta la montagna se arrivano precipitazioni.",
+      "GrandValira (base 1.674 m, vetta 2.619 m): quota neve fino a circa 3.500 m il 9 novembre, sopra la vetta: pioggia o neve bagnata su tutta la montagna se arrivano precipitazioni.",
+      "Masella (base 1.615 m, vetta 2.509 m): quota neve fino a circa 3.200 m il 9 novembre, sopra la vetta: pioggia o neve bagnata su tutta la montagna se arrivano precipitazioni.",
+      "Espace Cambre d'Aze (base 1.631 m, vetta 2.377 m): quota neve fino a circa 3.300 m il 9 novembre, sopra la vetta: pioggia o neve bagnata su tutta la montagna se arrivano precipitazioni.",
+      "Astun (base 1.659 m, vetta 2.272 m): quota neve fino a circa 3.200 m il 9 novembre, sopra la vetta: pioggia o neve bagnata su tutta la montagna se arrivano precipitazioni."
+     ]
+    },
+    {
+     "h": "Pioggia sul manto nevoso?",
+     "p": [
+      "Boí Taüll ha circa 5 cm sui pendii alti, e il 9 novembre, 10 novembre e 11 novembre la quota neve è sopra metà montagna: la pioggia su questa neve la renderebbe pesante e bagnata, poi ghiacciata al rigelo.",
+      "GrandValira ha circa 15 cm sui pendii alti, e il 9 novembre, 10 novembre e 11 novembre la quota neve è sopra metà montagna: la pioggia su questa neve la renderebbe pesante e bagnata, poi ghiacciata al rigelo.",
+      "Masella ha circa 17 cm sui pendii alti, e il 9 novembre, 10 novembre e 11 novembre la quota neve è sopra metà montagna: la pioggia su questa neve la renderebbe pesante e bagnata, poi ghiacciata al rigelo.",
+      "A Baqueira-Beret (2.510 m) la previsione indica 43 mm di precipitazioni; nelle ore umide la quota neve è vicina a 2.680 m.",
+      "A Saint-Lary (2.515 m) la previsione indica 55 mm di precipitazioni; nelle ore umide la quota neve è vicina a 2.850 m."
+     ]
+    },
+    {
+     "h": "Perché la quota neve è sotto lo zero termico",
+     "p": [
+      "Di solito l'aria si raffredda con la quota. I fiocchi che scendono sotto lo zero termico iniziano a fondere e, poiché la fusione richiede tempo, la neve diventa pioggia solo circa 300 m più in basso: è la quota neve. In aria secca l'evaporazione raffredda la neve che cade e la quota può scendere ancora."
+     ]
+    }
+   ],
+   "advice": [
+    "Nei giorni miti scia al mattino sugli impianti più alti e sui versanti nord, prima che la neve si ammorbidisca.",
+    "Lo zero termico è una previsione e può spostarsi di diverse centinaia di metri: ricontrolla la mappa il giorno prima.",
+    "Prima di ogni uscita in fuoripista o scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date sul suo sito."
+   ],
+   "captions": {
+    "map": "Altezza neve sui Pirenei il 8 novembre (modello SnowScope) con le località di questa analisi e la quota della vetta."
+   }
+  },
+  "es": {
+   "title": "¿Lluvia o nieve en los Pirineos? La cota de nieve sube a 3500 m en GrandValira (8 de noviembre)",
+   "description": "Nuestra previsión sitúa la isoterma de 0 °C en los Pirineos entre 2610 m y 3840 m en los próximos días. En las horas más templadas la cota de nieve, …",
+   "lede": "Nuestra previsión sitúa la isoterma de 0 °C en los Pirineos entre 2610 m y 3840 m en los próximos días. En las horas más templadas la cota de nieve, unos 300 m más abajo, llega a 3500 m en GrandValira el lunes 9 de noviembre.",
+   "sections": [
+    {
+     "h": "La isoterma de 0 °C día a día",
+     "p": [
+      "La isoterma de 0 °C sobre las estaciones de abajo, de la hora más fría a la más templada de cada día: lunes 9 de noviembre: de 2940 m a 3840 m. martes 10 de noviembre: de 2710 m a 3500 m. miércoles 11 de noviembre: de 2610 m a 3520 m."
+     ]
+    },
+    {
+     "h": "La cota de nieve estación por estación",
+     "p": [
+      "Boí Taüll (base 2039 m, cima 2747 m): cota de nieve hasta unos 3100 m el 9 de noviembre, por encima de la cima: lluvia o nieve húmeda en toda la montaña si hay precipitación.",
+      "GrandValira (base 1674 m, cima 2619 m): cota de nieve hasta unos 3500 m el 9 de noviembre, por encima de la cima: lluvia o nieve húmeda en toda la montaña si hay precipitación.",
+      "Masella (base 1615 m, cima 2509 m): cota de nieve hasta unos 3200 m el 9 de noviembre, por encima de la cima: lluvia o nieve húmeda en toda la montaña si hay precipitación.",
+      "Espace Cambre d'Aze (base 1631 m, cima 2377 m): cota de nieve hasta unos 3300 m el 9 de noviembre, por encima de la cima: lluvia o nieve húmeda en toda la montaña si hay precipitación.",
+      "Astun (base 1659 m, cima 2272 m): cota de nieve hasta unos 3200 m el 9 de noviembre, por encima de la cima: lluvia o nieve húmeda en toda la montaña si hay precipitación."
+     ]
+    },
+    {
+     "h": "¿Lluvia sobre la nieve?",
+     "p": [
+      "Boí Taüll tiene unos 5 cm en la parte alta, y el 9 de noviembre, 10 de noviembre y 11 de noviembre la cota de nieve queda por encima de media montaña: la lluvia sobre esa nieve la volvería pesada y húmeda, y helada al volver a congelarse.",
+      "GrandValira tiene unos 15 cm en la parte alta, y el 9 de noviembre, 10 de noviembre y 11 de noviembre la cota de nieve queda por encima de media montaña: la lluvia sobre esa nieve la volvería pesada y húmeda, y helada al volver a congelarse.",
+      "Masella tiene unos 17 cm en la parte alta, y el 9 de noviembre, 10 de noviembre y 11 de noviembre la cota de nieve queda por encima de media montaña: la lluvia sobre esa nieve la volvería pesada y húmeda, y helada al volver a congelarse.",
+      "En Baqueira-Beret (2510 m) la previsión da 43 mm de precipitación; en las horas húmedas la cota de nieve ronda 2680 m.",
+      "En Saint-Lary (2515 m) la previsión da 55 mm de precipitación; en las horas húmedas la cota de nieve ronda 2850 m."
+     ]
+    },
+    {
+     "h": "Por qué la cota de nieve está por debajo de la isoterma de 0 °C",
+     "p": [
+      "El aire suele enfriarse con la altura. Los copos que bajan de la isoterma de 0 °C empiezan a fundirse y, como fundirse lleva tiempo, la nieve pasa a lluvia solo unos 300 m más abajo: es la cota de nieve. Con aire seco, la evaporación enfría la nieve que cae y la cota puede bajar aún más."
+     ]
+    }
+   ],
+   "advice": [
+    "Los días templados, esquía por la mañana en los remontes más altos y las laderas norte, antes de que la nieve se ablande.",
+    "La isoterma de 0 °C es una previsión y puede moverse varios cientos de metros: vuelve a mirar el mapa el día antes.",
+    "Antes de cualquier salida fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas en su web."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en los Pirineos el 8 de noviembre (modelo SnowScope) con las estaciones de este análisis y la altura de su cima."
+   }
+  },
+  "ar": {
+   "title": "شتا ولا تلج فجبال البرانس؟ الحد ديال التلج طالع ل 3500 م ف GrandValira (8 نونبر)",
+   "description": "التوقعات ديالنا كتحط علو 0 °C فجبال البرانس بين 2610 م و 3840 م فالأيام الجاية. فالساعات اللي سخونة كثر، الحد ديال التلج، تقريبا 300 م تحت، كيوصل ل …",
+   "lede": "التوقعات ديالنا كتحط علو 0 °C فجبال البرانس بين 2610 م و 3840 م فالأيام الجاية. فالساعات اللي سخونة كثر، الحد ديال التلج، تقريبا 300 م تحت، كيوصل ل 3500 م ف GrandValira نهار الاثنين 9 نونبر.",
+   "sections": [
+    {
+     "h": "علو 0 °C نهار بنهار",
+     "p": [
+      "علو 0 °C فوق المحطات اللي لتحت، من أبرد ساعة حتى ل أسخن ساعة فكل نهار: الاثنين 9 نونبر: من 2940 م حتى ل 3840 م. الثلاثاء 10 نونبر: من 2710 م حتى ل 3500 م. الأربعاء 11 نونبر: من 2610 م حتى ل 3520 م."
+     ]
+    },
+    {
+     "h": "الحد ديال التلج فكل محطة",
+     "p": [
+      "Boí Taüll (التحت 2039 م، الفوق 2747 م): الحد ديال التلج حتى ل تقريبا 3100 م نهار 9 نونبر، فوق القمة: شتا ولا تلج مبلول فالجبل كامل إلا طاحت الشتا.",
+      "GrandValira (التحت 1674 م، الفوق 2619 م): الحد ديال التلج حتى ل تقريبا 3500 م نهار 9 نونبر، فوق القمة: شتا ولا تلج مبلول فالجبل كامل إلا طاحت الشتا.",
+      "Masella (التحت 1615 م، الفوق 2509 م): الحد ديال التلج حتى ل تقريبا 3200 م نهار 9 نونبر، فوق القمة: شتا ولا تلج مبلول فالجبل كامل إلا طاحت الشتا.",
+      "Espace Cambre d'Aze (التحت 1631 م، الفوق 2377 م): الحد ديال التلج حتى ل تقريبا 3300 م نهار 9 نونبر، فوق القمة: شتا ولا تلج مبلول فالجبل كامل إلا طاحت الشتا.",
+      "Astun (التحت 1659 م، الفوق 2272 م): الحد ديال التلج حتى ل تقريبا 3200 م نهار 9 نونبر، فوق القمة: شتا ولا تلج مبلول فالجبل كامل إلا طاحت الشتا."
+     ]
+    },
+    {
+     "h": "الشتا على التلج؟",
+     "p": [
+      "Boí Taüll فيها تقريبا 5 سم فالجهة الفوقانية، ونهار 9 نونبر، 10 نونبر و 11 نونبر الحد ديال التلج فوق الوسط ديال الجبل: الشتا على هاد التلج كتردو تقيل ومبلول، ومن بعد كيولي جليد ملي يجمد.",
+      "GrandValira فيها تقريبا 15 سم فالجهة الفوقانية، ونهار 9 نونبر، 10 نونبر و 11 نونبر الحد ديال التلج فوق الوسط ديال الجبل: الشتا على هاد التلج كتردو تقيل ومبلول، ومن بعد كيولي جليد ملي يجمد.",
+      "Masella فيها تقريبا 17 سم فالجهة الفوقانية، ونهار 9 نونبر، 10 نونبر و 11 نونبر الحد ديال التلج فوق الوسط ديال الجبل: الشتا على هاد التلج كتردو تقيل ومبلول، ومن بعد كيولي جليد ملي يجمد.",
+      "ف Baqueira-Beret (2510 م) التوقعات كتعطي 43 مم ديال الشتا؛ فالساعات اللي فيها الشتا الحد ديال التلج قريب من 2680 م.",
+      "ف Saint-Lary (2515 م) التوقعات كتعطي 55 مم ديال الشتا؛ فالساعات اللي فيها الشتا الحد ديال التلج قريب من 2850 م."
+     ]
+    },
+    {
+     "h": "علاش الحد ديال التلج تحت علو 0 °C",
+     "p": [
+      "الهوا عادة كيبرد كل ما طلعتي. التلج اللي كيهبط تحت علو 0 °C كيبدا يدوب، وحيت الذوبان كياخد الوقت، التلج كيولي شتا غير تقريبا 300 م لتحت: هادا هو الحد ديال التلج. فالهوا الناشف، التبخر كيبرد التلج اللي طايح والحد يقدر يهبط كثر."
+     ]
+    }
+   ],
+   "advice": [
+    "فالأيام السخونين، تزلج فالصباح فالتيليسييجات اللي فالفوق وفالجهات اللي كتشوف للشمال، قبل ما يرطاب التلج.",
+    "علو 0 °C غير توقع ويقدر يتحرك بشي مئات ديال الميترات: عاود شوف الخريطة نهار قبل.",
+    "قبل أي خرجة برا البيست ولا جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديالها."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فجبال البرانس نهار 8 نونبر (الموديل ديال SnowScope) مع المحطات ديال هاد التحليل والعلو ديال القمة ديالهم."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "error": "gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.g"
+  },
+  "fr": {
+   "writer": "template"
+  },
+  "de": {
+   "writer": "template"
+  },
+  "it": {
+   "writer": "template"
+  },
+  "es": {
+   "writer": "template"
+  },
+  "ar": {
+   "writer": "template"
+  }
+ },
+ "words_en": 459,
+ "indexable": true,
+ "main": {
+  "slug": "boi_taull",
+  "name": "Boí Taüll",
+  "lat": 42.4725,
+  "lon": 0.8743
+ },
+ "places": [
+  {
+   "name": "Boí Taüll",
+   "lat": 42.4725,
+   "lon": 0.8743
+  },
+  {
+   "name": "GrandValira",
+   "lat": 42.5494,
+   "lon": 1.6695
+  },
+  {
+   "name": "Masella",
+   "lat": 42.3361,
+   "lon": 1.9023
+  },
+  {
+   "name": "Espace Cambre d'Aze",
+   "lat": 42.4733,
+   "lon": 2.1136
+  },
+  {
+   "name": "Astun",
+   "lat": 42.8042,
+   "lon": -0.4975
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "boi_taull",
+   "name": "Boí Taüll"
+  },
+  {
+   "slug": "grandvalira",
+   "name": "GrandValira"
+  },
+  {
+   "slug": "masella",
+   "name": "Masella"
+  },
+  {
+   "slug": "espace_cambre_d_aze",
+   "name": "Espace Cambre d'Aze"
+  },
+  {
+   "slug": "astun",
+   "name": "Astun"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "boi_taull",
+    "name": "Boí Taüll",
+    "depth": 5,
+    "new72": 0,
+    "next": 3,
+    "top_m": 2747
+   },
+   {
+    "slug": "grandvalira",
+    "name": "GrandValira",
+    "depth": 15,
+    "new72": 0,
+    "next": 0,
+    "top_m": 2619
+   },
+   {
+    "slug": "masella",
+    "name": "Masella",
+    "depth": 17,
+    "new72": 0,
+    "next": 0,
+    "top_m": 2509
+   },
+   {
+    "slug": "espace_cambre_d_aze",
+    "name": "Espace Cambre d'Aze",
+    "depth": 21,
+    "new72": 0,
+    "next": 0,
+    "top_m": 2377
+   },
+   {
+    "slug": "astun",
+    "name": "Astun",
+    "depth": 5,
+    "new72": 0,
+    "next": 0,
+    "top_m": 2272
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Météo-France / Meteocat / AEMET",
+   "url": "https://www.avalanches.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@42.472,0.874,9.0",
+ "seconds": 29.3,
+ "facts_used": 29,
+ "similarity": {
+  "max": 0.035,
+  "with": "pyrenees-fresh-snow-powder-alert-5-november-2026"
+ },
+ "publish_utc": "2026-11-08T20:51:32Z"
+}
