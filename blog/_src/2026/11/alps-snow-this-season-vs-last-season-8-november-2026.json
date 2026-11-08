@@ -1,0 +1,586 @@
+{
+ "id": "2026-11-08-alps-season",
+ "slug": "alps-snow-this-season-vs-last-season-8-november-2026",
+ "date": "2026-11-08",
+ "published_utc": "2026-11-08T21:49:35Z",
+ "updated_utc": "2026-11-08T21:49:35Z",
+ "region": "ALPS",
+ "angle": "season",
+ "score": 50,
+ "signature": "bonneval_sur_arc:-1|la_grave:-7|orelle:-6",
+ "keyword": {
+  "family": "vs-last-season",
+  "entity": "alps",
+  "region": "ALPS",
+  "date": "2026-11-08"
+ },
+ "tags": [
+  "past-winters",
+  "snow-depth",
+  "stations"
+ ],
+ "facts": {
+  "angle": "season_vs_last_season",
+  "region": "Alps",
+  "date": "2026-11-08",
+  "weekday": "Sunday",
+  "model_run": "2026-11-08",
+  "forecast_days": [
+   "2026-11-09",
+   "2026-11-10",
+   "2026-11-11"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 49170,
+   "resorts_with_snow": 883,
+   "resorts_in_region": 1178
+  },
+  "region_before": {
+   "date": "2026-11-06",
+   "snow_covered_area_km2": 52070,
+   "resorts_with_snow": 921
+  },
+  "region_forecast": {
+   "date": "2026-11-11",
+   "snow_covered_area_km2": 34600,
+   "resorts_with_snow": 687
+  },
+  "question": "Is there more or less snow than on the same date last winter, and why?",
+  "last_winter": "2025-26",
+  "same_date_last_winter": "2025-11-08",
+  "notes": [
+   "model values = SnowScope snow history at one height of each resort (an estimate for an area)",
+   "measured values = a snow station on the date given (one point), only where a station history exists",
+   "days with a gain of 10 cm or more = snowfall days this winter; days with a loss of 5 cm or more = melt, rain or wind"
+  ],
+  "measured_at_stations_today": [
+   {
+    "station": "Rosskar",
+    "elev_m": 2680,
+    "depth_cm_measured": 32,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-02",
+    "network": "euregio"
+   },
+   {
+    "station": "Plattkopf",
+    "elev_m": 2220,
+    "depth_cm_measured": 30,
+    "new_cm_measured_24h": 8,
+    "measured_on": "2026-11-02",
+    "network": "euregio"
+   },
+   {
+    "station": "Pian Camuno Roncaglia SCM2",
+    "elev_m": 600,
+    "depth_cm_measured": 26,
+    "new_cm_measured_24h": null,
+    "measured_on": "2026-11-01",
+    "network": "lombardia"
+   }
+  ],
+  "resorts": [
+   {
+    "name": "Bonneval-sur-Arc",
+    "slug": "bonneval_sur_arc",
+    "country": "France",
+    "top_m": 2948,
+    "base_m": 1794,
+    "height_m": 2371,
+    "model_cm_today_this_winter": 12,
+    "model_cm_same_date_last_winter": 17,
+    "last_winter": "2025-26",
+    "last_winter_peak_cm_model": 167,
+    "last_winter_peak_date": "2026-02-19",
+    "usual_cm_on_this_date_model": 16,
+    "this_winter_days_with_10cm_or_more_gain": 0,
+    "this_winter_days_with_5cm_or_more_loss": 0,
+    "this_winter_first_day_with_5cm": "2026-10-21",
+    "past_winters_compared": 46,
+    "difference_cm_vs_last_winter": -5
+   },
+   {
+    "name": "La Grave",
+    "slug": "la_grave",
+    "country": "France",
+    "top_m": 3543,
+    "base_m": 3196,
+    "height_m": 3369,
+    "model_cm_today_this_winter": 16,
+    "model_cm_same_date_last_winter": 84,
+    "last_winter": "2025-26",
+    "last_winter_peak_cm_model": 359,
+    "last_winter_peak_date": "2026-02-20",
+    "usual_cm_on_this_date_model": 39,
+    "this_winter_days_with_10cm_or_more_gain": 1,
+    "this_winter_days_with_5cm_or_more_loss": 0,
+    "this_winter_first_day_with_5cm": "2026-10-18",
+    "past_winters_compared": 46,
+    "difference_cm_vs_last_winter": -68
+   },
+   {
+    "name": "Orelle",
+    "slug": "orelle",
+    "country": "France",
+    "top_m": 3221,
+    "base_m": 2338,
+    "height_m": 2779,
+    "model_cm_today_this_winter": 1,
+    "model_cm_same_date_last_winter": 56,
+    "last_winter": "2025-26",
+    "last_winter_peak_cm_model": 269,
+    "last_winter_peak_date": "2026-02-20",
+    "usual_cm_on_this_date_model": 30,
+    "this_winter_days_with_10cm_or_more_gain": 0,
+    "this_winter_days_with_5cm_or_more_loss": 0,
+    "this_winter_first_day_with_5cm": "2026-10-20",
+    "past_winters_compared": 46,
+    "difference_cm_vs_last_winter": -55
+   },
+   {
+    "name": "Les Deux Alpes",
+    "slug": "les_deux_alpes",
+    "country": "France",
+    "top_m": 3511,
+    "base_m": 1284,
+    "height_m": 2397,
+    "model_cm_today_this_winter": 0,
+    "model_cm_same_date_last_winter": 15,
+    "last_winter": "2025-26",
+    "last_winter_peak_cm_model": 246,
+    "last_winter_peak_date": "2026-02-20",
+    "usual_cm_on_this_date_model": 15,
+    "this_winter_days_with_10cm_or_more_gain": 0,
+    "this_winter_days_with_5cm_or_more_loss": 0,
+    "this_winter_first_day_with_5cm": "2026-10-23",
+    "past_winters_compared": 46,
+    "difference_cm_vs_last_winter": -15
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/alps-snow-this-season-vs-last-season-8-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/alps-snow-this-season-vs-last-season-8-november-2026/map_t.webp",
+   "bytes": 56182
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "More snow than last winter in the Alps? 0 of 4 resorts ahead (8 November)",
+   "description": "Is there more snow than a year ago? We compared today with 8 November last winter at 4 resorts in the Alps: 0 of them have more snow now, according …",
+   "lede": "Is there more snow than a year ago? We compared today with 8 November last winter at 4 resorts in the Alps: 0 of them have more snow now, according to our snow model. The biggest change is at La Grave: 16 cm today against 84 cm a year ago.",
+   "sections": [
+    {
+     "h": "Resort by resort",
+     "p": [
+      "Bonneval-sur-Arc, at 2,371 m: 12 cm today, less than the 17 cm of 8 November last winter. The usual depth for the date is 16 cm.",
+      "La Grave, at 3,369 m: 16 cm today, less than the 84 cm of 8 November last winter. The usual depth for the date is 39 cm.",
+      "Orelle, at 2,779 m: 1 cm today, less than the 56 cm of 8 November last winter. The usual depth for the date is 30 cm.",
+      "Les Deux Alpes, at 2,397 m: 0 cm today, less than the 15 cm of 8 November last winter. The usual depth for the date is 15 cm."
+     ]
+    },
+    {
+     "h": "What the stations measured",
+     "p": [
+      "The Rosskar station (2,680 m) measured 32 cm on 2 November.",
+      "The Plattkopf station (2,220 m) measured 30 cm on 2 November."
+     ]
+    },
+    {
+     "h": "Why the difference",
+     "p": [
+      "At Bonneval-sur-Arc this winter so far, our model counts 0 days with a snowfall gain of 10 cm or more and 0 days that lost 5 cm or more to melt, rain or wind. The first 5 cm came on 21 October.",
+      "At La Grave this winter so far, our model counts 1 days with a snowfall gain of 10 cm or more and 0 days that lost 5 cm or more to melt, rain or wind. The first 5 cm came on 18 October.",
+      "At Orelle this winter so far, our model counts 0 days with a snowfall gain of 10 cm or more and 0 days that lost 5 cm or more to melt, rain or wind. The first 5 cm came on 20 October.",
+      "Early in the winter, one storm more or less makes the whole difference: these gaps say little about how the rest of the season will go."
+     ]
+    },
+    {
+     "h": "Last winter in numbers",
+     "p": [
+      "Bonneval-sur-Arc: last winter (2025-26) peaked at 167 cm on 19 February at this height.",
+      "La Grave: last winter (2025-26) peaked at 359 cm on 20 February at this height.",
+      "Orelle: last winter (2025-26) peaked at 269 cm on 20 February at this height."
+     ]
+    }
+   ],
+   "advice": [
+    "A better start than last year is no promise for the holidays: watch the forecast, not only the snow already on the ground.",
+    "Model values describe an area at one height; a station measures one point. Read both before you decide.",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below)."
+   ],
+   "captions": {
+    "map": "Snow depth in the Alps on 8 November (SnowScope snow model) at the resorts compared with last winter."
+   }
+  },
+  "fr": {
+   "title": "Plus de neige que l'hiver dernier dans les Alpes ? 0 stations sur 4 devant (8 novembre)",
+   "description": "Y a-t-il plus de neige qu'il y a un an ? Nous avons comparé aujourd'hui avec le 8 novembre de l'hiver dernier dans 4 stations dans les Alpes : 0 ont …",
+   "lede": "Y a-t-il plus de neige qu'il y a un an ? Nous avons comparé aujourd'hui avec le 8 novembre de l'hiver dernier dans 4 stations dans les Alpes : 0 ont plus de neige maintenant, selon notre modèle de neige. Le plus grand écart est à La Grave : 16 cm aujourd'hui contre 84 cm il y a un an.",
+   "sections": [
+    {
+     "h": "Station par station",
+     "p": [
+      "Bonneval-sur-Arc, à 2 371 m : 12 cm aujourd'hui, moins que les 17 cm du 8 novembre l'hiver dernier. La hauteur habituelle à cette date est de 16 cm.",
+      "La Grave, à 3 369 m : 16 cm aujourd'hui, moins que les 84 cm du 8 novembre l'hiver dernier. La hauteur habituelle à cette date est de 39 cm.",
+      "Orelle, à 2 779 m : 1 cm aujourd'hui, moins que les 56 cm du 8 novembre l'hiver dernier. La hauteur habituelle à cette date est de 30 cm.",
+      "Les Deux Alpes, à 2 397 m : 0 cm aujourd'hui, moins que les 15 cm du 8 novembre l'hiver dernier. La hauteur habituelle à cette date est de 15 cm."
+     ]
+    },
+    {
+     "h": "Ce que mesurent les stations",
+     "p": [
+      "La station Rosskar (2 680 m) a mesuré 32 cm le 2 novembre.",
+      "La station Plattkopf (2 220 m) a mesuré 30 cm le 2 novembre."
+     ]
+    },
+    {
+     "h": "D'où vient l'écart",
+     "p": [
+      "À Bonneval-sur-Arc cet hiver, notre modèle compte jusqu'ici 0 jours avec un gain de 10 cm ou plus et 0 jours avec une perte de 5 cm ou plus (fonte, pluie ou vent). Les 5 premiers cm sont arrivés le 21 octobre.",
+      "À La Grave cet hiver, notre modèle compte jusqu'ici 1 jours avec un gain de 10 cm ou plus et 0 jours avec une perte de 5 cm ou plus (fonte, pluie ou vent). Les 5 premiers cm sont arrivés le 18 octobre.",
+      "À Orelle cet hiver, notre modèle compte jusqu'ici 0 jours avec un gain de 10 cm ou plus et 0 jours avec une perte de 5 cm ou plus (fonte, pluie ou vent). Les 5 premiers cm sont arrivés le 20 octobre.",
+      "En début d'hiver, une perturbation de plus ou de moins fait toute la différence : ces écarts disent peu de choses sur la suite de la saison."
+     ]
+    },
+    {
+     "h": "L'hiver dernier en chiffres",
+     "p": [
+      "Bonneval-sur-Arc : l'hiver dernier (2025-26) a culminé à 167 cm le 19 février à cette altitude.",
+      "La Grave : l'hiver dernier (2025-26) a culminé à 359 cm le 20 février à cette altitude.",
+      "Orelle : l'hiver dernier (2025-26) a culminé à 269 cm le 20 février à cette altitude."
+     ]
+    }
+   ],
+   "advice": [
+    "Un meilleur départ que l'an dernier ne garantit rien pour les vacances : suivez la prévision, pas seulement la neige au sol.",
+    "Les valeurs du modèle décrivent une zone à une altitude ; une station mesure un point. Lisez les deux avant de décider.",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates sur son site.",
+    "Avant toute sortie hors-piste ou en randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous)."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans les Alpes le 8 novembre (modèle SnowScope) dans les stations comparées à l'hiver dernier."
+   }
+  },
+  "de": {
+   "title": "Mehr Schnee als letzten Winter in den Alpen? 0 von 4 Skigebieten vorn (8. November)",
+   "description": "Liegt mehr Schnee als vor einem Jahr? Wir haben heute mit dem 8. November des letzten Winters in 4 Skigebieten in den Alpen verglichen: 0 davon haben …",
+   "lede": "Liegt mehr Schnee als vor einem Jahr? Wir haben heute mit dem 8. November des letzten Winters in 4 Skigebieten in den Alpen verglichen: 0 davon haben laut unserem Schneemodell jetzt mehr Schnee. Der größte Unterschied: La Grave mit heute 16 cm gegen 84 cm vor einem Jahr.",
+   "sections": [
+    {
+     "h": "Skigebiet für Skigebiet",
+     "p": [
+      "Bonneval-sur-Arc, auf 2.371 m: heute 12 cm, weniger als die 17 cm vom 8. November letzten Winter. Üblich für das Datum sind 16 cm.",
+      "La Grave, auf 3.369 m: heute 16 cm, weniger als die 84 cm vom 8. November letzten Winter. Üblich für das Datum sind 39 cm.",
+      "Orelle, auf 2.779 m: heute 1 cm, weniger als die 56 cm vom 8. November letzten Winter. Üblich für das Datum sind 30 cm.",
+      "Les Deux Alpes, auf 2.397 m: heute 0 cm, weniger als die 15 cm vom 8. November letzten Winter. Üblich für das Datum sind 15 cm."
+     ]
+    },
+    {
+     "h": "Was die Stationen gemessen haben",
+     "p": [
+      "Die Station Rosskar (2.680 m) maß am 2. November 32 cm.",
+      "Die Station Plattkopf (2.220 m) maß am 2. November 30 cm."
+     ]
+    },
+    {
+     "h": "Woher der Unterschied kommt",
+     "p": [
+      "In Bonneval-sur-Arc zählt unser Modell diesen Winter bisher 0 Tage mit 10 cm Zuwachs oder mehr und 0 Tage mit 5 cm Verlust oder mehr durch Schmelze, Regen oder Wind. Die ersten 5 cm kamen am 21. Oktober.",
+      "In La Grave zählt unser Modell diesen Winter bisher 1 Tage mit 10 cm Zuwachs oder mehr und 0 Tage mit 5 cm Verlust oder mehr durch Schmelze, Regen oder Wind. Die ersten 5 cm kamen am 18. Oktober.",
+      "In Orelle zählt unser Modell diesen Winter bisher 0 Tage mit 10 cm Zuwachs oder mehr und 0 Tage mit 5 cm Verlust oder mehr durch Schmelze, Regen oder Wind. Die ersten 5 cm kamen am 20. Oktober.",
+      "Früh im Winter macht ein Sturm mehr oder weniger den ganzen Unterschied: Diese Abstände sagen wenig über den Rest der Saison."
+     ]
+    },
+    {
+     "h": "Der letzte Winter in Zahlen",
+     "p": [
+      "Bonneval-sur-Arc: Letzter Winter (2025-26) erreichte auf dieser Höhe am 19. Februar sein Maximum mit 167 cm.",
+      "La Grave: Letzter Winter (2025-26) erreichte auf dieser Höhe am 20. Februar sein Maximum mit 359 cm.",
+      "Orelle: Letzter Winter (2025-26) erreichte auf dieser Höhe am 20. Februar sein Maximum mit 269 cm."
+     ]
+    }
+   ],
+   "advice": [
+    "Ein besserer Start als im Vorjahr ist kein Versprechen für die Ferien: Beobachte die Prognose, nicht nur den Schnee, der schon liegt.",
+    "Modellwerte beschreiben eine Fläche auf einer Höhe; eine Station misst einen Punkt. Lies beides, bevor du entscheidest.",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Termine auf seiner Website.",
+    "Lies vor jedem Tag abseits der Piste oder auf Tour den offiziellen Lawinenlagebericht (Links unten)."
+   ],
+   "captions": {
+    "map": "Schneehöhe in den Alpen am 8. November (SnowScope-Modell) in den mit dem letzten Winter verglichenen Skigebieten."
+   }
+  },
+  "it": {
+   "title": "Più neve dell'inverno scorso sulle Alpi? 0 località su 4 avanti (8 novembre)",
+   "description": "C'è più neve di un anno fa? Abbiamo confrontato oggi con il 8 novembre dell'inverno scorso in 4 località sulle Alpi: 0 hanno più neve ora, secondo il …",
+   "lede": "C'è più neve di un anno fa? Abbiamo confrontato oggi con il 8 novembre dell'inverno scorso in 4 località sulle Alpi: 0 hanno più neve ora, secondo il nostro modello neve. La differenza maggiore è a La Grave: 16 cm oggi contro 84 cm un anno fa.",
+   "sections": [
+    {
+     "h": "Località per località",
+     "p": [
+      "Bonneval-sur-Arc, a 2.371 m: 12 cm oggi, meno che i 17 cm del 8 novembre dell'inverno scorso. L'altezza abituale per la data è 16 cm.",
+      "La Grave, a 3.369 m: 16 cm oggi, meno che i 84 cm del 8 novembre dell'inverno scorso. L'altezza abituale per la data è 39 cm.",
+      "Orelle, a 2.779 m: 1 cm oggi, meno che i 56 cm del 8 novembre dell'inverno scorso. L'altezza abituale per la data è 30 cm.",
+      "Les Deux Alpes, a 2.397 m: 0 cm oggi, meno che i 15 cm del 8 novembre dell'inverno scorso. L'altezza abituale per la data è 15 cm."
+     ]
+    },
+    {
+     "h": "Cosa misurano le stazioni",
+     "p": [
+      "La stazione Rosskar (2.680 m) ha misurato 32 cm il 2 novembre.",
+      "La stazione Plattkopf (2.220 m) ha misurato 30 cm il 2 novembre."
+     ]
+    },
+    {
+     "h": "Da dove viene la differenza",
+     "p": [
+      "A Bonneval-sur-Arc quest'inverno il nostro modello conta finora 0 giorni con un aumento di 10 cm o più e 0 giorni con una perdita di 5 cm o più per fusione, pioggia o vento. I primi 5 cm sono arrivati il 21 ottobre.",
+      "A La Grave quest'inverno il nostro modello conta finora 1 giorni con un aumento di 10 cm o più e 0 giorni con una perdita di 5 cm o più per fusione, pioggia o vento. I primi 5 cm sono arrivati il 18 ottobre.",
+      "A Orelle quest'inverno il nostro modello conta finora 0 giorni con un aumento di 10 cm o più e 0 giorni con una perdita di 5 cm o più per fusione, pioggia o vento. I primi 5 cm sono arrivati il 20 ottobre.",
+      "A inizio inverno una perturbazione in più o in meno fa tutta la differenza: questi scarti dicono poco sul resto della stagione."
+     ]
+    },
+    {
+     "h": "L'inverno scorso in cifre",
+     "p": [
+      "Bonneval-sur-Arc: l'inverno scorso (2025-26) ha toccato il massimo di 167 cm il 19 febbraio a questa quota.",
+      "La Grave: l'inverno scorso (2025-26) ha toccato il massimo di 359 cm il 20 febbraio a questa quota.",
+      "Orelle: l'inverno scorso (2025-26) ha toccato il massimo di 269 cm il 20 febbraio a questa quota."
+     ]
+    }
+   ],
+   "advice": [
+    "Un inizio migliore dell'anno scorso non è una promessa per le vacanze: segui la previsione, non solo la neve già a terra.",
+    "I valori del modello descrivono un'area a una quota; una stazione misura un punto. Leggi entrambi prima di decidere.",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date sul suo sito.",
+    "Prima di ogni uscita in fuoripista o scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto)."
+   ],
+   "captions": {
+    "map": "Altezza neve sulle Alpi il 8 novembre (modello SnowScope) nelle località confrontate con l'inverno scorso."
+   }
+  },
+  "es": {
+   "title": "¿Más nieve que el invierno pasado en los Alpes? 0 de 4 estaciones por delante (8 de noviembre)",
+   "description": "¿Hay más nieve que hace un año? Comparamos hoy con el 8 de noviembre del invierno pasado en 4 estaciones en los Alpes: 0 tienen más nieve ahora, …",
+   "lede": "¿Hay más nieve que hace un año? Comparamos hoy con el 8 de noviembre del invierno pasado en 4 estaciones en los Alpes: 0 tienen más nieve ahora, según nuestro modelo de nieve. La mayor diferencia está en La Grave: 16 cm hoy frente a 84 cm hace un año.",
+   "sections": [
+    {
+     "h": "Estación por estación",
+     "p": [
+      "Bonneval-sur-Arc, a 2371 m: 12 cm hoy, menos que los 17 cm del 8 de noviembre del invierno pasado. Lo habitual para la fecha es 16 cm.",
+      "La Grave, a 3369 m: 16 cm hoy, menos que los 84 cm del 8 de noviembre del invierno pasado. Lo habitual para la fecha es 39 cm.",
+      "Orelle, a 2779 m: 1 cm hoy, menos que los 56 cm del 8 de noviembre del invierno pasado. Lo habitual para la fecha es 30 cm.",
+      "Les Deux Alpes, a 2397 m: 0 cm hoy, menos que los 15 cm del 8 de noviembre del invierno pasado. Lo habitual para la fecha es 15 cm."
+     ]
+    },
+    {
+     "h": "Lo que miden las estaciones",
+     "p": [
+      "La estación Rosskar (2680 m) midió 32 cm el 2 de noviembre.",
+      "La estación Plattkopf (2220 m) midió 30 cm el 2 de noviembre."
+     ]
+    },
+    {
+     "h": "De dónde viene la diferencia",
+     "p": [
+      "En Bonneval-sur-Arc este invierno, nuestro modelo cuenta hasta ahora 0 días con una ganancia de 10 cm o más y 0 días con una pérdida de 5 cm o más por fusión, lluvia o viento. Los primeros 5 cm llegaron el 21 de octubre.",
+      "En La Grave este invierno, nuestro modelo cuenta hasta ahora 1 días con una ganancia de 10 cm o más y 0 días con una pérdida de 5 cm o más por fusión, lluvia o viento. Los primeros 5 cm llegaron el 18 de octubre.",
+      "En Orelle este invierno, nuestro modelo cuenta hasta ahora 0 días con una ganancia de 10 cm o más y 0 días con una pérdida de 5 cm o más por fusión, lluvia o viento. Los primeros 5 cm llegaron el 20 de octubre.",
+      "Al principio del invierno, una borrasca más o menos lo cambia todo: estas diferencias dicen poco del resto de la temporada."
+     ]
+    },
+    {
+     "h": "El invierno pasado en cifras",
+     "p": [
+      "Bonneval-sur-Arc: el invierno pasado (2025-26) tuvo su máximo de 167 cm el 19 de febrero a esta altura.",
+      "La Grave: el invierno pasado (2025-26) tuvo su máximo de 359 cm el 20 de febrero a esta altura.",
+      "Orelle: el invierno pasado (2025-26) tuvo su máximo de 269 cm el 20 de febrero a esta altura."
+     ]
+    }
+   ],
+   "advice": [
+    "Un comienzo mejor que el año pasado no garantiza nada para las vacaciones: sigue la previsión, no solo la nieve que ya hay.",
+    "Los valores del modelo describen una zona a una altura; una estación mide un punto. Lee ambos antes de decidir.",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas en su web.",
+    "Antes de cualquier salida fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo)."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en los Alpes el 8 de noviembre (modelo SnowScope) en las estaciones comparadas con el invierno pasado."
+   }
+  },
+  "ar": {
+   "title": "تلج أكثر من الشتا اللي فاتت فجبال الألب؟ 0 محطات من 4 قدام (8 نونبر)",
+   "description": "واش كاين تلج أكثر من هادي عام؟ قارنّا اليوم مع 8 نونبر ديال الشتا اللي فاتت ف 4 محطات فجبال الألب: 0 منهم فيهم تلج أكثر دابا، حسب الموديل ديال التلج …",
+   "lede": "واش كاين تلج أكثر من هادي عام؟ قارنّا اليوم مع 8 نونبر ديال الشتا اللي فاتت ف 4 محطات فجبال الألب: 0 منهم فيهم تلج أكثر دابا، حسب الموديل ديال التلج ديالنا. أكبر فرق كاين ف La Grave: 16 سم اليوم مقابل 84 سم هادي عام.",
+   "sections": [
+    {
+     "h": "محطة بمحطة",
+     "p": [
+      "Bonneval-sur-Arc، على علو 2371 م: 12 سم اليوم، أقل من 17 سم ديال 8 نونبر فالشتا اللي فاتت. العادي فهاد التاريخ هو 16 سم.",
+      "La Grave، على علو 3369 م: 16 سم اليوم، أقل من 84 سم ديال 8 نونبر فالشتا اللي فاتت. العادي فهاد التاريخ هو 39 سم.",
+      "Orelle، على علو 2779 م: 1 سم اليوم، أقل من 56 سم ديال 8 نونبر فالشتا اللي فاتت. العادي فهاد التاريخ هو 30 سم.",
+      "Les Deux Alpes، على علو 2397 م: 0 سم اليوم، أقل من 15 سم ديال 8 نونبر فالشتا اللي فاتت. العادي فهاد التاريخ هو 15 سم."
+     ]
+    },
+    {
+     "h": "شنو قاسو المحطات",
+     "p": [
+      "محطة Rosskar (2680 م) قاست 32 سم نهار 2 نونبر.",
+      "محطة Plattkopf (2220 م) قاست 30 سم نهار 2 نونبر."
+     ]
+    },
+    {
+     "h": "منين جا الفرق",
+     "p": [
+      "ف Bonneval-sur-Arc هاد الشتا، الموديل ديالنا حسب حتى لدابا 0 أيام زاد فيهم التلج ب 10 سم ولا كثر و 0 أيام نقص فيهم 5 سم ولا كثر بالذوبان، الشتا ولا الريح. أول 5 سم جات نهار 21 أكتوبر.",
+      "ف La Grave هاد الشتا، الموديل ديالنا حسب حتى لدابا 1 أيام زاد فيهم التلج ب 10 سم ولا كثر و 0 أيام نقص فيهم 5 سم ولا كثر بالذوبان، الشتا ولا الريح. أول 5 سم جات نهار 18 أكتوبر.",
+      "ف Orelle هاد الشتا، الموديل ديالنا حسب حتى لدابا 0 أيام زاد فيهم التلج ب 10 سم ولا كثر و 0 أيام نقص فيهم 5 سم ولا كثر بالذوبان، الشتا ولا الريح. أول 5 سم جات نهار 20 أكتوبر.",
+      "فبداية الشتا، عاصفة وحدة زايدة ولا ناقصة كتبدل كلشي: هاد الفروق ماكتقول والو بزاف على الباقي ديال الموسم."
+     ]
+    },
+    {
+     "h": "الشتا اللي فاتت بالأرقام",
+     "p": [
+      "Bonneval-sur-Arc: الشتا اللي فاتت (2025-26) وصلات للقمة ديالها ب 167 سم نهار 19 فبراير فهاد العلو.",
+      "La Grave: الشتا اللي فاتت (2025-26) وصلات للقمة ديالها ب 359 سم نهار 20 فبراير فهاد العلو.",
+      "Orelle: الشتا اللي فاتت (2025-26) وصلات للقمة ديالها ب 269 سم نهار 20 فبراير فهاد العلو."
+     ]
+    }
+   ],
+   "advice": [
+    "بداية أحسن من العام اللي فات ماشي ضمانة للعطلة: تبع التوقعات، ماشي غير التلج اللي كاين فالأرض.",
+    "الأرقام ديال الموديل كتوصف منطقة فعلو واحد؛ المحطة كتقيس نقطة وحدة. قرا بجوج قبل ما تقرر.",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديالها.",
+    "قبل أي خرجة برا البيست ولا جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت)."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فجبال الألب نهار 8 نونبر (الموديل ديال SnowScope) فالمحطات المقارنة مع الشتا اللي فاتت."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  },
+  "fr": {
+   "writer": "template"
+  },
+  "de": {
+   "writer": "template"
+  },
+  "it": {
+   "writer": "template"
+  },
+  "es": {
+   "writer": "template"
+  },
+  "ar": {
+   "writer": "template"
+  }
+ },
+ "words_en": 375,
+ "indexable": true,
+ "main": {
+  "slug": "bonneval_sur_arc",
+  "name": "Bonneval-sur-Arc",
+  "lat": 45.3614,
+  "lon": 7.0569
+ },
+ "places": [
+  {
+   "name": "Bonneval-sur-Arc",
+   "lat": 45.3614,
+   "lon": 7.0569
+  },
+  {
+   "name": "La Grave",
+   "lat": 45.0195,
+   "lon": 6.2771
+  },
+  {
+   "name": "Orelle",
+   "lat": 45.2542,
+   "lon": 6.5773
+  },
+  {
+   "name": "Les Deux Alpes",
+   "lat": 45.0083,
+   "lon": 6.15
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "bonneval_sur_arc",
+   "name": "Bonneval-sur-Arc"
+  },
+  {
+   "slug": "la_grave",
+   "name": "La Grave"
+  },
+  {
+   "slug": "orelle",
+   "name": "Orelle"
+  },
+  {
+   "slug": "les_deux_alpes",
+   "name": "Les Deux Alpes"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "bonneval_sur_arc",
+    "name": "Bonneval-sur-Arc",
+    "depth": 52,
+    "new72": 9,
+    "next": 11,
+    "top_m": 2948
+   },
+   {
+    "slug": "la_grave",
+    "name": "La Grave",
+    "depth": 50,
+    "new72": 12,
+    "next": 32,
+    "top_m": 3543
+   },
+   {
+    "slug": "orelle",
+    "name": "Orelle",
+    "depth": 48,
+    "new72": 8,
+    "next": 15,
+    "top_m": 3221
+   },
+   {
+    "slug": "les_deux_alpes",
+    "name": "Les Deux Alpes",
+    "depth": 47,
+    "new72": 8,
+    "next": 28,
+    "top_m": 3511
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "EAWS (Alps)",
+   "url": "https://www.avalanches.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@45.361,7.057,9.0",
+ "seconds": 0.0,
+ "facts_used": 24,
+ "similarity": {
+  "max": 0.042,
+  "with": "alps-snow-depth-today-4-november-2026"
+ },
+ "publish_utc": "2026-11-08T21:49:35Z"
+}
