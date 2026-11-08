@@ -24,6 +24,17 @@
   const NEW = [[1, [247, 252, 185]], [5, [199, 233, 180]], [10, [127, 205, 187]], [20, [65, 182, 196]], [30, [29, 145, 192]], [50, [34, 94, 168]], [80, [12, 44, 132]]];
   const WIND = [[0, [214, 236, 246]], [10, [158, 210, 226]], [20, [107, 191, 143]], [35, [242, 212, 92]], [50, [242, 155, 63]], [70, [224, 83, 58]], [100, [158, 31, 99]]];
   const FREEZE = [[0, [44, 62, 145]], [1000, [74, 120, 194]], [1500, [111, 168, 220]], [2000, [168, 213, 226]], [2500, [243, 231, 155]], [3000, [246, 178, 107]], [3500, [224, 102, 102]], [4500, [166, 28, 60]]];
+  // rain (owner 2026-11-07): pale aqua -> teal -> deep blue, no yellow so it never reads as the new-snow ramp; below
+  // 0.5 mm transparent. 48 h = the same colours on stops x1.5. Snow or rain: diverging teal (all rain) -> neutral
+  // grey (half and half) -> violet (all snow), drawn only where the day brings >= 1 mm (the server sends null elsewhere)
+  const RAIN = [[0.5, [214, 239, 235]], [2, [168, 222, 211]], [5, [102, 194, 176]], [10, [44, 160, 150]], [20, [19, 123, 134]], [40, [21, 89, 133]], [80, [27, 58, 115]], [150, [35, 26, 85]]];
+  const RAIN48 = RAIN.map(([v, c], i) => [i === 0 ? v : Math.round(v * 1.5), c]);
+  const PHASE = [[0, [0, 121, 107]], [25, [102, 194, 164]], [50, [226, 223, 216]], [75, [169, 160, 222]], [100, [84, 39, 143]]];
+  const FIELD_MODES = ["wind", "freeze", "rain", "phase"];
+  const FIELD_NAME = { wind: "Wind", freeze: "Freezing level", rain: "Rain", phase: "Snow or rain" };
+  // field domains (/v1/fields/{domain}) by map region; ATLAS has none (the layers simply stay empty there)
+  const FIELD_DOM = { US_NE: "us_east" };
+  const rainS = (mm) => (U.us() ? (mm / 25.4 < 0.995 ? (Math.round(mm / 25.4 * 10) / 10 || 0.1) : Math.round(mm / 25.4)) + "<small>in</small>" : (mm < 9.95 ? Math.round(mm * 10) / 10 : Math.round(mm)) + "<small>mm</small>");
   const AVAL = { 1: "#CCFF66", 2: "#FFFF00", 3: "#FF9900", 4: "#FF0000", 5: "#7A0000" };
   const AVAL_NAME = { 1: "Low", 2: "Moderate", 3: "Considerable", 4: "High", 5: "Very high" };
   const NAMES = { ALPS: "Alps", PYRENEES: "Pyrenees", US_WEST: "US West", US_NE: "US Northeast", ATLAS: "Atlas (Morocco)", SCANDES: "Scandinavia", CA_WEST: "Canada West" };
@@ -230,7 +241,7 @@
       } catch (e) { st.proIdx = null; st.proDates = null; if (e.down) toast("Pro data is updating, try again in a minute.", 5000); }
     }
     if (!st.pro) {
-      if (["sat", "wind", "freeze"].includes(st.main)) st.main = "depth";
+      if (["sat", ...FIELD_MODES].includes(st.main)) st.main = "depth";
       st.nw = 1;
       if (!DATA.dates.includes(st.day)) st.day = DATA.today;
     }
@@ -378,7 +389,7 @@
   // ------------------------------------------------------------------ legend: scale + Clear / Sharp
   function drawLegend() {
     const L = $("legend");
-    if (L && !L.dataset.nwWired) { L.dataset.nwWired = "1"; L.addEventListener("click", (e) => { const b = e.target.closest("[data-nw]"); if (b) { e.stopPropagation(); setNw(+b.dataset.nw); } }); }
+    if (L && !L.dataset.nwWired) { L.dataset.nwWired = "1"; L.addEventListener("click", (e) => { const b = e.target.closest("[data-nw]"), rw = e.target.closest("[data-rw]"); if (b) { e.stopPropagation(); setNw(+b.dataset.nw); } if (rw) { e.stopPropagation(); setRainWin(+rw.dataset.rw); } }); }
     const mode = st.main;
     const when = st.day > DATA.today ? " · forecast" : "";
     const ramp = (title, stops, ticks) => "<b>" + title + when + '</b><div class="ramp">' + stops.map((s) => '<i style="background:rgb(' + s[1].join(",") + ')"></i>').join("") +
@@ -395,6 +406,11 @@
     } else if (mode === "sat") h = '<b>Latest clear view</b>' + (DATA.regions.find((r) => r.sat) ? '<small class="none" style="padding:0 0 4px;display:block">' + esc(I18N.t("Clear view up to") + " " + D(DATA.regions.find((r) => r.sat).sat.asof).toLocaleDateString(LOC, { day: "numeric", month: "short", timeZone: "UTC" })) + "</small>" : "") + '<div class="sw"><span><i style="background:#F6FAFF"></i>Snow</span><span><i style="background:#A0C4E4"></i>Patchy</span><span><i style="background:#96693E"></i>No snow</span><span><i style="background:#7D7D8A"></i>Cloud</span></div><div class="row2">';
     else if (mode === "wind") h = ramp("Wind at midday", WIND, [0, 20, 50, 100].map((v, i, a) => U.wv(v) + (i === a.length - 1 ? " " + U.wu() : ""))) + '<div class="row2">';
     else if (mode === "freeze") h = ramp("Freezing level", FREEZE, [0, 1500, 3000, 4500].map((v, i, a) => U.ev(v) + (i === a.length - 1 ? " " + U.eu() : ""))) + '<div class="row2">';
+    else if (mode === "rain") {
+      const w2 = st.nw === 2, rt = (mm) => (U.us() ? String(Math.round(mm / 25.4 * 10) / 10) : String(mm));
+      h = ramp(w2 ? "Rain, 48 h" : "Rain, 24 h", w2 ? RAIN48 : RAIN, (w2 ? [1, 15, 60, 225] : [1, 10, 40, 150]).map((v, i, a) => rt(v) + (i === a.length - 1 ? "+ " + (U.us() ? "in" : "mm") : ""))) +
+        '<div class="mini nwseg" role="group" aria-label="Rain period">' + [1, 2].map((w) => '<button data-rw="' + w + '" aria-pressed="' + ((st.nw === 2 ? 2 : 1) === w) + '">' + (w === 1 ? "24 h" : "48 h") + "</button>").join("") + '</div><div class="row2">';
+    } else if (mode === "phase") h = ramp("Snow or rain", PHASE, ["Rain", "50 %", "Snow"]) + '<div class="row2">';
     else if (mode === "radar") h = st.radarCol ? '<b>Rain & snow now</b><div class="ramp">' + st.radarCol.map((c) => '<i style="background:rgb(' + c.rgba.slice(0, 3).join(",") + ')"></i>').join("") +
       '</div><div class="ramp-l"><span>' + esc(I18N.t("Light rain or snow")) + "</span><span>" + esc(I18N.t("Heavy")) + '</span></div><div class="row2">' : "<b>Rain & snow now</b><div class=\"row2\">";
     // v2: Clear / Sharp only in the layers sheet
@@ -519,7 +535,7 @@
     clearMain();
     const mode = st.main;
     if (mode === "off") return;
-    if (mode === "wind" || mode === "freeze") { renderField(mode); return; }
+    if (FIELD_MODES.includes(mode)) { renderField(mode); return; }
     if (mode === "radar") { renderRadar(); return; }
     if (mode === "sat") { renderSat(); return; }
     if (isStatic(st.day) && !winTiles()) { renderStatic(); return; }
@@ -594,15 +610,19 @@
     else if (mode === "powder" && st.nw > 1 && !win) toast("No 48 h or 7-day snow for this day: showing 24 h");
   }
   async function renderField(kind) {
-    const v = kind === "wind" ? "wind" : "freezing_level", day = st.day, gen = st.gen;
+    const v = { wind: "wind", freeze: "freezing_level", rain: "rain", phase: "snow_ratio" }[kind], day = st.day, gen = st.gen;
+    const daily = kind === "rain" || kind === "phase";
     let any = false;
     await Promise.all(DATA.regions.map(async (r) => {
-      const dom = r.code.toLowerCase();
+      const dom = FIELD_DOM[r.code] || r.code.toLowerCase();
       try {
         const ix = st.fields[dom] || (st.fields[dom] = await SS.api("/v1/fields/" + dom + "/index"));
-        // midday by default; the timeline's hour row (expert.js) sets st.hour (0..23 UTC) for 3-hour steps
+        if (daily && !(ix.vars || []).includes(v)) return;
+        // midday by default; the timeline's hour row (expert.js) sets st.hour (0..23 UTC) for 3-hour steps.
+        // Rain / snow or rain are daily: the index of the UTC day in ix.days
         let best = -1, bd = 1e18; const want = Date.parse(day + "T" + String(st.hour == null ? 12 : st.hour).padStart(2, "0") + ":00:00Z");
-        ix.times.forEach((t, i) => { const d = Math.abs(Date.parse(t) - want); if (d < bd && d <= 9 * 3600e3) { bd = d; best = i; } });
+        if (daily) best = (ix.days || []).indexOf(day);
+        else ix.times.forEach((t, i) => { const d = Math.abs(Date.parse(t) - want); if (d < bd && d <= 9 * 3600e3) { bd = d; best = i; } });
         if (best < 0) return;
         const key = dom + "/" + v + "/" + best;
         const f = st.fields[key] || (st.fields[key] = await SS.api("/v1/fields/" + dom + "/" + v + "/" + best + ".json"));
@@ -613,25 +633,41 @@
         any = true;
       } catch (e) { if (e.down) toast("Pro data is updating, try again in a minute."); }
     }));
-    if (!any && gen === st.gen) toast("No " + (kind === "wind" ? "wind" : "freezing level") + " forecast for this day");
+    if (!any && gen === st.gen) toast(I18N.t(kind === "rain" ? "No rain forecast for this day" : kind === "phase" ? "No snow or rain forecast for this day" : kind === "wind" ? "No wind forecast for this day" : "No freezing level forecast for this day"));
   }
   function fieldVal(f, kind, r, c) {
     if (kind === "wind") { const u = f.u[r] && f.u[r][c], v = f.v[r] && f.v[r][c]; return u == null || v == null ? null : Math.hypot(u, v) * 3.6; }
+    if (kind === "rain") { const a = st.nw === 2 && f.mm48 ? f.mm48 : f.mm, x = a[r] && a[r][c]; return x == null ? null : x; }
+    if (kind === "phase") { const x = f.pct[r] && f.pct[r][c]; return x == null ? null : x; }
     const z = f.z[r] && f.z[r][c]; return z == null ? null : z;
   }
   function fieldPicture(ix, f, kind) {
     const nx = ix.lon.length, ny = ix.lat.length, dl = Math.abs(ix.lon[1] - ix.lon[0]) || 0.25, dt = Math.abs(ix.lat[0] - ix.lat[1]) || 0.25;
     const W = ix.lon[0] - dl / 2, E = ix.lon[nx - 1] + dl / 2, N = ix.lat[0] + dt / 2, S = ix.lat[ny - 1] - dt / 2;
     const k = 6, w = nx * k, h = ny * k, cv = document.createElement("canvas"); cv.width = w; cv.height = h;
-    const ctx = cv.getContext("2d"), im = ctx.createImageData(w, h), yN = mercY(N), yS = mercY(S), stops = kind === "wind" ? WIND : FREEZE;
+    const ctx = cv.getContext("2d"), im = ctx.createImageData(w, h), yN = mercY(N), yS = mercY(S), stops = { wind: WIND, freeze: FREEZE, rain: st.nw === 2 ? RAIN48 : RAIN, phase: PHASE }[kind];
     for (let y = 0; y < h; y++) {
       const la = (2 * Math.atan(Math.exp(yN - (y + 0.5) / h * (yN - yS))) - Math.PI / 2) * 180 / Math.PI;
       const fr = Math.min(ny - 1.001, Math.max(0, (ix.lat[0] - la) / dt));
       for (let x = 0; x < w; x++) {
         const fc = Math.min(nx - 1.001, Math.max(0, (x + 0.5) / k - 0.5)), r0 = Math.floor(fr), c0 = Math.floor(fc), tr = fr - r0, tc = fc - c0;
         const q = [fieldVal(f, kind, r0, c0), fieldVal(f, kind, r0, c0 + 1), fieldVal(f, kind, r0 + 1, c0), fieldVal(f, kind, r0 + 1, c0 + 1)];
-        if (q.some((v) => v == null)) continue;
-        const v = q[0] * (1 - tr) * (1 - tc) + q[1] * (1 - tr) * tc + q[2] * tr * (1 - tc) + q[3] * tr * tc, col = rampAt(stops, v), o = (y * w + x) * 4;
+        const wq = [(1 - tr) * (1 - tc), (1 - tr) * tc, tr * (1 - tc), tr * tc];
+        let v;
+        if (kind === "phase") {
+          // smooth edges: the 1 mm mask is the interpolated day total, the share the mean of the corners that have one
+          const m = [f.mm[r0] && f.mm[r0][c0], f.mm[r0] && f.mm[r0][c0 + 1], f.mm[r0 + 1] && f.mm[r0 + 1][c0], f.mm[r0 + 1] && f.mm[r0 + 1][c0 + 1]];
+          if (m.some((z) => z == null) || m.reduce((s2, z, k2) => s2 + z * wq[k2], 0) < (f.min_mm || 1)) continue;
+          let sw = 0, sv = 0;
+          q.forEach((z, k2) => { if (z != null) { sw += wq[k2]; sv += z * wq[k2]; } });
+          if (sw <= 0) continue;
+          v = sv / sw;
+        } else {
+          if (q.some((z) => z == null)) continue;
+          v = q[0] * wq[0] + q[1] * wq[1] + q[2] * wq[2] + q[3] * wq[3];
+        }
+        const col = rampAt(stops, v), o = (y * w + x) * 4;
+        if (kind === "rain" && v < stops[0][0]) continue;          // dry: transparent
         im.data[o] = col[0]; im.data[o + 1] = col[1]; im.data[o + 2] = col[2]; im.data[o + 3] = 190;
       }
     }
@@ -1213,13 +1249,22 @@
     const when = st.day === DATA.today ? "Today" : longDay(st.day);
     const r = regionAt(ll), mode = st.main;
     let h = "";
-    if (mode === "wind" || mode === "freeze") {
+    if (FIELD_MODES.includes(mode)) {
       const cur = Object.values(st.fields).find((x) => x && x.ix && x.kind === mode && ll.lng >= x.ix.lon[0] - 0.125 && ll.lng <= x.ix.lon[x.ix.lon.length - 1] + 0.125 && ll.lat <= x.ix.lat[0] + 0.125 && ll.lat >= x.ix.lat[x.ix.lat.length - 1] - 0.125);
       if (cur) {
         const c = Math.round((ll.lng - cur.ix.lon[0]) / 0.25), rr = Math.round((cur.ix.lat[0] - ll.lat) / 0.25), v = fieldVal(cur.f, mode, rr, c);
         if (v != null && mode === "wind") {
           const dir = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"][Math.round(((Math.atan2(-cur.f.u[rr][c], -cur.f.v[rr][c]) * 180 / Math.PI) + 360) % 360 / 45) % 8];
           h = '<span class="k">Wind at midday · ' + when + '</span><span class="big">' + U.wv(v) + '<small>' + U.wu() + '</small></span><div class="line">from the ' + dir + "</div>";
+        } else if (mode === "rain") {
+          const v1 = cur.f.mm[rr] && cur.f.mm[rr][c], v2 = cur.f.mm48 && cur.f.mm48[rr] && cur.f.mm48[rr][c], w2 = st.nw === 2 && v2 != null;
+          const x = w2 ? v2 : v1;
+          if (x != null) h = '<span class="k">' + (w2 ? "Rain, 48 h" : "Rain, 24 h") + " · " + when + "</span>" + (x >= 0.5 ? '<span class="big">' + rainS(x) + "</span>" : '<div class="line"><b>' + esc(I18N.t("No rain")) + "</b></div>") +
+            (!w2 && v2 != null && v2 >= 0.5 ? '<div class="line">' + esc(I18N.t("Over 48 h")) + ": " + rainS(v2).replace(/<\/?small>/g, " ") + "</div>" : "");
+        } else if (mode === "phase") {
+          const tot = cur.f.mm[rr] && cur.f.mm[rr][c];
+          if (tot != null) h = '<span class="k">Snow or rain · ' + when + '</span>' + (v != null ? '<span class="big">' + Math.round(v) + "<small>% " + esc(I18N.t("snow")) + "</small></span>" : '<div class="line"><b>' + esc(I18N.t("Almost dry")) + "</b> · " + esc(I18N.t("Less than 1 mm of rain or snow")) + "</div>") +
+            (v != null ? '<div class="line">' + esc(I18N.t("Rain and snow (as water)")) + ": " + rainS(tot).replace(/<\/?small>/g, " ") + "</div>" : "");
         } else if (v != null) h = '<span class="k">Freezing level · ' + when + '</span><span class="big">' + U.ev(v) + "<small>" + U.eu() + "</small></span>";
       }
     } else if (mode === "sat") {
@@ -1281,6 +1326,7 @@
     const tile = ([id, name, sw, pro]) => '<button class="tile" data-main="' + id + '" aria-pressed="' + (st.main === id) + '"><div class="sw2" style="background:' + sw + '"></div>' +
       (pro && !st.pro ? '<span class="pro"><span class="ms f">lock</span>PRO</span>' : "") + "<span>" + name + "</span></button>";
     const rows = [["wind", "Wind", "Around midday", "air", true, true], ["freeze", "Freezing level", U.us() ? "Where 32 °F sits" : "Where 0 °C sits", "device_thermostat", true, true],
+      ["rain", "Rain", "How much rain falls, per day or 48 h", "water_drop", true, true], ["phase", "Snow or rain", "How much of it falls as snow", "thermostat", true, true],
       ["radar", "Rain & snow radar", "Right now", "radar", false, true],
       ...(s30Enabled() ? [["s30", "Sharp 30 m", "The sharpest snow picture, where available", "grid_on"]] : []), ["stn", "Measured snow", "Snow depth measured at stations", "sensors"], ["pins", "Resorts", "Name and snow on each resort", "location_on"], ["stays", "Places to stay", "A stay chip on the resort in view · Partner", "hotel"], ["pistes", "Pistes & lifts", "Coloured by difficulty", "downhill_skiing"]];
     const row = ([id, name, sub, icon, pro, main]) => {
@@ -1311,14 +1357,14 @@
       } else if (o) {
         const id = o.dataset.over;
         if (o.getAttribute("aria-disabled") === "true") return;
-        if (["wind", "freeze"].includes(id) && !st.pro) { m.close(); SS.upsell(o.querySelector("b").firstChild.textContent.trim() + " is in Pro"); return; }
-        if (["wind", "freeze"].includes(id) && !proLive()) { toast("Pro data is updating, try again in a minute."); return; }
-        if (["wind", "freeze", "radar"].includes(id)) { setMain(st.main === id ? "depth" : id); }
+        if (FIELD_MODES.includes(id) && !st.pro) { m.close(); SS.upsell(o.querySelector("b").firstChild.textContent.trim() + " is in Pro"); return; }
+        if (FIELD_MODES.includes(id) && !proLive()) { toast("Pro data is updating, try again in a minute."); return; }
+        if ([...FIELD_MODES, "radar"].includes(id)) { setMain(st.main === id ? "depth" : id); }
         else if (id === "terrain") { st.terrain = !st.terrain; store.set("ss_terrain", st.terrain); applyTerrain(); }
         else { st.over[id] = !st.over[id]; if (id === "pistes") store.set("ss_pistes", st.over.pistes ? 1 : 0); if (id === "pins") drawPins(); else if (id === "stays") { store.set("ss_stays", st.over.stays ? 1 : 0); drawStays(); }
           else if (id === "stn") { store.set("ss_stn", st.over.stn ? 1 : 0); drawStations(); if (!st.slug && st.tab === "map") renderPanel(); }
           else if (id === "s30") { store.set("ss_s30", st.over.s30 ? 1 : 0); refreshS30(); } else applyOverlays(); drawLegend(); }
-        m.el.querySelectorAll("[data-over]").forEach((b) => { const x = b.dataset.over; b.setAttribute("aria-checked", ["wind", "freeze", "radar"].includes(x) ? st.main === x : x === "terrain" ? st.terrain : !!st.over[x]); });
+        m.el.querySelectorAll("[data-over]").forEach((b) => { const x = b.dataset.over; b.setAttribute("aria-checked", [...FIELD_MODES, "radar"].includes(x) ? st.main === x : x === "terrain" ? st.terrain : !!st.over[x]); });
         m.el.querySelectorAll("[data-main]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.main === st.main));
       } else if (sy) {
         st.style = sy.dataset.style; store.set("ss_style", st.style);
@@ -1345,6 +1391,11 @@
     if (st.tab === "powder") renderPanel();
     if (window.SSX) SSX.refresh();
   }
+  function setRainWin(w) {              // rain: 24 h or 48 h (the day + the day before), on any day the layer has
+    st.nw = w === 2 ? 2 : 1;
+    drawLegend(); renderMain();
+    if (window.SSX) SSX.refresh();
+  }
   function setMain(id) {
     st.main = id;
     if (id === "powder" && !st.pro && st.day !== DATA.today) st.day = DATA.today;
@@ -1355,10 +1406,10 @@
   }
   // one switch for every layer, used by the layers sheet, the layer rail (expert.js) and the keyboard
   function toggleOver(id) {
-    if (["wind", "freeze"].includes(id) && !st.pro) { SS.upsell({ wind: "Wind", freeze: "Freezing level" }[id] + " is in Pro"); return false; }
-    if (["wind", "freeze"].includes(id) && !proLive()) { toast("Pro data is updating, try again in a minute."); return false; }
+    if (FIELD_MODES.includes(id) && !st.pro) { SS.upsell(FIELD_NAME[id] + " is in Pro"); return false; }
+    if (FIELD_MODES.includes(id) && !proLive()) { toast("Pro data is updating, try again in a minute."); return false; }
     if (id === "radar" && st.radar === false) { toast("Radar is not available right now"); return false; }
-    if (["depth", "powder", "sat", "wind", "freeze", "radar"].includes(id)) { setMain(st.main === id && id !== "depth" ? "depth" : id); return true; }
+    if (["depth", "powder", "sat", ...FIELD_MODES, "radar"].includes(id)) { setMain(st.main === id && id !== "depth" ? "depth" : id); return true; }
     // new snow over 48 h / 7 days (expert keys 3 / W; "p72" = the former 3-day switch, now 48 h)
     if (id === "nw48" || id === "nw7" || id === "p72") { const w = id === "nw7" ? 7 : 2; setNw(st.nw === w && st.main === "powder" ? 1 : w); return true; }
     if (id === "terrain") { st.terrain = !st.terrain; store.set("ss_terrain", st.terrain); applyTerrain(); const b = $("btn3d"); if (b) b.setAttribute("aria-pressed", st.terrain); }

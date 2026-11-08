@@ -34,6 +34,8 @@
     { sep: true },
     { id: "wind", icon: "air", label: "Wind", key: "5", pro: true },
     { id: "freeze", icon: "device_thermostat", label: SS.U.us() ? "32 °F" : "0 °C", key: "6", pro: true },
+    { id: "rain", icon: "water_drop", label: "Rain", key: "r", pro: true },
+    { id: "phase", icon: "thermostat", label: "Snow or rain", key: "o", pro: true },
     { id: "radar", icon: "radar", label: "Radar", key: "7" },
     { sep: true },
     { id: "stn", icon: "sensors", label: "Measured", key: "8" },
@@ -196,7 +198,7 @@
 
   // ------------------------------------------------------------------ keyboard shortcuts
   const SHORTCUTS = [["←  →", "Previous / next day"], ["Shift + ←  →", "Previous / next hour"], ["Space", "Play / pause"], ["1 … 0", "Layers, in the order of the rail"],
-    ["A", "Avalanche danger"], ["T", "3D mountains"], ["L", "All layers"], ["F  or  /", "Find a resort"], ["D", "Light / dark"], ["Esc", "Close the panel"], ["?", "This list"]];
+    ["A", "Avalanche danger"], ["R", "Rain"], ["O", "Snow or rain"], ["T", "3D mountains"], ["L", "All layers"], ["F  or  /", "Find a resort"], ["D", "Light / dark"], ["Esc", "Close the panel"], ["?", "This list"]];
   function keyboard() {
     document.addEventListener("keydown", (e) => {
       if (e.metaKey || e.ctrlKey || e.altKey) return;
