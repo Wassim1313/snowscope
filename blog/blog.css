@@ -112,6 +112,9 @@ footer a{color:var(--ink3)}
 @media (max-width:640px){.top nav a.hs{display:none}.top .in{gap:8px}.brand{font-size:16px}.top nav a,.langs summary{padding:6px 7px;font-size:14px}
   .facts table{font-size:14px}.facts th,.facts td{padding:7px 4px}h2{font-size:21px}.lede{font-size:18px}}
 html,body{max-width:100%;overflow-x:hidden}
+/* phone header on one row (2026-11-09: brand + Snow reports + language + Get the app wrapped to 2-3 rows at 360-412 px);
+   the breadcrumb right under it already links the blog home */
+@media (max-width:460px){.top nav{flex-wrap:nowrap}.top nav>a:not(.app):not(.hs){display:none}.top nav a.app{white-space:nowrap}}
 /* categories / archive (2026-11-05) */
 .catnav a{display:inline-flex;align-items:center;gap:6px;font-weight:600}
 .catnav .ms,.subnav .ms{font-family:'Material Symbols Rounded';font-size:18px;line-height:1;color:var(--accent)}
