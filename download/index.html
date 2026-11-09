@@ -1,16 +1,51 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>Install SnowScope (test build)</title>
-<link rel="icon" href="../static/icon.svg"><link rel="stylesheet" href="../static/page.css"></head>
-<body><main class="doc" style="max-width:760px;margin:0 auto;padding:16px">
-<h1>Install SnowScope (test build)</h1>
-<p id="s">Finding the current download…</p>
-<p>If Android says <b>App not installed</b>, uninstall the Play test version first (different signature),
-then open this page again. Allow “install unknown apps” for your browser when asked.</p>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get SnowScope on Google Play · SnowScope</title>
+<meta name="description" content="SnowScope for Android: snow depth for 2,000+ ski resorts, powder alerts, snow line, 3D map and peak finder. Free on Google Play.">
+<link rel="canonical" href="https://snowscope.app/download/">
+<link rel="icon" href="../logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../icon-512.png">
+<meta property="og:title" content="SnowScope: Snow & Powder — on Google Play">
+<meta property="og:description" content="Snow depth for every resort, powder alerts and the 3D snow map. Free.">
+<meta property="og:image" content="https://snowscope.app/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..750&display=swap">
+<style>
+:root{--bg:#F4F6F9;--card:#FFFFFF;--ink:#0B1220;--ink2:#475569;--accent:#1463F3;--line:#D3DAE3}
+@media (prefers-color-scheme:dark){:root{--bg:#0A0F17;--card:#121A25;--ink:#F2F5F9;--ink2:#A6B1C2;--accent:#5C9DFF;--line:#2A3749}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;padding:16px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:20px;max-width:460px;width:100%;padding:32px 26px;text-align:center}
+.c img.i{width:84px;height:84px;border-radius:20px}h1{font-size:26px;margin:16px 0 6px}p{color:var(--ink2);line-height:1.5;margin:0 0 22px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:700;padding:14px 22px;border-radius:14px;font-size:17px}
+.btn svg{width:22px;height:22px}.s{margin-top:18px;font-size:14px}.s a{color:var(--accent)}
+[dir=rtl] .btn{flex-direction:row-reverse}
+</style>
+</head>
+<body>
+<main class="c">
+<img class="i" src="../icon-512.png" alt="SnowScope" width="84" height="84">
+<h1 id="h">SnowScope on your phone</h1>
+<p id="t">Snow depth for 2,000+ ski resorts, powder alerts, the snow line and the 3D snow map. Free on Google Play.</p>
+<a class="btn" id="b" href="https://play.google.com/store/apps/details?id=snowruler.app&amp;utm_source=snowscope.app&amp;utm_medium=download_page">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 1.8a1.5 1.5 0 0 0-.6 1.2v18a1.5 1.5 0 0 0 .6 1.2l10.1-10.2L3.6 1.8Zm11.5 11.6 2.6 2.6-11.8 6.8 9.2-9.4Zm3.9-4.1 3 1.7a1.2 1.2 0 0 1 0 2.1l-3.1 1.8-2.9-2.8 3-2.8ZM5.9 1.2l11.8 6.8-2.6 2.6L5.9 1.2Z"/></svg>
+<span id="bt">Get it on Google Play</span></a>
+<div class="s"><a id="w" href="../">Or open the snow map on the web →</a></div>
+</main>
 <script>
-fetch('../config.json', {cache: 'no-store'}).then(r => r.json()).then(c => {
-  const u = c.api.replace(/\/$/, '') + '/download/snowscope.apk';
-  document.getElementById('s').innerHTML = '<a href="' + u + '"><b>Download SnowScope APK</b></a>';
-  location.href = u;
-}).catch(() => { document.getElementById('s').textContent = 'Server offline - try again later.'; });
+(function(){
+var L={fr:["SnowScope sur votre téléphone","La neige de plus de 2 000 stations, les alertes poudreuse, la limite pluie-neige et la carte 3D. Gratuit sur Google Play.","Disponible sur Google Play","Ou ouvrir la carte de neige sur le web →"],
+de:["SnowScope auf dem Handy","Schneehöhen für über 2.000 Skigebiete, Pulverschnee-Alarme, Schneefallgrenze und die 3D-Schneekarte. Kostenlos bei Google Play.","Jetzt bei Google Play","Oder die Schneekarte im Web öffnen →"],
+it:["SnowScope sul telefono","Altezza neve per oltre 2.000 località, allerte powder, quota neve e mappa 3D. Gratis su Google Play.","Disponibile su Google Play","Oppure apri la mappa neve sul web →"],
+es:["SnowScope en tu móvil","Espesor de nieve de más de 2.000 estaciones, alertas de nieve polvo, cota de nieve y mapa 3D. Gratis en Google Play.","Disponible en Google Play","O abre el mapa de nieve en la web →"],
+ar:["SnowScope فالتيليفون ديالك","العلو ديال التلج فأكثر من 2000 محطة، التنبيهات، الحد ديال التلج والخريطة 3D. فابور ف Google Play.","حمّلو من Google Play","ولا حل الخريطة ديال التلج فالويب ←"]};
+var q=new URLSearchParams(location.search),lg=(q.get("lang")||navigator.language||"en").slice(0,2).toLowerCase(),x=L[lg];
+if(x){document.documentElement.lang=lg;if(lg==="ar")document.documentElement.dir="rtl";
+document.getElementById("h").textContent=x[0];document.getElementById("t").textContent=x[1];document.getElementById("bt").textContent=x[2];document.getElementById("w").textContent=x[3];
+document.getElementById("w").href="../?lang="+lg;}
+if(/Android/i.test(navigator.userAgent)&&!q.has("stay"))location.replace(document.getElementById("b").href);
+})();
 </script>
-<p><a href="../">← Snow map</a></p></main></body></html>
+</body>
+</html>
