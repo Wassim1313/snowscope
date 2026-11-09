@@ -14,6 +14,26 @@
   // columns: fr, de, it, es, ar
   const T = {
     "Units": ["Unités", "Einheiten", "Unità", "Unidades", "الوحدات"],
+    // lodging pins on the main map (OpenStreetMap places + Stay22 link), owner 2026-11-09
+    "Check prices": ["Voir les prix", "Preise prüfen", "Vedi i prezzi", "Ver precios", "شوف الأثمنة"],
+    "Hotel": ["Hôtel", "Hotel", "Hotel", "Hotel", "أوطيل"],
+    "Chalet": ["Chalet", "Chalet", "Chalet", "Chalet", "شالي"],
+    "Guest house": ["Maison d'hôtes", "Gästehaus", "Pensione", "Casa de huéspedes", "دار الضيافة"],
+    "Apartment": ["Appartement", "Ferienwohnung", "Appartamento", "Apartamento", "أبارتمان"],
+    "Hostel": ["Auberge de jeunesse", "Hostel", "Ostello", "Albergue", "أوبيرج"],
+    "Mountain hut": ["Refuge", "Berghütte", "Rifugio", "Refugio", "ملجأ فالجبل"],
+    // Stay22 mini-map before consent (EEA, two-click), owner 2026-11-09
+    "Show places to stay": ["Afficher les hébergements", "Unterkünfte anzeigen", "Mostra gli alloggi", "Mostrar alojamientos", "بيّن بلايص المبيت"],
+    "Open the list": ["Ouvrir la liste", "Liste öffnen", "Apri l'elenco", "Abrir la lista", "حل اللائحة"],
+    "The partner map uses cookies.": ["La carte du partenaire utilise des cookies.", "Die Partnerkarte verwendet Cookies.", "La mappa del partner usa i cookie.", "El mapa del socio usa cookies.", "الخريطة ديال الشريك كتستعمل الكوكيز."],
+    // geomarketing auto card on the map (app.js autoStays, owner 2026-11-09)
+    "Sleep near the best snow": ["Dormez près de la meilleure neige", "Übernachten beim besten Schnee", "Dormi vicino alla neve migliore", "Duerme cerca de la mejor nieve", "بات قريب من أحسن تلج"],
+    "Be there for the powder": ["Soyez là pour la poudreuse", "Sei beim Powder dabei", "Sii lì per la neve fresca", "Llega a tiempo para la nieve polvo", "كون تما ملي يطيح التلج الطري"],
+    "Stays": ["Hébergements", "Unterkünfte", "Alloggi", "Alojamiento", "المبيت"],
+    "Less": ["Moins", "Weniger", "Meno", "Menos", "قل"],
+    // house ad (fallback of every ad slot while AdSense does not fill, owner 2026-11-09)
+    "SnowScope for Android": ["SnowScope pour Android", "SnowScope für Android", "SnowScope per Android", "SnowScope para Android", "SnowScope ديال أندرويد"],
+    "Powder alerts and offline trip packs · free on Google Play": ["Alertes poudreuse et packs hors ligne · gratuit sur Google Play", "Powder-Alarme und Offline-Reisepakete · kostenlos bei Google Play", "Avvisi neve fresca e pacchetti offline · gratis su Google Play", "Alertas de nieve polvo y paquetes sin conexión · gratis en Google Play", "تنبيهات التلج الطري وباكات بلا أنترنيت · فابور ف Google Play"],
     // regional Pro (owner 2026-11-03): the Morocco lifetime = Pro for the High Atlas only (pricing page + upsell)
     "Skiing in Morocco? Pro for the High Atlas, for life": ["Vous skiez au Maroc ? Pro pour le Haut Atlas, à vie", "Skifahren in Marokko? Pro für den Hohen Atlas, für immer", "Sci in Marocco? Pro per l'Alto Atlante, a vita", "¿Esquías en Marruecos? Pro para el Alto Atlas, de por vida", "كتزلج فالمغرب؟ Pro ديال الأطلس الكبير، للأبد"],
     "Visitors in Morocco get SnowScope Pro for the High Atlas for life, with one payment of about 10 MAD, the price of a coffee (": ["Au Maroc, SnowScope Pro pour le Haut Atlas est à vie pour un seul paiement d'environ 10 MAD, le prix d'un café (", "Besucher in Marokko bekommen SnowScope Pro für den Hohen Atlas für immer, mit einer Zahlung von etwa 10 MAD, dem Preis eines Kaffees (", "Chi è in Marocco ha SnowScope Pro per l'Alto Atlante a vita, con un solo pagamento di circa 10 MAD, il prezzo di un caffè (", "Quien está en Marruecos tiene SnowScope Pro para el Alto Atlas de por vida, con un solo pago de unos 10 MAD, el precio de un café (", "الزوار اللي فالمغرب كياخدو SnowScope Pro ديال الأطلس الكبير للأبد، بخلصة وحدة ديال تقريبا 10 درهم، بثمن قهوة ("],
@@ -23,6 +43,12 @@
     "Your Pro covers the High Atlas. Get Pro everywhere": ["Votre Pro couvre le Haut Atlas. Passez à Pro partout", "Dein Pro gilt für den Hohen Atlas. Hol dir Pro überall", "Il tuo Pro copre l'Alto Atlante. Passa a Pro ovunque", "Tu Pro cubre el Alto Atlas. Consigue Pro en todas partes", "Pro ديالك كيغطي الأطلس الكبير. خود Pro فكل بلاصة"],
     "(Alps, Pyrenees, North America…) with a subscription.": ["(Alpes, Pyrénées, Amérique du Nord…) avec un abonnement.", "(Alpen, Pyrenäen, Nordamerika…) mit einem Abo.", "(Alpi, Pirenei, Nord America…) con un abbonamento.", "(Alpes, Pirineos, Norteamérica…) con una suscripción.", "(الألب، البيريني، أمريكا الشمالية…) باشتراك."],
     // freemium switch (owner 2026-11-03, docs/TIERS.md): the website is free; Pro = app-only (peak names, 3D videos, no ads)
+    // sales freeze (owner 2026-11-09, docs/TIERS.md): the only thing sold = the one-time SnowScope Pro in the Android app
+    "Everything on the website is free. In the Android app, SnowScope Pro names every peak around you, creates 3D videos and removes the ads: one payment, no subscription.": ["Tout le site est gratuit. Dans l'appli Android, SnowScope Pro nomme chaque sommet autour de vous, crée des vidéos 3D et retire la pub : un seul paiement, sans abonnement.", "Auf der Website ist alles kostenlos. In der Android-App benennt SnowScope Pro jeden Gipfel um dich herum, erstellt 3D-Videos und entfernt die Werbung: eine einmalige Zahlung, kein Abo.", "Sul sito è tutto gratis. Nell'app Android, SnowScope Pro dà un nome a ogni vetta intorno a te, crea video 3D e toglie la pubblicità: un solo pagamento, nessun abbonamento.", "Todo en la web es gratis. En la app Android, SnowScope Pro nombra cada cumbre a tu alrededor, crea vídeos 3D y quita los anuncios: un solo pago, sin suscripción.", "كلشي فالموقع فابور. فتطبيق أندرويد، SnowScope Pro كيسمّي كل قمة دايرة بيك، كيصاوب فيديوهات 3D وكيحيّد الإشهار: خلصة وحدة، بلا اشتراك."],
+    "One payment": ["Un seul paiement", "Einmalige Zahlung", "Un solo pagamento", "Un solo pago", "خلصة وحدة"],
+    "About $1 / €0.99, once, in the Android app (Google Play shows the price in your currency). No subscription.": ["Environ 1 $ / 0,99 €, une seule fois, dans l'appli Android (Google Play affiche le prix dans votre devise). Sans abonnement.", "Etwa 1 $ / 0,99 €, einmal, in der Android-App (Google Play zeigt den Preis in deiner Währung). Kein Abo.", "Circa 1 $ / 0,99 €, una volta sola, nell'app Android (Google Play mostra il prezzo nella tua valuta). Nessun abbonamento.", "Unos 1 $ / 0,99 €, una sola vez, en la app Android (Google Play muestra el precio en tu moneda). Sin suscripción.", "تقريبا 1 $ / 0,99 €، مرة وحدة، فتطبيق أندرويد (Google Play كيبيّن الثمن بالعملة ديالك). بلا اشتراك."],
+    "(Alps, Pyrenees, North America…) with one payment in the app.": ["(Alpes, Pyrénées, Amérique du Nord…) avec un seul paiement dans l'appli.", "(Alpen, Pyrenäen, Nordamerika…) mit einer einmaligen Zahlung in der App.", "(Alpi, Pirenei, Nord America…) con un solo pagamento nell'app.", "(Alpes, Pirineos, Norteamérica…) con un solo pago en la app.", "(الألب، البيريني، أمريكا الشمالية…) بخلصة وحدة فالتطبيق."],
+    "Every peak named, 3D videos, no ads · one payment": ["Chaque sommet nommé, vidéos 3D, sans pub · un seul paiement", "Jeder Gipfel benannt, 3D-Videos, keine Werbung · einmalige Zahlung", "Ogni vetta con il nome, video 3D, niente pubblicità · un solo pagamento", "Cada cumbre con nombre, vídeos 3D, sin anuncios · un solo pago", "كل قمة بسميتها، فيديوهات 3D، بلا إشهار · خلصة وحدة"],
     "Everything on the website is free. In the Android app, SnowScope Pro names every peak around you, creates 3D videos and removes the ads.": ["Tout le site est gratuit. Dans l'appli Android, SnowScope Pro nomme chaque sommet autour de vous, crée des vidéos 3D et retire la pub.", "Auf der Website ist alles kostenlos. In der Android-App benennt SnowScope Pro jeden Gipfel um dich herum, erstellt 3D-Videos und entfernt die Werbung.", "Sul sito è tutto gratis. Nell'app Android, SnowScope Pro dà il nome a ogni vetta intorno a te, crea video 3D e toglie la pubblicità.", "Todo en la web es gratis. En la app Android, SnowScope Pro nombra cada cumbre a tu alrededor, crea vídeos 3D y quita los anuncios.", "كلشي فالموقع فابور. فتطبيق أندرويد، SnowScope Pro كيعطيك سمية كل جبل داير بيك، كيصاوب فيديوهات 3D وكيحيد الإشهار."],
     "Everything on the SnowScope website is free, for everyone. Ads and hotel suggestions keep it that way.": ["Tout le site SnowScope est gratuit, pour tout le monde. La pub et les suggestions d'hôtels le permettent.", "Auf der SnowScope-Website ist alles kostenlos, für alle. Werbung und Hotelvorschläge machen das möglich.", "Sul sito SnowScope è tutto gratis, per tutti. La pubblicità e i suggerimenti di hotel lo rendono possibile.", "Todo en la web de SnowScope es gratis, para todos. Los anuncios y las sugerencias de hoteles lo hacen posible.", "كلشي فموقع SnowScope فابور، للجميع. الإشهار واقتراحات الأوطيلات هوما اللي كيخليوه فابور."],
     "Website": ["Site web", "Website", "Sito web", "Web", "الموقع"],
@@ -91,6 +117,9 @@
     "No past winters for this spot.": ["Pas d'hivers passés pour ce point.", "Keine früheren Winter für diesen Punkt.", "Nessun inverno passato per questo punto.", "Sin inviernos pasados para este punto.", "ماكايناش الشتوات اللي فاتو لهاد البلاصة."],
     "Modelled here": ["Modélisé ici", "Hier berechnet", "Modellata qui", "Modelado aquí", "محسوب هنا"],
     "modelled here": ["modélisé ici", "hier berechnet", "modellata qui", "modelado aquí", "محسوب هنا"],
+    "Measured at {a}: {b}": ["Mesuré à {a} : {b}", "Gemessen bei {a}: {b}", "Misurato a {a}: {b}", "Medido en {a}: {b}", "مقاس ف {a}: {b}"],
+    "May include artificial snow": ["Peut inclure de la neige de culture", "Kann Kunstschnee enthalten", "Può includere neve artificiale", "Puede incluir nieve artificial", "يقدر يكون فيه تلج صناعي"],
+    "Station page": ["Page de la station", "Stationsseite", "Pagina della stazione", "Página de la estación", "صفحة المحطة"],
     "measured at the station": ["mesuré à la station", "an der Station gemessen", "misurata alla stazione", "medido en la estación", "مقاس فالمحطة ديال القياس"],
     "Distance": ["Distance", "Entfernung", "Distanza", "Distancia", "المسافة"],
     "Station height": ["Altitude de la station", "Höhe der Station", "Quota della stazione", "Altitud de la estación", "العلو ديال محطة القياس"],
@@ -219,6 +248,16 @@
     "Depth": ["Hauteur", "Höhe", "Altezza", "Espesor", "العلو ديال التلج"],
     "New": ["Fraîche", "Neu", "Fresca", "Nueva", "جديد"],
     "Time": ["Heure", "Zeit", "Ora", "Hora", "الوقت"],
+    // measured-snow layer, clear version (owner 2026-11-09)
+    "Measured snow (stations)": ["Neige mesurée (stations)", "Gemessener Schnee (Stationen)", "Neve misurata (stazioni)", "Nieve medida (estaciones)", "التلج المقاس (محطات القياس)"],
+    "Snow depth measured at one point by official stations": ["Hauteur de neige mesurée en un point par des stations officielles", "Schneehöhe, an einem Punkt von offiziellen Stationen gemessen", "Altezza neve misurata in un punto da stazioni ufficiali", "Espesor de nieve medido en un punto por estaciones oficiales", "العلو ديال التلج مقاس فنقطة وحدة من محطات رسمية"],
+    "Measuring station": ["Station de mesure", "Messstation", "Stazione di misura", "Estación de medida", "محطة القياس"],
+    "Measured at a station": ["Mesuré à une station", "An einer Station gemessen", "Misurato a una stazione", "Medido en una estación", "مقاس فمحطة"],
+    "measured {a} min ago": ["mesuré il y a {a} min", "vor {a} Min. gemessen", "misurato {a} min fa", "medido hace {a} min", "تقاس هادي {a} دقيقة"],
+    "measured {a} h ago": ["mesuré il y a {a} h", "vor {a} Std. gemessen", "misurato {a} h fa", "medido hace {a} h", "تقاس هادي {a} ساعة"],
+    "measured {a} days ago": ["mesuré il y a {a} jours", "vor {a} Tagen gemessen", "misurato {a} giorni fa", "medido hace {a} días", "تقاس هادي {a} أيام"],
+    "Measured at one point: the snow around it can differ.": ["Mesuré en un point : la neige autour peut être différente.", "An einem Punkt gemessen: der Schnee rundherum kann anders sein.", "Misurato in un punto: la neve intorno può essere diversa.", "Medido en un punto: la nieve alrededor puede ser distinta.", "مقاس فنقطة وحدة: التلج اللي داير بيها يقدر يكون مختالف."],
+    "Older reading: the snow may have changed since.": ["Mesure ancienne : la neige a pu changer depuis.", "Ältere Messung: der Schnee kann sich seitdem verändert haben.", "Misura vecchia: la neve può essere cambiata da allora.", "Medida antigua: la nieve puede haber cambiado desde entonces.", "قياس قديم: التلج يقدر يكون تبدل من بعد."],
     "Station page": ["Page de la station", "Stationsseite", "Pagina della stazione", "Página de la estación", "صفحة محطة القياس"],
     "No measuring station in this view.": ["Aucune station de mesure dans cette vue.", "Keine Messstation in diesem Ausschnitt.", "Nessuna stazione di misura in questa vista.", "Ninguna estación de medida en esta vista.", "ماكايناش محطة ديال القياس فهاد الخريطة."],
     "Showing the 30 deepest of {a} stations in view": ["Les 30 plus enneigées des {a} stations dans la vue", "Die 30 schneereichsten von {a} Stationen im Ausschnitt", "Le 30 più innevate delle {a} stazioni nella vista", "Las 30 con más nieve de {a} estaciones en la vista", "كنوريو 30 لي فيهم كتر تلج من {a} ديال محطات القياس"],
@@ -754,6 +793,21 @@
     "This slope isn't on the map": ["Cette pente n'est pas sur la carte", "Dieser Hang ist nicht auf der Karte", "Questo pendio non è sulla mappa", "Esta ladera no está en el mapa", "هاد الجبل ماكاينش فالخريطة"],
     "The page moved or never existed.": ["La page a été déplacée ou n'a jamais existé.", "Die Seite wurde verschoben oder hat nie existiert.", "La pagina è stata spostata o non è mai esistita.", "La página se movió o nunca existió.", "الصفحة تبدلات ولا عمرها ماكانت."],
     "Back to the snow map": ["Retour à la carte de la neige", "Zurück zur Schneekarte", "Torna alla mappa della neve", "Volver al mapa de nieve", "رجع لخريطة التلج"],
+    // snow GIF viewer page /g/?id= (docs/STORM_GIF.md)
+    "Snow GIF": ["GIF neige", "Schnee-GIF", "GIF neve", "GIF de nieve", "GIF ديال التلج"],
+    "Open the live snow map": ["Ouvrir la carte de la neige en direct", "Live-Schneekarte öffnen", "Apri la mappa della neve in diretta", "Abrir el mapa de nieve en directo", "حل خريطة التلج دابا"],
+    "This link has no snow GIF in it.": ["Ce lien ne contient pas de GIF neige.", "Dieser Link enthält kein Schnee-GIF.", "Questo link non contiene una GIF neve.", "Este enlace no contiene ningún GIF de nieve.", "هاد الرابط ما فيه حتى GIF ديال التلج."],
+    "This snow GIF has expired or the link is wrong. Snow GIFs are kept for 7 days.": ["Ce GIF neige a expiré ou le lien est incorrect. Les GIF neige sont gardés 7 jours.", "Dieses Schnee-GIF ist abgelaufen oder der Link ist falsch. Schnee-GIFs bleiben 7 Tage.", "Questa GIF neve è scaduta o il link è sbagliato. Le GIF neve restano 7 giorni.", "Este GIF de nieve ha caducado o el enlace es incorrecto. Los GIF de nieve se guardan 7 días.", "هاد GIF ديال التلج سالا ولا الرابط غالط. كنخليو GIF ديال التلج 7 أيام."],
+    "We can't reach SnowScope right now. Try again in a minute.": ["Impossible de joindre SnowScope pour le moment. Réessayez dans une minute.", "SnowScope ist gerade nicht erreichbar. Versuche es in einer Minute erneut.", "Al momento non riusciamo a raggiungere SnowScope. Riprova tra un minuto.", "Ahora no podemos conectar con SnowScope. Inténtalo de nuevo en un minuto.", "ما قدرناش نوصلو لـ SnowScope دابا. عاود من بعد دقيقة."],
+    "Waiting in line…": ["En file d'attente…", "In der Warteschlange…", "In coda…", "En cola…", "فالصف…"],
+    "Making the GIF…": ["Création du GIF…", "GIF wird erstellt…", "Creazione della GIF…", "Creando el GIF…", "كنصاوبو الـ GIF…"],
+    "This snow GIF could not be made. Try another area or day in the app.": ["Ce GIF neige n'a pas pu être créé. Essayez une autre zone ou un autre jour dans l'appli.", "Dieses Schnee-GIF konnte nicht erstellt werden. Versuche in der App ein anderes Gebiet oder einen anderen Tag.", "Non è stato possibile creare questa GIF neve. Prova un'altra zona o un altro giorno nell'app.", "No se pudo crear este GIF de nieve. Prueba otra zona u otro día en la app.", "ما قدرناش نصاوبو هاد GIF ديال التلج. جرب بلاصة أخرى ولا نهار آخر فالتطبيق."],
+    "Make your own snow GIF in the SnowScope app: tap the Snow GIF button on the map.": ["Créez votre propre GIF neige dans l'appli SnowScope : touchez le bouton GIF neige sur la carte.", "Erstelle dein eigenes Schnee-GIF in der SnowScope-App: tippe auf der Karte auf Schnee-GIF.", "Crea la tua GIF neve nell'app SnowScope: tocca il pulsante GIF neve sulla mappa.", "Crea tu propio GIF de nieve en la app SnowScope: toca el botón GIF de nieve en el mapa.", "صاوب GIF ديالك ديال التلج فتطبيق SnowScope: ورك على الزر GIF ديال التلج فالخريطة."],
+    "All ski resorts": ["Toutes les stations", "Alle Skigebiete", "Tutte le stazioni", "Todas las estaciones", "جميع المحطات"],
+    "Snow, cm": ["Neige, cm", "Schnee, cm", "Neve, cm", "Nieve, cm", "التلج، سم"],
+    "Zoom in": ["Zoomer", "Vergrößern", "Ingrandisci", "Acercar", "قرّب"],
+    "Filter resorts": ["Filtrer les stations", "Skigebiete filtern", "Filtra le stazioni", "Filtrar estaciones", "فلتر المحطات"],
+    "Resort": ["Station", "Skigebiet", "Stazione", "Estación", "المحطة"],
     "Snow map": ["Carte de la neige", "Schneekarte", "Mappa della neve", "Mapa de nieve", "خريطة التلج"],
     "See on the map": ["Voir sur la carte", "Auf der Karte ansehen", "Vedi sulla mappa", "Ver en el mapa", "شوف فالخريطة"],
     "This week": ["Cette semaine", "Diese Woche", "Questa settimana", "Esta semana", "هاد السيمانة"],
@@ -822,6 +876,7 @@
   };
   // patterns: {a} {b} are kept (numbers, names); a captured value found in T is translated too
   const P = {
+    "near {a}": ["près de {a}", "bei {a}", "vicino a {a}", "cerca de {a}", "قريب من {a}"],
     // 2026-11-03: specific patterns first (they must win over "{a} is in Pro")
     "No snow today · {a} of {b} winters had snow on this date": ["Pas de neige aujourd'hui · {a} hivers sur {b} avaient de la neige à cette date", "Heute kein Schnee · {a} von {b} Wintern hatten an diesem Tag Schnee", "Niente neve oggi · {a} inverni su {b} avevano neve in questa data", "Sin nieve hoy · {a} de {b} inviernos tenían nieve en esta fecha", "ماكاينش التلج اليوم · {a} من {b} ديال الشتوات كان فيهم التلج فهاد التاريخ"],
     "No snow, like all {a} winters on this date": ["Pas de neige, comme les {a} hivers à cette date", "Kein Schnee, wie in allen {a} Wintern an diesem Tag", "Niente neve, come tutti i {a} inverni in questa data", "Sin nieve, como los {a} inviernos en esta fecha", "ماكاينش التلج، بحال گاع {a} ديال الشتوات فهاد التاريخ"],
@@ -868,6 +923,8 @@
     "+{a} in 3 days": ["+{a} en 3 jours", "+{a} in 3 Tagen", "+{a} in 3 giorni", "+{a} en 3 días", "+{a} فـ 3 أيام"],
     "+{a} in 24 h": ["+{a} en 24 h", "+{a} in 24 h", "+{a} in 24 h", "+{a} en 24 h", "+{a} فـ 24 ساعة"],
     "{a} km away": ["à {a} km", "{a} km entfernt", "a {a} km", "a {a} km", "بعيد بـ {a} كم"],
+    // resort list page (resorts/index.html): the lede was left in English, "All ski resorts" matched "{a} resorts"
+    "{a} resorts, deepest snow first. Tap a resort for its snow, the next days and hotels.": ["{a} stations, les plus enneigées d'abord. Touchez une station pour sa neige, les prochains jours et les hôtels.", "{a} Skigebiete, die mit dem meisten Schnee zuerst. Tippe auf ein Skigebiet für Schnee, die nächsten Tage und Hotels.", "{a} stazioni, prima le più innevate. Tocca una stazione per la neve, i prossimi giorni e gli hotel.", "{a} estaciones, primero las de más nieve. Toca una estación para ver su nieve, los próximos días y hoteles.", "{a} محطة، اللي فيها كتر تلج هي اللولة. ورك على محطة باش تشوف التلج ديالها، الأيام الجاية والأوطيلات."],
     "{a} resorts": ["{a} stations", "{a} Skigebiete", "{a} stazioni", "{a} estaciones", "{a} محطة"],
     "top {a} m": ["sommet {a} m", "Gipfel {a} m", "vetta {a} m", "cima {a} m", "الفوق {a} م"],
     "Near {a}": ["Près de {a}", "Bei {a}", "Vicino a {a}", "Cerca de {a}", "قريب من {a}"],
@@ -888,6 +945,7 @@
     "No snow in {a} yet": ["{a} : pas encore de neige", "{a}: noch kein Schnee", "{a}: ancora niente neve", "{a}: aún sin nieve", "{a}: مازال ماكاينش التلج"],
     "Biggest snowfall elsewhere: {a}, +{b} cm.": ["Plus forte chute ailleurs : {a}, +{b} cm.", "Am meisten Neuschnee anderswo: {a}, +{b} cm.", "Nevicata maggiore altrove: {a}, +{b} cm.", "Mayor nevada en otra zona: {a}, +{b} cm.", "كتر تلج طاح فبلاصة خرا: {a}، ‎+{b}‎ سم."],
     "{a} resorts have snow": ["{a} stations enneigées", "{a} Skigebiete mit Schnee", "{a} stazioni con neve", "{a} estaciones con nieve", "{a} محطة فيها التلج"],
+    "+{a} new": ["+{a} de fraîche", "+{a} neu", "+{a} di fresca", "+{a} nueva", "‎+{a}‎ جديد"],
     "+{a} cm new": ["+{a} cm de fraîche", "+{a} cm neu", "+{a} cm di fresca", "+{a} cm nueva", "‎+{a}‎ سم جديد"],
     "{a} cm deep": ["{a} cm au sol", "{a} cm hoch", "{a} cm al suolo", "{a} cm de espesor", "{a} سم ديال التلج"],
     "{a} cm on the ground": ["{a} cm au sol", "{a} cm am Boden", "{a} cm al suolo", "{a} cm en el suelo", "{a} سم فالأرض"],

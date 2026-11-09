@@ -132,21 +132,38 @@
   }
 
   // ------------------------------------------------------------------ ads (AdSense, config-driven)
+  // House fallback of every ad slot (owner 2026-11-09 "no ads at all": AdSense approval still pending, so Google fills
+  // nothing). It is visible from the first paint and stays until AdSense reports data-ad-status="filled"; unfilled,
+  // blocked tag, declined consent or no AdSense id -> the house unit stays. Order: a date-aware Stay22 lodging card
+  // for the slot's place (data-lat/lon/place/day), else the Google Play app card (or Pro when web Pro is on).
+  // Pro / ad-free members never get here (Ads.hideAll). Beacon: /ad/slot/<kind>/house_<stay|app|pro>.
+  // Several slots on one page (blog: infeed + banner + resort) alternate Stay22 / app, starting with Stay22, so a page
+  // never stacks the same sponsored card.
   let houseN = 0;
   function houseAd(el) {
-    const d = el.dataset, stay = d.lat && S.cfg && S.cfg.stay22 && !(S.pro && store.get("ss_nostay"));
-    const pro = !S.pro;
-    const pick = (houseN++ % 2 === 0 && stay) || !pro ? "stay" : "pro";
-    if (pick === "stay" && stay) {
+    const d = el.dataset, kind = d.ad || "slot";
+    const stay = d.lat && d.lon && S.cfg && S.cfg.stay22 && !staysHidden() && houseN++ % 2 === 0;
+    if (stay) {
       let u = stayLink(+d.lat, +d.lon, d.place || "", d.day || null);
-      if (!u) return "";
-      u = u.replace("campaign=snowscope_web", "campaign=snowscope_web_slot");
-      return '<a class="housead" target="_blank" rel="sponsored noopener" href="' + esc(u) + '"><span class="hl">Sponsored</span><span class="ic"><span class="ms f">hotel</span></span>' +
-        "<span><b>Sleep near " + esc(d.place || "the slopes") + "</b><small>Hotels and chalets for your dates</small></span></a>";
+      if (u) {
+        u = u.replace("campaign=snowscope_web", "campaign=snowscope_web_slot_" + kind.replace(/[^a-z0-9_]/g, ""));
+        hit("/ad/slot/" + kind + "/house_stay", "ads", "hs|" + kind);
+        return '<a class="housead" target="_blank" rel="sponsored noopener" data-s22="slot_' + esc(kind) + '" href="' + esc(u) + '"><span class="hl">Sponsored</span><span class="ic"><span class="ms f">hotel</span></span>' +
+          "<span><b>" + esc(window.I18N ? I18N.tu("Sleep near {a}", d.place || "the slopes") : "Sleep near " + (d.place || "the slopes")) + "</b><small>Hotels and chalets for your dates</small></span></a>";
+      }
     }
-    if (!pro) return "";
-    return '<a class="housead pro" href="' + ROOT + 'pricing/"><span class="hl">Sponsored</span><span class="ic"><span class="ms f">workspace_premium</span></span>' +
-      "<span><b>SnowScope Pro</b><small>15-day snow, every layer, no ads</small></span></a>";
+    if (webPro()) {
+      hit("/ad/slot/" + kind + "/house_pro", "ads", "hp|" + kind);
+      return '<a class="housead pro" href="' + ROOT + 'pricing/"><span class="hl">Sponsored</span><span class="ic"><span class="ms f">workspace_premium</span></span>' +
+        "<span><b>SnowScope Pro</b><small>Every peak named, 3D videos, no ads · one payment</small></span></a>";
+    }
+    const a = (S.cfg && S.cfg.app) || {};
+    const play = a.play_live && a.play_package ? "https://play.google.com/store/apps/details?id=" + encodeURIComponent(a.play_package) +
+      "&utm_source=snowscope.app&utm_medium=house_ad&utm_campaign=" + encodeURIComponent(kind) : appUrl();
+    hit("/ad/slot/" + kind + "/house_app", "ads", "ha|" + kind);
+    return '<a class="housead app" data-house="app" href="' + esc(play) + '"' + (/^https:/.test(play) ? ' target="_blank" rel="noopener"' : "") +
+      '><span class="hl">Sponsored</span><span class="ic"><span class="ms f">downhill_skiing</span></span>' +
+      "<span><b>SnowScope for Android</b><small>Powder alerts and offline trip packs · free on Google Play</small></span></a>";
   }
   const Ads = {
     loaded: false,
@@ -191,7 +208,9 @@
       el.hidden = false; el.dataset.filled = "1"; el.classList.add("filled");
       this.flush();
       const ins = el.querySelector("ins.adsbygoogle"), hw = el.querySelector(".housewrap"), sl = el.querySelector(".adslot");
-      if (ins && hw) new MutationObserver(() => { const f = ins.getAttribute("data-ad-status") === "filled"; hw.hidden = f; sl.style.height = f ? "" : "0"; el.querySelector(".adl").hidden = !f; })
+      // fill-rate beacon (/ad/slot/<kind>/adsense_filled|adsense_unfilled): how often Google fills vs the house unit
+      if (ins && hw) new MutationObserver(() => { const v = ins.getAttribute("data-ad-status"), f = v === "filled"; hw.hidden = f; sl.style.height = f ? "" : "0"; el.querySelector(".adl").hidden = !f;
+        if (v) hit("/ad/slot/" + el.dataset.ad + "/adsense_" + v, "ads", "as|" + el.dataset.ad + "|" + v); })
         .observe(ins, { attributes: true, attributeFilter: ["data-ad-status"] });
     },
     flush() {       // one push per <ins> still on the page and not yet served; pushes queued before the tag loaded
@@ -472,8 +491,8 @@
     const scoped = !!(S.pro && S.scope);
     const m = modal(head('<span class="pro"><span class="ms f">lock</span>PRO</span>') +
       '<p style="font-size:17px;font-weight:620;margin:6px 0 4px">' + esc(what || "This is a Pro feature") + "</p>" +
-      (scoped ? '<p style="margin:0 0 10px"><b>Your Pro covers the High Atlas. Get Pro everywhere</b> (Alps, Pyrenees, North America…) with a subscription.</p>' : "") +
-      (!webPro() ? '<p style="color:var(--ink2);margin:0 0 14px">Everything on the website is free. In the Android app, SnowScope Pro names every peak around you, creates 3D videos and removes the ads.</p>' : "") +
+      (scoped ? '<p style="margin:0 0 10px"><b>Your Pro covers the High Atlas. Get Pro everywhere</b> (Alps, Pyrenees, North America…) with one payment in the app.</p>' : "") +
+      (!webPro() ? '<p style="color:var(--ink2);margin:0 0 14px">Everything on the website is free. In the Android app, SnowScope Pro names every peak around you, creates 3D videos and removes the ads: one payment, no subscription.</p>' : "") +
       (!webPro() ? "" : '<p style="color:var(--ink2);margin:0 0 14px">SnowScope Pro adds the sharper snow map, 15 days instead of 5, new snow, wind, freezing level, satellite snow and the 7-day resort forecast, without ads. Get it in the Android app, then sign in here with the same account.</p>') +
       (window.SSPay && SSPay.enabled() ? '<button class="btn ski big full" data-buy-pro><span class="ms f">workspace_premium</span>Get Pro</button>' +
         '<a class="btn ghost big full" style="margin-top:8px" href="' + esc(appUrl()) + '"><span class="ms f">downhill_skiing</span>Get the Android app</a>'

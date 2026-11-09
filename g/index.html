@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en" data-root="/" data-noads="1">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snow GIF · SnowScope</title>
+<meta name="description" content="A snow or rain GIF made with SnowScope: how much falls, day by day, and where.">
+<meta name="robots" content="noindex, follow">
+<meta property="og:type" content="website"><meta property="og:site_name" content="SnowScope">
+<meta property="og:title" content="Snow GIF · SnowScope"><meta property="og:image" content="https://snowscope.app/og.png">
+<meta name="theme-color" content="#F4F6F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0F17" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://api.snowscope.app" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..750&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
+<link rel="stylesheet" href="/site.css?v=962a755a">
+<style>
+.gview{max-width:760px;padding-top:28px}
+.gview h1{font-size:clamp(24px,5vw,34px);line-height:1.15;margin:0}
+.gbox{position:relative;margin:18px 0 12px;border-radius:16px;overflow:hidden;background:#0a0f17;aspect-ratio:4/3}
+.gbox video,.gbox img{display:block;width:100%;height:100%;object-fit:contain}
+.gbox .wait{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:#c9d3df;text-align:center;padding:16px}
+.gbox .spin{width:34px;height:34px;border-radius:50%;border:3px solid rgba(255,255,255,.18);border-top-color:#66ccff;animation:gspin 1s linear infinite}
+@keyframes gspin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.gbox .spin{animation:none}}
+.gacts{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 4px}
+.gacts .btn{text-decoration:none}
+.gshare{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
+.gshare a,.gshare button{font-size:13.5px}
+.gtop{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px}
+.gtop li{display:flex;justify-content:space-between;gap:10px;padding:10px 12px;border-radius:12px;background:var(--surface2,rgba(127,127,127,.08))}
+.gtop b{white-space:nowrap}
+[hidden]{display:none!important}
+.gnote{color:var(--ink2);font-size:14px;margin-top:18px}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><a class="brand" href="/"><img src="/logo.svg" alt="" width="30" height="30">SnowScope</a></div></header>
+<main class="wrap gview">
+  <h1 id="gtitle">Snow GIF</h1>
+  <p class="lede" id="gwhen"></p>
+  <div class="gbox" id="gbox"><div class="wait"><span class="spin" aria-hidden="true"></span><span id="gstate">Loading…</span></div></div>
+  <div class="gacts" id="gacts" hidden>
+    <a class="btn ink big" id="gmap" href="/"><span class="ms">map</span>Open the live snow map</a>
+    <button class="btn tonal big" id="gshare" type="button"><span class="ms">share</span>Share</button>
+    <a class="btn tonal big" id="gdl" href="#" target="_blank" rel="noopener"><span class="ms">download</span>Download</a>
+  </div>
+  <div class="gshare" id="gnets" hidden>
+    <a class="btn tonal" data-net="whatsapp" target="_blank" rel="noopener" href="#">WhatsApp</a>
+    <a class="btn tonal" data-net="telegram" target="_blank" rel="noopener" href="#">Telegram</a>
+    <a class="btn tonal" data-net="facebook" target="_blank" rel="noopener" href="#">Facebook</a>
+    <a class="btn tonal" data-net="x" target="_blank" rel="noopener" href="#">X</a>
+    <button class="btn tonal" data-net="copy" type="button"><span class="ms">link</span>Copy link</button>
+  </div>
+  <ul class="gtop" id="gtop" hidden></ul>
+  <p class="gnote">Make your own snow GIF in the SnowScope app: tap the Snow GIF button on the map. <a href="/" data-app-link>Get the app</a></p>
+  <footer class="foot"><nav><a href="/">Snow map</a><a href="/resorts/">All ski resorts</a><a href="/pricing.html">Pricing</a><a href="/terms/">Terms</a><a href="/privacy/">Privacy</a></nav>© 2026 SnowScope · Atlas Labs</footer>
+</main>
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="/i18n.js?v=7b98aa4f"></script>
+<script src="/core.js?v=e5d00da0"></script>
+<script>
+/* Website viewer of a snow / rain GIF (docs/STORM_GIF.md): snowscope.app/g/?id=<job id> = the share_url of
+   POST /v1/storm_gif. Loads the job from the API, shows the MP4 (GIF fallback), share + download, top spots, a link to
+   the live map on the same area. Waits while the job is still queued / running. noindex: one page per private id. */
+(async () => {
+  "use strict";
+  const $ = (id) => document.getElementById(id), t = (s) => (window.I18N ? I18N.t(s) : s), esc = SS.esc;
+  const id = (new URLSearchParams(location.search).get("id") || "").toLowerCase();
+  const state = (msg, spin) => { $("gbox").innerHTML = '<div class="wait">' + (spin ? '<span class="spin" aria-hidden="true"></span>' : '<span class="ms" style="font-size:34px">ac_unit</span>') + "<span>" + esc(t(msg)) + "</span></div>"; };
+  const fail = (msg) => { state(msg, false); $("gacts").hidden = false; $("gshare").hidden = true; $("gdl").hidden = true; };
+  await SS.start();
+  const api = SS.S.api || "https://api.snowscope.app";
+  if (!/^[0-9a-f]{8,40}$/.test(id)) { fail("This link has no snow GIF in it."); return; }
+  const shareUrl = location.origin + location.pathname + "?id=" + id;
+  let job = null;
+  for (let i = 0; i < 90; i++) {          // a queued job finishes in < 4 min (one render at a time, 240 s timeout)
+    try {
+      const r = await fetch(api + "/v1/storm_gif/" + id, { cache: "no-store" });
+      if (r.status === 404) { fail("This snow GIF has expired or the link is wrong. Snow GIFs are kept for 7 days."); return; }
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      job = await r.json();
+    } catch (e) {
+      if (i >= 2) { fail("We can't reach SnowScope right now. Try again in a minute."); return; }
+      await new Promise((ok) => setTimeout(ok, 3000)); continue;
+    }
+    if (job.status === "done" || job.status === "error") break;
+    state(job.status === "queued" && job.position > 0 ? "Waiting in line…" : "Making the GIF…", true);
+    await new Promise((ok) => setTimeout(ok, 3000));
+  }
+  if (!job || job.status !== "done" || !job.files) { fail("This snow GIF could not be made. Try another area or day in the app."); return; }
+  const F = job.files, abs = (p) => (p && /^https?:/.test(p) ? p : api + p);
+  const title = job.title || t("Snow GIF");
+  document.title = title + " · SnowScope";
+  $("gtitle").textContent = title;
+  if (job.days && job.days.length) {
+    const loc = (window.I18N && I18N.locale) || "en-GB", d = (s) => new Date(s + "T12:00:00Z").toLocaleDateString(loc, { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" });
+    $("gwhen").textContent = job.days.length > 1 ? d(job.days[0]) + " – " + d(job.days[job.days.length - 1]) : d(job.days[0]);
+  }
+  const alt = esc(title);
+  $("gbox").innerHTML = F.mp4
+    ? '<video autoplay muted loop playsinline preload="auto" poster="' + esc(abs(F.png)) + '" aria-label="' + alt + '"><source src="' + esc(abs(F.mp4)) + '" type="video/mp4">' +
+      '<img src="' + esc(abs(F.gif || F.png)) + '" alt="' + alt + '"></video>'
+    : '<img src="' + esc(abs(F.gif || F.png)) + '" alt="' + alt + '" width="1000" height="750">';
+  // live map on the same area: centre of the box, zoom from its width
+  const b = job.bbox;
+  if (b && b.length === 4) {
+    const z = Math.max(5, Math.min(11, Math.log2(360 / Math.max(0.05, b[2] - b[0])) + 0.6));
+    $("gmap").href = "/#@" + ((b[1] + b[3]) / 2).toFixed(4) + "," + ((b[0] + b[2]) / 2).toFixed(4) + "," + z.toFixed(1);
+  }
+  const dl = F.mp4 || F.gif || F.png;
+  $("gdl").href = abs(dl);
+  $("gdl").setAttribute("download", "snowscope-" + id + (F.mp4 ? ".mp4" : F.gif ? ".gif" : ".png"));
+  $("gacts").hidden = false; $("gnets").hidden = false;
+  // share: the system sheet when there is one, else the network buttons; links carry utm (docs/STORM_GIF.md)
+  const u = (src) => shareUrl + "&utm_source=" + src + "&utm_medium=social&utm_campaign=storm_gif";
+  const text = title;
+  const nets = { whatsapp: (x) => "https://wa.me/?text=" + encodeURIComponent(text + " " + x), telegram: (x) => "https://t.me/share/url?url=" + encodeURIComponent(x) + "&text=" + encodeURIComponent(text),
+                 facebook: (x) => "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(x), x: (x) => "https://twitter.com/intent/tweet?url=" + encodeURIComponent(x) + "&text=" + encodeURIComponent(text) };
+  document.querySelectorAll("#gnets a[data-net]").forEach((a) => { a.href = nets[a.dataset.net](u(a.dataset.net)); a.addEventListener("click", () => SS.track("share", { method: a.dataset.net, content_type: "storm_gif" })); });
+  const toast = (m) => { const el = $("toast"); el.textContent = t(m); el.hidden = false; clearTimeout(toast.h); toast.h = setTimeout(() => { el.hidden = true; }, 2200); };
+  const copy = async () => { try { await navigator.clipboard.writeText(u("copy")); toast("Copied"); } catch { prompt(t("Copy link"), u("copy")); } SS.track("share", { method: "copy", content_type: "storm_gif" }); };
+  document.querySelector('#gnets [data-net="copy"]').addEventListener("click", copy);
+  $("gshare").addEventListener("click", async () => {
+    if (navigator.share) { try { await navigator.share({ title, text, url: u("web_share") }); SS.track("share", { method: "web_share", content_type: "storm_gif" }); } catch { /* cancelled */ } }
+    else copy();
+  });
+  // top spots (same numbers as the card)
+  const top = ((job.summary && job.summary.top) || []).slice(0, 8);
+  const key = job.var === "rain" ? "mm" : "cm";
+  const fmt = (r) => key === "cm" ? SS.U.depth(r.cm) : (SS.U.us() ? (r.mm / 25.4).toFixed(1) + " in" : Math.round(r.mm) + " mm");
+  if (top.length) {
+    $("gtop").innerHTML = top.filter((r) => r[key] != null).map((r) => "<li>" + (r.slug ? '<a href="/resorts/' + encodeURIComponent(r.slug) + '.html">' + esc(r.name) + "</a>" : esc(r.name)) + "<b>" + esc(fmt(r)) + "</b></li>").join("");
+    $("gtop").hidden = !$("gtop").children.length;
+  }
+})();
+</script>
+</body>
+</html>

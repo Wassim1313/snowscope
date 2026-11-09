@@ -415,6 +415,7 @@
       '</div><div class="ramp-l"><span>' + esc(I18N.t("Light rain or snow")) + "</span><span>" + esc(I18N.t("Heavy")) + '</span></div><div class="row2">' : "<b>Rain & snow now</b><div class=\"row2\">";
     // v2: Clear / Sharp only in the layers sheet
     if (h) h += "</div>";
+    if (st.over.stn && st.stations && st.stations.rows.length) h += (h ? '<div style="height:7px"></div>' : "") + '<div class="stnleg"><i class="stnring"></i><span>' + esc(I18N.t("Measured at a station")) + " (" + U.du() + ")</span></div>";
     if (st.over.aval) h += (h ? '<div style="height:7px"></div>' : "") + '<b>Avalanche danger</b><div class="sw">' + [1, 2, 3, 4, 5].map((k) => '<span><i style="background:' + AVAL[k] + '"></i>' + k + "</span>").join("") + "</div>";
     L.innerHTML = h; L.hidden = !h;
     if (map) chip30();
@@ -615,6 +616,7 @@
     let any = false;
     await Promise.all(DATA.regions.map(async (r) => {
       const dom = FIELD_DOM[r.code] || r.code.toLowerCase();
+      if (st.fields[dom] === false) return;    // no fields for this region (ATLAS: 404 once, never asked again)
       try {
         const ix = st.fields[dom] || (st.fields[dom] = await SS.api("/v1/fields/" + dom + "/index"));
         if (daily && !(ix.vars || []).includes(v)) return;
@@ -631,7 +633,7 @@
         addCanvas("m_fx_" + dom, pic.cv, pic.coords);
         st.fields["cur_" + dom] = { ix, f, kind };
         any = true;
-      } catch (e) { if (e.down) toast("Pro data is updating, try again in a minute."); }
+      } catch (e) { if (e.status === 404 && st.fields[dom] === undefined) st.fields[dom] = false; else if (e.down) toast("Pro data is updating, try again in a minute."); }
     }));
     if (!any && gen === st.gen) toast(I18N.t(kind === "rain" ? "No rain forecast for this day" : kind === "phase" ? "No snow or rain forecast for this day" : kind === "wind" ? "No wind forecast for this day" : "No freezing level forecast for this day"));
   }
@@ -676,10 +678,10 @@
   }
   // open radar (LIVE-DATA 2026-11-03, /v1/radar/open): NOAA NEXRAD over the US + EUMETNET OPERA over Europe, frames
   // aligned from the newest (frame k = each network's k-th newest picture), one tile layer per network and frame,
-  // shown by opacity; RainViewer (/v1/radar/frames) only when the open radar is not available
+  // shown by opacity. RainViewer removed (owner 2026-11-09): no fallback, the open radar or "not available"
   async function renderRadar() {
     try {
-      let frames = null, meta = null;
+      let frames = null;
       try {
         const o = await SS.api("/v1/radar/open", { auth: false, timeout: 15000 });
         const ls = o && o.available ? (o.layers || []).filter((l) => l.frames && l.frames.length) : [];
@@ -693,10 +695,6 @@
           });
         }
       } catch { frames = null; }
-      if (!frames) {
-        const r = await SS.api("/v1/radar/frames", { auth: false });
-        if (r.available && r.frames && r.frames.length) { meta = { tileSize: r.tile_size || 256, srcMax: r.max_zoom || 7 }; frames = r.frames.slice(-8).map((f) => ({ time: f.time, parts: [{ id: "rv", tiles: f.tiles, ...meta }] })); }
-      }
       if (!frames || !frames.length) { st.radar = false; toast("Radar is not available right now"); return; }
       st.radar = true;
       if (st.main !== "radar") return;
@@ -762,7 +760,8 @@
     const badge = (id, src, min, max, dField, filter, text) => map.addLayer({ id, type: "symbol", source: src, minzoom: min, maxzoom: max, ...(filter ? { filter } : {}),
       layout: { ...svis, "icon-image": badgeExpr(dField), "icon-anchor": "center", "text-field": text, "text-size": 11.5, "text-font": ["Noto Sans Regular"], "text-anchor": "top",
         "text-offset": [0, 1.25], "text-optional": true, "text-max-width": 9, "text-letter-spacing": 0.05, "text-padding": 1, "symbol-sort-key": ["-", 2000, ["get", dField]] },
-      paint: { "text-color": "#4B5563", "text-halo-color": "#ffffff", "text-halo-width": 1.4 } });
+      paint: { "text-color": "#4B5563", "text-halo-color": "#ffffff", "text-halo-width": 1.4, "icon-opacity": ["case", ["to-boolean", ["get", "old"]], 0.42, 1],
+        "text-opacity": ["case", ["to-boolean", ["get", "old"]], 0.55, 1] } });
     badge("stn_top", "stn_top", 0, 5, "d", null, nameText);
     badge("stn_cl", "stn", 5, 8.5, "max", ["all", ["has", "point_count"], [">=", ["get", "max"], 1]], ["concat", "× ", ["get", "point_count"]]);
     badge("stn_badge", "stn", 5, 24, "d", ["all", ["!", ["has", "point_count"]], [">=", ["get", "d"], 1]], nameText);
@@ -859,7 +858,7 @@
   let stnLoad = null, histLoad = null, popupHover = false, popupPinned = false;
   const STN_LAYERS = ["stn_top", "stn_cl", "stn_badge", "stn_new"];
   function loadStations() {
-    if (!stnLoad) stnLoad = SS.getJSON(BASE + "snow/stations.json?v=" + DATA.digest).catch(() => ({ rows: [] })).then((j) => { st.stations = j; refreshStations(); fillMeasured(); return j; });
+    if (!stnLoad) stnLoad = SS.getJSON(BASE + "snow/stations.json?v=" + DATA.digest).catch(() => ({ rows: [] })).then((j) => { st.stations = j; refreshStations(); fillMeasured(); if ($("legend")) drawLegend(); return j; });
     return stnLoad;
   }
   function loadHist() {
@@ -882,13 +881,17 @@
   function badgeImage(d) {
     const id = badgeKey() + d;
     if (BADGES.has(id) || !map) return;
-    const c = document.createElement("canvas"), g = c.getContext("2d"), txt = U.depth(d);
-    g.font = "600 26px Inter, system-ui, sans-serif";
-    const tw = Math.ceil(g.measureText(txt).width), W = tw + 36, H = 50, R = 16;
-    c.width = W; c.height = H; g.font = "600 26px Inter, system-ui, sans-serif"; g.textAlign = "center"; g.textBaseline = "middle";
-    g.fillStyle = "#fff"; roundRect(g, 1, 1, W - 2, H - 2, R + 2.5); g.fill();
-    g.fillStyle = depthCol(d); roundRect(g, 3.4, 3.4, W - 6.8, H - 6.8, R); g.fill();
-    g.fillStyle = d < depthStops()[3][0] ? "#0B1220" : "#ffffff"; g.fillText(txt, W / 2, H / 2 + 1);
+    // 2026-11-09 "a CLEAR layer": a round measuring-station badge (depth colour, dark ring, white halo) with the number,
+    // so it never looks like a resort chip (pointer pill) or a count bubble: the number with its unit under it
+    const c = document.createElement("canvas"), g = c.getContext("2d"), txt = U.dep(d), F = "700 24px Inter, system-ui, sans-serif";
+    g.font = F;
+    const tw = Math.ceil(g.measureText(txt).width), R = Math.max(26, tw / 2 + 11), W = Math.ceil(2 * R + 12), H = W;
+    c.width = W; c.height = H; g.textAlign = "center"; g.textBaseline = "middle";
+    const disc = (r, col) => { g.beginPath(); g.arc(W / 2, H / 2, r, 0, 2 * Math.PI); g.fillStyle = col; g.fill(); };
+    disc(R + 5, "#ffffff"); disc(R + 1.5, "#1F2A44"); disc(R - 3, depthCol(d));
+    g.fillStyle = d < depthStops()[3][0] ? "#0B1220" : "#ffffff";
+    g.font = F; g.fillText(txt, W / 2, H / 2 - 4);
+    g.font = "600 14px Inter, system-ui, sans-serif"; g.fillText(U.du(), W / 2, H / 2 + 14);
     map.addImage(id, g.getImageData(0, 0, W, H), { pixelRatio: 2 });
     BADGES.add(id);
   }
@@ -905,7 +908,7 @@
     pillImages();
     for (const r of j.rows) badgeImage(r[4]);
     const feat = (r, i) => ({ type: "Feature", geometry: { type: "Point", coordinates: [r[1], r[0]] },
-      properties: { i, n: r[2], nu: r[2].toUpperCase(), e: r[3] || 0, el: r[3] ? U.elev(r[3]) : "", d: r[4], tm: r[5], u: r[7] || "", n2: r[8] || 0, n2s: U.dep(r[8] || 0) } });
+      properties: { i, n: r[2], nu: r[2].toUpperCase(), e: r[3] || 0, el: r[3] ? U.elev(r[3]) : "", d: r[4], tm: r[5], u: r[7] || "", n2: r[8] || 0, n2s: U.dep(r[8] || 0), old: stnAgeH(r[5]) > STN_STALE_H } });
     map.getSource("stn").setData({ type: "FeatureCollection", features: j.rows.map(feat) });
     const top = [];
     for (const r of DATA.regions) {
@@ -916,6 +919,10 @@
     for (const id of STN_LAYERS) if (map.getLayer(id)) map.setLayoutProperty(id, "visibility", st.over.stn ? "visible" : "none");
     refreshStations();
   }
+  const STN_STALE_H = 36;                // older readings are dimmed on the map and flagged in the card
+  const stnAgeH = (tm) => { const t = Date.parse(tm); return isNaN(t) ? 0 : (Date.now() - t) / 3.6e6; };
+  const stnAgo = (tm) => { const h = stnAgeH(tm); if (!tm || isNaN(Date.parse(tm))) return ""; const f = (k, n) => I18N.t(k).replace("{a}", n);
+    return h < 1 ? f("measured {a} min ago", Math.max(1, Math.round(h * 60))) : h < 48 ? f("measured {a} h ago", Math.round(h)) : f("measured {a} days ago", Math.round(h / 24)); };
   const stnTime = (tm) => { const t = new Date(tm); return isNaN(t) ? "" : (tm.slice(0, 10) === DATA.today ? t.toLocaleTimeString(LOC, { hour: "2-digit", minute: "2-digit" }) : t.toLocaleDateString(LOC, { day: "numeric", month: "short" })); };
   const newChip = (n) => (n >= 1 ? '<em class="nw"><span class="ms">arrow_upward</span>+' + U.dep(n) + "</em>" : "");
   function sparkline(i) {        // 14-day depth of one station (from stations_hist.json)
@@ -931,12 +938,14 @@
       '<div class="line" style="font-size:11.5px">' + esc(I18N.t("Last {a} days").replace("{a}", n)) + "</div>";
   }
   function stnCardHtml(i) {
-    const r = st.stations.rows[i];
-    return '<div class="pv stn"><span class="k">' + esc(I18N.t("Measured")) + " · " + esc(stnTime(r[5])) + '</span>' +
+    const r = st.stations.rows[i], h = stnAgeH(r[5]), net = (st.stations.networks || {})[r[6]];
+    return '<div class="pv stn' + (h > STN_STALE_H ? " old" : "") + '"><span class="k"><span class="ms">sensors</span>' + esc(I18N.t("Measuring station")) + " · " + esc(stnAgo(r[5])) + '</span>' +
       '<div class="stnhead"><i class="chip" style="background:' + depthCol(r[4]) + '"></i><b class="dep">' + cmS(r[4]) + "</b>" + newChip(r[8]) + "</div>" +
       '<div class="stnname">' + esc(r[2]) + "</div>" + (r[3] ? '<div class="line light">' + U.elev(r[3]) + "</div>" : "") +
+      (r[8] != null ? '<div class="line">' + esc(I18N.t("New snow, 24 h")) + ": <b>" + U.depth(r[8]) + "</b></div>" : "") +
       '<div id="stnSpark">' + sparkline(i) + "</div>" +
-      (r[7] ? '<a class="near" href="' + esc(r[7]) + '" target="_blank" rel="noopener">' + esc(I18N.t("Station page")) + "</a>" : "") + "</div>";
+      '<p class="stnnote">' + esc(I18N.t(h > STN_STALE_H ? "Older reading: the snow may have changed since." : "Measured at one point: the snow around it can differ.")) + "</p>" +
+      (r[7] || (net && net.url) ? '<a class="near" href="' + esc(r[7] || net.url) + '" target="_blank" rel="noopener">' + esc(net && net.provider ? net.provider + " · " + I18N.t("Station page") : I18N.t("Station page")) + "</a>" : "") + "</div>";
   }
   function stnCard(i, hover) {   // hover card (desktop) or pinned card (tap / table row)
     const r = st.stations && st.stations.rows[i]; if (!r) return;
@@ -1107,6 +1116,221 @@
     map.getSource("stays").setData({ type: "FeatureCollection", features: best ? [{ type: "Feature",
       geometry: { type: "Point", coordinates: [best.lon, best.lat] }, properties: { n: best.short, s: best.slug } }] : [] });
     stayChip(best);
+    autoStays();
+  }
+  // ---- geomarketing: "Sleep near the best snow" auto card (owner 2026-11-09 "show them automatically on the map").
+  // When the map settles (z 4-11, no resort open), the 1-3 resorts IN VIEW with the best snow (depth + 3 x the biggest
+  // new-snow day of the next 7) get a compact Sponsored card + a bed pin next to each resort. Dates are prefilled: the
+  // night before the powder day (>= 5 cm new forecast), else the next weekend; a future day picked on the timeline wins.
+  // Book = Stay22 Allez deep link (no third-party load, no cookie from us -> no consent needed; new tab only on click),
+  // campaign snowscope_web_map_auto. Frequency: X collapses it to a small "Stays" pill (auto card back after 24 h, 7 days
+  // after the 3rd close); Pro / ad-free / "Places to stay" layer off -> nothing. Beacons /ad/stay22/map_auto/view
+  // (visible 1 s, once per resort set), /click (core.js, data-s22) + /resort/<slug>, /dismiss, /reopen, /more,
+  // /ad/stay22/map_pin/tap and /ad/stay22/map_auto_name/tap (openStays).
+  const SA_KEY = "ss_sauto", SA_DAY = 864e5;
+  let saEl = null, saT = 0, saPins = [], saSet = "", saViewT = 0;
+  const saOn = () => !!(SS.S.cfg && SS.S.cfg.stay22 && SS.S.cfg.stay22.link) && !SS.S.pro && !SS.S.noAds && !SS.staysHidden() && st.over.stays;
+  const saState = () => { const v = get(SA_KEY, null); return v && typeof v === "object" ? v : { t: 0, n: 0 }; };
+  const saMuted = () => { const v = saState(); return v.t && Date.now() - v.t < (v.n >= 3 ? 7 : 1) * SA_DAY; };
+  function saWeekend() {          // Friday -> Sunday of the coming weekend (Saturday: the next one), local calendar
+    const t = stayToday(), dow = D(t).getUTCDay(), add = dow === 6 ? 6 : dow === 0 ? 5 : (5 - dow + 7) % 7;
+    return [addDays(t, add), addDays(t, add + 2)];
+  }
+  function saDates(res, x) {      // -> [checkin, checkout, powderDay|null]
+    const t = stayToday();
+    if (st.day && st.day > t) return [addDays(st.day, -1) >= t ? addDays(st.day, -1) : st.day, addDays(st.day, 1), st.day];
+    let pd = null, pv = 0;
+    res.dates.forEach((d, i) => { if (d < t || d > addDays(t, 7)) return; const v = (x.snow[i] || [])[1] || 0; if (v > pv) { pv = v; pd = d; } });
+    if (pd && pv >= 5) { const cin = addDays(pd, -1) >= t ? addDays(pd, -1) : pd; return [cin, addDays(pd, 1), pd]; }
+    const [a, b] = saWeekend(); return [a, b, null];
+  }
+  function saLink(x, cin, cout) {
+    const c = SS.S.cfg.stay22, lang = String(I18N.lang || "en").toLowerCase();
+    const place = [stayClean(x.short) || x.short, String(x.country || "").split(/\s*\/\s*/)[0]].filter(Boolean).join(", ");
+    const v = { lat: x.lat.toFixed(4), lon: x.lon.toFixed(4), place, checkin: cin, checkout: cout, adults: "2", lang: lang === "ar" ? "fr" : lang };
+    return c.link.replace(/\{([a-z_]+)\}/g, (m, k) => (k in v ? encodeURIComponent(v[k]) : m)).replace("campaign=snowscope_web", "campaign=snowscope_web_map_auto");
+  }
+  function saPick(res) {
+    // never empty (owner 2026-11-09): snowy resorts in view, else any resort in view, else the best snow anywhere
+    const b = map.getBounds(), t = stayToday(), i0 = res.dates.indexOf(st.day > t ? st.day : DATA.today), snowy = [], view = [], all = [];
+    const wrap = b.getEast() - b.getWest() >= 360;
+    for (const x of res.rows) {
+      const s = x.snow[i0 >= 0 ? i0 : 0] || [], dep = s[0] || 0;
+      let nmax = 0;
+      res.dates.forEach((d, i) => { if (d >= t && d <= addDays(t, 7)) nmax = Math.max(nmax, (x.snow[i] || [])[1] || 0); });
+      const r = { x, dep, nnow: s[1] || 0, nmax, sc: dep + 3 * nmax + Math.min(x.km || 0, 150) * 0.05 };
+      all.push(r);
+      if (!wrap && (x.lon < b.getWest() || x.lon > b.getEast()) || x.lat < b.getSouth() || x.lat > b.getNorth()) continue;
+      view.push(r);
+      if (dep >= 5 || nmax >= 3) snowy.push(r);
+    }
+    const out = snowy.length ? snowy : view.length ? view : all, seenN = new Set();   // two areas of one resort: once
+    return out.sort((a, b2) => b2.sc - a.sc).filter((r) => { const k = String(r.x.short).toLowerCase(); if (seenN.has(k)) return false; seenN.add(k); return true; }).slice(0, 3);
+  }
+  function saClearPins() { saPins.forEach((m) => m.remove()); saPins = []; }
+  function saPinsFor(list) {
+    saClearPins();
+    if (map.getZoom() < 6.5) return;
+    const rtl = document.documentElement.dir === "rtl";
+    list.forEach((r, k) => {
+      const el = document.createElement("button");
+      el.type = "button"; el.className = "sapin"; el.dataset.slug = r.x.slug;
+      el.setAttribute("aria-label", I18N.tu("Stays near {a}", r.x.short) + " · " + I18N.t("Sponsored"));
+      el.innerHTML = '<svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M3 6a1 1 0 0 1 2 0v7h6V9a1 1 0 0 1 1-1h6a3 3 0 0 1 3 3v7a1 1 0 0 1-2 0v-2H5v2a1 1 0 0 1-2 0V6Zm4.5 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"/></svg><i>' + (k + 1) + "</i>";
+      el.addEventListener("click", (e) => { e.stopPropagation(); st.stayClick = Date.now(); openStays(r.x.slug, "map_pin"); });
+      // beside the resort's value chip (anchored bottom-centre, about 60 px wide), never on top of it
+      saPins.push(new LIB.Marker({ element: el, anchor: rtl ? "right" : "left", offset: [rtl ? -32 : 32, -14] }).setLngLat([r.x.lon, r.x.lat]).addTo(map));
+    });
+  }
+  function saHide() { if (saEl) saEl.hidden = true; saClearPins(); }
+  function saPill() {
+    saEl.className = "sauto pill"; saEl.hidden = false;
+    saEl.innerHTML = '<button type="button" class="sareopen" aria-label="' + esc(I18N.t("Places to stay") + " · " + I18N.t("Sponsored")) + '"><span class="ms f">hotel</span><span>Stays</span></button>';
+    saEl.querySelector(".sareopen").onclick = () => { store.set(SA_KEY, { t: 0, n: saState().n }); SS.hit("/ad/stay22/map_auto/reopen", "stay22"); saSet = ""; autoStays(true); };
+    saClearPins();
+  }
+  async function autoStays(now) {
+    clearTimeout(saT);
+    if (!now) { saT = setTimeout(() => autoStays(true), 650); return; }
+    if (!ready || !map) return;
+    mapStays();
+    if (!saEl) { saEl = document.createElement("div"); saEl.id = "staysAuto"; saEl.hidden = true; saEl.setAttribute("role", "complementary"); document.body.appendChild(saEl); }
+    const z = map.getZoom();
+    if (!saOn() || st.slug || st.piste) { saHide(); return; }      // every zoom (owner 2026-11-09: always on the home map)
+    const res = await RES.catch(() => null);
+    if (!res) return;
+    const list = saPick(res);
+    if (!list.length) { saHide(); return; }
+    if (saMuted()) { saPill(); return; }
+    const [cin, cout, pd] = saDates(res, list[0].x), key = list.map((r) => r.x.slug).join(",") + "|" + cin;
+    const narrow = innerWidth <= 760, open = saEl.dataset.more === "1";
+    const range = wd(cin) + " " + dnum(cin) + " – " + wd(cout) + " " + dnum(cout);
+    saEl.className = "sauto" + (open ? " more" : "");
+    saEl.setAttribute("aria-label", I18N.t("Sponsored") + ": " + I18N.t("Places to stay"));
+    saEl.innerHTML = '<div class="sah"><span class="sal">Sponsored</span><span class="sad"><span class="ms">event</span>' + esc(range) + "</span>" +
+      '<button type="button" class="sax" aria-label="Close"><span class="ms">close</span></button></div>' +
+      '<p class="sat">' + (pd ? "Be there for the powder" : "Sleep near the best snow") + "</p><ol class=\"sar\">" +
+      list.map((r, k) => {
+        const [ci, co] = k === 0 ? [cin, cout] : saDates(res, r.x);
+        return '<li data-slug="' + esc(r.x.slug) + '"><button type="button" class="san" data-saopen="' + esc(r.x.slug) + '"><span class="sark">' + (k + 1) + "</span><span class=\"sanm\"><bdi>" + esc(r.x.short) + "</bdi>" +
+          "<small><bdi dir=\"ltr\">" + (r.nmax >= 1 ? '<span class="ms">ac_unit</span>+' + esc(U.depth(r.nmax)) + " · " : "") + esc(U.depth(r.dep)) + "</bdi></small></span></button>" +
+          '<a class="btn ink sm sabook" target="_blank" rel="sponsored noopener" data-s22="map_auto" data-sarank="' + (k + 1) + '" href="' + esc(saLink(r.x, ci, co)) + '">Book</a></li>';
+      }).join("") + "</ol>" +
+      (narrow && list.length > 1 ? '<button type="button" class="samore" aria-expanded="' + open + '"><span class="ms">' + (open ? "expand_less" : "expand_more") + "</span>" + (open ? "Less" : "More") + "</button>" : "") +
+      '<p class="sanote">Partner · we may earn a commission from bookings.</p>';
+    saEl.hidden = false;
+    saEl.querySelector(".sax").onclick = () => {
+      const v = saState(); store.set(SA_KEY, { t: Date.now(), n: (v.n || 0) + 1 }); SS.hit("/ad/stay22/map_auto/dismiss", "stay22"); saEl.dataset.more = ""; saPill();
+    };
+    const mb = saEl.querySelector(".samore");
+    if (mb) mb.onclick = () => { saEl.dataset.more = open ? "" : "1"; if (!open) SS.hit("/ad/stay22/map_auto/more", "stay22", "sam"); autoStays(true); };
+    saEl.querySelectorAll("[data-saopen]").forEach((b) => { b.onclick = () => openStays(b.dataset.saopen, "map_auto_name"); });
+    saEl.querySelectorAll(".sabook").forEach((a) => { a.addEventListener("click", () => { const li = a.closest("li"); SS.hit("/ad/stay22/map_auto/resort/" + li.dataset.slug, "stay22"); SS.hit("/ad/stay22/map_auto/rank" + a.dataset.sarank, "stay22"); }); });
+    saEl.querySelectorAll(".sar li").forEach((li) => {
+      const pin = () => saPins.find((m) => m.getElement().dataset.slug === li.dataset.slug);
+      li.addEventListener("mouseenter", () => { const m = pin(); if (m) m.getElement().classList.add("hot"); });
+      li.addEventListener("mouseleave", () => { const m = pin(); if (m) m.getElement().classList.remove("hot"); });
+    });
+    saPinsFor(list);
+    if (key !== saSet) {            // a new set of resorts = a new impression, counted once it has been on screen 1 s
+      saSet = key; clearTimeout(saViewT);
+      saViewT = setTimeout(() => { if (saEl && !saEl.hidden && !saEl.classList.contains("pill") && document.visibilityState === "visible" && saSet === key) SS.hit("/ad/stay22/map_auto/view", "stay22", "sav|" + key); }, 1000);
+    }
+  }
+  // ---- lodging pins on the main map (owner 2026-11-09 "put 3-5 stays on the map"): the 3-5 best named OpenStreetMap
+  // places to stay per resort (tools/build_stays_osm.py -> <site>/stays/<DOM>.json, fetched per resort domain in view,
+  // once). z >= 10: the places of the resorts in view (12 nearest the centre); z 8-10: only those of the best-snow
+  // resorts of the auto card. Tap -> a small Partner sheet "<name> · near <resort>" + "Check prices" = Stay22 Allez for
+  // that place (its lat/lon + name, the auto card's dates, campaign snowscope_web_map_stay). Same gate as the auto card
+  // (free visitors, "Places to stay" layer on). No price or rating is shown: Stay22 gives none to partners.
+  // Beacons /ad/stay22/map_stay/view (pins on screen 1 s, once per set) | tap | click (core.js, data-s22).
+  const OST = new Map(), OST_KIND = { h: "Hotel", c: "Chalet", g: "Guest house", a: "Apartment", o: "Hostel", u: "Mountain hut" };
+  const OST_ROOT = new URL(document.documentElement.dataset.root || "./", location.href).href;
+  let ostKey = "", ostViewT = 0, ostBound = false, ostWait = false;
+  function ostLoad(dom) {
+    if (!OST.has(dom)) OST.set(dom, fetch(OST_ROOT + "stays/" + encodeURIComponent(dom) + ".json").then((r) => (r.ok ? r.json() : null)).catch(() => null));
+    return OST.get(dom);
+  }
+  function ostIcon() {
+    if (map.hasImage("ostay")) return;
+    const k = 2, c = document.createElement("canvas"), g = c.getContext("2d");
+    c.width = c.height = 26 * k;
+    g.scale(k, k);
+    g.fillStyle = "#ffffff"; g.beginPath(); g.arc(13, 13, 12.5, 0, 7); g.fill();
+    g.fillStyle = "#1463F3"; g.beginPath(); g.arc(13, 13, 10.5, 0, 7); g.fill();
+    g.translate(6, 6); g.scale(14 / 24, 14 / 24); g.fillStyle = "#ffffff";
+    g.fill(new Path2D("M3 6a1 1 0 0 1 2 0v7h6V9a1 1 0 0 1 1-1h6a3 3 0 0 1 3 3v7a1 1 0 0 1-2 0v-2H5v2a1 1 0 0 1-2 0V6Zm4.5 6a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z"));
+    map.addImage("ostay", { width: c.width, height: c.height, data: g.getImageData(0, 0, c.width, c.height).data }, { pixelRatio: k });
+  }
+  function ostLayer() {
+    if (!map.getSource("ostays")) map.addSource("ostays", { type: "geojson", data: { type: "FeatureCollection", features: [] } });
+    ostIcon();
+    const dark = isDarkTheme();
+    if (!map.getLayer("ostays")) {
+      map.addLayer({ id: "ostays", type: "symbol", source: "ostays", minzoom: 8,
+        layout: { "icon-image": "ostay", "icon-size": ["interpolate", ["linear"], ["zoom"], 8, 0.75, 11, 1], "icon-allow-overlap": false, "icon-padding": 2,
+          "symbol-sort-key": ["get", "rk"], "text-field": ["step", ["zoom"], "", 10, ["get", "n"]], "text-font": ["Noto Sans Regular"], "text-size": 11,
+          "text-anchor": "left", "text-offset": [1.1, 0], "text-optional": true, "text-max-width": 10 },
+        paint: { "text-color": dark ? "#C5CEDA" : "#364152", "text-halo-color": dark ? "#0A0F17" : "#ffffff", "text-halo-width": 1.3 } });
+    } else {
+      map.setPaintProperty("ostays", "text-color", dark ? "#C5CEDA" : "#364152");
+      map.setPaintProperty("ostays", "text-halo-color", dark ? "#0A0F17" : "#ffffff");
+    }
+    if (!ostBound) {
+      ostBound = true;
+      map.on("click", "ostays", (e) => { const f = e.features && e.features[0]; if (f) { st.stayClick = Date.now(); ostCard(f); } });
+      map.on("mouseenter", "ostays", () => { map.getCanvas().style.cursor = "pointer"; });
+      map.on("mouseleave", "ostays", () => { map.getCanvas().style.cursor = ""; });
+    }
+  }
+  async function ostCard(f) {
+    const pr = f.properties, res = await RES.catch(() => null), x = BY[pr.s];
+    if (!res || !x || !SS.S.cfg.stay22) return;
+    SS.hit("/ad/stay22/map_stay/tap", "stay22");
+    const [cin, cout] = saDates(res, x), lang = String(I18N.lang || "en").toLowerCase();
+    const [lon, lat] = f.geometry.coordinates;
+    const v = { lat: (+lat).toFixed(5), lon: (+lon).toFixed(5), place: pr.n + ", " + (stayClean(x.short) || x.short), checkin: cin, checkout: cout, adults: "2", lang: lang === "ar" ? "fr" : lang };
+    const u = SS.S.cfg.stay22.link.replace(/\{([a-z_]+)\}/g, (m, k) => (k in v ? encodeURIComponent(v[k]) : m)).replace("campaign=snowscope_web", "campaign=snowscope_web_map_stay");
+    if (popup) popup.remove();
+    popup = new LIB.Popup({ closeButton: true, maxWidth: "270px", offset: 14 }).setLngLat([lon, lat]).setHTML('<div class="pv ostcard"><span class="k"><bdi>' + esc(pr.n) + "</bdi></span>" +
+      '<div class="line">' + esc(I18N.t(OST_KIND[pr.k] || "Hotel")) + (pr.st > 0 ? " · " + "★".repeat(Math.min(pr.st, 5)) : "") + " · " + esc(I18N.tu("near {a}", x.short)) + "</div>" +
+      '<div class="line ostd"><span class="ms">event</span>' + esc(wd(cin) + " " + dnum(cin) + " – " + wd(cout) + " " + dnum(cout)) + "</div>" +
+      '<div class="acts3" style="margin-top:8px"><a class="btn ink" target="_blank" rel="sponsored noopener" data-s22="map_stay" href="' + esc(u) + '">' + esc(I18N.t("Check prices")) + "</a>" +
+      '<span class="partner">' + esc(I18N.t("Partner")) + '</span></div><small class="ostosm">© OpenStreetMap</small></div>').addTo(map);
+  }
+  async function mapStays() {
+    if (!ready || !map) return;
+    const z = map.getZoom(), res = await RES.catch(() => null);
+    const on = saOn() && z >= 8 && res;
+    let feats = [];
+    if (on) {
+      const b = map.getBounds(), c = map.getCenter(), k = Math.cos(c.lat * Math.PI / 180);
+      let pick;
+      if (z >= 10) {
+        pick = res.rows.filter((x) => x.lat > b.getSouth() - 0.08 && x.lat < b.getNorth() + 0.08 && x.lon > b.getWest() - 0.1 && x.lon < b.getEast() + 0.1)
+          .sort((p, q) => Math.hypot((p.lon - c.lng) * k, p.lat - c.lat) - Math.hypot((q.lon - c.lng) * k, q.lat - c.lat)).slice(0, 12);
+      } else pick = saPick(res).map((r) => r.x);
+      const files = {};
+      await Promise.all([...new Set(pick.map((x) => x.dom || "OTHER"))].map(async (d) => { files[d] = await ostLoad(d); }));
+      const seen = new Set();
+      pick.forEach((x, i) => {
+        const rows = ((files[x.dom || "OTHER"] || {}).r || {})[x.slug] || [];
+        rows.forEach((h, j) => {
+          const id = h[2] + "," + h[3];
+          if (seen.has(id)) return; seen.add(id);
+          feats.push({ type: "Feature", geometry: { type: "Point", coordinates: [h[3], h[2]] }, properties: { n: h[0], k: h[1], st: h[4] || 0, s: x.slug, rk: i * 10 + j } });
+        });
+      });
+    }
+    if (!feats.length && !map.getSource("ostays")) return;
+    // ready = onStyle ran (style loaded); isStyleLoaded() is false while any tile loads, so it is not used here
+    try { ostLayer(); } catch { if (!ostWait) { ostWait = true; map.once("idle", () => { ostWait = false; mapStays(); }); } return; }
+    map.getSource("ostays").setData({ type: "FeatureCollection", features: feats });
+    const key = feats.map((f) => f.properties.s).filter((v, i, a) => a.indexOf(v) === i).join(",");
+    if (key && key !== ostKey) {
+      ostKey = key; clearTimeout(ostViewT);
+      ostViewT = setTimeout(() => { if (ostKey === key && document.visibilityState === "visible") SS.hit("/ad/stay22/map_stay/view", "stay22", "osv|" + key); }, 1000);
+    }
   }
   async function drawPins() {
     if (!ready || !map.getSource("pins")) return;
@@ -1122,6 +1346,7 @@
     }) : [];
     map.getSource("pins").setData({ type: "FeatureCollection", features: feats });
     drawPowder(res);
+    autoStays();
   }
   // a resort's new snow over the window ending on day index i: the stored 48 h / 7-day value (today), else the sum of
   // the daily 24 h values of the consecutive days of the window (other days); null when a day is missing
@@ -1225,6 +1450,23 @@
     }
     return pick(BASE + d.ov[p], r.coords[0][1], r.coords[2][1], r.coords[0][0], r.coords[1][0]);
   }
+  // point card Stay22 (owner 2026-11-09 "target maximum audience"): the nearest resort within 150 km, Allez deep link
+  // with the powder-aware dates of the map card; beacons /ad/stay22/point/view (+ /click via data-s22, core.js)
+  async function pointStay(pt) {
+    const c = SS.S.cfg && SS.S.cfg.stay22;
+    if (!c || !c.link || SS.S.pro || SS.S.noAds || SS.staysHidden()) return "";
+    const res = await RES.catch(() => null);
+    if (!res) return "";
+    const k = Math.cos(pt.lat * Math.PI / 180);
+    let x = null, bd = 1e9;
+    for (const r of res.rows) { const d = Math.hypot((r.lon - pt.lon) * k, r.lat - pt.lat) * 111; if (d < bd) { bd = d; x = r; } }
+    if (!x || bd > 150) return "";
+    const [cin, cout] = saDates(res, x), u = saLink(x, cin, cout).replace("snowscope_web_map_auto", "snowscope_web_point");
+    SS.hit("/ad/stay22/point/view", "stay22", "s22pt|" + x.slug);
+    return '<a class="housead" style="margin:10px 0" target="_blank" rel="sponsored noopener" data-s22="point" href="' + esc(u) + '"><span class="hl">' + esc(I18N.t("Sponsored")) +
+      '</span><span class="ic"><span class="ms f">hotel</span></span><span><b><bdi>' + esc(I18N.tu("Sleep near {a}", x.short)) + "</bdi></b><small>" +
+      esc(I18N.t("Hotels and chalets for your dates")) + "</small></span></a>";
+  }
   async function nearest(ll) {
     const res = await RES.catch(() => null);
     if (!res) return null;
@@ -1297,6 +1539,7 @@
           if (d && wn != null) h = '<span class="k">' + NW_TITLE[w] + " · " + when + '</span><span class="big">' + (wn >= 1 ? "+" + cmS(Math.round(wn)) : "None") + '</span><div class="line">' + (d.depth_cm >= 1 ? U.depth(Math.round(d.depth_cm)) + " on the ground" : "No snow on the ground") + "</div>";
           else if (d) h = '<span class="k">Snow on the ground · ' + when + '</span><span class="big">' + (d.depth_cm >= 1 ? cmS(Math.round(d.depth_cm)) : "No snow") + "</span>" +
             (d.new_cm >= 1 ? '<span class="badge">+' + U.depth(Math.round(d.new_cm)) + " new</span>" : "") + (p.elev_m ? '<div class="line">at ' + U.elev(p.elev_m) + "</div>" : "");
+          if (h && d && d.date >= ((p.station || {}).date || "9")) h += stnHtml(p);
         } catch (er) { h = er.down ? '<div class="line">Pro data is updating, try again in a minute.</div>' : ""; }
       }
       if (!h) h = '<span class="k">' + when + '</span><div class="line">No snow data here.</div>';
@@ -1328,7 +1571,7 @@
     const rows = [["wind", "Wind", "Around midday", "air", true, true], ["freeze", "Freezing level", U.us() ? "Where 32 °F sits" : "Where 0 °C sits", "device_thermostat", true, true],
       ["rain", "Rain", "How much rain falls, per day or 48 h", "water_drop", true, true], ["phase", "Snow or rain", "How much of it falls as snow", "thermostat", true, true],
       ["radar", "Rain & snow radar", "Right now", "radar", false, true],
-      ...(s30Enabled() ? [["s30", "Sharp 30 m", "The sharpest snow picture, where available", "grid_on"]] : []), ["stn", "Measured snow", "Snow depth measured at stations", "sensors"], ["pins", "Resorts", "Name and snow on each resort", "location_on"], ["stays", "Places to stay", "A stay chip on the resort in view · Partner", "hotel"], ["pistes", "Pistes & lifts", "Coloured by difficulty", "downhill_skiing"]];
+      ...(s30Enabled() ? [["s30", "Sharp 30 m", "The sharpest snow picture, where available", "grid_on"]] : []), ["stn", "Measured snow (stations)", "Snow depth measured at one point by official stations", "sensors"], ["pins", "Resorts", "Name and snow on each resort", "location_on"], ["stays", "Places to stay", "A stay chip on the resort in view · Partner", "hotel"], ["pistes", "Pistes & lifts", "Coloured by difficulty", "downhill_skiing"]];
     const row = ([id, name, sub, icon, pro, main]) => {
       const on = main ? st.main === id : !!st.over[id];
       const dis = id === "radar" && st.radar === false;
@@ -1487,6 +1730,7 @@
   }
   async function renderPanel() {
     markTabs();
+    autoStays();
     const box = $("pbody");
     if (st.slug) { await resortView(st.slug); return; }
     if (st.piste) { await pisteView(st.piste); return; }
@@ -1762,7 +2006,7 @@
     if (!SS.Auth.enabled()) acc = '<div class="card"><b>Your SnowScope account</b><p class="none" style="padding:4px 0 0">Your account and Pro live in the app. Signing in here is coming soon.</p></div>';
     else if (!u) acc = '<div class="card"><b>One account for the app and the website</b><p class="none" style="padding:4px 0 8px">Sign in to remove ads and unlock Pro if you have it.</p><button class="btn ink" data-signin>Sign in</button> <button class="btn ghost" data-signup>Create an account</button></div>';
     else acc = '<div class="card"><b>' + esc(u.displayName || u.email || "Signed in") + '</b><p class="none" style="padding:2px 0 8px">' + (S.pro ? '<span class="pro"><span class="ms f">workspace_premium</span>PRO</span> You have SnowScope Pro.' : S.state === "no_account" ? "Open the app once with this account to connect it." : S.state === "api_down" ? "Pro data is updating, try again in a minute." : "Free plan") + '</p><a class="btn tonal" href="' + BASE + 'account.html">Manage account</a></div>';
-    const pro = S.pro ? "" : !SS.webPro() ? '<div class="card"><span class="pro"><span class="ms f">workspace_premium</span>PRO</span><p style="margin:8px 0;font-size:14px;color:var(--ink2)">Everything on the website is free. In the Android app, SnowScope Pro names every peak around you, creates 3D videos and removes the ads.</p><a class="btn ink" href="' + esc(SS.appUrl()) + '">Get the app</a></div>' : '<div class="card"><span class="pro"><span class="ms f">workspace_premium</span>PRO</span><p style="margin:8px 0;font-size:14px;color:var(--ink2)">No ads, the sharpest snow map, 15 days, powder on every day, wind, freezing level, satellite snow, 7-day resort forecasts and past winters.</p>' + (window.SSPay && SSPay.enabled() ? '<button class="btn ink" data-buy-pro>Get Pro</button>' : '<a class="btn ink" href="' + esc(SS.appUrl()) + '">Get Pro in the app</a>') + '</div>';
+    const pro = S.pro ? "" : !SS.webPro() ? '<div class="card"><span class="pro"><span class="ms f">workspace_premium</span>PRO</span><p style="margin:8px 0;font-size:14px;color:var(--ink2)">Everything on the website is free. In the Android app, SnowScope Pro names every peak around you, creates 3D videos and removes the ads: one payment, no subscription.</p><a class="btn ink" href="' + esc(SS.appUrl()) + '">Get the app</a></div>' : '<div class="card"><span class="pro"><span class="ms f">workspace_premium</span>PRO</span><p style="margin:8px 0;font-size:14px;color:var(--ink2)">No ads, the sharpest snow map, 15 days, powder on every day, wind, freezing level, satellite snow, 7-day resort forecasts and past winters.</p>' + (window.SSPay && SSPay.enabled() ? '<button class="btn ink" data-buy-pro>Get Pro</button>' : '<a class="btn ink" href="' + esc(SS.appUrl()) + '">Get Pro in the app</a>') + '</div>';
     const teaser = (icon, bg, t, s) => '<a class="teaser" href="' + esc(SS.appUrl()) + '"><span class="ic" style="background:' + bg + '"><span class="ms f">' + icon + "</span></span><span><b>" + t + "</b><small>" + s + "</small></span></a>";
     const hide = S.pro ? '<button class="row" role="switch" data-nostay aria-checked="' + !store.get("ss_nostay") + '"><span class="ic"><span class="ms">hotel</span></span><span class="tx"><b>Hotel suggestions</b><small>Places to stay near resorts</small></span><span class="sw-t"></span></button>' : "";
     const units = '<div class="sect">Units</div><div class="seg2" role="group" aria-label="Units"><button data-units="metric" aria-pressed="' + !U.us() + '">Metric · cm, m, km, °C</button><button data-units="us" aria-pressed="' + U.us() + '">US · in, ft, mi, °F</button></div>';
@@ -2012,6 +2256,7 @@
       '<div class="acts3 ptacts"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + pt.lat + "," + pt.lon + '"><span class="ms">directions_car</span>Directions</a>' +
       '<button class="btn tonal" data-sharept><span class="ms">share</span>Share</button>' +
       (n && staysOn() ? '<button class="btn tonal" data-openstays="' + esc(n[0].slug) + '" data-via="point" title="Places to stay (partner)"><span class="ms">hotel</span>Stay</button>' : "") + "</div>" +
+      (await pointStay(pt)) +
       (s30 ? '<p class="measured s30"><span class="k">' + esc(I18N.t("Sharper view")) + '</span> <b>' + U.depth(Math.round(s30.depth_cm)) + "</b>" + (s30.elevation_m ? " · " + U.elev(s30.elevation_m) : "") + "</p>" : "") +
       fold("past", "Compared with past winters", '<div id="ptPast"><div class="skel" style="height:118px"></div></div><div id="ptChart"><div class="skel" style="height:190px;margin-top:10px"></div></div><div id="ptMore"></div>') +
       fold("stn", "Closest measured station", '<div id="ptStn"><div class="skel" style="height:120px"></div></div>') +
@@ -2041,6 +2286,15 @@
   // BLEND contract (progress/data_requests.md "CONTRACT point blend + pixel range", Pro /v1/g500/point): the point's
   // recommended value as the headline ("A light dusting" for a 1 cm blend), a compact low-middle-high bar for the
   // ~500 m area with one plain sentence, and a hint when the forecasts disagree. Absent fields -> nothing changes.
+  // forced station pixels (engine/community/forced.py): the map value here IS a station measurement
+  function stnHtml(p) {
+    const s = p && p.station;
+    if (!s || s.depth_cm == null) return "";
+    const when = s.date ? " (" + D(s.date).toLocaleDateString(LOC, { day: "numeric", month: "short", timeZone: "UTC" }) + ")" : "";
+    return '<div class="line stnm"><span class="ms">sensors</span> ' + esc(I18N.tu("Measured at {a}: {b}", s.name, U.depth(Math.round(s.depth_cm)))) + esc(when) +
+      (s.artificial_likely ? '<br><b>' + esc(I18N.t("May include artificial snow")) + "</b>" : "") +
+      (s.url ? ' · <a href="' + esc(s.url) + '" target="_blank" rel="noopener nofollow">' + esc(I18N.t("Station page")) + "</a>" : "") + "</div>";
+  }
   function pointBlend(p) {
     const today = !p.extras_day || p.extras_day === DATA.today;
     if (!today || st.day !== DATA.today) return;
@@ -2049,6 +2303,9 @@
     if (b && b.value != null && hb) {
       if (b.value >= 1 && b.value < 1.5 && b.method === "blend") hb.innerHTML = '<span class="dust">' + esc(I18N.t("A light dusting")) + "</span>";
       else hb.innerHTML = cmS(b.value >= 1 ? Math.round(b.value) : 0);
+      // the sticky mini-header said the map pixel's depth (12 cm) under a headline of 5 cm: same number in both
+      const mini = $("ptMini") && $("ptMini").querySelector("span");
+      if (mini) mini.textContent = mini.textContent.replace(/[^·]*$/, " " + U.depth(b.value >= 1 ? Math.round(b.value) : 0));
     }
     if (!out) return;
     let h = "";
@@ -2065,6 +2322,7 @@
         '<p class="note">' + esc(I18N.tu("Snow changes a lot with height: in this ~500 m area it ranges from {a} on the lowest ground to {b} on the highest.", U.depth(Math.round(R.low.depth_cm)) + " (" + U.elev(R.low.elev_m) + ")", U.depth(Math.round(R.high.depth_cm)) + " (" + U.elev(R.high.elev_m) + ")")) + "</p>";
     }
     if (b && b.agreement === "differ") h += '<p class="note">' + esc(I18N.t("Forecasts disagree a little here; treat this as a rough guide.")) + "</p>";
+    h = stnHtml(p) + h;
     out.innerHTML = h;
     if (window.SSC) SSC.bind(out);
   }
@@ -2403,7 +2661,13 @@
     if (o.f && o.f.rated) q.set("minguestrating", "8");
     return "https://www.stay22.com/embed/gm?" + q.toString();
   }
-  async function stayResolve(o) {    // -> the first candidate location Stay22 accepts, or null (nothing / blocked)
+  const STAY_RUN = new Map();
+  function stayResolve(o) {          // one check per place at a time (panel re-renders reuse it)
+    const key = o.lat.toFixed(4) + "," + o.lon.toFixed(4) + "|" + o.place;
+    if (!STAY_RUN.has(key)) STAY_RUN.set(key, stayResolve1(o).finally(() => setTimeout(() => STAY_RUN.delete(key), 1000)));
+    return STAY_RUN.get(key);
+  }
+  async function stayResolve1(o) {   // -> the first candidate location Stay22 accepts, or null (nothing / blocked)
     const key = o.lat.toFixed(4) + "," + o.lon.toFixed(4) + "|" + o.place;
     if (STAY_OK.has(key)) return STAY_OK.get(key);
     try { const v = JSON.parse(sessionStorage.getItem("ss_s22|" + key) || "null"); if (v) { STAY_OK.set(key, v); return v; } } catch { /* private */ }
@@ -2445,7 +2709,7 @@
     const cin = !st.stayDay && sv.cin && sv.cin >= stayToday() ? sv.cin : cin0, cout = sv.cout && sv.cout > cin ? sv.cout : addDays(cin, 1), ad = sv.adults || 2;
     // compact card, open by default (owner 2026-11-03, Stay22 viewability): live map first (220 px desktop, 180 px phone),
     // then dates / guests / filters; the map loads only once the card is half on screen (bindStays)
-    const open = get("ss_fold_stays2", 1);
+    const open = 1;     // owner 2026-11-09 "show the mini-map direct": always open, the map loads with the panel
     return '<details class="fold stays" data-fold="stays2" data-lat="' + lat + '" data-lon="' + lon + '" data-place="' + esc(place) + '" data-where="' + where + '"' + (open ? " open" : "") + ">" +
       '<summary><span class="stsum"><span>Stays near the slopes</span><small>Hotels and chalets near the slopes for your dates.</small></span><span class="partner">Partner</span></summary>' +
       '<div class="staymap" data-staybox><div class="stayload"><span class="ms">hotel</span><p>Loading places to stay…</p></div></div>' +
@@ -2471,9 +2735,15 @@
         if (out) out.href = stayAllez(o, loc);
         sb.querySelector("[data-stayretry]").onclick = () => { const k = o.lat.toFixed(4) + "," + o.lon.toFixed(4) + "|" + o.place; STAY_OK.delete(k); try { sessionStorage.removeItem("ss_s22|" + k); } catch { /* private */ } sb.innerHTML = '<div class="stayload"><span class="ms">hotel</span><p>Loading places to stay…</p></div>'; load(); };
       };
-      const preview = (o) => {      // no consent (EEA): a still card with the partner link, no third-party load
-        sb.innerHTML = '<div class="stayask still"><span class="ms">hotel</span><p>Best prices for your dates on our partner\'s map.</p>' +
-          '<a class="btn ink" target="_blank" rel="sponsored noopener" href="' + esc(stayAllez(o, null)) + '"><span class="ms">open_in_new</span>See places to stay</a></div>';
+      // no consent (EEA): the Stay22 embed sets cookies (session22, __cf_bm, Google Ads _gcl_ls in its storage; checked
+      // 2026-11-09), so a still card until consent: "Show places to stay" loads the map here on an explicit tap
+      // (two-click rule), the partner link opens the full list; consent given later -> the map loads by itself
+      const preview = (o) => {
+        sb.innerHTML = '<div class="stayask still"><span class="ms">hotel</span><p>Best prices for your dates on our partner\'s map.</p><div class="acts3">' +
+          '<button class="btn ink" type="button" data-stayshow><span class="ms">map</span>Show places to stay</button>' +
+          '<a class="btn tonal" target="_blank" rel="sponsored noopener" href="' + esc(stayAllez(o, null)) + '"><span class="ms">open_in_new</span>Open the list</a></div>' +
+          '<small class="stayck">The partner map uses cookies.</small></div>';
+        sb.querySelector("[data-stayshow]").onclick = () => { consent = true; SS.hit("/ad/stay22/" + (d.dataset.where || "panel") + "/consent_tap", "stay22"); load(); };
         if (out) out.href = stayAllez(o, null);
         if (!watching) { watching = true; SS.stayConsentWatch(() => { consent = true; load(); }); }
       };
@@ -2488,9 +2758,17 @@
         if (consent === null) consent = await SS.stayConsent();
         if (my !== gen) return;
         if (!consent) { preview(o); return; }
-        const loc = await stayResolve(o);
-        if (my !== gen) return;
-        if (!loc) { fail(o, loc); return; }
+        // map right away with the remembered (or first) location; the location check runs behind it and only swaps
+        // the frame when Stay22 refused that location (was: check first, then the frame -> several seconds blank)
+        const key0 = o.lat.toFixed(4) + "," + o.lon.toFixed(4) + "|" + o.place;
+        let known = STAY_OK.get(key0);
+        if (!known) { try { known = JSON.parse(sessionStorage.getItem("ss_s22|" + key0) || "null"); } catch { /* private */ } }
+        const loc = known || stayLocs(o)[0];
+        if (!known) stayResolve(o).then((good) => {
+          if (my !== gen) return;
+          if (good === null) { fail(o, null); return; }
+          if (good && JSON.stringify(good) !== JSON.stringify(loc)) { const f2 = sb.querySelector("iframe"), u2 = stayUrl(o, good); if (f2) f2.src = u2; if (out) out.href = u2; }
+        });
         const u = stayUrl(o, loc);
         if (out) out.href = u;
         let f = sb.querySelector("iframe");
@@ -2513,11 +2791,13 @@
       if ("IntersectionObserver" in window) {
         const io = new IntersectionObserver((es) => {
           const e = es[es.length - 1]; vis = e.isIntersecting && e.intersectionRatio >= 0.5;
-          if (vis && !seen) { seen = true; load(); }
           tryView();
         }, { threshold: [0, 0.5, 1] });
         io.observe(sb);
-      } else { seen = true; load(); }
+      }
+      // eager (owner 2026-11-09): no waiting for the card to scroll into view; 200 ms so a card replaced by the panel's
+      // second render (resort pages render twice on start) never loads a frame for nothing
+      setTimeout(() => { if (d.isConnected) { seen = true; load(); } }, 200);
       window.addEventListener("blur", () => { const f = sb.querySelector("iframe"); if (f && document.activeElement === f) SS.hit("/ad/stay22/" + pl + "/click", "stay22", "c|" + key); });
       if (st.openStays) { st.openStays = false; d.open = true; setTimeout(() => d.scrollIntoView({ behavior: "smooth", block: "start" }), 250); }
     });
@@ -2863,8 +3143,17 @@
     });
     return s + "</svg>" + '<div class="keyrow"><span><i style="background:var(--accent)"></i>past</span><span><i style="background:var(--accent-tint);outline:1px solid var(--accent)"></i>forecast</span><span style="color:var(--accent-ink)">+N new snow</span></div>' + (locked || "");
   }
+  async function resortMeasured(x) {    // stations measured at / next to the resort today (free, /v1/obs/measured)
+    const box = $("rDays"); if (!box || !SS.S.api) return;
+    let m = null;
+    try { m = await SS.api("/v1/obs/measured?slug=" + encodeURIComponent(x.slug) + "&lat=" + x.lat + "&lon=" + x.lon + "&km=4", { auth: false, timeout: 10000 }); } catch { m = null; }
+    if (!m || !(m.stations || []).length || st.slug !== x.slug) return;
+    const old = $("rMeas"); if (old) old.remove();
+    box.insertAdjacentHTML("afterend", '<div id="rMeas">' + m.stations.slice(0, 3).map((s) => stnHtml({ station: s })).join("") + "</div>");
+  }
   async function daysChart(x, res) {
     const box = $("rDays");
+    resortMeasured(x);
     const stat = res.dates.map((d, i) => ({ date: d, dep: (x.snow[i] || [])[0], nw: (x.snow[i] || [])[1] }));
     const lock = '<div class="prolock" style="margin-top:10px"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>15 days at ' + esc(x.short) + "</b><br>The past week and the week ahead.</p><button class=\"btn ink\" data-up>See 15 days</button></div>";
     if (!st.pro) { box.innerHTML = svgBars(stat, DATA.today, lock); box.querySelector("[data-up]").onclick = () => SS.upsell("15 days of snow at " + x.short + " are in Pro"); return; }
@@ -2997,7 +3286,17 @@
   $("btn3d").onclick = () => { st.terrain = !st.terrain; store.set("ss_terrain", st.terrain); $("btn3d").setAttribute("aria-pressed", st.terrain); applyTerrain(); };
   $("btn3d").setAttribute("aria-pressed", st.terrain);
   $("play").onclick = play;
-  if (initialSlug) { st.slug = initialSlug; await RES.catch(() => null); }
+  // resort pages (/resorts/<slug>.html): the map STARTS on the resort (owner 2026-11-09: Chamonix first showed the
+  // visitor's home range, Morocco, for ~2.5 s until the "load" event jumped). Resort row, else the page's JSON-LD geo.
+  let startLL = null;
+  if (initialSlug) {
+    st.slug = initialSlug; await RES.catch(() => null);
+    const x = BY[initialSlug];
+    if (x) startLL = { lat: x.lat, lng: x.lon };
+    else { try { const g = JSON.parse(document.querySelector('script[type="application/ld+json"]').textContent).geo; if (g && isFinite(g.latitude)) startLL = { lat: +g.latitude, lng: +g.longitude }; } catch { /* no geo */ } }
+    const rr = startLL && regionAt(startLL);
+    if (rr && rr.code !== st.region) { st.region = rr.code; st.ski.region = rr.code; drawRegions(); }
+  }
   renderPanel();
 
   ML = await SS.mapLib();
@@ -3008,7 +3307,7 @@
   const plain = !hash && !initialSlug && !new URLSearchParams(location.search).get("p") && !new URLSearchParams(location.search).get("r");
   if (plain) await Promise.race([RES.catch(() => null), new Promise((ok) => setTimeout(ok, 2500))]);
   const b0 = plain ? snowBounds(R0) : null;
-  map = new LIB.Map({ container: "map", style: styleUrl(), center: R0.center, zoom: 5, minZoom: 2, attributionControl: { compact: true },
+  map = new LIB.Map({ container: "map", style: styleUrl(), center: startLL ? [startLL.lng, startLL.lat] : R0.center, zoom: startLL ? 10 : 5, minZoom: 2, attributionControl: { compact: true },
     ...(b0 ? { bounds: b0, fitBoundsOptions: { padding: startPad(), maxZoom: 8.2 } } : {}),
     transformRequest: (url) => SS.transformRequest(url), preserveDrawingBuffer: true, maxPitch: 75, dragRotate: true, pitchWithRotate: true });
   window.SSApp.map = map;
@@ -3022,7 +3321,7 @@
     const rll = rq && /^(-?[\d.]+),(-?[\d.]+)$/.exec(rq);
     if (rq && BY[rq] && !r) openResort(rq, { push: false });
     else if (rll) { map.jumpTo({ center: [+rll[2], +rll[1]], zoom: 8.5 }); setMain("powder"); }
-    if (r) map.jumpTo({ center: [r.lon, r.lat], zoom: 10 });
+    if (r || startLL) { if (r) map.jumpTo({ center: [r.lon, r.lat], zoom: 10 }); }
     else if (hash) map.jumpTo({ center: [+hash[2], +hash[1]], zoom: +hash[3] });
     else if (!new URLSearchParams(location.search).get("p") && !new URLSearchParams(location.search).get("r")) RES.finally(() => { flyRegion(st.region, true); nearMe(); });   // framed on the snowy resorts, then the visitor's own range
     map.on("click", onClick);
@@ -3050,6 +3349,7 @@
   });
   await started;
   SS.onChange(onAccount);
+  SS.onChange(() => autoStays());
   onAccount(SS.S);
   loadS30();
   window.addEventListener("popstate", (e) => {
