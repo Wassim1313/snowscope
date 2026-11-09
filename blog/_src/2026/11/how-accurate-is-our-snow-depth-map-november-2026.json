@@ -1,0 +1,395 @@
+{
+ "id": "feature-how-accurate-is-our-snow-depth-map-november-2026",
+ "slug": "how-accurate-is-our-snow-depth-map-november-2026",
+ "date": "2026-11-09",
+ "published_utc": "2026-11-09T19:55:23Z",
+ "updated_utc": "2026-11-09T19:55:23Z",
+ "region": "WORLD",
+ "angle": "guide_feature_climate",
+ "category": "guide",
+ "draft": false,
+ "kind": "climate",
+ "resort_class": null,
+ "structure": "scorecard",
+ "score": 90,
+ "tags": [
+  "accurate-snow-depth",
+  "model",
+  "snow-depth",
+  "stations",
+  "ski"
+ ],
+ "facts": {
+  "kind": "climate",
+  "date": "2026-11-09",
+  "extra": {
+   "date": "2026-11-09",
+   "stations_compared": 2012,
+   "stations_harvested": 2516,
+   "networks": 16,
+   "bias_cm": -0.5,
+   "rmse_cm": 7.7,
+   "agreement_pct": 88,
+   "threshold_cm": 5,
+   "snowy_stations": 780,
+   "snowy_bias_cm": -1.3,
+   "snowy_rmse_cm": 12.4,
+   "snowy_typical_cm": 3.3,
+   "detect_pct": 61,
+   "false_alarm_pct": 23,
+   "new_snow_rmse_cm": 1.0,
+   "new_snow_bias_cm": -0.2,
+   "new_snow_stations": 1890,
+   "alps_n": 917,
+   "alps_bias_cm": -1.1,
+   "alps_rmse_cm": 10.3,
+   "alps_agree_pct": 86,
+   "us_west_n": 1063,
+   "us_west_bias_cm": 0.1,
+   "us_west_rmse_cm": 4.6,
+   "us_west_agree_pct": 89,
+   "pyrenees_n": 14,
+   "pyrenees_rmse_cm": 3.0,
+   "outlier_elev_m": 3499,
+   "outlier_measured_cm": 320,
+   "outlier_model_cm": 28,
+   "grid_m": 500,
+   "next_grid_m": 100,
+   "runs_per_day": 2,
+   "hours": 24,
+   "warm_storm_before_cm": 2.7,
+   "warm_storm_after_cm": 0.1,
+   "warm_storm_elev_m": 2300,
+   "years": [
+    2026
+   ]
+  }
+ },
+ "ref_numbers": [],
+ "media": [],
+ "docs": {
+  "en": {
+   "title": "How accurate is our snow depth map? First check against 2,012 stations",
+   "description": "We compared the SnowScope snow depth map with 2,012 measuring stations: RMSE 7.7 cm, bias -0.5 cm, snow or no snow right 88 % of the time. What works, what doesn't yet, and what we improve next.",
+   "lede": "A snow map is only useful if it is right. So from now on we check ours every day against the measuring stations of the Alps, the Pyrenees and North America, and we publish the result. Here is the first score card, from 9 November 2026.",
+   "sections": [
+    {
+     "h": "The headline numbers",
+     "p": [
+      "We compared the map with 2,012 stations that reported a snow depth (2,516 stations from 16 networks were collected that day). On average the map was 0.5 cm too shallow, the RMSE (the typical size of an error, with large misses counting more) was 7.7 cm, and the map agreed with the stations on snow or no snow (5 cm or more) 88 % of the time.",
+      "Early November is easy in one way: many stations have no snow yet, and the map agrees. At the 780 stations where either the station or the map had snow, the RMSE was 12.4 cm, the bias -1.3 cm and the typical error 3.3 cm."
+     ]
+    },
+    {
+     "h": "Region by region",
+     "p": [
+      "US West, 1,063 stations (mostly SNOTEL): bias 0.1 cm, RMSE 4.6 cm, snow or no snow right 89 % of the time. The Alps, 917 stations: bias -1.1 cm, RMSE 10.3 cm, 86 % agreement. The Pyrenees only have 14 reporting stations so far, RMSE 3.0 cm.",
+      "One station explains much of the Alps number: a glacier site at 3,499 m measured 320 cm while our map shows 28 cm. Glaciers keep old snow and ice that a seasonal snow map should not count, so we flag such sites rather than chase them."
+     ]
+    },
+    {
+     "h": "What we are not good at yet",
+     "p": [
+      "Thin early-season snow. Where a station measured snow, the map showed snow only 61 % of the time, and where the map showed snow, 23 % of those stations had none. Patchy snow of a few centimetres is hard for any model at 500 m, and it is the first thing we work on.",
+      "Warm storms. This week we found that our model turned rain into snow when the freezing level was high. We fixed it: for the rain of 12 November at 2,300 m in the southern Alps, the forecast new snow fell from 2.7 cm to 0.1 cm, in line with the other weather models. New snow over 24 hours already scores well: RMSE 1.0 cm over 1,890 stations."
+     ]
+    },
+    {
+     "h": "Read these numbers honestly",
+     "p": [
+      "The stations also help build the map, so this check shows how well the final map fits the measurements, not a fully independent test. A station measures one point, the map gives an area, and the snow can change a lot within a few hundred metres (wind, forest, sun). We will add a test with stations kept out of the model."
+     ]
+    },
+    {
+     "h": "What comes next",
+     "p": [
+      "We now run this check twice a day and keep the history, so you will see the numbers move through the season. Coming soon: a sharper 100 m snow map, more stations (Spain and Norway), a better rule for patchy early snow, and a 'likely range' around each value so you know when the map is less sure."
+     ]
+    }
+   ],
+   "advice": [
+    "Use the map to compare places and heights; check the resort's own report before you drive.",
+    "Turn on the 'Measured snow' layer to see the stations next to the map.",
+    "Early in the season, trust the high, north-facing slopes and expect thin snow lower down."
+   ],
+   "captions": {},
+   "references": [],
+   "method": "Method: every station reading of the day (quality-checked) is paired with the final 500 m snow depth at the station (interpolated from the 4 nearest pixels), for the model day closest to the reading time. Bias = map minus station. RMSE = root mean square error. Snow or no snow uses 5 cm. Stations also feed the model."
+  },
+  "fr": {
+   "title": "Notre carte de neige est-elle précise ? Premier bilan face à 2 012 stations",
+   "description": "Nous avons comparé la carte de hauteur de neige SnowScope à 2 012 stations de mesure : RMSE 7,7 cm, biais -0,5 cm, neige ou pas de neige juste 88 % du temps. Ce qui marche, ce qui ne marche pas encore, et la suite.",
+   "lede": "Une carte de neige n'est utile que si elle est juste. Désormais, nous vérifions la nôtre chaque jour face aux stations de mesure des Alpes, des Pyrénées et d'Amérique du Nord, et nous publions le résultat. Voici le premier bilan, du 9 novembre 2026.",
+   "sections": [
+    {
+     "h": "Les chiffres clés",
+     "p": [
+      "Nous avons comparé la carte à 2 012 stations qui ont transmis une hauteur de neige (2 516 stations de 16 réseaux ont été collectées ce jour-là). En moyenne la carte était trop basse de 0,5 cm, la RMSE (la taille typique d'une erreur, les grosses erreurs comptant davantage) était de 7,7 cm, et la carte était d'accord avec les stations sur neige ou pas de neige (5 cm ou plus) 88 % du temps.",
+      "Début novembre, c'est facile d'un côté : beaucoup de stations n'ont pas encore de neige, et la carte non plus. Aux 780 stations où la station ou la carte avait de la neige, la RMSE était de 12,4 cm, le biais de -1,3 cm et l'erreur typique de 3,3 cm."
+     ]
+    },
+    {
+     "h": "Région par région",
+     "p": [
+      "Ouest américain, 1 063 stations (surtout SNOTEL) : biais 0,1 cm, RMSE 4,6 cm, neige ou pas de neige juste 89 % du temps. Alpes, 917 stations : biais -1,1 cm, RMSE 10,3 cm, 86 % d'accord. Les Pyrénées n'ont encore que 14 stations qui transmettent, RMSE 3,0 cm.",
+      "Une seule station explique une bonne partie du chiffre des Alpes : un site de glacier à 3 499 m a mesuré 320 cm alors que notre carte affiche 28 cm. Les glaciers gardent de la vieille neige et de la glace qu'une carte de neige saisonnière ne doit pas compter ; nous signalons ces sites plutôt que de les suivre."
+     ]
+    },
+    {
+     "h": "Ce que nous ne faisons pas encore bien",
+     "p": [
+      "La neige fine du début de saison. Là où une station mesurait de la neige, la carte en montrait seulement 61 % du temps, et là où la carte montrait de la neige, 23 % de ces stations n'en avaient pas. Quelques centimètres de neige en plaques, c'est difficile pour tout modèle à 500 m, et c'est notre premier chantier.",
+      "Les perturbations douces. Cette semaine, nous avons vu que notre modèle transformait la pluie en neige quand l'isotherme 0 °C était haut. C'est corrigé : pour la pluie du 12 novembre à 2 300 m dans les Alpes du Sud, la neige fraîche prévue est passée de 2,7 cm à 0,1 cm, comme les autres modèles météo. La neige fraîche sur 24 heures est déjà bien notée : RMSE 1,0 cm sur 1 890 stations."
+     ]
+    },
+    {
+     "h": "Lire ces chiffres honnêtement",
+     "p": [
+      "Les stations servent aussi à construire la carte : ce bilan montre donc à quel point la carte finale colle aux mesures, ce n'est pas un test totalement indépendant. Une station mesure un point, la carte donne une zone, et la neige peut beaucoup changer en quelques centaines de mètres (vent, forêt, soleil). Nous ajouterons un test avec des stations tenues à l'écart du modèle."
+     ]
+    },
+    {
+     "h": "La suite",
+     "p": [
+      "Ce contrôle tourne désormais deux fois par jour et nous gardons l'historique : vous verrez les chiffres évoluer au fil de la saison. Bientôt : une carte de neige plus fine à 100 m, plus de stations (Espagne et Norvège), une meilleure règle pour la neige en plaques du début de saison, et une « fourchette probable » autour de chaque valeur pour savoir quand la carte est moins sûre."
+     ]
+    }
+   ],
+   "advice": [
+    "Utilisez la carte pour comparer les lieux et les altitudes ; vérifiez le bulletin de la station avant de partir.",
+    "Activez la couche « Neige mesurée » pour voir les stations à côté de la carte.",
+    "En début de saison, fiez-vous aux pentes hautes orientées au nord et attendez-vous à peu de neige plus bas."
+   ],
+   "captions": {},
+   "references": [],
+   "method": "Méthode : chaque mesure de station du jour (contrôlée) est associée à la hauteur de neige finale à 500 m au lieu de la station (interpolée sur les 4 pixels les plus proches), pour le jour du modèle le plus proche de l'heure de mesure. Biais = carte moins station. RMSE = erreur quadratique moyenne. Neige ou pas de neige : seuil de 5 cm. Les stations alimentent aussi le modèle."
+  },
+  "de": {
+   "title": "Wie genau ist unsere Schneehöhenkarte? Erster Vergleich mit 2.012 Stationen",
+   "description": "Wir haben die SnowScope-Schneehöhenkarte mit 2.012 Messstationen verglichen: RMSE 7,7 cm, Abweichung -0,5 cm, Schnee oder kein Schnee in 88 % der Fälle richtig. Was funktioniert, was noch nicht und was als Nächstes kommt.",
+   "lede": "Eine Schneekarte nützt nur, wenn sie stimmt. Deshalb prüfen wir unsere ab jetzt jeden Tag an den Messstationen der Alpen, der Pyrenäen und Nordamerikas und veröffentlichen das Ergebnis. Hier ist die erste Bilanz vom 9. November 2026.",
+   "sections": [
+    {
+     "h": "Die wichtigsten Zahlen",
+     "p": [
+      "Wir haben die Karte mit 2.012 Stationen verglichen, die eine Schneehöhe gemeldet haben (an diesem Tag wurden 2.516 Stationen aus 16 Messnetzen gesammelt). Im Mittel lag die Karte 0,5 cm zu niedrig, der RMSE (die typische Fehlergröße, große Abweichungen zählen stärker) betrug 7,7 cm, und bei Schnee oder kein Schnee (ab 5 cm) stimmte die Karte in 88 % der Fälle mit den Stationen überein.",
+      "Anfang November ist es in einer Hinsicht leicht: Viele Stationen haben noch keinen Schnee, und die Karte auch nicht. An den 780 Stationen, an denen Station oder Karte Schnee hatten, lag der RMSE bei 12,4 cm, die Abweichung bei -1,3 cm und der typische Fehler bei 3,3 cm."
+     ]
+    },
+    {
+     "h": "Region für Region",
+     "p": [
+      "US-Westen, 1.063 Stationen (meist SNOTEL): Abweichung 0,1 cm, RMSE 4,6 cm, Schnee oder kein Schnee in 89 % richtig. Alpen, 917 Stationen: Abweichung -1,1 cm, RMSE 10,3 cm, 86 % Übereinstimmung. Die Pyrenäen haben bisher nur 14 meldende Stationen, RMSE 3,0 cm.",
+      "Eine einzige Station erklärt einen großen Teil der Alpen-Zahl: Ein Gletscherstandort auf 3.499 m maß 320 cm, unsere Karte zeigt 28 cm. Gletscher halten alten Schnee und Eis, die eine Karte des saisonalen Schnees nicht zählen soll; solche Standorte markieren wir, statt ihnen hinterherzurechnen."
+     ]
+    },
+    {
+     "h": "Was wir noch nicht gut können",
+     "p": [
+      "Dünner Schnee zu Saisonbeginn. Wo eine Station Schnee maß, zeigte die Karte nur in 61 % der Fälle Schnee, und wo die Karte Schnee zeigte, hatten 23 % dieser Stationen keinen. Lückenhafter Schnee von wenigen Zentimetern ist für jedes Modell mit 500 m schwer, und daran arbeiten wir zuerst.",
+      "Warme Störungen. Diese Woche haben wir gesehen, dass unser Modell bei hoher Nullgradgrenze Regen als Schnee zählte. Das ist behoben: Für den Regen vom 12. November auf 2.300 m in den Südalpen sank der prognostizierte Neuschnee von 2,7 cm auf 0,1 cm, im Einklang mit den anderen Wettermodellen. Neuschnee in 24 Stunden schneidet schon gut ab: RMSE 1,0 cm an 1.890 Stationen."
+     ]
+    },
+    {
+     "h": "Die Zahlen ehrlich lesen",
+     "p": [
+      "Die Stationen fließen auch in die Karte ein. Diese Bilanz zeigt also, wie gut die fertige Karte zu den Messungen passt, sie ist kein völlig unabhängiger Test. Eine Station misst einen Punkt, die Karte gibt eine Fläche, und der Schnee kann sich auf wenigen hundert Metern stark ändern (Wind, Wald, Sonne). Wir ergänzen einen Test mit Stationen, die nicht ins Modell eingehen."
+     ]
+    },
+    {
+     "h": "Wie es weitergeht",
+     "p": [
+      "Diese Prüfung läuft jetzt zweimal täglich, und wir speichern den Verlauf, damit du die Zahlen über die Saison verfolgen kannst. Bald: eine schärfere Schneekarte mit 100 m, mehr Stationen (Spanien und Norwegen), eine bessere Regel für lückenhaften Frühwinterschnee und eine „wahrscheinliche Spanne“ um jeden Wert, damit du siehst, wann die Karte unsicherer ist."
+     ]
+    }
+   ],
+   "advice": [
+    "Nutze die Karte, um Orte und Höhen zu vergleichen; prüfe vor der Fahrt den Bericht des Skigebiets.",
+    "Schalte die Ebene „Gemessener Schnee“ ein, um die Stationen neben der Karte zu sehen.",
+    "Vertraue früh in der Saison den hohen Nordhängen und rechne weiter unten mit dünnem Schnee."
+   ],
+   "captions": {},
+   "references": [],
+   "method": "Methode: Jede geprüfte Stationsmessung des Tages wird mit der endgültigen 500-m-Schneehöhe am Stationsort (interpoliert aus den 4 nächsten Pixeln) für den Modelltag verglichen, der der Messzeit am nächsten liegt. Abweichung = Karte minus Station. RMSE = mittlerer quadratischer Fehler. Schnee oder kein Schnee: Schwelle 5 cm. Die Stationen fließen auch ins Modell ein."
+  },
+  "it": {
+   "title": "Quanto è precisa la nostra mappa dell'altezza neve? Primo confronto con 2.012 stazioni",
+   "description": "Abbiamo confrontato la mappa dell'altezza neve di SnowScope con 2.012 stazioni di misura: RMSE 7,7 cm, scarto -0,5 cm, neve o niente neve giusto l'88 % delle volte. Cosa funziona, cosa non ancora e cosa migliora dopo.",
+   "lede": "Una mappa della neve serve solo se è giusta. Da ora controlliamo la nostra ogni giorno con le stazioni di misura delle Alpi, dei Pirenei e del Nord America, e pubblichiamo il risultato. Ecco il primo bilancio, del 9 novembre 2026.",
+   "sections": [
+    {
+     "h": "I numeri principali",
+     "p": [
+      "Abbiamo confrontato la mappa con 2.012 stazioni che hanno trasmesso un'altezza neve (quel giorno sono state raccolte 2.516 stazioni di 16 reti). In media la mappa era più bassa di 0,5 cm, la RMSE (la dimensione tipica di un errore, con gli errori grandi che contano di più) era di 7,7 cm, e la mappa concordava con le stazioni su neve o niente neve (5 cm o più) l'88 % delle volte.",
+      "Inizio novembre è facile da un lato: molte stazioni non hanno ancora neve, e la mappa nemmeno. Nelle 780 stazioni dove la stazione o la mappa avevano neve, la RMSE era di 12,4 cm, lo scarto di -1,3 cm e l'errore tipico di 3,3 cm."
+     ]
+    },
+    {
+     "h": "Regione per regione",
+     "p": [
+      "Ovest degli USA, 1.063 stazioni (soprattutto SNOTEL): scarto 0,1 cm, RMSE 4,6 cm, neve o niente neve giusto l'89 % delle volte. Alpi, 917 stazioni: scarto -1,1 cm, RMSE 10,3 cm, 86 % di accordo. I Pirenei hanno per ora solo 14 stazioni che trasmettono, RMSE 3,0 cm.",
+      "Una sola stazione spiega buona parte del numero delle Alpi: un sito su ghiacciaio a 3.499 m ha misurato 320 cm mentre la nostra mappa mostra 28 cm. I ghiacciai conservano neve vecchia e ghiaccio che una mappa della neve stagionale non deve contare; segnaliamo questi siti invece di inseguirli."
+     ]
+    },
+    {
+     "h": "Cosa non facciamo ancora bene",
+     "p": [
+      "La neve sottile di inizio stagione. Dove una stazione misurava neve, la mappa ne mostrava solo il 61 % delle volte, e dove la mappa mostrava neve, il 23 % di quelle stazioni non ne aveva. Pochi centimetri di neve a chiazze sono difficili per qualsiasi modello a 500 m, ed è il primo lavoro che facciamo.",
+      "Le perturbazioni miti. Questa settimana abbiamo visto che il nostro modello trasformava la pioggia in neve quando lo zero termico era alto. È corretto: per la pioggia del 12 novembre a 2.300 m nelle Alpi del Sud, la neve fresca prevista è scesa da 2,7 cm a 0,1 cm, in linea con gli altri modelli meteo. La neve fresca in 24 ore va già bene: RMSE 1,0 cm su 1.890 stazioni."
+     ]
+    },
+    {
+     "h": "Leggere questi numeri con onestà",
+     "p": [
+      "Le stazioni servono anche a costruire la mappa: questo bilancio mostra quanto la mappa finale si adatta alle misure, non è un test del tutto indipendente. Una stazione misura un punto, la mappa dà un'area, e la neve può cambiare molto in poche centinaia di metri (vento, bosco, sole). Aggiungeremo un test con stazioni tenute fuori dal modello."
+     ]
+    },
+    {
+     "h": "Cosa viene dopo",
+     "p": [
+      "Ora questo controllo gira due volte al giorno e teniamo lo storico, così vedrai i numeri muoversi durante la stagione. Presto: una mappa della neve più nitida a 100 m, più stazioni (Spagna e Norvegia), una regola migliore per la neve a chiazze di inizio stagione e un «intervallo probabile» attorno a ogni valore, per sapere quando la mappa è meno sicura."
+     ]
+    }
+   ],
+   "advice": [
+    "Usa la mappa per confrontare luoghi e quote; controlla il bollettino della località prima di partire.",
+    "Attiva il livello «Neve misurata» per vedere le stazioni accanto alla mappa.",
+    "A inizio stagione fidati dei pendii alti esposti a nord e aspettati poca neve più in basso."
+   ],
+   "captions": {},
+   "references": [],
+   "method": "Metodo: ogni misura di stazione del giorno (controllata) è abbinata all'altezza neve finale a 500 m nel punto della stazione (interpolata dai 4 pixel più vicini), per il giorno del modello più vicino all'ora della misura. Scarto = mappa meno stazione. RMSE = errore quadratico medio. Neve o niente neve: soglia di 5 cm. Le stazioni alimentano anche il modello."
+  },
+  "es": {
+   "title": "¿Qué tan preciso es nuestro mapa de espesor de nieve? Primer control con 2.012 estaciones",
+   "description": "Comparamos el mapa de espesor de nieve de SnowScope con 2.012 estaciones de medida: RMSE 7,7 cm, sesgo -0,5 cm, nieve o no nieve acertado el 88 % de las veces. Lo que funciona, lo que aún no y lo que mejoramos después.",
+   "lede": "Un mapa de nieve solo sirve si acierta. Por eso, a partir de ahora, comprobamos el nuestro cada día con las estaciones de medida de los Alpes, los Pirineos y Norteamérica, y publicamos el resultado. Este es el primer balance, del 9 de noviembre de 2026.",
+   "sections": [
+    {
+     "h": "Las cifras principales",
+     "p": [
+      "Comparamos el mapa con 2.012 estaciones que dieron un espesor de nieve (ese día se recogieron 2.516 estaciones de 16 redes). De media el mapa se quedó 0,5 cm corto, la RMSE (el tamaño típico de un error, con los errores grandes pesando más) fue de 7,7 cm, y el mapa coincidió con las estaciones en nieve o no nieve (5 cm o más) el 88 % de las veces.",
+      "A principios de noviembre es fácil en un sentido: muchas estaciones aún no tienen nieve, y el mapa tampoco. En las 780 estaciones donde la estación o el mapa tenían nieve, la RMSE fue de 12,4 cm, el sesgo de -1,3 cm y el error típico de 3,3 cm."
+     ]
+    },
+    {
+     "h": "Región por región",
+     "p": [
+      "Oeste de EE. UU., 1.063 estaciones (sobre todo SNOTEL): sesgo 0,1 cm, RMSE 4,6 cm, nieve o no nieve acertado el 89 % de las veces. Alpes, 917 estaciones: sesgo -1,1 cm, RMSE 10,3 cm, 86 % de acuerdo. Los Pirineos solo tienen por ahora 14 estaciones que informan, RMSE 3,0 cm.",
+      "Una sola estación explica buena parte de la cifra de los Alpes: un punto de glaciar a 3.499 m midió 320 cm mientras nuestro mapa muestra 28 cm. Los glaciares guardan nieve vieja y hielo que un mapa de nieve de temporada no debe contar; marcamos esos puntos en vez de perseguirlos."
+     ]
+    },
+    {
+     "h": "Lo que aún no hacemos bien",
+     "p": [
+      "La nieve fina de principio de temporada. Donde una estación medía nieve, el mapa mostraba nieve solo el 61 % de las veces, y donde el mapa mostraba nieve, el 23 % de esas estaciones no tenía. Unos centímetros de nieve a parches son difíciles para cualquier modelo a 500 m, y es lo primero que trabajamos.",
+      "Las borrascas templadas. Esta semana vimos que nuestro modelo convertía la lluvia en nieve cuando la isoterma de 0 °C estaba alta. Ya está corregido: para la lluvia del 12 de noviembre a 2.300 m en los Alpes del Sur, la nieve nueva prevista bajó de 2,7 cm a 0,1 cm, en línea con los demás modelos meteorológicos. La nieve nueva en 24 horas ya puntúa bien: RMSE 1,0 cm en 1.890 estaciones."
+     ]
+    },
+    {
+     "h": "Leer estas cifras con honestidad",
+     "p": [
+      "Las estaciones también ayudan a construir el mapa, así que este control muestra lo bien que el mapa final encaja con las medidas, no es una prueba totalmente independiente. Una estación mide un punto, el mapa da una zona, y la nieve puede cambiar mucho en unos cientos de metros (viento, bosque, sol). Añadiremos una prueba con estaciones fuera del modelo."
+     ]
+    },
+    {
+     "h": "Lo que viene",
+     "p": [
+      "Ahora este control funciona dos veces al día y guardamos el historial, así verás moverse las cifras a lo largo de la temporada. Pronto: un mapa de nieve más nítido a 100 m, más estaciones (España y Noruega), una regla mejor para la nieve a parches de principio de temporada y un «rango probable» alrededor de cada valor, para saber cuándo el mapa está menos seguro."
+     ]
+    }
+   ],
+   "advice": [
+    "Usa el mapa para comparar lugares y alturas; consulta el parte de la estación antes de salir.",
+    "Activa la capa «Nieve medida» para ver las estaciones junto al mapa.",
+    "Al principio de temporada, fíate de las laderas altas orientadas al norte y espera poca nieve más abajo."
+   ],
+   "captions": {},
+   "references": [],
+   "method": "Método: cada medida de estación del día (controlada) se empareja con el espesor de nieve final a 500 m en el punto de la estación (interpolado de los 4 píxeles más cercanos), para el día del modelo más cercano a la hora de la medida. Sesgo = mapa menos estación. RMSE = error cuadrático medio. Nieve o no nieve: umbral de 5 cm. Las estaciones también alimentan el modelo."
+  },
+  "ar": {
+   "title": "واش الخريطة ديال العلو ديال التلج ديالنا دقيقة؟ أول مقارنة مع 2012 محطة",
+   "description": "قارنّا الخريطة ديال العلو ديال التلج ديال SnowScope مع 2012 محطة ديال القياس: RMSE 7.7 سم، الفرق -0.5 سم، تلج ولا ما كاينش صحيح ف 88 % ديال المرات. شنو خدام، شنو باقي، وشنو غادي نحسنو من بعد.",
+   "lede": "الخريطة ديال التلج ما كتنفع غير إلا كانت صحيحة. من دابا، كنراجعو الخريطة ديالنا كل نهار مع محطات القياس ف جبال الألب، البرانس وأمريكا الشمالية، وكنشرو النتيجة. هادي أول حصيلة، ديال 9 نونبر 2026.",
+   "sections": [
+    {
+     "h": "الأرقام المهمة",
+     "p": [
+      "قارنّا الخريطة مع 2012 محطة عطات العلو ديال التلج (داك النهار تجمعو 2516 محطة من 16 شبكة). ف المعدل الخريطة كانت ناقصة ب 0.5 سم، الـ RMSE (الحجم العادي ديال الغلط، والأغلاط الكبار كيحسبو كثر) كان 7.7 سم، والخريطة كانت متفقة مع المحطات على تلج ولا ما كاينش (5 سم ولا كثر) ف 88 % ديال المرات.",
+      "بداية نونبر ساهلة من جهة: بزاف ديال المحطات باقي ما فيهاش التلج، والخريطة حتى هي. ف 780 محطة اللي كان فيها التلج ف المحطة ولا ف الخريطة، الـ RMSE كان 12.4 سم، الفرق -1.3 سم والغلط العادي 3.3 سم."
+     ]
+    },
+    {
+     "h": "جهة بجهة",
+     "p": [
+      "غرب ميريكان، 1063 محطة (أغلبها SNOTEL): الفرق 0.1 سم، RMSE 4.6 سم، تلج ولا ما كاينش صحيح ف 89 % ديال المرات. جبال الألب، 917 محطة: الفرق -1.1 سم، RMSE 10.3 سم، 86 % ديال الاتفاق. البرانس عندهم غير 14 محطة دابا، RMSE 3.0 سم.",
+      "محطة وحدة كتفسر جزء كبير من الرقم ديال الألب: بلاصة فوق الكلاسي ف 3499 م قاست 320 سم والخريطة ديالنا كتبين 28 سم. الكلاسي كيحتفظ بالتلج القديم والجليد اللي ما خاصش خريطة التلج ديال الموسم تحسبهم، داكشي علاش كنعلمو هاد البلايص."
+     ]
+    },
+    {
+     "h": "شنو باقي ما كنديروهش مزيان",
+     "p": [
+      "التلج الرقيق ديال بداية الموسم. فين كانت المحطة قاست التلج، الخريطة بينات التلج غير ف 61 % ديال المرات، وفين الخريطة بينات التلج، 23 % من هاد المحطات ما كانش فيها. شي سنتيمترات ديال التلج متفرقة صعيبة على أي موديل ف 500 م، وهادي أول حاجة كنخدمو عليها.",
+      "العواصف السخونة. هاد السيمانة لقينا باللي الموديل ديالنا كان كيحول الشتا لتلج ملي كان الحد ديال 0 °C عالي. تصلح: للشتا ديال 12 نونبر ف 2300 م ف جنوب الألب، التلج الجديد المتوقع نزل من 2.7 سم ل 0.1 سم، بحال الموديلات الأخرى. التلج الجديد ف 24 ساعة ديجا مزيان: RMSE 1.0 سم ف 1890 محطة."
+     ]
+    },
+    {
+     "h": "نقراو هاد الأرقام بصراحة",
+     "p": [
+      "المحطات حتى هي كتعاون ف بناء الخريطة، إذن هاد الحصيلة كتبين قداش الخريطة النهائية متفقة مع القياسات، ماشي اختبار مستقل مية ف المية. المحطة كتقيس نقطة، والخريطة كتعطي منطقة، والتلج يقدر يتبدل بزاف ف شي مية ديال المترات (الريح، الغابة، الشمس). غادي نزيدو اختبار بمحطات ما داخلاش ف الموديل."
+     ]
+    },
+    {
+     "h": "شنو جاي",
+     "p": [
+      "دابا هاد المراجعة كتخدم جوج مرات ف النهار وكنحتفظو بالتاريخ، باش تشوف الأرقام كيف كتتبدل طول الموسم. قريب: خريطة ديال التلج أدق ب 100 م، محطات كثر (سبانيا والنرويج)، قاعدة حسن للتلج المتفرق ديال بداية الموسم، و«مجال محتمل» حدا كل رقم باش تعرف إمتى الخريطة ما متأكداش."
+     ]
+    }
+   ],
+   "advice": [
+    "استعمل الخريطة باش تقارن البلايص والعلو؛ شوف التقرير ديال المحطة قبل ما تمشي.",
+    "شعل الطبقة «التلج المقاس» باش تشوف المحطات حدا الخريطة.",
+    "ف بداية الموسم، تيق ف الجهات العالية اللي مقابلة للشمال وتسنى تلج قليل لتحت."
+   ],
+   "captions": {},
+   "references": [],
+   "method": "الطريقة: كل قياس ديال المحطة ف النهار (مراجع) كيتقارن مع العلو النهائي ديال التلج ف 500 م ف البلاصة ديال المحطة (من 4 ديال البيكسلات القراب)، للنهار ديال الموديل الأقرب لوقت القياس. الفرق = الخريطة ناقص المحطة. RMSE = الجذر ديال متوسط مربع الغلط. تلج ولا ما كاينش: 5 سم. المحطات حتى هي كتدخل ف الموديل."
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "hand (feature)"
+  },
+  "fr": {
+   "writer": "hand (feature)"
+  },
+  "de": {
+   "writer": "hand (feature)"
+  },
+  "it": {
+   "writer": "hand (feature)"
+  },
+  "es": {
+   "writer": "hand (feature)"
+  },
+  "ar": {
+   "writer": "hand (feature)"
+  }
+ },
+ "words_en": 491,
+ "indexable": true,
+ "main": {
+  "slug": null,
+  "name": "Alps",
+  "lat": 46.0,
+  "lon": 8.0
+ },
+ "places": [],
+ "resort_links": [],
+ "table": null,
+ "bulletins": [],
+ "trip_day": "",
+ "map_link": "https://snowscope.app/",
+ "publish_utc": "2026-11-09T19:55:23Z"
+}
