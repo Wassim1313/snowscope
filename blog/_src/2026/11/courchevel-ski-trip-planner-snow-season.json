@@ -1,0 +1,742 @@
+{
+ "id": "feature-courchevel-ski-trip-planner-snow-season",
+ "slug": "courchevel-ski-trip-planner-snow-season",
+ "date": "2026-11-09",
+ "published_utc": "2026-11-09T10:51:21Z",
+ "updated_utc": "2026-11-09T10:51:21Z",
+ "region": "ALPS",
+ "angle": "guide_feature_resort",
+ "category": "guide",
+ "draft": false,
+ "kind": "resort",
+ "resort_class": "major",
+ "structure": "season-planner",
+ "score": 90,
+ "tags": [
+  "where-to-ski",
+  "past-winters",
+  "advice"
+ ],
+ "facts": {
+  "kind": "resort",
+  "date": "2026-11-07",
+  "resort": {
+   "slug": "courchevel",
+   "name": "Courchevel",
+   "country": "France",
+   "domain": "ALPS",
+   "base_m": 1258,
+   "top_m": 2695,
+   "vertical_m": 1437,
+   "downhill_km": 151.0,
+   "lift_count": 59,
+   "lat": 45.40499,
+   "lon": 6.63032
+  },
+  "mapped_note": "base/top/vertical/downhill_km/lift_count = mapped lifts and runs (OpenSkiMap), not resort figures",
+  "past_winters": {
+   "base": {
+    "elev_m": 1258,
+    "winters": 46,
+    "period": "1980-81 to 2025-26",
+    "median_peak_cm": 71,
+    "median_snow_days": 197,
+    "peak_cm_lowest_winter": 47,
+    "peak_cm_highest_winter": 106,
+    "median_first_snow": "11-01",
+    "median_last_snow": "05-30",
+    "last_winter": {
+     "season": "2025-26",
+     "peak_cm": 88,
+     "snow_days": 194
+    },
+    "median_peak_cm_first_15_winters": 78,
+    "median_peak_cm_last_15_winters": 71,
+    "median_snow_days_first_15_winters": 207,
+    "median_snow_days_last_15_winters": 197,
+    "usual_cm_by_month": {
+     "11": {
+      "p10": 0,
+      "p50": 5,
+      "p90": 18
+     },
+     "12": {
+      "p10": 8,
+      "p50": 24,
+      "p90": 45
+     },
+     "01": {
+      "p10": 25,
+      "p50": 43,
+      "p90": 64
+     },
+     "02": {
+      "p10": 38,
+      "p50": 59,
+      "p90": 84
+     },
+     "03": {
+      "p10": 38,
+      "p50": 54,
+      "p90": 77
+     },
+     "04": {
+      "p10": 19,
+      "p50": 36,
+      "p90": 55
+     },
+     "05": {
+      "p10": 4,
+      "p50": 16,
+      "p90": 32
+     }
+    },
+    "deepest_month_usual": "02",
+    "good_cm": 50,
+    "weeks_with_good_cm_in_9_of_10_winters": 0,
+    "weeks_with_good_cm_in_half_of_winters": 8,
+    "best_week": {
+     "iso_week": 9,
+     "share_of_winters_with_good_cm_pct": 87,
+     "median_depth_cm": 61
+    }
+   },
+   "mid": {
+    "elev_m": 1976,
+    "winters": 46,
+    "period": "1980-81 to 2025-26",
+    "median_peak_cm": 158,
+    "median_snow_days": 228,
+    "peak_cm_lowest_winter": 118,
+    "peak_cm_highest_winter": 227,
+    "median_first_snow": "10-12",
+    "median_last_snow": "06-14",
+    "last_winter": {
+     "season": "2025-26",
+     "peak_cm": 173,
+     "snow_days": 217
+    },
+    "median_peak_cm_first_15_winters": 171,
+    "median_peak_cm_last_15_winters": 152,
+    "median_snow_days_first_15_winters": 241,
+    "median_snow_days_last_15_winters": 217,
+    "usual_cm_by_month": {
+     "11": {
+      "p10": 4,
+      "p50": 18,
+      "p90": 43
+     },
+     "12": {
+      "p10": 29,
+      "p50": 54,
+      "p90": 93
+     },
+     "01": {
+      "p10": 61,
+      "p50": 94,
+      "p90": 130
+     },
+     "02": {
+      "p10": 86,
+      "p50": 125,
+      "p90": 164
+     },
+     "03": {
+      "p10": 101,
+      "p50": 132,
+      "p90": 171
+     },
+     "04": {
+      "p10": 85,
+      "p50": 121,
+      "p90": 161
+     },
+     "05": {
+      "p10": 30,
+      "p50": 61,
+      "p90": 93
+     }
+    },
+    "deepest_month_usual": "03",
+    "good_cm": 50,
+    "weeks_with_good_cm_in_9_of_10_winters": 18,
+    "weeks_with_good_cm_in_half_of_winters": 23,
+    "best_week": {
+     "iso_week": 10,
+     "share_of_winters_with_good_cm_pct": 100,
+     "median_depth_cm": 138
+    }
+   },
+   "top": {
+    "elev_m": 2695,
+    "winters": 46,
+    "period": "1980-81 to 2025-26",
+    "median_peak_cm": 272,
+    "median_snow_days": 238,
+    "peak_cm_lowest_winter": 213,
+    "peak_cm_highest_winter": 383,
+    "median_first_snow": "09-27",
+    "median_last_snow": "06-22",
+    "last_winter": {
+     "season": "2025-26",
+     "peak_cm": 264,
+     "snow_days": 230
+    },
+    "median_peak_cm_first_15_winters": 316,
+    "median_peak_cm_last_15_winters": 271,
+    "median_snow_days_first_15_winters": 259,
+    "median_snow_days_last_15_winters": 234,
+    "usual_cm_by_month": {
+     "11": {
+      "p10": 10,
+      "p50": 45,
+      "p90": 102
+     },
+     "12": {
+      "p10": 59,
+      "p50": 108,
+      "p90": 178
+     },
+     "01": {
+      "p10": 108,
+      "p50": 162,
+      "p90": 225
+     },
+     "02": {
+      "p10": 140,
+      "p50": 202,
+      "p90": 255
+     },
+     "03": {
+      "p10": 170,
+      "p50": 220,
+      "p90": 279
+     },
+     "04": {
+      "p10": 182,
+      "p50": 232,
+      "p90": 306
+     },
+     "05": {
+      "p10": 106,
+      "p50": 191,
+      "p90": 274
+     }
+    },
+    "deepest_month_usual": "04",
+    "good_cm": 50,
+    "weeks_with_good_cm_in_9_of_10_winters": 24,
+    "weeks_with_good_cm_in_half_of_winters": 30,
+    "best_week": {
+     "iso_week": 16,
+     "share_of_winters_with_good_cm_pct": 100,
+     "median_depth_cm": 239
+    }
+   }
+  },
+  "bulletin": {
+   "provider": "Météo-France BERA",
+   "url": "https://meteofrance.com/meteo-montagne"
+  }
+ },
+ "ref_numbers": [
+  {
+   "n": [
+    1300,
+    1550,
+    1650,
+    1850
+   ],
+   "ref": 0,
+   "claim": "Courchevel 1300 (Le Praz), 1550, 1650 (Moriond), 1850"
+  },
+  {
+   "n": [
+    525,
+    18.5
+   ],
+   "ref": 0,
+   "claim": "altiport runway 525 m, gradient 18.5 %"
+  },
+  {
+   "n": [
+    1992
+   ],
+   "ref": 0,
+   "claim": "Le Praz hosted the 1992 Olympic ski jumping"
+  },
+  {
+   "n": [
+    600,
+    183,
+    3230,
+    1971
+   ],
+   "ref": 1,
+   "claim": "3 Vallées: 600 km of slopes, 183 lifts, highest point 3,230 m, single pass since 1971"
+  },
+  {
+   "n": [
+    5,
+    30
+   ],
+   "ref": 1,
+   "claim": "TGV from Paris to Moûtiers in around 5 hours 30 minutes"
+  }
+ ],
+ "media": [
+  {
+   "id": "map",
+   "kind": "pins_map",
+   "file": "blog/media/2026/11/courchevel-ski-trip-planner-snow-season/map.webp",
+   "thumb": "blog/media/2026/11/courchevel-ski-trip-planner-snow-season/map_t.webp",
+   "bytes": 52656,
+   "after": -1
+  },
+  {
+   "id": "months",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 270\" role=\"img\" aria-label=\"Nov Dec Jan Feb Mar Apr May\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"46\" y=\"262\" text-anchor=\"middle\" class=\"ax\">Nov</text><text x=\"123\" y=\"262\" text-anchor=\"middle\" class=\"ax\">Dec</text><text x=\"201\" y=\"262\" text-anchor=\"middle\" class=\"ax\">Jan</text><text x=\"278\" y=\"262\" text-anchor=\"middle\" class=\"ax\">Feb</text><text x=\"355\" y=\"262\" text-anchor=\"middle\" class=\"ax\">Mar</text><text x=\"433\" y=\"262\" text-anchor=\"middle\" class=\"ax\">Apr</text><text x=\"510\" y=\"262\" text-anchor=\"middle\" class=\"ax\">May</text><text x=\"40\" y=\"244\" text-anchor=\"end\" class=\"ax\">0</text><line x1=\"46\" x2=\"510\" y1=\"240\" y2=\"240\" class=\"gl\"/><text x=\"40\" y=\"200\" text-anchor=\"end\" class=\"ax\">50</text><line x1=\"46\" x2=\"510\" y1=\"196\" y2=\"196\" class=\"gl\"/><text x=\"40\" y=\"155\" text-anchor=\"end\" class=\"ax\">100</text><line x1=\"46\" x2=\"510\" y1=\"151\" y2=\"151\" class=\"gl\"/><text x=\"40\" y=\"111\" text-anchor=\"end\" class=\"ax\">150</text><line x1=\"46\" x2=\"510\" y1=\"107\" y2=\"107\" class=\"gl\"/><text x=\"40\" y=\"67\" text-anchor=\"end\" class=\"ax\">200</text><line x1=\"46\" x2=\"510\" y1=\"63\" y2=\"63\" class=\"gl\"/><text x=\"40\" y=\"23\" text-anchor=\"end\" class=\"ax\">250</text><line x1=\"46\" x2=\"510\" y1=\"19\" y2=\"19\" class=\"gl\"/><text x=\"40\" y=\"12\" text-anchor=\"end\" class=\"ax\">cm</text><polygon points=\"46,202 123,158 201,125 278,95 355,89 433,97 510,158 510,213 433,165 355,151 278,164 201,186 123,214 46,236\" fill=\"#1463F3\" fill-opacity=\"0.13\" stroke=\"none\"/><polyline points=\"46,236 123,219 201,202 278,188 355,192 433,208 510,226\" fill=\"none\" stroke=\"#8A94A3\" stroke-width=\"2.5\"/><text x=\"516\" y=\"230\" class=\"lb\" fill=\"#8A94A3\">base 1,258 m</text><polyline points=\"46,224 123,192 201,157 278,129 355,123 433,133 510,186\" fill=\"none\" stroke=\"#1463F3\" stroke-width=\"2.5\"/><text x=\"516\" y=\"190\" class=\"lb\" fill=\"#1463F3\">mid 1,976 m</text><polyline points=\"46,200 123,144 201,97 278,61 355,45 433,35 510,71\" fill=\"none\" stroke=\"#0B7A53\" stroke-width=\"2.5\"/><text x=\"516\" y=\"75\" class=\"lb\" fill=\"#0B7A53\">top 2,695 m</text></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 270\" role=\"img\" aria-label=\"nov. déc. janv. févr. mars avr. mai\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"46\" y=\"262\" text-anchor=\"middle\" class=\"ax\">nov.</text><text x=\"123\" y=\"262\" text-anchor=\"middle\" class=\"ax\">déc.</text><text x=\"201\" y=\"262\" text-anchor=\"middle\" class=\"ax\">janv.</text><text x=\"278\" y=\"262\" text-anchor=\"middle\" class=\"ax\">févr.</text><text x=\"355\" y=\"262\" text-anchor=\"middle\" class=\"ax\">mars</text><text x=\"433\" y=\"262\" text-anchor=\"middle\" class=\"ax\">avr.</text><text x=\"510\" y=\"262\" text-anchor=\"middle\" class=\"ax\">mai</text><text x=\"40\" y=\"244\" text-anchor=\"end\" class=\"ax\">0</text><line x1=\"46\" x2=\"510\" y1=\"240\" y2=\"240\" class=\"gl\"/><text x=\"40\" y=\"200\" text-anchor=\"end\" class=\"ax\">50</text><line x1=\"46\" x2=\"510\" y1=\"196\" y2=\"196\" class=\"gl\"/><text x=\"40\" y=\"155\" text-anchor=\"end\" class=\"ax\">100</text><line x1=\"46\" x2=\"510\" y1=\"151\" y2=\"151\" class=\"gl\"/><text x=\"40\" y=\"111\" text-anchor=\"end\" class=\"ax\">150</text><line x1=\"46\" x2=\"510\" y1=\"107\" y2=\"107\" class=\"gl\"/><text x=\"40\" y=\"67\" text-anchor=\"end\" class=\"ax\">200</text><line x1=\"46\" x2=\"510\" y1=\"63\" y2=\"63\" class=\"gl\"/><text x=\"40\" y=\"23\" text-anchor=\"end\" class=\"ax\">250</text><line x1=\"46\" x2=\"510\" y1=\"19\" y2=\"19\" class=\"gl\"/><text x=\"40\" y=\"12\" text-anchor=\"end\" class=\"ax\">cm</text><polygon points=\"46,202 123,158 201,125 278,95 355,89 433,97 510,158 510,213 433,165 355,151 278,164 201,186 123,214 46,236\" fill=\"#1463F3\" fill-opacity=\"0.13\" stroke=\"none\"/><polyline points=\"46,236 123,219 201,202 278,188 355,192 433,208 510,226\" fill=\"none\" stroke=\"#8A94A3\" stroke-width=\"2.5\"/><text x=\"516\" y=\"230\" class=\"lb\" fill=\"#8A94A3\">bas 1 258 m</text><polyline points=\"46,224 123,192 201,157 278,129 355,123 433,133 510,186\" fill=\"none\" stroke=\"#1463F3\" stroke-width=\"2.5\"/><text x=\"516\" y=\"190\" class=\"lb\" fill=\"#1463F3\">mi-pente 1 976 m</text><polyline points=\"46,200 123,144 201,97 278,61 355,45 433,35 510,71\" fill=\"none\" stroke=\"#0B7A53\" stroke-width=\"2.5\"/><text x=\"516\" y=\"75\" class=\"lb\" fill=\"#0B7A53\">sommet 2 695 m</text></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 270\" role=\"img\" aria-label=\"Nov. Dez. Jan. Feb. März Apr. Mai\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"46\" y=\"262\" text-anchor=\"middle\" class=\"ax\">Nov.</text><text x=\"123\" y=\"262\" text-anchor=\"middle\" class=\"ax\">Dez.</text><text x=\"201\" y=\"262\" text-anchor=\"middle\" class=\"ax\">Jan.</text><text x=\"278\" y=\"262\" text-anchor=\"middle\" class=\"ax\">Feb.</text><text x=\"355\" y=\"262\" text-anchor=\"middle\" class=\"ax\">März</text><text x=\"433\" y=\"262\" text-anchor=\"middle\" class=\"ax\">Apr.</text><text x=\"510\" y=\"262\" text-anchor=\"middle\" class=\"ax\">Mai</text><text x=\"40\" y=\"244\" text-anchor=\"end\" class=\"ax\">0</text><line x1=\"46\" x2=\"510\" y1=\"240\" y2=\"240\" class=\"gl\"/><text x=\"40\" y=\"200\" text-anchor=\"end\" class=\"ax\">50</text><line x1=\"46\" x2=\"510\" y1=\"196\" y2=\"196\" class=\"gl\"/><text x=\"40\" y=\"155\" text-anchor=\"end\" class=\"ax\">100</text><line x1=\"46\" x2=\"510\" y1=\"151\" y2=\"151\" class=\"gl\"/><text x=\"40\" y=\"111\" text-anchor=\"end\" class=\"ax\">150</text><line x1=\"46\" x2=\"510\" y1=\"107\" y2=\"107\" class=\"gl\"/><text x=\"40\" y=\"67\" text-anchor=\"end\" class=\"ax\">200</text><line x1=\"46\" x2=\"510\" y1=\"63\" y2=\"63\" class=\"gl\"/><text x=\"40\" y=\"23\" text-anchor=\"end\" class=\"ax\">250</text><line x1=\"46\" x2=\"510\" y1=\"19\" y2=\"19\" class=\"gl\"/><text x=\"40\" y=\"12\" text-anchor=\"end\" class=\"ax\">cm</text><polygon points=\"46,202 123,158 201,125 278,95 355,89 433,97 510,158 510,213 433,165 355,151 278,164 201,186 123,214 46,236\" fill=\"#1463F3\" fill-opacity=\"0.13\" stroke=\"none\"/><polyline points=\"46,236 123,219 201,202 278,188 355,192 433,208 510,226\" fill=\"none\" stroke=\"#8A94A3\" stroke-width=\"2.5\"/><text x=\"516\" y=\"230\" class=\"lb\" fill=\"#8A94A3\">Tal 1,258 m</text><polyline points=\"46,224 123,192 201,157 278,129 355,123 433,133 510,186\" fill=\"none\" stroke=\"#1463F3\" stroke-width=\"2.5\"/><text x=\"516\" y=\"190\" class=\"lb\" fill=\"#1463F3\">Mitte 1,976 m</text><polyline points=\"46,200 123,144 201,97 278,61 355,45 433,35 510,71\" fill=\"none\" stroke=\"#0B7A53\" stroke-width=\"2.5\"/><text x=\"516\" y=\"75\" class=\"lb\" fill=\"#0B7A53\">Gipfel 2,695 m</text></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 270\" role=\"img\" aria-label=\"nov dic gen feb mar apr mag\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"46\" y=\"262\" text-anchor=\"middle\" class=\"ax\">nov</text><text x=\"123\" y=\"262\" text-anchor=\"middle\" class=\"ax\">dic</text><text x=\"201\" y=\"262\" text-anchor=\"middle\" class=\"ax\">gen</text><text x=\"278\" y=\"262\" text-anchor=\"middle\" class=\"ax\">feb</text><text x=\"355\" y=\"262\" text-anchor=\"middle\" class=\"ax\">mar</text><text x=\"433\" y=\"262\" text-anchor=\"middle\" class=\"ax\">apr</text><text x=\"510\" y=\"262\" text-anchor=\"middle\" class=\"ax\">mag</text><text x=\"40\" y=\"244\" text-anchor=\"end\" class=\"ax\">0</text><line x1=\"46\" x2=\"510\" y1=\"240\" y2=\"240\" class=\"gl\"/><text x=\"40\" y=\"200\" text-anchor=\"end\" class=\"ax\">50</text><line x1=\"46\" x2=\"510\" y1=\"196\" y2=\"196\" class=\"gl\"/><text x=\"40\" y=\"155\" text-anchor=\"end\" class=\"ax\">100</text><line x1=\"46\" x2=\"510\" y1=\"151\" y2=\"151\" class=\"gl\"/><text x=\"40\" y=\"111\" text-anchor=\"end\" class=\"ax\">150</text><line x1=\"46\" x2=\"510\" y1=\"107\" y2=\"107\" class=\"gl\"/><text x=\"40\" y=\"67\" text-anchor=\"end\" class=\"ax\">200</text><line x1=\"46\" x2=\"510\" y1=\"63\" y2=\"63\" class=\"gl\"/><text x=\"40\" y=\"23\" text-anchor=\"end\" class=\"ax\">250</text><line x1=\"46\" x2=\"510\" y1=\"19\" y2=\"19\" class=\"gl\"/><text x=\"40\" y=\"12\" text-anchor=\"end\" class=\"ax\">cm</text><polygon points=\"46,202 123,158 201,125 278,95 355,89 433,97 510,158 510,213 433,165 355,151 278,164 201,186 123,214 46,236\" fill=\"#1463F3\" fill-opacity=\"0.13\" stroke=\"none\"/><polyline points=\"46,236 123,219 201,202 278,188 355,192 433,208 510,226\" fill=\"none\" stroke=\"#8A94A3\" stroke-width=\"2.5\"/><text x=\"516\" y=\"230\" class=\"lb\" fill=\"#8A94A3\">base 1,258 m</text><polyline points=\"46,224 123,192 201,157 278,129 355,123 433,133 510,186\" fill=\"none\" stroke=\"#1463F3\" stroke-width=\"2.5\"/><text x=\"516\" y=\"190\" class=\"lb\" fill=\"#1463F3\">metà 1,976 m</text><polyline points=\"46,200 123,144 201,97 278,61 355,45 433,35 510,71\" fill=\"none\" stroke=\"#0B7A53\" stroke-width=\"2.5\"/><text x=\"516\" y=\"75\" class=\"lb\" fill=\"#0B7A53\">vetta 2,695 m</text></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 270\" role=\"img\" aria-label=\"nov. dic. ene. feb. mar. abr. may.\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"46\" y=\"262\" text-anchor=\"middle\" class=\"ax\">nov.</text><text x=\"123\" y=\"262\" text-anchor=\"middle\" class=\"ax\">dic.</text><text x=\"201\" y=\"262\" text-anchor=\"middle\" class=\"ax\">ene.</text><text x=\"278\" y=\"262\" text-anchor=\"middle\" class=\"ax\">feb.</text><text x=\"355\" y=\"262\" text-anchor=\"middle\" class=\"ax\">mar.</text><text x=\"433\" y=\"262\" text-anchor=\"middle\" class=\"ax\">abr.</text><text x=\"510\" y=\"262\" text-anchor=\"middle\" class=\"ax\">may.</text><text x=\"40\" y=\"244\" text-anchor=\"end\" class=\"ax\">0</text><line x1=\"46\" x2=\"510\" y1=\"240\" y2=\"240\" class=\"gl\"/><text x=\"40\" y=\"200\" text-anchor=\"end\" class=\"ax\">50</text><line x1=\"46\" x2=\"510\" y1=\"196\" y2=\"196\" class=\"gl\"/><text x=\"40\" y=\"155\" text-anchor=\"end\" class=\"ax\">100</text><line x1=\"46\" x2=\"510\" y1=\"151\" y2=\"151\" class=\"gl\"/><text x=\"40\" y=\"111\" text-anchor=\"end\" class=\"ax\">150</text><line x1=\"46\" x2=\"510\" y1=\"107\" y2=\"107\" class=\"gl\"/><text x=\"40\" y=\"67\" text-anchor=\"end\" class=\"ax\">200</text><line x1=\"46\" x2=\"510\" y1=\"63\" y2=\"63\" class=\"gl\"/><text x=\"40\" y=\"23\" text-anchor=\"end\" class=\"ax\">250</text><line x1=\"46\" x2=\"510\" y1=\"19\" y2=\"19\" class=\"gl\"/><text x=\"40\" y=\"12\" text-anchor=\"end\" class=\"ax\">cm</text><polygon points=\"46,202 123,158 201,125 278,95 355,89 433,97 510,158 510,213 433,165 355,151 278,164 201,186 123,214 46,236\" fill=\"#1463F3\" fill-opacity=\"0.13\" stroke=\"none\"/><polyline points=\"46,236 123,219 201,202 278,188 355,192 433,208 510,226\" fill=\"none\" stroke=\"#8A94A3\" stroke-width=\"2.5\"/><text x=\"516\" y=\"230\" class=\"lb\" fill=\"#8A94A3\">base 1,258 m</text><polyline points=\"46,224 123,192 201,157 278,129 355,123 433,133 510,186\" fill=\"none\" stroke=\"#1463F3\" stroke-width=\"2.5\"/><text x=\"516\" y=\"190\" class=\"lb\" fill=\"#1463F3\">media 1,976 m</text><polyline points=\"46,200 123,144 201,97 278,61 355,45 433,35 510,71\" fill=\"none\" stroke=\"#0B7A53\" stroke-width=\"2.5\"/><text x=\"516\" y=\"75\" class=\"lb\" fill=\"#0B7A53\">cima 2,695 m</text></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 270\" role=\"img\" aria-label=\"نونبر دجنبر يناير فبراير مارس أبريل ماي\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"46\" y=\"262\" text-anchor=\"middle\" class=\"ax\">نونبر</text><text x=\"123\" y=\"262\" text-anchor=\"middle\" class=\"ax\">دجنبر</text><text x=\"201\" y=\"262\" text-anchor=\"middle\" class=\"ax\">يناير</text><text x=\"278\" y=\"262\" text-anchor=\"middle\" class=\"ax\">فبراير</text><text x=\"355\" y=\"262\" text-anchor=\"middle\" class=\"ax\">مارس</text><text x=\"433\" y=\"262\" text-anchor=\"middle\" class=\"ax\">أبريل</text><text x=\"510\" y=\"262\" text-anchor=\"middle\" class=\"ax\">ماي</text><text x=\"40\" y=\"244\" text-anchor=\"end\" class=\"ax\">0</text><line x1=\"46\" x2=\"510\" y1=\"240\" y2=\"240\" class=\"gl\"/><text x=\"40\" y=\"200\" text-anchor=\"end\" class=\"ax\">50</text><line x1=\"46\" x2=\"510\" y1=\"196\" y2=\"196\" class=\"gl\"/><text x=\"40\" y=\"155\" text-anchor=\"end\" class=\"ax\">100</text><line x1=\"46\" x2=\"510\" y1=\"151\" y2=\"151\" class=\"gl\"/><text x=\"40\" y=\"111\" text-anchor=\"end\" class=\"ax\">150</text><line x1=\"46\" x2=\"510\" y1=\"107\" y2=\"107\" class=\"gl\"/><text x=\"40\" y=\"67\" text-anchor=\"end\" class=\"ax\">200</text><line x1=\"46\" x2=\"510\" y1=\"63\" y2=\"63\" class=\"gl\"/><text x=\"40\" y=\"23\" text-anchor=\"end\" class=\"ax\">250</text><line x1=\"46\" x2=\"510\" y1=\"19\" y2=\"19\" class=\"gl\"/><text x=\"40\" y=\"12\" text-anchor=\"end\" class=\"ax\">cm</text><polygon points=\"46,202 123,158 201,125 278,95 355,89 433,97 510,158 510,213 433,165 355,151 278,164 201,186 123,214 46,236\" fill=\"#1463F3\" fill-opacity=\"0.13\" stroke=\"none\"/><polyline points=\"46,236 123,219 201,202 278,188 355,192 433,208 510,226\" fill=\"none\" stroke=\"#8A94A3\" stroke-width=\"2.5\"/><text x=\"516\" y=\"230\" class=\"lb\" fill=\"#8A94A3\">التحت 1,258 m</text><polyline points=\"46,224 123,192 201,157 278,129 355,123 433,133 510,186\" fill=\"none\" stroke=\"#1463F3\" stroke-width=\"2.5\"/><text x=\"516\" y=\"190\" class=\"lb\" fill=\"#1463F3\">الوسط 1,976 m</text><polyline points=\"46,200 123,144 201,97 278,61 355,45 433,35 510,71\" fill=\"none\" stroke=\"#0B7A53\" stroke-width=\"2.5\"/><text x=\"516\" y=\"75\" class=\"lb\" fill=\"#0B7A53\">الفوق 2,695 m</text></svg>"
+   },
+   "after": 1
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Planning a Courchevel ski trip: the snow season week by week",
+   "description": "When to book Courchevel and the 3 Vallées, which village to stay in and where the snow lasts, planned from 46 past winters of snow data.",
+   "lede": "Courchevel is not one village but four, named after their heights: Courchevel 1300 (Le Praz), 1550, 1650 (Moriond) and 1850. All of them sit in Les Trois Vallées, which has 600 km of slopes and 183 lifts. This planner uses our snow history to answer the questions that decide a trip: when to go, where to stay and which slopes to ski at each point of the winter.",
+   "sections": [
+    {
+     "h": "Step 1: choose your weeks",
+     "p": [
+      "Our snow history covers 46 past winters (1980-81 to 2025-26), as model values for an area corrected for height, at three heights: 1,258 m, 1,976 m and 2,695 m. At 1,976 m, the heart of the ski area, a typical winter has about 54 cm in December, 94 cm in January, 125 cm in February, 132 cm in March and still 121 cm in April. In 9 winters out of 10 there are at least 50 cm at that height for 18 weeks, and the week with the best record, in early March, had that depth in every winter of our record.",
+      "So: the safest weeks run from late January to the end of March. Early December is a fair bet only for the upper slopes, and April is often excellent up high but thin low down: by May mid-mountain is down to about 61 cm in a typical winter."
+     ]
+    },
+    {
+     "h": "Step 2: choose your village",
+     "p": [
+      "Height matters for the walk back to your bed. Near the bottom of our record, at 1,258 m, a typical winter peaks at only about 71 cm, with about 59 cm in February and 54 cm in March; no week has 50 cm in 9 winters out of 10. The higher villages are the safe choice for skiing back to the door late in the season, while Le Praz suits people who are happy to ride a lift down when the lowest runs are thin."
+     ]
+    },
+    {
+     "h": "Step 3: plan your days on the mountain",
+     "p": [
+      "Near the top, at 2,695 m, the usual depth is about 162 cm in January, 202 cm in February, 220 cm in March and 232 cm in April, the deepest month. Ski the high, north-facing slopes when the snow is cold and dry, and move to sunny slopes from late morning in spring, once they have softened. The whole 3 Vallées is linked on one pass, as it has been since 1971, so on a crowded day it is worth heading towards Méribel or beyond; the highest point of the linked area is 3,230 m, in Val Thorens."
+     ]
+    },
+    {
+     "h": "Step 4: allow for a weaker winter",
+     "p": [
+      "Plans should leave room for a lean season. At mid-mountain the deepest snow of a typical winter is about 158 cm, but our record ranges from about 118 cm in the thinnest winter to about 227 cm in the snowiest. Over time the snow has thinned: the median peak at 1,976 m was about 171 cm in our first fifteen winters and about 152 cm in the last fifteen, and the days with snow on the ground fell from about 241 to 217. Last winter, 2025-26, was better than usual, with a peak of about 173 cm."
+     ]
+    },
+    {
+     "h": "Step 5: travel and safety",
+     "p": [
+      "The rail gateway is Moûtiers-Salins-Brides-les-Bains station, with direct TGV services from Paris in around 5 hours 30 minutes; by road, Moûtiers is reached from Albertville. Courchevel also has an altiport, a famous short runway of 525 m with a gradient of 18.5 %. History buffs can see the Olympic jumps at Le Praz, which hosted ski jumping in 1992.",
+      "Before you go off-piste, read the Météo-France avalanche bulletin, and remember that snow on our map does not mean a lift is running: check lifts and opening dates on the official website."
+     ]
+    }
+   ],
+   "advice": [
+    "Book late January to late March for the most reliable snow; early December only if you will ski the upper slopes.",
+    "Staying low in Le Praz: plan to ride a lift down when the bottom runs are thin.",
+    "Arrive by TGV to Moûtiers and finish by bus or transfer.",
+    "Off-piste: read the Météo-France avalanche bulletin (BERA) first."
+   ],
+   "references": [
+    {
+     "text": "Wikipedia, 'Courchevel', retrieved 7 November 2026.",
+     "url": "https://en.wikipedia.org/wiki/Courchevel"
+    },
+    {
+     "text": "Wikipedia, 'Les Trois Vallées', retrieved 7 November 2026.",
+     "url": "https://en.wikipedia.org/wiki/Les_Trois_Vall%C3%A9es"
+    },
+    {
+     "text": "Météo-France, mountain weather and avalanche risk bulletin (BERA) for the French massifs.",
+     "url": "https://meteofrance.com/meteo-montagne"
+    }
+   ],
+   "pin": "Courchevel",
+   "captions": {
+    "months": "Usual snow depth by month at the base, mid-mountain and top (middle of 46 past winters, model); band = 9 of 10 winters at mid-mountain.",
+    "map": "Courchevel and the mountains around it (shaded relief)."
+   },
+   "method": "Snow numbers: SnowScope snow history, 46 past winters (1980-81 to 2025-26) at three heights of the resort, a model of the past corrected for height (an estimate for an area, not resort reports). Lift, run and access facts: the sources listed below, checked on the date shown."
+  },
+  "fr": {
+   "title": "Préparer un séjour à Courchevel : la saison de neige semaine par semaine",
+   "description": "Quand réserver Courchevel et les 3 Vallées, quel village choisir et où la neige tient, d'après 46 hivers passés.",
+   "lede": "Courchevel n'est pas un village mais quatre, nommés d'après leur altitude : Courchevel 1300 (Le Praz), 1550, 1650 (Moriond) et 1850. Tous font partie des 3 Vallées, qui comptent 600 km de pistes et 183 remontées. Ce guide pratique utilise notre historique de neige pour répondre aux questions qui décident d'un séjour : quand partir, où loger et quelles pentes skier à chaque moment de l'hiver.",
+   "sections": [
+    {
+     "h": "Étape 1 : choisir ses semaines",
+     "p": [
+      "Notre historique couvre 46 hivers passés (1980-81 à 2025-26), en valeurs de modèle pour une zone corrigées de l'altitude, à trois altitudes : 1 258 m, 1 976 m et 2 695 m. À 1 976 m, au cœur du domaine, un hiver typique compte environ 54 cm en décembre, 94 cm en janvier, 125 cm en février, 132 cm en mars et encore 121 cm en avril. Neuf hivers sur 10, il y a au moins 50 cm à cette altitude pendant 18 semaines, et la semaine la plus fiable, début mars, a eu cette hauteur tous les hivers de notre série.",
+      "Donc : les semaines les plus sûres vont de fin janvier à fin mars. Début décembre est un pari correct seulement pour le haut du domaine, et avril est souvent excellent en altitude mais maigre en bas : en mai, la mi-pente tombe à environ 61 cm dans un hiver typique."
+     ]
+    },
+    {
+     "h": "Étape 2 : choisir son village",
+     "p": [
+      "L'altitude compte pour le retour au logement. Vers le bas de notre série, à 1 258 m, un hiver typique culmine à environ 71 cm seulement, avec environ 59 cm en février et 54 cm en mars ; aucune semaine n'a 50 cm neuf hivers sur 10. Les villages plus hauts sont le choix sûr pour rentrer skis aux pieds en fin de saison, tandis que Le Praz convient à ceux qui acceptent de redescendre en remontée quand les pistes basses sont maigres."
+     ]
+    },
+    {
+     "h": "Étape 3 : organiser ses journées",
+     "p": [
+      "Près du sommet, à 2 695 m, la hauteur habituelle est d'environ 162 cm en janvier, 202 cm en février, 220 cm en mars et 232 cm en avril, le mois le plus enneigé. Skiez les pentes hautes orientées au nord quand la neige est froide et sèche, et passez aux pentes ensoleillées en fin de matinée au printemps, une fois qu'elles ont ramolli. Toutes les 3 Vallées se skient avec un seul forfait, comme depuis 1971 : un jour d'affluence, filez vers Méribel ou plus loin ; le point culminant du domaine relié est à 3 230 m, à Val Thorens."
+     ]
+    },
+    {
+     "h": "Étape 4 : prévoir un hiver plus faible",
+     "p": [
+      "Un plan doit laisser de la place à une saison maigre. À mi-pente, la neige la plus épaisse d'un hiver typique est d'environ 158 cm, mais notre série va d'environ 118 cm l'hiver le plus maigre à environ 227 cm le plus enneigé. Avec le temps, la neige s'est amincie : le maximum médian à 1 976 m était d'environ 171 cm sur nos quinze premiers hivers et d'environ 152 cm sur les quinze derniers, et les jours de neige au sol sont passés d'environ 241 à 217. L'hiver dernier, 2025-26, a été meilleur que d'habitude, avec un maximum d'environ 173 cm."
+     ]
+    },
+    {
+     "h": "Étape 5 : transport et sécurité",
+     "p": [
+      "La porte d'entrée ferroviaire est la gare de Moûtiers-Salins-Brides-les-Bains, avec des TGV directs depuis Paris en 5 h 30 environ ; par la route, on rejoint Moûtiers depuis Albertville. Courchevel a aussi un altiport, une célèbre piste courte de 525 m avec une pente de 18,5 %. Les amateurs d'histoire verront les tremplins olympiques du Praz, qui a accueilli le saut à ski en 1992.",
+      "Avant le hors-piste, lisez le bulletin d'avalanche de Météo-France, et rappelez-vous que de la neige sur notre carte ne veut pas dire qu'une remontée tourne : vérifiez remontées et dates d'ouverture sur le site officiel."
+     ]
+    }
+   ],
+   "advice": [
+    "Réservez de fin janvier à fin mars pour la neige la plus fiable ; début décembre seulement si vous skiez le haut du domaine.",
+    "Logement bas au Praz : prévoyez de redescendre en remontée quand les pistes du bas sont maigres.",
+    "Venez en TGV jusqu'à Moûtiers et finissez en car ou en transfert.",
+    "Hors-piste : lisez d'abord le bulletin d'avalanche de Météo-France (BERA)."
+   ],
+   "references": [
+    {
+     "text": "Wikipedia, 'Courchevel', retrieved 7 November 2026.",
+     "url": "https://en.wikipedia.org/wiki/Courchevel"
+    },
+    {
+     "text": "Wikipedia, 'Les Trois Vallées', retrieved 7 November 2026.",
+     "url": "https://en.wikipedia.org/wiki/Les_Trois_Vall%C3%A9es"
+    },
+    {
+     "text": "Météo-France, mountain weather and avalanche risk bulletin (BERA) for the French massifs.",
+     "url": "https://meteofrance.com/meteo-montagne"
+    }
+   ],
+   "captions": {
+    "months": "Hauteur de neige habituelle par mois en bas, à mi-pente et au sommet (milieu de 46 hivers passés, modèle) ; bande = 9 hivers sur 10 à mi-pente.",
+    "map": "Courchevel et les montagnes autour (relief ombré)."
+   },
+   "method": "Chiffres de neige : historique SnowScope, 46 hivers passés (1980-81 à 2025-26) à trois altitudes de la station, un modèle du passé corrigé de l'altitude (une estimation pour une zone, pas les bulletins de la station). Remontées, pistes et accès : les sources ci-dessous, vérifiées à la date indiquée."
+  },
+  "de": {
+   "title": "Courchevel-Reise planen: die Schneesaison Woche für Woche",
+   "description": "Wann Courchevel und die 3 Vallées buchen, welches Dorf wählen und wo der Schnee hält, geplant aus 46 vergangenen Wintern.",
+   "lede": "Courchevel ist nicht ein Dorf, sondern vier, benannt nach ihrer Höhe: Courchevel 1300 (Le Praz), 1550, 1650 (Moriond) und 1850. Alle liegen in Les Trois Vallées mit 600 km Pisten und 183 Liften. Dieser Planer beantwortet mit unserer Schneehistorie die Fragen, die über eine Reise entscheiden: wann fahren, wo wohnen und welche Hänge zu welchem Zeitpunkt des Winters.",
+   "sections": [
+    {
+     "h": "Schritt 1: die Wochen wählen",
+     "p": [
+      "Unsere Schneehistorie umfasst 46 vergangene Winter (1980-81 bis 2025-26), als höhenkorrigierte Modellwerte für eine Fläche, auf drei Höhen: 1.258 m, 1.976 m und 2.695 m. Auf 1.976 m, mitten im Skigebiet, hat ein typischer Winter etwa 54 cm im Dezember, 94 cm im Januar, 125 cm im Februar, 132 cm im März und noch 121 cm im April. In 9 von 10 Wintern liegen auf dieser Höhe 18 Wochen lang mindestens 50 cm, und die Woche mit der besten Bilanz, Anfang März, hatte diese Höhe in jedem Winter unserer Reihe.",
+      "Also: Die sichersten Wochen sind Ende Januar bis Ende März. Anfang Dezember ist nur für die oberen Hänge eine faire Wette, und der April ist oben oft hervorragend, unten aber dünn: Im Mai liegen an der Mittelstation in einem typischen Winter nur noch etwa 61 cm."
+     ]
+    },
+    {
+     "h": "Schritt 2: das Dorf wählen",
+     "p": [
+      "Die Höhe zählt für den Weg zurück ins Bett. Am unteren Ende unserer Reihe, auf 1.258 m, erreicht ein typischer Winter nur etwa 71 cm, mit etwa 59 cm im Februar und 54 cm im März; keine Woche hat 50 cm in 9 von 10 Wintern. Die höheren Dörfer sind die sichere Wahl, um spät in der Saison bis vor die Tür zu fahren; Le Praz passt zu allen, die gern mit dem Lift ins Tal fahren, wenn die untersten Pisten dünn sind."
+     ]
+    },
+    {
+     "h": "Schritt 3: die Tage am Berg planen",
+     "p": [
+      "Nahe am Gipfel, auf 2.695 m, liegen üblicherweise etwa 162 cm im Januar, 202 cm im Februar, 220 cm im März und 232 cm im April, dem schneereichsten Monat. Fahr die hohen Nordhänge, wenn der Schnee kalt und trocken ist, und wechsle im Frühjahr ab dem späten Vormittag auf die Sonnenhänge, wenn sie aufgefirnt sind. Die ganzen 3 Vallées sind mit einem Skipass befahrbar, wie seit 1971; an vollen Tagen lohnt der Weg Richtung Méribel oder weiter; der höchste Punkt des Verbunds liegt auf 3.230 m in Val Thorens."
+     ]
+    },
+    {
+     "h": "Schritt 4: mit einem schwächeren Winter rechnen",
+     "p": [
+      "Ein Plan sollte Platz für eine magere Saison lassen. An der Mittelstation erreicht ein typischer Winter etwa 158 cm, unsere Reihe reicht aber von etwa 118 cm im dünnsten Winter bis etwa 227 cm im schneereichsten. Mit der Zeit ist der Schnee dünner geworden: Das mittlere Maximum auf 1.976 m lag in unseren ersten fünfzehn Wintern bei etwa 171 cm und in den letzten fünfzehn bei etwa 152 cm, und die Tage mit Schnee am Boden sanken von etwa 241 auf 217. Der letzte Winter, 2025-26, war besser als üblich, mit einem Maximum von etwa 173 cm."
+     ]
+    },
+    {
+     "h": "Schritt 5: Anreise und Sicherheit",
+     "p": [
+      "Das Bahn-Tor ist der Bahnhof Moûtiers-Salins-Brides-les-Bains, mit direkten TGV ab Paris in etwa 5 Stunden 30 Minuten; auf der Straße erreicht man Moûtiers von Albertville. Courchevel hat auch einen Altiport, eine berühmte kurze Piste von 525 m mit 18,5 % Gefälle. Geschichtsfans sehen in Le Praz die Olympiaschanzen, auf denen 1992 das Skispringen stattfand.",
+      "Lies vor jeder Abfahrt abseits der Piste den Lawinenlagebericht von Météo-France, und denk daran: Schnee auf unserer Karte heißt nicht, dass ein Lift läuft. Prüfe Lifte und Öffnungstermine auf der offiziellen Website."
+     ]
+    }
+   ],
+   "advice": [
+    "Buch Ende Januar bis Ende März für den sichersten Schnee; Anfang Dezember nur, wenn du oben fährst.",
+    "Unterkunft unten in Le Praz: Plane ein, mit dem Lift ins Tal zu fahren, wenn die unteren Pisten dünn sind.",
+    "Reise mit dem TGV nach Moûtiers und dann mit Bus oder Transfer.",
+    "Abseits der Piste: Lies zuerst den Lawinenlagebericht von Météo-France (BERA)."
+   ],
+   "references": [
+    {
+     "text": "Wikipedia, 'Courchevel', retrieved 7 November 2026.",
+     "url": "https://en.wikipedia.org/wiki/Courchevel"
+    },
+    {
+     "text": "Wikipedia, 'Les Trois Vallées', retrieved 7 November 2026.",
+     "url": "https://en.wikipedia.org/wiki/Les_Trois_Vall%C3%A9es"
+    },
+    {
+     "text": "Météo-France, mountain weather and avalanche risk bulletin (BERA) for the French massifs.",
+     "url": "https://meteofrance.com/meteo-montagne"
+    }
+   ],
+   "captions": {
+    "months": "Übliche Schneehöhe pro Monat im Tal, an der Mittelstation und am Gipfel (Mitte von 46 vergangenen Wintern, Modell); Band = 9 von 10 Wintern an der Mittelstation.",
+    "map": "Courchevel und die Berge rundherum (Schummerung)."
+   },
+   "method": "Schneewerte: SnowScope-Schneehistorie, 46 vergangene Winter (1980-81 bis 2025-26) auf drei Höhen des Skigebiets, ein höhenkorrigiertes Modell der Vergangenheit (eine Schätzung für eine Fläche, keine Meldungen des Skigebiets). Lifte, Pisten und Anreise: die Quellen unten, geprüft am angegebenen Datum."
+  },
+  "it": {
+   "title": "Organizzare un viaggio a Courchevel: la stagione della neve settimana per settimana",
+   "description": "Quando prenotare Courchevel e le 3 Vallées, quale paese scegliere e dove la neve resiste, da 46 inverni passati.",
+   "lede": "Courchevel non è un paese ma quattro, chiamati con la loro quota: Courchevel 1300 (Le Praz), 1550, 1650 (Moriond) e 1850. Tutti fanno parte delle Trois Vallées, con 600 km di piste e 183 impianti. Questa guida usa il nostro storico neve per rispondere alle domande che decidono un viaggio: quando partire, dove dormire e quali pendii sciare in ogni momento dell'inverno.",
+   "sections": [
+    {
+     "h": "Passo 1: scegliere le settimane",
+     "p": [
+      "Il nostro storico copre 46 inverni passati (1980-81 - 2025-26), come valori di modello per un'area corretti per la quota, a tre quote: 1.258 m, 1.976 m e 2.695 m. A 1.976 m, nel cuore del comprensorio, un inverno tipico ha circa 54 cm a dicembre, 94 cm a gennaio, 125 cm a febbraio, 132 cm a marzo e ancora 121 cm ad aprile. In 9 inverni su 10 ci sono almeno 50 cm a quella quota per 18 settimane, e la settimana più affidabile, a inizio marzo, ha avuto quello spessore in tutti gli inverni della nostra serie.",
+      "Quindi: le settimane più sicure vanno da fine gennaio a fine marzo. Inizio dicembre è una scommessa onesta solo per la parte alta, e aprile è spesso ottimo in quota ma scarso in basso: a maggio a metà montagna si scende a circa 61 cm in un inverno tipico."
+     ]
+    },
+    {
+     "h": "Passo 2: scegliere il paese",
+     "p": [
+      "La quota conta per il rientro a casa. In fondo alla nostra serie, a 1.258 m, un inverno tipico arriva solo a circa 71 cm, con circa 59 cm a febbraio e 54 cm a marzo; nessuna settimana ha 50 cm in 9 inverni su 10. I paesi più alti sono la scelta sicura per rientrare con gli sci a fine stagione, mentre Le Praz è per chi accetta di scendere in impianto quando le piste basse sono scarse."
+     ]
+    },
+    {
+     "h": "Passo 3: organizzare le giornate",
+     "p": [
+      "Vicino alla cima, a 2.695 m, l'altezza abituale è di circa 162 cm a gennaio, 202 cm a febbraio, 220 cm a marzo e 232 cm ad aprile, il mese più nevoso. Sciate i pendii alti esposti a nord quando la neve è fredda e asciutta, e in primavera passate ai versanti al sole da fine mattinata, quando si sono ammorbiditi. Tutte le 3 Vallées si sciano con un solo skipass, come dal 1971: in una giornata affollata conviene spostarsi verso Méribel o oltre; il punto più alto del comprensorio collegato è a 3.230 m, a Val Thorens."
+     ]
+    },
+    {
+     "h": "Passo 4: mettere in conto un inverno debole",
+     "p": [
+      "Un piano deve lasciare spazio a una stagione magra. A metà montagna il massimo di un inverno tipico è di circa 158 cm, ma la nostra serie va da circa 118 cm nell'inverno più povero a circa 227 cm nel più nevoso. Col tempo la neve si è assottigliata: il massimo mediano a 1.976 m era di circa 171 cm nei primi quindici inverni e di circa 152 cm negli ultimi quindici, e i giorni con neve al suolo sono scesi da circa 241 a 217. Lo scorso inverno, 2025-26, è andato meglio del solito, con un massimo di circa 173 cm."
+     ]
+    },
+    {
+     "h": "Passo 5: viaggio e sicurezza",
+     "p": [
+      "La porta ferroviaria è la stazione di Moûtiers-Salins-Brides-les-Bains, con TGV diretti da Parigi in circa 5 ore e 30 minuti; in strada si arriva a Moûtiers da Albertville. Courchevel ha anche un altiporto, una famosa pista corta di 525 m con pendenza del 18,5 %. Gli appassionati di storia possono vedere i trampolini olimpici di Le Praz, che nel 1992 ospitò il salto con gli sci.",
+      "Prima del fuoripista leggete il bollettino valanghe di Météo-France, e ricordate che neve sulla nostra mappa non significa impianti in funzione: controllate impianti e date di apertura sul sito ufficiale."
+     ]
+    }
+   ],
+   "advice": [
+    "Prenotate da fine gennaio a fine marzo per la neve più affidabile; inizio dicembre solo se sciate in alto.",
+    "Alloggio in basso a Le Praz: mettete in conto di scendere in impianto quando le piste basse sono scarse.",
+    "Arrivate in TGV a Moûtiers e proseguite in bus o transfer.",
+    "Fuoripista: leggete prima il bollettino valanghe di Météo-France (BERA)."
+   ],
+   "references": [
+    {
+     "text": "Wikipedia, 'Courchevel', retrieved 7 November 2026.",
+     "url": "https://en.wikipedia.org/wiki/Courchevel"
+    },
+    {
+     "text": "Wikipedia, 'Les Trois Vallées', retrieved 7 November 2026.",
+     "url": "https://en.wikipedia.org/wiki/Les_Trois_Vall%C3%A9es"
+    },
+    {
+     "text": "Météo-France, mountain weather and avalanche risk bulletin (BERA) for the French massifs.",
+     "url": "https://meteofrance.com/meteo-montagne"
+    }
+   ],
+   "captions": {
+    "months": "Altezza neve abituale per mese alla base, a metà montagna e in vetta (mediana di 46 inverni passati, modello); banda = 9 inverni su 10 a metà montagna.",
+    "map": "Courchevel e le montagne intorno (rilievo ombreggiato)."
+   },
+   "method": "Numeri della neve: storico neve SnowScope, 46 inverni passati (1980-81 - 2025-26) a tre quote della località, un modello del passato corretto per la quota (una stima per un'area, non i bollettini della località). Impianti, piste e accesso: le fonti qui sotto, verificate alla data indicata."
+  },
+  "es": {
+   "title": "Planificar un viaje a Courchevel: la temporada de nieve semana a semana",
+   "description": "Cuándo reservar Courchevel y las 3 Vallées, qué pueblo elegir y dónde dura la nieve, a partir de 46 inviernos pasados.",
+   "lede": "Courchevel no es un pueblo sino cuatro, llamados por su altitud: Courchevel 1300 (Le Praz), 1550, 1650 (Moriond) y 1850. Todos están en Les Trois Vallées, con 600 km de pistas y 183 remontes. Este planificador usa nuestro histórico de nieve para responder a las preguntas que deciden un viaje: cuándo ir, dónde alojarse y qué laderas esquiar en cada momento del invierno.",
+   "sections": [
+    {
+     "h": "Paso 1: elige las semanas",
+     "p": [
+      "Nuestro histórico cubre 46 inviernos pasados (1980-81 a 2025-26), como valores de modelo para una zona corregidos por altitud, a tres alturas: 1258 m, 1976 m y 2695 m. A 1976 m, en el corazón del dominio, un invierno típico tiene unos 54 cm en diciembre, 94 cm en enero, 125 cm en febrero, 132 cm en marzo y aún 121 cm en abril. En 9 de cada 10 inviernos hay al menos 50 cm a esa altura durante 18 semanas, y la semana más fiable, a principios de marzo, tuvo ese espesor en todos los inviernos de nuestra serie.",
+      "Así que las semanas más seguras van de finales de enero a finales de marzo. Principios de diciembre es una apuesta razonable solo para la zona alta, y abril suele ser excelente arriba pero escaso abajo: en mayo la media montaña baja a unos 61 cm en un invierno típico."
+     ]
+    },
+    {
+     "h": "Paso 2: elige el pueblo",
+     "p": [
+      "La altura importa para volver al alojamiento. En lo bajo de nuestra serie, a 1258 m, un invierno típico solo llega a unos 71 cm, con unos 59 cm en febrero y 54 cm en marzo; ninguna semana tiene 50 cm en 9 de cada 10 inviernos. Los pueblos más altos son la opción segura para volver esquiando a final de temporada, mientras que Le Praz va bien a quien no le importa bajar en remonte cuando las pistas bajas están escasas."
+     ]
+    },
+    {
+     "h": "Paso 3: organiza los días en la montaña",
+     "p": [
+      "Cerca de la cima, a 2695 m, el espesor habitual ronda los 162 cm en enero, 202 cm en febrero, 220 cm en marzo y 232 cm en abril, el mes con más nieve. Esquía las laderas altas orientadas al norte cuando la nieve está fría y seca, y en primavera pasa a las soleadas a media mañana, cuando se han ablandado. Todas las 3 Vallées se esquían con un solo forfait, como desde 1971: en un día con mucha gente compensa ir hacia Méribel o más allá; el punto más alto del dominio enlazado está a 3230 m, en Val Thorens."
+     ]
+    },
+    {
+     "h": "Paso 4: cuenta con un invierno flojo",
+     "p": [
+      "Un plan debe dejar margen para una temporada pobre. A media montaña el máximo de un invierno típico ronda los 158 cm, pero nuestra serie va de unos 118 cm en el invierno más pobre a unos 227 cm en el más nevado. Con el tiempo la nieve ha adelgazado: el máximo mediano a 1976 m era de unos 171 cm en nuestros primeros quince inviernos y de unos 152 cm en los últimos quince, y los días con nieve en el suelo bajaron de unos 241 a 217. El invierno pasado, 2025-26, fue mejor de lo habitual, con un máximo de unos 173 cm."
+     ]
+    },
+    {
+     "h": "Paso 5: viaje y seguridad",
+     "p": [
+      "La puerta de entrada en tren es la estación de Moûtiers-Salins-Brides-les-Bains, con TGV directos desde París en unas 5 horas y 30 minutos; por carretera se llega a Moûtiers desde Albertville. Courchevel tiene también un altipuerto, una famosa pista corta de 525 m con una pendiente del 18,5 %. A los aficionados a la historia les gustará ver los trampolines olímpicos de Le Praz, que acogió el salto de esquí en 1992.",
+      "Antes de salir fuera de pista, lee el boletín de aludes de Météo-France, y recuerda que nieve en nuestro mapa no significa que funcione un remonte: consulta remontes y fechas de apertura en la web oficial."
+     ]
+    }
+   ],
+   "advice": [
+    "Reserva de finales de enero a finales de marzo para la nieve más fiable; principios de diciembre solo si vas a esquiar arriba.",
+    "Alojamiento bajo en Le Praz: cuenta con bajar en remonte cuando las pistas bajas estén escasas.",
+    "Llega en TGV a Moûtiers y termina en autobús o traslado.",
+    "Fuera de pista: lee antes el boletín de aludes de Météo-France (BERA)."
+   ],
+   "references": [
+    {
+     "text": "Wikipedia, 'Courchevel', retrieved 7 November 2026.",
+     "url": "https://en.wikipedia.org/wiki/Courchevel"
+    },
+    {
+     "text": "Wikipedia, 'Les Trois Vallées', retrieved 7 November 2026.",
+     "url": "https://en.wikipedia.org/wiki/Les_Trois_Vall%C3%A9es"
+    },
+    {
+     "text": "Météo-France, mountain weather and avalanche risk bulletin (BERA) for the French massifs.",
+     "url": "https://meteofrance.com/meteo-montagne"
+    }
+   ],
+   "captions": {
+    "months": "Espesor de nieve habitual por mes en la base, a media montaña y en la cima (mitad de 46 inviernos pasados, modelo); banda = 9 de cada 10 inviernos a media montaña.",
+    "map": "Courchevel y las montañas de alrededor (relieve sombreado)."
+   },
+   "method": "Cifras de nieve: histórico de nieve de SnowScope, 46 inviernos pasados (1980-81 a 2025-26) a tres alturas de la estación, un modelo del pasado corregido por altitud (una estimación para una zona, no partes de la estación). Remontes, pistas y acceso: las fuentes de abajo, comprobadas en la fecha indicada."
+  },
+  "ar": {
+   "title": "تخطيط رحلة ل Courchevel: الموسم ديال التلج سيمانة بسيمانة",
+   "description": "إمتى تحجز Courchevel و 3 Vallées، أشمن قرية تختار وفين كيبقى التلج، من 46 شتوة اللي فاتت.",
+   "lede": "Courchevel ماشي قرية وحدة ولكن ربعة، سميتهم على العلو ديالهم: Courchevel 1300 (Le Praz)، 1550، 1650 (Moriond) و 1850. كاملين فـ Les Trois Vallées، اللي فيها 600 كم ديال البيستات و 183 تيليسييج. هاد الدليل كيخدم بالتاريخ ديال التلج ديالنا باش يجاوب على الأسئلة اللي كتقرر الرحلة: إمتى تمشي، فين تبات وأشمن بيستات تتزلج فكل وقت فالشتا.",
+   "sections": [
+    {
+     "h": "الخطوة 1: اختار السيمانات",
+     "p": [
+      "التاريخ ديالنا فيه 46 شتوة اللي فاتت (1980-81 حتى ل 2025-26)، بقيم ديال الموديل لمنطقة مصححة بالعلو، فتلاتة ديال العلوات: 1258 م، 1976 م و 2695 م. على 1976 م، فالقلب ديال الدومين، شتا عادية فيها تقريبا 54 سم فدجنبر، 94 سم فيناير، 125 سم ففبراير، 132 سم فمارس ومازال 121 سم فأبريل. ف 9 ديال الشتوات من 10 كاين على الأقل 50 سم فهاد العلو لمدة 18 سيمانة، والسيمانة الأضمن، فبداية مارس، كان فيها هاد العلو فكل شتا فالسلسلة ديالنا.",
+      "يعني: أضمن السيمانات من آخر يناير حتى ل آخر مارس. بداية دجنبر رهان معقول غير للفوق، وأبريل غالبا مزيان بزاف فالعلو ولكن رقيق لتحت: فماي الوسط ديال الجبل كينزل ل تقريبا 61 سم فشتا عادية."
+     ]
+    },
+    {
+     "h": "الخطوة 2: اختار القرية",
+     "p": [
+      "العلو كيهم باش ترجع للبيت. لتحت فالسلسلة ديالنا، على 1258 م، شتا عادية كتوصل غير ل تقريبا 71 سم، مع تقريبا 59 سم ففبراير و 54 سم فمارس؛ حتى سيمانة مافيها 50 سم ف 9 ديال الشتوات من 10. القرى العالية هوما الاختيار المضمون باش ترجع بالسكي فآخر الموسم، و Le Praz كتصلح للي ماعندوش مشكل يهبط فالتيليسييج ملي البيستات اللي لتحت كيكونو رقاق."
+     ]
+    },
+    {
+     "h": "الخطوة 3: نظم النهارات فالجبل",
+     "p": [
+      "قريب من الفوق، على 2695 م، العلو العادي تقريبا 162 سم فيناير، 202 سم ففبراير، 220 سم فمارس و 232 سم فأبريل، الشهر اللي فيه أكثر تلج. تزلج فالجهات العالية اللي كتشوف للشمال ملي يكون التلج بارد وناشف، وفالربيع دوز للجهات اللي فيها الشمس مع آخر الصباح ملي كيرطابو. 3 Vallées كاملة كتتزلج بفورفي واحد، بحال من 1971: فنهار فيه الزحام سير جهة Méribel ولا كثر؛ أعلى نقطة فالدومين المربوط على 3230 م، ف Val Thorens."
+     ]
+    },
+    {
+     "h": "الخطوة 4: حسب حساب شتا ضعيفة",
+     "p": [
+      "الخطة خاصها تخلي بلاصة لموسم ضعيف. فالوسط ديال الجبل أكثر تلج فشتا عادية تقريبا 158 سم، ولكن السلسلة ديالنا كتمشي من تقريبا 118 سم فأضعف شتا حتى ل تقريبا 227 سم فأكثر شتا فيها التلج. مع الوقت التلج نقص: القمة الوسطى على 1976 م كانت تقريبا 171 سم فخمسطاش ديال الشتوات اللولين وتقريبا 152 سم فخمسطاش اللخرين، والأيام اللي فيها التلج فالأرض نقصو من تقريبا 241 ل 217. الشتا اللي فاتت، 2025-26، كانت أحسن من العادة، بقمة تقريبا 173 سم."
+     ]
+    },
+    {
+     "h": "الخطوة 5: السفر والسلامة",
+     "p": [
+      "الباب ديال التران هو لاكار ديال Moûtiers-Salins-Brides-les-Bains، فيها TGV مباشر من باريس ف تقريبا 5 ساعات و 30 دقيقة؛ فالطريق كتوصل ل Moûtiers من Albertville. Courchevel فيها حتى مطار صغير فالجبل، بيست قصيرة مشهورة ديال 525 م بميل ديال 18.5 %. اللي كيحبو التاريخ يقدرو يشوفو المنصات الأولمبية ف Le Praz، اللي استقبلات القفز بالسكي ف 1992.",
+      "قبل ما تخرج من البيست، قرا النشرة ديال الانهيارات ديال Météo-France، وعقل بلي التلج فالخريطة ديالنا ماكيعنيش بلي التيليسييج خدام: شوف التيليسييجات والتواريخ فالموقع الرسمي."
+     ]
+    }
+   ],
+   "advice": [
+    "احجز من آخر يناير حتى ل آخر مارس باش يكون التلج مضمون؛ بداية دجنبر غير إلا غادي تتزلج فالفوق.",
+    "المبيت لتحت ف Le Praz: حسب حساب تهبط فالتيليسييج ملي البيستات اللي لتحت كيكونو رقاق.",
+    "جي فالـ TGV ل Moûtiers وكمل فالكار ولا الترانسفير.",
+    "برا البيست: قرا قبل النشرة ديال الانهيارات ديال Météo-France (BERA)."
+   ],
+   "references": [
+    {
+     "text": "Wikipedia, 'Courchevel', retrieved 7 November 2026.",
+     "url": "https://en.wikipedia.org/wiki/Courchevel"
+    },
+    {
+     "text": "Wikipedia, 'Les Trois Vallées', retrieved 7 November 2026.",
+     "url": "https://en.wikipedia.org/wiki/Les_Trois_Vall%C3%A9es"
+    },
+    {
+     "text": "Météo-France, mountain weather and avalanche risk bulletin (BERA) for the French massifs.",
+     "url": "https://meteofrance.com/meteo-montagne"
+    }
+   ],
+   "captions": {
+    "months": "العلو العادي ديال التلج فكل شهر فالتحت، فالوسط وفالفوق (الوسط ديال 46 شتوة اللي فاتو، موديل)؛ الشريط = 9 شتوات من 10 فالوسط.",
+    "map": "Courchevel والجبال اللي دايرين بيها (التضاريس)."
+   },
+   "method": "الأرقام ديال التلج: التاريخ ديال التلج ديال SnowScope، 46 شتوة اللي فاتت (1980-81 حتى ل 2025-26) فتلاتة ديال العلوات فالمحطة، موديل ديال اللي فات مصحح بالعلو (تقدير لمنطقة، ماشي البلاغات ديال المحطة). التيليسييجات، البيستات والطريق: المصادر اللي لتحت، متشافة فالتاريخ المكتوب."
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "hand (feature)"
+  },
+  "fr": {
+   "writer": "hand (feature)"
+  },
+  "de": {
+   "writer": "hand (feature)"
+  },
+  "it": {
+   "writer": "hand (feature)"
+  },
+  "es": {
+   "writer": "hand (feature)"
+  },
+  "ar": {
+   "writer": "hand (feature)"
+  }
+ },
+ "words_en": 589,
+ "indexable": true,
+ "main": {
+  "slug": "courchevel",
+  "name": "Courchevel",
+  "lat": 45.40499,
+  "lon": 6.63032
+ },
+ "places": [],
+ "resort_links": [
+  {
+   "slug": "courchevel",
+   "name": "Courchevel"
+  }
+ ],
+ "table": null,
+ "bulletins": [
+  {
+   "provider": "Météo-France BERA",
+   "url": "https://meteofrance.com/meteo-montagne"
+  }
+ ],
+ "trip_day": "",
+ "map_link": "https://snowscope.app/#@45.40499,6.63032,11",
+ "publish_utc": "2026-11-09T10:51:21Z"
+}

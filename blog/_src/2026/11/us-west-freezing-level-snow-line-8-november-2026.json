@@ -1,0 +1,794 @@
+{
+ "id": "2026-11-08-us_west-isotherm",
+ "slug": "us-west-freezing-level-snow-line-8-november-2026",
+ "date": "2026-11-08",
+ "published_utc": "2026-11-09T11:38:00Z",
+ "updated_utc": "2026-11-09T11:38:00Z",
+ "region": "US_WEST",
+ "angle": "isotherm",
+ "score": 58,
+ "signature": "aspen_snowmass:4200|taos_ski_valley:4300|crested_butte_mountain_resort:4300",
+ "keyword": {
+  "family": "snow-line",
+  "entity": "us_west",
+  "region": "US_WEST",
+  "date": "2026-11-08"
+ },
+ "tags": [
+  "snow-line",
+  "forecast",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "freezing_level_analysis",
+  "region": "US West",
+  "date": "2026-11-08",
+  "weekday": "Sunday",
+  "model_run": "2026-11-08",
+  "forecast_days": [
+   "2026-11-09",
+   "2026-11-10",
+   "2026-11-11"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 186330,
+   "resorts_with_snow": 146,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-06",
+   "snow_covered_area_km2": 222940,
+   "resorts_with_snow": 151
+  },
+  "region_forecast": {
+   "date": "2026-11-11",
+   "snow_covered_area_km2": 147690,
+   "resorts_with_snow": 132
+  },
+  "question": "How high is the 0 °C level in the next days, where does rain turn to snow, and is rain falling on the snowpack?",
+  "snow_line_below_freezing_level_m": 300,
+  "region_freezing_level_m_by_day": {
+   "2026-11-08": {
+    "lowest": 2600,
+    "highest": 4400
+   },
+   "2026-11-09": {
+    "lowest": 2500,
+    "highest": 4380
+   },
+   "2026-11-10": {
+    "lowest": 2290,
+    "highest": 4320
+   },
+   "2026-11-11": {
+    "lowest": 2240,
+    "highest": 4220
+   }
+  },
+  "forecast_points": [
+   {
+    "place": "Palisades Tahoe",
+    "elev_m": 2750,
+    "precip_mm_total_next_days": 0,
+    "precip_mm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0
+    }
+   },
+   {
+    "place": "Mt. Baker",
+    "elev_m": 1540,
+    "precip_mm_total_next_days": 105,
+    "precip_mm_by_day": {
+     "2026-11-08": 3,
+     "2026-11-09": 2,
+     "2026-11-10": 34,
+     "2026-11-11": 24,
+     "2026-11-12": 0,
+     "2026-11-13": 42
+    },
+    "freezing_level_m_when_wet": 2060,
+    "snow_line_m_when_wet": 1760,
+    "share_of_precip_as_snow_at_this_height_pct": 42
+   },
+   {
+    "place": "Eldora",
+    "elev_m": 3230,
+    "precip_mm_total_next_days": 0,
+    "precip_mm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0
+    }
+   }
+  ],
+  "notes": [
+   "0 °C level = height where the air temperature crosses 0 °C (forecast, daily lowest and highest)",
+   "snow line = about 300 m below the 0 °C level, at the warmest hours of the day",
+   "rain-on-snow risk = snow on the slopes and a snow line above mid-mountain on a day with precipitation"
+  ],
+  "resorts": [
+   {
+    "name": "Aspen Snowmass",
+    "country": "United States",
+    "top_m": 3815,
+    "base_m": 2474,
+    "depth_cm_upper_slopes_today": 43,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "aspen_snowmass",
+    "freezing_level_m_by_day": {
+     "2026-11-08": {
+      "min": 3420,
+      "max": 4100
+     },
+     "2026-11-09": {
+      "min": 2830,
+      "max": 4220
+     },
+     "2026-11-10": {
+      "min": 2690,
+      "max": 3790
+     },
+     "2026-11-11": {
+      "min": 2550,
+      "max": 3680
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-08": 3800,
+     "2026-11-09": 3900,
+     "2026-11-10": 3500,
+     "2026-11-11": 3400
+    },
+    "days_snow_line_above_top": [
+     "2026-11-09"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-08",
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-10",
+     "2026-11-11"
+    ]
+   },
+   {
+    "name": "Taos Ski Valley",
+    "country": "United States",
+    "top_m": 3603,
+    "base_m": 2850,
+    "depth_cm_upper_slopes_today": 39,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "taos_ski_valley",
+    "freezing_level_m_by_day": {
+     "2026-11-08": {
+      "min": 3970,
+      "max": 4310
+     },
+     "2026-11-09": {
+      "min": 3740,
+      "max": 4330
+     },
+     "2026-11-10": {
+      "min": 4010,
+      "max": 4320
+     },
+     "2026-11-11": {
+      "min": 3890,
+      "max": 4150
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-08": 4000,
+     "2026-11-09": 4000,
+     "2026-11-10": 4000,
+     "2026-11-11": 3800
+    },
+    "days_snow_line_above_top": [
+     "2026-11-08",
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-08",
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-10",
+     "2026-11-11"
+    ]
+   },
+   {
+    "name": "Crested Butte",
+    "country": "United States",
+    "top_m": 3488,
+    "base_m": 2783,
+    "depth_cm_upper_slopes_today": 42,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "crested_butte_mountain_resort",
+    "freezing_level_m_by_day": {
+     "2026-11-08": {
+      "min": 3500,
+      "max": 4090
+     },
+     "2026-11-09": {
+      "min": 3480,
+      "max": 4260
+     },
+     "2026-11-10": {
+      "min": 2910,
+      "max": 3750
+     },
+     "2026-11-11": {
+      "min": 2830,
+      "max": 3740
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-08": 3800,
+     "2026-11-09": 4000,
+     "2026-11-10": 3400,
+     "2026-11-11": 3400
+    },
+    "days_snow_line_above_top": [
+     "2026-11-08",
+     "2026-11-09"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-08",
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-10",
+     "2026-11-11"
+    ]
+   },
+   {
+    "name": "Beartooth Basin Summer",
+    "country": "United States",
+    "top_m": 3329,
+    "base_m": 3163,
+    "depth_cm_upper_slopes_today": 40,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "beartooth_basin_summer_ski_area",
+    "freezing_level_m_by_day": {
+     "2026-11-08": {
+      "min": 2600,
+      "max": 3420
+     },
+     "2026-11-09": {
+      "min": 2500,
+      "max": 3310
+     },
+     "2026-11-10": {
+      "min": 2290,
+      "max": 2840
+     },
+     "2026-11-11": {
+      "min": 2240,
+      "max": 3350
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-08": 3100,
+     "2026-11-09": 3000,
+     "2026-11-10": 2500,
+     "2026-11-11": 3000
+    },
+    "days_snow_line_above_top": [],
+    "days_snow_line_above_base": [],
+    "days_all_day_below_0c_at_base": [
+     "2026-11-10"
+    ],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Eagle Point",
+    "country": "United States",
+    "top_m": 3222,
+    "base_m": 2843,
+    "depth_cm_upper_slopes_today": 87,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "eagle_point",
+    "freezing_level_m_by_day": {
+     "2026-11-08": {
+      "min": 4300,
+      "max": 4400
+     },
+     "2026-11-09": {
+      "min": 4050,
+      "max": 4380
+     },
+     "2026-11-10": {
+      "min": 3670,
+      "max": 4040
+     },
+     "2026-11-11": {
+      "min": 3920,
+      "max": 4220
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-08": 4100,
+     "2026-11-09": 4100,
+     "2026-11-10": 3700,
+     "2026-11-11": 3900
+    },
+    "days_snow_line_above_top": [
+     "2026-11-08",
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-08",
+     "2026-11-09",
+     "2026-11-10",
+     "2026-11-11"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-10",
+     "2026-11-11"
+    ]
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-freezing-level-snow-line-8-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-freezing-level-snow-line-8-november-2026/map_t.webp",
+   "bytes": 27842
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "US West freezing level: 0 °C from 7,349 ft to 14,436 ft, snow line up to 13,451 ft (8 November)",
+   "description": "Our forecast puts the 0 °C level in the US West between 7,349 ft (2,240 m) and 14,436 ft (4,400 m) over the next days. At the warmest hours the snow …",
+   "lede": "Our forecast puts the 0 °C level in the US West between 7,349 ft (2,240 m) and 14,436 ft (4,400 m) over the next days. At the warmest hours the snow line, about 984 ft (300 m) lower, reaches 13,451 ft (4,100 m) at Eagle Point on Sunday 8 November.",
+   "sections": [
+    {
+     "h": "The 0 °C level day by day",
+     "p": [
+      "The 0 °C level at the resorts below, from the coldest to the warmest hour of each day: Sunday 8 November: from 8,530 ft (2,600 m) to 14,436 ft (4,400 m). Monday 9 November: from 8,202 ft (2,500 m) to 14,370 ft (4,380 m). Tuesday 10 November: from 7,513 ft (2,290 m) to 14,173 ft (4,320 m). Wednesday 11 November: from 7,349 ft (2,240 m) to 13,845 ft (4,220 m)."
+     ]
+    },
+    {
+     "h": "Snow line at each resort",
+     "p": [
+      "Aspen Snowmass (base 8,117 ft (2,474 m), top 12,516 ft (3,815 m)): snow line up to about 12,795 ft (3,900 m) on 9 November, above the top: rain or wet snow on the whole mountain if precipitation falls.",
+      "Taos Ski Valley (base 9,350 ft (2,850 m), top 11,821 ft (3,603 m)): snow line up to about 13,123 ft (4,000 m) on 8 November, above the top: rain or wet snow on the whole mountain if precipitation falls.",
+      "Crested Butte (base 9,131 ft (2,783 m), top 11,444 ft (3,488 m)): snow line up to about 13,123 ft (4,000 m) on 9 November, above the top: rain or wet snow on the whole mountain if precipitation falls.",
+      "Beartooth Basin Summer (base 10,377 ft (3,163 m), top 10,922 ft (3,329 m)): snow line up to about 10,171 ft (3,100 m) on 8 November, below the base: any precipitation falls as snow on all the slopes.",
+      "Eagle Point (base 9,327 ft (2,843 m), top 10,571 ft (3,222 m)): snow line up to about 13,451 ft (4,100 m) on 8 November, above the top: rain or wet snow on the whole mountain if precipitation falls."
+     ]
+    },
+    {
+     "h": "Rain on the snowpack?",
+     "p": [
+      "Aspen Snowmass has about 17 in (43 cm) on its upper slopes, and on 10 November and 11 November the snow line sits above mid-mountain: rain on that snow would make it heavy and wet, then icy when it freezes again.",
+      "Taos Ski Valley has about 15 in (39 cm) on its upper slopes, and on 10 November and 11 November the snow line sits above mid-mountain: rain on that snow would make it heavy and wet, then icy when it freezes again.",
+      "Crested Butte has about 17 in (42 cm) on its upper slopes, and on 10 November and 11 November the snow line sits above mid-mountain: rain on that snow would make it heavy and wet, then icy when it freezes again.",
+      "At Mt. Baker (5,052 ft (1,540 m)) the forecast gives 105 mm of precipitation; during the wet hours the snow line is near 5,774 ft (1,760 m)."
+     ]
+    },
+    {
+     "h": "Why the snow line sits below the 0 °C level",
+     "p": [
+      "Air usually gets colder with height. Flakes that fall below the 0 °C level start to melt, and because melting takes time, snow turns to rain only some 984 ft (300 m) lower: that is the snow line. In dry air, evaporation cools the falling snow and the snow line can drop further."
+     ]
+    }
+   ],
+   "advice": [
+    "On warm days, ski the highest lifts and north-facing slopes in the morning, before the snow softens.",
+    "The 0 °C level is a forecast and can move by several hundred metres: check the map again the day before you go.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website."
+   ],
+   "captions": {
+    "map": "Snow depth in the US West on 8 November (SnowScope snow model) with the resorts of this freezing-level analysis and their top heights."
+   }
+  },
+  "fr": {
+   "title": "Isotherme 0 °C dans l'Ouest américain : de 7 349 ft à 14 436 ft, limite pluie-neige jusqu'à 13 451 ft (8 novembre)",
+   "description": "Notre prévision place l'isotherme 0 °C dans l'Ouest américain entre 7 349 ft (2 240 m) et 14 436 ft (4 400 m) ces prochains jours. Aux heures les …",
+   "lede": "Notre prévision place l'isotherme 0 °C dans l'Ouest américain entre 7 349 ft (2 240 m) et 14 436 ft (4 400 m) ces prochains jours. Aux heures les plus douces, la limite pluie-neige, environ 984 ft (300 m) plus bas, atteint 13 451 ft (4 100 m) à Eagle Point le dimanche 8 novembre.",
+   "sections": [
+    {
+     "h": "L'isotherme 0 °C jour par jour",
+     "p": [
+      "L'isotherme 0 °C au-dessus des stations ci-dessous, de l'heure la plus froide à la plus douce de chaque jour : dimanche 8 novembre : de 8 530 ft (2 600 m) à 14 436 ft (4 400 m). lundi 9 novembre : de 8 202 ft (2 500 m) à 14 370 ft (4 380 m). mardi 10 novembre : de 7 513 ft (2 290 m) à 14 173 ft (4 320 m). mercredi 11 novembre : de 7 349 ft (2 240 m) à 13 845 ft (4 220 m)."
+     ]
+    },
+    {
+     "h": "La limite pluie-neige station par station",
+     "p": [
+      "Aspen Snowmass (bas 8 117 ft (2 474 m), sommet 12 516 ft (3 815 m)) : limite pluie-neige jusque vers 12 795 ft (3 900 m) le 9 novembre, au-dessus du sommet : pluie ou neige mouillée sur tout le domaine s'il y a des précipitations.",
+      "Taos Ski Valley (bas 9 350 ft (2 850 m), sommet 11 821 ft (3 603 m)) : limite pluie-neige jusque vers 13 123 ft (4 000 m) le 8 novembre, au-dessus du sommet : pluie ou neige mouillée sur tout le domaine s'il y a des précipitations.",
+      "Crested Butte (bas 9 131 ft (2 783 m), sommet 11 444 ft (3 488 m)) : limite pluie-neige jusque vers 13 123 ft (4 000 m) le 9 novembre, au-dessus du sommet : pluie ou neige mouillée sur tout le domaine s'il y a des précipitations.",
+      "Beartooth Basin Summer (bas 10 377 ft (3 163 m), sommet 10 922 ft (3 329 m)) : limite pluie-neige jusque vers 10 171 ft (3 100 m) le 8 novembre, sous le bas du domaine : les précipitations tombent en neige sur toutes les pistes.",
+      "Eagle Point (bas 9 327 ft (2 843 m), sommet 10 571 ft (3 222 m)) : limite pluie-neige jusque vers 13 451 ft (4 100 m) le 8 novembre, au-dessus du sommet : pluie ou neige mouillée sur tout le domaine s'il y a des précipitations."
+     ]
+    },
+    {
+     "h": "De la pluie sur la neige ?",
+     "p": [
+      "Aspen Snowmass a environ 17 in (43 cm) en haut du domaine, et le 10 novembre et 11 novembre la limite pluie-neige passe au-dessus de mi-pente : de la pluie sur cette neige la rendrait lourde et mouillée, puis glacée au regel.",
+      "Taos Ski Valley a environ 15 in (39 cm) en haut du domaine, et le 10 novembre et 11 novembre la limite pluie-neige passe au-dessus de mi-pente : de la pluie sur cette neige la rendrait lourde et mouillée, puis glacée au regel.",
+      "Crested Butte a environ 17 in (42 cm) en haut du domaine, et le 10 novembre et 11 novembre la limite pluie-neige passe au-dessus de mi-pente : de la pluie sur cette neige la rendrait lourde et mouillée, puis glacée au regel.",
+      "À Mt. Baker (5 052 ft (1 540 m)), la prévision donne 105 mm de précipitations ; pendant les heures humides, la limite pluie-neige est vers 5 774 ft (1 760 m)."
+     ]
+    },
+    {
+     "h": "Pourquoi la limite pluie-neige est sous l'isotherme 0 °C",
+     "p": [
+      "L'air se refroidit en général avec l'altitude. Les flocons qui passent sous l'isotherme 0 °C commencent à fondre, et comme la fonte prend du temps, la neige ne se change en pluie qu'environ 984 ft (300 m) plus bas : c'est la limite pluie-neige. Dans un air sec, l'évaporation refroidit la neige qui tombe et la limite peut descendre encore."
+     ]
+    }
+   ],
+   "advice": [
+    "Les jours doux, skiez le matin sur les remontées les plus hautes et les pentes nord, avant que la neige ne ramollisse.",
+    "L'isotherme 0 °C est une prévision et peut bouger de plusieurs centaines de mètres : revoyez la carte la veille.",
+    "Avant toute sortie hors-piste ou en randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates sur son site."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest américain le 8 novembre (modèle SnowScope), avec les stations de cette analyse et l'altitude de leur sommet."
+   }
+  },
+  "de": {
+   "title": "Nullgradgrenze im US-Westen: von 7.349 ft bis 14.436 ft, Schneefallgrenze bis 13.451 ft (8. November)",
+   "description": "Unsere Prognose sieht die Nullgradgrenze im US-Westen in den nächsten Tagen zwischen 7.349 ft (2.240 m) und 14.436 ft (4.400 m). In den wärmsten …",
+   "lede": "Unsere Prognose sieht die Nullgradgrenze im US-Westen in den nächsten Tagen zwischen 7.349 ft (2.240 m) und 14.436 ft (4.400 m). In den wärmsten Stunden erreicht die Schneefallgrenze, etwa 984 ft (300 m) tiefer, am Sonntag, 8. November in Eagle Point 13.451 ft (4.100 m).",
+   "sections": [
+    {
+     "h": "Die Nullgradgrenze Tag für Tag",
+     "p": [
+      "Die Nullgradgrenze über den Skigebieten unten, von der kältesten bis zur wärmsten Stunde jedes Tages: Sonntag, 8. November: von 8.530 ft (2.600 m) bis 14.436 ft (4.400 m). Montag, 9. November: von 8.202 ft (2.500 m) bis 14.370 ft (4.380 m). Dienstag, 10. November: von 7.513 ft (2.290 m) bis 14.173 ft (4.320 m). Mittwoch, 11. November: von 7.349 ft (2.240 m) bis 13.845 ft (4.220 m)."
+     ]
+    },
+    {
+     "h": "Schneefallgrenze je Skigebiet",
+     "p": [
+      "Aspen Snowmass (Tal 8.117 ft (2.474 m), Gipfel 12.516 ft (3.815 m)): Schneefallgrenze bis etwa 12.795 ft (3.900 m) am 9. November, über dem Gipfel: bei Niederschlag Regen oder nasser Schnee am ganzen Berg.",
+      "Taos Ski Valley (Tal 9.350 ft (2.850 m), Gipfel 11.821 ft (3.603 m)): Schneefallgrenze bis etwa 13.123 ft (4.000 m) am 8. November, über dem Gipfel: bei Niederschlag Regen oder nasser Schnee am ganzen Berg.",
+      "Crested Butte (Tal 9.131 ft (2.783 m), Gipfel 11.444 ft (3.488 m)): Schneefallgrenze bis etwa 13.123 ft (4.000 m) am 9. November, über dem Gipfel: bei Niederschlag Regen oder nasser Schnee am ganzen Berg.",
+      "Beartooth Basin Summer (Tal 10.377 ft (3.163 m), Gipfel 10.922 ft (3.329 m)): Schneefallgrenze bis etwa 10.171 ft (3.100 m) am 8. November, unter dem Tal: Niederschlag fällt auf allen Hängen als Schnee.",
+      "Eagle Point (Tal 9.327 ft (2.843 m), Gipfel 10.571 ft (3.222 m)): Schneefallgrenze bis etwa 13.451 ft (4.100 m) am 8. November, über dem Gipfel: bei Niederschlag Regen oder nasser Schnee am ganzen Berg."
+     ]
+    },
+    {
+     "h": "Regen auf die Schneedecke?",
+     "p": [
+      "Aspen Snowmass hat etwa 17 in (43 cm) in den oberen Hängen, und am 10. November und 11. November liegt die Schneefallgrenze über der Mittelstation: Regen auf diesen Schnee macht ihn schwer und nass, nach dem Gefrieren eisig.",
+      "Taos Ski Valley hat etwa 15 in (39 cm) in den oberen Hängen, und am 10. November und 11. November liegt die Schneefallgrenze über der Mittelstation: Regen auf diesen Schnee macht ihn schwer und nass, nach dem Gefrieren eisig.",
+      "Crested Butte hat etwa 17 in (42 cm) in den oberen Hängen, und am 10. November und 11. November liegt die Schneefallgrenze über der Mittelstation: Regen auf diesen Schnee macht ihn schwer und nass, nach dem Gefrieren eisig.",
+      "In Mt. Baker (5.052 ft (1.540 m)) zeigt die Prognose 105 mm Niederschlag; in den nassen Stunden liegt die Schneefallgrenze bei etwa 5.774 ft (1.760 m)."
+     ]
+    },
+    {
+     "h": "Warum die Schneefallgrenze unter der Nullgradgrenze liegt",
+     "p": [
+      "Die Luft wird mit der Höhe meist kälter. Flocken, die unter die Nullgradgrenze fallen, beginnen zu schmelzen; weil das Zeit braucht, wird Schnee erst etwa 984 ft (300 m) tiefer zu Regen: Das ist die Schneefallgrenze. In trockener Luft kühlt Verdunstung den fallenden Schnee, und die Grenze kann weiter sinken."
+     ]
+    }
+   ],
+   "advice": [
+    "An warmen Tagen fahr morgens an den höchsten Liften und Nordhängen, bevor der Schnee weich wird.",
+    "Die Nullgradgrenze ist eine Prognose und kann sich um mehrere hundert Meter verschieben: Schau am Vortag noch einmal auf die Karte.",
+    "Lies vor jedem Tag abseits der Piste oder auf Tour den offiziellen Lawinenlagebericht (Links unten).",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Termine auf seiner Website."
+   ],
+   "captions": {
+    "map": "Schneehöhe im US-Westen am 8. November (SnowScope-Modell) mit den Skigebieten dieser Analyse und ihrer Gipfelhöhe."
+   }
+  },
+  "it": {
+   "title": "Zero termico nell'Ovest degli USA: da 7.349 ft a 14.436 ft, quota neve fino a 13.451 ft (8 novembre)",
+   "description": "La nostra previsione colloca lo zero termico nell'Ovest degli USA tra 7.349 ft (2.240 m) e 14.436 ft (4.400 m) nei prossimi giorni. Nelle ore più …",
+   "lede": "La nostra previsione colloca lo zero termico nell'Ovest degli USA tra 7.349 ft (2.240 m) e 14.436 ft (4.400 m) nei prossimi giorni. Nelle ore più miti la quota neve, circa 984 ft (300 m) più in basso, arriva a 13.451 ft (4.100 m) a Eagle Point il domenica 8 novembre.",
+   "sections": [
+    {
+     "h": "Lo zero termico giorno per giorno",
+     "p": [
+      "Lo zero termico sulle località qui sotto, dall'ora più fredda alla più mite di ogni giorno: domenica 8 novembre: da 8.530 ft (2.600 m) a 14.436 ft (4.400 m). lunedì 9 novembre: da 8.202 ft (2.500 m) a 14.370 ft (4.380 m). martedì 10 novembre: da 7.513 ft (2.290 m) a 14.173 ft (4.320 m). mercoledì 11 novembre: da 7.349 ft (2.240 m) a 13.845 ft (4.220 m)."
+     ]
+    },
+    {
+     "h": "La quota neve località per località",
+     "p": [
+      "Aspen Snowmass (base 8.117 ft (2.474 m), vetta 12.516 ft (3.815 m)): quota neve fino a circa 12.795 ft (3.900 m) il 9 novembre, sopra la vetta: pioggia o neve bagnata su tutta la montagna se arrivano precipitazioni.",
+      "Taos Ski Valley (base 9.350 ft (2.850 m), vetta 11.821 ft (3.603 m)): quota neve fino a circa 13.123 ft (4.000 m) il 8 novembre, sopra la vetta: pioggia o neve bagnata su tutta la montagna se arrivano precipitazioni.",
+      "Crested Butte (base 9.131 ft (2.783 m), vetta 11.444 ft (3.488 m)): quota neve fino a circa 13.123 ft (4.000 m) il 9 novembre, sopra la vetta: pioggia o neve bagnata su tutta la montagna se arrivano precipitazioni.",
+      "Beartooth Basin Summer (base 10.377 ft (3.163 m), vetta 10.922 ft (3.329 m)): quota neve fino a circa 10.171 ft (3.100 m) il 8 novembre, sotto la base: le precipitazioni cadono come neve su tutte le piste.",
+      "Eagle Point (base 9.327 ft (2.843 m), vetta 10.571 ft (3.222 m)): quota neve fino a circa 13.451 ft (4.100 m) il 8 novembre, sopra la vetta: pioggia o neve bagnata su tutta la montagna se arrivano precipitazioni."
+     ]
+    },
+    {
+     "h": "Pioggia sul manto nevoso?",
+     "p": [
+      "Aspen Snowmass ha circa 17 in (43 cm) sui pendii alti, e il 10 novembre e 11 novembre la quota neve è sopra metà montagna: la pioggia su questa neve la renderebbe pesante e bagnata, poi ghiacciata al rigelo.",
+      "Taos Ski Valley ha circa 15 in (39 cm) sui pendii alti, e il 10 novembre e 11 novembre la quota neve è sopra metà montagna: la pioggia su questa neve la renderebbe pesante e bagnata, poi ghiacciata al rigelo.",
+      "Crested Butte ha circa 17 in (42 cm) sui pendii alti, e il 10 novembre e 11 novembre la quota neve è sopra metà montagna: la pioggia su questa neve la renderebbe pesante e bagnata, poi ghiacciata al rigelo.",
+      "A Mt. Baker (5.052 ft (1.540 m)) la previsione indica 105 mm di precipitazioni; nelle ore umide la quota neve è vicina a 5.774 ft (1.760 m)."
+     ]
+    },
+    {
+     "h": "Perché la quota neve è sotto lo zero termico",
+     "p": [
+      "Di solito l'aria si raffredda con la quota. I fiocchi che scendono sotto lo zero termico iniziano a fondere e, poiché la fusione richiede tempo, la neve diventa pioggia solo circa 984 ft (300 m) più in basso: è la quota neve. In aria secca l'evaporazione raffredda la neve che cade e la quota può scendere ancora."
+     ]
+    }
+   ],
+   "advice": [
+    "Nei giorni miti scia al mattino sugli impianti più alti e sui versanti nord, prima che la neve si ammorbidisca.",
+    "Lo zero termico è una previsione e può spostarsi di diverse centinaia di metri: ricontrolla la mappa il giorno prima.",
+    "Prima di ogni uscita in fuoripista o scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date sul suo sito."
+   ],
+   "captions": {
+    "map": "Altezza neve nell'Ovest degli USA il 8 novembre (modello SnowScope) con le località di questa analisi e la quota della vetta."
+   }
+  },
+  "es": {
+   "title": "Isoterma de 0 °C en el oeste de EE. UU.: de 7349 ft a 14.436 ft, cota de nieve hasta 13.451 ft (8 de noviembre)",
+   "description": "Nuestra previsión sitúa la isoterma de 0 °C en el oeste de EE. UU. entre 7349 ft (2240 m) y 14.436 ft (4400 m) en los próximos días. En las horas más …",
+   "lede": "Nuestra previsión sitúa la isoterma de 0 °C en el oeste de EE. UU. entre 7349 ft (2240 m) y 14.436 ft (4400 m) en los próximos días. En las horas más templadas la cota de nieve, unos 984 ft (300 m) más abajo, llega a 13.451 ft (4100 m) en Eagle Point el domingo 8 de noviembre.",
+   "sections": [
+    {
+     "h": "La isoterma de 0 °C día a día",
+     "p": [
+      "La isoterma de 0 °C sobre las estaciones de abajo, de la hora más fría a la más templada de cada día: domingo 8 de noviembre: de 8530 ft (2600 m) a 14.436 ft (4400 m). lunes 9 de noviembre: de 8202 ft (2500 m) a 14.370 ft (4380 m). martes 10 de noviembre: de 7513 ft (2290 m) a 14.173 ft (4320 m). miércoles 11 de noviembre: de 7349 ft (2240 m) a 13.845 ft (4220 m)."
+     ]
+    },
+    {
+     "h": "La cota de nieve estación por estación",
+     "p": [
+      "Aspen Snowmass (base 8117 ft (2474 m), cima 12.516 ft (3815 m)): cota de nieve hasta unos 12.795 ft (3900 m) el 9 de noviembre, por encima de la cima: lluvia o nieve húmeda en toda la montaña si hay precipitación.",
+      "Taos Ski Valley (base 9350 ft (2850 m), cima 11.821 ft (3603 m)): cota de nieve hasta unos 13.123 ft (4000 m) el 8 de noviembre, por encima de la cima: lluvia o nieve húmeda en toda la montaña si hay precipitación.",
+      "Crested Butte (base 9131 ft (2783 m), cima 11.444 ft (3488 m)): cota de nieve hasta unos 13.123 ft (4000 m) el 9 de noviembre, por encima de la cima: lluvia o nieve húmeda en toda la montaña si hay precipitación.",
+      "Beartooth Basin Summer (base 10.377 ft (3163 m), cima 10.922 ft (3329 m)): cota de nieve hasta unos 10.171 ft (3100 m) el 8 de noviembre, por debajo de la base: la precipitación cae como nieve en todas las pistas.",
+      "Eagle Point (base 9327 ft (2843 m), cima 10.571 ft (3222 m)): cota de nieve hasta unos 13.451 ft (4100 m) el 8 de noviembre, por encima de la cima: lluvia o nieve húmeda en toda la montaña si hay precipitación."
+     ]
+    },
+    {
+     "h": "¿Lluvia sobre la nieve?",
+     "p": [
+      "Aspen Snowmass tiene unos 17 in (43 cm) en la parte alta, y el 10 de noviembre y 11 de noviembre la cota de nieve queda por encima de media montaña: la lluvia sobre esa nieve la volvería pesada y húmeda, y helada al volver a congelarse.",
+      "Taos Ski Valley tiene unos 15 in (39 cm) en la parte alta, y el 10 de noviembre y 11 de noviembre la cota de nieve queda por encima de media montaña: la lluvia sobre esa nieve la volvería pesada y húmeda, y helada al volver a congelarse.",
+      "Crested Butte tiene unos 17 in (42 cm) en la parte alta, y el 10 de noviembre y 11 de noviembre la cota de nieve queda por encima de media montaña: la lluvia sobre esa nieve la volvería pesada y húmeda, y helada al volver a congelarse.",
+      "En Mt. Baker (5052 ft (1540 m)) la previsión da 105 mm de precipitación; en las horas húmedas la cota de nieve ronda 5774 ft (1760 m)."
+     ]
+    },
+    {
+     "h": "Por qué la cota de nieve está por debajo de la isoterma de 0 °C",
+     "p": [
+      "El aire suele enfriarse con la altura. Los copos que bajan de la isoterma de 0 °C empiezan a fundirse y, como fundirse lleva tiempo, la nieve pasa a lluvia solo unos 984 ft (300 m) más abajo: es la cota de nieve. Con aire seco, la evaporación enfría la nieve que cae y la cota puede bajar aún más."
+     ]
+    }
+   ],
+   "advice": [
+    "Los días templados, esquía por la mañana en los remontes más altos y las laderas norte, antes de que la nieve se ablande.",
+    "La isoterma de 0 °C es una previsión y puede moverse varios cientos de metros: vuelve a mirar el mapa el día antes.",
+    "Antes de cualquier salida fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas en su web."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de EE. UU. el 8 de noviembre (modelo SnowScope) con las estaciones de este análisis y la altura de su cima."
+   }
+  },
+  "ar": {
+   "title": "علو 0 °C فغرب ميريكان: من 7349 قدم حتى ل 14436 قدم، الحد ديال التلج حتى ل 13451 قدم (8 نونبر)",
+   "description": "التوقعات ديالنا كتحط علو 0 °C فغرب ميريكان بين 7349 قدم (2240 م) و 14436 قدم (4400 م) فالأيام الجاية. فالساعات اللي سخونة كثر، الحد ديال التلج، …",
+   "lede": "التوقعات ديالنا كتحط علو 0 °C فغرب ميريكان بين 7349 قدم (2240 م) و 14436 قدم (4400 م) فالأيام الجاية. فالساعات اللي سخونة كثر، الحد ديال التلج، تقريبا 984 قدم (300 م) تحت، كيوصل ل 13451 قدم (4100 م) ف Eagle Point نهار الأحد 8 نونبر.",
+   "sections": [
+    {
+     "h": "علو 0 °C نهار بنهار",
+     "p": [
+      "علو 0 °C فوق المحطات اللي لتحت، من أبرد ساعة حتى ل أسخن ساعة فكل نهار: الأحد 8 نونبر: من 8530 قدم (2600 م) حتى ل 14436 قدم (4400 م). الاثنين 9 نونبر: من 8202 قدم (2500 م) حتى ل 14370 قدم (4380 م). الثلاثاء 10 نونبر: من 7513 قدم (2290 م) حتى ل 14173 قدم (4320 م). الأربعاء 11 نونبر: من 7349 قدم (2240 م) حتى ل 13845 قدم (4220 م)."
+     ]
+    },
+    {
+     "h": "الحد ديال التلج فكل محطة",
+     "p": [
+      "Aspen Snowmass (التحت 8117 قدم (2474 م)، الفوق 12516 قدم (3815 م)): الحد ديال التلج حتى ل تقريبا 12795 قدم (3900 م) نهار 9 نونبر، فوق القمة: شتا ولا تلج مبلول فالجبل كامل إلا طاحت الشتا.",
+      "Taos Ski Valley (التحت 9350 قدم (2850 م)، الفوق 11821 قدم (3603 م)): الحد ديال التلج حتى ل تقريبا 13123 قدم (4000 م) نهار 8 نونبر، فوق القمة: شتا ولا تلج مبلول فالجبل كامل إلا طاحت الشتا.",
+      "Crested Butte (التحت 9131 قدم (2783 م)، الفوق 11444 قدم (3488 م)): الحد ديال التلج حتى ل تقريبا 13123 قدم (4000 م) نهار 9 نونبر، فوق القمة: شتا ولا تلج مبلول فالجبل كامل إلا طاحت الشتا.",
+      "Beartooth Basin Summer (التحت 10377 قدم (3163 م)، الفوق 10922 قدم (3329 م)): الحد ديال التلج حتى ل تقريبا 10171 قدم (3100 م) نهار 8 نونبر، تحت البلاصة اللي التحت: أي شتا كتطيح تلج فكاع البيستات.",
+      "Eagle Point (التحت 9327 قدم (2843 م)، الفوق 10571 قدم (3222 م)): الحد ديال التلج حتى ل تقريبا 13451 قدم (4100 م) نهار 8 نونبر، فوق القمة: شتا ولا تلج مبلول فالجبل كامل إلا طاحت الشتا."
+     ]
+    },
+    {
+     "h": "الشتا على التلج؟",
+     "p": [
+      "Aspen Snowmass فيها تقريبا 17 إنش (43 سم) فالجهة الفوقانية، ونهار 10 نونبر و 11 نونبر الحد ديال التلج فوق الوسط ديال الجبل: الشتا على هاد التلج كتردو تقيل ومبلول، ومن بعد كيولي جليد ملي يجمد.",
+      "Taos Ski Valley فيها تقريبا 15 إنش (39 سم) فالجهة الفوقانية، ونهار 10 نونبر و 11 نونبر الحد ديال التلج فوق الوسط ديال الجبل: الشتا على هاد التلج كتردو تقيل ومبلول، ومن بعد كيولي جليد ملي يجمد.",
+      "Crested Butte فيها تقريبا 17 إنش (42 سم) فالجهة الفوقانية، ونهار 10 نونبر و 11 نونبر الحد ديال التلج فوق الوسط ديال الجبل: الشتا على هاد التلج كتردو تقيل ومبلول، ومن بعد كيولي جليد ملي يجمد.",
+      "ف Mt. Baker (5052 قدم (1540 م)) التوقعات كتعطي 105 مم ديال الشتا؛ فالساعات اللي فيها الشتا الحد ديال التلج قريب من 5774 قدم (1760 م)."
+     ]
+    },
+    {
+     "h": "علاش الحد ديال التلج تحت علو 0 °C",
+     "p": [
+      "الهوا عادة كيبرد كل ما طلعتي. التلج اللي كيهبط تحت علو 0 °C كيبدا يدوب، وحيت الذوبان كياخد الوقت، التلج كيولي شتا غير تقريبا 984 قدم (300 م) لتحت: هادا هو الحد ديال التلج. فالهوا الناشف، التبخر كيبرد التلج اللي طايح والحد يقدر يهبط كثر."
+     ]
+    }
+   ],
+   "advice": [
+    "فالأيام السخونين، تزلج فالصباح فالتيليسييجات اللي فالفوق وفالجهات اللي كتشوف للشمال، قبل ما يرطاب التلج.",
+    "علو 0 °C غير توقع ويقدر يتحرك بشي مئات ديال الميترات: عاود شوف الخريطة نهار قبل.",
+    "قبل أي خرجة برا البيست ولا جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديالها."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب ميريكان نهار 8 نونبر (الموديل ديال SnowScope) مع المحطات ديال هاد التحليل والعلو ديال القمة ديالهم."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  },
+  "fr": {
+   "writer": "template"
+  },
+  "de": {
+   "writer": "template"
+  },
+  "it": {
+   "writer": "template"
+  },
+  "es": {
+   "writer": "template"
+  },
+  "ar": {
+   "writer": "template"
+  }
+ },
+ "words_en": 514,
+ "indexable": true,
+ "main": {
+  "slug": "aspen_snowmass",
+  "name": "Aspen Snowmass",
+  "lat": 39.1984,
+  "lon": -106.9499
+ },
+ "places": [
+  {
+   "name": "Aspen Snowmass",
+   "lat": 39.1984,
+   "lon": -106.9499
+  },
+  {
+   "name": "Taos Ski Valley",
+   "lat": 36.5779,
+   "lon": -105.451
+  },
+  {
+   "name": "Crested Butte",
+   "lat": 38.8994,
+   "lon": -106.9498
+  },
+  {
+   "name": "Beartooth Basin Summer",
+   "lat": 44.9771,
+   "lon": -109.4351
+  },
+  {
+   "name": "Eagle Point",
+   "lat": 38.3222,
+   "lon": -112.378
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "aspen_snowmass",
+   "name": "Aspen Snowmass"
+  },
+  {
+   "slug": "taos_ski_valley",
+   "name": "Taos Ski Valley"
+  },
+  {
+   "slug": "crested_butte_mountain_resort",
+   "name": "Crested Butte"
+  },
+  {
+   "slug": "beartooth_basin_summer_ski_area",
+   "name": "Beartooth Basin Summer"
+  },
+  {
+   "slug": "eagle_point",
+   "name": "Eagle Point"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "aspen_snowmass",
+    "name": "Aspen Snowmass",
+    "depth": 43,
+    "new72": 0,
+    "next": 0,
+    "top_m": 3815
+   },
+   {
+    "slug": "taos_ski_valley",
+    "name": "Taos Ski Valley",
+    "depth": 39,
+    "new72": 0,
+    "next": 0,
+    "top_m": 3603
+   },
+   {
+    "slug": "crested_butte_mountain_resort",
+    "name": "Crested Butte",
+    "depth": 42,
+    "new72": 0,
+    "next": 0,
+    "top_m": 3488
+   },
+   {
+    "slug": "beartooth_basin_summer_ski_area",
+    "name": "Beartooth Basin Summer",
+    "depth": 40,
+    "new72": 0,
+    "next": 0,
+    "top_m": 3329
+   },
+   {
+    "slug": "eagle_point",
+    "name": "Eagle Point",
+    "depth": 87,
+    "new72": 0,
+    "next": 0,
+    "top_m": 3222
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@39.198,-106.950,9.0",
+ "seconds": 0.0,
+ "facts_used": 52,
+ "similarity": {
+  "max": 0.276,
+  "with": "pyrenees-freezing-level-snow-line-8-november-2026"
+ },
+ "publish_utc": "2026-11-08T22:08:41Z"
+}
