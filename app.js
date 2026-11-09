@@ -1539,7 +1539,6 @@
           if (d && wn != null) h = '<span class="k">' + NW_TITLE[w] + " · " + when + '</span><span class="big">' + (wn >= 1 ? "+" + cmS(Math.round(wn)) : "None") + '</span><div class="line">' + (d.depth_cm >= 1 ? U.depth(Math.round(d.depth_cm)) + " on the ground" : "No snow on the ground") + "</div>";
           else if (d) h = '<span class="k">Snow on the ground · ' + when + '</span><span class="big">' + (d.depth_cm >= 1 ? cmS(Math.round(d.depth_cm)) : "No snow") + "</span>" +
             (d.new_cm >= 1 ? '<span class="badge">+' + U.depth(Math.round(d.new_cm)) + " new</span>" : "") + (p.elev_m ? '<div class="line">at ' + U.elev(p.elev_m) + "</div>" : "");
-          if (h && d && d.date >= ((p.station || {}).date || "9")) h += stnHtml(p);
         } catch (er) { h = er.down ? '<div class="line">Pro data is updating, try again in a minute.</div>' : ""; }
       }
       if (!h) h = '<span class="k">' + when + '</span><div class="line">No snow data here.</div>';
@@ -2286,15 +2285,6 @@
   // BLEND contract (progress/data_requests.md "CONTRACT point blend + pixel range", Pro /v1/g500/point): the point's
   // recommended value as the headline ("A light dusting" for a 1 cm blend), a compact low-middle-high bar for the
   // ~500 m area with one plain sentence, and a hint when the forecasts disagree. Absent fields -> nothing changes.
-  // forced station pixels (engine/community/forced.py): the map value here IS a station measurement
-  function stnHtml(p) {
-    const s = p && p.station;
-    if (!s || s.depth_cm == null) return "";
-    const when = s.date ? " (" + D(s.date).toLocaleDateString(LOC, { day: "numeric", month: "short", timeZone: "UTC" }) + ")" : "";
-    return '<div class="line stnm"><span class="ms">sensors</span> ' + esc(I18N.tu("Measured at {a}: {b}", s.name, U.depth(Math.round(s.depth_cm)))) + esc(when) +
-      (s.artificial_likely ? '<br><b>' + esc(I18N.t("May include artificial snow")) + "</b>" : "") +
-      (s.url ? ' · <a href="' + esc(s.url) + '" target="_blank" rel="noopener nofollow">' + esc(I18N.t("Station page")) + "</a>" : "") + "</div>";
-  }
   function pointBlend(p) {
     const today = !p.extras_day || p.extras_day === DATA.today;
     if (!today || st.day !== DATA.today) return;
@@ -2322,7 +2312,6 @@
         '<p class="note">' + esc(I18N.tu("Snow changes a lot with height: in this ~500 m area it ranges from {a} on the lowest ground to {b} on the highest.", U.depth(Math.round(R.low.depth_cm)) + " (" + U.elev(R.low.elev_m) + ")", U.depth(Math.round(R.high.depth_cm)) + " (" + U.elev(R.high.elev_m) + ")")) + "</p>";
     }
     if (b && b.agreement === "differ") h += '<p class="note">' + esc(I18N.t("Forecasts disagree a little here; treat this as a rough guide.")) + "</p>";
-    h = stnHtml(p) + h;
     out.innerHTML = h;
     if (window.SSC) SSC.bind(out);
   }
@@ -3143,17 +3132,8 @@
     });
     return s + "</svg>" + '<div class="keyrow"><span><i style="background:var(--accent)"></i>past</span><span><i style="background:var(--accent-tint);outline:1px solid var(--accent)"></i>forecast</span><span style="color:var(--accent-ink)">+N new snow</span></div>' + (locked || "");
   }
-  async function resortMeasured(x) {    // stations measured at / next to the resort today (free, /v1/obs/measured)
-    const box = $("rDays"); if (!box || !SS.S.api) return;
-    let m = null;
-    try { m = await SS.api("/v1/obs/measured?slug=" + encodeURIComponent(x.slug) + "&lat=" + x.lat + "&lon=" + x.lon + "&km=4", { auth: false, timeout: 10000 }); } catch { m = null; }
-    if (!m || !(m.stations || []).length || st.slug !== x.slug) return;
-    const old = $("rMeas"); if (old) old.remove();
-    box.insertAdjacentHTML("afterend", '<div id="rMeas">' + m.stations.slice(0, 3).map((s) => stnHtml({ station: s })).join("") + "</div>");
-  }
   async function daysChart(x, res) {
     const box = $("rDays");
-    resortMeasured(x);
     const stat = res.dates.map((d, i) => ({ date: d, dep: (x.snow[i] || [])[0], nw: (x.snow[i] || [])[1] }));
     const lock = '<div class="prolock" style="margin-top:10px"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>15 days at ' + esc(x.short) + "</b><br>The past week and the week ahead.</p><button class=\"btn ink\" data-up>See 15 days</button></div>";
     if (!st.pro) { box.innerHTML = svgBars(stat, DATA.today, lock); box.querySelector("[data-up]").onclick = () => SS.upsell("15 days of snow at " + x.short + " are in Pro"); return; }
