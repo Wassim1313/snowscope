@@ -1,0 +1,624 @@
+{
+ "id": "feature-how-much-new-snow-makes-a-powder-day",
+ "slug": "how-much-new-snow-makes-a-powder-day",
+ "date": "2026-11-10",
+ "published_utc": "2026-11-10T20:38:00Z",
+ "updated_utc": "2026-11-10T20:38:00Z",
+ "region": "US_WEST",
+ "angle": "guide_feature_climate",
+ "category": "guide",
+ "draft": false,
+ "kind": "climate",
+ "resort_class": null,
+ "structure": "field-notebook",
+ "score": 90,
+ "tags": [
+  "powder",
+  "stations",
+  "advice"
+ ],
+ "facts": {
+  "kind": "climate",
+  "date": "2026-11-10",
+  "extra": {
+   "date": "2026-11-10",
+   "storm_date": "2026-11-04",
+   "days_after": 5,
+   "stations": {
+    "Brumley": {
+     "elev_m": 3222,
+     "depth_cm_by_day": {
+      "2026-11-02": 13,
+      "2026-11-03": 10,
+      "2026-11-04": 43,
+      "2026-11-05": 36,
+      "2026-11-06": 30,
+      "2026-11-07": 28,
+      "2026-11-08": 25,
+      "2026-11-09": 25,
+      "2026-11-10": null
+     },
+     "before_cm": 10,
+     "after_storm_cm": 43,
+     "new_cm": 33,
+     "on_9_nov_cm": 25,
+     "lost_cm": 18,
+     "lost_share_of_new_pct": 55
+    },
+    "Saint Elmo": {
+     "elev_m": 3176,
+     "depth_cm_by_day": {
+      "2026-11-02": 10,
+      "2026-11-03": 10,
+      "2026-11-04": 30,
+      "2026-11-05": 28,
+      "2026-11-06": 25,
+      "2026-11-07": 23,
+      "2026-11-08": 20,
+      "2026-11-09": 20,
+      "2026-11-10": null
+     },
+     "before_cm": 10,
+     "after_storm_cm": 30,
+     "new_cm": 20,
+     "on_9_nov_cm": 20,
+     "lost_cm": 10,
+     "lost_share_of_new_pct": 50
+    },
+    "Independence Pass": {
+     "elev_m": 3222,
+     "depth_cm_by_day": {
+      "2026-11-02": 15,
+      "2026-11-03": 13,
+      "2026-11-04": 33,
+      "2026-11-05": 28,
+      "2026-11-06": 25,
+      "2026-11-07": 23,
+      "2026-11-08": 20,
+      "2026-11-09": 20,
+      "2026-11-10": null
+     },
+     "before_cm": 13,
+     "after_storm_cm": 33,
+     "new_cm": 20,
+     "on_9_nov_cm": 20,
+     "lost_cm": 13,
+     "lost_share_of_new_pct": 65
+    },
+    "Ivanhoe": {
+     "elev_m": 3213,
+     "depth_cm_by_day": {
+      "2026-11-02": 13,
+      "2026-11-03": 10,
+      "2026-11-04": 36,
+      "2026-11-05": 30,
+      "2026-11-06": 25,
+      "2026-11-07": 23,
+      "2026-11-08": 20,
+      "2026-11-09": 20,
+      "2026-11-10": null
+     },
+     "before_cm": 10,
+     "after_storm_cm": 36,
+     "new_cm": 26,
+     "on_9_nov_cm": 20,
+     "lost_cm": 16,
+     "lost_share_of_new_pct": 62
+    },
+    "Chapman Tunnel": {
+     "elev_m": 3075,
+     "depth_cm_by_day": {
+      "2026-11-02": 8,
+      "2026-11-03": 5,
+      "2026-11-04": 33,
+      "2026-11-05": 28,
+      "2026-11-06": 23,
+      "2026-11-07": 20,
+      "2026-11-08": 20,
+      "2026-11-09": 18,
+      "2026-11-10": null
+     },
+     "before_cm": 5,
+     "after_storm_cm": 33,
+     "new_cm": 28,
+     "on_9_nov_cm": 18,
+     "lost_cm": 15,
+     "lost_share_of_new_pct": 54
+    }
+   },
+   "median_lost_share_pct": 55,
+   "aspen_snowmass_mid": {
+    "elev_m": 3144,
+    "11-10": {
+     "p10": 2,
+     "p25": 10,
+     "p50": 25
+    },
+    "12-15": {
+     "p10": 35,
+     "p25": 53,
+     "p50": 82
+    },
+    "01-15": {
+     "p10": 72,
+     "p25": 96,
+     "p50": 118
+    }
+   },
+   "rule_of_thumb_in": [
+    6,
+    12
+   ],
+   "rule_of_thumb_cm": [
+    15,
+    30
+   ]
+  },
+  "model_run": "2026-11-10"
+ },
+ "ref_numbers": [],
+ "media": [
+  {
+   "id": "powder_settle",
+   "kind": "chart_img",
+   "file": "blog/media/2026/11/how-much-new-snow-makes-a-powder-day/powder_settle.webp",
+   "thumb": "blog/media/2026/11/how-much-new-snow-makes-a-powder-day/powder_settle_t.webp",
+   "after": 1
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "How much new snow makes a powder day? Five Colorado snow stations show how fast it shrinks",
+   "description": "A storm on November 4 left 8 to 13 inches of new snow at five high Colorado stations near Aspen. Five days later, half of it was gone. What that means for powder days.",
+   "lede": "Ask ten skiers how much new snow makes a powder day and you get ten answers. Field work teaches a more useful question: how much new snow is still soft when you get there? On November 4, five snow stations high in Colorado's mountains, most of them a short drive from Aspen, measured a fresh storm. They kept measuring every day after it. Their numbers show how quickly a powder day changes.",
+   "sections": [
+    {
+     "h": "A simple starting point: 6 inches and 12 inches",
+     "p": [
+      "Most skiers start to call it powder at about 6 in (15 cm) of new snow on a firm base. At that depth your skis float a little and the turns feel soft. At about 12 in (30 cm) the snow reaches your boots and the day feels deep. These are not laws of nature, only a useful scale, and the rest of this article is about why the same number can feel very different."
+     ]
+    },
+    {
+     "h": "What the five stations measured",
+     "p": [
+      "Brumley, at 10,571 ft (3,222 m), had 4 in (10 cm) of old snow on November 3. The next morning it measured 17 in (43 cm): 13 in (33 cm) of new snow overnight. Ivanhoe, at 10,541 ft (3,213 m), went from 4 in to 14 in (10 to 36 cm), Chapman Tunnel at 10,089 ft (3,075 m) from 2 in to 13 in (5 to 33 cm), and Independence Pass and Saint Elmo each gained 8 in (20 cm).",
+      "Then the snow started to shrink. By November 9, Brumley showed 10 in (25 cm). It had lost 7 in (18 cm) in five days, more than half of the new snow. The other stations tell the same story: Chapman Tunnel lost 6 in (15 cm), Ivanhoe 6 in (16 cm), Independence Pass 5 in (13 cm) and Saint Elmo 4 in (10 cm). The middle station lost 55 % of the height of its new snow in five days.",
+      "None of that snow disappeared from the mountain all at once. Most of it settled. New snow is mostly air, and under its own weight the crystals break, round off and pack closer together. Some of it also melted on sunny afternoons or turned straight into vapor in the dry Colorado air."
+     ]
+    },
+    {
+     "h": "Why the same 12 inches can feel so different",
+     "p": [
+      "Temperature during the storm. Snow that falls in cold air is made of light, branched crystals with a lot of air between them. It feels bottomless and sprays over your shoulders. Snow that falls near freezing is wetter and heavier. The same 12 in can be a dream in cold air and hard work in a warm storm.",
+      "Wind. Wind breaks the crystals into small pieces and packs them into firm layers. After a windy storm, the snow is often thin on ridges and deep and dense in sheltered gullies. Windy new snow is also where wind slabs form, the firm layers that can break off as avalanches.",
+      "The base below. 6 in of new snow on a firm, smooth base is a good day. The same 6 in on an early-season base of grass and rocks is a day for old skis. At Aspen Snowmass, the usual snow depth at mid-mountain (10,315 ft, 3,144 m) is only 10 in (25 cm) on November 10, so most early storms land on a thin base.",
+      "Time. As the stations show, the top layer changes every day. Sun, warm afternoons and skier traffic all work on it. The first hours after a storm are the softest."
+     ]
+    },
+    {
+     "h": "A field method for your own powder forecast",
+     "p": [
+      "In the Atlas mountains of Morocco, snow often comes in single storms with long dry, sunny days in between. You learn to judge fresh snow by its age and by the weather it fell in, not only by its depth. The same method works anywhere.",
+      "First, look at the amount: is it over 6 in, or over 12 in, at the height where you ski? Second, check the temperature at that height during the storm. Colder is lighter. Third, check the wind. Strong wind means hunt for sheltered slopes and be careful on loaded ones. Fourth, count the hours since the snow stopped. Every sunny afternoon takes something away.",
+      "And look at the base. By mid-December, the usual depth at Aspen Snowmass mid-mountain is 32 in (82 cm). Even in a poor winter, one of the thinnest in ten, it is 14 in (35 cm). That is when a fresh 12 in starts to ski the way you imagine it."
+     ]
+    },
+    {
+     "h": "How sure can we be?",
+     "p": [
+      "Each station measures one spot of ground. A gust can blow snow away from a sensor or pile it up beside it, and a sunny clearing behaves differently from a shady forest. That is why we looked at five stations together. They all show the same shape: a jump on November 4, then a steady drop over five days.",
+      "The new snow did not all fall in one hour, and the stations record once a day. The exact numbers of a single station are less important than the pattern. Fresh snow is at its deepest the morning after the storm, and it starts to lose height almost at once."
+     ]
+    }
+   ],
+   "advice": [
+    "Use 6 in and 12 in as a rough scale, then adjust for temperature, wind and base.",
+    "Go early: new snow loses height and softness from the first day.",
+    "On a thin early-season base, keep away from rocks hidden under new snow.",
+    "Fresh snow and wind build slabs: always read the avalanche forecast before leaving the groomed runs."
+   ],
+   "captions": {
+    "powder_settle": "Snow depth in inches at five high Colorado snow stations, November 2–9, 2026: a storm on November 4, then the new snow settles day by day."
+   },
+   "references": [
+    {
+     "text": "Colorado Avalanche Information Center: daily avalanche forecasts for Colorado.",
+     "url": "https://avalanche.state.co.us/"
+    },
+    {
+     "text": "SnowScope: A powder day at Whitewater, hour by hour.",
+     "url": "https://snowscope.app/blog/en/2026/11/whitewater-powder-day-hour-by-hour-nelson.html"
+    }
+   ],
+   "method": "Measured snow: daily snow depth at five automatic snow stations in Colorado (Brumley, Ivanhoe, Chapman Tunnel, Independence Pass, Saint Elmo), November 2-9, 2026, as shown on the SnowScope station map. Usual depth at Aspen Snowmass: SnowScope snow history, 46 past winters (1980-81 to 2025-26) at mid-mountain, a model of the past corrected for height."
+  },
+  "fr": {
+   "title": "Combien de neige fraîche pour une journée de poudreuse ? Cinq stations nivologiques du Colorado montrent à quelle vitesse elle fond",
+   "description": "Une tempête le 4 novembre a laissé 8 à 13 inches de neige fraîche sur cinq stations d'altitude du Colorado, près d'Aspen. Cinq jours plus tard, la moitié avait disparu. Ce que cela veut dire pour vos journées de poudreuse.",
+   "lede": "Demandez à dix skieurs combien de neige fraîche il faut pour une journée de poudreuse, vous aurez dix réponses. Le terrain apprend à poser une question plus utile : combien de neige fraîche est encore douce quand vous arrivez ? Le 4 novembre, cinq stations nivologiques perchées dans les montagnes du Colorado, la plupart à peu de route d'Aspen, ont mesuré une nouvelle tempête. Elles ont continué à mesurer chaque jour ensuite. Leurs chiffres montrent à quelle vitesse une journée de poudreuse change.",
+   "sections": [
+    {
+     "h": "Un point de départ simple : 6 inches et 12 inches",
+     "p": [
+      "La plupart des skieurs commencent à parler de poudreuse vers 6 in (15 cm) de neige fraîche sur une sous-couche dure. À cette hauteur, les skis flottent un peu et les virages sont doux. Vers 12 in (30 cm), la neige arrive aux chaussures et la journée paraît profonde. Ce ne sont pas des lois de la nature, juste une échelle pratique, et la suite de cet article explique pourquoi le même chiffre peut donner des sensations très différentes."
+     ]
+    },
+    {
+     "h": "Ce que les cinq stations ont mesuré",
+     "p": [
+      "Brumley, à 10 571 ft (3 222 m), avait 4 in (10 cm) de vieille neige le 3 novembre. Le lendemain matin, elle mesurait 17 in (43 cm) : 13 in (33 cm) de neige fraîche en une nuit. Ivanhoe, à 10 541 ft (3 213 m), est passée de 4 in à 14 in (10 à 36 cm), Chapman Tunnel, à 10 089 ft (3 075 m), de 2 in à 13 in (5 à 33 cm), et Independence Pass et Saint Elmo ont gagné chacune 8 in (20 cm).",
+      "Ensuite, la neige a commencé à se tasser. Le 9 novembre, Brumley affichait 10 in (25 cm). Elle avait perdu 7 in (18 cm) en cinq jours, plus de la moitié de la neige fraîche. Les autres stations racontent la même histoire : Chapman Tunnel a perdu 6 in (15 cm), Ivanhoe 6 in (16 cm), Independence Pass 5 in (13 cm) et Saint Elmo 4 in (10 cm). La station médiane a perdu 55 % de la hauteur de sa neige fraîche en cinq jours.",
+      "Cette neige n'a pas quitté la montagne d'un coup. Elle s'est surtout tassée. La neige fraîche est faite surtout d'air ; sous son propre poids, les cristaux se cassent, s'arrondissent et se serrent les uns contre les autres. Une partie a aussi fondu les après-midi ensoleillés, ou s'est transformée directement en vapeur dans l'air sec du Colorado."
+     ]
+    },
+    {
+     "h": "Pourquoi les mêmes 12 inches peuvent paraître si différents",
+     "p": [
+      "La température pendant la tempête. La neige qui tombe dans l'air froid est faite de cristaux légers et ramifiés, avec beaucoup d'air entre eux. On n'en touche pas le fond et elle vole par-dessus les épaules. La neige qui tombe près du point de congélation est plus humide et plus lourde. Les mêmes 12 in peuvent être un rêve par temps froid et un vrai travail dans une tempête douce.",
+      "Le vent. Le vent casse les cristaux en petits morceaux et les tasse en couches dures. Après une tempête venteuse, la neige est souvent mince sur les crêtes, et profonde et dense dans les combes abritées. C'est aussi dans la neige fraîche ventée que se forment les plaques à vent, ces couches dures qui peuvent se détacher en avalanche.",
+      "La sous-couche. 6 in de neige fraîche sur une base dure et lisse, c'est une bonne journée. Les mêmes 6 in sur une base de début de saison, avec de l'herbe et des cailloux, c'est une journée pour les vieux skis. À Aspen Snowmass, la hauteur de neige habituelle à mi-montagne (10 315 ft, 3 144 m) n'est que de 10 in (25 cm) le 10 novembre : la plupart des premières tempêtes tombent donc sur une base mince.",
+      "Le temps qui passe. Comme le montrent les stations, la couche de surface change chaque jour. Le soleil, les après-midi doux et le passage des skieurs la travaillent. Les premières heures après une tempête sont les plus douces."
+     ]
+    },
+    {
+     "h": "Une méthode de terrain pour votre propre prévision de poudreuse",
+     "p": [
+      "Dans l'Atlas marocain, la neige arrive souvent en tempêtes isolées, séparées par de longues journées sèches et ensoleillées. On apprend à juger la neige fraîche par son âge et par le temps dans lequel elle est tombée, pas seulement par sa hauteur. La même méthode marche partout.",
+      "D'abord, regardez la quantité : plus de 6 in, ou plus de 12 in, à l'altitude où vous skiez ? Ensuite, vérifiez la température à cette altitude pendant la tempête : plus il fait froid, plus la neige est légère. Puis, regardez le vent : s'il a soufflé fort, cherchez les pentes abritées et méfiez-vous des pentes chargées. Enfin, comptez les heures depuis la fin des chutes : chaque après-midi ensoleillé enlève quelque chose.",
+      "Et regardez la sous-couche. À la mi-décembre, la hauteur habituelle à mi-montagne à Aspen Snowmass est de 32 in (82 cm). Même lors d'un hiver pauvre, l'un des plus maigres sur dix, elle atteint 14 in (35 cm). C'est à ce moment que 12 in de neige fraîche commencent à se skier comme on l'imagine."
+     ]
+    },
+    {
+     "h": "Quelle confiance accorder à ces chiffres ?",
+     "p": [
+      "Chaque station mesure un seul point du terrain. Une rafale peut chasser la neige loin d'un capteur ou l'entasser juste à côté, et une clairière au soleil ne se comporte pas comme une forêt à l'ombre. C'est pour cela que nous avons regardé cinq stations ensemble. Elles montrent toutes la même forme : un saut le 4 novembre, puis une baisse régulière sur cinq jours.",
+      "La neige fraîche n'est pas tombée en une heure, et les stations enregistrent une fois par jour. Les chiffres exacts d'une seule station comptent moins que la tendance. La neige fraîche est à son plus profond le matin qui suit la tempête, et elle commence à perdre de la hauteur presque tout de suite."
+     ]
+    }
+   ],
+   "advice": [
+    "Prenez 6 in et 12 in comme une échelle approximative, puis ajustez selon la température, le vent et la sous-couche.",
+    "Partez tôt : la neige fraîche perd de la hauteur et de sa douceur dès le premier jour.",
+    "Sur une sous-couche mince de début de saison, évitez les rochers cachés sous la neige fraîche.",
+    "Neige fraîche et vent forment des plaques : lisez toujours le bulletin d'avalanches avant de quitter les pistes damées."
+   ],
+   "captions": {
+    "powder_settle": "Hauteur de neige en inches sur cinq stations nivologiques d'altitude du Colorado, du 2 au 9 novembre 2026 : une tempête le 4 novembre, puis la neige fraîche se tasse jour après jour."
+   },
+   "references": [
+    {
+     "text": "Colorado Avalanche Information Center : bulletins d'avalanches quotidiens pour le Colorado.",
+     "url": "https://avalanche.state.co.us/"
+    },
+    {
+     "text": "SnowScope : une journée de poudreuse à Whitewater, heure par heure.",
+     "url": "https://snowscope.app/blog/en/2026/11/whitewater-powder-day-hour-by-hour-nelson.html"
+    }
+   ],
+   "method": "Neige mesurée : hauteur de neige quotidienne sur cinq stations nivologiques automatiques du Colorado (Brumley, Ivanhoe, Chapman Tunnel, Independence Pass, Saint Elmo), du 2 au 9 novembre 2026, telle qu'affichée sur la carte des stations SnowScope. Hauteur habituelle à Aspen Snowmass : historique de neige SnowScope, 46 hivers passés (1980-81 à 2025-26) à mi-montagne, un modèle du passé corrigé selon l'altitude."
+  },
+  "de": {
+   "title": "Wie viel Neuschnee braucht ein Powder-Tag? Fünf Schneestationen in Colorado zeigen, wie schnell er schrumpft",
+   "description": "Ein Sturm am 4. November brachte 8 bis 13 inches Neuschnee an fünf hoch gelegenen Stationen in Colorado nahe Aspen. Fünf Tage später war die Hälfte weg. Was das für Powder-Tage bedeutet.",
+   "lede": "Fragt man zehn Skifahrer, wie viel Neuschnee einen Powder-Tag ausmacht, bekommt man zehn Antworten. Die Arbeit im Gelände lehrt eine nützlichere Frage: Wie viel Neuschnee ist noch weich, wenn man ankommt? Am 4. November maßen fünf Schneestationen hoch in den Bergen Colorados, die meisten nur eine kurze Fahrt von Aspen entfernt, einen frischen Sturm. Danach maßen sie jeden Tag weiter. Ihre Zahlen zeigen, wie schnell sich ein Powder-Tag verändert.",
+   "sections": [
+    {
+     "h": "Ein einfacher Ausgangspunkt: 6 inches und 12 inches",
+     "p": [
+      "Die meisten Skifahrer sprechen ab etwa 6 in (15 cm) Neuschnee auf fester Unterlage von Powder. Bei dieser Höhe schwimmen die Ski ein wenig auf, und die Schwünge fühlen sich weich an. Ab etwa 12 in (30 cm) reicht der Schnee bis an die Skischuhe, und der Tag fühlt sich tief an. Das sind keine Naturgesetze, nur eine praktische Skala. Der Rest des Artikels zeigt, warum sich dieselbe Zahl sehr unterschiedlich anfühlen kann."
+     ]
+    },
+    {
+     "h": "Was die fünf Stationen gemessen haben",
+     "p": [
+      "Brumley auf 10.571 ft (3.222 m) hatte am 3. November 4 in (10 cm) Altschnee. Am nächsten Morgen zeigte die Station 17 in (43 cm): 13 in (33 cm) Neuschnee über Nacht. Ivanhoe auf 10.541 ft (3.213 m) stieg von 4 in auf 14 in (10 auf 36 cm), Chapman Tunnel auf 10.089 ft (3.075 m) von 2 in auf 13 in (5 auf 33 cm), und Independence Pass und Saint Elmo legten jeweils 8 in (20 cm) zu.",
+      "Dann begann der Schnee zu schrumpfen. Am 9. November zeigte Brumley 10 in (25 cm). In fünf Tagen gingen 7 in (18 cm) verloren, mehr als die Hälfte des Neuschnees. Die anderen Stationen zeigen dasselbe Bild: Chapman Tunnel verlor 6 in (15 cm), Ivanhoe 6 in (16 cm), Independence Pass 5 in (13 cm) und Saint Elmo 4 in (10 cm). Die mittlere Station verlor in fünf Tagen 55 % der Höhe ihres Neuschnees.",
+      "Nichts davon verschwand auf einmal vom Berg. Der größte Teil hat sich gesetzt. Neuschnee besteht vor allem aus Luft; unter dem eigenen Gewicht brechen die Kristalle, runden sich ab und rücken enger zusammen. Ein Teil schmolz außerdem an sonnigen Nachmittagen oder ging in der trockenen Luft Colorados direkt in Wasserdampf über."
+     ]
+    },
+    {
+     "h": "Warum sich dieselben 12 inches so unterschiedlich anfühlen",
+     "p": [
+      "Die Temperatur während des Sturms. Schnee, der in kalter Luft fällt, besteht aus leichten, verästelten Kristallen mit viel Luft dazwischen. Er fühlt sich bodenlos an und stäubt über die Schultern. Schnee, der um den Gefrierpunkt fällt, ist nasser und schwerer. Dieselben 12 in können bei Kälte ein Traum und bei einem warmen Sturm harte Arbeit sein.",
+      "Der Wind. Wind zerbricht die Kristalle in kleine Stücke und presst sie zu festen Schichten. Nach einem windigen Sturm liegt auf den Graten oft wenig Schnee, in geschützten Rinnen dagegen viel und dichter. In windverfrachtetem Neuschnee entstehen auch Triebschneebretter: feste Schichten, die als Lawine abbrechen können.",
+      "Die Unterlage. 6 in Neuschnee auf fester, glatter Unterlage ergeben einen guten Tag. Dieselben 6 in auf einer Frühwinter-Unterlage aus Gras und Steinen sind ein Tag für alte Ski. In Aspen Snowmass liegt die übliche Schneehöhe an der Bergmitte (10.315 ft, 3.144 m) am 10. November bei nur 10 in (25 cm). Die meisten frühen Stürme fallen also auf eine dünne Unterlage.",
+      "Die Zeit. Wie die Stationen zeigen, verändert sich die oberste Schicht jeden Tag. Sonne, warme Nachmittage und Skiverkehr arbeiten an ihr. Die ersten Stunden nach einem Sturm sind die weichsten."
+     ]
+    },
+    {
+     "h": "Eine Feldmethode für die eigene Powder-Prognose",
+     "p": [
+      "Im marokkanischen Atlas kommt der Schnee oft in einzelnen Stürmen, mit langen trockenen, sonnigen Tagen dazwischen. Man lernt, Neuschnee nach seinem Alter und nach dem Wetter zu beurteilen, in dem er gefallen ist, nicht nur nach seiner Höhe. Diese Methode funktioniert überall.",
+      "Erstens auf die Menge schauen: mehr als 6 in oder mehr als 12 in, in der Höhe, in der man fährt? Zweitens die Temperatur in dieser Höhe während des Sturms prüfen: Je kälter, desto leichter. Drittens den Wind prüfen: Bei starkem Wind geschützte Hänge suchen und auf eingewehten Hängen vorsichtig sein. Viertens die Stunden zählen, seit der Schneefall aufgehört hat: Jeder sonnige Nachmittag nimmt etwas weg.",
+      "Und auf die Unterlage achten. Mitte Dezember beträgt die übliche Schneehöhe an der Bergmitte von Aspen Snowmass 32 in (82 cm). Selbst in einem schwachen Winter, einem der dünnsten von zehn, sind es 14 in (35 cm). Dann fahren sich frische 12 in so, wie man es sich vorstellt."
+     ]
+    },
+    {
+     "h": "Wie verlässlich sind diese Zahlen?",
+     "p": [
+      "Jede Station misst nur einen Punkt im Gelände. Eine Böe kann Schnee von einem Sensor wegblasen oder daneben anhäufen, und eine sonnige Lichtung verhält sich anders als ein schattiger Wald. Deshalb wurden fünf Stationen gemeinsam betrachtet. Alle zeigen dieselbe Form: einen Sprung am 4. November, dann einen stetigen Rückgang über fünf Tage.",
+      "Der Neuschnee fiel nicht innerhalb einer Stunde, und die Stationen zeichnen einmal pro Tag auf. Die genauen Zahlen einer einzelnen Station sind weniger wichtig als das Muster. Neuschnee ist am Morgen nach dem Sturm am tiefsten und verliert fast sofort an Höhe."
+     ]
+    }
+   ],
+   "advice": [
+    "6 in und 12 in als grobe Skala nutzen, dann nach Temperatur, Wind und Unterlage anpassen.",
+    "Früh los: Neuschnee verliert vom ersten Tag an Höhe und Weichheit.",
+    "Auf dünner Frühwinter-Unterlage Abstand zu Steinen halten, die unter dem Neuschnee versteckt sind.",
+    "Neuschnee und Wind bilden Schneebretter: Vor dem Verlassen der präparierten Pisten immer den Lawinenlagebericht lesen."
+   ],
+   "captions": {
+    "powder_settle": "Schneehöhe in inches an fünf hoch gelegenen Schneestationen in Colorado, 2.–9. November 2026: ein Sturm am 4. November, danach setzt sich der Neuschnee Tag für Tag."
+   },
+   "references": [
+    {
+     "text": "Colorado Avalanche Information Center: tägliche Lawinenlageberichte für Colorado.",
+     "url": "https://avalanche.state.co.us/"
+    },
+    {
+     "text": "SnowScope: Ein Powder-Tag in Whitewater, Stunde für Stunde.",
+     "url": "https://snowscope.app/blog/en/2026/11/whitewater-powder-day-hour-by-hour-nelson.html"
+    }
+   ],
+   "method": "Gemessener Schnee: tägliche Schneehöhe an fünf automatischen Schneestationen in Colorado (Brumley, Ivanhoe, Chapman Tunnel, Independence Pass, Saint Elmo), 2.–9. November 2026, wie auf der SnowScope-Stationskarte angezeigt. Übliche Schneehöhe in Aspen Snowmass: SnowScope-Schneehistorie, 46 vergangene Winter (1980-81 bis 2025-26) an der Bergmitte, ein höhenkorrigiertes Modell der Vergangenheit."
+  },
+  "it": {
+   "title": "Quanta neve fresca serve per una giornata di powder? Cinque stazioni nivometriche del Colorado mostrano quanto in fretta cala",
+   "description": "Una nevicata il 4 novembre ha lasciato da 8 a 13 inches di neve fresca su cinque stazioni in quota del Colorado vicino ad Aspen. Cinque giorni dopo, metà era sparita. Cosa significa per le giornate di powder.",
+   "lede": "Chiedete a dieci sciatori quanta neve fresca serve per una giornata di powder e avrete dieci risposte. Il lavoro sul campo insegna una domanda più utile: quanta neve fresca è ancora morbida quando arrivate? Il 4 novembre cinque stazioni nivometriche in alto sulle montagne del Colorado, quasi tutte a poca strada da Aspen, hanno misurato una nuova nevicata. Poi hanno continuato a misurare ogni giorno. I loro numeri mostrano quanto in fretta cambia una giornata di powder.",
+   "sections": [
+    {
+     "h": "Un punto di partenza semplice: 6 inches e 12 inches",
+     "p": [
+      "Quasi tutti gli sciatori iniziano a parlare di powder con circa 6 in (15 cm) di neve fresca su un fondo duro. A questa altezza gli sci galleggiano un po' e le curve sono morbide. Con circa 12 in (30 cm) la neve arriva agli scarponi e la giornata sembra profonda. Non sono leggi di natura, solo una scala pratica, e il resto dell'articolo spiega perché lo stesso numero può dare sensazioni molto diverse."
+     ]
+    },
+    {
+     "h": "Cosa hanno misurato le cinque stazioni",
+     "p": [
+      "Brumley, a 10.571 ft (3.222 m), aveva 4 in (10 cm) di neve vecchia il 3 novembre. La mattina dopo segnava 17 in (43 cm): 13 in (33 cm) di neve fresca in una notte. Ivanhoe, a 10.541 ft (3.213 m), è passata da 4 in a 14 in (da 10 a 36 cm), Chapman Tunnel, a 10.089 ft (3.075 m), da 2 in a 13 in (da 5 a 33 cm), mentre Independence Pass e Saint Elmo hanno guadagnato 8 in (20 cm) ciascuna.",
+      "Poi la neve ha iniziato a calare. Il 9 novembre Brumley segnava 10 in (25 cm). Aveva perso 7 in (18 cm) in cinque giorni, più di metà della neve fresca. Le altre stazioni raccontano la stessa storia: Chapman Tunnel ha perso 6 in (15 cm), Ivanhoe 6 in (16 cm), Independence Pass 5 in (13 cm) e Saint Elmo 4 in (10 cm). La stazione mediana ha perso il 55 % dell'altezza della sua neve fresca in cinque giorni.",
+      "Quella neve non è sparita dalla montagna tutta insieme. Per lo più si è assestata. La neve fresca è fatta soprattutto d'aria: sotto il proprio peso i cristalli si rompono, si arrotondano e si compattano. Una parte si è anche sciolta nei pomeriggi di sole o è passata direttamente allo stato di vapore nell'aria secca del Colorado."
+     ]
+    },
+    {
+     "h": "Perché gli stessi 12 inches possono sembrare così diversi",
+     "p": [
+      "La temperatura durante la nevicata. La neve che cade nell'aria fredda è fatta di cristalli leggeri e ramificati, con molta aria in mezzo. Sembra senza fondo e vola sopra le spalle. La neve che cade vicino al punto di congelamento è più bagnata e pesante. Gli stessi 12 in possono essere un sogno al freddo e una fatica in una nevicata mite.",
+      "Il vento. Il vento rompe i cristalli in piccoli pezzi e li compatta in strati duri. Dopo una nevicata ventosa, la neve è spesso sottile sulle creste e profonda e densa nei canali riparati. Nella neve fresca ventata si formano anche i lastroni da vento, strati duri che possono staccarsi come valanghe.",
+      "Il fondo. 6 in di neve fresca su un fondo duro e liscio fanno una bella giornata. Gli stessi 6 in su un fondo d'inizio stagione, con erba e sassi, sono una giornata da sci vecchi. Ad Aspen Snowmass l'altezza di neve abituale a metà montagna (10.315 ft, 3.144 m) il 10 novembre è solo di 10 in (25 cm): quasi tutte le prime nevicate cadono quindi su un fondo sottile.",
+      "Il tempo. Come mostrano le stazioni, lo strato superficiale cambia ogni giorno. Sole, pomeriggi miti e passaggio degli sciatori lo lavorano. Le prime ore dopo una nevicata sono le più morbide."
+     ]
+    },
+    {
+     "h": "Un metodo da campo per la vostra previsione di powder",
+     "p": [
+      "Sull'Atlante marocchino la neve arriva spesso con nevicate isolate, separate da lunghi giorni secchi e soleggiati. Si impara a giudicare la neve fresca dalla sua età e dal tempo in cui è caduta, non solo dalla sua altezza. Lo stesso metodo funziona ovunque.",
+      "Primo, guardate la quantità: più di 6 in, o più di 12 in, alla quota dove sciate? Secondo, controllate la temperatura a quella quota durante la nevicata: più freddo vuol dire più leggera. Terzo, controllate il vento: con vento forte cercate pendii riparati e fate attenzione a quelli carichi. Quarto, contate le ore da quando ha smesso di nevicare: ogni pomeriggio di sole porta via qualcosa.",
+      "E guardate il fondo. A metà dicembre l'altezza abituale a metà montagna ad Aspen Snowmass è di 32 in (82 cm). Anche in un inverno povero, uno dei più magri su dieci, è di 14 in (35 cm). È allora che 12 in di neve fresca iniziano a sciarsi come ve li immaginate."
+     ]
+    },
+    {
+     "h": "Quanto possiamo fidarci?",
+     "p": [
+      "Ogni stazione misura un solo punto del terreno. Una raffica può portare via la neve da un sensore o ammucchiarla accanto, e una radura al sole si comporta diversamente da un bosco in ombra. Per questo abbiamo guardato cinque stazioni insieme. Mostrano tutte la stessa forma: un salto il 4 novembre, poi un calo costante in cinque giorni.",
+      "La neve fresca non è caduta tutta in un'ora, e le stazioni registrano una volta al giorno. I numeri esatti di una singola stazione contano meno dell'andamento. La neve fresca è al massimo la mattina dopo la nevicata e comincia a perdere altezza quasi subito."
+     ]
+    }
+   ],
+   "advice": [
+    "Usate 6 in e 12 in come scala indicativa, poi correggete in base a temperatura, vento e fondo.",
+    "Partite presto: la neve fresca perde altezza e morbidezza dal primo giorno.",
+    "Su un fondo sottile d'inizio stagione, state lontani dai sassi nascosti sotto la neve fresca.",
+    "Neve fresca e vento formano lastroni: leggete sempre il bollettino valanghe prima di lasciare le piste battute."
+   ],
+   "captions": {
+    "powder_settle": "Altezza della neve in inches su cinque stazioni nivometriche in quota del Colorado, 2–9 novembre 2026: una nevicata il 4 novembre, poi la neve fresca si assesta giorno dopo giorno."
+   },
+   "references": [
+    {
+     "text": "Colorado Avalanche Information Center: bollettini valanghe giornalieri per il Colorado.",
+     "url": "https://avalanche.state.co.us/"
+    },
+    {
+     "text": "SnowScope: una giornata di powder a Whitewater, ora per ora.",
+     "url": "https://snowscope.app/blog/en/2026/11/whitewater-powder-day-hour-by-hour-nelson.html"
+    }
+   ],
+   "method": "Neve misurata: altezza della neve giornaliera su cinque stazioni nivometriche automatiche del Colorado (Brumley, Ivanhoe, Chapman Tunnel, Independence Pass, Saint Elmo), 2–9 novembre 2026, come mostrato sulla mappa delle stazioni SnowScope. Altezza abituale ad Aspen Snowmass: storico neve SnowScope, 46 inverni passati (dal 1980-81 al 2025-26) a metà montagna, un modello del passato corretto per la quota."
+  },
+  "es": {
+   "title": "¿Cuánta nieve nueva hace falta para un día de powder? Cinco estaciones de nieve de Colorado muestran lo rápido que se encoge",
+   "description": "Una tormenta el 4 de noviembre dejó de 8 a 13 inches de nieve nueva en cinco estaciones altas de Colorado cerca de Aspen. Cinco días después, la mitad había desaparecido. Qué significa esto para los días de powder.",
+   "lede": "Pregunta a diez esquiadores cuánta nieve nueva hace falta para un día de powder y tendrás diez respuestas. El trabajo de campo enseña una pregunta más útil: ¿cuánta nieve nueva sigue blanda cuando llegas? El 4 de noviembre, cinco estaciones de nieve en lo alto de las montañas de Colorado, casi todas a poca distancia en coche de Aspen, midieron una tormenta nueva. Después siguieron midiendo cada día. Sus datos muestran lo rápido que cambia un día de powder.",
+   "sections": [
+    {
+     "h": "Un punto de partida sencillo: 6 inches y 12 inches",
+     "p": [
+      "La mayoría de los esquiadores empieza a hablar de powder con unas 6 in (15 cm) de nieve nueva sobre una base dura. Con ese espesor, los esquís flotan un poco y los giros son suaves. Hacia las 12 in (30 cm), la nieve llega a las botas y el día se siente profundo. No son leyes de la naturaleza, solo una escala práctica, y el resto del artículo explica por qué la misma cifra puede sentirse muy distinta."
+     ]
+    },
+    {
+     "h": "Lo que midieron las cinco estaciones",
+     "p": [
+      "Brumley, a 10.571 ft (3.222 m), tenía 4 in (10 cm) de nieve vieja el 3 de noviembre. A la mañana siguiente marcaba 17 in (43 cm): 13 in (33 cm) de nieve nueva en una noche. Ivanhoe, a 10.541 ft (3.213 m), pasó de 4 in a 14 in (de 10 a 36 cm); Chapman Tunnel, a 10.089 ft (3.075 m), de 2 in a 13 in (de 5 a 33 cm), e Independence Pass y Saint Elmo ganaron 8 in (20 cm) cada una.",
+      "Luego la nieve empezó a encogerse. El 9 de noviembre, Brumley marcaba 10 in (25 cm). Había perdido 7 in (18 cm) en cinco días, más de la mitad de la nieve nueva. Las demás estaciones cuentan la misma historia: Chapman Tunnel perdió 6 in (15 cm), Ivanhoe 6 in (16 cm), Independence Pass 5 in (13 cm) y Saint Elmo 4 in (10 cm). La estación mediana perdió el 55 % de la altura de su nieve nueva en cinco días.",
+      "Esa nieve no desapareció de la montaña de golpe. Sobre todo se asentó. La nieve nueva es casi todo aire, y bajo su propio peso los cristales se rompen, se redondean y se aprietan unos contra otros. Una parte también se fundió en las tardes de sol o pasó directamente a vapor en el aire seco de Colorado."
+     ]
+    },
+    {
+     "h": "Por qué las mismas 12 inches pueden sentirse tan distintas",
+     "p": [
+      "La temperatura durante la tormenta. La nieve que cae con aire frío está hecha de cristales ligeros y ramificados, con mucho aire entre ellos. Parece no tener fondo y salta por encima de los hombros. La nieve que cae cerca del punto de congelación es más húmeda y pesada. Las mismas 12 in pueden ser un sueño con frío y un trabajo duro en una tormenta templada.",
+      "El viento. El viento rompe los cristales en trozos pequeños y los compacta en capas duras. Tras una tormenta con viento, la nieve suele ser fina en las crestas y profunda y densa en las canales resguardadas. En la nieve nueva venteada también se forman las placas de viento, capas duras que pueden romperse y bajar como aludes.",
+      "La base. 6 in de nieve nueva sobre una base dura y lisa son un buen día. Las mismas 6 in sobre una base de principio de temporada, con hierba y piedras, son un día para esquís viejos. En Aspen Snowmass, el espesor de nieve habitual a media montaña (10.315 ft, 3.144 m) es de solo 10 in (25 cm) el 10 de noviembre, así que casi todas las primeras tormentas caen sobre una base fina.",
+      "El tiempo. Como muestran las estaciones, la capa de arriba cambia cada día. El sol, las tardes templadas y el paso de esquiadores la van trabajando. Las primeras horas después de una tormenta son las más blandas."
+     ]
+    },
+    {
+     "h": "Un método de campo para tu propio pronóstico de powder",
+     "p": [
+      "En el Atlas de Marruecos, la nieve suele llegar en tormentas sueltas, con largos días secos y soleados entre medias. Uno aprende a juzgar la nieve nueva por su edad y por el tiempo con el que cayó, no solo por su espesor. El mismo método sirve en cualquier sitio.",
+      "Primero, mira la cantidad: ¿más de 6 in, o más de 12 in, a la altura donde esquías? Segundo, revisa la temperatura a esa altura durante la tormenta: más frío significa nieve más ligera. Tercero, revisa el viento: con viento fuerte, busca laderas resguardadas y ten cuidado con las cargadas. Cuarto, cuenta las horas desde que dejó de nevar: cada tarde de sol se lleva algo.",
+      "Y fíjate en la base. A mediados de diciembre, el espesor habitual a media montaña en Aspen Snowmass es de 32 in (82 cm). Incluso en un invierno pobre, uno de los más flojos de cada diez, llega a 14 in (35 cm). Es entonces cuando 12 in de nieve nueva empiezan a esquiarse como te las imaginas."
+     ]
+    },
+    {
+     "h": "¿Hasta qué punto podemos fiarnos?",
+     "p": [
+      "Cada estación mide un solo punto del terreno. Una ráfaga puede llevarse la nieve de un sensor o amontonarla a su lado, y un claro soleado no se comporta igual que un bosque en sombra. Por eso miramos cinco estaciones juntas. Todas muestran la misma forma: un salto el 4 de noviembre y después una bajada constante durante cinco días.",
+      "La nieve nueva no cayó toda en una hora, y las estaciones registran una vez al día. Las cifras exactas de una sola estación importan menos que el patrón. La nieve nueva está en su punto más profundo la mañana después de la tormenta y empieza a perder altura casi enseguida."
+     ]
+    }
+   ],
+   "advice": [
+    "Usa 6 in y 12 in como escala aproximada y luego ajusta según la temperatura, el viento y la base.",
+    "Madruga: la nieve nueva pierde altura y suavidad desde el primer día.",
+    "Sobre una base fina de principio de temporada, aléjate de las piedras escondidas bajo la nieve nueva.",
+    "Nieve nueva y viento forman placas: lee siempre el boletín de aludes antes de salir de las pistas pisadas."
+   ],
+   "captions": {
+    "powder_settle": "Espesor de nieve en inches en cinco estaciones de nieve altas de Colorado, del 2 al 9 de noviembre de 2026: una tormenta el 4 de noviembre y después la nieve nueva se asienta día a día."
+   },
+   "references": [
+    {
+     "text": "Colorado Avalanche Information Center: boletines de aludes diarios para Colorado.",
+     "url": "https://avalanche.state.co.us/"
+    },
+    {
+     "text": "SnowScope: un día de powder en Whitewater, hora a hora.",
+     "url": "https://snowscope.app/blog/en/2026/11/whitewater-powder-day-hour-by-hour-nelson.html"
+    }
+   ],
+   "method": "Nieve medida: espesor de nieve diario en cinco estaciones automáticas de nieve de Colorado (Brumley, Ivanhoe, Chapman Tunnel, Independence Pass, Saint Elmo), del 2 al 9 de noviembre de 2026, tal como aparece en el mapa de estaciones de SnowScope. Espesor habitual en Aspen Snowmass: historial de nieve de SnowScope, 46 inviernos pasados (de 1980-81 a 2025-26) a media montaña, un modelo del pasado corregido según la altura."
+  },
+  "ar": {
+   "title": "شحال خاص ديال التلج الجديد باش يكون نهار بودرة؟ خمس محطات ديال التلج ف كولورادو كيبينو شحال بالزربة كينقص",
+   "description": "عاصفة نهار 4 نونبر خلات بين 8 و 13 inches ديال التلج الجديد ف خمس محطات عاليين ف كولورادو قراب من Aspen. من بعد خمس أيام، النص منو مشى. شنو كيعني هادشي لنهارات البودرة.",
+   "lede": "سول عشرة ديال السكيورات شحال خاص ديال التلج الجديد باش يكون نهار بودرة، غادي يعطيوك عشرة ديال الأجوبة. الخدمة ف الميدان كتعلمك سؤال أنفع: شحال من تلج جديد باقي رطب ملي توصل؟ نهار 4 نونبر، خمس محطات ديال التلج لفوق ف جبال كولورادو، الكثير منهم قراب بالطوموبيل من Aspen، قاسو عاصفة جديدة. ومن بعدها بقاو كيقيسو كل نهار. الأرقام ديالهم كتبين شحال بالزربة كيتبدل نهار البودرة.",
+   "sections": [
+    {
+     "h": "نقطة بداية ساهلة: 6 inches و 12 inches",
+     "p": [
+      "أغلب السكيورات كيبداو يقولو بودرة من حوالي 6 in (15 cm) ديال التلج الجديد فوق قاعدة قاسحة. ف هاد العلو، السكيات كيعومو شوية والدورات كيكونو رطبين. وملي يوصل حوالي 12 in (30 cm)، التلج كيوصل للسباط والنهار كيبان غارق. هادو ماشي قوانين ديال الطبيعة، غير سلم مفيد، والباقي ديال هاد المقال كيشرح علاش نفس الرقم يقدر يتحس بطريقة مختلفة بزاف."
+     ]
+    },
+    {
+     "h": "شنو قاسو الخمس محطات",
+     "p": [
+      "Brumley، ف 10,571 ft (3,222 m)، كان فيها 4 in (10 cm) ديال التلج القديم نهار 3 نونبر. الصباح اللي من بعد قاست 17 in (43 cm): يعني 13 in (33 cm) ديال التلج الجديد ف ليلة وحدة. Ivanhoe، ف 10,541 ft (3,213 m)، طلعات من 4 in ل 14 in (من 10 ل 36 cm)، و Chapman Tunnel ف 10,089 ft (3,075 m) من 2 in ل 13 in (من 5 ل 33 cm)، و Independence Pass و Saint Elmo زادت كل وحدة فيهم 8 in (20 cm).",
+      "من بعد، التلج بدا كينقص. نهار 9 نونبر، Brumley ولات كتبين 10 in (25 cm). يعني ضيعات 7 in (18 cm) ف خمس أيام، كثر من النص ديال التلج الجديد. المحطات الأخرين كيحكيو نفس الحكاية: Chapman Tunnel ضيعات 6 in (15 cm)، و Ivanhoe 6 in (16 cm)، و Independence Pass 5 in (13 cm)، و Saint Elmo 4 in (10 cm). المحطة اللي ف الوسط ضيعات 55 % من العلو ديال التلج الجديد ديالها ف خمس أيام.",
+      "هاد التلج ما مشاش من الجبل دقة وحدة. الكثير منو تزير وهبط. التلج الجديد أغلبو هوا، وتحت الثقل ديالو، الكريسطالات كيتهرسو، كيتدورو وكيتلاصقو مع بعضياتهم. وشوية منو داب ف العشيات اللي فيها الشمس، ولا تحول نيشان لبخار ف الهوا الناشف ديال كولورادو."
+     ]
+    },
+    {
+     "h": "علاش نفس 12 inches تقدر تتحس مختلفة بزاف",
+     "p": [
+      "الحرارة وقت العاصفة. التلج اللي كيطيح ف الهوا البارد مصاوب من كريسطالات خفاف ومفرعين، وبيناتهم هوا بزاف. كتحس بحال إلا ما عندو قاع، وكيطير فوق كتافك. والتلج اللي كيطيح قريب من درجة التجمد كيكون مفزگ وثقيل. نفس 12 in تقدر تكون حلمة ف البرد، وتمارة ف عاصفة سخونة.",
+      "الريح. الريح كتهرس الكريسطالات لطراف صغار وكتضغطهم ف طبقات قاسحين. من بعد عاصفة فيها الريح، التلج كيكون غالبا رقيق فوق الحروف، وغارق ومزير ف الشعاب المحميين. والتلج الجديد اللي ضربو الريح هو فين كيتكونو الألواح ديال الريح، يعني طبقات قاسحين يقدرو يتقطعو ويطيحو بحال الأفالانش.",
+      "القاعدة اللي تحت. 6 in ديال التلج الجديد فوق قاعدة قاسحة وملسة نهار مزيان. ونفس 6 in فوق قاعدة ديال بداية الموسم فيها الربيع والحجر، نهار ديال السكيات القدام. ف Aspen Snowmass، العلو العادي ديال التلج ف نص الجبل (10,315 ft، 3,144 m) غير 10 in (25 cm) نهار 10 نونبر، يعني أغلب العواصف الأولى كتطيح على قاعدة رقيقة.",
+      "الوقت. بحال ما كيبينو المحطات، الطبقة اللي لفوق كتبدل كل نهار. الشمس، العشيات السخونين والدوزان ديال السكيورات كلهم كيخدمو فيها. السوايع الأولى من بعد العاصفة هوما الأرطب."
+     ]
+    },
+    {
+     "h": "طريقة ديال الميدان باش تتوقع البودرة بوحدك",
+     "p": [
+      "ف جبال الأطلس ف المغرب، التلج غالبا كيجي ف عواصف بوحدهم، وبيناتهم نهارات طوال ناشفين وفيهم الشمس. كتعلم تحكم على التلج الجديد بالعمر ديالو وبالجو اللي طاح فيه، ماشي غير بالعلو ديالو. ونفس الطريقة كتخدم ف أي بلاصة.",
+      "الأول، شوف الكمية: واش كثر من 6 in، ولا كثر من 12 in، ف العلو اللي كتسكي فيه؟ الثاني، شوف الحرارة ف داك العلو وقت العاصفة: كلما برد، كلما خف التلج. الثالث، شوف الريح: إلا كانت قوية، قلب على الطلعات المحميين وردّ البال من اللي عامرين بالتلج اللي جابو الريح. الرابع، حسب السوايع من ملي وقف التلج: كل عشية فيها الشمس كتاخد شي حاجة.",
+      "وشوف القاعدة. ف نص دجنبر، العلو العادي ف نص الجبل ف Aspen Snowmass هو 32 in (82 cm). وحتى ف شتوة ضعيفة، وحدة من أرق الشتاوات من بين عشرة، كيكون 14 in (35 cm). ف هاد الوقت كتبدا 12 in ديال التلج الجديد تتسكى بحال ما كتتخيلها."
+     ]
+    },
+    {
+     "h": "شحال نقدرو نتيقو ف هاد الأرقام؟",
+     "p": [
+      "كل محطة كتقيس نقطة وحدة من الأرض. شي هبة ديال الريح تقدر تدي التلج بعيد على السونسور ولا تجمعو حداه، والفسحة اللي فيها الشمس ماشي بحال الغابة اللي فيها الظل. داكشي علاش شفنا خمس محطات مجموعين. كلهم كيبينو نفس الشكل: طلعة نهار 4 نونبر، ومن بعد هبطة منتظمة على خمس أيام.",
+      "التلج الجديد ما طاحش كامل ف ساعة وحدة، والمحطات كتسجل مرة ف النهار. الأرقام بالضبط ديال محطة وحدة ماشي مهمين قد الشكل العام. التلج الجديد كيكون ف أغرق حالة ديالو الصباح اللي من بعد العاصفة، وكيبدا ينقص العلو ديالو تقريبا دغيا."
+     ]
+    }
+   ],
+   "advice": [
+    "خدم ب 6 in و 12 in بحال سلم تقريبي، ومن بعد صحح على حساب الحرارة، الريح والقاعدة.",
+    "بكر: التلج الجديد كيضيع العلو والرطوبة ديالو من النهار الأول.",
+    "فوق قاعدة رقيقة ديال بداية الموسم، بعد على الحجر اللي مخبي تحت التلج الجديد.",
+    "التلج الجديد والريح كيبنيو الألواح: ديما قرا النشرة ديال الأفالانش قبل ما تخرج من البيستات المحدلين."
+   ],
+   "captions": {
+    "powder_settle": "العلو ديال التلج ب inches ف خمس محطات عاليين ف كولورادو، من 2 حتى 9 نونبر 2026: عاصفة نهار 4 نونبر، ومن بعد التلج الجديد كيتزير نهار على نهار."
+   },
+   "references": [
+    {
+     "text": "Colorado Avalanche Information Center: نشرات يومية ديال الأفالانش ف كولورادو.",
+     "url": "https://avalanche.state.co.us/"
+    },
+    {
+     "text": "SnowScope: نهار بودرة ف Whitewater، ساعة بساعة.",
+     "url": "https://snowscope.app/blog/en/2026/11/whitewater-powder-day-hour-by-hour-nelson.html"
+    }
+   ],
+   "method": "التلج المقيس: العلو اليومي ديال التلج ف خمس محطات أوتوماتيكية ف كولورادو (Brumley، Ivanhoe، Chapman Tunnel، Independence Pass، Saint Elmo)، من 2 حتى 9 نونبر 2026، بحال ما كيبان ف خريطة المحطات ديال SnowScope. العلو العادي ف Aspen Snowmass: تاريخ التلج ديال SnowScope، 46 شتوة فاتت (من 1980-81 حتى 2025-26) ف نص الجبل، موديل ديال الماضي مصحح على حساب العلو."
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "hand (feature)"
+  },
+  "fr": {
+   "writer": "hand (feature)"
+  },
+  "de": {
+   "writer": "hand (feature)"
+  },
+  "it": {
+   "writer": "hand (feature)"
+  },
+  "es": {
+   "writer": "hand (feature)"
+  },
+  "ar": {
+   "writer": "hand (feature)"
+  }
+ },
+ "words_en": 832,
+ "indexable": true,
+ "main": {
+  "slug": "aspen_snowmass",
+  "name": "Aspen Snowmass",
+  "lat": 39.1984,
+  "lon": -106.94992
+ },
+ "places": [
+  {
+   "name": "Aspen Snowmass",
+   "lat": 39.1984,
+   "lon": -106.94992
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "aspen_snowmass",
+   "name": "Aspen Snowmass"
+  },
+  {
+   "slug": "aspen_mountain",
+   "name": "Aspen Mountain"
+  },
+  {
+   "slug": "monarch_mountain",
+   "name": "Monarch Mountain"
+  },
+  {
+   "slug": "ski_cooper",
+   "name": "Ski Cooper"
+  }
+ ],
+ "table": null,
+ "bulletins": [],
+ "trip_day": "",
+ "map_link": "https://snowscope.app/",
+ "voice": "field scientist from the Atlas",
+ "related": [
+  "feature-whitewater-powder-day-hour-by-hour-nelson",
+  "feature-aspen-snowmass-snowmass-vs-aspen-mountain"
+ ],
+ "publish_utc": "2026-11-10T20:38:00Z"
+}
