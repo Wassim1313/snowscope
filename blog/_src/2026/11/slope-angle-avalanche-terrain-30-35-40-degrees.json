@@ -1,0 +1,727 @@
+{
+ "id": "feature-slope-angle-avalanche-terrain-30-35-40-degrees",
+ "slug": "slope-angle-avalanche-terrain-30-35-40-degrees",
+ "date": "2026-11-10",
+ "published_utc": "2026-11-10T17:43:00Z",
+ "updated_utc": "2026-11-10T17:43:00Z",
+ "region": "WORLD",
+ "angle": "guide_feature_climate",
+ "category": "guide",
+ "draft": false,
+ "kind": "climate",
+ "resort_class": null,
+ "structure": "map-first-explainer",
+ "score": 90,
+ "tags": [
+  "avalanche",
+  "advice",
+  "ski"
+ ],
+ "facts": {
+  "kind": "climate",
+  "date": "2026-11-10",
+  "extra": {
+   "date": "2026-11-10",
+   "classes_deg": [
+    25,
+    30,
+    35,
+    40,
+    45
+   ],
+   "box_km": 3,
+   "grid_m": [
+    12,
+    13,
+    14
+   ],
+   "resorts": {
+    "chamonix": {
+     "name": "Les Grands Montets",
+     "base_m": 1234,
+     "top_m": 2768,
+     "px_m": 13.3,
+     "cells": 159789,
+     "share_pct": {
+      "under25": 33.3,
+      "25_30": 20.0,
+      "30_35": 18.4,
+      "35_40": 14.5,
+      "40_45": 8.7,
+      "over45": 5.2
+     },
+     "steeper_than_30_pct": 47,
+     "steeper_than_35_pct": 28,
+     "steeper_than_40_pct": 14,
+     "max_slope_deg": 67
+    },
+    "st_anton": {
+     "name": "St. Anton/St. Christoph/Stuben",
+     "base_m": 1282,
+     "top_m": 2642,
+     "px_m": 13.0,
+     "cells": 211070,
+     "share_pct": {
+      "under25": 37.7,
+      "25_30": 16.7,
+      "30_35": 18.5,
+      "35_40": 13.4,
+      "40_45": 7.3,
+      "over45": 6.3
+     },
+     "steeper_than_30_pct": 45,
+     "steeper_than_35_pct": 27,
+     "steeper_than_40_pct": 14,
+     "max_slope_deg": 74
+    },
+    "verbier": {
+     "name": "4 Vallées – Verbier/La Tzoumaz/Nendaz/Veysonnaz/Thyon",
+     "base_m": 905,
+     "top_m": 3304,
+     "px_m": 13.2,
+     "cells": 204998,
+     "share_pct": {
+      "under25": 49.5,
+      "25_30": 19.5,
+      "30_35": 14.6,
+      "35_40": 10.0,
+      "40_45": 4.8,
+      "over45": 1.7
+     },
+     "steeper_than_30_pct": 31,
+     "steeper_than_35_pct": 16,
+     "steeper_than_40_pct": 6,
+     "max_slope_deg": 66
+    },
+    "seiser_alm_mont_de_seuc_alpe_di_siusi_seiser_alm": {
+     "name": "Seiser Alm - Mont de Sëuc - Alpe di Siusi, Seiser Alm, Alpe di Siusi, Mont de Sëuc",
+     "base_m": 1221,
+     "top_m": 2221,
+     "px_m": 13.1,
+     "cells": 207735,
+     "share_pct": {
+      "under25": 80.0,
+      "25_30": 5.3,
+      "30_35": 5.0,
+      "35_40": 4.5,
+      "40_45": 3.3,
+      "over45": 2.0
+     },
+     "steeper_than_30_pct": 15,
+     "steeper_than_35_pct": 10,
+     "steeper_than_40_pct": 5,
+     "max_slope_deg": 64
+    },
+    "whistler": {
+     "name": "Whistler Blackcomb",
+     "base_m": 653,
+     "top_m": 2259,
+     "px_m": 12.3,
+     "cells": 235132,
+     "share_pct": {
+      "under25": 71.3,
+      "25_30": 13.8,
+      "30_35": 7.8,
+      "35_40": 4.4,
+      "40_45": 2.1,
+      "over45": 0.6
+     },
+     "steeper_than_30_pct": 15,
+     "steeper_than_35_pct": 7,
+     "steeper_than_40_pct": 3,
+     "max_slope_deg": 62
+    },
+    "jackson_hole": {
+     "name": "Jackson Hole Mountain Resort",
+     "base_m": 1929,
+     "top_m": 3169,
+     "px_m": 13.8,
+     "cells": 172241,
+     "share_pct": {
+      "under25": 45.0,
+      "25_30": 17.0,
+      "30_35": 17.4,
+      "35_40": 10.9,
+      "40_45": 5.0,
+      "over45": 4.6
+     },
+     "steeper_than_30_pct": 38,
+     "steeper_than_35_pct": 20,
+     "steeper_than_40_pct": 10,
+     "max_slope_deg": 78
+    },
+    "kicking_horse_resort": {
+     "name": "Kicking Horse Resort",
+     "base_m": 1262,
+     "top_m": 2424,
+     "px_m": 12.0,
+     "cells": 219598,
+     "share_pct": {
+      "under25": 49.3,
+      "25_30": 18.8,
+      "30_35": 16.6,
+      "35_40": 9.2,
+      "40_45": 3.6,
+      "over45": 2.4
+     },
+     "steeper_than_30_pct": 32,
+     "steeper_than_35_pct": 15,
+     "steeper_than_40_pct": 6,
+     "max_slope_deg": 72
+    },
+    "kitzbuehel": {
+     "name": "KitzSki",
+     "base_m": 762,
+     "top_m": 1993,
+     "px_m": 12.9,
+     "cells": 214487,
+     "share_pct": {
+      "under25": 53.0,
+      "25_30": 19.1,
+      "30_35": 15.2,
+      "35_40": 8.5,
+      "40_45": 3.0,
+      "over45": 1.2
+     },
+     "steeper_than_30_pct": 28,
+     "steeper_than_35_pct": 13,
+     "steeper_than_40_pct": 4,
+     "max_slope_deg": 71
+    }
+   }
+  },
+  "model_run": "2026-11-10"
+ },
+ "ref_numbers": [
+  {
+   "n": [
+    30,
+    45
+   ],
+   "ref": 0,
+   "claim": "most dry slab avalanches release on slopes between about 30 and 45 degrees"
+  }
+ ],
+ "media": [
+  {
+   "id": "slope_map",
+   "kind": "chart_img",
+   "file": "blog/media/2026/11/slope-angle-avalanche-terrain-30-35-40-degrees/slope_map.webp",
+   "thumb": "blog/media/2026/11/slope-angle-avalanche-terrain-30-35-40-degrees/slope_map_t.webp",
+   "after": -1
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Slope angle and avalanches: what 30°, 35° and 40° really mean on the mountain",
+   "description": "A slope map of Les Grands Montets and seven other ski areas shows how much of the ground is steeper than 30°, 35° and 40°, and why that line matters for avalanches.",
+   "lede": "Look at the map first. Every coloured patch is ground steeper than 25°, and everything below the dashed line in the legend is steeper than 30°. Around Les Grands Montets above Argentière, almost half of the mountain between the lowest and the highest lift is in that second group. That one number explains a lot about avalanches.",
+   "sections": [
+    {
+     "h": "What the map shows",
+     "p": [
+      "We cut a square of 3 km in every direction around the centre of each ski area and kept only the ground between its lowest and its highest lift. Then we measured the angle of every small square of terrain, about 13 m on a side. The colours follow five steps: 25–30°, 30–35°, 35–40°, 40–45° and steeper than 45°.",
+      "At Les Grands Montets (1,234–2,768 m) the result is 47 % of the ground steeper than 30°, 28 % steeper than 35° and 14 % steeper than 40°. The steepest square on our map reaches 67°. That is rock, not a ski run, and the map is honest enough to show it in dark grey.",
+      "So the picture is not a piste map. It shows the shape of the mountain itself: the open bowls, the gullies, the rock walls and the gentle shoulders where the lifts arrive."
+     ]
+    },
+    {
+     "h": "Why 30° is the line to remember",
+     "p": [
+      "An avalanche starts when a layer of snow can no longer hold on to the layer below it. On gentle ground, gravity pulls the snow mostly into the slope, so the layers stay where they are. As the slope gets steeper, more of that pull goes down the hill. Studies of real avalanches find that most dry slab avalanches start on slopes between about 30° and 45°. A slab is a block of firm snow that breaks away in one piece, and it is the type that catches most skiers.",
+      "Below about 30°, slab avalanches are rare. Above about 45°, snow often slides off in small amounts during the storm itself, so big slabs build up less often. The band in between is where the snow is steep enough to fail and still holds enough snow to be dangerous.",
+      "That is why the app's new Slope steepness layer draws its dashed line at 30°. It is not a safety line. It is the point where the question changes from \"is it steep?\" to \"what is the snow doing today?\""
+     ]
+    },
+    {
+     "h": "Eight ski areas side by side",
+     "p": [
+      "The same method around seven other ski areas gives very different mountains. St. Anton comes close to Les Grands Montets: 45 % of the ground is steeper than 30°, 27 % steeper than 35° and 14 % steeper than 40°. Jackson Hole follows with 38 %, 20 % and 10 %.",
+      "Kicking Horse (32 % steeper than 30°) and the area around Verbier (31 %) sit in the middle. KitzSki has 28 % above 30° but only 4 % above 40°. Whistler Blackcomb and Seiser Alm are the gentlest in our list, with 15 % of the ground steeper than 30° each.",
+      "Be careful with these numbers. They describe the land inside our square, not the marked runs. Whistler Blackcomb has plenty of steep alpine terrain; our square around its centre simply also holds a lot of forest and gentle slopes. A low number means \"less steep ground in this window\", not \"no avalanche terrain\"."
+     ]
+    },
+    {
+     "h": "How sure can we be?",
+     "p": [
+      "A map like this smooths the ground. Each square is about 13 m wide, so a short, steep roll, a cornice or the lip of a gully can be steeper than any square on the map. In practice, the real slope is often a few degrees steeper than the map says, never gentler in a way you should trust.",
+      "The angle that matters is also the angle of the start zone above you, not only the slope under your skis. A flat valley floor can be hit by an avalanche that started on a 40° face high above it. On our map, that flat floor stays white. Your eyes have to add the rest.",
+      "In short: the colours tell you where the terrain can produce avalanches. They do not tell you whether it will today. Only the snow and the weather decide that, and the avalanche bulletin is where that decision is written down every day."
+     ]
+    },
+    {
+     "h": "Reading 30°, 35° and 40° on the ground",
+     "p": [
+      "30–35° (orange on the map): many classic off-piste slopes and the steeper black runs sit here. Avalanches are possible whenever the snowpack has a weak layer. Most people underestimate this band because it does not feel very steep.",
+      "35–40° (red): a steep slope by any standard. A fall here can be long, and a slab that breaks can run fast. This is the band where the largest number of skier-triggered avalanches start.",
+      "40–45° (purple) and steeper (dark grey): couloirs, faces and rock bands. Snow sometimes sluffs off here, which means that small loose surface snow runs down the slope. Sluffs are small, but they can push you over a cliff.",
+      "One simple field check: hold two ski poles of the same length, one hanging straight down and one touching the slope at the point where the first pole meets the snow. It takes a little practice, and an inclinometer on a phone or a compass is easier. Measure in the steepest part, not where you stand."
+     ]
+    }
+   ],
+   "advice": [
+    "Use slope angle to plan, not to decide: steep ground is where avalanches can start, the bulletin says if they are likely today.",
+    "Look up: the slope above you matters as much as the slope under you.",
+    "Trust the map less on small features; rolls, gullies and the top of a couloir are often steeper than shown.",
+    "Always check the official avalanche bulletin before going off-piste, and carry and know how to use transceiver, shovel and probe."
+   ],
+   "captions": {
+    "slope_map": "Slope angle around Les Grands Montets (Argentière), within 3 km of the ski area's centre. Colours start at 25°; the dashed line in the legend marks 30°. Terrain map, about 13 m per square; small features can be steeper."
+   },
+   "references": [
+    {
+     "text": "Schweizer, J., Jamieson, J. B. and Schneebeli, M. (2003). Snow avalanche formation. Reviews of Geophysics 41(4), 1016.",
+     "url": "https://doi.org/10.1029/2002RG000123"
+    },
+    {
+     "text": "European Avalanche Warning Services: official avalanche bulletins of every European region.",
+     "url": "https://www.avalanches.org/"
+    },
+    {
+     "text": "SnowScope: La Grave myths and facts – off-piste skiing and snow under La Meije.",
+     "url": "https://snowscope.app/blog/en/2026/11/la-grave-myths-and-facts-off-piste-la-meije.html"
+    }
+   ],
+   "method": "Slope angles: SnowScope terrain analysis of an open elevation model (tiles of about 13 m), Horn's 3x3 method, classes of the app's Slope steepness layer (25, 30, 35, 40, 45°). Window: 3 km around each ski area's centre, ground between its lowest and highest mapped lift. Steepness only: this is not an avalanche risk map."
+  },
+  "fr": {
+   "title": "Pente et avalanches : ce que 30°, 35° et 40° veulent vraiment dire en montagne",
+   "description": "Une carte des pentes des Grands Montets et de sept autres domaines skiables montre quelle part du terrain dépasse 30°, 35° et 40°, et pourquoi ce seuil compte pour les avalanches.",
+   "lede": "Regardez d'abord la carte. Chaque tache de couleur est un terrain plus raide que 25°, et tout ce qui se trouve sous la ligne pointillée de la légende dépasse 30°. Autour des Grands Montets, au-dessus d'Argentière, presque la moitié de la montagne entre la remontée la plus basse et la plus haute appartient à ce second groupe. Ce seul chiffre en dit long sur les avalanches.",
+   "sections": [
+    {
+     "h": "Ce que montre la carte",
+     "p": [
+      "Autour du centre de chaque domaine, nous avons découpé un carré de 3 km dans chaque direction, en ne gardant que le terrain situé entre la remontée la plus basse et la plus haute. Ensuite, nous avons mesuré l'angle de chaque petit carré de terrain, d'environ 13 m de côté. Les couleurs suivent cinq paliers : 25–30°, 30–35°, 35–40°, 40–45° et plus de 45°.",
+      "Aux Grands Montets (1 234–2 768 m), on obtient 47 % du terrain au-dessus de 30°, 28 % au-dessus de 35° et 14 % au-dessus de 40°. Le carré le plus raide de notre carte atteint 67°. C'est du rocher, pas une piste, et la carte a l'honnêteté de l'afficher en gris foncé.",
+      "Ce n'est donc pas un plan des pistes. L'image montre la forme de la montagne elle-même : les combes ouvertes, les couloirs, les parois rocheuses et les épaulements doux où arrivent les remontées."
+     ]
+    },
+    {
+     "h": "Pourquoi 30° est le seuil à retenir",
+     "p": [
+      "Une avalanche part quand une couche de neige ne tient plus sur la couche du dessous. Sur un terrain doux, la gravité pousse surtout la neige contre la pente, et les couches restent en place. Plus la pente devient raide, plus cette force tire vers le bas. Les études d'avalanches réelles montrent que la plupart des plaques sèches se déclenchent sur des pentes d'environ 30° à 45°. Une plaque est un bloc de neige ferme qui se détache d'un seul tenant, et c'est le type d'avalanche qui emporte le plus de skieurs.",
+      "Sous environ 30°, les avalanches de plaque sont rares. Au-dessus d'environ 45°, la neige glisse souvent par petites quantités pendant la chute de neige elle-même, si bien que les grosses plaques se forment moins souvent. Entre les deux se trouve la zone où la pente est assez raide pour que la neige cède, tout en gardant assez de neige pour être dangereuse.",
+      "C'est pour cela que la nouvelle couche « Raideur des pentes » de l'appli trace sa ligne pointillée à 30°. Ce n'est pas une limite de sécurité. C'est le moment où la question passe de « est-ce raide ? » à « que fait la neige aujourd'hui ? »."
+     ]
+    },
+    {
+     "h": "Huit domaines côte à côte",
+     "p": [
+      "La même méthode appliquée à sept autres domaines donne des montagnes très différentes. St. Anton est proche des Grands Montets : 45 % du terrain dépasse 30°, 27 % dépasse 35° et 14 % dépasse 40°. Jackson Hole suit avec 38 %, 20 % et 10 %.",
+      "Kicking Horse (32 % au-dessus de 30°) et le secteur de Verbier (31 %) se situent au milieu. KitzSki compte 28 % au-dessus de 30°, mais seulement 4 % au-dessus de 40°. Whistler Blackcomb et Seiser Alm sont les plus doux de notre liste, avec chacun 15 % du terrain au-dessus de 30°.",
+      "Prudence avec ces chiffres. Ils décrivent le terrain à l'intérieur de notre carré, pas les pistes balisées. Whistler Blackcomb a beaucoup de terrain alpin raide ; notre carré autour de son centre contient simplement aussi beaucoup de forêt et de pentes douces. Un chiffre bas veut dire « moins de terrain raide dans cette fenêtre », pas « aucun terrain avalancheux »."
+     ]
+    },
+    {
+     "h": "Quel degré de confiance ?",
+     "p": [
+      "Une carte comme celle-ci lisse le terrain. Chaque carré fait environ 13 m de large, donc une bosse courte et raide, une corniche ou le rebord d'un couloir peuvent être plus raides que n'importe quel carré de la carte. En pratique, la vraie pente est souvent plus raide de quelques degrés que ce qu'indique la carte, et jamais plus douce au point qu'on puisse s'y fier.",
+      "L'angle qui compte, c'est aussi celui de la zone de départ au-dessus de vous, pas seulement la pente sous vos skis. Un fond de vallée plat peut être touché par une avalanche partie d'une face à 40° bien plus haut. Sur notre carte, ce fond plat reste blanc. À vos yeux de compléter le reste.",
+      "En bref : les couleurs disent où le terrain peut produire des avalanches. Elles ne disent pas si cela arrivera aujourd'hui. Seuls la neige et la météo en décident, et c'est le bulletin d'avalanche qui consigne cette décision chaque jour."
+     ]
+    },
+    {
+     "h": "Lire 30°, 35° et 40° sur le terrain",
+     "p": [
+      "30–35° (orange sur la carte) : beaucoup de pentes hors-piste classiques et les pistes noires les plus raides se trouvent ici. Une avalanche est possible dès que le manteau neigeux contient une couche fragile. La plupart des gens sous-estiment cette zone, car elle ne paraît pas très raide.",
+      "35–40° (rouge) : une pente raide, quel que soit le point de vue. Une chute peut y être longue, et une plaque qui casse peut descendre vite. C'est dans cette zone que partent le plus grand nombre d'avalanches déclenchées par des skieurs.",
+      "40–45° (violet) et plus raide (gris foncé) : couloirs, faces et barres rocheuses. La neige y part parfois en coulée, c'est-à-dire que de la neige de surface légère et sans cohésion dévale la pente. Ces coulées sont petites, mais elles peuvent vous pousser dans une barre rocheuse.",
+      "Un test simple sur le terrain : prenez deux bâtons de même longueur, l'un pendu bien à la verticale, l'autre touchant la pente à l'endroit où le premier touche la neige. Il faut un peu d'entraînement, et un inclinomètre sur téléphone ou une boussole est plus simple. Mesurez dans la partie la plus raide, pas là où vous êtes."
+     ]
+    }
+   ],
+   "advice": [
+    "Servez-vous de la pente pour préparer la sortie, pas pour décider : le terrain raide est l'endroit où une avalanche peut partir, le bulletin dit si c'est probable aujourd'hui.",
+    "Levez les yeux : la pente au-dessus de vous compte autant que celle sous vos pieds.",
+    "Faites moins confiance à la carte sur les petits reliefs ; bosses, couloirs et haut d'un couloir sont souvent plus raides qu'affiché.",
+    "Consultez toujours le bulletin d'avalanche officiel avant de partir en hors-piste, et emportez DVA, pelle et sonde, en sachant vous en servir."
+   ],
+   "captions": {
+    "slope_map": "Pente autour des Grands Montets (Argentière), dans un rayon de 3 km autour du centre du domaine. Les couleurs commencent à 25° ; la ligne pointillée de la légende marque 30°. Carte du terrain, environ 13 m par carré ; les petits reliefs peuvent être plus raides."
+   },
+   "references": [
+    {
+     "text": "Schweizer, J., Jamieson, J. B. and Schneebeli, M. (2003). Snow avalanche formation. Reviews of Geophysics 41(4), 1016.",
+     "url": "https://doi.org/10.1029/2002RG000123"
+    },
+    {
+     "text": "Services européens d'alerte avalanche (EAWS) : bulletins d'avalanche officiels de toutes les régions d'Europe.",
+     "url": "https://www.avalanches.org/"
+    },
+    {
+     "text": "SnowScope : La Grave, mythes et réalités – le hors-piste et la neige sous La Meije.",
+     "url": "https://snowscope.app/blog/en/2026/11/la-grave-myths-and-facts-off-piste-la-meije.html"
+    }
+   ],
+   "method": "Angles de pente : analyse du terrain par SnowScope à partir d'un modèle d'altitude ouvert (tuiles d'environ 13 m), méthode 3x3 de Horn, classes de la couche « Raideur des pentes » de l'appli (25, 30, 35, 40, 45°). Fenêtre : 3 km autour du centre de chaque domaine, terrain entre la remontée cartographiée la plus basse et la plus haute. Raideur uniquement : ce n'est pas une carte du risque d'avalanche."
+  },
+  "de": {
+   "title": "Hangneigung und Lawinen: Was 30°, 35° und 40° am Berg wirklich bedeuten",
+   "description": "Eine Neigungskarte von Les Grands Montets und sieben weiteren Skigebieten zeigt, wie viel Gelände steiler als 30°, 35° und 40° ist – und warum diese Grenze für Lawinen zählt.",
+   "lede": "Zuerst ein Blick auf die Karte. Jede farbige Fläche ist Gelände steiler als 25°, und alles unterhalb der gestrichelten Linie in der Legende ist steiler als 30°. Rund um Les Grands Montets oberhalb von Argentière gehört fast die Hälfte des Berges zwischen dem tiefsten und dem höchsten Lift zu dieser zweiten Gruppe. Diese eine Zahl erklärt viel über Lawinen.",
+   "sections": [
+    {
+     "h": "Was die Karte zeigt",
+     "p": [
+      "Um das Zentrum jedes Skigebiets wurde ein Quadrat von 3 km in jede Richtung ausgeschnitten, und nur das Gelände zwischen dem tiefsten und dem höchsten Lift blieb übrig. Danach wurde der Winkel jedes kleinen Geländequadrats gemessen, etwa 13 m Seitenlänge. Die Farben folgen fünf Stufen: 25–30°, 30–35°, 35–40°, 40–45° und steiler als 45°.",
+      "In Les Grands Montets (1.234–2.768 m) ergibt das 47 % Gelände steiler als 30°, 28 % steiler als 35° und 14 % steiler als 40°. Das steilste Quadrat auf der Karte erreicht 67°. Das ist Fels, keine Piste, und die Karte zeigt ihn ehrlich in Dunkelgrau.",
+      "Das Bild ist also kein Pistenplan. Es zeigt die Form des Berges selbst: offene Mulden, Rinnen, Felswände und die sanften Schultern, an denen die Lifte ankommen."
+     ]
+    },
+    {
+     "h": "Warum 30° die Grenze zum Merken ist",
+     "p": [
+      "Eine Lawine startet, wenn eine Schneeschicht nicht mehr auf der Schicht darunter halten kann. In flachem Gelände drückt die Schwerkraft den Schnee vor allem in den Hang hinein, die Schichten bleiben liegen. Je steiler der Hang, desto mehr zieht diese Kraft hangabwärts. Studien realer Lawinen zeigen: Die meisten trockenen Schneebrettlawinen lösen sich an Hängen zwischen etwa 30° und 45°. Ein Schneebrett ist eine Platte aus festem Schnee, die als Ganzes abbricht – und genau dieser Typ erfasst die meisten Skifahrer.",
+      "Unter etwa 30° sind Schneebretter selten. Über etwa 45° rutscht der Schnee oft schon während des Schneefalls in kleinen Mengen ab, daher bauen sich große Schneebretter seltener auf. Dazwischen liegt der Bereich, in dem der Hang steil genug ist, dass der Schnee bricht, und trotzdem genug Schnee hält, um gefährlich zu sein.",
+      "Deshalb zieht die neue Ebene „Hangsteilheit“ der App ihre gestrichelte Linie bei 30°. Das ist keine Sicherheitsgrenze. Es ist der Punkt, an dem sich die Frage ändert: von „Ist es steil?“ zu „Was macht der Schnee heute?“"
+     ]
+    },
+    {
+     "h": "Acht Skigebiete im Vergleich",
+     "p": [
+      "Dieselbe Methode rund um sieben weitere Skigebiete ergibt sehr unterschiedliche Berge. St. Anton kommt Les Grands Montets nahe: 45 % des Geländes sind steiler als 30°, 27 % steiler als 35° und 14 % steiler als 40°. Jackson Hole folgt mit 38 %, 20 % und 10 %.",
+      "Kicking Horse (32 % steiler als 30°) und das Gebiet um Verbier (31 %) liegen im Mittelfeld. KitzSki hat 28 % über 30°, aber nur 4 % über 40°. Whistler Blackcomb und Seiser Alm sind die sanftesten in der Liste, mit jeweils 15 % Gelände steiler als 30°.",
+      "Vorsicht bei diesen Zahlen. Sie beschreiben das Land innerhalb des Quadrats, nicht die markierten Pisten. Whistler Blackcomb hat viel steiles alpines Gelände; das Quadrat um sein Zentrum enthält einfach auch viel Wald und sanfte Hänge. Eine niedrige Zahl heißt „weniger steiles Gelände in diesem Ausschnitt“, nicht „kein Lawinengelände“."
+     ]
+    },
+    {
+     "h": "Wie verlässlich ist das?",
+     "p": [
+      "Eine solche Karte glättet das Gelände. Jedes Quadrat ist etwa 13 m breit, daher können eine kurze, steile Kuppe, eine Wechte oder die Kante einer Rinne steiler sein als jedes Quadrat auf der Karte. In der Praxis ist der echte Hang oft ein paar Grad steiler als auf der Karte – und nie so viel flacher, dass man sich darauf verlassen sollte.",
+      "Entscheidend ist auch der Winkel des Anrissgebiets darüber, nicht nur der Hang unter den Ski. Ein flacher Talboden kann von einer Lawine getroffen werden, die weit oben in einer 40°-Flanke losgebrochen ist. Auf der Karte bleibt dieser flache Boden weiß. Den Rest müssen die eigenen Augen ergänzen.",
+      "Kurz gesagt: Die Farben zeigen, wo das Gelände Lawinen hervorbringen kann. Sie sagen nicht, ob das heute passiert. Das entscheiden nur Schnee und Wetter, und im Lawinenlagebericht wird diese Einschätzung jeden Tag festgehalten."
+     ]
+    },
+    {
+     "h": "30°, 35° und 40° im Gelände lesen",
+     "p": [
+      "30–35° (orange auf der Karte): Hier liegen viele klassische Freeride-Hänge und die steileren schwarzen Pisten. Lawinen sind möglich, sobald die Schneedecke eine schwache Schicht hat. Die meisten unterschätzen diesen Bereich, weil er sich nicht sehr steil anfühlt.",
+      "35–40° (rot): ein steiler Hang nach jedem Maßstab. Ein Sturz kann hier lang werden, und ein brechendes Schneebrett kann schnell abgehen. In diesem Bereich lösen sich die meisten von Skifahrern ausgelösten Lawinen.",
+      "40–45° (violett) und steiler (dunkelgrau): Rinnen, Flanken und Felsbänder. Hier gibt es manchmal Lockerschneerutsche: lockerer Oberflächenschnee rinnt den Hang hinunter. Solche Rutsche sind klein, können aber über eine Felskante drücken.",
+      "Ein einfacher Test vor Ort: zwei gleich lange Skistöcke nehmen, einer hängt senkrecht nach unten, der andere berührt den Hang dort, wo der erste den Schnee trifft. Das braucht etwas Übung; ein Neigungsmesser im Handy oder ein Kompass ist einfacher. Im steilsten Teil messen, nicht am eigenen Standort."
+     ]
+    }
+   ],
+   "advice": [
+    "Die Hangneigung zum Planen nutzen, nicht zum Entscheiden: Steiles Gelände ist der Ort, an dem Lawinen starten können, der Lagebericht sagt, ob das heute wahrscheinlich ist.",
+    "Nach oben schauen: Der Hang darüber zählt genauso wie der Hang darunter.",
+    "Der Karte bei kleinen Geländeformen weniger trauen; Kuppen, Rinnen und der Einstieg eines Couloirs sind oft steiler als dargestellt.",
+    "Vor jeder Tour abseits der Piste immer den offiziellen Lawinenlagebericht prüfen und LVS-Gerät, Schaufel und Sonde dabeihaben und bedienen können."
+   ],
+   "captions": {
+    "slope_map": "Hangneigung rund um Les Grands Montets (Argentière), im Umkreis von 3 km um das Zentrum des Skigebiets. Die Farben beginnen bei 25°; die gestrichelte Linie in der Legende markiert 30°. Geländekarte, etwa 13 m pro Quadrat; kleine Geländeformen können steiler sein."
+   },
+   "references": [
+    {
+     "text": "Schweizer, J., Jamieson, J. B. and Schneebeli, M. (2003). Snow avalanche formation. Reviews of Geophysics 41(4), 1016.",
+     "url": "https://doi.org/10.1029/2002RG000123"
+    },
+    {
+     "text": "Europäische Lawinenwarndienste (EAWS): offizielle Lawinenlageberichte aller Regionen Europas.",
+     "url": "https://www.avalanches.org/"
+    },
+    {
+     "text": "SnowScope: La Grave – Mythen und Fakten zum Freeriden und zum Schnee unter La Meije.",
+     "url": "https://snowscope.app/blog/en/2026/11/la-grave-myths-and-facts-off-piste-la-meije.html"
+    }
+   ],
+   "method": "Hangneigung: SnowScope-Geländeanalyse eines offenen Höhenmodells (Kacheln von etwa 13 m), 3x3-Methode nach Horn, Klassen der App-Ebene „Hangsteilheit“ (25, 30, 35, 40, 45°). Ausschnitt: 3 km um das Zentrum jedes Skigebiets, Gelände zwischen dem tiefsten und dem höchsten kartierten Lift. Nur Steilheit: Dies ist keine Lawinenrisikokarte."
+  },
+  "it": {
+   "title": "Pendenza e valanghe: cosa significano davvero 30°, 35° e 40° in montagna",
+   "description": "Una mappa delle pendenze di Les Grands Montets e di altri sette comprensori mostra quanto terreno supera i 30°, 35° e 40°, e perché questa soglia conta per le valanghe.",
+   "lede": "Prima guardate la mappa. Ogni macchia colorata è terreno più ripido di 25°, e tutto ciò che sta sotto la linea tratteggiata della legenda supera i 30°. Intorno a Les Grands Montets, sopra Argentière, quasi metà della montagna tra l'impianto più basso e quello più alto rientra in questo secondo gruppo. Questo solo numero spiega molto sulle valanghe.",
+   "sections": [
+    {
+     "h": "Cosa mostra la mappa",
+     "p": [
+      "Intorno al centro di ogni comprensorio abbiamo ritagliato un quadrato di 3 km in ogni direzione, tenendo solo il terreno tra l'impianto più basso e quello più alto. Poi abbiamo misurato l'angolo di ogni piccolo quadrato di terreno, di circa 13 m di lato. I colori seguono cinque gradini: 25–30°, 30–35°, 35–40°, 40–45° e oltre 45°.",
+      "A Les Grands Montets (1.234–2.768 m) il risultato è il 47 % del terreno sopra i 30°, il 28 % sopra i 35° e il 14 % sopra i 40°. Il quadrato più ripido della mappa arriva a 67°. È roccia, non una pista, e la mappa la mostra onestamente in grigio scuro.",
+      "Quindi l'immagine non è una mappa delle piste. Mostra la forma stessa della montagna: i valloni aperti, i canali, le pareti rocciose e le dolci spalle dove arrivano gli impianti."
+     ]
+    },
+    {
+     "h": "Perché 30° è la soglia da ricordare",
+     "p": [
+      "Una valanga parte quando uno strato di neve non riesce più a restare attaccato allo strato sotto. Su terreno dolce la gravità spinge la neve soprattutto contro il pendio, e gli strati restano al loro posto. Più il pendio è ripido, più questa spinta va verso valle. Gli studi su valanghe reali mostrano che la maggior parte delle valanghe a lastroni di neve asciutta parte su pendii tra circa 30° e 45°. Un lastrone è un blocco di neve compatta che si stacca tutto insieme, ed è il tipo che travolge più sciatori.",
+      "Sotto circa 30° i lastroni sono rari. Sopra circa 45° la neve scivola spesso via a piccole quantità già durante la nevicata, così i grandi lastroni si formano meno spesso. In mezzo c'è la fascia in cui il pendio è abbastanza ripido da far cedere la neve e ne trattiene ancora abbastanza da essere pericoloso.",
+      "Per questo il nuovo livello «Ripidità dei pendii» dell'app traccia la sua linea tratteggiata a 30°. Non è una linea di sicurezza. È il punto in cui la domanda cambia da «è ripido?» a «cosa sta facendo la neve oggi?»."
+     ]
+    },
+    {
+     "h": "Otto comprensori a confronto",
+     "p": [
+      "Lo stesso metodo applicato ad altri sette comprensori dà montagne molto diverse. St. Anton si avvicina a Les Grands Montets: il 45 % del terreno supera i 30°, il 27 % i 35° e il 14 % i 40°. Segue Jackson Hole con 38 %, 20 % e 10 %.",
+      "Kicking Horse (32 % sopra i 30°) e la zona di Verbier (31 %) stanno a metà. KitzSki ha il 28 % sopra i 30°, ma solo il 4 % sopra i 40°. Whistler Blackcomb e Seiser Alm sono i più dolci della lista, con il 15 % del terreno sopra i 30° ciascuno.",
+      "Attenzione a questi numeri. Descrivono il terreno dentro il nostro quadrato, non le piste segnate. Whistler Blackcomb ha moltissimo terreno alpino ripido; il nostro quadrato intorno al suo centro contiene semplicemente anche tanto bosco e pendii dolci. Un numero basso vuol dire «meno terreno ripido in questa finestra», non «nessun terreno da valanga»."
+     ]
+    },
+    {
+     "h": "Quanto possiamo fidarci?",
+     "p": [
+      "Una mappa come questa leviga il terreno. Ogni quadrato è largo circa 13 m, quindi un dosso breve e ripido, una cornice o il bordo di un canale possono essere più ripidi di qualsiasi quadrato della mappa. In pratica il pendio reale è spesso qualche grado più ripido di quanto dica la mappa, e mai più dolce in un modo di cui fidarsi.",
+      "Conta anche l'angolo della zona di distacco sopra di voi, non solo il pendio sotto gli sci. Un fondovalle piatto può essere colpito da una valanga partita da una parete di 40° molto più in alto. Sulla nostra mappa quel fondo piatto resta bianco. Il resto lo devono aggiungere i vostri occhi.",
+      "In breve: i colori dicono dove il terreno può produrre valanghe. Non dicono se succederà oggi. Lo decidono solo la neve e il meteo, e il bollettino valanghe è il luogo dove questa valutazione viene scritta ogni giorno."
+     ]
+    },
+    {
+     "h": "Leggere 30°, 35° e 40° sul terreno",
+     "p": [
+      "30–35° (arancione sulla mappa): qui si trovano molti classici pendii fuoripista e le piste nere più ripide. Le valanghe sono possibili ogni volta che il manto nevoso ha uno strato debole. Quasi tutti sottovalutano questa fascia, perché non sembra molto ripida.",
+      "35–40° (rosso): un pendio ripido sotto ogni punto di vista. Una caduta qui può essere lunga, e un lastrone che si rompe può scendere veloce. È la fascia in cui parte il maggior numero di valanghe provocate da sciatori.",
+      "40–45° (viola) e oltre (grigio scuro): canali, pareti e fasce rocciose. Qui a volte la neve scarica, cioè neve superficiale leggera e sciolta scivola giù per il pendio. Questi scaricamenti sono piccoli, ma possono spingervi oltre un salto di roccia.",
+      "Un semplice test sul posto: prendete due bastoncini della stessa lunghezza, uno appeso dritto verso il basso e l'altro appoggiato al pendio nel punto in cui il primo tocca la neve. Serve un po' di pratica; un inclinometro sul telefono o una bussola è più facile. Misurate nella parte più ripida, non dove siete fermi."
+     ]
+    }
+   ],
+   "advice": [
+    "Usate la pendenza per pianificare, non per decidere: il terreno ripido è dove le valanghe possono partire, il bollettino dice se oggi è probabile.",
+    "Guardate in alto: il pendio sopra di voi conta quanto quello sotto.",
+    "Fidatevi meno della mappa sui piccoli elementi; dossi, canali e l'imbocco di un couloir sono spesso più ripidi di quanto mostrato.",
+    "Controllate sempre il bollettino valanghe ufficiale prima di andare in fuoripista, e portate ARTVA, pala e sonda sapendoli usare."
+   ],
+   "captions": {
+    "slope_map": "Pendenza intorno a Les Grands Montets (Argentière), entro 3 km dal centro del comprensorio. I colori partono da 25°; la linea tratteggiata della legenda indica 30°. Mappa del terreno, circa 13 m per quadrato; i piccoli elementi possono essere più ripidi."
+   },
+   "references": [
+    {
+     "text": "Schweizer, J., Jamieson, J. B. and Schneebeli, M. (2003). Snow avalanche formation. Reviews of Geophysics 41(4), 1016.",
+     "url": "https://doi.org/10.1029/2002RG000123"
+    },
+    {
+     "text": "Servizi europei di allerta valanghe (EAWS): bollettini valanghe ufficiali di tutte le regioni europee.",
+     "url": "https://www.avalanches.org/"
+    },
+    {
+     "text": "SnowScope: La Grave, miti e realtà – fuoripista e neve sotto La Meije.",
+     "url": "https://snowscope.app/blog/en/2026/11/la-grave-myths-and-facts-off-piste-la-meije.html"
+    }
+   ],
+   "method": "Pendenze: analisi del terreno SnowScope su un modello altimetrico aperto (tasselli di circa 13 m), metodo 3x3 di Horn, classi del livello «Ripidità dei pendii» dell'app (25, 30, 35, 40, 45°). Finestra: 3 km intorno al centro di ogni comprensorio, terreno tra l'impianto mappato più basso e quello più alto. Solo ripidità: questa non è una mappa del rischio valanghe."
+  },
+  "es": {
+   "title": "Pendiente y aludes: lo que de verdad significan 30°, 35° y 40° en la montaña",
+   "description": "Un mapa de pendientes de Les Grands Montets y otras siete estaciones muestra cuánto terreno supera los 30°, 35° y 40°, y por qué ese umbral importa para los aludes.",
+   "lede": "Mira primero el mapa. Cada mancha de color es terreno con más de 25°, y todo lo que queda por debajo de la línea discontinua de la leyenda pasa de 30°. Alrededor de Les Grands Montets, sobre Argentière, casi la mitad de la montaña entre el remonte más bajo y el más alto entra en ese segundo grupo. Esa sola cifra explica mucho sobre los aludes.",
+   "sections": [
+    {
+     "h": "Qué muestra el mapa",
+     "p": [
+      "Alrededor del centro de cada estación recortamos un cuadrado de 3 km en cada dirección y solo dejamos el terreno entre su remonte más bajo y el más alto. Después medimos el ángulo de cada pequeño cuadrado de terreno, de unos 13 m de lado. Los colores siguen cinco escalones: 25–30°, 30–35°, 35–40°, 40–45° y más de 45°.",
+      "En Les Grands Montets (1.234–2.768 m) el resultado es un 47 % del terreno por encima de 30°, un 28 % por encima de 35° y un 14 % por encima de 40°. El cuadrado más empinado del mapa llega a 67°. Eso es roca, no una pista, y el mapa lo muestra con honestidad en gris oscuro.",
+      "Así que la imagen no es un plano de pistas. Muestra la forma de la propia montaña: las palas abiertas, las canales, las paredes de roca y los hombros suaves donde llegan los remontes."
+     ]
+    },
+    {
+     "h": "Por qué 30° es el umbral que hay que recordar",
+     "p": [
+      "Un alud se dispara cuando una capa de nieve ya no puede sujetarse a la capa de debajo. En terreno suave, la gravedad empuja la nieve sobre todo contra la ladera, y las capas se quedan donde están. Cuanto más empinada es la ladera, más tira esa fuerza hacia abajo. Los estudios de aludes reales muestran que la mayoría de las placas de nieve seca se desprenden en pendientes de entre unos 30° y 45°. Una placa es un bloque de nieve firme que se rompe en una sola pieza, y es el tipo de alud que atrapa a más esquiadores.",
+      "Por debajo de unos 30°, las placas son raras. Por encima de unos 45°, la nieve suele caer en pequeñas cantidades durante la propia nevada, así que las placas grandes se forman con menos frecuencia. En medio queda la franja donde la nieve está lo bastante inclinada para romperse y aun así acumula la suficiente para ser peligrosa.",
+      "Por eso la nueva capa «Inclinación de la pendiente» de la app traza su línea discontinua en 30°. No es una línea de seguridad. Es el punto en que la pregunta cambia de «¿es empinado?» a «¿qué está haciendo hoy la nieve?»."
+     ]
+    },
+    {
+     "h": "Ocho estaciones lado a lado",
+     "p": [
+      "El mismo método aplicado a otras siete estaciones da montañas muy distintas. St. Anton se acerca a Les Grands Montets: el 45 % del terreno supera los 30°, el 27 % los 35° y el 14 % los 40°. Le sigue Jackson Hole con un 38 %, un 20 % y un 10 %.",
+      "Kicking Horse (32 % por encima de 30°) y la zona de Verbier (31 %) quedan en medio. KitzSki tiene un 28 % por encima de 30°, pero solo un 4 % por encima de 40°. Whistler Blackcomb y Seiser Alm son las más suaves de la lista, con un 15 % del terreno por encima de 30° cada una.",
+      "Cuidado con estas cifras. Describen el terreno dentro de nuestro cuadrado, no las pistas balizadas. Whistler Blackcomb tiene mucho terreno alpino empinado; nuestro cuadrado alrededor de su centro simplemente incluye también mucho bosque y laderas suaves. Una cifra baja significa «menos terreno empinado en esta ventana», no «sin terreno de aludes»."
+     ]
+    },
+    {
+     "h": "¿Hasta qué punto podemos fiarnos?",
+     "p": [
+      "Un mapa como este suaviza el terreno. Cada cuadrado mide unos 13 m de ancho, así que un resalte corto y empinado, una cornisa o el borde de una canal pueden ser más empinados que cualquier cuadrado del mapa. En la práctica, la pendiente real suele ser unos grados más empinada de lo que dice el mapa, y nunca más suave de un modo en que convenga confiar.",
+      "También importa el ángulo de la zona de salida que tienes encima, no solo la pendiente bajo tus esquís. Un fondo de valle llano puede recibir un alud que empezó en una cara de 40° muy por encima. En nuestro mapa, ese fondo llano sigue en blanco. El resto lo tienen que poner tus ojos.",
+      "En resumen: los colores te dicen dónde el terreno puede producir aludes. No te dicen si ocurrirá hoy. Eso solo lo deciden la nieve y el tiempo, y el boletín de aludes es donde esa valoración se escribe cada día."
+     ]
+    },
+    {
+     "h": "Cómo leer 30°, 35° y 40° sobre el terreno",
+     "p": [
+      "30–35° (naranja en el mapa): aquí están muchas laderas clásicas de fuera de pista y las pistas negras más empinadas. Puede haber aludes siempre que el manto nivoso tenga una capa débil. Casi todo el mundo subestima esta franja porque no parece muy empinada.",
+      "35–40° (rojo): una ladera empinada se mire como se mire. Una caída aquí puede ser larga, y una placa que se rompe puede bajar rápido. Es la franja donde empieza el mayor número de aludes provocados por esquiadores.",
+      "40–45° (morado) y más (gris oscuro): corredores, caras y bandas de roca. A veces aquí hay purgas, es decir, nieve suelta y ligera de la superficie que baja por la ladera. Las purgas son pequeñas, pero pueden empujarte por un cortado.",
+      "Una prueba sencilla sobre el terreno: coge dos bastones de la misma longitud, uno colgando recto hacia abajo y el otro tocando la ladera en el punto donde el primero toca la nieve. Requiere algo de práctica; un inclinómetro en el móvil o una brújula es más fácil. Mide en la parte más empinada, no donde estás parado."
+     ]
+    }
+   ],
+   "advice": [
+    "Usa la pendiente para planificar, no para decidir: el terreno empinado es donde pueden empezar los aludes, el boletín dice si hoy son probables.",
+    "Mira hacia arriba: la ladera que tienes encima importa tanto como la que tienes debajo.",
+    "Fíate menos del mapa en los detalles pequeños; resaltes, canales y la entrada de un corredor suelen ser más empinados de lo que se ve.",
+    "Consulta siempre el boletín oficial de aludes antes de salir fuera de pista, y lleva ARVA, pala y sonda sabiendo usarlos."
+   ],
+   "captions": {
+    "slope_map": "Pendiente alrededor de Les Grands Montets (Argentière), a menos de 3 km del centro de la estación. Los colores empiezan en 25°; la línea discontinua de la leyenda marca 30°. Mapa del terreno, unos 13 m por cuadrado; los detalles pequeños pueden ser más empinados."
+   },
+   "references": [
+    {
+     "text": "Schweizer, J., Jamieson, J. B. and Schneebeli, M. (2003). Snow avalanche formation. Reviews of Geophysics 41(4), 1016.",
+     "url": "https://doi.org/10.1029/2002RG000123"
+    },
+    {
+     "text": "Servicios Europeos de Aviso de Aludes (EAWS): boletines oficiales de aludes de todas las regiones de Europa.",
+     "url": "https://www.avalanches.org/"
+    },
+    {
+     "text": "SnowScope: La Grave, mitos y realidades – fuera de pista y nieve bajo La Meije.",
+     "url": "https://snowscope.app/blog/en/2026/11/la-grave-myths-and-facts-off-piste-la-meije.html"
+    }
+   ],
+   "method": "Ángulos de pendiente: análisis del terreno de SnowScope sobre un modelo de elevación abierto (teselas de unos 13 m), método 3x3 de Horn, clases de la capa «Inclinación de la pendiente» de la app (25, 30, 35, 40, 45°). Ventana: 3 km alrededor del centro de cada estación, terreno entre su remonte cartografiado más bajo y el más alto. Solo inclinación: esto no es un mapa de riesgo de aludes."
+  },
+  "ar": {
+   "title": "الميلان والانهيارات الثلجية: شنو كتعني بالصح 30° و35° و40° فالجبل",
+   "description": "خريطة ديال الميلان فـLes Grands Montets وسبع محطات تزلج أخرى كتبين شحال من الأرض كتفوت 30° و35° و40°، وعلاش هاد الحد مهم للانهيارات الثلجية.",
+   "lede": "شوف الخريطة هي اللولة. كل بقعة ملونة هي أرض فيها ميلان كثر من 25°، وكلشي اللي تحت الخط المتقطع فالمفتاح ديال الألوان كيفوت 30°. فدايرة Les Grands Montets فوق Argentière، تقريبا نص الجبل بين أوطى تيليسييج وأعلى واحد داخل فهاد المجموعة الثانية. هاد الرقم بوحدو كيشرح بزاف على الانهيارات الثلجية.",
+   "sections": [
+    {
+     "h": "شنو كتبين الخريطة",
+     "p": [
+      "قطعنا مربع ديال 3 كم فكل اتجاه من وسط كل محطة، وخلينا غير الأرض اللي بين أوطى تيليسييج وأعلى واحد. من بعد قسنا الميلان ديال كل مربع صغير ديال الأرض، تقريبا 13 م فكل جهة. الألوان كتمشي على خمس درجات: 25–30°، 30–35°، 35–40°، 40–45°، وكثر من 45°.",
+      "فـLes Grands Montets (1234–2768 م) النتيجة هي 47% من الأرض كتفوت 30°، و28% كتفوت 35°، و14% كتفوت 40°. أكثر مربع ميلان فالخريطة ديالنا كيوصل لـ67°. هادي صخرة ماشي بيست، والخريطة صريحة وكتبينها بالرمادي الغامق.",
+      "إذن هاد الصورة ماشي خريطة ديال البيستات. كتبين الشكل ديال الجبل براسو: الكوانب المفتوحة، الشعاب الضيقة، الحيوط ديال الصخر، والأكتاف الخفيفة فين كيوصلو التيليسييجات."
+     ]
+    },
+    {
+     "h": "علاش 30° هو الحد اللي خاصك تعقل عليه",
+     "p": [
+      "الانهيار الثلجي كيبدا ملي طبقة ديال التلج ما بقاتش قادرة تشد فالطبقة اللي تحتها. فالأرض الخفيفة، الجاذبية كتضغط التلج غالبا على الجبل، والطبقات كيبقاو فبلاصتهم. وكلما زاد الميلان، كلما ولات هاد القوة كتجر التلج لتحت. الدراسات ديال انهيارات حقيقية كتلقى بلي أغلب انهيارات الصفائح ديال التلج الناشف كيبداو فميلان بين تقريبا 30° و45°. الصفيحة هي بلوك ديال التلج القاصح اللي كيتقطع قطعة وحدة، وهي النوع اللي كيشد أغلب المتزلجين.",
+      "تحت تقريبا 30°، انهيارات الصفائح قليلة. وفوق تقريبا 45°، التلج كيطيح غالبا شوية بشوية فوقت العاصفة براسها، داكشي علاش الصفائح الكبار كيتكونو قليل. البلاصة اللي بيناتهم هي فين التلج مايل بزاف باش يطيح، وفنفس الوقت كيبقى فيه تلج كافي باش يكون خطير.",
+      "داكشي علاش الطبقة الجديدة «ميلان المنحدرات» فالتطبيق كترسم الخط المتقطع ديالها فـ30°. هادا ماشي خط ديال الأمان. هادي هي النقطة فين السؤال كيتبدل من «واش مايل؟» لـ«شنو دايرة التلج اليوم؟»."
+     ]
+    },
+    {
+     "h": "ثمن محطات حدا بعضيتهم",
+     "p": [
+      "نفس الطريقة فدايرة سبع محطات أخرى كتعطي جبال مختلفين بزاف. St. Anton قريبة من Les Grands Montets: 45% من الأرض كتفوت 30°، و27% كتفوت 35°، و14% كتفوت 40°. من بعدها Jackson Hole بـ38% و20% و10%.",
+      "Kicking Horse (32% كتفوت 30°) والمنطقة اللي دايرة بـVerbier (31%) جايين فالوسط. KitzSki فيها 28% فوق 30° ولكن غير 4% فوق 40°. Whistler Blackcomb وSeiser Alm هوما الأخف فاللائحة ديالنا، كل وحدة فيهم 15% من الأرض ديالها كتفوت 30°.",
+      "رد البال مع هاد الأرقام. كيوصفو الأرض اللي داخل المربع ديالنا، ماشي البيستات المعلمة. Whistler Blackcomb فيها بزاف ديال الأرض الألبية المايلة؛ غير المربع ديالنا اللي دايرة بالوسط ديالها فيه حتى هو بزاف ديال الغابة والمنحدرات الخفيفة. رقم صغير كيعني «أرض مايلة قليلة فهاد الإطار»، ماشي «ما كايناش أرض ديال الانهيارات»."
+     ]
+    },
+    {
+     "h": "شحال نقدرو نتيقو فهادشي؟",
+     "p": [
+      "خريطة بحال هادي كتملس الأرض. كل مربع عرضو تقريبا 13 م، إذن شي طلعة قصيرة ومايلة، ولا شي كورنيش ديال التلج، ولا الحافة ديال شي شعبة، يقدرو يكونو مايلين كثر من أي مربع فالخريطة. فالواقع، الميلان الحقيقي غالبا كيكون كثر بشي درجات من اللي كتقول الخريطة، وعمرو ما كيكون أخف بطريقة تقدر تتيق فيها.",
+      "الميلان اللي مهم هو حتى الميلان ديال بلاصة الانطلاق اللي فوقك، ماشي غير المنحدر اللي تحت السكيات ديالك. قاع وادي مسطح يقدر يضربو انهيار بدا من واجهة فيها 40° بعيدة لفوق. فالخريطة ديالنا، داك القاع المسطح كيبقى بيض. عينيك هوما اللي خاصهم يكملو الباقي.",
+      "باختصار: الألوان كتقول ليك فين الأرض تقدر تعطي انهيارات. ما كتقولش ليك واش غادي يوقع اليوم. غير التلج والطقس هوما اللي كيقررو، والنشرة ديال الانهيارات الثلجية هي فين كيتكتب هاد القرار كل نهار."
+     ]
+    },
+    {
+     "h": "كيفاش تقرا 30° و35° و40° فالميدان",
+     "p": [
+      "30–35° (ليموني فالخريطة): بزاف ديال المنحدرات الكلاسيكية ديال خارج البيست والبيستات الكحلة المايلة كاينين هنا. الانهيارات ممكنة كل مرة الطبقة ديال التلج فيها طبقة ضعيفة. أغلب الناس كيستصغرو هاد الدرجة حيت ما كتبانش مايلة بزاف.",
+      "35–40° (حمر): منحدر مايل بأي مقياس. الطيحة هنا تقدر تكون طويلة، والصفيحة اللي كتقطع تقدر تنزل بالزربة. هادي هي الدرجة فين كيبداو أكبر عدد ديال الانهيارات اللي كيطلقوهم المتزلجين.",
+      "40–45° (موف) وكثر (رمادي غامق): كولوارات، واجهات وشرائط ديال الصخر. التلج هنا مرة مرة كيسيل، يعني تلج خفيف ومفكوك ديال السطح كينزل مع المنحدر. هاد السيلان صغير، ولكن يقدر يدفعك من فوق شي جرف.",
+      "اختبار ساهل فالميدان: شد جوج عصيان ديال السكي بنفس الطول، وحدة مدلية نيشان لتحت، والأخرى لاصقة فالمنحدر فالنقطة فين العصا الأولى كتقيس التلج. خاصها شوية ديال التمرين، وجهاز قياس الميلان فالتيليفون ولا بوصلة أسهل. قيس فالجزء الأكثر ميلان، ماشي فين واقف."
+     ]
+    }
+   ],
+   "advice": [
+    "استعمل الميلان باش تخطط، ماشي باش تقرر: الأرض المايلة هي فين يقدرو يبداو الانهيارات، والنشرة هي اللي كتقول واش محتملين اليوم.",
+    "شوف لفوق: المنحدر اللي فوقك مهم بحال المنحدر اللي تحتك.",
+    "تيق قل فالخريطة فالتفاصيل الصغيرة؛ الطلعات، الشعاب والراس ديال شي كولوار غالبا مايلين كثر من اللي باين.",
+    "ديما شوف النشرة الرسمية ديال الانهيارات الثلجية قبل ما تخرج من البيست، وهز معاك جهاز البحث عن الضحايا والبالة والمسبار وعرف كيفاش تستعملهم."
+   ],
+   "captions": {
+    "slope_map": "الميلان فدايرة Les Grands Montets (Argentière)، فمسافة 3 كم من وسط المحطة. الألوان كتبدا من 25°؛ الخط المتقطع فالمفتاح كيبين 30°. خريطة ديال الأرض، تقريبا 13 م لكل مربع؛ التفاصيل الصغيرة تقدر تكون مايلة كثر."
+   },
+   "references": [
+    {
+     "text": "Schweizer, J., Jamieson, J. B. and Schneebeli, M. (2003). Snow avalanche formation. Reviews of Geophysics 41(4), 1016.",
+     "url": "https://doi.org/10.1029/2002RG000123"
+    },
+    {
+     "text": "المصالح الأوروبية للإنذار بالانهيارات الثلجية (EAWS): النشرات الرسمية ديال الانهيارات لكل جهة فأوروبا.",
+     "url": "https://www.avalanches.org/"
+    },
+    {
+     "text": "SnowScope: La Grave، الخرافات والحقائق – التزلج خارج البيست والتلج تحت La Meije.",
+     "url": "https://snowscope.app/blog/en/2026/11/la-grave-myths-and-facts-off-piste-la-meije.html"
+    }
+   ],
+   "method": "زوايا الميلان: تحليل الأرض ديال SnowScope على نموذج مفتوح ديال الارتفاعات (مربعات ديال تقريبا 13 م)، طريقة Horn ديال 3x3، الدرجات ديال طبقة «ميلان المنحدرات» فالتطبيق (25، 30، 35، 40، 45°). الإطار: 3 كم دايرين بوسط كل محطة، الأرض بين أوطى وأعلى تيليسييج مرسوم فالخريطة. غير الميلان: هادي ماشي خريطة ديال خطر الانهيارات الثلجية."
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "hand (feature)"
+  },
+  "fr": {
+   "writer": "hand (feature)"
+  },
+  "de": {
+   "writer": "hand (feature)"
+  },
+  "it": {
+   "writer": "hand (feature)"
+  },
+  "es": {
+   "writer": "hand (feature)"
+  },
+  "ar": {
+   "writer": "hand (feature)"
+  }
+ },
+ "words_en": 859,
+ "indexable": true,
+ "main": {
+  "slug": "chamonix",
+  "name": "Les Grands Montets",
+  "lat": 45.96172,
+  "lon": 6.94403
+ },
+ "places": [
+  {
+   "name": "Les Grands Montets",
+   "lat": 45.96172,
+   "lon": 6.94403
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "chamonix",
+   "name": "Les Grands Montets"
+  },
+  {
+   "slug": "st_anton",
+   "name": "St. Anton"
+  },
+  {
+   "slug": "jackson_hole",
+   "name": "Jackson Hole"
+  },
+  {
+   "slug": "kicking_horse_resort",
+   "name": "Kicking Horse"
+  },
+  {
+   "slug": "verbier",
+   "name": "Verbier"
+  },
+  {
+   "slug": "kitzbuehel",
+   "name": "KitzSki"
+  },
+  {
+   "slug": "whistler",
+   "name": "Whistler Blackcomb"
+  },
+  {
+   "slug": "seiser_alm_mont_de_seuc_alpe_di_siusi_seiser_alm",
+   "name": "Seiser Alm"
+  }
+ ],
+ "table": null,
+ "bulletins": [],
+ "trip_day": "",
+ "map_link": "https://snowscope.app/",
+ "voice": "satellite snow scientist",
+ "related": [
+  "feature-la-grave-myths-and-facts-off-piste-la-meije",
+  "feature-chamonix-first-ski-day-grands-montets"
+ ],
+ "publish_utc": "2026-11-10T17:43:00Z"
+}

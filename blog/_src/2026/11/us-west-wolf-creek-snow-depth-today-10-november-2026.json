@@ -1,0 +1,775 @@
+{
+ "id": "2026-11-10-us_west-deepest",
+ "slug": "us-west-wolf-creek-snow-depth-today-10-november-2026",
+ "date": "2026-11-10",
+ "published_utc": "2026-11-10T17:49:09Z",
+ "updated_utc": "2026-11-10T17:49:09Z",
+ "region": "US_WEST",
+ "angle": "deepest",
+ "score": 62.5,
+ "signature": "wolf_creek_ski_area:90|telluride_ski_area:80|silverton_mountain:60",
+ "keyword": {
+  "family": "snow-depth",
+  "entity": "wolf_creek_ski_area",
+  "region": "US_WEST",
+  "date": "2026-11-10"
+ },
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "US West",
+  "date": "2026-11-10",
+  "weekday": "Tuesday",
+  "model_run": "2026-11-10",
+  "forecast_days": [
+   "2026-11-11",
+   "2026-11-12",
+   "2026-11-13"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 149040,
+   "resorts_with_snow": 129,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-08",
+   "snow_covered_area_km2": 173140,
+   "resorts_with_snow": 137
+  },
+  "region_forecast": {
+   "date": "2026-11-13",
+   "snow_covered_area_km2": 131880,
+   "resorts_with_snow": 116
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Wolf Creek",
+    "country": "United States",
+    "top_m": 3585,
+    "base_m": 3128,
+    "depth_cm_upper_slopes_today": 90,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "wolf_creek_ski_area",
+    "new_cm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3128,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 5
+     },
+     "mid": {
+      "elev_m": 3356,
+      "depth_cm_model": 36,
+      "new_cm_next_7_days": 5
+     },
+     "top": {
+      "elev_m": 3585,
+      "depth_cm_model": 47,
+      "new_cm_next_7_days": 5
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 2980,
+      "max": 4120
+     },
+     "2026-11-11": {
+      "min": 2880,
+      "max": 4020
+     },
+     "2026-11-12": {
+      "min": 3010,
+      "max": 4150
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 3356,
+     "snow_cm_at_this_height_today_model": 65,
+     "deeper_than_n_of_past_winters": 35,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 18
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-03"
+    },
+    "nearest_station": {
+     "station": "Wolf Creek Summit",
+     "elev_m": 3331,
+     "depth_cm_measured": 51,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-09",
+     "km_away": 2.0
+    }
+   },
+   {
+    "name": "Telluride",
+    "country": "United States",
+    "top_m": 3812,
+    "base_m": 2662,
+    "depth_cm_upper_slopes_today": 85,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "telluride_ski_area",
+    "new_cm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2662,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 3237,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 4
+     },
+     "top": {
+      "elev_m": 3812,
+      "depth_cm_model": 96,
+      "new_cm_next_7_days": 4
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 2920,
+      "max": 3840
+     },
+     "2026-11-11": {
+      "min": 2980,
+      "max": 4000
+     },
+     "2026-11-12": {
+      "min": 3030,
+      "max": 4150
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 3237,
+     "snow_cm_at_this_height_today_model": 20,
+     "deeper_than_n_of_past_winters": 23,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 22
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-09"
+    },
+    "nearest_station": {
+     "station": "Alta Lakes",
+     "elev_m": 3441,
+     "depth_cm_measured": 48,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-09",
+     "km_away": 3.5
+    }
+   },
+   {
+    "name": "Silverton Mountain",
+    "country": "United States",
+    "top_m": 3345,
+    "base_m": 3143,
+    "depth_cm_upper_slopes_today": 58,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "silverton_mountain",
+    "new_cm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3143,
+      "depth_cm_model": 19,
+      "new_cm_next_7_days": 3
+     },
+     "mid": {
+      "elev_m": 3244,
+      "depth_cm_model": 30,
+      "new_cm_next_7_days": 4
+     },
+     "top": {
+      "elev_m": 3345,
+      "depth_cm_model": 46,
+      "new_cm_next_7_days": 4
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 2900,
+      "max": 3790
+     },
+     "2026-11-11": {
+      "min": 2840,
+      "max": 4000
+     },
+     "2026-11-12": {
+      "min": 3030,
+      "max": 4150
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 3244,
+     "snow_cm_at_this_height_today_model": 79,
+     "deeper_than_n_of_past_winters": 43,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 15
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-09"
+    },
+    "nearest_station": {
+     "station": "Red Mountain Pass",
+     "elev_m": 3371,
+     "depth_cm_measured": 61,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-09",
+     "km_away": 5.3
+    }
+   },
+   {
+    "name": "Lost Trail",
+    "country": "United States",
+    "top_m": 2495,
+    "base_m": 1960,
+    "depth_cm_upper_slopes_today": 50,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "lost_trail",
+    "new_cm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0
+    }
+   },
+   {
+    "name": "Big Sky Resort",
+    "country": "United States",
+    "top_m": 3402,
+    "base_m": 2078,
+    "depth_cm_upper_slopes_today": 48,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "big_sky",
+    "new_cm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0
+    }
+   }
+  ],
+  "measured_at_stations": [
+   {
+    "station": "Beartown",
+    "elev_m": 3530,
+    "depth_cm_measured": 76,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-09",
+    "network": "snotel"
+   },
+   {
+    "station": "Red Mountain Pass",
+    "elev_m": 3371,
+    "depth_cm_measured": 61,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-09",
+    "network": "snotel"
+   },
+   {
+    "station": "Rat Creek",
+    "elev_m": 3560,
+    "depth_cm_measured": 56,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-09",
+    "network": "snotel"
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-wolf-creek-snow-depth-today-10-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-wolf-creek-snow-depth-today-10-november-2026/map_t.webp",
+   "bytes": 23892,
+   "snow_frac": 0.0606,
+   "weak": true
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Where is the deepest snow in the US West? Wolf Creek, with 35 in (10 November)",
+   "description": "Where is the deepest snow in the US West today? If you want the most snow in the US West today, look at Wolf Creek (United States): about 35 in …",
+   "lede": "Where is the deepest snow in the US West today? If you want the most snow in the US West today, look at Wolf Creek (United States): about 35 in (90 cm) up high. After it come Telluride (33 in (85 cm)) and Silverton Mountain (23 in (58 cm)). Our model sees 57,545 sq mi (149,040 km²) of snowy ground in the US West today, and snow at 129 of 195 resorts. Deep snow on a north face and bare ground on the south side of the same ridge is normal in dry mountains.",
+   "sections": [
+    {
+     "h": "What is on the ground",
+     "p": [
+      "The snow has pulled back since 8 November, from 66,850 sq mi (173,140 km²) to 57,545 sq mi (149,040 km²) today; for 13 November our forecast gives 50,919 sq mi (131,880 km²).",
+      "At Wolf Creek, the difference between top and bottom is clear: 19 in (47 cm) at the top (11,762 ft / 3,585 m), 14 in (36 cm) at mid-mountain (11,010 ft / 3,356 m) and 3 in (8 cm) at the base (10,262 ft / 3,128 m)."
+     ]
+    },
+    {
+     "h": "The days ahead",
+     "p": [
+      "On 12 November the freezing level at Wolf Creek climbs to 9,875 ft (3,010 m) to 13,615 ft (4,150 m), higher than the top of the lifts (11,762 ft / 3,585 m): expect rain or wet snow on every slope.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    },
+    {
+     "h": "What the stations saw",
+     "p": [
+      "On 9 November, the Beartown station (11,581 ft / 3,530 m) measured 30 in (76 cm) on the ground. At the Red Mountain Pass station (11,060 ft / 3,371 m), the measured snow on the ground was 24 in (61 cm) on 9 November. On 9 November, the Rat Creek station (11,680 ft / 3,560 m) measured 22 in (56 cm) on the ground.",
+      "A word on the numbers: resort values are our model's estimate for the upper slopes, while each station measures a single spot on the date given."
+     ]
+    },
+    {
+     "h": "Against other winters",
+     "p": [
+      "Wolf Creek is off to a good start. At 11,010 ft (3,356 m) our model has 26 in (65 cm) today, more than on this date in 35 of the past 46 winters; the usual is 7 in (18 cm).",
+      "Nothing unusual at Telluride: 8 in (20 cm) at 10,620 ft (3,237 m) today, more than in 23 of the past 46 winters, with 9 in (22 cm) as the usual.",
+      "Good news from Silverton Mountain: 31 in (79 cm) at 10,643 ft (3,244 m) today, deeper than in 43 of the past 46 winters on this date (usual: 6 in (15 cm))."
+     ]
+    }
+   ],
+   "advice": [
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "In dry mountains like the Atlas, snow lasts on high, north-facing slopes and melts first on the sunny side. Follow the shade.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Wolf Creek gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the US West on 10 November 2026 (SnowScope snow model): Wolf Creek, Telluride, Silverton Mountain, Lost Trail, Big Sky Resort."
+   }
+  },
+  "fr": {
+   "title": "Où est la neige la plus épaisse dans l'Ouest américain ? À Wolf Creek, avec 35 in (10 novembre)",
+   "description": "Où la neige est-elle la plus épaisse dans l'Ouest américain aujourd'hui ? Pour trouver le plus de neige dans l'Ouest américain aujourd'hui, regardez …",
+   "lede": "Où la neige est-elle la plus épaisse dans l'Ouest américain aujourd'hui ? Pour trouver le plus de neige dans l'Ouest américain aujourd'hui, regardez Wolf Creek (États-Unis) : environ 35 in (90 cm) en altitude. Ensuite viennent Telluride (33 in (85 cm)) et Silverton Mountain (23 in (58 cm)). Aujourd'hui, 129 des 195 stations dans l'Ouest américain ont de la neige sur le haut du domaine ; au total, notre modèle compte 57 545 sq mi (149 040 km²) sous la neige. Une neige épaisse sur une face nord et un sol nu sur le versant sud de la même crête, c'est normal en montagne sèche.",
+   "sections": [
+    {
+     "h": "Ce qu'il y a au sol",
+     "p": [
+      "La surface blanche a changé : 66 850 sq mi (173 140 km²) le 8 novembre, 57 545 sq mi (149 040 km²) aujourd'hui, et 50 919 sq mi (131 880 km²) attendus le 13 novembre.",
+      "À Wolf Creek, l'écart entre le haut et le bas est net : 19 in (47 cm) au sommet (11 762 ft / 3 585 m), 14 in (36 cm) à mi-pente (11 010 ft / 3 356 m) et 3 in (8 cm) en bas (10 262 ft / 3 128 m)."
+     ]
+    },
+    {
+     "h": "Les jours à venir",
+     "p": [
+      "Le 12 novembre, l'isotherme 0 °C à Wolf Creek grimpe entre 9 875 ft (3 010 m) et 13 615 ft (4 150 m), plus haut que le sommet des remontées (11 762 ft / 3 585 m) : attendez-vous à de la pluie ou de la neige mouillée sur toutes les pentes.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    },
+    {
+     "h": "Ce qu'ont vu les stations",
+     "p": [
+      "Le 9 novembre, la station de mesure Beartown (11 581 ft / 3 530 m) a relevé 30 in (76 cm) au sol. À la station de mesure Red Mountain Pass (11 060 ft / 3 371 m), la neige mesurée au sol était de 24 in (61 cm) le 9 novembre. Le 9 novembre, la station de mesure Rat Creek (11 680 ft / 3 560 m) a relevé 22 in (56 cm) au sol.",
+      "Un mot sur les chiffres : les valeurs des stations de ski sont une estimation de notre modèle pour le haut du domaine, alors que chaque station de mesure mesure un seul point à la date indiquée."
+     ]
+    },
+    {
+     "h": "Face aux autres hivers",
+     "p": [
+      "Wolf Creek démarre bien. À 11 010 ft (3 356 m), notre modèle donne 26 in (65 cm) aujourd'hui, plus qu'à cette date lors de 35 des 46 hivers passés ; l'habituel est de 7 in (18 cm).",
+      "Rien d'anormal à Telluride : 8 in (20 cm) à 10 620 ft (3 237 m) aujourd'hui, plus que lors de 23 des 46 hivers passés, avec 9 in (22 cm) comme valeur habituelle.",
+      "Bonne nouvelle de Silverton Mountain : 31 in (79 cm) à 10 643 ft (3 244 m) aujourd'hui, plus que lors de 43 des 46 hivers passés à cette date (habituel : 6 in (15 cm))."
+     ]
+    }
+   ],
+   "advice": [
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Dans les montagnes sèches comme l'Atlas, la neige tient en altitude sur les pentes nord et fond d'abord côté soleil. Suivez l'ombre.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Wolf Creek reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest américain le 10 novembre 2026 (modèle de neige SnowScope) : Wolf Creek, Telluride, Silverton Mountain, Lost Trail, Big Sky Resort."
+   }
+  },
+  "de": {
+   "title": "Wo liegt im US-Westen der meiste Schnee? In Wolf Creek, mit 35 in (10. November)",
+   "description": "Wo liegt heute im US-Westen der meiste Schnee? Wenn du heute den meisten Schnee im US-Westen willst, schau nach Wolf Creek (USA): etwa 35 in (90 cm) …",
+   "lede": "Wo liegt heute im US-Westen der meiste Schnee? Wenn du heute den meisten Schnee im US-Westen willst, schau nach Wolf Creek (USA): etwa 35 in (90 cm) weit oben. Danach kommen Telluride (33 in (85 cm)) und Silverton Mountain (23 in (58 cm)). Heute haben 129 der 195 Skigebiete im US-Westen Schnee in den oberen Hängen; insgesamt zählt unser Modell 57.545 sq mi (149.040 km²) unter Schnee. Tiefer Schnee an einer Nordflanke und aperer Boden auf der Südseite desselben Grats sind in trockenen Bergen normal.",
+   "sections": [
+    {
+     "h": "Was am Boden liegt",
+     "p": [
+      "Der Schnee hat sich seit dem 8. November zurückgezogen, von 66.850 sq mi (173.140 km²) auf heute 57.545 sq mi (149.040 km²); für den 13. November ergibt unsere Prognose 50.919 sq mi (131.880 km²).",
+      "In Wolf Creek ist der Unterschied zwischen oben und unten deutlich: 19 in (47 cm) am Gipfel (11.762 ft / 3.585 m), 14 in (36 cm) an der Mittelstation (11.010 ft / 3.356 m) und 3 in (8 cm) im Tal (10.262 ft / 3.128 m)."
+     ]
+    },
+    {
+     "h": "Die kommenden Tage",
+     "p": [
+      "Am 12. November steigt die Nullgradgrenze in Wolf Creek auf 9.875 ft (3.010 m) bis 13.615 ft (4.150 m), höher als die oberste Liftstation (11.762 ft (3.585 m)): Rechne auf allen Hängen mit Regen oder nassem Schnee.",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    },
+    {
+     "h": "Was die Stationen sahen",
+     "p": [
+      "Am 9. November maß die Station Beartown (11.581 ft / 3.530 m) 30 in (76 cm) Schnee am Boden. An der Messstation Red Mountain Pass (11.060 ft / 3.371 m) lag am 9. November gemessen 24 in (61 cm) Schnee am Boden. Am 9. November maß die Station Rat Creek (11.680 ft / 3.560 m) 22 in (56 cm) Schnee am Boden.",
+      "Ein Wort zu den Zahlen: Die Werte der Skigebiete schätzt unser Modell für die oberen Hänge, jede Messstation misst eine einzige Stelle am angegebenen Tag."
+     ]
+    },
+    {
+     "h": "Gegen andere Winter",
+     "p": [
+      "Wolf Creek ist gut gestartet. Auf 11.010 ft (3.356 m) zeigt unser Modell heute 26 in (65 cm), mehr als an diesem Datum in 35 der letzten 46 Winter; üblich sind 7 in (18 cm).",
+      "Nichts Ungewöhnliches in Telluride: heute 8 in (20 cm) auf 10.620 ft (3.237 m), mehr als in 23 der letzten 46 Winter, üblich sind 9 in (22 cm).",
+      "Gute Nachrichten aus Silverton Mountain: heute 31 in (79 cm) auf 10.643 ft (3.244 m), mehr als in 43 der letzten 46 Winter an diesem Datum (üblich: 6 in (15 cm))."
+     ]
+    }
+   ],
+   "advice": [
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Früher Schnee ist dünn. Bleib auf offenen, präparierten Pisten: Steine und Gras liegen oft knapp darunter.",
+    "In trockenen Gebirgen wie dem Atlas hält sich der Schnee an hohen Nordhängen und schmilzt zuerst auf der Sonnenseite. Folge dem Schatten.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Wolf Creek Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe im US-Westen am 10. November 2026 (SnowScope-Schneemodell): Wolf Creek, Telluride, Silverton Mountain, Lost Trail, Big Sky Resort."
+   }
+  },
+  "it": {
+   "title": "Dov'è la neve più alta nell'Ovest degli USA? A Wolf Creek, con 35 in (10 novembre)",
+   "description": "Dov'è oggi la neve più alta nell'Ovest degli USA? Se oggi cerchi più neve nell'Ovest degli USA, guarda Wolf Creek (Stati Uniti): circa 35 in (90 cm) …",
+   "lede": "Dov'è oggi la neve più alta nell'Ovest degli USA? Se oggi cerchi più neve nell'Ovest degli USA, guarda Wolf Creek (Stati Uniti): circa 35 in (90 cm) in alto. Dopo vengono Telluride (33 in (85 cm)) e Silverton Mountain (23 in (58 cm)). Oggi 129 delle 195 località nell'Ovest degli USA hanno neve sui pendii superiori; in tutto il nostro modello conta 57.545 sq mi (149.040 km²) sotto la neve. Neve profonda su una parete nord e terreno scoperto sul lato sud della stessa cresta sono normali nelle montagne secche.",
+   "sections": [
+    {
+     "h": "Cosa c'è al suolo",
+     "p": [
+      "Il terreno bianco è cambiato: 66.850 sq mi (173.140 km²) il 8 novembre, 57.545 sq mi (149.040 km²) oggi e 50.919 sq mi (131.880 km²) attesi il 13 novembre.",
+      "A Wolf Creek la differenza tra alto e basso è chiara: 19 in (47 cm) in vetta (11.762 ft / 3.585 m), 14 in (36 cm) a metà montagna (11.010 ft / 3.356 m) e 3 in (8 cm) alla base (10.262 ft / 3.128 m)."
+     ]
+    },
+    {
+     "h": "I giorni che vengono",
+     "p": [
+      "Il 12 novembre lo zero termico a Wolf Creek sale tra 9.875 ft (3.010 m) e 13.615 ft (4.150 m), più in alto della cima degli impianti (11.762 ft (3.585 m)): aspettati pioggia o neve bagnata su ogni pendio.",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    },
+    {
+     "h": "Cosa hanno visto le stazioni",
+     "p": [
+      "Il 9 novembre la stazione di Beartown (11.581 ft / 3.530 m) ha misurato 30 in (76 cm) al suolo. Alla stazione di Red Mountain Pass (11.060 ft / 3.371 m) la neve misurata al suolo era di 24 in (61 cm) il 9 novembre. Il 9 novembre la stazione di Rat Creek (11.680 ft / 3.560 m) ha misurato 22 in (56 cm) al suolo.",
+      "Una parola sui numeri: i valori delle località sono la stima del nostro modello per i pendii superiori, mentre ogni stazione misura un solo punto alla data indicata."
+     ]
+    },
+    {
+     "h": "Rispetto ad altri inverni",
+     "p": [
+      "Wolf Creek è partita bene. A 11.010 ft (3.356 m) il nostro modello indica oggi 26 in (65 cm), più che in questa data in 35 dei 46 inverni passati; l'abituale è 7 in (18 cm).",
+      "Niente di insolito a Telluride: 8 in (20 cm) a 10.620 ft (3.237 m) oggi, più che in 23 dei 46 inverni passati, con 9 in (22 cm) come valore abituale.",
+      "Buone notizie da Silverton Mountain: 31 in (79 cm) a 10.643 ft (3.244 m) oggi, più che in 43 dei 46 inverni passati in questa data (abituale: 6 in (15 cm))."
+     ]
+    }
+   ],
+   "advice": [
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "La neve di inizio stagione è sottile. Resta sulle piste aperte e battute: sassi ed erba sono appena sotto.",
+    "Nelle montagne secche come l'Atlante la neve resiste sui versanti nord in quota e fonde prima sul lato al sole. Segui l'ombra.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Wolf Creek riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve nell'Ovest degli USA il 10 novembre 2026 (modello neve SnowScope): Wolf Creek, Telluride, Silverton Mountain, Lost Trail, Big Sky Resort."
+   }
+  },
+  "es": {
+   "title": "¿Dónde hay más nieve en el oeste de EE. UU.? En Wolf Creek, con 35 in (10 de noviembre)",
+   "description": "¿Dónde hay hoy más nieve en el oeste de EE. UU.? Si buscas la mayor cantidad de nieve en el oeste de EE. UU. hoy, mira Wolf Creek (Estados Unidos): …",
+   "lede": "¿Dónde hay hoy más nieve en el oeste de EE. UU.? Si buscas la mayor cantidad de nieve en el oeste de EE. UU. hoy, mira Wolf Creek (Estados Unidos): unos 35 in (90 cm) arriba. Después vienen Telluride (33 in (85 cm)) y Silverton Mountain (23 in (58 cm)). Hoy 129 de las 195 estaciones en el oeste de EE. UU. tienen nieve en las pistas altas; en total, nuestro modelo cuenta 57.545 sq mi (149.040 km²) bajo la nieve. Nieve profunda en una cara norte y suelo pelado en la cara sur de la misma cresta es normal en montañas secas.",
+   "sections": [
+    {
+     "h": "Lo que hay en el suelo",
+     "p": [
+      "La superficie blanca ha cambiado: 66.850 sq mi (173.140 km²) el 8 de noviembre, 57.545 sq mi (149.040 km²) hoy y 50.919 sq mi (131.880 km²) esperados el 13 de noviembre.",
+      "En Wolf Creek, la diferencia entre arriba y abajo es clara: 19 in (47 cm) en la cota alta (11.762 ft / 3585 m), 14 in (36 cm) a media montaña (11.010 ft / 3356 m) y 3 in (8 cm) en la base (10.262 ft / 3128 m)."
+     ]
+    },
+    {
+     "h": "Los días que vienen",
+     "p": [
+      "El 12 de noviembre la cota de congelación en Wolf Creek sube a 9875 ft (3010 m)-13.615 ft (4150 m), más alta que la cima de los remontes (11.762 ft (3585 m)): cuenta con lluvia o nieve húmeda en todas las pistas.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    },
+    {
+     "h": "Lo que vieron las estaciones",
+     "p": [
+      "El 9 de noviembre, la estación de medida Beartown (11.581 ft / 3530 m) midió 30 in (76 cm) en el suelo. En la estación de medida Red Mountain Pass (11.060 ft / 3371 m), la nieve medida en el suelo era de 24 in (61 cm) el 9 de noviembre. El 9 de noviembre, la estación de medida Rat Creek (11.680 ft / 3560 m) midió 22 in (56 cm) en el suelo.",
+      "Una palabra sobre las cifras: los valores de las estaciones de esquí son una estimación de nuestro modelo para las pistas altas, mientras que cada estación de medida mide un solo punto en la fecha indicada."
+     ]
+    },
+    {
+     "h": "Frente a otros inviernos",
+     "p": [
+      "Wolf Creek empieza bien. A 11.010 ft (3356 m) nuestro modelo da hoy 26 in (65 cm), más que en esta fecha en 35 de los 46 inviernos pasados; lo habitual es 7 in (18 cm).",
+      "Nada raro en Telluride: 8 in (20 cm) a 10.620 ft (3237 m) hoy, más que en 23 de los 46 inviernos pasados, con 9 in (22 cm) como lo habitual.",
+      "Buenas noticias de Silverton Mountain: 31 in (79 cm) a 10.643 ft (3244 m) hoy, más que en 43 de los 46 inviernos pasados en esta fecha (lo habitual: 6 in (15 cm))."
+     ]
+    }
+   ],
+   "advice": [
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "La nieve de principio de temporada es fina. Quédate en pistas abiertas y pisadas: piedras y hierba están justo debajo.",
+    "En montañas secas como el Atlas, la nieve aguanta arriba en las laderas norte y se funde antes en la cara soleada. Sigue la sombra.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Wolf Creek recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de EE. UU. el 10 de noviembre 2026 (modelo de nieve de SnowScope): Wolf Creek, Telluride, Silverton Mountain, Lost Trail, Big Sky Resort."
+   }
+  },
+  "ar": {
+   "title": "فين كاين أكثر تلج فغرب ميريكان؟ ف Wolf Creek، ب 35 إنش (10 نونبر)",
+   "description": "فين كاين أكثر تلج فغرب ميريكان اليوم؟ إلا بغيتي أكثر تلج فغرب ميريكان اليوم، شوف Wolf Creek (ميريكان): تقريبا 35 إنش (90 سم) فالعلو. من بعدها …",
+   "lede": "فين كاين أكثر تلج فغرب ميريكان اليوم؟ إلا بغيتي أكثر تلج فغرب ميريكان اليوم، شوف Wolf Creek (ميريكان): تقريبا 35 إنش (90 سم) فالعلو. من بعدها Telluride (33 إنش (85 سم)) و Silverton Mountain (23 إنش (58 سم)). اليوم 129 محطة من 195 فغرب ميريكان فيهم التلج فالجهة الفوقانية؛ وفالمجموع، الموديل ديالنا كيحسب 57545 ميل² (149040 كم²) تحت التلج. تلج عميق فالجهة ديال الشمال وأرض عريانة فالجهة ديال الجنوب فنفس الجبل حاجة عادية فالجبال الناشفين.",
+   "sections": [
+    {
+     "h": "شنو كاين فالأرض",
+     "p": [
+      "الأرض البيضا تبدلت: 66850 ميل² (173140 كم²) نهار 8 نونبر، 57545 ميل² (149040 كم²) اليوم، و 50919 ميل² (131880 كم²) متوقعة نهار 13 نونبر.",
+      "ف Wolf Creek، الفرق بين الفوق والتحت باين: 19 إنش (47 سم) فالفوق (11762 قدم / 3585 م)، 14 إنش (36 سم) فالوسط (11010 قدم / 3356 م) و 3 إنش (8 سم) فالتحت (10262 قدم / 3128 م)."
+     ]
+    },
+    {
+     "h": "الأيام اللي جايين",
+     "p": [
+      "نهار 12 نونبر علو الجليد ف Wolf Creek طالع بين 9875 قدم (3010 م) و 13615 قدم (4150 م)، فوق آخر تيليسييج (11762 قدم (3585 م)): توقع الشتا ولا تلج مبلول فكاع البيستات.",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    },
+    {
+     "h": "شنو شافو المحطات",
+     "p": [
+      "نهار 9 نونبر، محطة القياس Beartown (11581 قدم / 3530 م) قاست 30 إنش (76 سم) فالأرض. فمحطة القياس Red Mountain Pass (11060 قدم / 3371 م)، التلج المقاس فالأرض كان 24 إنش (61 سم) نهار 9 نونبر. نهار 9 نونبر، محطة القياس Rat Creek (11680 قدم / 3560 م) قاست 22 إنش (56 سم) فالأرض.",
+      "كلمة على الأرقام: القيم ديال المحطات هي تقدير ديال الموديل ديالنا للجهة الفوقانية، وكل محطة ديال القياس كتقيس بلاصة وحدة فالتاريخ المكتوب."
+     ]
+    },
+    {
+     "h": "قدام شتوات أخرى",
+     "p": [
+      "Wolf Creek بدات مزيان. على علو 11010 قدم (3356 م) الموديل ديالنا فيه 26 إنش (65 سم) اليوم، أكثر من هاد التاريخ ف 35 من 46 ديال الشتوات اللي فاتو؛ العادي هو 7 إنش (18 سم).",
+      "حتى حاجة غريبة ف Telluride: 8 إنش (20 سم) على علو 10620 قدم (3237 م) اليوم، أكثر من 23 من 46 ديال الشتوات اللي فاتو، والعادي 9 إنش (22 سم).",
+      "خبار مزيانة من Silverton Mountain: 31 إنش (79 سم) على علو 10643 قدم (3244 م) اليوم، أكثر من 43 من 46 ديال الشتوات اللي فاتو فهاد التاريخ (العادي: 6 إنش (15 سم))."
+     ]
+    }
+   ],
+   "advice": [
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "التلج ديال بداية الموسم رقيق. بقى فالبيستات المحلولة والمدكوكة: الحجر والربيع يمكن يكونو تحت نيشان.",
+    "فالجبال الناشفين بحال الأطلس، التلج كيبقى فالجهات العاليين اللي كتشوف للشمال وكيدوب اللول فالجهة ديال الشمس. تبع الظل.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Wolf Creek يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب ميريكان نهار 10 نونبر 2026 (الموديل ديال SnowScope): Wolf Creek, Telluride, Silverton Mountain, Lost Trail, Big Sky Resort."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "de": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "it": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "es": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  }
+ },
+ "words_en": 423,
+ "indexable": true,
+ "main": {
+  "slug": "wolf_creek_ski_area",
+  "name": "Wolf Creek",
+  "lat": 37.4632,
+  "lon": -106.7905
+ },
+ "places": [
+  {
+   "name": "Wolf Creek",
+   "lat": 37.4632,
+   "lon": -106.7905
+  },
+  {
+   "name": "Telluride",
+   "lat": 37.9197,
+   "lon": -107.8348
+  },
+  {
+   "name": "Silverton Mountain",
+   "lat": 37.8773,
+   "lon": -107.6562
+  },
+  {
+   "name": "Lost Trail",
+   "lat": 45.6962,
+   "lon": -113.9558
+  },
+  {
+   "name": "Big Sky Resort",
+   "lat": 45.2739,
+   "lon": -111.4195
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "wolf_creek_ski_area",
+   "name": "Wolf Creek"
+  },
+  {
+   "slug": "telluride_ski_area",
+   "name": "Telluride"
+  },
+  {
+   "slug": "silverton_mountain",
+   "name": "Silverton Mountain"
+  },
+  {
+   "slug": "lost_trail",
+   "name": "Lost Trail"
+  },
+  {
+   "slug": "big_sky",
+   "name": "Big Sky Resort"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "wolf_creek_ski_area",
+    "name": "Wolf Creek",
+    "depth": 90,
+    "new72": 0,
+    "next": 0,
+    "top_m": 3585
+   },
+   {
+    "slug": "telluride_ski_area",
+    "name": "Telluride",
+    "depth": 85,
+    "new72": 0,
+    "next": 0,
+    "top_m": 3812
+   },
+   {
+    "slug": "silverton_mountain",
+    "name": "Silverton Mountain",
+    "depth": 58,
+    "new72": 0,
+    "next": 0,
+    "top_m": 3345
+   },
+   {
+    "slug": "lost_trail",
+    "name": "Lost Trail",
+    "depth": 50,
+    "new72": 0,
+    "next": 0,
+    "top_m": 2495
+   },
+   {
+    "slug": "big_sky",
+    "name": "Big Sky Resort",
+    "depth": 48,
+    "new72": 0,
+    "next": 0,
+    "top_m": 3402
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Colorado Avalanche Information Center",
+   "url": "https://avalanche.state.co.us/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@37.463,-106.790,9.0",
+ "seconds": 0.0,
+ "facts_used": 52,
+ "similarity": {
+  "max": 0.294,
+  "with": "us-west-telluride-snow-depth-today-8-november-2026"
+ },
+ "publish_utc": "2026-11-10T17:49:09Z",
+ "overlap": {
+  "before": 50.4,
+  "after": 18.9,
+  "with": "us-west-snow-depth-today-7-november-2026",
+  "tries": 1
+ },
+ "voice": "field"
+}
