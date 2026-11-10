@@ -1,0 +1,574 @@
+{
+ "id": "feature-oukaimeden-december-2026-snow-outlook",
+ "slug": "oukaimeden-december-2026-snow-outlook",
+ "date": "2026-11-10",
+ "published_utc": "2026-11-10T09:30:47Z",
+ "updated_utc": "2026-11-10T09:30:47Z",
+ "region": "ATLAS",
+ "angle": "guide_feature_climate",
+ "category": "guide",
+ "draft": false,
+ "kind": "climate",
+ "resort_class": "major",
+ "structure": "dec-outlook-v2-resort",
+ "score": 90,
+ "tags": [
+  "forecast",
+  "snow-depth",
+  "ski"
+ ],
+ "facts": {
+  "kind": "climate",
+  "date": "2026-11-10",
+  "extra": {
+   "key": "oukaimeden",
+   "name": "Oukaimeden",
+   "kind": "resort",
+   "domain": "ATLAS",
+   "region_cells": {
+    "cells": 55,
+    "snowier_cells_pct": 0,
+    "leaner_cells_pct": 95,
+    "no_signal_cells_pct": 5,
+    "median_chance_more_snow_pct": 35,
+    "max_chance_more_snow_pct": 43,
+    "min_chance_more_snow_pct": 29
+   },
+   "ecmwf": {
+    "members": 51,
+    "temp_anom_c_mean": 2.2,
+    "members_warmer_pct": 94,
+    "precip_anom_pct_mean": 11,
+    "members_wetter_pct": 51,
+    "usual_dec_precip_mm": 33
+   },
+   "today": {
+    "today_map": "surfer",
+    "snowy_share_of_window_pct": 1,
+    "map_day": "2026-11-09"
+   },
+   "status": {
+    "name": "Oukaïmeden",
+    "country": "Morocco",
+    "region": "Marrakesh-Safi",
+    "base_m": 2600,
+    "top_m": 3260,
+    "lifts": 1,
+    "km": 10.0,
+    "model_run": "2026-11-09",
+    "base": {
+     "elev_m": 2600,
+     "depth_cm": 0,
+     "past_24h": 0,
+     "past_48h": 0,
+     "past_7d": 0,
+     "next_24h": 0,
+     "next_48h": 0,
+     "next_7d": 0
+    },
+    "mid": {
+     "elev_m": 2930,
+     "depth_cm": 0,
+     "past_24h": 0,
+     "past_48h": 0,
+     "past_7d": 1,
+     "next_24h": 0,
+     "next_48h": 0,
+     "next_7d": 0
+    },
+    "top": {
+     "elev_m": 3260,
+     "depth_cm": 0,
+     "past_24h": 0,
+     "past_48h": 0,
+     "past_7d": 6,
+     "next_24h": 0,
+     "next_48h": 0,
+     "next_7d": 0
+    }
+   },
+   "outlook": {
+    "n_winters": 45,
+    "n_members": 51,
+    "analog_effective_n": 22.0,
+    "dec_temp_anom_c_median": 2.0,
+    "dec_precip_anom_pct_median": -4,
+    "members_warmer_pct": 94,
+    "members_wetter_pct": 45,
+    "past_dec_mean_temp_c": 6.1,
+    "past_dec_precip_mm": 31,
+    "usual_depth_31dec_cm": 26,
+    "usual_new_snow_dec_cm": 41,
+    "usual_depth_31dec_p25_cm": 11,
+    "usual_depth_31dec_p75_cm": 39,
+    "outlook_depth_31dec_cm": 13,
+    "outlook_depth_31dec_p25_cm": 0,
+    "outlook_depth_31dec_p75_cm": 29,
+    "outlook_new_snow_dec_cm": 37,
+    "chance_deeper_than_usual_pct": 26,
+    "chance_more_new_snow_pct": 42,
+    "closest_past_decembers": [
+     2010,
+     2023,
+     1989
+    ],
+    "snow_vs_temp_corr": -0.24,
+    "snow_vs_precip_corr": 0.91
+   },
+   "height_m": 3204,
+   "ref_period": [
+    1993,
+    2016
+   ],
+   "forecast_start": "2026-11-01",
+   "grid_km": 10,
+   "pixel_m": 500,
+   "window_km": 60,
+   "past_years": [
+    1981,
+    2025
+   ],
+   "agree_dots_pct": [
+    80,
+    67
+   ],
+   "colour_key_cm": [
+    1,
+    250
+   ],
+   "no_signal_band_pct": [
+    45,
+    55
+   ],
+   "about_height_m": 3200,
+   "trail_m": 3000
+  }
+ },
+ "ref_numbers": [],
+ "media": [
+  {
+   "id": "today",
+   "kind": "figure",
+   "file": "blog/media/2026/11/oukaimeden-december-2026-snow-outlook/today.webp",
+   "thumb": "blog/media/2026/11/oukaimeden-december-2026-snow-outlook/today_t.webp",
+   "w": 1600,
+   "h": 1772,
+   "after": -1
+  },
+  {
+   "id": "snow",
+   "kind": "figure",
+   "file": "blog/media/2026/11/oukaimeden-december-2026-snow-outlook/snow.webp",
+   "thumb": "blog/media/2026/11/oukaimeden-december-2026-snow-outlook/snow_t.webp",
+   "w": 1600,
+   "h": 994,
+   "after": 1
+  },
+  {
+   "id": "temp",
+   "kind": "figure",
+   "file": "blog/media/2026/11/oukaimeden-december-2026-snow-outlook/temp.webp",
+   "thumb": "blog/media/2026/11/oukaimeden-december-2026-snow-outlook/temp_t.webp",
+   "w": 1600,
+   "h": 1442,
+   "after": 2
+  },
+  {
+   "id": "precip",
+   "kind": "figure",
+   "file": "blog/media/2026/11/oukaimeden-december-2026-snow-outlook/precip.webp",
+   "thumb": "blog/media/2026/11/oukaimeden-december-2026-snow-outlook/precip_t.webp",
+   "w": 1600,
+   "h": 1442,
+   "after": 2
+  },
+  {
+   "id": "decembers",
+   "kind": "figure",
+   "file": "blog/media/2026/11/oukaimeden-december-2026-snow-outlook/decembers.webp",
+   "thumb": "blog/media/2026/11/oukaimeden-december-2026-snow-outlook/decembers_t.webp",
+   "w": 1600,
+   "h": 518,
+   "after": 3
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Oukaimeden in December 2026: a warm month ahead, snow odds below usual",
+   "description": "No snow yet at Oukaimeden. The European seasonal forecast sees a warmer December over the High Atlas, and our map shows leaner odds on almost every summit.",
+   "lede": "Oukaimeden is still bare: the 6 cm that fell at the top (3260 m) last week have melted, and the next seven days look dry. For December, the seasonal forecast is clearly warm over the High Atlas, and that is enough to tilt the snow odds below usual.",
+   "sections": [
+    {
+     "h": "Snow today",
+     "p": [
+      "The map shows 0 cm at the base (2600 m), at mid-mountain (2930 m) and at the top. Only 1 % of the 60 km around Oukaimeden is white, so instead of an empty snow map we show the terrain: Toubkal and the high ridges where the first lasting snow usually appears."
+     ]
+    },
+    {
+     "h": "Leaner odds almost everywhere",
+     "p": [
+      "Our outlook map compares every High Atlas mountain area of about 10 km with its own past Decembers. 95 % of the mountain area leans leaner and none leans snowier. The chance of more new snow than in a usual December ranges from 29 % to 43 % across the range.",
+      "High up at Oukaimeden, around 3200 m, a usual December brings 41 cm of new snow and leaves 26 cm on the ground on 31 December. This year's outlook is 37 cm of new snow and 13 cm on 31 December, most likely between 0 and 29 cm. The chance of more snow than usual on 31 December is only 26 %."
+     ]
+    },
+    {
+     "h": "What the European forecast says",
+     "p": [
+      "The 51 runs of the European weather centre's seasonal system are almost unanimous: 94 % of them make December warmer than usual, by 2.2 °C on average over the area. For precipitation the runs are split: 51 % are wetter, and the average is 11 % above a usual December of only 33 mm, pushed up by a few very wet runs.",
+      "In the Atlas this matters a lot. Storms are few in December, and with warmer air more of each storm falls as rain on the lower slopes and the snow melts faster in the strong sun. Snow here still follows precipitation first (correlation 0.91), but warmth takes away from what falls."
+     ]
+    },
+    {
+     "h": "Past Decembers like this one",
+     "p": [
+      "The past Decembers whose weather looked most like this forecast are 2010, 2023 and 1989. A single big storm can still change the picture in the Atlas, so the outlook is a tilt of the odds, not a dry verdict.",
+      "Follow the 7-day forecast: when a storm from the Atlantic is announced, the top of Oukaimeden is the first place to get snow."
+     ]
+    }
+   ],
+   "advice": [
+    "Do not plan a ski day in early December without checking the 7-day forecast.",
+    "After a storm, the highest slopes keep snow longest; the lower area melts within days in a warm month.",
+    "For hiking, the high trails may stay mostly clear of snow; check conditions before going above 3000 m."
+   ],
+   "captions": {
+    "today": "No snow to map around Oukaimeden yet, so here is the terrain instead: height in metres with contour lines every 500 m (500 m pixels, 60 km across).",
+    "snow": "Our December outlook, mountain by mountain: the chance that December brings more new snow than a usual December. Brown = leaner, white = no clear signal (45 to 55 %), blue = snowier. Grey = no December snow in most years or no data.",
+    "temp": "The European weather centre's seasonal forecast (51 runs, started 1 November): December temperature compared with a usual December (1993-2016), in °C. Red = warmer. Dots = at least 80 % of the runs agree on warmer or colder. The grid is about 100 km, so it shows the big picture, not single valleys.",
+    "precip": "Same forecast, December precipitation (rain and snow together) in % above or below a usual December. Green = wetter, brown = drier. Dots = at least two thirds of the runs agree. Very dry areas are left blank: a percentage of almost nothing means little.",
+    "decembers": "Snow depth on 31 December at 3204 m in each of the last 45 winters (cm). Darker bars = Decembers whose weather looked most like this year's forecast. Dashed line = usual, blue line = this year's outlook."
+   },
+   "method": "Method. Temperature and precipitation: the seasonal forecast of the European weather centre (ECMWF SEAS5, 51 runs started 1 November 2026, anomalies against its own 1993-2016 reforecasts, about 100 km grid). Snow: for every mountain cell of about 10 km we take our model of the past (46 winters, snow depth corrected for height) and the weather of each December from 1981 to 2025 (ERA5); past Decembers whose temperature and precipitation look like each forecast run count more, and their snow gives the odds. Snow today: the SnowScope snow map (500 m). A monthly outlook only tilts the odds: it cannot forecast a storm or a date.",
+   "references": [
+    {
+     "text": "ECMWF SEAS5 seasonal forecasts, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/seasonal-postprocessed-single-levels"
+    },
+    {
+     "text": "ERA5 monthly averaged data, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means"
+    }
+   ]
+  },
+  "fr": {
+   "title": "Oukaïmeden en décembre 2026 : un mois doux annoncé, chances de neige sous la normale",
+   "description": "Pas encore de neige à l'Oukaïmeden. La prévision saisonnière européenne voit un décembre plus doux sur le Haut Atlas, et notre carte montre des chances plus faibles sur presque tous les sommets.",
+   "lede": "L'Oukaïmeden est encore sans neige : les 6 cm tombés au sommet (3260 m) la semaine dernière ont fondu, et les sept prochains jours s'annoncent secs. Pour décembre, la prévision saisonnière est nettement chaude sur le Haut Atlas, et cela suffit à faire pencher les chances de neige sous la normale.",
+   "sections": [
+    {
+     "h": "La neige aujourd'hui",
+     "p": [
+      "La carte montre 0 cm au bas (2600 m), à mi-pente (2930 m) et au sommet. Seulement 1 % des 60 km autour de l'Oukaïmeden est blanc : au lieu d'une carte de neige vide, nous montrons le relief, le Toubkal et les hautes crêtes où apparaît d'habitude la première neige durable."
+     ]
+    },
+    {
+     "h": "Des chances plus faibles presque partout",
+     "p": [
+      "Notre carte compare chaque zone de montagne du Haut Atlas d'environ 10 km avec ses propres décembres passés. 95 % de la montagne penche vers moins de neige et aucune zone vers plus. La probabilité d'avoir plus de neige fraîche qu'un décembre habituel va de 29 % à 43 % selon les massifs.",
+      "En haut de l'Oukaïmeden, vers 3200 m, un décembre habituel apporte 41 cm de neige fraîche et laisse 26 cm au sol le 31 décembre. La tendance de cette année est de 37 cm de neige fraîche et de 13 cm le 31 décembre, le plus probablement entre 0 et 29 cm. La probabilité d'avoir plus de neige que d'habitude le 31 décembre n'est que de 26 %."
+     ]
+    },
+    {
+     "h": "Ce que dit la prévision européenne",
+     "p": [
+      "Les 51 calculs du système saisonnier du centre météo européen sont presque unanimes : 94 % rendent décembre plus chaud que d'habitude, de 2,2 °C en moyenne sur la zone. Pour les précipitations les calculs sont partagés : 51 % sont plus humides, et la moyenne est 11 % au-dessus d'un décembre habituel de seulement 33 mm, tirée vers le haut par quelques calculs très humides.",
+      "Dans l'Atlas, cela compte beaucoup. Les perturbations sont rares en décembre, et avec un air plus doux une plus grande part de chaque perturbation tombe en pluie sur les pentes basses, et la neige fond plus vite sous le fort soleil. Ici la neige suit d'abord les précipitations (corrélation 0,91), mais la douceur retire une partie de ce qui tombe."
+     ]
+    },
+    {
+     "h": "Les décembres passés qui ressemblent à celui-ci",
+     "p": [
+      "Les décembres dont la météo ressemblait le plus à cette prévision sont 2010, 2023 et 1989. Une seule grosse perturbation peut encore changer la donne dans l'Atlas : la tendance fait pencher les chances, ce n'est pas un verdict sec.",
+      "Suivez la prévision à 7 jours : quand une perturbation atlantique est annoncée, le haut de l'Oukaïmeden est le premier endroit à recevoir de la neige."
+     ]
+    }
+   ],
+   "advice": [
+    "Ne prévoyez pas une journée de ski début décembre sans vérifier la prévision à 7 jours.",
+    "Après une perturbation, les pentes les plus hautes gardent la neige le plus longtemps ; le bas fond en quelques jours si le mois est doux.",
+    "Pour la randonnée, les sentiers d'altitude pourraient rester presque sans neige ; vérifiez les conditions avant de monter au-dessus de 3000 m."
+   ],
+   "captions": {
+    "today": "Pas encore de neige à cartographier autour de Oukaimeden : voici le relief, altitude en mètres avec des courbes tous les 500 m (pixels de 500 m, 60 km de large).",
+    "snow": "Notre tendance de décembre, massif par massif : la probabilité que décembre apporte plus de neige fraîche qu'un décembre habituel. Brun = moins de neige, blanc = pas de signal net (45 à 55 %), bleu = plus de neige. Gris = pas de neige en décembre la plupart des années ou pas de données.",
+    "temp": "La prévision saisonnière du centre météo européen (51 calculs, lancés le 1er novembre) : température de décembre comparée à un décembre habituel (1993-2016), en °C. Rouge = plus chaud. Points = au moins 80 % des calculs d'accord sur plus chaud ou plus froid. La grille fait environ 100 km : c'est la vue d'ensemble, pas chaque vallée.",
+    "precip": "Même prévision, précipitations de décembre (pluie et neige ensemble) en % au-dessus ou en dessous d'un décembre habituel. Vert = plus humide, brun = plus sec. Points = au moins deux tiers des calculs d'accord. Les zones très sèches sont laissées vides : un pourcentage de presque rien ne veut pas dire grand-chose.",
+    "decembers": "Hauteur de neige au 31 décembre à 3204 m lors de chacun des 45 derniers hivers (cm). Barres foncées = décembres dont la météo ressemble le plus à la prévision de cette année. Tirets = habituel, ligne bleue = tendance de cette année."
+   },
+   "method": "Méthode. Température et précipitations : la prévision saisonnière du centre météo européen (ECMWF SEAS5, 51 calculs lancés le 1er novembre 2026, écarts par rapport à ses propres reprévisions 1993-2016, grille d'environ 100 km). Neige : pour chaque maille de montagne d'environ 10 km, nous prenons notre modèle du passé (46 hivers, hauteur de neige corrigée de l'altitude) et la météo de chaque décembre de 1981 à 2025 (ERA5) ; les décembres passés dont la température et les précipitations ressemblent à chaque calcul comptent davantage, et leur neige donne les probabilités. Neige du jour : la carte de neige SnowScope (500 m). Une tendance mensuelle ne fait que déplacer les chances : elle ne prévoit ni une tempête ni une date.",
+   "references": [
+    {
+     "text": "ECMWF SEAS5 seasonal forecasts, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/seasonal-postprocessed-single-levels"
+    },
+    {
+     "text": "ERA5 monthly averaged data, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means"
+    }
+   ]
+  },
+  "de": {
+   "title": "Oukaimeden im Dezember 2026: ein warmer Monat, Schneechancen unter dem Üblichen",
+   "description": "Noch kein Schnee in Oukaimeden. Die europäische Saisonprognose sieht einen wärmeren Dezember im Hohen Atlas, und unsere Karte zeigt auf fast allen Gipfeln schlechtere Chancen.",
+   "lede": "Oukaimeden ist noch aper: Die 6 cm, die letzte Woche am Gipfel (3260 m) fielen, sind geschmolzen, und die nächsten sieben Tage sehen trocken aus. Für den Dezember ist die Saisonprognose über dem Hohen Atlas klar warm, und das reicht, um die Schneechancen unter das Übliche zu drücken.",
+   "sections": [
+    {
+     "h": "Schnee heute",
+     "p": [
+      "Die Karte zeigt 0 cm an der Talstation (2600 m), an der Mittelstation (2930 m) und am Gipfel. Nur 1 % der 60 km rund um Oukaimeden ist weiß, deshalb zeigen wir statt einer leeren Schneekarte das Gelände: den Toubkal und die hohen Grate, auf denen der erste bleibende Schnee meist liegt."
+     ]
+    },
+    {
+     "h": "Fast überall schlechtere Chancen",
+     "p": [
+      "Unsere Ausblickskarte vergleicht jedes Berggebiet des Hohen Atlas von etwa 10 km mit seinen eigenen vergangenen Dezembern. 95 % der Bergfläche neigen zu weniger Schnee, keine zu mehr. Die Chance auf mehr Neuschnee als in einem üblichen Dezember liegt im Gebirge zwischen 29 % und 43 %.",
+      "Oben in Oukaimeden, auf etwa 3200 m, bringt ein üblicher Dezember 41 cm Neuschnee und lässt am 31. Dezember 26 cm liegen. Der Ausblick für dieses Jahr: 37 cm Neuschnee und 13 cm am 31. Dezember, am wahrscheinlichsten zwischen 0 und 29 cm. Die Chance auf mehr Schnee als üblich am 31. Dezember beträgt nur 26 %."
+     ]
+    },
+    {
+     "h": "Was die europäische Prognose sagt",
+     "p": [
+      "Die 51 Läufe des saisonalen Systems des Europäischen Wetterzentrums sind fast einstimmig: 94 % machen den Dezember wärmer als üblich, im Mittel um 2,2 °C. Beim Niederschlag sind die Läufe geteilt: 51 % sind nasser, und der Mittelwert liegt 11 % über einem üblichen Dezember von nur 33 mm, nach oben gezogen von wenigen sehr nassen Läufen.",
+      "Im Atlas zählt das viel. Im Dezember gibt es wenige Störungen, und bei wärmerer Luft fällt mehr davon als Regen an den unteren Hängen, und der Schnee schmilzt in der starken Sonne schneller. Der Schnee folgt hier zuerst dem Niederschlag (Korrelation 0,91), aber die Wärme nimmt einen Teil davon weg."
+     ]
+    },
+    {
+     "h": "Vergangene Dezember wie dieser",
+     "p": [
+      "Die Dezember, deren Wetter dieser Prognose am meisten ähnelte, sind 2010, 2023 und 1989. Eine einzige große Störung kann im Atlas noch alles ändern: Der Ausblick verschiebt die Chancen, er ist kein trockenes Urteil.",
+      "Verfolge die 7-Tage-Prognose: Wenn eine Atlantikstörung angekündigt wird, bekommt der Gipfel von Oukaimeden als Erstes Schnee."
+     ]
+    }
+   ],
+   "advice": [
+    "Plane Anfang Dezember keinen Skitag ohne Blick auf die 7-Tage-Prognose.",
+    "Nach einer Störung halten die höchsten Hänge den Schnee am längsten; unten schmilzt er in einem warmen Monat in wenigen Tagen.",
+    "Beim Wandern können die hohen Wege weitgehend schneefrei bleiben; prüfe die Bedingungen, bevor du über 3000 m steigst."
+   ],
+   "captions": {
+    "today": "Rund um Oukaimeden liegt noch kein Schnee für eine Karte, daher hier das Gelände: Höhe in Metern mit Höhenlinien alle 500 m (500-m-Pixel, 60 km breit).",
+    "snow": "Unser Dezember-Ausblick, Berg für Berg: die Chance, dass der Dezember mehr Neuschnee bringt als ein üblicher Dezember. Braun = weniger, Weiß = kein klares Signal (45 bis 55 %), Blau = mehr Schnee. Grau = in den meisten Jahren kein Dezemberschnee oder keine Daten.",
+    "temp": "Die saisonale Prognose des Europäischen Wetterzentrums (51 Läufe, gestartet am 1. November): Dezember-Temperatur im Vergleich zu einem üblichen Dezember (1993-2016), in °C. Rot = wärmer. Punkte = mindestens 80 % der Läufe sind sich bei wärmer oder kälter einig. Das Raster ist etwa 100 km groß: das große Bild, nicht einzelne Täler.",
+    "precip": "Dieselbe Prognose, Dezember-Niederschlag (Regen und Schnee zusammen) in % über oder unter einem üblichen Dezember. Grün = nasser, Braun = trockener. Punkte = mindestens zwei Drittel der Läufe sind sich einig. Sehr trockene Gebiete bleiben leer: ein Prozentwert von fast nichts sagt wenig.",
+    "decembers": "Schneehöhe am 31. Dezember auf 3204 m in jedem der letzten 45 Winter (cm). Dunkle Balken = Dezember, deren Wetter der diesjährigen Prognose am meisten ähnelt. Gestrichelt = üblich, blaue Linie = Ausblick dieses Jahres."
+   },
+   "method": "Methode. Temperatur und Niederschlag: die saisonale Prognose des Europäischen Wetterzentrums (ECMWF SEAS5, 51 Läufe ab 1. November 2026, Abweichungen gegenüber den eigenen Rückprognosen 1993-2016, etwa 100-km-Raster). Schnee: Für jede Bergzelle von etwa 10 km nehmen wir unser Modell der Vergangenheit (46 Winter, höhenkorrigierte Schneehöhe) und das Wetter jedes Dezembers von 1981 bis 2025 (ERA5); vergangene Dezember, deren Temperatur und Niederschlag einem Prognoselauf ähneln, zählen mehr, und ihr Schnee ergibt die Chancen. Schnee heute: die SnowScope-Schneekarte (500 m). Ein Monatsausblick verschiebt nur die Chancen: Er sagt weder einen Sturm noch ein Datum voraus.",
+   "references": [
+    {
+     "text": "ECMWF SEAS5 seasonal forecasts, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/seasonal-postprocessed-single-levels"
+    },
+    {
+     "text": "ERA5 monthly averaged data, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means"
+    }
+   ]
+  },
+  "it": {
+   "title": "Oukaimeden a dicembre 2026: un mese caldo in arrivo, probabilità di neve sotto la norma",
+   "description": "Ancora niente neve a Oukaimeden. La previsione stagionale europea vede un dicembre più caldo sull'Alto Atlante, e la nostra mappa mostra probabilità più basse su quasi tutte le cime.",
+   "lede": "Oukaimeden è ancora senza neve: i 6 cm caduti in cima (3260 m) la settimana scorsa si sono sciolti, e i prossimi sette giorni sembrano asciutti. Per dicembre la previsione stagionale è nettamente calda sull'Alto Atlante, e basta per spingere le probabilità di neve sotto la norma.",
+   "sections": [
+    {
+     "h": "La neve oggi",
+     "p": [
+      "La mappa mostra 0 cm alla base (2600 m), a metà montagna (2930 m) e in cima. Solo l'1 % dei 60 km intorno a Oukaimeden è bianco: invece di una mappa della neve vuota mostriamo il rilievo, il Toubkal e le creste alte dove di solito compare la prima neve duratura."
+     ]
+    },
+    {
+     "h": "Probabilità più basse quasi ovunque",
+     "p": [
+      "La nostra mappa confronta ogni zona di montagna dell'Alto Atlante di circa 10 km con i suoi dicembre passati. Il 95 % della montagna tende a meno neve e nessuna zona a più neve. La probabilità di più neve fresca di un dicembre abituale va dal 29 % al 43 % nella catena.",
+      "In alto a Oukaimeden, verso 3200 m, un dicembre abituale porta 41 cm di neve fresca e lascia 26 cm al suolo il 31 dicembre. La tendenza di quest'anno è di 37 cm di neve fresca e 13 cm il 31 dicembre, molto probabilmente tra 0 e 29 cm. La probabilità di più neve del solito il 31 dicembre è solo del 26 %."
+     ]
+    },
+    {
+     "h": "Cosa dice la previsione europea",
+     "p": [
+      "Le 51 corse del sistema stagionale del centro meteo europeo sono quasi unanimi: il 94 % rende dicembre più caldo del solito, in media di 2,2 °C sulla zona. Per le precipitazioni le corse sono divise: il 51 % è più umido, e la media è l'11 % sopra un dicembre abituale di soli 33 mm, spinta in alto da poche corse molto umide.",
+      "Nell'Atlante questo conta molto. A dicembre le perturbazioni sono poche, e con aria più calda una parte maggiore di ogni perturbazione cade come pioggia sui pendii bassi, e la neve fonde più in fretta sotto il sole forte. Qui la neve segue prima di tutto le precipitazioni (correlazione 0,91), ma il caldo ne toglie una parte."
+     ]
+    },
+    {
+     "h": "I dicembre passati simili a questo",
+     "p": [
+      "I dicembre con il tempo più simile a questa previsione sono il 2010, il 2023 e il 1989. Una sola grande perturbazione può ancora cambiare tutto nell'Atlante: la tendenza inclina le probabilità, non è un verdetto secco.",
+      "Seguite la previsione a 7 giorni: quando arriva una perturbazione atlantica, la cima di Oukaimeden è il primo posto a ricevere neve."
+     ]
+    }
+   ],
+   "advice": [
+    "Non programmate una giornata di sci a inizio dicembre senza controllare la previsione a 7 giorni.",
+    "Dopo una perturbazione i pendii più alti tengono la neve più a lungo; in basso fonde in pochi giorni se il mese è caldo.",
+    "Per l'escursionismo i sentieri alti potrebbero restare quasi senza neve; controllate le condizioni prima di salire sopra i 3000 m."
+   ],
+   "captions": {
+    "today": "Ancora niente neve da mostrare intorno a Oukaimeden, quindi ecco il rilievo: quota in metri con curve di livello ogni 500 m (pixel di 500 m, 60 km di lato).",
+    "snow": "La nostra tendenza di dicembre, montagna per montagna: la probabilità che dicembre porti più neve fresca di un dicembre abituale. Marrone = meno neve, bianco = nessun segnale chiaro (dal 45 al 55 %), blu = più neve. Grigio = niente neve a dicembre nella maggior parte degli anni o nessun dato.",
+    "temp": "La previsione stagionale del centro meteo europeo (51 corse, partite il 1° novembre): temperatura di dicembre rispetto a un dicembre abituale (1993-2016), in °C. Rosso = più caldo. Punti = almeno l'80 % delle corse concorda su più caldo o più freddo. La griglia è di circa 100 km: il quadro generale, non le singole valli.",
+    "precip": "Stessa previsione, precipitazioni di dicembre (pioggia e neve insieme) in % sopra o sotto un dicembre abituale. Verde = più umido, marrone = più secco. Punti = almeno due terzi delle corse concordano. Le zone molto secche sono lasciate vuote: una percentuale di quasi niente dice poco.",
+    "decembers": "Altezza della neve al 31 dicembre a 3204 m in ciascuno degli ultimi 45 inverni (cm). Barre scure = dicembre con il tempo più simile alla previsione di quest'anno. Tratteggio = abituale, linea blu = tendenza di quest'anno."
+   },
+   "method": "Metodo. Temperatura e precipitazioni: la previsione stagionale del centro meteo europeo (ECMWF SEAS5, 51 corse partite il 1° novembre 2026, anomalie rispetto alle sue riprevisioni 1993-2016, griglia di circa 100 km). Neve: per ogni cella di montagna di circa 10 km usiamo il nostro modello del passato (46 inverni, altezza della neve corretta per la quota) e il tempo di ogni dicembre dal 1981 al 2025 (ERA5); i dicembre passati con temperatura e precipitazioni simili a ciascuna corsa contano di più, e la loro neve dà le probabilità. Neve di oggi: la mappa della neve SnowScope (500 m). Una tendenza mensile sposta solo le probabilità: non prevede una tempesta né una data.",
+   "references": [
+    {
+     "text": "ECMWF SEAS5 seasonal forecasts, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/seasonal-postprocessed-single-levels"
+    },
+    {
+     "text": "ERA5 monthly averaged data, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means"
+    }
+   ]
+  },
+  "es": {
+   "title": "Oukaimeden en diciembre de 2026: un mes cálido por delante, probabilidades de nieve bajo lo habitual",
+   "description": "Todavía sin nieve en Oukaimeden. La previsión estacional europea ve un diciembre más cálido en el Alto Atlas, y nuestro mapa muestra probabilidades más bajas en casi todas las cumbres.",
+   "lede": "Oukaimeden sigue sin nieve: los 6 cm que cayeron en la cima (3260 m) la semana pasada se han fundido, y los próximos siete días parecen secos. Para diciembre la previsión estacional es claramente cálida en el Alto Atlas, y basta para inclinar las probabilidades de nieve por debajo de lo habitual.",
+   "sections": [
+    {
+     "h": "La nieve hoy",
+     "p": [
+      "El mapa muestra 0 cm en la base (2600 m), a media montaña (2930 m) y en la cima. Solo el 1 % de los 60 km alrededor de Oukaimeden está blanco, así que en lugar de un mapa de nieve vacío mostramos el relieve: el Toubkal y las crestas altas donde suele aparecer la primera nieve duradera."
+     ]
+    },
+    {
+     "h": "Probabilidades más bajas casi en todas partes",
+     "p": [
+      "Nuestro mapa compara cada zona de montaña del Alto Atlas de unos 10 km con sus propios diciembres pasados. El 95 % de la montaña se inclina a menos nieve y ninguna zona a más. La probabilidad de más nieve nueva que en un diciembre habitual va del 29 % al 43 % según la zona.",
+      "Arriba en Oukaimeden, hacia 3200 m, un diciembre habitual trae 41 cm de nieve nueva y deja 26 cm en el suelo el 31 de diciembre. La tendencia de este año es de 37 cm de nieve nueva y 13 cm el 31 de diciembre, lo más probable entre 0 y 29 cm. La probabilidad de más nieve de lo habitual el 31 de diciembre es solo del 26 %."
+     ]
+    },
+    {
+     "h": "Qué dice la previsión europea",
+     "p": [
+      "Las 51 pasadas del sistema estacional del centro meteorológico europeo son casi unánimes: el 94 % hace diciembre más cálido de lo habitual, 2,2 °C de media en la zona. En precipitación las pasadas están divididas: el 51 % es más húmedo, y la media está un 11 % por encima de un diciembre habitual de solo 33 mm, empujada por unas pocas pasadas muy húmedas.",
+      "En el Atlas esto pesa mucho. En diciembre hay pocas borrascas, y con aire más cálido una parte mayor de cada borrasca cae como lluvia en las laderas bajas, y la nieve se funde antes bajo el sol fuerte. Aquí la nieve sigue ante todo a la precipitación (correlación 0,91), pero el calor le quita una parte."
+     ]
+    },
+    {
+     "h": "Diciembres pasados como este",
+     "p": [
+      "Los diciembres cuyo tiempo más se pareció a esta previsión son 2010, 2023 y 1989. Una sola gran borrasca todavía puede cambiarlo todo en el Atlas: la tendencia inclina las probabilidades, no es un veredicto seco.",
+      "Sigue la previsión a 7 días: cuando se anuncia una borrasca atlántica, la cima de Oukaimeden es el primer lugar en recibir nieve."
+     ]
+    }
+   ],
+   "advice": [
+    "No planees un día de esquí a principios de diciembre sin mirar la previsión a 7 días.",
+    "Tras una borrasca, las laderas más altas guardan la nieve más tiempo; abajo se funde en pocos días si el mes es cálido.",
+    "Para el senderismo, los caminos altos pueden quedar casi sin nieve; comprueba las condiciones antes de subir por encima de 3000 m."
+   ],
+   "captions": {
+    "today": "Todavía no hay nieve que mostrar alrededor de Oukaimeden, así que aquí está el relieve: altitud en metros con curvas de nivel cada 500 m (píxeles de 500 m, 60 km de lado).",
+    "snow": "Nuestra tendencia de diciembre, montaña a montaña: la probabilidad de que diciembre traiga más nieve nueva que un diciembre habitual. Marrón = menos nieve, blanco = sin señal clara (del 45 al 55 %), azul = más nieve. Gris = sin nieve en diciembre la mayoría de los años o sin datos.",
+    "temp": "La previsión estacional del centro meteorológico europeo (51 pasadas, iniciadas el 1 de noviembre): temperatura de diciembre comparada con un diciembre habitual (1993-2016), en °C. Rojo = más cálido. Puntos = al menos el 80 % de las pasadas coinciden en más cálido o más frío. La rejilla es de unos 100 km: el panorama general, no cada valle.",
+    "precip": "La misma previsión, precipitación de diciembre (lluvia y nieve juntas) en % por encima o por debajo de un diciembre habitual. Verde = más húmedo, marrón = más seco. Puntos = al menos dos tercios de las pasadas coinciden. Las zonas muy secas quedan en blanco: un porcentaje de casi nada dice poco.",
+    "decembers": "Espesor de nieve el 31 de diciembre a 3204 m en cada uno de los últimos 45 inviernos (cm). Barras oscuras = diciembres cuyo tiempo más se parece a la previsión de este año. Línea discontinua = lo habitual, línea azul = tendencia de este año."
+   },
+   "method": "Método. Temperatura y precipitación: la previsión estacional del centro meteorológico europeo (ECMWF SEAS5, 51 pasadas iniciadas el 1 de noviembre de 2026, anomalías frente a sus propias repredicciones 1993-2016, rejilla de unos 100 km). Nieve: para cada celda de montaña de unos 10 km tomamos nuestro modelo del pasado (46 inviernos, espesor corregido por altitud) y el tiempo de cada diciembre de 1981 a 2025 (ERA5); los diciembres pasados cuya temperatura y precipitación se parecen a cada pasada cuentan más, y su nieve da las probabilidades. Nieve de hoy: el mapa de nieve de SnowScope (500 m). Una tendencia mensual solo inclina las probabilidades: no prevé una tormenta ni una fecha.",
+   "references": [
+    {
+     "text": "ECMWF SEAS5 seasonal forecasts, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/seasonal-postprocessed-single-levels"
+    },
+    {
+     "text": "ERA5 monthly averaged data, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means"
+    }
+   ]
+  },
+  "ar": {
+   "title": "أوكايمدن فدجنبر 2026: شهر سخون جاي، والحظ ديال التلج تحت العادي",
+   "description": "باقي ما كاينش التلج فأوكايمدن. التوقع الموسمي الأوروبي كيشوف دجنبر سخون كثر فالأطلس الكبير، والخريطة ديالنا كتبين حظوظ قل فتقريبا كاع القمم.",
+   "lede": "أوكايمدن باقي بلا تلج: 6 سنتيمتر اللي طاحو فالقمة (3260 متر) السيمانة اللي فاتت داباو، وسبع أيام الجايين باينين ناشفين. لدجنبر، التوقع الموسمي سخون بوضوح فالأطلس الكبير، وهادشي كافي باش يميل الحظوظ ديال التلج تحت العادي.",
+   "sections": [
+    {
+     "h": "التلج اليوم",
+     "p": [
+      "الخريطة كتبين 0 سنتيمتر فالتحت (2600 متر)، فالوسط (2930 متر) وفالقمة. غير 1% من 60 كيلومتر حدا أوكايمدن بيضا، داكشي علاش بلاصة خريطة ديال التلج خاوية كنوريو التضاريس: توبقال والقمم العالية فين كيبان عادة أول تلج كيبقى."
+     ]
+    },
+    {
+     "h": "حظوظ قل تقريبا فكل بلاصة",
+     "p": [
+      "الخريطة ديالنا كتقارن كل منطقة ديال الجبل فالأطلس الكبير ديال تقريبا 10 كيلومتر مع الدجنبرات ديالها اللي فاتو. 95% ديال الجبل مايلة لتلج قل، وحتى منطقة ما مايلة لتلج كثر. الحظ باش يكون تلج جديد كثر من دجنبر عادي كيتراوح بين 29% و43%.",
+      "لفوق فأوكايمدن، تقريبا 3200 متر، دجنبر عادي كيجيب 41 سنتيمتر ديال التلج الجديد وكيخلي 26 سنتيمتر فالأرض نهار 31 دجنبر. التوقع ديال هاد العام: 37 سنتيمتر ديال التلج الجديد و13 سنتيمتر نهار 31 دجنبر، غالبا بين 0 و29 سنتيمتر. الحظ باش يكون التلج كثر من العادة نهار 31 دجنبر غير 26%."
+     ]
+    },
+    {
+     "h": "شنو كيقول التوقع الأوروبي",
+     "p": [
+      "51 حساب ديال النظام الموسمي ديال المركز الأوروبي تقريبا كلهم متافقين: 94% منهم كيخليو دجنبر سخون كثر من العادة، ب 2.2 درجة فالمتوسط. فالشتا الحسابات مقسومين: 51% فيهم الشتا كثر، والمتوسط 11% فوق دجنبر عادي فيه غير 33 ملم، طلعوه شي حسابات فيهم الشتا بزاف.",
+      "فالأطلس هادشي مهم بزاف. الاضطرابات قلال فدجنبر، ومع هوا سخون جزء كبير من كل اضطراب كيطيح شتا فالجهات اللي لتحت، والتلج كيدوب بالزربة مع الشمس القوية. التلج هنا كيتبع الشتا أولا (ارتباط 0.91)، ولكن السخونية كتنقص من داكشي اللي كيطيح."
+     ]
+    },
+    {
+     "h": "دجنبرات اللي فاتو بحال هادا",
+     "p": [
+      "الدجنبرات اللي الطقس ديالهم كيشبه بزاف لهاد التوقع هوما 2010 و2023 و1989. اضطراب واحد كبير يقدر يبدل كلشي فالأطلس: التوقع كيميل الحظوظ، ماشي حكم ناشف.",
+      "تبع التوقع ديال 7 أيام: ملي كيتعلن اضطراب جاي من الأطلسي، القمة ديال أوكايمدن هي أول بلاصة كتشد التلج."
+     ]
+    }
+   ],
+   "advice": [
+    "ما تخططش لنهار ديال التزلج فبداية دجنبر بلا ما تشوف التوقع ديال 7 أيام.",
+    "من بعد الاضطراب، الجهات العالية كتحبس التلج كثر؛ اللي لتحت كيدوب فشي أيام إلا كان الشهر سخون.",
+    "للمشي فالجبل، الطرقان العالية يقدرو يبقاو تقريبا بلا تلج؛ شوف الحالة قبل ما تطلع فوق 3000 متر."
+   ],
+   "captions": {
+    "today": "باقي ما كاينش التلج حدا Oukaimeden، داكشي علاش هادي التضاريس: العلو بالمتر مع خطوط كل 500 متر (بيكسلات ديال 500 متر، 60 كيلومتر).",
+    "snow": "التوقع ديالنا لدجنبر، جبل بجبل: الحظ باش دجنبر يجيب تلج جديد كثر من دجنبر عادي. القهوي = تلج قل، الأبيض = ما كاينش إشارة واضحة (من 45 ل 55%)، الزرق = تلج كثر. الرمادي = ما كيطيحش التلج فدجنبر فأغلب السنين ولا ما كايناش المعطيات.",
+    "temp": "التوقع الموسمي ديال المركز الأوروبي ديال الطقس (51 حساب، بداو نهار 1 نونبر): الحرارة ديال دجنبر مقارنة مع دجنبر عادي (1993-2016)، بالدرجة. الحمر = سخون كثر. النقط = على الأقل 80% من الحسابات متافقين. الشبكة فيها تقريبا 100 كيلومتر: الصورة الكبيرة، ماشي كل واد.",
+    "precip": "نفس التوقع، الشتا والتلج ديال دجنبر بالنسبة المئوية فوق ولا تحت دجنبر عادي. الخضر = شتا كثر، القهوي = ناشف كثر. النقط = على الأقل جوج تلت ديال الحسابات متافقين. المناطق الناشفة بزاف خاوية: نسبة من حتى حاجة ما كتعني والو.",
+    "decembers": "العلو ديال التلج نهار 31 دجنبر ف 3204 m فكل وحدة من 45 شتوة اللي فاتو (cm). الأعمدة الغامقة = دجنبرات الطقس ديالهم كيشبه بزاف للتوقع ديال هاد العام. الخط المقطع = العادي، الخط الزرق = التوقع ديال هاد العام."
+   },
+   "method": "الطريقة. الحرارة والشتا: التوقع الموسمي ديال المركز الأوروبي ديال الطقس (ECMWF SEAS5، 51 حساب بداو نهار 1 نونبر 2026، مقارنة مع 1993-2016، شبكة ديال تقريبا 100 كيلومتر). التلج: لكل خانة ديال الجبل ديال تقريبا 10 كيلومتر كناخدو الموديل ديالنا ديال اللي فات (46 شتوة، العلو ديال التلج مصحح بالعلو) والطقس ديال كل دجنبر من 1981 حتى ل 2025 (ERA5)؛ الدجنبرات اللي كيشبهو لكل حساب كيحسبو كثر، والتلج ديالهم كيعطي الحظوظ. التلج ديال اليوم: الخريطة ديال SnowScope (500 متر). التوقع ديال شهر كيبدل غير الحظوظ: ما كيقدرش يتوقع عاصفة ولا تاريخ.",
+   "references": [
+    {
+     "text": "ECMWF SEAS5 seasonal forecasts, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/seasonal-postprocessed-single-levels"
+    },
+    {
+     "text": "ERA5 monthly averaged data, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means"
+    }
+   ]
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "hand (dec outlook v2)"
+  },
+  "fr": {
+   "writer": "hand (dec outlook v2)"
+  },
+  "de": {
+   "writer": "hand (dec outlook v2)"
+  },
+  "it": {
+   "writer": "hand (dec outlook v2)"
+  },
+  "es": {
+   "writer": "hand (dec outlook v2)"
+  },
+  "ar": {
+   "writer": "hand (dec outlook v2)"
+  }
+ },
+ "words_en": 389,
+ "indexable": true,
+ "main": {
+  "slug": null,
+  "name": "Oukaimeden",
+  "lat": 31.2,
+  "lon": -7.86
+ },
+ "places": [],
+ "resort_links": [],
+ "table": null,
+ "bulletins": [],
+ "trip_day": "",
+ "map_link": "https://snowscope.app/",
+ "publish_utc": "2026-11-10T09:30:47Z"
+}

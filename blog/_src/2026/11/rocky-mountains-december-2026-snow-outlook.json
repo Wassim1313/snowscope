@@ -1,0 +1,593 @@
+{
+ "id": "feature-rocky-mountains-december-2026-snow-outlook",
+ "slug": "rocky-mountains-december-2026-snow-outlook",
+ "date": "2026-11-10",
+ "published_utc": "2026-11-10T09:32:47Z",
+ "updated_utc": "2026-11-10T09:32:47Z",
+ "region": "US_WEST",
+ "angle": "guide_feature_climate",
+ "category": "guide",
+ "draft": false,
+ "kind": "climate",
+ "resort_class": "major",
+ "structure": "dec-outlook-v2-region",
+ "score": 90,
+ "tags": [
+  "forecast",
+  "snow-depth",
+  "ski"
+ ],
+ "facts": {
+  "kind": "climate",
+  "date": "2026-11-10",
+  "extra": {
+   "key": "rocky-mountains",
+   "name": "the Rocky Mountains",
+   "kind": "region",
+   "domain": "US_WEST",
+   "region_cells": {
+    "cells": 4955,
+    "snowier_cells_pct": 1,
+    "leaner_cells_pct": 19,
+    "no_signal_cells_pct": 79,
+    "median_chance_more_snow_pct": 45,
+    "max_chance_more_snow_pct": 62,
+    "min_chance_more_snow_pct": 27
+   },
+   "ecmwf": {
+    "members": 51,
+    "temp_anom_c_mean": 0.9,
+    "members_warmer_pct": 71,
+    "precip_anom_pct_mean": -3,
+    "members_wetter_pct": 45,
+    "usual_dec_precip_mm": 40
+   },
+   "subregions": {
+    "colorado": {
+     "n_winters": 45,
+     "n_members": 51,
+     "analog_effective_n": 38.0,
+     "dec_temp_anom_c_median": 0.3,
+     "dec_precip_anom_pct_median": -10,
+     "members_warmer_pct": 57,
+     "members_wetter_pct": 39,
+     "past_dec_mean_temp_c": -10.8,
+     "past_dec_precip_mm": 53,
+     "usual_depth_31dec_cm": 84,
+     "usual_new_snow_dec_cm": 51,
+     "usual_depth_31dec_p25_cm": 64,
+     "usual_depth_31dec_p75_cm": 101,
+     "outlook_depth_31dec_cm": 80,
+     "outlook_depth_31dec_p25_cm": 60,
+     "outlook_depth_31dec_p75_cm": 99,
+     "outlook_new_snow_dec_cm": 46,
+     "chance_deeper_than_usual_pct": 45,
+     "chance_more_new_snow_pct": 42,
+     "closest_past_decembers": [
+      1995,
+      1985,
+      2003
+     ],
+     "snow_vs_temp_corr": 0.1,
+     "snow_vs_precip_corr": 0.97,
+     "name": "Colorado",
+     "places": [
+      "Breckenridge",
+      "Vail",
+      "Winter Park Resort",
+      "Beaver Creek",
+      "Steamboat Ski Resort",
+      "Copper Mountain"
+     ]
+    },
+    "utah-wasatch": {
+     "n_winters": 45,
+     "n_members": 51,
+     "analog_effective_n": 37.0,
+     "dec_temp_anom_c_median": 1.0,
+     "dec_precip_anom_pct_median": -4,
+     "members_warmer_pct": 76,
+     "members_wetter_pct": 49,
+     "past_dec_mean_temp_c": -6.2,
+     "past_dec_precip_mm": 77,
+     "usual_depth_31dec_cm": 103,
+     "usual_new_snow_dec_cm": 71,
+     "usual_depth_31dec_p25_cm": 73,
+     "usual_depth_31dec_p75_cm": 134,
+     "outlook_depth_31dec_cm": 103,
+     "outlook_depth_31dec_p25_cm": 75,
+     "outlook_depth_31dec_p75_cm": 130,
+     "outlook_new_snow_dec_cm": 70,
+     "chance_deeper_than_usual_pct": 48,
+     "chance_more_new_snow_pct": 47,
+     "closest_past_decembers": [
+      1995,
+      2019,
+      2012
+     ],
+     "snow_vs_temp_corr": 0.31,
+     "snow_vs_precip_corr": 0.93,
+     "name": "Utah's Wasatch",
+     "places": [
+      "Park City Mountain Resort",
+      "Deer Valley Resort",
+      "Snowbird",
+      "Alta Ski Area",
+      "Sundance Resort",
+      "Solitude Mountain Resort"
+     ]
+    },
+    "northern-rockies": {
+     "n_winters": 45,
+     "n_members": 51,
+     "analog_effective_n": 33.1,
+     "dec_temp_anom_c_median": 1.7,
+     "dec_precip_anom_pct_median": -10,
+     "members_warmer_pct": 82,
+     "members_wetter_pct": 33,
+     "past_dec_mean_temp_c": -8.2,
+     "past_dec_precip_mm": 70,
+     "usual_depth_31dec_cm": 102,
+     "usual_new_snow_dec_cm": 65,
+     "usual_depth_31dec_p25_cm": 81,
+     "usual_depth_31dec_p75_cm": 120,
+     "outlook_depth_31dec_cm": 102,
+     "outlook_depth_31dec_p25_cm": 77,
+     "outlook_depth_31dec_p75_cm": 115,
+     "outlook_new_snow_dec_cm": 60,
+     "chance_deeper_than_usual_pct": 46,
+     "chance_more_new_snow_pct": 37,
+     "closest_past_decembers": [
+      2004,
+      2014,
+      2002
+     ],
+     "snow_vs_temp_corr": -0.02,
+     "snow_vs_precip_corr": 0.93,
+     "name": "the Northern Rockies",
+     "places": [
+      "Big Sky Resort",
+      "Jackson Hole Mountain Resort",
+      "Yellowstone Club",
+      "Whitefish Mountain Resort",
+      "Sun Valley - Bald Mountain",
+      "Bridger Bowl"
+     ]
+    }
+   },
+   "resort_outlooks": {},
+   "ref_period": [
+    1993,
+    2016
+   ],
+   "forecast_start": "2026-11-01",
+   "grid_km": 10,
+   "pixel_m": 500,
+   "window_km": 60,
+   "past_years": [
+    1981,
+    2025
+   ],
+   "agree_dots_pct": [
+    80,
+    67
+   ],
+   "colour_key_cm": [
+    1,
+    250
+   ],
+   "no_signal_band_pct": [
+    45,
+    55
+   ],
+   "temp_anom_f": 1.6,
+   "colorado_temp_anom_f": 0.5,
+   "utah_temp_anom_f": 1.8,
+   "nrockies_temp_anom_f": 3.1,
+   "usual_dec_precip_in": 1.6
+  }
+ },
+ "ref_numbers": [],
+ "media": [
+  {
+   "id": "snow",
+   "kind": "figure",
+   "file": "blog/media/2026/11/rocky-mountains-december-2026-snow-outlook/snow.webp",
+   "thumb": "blog/media/2026/11/rocky-mountains-december-2026-snow-outlook/snow_t.webp",
+   "w": 1600,
+   "h": 1924,
+   "after": -1
+  },
+  {
+   "id": "temp",
+   "kind": "figure",
+   "file": "blog/media/2026/11/rocky-mountains-december-2026-snow-outlook/temp.webp",
+   "thumb": "blog/media/2026/11/rocky-mountains-december-2026-snow-outlook/temp_t.webp",
+   "w": 1600,
+   "h": 1422,
+   "after": 1
+  },
+  {
+   "id": "precip",
+   "kind": "figure",
+   "file": "blog/media/2026/11/rocky-mountains-december-2026-snow-outlook/precip.webp",
+   "thumb": "blog/media/2026/11/rocky-mountains-december-2026-snow-outlook/precip_t.webp",
+   "w": 1600,
+   "h": 1422,
+   "after": 1
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Rocky Mountains in December 2026: leaner north, no signal for Colorado and Utah",
+   "description": "Where December 2026 looks snowier or leaner from Montana to New Mexico: the European seasonal forecast and our map, mountain by mountain, with Colorado, Utah and the Northern Rockies.",
+   "lede": "The seasonal forecast gives the Rockies a slightly warmer December with near-normal precipitation. Mountain by mountain, that means no clear signal for most of Colorado and Utah, and leaner odds in Montana and Wyoming.",
+   "sections": [
+    {
+     "h": "North leaner, south undecided",
+     "p": [
+      "Our outlook map compares every mountain area of about 6 miles (10 km) with its own past Decembers. On 79 % of the Rockies' mountain area there is no clear signal. 19 % leans leaner, mostly in the north around Big Sky, the Yellowstone plateau and the ranges near Jackson. Only 1 % leans snowier, in a few southern Utah ranges.",
+      "The chance of more new snow than in a usual December goes from 27 % to 62 % across the range, with a middle value of 45 %."
+     ]
+    },
+    {
+     "h": "What the European forecast says",
+     "p": [
+      "The 51 runs of the European weather centre's seasonal system make December 1.6 °F (0.9 °C) warmer than usual on average over the Rockies, with 71 % of the runs warmer. Precipitation is close to normal: 3 % below a usual December of 1.6 in (40 mm), and the runs are split, 45 % wetter.",
+      "The warmth grows to the north: about 3.1 °F (1.7 °C) in the Northern Rockies, where 82 % of the runs are warmer and only 33 % wetter. In Colorado the signal is weak, 0.5 °F (0.3 °C), and in Utah 1.8 °F (1.0 °C)."
+     ]
+    },
+    {
+     "h": "Colorado, Utah, Northern Rockies",
+     "p": [
+      "Colorado (Breckenridge, Vail, Winter Park, Beaver Creek, Steamboat, Copper): a usual December brings 20 in (51 cm) of new snow at mid-mountain; the outlook is 18 in (46 cm), a 42 % chance of more than usual. Snow on the ground on 31 December: usual 33 in (84 cm), outlook 31 in (80 cm). Past Decembers most like this forecast: 1995, 1985 and 2003.",
+      "Utah's Wasatch (Park City, Deer Valley, Snowbird, Alta, Solitude): usual 28 in (71 cm) of new snow, outlook 28 in (70 cm), a 47 % chance of more; depth on 31 December 41 in (103 cm) both usual and outlook. Northern Rockies (Big Sky, Jackson Hole, Whitefish, Sun Valley, Bridger Bowl): usual 26 in (65 cm), outlook 24 in (60 cm), only a 37 % chance of more; depth on 31 December 40 in (102 cm) usual and outlook."
+     ]
+    },
+    {
+     "h": "What to do with it",
+     "p": [
+      "For Colorado and Utah, December is still open: plan as for a usual year. In Montana and Wyoming the odds lean a little leaner, so high, north-facing terrain is the safer bet early in the month.",
+      "A monthly outlook cannot see single storms. One big Pacific storm can fill the month, so follow the 7-day forecast before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Colorado and Utah: no reason to change a December plan for now.",
+    "Montana and Wyoming: favour high terrain early in December.",
+    "Check the SnowScope map a week before you go: it shows the next storm and the snow line by height."
+   ],
+   "captions": {
+    "snow": "Our December outlook, mountain by mountain: the chance that December brings more new snow than a usual December. Brown = leaner, white = no clear signal (45 to 55 %), blue = snowier. Grey = no December snow in most years or no data.",
+    "temp": "The European weather centre's seasonal forecast (51 runs, started 1 November): December temperature compared with a usual December (1993-2016), in °C. Red = warmer. Dots = at least 80 % of the runs agree on warmer or colder. The grid is about 100 km, so it shows the big picture, not single valleys.",
+    "precip": "Same forecast, December precipitation (rain and snow together) in % above or below a usual December. Green = wetter, brown = drier. Dots = at least two thirds of the runs agree. Very dry areas are left blank: a percentage of almost nothing means little."
+   },
+   "method": "Method. Temperature and precipitation: the seasonal forecast of the European weather centre (ECMWF SEAS5, 51 runs started 1 November 2026, anomalies against its own 1993-2016 reforecasts, about 100 km grid). Snow: for every mountain cell of about 10 km we take our model of the past (46 winters, snow depth corrected for height) and the weather of each December from 1981 to 2025 (ERA5); past Decembers whose temperature and precipitation look like each forecast run count more, and their snow gives the odds. Snow today: the SnowScope snow map (500 m). A monthly outlook only tilts the odds: it cannot forecast a storm or a date.",
+   "references": [
+    {
+     "text": "ECMWF SEAS5 seasonal forecasts, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/seasonal-postprocessed-single-levels"
+    },
+    {
+     "text": "ERA5 monthly averaged data, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means"
+    }
+   ]
+  },
+  "fr": {
+   "title": "Rocheuses en décembre 2026 : moins de neige au nord, pas de signal pour le Colorado et l'Utah",
+   "description": "Où décembre 2026 s'annonce plus ou moins enneigé du Montana au Nouveau-Mexique : la prévision saisonnière européenne et notre carte, massif par massif, avec le Colorado, l'Utah et les Rocheuses du Nord.",
+   "lede": "La prévision saisonnière donne aux Rocheuses un décembre un peu plus doux, avec des précipitations proches de la normale. Massif par massif, cela veut dire pas de signal net pour l'essentiel du Colorado et de l'Utah, et des chances plus faibles au Montana et au Wyoming.",
+   "sections": [
+    {
+     "h": "Le nord moins enneigé, le sud indécis",
+     "p": [
+      "Notre carte compare chaque zone de montagne d'environ 10 km avec ses propres décembres passés. Sur 79 % de la montagne des Rocheuses il n'y a pas de signal net. 19 % penche vers moins de neige, surtout au nord autour de Big Sky, du plateau de Yellowstone et des massifs proches de Jackson. Seulement 1 % penche vers plus, dans quelques massifs du sud de l'Utah.",
+      "La probabilité d'avoir plus de neige fraîche qu'un décembre habituel va de 27 % à 62 % selon les massifs, avec une valeur médiane de 45 %."
+     ]
+    },
+    {
+     "h": "Ce que dit la prévision européenne",
+     "p": [
+      "Les 51 calculs du système saisonnier du centre météo européen rendent décembre 0,9 °C plus chaud que d'habitude en moyenne sur les Rocheuses, avec 71 % des calculs plus chauds. Les précipitations sont proches de la normale : 3 % sous un décembre habituel de 40 mm, et les calculs sont partagés, 45 % plus humides.",
+      "La douceur augmente vers le nord : environ 1,7 °C dans les Rocheuses du Nord, où 82 % des calculs sont plus chauds et seulement 33 % plus humides. Au Colorado le signal est faible, 0,3 °C, et en Utah 1,0 °C."
+     ]
+    },
+    {
+     "h": "Colorado, Utah, Rocheuses du Nord",
+     "p": [
+      "Colorado (Breckenridge, Vail, Winter Park, Beaver Creek, Steamboat, Copper) : un décembre habituel apporte 51 cm de neige fraîche à mi-pente ; la tendance est de 46 cm, avec 42 % de chances d'avoir plus que d'habitude. Neige au sol le 31 décembre : 84 cm d'habitude, tendance 80 cm. Décembres passés les plus proches : 1995, 1985 et 2003.",
+      "Wasatch dans l'Utah (Park City, Deer Valley, Snowbird, Alta, Solitude) : 71 cm de neige fraîche d'habitude, tendance 70 cm, 47 % de chances d'avoir plus ; 103 cm au 31 décembre, d'habitude comme en tendance. Rocheuses du Nord (Big Sky, Jackson Hole, Whitefish, Sun Valley, Bridger Bowl) : 65 cm d'habitude, tendance 60 cm, seulement 37 % de chances d'avoir plus ; 102 cm au 31 décembre, d'habitude comme en tendance."
+     ]
+    },
+    {
+     "h": "Qu'en faire",
+     "p": [
+      "Pour le Colorado et l'Utah, décembre reste ouvert : prévoyez comme une année habituelle. Au Montana et au Wyoming les chances penchent un peu vers moins de neige : le terrain haut et orienté nord est le pari le plus sûr en début de mois.",
+      "Une tendance mensuelle ne voit pas les tempêtes une par une. Une seule grosse tempête du Pacifique peut remplir le mois : suivez la prévision à 7 jours avant de partir."
+     ]
+    }
+   ],
+   "advice": [
+    "Colorado et Utah : aucune raison de changer un projet de décembre pour l'instant.",
+    "Montana et Wyoming : privilégiez le terrain haut en début de décembre.",
+    "Regardez la carte SnowScope une semaine avant de partir : elle montre la prochaine tempête et la limite de la neige selon l'altitude."
+   ],
+   "captions": {
+    "snow": "Notre tendance de décembre, massif par massif : la probabilité que décembre apporte plus de neige fraîche qu'un décembre habituel. Brun = moins de neige, blanc = pas de signal net (45 à 55 %), bleu = plus de neige. Gris = pas de neige en décembre la plupart des années ou pas de données.",
+    "temp": "La prévision saisonnière du centre météo européen (51 calculs, lancés le 1er novembre) : température de décembre comparée à un décembre habituel (1993-2016), en °C. Rouge = plus chaud. Points = au moins 80 % des calculs d'accord sur plus chaud ou plus froid. La grille fait environ 100 km : c'est la vue d'ensemble, pas chaque vallée.",
+    "precip": "Même prévision, précipitations de décembre (pluie et neige ensemble) en % au-dessus ou en dessous d'un décembre habituel. Vert = plus humide, brun = plus sec. Points = au moins deux tiers des calculs d'accord. Les zones très sèches sont laissées vides : un pourcentage de presque rien ne veut pas dire grand-chose."
+   },
+   "method": "Méthode. Température et précipitations : la prévision saisonnière du centre météo européen (ECMWF SEAS5, 51 calculs lancés le 1er novembre 2026, écarts par rapport à ses propres reprévisions 1993-2016, grille d'environ 100 km). Neige : pour chaque maille de montagne d'environ 10 km, nous prenons notre modèle du passé (46 hivers, hauteur de neige corrigée de l'altitude) et la météo de chaque décembre de 1981 à 2025 (ERA5) ; les décembres passés dont la température et les précipitations ressemblent à chaque calcul comptent davantage, et leur neige donne les probabilités. Neige du jour : la carte de neige SnowScope (500 m). Une tendance mensuelle ne fait que déplacer les chances : elle ne prévoit ni une tempête ni une date.",
+   "references": [
+    {
+     "text": "ECMWF SEAS5 seasonal forecasts, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/seasonal-postprocessed-single-levels"
+    },
+    {
+     "text": "ERA5 monthly averaged data, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means"
+    }
+   ]
+  },
+  "de": {
+   "title": "Rocky Mountains im Dezember 2026: weniger Schnee im Norden, kein Signal für Colorado und Utah",
+   "description": "Wo der Dezember 2026 von Montana bis New Mexico schneereicher oder schneeärmer aussieht: die europäische Saisonprognose und unsere Karte, mit Colorado, Utah und den nördlichen Rockies.",
+   "lede": "Die Saisonprognose gibt den Rockies einen etwas wärmeren Dezember mit fast normalem Niederschlag. Berg für Berg heißt das: kein klares Signal für den Großteil von Colorado und Utah, schlechtere Chancen in Montana und Wyoming.",
+   "sections": [
+    {
+     "h": "Norden schneeärmer, Süden offen",
+     "p": [
+      "Unsere Ausblickskarte vergleicht jedes Berggebiet von etwa 10 km mit seinen eigenen vergangenen Dezembern. Auf 79 % der Bergfläche der Rockies gibt es kein klares Signal. 19 % neigen zu weniger Schnee, vor allem im Norden rund um Big Sky, das Yellowstone-Plateau und die Gebirge bei Jackson. Nur 1 % neigt zu mehr, in einigen Gebirgen im Süden Utahs.",
+      "Die Chance auf mehr Neuschnee als in einem üblichen Dezember liegt im Gebirge zwischen 27 % und 62 %, mit einem Mittelwert von 45 %."
+     ]
+    },
+    {
+     "h": "Was die europäische Prognose sagt",
+     "p": [
+      "Die 51 Läufe des saisonalen Systems des Europäischen Wetterzentrums machen den Dezember über den Rockies im Mittel 0,9 °C wärmer als üblich, 71 % der Läufe sind wärmer. Der Niederschlag ist fast normal: 3 % unter einem üblichen Dezember von 40 mm, und die Läufe sind geteilt, 45 % nasser.",
+      "Die Wärme nimmt nach Norden zu: etwa 1,7 °C in den nördlichen Rockies, wo 82 % der Läufe wärmer und nur 33 % nasser sind. In Colorado ist das Signal schwach, 0,3 °C, in Utah 1,0 °C."
+     ]
+    },
+    {
+     "h": "Colorado, Utah, nördliche Rockies",
+     "p": [
+      "Colorado (Breckenridge, Vail, Winter Park, Beaver Creek, Steamboat, Copper): Ein üblicher Dezember bringt 51 cm Neuschnee an der Mittelstation; der Ausblick liegt bei 46 cm, 42 % Chance auf mehr als üblich. Schnee am 31. Dezember: üblich 84 cm, Ausblick 80 cm. Ähnlichste vergangene Dezember: 1995, 1985 und 2003.",
+      "Wasatch in Utah (Park City, Deer Valley, Snowbird, Alta, Solitude): üblich 71 cm Neuschnee, Ausblick 70 cm, 47 % Chance auf mehr; am 31. Dezember 103 cm, üblich wie Ausblick. Nördliche Rockies (Big Sky, Jackson Hole, Whitefish, Sun Valley, Bridger Bowl): üblich 65 cm, Ausblick 60 cm, nur 37 % Chance auf mehr; am 31. Dezember 102 cm, üblich wie Ausblick."
+     ]
+    },
+    {
+     "h": "Was das bedeutet",
+     "p": [
+      "Für Colorado und Utah ist der Dezember offen: plane wie in einem üblichen Jahr. In Montana und Wyoming neigen die Chancen etwas zu weniger Schnee, hohes, nordseitiges Gelände ist Anfang des Monats die sicherere Wahl.",
+      "Ein Monatsausblick sieht keine einzelnen Stürme. Ein großer Pazifiksturm kann den Monat füllen, also verfolge vor der Reise die 7-Tage-Prognose."
+     ]
+    }
+   ],
+   "advice": [
+    "Colorado und Utah: vorerst kein Grund, einen Dezemberplan zu ändern.",
+    "Montana und Wyoming: Anfang Dezember hohes Gelände bevorzugen.",
+    "Schau eine Woche vor der Reise auf die SnowScope-Karte: Sie zeigt den nächsten Sturm und die Schneegrenze nach Höhe."
+   ],
+   "captions": {
+    "snow": "Unser Dezember-Ausblick, Berg für Berg: die Chance, dass der Dezember mehr Neuschnee bringt als ein üblicher Dezember. Braun = weniger, Weiß = kein klares Signal (45 bis 55 %), Blau = mehr Schnee. Grau = in den meisten Jahren kein Dezemberschnee oder keine Daten.",
+    "temp": "Die saisonale Prognose des Europäischen Wetterzentrums (51 Läufe, gestartet am 1. November): Dezember-Temperatur im Vergleich zu einem üblichen Dezember (1993-2016), in °C. Rot = wärmer. Punkte = mindestens 80 % der Läufe sind sich bei wärmer oder kälter einig. Das Raster ist etwa 100 km groß: das große Bild, nicht einzelne Täler.",
+    "precip": "Dieselbe Prognose, Dezember-Niederschlag (Regen und Schnee zusammen) in % über oder unter einem üblichen Dezember. Grün = nasser, Braun = trockener. Punkte = mindestens zwei Drittel der Läufe sind sich einig. Sehr trockene Gebiete bleiben leer: ein Prozentwert von fast nichts sagt wenig."
+   },
+   "method": "Methode. Temperatur und Niederschlag: die saisonale Prognose des Europäischen Wetterzentrums (ECMWF SEAS5, 51 Läufe ab 1. November 2026, Abweichungen gegenüber den eigenen Rückprognosen 1993-2016, etwa 100-km-Raster). Schnee: Für jede Bergzelle von etwa 10 km nehmen wir unser Modell der Vergangenheit (46 Winter, höhenkorrigierte Schneehöhe) und das Wetter jedes Dezembers von 1981 bis 2025 (ERA5); vergangene Dezember, deren Temperatur und Niederschlag einem Prognoselauf ähneln, zählen mehr, und ihr Schnee ergibt die Chancen. Schnee heute: die SnowScope-Schneekarte (500 m). Ein Monatsausblick verschiebt nur die Chancen: Er sagt weder einen Sturm noch ein Datum voraus.",
+   "references": [
+    {
+     "text": "ECMWF SEAS5 seasonal forecasts, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/seasonal-postprocessed-single-levels"
+    },
+    {
+     "text": "ERA5 monthly averaged data, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means"
+    }
+   ]
+  },
+  "it": {
+   "title": "Montagne Rocciose a dicembre 2026: meno neve a nord, nessun segnale per Colorado e Utah",
+   "description": "Dove dicembre 2026 sembra più o meno nevoso dal Montana al New Mexico: la previsione stagionale europea e la nostra mappa, con Colorado, Utah e Rocciose del Nord.",
+   "lede": "La previsione stagionale dà alle Rocciose un dicembre un po' più caldo con precipitazioni vicine alla norma. Montagna per montagna significa nessun segnale chiaro per gran parte di Colorado e Utah, e probabilità più basse in Montana e Wyoming.",
+   "sections": [
+    {
+     "h": "Nord meno nevoso, sud incerto",
+     "p": [
+      "La nostra mappa confronta ogni zona di montagna di circa 10 km con i suoi dicembre passati. Sul 79 % della montagna delle Rocciose non c'è un segnale chiaro. Il 19 % tende a meno neve, soprattutto a nord intorno a Big Sky, all'altopiano di Yellowstone e alle catene vicino a Jackson. Solo l'1 % tende a più neve, in alcune catene del sud dello Utah.",
+      "La probabilità di più neve fresca di un dicembre abituale va dal 27 % al 62 % nella catena, con un valore centrale del 45 %."
+     ]
+    },
+    {
+     "h": "Cosa dice la previsione europea",
+     "p": [
+      "Le 51 corse del sistema stagionale del centro meteo europeo rendono dicembre in media 0,9 °C più caldo del solito sulle Rocciose, con il 71 % delle corse più caldo. Le precipitazioni sono vicine alla norma: il 3 % sotto un dicembre abituale di 40 mm, e le corse sono divise, il 45 % più umido.",
+      "Il caldo cresce verso nord: circa 1,7 °C nelle Rocciose del Nord, dove l'82 % delle corse è più caldo e solo il 33 % più umido. In Colorado il segnale è debole, 0,3 °C, e nello Utah 1,0 °C."
+     ]
+    },
+    {
+     "h": "Colorado, Utah, Rocciose del Nord",
+     "p": [
+      "Colorado (Breckenridge, Vail, Winter Park, Beaver Creek, Steamboat, Copper): un dicembre abituale porta 51 cm di neve fresca a metà montagna; la tendenza è di 46 cm, con il 42 % di probabilità di più del solito. Neve al suolo il 31 dicembre: di solito 84 cm, tendenza 80 cm. Dicembre passati più simili: 1995, 1985 e 2003.",
+      "Wasatch nello Utah (Park City, Deer Valley, Snowbird, Alta, Solitude): di solito 71 cm di neve fresca, tendenza 70 cm, 47 % di probabilità di più; 103 cm il 31 dicembre, sia di solito sia in tendenza. Rocciose del Nord (Big Sky, Jackson Hole, Whitefish, Sun Valley, Bridger Bowl): di solito 65 cm, tendenza 60 cm, solo il 37 % di probabilità di più; 102 cm il 31 dicembre, sia di solito sia in tendenza."
+     ]
+    },
+    {
+     "h": "Cosa farne",
+     "p": [
+      "Per Colorado e Utah dicembre resta aperto: programmate come in un anno abituale. In Montana e Wyoming le probabilità tendono un po' a meno neve, quindi i terreni alti esposti a nord sono la scelta più sicura a inizio mese.",
+      "Una tendenza mensile non vede le singole tempeste. Una sola grande tempesta dal Pacifico può riempire il mese: seguite la previsione a 7 giorni prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Colorado e Utah: per ora nessun motivo per cambiare un programma di dicembre.",
+    "Montana e Wyoming: a inizio dicembre preferite i terreni alti.",
+    "Guardate la mappa SnowScope una settimana prima di partire: mostra la prossima tempesta e il limite della neve per quota."
+   ],
+   "captions": {
+    "snow": "La nostra tendenza di dicembre, montagna per montagna: la probabilità che dicembre porti più neve fresca di un dicembre abituale. Marrone = meno neve, bianco = nessun segnale chiaro (dal 45 al 55 %), blu = più neve. Grigio = niente neve a dicembre nella maggior parte degli anni o nessun dato.",
+    "temp": "La previsione stagionale del centro meteo europeo (51 corse, partite il 1° novembre): temperatura di dicembre rispetto a un dicembre abituale (1993-2016), in °C. Rosso = più caldo. Punti = almeno l'80 % delle corse concorda su più caldo o più freddo. La griglia è di circa 100 km: il quadro generale, non le singole valli.",
+    "precip": "Stessa previsione, precipitazioni di dicembre (pioggia e neve insieme) in % sopra o sotto un dicembre abituale. Verde = più umido, marrone = più secco. Punti = almeno due terzi delle corse concordano. Le zone molto secche sono lasciate vuote: una percentuale di quasi niente dice poco."
+   },
+   "method": "Metodo. Temperatura e precipitazioni: la previsione stagionale del centro meteo europeo (ECMWF SEAS5, 51 corse partite il 1° novembre 2026, anomalie rispetto alle sue riprevisioni 1993-2016, griglia di circa 100 km). Neve: per ogni cella di montagna di circa 10 km usiamo il nostro modello del passato (46 inverni, altezza della neve corretta per la quota) e il tempo di ogni dicembre dal 1981 al 2025 (ERA5); i dicembre passati con temperatura e precipitazioni simili a ciascuna corsa contano di più, e la loro neve dà le probabilità. Neve di oggi: la mappa della neve SnowScope (500 m). Una tendenza mensile sposta solo le probabilità: non prevede una tempesta né una data.",
+   "references": [
+    {
+     "text": "ECMWF SEAS5 seasonal forecasts, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/seasonal-postprocessed-single-levels"
+    },
+    {
+     "text": "ERA5 monthly averaged data, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means"
+    }
+   ]
+  },
+  "es": {
+   "title": "Montañas Rocosas en diciembre de 2026: menos nieve al norte, sin señal para Colorado y Utah",
+   "description": "Dónde diciembre de 2026 parece más o menos nevado de Montana a Nuevo México: la previsión estacional europea y nuestro mapa, con Colorado, Utah y las Rocosas del Norte.",
+   "lede": "La previsión estacional da a las Rocosas un diciembre algo más cálido con precipitación cercana a lo normal. Montaña a montaña, eso significa sin señal clara para casi todo Colorado y Utah, y probabilidades más bajas en Montana y Wyoming.",
+   "sections": [
+    {
+     "h": "Norte con menos nieve, sur sin decidir",
+     "p": [
+      "Nuestro mapa compara cada zona de montaña de unos 10 km con sus propios diciembres pasados. En el 79 % de la montaña de las Rocosas no hay señal clara. El 19 % se inclina a menos nieve, sobre todo al norte alrededor de Big Sky, la meseta de Yellowstone y las sierras cerca de Jackson. Solo el 1 % se inclina a más, en algunas sierras del sur de Utah.",
+      "La probabilidad de más nieve nueva que en un diciembre habitual va del 27 % al 62 % según la zona, con un valor central del 45 %."
+     ]
+    },
+    {
+     "h": "Qué dice la previsión europea",
+     "p": [
+      "Las 51 pasadas del sistema estacional del centro meteorológico europeo hacen diciembre 0,9 °C más cálido de lo habitual de media sobre las Rocosas, con el 71 % de las pasadas más cálido. La precipitación es casi normal: un 3 % por debajo de un diciembre habitual de 40 mm, y las pasadas están divididas, el 45 % más húmedo.",
+      "El calor aumenta hacia el norte: unos 1,7 °C en las Rocosas del Norte, donde el 82 % de las pasadas es más cálido y solo el 33 % más húmedo. En Colorado la señal es débil, 0,3 °C, y en Utah 1,0 °C."
+     ]
+    },
+    {
+     "h": "Colorado, Utah, Rocosas del Norte",
+     "p": [
+      "Colorado (Breckenridge, Vail, Winter Park, Beaver Creek, Steamboat, Copper): un diciembre habitual trae 51 cm de nieve nueva a media montaña; la tendencia es de 46 cm, con un 42 % de probabilidad de más de lo habitual. Nieve en el suelo el 31 de diciembre: lo habitual 84 cm, tendencia 80 cm. Diciembres pasados más parecidos: 1995, 1985 y 2003.",
+      "Wasatch en Utah (Park City, Deer Valley, Snowbird, Alta, Solitude): lo habitual 71 cm de nieve nueva, tendencia 70 cm, 47 % de probabilidad de más; 103 cm el 31 de diciembre, igual en lo habitual y en la tendencia. Rocosas del Norte (Big Sky, Jackson Hole, Whitefish, Sun Valley, Bridger Bowl): lo habitual 65 cm, tendencia 60 cm, solo un 37 % de probabilidad de más; 102 cm el 31 de diciembre, igual en lo habitual y en la tendencia."
+     ]
+    },
+    {
+     "h": "Qué hacer con esto",
+     "p": [
+      "Para Colorado y Utah diciembre sigue abierto: planifica como un año habitual. En Montana y Wyoming las probabilidades se inclinan un poco a menos nieve, así que el terreno alto y orientado al norte es la apuesta más segura al principio del mes.",
+      "Una tendencia mensual no ve tormentas concretas. Una sola gran tormenta del Pacífico puede llenar el mes: sigue la previsión a 7 días antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Colorado y Utah: por ahora no hay motivo para cambiar un plan de diciembre.",
+    "Montana y Wyoming: a principios de diciembre elige terreno alto.",
+    "Mira el mapa de SnowScope una semana antes de ir: muestra la próxima tormenta y la cota de nieve por altura."
+   ],
+   "captions": {
+    "snow": "Nuestra tendencia de diciembre, montaña a montaña: la probabilidad de que diciembre traiga más nieve nueva que un diciembre habitual. Marrón = menos nieve, blanco = sin señal clara (del 45 al 55 %), azul = más nieve. Gris = sin nieve en diciembre la mayoría de los años o sin datos.",
+    "temp": "La previsión estacional del centro meteorológico europeo (51 pasadas, iniciadas el 1 de noviembre): temperatura de diciembre comparada con un diciembre habitual (1993-2016), en °C. Rojo = más cálido. Puntos = al menos el 80 % de las pasadas coinciden en más cálido o más frío. La rejilla es de unos 100 km: el panorama general, no cada valle.",
+    "precip": "La misma previsión, precipitación de diciembre (lluvia y nieve juntas) en % por encima o por debajo de un diciembre habitual. Verde = más húmedo, marrón = más seco. Puntos = al menos dos tercios de las pasadas coinciden. Las zonas muy secas quedan en blanco: un porcentaje de casi nada dice poco."
+   },
+   "method": "Método. Temperatura y precipitación: la previsión estacional del centro meteorológico europeo (ECMWF SEAS5, 51 pasadas iniciadas el 1 de noviembre de 2026, anomalías frente a sus propias repredicciones 1993-2016, rejilla de unos 100 km). Nieve: para cada celda de montaña de unos 10 km tomamos nuestro modelo del pasado (46 inviernos, espesor corregido por altitud) y el tiempo de cada diciembre de 1981 a 2025 (ERA5); los diciembres pasados cuya temperatura y precipitación se parecen a cada pasada cuentan más, y su nieve da las probabilidades. Nieve de hoy: el mapa de nieve de SnowScope (500 m). Una tendencia mensual solo inclina las probabilidades: no prevé una tormenta ni una fecha.",
+   "references": [
+    {
+     "text": "ECMWF SEAS5 seasonal forecasts, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/seasonal-postprocessed-single-levels"
+    },
+    {
+     "text": "ERA5 monthly averaged data, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means"
+    }
+   ]
+  },
+  "ar": {
+   "title": "جبال الروكي فدجنبر 2026: التلج قل فالشمال، وما كاينش إشارة لكولورادو ويوتا",
+   "description": "فين دجنبر 2026 غيكون فيه التلج كثر ولا قل من مونتانا حتى لنيو مكسيكو: التوقع الموسمي الأوروبي والخريطة ديالنا، مع كولورادو ويوتا والروكي الشمالية.",
+   "lede": "التوقع الموسمي كيعطي للروكي دجنبر سخون شوية كثر والشتا قريبة من العادي. جبل بجبل، معناه ما كاينش إشارة واضحة لأغلب كولورادو ويوتا، وحظوظ قل فمونتانا ووايومنغ.",
+   "sections": [
+    {
+     "h": "الشمال فيه التلج قل، والجنوب ما تقرر والو",
+     "p": [
+      "الخريطة ديالنا كتقارن كل منطقة ديال الجبل ديال تقريبا 10 كيلومتر مع الدجنبرات ديالها اللي فاتو. ف 79% ديال الجبل ديال الروكي ما كاينش إشارة واضحة. 19% مايلة لتلج قل، غالبا فالشمال حدا Big Sky والهضبة ديال Yellowstone والجبال حدا Jackson. غير 1% مايلة لتلج كثر، فشي جبال فجنوب يوتا.",
+      "الحظ باش يكون تلج جديد كثر من دجنبر عادي كيتراوح بين 27% و62%، والقيمة الوسطى 45%."
+     ]
+    },
+    {
+     "h": "شنو كيقول التوقع الأوروبي",
+     "p": [
+      "51 حساب ديال النظام الموسمي ديال المركز الأوروبي كيخليو دجنبر سخون ب 0.9 درجة كثر من العادة فالمتوسط، و71% من الحسابات سخونين. الشتا قريبة من العادي: 3% تحت دجنبر عادي فيه 40 ملم، والحسابات مقسومين، 45% فيهم الشتا كثر.",
+      "السخونية كتزيد جيهة الشمال: تقريبا 1.7 درجة فالروكي الشمالية، فين 82% من الحسابات سخونين وغير 33% فيهم الشتا كثر. فكولورادو الإشارة ضعيفة، 0.3 درجة، وفيوتا 1.0 درجة."
+     ]
+    },
+    {
+     "h": "كولورادو، يوتا، الروكي الشمالية",
+     "p": [
+      "كولورادو (Breckenridge، Vail، Winter Park، Beaver Creek، Steamboat، Copper): دجنبر عادي كيجيب 51 سنتيمتر ديال التلج الجديد فالوسط؛ التوقع 46 سنتيمتر، والحظ باش يكون كثر من العادة 42%. التلج فالأرض نهار 31 دجنبر: العادي 84 سنتيمتر، التوقع 80 سنتيمتر. الدجنبرات اللي كيشبهو: 1995 و1985 و2003.",
+      "Wasatch فيوتا (Park City، Deer Valley، Snowbird، Alta، Solitude): العادي 71 سنتيمتر، التوقع 70 سنتيمتر، الحظ 47%؛ نهار 31 دجنبر 103 سنتيمتر، العادي والتوقع بحال بحال. الروكي الشمالية (Big Sky، Jackson Hole، Whitefish، Sun Valley، Bridger Bowl): العادي 65 سنتيمتر، التوقع 60 سنتيمتر، الحظ غير 37%؛ نهار 31 دجنبر 102 سنتيمتر، العادي والتوقع بحال بحال."
+     ]
+    },
+    {
+     "h": "شنو تدير بهادشي",
+     "p": [
+      "لكولورادو ويوتا، دجنبر باقي مفتوح: خطط بحال شي عام عادي. فمونتانا ووايومنغ الحظوظ مايلة شوية لتلج قل، داكشي علاش الجهات العالية والشمالية هي الاختيار الأضمن فبداية الشهر.",
+      "التوقع ديال شهر ما كيشوفش العواصف وحدة بوحدة. عاصفة كبيرة وحدة جاية من المحيط الهادي تقدر تعمر الشهر، داكشي علاش تبع التوقع ديال 7 أيام قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "كولورادو ويوتا: دابا ما كاين علاش تبدل البرنامج ديال دجنبر.",
+    "مونتانا ووايومنغ: فبداية دجنبر ختار الجهات العالية.",
+    "شوف الخريطة ديال SnowScope سيمانة قبل ما تمشي: كتبين العاصفة الجاية وحد التلج حسب العلو."
+   ],
+   "captions": {
+    "snow": "التوقع ديالنا لدجنبر، جبل بجبل: الحظ باش دجنبر يجيب تلج جديد كثر من دجنبر عادي. القهوي = تلج قل، الأبيض = ما كاينش إشارة واضحة (من 45 ل 55%)، الزرق = تلج كثر. الرمادي = ما كيطيحش التلج فدجنبر فأغلب السنين ولا ما كايناش المعطيات.",
+    "temp": "التوقع الموسمي ديال المركز الأوروبي ديال الطقس (51 حساب، بداو نهار 1 نونبر): الحرارة ديال دجنبر مقارنة مع دجنبر عادي (1993-2016)، بالدرجة. الحمر = سخون كثر. النقط = على الأقل 80% من الحسابات متافقين. الشبكة فيها تقريبا 100 كيلومتر: الصورة الكبيرة، ماشي كل واد.",
+    "precip": "نفس التوقع، الشتا والتلج ديال دجنبر بالنسبة المئوية فوق ولا تحت دجنبر عادي. الخضر = شتا كثر، القهوي = ناشف كثر. النقط = على الأقل جوج تلت ديال الحسابات متافقين. المناطق الناشفة بزاف خاوية: نسبة من حتى حاجة ما كتعني والو."
+   },
+   "method": "الطريقة. الحرارة والشتا: التوقع الموسمي ديال المركز الأوروبي ديال الطقس (ECMWF SEAS5، 51 حساب بداو نهار 1 نونبر 2026، مقارنة مع 1993-2016، شبكة ديال تقريبا 100 كيلومتر). التلج: لكل خانة ديال الجبل ديال تقريبا 10 كيلومتر كناخدو الموديل ديالنا ديال اللي فات (46 شتوة، العلو ديال التلج مصحح بالعلو) والطقس ديال كل دجنبر من 1981 حتى ل 2025 (ERA5)؛ الدجنبرات اللي كيشبهو لكل حساب كيحسبو كثر، والتلج ديالهم كيعطي الحظوظ. التلج ديال اليوم: الخريطة ديال SnowScope (500 متر). التوقع ديال شهر كيبدل غير الحظوظ: ما كيقدرش يتوقع عاصفة ولا تاريخ.",
+   "references": [
+    {
+     "text": "ECMWF SEAS5 seasonal forecasts, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/seasonal-postprocessed-single-levels"
+    },
+    {
+     "text": "ERA5 monthly averaged data, Copernicus Climate Change Service (C3S)",
+     "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means"
+    }
+   ]
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "hand (dec outlook v2)"
+  },
+  "fr": {
+   "writer": "hand (dec outlook v2)"
+  },
+  "de": {
+   "writer": "hand (dec outlook v2)"
+  },
+  "it": {
+   "writer": "hand (dec outlook v2)"
+  },
+  "es": {
+   "writer": "hand (dec outlook v2)"
+  },
+  "ar": {
+   "writer": "hand (dec outlook v2)"
+  }
+ },
+ "words_en": 425,
+ "indexable": true,
+ "main": {
+  "slug": null,
+  "name": "Rocky Mountains",
+  "lat": 41.5,
+  "lon": -109.0
+ },
+ "places": [],
+ "resort_links": [],
+ "table": null,
+ "bulletins": [],
+ "trip_day": "",
+ "map_link": "https://snowscope.app/",
+ "publish_utc": "2026-11-10T09:32:47Z"
+}
