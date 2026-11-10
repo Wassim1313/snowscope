@@ -1,0 +1,805 @@
+{
+ "id": "2026-11-10-pyrenees-coming",
+ "slug": "pyrenees-piau-engaly-snow-forecast-10-november-2026",
+ "date": "2026-11-10",
+ "published_utc": "2026-11-10T11:18:30Z",
+ "updated_utc": "2026-11-10T11:18:30Z",
+ "region": "PYRENEES",
+ "angle": "coming",
+ "score": 58.5,
+ "signature": "piau_engaly:40|cauterets:20|aramon_cerler:20",
+ "keyword": {
+  "family": "snow-forecast",
+  "entity": "piau_engaly",
+  "region": "PYRENEES",
+  "date": "2026-11-10"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "snow_forecast",
+  "region": "Pyrenees",
+  "date": "2026-11-10",
+  "weekday": "Tuesday",
+  "model_run": "2026-11-10",
+  "forecast_days": [
+   "2026-11-11",
+   "2026-11-12",
+   "2026-11-13"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 880,
+   "resorts_with_snow": 37,
+   "resorts_in_region": 53
+  },
+  "region_before": {
+   "date": "2026-11-08",
+   "snow_covered_area_km2": 2150,
+   "resorts_with_snow": 47
+  },
+  "region_forecast": {
+   "date": "2026-11-13",
+   "snow_covered_area_km2": 790,
+   "resorts_with_snow": 12
+  },
+  "question": "Where will new snow fall in the next days, and at which height?",
+  "resorts": [
+   {
+    "name": "Piau-Engaly",
+    "country": "France",
+    "top_m": 2527,
+    "base_m": 1762,
+    "depth_cm_upper_slopes_today": 1,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 37,
+    "slug": "piau_engaly",
+    "new_cm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 6,
+     "2026-11-12": 24,
+     "2026-11-13": 7
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1762,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 2144,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 4
+     },
+     "top": {
+      "elev_m": 2527,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 6
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 2900,
+      "max": 3320
+     },
+     "2026-11-11": {
+      "min": 2730,
+      "max": 3180
+     },
+     "2026-11-12": {
+      "min": 2500,
+      "max": 2940
+     },
+     "2026-11-13": {
+      "min": 2370,
+      "max": 2480
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Météo-France – Bulletin d'estimation du risque d'avalanche",
+    "past_winters": {
+     "height_m": 2144,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 16,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 2
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-11-07"
+    }
+   },
+   {
+    "name": "Cauterets Cirque du Lys",
+    "country": "France",
+    "top_m": 2420,
+    "base_m": 1725,
+    "depth_cm_upper_slopes_today": 20,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 21,
+    "slug": "cauterets",
+    "new_cm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 1,
+     "2026-11-12": 12,
+     "2026-11-13": 8
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1725,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 2072,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 2
+     },
+     "top": {
+      "elev_m": 2420,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 4
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 2990,
+      "max": 3350
+     },
+     "2026-11-11": {
+      "min": 2820,
+      "max": 3170
+     },
+     "2026-11-12": {
+      "min": 2430,
+      "max": 2880
+     },
+     "2026-11-13": {
+      "min": 2310,
+      "max": 2430
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Météo-France – Bulletin d'estimation du risque d'avalanche",
+    "past_winters": {
+     "height_m": 2072,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 18,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 2
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-05"
+    }
+   },
+   {
+    "name": "Aramón Cerler",
+    "country": "Spain",
+    "top_m": 2618,
+    "base_m": 1503,
+    "depth_cm_upper_slopes_today": 8,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 15,
+    "slug": "aramon_cerler",
+    "new_cm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 2,
+     "2026-11-12": 10,
+     "2026-11-13": 3
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1503,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 2060,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 2
+     },
+     "top": {
+      "elev_m": 2618,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 6
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 2910,
+      "max": 3220
+     },
+     "2026-11-11": {
+      "min": 2740,
+      "max": 3230
+     },
+     "2026-11-12": {
+      "min": 2680,
+      "max": 3060
+     },
+     "2026-11-13": {
+      "min": 2550,
+      "max": 2630
+     }
+    },
+    "past_winters": {
+     "height_m": 2060,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 16,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 2
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-07"
+    }
+   },
+   {
+    "name": "Boí Taüll",
+    "country": "Spain",
+    "top_m": 2747,
+    "base_m": 2039,
+    "depth_cm_upper_slopes_today": 8,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 14,
+    "slug": "boi_taull",
+    "new_cm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 2,
+     "2026-11-12": 8,
+     "2026-11-13": 4
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2039,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 2393,
+      "depth_cm_model": 5,
+      "new_cm_next_7_days": 4,
+      "depth_cm_measured": 5
+     },
+     "top": {
+      "elev_m": 2747,
+      "depth_cm_model": 5,
+      "new_cm_next_7_days": 7,
+      "depth_cm_measured": 5
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 3010,
+      "max": 3470
+     },
+     "2026-11-11": {
+      "min": 2860,
+      "max": 3250
+     },
+     "2026-11-12": {
+      "min": 2680,
+      "max": 3110
+     },
+     "2026-11-13": {
+      "min": 2520,
+      "max": 2640
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-07"
+    },
+    "nearest_station": {
+     "station": "Boí (2.537 m)",
+     "elev_m": 2537,
+     "depth_cm_measured": 0,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-10",
+     "km_away": 1.1
+    }
+   },
+   {
+    "name": "Gourette",
+    "country": "France",
+    "top_m": 2453,
+    "base_m": 1353,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 13,
+    "slug": "gourette",
+    "new_cm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 6,
+     "2026-11-13": 7
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "alt_sat",
+   "kind": "sat_map",
+   "file": "blog/media/2026/11/pyrenees-piau-engaly-snow-forecast-10-november-2026/alt_sat.webp",
+   "thumb": "blog/media/2026/11/pyrenees-piau-engaly-snow-forecast-10-november-2026/alt_sat_t.webp",
+   "bytes": 68090,
+   "snow_frac": 0.1453,
+   "weak": false
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Piau-Engaly</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"416\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">24</text><rect x=\"555\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"578\" y=\"49\" class=\"vl\">7</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Cauterets Cirque du </text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"35\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"513\" y=\"83\" class=\"vl\">12</text><rect x=\"555\" y=\"70\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"83\" class=\"vl\">8</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Aramón Cerler</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"117\" class=\"vl\">10</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">3</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Boí Taüll</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"501\" y=\"151\" class=\"vl\">8</text><rect x=\"555\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"570\" y=\"151\" class=\"vl\">4</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Gourette</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"496\" y=\"185\" class=\"vl\">6</text><rect x=\"555\" y=\"172\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"578\" y=\"185\" class=\"vl\">7</text></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Piau-Engaly</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"416\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">24</text><rect x=\"555\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"578\" y=\"49\" class=\"vl\">7</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Cauterets Cirque du </text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"35\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"513\" y=\"83\" class=\"vl\">12</text><rect x=\"555\" y=\"70\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"83\" class=\"vl\">8</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Aramón Cerler</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"117\" class=\"vl\">10</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">3</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Boí Taüll</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"501\" y=\"151\" class=\"vl\">8</text><rect x=\"555\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"570\" y=\"151\" class=\"vl\">4</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Gourette</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"496\" y=\"185\" class=\"vl\">6</text><rect x=\"555\" y=\"172\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"578\" y=\"185\" class=\"vl\">7</text></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Piau-Engaly</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"416\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">24</text><rect x=\"555\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"578\" y=\"49\" class=\"vl\">7</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Cauterets Cirque du </text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"35\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"513\" y=\"83\" class=\"vl\">12</text><rect x=\"555\" y=\"70\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"83\" class=\"vl\">8</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Aramón Cerler</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"117\" class=\"vl\">10</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">3</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Boí Taüll</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"501\" y=\"151\" class=\"vl\">8</text><rect x=\"555\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"570\" y=\"151\" class=\"vl\">4</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Gourette</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"496\" y=\"185\" class=\"vl\">6</text><rect x=\"555\" y=\"172\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"578\" y=\"185\" class=\"vl\">7</text></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Piau-Engaly</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"416\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">24</text><rect x=\"555\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"578\" y=\"49\" class=\"vl\">7</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Cauterets Cirque du </text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"35\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"513\" y=\"83\" class=\"vl\">12</text><rect x=\"555\" y=\"70\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"83\" class=\"vl\">8</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Aramón Cerler</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"117\" class=\"vl\">10</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">3</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Boí Taüll</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"501\" y=\"151\" class=\"vl\">8</text><rect x=\"555\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"570\" y=\"151\" class=\"vl\">4</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Gourette</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"496\" y=\"185\" class=\"vl\">6</text><rect x=\"555\" y=\"172\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"578\" y=\"185\" class=\"vl\">7</text></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Piau-Engaly</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"416\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">24</text><rect x=\"555\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"578\" y=\"49\" class=\"vl\">7</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Cauterets Cirque du </text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"35\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"513\" y=\"83\" class=\"vl\">12</text><rect x=\"555\" y=\"70\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"83\" class=\"vl\">8</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Aramón Cerler</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"117\" class=\"vl\">10</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">3</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Boí Taüll</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"501\" y=\"151\" class=\"vl\">8</text><rect x=\"555\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"570\" y=\"151\" class=\"vl\">4</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Gourette</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"496\" y=\"185\" class=\"vl\">6</text><rect x=\"555\" y=\"172\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"578\" y=\"185\" class=\"vl\">7</text></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Piau-Engaly</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"416\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">24</text><rect x=\"555\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"578\" y=\"49\" class=\"vl\">7</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Cauterets Cirque du </text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"35\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"513\" y=\"83\" class=\"vl\">12</text><rect x=\"555\" y=\"70\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"83\" class=\"vl\">8</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Aramón Cerler</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"117\" class=\"vl\">10</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">3</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Boí Taüll</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"404\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"501\" y=\"151\" class=\"vl\">8</text><rect x=\"555\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"570\" y=\"151\" class=\"vl\">4</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Gourette</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"496\" y=\"185\" class=\"vl\">6</text><rect x=\"555\" y=\"172\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"578\" y=\"185\" class=\"vl\">7</text></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  },
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/pyrenees-piau-engaly-snow-forecast-10-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/pyrenees-piau-engaly-snow-forecast-10-november-2026/map_t.webp",
+   "bytes": 60778,
+   "snow_frac": 0.044,
+   "weak": true
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "37 cm by 13 November: where the snow forecast is best in the Pyrenees",
+   "description": "Up to 37 cm: that is what our forecast gives Piau-Engaly by 13 November. Until 13 November, our forecast gives 37 cm at Piau-Engaly, 21 cm at …",
+   "lede": "Up to 37 cm: that is what our forecast gives Piau-Engaly by 13 November. Until 13 November, our forecast gives 37 cm at Piau-Engaly, 21 cm at Cauterets Cirque du Lys and 15 cm at Aramón Cerler. Keep in mind: resort values come from our snow model and describe an area, while stations measure one point.",
+   "sections": [
+    {
+     "h": "Snow cover today",
+     "p": [
+      "Of these resorts, Cauterets Cirque du Lys has the most snow on its upper slopes today, about 20 cm; then come Aramón Cerler 8 cm and Boí Taüll 8 cm.",
+      "37 of 53 resorts in the Pyrenees have snow on their upper slopes today, and our model counts 880 km² of snow-covered ground."
+     ]
+    },
+    {
+     "h": "Snow line and slopes",
+     "p": [
+      "At Piau-Engaly, the freezing level reaches 2,900 m to 3,320 m on 10 November, above the top of the resort (2,527 m): rain or wet snow is possible on every slope that day.",
+      "At Cauterets Cirque du Lys, the freezing level reaches 2,990 m to 3,350 m on 10 November, above the top of the resort (2,420 m): rain or wet snow is possible on every slope that day.",
+      "At Aramón Cerler, the freezing level reaches 2,740 m to 3,230 m on 11 November, above the top of the resort (2,618 m): rain or wet snow is possible on every slope that day."
+     ]
+    },
+    {
+     "h": "Forecast",
+     "p": [
+      "Until 13 November, our forecast gives 14 cm at Boí Taüll and 13 cm at Gourette.",
+      "The snow cover shrank from 2,150 km² on 8 November to 880 km² today, and our forecast gives 790 km² on 13 November."
+     ]
+    },
+    {
+     "h": "Safety first",
+     "p": [
+      "The official avalanche danger level for the Piau-Engaly area today is 1 on the 5-level scale (Météo-France – Bulletin d'estimation du risque d'avalanche).",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Forecasts a few days ahead can change: look at the map again the day before you travel.",
+    "Where the freezing level goes above the resort, plan for wet snow and use the highest lifts.",
+    "Fresh snow is best in the first hours after it stops: go early, before the sun and the crowds.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Piau-Engaly gets fresh snow."
+   ],
+   "captions": {
+    "alt_sat": "Snow depth in the Pyrenees on 10 November 2026 (SnowScope snow model): Piau-Engaly, Cauterets Cirque du Lys, Aramón Cerler, Boí Taüll, Gourette.",
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast).",
+    "map": "Snow depth in the Pyrenees on 10 November 2026 (SnowScope snow model): Piau-Engaly, Cauterets Cirque du Lys, Aramón Cerler, Boí Taüll, Gourette."
+   }
+  },
+  "fr": {
+   "title": "37 cm d'ici le 13 novembre : où les prévisions neige sont les meilleures dans les Pyrénées",
+   "description": "Jusqu'à 37 cm : c'est ce que notre prévision donne à Piau-Engaly d'ici le 13 novembre. D'ici le 13 novembre, notre prévision donne 37 cm à …",
+   "lede": "Jusqu'à 37 cm : c'est ce que notre prévision donne à Piau-Engaly d'ici le 13 novembre. D'ici le 13 novembre, notre prévision donne 37 cm à Piau-Engaly, 21 cm à Cauterets Cirque du Lys et 15 cm à Aramón Cerler. Les chiffres des stations de ski sont des estimations du modèle pour le haut du domaine ; ceux des stations de mesure sont mesurés en un point, à la date indiquée.",
+   "sections": [
+    {
+     "h": "L'enneigement du jour",
+     "p": [
+      "Parmi ces stations, Cauterets Cirque du Lys a le plus de neige sur le haut du domaine aujourd'hui, environ 20 cm ; suivent Aramón Cerler 8 cm et Boí Taüll 8 cm.",
+      "37 stations sur 53 dans les Pyrénées ont de la neige sur le haut du domaine aujourd'hui, et notre modèle compte 880 km² de surface enneigée."
+     ]
+    },
+    {
+     "h": "Limite pluie-neige et pentes",
+     "p": [
+      "À Piau-Engaly, l'isotherme 0 °C monte entre 2 900 m et 3 320 m le 10 novembre, au-dessus du sommet de la station (2 527 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là.",
+      "À Cauterets Cirque du Lys, l'isotherme 0 °C monte entre 2 990 m et 3 350 m le 10 novembre, au-dessus du sommet de la station (2 420 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là.",
+      "À Aramón Cerler, l'isotherme 0 °C monte entre 2 740 m et 3 230 m le 11 novembre, au-dessus du sommet de la station (2 618 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là."
+     ]
+    },
+    {
+     "h": "Prévisions",
+     "p": [
+      "D'ici le 13 novembre, notre prévision donne 14 cm à Boí Taüll et 13 cm à Gourette.",
+      "La surface enneigée est passée de 2 150 km² le 8 novembre à 880 km² aujourd'hui, et notre prévision donne 790 km² le 13 novembre."
+     ]
+    },
+    {
+     "h": "La sécurité d'abord",
+     "p": [
+      "Le niveau de risque d'avalanche officiel pour le secteur de Piau-Engaly est aujourd'hui de 1 sur l'échelle à 5 niveaux (Météo-France – Bulletin d'estimation du risque d'avalanche).",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ.",
+    "Là où l'isotherme 0 °C passe au-dessus de la station, prévoyez une neige mouillée et skiez sur les remontées les plus hautes.",
+    "La neige fraîche est la meilleure dans les premières heures : partez tôt, avant le soleil et la foule.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Piau-Engaly reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "alt_sat": "Hauteur de neige dans les Pyrénées le 10 novembre 2026 (modèle de neige SnowScope) : Piau-Engaly, Cauterets Cirque du Lys, Aramón Cerler, Boí Taüll, Gourette.",
+    "bars": "Neige fraîche par jour dans les stations en tête (jours passés : modèle ; barres claires : prévision).",
+    "map": "Hauteur de neige dans les Pyrénées le 10 novembre 2026 (modèle de neige SnowScope) : Piau-Engaly, Cauterets Cirque du Lys, Aramón Cerler, Boí Taüll, Gourette."
+   }
+  },
+  "de": {
+   "title": "37 cm bis zum 13. November: wo die Schneeprognose in den Pyrenäen am besten ist",
+   "description": "Bis zu 37 cm: So viel gibt unsere Prognose Piau-Engaly bis zum 13. November. Bis zum 13. November ergibt unsere Prognose 37 cm in Piau-Engaly, 21 cm …",
+   "lede": "Bis zu 37 cm: So viel gibt unsere Prognose Piau-Engaly bis zum 13. November. Bis zum 13. November ergibt unsere Prognose 37 cm in Piau-Engaly, 21 cm in Cauterets Cirque du Lys und 15 cm in Aramón Cerler. Die Werte der Skigebiete sind Modellschätzungen für die oberen Hänge; Messstationen messen an einem Punkt, am angegebenen Tag.",
+   "sections": [
+    {
+     "h": "Die Schneedecke heute",
+     "p": [
+      "Von diesen Skigebieten hat Cauterets Cirque du Lys heute den meisten Schnee in den oberen Hängen, etwa 20 cm; danach folgen Aramón Cerler 8 cm und Boí Taüll 8 cm.",
+      "37 von 53 Skigebieten in den Pyrenäen haben heute Schnee in den oberen Hängen, und unser Modell zählt 880 km² Schneefläche."
+     ]
+    },
+    {
+     "h": "Schneefallgrenze und Hänge",
+     "p": [
+      "In Piau-Engaly liegt die Nullgradgrenze am 10. November zwischen 2.900 m und 3.320 m, über dem höchsten Punkt des Skigebiets (2.527 m): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich.",
+      "In Cauterets Cirque du Lys liegt die Nullgradgrenze am 10. November zwischen 2.990 m und 3.350 m, über dem höchsten Punkt des Skigebiets (2.420 m): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich.",
+      "In Aramón Cerler liegt die Nullgradgrenze am 11. November zwischen 2.740 m und 3.230 m, über dem höchsten Punkt des Skigebiets (2.618 m): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich."
+     ]
+    },
+    {
+     "h": "Prognose",
+     "p": [
+      "Bis zum 13. November ergibt unsere Prognose 14 cm in Boí Taüll und 13 cm in Gourette.",
+      "Die Schneefläche schrumpfte von 2.150 km² am 8. November auf heute 880 km², und unsere Prognose ergibt 790 km² am 13. November."
+     ]
+    },
+    {
+     "h": "Sicherheit zuerst",
+     "p": [
+      "Die offizielle Lawinengefahrenstufe für das Gebiet um Piau-Engaly ist heute 1 auf der fünfstufigen Skala (Météo-France – Bulletin d'estimation du risque d'avalanche).",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte.",
+    "Wo die Nullgradgrenze über das Skigebiet steigt, rechne mit nassem Schnee und fahr an den höchsten Liften.",
+    "Neuschnee ist in den ersten Stunden am besten: Starte früh, vor der Sonne und dem Andrang.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Piau-Engaly Neuschnee bekommt."
+   ],
+   "captions": {
+    "alt_sat": "Schneehöhe in den Pyrenäen am 10. November 2026 (SnowScope-Schneemodell): Piau-Engaly, Cauterets Cirque du Lys, Aramón Cerler, Boí Taüll, Gourette.",
+    "bars": "Neuschnee pro Tag in den führenden Skigebieten (vergangene Tage: Modell; helle Balken: Prognose).",
+    "map": "Schneehöhe in den Pyrenäen am 10. November 2026 (SnowScope-Schneemodell): Piau-Engaly, Cauterets Cirque du Lys, Aramón Cerler, Boí Taüll, Gourette."
+   }
+  },
+  "it": {
+   "title": "37 cm entro il 13 novembre: dove le previsioni neve sono migliori sui Pirenei",
+   "description": "Fino a 37 cm: è quanto la nostra previsione dà a Piau-Engaly entro il 13 novembre. Fino al 13 novembre la nostra previsione indica 37 cm a …",
+   "lede": "Fino a 37 cm: è quanto la nostra previsione dà a Piau-Engaly entro il 13 novembre. Fino al 13 novembre la nostra previsione indica 37 cm a Piau-Engaly, 21 cm a Cauterets Cirque du Lys e 15 cm a Aramón Cerler. I valori delle località sono stime del modello per i pendii superiori; le stazioni misurano in un punto, alla data indicata.",
+   "sections": [
+    {
+     "h": "L'innevamento di oggi",
+     "p": [
+      "Tra queste località, Cauterets Cirque du Lys ha oggi più neve sui pendii superiori, circa 20 cm; seguono Aramón Cerler 8 cm e Boí Taüll 8 cm.",
+      "37 località su 53 sui Pirenei hanno oggi neve sui pendii superiori, e il nostro modello conta 880 km² di superficie innevata."
+     ]
+    },
+    {
+     "h": "Quota neve e pendii",
+     "p": [
+      "A Piau-Engaly lo zero termico sale tra 2.900 m e 3.320 m il 10 novembre, sopra la quota massima della località (2.527 m): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii.",
+      "A Cauterets Cirque du Lys lo zero termico sale tra 2.990 m e 3.350 m il 10 novembre, sopra la quota massima della località (2.420 m): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii.",
+      "A Aramón Cerler lo zero termico sale tra 2.740 m e 3.230 m il 11 novembre, sopra la quota massima della località (2.618 m): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii."
+     ]
+    },
+    {
+     "h": "Previsioni",
+     "p": [
+      "Fino al 13 novembre la nostra previsione indica 14 cm a Boí Taüll e 13 cm a Gourette.",
+      "La superficie innevata è passata da 2.150 km² il 8 novembre a 880 km² oggi, e la nostra previsione indica 790 km² il 13 novembre."
+     ]
+    },
+    {
+     "h": "Prima la sicurezza",
+     "p": [
+      "Il grado di pericolo valanghe ufficiale per la zona di Piau-Engaly oggi è 1 sulla scala a 5 gradi (Météo-France – Bulletin d'estimation du risque d'avalanche).",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire.",
+    "Dove lo zero termico sale sopra la località, aspettati neve bagnata e usa gli impianti più alti.",
+    "La neve fresca è migliore nelle prime ore: parti presto, prima del sole e della folla.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Piau-Engaly riceve neve fresca."
+   ],
+   "captions": {
+    "alt_sat": "Altezza neve sui Pirenei il 10 novembre 2026 (modello neve SnowScope): Piau-Engaly, Cauterets Cirque du Lys, Aramón Cerler, Boí Taüll, Gourette.",
+    "bars": "Neve fresca al giorno nelle località in testa (giorni passati: modello; barre chiare: previsione).",
+    "map": "Altezza neve sui Pirenei il 10 novembre 2026 (modello neve SnowScope): Piau-Engaly, Cauterets Cirque du Lys, Aramón Cerler, Boí Taüll, Gourette."
+   }
+  },
+  "es": {
+   "title": "37 cm hasta el 13 de noviembre: dónde es mejor la previsión de nieve en los Pirineos",
+   "description": "Hasta 37 cm: es lo que nuestra previsión da a Piau-Engaly hasta el 13 de noviembre. Hasta el 13 de noviembre, nuestra previsión da 37 cm en …",
+   "lede": "Hasta 37 cm: es lo que nuestra previsión da a Piau-Engaly hasta el 13 de noviembre. Hasta el 13 de noviembre, nuestra previsión da 37 cm en Piau-Engaly, 21 cm en Cauterets Cirque du Lys y 15 cm en Aramón Cerler. Las cifras de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida miden en un punto, en la fecha indicada.",
+   "sections": [
+    {
+     "h": "La nieve que hay hoy",
+     "p": [
+      "De estas estaciones, Cauterets Cirque du Lys tiene hoy más nieve en las pistas altas, unos 20 cm; después vienen Aramón Cerler 8 cm y Boí Taüll 8 cm.",
+      "37 de 53 estaciones en los Pirineos tienen hoy nieve en las pistas altas, y nuestro modelo cuenta 880 km² de superficie nevada."
+     ]
+    },
+    {
+     "h": "Cota de nieve y laderas",
+     "p": [
+      "En Piau-Engaly, la cota de congelación llega a 2900 m-3320 m el 10 de noviembre, por encima de la cota alta de la estación (2527 m): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
+      "En Cauterets Cirque du Lys, la cota de congelación llega a 2990 m-3350 m el 10 de noviembre, por encima de la cota alta de la estación (2420 m): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
+      "En Aramón Cerler, la cota de congelación llega a 2740 m-3230 m el 11 de noviembre, por encima de la cota alta de la estación (2618 m): ese día puede haber lluvia o nieve húmeda en todas las pistas."
+     ]
+    },
+    {
+     "h": "Previsión",
+     "p": [
+      "Hasta el 13 de noviembre, nuestra previsión da 14 cm en Boí Taüll y 13 cm en Gourette.",
+      "La superficie nevada pasó de 2150 km² el 8 de noviembre a 880 km² hoy, y nuestra previsión da 790 km² el 13 de noviembre."
+     ]
+    },
+    {
+     "h": "La seguridad primero",
+     "p": [
+      "El nivel oficial de peligro de aludes para la zona de Piau-Engaly es hoy 1 en la escala de 5 niveles (Météo-France – Bulletin d'estimation du risque d'avalanche).",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar.",
+    "Donde la cota de congelación suba por encima de la estación, cuenta con nieve húmeda y usa los remontes más altos.",
+    "La nieve nueva es mejor en las primeras horas: sal temprano, antes del sol y de la gente.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Piau-Engaly recibe nieve nueva."
+   ],
+   "captions": {
+    "alt_sat": "Espesor de nieve en los Pirineos el 10 de noviembre 2026 (modelo de nieve de SnowScope): Piau-Engaly, Cauterets Cirque du Lys, Aramón Cerler, Boí Taüll, Gourette.",
+    "bars": "Nieve nueva por día en las estaciones líderes (días pasados: modelo; barras claras: previsión).",
+    "map": "Espesor de nieve en los Pirineos el 10 de noviembre 2026 (modelo de nieve de SnowScope): Piau-Engaly, Cauterets Cirque du Lys, Aramón Cerler, Boí Taüll, Gourette."
+   }
+  },
+  "ar": {
+   "title": "37 سم حتى ل 13 نونبر: فين التوقعات ديال التلج أحسن فجبال البرانس",
+   "description": "حتى ل 37 سم: هادشي اللي كتعطي التوقعات ديالنا ل Piau-Engaly حتى ل 13 نونبر. حتى ل 13 نونبر، التوقعات ديالنا كتعطي 37 سم ف Piau-Engaly، 21 سم ف …",
+   "lede": "حتى ل 37 سم: هادشي اللي كتعطي التوقعات ديالنا ل Piau-Engaly حتى ل 13 نونبر. حتى ل 13 نونبر، التوقعات ديالنا كتعطي 37 سم ف Piau-Engaly، 21 سم ف Cauterets Cirque du Lys و 15 سم ف Aramón Cerler. الأرقام ديال المحطات ديال التزلج تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس كتقيس فنقطة وحدة، فالتاريخ المكتوب.",
+   "sections": [
+    {
+     "h": "حالة التلج اليوم",
+     "p": [
+      "من هاد المحطات، Cauterets Cirque du Lys فيها أكثر تلج فالجهة الفوقانية اليوم، تقريبا 20 سم؛ من بعدها Aramón Cerler 8 سم و Boí Taüll 8 سم.",
+      "37 محطة من 53 فجبال البرانس فيهم التلج فالجهة الفوقانية اليوم، والموديل ديالنا كيحسب 880 كم² ديال الأرض اللي فيها التلج."
+     ]
+    },
+    {
+     "h": "الحد ديال التلج والجهات",
+     "p": [
+      "ف Piau-Engaly، علو الجليد غادي يكون بين 2900 م و 3320 م نهار 10 نونبر، فوق أعلى نقطة فالمحطة (2527 م): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات.",
+      "ف Cauterets Cirque du Lys، علو الجليد غادي يكون بين 2990 م و 3350 م نهار 10 نونبر، فوق أعلى نقطة فالمحطة (2420 م): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات.",
+      "ف Aramón Cerler، علو الجليد غادي يكون بين 2740 م و 3230 م نهار 11 نونبر، فوق أعلى نقطة فالمحطة (2618 م): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات."
+     ]
+    },
+    {
+     "h": "التوقعات",
+     "p": [
+      "حتى ل 13 نونبر، التوقعات ديالنا كتعطي 14 سم ف Boí Taüll و 13 سم ف Gourette.",
+      "المساحة اللي فيها التلج دازت من 2150 كم² نهار 8 نونبر ل 880 كم² اليوم، والتوقعات ديالنا كتعطي 790 كم² نهار 13 نونبر."
+     ]
+    },
+    {
+     "h": "السلامة قبل كلشي",
+     "p": [
+      "المستوى الرسمي ديال خطر الانهيارات فالمنطقة ديال Piau-Engaly اليوم هو 1 من 5 (Météo-France – Bulletin d'estimation du risque d'avalanche).",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر.",
+    "فين علو الجليد طالع فوق المحطة، توقع تلج مبلول وطلع للتيليسييج اللي فالفوق.",
+    "التلج الجديد كيكون مزيان فالساعات الأولى: سير بكري، قبل الشمس والناس.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Piau-Engaly يجيها تلج جديد."
+   ],
+   "captions": {
+    "alt_sat": "العلو ديال التلج فجبال البرانس نهار 10 نونبر 2026 (الموديل ديال SnowScope): Piau-Engaly, Cauterets Cirque du Lys, Aramón Cerler, Boí Taüll, Gourette.",
+    "bars": "التلج الجديد فكل نهار فالمحطات اللولين (الأيام اللي فاتو من الموديل، والخطوط الفاتحة = التوقعات).",
+    "map": "العلو ديال التلج فجبال البرانس نهار 10 نونبر 2026 (الموديل ديال SnowScope): Piau-Engaly, Cauterets Cirque du Lys, Aramón Cerler, Boí Taüll, Gourette."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  },
+  "fr": {
+   "writer": "template"
+  },
+  "de": {
+   "writer": "template"
+  },
+  "it": {
+   "writer": "template"
+  },
+  "es": {
+   "writer": "template"
+  },
+  "ar": {
+   "writer": "template"
+  }
+ },
+ "words_en": 291,
+ "indexable": true,
+ "main": {
+  "slug": "piau_engaly",
+  "name": "Piau-Engaly",
+  "lat": 42.7771,
+  "lon": 0.1571
+ },
+ "places": [
+  {
+   "name": "Piau-Engaly",
+   "lat": 42.7771,
+   "lon": 0.1571
+  },
+  {
+   "name": "Cauterets Cirque du Lys",
+   "lat": 42.8826,
+   "lon": -0.1635
+  },
+  {
+   "name": "Aramón Cerler",
+   "lat": 42.5603,
+   "lon": 0.5558
+  },
+  {
+   "name": "Boí Taüll",
+   "lat": 42.4725,
+   "lon": 0.8743
+  },
+  {
+   "name": "Gourette",
+   "lat": 42.9461,
+   "lon": -0.3364
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "piau_engaly",
+   "name": "Piau-Engaly"
+  },
+  {
+   "slug": "cauterets",
+   "name": "Cauterets Cirque du Lys"
+  },
+  {
+   "slug": "aramon_cerler",
+   "name": "Aramón Cerler"
+  },
+  {
+   "slug": "boi_taull",
+   "name": "Boí Taüll"
+  },
+  {
+   "slug": "gourette",
+   "name": "Gourette"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "piau_engaly",
+    "name": "Piau-Engaly",
+    "depth": 1,
+    "new72": 0,
+    "next": 37,
+    "top_m": 2527
+   },
+   {
+    "slug": "cauterets",
+    "name": "Cauterets Cirque du Lys",
+    "depth": 20,
+    "new72": 0,
+    "next": 21,
+    "top_m": 2420
+   },
+   {
+    "slug": "aramon_cerler",
+    "name": "Aramón Cerler",
+    "depth": 8,
+    "new72": 0,
+    "next": 15,
+    "top_m": 2618
+   },
+   {
+    "slug": "boi_taull",
+    "name": "Boí Taüll",
+    "depth": 8,
+    "new72": 0,
+    "next": 14,
+    "top_m": 2747
+   },
+   {
+    "slug": "gourette",
+    "name": "Gourette",
+    "depth": 0,
+    "new72": 0,
+    "next": 13,
+    "top_m": 2453
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Météo-France – Bulletin d'estimation du risque d'avalanche",
+   "url": "https://meteofrance.com/meteo-montagne"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@42.777,0.157,9.0",
+ "seconds": 0.0,
+ "facts_used": 20,
+ "similarity": {
+  "max": 0.227,
+  "with": "alps-snow-forecast-7-november-2026"
+ },
+ "publish_utc": "2026-11-10T11:18:30Z"
+}
