@@ -1,0 +1,720 @@
+{
+ "id": "2026-11-10-us_ne-coming",
+ "slug": "us-northeast-north-county-school-snow-forecast-10-november-2026",
+ "date": "2026-11-10",
+ "published_utc": "2026-11-10T17:24:00Z",
+ "updated_utc": "2026-11-10T17:24:00Z",
+ "region": "US_NE",
+ "angle": "coming",
+ "score": 52.5,
+ "signature": "north_county_school:20|stratton_mountain_resort:20|whiteface_mountain_ski_center:20",
+ "keyword": {
+  "family": "snow-forecast",
+  "entity": "north_county_school",
+  "region": "US_NE",
+  "date": "2026-11-10"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "snow_forecast",
+  "region": "US Northeast",
+  "date": "2026-11-10",
+  "weekday": "Tuesday",
+  "model_run": "2026-11-10",
+  "forecast_days": [
+   "2026-11-11",
+   "2026-11-12",
+   "2026-11-13"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 110,
+   "resorts_with_snow": 1,
+   "resorts_in_region": 112
+  },
+  "region_before": {
+   "date": "2026-11-08",
+   "snow_covered_area_km2": 1750,
+   "resorts_with_snow": 5
+  },
+  "region_forecast": {
+   "date": "2026-11-13",
+   "snow_covered_area_km2": 32810,
+   "resorts_with_snow": 62
+  },
+  "question": "Where will new snow fall in the next days, and at which height?",
+  "resorts": [
+   {
+    "name": "North County School",
+    "country": "United States",
+    "top_m": null,
+    "base_m": null,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 25,
+    "slug": "north_county_school",
+    "new_cm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 1,
+     "2026-11-10": 0,
+     "2026-11-11": 1,
+     "2026-11-12": 13,
+     "2026-11-13": 11
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-10-31"
+    }
+   },
+   {
+    "name": "Stratton",
+    "country": "United States",
+    "top_m": 1183,
+    "base_m": 607,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 25,
+    "slug": "stratton_mountain_resort",
+    "new_cm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 1,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 7,
+     "2026-11-13": 18
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 607,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 8
+     },
+     "mid": {
+      "elev_m": 895,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 9
+     },
+     "top": {
+      "elev_m": 1183,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 10
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 1070,
+      "max": 1820
+     },
+     "2026-11-11": {
+      "min": 1000,
+      "max": 1220
+     },
+     "2026-11-12": {
+      "min": 950,
+      "max": 1840
+     }
+    },
+    "past_winters": {
+     "height_m": 895,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 32,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 0
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-11-04"
+    }
+   },
+   {
+    "name": "Whiteface Mountain",
+    "country": "United States",
+    "top_m": 1333,
+    "base_m": 372,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 6,
+    "new_cm_forecast_next_days": 24,
+    "slug": "whiteface_mountain_ski_center",
+    "new_cm_by_day": {
+     "2026-11-08": 1,
+     "2026-11-09": 3,
+     "2026-11-10": 2,
+     "2026-11-11": 1,
+     "2026-11-12": 11,
+     "2026-11-13": 12
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 372,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 4
+     },
+     "mid": {
+      "elev_m": 852,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 13
+     },
+     "top": {
+      "elev_m": 1333,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 14
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 840,
+      "max": 1620
+     },
+     "2026-11-11": {
+      "min": 750,
+      "max": 960
+     },
+     "2026-11-12": {
+      "min": 700,
+      "max": 1330
+     }
+    },
+    "past_winters": {
+     "height_m": 852,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 19,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 1
+    }
+   },
+   {
+    "name": "Gore Mountain",
+    "country": "United States",
+    "top_m": 1092,
+    "base_m": 321,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 23,
+    "slug": "gore_mountain",
+    "new_cm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 9,
+     "2026-11-13": 14
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 321,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 4
+     },
+     "mid": {
+      "elev_m": 706,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 8
+     },
+     "top": {
+      "elev_m": 1092,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 10
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 940,
+      "max": 1800
+     },
+     "2026-11-11": {
+      "min": 900,
+      "max": 1120
+     },
+     "2026-11-12": {
+      "min": 600,
+      "max": 1280
+     }
+    },
+    "past_winters": {
+     "height_m": 706,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 27,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 0
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-10-31"
+    }
+   },
+   {
+    "name": "Killington Resort",
+    "country": "United States",
+    "top_m": 1262,
+    "base_m": 354,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 21,
+    "slug": "killington",
+    "new_cm_by_day": {
+     "2026-11-08": 0,
+     "2026-11-09": 1,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 6,
+     "2026-11-13": 15
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">North County School</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"49\" class=\"vl\">1</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"49\" class=\"vl\">1</text><rect x=\"475\" y=\"36\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"529\" y=\"49\" class=\"vl\">13</text><rect x=\"555\" y=\"36\" width=\"43\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"601\" y=\"49\" class=\"vl\">11</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Stratton</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"83\" class=\"vl\">1</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"27\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"505\" y=\"83\" class=\"vl\">7</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whiteface Mountain</text><rect x=\"155\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"162\" y=\"117\" class=\"vl\">1</text><rect x=\"235\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"250\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"43\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"521\" y=\"117\" class=\"vl\">11</text><rect x=\"555\" y=\"104\" width=\"47\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"605\" y=\"117\" class=\"vl\">12</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Gore Mountain</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"35\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"513\" y=\"151\" class=\"vl\">9</text><rect x=\"555\" y=\"138\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"612\" y=\"151\" class=\"vl\">14</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Killington Resort</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"185\" class=\"vl\">1</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"501\" y=\"185\" class=\"vl\">6</text><rect x=\"555\" y=\"172\" width=\"58\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"610\" y=\"185\" text-anchor=\"end\" class=\"vl in\">15</text></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">North County School</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"49\" class=\"vl\">1</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"49\" class=\"vl\">1</text><rect x=\"475\" y=\"36\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"529\" y=\"49\" class=\"vl\">13</text><rect x=\"555\" y=\"36\" width=\"43\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"601\" y=\"49\" class=\"vl\">11</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Stratton</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"83\" class=\"vl\">1</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"27\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"505\" y=\"83\" class=\"vl\">7</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whiteface Mountain</text><rect x=\"155\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"162\" y=\"117\" class=\"vl\">1</text><rect x=\"235\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"250\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"43\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"521\" y=\"117\" class=\"vl\">11</text><rect x=\"555\" y=\"104\" width=\"47\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"605\" y=\"117\" class=\"vl\">12</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Gore Mountain</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"35\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"513\" y=\"151\" class=\"vl\">9</text><rect x=\"555\" y=\"138\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"612\" y=\"151\" class=\"vl\">14</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Killington Resort</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"185\" class=\"vl\">1</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"501\" y=\"185\" class=\"vl\">6</text><rect x=\"555\" y=\"172\" width=\"58\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"610\" y=\"185\" text-anchor=\"end\" class=\"vl in\">15</text></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">North County School</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"49\" class=\"vl\">1</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"49\" class=\"vl\">1</text><rect x=\"475\" y=\"36\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"529\" y=\"49\" class=\"vl\">13</text><rect x=\"555\" y=\"36\" width=\"43\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"601\" y=\"49\" class=\"vl\">11</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Stratton</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"83\" class=\"vl\">1</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"27\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"505\" y=\"83\" class=\"vl\">7</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whiteface Mountain</text><rect x=\"155\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"162\" y=\"117\" class=\"vl\">1</text><rect x=\"235\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"250\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"43\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"521\" y=\"117\" class=\"vl\">11</text><rect x=\"555\" y=\"104\" width=\"47\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"605\" y=\"117\" class=\"vl\">12</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Gore Mountain</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"35\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"513\" y=\"151\" class=\"vl\">9</text><rect x=\"555\" y=\"138\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"612\" y=\"151\" class=\"vl\">14</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Killington Resort</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"185\" class=\"vl\">1</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"501\" y=\"185\" class=\"vl\">6</text><rect x=\"555\" y=\"172\" width=\"58\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"610\" y=\"185\" text-anchor=\"end\" class=\"vl in\">15</text></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">North County School</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"49\" class=\"vl\">1</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"49\" class=\"vl\">1</text><rect x=\"475\" y=\"36\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"529\" y=\"49\" class=\"vl\">13</text><rect x=\"555\" y=\"36\" width=\"43\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"601\" y=\"49\" class=\"vl\">11</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Stratton</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"83\" class=\"vl\">1</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"27\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"505\" y=\"83\" class=\"vl\">7</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whiteface Mountain</text><rect x=\"155\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"162\" y=\"117\" class=\"vl\">1</text><rect x=\"235\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"250\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"43\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"521\" y=\"117\" class=\"vl\">11</text><rect x=\"555\" y=\"104\" width=\"47\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"605\" y=\"117\" class=\"vl\">12</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Gore Mountain</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"35\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"513\" y=\"151\" class=\"vl\">9</text><rect x=\"555\" y=\"138\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"612\" y=\"151\" class=\"vl\">14</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Killington Resort</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"185\" class=\"vl\">1</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"501\" y=\"185\" class=\"vl\">6</text><rect x=\"555\" y=\"172\" width=\"58\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"610\" y=\"185\" text-anchor=\"end\" class=\"vl in\">15</text></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">North County School</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"49\" class=\"vl\">1</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"49\" class=\"vl\">1</text><rect x=\"475\" y=\"36\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"529\" y=\"49\" class=\"vl\">13</text><rect x=\"555\" y=\"36\" width=\"43\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"601\" y=\"49\" class=\"vl\">11</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Stratton</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"83\" class=\"vl\">1</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"27\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"505\" y=\"83\" class=\"vl\">7</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whiteface Mountain</text><rect x=\"155\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"162\" y=\"117\" class=\"vl\">1</text><rect x=\"235\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"250\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"43\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"521\" y=\"117\" class=\"vl\">11</text><rect x=\"555\" y=\"104\" width=\"47\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"605\" y=\"117\" class=\"vl\">12</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Gore Mountain</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"35\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"513\" y=\"151\" class=\"vl\">9</text><rect x=\"555\" y=\"138\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"612\" y=\"151\" class=\"vl\">14</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Killington Resort</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"185\" class=\"vl\">1</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"501\" y=\"185\" class=\"vl\">6</text><rect x=\"555\" y=\"172\" width=\"58\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"610\" y=\"185\" text-anchor=\"end\" class=\"vl in\">15</text></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">North County School</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"49\" class=\"vl\">1</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"49\" class=\"vl\">1</text><rect x=\"475\" y=\"36\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"529\" y=\"49\" class=\"vl\">13</text><rect x=\"555\" y=\"36\" width=\"43\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"601\" y=\"49\" class=\"vl\">11</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Stratton</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"83\" class=\"vl\">1</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"27\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"505\" y=\"83\" class=\"vl\">7</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whiteface Mountain</text><rect x=\"155\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"162\" y=\"117\" class=\"vl\">1</text><rect x=\"235\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"250\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"43\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"521\" y=\"117\" class=\"vl\">11</text><rect x=\"555\" y=\"104\" width=\"47\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"605\" y=\"117\" class=\"vl\">12</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Gore Mountain</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"35\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"513\" y=\"151\" class=\"vl\">9</text><rect x=\"555\" y=\"138\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"612\" y=\"151\" class=\"vl\">14</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Killington Resort</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"185\" class=\"vl\">1</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"501\" y=\"185\" class=\"vl\">6</text><rect x=\"555\" y=\"172\" width=\"58\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"610\" y=\"185\" text-anchor=\"end\" class=\"vl in\">15</text></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  },
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-northeast-north-county-school-snow-forecast-10-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-northeast-north-county-school-snow-forecast-10-november-2026/map_t.webp",
+   "bytes": 33696,
+   "snow_frac": 0.0007,
+   "weak": true
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Snow forecast in the US Northeast compared: North County School ahead with 10 in by 13 November",
+   "description": "The snow has pulled back since 8 November, from 676 sq mi (1,750 km²) to 42 sq mi (110 km²) today; for 13 November our forecast gives 12,668 sq mi …",
+   "lede": "The snow has pulled back since 8 November, from 676 sq mi (1,750 km²) to 42 sq mi (110 km²) today; for 13 November our forecast gives 12,668 sq mi (32,810 km²). The snow is not done yet: we expect 10 in (25 cm) at North County School, 10 in (25 cm) at Stratton and 9 in (24 cm) at Whiteface Mountain by 13 November. Our resort numbers are estimates for the upper slopes. The station numbers are real measurements, but only at one point and on the date shown. On the ground, the first thing we check is the shade: snow lasts where the sun cannot reach it.",
+   "sections": [
+    {
+     "h": "Snow on the slopes today",
+     "p": [
+      "Across the region, 1 of 112 resorts in the US Northeast have snow up high today, and our model finds 42 sq mi (110 km²) of white ground."
+     ]
+    },
+    {
+     "h": "Top, middle, bottom",
+     "p": [
+      "On 12 November the freezing level at Stratton climbs to 3,117 ft (950 m) to 6,037 ft (1,840 m), higher than the top of the lifts (3,881 ft / 1,183 m): expect rain or wet snow on every slope.",
+      "Warm air at Whiteface Mountain on 10 November: the freezing level goes from 2,756 ft (840 m) to 5,315 ft (1,620 m), above the resort's top (4,373 ft / 1,333 m), so rain or wet snow can reach every slope."
+     ]
+    },
+    {
+     "h": "What to expect next",
+     "p": [
+      "And more is coming: by 13 November, the forecast brings 9 in (23 cm) at Gore Mountain and 8 in (21 cm) at Killington Resort."
+     ]
+    },
+    {
+     "h": "Safety and avalanche level",
+     "p": [
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Forecasts a few days ahead can change: look at the map again the day before you travel.",
+    "If the freezing level climbs above the lifts, the snow will be wet and heavy: head for the highest chairs.",
+    "Be on the first lift after a snowfall: by midday, sun and skiers have already changed the snow.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when North County School gets fresh snow."
+   ],
+   "captions": {
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast).",
+    "map": "Snow depth in the US Northeast on 10 November 2026 (SnowScope snow model): North County School, Stratton, Whiteface Mountain, Gore Mountain, Killington Resort."
+   }
+  },
+  "fr": {
+   "title": "Prévisions neige dans le Nord-Est américain comparées : North County School devant avec 10 in d'ici le 13 novembre",
+   "description": "La surface blanche a changé : 676 sq mi (1 750 km²) le 8 novembre, 42 sq mi (110 km²) aujourd'hui, et 12 668 sq mi (32 810 km²) attendus le 13 …",
+   "lede": "La surface blanche a changé : 676 sq mi (1 750 km²) le 8 novembre, 42 sq mi (110 km²) aujourd'hui, et 12 668 sq mi (32 810 km²) attendus le 13 novembre. Entre aujourd'hui et le 13 novembre, nous attendons 10 in (25 cm) à North County School, 10 in (25 cm) à Stratton et 9 in (24 cm) à Whiteface Mountain. Nos chiffres des stations de ski sont des estimations pour le haut du domaine. Ceux des stations de mesure sont de vraies mesures, mais en un seul point et à la date indiquée. Sur le terrain, la première chose que nous regardons, c'est l'ombre : la neige tient là où le soleil n'arrive pas.",
+   "sections": [
+    {
+     "h": "La neige sur les pentes aujourd'hui",
+     "p": [
+      "Dans la région, 1 stations sur 112 dans le Nord-Est américain ont de la neige en altitude aujourd'hui, et notre modèle trouve 42 sq mi (110 km²) de sol blanc."
+     ]
+    },
+    {
+     "h": "En haut, au milieu, en bas",
+     "p": [
+      "Le 12 novembre, l'isotherme 0 °C à Stratton grimpe entre 3 117 ft (950 m) et 6 037 ft (1 840 m), plus haut que le sommet des remontées (3 881 ft / 1 183 m) : attendez-vous à de la pluie ou de la neige mouillée sur toutes les pentes.",
+      "Air doux à Whiteface Mountain le 10 novembre : l'isotherme 0 °C va de 2 756 ft (840 m) à 5 315 ft (1 620 m), au-dessus du sommet de la station (4 373 ft / 1 333 m), donc pluie ou neige mouillée possibles sur toutes les pentes."
+     ]
+    },
+    {
+     "h": "À quoi s'attendre ensuite",
+     "p": [
+      "D'ici le 13 novembre, la prévision apporte 9 in (23 cm) à Gore Mountain et 8 in (21 cm) à Killington Resort."
+     ]
+    },
+    {
+     "h": "Sécurité et risque d'avalanche",
+     "p": [
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ.",
+    "Si l'isotherme 0 °C monte au-dessus des remontées, la neige sera mouillée et lourde : filez vers les télésièges les plus hauts.",
+    "Prenez la première remontée après une chute de neige : à midi, le soleil et les skieurs ont déjà changé la neige.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand North County School reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "bars": "Neige fraîche par jour dans les stations en tête (jours passés : modèle ; barres claires : prévision).",
+    "map": "Hauteur de neige dans le Nord-Est américain le 10 novembre 2026 (modèle de neige SnowScope) : North County School, Stratton, Whiteface Mountain, Gore Mountain, Killington Resort."
+   }
+  },
+  "de": {
+   "title": "Schneeprognose im Nordosten der USA im Vergleich: North County School vorn mit 10 in bis zum 13. November",
+   "description": "Der Schnee hat sich seit dem 8. November zurückgezogen, von 676 sq mi (1.750 km²) auf heute 42 sq mi (110 km²); für den 13. November ergibt unsere …",
+   "lede": "Der Schnee hat sich seit dem 8. November zurückgezogen, von 676 sq mi (1.750 km²) auf heute 42 sq mi (110 km²); für den 13. November ergibt unsere Prognose 12.668 sq mi (32.810 km²). Von jetzt bis zum 13. November erwarten wir 10 in (25 cm) in North County School, 10 in (25 cm) in Stratton und 9 in (24 cm) in Whiteface Mountain. Unsere Skigebietswerte sind Schätzungen für die oberen Hänge. Die Stationswerte sind echte Messungen, aber nur an einem Punkt und am angegebenen Tag. Im Gelände prüfen wir zuerst den Schatten: Schnee hält, wo die Sonne nicht hinkommt.",
+   "sections": [
+    {
+     "h": "Schnee auf den Pisten heute",
+     "p": [
+      "In der ganzen Region haben heute 1 von 112 Skigebieten im Nordosten der USA oben Schnee, und unser Modell findet 42 sq mi (110 km²) weißen Boden."
+     ]
+    },
+    {
+     "h": "Oben, Mitte, unten",
+     "p": [
+      "Am 12. November steigt die Nullgradgrenze in Stratton auf 3.117 ft (950 m) bis 6.037 ft (1.840 m), höher als die oberste Liftstation (3.881 ft (1.183 m)): Rechne auf allen Hängen mit Regen oder nassem Schnee.",
+      "Warme Luft in Whiteface Mountain am 10. November: Die Nullgradgrenze geht von 2.756 ft (840 m) bis 5.315 ft (1.620 m), über den höchsten Punkt (4.373 ft (1.333 m)), also kann Regen oder nasser Schnee jeden Hang erreichen."
+     ]
+    },
+    {
+     "h": "Was als Nächstes zu erwarten ist",
+     "p": [
+      "Mit Blick auf den 13. November bringt die Prognose 9 in (23 cm) in Gore Mountain und 8 in (21 cm) in Killington Resort."
+     ]
+    },
+    {
+     "h": "Sicherheit und Lawinengefahr",
+     "p": [
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte.",
+    "Steigt die Nullgradgrenze über die Lifte, wird der Schnee nass und schwer: Geh an die höchsten Sessellifte.",
+    "Sei nach einem Schneefall am ersten Lift: Bis Mittag haben Sonne und Skifahrer den Schnee schon verändert.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann North County School Neuschnee bekommt."
+   ],
+   "captions": {
+    "bars": "Neuschnee pro Tag in den führenden Skigebieten (vergangene Tage: Modell; helle Balken: Prognose).",
+    "map": "Schneehöhe im Nordosten der USA am 10. November 2026 (SnowScope-Schneemodell): North County School, Stratton, Whiteface Mountain, Gore Mountain, Killington Resort."
+   }
+  },
+  "it": {
+   "title": "Previsioni neve nel Nord-est degli USA a confronto: North County School davanti con 10 in entro il 13 novembre",
+   "description": "Il terreno bianco è cambiato: 676 sq mi (1.750 km²) il 8 novembre, 42 sq mi (110 km²) oggi e 12.668 sq mi (32.810 km²) attesi il 13 novembre. Da oggi …",
+   "lede": "Il terreno bianco è cambiato: 676 sq mi (1.750 km²) il 8 novembre, 42 sq mi (110 km²) oggi e 12.668 sq mi (32.810 km²) attesi il 13 novembre. Da oggi al 13 novembre ci aspettiamo 10 in (25 cm) a North County School, 10 in (25 cm) a Stratton e 9 in (24 cm) a Whiteface Mountain. I nostri valori delle località sono stime per i pendii superiori. Quelli delle stazioni sono misure vere, ma solo in un punto e alla data indicata. Sul terreno la prima cosa che controlliamo è l'ombra: la neve dura dove il sole non arriva.",
+   "sections": [
+    {
+     "h": "Neve sulle piste oggi",
+     "p": [
+      "In tutta la regione oggi 1 località su 112 nel Nord-est degli USA hanno neve in alto, e il nostro modello trova 42 sq mi (110 km²) di terreno bianco."
+     ]
+    },
+    {
+     "h": "Alto, medio, basso",
+     "p": [
+      "Il 12 novembre lo zero termico a Stratton sale tra 3.117 ft (950 m) e 6.037 ft (1.840 m), più in alto della cima degli impianti (3.881 ft (1.183 m)): aspettati pioggia o neve bagnata su ogni pendio.",
+      "Aria mite a Whiteface Mountain il 10 novembre: lo zero termico va da 2.756 ft (840 m) a 5.315 ft (1.620 m), sopra la quota massima (4.373 ft (1.333 m)), quindi pioggia o neve bagnata possono arrivare su ogni pendio."
+     ]
+    },
+    {
+     "h": "Cosa aspettarsi",
+     "p": [
+      "Guardando al 13 novembre, la previsione porta 9 in (23 cm) a Gore Mountain e 8 in (21 cm) a Killington Resort."
+     ]
+    },
+    {
+     "h": "Sicurezza e pericolo valanghe",
+     "p": [
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire.",
+    "Se lo zero termico sale sopra gli impianti, la neve sarà bagnata e pesante: punta alle seggiovie più alte.",
+    "Dopo una nevicata sii sul primo impianto: a mezzogiorno sole e sciatori hanno già cambiato la neve.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando North County School riceve neve fresca."
+   ],
+   "captions": {
+    "bars": "Neve fresca al giorno nelle località in testa (giorni passati: modello; barre chiare: previsione).",
+    "map": "Altezza neve nel Nord-est degli USA il 10 novembre 2026 (modello neve SnowScope): North County School, Stratton, Whiteface Mountain, Gore Mountain, Killington Resort."
+   }
+  },
+  "es": {
+   "title": "Previsión de nieve en el noreste de EE. UU. comparada: North County School delante con 10 in hasta el 13 de noviembre",
+   "description": "La superficie blanca ha cambiado: 676 sq mi (1750 km²) el 8 de noviembre, 42 sq mi (110 km²) hoy y 12.668 sq mi (32.810 km²) esperados el 13 de …",
+   "lede": "La superficie blanca ha cambiado: 676 sq mi (1750 km²) el 8 de noviembre, 42 sq mi (110 km²) hoy y 12.668 sq mi (32.810 km²) esperados el 13 de noviembre. Entre hoy y el 13 de noviembre esperamos 10 in (25 cm) en North County School, 10 in (25 cm) en Stratton y 9 in (24 cm) en Whiteface Mountain. Nuestras cifras de las estaciones de esquí son estimaciones para las pistas altas. Las de las estaciones de medida son medidas reales, pero de un solo punto y en la fecha indicada. Sobre el terreno, lo primero que miramos es la sombra: la nieve aguanta donde no llega el sol.",
+   "sections": [
+    {
+     "h": "La nieve en las pistas hoy",
+     "p": [
+      "En la región, 1 de 112 estaciones en el noreste de EE. UU. tienen nieve arriba hoy, y nuestro modelo encuentra 42 sq mi (110 km²) de suelo blanco."
+     ]
+    },
+    {
+     "h": "Arriba, en medio, abajo",
+     "p": [
+      "El 12 de noviembre la cota de congelación en Stratton sube a 3117 ft (950 m)-6037 ft (1840 m), más alta que la cima de los remontes (3881 ft (1183 m)): cuenta con lluvia o nieve húmeda en todas las pistas.",
+      "Aire templado en Whiteface Mountain el 10 de noviembre: la cota de congelación va de 2756 ft (840 m)-5315 ft (1620 m), por encima de la cota alta (4373 ft (1333 m)), así que la lluvia o la nieve húmeda pueden llegar a todas las pistas."
+     ]
+    },
+    {
+     "h": "Qué esperar después",
+     "p": [
+      "De aquí al 13 de noviembre, la previsión trae 9 in (23 cm) en Gore Mountain y 8 in (21 cm) en Killington Resort."
+     ]
+    },
+    {
+     "h": "Seguridad y peligro de aludes",
+     "p": [
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar.",
+    "Si la cota de congelación sube por encima de los remontes, la nieve estará húmeda y pesada: ve a los telesillas más altos.",
+    "Coge el primer remonte después de una nevada: a mediodía, el sol y los esquiadores ya han cambiado la nieve.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo North County School recibe nieve nueva."
+   ],
+   "captions": {
+    "bars": "Nieve nueva por día en las estaciones líderes (días pasados: modelo; barras claras: previsión).",
+    "map": "Espesor de nieve en el noreste de EE. UU. el 10 de noviembre 2026 (modelo de nieve de SnowScope): North County School, Stratton, Whiteface Mountain, Gore Mountain, Killington Resort."
+   }
+  },
+  "ar": {
+   "title": "توقعات التلج فشمال شرق ميريكان مقارنة: North County School قدام ب 10 إنش حتى ل 13 نونبر",
+   "description": "الأرض البيضا تبدلت: 676 ميل² (1750 كم²) نهار 8 نونبر، 42 ميل² (110 كم²) اليوم، و 12668 ميل² (32810 كم²) متوقعة نهار 13 نونبر. من دابا حتى ل 13 نونبر …",
+   "lede": "الأرض البيضا تبدلت: 676 ميل² (1750 كم²) نهار 8 نونبر، 42 ميل² (110 كم²) اليوم، و 12668 ميل² (32810 كم²) متوقعة نهار 13 نونبر. من دابا حتى ل 13 نونبر كنتسناو 10 إنش (25 سم) ف North County School، 10 إنش (25 سم) ف Stratton و 9 إنش (24 سم) ف Whiteface Mountain. الأرقام ديال المحطات ديال التزلج تقديرات للجهة الفوقانية. الأرقام ديال محطات القياس قياسات حقيقية، ولكن غير فنقطة وحدة وفالتاريخ المكتوب. فالأرض، أول حاجة كنشوفوها هي الظل: التلج كيبقى فين ماكتوصلش الشمس.",
+   "sections": [
+    {
+     "h": "التلج فالبيستات اليوم",
+     "p": [
+      "فالمنطقة كاملة، 1 محطة من 112 فشمال شرق ميريكان فيهم التلج فالعلو اليوم، والموديل ديالنا كيلقى 42 ميل² (110 كم²) ديال الأرض البيضا."
+     ]
+    },
+    {
+     "h": "الفوق، الوسط، التحت",
+     "p": [
+      "نهار 12 نونبر علو الجليد ف Stratton طالع بين 3117 قدم (950 م) و 6037 قدم (1840 م)، فوق آخر تيليسييج (3881 قدم (1183 م)): توقع الشتا ولا تلج مبلول فكاع البيستات.",
+      "هوا سخون ف Whiteface Mountain نهار 10 نونبر: علو الجليد من 2756 قدم (840 م) حتى ل 5315 قدم (1620 م)، فوق القمة ديال المحطة (4373 قدم (1333 م))، يعني الشتا ولا التلج المبلول يقدر يوصل لكاع البيستات."
+     ]
+    },
+    {
+     "h": "شنو تتسنى من بعد",
+     "p": [
+      "إلا شفنا حتى ل 13 نونبر، التوقعات كتجيب 9 إنش (23 سم) ف Gore Mountain و 8 إنش (21 سم) ف Killington Resort."
+     ]
+    },
+    {
+     "h": "السلامة وخطر الانهيارات",
+     "p": [
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر.",
+    "إلا طلع علو الجليد فوق التيليسييجات، التلج غادي يكون مبلول وتقيل: سير للتيليسييجات اللي فالفوق.",
+    "كون فأول تيليسييج من بعد التلج: مع الطناش، الشمس والناس كيكونو بدلو التلج.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى North County School يجيها تلج جديد."
+   ],
+   "captions": {
+    "bars": "التلج الجديد فكل نهار فالمحطات اللولين (الأيام اللي فاتو من الموديل، والخطوط الفاتحة = التوقعات).",
+    "map": "العلو ديال التلج فشمال شرق ميريكان نهار 10 نونبر 2026 (الموديل ديال SnowScope): North County School, Stratton, Whiteface Mountain, Gore Mountain, Killington Resort."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "de": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "it": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "es": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  }
+ },
+ "words_en": 258,
+ "indexable": true,
+ "main": {
+  "slug": "north_county_school",
+  "name": "North County School",
+  "lat": 44.223,
+  "lon": -73.8936
+ },
+ "places": [
+  {
+   "name": "North County School",
+   "lat": 44.223,
+   "lon": -73.8936
+  },
+  {
+   "name": "Stratton",
+   "lat": 43.1067,
+   "lon": -72.9091
+  },
+  {
+   "name": "Whiteface Mountain",
+   "lat": 44.3739,
+   "lon": -73.8779
+  },
+  {
+   "name": "Gore Mountain",
+   "lat": 43.6815,
+   "lon": -74.0164
+  },
+  {
+   "name": "Killington Resort",
+   "lat": 43.6125,
+   "lon": -72.7948
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "north_county_school",
+   "name": "North County School"
+  },
+  {
+   "slug": "stratton_mountain_resort",
+   "name": "Stratton"
+  },
+  {
+   "slug": "whiteface_mountain_ski_center",
+   "name": "Whiteface Mountain"
+  },
+  {
+   "slug": "gore_mountain",
+   "name": "Gore Mountain"
+  },
+  {
+   "slug": "killington",
+   "name": "Killington Resort"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "north_county_school",
+    "name": "North County School",
+    "depth": 0,
+    "new72": 1,
+    "next": 25,
+    "top_m": null
+   },
+   {
+    "slug": "stratton_mountain_resort",
+    "name": "Stratton",
+    "depth": 0,
+    "new72": 1,
+    "next": 25,
+    "top_m": 1183
+   },
+   {
+    "slug": "whiteface_mountain_ski_center",
+    "name": "Whiteface Mountain",
+    "depth": 0,
+    "new72": 6,
+    "next": 24,
+    "top_m": 1333
+   },
+   {
+    "slug": "gore_mountain",
+    "name": "Gore Mountain",
+    "depth": 0,
+    "new72": 0,
+    "next": 23,
+    "top_m": 1092
+   },
+   {
+    "slug": "killington",
+    "name": "Killington Resort",
+    "depth": 0,
+    "new72": 1,
+    "next": 21,
+    "top_m": 1262
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Mount Washington Avalanche Center",
+   "url": "https://www.mountwashingtonavalanchecenter.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@44.223,-73.894,9.0",
+ "seconds": 0.0,
+ "facts_used": 25,
+ "similarity": {
+  "max": 0.302,
+  "with": "us-northeast-snow-forecast-6-november-2026"
+ },
+ "publish_utc": "2026-11-10T17:24:00Z",
+ "overlap": {
+  "before": 56.9,
+  "after": 11.7,
+  "with": "us-northeast-snow-forecast-6-november-2026",
+  "tries": 1
+ },
+ "voice": "field"
+}
