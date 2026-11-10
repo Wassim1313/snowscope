@@ -1,0 +1,706 @@
+{
+ "id": "2026-11-10-us_ne-isotherm",
+ "slug": "us-northeast-freezing-level-snow-line-10-november-2026",
+ "date": "2026-11-10",
+ "published_utc": "2026-11-10T20:02:14Z",
+ "updated_utc": "2026-11-10T20:02:14Z",
+ "region": "US_NE",
+ "angle": "isotherm",
+ "score": 48,
+ "signature": "whiteface_mountain_ski_center:1600|stratton_mountain_resort:1800|okemo_mountain:1700",
+ "keyword": {
+  "family": "snow-line",
+  "entity": "us_ne",
+  "region": "US_NE",
+  "date": "2026-11-10"
+ },
+ "tags": [
+  "snow-line",
+  "forecast",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "freezing_level_analysis",
+  "region": "US Northeast",
+  "date": "2026-11-10",
+  "weekday": "Tuesday",
+  "model_run": "2026-11-10",
+  "forecast_days": [
+   "2026-11-11",
+   "2026-11-12",
+   "2026-11-13"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 110,
+   "resorts_with_snow": 1,
+   "resorts_in_region": 112
+  },
+  "region_before": {
+   "date": "2026-11-08",
+   "snow_covered_area_km2": 1750,
+   "resorts_with_snow": 5
+  },
+  "region_forecast": {
+   "date": "2026-11-13",
+   "snow_covered_area_km2": 32810,
+   "resorts_with_snow": 62
+  },
+  "question": "How high is the 0 °C level in the next days, where does rain turn to snow, and is rain falling on the snowpack?",
+  "snow_line_below_freezing_level_m": 300,
+  "region_freezing_level_m_by_day": {
+   "2026-11-10": {
+    "lowest": 840,
+    "highest": 1820
+   },
+   "2026-11-11": {
+    "lowest": 750,
+    "highest": 1220
+   },
+   "2026-11-12": {
+    "lowest": 590,
+    "highest": 1840
+   }
+  },
+  "forecast_points": [
+   {
+    "place": "Tug Hill",
+    "elev_m": 520,
+    "precip_mm_total_next_days": 15,
+    "precip_mm_by_day": {
+     "2026-11-10": 0,
+     "2026-11-11": 1,
+     "2026-11-12": 12,
+     "2026-11-13": 2,
+     "2026-11-14": 0,
+     "2026-11-15": 0
+    },
+    "freezing_level_m_when_wet": 720,
+    "snow_line_m_when_wet": 420,
+    "share_of_precip_as_snow_at_this_height_pct": 90
+   },
+   {
+    "place": "Stowe",
+    "elev_m": 1339,
+    "precip_mm_total_next_days": 16,
+    "precip_mm_by_day": {
+     "2026-11-10": 4,
+     "2026-11-11": 7,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 1,
+     "2026-11-15": 4
+    },
+    "freezing_level_m_when_wet": 940,
+    "snow_line_m_when_wet": 640,
+    "share_of_precip_as_snow_at_this_height_pct": 100
+   },
+   {
+    "place": "Buffalo",
+    "elev_m": 180,
+    "precip_mm_total_next_days": 9,
+    "precip_mm_by_day": {
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 8,
+     "2026-11-13": 0,
+     "2026-11-14": 0,
+     "2026-11-15": 0
+    },
+    "freezing_level_m_when_wet": 1170,
+    "snow_line_m_when_wet": 870,
+    "share_of_precip_as_snow_at_this_height_pct": 0
+   }
+  ],
+  "notes": [
+   "0 °C level = height where the air temperature crosses 0 °C (forecast, daily lowest and highest)",
+   "snow line = about 300 m below the 0 °C level, at the warmest hours of the day",
+   "rain-on-snow risk = snow on the slopes and a snow line above mid-mountain on a day with precipitation"
+  ],
+  "resorts": [
+   {
+    "name": "Whiteface Mountain",
+    "country": "United States",
+    "top_m": 1333,
+    "base_m": 372,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 6,
+    "new_cm_forecast_next_days": 24,
+    "slug": "whiteface_mountain_ski_center",
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 840,
+      "max": 1620
+     },
+     "2026-11-11": {
+      "min": 750,
+      "max": 960
+     },
+     "2026-11-12": {
+      "min": 700,
+      "max": 1330
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-10": 1300,
+     "2026-11-11": 700,
+     "2026-11-12": 1000
+    },
+    "days_snow_line_above_top": [],
+    "days_snow_line_above_base": [
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Stratton",
+    "country": "United States",
+    "top_m": 1183,
+    "base_m": 607,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 25,
+    "slug": "stratton_mountain_resort",
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 1070,
+      "max": 1820
+     },
+     "2026-11-11": {
+      "min": 1000,
+      "max": 1220
+     },
+     "2026-11-12": {
+      "min": 950,
+      "max": 1840
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-10": 1500,
+     "2026-11-11": 900,
+     "2026-11-12": 1500
+    },
+    "days_snow_line_above_top": [
+     "2026-11-10",
+     "2026-11-12"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Okemo Mountain",
+    "country": "United States",
+    "top_m": 1012,
+    "base_m": 353,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 20,
+    "slug": "okemo_mountain",
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 910,
+      "max": 1710
+     },
+     "2026-11-11": {
+      "min": 880,
+      "max": 1200
+     },
+     "2026-11-12": {
+      "min": 590,
+      "max": 1380
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-10": 1400,
+     "2026-11-11": 900,
+     "2026-11-12": 1100
+    },
+    "days_snow_line_above_top": [
+     "2026-11-10",
+     "2026-11-12"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Magic Mountain",
+    "country": "United States",
+    "top_m": 869,
+    "base_m": 420,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 20,
+    "slug": "magic_mountain_ski_area",
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 1000,
+      "max": 1780
+     },
+     "2026-11-11": {
+      "min": 930,
+      "max": 1220
+     },
+     "2026-11-12": {
+      "min": 600,
+      "max": 1360
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-10": 1500,
+     "2026-11-11": 900,
+     "2026-11-12": 1100
+    },
+    "days_snow_line_above_top": [
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-10",
+     "2026-11-11",
+     "2026-11-12"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-northeast-freezing-level-snow-line-10-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-northeast-freezing-level-snow-line-10-november-2026/map_t.webp",
+   "bytes": 32554,
+   "snow_frac": 0.0008,
+   "weak": true
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "US Northeast freezing level: 0 °C from 1,936 ft to 6,037 ft, snow line up to 4,921 ft (10 November)",
+   "description": "The 0 °C level in the US Northeast, next days: 1,936 ft (590 m) to 6,037 ft (1,840 m). Warmest hours: snow line about 984 ft (300 m) lower, up to …",
+   "lede": "The 0 °C level in the US Northeast, next days: 1,936 ft (590 m) to 6,037 ft (1,840 m). Warmest hours: snow line about 984 ft (300 m) lower, up to 4,921 ft (1,500 m) at Stratton on Tuesday 10 November. The model is right more often than a hunch, and less often than we would like.",
+   "sections": [
+    {
+     "h": "The 0 °C level, daily",
+     "p": [
+      "The 0 °C level at the resorts below, from the coldest to the warmest hour of each day: Tuesday 10 November: from 2,756 ft (840 m) to 5,971 ft (1,820 m). Wednesday 11 November: from 2,461 ft (750 m) to 4,003 ft (1,220 m). Thursday 12 November: from 1,936 ft (590 m) to 6,037 ft (1,840 m)."
+     ]
+    },
+    {
+     "h": "Snow line by resort",
+     "p": [
+      "Whiteface Mountain (base 1,220 ft (372 m), top 4,373 ft (1,333 m)): snow line about 4,265 ft (1,300 m) on 10 November, mid-mountain. Snow above, rain or wet snow below.",
+      "Stratton (base 1,991 ft (607 m), top 3,881 ft (1,183 m)): snow line about 4,921 ft (1,500 m) on 10 November, above the top. The whole mountain is in the rain-or-wet-snow zone if precipitation falls.",
+      "Okemo Mountain, base 1,158 ft (353 m), top 3,320 ft (1,012 m): snow line near 4,593 ft (1,400 m) on 10 November, over the top of the lifts; rain or wet snow everywhere if anything falls.",
+      "Magic Mountain (base 1,378 ft (420 m), top 2,851 ft (869 m)): snow line about 4,921 ft (1,500 m) on 10 November, above the top. The whole mountain is in the rain-or-wet-snow zone if precipitation falls."
+     ]
+    },
+    {
+     "h": "Rain-on-snow risk",
+     "p": [
+      "Rain-on-snow risk in the next days: none that we can see. The snow line stays low enough on the wet days.",
+      "Tug Hill (1,706 ft (520 m)): 15 mm forecast, snow line near 1,378 ft (420 m) while it falls.",
+      "The forecast gives Stowe (4,393 ft (1,339 m)) 16 mm of precipitation, with the snow line near 2,100 ft (640 m) during the wet hours."
+     ]
+    },
+    {
+     "h": "The 0 °C level and the snow line, briefly",
+     "p": [
+      "The short version: colder up high, melting starts at the 0 °C level, rain only some 984 ft (300 m) lower, because melting takes time. That gap is the snow line. In dry air, evaporation adds extra cooling and the line can drop further."
+     ]
+    }
+   ],
+   "advice": [
+    "Warm days: highest lifts, north-facing slopes, mornings. Then lunch.",
+    "Forecast 0 °C levels move by several hundred metres; recheck the map the day before.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website."
+   ],
+   "captions": {
+    "map": "Snow depth in the US Northeast on 10 November (SnowScope snow model) with the resorts of this freezing-level analysis and their top heights."
+   }
+  },
+  "fr": {
+   "title": "Isotherme 0 °C dans le Nord-Est américain : de 1 936 ft à 6 037 ft, limite pluie-neige jusqu'à 4 921 ft (10 novembre)",
+   "description": "L'isotherme 0 °C dans le Nord-Est américain, prochains jours : 1 936 ft (590 m) à 6 037 ft (1 840 m). Heures les plus douces : limite pluie-neige …",
+   "lede": "L'isotherme 0 °C dans le Nord-Est américain, prochains jours : 1 936 ft (590 m) à 6 037 ft (1 840 m). Heures les plus douces : limite pluie-neige environ 984 ft (300 m) plus bas, jusqu'à 4 921 ft (1 500 m) à Stratton le mardi 10 novembre. Le modèle a raison plus souvent qu'une intuition, et moins souvent que nous le voudrions.",
+   "sections": [
+    {
+     "h": "L'isotherme 0 °C, au quotidien",
+     "p": [
+      "L'isotherme 0 °C au-dessus des stations ci-dessous, de l'heure la plus froide à la plus douce de chaque jour : mardi 10 novembre : de 2 756 ft (840 m) à 5 971 ft (1 820 m). mercredi 11 novembre : de 2 461 ft (750 m) à 4 003 ft (1 220 m). jeudi 12 novembre : de 1 936 ft (590 m) à 6 037 ft (1 840 m)."
+     ]
+    },
+    {
+     "h": "Limite pluie-neige par station",
+     "p": [
+      "Whiteface Mountain (bas 1 220 ft (372 m), sommet 4 373 ft (1 333 m)) : limite pluie-neige vers 4 265 ft (1 300 m) le 10 novembre, à mi-pente. Neige au-dessus, pluie ou neige mouillée en dessous.",
+      "Stratton (bas 1 991 ft (607 m), sommet 3 881 ft (1 183 m)) : limite pluie-neige vers 4 921 ft (1 500 m) le 10 novembre, au-dessus du sommet. Tout le domaine est en zone de pluie ou de neige mouillée s'il y a des précipitations.",
+      "Okemo Mountain, bas 1 158 ft (353 m), sommet 3 320 ft (1 012 m) : limite pluie-neige vers 4 593 ft (1 400 m) le 10 novembre, au-dessus des remontées ; pluie ou neige mouillée partout s'il tombe quelque chose.",
+      "Magic Mountain (bas 1 378 ft (420 m), sommet 2 851 ft (869 m)) : limite pluie-neige vers 4 921 ft (1 500 m) le 10 novembre, au-dessus du sommet. Tout le domaine est en zone de pluie ou de neige mouillée s'il y a des précipitations."
+     ]
+    },
+    {
+     "h": "Risque de pluie sur neige",
+     "p": [
+      "Risque de pluie sur neige ces prochains jours : aucun que nous voyions. La limite pluie-neige reste assez basse les jours humides.",
+      "Tug Hill (1 706 ft (520 m)) : 15 mm prévus, limite pluie-neige vers 1 378 ft (420 m) pendant ce temps.",
+      "La prévision donne à Stowe (4 393 ft (1 339 m)) 16 mm de précipitations, avec la limite pluie-neige vers 2 100 ft (640 m) pendant les heures humides."
+     ]
+    },
+    {
+     "h": "L'isotherme 0 °C et la limite pluie-neige, en bref",
+     "p": [
+      "Version courte : plus froid en haut, la fonte commence à l'isotherme 0 °C, la pluie seulement environ 984 ft (300 m) plus bas, parce que fondre prend du temps. Cet écart est la limite pluie-neige. Dans un air sec, l'évaporation refroidit encore et la limite peut descendre."
+     ]
+    }
+   ],
+   "advice": [
+    "Jours doux : remontées les plus hautes, pentes nord, matinée. Ensuite, déjeuner.",
+    "Les isothermes 0 °C prévues bougent de plusieurs centaines de mètres ; revérifiez la carte la veille.",
+    "Avant toute sortie hors-piste ou en randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates sur son site."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans le Nord-Est américain le 10 novembre (modèle SnowScope), avec les stations de cette analyse et l'altitude de leur sommet."
+   }
+  },
+  "de": {
+   "title": "Nullgradgrenze im Nordosten der USA: von 1.936 ft bis 6.037 ft, Schneefallgrenze bis 4.921 ft (10. November)",
+   "description": "Die Nullgradgrenze im Nordosten der USA, nächste Tage: 1.936 ft (590 m) bis 6.037 ft (1.840 m). Wärmste Stunden: Schneefallgrenze etwa 984 ft (300 m) …",
+   "lede": "Die Nullgradgrenze im Nordosten der USA, nächste Tage: 1.936 ft (590 m) bis 6.037 ft (1.840 m). Wärmste Stunden: Schneefallgrenze etwa 984 ft (300 m) tiefer, bis 4.921 ft (1.500 m) in Stratton am Dienstag, 10. November. Das Modell liegt öfter richtig als ein Bauchgefühl, und seltener, als uns lieb wäre.",
+   "sections": [
+    {
+     "h": "Die Nullgradgrenze, täglich",
+     "p": [
+      "Die Nullgradgrenze über den Skigebieten unten, von der kältesten bis zur wärmsten Stunde jedes Tages: Dienstag, 10. November: von 2.756 ft (840 m) bis 5.971 ft (1.820 m). Mittwoch, 11. November: von 2.461 ft (750 m) bis 4.003 ft (1.220 m). Donnerstag, 12. November: von 1.936 ft (590 m) bis 6.037 ft (1.840 m)."
+     ]
+    },
+    {
+     "h": "Schneefallgrenze nach Skigebiet",
+     "p": [
+      "Whiteface Mountain (Tal 1.220 ft (372 m), Gipfel 4.373 ft (1.333 m)): Schneefallgrenze etwa 4.265 ft (1.300 m) am 10. November, mitten am Berg. Oben Schnee, unten Regen oder nasser Schnee.",
+      "Stratton (Tal 1.991 ft (607 m), Gipfel 3.881 ft (1.183 m)): Schneefallgrenze etwa 4.921 ft (1.500 m) am 10. November, über dem Gipfel. Der ganze Berg liegt bei Niederschlag in der Regen-oder-Nassschnee-Zone.",
+      "Okemo Mountain, Tal 1.158 ft (353 m), Gipfel 3.320 ft (1.012 m): Schneefallgrenze bei 4.593 ft (1.400 m) am 10. November, über der Bergstation; Regen oder nasser Schnee überall, wenn etwas fällt.",
+      "Magic Mountain (Tal 1.378 ft (420 m), Gipfel 2.851 ft (869 m)): Schneefallgrenze etwa 4.921 ft (1.500 m) am 10. November, über dem Gipfel. Der ganze Berg liegt bei Niederschlag in der Regen-oder-Nassschnee-Zone."
+     ]
+    },
+    {
+     "h": "Risiko Regen auf Schnee",
+     "p": [
+      "Risiko von Regen auf Schnee in den nächsten Tagen: keins, das wir sehen. Die Schneefallgrenze bleibt an nassen Tagen tief genug.",
+      "Tug Hill (1.706 ft (520 m)): 15 mm vorhergesagt, Schneefallgrenze bei 1.378 ft (420 m), während es fällt.",
+      "Die Prognose gibt Stowe (4.393 ft (1.339 m)) 16 mm Niederschlag, mit der Schneefallgrenze bei 2.100 ft (640 m) in den nassen Stunden."
+     ]
+    },
+    {
+     "h": "Nullgradgrenze und Schneefallgrenze, kurz erklärt",
+     "p": [
+      "Die Kurzfassung: oben kälter, das Schmelzen beginnt an der Nullgradgrenze, Regen erst etwa 984 ft (300 m) tiefer, weil Schmelzen Zeit braucht. Diese Lücke ist die Schneefallgrenze. In trockener Luft kühlt Verdunstung zusätzlich, und die Grenze kann weiter sinken."
+     ]
+    }
+   ],
+   "advice": [
+    "Warme Tage: höchste Lifte, Nordhänge, Vormittag. Dann Mittagessen.",
+    "Prognostizierte Nullgradgrenzen bewegen sich um mehrere hundert Meter; prüf die Karte am Vortag noch einmal.",
+    "Lies vor jedem Tag abseits der Piste oder auf Tour den offiziellen Lawinenlagebericht (Links unten).",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Termine auf seiner Website."
+   ],
+   "captions": {
+    "map": "Schneehöhe im Nordosten der USA am 10. November (SnowScope-Modell) mit den Skigebieten dieser Analyse und ihrer Gipfelhöhe."
+   }
+  },
+  "it": {
+   "title": "Zero termico nel Nord-est degli USA: da 1.936 ft a 6.037 ft, quota neve fino a 4.921 ft (10 novembre)",
+   "description": "Lo zero termico nel Nord-est degli USA, prossimi giorni: tra 1.936 ft (590 m) e 6.037 ft (1.840 m). Ore più miti: quota neve circa 984 ft (300 m) più …",
+   "lede": "Lo zero termico nel Nord-est degli USA, prossimi giorni: tra 1.936 ft (590 m) e 6.037 ft (1.840 m). Ore più miti: quota neve circa 984 ft (300 m) più in basso, fino a 4.921 ft (1.500 m) a Stratton il martedì 10 novembre. Il modello ci prende più spesso di un'intuizione, e meno spesso di quanto vorremmo.",
+   "sections": [
+    {
+     "h": "Lo zero termico, ogni giorno",
+     "p": [
+      "Lo zero termico sulle località qui sotto, dall'ora più fredda alla più mite di ogni giorno: martedì 10 novembre: da 2.756 ft (840 m) a 5.971 ft (1.820 m). mercoledì 11 novembre: da 2.461 ft (750 m) a 4.003 ft (1.220 m). giovedì 12 novembre: da 1.936 ft (590 m) a 6.037 ft (1.840 m)."
+     ]
+    },
+    {
+     "h": "Quota neve per località",
+     "p": [
+      "Whiteface Mountain (base 1.220 ft (372 m), vetta 4.373 ft (1.333 m)): quota neve circa 4.265 ft (1.300 m) il 10 novembre, a metà montagna. Neve sopra, pioggia o neve bagnata sotto.",
+      "Stratton (base 1.991 ft (607 m), vetta 3.881 ft (1.183 m)): quota neve circa 4.921 ft (1.500 m) il 10 novembre, sopra la vetta. Tutta la montagna è nella zona pioggia o neve bagnata se arrivano precipitazioni.",
+      "Okemo Mountain, base 1.158 ft (353 m), vetta 3.320 ft (1.012 m): quota neve vicino a 4.593 ft (1.400 m) il 10 novembre, sopra la cima degli impianti; pioggia o neve bagnata ovunque se cade qualcosa.",
+      "Magic Mountain (base 1.378 ft (420 m), vetta 2.851 ft (869 m)): quota neve circa 4.921 ft (1.500 m) il 10 novembre, sopra la vetta. Tutta la montagna è nella zona pioggia o neve bagnata se arrivano precipitazioni."
+     ]
+    },
+    {
+     "h": "Rischio pioggia sulla neve",
+     "p": [
+      "Rischio di pioggia sulla neve nei prossimi giorni: nessuno che vediamo. La quota neve resta abbastanza bassa nei giorni umidi.",
+      "Tug Hill (1.706 ft (520 m)): 15 mm previsti, quota neve vicino a 1.378 ft (420 m) mentre cadono.",
+      "La previsione dà a Stowe (4.393 ft (1.339 m)) 16 mm di precipitazioni, con la quota neve vicino a 2.100 ft (640 m) nelle ore umide."
+     ]
+    },
+    {
+     "h": "Zero termico e quota neve, in breve",
+     "p": [
+      "In breve: più freddo in alto, la fusione inizia allo zero termico, la pioggia solo circa 984 ft (300 m) più in basso, perché fondere richiede tempo. Quel divario è la quota neve. In aria secca l'evaporazione raffredda ancora e la quota può scendere."
+     ]
+    }
+   ],
+   "advice": [
+    "Giorni miti: impianti più alti, versanti nord, mattina. Poi pranzo.",
+    "Gli zeri termici previsti si spostano di diverse centinaia di metri; ricontrolla la mappa il giorno prima.",
+    "Prima di ogni uscita in fuoripista o scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date sul suo sito."
+   ],
+   "captions": {
+    "map": "Altezza neve nel Nord-est degli USA il 10 novembre (modello SnowScope) con le località di questa analisi e la quota della vetta."
+   }
+  },
+  "es": {
+   "title": "Isoterma de 0 °C en el noreste de EE. UU.: de 1936 ft a 6037 ft, cota de nieve hasta 4921 ft (10 de noviembre)",
+   "description": "La isoterma de 0 °C en el noreste de EE. UU., próximos días: 1936 ft (590 m) a 6037 ft (1840 m). Horas más templadas: cota de nieve unos 984 ft …",
+   "lede": "La isoterma de 0 °C en el noreste de EE. UU., próximos días: 1936 ft (590 m) a 6037 ft (1840 m). Horas más templadas: cota de nieve unos 984 ft (300 m) más abajo, hasta 4921 ft (1500 m) en Stratton el martes 10 de noviembre. El modelo acierta más que una corazonada, y menos de lo que nos gustaría.",
+   "sections": [
+    {
+     "h": "La isoterma de 0 °C, a diario",
+     "p": [
+      "La isoterma de 0 °C sobre las estaciones de abajo, de la hora más fría a la más templada de cada día: martes 10 de noviembre: de 2756 ft (840 m) a 5971 ft (1820 m). miércoles 11 de noviembre: de 2461 ft (750 m) a 4003 ft (1220 m). jueves 12 de noviembre: de 1936 ft (590 m) a 6037 ft (1840 m)."
+     ]
+    },
+    {
+     "h": "Cota de nieve por estación",
+     "p": [
+      "Whiteface Mountain (base 1220 ft (372 m), cima 4373 ft (1333 m)): cota de nieve unos 4265 ft (1300 m) el 10 de noviembre, a media montaña. Nieve arriba, lluvia o nieve húmeda abajo.",
+      "Stratton (base 1991 ft (607 m), cima 3881 ft (1183 m)): cota de nieve unos 4921 ft (1500 m) el 10 de noviembre, por encima de la cima. Toda la montaña queda en zona de lluvia o nieve húmeda si hay precipitación.",
+      "Okemo Mountain, base 1158 ft (353 m), cima 3320 ft (1012 m): cota de nieve hacia 4593 ft (1400 m) el 10 de noviembre, sobre la llegada de los remontes; lluvia o nieve húmeda en todas partes si cae algo.",
+      "Magic Mountain (base 1378 ft (420 m), cima 2851 ft (869 m)): cota de nieve unos 4921 ft (1500 m) el 10 de noviembre, por encima de la cima. Toda la montaña queda en zona de lluvia o nieve húmeda si hay precipitación."
+     ]
+    },
+    {
+     "h": "Riesgo de lluvia sobre nieve",
+     "p": [
+      "Riesgo de lluvia sobre nieve en los próximos días: ninguno que veamos. La cota se mantiene baja los días húmedos.",
+      "Tug Hill (1706 ft (520 m)): 15 mm previstos, cota de nieve hacia 1378 ft (420 m) mientras cae.",
+      "La previsión da a Stowe (4393 ft (1339 m)) 16 mm de precipitación, con la cota de nieve hacia 2100 ft (640 m) en las horas húmedas."
+     ]
+    },
+    {
+     "h": "La isoterma de 0 °C y la cota de nieve, en breve",
+     "p": [
+      "Versión corta: más frío arriba, la fusión empieza en la isoterma de 0 °C, la lluvia solo unos 984 ft (300 m) más abajo, porque fundirse lleva tiempo. Esa diferencia es la cota de nieve. Con aire seco, la evaporación enfría más y la cota puede bajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Días templados: remontes más altos, laderas norte, mañana. Después, a comer.",
+    "Las isotermas de 0 °C previstas se mueven varios cientos de metros; revisa el mapa el día antes.",
+    "Antes de cualquier salida fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas en su web."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el noreste de EE. UU. el 10 de noviembre (modelo SnowScope) con las estaciones de este análisis y la altura de su cima."
+   }
+  },
+  "ar": {
+   "title": "علو 0 °C فشمال شرق ميريكان: من 1936 قدم حتى ل 6037 قدم، الحد ديال التلج حتى ل 4921 قدم (10 نونبر)",
+   "description": "علو 0 °C فشمال شرق ميريكان، الأيام الجاية: 1936 قدم (590 م) حتى ل 6037 قدم (1840 م). أسخن الساعات: الحد ديال التلج تقريبا 984 قدم (300 م) تحت، حتى ل …",
+   "lede": "علو 0 °C فشمال شرق ميريكان، الأيام الجاية: 1936 قدم (590 م) حتى ل 6037 قدم (1840 م). أسخن الساعات: الحد ديال التلج تقريبا 984 قدم (300 م) تحت، حتى ل 4921 قدم (1500 م) ف Stratton نهار الثلاثاء 10 نونبر. الموديل كيصيب كثر من الحدس، وأقل من اللي كنبغيو.",
+   "sections": [
+    {
+     "h": "علو 0 °C، كل نهار",
+     "p": [
+      "علو 0 °C فوق المحطات اللي لتحت، من أبرد ساعة حتى ل أسخن ساعة فكل نهار: الثلاثاء 10 نونبر: من 2756 قدم (840 م) حتى ل 5971 قدم (1820 م). الأربعاء 11 نونبر: من 2461 قدم (750 م) حتى ل 4003 قدم (1220 م). الخميس 12 نونبر: من 1936 قدم (590 م) حتى ل 6037 قدم (1840 م)."
+     ]
+    },
+    {
+     "h": "الحد ديال التلج حسب المحطة",
+     "p": [
+      "Whiteface Mountain (التحت 1220 قدم (372 م)، الفوق 4373 قدم (1333 م)): الحد ديال التلج تقريبا 4265 قدم (1300 م) نهار 10 نونبر، فالوسط ديال الجبل. التلج فوق، الشتا ولا التلج المبلول تحت.",
+      "Stratton (التحت 1991 قدم (607 م)، الفوق 3881 قدم (1183 م)): الحد ديال التلج تقريبا 4921 قدم (1500 م) نهار 10 نونبر، فوق القمة. الجبل كامل فالمنطقة ديال الشتا ولا التلج المبلول إلا طاحت الشتا.",
+      "Okemo Mountain، التحت 1158 قدم (353 م)، الفوق 3320 قدم (1012 م): الحد ديال التلج قريب من 4593 قدم (1400 م) نهار 10 نونبر، فوق آخر تيليسييج؛ شتا ولا تلج مبلول فكل بلاصة إلا طاح شي حاجة.",
+      "Magic Mountain (التحت 1378 قدم (420 م)، الفوق 2851 قدم (869 م)): الحد ديال التلج تقريبا 4921 قدم (1500 م) نهار 10 نونبر، فوق القمة. الجبل كامل فالمنطقة ديال الشتا ولا التلج المبلول إلا طاحت الشتا."
+     ]
+    },
+    {
+     "h": "خطر الشتا على التلج",
+     "p": [
+      "خطر الشتا على التلج فالأيام الجاية: والو اللي كنشوفو. الحد ديال التلج كيبقى لتحت فالأيام المبلولين.",
+      "Tug Hill (1706 قدم (520 م)): 15 مم متوقعة، الحد ديال التلج قريب من 1378 قدم (420 م) ملي كتطيح.",
+      "التوقعات كتعطي ل Stowe (4393 قدم (1339 م)) 16 مم ديال الشتا، مع الحد ديال التلج قريب من 2100 قدم (640 م) فالساعات المبلولين."
+     ]
+    },
+    {
+     "h": "علو 0 °C والحد ديال التلج، باختصار",
+     "p": [
+      "النسخة القصيرة: بارد فالفوق، الذوبان كيبدا ف علو 0 °C، والشتا غير تقريبا 984 قدم (300 م) لتحت، حيت الذوبان كياخد الوقت. هاد الفرق هو الحد ديال التلج. فالهوا الناشف، التبخر كيزيد البرودة والحد يقدر يهبط كثر."
+     ]
+    }
+   ],
+   "advice": [
+    "الأيام السخونين: أعلى تيليسييجات، الجهات اللي كتشوف للشمال، الصباح. ومن بعد الغدا.",
+    "علو 0 °C المتوقع كيتحرك بشي مئات ديال الميترات؛ عاود شوف الخريطة نهار قبل.",
+    "قبل أي خرجة برا البيست ولا جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديالها."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فشمال شرق ميريكان نهار 10 نونبر (الموديل ديال SnowScope) مع المحطات ديال هاد التحليل والعلو ديال القمة ديالهم."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "de": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "it": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "es": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  }
+ },
+ "words_en": 360,
+ "indexable": true,
+ "main": {
+  "slug": "whiteface_mountain_ski_center",
+  "name": "Whiteface Mountain",
+  "lat": 44.3739,
+  "lon": -73.8779
+ },
+ "places": [
+  {
+   "name": "Whiteface Mountain",
+   "lat": 44.3739,
+   "lon": -73.8779
+  },
+  {
+   "name": "Stratton",
+   "lat": 43.1067,
+   "lon": -72.9091
+  },
+  {
+   "name": "Okemo Mountain",
+   "lat": 43.4115,
+   "lon": -72.7305
+  },
+  {
+   "name": "Magic Mountain",
+   "lat": 43.1983,
+   "lon": -72.7663
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "whiteface_mountain_ski_center",
+   "name": "Whiteface Mountain"
+  },
+  {
+   "slug": "stratton_mountain_resort",
+   "name": "Stratton"
+  },
+  {
+   "slug": "okemo_mountain",
+   "name": "Okemo Mountain"
+  },
+  {
+   "slug": "magic_mountain_ski_area",
+   "name": "Magic Mountain"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "whiteface_mountain_ski_center",
+    "name": "Whiteface Mountain",
+    "depth": 0,
+    "new72": 6,
+    "next": 24,
+    "top_m": 1333
+   },
+   {
+    "slug": "stratton_mountain_resort",
+    "name": "Stratton",
+    "depth": 0,
+    "new72": 1,
+    "next": 25,
+    "top_m": 1183
+   },
+   {
+    "slug": "okemo_mountain",
+    "name": "Okemo Mountain",
+    "depth": 0,
+    "new72": 0,
+    "next": 20,
+    "top_m": 1012
+   },
+   {
+    "slug": "magic_mountain_ski_area",
+    "name": "Magic Mountain",
+    "depth": 0,
+    "new72": 0,
+    "next": 20,
+    "top_m": 869
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Mount Washington Avalanche Center",
+   "url": "https://www.mountwashingtonavalanchecenter.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@44.374,-73.878,9.0",
+ "seconds": 0.0,
+ "facts_used": 45,
+ "similarity": {
+  "max": 0.271,
+  "with": "pyrenees-freezing-level-snow-line-10-november-2026"
+ },
+ "publish_utc": "2026-11-10T20:02:14Z",
+ "overlap": {
+  "before": 57.1,
+  "after": 17.6,
+  "with": "us-west-freezing-level-snow-line-8-november-2026",
+  "tries": 1
+ },
+ "voice": "sat"
+}
