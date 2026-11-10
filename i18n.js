@@ -14,6 +14,13 @@
   // columns: fr, de, it, es, ar
   const T = {
     "Units": ["Unités", "Einheiten", "Unità", "Unidades", "الوحدات"],
+    // follow flow (follow.js, owner 2026-11-09): big powder-alert button, favourites, morning forecast
+    "Powder alert": ["Alerte poudreuse", "Powder-Alarm", "Avviso neve fresca", "Alerta de nieve polvo", "تنبيه التلج"],
+    "Powder alert for {a}": ["Alerte poudreuse pour {a}", "Powder-Alarm für {a}", "Avviso neve fresca per {a}", "Alerta de nieve polvo para {a}", "تنبيه التلج ديال {a}"],
+    "Favourite": ["Favori", "Favorit", "Preferito", "Favorito", "المفضلة"],
+    "Free: a message when fresh snow is coming, and the forecast every morning.": ["Gratuit : un message quand la neige arrive, et la météo chaque matin.",
+      "Gratis: eine Nachricht, wenn Neuschnee kommt, und jeden Morgen die Vorhersage.", "Gratis: un messaggio quando arriva la neve e il meteo ogni mattina.",
+      "Gratis: un aviso cuando llega la nieve y la previsión cada mañana.", "فابور: ميساج ملي يجي التلج، والتوقعات كل صباح."],
     // lodging pins on the main map (OpenStreetMap places + Stay22 link), owner 2026-11-09
     "Check prices": ["Voir les prix", "Preise prüfen", "Vedi i prezzi", "Ver precios", "شوف الأثمنة"],
     "Hotel": ["Hôtel", "Hotel", "Hotel", "Hotel", "أوطيل"],

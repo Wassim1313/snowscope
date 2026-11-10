@@ -51,7 +51,7 @@
     region: null, pro: false, proIdx: null, proDates: null, gen: 0, fields: {}, pistes: { idx: null, loaded: new Set(), feats: [] },
     aval: null, radar: undefined, sheet: "peek", pushed: false, ski: { region: null, country: "", when: "today", radius: get("ss_radius", 200), min: 0, fresh: false, q: "" },
     origin: get("ss_origin", null), hour: null, deck: null, radarFrames: null, frame: null };
-  let DATA, RES, BY = {}, map, LIB, ML, popup, toastT, ready = false, initialSlug = null;
+  let DATA, RES, BY = {}, RDATES = null, map, LIB, ML, popup, toastT, ready = false, initialSlug = null;
 
   function toast(t, ms = 3200) { const e = $("toast"); e.textContent = t; e.hidden = !t; clearTimeout(toastT); if (t) toastT = setTimeout(() => { e.hidden = true; }, ms); }
   const rampAt = (stops, v) => {
@@ -957,7 +957,7 @@
   }
   // the stations in view as a table in the panel (desktop) / bottom sheet (phone): deepest first, a row flies there
   function stationsHtml(hideEmpty) {
-    if (!st.over.stn) return "";
+    if (!st.over.stn || !map) return "";        // no map (web view without WebGL): no "in view" table
     if (hideEmpty !== undefined) st.stnHideEmpty = !!hideEmpty;
     if (!st.stations) { loadStations(); return '<div id="stnbox"></div>'; }
     const b = map.getBounds();
@@ -1749,6 +1749,7 @@
     box.querySelectorAll("[data-goregion]").forEach((b) => { b.onclick = () => { store.set("ss_region_pick", 1); flyRegion(b.dataset.goregion); }; });
     bindStations(box);
     if (window.SSC) SSC.bind(box);
+    if (window.Follow) { Follow.paintFavs(); Follow.paintAlerts(); }
     if (SS.S.started) SS.Ads.start();
   }
   function adSlot(kind, x, day) {    // place + dates for the house ad (Stay22) until AdSense fills the unit
@@ -1783,9 +1784,10 @@
     // freshness (v3 trust cue): when the pictures were built, in the visitor's time ("Updated 07:12" / "Updated 2 Nov")
     const bu = DATA.built_utc ? new Date(DATA.built_utc) : null, sameDay = bu && bu.toDateString() === new Date().toDateString();
     const upd = bu && !isNaN(bu) ? '<span class="upd" title="' + esc(bu.toLocaleString(LOC)) + '">' + esc(I18N.tu("Updated {a}", sameDay ? bu.toLocaleTimeString(LOC, { hour: "2-digit", minute: "2-digit" }) : bu.toLocaleDateString(LOC, { day: "numeric", month: "short" }))) + "</span>" : "";
-    let h = '<section class="rhero"><div class="hk"><span>' + esc(when) + " · " + esc(I18N.t(r.name)) + "</span>" + upd + '</div><div class="hn">' + big + '</div><div class="hw">' + esc(what) + (where ? ' <span class="hp">' + esc(where) + "</span>" : "") + "</div>" +
+    let h = favRow() + '<section class="rhero"><div class="hk"><span>' + esc(when) + " · " + esc(I18N.t(r.name)) + "</span>" + upd + '</div><div class="hn">' + big + '</div><div class="hw">' + esc(what) + (where ? ' <span class="hp">' + esc(where) + "</span>" : "") + "</div>" +
       '<div class="hs"><span><b>' + fmt(x.resorts_with_snow || 0) + "</b> " + esc(I18N.t("resorts with snow")) + "</span>" + (fresh && best ? "<span><b>" + U.depth(best.depth_cm) + "</b> " + esc(I18N.t("deepest")) + "</span>" : "") + "</div>" +
       '<div class="hc"><div class="hk2">' + esc(I18N.t("Fresh snow, last days and next days")) + "</div>" + bars + "</div></section>";
+    h += followHome(r);
     if (x.top.length) {
       const dmax = Math.max(...x.top.map((t) => t.depth_cm || 0), 1);
       h += '<h2 class="h2">Deepest snow today</h2><ol class="rank">' + x.top.map((t, i) => '<li><a href="' + BASE + "resorts/" + encodeURIComponent(t.slug) + '.html" data-open="' + esc(t.slug) + '">' +
@@ -1799,6 +1801,28 @@
       return '<button data-goregion="' + y.code + '"><b>' + esc(y.name) + "</b><small>" + (z.new_max_cm >= 1 ? "+" + U.depth(z.new_max_cm) : z.resorts_with_snow ? esc(I18N.tu("{a} resorts with snow", fmt(z.resorts_with_snow))) : esc(I18N.t("No snow yet"))) + "</small></button>";
     }).join("") + "</div>";
     return h + appCard() + footer();
+  }
+  // follow flow (follow.js, owner 2026-11-09): "Your resorts" first (favourites of this browser, with their snow on the
+  // shown day), then one big powder-alert button for the region on the home panel
+  function favRow() {
+    if (!window.Follow) return "";
+    const fs = Follow.favs().filter((f) => BY[f.s]);
+    if (!fs.length) return "";
+    const di = RDATES ? RDATES.indexOf(st.day) : -1;
+    return Follow.yourRow(fs.map((f) => { const x = BY[f.s], s = (di >= 0 && x.snow[di]) || [];
+      return { slug: f.s, name: x.short || x.name, depth: s[0] ? U.depth(s[0]) : "", fresh: s[1] >= 1 ? U.depth(s[1]) : "" }; }));
+  }
+  function followHome(r) {
+    if (!window.Follow) return "";
+    return '<button class="fw-big" data-fw-alert data-fw-slug="" data-fw-region="' + esc(r.code) + '" data-fw-via="home"><span class="ms f" aria-hidden="true">notifications_active</span><span><b>' +
+      esc(I18N.tu("Powder alert for {a}", I18N.lang === "en" || !I18N.lang ? the(r.name) : I18N.t(r.name))) + "</b><small>" + esc(I18N.t("Free: a message when fresh snow is coming, and the forecast every morning.")) + "</small></span></button>";
+  }
+  function followResort(x) {
+    if (!window.Follow) return '<button class="rowlink alertrow" data-alert="' + esc(x.slug) + '"><span class="ms">notifications_active</span><span><b>' + esc(I18N.t("Get a powder alert")) + "</b></span></button>";
+    return '<div class="fw-pair"><button class="fw-fav" data-fw-fav data-fw-slug="' + esc(x.slug) + '" data-fw-name="' + esc(x.short || x.name) + '" data-fw-region="' + esc(x.dom || "") + '" aria-pressed="false">' +
+      '<span class="ms" aria-hidden="true">star</span><span class="fw-lbl">' + esc(I18N.t("Favourite")) + "</span></button>" +
+      '<button class="fw-big" data-fw-alert data-fw-slug="' + esc(x.slug) + '" data-fw-name="' + esc(x.short || x.name) + '" data-fw-region="' + esc(x.dom || "") + '" data-fw-via="resort"><span class="ms f" aria-hidden="true">notifications_active</span><span><b>' +
+      esc(I18N.tu("Powder alert for {a}", x.short || x.name)) + "</b><small>" + esc(I18N.t("Free: a message when fresh snow is coming, and the forecast every morning.")) + "</small></span></button></div>";
   }
   function appCard() {
     return '<a class="teaser" href="' + esc(SS.appUrl()) + '" style="margin-top:18px"><span class="ic" style="background:linear-gradient(160deg,#3B8BFF,#1463F3)"><span class="ms f">android</span></span><span><b>Every slope, every day</b><small>The sharpest snow map, powder alerts and Peak finder in the app.</small></span></a>';
@@ -1823,7 +1847,7 @@
     if ($("zoomctl")) return;
     const z = document.createElement("div");
     z.id = "zoomctl"; z.className = "zoomctl glass"; z.setAttribute("role", "group"); z.setAttribute("aria-label", "Map controls");
-    z.innerHTML = '<button data-z="1" aria-label="Zoom in" title="Zoom in"><span class="ms">add</span></button><span class="sep"></span>' +
+    z.innerHTML = (window.Follow ? '<button class="zbell" data-fw-alert data-fw-via="map" aria-label="Powder alert" title="Powder alert"><span class="ms f">notifications_active</span></button>' : "") + '<button data-z="1" aria-label="Zoom in" title="Zoom in"><span class="ms">add</span></button><span class="sep"></span>' +
       '<button data-z="-1" aria-label="Zoom out" title="Zoom out"><span class="ms">remove</span></button>' +
       '<button id="northBtn" aria-label="Reset north" title="Reset north" hidden><span class="ms" id="northIc">navigation</span></button>' +
       '<button data-me aria-label="Show my position" title="Show my position"><span class="ms">my_location</span></button>' +
@@ -2036,7 +2060,8 @@
     const sb = e.target.closest("[data-storm]");
     if (sb) stormPost(DATA.storms[+sb.dataset.storm]);
     if (e.target.closest("[data-viewpost]")) viewPost();
-    const al = e.target.closest("[data-alert]"); if (al) alertSheet(al.dataset.alert);
+    const al = e.target.closest("[data-alert]");      // older alert rows: the follow flow when follow.js is there
+    if (al) { if (window.Follow) Follow.open({ slug: al.dataset.alert, via: st.slug ? "resort" : "home" }); else alertSheet(al.dataset.alert); }
     const pp = e.target.closest("[data-propost]");
     if (pp) proPost(pp.dataset.propost);
   });
@@ -2952,8 +2977,9 @@
     // LIVE-DATA (2026-11-03): new-snow totals right under the hero, the powder-alert button, lifts / webcams only with data
     if (hb) { hb.insertAdjacentHTML("afterend", '<div id="rFall"><div class="skel" style="height:132px;margin:0 0 8px"></div></div><div id="rElev"></div>'); snowfallRow(x); }
     const ra = box.querySelector(".acts3");
-    if (ra) ra.insertAdjacentHTML("afterend", '<button class="rowlink alertrow" data-alert="' + esc(slug) + '"><span class="ms">notifications_active</span><span><b>' + esc(I18N.t("Get a powder alert")) +
-      "</b><small>" + esc(I18N.t("An e-mail when fresh snow falls here")) + '</small></span><span class="ms">chevron_right</span></button><div id="rLive"></div>');
+    // follow flow (owner 2026-11-09): big ★ Favourite + Powder alert right under the snow numbers
+    if (hb) hb.insertAdjacentHTML("afterend", followResort(x));
+    if (ra) ra.insertAdjacentHTML("afterend", '<div id="rLive"></div>');
     liveRows(x);
     const gs = box.querySelector("[data-gostays]");
     if (gs) gs.onclick = () => { const d = box.querySelector("details.stays"); if (d) { d.open = true; d.scrollIntoView({ behavior: "smooth", block: "start" }); } };
@@ -3246,7 +3272,7 @@
   // days before today read as analysis, today and later as forecast. A run older than yesterday -> "Updating…" chip.
   DATA.runDay = DATA.today;
   { const real = localToday(); if (DATA.dates.includes(real)) DATA.today = real; DATA.stale = !!DATA.run && DATA.run < addDays(real, -1); }
-  RES = SS.resorts().then((r) => { BY = Object.fromEntries(r.rows.map((x) => [x.slug, x])); return r; });
+  RES = SS.resorts().then((r) => { BY = Object.fromEntries(r.rows.map((x) => [x.slug, x])); RDATES = r.dates; return r; });
   st.day = DATA.dates.includes(DATA.today) ? DATA.today : DATA.dates[DATA.dates.length - 1];
   const dq = new URLSearchParams(location.search).get("d");
   if (dq && DATA.dates.includes(dq)) st.day = dq;
@@ -3276,20 +3302,36 @@
     else { try { const g = JSON.parse(document.querySelector('script[type="application/ld+json"]').textContent).geo; if (g && isFinite(g.latitude)) startLL = { lat: +g.latitude, lng: +g.longitude }; } catch { /* no geo */ } }
     const rr = startLL && regionAt(startLL);
     if (rr && rr.code !== st.region) { st.region = rr.code; st.ski.region = rr.code; drawRegions(); }
+    // a resort page opened from a post / a search on a phone: show the resort's numbers, not only the map
+    if (innerWidth <= 760) setSheet("half");
   }
   renderPanel();
-
-  ML = await SS.mapLib();
-  LIB = ML.lib;
+  window.addEventListener("ss:favs", () => { if (!st.slug && !st.point && !st.piste && (st.tab || "map") === "map") renderPanel(); });
+  // Facebook / Instagram / old Android web views without WebGL (or a blocked map script): no map, but the page keeps
+  // working (panel full height, tabs, resort pages, back button) instead of stopping here with an error
+  const glOk = (() => { try { const c = document.createElement("canvas"); return !!(window.WebGLRenderingContext && (c.getContext("webgl2") || c.getContext("webgl") || c.getContext("experimental-webgl"))); } catch { return false; } })();
+  try { if (!glOk) throw new Error("no webgl"); ML = await SS.mapLib(); LIB = ML.lib; }
+  catch {
+    document.body.classList.add("nomap"); setSheet("full");
+    await started; SS.onChange(onAccount); onAccount(SS.S);
+    window.addEventListener("popstate", (e) => { const s = (e.state && e.state.slug) || null; if (s) openResort(s, { push: false }); else { st.slug = null; renderPanel(); } });
+    return;
+  }
   const R0 = DATA.regions.find((r) => r.code === st.region) || DATA.regions[0];
   const hash = /^#@(-?[\d.]+),(-?[\d.]+),([\d.]+)$/.exec(location.hash);
   // first paint already framed on the snow (no z5 overview that waits for the "load" event before jumping)
   const plain = !hash && !initialSlug && !new URLSearchParams(location.search).get("p") && !new URLSearchParams(location.search).get("r");
   if (plain) await Promise.race([RES.catch(() => null), new Promise((ok) => setTimeout(ok, 2500))]);
   const b0 = plain ? snowBounds(R0) : null;
-  map = new LIB.Map({ container: "map", style: styleUrl(), center: startLL ? [startLL.lng, startLL.lat] : R0.center, zoom: startLL ? 10 : 5, minZoom: 2, attributionControl: { compact: true },
+  try { map = mkMap(); } catch {
+    map = null; document.body.classList.add("nomap"); setSheet("full");
+    await started; SS.onChange(onAccount); onAccount(SS.S);
+    window.addEventListener("popstate", (e) => { const s = (e.state && e.state.slug) || null; if (s) openResort(s, { push: false }); else { st.slug = null; renderPanel(); } });
+    return;
+  }
+  function mkMap() { return new LIB.Map({ container: "map", style: styleUrl(), center: startLL ? [startLL.lng, startLL.lat] : R0.center, zoom: startLL ? 10 : 5, minZoom: 2, attributionControl: { compact: true },
     ...(b0 ? { bounds: b0, fitBoundsOptions: { padding: startPad(), maxZoom: 8.2 } } : {}),
-    transformRequest: (url) => SS.transformRequest(url), preserveDrawingBuffer: true, maxPitch: 75, dragRotate: true, pitchWithRotate: true });
+    transformRequest: (url) => SS.transformRequest(url), preserveDrawingBuffer: true, maxPitch: 75, dragRotate: true, pitchWithRotate: true }); }
   window.SSApp.map = map;
   zoomControls();   // own + / − / north / locate stack (owner 2026-11-02 "zoom in / zoom out, add them"), replaces the small MapLibre control
   map.on("style.load", onStyle);

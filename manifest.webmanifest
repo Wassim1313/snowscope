@@ -1,0 +1,19 @@
+{
+  "name": "SnowScope: snow depth and powder alerts",
+  "short_name": "SnowScope",
+  "description": "Where the snow is today: snow depth on every slope, fresh snow and powder alerts.",
+  "id": "/",
+  "start_url": "/?utm_source=homescreen",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0A0F17",
+  "theme_color": "#1463F3",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "related_applications": [{"platform": "play", "id": "snowruler.app"}],
+  "prefer_related_applications": false
+}

@@ -643,17 +643,42 @@
   }
   function track(name, params) { if (window.gtag && !BOT) try { gtag("event", name, params || {}); } catch { /* ignore */ } }
   let lastPath = null;
+  // in-app browsers (Facebook, Instagram, Messenger, TikTok...): they often send no referrer, and Facebook PRELOADS
+  // links in a hidden webview before (or without) the tap: views are counted only once the page is really seen
+  const IAB = /FBAN|FBAV|FB_IAB|FBIOS|Instagram|Messenger|musical_ly|BytedanceWebview|Line\//i.test(navigator.userAgent || "");
+  function refHost() {
+    try { if (document.referrer) return new URL(document.referrer).hostname; } catch { /* odd referrer */ }
+    const ua = navigator.userAgent || "";
+    return /Instagram/i.test(ua) ? "instagram.com" : /FBAN|FBAV|FB_IAB|FBIOS|Messenger/i.test(ua) ? "facebook.com" : /musical_ly|Bytedance/i.test(ua) ? "tiktok.com" : "";
+  }
+  // returning browser (no id): only the date of this browser's first visit is kept; ret=1 when it is before today
+  function retFlag() {
+    const today = new Date().toISOString().slice(0, 10);
+    const first = store.get("ss_first");
+    if (typeof first === "string" && /^\d{4}-\d{2}-\d{2}$/.test(first)) return first < today ? 1 : 0;
+    store.set("ss_first", today);
+    return store.get("ss_first") === today ? 0 : null;     // storage blocked: unknown
+  }
+  let RET;
+  function beacon(path, ref, src) {
+    if (BOT || !S.api || !navigator.sendBeacon) return;
+    if (RET === undefined) RET = retFlag();
+    try {
+      navigator.sendBeacon(base("/v1/hit") + "/v1/hit", new Blob([JSON.stringify({ path: String(path).slice(0, 200), ref: ref || "", src: src || "web",
+        lang: (window.I18N && I18N.lang) || "", ret: RET })], { type: "text/plain" }));
+    } catch { /* ignore */ }
+  }
   function pageView(path) {
     path = path || location.pathname + location.search;
     if (BOT || path === lastPath) return;
+    if (document.visibilityState === "hidden" || document.prerendering) {   // preloaded / prerendered: count when shown
+      const once = () => { if (document.visibilityState === "visible" && !document.prerendering) { document.removeEventListener("visibilitychange", once); document.removeEventListener("prerenderingchange", once); pageView(path); } };
+      document.addEventListener("visibilitychange", once); document.addEventListener("prerenderingchange", once);
+      return;
+    }
     lastPath = path;
     if (window.gtag) gtag("event", "page_view", { page_location: location.origin + path, page_path: path, page_title: document.title });
-    if (S.api && navigator.sendBeacon) {              // first-party counter: no cookie, hashed + daily-rotating id
-      try {
-        navigator.sendBeacon(base("/v1/hit") + "/v1/hit", new Blob([JSON.stringify({ path: path.slice(0, 200), ref: document.referrer ? new URL(document.referrer).hostname : "",
-          src: "web", lang: (window.I18N && I18N.lang) || "" })], { type: "text/plain" }));
-      } catch { /* ignore */ }
-    }
+    beacon(path, refHost(), "web");                   // first-party counter: no cookie, hashed + daily-rotating id
   }
   // first-party event beacon (same counter as page views, src "stay22"): /ad/stay22/<placement>/<load|view|click|tap>
   // (docs/WEB.md "Stay22 viewability"); no cookie, no personal data
@@ -661,10 +686,7 @@
   function hit(path, src, once) {
     if (BOT || !S.api || !navigator.sendBeacon) return;
     if (once) { if (HITS.has(once)) return; HITS.add(once); }
-    try {
-      navigator.sendBeacon(base("/v1/hit") + "/v1/hit", new Blob([JSON.stringify({ path: String(path).slice(0, 200), ref: "", src: src || "web",
-        lang: (window.I18N && I18N.lang) || "" })], { type: "text/plain" }));
-    } catch { /* ignore */ }
+    beacon(path, "", src);
   }
   document.addEventListener("click", (e) => {            // which Stay22 placement works (no personal data)
     const a = e.target.closest('a[href*="stay22.com"]');
@@ -713,5 +735,5 @@
   }
 
   window.SS = { base, webPro, proHere, proIn, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
-                resorts, mapLib, transformRequest, onChange: (f) => S.listeners.push(f), store, ROOT };
+                resorts, mapLib, transformRequest, onChange: (f) => S.listeners.push(f), store, ROOT, IAB, refHost };
 })();

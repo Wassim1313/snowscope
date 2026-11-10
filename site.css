@@ -970,3 +970,7 @@ label.chk input{width:20px;height:20px;accent-color:var(--accent)}
 .ostcard .k{display:block;font-size:14px;font-weight:700;line-height:1.25}.ostcard .line{font-size:12.5px;color:var(--ink3)}
 .ostcard .ostd .ms{font-size:15px;vertical-align:-3px;margin-inline-end:4px}.ostcard .acts3{display:flex;align-items:center;gap:10px}
 .ostcard .ostosm{display:block;margin-top:6px;font-size:10px;color:var(--ink4)}
+/* follow flow (follow.js, owner 2026-11-09): header powder-alert button; no-map fallback for web views without WebGL */
+.btn.alertbtn{flex:none;padding:0 12px;gap:6px;background:#1463F3;color:#fff}.zoomctl .zbell{display:none}
+@media (max-width:640px){body.app .btn.alertbtn{display:none}.zoomctl button.zbell{display:grid;background:#1463F3;color:#fff;margin-bottom:4px}.zoomctl button.zbell:hover{background:#0f4fc4}}
+.nomap #map,.nomap .timeline,.nomap .legend,.nomap .mapctl{display:none}.nomap{background:var(--bg)}
