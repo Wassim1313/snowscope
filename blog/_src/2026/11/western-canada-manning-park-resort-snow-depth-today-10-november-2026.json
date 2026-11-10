@@ -1,0 +1,683 @@
+{
+ "id": "2026-11-10-ca_west-deepest",
+ "slug": "western-canada-manning-park-resort-snow-depth-today-10-november-2026",
+ "date": "2026-11-10",
+ "published_utc": "2026-11-10T14:19:41Z",
+ "updated_utc": "2026-11-10T14:19:41Z",
+ "region": "CA_WEST",
+ "angle": "deepest",
+ "score": 67.5,
+ "signature": "manning_park_resort:110|big_white_ski_resort:80|whistler:80",
+ "keyword": {
+  "family": "snow-depth",
+  "entity": "manning_park_resort",
+  "region": "CA_WEST",
+  "date": "2026-11-10"
+ },
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "Western Canada",
+  "date": "2026-11-10",
+  "weekday": "Tuesday",
+  "model_run": "2026-11-10",
+  "forecast_days": [
+   "2026-11-11",
+   "2026-11-12",
+   "2026-11-13"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 260060,
+   "resorts_with_snow": 41,
+   "resorts_in_region": 57
+  },
+  "region_before": {
+   "date": "2026-11-08",
+   "snow_covered_area_km2": 270720,
+   "resorts_with_snow": 42
+  },
+  "region_forecast": {
+   "date": "2026-11-13",
+   "snow_covered_area_km2": 235100,
+   "resorts_with_snow": 37
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Manning Park Resort",
+    "country": "Canada",
+    "top_m": 1789,
+    "base_m": 1359,
+    "depth_cm_upper_slopes_today": 110,
+    "new_cm_last_24h": 6,
+    "new_cm_last_72h": 18,
+    "new_cm_forecast_next_days": 0,
+    "slug": "manning_park_resort",
+    "new_cm_by_day": {
+     "2026-11-08": 12,
+     "2026-11-09": 0,
+     "2026-11-10": 6,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1359,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 4
+     },
+     "mid": {
+      "elev_m": 1574,
+      "depth_cm_model": 9,
+      "new_cm_next_7_days": 12
+     },
+     "top": {
+      "elev_m": 1789,
+      "depth_cm_model": 18,
+      "new_cm_next_7_days": 12
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 1520,
+      "max": 2860
+     },
+     "2026-11-11": {
+      "min": 2800,
+      "max": 3030
+     },
+     "2026-11-12": {
+      "min": 2610,
+      "max": 2970
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-04"
+    }
+   },
+   {
+    "name": "Big White",
+    "country": "Canada",
+    "top_m": 2271,
+    "base_m": 1512,
+    "depth_cm_upper_slopes_today": 85,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 0,
+    "slug": "big_white_ski_resort",
+    "new_cm_by_day": {
+     "2026-11-08": 2,
+     "2026-11-09": 0,
+     "2026-11-10": 2,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1512,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 4
+     },
+     "mid": {
+      "elev_m": 1891,
+      "depth_cm_model": 10,
+      "new_cm_next_7_days": 8
+     },
+     "top": {
+      "elev_m": 2271,
+      "depth_cm_model": 62,
+      "new_cm_next_7_days": 9
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 1630,
+      "max": 2580
+     },
+     "2026-11-11": {
+      "min": 2730,
+      "max": 3440
+     },
+     "2026-11-12": {
+      "min": 2870,
+      "max": 3340
+     }
+    },
+    "past_winters": {
+     "height_m": 1891,
+     "snow_cm_at_this_height_today_model": 42,
+     "deeper_than_n_of_past_winters": 40,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 26
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-04"
+    }
+   },
+   {
+    "name": "Whistler Blackcomb",
+    "country": "Canada",
+    "top_m": 2259,
+    "base_m": 653,
+    "depth_cm_upper_slopes_today": 83,
+    "new_cm_last_24h": 19,
+    "new_cm_last_72h": 76,
+    "new_cm_forecast_next_days": 53,
+    "slug": "whistler",
+    "new_cm_by_day": {
+     "2026-11-08": 56,
+     "2026-11-09": 1,
+     "2026-11-10": 19,
+     "2026-11-11": 18,
+     "2026-11-12": 11,
+     "2026-11-13": 24
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 653,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 1456,
+      "depth_cm_model": 65,
+      "new_cm_next_7_days": 93
+     },
+     "top": {
+      "elev_m": 2259,
+      "depth_cm_model": 96,
+      "new_cm_next_7_days": 167
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 1480,
+      "max": 2620
+     },
+     "2026-11-11": {
+      "min": 2080,
+      "max": 2740
+     },
+     "2026-11-12": {
+      "min": 1900,
+      "max": 2500
+     }
+    },
+    "past_winters": {
+     "height_m": 1456,
+     "snow_cm_at_this_height_today_model": 55,
+     "deeper_than_n_of_past_winters": 12,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 77
+    }
+   },
+   {
+    "name": "Mount Cain Alpine Park",
+    "country": "Canada",
+    "top_m": 1616,
+    "base_m": 1190,
+    "depth_cm_upper_slopes_today": 59,
+    "new_cm_last_24h": 11,
+    "new_cm_last_72h": 45,
+    "new_cm_forecast_next_days": 40,
+    "slug": "mount_cain_alpine_park",
+    "new_cm_by_day": {
+     "2026-11-08": 32,
+     "2026-11-09": 4,
+     "2026-11-10": 11,
+     "2026-11-11": 0,
+     "2026-11-12": 19,
+     "2026-11-13": 21
+    }
+   },
+   {
+    "name": "Tweedsmuir Ski Club",
+    "country": "Canada",
+    "top_m": 1650,
+    "base_m": 1588,
+    "depth_cm_upper_slopes_today": 56,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 21,
+    "new_cm_forecast_next_days": 38,
+    "slug": "tweedsmuir_ski_club",
+    "new_cm_by_day": {
+     "2026-11-08": 18,
+     "2026-11-09": 0,
+     "2026-11-10": 3,
+     "2026-11-11": 23,
+     "2026-11-12": 11,
+     "2026-11-13": 4
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/western-canada-manning-park-resort-snow-depth-today-10-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/western-canada-manning-park-resort-snow-depth-today-10-november-2026/map_t.webp",
+   "bytes": 71280,
+   "snow_frac": 0.5778,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Where is the deepest snow in Western Canada? Manning Park Resort, with 110 cm (10 November)",
+   "description": "Where is the deepest snow in Western Canada today? The most snow in Western Canada is at Manning Park Resort: about 110 cm on the upper slopes, …",
+   "lede": "Where is the deepest snow in Western Canada today? The most snow in Western Canada is at Manning Park Resort: about 110 cm on the upper slopes, according to our snow model. Next come Big White with 85 cm and Whistler Blackcomb with 83 cm. Our snow model shows 260,060 km² of snow-covered ground in Western Canada today, with snow at 41 of 57 resorts.",
+   "sections": [
+    {
+     "h": "Today's snow",
+     "p": [
+      "The snow cover shrank from 270,720 km² on 8 November to 260,060 km² today, and our forecast gives 235,100 km² on 13 November.",
+      "Height matters: at Big White, our model gives 62 cm at the top (2,271 m), 10 cm at mid-mountain (1,891 m) and 0 cm at the base (1,512 m)."
+     ]
+    },
+    {
+     "h": "The next days",
+     "p": [
+      "More snow is on the way: by 13 November our forecast gives 53 cm at Whistler Blackcomb, 40 cm at Mount Cain Alpine Park and 38 cm at Tweedsmuir Ski Club.",
+      "At Manning Park Resort, the freezing level reaches 2,800 m to 3,030 m on 11 November, above the top of the resort (1,789 m): rain or wet snow is possible on every slope that day.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    },
+    {
+     "h": "Measured on the ground",
+     "p": [
+      "Resort numbers are model estimates for the upper slopes; station numbers are measurements at one point, on the date shown."
+     ]
+    },
+    {
+     "h": "Is it a good start?",
+     "p": [
+      "This is a good start at Big White. At 1,891 m, our model has 42 cm today, deeper than on this date in 40 of the past 46 winters (usual: 26 cm).",
+      "At 1,456 m on Whistler Blackcomb the season is late: our model has only 55 cm today, below the usual 77 cm. Only 12 of the past 46 winters had less snow there on 10 November."
+     ]
+    }
+   ],
+   "advice": [
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "Look for snow high up and on north-facing slopes: they keep it longest, while south-facing slopes lose it first in the sun.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Manning Park Resort gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in Western Canada on 10 November 2026 (SnowScope snow model): Manning Park Resort, Big White, Whistler Blackcomb, Mount Cain Alpine Park, Tweedsmuir Ski Club."
+   }
+  },
+  "fr": {
+   "title": "Où est la neige la plus épaisse dans l'Ouest canadien ? À Manning Park Resort, avec 110 cm (10 novembre)",
+   "description": "Où la neige est-elle la plus épaisse dans l'Ouest canadien aujourd'hui ? C'est à Manning Park Resort qu'il y a le plus de neige dans l'Ouest canadien …",
+   "lede": "Où la neige est-elle la plus épaisse dans l'Ouest canadien aujourd'hui ? C'est à Manning Park Resort qu'il y a le plus de neige dans l'Ouest canadien : environ 110 cm sur le haut du domaine, selon notre modèle de neige. Viennent ensuite Big White (85 cm) et Whistler Blackcomb (83 cm). 41 stations sur 57 dans l'Ouest canadien ont de la neige sur le haut du domaine aujourd'hui, et notre modèle compte 260 060 km² de surface enneigée.",
+   "sections": [
+    {
+     "h": "La neige du jour",
+     "p": [
+      "La surface enneigée est passée de 270 720 km² le 8 novembre à 260 060 km² aujourd'hui, et notre prévision donne 235 100 km² le 13 novembre.",
+      "L'altitude compte : à Big White, notre modèle donne 62 cm au sommet (2 271 m), 10 cm à mi-pente (1 891 m) et 0 cm en bas (1 512 m)."
+     ]
+    },
+    {
+     "h": "Les prochains jours",
+     "p": [
+      "D'ici le 13 novembre, notre prévision donne 53 cm à Whistler Blackcomb, 40 cm à Mount Cain Alpine Park et 38 cm à Tweedsmuir Ski Club.",
+      "À Manning Park Resort, l'isotherme 0 °C monte entre 2 800 m et 3 030 m le 11 novembre, au-dessus du sommet de la station (1 789 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    },
+    {
+     "h": "Mesuré au sol",
+     "p": [
+      "Les chiffres des stations de ski sont des estimations du modèle pour le haut du domaine ; ceux des stations de mesure sont mesurés en un point, à la date indiquée."
+     ]
+    },
+    {
+     "h": "Un bon début ?",
+     "p": [
+      "C'est un bon début à Big White. À 1 891 m, notre modèle donne 42 cm aujourd'hui, plus qu'à cette date lors de 40 des 46 hivers passés (habituel : 26 cm).",
+      "À 1 456 m à Whistler Blackcomb, la saison est en retard : notre modèle ne donne que 55 cm, moins que les 77 cm habituels. Seuls 12 des 46 hivers passés avaient moins de neige à cet endroit un 10 novembre."
+     ]
+    }
+   ],
+   "advice": [
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Cherchez la neige en altitude et sur les pentes orientées au nord : elles la gardent le plus longtemps, les pentes sud la perdent en premier.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Manning Park Resort reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest canadien le 10 novembre 2026 (modèle de neige SnowScope) : Manning Park Resort, Big White, Whistler Blackcomb, Mount Cain Alpine Park, Tweedsmuir Ski Club."
+   }
+  },
+  "de": {
+   "title": "Wo liegt in Westkanada der meiste Schnee? In Manning Park Resort, mit 110 cm (10. November)",
+   "description": "Wo liegt heute in Westkanada der meiste Schnee? Am meisten Schnee in Westkanada liegt in Manning Park Resort: etwa 110 cm in den oberen Hängen, laut …",
+   "lede": "Wo liegt heute in Westkanada der meiste Schnee? Am meisten Schnee in Westkanada liegt in Manning Park Resort: etwa 110 cm in den oberen Hängen, laut unserem Schneemodell. Danach kommen Big White (85 cm) und Whistler Blackcomb (83 cm). 41 von 57 Skigebieten in Westkanada haben heute Schnee in den oberen Hängen, und unser Modell zählt 260.060 km² Schneefläche.",
+   "sections": [
+    {
+     "h": "Der Schnee von heute",
+     "p": [
+      "Die Schneefläche schrumpfte von 270.720 km² am 8. November auf heute 260.060 km², und unsere Prognose ergibt 235.100 km² am 13. November.",
+      "Die Höhe macht den Unterschied: In Big White zeigt unser Modell 62 cm am Gipfel (2.271 m), 10 cm an der Mittelstation (1.891 m) und 0 cm im Tal (1.512 m)."
+     ]
+    },
+    {
+     "h": "Die nächsten Tage",
+     "p": [
+      "Bis zum 13. November ergibt unsere Prognose 53 cm in Whistler Blackcomb, 40 cm in Mount Cain Alpine Park und 38 cm in Tweedsmuir Ski Club.",
+      "In Manning Park Resort liegt die Nullgradgrenze am 11. November zwischen 2.800 m und 3.030 m, über dem höchsten Punkt des Skigebiets (1.789 m): An diesem Tag ist auf allen Hängen Regen oder nasser Schnee möglich.",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    },
+    {
+     "h": "Am Boden gemessen",
+     "p": [
+      "Die Werte der Skigebiete sind Modellschätzungen für die oberen Hänge; Messstationen messen an einem Punkt, am angegebenen Tag."
+     ]
+    },
+    {
+     "h": "Ein guter Start?",
+     "p": [
+      "Ein guter Start in Big White: Auf 1.891 m zeigt unser Modell heute 42 cm, mehr als an diesem Datum in 40 der letzten 46 Winter (üblich: 26 cm).",
+      "Auf 1.456 m in Whistler Blackcomb ist die Saison spät dran: Unser Modell zeigt nur 55 cm, weniger als die üblichen 77 cm. Nur 12 der letzten 46 Winter hatten dort am 10. November weniger Schnee."
+     ]
+    }
+   ],
+   "advice": [
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Früher Schnee ist dünn. Bleib auf offenen, präparierten Pisten: Steine und Gras liegen oft knapp darunter.",
+    "Such den Schnee weit oben und an Nordhängen: Dort hält er am längsten, Südhänge verlieren ihn zuerst in der Sonne.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Manning Park Resort Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe in Westkanada am 10. November 2026 (SnowScope-Schneemodell): Manning Park Resort, Big White, Whistler Blackcomb, Mount Cain Alpine Park, Tweedsmuir Ski Club."
+   }
+  },
+  "it": {
+   "title": "Dov'è la neve più alta nel Canada occidentale? A Manning Park Resort, con 110 cm (10 novembre)",
+   "description": "Dov'è oggi la neve più alta nel Canada occidentale? La neve più abbondante nel Canada occidentale è a Manning Park Resort: circa 110 cm sui pendii …",
+   "lede": "Dov'è oggi la neve più alta nel Canada occidentale? La neve più abbondante nel Canada occidentale è a Manning Park Resort: circa 110 cm sui pendii superiori, secondo il nostro modello neve. Poi vengono Big White (85 cm) e Whistler Blackcomb (83 cm). 41 località su 57 nel Canada occidentale hanno oggi neve sui pendii superiori, e il nostro modello conta 260.060 km² di superficie innevata.",
+   "sections": [
+    {
+     "h": "La neve di oggi",
+     "p": [
+      "La superficie innevata è passata da 270.720 km² il 8 novembre a 260.060 km² oggi, e la nostra previsione indica 235.100 km² il 13 novembre.",
+      "La quota conta: a Big White il nostro modello indica 62 cm in vetta (2.271 m), 10 cm a metà montagna (1.891 m) e 0 cm alla base (1.512 m)."
+     ]
+    },
+    {
+     "h": "I prossimi giorni",
+     "p": [
+      "Fino al 13 novembre la nostra previsione indica 53 cm a Whistler Blackcomb, 40 cm a Mount Cain Alpine Park e 38 cm a Tweedsmuir Ski Club.",
+      "A Manning Park Resort lo zero termico sale tra 2.800 m e 3.030 m il 11 novembre, sopra la quota massima della località (1.789 m): quel giorno pioggia o neve bagnata sono possibili su tutti i pendii.",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    },
+    {
+     "h": "Misurato al suolo",
+     "p": [
+      "I valori delle località sono stime del modello per i pendii superiori; le stazioni misurano in un punto, alla data indicata."
+     ]
+    },
+    {
+     "h": "Un buon inizio?",
+     "p": [
+      "Un buon inizio a Big White: a 1.891 m il nostro modello indica oggi 42 cm, più che in questa data in 40 dei 46 inverni passati (abituale: 26 cm).",
+      "A 1.456 m a Whistler Blackcomb la stagione è in ritardo: il nostro modello indica solo 55 cm, meno dei 77 cm abituali. Solo 12 dei 46 inverni passati avevano meno neve lì il 10 novembre."
+     ]
+    }
+   ],
+   "advice": [
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "La neve di inizio stagione è sottile. Resta sulle piste aperte e battute: sassi ed erba sono appena sotto.",
+    "Cerca la neve in quota e sui versanti nord: la conservano più a lungo, mentre i versanti sud la perdono per primi al sole.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Manning Park Resort riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve nel Canada occidentale il 10 novembre 2026 (modello neve SnowScope): Manning Park Resort, Big White, Whistler Blackcomb, Mount Cain Alpine Park, Tweedsmuir Ski Club."
+   }
+  },
+  "es": {
+   "title": "¿Dónde hay más nieve en el oeste de Canadá? En Manning Park Resort, con 110 cm (10 de noviembre)",
+   "description": "¿Dónde hay hoy más nieve en el oeste de Canadá? Donde más nieve hay en el oeste de Canadá es en Manning Park Resort: unos 110 cm en las pistas altas, …",
+   "lede": "¿Dónde hay hoy más nieve en el oeste de Canadá? Donde más nieve hay en el oeste de Canadá es en Manning Park Resort: unos 110 cm en las pistas altas, según nuestro modelo de nieve. Después vienen Big White (85 cm) y Whistler Blackcomb (83 cm). 41 de 57 estaciones en el oeste de Canadá tienen hoy nieve en las pistas altas, y nuestro modelo cuenta 260.060 km² de superficie nevada.",
+   "sections": [
+    {
+     "h": "La nieve de hoy",
+     "p": [
+      "La superficie nevada pasó de 270.720 km² el 8 de noviembre a 260.060 km² hoy, y nuestra previsión da 235.100 km² el 13 de noviembre.",
+      "La altitud cuenta: en Big White, nuestro modelo da 62 cm en la cota alta (2271 m), 10 cm a media montaña (1891 m) y 0 cm en la base (1512 m)."
+     ]
+    },
+    {
+     "h": "Los próximos días",
+     "p": [
+      "Hasta el 13 de noviembre, nuestra previsión da 53 cm en Whistler Blackcomb, 40 cm en Mount Cain Alpine Park y 38 cm en Tweedsmuir Ski Club.",
+      "En Manning Park Resort, la cota de congelación llega a 2800 m-3030 m el 11 de noviembre, por encima de la cota alta de la estación (1789 m): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    },
+    {
+     "h": "Medido en el suelo",
+     "p": [
+      "Las cifras de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida miden en un punto, en la fecha indicada."
+     ]
+    },
+    {
+     "h": "¿Un buen comienzo?",
+     "p": [
+      "Buen comienzo en Big White: a 1891 m, nuestro modelo da hoy 42 cm, más que en esta fecha en 40 de los 46 inviernos pasados (lo habitual: 26 cm).",
+      "A 1456 m en Whistler Blackcomb la temporada va con retraso: nuestro modelo da solo 55 cm, menos que los 77 cm habituales. Solo 12 de los 46 inviernos pasados tenían menos nieve allí el 10 de noviembre."
+     ]
+    }
+   ],
+   "advice": [
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "La nieve de principio de temporada es fina. Quédate en pistas abiertas y pisadas: piedras y hierba están justo debajo.",
+    "Busca la nieve en lo alto y en las laderas orientadas al norte: la guardan más tiempo; las orientadas al sur la pierden antes.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Manning Park Resort recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de Canadá el 10 de noviembre 2026 (modelo de nieve de SnowScope): Manning Park Resort, Big White, Whistler Blackcomb, Mount Cain Alpine Park, Tweedsmuir Ski Club."
+   }
+  },
+  "ar": {
+   "title": "فين كاين أكثر تلج فغرب كندا؟ ف Manning Park Resort، ب 110 سم (10 نونبر)",
+   "description": "فين كاين أكثر تلج فغرب كندا اليوم؟ أكثر تلج فغرب كندا كاين ف Manning Park Resort: تقريبا 110 سم فالجهة الفوقانية، حسب الموديل ديال التلج ديالنا. من …",
+   "lede": "فين كاين أكثر تلج فغرب كندا اليوم؟ أكثر تلج فغرب كندا كاين ف Manning Park Resort: تقريبا 110 سم فالجهة الفوقانية، حسب الموديل ديال التلج ديالنا. من بعدها Big White (85 سم) و Whistler Blackcomb (83 سم). 41 محطة من 57 فغرب كندا فيهم التلج فالجهة الفوقانية اليوم، والموديل ديالنا كيحسب 260060 كم² ديال الأرض اللي فيها التلج.",
+   "sections": [
+    {
+     "h": "التلج ديال اليوم",
+     "p": [
+      "المساحة اللي فيها التلج دازت من 270720 كم² نهار 8 نونبر ل 260060 كم² اليوم، والتوقعات ديالنا كتعطي 235100 كم² نهار 13 نونبر.",
+      "العلو مهم: ف Big White، الموديل ديالنا كيعطي 62 سم فالفوق (2271 م)، 10 سم فالوسط (1891 م) و 0 سم فالتحت (1512 م)."
+     ]
+    },
+    {
+     "h": "الأيام الجاية",
+     "p": [
+      "حتى ل 13 نونبر، التوقعات ديالنا كتعطي 53 سم ف Whistler Blackcomb، 40 سم ف Mount Cain Alpine Park و 38 سم ف Tweedsmuir Ski Club.",
+      "ف Manning Park Resort، علو الجليد غادي يكون بين 2800 م و 3030 م نهار 11 نونبر، فوق أعلى نقطة فالمحطة (1789 م): داك النهار يمكن تكون الشتا ولا تلج مبلول فكاع البيستات.",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    },
+    {
+     "h": "مقاس فالأرض",
+     "p": [
+      "الأرقام ديال المحطات ديال التزلج تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس كتقيس فنقطة وحدة، فالتاريخ المكتوب."
+     ]
+    },
+    {
+     "h": "واش بداية مزيانة؟",
+     "p": [
+      "بداية مزيانة ف Big White: على علو 1891 م، الموديل ديالنا فيه اليوم 42 سم، أكثر من هاد التاريخ ف 40 من 46 ديال الشتوات اللي فاتو (العادي: 26 سم).",
+      "على علو 1456 م ف Whistler Blackcomb الموسم متأخر: الموديل ديالنا فيه غير 55 سم، أقل من 77 سم العادية. غير 12 من 46 ديال الشتوات اللي فاتو كان فيهم تلج أقل تما نهار 10 نونبر."
+     ]
+    }
+   ],
+   "advice": [
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "التلج ديال بداية الموسم رقيق. بقى فالبيستات المحلولة والمدكوكة: الحجر والربيع يمكن يكونو تحت نيشان.",
+    "قلب على التلج فالعلو وفالجهات اللي كتشوف للشمال: كيحافظو عليه كثر، والجهات اللي كتشوف للجنوب كيمشي ليهم بالشمس.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Manning Park Resort يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب كندا نهار 10 نونبر 2026 (الموديل ديال SnowScope): Manning Park Resort, Big White, Whistler Blackcomb, Mount Cain Alpine Park, Tweedsmuir Ski Club."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  },
+  "fr": {
+   "writer": "template"
+  },
+  "de": {
+   "writer": "template"
+  },
+  "it": {
+   "writer": "template"
+  },
+  "es": {
+   "writer": "template"
+  },
+  "ar": {
+   "writer": "template"
+  }
+ },
+ "words_en": 288,
+ "indexable": true,
+ "main": {
+  "slug": "manning_park_resort",
+  "name": "Manning Park Resort",
+  "lat": 49.077,
+  "lon": -120.8384
+ },
+ "places": [
+  {
+   "name": "Manning Park Resort",
+   "lat": 49.077,
+   "lon": -120.8384
+  },
+  {
+   "name": "Big White",
+   "lat": 49.7358,
+   "lon": -118.9487
+  },
+  {
+   "name": "Whistler Blackcomb",
+   "lat": 50.0888,
+   "lon": -122.9419
+  },
+  {
+   "name": "Mount Cain Alpine Park",
+   "lat": 50.2232,
+   "lon": -126.3468
+  },
+  {
+   "name": "Tweedsmuir Ski Club",
+   "lat": 52.5367,
+   "lon": -125.8476
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "manning_park_resort",
+   "name": "Manning Park Resort"
+  },
+  {
+   "slug": "big_white_ski_resort",
+   "name": "Big White"
+  },
+  {
+   "slug": "whistler",
+   "name": "Whistler Blackcomb"
+  },
+  {
+   "slug": "mount_cain_alpine_park",
+   "name": "Mount Cain Alpine Park"
+  },
+  {
+   "slug": "tweedsmuir_ski_club",
+   "name": "Tweedsmuir Ski Club"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "manning_park_resort",
+    "name": "Manning Park Resort",
+    "depth": 110,
+    "new72": 18,
+    "next": 0,
+    "top_m": 1789
+   },
+   {
+    "slug": "big_white_ski_resort",
+    "name": "Big White",
+    "depth": 85,
+    "new72": 4,
+    "next": 0,
+    "top_m": 2271
+   },
+   {
+    "slug": "whistler",
+    "name": "Whistler Blackcomb",
+    "depth": 83,
+    "new72": 76,
+    "next": 53,
+    "top_m": 2259
+   },
+   {
+    "slug": "mount_cain_alpine_park",
+    "name": "Mount Cain Alpine Park",
+    "depth": 59,
+    "new72": 45,
+    "next": 40,
+    "top_m": 1616
+   },
+   {
+    "slug": "tweedsmuir_ski_club",
+    "name": "Tweedsmuir Ski Club",
+    "depth": 56,
+    "new72": 21,
+    "next": 38,
+    "top_m": 1650
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Avalanche Canada",
+   "url": "https://avalanche.ca/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@49.077,-120.838,9.0",
+ "seconds": 0.0,
+ "facts_used": 27,
+ "similarity": {
+  "max": 0.378,
+  "with": "western-canada-snow-depth-today-5-november-2026"
+ },
+ "publish_utc": "2026-11-10T14:19:41Z"
+}
