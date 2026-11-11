@@ -1,0 +1,813 @@
+{
+ "id": "2026-11-11-us_west-history",
+ "slug": "us-west-snow-vs-past-winters-11-november-2026",
+ "date": "2026-11-11",
+ "published_utc": "2026-11-11T18:44:22Z",
+ "updated_utc": "2026-11-11T18:44:22Z",
+ "region": "US_WEST",
+ "angle": "history",
+ "score": 49,
+ "signature": "wolf_creek_ski_area:6|telluride_ski_area:4|silverton_mountain:8",
+ "keyword": {
+  "family": "vs-normal",
+  "entity": "us_west",
+  "region": "US_WEST",
+  "date": "2026-11-11"
+ },
+ "tags": [
+  "past-winters",
+  "snow-depth"
+ ],
+ "facts": {
+  "angle": "snow_vs_past_winters",
+  "region": "US West",
+  "date": "2026-11-11",
+  "weekday": "Wednesday",
+  "model_run": "2026-11-11",
+  "forecast_days": [
+   "2026-11-12",
+   "2026-11-13",
+   "2026-11-14"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 134530,
+   "resorts_with_snow": 123,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-09",
+   "snow_covered_area_km2": 157120,
+   "resorts_with_snow": 130
+  },
+  "region_forecast": {
+   "date": "2026-11-14",
+   "snow_covered_area_km2": 213380,
+   "resorts_with_snow": 139
+  },
+  "question": "Is there more or less snow than usual for the date, compared with the past 46 winters?",
+  "past_winters_period": "1980-81 to 2025-26",
+  "resorts": [
+   {
+    "name": "Wolf Creek",
+    "country": "United States",
+    "top_m": 3585,
+    "base_m": 3128,
+    "depth_cm_upper_slopes_today": 87,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 8,
+    "slug": "wolf_creek_ski_area",
+    "new_cm_by_day": {
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 8
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3128,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 12
+     },
+     "mid": {
+      "elev_m": 3356,
+      "depth_cm_model": 37,
+      "new_cm_next_7_days": 13
+     },
+     "top": {
+      "elev_m": 3585,
+      "depth_cm_model": 47,
+      "new_cm_next_7_days": 13
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3360,
+      "max": 4040
+     },
+     "2026-11-12": {
+      "min": 2920,
+      "max": 3940
+     },
+     "2026-11-13": {
+      "min": 2670,
+      "max": 3580
+     },
+     "2026-11-14": {
+      "min": 2700,
+      "max": 3210
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 3356,
+     "snow_cm_at_this_height_today_model": 66,
+     "deeper_than_n_of_past_winters": 32,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 20
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-03"
+    }
+   },
+   {
+    "name": "Telluride",
+    "country": "United States",
+    "top_m": 3812,
+    "base_m": 2662,
+    "depth_cm_upper_slopes_today": 86,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 9,
+    "slug": "telluride_ski_area",
+    "new_cm_by_day": {
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 9
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2662,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 6
+     },
+     "mid": {
+      "elev_m": 3237,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 15
+     },
+     "top": {
+      "elev_m": 3812,
+      "depth_cm_model": 96,
+      "new_cm_next_7_days": 19
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3500,
+      "max": 4110
+     },
+     "2026-11-12": {
+      "min": 3370,
+      "max": 3960
+     },
+     "2026-11-13": {
+      "min": 2760,
+      "max": 3720
+     },
+     "2026-11-14": {
+      "min": 2790,
+      "max": 3330
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 3237,
+     "snow_cm_at_this_height_today_model": 20,
+     "deeper_than_n_of_past_winters": 21,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 24
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-09"
+    },
+    "nearest_station": {
+     "station": "Idarado",
+     "elev_m": 2981,
+     "depth_cm_measured": 5,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-10",
+     "km_away": 14.0
+    }
+   },
+   {
+    "name": "Silverton Mountain",
+    "country": "United States",
+    "top_m": 3345,
+    "base_m": 3143,
+    "depth_cm_upper_slopes_today": 58,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 7,
+    "slug": "silverton_mountain",
+    "new_cm_by_day": {
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 7
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3143,
+      "depth_cm_model": 18,
+      "new_cm_next_7_days": 13
+     },
+     "mid": {
+      "elev_m": 3244,
+      "depth_cm_model": 33,
+      "new_cm_next_7_days": 13
+     },
+     "top": {
+      "elev_m": 3345,
+      "depth_cm_model": 49,
+      "new_cm_next_7_days": 14
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3160,
+      "max": 4100
+     },
+     "2026-11-12": {
+      "min": 3000,
+      "max": 3940
+     },
+     "2026-11-13": {
+      "min": 2760,
+      "max": 3720
+     },
+     "2026-11-14": {
+      "min": 2790,
+      "max": 3330
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 3244,
+     "snow_cm_at_this_height_today_model": 79,
+     "deeper_than_n_of_past_winters": 42,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 17
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-09"
+    },
+    "nearest_station": {
+     "station": "Idarado",
+     "elev_m": 2981,
+     "depth_cm_measured": 5,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-10",
+     "km_away": 6.5
+    }
+   },
+   {
+    "name": "Purgatory Resort",
+    "country": "United States",
+    "top_m": 3291,
+    "base_m": 2696,
+    "depth_cm_upper_slopes_today": 57,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 12,
+    "slug": "purgatory_resort",
+    "new_cm_by_day": {
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 12
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2696,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 10
+     },
+     "mid": {
+      "elev_m": 2993,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 14
+     },
+     "top": {
+      "elev_m": 3291,
+      "depth_cm_model": 7,
+      "new_cm_next_7_days": 16
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3370,
+      "max": 4110
+     },
+     "2026-11-12": {
+      "min": 3230,
+      "max": 3940
+     },
+     "2026-11-13": {
+      "min": 2690,
+      "max": 3600
+     },
+     "2026-11-14": {
+      "min": 2730,
+      "max": 3280
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 2993,
+     "snow_cm_at_this_height_today_model": 10,
+     "deeper_than_n_of_past_winters": 19,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 14
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-09"
+    }
+   },
+   {
+    "name": "Lost Trail",
+    "country": "United States",
+    "top_m": 2495,
+    "base_m": 1960,
+    "depth_cm_upper_slopes_today": 49,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 1,
+    "slug": "lost_trail",
+    "new_cm_by_day": {
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1960,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 4
+     },
+     "mid": {
+      "elev_m": 2227,
+      "depth_cm_model": 5,
+      "new_cm_next_7_days": 5
+     },
+     "top": {
+      "elev_m": 2495,
+      "depth_cm_model": 10,
+      "new_cm_next_7_days": 5
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3740,
+      "max": 4000
+     },
+     "2026-11-12": {
+      "min": 3670,
+      "max": 4000
+     },
+     "2026-11-13": {
+      "min": 1970,
+      "max": 3620
+     },
+     "2026-11-14": {
+      "min": 2640,
+      "max": 2980
+     }
+    },
+    "past_winters": {
+     "height_m": 2227,
+     "snow_cm_at_this_height_today_model": 16,
+     "deeper_than_n_of_past_winters": 24,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 15
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-08"
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-snow-vs-past-winters-11-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-snow-vs-past-winters-11-november-2026/map_t.webp",
+   "bytes": 22140,
+   "snow_frac": 0.0537,
+   "weak": true
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Is this a good start to the winter in the US West? 2 of 5 resorts above normal (11 November)",
+   "description": "Is this a good start to the winter in the US West? 5 resorts in the US West, 46 past winters, one date: here is how today compares. Clearly above …",
+   "lede": "Is this a good start to the winter in the US West? 5 resorts in the US West, 46 past winters, one date: here is how today compares. Clearly above normal: 2. Confidence: good for the trend, lower for any single number.",
+   "sections": [
+    {
+     "h": "Today's snow map",
+     "p": [
+      "Top of this list: Wolf Creek, about 34 in (87 cm) up high. Then Telluride 34 in (86 cm) and Silverton Mountain 23 in (58 cm).",
+      "Snow-covered ground in the US West: 51,942 sq mi (134,530 km²). Resorts with snow: 123 of 195.",
+      "How sure are we? Resort values are model estimates for the upper slopes; stations are measurements, each at one point on the date shown."
+     ]
+    },
+    {
+     "h": "Is this normal?",
+     "p": [
+      "Wolf Creek, 11,010 ft (3,356 m): 26 in (66 cm) today. That beats this date in 32 of the past 46 winters (usual: 8 in (20 cm)). A good start.",
+      "Near average at Telluride: 8 in (20 cm) at 10,620 ft (3,237 m), deeper than in 21 of the past 46 winters on this date (usual: 9 in (24 cm)).",
+      "A strong opening at Silverton Mountain: our model has 31 in (79 cm) at 10,643 ft (3,244 m), deeper than on this date in 42 of the past 46 winters, against a usual 7 in (17 cm).",
+      "Purgatory Resort, 9,820 ft (2,993 m): 4 in (10 cm), close to normal (usual: 6 in (14 cm)); deeper than in 19 of the past 46 winters.",
+      "Near average at Lost Trail: 6 in (16 cm) at 7,306 ft (2,227 m), deeper than in 24 of the past 46 winters on this date (usual: 6 in (15 cm))."
+     ]
+    },
+    {
+     "h": "The forecast in short",
+     "p": [
+      "Forecast to 14 November: 5 in (12 cm) at Purgatory Resort, 4 in (9 cm) at Telluride and 3 in (8 cm) at Wolf Creek. Treat the later days with care.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "South-facing slopes take the most sun and melt first; high, north-facing slopes keep their snow the longest.",
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "Get a powder alert in the SnowScope app to know when Wolf Creek gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the US West on 11 November 2026 (SnowScope snow model): Wolf Creek, Telluride, Silverton Mountain, Purgatory Resort, Lost Trail."
+   }
+  },
+  "fr": {
+   "title": "Bon début d'hiver dans l'Ouest américain ? 2 stations sur 5 au-dessus de la normale (11 novembre)",
+   "description": "Est-ce un bon début d'hiver dans l'Ouest américain ? 5 stations dans l'Ouest américain, 46 hivers passés, une date : voici comment se situe …",
+   "lede": "Est-ce un bon début d'hiver dans l'Ouest américain ? 5 stations dans l'Ouest américain, 46 hivers passés, une date : voici comment se situe aujourd'hui. Nettement au-dessus de la normale : 2. Confiance : bonne pour la tendance, plus faible pour chaque chiffre pris seul.",
+   "sections": [
+    {
+     "h": "La carte de neige du jour",
+     "p": [
+      "En haut de la liste : Wolf Creek, environ 34 in (87 cm) en altitude. Puis Telluride 34 in (86 cm) et Silverton Mountain 23 in (58 cm).",
+      "Le compte du jour dans l'Ouest américain : 123 stations sur 195 avec de la neige en haut, 51 942 sq mi (134 530 km²) de sol enneigé.",
+      "Quelle confiance ? Les valeurs des stations de ski sont des estimations du modèle pour le haut du domaine ; les stations de mesure donnent des mesures, chacune en un point à la date indiquée."
+     ]
+    },
+    {
+     "h": "Est-ce normal ?",
+     "p": [
+      "Wolf Creek, 11 010 ft (3 356 m) : 26 in (66 cm) aujourd'hui. Mieux qu'à cette date lors de 32 des 46 hivers passés (habituel : 8 in (20 cm)). Un bon début.",
+      "Dans la moyenne à Telluride : 8 in (20 cm) à 10 620 ft (3 237 m), plus que lors de 21 des 46 hivers passés à cette date (habituel : 9 in (24 cm)).",
+      "Belle entrée en matière à Silverton Mountain : notre modèle donne 31 in (79 cm) à 10 643 ft (3 244 m), plus qu'à cette date lors de 42 des 46 hivers passés, contre 7 in (17 cm) d'habitude.",
+      "Purgatory Resort, 9 820 ft (2 993 m) : 4 in (10 cm), proche de la normale (habituel : 6 in (14 cm)) ; plus que lors de 19 des 46 hivers passés.",
+      "Dans la moyenne à Lost Trail : 6 in (16 cm) à 7 306 ft (2 227 m), plus que lors de 24 des 46 hivers passés à cette date (habituel : 6 in (15 cm))."
+     ]
+    },
+    {
+     "h": "La prévision en bref",
+     "p": [
+      "Prévision jusqu'au 14 novembre : 5 in (12 cm) à Purgatory Resort, 4 in (9 cm) à Telluride et 3 in (8 cm) à Wolf Creek. Prudence sur les derniers jours.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Les pentes sud prennent le plus de soleil et fondent d'abord ; les pentes nord en altitude gardent leur neige le plus longtemps.",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Wolf Creek reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest américain le 11 novembre 2026 (modèle de neige SnowScope) : Wolf Creek, Telluride, Silverton Mountain, Purgatory Resort, Lost Trail."
+   }
+  },
+  "de": {
+   "title": "Guter Winterstart im US-Westen? 2 von 5 Skigebieten über dem Normalwert (11. November)",
+   "description": "Ist das ein guter Winterstart im US-Westen? 5 Skigebiete im US-Westen, 46 frühere Winter, ein Datum: So schneidet heute ab. Deutlich über dem …",
+   "lede": "Ist das ein guter Winterstart im US-Westen? 5 Skigebiete im US-Westen, 46 frühere Winter, ein Datum: So schneidet heute ab. Deutlich über dem Normalwert: 2. Sicherheit: gut für den Trend, geringer für jede einzelne Zahl.",
+   "sections": [
+    {
+     "h": "Die Schneekarte von heute",
+     "p": [
+      "An der Spitze dieser Liste: Wolf Creek, etwa 34 in (87 cm) weit oben. Dann Telluride 34 in (86 cm) und Silverton Mountain 23 in (58 cm).",
+      "Die Zählung des Tages im US-Westen: 123 von 195 Skigebieten mit Schnee weit oben, 51.942 sq mi (134.530 km²) Schneefläche.",
+      "Wie sicher sind wir? Die Skigebietswerte sind Modellschätzungen für die oberen Hänge; Stationen sind Messungen, jede an einem Punkt am angegebenen Tag."
+     ]
+    },
+    {
+     "h": "Ist das normal?",
+     "p": [
+      "Wolf Creek, 11.010 ft (3.356 m): heute 26 in (66 cm). Das schlägt dieses Datum in 32 der letzten 46 Winter (üblich: 8 in (20 cm)). Ein guter Start.",
+      "Nahe am Durchschnitt in Telluride: 8 in (20 cm) auf 10.620 ft (3.237 m), mehr als in 21 der letzten 46 Winter an diesem Datum (üblich: 9 in (24 cm)).",
+      "Ein starker Auftakt in Silverton Mountain: Unser Modell zeigt 31 in (79 cm) auf 10.643 ft (3.244 m), mehr als an diesem Datum in 42 der letzten 46 Winter, bei üblichen 7 in (17 cm).",
+      "Purgatory Resort, 9.820 ft (2.993 m): 4 in (10 cm), nahe am Normalwert (üblich: 6 in (14 cm)); mehr als in 19 der letzten 46 Winter.",
+      "Nahe am Durchschnitt in Lost Trail: 6 in (16 cm) auf 7.306 ft (2.227 m), mehr als in 24 der letzten 46 Winter an diesem Datum (üblich: 6 in (15 cm))."
+     ]
+    },
+    {
+     "h": "Die Prognose in Kürze",
+     "p": [
+      "Prognose bis zum 14. November: 5 in (12 cm) in Purgatory Resort, 4 in (9 cm) in Telluride und 3 in (8 cm) in Wolf Creek. Die späteren Tage mit Vorsicht lesen.",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Südhänge bekommen die meiste Sonne und schmelzen zuerst; hohe Nordhänge halten ihren Schnee am längsten.",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Früher Schnee ist dünn. Bleib auf offenen, präparierten Pisten: Steine und Gras liegen oft knapp darunter.",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Wolf Creek Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe im US-Westen am 11. November 2026 (SnowScope-Schneemodell): Wolf Creek, Telluride, Silverton Mountain, Purgatory Resort, Lost Trail."
+   }
+  },
+  "it": {
+   "title": "Buon inizio d'inverno nell'Ovest degli USA? 2 località su 5 sopra la norma (11 novembre)",
+   "description": "È un buon inizio d'inverno nell'Ovest degli USA? 5 località nell'Ovest degli USA, 46 inverni passati, una data: ecco come si colloca oggi. Nettamente …",
+   "lede": "È un buon inizio d'inverno nell'Ovest degli USA? 5 località nell'Ovest degli USA, 46 inverni passati, una data: ecco come si colloca oggi. Nettamente sopra la norma: 2. Affidabilità: buona per la tendenza, minore per ogni singolo numero.",
+   "sections": [
+    {
+     "h": "La mappa neve di oggi",
+     "p": [
+      "In cima a questa lista: Wolf Creek, circa 34 in (87 cm) in alto. Poi Telluride 34 in (86 cm) e Silverton Mountain 23 in (58 cm).",
+      "Il conto del giorno nell'Ovest degli USA: 123 località su 195 con neve in alto, 51.942 sq mi (134.530 km²) di superficie innevata.",
+      "Quanto ne siamo sicuri? I valori delle località sono stime del modello per i pendii superiori; le stazioni sono misure, ognuna in un punto alla data indicata."
+     ]
+    },
+    {
+     "h": "È normale?",
+     "p": [
+      "Wolf Creek, 11.010 ft (3.356 m): 26 in (66 cm) oggi. Batte questa data in 32 dei 46 inverni passati (abituale: 8 in (20 cm)). Un buon inizio.",
+      "Vicino alla media a Telluride: 8 in (20 cm) a 10.620 ft (3.237 m), più che in 21 dei 46 inverni passati in questa data (abituale: 9 in (24 cm)).",
+      "Un avvio deciso a Silverton Mountain: il nostro modello indica 31 in (79 cm) a 10.643 ft (3.244 m), più che in questa data in 42 dei 46 inverni passati, contro un abituale di 7 in (17 cm).",
+      "Purgatory Resort, 9.820 ft (2.993 m): 4 in (10 cm), vicino alla norma (abituale: 6 in (14 cm)); più che in 19 dei 46 inverni passati.",
+      "Vicino alla media a Lost Trail: 6 in (16 cm) a 7.306 ft (2.227 m), più che in 24 dei 46 inverni passati in questa data (abituale: 6 in (15 cm))."
+     ]
+    },
+    {
+     "h": "La previsione in breve",
+     "p": [
+      "Previsione fino al 14 novembre: 5 in (12 cm) a Purgatory Resort, 4 in (9 cm) a Telluride e 3 in (8 cm) a Wolf Creek. Prendi i giorni più lontani con cautela.",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "I versanti sud prendono più sole e fondono per primi; i versanti nord in quota tengono la neve più a lungo.",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "La neve di inizio stagione è sottile. Resta sulle piste aperte e battute: sassi ed erba sono appena sotto.",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Wolf Creek riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve nell'Ovest degli USA il 11 novembre 2026 (modello neve SnowScope): Wolf Creek, Telluride, Silverton Mountain, Purgatory Resort, Lost Trail."
+   }
+  },
+  "es": {
+   "title": "¿Buen comienzo de invierno en el oeste de EE. UU.? 2 de 5 estaciones por encima de lo normal (11 de noviembre)",
+   "description": "¿Es un buen comienzo de invierno en el oeste de EE. UU.? 5 estaciones en el oeste de EE. UU., 46 inviernos pasados, una fecha: así queda hoy. …",
+   "lede": "¿Es un buen comienzo de invierno en el oeste de EE. UU.? 5 estaciones en el oeste de EE. UU., 46 inviernos pasados, una fecha: así queda hoy. Claramente por encima de lo normal: 2. Confianza: buena para la tendencia, menor para cada cifra suelta.",
+   "sections": [
+    {
+     "h": "El mapa de nieve de hoy",
+     "p": [
+      "Arriba de la lista: Wolf Creek, unos 34 in (87 cm) en altura. Luego Telluride 34 in (86 cm) y Silverton Mountain 23 in (58 cm).",
+      "El recuento del día en el oeste de EE. UU.: 123 de 195 estaciones con nieve arriba, 51.942 sq mi (134.530 km²) de suelo nevado.",
+      "¿Qué confianza tenemos? Los valores de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida dan medidas, cada una en un punto en la fecha indicada."
+     ]
+    },
+    {
+     "h": "¿Es normal?",
+     "p": [
+      "Wolf Creek, 11.010 ft (3356 m): 26 in (66 cm) hoy. Supera esta fecha en 32 de los 46 inviernos pasados (lo habitual: 8 in (20 cm)). Buen comienzo.",
+      "En la media en Telluride: 8 in (20 cm) a 10.620 ft (3237 m), más que en 21 de los 46 inviernos pasados en esta fecha (lo habitual: 9 in (24 cm)).",
+      "Arranque fuerte en Silverton Mountain: nuestro modelo da 31 in (79 cm) a 10.643 ft (3244 m), más que en esta fecha en 42 de los 46 inviernos pasados, frente a unos 7 in (17 cm) habituales.",
+      "Purgatory Resort, 9820 ft (2993 m): 4 in (10 cm), cerca de lo normal (lo habitual: 6 in (14 cm)); más que en 19 de los 46 inviernos pasados.",
+      "En la media en Lost Trail: 6 in (16 cm) a 7306 ft (2227 m), más que en 24 de los 46 inviernos pasados en esta fecha (lo habitual: 6 in (15 cm))."
+     ]
+    },
+    {
+     "h": "La previsión en breve",
+     "p": [
+      "Previsión hasta el 14 de noviembre: 5 in (12 cm) en Purgatory Resort, 4 in (9 cm) en Telluride y 3 in (8 cm) en Wolf Creek. Cuidado con los últimos días.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Las laderas sur reciben más sol y se funden antes; las laderas norte en altura guardan su nieve más tiempo.",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "La nieve de principio de temporada es fina. Quédate en pistas abiertas y pisadas: piedras y hierba están justo debajo.",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Wolf Creek recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de EE. UU. el 11 de noviembre 2026 (modelo de nieve de SnowScope): Wolf Creek, Telluride, Silverton Mountain, Purgatory Resort, Lost Trail."
+   }
+  },
+  "ar": {
+   "title": "واش بداية مزيانة ديال الشتا فغرب ميريكان؟ 2 محطات من 5 فوق العادي (11 نونبر)",
+   "description": "واش هادي بداية مزيانة ديال الشتا فغرب ميريكان؟ 5 محطات فغرب ميريكان، 46 ديال الشتوات اللي فاتو، تاريخ واحد: ها كيفاش كيتقارن اليوم. فوق العادي بوضوح: …",
+   "lede": "واش هادي بداية مزيانة ديال الشتا فغرب ميريكان؟ 5 محطات فغرب ميريكان، 46 ديال الشتوات اللي فاتو، تاريخ واحد: ها كيفاش كيتقارن اليوم. فوق العادي بوضوح: 2. التأكد: مزيان فالاتجاه، أقل فكل رقم بوحدو.",
+   "sections": [
+    {
+     "h": "الخريطة ديال التلج اليوم",
+     "p": [
+      "فالراس ديال اللائحة: Wolf Creek، تقريبا 34 إنش (87 سم) فالعلو. ومن بعد Telluride 34 إنش (86 سم) و Silverton Mountain 23 إنش (58 سم).",
+      "الحساب ديال اليوم فغرب ميريكان: 123 محطة من 195 فيهم التلج فالعلو، و 51942 ميل² (134530 كم²) ديال الأرض اللي فيها التلج.",
+      "شحال حنا متأكدين؟ القيم ديال المحطات تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس قياسات، كل وحدة فنقطة وحدة فالتاريخ المكتوب."
+     ]
+    },
+    {
+     "h": "واش هادشي عادي؟",
+     "p": [
+      "Wolf Creek، 11010 قدم (3356 م): 26 إنش (66 سم) اليوم. هادشي كيفوت هاد التاريخ ف 32 من 46 ديال الشتوات اللي فاتو (العادي: 8 إنش (20 سم)). بداية مزيانة.",
+      "قريب من المتوسط ف Telluride: 8 إنش (20 سم) على علو 10620 قدم (3237 م)، أكثر من 21 من 46 ديال الشتوات اللي فاتو فهاد التاريخ (العادي: 9 إنش (24 سم)).",
+      "بداية قوية ف Silverton Mountain: الموديل ديالنا فيه 31 إنش (79 سم) على علو 10643 قدم (3244 م)، أكثر من هاد التاريخ ف 42 من 46 ديال الشتوات اللي فاتو، والعادي 7 إنش (17 سم).",
+      "Purgatory Resort، 9820 قدم (2993 م): 4 إنش (10 سم)، قريبة من العادي (العادي: 6 إنش (14 سم))؛ أكثر من 19 من 46 ديال الشتوات اللي فاتو.",
+      "قريب من المتوسط ف Lost Trail: 6 إنش (16 سم) على علو 7306 قدم (2227 م)، أكثر من 24 من 46 ديال الشتوات اللي فاتو فهاد التاريخ (العادي: 6 إنش (15 سم))."
+     ]
+    },
+    {
+     "h": "التوقعات باختصار",
+     "p": [
+      "التوقعات حتى ل 14 نونبر: 5 إنش (12 سم) ف Purgatory Resort، 4 إنش (9 سم) ف Telluride و 3 إنش (8 سم) ف Wolf Creek. الأيام اللخرين خاصهم الحذر.",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "الجهات اللي كتشوف للجنوب كتاخد أكثر شمس وكيدوب فيها التلج اللول؛ الجهات العاليين اللي كتشوف للشمال كيحافظو عليه أطول وقت.",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "التلج ديال بداية الموسم رقيق. بقى فالبيستات المحلولة والمدكوكة: الحجر والربيع يمكن يكونو تحت نيشان.",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Wolf Creek يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب ميريكان نهار 11 نونبر 2026 (الموديل ديال SnowScope): Wolf Creek, Telluride, Silverton Mountain, Purgatory Resort, Lost Trail."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "de": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "it": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "es": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "sat"
+  }
+ },
+ "words_en": 312,
+ "indexable": true,
+ "main": {
+  "slug": "wolf_creek_ski_area",
+  "name": "Wolf Creek",
+  "lat": 37.4632,
+  "lon": -106.7905
+ },
+ "places": [
+  {
+   "name": "Wolf Creek",
+   "lat": 37.4632,
+   "lon": -106.7905
+  },
+  {
+   "name": "Telluride",
+   "lat": 37.9197,
+   "lon": -107.8348
+  },
+  {
+   "name": "Silverton Mountain",
+   "lat": 37.8773,
+   "lon": -107.6562
+  },
+  {
+   "name": "Purgatory Resort",
+   "lat": 37.6261,
+   "lon": -107.8265
+  },
+  {
+   "name": "Lost Trail",
+   "lat": 45.6962,
+   "lon": -113.9558
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "wolf_creek_ski_area",
+   "name": "Wolf Creek"
+  },
+  {
+   "slug": "telluride_ski_area",
+   "name": "Telluride"
+  },
+  {
+   "slug": "silverton_mountain",
+   "name": "Silverton Mountain"
+  },
+  {
+   "slug": "purgatory_resort",
+   "name": "Purgatory Resort"
+  },
+  {
+   "slug": "lost_trail",
+   "name": "Lost Trail"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "wolf_creek_ski_area",
+    "name": "Wolf Creek",
+    "depth": 87,
+    "new72": 0,
+    "next": 8,
+    "top_m": 3585
+   },
+   {
+    "slug": "telluride_ski_area",
+    "name": "Telluride",
+    "depth": 86,
+    "new72": 0,
+    "next": 9,
+    "top_m": 3812
+   },
+   {
+    "slug": "silverton_mountain",
+    "name": "Silverton Mountain",
+    "depth": 58,
+    "new72": 0,
+    "next": 7,
+    "top_m": 3345
+   },
+   {
+    "slug": "purgatory_resort",
+    "name": "Purgatory Resort",
+    "depth": 57,
+    "new72": 0,
+    "next": 12,
+    "top_m": 3291
+   },
+   {
+    "slug": "lost_trail",
+    "name": "Lost Trail",
+    "depth": 49,
+    "new72": 0,
+    "next": 1,
+    "top_m": 2495
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Colorado Avalanche Information Center",
+   "url": "https://avalanche.state.co.us/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@37.463,-106.790,9.0",
+ "seconds": 0.0,
+ "facts_used": 35,
+ "voice": "sat",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 13.3,
+  "after": 13.3,
+  "with": "us-west-mt-shasta-ski-park-snow-forecast-11-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.118,
+  "with": "us-west-where-to-ski-this-weekend-11-november-2026"
+ },
+ "publish_utc": "2026-11-11T18:44:22Z"
+}

@@ -1,0 +1,828 @@
+{
+ "id": "2026-11-11-us_west-isotherm",
+ "slug": "us-west-freezing-level-snow-line-11-november-2026",
+ "date": "2026-11-11",
+ "published_utc": "2026-11-11T18:44:22Z",
+ "updated_utc": "2026-11-11T18:44:22Z",
+ "region": "US_WEST",
+ "angle": "isotherm",
+ "score": 58,
+ "signature": "aspen_snowmass:4000|wolf_creek_ski_area:4000|big_sky:4000",
+ "keyword": {
+  "family": "snow-line",
+  "entity": "us_west",
+  "region": "US_WEST",
+  "date": "2026-11-11"
+ },
+ "tags": [
+  "snow-line",
+  "forecast",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "freezing_level_analysis",
+  "region": "US West",
+  "date": "2026-11-11",
+  "weekday": "Wednesday",
+  "model_run": "2026-11-11",
+  "forecast_days": [
+   "2026-11-12",
+   "2026-11-13",
+   "2026-11-14"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 134530,
+   "resorts_with_snow": 123,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-09",
+   "snow_covered_area_km2": 157120,
+   "resorts_with_snow": 130
+  },
+  "region_forecast": {
+   "date": "2026-11-14",
+   "snow_covered_area_km2": 213380,
+   "resorts_with_snow": 139
+  },
+  "question": "How high is the 0 °C level in the next days, where does rain turn to snow, and is rain falling on the snowpack?",
+  "snow_line_below_freezing_level_m": 300,
+  "region_freezing_level_m_by_day": {
+   "2026-11-11": {
+    "lowest": 3360,
+    "highest": 4200
+   },
+   "2026-11-12": {
+    "lowest": 2920,
+    "highest": 4160
+   },
+   "2026-11-13": {
+    "lowest": 2670,
+    "highest": 3930
+   },
+   "2026-11-14": {
+    "lowest": 2540,
+    "highest": 3290
+   }
+  },
+  "forecast_points": [
+   {
+    "place": "Palisades Tahoe",
+    "elev_m": 2750,
+    "precip_mm_total_next_days": 82,
+    "precip_mm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 23,
+     "2026-11-14": 35,
+     "2026-11-15": 0,
+     "2026-11-16": 24
+    },
+    "freezing_level_m_when_wet": 2270,
+    "snow_line_m_when_wet": 1970,
+    "share_of_precip_as_snow_at_this_height_pct": 100
+   },
+   {
+    "place": "Mt. Baker",
+    "elev_m": 1540,
+    "precip_mm_total_next_days": 74,
+    "precip_mm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 3,
+     "2026-11-14": 14,
+     "2026-11-15": 41,
+     "2026-11-16": 16
+    },
+    "freezing_level_m_when_wet": 1850,
+    "snow_line_m_when_wet": 1550,
+    "share_of_precip_as_snow_at_this_height_pct": 40
+   },
+   {
+    "place": "Eldora",
+    "elev_m": 3230,
+    "precip_mm_total_next_days": 2,
+    "precip_mm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 0,
+     "2026-11-15": 2,
+     "2026-11-16": 0
+    },
+    "freezing_level_m_when_wet": 3130,
+    "snow_line_m_when_wet": 2830,
+    "share_of_precip_as_snow_at_this_height_pct": 100
+   }
+  ],
+  "notes": [
+   "0 °C level = height where the air temperature crosses 0 °C (forecast, daily lowest and highest)",
+   "snow line = about 300 m below the 0 °C level, at the warmest hours of the day",
+   "rain-on-snow risk = snow on the slopes and a snow line above mid-mountain on a day with precipitation"
+  ],
+  "resorts": [
+   {
+    "name": "Aspen Snowmass",
+    "country": "United States",
+    "top_m": 3815,
+    "base_m": 2474,
+    "depth_cm_upper_slopes_today": 36,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 2,
+    "slug": "aspen_snowmass",
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3580,
+      "max": 3900
+     },
+     "2026-11-12": {
+      "min": 2920,
+      "max": 3960
+     },
+     "2026-11-13": {
+      "min": 2790,
+      "max": 3930
+     },
+     "2026-11-14": {
+      "min": 2650,
+      "max": 3290
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-11": 3600,
+     "2026-11-12": 3700,
+     "2026-11-13": 3600,
+     "2026-11-14": 3000
+    },
+    "days_snow_line_above_top": [],
+    "days_snow_line_above_base": [
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-13"
+    ]
+   },
+   {
+    "name": "Wolf Creek",
+    "country": "United States",
+    "top_m": 3585,
+    "base_m": 3128,
+    "depth_cm_upper_slopes_today": 87,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 8,
+    "slug": "wolf_creek_ski_area",
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3360,
+      "max": 4040
+     },
+     "2026-11-12": {
+      "min": 2920,
+      "max": 3940
+     },
+     "2026-11-13": {
+      "min": 2670,
+      "max": 3580
+     },
+     "2026-11-14": {
+      "min": 2700,
+      "max": 3210
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-11": 3700,
+     "2026-11-12": 3600,
+     "2026-11-13": 3300,
+     "2026-11-14": 2900
+    },
+    "days_snow_line_above_top": [
+     "2026-11-11",
+     "2026-11-12"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Big Sky Resort",
+    "country": "United States",
+    "top_m": 3402,
+    "base_m": 2078,
+    "depth_cm_upper_slopes_today": 48,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "big_sky",
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3500,
+      "max": 3880
+     },
+     "2026-11-12": {
+      "min": 3720,
+      "max": 3980
+     },
+     "2026-11-13": {
+      "min": 3020,
+      "max": 3680
+     },
+     "2026-11-14": {
+      "min": 2640,
+      "max": 3020
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-11": 3600,
+     "2026-11-12": 3700,
+     "2026-11-13": 3400,
+     "2026-11-14": 2700
+    },
+    "days_snow_line_above_top": [
+     "2026-11-11",
+     "2026-11-12"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-13"
+    ]
+   },
+   {
+    "name": "Purgatory Resort",
+    "country": "United States",
+    "top_m": 3291,
+    "base_m": 2696,
+    "depth_cm_upper_slopes_today": 57,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 12,
+    "slug": "purgatory_resort",
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3370,
+      "max": 4110
+     },
+     "2026-11-12": {
+      "min": 3230,
+      "max": 3940
+     },
+     "2026-11-13": {
+      "min": 2690,
+      "max": 3600
+     },
+     "2026-11-14": {
+      "min": 2730,
+      "max": 3280
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-11": 3800,
+     "2026-11-12": 3600,
+     "2026-11-13": 3300,
+     "2026-11-14": 3000
+    },
+    "days_snow_line_above_top": [
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-13",
+     "2026-11-14"
+    ]
+   },
+   {
+    "name": "Brighton Resort",
+    "country": "United States",
+    "top_m": 3185,
+    "base_m": 2666,
+    "depth_cm_upper_slopes_today": 46,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 10,
+    "slug": "brighton_resort",
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 4150,
+      "max": 4200
+     },
+     "2026-11-12": {
+      "min": 3600,
+      "max": 4160
+     },
+     "2026-11-13": {
+      "min": 2870,
+      "max": 3530
+     },
+     "2026-11-14": {
+      "min": 2540,
+      "max": 3030
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-11": 3900,
+     "2026-11-12": 3900,
+     "2026-11-13": 3200,
+     "2026-11-14": 2700
+    },
+    "days_snow_line_above_top": [
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-11",
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-13"
+    ]
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-freezing-level-snow-line-11-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-freezing-level-snow-line-11-november-2026/map_t.webp",
+   "bytes": 26426,
+   "snow_frac": 0.0525,
+   "weak": true
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "US West freezing level: 0 °C from 8,333 ft to 13,780 ft, snow line up to 12,795 ft (11 November)",
+   "description": "Over the next days the 0 °C level in the US West should move between 8,333 ft (2,540 m) and 13,780 ft (4,200 m), according to our forecast. At the …",
+   "lede": "Over the next days the 0 °C level in the US West should move between 8,333 ft (2,540 m) and 13,780 ft (4,200 m), according to our forecast. At the warmest time of day the snow line, about 984 ft (300 m) lower, climbs to 12,795 ft (3,900 m) at Brighton Resort on Wednesday 11 November. On the ground, the first thing we check is the shade: snow lasts where the sun cannot reach it.",
+   "sections": [
+    {
+     "h": "Snow line, resort by resort",
+     "p": [
+      "Aspen Snowmass (base 8,117 ft (2,474 m), top 12,516 ft (3,815 m)): on 12 November the snow line reaches about 12,139 ft (3,700 m), between base and top, so snow up high and rain or wet snow lower down.",
+      "Wolf Creek (base 10,262 ft (3,128 m), top 11,762 ft (3,585 m)): on 11 November the snow line climbs to about 12,139 ft (3,700 m), higher than the top, so any rain or wet snow would hit the whole mountain.",
+      "At Big Sky Resort (base 6,818 ft (2,078 m), top 11,161 ft (3,402 m)) the snow line reaches about 12,139 ft (3,700 m) on 12 November, above the top: if it rains, it rains everywhere.",
+      "Purgatory Resort (base 8,845 ft (2,696 m), top 10,797 ft (3,291 m)): on 11 November the snow line climbs to about 12,467 ft (3,800 m), higher than the top, so any rain or wet snow would hit the whole mountain.",
+      "At Brighton Resort (base 8,747 ft (2,666 m), top 10,449 ft (3,185 m)) the snow line reaches about 12,795 ft (3,900 m) on 11 November, above the top: if it rains, it rains everywhere."
+     ]
+    },
+    {
+     "h": "Rain on the snow?",
+     "p": [
+      "Aspen Snowmass has about 14 in (36 cm) up high, but on 13 November the snow line is above mid-mountain: rain on that snow makes it heavy and wet, and icy once it freezes again.",
+      "Watch Big Sky Resort: about 19 in (48 cm) on its upper slopes, and a snow line above mid-mountain on 13 November. Rain would turn that snow heavy, then icy when it refreezes.",
+      "Purgatory Resort has about 22 in (57 cm) up high, but on 13 November and 14 November the snow line is above mid-mountain: rain on that snow makes it heavy and wet, and icy once it freezes again.",
+      "Palisades Tahoe (9,022 ft (2,750 m)) gets 82 mm in the forecast; in the wet hours the snow line is close to 6,463 ft (1,970 m).",
+      "At Mt. Baker (5,052 ft (1,540 m)) we expect 74 mm of precipitation, and while it falls the snow line sits near 5,085 ft (1,550 m)."
+     ]
+    },
+    {
+     "h": "Day by day: the 0 °C level",
+     "p": [
+      "The 0 °C level at the resorts below, from the coldest to the warmest hour of each day: Wednesday 11 November: from 11,024 ft (3,360 m) to 13,780 ft (4,200 m). Thursday 12 November: from 9,580 ft (2,920 m) to 13,648 ft (4,160 m). Friday 13 November: from 8,760 ft (2,670 m) to 12,894 ft (3,930 m). Saturday 14 November: from 8,333 ft (2,540 m) to 10,794 ft (3,290 m)."
+     ]
+    },
+    {
+     "h": "Why the snow line is lower than the 0 °C level",
+     "p": [
+      "Higher usually means colder. Snowflakes that drop below the 0 °C level start melting, but melting takes time, so they turn to rain only some 984 ft (300 m) lower: that height is the snow line. In dry air, as in the Atlas, evaporation cools the flakes and the snow line can drop even more."
+     ]
+    }
+   ],
+   "advice": [
+    "When it is warm, the morning on high, north-facing slopes gives the best snow, before it softens.",
+    "Forecast 0 °C levels move by several hundred metres; recheck the map the day before.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website."
+   ],
+   "captions": {
+    "map": "Snow depth in the US West on 11 November (SnowScope snow model) with the resorts of this freezing-level analysis and their top heights."
+   }
+  },
+  "fr": {
+   "title": "Isotherme 0 °C dans l'Ouest américain : de 8 333 ft à 13 780 ft, limite pluie-neige jusqu'à 12 795 ft (11 novembre)",
+   "description": "Ces prochains jours, l'isotherme 0 °C dans l'Ouest américain devrait bouger entre 8 333 ft (2 540 m) et 13 780 ft (4 200 m), selon notre prévision. …",
+   "lede": "Ces prochains jours, l'isotherme 0 °C dans l'Ouest américain devrait bouger entre 8 333 ft (2 540 m) et 13 780 ft (4 200 m), selon notre prévision. Au moment le plus doux de la journée, la limite pluie-neige, environ 984 ft (300 m) plus bas, monte à 12 795 ft (3 900 m) à Brighton Resort le mercredi 11 novembre. Sur le terrain, la première chose que nous regardons, c'est l'ombre : la neige tient là où le soleil n'arrive pas.",
+   "sections": [
+    {
+     "h": "Limite pluie-neige, station par station",
+     "p": [
+      "Aspen Snowmass (bas 8 117 ft (2 474 m), sommet 12 516 ft (3 815 m)) : le 12 novembre, la limite pluie-neige atteint environ 12 139 ft (3 700 m), entre le bas et le sommet, donc neige en haut et pluie ou neige mouillée plus bas.",
+      "Wolf Creek (bas 10 262 ft (3 128 m), sommet 11 762 ft (3 585 m)) : le 11 novembre, la limite pluie-neige grimpe vers 12 139 ft (3 700 m), plus haut que le sommet, donc pluie ou neige mouillée toucheraient tout le domaine.",
+      "À Big Sky Resort (bas 6 818 ft (2 078 m), sommet 11 161 ft (3 402 m)), la limite pluie-neige atteint environ 12 139 ft (3 700 m) le 12 novembre, au-dessus du sommet : s'il pleut, il pleut partout.",
+      "Purgatory Resort (bas 8 845 ft (2 696 m), sommet 10 797 ft (3 291 m)) : le 11 novembre, la limite pluie-neige grimpe vers 12 467 ft (3 800 m), plus haut que le sommet, donc pluie ou neige mouillée toucheraient tout le domaine.",
+      "À Brighton Resort (bas 8 747 ft (2 666 m), sommet 10 449 ft (3 185 m)), la limite pluie-neige atteint environ 12 795 ft (3 900 m) le 11 novembre, au-dessus du sommet : s'il pleut, il pleut partout."
+     ]
+    },
+    {
+     "h": "De la pluie sur la neige ?",
+     "p": [
+      "Aspen Snowmass a environ 14 in (36 cm) en altitude, mais le 13 novembre la limite pluie-neige passe au-dessus de mi-pente : la pluie rend cette neige lourde et mouillée, puis glacée quand elle regèle.",
+      "Attention à Big Sky Resort : environ 19 in (48 cm) en haut du domaine, et une limite pluie-neige au-dessus de mi-pente le 13 novembre. La pluie alourdirait cette neige, puis la glacerait au regel.",
+      "Purgatory Resort a environ 22 in (57 cm) en altitude, mais le 13 novembre et 14 novembre la limite pluie-neige passe au-dessus de mi-pente : la pluie rend cette neige lourde et mouillée, puis glacée quand elle regèle.",
+      "Palisades Tahoe (9 022 ft (2 750 m)) reçoit 82 mm dans la prévision ; pendant les heures humides, la limite pluie-neige est proche de 6 463 ft (1 970 m).",
+      "À Mt. Baker (5 052 ft (1 540 m)), nous attendons 74 mm de précipitations, et pendant qu'elles tombent la limite pluie-neige se trouve vers 5 085 ft (1 550 m)."
+     ]
+    },
+    {
+     "h": "Jour par jour : l'isotherme 0 °C",
+     "p": [
+      "L'isotherme 0 °C au-dessus des stations ci-dessous, de l'heure la plus froide à la plus douce de chaque jour : mercredi 11 novembre : de 11 024 ft (3 360 m) à 13 780 ft (4 200 m). jeudi 12 novembre : de 9 580 ft (2 920 m) à 13 648 ft (4 160 m). vendredi 13 novembre : de 8 760 ft (2 670 m) à 12 894 ft (3 930 m). samedi 14 novembre : de 8 333 ft (2 540 m) à 10 794 ft (3 290 m)."
+     ]
+    },
+    {
+     "h": "Pourquoi la limite pluie-neige est plus basse que l'isotherme 0 °C",
+     "p": [
+      "Plus haut, c'est en général plus froid. Les flocons qui passent sous l'isotherme 0 °C commencent à fondre, mais la fonte prend du temps, donc ils ne deviennent pluie qu'environ 984 ft (300 m) plus bas : cette altitude est la limite pluie-neige. Dans un air sec, comme dans l'Atlas, l'évaporation refroidit les flocons et la limite peut descendre encore plus."
+     ]
+    }
+   ],
+   "advice": [
+    "Quand il fait doux, la matinée sur les pentes hautes orientées au nord donne la meilleure neige, avant qu'elle ramollisse.",
+    "Les isothermes 0 °C prévues bougent de plusieurs centaines de mètres ; revérifiez la carte la veille.",
+    "Avant toute sortie hors-piste ou en randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates sur son site."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest américain le 11 novembre (modèle SnowScope), avec les stations de cette analyse et l'altitude de leur sommet."
+   }
+  },
+  "de": {
+   "title": "Nullgradgrenze im US-Westen: von 8.333 ft bis 13.780 ft, Schneefallgrenze bis 12.795 ft (11. November)",
+   "description": "In den nächsten Tagen sollte die Nullgradgrenze im US-Westen laut unserer Prognose zwischen 8.333 ft (2.540 m) und 13.780 ft (4.200 m) pendeln. In …",
+   "lede": "In den nächsten Tagen sollte die Nullgradgrenze im US-Westen laut unserer Prognose zwischen 8.333 ft (2.540 m) und 13.780 ft (4.200 m) pendeln. In der wärmsten Zeit des Tages steigt die Schneefallgrenze, etwa 984 ft (300 m) tiefer, am Mittwoch, 11. November in Brighton auf Resort 12.795 ft (3.900 m). Im Gelände prüfen wir zuerst den Schatten: Schnee hält, wo die Sonne nicht hinkommt.",
+   "sections": [
+    {
+     "h": "Schneefallgrenze, Skigebiet für Skigebiet",
+     "p": [
+      "Aspen Snowmass (Tal 8.117 ft (2.474 m), Gipfel 12.516 ft (3.815 m)): Am 12. November erreicht die Schneefallgrenze etwa 12.139 ft (3.700 m), zwischen Tal und Gipfel, also oben Schnee und weiter unten Regen oder nasser Schnee.",
+      "Wolf Creek (Tal 10.262 ft (3.128 m), Gipfel 11.762 ft (3.585 m)): Am 11. November steigt die Schneefallgrenze auf etwa 12.139 ft (3.700 m), höher als der Gipfel, also träfe Regen oder nasser Schnee den ganzen Berg.",
+      "In Big Sky Resort (Tal 6.818 ft (2.078 m), Gipfel 11.161 ft (3.402 m)) erreicht die Schneefallgrenze am 12. November etwa 12.139 ft (3.700 m), über dem Gipfel: Wenn es regnet, dann überall.",
+      "Purgatory Resort (Tal 8.845 ft (2.696 m), Gipfel 10.797 ft (3.291 m)): Am 11. November steigt die Schneefallgrenze auf etwa 12.467 ft (3.800 m), höher als der Gipfel, also träfe Regen oder nasser Schnee den ganzen Berg.",
+      "In Brighton Resort (Tal 8.747 ft (2.666 m), Gipfel 10.449 ft (3.185 m)) erreicht die Schneefallgrenze am 11. November etwa 12.795 ft (3.900 m), über dem Gipfel: Wenn es regnet, dann überall."
+     ]
+    },
+    {
+     "h": "Regen auf den Schnee?",
+     "p": [
+      "Aspen Snowmass hat etwa 14 in (36 cm) weit oben, aber am 13. November liegt die Schneefallgrenze über der Mittelstation: Regen auf diesem Schnee macht ihn schwer und nass, und eisig, sobald er wieder gefriert.",
+      "Achtung in Big Sky Resort: etwa 19 in (48 cm) in den oberen Hängen und am 13. November eine Schneefallgrenze über der Mittelstation. Regen würde den Schnee schwer machen, dann eisig, wenn er wieder gefriert.",
+      "Purgatory Resort hat etwa 22 in (57 cm) weit oben, aber am 13. November und 14. November liegt die Schneefallgrenze über der Mittelstation: Regen auf diesem Schnee macht ihn schwer und nass, und eisig, sobald er wieder gefriert.",
+      "Palisades Tahoe (9.022 ft (2.750 m)) bekommt laut Prognose 82 mm; in den nassen Stunden liegt die Schneefallgrenze nahe 6.463 ft (1.970 m).",
+      "In Mt. Baker (5.052 ft (1.540 m)) erwarten wir 74 mm Niederschlag, und während er fällt, liegt die Schneefallgrenze bei 5.085 ft (1.550 m)."
+     ]
+    },
+    {
+     "h": "Tag für Tag: die Nullgradgrenze",
+     "p": [
+      "Die Nullgradgrenze über den Skigebieten unten, von der kältesten bis zur wärmsten Stunde jedes Tages: Mittwoch, 11. November: von 11.024 ft (3.360 m) bis 13.780 ft (4.200 m). Donnerstag, 12. November: von 9.580 ft (2.920 m) bis 13.648 ft (4.160 m). Freitag, 13. November: von 8.760 ft (2.670 m) bis 12.894 ft (3.930 m). Samstag, 14. November: von 8.333 ft (2.540 m) bis 10.794 ft (3.290 m)."
+     ]
+    },
+    {
+     "h": "Warum die Schneefallgrenze tiefer liegt als die Nullgradgrenze",
+     "p": [
+      "Höher heißt meist kälter. Flocken, die unter die Nullgradgrenze fallen, beginnen zu schmelzen, aber das braucht Zeit, deshalb werden sie erst etwa 984 ft (300 m) tiefer zu Regen: Diese Höhe ist die Schneefallgrenze. In trockener Luft, wie im Atlas, kühlt Verdunstung die Flocken, und die Schneefallgrenze kann noch weiter sinken."
+     ]
+    }
+   ],
+   "advice": [
+    "Ist es warm, gibt der Vormittag an hohen Nordhängen den besten Schnee, bevor er weich wird.",
+    "Prognostizierte Nullgradgrenzen bewegen sich um mehrere hundert Meter; prüf die Karte am Vortag noch einmal.",
+    "Lies vor jedem Tag abseits der Piste oder auf Tour den offiziellen Lawinenlagebericht (Links unten).",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Termine auf seiner Website."
+   ],
+   "captions": {
+    "map": "Schneehöhe im US-Westen am 11. November (SnowScope-Modell) mit den Skigebieten dieser Analyse und ihrer Gipfelhöhe."
+   }
+  },
+  "it": {
+   "title": "Zero termico nell'Ovest degli USA: da 8.333 ft a 13.780 ft, quota neve fino a 12.795 ft (11 novembre)",
+   "description": "Nei prossimi giorni lo zero termico nell'Ovest degli USA dovrebbe muoversi tra 8.333 ft (2.540 m) e 13.780 ft (4.200 m), secondo la nostra …",
+   "lede": "Nei prossimi giorni lo zero termico nell'Ovest degli USA dovrebbe muoversi tra 8.333 ft (2.540 m) e 13.780 ft (4.200 m), secondo la nostra previsione. Nel momento più mite della giornata la quota neve, circa 984 ft (300 m) più in basso, sale a 12.795 ft (3.900 m) a Brighton Resort il mercoledì 11 novembre. Sul terreno la prima cosa che controlliamo è l'ombra: la neve dura dove il sole non arriva.",
+   "sections": [
+    {
+     "h": "Quota neve, località per località",
+     "p": [
+      "Aspen Snowmass (base 8.117 ft (2.474 m), vetta 12.516 ft (3.815 m)): il 12 novembre la quota neve arriva a circa 12.139 ft (3.700 m), tra base e vetta, quindi neve in alto e pioggia o neve bagnata più in basso.",
+      "Wolf Creek (base 10.262 ft (3.128 m), vetta 11.762 ft (3.585 m)): il 11 novembre la quota neve sale a circa 12.139 ft (3.700 m), più in alto della vetta, quindi pioggia o neve bagnata colpirebbero tutta la montagna.",
+      "A Big Sky Resort (base 6.818 ft (2.078 m), vetta 11.161 ft (3.402 m)) la quota neve arriva a circa 12.139 ft (3.700 m) il 12 novembre, sopra la vetta: se piove, piove dappertutto.",
+      "Purgatory Resort (base 8.845 ft (2.696 m), vetta 10.797 ft (3.291 m)): il 11 novembre la quota neve sale a circa 12.467 ft (3.800 m), più in alto della vetta, quindi pioggia o neve bagnata colpirebbero tutta la montagna.",
+      "A Brighton Resort (base 8.747 ft (2.666 m), vetta 10.449 ft (3.185 m)) la quota neve arriva a circa 12.795 ft (3.900 m) il 11 novembre, sopra la vetta: se piove, piove dappertutto."
+     ]
+    },
+    {
+     "h": "Pioggia sulla neve?",
+     "p": [
+      "Aspen Snowmass ha circa 14 in (36 cm) in alto, ma il 13 novembre la quota neve è sopra metà montagna: la pioggia su questa neve la rende pesante e bagnata, e ghiacciata quando rigela.",
+      "Attenzione a Big Sky Resort: circa 19 in (48 cm) sui pendii alti e una quota neve sopra metà montagna il 13 novembre. La pioggia renderebbe la neve pesante, poi ghiacciata al rigelo.",
+      "Purgatory Resort ha circa 22 in (57 cm) in alto, ma il 13 novembre e 14 novembre la quota neve è sopra metà montagna: la pioggia su questa neve la rende pesante e bagnata, e ghiacciata quando rigela.",
+      "Palisades Tahoe (9.022 ft (2.750 m)) riceve 82 mm nella previsione; nelle ore umide la quota neve è vicina a 6.463 ft (1.970 m).",
+      "A Mt. Baker (5.052 ft (1.540 m)) ci aspettiamo 74 mm di precipitazioni, e mentre cadono la quota neve è vicino a 5.085 ft (1.550 m)."
+     ]
+    },
+    {
+     "h": "Giorno per giorno: lo zero termico",
+     "p": [
+      "Lo zero termico sulle località qui sotto, dall'ora più fredda alla più mite di ogni giorno: mercoledì 11 novembre: da 11.024 ft (3.360 m) a 13.780 ft (4.200 m). giovedì 12 novembre: da 9.580 ft (2.920 m) a 13.648 ft (4.160 m). venerdì 13 novembre: da 8.760 ft (2.670 m) a 12.894 ft (3.930 m). sabato 14 novembre: da 8.333 ft (2.540 m) a 10.794 ft (3.290 m)."
+     ]
+    },
+    {
+     "h": "Perché la quota neve è più bassa dello zero termico",
+     "p": [
+      "Più in alto di solito vuol dire più freddo. I fiocchi che scendono sotto lo zero termico iniziano a fondere, ma fondere richiede tempo, quindi diventano pioggia solo circa 984 ft (300 m) più in basso: quella quota è la quota neve. In aria secca, come sull'Atlante, l'evaporazione raffredda i fiocchi e la quota neve può scendere ancora di più."
+     ]
+    }
+   ],
+   "advice": [
+    "Quando fa caldo, la mattina sui versanti nord in quota dà la neve migliore, prima che si ammorbidisca.",
+    "Gli zeri termici previsti si spostano di diverse centinaia di metri; ricontrolla la mappa il giorno prima.",
+    "Prima di ogni uscita in fuoripista o scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date sul suo sito."
+   ],
+   "captions": {
+    "map": "Altezza neve nell'Ovest degli USA il 11 novembre (modello SnowScope) con le località di questa analisi e la quota della vetta."
+   }
+  },
+  "es": {
+   "title": "Isoterma de 0 °C en el oeste de EE. UU.: de 8333 ft a 13.780 ft, cota de nieve hasta 12.795 ft (11 de noviembre)",
+   "description": "En los próximos días la isoterma de 0 °C en el oeste de EE. UU. debería moverse entre 8333 ft (2540 m) y 13.780 ft (4200 m), según nuestra previsión. …",
+   "lede": "En los próximos días la isoterma de 0 °C en el oeste de EE. UU. debería moverse entre 8333 ft (2540 m) y 13.780 ft (4200 m), según nuestra previsión. En el momento más templado del día la cota de nieve, unos 984 ft (300 m) más abajo, sube a 12.795 ft (3900 m) en Brighton Resort el miércoles 11 de noviembre. Sobre el terreno, lo primero que miramos es la sombra: la nieve aguanta donde no llega el sol.",
+   "sections": [
+    {
+     "h": "Cota de nieve, estación por estación",
+     "p": [
+      "Aspen Snowmass (base 8117 ft (2474 m), cima 12.516 ft (3815 m)): el 12 de noviembre la cota de nieve llega a unos 12.139 ft (3700 m), entre la base y la cima, así que nieve arriba y lluvia o nieve húmeda más abajo.",
+      "Wolf Creek (base 10.262 ft (3128 m), cima 11.762 ft (3585 m)): el 11 de noviembre la cota de nieve sube a unos 12.139 ft (3700 m), más alta que la cima, así que la lluvia o la nieve húmeda llegarían a toda la montaña.",
+      "En Big Sky Resort (base 6818 ft (2078 m), cima 11.161 ft (3402 m)) la cota de nieve llega a unos 12.139 ft (3700 m) el 12 de noviembre, por encima de la cima: si llueve, llueve en todas partes.",
+      "Purgatory Resort (base 8845 ft (2696 m), cima 10.797 ft (3291 m)): el 11 de noviembre la cota de nieve sube a unos 12.467 ft (3800 m), más alta que la cima, así que la lluvia o la nieve húmeda llegarían a toda la montaña.",
+      "En Brighton Resort (base 8747 ft (2666 m), cima 10.449 ft (3185 m)) la cota de nieve llega a unos 12.795 ft (3900 m) el 11 de noviembre, por encima de la cima: si llueve, llueve en todas partes."
+     ]
+    },
+    {
+     "h": "¿Lluvia sobre la nieve?",
+     "p": [
+      "Aspen Snowmass tiene unos 14 in (36 cm) arriba, pero el 13 de noviembre la cota de nieve queda por encima de media montaña: la lluvia vuelve esa nieve pesada y húmeda, y helada cuando se vuelve a congelar.",
+      "Ojo con Big Sky Resort: unos 19 in (48 cm) en la parte alta, y una cota de nieve por encima de media montaña el 13 de noviembre. La lluvia haría esa nieve pesada y luego helada al volver a congelarse.",
+      "Purgatory Resort tiene unos 22 in (57 cm) arriba, pero el 13 de noviembre y 14 de noviembre la cota de nieve queda por encima de media montaña: la lluvia vuelve esa nieve pesada y húmeda, y helada cuando se vuelve a congelar.",
+      "Palisades Tahoe (9022 ft (2750 m)) recibe 82 mm en la previsión; en las horas húmedas la cota de nieve está cerca de 6463 ft (1970 m).",
+      "En Mt. Baker (5052 ft (1540 m)) esperamos 74 mm de precipitación, y mientras cae la cota de nieve queda hacia 5085 ft (1550 m)."
+     ]
+    },
+    {
+     "h": "Día a día: la isoterma de 0 °C",
+     "p": [
+      "La isoterma de 0 °C sobre las estaciones de abajo, de la hora más fría a la más templada de cada día: miércoles 11 de noviembre: de 11.024 ft (3360 m) a 13.780 ft (4200 m). jueves 12 de noviembre: de 9580 ft (2920 m) a 13.648 ft (4160 m). viernes 13 de noviembre: de 8760 ft (2670 m) a 12.894 ft (3930 m). sábado 14 de noviembre: de 8333 ft (2540 m) a 10.794 ft (3290 m)."
+     ]
+    },
+    {
+     "h": "Por qué la cota de nieve queda más baja que la isoterma de 0 °C",
+     "p": [
+      "Más arriba suele hacer más frío. Los copos que bajan de la isoterma de 0 °C empiezan a fundirse, pero eso lleva tiempo, así que solo se vuelven lluvia unos 984 ft (300 m) más abajo: esa altura es la cota de nieve. Con aire seco, como en el Atlas, la evaporación enfría los copos y la cota puede bajar todavía más."
+     ]
+    }
+   ],
+   "advice": [
+    "Cuando hace templado, la mañana en laderas altas orientadas al norte da la mejor nieve, antes de que se ablande.",
+    "Las isotermas de 0 °C previstas se mueven varios cientos de metros; revisa el mapa el día antes.",
+    "Antes de cualquier salida fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas en su web."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de EE. UU. el 11 de noviembre (modelo SnowScope) con las estaciones de este análisis y la altura de su cima."
+   }
+  },
+  "ar": {
+   "title": "علو 0 °C فغرب ميريكان: من 8333 قدم حتى ل 13780 قدم، الحد ديال التلج حتى ل 12795 قدم (11 نونبر)",
+   "description": "فالأيام الجاية علو 0 °C فغرب ميريكان خاصو يتحرك بين 8333 قدم (2540 م) و 13780 قدم (4200 م)، حسب التوقعات ديالنا. فأسخن وقت فالنهار الحد ديال التلج، …",
+   "lede": "فالأيام الجاية علو 0 °C فغرب ميريكان خاصو يتحرك بين 8333 قدم (2540 م) و 13780 قدم (4200 م)، حسب التوقعات ديالنا. فأسخن وقت فالنهار الحد ديال التلج، تقريبا 984 قدم (300 م) تحت، كيطلع ل 12795 قدم (3900 م) ف Brighton Resort نهار الأربعاء 11 نونبر. فالأرض، أول حاجة كنشوفوها هي الظل: التلج كيبقى فين ماكتوصلش الشمس.",
+   "sections": [
+    {
+     "h": "الحد ديال التلج، محطة بمحطة",
+     "p": [
+      "Aspen Snowmass (التحت 8117 قدم (2474 م)، الفوق 12516 قدم (3815 م)): نهار 12 نونبر الحد ديال التلج كيوصل ل تقريبا 12139 قدم (3700 م)، بين التحت والفوق، يعني التلج فالفوق والشتا ولا التلج المبلول لتحت.",
+      "Wolf Creek (التحت 10262 قدم (3128 م)، الفوق 11762 قدم (3585 م)): نهار 11 نونبر الحد ديال التلج كيطلع ل تقريبا 12139 قدم (3700 م)، فوق القمة، يعني أي شتا ولا تلج مبلول غادي يضرب الجبل كامل.",
+      "ف Big Sky Resort (التحت 6818 قدم (2078 م)، الفوق 11161 قدم (3402 م)) الحد ديال التلج كيوصل ل تقريبا 12139 قدم (3700 م) نهار 12 نونبر، فوق القمة: إلا شتات، غادي تشتي فكل بلاصة.",
+      "Purgatory Resort (التحت 8845 قدم (2696 م)، الفوق 10797 قدم (3291 م)): نهار 11 نونبر الحد ديال التلج كيطلع ل تقريبا 12467 قدم (3800 م)، فوق القمة، يعني أي شتا ولا تلج مبلول غادي يضرب الجبل كامل.",
+      "ف Brighton Resort (التحت 8747 قدم (2666 م)، الفوق 10449 قدم (3185 م)) الحد ديال التلج كيوصل ل تقريبا 12795 قدم (3900 م) نهار 11 نونبر، فوق القمة: إلا شتات، غادي تشتي فكل بلاصة."
+     ]
+    },
+    {
+     "h": "الشتا فوق التلج؟",
+     "p": [
+      "Aspen Snowmass فيها تقريبا 14 إنش (36 سم) فالعلو، ولكن نهار 13 نونبر الحد ديال التلج فوق الوسط ديال الجبل: الشتا على هاد التلج كتردو تقيل ومبلول، وجليد ملي يجمد من جديد.",
+      "رد بالك من Big Sky Resort: تقريبا 19 إنش (48 سم) فالجهة الفوقانية، وحد ديال التلج فوق الوسط ديال الجبل نهار 13 نونبر. الشتا غادي ترد هاد التلج تقيل، ومن بعد جليد ملي يعاود يجمد.",
+      "Purgatory Resort فيها تقريبا 22 إنش (57 سم) فالعلو، ولكن نهار 13 نونبر و 14 نونبر الحد ديال التلج فوق الوسط ديال الجبل: الشتا على هاد التلج كتردو تقيل ومبلول، وجليد ملي يجمد من جديد.",
+      "Palisades Tahoe (9022 قدم (2750 م)) فيها 82 مم فالتوقعات؛ فالساعات المبلولين الحد ديال التلج قريب من 6463 قدم (1970 م).",
+      "ف Mt. Baker (5052 قدم (1540 م)) كنتسناو 74 مم ديال الشتا، وملي كتطيح الحد ديال التلج كيكون قريب من 5085 قدم (1550 م)."
+     ]
+    },
+    {
+     "h": "نهار بنهار: علو 0 °C",
+     "p": [
+      "علو 0 °C فوق المحطات اللي لتحت، من أبرد ساعة حتى ل أسخن ساعة فكل نهار: الأربعاء 11 نونبر: من 11024 قدم (3360 م) حتى ل 13780 قدم (4200 م). الخميس 12 نونبر: من 9580 قدم (2920 م) حتى ل 13648 قدم (4160 م). الجمعة 13 نونبر: من 8760 قدم (2670 م) حتى ل 12894 قدم (3930 م). السبت 14 نونبر: من 8333 قدم (2540 م) حتى ل 10794 قدم (3290 م)."
+     ]
+    },
+    {
+     "h": "علاش الحد ديال التلج لتحت من علو 0 °C",
+     "p": [
+      "كل ما طلعتي، عادة كيبرد الحال. التلج اللي كيهبط تحت علو 0 °C كيبدا يدوب، ولكن الذوبان كياخد الوقت، داكشي علاش كيولي شتا غير تقريبا 984 قدم (300 م) لتحت: داك العلو هو الحد ديال التلج. فالهوا الناشف، بحال فالأطلس، التبخر كيبرد التلج والحد يقدر يهبط كثر."
+     ]
+    }
+   ],
+   "advice": [
+    "ملي كيكون السخون، الصباح فالجهات العاليين اللي كتشوف للشمال كيعطي أحسن تلج، قبل ما يرطاب.",
+    "علو 0 °C المتوقع كيتحرك بشي مئات ديال الميترات؛ عاود شوف الخريطة نهار قبل.",
+    "قبل أي خرجة برا البيست ولا جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديالها."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب ميريكان نهار 11 نونبر (الموديل ديال SnowScope) مع المحطات ديال هاد التحليل والعلو ديال القمة ديالهم."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 2
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 2
+  },
+  "de": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 2
+  },
+  "it": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 2
+  },
+  "es": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 2
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 2
+  }
+ },
+ "words_en": 546,
+ "indexable": true,
+ "main": {
+  "slug": "aspen_snowmass",
+  "name": "Aspen Snowmass",
+  "lat": 39.1984,
+  "lon": -106.9499
+ },
+ "places": [
+  {
+   "name": "Aspen Snowmass",
+   "lat": 39.1984,
+   "lon": -106.9499
+  },
+  {
+   "name": "Wolf Creek",
+   "lat": 37.4632,
+   "lon": -106.7905
+  },
+  {
+   "name": "Big Sky Resort",
+   "lat": 45.2739,
+   "lon": -111.4195
+  },
+  {
+   "name": "Purgatory Resort",
+   "lat": 37.6261,
+   "lon": -107.8265
+  },
+  {
+   "name": "Brighton Resort",
+   "lat": 40.5946,
+   "lon": -111.582
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "aspen_snowmass",
+   "name": "Aspen Snowmass"
+  },
+  {
+   "slug": "wolf_creek_ski_area",
+   "name": "Wolf Creek"
+  },
+  {
+   "slug": "big_sky",
+   "name": "Big Sky Resort"
+  },
+  {
+   "slug": "purgatory_resort",
+   "name": "Purgatory Resort"
+  },
+  {
+   "slug": "brighton_resort",
+   "name": "Brighton Resort"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "aspen_snowmass",
+    "name": "Aspen Snowmass",
+    "depth": 36,
+    "new72": 0,
+    "next": 2,
+    "top_m": 3815
+   },
+   {
+    "slug": "wolf_creek_ski_area",
+    "name": "Wolf Creek",
+    "depth": 87,
+    "new72": 0,
+    "next": 8,
+    "top_m": 3585
+   },
+   {
+    "slug": "big_sky",
+    "name": "Big Sky Resort",
+    "depth": 48,
+    "new72": 0,
+    "next": 0,
+    "top_m": 3402
+   },
+   {
+    "slug": "purgatory_resort",
+    "name": "Purgatory Resort",
+    "depth": 57,
+    "new72": 0,
+    "next": 12,
+    "top_m": 3291
+   },
+   {
+    "slug": "brighton_resort",
+    "name": "Brighton Resort",
+    "depth": 46,
+    "new72": 0,
+    "next": 10,
+    "top_m": 3185
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@39.198,-106.950,9.0",
+ "seconds": 0.0,
+ "facts_used": 55,
+ "voice": "field",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 33.6,
+  "after": 27.8,
+  "with": "us-northeast-freezing-level-snow-line-10-november-2026",
+  "tries": 2
+ },
+ "similarity": {
+  "max": 0.143,
+  "with": "pyrenees-freezing-level-snow-line-8-november-2026"
+ },
+ "publish_utc": "2026-11-11T18:44:22Z"
+}

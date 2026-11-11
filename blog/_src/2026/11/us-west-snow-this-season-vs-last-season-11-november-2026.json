@@ -1,0 +1,676 @@
+{
+ "id": "2026-11-11-us_west-season",
+ "slug": "us-west-snow-this-season-vs-last-season-11-november-2026",
+ "date": "2026-11-11",
+ "published_utc": "2026-11-11T18:44:22Z",
+ "updated_utc": "2026-11-11T18:44:22Z",
+ "region": "US_WEST",
+ "angle": "season",
+ "score": 58,
+ "signature": "wolf_creek_ski_area:6|telluride_ski_area:2|silverton_mountain:7",
+ "keyword": {
+  "family": "vs-last-season",
+  "entity": "us_west",
+  "region": "US_WEST",
+  "date": "2026-11-11"
+ },
+ "tags": [
+  "past-winters",
+  "snow-depth",
+  "stations"
+ ],
+ "facts": {
+  "angle": "season_vs_last_season",
+  "region": "US West",
+  "date": "2026-11-11",
+  "weekday": "Wednesday",
+  "model_run": "2026-11-11",
+  "forecast_days": [
+   "2026-11-12",
+   "2026-11-13",
+   "2026-11-14"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 134530,
+   "resorts_with_snow": 123,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-09",
+   "snow_covered_area_km2": 157120,
+   "resorts_with_snow": 130
+  },
+  "region_forecast": {
+   "date": "2026-11-14",
+   "snow_covered_area_km2": 213380,
+   "resorts_with_snow": 139
+  },
+  "question": "Is there more or less snow than on the same date last winter, and why?",
+  "last_winter": "2025-26",
+  "same_date_last_winter": "2025-11-11",
+  "notes": [
+   "model values = SnowScope snow history at one height of each resort (an estimate for an area)",
+   "measured values = a snow station on the date given (one point), only where a station history exists",
+   "days with a gain of 10 cm or more = snowfall days this winter; days with a loss of 5 cm or more = melt, rain or wind"
+  ],
+  "measured_at_stations_today": [
+   {
+    "station": "Beartown",
+    "elev_m": 3530,
+    "depth_cm_measured": 76,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-10",
+    "network": "snotel"
+   },
+   {
+    "station": "Bison Lake",
+    "elev_m": 3338,
+    "depth_cm_measured": 36,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-10",
+    "network": "snotel"
+   },
+   {
+    "station": "Lyman Lake",
+    "elev_m": 1826,
+    "depth_cm_measured": 36,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-10",
+    "network": "snotel"
+   }
+  ],
+  "resorts": [
+   {
+    "name": "Wolf Creek",
+    "slug": "wolf_creek_ski_area",
+    "country": "United States",
+    "top_m": 3585,
+    "base_m": 3128,
+    "height_m": 3356,
+    "model_cm_today_this_winter": 66,
+    "model_cm_same_date_last_winter": 0,
+    "last_winter": "2025-26",
+    "last_winter_peak_cm_model": 76,
+    "last_winter_peak_date": "2026-02-21",
+    "usual_cm_on_this_date_model": 20,
+    "this_winter_days_with_10cm_or_more_gain": 1,
+    "this_winter_days_with_5cm_or_more_loss": 0,
+    "this_winter_first_day_with_5cm": "2026-10-22",
+    "past_winters_compared": 46,
+    "difference_cm_vs_last_winter": 66,
+    "measured_station": {
+     "station": "Wolf Creek Summit",
+     "elev_m": 3331,
+     "km_away": 2.0,
+     "depth_cm_measured_today": 51,
+     "depth_cm_measured_same_date_last_winter": 3,
+     "measured_on": [
+      "2026-11-11",
+      "2025-11-11"
+     ],
+     "network": "USDA NRCS SNOTEL"
+    }
+   },
+   {
+    "name": "Telluride",
+    "slug": "telluride_ski_area",
+    "country": "United States",
+    "top_m": 3812,
+    "base_m": 2662,
+    "height_m": 3237,
+    "model_cm_today_this_winter": 20,
+    "model_cm_same_date_last_winter": 0,
+    "last_winter": "2025-26",
+    "last_winter_peak_cm_model": 76,
+    "last_winter_peak_date": "2026-02-21",
+    "usual_cm_on_this_date_model": 24,
+    "this_winter_days_with_10cm_or_more_gain": 0,
+    "this_winter_days_with_5cm_or_more_loss": 0,
+    "this_winter_first_day_with_5cm": "2026-10-17",
+    "past_winters_compared": 46,
+    "difference_cm_vs_last_winter": 20,
+    "measured_station": {
+     "station": "Alta Lakes",
+     "elev_m": 3441,
+     "km_away": 3.5,
+     "depth_cm_measured_today": 48,
+     "depth_cm_measured_same_date_last_winter": 8,
+     "measured_on": [
+      "2026-11-11",
+      "2025-11-11"
+     ],
+     "network": "USDA NRCS SNOTEL"
+    }
+   },
+   {
+    "name": "Silverton Mountain",
+    "slug": "silverton_mountain",
+    "country": "United States",
+    "top_m": 3345,
+    "base_m": 3143,
+    "height_m": 3244,
+    "model_cm_today_this_winter": 79,
+    "model_cm_same_date_last_winter": 0,
+    "last_winter": "2025-26",
+    "last_winter_peak_cm_model": 51,
+    "last_winter_peak_date": "2026-02-21",
+    "usual_cm_on_this_date_model": 17,
+    "this_winter_days_with_10cm_or_more_gain": 1,
+    "this_winter_days_with_5cm_or_more_loss": 0,
+    "this_winter_first_day_with_5cm": "2026-10-17",
+    "past_winters_compared": 46,
+    "difference_cm_vs_last_winter": 79,
+    "measured_station": {
+     "station": "Red Mountain Pass",
+     "elev_m": 3371,
+     "km_away": 5.3,
+     "depth_cm_measured_today": 58,
+     "depth_cm_measured_same_date_last_winter": 0,
+     "measured_on": [
+      "2026-11-11",
+      "2025-11-11"
+     ],
+     "network": "USDA NRCS SNOTEL"
+    }
+   },
+   {
+    "name": "Purgatory Resort",
+    "slug": "purgatory_resort",
+    "country": "United States",
+    "top_m": 3291,
+    "base_m": 2696,
+    "height_m": 2993,
+    "model_cm_today_this_winter": 10,
+    "model_cm_same_date_last_winter": 0,
+    "last_winter": "2025-26",
+    "last_winter_peak_cm_model": 64,
+    "last_winter_peak_date": "2026-02-21",
+    "usual_cm_on_this_date_model": 14,
+    "this_winter_days_with_10cm_or_more_gain": 0,
+    "this_winter_days_with_5cm_or_more_loss": 0,
+    "this_winter_first_day_with_5cm": null,
+    "past_winters_compared": 46,
+    "difference_cm_vs_last_winter": 10,
+    "measured_station": {
+     "station": "Cascade #2",
+     "elev_m": 2740,
+     "km_away": 4.1,
+     "depth_cm_measured_today": 0,
+     "depth_cm_measured_same_date_last_winter": 0,
+     "measured_on": [
+      "2026-11-11",
+      "2025-11-11"
+     ],
+     "network": "USDA NRCS SNOTEL"
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-snow-this-season-vs-last-season-11-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-snow-this-season-vs-last-season-11-november-2026/map_t.webp",
+   "bytes": 58974,
+   "snow_frac": 0.6668,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Silverton Mountain snow depth vs last winter: 31 in today, 0 in a year ago (US West, 11 November)",
+   "description": "Is there more snow than a year ago? We compared today with 11 November last winter at 4 resorts in the US West: 4 of them have more snow now, …",
+   "lede": "Is there more snow than a year ago? We compared today with 11 November last winter at 4 resorts in the US West: 4 of them have more snow now, according to our snow model. The biggest change is at Silverton Mountain: 31 in (79 cm) today against 0 in (0 cm) a year ago. Satellites never get tired, but they do get clouds.",
+   "sections": [
+    {
+     "h": "Resort by resort",
+     "p": [
+      "Wolf Creek at 11,010 ft (3,356 m): 26 in (66 cm) now, more than the 0 in (0 cm) of 11 November last winter. Usual for the date: 8 in (20 cm).",
+      "Telluride, 10,620 ft (3,237 m): 8 in (20 cm) today, more than last winter's 0 in (0 cm) on 11 November. The usual value for this date: 9 in (24 cm).",
+      "Silverton Mountain at 10,643 ft (3,244 m): 31 in (79 cm) now, more than the 0 in (0 cm) of 11 November last winter. Usual for the date: 7 in (17 cm).",
+      "Purgatory Resort, 9,820 ft (2,993 m): 4 in (10 cm) today, more than last winter's 0 in (0 cm) on 11 November. The usual value for this date: 6 in (14 cm)."
+     ]
+    },
+    {
+     "h": "Station check",
+     "p": [
+      "Measured: the Wolf Creek Summit station (10,928 ft (3,331 m), 2.0 km from Wolf Creek) reports 20 in (51 cm) today and had 1 in (3 cm) on 11 November last winter.",
+      "Measured: the Alta Lakes station (11,289 ft (3,441 m), 3.5 km from Telluride) reports 19 in (48 cm) today and had 3 in (8 cm) on 11 November last winter.",
+      "Measured: the Red Mountain Pass station (11,060 ft (3,371 m), 5.3 km from Silverton Mountain) reports 23 in (58 cm) today and had 0 in (0 cm) on 11 November last winter.",
+      "Measured: the Cascade #2 station (8,990 ft (2,740 m), 4.1 km from Purgatory Resort) reports 0 in (0 cm) today and had 0 in (0 cm) on 11 November last winter.",
+      "The Beartown station (11,581 ft (3,530 m)) measured 30 in (76 cm) on 10 November.",
+      "The Bison Lake station (10,951 ft (3,338 m)) measured 14 in (36 cm) on 10 November."
+     ]
+    },
+    {
+     "h": "Why the difference",
+     "p": [
+      "Our model's tally for Wolf Creek this winter: 1 days with a gain of 4 in (10 cm) or more, 0 days with a loss of 2 in (5 cm) or more to melt, rain or wind.",
+      "Telluride this winter: 0 days gaining 4 in (10 cm) or more, 0 days losing 2 in (5 cm) or more (melt, rain, wind).",
+      "Our model's tally for Silverton Mountain this winter: 1 days with a gain of 4 in (10 cm) or more, 0 days with a loss of 2 in (5 cm) or more to melt, rain or wind.",
+      "Early-season gaps are mostly noise: one storm more or less decides them, and they predict little about the rest of the winter."
+     ]
+    },
+    {
+     "h": "Last winter in numbers",
+     "p": [
+      "Wolf Creek, last winter (2025-26): peak 30 in (76 cm) on 21 February, same height.",
+      "Telluride: the peak of last winter (2025-26) was 30 in (76 cm), on 21 February, at this height.",
+      "Silverton Mountain, last winter (2025-26): peak 20 in (51 cm) on 21 February, same height."
+     ]
+    }
+   ],
+   "advice": [
+    "A better start than last year is no promise for the holidays: watch the forecast, not only the snow already on the ground.",
+    "Model values describe an area at one height; a station measures one point. Read both before you decide.",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below)."
+   ],
+   "captions": {
+    "map": "Snow depth in the US West on 11 November (SnowScope snow model) at the resorts compared with last winter."
+   }
+  },
+  "fr": {
+   "title": "Enneigement à Silverton Mountain face à l'an dernier : 31 in aujourd'hui, 0 in il y a un an (11 novembre)",
+   "description": "Y a-t-il plus de neige qu'il y a un an ? Nous avons comparé aujourd'hui avec le 11 novembre de l'hiver dernier dans 4 stations dans l'Ouest américain …",
+   "lede": "Y a-t-il plus de neige qu'il y a un an ? Nous avons comparé aujourd'hui avec le 11 novembre de l'hiver dernier dans 4 stations dans l'Ouest américain : 4 ont plus de neige maintenant, selon notre modèle de neige. Le plus grand écart est à Silverton Mountain : 31 in (79 cm) aujourd'hui contre 0 in (0 cm) il y a un an. Les satellites ne se fatiguent jamais, mais ils ont des nuages.",
+   "sections": [
+    {
+     "h": "Station par station",
+     "p": [
+      "Wolf Creek à 11 010 ft (3 356 m) : 26 in (66 cm) maintenant, plus que les 0 in (0 cm) du 11 novembre l'hiver dernier. Habituel pour la date : 8 in (20 cm).",
+      "Telluride, 10 620 ft (3 237 m) : 8 in (20 cm) aujourd'hui, plus que les 0 in (0 cm) du 11 novembre l'hiver dernier. La valeur habituelle pour cette date : 9 in (24 cm).",
+      "Silverton Mountain à 10 643 ft (3 244 m) : 31 in (79 cm) maintenant, plus que les 0 in (0 cm) du 11 novembre l'hiver dernier. Habituel pour la date : 7 in (17 cm).",
+      "Purgatory Resort, 9 820 ft (2 993 m) : 4 in (10 cm) aujourd'hui, plus que les 0 in (0 cm) du 11 novembre l'hiver dernier. La valeur habituelle pour cette date : 6 in (14 cm)."
+     ]
+    },
+    {
+     "h": "Contrôle des stations",
+     "p": [
+      "Mesuré : la station Wolf Creek Summit (10 928 ft (3 331 m), à 2.0 km de Wolf Creek) indique 20 in (51 cm) aujourd'hui et avait 1 in (3 cm) le 11 novembre l'hiver dernier.",
+      "Mesuré : la station Alta Lakes (11 289 ft (3 441 m), à 3.5 km de Telluride) indique 19 in (48 cm) aujourd'hui et avait 3 in (8 cm) le 11 novembre l'hiver dernier.",
+      "Mesuré : la station Red Mountain Pass (11 060 ft (3 371 m), à 5.3 km de Silverton Mountain) indique 23 in (58 cm) aujourd'hui et avait 0 in (0 cm) le 11 novembre l'hiver dernier.",
+      "Mesuré : la station Cascade #2 (8 990 ft (2 740 m), à 4.1 km de Purgatory Resort) indique 0 in (0 cm) aujourd'hui et avait 0 in (0 cm) le 11 novembre l'hiver dernier.",
+      "La station Beartown (11 581 ft (3 530 m)) a mesuré 30 in (76 cm) le 10 novembre.",
+      "La station Bison Lake (10 951 ft (3 338 m)) a mesuré 14 in (36 cm) le 10 novembre."
+     ]
+    },
+    {
+     "h": "D'où vient l'écart",
+     "p": [
+      "Le décompte de notre modèle pour Wolf Creek cet hiver : 1 jours avec un gain de 4 in (10 cm) ou plus, 0 jours avec une perte de 2 in (5 cm) ou plus par fonte, pluie ou vent.",
+      "Telluride cet hiver : 0 jours avec un gain de 4 in (10 cm) ou plus, 0 jours avec une perte de 2 in (5 cm) ou plus (fonte, pluie, vent).",
+      "Le décompte de notre modèle pour Silverton Mountain cet hiver : 1 jours avec un gain de 4 in (10 cm) ou plus, 0 jours avec une perte de 2 in (5 cm) ou plus par fonte, pluie ou vent.",
+      "Les écarts de début de saison sont surtout du bruit : une perturbation de plus ou de moins les décide, et ils prédisent peu le reste de l'hiver."
+     ]
+    },
+    {
+     "h": "L'hiver dernier en chiffres",
+     "p": [
+      "Wolf Creek, hiver dernier (2025-26) : maximum 30 in (76 cm) le 21 février, même altitude.",
+      "Telluride : le maximum de l'hiver dernier (2025-26) était de 30 in (76 cm), le 21 février, à cette altitude.",
+      "Silverton Mountain, hiver dernier (2025-26) : maximum 20 in (51 cm) le 21 février, même altitude."
+     ]
+    }
+   ],
+   "advice": [
+    "Un meilleur départ que l'an dernier ne garantit rien pour les vacances : suivez la prévision, pas seulement la neige au sol.",
+    "Les valeurs du modèle décrivent une zone à une altitude ; une station mesure un point. Lisez les deux avant de décider.",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates sur son site.",
+    "Avant toute sortie hors-piste ou en randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous)."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest américain le 11 novembre (modèle SnowScope) dans les stations comparées à l'hiver dernier."
+   }
+  },
+  "de": {
+   "title": "Schneehöhe in Silverton Mountain gegen letzten Winter: heute 31 in, vor einem Jahr 0 in (11. November)",
+   "description": "Liegt mehr Schnee als vor einem Jahr? Wir haben heute mit dem 11. November des letzten Winters in 4 Skigebieten im US-Westen verglichen: 4 davon …",
+   "lede": "Liegt mehr Schnee als vor einem Jahr? Wir haben heute mit dem 11. November des letzten Winters in 4 Skigebieten im US-Westen verglichen: 4 davon haben laut unserem Schneemodell jetzt mehr Schnee. Der größte Unterschied: Silverton Mountain mit heute 31 in (79 cm) gegen 0 in (0 cm) vor einem Jahr. Satelliten werden nie müde, aber sie bekommen Wolken.",
+   "sections": [
+    {
+     "h": "Skigebiet für Skigebiet",
+     "p": [
+      "Wolf Creek auf 11.010 ft (3.356 m): jetzt 26 in (66 cm), mehr als die 0 in (0 cm) vom 11. November letzten Winter. Üblich für das Datum: 8 in (20 cm).",
+      "Telluride, 10.620 ft (3.237 m): heute 8 in (20 cm), mehr als die 0 in (0 cm) vom 11. November letzten Winter. Der übliche Wert für dieses Datum: 9 in (24 cm).",
+      "Silverton Mountain auf 10.643 ft (3.244 m): jetzt 31 in (79 cm), mehr als die 0 in (0 cm) vom 11. November letzten Winter. Üblich für das Datum: 7 in (17 cm).",
+      "Purgatory Resort, 9.820 ft (2.993 m): heute 4 in (10 cm), mehr als die 0 in (0 cm) vom 11. November letzten Winter. Der übliche Wert für dieses Datum: 6 in (14 cm)."
+     ]
+    },
+    {
+     "h": "Was die Stationen gemessen haben",
+     "p": [
+      "Gemessen: Die Station Wolf Creek Summit (10.928 ft (3.331 m), 2.0 km von Wolf Creek) meldet heute 20 in (51 cm) und hatte am 11. November letzten Winter 1 in (3 cm).",
+      "Gemessen: Die Station Alta Lakes (11.289 ft (3.441 m), 3.5 km von Telluride) meldet heute 19 in (48 cm) und hatte am 11. November letzten Winter 3 in (8 cm).",
+      "Gemessen: Die Station Red Mountain Pass (11.060 ft (3.371 m), 5.3 km von Silverton Mountain) meldet heute 23 in (58 cm) und hatte am 11. November letzten Winter 0 in (0 cm).",
+      "Gemessen: Die Station Cascade #2 (8.990 ft (2.740 m), 4.1 km von Purgatory Resort) meldet heute 0 in (0 cm) und hatte am 11. November letzten Winter 0 in (0 cm).",
+      "Die Station Beartown (11.581 ft (3.530 m)) maß am 10. November 30 in (76 cm).",
+      "Die Station Bison Lake (10.951 ft (3.338 m)) maß am 10. November 14 in (36 cm)."
+     ]
+    },
+    {
+     "h": "Woher der Unterschied kommt",
+     "p": [
+      "Die Bilanz unseres Modells für Wolf Creek diesen Winter: 1 Tage mit einem Zuwachs von 4 in (10 cm) oder mehr, 0 Tage mit einem Verlust von 2 in (5 cm) oder mehr durch Schmelze, Regen oder Wind.",
+      "Telluride diesen Winter: 0 Tage mit 4 in (10 cm) Zuwachs oder mehr, 0 Tage mit 2 in (5 cm) Verlust oder mehr (Schmelze, Regen, Wind).",
+      "Die Bilanz unseres Modells für Silverton Mountain diesen Winter: 1 Tage mit einem Zuwachs von 4 in (10 cm) oder mehr, 0 Tage mit einem Verlust von 2 in (5 cm) oder mehr durch Schmelze, Regen oder Wind.",
+      "Abstände zum Saisonstart sind vor allem Rauschen: Ein Sturm mehr oder weniger entscheidet sie, und sie sagen wenig über den Rest des Winters."
+     ]
+    },
+    {
+     "h": "Der letzte Winter in Zahlen",
+     "p": [
+      "Wolf Creek, letzter Winter (2025-26): Maximum 30 in (76 cm) am 21. Februar, gleiche Höhe.",
+      "Telluride: Das Maximum des letzten Winters (2025-26) lag bei 30 in (76 cm), am 21. Februar, auf dieser Höhe.",
+      "Silverton Mountain, letzter Winter (2025-26): Maximum 20 in (51 cm) am 21. Februar, gleiche Höhe."
+     ]
+    }
+   ],
+   "advice": [
+    "Ein besserer Start als im Vorjahr ist kein Versprechen für die Ferien: Beobachte die Prognose, nicht nur den Schnee, der schon liegt.",
+    "Modellwerte beschreiben eine Fläche auf einer Höhe; eine Station misst einen Punkt. Lies beides, bevor du entscheidest.",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Termine auf seiner Website.",
+    "Lies vor jedem Tag abseits der Piste oder auf Tour den offiziellen Lawinenlagebericht (Links unten)."
+   ],
+   "captions": {
+    "map": "Schneehöhe im US-Westen am 11. November (SnowScope-Modell) in den mit dem letzten Winter verglichenen Skigebieten."
+   }
+  },
+  "it": {
+   "title": "Neve a Silverton Mountain rispetto all'anno scorso: 31 in oggi, 0 in un anno fa (11 novembre)",
+   "description": "C'è più neve di un anno fa? Abbiamo confrontato oggi con il 11 novembre dell'inverno scorso in 4 località nell'Ovest degli USA: 4 hanno più neve ora, …",
+   "lede": "C'è più neve di un anno fa? Abbiamo confrontato oggi con il 11 novembre dell'inverno scorso in 4 località nell'Ovest degli USA: 4 hanno più neve ora, secondo il nostro modello neve. La differenza maggiore è a Silverton Mountain: 31 in (79 cm) oggi contro 0 in (0 cm) un anno fa. I satelliti non si stancano mai, ma le nuvole sì che le trovano.",
+   "sections": [
+    {
+     "h": "Località per località",
+     "p": [
+      "Wolf Creek a 11.010 ft (3.356 m): 26 in (66 cm) adesso, più che i 0 in (0 cm) del 11 novembre dell'inverno scorso. Abituale per la data: 8 in (20 cm).",
+      "Telluride, 10.620 ft (3.237 m): 8 in (20 cm) oggi, più che i 0 in (0 cm) del 11 novembre dell'inverno scorso. Il valore abituale per questa data: 9 in (24 cm).",
+      "Silverton Mountain a 10.643 ft (3.244 m): 31 in (79 cm) adesso, più che i 0 in (0 cm) del 11 novembre dell'inverno scorso. Abituale per la data: 7 in (17 cm).",
+      "Purgatory Resort, 9.820 ft (2.993 m): 4 in (10 cm) oggi, più che i 0 in (0 cm) del 11 novembre dell'inverno scorso. Il valore abituale per questa data: 6 in (14 cm)."
+     ]
+    },
+    {
+     "h": "Controllo stazioni",
+     "p": [
+      "Misurato: la stazione Wolf Creek Summit (10.928 ft (3.331 m), a 2.0 km da Wolf Creek) segna 20 in (51 cm) oggi e aveva 1 in (3 cm) il 11 novembre dell'inverno scorso.",
+      "Misurato: la stazione Alta Lakes (11.289 ft (3.441 m), a 3.5 km da Telluride) segna 19 in (48 cm) oggi e aveva 3 in (8 cm) il 11 novembre dell'inverno scorso.",
+      "Misurato: la stazione Red Mountain Pass (11.060 ft (3.371 m), a 5.3 km da Silverton Mountain) segna 23 in (58 cm) oggi e aveva 0 in (0 cm) il 11 novembre dell'inverno scorso.",
+      "Misurato: la stazione Cascade #2 (8.990 ft (2.740 m), a 4.1 km da Purgatory Resort) segna 0 in (0 cm) oggi e aveva 0 in (0 cm) il 11 novembre dell'inverno scorso.",
+      "La stazione Beartown (11.581 ft (3.530 m)) ha misurato 30 in (76 cm) il 10 novembre.",
+      "La stazione Bison Lake (10.951 ft (3.338 m)) ha misurato 14 in (36 cm) il 10 novembre."
+     ]
+    },
+    {
+     "h": "Da dove viene la differenza",
+     "p": [
+      "Il conteggio del nostro modello per Wolf Creek quest'inverno: 1 giorni con un aumento di 4 in (10 cm) o più, 0 giorni con una perdita di 2 in (5 cm) o più per fusione, pioggia o vento.",
+      "Telluride quest'inverno: 0 giorni con un aumento di 4 in (10 cm) o più, 0 giorni con una perdita di 2 in (5 cm) o più (fusione, pioggia, vento).",
+      "Il conteggio del nostro modello per Silverton Mountain quest'inverno: 1 giorni con un aumento di 4 in (10 cm) o più, 0 giorni con una perdita di 2 in (5 cm) o più per fusione, pioggia o vento.",
+      "Gli scarti d'inizio stagione sono soprattutto rumore: li decide una perturbazione in più o in meno, e prevedono poco del resto dell'inverno."
+     ]
+    },
+    {
+     "h": "L'inverno scorso in cifre",
+     "p": [
+      "Wolf Creek, inverno scorso (2025-26): massimo 30 in (76 cm) il 21 febbraio, stessa quota.",
+      "Telluride: il massimo dell'inverno scorso (2025-26) è stato 30 in (76 cm), il 21 febbraio, a questa quota.",
+      "Silverton Mountain, inverno scorso (2025-26): massimo 20 in (51 cm) il 21 febbraio, stessa quota."
+     ]
+    }
+   ],
+   "advice": [
+    "Un inizio migliore dell'anno scorso non è una promessa per le vacanze: segui la previsione, non solo la neve già a terra.",
+    "I valori del modello descrivono un'area a una quota; una stazione misura un punto. Leggi entrambi prima di decidere.",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date sul suo sito.",
+    "Prima di ogni uscita in fuoripista o scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto)."
+   ],
+   "captions": {
+    "map": "Altezza neve nell'Ovest degli USA il 11 novembre (modello SnowScope) nelle località confrontate con l'inverno scorso."
+   }
+  },
+  "es": {
+   "title": "Nieve en Silverton Mountain frente al invierno pasado: 31 in hoy, 0 in hace un año (11 de noviembre)",
+   "description": "¿Hay más nieve que hace un año? Comparamos hoy con el 11 de noviembre del invierno pasado en 4 estaciones en el oeste de EE. UU.: 4 tienen más nieve …",
+   "lede": "¿Hay más nieve que hace un año? Comparamos hoy con el 11 de noviembre del invierno pasado en 4 estaciones en el oeste de EE. UU.: 4 tienen más nieve ahora, según nuestro modelo de nieve. La mayor diferencia está en Silverton Mountain: 31 in (79 cm) hoy frente a 0 in (0 cm) hace un año. Los satélites nunca se cansan, pero sí tienen nubes.",
+   "sections": [
+    {
+     "h": "Estación por estación",
+     "p": [
+      "Wolf Creek a 11.010 ft (3356 m): 26 in (66 cm) ahora, más que los 0 in (0 cm) del 11 de noviembre del invierno pasado. Habitual para la fecha: 8 in (20 cm).",
+      "Telluride, 10.620 ft (3237 m): 8 in (20 cm) hoy, más que los 0 in (0 cm) del 11 de noviembre del invierno pasado. El valor habitual para esta fecha: 9 in (24 cm).",
+      "Silverton Mountain a 10.643 ft (3244 m): 31 in (79 cm) ahora, más que los 0 in (0 cm) del 11 de noviembre del invierno pasado. Habitual para la fecha: 7 in (17 cm).",
+      "Purgatory Resort, 9820 ft (2993 m): 4 in (10 cm) hoy, más que los 0 in (0 cm) del 11 de noviembre del invierno pasado. El valor habitual para esta fecha: 6 in (14 cm)."
+     ]
+    },
+    {
+     "h": "Control de estaciones",
+     "p": [
+      "Medido: la estación Wolf Creek Summit (10.928 ft (3331 m), a 2.0 km de Wolf Creek) marca 20 in (51 cm) hoy y tenía 1 in (3 cm) el 11 de noviembre del invierno pasado.",
+      "Medido: la estación Alta Lakes (11.289 ft (3441 m), a 3.5 km de Telluride) marca 19 in (48 cm) hoy y tenía 3 in (8 cm) el 11 de noviembre del invierno pasado.",
+      "Medido: la estación Red Mountain Pass (11.060 ft (3371 m), a 5.3 km de Silverton Mountain) marca 23 in (58 cm) hoy y tenía 0 in (0 cm) el 11 de noviembre del invierno pasado.",
+      "Medido: la estación Cascade #2 (8990 ft (2740 m), a 4.1 km de Purgatory Resort) marca 0 in (0 cm) hoy y tenía 0 in (0 cm) el 11 de noviembre del invierno pasado.",
+      "La estación Beartown (11.581 ft (3530 m)) midió 30 in (76 cm) el 10 de noviembre.",
+      "La estación Bison Lake (10.951 ft (3338 m)) midió 14 in (36 cm) el 10 de noviembre."
+     ]
+    },
+    {
+     "h": "De dónde viene la diferencia",
+     "p": [
+      "El recuento de nuestro modelo para Wolf Creek este invierno: 1 días con una ganancia de 4 in (10 cm) o más, 0 días con una pérdida de 2 in (5 cm) o más por fusión, lluvia o viento.",
+      "Telluride este invierno: 0 días con ganancia de 4 in (10 cm) o más, 0 días con pérdida de 2 in (5 cm) o más (fusión, lluvia, viento).",
+      "El recuento de nuestro modelo para Silverton Mountain este invierno: 1 días con una ganancia de 4 in (10 cm) o más, 0 días con una pérdida de 2 in (5 cm) o más por fusión, lluvia o viento.",
+      "Las diferencias de principio de temporada son sobre todo ruido: una borrasca más o menos las decide, y predicen poco del resto del invierno."
+     ]
+    },
+    {
+     "h": "El invierno pasado en cifras",
+     "p": [
+      "Wolf Creek, invierno pasado (2025-26): máximo 30 in (76 cm) el 21 de febrero, misma altura.",
+      "Telluride: el máximo del invierno pasado (2025-26) fue de 30 in (76 cm), el 21 de febrero, a esta altura.",
+      "Silverton Mountain, invierno pasado (2025-26): máximo 20 in (51 cm) el 21 de febrero, misma altura."
+     ]
+    }
+   ],
+   "advice": [
+    "Un comienzo mejor que el año pasado no garantiza nada para las vacaciones: sigue la previsión, no solo la nieve que ya hay.",
+    "Los valores del modelo describen una zona a una altura; una estación mide un punto. Lee ambos antes de decidir.",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas en su web.",
+    "Antes de cualquier salida fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo)."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de EE. UU. el 11 de noviembre (modelo SnowScope) en las estaciones comparadas con el invierno pasado."
+   }
+  },
+  "ar": {
+   "title": "التلج ف Silverton Mountain مقارنة مع العام اللي فات: 31 إنش اليوم، 0 إنش هادي عام (11 نونبر)",
+   "description": "واش كاين تلج أكثر من هادي عام؟ قارنّا اليوم مع 11 نونبر ديال الشتا اللي فاتت ف 4 محطات فغرب ميريكان: 4 منهم فيهم تلج أكثر دابا، حسب الموديل ديال …",
+   "lede": "واش كاين تلج أكثر من هادي عام؟ قارنّا اليوم مع 11 نونبر ديال الشتا اللي فاتت ف 4 محطات فغرب ميريكان: 4 منهم فيهم تلج أكثر دابا، حسب الموديل ديال التلج ديالنا. أكبر فرق كاين ف Silverton Mountain: 31 إنش (79 سم) اليوم مقابل 0 إنش (0 سم) هادي عام. الساتليتات عمرهم مايعياو، ولكن كيجيهم السحاب.",
+   "sections": [
+    {
+     "h": "محطة بمحطة",
+     "p": [
+      "Wolf Creek على علو 11010 قدم (3356 م): 26 إنش (66 سم) دابا، أكثر من 0 إنش (0 سم) ديال 11 نونبر فالشتا اللي فاتت. العادي فهاد التاريخ: 8 إنش (20 سم).",
+      "Telluride، 10620 قدم (3237 م): 8 إنش (20 سم) اليوم، أكثر من 0 إنش (0 سم) ديال الشتا اللي فاتت نهار 11 نونبر. القيمة العادية لهاد التاريخ: 9 إنش (24 سم).",
+      "Silverton Mountain على علو 10643 قدم (3244 م): 31 إنش (79 سم) دابا، أكثر من 0 إنش (0 سم) ديال 11 نونبر فالشتا اللي فاتت. العادي فهاد التاريخ: 7 إنش (17 سم).",
+      "Purgatory Resort، 9820 قدم (2993 م): 4 إنش (10 سم) اليوم، أكثر من 0 إنش (0 سم) ديال الشتا اللي فاتت نهار 11 نونبر. القيمة العادية لهاد التاريخ: 6 إنش (14 سم)."
+     ]
+    },
+    {
+     "h": "التحقق بالمحطات",
+     "p": [
+      "المقاس: محطة Wolf Creek Summit (10928 قدم (3331 م)، 2.0 كم من Wolf Creek) كتعطي 20 إنش (51 سم) اليوم وكان فيها 1 إنش (3 سم) نهار 11 نونبر فالشتا اللي فاتت.",
+      "المقاس: محطة Alta Lakes (11289 قدم (3441 م)، 3.5 كم من Telluride) كتعطي 19 إنش (48 سم) اليوم وكان فيها 3 إنش (8 سم) نهار 11 نونبر فالشتا اللي فاتت.",
+      "المقاس: محطة Red Mountain Pass (11060 قدم (3371 م)، 5.3 كم من Silverton Mountain) كتعطي 23 إنش (58 سم) اليوم وكان فيها 0 إنش (0 سم) نهار 11 نونبر فالشتا اللي فاتت.",
+      "المقاس: محطة Cascade #2 (8990 قدم (2740 م)، 4.1 كم من Purgatory Resort) كتعطي 0 إنش (0 سم) اليوم وكان فيها 0 إنش (0 سم) نهار 11 نونبر فالشتا اللي فاتت.",
+      "محطة Beartown (11581 قدم (3530 م)) قاست 30 إنش (76 سم) نهار 10 نونبر.",
+      "محطة Bison Lake (10951 قدم (3338 م)) قاست 14 إنش (36 سم) نهار 10 نونبر."
+     ]
+    },
+    {
+     "h": "منين جا الفرق",
+     "p": [
+      "الحساب ديال الموديل ديالنا ل Wolf Creek هاد الشتا: 1 أيام فيهم زيادة ديال 4 إنش (10 سم) ولا كثر، 0 أيام فيهم نقص ديال 2 إنش (5 سم) ولا كثر بالذوبان، الشتا ولا الريح.",
+      "Telluride هاد الشتا: 0 أيام ربحو 4 إنش (10 سم) ولا كثر، 0 أيام خسرو 2 إنش (5 سم) ولا كثر (الذوبان، الشتا، الريح).",
+      "الحساب ديال الموديل ديالنا ل Silverton Mountain هاد الشتا: 1 أيام فيهم زيادة ديال 4 إنش (10 سم) ولا كثر، 0 أيام فيهم نقص ديال 2 إنش (5 سم) ولا كثر بالذوبان، الشتا ولا الريح.",
+      "الفروق ديال بداية الموسم أغلبها تشويش: عاصفة وحدة زايدة ولا ناقصة كتقررها، وماكتنبأش بزاف بالباقي ديال الشتا."
+     ]
+    },
+    {
+     "h": "الشتا اللي فاتت بالأرقام",
+     "p": [
+      "Wolf Creek، الشتا اللي فاتت (2025-26): القمة 30 إنش (76 سم) نهار 21 فبراير، نفس العلو.",
+      "Telluride: القمة ديال الشتا اللي فاتت (2025-26) كانت 30 إنش (76 سم)، نهار 21 فبراير، فهاد العلو.",
+      "Silverton Mountain، الشتا اللي فاتت (2025-26): القمة 20 إنش (51 سم) نهار 21 فبراير، نفس العلو."
+     ]
+    }
+   ],
+   "advice": [
+    "بداية أحسن من العام اللي فات ماشي ضمانة للعطلة: تبع التوقعات، ماشي غير التلج اللي كاين فالأرض.",
+    "الأرقام ديال الموديل كتوصف منطقة فعلو واحد؛ المحطة كتقيس نقطة وحدة. قرا بجوج قبل ما تقرر.",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديالها.",
+    "قبل أي خرجة برا البيست ولا جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت)."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب ميريكان نهار 11 نونبر (الموديل ديال SnowScope) فالمحطات المقارنة مع الشتا اللي فاتت."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "de": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "it": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "es": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "sat"
+  }
+ },
+ "words_en": 515,
+ "indexable": true,
+ "main": {
+  "slug": "wolf_creek_ski_area",
+  "name": "Wolf Creek",
+  "lat": 37.4632,
+  "lon": -106.7905
+ },
+ "places": [
+  {
+   "name": "Wolf Creek",
+   "lat": 37.4632,
+   "lon": -106.7905
+  },
+  {
+   "name": "Telluride",
+   "lat": 37.9197,
+   "lon": -107.8348
+  },
+  {
+   "name": "Silverton Mountain",
+   "lat": 37.8773,
+   "lon": -107.6562
+  },
+  {
+   "name": "Purgatory Resort",
+   "lat": 37.6261,
+   "lon": -107.8265
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "wolf_creek_ski_area",
+   "name": "Wolf Creek"
+  },
+  {
+   "slug": "telluride_ski_area",
+   "name": "Telluride"
+  },
+  {
+   "slug": "silverton_mountain",
+   "name": "Silverton Mountain"
+  },
+  {
+   "slug": "purgatory_resort",
+   "name": "Purgatory Resort"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "wolf_creek_ski_area",
+    "name": "Wolf Creek",
+    "depth": 87,
+    "new72": 0,
+    "next": 8,
+    "top_m": 3585
+   },
+   {
+    "slug": "telluride_ski_area",
+    "name": "Telluride",
+    "depth": 86,
+    "new72": 0,
+    "next": 9,
+    "top_m": 3812
+   },
+   {
+    "slug": "silverton_mountain",
+    "name": "Silverton Mountain",
+    "depth": 58,
+    "new72": 0,
+    "next": 7,
+    "top_m": 3345
+   },
+   {
+    "slug": "purgatory_resort",
+    "name": "Purgatory Resort",
+    "depth": 57,
+    "new72": 0,
+    "next": 12,
+    "top_m": 3291
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@37.463,-106.790,9.0",
+ "seconds": 0.0,
+ "facts_used": 36,
+ "voice": "sat",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 22.5,
+  "after": 22.5,
+  "with": "alps-snow-this-season-vs-last-season-8-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.13,
+  "with": "alps-snow-this-season-vs-last-season-8-november-2026"
+ },
+ "publish_utc": "2026-11-11T18:44:22Z"
+}

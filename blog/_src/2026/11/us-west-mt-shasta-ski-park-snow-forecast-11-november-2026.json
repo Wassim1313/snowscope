@@ -1,0 +1,809 @@
+{
+ "id": "2026-11-11-us_west-coming",
+ "slug": "us-west-mt-shasta-ski-park-snow-forecast-11-november-2026",
+ "date": "2026-11-11",
+ "published_utc": "2026-11-11T18:44:22Z",
+ "updated_utc": "2026-11-11T18:44:22Z",
+ "region": "US_WEST",
+ "angle": "coming",
+ "score": 69.5,
+ "signature": "mt_shasta_ski_park:40|kirkwood_mountain_resort:40|bear_valley:40",
+ "keyword": {
+  "family": "snow-forecast",
+  "entity": "mt_shasta_ski_park",
+  "region": "US_WEST",
+  "date": "2026-11-11"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "snow_forecast",
+  "region": "US West",
+  "date": "2026-11-11",
+  "weekday": "Wednesday",
+  "model_run": "2026-11-11",
+  "forecast_days": [
+   "2026-11-12",
+   "2026-11-13",
+   "2026-11-14"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 134530,
+   "resorts_with_snow": 123,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-09",
+   "snow_covered_area_km2": 157120,
+   "resorts_with_snow": 130
+  },
+  "region_forecast": {
+   "date": "2026-11-14",
+   "snow_covered_area_km2": 213380,
+   "resorts_with_snow": 139
+  },
+  "question": "Where will new snow fall in the next days, and at which height?",
+  "resorts": [
+   {
+    "name": "Mt. Shasta Ski Park",
+    "country": "United States",
+    "top_m": 2298,
+    "base_m": 1666,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 43,
+    "slug": "mt_shasta_ski_park",
+    "new_cm_by_day": {
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 29,
+     "2026-11-14": 14
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1666,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 8
+     },
+     "mid": {
+      "elev_m": 1982,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 33
+     },
+     "top": {
+      "elev_m": 2298,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 47
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3500,
+      "max": 3960
+     },
+     "2026-11-12": {
+      "min": 2540,
+      "max": 3470
+     },
+     "2026-11-13": {
+      "min": 1670,
+      "max": 2520
+     },
+     "2026-11-14": {
+      "min": 1570,
+      "max": 1820
+     }
+    },
+    "past_winters": {
+     "height_m": 1982,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 21,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 4
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-11-07"
+    }
+   },
+   {
+    "name": "Kirkwood",
+    "country": "United States",
+    "top_m": 2884,
+    "base_m": 2382,
+    "depth_cm_upper_slopes_today": 20,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 39,
+    "slug": "kirkwood_mountain_resort",
+    "new_cm_by_day": {
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 12,
+     "2026-11-14": 27
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2382,
+      "depth_cm_model": 11,
+      "new_cm_next_7_days": 42
+     },
+     "mid": {
+      "elev_m": 2633,
+      "depth_cm_model": 21,
+      "new_cm_next_7_days": 47
+     },
+     "top": {
+      "elev_m": 2884,
+      "depth_cm_model": 23,
+      "new_cm_next_7_days": 50
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3850,
+      "max": 4060
+     },
+     "2026-11-12": {
+      "min": 3260,
+      "max": 3840
+     },
+     "2026-11-13": {
+      "min": 1820,
+      "max": 3060
+     },
+     "2026-11-14": {
+      "min": 1690,
+      "max": 2070
+     }
+    },
+    "past_winters": {
+     "height_m": 2633,
+     "snow_cm_at_this_height_today_model": 20,
+     "deeper_than_n_of_past_winters": 34,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 6
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-09"
+    },
+    "nearest_station": {
+     "station": "Blue Lakes",
+     "elev_m": 2457,
+     "depth_cm_measured": 8,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-10",
+     "km_away": 14.7
+    }
+   },
+   {
+    "name": "Bear Valley",
+    "country": "United States",
+    "top_m": 2586,
+    "base_m": 2024,
+    "depth_cm_upper_slopes_today": 22,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 36,
+    "slug": "bear_valley",
+    "new_cm_by_day": {
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 10,
+     "2026-11-14": 26
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2024,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 25
+     },
+     "mid": {
+      "elev_m": 2305,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 43
+     },
+     "top": {
+      "elev_m": 2586,
+      "depth_cm_model": 16,
+      "new_cm_next_7_days": 45
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3800,
+      "max": 4040
+     },
+     "2026-11-12": {
+      "min": 3060,
+      "max": 3760
+     },
+     "2026-11-13": {
+      "min": 1840,
+      "max": 2960
+     },
+     "2026-11-14": {
+      "min": 1750,
+      "max": 2010
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-09"
+    },
+    "nearest_station": {
+     "station": "Blue Lakes",
+     "elev_m": 2457,
+     "depth_cm_measured": 8,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-10",
+     "km_away": 17.7
+    }
+   },
+   {
+    "name": "Boreal",
+    "country": "United States",
+    "top_m": 2347,
+    "base_m": 2186,
+    "depth_cm_upper_slopes_today": 13,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 36,
+    "slug": "boreal_mountain_resort",
+    "new_cm_by_day": {
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 14,
+     "2026-11-14": 22
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2186,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 37
+     },
+     "mid": {
+      "elev_m": 2266,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 41
+     },
+     "top": {
+      "elev_m": 2347,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 39
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3760,
+      "max": 4080
+     },
+     "2026-11-12": {
+      "min": 3220,
+      "max": 3740
+     },
+     "2026-11-13": {
+      "min": 1710,
+      "max": 3180
+     },
+     "2026-11-14": {
+      "min": 1690,
+      "max": 1920
+     }
+    },
+    "past_winters": {
+     "height_m": 2266,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 17,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 3
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-09"
+    }
+   },
+   {
+    "name": "Palisades Tahoe Olympic Valley",
+    "country": "United States",
+    "top_m": 2665,
+    "base_m": 1890,
+    "depth_cm_upper_slopes_today": 7,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 35,
+    "slug": "palisades_tahoe_olympic_valley",
+    "new_cm_by_day": {
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 12,
+     "2026-11-14": 23
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt. Shasta Ski Park</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">29</text><rect x=\"555\" y=\"36\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"49\" class=\"vl\">14</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Kirkwood</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"83\" class=\"vl\">12</text><rect x=\"555\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"617\" y=\"83\" text-anchor=\"end\" class=\"vl in\">27</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Bear Valley</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"117\" class=\"vl\">10</text><rect x=\"555\" y=\"104\" width=\"63\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"615\" y=\"117\" text-anchor=\"end\" class=\"vl in\">26</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Boreal</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"512\" y=\"151\" class=\"vl\">14</text><rect x=\"555\" y=\"138\" width=\"53\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"611\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Palisades Tahoe Olym</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"185\" class=\"vl\">12</text><rect x=\"555\" y=\"172\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"185\" class=\"vl\">23</text></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt. Shasta Ski Park</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">29</text><rect x=\"555\" y=\"36\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"49\" class=\"vl\">14</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Kirkwood</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"83\" class=\"vl\">12</text><rect x=\"555\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"617\" y=\"83\" text-anchor=\"end\" class=\"vl in\">27</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Bear Valley</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"117\" class=\"vl\">10</text><rect x=\"555\" y=\"104\" width=\"63\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"615\" y=\"117\" text-anchor=\"end\" class=\"vl in\">26</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Boreal</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"512\" y=\"151\" class=\"vl\">14</text><rect x=\"555\" y=\"138\" width=\"53\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"611\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Palisades Tahoe Olym</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"185\" class=\"vl\">12</text><rect x=\"555\" y=\"172\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"185\" class=\"vl\">23</text></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt. Shasta Ski Park</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">29</text><rect x=\"555\" y=\"36\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"49\" class=\"vl\">14</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Kirkwood</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"83\" class=\"vl\">12</text><rect x=\"555\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"617\" y=\"83\" text-anchor=\"end\" class=\"vl in\">27</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Bear Valley</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"117\" class=\"vl\">10</text><rect x=\"555\" y=\"104\" width=\"63\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"615\" y=\"117\" text-anchor=\"end\" class=\"vl in\">26</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Boreal</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"512\" y=\"151\" class=\"vl\">14</text><rect x=\"555\" y=\"138\" width=\"53\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"611\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Palisades Tahoe Olym</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"185\" class=\"vl\">12</text><rect x=\"555\" y=\"172\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"185\" class=\"vl\">23</text></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt. Shasta Ski Park</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">29</text><rect x=\"555\" y=\"36\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"49\" class=\"vl\">14</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Kirkwood</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"83\" class=\"vl\">12</text><rect x=\"555\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"617\" y=\"83\" text-anchor=\"end\" class=\"vl in\">27</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Bear Valley</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"117\" class=\"vl\">10</text><rect x=\"555\" y=\"104\" width=\"63\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"615\" y=\"117\" text-anchor=\"end\" class=\"vl in\">26</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Boreal</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"512\" y=\"151\" class=\"vl\">14</text><rect x=\"555\" y=\"138\" width=\"53\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"611\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Palisades Tahoe Olym</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"185\" class=\"vl\">12</text><rect x=\"555\" y=\"172\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"185\" class=\"vl\">23</text></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt. Shasta Ski Park</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">29</text><rect x=\"555\" y=\"36\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"49\" class=\"vl\">14</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Kirkwood</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"83\" class=\"vl\">12</text><rect x=\"555\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"617\" y=\"83\" text-anchor=\"end\" class=\"vl in\">27</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Bear Valley</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"117\" class=\"vl\">10</text><rect x=\"555\" y=\"104\" width=\"63\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"615\" y=\"117\" text-anchor=\"end\" class=\"vl in\">26</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Boreal</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"512\" y=\"151\" class=\"vl\">14</text><rect x=\"555\" y=\"138\" width=\"53\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"611\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Palisades Tahoe Olym</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"185\" class=\"vl\">12</text><rect x=\"555\" y=\"172\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"185\" class=\"vl\">23</text></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt. Shasta Ski Park</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">29</text><rect x=\"555\" y=\"36\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"49\" class=\"vl\">14</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Kirkwood</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"83\" class=\"vl\">12</text><rect x=\"555\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"617\" y=\"83\" text-anchor=\"end\" class=\"vl in\">27</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Bear Valley</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"117\" class=\"vl\">10</text><rect x=\"555\" y=\"104\" width=\"63\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"615\" y=\"117\" text-anchor=\"end\" class=\"vl in\">26</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Boreal</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"512\" y=\"151\" class=\"vl\">14</text><rect x=\"555\" y=\"138\" width=\"53\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"611\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Palisades Tahoe Olym</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"507\" y=\"185\" class=\"vl\">12</text><rect x=\"555\" y=\"172\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"185\" class=\"vl\">23</text></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  },
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-mt-shasta-ski-park-snow-forecast-11-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-mt-shasta-ski-park-snow-forecast-11-november-2026/map_t.webp",
+   "bytes": 31166,
+   "snow_frac": 0.0181,
+   "weak": true
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "US West snow forecast: Mt. Shasta Ski Park +17 in by 14 November",
+   "description": "US West snow report, 11 November. Until 14 November the forecast gives 17 in (43 cm) at Mt. Shasta Ski Park, 15 in (39 cm) at Kirkwood and 14 in …",
+   "lede": "US West snow report, 11 November. Until 14 November the forecast gives 17 in (43 cm) at Mt. Shasta Ski Park, 15 in (39 cm) at Kirkwood and 14 in (36 cm) at Bear Valley, with less certainty the further out you go. How sure are we? Resort values are model estimates for the upper slopes; stations are measurements, each at one point on the date shown. Satellites never get tired, but they do get clouds.",
+   "sections": [
+    {
+     "h": "Depth today, by the numbers",
+     "p": [
+      "Top of this list: Bear Valley, about 9 in (22 cm) up high. Then Kirkwood 8 in (20 cm) and Boreal 5 in (13 cm).",
+      "The count of the day in the US West: 123 of 195 resorts with snow up high, 51,942 sq mi (134,530 km²) of snow-covered ground."
+     ]
+    },
+    {
+     "h": "Coming up",
+     "p": [
+      "Forecast to 14 November: 14 in (36 cm) at Boreal and 14 in (35 cm) at Palisades Tahoe Olympic Valley. Treat the later days with care.",
+      "Snow-covered area: 60,664 sq mi (157,120 km²) on 9 November, 51,942 sq mi (134,530 km²) today, 82,386 sq mi (213,380 km²) forecast for 14 November. The map is getting less white."
+     ]
+    },
+    {
+     "h": "By height and slope",
+     "p": [
+      "Mt. Shasta Ski Park, 11 November: freezing level 11,483 ft (3,500 m) to 12,992 ft (3,960 m), above the top (7,539 ft / 2,298 m). Rain or wet snow is possible on every slope.",
+      "On 11 November the freezing level at Kirkwood sits at 12,631 ft (3,850 m) to 13,320 ft (4,060 m), over the top of the resort (9,462 ft / 2,884 m): rain or wet snow could fall on all slopes.",
+      "Bear Valley, 11 November: freezing level 12,467 ft (3,800 m) to 13,255 ft (4,040 m), above the top (8,484 ft / 2,586 m). Rain or wet snow is possible on every slope."
+     ]
+    },
+    {
+     "h": "Avalanche danger and safety",
+     "p": [
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Forecasts a few days ahead can change: look at the map again the day before you travel.",
+    "Air above freezing over the slopes turns snow into slush and water. The highest lifts keep the driest snow.",
+    "The best powder lasts a morning, not a week. Go early, before the sun and the crowds get to it.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Mt. Shasta Ski Park gets fresh snow."
+   ],
+   "captions": {
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast).",
+    "map": "Snow depth in the US West on 11 November 2026 (SnowScope snow model): Mt. Shasta Ski Park, Kirkwood, Bear Valley, Boreal, Palisades Tahoe Olympic Valley."
+   }
+  },
+  "fr": {
+   "title": "Prévisions neige dans l'Ouest américain : Mt. Shasta Ski Park +17 in d'ici le 14 novembre",
+   "description": "Bulletin neige dans l'Ouest américain, 11 novembre. D'ici le 14 novembre, la prévision donne 17 in (43 cm) à Mt. Shasta Ski Park, 15 in (39 cm) à …",
+   "lede": "Bulletin neige dans l'Ouest américain, 11 novembre. D'ici le 14 novembre, la prévision donne 17 in (43 cm) à Mt. Shasta Ski Park, 15 in (39 cm) à Kirkwood et 14 in (36 cm) à Bear Valley, avec moins de certitude à mesure qu'on s'éloigne. Quelle confiance ? Les valeurs des stations de ski sont des estimations du modèle pour le haut du domaine ; les stations de mesure donnent des mesures, chacune en un point à la date indiquée. Les satellites ne se fatiguent jamais, mais ils ont des nuages.",
+   "sections": [
+    {
+     "h": "La hauteur du jour, en chiffres",
+     "p": [
+      "En haut de la liste : Bear Valley, environ 9 in (22 cm) en altitude. Puis Kirkwood 8 in (20 cm) et Boreal 5 in (13 cm).",
+      "Le compte du jour dans l'Ouest américain : 123 stations sur 195 avec de la neige en haut, 51 942 sq mi (134 530 km²) de sol enneigé."
+     ]
+    },
+    {
+     "h": "À venir",
+     "p": [
+      "Prévision jusqu'au 14 novembre : 14 in (36 cm) à Boreal et 14 in (35 cm) à Palisades Tahoe Olympic Valley. Prudence sur les derniers jours.",
+      "Surface enneigée : 60 664 sq mi (157 120 km²) le 9 novembre, 51 942 sq mi (134 530 km²) aujourd'hui, 82 386 sq mi (213 380 km²) prévus le 14 novembre. À suivre."
+     ]
+    },
+    {
+     "h": "Par altitude et par pente",
+     "p": [
+      "Mt. Shasta Ski Park, 11 novembre : isotherme 0 °C entre 11 483 ft (3 500 m) et 12 992 ft (3 960 m), au-dessus du sommet (7 539 ft / 2 298 m). Pluie ou neige mouillée possibles sur toutes les pentes.",
+      "Le 11 novembre, l'isotherme 0 °C à Kirkwood se situe entre 12 631 ft (3 850 m) et 13 320 ft (4 060 m), au-dessus du sommet de la station (9 462 ft / 2 884 m) : pluie ou neige mouillée sur toutes les pentes possible.",
+      "Bear Valley, 11 novembre : isotherme 0 °C entre 12 467 ft (3 800 m) et 13 255 ft (4 040 m), au-dessus du sommet (8 484 ft / 2 586 m). Pluie ou neige mouillée possibles sur toutes les pentes."
+     ]
+    },
+    {
+     "h": "Risque d'avalanche et sécurité",
+     "p": [
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ.",
+    "Au-dessus de 0 °C, l'air transforme la neige en soupe et en eau. Les remontées les plus hautes gardent la neige la plus sèche.",
+    "La meilleure poudreuse dure une matinée, pas une semaine. Partez tôt, avant le soleil et la foule.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Mt. Shasta Ski Park reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "bars": "Neige fraîche par jour dans les stations en tête (jours passés : modèle ; barres claires : prévision).",
+    "map": "Hauteur de neige dans l'Ouest américain le 11 novembre 2026 (modèle de neige SnowScope) : Mt. Shasta Ski Park, Kirkwood, Bear Valley, Boreal, Palisades Tahoe Olympic Valley."
+   }
+  },
+  "de": {
+   "title": "Schneeprognose im US-Westen: Mt. Shasta Ski Park +17 in bis zum 14. November",
+   "description": "Schneebericht im US-Westen, 11. November. Bis zum 14. November ergibt die Prognose 17 in (43 cm) in Mt. Shasta Ski Park, 15 in (39 cm) in Kirkwood …",
+   "lede": "Schneebericht im US-Westen, 11. November. Bis zum 14. November ergibt die Prognose 17 in (43 cm) in Mt. Shasta Ski Park, 15 in (39 cm) in Kirkwood und 14 in (36 cm) in Bear Valley, mit weniger Sicherheit, je weiter es in die Zukunft geht. Wie sicher sind wir? Die Skigebietswerte sind Modellschätzungen für die oberen Hänge; Stationen sind Messungen, jede an einem Punkt am angegebenen Tag. Satelliten werden nie müde, aber sie bekommen Wolken.",
+   "sections": [
+    {
+     "h": "Schneehöhe heute, in Zahlen",
+     "p": [
+      "An der Spitze dieser Liste: Bear Valley, etwa 9 in (22 cm) weit oben. Dann Kirkwood 8 in (20 cm) und Boreal 5 in (13 cm).",
+      "Die Zählung des Tages im US-Westen: 123 von 195 Skigebieten mit Schnee weit oben, 51.942 sq mi (134.530 km²) Schneefläche."
+     ]
+    },
+    {
+     "h": "Demnächst",
+     "p": [
+      "Prognose bis zum 14. November: 14 in (36 cm) in Boreal und 14 in (35 cm) in Palisades Tahoe Olympic Valley. Die späteren Tage mit Vorsicht lesen.",
+      "Schneefläche: 60.664 sq mi (157.120 km²) am 9. November, heute 51.942 sq mi (134.530 km²), 82.386 sq mi (213.380 km²) erwartet für den 14. November. Die Karte wird weniger weiß."
+     ]
+    },
+    {
+     "h": "Nach Höhe und Hang",
+     "p": [
+      "Mt. Shasta Ski Park, 11. November: Nullgradgrenze 11.483 ft (3.500 m) bis 12.992 ft (3.960 m), über dem höchsten Punkt (7.539 ft (2.298 m)). Regen oder nasser Schnee ist auf allen Hängen möglich.",
+      "Am 11. November liegt die Nullgradgrenze in Kirkwood bei 12.631 ft (3.850 m) bis 13.320 ft (4.060 m), über dem höchsten Punkt des Skigebiets (9.462 ft (2.884 m)): Regen oder nasser Schnee könnte auf alle Hänge fallen.",
+      "Bear Valley, 11. November: Nullgradgrenze 12.467 ft (3.800 m) bis 13.255 ft (4.040 m), über dem höchsten Punkt (8.484 ft (2.586 m)). Regen oder nasser Schnee ist auf allen Hängen möglich."
+     ]
+    },
+    {
+     "h": "Lawinengefahr und Sicherheit",
+     "p": [
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte.",
+    "Luft über null Grad macht aus Schnee Matsch und Wasser. Die höchsten Lifte haben den trockensten Schnee.",
+    "Der beste Pulver hält einen Vormittag, keine Woche. Geh früh, bevor Sonne und Andrang ihn erwischen.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Mt. Shasta Ski Park Neuschnee bekommt."
+   ],
+   "captions": {
+    "bars": "Neuschnee pro Tag in den führenden Skigebieten (vergangene Tage: Modell; helle Balken: Prognose).",
+    "map": "Schneehöhe im US-Westen am 11. November 2026 (SnowScope-Schneemodell): Mt. Shasta Ski Park, Kirkwood, Bear Valley, Boreal, Palisades Tahoe Olympic Valley."
+   }
+  },
+  "it": {
+   "title": "Previsioni neve nell'Ovest degli USA: Mt. Shasta Ski Park +17 in entro il 14 novembre",
+   "description": "Bollettino neve nell'Ovest degli USA, 11 novembre. Fino al 14 novembre la previsione indica 17 in (43 cm) a Mt. Shasta Ski Park, 15 in (39 cm) a …",
+   "lede": "Bollettino neve nell'Ovest degli USA, 11 novembre. Fino al 14 novembre la previsione indica 17 in (43 cm) a Mt. Shasta Ski Park, 15 in (39 cm) a Kirkwood e 14 in (36 cm) a Bear Valley, con meno certezza più ci si allontana. Quanto ne siamo sicuri? I valori delle località sono stime del modello per i pendii superiori; le stazioni sono misure, ognuna in un punto alla data indicata. I satelliti non si stancano mai, ma le nuvole sì che le trovano.",
+   "sections": [
+    {
+     "h": "Altezza oggi, in numeri",
+     "p": [
+      "In cima a questa lista: Bear Valley, circa 9 in (22 cm) in alto. Poi Kirkwood 8 in (20 cm) e Boreal 5 in (13 cm).",
+      "Il conto del giorno nell'Ovest degli USA: 123 località su 195 con neve in alto, 51.942 sq mi (134.530 km²) di superficie innevata."
+     ]
+    },
+    {
+     "h": "In arrivo",
+     "p": [
+      "Previsione fino al 14 novembre: 14 in (36 cm) a Boreal e 14 in (35 cm) a Palisades Tahoe Olympic Valley. Prendi i giorni più lontani con cautela.",
+      "Superficie innevata: 60.664 sq mi (157.120 km²) il 9 novembre, 51.942 sq mi (134.530 km²) oggi, 82.386 sq mi (213.380 km²) previsti per il 14 novembre. Questa è la tendenza, per ora."
+     ]
+    },
+    {
+     "h": "Per quota e pendio",
+     "p": [
+      "Mt. Shasta Ski Park, 11 novembre: zero termico tra 11.483 ft (3.500 m) e 12.992 ft (3.960 m), sopra la quota massima (7.539 ft (2.298 m)). Pioggia o neve bagnata possibili su tutti i pendii.",
+      "Il 11 novembre lo zero termico a Kirkwood sta tra 12.631 ft (3.850 m) e 13.320 ft (4.060 m), sopra la quota massima della località (9.462 ft (2.884 m)): pioggia o neve bagnata potrebbero cadere su tutti i pendii.",
+      "Bear Valley, 11 novembre: zero termico tra 12.467 ft (3.800 m) e 13.255 ft (4.040 m), sopra la quota massima (8.484 ft (2.586 m)). Pioggia o neve bagnata possibili su tutti i pendii."
+     ]
+    },
+    {
+     "h": "Pericolo valanghe e sicurezza",
+     "p": [
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire.",
+    "Aria sopra lo zero sui pendii trasforma la neve in pappa e acqua. Gli impianti più alti tengono la neve più asciutta.",
+    "La powder migliore dura una mattina, non una settimana. Vai presto, prima che arrivino sole e folla.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Mt. Shasta Ski Park riceve neve fresca."
+   ],
+   "captions": {
+    "bars": "Neve fresca al giorno nelle località in testa (giorni passati: modello; barre chiare: previsione).",
+    "map": "Altezza neve nell'Ovest degli USA il 11 novembre 2026 (modello neve SnowScope): Mt. Shasta Ski Park, Kirkwood, Bear Valley, Boreal, Palisades Tahoe Olympic Valley."
+   }
+  },
+  "es": {
+   "title": "Previsión de nieve en el oeste de EE. UU.: Mt. Shasta Ski Park +17 in hasta el 14 de noviembre",
+   "description": "Parte de nieve en el oeste de EE. UU., 11 de noviembre. Hasta el 14 de noviembre la previsión da 17 in (43 cm) en Mt. Shasta Ski Park, 15 in (39 cm) …",
+   "lede": "Parte de nieve en el oeste de EE. UU., 11 de noviembre. Hasta el 14 de noviembre la previsión da 17 in (43 cm) en Mt. Shasta Ski Park, 15 in (39 cm) en Kirkwood y 14 in (36 cm) en Bear Valley, con menos certeza cuanto más lejos. ¿Qué confianza tenemos? Los valores de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida dan medidas, cada una en un punto en la fecha indicada. Los satélites nunca se cansan, pero sí tienen nubes.",
+   "sections": [
+    {
+     "h": "El espesor de hoy, en cifras",
+     "p": [
+      "Arriba de la lista: Bear Valley, unos 9 in (22 cm) en altura. Luego Kirkwood 8 in (20 cm) y Boreal 5 in (13 cm).",
+      "El recuento del día en el oeste de EE. UU.: 123 de 195 estaciones con nieve arriba, 51.942 sq mi (134.530 km²) de suelo nevado."
+     ]
+    },
+    {
+     "h": "Lo próximo",
+     "p": [
+      "Previsión hasta el 14 de noviembre: 14 in (36 cm) en Boreal y 14 in (35 cm) en Palisades Tahoe Olympic Valley. Cuidado con los últimos días.",
+      "Superficie nevada: 60.664 sq mi (157.120 km²) el 9 de noviembre, 51.942 sq mi (134.530 km²) hoy, 82.386 sq mi (213.380 km²) previstos el 14 de noviembre. Habrá que seguirla."
+     ]
+    },
+    {
+     "h": "Por altura y ladera",
+     "p": [
+      "Mt. Shasta Ski Park, 11 de noviembre: cota de congelación 11.483 ft (3500 m)-12.992 ft (3960 m), por encima de la cima (7539 ft (2298 m)). Puede haber lluvia o nieve húmeda en todas las pistas.",
+      "El 11 de noviembre la cota de congelación en Kirkwood se sitúa en 12.631 ft (3850 m)-13.320 ft (4060 m), sobre la cota alta de la estación (9462 ft (2884 m)): podría caer lluvia o nieve húmeda en todas las pistas.",
+      "Bear Valley, 11 de noviembre: cota de congelación 12.467 ft (3800 m)-13.255 ft (4040 m), por encima de la cima (8484 ft (2586 m)). Puede haber lluvia o nieve húmeda en todas las pistas."
+     ]
+    },
+    {
+     "h": "Peligro de aludes y seguridad",
+     "p": [
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar.",
+    "El aire por encima de cero sobre las pistas convierte la nieve en papa y en agua. Los remontes más altos guardan la nieve más seca.",
+    "La mejor nieve polvo dura una mañana, no una semana. Sal temprano, antes de que lleguen el sol y la gente.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Mt. Shasta Ski Park recibe nieve nueva."
+   ],
+   "captions": {
+    "bars": "Nieve nueva por día en las estaciones líderes (días pasados: modelo; barras claras: previsión).",
+    "map": "Espesor de nieve en el oeste de EE. UU. el 11 de noviembre 2026 (modelo de nieve de SnowScope): Mt. Shasta Ski Park, Kirkwood, Bear Valley, Boreal, Palisades Tahoe Olympic Valley."
+   }
+  },
+  "ar": {
+   "title": "توقعات التلج فغرب ميريكان: Mt. Shasta Ski Park +17 إنش حتى ل 14 نونبر",
+   "description": "تقرير التلج فغرب ميريكان، 11 نونبر. حتى ل 14 نونبر التوقعات كتعطي 17 إنش (43 سم) ف Mt. Shasta Ski Park، 15 إنش (39 سم) ف Kirkwood و 14 إنش (36 سم) ف …",
+   "lede": "تقرير التلج فغرب ميريكان، 11 نونبر. حتى ل 14 نونبر التوقعات كتعطي 17 إنش (43 سم) ف Mt. Shasta Ski Park، 15 إنش (39 سم) ف Kirkwood و 14 إنش (36 سم) ف Bear Valley، والتأكد كينقص كل ما بعدنا. شحال حنا متأكدين؟ القيم ديال المحطات تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس قياسات، كل وحدة فنقطة وحدة فالتاريخ المكتوب. الساتليتات عمرهم مايعياو، ولكن كيجيهم السحاب.",
+   "sections": [
+    {
+     "h": "العلو ديال اليوم بالأرقام",
+     "p": [
+      "فالراس ديال اللائحة: Bear Valley، تقريبا 9 إنش (22 سم) فالعلو. ومن بعد Kirkwood 8 إنش (20 سم) و Boreal 5 إنش (13 سم).",
+      "الحساب ديال اليوم فغرب ميريكان: 123 محطة من 195 فيهم التلج فالعلو، و 51942 ميل² (134530 كم²) ديال الأرض اللي فيها التلج."
+     ]
+    },
+    {
+     "h": "اللي جاي",
+     "p": [
+      "التوقعات حتى ل 14 نونبر: 14 إنش (36 سم) ف Boreal و 14 إنش (35 سم) ف Palisades Tahoe Olympic Valley. الأيام اللخرين خاصهم الحذر.",
+      "المساحة اللي فيها التلج: 60664 ميل² (157120 كم²) نهار 9 نونبر، 51942 ميل² (134530 كم²) اليوم، 82386 ميل² (213380 كم²) متوقعة نهار 14 نونبر. هادا هو الاتجاه، دابا."
+     ]
+    },
+    {
+     "h": "حسب العلو والجهة",
+     "p": [
+      "Mt. Shasta Ski Park، 11 نونبر: علو الجليد 11483 قدم (3500 م) حتى ل 12992 قدم (3960 م)، فوق القمة (7539 قدم (2298 م)). الشتا ولا التلج المبلول ممكن فكاع البيستات.",
+      "نهار 11 نونبر علو الجليد ف Kirkwood كيكون بين 12631 قدم (3850 م) و 13320 قدم (4060 م)، فوق القمة ديال المحطة (9462 قدم (2884 م)): الشتا ولا التلج المبلول يقدر يطيح فكاع البيستات.",
+      "Bear Valley، 11 نونبر: علو الجليد 12467 قدم (3800 م) حتى ل 13255 قدم (4040 م)، فوق القمة (8484 قدم (2586 م)). الشتا ولا التلج المبلول ممكن فكاع البيستات."
+     ]
+    },
+    {
+     "h": "خطر الانهيارات والسلامة",
+     "p": [
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر.",
+    "الهوا اللي فوق الجليد فوق البيستات كيرد التلج ذايب وما. التيليسييجات اللي فالفوق فيهم أنشف تلج.",
+    "أحسن تلج طري كيدوم صباح، ماشي سيمانة. سير بكري، قبل ما توصل ليه الشمس والناس.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Mt. Shasta Ski Park يجيها تلج جديد."
+   ],
+   "captions": {
+    "bars": "التلج الجديد فكل نهار فالمحطات اللولين (الأيام اللي فاتو من الموديل، والخطوط الفاتحة = التوقعات).",
+    "map": "العلو ديال التلج فغرب ميريكان نهار 11 نونبر 2026 (الموديل ديال SnowScope): Mt. Shasta Ski Park, Kirkwood, Bear Valley, Boreal, Palisades Tahoe Olympic Valley."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "de": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "it": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "es": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  }
+ },
+ "words_en": 305,
+ "indexable": true,
+ "main": {
+  "slug": "mt_shasta_ski_park",
+  "name": "Mt. Shasta Ski Park",
+  "lat": 41.3273,
+  "lon": -122.2008
+ },
+ "places": [
+  {
+   "name": "Mt. Shasta Ski Park",
+   "lat": 41.3273,
+   "lon": -122.2008
+  },
+  {
+   "name": "Kirkwood",
+   "lat": 38.679,
+   "lon": -120.0674
+  },
+  {
+   "name": "Bear Valley",
+   "lat": 38.4826,
+   "lon": -120.0503
+  },
+  {
+   "name": "Boreal",
+   "lat": 39.3314,
+   "lon": -120.3481
+  },
+  {
+   "name": "Palisades Tahoe Olympic Valley",
+   "lat": 39.1934,
+   "lon": -120.2454
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "mt_shasta_ski_park",
+   "name": "Mt. Shasta Ski Park"
+  },
+  {
+   "slug": "kirkwood_mountain_resort",
+   "name": "Kirkwood"
+  },
+  {
+   "slug": "bear_valley",
+   "name": "Bear Valley"
+  },
+  {
+   "slug": "boreal_mountain_resort",
+   "name": "Boreal"
+  },
+  {
+   "slug": "palisades_tahoe_olympic_valley",
+   "name": "Palisades Tahoe Olympic Valley"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "mt_shasta_ski_park",
+    "name": "Mt. Shasta Ski Park",
+    "depth": 0,
+    "new72": 0,
+    "next": 43,
+    "top_m": 2298
+   },
+   {
+    "slug": "kirkwood_mountain_resort",
+    "name": "Kirkwood",
+    "depth": 20,
+    "new72": 0,
+    "next": 39,
+    "top_m": 2884
+   },
+   {
+    "slug": "bear_valley",
+    "name": "Bear Valley",
+    "depth": 22,
+    "new72": 0,
+    "next": 36,
+    "top_m": 2586
+   },
+   {
+    "slug": "boreal_mountain_resort",
+    "name": "Boreal",
+    "depth": 13,
+    "new72": 0,
+    "next": 36,
+    "top_m": 2347
+   },
+   {
+    "slug": "palisades_tahoe_olympic_valley",
+    "name": "Palisades Tahoe Olympic Valley",
+    "depth": 7,
+    "new72": 0,
+    "next": 35,
+    "top_m": 2665
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@41.327,-122.201,9.0",
+ "seconds": 0.0,
+ "facts_used": 34,
+ "voice": "sat",
+ "media_ids": [
+  "bars",
+  "map"
+ ],
+ "overlap": {
+  "before": 30.5,
+  "after": 11.5,
+  "with": "us-northeast-north-county-school-snow-forecast-10-november-2026",
+  "tries": 1
+ },
+ "similarity": {
+  "max": 0.101,
+  "with": "us-northeast-snow-forecast-6-november-2026"
+ },
+ "publish_utc": "2026-11-11T18:44:22Z"
+}

@@ -1,0 +1,827 @@
+{
+ "id": "2026-11-11-alps-powder",
+ "slug": "alps-glacier-3000-fresh-snow-powder-alert-11-november-2026",
+ "date": "2026-11-11",
+ "published_utc": "2026-11-11T18:44:22Z",
+ "updated_utc": "2026-11-11T18:44:22Z",
+ "region": "ALPS",
+ "angle": "powder",
+ "score": 58.0,
+ "signature": "glacier_3000:30|jungfraujoch_snow_fun_park:20|orcieres_merlette:20",
+ "keyword": {
+  "family": "fresh-snow",
+  "entity": "glacier_3000",
+  "region": "ALPS",
+  "date": "2026-11-11"
+ },
+ "tags": [
+  "powder",
+  "stations",
+  "where-to-ski",
+  "avalanche"
+ ],
+ "facts": {
+  "angle": "powder_alert",
+  "region": "Alps",
+  "date": "2026-11-11",
+  "weekday": "Wednesday",
+  "model_run": "2026-11-11",
+  "forecast_days": [
+   "2026-11-12",
+   "2026-11-13",
+   "2026-11-14"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 38440,
+   "resorts_with_snow": 623,
+   "resorts_in_region": 1179
+  },
+  "region_before": {
+   "date": "2026-11-09",
+   "snow_covered_area_km2": 45820,
+   "resorts_with_snow": 711
+  },
+  "region_forecast": {
+   "date": "2026-11-14",
+   "snow_covered_area_km2": 46730,
+   "resorts_with_snow": 652
+  },
+  "question": "Where did fresh snow fall in the last 72 hours, and is more coming?",
+  "resorts": [
+   {
+    "name": "Glacier 3000",
+    "country": "Switzerland",
+    "top_m": 2931,
+    "base_m": 1545,
+    "depth_cm_upper_slopes_today": 94,
+    "new_cm_last_24h": 10,
+    "new_cm_last_72h": 26,
+    "new_cm_forecast_next_days": 33,
+    "slug": "glacier_3000",
+    "new_cm_by_day": {
+     "2026-11-09": 1,
+     "2026-11-10": 15,
+     "2026-11-11": 10,
+     "2026-11-12": 28,
+     "2026-11-13": 5,
+     "2026-11-14": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1545,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 13,
+      "depth_cm_measured": 1
+     },
+     "mid": {
+      "elev_m": 2238,
+      "depth_cm_model": 4,
+      "new_cm_next_7_days": 37,
+      "depth_cm_measured": 4
+     },
+     "top": {
+      "elev_m": 2931,
+      "depth_cm_model": 14,
+      "new_cm_next_7_days": 55,
+      "depth_cm_measured": 14
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-12": {
+      "min": 2480,
+      "max": 2900
+     },
+     "2026-11-13": {
+      "min": 1770,
+      "max": 2490
+     },
+     "2026-11-14": {
+      "min": 2040,
+      "max": 2460
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-03"
+    },
+    "nearest_station": {
+     "station": "Tsanfleuron",
+     "elev_m": 2569,
+     "depth_cm_measured": 16,
+     "new_cm_measured_24h": 1,
+     "measured_on": "2026-11-11",
+     "km_away": 2.7
+    }
+   },
+   {
+    "name": "Jungfraujoch Snow Fun Park",
+    "country": "Switzerland",
+    "top_m": 3461,
+    "base_m": 3439,
+    "depth_cm_upper_slopes_today": 40,
+    "new_cm_last_24h": 6,
+    "new_cm_last_72h": 25,
+    "new_cm_forecast_next_days": 23,
+    "slug": "jungfraujoch_snow_fun_park",
+    "new_cm_by_day": {
+     "2026-11-09": 2,
+     "2026-11-10": 18,
+     "2026-11-11": 6,
+     "2026-11-12": 19,
+     "2026-11-13": 4,
+     "2026-11-14": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3439,
+      "depth_cm_model": 21,
+      "new_cm_next_7_days": 44
+     },
+     "mid": {
+      "elev_m": 3450,
+      "depth_cm_model": 21,
+      "new_cm_next_7_days": 44
+     },
+     "top": {
+      "elev_m": 3461,
+      "depth_cm_model": 21,
+      "new_cm_next_7_days": 44
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-12": {
+      "min": 3020,
+      "max": 3360
+     },
+     "2026-11-13": {
+      "min": 2590,
+      "max": 3360
+     },
+     "2026-11-14": {
+      "min": 2600,
+      "max": 2770
+     }
+    },
+    "past_winters": {
+     "height_m": 3450,
+     "snow_cm_at_this_height_today_model": 21,
+     "deeper_than_n_of_past_winters": 8,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 59
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-08"
+    },
+    "nearest_station": {
+     "station": "Russisprung",
+     "elev_m": 2150,
+     "depth_cm_measured": 0,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-11",
+     "km_away": 5.2
+    }
+   },
+   {
+    "name": "Orcières Merlette",
+    "country": "France",
+    "top_m": 2731,
+    "base_m": 1826,
+    "depth_cm_upper_slopes_today": 20,
+    "new_cm_last_24h": 5,
+    "new_cm_last_72h": 24,
+    "new_cm_forecast_next_days": 33,
+    "slug": "orcieres_merlette",
+    "new_cm_by_day": {
+     "2026-11-09": 9,
+     "2026-11-10": 10,
+     "2026-11-11": 5,
+     "2026-11-12": 29,
+     "2026-11-13": 2,
+     "2026-11-14": 2
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1826,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 5
+     },
+     "mid": {
+      "elev_m": 2278,
+      "depth_cm_model": 3,
+      "new_cm_next_7_days": 42
+     },
+     "top": {
+      "elev_m": 2731,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 60
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-12": {
+      "min": 2610,
+      "max": 3190
+     },
+     "2026-11-13": {
+      "min": 2600,
+      "max": 2860
+     },
+     "2026-11-14": {
+      "min": 2280,
+      "max": 2620
+     }
+    },
+    "past_winters": {
+     "height_m": 2278,
+     "snow_cm_at_this_height_today_model": 1,
+     "deeper_than_n_of_past_winters": 9,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 12
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-01"
+    },
+    "nearest_station": {
+     "station": "LES PORTES EN VALGAUDEMAR_NIVO",
+     "elev_m": 1270,
+     "depth_cm_measured": 0,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-10",
+     "km_away": 14.9
+    }
+   },
+   {
+    "name": "La Grave",
+    "country": "France",
+    "top_m": 3543,
+    "base_m": 3196,
+    "depth_cm_upper_slopes_today": 39,
+    "new_cm_last_24h": 5,
+    "new_cm_last_72h": 23,
+    "new_cm_forecast_next_days": 58,
+    "slug": "la_grave",
+    "new_cm_by_day": {
+     "2026-11-09": 9,
+     "2026-11-10": 11,
+     "2026-11-11": 5,
+     "2026-11-12": 52,
+     "2026-11-13": 5,
+     "2026-11-14": 1
+    }
+   },
+   {
+    "name": "Les Grands Montets",
+    "country": "France",
+    "top_m": 2768,
+    "base_m": 1234,
+    "depth_cm_upper_slopes_today": 39,
+    "new_cm_last_24h": 6,
+    "new_cm_last_72h": 22,
+    "new_cm_forecast_next_days": 30,
+    "slug": "chamonix",
+    "new_cm_by_day": {
+     "2026-11-09": 2,
+     "2026-11-10": 14,
+     "2026-11-11": 6,
+     "2026-11-12": 25,
+     "2026-11-13": 5,
+     "2026-11-14": 0
+    }
+   }
+  ],
+  "measured_new_snow_at_stations": [
+   {
+    "station": "Weißseespitze",
+    "elev_m": 3499,
+    "new_cm_measured_24h": 60,
+    "depth_cm_measured": 352,
+    "measured_on": "2026-11-10"
+   },
+   {
+    "station": "Gandegg",
+    "elev_m": 2710,
+    "new_cm_measured_24h": 12,
+    "depth_cm_measured": 33,
+    "measured_on": "2026-11-11"
+   },
+   {
+    "station": "Rosskar",
+    "elev_m": 2680,
+    "new_cm_measured_24h": 9,
+    "depth_cm_measured": 31,
+    "measured_on": "2026-11-11"
+   }
+  ],
+  "storm_cells_72h": [
+   {
+    "near": "Courmayeur",
+    "cm_in_72h": 30,
+    "km_from_resort": 7
+   },
+   {
+    "near": "Pelvoux-Vallouise",
+    "cm_in_72h": 26,
+    "km_from_resort": 11
+   },
+   {
+    "near": "Grindelwald First",
+    "cm_in_72h": 23,
+    "km_from_resort": 4
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map_new",
+   "kind": "new_map",
+   "file": "blog/media/2026/11/alps-glacier-3000-fresh-snow-powder-alert-11-november-2026/map_new.webp",
+   "thumb": "blog/media/2026/11/alps-glacier-3000-fresh-snow-powder-alert-11-november-2026/map_new_t.webp",
+   "bytes": 50342,
+   "snow_frac": 0.296,
+   "weak": false
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Glacier 3000</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"160\" y=\"49\" class=\"vl\">1</text><rect x=\"235\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"49\" class=\"vl\">15</text><rect x=\"315\" y=\"36\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"331\" y=\"49\" class=\"vl\">10</text><rect x=\"395\" y=\"36\" width=\"38\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"436\" y=\"49\" class=\"vl\">28</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">5</text><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Jungfraujoch Snow Fu</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">2</text><rect x=\"235\" y=\"70\" width=\"24\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"262\" y=\"83\" class=\"vl\">18</text><rect x=\"315\" y=\"70\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"83\" class=\"vl\">6</text><rect x=\"395\" y=\"70\" width=\"26\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"424\" y=\"83\" class=\"vl\">19</text><rect x=\"475\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"83\" class=\"vl\">4</text><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"170\" y=\"117\" class=\"vl\">9</text><rect x=\"235\" y=\"104\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"251\" y=\"117\" class=\"vl\">10</text><rect x=\"315\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"117\" class=\"vl\">5</text><rect x=\"395\" y=\"104\" width=\"39\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"437\" y=\"117\" class=\"vl\">29</text><rect x=\"475\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"561\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"170\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"15\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"253\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"151\" text-anchor=\"end\" class=\"vl in\">52</text><rect x=\"475\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"151\" class=\"vl\">5</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"151\" class=\"vl\">1</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Les Grands Montets</text><rect x=\"155\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"185\" class=\"vl\">14</text><rect x=\"315\" y=\"172\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"185\" class=\"vl\">6</text><rect x=\"395\" y=\"172\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"432\" y=\"185\" class=\"vl\">25</text><rect x=\"475\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Glacier 3000</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"160\" y=\"49\" class=\"vl\">1</text><rect x=\"235\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"49\" class=\"vl\">15</text><rect x=\"315\" y=\"36\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"331\" y=\"49\" class=\"vl\">10</text><rect x=\"395\" y=\"36\" width=\"38\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"436\" y=\"49\" class=\"vl\">28</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">5</text><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Jungfraujoch Snow Fu</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">2</text><rect x=\"235\" y=\"70\" width=\"24\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"262\" y=\"83\" class=\"vl\">18</text><rect x=\"315\" y=\"70\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"83\" class=\"vl\">6</text><rect x=\"395\" y=\"70\" width=\"26\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"424\" y=\"83\" class=\"vl\">19</text><rect x=\"475\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"83\" class=\"vl\">4</text><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"170\" y=\"117\" class=\"vl\">9</text><rect x=\"235\" y=\"104\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"251\" y=\"117\" class=\"vl\">10</text><rect x=\"315\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"117\" class=\"vl\">5</text><rect x=\"395\" y=\"104\" width=\"39\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"437\" y=\"117\" class=\"vl\">29</text><rect x=\"475\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"561\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"170\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"15\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"253\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"151\" text-anchor=\"end\" class=\"vl in\">52</text><rect x=\"475\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"151\" class=\"vl\">5</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"151\" class=\"vl\">1</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Les Grands Montets</text><rect x=\"155\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"185\" class=\"vl\">14</text><rect x=\"315\" y=\"172\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"185\" class=\"vl\">6</text><rect x=\"395\" y=\"172\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"432\" y=\"185\" class=\"vl\">25</text><rect x=\"475\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Glacier 3000</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"160\" y=\"49\" class=\"vl\">1</text><rect x=\"235\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"49\" class=\"vl\">15</text><rect x=\"315\" y=\"36\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"331\" y=\"49\" class=\"vl\">10</text><rect x=\"395\" y=\"36\" width=\"38\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"436\" y=\"49\" class=\"vl\">28</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">5</text><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Jungfraujoch Snow Fu</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">2</text><rect x=\"235\" y=\"70\" width=\"24\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"262\" y=\"83\" class=\"vl\">18</text><rect x=\"315\" y=\"70\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"83\" class=\"vl\">6</text><rect x=\"395\" y=\"70\" width=\"26\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"424\" y=\"83\" class=\"vl\">19</text><rect x=\"475\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"83\" class=\"vl\">4</text><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"170\" y=\"117\" class=\"vl\">9</text><rect x=\"235\" y=\"104\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"251\" y=\"117\" class=\"vl\">10</text><rect x=\"315\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"117\" class=\"vl\">5</text><rect x=\"395\" y=\"104\" width=\"39\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"437\" y=\"117\" class=\"vl\">29</text><rect x=\"475\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"561\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"170\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"15\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"253\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"151\" text-anchor=\"end\" class=\"vl in\">52</text><rect x=\"475\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"151\" class=\"vl\">5</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"151\" class=\"vl\">1</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Les Grands Montets</text><rect x=\"155\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"185\" class=\"vl\">14</text><rect x=\"315\" y=\"172\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"185\" class=\"vl\">6</text><rect x=\"395\" y=\"172\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"432\" y=\"185\" class=\"vl\">25</text><rect x=\"475\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Glacier 3000</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"160\" y=\"49\" class=\"vl\">1</text><rect x=\"235\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"49\" class=\"vl\">15</text><rect x=\"315\" y=\"36\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"331\" y=\"49\" class=\"vl\">10</text><rect x=\"395\" y=\"36\" width=\"38\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"436\" y=\"49\" class=\"vl\">28</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">5</text><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Jungfraujoch Snow Fu</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">2</text><rect x=\"235\" y=\"70\" width=\"24\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"262\" y=\"83\" class=\"vl\">18</text><rect x=\"315\" y=\"70\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"83\" class=\"vl\">6</text><rect x=\"395\" y=\"70\" width=\"26\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"424\" y=\"83\" class=\"vl\">19</text><rect x=\"475\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"83\" class=\"vl\">4</text><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"170\" y=\"117\" class=\"vl\">9</text><rect x=\"235\" y=\"104\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"251\" y=\"117\" class=\"vl\">10</text><rect x=\"315\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"117\" class=\"vl\">5</text><rect x=\"395\" y=\"104\" width=\"39\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"437\" y=\"117\" class=\"vl\">29</text><rect x=\"475\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"561\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"170\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"15\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"253\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"151\" text-anchor=\"end\" class=\"vl in\">52</text><rect x=\"475\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"151\" class=\"vl\">5</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"151\" class=\"vl\">1</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Les Grands Montets</text><rect x=\"155\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"185\" class=\"vl\">14</text><rect x=\"315\" y=\"172\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"185\" class=\"vl\">6</text><rect x=\"395\" y=\"172\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"432\" y=\"185\" class=\"vl\">25</text><rect x=\"475\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Glacier 3000</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"160\" y=\"49\" class=\"vl\">1</text><rect x=\"235\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"49\" class=\"vl\">15</text><rect x=\"315\" y=\"36\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"331\" y=\"49\" class=\"vl\">10</text><rect x=\"395\" y=\"36\" width=\"38\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"436\" y=\"49\" class=\"vl\">28</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">5</text><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Jungfraujoch Snow Fu</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">2</text><rect x=\"235\" y=\"70\" width=\"24\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"262\" y=\"83\" class=\"vl\">18</text><rect x=\"315\" y=\"70\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"83\" class=\"vl\">6</text><rect x=\"395\" y=\"70\" width=\"26\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"424\" y=\"83\" class=\"vl\">19</text><rect x=\"475\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"83\" class=\"vl\">4</text><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"170\" y=\"117\" class=\"vl\">9</text><rect x=\"235\" y=\"104\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"251\" y=\"117\" class=\"vl\">10</text><rect x=\"315\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"117\" class=\"vl\">5</text><rect x=\"395\" y=\"104\" width=\"39\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"437\" y=\"117\" class=\"vl\">29</text><rect x=\"475\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"561\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"170\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"15\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"253\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"151\" text-anchor=\"end\" class=\"vl in\">52</text><rect x=\"475\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"151\" class=\"vl\">5</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"151\" class=\"vl\">1</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Les Grands Montets</text><rect x=\"155\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"185\" class=\"vl\">14</text><rect x=\"315\" y=\"172\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"185\" class=\"vl\">6</text><rect x=\"395\" y=\"172\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"432\" y=\"185\" class=\"vl\">25</text><rect x=\"475\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Glacier 3000</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"160\" y=\"49\" class=\"vl\">1</text><rect x=\"235\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"49\" class=\"vl\">15</text><rect x=\"315\" y=\"36\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"331\" y=\"49\" class=\"vl\">10</text><rect x=\"395\" y=\"36\" width=\"38\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"436\" y=\"49\" class=\"vl\">28</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">5</text><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Jungfraujoch Snow Fu</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">2</text><rect x=\"235\" y=\"70\" width=\"24\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"262\" y=\"83\" class=\"vl\">18</text><rect x=\"315\" y=\"70\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"83\" class=\"vl\">6</text><rect x=\"395\" y=\"70\" width=\"26\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"424\" y=\"83\" class=\"vl\">19</text><rect x=\"475\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"83\" class=\"vl\">4</text><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"170\" y=\"117\" class=\"vl\">9</text><rect x=\"235\" y=\"104\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"251\" y=\"117\" class=\"vl\">10</text><rect x=\"315\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"117\" class=\"vl\">5</text><rect x=\"395\" y=\"104\" width=\"39\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"437\" y=\"117\" class=\"vl\">29</text><rect x=\"475\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"561\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"138\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"170\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"15\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"253\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"151\" text-anchor=\"end\" class=\"vl in\">52</text><rect x=\"475\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"151\" class=\"vl\">5</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"151\" class=\"vl\">1</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Les Grands Montets</text><rect x=\"155\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"185\" class=\"vl\">14</text><rect x=\"315\" y=\"172\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"185\" class=\"vl\">6</text><rect x=\"395\" y=\"172\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"432\" y=\"185\" class=\"vl\">25</text><rect x=\"475\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Fresh snow in the Alps compared: Glacier 3000 leads with 26 cm in 72 hours (11 November)",
+   "description": "Snow-covered area: 45,820 km² on 9 November, 38,440 km² today, 46,730 km² forecast for 14 November. The map is getting less white. Glacier 3000: …",
+   "lede": "Snow-covered area: 45,820 km² on 9 November, 38,440 km² today, 46,730 km² forecast for 14 November. The map is getting less white. Glacier 3000: +26 cm in 72 hours, 10 cm of it in the last 24 hours. Model depth on the upper slopes: about 94 cm. The model is right more often than a hunch, and less often than we would like.",
+   "sections": [
+    {
+     "h": "The fresh-snow numbers",
+     "p": [
+      "Runners-up over the last 72 hours: Jungfraujoch Snow Fun Park, Orcières Merlette and La Grave, with 25 cm, 24 cm and 23 cm.",
+      "The count of the day in the Alps: 623 of 1,179 resorts with snow up high, 38,440 km² of snow-covered ground."
+     ]
+    },
+    {
+     "h": "Station check",
+     "p": [
+      "Ground check, Weißseespitze station (3,499 m): 352 cm on the ground on 10 November, 60 cm new in 24 hours. The Gandegg station (2,710 m) adds a real measurement: 33 cm on the ground on 11 November, 12 cm new in 24 hours. Ground check, Rosskar station (2,680 m): 31 cm on the ground on 11 November, 9 cm new in 24 hours.",
+      "How sure are we? Resort values are model estimates for the upper slopes; stations are measurements, each at one point on the date shown."
+     ]
+    },
+    {
+     "h": "The forecast in short",
+     "p": [
+      "Forecast to 14 November: 58 cm at La Grave, 33 cm at Glacier 3000 and 33 cm at Orcières Merlette. Treat the later days with care.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    },
+    {
+     "h": "Snow line check",
+     "p": [
+      "Glacier 3000, 12 November: freezing level 2,480 m to 2,900 m. Wet snow low down, winter up top."
+     ]
+    },
+    {
+     "h": "Safety and avalanche level",
+     "p": [
+      "After fresh snow, wind builds drifts on sheltered slopes. Off-piste, the first days after a snowfall need the most care."
+     ]
+    }
+   ],
+   "advice": [
+    "Be on the first lift after a snowfall: by midday, sun and skiers have already changed the snow.",
+    "South-facing slopes take the most sun and melt first; high, north-facing slopes keep their snow the longest.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Get a powder alert in the SnowScope app to know when Glacier 3000 gets fresh snow."
+   ],
+   "captions": {
+    "map_new": "New snow in the last 72 hours in the Alps, up to 11 November 2026 (SnowScope snow model).",
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast)."
+   }
+  },
+  "fr": {
+   "title": "Neige fraîche dans les Alpes comparée : Glacier 3000 en tête avec 26 cm en 72 heures (11 novembre)",
+   "description": "La zone blanche sur la carte est passée de 45 820 km² (9 novembre) à 38 440 km² aujourd'hui, et la prévision dit 46 730 km² le 14 novembre. Glacier …",
+   "lede": "La zone blanche sur la carte est passée de 45 820 km² (9 novembre) à 38 440 km² aujourd'hui, et la prévision dit 46 730 km² le 14 novembre. Glacier 3000 : +26 cm en 72 heures, dont 10 cm dans les dernières 24 heures. Hauteur modélisée sur le haut du domaine : environ 94 cm. Le modèle a raison plus souvent qu'une intuition, et moins souvent que nous le voudrions.",
+   "sections": [
+    {
+     "h": "Les chiffres de la neige fraîche",
+     "p": [
+      "Dauphins des 72 dernières heures : Jungfraujoch Snow Fun Park, Orcières Merlette et La Grave, avec 25 cm, 24 cm et 23 cm.",
+      "Le compte du jour dans les Alpes : 623 stations sur 1 179 avec de la neige en haut, 38 440 km² de sol enneigé."
+     ]
+    },
+    {
+     "h": "Contrôle des stations",
+     "p": [
+      "Contrôle au sol, station Weißseespitze (3 499 m) : 352 cm au sol le 10 novembre, 60 cm de neuve en 24 heures. La station de mesure Gandegg (2 710 m) ajoute une vraie mesure : 33 cm au sol le 11 novembre, 12 cm de neuve en 24 heures. Contrôle au sol, station Rosskar (2 680 m) : 31 cm au sol le 11 novembre, 9 cm de neuve en 24 heures.",
+      "Quelle confiance ? Les valeurs des stations de ski sont des estimations du modèle pour le haut du domaine ; les stations de mesure donnent des mesures, chacune en un point à la date indiquée."
+     ]
+    },
+    {
+     "h": "La prévision en bref",
+     "p": [
+      "Prévision jusqu'au 14 novembre : 58 cm à La Grave, 33 cm à Glacier 3000 et 33 cm à Orcières Merlette. Prudence sur les derniers jours.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    },
+    {
+     "h": "Contrôle de la limite pluie-neige",
+     "p": [
+      "Glacier 3000, 12 novembre : isotherme 0 °C entre 2 480 m et 2 900 m. Neige mouillée en bas, hiver en haut."
+     ]
+    },
+    {
+     "h": "Sécurité et risque d'avalanche",
+     "p": [
+      "Après une chute de neige, le vent forme des plaques sur les pentes abritées. En hors-piste, les premiers jours demandent le plus de prudence."
+     ]
+    }
+   ],
+   "advice": [
+    "Prenez la première remontée après une chute de neige : à midi, le soleil et les skieurs ont déjà changé la neige.",
+    "Les pentes sud prennent le plus de soleil et fondent d'abord ; les pentes nord en altitude gardent leur neige le plus longtemps.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Glacier 3000 reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map_new": "Neige fraîche des 72 dernières heures dans les Alpes, jusqu'au 11 novembre 2026 (modèle SnowScope).",
+    "bars": "Neige fraîche par jour dans les stations en tête (jours passés : modèle ; barres claires : prévision)."
+   }
+  },
+  "de": {
+   "title": "Neuschnee in den Alpen im Vergleich: Glacier 3000 vorn mit 26 cm in 72 Stunden (11. November)",
+   "description": "Schneefläche: 45.820 km² am 9. November, heute 38.440 km², 46.730 km² erwartet für den 14. November. Die Karte wird weniger weiß. Glacier 3000: …",
+   "lede": "Schneefläche: 45.820 km² am 9. November, heute 38.440 km², 46.730 km² erwartet für den 14. November. Die Karte wird weniger weiß. Glacier 3000: +26 cm in 72 Stunden, 10 cm davon in den letzten 24 Stunden. Modellhöhe in den oberen Hängen: etwa 94 cm. Das Modell liegt öfter richtig als ein Bauchgefühl, und seltener, als uns lieb wäre.",
+   "sections": [
+    {
+     "h": "Die Neuschnee-Zahlen",
+     "p": [
+      "Die Verfolger der letzten 72 Stunden: Jungfraujoch Snow Fun Park, Orcières Merlette und La Grave, mit 25 cm, 24 cm und 23 cm.",
+      "Die Zählung des Tages in den Alpen: 623 von 1.179 Skigebieten mit Schnee weit oben, 38.440 km² Schneefläche."
+     ]
+    },
+    {
+     "h": "Stations-Check",
+     "p": [
+      "Bodencheck, Station Weißseespitze (3.499 m): 352 cm am Boden am 10. November, 60 cm neu in 24 Stunden. Die Station Gandegg (2.710 m) liefert eine echte Messung: 33 cm am Boden am 11. November, 12 cm neu in 24 Stunden. Bodencheck, Station Rosskar (2.680 m): 31 cm am Boden am 11. November, 9 cm neu in 24 Stunden.",
+      "Wie sicher sind wir? Die Skigebietswerte sind Modellschätzungen für die oberen Hänge; Stationen sind Messungen, jede an einem Punkt am angegebenen Tag."
+     ]
+    },
+    {
+     "h": "Die Prognose in Kürze",
+     "p": [
+      "Prognose bis zum 14. November: 58 cm in La Grave, 33 cm in Glacier 3000 und 33 cm in Orcières Merlette. Die späteren Tage mit Vorsicht lesen.",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    },
+    {
+     "h": "Check der Schneefallgrenze",
+     "p": [
+      "Glacier 3000, 12. November: Nullgradgrenze 2.480 m bis 2.900 m. Unten nasser Schnee, oben Winter."
+     ]
+    },
+    {
+     "h": "Sicherheit und Lawinengefahr",
+     "p": [
+      "Nach Neuschnee bildet der Wind Triebschnee in windabgewandten Hängen. Abseits der Piste sind die ersten Tage am heikelsten."
+     ]
+    }
+   ],
+   "advice": [
+    "Sei nach einem Schneefall am ersten Lift: Bis Mittag haben Sonne und Skifahrer den Schnee schon verändert.",
+    "Südhänge bekommen die meiste Sonne und schmelzen zuerst; hohe Nordhänge halten ihren Schnee am längsten.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Glacier 3000 Neuschnee bekommt."
+   ],
+   "captions": {
+    "map_new": "Neuschnee der letzten 72 Stunden in den Alpen, bis 11. November 2026 (SnowScope-Modell).",
+    "bars": "Neuschnee pro Tag in den führenden Skigebieten (vergangene Tage: Modell; helle Balken: Prognose)."
+   }
+  },
+  "it": {
+   "title": "Neve fresca sulle Alpi a confronto: Glacier 3000 in testa con 26 cm in 72 ore (11 novembre)",
+   "description": "L'area bianca sulla mappa è passata da 45.820 km² (9 novembre) a 38.440 km² oggi, e la previsione dice 46.730 km² il 14 novembre. Glacier 3000: …",
+   "lede": "L'area bianca sulla mappa è passata da 45.820 km² (9 novembre) a 38.440 km² oggi, e la previsione dice 46.730 km² il 14 novembre. Glacier 3000: +26 cm in 72 ore, di cui 10 cm nelle ultime 24 ore. Altezza da modello sui pendii superiori: circa 94 cm. Il modello ci prende più spesso di un'intuizione, e meno spesso di quanto vorremmo.",
+   "sections": [
+    {
+     "h": "I numeri della neve fresca",
+     "p": [
+      "Le inseguitrici delle ultime 72 ore: Jungfraujoch Snow Fun Park, Orcières Merlette e La Grave, con 25 cm, 24 cm e 23 cm.",
+      "Il conto del giorno sulle Alpi: 623 località su 1.179 con neve in alto, 38.440 km² di superficie innevata."
+     ]
+    },
+    {
+     "h": "Controllo stazioni",
+     "p": [
+      "Verifica a terra, stazione di Weißseespitze (3.499 m): 352 cm al suolo il 10 novembre, 60 cm nuovi in 24 ore. La stazione di Gandegg (2.710 m) aggiunge una misura vera: 33 cm al suolo il 11 novembre, 12 cm nuovi in 24 ore. Verifica a terra, stazione di Rosskar (2.680 m): 31 cm al suolo il 11 novembre, 9 cm nuovi in 24 ore.",
+      "Quanto ne siamo sicuri? I valori delle località sono stime del modello per i pendii superiori; le stazioni sono misure, ognuna in un punto alla data indicata."
+     ]
+    },
+    {
+     "h": "La previsione in breve",
+     "p": [
+      "Previsione fino al 14 novembre: 58 cm a La Grave, 33 cm a Glacier 3000 e 33 cm a Orcières Merlette. Prendi i giorni più lontani con cautela.",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    },
+    {
+     "h": "Controllo quota neve",
+     "p": [
+      "Glacier 3000, 12 novembre: zero termico tra 2.480 m e 2.900 m. Neve bagnata in basso, inverno in alto."
+     ]
+    },
+    {
+     "h": "Sicurezza e pericolo valanghe",
+     "p": [
+      "Dopo una nevicata il vento forma accumuli sui pendii sottovento. In fuoripista i primi giorni richiedono più prudenza."
+     ]
+    }
+   ],
+   "advice": [
+    "Dopo una nevicata sii sul primo impianto: a mezzogiorno sole e sciatori hanno già cambiato la neve.",
+    "I versanti sud prendono più sole e fondono per primi; i versanti nord in quota tengono la neve più a lungo.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Glacier 3000 riceve neve fresca."
+   ],
+   "captions": {
+    "map_new": "Neve fresca delle ultime 72 ore sulle Alpi, fino al 11 novembre 2026 (modello SnowScope).",
+    "bars": "Neve fresca al giorno nelle località in testa (giorni passati: modello; barre chiare: previsione)."
+   }
+  },
+  "es": {
+   "title": "Nieve nueva en los Alpes comparada: Glacier 3000 en cabeza con 26 cm en 72 horas (11 de noviembre)",
+   "description": "La zona blanca del mapa pasó de 45.820 km² (9 de noviembre) a 38.440 km² hoy, y la previsión dice 46.730 km² el 14 de noviembre. Glacier 3000: +26 cm …",
+   "lede": "La zona blanca del mapa pasó de 45.820 km² (9 de noviembre) a 38.440 km² hoy, y la previsión dice 46.730 km² el 14 de noviembre. Glacier 3000: +26 cm en 72 horas, 10 cm de ellos en las últimas 24 horas. Espesor modelado en las pistas altas: unos 94 cm. El modelo acierta más que una corazonada, y menos de lo que nos gustaría.",
+   "sections": [
+    {
+     "h": "Las cifras de la nieve nueva",
+     "p": [
+      "Escoltas de las últimas 72 horas: Jungfraujoch Snow Fun Park, Orcières Merlette y La Grave, con 25 cm, 24 cm y 23 cm.",
+      "El recuento del día en los Alpes: 623 de 1179 estaciones con nieve arriba, 38.440 km² de suelo nevado."
+     ]
+    },
+    {
+     "h": "Control de estaciones",
+     "p": [
+      "Control en el suelo, estación Weißseespitze (3499 m): 352 cm en el suelo el 10 de noviembre, 60 cm nuevos en 24 horas. La estación de medida Gandegg (2710 m) añade una medida real: 33 cm en el suelo el 11 de noviembre, 12 cm nuevos en 24 horas. Control en el suelo, estación Rosskar (2680 m): 31 cm en el suelo el 11 de noviembre, 9 cm nuevos en 24 horas.",
+      "¿Qué confianza tenemos? Los valores de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida dan medidas, cada una en un punto en la fecha indicada."
+     ]
+    },
+    {
+     "h": "La previsión en breve",
+     "p": [
+      "Previsión hasta el 14 de noviembre: 58 cm en La Grave, 33 cm en Glacier 3000 y 33 cm en Orcières Merlette. Cuidado con los últimos días.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    },
+    {
+     "h": "Control de la cota de nieve",
+     "p": [
+      "Glacier 3000, 12 de noviembre: cota de congelación 2480 m-2900 m. Nieve húmeda abajo, invierno arriba."
+     ]
+    },
+    {
+     "h": "Seguridad y peligro de aludes",
+     "p": [
+      "Tras una nevada, el viento forma placas en las laderas resguardadas. Fuera de pista, los primeros días piden más prudencia."
+     ]
+    }
+   ],
+   "advice": [
+    "Coge el primer remonte después de una nevada: a mediodía, el sol y los esquiadores ya han cambiado la nieve.",
+    "Las laderas sur reciben más sol y se funden antes; las laderas norte en altura guardan su nieve más tiempo.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Glacier 3000 recibe nieve nueva."
+   ],
+   "captions": {
+    "map_new": "Nieve nueva de las últimas 72 horas en los Alpes, hasta el 11 de noviembre 2026 (modelo SnowScope).",
+    "bars": "Nieve nueva por día en las estaciones líderes (días pasados: modelo; barras claras: previsión)."
+   }
+  },
+  "ar": {
+   "title": "التلج الجديد فجبال الألب مقارن: Glacier 3000 فالمقدمة ب 26 سم ف 72 ساعة (11 نونبر)",
+   "description": "المساحة البيضا فالخريطة دازت من 45820 كم² (9 نونبر) ل 38440 كم² اليوم، والتوقعات كتقول 46730 كم² نهار 14 نونبر. Glacier 3000: +26 سم ف 72 ساعة، منهم …",
+   "lede": "المساحة البيضا فالخريطة دازت من 45820 كم² (9 نونبر) ل 38440 كم² اليوم، والتوقعات كتقول 46730 كم² نهار 14 نونبر. Glacier 3000: +26 سم ف 72 ساعة، منهم 10 سم ف 24 ساعة اللخرة. العلو ديال التلج فالموديل فالجهة الفوقانية: تقريبا 94 سم. الموديل كيصيب كثر من الحدس، وأقل من اللي كنبغيو.",
+   "sections": [
+    {
+     "h": "الأرقام ديال التلج الجديد",
+     "p": [
+      "اللي من بعد ف 72 ساعة اللي فاتو: Jungfraujoch Snow Fun Park، Orcières Merlette و La Grave، ب 25 سم، 24 سم و 23 سم.",
+      "الحساب ديال اليوم فجبال الألب: 623 محطة من 1179 فيهم التلج فالعلو، و 38440 كم² ديال الأرض اللي فيها التلج."
+     ]
+    },
+    {
+     "h": "التحقق بالمحطات",
+     "p": [
+      "التحقق من الأرض، محطة Weißseespitze (3499 م): 352 سم فالأرض نهار 10 نونبر، 60 سم جديد ف 24 ساعة. محطة القياس Gandegg (2710 م) كتزيد قياس حقيقي: 33 سم فالأرض نهار 11 نونبر، 12 سم جديد ف 24 ساعة. التحقق من الأرض، محطة Rosskar (2680 م): 31 سم فالأرض نهار 11 نونبر، 9 سم جديد ف 24 ساعة.",
+      "شحال حنا متأكدين؟ القيم ديال المحطات تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس قياسات، كل وحدة فنقطة وحدة فالتاريخ المكتوب."
+     ]
+    },
+    {
+     "h": "التوقعات باختصار",
+     "p": [
+      "التوقعات حتى ل 14 نونبر: 58 سم ف La Grave، 33 سم ف Glacier 3000 و 33 سم ف Orcières Merlette. الأيام اللخرين خاصهم الحذر.",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    },
+    {
+     "h": "التحقق من الحد ديال التلج",
+     "p": [
+      "Glacier 3000، 12 نونبر: علو الجليد 2480 م حتى ل 2900 م. تلج مبلول لتحت، شتا حقيقية لفوق."
+     ]
+    },
+    {
+     "h": "السلامة وخطر الانهيارات",
+     "p": [
+      "من بعد التلج الجديد، الريح كتجمعو فالجهات المحمية. برا البيست، الأيام الأولى هي اللي خاصها حذر كثر."
+     ]
+    }
+   ],
+   "advice": [
+    "كون فأول تيليسييج من بعد التلج: مع الطناش، الشمس والناس كيكونو بدلو التلج.",
+    "الجهات اللي كتشوف للجنوب كتاخد أكثر شمس وكيدوب فيها التلج اللول؛ الجهات العاليين اللي كتشوف للشمال كيحافظو عليه أطول وقت.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Glacier 3000 يجيها تلج جديد."
+   ],
+   "captions": {
+    "map_new": "التلج الجديد ديال 72 ساعة اللي فاتو فجبال الألب، حتى ل 11 نونبر 2026 (الموديل ديال SnowScope).",
+    "bars": "التلج الجديد فكل نهار فالمحطات اللولين (الأيام اللي فاتو من الموديل، والخطوط الفاتحة = التوقعات)."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "de": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "it": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "es": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "sat"
+  }
+ },
+ "words_en": 275,
+ "indexable": true,
+ "main": {
+  "slug": "glacier_3000",
+  "name": "Glacier 3000",
+  "lat": 46.3374,
+  "lon": 7.2256
+ },
+ "places": [
+  {
+   "name": "Glacier 3000",
+   "lat": 46.3374,
+   "lon": 7.2256
+  },
+  {
+   "name": "Jungfraujoch Snow Fun Park",
+   "lat": 46.5473,
+   "lon": 7.9883
+  },
+  {
+   "name": "Orcières Merlette",
+   "lat": 44.7122,
+   "lon": 6.3247
+  },
+  {
+   "name": "La Grave",
+   "lat": 45.0195,
+   "lon": 6.2771
+  },
+  {
+   "name": "Les Grands Montets",
+   "lat": 45.9617,
+   "lon": 6.944
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "glacier_3000",
+   "name": "Glacier 3000"
+  },
+  {
+   "slug": "jungfraujoch_snow_fun_park",
+   "name": "Jungfraujoch Snow Fun Park"
+  },
+  {
+   "slug": "orcieres_merlette",
+   "name": "Orcières Merlette"
+  },
+  {
+   "slug": "la_grave",
+   "name": "La Grave"
+  },
+  {
+   "slug": "chamonix",
+   "name": "Les Grands Montets"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "glacier_3000",
+    "name": "Glacier 3000",
+    "depth": 94,
+    "new72": 26,
+    "next": 33,
+    "top_m": 2931
+   },
+   {
+    "slug": "jungfraujoch_snow_fun_park",
+    "name": "Jungfraujoch Snow Fun Park",
+    "depth": 40,
+    "new72": 25,
+    "next": 23,
+    "top_m": 3461
+   },
+   {
+    "slug": "orcieres_merlette",
+    "name": "Orcières Merlette",
+    "depth": 20,
+    "new72": 24,
+    "next": 33,
+    "top_m": 2731
+   },
+   {
+    "slug": "la_grave",
+    "name": "La Grave",
+    "depth": 39,
+    "new72": 23,
+    "next": 58,
+    "top_m": 3543
+   },
+   {
+    "slug": "chamonix",
+    "name": "Les Grands Montets",
+    "depth": 39,
+    "new72": 22,
+    "next": 30,
+    "top_m": 2768
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "EAWS (Alps)",
+   "url": "https://www.avalanches.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@46.337,7.226,9.0",
+ "seconds": 0.0,
+ "facts_used": 25,
+ "voice": "sat",
+ "media_ids": [
+  "map_new",
+  "bars"
+ ],
+ "overlap": {
+  "before": 10.3,
+  "after": 10.3,
+  "with": "where-most-snow-falls-next-72-hours-4-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.152,
+  "with": "western-canada-tweedsmuir-ski-club-fresh-snow-powder-alert-11-november-2026"
+ },
+ "publish_utc": "2026-11-11T18:44:22Z"
+}
