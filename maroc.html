@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ar-MA" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الطقس فالمغرب · Météo Maroc · SnowScope</title>
+<meta name="description" content="الطقس فالمغرب كل نهار: الشتا، التلج فالجبال والوديان، فيديو قصير ديال 3 أيام الجايين. La météo du Maroc chaque jour : pluie, neige en montagne, oueds.">
+<link rel="canonical" href="https://snowscope.app/maroc.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowScope">
+<meta property="og:title" content="الطقس فالمغرب · Météo Maroc">
+<meta property="og:description" content="الشتا والتلج فالمغرب، 3 أيام الجايين، كل نهار.">
+<meta property="og:url" content="https://snowscope.app/maroc.html">
+<meta property="og:image" content="https://snowscope.app/og.png">
+<meta name="theme-color" content="#5CACF5">
+<link rel="icon" href="logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..750&family=Noto+Kufi+Arabic:wght@500..800&family=Noto+Sans+Arabic:wght@400..700&display=swap">
+<style>
+:root{--bg:#eaf5ff;--bg2:#ffffff;--ink:#0c2142;--ink2:#465c78;--brand:#1a62d6;--navy:#0b255c;--rain:#1e82f0;--snow:#2e6ee8;--risk:#e06a00;--line:#d6e3f2;--card:#ffffff;--shadow:0 10px 30px rgba(11,37,92,.12)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0b1626;--bg2:#101f35;--ink:#eef4ff;--ink2:#a9bad3;--brand:#6aa8ff;--navy:#cfe0ff;--rain:#5aa9ff;--snow:#9cc2ff;--risk:#ff9a3d;--line:#22344f;--card:#132641;--shadow:0 10px 30px rgba(0,0,0,.35)}}
+:root[data-theme="dark"]{--bg:#0b1626;--bg2:#101f35;--ink:#eef4ff;--ink2:#a9bad3;--brand:#6aa8ff;--navy:#cfe0ff;--rain:#5aa9ff;--snow:#9cc2ff;--risk:#ff9a3d;--line:#22344f;--card:#132641;--shadow:0 10px 30px rgba(0,0,0,.35)}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:linear-gradient(180deg,var(--bg) 0,var(--bg2) 520px);color:var(--ink);font:16px/1.55 "Noto Sans Arabic","Inter",system-ui,sans-serif;min-height:100vh}
+a{color:var(--brand)}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px 48px}
+header{display:flex;align-items:center;gap:12px;padding:14px 0}
+header .brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);font:700 18px "Inter",sans-serif}
+header .brand img{width:30px;height:30px}
+header .sp{flex:1}
+.tog{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 14px;font:600 14px "Inter",sans-serif;cursor:pointer}
+h1{font:800 clamp(30px,6vw,46px)/1.25 "Noto Kufi Arabic",sans-serif;margin:8px 0 4px;color:var(--navy)}
+.lede{color:var(--ink2);margin:0 0 20px;font-size:17px}
+.fr{font-family:"Inter",sans-serif}
+.today{display:grid;grid-template-columns:minmax(0,400px) 1fr;gap:24px;align-items:start}
+@media (max-width:760px){.today{grid-template-columns:1fr}}
+.player{position:relative;aspect-ratio:9/16;border-radius:24px;overflow:hidden;background:#cfe6fb;box-shadow:var(--shadow);width:100%;max-width:400px;margin:0 auto}
+.player video,.player img{width:100%;height:100%;object-fit:cover;display:block}
+.sound{position:absolute;bottom:14px;left:14px;border:0;border-radius:999px;background:rgba(11,37,92,.82);color:#fff;padding:8px 14px;font:600 14px "Noto Sans Arabic","Inter",sans-serif;cursor:pointer}
+.facts{background:var(--card);border-radius:24px;padding:20px;box-shadow:var(--shadow)}
+.facts h2{font:700 22px "Noto Kufi Arabic",sans-serif;margin:0 0 6px}
+.facts .sum{font-size:18px;color:var(--brand);font-weight:700;margin:0 0 14px}
+.row{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid var(--line)}
+.row b{font-family:"Inter",sans-serif;font-variant-numeric:tabular-nums}
+.row .u{color:var(--ink2);font-size:14px;margin-inline-start:4px}
+.rain b{color:var(--rain)}.snow b{color:var(--snow)}
+.risk{margin-top:14px;border:2px solid var(--risk);border-radius:16px;padding:12px 14px}
+.risk strong{color:var(--risk)}
+.risk p{margin:4px 0;font-size:15px}
+.note{color:var(--ink2);font-size:14px}
+h3{font:700 22px "Noto Kufi Arabic",sans-serif;margin:34px 0 12px}
+.past{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px}
+.past button{border:0;padding:0;background:none;cursor:pointer;text-align:inherit;color:var(--ink)}
+.past img{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:14px;display:block;box-shadow:var(--shadow);background:#cfe6fb}
+.past span{display:block;font-size:14px;margin-top:6px;color:var(--ink2)}
+.app{margin-top:30px;background:var(--card);border-radius:24px;padding:18px 20px;box-shadow:var(--shadow);display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;border-radius:999px;padding:10px 18px;font-weight:700}
+footer{margin-top:30px;color:var(--ink2);font-size:13px}
+.empty{padding:40px 20px;text-align:center;color:var(--ink2)}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="./"><img src="logo.svg" alt="" width="30" height="30"><span>SnowScope</span></a>
+  <span class="sp"></span>
+  <button class="tog" id="lang" type="button">Français</button>
+</header>
+<h1 data-ar="الطقس فالمغرب" data-fr="La météo au Maroc">الطقس فالمغرب</h1>
+<p class="lede" data-ar="الشتا، التلج فالجبال والوديان: 3 أيام الجايين ف فيديو قصير، كل صباح." data-fr="Pluie, neige en montagne et oueds : les 3 prochains jours en une courte vidéo, chaque matin.">الشتا، التلج فالجبال والوديان: 3 أيام الجايين ف فيديو قصير، كل صباح.</p>
+
+<section class="today" id="today" hidden>
+  <div class="player" id="player">
+    <video id="vid" muted playsinline loop preload="none" aria-label="Morocco weather reel"></video>
+    <button class="sound" id="sound" type="button" data-ar="🔊 الصوت" data-fr="🔊 Son">🔊 الصوت</button>
+  </div>
+  <div class="facts" id="facts"></div>
+</section>
+<div class="empty" id="empty" data-ar="الفيديو ديال اليوم غادي يكون هنا من الصباح." data-fr="La vidéo du jour arrive ici chaque matin.">الفيديو ديال اليوم غادي يكون هنا من الصباح.</div>
+
+<h3 id="pastH" hidden data-ar="الأيام اللي فاتت" data-fr="Les jours précédents">الأيام اللي فاتت</h3>
+<div class="past" id="past"></div>
+
+<div class="app">
+  <div><strong data-ar="التلج والشتا فالخريطة، نهار بنهار" data-fr="La neige et la pluie sur la carte, jour par jour">التلج والشتا فالخريطة، نهار بنهار</strong><br>
+  <span class="note" data-ar="الخريطة ديال SnowScope فيها الأطلس الكبير والمتوسط والريف." data-fr="La carte SnowScope couvre le Haut et le Moyen Atlas et le Rif.">الخريطة ديال SnowScope فيها الأطلس الكبير والمتوسط والريف.</span></div>
+  <a class="btn" href="./?lang=ar#atlas" id="mapBtn" data-ar="شوف الخريطة" data-fr="Voir la carte">شوف الخريطة</a>
+</div>
+<footer>
+  <p data-ar="هادي توقعات، ماشي تنبيه رسمي. تبعو التنبيهات الرسمية ديال المديرية العامة للأرصاد الجوية والوقاية المدنية." data-fr="Ce sont des prévisions, pas une alerte officielle. Suivez les alertes de la Météo nationale et de la Protection civile.">هادي توقعات، ماشي تنبيه رسمي. تبعو التنبيهات الرسمية ديال المديرية العامة للأرصاد الجوية والوقاية المدنية.</p>
+  <p><a href="./">snowscope.app</a> · <a href="sources.html">Sources</a></p>
+</footer>
+</div>
+<script>
+(function () {
+  "use strict";
+  var API = "https://api.snowscope.app/media/social/morocco/";
+  var lang = "ar";
+  try { var q = new URLSearchParams(location.search).get("lang"); if (q === "fr") lang = "fr"; } catch (e) { /* old browser */ }
+  var DAYS_AR = ["الحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"];
+  var MON_AR = ["يناير", "فبراير", "مارس", "أبريل", "ماي", "يونيو", "يوليوز", "غشت", "شتنبر", "أكتوبر", "نونبر", "دجنبر"];
+  var data = null;
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function day(iso) {
+    var d = new Date(iso + "T12:00:00Z");
+    if (lang === "fr") return d.toLocaleDateString("fr-FR", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" });
+    return DAYS_AR[d.getUTCDay()] + " " + d.getUTCDate() + " " + MON_AR[d.getUTCMonth()];
+  }
+  function applyLang() {
+    document.documentElement.lang = lang === "fr" ? "fr" : "ar-MA";
+    document.documentElement.dir = lang === "fr" ? "ltr" : "rtl";
+    document.querySelectorAll("[data-ar]").forEach(function (el) { el.textContent = el.getAttribute("data-" + lang); });
+    document.getElementById("lang").textContent = lang === "fr" ? "الدارجة" : "Français";
+    document.getElementById("mapBtn").href = "./?lang=" + lang + "#atlas";
+    if (data) draw();
+  }
+  document.getElementById("lang").addEventListener("click", function () { lang = lang === "fr" ? "ar" : "fr"; applyLang(); });
+  var vid = document.getElementById("vid");
+  document.getElementById("sound").addEventListener("click", function () {
+    vid.muted = !vid.muted; if (vid.paused) vid.play().catch(function () {});
+  });
+  function show(it) {
+    vid.poster = API + it.cover;
+    if (vid.getAttribute("data-src") !== it.mp4) {
+      vid.setAttribute("data-src", it.mp4);
+      vid.src = API + it.mp4;
+      vid.muted = true;
+      var io = "IntersectionObserver" in window ? new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) vid.play().catch(function () {}); else vid.pause(); });
+      }, { threshold: 0.4 }) : null;
+      if (io) io.observe(vid); else vid.play().catch(function () {});
+    }
+    var f = lang === "fr" ? 1 : 0, mm = lang === "fr" ? "mm" : "ملم", cm = lang === "fr" ? "cm" : "سم";
+    var h = "<h2>" + esc(day(it.days[0])) + (it.days.length > 1 ? " → " + esc(day(it.days[it.days.length - 1])) : "") + "</h2>" +
+      '<p class="sum">' + esc(lang === "fr" ? it.summary_fr : it.summary_ar) + "</p>";
+    (it.rain || []).forEach(function (r) { h += '<div class="row rain"><span>' + esc(r[f]) + "</span><span><b>" + Math.round(r[2]) + '</b><span class="u">' + mm + "</span></span></div>"; });
+    (it.snow || []).forEach(function (r) { h += '<div class="row snow"><span>❄️ ' + esc(r[f]) + "</span><span><b>" + Math.round(r[2]) + '</b><span class="u">' + cm + "</span></span></div>"; });
+    if (it.risk_towns && it.risk_towns.length) {
+      h += '<div class="risk"><strong>⚠️ ' + (lang === "fr" ? "Attention aux oueds" : "رد البال من الوديان") + "</strong>" +
+        it.risk_towns.map(function (t) { return "<p>" + esc(lang === "fr" ? "Risque de crue de l'oued sur la route près de " + t[1] : "احتمال يحمل الواد فالطريق قرب " + t[0]) + "</p>"; }).join("") +
+        '<p class="note">' + (lang === "fr" ? "Ne traversez pas un oued en crue. Suivez les alertes officielles." : "ما تقطعش الواد إلا كان حامل. تبعو التنبيهات الرسمية.") + "</p></div>";
+    }
+    document.getElementById("facts").innerHTML = h;
+  }
+  function draw() {
+    var items = data.items || [];
+    if (!items.length) return;
+    document.getElementById("today").hidden = false;
+    document.getElementById("empty").hidden = true;
+    show(items[0]);
+    var past = items.slice(1, 8);
+    document.getElementById("pastH").hidden = !past.length;
+    document.getElementById("past").innerHTML = past.map(function (it, i) {
+      return '<button type="button" data-i="' + (i + 1) + '"><img loading="lazy" src="' + API + esc(it.cover) + '" alt=""><span>' + esc(day(it.date)) + "</span></button>";
+    }).join("");
+  }
+  document.getElementById("past").addEventListener("click", function (e) {
+    var b = e.target.closest("button[data-i]"); if (!b || !data) return;
+    show(data.items[+b.getAttribute("data-i")]);
+    document.getElementById("player").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  var hourKey = new Date().toISOString().slice(0, 13).replace(/\D/g, "");
+  fetch(API + "index.json?h=" + hourKey).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (j) { data = j; draw(); }).catch(function () { /* keep the empty note */ });
+  applyLang();
+})();
+</script>
+</body>
+</html>

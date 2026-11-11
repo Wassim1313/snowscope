@@ -34,6 +34,7 @@
   <button class="btn icon only-s" data-find-open aria-label="Find a ski resort"><span class="ms">search</span></button>
   <button class="btn alertbtn" data-fw-alert aria-label="Powder alert" title="Powder alert"><span class="ms f">notifications_active</span><span class="lbl hide-s">Powder alert</span></button>
   <a class="btn tonal blogbtn" data-blog href="../blog/en/" aria-label="Snow reports" title="Snow reports"><span class="ms">article</span><span class="lbl hide-s">Snow reports</span></a>
+  <a class="btn tonal mabtn" data-ma href="../maroc.html" style="display:none" aria-label="Morocco weather" title="Morocco weather"><span class="ms">rainy</span><span class="lbl hide-s">Morocco weather</span></a>
   <button class="btn icon langbtn" data-lang aria-label="Language"><span class="ms">language</span></button>
   <div class="acct" id="acct"></div>
 </header>
@@ -51,7 +52,7 @@
     <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
     <button data-tab="you"><span class="ms">person</span>You</button>
   </nav>
-  <div class="pbody" id="pbody" tabindex="-1"><div class="seo"><div class="over">Ski resort</div><h1>Palisades Tahoe Olympic Valley</h1><p class="lede">Palisades Tahoe Olympic Valley · California, United States · 1,890–2,665 m</p><p>15 cm of snow today.</p><p>Today Palisades Tahoe Olympic Valley ranks 72 of 128 resorts with snow in the US West. Palisades Tahoe Olympic Valley is in California, United States, at 39.19°N 120.25°W.</p><h2>At a glance</h2><table><tbody><tr><th>Top of the slopes</th><td>2,665 m</td></tr><tr><th>Bottom of the slopes</th><td>1,890 m</td></tr><tr><th>Vertical drop</th><td>775 m</td></tr><tr><th>Pistes</th><td>70 km</td></tr><tr><th>Lifts</th><td>27</td></tr><tr><th>Snow on the ground today</th><td>15 cm</td></tr><tr><th>New snow, last 7 days</th><td>3 cm</td></tr></tbody></table><h2>Nearby resorts</h2><ul><li><a href="palisades_tahoe_alpine_meadows.html">Palisades Tahoe Alpine Meadows</a> · 15 cm</li><li><a href="granlibakken_ski_resort.html">Granlibakken</a> · 1 cm</li><li><a href="northstar_at_tahoe_resort.html">Northstar at Tahoe Resort</a></li><li><a href="christmas_tree_homesites.html">Christmas Tree Homesites</a> · 14 cm</li><li><a href="sugar_bowl_resort.html">Sugar Bowl Resort</a> · 14 cm</li><li><a href="homewood_ski_area.html">Homewood</a> · 9 cm</li></ul><p><a href="./">All ski resorts</a> · US West</p></div></div>
+  <div class="pbody" id="pbody" tabindex="-1"><div class="seo"><div class="over">Ski resort</div><h1>Palisades Tahoe Olympic Valley</h1><p class="lede">Palisades Tahoe Olympic Valley · California, United States · 1,890–2,665 m</p><p>15 cm of snow today.</p><p>Today Palisades Tahoe Olympic Valley ranks 69 of 123 resorts with snow in the US West. Palisades Tahoe Olympic Valley is in California, United States, at 39.19°N 120.25°W.</p><h2>At a glance</h2><table><tbody><tr><th>Top of the slopes</th><td>2,665 m</td></tr><tr><th>Bottom of the slopes</th><td>1,890 m</td></tr><tr><th>Vertical drop</th><td>775 m</td></tr><tr><th>Pistes</th><td>70 km</td></tr><tr><th>Lifts</th><td>27</td></tr><tr><th>Snow on the ground today</th><td>15 cm</td></tr></tbody></table><h2>Nearby resorts</h2><ul><li><a href="palisades_tahoe_alpine_meadows.html">Palisades Tahoe Alpine Meadows</a> · 15 cm</li><li><a href="granlibakken_ski_resort.html">Granlibakken</a></li><li><a href="northstar_at_tahoe_resort.html">Northstar at Tahoe Resort</a></li><li><a href="christmas_tree_homesites.html">Christmas Tree Homesites</a> · 12 cm</li><li><a href="sugar_bowl_resort.html">Sugar Bowl Resort</a> · 12 cm</li><li><a href="homewood_ski_area.html">Homewood</a> · 7 cm</li></ul><p><a href="./">All ski resorts</a> · US West</p></div></div>
 </aside>
 
 <div class="timeline glass" id="timeline">
@@ -68,6 +69,7 @@
   <button data-tab="you"><span class="ms">person</span>You</button>
 </nav>
 <script src="../i18n.js?v=0b4ea021"></script>
+<script>/* Morocco weather reel page for visitors in Morocco / Darija (tools/morocco_reel.py) */(function(){try{var tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"",l=(window.I18N&&I18N.lang)||"",n=navigator.language||"",a=document.querySelector("[data-ma]");if(a&&(/^Africa\/(Casablanca|El_Aaiun)$/.test(tz)||l==="ar"||/-MA$/i.test(n))){var t=l==="ar"?"طقس المغرب":l==="fr"?"Météo Maroc":"Morocco weather";a.querySelector(".lbl").textContent=t;a.title=t;a.setAttribute("aria-label",t);if(l==="ar"||l==="fr")a.href=a.getAttribute("href")+"?lang="+l;a.style.display="";}}catch(e){}})();</script>
 <script src="../core.js?v=6b501858"></script>
 <script src="../follow.js?v=1122f150" defer></script>
 <script src="../partners.js?v=83b2818c" defer></script>

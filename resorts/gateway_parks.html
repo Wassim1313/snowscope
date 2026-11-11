@@ -34,6 +34,7 @@
   <button class="btn icon only-s" data-find-open aria-label="Find a ski resort"><span class="ms">search</span></button>
   <button class="btn alertbtn" data-fw-alert aria-label="Powder alert" title="Powder alert"><span class="ms f">notifications_active</span><span class="lbl hide-s">Powder alert</span></button>
   <a class="btn tonal blogbtn" data-blog href="../blog/en/" aria-label="Snow reports" title="Snow reports"><span class="ms">article</span><span class="lbl hide-s">Snow reports</span></a>
+  <a class="btn tonal mabtn" data-ma href="../maroc.html" style="display:none" aria-label="Morocco weather" title="Morocco weather"><span class="ms">rainy</span><span class="lbl hide-s">Morocco weather</span></a>
   <button class="btn icon langbtn" data-lang aria-label="Language"><span class="ms">language</span></button>
   <div class="acct" id="acct"></div>
 </header>
@@ -51,7 +52,7 @@
     <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
     <button data-tab="you"><span class="ms">person</span>You</button>
   </nav>
-  <div class="pbody" id="pbody" tabindex="-1"><div class="seo"><div class="over">Ski resort</div><h1>Gateway Parks</h1><p class="lede">Gateway Parks · Idaho, United States</p><p>No snow yet today.</p><p>No snow is on the ground at Gateway Parks yet; the map shows where the US West already has snow. Gateway Parks is in Idaho, United States, at 43.69°N 116.40°W.</p><h2>Nearby resorts</h2><ul><li><a href="bogus_basin_mountain_recreation_area.html">Bogus Basin Mountain</a> · 1 cm</li><li><a href="tamarack_resort.html">Tamarack Resort</a> · 3 cm</li><li><a href="soldier_mountain_ski_area.html">Soldier Mountain</a></li><li><a href="little_ski_hill.html">Little Ski Hill</a></li><li><a href="brundage_mountain.html">Brundage Mountain</a> · 3 cm</li><li><a href="sun_valley_bald_mountain.html">Sun Valley</a> · 17 cm</li></ul><p><a href="./">All ski resorts</a> · US West</p></div></div>
+  <div class="pbody" id="pbody" tabindex="-1"><div class="seo"><div class="over">Ski resort</div><h1>Gateway Parks</h1><p class="lede">Gateway Parks · Idaho, United States</p><p>No snow yet today.</p><p>No snow is on the ground at Gateway Parks yet; the map shows where the US West already has snow. Gateway Parks is in Idaho, United States, at 43.69°N 116.40°W.</p><h2>Nearby resorts</h2><ul><li><a href="bogus_basin_mountain_recreation_area.html">Bogus Basin Mountain</a></li><li><a href="tamarack_resort.html">Tamarack Resort</a> · 3 cm</li><li><a href="soldier_mountain_ski_area.html">Soldier Mountain</a></li><li><a href="little_ski_hill.html">Little Ski Hill</a></li><li><a href="brundage_mountain.html">Brundage Mountain</a> · 3 cm</li><li><a href="sun_valley_bald_mountain.html">Sun Valley</a> · 18 cm</li></ul><p><a href="./">All ski resorts</a> · US West</p></div></div>
 </aside>
 
 <div class="timeline glass" id="timeline">
@@ -68,6 +69,7 @@
   <button data-tab="you"><span class="ms">person</span>You</button>
 </nav>
 <script src="../i18n.js?v=0b4ea021"></script>
+<script>/* Morocco weather reel page for visitors in Morocco / Darija (tools/morocco_reel.py) */(function(){try{var tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"",l=(window.I18N&&I18N.lang)||"",n=navigator.language||"",a=document.querySelector("[data-ma]");if(a&&(/^Africa\/(Casablanca|El_Aaiun)$/.test(tz)||l==="ar"||/-MA$/i.test(n))){var t=l==="ar"?"طقس المغرب":l==="fr"?"Météo Maroc":"Morocco weather";a.querySelector(".lbl").textContent=t;a.title=t;a.setAttribute("aria-label",t);if(l==="ar"||l==="fr")a.href=a.getAttribute("href")+"?lang="+l;a.style.display="";}}catch(e){}})();</script>
 <script src="../core.js?v=6b501858"></script>
 <script src="../follow.js?v=1122f150" defer></script>
 <script src="../partners.js?v=83b2818c" defer></script>
