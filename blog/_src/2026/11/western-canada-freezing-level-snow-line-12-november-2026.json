@@ -1,0 +1,782 @@
+{
+ "id": "2026-11-12-ca_west-isotherm",
+ "slug": "western-canada-freezing-level-snow-line-12-november-2026",
+ "date": "2026-11-12",
+ "published_utc": "2026-11-12T19:17:51Z",
+ "updated_utc": "2026-11-12T19:17:51Z",
+ "region": "CA_WEST",
+ "angle": "isotherm",
+ "score": 58,
+ "signature": "banff_sunshine_village:3400|marmot_basin:3200|panorama_mountain_resort:3400",
+ "keyword": {
+  "family": "snow-line",
+  "entity": "ca_west",
+  "region": "CA_WEST",
+  "date": "2026-11-12"
+ },
+ "tags": [
+  "snow-line",
+  "forecast",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "freezing_level_analysis",
+  "region": "Western Canada",
+  "date": "2026-11-12",
+  "weekday": "Thursday",
+  "model_run": "2026-11-12",
+  "forecast_days": [
+   "2026-11-13",
+   "2026-11-14",
+   "2026-11-15"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 255860,
+   "resorts_with_snow": 39,
+   "resorts_in_region": 57
+  },
+  "region_before": {
+   "date": "2026-11-10",
+   "snow_covered_area_km2": 281250,
+   "resorts_with_snow": 42
+  },
+  "region_forecast": {
+   "date": "2026-11-15",
+   "snow_covered_area_km2": 245900,
+   "resorts_with_snow": 37
+  },
+  "question": "How high is the 0 °C level in the next days, where does rain turn to snow, and is rain falling on the snowpack?",
+  "snow_line_below_freezing_level_m": 300,
+  "region_freezing_level_m_by_day": {
+   "2026-11-12": {
+    "lowest": 1730,
+    "highest": 3410
+   },
+   "2026-11-13": {
+    "lowest": 1480,
+    "highest": 3180
+   },
+   "2026-11-14": {
+    "lowest": 1380,
+    "highest": 2990
+   }
+  },
+  "forecast_points": [
+   {
+    "place": "Whistler Blackcomb",
+    "elev_m": 2284,
+    "precip_mm_total_next_days": 88,
+    "precip_mm_by_day": {
+     "2026-11-12": 8,
+     "2026-11-13": 1,
+     "2026-11-14": 19,
+     "2026-11-15": 53,
+     "2026-11-16": 6,
+     "2026-11-17": 0
+    },
+    "freezing_level_m_when_wet": 1740,
+    "snow_line_m_when_wet": 1440,
+    "share_of_precip_as_snow_at_this_height_pct": 100
+   },
+   {
+    "place": "Vancouver",
+    "elev_m": 10,
+    "precip_mm_total_next_days": 135,
+    "precip_mm_by_day": {
+     "2026-11-12": 2,
+     "2026-11-13": 2,
+     "2026-11-14": 34,
+     "2026-11-15": 25,
+     "2026-11-16": 70,
+     "2026-11-17": 2
+    },
+    "freezing_level_m_when_wet": 1560,
+    "snow_line_m_when_wet": 1260,
+    "share_of_precip_as_snow_at_this_height_pct": 0
+   }
+  ],
+  "notes": [
+   "0 °C level = height where the air temperature crosses 0 °C (forecast, daily lowest and highest)",
+   "snow line = about 300 m below the 0 °C level, at the warmest hours of the day",
+   "rain-on-snow risk = snow on the slopes and a snow line above mid-mountain on a day with precipitation"
+  ],
+  "resorts": [
+   {
+    "name": "Banff Sunshine Village",
+    "country": "Canada",
+    "top_m": 2686,
+    "base_m": 1661,
+    "depth_cm_upper_slopes_today": 14,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "banff_sunshine_village",
+    "freezing_level_m_by_day": {
+     "2026-11-12": {
+      "min": 2510,
+      "max": 3410
+     },
+     "2026-11-13": {
+      "min": 2900,
+      "max": 3160
+     },
+     "2026-11-14": {
+      "min": 1740,
+      "max": 2990
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-12": 3100,
+     "2026-11-13": 2900,
+     "2026-11-14": 2700
+    },
+    "days_snow_line_above_top": [
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-12",
+     "2026-11-14"
+    ]
+   },
+   {
+    "name": "Marmot Basin",
+    "country": "Canada",
+    "top_m": 2504,
+    "base_m": 1724,
+    "depth_cm_upper_slopes_today": 26,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 2,
+    "new_cm_forecast_next_days": 0,
+    "slug": "marmot_basin",
+    "freezing_level_m_by_day": {
+     "2026-11-12": {
+      "min": 1730,
+      "max": 3140
+     },
+     "2026-11-13": {
+      "min": 1510,
+      "max": 3180
+     },
+     "2026-11-14": {
+      "min": 1380,
+      "max": 2980
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-12": 2800,
+     "2026-11-13": 2900,
+     "2026-11-14": 2700
+    },
+    "days_snow_line_above_top": [
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-12",
+     "2026-11-14"
+    ]
+   },
+   {
+    "name": "Panorama",
+    "country": "Canada",
+    "top_m": 2368,
+    "base_m": 1152,
+    "depth_cm_upper_slopes_today": 19,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 2,
+    "new_cm_forecast_next_days": 0,
+    "slug": "panorama_mountain_resort",
+    "freezing_level_m_by_day": {
+     "2026-11-12": {
+      "min": 3020,
+      "max": 3400
+     },
+     "2026-11-13": {
+      "min": 2840,
+      "max": 3150
+     },
+     "2026-11-14": {
+      "min": 1700,
+      "max": 2950
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-12": 3100,
+     "2026-11-13": 2800,
+     "2026-11-14": 2600
+    },
+    "days_snow_line_above_top": [
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-12",
+     "2026-11-14"
+    ]
+   },
+   {
+    "name": "Whistler Blackcomb",
+    "country": "Canada",
+    "top_m": 2259,
+    "base_m": 653,
+    "depth_cm_upper_slopes_today": 116,
+    "new_cm_last_24h": 15,
+    "new_cm_last_72h": 40,
+    "new_cm_forecast_next_days": 83,
+    "slug": "whistler",
+    "freezing_level_m_by_day": {
+     "2026-11-12": {
+      "min": 2240,
+      "max": 2670
+     },
+     "2026-11-13": {
+      "min": 1480,
+      "max": 2680
+     },
+     "2026-11-14": {
+      "min": 1460,
+      "max": 1670
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-12": 2400,
+     "2026-11-13": 2400,
+     "2026-11-14": 1400
+    },
+    "days_snow_line_above_top": [
+     "2026-11-12",
+     "2026-11-13"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-12"
+    ]
+   },
+   {
+    "name": "Mt. Baldy Family",
+    "country": "Canada",
+    "top_m": 2119,
+    "base_m": 1732,
+    "depth_cm_upper_slopes_today": 17,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 3,
+    "new_cm_forecast_next_days": 5,
+    "slug": "mt_baldy_family_ski_area",
+    "freezing_level_m_by_day": {
+     "2026-11-12": {
+      "min": 2900,
+      "max": 3220
+     },
+     "2026-11-13": {
+      "min": 2120,
+      "max": 2980
+     },
+     "2026-11-14": {
+      "min": 1710,
+      "max": 2360
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-12": 2900,
+     "2026-11-13": 2700,
+     "2026-11-14": 2100
+    },
+    "days_snow_line_above_top": [
+     "2026-11-12",
+     "2026-11-13"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-12",
+     "2026-11-13",
+     "2026-11-14"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-12",
+     "2026-11-14"
+    ]
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/western-canada-freezing-level-snow-line-12-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/western-canada-freezing-level-snow-line-12-november-2026/map_t.webp",
+   "bytes": 65250,
+   "snow_frac": 0.4815,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Rain or snow in Western Canada? The snow line climbs to 3,100 m at Banff Sunshine Village (12 November)",
+   "description": "Between 1,380 m and 3,410 m: that is where our forecast puts the 0 °C level in Western Canada over the next days. In the warmest hours the snow line, …",
+   "lede": "Between 1,380 m and 3,410 m: that is where our forecast puts the 0 °C level in Western Canada over the next days. In the warmest hours the snow line, about 300 m lower, rises to 3,100 m at Banff Sunshine Village on Thursday 12 November; below it, precipitation falls as rain. Every number here is an estimate with some uncertainty; the trend over several days is usually more reliable than one value.",
+   "sections": [
+    {
+     "h": "Will rain reach the snowpack?",
+     "p": [
+      "Rain-on-snow risk at Banff Sunshine Village: about 14 cm on the upper slopes and a snow line above mid-mountain on 12 November and 14 November; the snow would get heavy and wet, then icy as it freezes again.",
+      "Marmot Basin holds about 26 cm on its upper slopes, and on 12 November and 14 November the snow line sits above mid-mountain: rain on that snow adds water, makes it heavy and can speed up the melt, then it turns icy when it freezes.",
+      "Rain-on-snow risk at Panorama: about 19 cm on the upper slopes and a snow line above mid-mountain on 12 November and 14 November; the snow would get heavy and wet, then icy as it freezes again.",
+      "At Whistler Blackcomb (2,284 m) the forecast gives 88 mm of precipitation, the water that reaches the mountain; during the wet hours the snow line is near 1,440 m.",
+      "135 mm of precipitation is forecast at Vancouver (10 m); while it falls, the snow line sits near 1,260 m."
+     ]
+    },
+    {
+     "h": "Rain or snow at each resort",
+     "p": [
+      "Banff Sunshine Village (base 1,661 m, top 2,686 m): the snow line rises to about 3,100 m on 12 November, above the top, so precipitation would fall as rain or wet snow on the whole mountain and run off.",
+      "At Marmot Basin (base 1,724 m, top 2,504 m), a snow line of about 2,900 m on 13 November sits above the top: rain or wet snow on every slope if precipitation falls.",
+      "Panorama (base 1,152 m, top 2,368 m): the snow line rises to about 3,100 m on 12 November, above the top, so precipitation would fall as rain or wet snow on the whole mountain and run off.",
+      "At Whistler Blackcomb (base 653 m, top 2,259 m), a snow line of about 2,400 m on 12 November sits above the top: rain or wet snow on every slope if precipitation falls.",
+      "Mt. Baldy Family (base 1,732 m, top 2,119 m): the snow line rises to about 2,900 m on 12 November, above the top, so precipitation would fall as rain or wet snow on the whole mountain and run off."
+     ]
+    },
+    {
+     "h": "The 0 °C level and the melt",
+     "p": [
+      "The 0 °C level at the resorts below, from the coldest to the warmest hour of each day: Thursday 12 November: from 1,730 m to 3,410 m. Friday 13 November: from 1,480 m to 3,180 m. Saturday 14 November: from 1,380 m to 2,990 m."
+     ]
+    },
+    {
+     "h": "How snow turns to rain below the 0 °C level",
+     "p": [
+      "Air usually cools as you go up. Below the 0 °C level, falling snow starts to melt; melting takes energy and time, so it becomes rain only some 300 m lower: the snow line. In dry air, evaporation takes heat from the flakes and the snow line can sit even lower."
+     ]
+    }
+   ],
+   "advice": [
+    "On warm days the snow softens as it takes in heat: ski the highest lifts and north-facing slopes in the morning.",
+    "The 0 °C level is a forecast with an error of several hundred metres: check the map again the day before you go.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website."
+   ],
+   "captions": {
+    "map": "Snow depth in Western Canada on 12 November (SnowScope snow model) with the resorts of this freezing-level analysis and their top heights."
+   }
+  },
+  "fr": {
+   "title": "Pluie ou neige dans l'Ouest canadien ? La limite pluie-neige monte à 3 100 m à Banff Sunshine Village (12 novembre)",
+   "description": "Entre 1 380 m et 3 410 m : c'est là que notre prévision place l'isotherme 0 °C dans l'Ouest canadien ces prochains jours. Aux heures les plus douces, …",
+   "lede": "Entre 1 380 m et 3 410 m : c'est là que notre prévision place l'isotherme 0 °C dans l'Ouest canadien ces prochains jours. Aux heures les plus douces, la limite pluie-neige, environ 300 m plus bas, monte à 3 100 m à Banff Sunshine Village le jeudi 12 novembre ; en dessous, les précipitations tombent en pluie. Chaque chiffre ici est une estimation avec une part d'incertitude ; la tendance sur plusieurs jours est en général plus fiable qu'une valeur.",
+   "sections": [
+    {
+     "h": "La pluie atteindra-t-elle le manteau ?",
+     "p": [
+      "Risque de pluie sur neige à Banff Sunshine Village : environ 14 cm en haut du domaine et une limite pluie-neige au-dessus de mi-pente le 12 novembre et 14 novembre ; la neige deviendrait lourde et mouillée, puis glacée au regel.",
+      "Marmot Basin garde environ 26 cm en haut du domaine, et le 12 novembre et 14 novembre la limite pluie-neige passe au-dessus de mi-pente : la pluie sur cette neige ajoute de l'eau, l'alourdit et peut accélérer la fonte, puis elle devient glacée en regelant.",
+      "Risque de pluie sur neige à Panorama : environ 19 cm en haut du domaine et une limite pluie-neige au-dessus de mi-pente le 12 novembre et 14 novembre ; la neige deviendrait lourde et mouillée, puis glacée au regel.",
+      "À Whistler Blackcomb (2 284 m), la prévision donne 88 mm de précipitations, l'eau qui arrive sur la montagne ; pendant les heures humides, la limite pluie-neige est vers 1 440 m.",
+      "135 mm de précipitations sont prévus à Vancouver (10 m) ; pendant qu'ils tombent, la limite pluie-neige se trouve vers 1 260 m."
+     ]
+    },
+    {
+     "h": "Pluie ou neige dans chaque station",
+     "p": [
+      "Banff Sunshine Village (bas 1 661 m, sommet 2 686 m) : la limite pluie-neige monte vers 3 100 m le 12 novembre, au-dessus du sommet, donc les précipitations tomberaient en pluie ou en neige mouillée sur tout le domaine et ruisselleraient.",
+      "À Marmot Basin (bas 1 724 m, sommet 2 504 m), une limite pluie-neige vers 2 900 m le 13 novembre passe au-dessus du sommet : pluie ou neige mouillée sur toutes les pentes s'il y a des précipitations.",
+      "Panorama (bas 1 152 m, sommet 2 368 m) : la limite pluie-neige monte vers 3 100 m le 12 novembre, au-dessus du sommet, donc les précipitations tomberaient en pluie ou en neige mouillée sur tout le domaine et ruisselleraient.",
+      "À Whistler Blackcomb (bas 653 m, sommet 2 259 m), une limite pluie-neige vers 2 400 m le 12 novembre passe au-dessus du sommet : pluie ou neige mouillée sur toutes les pentes s'il y a des précipitations.",
+      "Mt. Baldy Family (bas 1 732 m, sommet 2 119 m) : la limite pluie-neige monte vers 2 900 m le 12 novembre, au-dessus du sommet, donc les précipitations tomberaient en pluie ou en neige mouillée sur tout le domaine et ruisselleraient."
+     ]
+    },
+    {
+     "h": "L'isotherme 0 °C et la fonte",
+     "p": [
+      "L'isotherme 0 °C au-dessus des stations ci-dessous, de l'heure la plus froide à la plus douce de chaque jour : jeudi 12 novembre : de 1 730 m à 3 410 m. vendredi 13 novembre : de 1 480 m à 3 180 m. samedi 14 novembre : de 1 380 m à 2 990 m."
+     ]
+    },
+    {
+     "h": "Comment la neige devient pluie sous l'isotherme 0 °C",
+     "p": [
+      "L'air se refroidit en général quand on monte. Sous l'isotherme 0 °C, la neige qui tombe commence à fondre ; la fonte demande de l'énergie et du temps, donc elle ne devient pluie qu'environ 300 m plus bas : la limite pluie-neige. Dans un air sec, l'évaporation prend de la chaleur aux flocons et la limite peut être encore plus basse."
+     ]
+    }
+   ],
+   "advice": [
+    "Les jours doux, la neige ramollit en absorbant la chaleur : skiez le matin sur les remontées les plus hautes et les pentes nord.",
+    "L'isotherme 0 °C est une prévision avec une erreur de plusieurs centaines de mètres : revoyez la carte la veille.",
+    "Avant toute sortie hors-piste ou en randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates sur son site."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest canadien le 12 novembre (modèle SnowScope), avec les stations de cette analyse et l'altitude de leur sommet."
+   }
+  },
+  "de": {
+   "title": "Regen oder Schnee in Westkanada? Die Schneefallgrenze steigt in Banff Sunshine Village auf 3.100 m (12. November)",
+   "description": "Zwischen 1.380 m und 3.410 m: Dort sieht unsere Prognose die Nullgradgrenze in Westkanada in den nächsten Tagen. In den wärmsten Stunden steigt die …",
+   "lede": "Zwischen 1.380 m und 3.410 m: Dort sieht unsere Prognose die Nullgradgrenze in Westkanada in den nächsten Tagen. In den wärmsten Stunden steigt die Schneefallgrenze, etwa 300 m tiefer, am Donnerstag, 12. November in Banff auf Sunshine Village 3.100 m; darunter fällt Niederschlag als Regen. Jede Zahl hier ist eine Schätzung mit etwas Unsicherheit; der Trend über mehrere Tage ist meist verlässlicher als ein einzelner Wert.",
+   "sections": [
+    {
+     "h": "Erreicht Regen die Schneedecke?",
+     "p": [
+      "Regen-auf-Schnee-Risiko in Banff Sunshine Village: etwa 14 cm in den oberen Hängen und am 12. November und 14. November eine Schneefallgrenze über der Mittelstation; der Schnee würde schwer und nass, dann eisig, wenn er wieder gefriert.",
+      "Marmot Basin hält etwa 26 cm in den oberen Hängen, und am 12. November und 14. November liegt die Schneefallgrenze über der Mittelstation: Regen auf diesen Schnee bringt Wasser hinein, macht ihn schwer und kann die Schmelze beschleunigen, dann wird er beim Gefrieren eisig.",
+      "Regen-auf-Schnee-Risiko in Panorama: etwa 19 cm in den oberen Hängen und am 12. November und 14. November eine Schneefallgrenze über der Mittelstation; der Schnee würde schwer und nass, dann eisig, wenn er wieder gefriert.",
+      "In Whistler Blackcomb (2.284 m) zeigt die Prognose 88 mm Niederschlag, das Wasser, das den Berg erreicht; in den nassen Stunden liegt die Schneefallgrenze bei etwa 1.440 m.",
+      "135 mm Niederschlag sind in Vancouver (10 m) vorhergesagt; während er fällt, liegt die Schneefallgrenze bei 1.260 m."
+     ]
+    },
+    {
+     "h": "Regen oder Schnee in jedem Skigebiet",
+     "p": [
+      "Banff Sunshine Village (Tal 1.661 m, Gipfel 2.686 m): Die Schneefallgrenze steigt am 12. November auf etwa 3.100 m, über den Gipfel, also fiele Niederschlag am ganzen Berg als Regen oder nasser Schnee und flösse ab.",
+      "In Marmot Basin (Tal 1.724 m, Gipfel 2.504 m) liegt eine Schneefallgrenze von etwa 2.900 m am 13. November über dem Gipfel: Regen oder nasser Schnee an jedem Hang, wenn Niederschlag fällt.",
+      "Panorama (Tal 1.152 m, Gipfel 2.368 m): Die Schneefallgrenze steigt am 12. November auf etwa 3.100 m, über den Gipfel, also fiele Niederschlag am ganzen Berg als Regen oder nasser Schnee und flösse ab.",
+      "In Whistler Blackcomb (Tal 653 m, Gipfel 2.259 m) liegt eine Schneefallgrenze von etwa 2.400 m am 12. November über dem Gipfel: Regen oder nasser Schnee an jedem Hang, wenn Niederschlag fällt.",
+      "Mt. Baldy Family (Tal 1.732 m, Gipfel 2.119 m): Die Schneefallgrenze steigt am 12. November auf etwa 2.900 m, über den Gipfel, also fiele Niederschlag am ganzen Berg als Regen oder nasser Schnee und flösse ab."
+     ]
+    },
+    {
+     "h": "Die Nullgradgrenze und die Schmelze",
+     "p": [
+      "Die Nullgradgrenze über den Skigebieten unten, von der kältesten bis zur wärmsten Stunde jedes Tages: Donnerstag, 12. November: von 1.730 m bis 3.410 m. Freitag, 13. November: von 1.480 m bis 3.180 m. Samstag, 14. November: von 1.380 m bis 2.990 m."
+     ]
+    },
+    {
+     "h": "Wie Schnee unter der Nullgradgrenze zu Regen wird",
+     "p": [
+      "Die Luft kühlt meist ab, je höher es geht. Unter der Nullgradgrenze beginnt fallender Schnee zu schmelzen; Schmelzen braucht Energie und Zeit, deshalb wird er erst etwa 300 m tiefer zu Regen: die Schneefallgrenze. In trockener Luft entzieht Verdunstung den Flocken Wärme, und die Schneefallgrenze kann noch tiefer liegen."
+     ]
+    }
+   ],
+   "advice": [
+    "An warmen Tagen wird der Schnee weich, weil er Wärme aufnimmt: Fahr morgens an den höchsten Liften und Nordhängen.",
+    "Die Nullgradgrenze ist eine Prognose mit einem Fehler von mehreren hundert Metern: Schau am Vortag noch einmal auf die Karte.",
+    "Lies vor jedem Tag abseits der Piste oder auf Tour den offiziellen Lawinenlagebericht (Links unten).",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Termine auf seiner Website."
+   ],
+   "captions": {
+    "map": "Schneehöhe in Westkanada am 12. November (SnowScope-Modell) mit den Skigebieten dieser Analyse und ihrer Gipfelhöhe."
+   }
+  },
+  "it": {
+   "title": "Pioggia o neve nel Canada occidentale? La quota neve sale a 3.100 m a Banff Sunshine Village (12 novembre)",
+   "description": "Tra 1.380 m e 3.410 m: è lì che la nostra previsione colloca lo zero termico nel Canada occidentale nei prossimi giorni. Nelle ore più miti la quota …",
+   "lede": "Tra 1.380 m e 3.410 m: è lì che la nostra previsione colloca lo zero termico nel Canada occidentale nei prossimi giorni. Nelle ore più miti la quota neve, circa 300 m più in basso, sale a 3.100 m a Banff Sunshine Village il giovedì 12 novembre; sotto, le precipitazioni cadono come pioggia. Ogni numero qui è una stima con una certa incertezza; la tendenza su più giorni di solito è più affidabile di un valore singolo.",
+   "sections": [
+    {
+     "h": "La pioggia arriverà sul manto?",
+     "p": [
+      "Rischio di pioggia sulla neve a Banff Sunshine Village: circa 14 cm sui pendii alti e una quota neve sopra metà montagna il 12 novembre e 14 novembre; la neve diventerebbe pesante e bagnata, poi ghiacciata al rigelo.",
+      "Marmot Basin trattiene circa 26 cm sui pendii alti, e il 12 novembre e 14 novembre la quota neve è sopra metà montagna: la pioggia su questa neve aggiunge acqua, la appesantisce e può accelerare la fusione, poi diventa ghiacciata al rigelo.",
+      "Rischio di pioggia sulla neve a Panorama: circa 19 cm sui pendii alti e una quota neve sopra metà montagna il 12 novembre e 14 novembre; la neve diventerebbe pesante e bagnata, poi ghiacciata al rigelo.",
+      "A Whistler Blackcomb (2.284 m) la previsione indica 88 mm di precipitazioni, l'acqua che arriva sulla montagna; nelle ore umide la quota neve è vicina a 1.440 m.",
+      "Sono previsti 135 mm di precipitazioni a Vancouver (10 m); mentre cadono, la quota neve è vicino a 1.260 m."
+     ]
+    },
+    {
+     "h": "Pioggia o neve in ogni località",
+     "p": [
+      "Banff Sunshine Village (base 1.661 m, vetta 2.686 m): la quota neve sale a circa 3.100 m il 12 novembre, sopra la vetta, quindi le precipitazioni cadrebbero come pioggia o neve bagnata su tutta la montagna e defluirebbero.",
+      "A Marmot Basin (base 1.724 m, vetta 2.504 m) una quota neve di circa 2.900 m il 13 novembre sta sopra la vetta: pioggia o neve bagnata su ogni pendio se arrivano precipitazioni.",
+      "Panorama (base 1.152 m, vetta 2.368 m): la quota neve sale a circa 3.100 m il 12 novembre, sopra la vetta, quindi le precipitazioni cadrebbero come pioggia o neve bagnata su tutta la montagna e defluirebbero.",
+      "A Whistler Blackcomb (base 653 m, vetta 2.259 m) una quota neve di circa 2.400 m il 12 novembre sta sopra la vetta: pioggia o neve bagnata su ogni pendio se arrivano precipitazioni.",
+      "Mt. Baldy Family (base 1.732 m, vetta 2.119 m): la quota neve sale a circa 2.900 m il 12 novembre, sopra la vetta, quindi le precipitazioni cadrebbero come pioggia o neve bagnata su tutta la montagna e defluirebbero."
+     ]
+    },
+    {
+     "h": "Lo zero termico e la fusione",
+     "p": [
+      "Lo zero termico sulle località qui sotto, dall'ora più fredda alla più mite di ogni giorno: giovedì 12 novembre: da 1.730 m a 3.410 m. venerdì 13 novembre: da 1.480 m a 3.180 m. sabato 14 novembre: da 1.380 m a 2.990 m."
+     ]
+    },
+    {
+     "h": "Come la neve diventa pioggia sotto lo zero termico",
+     "p": [
+      "Di solito l'aria si raffredda salendo. Sotto lo zero termico la neve che cade inizia a fondere; la fusione richiede energia e tempo, quindi diventa pioggia solo circa 300 m più in basso: la quota neve. In aria secca l'evaporazione sottrae calore ai fiocchi e la quota neve può stare ancora più in basso."
+     ]
+    }
+   ],
+   "advice": [
+    "Nei giorni miti la neve si ammorbidisce assorbendo calore: scia al mattino sugli impianti più alti e sui versanti nord.",
+    "Lo zero termico è una previsione con un errore di diverse centinaia di metri: ricontrolla la mappa il giorno prima.",
+    "Prima di ogni uscita in fuoripista o scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date sul suo sito."
+   ],
+   "captions": {
+    "map": "Altezza neve nel Canada occidentale il 12 novembre (modello SnowScope) con le località di questa analisi e la quota della vetta."
+   }
+  },
+  "es": {
+   "title": "¿Lluvia o nieve en el oeste de Canadá? La cota de nieve sube a 3100 m en Banff Sunshine Village (12 de noviembre)",
+   "description": "Entre 1380 m y 3410 m: ahí sitúa nuestra previsión la isoterma de 0 °C en el oeste de Canadá en los próximos días. En las horas más templadas la cota …",
+   "lede": "Entre 1380 m y 3410 m: ahí sitúa nuestra previsión la isoterma de 0 °C en el oeste de Canadá en los próximos días. En las horas más templadas la cota de nieve, unos 300 m más abajo, sube a 3100 m en Banff Sunshine Village el jueves 12 de noviembre; por debajo, la precipitación cae como lluvia. Cada cifra aquí es una estimación con cierta incertidumbre; la tendencia de varios días suele ser más fiable que un solo valor.",
+   "sections": [
+    {
+     "h": "¿Llegará la lluvia al manto?",
+     "p": [
+      "Riesgo de lluvia sobre nieve en Banff Sunshine Village: unos 14 cm en la parte alta y una cota de nieve por encima de media montaña el 12 de noviembre y 14 de noviembre; la nieve se volvería pesada y húmeda, y helada al volver a congelarse.",
+      "Marmot Basin guarda unos 26 cm en la parte alta, y el 12 de noviembre y 14 de noviembre la cota de nieve queda por encima de media montaña: la lluvia sobre esa nieve le añade agua, la vuelve pesada y puede acelerar la fusión, y después queda helada al volver a congelarse.",
+      "Riesgo de lluvia sobre nieve en Panorama: unos 19 cm en la parte alta y una cota de nieve por encima de media montaña el 12 de noviembre y 14 de noviembre; la nieve se volvería pesada y húmeda, y helada al volver a congelarse.",
+      "En Whistler Blackcomb (2284 m) la previsión da 88 mm de precipitación, el agua que llega a la montaña; en las horas húmedas la cota de nieve ronda 1440 m.",
+      "Se prevén 135 mm de precipitación en Vancouver (10 m); mientras caen, la cota de nieve queda hacia 1260 m."
+     ]
+    },
+    {
+     "h": "Lluvia o nieve en cada estación",
+     "p": [
+      "Banff Sunshine Village (base 1661 m, cima 2686 m): la cota de nieve sube a unos 3100 m el 12 de noviembre, por encima de la cima, así que la precipitación caería como lluvia o nieve húmeda en toda la montaña y se escurriría.",
+      "En Marmot Basin (base 1724 m, cima 2504 m), una cota de nieve de unos 2900 m el 13 de noviembre queda por encima de la cima: lluvia o nieve húmeda en todas las pistas si hay precipitación.",
+      "Panorama (base 1152 m, cima 2368 m): la cota de nieve sube a unos 3100 m el 12 de noviembre, por encima de la cima, así que la precipitación caería como lluvia o nieve húmeda en toda la montaña y se escurriría.",
+      "En Whistler Blackcomb (base 653 m, cima 2259 m), una cota de nieve de unos 2400 m el 12 de noviembre queda por encima de la cima: lluvia o nieve húmeda en todas las pistas si hay precipitación.",
+      "Mt. Baldy Family (base 1732 m, cima 2119 m): la cota de nieve sube a unos 2900 m el 12 de noviembre, por encima de la cima, así que la precipitación caería como lluvia o nieve húmeda en toda la montaña y se escurriría."
+     ]
+    },
+    {
+     "h": "La isoterma de 0 °C y la fusión",
+     "p": [
+      "La isoterma de 0 °C sobre las estaciones de abajo, de la hora más fría a la más templada de cada día: jueves 12 de noviembre: de 1730 m a 3410 m. viernes 13 de noviembre: de 1480 m a 3180 m. sábado 14 de noviembre: de 1380 m a 2990 m."
+     ]
+    },
+    {
+     "h": "Cómo la nieve se vuelve lluvia bajo la isoterma de 0 °C",
+     "p": [
+      "El aire suele enfriarse al subir. Bajo la isoterma de 0 °C, la nieve que cae empieza a fundirse; fundirse requiere energía y tiempo, así que solo se vuelve lluvia unos 300 m más abajo: la cota de nieve. Con aire seco, la evaporación quita calor a los copos y la cota puede quedar aún más baja."
+     ]
+    }
+   ],
+   "advice": [
+    "Los días templados la nieve se ablanda al absorber calor: esquía por la mañana en los remontes más altos y las laderas norte.",
+    "La isoterma de 0 °C es una previsión con un error de varios cientos de metros: vuelve a mirar el mapa el día antes.",
+    "Antes de cualquier salida fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas en su web."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de Canadá el 12 de noviembre (modelo SnowScope) con las estaciones de este análisis y la altura de su cima."
+   }
+  },
+  "ar": {
+   "title": "شتا ولا تلج فغرب كندا؟ الحد ديال التلج طالع ل 3100 م ف Banff Sunshine Village (12 نونبر)",
+   "description": "بين 1380 م و 3410 م: هنا فين التوقعات ديالنا كتحط علو 0 °C فغرب كندا فالأيام الجاية. فالساعات اللي سخونة كثر الحد ديال التلج، تقريبا 300 م تحت، كيطلع …",
+   "lede": "بين 1380 م و 3410 م: هنا فين التوقعات ديالنا كتحط علو 0 °C فغرب كندا فالأيام الجاية. فالساعات اللي سخونة كثر الحد ديال التلج، تقريبا 300 م تحت، كيطلع ل 3100 م ف Banff Sunshine Village نهار الخميس 12 نونبر؛ تحتو، الشتا كتطيح شتا. كل رقم هنا تقدير فيه شوية ديال الشك؛ الاتجاه فشي أيام غالبا مضمون كثر من قيمة وحدة.",
+   "sections": [
+    {
+     "h": "واش الشتا غادي توصل لطبقة التلج؟",
+     "p": [
+      "خطر ديال الشتا على التلج ف Banff Sunshine Village: تقريبا 14 سم فالجهة الفوقانية وحد ديال التلج فوق الوسط ديال الجبل نهار 12 نونبر و 14 نونبر؛ التلج غادي يولي تقيل ومبلول، ومن بعد جليد ملي يعاود يجمد.",
+      "Marmot Basin خازنة تقريبا 26 سم فالجهة الفوقانية، ونهار 12 نونبر و 14 نونبر الحد ديال التلج فوق الوسط ديال الجبل: الشتا على هاد التلج كتزيد فيه الما، كتردو تقيل وتقدر تزرب الذوبان، ومن بعد كيولي جليد ملي يجمد.",
+      "خطر ديال الشتا على التلج ف Panorama: تقريبا 19 سم فالجهة الفوقانية وحد ديال التلج فوق الوسط ديال الجبل نهار 12 نونبر و 14 نونبر؛ التلج غادي يولي تقيل ومبلول، ومن بعد جليد ملي يعاود يجمد.",
+      "ف Whistler Blackcomb (2284 م) التوقعات كتعطي 88 مم ديال الشتا، هادا هو الما اللي كيوصل للجبل؛ فالساعات اللي فيها الشتا الحد ديال التلج قريب من 1440 م.",
+      "135 مم ديال الشتا متوقعة ف Vancouver (10 م)؛ ملي كتطيح، الحد ديال التلج كيكون قريب من 1260 م."
+     ]
+    },
+    {
+     "h": "شتا ولا تلج فكل محطة",
+     "p": [
+      "Banff Sunshine Village (التحت 1661 م، الفوق 2686 م): الحد ديال التلج كيطلع ل تقريبا 3100 م نهار 12 نونبر، فوق القمة، يعني الشتا غادي تطيح شتا ولا تلج مبلول فالجبل كامل وتجري.",
+      "ف Marmot Basin (التحت 1724 م، الفوق 2504 م)، حد ديال التلج ديال تقريبا 2900 م نهار 13 نونبر كاين فوق القمة: شتا ولا تلج مبلول فكاع البيستات إلا طاحت الشتا.",
+      "Panorama (التحت 1152 م، الفوق 2368 م): الحد ديال التلج كيطلع ل تقريبا 3100 م نهار 12 نونبر، فوق القمة، يعني الشتا غادي تطيح شتا ولا تلج مبلول فالجبل كامل وتجري.",
+      "ف Whistler Blackcomb (التحت 653 م، الفوق 2259 م)، حد ديال التلج ديال تقريبا 2400 م نهار 12 نونبر كاين فوق القمة: شتا ولا تلج مبلول فكاع البيستات إلا طاحت الشتا.",
+      "Mt. Baldy Family (التحت 1732 م، الفوق 2119 م): الحد ديال التلج كيطلع ل تقريبا 2900 م نهار 12 نونبر، فوق القمة، يعني الشتا غادي تطيح شتا ولا تلج مبلول فالجبل كامل وتجري."
+     ]
+    },
+    {
+     "h": "علو 0 °C والذوبان",
+     "p": [
+      "علو 0 °C فوق المحطات اللي لتحت، من أبرد ساعة حتى ل أسخن ساعة فكل نهار: الخميس 12 نونبر: من 1730 م حتى ل 3410 م. الجمعة 13 نونبر: من 1480 م حتى ل 3180 م. السبت 14 نونبر: من 1380 م حتى ل 2990 م."
+     ]
+    },
+    {
+     "h": "كيفاش التلج كيولي شتا تحت علو 0 °C",
+     "p": [
+      "الهوا عادة كيبرد كل ما طلعتي. تحت علو 0 °C، التلج اللي طايح كيبدا يدوب؛ الذوبان كياخد الطاقة والوقت، داكشي علاش كيولي شتا غير تقريبا 300 م لتحت: الحد ديال التلج. فالهوا الناشف، التبخر كياخد السخانة من التلج والحد يقدر يكون لتحت كثر."
+     ]
+    }
+   ],
+   "advice": [
+    "فالأيام السخونين التلج كيرطاب حيت كيشرب السخانة: تزلج فالصباح فالتيليسييجات اللي فالفوق وفالجهات اللي كتشوف للشمال.",
+    "علو 0 °C توقع فيه غلط ديال شي مئات ديال الميترات: عاود شوف الخريطة نهار قبل.",
+    "قبل أي خرجة برا البيست ولا جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديالها."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب كندا نهار 12 نونبر (الموديل ديال SnowScope) مع المحطات ديال هاد التحليل والعلو ديال القمة ديالهم."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "hydro"
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "hydro"
+  },
+  "de": {
+   "writer": "template",
+   "voice": "hydro"
+  },
+  "it": {
+   "writer": "template",
+   "voice": "hydro"
+  },
+  "es": {
+   "writer": "template",
+   "voice": "hydro"
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "hydro"
+  }
+ },
+ "words_en": 518,
+ "indexable": true,
+ "main": {
+  "slug": "banff_sunshine_village",
+  "name": "Banff Sunshine Village",
+  "lat": 51.0874,
+  "lon": -115.77
+ },
+ "places": [
+  {
+   "name": "Banff Sunshine Village",
+   "lat": 51.0874,
+   "lon": -115.77
+  },
+  {
+   "name": "Marmot Basin",
+   "lat": 52.7963,
+   "lon": -118.1058
+  },
+  {
+   "name": "Panorama",
+   "lat": 50.4454,
+   "lon": -116.2236
+  },
+  {
+   "name": "Whistler Blackcomb",
+   "lat": 50.0888,
+   "lon": -122.9419
+  },
+  {
+   "name": "Mt. Baldy Family",
+   "lat": 49.153,
+   "lon": -119.2353
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "banff_sunshine_village",
+   "name": "Banff Sunshine Village"
+  },
+  {
+   "slug": "marmot_basin",
+   "name": "Marmot Basin"
+  },
+  {
+   "slug": "panorama_mountain_resort",
+   "name": "Panorama"
+  },
+  {
+   "slug": "whistler",
+   "name": "Whistler Blackcomb"
+  },
+  {
+   "slug": "mt_baldy_family_ski_area",
+   "name": "Mt. Baldy Family"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "banff_sunshine_village",
+    "name": "Banff Sunshine Village",
+    "depth": 14,
+    "new72": 0,
+    "next": 0,
+    "top_m": 2686
+   },
+   {
+    "slug": "marmot_basin",
+    "name": "Marmot Basin",
+    "depth": 26,
+    "new72": 2,
+    "next": 0,
+    "top_m": 2504
+   },
+   {
+    "slug": "panorama_mountain_resort",
+    "name": "Panorama",
+    "depth": 19,
+    "new72": 2,
+    "next": 0,
+    "top_m": 2368
+   },
+   {
+    "slug": "whistler",
+    "name": "Whistler Blackcomb",
+    "depth": 116,
+    "new72": 40,
+    "next": 83,
+    "top_m": 2259
+   },
+   {
+    "slug": "mt_baldy_family_ski_area",
+    "name": "Mt. Baldy Family",
+    "depth": 17,
+    "new72": 3,
+    "next": 5,
+    "top_m": 2119
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Avalanche Canada",
+   "url": "https://avalanche.ca/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@51.087,-115.770,9.0",
+ "seconds": 0.0,
+ "facts_used": 30,
+ "voice": "hydro",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 26.5,
+  "after": 26.5,
+  "with": "us-west-freezing-level-snow-line-8-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.153,
+  "with": "us-west-freezing-level-snow-line-8-november-2026"
+ },
+ "publish_utc": "2026-11-12T19:17:51Z"
+}
