@@ -1783,7 +1783,7 @@
       (y.new_max_cm >= 1 ? U.dep(y.new_max_cm) : "") + "</b><small>" + (y.date === DATA.today ? esc(I18N.t("Today")) : wd(y.date)) + "</small></span>").join("") + "</div>";
     // freshness (v3 trust cue): when the pictures were built, in the visitor's time ("Updated 07:12" / "Updated 2 Nov")
     const bu = DATA.built_utc ? new Date(DATA.built_utc) : null, sameDay = bu && bu.toDateString() === new Date().toDateString();
-    const upd = bu && !isNaN(bu) ? '<span class="upd" title="' + esc(bu.toLocaleString(LOC)) + '">' + esc(I18N.tu("Updated {a}", sameDay ? bu.toLocaleTimeString(LOC, { hour: "2-digit", minute: "2-digit" }) : bu.toLocaleDateString(LOC, { day: "numeric", month: "short" }))) + "</span>" : "";
+    const upd = "";   // owner 2026-11-12: never show "Updated …" dates to visitors (data refresh daily)
     let h = favRow() + '<section class="rhero"><div class="hk"><span>' + esc(when) + " · " + esc(I18N.t(r.name)) + "</span>" + upd + '</div><div class="hn">' + big + '</div><div class="hw">' + esc(what) + (where ? ' <span class="hp">' + esc(where) + "</span>" : "") + "</div>" +
       '<div class="hs"><span><b>' + fmt(x.resorts_with_snow || 0) + "</b> " + esc(I18N.t("resorts with snow")) + "</span>" + (fresh && best ? "<span><b>" + U.depth(best.depth_cm) + "</b> " + esc(I18N.t("deepest")) + "</span>" : "") + "</div>" +
       '<div class="hc"><div class="hk2">' + esc(I18N.t("Fresh snow, last days and next days")) + "</div>" + bars + "</div></section>";
@@ -3065,7 +3065,7 @@
     const box = $("rLive"); if (!box || st.slug !== x.slug) return;
     let h = "";
     if (lf && lf.available && lf.total) h += '<div class="rowlink static"><span class="ms">cable_car</span><span><b>' + esc(I18N.tu("{a} / {b} lifts open", lf.open, lf.total)) + "</b>" +
-      (lf.updated ? "<small>" + esc(I18N.tu("Updated {a}", new Date(lf.updated).toLocaleTimeString(LOC, { hour: "2-digit", minute: "2-digit" }))) + "</small>" : "") + "</span></div>";
+      "</span></div>";
     else if (lf && lf.status_url) h += '<a class="rowlink" target="_blank" rel="noopener" href="' + esc(lf.status_url) + '"><span class="ms">cable_car</span><span><b>' + (lf.total_mapped ? esc(I18N.tu("{a} lifts", lf.total_mapped)) : esc(I18N.t("Lifts"))) +
       "</b><small>" + esc(I18N.t("Lift status on the resort's site")) + '</small></span><span class="ms">open_in_new</span></a>';
     if (wc && wc.available && wc.webcams && wc.webcams.length) {
