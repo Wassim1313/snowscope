@@ -1,0 +1,1143 @@
+{
+ "id": "2026-11-12-us_ne-outlook14",
+ "slug": "us-northeast-2-week-snow-forecast-maps-12-november-2026",
+ "date": "2026-11-12",
+ "published_utc": "2026-11-12T18:27:41Z",
+ "updated_utc": "2026-11-12T18:27:41Z",
+ "region": "US_NE",
+ "angle": "outlook14",
+ "score": 61.5,
+ "signature": "2026-11-12|sugarbush_resort:20|cannon_mountain:20|mount_snow:20",
+ "keyword": {
+  "family": "two-week-forecast",
+  "entity": "us_ne",
+  "region": "US_NE",
+  "date": "2026-11-12"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "two_week_snow_outlook",
+  "region": "US Northeast",
+  "date": "2026-11-12",
+  "weekday": "Thursday",
+  "model_run": "2026-11-12",
+  "forecast_days": [
+   "2026-11-13",
+   "2026-11-14",
+   "2026-11-15"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 2910,
+   "resorts_with_snow": 18,
+   "resorts_in_region": 112
+  },
+  "region_before": {
+   "date": "2026-11-10",
+   "snow_covered_area_km2": 170,
+   "resorts_with_snow": 3
+  },
+  "region_forecast": {
+   "date": "2026-11-15",
+   "snow_covered_area_km2": 19630,
+   "resorts_with_snow": 40
+  },
+  "question": "Where will new snow fall in the next two weeks, how much, in which week, and at which height?",
+  "outlook_days": [
+   "2026-11-13",
+   "2026-11-14",
+   "2026-11-15",
+   "2026-11-16",
+   "2026-11-17",
+   "2026-11-18",
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26"
+  ],
+  "week1": {
+   "from": "2026-11-13",
+   "to": "2026-11-19"
+  },
+  "week2": {
+   "from": "2026-11-20",
+   "to": "2026-11-26"
+  },
+  "models": [
+   "ECMWF IFS",
+   "NOAA GFS"
+  ],
+  "lattice_points": 115,
+  "region_outlook": {
+   "max_new_cm_next_14_days": 27,
+   "area_km2_with_20cm_or_more": 1027,
+   "area_km2_with_50cm_or_more": 0,
+   "area_km2_mountains": 133200,
+   "week1_share_pct": 53
+  },
+  "new_cm_next_14_days_by_height": [
+   {
+    "from_m": 1000,
+    "to_m": 1500,
+    "new_cm_next_14_days_median": 15,
+    "new_cm_next_14_days_upper_quarter": 18
+   }
+  ],
+  "resorts_followed": 104,
+  "thresholds_cm": [
+   1,
+   5,
+   20,
+   50
+  ],
+  "best_days": [
+   {
+    "date": "2026-11-13",
+    "resorts_with_5cm_or_more": 18,
+    "max_cm": 9,
+    "top_resort": "Mount Snow"
+   },
+   {
+    "date": "2026-11-25",
+    "resorts_with_5cm_or_more": 12,
+    "max_cm": 6,
+    "top_resort": "Mount Snow"
+   }
+  ],
+  "resorts": [
+   {
+    "name": "Sugarbush Resort",
+    "country": "United States",
+    "top_m": 1238,
+    "base_m": 461,
+    "depth_cm_upper_slopes_today": 2,
+    "new_cm_last_24h": 4,
+    "new_cm_last_72h": 5,
+    "new_cm_forecast_next_days": 10,
+    "slug": "sugarbush_resort",
+    "new_cm_next_14_days": 22,
+    "new_cm_next_14_days_low": 9,
+    "new_cm_next_14_days_high": 35,
+    "new_cm_days_1_7": 14,
+    "new_cm_days_8_14": 8,
+    "snowiest_day": "2026-11-15",
+    "snowiest_day_cm": 9,
+    "days_with_5cm_or_more": 1,
+    "days_with_snow": 6,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 9
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 4
+     }
+    ],
+    "upper_slopes_height_m": 983
+   },
+   {
+    "name": "Cannon Mountain",
+    "country": "United States",
+    "top_m": 1231,
+    "base_m": 574,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 5,
+    "new_cm_forecast_next_days": 9,
+    "slug": "cannon_mountain",
+    "new_cm_next_14_days": 19,
+    "new_cm_next_14_days_low": 5,
+    "new_cm_next_14_days_high": 34,
+    "new_cm_days_1_7": 9,
+    "new_cm_days_8_14": 10,
+    "snowiest_day": "2026-11-26",
+    "snowiest_day_cm": 7,
+    "days_with_5cm_or_more": 2,
+    "days_with_snow": 4,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 7
+     }
+    ],
+    "upper_slopes_height_m": 1092
+   },
+   {
+    "name": "Mount Snow",
+    "country": "United States",
+    "top_m": 1093,
+    "base_m": 591,
+    "depth_cm_upper_slopes_today": 3,
+    "new_cm_last_24h": 4,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 11,
+    "slug": "mount_snow",
+    "new_cm_next_14_days": 17,
+    "new_cm_next_14_days_low": 9,
+    "new_cm_next_14_days_high": 24,
+    "new_cm_days_1_7": 10,
+    "new_cm_days_8_14": 6,
+    "snowiest_day": "2026-11-13",
+    "snowiest_day_cm": 9,
+    "days_with_5cm_or_more": 2,
+    "days_with_snow": 3,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 9
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 923
+   },
+   {
+    "name": "Ski Eldorado",
+    "country": "Canada",
+    "top_m": 889,
+    "base_m": 719,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 3,
+    "new_cm_forecast_next_days": 4,
+    "slug": "ski_eldorado_secteur_st_paul",
+    "new_cm_next_14_days": 17,
+    "new_cm_next_14_days_low": 6,
+    "new_cm_next_14_days_high": 27,
+    "new_cm_days_1_7": 5,
+    "new_cm_days_8_14": 11,
+    "snowiest_day": "2026-11-26",
+    "snowiest_day_cm": 8,
+    "days_with_5cm_or_more": 1,
+    "days_with_snow": 4,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 8
+     }
+    ],
+    "upper_slopes_height_m": 870
+   },
+   {
+    "name": "Stratton",
+    "country": "United States",
+    "top_m": 1183,
+    "base_m": 607,
+    "depth_cm_upper_slopes_today": 7,
+    "new_cm_last_24h": 8,
+    "new_cm_last_72h": 8,
+    "new_cm_forecast_next_days": 12,
+    "slug": "stratton_mountain_resort",
+    "new_cm_next_14_days": 17,
+    "new_cm_next_14_days_low": 9,
+    "new_cm_next_14_days_high": 25,
+    "new_cm_days_1_7": 10,
+    "new_cm_days_8_14": 7,
+    "snowiest_day": "2026-11-13",
+    "snowiest_day_cm": 8,
+    "days_with_5cm_or_more": 2,
+    "days_with_snow": 4,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 8
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 1
+     }
+    ],
+    "upper_slopes_height_m": 994
+   },
+   {
+    "name": "Magic Mountain",
+    "country": "United States",
+    "top_m": 869,
+    "base_m": 420,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 3,
+    "new_cm_forecast_next_days": 10,
+    "slug": "magic_mountain_ski_area",
+    "new_cm_next_14_days": 15,
+    "new_cm_next_14_days_low": 8,
+    "new_cm_next_14_days_high": 21,
+    "new_cm_days_1_7": 9,
+    "new_cm_days_8_14": 5,
+    "snowiest_day": "2026-11-13",
+    "snowiest_day_cm": 8,
+    "days_with_5cm_or_more": 2,
+    "days_with_snow": 2,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 8
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 730
+   }
+  ],
+  "notes": [
+   "new snow = middle of the two models' daily snowfall, brought onto the terrain (1 km); low / high = the two models",
+   "resort values = the slopes at or above mid-mountain within a few km of the resort, not the village",
+   "days 1-14 = tomorrow to day 14; week 1 = days 1-7, week 2 = days 8-14",
+   "snow by height = all the mountain terrain of the region, not only resorts"
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-12-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-12-november-2026/map_t.webp",
+   "bytes": 34284,
+   "snow_frac": 0.6773,
+   "weak": false
+  },
+  {
+   "id": "week1",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-12-november-2026/week1.webp",
+   "thumb": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-12-november-2026/week1_t.webp",
+   "bytes": 31186,
+   "snow_frac": 0.5073,
+   "weak": false
+  },
+  {
+   "id": "week2",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-12-november-2026/week2.webp",
+   "thumb": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-12-november-2026/week2_t.webp",
+   "bytes": 30370,
+   "snow_frac": 0.6351,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Where it snows in the US Northeast in the next 14 days: Sugarbush Resort leads with 9 in",
+   "description": "Where will it snow in the US Northeast between 13 November and 26 November, and how much? We asked the two global models that reach two weeks, ECMWF …",
+   "lede": "Where will it snow in the US Northeast between 13 November and 26 November, and how much? We asked the two global models that reach two weeks, ECMWF and GFS, kept the middle of their answers for the maps, and note how far apart they are with every figure below. Sugarbush Resort comes out on top with about 9 in (22 cm) of new snow up high (4 in (9 cm)–14 in (35 cm) between the two models); Cannon Mountain is next at 7 in (19 cm). Snow in the mountains is water held back for spring: what falls now feeds rivers and reservoirs later.",
+   "sections": [
+    {
+     "h": "Resort by resort, the next 14 days",
+     "p": [
+      "At Sugarbush Resort (United States) the two weeks add up to about 9 in (22 cm) (4 in (9 cm)–14 in (35 cm) depending on the model): 6 in (14 cm) by the end of the first week, then 3 in (8 cm) more. Mark 15 November: that is the biggest day, with 4 in (9 cm).",
+      "Cannon Mountain (United States): about 7 in (19 cm) in 14 days (2 in (5 cm)–13 in (34 cm) between the models), 4 in (9 cm) in the first week and 4 in (10 cm) in the second. Mark 26 November: that is the biggest day, with 3 in (7 cm), out of 2 days at 5 cm or more.",
+      "At Mount Snow (United States) the two weeks add up to about 7 in (17 cm) (4 in (9 cm)–9 in (24 cm) depending on the model): 4 in (10 cm) by the end of the first week, then 2 in (6 cm) more. The snowiest day is 13 November with 4 in (9 cm); 2 days bring 5 cm or more.",
+      "At Ski Eldorado (Canada) the two weeks add up to about 7 in (17 cm) (2 in (6 cm)–11 in (27 cm) depending on the model): 2 in (5 cm) by the end of the first week, then 4 in (11 cm) more. Mark 26 November: that is the biggest day, with 3 in (8 cm).",
+      "At Stratton (United States) the two weeks add up to about 7 in (17 cm) (4 in (9 cm)–10 in (25 cm) depending on the model): 4 in (10 cm) by the end of the first week, then 3 in (7 cm) more. Mark 13 November: that is the biggest day, with 3 in (8 cm), out of 2 days at 5 cm or more.",
+      "At Magic Mountain (United States) the two weeks add up to about 6 in (15 cm) (3 in (8 cm)–8 in (21 cm) depending on the model): 4 in (9 cm) by the end of the first week, then 2 in (5 cm) more. The snowiest day is 13 November with 3 in (8 cm); 2 days bring 5 cm or more."
+     ]
+    },
+    {
+     "h": "New snow by height",
+     "p": [
+      "Go up and the numbers change. Over the region's terrain, the two-week totals by height are: between 3,281 ft (1,000 m) and 4,921 ft (1,500 m): typically 6 in (15 cm), the snowiest quarter of that band 7 in (18 cm) or more."
+     ]
+    },
+    {
+     "h": "The days to watch",
+     "p": [
+      "The days to circle, counted over the 104 resorts we follow in the US Northeast: Friday 13 November (18 of 104 resorts at 5 cm or more, up to 4 in (9 cm) at Mount Snow) and Wednesday 25 November (12 of 104 resorts at 5 cm or more, up to 2 in (6 cm) at Mount Snow)."
+     ]
+    },
+    {
+     "h": "First week against second week",
+     "p": [
+      "Split by week, the first one (13 November to 19 November) carries 53 % of the two weeks' snow across the region; the second (20 November to 26 November) carries the rest.",
+      "Front-loaded: Sugarbush Resort, Mount Snow, Stratton and Magic Mountain get most of their snow in the first week.",
+      "Later: at Cannon Mountain and Ski Eldorado the second week brings more than the first.",
+      "On the map, about 397 sq mi (1,027 km²) of mountain terrain get 20 cm or more over the two weeks."
+     ]
+    },
+    {
+     "h": "How to read the maps",
+     "p": [
+      "What you are looking at: new snow expected on the real terrain of the region, summed over the two weeks on the first map and over each week on the two others. The colour scale runs from a trace to very large totals; each pin is one resort's upper mountain.",
+      "How much to trust it: the near days a lot, the far days a little. The range after each number is the gap between the two models; a small gap is a confident forecast, a wide one a question mark. Come back tomorrow for the next set of maps."
+     ]
+    }
+   ],
+   "advice": [
+    "Snow that falls on a thin base needs a few days to ski well: look at the depth maps too before you drive.",
+    "A forecast 0 °C level can be off by several hundred metres; check the map again the day before you go.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website."
+   ],
+   "captions": {
+    "map": "New snow in the US Northeast forecast for the 14 days from 13 November to 26 November (middle of the ECMWF and GFS models, brought onto the terrain), with the resorts of this outlook.",
+    "week1": "The first week only: new snow from 13 November to 19 November.",
+    "week2": "The second week only: new snow from 20 November to 26 November, where the two models disagree most."
+   }
+  },
+  "fr": {
+   "title": "Où il va neiger dans le Nord-Est américain dans les 14 prochains jours : Sugarbush Resort en tête avec 9 in",
+   "description": "Où va-t-il neiger dans le Nord-Est américain entre le 13 novembre et le 26 novembre, et combien ? Nous avons interrogé les deux modèles mondiaux qui …",
+   "lede": "Où va-t-il neiger dans le Nord-Est américain entre le 13 novembre et le 26 novembre, et combien ? Nous avons interrogé les deux modèles mondiaux qui portent à deux semaines, ECMWF et GFS, gardé le milieu de leurs réponses pour les cartes, et notons leur écart à chaque chiffre ci-dessous. Sugarbush Resort ressort en tête avec environ 9 in (22 cm) de neige fraîche en altitude (4 in (9 cm)–14 in (35 cm) entre les deux modèles) ; Cannon Mountain suit avec 7 in (19 cm). La neige en montagne, c'est de l'eau mise de côté pour le printemps : ce qui tombe maintenant alimente plus tard rivières et barrages.",
+   "sections": [
+    {
+     "h": "Station par station, les 14 prochains jours",
+     "p": [
+      "À Sugarbush Resort (États-Unis), les deux semaines totalisent environ 9 in (22 cm) (4 in (9 cm)–14 in (35 cm) selon le modèle) : 6 in (14 cm) à la fin de la première semaine, puis 3 in (8 cm) de plus. Notez le 15 novembre : c'est la plus grosse journée, avec 4 in (9 cm).",
+      "Cannon Mountain (États-Unis) : environ 7 in (19 cm) en 14 jours (2 in (5 cm)–13 in (34 cm) selon le modèle), 4 in (9 cm) la première semaine et 4 in (10 cm) la seconde. Notez le 26 novembre : c'est la plus grosse journée, avec 3 in (7 cm), sur 2 jours à 5 cm ou plus.",
+      "À Mount Snow (États-Unis), les deux semaines totalisent environ 7 in (17 cm) (4 in (9 cm)–9 in (24 cm) selon le modèle) : 4 in (10 cm) à la fin de la première semaine, puis 2 in (6 cm) de plus. Le jour le plus neigeux est le 13 novembre avec 4 in (9 cm) ; 2 jours apportent 5 cm ou plus.",
+      "À Ski Eldorado (Canada), les deux semaines totalisent environ 7 in (17 cm) (2 in (6 cm)–11 in (27 cm) selon le modèle) : 2 in (5 cm) à la fin de la première semaine, puis 4 in (11 cm) de plus. Notez le 26 novembre : c'est la plus grosse journée, avec 3 in (8 cm).",
+      "À Stratton (États-Unis), les deux semaines totalisent environ 7 in (17 cm) (4 in (9 cm)–10 in (25 cm) selon le modèle) : 4 in (10 cm) à la fin de la première semaine, puis 3 in (7 cm) de plus. Notez le 13 novembre : c'est la plus grosse journée, avec 3 in (8 cm), sur 2 jours à 5 cm ou plus.",
+      "À Magic Mountain (États-Unis), les deux semaines totalisent environ 6 in (15 cm) (3 in (8 cm)–8 in (21 cm) selon le modèle) : 4 in (9 cm) à la fin de la première semaine, puis 2 in (5 cm) de plus. Le jour le plus neigeux est le 13 novembre avec 3 in (8 cm) ; 2 jours apportent 5 cm ou plus."
+     ]
+    },
+    {
+     "h": "Neige fraîche par altitude",
+     "p": [
+      "Montez et les chiffres changent. Sur le relief de la région, les cumuls à deux semaines par altitude sont : entre 3 281 ft (1 000 m) et 4 921 ft (1 500 m) : typiquement 6 in (15 cm), le quart le plus enneigé de cette tranche 7 in (18 cm) ou plus."
+     ]
+    },
+    {
+     "h": "Les jours à surveiller",
+     "p": [
+      "Les jours à entourer, comptés sur les 104 stations suivies dans le Nord-Est américain : vendredi 13 novembre (18 stations sur 104 à 5 cm ou plus, jusqu'à 4 in (9 cm) à Mount Snow) et mercredi 25 novembre (12 stations sur 104 à 5 cm ou plus, jusqu'à 2 in (6 cm) à Mount Snow)."
+     ]
+    },
+    {
+     "h": "Première semaine contre seconde",
+     "p": [
+      "Semaine par semaine, la première (du 13 novembre au 19 novembre) porte 53 % de la neige des deux semaines sur la région ; la seconde (du 20 novembre au 26 novembre) porte le reste.",
+      "Tôt dans la quinzaine : Sugarbush Resort, Mount Snow, Stratton et Magic Mountain reçoivent l'essentiel de leur neige la première semaine.",
+      "Plus tard : à Cannon Mountain et Ski Eldorado, la seconde semaine apporte plus que la première.",
+      "Sur la carte, environ 397 sq mi (1 027 km²) de terrain de montagne reçoivent 20 cm ou plus sur les deux semaines."
+     ]
+    },
+    {
+     "h": "Comment lire les cartes",
+     "p": [
+      "Ce que vous regardez : la neige fraîche attendue sur le relief réel de la région, cumulée sur les deux semaines pour la première carte et sur chaque semaine pour les deux autres. L'échelle de couleurs va d'une trace aux très gros cumuls ; chaque épingle est le haut d'une station.",
+      "Quelle confiance : beaucoup pour les jours proches, peu pour les lointains. La fourchette après chaque chiffre est l'écart entre les deux modèles ; un petit écart est une prévision sûre, un grand un point d'interrogation. Revenez demain pour la prochaine série de cartes."
+     ]
+    }
+   ],
+   "advice": [
+    "La neige qui tombe sur une base fine demande quelques jours pour bien skier : regardez aussi les cartes de hauteur avant de partir.",
+    "Une isotherme 0 °C prévue peut se tromper de plusieurs centaines de mètres ; revoyez la carte la veille.",
+    "Avant toute sortie hors-piste ou en randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates sur son site."
+   ],
+   "captions": {
+    "map": "Neige fraîche dans le Nord-Est américain prévue sur les 14 jours du 13 novembre au 26 novembre (milieu des modèles ECMWF et GFS, ramené sur le relief), avec les stations de ce bulletin.",
+    "week1": "La première semaine seule : neige fraîche du 13 novembre au 19 novembre.",
+    "week2": "La seconde semaine seule : neige fraîche du 20 novembre au 26 novembre, là où les deux modèles divergent le plus."
+   }
+  },
+  "de": {
+   "title": "Wo es im Nordosten der USA in den nächsten 14 Tagen schneit: Sugarbush Resort vorn mit 9 in",
+   "description": "Wo schneit es im Nordosten der USA zwischen dem 13. November und dem 26. November, und wie viel? Wir haben die beiden globalen Modelle, die zwei …",
+   "lede": "Wo schneit es im Nordosten der USA zwischen dem 13. November und dem 26. November, und wie viel? Wir haben die beiden globalen Modelle, die zwei Wochen weit reichen, ECMWF und GFS befragt, die Mitte ihrer Antworten für die Karten behalten und notieren bei jeder Zahl unten, wie weit sie auseinanderliegen. Sugarbush Resort liegt vorn mit etwa 9 in (22 cm) Neuschnee in der Höhe (4 in (9 cm)–14 in (35 cm) zwischen den beiden Modellen); Cannon Mountain folgt mit 7 in (19 cm). Schnee in den Bergen ist Wasser, das für den Frühling zurückgehalten wird: Was jetzt fällt, speist später Flüsse und Stauseen.",
+   "sections": [
+    {
+     "h": "Skigebiet für Skigebiet, die nächsten 14 Tage",
+     "p": [
+      "In Sugarbush Resort (USA) summieren sich die zwei Wochen auf etwa 9 in (22 cm) (4 in (9 cm)–14 in (35 cm) je nach Modell): 6 in (14 cm) bis Ende der ersten Woche, dann 3 in (8 cm) dazu. Merk dir den 15. November: der größte Tag, mit 4 in (9 cm).",
+      "Cannon Mountain (USA): etwa 7 in (19 cm) in 14 Tagen (2 in (5 cm)–13 in (34 cm) zwischen den Modellen), 4 in (9 cm) in der ersten Woche und 4 in (10 cm) in der zweiten. Merk dir den 26. November: der größte Tag mit 3 in (7 cm), von 2 Tagen mit 5 cm oder mehr.",
+      "In Mount Snow (USA) summieren sich die zwei Wochen auf etwa 7 in (17 cm) (4 in (9 cm)–9 in (24 cm) je nach Modell): 4 in (10 cm) bis Ende der ersten Woche, dann 2 in (6 cm) dazu. Der schneereichste Tag ist der 13. November mit 4 in (9 cm); an 2 Tagen kommen 5 cm oder mehr.",
+      "In Ski Eldorado (Kanada) summieren sich die zwei Wochen auf etwa 7 in (17 cm) (2 in (6 cm)–11 in (27 cm) je nach Modell): 2 in (5 cm) bis Ende der ersten Woche, dann 4 in (11 cm) dazu. Merk dir den 26. November: der größte Tag, mit 3 in (8 cm).",
+      "In Stratton (USA) summieren sich die zwei Wochen auf etwa 7 in (17 cm) (4 in (9 cm)–10 in (25 cm) je nach Modell): 4 in (10 cm) bis Ende der ersten Woche, dann 3 in (7 cm) dazu. Merk dir den 13. November: der größte Tag mit 3 in (8 cm), von 2 Tagen mit 5 cm oder mehr.",
+      "In Magic Mountain (USA) summieren sich die zwei Wochen auf etwa 6 in (15 cm) (3 in (8 cm)–8 in (21 cm) je nach Modell): 4 in (9 cm) bis Ende der ersten Woche, dann 2 in (5 cm) dazu. Der schneereichste Tag ist der 13. November mit 3 in (8 cm); an 2 Tagen kommen 5 cm oder mehr."
+     ]
+    },
+    {
+     "h": "Neuschnee nach Höhe",
+     "p": [
+      "Geh höher und die Zahlen ändern sich. Über das Gelände der Region sind die Zwei-Wochen-Summen nach Höhe: zwischen 3.281 ft (1.000 m) und 4.921 ft (1.500 m): typisch 6 in (15 cm), das schneereichste Viertel dieser Stufe 7 in (18 cm) oder mehr."
+     ]
+    },
+    {
+     "h": "Die Tage im Blick",
+     "p": [
+      "Die Tage zum Anstreichen, gezählt über die 104 Skigebiete, die wir im Nordosten der USA verfolgen: Freitag, 13. November (18 von 104 Skigebieten mit 5 cm oder mehr, bis 4 in (9 cm) in Mount Snow) und Mittwoch, 25. November (12 von 104 Skigebieten mit 5 cm oder mehr, bis 2 in (6 cm) in Mount Snow)."
+     ]
+    },
+    {
+     "h": "Erste gegen zweite Woche",
+     "p": [
+      "Nach Wochen getrennt trägt die erste (13. November bis 19. November) 53 % des Schnees der zwei Wochen in der Region; die zweite (20. November bis 26. November) den Rest.",
+      "Früh dran: Sugarbush Resort, Mount Snow, Stratton und Magic Mountain bekommen den Großteil ihres Schnees in der ersten Woche.",
+      "Später: in Cannon Mountain und Ski Eldorado bringt die zweite Woche mehr als die erste.",
+      "Auf der Karte bekommen etwa 397 sq mi (1.027 km²) Berggelände in den zwei Wochen 20 cm oder mehr."
+     ]
+    },
+    {
+     "h": "So liest man die Karten",
+     "p": [
+      "Was du siehst: der im echten Gelände der Region erwartete Neuschnee, auf der ersten Karte über zwei Wochen, auf den beiden anderen je Woche summiert. Die Farbskala reicht von einer Spur bis zu sehr großen Summen; jede Nadel ist der obere Berg eines Skigebiets.",
+      "Wie viel Vertrauen: viel für die nahen Tage, wenig für die fernen. Die Spanne hinter jeder Zahl ist der Abstand der beiden Modelle; ein kleiner Abstand ist eine sichere Prognose, ein großer ein Fragezeichen. Morgen gibt es den nächsten Satz Karten."
+     ]
+    }
+   ],
+   "advice": [
+    "Schnee auf dünner Unterlage braucht ein paar Tage, bis er gut fährt: schau vor der Fahrt auch auf die Schneehöhenkarten.",
+    "Eine prognostizierte Nullgradgrenze kann um mehrere hundert Meter danebenliegen; schau am Vortag noch einmal auf die Karte.",
+    "Lies vor jedem Tag abseits der Piste oder auf Tour den offiziellen Lawinenlagebericht (Links unten).",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Termine auf seiner Website."
+   ],
+   "captions": {
+    "map": "Neuschnee im Nordosten der USA, Prognose für die 14 Tage vom 13. November bis zum 26. November (Mitte der Modelle ECMWF und GFS, aufs Gelände gebracht), mit den Skigebieten dieses Ausblicks.",
+    "week1": "Nur die erste Woche: Neuschnee vom 13. November bis zum 19. November.",
+    "week2": "Nur die zweite Woche: Neuschnee vom 20. November bis zum 26. November, wo die beiden Modelle am stärksten abweichen."
+   }
+  },
+  "it": {
+   "title": "Dove nevica nel Nord-est degli USA nei prossimi 14 giorni: Sugarbush Resort in testa con 9 in",
+   "description": "Dove nevicherà nel Nord-est degli USA tra il 13 novembre e il 26 novembre, e quanto? Abbiamo interrogato i due modelli globali che arrivano a due …",
+   "lede": "Dove nevicherà nel Nord-est degli USA tra il 13 novembre e il 26 novembre, e quanto? Abbiamo interrogato i due modelli globali che arrivano a due settimane, ECMWF e GFS, tenuto il valore medio delle loro risposte per le mappe, e segnaliamo quanto distano a ogni cifra qui sotto. Sugarbush Resort è in testa con circa 9 in (22 cm) di neve fresca in quota (4 in (9 cm)–14 in (35 cm) tra i due modelli); Cannon Mountain segue con 7 in (19 cm). La neve in montagna è acqua trattenuta per la primavera: quello che cade ora alimenterà più tardi fiumi e invasi.",
+   "sections": [
+    {
+     "h": "Località per località, i prossimi 14 giorni",
+     "p": [
+      "A Sugarbush Resort (Stati Uniti) le due settimane fanno circa 9 in (22 cm) (4 in (9 cm)–14 in (35 cm) a seconda del modello): 6 in (14 cm) entro fine prima settimana, poi altri 3 in (8 cm). Segnate il 15 novembre: è la giornata più grande, con 4 in (9 cm).",
+      "Cannon Mountain (Stati Uniti): circa 7 in (19 cm) in 14 giorni (2 in (5 cm)–13 in (34 cm) tra i modelli), 4 in (9 cm) nella prima settimana e 4 in (10 cm) nella seconda. Segnate il 26 novembre: è la giornata più grande, con 3 in (7 cm), su 2 giorni a 5 cm o più.",
+      "A Mount Snow (Stati Uniti) le due settimane fanno circa 7 in (17 cm) (4 in (9 cm)–9 in (24 cm) a seconda del modello): 4 in (10 cm) entro fine prima settimana, poi altri 2 in (6 cm). Il giorno più nevoso è il 13 novembre con 4 in (9 cm); 2 giorni portano 5 cm o più.",
+      "A Ski Eldorado (Canada) le due settimane fanno circa 7 in (17 cm) (2 in (6 cm)–11 in (27 cm) a seconda del modello): 2 in (5 cm) entro fine prima settimana, poi altri 4 in (11 cm). Segnate il 26 novembre: è la giornata più grande, con 3 in (8 cm).",
+      "A Stratton (Stati Uniti) le due settimane fanno circa 7 in (17 cm) (4 in (9 cm)–10 in (25 cm) a seconda del modello): 4 in (10 cm) entro fine prima settimana, poi altri 3 in (7 cm). Segnate il 13 novembre: è la giornata più grande, con 3 in (8 cm), su 2 giorni a 5 cm o più.",
+      "A Magic Mountain (Stati Uniti) le due settimane fanno circa 6 in (15 cm) (3 in (8 cm)–8 in (21 cm) a seconda del modello): 4 in (9 cm) entro fine prima settimana, poi altri 2 in (5 cm). Il giorno più nevoso è il 13 novembre con 3 in (8 cm); 2 giorni portano 5 cm o più."
+     ]
+    },
+    {
+     "h": "Neve fresca per quota",
+     "p": [
+      "Salite e i numeri cambiano. Sul terreno della regione, i totali a due settimane per quota sono: tra 3.281 ft (1.000 m) e 4.921 ft (1.500 m): tipicamente 6 in (15 cm), il quarto più nevoso di quella fascia 7 in (18 cm) o più."
+     ]
+    },
+    {
+     "h": "I giorni da tenere d'occhio",
+     "p": [
+      "I giorni da cerchiare, contati sulle 104 località che seguiamo nel Nord-est degli USA: venerdì 13 novembre (18 località su 104 a 5 cm o più, fino a 4 in (9 cm) a Mount Snow) e mercoledì 25 novembre (12 località su 104 a 5 cm o più, fino a 2 in (6 cm) a Mount Snow)."
+     ]
+    },
+    {
+     "h": "Prima settimana contro seconda",
+     "p": [
+      "Divisa per settimana, la prima (dal 13 novembre al 19 novembre) porta il 53 % della neve delle due settimane sulla regione; la seconda (dal 20 novembre al 26 novembre) il resto.",
+      "In anticipo: Sugarbush Resort, Mount Snow, Stratton e Magic Mountain ricevono gran parte della neve nella prima settimana.",
+      "Più tardi: a Cannon Mountain e Ski Eldorado la seconda settimana porta più della prima.",
+      "Sulla mappa, circa 397 sq mi (1.027 km²) di terreno montano ricevono 20 cm o più nelle due settimane."
+     ]
+    },
+    {
+     "h": "Come leggere le mappe",
+     "p": [
+      "Cosa state guardando: la neve fresca attesa sul terreno reale della regione, sommata sulle due settimane nella prima mappa e su ogni settimana nelle altre due. La scala dei colori va da una traccia ai totali molto grandi; ogni spillo è la parte alta di una località.",
+      "Quanta fiducia: molta per i giorni vicini, poca per quelli lontani. La forchetta dopo ogni numero è lo scarto tra i due modelli; uno scarto piccolo è una previsione sicura, uno grande un punto interrogativo. Tornate domani per la prossima serie di mappe."
+     ]
+    }
+   ],
+   "advice": [
+    "La neve che cade su una base sottile ha bisogno di qualche giorno per sciare bene: guardate anche le mappe di altezza prima di partire.",
+    "Uno zero termico previsto può sbagliare di diverse centinaia di metri; ricontrolla la mappa il giorno prima.",
+    "Prima di ogni uscita in fuoripista o scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date sul suo sito."
+   ],
+   "captions": {
+    "map": "Neve fresca nel Nord-est degli USA prevista per i 14 giorni dal 13 novembre al 26 novembre (valore medio dei modelli ECMWF e GFS, riportato sul terreno), con le località di questa tendenza.",
+    "week1": "Solo la prima settimana: neve fresca dal 13 novembre al 19 novembre.",
+    "week2": "Solo la seconda settimana: neve fresca dal 20 novembre al 26 novembre, dove i due modelli divergono di più."
+   }
+  },
+  "es": {
+   "title": "Dónde nieva en el noreste de EE. UU. en los próximos 14 días: Sugarbush Resort lidera con 9 in",
+   "description": "¿Dónde nevará en el noreste de EE. UU. entre el 13 de noviembre y el 26 de noviembre, y cuánto? Preguntamos a los dos modelos globales que llegan a …",
+   "lede": "¿Dónde nevará en el noreste de EE. UU. entre el 13 de noviembre y el 26 de noviembre, y cuánto? Preguntamos a los dos modelos globales que llegan a dos semanas, ECMWF y GFS, nos quedamos con el punto medio de sus respuestas para los mapas y anotamos su distancia en cada cifra de abajo. Sugarbush Resort sale en cabeza con unos 9 in (22 cm) de nieve nueva en altura (4 in (9 cm)–14 in (35 cm) entre los dos modelos); Cannon Mountain va después con 7 in (19 cm). La nieve en la montaña es agua guardada para la primavera: lo que cae ahora alimenta después ríos y embalses.",
+   "sections": [
+    {
+     "h": "Estación por estación, los próximos 14 días",
+     "p": [
+      "En Sugarbush Resort (Estados Unidos) las dos semanas suman unos 9 in (22 cm) (4 in (9 cm)–14 in (35 cm) según el modelo): 6 in (14 cm) al final de la primera semana, luego 3 in (8 cm) más. Apunta el 15 de noviembre: es el día más grande, con 4 in (9 cm).",
+      "Cannon Mountain (Estados Unidos): unos 7 in (19 cm) en 14 días (2 in (5 cm)–13 in (34 cm) según el modelo), 4 in (9 cm) la primera semana y 4 in (10 cm) la segunda. Apunta el 26 de noviembre: es el día más grande, con 3 in (7 cm), de 2 días con 5 cm o más.",
+      "En Mount Snow (Estados Unidos) las dos semanas suman unos 7 in (17 cm) (4 in (9 cm)–9 in (24 cm) según el modelo): 4 in (10 cm) al final de la primera semana, luego 2 in (6 cm) más. El día con más nieve es el 13 de noviembre con 4 in (9 cm); 2 días traen 5 cm o más.",
+      "En Ski Eldorado (Canadá) las dos semanas suman unos 7 in (17 cm) (2 in (6 cm)–11 in (27 cm) según el modelo): 2 in (5 cm) al final de la primera semana, luego 4 in (11 cm) más. Apunta el 26 de noviembre: es el día más grande, con 3 in (8 cm).",
+      "En Stratton (Estados Unidos) las dos semanas suman unos 7 in (17 cm) (4 in (9 cm)–10 in (25 cm) según el modelo): 4 in (10 cm) al final de la primera semana, luego 3 in (7 cm) más. Apunta el 13 de noviembre: es el día más grande, con 3 in (8 cm), de 2 días con 5 cm o más.",
+      "En Magic Mountain (Estados Unidos) las dos semanas suman unos 6 in (15 cm) (3 in (8 cm)–8 in (21 cm) según el modelo): 4 in (9 cm) al final de la primera semana, luego 2 in (5 cm) más. El día con más nieve es el 13 de noviembre con 3 in (8 cm); 2 días traen 5 cm o más."
+     ]
+    },
+    {
+     "h": "Nieve nueva por altura",
+     "p": [
+      "Sube y las cifras cambian. Sobre el relieve de la región, los totales a dos semanas por altura son: entre 3281 ft (1000 m) y 4921 ft (1500 m): típicamente 6 in (15 cm), el cuarto más nevado de esa franja 7 in (18 cm) o más."
+     ]
+    },
+    {
+     "h": "Los días a vigilar",
+     "p": [
+      "Los días para marcar, contados sobre las 104 estaciones que seguimos en el noreste de EE. UU.: viernes 13 de noviembre (18 de 104 estaciones con 5 cm o más, hasta 4 in (9 cm) en Mount Snow) y miércoles 25 de noviembre (12 de 104 estaciones con 5 cm o más, hasta 2 in (6 cm) en Mount Snow)."
+     ]
+    },
+    {
+     "h": "Primera semana frente a segunda",
+     "p": [
+      "Por semanas, la primera (del 13 de noviembre al 19 de noviembre) lleva el 53 % de la nieve de las dos semanas en la región; la segunda (del 20 de noviembre al 26 de noviembre) el resto.",
+      "Pronto en la quincena: Sugarbush Resort, Mount Snow, Stratton y Magic Mountain reciben la mayor parte de su nieve la primera semana.",
+      "Más tarde: en Cannon Mountain y Ski Eldorado la segunda semana trae más que la primera.",
+      "En el mapa, unos 397 sq mi (1027 km²) de terreno de montaña reciben 20 cm o más en las dos semanas."
+     ]
+    },
+    {
+     "h": "Cómo leer los mapas",
+     "p": [
+      "Lo que estás viendo: la nieve nueva esperada sobre el relieve real de la región, sumada en las dos semanas en el primer mapa y en cada semana en los otros dos. La escala de color va de una traza a totales muy grandes; cada pin es la parte alta de una estación.",
+      "Cuánto fiarse: mucho de los días cercanos, poco de los lejanos. La horquilla tras cada cifra es la distancia entre los dos modelos; una distancia pequeña es una previsión segura, una grande un interrogante. Vuelve mañana para la próxima serie de mapas."
+     ]
+    }
+   ],
+   "advice": [
+    "La nieve que cae sobre una base fina necesita unos días para esquiar bien: mira también los mapas de espesor antes de salir.",
+    "Una isoterma de 0 °C prevista puede fallar en varios cientos de metros; vuelve a mirar el mapa el día antes.",
+    "Antes de cualquier salida fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas en su web."
+   ],
+   "captions": {
+    "map": "Nieve nueva en el noreste de EE. UU. prevista para los 14 días del 13 de noviembre al 26 de noviembre (punto medio de los modelos ECMWF y GFS, llevado al relieve), con las estaciones de esta tendencia.",
+    "week1": "Solo la primera semana: nieve nueva del 13 de noviembre al 19 de noviembre.",
+    "week2": "Solo la segunda semana: nieve nueva del 20 de noviembre al 26 de noviembre, donde los dos modelos más discrepan."
+   }
+  },
+  "ar": {
+   "title": "فين غادي يطيح التلج فشمال شرق ميريكان ف 14 يوم الجايين: Sugarbush Resort فالمقدمة ب 9 إنش",
+   "description": "فين غادي يطيح التلج فشمال شرق ميريكان بين 13 نونبر و 26 نونبر، وشحال؟ سولنا جوج الموديلات العالمية اللي كيوصلو لجوج سيمانات، ECMWF و GFS، خلينا الوسط …",
+   "lede": "فين غادي يطيح التلج فشمال شرق ميريكان بين 13 نونبر و 26 نونبر، وشحال؟ سولنا جوج الموديلات العالمية اللي كيوصلو لجوج سيمانات، ECMWF و GFS، خلينا الوسط ديال الأجوبة ديالهم للخرائط، وكنكتبو شحال بعاد على بعضياتهم مع كل رقم لتحت. Sugarbush Resort خارجة فالمقدمة ب تقريبا 9 إنش (22 سم) ديال التلج الجديد فالعلو (4 إنش (9 سم) حتى ل 14 إنش (35 سم) بين جوج الموديلات)؛ Cannon Mountain من بعدها ب 7 إنش (19 سم). التلج فالجبال هو ما مخزون للربيع: اللي طاح دابا غادي يعمر الوديان والسدود من بعد.",
+   "sections": [
+    {
+     "h": "محطة بمحطة، 14 يوم الجايين",
+     "p": [
+      "ف Sugarbush Resort (ميريكان) جوج سيمانات كيجمعو تقريبا 9 إنش (22 سم) (4 إنش (9 سم) حتى ل 14 إنش (35 سم) حسب الموديل): 6 إنش (14 سم) حتى لآخر السيمانة اللولة، ومن بعد 3 إنش (8 سم) زيادة. علّم على 15 نونبر: هذاك هو أكبر نهار، ب 4 إنش (9 سم).",
+      "Cannon Mountain (ميريكان): تقريبا 7 إنش (19 سم) ف 14 يوم (2 إنش (5 سم) حتى ل 13 إنش (34 سم) بين الموديلات)، 4 إنش (9 سم) فالسيمانة اللولة و 4 إنش (10 سم) فالثانية. علّم على 26 نونبر: هذاك هو أكبر نهار، ب 3 إنش (7 سم)، من 2 أيام ب 5 سم ولا كثر.",
+      "ف Mount Snow (ميريكان) جوج سيمانات كيجمعو تقريبا 7 إنش (17 سم) (4 إنش (9 سم) حتى ل 9 إنش (24 سم) حسب الموديل): 4 إنش (10 سم) حتى لآخر السيمانة اللولة، ومن بعد 2 إنش (6 سم) زيادة. النهار اللي فيه التلج كثر هو 13 نونبر ب 4 إنش (9 سم)؛ 2 أيام كيجيبو 5 سم ولا كثر.",
+      "ف Ski Eldorado (كندا) جوج سيمانات كيجمعو تقريبا 7 إنش (17 سم) (2 إنش (6 سم) حتى ل 11 إنش (27 سم) حسب الموديل): 2 إنش (5 سم) حتى لآخر السيمانة اللولة، ومن بعد 4 إنش (11 سم) زيادة. علّم على 26 نونبر: هذاك هو أكبر نهار، ب 3 إنش (8 سم).",
+      "ف Stratton (ميريكان) جوج سيمانات كيجمعو تقريبا 7 إنش (17 سم) (4 إنش (9 سم) حتى ل 10 إنش (25 سم) حسب الموديل): 4 إنش (10 سم) حتى لآخر السيمانة اللولة، ومن بعد 3 إنش (7 سم) زيادة. علّم على 13 نونبر: هذاك هو أكبر نهار، ب 3 إنش (8 سم)، من 2 أيام ب 5 سم ولا كثر.",
+      "ف Magic Mountain (ميريكان) جوج سيمانات كيجمعو تقريبا 6 إنش (15 سم) (3 إنش (8 سم) حتى ل 8 إنش (21 سم) حسب الموديل): 4 إنش (9 سم) حتى لآخر السيمانة اللولة، ومن بعد 2 إنش (5 سم) زيادة. النهار اللي فيه التلج كثر هو 13 نونبر ب 3 إنش (8 سم)؛ 2 أيام كيجيبو 5 سم ولا كثر."
+     ]
+    },
+    {
+     "h": "التلج الجديد حسب العلو",
+     "p": [
+      "طلع للفوق والأرقام كتتبدل. على أرض المنطقة، مجاميع جوج سيمانات حسب العلو هي: بين 3281 قدم (1000 م) و 4921 قدم (1500 م): عادة 6 إنش (15 سم)، والربع اللي فيه التلج كثر فهاد الطبقة 7 إنش (18 سم) ولا كثر."
+     ]
+    },
+    {
+     "h": "الأيام اللي خاص تراقب",
+     "p": [
+      "الأيام اللي خاص تعلّم عليهم، محسوبين على 104 محطة اللي كنتبعو فشمال شرق ميريكان: الجمعة 13 نونبر (18 من 104 محطة ب 5 سم ولا كثر، حتى ل 4 إنش (9 سم) ف Mount Snow) و الأربعاء 25 نونبر (12 من 104 محطة ب 5 سم ولا كثر، حتى ل 2 إنش (6 سم) ف Mount Snow)."
+     ]
+    },
+    {
+     "h": "السيمانة اللولة مقابل الثانية",
+     "p": [
+      "بالسيمانة، اللولة (من 13 نونبر حتى ل 19 نونبر) فيها 53 % ديال التلج ديال جوج سيمانات فالمنطقة؛ والثانية (من 20 نونبر حتى ل 26 نونبر) فيها الباقي.",
+      "بكري: Sugarbush Resort، Mount Snow، Stratton و Magic Mountain غادي ياخدو أغلب التلج ديالهم فالسيمانة اللولة.",
+      "من بعد: ف Cannon Mountain و Ski Eldorado السيمانة الثانية كتجيب كثر من اللولة.",
+      "فالخريطة، تقريبا 397 ميل² (1027 كم²) ديال الجبال غادي ياخدو 20 سم ولا كثر فجوج سيمانات."
+     ]
+    },
+    {
+     "h": "كيفاش تقرا الخرائط",
+     "p": [
+      "شنو كتشوف: التلج الجديد المتوقع على الأرض الحقيقية ديال المنطقة، مجموع على جوج سيمانات فالخريطة اللولة وعلى كل سيمانة فجوج الأخرين. سلم الألوان من أثر صغير حتى لكميات كبيرة بزاف؛ كل علامة هي الجبل الفوقاني ديال محطة.",
+      "شحال تيق فيها: بزاف فالأيام القريبة، وشوية فالبعيدة. المجال من بعد كل رقم هو الفرق بين جوج الموديلات؛ فرق صغير يعني توقعات مضمونة، وفرق كبير يعني علامة استفهام. رجع غدا للمجموعة الجاية ديال الخرائط."
+     ]
+    }
+   ],
+   "advice": [
+    "التلج اللي كيطيح على قاعدة رقيقة خاصو شي أيام باش يتزلج مزيان: شوف حتى خرائط العلو قبل ما تسافر.",
+    "علو 0 °C المتوقع يقدر يغلط بشي مئات ديال الميترات؛ عاود شوف الخريطة نهار قبل.",
+    "قبل أي خرجة برا البيست ولا جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديالها."
+   ],
+   "captions": {
+    "map": "التلج الجديد فشمال شرق ميريكان المتوقع ل 14 يوم من 13 نونبر حتى ل 26 نونبر (الوسط ديال موديلات ECMWF و GFS، محطوط على الأرض)، مع المحطات ديال هاد التوقعات.",
+    "week1": "غير السيمانة اللولة: التلج الجديد من 13 نونبر حتى ل 19 نونبر.",
+    "week2": "غير السيمانة الثانية: التلج الجديد من 20 نونبر حتى ل 26 نونبر، فين جوج الموديلات كيختالفو كثر."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "de": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "it": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "es": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  }
+ },
+ "words_en": 753,
+ "indexable": true,
+ "main": {
+  "slug": "sugarbush_resort",
+  "name": "Sugarbush Resort",
+  "lat": 44.1482,
+  "lon": -72.9081
+ },
+ "places": [
+  {
+   "name": "Sugarbush Resort",
+   "lat": 44.1482,
+   "lon": -72.9081
+  },
+  {
+   "name": "Cannon Mountain",
+   "lat": 44.1728,
+   "lon": -71.7031
+  },
+  {
+   "name": "Mount Snow",
+   "lat": 42.9625,
+   "lon": -72.9102
+  },
+  {
+   "name": "Ski Eldorado",
+   "lat": 45.2957,
+   "lon": -71.1137
+  },
+  {
+   "name": "Stratton",
+   "lat": 43.1067,
+   "lon": -72.9091
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "sugarbush_resort",
+   "name": "Sugarbush Resort"
+  },
+  {
+   "slug": "cannon_mountain",
+   "name": "Cannon Mountain"
+  },
+  {
+   "slug": "mount_snow",
+   "name": "Mount Snow"
+  },
+  {
+   "slug": "ski_eldorado_secteur_st_paul",
+   "name": "Ski Eldorado"
+  },
+  {
+   "slug": "stratton_mountain_resort",
+   "name": "Stratton"
+  },
+  {
+   "slug": "magic_mountain_ski_area",
+   "name": "Magic Mountain"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "sugarbush_resort",
+    "name": "Sugarbush Resort",
+    "depth": 2,
+    "new72": 5,
+    "next": 10,
+    "top_m": 1238
+   },
+   {
+    "slug": "cannon_mountain",
+    "name": "Cannon Mountain",
+    "depth": 0,
+    "new72": 5,
+    "next": 9,
+    "top_m": 1231
+   },
+   {
+    "slug": "mount_snow",
+    "name": "Mount Snow",
+    "depth": 3,
+    "new72": 4,
+    "next": 11,
+    "top_m": 1093
+   },
+   {
+    "slug": "ski_eldorado_secteur_st_paul",
+    "name": "Ski Eldorado",
+    "depth": 0,
+    "new72": 3,
+    "next": 4,
+    "top_m": 889
+   },
+   {
+    "slug": "stratton_mountain_resort",
+    "name": "Stratton",
+    "depth": 7,
+    "new72": 8,
+    "next": 12,
+    "top_m": 1183
+   },
+   {
+    "slug": "magic_mountain_ski_area",
+    "name": "Magic Mountain",
+    "depth": 0,
+    "new72": 3,
+    "next": 10,
+    "top_m": 869
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Mount Washington Avalanche Center",
+   "url": "https://www.mountwashingtonavalanchecenter.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@44.148,-72.908,9.0",
+ "seconds": 0.0,
+ "facts_used": 25,
+ "voice": "hydro",
+ "media_ids": [
+  "map",
+  "week1",
+  "week2"
+ ],
+ "overlap": {
+  "before": 31.1,
+  "after": 28.0,
+  "with": "us-west-2-week-snow-forecast-maps-12-november-2026",
+  "tries": 1
+ },
+ "similarity": {
+  "max": 0.099,
+  "with": "us-west-2-week-snow-forecast-maps-12-november-2026"
+ },
+ "publish_utc": "2026-11-12T18:27:41Z"
+}
