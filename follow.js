@@ -25,35 +25,35 @@
       ok_push: "Done! Notifications are on for {p}.", ok_mail: "Almost done: check your inbox (it can take a few minutes) and tap the link to confirm.", ok_mail_active: "Done, your alerts are updated.",
       err: "Couldn't sign you up right now. Please try again later.", bad_email: "Please enter a valid e-mail address.", denied: "Notifications are blocked in this browser. Use e-mail instead.",
       later: "Too many tries. Please try again in an hour.", fav: "Favourite", faved: "Favourite", saved: "{p} is in your resorts. Get its snow every morning?",
-      your: "Your resorts", app_line: "Get this every morning in the free app", banner: "Get powder alerts for {p}: free app", banner0: "Get powder alerts: free app", install: "Get it", close: "Close",
+      your: "Your resorts", app_line: "Get this every morning in the free app", banner: "Get powder alerts for {p}: free app", banner0: "Get powder alerts: free app", install: "Get it", close: "Close", app_h: "Get the free app", app_push: "Get a push the night before a powder day", app_on: "GET IT ON", app_scan: "Scan with your phone",
       new: "new", nosnow: "No snow yet", alerts_on: "Alerts on", pick: "Choose a resort" },
     fr: { alert: "Alerte poudreuse", for: "Pour", region: "{r} : toute la région", when: "Prévenez-moi quand cette quantité de neige fraîche arrive", daily: "Chaque matin : la météo d'aujourd'hui et de demain (gratuit)",
       notify: "Activer les notifications", or_email: "ou par e-mail", send: "Recevoir les alertes", note: "Gratuit. Désinscription en un clic. Nous gardons seulement votre e-mail et ces choix.",
       ok_push: "C'est fait ! Notifications activées pour {p}.", ok_mail: "Presque fini : ouvrez votre boîte mail (cela peut prendre quelques minutes) et touchez le lien pour confirmer.", ok_mail_active: "C'est fait, vos alertes sont à jour.",
       err: "Inscription impossible pour le moment. Réessayez plus tard.", bad_email: "Entrez une adresse e-mail valide.", denied: "Les notifications sont bloquées dans ce navigateur. Utilisez l'e-mail.",
       later: "Trop d'essais. Réessayez dans une heure.", fav: "Favori", faved: "Favori", saved: "{p} est dans vos stations. Recevoir sa neige chaque matin ?",
-      your: "Vos stations", app_line: "Recevez-le chaque matin dans l'app gratuite", banner: "Alertes poudreuse pour {p} : app gratuite", banner0: "Alertes poudreuse : app gratuite", install: "Installer", close: "Fermer",
+      your: "Vos stations", app_line: "Recevez-le chaque matin dans l'app gratuite", banner: "Alertes poudreuse pour {p} : app gratuite", banner0: "Alertes poudreuse : app gratuite", install: "Installer", close: "Fermer", app_h: "L'app gratuite", app_push: "Une notification la veille d'un jour de poudreuse", app_on: "DISPONIBLE SUR", app_scan: "Scannez avec votre téléphone",
       new: "fraîche", nosnow: "Pas encore de neige", alerts_on: "Alertes actives", pick: "Choisir une station" },
     de: { alert: "Powder-Alarm", for: "Für", region: "{r}: die ganze Region", when: "Sag mir Bescheid, wenn so viel Neuschnee kommt", daily: "Jeden Morgen: das Wetter für heute und morgen (gratis)",
       notify: "Benachrichtigungen einschalten", or_email: "oder per E-Mail", send: "Alarme senden", note: "Gratis. Abmelden mit einem Klick. Wir speichern nur deine E-Mail-Adresse und diese Wahl.",
       ok_push: "Fertig! Benachrichtigungen für {p} sind an.", ok_mail: "Fast fertig: Schau in dein Postfach (kann ein paar Minuten dauern) und tippe auf den Link zum Bestätigen.", ok_mail_active: "Fertig, deine Alarme sind aktualisiert.",
       err: "Anmeldung gerade nicht möglich. Bitte später nochmal.", bad_email: "Bitte gib eine gültige E-Mail-Adresse ein.", denied: "Benachrichtigungen sind in diesem Browser blockiert. Nimm die E-Mail.",
       later: "Zu viele Versuche. Bitte in einer Stunde nochmal.", fav: "Favorit", faved: "Favorit", saved: "{p} ist in deinen Gebieten. Jeden Morgen den Schnee bekommen?",
-      your: "Deine Gebiete", app_line: "Jeden Morgen in der kostenlosen App", banner: "Powder-Alarme für {p}: gratis App", banner0: "Powder-Alarme: gratis App", install: "Holen", close: "Schließen",
+      your: "Deine Gebiete", app_line: "Jeden Morgen in der kostenlosen App", banner: "Powder-Alarme für {p}: gratis App", banner0: "Powder-Alarme: gratis App", install: "Holen", close: "Schließen", app_h: "Die kostenlose App", app_push: "Eine Nachricht am Abend vor dem Powder-Tag", app_on: "JETZT BEI", app_scan: "Mit dem Handy scannen",
       new: "neu", nosnow: "Noch kein Schnee", alerts_on: "Alarme an", pick: "Gebiet wählen" },
     it: { alert: "Avviso neve fresca", for: "Per", region: "{r}: tutta la regione", when: "Avvisami quando arriva questa neve fresca", daily: "Ogni mattina: il meteo di oggi e domani (gratis)",
       notify: "Attiva le notifiche", or_email: "o via e-mail", send: "Inviami gli avvisi", note: "Gratis. Disiscrizione con un clic. Conserviamo solo la tua e-mail e queste scelte.",
       ok_push: "Fatto! Notifiche attive per {p}.", ok_mail: "Quasi fatto: controlla la posta (può volerci qualche minuto) e tocca il link per confermare.", ok_mail_active: "Fatto, avvisi aggiornati.",
       err: "Iscrizione non possibile ora. Riprova più tardi.", bad_email: "Inserisci un indirizzo e-mail valido.", denied: "Le notifiche sono bloccate in questo browser. Usa l'e-mail.",
       later: "Troppi tentativi. Riprova tra un'ora.", fav: "Preferito", faved: "Preferito", saved: "{p} è nelle tue località. Ricevere la neve ogni mattina?",
-      your: "Le tue località", app_line: "Ricevilo ogni mattina nell'app gratuita", banner: "Avvisi neve per {p}: app gratuita", banner0: "Avvisi neve: app gratuita", install: "Scarica", close: "Chiudi",
+      your: "Le tue località", app_line: "Ricevilo ogni mattina nell'app gratuita", banner: "Avvisi neve per {p}: app gratuita", banner0: "Avvisi neve: app gratuita", install: "Scarica", close: "Chiudi", app_h: "L'app gratuita", app_push: "Un avviso la sera prima di un giorno di powder", app_on: "DISPONIBILE SU", app_scan: "Scansiona con il telefono",
       new: "fresca", nosnow: "Ancora niente neve", alerts_on: "Avvisi attivi", pick: "Scegli una località" },
     es: { alert: "Alerta de nieve polvo", for: "Para", region: "{r}: toda la región", when: "Avísame cuando llegue esta nieve nueva", daily: "Cada mañana: el tiempo de hoy y mañana (gratis)",
       notify: "Activar notificaciones", or_email: "o por correo", send: "Enviadme alertas", note: "Gratis. Baja con un clic. Solo guardamos tu correo y estas opciones.",
       ok_push: "¡Hecho! Notificaciones activas para {p}.", ok_mail: "Casi listo: revisa tu correo (puede tardar unos minutos) y toca el enlace para confirmar.", ok_mail_active: "Hecho, tus alertas están al día.",
       err: "No se pudo completar ahora. Inténtalo más tarde.", bad_email: "Escribe un correo válido.", denied: "Las notificaciones están bloqueadas en este navegador. Usa el correo.",
       later: "Demasiados intentos. Inténtalo en una hora.", fav: "Favorito", faved: "Favorito", saved: "{p} está en tus estaciones. ¿Recibir su nieve cada mañana?",
-      your: "Tus estaciones", app_line: "Recíbelo cada mañana en la app gratuita", banner: "Alertas de nieve para {p}: app gratuita", banner0: "Alertas de nieve: app gratuita", install: "Obtener", close: "Cerrar",
+      your: "Tus estaciones", app_line: "Recíbelo cada mañana en la app gratuita", banner: "Alertas de nieve para {p}: app gratuita", banner0: "Alertas de nieve: app gratuita", install: "Obtener", close: "Cerrar", app_h: "La app gratis", app_push: "Un aviso la noche antes de un día de nieve polvo", app_on: "DISPONIBLE EN", app_scan: "Escanea con tu móvil",
       new: "nueva", nosnow: "Aún sin nieve", alerts_on: "Alertas activas", pick: "Elige una estación" },
   };
   const lang = () => { const l = ((W.I18N && I18N.lang) || D.documentElement.lang || "en").slice(0, 2).toLowerCase(); return T[l] ? l : "en"; };
@@ -61,6 +61,7 @@
   const us = () => { try { return !!(W.SS && SS.U && SS.U.us && SS.U.us()); } catch { return false; } };
   const hit = (p) => { try { if (W.SS && SS.hit) SS.hit(p, "web"); } catch { /* ignore */ } };
   const ANDROID = /Android/i.test(navigator.userAgent || "");
+  const IOS = /iPhone|iPad|iPod/i.test(navigator.userAgent || "");
   const IAB = !!(W.SS && SS.IAB);
   const STANDALONE = (() => { try { return matchMedia("(display-mode: standalone)").matches || navigator.standalone === true; } catch { return false; } })();
   const PUSH_OK = (() => { try { return "serviceWorker" in navigator && "PushManager" in W && "Notification" in W && W.isSecureContext && !IAB; } catch { return false; } })();
@@ -138,6 +139,12 @@
 .fw-btn[disabled]{opacity:.6}.fw-or{text-align:center;margin:12px 0 0;font-size:13px;opacity:.75}.fw-row2{display:flex;gap:8px;margin-top:8px}.fw-row2 .fw-btn{margin:0;width:auto;padding:0 16px}
 .fw-msg{margin:12px 0 0;padding:10px 12px;border-radius:12px;font-weight:600}.fw-msg.ok{background:#e3f6e8;color:#0d5a26}.fw-msg.err{background:#fde8e8;color:#8a1111}
 .fw-note{margin:12px 0 0;font-size:12.5px;opacity:.75}.fw-app{display:flex;align-items:center;gap:10px;margin-top:12px;padding:12px;border-radius:14px;background:rgba(20,99,243,.08);color:inherit;text-decoration:none;font-weight:700}
+.fw-app{display:flex;align-items:center;gap:12px;margin:12px 0;padding:12px 14px;border-radius:16px;background:var(--surface,#fff);border:1px solid var(--outline,#D3DAE3);box-shadow:0 1px 2px rgba(11,18,32,.06);color:inherit;text-align:start}
+.fw-app-ic{width:56px;height:56px;border-radius:14px;flex:none}.fw-app-tx{min-width:0;flex:1}.fw-app-tx b{display:block;font-size:16px;font-weight:700;line-height:1.2}.fw-app-tx small{display:block;font-size:13px;opacity:.8;margin-top:2px;line-height:1.3}
+.fw-badge{display:inline-flex;align-items:center;gap:8px;margin-top:8px;padding:5px 12px 5px 9px;border-radius:8px;background:#000;color:#fff;text-decoration:none;line-height:1.05;border:1px solid #777}
+.fw-badge span{display:block;font-size:16px;font-weight:700;letter-spacing:-.01em}.fw-badge small{display:block;font-size:9px;font-weight:600;letter-spacing:.06em;opacity:.9}
+.fw-app-qr{display:none}
+@media(hover:hover) and (min-width:700px){.fw-app-qr{display:flex;flex-direction:column;align-items:center;gap:4px;flex:none;margin-inline-start:4px}.fw-app-qr img{width:92px;height:92px;border-radius:8px;background:#fff;padding:3px;box-sizing:border-box}.fw-app-qr small{font-size:11px;opacity:.75}}
 .fw-banner{position:fixed;left:8px;right:8px;top:calc(8px + env(safe-area-inset-top));z-index:2147482000;display:flex;align-items:center;gap:10px;padding:10px 10px 10px 12px;border-radius:16px;
   background:#0d1b2e;color:#fff;box-shadow:0 8px 24px rgba(0,0,0,.35);font:14px/1.3 Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
 .fw-banner img{width:36px;height:36px;border-radius:9px;flex:none}.fw-banner b{flex:1;font-weight:700}.fw-banner a{flex:none;background:#3B8BFF;color:#fff;text-decoration:none;font-weight:700;padding:9px 14px;border-radius:12px}
@@ -268,6 +275,33 @@
       (r.fresh ? "<em>+" + esc(r.fresh) + " " + esc(t("new")) + "</em>" : "<em style=\"color:inherit;opacity:.6;font-weight:500\">" + esc(r.depth ? "" : t("nosnow")) + "</em>") + "</a>").join("") + "</div>";
   }
 
+  // ---------------------------------------------------------------- "Get the app" card (owner 2026-11-12): first screen of the home
+  // panel, every resort page and every post. Play badge with the referrer (utm_campaign=web_card, utm_term=<slug>) and, on
+  // desktop, a QR (qr/<slug>.svg built by tools/build_web.py -> r/?s=<slug>&m=qr&c=web_card). Not on iPhone (no app there).
+  function appCard(o) {
+    o = o || {};
+    if (IOS) return "";
+    const a = (W.SS && SS.S && SS.S.cfg && SS.S.cfg.app) || {};
+    if (!(a.play_live && a.play_package)) return "";
+    const slug = o.slug || "", url = playUrl(slug, "web_card");
+    const qr = ROOT + "qr/" + (slug ? encodeURIComponent(slug) : "app") + ".svg";
+    return '<aside class="fw-app" data-fw-app' + (o.via ? ' data-fw-via="' + esc(o.via) + '"' : "") + '><img class="fw-app-ic" src="' + esc(ROOT + "icon-192.png") + '" alt="" width="56" height="56">' +
+      '<div class="fw-app-tx"><b>' + esc(t("app_h")) + "</b><small>" + esc(t("app_push")) + "</small>" +
+      '<a class="fw-badge" href="' + esc(url) + '" data-fw-play="web_card" rel="noopener"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="#00D7FE" d="M3.6 2.2 13 12l-9.4 9.8c-.4-.3-.6-.8-.6-1.4V3.6c0-.6.2-1.1.6-1.4z"/><path fill="#00F076" d="M16.4 8.7 13 12 3.6 2.2c.3-.2.9-.2 1.4.1z"/><path fill="#FF3A44" d="M16.4 15.3 5 21.7c-.5.3-1.1.3-1.4.1L13 12z"/><path fill="#FFD500" d="M20.7 10.6c.9.5.9 1.4 0 1.9l-4.3 2.8L13 12l3.4-3.3z"/></svg><span><small>' + esc(t("app_on")) + "</small>Google Play</span></a></div>" +
+      '<div class="fw-app-qr"><img src="' + esc(qr) + '" data-fb="' + esc(ROOT + "qr/app.svg") + '" alt="" width="92" height="92" loading="lazy" data-fw-qr><small>' + esc(t("app_scan")) + "</small></div></aside>";
+  }
+  function blogCard() {
+    if (D.body.classList.contains("app") || D.querySelector(".fw-app")) return;
+    const b = D.querySelector('.fw-big[data-fw-alert][data-fw-via="blog"]');
+    if (!b) return;
+    const h = appCard({ slug: b.dataset.fwSlug || "", name: b.dataset.fwName || "", via: "blog" });
+    if (h) { style(); b.insertAdjacentHTML("afterend", h); }
+  }
+  D.addEventListener("error", (e) => {              // a resort without its QR file: fall back to the generic one
+    const i = e.target;
+    if (i && i.matches && i.matches("img[data-fw-qr]") && i.dataset.fb && i.getAttribute("src") !== i.dataset.fb) i.src = i.dataset.fb;
+  }, true);
+
   // ---------------------------------------------------------------- phone install banner
   function banner() {
     if (!ANDROID || STANDALONE) return;
@@ -278,7 +312,7 @@
     const c = context(), btn = D.querySelector("[data-fw-alert][data-fw-slug]");
     const slug = c.slug || (btn && btn.dataset.fwSlug) || (favs()[0] || {}).s || "";
     const show = async () => {
-      if (D.querySelector(".fw-banner") || D.querySelector(".fw-scrim")) return;
+      if (D.querySelector(".fw-banner") || D.querySelector(".fw-scrim") || D.querySelector(".fw-app")) return;   // the card is already on the page
       let name = (btn && btn.dataset.fwSlug === slug && btn.dataset.fwName) || ((favs().find((f) => f.s === slug) || {}).n) || "";
       if (slug && !name && c.slug) { const r = await nameOf(slug); name = r ? r.n : ""; }
       style();
@@ -295,6 +329,8 @@
 
   // ---------------------------------------------------------------- clicks (delegated: buttons rendered later work too)
   D.addEventListener("click", (e) => {
+    const pl = e.target.closest && e.target.closest("[data-fw-play]");
+    if (pl) { hit("/r/play/" + source()); hit("/follow/play/" + (pl.dataset.fwPlay || "web_card")); return; }   // link follows
     const f = e.target.closest && e.target.closest("[data-fw-fav]");
     if (f) {
       e.preventDefault();
@@ -325,7 +361,7 @@
     const l = D.createElement("link"); l.rel = "manifest"; l.href = ROOT + "manifest.webmanifest"; D.head.appendChild(l);
   }
 
-  W.Follow = { open, favs, isFav, toggleFav, yourRow, playUrl, playClick, source, paintFavs, paintAlerts, style, t };
-  const boot = () => { style(); manifest(); paintFavs(); paintAlerts(); cfgReady().then(banner); W.addEventListener("load", sw); if (D.readyState === "complete") sw(); };
+  W.Follow = { open, favs, isFav, toggleFav, yourRow, playUrl, playClick, appCard, source, paintFavs, paintAlerts, style, t };
+  const boot = () => { style(); manifest(); paintFavs(); paintAlerts(); cfgReady().then(() => { blogCard(); banner(); }); W.addEventListener("load", sw); if (D.readyState === "complete") sw(); };
   if (D.readyState === "loading") D.addEventListener("DOMContentLoaded", boot); else boot();
 })();

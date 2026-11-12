@@ -1787,7 +1787,7 @@
     let h = favRow() + '<section class="rhero"><div class="hk"><span>' + esc(when) + " · " + esc(I18N.t(r.name)) + "</span>" + upd + '</div><div class="hn">' + big + '</div><div class="hw">' + esc(what) + (where ? ' <span class="hp">' + esc(where) + "</span>" : "") + "</div>" +
       '<div class="hs"><span><b>' + fmt(x.resorts_with_snow || 0) + "</b> " + esc(I18N.t("resorts with snow")) + "</span>" + (fresh && best ? "<span><b>" + U.depth(best.depth_cm) + "</b> " + esc(I18N.t("deepest")) + "</span>" : "") + "</div>" +
       '<div class="hc"><div class="hk2">' + esc(I18N.t("Fresh snow, last days and next days")) + "</div>" + bars + "</div></section>";
-    h += followHome(r);
+    h += followHome(r) + (window.Follow && Follow.appCard ? Follow.appCard({ via: "home" }) : "");   // "Get the app" card (owner 2026-11-12)
     if (x.top.length) {
       const dmax = Math.max(...x.top.map((t) => t.depth_cm || 0), 1);
       h += '<h2 class="h2">Deepest snow today</h2><ol class="rank">' + x.top.map((t, i) => '<li><a href="' + BASE + "resorts/" + encodeURIComponent(t.slug) + '.html" data-open="' + esc(t.slug) + '">' +
@@ -2978,7 +2978,7 @@
     if (hb) { hb.insertAdjacentHTML("afterend", '<div id="rFall"><div class="skel" style="height:132px;margin:0 0 8px"></div></div><div id="rElev"></div>'); snowfallRow(x); }
     const ra = box.querySelector(".acts3");
     // follow flow (owner 2026-11-09): big ★ Favourite + Powder alert right under the snow numbers
-    if (hb) hb.insertAdjacentHTML("afterend", followResort(x));
+    if (hb) hb.insertAdjacentHTML("afterend", followResort(x) + (window.Follow && Follow.appCard ? Follow.appCard({ slug: x.slug, name: x.short || x.name, via: "resort" }) : ""));   // + "Get the app" card (owner 2026-11-12)
     if (ra) ra.insertAdjacentHTML("afterend", '<div id="rLive"></div>');
     liveRows(x);
     const gs = box.querySelector("[data-gostays]");
