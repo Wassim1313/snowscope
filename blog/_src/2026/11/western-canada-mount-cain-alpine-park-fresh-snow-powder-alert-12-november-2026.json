@@ -1,0 +1,695 @@
+{
+ "id": "2026-11-12-ca_west-powder",
+ "slug": "western-canada-mount-cain-alpine-park-fresh-snow-powder-alert-12-november-2026",
+ "date": "2026-11-12",
+ "published_utc": "2026-11-12T15:46:55Z",
+ "updated_utc": "2026-11-12T15:46:55Z",
+ "region": "CA_WEST",
+ "angle": "powder",
+ "score": 76.5,
+ "signature": "tweedsmuir_ski_club:50|whistler:40|mount_cain_alpine_park:20",
+ "keyword": {
+  "family": "fresh-snow",
+  "entity": "mount_cain_alpine_park",
+  "region": "CA_WEST",
+  "date": "2026-11-12"
+ },
+ "tags": [
+  "powder",
+  "stations",
+  "where-to-ski",
+  "avalanche"
+ ],
+ "facts": {
+  "angle": "powder_alert",
+  "region": "Western Canada",
+  "date": "2026-11-12",
+  "weekday": "Thursday",
+  "model_run": "2026-11-12",
+  "forecast_days": [
+   "2026-11-13",
+   "2026-11-14",
+   "2026-11-15"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 255860,
+   "resorts_with_snow": 39,
+   "resorts_in_region": 57
+  },
+  "region_before": {
+   "date": "2026-11-10",
+   "snow_covered_area_km2": 281250,
+   "resorts_with_snow": 42
+  },
+  "region_forecast": {
+   "date": "2026-11-15",
+   "snow_covered_area_km2": 245900,
+   "resorts_with_snow": 37
+  },
+  "question": "Where did fresh snow fall in the last 72 hours, and is more coming?",
+  "resorts": [
+   {
+    "name": "Tweedsmuir Ski Club",
+    "country": "Canada",
+    "top_m": 1650,
+    "base_m": 1588,
+    "depth_cm_upper_slopes_today": 70,
+    "new_cm_last_24h": 8,
+    "new_cm_last_72h": 47,
+    "new_cm_forecast_next_days": 7,
+    "slug": "tweedsmuir_ski_club",
+    "new_cm_by_day": {
+     "2026-11-10": 4,
+     "2026-11-11": 35,
+     "2026-11-12": 8,
+     "2026-11-13": 3,
+     "2026-11-14": 0,
+     "2026-11-15": 4
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1588,
+      "depth_cm_model": 56,
+      "new_cm_next_7_days": 11
+     },
+     "mid": {
+      "elev_m": 1619,
+      "depth_cm_model": 58,
+      "new_cm_next_7_days": 11
+     },
+     "top": {
+      "elev_m": 1650,
+      "depth_cm_model": 60,
+      "new_cm_next_7_days": 11
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-12": {
+      "min": 1010,
+      "max": 1490
+     },
+     "2026-11-13": {
+      "min": 1050,
+      "max": 1610
+     },
+     "2026-11-14": {
+      "min": 910,
+      "max": 1470
+     }
+    },
+    "past_winters": {
+     "height_m": 1619,
+     "snow_cm_at_this_height_today_model": 63,
+     "deeper_than_n_of_past_winters": 30,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 54
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-10"
+    }
+   },
+   {
+    "name": "Whistler Blackcomb",
+    "country": "Canada",
+    "top_m": 2259,
+    "base_m": 653,
+    "depth_cm_upper_slopes_today": 116,
+    "new_cm_last_24h": 15,
+    "new_cm_last_72h": 40,
+    "new_cm_forecast_next_days": 83,
+    "slug": "whistler",
+    "new_cm_by_day": {
+     "2026-11-10": 15,
+     "2026-11-11": 10,
+     "2026-11-12": 15,
+     "2026-11-13": 1,
+     "2026-11-14": 23,
+     "2026-11-15": 59
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 653,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 4
+     },
+     "mid": {
+      "elev_m": 1456,
+      "depth_cm_model": 38,
+      "new_cm_next_7_days": 47
+     },
+     "top": {
+      "elev_m": 2259,
+      "depth_cm_model": 85,
+      "new_cm_next_7_days": 87
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-12": {
+      "min": 2240,
+      "max": 2670
+     },
+     "2026-11-13": {
+      "min": 1480,
+      "max": 2680
+     },
+     "2026-11-14": {
+      "min": 1460,
+      "max": 1670
+     }
+    },
+    "past_winters": {
+     "height_m": 1456,
+     "snow_cm_at_this_height_today_model": 30,
+     "deeper_than_n_of_past_winters": 3,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 80
+    }
+   },
+   {
+    "name": "Mount Cain Alpine Park",
+    "country": "Canada",
+    "top_m": 1616,
+    "base_m": 1190,
+    "depth_cm_upper_slopes_today": 88,
+    "new_cm_last_24h": 6,
+    "new_cm_last_72h": 15,
+    "new_cm_forecast_next_days": 37,
+    "slug": "mount_cain_alpine_park",
+    "new_cm_by_day": {
+     "2026-11-10": 9,
+     "2026-11-11": 0,
+     "2026-11-12": 6,
+     "2026-11-13": 1,
+     "2026-11-14": 7,
+     "2026-11-15": 29
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1190,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 12
+     },
+     "mid": {
+      "elev_m": 1403,
+      "depth_cm_model": 7,
+      "new_cm_next_7_days": 16
+     },
+     "top": {
+      "elev_m": 1616,
+      "depth_cm_model": 52,
+      "new_cm_next_7_days": 21
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-12": {
+      "min": 1210,
+      "max": 2150
+     },
+     "2026-11-13": {
+      "min": 1660,
+      "max": 2160
+     },
+     "2026-11-14": {
+      "min": 1400,
+      "max": 1700
+     }
+    },
+    "past_winters": {
+     "height_m": 1403,
+     "snow_cm_at_this_height_today_model": 28,
+     "deeper_than_n_of_past_winters": 26,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 12
+    }
+   }
+  ],
+  "focus_index": 2,
+  "title_focus_resort": "Mount Cain Alpine Park"
+ },
+ "media": [
+  {
+   "id": "map_new",
+   "kind": "new_map",
+   "file": "blog/media/2026/11/western-canada-mount-cain-alpine-park-fresh-snow-powder-alert-12-november-2026/map_new.webp",
+   "thumb": "blog/media/2026/11/western-canada-mount-cain-alpine-park-fresh-snow-powder-alert-12-november-2026/map_new_t.webp",
+   "bytes": 70808,
+   "snow_frac": 0.5712,
+   "weak": false
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Tweedsmuir Ski Club</text><rect x=\"155\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"49\" class=\"vl\">4</text><rect x=\"235\" y=\"36\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"49\" class=\"vl\">35</text><rect x=\"315\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"327\" y=\"49\" class=\"vl\">8</text><rect x=\"395\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"563\" y=\"49\" class=\"vl\">4</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"70\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"176\" y=\"83\" class=\"vl\">15</text><rect x=\"235\" y=\"70\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"250\" y=\"83\" class=\"vl\">10</text><rect x=\"315\" y=\"70\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"336\" y=\"83\" class=\"vl\">15</text><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"27\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"505\" y=\"83\" class=\"vl\">23</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">59</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"169\" y=\"117\" class=\"vl\">9</text><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"486\" y=\"117\" class=\"vl\">7</text><rect x=\"555\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"117\" class=\"vl\">29</text></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Tweedsmuir Ski Club</text><rect x=\"155\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"49\" class=\"vl\">4</text><rect x=\"235\" y=\"36\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"49\" class=\"vl\">35</text><rect x=\"315\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"327\" y=\"49\" class=\"vl\">8</text><rect x=\"395\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"563\" y=\"49\" class=\"vl\">4</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"70\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"176\" y=\"83\" class=\"vl\">15</text><rect x=\"235\" y=\"70\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"250\" y=\"83\" class=\"vl\">10</text><rect x=\"315\" y=\"70\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"336\" y=\"83\" class=\"vl\">15</text><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"27\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"505\" y=\"83\" class=\"vl\">23</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">59</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"169\" y=\"117\" class=\"vl\">9</text><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"486\" y=\"117\" class=\"vl\">7</text><rect x=\"555\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"117\" class=\"vl\">29</text></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Tweedsmuir Ski Club</text><rect x=\"155\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"49\" class=\"vl\">4</text><rect x=\"235\" y=\"36\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"49\" class=\"vl\">35</text><rect x=\"315\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"327\" y=\"49\" class=\"vl\">8</text><rect x=\"395\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"563\" y=\"49\" class=\"vl\">4</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"70\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"176\" y=\"83\" class=\"vl\">15</text><rect x=\"235\" y=\"70\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"250\" y=\"83\" class=\"vl\">10</text><rect x=\"315\" y=\"70\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"336\" y=\"83\" class=\"vl\">15</text><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"27\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"505\" y=\"83\" class=\"vl\">23</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">59</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"169\" y=\"117\" class=\"vl\">9</text><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"486\" y=\"117\" class=\"vl\">7</text><rect x=\"555\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"117\" class=\"vl\">29</text></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Tweedsmuir Ski Club</text><rect x=\"155\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"49\" class=\"vl\">4</text><rect x=\"235\" y=\"36\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"49\" class=\"vl\">35</text><rect x=\"315\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"327\" y=\"49\" class=\"vl\">8</text><rect x=\"395\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"563\" y=\"49\" class=\"vl\">4</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"70\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"176\" y=\"83\" class=\"vl\">15</text><rect x=\"235\" y=\"70\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"250\" y=\"83\" class=\"vl\">10</text><rect x=\"315\" y=\"70\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"336\" y=\"83\" class=\"vl\">15</text><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"27\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"505\" y=\"83\" class=\"vl\">23</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">59</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"169\" y=\"117\" class=\"vl\">9</text><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"486\" y=\"117\" class=\"vl\">7</text><rect x=\"555\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"117\" class=\"vl\">29</text></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Tweedsmuir Ski Club</text><rect x=\"155\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"49\" class=\"vl\">4</text><rect x=\"235\" y=\"36\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"49\" class=\"vl\">35</text><rect x=\"315\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"327\" y=\"49\" class=\"vl\">8</text><rect x=\"395\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"563\" y=\"49\" class=\"vl\">4</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"70\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"176\" y=\"83\" class=\"vl\">15</text><rect x=\"235\" y=\"70\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"250\" y=\"83\" class=\"vl\">10</text><rect x=\"315\" y=\"70\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"336\" y=\"83\" class=\"vl\">15</text><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"27\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"505\" y=\"83\" class=\"vl\">23</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">59</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"169\" y=\"117\" class=\"vl\">9</text><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"486\" y=\"117\" class=\"vl\">7</text><rect x=\"555\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"117\" class=\"vl\">29</text></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Tweedsmuir Ski Club</text><rect x=\"155\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"49\" class=\"vl\">4</text><rect x=\"235\" y=\"36\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"49\" class=\"vl\">35</text><rect x=\"315\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"327\" y=\"49\" class=\"vl\">8</text><rect x=\"395\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"563\" y=\"49\" class=\"vl\">4</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"70\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"176\" y=\"83\" class=\"vl\">15</text><rect x=\"235\" y=\"70\" width=\"12\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"250\" y=\"83\" class=\"vl\">10</text><rect x=\"315\" y=\"70\" width=\"18\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"336\" y=\"83\" class=\"vl\">15</text><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"27\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"505\" y=\"83\" class=\"vl\">23</text><rect x=\"555\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"83\" text-anchor=\"end\" class=\"vl in\">59</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"169\" y=\"117\" class=\"vl\">9</text><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"486\" y=\"117\" class=\"vl\">7</text><rect x=\"555\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"117\" class=\"vl\">29</text></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Mount Cain Alpine Park fresh snow compared with the region: 15 cm in 72 hours (12 November)",
+   "description": "Mount Cain Alpine Park fresh snow compared with the region: 15 cm in 72 hours (12 November). The snow cover shrank from 281,250 km² on 10 November to …",
+   "lede": "Less ground is white now: 281,250 km² on 10 November, only 255,860 km² today, and 245,900 km² expected on 15 November. Tweedsmuir Ski Club picked up 47 cm of fresh snow over the last 72 hours, 8 cm of it in the last 24. That leaves about 70 cm on its upper slopes, by our snow model. In the field we always carry a probe; numbers like these tell you where to go, the probe tells you what is under your skis.",
+   "sections": [
+    {
+     "h": "Fresh snow, place by place",
+     "p": [
+      "Other resorts did well too: Whistler Blackcomb and Mount Cain Alpine Park got 40 cm and 15 cm over the last 72 hours.",
+      "Across the region, 39 of 57 resorts in Western Canada have snow up high today, and our model finds 255,860 km² of white ground."
+     ]
+    },
+    {
+     "h": "Top, middle, bottom",
+     "p": [
+      "At Tweedsmuir Ski Club, the difference between top and bottom is clear: 60 cm at the top (1,650 m), 58 cm at mid-mountain (1,619 m) and 56 cm at the base (1,588 m).",
+      "On 13 November the freezing level at Tweedsmuir Ski Club sits at 1,050 m to 1,610 m: wet snow is likely low down, while the top keeps winter snow."
+     ]
+    },
+    {
+     "h": "What to expect next",
+     "p": [
+      "The snow is not done yet: we expect 83 cm at Whistler Blackcomb, 37 cm at Mount Cain Alpine Park and 7 cm at Tweedsmuir Ski Club by 15 November.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    },
+    {
+     "h": "From the ground stations",
+     "p": [
+      "A word on the numbers: resort values are our model's estimate for the upper slopes, while each station measures a single spot on the date given."
+     ]
+    },
+    {
+     "h": "Safety and avalanche level",
+     "p": [
+      "After fresh snow, wind builds drifts on sheltered slopes. Off-piste, the first days after a snowfall need the most care."
+     ]
+    }
+   ],
+   "advice": [
+    "Fresh snow has a short best-before time: the first hours. Early starts win.",
+    "South-facing slopes take the most sun and melt first; high, north-facing slopes keep their snow the longest.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Get a powder alert in the SnowScope app to know when Tweedsmuir Ski Club gets fresh snow."
+   ],
+   "captions": {
+    "map_new": "New snow in the last 72 hours in Western Canada, up to 12 November 2026 (SnowScope snow model).",
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast)."
+   }
+  },
+  "fr": {
+   "title": "Mount Cain Alpine Park, neige fraîche comparée à la région : 15 cm en 72 heures (12 novembre)",
+   "description": "Mount Cain Alpine Park, neige fraîche comparée à la région : 15 cm en 72 heures (12 novembre). La surface enneigée est passée de 281 250 km² le 10 …",
+   "lede": "Depuis le 10 novembre, la neige est passée de 281 250 km² à 255 860 km² aujourd'hui ; pour le 15 novembre, notre prévision donne 245 900 km². Tweedsmuir Ski Club a pris 47 cm de neige fraîche ces 72 dernières heures, dont 8 cm sur les dernières 24. Il reste maintenant environ 70 cm sur le haut du domaine, selon notre modèle de neige. Sur le terrain, nous avons toujours une sonde ; ces chiffres disent où aller, la sonde dit ce qu'il y a sous les skis.",
+   "sections": [
+    {
+     "h": "Neige fraîche, lieu par lieu",
+     "p": [
+      "D'autres stations s'en sortent bien : Whistler Blackcomb et Mount Cain Alpine Park ont pris 40 cm et 15 cm en 72 heures.",
+      "Dans la région, 39 stations sur 57 dans l'Ouest canadien ont de la neige en altitude aujourd'hui, et notre modèle trouve 255 860 km² de sol blanc."
+     ]
+    },
+    {
+     "h": "En haut, au milieu, en bas",
+     "p": [
+      "À Tweedsmuir Ski Club, l'écart entre le haut et le bas est net : 60 cm au sommet (1 650 m), 58 cm à mi-pente (1 619 m) et 56 cm en bas (1 588 m).",
+      "Le 13 novembre, l'isotherme 0 °C à Tweedsmuir Ski Club se situe entre 1 050 m et 1 610 m : neige mouillée probable en bas, neige d'hiver en haut."
+     ]
+    },
+    {
+     "h": "À quoi s'attendre ensuite",
+     "p": [
+      "D'ici le 15 novembre, la prévision apporte 83 cm à Whistler Blackcomb, 37 cm à Mount Cain Alpine Park et 7 cm à Tweedsmuir Ski Club.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    },
+    {
+     "h": "Depuis les stations au sol",
+     "p": [
+      "Un mot sur les chiffres : les valeurs des stations de ski sont une estimation de notre modèle pour le haut du domaine, alors que chaque station de mesure mesure un seul point à la date indiquée."
+     ]
+    },
+    {
+     "h": "Sécurité et risque d'avalanche",
+     "p": [
+      "Après une chute de neige, le vent forme des plaques sur les pentes abritées. En hors-piste, les premiers jours demandent le plus de prudence."
+     ]
+    }
+   ],
+   "advice": [
+    "La neige fraîche a une date limite courte : les premières heures. Ceux qui partent tôt gagnent.",
+    "Les pentes sud prennent le plus de soleil et fondent d'abord ; les pentes nord en altitude gardent leur neige le plus longtemps.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Tweedsmuir Ski Club reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map_new": "Neige fraîche des 72 dernières heures dans l'Ouest canadien, jusqu'au 12 novembre 2026 (modèle SnowScope).",
+    "bars": "Neige fraîche par jour dans les stations en tête (jours passés : modèle ; barres claires : prévision)."
+   }
+  },
+  "de": {
+   "title": "Mount Cain Alpine Park, Neuschnee im regionalen Vergleich: 15 cm in 72 Stunden (12. November)",
+   "description": "Mount Cain Alpine Park, Neuschnee im regionalen Vergleich: 15 cm in 72 Stunden (12. November). Die Schneefläche schrumpfte von 281.250 km² am 10. …",
+   "lede": "Jetzt ist weniger Boden weiß: 281.250 km² am 10. November, heute nur 255.860 km² und 245.900 km² erwartet am 15. November. Tweedsmuir Ski Club hat in den letzten 72 Stunden 47 cm frischen Schnee abbekommen, 8 cm davon in den letzten 24. Damit liegen laut unserem Schneemodell etwa 70 cm in den oberen Hängen. Im Gelände haben wir immer eine Sonde dabei; Zahlen wie diese sagen dir, wohin du gehst, die Sonde sagt dir, was unter deinen Ski liegt.",
+   "sections": [
+    {
+     "h": "Neuschnee, Ort für Ort",
+     "p": [
+      "Auch andere Skigebiete haben gut abgeschnitten: Whistler Blackcomb und Mount Cain Alpine Park bekamen in den letzten 72 Stunden 40 cm und 15 cm.",
+      "In der ganzen Region haben heute 39 von 57 Skigebieten in Westkanada oben Schnee, und unser Modell findet 255.860 km² weißen Boden."
+     ]
+    },
+    {
+     "h": "Oben, Mitte, unten",
+     "p": [
+      "In Tweedsmuir Ski Club ist der Unterschied zwischen oben und unten deutlich: 60 cm am Gipfel (1.650 m), 58 cm an der Mittelstation (1.619 m) und 56 cm im Tal (1.588 m).",
+      "Am 13. November liegt die Nullgradgrenze in Tweedsmuir Ski Club bei 1.050 m bis 1.610 m: Unten wird der Schnee wahrscheinlich nass, oben bleibt er winterlich."
+     ]
+    },
+    {
+     "h": "Was als Nächstes zu erwarten ist",
+     "p": [
+      "Mit Blick auf den 15. November bringt die Prognose 83 cm in Whistler Blackcomb, 37 cm in Mount Cain Alpine Park und 7 cm in Tweedsmuir Ski Club.",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    },
+    {
+     "h": "Von den Bodenstationen",
+     "p": [
+      "Ein Wort zu den Zahlen: Die Werte der Skigebiete schätzt unser Modell für die oberen Hänge, jede Messstation misst eine einzige Stelle am angegebenen Tag."
+     ]
+    },
+    {
+     "h": "Sicherheit und Lawinengefahr",
+     "p": [
+      "Nach Neuschnee bildet der Wind Triebschnee in windabgewandten Hängen. Abseits der Piste sind die ersten Tage am heikelsten."
+     ]
+    }
+   ],
+   "advice": [
+    "Neuschnee hat ein kurzes Haltbarkeitsdatum: die ersten Stunden. Frühaufsteher gewinnen.",
+    "Südhänge bekommen die meiste Sonne und schmelzen zuerst; hohe Nordhänge halten ihren Schnee am längsten.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Tweedsmuir Ski Club Neuschnee bekommt."
+   ],
+   "captions": {
+    "map_new": "Neuschnee der letzten 72 Stunden in Westkanada, bis 12. November 2026 (SnowScope-Modell).",
+    "bars": "Neuschnee pro Tag in den führenden Skigebieten (vergangene Tage: Modell; helle Balken: Prognose)."
+   }
+  },
+  "it": {
+   "title": "Mount Cain Alpine Park, neve fresca rispetto alla regione: 15 cm in 72 ore (12 novembre)",
+   "description": "Mount Cain Alpine Park, neve fresca rispetto alla regione: 15 cm in 72 ore (12 novembre). La superficie innevata è passata da 281.250 km² il 10 …",
+   "lede": "Dal 10 novembre la neve è passata da 281.250 km² a 255.860 km² oggi; per il 15 novembre la nostra previsione indica 245.900 km². Tweedsmuir Ski Club ha raccolto 47 cm di neve fresca nelle ultime 72 ore, 8 cm dei quali nelle ultime 24. Così restano circa 70 cm sui pendii superiori, secondo il nostro modello neve. Sul campo portiamo sempre una sonda; numeri come questi ti dicono dove andare, la sonda ti dice cosa c'è sotto gli sci.",
+   "sections": [
+    {
+     "h": "Neve fresca, posto per posto",
+     "p": [
+      "Anche altre località sono andate bene: Whistler Blackcomb e Mount Cain Alpine Park hanno avuto 40 cm e 15 cm nelle ultime 72 ore.",
+      "In tutta la regione oggi 39 località su 57 nel Canada occidentale hanno neve in alto, e il nostro modello trova 255.860 km² di terreno bianco."
+     ]
+    },
+    {
+     "h": "Alto, medio, basso",
+     "p": [
+      "A Tweedsmuir Ski Club la differenza tra alto e basso è chiara: 60 cm in vetta (1.650 m), 58 cm a metà montagna (1.619 m) e 56 cm alla base (1.588 m).",
+      "Il 13 novembre lo zero termico a Tweedsmuir Ski Club sta tra 1.050 m e 1.610 m: in basso la neve sarà probabilmente bagnata, mentre in alto resta invernale."
+     ]
+    },
+    {
+     "h": "Cosa aspettarsi",
+     "p": [
+      "Guardando al 15 novembre, la previsione porta 83 cm a Whistler Blackcomb, 37 cm a Mount Cain Alpine Park e 7 cm a Tweedsmuir Ski Club.",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    },
+    {
+     "h": "Dalle stazioni a terra",
+     "p": [
+      "Una parola sui numeri: i valori delle località sono la stima del nostro modello per i pendii superiori, mentre ogni stazione misura un solo punto alla data indicata."
+     ]
+    },
+    {
+     "h": "Sicurezza e pericolo valanghe",
+     "p": [
+      "Dopo una nevicata il vento forma accumuli sui pendii sottovento. In fuoripista i primi giorni richiedono più prudenza."
+     ]
+    }
+   ],
+   "advice": [
+    "La neve fresca ha una scadenza breve: le prime ore. Chi parte presto vince.",
+    "I versanti sud prendono più sole e fondono per primi; i versanti nord in quota tengono la neve più a lungo.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Tweedsmuir Ski Club riceve neve fresca."
+   ],
+   "captions": {
+    "map_new": "Neve fresca delle ultime 72 ore nel Canada occidentale, fino al 12 novembre 2026 (modello SnowScope).",
+    "bars": "Neve fresca al giorno nelle località in testa (giorni passati: modello; barre chiare: previsione)."
+   }
+  },
+  "es": {
+   "title": "Mount Cain Alpine Park, nieve nueva frente a la región: 15 cm en 72 horas (12 de noviembre)",
+   "description": "Mount Cain Alpine Park, nieve nueva frente a la región: 15 cm en 72 horas (12 de noviembre). La superficie nevada pasó de 281.250 km² el 10 de …",
+   "lede": "Desde el 10 de noviembre, la nieve pasó de 281.250 km² a 255.860 km² hoy; para el 15 de noviembre, nuestra previsión da 245.900 km². Tweedsmuir Ski Club sumó 47 cm de nieve nueva en las últimas 72 horas, 8 cm de ellos en las últimas 24. Eso deja unos 70 cm en las pistas altas, según nuestro modelo de nieve. En el campo siempre llevamos una sonda; estas cifras dicen adónde ir, la sonda dice qué hay bajo los esquís.",
+   "sections": [
+    {
+     "h": "Nieve nueva, lugar por lugar",
+     "p": [
+      "A otras estaciones también les fue bien: Whistler Blackcomb y Mount Cain Alpine Park sumaron 40 cm y 15 cm en las últimas 72 horas.",
+      "En la región, 39 de 57 estaciones en el oeste de Canadá tienen nieve arriba hoy, y nuestro modelo encuentra 255.860 km² de suelo blanco."
+     ]
+    },
+    {
+     "h": "Arriba, en medio, abajo",
+     "p": [
+      "En Tweedsmuir Ski Club, la diferencia entre arriba y abajo es clara: 60 cm en la cota alta (1650 m), 58 cm a media montaña (1619 m) y 56 cm en la base (1588 m).",
+      "El 13 de noviembre la cota de congelación en Tweedsmuir Ski Club queda en 1050 m-1610 m: nieve húmeda probable abajo, mientras arriba se mantiene la nieve de invierno."
+     ]
+    },
+    {
+     "h": "Qué esperar después",
+     "p": [
+      "De aquí al 15 de noviembre, la previsión trae 83 cm en Whistler Blackcomb, 37 cm en Mount Cain Alpine Park y 7 cm en Tweedsmuir Ski Club.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    },
+    {
+     "h": "Desde las estaciones de suelo",
+     "p": [
+      "Una palabra sobre las cifras: los valores de las estaciones de esquí son una estimación de nuestro modelo para las pistas altas, mientras que cada estación de medida mide un solo punto en la fecha indicada."
+     ]
+    },
+    {
+     "h": "Seguridad y peligro de aludes",
+     "p": [
+      "Tras una nevada, el viento forma placas en las laderas resguardadas. Fuera de pista, los primeros días piden más prudencia."
+     ]
+    }
+   ],
+   "advice": [
+    "La nieve nueva tiene una fecha de caducidad corta: las primeras horas. Madrugar gana.",
+    "Las laderas sur reciben más sol y se funden antes; las laderas norte en altura guardan su nieve más tiempo.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Tweedsmuir Ski Club recibe nieve nueva."
+   ],
+   "captions": {
+    "map_new": "Nieve nueva de las últimas 72 horas en el oeste de Canadá, hasta el 12 de noviembre 2026 (modelo SnowScope).",
+    "bars": "Nieve nueva por día en las estaciones líderes (días pasados: modelo; barras claras: previsión)."
+   }
+  },
+  "ar": {
+   "title": "Mount Cain Alpine Park، التلج الجديد مقارنة مع المنطقة: 15 سم ف 72 ساعة (12 نونبر)",
+   "description": "Mount Cain Alpine Park، التلج الجديد مقارنة مع المنطقة: 15 سم ف 72 ساعة (12 نونبر). المساحة اللي فيها التلج دازت من 281250 كم² نهار 10 نونبر ل 255860 …",
+   "lede": "التلج تبدل من نهار 10 نونبر، من 281250 كم² ل 255860 كم² اليوم؛ ونهار 15 نونبر التوقعات ديالنا كتعطي 245900 كم². Tweedsmuir Ski Club جمعات 47 سم ديال التلج الجديد ف 72 ساعة اللي فاتو، منهم 8 سم ف 24 اللخرة. هادشي كيخلي تقريبا 70 سم فالجهة الفوقانية، حسب الموديل ديالنا. فالميدان ديما كنديو معانا السوند؛ بحال هاد الأرقام كيقولو ليك فين تمشي، والسوند كيقول ليك شنو تحت السكيات ديالك.",
+   "sections": [
+    {
+     "h": "التلج الجديد، بلاصة ببلاصة",
+     "p": [
+      "محطات أخرى حتى هي كانت مزيانة: Whistler Blackcomb و Mount Cain Alpine Park جاهم 40 سم و 15 سم ف 72 ساعة اللي فاتو.",
+      "فالمنطقة كاملة، 39 محطة من 57 فغرب كندا فيهم التلج فالعلو اليوم، والموديل ديالنا كيلقى 255860 كم² ديال الأرض البيضا."
+     ]
+    },
+    {
+     "h": "الفوق، الوسط، التحت",
+     "p": [
+      "ف Tweedsmuir Ski Club، الفرق بين الفوق والتحت باين: 60 سم فالفوق (1650 م)، 58 سم فالوسط (1619 م) و 56 سم فالتحت (1588 م).",
+      "نهار 13 نونبر علو الجليد ف Tweedsmuir Ski Club كيكون بين 1050 م و 1610 م: التلج المبلول غالبا لتحت، والفوق كيحافظ على تلج الشتا."
+     ]
+    },
+    {
+     "h": "شنو تتسنى من بعد",
+     "p": [
+      "إلا شفنا حتى ل 15 نونبر، التوقعات كتجيب 83 سم ف Whistler Blackcomb، 37 سم ف Mount Cain Alpine Park و 7 سم ف Tweedsmuir Ski Club.",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    },
+    {
+     "h": "من محطات القياس",
+     "p": [
+      "كلمة على الأرقام: القيم ديال المحطات هي تقدير ديال الموديل ديالنا للجهة الفوقانية، وكل محطة ديال القياس كتقيس بلاصة وحدة فالتاريخ المكتوب."
+     ]
+    },
+    {
+     "h": "السلامة وخطر الانهيارات",
+     "p": [
+      "من بعد التلج الجديد، الريح كتجمعو فالجهات المحمية. برا البيست، الأيام الأولى هي اللي خاصها حذر كثر."
+     ]
+    }
+   ],
+   "advice": [
+    "التلج الجديد عندو تاريخ صلاحية قصير: الساعات الأولى. اللي ناض بكري ربح.",
+    "الجهات اللي كتشوف للجنوب كتاخد أكثر شمس وكيدوب فيها التلج اللول؛ الجهات العاليين اللي كتشوف للشمال كيحافظو عليه أطول وقت.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Tweedsmuir Ski Club يجيها تلج جديد."
+   ],
+   "captions": {
+    "map_new": "التلج الجديد ديال 72 ساعة اللي فاتو فغرب كندا، حتى ل 12 نونبر 2026 (الموديل ديال SnowScope).",
+    "bars": "التلج الجديد فكل نهار فالمحطات اللولين (الأيام اللي فاتو من الموديل، والخطوط الفاتحة = التوقعات)."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template (a translation was rejected)",
+   "usd": 0.003618,
+   "voice": "field"
+  },
+  "fr": {
+   "error": "gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.g",
+   "writer": "template (a translation was rejected)",
+   "voice": "field"
+  },
+  "de": {
+   "error": "gemini 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.g",
+   "writer": "template (a translation was rejected)",
+   "voice": "field"
+  },
+  "it": {
+   "writer": "template (a translation was rejected)",
+   "usd": 0.003206,
+   "voice": "field"
+  },
+  "es": {
+   "writer": "template (a translation was rejected)",
+   "usd": 0.003223,
+   "voice": "field"
+  },
+  "ar": {
+   "writer": "template (a translation was rejected)",
+   "usd": 0.003927,
+   "voice": "field"
+  }
+ },
+ "words_en": 284,
+ "indexable": true,
+ "main": {
+  "slug": "mount_cain_alpine_park",
+  "name": "Mount Cain Alpine Park",
+  "lat": 50.2232,
+  "lon": -126.3468
+ },
+ "places": [
+  {
+   "name": "Tweedsmuir Ski Club",
+   "lat": 52.5367,
+   "lon": -125.8476
+  },
+  {
+   "name": "Whistler Blackcomb",
+   "lat": 50.0888,
+   "lon": -122.9419
+  },
+  {
+   "name": "Mount Cain Alpine Park",
+   "lat": 50.2232,
+   "lon": -126.3468
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "tweedsmuir_ski_club",
+   "name": "Tweedsmuir Ski Club"
+  },
+  {
+   "slug": "whistler",
+   "name": "Whistler Blackcomb"
+  },
+  {
+   "slug": "mount_cain_alpine_park",
+   "name": "Mount Cain Alpine Park"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "tweedsmuir_ski_club",
+    "name": "Tweedsmuir Ski Club",
+    "depth": 70,
+    "new72": 47,
+    "next": 7,
+    "top_m": 1650
+   },
+   {
+    "slug": "whistler",
+    "name": "Whistler Blackcomb",
+    "depth": 116,
+    "new72": 40,
+    "next": 83,
+    "top_m": 2259
+   },
+   {
+    "slug": "mount_cain_alpine_park",
+    "name": "Mount Cain Alpine Park",
+    "depth": 88,
+    "new72": 15,
+    "next": 37,
+    "top_m": 1616
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Avalanche Canada",
+   "url": "https://avalanche.ca/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@50.223,-126.347,9.0",
+ "seconds": 39.7,
+ "facts_used": 23,
+ "voice": "field",
+ "media_ids": [
+  "map_new",
+  "bars"
+ ],
+ "overlap": {
+  "before": 18.8,
+  "after": 18.8,
+  "with": "us-northeast-ski-eldorado-fresh-snow-powder-alert-8-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.194,
+  "with": "us-northeast-ski-eldorado-fresh-snow-powder-alert-8-november-2026"
+ },
+ "publish_utc": "2026-11-12T15:46:55Z"
+}

@@ -1,0 +1,746 @@
+{
+ "id": "2026-11-12-us_west-deepest",
+ "slug": "us-west-cimarron-mountain-club-snow-depth-today-12-november-2026",
+ "date": "2026-11-12",
+ "published_utc": "2026-11-12T15:13:45Z",
+ "updated_utc": "2026-11-12T15:13:45Z",
+ "region": "US_WEST",
+ "angle": "deepest",
+ "score": 66.5,
+ "signature": "telluride_ski_area:110|cimarron_mountain_club:100|wolf_creek_ski_area:90",
+ "keyword": {
+  "family": "snow-depth",
+  "entity": "cimarron_mountain_club",
+  "region": "US_WEST",
+  "date": "2026-11-12"
+ },
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "US West",
+  "date": "2026-11-12",
+  "weekday": "Thursday",
+  "model_run": "2026-11-12",
+  "forecast_days": [
+   "2026-11-13",
+   "2026-11-14",
+   "2026-11-15"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 149590,
+   "resorts_with_snow": 132,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-10",
+   "snow_covered_area_km2": 167960,
+   "resorts_with_snow": 137
+  },
+  "region_forecast": {
+   "date": "2026-11-15",
+   "snow_covered_area_km2": 179230,
+   "resorts_with_snow": 134
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Telluride",
+    "country": "United States",
+    "top_m": 3812,
+    "base_m": 2662,
+    "depth_cm_upper_slopes_today": 106,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 13,
+    "slug": "telluride_ski_area",
+    "new_cm_by_day": {
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 12,
+     "2026-11-15": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2662,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 10
+     },
+     "mid": {
+      "elev_m": 3237,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 20
+     },
+     "top": {
+      "elev_m": 3812,
+      "depth_cm_model": 96,
+      "new_cm_next_7_days": 23
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-12": {
+      "min": 3060,
+      "max": 4000
+     },
+     "2026-11-13": {
+      "min": 2960,
+      "max": 3650
+     },
+     "2026-11-14": {
+      "min": 1790,
+      "max": 3190
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-09"
+    },
+    "nearest_station": {
+     "station": "Alta Lakes",
+     "elev_m": 3441,
+     "depth_cm_measured": 48,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-10",
+     "km_away": 3.5
+    }
+   },
+   {
+    "name": "Cimarron Mountain Club",
+    "country": "United States",
+    "top_m": 3461,
+    "base_m": 2991,
+    "depth_cm_upper_slopes_today": 98,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 7,
+    "slug": "cimarron_mountain_club",
+    "new_cm_by_day": {
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 6,
+     "2026-11-15": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2991,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 12
+     },
+     "mid": {
+      "elev_m": 3226,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 13
+     },
+     "top": {
+      "elev_m": 3461,
+      "depth_cm_model": 24,
+      "new_cm_next_7_days": 14
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-12": {
+      "min": 3240,
+      "max": 4060
+     },
+     "2026-11-13": {
+      "min": 2960,
+      "max": 3920
+     },
+     "2026-11-14": {
+      "min": 1940,
+      "max": 3210
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-09"
+    }
+   },
+   {
+    "name": "Wolf Creek",
+    "country": "United States",
+    "top_m": 3585,
+    "base_m": 3128,
+    "depth_cm_upper_slopes_today": 88,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 11,
+    "slug": "wolf_creek_ski_area",
+    "new_cm_by_day": {
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 10,
+     "2026-11-15": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3128,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 27
+     },
+     "mid": {
+      "elev_m": 3356,
+      "depth_cm_model": 36,
+      "new_cm_next_7_days": 28
+     },
+     "top": {
+      "elev_m": 3585,
+      "depth_cm_model": 46,
+      "new_cm_next_7_days": 30
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-12": {
+      "min": 2980,
+      "max": 3970
+     },
+     "2026-11-13": {
+      "min": 2770,
+      "max": 3500
+     },
+     "2026-11-14": {
+      "min": 2250,
+      "max": 3190
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 3356,
+     "snow_cm_at_this_height_today_model": 65,
+     "deeper_than_n_of_past_winters": 31,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 23
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-03"
+    },
+    "nearest_station": {
+     "station": "Wolf Creek Summit",
+     "elev_m": 3331,
+     "depth_cm_measured": 51,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-10",
+     "km_away": 2.0
+    }
+   },
+   {
+    "name": "Sunlight",
+    "country": "United States",
+    "top_m": 3002,
+    "base_m": 2480,
+    "depth_cm_upper_slopes_today": 84,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 3,
+    "slug": "sunlight_mountain_resort",
+    "new_cm_by_day": {
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 2,
+     "2026-11-15": 1
+    }
+   },
+   {
+    "name": "Brian Head Resort",
+    "country": "United States",
+    "top_m": 3325,
+    "base_m": 2929,
+    "depth_cm_upper_slopes_today": 68,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 16,
+    "slug": "brian_head_resort",
+    "new_cm_by_day": {
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 1,
+     "2026-11-14": 15,
+     "2026-11-15": 0
+    }
+   }
+  ],
+  "measured_at_stations": [
+   {
+    "station": "Beartown",
+    "elev_m": 3530,
+    "depth_cm_measured": 76,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-10",
+    "network": "snotel"
+   },
+   {
+    "station": "Rat Creek",
+    "elev_m": 3560,
+    "depth_cm_measured": 58,
+    "new_cm_measured_24h": 3,
+    "measured_on": "2026-11-10",
+    "network": "snotel"
+   },
+   {
+    "station": "Red Mountain Pass",
+    "elev_m": 3371,
+    "depth_cm_measured": 58,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-10",
+    "network": "snotel"
+   }
+  ],
+  "focus_index": 1,
+  "title_focus_resort": "Cimarron Mountain Club"
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-cimarron-mountain-club-snow-depth-today-12-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-cimarron-mountain-club-snow-depth-today-12-november-2026/map_t.webp",
+   "bytes": 41356,
+   "snow_frac": 0.0825,
+   "weak": true
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Cimarron Mountain Club, 39 in of snow: today's depth on the upper slopes (12 November)",
+   "description": "Cimarron Mountain Club, 39 in of snow: today's depth on the upper slopes (12 November). 42 in (106 cm): that is the snow on the upper slopes of …",
+   "lede": "42 in (106 cm): that is the snow on the upper slopes of Telluride today. Deepest snow in the US West today: Telluride, about 42 in (106 cm) on the upper slopes (model). Second Cimarron Mountain Club, 39 in (98 cm); third Wolf Creek, 35 in (88 cm). Snow-covered ground in the US West: 57,757 sq mi (149,590 km²). Resorts with snow: 132 of 195. The model is right more often than a hunch, and less often than we would like.",
+   "sections": [
+    {
+     "h": "Today's snow map",
+     "p": [
+      "Snow-covered area: 64,850 sq mi (167,960 km²) on 10 November, 57,757 sq mi (149,590 km²) today, 69,201 sq mi (179,230 km²) forecast for 15 November. The map is getting less white.",
+      "Telluride by height, from our model: top 38 in (96 cm) (12,507 ft / 3,812 m), middle 2 in (6 cm) (10,620 ft / 3,237 m), base 0 in (0 cm) (8,734 ft / 2,662 m)."
+     ]
+    },
+    {
+     "h": "Station check",
+     "p": [
+      "The Beartown station (11,581 ft / 3,530 m) adds a real measurement: 30 in (76 cm) on the ground on 10 November. Ground check, Rat Creek station (11,680 ft / 3,560 m): 23 in (58 cm) on the ground on 10 November, 1 in (3 cm) new in 24 hours. Ground check, Red Mountain Pass station (11,060 ft / 3,371 m): 23 in (58 cm) on the ground on 10 November.",
+      "Resort values: modelled, area-wide. Station values: measured, one point. Read them together."
+     ]
+    },
+    {
+     "h": "Is this normal?",
+     "p": [
+      "Wolf Creek, 11,010 ft (3,356 m): 26 in (65 cm) today. That beats this date in 31 of the past 46 winters (usual: 9 in (23 cm)). A good start."
+     ]
+    },
+    {
+     "h": "The forecast in short",
+     "p": [
+      "Forecast to 15 November: 6 in (16 cm) at Brian Head Resort, 5 in (13 cm) at Telluride and 4 in (11 cm) at Wolf Creek. Treat the later days with care.",
+      "On 12 November the freezing level at Telluride sits at 10,039 ft (3,060 m) to 13,123 ft (4,000 m), over the top of the resort (12,507 ft / 3,812 m): rain or wet snow could fall on all slopes.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "South-facing slopes take the most sun and melt first; high, north-facing slopes keep their snow the longest.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Telluride gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the US West on 12 November 2026 (SnowScope snow model): Telluride, Cimarron Mountain Club, Wolf Creek, Sunlight, Brian Head Resort."
+   }
+  },
+  "fr": {
+   "title": "Cimarron Mountain Club, 39 in de neige : la hauteur du jour en haut du domaine (12 novembre)",
+   "description": "Cimarron Mountain Club, 39 in de neige : la hauteur du jour en haut du domaine (12 novembre). 42 in (106 cm) : c'est la neige en haut du domaine de …",
+   "lede": "42 in (106 cm) : c'est la neige en haut du domaine de Telluride aujourd'hui. Neige la plus épaisse dans l'Ouest américain aujourd'hui : Telluride, environ 42 in (106 cm) sur le haut du domaine (modèle). Deuxième Cimarron Mountain Club, 39 in (98 cm) ; troisième Wolf Creek, 35 in (88 cm). Le compte du jour dans l'Ouest américain : 132 stations sur 195 avec de la neige en haut, 57 757 sq mi (149 590 km²) de sol enneigé. Le modèle a raison plus souvent qu'une intuition, et moins souvent que nous le voudrions.",
+   "sections": [
+    {
+     "h": "La carte de neige du jour",
+     "p": [
+      "La zone blanche sur la carte est passée de 64 850 sq mi (167 960 km²) (10 novembre) à 57 757 sq mi (149 590 km²) aujourd'hui, et la prévision dit 69 201 sq mi (179 230 km²) le 15 novembre.",
+      "Telluride par altitude, selon notre modèle : sommet 38 in (96 cm) (12 507 ft / 3 812 m), milieu 2 in (6 cm) (10 620 ft / 3 237 m), bas 0 in (0 cm) (8 734 ft / 2 662 m)."
+     ]
+    },
+    {
+     "h": "Contrôle des stations",
+     "p": [
+      "La station de mesure Beartown (11 581 ft / 3 530 m) ajoute une vraie mesure : 30 in (76 cm) au sol le 10 novembre. Contrôle au sol, station Rat Creek (11 680 ft / 3 560 m) : 23 in (58 cm) au sol le 10 novembre, 1 in (3 cm) de neuve en 24 heures. Contrôle au sol, station Red Mountain Pass (11 060 ft / 3 371 m) : 23 in (58 cm) au sol le 10 novembre.",
+      "Quelle confiance ? Les valeurs des stations de ski sont des estimations du modèle pour le haut du domaine ; les stations de mesure donnent des mesures, chacune en un point à la date indiquée."
+     ]
+    },
+    {
+     "h": "Est-ce normal ?",
+     "p": [
+      "Wolf Creek, 11 010 ft (3 356 m) : 26 in (65 cm) aujourd'hui. Mieux qu'à cette date lors de 31 des 46 hivers passés (habituel : 9 in (23 cm)). Un bon début."
+     ]
+    },
+    {
+     "h": "La prévision en bref",
+     "p": [
+      "Prévision jusqu'au 15 novembre : 6 in (16 cm) à Brian Head Resort, 5 in (13 cm) à Telluride et 4 in (11 cm) à Wolf Creek. Prudence sur les derniers jours.",
+      "Le 12 novembre, l'isotherme 0 °C à Telluride se situe entre 10 039 ft (3 060 m) et 13 123 ft (4 000 m), au-dessus du sommet de la station (12 507 ft / 3 812 m) : pluie ou neige mouillée sur toutes les pentes possible.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Les pentes sud prennent le plus de soleil et fondent d'abord ; les pentes nord en altitude gardent leur neige le plus longtemps.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Telluride reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest américain le 12 novembre 2026 (modèle de neige SnowScope) : Telluride, Cimarron Mountain Club, Wolf Creek, Sunlight, Brian Head Resort."
+   }
+  },
+  "de": {
+   "title": "Cimarron Mountain Club, 39 in Schnee: die heutige Höhe in den oberen Hängen (12. November)",
+   "description": "Cimarron Mountain Club, 39 in Schnee: die heutige Höhe in den oberen Hängen (12. November). 42 in (106 cm): So viel Schnee liegt heute in den oberen …",
+   "lede": "42 in (106 cm): So viel Schnee liegt heute in den oberen Hängen von Telluride. Der meiste Schnee im US-Westen heute: Telluride, etwa 42 in (106 cm) in den oberen Hängen (Modell). Zweiter Cimarron Mountain Club, 39 in (98 cm); Dritter Wolf Creek, 35 in (88 cm). Die Zählung des Tages im US-Westen: 132 von 195 Skigebieten mit Schnee weit oben, 57.757 sq mi (149.590 km²) Schneefläche. Das Modell liegt öfter richtig als ein Bauchgefühl, und seltener, als uns lieb wäre.",
+   "sections": [
+    {
+     "h": "Die Schneekarte von heute",
+     "p": [
+      "Schneefläche: 64.850 sq mi (167.960 km²) am 10. November, heute 57.757 sq mi (149.590 km²), 69.201 sq mi (179.230 km²) erwartet für den 15. November. Die Karte wird weniger weiß.",
+      "Telluride nach Höhe, aus unserem Modell: Gipfel 38 in (96 cm) (12.507 ft / 3.812 m), Mitte 2 in (6 cm) (10.620 ft / 3.237 m), Tal 0 in (0 cm) (8.734 ft / 2.662 m)."
+     ]
+    },
+    {
+     "h": "Stations-Check",
+     "p": [
+      "Die Station Beartown (11.581 ft / 3.530 m) liefert eine echte Messung: 30 in (76 cm) am Boden am 10. November. Bodencheck, Station Rat Creek (11.680 ft / 3.560 m): 23 in (58 cm) am Boden am 10. November, 1 in (3 cm) neu in 24 Stunden. Bodencheck, Station Red Mountain Pass (11.060 ft / 3.371 m): 23 in (58 cm) am Boden am 10. November.",
+      "Wie sicher sind wir? Die Skigebietswerte sind Modellschätzungen für die oberen Hänge; Stationen sind Messungen, jede an einem Punkt am angegebenen Tag."
+     ]
+    },
+    {
+     "h": "Ist das normal?",
+     "p": [
+      "Wolf Creek, 11.010 ft (3.356 m): heute 26 in (65 cm). Das schlägt dieses Datum in 31 der letzten 46 Winter (üblich: 9 in (23 cm)). Ein guter Start."
+     ]
+    },
+    {
+     "h": "Die Prognose in Kürze",
+     "p": [
+      "Prognose bis zum 15. November: 6 in (16 cm) in Brian Head Resort, 5 in (13 cm) in Telluride und 4 in (11 cm) in Wolf Creek. Die späteren Tage mit Vorsicht lesen.",
+      "Am 12. November liegt die Nullgradgrenze in Telluride bei 10.039 ft (3.060 m) bis 13.123 ft (4.000 m), über dem höchsten Punkt des Skigebiets (12.507 ft (3.812 m)): Regen oder nasser Schnee könnte auf alle Hänge fallen.",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Früher Schnee ist dünn. Bleib auf offenen, präparierten Pisten: Steine und Gras liegen oft knapp darunter.",
+    "Südhänge bekommen die meiste Sonne und schmelzen zuerst; hohe Nordhänge halten ihren Schnee am längsten.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Telluride Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe im US-Westen am 12. November 2026 (SnowScope-Schneemodell): Telluride, Cimarron Mountain Club, Wolf Creek, Sunlight, Brian Head Resort."
+   }
+  },
+  "it": {
+   "title": "Cimarron Mountain Club, 39 in di neve: l'altezza di oggi sui pendii alti (12 novembre)",
+   "description": "Cimarron Mountain Club, 39 in di neve: l'altezza di oggi sui pendii alti (12 novembre). 42 in (106 cm): è la neve di oggi sui pendii alti di …",
+   "lede": "42 in (106 cm): è la neve di oggi sui pendii alti di Telluride. Neve più alta nell'Ovest degli USA oggi: Telluride, circa 42 in (106 cm) sui pendii superiori (modello). Seconda Cimarron Mountain Club, 39 in (98 cm); terza Wolf Creek, 35 in (88 cm). Il conto del giorno nell'Ovest degli USA: 132 località su 195 con neve in alto, 57.757 sq mi (149.590 km²) di superficie innevata. Il modello ci prende più spesso di un'intuizione, e meno spesso di quanto vorremmo.",
+   "sections": [
+    {
+     "h": "La mappa neve di oggi",
+     "p": [
+      "L'area bianca sulla mappa è passata da 64.850 sq mi (167.960 km²) (10 novembre) a 57.757 sq mi (149.590 km²) oggi, e la previsione dice 69.201 sq mi (179.230 km²) il 15 novembre.",
+      "Telluride per quota, dal nostro modello: vetta 38 in (96 cm) (12.507 ft / 3.812 m), metà 2 in (6 cm) (10.620 ft / 3.237 m), base 0 in (0 cm) (8.734 ft / 2.662 m)."
+     ]
+    },
+    {
+     "h": "Controllo stazioni",
+     "p": [
+      "La stazione di Beartown (11.581 ft / 3.530 m) aggiunge una misura vera: 30 in (76 cm) al suolo il 10 novembre. Verifica a terra, stazione di Rat Creek (11.680 ft / 3.560 m): 23 in (58 cm) al suolo il 10 novembre, 1 in (3 cm) nuovi in 24 ore. Verifica a terra, stazione di Red Mountain Pass (11.060 ft / 3.371 m): 23 in (58 cm) al suolo il 10 novembre.",
+      "Quanto ne siamo sicuri? I valori delle località sono stime del modello per i pendii superiori; le stazioni sono misure, ognuna in un punto alla data indicata."
+     ]
+    },
+    {
+     "h": "È normale?",
+     "p": [
+      "Wolf Creek, 11.010 ft (3.356 m): 26 in (65 cm) oggi. Batte questa data in 31 dei 46 inverni passati (abituale: 9 in (23 cm)). Un buon inizio."
+     ]
+    },
+    {
+     "h": "La previsione in breve",
+     "p": [
+      "Previsione fino al 15 novembre: 6 in (16 cm) a Brian Head Resort, 5 in (13 cm) a Telluride e 4 in (11 cm) a Wolf Creek. Prendi i giorni più lontani con cautela.",
+      "Il 12 novembre lo zero termico a Telluride sta tra 10.039 ft (3.060 m) e 13.123 ft (4.000 m), sopra la quota massima della località (12.507 ft (3.812 m)): pioggia o neve bagnata potrebbero cadere su tutti i pendii.",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "La neve di inizio stagione è sottile. Resta sulle piste aperte e battute: sassi ed erba sono appena sotto.",
+    "I versanti sud prendono più sole e fondono per primi; i versanti nord in quota tengono la neve più a lungo.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Telluride riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve nell'Ovest degli USA il 12 novembre 2026 (modello neve SnowScope): Telluride, Cimarron Mountain Club, Wolf Creek, Sunlight, Brian Head Resort."
+   }
+  },
+  "es": {
+   "title": "Cimarron Mountain Club, 39 in de nieve: el espesor de hoy en la parte alta (12 de noviembre)",
+   "description": "Cimarron Mountain Club, 39 in de nieve: el espesor de hoy en la parte alta (12 de noviembre). 42 in (106 cm): es la nieve de hoy en la parte alta de …",
+   "lede": "42 in (106 cm): es la nieve de hoy en la parte alta de Telluride. Nieve más profunda en el oeste de EE. UU. hoy: Telluride, unos 42 in (106 cm) en las pistas altas (modelo). Segunda Cimarron Mountain Club, 39 in (98 cm); tercera Wolf Creek, 35 in (88 cm). El recuento del día en el oeste de EE. UU.: 132 de 195 estaciones con nieve arriba, 57.757 sq mi (149.590 km²) de suelo nevado. El modelo acierta más que una corazonada, y menos de lo que nos gustaría.",
+   "sections": [
+    {
+     "h": "El mapa de nieve de hoy",
+     "p": [
+      "La zona blanca del mapa pasó de 64.850 sq mi (167.960 km²) (10 de noviembre) a 57.757 sq mi (149.590 km²) hoy, y la previsión dice 69.201 sq mi (179.230 km²) el 15 de noviembre.",
+      "Telluride por altura, según nuestro modelo: arriba 38 in (96 cm) (12.507 ft / 3812 m), en medio 2 in (6 cm) (10.620 ft / 3237 m), base 0 in (0 cm) (8734 ft / 2662 m)."
+     ]
+    },
+    {
+     "h": "Control de estaciones",
+     "p": [
+      "La estación de medida Beartown (11.581 ft / 3530 m) añade una medida real: 30 in (76 cm) en el suelo el 10 de noviembre. Control en el suelo, estación Rat Creek (11.680 ft / 3560 m): 23 in (58 cm) en el suelo el 10 de noviembre, 1 in (3 cm) nuevos en 24 horas. Control en el suelo, estación Red Mountain Pass (11.060 ft / 3371 m): 23 in (58 cm) en el suelo el 10 de noviembre.",
+      "¿Qué confianza tenemos? Los valores de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida dan medidas, cada una en un punto en la fecha indicada."
+     ]
+    },
+    {
+     "h": "¿Es normal?",
+     "p": [
+      "Wolf Creek, 11.010 ft (3356 m): 26 in (65 cm) hoy. Supera esta fecha en 31 de los 46 inviernos pasados (lo habitual: 9 in (23 cm)). Buen comienzo."
+     ]
+    },
+    {
+     "h": "La previsión en breve",
+     "p": [
+      "Previsión hasta el 15 de noviembre: 6 in (16 cm) en Brian Head Resort, 5 in (13 cm) en Telluride y 4 in (11 cm) en Wolf Creek. Cuidado con los últimos días.",
+      "El 12 de noviembre la cota de congelación en Telluride se sitúa en 10.039 ft (3060 m)-13.123 ft (4000 m), sobre la cota alta de la estación (12.507 ft (3812 m)): podría caer lluvia o nieve húmeda en todas las pistas.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "La nieve de principio de temporada es fina. Quédate en pistas abiertas y pisadas: piedras y hierba están justo debajo.",
+    "Las laderas sur reciben más sol y se funden antes; las laderas norte en altura guardan su nieve más tiempo.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Telluride recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de EE. UU. el 12 de noviembre 2026 (modelo de nieve de SnowScope): Telluride, Cimarron Mountain Club, Wolf Creek, Sunlight, Brian Head Resort."
+   }
+  },
+  "ar": {
+   "title": "Cimarron Mountain Club، 39 إنش ديال التلج: العلو ديال اليوم فالجهة الفوقانية (12 نونبر)",
+   "description": "Cimarron Mountain Club، 39 إنش ديال التلج: العلو ديال اليوم فالجهة الفوقانية (12 نونبر). 42 إنش (106 سم): هادا هو التلج اللي كاين اليوم فالجهة …",
+   "lede": "42 إنش (106 سم): هادا هو التلج اللي كاين اليوم فالجهة الفوقانية ديال Telluride. أكثر تلج فغرب ميريكان اليوم: Telluride، تقريبا 42 إنش (106 سم) فالجهة الفوقانية (الموديل). التانية Cimarron Mountain Club، 39 إنش (98 سم)؛ التالتة Wolf Creek، 35 إنش (88 سم). الحساب ديال اليوم فغرب ميريكان: 132 محطة من 195 فيهم التلج فالعلو، و 57757 ميل² (149590 كم²) ديال الأرض اللي فيها التلج. الموديل كيصيب كثر من الحدس، وأقل من اللي كنبغيو.",
+   "sections": [
+    {
+     "h": "الخريطة ديال التلج اليوم",
+     "p": [
+      "المساحة البيضا فالخريطة دازت من 64850 ميل² (167960 كم²) (10 نونبر) ل 57757 ميل² (149590 كم²) اليوم، والتوقعات كتقول 69201 ميل² (179230 كم²) نهار 15 نونبر.",
+      "Telluride حسب العلو، من الموديل ديالنا: الفوق 38 إنش (96 سم) (12507 قدم / 3812 م)، الوسط 2 إنش (6 سم) (10620 قدم / 3237 م)، التحت 0 إنش (0 سم) (8734 قدم / 2662 م)."
+     ]
+    },
+    {
+     "h": "التحقق بالمحطات",
+     "p": [
+      "محطة القياس Beartown (11581 قدم / 3530 م) كتزيد قياس حقيقي: 30 إنش (76 سم) فالأرض نهار 10 نونبر. التحقق من الأرض، محطة Rat Creek (11680 قدم / 3560 م): 23 إنش (58 سم) فالأرض نهار 10 نونبر، 1 إنش (3 سم) جديد ف 24 ساعة. التحقق من الأرض، محطة Red Mountain Pass (11060 قدم / 3371 م): 23 إنش (58 سم) فالأرض نهار 10 نونبر.",
+      "شحال حنا متأكدين؟ القيم ديال المحطات تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس قياسات، كل وحدة فنقطة وحدة فالتاريخ المكتوب."
+     ]
+    },
+    {
+     "h": "واش هادشي عادي؟",
+     "p": [
+      "Wolf Creek، 11010 قدم (3356 م): 26 إنش (65 سم) اليوم. هادشي كيفوت هاد التاريخ ف 31 من 46 ديال الشتوات اللي فاتو (العادي: 9 إنش (23 سم)). بداية مزيانة."
+     ]
+    },
+    {
+     "h": "التوقعات باختصار",
+     "p": [
+      "التوقعات حتى ل 15 نونبر: 6 إنش (16 سم) ف Brian Head Resort، 5 إنش (13 سم) ف Telluride و 4 إنش (11 سم) ف Wolf Creek. الأيام اللخرين خاصهم الحذر.",
+      "نهار 12 نونبر علو الجليد ف Telluride كيكون بين 10039 قدم (3060 م) و 13123 قدم (4000 م)، فوق القمة ديال المحطة (12507 قدم (3812 م)): الشتا ولا التلج المبلول يقدر يطيح فكاع البيستات.",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "التلج ديال بداية الموسم رقيق. بقى فالبيستات المحلولة والمدكوكة: الحجر والربيع يمكن يكونو تحت نيشان.",
+    "الجهات اللي كتشوف للجنوب كتاخد أكثر شمس وكيدوب فيها التلج اللول؛ الجهات العاليين اللي كتشوف للشمال كيحافظو عليه أطول وقت.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Telluride يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب ميريكان نهار 12 نونبر 2026 (الموديل ديال SnowScope): Telluride, Cimarron Mountain Club, Wolf Creek, Sunlight, Brian Head Resort."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "de": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "it": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "es": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "sat"
+  }
+ },
+ "words_en": 349,
+ "indexable": true,
+ "main": {
+  "slug": "cimarron_mountain_club",
+  "name": "Cimarron Mountain Club",
+  "lat": 38.2978,
+  "lon": -107.619
+ },
+ "places": [
+  {
+   "name": "Telluride",
+   "lat": 37.9197,
+   "lon": -107.8348
+  },
+  {
+   "name": "Cimarron Mountain Club",
+   "lat": 38.2978,
+   "lon": -107.619
+  },
+  {
+   "name": "Wolf Creek",
+   "lat": 37.4632,
+   "lon": -106.7905
+  },
+  {
+   "name": "Sunlight",
+   "lat": 39.3942,
+   "lon": -107.339
+  },
+  {
+   "name": "Brian Head Resort",
+   "lat": 37.6892,
+   "lon": -112.8461
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "telluride_ski_area",
+   "name": "Telluride"
+  },
+  {
+   "slug": "cimarron_mountain_club",
+   "name": "Cimarron Mountain Club"
+  },
+  {
+   "slug": "wolf_creek_ski_area",
+   "name": "Wolf Creek"
+  },
+  {
+   "slug": "sunlight_mountain_resort",
+   "name": "Sunlight"
+  },
+  {
+   "slug": "brian_head_resort",
+   "name": "Brian Head Resort"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "telluride_ski_area",
+    "name": "Telluride",
+    "depth": 106,
+    "new72": 0,
+    "next": 13,
+    "top_m": 3812
+   },
+   {
+    "slug": "cimarron_mountain_club",
+    "name": "Cimarron Mountain Club",
+    "depth": 98,
+    "new72": 0,
+    "next": 7,
+    "top_m": 3461
+   },
+   {
+    "slug": "wolf_creek_ski_area",
+    "name": "Wolf Creek",
+    "depth": 88,
+    "new72": 0,
+    "next": 11,
+    "top_m": 3585
+   },
+   {
+    "slug": "sunlight_mountain_resort",
+    "name": "Sunlight",
+    "depth": 84,
+    "new72": 0,
+    "next": 3,
+    "top_m": 3002
+   },
+   {
+    "slug": "brian_head_resort",
+    "name": "Brian Head Resort",
+    "depth": 68,
+    "new72": 0,
+    "next": 16,
+    "top_m": 3325
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Colorado Avalanche Information Center",
+   "url": "https://avalanche.state.co.us/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@38.298,-107.619,9.0",
+ "seconds": 0.0,
+ "facts_used": 45,
+ "voice": "sat",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 25.4,
+  "after": 25.4,
+  "with": "us-west-snow-vs-past-winters-11-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.166,
+  "with": "us-west-where-to-ski-this-weekend-11-november-2026"
+ },
+ "publish_utc": "2026-11-12T15:13:45Z"
+}
