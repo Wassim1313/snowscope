@@ -1,0 +1,1173 @@
+{
+ "id": "2026-11-12-alps-outlook14",
+ "slug": "alps-2-week-snow-forecast-maps-12-november-2026",
+ "date": "2026-11-12",
+ "published_utc": "2026-11-12T18:20:16Z",
+ "updated_utc": "2026-11-12T18:20:16Z",
+ "region": "ALPS",
+ "angle": "outlook14",
+ "score": 80,
+ "signature": "2026-11-12|saint_francois_longchamp:120|paradiski:110|chamonix:110",
+ "keyword": {
+  "family": "two-week-forecast",
+  "entity": "alps",
+  "region": "ALPS",
+  "date": "2026-11-12"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "two_week_snow_outlook",
+  "region": "Alps",
+  "date": "2026-11-12",
+  "weekday": "Thursday",
+  "model_run": "2026-11-12",
+  "forecast_days": [
+   "2026-11-13",
+   "2026-11-14",
+   "2026-11-15"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 40280,
+   "resorts_with_snow": 592,
+   "resorts_in_region": 1179
+  },
+  "region_before": {
+   "date": "2026-11-10",
+   "snow_covered_area_km2": 40180,
+   "resorts_with_snow": 655
+  },
+  "region_forecast": {
+   "date": "2026-11-15",
+   "snow_covered_area_km2": 47080,
+   "resorts_with_snow": 674
+  },
+  "question": "Where will new snow fall in the next two weeks, how much, in which week, and at which height?",
+  "outlook_days": [
+   "2026-11-13",
+   "2026-11-14",
+   "2026-11-15",
+   "2026-11-16",
+   "2026-11-17",
+   "2026-11-18",
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26"
+  ],
+  "week1": {
+   "from": "2026-11-13",
+   "to": "2026-11-19"
+  },
+  "week2": {
+   "from": "2026-11-20",
+   "to": "2026-11-26"
+  },
+  "models": [
+   "ECMWF IFS",
+   "NOAA GFS"
+  ],
+  "lattice_points": 285,
+  "region_outlook": {
+   "max_new_cm_next_14_days": 141,
+   "area_km2_with_20cm_or_more": 68569,
+   "area_km2_with_50cm_or_more": 18212,
+   "area_km2_mountains": 514856,
+   "week1_share_pct": 78
+  },
+  "new_cm_next_14_days_by_height": [
+   {
+    "from_m": 1000,
+    "to_m": 1500,
+    "new_cm_next_14_days_median": 10,
+    "new_cm_next_14_days_upper_quarter": 20
+   },
+   {
+    "from_m": 1500,
+    "to_m": 2000,
+    "new_cm_next_14_days_median": 28,
+    "new_cm_next_14_days_upper_quarter": 43
+   },
+   {
+    "from_m": 2000,
+    "to_m": 2500,
+    "new_cm_next_14_days_median": 32,
+    "new_cm_next_14_days_upper_quarter": 56
+   },
+   {
+    "from_m": 2500,
+    "to_m": 3000,
+    "new_cm_next_14_days_median": 36,
+    "new_cm_next_14_days_upper_quarter": 68
+   },
+   {
+    "from_m": 3000,
+    "to_m": 4500,
+    "new_cm_next_14_days_median": 62,
+    "new_cm_next_14_days_upper_quarter": 82
+   }
+  ],
+  "resorts_followed": 1166,
+  "thresholds_cm": [
+   1,
+   5,
+   20,
+   50
+  ],
+  "best_days": [
+   {
+    "date": "2026-11-13",
+    "resorts_with_5cm_or_more": 555,
+    "max_cm": 27,
+    "top_resort": "Krvavec"
+   },
+   {
+    "date": "2026-11-17",
+    "resorts_with_5cm_or_more": 372,
+    "max_cm": 24,
+    "top_resort": "Les Grands Montets"
+   },
+   {
+    "date": "2026-11-18",
+    "resorts_with_5cm_or_more": 524,
+    "max_cm": 44,
+    "top_resort": "Paradiski"
+   },
+   {
+    "date": "2026-11-19",
+    "resorts_with_5cm_or_more": 626,
+    "max_cm": 32,
+    "top_resort": "Glacier 3000"
+   }
+  ],
+  "resorts": [
+   {
+    "name": "Saint François Longchamp",
+    "country": "France",
+    "top_m": 2516,
+    "base_m": 1761,
+    "depth_cm_upper_slopes_today": 24,
+    "new_cm_last_24h": 15,
+    "new_cm_last_72h": 18,
+    "new_cm_forecast_next_days": 8,
+    "slug": "saint_francois_longchamp",
+    "new_cm_next_14_days": 117,
+    "new_cm_next_14_days_low": 94,
+    "new_cm_next_14_days_high": 141,
+    "new_cm_days_1_7": 104,
+    "new_cm_days_8_14": 14,
+    "snowiest_day": "2026-11-18",
+    "snowiest_day_cm": 33,
+    "days_with_5cm_or_more": 5,
+    "days_with_snow": 9,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 12
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 20
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 33
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 31
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 7
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 2331
+   },
+   {
+    "name": "Paradiski",
+    "country": "France",
+    "top_m": 3205,
+    "base_m": 1199,
+    "depth_cm_upper_slopes_today": 58,
+    "new_cm_last_24h": 24,
+    "new_cm_last_72h": 28,
+    "new_cm_forecast_next_days": 5,
+    "slug": "paradiski",
+    "new_cm_next_14_days": 114,
+    "new_cm_next_14_days_low": 97,
+    "new_cm_next_14_days_high": 132,
+    "new_cm_days_1_7": 103,
+    "new_cm_days_8_14": 11,
+    "snowiest_day": "2026-11-18",
+    "snowiest_day_cm": 44,
+    "days_with_5cm_or_more": 5,
+    "days_with_snow": 9,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 8
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 20
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 44
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 26
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 2443
+   },
+   {
+    "name": "Les Grands Montets",
+    "country": "France",
+    "top_m": 2768,
+    "base_m": 1234,
+    "depth_cm_upper_slopes_today": 50,
+    "new_cm_last_24h": 24,
+    "new_cm_last_72h": 42,
+    "new_cm_forecast_next_days": 5,
+    "slug": "chamonix",
+    "new_cm_next_14_days": 113,
+    "new_cm_next_14_days_low": 86,
+    "new_cm_next_14_days_high": 140,
+    "new_cm_days_1_7": 100,
+    "new_cm_days_8_14": 13,
+    "snowiest_day": "2026-11-18",
+    "snowiest_day_cm": 37,
+    "days_with_5cm_or_more": 5,
+    "days_with_snow": 8,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 9
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 24
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 37
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 26
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 2663
+   },
+   {
+    "name": "La Clusaz",
+    "country": "France",
+    "top_m": 2476,
+    "base_m": 1030,
+    "depth_cm_upper_slopes_today": 5,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 3,
+    "new_cm_forecast_next_days": 5,
+    "slug": "la_clusaz",
+    "new_cm_next_14_days": 110,
+    "new_cm_next_14_days_low": 87,
+    "new_cm_next_14_days_high": 134,
+    "new_cm_days_1_7": 91,
+    "new_cm_days_8_14": 20,
+    "snowiest_day": "2026-11-18",
+    "snowiest_day_cm": 35,
+    "days_with_5cm_or_more": 5,
+    "days_with_snow": 10,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 14
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 10
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 35
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 27
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 12
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 2014
+   },
+   {
+    "name": "Ovronnaz",
+    "country": "Switzerland",
+    "top_m": 2456,
+    "base_m": 1340,
+    "depth_cm_upper_slopes_today": 77,
+    "new_cm_last_24h": 18,
+    "new_cm_last_72h": 30,
+    "new_cm_forecast_next_days": 4,
+    "slug": "ovronnaz",
+    "new_cm_next_14_days": 110,
+    "new_cm_next_14_days_low": 90,
+    "new_cm_next_14_days_high": 130,
+    "new_cm_days_1_7": 94,
+    "new_cm_days_8_14": 16,
+    "snowiest_day": "2026-11-18",
+    "snowiest_day_cm": 32,
+    "days_with_5cm_or_more": 5,
+    "days_with_snow": 8,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 22
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 32
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 31
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 9
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 2278
+   },
+   {
+    "name": "Arêches Beaufort",
+    "country": "France",
+    "top_m": 2319,
+    "base_m": 1022,
+    "depth_cm_upper_slopes_today": 19,
+    "new_cm_last_24h": 5,
+    "new_cm_last_72h": 5,
+    "new_cm_forecast_next_days": 8,
+    "slug": "areches_beaufort",
+    "new_cm_next_14_days": 108,
+    "new_cm_next_14_days_low": 87,
+    "new_cm_next_14_days_high": 129,
+    "new_cm_days_1_7": 92,
+    "new_cm_days_8_14": 16,
+    "snowiest_day": "2026-11-18",
+    "snowiest_day_cm": 37,
+    "days_with_5cm_or_more": 5,
+    "days_with_snow": 8,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 11
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 11
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 37
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 28
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 9
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 1990
+   }
+  ],
+  "notes": [
+   "new snow = middle of the two models' daily snowfall, brought onto the terrain (1 km); low / high = the two models",
+   "resort values = the slopes at or above mid-mountain within a few km of the resort, not the village",
+   "days 1-14 = tomorrow to day 14; week 1 = days 1-7, week 2 = days 8-14",
+   "snow by height = all the mountain terrain of the region, not only resorts"
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/alps-2-week-snow-forecast-maps-12-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/alps-2-week-snow-forecast-maps-12-november-2026/map_t.webp",
+   "bytes": 50364,
+   "snow_frac": 0.3308,
+   "weak": false
+  },
+  {
+   "id": "week1",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/alps-2-week-snow-forecast-maps-12-november-2026/week1.webp",
+   "thumb": "blog/media/2026/11/alps-2-week-snow-forecast-maps-12-november-2026/week1_t.webp",
+   "bytes": 48130,
+   "snow_frac": 0.234,
+   "weak": false
+  },
+  {
+   "id": "week2",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/alps-2-week-snow-forecast-maps-12-november-2026/week2.webp",
+   "thumb": "blog/media/2026/11/alps-2-week-snow-forecast-maps-12-november-2026/week2_t.webp",
+   "bytes": 38556,
+   "snow_frac": 0.2854,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Two-week snow forecast in the Alps: up to 117 cm of new snow by 26 November",
+   "description": "Here are the new maps of the next two weeks in the Alps, 13 November to 26 November: the new snow expected on the terrain, read from the two global …",
+   "lede": "Here are the new maps of the next two weeks in the Alps, 13 November to 26 November: the new snow expected on the terrain, read from the two global models that reach two weeks, ECMWF and GFS (middle value, with the range of the two). The most goes to Saint François Longchamp: about 117 cm on its upper slopes, 94 cm–141 cm depending on the model, then Paradiski with 114 cm. Snow in the mountains is water held back for spring: what falls now feeds rivers and reservoirs later.",
+   "sections": [
+    {
+     "h": "Resort by resort, the next 14 days",
+     "p": [
+      "At Saint François Longchamp (France) the two weeks add up to about 117 cm (94 cm–141 cm depending on the model): 104 cm by the end of the first week, then 14 cm more. The snowiest day is 18 November with 33 cm; 5 days bring 5 cm or more.",
+      "At Paradiski (France) the two weeks add up to about 114 cm (97 cm–132 cm depending on the model): 103 cm by the end of the first week, then 11 cm more. Mark 18 November: that is the biggest day, with 44 cm, out of 5 days at 5 cm or more.",
+      "Les Grands Montets (France): about 113 cm in 14 days (86 cm–140 cm between the models), 100 cm in the first week and 13 cm in the second. Mark 18 November: that is the biggest day, with 37 cm, out of 5 days at 5 cm or more.",
+      "At La Clusaz (France) the two weeks add up to about 110 cm (87 cm–134 cm depending on the model): 91 cm by the end of the first week, then 20 cm more. The snowiest day is 18 November with 35 cm; 5 days bring 5 cm or more.",
+      "Ovronnaz (Switzerland): about 110 cm in 14 days (90 cm–130 cm between the models), 94 cm in the first week and 16 cm in the second. Mark 18 November: that is the biggest day, with 32 cm, out of 5 days at 5 cm or more.",
+      "At Arêches Beaufort (France) the two weeks add up to about 108 cm (87 cm–129 cm depending on the model): 92 cm by the end of the first week, then 16 cm more. The snowiest day is 18 November with 37 cm; 5 days bring 5 cm or more."
+     ]
+    },
+    {
+     "h": "First week against second week",
+     "p": [
+      "Over the whole region, 78 % of the fortnight's snow falls in the first week (13 November to 19 November), the rest in the second (20 November to 26 November).",
+      "Front-loaded: Saint François Longchamp, Paradiski, Les Grands Montets, La Clusaz, Ovronnaz and Arêches Beaufort get most of their snow in the first week.",
+      "On the map, about 68,569 km² of mountain terrain get 20 cm or more over the two weeks, and 18,212 km² get 50 cm or more."
+     ]
+    },
+    {
+     "h": "New snow by height",
+     "p": [
+      "The same two weeks by height, over all the mountains of the region (every square kilometre of terrain, not only the resorts): between 1,000 m and 1,500 m: typically 10 cm, the snowiest quarter of that band 20 cm or more; between 1,500 m and 2,000 m: typically 28 cm, the snowiest quarter of that band 43 cm or more; between 2,000 m and 2,500 m: typically 32 cm, the snowiest quarter of that band 56 cm or more; between 2,500 m and 3,000 m: typically 36 cm, the snowiest quarter of that band 68 cm or more; between 3,000 m and 4,500 m: typically 62 cm, the snowiest quarter of that band 82 cm or more."
+     ]
+    },
+    {
+     "h": "The days to watch",
+     "p": [
+      "Snow days across the region, over the 1166 resorts in our list: Friday 13 November (555 of 1166 resorts at 5 cm or more, up to 27 cm at Krvavec), Tuesday 17 November (372 of 1166 resorts at 5 cm or more, up to 24 cm at Les Grands Montets), Wednesday 18 November (524 of 1166 resorts at 5 cm or more, up to 44 cm at Paradiski) and Thursday 19 November (626 of 1166 resorts at 5 cm or more, up to 32 cm at Glacier 3000)."
+     ]
+    },
+    {
+     "h": "How to read the maps",
+     "p": [
+      "Three maps: the whole fortnight, then the first and the second week. Colours start at one centimetre of new snow and darken with the amount; the pins give the value on the upper slopes of the resorts in this post.",
+      "Treat the second week as a direction of travel. When the two models agree, the range is narrow; when it is wide, wait for the next maps before you book. New maps come out every morning."
+     ]
+    }
+   ],
+   "advice": [
+    "Plan the first week with these maps; keep the second week loose and check again in a few days.",
+    "A forecast 0 °C level can be off by several hundred metres; check the map again the day before you go.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website."
+   ],
+   "captions": {
+    "map": "New snow in the Alps forecast for the 14 days from 13 November to 26 November (middle of the ECMWF and GFS models, brought onto the terrain), with the resorts of this outlook.",
+    "week1": "The first week only: new snow from 13 November to 19 November.",
+    "week2": "The second week only: new snow from 20 November to 26 November, where the two models disagree most."
+   }
+  },
+  "fr": {
+   "title": "Prévision neige sur deux semaines dans les Alpes : jusqu'à 117 cm de neige fraîche d'ici le 26 novembre",
+   "description": "Voici les nouvelles cartes des deux prochaines semaines dans les Alpes, du 13 novembre au 26 novembre : la neige fraîche attendue sur le relief, lue …",
+   "lede": "Voici les nouvelles cartes des deux prochaines semaines dans les Alpes, du 13 novembre au 26 novembre : la neige fraîche attendue sur le relief, lue dans les deux modèles mondiaux qui portent à deux semaines, ECMWF et GFS (valeur médiane, avec la fourchette des deux). Le plus gros lot va à Saint François Longchamp : environ 117 cm de neige sur le haut du domaine, 94 cm–141 cm selon le modèle, puis Paradiski avec 114 cm. La neige en montagne, c'est de l'eau mise de côté pour le printemps : ce qui tombe maintenant alimente plus tard rivières et barrages.",
+   "sections": [
+    {
+     "h": "Station par station, les 14 prochains jours",
+     "p": [
+      "À Saint François Longchamp (France), les deux semaines totalisent environ 117 cm (94 cm–141 cm selon le modèle) : 104 cm à la fin de la première semaine, puis 14 cm de plus. Le jour le plus neigeux est le 18 novembre avec 33 cm ; 5 jours apportent 5 cm ou plus.",
+      "À Paradiski (France), les deux semaines totalisent environ 114 cm (97 cm–132 cm selon le modèle) : 103 cm à la fin de la première semaine, puis 11 cm de plus. Notez le 18 novembre : c'est la plus grosse journée, avec 44 cm, sur 5 jours à 5 cm ou plus.",
+      "Les Grands Montets (France) : environ 113 cm en 14 jours (86 cm–140 cm selon le modèle), 100 cm la première semaine et 13 cm la seconde. Notez le 18 novembre : c'est la plus grosse journée, avec 37 cm, sur 5 jours à 5 cm ou plus.",
+      "À La Clusaz (France), les deux semaines totalisent environ 110 cm (87 cm–134 cm selon le modèle) : 91 cm à la fin de la première semaine, puis 20 cm de plus. Le jour le plus neigeux est le 18 novembre avec 35 cm ; 5 jours apportent 5 cm ou plus.",
+      "Ovronnaz (Suisse) : environ 110 cm en 14 jours (90 cm–130 cm selon le modèle), 94 cm la première semaine et 16 cm la seconde. Notez le 18 novembre : c'est la plus grosse journée, avec 32 cm, sur 5 jours à 5 cm ou plus.",
+      "À Arêches Beaufort (France), les deux semaines totalisent environ 108 cm (87 cm–129 cm selon le modèle) : 92 cm à la fin de la première semaine, puis 16 cm de plus. Le jour le plus neigeux est le 18 novembre avec 37 cm ; 5 jours apportent 5 cm ou plus."
+     ]
+    },
+    {
+     "h": "Première semaine contre seconde",
+     "p": [
+      "Sur toute la région, 78 % de la neige de la quinzaine tombe la première semaine (du 13 novembre au 19 novembre), le reste la seconde (du 20 novembre au 26 novembre).",
+      "Tôt dans la quinzaine : Saint François Longchamp, Paradiski, Les Grands Montets, La Clusaz, Ovronnaz et Arêches Beaufort reçoivent l'essentiel de leur neige la première semaine.",
+      "Sur la carte, environ 68 569 km² de terrain de montagne reçoivent 20 cm ou plus sur les deux semaines, et 18 212 km² reçoivent 50 cm ou plus."
+     ]
+    },
+    {
+     "h": "Neige fraîche par altitude",
+     "p": [
+      "Les mêmes deux semaines par altitude, sur toutes les montagnes de la région (chaque kilomètre carré de terrain, pas seulement les stations) : entre 1 000 m et 1 500 m : typiquement 10 cm, le quart le plus enneigé de cette tranche 20 cm ou plus; entre 1 500 m et 2 000 m : typiquement 28 cm, le quart le plus enneigé de cette tranche 43 cm ou plus; entre 2 000 m et 2 500 m : typiquement 32 cm, le quart le plus enneigé de cette tranche 56 cm ou plus; entre 2 500 m et 3 000 m : typiquement 36 cm, le quart le plus enneigé de cette tranche 68 cm ou plus; entre 3 000 m et 4 500 m : typiquement 62 cm, le quart le plus enneigé de cette tranche 82 cm ou plus."
+     ]
+    },
+    {
+     "h": "Les jours à surveiller",
+     "p": [
+      "Les journées de neige sur la région, sur les 1166 stations de notre liste : vendredi 13 novembre (555 stations sur 1166 à 5 cm ou plus, jusqu'à 27 cm à Krvavec), mardi 17 novembre (372 stations sur 1166 à 5 cm ou plus, jusqu'à 24 cm à Les Grands Montets), mercredi 18 novembre (524 stations sur 1166 à 5 cm ou plus, jusqu'à 44 cm à Paradiski) et jeudi 19 novembre (626 stations sur 1166 à 5 cm ou plus, jusqu'à 32 cm à Glacier 3000)."
+     ]
+    },
+    {
+     "h": "Comment lire les cartes",
+     "p": [
+      "Trois cartes : toute la quinzaine, puis la première et la seconde semaine. Les couleurs commencent à un centimètre de neige fraîche et foncent avec la quantité ; les épingles donnent la valeur sur le haut des stations de ce bulletin.",
+      "Prenez la seconde semaine comme une direction. Quand les deux modèles s'accordent, la fourchette est étroite ; quand elle est large, attendez les cartes suivantes avant de réserver. De nouvelles cartes sortent chaque matin."
+     ]
+    }
+   ],
+   "advice": [
+    "Planifiez la première semaine avec ces cartes ; gardez la seconde souple et revérifiez dans quelques jours.",
+    "Une isotherme 0 °C prévue peut se tromper de plusieurs centaines de mètres ; revoyez la carte la veille.",
+    "Avant toute sortie hors-piste ou en randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates sur son site."
+   ],
+   "captions": {
+    "map": "Neige fraîche dans les Alpes prévue sur les 14 jours du 13 novembre au 26 novembre (milieu des modèles ECMWF et GFS, ramené sur le relief), avec les stations de ce bulletin.",
+    "week1": "La première semaine seule : neige fraîche du 13 novembre au 19 novembre.",
+    "week2": "La seconde semaine seule : neige fraîche du 20 novembre au 26 novembre, là où les deux modèles divergent le plus."
+   }
+  },
+  "de": {
+   "title": "Zwei-Wochen-Schneeprognose in den Alpen: bis zu 117 cm Neuschnee bis zum 26. November",
+   "description": "Hier sind die neuen Karten der nächsten zwei Wochen in den Alpen, 13. November bis 26. November: der erwartete Neuschnee im Gelände, abgelesen aus …",
+   "lede": "Hier sind die neuen Karten der nächsten zwei Wochen in den Alpen, 13. November bis 26. November: der erwartete Neuschnee im Gelände, abgelesen aus die beiden globalen Modelle, die zwei Wochen weit reichen, ECMWF und GFS (Mittelwert, mit der Spanne der beiden). Am meisten bekommt Saint François Longchamp: etwa 117 cm Schnee in den oberen Hängen, 94 cm–141 cm je nach Modell, dann Paradiski mit 114 cm. Schnee in den Bergen ist Wasser, das für den Frühling zurückgehalten wird: Was jetzt fällt, speist später Flüsse und Stauseen.",
+   "sections": [
+    {
+     "h": "Skigebiet für Skigebiet, die nächsten 14 Tage",
+     "p": [
+      "In Saint François Longchamp (Frankreich) summieren sich die zwei Wochen auf etwa 117 cm (94 cm–141 cm je nach Modell): 104 cm bis Ende der ersten Woche, dann 14 cm dazu. Der schneereichste Tag ist der 18. November mit 33 cm; an 5 Tagen kommen 5 cm oder mehr.",
+      "In Paradiski (Frankreich) summieren sich die zwei Wochen auf etwa 114 cm (97 cm–132 cm je nach Modell): 103 cm bis Ende der ersten Woche, dann 11 cm dazu. Merk dir den 18. November: der größte Tag mit 44 cm, von 5 Tagen mit 5 cm oder mehr.",
+      "Les Grands Montets (Frankreich): etwa 113 cm in 14 Tagen (86 cm–140 cm zwischen den Modellen), 100 cm in der ersten Woche und 13 cm in der zweiten. Merk dir den 18. November: der größte Tag mit 37 cm, von 5 Tagen mit 5 cm oder mehr.",
+      "In La Clusaz (Frankreich) summieren sich die zwei Wochen auf etwa 110 cm (87 cm–134 cm je nach Modell): 91 cm bis Ende der ersten Woche, dann 20 cm dazu. Der schneereichste Tag ist der 18. November mit 35 cm; an 5 Tagen kommen 5 cm oder mehr.",
+      "Ovronnaz (Schweiz): etwa 110 cm in 14 Tagen (90 cm–130 cm zwischen den Modellen), 94 cm in der ersten Woche und 16 cm in der zweiten. Merk dir den 18. November: der größte Tag mit 32 cm, von 5 Tagen mit 5 cm oder mehr.",
+      "In Arêches Beaufort (Frankreich) summieren sich die zwei Wochen auf etwa 108 cm (87 cm–129 cm je nach Modell): 92 cm bis Ende der ersten Woche, dann 16 cm dazu. Der schneereichste Tag ist der 18. November mit 37 cm; an 5 Tagen kommen 5 cm oder mehr."
+     ]
+    },
+    {
+     "h": "Erste gegen zweite Woche",
+     "p": [
+      "In der ganzen Region fallen 78 % des Schnees der zwei Wochen in der ersten Woche (13. November bis 19. November), der Rest in der zweiten (20. November bis 26. November).",
+      "Früh dran: Saint François Longchamp, Paradiski, Les Grands Montets, La Clusaz, Ovronnaz und Arêches Beaufort bekommen den Großteil ihres Schnees in der ersten Woche.",
+      "Auf der Karte bekommen etwa 68.569 km² Berggelände in den zwei Wochen 20 cm oder mehr, und 18.212 km² bekommen 50 cm oder mehr."
+     ]
+    },
+    {
+     "h": "Neuschnee nach Höhe",
+     "p": [
+      "Dieselben zwei Wochen nach Höhe, über alle Berge der Region (jeder Quadratkilometer Gelände, nicht nur die Skigebiete): zwischen 1.000 m und 1.500 m: typisch 10 cm, das schneereichste Viertel dieser Stufe 20 cm oder mehr; zwischen 1.500 m und 2.000 m: typisch 28 cm, das schneereichste Viertel dieser Stufe 43 cm oder mehr; zwischen 2.000 m und 2.500 m: typisch 32 cm, das schneereichste Viertel dieser Stufe 56 cm oder mehr; zwischen 2.500 m und 3.000 m: typisch 36 cm, das schneereichste Viertel dieser Stufe 68 cm oder mehr; zwischen 3.000 m und 4.500 m: typisch 62 cm, das schneereichste Viertel dieser Stufe 82 cm oder mehr."
+     ]
+    },
+    {
+     "h": "Die Tage im Blick",
+     "p": [
+      "Schneetage in der Region, über die 1166 Skigebiete unserer Liste: Freitag, 13. November (555 von 1166 Skigebieten mit 5 cm oder mehr, bis 27 cm in Krvavec), Dienstag, 17. November (372 von 1166 Skigebieten mit 5 cm oder mehr, bis 24 cm in Les Grands Montets), Mittwoch, 18. November (524 von 1166 Skigebieten mit 5 cm oder mehr, bis 44 cm in Paradiski) und Donnerstag, 19. November (626 von 1166 Skigebieten mit 5 cm oder mehr, bis 32 cm in Glacier 3000)."
+     ]
+    },
+    {
+     "h": "So liest man die Karten",
+     "p": [
+      "Drei Karten: die ganzen zwei Wochen, dann die erste und die zweite Woche. Die Farben beginnen bei einem Zentimeter Neuschnee und werden mit der Menge dunkler; die Nadeln zeigen den Wert in den oberen Hängen der Skigebiete dieses Berichts.",
+      "Nimm die zweite Woche als Richtung. Stimmen die beiden Modelle überein, ist die Spanne eng; ist sie weit, warte vor dem Buchen auf die nächsten Karten. Neue Karten erscheinen jeden Morgen."
+     ]
+    }
+   ],
+   "advice": [
+    "Plane die erste Woche mit diesen Karten; lass die zweite offen und schau in ein paar Tagen wieder nach.",
+    "Eine prognostizierte Nullgradgrenze kann um mehrere hundert Meter danebenliegen; schau am Vortag noch einmal auf die Karte.",
+    "Lies vor jedem Tag abseits der Piste oder auf Tour den offiziellen Lawinenlagebericht (Links unten).",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Termine auf seiner Website."
+   ],
+   "captions": {
+    "map": "Neuschnee in den Alpen, Prognose für die 14 Tage vom 13. November bis zum 26. November (Mitte der Modelle ECMWF und GFS, aufs Gelände gebracht), mit den Skigebieten dieses Ausblicks.",
+    "week1": "Nur die erste Woche: Neuschnee vom 13. November bis zum 19. November.",
+    "week2": "Nur die zweite Woche: Neuschnee vom 20. November bis zum 26. November, wo die beiden Modelle am stärksten abweichen."
+   }
+  },
+  "it": {
+   "title": "Previsione neve a due settimane sulle Alpi: fino a 117 cm di neve fresca entro il 26 novembre",
+   "description": "Ecco le nuove mappe delle prossime due settimane sulle Alpi, dal 13 novembre al 26 novembre: la neve fresca attesa sul terreno, letta da i due …",
+   "lede": "Ecco le nuove mappe delle prossime due settimane sulle Alpi, dal 13 novembre al 26 novembre: la neve fresca attesa sul terreno, letta da i due modelli globali che arrivano a due settimane, ECMWF e GFS (valore medio, con la forchetta dei due). Il massimo va a Saint François Longchamp: circa 117 cm sui pendii alti, 94 cm–141 cm a seconda del modello, poi Paradiski con 114 cm. La neve in montagna è acqua trattenuta per la primavera: quello che cade ora alimenterà più tardi fiumi e invasi.",
+   "sections": [
+    {
+     "h": "Località per località, i prossimi 14 giorni",
+     "p": [
+      "A Saint François Longchamp (Francia) le due settimane fanno circa 117 cm (94 cm–141 cm a seconda del modello): 104 cm entro fine prima settimana, poi altri 14 cm. Il giorno più nevoso è il 18 novembre con 33 cm; 5 giorni portano 5 cm o più.",
+      "A Paradiski (Francia) le due settimane fanno circa 114 cm (97 cm–132 cm a seconda del modello): 103 cm entro fine prima settimana, poi altri 11 cm. Segnate il 18 novembre: è la giornata più grande, con 44 cm, su 5 giorni a 5 cm o più.",
+      "Les Grands Montets (Francia): circa 113 cm in 14 giorni (86 cm–140 cm tra i modelli), 100 cm nella prima settimana e 13 cm nella seconda. Segnate il 18 novembre: è la giornata più grande, con 37 cm, su 5 giorni a 5 cm o più.",
+      "A La Clusaz (Francia) le due settimane fanno circa 110 cm (87 cm–134 cm a seconda del modello): 91 cm entro fine prima settimana, poi altri 20 cm. Il giorno più nevoso è il 18 novembre con 35 cm; 5 giorni portano 5 cm o più.",
+      "Ovronnaz (Svizzera): circa 110 cm in 14 giorni (90 cm–130 cm tra i modelli), 94 cm nella prima settimana e 16 cm nella seconda. Segnate il 18 novembre: è la giornata più grande, con 32 cm, su 5 giorni a 5 cm o più.",
+      "A Arêches Beaufort (Francia) le due settimane fanno circa 108 cm (87 cm–129 cm a seconda del modello): 92 cm entro fine prima settimana, poi altri 16 cm. Il giorno più nevoso è il 18 novembre con 37 cm; 5 giorni portano 5 cm o più."
+     ]
+    },
+    {
+     "h": "Prima settimana contro seconda",
+     "p": [
+      "Su tutta la regione, il 78 % della neve della quindicina cade nella prima settimana (dal 13 novembre al 19 novembre), il resto nella seconda (dal 20 novembre al 26 novembre).",
+      "In anticipo: Saint François Longchamp, Paradiski, Les Grands Montets, La Clusaz, Ovronnaz e Arêches Beaufort ricevono gran parte della neve nella prima settimana.",
+      "Sulla mappa, circa 68.569 km² di terreno montano ricevono 20 cm o più nelle due settimane, e 18.212 km² ricevono 50 cm o più."
+     ]
+    },
+    {
+     "h": "Neve fresca per quota",
+     "p": [
+      "Le stesse due settimane per quota, su tutte le montagne della regione (ogni chilometro quadrato di terreno, non solo le località): tra 1.000 m e 1.500 m: tipicamente 10 cm, il quarto più nevoso di quella fascia 20 cm o più; tra 1.500 m e 2.000 m: tipicamente 28 cm, il quarto più nevoso di quella fascia 43 cm o più; tra 2.000 m e 2.500 m: tipicamente 32 cm, il quarto più nevoso di quella fascia 56 cm o più; tra 2.500 m e 3.000 m: tipicamente 36 cm, il quarto più nevoso di quella fascia 68 cm o più; tra 3.000 m e 4.500 m: tipicamente 62 cm, il quarto più nevoso di quella fascia 82 cm o più."
+     ]
+    },
+    {
+     "h": "I giorni da tenere d'occhio",
+     "p": [
+      "Le giornate di neve sulla regione, sulle 1166 località della nostra lista: venerdì 13 novembre (555 località su 1166 a 5 cm o più, fino a 27 cm a Krvavec), martedì 17 novembre (372 località su 1166 a 5 cm o più, fino a 24 cm a Les Grands Montets), mercoledì 18 novembre (524 località su 1166 a 5 cm o più, fino a 44 cm a Paradiski) e giovedì 19 novembre (626 località su 1166 a 5 cm o più, fino a 32 cm a Glacier 3000)."
+     ]
+    },
+    {
+     "h": "Come leggere le mappe",
+     "p": [
+      "Tre mappe: tutta la quindicina, poi la prima e la seconda settimana. I colori partono da un centimetro di neve fresca e scuriscono con la quantità; gli spilli danno il valore sui pendii alti delle località di questo bollettino.",
+      "Prendete la seconda settimana come una direzione. Quando i due modelli concordano, la forchetta è stretta; quando è larga, aspettate le mappe successive prima di prenotare. Nuove mappe escono ogni mattina."
+     ]
+    }
+   ],
+   "advice": [
+    "Pianificate la prima settimana con queste mappe; tenete la seconda flessibile e ricontrollate tra qualche giorno.",
+    "Uno zero termico previsto può sbagliare di diverse centinaia di metri; ricontrolla la mappa il giorno prima.",
+    "Prima di ogni uscita in fuoripista o scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date sul suo sito."
+   ],
+   "captions": {
+    "map": "Neve fresca sulle Alpi prevista per i 14 giorni dal 13 novembre al 26 novembre (valore medio dei modelli ECMWF e GFS, riportato sul terreno), con le località di questa tendenza.",
+    "week1": "Solo la prima settimana: neve fresca dal 13 novembre al 19 novembre.",
+    "week2": "Solo la seconda settimana: neve fresca dal 20 novembre al 26 novembre, dove i due modelli divergono di più."
+   }
+  },
+  "es": {
+   "title": "Previsión de nieve a dos semanas en los Alpes: hasta 117 cm de nieve nueva hasta el 26 de noviembre",
+   "description": "Aquí están los nuevos mapas de las próximas dos semanas en los Alpes, del 13 de noviembre al 26 de noviembre: la nieve nueva esperada sobre el …",
+   "lede": "Aquí están los nuevos mapas de las próximas dos semanas en los Alpes, del 13 de noviembre al 26 de noviembre: la nieve nueva esperada sobre el relieve, leída en los dos modelos globales que llegan a dos semanas, ECMWF y GFS (valor medio, con la horquilla de los dos). Lo máximo va a Saint François Longchamp: unos 117 cm en la parte alta, 94 cm–141 cm según el modelo, luego Paradiski con 114 cm. La nieve en la montaña es agua guardada para la primavera: lo que cae ahora alimenta después ríos y embalses.",
+   "sections": [
+    {
+     "h": "Estación por estación, los próximos 14 días",
+     "p": [
+      "En Saint François Longchamp (Francia) las dos semanas suman unos 117 cm (94 cm–141 cm según el modelo): 104 cm al final de la primera semana, luego 14 cm más. El día con más nieve es el 18 de noviembre con 33 cm; 5 días traen 5 cm o más.",
+      "En Paradiski (Francia) las dos semanas suman unos 114 cm (97 cm–132 cm según el modelo): 103 cm al final de la primera semana, luego 11 cm más. Apunta el 18 de noviembre: es el día más grande, con 44 cm, de 5 días con 5 cm o más.",
+      "Les Grands Montets (Francia): unos 113 cm en 14 días (86 cm–140 cm según el modelo), 100 cm la primera semana y 13 cm la segunda. Apunta el 18 de noviembre: es el día más grande, con 37 cm, de 5 días con 5 cm o más.",
+      "En La Clusaz (Francia) las dos semanas suman unos 110 cm (87 cm–134 cm según el modelo): 91 cm al final de la primera semana, luego 20 cm más. El día con más nieve es el 18 de noviembre con 35 cm; 5 días traen 5 cm o más.",
+      "Ovronnaz (Suiza): unos 110 cm en 14 días (90 cm–130 cm según el modelo), 94 cm la primera semana y 16 cm la segunda. Apunta el 18 de noviembre: es el día más grande, con 32 cm, de 5 días con 5 cm o más.",
+      "En Arêches Beaufort (Francia) las dos semanas suman unos 108 cm (87 cm–129 cm según el modelo): 92 cm al final de la primera semana, luego 16 cm más. El día con más nieve es el 18 de noviembre con 37 cm; 5 días traen 5 cm o más."
+     ]
+    },
+    {
+     "h": "Primera semana frente a segunda",
+     "p": [
+      "En toda la región, el 78 % de la nieve de la quincena cae la primera semana (del 13 de noviembre al 19 de noviembre), el resto la segunda (del 20 de noviembre al 26 de noviembre).",
+      "Pronto en la quincena: Saint François Longchamp, Paradiski, Les Grands Montets, La Clusaz, Ovronnaz y Arêches Beaufort reciben la mayor parte de su nieve la primera semana.",
+      "En el mapa, unos 68.569 km² de terreno de montaña reciben 20 cm o más en las dos semanas, y 18.212 km² reciben 50 cm o más."
+     ]
+    },
+    {
+     "h": "Nieve nueva por altura",
+     "p": [
+      "Las mismas dos semanas por altura, sobre todas las montañas de la región (cada kilómetro cuadrado de terreno, no solo las estaciones): entre 1000 m y 1500 m: típicamente 10 cm, el cuarto más nevado de esa franja 20 cm o más; entre 1500 m y 2000 m: típicamente 28 cm, el cuarto más nevado de esa franja 43 cm o más; entre 2000 m y 2500 m: típicamente 32 cm, el cuarto más nevado de esa franja 56 cm o más; entre 2500 m y 3000 m: típicamente 36 cm, el cuarto más nevado de esa franja 68 cm o más; entre 3000 m y 4500 m: típicamente 62 cm, el cuarto más nevado de esa franja 82 cm o más."
+     ]
+    },
+    {
+     "h": "Los días a vigilar",
+     "p": [
+      "Los días de nieve en la región, sobre las 1166 estaciones de nuestra lista: viernes 13 de noviembre (555 de 1166 estaciones con 5 cm o más, hasta 27 cm en Krvavec), martes 17 de noviembre (372 de 1166 estaciones con 5 cm o más, hasta 24 cm en Les Grands Montets), miércoles 18 de noviembre (524 de 1166 estaciones con 5 cm o más, hasta 44 cm en Paradiski) y jueves 19 de noviembre (626 de 1166 estaciones con 5 cm o más, hasta 32 cm en Glacier 3000)."
+     ]
+    },
+    {
+     "h": "Cómo leer los mapas",
+     "p": [
+      "Tres mapas: toda la quincena, luego la primera y la segunda semana. Los colores empiezan en un centímetro de nieve nueva y se oscurecen con la cantidad; los pines dan el valor en la parte alta de las estaciones de este parte.",
+      "Toma la segunda semana como una dirección. Cuando los dos modelos coinciden, la horquilla es estrecha; cuando es ancha, espera a los próximos mapas antes de reservar. Salen mapas nuevos cada mañana."
+     ]
+    }
+   ],
+   "advice": [
+    "Planifica la primera semana con estos mapas; deja la segunda abierta y vuelve a mirar en unos días.",
+    "Una isoterma de 0 °C prevista puede fallar en varios cientos de metros; vuelve a mirar el mapa el día antes.",
+    "Antes de cualquier salida fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas en su web."
+   ],
+   "captions": {
+    "map": "Nieve nueva en los Alpes prevista para los 14 días del 13 de noviembre al 26 de noviembre (punto medio de los modelos ECMWF y GFS, llevado al relieve), con las estaciones de esta tendencia.",
+    "week1": "Solo la primera semana: nieve nueva del 13 de noviembre al 19 de noviembre.",
+    "week2": "Solo la segunda semana: nieve nueva del 20 de noviembre al 26 de noviembre, donde los dos modelos más discrepan."
+   }
+  },
+  "ar": {
+   "title": "توقعات التلج لجوج سيمانات فجبال الألب: حتى ل 117 سم ديال التلج الجديد حتى ل 26 نونبر",
+   "description": "هاهي الخرائط الجديدة ديال جوج سيمانات الجايين فجبال الألب، من 13 نونبر حتى ل 26 نونبر: التلج الجديد المتوقع على الأرض، مقري من جوج الموديلات العالمية …",
+   "lede": "هاهي الخرائط الجديدة ديال جوج سيمانات الجايين فجبال الألب، من 13 نونبر حتى ل 26 نونبر: التلج الجديد المتوقع على الأرض، مقري من جوج الموديلات العالمية اللي كيوصلو لجوج سيمانات، ECMWF و GFS (القيمة الوسطى، مع المجال ديال بجوج). الكمية الكبيرة غادي تمشي ل Saint François Longchamp: تقريبا 117 سم ديال التلج فالجهة الفوقانية، 94 سم حتى ل 141 سم حسب الموديل، ومن بعد Paradiski ب 114 سم. التلج فالجبال هو ما مخزون للربيع: اللي طاح دابا غادي يعمر الوديان والسدود من بعد.",
+   "sections": [
+    {
+     "h": "محطة بمحطة، 14 يوم الجايين",
+     "p": [
+      "ف Saint François Longchamp (فرنسا) جوج سيمانات كيجمعو تقريبا 117 سم (94 سم حتى ل 141 سم حسب الموديل): 104 سم حتى لآخر السيمانة اللولة، ومن بعد 14 سم زيادة. النهار اللي فيه التلج كثر هو 18 نونبر ب 33 سم؛ 5 أيام كيجيبو 5 سم ولا كثر.",
+      "ف Paradiski (فرنسا) جوج سيمانات كيجمعو تقريبا 114 سم (97 سم حتى ل 132 سم حسب الموديل): 103 سم حتى لآخر السيمانة اللولة، ومن بعد 11 سم زيادة. علّم على 18 نونبر: هذاك هو أكبر نهار، ب 44 سم، من 5 أيام ب 5 سم ولا كثر.",
+      "Les Grands Montets (فرنسا): تقريبا 113 سم ف 14 يوم (86 سم حتى ل 140 سم بين الموديلات)، 100 سم فالسيمانة اللولة و 13 سم فالثانية. علّم على 18 نونبر: هذاك هو أكبر نهار، ب 37 سم، من 5 أيام ب 5 سم ولا كثر.",
+      "ف La Clusaz (فرنسا) جوج سيمانات كيجمعو تقريبا 110 سم (87 سم حتى ل 134 سم حسب الموديل): 91 سم حتى لآخر السيمانة اللولة، ومن بعد 20 سم زيادة. النهار اللي فيه التلج كثر هو 18 نونبر ب 35 سم؛ 5 أيام كيجيبو 5 سم ولا كثر.",
+      "Ovronnaz (سويسرا): تقريبا 110 سم ف 14 يوم (90 سم حتى ل 130 سم بين الموديلات)، 94 سم فالسيمانة اللولة و 16 سم فالثانية. علّم على 18 نونبر: هذاك هو أكبر نهار، ب 32 سم، من 5 أيام ب 5 سم ولا كثر.",
+      "ف Arêches Beaufort (فرنسا) جوج سيمانات كيجمعو تقريبا 108 سم (87 سم حتى ل 129 سم حسب الموديل): 92 سم حتى لآخر السيمانة اللولة، ومن بعد 16 سم زيادة. النهار اللي فيه التلج كثر هو 18 نونبر ب 37 سم؛ 5 أيام كيجيبو 5 سم ولا كثر."
+     ]
+    },
+    {
+     "h": "السيمانة اللولة مقابل الثانية",
+     "p": [
+      "فالمنطقة كاملة، 78 % ديال التلج ديال 15 يوم كيطيح فالسيمانة اللولة (من 13 نونبر حتى ل 19 نونبر)، والباقي فالثانية (من 20 نونبر حتى ل 26 نونبر).",
+      "بكري: Saint François Longchamp، Paradiski، Les Grands Montets، La Clusaz، Ovronnaz و Arêches Beaufort غادي ياخدو أغلب التلج ديالهم فالسيمانة اللولة.",
+      "فالخريطة، تقريبا 68569 كم² ديال الجبال غادي ياخدو 20 سم ولا كثر فجوج سيمانات، و 18212 كم² غادي ياخدو 50 سم ولا كثر."
+     ]
+    },
+    {
+     "h": "التلج الجديد حسب العلو",
+     "p": [
+      "نفس جوج سيمانات حسب العلو، على كاع جبال المنطقة (كل كيلومتر مربع ديال الأرض، ماشي غير المحطات): بين 1000 م و 1500 م: عادة 10 سم، والربع اللي فيه التلج كثر فهاد الطبقة 20 سم ولا كثر; بين 1500 م و 2000 م: عادة 28 سم، والربع اللي فيه التلج كثر فهاد الطبقة 43 سم ولا كثر; بين 2000 م و 2500 م: عادة 32 سم، والربع اللي فيه التلج كثر فهاد الطبقة 56 سم ولا كثر; بين 2500 م و 3000 م: عادة 36 سم، والربع اللي فيه التلج كثر فهاد الطبقة 68 سم ولا كثر; بين 3000 م و 4500 م: عادة 62 سم، والربع اللي فيه التلج كثر فهاد الطبقة 82 سم ولا كثر."
+     ]
+    },
+    {
+     "h": "الأيام اللي خاص تراقب",
+     "p": [
+      "أيام التلج فالمنطقة، على 1166 محطة فاللائحة ديالنا: الجمعة 13 نونبر (555 من 1166 محطة ب 5 سم ولا كثر، حتى ل 27 سم ف Krvavec)، الثلاثاء 17 نونبر (372 من 1166 محطة ب 5 سم ولا كثر، حتى ل 24 سم ف Les Grands Montets)، الأربعاء 18 نونبر (524 من 1166 محطة ب 5 سم ولا كثر، حتى ل 44 سم ف Paradiski) و الخميس 19 نونبر (626 من 1166 محطة ب 5 سم ولا كثر، حتى ل 32 سم ف Glacier 3000)."
+     ]
+    },
+    {
+     "h": "كيفاش تقرا الخرائط",
+     "p": [
+      "ثلاث خرائط: 15 يوم كاملين، ومن بعد السيمانة اللولة والثانية. الألوان كتبدا من سنتيمتر واحد ديال التلج الجديد وكتغمق مع الكمية؛ العلامات كتعطي القيمة فالجهة الفوقانية ديال المحطات ديال هاد التقرير.",
+      "خود السيمانة الثانية بحال اتجاه. ملي كيتفقو جوج الموديلات، المجال كيكون ضيق؛ وملي كيكون واسع، تسنى الخرائط الجاية قبل ما تحجز. خرائط جديدة كيخرجو كل صباح."
+     ]
+    }
+   ],
+   "advice": [
+    "خطط للسيمانة اللولة بهاد الخرائط؛ خلي الثانية مرنة وعاود شوف من بعد شي أيام.",
+    "علو 0 °C المتوقع يقدر يغلط بشي مئات ديال الميترات؛ عاود شوف الخريطة نهار قبل.",
+    "قبل أي خرجة برا البيست ولا جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديالها."
+   ],
+   "captions": {
+    "map": "التلج الجديد فجبال الألب المتوقع ل 14 يوم من 13 نونبر حتى ل 26 نونبر (الوسط ديال موديلات ECMWF و GFS، محطوط على الأرض)، مع المحطات ديال هاد التوقعات.",
+    "week1": "غير السيمانة اللولة: التلج الجديد من 13 نونبر حتى ل 19 نونبر.",
+    "week2": "غير السيمانة الثانية: التلج الجديد من 20 نونبر حتى ل 26 نونبر، فين جوج الموديلات كيختالفو كثر."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "de": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "it": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "es": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  }
+ },
+ "words_en": 744,
+ "indexable": true,
+ "main": {
+  "slug": "saint_francois_longchamp",
+  "name": "Saint François Longchamp",
+  "lat": 45.4305,
+  "lon": 6.381
+ },
+ "places": [
+  {
+   "name": "Saint François Longchamp",
+   "lat": 45.4305,
+   "lon": 6.381
+  },
+  {
+   "name": "Paradiski",
+   "lat": 45.5325,
+   "lon": 6.7491
+  },
+  {
+   "name": "Les Grands Montets",
+   "lat": 45.9617,
+   "lon": 6.944
+  },
+  {
+   "name": "La Clusaz",
+   "lat": 45.8873,
+   "lon": 6.4343
+  },
+  {
+   "name": "Ovronnaz",
+   "lat": 46.2025,
+   "lon": 7.1382
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "saint_francois_longchamp",
+   "name": "Saint François Longchamp"
+  },
+  {
+   "slug": "paradiski",
+   "name": "Paradiski"
+  },
+  {
+   "slug": "chamonix",
+   "name": "Les Grands Montets"
+  },
+  {
+   "slug": "la_clusaz",
+   "name": "La Clusaz"
+  },
+  {
+   "slug": "ovronnaz",
+   "name": "Ovronnaz"
+  },
+  {
+   "slug": "areches_beaufort",
+   "name": "Arêches Beaufort"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "saint_francois_longchamp",
+    "name": "Saint François Longchamp",
+    "depth": 24,
+    "new72": 18,
+    "next": 8,
+    "top_m": 2516
+   },
+   {
+    "slug": "paradiski",
+    "name": "Paradiski",
+    "depth": 58,
+    "new72": 28,
+    "next": 5,
+    "top_m": 3205
+   },
+   {
+    "slug": "chamonix",
+    "name": "Les Grands Montets",
+    "depth": 50,
+    "new72": 42,
+    "next": 5,
+    "top_m": 2768
+   },
+   {
+    "slug": "la_clusaz",
+    "name": "La Clusaz",
+    "depth": 5,
+    "new72": 3,
+    "next": 5,
+    "top_m": 2476
+   },
+   {
+    "slug": "ovronnaz",
+    "name": "Ovronnaz",
+    "depth": 77,
+    "new72": 30,
+    "next": 4,
+    "top_m": 2456
+   },
+   {
+    "slug": "areches_beaufort",
+    "name": "Arêches Beaufort",
+    "depth": 19,
+    "new72": 5,
+    "next": 8,
+    "top_m": 2319
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "EAWS (Alps)",
+   "url": "https://www.avalanches.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@45.431,6.381,9.0",
+ "seconds": 32.8,
+ "facts_used": 59,
+ "voice": "hydro",
+ "media_ids": [
+  "map",
+  "week1",
+  "week2"
+ ],
+ "overlap": {
+  "before": 30.5,
+  "after": 26.8,
+  "with": "us-west-2-week-snow-forecast-maps-12-november-2026",
+  "tries": 1
+ },
+ "similarity": {
+  "max": 0.126,
+  "with": "us-west-2-week-snow-forecast-maps-12-november-2026"
+ },
+ "publish_utc": "2026-11-12T18:20:16Z"
+}

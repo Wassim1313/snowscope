@@ -1,0 +1,1181 @@
+{
+ "id": "2026-11-12-us_west-outlook14",
+ "slug": "us-west-2-week-snow-forecast-maps-12-november-2026",
+ "date": "2026-11-12",
+ "published_utc": "2026-11-12T18:20:16Z",
+ "updated_utc": "2026-11-12T18:20:16Z",
+ "region": "US_WEST",
+ "angle": "outlook14",
+ "score": 80,
+ "signature": "2026-11-12|china_peak_mountain_resort:140|dodge_ridge_ski_area:140|bear_valley:130",
+ "keyword": {
+  "family": "two-week-forecast",
+  "entity": "us_west",
+  "region": "US_WEST",
+  "date": "2026-11-12"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "two_week_snow_outlook",
+  "region": "US West",
+  "date": "2026-11-12",
+  "weekday": "Thursday",
+  "model_run": "2026-11-12",
+  "forecast_days": [
+   "2026-11-13",
+   "2026-11-14",
+   "2026-11-15"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 129540,
+   "resorts_with_snow": 121,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-10",
+   "snow_covered_area_km2": 146020,
+   "resorts_with_snow": 126
+  },
+  "region_forecast": {
+   "date": "2026-11-15",
+   "snow_covered_area_km2": 169080,
+   "resorts_with_snow": 135
+  },
+  "question": "Where will new snow fall in the next two weeks, how much, in which week, and at which height?",
+  "outlook_days": [
+   "2026-11-13",
+   "2026-11-14",
+   "2026-11-15",
+   "2026-11-16",
+   "2026-11-17",
+   "2026-11-18",
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26"
+  ],
+  "week1": {
+   "from": "2026-11-13",
+   "to": "2026-11-19"
+  },
+  "week2": {
+   "from": "2026-11-20",
+   "to": "2026-11-26"
+  },
+  "models": [
+   "ECMWF IFS",
+   "NOAA GFS"
+  ],
+  "lattice_points": 949,
+  "region_outlook": {
+   "max_new_cm_next_14_days": 164,
+   "area_km2_with_20cm_or_more": 473140,
+   "area_km2_with_50cm_or_more": 44010,
+   "area_km2_mountains": 3131058,
+   "week1_share_pct": 31
+  },
+  "new_cm_next_14_days_by_height": [
+   {
+    "from_m": 1000,
+    "to_m": 1500,
+    "new_cm_next_14_days_median": 6,
+    "new_cm_next_14_days_upper_quarter": 10
+   },
+   {
+    "from_m": 1500,
+    "to_m": 2000,
+    "new_cm_next_14_days_median": 11,
+    "new_cm_next_14_days_upper_quarter": 18
+   },
+   {
+    "from_m": 2000,
+    "to_m": 2500,
+    "new_cm_next_14_days_median": 17,
+    "new_cm_next_14_days_upper_quarter": 25
+   },
+   {
+    "from_m": 2500,
+    "to_m": 3000,
+    "new_cm_next_14_days_median": 27,
+    "new_cm_next_14_days_upper_quarter": 38
+   },
+   {
+    "from_m": 3000,
+    "to_m": 4500,
+    "new_cm_next_14_days_median": 33,
+    "new_cm_next_14_days_upper_quarter": 46
+   }
+  ],
+  "resorts_followed": 195,
+  "thresholds_cm": [
+   1,
+   5,
+   20,
+   50
+  ],
+  "best_days": [
+   {
+    "date": "2026-11-14",
+    "resorts_with_5cm_or_more": 56,
+    "max_cm": 27,
+    "top_resort": "China Peak"
+   },
+   {
+    "date": "2026-11-18",
+    "resorts_with_5cm_or_more": 93,
+    "max_cm": 22,
+    "top_resort": "Mt. Shasta Ski Park"
+   },
+   {
+    "date": "2026-11-21",
+    "resorts_with_5cm_or_more": 62,
+    "max_cm": 13,
+    "top_resort": "Echo Mountain"
+   },
+   {
+    "date": "2026-11-26",
+    "resorts_with_5cm_or_more": 92,
+    "max_cm": 22,
+    "top_resort": "China Peak"
+   }
+  ],
+  "resorts": [
+   {
+    "name": "China Peak",
+    "country": "United States",
+    "top_m": 2630,
+    "base_m": 2143,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 35,
+    "slug": "china_peak_mountain_resort",
+    "new_cm_next_14_days": 137,
+    "new_cm_next_14_days_low": 41,
+    "new_cm_next_14_days_high": 232,
+    "new_cm_days_1_7": 73,
+    "new_cm_days_8_14": 64,
+    "snowiest_day": "2026-11-14",
+    "snowiest_day_cm": 27,
+    "days_with_5cm_or_more": 7,
+    "days_with_snow": 9,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 27
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 11
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 14
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 19
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 26
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 12
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 22
+     }
+    ],
+    "upper_slopes_height_m": 2555
+   },
+   {
+    "name": "Dodge Ridge",
+    "country": "United States",
+    "top_m": 2482,
+    "base_m": 2002,
+    "depth_cm_upper_slopes_today": 16,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 30,
+    "slug": "dodge_ridge_ski_area",
+    "new_cm_next_14_days": 135,
+    "new_cm_next_14_days_low": 48,
+    "new_cm_next_14_days_high": 222,
+    "new_cm_days_1_7": 68,
+    "new_cm_days_8_14": 67,
+    "snowiest_day": "2026-11-20",
+    "snowiest_day_cm": 26,
+    "days_with_5cm_or_more": 8,
+    "days_with_snow": 9,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 25
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 9
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 7
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 17
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 10
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 26
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 19
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 20
+     }
+    ],
+    "upper_slopes_height_m": 2367
+   },
+   {
+    "name": "Bear Valley",
+    "country": "United States",
+    "top_m": 2586,
+    "base_m": 2024,
+    "depth_cm_upper_slopes_today": 19,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 39,
+    "slug": "bear_valley",
+    "new_cm_next_14_days": 128,
+    "new_cm_next_14_days_low": 47,
+    "new_cm_next_14_days_high": 209,
+    "new_cm_days_1_7": 67,
+    "new_cm_days_8_14": 61,
+    "snowiest_day": "2026-11-14",
+    "snowiest_day_cm": 23,
+    "days_with_5cm_or_more": 8,
+    "days_with_snow": 9,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 23
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 11
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 17
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 8
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 22
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 17
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 19
+     }
+    ],
+    "upper_slopes_height_m": 2426
+   },
+   {
+    "name": "Badger Pass",
+    "country": "United States",
+    "top_m": 2376,
+    "base_m": 2203,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 25,
+    "slug": "badger_pass_ski_area",
+    "new_cm_next_14_days": 126,
+    "new_cm_next_14_days_low": 43,
+    "new_cm_next_14_days_high": 210,
+    "new_cm_days_1_7": 66,
+    "new_cm_days_8_14": 61,
+    "snowiest_day": "2026-11-20",
+    "snowiest_day_cm": 23,
+    "days_with_5cm_or_more": 8,
+    "days_with_snow": 9,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 22
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 7
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 10
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 13
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 14
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 23
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 15
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 20
+     }
+    ],
+    "upper_slopes_height_m": 2303
+   },
+   {
+    "name": "Mammoth Mountain",
+    "country": "United States",
+    "top_m": 3360,
+    "base_m": 2457,
+    "depth_cm_upper_slopes_today": 15,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 24,
+    "slug": "mammoth_mountain",
+    "new_cm_next_14_days": 118,
+    "new_cm_next_14_days_low": 38,
+    "new_cm_next_14_days_high": 197,
+    "new_cm_days_1_7": 58,
+    "new_cm_days_8_14": 60,
+    "snowiest_day": "2026-11-26",
+    "snowiest_day_cm": 22,
+    "days_with_5cm_or_more": 6,
+    "days_with_snow": 10,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 20
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 12
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 16
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 21
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 15
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 22
+     }
+    ],
+    "upper_slopes_height_m": 3039
+   },
+   {
+    "name": "Kirkwood",
+    "country": "United States",
+    "top_m": 2884,
+    "base_m": 2382,
+    "depth_cm_upper_slopes_today": 20,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 40,
+    "slug": "kirkwood_mountain_resort",
+    "new_cm_next_14_days": 114,
+    "new_cm_next_14_days_low": 44,
+    "new_cm_next_14_days_high": 185,
+    "new_cm_days_1_7": 62,
+    "new_cm_days_8_14": 52,
+    "snowiest_day": "2026-11-14",
+    "snowiest_day_cm": 20,
+    "days_with_5cm_or_more": 8,
+    "days_with_snow": 10,
+    "daily": [
+     {
+      "date": "2026-11-13",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-14",
+      "cm": 20
+     },
+     {
+      "date": "2026-11-15",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-16",
+      "cm": 11
+     },
+     {
+      "date": "2026-11-17",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 15
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 7
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 17
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 15
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 19
+     }
+    ],
+    "upper_slopes_height_m": 2721
+   }
+  ],
+  "notes": [
+   "new snow = middle of the two models' daily snowfall, brought onto the terrain (1 km); low / high = the two models",
+   "resort values = the slopes at or above mid-mountain within a few km of the resort, not the village",
+   "days 1-14 = tomorrow to day 14; week 1 = days 1-7, week 2 = days 8-14",
+   "snow by height = all the mountain terrain of the region, not only resorts"
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-12-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-12-november-2026/map_t.webp",
+   "bytes": 34436,
+   "snow_frac": 0.5972,
+   "weak": false
+  },
+  {
+   "id": "week1",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-12-november-2026/week1.webp",
+   "thumb": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-12-november-2026/week1_t.webp",
+   "bytes": 31698,
+   "snow_frac": 0.3488,
+   "weak": false
+  },
+  {
+   "id": "week2",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-12-november-2026/week2.webp",
+   "thumb": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-12-november-2026/week2_t.webp",
+   "bytes": 29436,
+   "snow_frac": 0.5908,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "US West snow outlook to 26 November: 54 in at China Peak, 53 in at Dodge Ridge",
+   "description": "Our two-week maps show where new snow should fall in the US West between 13 November and 26 November, from the two global models that reach two …",
+   "lede": "Our two-week maps show where new snow should fall in the US West between 13 November and 26 November, from the two global models that reach two weeks, ECMWF and GFS: we take the middle of the two and always give their range. The most goes to China Peak: about 54 in (137 cm) on its upper slopes, 16 in (41 cm)–91 in (232 cm) depending on the model, then Dodge Ridge with 53 in (135 cm). On the ground, the first thing we check is the shade: snow lasts where the sun cannot reach it.",
+   "sections": [
+    {
+     "h": "Resort by resort, the next 14 days",
+     "p": [
+      "China Peak (United States): about 54 in (137 cm) in 14 days (16 in (41 cm)–91 in (232 cm) between the models), 29 in (73 cm) in the first week and 25 in (64 cm) in the second. Mark 14 November: that is the biggest day, with 11 in (27 cm), out of 7 days at 5 cm or more.",
+      "Dodge Ridge (United States): about 53 in (135 cm) in 14 days (19 in (48 cm)–87 in (222 cm) between the models), 27 in (68 cm) in the first week and 26 in (67 cm) in the second. Mark 20 November: that is the biggest day, with 10 in (26 cm), out of 8 days at 5 cm or more.",
+      "Bear Valley (United States): about 50 in (128 cm) in 14 days (19 in (47 cm)–82 in (209 cm) between the models), 26 in (67 cm) in the first week and 24 in (61 cm) in the second. The snowiest day is 14 November with 9 in (23 cm); 8 days bring 5 cm or more.",
+      "Badger Pass (United States): about 50 in (126 cm) in 14 days (17 in (43 cm)–83 in (210 cm) between the models), 26 in (66 cm) in the first week and 24 in (61 cm) in the second. The snowiest day is 20 November with 9 in (23 cm); 8 days bring 5 cm or more.",
+      "At Mammoth Mountain (United States) the two weeks add up to about 46 in (118 cm) (15 in (38 cm)–78 in (197 cm) depending on the model): 23 in (58 cm) by the end of the first week, then 24 in (60 cm) more. The snowiest day is 26 November with 9 in (22 cm); 6 days bring 5 cm or more.",
+      "At Kirkwood (United States) the two weeks add up to about 45 in (114 cm) (17 in (44 cm)–73 in (185 cm) depending on the model): 24 in (62 cm) by the end of the first week, then 20 in (52 cm) more. Mark 14 November: that is the biggest day, with 8 in (20 cm), out of 8 days at 5 cm or more."
+     ]
+    },
+    {
+     "h": "First week against second week",
+     "p": [
+      "Split by week, the first one (13 November to 19 November) carries 31 % of the two weeks' snow across the region; the second (20 November to 26 November) carries the rest.",
+      "Front-loaded: China Peak, Dodge Ridge, Bear Valley, Badger Pass and Kirkwood get most of their snow in the first week.",
+      "Later: at Mammoth Mountain the second week brings more than the first.",
+      "On the map, about 182,680 sq mi (473,140 km²) of mountain terrain get 20 cm or more over the two weeks, and 16,992 sq mi (44,010 km²) get 50 cm or more."
+     ]
+    },
+    {
+     "h": "New snow by height",
+     "p": [
+      "The same two weeks by height, over all the mountains of the region (every square kilometre of terrain, not only the resorts): between 3,281 ft (1,000 m) and 4,921 ft (1,500 m): typically 2 in (6 cm), the snowiest quarter of that band 4 in (10 cm) or more; between 4,921 ft (1,500 m) and 6,562 ft (2,000 m): typically 4 in (11 cm), the snowiest quarter of that band 7 in (18 cm) or more; between 6,562 ft (2,000 m) and 8,202 ft (2,500 m): typically 7 in (17 cm), the snowiest quarter of that band 10 in (25 cm) or more; between 8,202 ft (2,500 m) and 9,843 ft (3,000 m): typically 11 in (27 cm), the snowiest quarter of that band 15 in (38 cm) or more; between 9,843 ft (3,000 m) and 14,764 ft (4,500 m): typically 13 in (33 cm), the snowiest quarter of that band 18 in (46 cm) or more."
+     ]
+    },
+    {
+     "h": "The days to watch",
+     "p": [
+      "Snow days across the region, over the 195 resorts in our list: Saturday 14 November (56 of 195 resorts at 5 cm or more, up to 11 in (27 cm) at China Peak), Wednesday 18 November (93 of 195 resorts at 5 cm or more, up to 9 in (22 cm) at Mt. Shasta Ski Park), Saturday 21 November (62 of 195 resorts at 5 cm or more, up to 5 in (13 cm) at Echo Mountain) and Thursday 26 November (92 of 195 resorts at 5 cm or more, up to 9 in (22 cm) at China Peak)."
+     ]
+    },
+    {
+     "h": "How to read the maps",
+     "p": [
+      "How to read them: one map for the two weeks together, one per week. The lighter the green, the less new snow; the deep blues and purples mark the big totals. Each pin shows the resort's upper slopes.",
+      "Treat the second week as a direction of travel. When the two models agree, the range is narrow; when it is wide, wait for the next maps before you book. New maps come out every morning."
+     ]
+    }
+   ],
+   "advice": [
+    "Plan the first week with these maps; keep the second week loose and check again in a few days.",
+    "The 0 °C level is a forecast and can move by several hundred metres, which changes where rain turns to snow: check the map again the day before you go.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website."
+   ],
+   "captions": {
+    "map": "New snow in the US West forecast for the 14 days from 13 November to 26 November (middle of the ECMWF and GFS models, brought onto the terrain), with the resorts of this outlook.",
+    "week1": "The first week only: new snow from 13 November to 19 November.",
+    "week2": "The second week only: new snow from 20 November to 26 November, where the two models disagree most."
+   }
+  },
+  "fr": {
+   "title": "Tendance neige Ouest américain jusqu'au 26 novembre : 54 in à China Peak, 53 in à Dodge Ridge",
+   "description": "Nos cartes à deux semaines montrent où la neige fraîche devrait tomber dans l'Ouest américain entre le 13 novembre et le 26 novembre, d'après les …",
+   "lede": "Nos cartes à deux semaines montrent où la neige fraîche devrait tomber dans l'Ouest américain entre le 13 novembre et le 26 novembre, d'après les deux modèles mondiaux qui portent à deux semaines, ECMWF et GFS : nous prenons le milieu des deux et donnons toujours leur fourchette. Le plus gros lot va à China Peak : à peu près 54 in (137 cm) sur le haut du domaine, 16 in (41 cm)–91 in (232 cm) selon le modèle, puis Dodge Ridge avec 53 in (135 cm). Sur le terrain, la première chose que nous regardons, c'est l'ombre : la neige tient là où le soleil n'arrive pas.",
+   "sections": [
+    {
+     "h": "Station par station, les 14 prochains jours",
+     "p": [
+      "China Peak (États-Unis) : environ 54 in (137 cm) en 14 jours (16 in (41 cm)–91 in (232 cm) selon le modèle), 29 in (73 cm) la première semaine et 25 in (64 cm) la seconde. Notez le 14 novembre : c'est la plus grosse journée, avec 11 in (27 cm), sur 7 jours à 5 cm ou plus.",
+      "Dodge Ridge (États-Unis) : environ 53 in (135 cm) en 14 jours (19 in (48 cm)–87 in (222 cm) selon le modèle), 27 in (68 cm) la première semaine et 26 in (67 cm) la seconde. Notez le 20 novembre : c'est la plus grosse journée, avec 10 in (26 cm), sur 8 jours à 5 cm ou plus.",
+      "Bear Valley (États-Unis) : environ 50 in (128 cm) en 14 jours (19 in (47 cm)–82 in (209 cm) selon le modèle), 26 in (67 cm) la première semaine et 24 in (61 cm) la seconde. Le jour le plus neigeux est le 14 novembre avec 9 in (23 cm) ; 8 jours apportent 5 cm ou plus.",
+      "Badger Pass (États-Unis) : environ 50 in (126 cm) en 14 jours (17 in (43 cm)–83 in (210 cm) selon le modèle), 26 in (66 cm) la première semaine et 24 in (61 cm) la seconde. Le jour le plus neigeux est le 20 novembre avec 9 in (23 cm) ; 8 jours apportent 5 cm ou plus.",
+      "À Mammoth Mountain (États-Unis), les deux semaines totalisent environ 46 in (118 cm) (15 in (38 cm)–78 in (197 cm) selon le modèle) : 23 in (58 cm) à la fin de la première semaine, puis 24 in (60 cm) de plus. Le jour le plus neigeux est le 26 novembre avec 9 in (22 cm) ; 6 jours apportent 5 cm ou plus.",
+      "À Kirkwood (États-Unis), les deux semaines totalisent environ 45 in (114 cm) (17 in (44 cm)–73 in (185 cm) selon le modèle) : 24 in (62 cm) à la fin de la première semaine, puis 20 in (52 cm) de plus. Notez le 14 novembre : c'est la plus grosse journée, avec 8 in (20 cm), sur 8 jours à 5 cm ou plus."
+     ]
+    },
+    {
+     "h": "Première semaine contre seconde",
+     "p": [
+      "Semaine par semaine, la première (du 13 novembre au 19 novembre) porte 31 % de la neige des deux semaines sur la région ; la seconde (du 20 novembre au 26 novembre) porte le reste.",
+      "Tôt dans la quinzaine : China Peak, Dodge Ridge, Bear Valley, Badger Pass et Kirkwood reçoivent l'essentiel de leur neige la première semaine.",
+      "Plus tard : à Mammoth Mountain, la seconde semaine apporte plus que la première.",
+      "Sur la carte, environ 182 680 sq mi (473 140 km²) de terrain de montagne reçoivent 20 cm ou plus sur les deux semaines, et 16 992 sq mi (44 010 km²) reçoivent 50 cm ou plus."
+     ]
+    },
+    {
+     "h": "Neige fraîche par altitude",
+     "p": [
+      "Les mêmes deux semaines par altitude, sur toutes les montagnes de la région (chaque kilomètre carré de terrain, pas seulement les stations) : entre 3 281 ft (1 000 m) et 4 921 ft (1 500 m) : typiquement 2 in (6 cm), le quart le plus enneigé de cette tranche 4 in (10 cm) ou plus; entre 4 921 ft (1 500 m) et 6 562 ft (2 000 m) : typiquement 4 in (11 cm), le quart le plus enneigé de cette tranche 7 in (18 cm) ou plus; entre 6 562 ft (2 000 m) et 8 202 ft (2 500 m) : typiquement 7 in (17 cm), le quart le plus enneigé de cette tranche 10 in (25 cm) ou plus; entre 8 202 ft (2 500 m) et 9 843 ft (3 000 m) : typiquement 11 in (27 cm), le quart le plus enneigé de cette tranche 15 in (38 cm) ou plus; entre 9 843 ft (3 000 m) et 14 764 ft (4 500 m) : typiquement 13 in (33 cm), le quart le plus enneigé de cette tranche 18 in (46 cm) ou plus."
+     ]
+    },
+    {
+     "h": "Les jours à surveiller",
+     "p": [
+      "Les journées de neige sur la région, sur les 195 stations de notre liste : samedi 14 novembre (56 stations sur 195 à 5 cm ou plus, jusqu'à 11 in (27 cm) à China Peak), mercredi 18 novembre (93 stations sur 195 à 5 cm ou plus, jusqu'à 9 in (22 cm) à Mt. Shasta Ski Park), samedi 21 novembre (62 stations sur 195 à 5 cm ou plus, jusqu'à 5 in (13 cm) à Echo Mountain) et jeudi 26 novembre (92 stations sur 195 à 5 cm ou plus, jusqu'à 9 in (22 cm) à China Peak)."
+     ]
+    },
+    {
+     "h": "Comment lire les cartes",
+     "p": [
+      "Comment les lire : une carte pour les deux semaines ensemble, une par semaine. Plus le vert est clair, moins il y a de neige fraîche ; les bleus profonds et les violets marquent les gros cumuls. Chaque épingle montre le haut de la station.",
+      "Prenez la seconde semaine comme une direction. Quand les deux modèles s'accordent, la fourchette est étroite ; quand elle est large, attendez les cartes suivantes avant de réserver. De nouvelles cartes sortent chaque matin."
+     ]
+    }
+   ],
+   "advice": [
+    "Planifiez la première semaine avec ces cartes ; gardez la seconde souple et revérifiez dans quelques jours.",
+    "L'isotherme 0 °C est une prévision et peut bouger de plusieurs centaines de mètres, ce qui change l'endroit où la pluie devient neige : revoyez la carte la veille.",
+    "Avant toute sortie hors-piste ou en randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates sur son site."
+   ],
+   "captions": {
+    "map": "Neige fraîche dans l'Ouest américain prévue sur les 14 jours du 13 novembre au 26 novembre (milieu des modèles ECMWF et GFS, ramené sur le relief), avec les stations de ce bulletin.",
+    "week1": "La première semaine seule : neige fraîche du 13 novembre au 19 novembre.",
+    "week2": "La seconde semaine seule : neige fraîche du 20 novembre au 26 novembre, là où les deux modèles divergent le plus."
+   }
+  },
+  "de": {
+   "title": "US-Westen: Schneeausblick bis zum 26. November, 54 in in China Peak, 53 in in Dodge Ridge",
+   "description": "Unsere Zwei-Wochen-Karten zeigen, wo im US-Westen zwischen dem 13. November und dem 26. November Neuschnee fallen sollte, nach die beiden globalen …",
+   "lede": "Unsere Zwei-Wochen-Karten zeigen, wo im US-Westen zwischen dem 13. November und dem 26. November Neuschnee fallen sollte, nach die beiden globalen Modelle, die zwei Wochen weit reichen, ECMWF und GFS: wir nehmen die Mitte der beiden und nennen immer ihre Spanne. Am meisten bekommt China Peak: ungefähr 54 in (137 cm) in den oberen Hängen, 16 in (41 cm)–91 in (232 cm) je nach Modell, dann Dodge Ridge mit 53 in (135 cm). Im Gelände prüfen wir zuerst den Schatten: Schnee hält, wo die Sonne nicht hinkommt.",
+   "sections": [
+    {
+     "h": "Skigebiet für Skigebiet, die nächsten 14 Tage",
+     "p": [
+      "China Peak (USA): etwa 54 in (137 cm) in 14 Tagen (16 in (41 cm)–91 in (232 cm) zwischen den Modellen), 29 in (73 cm) in der ersten Woche und 25 in (64 cm) in der zweiten. Merk dir den 14. November: der größte Tag mit 11 in (27 cm), von 7 Tagen mit 5 cm oder mehr.",
+      "Dodge Ridge (USA): etwa 53 in (135 cm) in 14 Tagen (19 in (48 cm)–87 in (222 cm) zwischen den Modellen), 27 in (68 cm) in der ersten Woche und 26 in (67 cm) in der zweiten. Merk dir den 20. November: der größte Tag mit 10 in (26 cm), von 8 Tagen mit 5 cm oder mehr.",
+      "Bear Valley (USA): etwa 50 in (128 cm) in 14 Tagen (19 in (47 cm)–82 in (209 cm) zwischen den Modellen), 26 in (67 cm) in der ersten Woche und 24 in (61 cm) in der zweiten. Der schneereichste Tag ist der 14. November mit 9 in (23 cm); an 8 Tagen kommen 5 cm oder mehr.",
+      "Badger Pass (USA): etwa 50 in (126 cm) in 14 Tagen (17 in (43 cm)–83 in (210 cm) zwischen den Modellen), 26 in (66 cm) in der ersten Woche und 24 in (61 cm) in der zweiten. Der schneereichste Tag ist der 20. November mit 9 in (23 cm); an 8 Tagen kommen 5 cm oder mehr.",
+      "In Mammoth Mountain (USA) summieren sich die zwei Wochen auf etwa 46 in (118 cm) (15 in (38 cm)–78 in (197 cm) je nach Modell): 23 in (58 cm) bis Ende der ersten Woche, dann 24 in (60 cm) dazu. Der schneereichste Tag ist der 26. November mit 9 in (22 cm); an 6 Tagen kommen 5 cm oder mehr.",
+      "In Kirkwood (USA) summieren sich die zwei Wochen auf etwa 45 in (114 cm) (17 in (44 cm)–73 in (185 cm) je nach Modell): 24 in (62 cm) bis Ende der ersten Woche, dann 20 in (52 cm) dazu. Merk dir den 14. November: der größte Tag mit 8 in (20 cm), von 8 Tagen mit 5 cm oder mehr."
+     ]
+    },
+    {
+     "h": "Erste gegen zweite Woche",
+     "p": [
+      "Nach Wochen getrennt trägt die erste (13. November bis 19. November) 31 % des Schnees der zwei Wochen in der Region; die zweite (20. November bis 26. November) den Rest.",
+      "Früh dran: China Peak, Dodge Ridge, Bear Valley, Badger Pass und Kirkwood bekommen den Großteil ihres Schnees in der ersten Woche.",
+      "Später: in Mammoth Mountain bringt die zweite Woche mehr als die erste.",
+      "Auf der Karte bekommen etwa 182.680 sq mi (473.140 km²) Berggelände in den zwei Wochen 20 cm oder mehr, und 16.992 sq mi (44.010 km²) bekommen 50 cm oder mehr."
+     ]
+    },
+    {
+     "h": "Neuschnee nach Höhe",
+     "p": [
+      "Dieselben zwei Wochen nach Höhe, über alle Berge der Region (jeder Quadratkilometer Gelände, nicht nur die Skigebiete): zwischen 3.281 ft (1.000 m) und 4.921 ft (1.500 m): typisch 2 in (6 cm), das schneereichste Viertel dieser Stufe 4 in (10 cm) oder mehr; zwischen 4.921 ft (1.500 m) und 6.562 ft (2.000 m): typisch 4 in (11 cm), das schneereichste Viertel dieser Stufe 7 in (18 cm) oder mehr; zwischen 6.562 ft (2.000 m) und 8.202 ft (2.500 m): typisch 7 in (17 cm), das schneereichste Viertel dieser Stufe 10 in (25 cm) oder mehr; zwischen 8.202 ft (2.500 m) und 9.843 ft (3.000 m): typisch 11 in (27 cm), das schneereichste Viertel dieser Stufe 15 in (38 cm) oder mehr; zwischen 9.843 ft (3.000 m) und 14.764 ft (4.500 m): typisch 13 in (33 cm), das schneereichste Viertel dieser Stufe 18 in (46 cm) oder mehr."
+     ]
+    },
+    {
+     "h": "Die Tage im Blick",
+     "p": [
+      "Schneetage in der Region, über die 195 Skigebiete unserer Liste: Samstag, 14. November (56 von 195 Skigebieten mit 5 cm oder mehr, bis 11 in (27 cm) in China Peak), Mittwoch, 18. November (93 von 195 Skigebieten mit 5 cm oder mehr, bis 9 in (22 cm) in Mt. Shasta Ski Park), Samstag, 21. November (62 von 195 Skigebieten mit 5 cm oder mehr, bis 5 in (13 cm) in Echo Mountain) und Donnerstag, 26. November (92 von 195 Skigebieten mit 5 cm oder mehr, bis 9 in (22 cm) in China Peak)."
+     ]
+    },
+    {
+     "h": "So liest man die Karten",
+     "p": [
+      "So liest man sie: eine Karte für die zwei Wochen zusammen, eine je Woche. Je heller das Grün, desto weniger Neuschnee; tiefes Blau und Violett markieren die großen Summen. Jede Nadel zeigt die oberen Hänge des Skigebiets.",
+      "Nimm die zweite Woche als Richtung. Stimmen die beiden Modelle überein, ist die Spanne eng; ist sie weit, warte vor dem Buchen auf die nächsten Karten. Neue Karten erscheinen jeden Morgen."
+     ]
+    }
+   ],
+   "advice": [
+    "Plane die erste Woche mit diesen Karten; lass die zweite offen und schau in ein paar Tagen wieder nach.",
+    "Die Nullgradgrenze ist eine Prognose und kann sich um mehrere hundert Meter verschieben, was ändert, wo Regen zu Schnee wird: Schau am Vortag noch einmal auf die Karte.",
+    "Lies vor jedem Tag abseits der Piste oder auf Tour den offiziellen Lawinenlagebericht (Links unten).",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Termine auf seiner Website."
+   ],
+   "captions": {
+    "map": "Neuschnee im US-Westen, Prognose für die 14 Tage vom 13. November bis zum 26. November (Mitte der Modelle ECMWF und GFS, aufs Gelände gebracht), mit den Skigebieten dieses Ausblicks.",
+    "week1": "Nur die erste Woche: Neuschnee vom 13. November bis zum 19. November.",
+    "week2": "Nur die zweite Woche: Neuschnee vom 20. November bis zum 26. November, wo die beiden Modelle am stärksten abweichen."
+   }
+  },
+  "it": {
+   "title": "Tendenza neve Ovest degli USA fino al 26 novembre: 54 in a China Peak, 53 in a Dodge Ridge",
+   "description": "Le nostre mappe a due settimane mostrano dove dovrebbe cadere neve fresca nell'Ovest degli USA tra il 13 novembre e il 26 novembre, secondo i due …",
+   "lede": "Le nostre mappe a due settimane mostrano dove dovrebbe cadere neve fresca nell'Ovest degli USA tra il 13 novembre e il 26 novembre, secondo i due modelli globali che arrivano a due settimane, ECMWF e GFS: prendiamo il valore medio dei due e diamo sempre la loro forchetta. Il massimo va a China Peak: circa 54 in (137 cm) sui pendii alti, 16 in (41 cm)–91 in (232 cm) a seconda del modello, poi Dodge Ridge con 53 in (135 cm). Sul terreno la prima cosa che controlliamo è l'ombra: la neve dura dove il sole non arriva.",
+   "sections": [
+    {
+     "h": "Località per località, i prossimi 14 giorni",
+     "p": [
+      "China Peak (Stati Uniti): circa 54 in (137 cm) in 14 giorni (16 in (41 cm)–91 in (232 cm) tra i modelli), 29 in (73 cm) nella prima settimana e 25 in (64 cm) nella seconda. Segnate il 14 novembre: è la giornata più grande, con 11 in (27 cm), su 7 giorni a 5 cm o più.",
+      "Dodge Ridge (Stati Uniti): circa 53 in (135 cm) in 14 giorni (19 in (48 cm)–87 in (222 cm) tra i modelli), 27 in (68 cm) nella prima settimana e 26 in (67 cm) nella seconda. Segnate il 20 novembre: è la giornata più grande, con 10 in (26 cm), su 8 giorni a 5 cm o più.",
+      "Bear Valley (Stati Uniti): circa 50 in (128 cm) in 14 giorni (19 in (47 cm)–82 in (209 cm) tra i modelli), 26 in (67 cm) nella prima settimana e 24 in (61 cm) nella seconda. Il giorno più nevoso è il 14 novembre con 9 in (23 cm); 8 giorni portano 5 cm o più.",
+      "Badger Pass (Stati Uniti): circa 50 in (126 cm) in 14 giorni (17 in (43 cm)–83 in (210 cm) tra i modelli), 26 in (66 cm) nella prima settimana e 24 in (61 cm) nella seconda. Il giorno più nevoso è il 20 novembre con 9 in (23 cm); 8 giorni portano 5 cm o più.",
+      "A Mammoth Mountain (Stati Uniti) le due settimane fanno circa 46 in (118 cm) (15 in (38 cm)–78 in (197 cm) a seconda del modello): 23 in (58 cm) entro fine prima settimana, poi altri 24 in (60 cm). Il giorno più nevoso è il 26 novembre con 9 in (22 cm); 6 giorni portano 5 cm o più.",
+      "A Kirkwood (Stati Uniti) le due settimane fanno circa 45 in (114 cm) (17 in (44 cm)–73 in (185 cm) a seconda del modello): 24 in (62 cm) entro fine prima settimana, poi altri 20 in (52 cm). Segnate il 14 novembre: è la giornata più grande, con 8 in (20 cm), su 8 giorni a 5 cm o più."
+     ]
+    },
+    {
+     "h": "Prima settimana contro seconda",
+     "p": [
+      "Divisa per settimana, la prima (dal 13 novembre al 19 novembre) porta il 31 % della neve delle due settimane sulla regione; la seconda (dal 20 novembre al 26 novembre) il resto.",
+      "In anticipo: China Peak, Dodge Ridge, Bear Valley, Badger Pass e Kirkwood ricevono gran parte della neve nella prima settimana.",
+      "Più tardi: a Mammoth Mountain la seconda settimana porta più della prima.",
+      "Sulla mappa, circa 182.680 sq mi (473.140 km²) di terreno montano ricevono 20 cm o più nelle due settimane, e 16.992 sq mi (44.010 km²) ricevono 50 cm o più."
+     ]
+    },
+    {
+     "h": "Neve fresca per quota",
+     "p": [
+      "Le stesse due settimane per quota, su tutte le montagne della regione (ogni chilometro quadrato di terreno, non solo le località): tra 3.281 ft (1.000 m) e 4.921 ft (1.500 m): tipicamente 2 in (6 cm), il quarto più nevoso di quella fascia 4 in (10 cm) o più; tra 4.921 ft (1.500 m) e 6.562 ft (2.000 m): tipicamente 4 in (11 cm), il quarto più nevoso di quella fascia 7 in (18 cm) o più; tra 6.562 ft (2.000 m) e 8.202 ft (2.500 m): tipicamente 7 in (17 cm), il quarto più nevoso di quella fascia 10 in (25 cm) o più; tra 8.202 ft (2.500 m) e 9.843 ft (3.000 m): tipicamente 11 in (27 cm), il quarto più nevoso di quella fascia 15 in (38 cm) o più; tra 9.843 ft (3.000 m) e 14.764 ft (4.500 m): tipicamente 13 in (33 cm), il quarto più nevoso di quella fascia 18 in (46 cm) o più."
+     ]
+    },
+    {
+     "h": "I giorni da tenere d'occhio",
+     "p": [
+      "Le giornate di neve sulla regione, sulle 195 località della nostra lista: sabato 14 novembre (56 località su 195 a 5 cm o più, fino a 11 in (27 cm) a China Peak), mercoledì 18 novembre (93 località su 195 a 5 cm o più, fino a 9 in (22 cm) a Mt. Shasta Ski Park), sabato 21 novembre (62 località su 195 a 5 cm o più, fino a 5 in (13 cm) a Echo Mountain) e giovedì 26 novembre (92 località su 195 a 5 cm o più, fino a 9 in (22 cm) a China Peak)."
+     ]
+    },
+    {
+     "h": "Come leggere le mappe",
+     "p": [
+      "Come leggerle: una mappa per le due settimane insieme, una per settimana. Più chiaro è il verde, meno neve fresca; i blu profondi e i viola segnano i grandi totali. Ogni spillo mostra i pendii alti della località.",
+      "Prendete la seconda settimana come una direzione. Quando i due modelli concordano, la forchetta è stretta; quando è larga, aspettate le mappe successive prima di prenotare. Nuove mappe escono ogni mattina."
+     ]
+    }
+   ],
+   "advice": [
+    "Pianificate la prima settimana con queste mappe; tenete la seconda flessibile e ricontrollate tra qualche giorno.",
+    "Lo zero termico è una previsione e può spostarsi di diverse centinaia di metri, il che cambia dove la pioggia diventa neve: ricontrolla la mappa il giorno prima.",
+    "Prima di ogni uscita in fuoripista o scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date sul suo sito."
+   ],
+   "captions": {
+    "map": "Neve fresca nell'Ovest degli USA prevista per i 14 giorni dal 13 novembre al 26 novembre (valore medio dei modelli ECMWF e GFS, riportato sul terreno), con le località di questa tendenza.",
+    "week1": "Solo la prima settimana: neve fresca dal 13 novembre al 19 novembre.",
+    "week2": "Solo la seconda settimana: neve fresca dal 20 novembre al 26 novembre, dove i due modelli divergono di più."
+   }
+  },
+  "es": {
+   "title": "Tendencia de nieve Oeste de EE. UU. hasta el 26 de noviembre: 54 in en China Peak, 53 in en Dodge Ridge",
+   "description": "Nuestros mapas a dos semanas muestran dónde debería caer nieve nueva en el oeste de EE. UU. entre el 13 de noviembre y el 26 de noviembre, según los …",
+   "lede": "Nuestros mapas a dos semanas muestran dónde debería caer nieve nueva en el oeste de EE. UU. entre el 13 de noviembre y el 26 de noviembre, según los dos modelos globales que llegan a dos semanas, ECMWF y GFS: tomamos el punto medio de los dos y damos siempre su horquilla. Lo máximo va a China Peak: unos 54 in (137 cm) en la parte alta, 16 in (41 cm)–91 in (232 cm) según el modelo, luego Dodge Ridge con 53 in (135 cm). Sobre el terreno, lo primero que miramos es la sombra: la nieve aguanta donde no llega el sol.",
+   "sections": [
+    {
+     "h": "Estación por estación, los próximos 14 días",
+     "p": [
+      "China Peak (Estados Unidos): unos 54 in (137 cm) en 14 días (16 in (41 cm)–91 in (232 cm) según el modelo), 29 in (73 cm) la primera semana y 25 in (64 cm) la segunda. Apunta el 14 de noviembre: es el día más grande, con 11 in (27 cm), de 7 días con 5 cm o más.",
+      "Dodge Ridge (Estados Unidos): unos 53 in (135 cm) en 14 días (19 in (48 cm)–87 in (222 cm) según el modelo), 27 in (68 cm) la primera semana y 26 in (67 cm) la segunda. Apunta el 20 de noviembre: es el día más grande, con 10 in (26 cm), de 8 días con 5 cm o más.",
+      "Bear Valley (Estados Unidos): unos 50 in (128 cm) en 14 días (19 in (47 cm)–82 in (209 cm) según el modelo), 26 in (67 cm) la primera semana y 24 in (61 cm) la segunda. El día con más nieve es el 14 de noviembre con 9 in (23 cm); 8 días traen 5 cm o más.",
+      "Badger Pass (Estados Unidos): unos 50 in (126 cm) en 14 días (17 in (43 cm)–83 in (210 cm) según el modelo), 26 in (66 cm) la primera semana y 24 in (61 cm) la segunda. El día con más nieve es el 20 de noviembre con 9 in (23 cm); 8 días traen 5 cm o más.",
+      "En Mammoth Mountain (Estados Unidos) las dos semanas suman unos 46 in (118 cm) (15 in (38 cm)–78 in (197 cm) según el modelo): 23 in (58 cm) al final de la primera semana, luego 24 in (60 cm) más. El día con más nieve es el 26 de noviembre con 9 in (22 cm); 6 días traen 5 cm o más.",
+      "En Kirkwood (Estados Unidos) las dos semanas suman unos 45 in (114 cm) (17 in (44 cm)–73 in (185 cm) según el modelo): 24 in (62 cm) al final de la primera semana, luego 20 in (52 cm) más. Apunta el 14 de noviembre: es el día más grande, con 8 in (20 cm), de 8 días con 5 cm o más."
+     ]
+    },
+    {
+     "h": "Primera semana frente a segunda",
+     "p": [
+      "Por semanas, la primera (del 13 de noviembre al 19 de noviembre) lleva el 31 % de la nieve de las dos semanas en la región; la segunda (del 20 de noviembre al 26 de noviembre) el resto.",
+      "Pronto en la quincena: China Peak, Dodge Ridge, Bear Valley, Badger Pass y Kirkwood reciben la mayor parte de su nieve la primera semana.",
+      "Más tarde: en Mammoth Mountain la segunda semana trae más que la primera.",
+      "En el mapa, unos 182.680 sq mi (473.140 km²) de terreno de montaña reciben 20 cm o más en las dos semanas, y 16.992 sq mi (44.010 km²) reciben 50 cm o más."
+     ]
+    },
+    {
+     "h": "Nieve nueva por altura",
+     "p": [
+      "Las mismas dos semanas por altura, sobre todas las montañas de la región (cada kilómetro cuadrado de terreno, no solo las estaciones): entre 3281 ft (1000 m) y 4921 ft (1500 m): típicamente 2 in (6 cm), el cuarto más nevado de esa franja 4 in (10 cm) o más; entre 4921 ft (1500 m) y 6562 ft (2000 m): típicamente 4 in (11 cm), el cuarto más nevado de esa franja 7 in (18 cm) o más; entre 6562 ft (2000 m) y 8202 ft (2500 m): típicamente 7 in (17 cm), el cuarto más nevado de esa franja 10 in (25 cm) o más; entre 8202 ft (2500 m) y 9843 ft (3000 m): típicamente 11 in (27 cm), el cuarto más nevado de esa franja 15 in (38 cm) o más; entre 9843 ft (3000 m) y 14.764 ft (4500 m): típicamente 13 in (33 cm), el cuarto más nevado de esa franja 18 in (46 cm) o más."
+     ]
+    },
+    {
+     "h": "Los días a vigilar",
+     "p": [
+      "Los días de nieve en la región, sobre las 195 estaciones de nuestra lista: sábado 14 de noviembre (56 de 195 estaciones con 5 cm o más, hasta 11 in (27 cm) en China Peak), miércoles 18 de noviembre (93 de 195 estaciones con 5 cm o más, hasta 9 in (22 cm) en Mt. Shasta Ski Park), sábado 21 de noviembre (62 de 195 estaciones con 5 cm o más, hasta 5 in (13 cm) en Echo Mountain) y jueves 26 de noviembre (92 de 195 estaciones con 5 cm o más, hasta 9 in (22 cm) en China Peak)."
+     ]
+    },
+    {
+     "h": "Cómo leer los mapas",
+     "p": [
+      "Cómo leerlos: un mapa para las dos semanas juntas, uno por semana. Cuanto más claro el verde, menos nieve nueva; los azules profundos y los morados marcan los grandes totales. Cada pin muestra la parte alta de la estación.",
+      "Toma la segunda semana como una dirección. Cuando los dos modelos coinciden, la horquilla es estrecha; cuando es ancha, espera a los próximos mapas antes de reservar. Salen mapas nuevos cada mañana."
+     ]
+    }
+   ],
+   "advice": [
+    "Planifica la primera semana con estos mapas; deja la segunda abierta y vuelve a mirar en unos días.",
+    "La isoterma de 0 °C es una previsión y puede moverse varios cientos de metros, lo que cambia dónde la lluvia pasa a nieve: vuelve a mirar el mapa el día antes.",
+    "Antes de cualquier salida fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas en su web."
+   ],
+   "captions": {
+    "map": "Nieve nueva en el oeste de EE. UU. prevista para los 14 días del 13 de noviembre al 26 de noviembre (punto medio de los modelos ECMWF y GFS, llevado al relieve), con las estaciones de esta tendencia.",
+    "week1": "Solo la primera semana: nieve nueva del 13 de noviembre al 19 de noviembre.",
+    "week2": "Solo la segunda semana: nieve nueva del 20 de noviembre al 26 de noviembre, donde los dos modelos más discrepan."
+   }
+  },
+  "ar": {
+   "title": "توقعات التلج غرب ميريكان حتى ل 26 نونبر: 54 إنش ف China Peak، 53 إنش ف Dodge Ridge",
+   "description": "الخرائط ديالنا لجوج سيمانات كتبين فين خاصو يطيح التلج الجديد فغرب ميريكان بين 13 نونبر و 26 نونبر، حسب جوج الموديلات العالمية اللي كيوصلو لجوج …",
+   "lede": "الخرائط ديالنا لجوج سيمانات كتبين فين خاصو يطيح التلج الجديد فغرب ميريكان بين 13 نونبر و 26 نونبر، حسب جوج الموديلات العالمية اللي كيوصلو لجوج سيمانات، ECMWF و GFS: كناخدو الوسط ديال بجوج وديما كنعطيو المجال ديالهم. الكمية الكبيرة غادي تمشي ل China Peak: شي 54 إنش (137 سم) فالجهة الفوقانية، 16 إنش (41 سم) حتى ل 91 إنش (232 سم) حسب الموديل، ومن بعد Dodge Ridge ب 53 إنش (135 سم). فالأرض، أول حاجة كنشوفوها هي الظل: التلج كيبقى فين ماكتوصلش الشمس.",
+   "sections": [
+    {
+     "h": "محطة بمحطة، 14 يوم الجايين",
+     "p": [
+      "China Peak (ميريكان): تقريبا 54 إنش (137 سم) ف 14 يوم (16 إنش (41 سم) حتى ل 91 إنش (232 سم) بين الموديلات)، 29 إنش (73 سم) فالسيمانة اللولة و 25 إنش (64 سم) فالثانية. علّم على 14 نونبر: هذاك هو أكبر نهار، ب 11 إنش (27 سم)، من 7 أيام ب 5 سم ولا كثر.",
+      "Dodge Ridge (ميريكان): تقريبا 53 إنش (135 سم) ف 14 يوم (19 إنش (48 سم) حتى ل 87 إنش (222 سم) بين الموديلات)، 27 إنش (68 سم) فالسيمانة اللولة و 26 إنش (67 سم) فالثانية. علّم على 20 نونبر: هذاك هو أكبر نهار، ب 10 إنش (26 سم)، من 8 أيام ب 5 سم ولا كثر.",
+      "Bear Valley (ميريكان): تقريبا 50 إنش (128 سم) ف 14 يوم (19 إنش (47 سم) حتى ل 82 إنش (209 سم) بين الموديلات)، 26 إنش (67 سم) فالسيمانة اللولة و 24 إنش (61 سم) فالثانية. النهار اللي فيه التلج كثر هو 14 نونبر ب 9 إنش (23 سم)؛ 8 أيام كيجيبو 5 سم ولا كثر.",
+      "Badger Pass (ميريكان): تقريبا 50 إنش (126 سم) ف 14 يوم (17 إنش (43 سم) حتى ل 83 إنش (210 سم) بين الموديلات)، 26 إنش (66 سم) فالسيمانة اللولة و 24 إنش (61 سم) فالثانية. النهار اللي فيه التلج كثر هو 20 نونبر ب 9 إنش (23 سم)؛ 8 أيام كيجيبو 5 سم ولا كثر.",
+      "ف Mammoth Mountain (ميريكان) جوج سيمانات كيجمعو تقريبا 46 إنش (118 سم) (15 إنش (38 سم) حتى ل 78 إنش (197 سم) حسب الموديل): 23 إنش (58 سم) حتى لآخر السيمانة اللولة، ومن بعد 24 إنش (60 سم) زيادة. النهار اللي فيه التلج كثر هو 26 نونبر ب 9 إنش (22 سم)؛ 6 أيام كيجيبو 5 سم ولا كثر.",
+      "ف Kirkwood (ميريكان) جوج سيمانات كيجمعو تقريبا 45 إنش (114 سم) (17 إنش (44 سم) حتى ل 73 إنش (185 سم) حسب الموديل): 24 إنش (62 سم) حتى لآخر السيمانة اللولة، ومن بعد 20 إنش (52 سم) زيادة. علّم على 14 نونبر: هذاك هو أكبر نهار، ب 8 إنش (20 سم)، من 8 أيام ب 5 سم ولا كثر."
+     ]
+    },
+    {
+     "h": "السيمانة اللولة مقابل الثانية",
+     "p": [
+      "بالسيمانة، اللولة (من 13 نونبر حتى ل 19 نونبر) فيها 31 % ديال التلج ديال جوج سيمانات فالمنطقة؛ والثانية (من 20 نونبر حتى ل 26 نونبر) فيها الباقي.",
+      "بكري: China Peak، Dodge Ridge، Bear Valley، Badger Pass و Kirkwood غادي ياخدو أغلب التلج ديالهم فالسيمانة اللولة.",
+      "من بعد: ف Mammoth Mountain السيمانة الثانية كتجيب كثر من اللولة.",
+      "فالخريطة، تقريبا 182680 ميل² (473140 كم²) ديال الجبال غادي ياخدو 20 سم ولا كثر فجوج سيمانات، و 16992 ميل² (44010 كم²) غادي ياخدو 50 سم ولا كثر."
+     ]
+    },
+    {
+     "h": "التلج الجديد حسب العلو",
+     "p": [
+      "نفس جوج سيمانات حسب العلو، على كاع جبال المنطقة (كل كيلومتر مربع ديال الأرض، ماشي غير المحطات): بين 3281 قدم (1000 م) و 4921 قدم (1500 م): عادة 2 إنش (6 سم)، والربع اللي فيه التلج كثر فهاد الطبقة 4 إنش (10 سم) ولا كثر; بين 4921 قدم (1500 م) و 6562 قدم (2000 م): عادة 4 إنش (11 سم)، والربع اللي فيه التلج كثر فهاد الطبقة 7 إنش (18 سم) ولا كثر; بين 6562 قدم (2000 م) و 8202 قدم (2500 م): عادة 7 إنش (17 سم)، والربع اللي فيه التلج كثر فهاد الطبقة 10 إنش (25 سم) ولا كثر; بين 8202 قدم (2500 م) و 9843 قدم (3000 م): عادة 11 إنش (27 سم)، والربع اللي فيه التلج كثر فهاد الطبقة 15 إنش (38 سم) ولا كثر; بين 9843 قدم (3000 م) و 14764 قدم (4500 م): عادة 13 إنش (33 سم)، والربع اللي فيه التلج كثر فهاد الطبقة 18 إنش (46 سم) ولا كثر."
+     ]
+    },
+    {
+     "h": "الأيام اللي خاص تراقب",
+     "p": [
+      "أيام التلج فالمنطقة، على 195 محطة فاللائحة ديالنا: السبت 14 نونبر (56 من 195 محطة ب 5 سم ولا كثر، حتى ل 11 إنش (27 سم) ف China Peak)، الأربعاء 18 نونبر (93 من 195 محطة ب 5 سم ولا كثر، حتى ل 9 إنش (22 سم) ف Mt. Shasta Ski Park)، السبت 21 نونبر (62 من 195 محطة ب 5 سم ولا كثر، حتى ل 5 إنش (13 سم) ف Echo Mountain) و الخميس 26 نونبر (92 من 195 محطة ب 5 سم ولا كثر، حتى ل 9 إنش (22 سم) ف China Peak)."
+     ]
+    },
+    {
+     "h": "كيفاش تقرا الخرائط",
+     "p": [
+      "كيفاش تقراهم: خريطة لجوج سيمانات مجموعين، وواحدة لكل سيمانة. كل ما كان الأخضر فاتح، كل ما قل التلج الجديد؛ الأزرق الغامق والبنفسجي كيعلّمو على الكميات الكبيرة. كل علامة كتبين الجهة الفوقانية ديال المحطة.",
+      "خود السيمانة الثانية بحال اتجاه. ملي كيتفقو جوج الموديلات، المجال كيكون ضيق؛ وملي كيكون واسع، تسنى الخرائط الجاية قبل ما تحجز. خرائط جديدة كيخرجو كل صباح."
+     ]
+    }
+   ],
+   "advice": [
+    "خطط للسيمانة اللولة بهاد الخرائط؛ خلي الثانية مرنة وعاود شوف من بعد شي أيام.",
+    "علو 0 °C غير توقع ويقدر يتحرك بشي مئات ديال الميترات، وهادشي كيبدل فين الشتا كتولي تلج: عاود شوف الخريطة نهار قبل.",
+    "قبل أي خرجة برا البيست ولا جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديالها."
+   ],
+   "captions": {
+    "map": "التلج الجديد فغرب ميريكان المتوقع ل 14 يوم من 13 نونبر حتى ل 26 نونبر (الوسط ديال موديلات ECMWF و GFS، محطوط على الأرض)، مع المحطات ديال هاد التوقعات.",
+    "week1": "غير السيمانة اللولة: التلج الجديد من 13 نونبر حتى ل 19 نونبر.",
+    "week2": "غير السيمانة الثانية: التلج الجديد من 20 نونبر حتى ل 26 نونبر، فين جوج الموديلات كيختالفو كثر."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template (a translation was rejected)",
+   "usd": 0.005777,
+   "voice": "field"
+  },
+  "fr": {
+   "writer": "template (a translation was rejected)",
+   "usd": 0.00366,
+   "voice": "field"
+  },
+  "de": {
+   "writer": "template (a translation was rejected)",
+   "usd": 0.003908,
+   "rejected": "shape",
+   "voice": "field"
+  },
+  "it": {
+   "writer": "template (a translation was rejected)",
+   "usd": 0.004387,
+   "voice": "field"
+  },
+  "es": {
+   "writer": "template (a translation was rejected)",
+   "usd": 0.003887,
+   "rejected": "shape",
+   "voice": "field"
+  },
+  "ar": {
+   "writer": "template (a translation was rejected)",
+   "usd": 0.005151,
+   "voice": "field"
+  }
+ },
+ "words_en": 881,
+ "indexable": true,
+ "main": {
+  "slug": "china_peak_mountain_resort",
+  "name": "China Peak",
+  "lat": 37.2264,
+  "lon": -119.1581
+ },
+ "places": [
+  {
+   "name": "China Peak",
+   "lat": 37.2264,
+   "lon": -119.1581
+  },
+  {
+   "name": "Dodge Ridge",
+   "lat": 38.1899,
+   "lon": -119.9393
+  },
+  {
+   "name": "Bear Valley",
+   "lat": 38.4826,
+   "lon": -120.0503
+  },
+  {
+   "name": "Badger Pass",
+   "lat": 37.6592,
+   "lon": -119.6623
+  },
+  {
+   "name": "Mammoth Mountain",
+   "lat": 37.6444,
+   "lon": -119.0088
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "china_peak_mountain_resort",
+   "name": "China Peak"
+  },
+  {
+   "slug": "dodge_ridge_ski_area",
+   "name": "Dodge Ridge"
+  },
+  {
+   "slug": "bear_valley",
+   "name": "Bear Valley"
+  },
+  {
+   "slug": "badger_pass_ski_area",
+   "name": "Badger Pass"
+  },
+  {
+   "slug": "mammoth_mountain",
+   "name": "Mammoth Mountain"
+  },
+  {
+   "slug": "kirkwood_mountain_resort",
+   "name": "Kirkwood"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "china_peak_mountain_resort",
+    "name": "China Peak",
+    "depth": 0,
+    "new72": 0,
+    "next": 35,
+    "top_m": 2630
+   },
+   {
+    "slug": "dodge_ridge_ski_area",
+    "name": "Dodge Ridge",
+    "depth": 16,
+    "new72": 0,
+    "next": 30,
+    "top_m": 2482
+   },
+   {
+    "slug": "bear_valley",
+    "name": "Bear Valley",
+    "depth": 19,
+    "new72": 0,
+    "next": 39,
+    "top_m": 2586
+   },
+   {
+    "slug": "badger_pass_ski_area",
+    "name": "Badger Pass",
+    "depth": 0,
+    "new72": 0,
+    "next": 25,
+    "top_m": 2376
+   },
+   {
+    "slug": "mammoth_mountain",
+    "name": "Mammoth Mountain",
+    "depth": 15,
+    "new72": 0,
+    "next": 24,
+    "top_m": 3360
+   },
+   {
+    "slug": "kirkwood_mountain_resort",
+    "name": "Kirkwood",
+    "depth": 20,
+    "new72": 0,
+    "next": 40,
+    "top_m": 2884
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@37.226,-119.158,9.0",
+ "seconds": 16.7,
+ "facts_used": 74,
+ "voice": "field",
+ "media_ids": [
+  "map",
+  "week1",
+  "week2"
+ ],
+ "overlap": {
+  "before": 6.5,
+  "after": 6.5,
+  "with": "western-canada-what-to-bring-ski-gear-conditions-11-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.048,
+  "with": "western-canada-what-to-bring-ski-gear-conditions-11-november-2026"
+ },
+ "publish_utc": "2026-11-12T18:20:16Z"
+}
