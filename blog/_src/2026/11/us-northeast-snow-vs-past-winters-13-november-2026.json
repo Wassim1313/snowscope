@@ -1,0 +1,720 @@
+{
+ "id": "2026-11-13-us_ne-history",
+ "slug": "us-northeast-snow-vs-past-winters-13-november-2026",
+ "date": "2026-11-13",
+ "published_utc": "2026-11-13T18:24:37Z",
+ "updated_utc": "2026-11-13T18:24:37Z",
+ "region": "US_NE",
+ "angle": "history",
+ "score": 49,
+ "signature": "killington:8|gore_mountain:7|mount_snow:8",
+ "keyword": {
+  "family": "vs-normal",
+  "entity": "us_ne",
+  "region": "US_NE",
+  "date": "2026-11-13"
+ },
+ "tags": [
+  "past-winters",
+  "snow-depth"
+ ],
+ "facts": {
+  "angle": "snow_vs_past_winters",
+  "region": "US Northeast",
+  "date": "2026-11-13",
+  "weekday": "Friday",
+  "model_run": "2026-11-13",
+  "forecast_days": [
+   "2026-11-14",
+   "2026-11-15",
+   "2026-11-16"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 14420,
+   "resorts_with_snow": 28,
+   "resorts_in_region": 112
+  },
+  "region_before": {
+   "date": "2026-11-11",
+   "snow_covered_area_km2": 240,
+   "resorts_with_snow": 6
+  },
+  "region_forecast": {
+   "date": "2026-11-16",
+   "snow_covered_area_km2": 7130,
+   "resorts_with_snow": 30
+  },
+  "question": "Is there more or less snow than usual for the date, compared with the past 46 winters?",
+  "past_winters_period": "1980-81 to 2025-26",
+  "resorts": [
+   {
+    "name": "Killington Resort",
+    "country": "United States",
+    "top_m": 1262,
+    "base_m": 354,
+    "depth_cm_upper_slopes_today": 12,
+    "new_cm_last_24h": 4,
+    "new_cm_last_72h": 12,
+    "new_cm_forecast_next_days": 2,
+    "slug": "killington",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 8,
+     "2026-11-13": 4,
+     "2026-11-14": 1,
+     "2026-11-15": 1,
+     "2026-11-16": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 354,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 3,
+      "depth_cm_measured": 0
+     },
+     "mid": {
+      "elev_m": 808,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 5,
+      "depth_cm_measured": 0
+     },
+     "top": {
+      "elev_m": 1262,
+      "depth_cm_model": 11,
+      "new_cm_next_7_days": 5
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 190,
+      "max": 750
+     },
+     "2026-11-14": {
+      "min": 180,
+      "max": 770
+     },
+     "2026-11-15": {
+      "min": 260,
+      "max": 680
+     }
+    },
+    "past_winters": {
+     "height_m": 808,
+     "snow_cm_at_this_height_today_model": 8,
+     "deeper_than_n_of_past_winters": 42,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 1
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-11-08"
+    },
+    "nearest_station": {
+     "station": "Shrewsbury 0.8 W",
+     "elev_m": 453,
+     "depth_cm_measured": 0,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-12",
+     "km_away": 13.6
+    }
+   },
+   {
+    "name": "Gore Mountain",
+    "country": "United States",
+    "top_m": 1092,
+    "base_m": 321,
+    "depth_cm_upper_slopes_today": 8,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 10,
+    "new_cm_forecast_next_days": 2,
+    "slug": "gore_mountain",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 7,
+     "2026-11-13": 3,
+     "2026-11-14": 1,
+     "2026-11-15": 1,
+     "2026-11-16": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 321,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 706,
+      "depth_cm_model": 5,
+      "new_cm_next_7_days": 3
+     },
+     "top": {
+      "elev_m": 1092,
+      "depth_cm_model": 10,
+      "new_cm_next_7_days": 4
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 200,
+      "max": 780
+     },
+     "2026-11-14": {
+      "min": 200,
+      "max": 700
+     },
+     "2026-11-15": {
+      "min": 200,
+      "max": 690
+     }
+    },
+    "past_winters": {
+     "height_m": 706,
+     "snow_cm_at_this_height_today_model": 4,
+     "deeper_than_n_of_past_winters": 38,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 1
+    },
+    "satellite_latest_clear_view": {
+     "state": "patchy",
+     "seen_on": "2026-11-08"
+    },
+    "nearest_station": {
+     "station": "Olmstedville 4.6 NNE",
+     "elev_m": 459,
+     "depth_cm_measured": 0,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-12",
+     "km_away": 19.4
+    }
+   },
+   {
+    "name": "Mount Snow",
+    "country": "United States",
+    "top_m": 1093,
+    "base_m": 591,
+    "depth_cm_upper_slopes_today": 8,
+    "new_cm_last_24h": 8,
+    "new_cm_last_72h": 12,
+    "new_cm_forecast_next_days": 2,
+    "slug": "mount_snow",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 4,
+     "2026-11-13": 8,
+     "2026-11-14": 1,
+     "2026-11-15": 1,
+     "2026-11-16": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 591,
+      "depth_cm_model": 3,
+      "new_cm_next_7_days": 5
+     },
+     "mid": {
+      "elev_m": 842,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 5
+     },
+     "top": {
+      "elev_m": 1093,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 6
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 100,
+      "max": 720
+     },
+     "2026-11-14": {
+      "min": 40,
+      "max": 660
+     },
+     "2026-11-15": {
+      "min": 90,
+      "max": 750
+     }
+    },
+    "past_winters": {
+     "height_m": 842,
+     "snow_cm_at_this_height_today_model": 8,
+     "deeper_than_n_of_past_winters": 43,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 0
+    },
+    "satellite_latest_clear_view": {
+     "state": "patchy",
+     "seen_on": "2026-11-09"
+    }
+   },
+   {
+    "name": "Magic Mountain",
+    "country": "United States",
+    "top_m": 869,
+    "base_m": 420,
+    "depth_cm_upper_slopes_today": 6,
+    "new_cm_last_24h": 6,
+    "new_cm_last_72h": 9,
+    "new_cm_forecast_next_days": 2,
+    "slug": "magic_mountain_ski_area",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 3,
+     "2026-11-13": 6,
+     "2026-11-14": 0,
+     "2026-11-15": 2,
+     "2026-11-16": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 420,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 3,
+      "depth_cm_measured": 0
+     },
+     "mid": {
+      "elev_m": 644,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 4,
+      "depth_cm_measured": 0
+     },
+     "top": {
+      "elev_m": 869,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 4,
+      "depth_cm_measured": 0
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 170,
+      "max": 700
+     },
+     "2026-11-14": {
+      "min": 60,
+      "max": 700
+     },
+     "2026-11-15": {
+      "min": 330,
+      "max": 700
+     }
+    },
+    "past_winters": {
+     "height_m": 644,
+     "snow_cm_at_this_height_today_model": 2,
+     "deeper_than_n_of_past_winters": 36,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 0
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-11-04"
+    },
+    "nearest_station": {
+     "station": "Landgrove 1.1 NNE",
+     "elev_m": 554,
+     "depth_cm_measured": 0,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-12",
+     "km_away": 11.6
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-northeast-snow-vs-past-winters-13-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-northeast-snow-vs-past-winters-13-november-2026/map_t.webp",
+   "bytes": 38858,
+   "snow_frac": 0.4283,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Is this a good start to the winter in the US Northeast? 4 of 4 resorts above normal (13 November)",
+   "description": "Is this a good start to the winter in the US Northeast? Today's snow at 4 resorts in the US Northeast, set against the same date in each of the past …",
+   "lede": "Is this a good start to the winter in the US Northeast? Today's snow at 4 resorts in the US Northeast, set against the same date in each of the past 46 winters, shows how the season's water store is building. In 4 of them, the snow is clearly above normal. Snow in the mountains is water held back for spring: what falls now feeds rivers and reservoirs later.",
+   "sections": [
+    {
+     "h": "The snow store against past winters",
+     "p": [
+      "At 2,651 ft (808 m) on Killington Resort, today's 3 in (8 cm) is more than this date brought in 42 of the past 46 winters (usual: 0 in (1 cm)): a good amount of water is already stored in the snow.",
+      "Gore Mountain has a good start to its snow store: 2 in (4 cm) at 2,316 ft (706 m), deeper than on this date in 38 of the past 46 winters (usual: 0 in (1 cm)).",
+      "At 2,762 ft (842 m) on Mount Snow, today's 3 in (8 cm) is more than this date brought in 43 of the past 46 winters (usual: 0 in (0 cm)): a good amount of water is already stored in the snow.",
+      "Magic Mountain has a good start to its snow store: 1 in (2 cm) at 2,113 ft (644 m), deeper than on this date in 36 of the past 46 winters (usual: 0 in (0 cm))."
+     ]
+    },
+    {
+     "h": "Today's snow store",
+     "p": [
+      "The deepest snowpack of this group is at Killington Resort, about 5 in (12 cm) on the upper slopes; next are Gore Mountain 3 in (8 cm) and Mount Snow 3 in (8 cm).",
+      "Our model spreads today's snow over 5,568 sq mi (14,420 km²) in the US Northeast, reaching 28 of 112 resorts.",
+      "A note on measurement: resort values are modelled for the upper slopes, station values are measured at one place on the date given, and both carry some uncertainty."
+     ]
+    },
+    {
+     "h": "The next days in the forecast",
+     "p": [
+      "More snow, and so more stored water, is on the way: by 16 November our forecast gives 1 in (2 cm) at Killington Resort, 1 in (2 cm) at Gore Mountain and 1 in (2 cm) at Mount Snow.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Shade protects the snowpack. High, north-facing slopes get less sun, so their snow lasts longer than on the south side.",
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "Get a powder alert in the SnowScope app to know when Killington Resort gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the US Northeast on 13 November 2026 (SnowScope snow model): Killington Resort, Gore Mountain, Mount Snow, Magic Mountain."
+   }
+  },
+  "fr": {
+   "title": "Bon début d'hiver dans le Nord-Est américain ? 4 stations sur 4 au-dessus de la normale (13 novembre)",
+   "description": "Est-ce un bon début d'hiver dans le Nord-Est américain ? La neige du jour dans 4 stations dans le Nord-Est américain, comparée à la même date lors de …",
+   "lede": "Est-ce un bon début d'hiver dans le Nord-Est américain ? La neige du jour dans 4 stations dans le Nord-Est américain, comparée à la même date lors de chacun des 46 hivers passés, montre comment se constitue la réserve d'eau de la saison. Dans 4 d'entre elles, la neige est nettement au-dessus de la normale. La neige en montagne, c'est de l'eau mise de côté pour le printemps : ce qui tombe maintenant alimente plus tard rivières et barrages.",
+   "sections": [
+    {
+     "h": "La réserve de neige face aux hivers passés",
+     "p": [
+      "À 2 651 ft (808 m) à Killington Resort, les 3 in (8 cm) du jour dépassent ce que cette date a donné lors de 42 des 46 hivers passés (habituel : 0 in (1 cm)) : une bonne quantité d'eau est déjà stockée dans la neige.",
+      "Gore Mountain commence bien à remplir sa réserve de neige : 2 in (4 cm) à 2 316 ft (706 m), plus qu'à cette date lors de 38 des 46 hivers passés (habituel : 0 in (1 cm)).",
+      "À 2 762 ft (842 m) à Mount Snow, les 3 in (8 cm) du jour dépassent ce que cette date a donné lors de 43 des 46 hivers passés (habituel : 0 in (0 cm)) : une bonne quantité d'eau est déjà stockée dans la neige.",
+      "Magic Mountain commence bien à remplir sa réserve de neige : 1 in (2 cm) à 2 113 ft (644 m), plus qu'à cette date lors de 36 des 46 hivers passés (habituel : 0 in (0 cm))."
+     ]
+    },
+    {
+     "h": "La réserve de neige du jour",
+     "p": [
+      "Le manteau le plus épais du groupe est à Killington Resort, environ 5 in (12 cm) sur le haut du domaine ; ensuite Gore Mountain 3 in (8 cm) et Mount Snow 3 in (8 cm).",
+      "La neige couvre maintenant 5 568 sq mi (14 420 km²) dans le Nord-Est américain ; 28 stations sur 112 en ont sur le haut du domaine.",
+      "Note sur la mesure : les valeurs des stations de ski sont modélisées pour le haut du domaine, celles des stations de mesure sont relevées en un lieu à la date indiquée, et toutes ont une part d'incertitude."
+     ]
+    },
+    {
+     "h": "Les prochains jours dans la prévision",
+     "p": [
+      "D'ici le 16 novembre, la prévision ajoute 1 in (2 cm) à Killington Resort, 1 in (2 cm) à Gore Mountain et 1 in (2 cm) à Mount Snow ; les quantités à plusieurs jours peuvent encore changer.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "L'ombre protège le manteau neigeux. Les pentes nord en altitude reçoivent moins de soleil, leur neige dure plus longtemps qu'au sud.",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Killington Resort reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans le Nord-Est américain le 13 novembre 2026 (modèle de neige SnowScope) : Killington Resort, Gore Mountain, Mount Snow, Magic Mountain."
+   }
+  },
+  "de": {
+   "title": "Guter Winterstart im Nordosten der USA? 4 von 4 Skigebieten über dem Normalwert (13. November)",
+   "description": "Ist das ein guter Winterstart im Nordosten der USA? Der heutige Schnee in 4 Skigebieten im Nordosten der USA, verglichen mit demselben Datum in jedem …",
+   "lede": "Ist das ein guter Winterstart im Nordosten der USA? Der heutige Schnee in 4 Skigebieten im Nordosten der USA, verglichen mit demselben Datum in jedem der letzten 46 Winter, zeigt, wie sich der Wasserspeicher der Saison aufbaut. In 4 davon liegt der Schnee deutlich über dem Normalwert. Schnee in den Bergen ist Wasser, das für den Frühling zurückgehalten wird: Was jetzt fällt, speist später Flüsse und Stauseen.",
+   "sections": [
+    {
+     "h": "Der Schneespeicher gegen frühere Winter",
+     "p": [
+      "Auf 2.651 ft (808 m) in Killington Resort sind die heutigen 3 in (8 cm) mehr, als dieses Datum in 42 der letzten 46 Winter brachte (üblich: 0 in (1 cm)): Im Schnee ist schon viel Wasser gespeichert.",
+      "Gore Mountain hat einen guten Start für seinen Schneespeicher: 2 in (4 cm) auf 2.316 ft (706 m), mehr als an diesem Datum in 38 der letzten 46 Winter (üblich: 0 in (1 cm)).",
+      "Auf 2.762 ft (842 m) in Mount Snow sind die heutigen 3 in (8 cm) mehr, als dieses Datum in 43 der letzten 46 Winter brachte (üblich: 0 in (0 cm)): Im Schnee ist schon viel Wasser gespeichert.",
+      "Magic Mountain hat einen guten Start für seinen Schneespeicher: 1 in (2 cm) auf 2.113 ft (644 m), mehr als an diesem Datum in 36 der letzten 46 Winter (üblich: 0 in (0 cm))."
+     ]
+    },
+    {
+     "h": "Der Schneespeicher heute",
+     "p": [
+      "Die dickste Schneedecke dieser Gruppe hat Killington Resort, etwa 5 in (12 cm) in den oberen Hängen; danach kommen Gore Mountain 3 in (8 cm) und Mount Snow 3 in (8 cm).",
+      "Schnee bedeckt jetzt 5.568 sq mi (14.420 km²) im Nordosten der USA; 28 von 112 Skigebieten haben welchen in den oberen Hängen.",
+      "Ein Hinweis zur Messung: Die Skigebietswerte sind für die oberen Hänge modelliert, die Stationswerte an einer Stelle am angegebenen Tag gemessen, und beide haben eine gewisse Unsicherheit."
+     ]
+    },
+    {
+     "h": "Die nächsten Tage in der Prognose",
+     "p": [
+      "Bis zum 16. November kommen laut Prognose 1 in (2 cm) in Killington Resort, 1 in (2 cm) in Gore Mountain und 1 in (2 cm) in Mount Snow dazu; Mengen für mehrere Tage im Voraus können sich noch ändern.",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Schatten schützt die Schneedecke. Hohe Nordhänge bekommen weniger Sonne, deshalb hält ihr Schnee länger als auf der Südseite.",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Früher Schnee ist dünn. Bleib auf offenen, präparierten Pisten: Steine und Gras liegen oft knapp darunter.",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Killington Resort Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe im Nordosten der USA am 13. November 2026 (SnowScope-Schneemodell): Killington Resort, Gore Mountain, Mount Snow, Magic Mountain."
+   }
+  },
+  "it": {
+   "title": "Buon inizio d'inverno nel Nord-est degli USA? 4 località su 4 sopra la norma (13 novembre)",
+   "description": "È un buon inizio d'inverno nel Nord-est degli USA? La neve di oggi in 4 località nel Nord-est degli USA, confrontata con la stessa data in ciascuno …",
+   "lede": "È un buon inizio d'inverno nel Nord-est degli USA? La neve di oggi in 4 località nel Nord-est degli USA, confrontata con la stessa data in ciascuno dei 46 inverni passati, mostra come si sta formando la riserva d'acqua della stagione. In 4 di queste la neve è nettamente sopra la norma. La neve in montagna è acqua trattenuta per la primavera: quello che cade ora alimenterà più tardi fiumi e invasi.",
+   "sections": [
+    {
+     "h": "La riserva di neve rispetto agli inverni passati",
+     "p": [
+      "A 2.651 ft (808 m) a Killington Resort, i 3 in (8 cm) di oggi sono più di quanto questa data abbia portato in 42 dei 46 inverni passati (abituale: 0 in (1 cm)): nella neve c'è già molta acqua immagazzinata.",
+      "Gore Mountain ha un buon inizio per la sua riserva di neve: 2 in (4 cm) a 2.316 ft (706 m), più che in questa data in 38 dei 46 inverni passati (abituale: 0 in (1 cm)).",
+      "A 2.762 ft (842 m) a Mount Snow, i 3 in (8 cm) di oggi sono più di quanto questa data abbia portato in 43 dei 46 inverni passati (abituale: 0 in (0 cm)): nella neve c'è già molta acqua immagazzinata.",
+      "Magic Mountain ha un buon inizio per la sua riserva di neve: 1 in (2 cm) a 2.113 ft (644 m), più che in questa data in 36 dei 46 inverni passati (abituale: 0 in (0 cm))."
+     ]
+    },
+    {
+     "h": "La riserva di neve oggi",
+     "p": [
+      "Il manto più spesso di questo gruppo è a Killington Resort, circa 5 in (12 cm) sui pendii superiori; poi vengono Gore Mountain 3 in (8 cm) e Mount Snow 3 in (8 cm).",
+      "La neve ora copre 5.568 sq mi (14.420 km²) nel Nord-est degli USA; 28 località su 112 ne hanno un po' sui pendii superiori.",
+      "Una nota sulla misura: i valori delle località sono modellati per i pendii superiori, quelli delle stazioni misurati in un punto alla data indicata, ed entrambi hanno una certa incertezza."
+     ]
+    },
+    {
+     "h": "I prossimi giorni nella previsione",
+     "p": [
+      "Fino al 16 novembre la previsione aggiunge 1 in (2 cm) a Killington Resort, 1 in (2 cm) a Gore Mountain e 1 in (2 cm) a Mount Snow; le quantità a diversi giorni possono ancora cambiare.",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "L'ombra protegge il manto nevoso. I versanti nord in quota prendono meno sole, quindi la loro neve dura più che sul lato sud.",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "La neve di inizio stagione è sottile. Resta sulle piste aperte e battute: sassi ed erba sono appena sotto.",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Killington Resort riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve nel Nord-est degli USA il 13 novembre 2026 (modello neve SnowScope): Killington Resort, Gore Mountain, Mount Snow, Magic Mountain."
+   }
+  },
+  "es": {
+   "title": "¿Buen comienzo de invierno en el noreste de EE. UU.? 4 de 4 estaciones por encima de lo normal (13 de noviembre)",
+   "description": "¿Es un buen comienzo de invierno en el noreste de EE. UU.? La nieve de hoy en 4 estaciones en el noreste de EE. UU., frente a la misma fecha de cada …",
+   "lede": "¿Es un buen comienzo de invierno en el noreste de EE. UU.? La nieve de hoy en 4 estaciones en el noreste de EE. UU., frente a la misma fecha de cada uno de los 46 inviernos pasados, muestra cómo se forma la reserva de agua de la temporada. En 4 de ellas, la nieve está claramente por encima de lo normal. La nieve en la montaña es agua guardada para la primavera: lo que cae ahora alimenta después ríos y embalses.",
+   "sections": [
+    {
+     "h": "La reserva de nieve frente a los inviernos pasados",
+     "p": [
+      "A 2651 ft (808 m) en Killington Resort, los 3 in (8 cm) de hoy superan lo que dio esta fecha en 42 de los 46 inviernos pasados (lo habitual: 0 in (1 cm)): ya hay una buena cantidad de agua almacenada en la nieve.",
+      "Gore Mountain empieza bien a llenar su reserva de nieve: 2 in (4 cm) a 2316 ft (706 m), más que en esta fecha en 38 de los 46 inviernos pasados (lo habitual: 0 in (1 cm)).",
+      "A 2762 ft (842 m) en Mount Snow, los 3 in (8 cm) de hoy superan lo que dio esta fecha en 43 de los 46 inviernos pasados (lo habitual: 0 in (0 cm)): ya hay una buena cantidad de agua almacenada en la nieve.",
+      "Magic Mountain empieza bien a llenar su reserva de nieve: 1 in (2 cm) a 2113 ft (644 m), más que en esta fecha en 36 de los 46 inviernos pasados (lo habitual: 0 in (0 cm))."
+     ]
+    },
+    {
+     "h": "La reserva de nieve de hoy",
+     "p": [
+      "El manto más grueso del grupo está en Killington Resort, unos 5 in (12 cm) en las pistas altas; después Gore Mountain 3 in (8 cm) y Mount Snow 3 in (8 cm).",
+      "La nieve cubre ahora 5568 sq mi (14.420 km²) en el noreste de EE. UU.; 28 de 112 estaciones tienen algo en las pistas altas.",
+      "Nota sobre la medida: los valores de las estaciones de esquí son modelados para las pistas altas, los de las estaciones de medida se toman en un lugar en la fecha indicada, y todos tienen cierta incertidumbre."
+     ]
+    },
+    {
+     "h": "Los próximos días en la previsión",
+     "p": [
+      "Hasta el 16 de noviembre, la previsión añade 1 in (2 cm) en Killington Resort, 1 in (2 cm) en Gore Mountain y 1 in (2 cm) en Mount Snow; las cantidades a varios días aún pueden cambiar.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "La sombra protege el manto. Las laderas norte en altura reciben menos sol, así que su nieve dura más que en la cara sur.",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "La nieve de principio de temporada es fina. Quédate en pistas abiertas y pisadas: piedras y hierba están justo debajo.",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Killington Resort recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el noreste de EE. UU. el 13 de noviembre 2026 (modelo de nieve de SnowScope): Killington Resort, Gore Mountain, Mount Snow, Magic Mountain."
+   }
+  },
+  "ar": {
+   "title": "واش بداية مزيانة ديال الشتا فشمال شرق ميريكان؟ 4 محطات من 4 فوق العادي (13 نونبر)",
+   "description": "واش هادي بداية مزيانة ديال الشتا فشمال شرق ميريكان؟ التلج ديال اليوم ف 4 محطات فشمال شرق ميريكان، مقارن مع نفس التاريخ فكل وحدة من 46 ديال الشتوات …",
+   "lede": "واش هادي بداية مزيانة ديال الشتا فشمال شرق ميريكان؟ التلج ديال اليوم ف 4 محطات فشمال شرق ميريكان، مقارن مع نفس التاريخ فكل وحدة من 46 ديال الشتوات اللي فاتو، كيبين كيفاش كيتبنى الخزان ديال الما هاد الموسم. ف 4 منهم، التلج فوق العادي بوضوح. التلج فالجبال هو ما مخزون للربيع: اللي طاح دابا غادي يعمر الوديان والسدود من بعد.",
+   "sections": [
+    {
+     "h": "الخزان ديال التلج قدام الشتوات اللي فاتو",
+     "p": [
+      "على علو 2651 قدم (808 م) ف Killington Resort، 3 إنش (8 سم) ديال اليوم كثر من اللي جاب هاد التاريخ ف 42 من 46 ديال الشتوات اللي فاتو (العادي: 0 إنش (1 سم)): كمية مزيانة ديال الما مخزونة دابا فالتلج.",
+      "Gore Mountain عندها بداية مزيانة للخزان ديال التلج: 2 إنش (4 سم) على علو 2316 قدم (706 م)، أكثر من هاد التاريخ ف 38 من 46 ديال الشتوات اللي فاتو (العادي: 0 إنش (1 سم)).",
+      "على علو 2762 قدم (842 م) ف Mount Snow، 3 إنش (8 سم) ديال اليوم كثر من اللي جاب هاد التاريخ ف 43 من 46 ديال الشتوات اللي فاتو (العادي: 0 إنش (0 سم)): كمية مزيانة ديال الما مخزونة دابا فالتلج.",
+      "Magic Mountain عندها بداية مزيانة للخزان ديال التلج: 1 إنش (2 سم) على علو 2113 قدم (644 م)، أكثر من هاد التاريخ ف 36 من 46 ديال الشتوات اللي فاتو (العادي: 0 إنش (0 سم))."
+     ]
+    },
+    {
+     "h": "الخزان ديال التلج اليوم",
+     "p": [
+      "أعمق طبقة ديال التلج فهاد المجموعة كاينة ف Killington Resort، تقريبا 5 إنش (12 سم) فالجهة الفوقانية؛ ومن بعدها Gore Mountain 3 إنش (8 سم) و Mount Snow 3 إنش (8 سم).",
+      "التلج دابا مغطي 5568 ميل² (14420 كم²) فشمال شرق ميريكان؛ و 28 محطة من 112 فيهم شوية فالجهة الفوقانية.",
+      "ملاحظة على القياس: القيم ديال المحطات محسوبة بالموديل للجهة الفوقانية، والقيم ديال محطات القياس مقاسة فبلاصة وحدة فالتاريخ المكتوب، وبجوج فيهم شوية ديال الشك."
+     ]
+    },
+    {
+     "h": "الأيام الجاية فالتوقعات",
+     "p": [
+      "حتى ل 16 نونبر، التوقعات كتزيد 1 إنش (2 سم) ف Killington Resort، 1 إنش (2 سم) ف Gore Mountain و 1 إنش (2 سم) ف Mount Snow؛ الكميات ديال شي أيام قدام يقدرو مازال يتبدلو.",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "الظل كيحمي التلج. الجهات العاليين اللي كتشوف للشمال كتاخد شمس قليلة، داكشي علاش التلج ديالهم كيدوم كثر من الجهة ديال الجنوب.",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "التلج ديال بداية الموسم رقيق. بقى فالبيستات المحلولة والمدكوكة: الحجر والربيع يمكن يكونو تحت نيشان.",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Killington Resort يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فشمال شرق ميريكان نهار 13 نونبر 2026 (الموديل ديال SnowScope): Killington Resort, Gore Mountain, Mount Snow, Magic Mountain."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "de": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "it": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "es": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  }
+ },
+ "words_en": 363,
+ "indexable": true,
+ "main": {
+  "slug": "killington",
+  "name": "Killington Resort",
+  "lat": 43.6125,
+  "lon": -72.7948
+ },
+ "places": [
+  {
+   "name": "Killington Resort",
+   "lat": 43.6125,
+   "lon": -72.7948
+  },
+  {
+   "name": "Gore Mountain",
+   "lat": 43.6815,
+   "lon": -74.0164
+  },
+  {
+   "name": "Mount Snow",
+   "lat": 42.9625,
+   "lon": -72.9102
+  },
+  {
+   "name": "Magic Mountain",
+   "lat": 43.1983,
+   "lon": -72.7663
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "killington",
+   "name": "Killington Resort"
+  },
+  {
+   "slug": "gore_mountain",
+   "name": "Gore Mountain"
+  },
+  {
+   "slug": "mount_snow",
+   "name": "Mount Snow"
+  },
+  {
+   "slug": "magic_mountain_ski_area",
+   "name": "Magic Mountain"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "killington",
+    "name": "Killington Resort",
+    "depth": 12,
+    "new72": 12,
+    "next": 2,
+    "top_m": 1262
+   },
+   {
+    "slug": "gore_mountain",
+    "name": "Gore Mountain",
+    "depth": 8,
+    "new72": 10,
+    "next": 2,
+    "top_m": 1092
+   },
+   {
+    "slug": "mount_snow",
+    "name": "Mount Snow",
+    "depth": 8,
+    "new72": 12,
+    "next": 2,
+    "top_m": 1093
+   },
+   {
+    "slug": "magic_mountain_ski_area",
+    "name": "Magic Mountain",
+    "depth": 6,
+    "new72": 9,
+    "next": 2,
+    "top_m": 869
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Mount Washington Avalanche Center",
+   "url": "https://www.mountwashingtonavalanchecenter.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@43.612,-72.795,9.0",
+ "seconds": 0.0,
+ "facts_used": 20,
+ "voice": "hydro",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 52.7,
+  "after": 14.7,
+  "with": "us-west-snow-vs-past-winters-11-november-2026",
+  "tries": 1
+ },
+ "similarity": {
+  "max": 0.143,
+  "with": "western-canada-snow-vs-past-winters-13-november-2026"
+ },
+ "publish_utc": "2026-11-13T18:24:37Z"
+}
