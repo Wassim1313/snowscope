@@ -1,0 +1,805 @@
+{
+ "id": "2026-11-13-pyrenees-isotherm",
+ "slug": "pyrenees-freezing-level-snow-line-13-november-2026",
+ "date": "2026-11-13",
+ "published_utc": "2026-11-13T12:19:32Z",
+ "updated_utc": "2026-11-13T12:19:32Z",
+ "region": "PYRENEES",
+ "angle": "isotherm",
+ "score": 42,
+ "signature": "boi_taull:2800|aramon_cerler:2800|grand_tourmalet:2800",
+ "keyword": {
+  "family": "snow-line",
+  "entity": "pyrenees",
+  "region": "PYRENEES",
+  "date": "2026-11-13"
+ },
+ "tags": [
+  "snow-line",
+  "forecast",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "freezing_level_analysis",
+  "region": "Pyrenees",
+  "date": "2026-11-13",
+  "weekday": "Friday",
+  "model_run": "2026-11-13",
+  "forecast_days": [
+   "2026-11-14",
+   "2026-11-15",
+   "2026-11-16"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 470,
+   "resorts_with_snow": 13,
+   "resorts_in_region": 53
+  },
+  "region_before": {
+   "date": "2026-11-11",
+   "snow_covered_area_km2": 450,
+   "resorts_with_snow": 26
+  },
+  "region_forecast": {
+   "date": "2026-11-16",
+   "snow_covered_area_km2": 620,
+   "resorts_with_snow": 14
+  },
+  "question": "How high is the 0 °C level in the next days, where does rain turn to snow, and is rain falling on the snowpack?",
+  "snow_line_below_freezing_level_m": 300,
+  "region_freezing_level_m_by_day": {
+   "2026-11-13": {
+    "lowest": 2470,
+    "highest": 2820
+   },
+   "2026-11-14": {
+    "lowest": 2400,
+    "highest": 2750
+   },
+   "2026-11-15": {
+    "lowest": 2230,
+    "highest": 2720
+   },
+   "2026-11-16": {
+    "lowest": 2270,
+    "highest": 2640
+   }
+  },
+  "forecast_points": [
+   {
+    "place": "Baqueira-Beret",
+    "elev_m": 2510,
+    "precip_mm_total_next_days": 14,
+    "precip_mm_by_day": {
+     "2026-11-13": 1,
+     "2026-11-14": 0,
+     "2026-11-15": 1,
+     "2026-11-16": 1,
+     "2026-11-17": 7,
+     "2026-11-18": 3
+    },
+    "freezing_level_m_when_wet": 2840,
+    "snow_line_m_when_wet": 2540,
+    "share_of_precip_as_snow_at_this_height_pct": 42
+   },
+   {
+    "place": "Saint-Lary",
+    "elev_m": 2515,
+    "precip_mm_total_next_days": 25,
+    "precip_mm_by_day": {
+     "2026-11-13": 1,
+     "2026-11-14": 2,
+     "2026-11-15": 2,
+     "2026-11-16": 6,
+     "2026-11-17": 10,
+     "2026-11-18": 3
+    },
+    "freezing_level_m_when_wet": 2860,
+    "snow_line_m_when_wet": 2560,
+    "share_of_precip_as_snow_at_this_height_pct": 46
+   }
+  ],
+  "notes": [
+   "0 °C level = height where the air temperature crosses 0 °C (forecast, daily lowest and highest)",
+   "snow line = about 300 m below the 0 °C level, at the warmest hours of the day",
+   "rain-on-snow risk = snow on the slopes and a snow line above mid-mountain on a day with precipitation"
+  ],
+  "resorts": [
+   {
+    "name": "Boí Taüll",
+    "country": "Spain",
+    "top_m": 2747,
+    "base_m": 2039,
+    "depth_cm_upper_slopes_today": 2,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 6,
+    "new_cm_forecast_next_days": 8,
+    "slug": "boi_taull",
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 2630,
+      "max": 2800
+     },
+     "2026-11-14": {
+      "min": 2480,
+      "max": 2630
+     },
+     "2026-11-15": {
+      "min": 2300,
+      "max": 2670
+     },
+     "2026-11-16": {
+      "min": 2270,
+      "max": 2640
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-13": 2500,
+     "2026-11-14": 2300,
+     "2026-11-15": 2400,
+     "2026-11-16": 2300
+    },
+    "days_snow_line_above_top": [],
+    "days_snow_line_above_base": [
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Aramón Cerler",
+    "country": "Spain",
+    "top_m": 2618,
+    "base_m": 1503,
+    "depth_cm_upper_slopes_today": 1,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 6,
+    "new_cm_forecast_next_days": 10,
+    "slug": "aramon_cerler",
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 2630,
+      "max": 2790
+     },
+     "2026-11-14": {
+      "min": 2480,
+      "max": 2630
+     },
+     "2026-11-15": {
+      "min": 2290,
+      "max": 2600
+     },
+     "2026-11-16": {
+      "min": 2310,
+      "max": 2540
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-13": 2500,
+     "2026-11-14": 2300,
+     "2026-11-15": 2300,
+     "2026-11-16": 2200
+    },
+    "days_snow_line_above_top": [],
+    "days_snow_line_above_base": [
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Grand Tourmalet",
+    "country": "France",
+    "top_m": 2464,
+    "base_m": 1459,
+    "depth_cm_upper_slopes_today": 2,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 6,
+    "new_cm_forecast_next_days": 11,
+    "slug": "grand_tourmalet",
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 2470,
+      "max": 2770
+     },
+     "2026-11-14": {
+      "min": 2550,
+      "max": 2750
+     },
+     "2026-11-15": {
+      "min": 2480,
+      "max": 2720
+     },
+     "2026-11-16": {
+      "min": 2510,
+      "max": 2590
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-13": 2500,
+     "2026-11-14": 2400,
+     "2026-11-15": 2400,
+     "2026-11-16": 2300
+    },
+    "days_snow_line_above_top": [
+     "2026-11-13"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Gavarnie-Gèdre",
+    "country": "France",
+    "top_m": 2283,
+    "base_m": 1818,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 3,
+    "new_cm_forecast_next_days": 17,
+    "slug": "gavarnie_gedre",
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 2560,
+      "max": 2820
+     },
+     "2026-11-14": {
+      "min": 2470,
+      "max": 2670
+     },
+     "2026-11-15": {
+      "min": 2290,
+      "max": 2570
+     },
+     "2026-11-16": {
+      "min": 2400,
+      "max": 2510
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-13": 2500,
+     "2026-11-14": 2400,
+     "2026-11-15": 2300,
+     "2026-11-16": 2200
+    },
+    "days_snow_line_above_top": [
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "La Pierre Saint-Martin",
+    "country": "France",
+    "top_m": 2146,
+    "base_m": 1519,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 3,
+    "new_cm_forecast_next_days": 7,
+    "slug": "la_pierre_saint_martin_san_martingo_harria",
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 2540,
+      "max": 2640
+     },
+     "2026-11-14": {
+      "min": 2400,
+      "max": 2610
+     },
+     "2026-11-15": {
+      "min": 2230,
+      "max": 2510
+     },
+     "2026-11-16": {
+      "min": 2350,
+      "max": 2570
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-13": 2300,
+     "2026-11-14": 2300,
+     "2026-11-15": 2200,
+     "2026-11-16": 2300
+    },
+    "days_snow_line_above_top": [
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-13",
+     "2026-11-14",
+     "2026-11-15",
+     "2026-11-16"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "alt_sat",
+   "kind": "sat_map",
+   "file": "blog/media/2026/11/pyrenees-freezing-level-snow-line-13-november-2026/alt_sat.webp",
+   "thumb": "blog/media/2026/11/pyrenees-freezing-level-snow-line-13-november-2026/alt_sat_t.webp",
+   "bytes": 73308,
+   "snow_frac": 0.1224,
+   "weak": false
+  },
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/pyrenees-freezing-level-snow-line-13-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/pyrenees-freezing-level-snow-line-13-november-2026/map_t.webp",
+   "bytes": 59254,
+   "snow_frac": 0.0288,
+   "weak": true
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Pyrenees freezing level: 0 °C from 2,230 m to 2,820 m, snow line up to 2,500 m (13 November)",
+   "description": "The 0 °C level decides whether the mountains store snow or shed rain: over the next days our forecast puts it between 2,230 m and 2,820 m in the …",
+   "lede": "The 0 °C level decides whether the mountains store snow or shed rain: over the next days our forecast puts it between 2,230 m and 2,820 m in the Pyrenees. On Friday 13 November the snow line at Boí Taüll reaches 2,500 m in the warmest hours, about 300 m under that level. Snow in the mountains is water held back for spring: what falls now feeds rivers and reservoirs later.",
+   "sections": [
+    {
+     "h": "Will rain reach the snowpack?",
+     "p": [
+      "The snow already on the ground looks safe from rain in the next days: on wet days the snow line stays low enough at these resorts.",
+      "At Baqueira-Beret (2,510 m) the forecast gives 14 mm of precipitation, the water that reaches the mountain; during the wet hours the snow line is near 2,540 m.",
+      "25 mm of precipitation is forecast at Saint-Lary (2,515 m); while it falls, the snow line sits near 2,560 m."
+     ]
+    },
+    {
+     "h": "Rain or snow at each resort",
+     "p": [
+      "At Boí Taüll (base 2,039 m, top 2,747 m) the snow line reaches about 2,500 m on 13 November: the top gains snow, the lower slopes get rain or wet snow.",
+      "Aramón Cerler (base 1,503 m, top 2,618 m): a snow line of about 2,500 m on 13 November, between base and top, means snow is stored up high while the lower slopes get rain or wet snow.",
+      "Grand Tourmalet (base 1,459 m, top 2,464 m): the snow line rises to about 2,500 m on 13 November, above the top, so precipitation would fall as rain or wet snow on the whole mountain and run off.",
+      "At Gavarnie-Gèdre (base 1,818 m, top 2,283 m), a snow line of about 2,500 m on 13 November sits above the top: rain or wet snow on every slope if precipitation falls.",
+      "La Pierre Saint-Martin (base 1,519 m, top 2,146 m): the snow line rises to about 2,300 m on 13 November, above the top, so precipitation would fall as rain or wet snow on the whole mountain and run off."
+     ]
+    },
+    {
+     "h": "The 0 °C level and the melt",
+     "p": [
+      "The 0 °C level at the resorts below, from the coldest to the warmest hour of each day: Friday 13 November: from 2,470 m to 2,820 m. Saturday 14 November: from 2,400 m to 2,750 m. Sunday 15 November: from 2,230 m to 2,720 m. Monday 16 November: from 2,270 m to 2,640 m."
+     ]
+    },
+    {
+     "h": "How snow turns to rain below the 0 °C level",
+     "p": [
+      "Falling snow meets warmer air below the 0 °C level and starts to melt, but it needs time and energy to turn into rain, so the change happens some 300 m lower: that is the snow line. Evaporation in dry air cools the flakes and can lower it further."
+     ]
+    }
+   ],
+   "advice": [
+    "On warm days, take the top lifts and the north-facing runs early, before the snow goes soft.",
+    "The 0 °C level is a forecast and can shift by several hundred metres, so look at the map again the day before you leave.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website."
+   ],
+   "captions": {
+    "alt_sat": "Snow depth in the Pyrenees on 13 November (SnowScope snow model) with the resorts of this freezing-level analysis and their top heights.",
+    "map": "Snow depth in the Pyrenees on 13 November (SnowScope snow model) with the resorts of this freezing-level analysis and their top heights."
+   }
+  },
+  "fr": {
+   "title": "Isotherme 0 °C dans les Pyrénées : de 2 230 m à 2 820 m, limite pluie-neige jusqu'à 2 500 m (13 novembre)",
+   "description": "L'isotherme 0 °C décide si les montagnes stockent de la neige ou rendent de la pluie : ces prochains jours, notre prévision la place entre 2 230 m et …",
+   "lede": "L'isotherme 0 °C décide si les montagnes stockent de la neige ou rendent de la pluie : ces prochains jours, notre prévision la place entre 2 230 m et 2 820 m dans les Pyrénées. Le vendredi 13 novembre, la limite pluie-neige à Boí Taüll atteint 2 500 m aux heures les plus douces, environ 300 m sous ce niveau. La neige en montagne, c'est de l'eau mise de côté pour le printemps : ce qui tombe maintenant alimente plus tard rivières et barrages.",
+   "sections": [
+    {
+     "h": "La pluie atteindra-t-elle le manteau ?",
+     "p": [
+      "La neige déjà au sol semble à l'abri de la pluie ces prochains jours : les jours humides, la limite pluie-neige reste assez basse dans ces stations.",
+      "À Baqueira-Beret (2 510 m), la prévision donne 14 mm de précipitations, l'eau qui arrive sur la montagne ; pendant les heures humides, la limite pluie-neige est vers 2 540 m.",
+      "25 mm de précipitations sont prévus à Saint-Lary (2 515 m) ; pendant qu'ils tombent, la limite pluie-neige se trouve vers 2 560 m."
+     ]
+    },
+    {
+     "h": "Pluie ou neige dans chaque station",
+     "p": [
+      "À Boí Taüll (bas 2 039 m, sommet 2 747 m), la limite pluie-neige atteint environ 2 500 m le 13 novembre : le haut gagne de la neige, le bas reçoit pluie ou neige mouillée.",
+      "Aramón Cerler (bas 1 503 m, sommet 2 618 m) : une limite pluie-neige vers 2 500 m le 13 novembre, entre le bas et le sommet, signifie que la neige est stockée en haut tandis que le bas reçoit pluie ou neige mouillée.",
+      "Grand Tourmalet (bas 1 459 m, sommet 2 464 m) : la limite pluie-neige monte vers 2 500 m le 13 novembre, au-dessus du sommet, donc les précipitations tomberaient en pluie ou en neige mouillée sur tout le domaine et ruisselleraient.",
+      "À Gavarnie-Gèdre (bas 1 818 m, sommet 2 283 m), une limite pluie-neige vers 2 500 m le 13 novembre passe au-dessus du sommet : pluie ou neige mouillée sur toutes les pentes s'il y a des précipitations.",
+      "La Pierre Saint-Martin (bas 1 519 m, sommet 2 146 m) : la limite pluie-neige monte vers 2 300 m le 13 novembre, au-dessus du sommet, donc les précipitations tomberaient en pluie ou en neige mouillée sur tout le domaine et ruisselleraient."
+     ]
+    },
+    {
+     "h": "L'isotherme 0 °C et la fonte",
+     "p": [
+      "L'isotherme 0 °C au-dessus des stations ci-dessous, de l'heure la plus froide à la plus douce de chaque jour : vendredi 13 novembre : de 2 470 m à 2 820 m. samedi 14 novembre : de 2 400 m à 2 750 m. dimanche 15 novembre : de 2 230 m à 2 720 m. lundi 16 novembre : de 2 270 m à 2 640 m."
+     ]
+    },
+    {
+     "h": "Comment la neige devient pluie sous l'isotherme 0 °C",
+     "p": [
+      "La neige qui tombe rencontre un air plus doux sous l'isotherme 0 °C et commence à fondre, mais il lui faut du temps et de l'énergie pour devenir pluie, donc le changement se fait environ 300 m plus bas : c'est la limite pluie-neige. L'évaporation dans un air sec refroidit les flocons et peut l'abaisser encore."
+     ]
+    }
+   ],
+   "advice": [
+    "Les jours doux, prenez tôt les remontées du sommet et les pistes nord, avant que la neige ne devienne molle.",
+    "L'isotherme 0 °C est une prévision et peut se déplacer de plusieurs centaines de mètres, alors regardez la carte à nouveau la veille.",
+    "Avant toute sortie hors-piste ou en randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates sur son site."
+   ],
+   "captions": {
+    "alt_sat": "Hauteur de neige dans les Pyrénées le 13 novembre (modèle SnowScope), avec les stations de cette analyse et l'altitude de leur sommet.",
+    "map": "Hauteur de neige dans les Pyrénées le 13 novembre (modèle SnowScope), avec les stations de cette analyse et l'altitude de leur sommet."
+   }
+  },
+  "de": {
+   "title": "Nullgradgrenze in den Pyrenäen: von 2.230 m bis 2.820 m, Schneefallgrenze bis 2.500 m (13. November)",
+   "description": "Die Nullgradgrenze entscheidet, ob die Berge Schnee speichern oder Regen abgeben: In den nächsten Tagen sieht unsere Prognose sie in den Pyrenäen …",
+   "lede": "Die Nullgradgrenze entscheidet, ob die Berge Schnee speichern oder Regen abgeben: In den nächsten Tagen sieht unsere Prognose sie in den Pyrenäen zwischen 2.230 m und 2.820 m. Am Freitag, 13. November erreicht die Schneefallgrenze in Boí in den wärmsten Stunden Taüll 2.500 m, etwa 300 m unter dieser Grenze. Schnee in den Bergen ist Wasser, das für den Frühling zurückgehalten wird: Was jetzt fällt, speist später Flüsse und Stauseen.",
+   "sections": [
+    {
+     "h": "Erreicht Regen die Schneedecke?",
+     "p": [
+      "Der Schnee am Boden scheint in den nächsten Tagen vor Regen sicher: An nassen Tagen bleibt die Schneefallgrenze in diesen Skigebieten tief genug.",
+      "In Baqueira-Beret (2.510 m) zeigt die Prognose 14 mm Niederschlag, das Wasser, das den Berg erreicht; in den nassen Stunden liegt die Schneefallgrenze bei etwa 2.540 m.",
+      "25 mm Niederschlag sind in Saint-Lary (2.515 m) vorhergesagt; während er fällt, liegt die Schneefallgrenze bei 2.560 m."
+     ]
+    },
+    {
+     "h": "Regen oder Schnee in jedem Skigebiet",
+     "p": [
+      "In Boí Taüll (Tal 2.039 m, Gipfel 2.747 m) erreicht die Schneefallgrenze am 13. November etwa 2.500 m: Oben kommt Schnee dazu, die unteren Hänge bekommen Regen oder nassen Schnee.",
+      "Aramón Cerler (Tal 1.503 m, Gipfel 2.618 m): Eine Schneefallgrenze von etwa 2.500 m am 13. November, zwischen Tal und Gipfel, heißt: Oben wird Schnee gespeichert, die unteren Hänge bekommen Regen oder nassen Schnee.",
+      "Grand Tourmalet (Tal 1.459 m, Gipfel 2.464 m): Die Schneefallgrenze steigt am 13. November auf etwa 2.500 m, über den Gipfel, also fiele Niederschlag am ganzen Berg als Regen oder nasser Schnee und flösse ab.",
+      "In Gavarnie-Gèdre (Tal 1.818 m, Gipfel 2.283 m) liegt eine Schneefallgrenze von etwa 2.500 m am 13. November über dem Gipfel: Regen oder nasser Schnee an jedem Hang, wenn Niederschlag fällt.",
+      "La Pierre Saint-Martin (Tal 1.519 m, Gipfel 2.146 m): Die Schneefallgrenze steigt am 13. November auf etwa 2.300 m, über den Gipfel, also fiele Niederschlag am ganzen Berg als Regen oder nasser Schnee und flösse ab."
+     ]
+    },
+    {
+     "h": "Die Nullgradgrenze und die Schmelze",
+     "p": [
+      "Die Nullgradgrenze über den Skigebieten unten, von der kältesten bis zur wärmsten Stunde jedes Tages: Freitag, 13. November: von 2.470 m bis 2.820 m. Samstag, 14. November: von 2.400 m bis 2.750 m. Sonntag, 15. November: von 2.230 m bis 2.720 m. Montag, 16. November: von 2.270 m bis 2.640 m."
+     ]
+    },
+    {
+     "h": "Wie Schnee unter der Nullgradgrenze zu Regen wird",
+     "p": [
+      "Fallender Schnee trifft unter der Nullgradgrenze auf wärmere Luft und beginnt zu schmelzen, braucht aber Zeit und Energie, um zu Regen zu werden, deshalb passiert der Wechsel etwa 300 m tiefer: Das ist die Schneefallgrenze. Verdunstung in trockener Luft kühlt die Flocken und kann sie weiter senken."
+     ]
+    }
+   ],
+   "advice": [
+    "An warmen Tagen nimm früh die obersten Lifte und die Nordabfahrten, bevor der Schnee weich wird.",
+    "Die Nullgradgrenze ist eine Prognose und kann sich um mehrere hundert Meter verschieben, also schau am Tag vor der Abfahrt noch einmal auf die Karte.",
+    "Lies vor jedem Tag abseits der Piste oder auf Tour den offiziellen Lawinenlagebericht (Links unten).",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Termine auf seiner Website."
+   ],
+   "captions": {
+    "alt_sat": "Schneehöhe in den Pyrenäen am 13. November (SnowScope-Modell) mit den Skigebieten dieser Analyse und ihrer Gipfelhöhe.",
+    "map": "Schneehöhe in den Pyrenäen am 13. November (SnowScope-Modell) mit den Skigebieten dieser Analyse und ihrer Gipfelhöhe."
+   }
+  },
+  "it": {
+   "title": "Zero termico sui Pirenei: da 2.230 m a 2.820 m, quota neve fino a 2.500 m (13 novembre)",
+   "description": "Lo zero termico decide se le montagne accumulano neve o scaricano pioggia: nei prossimi giorni la nostra previsione lo colloca sui Pirenei tra …",
+   "lede": "Lo zero termico decide se le montagne accumulano neve o scaricano pioggia: nei prossimi giorni la nostra previsione lo colloca sui Pirenei tra 2.230 m e 2.820 m. Il venerdì 13 novembre la quota neve a Boí Taüll arriva a 2.500 m nelle ore più miti, circa 300 m sotto quel livello. La neve in montagna è acqua trattenuta per la primavera: quello che cade ora alimenterà più tardi fiumi e invasi.",
+   "sections": [
+    {
+     "h": "La pioggia arriverà sul manto?",
+     "p": [
+      "La neve già al suolo sembra al sicuro dalla pioggia nei prossimi giorni: nei giorni umidi la quota neve resta abbastanza bassa in queste località.",
+      "A Baqueira-Beret (2.510 m) la previsione indica 14 mm di precipitazioni, l'acqua che arriva sulla montagna; nelle ore umide la quota neve è vicina a 2.540 m.",
+      "Sono previsti 25 mm di precipitazioni a Saint-Lary (2.515 m); mentre cadono, la quota neve è vicino a 2.560 m."
+     ]
+    },
+    {
+     "h": "Pioggia o neve in ogni località",
+     "p": [
+      "A Boí Taüll (base 2.039 m, vetta 2.747 m) la quota neve arriva a circa 2.500 m il 13 novembre: la parte alta guadagna neve, i pendii bassi ricevono pioggia o neve bagnata.",
+      "Aramón Cerler (base 1.503 m, vetta 2.618 m): una quota neve di circa 2.500 m il 13 novembre, tra base e vetta, vuol dire neve immagazzinata in alto mentre i pendii bassi ricevono pioggia o neve bagnata.",
+      "Grand Tourmalet (base 1.459 m, vetta 2.464 m): la quota neve sale a circa 2.500 m il 13 novembre, sopra la vetta, quindi le precipitazioni cadrebbero come pioggia o neve bagnata su tutta la montagna e defluirebbero.",
+      "A Gavarnie-Gèdre (base 1.818 m, vetta 2.283 m) una quota neve di circa 2.500 m il 13 novembre sta sopra la vetta: pioggia o neve bagnata su ogni pendio se arrivano precipitazioni.",
+      "La Pierre Saint-Martin (base 1.519 m, vetta 2.146 m): la quota neve sale a circa 2.300 m il 13 novembre, sopra la vetta, quindi le precipitazioni cadrebbero come pioggia o neve bagnata su tutta la montagna e defluirebbero."
+     ]
+    },
+    {
+     "h": "Lo zero termico e la fusione",
+     "p": [
+      "Lo zero termico sulle località qui sotto, dall'ora più fredda alla più mite di ogni giorno: venerdì 13 novembre: da 2.470 m a 2.820 m. sabato 14 novembre: da 2.400 m a 2.750 m. domenica 15 novembre: da 2.230 m a 2.720 m. lunedì 16 novembre: da 2.270 m a 2.640 m."
+     ]
+    },
+    {
+     "h": "Come la neve diventa pioggia sotto lo zero termico",
+     "p": [
+      "La neve che cade incontra aria più calda sotto lo zero termico e inizia a fondere, ma le servono tempo ed energia per diventare pioggia, quindi il passaggio avviene circa 300 m più in basso: è la quota neve. L'evaporazione in aria secca raffredda i fiocchi e può abbassarla ancora."
+     ]
+    }
+   ],
+   "advice": [
+    "Nei giorni miti prendi presto gli impianti di vetta e le piste a nord, prima che la neve diventi molle.",
+    "Lo zero termico è una previsione e può spostarsi di diverse centinaia di metri, quindi guarda di nuovo la mappa il giorno prima di partire.",
+    "Prima di ogni uscita in fuoripista o scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date sul suo sito."
+   ],
+   "captions": {
+    "alt_sat": "Altezza neve sui Pirenei il 13 novembre (modello SnowScope) con le località di questa analisi e la quota della vetta.",
+    "map": "Altezza neve sui Pirenei il 13 novembre (modello SnowScope) con le località di questa analisi e la quota della vetta."
+   }
+  },
+  "es": {
+   "title": "Isoterma de 0 °C en los Pirineos: de 2230 m a 2820 m, cota de nieve hasta 2500 m (13 de noviembre)",
+   "description": "La isoterma de 0 °C decide si las montañas guardan nieve o sueltan lluvia: en los próximos días nuestra previsión la sitúa entre 2230 m y 2820 m en …",
+   "lede": "La isoterma de 0 °C decide si las montañas guardan nieve o sueltan lluvia: en los próximos días nuestra previsión la sitúa entre 2230 m y 2820 m en los Pirineos. El viernes 13 de noviembre la cota de nieve en Boí Taüll llega a 2500 m en las horas más templadas, unos 300 m por debajo de ese nivel. La nieve en la montaña es agua guardada para la primavera: lo que cae ahora alimenta después ríos y embalses.",
+   "sections": [
+    {
+     "h": "¿Llegará la lluvia al manto?",
+     "p": [
+      "La nieve que ya está en el suelo parece a salvo de la lluvia en los próximos días: los días húmedos la cota se mantiene baja en estas estaciones.",
+      "En Baqueira-Beret (2510 m) la previsión da 14 mm de precipitación, el agua que llega a la montaña; en las horas húmedas la cota de nieve ronda 2540 m.",
+      "Se prevén 25 mm de precipitación en Saint-Lary (2515 m); mientras caen, la cota de nieve queda hacia 2560 m."
+     ]
+    },
+    {
+     "h": "Lluvia o nieve en cada estación",
+     "p": [
+      "En Boí Taüll (base 2039 m, cima 2747 m) la cota de nieve llega a unos 2500 m el 13 de noviembre: arriba se gana nieve, abajo cae lluvia o nieve húmeda.",
+      "Aramón Cerler (base 1503 m, cima 2618 m): una cota de nieve de unos 2500 m el 13 de noviembre, entre la base y la cima, significa que la nieve se almacena arriba mientras abajo cae lluvia o nieve húmeda.",
+      "Grand Tourmalet (base 1459 m, cima 2464 m): la cota de nieve sube a unos 2500 m el 13 de noviembre, por encima de la cima, así que la precipitación caería como lluvia o nieve húmeda en toda la montaña y se escurriría.",
+      "En Gavarnie-Gèdre (base 1818 m, cima 2283 m), una cota de nieve de unos 2500 m el 13 de noviembre queda por encima de la cima: lluvia o nieve húmeda en todas las pistas si hay precipitación.",
+      "La Pierre Saint-Martin (base 1519 m, cima 2146 m): la cota de nieve sube a unos 2300 m el 13 de noviembre, por encima de la cima, así que la precipitación caería como lluvia o nieve húmeda en toda la montaña y se escurriría."
+     ]
+    },
+    {
+     "h": "La isoterma de 0 °C y la fusión",
+     "p": [
+      "La isoterma de 0 °C sobre las estaciones de abajo, de la hora más fría a la más templada de cada día: viernes 13 de noviembre: de 2470 m a 2820 m. sábado 14 de noviembre: de 2400 m a 2750 m. domingo 15 de noviembre: de 2230 m a 2720 m. lunes 16 de noviembre: de 2270 m a 2640 m."
+     ]
+    },
+    {
+     "h": "Cómo la nieve se vuelve lluvia bajo la isoterma de 0 °C",
+     "p": [
+      "La nieve que cae encuentra aire más templado bajo la isoterma de 0 °C y empieza a fundirse, pero necesita tiempo y energía para volverse lluvia, así que el cambio ocurre unos 300 m más abajo: esa es la cota de nieve. La evaporación en aire seco enfría los copos y puede bajarla todavía más."
+     ]
+    }
+   ],
+   "advice": [
+    "Los días templados, coge pronto los remontes de arriba y las pistas norte, antes de que la nieve se ablande.",
+    "La isoterma de 0 °C es una previsión y puede desplazarse varios cientos de metros, así que mira el mapa otra vez el día antes.",
+    "Antes de cualquier salida fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas en su web."
+   ],
+   "captions": {
+    "alt_sat": "Espesor de nieve en los Pirineos el 13 de noviembre (modelo SnowScope) con las estaciones de este análisis y la altura de su cima.",
+    "map": "Espesor de nieve en los Pirineos el 13 de noviembre (modelo SnowScope) con las estaciones de este análisis y la altura de su cima."
+   }
+  },
+  "ar": {
+   "title": "علو 0 °C فجبال البرانس: من 2230 م حتى ل 2820 م، الحد ديال التلج حتى ل 2500 م (13 نونبر)",
+   "description": "علو 0 °C هو اللي كيقرر واش الجبال غادي تخزن التلج ولا تطيح فيها الشتا: فالأيام الجاية التوقعات ديالنا كتحطو بين 2230 م و 2820 م فجبال البرانس. نهار …",
+   "lede": "علو 0 °C هو اللي كيقرر واش الجبال غادي تخزن التلج ولا تطيح فيها الشتا: فالأيام الجاية التوقعات ديالنا كتحطو بين 2230 م و 2820 م فجبال البرانس. نهار الجمعة 13 نونبر الحد ديال التلج ف Boí Taüll كيوصل ل 2500 م فالساعات اللي سخونة كثر، تقريبا 300 م تحت داك العلو. التلج فالجبال هو ما مخزون للربيع: اللي طاح دابا غادي يعمر الوديان والسدود من بعد.",
+   "sections": [
+    {
+     "h": "واش الشتا غادي توصل لطبقة التلج؟",
+     "p": [
+      "التلج اللي فالأرض باين محمي من الشتا فالأيام الجاية: فالأيام المبلولين الحد ديال التلج كيبقى لتحت فهاد المحطات.",
+      "ف Baqueira-Beret (2510 م) التوقعات كتعطي 14 مم ديال الشتا، هادا هو الما اللي كيوصل للجبل؛ فالساعات اللي فيها الشتا الحد ديال التلج قريب من 2540 م.",
+      "25 مم ديال الشتا متوقعة ف Saint-Lary (2515 م)؛ ملي كتطيح، الحد ديال التلج كيكون قريب من 2560 م."
+     ]
+    },
+    {
+     "h": "شتا ولا تلج فكل محطة",
+     "p": [
+      "ف Boí Taüll (التحت 2039 م، الفوق 2747 م) الحد ديال التلج كيوصل ل تقريبا 2500 م نهار 13 نونبر: الفوق كيربح التلج، والبيستات اللي لتحت كيجيهم الشتا ولا التلج المبلول.",
+      "Aramón Cerler (التحت 1503 م، الفوق 2618 م): حد ديال التلج ديال تقريبا 2500 م نهار 13 نونبر، بين التحت والفوق، كيعني التلج كيتخزن فالفوق والبيستات اللي لتحت كيجيهم الشتا ولا التلج المبلول.",
+      "Grand Tourmalet (التحت 1459 م، الفوق 2464 م): الحد ديال التلج كيطلع ل تقريبا 2500 م نهار 13 نونبر، فوق القمة، يعني الشتا غادي تطيح شتا ولا تلج مبلول فالجبل كامل وتجري.",
+      "ف Gavarnie-Gèdre (التحت 1818 م، الفوق 2283 م)، حد ديال التلج ديال تقريبا 2500 م نهار 13 نونبر كاين فوق القمة: شتا ولا تلج مبلول فكاع البيستات إلا طاحت الشتا.",
+      "La Pierre Saint-Martin (التحت 1519 م، الفوق 2146 م): الحد ديال التلج كيطلع ل تقريبا 2300 م نهار 13 نونبر، فوق القمة، يعني الشتا غادي تطيح شتا ولا تلج مبلول فالجبل كامل وتجري."
+     ]
+    },
+    {
+     "h": "علو 0 °C والذوبان",
+     "p": [
+      "علو 0 °C فوق المحطات اللي لتحت، من أبرد ساعة حتى ل أسخن ساعة فكل نهار: الجمعة 13 نونبر: من 2470 م حتى ل 2820 م. السبت 14 نونبر: من 2400 م حتى ل 2750 م. الأحد 15 نونبر: من 2230 م حتى ل 2720 م. الاثنين 16 نونبر: من 2270 م حتى ل 2640 م."
+     ]
+    },
+    {
+     "h": "كيفاش التلج كيولي شتا تحت علو 0 °C",
+     "p": [
+      "التلج اللي طايح كيلقى هوا سخون تحت علو 0 °C وكيبدا يدوب، ولكن خاصو الوقت والطاقة باش يولي شتا، داكشي علاش التبدال كيوقع تقريبا 300 م لتحت: هادا هو الحد ديال التلج. التبخر فالهوا الناشف كيبرد التلج ويقدر يهبطو كثر."
+     ]
+    }
+   ],
+   "advice": [
+    "فالأيام السخونين، خود التيليسييجات اللي فالفوق والبيستات اللي كتشوف للشمال بكري، قبل ما يرطاب التلج.",
+    "علو 0 °C غير توقع، ويقدر يتحرك بشي مئات ديال الميترات، داكشي علاش عاود شوف الخريطة نهار قبل ما تخرج.",
+    "قبل أي خرجة برا البيست ولا جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديالها."
+   ],
+   "captions": {
+    "alt_sat": "العلو ديال التلج فجبال البرانس نهار 13 نونبر (الموديل ديال SnowScope) مع المحطات ديال هاد التحليل والعلو ديال القمة ديالهم.",
+    "map": "العلو ديال التلج فجبال البرانس نهار 13 نونبر (الموديل ديال SnowScope) مع المحطات ديال هاد التحليل والعلو ديال القمة ديالهم."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 2
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 2
+  },
+  "de": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 2
+  },
+  "it": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 2
+  },
+  "es": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 2
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 2
+  }
+ },
+ "words_en": 425,
+ "indexable": true,
+ "main": {
+  "slug": "boi_taull",
+  "name": "Boí Taüll",
+  "lat": 42.4725,
+  "lon": 0.8743
+ },
+ "places": [
+  {
+   "name": "Boí Taüll",
+   "lat": 42.4725,
+   "lon": 0.8743
+  },
+  {
+   "name": "Aramón Cerler",
+   "lat": 42.5603,
+   "lon": 0.5558
+  },
+  {
+   "name": "Grand Tourmalet",
+   "lat": 42.9039,
+   "lon": 0.1354
+  },
+  {
+   "name": "Gavarnie-Gèdre",
+   "lat": 42.7238,
+   "lon": -0.0385
+  },
+  {
+   "name": "La Pierre Saint-Martin",
+   "lat": 42.9764,
+   "lon": -0.7418
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "boi_taull",
+   "name": "Boí Taüll"
+  },
+  {
+   "slug": "aramon_cerler",
+   "name": "Aramón Cerler"
+  },
+  {
+   "slug": "grand_tourmalet",
+   "name": "Grand Tourmalet"
+  },
+  {
+   "slug": "gavarnie_gedre",
+   "name": "Gavarnie-Gèdre"
+  },
+  {
+   "slug": "la_pierre_saint_martin_san_martingo_harria",
+   "name": "La Pierre Saint-Martin"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "boi_taull",
+    "name": "Boí Taüll",
+    "depth": 2,
+    "new72": 6,
+    "next": 8,
+    "top_m": 2747
+   },
+   {
+    "slug": "aramon_cerler",
+    "name": "Aramón Cerler",
+    "depth": 1,
+    "new72": 6,
+    "next": 10,
+    "top_m": 2618
+   },
+   {
+    "slug": "grand_tourmalet",
+    "name": "Grand Tourmalet",
+    "depth": 2,
+    "new72": 6,
+    "next": 11,
+    "top_m": 2464
+   },
+   {
+    "slug": "gavarnie_gedre",
+    "name": "Gavarnie-Gèdre",
+    "depth": 0,
+    "new72": 3,
+    "next": 17,
+    "top_m": 2283
+   },
+   {
+    "slug": "la_pierre_saint_martin_san_martingo_harria",
+    "name": "La Pierre Saint-Martin",
+    "depth": 0,
+    "new72": 3,
+    "next": 7,
+    "top_m": 2146
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Météo-France / Meteocat / AEMET",
+   "url": "https://www.avalanches.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@42.472,0.874,9.0",
+ "seconds": 0.0,
+ "facts_used": 30,
+ "voice": "hydro",
+ "media_ids": [
+  "alt_sat",
+  "map"
+ ],
+ "overlap": {
+  "before": 32.4,
+  "after": 27.6,
+  "with": "us-northeast-freezing-level-snow-line-12-november-2026",
+  "tries": 2
+ },
+ "similarity": {
+  "max": 0.16,
+  "with": "us-west-freezing-level-snow-line-8-november-2026"
+ },
+ "publish_utc": "2026-11-13T12:19:32Z"
+}

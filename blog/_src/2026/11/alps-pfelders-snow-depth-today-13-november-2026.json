@@ -1,0 +1,780 @@
+{
+ "id": "2026-11-13-alps-deepest",
+ "slug": "alps-pfelders-snow-depth-today-13-november-2026",
+ "date": "2026-11-13",
+ "published_utc": "2026-11-13T13:02:03Z",
+ "updated_utc": "2026-11-13T13:02:03Z",
+ "region": "ALPS",
+ "angle": "deepest",
+ "score": 70,
+ "signature": "pfelders:130|monterosa_ski:110|saint_luc_chandolin:100",
+ "keyword": {
+  "family": "snow-depth",
+  "entity": "pfelders",
+  "region": "ALPS",
+  "date": "2026-11-13"
+ },
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "Alps",
+  "date": "2026-11-13",
+  "weekday": "Friday",
+  "model_run": "2026-11-13",
+  "forecast_days": [
+   "2026-11-14",
+   "2026-11-15",
+   "2026-11-16"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 76100,
+   "resorts_with_snow": 829,
+   "resorts_in_region": 1179
+  },
+  "region_before": {
+   "date": "2026-11-11",
+   "snow_covered_area_km2": 39090,
+   "resorts_with_snow": 628
+  },
+  "region_forecast": {
+   "date": "2026-11-16",
+   "snow_covered_area_km2": 57910,
+   "resorts_with_snow": 775
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Pfelders",
+    "country": "Italy",
+    "top_m": 2500,
+    "base_m": 1600,
+    "depth_cm_upper_slopes_today": 133,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 19,
+    "new_cm_forecast_next_days": 3,
+    "slug": "pfelders",
+    "new_cm_by_day": {
+     "2026-11-11": 1,
+     "2026-11-12": 15,
+     "2026-11-13": 3,
+     "2026-11-14": 0,
+     "2026-11-15": 1,
+     "2026-11-16": 2
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1600,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 9,
+      "depth_cm_measured": 0
+     },
+     "mid": {
+      "elev_m": 2050,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 15,
+      "depth_cm_measured": 0
+     },
+     "top": {
+      "elev_m": 2500,
+      "depth_cm_model": 5,
+      "new_cm_next_7_days": 18,
+      "depth_cm_measured": 5
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 1960,
+      "max": 2110
+     },
+     "2026-11-14": {
+      "min": 1870,
+      "max": 2240
+     },
+     "2026-11-15": {
+      "min": 1790,
+      "max": 2140
+     },
+     "2026-11-16": {
+      "min": 1930,
+      "max": 2120
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-06"
+    },
+    "nearest_station": {
+     "station": "Grünboden - Prati di Plan",
+     "elev_m": 2015,
+     "depth_cm_measured": 0,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-12",
+     "km_away": 0.7
+    }
+   },
+   {
+    "name": "Monterosa Ski",
+    "country": "Italy",
+    "top_m": 3030,
+    "base_m": 1207,
+    "depth_cm_upper_slopes_today": 108,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 24,
+    "new_cm_forecast_next_days": 3,
+    "slug": "monterosa_ski",
+    "new_cm_by_day": {
+     "2026-11-11": 2,
+     "2026-11-12": 21,
+     "2026-11-13": 2,
+     "2026-11-14": 1,
+     "2026-11-15": 1,
+     "2026-11-16": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1207,
+      "depth_cm_model": null,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 2118,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 27
+     },
+     "top": {
+      "elev_m": 3030,
+      "depth_cm_model": 7,
+      "new_cm_next_7_days": 43,
+      "depth_cm_measured": 7
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 1960,
+      "max": 2530
+     },
+     "2026-11-14": {
+      "min": 1800,
+      "max": 2070
+     },
+     "2026-11-15": {
+      "min": 1970,
+      "max": 2210
+     },
+     "2026-11-16": {
+      "min": 2060,
+      "max": 2220
+     }
+    },
+    "past_winters": {
+     "height_m": 2118,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 2,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 12
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-07"
+    },
+    "nearest_station": {
+     "station": "Gornergratsee",
+     "elev_m": 2953,
+     "depth_cm_measured": 36,
+     "new_cm_measured_24h": 16,
+     "measured_on": "2026-11-13",
+     "km_away": 14.8
+    }
+   },
+   {
+    "name": "Saint-Luc",
+    "country": "Switzerland",
+    "top_m": 2973,
+    "base_m": 1682,
+    "depth_cm_upper_slopes_today": 98,
+    "new_cm_last_24h": 4,
+    "new_cm_last_72h": 20,
+    "new_cm_forecast_next_days": 3,
+    "slug": "saint_luc_chandolin",
+    "new_cm_by_day": {
+     "2026-11-11": 3,
+     "2026-11-12": 13,
+     "2026-11-13": 4,
+     "2026-11-14": 0,
+     "2026-11-15": 1,
+     "2026-11-16": 2
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1682,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 41,
+      "depth_cm_measured": 0
+     },
+     "mid": {
+      "elev_m": 2327,
+      "depth_cm_model": 5,
+      "new_cm_next_7_days": 54,
+      "depth_cm_measured": 5
+     },
+     "top": {
+      "elev_m": 2973,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 63,
+      "depth_cm_measured": 1
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 2050,
+      "max": 2230
+     },
+     "2026-11-14": {
+      "min": 2070,
+      "max": 2380
+     },
+     "2026-11-15": {
+      "min": 2160,
+      "max": 2510
+     },
+     "2026-11-16": {
+      "min": 2130,
+      "max": 2250
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 2,
+    "avalanche_bulletin": "WSL-SLF",
+    "past_winters": {
+     "height_m": 2327,
+     "snow_cm_at_this_height_today_model": 6,
+     "deeper_than_n_of_past_winters": 8,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 21
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-08"
+    },
+    "nearest_station": {
+     "station": "Grimentz",
+     "elev_m": 1560,
+     "depth_cm_measured": 0,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-13",
+     "km_away": 6.4
+    }
+   },
+   {
+    "name": "Les Arcs",
+    "country": "France",
+    "top_m": 3205,
+    "base_m": 1222,
+    "depth_cm_upper_slopes_today": 89,
+    "new_cm_last_24h": 4,
+    "new_cm_last_72h": 28,
+    "new_cm_forecast_next_days": 12,
+    "slug": "les_arcs",
+    "new_cm_by_day": {
+     "2026-11-11": 3,
+     "2026-11-12": 22,
+     "2026-11-13": 4,
+     "2026-11-14": 0,
+     "2026-11-15": 6,
+     "2026-11-16": 6
+    }
+   },
+   {
+    "name": "Crans-Montana",
+    "country": "Switzerland",
+    "top_m": 2872,
+    "base_m": 1427,
+    "depth_cm_upper_slopes_today": 87,
+    "new_cm_last_24h": 4,
+    "new_cm_last_72h": 21,
+    "new_cm_forecast_next_days": 6,
+    "slug": "crans_montana",
+    "new_cm_by_day": {
+     "2026-11-11": 4,
+     "2026-11-12": 13,
+     "2026-11-13": 4,
+     "2026-11-14": 0,
+     "2026-11-15": 1,
+     "2026-11-16": 5
+    }
+   }
+  ],
+  "measured_at_stations": [
+   {
+    "station": "Weißseespitze",
+    "elev_m": 3499,
+    "depth_cm_measured": 264,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-13",
+    "network": "euregio"
+   },
+   {
+    "station": "Sonnblick",
+    "elev_m": 3109,
+    "depth_cm_measured": 55,
+    "new_cm_measured_24h": 23,
+    "measured_on": "2026-11-13",
+    "network": "geosphere"
+   },
+   {
+    "station": "Lanzada Passo Marinelli",
+    "elev_m": 3032,
+    "depth_cm_measured": 52,
+    "new_cm_measured_24h": 19,
+    "measured_on": "2026-11-13",
+    "network": "lombardia"
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/alps-pfelders-snow-depth-today-13-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/alps-pfelders-snow-depth-today-13-november-2026/map_t.webp",
+   "bytes": 66042,
+   "snow_frac": 0.5082,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Snow depth in the Alps compared: Pfelders ahead with 133 cm (13 November)",
+   "description": "The snow-covered area has grown from 39,090 km² on 11 November to 76,100 km² today, and our forecast gives 57,910 km² on 16 November: more ground is …",
+   "lede": "The snow-covered area has grown from 39,090 km² on 11 November to 76,100 km² today, and our forecast gives 57,910 km² on 16 November: more ground is storing water as snow. Pfelders has the deepest snowpack in the Alps today, about 133 cm up high, followed by Monterosa Ski with 108 cm and Saint-Luc with 98 cm. Our model spreads today's snow over 76,100 km² in the Alps, reaching 829 of 1,179 resorts. Snow depth is only half the story: dense, older snow holds more water than the same depth of new snow.",
+   "sections": [
+    {
+     "h": "The snow store against past winters",
+     "p": [
+      "At Monterosa Ski (2,118 m) the season has not begun: no snow today against a usual 12 cm, a start as dry as only 2 of the past 46 winters.",
+      "At 2,327 m on Saint-Luc the snow store is behind: 6 cm today against a usual 21 cm. On 13 November, only 8 of the past 46 winters held less."
+     ]
+    },
+    {
+     "h": "Today's snow store",
+     "p": [
+      "Since 11 November the snow cover went up from 39,090 km² to 76,100 km²; on 16 November the forecast gives 57,910 km²."
+     ]
+    },
+    {
+     "h": "The next days in the forecast",
+     "p": [
+      "Until 16 November, the forecast adds 12 cm at Les Arcs, 6 cm at Crans-Montana and 3 cm at Pfelders; amounts several days out can still change.",
+      "At Pfelders the freezing level reaches 1,870 m to 2,240 m on 14 November: lower down the snow may turn wet, higher up it stays cold.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    },
+    {
+     "h": "Measured snow",
+     "p": [
+      "The Weißseespitze station (3,499 m) reported a snow depth of 264 cm on 13 November. Measured, not modelled: the Sonnblick station (3,109 m) recorded 55 cm of snow on the ground on 13 November, with 23 cm of new snow in 24 hours. The Lanzada Passo Marinelli station (3,032 m) reported a snow depth of 52 cm on 13 November, 19 cm of it from the last 24 hours.",
+      "A note on measurement: resort values are modelled for the upper slopes, station values are measured at one place on the date given, and both carry some uncertainty."
+     ]
+    }
+   ],
+   "advice": [
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "Shade protects the snowpack. High, north-facing slopes get less sun, so their snow lasts longer than on the south side.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Pfelders gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the Alps on 13 November 2026 (SnowScope snow model): Pfelders, Monterosa Ski, Saint-Luc, Les Arcs, Crans-Montana."
+   }
+  },
+  "fr": {
+   "title": "Hauteurs de neige dans les Alpes comparées : Pfelders devant avec 133 cm (13 novembre)",
+   "description": "Depuis le 11 novembre, la couverture neigeuse est passée de 39 090 km² à 76 100 km² ; le 16 novembre, la prévision donne 57 910 km². Pfelders a le …",
+   "lede": "Depuis le 11 novembre, la couverture neigeuse est passée de 39 090 km² à 76 100 km² ; le 16 novembre, la prévision donne 57 910 km². Pfelders a le manteau le plus épais dans les Alpes aujourd'hui, environ 133 cm en altitude, suivi de Monterosa Ski avec 108 cm et de Saint-Luc avec 98 cm. La neige couvre maintenant 76 100 km² dans les Alpes ; 829 stations sur 1 179 en ont sur le haut du domaine. La hauteur de neige ne dit que la moitié de l'histoire : une neige dense et ancienne contient plus d'eau que la même hauteur de neige fraîche.",
+   "sections": [
+    {
+     "h": "La réserve de neige face aux hivers passés",
+     "p": [
+      "À Monterosa Ski (2 118 m), la saison n'a pas commencé : pas de neige aujourd'hui contre 12 cm d'habitude, un départ aussi sec que seulement 2 des 46 hivers passés.",
+      "À 2 327 m à Saint-Luc, la réserve de neige est en retard : 6 cm aujourd'hui contre 21 cm d'habitude. Un 13 novembre, seuls 8 des 46 hivers passés en gardaient moins."
+     ]
+    },
+    {
+     "h": "La réserve de neige du jour",
+     "p": [
+      "La surface enneigée est passée de 39 090 km² le 11 novembre à 76 100 km² aujourd'hui, et notre prévision donne 57 910 km² le 16 novembre : c'est la surface qui stocke de l'eau sous forme de neige."
+     ]
+    },
+    {
+     "h": "Les prochains jours dans la prévision",
+     "p": [
+      "D'ici le 16 novembre, la prévision ajoute 12 cm à Les Arcs, 6 cm à Crans-Montana et 3 cm à Pfelders ; les quantités à plusieurs jours peuvent encore changer.",
+      "À Pfelders, l'isotherme 0 °C atteint 1 870 m à 2 240 m le 14 novembre : plus bas, la neige peut devenir mouillée, plus haut elle reste froide.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    },
+    {
+     "h": "La neige mesurée",
+     "p": [
+      "La station de mesure Weißseespitze (3 499 m) a relevé une hauteur de neige de 264 cm le 13 novembre. Mesuré, pas modélisé : la station Sonnblick (3 109 m) a enregistré 55 cm de neige au sol le 13 novembre, dont 23 cm de neige fraîche en 24 heures. La station de mesure Lanzada Passo Marinelli (3 032 m) a relevé une hauteur de neige de 52 cm le 13 novembre, dont 19 cm des dernières 24 heures.",
+      "Note sur la mesure : les valeurs des stations de ski sont modélisées pour le haut du domaine, celles des stations de mesure sont relevées en un lieu à la date indiquée, et toutes ont une part d'incertitude."
+     ]
+    }
+   ],
+   "advice": [
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "L'ombre protège le manteau neigeux. Les pentes nord en altitude reçoivent moins de soleil, leur neige dure plus longtemps qu'au sud.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Pfelders reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans les Alpes le 13 novembre 2026 (modèle de neige SnowScope) : Pfelders, Monterosa Ski, Saint-Luc, Les Arcs, Crans-Montana."
+   }
+  },
+  "de": {
+   "title": "Schneehöhen in den Alpen im Vergleich: Pfelders vorn mit 133 cm (13. November)",
+   "description": "Die Schneefläche ist von 39.090 km² am 11. November auf heute 76.100 km² gewachsen, und unsere Prognose ergibt 57.910 km² am 16. November: Mehr Boden …",
+   "lede": "Die Schneefläche ist von 39.090 km² am 11. November auf heute 76.100 km² gewachsen, und unsere Prognose ergibt 57.910 km² am 16. November: Mehr Boden speichert Wasser als Schnee. Pfelders hat heute die dickste Schneedecke in den Alpen, etwa 133 cm weit oben, gefolgt von Monterosa Ski mit 108 cm und Saint-Luc mit 98 cm. Schnee bedeckt jetzt 76.100 km² in den Alpen; 829 von 1.179 Skigebieten haben welchen in den oberen Hängen. Die Schneehöhe ist nur die halbe Geschichte: Dichter, älterer Schnee hält mehr Wasser als gleich hoher Neuschnee.",
+   "sections": [
+    {
+     "h": "Der Schneespeicher gegen frühere Winter",
+     "p": [
+      "In Monterosa Ski (2.118 m) hat die Saison nicht begonnen: heute kein Schnee bei üblichen 12 cm, ein so trockener Start wie in nur 2 der letzten 46 Winter.",
+      "Auf 2.327 m in Saint-Luc hinkt der Schneespeicher hinterher: heute 6 cm bei üblichen 21 cm. Am 13. November hielten nur 8 der letzten 46 Winter weniger."
+     ]
+    },
+    {
+     "h": "Der Schneespeicher heute",
+     "p": [
+      "Seit dem 11. November stieg die Schneefläche von 39.090 km² auf 76.100 km²; für den 16. November ergibt die Prognose 57.910 km²."
+     ]
+    },
+    {
+     "h": "Die nächsten Tage in der Prognose",
+     "p": [
+      "Bis zum 16. November kommen laut Prognose 12 cm in Les Arcs, 6 cm in Crans-Montana und 3 cm in Pfelders dazu; Mengen für mehrere Tage im Voraus können sich noch ändern.",
+      "In Pfelders erreicht die Nullgradgrenze am 14. November 1.870 m bis 2.240 m: Weiter unten kann der Schnee nass werden, weiter oben bleibt er kalt.",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    },
+    {
+     "h": "Gemessener Schnee",
+     "p": [
+      "Die Station Weißseespitze (3.499 m) meldete am 13. November eine Schneehöhe von 264 cm. Gemessen, nicht modelliert: Die Station Sonnblick (3.109 m) meldete am 13. November 55 cm Schnee am Boden, davon 23 cm Neuschnee in 24 Stunden. Die Station Lanzada Passo Marinelli (3.032 m) meldete am 13. November eine Schneehöhe von 52 cm, 19 cm davon aus den letzten 24 Stunden.",
+      "Ein Hinweis zur Messung: Die Skigebietswerte sind für die oberen Hänge modelliert, die Stationswerte an einer Stelle am angegebenen Tag gemessen, und beide haben eine gewisse Unsicherheit."
+     ]
+    }
+   ],
+   "advice": [
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Früher Schnee ist dünn. Bleib auf offenen, präparierten Pisten: Steine und Gras liegen oft knapp darunter.",
+    "Schatten schützt die Schneedecke. Hohe Nordhänge bekommen weniger Sonne, deshalb hält ihr Schnee länger als auf der Südseite.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Pfelders Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe in den Alpen am 13. November 2026 (SnowScope-Schneemodell): Pfelders, Monterosa Ski, Saint-Luc, Les Arcs, Crans-Montana."
+   }
+  },
+  "it": {
+   "title": "Altezza neve sulle Alpi a confronto: Pfelders davanti con 133 cm (13 novembre)",
+   "description": "Dal 11 novembre la copertura nevosa è passata da 39.090 km² a 76.100 km²; il 16 novembre la previsione indica 57.910 km². Pfelders ha oggi il manto …",
+   "lede": "Dal 11 novembre la copertura nevosa è passata da 39.090 km² a 76.100 km²; il 16 novembre la previsione indica 57.910 km². Pfelders ha oggi il manto più spesso sulle Alpi, circa 133 cm in alto, seguita da Monterosa Ski con 108 cm e Saint-Luc con 98 cm. La neve ora copre 76.100 km² sulle Alpi; 829 località su 1.179 ne hanno un po' sui pendii superiori. L'altezza neve è solo metà della storia: neve densa e vecchia contiene più acqua della stessa altezza di neve nuova.",
+   "sections": [
+    {
+     "h": "La riserva di neve rispetto agli inverni passati",
+     "p": [
+      "A Monterosa Ski (2.118 m) la stagione non è cominciata: niente neve oggi contro un abituale di 12 cm, un inizio secco come solo in 2 dei 46 inverni passati.",
+      "A 2.327 m a Saint-Luc la riserva di neve è indietro: 6 cm oggi contro 21 cm abituali. Il 13 novembre, solo 8 dei 46 inverni passati ne trattenevano meno."
+     ]
+    },
+    {
+     "h": "La riserva di neve oggi",
+     "p": [
+      "La superficie innevata è passata da 39.090 km² il 11 novembre a 76.100 km² oggi, e la nostra previsione indica 57.910 km² il 16 novembre: è il terreno che conserva acqua sotto forma di neve."
+     ]
+    },
+    {
+     "h": "I prossimi giorni nella previsione",
+     "p": [
+      "Fino al 16 novembre la previsione aggiunge 12 cm a Les Arcs, 6 cm a Crans-Montana e 3 cm a Pfelders; le quantità a diversi giorni possono ancora cambiare.",
+      "A Pfelders lo zero termico arriva tra 1.870 m e 2.240 m il 14 novembre: più in basso la neve può bagnarsi, più in alto resta fredda.",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    },
+    {
+     "h": "Neve misurata",
+     "p": [
+      "La stazione di Weißseespitze (3.499 m) ha segnalato un'altezza neve di 264 cm il 13 novembre. Misurato, non modellato: la stazione di Sonnblick (3.109 m) ha registrato 55 cm di neve al suolo il 13 novembre, con 23 cm di neve fresca in 24 ore. La stazione di Lanzada Passo Marinelli (3.032 m) ha segnalato un'altezza neve di 52 cm il 13 novembre, di cui 19 cm delle ultime 24 ore.",
+      "Una nota sulla misura: i valori delle località sono modellati per i pendii superiori, quelli delle stazioni misurati in un punto alla data indicata, ed entrambi hanno una certa incertezza."
+     ]
+    }
+   ],
+   "advice": [
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "La neve di inizio stagione è sottile. Resta sulle piste aperte e battute: sassi ed erba sono appena sotto.",
+    "L'ombra protegge il manto nevoso. I versanti nord in quota prendono meno sole, quindi la loro neve dura più che sul lato sud.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Pfelders riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve sulle Alpi il 13 novembre 2026 (modello neve SnowScope): Pfelders, Monterosa Ski, Saint-Luc, Les Arcs, Crans-Montana."
+   }
+  },
+  "es": {
+   "title": "Espesor de nieve en los Alpes comparado: Pfelders delante con 133 cm (13 de noviembre)",
+   "description": "Desde el 11 de noviembre, la cubierta de nieve pasó de 39.090 km² a 76.100 km²; el 16 de noviembre, la previsión da 57.910 km². Pfelders tiene hoy el …",
+   "lede": "Desde el 11 de noviembre, la cubierta de nieve pasó de 39.090 km² a 76.100 km²; el 16 de noviembre, la previsión da 57.910 km². Pfelders tiene hoy el manto más grueso en los Alpes, unos 133 cm arriba, seguida de Monterosa Ski con 108 cm y Saint-Luc con 98 cm. La nieve cubre ahora 76.100 km² en los Alpes; 829 de 1179 estaciones tienen algo en las pistas altas. El espesor de nieve solo cuenta la mitad de la historia: la nieve densa y vieja contiene más agua que el mismo espesor de nieve nueva.",
+   "sections": [
+    {
+     "h": "La reserva de nieve frente a los inviernos pasados",
+     "p": [
+      "En Monterosa Ski (2118 m) la temporada no ha empezado: sin nieve hoy frente a unos 12 cm habituales, un comienzo tan seco como solo 2 de los 46 inviernos pasados.",
+      "A 2327 m en Saint-Luc la reserva de nieve va con retraso: 6 cm hoy frente a unos 21 cm habituales. El 13 de noviembre, solo 8 de los 46 inviernos pasados guardaban menos."
+     ]
+    },
+    {
+     "h": "La reserva de nieve de hoy",
+     "p": [
+      "La superficie nevada pasó de 39.090 km² el 11 de noviembre a 76.100 km² hoy, y nuestra previsión da 57.910 km² el 16 de noviembre: es la superficie que almacena agua en forma de nieve."
+     ]
+    },
+    {
+     "h": "Los próximos días en la previsión",
+     "p": [
+      "Hasta el 16 de noviembre, la previsión añade 12 cm en Les Arcs, 6 cm en Crans-Montana y 3 cm en Pfelders; las cantidades a varios días aún pueden cambiar.",
+      "En Pfelders la cota de congelación llega a 1870 m-2240 m el 14 de noviembre: más abajo la nieve puede humedecerse, más arriba sigue fría.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    },
+    {
+     "h": "Nieve medida",
+     "p": [
+      "La estación de medida Weißseespitze (3499 m) dio un espesor de nieve de 264 cm el 13 de noviembre. Medido, no modelado: la estación Sonnblick (3109 m) registró 55 cm de nieve en el suelo el 13 de noviembre, con 23 cm de nieve nueva en 24 horas. La estación de medida Lanzada Passo Marinelli (3032 m) dio un espesor de nieve de 52 cm el 13 de noviembre, 19 cm de ellos de las últimas 24 horas.",
+      "Nota sobre la medida: los valores de las estaciones de esquí son modelados para las pistas altas, los de las estaciones de medida se toman en un lugar en la fecha indicada, y todos tienen cierta incertidumbre."
+     ]
+    }
+   ],
+   "advice": [
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "La nieve de principio de temporada es fina. Quédate en pistas abiertas y pisadas: piedras y hierba están justo debajo.",
+    "La sombra protege el manto. Las laderas norte en altura reciben menos sol, así que su nieve dura más que en la cara sur.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Pfelders recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en los Alpes el 13 de noviembre 2026 (modelo de nieve de SnowScope): Pfelders, Monterosa Ski, Saint-Luc, Les Arcs, Crans-Montana."
+   }
+  },
+  "ar": {
+   "title": "العلو ديال التلج فجبال الألب مقارن: Pfelders قدام ب 133 سم (13 نونبر)",
+   "description": "من نهار 11 نونبر التغطية ديال التلج دازت من 39090 كم² ل 76100 كم²؛ ونهار 16 نونبر التوقعات كتعطي 57910 كم². Pfelders فيها أعمق طبقة ديال التلج فجبال …",
+   "lede": "من نهار 11 نونبر التغطية ديال التلج دازت من 39090 كم² ل 76100 كم²؛ ونهار 16 نونبر التوقعات كتعطي 57910 كم². Pfelders فيها أعمق طبقة ديال التلج فجبال الألب اليوم، تقريبا 133 سم فالعلو، ومن بعدها Monterosa Ski ب 108 سم و Saint-Luc ب 98 سم. التلج دابا مغطي 76100 كم² فجبال الألب؛ و 829 محطة من 1179 فيهم شوية فالجهة الفوقانية. العلو ديال التلج غير نص الحكاية: التلج القديم والكثيف فيه ما كثر من نفس العلو ديال تلج جديد.",
+   "sections": [
+    {
+     "h": "الخزان ديال التلج قدام الشتوات اللي فاتو",
+     "p": [
+      "ف Monterosa Ski (2118 م) الموسم مازال مابداش: ماكاينش التلج اليوم والعادي 12 سم، بداية ناشفة بحال غير 2 من 46 ديال الشتوات اللي فاتو.",
+      "على علو 2327 م ف Saint-Luc الخزان ديال التلج متأخر: 6 سم اليوم مقابل 21 سم العادية. نهار 13 نونبر، غير 8 من 46 ديال الشتوات اللي فاتو خزنو أقل."
+     ]
+    },
+    {
+     "h": "الخزان ديال التلج اليوم",
+     "p": [
+      "المساحة اللي فيها التلج دازت من 39090 كم² نهار 11 نونبر ل 76100 كم² اليوم، والتوقعات ديالنا كتعطي 57910 كم² نهار 16 نونبر: هادي هي الأرض اللي خازنة الما على شكل تلج."
+     ]
+    },
+    {
+     "h": "الأيام الجاية فالتوقعات",
+     "p": [
+      "حتى ل 16 نونبر، التوقعات كتزيد 12 سم ف Les Arcs، 6 سم ف Crans-Montana و 3 سم ف Pfelders؛ الكميات ديال شي أيام قدام يقدرو مازال يتبدلو.",
+      "ف Pfelders علو الجليد كيوصل ل 1870 م حتى ل 2240 م نهار 14 نونبر: لتحت التلج يقدر يتبل، لفوق كيبقى بارد.",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    },
+    {
+     "h": "التلج المقاس",
+     "p": [
+      "محطة القياس Weißseespitze (3499 م) عطات علو ديال التلج 264 سم نهار 13 نونبر. مقاس، ماشي محسوب: محطة القياس Sonnblick (3109 م) سجلات 55 سم ديال التلج فالأرض نهار 13 نونبر، منهم 23 سم تلج جديد ف 24 ساعة. محطة القياس Lanzada Passo Marinelli (3032 م) عطات علو ديال التلج 52 سم نهار 13 نونبر، منهم 19 سم من 24 ساعة اللي فاتو.",
+      "ملاحظة على القياس: القيم ديال المحطات محسوبة بالموديل للجهة الفوقانية، والقيم ديال محطات القياس مقاسة فبلاصة وحدة فالتاريخ المكتوب، وبجوج فيهم شوية ديال الشك."
+     ]
+    }
+   ],
+   "advice": [
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "التلج ديال بداية الموسم رقيق. بقى فالبيستات المحلولة والمدكوكة: الحجر والربيع يمكن يكونو تحت نيشان.",
+    "الظل كيحمي التلج. الجهات العاليين اللي كتشوف للشمال كتاخد شمس قليلة، داكشي علاش التلج ديالهم كيدوم كثر من الجهة ديال الجنوب.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Pfelders يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فجبال الألب نهار 13 نونبر 2026 (الموديل ديال SnowScope): Pfelders, Monterosa Ski, Saint-Luc, Les Arcs, Crans-Montana."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "de": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "it": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "es": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  }
+ },
+ "words_en": 342,
+ "indexable": true,
+ "main": {
+  "slug": "pfelders",
+  "name": "Pfelders",
+  "lat": 46.7918,
+  "lon": 11.0929
+ },
+ "places": [
+  {
+   "name": "Pfelders",
+   "lat": 46.7918,
+   "lon": 11.0929
+  },
+  {
+   "name": "Monterosa Ski",
+   "lat": 45.8565,
+   "lon": 7.8192
+  },
+  {
+   "name": "Saint-Luc",
+   "lat": 46.2374,
+   "lon": 7.6175
+  },
+  {
+   "name": "Les Arcs",
+   "lat": 45.5707,
+   "lon": 6.8069
+  },
+  {
+   "name": "Crans-Montana",
+   "lat": 46.3318,
+   "lon": 7.4944
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "pfelders",
+   "name": "Pfelders"
+  },
+  {
+   "slug": "monterosa_ski",
+   "name": "Monterosa Ski"
+  },
+  {
+   "slug": "saint_luc_chandolin",
+   "name": "Saint-Luc"
+  },
+  {
+   "slug": "les_arcs",
+   "name": "Les Arcs"
+  },
+  {
+   "slug": "crans_montana",
+   "name": "Crans-Montana"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "pfelders",
+    "name": "Pfelders",
+    "depth": 133,
+    "new72": 19,
+    "next": 3,
+    "top_m": 2500
+   },
+   {
+    "slug": "monterosa_ski",
+    "name": "Monterosa Ski",
+    "depth": 108,
+    "new72": 24,
+    "next": 3,
+    "top_m": 3030
+   },
+   {
+    "slug": "saint_luc_chandolin",
+    "name": "Saint-Luc",
+    "depth": 98,
+    "new72": 20,
+    "next": 3,
+    "top_m": 2973
+   },
+   {
+    "slug": "les_arcs",
+    "name": "Les Arcs",
+    "depth": 89,
+    "new72": 28,
+    "next": 12,
+    "top_m": 3205
+   },
+   {
+    "slug": "crans_montana",
+    "name": "Crans-Montana",
+    "depth": 87,
+    "new72": 21,
+    "next": 6,
+    "top_m": 2872
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "WSL-SLF",
+   "url": "https://www.slf.ch/en/avalanche-bulletin-and-snow-situation/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@46.792,11.093,9.0",
+ "seconds": 24.3,
+ "facts_used": 28,
+ "voice": "hydro",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 30.3,
+  "after": 13.9,
+  "with": "alps-glacier-3000-fresh-snow-powder-alert-11-november-2026",
+  "tries": 1
+ },
+ "similarity": {
+  "max": 0.132,
+  "with": "western-canada-whistler-blackcomb-snow-depth-today-12-november-2026"
+ },
+ "publish_utc": "2026-11-13T11:48:49Z"
+}
