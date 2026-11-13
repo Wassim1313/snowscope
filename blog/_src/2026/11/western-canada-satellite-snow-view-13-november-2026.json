@@ -1,0 +1,571 @@
+{
+ "id": "2026-11-13-ca_west-satellite",
+ "slug": "western-canada-satellite-snow-view-13-november-2026",
+ "date": "2026-11-13",
+ "published_utc": "2026-11-13T19:19:23Z",
+ "updated_utc": "2026-11-13T19:19:23Z",
+ "region": "CA_WEST",
+ "angle": "satellite",
+ "score": 43,
+ "signature": "manning_park_resort:snow:2026-11-04|big_white_ski_resort:snow:2026-11-04|marmot_basin:snow:2026-11-04",
+ "keyword": {
+  "family": "satellite",
+  "entity": "ca_west",
+  "region": "CA_WEST",
+  "date": "2026-11-13"
+ },
+ "tags": [
+  "satellite",
+  "snow-depth"
+ ],
+ "facts": {
+  "angle": "satellite_view",
+  "region": "Western Canada",
+  "date": "2026-11-13",
+  "weekday": "Friday",
+  "model_run": "2026-11-13",
+  "forecast_days": [
+   "2026-11-14",
+   "2026-11-15",
+   "2026-11-16"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 201390,
+   "resorts_with_snow": 31,
+   "resorts_in_region": 57
+  },
+  "region_before": {
+   "date": "2026-11-11",
+   "snow_covered_area_km2": 215390,
+   "resorts_with_snow": 35
+  },
+  "region_forecast": {
+   "date": "2026-11-16",
+   "snow_covered_area_km2": 210000,
+   "resorts_with_snow": 35
+  },
+  "question": "What do satellites see on the last clear days, and does it match the snow model?",
+  "satellite_composite_as_of": "2026-11-13",
+  "resorts": [
+   {
+    "name": "Manning Park Resort",
+    "country": "Canada",
+    "top_m": 1789,
+    "base_m": 1359,
+    "depth_cm_upper_slopes_today": 120,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 10,
+    "slug": "manning_park_resort",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 2,
+     "2026-11-15": 6,
+     "2026-11-16": 2
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-04"
+    }
+   },
+   {
+    "name": "Big White",
+    "country": "Canada",
+    "top_m": 2271,
+    "base_m": 1512,
+    "depth_cm_upper_slopes_today": 86,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 16,
+    "slug": "big_white_ski_resort",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 4,
+     "2026-11-15": 2,
+     "2026-11-16": 10
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-04"
+    }
+   },
+   {
+    "name": "Marmot Basin",
+    "country": "Canada",
+    "top_m": 2504,
+    "base_m": 1724,
+    "depth_cm_upper_slopes_today": 54,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 3,
+    "slug": "marmot_basin",
+    "new_cm_by_day": {
+     "2026-11-11": 1,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 0,
+     "2026-11-15": 0,
+     "2026-11-16": 3
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-04"
+    }
+   },
+   {
+    "name": "Revelstoke",
+    "country": "Canada",
+    "top_m": 2224,
+    "base_m": 514,
+    "depth_cm_upper_slopes_today": 53,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 21,
+    "slug": "revelstoke",
+    "new_cm_by_day": {
+     "2026-11-11": 4,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 4,
+     "2026-11-15": 3,
+     "2026-11-16": 14
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-04"
+    }
+   },
+   {
+    "name": "Tweedsmuir Ski Club",
+    "country": "Canada",
+    "top_m": 1650,
+    "base_m": 1588,
+    "depth_cm_upper_slopes_today": 45,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 27,
+    "new_cm_forecast_next_days": 4,
+    "slug": "tweedsmuir_ski_club",
+    "new_cm_by_day": {
+     "2026-11-11": 21,
+     "2026-11-12": 5,
+     "2026-11-13": 2,
+     "2026-11-14": 0,
+     "2026-11-15": 3,
+     "2026-11-16": 1
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-10"
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "sat",
+   "kind": "sat_map",
+   "file": "blog/media/2026/11/western-canada-satellite-snow-view-13-november-2026/sat.webp",
+   "thumb": "blog/media/2026/11/western-canada-satellite-snow-view-13-november-2026/sat_t.webp",
+   "bytes": 125126,
+   "snow_frac": 0.2036,
+   "weak": false
+  },
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/western-canada-satellite-snow-view-13-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/western-canada-satellite-snow-view-13-november-2026/map_t.webp",
+   "bytes": 67092,
+   "snow_frac": 0.4156,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Western Canada snow cover from space: 201,390 km² (13 November)",
+   "description": "201,390 km²: that is the snow-covered ground our model counts in Western Canada today. Last clear view of every place, up to 13 November: that is …",
+   "lede": "201,390 km²: that is the snow-covered ground our model counts in Western Canada today. Last clear view of every place, up to 13 November: that is what our satellite layer keeps. Below, the snowiest resorts in Western Canada. A clear-sky image is the closest thing we have to a photo of the whole range at once.",
+   "sections": [
+    {
+     "h": "Today's snow map",
+     "p": [
+      "Top of this list: Manning Park Resort, about 120 cm up high. Then Big White 86 cm and Marmot Basin 54 cm.",
+      "Snow-covered ground in Western Canada: 201,390 km². Resorts with snow: 31 of 57.",
+      "Snow-covered area: 215,390 km² on 11 November, 201,390 km² today, 210,000 km² forecast for 16 November. The map is getting less white."
+     ]
+    },
+    {
+     "h": "Seen from orbit",
+     "p": [
+      "Manning Park Resort: snow-covered in the last clear view, on 4 November. Clear sky over Big White on 4 November, and the image shows snow cover. Marmot Basin: snow-covered in the last clear view, on 4 November. Clear sky over Revelstoke on 4 November, and the image shows snow cover. Tweedsmuir Ski Club: snow-covered in the last clear view, on 10 November."
+     ]
+    },
+    {
+     "h": "Station check",
+     "p": [
+      "Satellites cannot see through cloud, and thin snow among trees can look patchy from orbit. Our model fills the cloudy days, and together they give a picture we trust.",
+      "How sure are we? Resort values are model estimates for the upper slopes; stations are measurements, each at one point on the date shown."
+     ]
+    }
+   ],
+   "advice": [
+    "South-facing slopes take the most sun and melt first; high, north-facing slopes keep their snow the longest.",
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "Get a powder alert in the SnowScope app to know when Manning Park Resort gets fresh snow."
+   ],
+   "captions": {
+    "sat": "Latest clear satellite view in Western Canada (Sentinel-2 and MODIS): white = snow, light blue = patchy, brown = no snow.",
+    "map": "Snow depth in Western Canada on 13 November 2026 (SnowScope snow model): Manning Park Resort, Big White, Marmot Basin, Revelstoke, Tweedsmuir Ski Club."
+   }
+  },
+  "fr": {
+   "title": "Enneigement dans l'Ouest canadien vu de l'espace : 201 390 km² (13 novembre)",
+   "description": "201 390 km² : c'est la surface enneigée que compte notre modèle dans l'Ouest canadien aujourd'hui. La dernière vue dégagée de chaque endroit, …",
+   "lede": "201 390 km² : c'est la surface enneigée que compte notre modèle dans l'Ouest canadien aujourd'hui. La dernière vue dégagée de chaque endroit, jusqu'au 13 novembre : c'est ce que garde notre couche satellite. Ci-dessous, les stations les plus enneigées dans l'Ouest canadien. Une image par ciel clair est ce qui ressemble le plus à une photo de tout le massif d'un coup.",
+   "sections": [
+    {
+     "h": "La carte de neige du jour",
+     "p": [
+      "En haut de la liste : Manning Park Resort, environ 120 cm en altitude. Puis Big White 86 cm et Marmot Basin 54 cm.",
+      "Le compte du jour dans l'Ouest canadien : 31 stations sur 57 avec de la neige en haut, 201 390 km² de sol enneigé.",
+      "La zone blanche sur la carte est passée de 215 390 km² (11 novembre) à 201 390 km² aujourd'hui, et la prévision dit 210 000 km² le 16 novembre."
+     ]
+    },
+    {
+     "h": "Vu d'orbite",
+     "p": [
+      "Manning Park Resort : enneigée sur la dernière vue dégagée, le 4 novembre. Ciel clair sur Big White le 4 novembre, et l'image montre une couverture de neige. Marmot Basin : enneigée sur la dernière vue dégagée, le 4 novembre. Ciel clair sur Revelstoke le 4 novembre, et l'image montre une couverture de neige. Tweedsmuir Ski Club : enneigée sur la dernière vue dégagée, le 10 novembre."
+     ]
+    },
+    {
+     "h": "Contrôle des stations",
+     "p": [
+      "Les satellites ne voient pas à travers les nuages, et une neige fine sous les arbres peut paraître discontinue depuis l'orbite. Notre modèle comble les jours nuageux, et ensemble ils donnent une image fiable.",
+      "Quelle confiance ? Les valeurs des stations de ski sont des estimations du modèle pour le haut du domaine ; les stations de mesure donnent des mesures, chacune en un point à la date indiquée."
+     ]
+    }
+   ],
+   "advice": [
+    "Les pentes sud prennent le plus de soleil et fondent d'abord ; les pentes nord en altitude gardent leur neige le plus longtemps.",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Manning Park Resort reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "sat": "Dernière vue satellite dégagée dans l'Ouest canadien (Sentinel-2 et MODIS) : blanc = neige, bleu clair = neige discontinue, brun = pas de neige.",
+    "map": "Hauteur de neige dans l'Ouest canadien le 13 novembre 2026 (modèle de neige SnowScope) : Manning Park Resort, Big White, Marmot Basin, Revelstoke, Tweedsmuir Ski Club."
+   }
+  },
+  "de": {
+   "title": "Schneedecke in Westkanada aus dem All: 201.390 km² (13. November)",
+   "description": "201.390 km²: So groß ist die Schneefläche, die unser Modell heute in Westkanada zählt. Die letzte klare Ansicht jedes Ortes, bis zum 13. November: …",
+   "lede": "201.390 km²: So groß ist die Schneefläche, die unser Modell heute in Westkanada zählt. Die letzte klare Ansicht jedes Ortes, bis zum 13. November: Das behält unsere Satellitenebene. Unten die schneereichsten Skigebiete in Westkanada. Ein Bild bei klarem Himmel ist das Nächste, was wir an einem Foto des ganzen Gebirges auf einmal haben.",
+   "sections": [
+    {
+     "h": "Die Schneekarte von heute",
+     "p": [
+      "An der Spitze dieser Liste: Manning Park Resort, etwa 120 cm weit oben. Dann Big White 86 cm und Marmot Basin 54 cm.",
+      "Die Zählung des Tages in Westkanada: 31 von 57 Skigebieten mit Schnee weit oben, 201.390 km² Schneefläche.",
+      "Schneefläche: 215.390 km² am 11. November, heute 201.390 km², 210.000 km² erwartet für den 16. November. Die Karte wird weniger weiß."
+     ]
+    },
+    {
+     "h": "Aus der Umlaufbahn gesehen",
+     "p": [
+      "Manning Park Resort: schneebedeckt in der letzten klaren Ansicht, am 4. November. Klarer Himmel über Big White am 4. November, und das Bild zeigt eine Schneedecke. Marmot Basin: schneebedeckt in der letzten klaren Ansicht, am 4. November. Klarer Himmel über Revelstoke am 4. November, und das Bild zeigt eine Schneedecke. Tweedsmuir Ski Club: schneebedeckt in der letzten klaren Ansicht, am 10. November."
+     ]
+    },
+    {
+     "h": "Stations-Check",
+     "p": [
+      "Satelliten sehen nicht durch Wolken, und dünner Schnee zwischen Bäumen wirkt aus der Umlaufbahn fleckig. Unser Modell füllt die bewölkten Tage, und zusammen ergibt das ein Bild, dem wir trauen.",
+      "Wie sicher sind wir? Die Skigebietswerte sind Modellschätzungen für die oberen Hänge; Stationen sind Messungen, jede an einem Punkt am angegebenen Tag."
+     ]
+    }
+   ],
+   "advice": [
+    "Südhänge bekommen die meiste Sonne und schmelzen zuerst; hohe Nordhänge halten ihren Schnee am längsten.",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Früher Schnee ist dünn. Bleib auf offenen, präparierten Pisten: Steine und Gras liegen oft knapp darunter.",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Manning Park Resort Neuschnee bekommt."
+   ],
+   "captions": {
+    "sat": "Letzte klare Satellitenansicht in Westkanada (Sentinel-2 und MODIS): weiß = Schnee, hellblau = fleckig, braun = kein Schnee.",
+    "map": "Schneehöhe in Westkanada am 13. November 2026 (SnowScope-Schneemodell): Manning Park Resort, Big White, Marmot Basin, Revelstoke, Tweedsmuir Ski Club."
+   }
+  },
+  "it": {
+   "title": "Copertura nevosa nel Canada occidentale dallo spazio: 201.390 km² (13 novembre)",
+   "description": "201.390 km²: è la superficie innevata che il nostro modello conta oggi nel Canada occidentale. L'ultima vista serena di ogni luogo, fino al 13 …",
+   "lede": "201.390 km²: è la superficie innevata che il nostro modello conta oggi nel Canada occidentale. L'ultima vista serena di ogni luogo, fino al 13 novembre: è ciò che conserva il nostro livello satellitare. Qui sotto, le località più innevate nel Canada occidentale. Un'immagine a cielo sereno è quanto di più vicino abbiamo a una foto di tutta la catena in una volta.",
+   "sections": [
+    {
+     "h": "La mappa neve di oggi",
+     "p": [
+      "In cima a questa lista: Manning Park Resort, circa 120 cm in alto. Poi Big White 86 cm e Marmot Basin 54 cm.",
+      "Il conto del giorno nel Canada occidentale: 31 località su 57 con neve in alto, 201.390 km² di superficie innevata.",
+      "L'area bianca sulla mappa è passata da 215.390 km² (11 novembre) a 201.390 km² oggi, e la previsione dice 210.000 km² il 16 novembre."
+     ]
+    },
+    {
+     "h": "Visto dall'orbita",
+     "p": [
+      "Manning Park Resort: innevata nell'ultima vista serena, il 4 novembre. Cielo sereno su Big White il 4 novembre, e l'immagine mostra la copertura nevosa. Marmot Basin: innevata nell'ultima vista serena, il 4 novembre. Cielo sereno su Revelstoke il 4 novembre, e l'immagine mostra la copertura nevosa. Tweedsmuir Ski Club: innevata nell'ultima vista serena, il 10 novembre."
+     ]
+    },
+    {
+     "h": "Controllo stazioni",
+     "p": [
+      "I satelliti non vedono attraverso le nuvole, e una neve sottile tra gli alberi può sembrare a chiazze dall'orbita. Il nostro modello copre i giorni nuvolosi, e insieme danno un quadro di cui ci fidiamo.",
+      "Quanto ne siamo sicuri? I valori delle località sono stime del modello per i pendii superiori; le stazioni sono misure, ognuna in un punto alla data indicata."
+     ]
+    }
+   ],
+   "advice": [
+    "I versanti sud prendono più sole e fondono per primi; i versanti nord in quota tengono la neve più a lungo.",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "La neve di inizio stagione è sottile. Resta sulle piste aperte e battute: sassi ed erba sono appena sotto.",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Manning Park Resort riceve neve fresca."
+   ],
+   "captions": {
+    "sat": "Ultima vista satellitare serena nel Canada occidentale (Sentinel-2 e MODIS): bianco = neve, azzurro = a chiazze, marrone = niente neve.",
+    "map": "Altezza neve nel Canada occidentale il 13 novembre 2026 (modello neve SnowScope): Manning Park Resort, Big White, Marmot Basin, Revelstoke, Tweedsmuir Ski Club."
+   }
+  },
+  "es": {
+   "title": "Superficie nevada en el oeste de Canadá desde el espacio: 201.390 km² (13 de noviembre)",
+   "description": "201.390 km²: es la superficie nevada que cuenta hoy nuestro modelo en el oeste de Canadá. La última vista despejada de cada lugar, hasta el 13 de …",
+   "lede": "201.390 km²: es la superficie nevada que cuenta hoy nuestro modelo en el oeste de Canadá. La última vista despejada de cada lugar, hasta el 13 de noviembre: eso guarda nuestra capa de satélite. Abajo, las estaciones con más nieve en el oeste de Canadá. Una imagen con cielo despejado es lo más parecido que tenemos a una foto de toda la cordillera a la vez.",
+   "sections": [
+    {
+     "h": "El mapa de nieve de hoy",
+     "p": [
+      "Arriba de la lista: Manning Park Resort, unos 120 cm en altura. Luego Big White 86 cm y Marmot Basin 54 cm.",
+      "El recuento del día en el oeste de Canadá: 31 de 57 estaciones con nieve arriba, 201.390 km² de suelo nevado.",
+      "La zona blanca del mapa pasó de 215.390 km² (11 de noviembre) a 201.390 km² hoy, y la previsión dice 210.000 km² el 16 de noviembre."
+     ]
+    },
+    {
+     "h": "Visto desde la órbita",
+     "p": [
+      "Manning Park Resort: nevada en la última vista despejada, el 4 de noviembre. Cielo despejado sobre Big White el 4 de noviembre, y la imagen muestra nieve. Marmot Basin: nevada en la última vista despejada, el 4 de noviembre. Cielo despejado sobre Revelstoke el 4 de noviembre, y la imagen muestra nieve. Tweedsmuir Ski Club: nevada en la última vista despejada, el 10 de noviembre."
+     ]
+    },
+    {
+     "h": "Control de estaciones",
+     "p": [
+      "Los satélites no ven a través de las nubes, y una nieve fina bajo los árboles puede parecer a parches desde la órbita. Nuestro modelo cubre los días nublados, y juntos dan una imagen fiable.",
+      "¿Qué confianza tenemos? Los valores de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida dan medidas, cada una en un punto en la fecha indicada."
+     ]
+    }
+   ],
+   "advice": [
+    "Las laderas sur reciben más sol y se funden antes; las laderas norte en altura guardan su nieve más tiempo.",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "La nieve de principio de temporada es fina. Quédate en pistas abiertas y pisadas: piedras y hierba están justo debajo.",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Manning Park Resort recibe nieve nueva."
+   ],
+   "captions": {
+    "sat": "Última vista despejada por satélite en el oeste de Canadá (Sentinel-2 y MODIS): blanco = nieve, azul claro = a parches, marrón = sin nieve.",
+    "map": "Espesor de nieve en el oeste de Canadá el 13 de noviembre 2026 (modelo de nieve de SnowScope): Manning Park Resort, Big White, Marmot Basin, Revelstoke, Tweedsmuir Ski Club."
+   }
+  },
+  "ar": {
+   "title": "المساحة اللي فيها التلج فغرب كندا من السما: 201390 كم² (13 نونبر)",
+   "description": "201390 كم²: هادي هي المساحة اللي فيها التلج اللي كيحسبها الموديل ديالنا فغرب كندا اليوم. آخر صورة صافية لكل بلاصة، حتى ل 13 نونبر: هادشي اللي كتحتافظ …",
+   "lede": "201390 كم²: هادي هي المساحة اللي فيها التلج اللي كيحسبها الموديل ديالنا فغرب كندا اليوم. آخر صورة صافية لكل بلاصة، حتى ل 13 نونبر: هادشي اللي كتحتافظ بيه الطبقة ديال الساتليت. لتحت، المحطات اللي فيهم أكثر تلج فغرب كندا. صورة بسما صافية هي أقرب حاجة عندنا لتصويرة ديال السلسلة كاملة فمرة وحدة.",
+   "sections": [
+    {
+     "h": "الخريطة ديال التلج اليوم",
+     "p": [
+      "فالراس ديال اللائحة: Manning Park Resort، تقريبا 120 سم فالعلو. ومن بعد Big White 86 سم و Marmot Basin 54 سم.",
+      "الحساب ديال اليوم فغرب كندا: 31 محطة من 57 فيهم التلج فالعلو، و 201390 كم² ديال الأرض اللي فيها التلج.",
+      "المساحة البيضا فالخريطة دازت من 215390 كم² (11 نونبر) ل 201390 كم² اليوم، والتوقعات كتقول 210000 كم² نهار 16 نونبر."
+     ]
+    },
+    {
+     "h": "من المدار",
+     "p": [
+      "Manning Park Resort: مغطية بالتلج فآخر صورة صافية، نهار 4 نونبر. سما صافية فوق Big White نهار 4 نونبر، والصورة كتبين التلج. Marmot Basin: مغطية بالتلج فآخر صورة صافية، نهار 4 نونبر. سما صافية فوق Revelstoke نهار 4 نونبر، والصورة كتبين التلج. Tweedsmuir Ski Club: مغطية بالتلج فآخر صورة صافية، نهار 10 نونبر."
+     ]
+    },
+    {
+     "h": "التحقق بالمحطات",
+     "p": [
+      "الساتليتات مايقدروش يشوفو من ورا السحاب، والتلج الرقيق بين الشجر يبان متفرق من الفوق. الموديل ديالنا كيعمر الأيام ديال السحاب، وبجوج كيعطيو صورة كنتيقو فيها.",
+      "شحال حنا متأكدين؟ القيم ديال المحطات تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس قياسات، كل وحدة فنقطة وحدة فالتاريخ المكتوب."
+     ]
+    }
+   ],
+   "advice": [
+    "الجهات اللي كتشوف للجنوب كتاخد أكثر شمس وكيدوب فيها التلج اللول؛ الجهات العاليين اللي كتشوف للشمال كيحافظو عليه أطول وقت.",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "التلج ديال بداية الموسم رقيق. بقى فالبيستات المحلولة والمدكوكة: الحجر والربيع يمكن يكونو تحت نيشان.",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Manning Park Resort يجيها تلج جديد."
+   ],
+   "captions": {
+    "sat": "آخر صورة صافية من الساتليت فغرب كندا (Sentinel-2 و MODIS): الأبيض = تلج، الأزرق الفاتح = متفرق، القهوي = بلا تلج.",
+    "map": "العلو ديال التلج فغرب كندا نهار 13 نونبر 2026 (الموديل ديال SnowScope): Manning Park Resort, Big White, Marmot Basin, Revelstoke, Tweedsmuir Ski Club."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "de": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "it": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "es": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "sat"
+  }
+ },
+ "words_en": 228,
+ "indexable": false,
+ "main": {
+  "slug": "manning_park_resort",
+  "name": "Manning Park Resort",
+  "lat": 49.077,
+  "lon": -120.8384
+ },
+ "places": [
+  {
+   "name": "Manning Park Resort",
+   "lat": 49.077,
+   "lon": -120.8384
+  },
+  {
+   "name": "Big White",
+   "lat": 49.7358,
+   "lon": -118.9487
+  },
+  {
+   "name": "Marmot Basin",
+   "lat": 52.7963,
+   "lon": -118.1058
+  },
+  {
+   "name": "Revelstoke",
+   "lat": 50.9631,
+   "lon": -118.119
+  },
+  {
+   "name": "Tweedsmuir Ski Club",
+   "lat": 52.5367,
+   "lon": -125.8476
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "manning_park_resort",
+   "name": "Manning Park Resort"
+  },
+  {
+   "slug": "big_white_ski_resort",
+   "name": "Big White"
+  },
+  {
+   "slug": "marmot_basin",
+   "name": "Marmot Basin"
+  },
+  {
+   "slug": "revelstoke",
+   "name": "Revelstoke"
+  },
+  {
+   "slug": "tweedsmuir_ski_club",
+   "name": "Tweedsmuir Ski Club"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "manning_park_resort",
+    "name": "Manning Park Resort",
+    "depth": 120,
+    "new72": 0,
+    "next": 10,
+    "top_m": 1789
+   },
+   {
+    "slug": "big_white_ski_resort",
+    "name": "Big White",
+    "depth": 86,
+    "new72": 0,
+    "next": 16,
+    "top_m": 2271
+   },
+   {
+    "slug": "marmot_basin",
+    "name": "Marmot Basin",
+    "depth": 54,
+    "new72": 1,
+    "next": 3,
+    "top_m": 2504
+   },
+   {
+    "slug": "revelstoke",
+    "name": "Revelstoke",
+    "depth": 53,
+    "new72": 4,
+    "next": 21,
+    "top_m": 2224
+   },
+   {
+    "slug": "tweedsmuir_ski_club",
+    "name": "Tweedsmuir Ski Club",
+    "depth": 45,
+    "new72": 27,
+    "next": 4,
+    "top_m": 1650
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Avalanche Canada",
+   "url": "https://avalanche.ca/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@49.077,-120.838,9.0",
+ "seconds": 0.0,
+ "facts_used": 11,
+ "voice": "sat",
+ "media_ids": [
+  "sat",
+  "map"
+ ],
+ "overlap": {
+  "before": 16.9,
+  "after": 16.9,
+  "with": "alps-glacier-3000-fresh-snow-powder-alert-11-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.146,
+  "with": "us-west-snow-vs-past-winters-11-november-2026"
+ },
+ "publish_utc": "2026-11-13T19:19:23Z"
+}

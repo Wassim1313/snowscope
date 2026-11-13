@@ -1,0 +1,801 @@
+{
+ "id": "feature-kiruna-snow-depth-13-november-2026",
+ "slug": "kiruna-snow-depth-13-november-2026",
+ "date": "2026-11-13",
+ "published_utc": "2026-11-13T19:29:18Z",
+ "updated_utc": "2026-11-13T19:29:18Z",
+ "region": "SCANDES",
+ "angle": "guide_feature_climate",
+ "category": "guide",
+ "draft": false,
+ "kind": "climate",
+ "resort_class": "major",
+ "structure": "missing-snow-against-46-winters",
+ "score": 90,
+ "tags": [
+  "snow-depth",
+  "forecast"
+ ],
+ "facts": {
+  "kind": "climate",
+  "date": "2026-11-13",
+  "extra": {
+   "kiruna": {
+    "city": {
+     "key": "kiruna",
+     "name": "Kiruna",
+     "country": "SE",
+     "lat": 67.856,
+     "lon": 20.225
+    },
+    "date": "2026-11-13",
+    "measured": [
+     {
+      "id": "smhi:180960",
+      "name": "Kiruna",
+      "country": "SE",
+      "lat": 67.8513,
+      "lon": 20.2497,
+      "elev_m": 519,
+      "km": 1,
+      "today_cm": 0.0,
+      "yesterday_cm": 0.0,
+      "four_days_ago_cm": 0.0
+     },
+     {
+      "id": "smhi:180950",
+      "name": "Jukkasjärvi",
+      "country": "SE",
+      "lat": 67.853,
+      "lon": 20.5786,
+      "elev_m": 329,
+      "km": 15,
+      "today_cm": 0.0,
+      "yesterday_cm": 0.0,
+      "four_days_ago_cm": 0.0
+     },
+     {
+      "id": "smhi:181970",
+      "name": "Esrange",
+      "country": "SE",
+      "lat": 67.8907,
+      "lon": 21.0832,
+      "elev_m": 321,
+      "km": 36,
+      "today_cm": 0.0,
+      "yesterday_cm": 0.0,
+      "four_days_ago_cm": 0.0
+     },
+     {
+      "id": "smhi:180860",
+      "name": "Killinge",
+      "country": "SE",
+      "lat": 67.5263,
+      "lon": 20.2776,
+      "elev_m": 507,
+      "km": 37,
+      "today_cm": 0.0,
+      "yesterday_cm": null,
+      "four_days_ago_cm": null
+     }
+    ],
+    "normal_13_nov": {
+     "elev_m": 520,
+     "n_winters": 46,
+     "winters_with_snow_on_13_nov": 46,
+     "p25_cm": 14.0,
+     "p50_cm": 23.0,
+     "p75_cm": 35.0,
+     "max_cm": 64.0,
+     "last_winters_13_nov_cm": {
+      "2021-22": 45.0,
+      "2022-23": 12.0,
+      "2023-24": 40.0,
+      "2024-25": 7.0,
+      "2025-26": 24.0
+     },
+     "p50_cm_12-01": 40.0,
+     "p50_cm_12-15": 49.0,
+     "p50_cm_01-15": 65.5,
+     "usual_start_mmdd_half_of_winters": "10-02"
+    },
+    "forecast": {
+     "model_point_elev_m": 542.0,
+     "days": {
+      "2026-11-13": {
+       "snow_cm_lo": 0.6,
+       "snow_cm_hi": 0.9,
+       "precip_mm_lo": 0.9,
+       "precip_mm_hi": 1.5,
+       "tmin_lo": -9,
+       "tmin_hi": -9,
+       "tmax_lo": -8,
+       "tmax_hi": -8,
+       "hours": 8
+      },
+      "2026-11-14": {
+       "snow_cm_lo": 0.0,
+       "snow_cm_hi": 0.2,
+       "precip_mm_lo": 0.0,
+       "precip_mm_hi": 0.2,
+       "tmin_lo": -14,
+       "tmin_hi": -13,
+       "tmax_lo": -8,
+       "tmax_hi": -7,
+       "hours": 24
+      },
+      "2026-11-15": {
+       "snow_cm_lo": 1.1,
+       "snow_cm_hi": 1.9,
+       "precip_mm_lo": 1.7,
+       "precip_mm_hi": 2.6,
+       "tmin_lo": -14,
+       "tmin_hi": -13,
+       "tmax_lo": -5,
+       "tmax_hi": -3,
+       "hours": 24
+      },
+      "2026-11-16": {
+       "snow_cm_lo": 0.6,
+       "snow_cm_hi": 3.0,
+       "precip_mm_lo": 1.1,
+       "precip_mm_hi": 4.5,
+       "tmin_lo": -10,
+       "tmin_hi": -10,
+       "tmax_lo": -5,
+       "tmax_hi": -4,
+       "hours": 24
+      }
+     },
+     "weekend_snow_cm_lo": 1.1,
+     "weekend_snow_cm_hi": 2.1,
+     "weekend_tmin": -14,
+     "weekend_tmax": -3
+    }
+   },
+   "season_names": [
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+   ],
+   "nearest_snow": {
+    "oslo": [
+     {
+      "km": 4,
+      "name": "Oslo-Blindern",
+      "cm": 4.0,
+      "elev_m": 97
+     },
+     {
+      "km": 8,
+      "name": "Tryvannshogda",
+      "cm": 37.0,
+      "elev_m": 528
+     },
+     {
+      "km": 16,
+      "name": "Bjornholt",
+      "cm": 31.0,
+      "elev_m": 360
+     },
+     {
+      "km": 18,
+      "name": "Asker",
+      "cm": 4.0,
+      "elev_m": 163
+     }
+    ],
+    "bergen": [
+     {
+      "km": 35,
+      "name": "Kvamskogen-Jonshogdi",
+      "cm": 5.0,
+      "elev_m": 455
+     },
+     {
+      "km": 95,
+      "name": "Mjolfjell",
+      "cm": 10.0,
+      "elev_m": 695
+     },
+     {
+      "km": 107,
+      "name": "Fet I Eidfjord",
+      "cm": 9.0,
+      "elev_m": 737
+     },
+     {
+      "km": 123,
+      "name": "Haukeliseter Testfelt",
+      "cm": 3.0,
+      "elev_m": 990
+     }
+    ],
+    "trondheim": [
+     {
+      "km": 67,
+      "name": "Meraker-Egge",
+      "cm": 5.0,
+      "elev_m": 171
+     },
+     {
+      "km": 78,
+      "name": "Tagdalen",
+      "cm": 18.0,
+      "elev_m": 415
+     },
+     {
+      "km": 88,
+      "name": "Storlien-Storvallen",
+      "cm": 8.0,
+      "elev_m": 583
+     },
+     {
+      "km": 108,
+      "name": "Roros",
+      "cm": 11.0,
+      "elev_m": 630
+     }
+    ],
+    "tromso": [
+     {
+      "km": 1,
+      "name": "Tromso",
+      "cm": 6.0,
+      "elev_m": 114
+     },
+     {
+      "km": 45,
+      "name": "Lyngen Gjerdvassbu",
+      "cm": 44.0,
+      "elev_m": 710
+     },
+     {
+      "km": 68,
+      "name": "Bardufoss",
+      "cm": 3.0,
+      "elev_m": 77
+     },
+     {
+      "km": 100,
+      "name": "Enontekiö Kilpisjärvi kyläkeskus",
+      "cm": 13.0,
+      "elev_m": null
+     }
+    ],
+    "stockholm": [
+     {
+      "km": 75,
+      "name": "Norrveda",
+      "cm": 2.0,
+      "elev_m": 23
+     },
+     {
+      "km": 137,
+      "name": "Börrum",
+      "cm": 5.0,
+      "elev_m": 16
+     },
+     {
+      "km": 157,
+      "name": "Tryserum",
+      "cm": 1.0,
+      "elev_m": 20
+     },
+     {
+      "km": 162,
+      "name": "Söderbärke",
+      "cm": 1.0,
+      "elev_m": 122
+     }
+    ],
+    "goteborg": [
+     {
+      "km": 39,
+      "name": "Gunntorp",
+      "cm": 12.0,
+      "elev_m": 32
+     },
+     {
+      "km": 40,
+      "name": "Fotskäl",
+      "cm": 2.0,
+      "elev_m": 132
+     },
+     {
+      "km": 45,
+      "name": "Humlebo",
+      "cm": 2.0,
+      "elev_m": 78
+     },
+     {
+      "km": 63,
+      "name": "Linhult",
+      "cm": 3.0,
+      "elev_m": 173
+     }
+    ],
+    "ostersund": [
+     {
+      "km": 14,
+      "name": "Norderön",
+      "cm": 19.0,
+      "elev_m": 321
+     },
+     {
+      "km": 18,
+      "name": "Marby",
+      "cm": 24.0,
+      "elev_m": 328
+     },
+     {
+      "km": 38,
+      "name": "Rissna",
+      "cm": 33.0,
+      "elev_m": 302
+     },
+     {
+      "km": 46,
+      "name": "Höglekardalen",
+      "cm": 17.0,
+      "elev_m": 595
+     }
+    ],
+    "umea": [
+     {
+      "km": 2,
+      "name": "Umeå-Röbäcksdalen",
+      "cm": 20.0,
+      "elev_m": 10
+     },
+     {
+      "km": 25,
+      "name": "Tavelsjö",
+      "cm": 16.0,
+      "elev_m": 116
+     },
+     {
+      "km": 25,
+      "name": "Vännäs",
+      "cm": 18.0,
+      "elev_m": 107
+     },
+     {
+      "km": 45,
+      "name": "Rickleå",
+      "cm": 12.0,
+      "elev_m": 12
+     }
+    ],
+    "lulea": [
+     {
+      "km": 35,
+      "name": "Klöverträsk",
+      "cm": 5.0,
+      "elev_m": 66
+     },
+     {
+      "km": 47,
+      "name": "Brännberg",
+      "cm": 5.0,
+      "elev_m": 93
+     },
+     {
+      "km": 48,
+      "name": "Piteå",
+      "cm": 3.0,
+      "elev_m": 8
+     },
+     {
+      "km": 55,
+      "name": "Kalix",
+      "cm": 4.0,
+      "elev_m": 2
+     }
+    ],
+    "kiruna": [
+     {
+      "km": 80,
+      "name": "Abiskout",
+      "cm": 2.0,
+      "elev_m": 392
+     },
+     {
+      "km": 106,
+      "name": "Katterjåkk",
+      "cm": 9.0,
+      "elev_m": 514
+     },
+     {
+      "km": 108,
+      "name": "Sadjem",
+      "cm": 2.0,
+      "elev_m": 359
+     },
+     {
+      "km": 124,
+      "name": "Straumsnes",
+      "cm": 2.0,
+      "elev_m": 200
+     }
+    ],
+    "helsinki": [
+     {
+      "km": 78,
+      "name": "Salo Kiikala lentokenttä",
+      "cm": 2.0,
+      "elev_m": null
+     },
+     {
+      "km": 160,
+      "name": "Pöytyä Yläne",
+      "cm": 1.0,
+      "elev_m": null
+     },
+     {
+      "km": 190,
+      "name": "Juupajoki Hyytiälä",
+      "cm": 2.0,
+      "elev_m": null
+     },
+     {
+      "km": 209,
+      "name": "Mikkeli lentoasema",
+      "cm": 2.0,
+      "elev_m": null
+     }
+    ],
+    "tampere": [
+     {
+      "km": 48,
+      "name": "Juupajoki Hyytiälä",
+      "cm": 2.0,
+      "elev_m": null
+     },
+     {
+      "km": 78,
+      "name": "Kankaanpää Niinisalo lentokenttä",
+      "cm": 2.0,
+      "elev_m": null
+     },
+     {
+      "km": 101,
+      "name": "Pöytyä Yläne",
+      "cm": 1.0,
+      "elev_m": null
+     },
+     {
+      "km": 106,
+      "name": "Alavus Sulkavankylä",
+      "cm": 1.0,
+      "elev_m": null
+     }
+    ],
+    "oulu": [
+     {
+      "km": 3,
+      "name": "Oulu Kaukovainio",
+      "cm": 7.0,
+      "elev_m": null
+     },
+     {
+      "km": 35,
+      "name": "Hailuoto Keskikylä",
+      "cm": 5.0,
+      "elev_m": null
+     },
+     {
+      "km": 41,
+      "name": "Siikajoki Ruukki",
+      "cm": 8.0,
+      "elev_m": null
+     },
+     {
+      "km": 73,
+      "name": "Vaala Pelso",
+      "cm": 4.0,
+      "elev_m": null
+     }
+    ],
+    "rovaniemi": [
+     {
+      "km": 9,
+      "name": "Rovaniemi lentoasema",
+      "cm": 7.0,
+      "elev_m": null
+     },
+     {
+      "km": 15,
+      "name": "Rovaniemi Apukka",
+      "cm": 8.0,
+      "elev_m": null
+     },
+     {
+      "km": 48,
+      "name": "Ylitornio Meltosjärvi",
+      "cm": 6.0,
+      "elev_m": null
+     },
+     {
+      "km": 65,
+      "name": "Ranua lentokenttä",
+      "cm": 3.0,
+      "elev_m": null
+     }
+    ],
+    "sweden_north_66_5": {
+     "stations": 22,
+     "with_snow": 5,
+     "max_cm": 9.0
+    }
+   }
+  }
+ },
+ "ref_numbers": [],
+ "media": [
+  {
+   "id": "snow",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/kiruna-snow-depth-13-november-2026/snow.webp",
+   "thumb": "blog/media/2026/11/kiruna-snow-depth-13-november-2026/snow_t.webp",
+   "w": 1200,
+   "h": 630,
+   "after": 0
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Kiruna has no snow today: 0 cm where 46 winters out of 46 were white (13 November 2026)",
+   "description": "Kiruna snow depth on 13 November 2026: 0 cm at the town station, at Jukkasjärvi and at Esrange. In our 46-winter snow history the town always had snow on this date. What the weekend brings.",
+   "lede": "Kiruna, a town where winter usually settles in October, is bare in mid-November. The weather station in town, at 519 m, measured 0 cm of snow on Friday morning, and it has measured nothing all week. Jukkasjärvi and Esrange, down in the Torne valley, are bare too.",
+   "sections": [
+    {
+     "h": "How unusual is this?",
+     "p": [
+      "Very. Our snow history for Kiruna's height covers 46 past winters, and every single one of them had snow on the ground on 13 November. The middle value for the date is 23 cm; in a thin year it was about 14 cm, in a deep one 35 cm or more. Half of the winters already had a lasting cover by 2 October.",
+      "Recent winters on this date: 45 cm in 2021-22, 12 cm in 2022-23, 40 cm in 2023-24, 7 cm in 2024-25 and 24 cm last winter. A green 13 November is new."
+     ]
+    },
+    {
+     "h": "Where the nearest snow is",
+     "p": [
+      "It is not far, but it is thin. Abisko, 80 km to the north-west, has 2 cm, and Katterjåkk near Riksgränsen, at 514 m on the Norwegian border, has 9 cm. Across the whole of Swedish Lapland north of the Arctic Circle only 5 of 22 stations measured any snow today.",
+      "The cold is there: it is the moisture that has been missing. The snow this week fell further south, from Dalarna to the Västerbotten coast."
+     ]
+    },
+    {
+     "h": "The weekend: very cold, a little snow",
+     "p": [
+      "Saturday is clear and cold, down to about -14 °C. Sunday brings the first light snow, around 1 to 2 cm, and Monday perhaps a little more, up to 3 cm in the wetter of the two forecasts we read. That will whiten the ground, but a skiable cover is still some weeks away at this pace."
+     ]
+    }
+   ],
+   "advice": [
+    "Planning a Kiruna trip for snow activities this month: ask your operator what runs on bare ground; dog and snowmobile tours need snow.",
+    "Cold, bare ground means frozen lakes and puddles without snow on top: black ice on paths and roads is the risk this weekend.",
+    "For the first skiing, the mountains towards Riksgränsen are the place to watch, not the town."
+   ],
+   "captions": {
+    "snow": "Snow depth measured at the weather stations on 13 November 2026: each dot is a station, coloured by its depth (light blue = a few cm, dark blue = deep); white dots with a grey ring = bare ground. Labels give the depth at the main stations. Measurements only, no model layer."
+   },
+   "method": "Snow depth today: measured at weather stations on the morning of 13 November 2026 (SMHI); a station reports the snow on its own small plot, so a few kilometres away and a hundred metres higher the ground can look different. Usual depth for the date: SnowScope snow history, 46 past winters (1980-81 to 2025-26), a model of the past at the city's height, not a station record. Weekend: two weather models (ECMWF IFS and DWD ICON, read through Open-Meteo), given as a range. Places and rules: the official pages listed below.",
+   "references": [
+    {
+     "text": "SMHI, open meteorological observations (snow depth, daily)",
+     "url": "https://www.smhi.se/data/meteorologi/ladda-ner-meteorologiska-observationer"
+    },
+    {
+     "text": "Open-Meteo, weather forecast data (ECMWF and ICON models)",
+     "url": "https://open-meteo.com/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Snow map on SnowScope",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  },
+  "sv": {
+   "title": "Kiruna har ingen snö i dag: 0 cm där 46 vintrar av 46 var vita (13 november 2026)",
+   "description": "Snödjup i Kiruna den 13 november 2026: 0 cm vid stationen i stan, i Jukkasjärvi och vid Esrange. I vår snöhistorik över 46 vintrar hade stan alltid snö det här datumet. Vad helgen ger.",
+   "lede": "Kiruna, en stad där vintern brukar sätta sig i oktober, är bar i mitten av november. Väderstationen i stan, på 519 m, mätte 0 cm snö på fredagsmorgonen och har inte mätt någonting på hela veckan. Jukkasjärvi och Esrange, nere i Torneälvdalen, är också bara.",
+   "sections": [
+    {
+     "h": "Hur ovanligt är det här?",
+     "p": [
+      "Mycket. Vår snöhistorik för Kirunas höjd omfattar 46 vintrar, och varenda en av dem hade snö på marken den 13 november. Mittvärdet för datumet är 23 cm; ett tunt år var det runt 14 cm, ett djupt år 35 cm eller mer. Hälften av vintrarna hade redan ett varaktigt snötäcke den 2 oktober.",
+      "De senaste vintrarna det här datumet: 45 cm 2021-22, 12 cm 2022-23, 40 cm 2023-24, 7 cm 2024-25 och 24 cm förra vintern. En grön 13 november är något nytt."
+     ]
+    },
+    {
+     "h": "Var närmaste snön finns",
+     "p": [
+      "Den är inte långt bort, men den är tunn. Abisko, 80 km nordväst, har 2 cm, och Katterjåkk vid Riksgränsen, på 514 m vid norska gränsen, har 9 cm. I hela svenska Lappland norr om polcirkeln mätte bara 5 av 22 stationer någon snö i dag.",
+      "Kylan finns: det är fukten som har saknats. Veckans snö föll längre söderut, från Dalarna till Västerbottenskusten."
+     ]
+    },
+    {
+     "h": "Helgen: mycket kallt, lite snö",
+     "p": [
+      "Lördagen är klar och kall, ner mot -14 °C. Söndagen ger den första lätta snön, runt 1 till 2 cm, och måndagen kanske lite till, upp till 3 cm i den blötare av de två prognoser vi läser. Det gör marken vit, men ett skidbart täcke ligger fortfarande några veckor bort i den här takten."
+     ]
+    }
+   ],
+   "advice": [
+    "Planerar du en Kirunaresa för snöaktiviteter den här månaden: fråga arrangören vad som körs på bar mark; hund- och skotertur behöver snö.",
+    "Kall, bar mark betyder frusna sjöar och pölar utan snö ovanpå: svartis på gångvägar och vägar är risken i helgen.",
+    "För den första skidåkningen är fjällen mot Riksgränsen platsen att hålla koll på, inte stan."
+   ],
+   "captions": {
+    "snow": "Snödjup uppmätt vid väderstationerna den 13 november 2026: varje prick är en station, färgad efter snödjupet (ljusblått = några cm, mörkblått = djupt); vita prickar med grå ring = barmark. Etiketterna visar djupet vid de viktigaste stationerna. Bara mätningar, inget modellager."
+   },
+   "method": "Snödjup i dag: uppmätt vid väderstationer på morgonen den 13 november 2026 (SMHI). En station mäter snön på sin egen lilla yta, så några kilometer bort och hundra meter högre kan marken se annorlunda ut. Normalt snödjup för datumet: SnowScopes snöhistorik, 46 vintrar (1980-81 till 2025-26), en modell av det förflutna på stadens höjd, inte en stationsserie. Helgen: två vädermodeller (ECMWF IFS och DWD ICON via Open-Meteo), angivna som ett spann. Platser och regler: de officiella sidorna nedan.",
+   "references": [
+    {
+     "text": "SMHI, open meteorological observations (snow depth, daily)",
+     "url": "https://www.smhi.se/data/meteorologi/ladda-ner-meteorologiska-observationer"
+    },
+    {
+     "text": "Open-Meteo, weather forecast data (ECMWF and ICON models)",
+     "url": "https://open-meteo.com/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Snökartan på SnowScope",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  },
+  "nb": {
+   "title": "Kiruna har ingen snø i dag: 0 cm der 46 vintre av 46 var hvite (13. november 2026)",
+   "description": "Snødybde i Kiruna 13. november 2026: 0 cm på stasjonen i byen, i Jukkasjärvi og på Esrange. I snøhistorikken vår over 46 vintre hadde byen alltid snø på denne datoen. Dette gir helgen.",
+   "lede": "Kiruna, en by der vinteren vanligvis setter seg i oktober, er bar midt i november. Værstasjonen i byen, på 519 m, målte 0 cm snø fredag morgen og har ikke målt noe hele uka. Jukkasjärvi og Esrange, nede i Tornedalen, er også bare.",
+   "sections": [
+    {
+     "h": "Hvor uvanlig er dette?",
+     "p": [
+      "Svært. Snøhistorikken vår for Kirunas høyde dekker 46 vintre, og hver eneste en hadde snø på bakken 13. november. Midtverdien for datoen er 23 cm; et tynt år var det rundt 14 cm, et dypt år 35 cm eller mer. Halvparten av vintrene hadde allerede et varig snødekke 2. oktober.",
+      "De siste vintrene på denne datoen: 45 cm i 2021-22, 12 cm i 2022-23, 40 cm i 2023-24, 7 cm i 2024-25 og 24 cm i fjor. En grønn 13. november er noe nytt."
+     ]
+    },
+    {
+     "h": "Hvor nærmeste snø er",
+     "p": [
+      "Den er ikke langt unna, men den er tynn. Abisko, 80 km nordvest, har 2 cm, og Katterjåkk ved Riksgränsen, på 514 m ved norskegrensen, har 9 cm. I hele svenske Lappland nord for polarsirkelen målte bare 5 av 22 stasjoner snø i dag.",
+      "Kulda er der: det er fuktigheten som har manglet. Ukas snø falt lenger sør, fra Dalarna til kysten av Västerbotten."
+     ]
+    },
+    {
+     "h": "Helgen: svært kaldt, litt snø",
+     "p": [
+      "Lørdag er klar og kald, ned mot -14 °C. Søndag gir den første lette snøen, rundt 1 til 2 cm, og mandag kanskje litt til, opptil 3 cm i den våteste av de to prognosene vi leser. Det gjør bakken hvit, men et skibart dekke ligger fortsatt noen uker unna i dette tempoet."
+     ]
+    }
+   ],
+   "advice": [
+    "Planlegger du en tur til Kiruna for snøaktiviteter denne måneden: spør arrangøren hva som går på bar mark; hunde- og snøscooterturer trenger snø.",
+    "Kald, bar mark betyr frosne vann og pytter uten snø oppå: svartis på stier og veier er risikoen i helgen.",
+    "For den første skituren er fjellet mot Riksgränsen stedet å følge med på, ikke byen."
+   ],
+   "captions": {
+    "snow": "Snødybde målt ved værstasjonene 13. november 2026: hver prikk er en stasjon, farget etter snødybden (lyseblått = noen få cm, mørkeblått = dypt); hvite prikker med grå ring = bar bakke. Etikettene viser dybden ved de viktigste stasjonene. Bare målinger, ikke noe modellag."
+   },
+   "method": "Snødybde i dag: målt ved værstasjoner om morgenen 13. november 2026 (SMHI). En stasjon måler snøen på sin egen lille flekk, så noen kilometer unna og hundre meter høyere kan bakken se annerledes ut. Vanlig snødybde for datoen: SnowScopes snøhistorikk, 46 vintre (1980-81 til 2025-26), en modell av fortiden i byens høyde, ikke en stasjonsserie. Helgen: to værmodeller (ECMWF IFS og DWD ICON via Open-Meteo), oppgitt som et spenn. Steder og regler: de offisielle sidene nedenfor.",
+   "references": [
+    {
+     "text": "SMHI, open meteorological observations (snow depth, daily)",
+     "url": "https://www.smhi.se/data/meteorologi/ladda-ner-meteorologiska-observationer"
+    },
+    {
+     "text": "Open-Meteo, weather forecast data (ECMWF and ICON models)",
+     "url": "https://open-meteo.com/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Snøkartet på SnowScope",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  },
+  "fi": {
+   "title": "Kiirunassa ei ole tänään lunta: 0 cm, vaikka 46 talvesta 46 oli valkoisia (13. marraskuuta 2026)",
+   "description": "Kiirunan lumensyvyys 13. marraskuuta 2026: 0 cm kaupungin asemalla, Jukkasjärvellä ja Esrangessa. 46 talven lumihistoriassamme kaupungissa oli tänä päivänä aina lunta. Mitä viikonloppu tuo.",
+   "lede": "Kiiruna, jossa talvi asettuu yleensä lokakuussa, on marraskuun puolivälissä paljas. Kaupungin sääasema 519 metrissä mittasi perjantaiaamuna 0 cm lunta, eikä se ole mitannut mitään koko viikkona. Myös Jukkasjärvi ja Esrange alhaalla Tornionjokilaaksossa ovat paljaita.",
+   "sections": [
+    {
+     "h": "Kuinka harvinaista tämä on?",
+     "p": [
+      "Hyvin. Lumihistoriamme Kiirunan korkeudella kattaa 46 talvea, ja jokaisena niistä maassa oli lunta 13. marraskuuta. Päivän keskimmäinen arvo on 23 cm; vähälumisena vuonna noin 14 cm, runsaslumisena 35 cm tai enemmän. Puolessa talvista pysyvä lumipeite oli jo 2. lokakuuta.",
+      "Viime talvina tänä päivänä: 45 cm talvella 2021-22, 12 cm talvella 2022-23, 40 cm talvella 2023-24, 7 cm talvella 2024-25 ja 24 cm viime talvena. Vihreä 13. marraskuuta on uutta."
+     ]
+    },
+    {
+     "h": "Missä lähin lumi on",
+     "p": [
+      "Se ei ole kaukana, mutta se on ohutta. Abiskossa 80 km luoteeseen on 2 cm, ja Katterjåkkissa Riksgränsenin lähellä, 514 metrissä Norjan rajalla, 9 cm. Koko Ruotsin Lapissa napapiirin pohjoispuolella vain 5 asemaa 22:sta mittasi tänään lunta.",
+      "Kylmyyttä on: kosteus on puuttunut. Viikon lumi satoi etelämpänä, Taalainmaalta Länsipohjan rannikolle."
+     ]
+    },
+    {
+     "h": "Viikonloppu: hyvin kylmä, vähän lunta",
+     "p": [
+      "Lauantai on selkeä ja kylmä, noin -14 asteeseen. Sunnuntaina tulee ensimmäinen kevyt lumi, noin 1–2 cm, ja maanantaina ehkä vähän lisää, jopa 3 cm märemmässä kahdesta lukemastamme ennusteesta. Se valkaisee maan, mutta hiihtokelpoiseen peitteeseen on tällä tahdilla vielä viikkoja."
+     ]
+    }
+   ],
+   "advice": [
+    "Jos suunnittelet Kiirunan-matkaa lumiaktiviteetteja varten tässä kuussa, kysy järjestäjältä, mitä paljaalla maalla tehdään; koira- ja moottorikelkkaretket tarvitsevat lunta.",
+    "Kylmä, paljas maa tarkoittaa jäätyneitä järviä ja lätäköitä ilman lunta päällä: musta jää poluilla ja teillä on viikonlopun riski.",
+    "Ensimmäisiä hiihtoja varten seuraa tuntureita Riksgränsenin suunnalla, ei kaupunkia."
+   ],
+   "captions": {
+    "snow": "Sääasemilla 13. marraskuuta 2026 mitattu lumensyvyys: jokainen piste on asema, väritetty lumensyvyyden mukaan (vaaleansininen = muutama cm, tummansininen = paksu); valkoinen piste harmaalla reunalla = paljas maa. Nimilaput kertovat syvyyden tärkeimmillä asemilla. Vain mittauksia, ei mallikerrosta."
+   },
+   "method": "Lumensyvyys tänään: mitattu sääasemilla aamulla 13. marraskuuta 2026 (SMHI). Asema mittaa lunta omalla pienellä alallaan, joten muutaman kilometrin päässä ja sata metriä korkeammalla maa voi näyttää toiselta. Tavallinen lumensyvyys päivälle: SnowScopen lumihistoria, 46 talvea (1980-81 – 2025-26), menneisyyden malli kaupungin korkeudella, ei aseman mittaussarja. Viikonloppu: kaksi säämallia (ECMWF IFS ja DWD ICON, Open-Meteon kautta), annettu vaihteluvälinä. Paikat ja säännöt: alla luetellut viralliset sivut.",
+   "references": [
+    {
+     "text": "SMHI, open meteorological observations (snow depth, daily)",
+     "url": "https://www.smhi.se/data/meteorologi/ladda-ner-meteorologiska-observationer"
+    },
+    {
+     "text": "Open-Meteo, weather forecast data (ECMWF and ICON models)",
+     "url": "https://open-meteo.com/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Lumikartta SnowScopessa",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "hand (N1 Nordic, measured snow 13 Nov 2026)"
+  },
+  "sv": {
+   "writer": "hand (N1 Nordic, measured snow 13 Nov 2026)"
+  },
+  "nb": {
+   "writer": "hand (N1 Nordic, measured snow 13 Nov 2026)"
+  },
+  "fi": {
+   "writer": "hand (N1 Nordic, measured snow 13 Nov 2026)"
+  }
+ },
+ "words_en": 275,
+ "indexable": true,
+ "main": {
+  "slug": null,
+  "name": "Kiruna",
+  "lat": 67.856,
+  "lon": 20.225
+ },
+ "places": [],
+ "resort_links": [],
+ "table": null,
+ "bulletins": [],
+ "trip_day": "",
+ "map_link": "https://snowscope.app/",
+ "keyword": {
+  "family": "snow-now",
+  "entity": "kiruna",
+  "region": "SCANDES",
+  "date": "2026-11-13"
+ },
+ "voice": "local",
+ "query": "snödjup kiruna",
+ "overlap": {
+  "before": 1.2,
+  "after": 1.2,
+  "with": "alps-snow-depth-today-4-november-2026",
+  "tries": 0
+ },
+ "publish_utc": "2026-11-13T19:29:18Z"
+}
