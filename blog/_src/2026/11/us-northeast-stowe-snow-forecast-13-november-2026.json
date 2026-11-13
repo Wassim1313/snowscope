@@ -1,0 +1,685 @@
+{
+ "id": "2026-11-13-us_ne-coming",
+ "slug": "us-northeast-stowe-snow-forecast-13-november-2026",
+ "date": "2026-11-13",
+ "published_utc": "2026-11-13T20:06:59Z",
+ "updated_utc": "2026-11-13T20:06:59Z",
+ "region": "US_NE",
+ "angle": "coming",
+ "score": 46.0,
+ "signature": "stowe:10|bolton_valley_resort:10|sugarbush_resort:10",
+ "keyword": {
+  "family": "snow-forecast",
+  "entity": "stowe",
+  "region": "US_NE",
+  "date": "2026-11-13"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "snow_forecast",
+  "region": "US Northeast",
+  "date": "2026-11-13",
+  "weekday": "Friday",
+  "model_run": "2026-11-13",
+  "forecast_days": [
+   "2026-11-14",
+   "2026-11-15",
+   "2026-11-16"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 14420,
+   "resorts_with_snow": 28,
+   "resorts_in_region": 112
+  },
+  "region_before": {
+   "date": "2026-11-11",
+   "snow_covered_area_km2": 240,
+   "resorts_with_snow": 6
+  },
+  "region_forecast": {
+   "date": "2026-11-16",
+   "snow_covered_area_km2": 7130,
+   "resorts_with_snow": 30
+  },
+  "question": "Where will new snow fall in the next days, and at which height?",
+  "resorts": [
+   {
+    "name": "Stowe",
+    "country": "United States",
+    "top_m": 1112,
+    "base_m": 400,
+    "depth_cm_upper_slopes_today": 1,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 12,
+    "slug": "stowe",
+    "new_cm_by_day": {
+     "2026-11-11": 3,
+     "2026-11-12": 2,
+     "2026-11-13": 0,
+     "2026-11-14": 7,
+     "2026-11-15": 4,
+     "2026-11-16": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 400,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 10,
+      "depth_cm_measured": 0
+     },
+     "mid": {
+      "elev_m": 756,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 10
+     },
+     "top": {
+      "elev_m": 1112,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 11
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 230,
+      "max": 480
+     },
+     "2026-11-14": {
+      "min": 210,
+      "max": 570
+     },
+     "2026-11-15": {
+      "min": 350,
+      "max": 510
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-11-06"
+    },
+    "nearest_station": {
+     "station": "Underhill 4.4 NNE",
+     "elev_m": 286,
+     "depth_cm_measured": 0,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-12",
+     "km_away": 12.4
+    }
+   },
+   {
+    "name": "Bolton Valley Resort",
+    "country": "United States",
+    "top_m": 950,
+    "base_m": 475,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 3,
+    "new_cm_forecast_next_days": 11,
+    "slug": "bolton_valley_resort",
+    "new_cm_by_day": {
+     "2026-11-11": 1,
+     "2026-11-12": 2,
+     "2026-11-13": 0,
+     "2026-11-14": 6,
+     "2026-11-15": 4,
+     "2026-11-16": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 475,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 9,
+      "depth_cm_measured": 0
+     },
+     "mid": {
+      "elev_m": 712,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 12
+     },
+     "top": {
+      "elev_m": 950,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 12
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 240,
+      "max": 510
+     },
+     "2026-11-14": {
+      "min": 220,
+      "max": 520
+     },
+     "2026-11-15": {
+      "min": 350,
+      "max": 510
+     }
+    },
+    "past_winters": {
+     "height_m": 712,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 15,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 1
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-11-04"
+    },
+    "nearest_station": {
+     "station": "Underhill 4.4 NNE",
+     "elev_m": 286,
+     "depth_cm_measured": 0,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-12",
+     "km_away": 19.7
+    }
+   },
+   {
+    "name": "Sugarbush Resort",
+    "country": "United States",
+    "top_m": 1238,
+    "base_m": 461,
+    "depth_cm_upper_slopes_today": 3,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 6,
+    "new_cm_forecast_next_days": 10,
+    "slug": "sugarbush_resort",
+    "new_cm_by_day": {
+     "2026-11-11": 1,
+     "2026-11-12": 4,
+     "2026-11-13": 1,
+     "2026-11-14": 4,
+     "2026-11-15": 5,
+     "2026-11-16": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 461,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 8
+     },
+     "mid": {
+      "elev_m": 849,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 9
+     },
+     "top": {
+      "elev_m": 1238,
+      "depth_cm_model": 4,
+      "new_cm_next_7_days": 10
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 200,
+      "max": 480
+     },
+     "2026-11-14": {
+      "min": 200,
+      "max": 500
+     },
+     "2026-11-15": {
+      "min": 360,
+      "max": 540
+     }
+    },
+    "past_winters": {
+     "height_m": 849,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 18,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 1
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-11-04"
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "alt_new",
+   "kind": "new_map",
+   "file": "blog/media/2026/11/us-northeast-stowe-snow-forecast-13-november-2026/alt_new.webp",
+   "thumb": "blog/media/2026/11/us-northeast-stowe-snow-forecast-13-november-2026/alt_new_t.webp",
+   "bytes": 37732,
+   "snow_frac": 0.3143,
+   "weak": false
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Stowe</text><rect x=\"155\" y=\"36\" width=\"30\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"188\" y=\"49\" class=\"vl\">3</text><rect x=\"235\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"49\" class=\"vl\">2</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">7</text><rect x=\"475\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"518\" y=\"49\" class=\"vl\">4</text><rect x=\"555\" y=\"36\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"49\" class=\"vl\">1</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Bolton Valley Resort</text><rect x=\"155\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"83\" class=\"vl\">2</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"60\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"452\" y=\"83\" text-anchor=\"end\" class=\"vl in\">6</text><rect x=\"475\" y=\"70\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"518\" y=\"83\" class=\"vl\">4</text><rect x=\"555\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"83\" class=\"vl\">1</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Sugarbush Resort</text><rect x=\"155\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"117\" class=\"vl\">1</text><rect x=\"235\" y=\"104\" width=\"40\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"278\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"328\" y=\"117\" class=\"vl\">1</text><rect x=\"395\" y=\"104\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"438\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"50\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"528\" y=\"117\" class=\"vl\">5</text><rect x=\"555\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"117\" class=\"vl\">1</text></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Stowe</text><rect x=\"155\" y=\"36\" width=\"30\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"188\" y=\"49\" class=\"vl\">3</text><rect x=\"235\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"49\" class=\"vl\">2</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">7</text><rect x=\"475\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"518\" y=\"49\" class=\"vl\">4</text><rect x=\"555\" y=\"36\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"49\" class=\"vl\">1</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Bolton Valley Resort</text><rect x=\"155\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"83\" class=\"vl\">2</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"60\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"452\" y=\"83\" text-anchor=\"end\" class=\"vl in\">6</text><rect x=\"475\" y=\"70\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"518\" y=\"83\" class=\"vl\">4</text><rect x=\"555\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"83\" class=\"vl\">1</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Sugarbush Resort</text><rect x=\"155\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"117\" class=\"vl\">1</text><rect x=\"235\" y=\"104\" width=\"40\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"278\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"328\" y=\"117\" class=\"vl\">1</text><rect x=\"395\" y=\"104\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"438\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"50\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"528\" y=\"117\" class=\"vl\">5</text><rect x=\"555\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"117\" class=\"vl\">1</text></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Stowe</text><rect x=\"155\" y=\"36\" width=\"30\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"188\" y=\"49\" class=\"vl\">3</text><rect x=\"235\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"49\" class=\"vl\">2</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">7</text><rect x=\"475\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"518\" y=\"49\" class=\"vl\">4</text><rect x=\"555\" y=\"36\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"49\" class=\"vl\">1</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Bolton Valley Resort</text><rect x=\"155\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"83\" class=\"vl\">2</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"60\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"452\" y=\"83\" text-anchor=\"end\" class=\"vl in\">6</text><rect x=\"475\" y=\"70\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"518\" y=\"83\" class=\"vl\">4</text><rect x=\"555\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"83\" class=\"vl\">1</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Sugarbush Resort</text><rect x=\"155\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"117\" class=\"vl\">1</text><rect x=\"235\" y=\"104\" width=\"40\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"278\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"328\" y=\"117\" class=\"vl\">1</text><rect x=\"395\" y=\"104\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"438\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"50\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"528\" y=\"117\" class=\"vl\">5</text><rect x=\"555\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"117\" class=\"vl\">1</text></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Stowe</text><rect x=\"155\" y=\"36\" width=\"30\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"188\" y=\"49\" class=\"vl\">3</text><rect x=\"235\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"49\" class=\"vl\">2</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">7</text><rect x=\"475\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"518\" y=\"49\" class=\"vl\">4</text><rect x=\"555\" y=\"36\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"49\" class=\"vl\">1</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Bolton Valley Resort</text><rect x=\"155\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"83\" class=\"vl\">2</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"60\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"452\" y=\"83\" text-anchor=\"end\" class=\"vl in\">6</text><rect x=\"475\" y=\"70\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"518\" y=\"83\" class=\"vl\">4</text><rect x=\"555\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"83\" class=\"vl\">1</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Sugarbush Resort</text><rect x=\"155\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"117\" class=\"vl\">1</text><rect x=\"235\" y=\"104\" width=\"40\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"278\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"328\" y=\"117\" class=\"vl\">1</text><rect x=\"395\" y=\"104\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"438\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"50\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"528\" y=\"117\" class=\"vl\">5</text><rect x=\"555\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"117\" class=\"vl\">1</text></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Stowe</text><rect x=\"155\" y=\"36\" width=\"30\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"188\" y=\"49\" class=\"vl\">3</text><rect x=\"235\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"49\" class=\"vl\">2</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">7</text><rect x=\"475\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"518\" y=\"49\" class=\"vl\">4</text><rect x=\"555\" y=\"36\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"49\" class=\"vl\">1</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Bolton Valley Resort</text><rect x=\"155\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"83\" class=\"vl\">2</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"60\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"452\" y=\"83\" text-anchor=\"end\" class=\"vl in\">6</text><rect x=\"475\" y=\"70\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"518\" y=\"83\" class=\"vl\">4</text><rect x=\"555\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"83\" class=\"vl\">1</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Sugarbush Resort</text><rect x=\"155\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"117\" class=\"vl\">1</text><rect x=\"235\" y=\"104\" width=\"40\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"278\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"328\" y=\"117\" class=\"vl\">1</text><rect x=\"395\" y=\"104\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"438\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"50\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"528\" y=\"117\" class=\"vl\">5</text><rect x=\"555\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"117\" class=\"vl\">1</text></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Stowe</text><rect x=\"155\" y=\"36\" width=\"30\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"188\" y=\"49\" class=\"vl\">3</text><rect x=\"235\" y=\"36\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"49\" class=\"vl\">2</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"49\" text-anchor=\"end\" class=\"vl in\">7</text><rect x=\"475\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"518\" y=\"49\" class=\"vl\">4</text><rect x=\"555\" y=\"36\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"49\" class=\"vl\">1</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Bolton Valley Resort</text><rect x=\"155\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"20\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"258\" y=\"83\" class=\"vl\">2</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"60\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"452\" y=\"83\" text-anchor=\"end\" class=\"vl in\">6</text><rect x=\"475\" y=\"70\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"518\" y=\"83\" class=\"vl\">4</text><rect x=\"555\" y=\"70\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"83\" class=\"vl\">1</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Sugarbush Resort</text><rect x=\"155\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"117\" class=\"vl\">1</text><rect x=\"235\" y=\"104\" width=\"40\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"278\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"328\" y=\"117\" class=\"vl\">1</text><rect x=\"395\" y=\"104\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"438\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"50\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"528\" y=\"117\" class=\"vl\">5</text><rect x=\"555\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"568\" y=\"117\" class=\"vl\">1</text></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  },
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-northeast-stowe-snow-forecast-13-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-northeast-stowe-snow-forecast-13-november-2026/map_t.webp",
+   "bytes": 35674,
+   "snow_frac": 0.0037,
+   "weak": true
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Snow forecast in the US Northeast: up to 5 in at Stowe by 16 November",
+   "description": "Between now and 16 November we expect 5 in (12 cm) at Stowe, 4 in (11 cm) at Bolton Valley Resort and 4 in (10 cm) at Sugarbush Resort. Remember that …",
+   "lede": "Between now and 16 November we expect 5 in (12 cm) at Stowe, 4 in (11 cm) at Bolton Valley Resort and 4 in (10 cm) at Sugarbush Resort. Remember that a resort value is a model estimate for an area; a station tells you about one spot. Field work in dry mountains teaches one thing: the map is a start, the slope itself has the last word.",
+   "sections": [
+    {
+     "h": "Snow on the slopes today",
+     "p": [
+      "Today 28 of the 112 resorts in the US Northeast have snow on their upper slopes; in all, our model counts 5,568 sq mi (14,420 km²) under snow."
+     ]
+    },
+    {
+     "h": "Top, middle, bottom",
+     "p": [
+      "Expect two seasons in one resort at Stowe on 14 November: a freezing level of 689 ft (210 m) to 1,870 ft (570 m) means wet snow below and wintry snow above.",
+      "On 14 November the freezing level at Bolton Valley Resort sits at 722 ft (220 m) to 1,706 ft (520 m): wet snow is likely low down, while the top keeps winter snow.",
+      "Expect two seasons in one resort at Sugarbush Resort on 15 November: a freezing level of 1,181 ft (360 m) to 1,772 ft (540 m) means wet snow below and wintry snow above."
+     ]
+    },
+    {
+     "h": "What to expect next",
+     "p": [
+      "More ground is white now: 93 sq mi (240 km²) on 11 November, 5,568 sq mi (14,420 km²) today, and 2,753 sq mi (7,130 km²) expected on 16 November."
+     ]
+    },
+    {
+     "h": "Safety and avalanche level",
+     "p": [
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Forecasts a few days ahead can change: look at the map again the day before you travel.",
+    "If the freezing level climbs above the lifts, the snow will be wet and heavy: head for the highest chairs.",
+    "Fresh snow changes fast once the sun is on it: it settles, gets wet and loses its lightness. Morning is the time to ski it.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Stowe gets fresh snow."
+   ],
+   "captions": {
+    "alt_new": "Snow depth in the US Northeast on 13 November 2026 (SnowScope snow model): Stowe, Bolton Valley Resort, Sugarbush Resort.",
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast).",
+    "map": "Snow depth in the US Northeast on 13 November 2026 (SnowScope snow model): Stowe, Bolton Valley Resort, Sugarbush Resort."
+   }
+  },
+  "fr": {
+   "title": "Prévisions neige dans le Nord-Est américain : jusqu'à 5 in à Stowe d'ici le 16 novembre",
+   "description": "Entre aujourd'hui et le 16 novembre, nous attendons 5 in (12 cm) à Stowe, 4 in (11 cm) à Bolton Valley Resort et 4 in (10 cm) à Sugarbush Resort. Nos …",
+   "lede": "Entre aujourd'hui et le 16 novembre, nous attendons 5 in (12 cm) à Stowe, 4 in (11 cm) à Bolton Valley Resort et 4 in (10 cm) à Sugarbush Resort. Nos chiffres des stations de ski sont des estimations pour le haut du domaine. Ceux des stations de mesure sont de vraies mesures, mais en un seul point et à la date indiquée. Le terrain en montagne sèche apprend une chose : la carte est un début, la pente a le dernier mot.",
+   "sections": [
+    {
+     "h": "La neige sur les pentes aujourd'hui",
+     "p": [
+      "Aujourd'hui, 28 des 112 stations dans le Nord-Est américain ont de la neige sur le haut du domaine ; au total, notre modèle compte 5 568 sq mi (14 420 km²) sous la neige."
+     ]
+    },
+    {
+     "h": "En haut, au milieu, en bas",
+     "p": [
+      "Deux saisons dans une station à Stowe le 14 novembre : une isotherme 0 °C entre 689 ft (210 m) et 1 870 ft (570 m), c'est de la neige mouillée en bas et de la neige d'hiver en haut.",
+      "Le 14 novembre, l'isotherme 0 °C à Bolton Valley Resort se situe entre 722 ft (220 m) et 1 706 ft (520 m) : neige mouillée probable en bas, neige d'hiver en haut.",
+      "Deux saisons dans une station à Sugarbush Resort le 15 novembre : une isotherme 0 °C entre 1 181 ft (360 m) et 1 772 ft (540 m), c'est de la neige mouillée en bas et de la neige d'hiver en haut."
+     ]
+    },
+    {
+     "h": "À quoi s'attendre ensuite",
+     "p": [
+      "Depuis le 11 novembre, la neige est passée de 93 sq mi (240 km²) à 5 568 sq mi (14 420 km²) aujourd'hui ; pour le 16 novembre, notre prévision donne 2 753 sq mi (7 130 km²)."
+     ]
+    },
+    {
+     "h": "Sécurité et risque d'avalanche",
+     "p": [
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ.",
+    "Si l'isotherme 0 °C monte au-dessus des remontées, la neige sera mouillée et lourde : filez vers les télésièges les plus hauts.",
+    "La neige fraîche change vite au soleil : elle se tasse, s'humidifie et perd sa légèreté. Le matin est le moment de la skier.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Stowe reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "alt_new": "Hauteur de neige dans le Nord-Est américain le 13 novembre 2026 (modèle de neige SnowScope) : Stowe, Bolton Valley Resort, Sugarbush Resort.",
+    "bars": "Neige fraîche par jour dans les stations en tête (jours passés : modèle ; barres claires : prévision).",
+    "map": "Hauteur de neige dans le Nord-Est américain le 13 novembre 2026 (modèle de neige SnowScope) : Stowe, Bolton Valley Resort, Sugarbush Resort."
+   }
+  },
+  "de": {
+   "title": "Schneeprognose im Nordosten der USA: bis zu 5 in in Stowe bis zum 16. November",
+   "description": "Von jetzt bis zum 16. November erwarten wir 5 in (12 cm) in Stowe, 4 in (11 cm) in Bolton Valley Resort und 4 in (10 cm) in Sugarbush Resort. Unsere …",
+   "lede": "Von jetzt bis zum 16. November erwarten wir 5 in (12 cm) in Stowe, 4 in (11 cm) in Bolton Valley Resort und 4 in (10 cm) in Sugarbush Resort. Unsere Skigebietswerte sind Schätzungen für die oberen Hänge. Die Stationswerte sind echte Messungen, aber nur an einem Punkt und am angegebenen Tag. Feldarbeit in trockenen Bergen lehrt eines: Die Karte ist ein Anfang, das letzte Wort hat der Hang selbst.",
+   "sections": [
+    {
+     "h": "Schnee auf den Pisten heute",
+     "p": [
+      "Heute haben 28 der 112 Skigebiete im Nordosten der USA Schnee in den oberen Hängen; insgesamt zählt unser Modell 5.568 sq mi (14.420 km²) unter Schnee."
+     ]
+    },
+    {
+     "h": "Oben, Mitte, unten",
+     "p": [
+      "Zwei Jahreszeiten in einem Skigebiet in Stowe am 14. November: Eine Nullgradgrenze von 689 ft (210 m) bis 1.870 ft (570 m) heißt unten nasser Schnee und oben Winterschnee.",
+      "Am 14. November liegt die Nullgradgrenze in Bolton Valley Resort bei 722 ft (220 m) bis 1.706 ft (520 m): Unten wird der Schnee wahrscheinlich nass, oben bleibt er winterlich.",
+      "Zwei Jahreszeiten in einem Skigebiet in Sugarbush Resort am 15. November: Eine Nullgradgrenze von 1.181 ft (360 m) bis 1.772 ft (540 m) heißt unten nasser Schnee und oben Winterschnee."
+     ]
+    },
+    {
+     "h": "Was als Nächstes zu erwarten ist",
+     "p": [
+      "Jetzt ist mehr Boden weiß: 93 sq mi (240 km²) am 11. November, heute 5.568 sq mi (14.420 km²) und 2.753 sq mi (7.130 km²) erwartet am 16. November."
+     ]
+    },
+    {
+     "h": "Sicherheit und Lawinengefahr",
+     "p": [
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte.",
+    "Steigt die Nullgradgrenze über die Lifte, wird der Schnee nass und schwer: Geh an die höchsten Sessellifte.",
+    "Neuschnee verändert sich schnell, sobald die Sonne darauf scheint: Er setzt sich, wird nass und verliert seine Leichtigkeit. Der Morgen ist die Zeit dafür.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Stowe Neuschnee bekommt."
+   ],
+   "captions": {
+    "alt_new": "Schneehöhe im Nordosten der USA am 13. November 2026 (SnowScope-Schneemodell): Stowe, Bolton Valley Resort, Sugarbush Resort.",
+    "bars": "Neuschnee pro Tag in den führenden Skigebieten (vergangene Tage: Modell; helle Balken: Prognose).",
+    "map": "Schneehöhe im Nordosten der USA am 13. November 2026 (SnowScope-Schneemodell): Stowe, Bolton Valley Resort, Sugarbush Resort."
+   }
+  },
+  "it": {
+   "title": "Previsioni neve nel Nord-est degli USA: fino a 5 in a Stowe entro il 16 novembre",
+   "description": "Da oggi al 16 novembre ci aspettiamo 5 in (12 cm) a Stowe, 4 in (11 cm) a Bolton Valley Resort e 4 in (10 cm) a Sugarbush Resort. I nostri valori …",
+   "lede": "Da oggi al 16 novembre ci aspettiamo 5 in (12 cm) a Stowe, 4 in (11 cm) a Bolton Valley Resort e 4 in (10 cm) a Sugarbush Resort. I nostri valori delle località sono stime per i pendii superiori. Quelli delle stazioni sono misure vere, ma solo in un punto e alla data indicata. Il lavoro sul campo in montagne secche insegna una cosa: la mappa è un inizio, l'ultima parola spetta al pendio.",
+   "sections": [
+    {
+     "h": "Neve sulle piste oggi",
+     "p": [
+      "Oggi 28 delle 112 località nel Nord-est degli USA hanno neve sui pendii superiori; in tutto il nostro modello conta 5.568 sq mi (14.420 km²) sotto la neve."
+     ]
+    },
+    {
+     "h": "Alto, medio, basso",
+     "p": [
+      "Due stagioni in una località a Stowe il 14 novembre: uno zero termico tra 689 ft (210 m) e 1.870 ft (570 m) vuol dire neve bagnata in basso e neve invernale in alto.",
+      "Il 14 novembre lo zero termico a Bolton Valley Resort sta tra 722 ft (220 m) e 1.706 ft (520 m): in basso la neve sarà probabilmente bagnata, mentre in alto resta invernale.",
+      "Due stagioni in una località a Sugarbush Resort il 15 novembre: uno zero termico tra 1.181 ft (360 m) e 1.772 ft (540 m) vuol dire neve bagnata in basso e neve invernale in alto."
+     ]
+    },
+    {
+     "h": "Cosa aspettarsi",
+     "p": [
+      "Dal 11 novembre la neve è passata da 93 sq mi (240 km²) a 5.568 sq mi (14.420 km²) oggi; per il 16 novembre la nostra previsione indica 2.753 sq mi (7.130 km²)."
+     ]
+    },
+    {
+     "h": "Sicurezza e pericolo valanghe",
+     "p": [
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire.",
+    "Se lo zero termico sale sopra gli impianti, la neve sarà bagnata e pesante: punta alle seggiovie più alte.",
+    "La neve fresca cambia in fretta quando il sole la scalda: si assesta, si bagna e perde leggerezza. La mattina è il momento giusto.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Stowe riceve neve fresca."
+   ],
+   "captions": {
+    "alt_new": "Altezza neve nel Nord-est degli USA il 13 novembre 2026 (modello neve SnowScope): Stowe, Bolton Valley Resort, Sugarbush Resort.",
+    "bars": "Neve fresca al giorno nelle località in testa (giorni passati: modello; barre chiare: previsione).",
+    "map": "Altezza neve nel Nord-est degli USA il 13 novembre 2026 (modello neve SnowScope): Stowe, Bolton Valley Resort, Sugarbush Resort."
+   }
+  },
+  "es": {
+   "title": "Previsión de nieve en el noreste de EE. UU.: hasta 5 in en Stowe hasta el 16 de noviembre",
+   "description": "Entre hoy y el 16 de noviembre esperamos 5 in (12 cm) en Stowe, 4 in (11 cm) en Bolton Valley Resort y 4 in (10 cm) en Sugarbush Resort. Nuestras …",
+   "lede": "Entre hoy y el 16 de noviembre esperamos 5 in (12 cm) en Stowe, 4 in (11 cm) en Bolton Valley Resort y 4 in (10 cm) en Sugarbush Resort. Nuestras cifras de las estaciones de esquí son estimaciones para las pistas altas. Las de las estaciones de medida son medidas reales, pero de un solo punto y en la fecha indicada. El trabajo de campo en montañas secas enseña una cosa: el mapa es un comienzo, la ladera tiene la última palabra.",
+   "sections": [
+    {
+     "h": "La nieve en las pistas hoy",
+     "p": [
+      "Hoy 28 de las 112 estaciones en el noreste de EE. UU. tienen nieve en las pistas altas; en total, nuestro modelo cuenta 5568 sq mi (14.420 km²) bajo la nieve."
+     ]
+    },
+    {
+     "h": "Arriba, en medio, abajo",
+     "p": [
+      "Dos estaciones del año en una en Stowe el 14 de noviembre: una cota de congelación de 689 ft (210 m)-1870 ft (570 m) significa nieve húmeda abajo y nieve invernal arriba.",
+      "El 14 de noviembre la cota de congelación en Bolton Valley Resort queda en 722 ft (220 m)-1706 ft (520 m): nieve húmeda probable abajo, mientras arriba se mantiene la nieve de invierno.",
+      "Dos estaciones del año en una en Sugarbush Resort el 15 de noviembre: una cota de congelación de 1181 ft (360 m)-1772 ft (540 m) significa nieve húmeda abajo y nieve invernal arriba."
+     ]
+    },
+    {
+     "h": "Qué esperar después",
+     "p": [
+      "Desde el 11 de noviembre, la nieve pasó de 93 sq mi (240 km²) a 5568 sq mi (14.420 km²) hoy; para el 16 de noviembre, nuestra previsión da 2753 sq mi (7130 km²)."
+     ]
+    },
+    {
+     "h": "Seguridad y peligro de aludes",
+     "p": [
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar.",
+    "Si la cota de congelación sube por encima de los remontes, la nieve estará húmeda y pesada: ve a los telesillas más altos.",
+    "La nieve nueva cambia rápido al sol: se asienta, se humedece y pierde su ligereza. La mañana es el momento de esquiarla.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Stowe recibe nieve nueva."
+   ],
+   "captions": {
+    "alt_new": "Espesor de nieve en el noreste de EE. UU. el 13 de noviembre 2026 (modelo de nieve de SnowScope): Stowe, Bolton Valley Resort, Sugarbush Resort.",
+    "bars": "Nieve nueva por día en las estaciones líderes (días pasados: modelo; barras claras: previsión).",
+    "map": "Espesor de nieve en el noreste de EE. UU. el 13 de noviembre 2026 (modelo de nieve de SnowScope): Stowe, Bolton Valley Resort, Sugarbush Resort."
+   }
+  },
+  "ar": {
+   "title": "توقعات التلج فشمال شرق ميريكان: حتى ل 5 إنش ف Stowe حتى ل 16 نونبر",
+   "description": "من دابا حتى ل 16 نونبر كنتسناو 5 إنش (12 سم) ف Stowe، 4 إنش (11 سم) ف Bolton Valley Resort و 4 إنش (10 سم) ف Sugarbush Resort. الأرقام ديال المحطات …",
+   "lede": "من دابا حتى ل 16 نونبر كنتسناو 5 إنش (12 سم) ف Stowe، 4 إنش (11 سم) ف Bolton Valley Resort و 4 إنش (10 سم) ف Sugarbush Resort. الأرقام ديال المحطات ديال التزلج تقديرات للجهة الفوقانية. الأرقام ديال محطات القياس قياسات حقيقية، ولكن غير فنقطة وحدة وفالتاريخ المكتوب. الخدمة فالجبال الناشفين كتعلمك حاجة وحدة: الخريطة غير بداية، والبيست هو اللي عندو الكلمة اللخرة.",
+   "sections": [
+    {
+     "h": "التلج فالبيستات اليوم",
+     "p": [
+      "اليوم 28 محطة من 112 فشمال شرق ميريكان فيهم التلج فالجهة الفوقانية؛ وفالمجموع، الموديل ديالنا كيحسب 5568 ميل² (14420 كم²) تحت التلج."
+     ]
+    },
+    {
+     "h": "الفوق، الوسط، التحت",
+     "p": [
+      "توقع جوج فصول فمحطة وحدة ف Stowe نهار 14 نونبر: علو الجليد بين 689 قدم (210 م) و 1870 قدم (570 م) كيعني تلج مبلول لتحت وتلج بارد لفوق.",
+      "نهار 14 نونبر علو الجليد ف Bolton Valley Resort كيكون بين 722 قدم (220 م) و 1706 قدم (520 م): التلج المبلول غالبا لتحت، والفوق كيحافظ على تلج الشتا.",
+      "توقع جوج فصول فمحطة وحدة ف Sugarbush Resort نهار 15 نونبر: علو الجليد بين 1181 قدم (360 م) و 1772 قدم (540 م) كيعني تلج مبلول لتحت وتلج بارد لفوق."
+     ]
+    },
+    {
+     "h": "شنو تتسنى من بعد",
+     "p": [
+      "التلج تبدل من نهار 11 نونبر، من 93 ميل² (240 كم²) ل 5568 ميل² (14420 كم²) اليوم؛ ونهار 16 نونبر التوقعات ديالنا كتعطي 2753 ميل² (7130 كم²)."
+     ]
+    },
+    {
+     "h": "السلامة وخطر الانهيارات",
+     "p": [
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر.",
+    "إلا طلع علو الجليد فوق التيليسييجات، التلج غادي يكون مبلول وتقيل: سير للتيليسييجات اللي فالفوق.",
+    "التلج الجديد كيتبدل بالزربة ملي كتضربو الشمس: كيتراكم، كيتبل وكيتلف الخفة ديالو. الصباح هو الوقت باش تتزلج فيه.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Stowe يجيها تلج جديد."
+   ],
+   "captions": {
+    "alt_new": "العلو ديال التلج فشمال شرق ميريكان نهار 13 نونبر 2026 (الموديل ديال SnowScope): Stowe, Bolton Valley Resort, Sugarbush Resort.",
+    "bars": "التلج الجديد فكل نهار فالمحطات اللولين (الأيام اللي فاتو من الموديل، والخطوط الفاتحة = التوقعات).",
+    "map": "العلو ديال التلج فشمال شرق ميريكان نهار 13 نونبر 2026 (الموديل ديال SnowScope): Stowe, Bolton Valley Resort, Sugarbush Resort."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "de": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "it": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "es": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  }
+ },
+ "words_en": 240,
+ "indexable": false,
+ "main": {
+  "slug": "stowe",
+  "name": "Stowe",
+  "lat": 44.5304,
+  "lon": -72.7882
+ },
+ "places": [
+  {
+   "name": "Stowe",
+   "lat": 44.5304,
+   "lon": -72.7882
+  },
+  {
+   "name": "Bolton Valley Resort",
+   "lat": 44.4184,
+   "lon": -72.8491
+  },
+  {
+   "name": "Sugarbush Resort",
+   "lat": 44.1482,
+   "lon": -72.9081
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "stowe",
+   "name": "Stowe"
+  },
+  {
+   "slug": "bolton_valley_resort",
+   "name": "Bolton Valley Resort"
+  },
+  {
+   "slug": "sugarbush_resort",
+   "name": "Sugarbush Resort"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "stowe",
+    "name": "Stowe",
+    "depth": 1,
+    "new72": 4,
+    "next": 12,
+    "top_m": 1112
+   },
+   {
+    "slug": "bolton_valley_resort",
+    "name": "Bolton Valley Resort",
+    "depth": 0,
+    "new72": 3,
+    "next": 11,
+    "top_m": 950
+   },
+   {
+    "slug": "sugarbush_resort",
+    "name": "Sugarbush Resort",
+    "depth": 3,
+    "new72": 6,
+    "next": 10,
+    "top_m": 1238
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Mount Washington Avalanche Center",
+   "url": "https://www.mountwashingtonavalanchecenter.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@44.530,-72.788,9.0",
+ "seconds": 0.0,
+ "facts_used": 24,
+ "voice": "field",
+ "media_ids": [
+  "alt_new",
+  "bars",
+  "map"
+ ],
+ "overlap": {
+  "before": 38.9,
+  "after": 17.5,
+  "with": "alps-les-deux-alpes-snow-forecast-11-november-2026",
+  "tries": 1
+ },
+ "similarity": {
+  "max": 0.113,
+  "with": "us-northeast-okemo-mountain-snow-forecast-11-november-2026"
+ },
+ "publish_utc": "2026-11-13T20:06:59Z"
+}

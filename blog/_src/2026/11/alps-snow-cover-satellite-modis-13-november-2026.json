@@ -1,0 +1,658 @@
+{
+ "id": "feature-alps-snow-cover-satellite-modis-13-november-2026",
+ "slug": "alps-snow-cover-satellite-modis-13-november-2026",
+ "date": "2026-11-13",
+ "published_utc": "2026-11-13T20:13:00Z",
+ "updated_utc": "2026-11-13T20:13:00Z",
+ "region": "ALPS",
+ "angle": "guide_feature_climate",
+ "category": "guide",
+ "draft": false,
+ "kind": "climate",
+ "resort_class": null,
+ "structure": "satellite-vs-stations-check",
+ "score": 90,
+ "tags": [
+  "satellite",
+  "snow-line",
+  "stations",
+  "weather-physics",
+  "MODIS",
+  "NDSI",
+  "snow cover",
+  "remote sensing",
+  "Alps"
+ ],
+ "facts": {
+  "kind": "climate",
+  "date": "2026-11-13",
+  "extra": {
+   "dem": "Copernicus GLO-90",
+   "box": {
+    "lat": [
+     43.6,
+     48.4
+    ],
+    "lon": [
+     4.8,
+     16.6
+    ]
+   },
+   "ground_min_m": 1000,
+   "window": {
+    "first": "2026-11-04",
+    "last": "2026-11-13",
+    "days": 10
+   },
+   "pixel_m": 500,
+   "cloud_buffer_px": 3,
+   "cloud_buffer_km": 1.5,
+   "composite": {
+    "mountain_km2": 120859,
+    "snow_km2": 62721,
+    "free_km2": 32568,
+    "snow_pct_of_mountain": 52,
+    "snow_pct_of_clear": 66,
+    "never_clear_pct": 21.2,
+    "never_clear_pct_int": 21,
+    "clear_pct": 79
+   },
+   "latest_look_share_pct": {
+    "2026-11-13": 18,
+    "2026-11-12": 0,
+    "2026-11-11": 1,
+    "2026-11-10": 3,
+    "2026-11-09": 8,
+    "2026-11-08": 21,
+    "2026-11-07": 10,
+    "2026-11-06": 8,
+    "2026-11-05": 10,
+    "2026-11-04": 0
+   },
+   "daily_cloud_pct": {
+    "2026-11-04": 91,
+    "2026-11-05": 56,
+    "2026-11-06": 75,
+    "2026-11-07": 79,
+    "2026-11-08": 69,
+    "2026-11-09": 85,
+    "2026-11-10": 97,
+    "2026-11-11": 98,
+    "2026-11-12": 100,
+    "2026-11-13": 82
+   },
+   "daily_terra_cloud_pct": {
+    "2026-11-04": 95,
+    "2026-11-05": 64,
+    "2026-11-06": 80,
+    "2026-11-07": 81,
+    "2026-11-08": 86,
+    "2026-11-09": 86,
+    "2026-11-10": 99,
+    "2026-11-11": 99,
+    "2026-11-12": 100,
+    "2026-11-13": 93
+   },
+   "daily_aqua_cloud_pct": {
+    "2026-11-04": 92,
+    "2026-11-05": 81,
+    "2026-11-06": 82,
+    "2026-11-07": 90,
+    "2026-11-08": 73,
+    "2026-11-09": 98,
+    "2026-11-10": 96,
+    "2026-11-11": 99,
+    "2026-11-12": 100,
+    "2026-11-13": 85
+   },
+   "daily_snow_pct_of_clear": {
+    "2026-11-04": 44,
+    "2026-11-05": 57,
+    "2026-11-06": 44,
+    "2026-11-07": 68,
+    "2026-11-08": 75,
+    "2026-11-09": 43,
+    "2026-11-13": 83
+   },
+   "clearest_day": "2026-11-05",
+   "clearest_day_cloud_pct": 56,
+   "snow_line_m": 1200,
+   "bands": [
+    {
+     "z0": 1000,
+     "z1": 1250,
+     "snow_pct": 48
+    },
+    {
+     "z0": 1250,
+     "z1": 1500,
+     "snow_pct": 56
+    },
+    {
+     "z0": 1500,
+     "z1": 1750,
+     "snow_pct": 61
+    },
+    {
+     "z0": 1750,
+     "z1": 2000,
+     "snow_pct": 68
+    },
+    {
+     "z0": 2000,
+     "z1": 2250,
+     "snow_pct": 79
+    },
+    {
+     "z0": 2250,
+     "z1": 2500,
+     "snow_pct": 88
+    },
+    {
+     "z0": 2500,
+     "z1": 2750,
+     "snow_pct": 95
+    },
+    {
+     "z0": 2750,
+     "z1": 3000,
+     "snow_pct": 99
+    },
+    {
+     "z0": 3000,
+     "z1": 3250,
+     "snow_pct": 100
+    },
+    {
+     "z0": 3250,
+     "z1": 3500,
+     "snow_pct": 100
+    },
+    {
+     "z0": 3500,
+     "z1": 3750,
+     "snow_pct": 100
+    },
+    {
+     "z0": 3750,
+     "z1": 4000,
+     "snow_pct": 100
+    }
+   ],
+   "sub": {},
+   "model": {
+    "day": "2026-11-13",
+    "model_day_kind": "partial_forecast",
+    "compared_km2": 21609,
+    "modis_snow_km2": 17945,
+    "model_snow_km2": 13784,
+    "agree_pct": 70.3,
+    "modis_snow_model_bare_pct": 24.5,
+    "model_snow_modis_bare_pct": 5.2
+   },
+   "stations": {
+    "stations": 555,
+    "by_network": {
+     "slf_imis": 130,
+     "geosphere": 197,
+     "euregio": 219,
+     "mf_nivo": 9
+    },
+    "readings": 5270,
+    "matched": {
+     "n": 992,
+     "agree_pct": 69.5,
+     "modis_snow_station_bare": 195,
+     "modis_bare_station_snow": 108,
+     "both_snow": 289,
+     "both_bare": 400
+    },
+    "bands_500": {
+     "500": {
+      "n": 325,
+      "agree_pct": 72,
+      "modis_snow_station_bare": 87,
+      "modis_bare_station_snow": 3,
+      "station_snow_pct": 2,
+      "modis_snow_pct": 28
+     },
+     "1000": {
+      "n": 177,
+      "agree_pct": 63,
+      "modis_snow_station_bare": 61,
+      "modis_bare_station_snow": 4,
+      "station_snow_pct": 4,
+      "modis_snow_pct": 36
+     },
+     "1500": {
+      "n": 178,
+      "agree_pct": 57,
+      "modis_snow_station_bare": 34,
+      "modis_bare_station_snow": 42,
+      "station_snow_pct": 53,
+      "modis_snow_pct": 49
+     },
+     "2000": {
+      "n": 228,
+      "agree_pct": 71,
+      "modis_snow_station_bare": 12,
+      "modis_bare_station_snow": 53,
+      "station_snow_pct": 89,
+      "modis_snow_pct": 71
+     },
+     "2500": {
+      "n": 78,
+      "agree_pct": 91,
+      "modis_snow_station_bare": 1,
+      "modis_bare_station_snow": 6,
+      "station_snow_pct": 99,
+      "modis_snow_pct": 92
+     },
+     "3000": {
+      "n": 6,
+      "agree_pct": 100,
+      "modis_snow_station_bare": 0,
+      "modis_bare_station_snow": 0,
+      "station_snow_pct": 100,
+      "modis_snow_pct": 100
+     }
+    },
+    "on_12nov": {
+     "500_1000": [
+      3,
+      110
+     ],
+     "1000_1500": [
+      5,
+      82
+     ],
+     "1500_1750": [
+      15,
+      40
+     ],
+     "1750_2000": [
+      24,
+      51
+     ],
+     "2000_2250": [
+      60,
+      96
+     ],
+     "2250_2500": [
+      61,
+      66
+     ],
+     "2500_4000": [
+      61,
+      62
+     ]
+    },
+    "on_9nov": {
+     "500_1000": [
+      4,
+      118
+     ],
+     "1000_1500": [
+      5,
+      83
+     ],
+     "1500_1750": [
+      18,
+      41
+     ],
+     "1750_2000": [
+      36,
+      56
+     ],
+     "2000_2250": [
+      91,
+      99
+     ],
+     "2250_2500": [
+      65,
+      66
+     ],
+     "2500_4000": [
+      60,
+      62
+     ]
+    },
+    "below_750_snow_9_12nov": [
+     [
+      0,
+      61
+     ],
+     [
+      0,
+      60
+     ]
+    ],
+    "low_station_limit_m": 750
+   },
+   "modis_high": {
+    "above_1500": {
+     "ground_km2": 67675,
+     "snow_km2": 41400,
+     "free_km2": 12240,
+     "snow_pct_of_clear": 77,
+     "never_clear_pct": 21
+    },
+    "above_2000": {
+     "ground_km2": 35476,
+     "snow_km2": 25514,
+     "free_km2": 3382,
+     "snow_pct_of_clear": 88,
+     "never_clear_pct": 19
+    }
+   }
+  }
+ },
+ "ref_numbers": [
+  {
+   "n": [
+    6.1,
+    1.6,
+    0.1,
+    0.0
+   ],
+   "ref": 0,
+   "claim": "Collection 6.1; band 6 at 1.6 µm; NDSI < 0.1 reversed to not snow (low NDSI screen)"
+  },
+  {
+   "n": [
+    70,
+    85
+   ],
+   "ref": 0,
+   "claim": "low illumination at solar zenith > 70°, night at >= 85°"
+  },
+  {
+   "n": [
+    75
+   ],
+   "ref": 0,
+   "claim": "about 75 % of Aqua band 6 detectors non-functional"
+  },
+  {
+   "n": [
+    1300
+   ],
+   "ref": 0,
+   "claim": "surface temperature/height screen at 1300 m"
+  },
+  {
+   "n": [
+    2019
+   ],
+   "ref": 0,
+   "claim": "user guide date"
+  },
+  {
+   "n": [
+    2002
+   ],
+   "ref": 1,
+   "claim": "Hall et al. 2002"
+  },
+  {
+   "n": [
+    2011
+   ],
+   "ref": 2,
+   "claim": "Hall and Riggs 2011"
+  },
+  {
+   "n": [
+    2000
+   ],
+   "ref": 10,
+   "claim": "watson: Nullgradgrenze im Bereich von 2000 Metern (MeteoSchweiz)"
+  },
+  {
+   "n": [
+    20,
+    2000,
+    1000
+   ],
+   "ref": 11,
+   "claim": "Il Dolomiti: ~20 cm fresh snow around 2000 m, flakes locally to ~1000 m"
+  },
+  {
+   "n": [
+    800
+   ],
+   "ref": 12,
+   "claim": "RaiNews: first flakes down to 800 m (Piedmont)"
+  },
+  {
+   "n": [
+    1000,
+    30
+   ],
+   "ref": 13,
+   "claim": "TT: snow line below 1000 m on Friday, up to 30 cm new snow higher up"
+  },
+  {
+   "n": [
+    1200,
+    800,
+    2,
+    8,
+    1500
+   ],
+   "ref": 14,
+   "claim": "20 Minuten: snow line 1200-800 m in the night to Friday; 2-8 cm above ~1500 m"
+  }
+ ],
+ "media": [
+  {
+   "id": "alps_map",
+   "kind": "chart_img",
+   "file": "blog/media/2026/11/alps-snow-cover-satellite-modis-13-november-2026/alps_map.webp",
+   "thumb": "blog/media/2026/11/alps-snow-cover-satellite-modis-13-november-2026/alps_map_t.webp",
+   "w": 1200,
+   "h": 630,
+   "after": -1
+  },
+  {
+   "id": "alps_days",
+   "kind": "chart_img",
+   "file": "blog/media/2026/11/alps-snow-cover-satellite-modis-13-november-2026/alps_days.webp",
+   "thumb": "blog/media/2026/11/alps-snow-cover-satellite-modis-13-november-2026/alps_days_t.webp",
+   "w": 1200,
+   "h": 630,
+   "after": 0
+  },
+  {
+   "id": "alps_vs_stations",
+   "kind": "chart_img",
+   "file": "blog/media/2026/11/alps-snow-cover-satellite-modis-13-november-2026/alps_vs_stations.webp",
+   "thumb": "blog/media/2026/11/alps-snow-cover-satellite-modis-13-november-2026/alps_vs_stations_t.webp",
+   "w": 1200,
+   "h": 630,
+   "after": 2
+  },
+  {
+   "id": "alps_ndsi",
+   "kind": "chart_img",
+   "file": "blog/media/2026/11/alps-snow-cover-satellite-modis-13-november-2026/alps_ndsi.webp",
+   "thumb": "blog/media/2026/11/alps-snow-cover-satellite-modis-13-november-2026/alps_ndsi_t.webp",
+   "w": 1200,
+   "h": 630,
+   "after": 4
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Alps snow cover from satellite, checked against 555 snow stations: white from about 2,000 m (13 November 2026)",
+   "description": "Alps snow cover by satellite, 4 to 13 November 2026, checked on the ground. NASA MODIS mapped snow down to about 1,200 m, but 555 snow stations show the ground mostly white only from about 1,750 to 2,000 m. Above 1,500 m MODIS saw 41,400 km² of snow. How the NDSI works and where it went wrong this week.",
+   "lede": "How much of the Alps is white? We decoded NASA's daily MODIS snow maps pixel by pixel for the whole Alpine arc, then did what a satellite map rarely gets: a check against the ground. 555 automatic and manual snow stations in Switzerland, Austria, South Tyrol, Trentino and France measured snow depth on the same days. The result is useful and humbling. High up, satellite and stations agree well. Below about 1,500 m, MODIS saw snow far more often than the stations did, so its first answer, white from about 1,200 m, was too low. The stations put the snow line at about 1,750 to 2,000 m before the cold front of 13 November.",
+   "sections": [
+    {
+     "h": "A week the satellite mostly saw cloud",
+     "p": [
+      "MODIS flies on two NASA satellites, Terra in the morning and Aqua in the early afternoon, with pixels of about 500 m. Between 4 and 13 November the clouds won almost every time. With both passes combined, cloud covered 91 % of the mountain ground on 4 November, 56 % on 5 November (the clearest day of the ten), 97 % on 10 November, 98 % on 11 November and 100 % on 12 November. On 13 November it was 82 %.",
+      "So we built a composite: for every pixel, the most recent day on which Terra or Aqua saw the ground clearly. Any clear pixel within 3 pixels (about 1.5 km) of a cloud on that pass counts as cloud, because cloud edges are where false snow most often appears. The result mixes dates: 18 % of the mountain ground was last seen on 13 November, 21 % on 8 November and 10 % on 5 November. In 21 % of it the satellites never saw the ground once in the 10 days; those pixels are pink on the map."
+     ]
+    },
+    {
+     "h": "What MODIS saw",
+     "p": [
+      "Above 1,000 m, the latest clear looks show snow on 62,721 km² and snow-free ground on 32,568 km², which is 66 % of the ground MODIS could see. By height, 48 % of the clear ground between 1,000 and 1,250 m looked white, 79 % between 2,000 and 2,250 m and 95 % between 2,500 and 2,750 m. Read literally, that puts the snow line at about 1,200 m.",
+      "Above 1,500 m the satellite saw 41,400 km² of snow, 77 % of the clear ground. Above 2,000 m it was 25,514 km², 88 % of the clear ground. As the next section shows, the higher figures are the more trustworthy ones."
+     ]
+    },
+    {
+     "h": "Checked against 555 snow stations",
+     "p": [
+      "We took every snow-depth reading from 4 to 13 November at 555 stations in our box: 130 of the Swiss SLF network, 197 of GeoSphere Austria, 219 of the Euregio avalanche services of Tyrol, South Tyrol and Trentino and 9 of Météo-France. Whenever MODIS had a clear view of a station's pixel on the day of a reading, we compared the two: 992 matches. They agree 69.5 % of the time.",
+      "The errors are not random. Between 500 and 1,000 m, MODIS saw snow in 28 % of the matches but the stations had snow in only 2 %. Between 1,000 and 1,500 m it was 36 % against 4 %. Between 1,500 and 2,000 m the two are close, 49 % against 53 %. Higher up, MODIS missed snow: 71 % against 89 % between 2,000 and 2,500 m. None of the 61 stations below 750 m had snow on 9 November, nor any of the 60 on 12 November. The 'snow' that the satellite showed on low ground north of the Alps was not there, so the map now leaves out ground below 1,000 m.",
+      "On the stations alone, the snow line is clear. On 12 November, 15 of 40 stations between 1,500 and 1,750 m had snow, 24 of 51 between 1,750 and 2,000 m, 60 of 96 between 2,000 and 2,250 m and 61 of 62 above 2,500 m. On 9 November it was 36 of 56 between 1,750 and 2,000 m. We cannot say for sure why MODIS overcounted low down: thin or broken cloud that the cloud mask lets through, valley fog and mixed pixels are all possible, and the product guide lists cloud and snow confusion as its main known weakness."
+     ]
+    },
+    {
+     "h": "What weather services and local news said",
+     "p": [
+      "The reports from the ground tell the same story of a mild start with snow only high up. On 6 November watson.ch wrote that the freezing level would stay around 2,000 m and that only parts of Valais had about half a metre of snow, still below average. In Piedmont, meteorologist Andrea Vuolo reported in Il Dolomiti on 4 November about 20 cm of fresh snow around 2,000 m, with flakes reaching about 1,000 m locally in the heaviest showers, and RaiNews showed the first flakes down to 800 m in Piedmont on 7 November.",
+      "The change came at the very end of our window. The Tiroler Tageszeitung wrote on 12 November that, after unusually mild November days, the snow line would drop below 1,000 m on Friday 13 November, with up to 30 cm higher up. 20 Minuten expected the snow line to fall to between 1,200 and 800 m in the night to Friday, with 2 to 8 cm of new snow above about 1,500 m. Only 18 % of our composite comes from 13 November, so most of the map shows the Alps before that front."
+     ]
+    },
+    {
+     "h": "How a satellite tells snow from cloud: the NDSI",
+     "p": [
+      "Fresh snow is one of the brightest natural surfaces in green light. In short-wave infrared, around 1.6 µm, it turns dark, because ice absorbs strongly at that wavelength. Most clouds made of water droplets stay bright in both. The Normalized Difference Snow Index uses this contrast: NDSI = (green − SWIR) / (green + SWIR), with MODIS band 4 for green and band 6 for the infrared.",
+      "NASA's Collection 6.1 algorithm first looks for snow wherever the NDSI is above zero, then removes doubtful cases with a series of screens; one rejects any NDSI below 0.1. Clouds come from a separate MODIS cloud mask, and only its 'confident cloudy' class is treated as cloud, so thin or broken cloud can pass as clear. On Aqua, about 75 % of the band 6 detectors do not work; older versions used band 7 instead, but since Collection 6 NASA rebuilds band 6 so both satellites run the same algorithm.",
+      "Each pixel carries an 'NDSI snow cover' value from 0 to 100. It is not the share of the pixel covered by snow: the user guide states that fractional snow cover is not calculated in Collection 6.1. Here any value from 1 to 100 counts as snow. Thin icy cirrus can look like snow, dense forest hides snow, and the low November sun and steep shadows weaken the signal."
+     ]
+    },
+    {
+     "h": "Satellite and SnowScope map side by side",
+     "p": [
+      "We also compared MODIS with the SnowScope snow map for 13 November, which still contains part forecast for that day. On the 21,609 km² of mountain ground that MODIS saw clearly on 13 November, the two agree on 70.3 % of the area. Where they disagree, it is mostly MODIS saying snow and our map saying bare: 24.5 % of the area, against 5.2 % the other way round.",
+      "The two are not independent, since our map already removes snow where a recent clear MODIS look shows bare ground. But the station check suggests that at middle heights our map's 'bare' was more often right than the satellite's 'snow'."
+     ]
+    }
+   ],
+   "advice": [
+    "Below about 1,500 m, do not trust a single satellite snow map this autumn: check a webcam or a station.",
+    "Pink areas on the map were under cloud every day: use the avalanche bulletin and local webcams there.",
+    "After the 13 November front, expect a thin new cover lower down than the map shows; it may not last."
+   ],
+   "captions": {
+    "alps_map": "Snow cover in the Alps from NASA MODIS (Terra and Aqua), latest clear look per 500 m pixel between 4 and 13 November 2026, ground at 1,000 m or higher. Blue = snow, light ground = snow-free land, pink = cloud on every pass of the 10 days; ground below 1,000 m is not analysed. Imagery: NASA EOSDIS GIBS / MODIS.",
+    "alps_days": "Day by day, 4 to 13 November 2026: share of mountain ground above 1,000 m under cloud (bars) and share of the clear ground with snow (line; left out on days with almost no clear ground). Terra and Aqua combined. Imagery: NASA EOSDIS GIBS / MODIS.",
+    "alps_vs_stations": "Same day, same place: share of snow-depth readings with snow at the stations (dark) and share of the matching MODIS pixels classed as snow (blue), by station height, 4 to 13 November 2026, 992 matches at clear-sky pixels. Stations: SLF, GeoSphere Austria, Euregio avalanche services, Météo-France. Imagery: NASA EOSDIS GIBS / MODIS.",
+    "alps_ndsi": "Schematic of the NDSI idea: how bright fresh snow, a water cloud, an ice cloud and grass or soil look in green light and in short-wave infrared (a drawing of the principle, not measured values)."
+   },
+   "method": "Data: NASA GIBS daily layers MODIS_Terra_NDSI_Snow_Cover and MODIS_Aqua_NDSI_Snow_Cover (built from MOD10_L2 / MYD10_L2, Collection 6.1, near-real-time), 500 m tile set, decoded with the layer's published colour map back to the product values. Snow = 1 to 100, snow-free = 0. Daily: Terra where clear, else Aqua; clear pixels within 3 pixels of cloud on the same pass counted as cloud. Composite: latest clear look per pixel, 4 to 13 November 2026. Areas use the true pixel size at each latitude. Box 43.6 to 48.4° N, 4.8 to 16.6° E, ground at or above 1,000 m (Copernicus GLO-90). Stations: daily snow depth from the SLF IMIS network, GeoSphere Austria, the Euregio avalanche services (avalanche.report) and Météo-France nivo stations; a station counts as snow-covered at 1 cm or more and as bare at 0 cm; it is compared with the MODIS pixel that contains it, on the same day, only when that pixel was clear. SnowScope comparison: the 500 m SnowScope map of 13 November, depth of 1 cm or more = snow.",
+   "references": [
+    {
+     "text": "Riggs, G.A., Hall, D.K. and Román, M.O. (2019). MODIS Snow Products Collection 6.1 User Guide, version 1.0. NASA / NSIDC",
+     "url": "https://nsidc.org/sites/default/files/c61_modis_snow_user_guide.pdf"
+    },
+    {
+     "text": "Hall, D.K., Riggs, G.A., Salomonson, V.V., DiGirolamo, N.E. and Bayr, K.J. (2002). MODIS snow-cover products. Remote Sensing of Environment 83, 181-194",
+     "url": "https://doi.org/10.1016/S0034-4257(02)00095-0"
+    },
+    {
+     "text": "Hall, D.K. and Riggs, G.A. (2011). Normalized-Difference Snow Index (NDSI). Encyclopedia of Snow, Ice and Glaciers, Springer",
+     "url": "https://doi.org/10.1007/978-90-481-2642-2_376"
+    },
+    {
+     "text": "NSIDC: MODIS/Terra Snow Cover Daily L3 Global 500m Grid, Version 61 (MOD10A1)",
+     "url": "https://nsidc.org/data/mod10a1/versions/61"
+    },
+    {
+     "text": "NASA EOSDIS Global Imagery Browse Services (GIBS): layers MODIS_Terra_NDSI_Snow_Cover and MODIS_Aqua_NDSI_Snow_Cover (from MOD10_L2 / MYD10_L2, Collection 6.1) and their colour map",
+     "url": "https://www.earthdata.nasa.gov/engage/open-data-services-software/earthdata-developer-portal/gibs-api"
+    },
+    {
+     "text": "Copernicus DEM GLO-90 (European Space Agency, Copernicus programme)",
+     "url": "https://doi.org/10.5270/ESA-c5d3d65"
+    },
+    {
+     "text": "WSL Institute for Snow and Avalanche Research SLF: IMIS station measurements (open data API)",
+     "url": "https://measurement-api.slf.ch/"
+    },
+    {
+     "text": "GeoSphere Austria Data Hub: station snow depth",
+     "url": "https://data.hub.geosphere.at/"
+    },
+    {
+     "text": "Avalanche warning services Tyrol, South Tyrol and Trentino (avalanche.report): station data",
+     "url": "https://avalanche.report/"
+    },
+    {
+     "text": "Météo-France: nivo-meteorological station data (Licence Ouverte)",
+     "url": "https://donneespubliques.meteofrance.fr/"
+    },
+    {
+     "text": "watson.ch (6 November 2026): Das Wetter in der Schweiz bleibt grau, doch an einem Tag winkt die Sonne",
+     "url": "https://www.watson.ch/schweiz/wetter/712908864-das-wetter-in-der-schweiz-bleibt-grau-doch-an-einem-tag-winkt-die-sonne"
+    },
+    {
+     "text": "Il Dolomiti (4 November 2026): 'Registriamo già 20 centimetri di neve fresca', i fiocchi tornano sulle Alpi Occidentali",
+     "url": "https://www.ildolomiti.it/montagna/2026/il-video-registriamo-gia-20-centimetri-di-neve-fresca-i-fiocchi-tornano-sulle-alpi-occidentali-e-scendono-fino-a-quota-1000-metri"
+    },
+    {
+     "text": "RaiNews (7 November 2026): La prima neve d'autunno imbianca Alpi ed Appennini",
+     "url": "https://www.rainews.it/photogallery/2026/11/la-prima-neve-dautunno-imbianca-alpi-ed-appennini-fc17e63a-4943-424a-ac6a-e0ac1c060334.html"
+    },
+    {
+     "text": "Tiroler Tageszeitung (12 November 2026): Jetzt wird es weiß: Kurzer Wintereinbruch bringt bis zu 30 Zentimeter Neuschnee nach Tirol",
+     "url": "https://www.tt.com/artikel/30946780/jetzt-wird-es-weiss-kurzer-wintereinbruch-bringt-bis-zu-30-zentimeter-neuschnee-nach-tirol"
+    },
+    {
+     "text": "20 Minuten (12 November 2026): Wetter-Wechsel in der Schweiz: Schneefallgrenze sinkt in der Nacht auf Freitag bis auf 800 Meter",
+     "url": "https://www.20min.ch/story/schweiz-wetter-achterbahn-von-schnee-bis-18-grad-ist-alles-dabei-103666002"
+    }
+   ],
+   "links": [
+    {
+     "text": "SnowScope live snow map of the Alps",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "hand (owner request: MODIS snow cover)"
+  }
+ },
+ "words_en": 1218,
+ "indexable": true,
+ "main": {
+  "slug": null,
+  "name": "Alps",
+  "lat": 46.3,
+  "lon": 10.0
+ },
+ "places": [
+  {
+   "name": "Alps",
+   "lat": 46.3,
+   "lon": 10.0
+  }
+ ],
+ "resort_links": [],
+ "table": null,
+ "bulletins": [],
+ "trip_day": "",
+ "map_link": "https://snowscope.app/",
+ "keyword": {
+  "family": "snow-cover-satellite",
+  "entity": "alps",
+  "region": "ALPS",
+  "date": "2026-11-13"
+ },
+ "query": "alps snow cover satellite",
+ "voice": "satellite snow scientist",
+ "overlap": {
+  "before": 5.6,
+  "after": 5.6,
+  "with": "himalaya-snow-cover-november-2026-modis-satellite",
+  "tries": 0
+ },
+ "publish_utc": "2026-11-13T20:13:00Z"
+}
