@@ -1,0 +1,806 @@
+{
+ "id": "2026-11-13-us_west-coming",
+ "slug": "us-west-bear-valley-snow-forecast-13-november-2026",
+ "date": "2026-11-13",
+ "published_utc": "2026-11-13T17:36:37Z",
+ "updated_utc": "2026-11-13T17:36:37Z",
+ "region": "US_WEST",
+ "angle": "coming",
+ "score": 47.0,
+ "signature": "bear_valley:30|dodge_ridge_ski_area:30|badger_pass_ski_area:30",
+ "keyword": {
+  "family": "snow-forecast",
+  "entity": "bear_valley",
+  "region": "US_WEST",
+  "date": "2026-11-13"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "snow_forecast",
+  "region": "US West",
+  "date": "2026-11-13",
+  "weekday": "Friday",
+  "model_run": "2026-11-13",
+  "forecast_days": [
+   "2026-11-14",
+   "2026-11-15",
+   "2026-11-16"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 127040,
+   "resorts_with_snow": 122,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-11",
+   "snow_covered_area_km2": 128120,
+   "resorts_with_snow": 124
+  },
+  "region_forecast": {
+   "date": "2026-11-16",
+   "snow_covered_area_km2": 166870,
+   "resorts_with_snow": 136
+  },
+  "question": "Where will new snow fall in the next days, and at which height?",
+  "resorts": [
+   {
+    "name": "Bear Valley",
+    "country": "United States",
+    "top_m": 2586,
+    "base_m": 2024,
+    "depth_cm_upper_slopes_today": 21,
+    "new_cm_last_24h": 13,
+    "new_cm_last_72h": 13,
+    "new_cm_forecast_next_days": 34,
+    "slug": "bear_valley",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 13,
+     "2026-11-14": 16,
+     "2026-11-15": 0,
+     "2026-11-16": 18
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2024,
+      "depth_cm_model": 3,
+      "new_cm_next_7_days": 35
+     },
+     "mid": {
+      "elev_m": 2305,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 54
+     },
+     "top": {
+      "elev_m": 2586,
+      "depth_cm_model": 22,
+      "new_cm_next_7_days": 57
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 1730,
+      "max": 2600
+     },
+     "2026-11-14": {
+      "min": 1060,
+      "max": 2400
+     },
+     "2026-11-15": {
+      "min": 1220,
+      "max": 3140
+     }
+    },
+    "past_winters": {
+     "height_m": 2305,
+     "snow_cm_at_this_height_today_model": 15,
+     "deeper_than_n_of_past_winters": 33,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 4
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-11"
+    },
+    "nearest_station": {
+     "station": "Blue Lakes",
+     "elev_m": 2457,
+     "depth_cm_measured": 5,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-12",
+     "km_away": 17.7
+    }
+   },
+   {
+    "name": "Dodge Ridge",
+    "country": "United States",
+    "top_m": 2482,
+    "base_m": 2002,
+    "depth_cm_upper_slopes_today": 14,
+    "new_cm_last_24h": 7,
+    "new_cm_last_72h": 7,
+    "new_cm_forecast_next_days": 34,
+    "slug": "dodge_ridge_ski_area",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 7,
+     "2026-11-14": 16,
+     "2026-11-15": 0,
+     "2026-11-16": 18
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2002,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 36
+     },
+     "mid": {
+      "elev_m": 2242,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 51
+     },
+     "top": {
+      "elev_m": 2482,
+      "depth_cm_model": 16,
+      "new_cm_next_7_days": 56
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 1740,
+      "max": 2740
+     },
+     "2026-11-14": {
+      "min": 1240,
+      "max": 2580
+     },
+     "2026-11-15": {
+      "min": 1500,
+      "max": 3220
+     }
+    },
+    "past_winters": {
+     "height_m": 2242,
+     "snow_cm_at_this_height_today_model": 7,
+     "deeper_than_n_of_past_winters": 27,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 4
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-11-11"
+    }
+   },
+   {
+    "name": "Badger Pass",
+    "country": "United States",
+    "top_m": 2376,
+    "base_m": 2203,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 2,
+    "new_cm_forecast_next_days": 33,
+    "slug": "badger_pass_ski_area",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 2,
+     "2026-11-14": 16,
+     "2026-11-15": 0,
+     "2026-11-16": 17
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2203,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 46
+     },
+     "mid": {
+      "elev_m": 2289,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 46
+     },
+     "top": {
+      "elev_m": 2376,
+      "depth_cm_model": 3,
+      "new_cm_next_7_days": 49
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 1780,
+      "max": 2780
+     },
+     "2026-11-14": {
+      "min": 1250,
+      "max": 3000
+     },
+     "2026-11-15": {
+      "min": 2090,
+      "max": 3420
+     }
+    },
+    "past_winters": {
+     "height_m": 2289,
+     "snow_cm_at_this_height_today_model": 4,
+     "deeper_than_n_of_past_winters": 20,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 6
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-11-11"
+    }
+   },
+   {
+    "name": "Kirkwood",
+    "country": "United States",
+    "top_m": 2884,
+    "base_m": 2382,
+    "depth_cm_upper_slopes_today": 24,
+    "new_cm_last_24h": 13,
+    "new_cm_last_72h": 13,
+    "new_cm_forecast_next_days": 32,
+    "slug": "kirkwood_mountain_resort",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 13,
+     "2026-11-14": 16,
+     "2026-11-15": 0,
+     "2026-11-16": 16
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2382,
+      "depth_cm_model": 16,
+      "new_cm_next_7_days": 49
+     },
+     "mid": {
+      "elev_m": 2633,
+      "depth_cm_model": 28,
+      "new_cm_next_7_days": 51
+     },
+     "top": {
+      "elev_m": 2884,
+      "depth_cm_model": 32,
+      "new_cm_next_7_days": 54
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 1710,
+      "max": 2620
+     },
+     "2026-11-14": {
+      "min": 1030,
+      "max": 2570
+     },
+     "2026-11-15": {
+      "min": 1410,
+      "max": 3250
+     }
+    },
+    "past_winters": {
+     "height_m": 2633,
+     "snow_cm_at_this_height_today_model": 19,
+     "deeper_than_n_of_past_winters": 32,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 6
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-11"
+    },
+    "nearest_station": {
+     "station": "Carson Pass",
+     "elev_m": 2548,
+     "depth_cm_measured": 13,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-12",
+     "km_away": 5.9
+    }
+   },
+   {
+    "name": "Mt. Shasta Ski Park",
+    "country": "United States",
+    "top_m": 2298,
+    "base_m": 1666,
+    "depth_cm_upper_slopes_today": 14,
+    "new_cm_last_24h": 16,
+    "new_cm_last_72h": 16,
+    "new_cm_forecast_next_days": 32,
+    "slug": "mt_shasta_ski_park",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 16,
+     "2026-11-14": 6,
+     "2026-11-15": 22,
+     "2026-11-16": 4
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Bear Valley</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"41\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"359\" y=\"49\" class=\"vl\">13</text><rect x=\"395\" y=\"36\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"49\" class=\"vl\">16</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"57\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"49\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Dodge Ridge</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"22\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"340\" y=\"83\" class=\"vl\">7</text><rect x=\"395\" y=\"70\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"83\" class=\"vl\">16</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"57\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"83\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Badger Pass</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"324\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"117\" class=\"vl\">16</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"612\" y=\"117\" class=\"vl\">17</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Kirkwood</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"41\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"359\" y=\"151\" class=\"vl\">13</text><rect x=\"395\" y=\"138\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"151\" class=\"vl\">16</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"151\" class=\"vl\">16</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Mt. Shasta Ski Park</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"51\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"369\" y=\"185\" class=\"vl\">16</text><rect x=\"395\" y=\"172\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"185\" class=\"vl\">6</text><rect x=\"475\" y=\"172\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"185\" text-anchor=\"end\" class=\"vl in\">22</text><rect x=\"555\" y=\"172\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"571\" y=\"185\" class=\"vl\">4</text></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Bear Valley</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"41\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"359\" y=\"49\" class=\"vl\">13</text><rect x=\"395\" y=\"36\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"49\" class=\"vl\">16</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"57\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"49\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Dodge Ridge</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"22\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"340\" y=\"83\" class=\"vl\">7</text><rect x=\"395\" y=\"70\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"83\" class=\"vl\">16</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"57\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"83\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Badger Pass</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"324\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"117\" class=\"vl\">16</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"612\" y=\"117\" class=\"vl\">17</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Kirkwood</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"41\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"359\" y=\"151\" class=\"vl\">13</text><rect x=\"395\" y=\"138\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"151\" class=\"vl\">16</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"151\" class=\"vl\">16</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Mt. Shasta Ski Park</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"51\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"369\" y=\"185\" class=\"vl\">16</text><rect x=\"395\" y=\"172\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"185\" class=\"vl\">6</text><rect x=\"475\" y=\"172\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"185\" text-anchor=\"end\" class=\"vl in\">22</text><rect x=\"555\" y=\"172\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"571\" y=\"185\" class=\"vl\">4</text></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Bear Valley</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"41\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"359\" y=\"49\" class=\"vl\">13</text><rect x=\"395\" y=\"36\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"49\" class=\"vl\">16</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"57\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"49\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Dodge Ridge</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"22\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"340\" y=\"83\" class=\"vl\">7</text><rect x=\"395\" y=\"70\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"83\" class=\"vl\">16</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"57\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"83\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Badger Pass</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"324\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"117\" class=\"vl\">16</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"612\" y=\"117\" class=\"vl\">17</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Kirkwood</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"41\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"359\" y=\"151\" class=\"vl\">13</text><rect x=\"395\" y=\"138\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"151\" class=\"vl\">16</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"151\" class=\"vl\">16</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Mt. Shasta Ski Park</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"51\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"369\" y=\"185\" class=\"vl\">16</text><rect x=\"395\" y=\"172\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"185\" class=\"vl\">6</text><rect x=\"475\" y=\"172\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"185\" text-anchor=\"end\" class=\"vl in\">22</text><rect x=\"555\" y=\"172\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"571\" y=\"185\" class=\"vl\">4</text></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Bear Valley</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"41\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"359\" y=\"49\" class=\"vl\">13</text><rect x=\"395\" y=\"36\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"49\" class=\"vl\">16</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"57\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"49\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Dodge Ridge</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"22\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"340\" y=\"83\" class=\"vl\">7</text><rect x=\"395\" y=\"70\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"83\" class=\"vl\">16</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"57\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"83\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Badger Pass</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"324\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"117\" class=\"vl\">16</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"612\" y=\"117\" class=\"vl\">17</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Kirkwood</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"41\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"359\" y=\"151\" class=\"vl\">13</text><rect x=\"395\" y=\"138\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"151\" class=\"vl\">16</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"151\" class=\"vl\">16</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Mt. Shasta Ski Park</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"51\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"369\" y=\"185\" class=\"vl\">16</text><rect x=\"395\" y=\"172\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"185\" class=\"vl\">6</text><rect x=\"475\" y=\"172\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"185\" text-anchor=\"end\" class=\"vl in\">22</text><rect x=\"555\" y=\"172\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"571\" y=\"185\" class=\"vl\">4</text></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Bear Valley</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"41\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"359\" y=\"49\" class=\"vl\">13</text><rect x=\"395\" y=\"36\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"49\" class=\"vl\">16</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"57\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"49\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Dodge Ridge</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"22\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"340\" y=\"83\" class=\"vl\">7</text><rect x=\"395\" y=\"70\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"83\" class=\"vl\">16</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"57\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"83\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Badger Pass</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"324\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"117\" class=\"vl\">16</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"612\" y=\"117\" class=\"vl\">17</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Kirkwood</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"41\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"359\" y=\"151\" class=\"vl\">13</text><rect x=\"395\" y=\"138\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"151\" class=\"vl\">16</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"151\" class=\"vl\">16</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Mt. Shasta Ski Park</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"51\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"369\" y=\"185\" class=\"vl\">16</text><rect x=\"395\" y=\"172\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"185\" class=\"vl\">6</text><rect x=\"475\" y=\"172\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"185\" text-anchor=\"end\" class=\"vl in\">22</text><rect x=\"555\" y=\"172\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"571\" y=\"185\" class=\"vl\">4</text></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Bear Valley</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"41\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"359\" y=\"49\" class=\"vl\">13</text><rect x=\"395\" y=\"36\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"49\" class=\"vl\">16</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"57\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"49\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Dodge Ridge</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"22\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"340\" y=\"83\" class=\"vl\">7</text><rect x=\"395\" y=\"70\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"83\" class=\"vl\">16</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"57\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"83\" text-anchor=\"end\" class=\"vl in\">18</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Badger Pass</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"324\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"117\" class=\"vl\">16</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"54\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"612\" y=\"117\" class=\"vl\">17</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Kirkwood</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"41\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"359\" y=\"151\" class=\"vl\">13</text><rect x=\"395\" y=\"138\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"449\" y=\"151\" class=\"vl\">16</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"51\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"609\" y=\"151\" class=\"vl\">16</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Mt. Shasta Ski Park</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"51\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"369\" y=\"185\" class=\"vl\">16</text><rect x=\"395\" y=\"172\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"185\" class=\"vl\">6</text><rect x=\"475\" y=\"172\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"185\" text-anchor=\"end\" class=\"vl in\">22</text><rect x=\"555\" y=\"172\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"571\" y=\"185\" class=\"vl\">4</text></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  },
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-bear-valley-snow-forecast-13-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-bear-valley-snow-forecast-13-november-2026/map_t.webp",
+   "bytes": 29234,
+   "snow_frac": 0.0461,
+   "weak": true
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Snow forecast in the US West: up to 13 in at Bear Valley by 16 November",
+   "description": "The snow is not done yet: we expect 13 in (34 cm) at Bear Valley, 13 in (34 cm) at Dodge Ridge and 13 in (33 cm) at Badger Pass by 16 November. A …",
+   "lede": "The snow is not done yet: we expect 13 in (34 cm) at Bear Valley, 13 in (34 cm) at Dodge Ridge and 13 in (33 cm) at Badger Pass by 16 November. A word on the numbers: resort values are our model's estimate for the upper slopes, while each station measures a single spot on the date given. Field work in dry mountains teaches one thing: the map is a start, the slope itself has the last word.",
+   "sections": [
+    {
+     "h": "Snow on the slopes today",
+     "p": [
+      "Of the places named here, Kirkwood leads with about 9 in (24 cm) on its upper slopes; Bear Valley 8 in (21 cm) and Dodge Ridge 6 in (14 cm) come next.",
+      "There is snow at 122 of 195 resorts in the US West today, over 49,050 sq mi (127,040 km²) of ground in total."
+     ]
+    },
+    {
+     "h": "Which height to ski today",
+     "p": [
+      "On 15 November the freezing level at Bear Valley climbs to 4,003 ft (1,220 m) to 10,302 ft (3,140 m), higher than the top of the lifts (8,484 ft / 2,586 m): expect rain or wet snow on every slope.",
+      "Warm air at Dodge Ridge on 15 November: the freezing level goes from 4,921 ft (1,500 m) to 10,564 ft (3,220 m), above the resort's top (8,143 ft / 2,482 m), so rain or wet snow can reach every slope.",
+      "On 15 November the freezing level at Badger Pass climbs to 6,857 ft (2,090 m) to 11,220 ft (3,420 m), higher than the top of the lifts (7,795 ft / 2,376 m): expect rain or wet snow on every slope.",
+      "From the base to the top of Bear Valley: 1 in (3 cm) at the base (6,640 ft / 2,024 m), 3 in (8 cm) at mid-mountain (7,562 ft / 2,305 m) and 9 in (22 cm) at the top (8,484 ft / 2,586 m)."
+     ]
+    },
+    {
+     "h": "The days ahead",
+     "p": [
+      "And more is coming: by 16 November, the forecast brings 13 in (32 cm) at Kirkwood and 13 in (32 cm) at Mt. Shasta Ski Park.",
+      "Less ground is white now: 49,467 sq mi (128,120 km²) on 11 November, only 49,050 sq mi (127,040 km²) today, and 64,429 sq mi (166,870 km²) expected on 16 November."
+     ]
+    },
+    {
+     "h": "Safety and avalanche level",
+     "p": [
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Forecasts a few days ahead can change: look at the map again the day before you travel.",
+    "Air above freezing over the slopes turns snow into slush and water. The highest lifts keep the driest snow.",
+    "New snow does not stay new for long. Start early, while it is still soft and untracked.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Bear Valley gets fresh snow."
+   ],
+   "captions": {
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast).",
+    "map": "Snow depth in the US West on 13 November 2026 (SnowScope snow model): Bear Valley, Dodge Ridge, Badger Pass, Kirkwood, Mt. Shasta Ski Park."
+   }
+  },
+  "fr": {
+   "title": "Prévisions neige dans l'Ouest américain : jusqu'à 13 in à Bear Valley d'ici le 16 novembre",
+   "description": "Entre aujourd'hui et le 16 novembre, nous attendons 13 in (34 cm) à Bear Valley, 13 in (34 cm) à Dodge Ridge et 13 in (33 cm) à Badger Pass. Un mot …",
+   "lede": "Entre aujourd'hui et le 16 novembre, nous attendons 13 in (34 cm) à Bear Valley, 13 in (34 cm) à Dodge Ridge et 13 in (33 cm) à Badger Pass. Un mot sur les chiffres : les valeurs des stations de ski sont une estimation de notre modèle pour le haut du domaine, alors que chaque station de mesure mesure un seul point à la date indiquée. Le terrain en montagne sèche apprend une chose : la carte est un début, la pente a le dernier mot.",
+   "sections": [
+    {
+     "h": "La neige sur les pentes aujourd'hui",
+     "p": [
+      "Des lieux cités ici, Kirkwood est en tête avec environ 9 in (24 cm) sur le haut du domaine ; Bear Valley 8 in (21 cm) et Dodge Ridge 6 in (14 cm) viennent ensuite.",
+      "Dans la région, 122 stations sur 195 dans l'Ouest américain ont de la neige en altitude aujourd'hui, et notre modèle trouve 49 050 sq mi (127 040 km²) de sol blanc."
+     ]
+    },
+    {
+     "h": "À quelle altitude skier aujourd'hui",
+     "p": [
+      "Le 15 novembre, l'isotherme 0 °C à Bear Valley grimpe entre 4 003 ft (1 220 m) et 10 302 ft (3 140 m), plus haut que le sommet des remontées (8 484 ft / 2 586 m) : attendez-vous à de la pluie ou de la neige mouillée sur toutes les pentes.",
+      "Air doux à Dodge Ridge le 15 novembre : l'isotherme 0 °C va de 4 921 ft (1 500 m) à 10 564 ft (3 220 m), au-dessus du sommet de la station (8 143 ft / 2 482 m), donc pluie ou neige mouillée possibles sur toutes les pentes.",
+      "Le 15 novembre, l'isotherme 0 °C à Badger Pass grimpe entre 6 857 ft (2 090 m) et 11 220 ft (3 420 m), plus haut que le sommet des remontées (7 795 ft / 2 376 m) : attendez-vous à de la pluie ou de la neige mouillée sur toutes les pentes.",
+      "Du bas au sommet de Bear Valley : 1 in (3 cm) en bas (6 640 ft / 2 024 m), 3 in (8 cm) à mi-pente (7 562 ft / 2 305 m) et 9 in (22 cm) au sommet (8 484 ft / 2 586 m)."
+     ]
+    },
+    {
+     "h": "Les jours à venir",
+     "p": [
+      "D'ici le 16 novembre, la prévision apporte 13 in (32 cm) à Kirkwood et 13 in (32 cm) à Mt. Shasta Ski Park.",
+      "La surface blanche a changé : 49 467 sq mi (128 120 km²) le 11 novembre, 49 050 sq mi (127 040 km²) aujourd'hui, et 64 429 sq mi (166 870 km²) attendus le 16 novembre."
+     ]
+    },
+    {
+     "h": "Sécurité et risque d'avalanche",
+     "p": [
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ.",
+    "Au-dessus de 0 °C, l'air transforme la neige en soupe et en eau. Les remontées les plus hautes gardent la neige la plus sèche.",
+    "La neige neuve ne reste pas neuve longtemps. Partez tôt, tant qu'elle est encore douce et sans traces.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Bear Valley reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "bars": "Neige fraîche par jour dans les stations en tête (jours passés : modèle ; barres claires : prévision).",
+    "map": "Hauteur de neige dans l'Ouest américain le 13 novembre 2026 (modèle de neige SnowScope) : Bear Valley, Dodge Ridge, Badger Pass, Kirkwood, Mt. Shasta Ski Park."
+   }
+  },
+  "de": {
+   "title": "Schneeprognose im US-Westen: bis zu 13 in in Bear Valley bis zum 16. November",
+   "description": "Von jetzt bis zum 16. November erwarten wir 13 in (34 cm) in Bear Valley, 13 in (34 cm) in Dodge Ridge und 13 in (33 cm) in Badger Pass. Ein Wort zu …",
+   "lede": "Von jetzt bis zum 16. November erwarten wir 13 in (34 cm) in Bear Valley, 13 in (34 cm) in Dodge Ridge und 13 in (33 cm) in Badger Pass. Ein Wort zu den Zahlen: Die Werte der Skigebiete schätzt unser Modell für die oberen Hänge, jede Messstation misst eine einzige Stelle am angegebenen Tag. Feldarbeit in trockenen Bergen lehrt eines: Die Karte ist ein Anfang, das letzte Wort hat der Hang selbst.",
+   "sections": [
+    {
+     "h": "Schnee auf den Pisten heute",
+     "p": [
+      "Von den hier genannten Orten liegt Kirkwood mit etwa 9 in (24 cm) in den oberen Hängen vorn; danach kommen Bear Valley 8 in (21 cm) und Dodge Ridge 6 in (14 cm).",
+      "In der ganzen Region haben heute 122 von 195 Skigebieten im US-Westen oben Schnee, und unser Modell findet 49.050 sq mi (127.040 km²) weißen Boden."
+     ]
+    },
+    {
+     "h": "Auf welcher Höhe du heute fährst",
+     "p": [
+      "Am 15. November steigt die Nullgradgrenze in Bear Valley auf 4.003 ft (1.220 m) bis 10.302 ft (3.140 m), höher als die oberste Liftstation (8.484 ft (2.586 m)): Rechne auf allen Hängen mit Regen oder nassem Schnee.",
+      "Warme Luft in Dodge Ridge am 15. November: Die Nullgradgrenze geht von 4.921 ft (1.500 m) bis 10.564 ft (3.220 m), über den höchsten Punkt (8.143 ft (2.482 m)), also kann Regen oder nasser Schnee jeden Hang erreichen.",
+      "Am 15. November steigt die Nullgradgrenze in Badger Pass auf 6.857 ft (2.090 m) bis 11.220 ft (3.420 m), höher als die oberste Liftstation (7.795 ft (2.376 m)): Rechne auf allen Hängen mit Regen oder nassem Schnee.",
+      "Vom Tal bis zum Gipfel in Bear Valley: 1 in (3 cm) im Tal (6.640 ft / 2.024 m), 3 in (8 cm) an der Mittelstation (7.562 ft / 2.305 m) und 9 in (22 cm) am Gipfel (8.484 ft / 2.586 m)."
+     ]
+    },
+    {
+     "h": "Die kommenden Tage",
+     "p": [
+      "Mit Blick auf den 16. November bringt die Prognose 13 in (32 cm) in Kirkwood und 13 in (32 cm) in Mt. Shasta Ski Park.",
+      "Jetzt ist weniger Boden weiß: 49.467 sq mi (128.120 km²) am 11. November, heute nur 49.050 sq mi (127.040 km²) und 64.429 sq mi (166.870 km²) erwartet am 16. November."
+     ]
+    },
+    {
+     "h": "Sicherheit und Lawinengefahr",
+     "p": [
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte.",
+    "Luft über null Grad macht aus Schnee Matsch und Wasser. Die höchsten Lifte haben den trockensten Schnee.",
+    "Neuschnee bleibt nicht lange neu. Starte früh, solange er noch weich und unverspurt ist.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Bear Valley Neuschnee bekommt."
+   ],
+   "captions": {
+    "bars": "Neuschnee pro Tag in den führenden Skigebieten (vergangene Tage: Modell; helle Balken: Prognose).",
+    "map": "Schneehöhe im US-Westen am 13. November 2026 (SnowScope-Schneemodell): Bear Valley, Dodge Ridge, Badger Pass, Kirkwood, Mt. Shasta Ski Park."
+   }
+  },
+  "it": {
+   "title": "Previsioni neve nell'Ovest degli USA: fino a 13 in a Bear Valley entro il 16 novembre",
+   "description": "Da oggi al 16 novembre ci aspettiamo 13 in (34 cm) a Bear Valley, 13 in (34 cm) a Dodge Ridge e 13 in (33 cm) a Badger Pass. Una parola sui numeri: i …",
+   "lede": "Da oggi al 16 novembre ci aspettiamo 13 in (34 cm) a Bear Valley, 13 in (34 cm) a Dodge Ridge e 13 in (33 cm) a Badger Pass. Una parola sui numeri: i valori delle località sono la stima del nostro modello per i pendii superiori, mentre ogni stazione misura un solo punto alla data indicata. Il lavoro sul campo in montagne secche insegna una cosa: la mappa è un inizio, l'ultima parola spetta al pendio.",
+   "sections": [
+    {
+     "h": "Neve sulle piste oggi",
+     "p": [
+      "Tra i posti citati qui, Kirkwood è in testa con circa 9 in (24 cm) sui pendii superiori; poi vengono Bear Valley 8 in (21 cm) e Dodge Ridge 6 in (14 cm).",
+      "In tutta la regione oggi 122 località su 195 nell'Ovest degli USA hanno neve in alto, e il nostro modello trova 49.050 sq mi (127.040 km²) di terreno bianco."
+     ]
+    },
+    {
+     "h": "A che quota sciare oggi",
+     "p": [
+      "Il 15 novembre lo zero termico a Bear Valley sale tra 4.003 ft (1.220 m) e 10.302 ft (3.140 m), più in alto della cima degli impianti (8.484 ft (2.586 m)): aspettati pioggia o neve bagnata su ogni pendio.",
+      "Aria mite a Dodge Ridge il 15 novembre: lo zero termico va da 4.921 ft (1.500 m) a 10.564 ft (3.220 m), sopra la quota massima (8.143 ft (2.482 m)), quindi pioggia o neve bagnata possono arrivare su ogni pendio.",
+      "Il 15 novembre lo zero termico a Badger Pass sale tra 6.857 ft (2.090 m) e 11.220 ft (3.420 m), più in alto della cima degli impianti (7.795 ft (2.376 m)): aspettati pioggia o neve bagnata su ogni pendio.",
+      "Dalla base alla vetta di Bear Valley: 1 in (3 cm) alla base (6.640 ft / 2.024 m), 3 in (8 cm) a metà montagna (7.562 ft / 2.305 m) e 9 in (22 cm) in vetta (8.484 ft / 2.586 m)."
+     ]
+    },
+    {
+     "h": "I giorni che vengono",
+     "p": [
+      "Guardando al 16 novembre, la previsione porta 13 in (32 cm) a Kirkwood e 13 in (32 cm) a Mt. Shasta Ski Park.",
+      "Il terreno bianco è cambiato: 49.467 sq mi (128.120 km²) il 11 novembre, 49.050 sq mi (127.040 km²) oggi e 64.429 sq mi (166.870 km²) attesi il 16 novembre."
+     ]
+    },
+    {
+     "h": "Sicurezza e pericolo valanghe",
+     "p": [
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire.",
+    "Aria sopra lo zero sui pendii trasforma la neve in pappa e acqua. Gli impianti più alti tengono la neve più asciutta.",
+    "La neve nuova non resta nuova a lungo. Parti presto, finché è ancora morbida e senza tracce.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Bear Valley riceve neve fresca."
+   ],
+   "captions": {
+    "bars": "Neve fresca al giorno nelle località in testa (giorni passati: modello; barre chiare: previsione).",
+    "map": "Altezza neve nell'Ovest degli USA il 13 novembre 2026 (modello neve SnowScope): Bear Valley, Dodge Ridge, Badger Pass, Kirkwood, Mt. Shasta Ski Park."
+   }
+  },
+  "es": {
+   "title": "Previsión de nieve en el oeste de EE. UU.: hasta 13 in en Bear Valley hasta el 16 de noviembre",
+   "description": "Entre hoy y el 16 de noviembre esperamos 13 in (34 cm) en Bear Valley, 13 in (34 cm) en Dodge Ridge y 13 in (33 cm) en Badger Pass. Una palabra sobre …",
+   "lede": "Entre hoy y el 16 de noviembre esperamos 13 in (34 cm) en Bear Valley, 13 in (34 cm) en Dodge Ridge y 13 in (33 cm) en Badger Pass. Una palabra sobre las cifras: los valores de las estaciones de esquí son una estimación de nuestro modelo para las pistas altas, mientras que cada estación de medida mide un solo punto en la fecha indicada. El trabajo de campo en montañas secas enseña una cosa: el mapa es un comienzo, la ladera tiene la última palabra.",
+   "sections": [
+    {
+     "h": "La nieve en las pistas hoy",
+     "p": [
+      "De los lugares citados aquí, Kirkwood va en cabeza con unos 9 in (24 cm) en las pistas altas; Bear Valley 8 in (21 cm) y Dodge Ridge 6 in (14 cm) vienen después.",
+      "En la región, 122 de 195 estaciones en el oeste de EE. UU. tienen nieve arriba hoy, y nuestro modelo encuentra 49.050 sq mi (127.040 km²) de suelo blanco."
+     ]
+    },
+    {
+     "h": "A qué altura esquiar hoy",
+     "p": [
+      "El 15 de noviembre la cota de congelación en Bear Valley sube a 4003 ft (1220 m)-10.302 ft (3140 m), más alta que la cima de los remontes (8484 ft (2586 m)): cuenta con lluvia o nieve húmeda en todas las pistas.",
+      "Aire templado en Dodge Ridge el 15 de noviembre: la cota de congelación va de 4921 ft (1500 m)-10.564 ft (3220 m), por encima de la cota alta (8143 ft (2482 m)), así que la lluvia o la nieve húmeda pueden llegar a todas las pistas.",
+      "El 15 de noviembre la cota de congelación en Badger Pass sube a 6857 ft (2090 m)-11.220 ft (3420 m), más alta que la cima de los remontes (7795 ft (2376 m)): cuenta con lluvia o nieve húmeda en todas las pistas.",
+      "De la base a la cima de Bear Valley: 1 in (3 cm) en la base (6640 ft / 2024 m), 3 in (8 cm) a media montaña (7562 ft / 2305 m) y 9 in (22 cm) en la cota alta (8484 ft / 2586 m)."
+     ]
+    },
+    {
+     "h": "Los días que vienen",
+     "p": [
+      "De aquí al 16 de noviembre, la previsión trae 13 in (32 cm) en Kirkwood y 13 in (32 cm) en Mt. Shasta Ski Park.",
+      "La superficie blanca ha cambiado: 49.467 sq mi (128.120 km²) el 11 de noviembre, 49.050 sq mi (127.040 km²) hoy y 64.429 sq mi (166.870 km²) esperados el 16 de noviembre."
+     ]
+    },
+    {
+     "h": "Seguridad y peligro de aludes",
+     "p": [
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar.",
+    "El aire por encima de cero sobre las pistas convierte la nieve en papa y en agua. Los remontes más altos guardan la nieve más seca.",
+    "La nieve nueva no dura nueva mucho tiempo. Sal temprano, mientras sigue blanda y sin huellas.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Bear Valley recibe nieve nueva."
+   ],
+   "captions": {
+    "bars": "Nieve nueva por día en las estaciones líderes (días pasados: modelo; barras claras: previsión).",
+    "map": "Espesor de nieve en el oeste de EE. UU. el 13 de noviembre 2026 (modelo de nieve de SnowScope): Bear Valley, Dodge Ridge, Badger Pass, Kirkwood, Mt. Shasta Ski Park."
+   }
+  },
+  "ar": {
+   "title": "توقعات التلج فغرب ميريكان: حتى ل 13 إنش ف Bear Valley حتى ل 16 نونبر",
+   "description": "من دابا حتى ل 16 نونبر كنتسناو 13 إنش (34 سم) ف Bear Valley، 13 إنش (34 سم) ف Dodge Ridge و 13 إنش (33 سم) ف Badger Pass. كلمة على الأرقام: القيم …",
+   "lede": "من دابا حتى ل 16 نونبر كنتسناو 13 إنش (34 سم) ف Bear Valley، 13 إنش (34 سم) ف Dodge Ridge و 13 إنش (33 سم) ف Badger Pass. كلمة على الأرقام: القيم ديال المحطات هي تقدير ديال الموديل ديالنا للجهة الفوقانية، وكل محطة ديال القياس كتقيس بلاصة وحدة فالتاريخ المكتوب. الخدمة فالجبال الناشفين كتعلمك حاجة وحدة: الخريطة غير بداية، والبيست هو اللي عندو الكلمة اللخرة.",
+   "sections": [
+    {
+     "h": "التلج فالبيستات اليوم",
+     "p": [
+      "من البلايص المذكورة هنا، Kirkwood فالمقدمة ب تقريبا 9 إنش (24 سم) فالجهة الفوقانية؛ ومن بعدها Bear Valley 8 إنش (21 سم) و Dodge Ridge 6 إنش (14 سم).",
+      "فالمنطقة كاملة، 122 محطة من 195 فغرب ميريكان فيهم التلج فالعلو اليوم، والموديل ديالنا كيلقى 49050 ميل² (127040 كم²) ديال الأرض البيضا."
+     ]
+    },
+    {
+     "h": "فشمن علو تتزلج اليوم",
+     "p": [
+      "نهار 15 نونبر علو الجليد ف Bear Valley طالع بين 4003 قدم (1220 م) و 10302 قدم (3140 م)، فوق آخر تيليسييج (8484 قدم (2586 م)): توقع الشتا ولا تلج مبلول فكاع البيستات.",
+      "هوا سخون ف Dodge Ridge نهار 15 نونبر: علو الجليد من 4921 قدم (1500 م) حتى ل 10564 قدم (3220 م)، فوق القمة ديال المحطة (8143 قدم (2482 م))، يعني الشتا ولا التلج المبلول يقدر يوصل لكاع البيستات.",
+      "نهار 15 نونبر علو الجليد ف Badger Pass طالع بين 6857 قدم (2090 م) و 11220 قدم (3420 م)، فوق آخر تيليسييج (7795 قدم (2376 م)): توقع الشتا ولا تلج مبلول فكاع البيستات.",
+      "من التحت حتى للفوق ف Bear Valley: 1 إنش (3 سم) فالتحت (6640 قدم / 2024 م)، 3 إنش (8 سم) فالوسط (7562 قدم / 2305 م) و 9 إنش (22 سم) فالفوق (8484 قدم / 2586 م)."
+     ]
+    },
+    {
+     "h": "الأيام اللي جايين",
+     "p": [
+      "إلا شفنا حتى ل 16 نونبر، التوقعات كتجيب 13 إنش (32 سم) ف Kirkwood و 13 إنش (32 سم) ف Mt. Shasta Ski Park.",
+      "الأرض البيضا تبدلت: 49467 ميل² (128120 كم²) نهار 11 نونبر، 49050 ميل² (127040 كم²) اليوم، و 64429 ميل² (166870 كم²) متوقعة نهار 16 نونبر."
+     ]
+    },
+    {
+     "h": "السلامة وخطر الانهيارات",
+     "p": [
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر.",
+    "الهوا اللي فوق الجليد فوق البيستات كيرد التلج ذايب وما. التيليسييجات اللي فالفوق فيهم أنشف تلج.",
+    "التلج الجديد مايبقاش جديد بزاف. بدا بكري، وهو مازال طري وحتى واحد ماداز عليه.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Bear Valley يجيها تلج جديد."
+   ],
+   "captions": {
+    "bars": "التلج الجديد فكل نهار فالمحطات اللولين (الأيام اللي فاتو من الموديل، والخطوط الفاتحة = التوقعات).",
+    "map": "العلو ديال التلج فغرب ميريكان نهار 13 نونبر 2026 (الموديل ديال SnowScope): Bear Valley, Dodge Ridge, Badger Pass, Kirkwood, Mt. Shasta Ski Park."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "de": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "it": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "es": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  }
+ },
+ "words_en": 372,
+ "indexable": true,
+ "main": {
+  "slug": "bear_valley",
+  "name": "Bear Valley",
+  "lat": 38.4826,
+  "lon": -120.0503
+ },
+ "places": [
+  {
+   "name": "Bear Valley",
+   "lat": 38.4826,
+   "lon": -120.0503
+  },
+  {
+   "name": "Dodge Ridge",
+   "lat": 38.1899,
+   "lon": -119.9393
+  },
+  {
+   "name": "Badger Pass",
+   "lat": 37.6592,
+   "lon": -119.6623
+  },
+  {
+   "name": "Kirkwood",
+   "lat": 38.679,
+   "lon": -120.0674
+  },
+  {
+   "name": "Mt. Shasta Ski Park",
+   "lat": 41.3273,
+   "lon": -122.2008
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "bear_valley",
+   "name": "Bear Valley"
+  },
+  {
+   "slug": "dodge_ridge_ski_area",
+   "name": "Dodge Ridge"
+  },
+  {
+   "slug": "badger_pass_ski_area",
+   "name": "Badger Pass"
+  },
+  {
+   "slug": "kirkwood_mountain_resort",
+   "name": "Kirkwood"
+  },
+  {
+   "slug": "mt_shasta_ski_park",
+   "name": "Mt. Shasta Ski Park"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "bear_valley",
+    "name": "Bear Valley",
+    "depth": 21,
+    "new72": 13,
+    "next": 34,
+    "top_m": 2586
+   },
+   {
+    "slug": "dodge_ridge_ski_area",
+    "name": "Dodge Ridge",
+    "depth": 14,
+    "new72": 7,
+    "next": 34,
+    "top_m": 2482
+   },
+   {
+    "slug": "badger_pass_ski_area",
+    "name": "Badger Pass",
+    "depth": 0,
+    "new72": 2,
+    "next": 33,
+    "top_m": 2376
+   },
+   {
+    "slug": "kirkwood_mountain_resort",
+    "name": "Kirkwood",
+    "depth": 24,
+    "new72": 13,
+    "next": 32,
+    "top_m": 2884
+   },
+   {
+    "slug": "mt_shasta_ski_park",
+    "name": "Mt. Shasta Ski Park",
+    "depth": 14,
+    "new72": 16,
+    "next": 32,
+    "top_m": 2298
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@38.483,-120.050,9.0",
+ "seconds": 0.0,
+ "facts_used": 40,
+ "voice": "field",
+ "media_ids": [
+  "bars",
+  "map"
+ ],
+ "overlap": {
+  "before": 32.9,
+  "after": 25.1,
+  "with": "us-west-kirkwood-snow-forecast-12-november-2026",
+  "tries": 1
+ },
+ "similarity": {
+  "max": 0.149,
+  "with": "western-canada-mount-cain-alpine-park-snow-forecast-12-november-2026"
+ },
+ "publish_utc": "2026-11-13T17:36:37Z"
+}
