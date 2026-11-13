@@ -1,0 +1,454 @@
+{
+ "id": "feature-umea-snow-depth-13-november-2026",
+ "slug": "umea-snow-depth-13-november-2026",
+ "date": "2026-11-13",
+ "published_utc": "2026-11-13T19:49:33Z",
+ "updated_utc": "2026-11-13T19:49:33Z",
+ "region": "SCANDES",
+ "angle": "guide_feature_climate",
+ "category": "guide",
+ "draft": false,
+ "kind": "climate",
+ "resort_class": "major",
+ "structure": "two-day-snowfall-then-thaw-risk",
+ "score": 90,
+ "tags": [
+  "snow-depth",
+  "forecast"
+ ],
+ "facts": {
+  "kind": "climate",
+  "date": "2026-11-13",
+  "extra": {
+   "umea": {
+    "city": {
+     "key": "umea",
+     "name": "Umeå",
+     "country": "SE",
+     "lat": 63.826,
+     "lon": 20.263
+    },
+    "date": "2026-11-13",
+    "measured": [
+     {
+      "id": "smhi:140490",
+      "name": "Umeå-Röbäcksdalen",
+      "country": "SE",
+      "lat": 63.8109,
+      "lon": 20.2407,
+      "elev_m": 10,
+      "km": 2,
+      "today_cm": 20.0,
+      "yesterday_cm": 5.0,
+      "four_days_ago_cm": 0.0
+     },
+     {
+      "id": "smhi:150020",
+      "name": "Tavelsjö",
+      "country": "SE",
+      "lat": 64.0392,
+      "lon": 20.072,
+      "elev_m": 116,
+      "km": 25,
+      "today_cm": 16.0,
+      "yesterday_cm": 2.0,
+      "four_days_ago_cm": 0.0
+     },
+     {
+      "id": "smhi:139540",
+      "name": "Vännäs",
+      "country": "SE",
+      "lat": 63.9216,
+      "lon": 19.8107,
+      "elev_m": 107,
+      "km": 25,
+      "today_cm": 18.0,
+      "yesterday_cm": 0.0,
+      "four_days_ago_cm": 0.0
+     },
+     {
+      "id": "smhi:150080",
+      "name": "Rickleå",
+      "country": "SE",
+      "lat": 64.1111,
+      "lon": 20.9095,
+      "elev_m": 12,
+      "km": 45,
+      "today_cm": 12.0,
+      "yesterday_cm": 0.0,
+      "four_days_ago_cm": 0.0
+     },
+     {
+      "id": "smhi:139440",
+      "name": "Nordanbäck",
+      "country": "SE",
+      "lat": 63.7413,
+      "lon": 19.291,
+      "elev_m": 185,
+      "km": 49,
+      "today_cm": 22.0,
+      "yesterday_cm": 8.0,
+      "four_days_ago_cm": 0.0
+     },
+     {
+      "id": "smhi:139570",
+      "name": "Balsjö",
+      "country": "SE",
+      "lat": 63.9191,
+      "lon": 19.0666,
+      "elev_m": 201,
+      "km": 59,
+      "today_cm": 8.0,
+      "yesterday_cm": 0.0,
+      "four_days_ago_cm": 0.0
+     }
+    ],
+    "normal_13_nov": {
+     "elev_m": 15,
+     "n_winters": 46,
+     "winters_with_snow_on_13_nov": 26,
+     "p25_cm": 0.0,
+     "p50_cm": 1.0,
+     "p75_cm": 5.0,
+     "max_cm": 34.0,
+     "last_winters_13_nov_cm": {
+      "2021-22": 1.0,
+      "2022-23": 0.0,
+      "2023-24": 7.0,
+      "2024-25": 0.0,
+      "2025-26": 0.0
+     },
+     "p50_cm_12-01": 6.0,
+     "p50_cm_12-15": 10.0,
+     "p50_cm_01-15": 25.0,
+     "usual_start_mmdd_half_of_winters": "11-07"
+    },
+    "forecast": {
+     "model_point_elev_m": 9.0,
+     "days": {
+      "2026-11-13": {
+       "snow_cm_lo": 1.3,
+       "snow_cm_hi": 4.1,
+       "precip_mm_lo": 2.0,
+       "precip_mm_hi": 5.9,
+       "tmin_lo": -3,
+       "tmin_hi": -1,
+       "tmax_lo": -2,
+       "tmax_hi": 1,
+       "hours": 8
+      },
+      "2026-11-14": {
+       "snow_cm_lo": 0.0,
+       "snow_cm_hi": 0.0,
+       "precip_mm_lo": 0.0,
+       "precip_mm_hi": 0.0,
+       "tmin_lo": -10,
+       "tmin_hi": -9,
+       "tmax_lo": -3,
+       "tmax_hi": -2,
+       "hours": 24
+      },
+      "2026-11-15": {
+       "snow_cm_lo": 0.0,
+       "snow_cm_hi": 0.0,
+       "precip_mm_lo": 0.0,
+       "precip_mm_hi": 0.0,
+       "tmin_lo": -2,
+       "tmin_hi": -2,
+       "tmax_lo": 3,
+       "tmax_hi": 4,
+       "hours": 24
+      },
+      "2026-11-16": {
+       "snow_cm_lo": 0.0,
+       "snow_cm_hi": 0.0,
+       "precip_mm_lo": 8.1,
+       "precip_mm_hi": 9.4,
+       "tmin_lo": 1,
+       "tmin_hi": 2,
+       "tmax_lo": 5,
+       "tmax_hi": 6,
+       "hours": 24
+      }
+     },
+     "weekend_snow_cm_lo": 0.0,
+     "weekend_snow_cm_hi": 0.0,
+     "weekend_tmin": -10,
+     "weekend_tmax": 4
+    }
+   },
+   "season_names": [
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+   ]
+  }
+ },
+ "ref_numbers": [],
+ "media": [
+  {
+   "id": "snow",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/umea-snow-depth-13-november-2026/snow.webp",
+   "thumb": "blog/media/2026/11/umea-snow-depth-13-november-2026/snow_t.webp",
+   "w": 1200,
+   "h": 630,
+   "after": 0
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Umeå snow depth: 20 cm in two days, far above normal (13 November 2026)",
+   "description": "Umeå measured 20 cm of snow on 13 November 2026, up from bare ground on Wednesday. How the stations around the city compare, why this is early, and whether it survives Monday's rain.",
+   "lede": "Umeå went from autumn to deep winter in two days. The station at Röbäcksdalen, on the western edge of the city, had bare ground on Wednesday, 5 cm on Thursday and 20 cm on Friday morning. Right now it is the snowiest of the big Nordic cities.",
+   "sections": [
+    {
+     "h": "Around the city",
+     "p": [
+      "The snow is everywhere, not just at one station. Vännäs, 25 km inland, measured 18 cm, up from nothing the day before. Tavelsjö has 16 cm, Nordanbäck 22 cm and Rickleå, down on the coast to the north, 12 cm.",
+      "That evenness is a sign of one solid snowfall across the whole area rather than a local shower."
+     ]
+    },
+    {
+     "h": "Early and deep for Umeå",
+     "p": [
+      "Our snow history for the city covers 46 past winters. On 13 November there was snow on the ground in 26 of them, but usually very little: the middle value is 1 cm and only one winter in four had 5 cm or more. Even the deepest year in our record stayed at 34 cm.",
+      "Today's 20 cm is what Umeå usually reaches only in the second half of December; by mid-January the normal is about 25 cm. In the last five winters, the most on this date was 7 cm, in 2023-24."
+     ]
+    },
+    {
+     "h": "Will it last?",
+     "p": [
+      "The weekend is in its favour: Saturday is dry and cold, down to about -10 °C at night, and Sunday stays dry with a few degrees above zero in the afternoon. The test comes on Monday, when both forecasts we read bring around 8 to 9 mm of rain and temperatures up to about 6 °C. A cover of 20 cm will shrink and turn heavy, but it should not disappear in one day."
+     ]
+    }
+   ],
+   "advice": [
+    "Saturday is the day for the first ski or sledding trip of the season: cold, dry and white.",
+    "Wet snow on Monday turns to ice on Tuesday morning: put the studded shoes or ice grips by the door.",
+    "If you are driving inland, the new snow sits on unfrozen ground: gravel roads can be soft under the white."
+   ],
+   "captions": {
+    "snow": "Snow depth measured at the weather stations on 13 November 2026: each dot is a station, coloured by its depth (light blue = a few cm, dark blue = deep); white dots with a grey ring = bare ground. Labels give the depth at the main stations. Measurements only, no model layer."
+   },
+   "method": "Snow depth today: measured at weather stations on the morning of 13 November 2026 (SMHI); a station reports the snow on its own small plot, so a few kilometres away and a hundred metres higher the ground can look different. Usual depth for the date: SnowScope snow history, 46 past winters (1980-81 to 2025-26), a model of the past at the city's height, not a station record. Weekend: two weather models (ECMWF IFS and DWD ICON, read through Open-Meteo), given as a range. Places and rules: the official pages listed below.",
+   "references": [
+    {
+     "text": "SMHI, open meteorological observations (snow depth, daily)",
+     "url": "https://www.smhi.se/data/meteorologi/ladda-ner-meteorologiska-observationer"
+    },
+    {
+     "text": "Open-Meteo, weather forecast data (ECMWF and ICON models)",
+     "url": "https://open-meteo.com/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Snow map on SnowScope",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  },
+  "sv": {
+   "title": "Snödjup i Umeå: 20 cm på två dagar, långt över det normala (13 november 2026)",
+   "description": "Umeå mätte 20 cm snö den 13 november 2026, från barmark i onsdags. Så ser det ut vid stationerna runt staden, varför det är tidigt och om snön klarar måndagens regn.",
+   "lede": "Umeå gick från höst till djup vinter på två dagar. Stationen i Röbäcksdalen, i stadens västra utkant, hade barmark i onsdags, 5 cm i torsdags och 20 cm på fredagsmorgonen. Just nu är den den snörikaste av de stora nordiska städerna.",
+   "sections": [
+    {
+     "h": "Runt staden",
+     "p": [
+      "Snön ligger överallt, inte bara vid en station. Vännäs, 25 km inåt land, mätte 18 cm, från ingenting dagen innan. Tavelsjö har 16 cm, Nordanbäck 22 cm och Rickleå, nere vid kusten norrut, 12 cm.",
+      "Den jämnheten tyder på ett ordentligt snöfall över hela området snarare än en lokal skur."
+     ]
+    },
+    {
+     "h": "Tidigt och djupt för Umeå",
+     "p": [
+      "Vår snöhistorik för staden omfattar 46 vintrar. Den 13 november låg det snö i 26 av dem, men oftast väldigt lite: mittvärdet är 1 cm och bara en vinter av fyra hade 5 cm eller mer. Även det djupaste året i vår historik stannade på 34 cm.",
+      "Dagens 20 cm är vad Umeå brukar nå först i andra halvan av december; i mitten av januari är det normala runt 25 cm. De senaste fem vintrarna var det mesta det här datumet 7 cm, 2023-24."
+     ]
+    },
+    {
+     "h": "Ligger den kvar?",
+     "p": [
+      "Helgen är på snöns sida: lördagen är torr och kall, ner mot -10 °C på natten, och söndagen förblir torr med några plusgrader på eftermiddagen. Provet kommer på måndag, när båda prognoserna vi läser ger runt 8 till 9 mm regn och temperaturer upp mot 6 °C. Ett täcke på 20 cm krymper och blir tungt, men det bör inte försvinna på en dag."
+     ]
+    }
+   ],
+   "advice": [
+    "Lördag är dagen för säsongens första skid- eller pulkatur: kallt, torrt och vitt.",
+    "Blöt snö på måndag blir is på tisdagsmorgonen: ställ broddarna vid dörren.",
+    "Kör du inåt land ligger nysnön på ofrusen mark: grusvägar kan vara mjuka under det vita."
+   ],
+   "captions": {
+    "snow": "Snödjup uppmätt vid väderstationerna den 13 november 2026: varje prick är en station, färgad efter snödjupet (ljusblått = några cm, mörkblått = djupt); vita prickar med grå ring = barmark. Etiketterna visar djupet vid de viktigaste stationerna. Bara mätningar, inget modellager."
+   },
+   "method": "Snödjup i dag: uppmätt vid väderstationer på morgonen den 13 november 2026 (SMHI). En station mäter snön på sin egen lilla yta, så några kilometer bort och hundra meter högre kan marken se annorlunda ut. Normalt snödjup för datumet: SnowScopes snöhistorik, 46 vintrar (1980-81 till 2025-26), en modell av det förflutna på stadens höjd, inte en stationsserie. Helgen: två vädermodeller (ECMWF IFS och DWD ICON via Open-Meteo), angivna som ett spann. Platser och regler: de officiella sidorna nedan.",
+   "references": [
+    {
+     "text": "SMHI, open meteorological observations (snow depth, daily)",
+     "url": "https://www.smhi.se/data/meteorologi/ladda-ner-meteorologiska-observationer"
+    },
+    {
+     "text": "Open-Meteo, weather forecast data (ECMWF and ICON models)",
+     "url": "https://open-meteo.com/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Snökartan på SnowScope",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  },
+  "nb": {
+   "title": "Snødybde i Umeå: 20 cm på to dager, langt over normalen (13. november 2026)",
+   "description": "Umeå målte 20 cm snø 13. november 2026, fra bar bakke onsdag. Slik ser det ut på stasjonene rundt byen, hvorfor det er tidlig, og om snøen tåler regnet mandag.",
+   "lede": "Umeå gikk fra høst til dyp vinter på to dager. Stasjonen i Röbäcksdalen, i byens vestre utkant, hadde bar bakke onsdag, 5 cm torsdag og 20 cm fredag morgen. Akkurat nå er det den mest snørike av de store nordiske byene.",
+   "sections": [
+    {
+     "h": "Rundt byen",
+     "p": [
+      "Snøen ligger overalt, ikke bare ved én stasjon. Vännäs, 25 km inn i landet, målte 18 cm, fra ingenting dagen før. Tavelsjö har 16 cm, Nordanbäck 22 cm og Rickleå, nede ved kysten mot nord, 12 cm.",
+      "Den jevnheten tyder på ett skikkelig snøfall over hele området heller enn en lokal byge."
+     ]
+    },
+    {
+     "h": "Tidlig og dypt for Umeå",
+     "p": [
+      "Snøhistorikken vår for byen dekker 46 vintre. Den 13. november lå det snø i 26 av dem, men som regel svært lite: midtverdien er 1 cm, og bare én vinter av fire hadde 5 cm eller mer. Selv det dypeste året i historikken vår stoppet på 34 cm.",
+      "Dagens 20 cm er det Umeå vanligvis først når i andre halvdel av desember; midt i januar er det normale rundt 25 cm. De siste fem vintrene var det meste på denne datoen 7 cm, i 2023-24."
+     ]
+    },
+    {
+     "h": "Blir den liggende?",
+     "p": [
+      "Helgen er på snøens side: lørdag er tørr og kald, ned mot -10 °C om natten, og søndag holder seg tørr med noen plussgrader på ettermiddagen. Prøven kommer mandag, når begge prognosene vi leser gir rundt 8 til 9 mm regn og temperaturer opp mot 6 °C. Et dekke på 20 cm krymper og blir tungt, men det bør ikke forsvinne på én dag."
+     ]
+    }
+   ],
+   "advice": [
+    "Lørdag er dagen for sesongens første ski- eller aketur: kaldt, tørt og hvitt.",
+    "Våt snø mandag blir is tirsdag morgen: sett broddene ved døra.",
+    "Kjører du innover i landet, ligger nysnøen på ufrossen mark: grusveier kan være bløte under det hvite."
+   ],
+   "captions": {
+    "snow": "Snødybde målt ved værstasjonene 13. november 2026: hver prikk er en stasjon, farget etter snødybden (lyseblått = noen få cm, mørkeblått = dypt); hvite prikker med grå ring = bar bakke. Etikettene viser dybden ved de viktigste stasjonene. Bare målinger, ikke noe modellag."
+   },
+   "method": "Snødybde i dag: målt ved værstasjoner om morgenen 13. november 2026 (SMHI). En stasjon måler snøen på sin egen lille flekk, så noen kilometer unna og hundre meter høyere kan bakken se annerledes ut. Vanlig snødybde for datoen: SnowScopes snøhistorikk, 46 vintre (1980-81 til 2025-26), en modell av fortiden i byens høyde, ikke en stasjonsserie. Helgen: to værmodeller (ECMWF IFS og DWD ICON via Open-Meteo), oppgitt som et spenn. Steder og regler: de offisielle sidene nedenfor.",
+   "references": [
+    {
+     "text": "SMHI, open meteorological observations (snow depth, daily)",
+     "url": "https://www.smhi.se/data/meteorologi/ladda-ner-meteorologiska-observationer"
+    },
+    {
+     "text": "Open-Meteo, weather forecast data (ECMWF and ICON models)",
+     "url": "https://open-meteo.com/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Snøkartet på SnowScope",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  },
+  "fi": {
+   "title": "Uumajan lumensyvyys: 20 cm kahdessa päivässä, selvästi yli tavallisen (13. marraskuuta 2026)",
+   "description": "Uumajassa mitattiin 13. marraskuuta 2026 20 cm lunta, kun keskiviikkona maa oli paljas. Miltä kaupungin ympäristön asemat näyttävät, miksi tämä on aikaista ja kestääkö lumi maanantain sateen.",
+   "lede": "Uumaja siirtyi syksystä syvään talveen kahdessa päivässä. Röbäcksdalenin asemalla kaupungin länsilaidalla maa oli keskiviikkona paljas, torstaina 5 cm ja perjantaiaamuna 20 cm. Juuri nyt se on Pohjolan suurista kaupungeista lumisin.",
+   "sections": [
+    {
+     "h": "Kaupungin ympärillä",
+     "p": [
+      "Lunta on kaikkialla, ei vain yhdellä asemalla. Vännäsissä, 25 km sisämaahan, mitattiin 18 cm, kun edellisenä päivänä ei ollut mitään. Tavelsjössä on 16 cm, Nordanbäckissä 22 cm ja pohjoiseen rannikolla Rickleåssa 12 cm.",
+      "Tasaisuus kertoo yhdestä kunnon lumisateesta koko alueella eikä paikallisesta kuurosta."
+     ]
+    },
+    {
+     "h": "Aikaista ja paksua Uumajalle",
+     "p": [
+      "Lumihistoriamme kaupungista kattaa 46 talvea. Marraskuun 13. päivänä maassa oli lunta 26 talvena, mutta yleensä hyvin vähän: keskimmäinen arvo on 1 cm, ja vain joka neljäntenä talvena oli 5 cm tai enemmän. Historiamme runsaslumisinkin vuosi jäi 34 senttiin.",
+      "Tämän päivän 20 cm on sitä, mihin Uumaja yleensä pääsee vasta joulukuun loppupuolella; tammikuun puolivälissä tavallinen on noin 25 cm. Viitenä viime talvena eniten tänä päivänä oli 7 cm, talvella 2023-24."
+     ]
+    },
+    {
+     "h": "Kestääkö se?",
+     "p": [
+      "Viikonloppu on lumen puolella: lauantai on kuiva ja kylmä, yöllä noin -10 astetta, ja sunnuntai pysyy kuivana, iltapäivällä muutama aste plussaa. Koetus tulee maanantaina, kun molemmat lukemamme ennusteet tuovat noin 8–9 mm vettä ja lämpötilan jopa 6 asteeseen. 20 sentin peite painuu ja raskastuu, mutta sen ei pitäisi kadota päivässä."
+     ]
+    }
+   ],
+   "advice": [
+    "Lauantai on kauden ensimmäisen hiihto- tai pulkkaretken päivä: kylmää, kuivaa ja valkoista.",
+    "Märkä lumi maanantaina on jäätä tiistaiaamuna: laita liukuesteet oven viereen.",
+    "Jos ajat sisämaahan, uusi lumi on sulan maan päällä: soratiet voivat olla valkoisen alla pehmeitä."
+   ],
+   "captions": {
+    "snow": "Sääasemilla 13. marraskuuta 2026 mitattu lumensyvyys: jokainen piste on asema, väritetty lumensyvyyden mukaan (vaaleansininen = muutama cm, tummansininen = paksu); valkoinen piste harmaalla reunalla = paljas maa. Nimilaput kertovat syvyyden tärkeimmillä asemilla. Vain mittauksia, ei mallikerrosta."
+   },
+   "method": "Lumensyvyys tänään: mitattu sääasemilla aamulla 13. marraskuuta 2026 (SMHI). Asema mittaa lunta omalla pienellä alallaan, joten muutaman kilometrin päässä ja sata metriä korkeammalla maa voi näyttää toiselta. Tavallinen lumensyvyys päivälle: SnowScopen lumihistoria, 46 talvea (1980-81 – 2025-26), menneisyyden malli kaupungin korkeudella, ei aseman mittaussarja. Viikonloppu: kaksi säämallia (ECMWF IFS ja DWD ICON, Open-Meteon kautta), annettu vaihteluvälinä. Paikat ja säännöt: alla luetellut viralliset sivut.",
+   "references": [
+    {
+     "text": "SMHI, open meteorological observations (snow depth, daily)",
+     "url": "https://www.smhi.se/data/meteorologi/ladda-ner-meteorologiska-observationer"
+    },
+    {
+     "text": "Open-Meteo, weather forecast data (ECMWF and ICON models)",
+     "url": "https://open-meteo.com/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Lumikartta SnowScopessa",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "hand (N1 Nordic, measured snow 13 Nov 2026)"
+  },
+  "sv": {
+   "writer": "hand (N1 Nordic, measured snow 13 Nov 2026)"
+  },
+  "nb": {
+   "writer": "hand (N1 Nordic, measured snow 13 Nov 2026)"
+  },
+  "fi": {
+   "writer": "hand (N1 Nordic, measured snow 13 Nov 2026)"
+  }
+ },
+ "words_en": 272,
+ "indexable": true,
+ "main": {
+  "slug": null,
+  "name": "Umeå",
+  "lat": 63.826,
+  "lon": 20.263
+ },
+ "places": [],
+ "resort_links": [],
+ "table": null,
+ "bulletins": [],
+ "trip_day": "",
+ "map_link": "https://snowscope.app/",
+ "keyword": {
+  "family": "snow-now",
+  "entity": "umea",
+  "region": "SCANDES",
+  "date": "2026-11-13"
+ },
+ "voice": "local",
+ "query": "snödjup umeå",
+ "overlap": {
+  "before": 3.3,
+  "after": 3.3,
+  "with": "oslo-snow-depth-today-13-november-2026",
+  "tries": 0
+ },
+ "publish_utc": "2026-11-13T19:49:33Z"
+}
