@@ -1,0 +1,786 @@
+{
+ "id": "2026-11-13-ca_west-coming",
+ "slug": "western-canada-revelstoke-snow-forecast-13-november-2026",
+ "date": "2026-11-13",
+ "published_utc": "2026-11-13T14:23:45Z",
+ "updated_utc": "2026-11-13T14:23:45Z",
+ "region": "CA_WEST",
+ "angle": "coming",
+ "score": 78,
+ "signature": "whistler:90|revelstoke:20|mount_cain_alpine_park:20",
+ "keyword": {
+  "family": "snow-forecast",
+  "entity": "revelstoke",
+  "region": "CA_WEST",
+  "date": "2026-11-13"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "snow_forecast",
+  "region": "Western Canada",
+  "date": "2026-11-13",
+  "weekday": "Friday",
+  "model_run": "2026-11-13",
+  "forecast_days": [
+   "2026-11-14",
+   "2026-11-15",
+   "2026-11-16"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 201390,
+   "resorts_with_snow": 31,
+   "resorts_in_region": 57
+  },
+  "region_before": {
+   "date": "2026-11-11",
+   "snow_covered_area_km2": 215390,
+   "resorts_with_snow": 35
+  },
+  "region_forecast": {
+   "date": "2026-11-16",
+   "snow_covered_area_km2": 210000,
+   "resorts_with_snow": 35
+  },
+  "question": "Where will new snow fall in the next days, and at which height?",
+  "resorts": [
+   {
+    "name": "Whistler Blackcomb",
+    "country": "Canada",
+    "top_m": 2259,
+    "base_m": 653,
+    "depth_cm_upper_slopes_today": 166,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 9,
+    "new_cm_forecast_next_days": 88,
+    "slug": "whistler",
+    "new_cm_by_day": {
+     "2026-11-11": 2,
+     "2026-11-12": 4,
+     "2026-11-13": 3,
+     "2026-11-14": 29,
+     "2026-11-15": 51,
+     "2026-11-16": 8
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 653,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 5
+     },
+     "mid": {
+      "elev_m": 1456,
+      "depth_cm_model": 37,
+      "new_cm_next_7_days": 43
+     },
+     "top": {
+      "elev_m": 2259,
+      "depth_cm_model": 77,
+      "new_cm_next_7_days": 73
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 1500,
+      "max": 2700
+     },
+     "2026-11-14": {
+      "min": 1480,
+      "max": 1630
+     },
+     "2026-11-15": {
+      "min": 1160,
+      "max": 1540
+     }
+    },
+    "valley_rain": {
+     "snow_line_m": 1360.0,
+     "place": "Whistler"
+    }
+   },
+   {
+    "name": "Revelstoke",
+    "country": "Canada",
+    "top_m": 2224,
+    "base_m": 514,
+    "depth_cm_upper_slopes_today": 53,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 21,
+    "slug": "revelstoke",
+    "new_cm_by_day": {
+     "2026-11-11": 4,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 4,
+     "2026-11-15": 3,
+     "2026-11-16": 14
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 514,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 1369,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 4
+     },
+     "top": {
+      "elev_m": 2224,
+      "depth_cm_model": 32,
+      "new_cm_next_7_days": 12
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 2220,
+      "max": 3170
+     },
+     "2026-11-14": {
+      "min": 1520,
+      "max": 2560
+     },
+     "2026-11-15": {
+      "min": 1260,
+      "max": 1710
+     }
+    },
+    "past_winters": {
+     "height_m": 1369,
+     "snow_cm_at_this_height_today_model": 24,
+     "deeper_than_n_of_past_winters": 5,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 55
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-04"
+    },
+    "reliability": {
+     "range_cm": [
+      10,
+      21
+     ],
+     "mixed": true,
+     "snow_line_m": 1420.0,
+     "height_m": 2224
+    }
+   },
+   {
+    "name": "Mount Cain Alpine Park",
+    "country": "Canada",
+    "top_m": 1616,
+    "base_m": 1190,
+    "depth_cm_upper_slopes_today": 33,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 2,
+    "new_cm_forecast_next_days": 20,
+    "slug": "mount_cain_alpine_park",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 2,
+     "2026-11-13": 0,
+     "2026-11-14": 2,
+     "2026-11-15": 13,
+     "2026-11-16": 5
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1190,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 17
+     },
+     "mid": {
+      "elev_m": 1403,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 22
+     },
+     "top": {
+      "elev_m": 1616,
+      "depth_cm_model": 48,
+      "new_cm_next_7_days": 26
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 1680,
+      "max": 2090
+     },
+     "2026-11-14": {
+      "min": 1390,
+      "max": 1700
+     },
+     "2026-11-15": {
+      "min": 960,
+      "max": 1500
+     }
+    },
+    "past_winters": {
+     "height_m": 1403,
+     "snow_cm_at_this_height_today_model": 28,
+     "deeper_than_n_of_past_winters": 26,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 12
+    },
+    "reliability": {
+     "range_cm": [
+      20,
+      20
+     ],
+     "mixed": false,
+     "snow_line_m": 1240.0,
+     "height_m": 1616
+    }
+   },
+   {
+    "name": "Red",
+    "country": "Canada",
+    "top_m": 2037,
+    "base_m": 1155,
+    "depth_cm_upper_slopes_today": 26,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 20,
+    "slug": "red_mountain_resort",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 2,
+     "2026-11-15": 4,
+     "2026-11-16": 14
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1155,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 1
+     },
+     "mid": {
+      "elev_m": 1596,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 6
+     },
+     "top": {
+      "elev_m": 2037,
+      "depth_cm_model": 18,
+      "new_cm_next_7_days": 9
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 2580,
+      "max": 3120
+     },
+     "2026-11-14": {
+      "min": 1610,
+      "max": 2480
+     },
+     "2026-11-15": {
+      "min": 1590,
+      "max": 1810
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-04"
+    }
+   },
+   {
+    "name": "Mt. Baldy Family",
+    "country": "Canada",
+    "top_m": 2119,
+    "base_m": 1732,
+    "depth_cm_upper_slopes_today": 23,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 17,
+    "slug": "mt_baldy_family_ski_area",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 3,
+     "2026-11-15": 5,
+     "2026-11-16": 9
+    }
+   }
+  ],
+  "focus_index": 1,
+  "title_focus_resort": "Revelstoke"
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/western-canada-revelstoke-snow-forecast-13-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/western-canada-revelstoke-snow-forecast-13-november-2026/map_t.webp",
+   "bytes": 74444,
+   "snow_frac": 0.4685,
+   "weak": false
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"49\" class=\"vl\">2</text><rect x=\"235\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"243\" y=\"49\" class=\"vl\">4</text><rect x=\"315\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"438\" y=\"49\" class=\"vl\">29</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">51</text><rect x=\"555\" y=\"36\" width=\"11\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"569\" y=\"49\" class=\"vl\">8</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"83\" class=\"vl\">4</text><rect x=\"475\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"482\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"577\" y=\"83\" class=\"vl\">14</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"117\" class=\"vl\">2</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"496\" y=\"117\" class=\"vl\">13</text><rect x=\"555\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"565\" y=\"117\" class=\"vl\">5</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Red</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"151\" class=\"vl\">4</text><rect x=\"555\" y=\"138\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"577\" y=\"151\" class=\"vl\">14</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Mt. Baldy Family</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"185\" class=\"vl\">3</text><rect x=\"475\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"570\" y=\"185\" class=\"vl\">9</text></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"49\" class=\"vl\">2</text><rect x=\"235\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"243\" y=\"49\" class=\"vl\">4</text><rect x=\"315\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"438\" y=\"49\" class=\"vl\">29</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">51</text><rect x=\"555\" y=\"36\" width=\"11\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"569\" y=\"49\" class=\"vl\">8</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"83\" class=\"vl\">4</text><rect x=\"475\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"482\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"577\" y=\"83\" class=\"vl\">14</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"117\" class=\"vl\">2</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"496\" y=\"117\" class=\"vl\">13</text><rect x=\"555\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"565\" y=\"117\" class=\"vl\">5</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Red</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"151\" class=\"vl\">4</text><rect x=\"555\" y=\"138\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"577\" y=\"151\" class=\"vl\">14</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Mt. Baldy Family</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"185\" class=\"vl\">3</text><rect x=\"475\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"570\" y=\"185\" class=\"vl\">9</text></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"49\" class=\"vl\">2</text><rect x=\"235\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"243\" y=\"49\" class=\"vl\">4</text><rect x=\"315\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"438\" y=\"49\" class=\"vl\">29</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">51</text><rect x=\"555\" y=\"36\" width=\"11\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"569\" y=\"49\" class=\"vl\">8</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"83\" class=\"vl\">4</text><rect x=\"475\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"482\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"577\" y=\"83\" class=\"vl\">14</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"117\" class=\"vl\">2</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"496\" y=\"117\" class=\"vl\">13</text><rect x=\"555\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"565\" y=\"117\" class=\"vl\">5</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Red</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"151\" class=\"vl\">4</text><rect x=\"555\" y=\"138\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"577\" y=\"151\" class=\"vl\">14</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Mt. Baldy Family</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"185\" class=\"vl\">3</text><rect x=\"475\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"570\" y=\"185\" class=\"vl\">9</text></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"49\" class=\"vl\">2</text><rect x=\"235\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"243\" y=\"49\" class=\"vl\">4</text><rect x=\"315\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"438\" y=\"49\" class=\"vl\">29</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">51</text><rect x=\"555\" y=\"36\" width=\"11\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"569\" y=\"49\" class=\"vl\">8</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"83\" class=\"vl\">4</text><rect x=\"475\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"482\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"577\" y=\"83\" class=\"vl\">14</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"117\" class=\"vl\">2</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"496\" y=\"117\" class=\"vl\">13</text><rect x=\"555\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"565\" y=\"117\" class=\"vl\">5</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Red</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"151\" class=\"vl\">4</text><rect x=\"555\" y=\"138\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"577\" y=\"151\" class=\"vl\">14</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Mt. Baldy Family</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"185\" class=\"vl\">3</text><rect x=\"475\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"570\" y=\"185\" class=\"vl\">9</text></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"49\" class=\"vl\">2</text><rect x=\"235\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"243\" y=\"49\" class=\"vl\">4</text><rect x=\"315\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"438\" y=\"49\" class=\"vl\">29</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">51</text><rect x=\"555\" y=\"36\" width=\"11\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"569\" y=\"49\" class=\"vl\">8</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"83\" class=\"vl\">4</text><rect x=\"475\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"482\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"577\" y=\"83\" class=\"vl\">14</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"117\" class=\"vl\">2</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"496\" y=\"117\" class=\"vl\">13</text><rect x=\"555\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"565\" y=\"117\" class=\"vl\">5</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Red</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"151\" class=\"vl\">4</text><rect x=\"555\" y=\"138\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"577\" y=\"151\" class=\"vl\">14</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Mt. Baldy Family</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"185\" class=\"vl\">3</text><rect x=\"475\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"570\" y=\"185\" class=\"vl\">9</text></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"49\" class=\"vl\">2</text><rect x=\"235\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"243\" y=\"49\" class=\"vl\">4</text><rect x=\"315\" y=\"36\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"438\" y=\"49\" class=\"vl\">29</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">51</text><rect x=\"555\" y=\"36\" width=\"11\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"569\" y=\"49\" class=\"vl\">8</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"83\" class=\"vl\">4</text><rect x=\"475\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"482\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"577\" y=\"83\" class=\"vl\">14</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"117\" class=\"vl\">2</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"18\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"496\" y=\"117\" class=\"vl\">13</text><rect x=\"555\" y=\"104\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"565\" y=\"117\" class=\"vl\">5</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Red</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"151\" class=\"vl\">4</text><rect x=\"555\" y=\"138\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"577\" y=\"151\" class=\"vl\">14</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Mt. Baldy Family</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"185\" class=\"vl\">3</text><rect x=\"475\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"185\" class=\"vl\">5</text><rect x=\"555\" y=\"172\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"570\" y=\"185\" class=\"vl\">9</text></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Revelstoke snow forecast: up to 10–21 cm expected by 16 November (Western Canada)",
+   "description": "Revelstoke snow forecast: up to 10–21 cm expected by 16 November (Western Canada). At Whistler Blackcomb, the freezing level reaches 1,500 m to …",
+   "lede": "Whistler Blackcomb, 13 November: freezing level 1,500 m to 2,700 m, above the top (2,259 m). Rain or wet snow is possible on every slope. Forecast to 16 November: 88 cm at Whistler Blackcomb, 10–21 cm at Revelstoke and 20 cm at Mount Cain Alpine Park. Treat the later days with care. In the valley it will rain; at Whistler Blackcomb the snow starts at about 1,360 m. Small print that matters: resort values are model estimates for an area, stations measure a single point. Satellites never get tired, but they do get clouds.",
+   "sections": [
+    {
+     "h": "Today's snow map",
+     "p": [
+      "Depth ranking for these resorts: Whistler Blackcomb first with about 166 cm on the upper slopes, then Revelstoke 53 cm and Mount Cain Alpine Park 33 cm.",
+      "Snow-covered ground in Western Canada: 201,390 km². Resorts with snow: 31 of 57."
+     ]
+    },
+    {
+     "h": "Coming up",
+     "p": [
+      "Until 16 November the forecast gives 20 cm at Red and 17 cm at Mt. Baldy Family, with less certainty the further out you go.",
+      "Snow-covered area: 215,390 km² on 11 November, 201,390 km² today, 210,000 km² forecast for 16 November. The map is getting less white."
+     ]
+    },
+    {
+     "h": "By height and slope",
+     "p": [
+      "On 13 November the freezing level at Revelstoke sits at 2,220 m to 3,170 m, over the top of the resort (2,224 m): rain or wet snow could fall on all slopes.",
+      "Mount Cain Alpine Park, 13 November: freezing level 1,680 m to 2,090 m, above the top (1,616 m). Rain or wet snow is possible on every slope.",
+      "Whistler Blackcomb by height, from our model: top 77 cm (2,259 m), middle 37 cm (1,456 m), base 0 cm (653 m)."
+     ]
+    },
+    {
+     "h": "Staying safe",
+     "p": [
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Forecasts a few days ahead can change: look at the map again the day before you travel.",
+    "Air above freezing over the slopes turns snow into slush and water. The highest lifts keep the driest snow.",
+    "Fresh snow has a short best-before time: the first hours. Early starts win.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Whistler Blackcomb gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in Western Canada on 13 November 2026 (SnowScope snow model): Whistler Blackcomb, Revelstoke, Mount Cain Alpine Park, Red, Mt. Baldy Family.",
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast)."
+   }
+  },
+  "fr": {
+   "title": "Revelstoke, prévisions neige : jusqu'à 10–21 cm attendus d'ici le 16 novembre (Ouest canadien)",
+   "description": "Revelstoke, prévisions neige : jusqu'à 10–21 cm attendus d'ici le 16 novembre (Ouest canadien). À Whistler Blackcomb, l'isotherme 0 °C monte entre …",
+   "lede": "Whistler Blackcomb, 13 novembre : isotherme 0 °C entre 1 500 m et 2 700 m, au-dessus du sommet (2 259 m). Pluie ou neige mouillée possibles sur toutes les pentes. Prévision jusqu'au 16 novembre : 88 cm à Whistler Blackcomb, 10–21 cm à Revelstoke et 20 cm à Mount Cain Alpine Park. Prudence sur les derniers jours. Dans la vallée, il pleuvra ; à Whistler Blackcomb, la neige commence vers 1 360 m. Quelle confiance ? Les valeurs des stations de ski sont des estimations du modèle pour le haut du domaine ; les stations de mesure donnent des mesures, chacune en un point à la date indiquée. Les satellites ne se fatiguent jamais, mais ils ont des nuages.",
+   "sections": [
+    {
+     "h": "La carte de neige du jour",
+     "p": [
+      "Classement de ces stations : Whistler Blackcomb en tête avec environ 166 cm sur le haut du domaine, puis Revelstoke 53 cm et Mount Cain Alpine Park 33 cm.",
+      "201 390 km² de sol sont enneigés dans l'Ouest canadien aujourd'hui, et 31 stations sur 57 ont de la neige sur le haut du domaine."
+     ]
+    },
+    {
+     "h": "À venir",
+     "p": [
+      "D'ici le 16 novembre, la prévision donne 20 cm à Red et 17 cm à Mt. Baldy Family, avec moins de certitude à mesure qu'on s'éloigne.",
+      "La zone blanche sur la carte est passée de 215 390 km² (11 novembre) à 201 390 km² aujourd'hui, et la prévision dit 210 000 km² le 16 novembre."
+     ]
+    },
+    {
+     "h": "Par altitude et par pente",
+     "p": [
+      "Le 13 novembre, l'isotherme 0 °C à Revelstoke se situe entre 2 220 m et 3 170 m, au-dessus du sommet de la station (2 224 m) : pluie ou neige mouillée sur toutes les pentes possible.",
+      "Mount Cain Alpine Park, 13 novembre : isotherme 0 °C entre 1 680 m et 2 090 m, au-dessus du sommet (1 616 m). Pluie ou neige mouillée possibles sur toutes les pentes.",
+      "Whistler Blackcomb par altitude, selon notre modèle : sommet 77 cm (2 259 m), milieu 37 cm (1 456 m), bas 0 cm (653 m)."
+     ]
+    },
+    {
+     "h": "Rester en sécurité",
+     "p": [
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ.",
+    "Au-dessus de 0 °C, l'air transforme la neige en soupe et en eau. Les remontées les plus hautes gardent la neige la plus sèche.",
+    "La neige fraîche a une date limite courte : les premières heures. Ceux qui partent tôt gagnent.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Whistler Blackcomb reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest canadien le 13 novembre 2026 (modèle de neige SnowScope) : Whistler Blackcomb, Revelstoke, Mount Cain Alpine Park, Red, Mt. Baldy Family.",
+    "bars": "Neige fraîche par jour dans les stations en tête (jours passés : modèle ; barres claires : prévision)."
+   }
+  },
+  "de": {
+   "title": "Revelstoke Schneeprognose: bis zu 10–21 cm bis zum 16. November erwartet (Westkanada)",
+   "description": "Revelstoke Schneeprognose: bis zu 10–21 cm bis zum 16. November erwartet (Westkanada). In Whistler Blackcomb liegt die Nullgradgrenze am 13. November …",
+   "lede": "Whistler Blackcomb, 13. November: Nullgradgrenze 1.500 m bis 2.700 m, über dem höchsten Punkt (2.259 m). Regen oder nasser Schnee ist auf allen Hängen möglich. Prognose bis zum 16. November: 88 cm in Whistler Blackcomb, 10–21 cm in Revelstoke und 20 cm in Mount Cain Alpine Park. Die späteren Tage mit Vorsicht lesen. Im Tal regnet es; in Whistler Blackcomb beginnt der Schnee bei etwa 1.360 m. Wie sicher sind wir? Die Skigebietswerte sind Modellschätzungen für die oberen Hänge; Stationen sind Messungen, jede an einem Punkt am angegebenen Tag. Satelliten werden nie müde, aber sie bekommen Wolken.",
+   "sections": [
+    {
+     "h": "Die Schneekarte von heute",
+     "p": [
+      "Schneehöhen-Ranking dieser Skigebiete: Whistler Blackcomb zuerst mit etwa 166 cm in den oberen Hängen, dann Revelstoke 53 cm und Mount Cain Alpine Park 33 cm.",
+      "201.390 km² Boden ist heute in Westkanada schneebedeckt, und 31 von 57 Skigebieten haben Schnee in den oberen Hängen."
+     ]
+    },
+    {
+     "h": "Demnächst",
+     "p": [
+      "Bis zum 16. November ergibt die Prognose 20 cm in Red und 17 cm in Mt. Baldy Family, mit weniger Sicherheit, je weiter es in die Zukunft geht.",
+      "Schneefläche: 215.390 km² am 11. November, heute 201.390 km², 210.000 km² erwartet für den 16. November. Die Karte wird weniger weiß."
+     ]
+    },
+    {
+     "h": "Nach Höhe und Hang",
+     "p": [
+      "Am 13. November liegt die Nullgradgrenze in Revelstoke bei 2.220 m bis 3.170 m, über dem höchsten Punkt des Skigebiets (2.224 m): Regen oder nasser Schnee könnte auf alle Hänge fallen.",
+      "Mount Cain Alpine Park, 13. November: Nullgradgrenze 1.680 m bis 2.090 m, über dem höchsten Punkt (1.616 m). Regen oder nasser Schnee ist auf allen Hängen möglich.",
+      "Whistler Blackcomb nach Höhe, aus unserem Modell: Gipfel 77 cm (2.259 m), Mitte 37 cm (1.456 m), Tal 0 cm (653 m)."
+     ]
+    },
+    {
+     "h": "Sicher unterwegs",
+     "p": [
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte.",
+    "Luft über null Grad macht aus Schnee Matsch und Wasser. Die höchsten Lifte haben den trockensten Schnee.",
+    "Neuschnee hat ein kurzes Haltbarkeitsdatum: die ersten Stunden. Frühaufsteher gewinnen.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Whistler Blackcomb Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe in Westkanada am 13. November 2026 (SnowScope-Schneemodell): Whistler Blackcomb, Revelstoke, Mount Cain Alpine Park, Red, Mt. Baldy Family.",
+    "bars": "Neuschnee pro Tag in den führenden Skigebieten (vergangene Tage: Modell; helle Balken: Prognose)."
+   }
+  },
+  "it": {
+   "title": "Revelstoke, previsioni neve: fino a 10–21 cm attesi entro il 16 novembre (Canada occidentale)",
+   "description": "Revelstoke, previsioni neve: fino a 10–21 cm attesi entro il 16 novembre (Canada occidentale). A Whistler Blackcomb lo zero termico sale tra 1.500 m …",
+   "lede": "Whistler Blackcomb, 13 novembre: zero termico tra 1.500 m e 2.700 m, sopra la quota massima (2.259 m). Pioggia o neve bagnata possibili su tutti i pendii. Previsione fino al 16 novembre: 88 cm a Whistler Blackcomb, 10–21 cm a Revelstoke e 20 cm a Mount Cain Alpine Park. Prendi i giorni più lontani con cautela. In valle pioverà; a Whistler Blackcomb la neve comincia verso i 1.360 m. Quanto ne siamo sicuri? I valori delle località sono stime del modello per i pendii superiori; le stazioni sono misure, ognuna in un punto alla data indicata. I satelliti non si stancano mai, ma le nuvole sì che le trovano.",
+   "sections": [
+    {
+     "h": "La mappa neve di oggi",
+     "p": [
+      "Classifica dell'altezza neve per queste località: prima Whistler Blackcomb con circa 166 cm sui pendii superiori, poi Revelstoke 53 cm e Mount Cain Alpine Park 33 cm.",
+      "201.390 km² di terreno sono innevati nel Canada occidentale oggi, e 31 località su 57 hanno neve sui pendii superiori."
+     ]
+    },
+    {
+     "h": "In arrivo",
+     "p": [
+      "Fino al 16 novembre la previsione indica 20 cm a Red e 17 cm a Mt. Baldy Family, con meno certezza più ci si allontana.",
+      "L'area bianca sulla mappa è passata da 215.390 km² (11 novembre) a 201.390 km² oggi, e la previsione dice 210.000 km² il 16 novembre."
+     ]
+    },
+    {
+     "h": "Per quota e pendio",
+     "p": [
+      "Il 13 novembre lo zero termico a Revelstoke sta tra 2.220 m e 3.170 m, sopra la quota massima della località (2.224 m): pioggia o neve bagnata potrebbero cadere su tutti i pendii.",
+      "Mount Cain Alpine Park, 13 novembre: zero termico tra 1.680 m e 2.090 m, sopra la quota massima (1.616 m). Pioggia o neve bagnata possibili su tutti i pendii.",
+      "Whistler Blackcomb per quota, dal nostro modello: vetta 77 cm (2.259 m), metà 37 cm (1.456 m), base 0 cm (653 m)."
+     ]
+    },
+    {
+     "h": "In sicurezza",
+     "p": [
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire.",
+    "Aria sopra lo zero sui pendii trasforma la neve in pappa e acqua. Gli impianti più alti tengono la neve più asciutta.",
+    "La neve fresca ha una scadenza breve: le prime ore. Chi parte presto vince.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Whistler Blackcomb riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve nel Canada occidentale il 13 novembre 2026 (modello neve SnowScope): Whistler Blackcomb, Revelstoke, Mount Cain Alpine Park, Red, Mt. Baldy Family.",
+    "bars": "Neve fresca al giorno nelle località in testa (giorni passati: modello; barre chiare: previsione)."
+   }
+  },
+  "es": {
+   "title": "Revelstoke, previsión de nieve: hasta 10–21 cm esperados hasta el 16 de noviembre (Oeste de Canadá)",
+   "description": "Revelstoke, previsión de nieve: hasta 10–21 cm esperados hasta el 16 de noviembre (Oeste de Canadá). En Whistler Blackcomb, la cota de congelación …",
+   "lede": "Whistler Blackcomb, 13 de noviembre: cota de congelación 1500 m-2700 m, por encima de la cima (2259 m). Puede haber lluvia o nieve húmeda en todas las pistas. Previsión hasta el 16 de noviembre: 88 cm en Whistler Blackcomb, 10–21 cm en Revelstoke y 20 cm en Mount Cain Alpine Park. Cuidado con los últimos días. En el valle lloverá; en Whistler Blackcomb la nieve empieza hacia los 1360 m. ¿Qué confianza tenemos? Los valores de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida dan medidas, cada una en un punto en la fecha indicada. Los satélites nunca se cansan, pero sí tienen nubes.",
+   "sections": [
+    {
+     "h": "El mapa de nieve de hoy",
+     "p": [
+      "Clasificación de estas estaciones: Whistler Blackcomb primera con unos 166 cm en las pistas altas, luego Revelstoke 53 cm y Mount Cain Alpine Park 33 cm.",
+      "Hoy hay 201.390 km² de suelo nevado en el oeste de Canadá, y 31 de 57 estaciones tienen nieve en las pistas altas."
+     ]
+    },
+    {
+     "h": "Lo próximo",
+     "p": [
+      "Hasta el 16 de noviembre la previsión da 20 cm en Red y 17 cm en Mt. Baldy Family, con menos certeza cuanto más lejos.",
+      "La zona blanca del mapa pasó de 215.390 km² (11 de noviembre) a 201.390 km² hoy, y la previsión dice 210.000 km² el 16 de noviembre."
+     ]
+    },
+    {
+     "h": "Por altura y ladera",
+     "p": [
+      "El 13 de noviembre la cota de congelación en Revelstoke se sitúa en 2220 m-3170 m, sobre la cota alta de la estación (2224 m): podría caer lluvia o nieve húmeda en todas las pistas.",
+      "Mount Cain Alpine Park, 13 de noviembre: cota de congelación 1680 m-2090 m, por encima de la cima (1616 m). Puede haber lluvia o nieve húmeda en todas las pistas.",
+      "Whistler Blackcomb por altura, según nuestro modelo: arriba 77 cm (2259 m), en medio 37 cm (1456 m), base 0 cm (653 m)."
+     ]
+    },
+    {
+     "h": "Con seguridad",
+     "p": [
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar.",
+    "El aire por encima de cero sobre las pistas convierte la nieve en papa y en agua. Los remontes más altos guardan la nieve más seca.",
+    "La nieve nueva tiene una fecha de caducidad corta: las primeras horas. Madrugar gana.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Whistler Blackcomb recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de Canadá el 13 de noviembre 2026 (modelo de nieve de SnowScope): Whistler Blackcomb, Revelstoke, Mount Cain Alpine Park, Red, Mt. Baldy Family.",
+    "bars": "Nieve nueva por día en las estaciones líderes (días pasados: modelo; barras claras: previsión)."
+   }
+  },
+  "ar": {
+   "title": "Revelstoke توقعات التلج: حتى ل 10–21 سم متوقعة حتى ل 16 نونبر (غرب كندا)",
+   "description": "Revelstoke توقعات التلج: حتى ل 10–21 سم متوقعة حتى ل 16 نونبر (غرب كندا). ف Whistler Blackcomb، علو الجليد غادي يكون بين 1500 م و 2700 م نهار 13 …",
+   "lede": "Whistler Blackcomb، 13 نونبر: علو الجليد 1500 م حتى ل 2700 م، فوق القمة (2259 م). الشتا ولا التلج المبلول ممكن فكاع البيستات. التوقعات حتى ل 16 نونبر: 88 سم ف Whistler Blackcomb، 10–21 سم ف Revelstoke و 20 سم ف Mount Cain Alpine Park. الأيام اللخرين خاصهم الحذر. فالوادي غادي تشتا؛ ف Whistler Blackcomb التلج كيبدا تقريبا من 1360 م. شحال حنا متأكدين؟ القيم ديال المحطات تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس قياسات، كل وحدة فنقطة وحدة فالتاريخ المكتوب. الساتليتات عمرهم مايعياو، ولكن كيجيهم السحاب.",
+   "sections": [
+    {
+     "h": "الخريطة ديال التلج اليوم",
+     "p": [
+      "الترتيب ديال العلو لهاد المحطات: Whistler Blackcomb اللولة ب تقريبا 166 سم فالجهة الفوقانية، ومن بعد Revelstoke 53 سم و Mount Cain Alpine Park 33 سم.",
+      "201390 كم² ديال الأرض مغطية بالتلج فغرب كندا اليوم، و 31 محطة من 57 فيهم التلج فالجهة الفوقانية."
+     ]
+    },
+    {
+     "h": "اللي جاي",
+     "p": [
+      "حتى ل 16 نونبر التوقعات كتعطي 20 سم ف Red و 17 سم ف Mt. Baldy Family، والتأكد كينقص كل ما بعدنا.",
+      "المساحة البيضا فالخريطة دازت من 215390 كم² (11 نونبر) ل 201390 كم² اليوم، والتوقعات كتقول 210000 كم² نهار 16 نونبر."
+     ]
+    },
+    {
+     "h": "حسب العلو والجهة",
+     "p": [
+      "نهار 13 نونبر علو الجليد ف Revelstoke كيكون بين 2220 م و 3170 م، فوق القمة ديال المحطة (2224 م): الشتا ولا التلج المبلول يقدر يطيح فكاع البيستات.",
+      "Mount Cain Alpine Park، 13 نونبر: علو الجليد 1680 م حتى ل 2090 م، فوق القمة (1616 م). الشتا ولا التلج المبلول ممكن فكاع البيستات.",
+      "Whistler Blackcomb حسب العلو، من الموديل ديالنا: الفوق 77 سم (2259 م)، الوسط 37 سم (1456 م)، التحت 0 سم (653 م)."
+     ]
+    },
+    {
+     "h": "باش تبقى سالم",
+     "p": [
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر.",
+    "الهوا اللي فوق الجليد فوق البيستات كيرد التلج ذايب وما. التيليسييجات اللي فالفوق فيهم أنشف تلج.",
+    "التلج الجديد عندو تاريخ صلاحية قصير: الساعات الأولى. اللي ناض بكري ربح.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Whistler Blackcomb يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب كندا نهار 13 نونبر 2026 (الموديل ديال SnowScope): Whistler Blackcomb, Revelstoke, Mount Cain Alpine Park, Red, Mt. Baldy Family.",
+    "bars": "التلج الجديد فكل نهار فالمحطات اللولين (الأيام اللي فاتو من الموديل، والخطوط الفاتحة = التوقعات)."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "de": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "it": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "es": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  }
+ },
+ "words_en": 279,
+ "indexable": true,
+ "main": {
+  "slug": "revelstoke",
+  "name": "Revelstoke",
+  "lat": 50.9631,
+  "lon": -118.119
+ },
+ "places": [
+  {
+   "name": "Whistler Blackcomb",
+   "lat": 50.0888,
+   "lon": -122.9419
+  },
+  {
+   "name": "Revelstoke",
+   "lat": 50.9631,
+   "lon": -118.119
+  },
+  {
+   "name": "Mount Cain Alpine Park",
+   "lat": 50.2232,
+   "lon": -126.3468
+  },
+  {
+   "name": "Red",
+   "lat": 49.1064,
+   "lon": -117.8411
+  },
+  {
+   "name": "Mt. Baldy Family",
+   "lat": 49.153,
+   "lon": -119.2353
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "whistler",
+   "name": "Whistler Blackcomb"
+  },
+  {
+   "slug": "revelstoke",
+   "name": "Revelstoke"
+  },
+  {
+   "slug": "mount_cain_alpine_park",
+   "name": "Mount Cain Alpine Park"
+  },
+  {
+   "slug": "red_mountain_resort",
+   "name": "Red"
+  },
+  {
+   "slug": "mt_baldy_family_ski_area",
+   "name": "Mt. Baldy Family"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "whistler",
+    "name": "Whistler Blackcomb",
+    "depth": 166,
+    "new72": 9,
+    "next": 88,
+    "top_m": 2259
+   },
+   {
+    "slug": "revelstoke",
+    "name": "Revelstoke",
+    "depth": 53,
+    "new72": 4,
+    "next": 21,
+    "top_m": 2224
+   },
+   {
+    "slug": "mount_cain_alpine_park",
+    "name": "Mount Cain Alpine Park",
+    "depth": 33,
+    "new72": 2,
+    "next": 20,
+    "top_m": 1616
+   },
+   {
+    "slug": "red_mountain_resort",
+    "name": "Red",
+    "depth": 26,
+    "new72": 0,
+    "next": 20,
+    "top_m": 2037
+   },
+   {
+    "slug": "mt_baldy_family_ski_area",
+    "name": "Mt. Baldy Family",
+    "depth": 23,
+    "new72": 0,
+    "next": 17,
+    "top_m": 2119
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Avalanche Canada",
+   "url": "https://avalanche.ca/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@50.963,-118.119,9.0",
+ "seconds": 25.6,
+ "facts_used": 29,
+ "voice": "sat",
+ "media_ids": [
+  "map",
+  "bars"
+ ],
+ "overlap": {
+  "before": 47.3,
+  "after": 19.4,
+  "with": "pyrenees-cauterets-cirque-du-lys-snow-forecast-12-november-2026",
+  "tries": 1
+ },
+ "similarity": {
+  "max": 0.136,
+  "with": "us-west-mt-shasta-ski-park-snow-forecast-11-november-2026"
+ },
+ "publish_utc": "2026-11-13T14:23:45Z"
+}
