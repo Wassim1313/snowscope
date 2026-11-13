@@ -1,0 +1,769 @@
+{
+ "id": "2026-11-13-ca_west-history",
+ "slug": "western-canada-snow-vs-past-winters-13-november-2026",
+ "date": "2026-11-13",
+ "published_utc": "2026-11-13T16:43:49Z",
+ "updated_utc": "2026-11-13T16:43:49Z",
+ "region": "CA_WEST",
+ "angle": "history",
+ "score": 49,
+ "signature": "big_white_ski_resort:7|marmot_basin:0|revelstoke:1",
+ "keyword": {
+  "family": "vs-normal",
+  "entity": "ca_west",
+  "region": "CA_WEST",
+  "date": "2026-11-13"
+ },
+ "tags": [
+  "past-winters",
+  "snow-depth"
+ ],
+ "facts": {
+  "angle": "snow_vs_past_winters",
+  "region": "Western Canada",
+  "date": "2026-11-13",
+  "weekday": "Friday",
+  "model_run": "2026-11-13",
+  "forecast_days": [
+   "2026-11-14",
+   "2026-11-15",
+   "2026-11-16"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 201390,
+   "resorts_with_snow": 31,
+   "resorts_in_region": 57
+  },
+  "region_before": {
+   "date": "2026-11-11",
+   "snow_covered_area_km2": 215390,
+   "resorts_with_snow": 35
+  },
+  "region_forecast": {
+   "date": "2026-11-16",
+   "snow_covered_area_km2": 210000,
+   "resorts_with_snow": 35
+  },
+  "question": "Is there more or less snow than usual for the date, compared with the past 46 winters?",
+  "past_winters_period": "1980-81 to 2025-26",
+  "resorts": [
+   {
+    "name": "Big White",
+    "country": "Canada",
+    "top_m": 2271,
+    "base_m": 1512,
+    "depth_cm_upper_slopes_today": 86,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 16,
+    "slug": "big_white_ski_resort",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 4,
+     "2026-11-15": 2,
+     "2026-11-16": 10
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1512,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 7
+     },
+     "mid": {
+      "elev_m": 1891,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 9
+     },
+     "top": {
+      "elev_m": 2271,
+      "depth_cm_model": 64,
+      "new_cm_next_7_days": 9
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 2440,
+      "max": 3060
+     },
+     "2026-11-14": {
+      "min": 1580,
+      "max": 2380
+     },
+     "2026-11-15": {
+      "min": 1430,
+      "max": 1770
+     }
+    },
+    "past_winters": {
+     "height_m": 1891,
+     "snow_cm_at_this_height_today_model": 43,
+     "deeper_than_n_of_past_winters": 37,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 30
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-04"
+    }
+   },
+   {
+    "name": "Marmot Basin",
+    "country": "Canada",
+    "top_m": 2504,
+    "base_m": 1724,
+    "depth_cm_upper_slopes_today": 54,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 3,
+    "slug": "marmot_basin",
+    "new_cm_by_day": {
+     "2026-11-11": 1,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 0,
+     "2026-11-15": 0,
+     "2026-11-16": 3
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1724,
+      "depth_cm_model": 17,
+      "new_cm_next_7_days": 1
+     },
+     "mid": {
+      "elev_m": 2114,
+      "depth_cm_model": 20,
+      "new_cm_next_7_days": 2
+     },
+     "top": {
+      "elev_m": 2504,
+      "depth_cm_model": 21,
+      "new_cm_next_7_days": 2
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 1490,
+      "max": 3290
+     },
+     "2026-11-14": {
+      "min": 1370,
+      "max": 2940
+     },
+     "2026-11-15": {
+      "min": 1310,
+      "max": 1930
+     }
+    },
+    "past_winters": {
+     "height_m": 2114,
+     "snow_cm_at_this_height_today_model": 20,
+     "deeper_than_n_of_past_winters": 0,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 79
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-04"
+    }
+   },
+   {
+    "name": "Revelstoke",
+    "country": "Canada",
+    "top_m": 2224,
+    "base_m": 514,
+    "depth_cm_upper_slopes_today": 53,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 21,
+    "slug": "revelstoke",
+    "new_cm_by_day": {
+     "2026-11-11": 4,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 4,
+     "2026-11-15": 3,
+     "2026-11-16": 14
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 514,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 1369,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 4
+     },
+     "top": {
+      "elev_m": 2224,
+      "depth_cm_model": 32,
+      "new_cm_next_7_days": 12
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 2220,
+      "max": 3170
+     },
+     "2026-11-14": {
+      "min": 1520,
+      "max": 2560
+     },
+     "2026-11-15": {
+      "min": 1260,
+      "max": 1710
+     }
+    },
+    "past_winters": {
+     "height_m": 1369,
+     "snow_cm_at_this_height_today_model": 24,
+     "deeper_than_n_of_past_winters": 5,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 55
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-04"
+    }
+   },
+   {
+    "name": "Tweedsmuir Ski Club",
+    "country": "Canada",
+    "top_m": 1650,
+    "base_m": 1588,
+    "depth_cm_upper_slopes_today": 45,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 27,
+    "new_cm_forecast_next_days": 4,
+    "slug": "tweedsmuir_ski_club",
+    "new_cm_by_day": {
+     "2026-11-11": 21,
+     "2026-11-12": 5,
+     "2026-11-13": 2,
+     "2026-11-14": 0,
+     "2026-11-15": 3,
+     "2026-11-16": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1588,
+      "depth_cm_model": 56,
+      "new_cm_next_7_days": 6
+     },
+     "mid": {
+      "elev_m": 1619,
+      "depth_cm_model": 58,
+      "new_cm_next_7_days": 6
+     },
+     "top": {
+      "elev_m": 1650,
+      "depth_cm_model": 61,
+      "new_cm_next_7_days": 6
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 1150,
+      "max": 1570
+     },
+     "2026-11-14": {
+      "min": 1150,
+      "max": 1680
+     },
+     "2026-11-15": {
+      "min": 830,
+      "max": 1500
+     }
+    },
+    "past_winters": {
+     "height_m": 1619,
+     "snow_cm_at_this_height_today_model": 63,
+     "deeper_than_n_of_past_winters": 30,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 54
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-10"
+    }
+   },
+   {
+    "name": "Banff Sunshine Village",
+    "country": "Canada",
+    "top_m": 2686,
+    "base_m": 1661,
+    "depth_cm_upper_slopes_today": 44,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 6,
+    "slug": "banff_sunshine_village",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 0,
+     "2026-11-15": 1,
+     "2026-11-16": 5
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1661,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 1
+     },
+     "mid": {
+      "elev_m": 2173,
+      "depth_cm_model": 7,
+      "new_cm_next_7_days": 2
+     },
+     "top": {
+      "elev_m": 2686,
+      "depth_cm_model": 12,
+      "new_cm_next_7_days": 2
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 2860,
+      "max": 3270
+     },
+     "2026-11-14": {
+      "min": 1640,
+      "max": 2830
+     },
+     "2026-11-15": {
+      "min": 1460,
+      "max": 1870
+     }
+    },
+    "past_winters": {
+     "height_m": 2173,
+     "snow_cm_at_this_height_today_model": 3,
+     "deeper_than_n_of_past_winters": 0,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 29
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-09"
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/western-canada-snow-vs-past-winters-13-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/western-canada-snow-vs-past-winters-13-november-2026/map_t.webp",
+   "bytes": 74316,
+   "snow_frac": 0.4028,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Ahead of schedule or lagging? Western Canada snow measured against past winters (13 November)",
+   "description": "A single snowy week can flatter a season, so we weigh today's snow against many past winters in Western Canada. Is the snow store filling as usual? …",
+   "lede": "A single snowy week can flatter a season, so we weigh today's snow against many past winters in Western Canada. Is the snow store filling as usual? We compared today's snow at 5 resorts in Western Canada with the same date in each of the past 46 winters. 1 of them hold clearly more snow than normal. Snow in the mountains is water held back for spring: what falls now feeds rivers and reservoirs later.",
+   "sections": [
+    {
+     "h": "Normal, early or late?",
+     "p": [
+      "At 1,891 m on Big White, today's 43 cm is more than this date brought in 37 of the past 46 winters (usual: 30 cm): a good amount of water is already stored in the snow.",
+      "Less water is stored in the snow at Marmot Basin than usual: 20 cm at 2,114 m today, below the usual 79 cm; only 0 of the past 46 winters had less on 13 November.",
+      "At 1,369 m on Revelstoke the snow store is behind: 24 cm today against a usual 55 cm. On 13 November, only 5 of the past 46 winters held less.",
+      "Tweedsmuir Ski Club holds a normal amount of snow for the date at 1,619 m: 63 cm, more than in 30 of the past 46 winters (usual: 54 cm).",
+      "Less water is stored in the snow at Banff Sunshine Village than usual: 3 cm at 2,173 m today, below the usual 29 cm; only 0 of the past 46 winters had less on 13 November."
+     ]
+    },
+    {
+     "h": "How much snow is lying",
+     "p": [
+      "The deepest snowpack of this group is at Big White, about 86 cm on the upper slopes; next are Marmot Basin 54 cm and Revelstoke 53 cm.",
+      "In total, 201,390 km² of ground in Western Canada holds snow today, with snow at 31 of 57 resorts.",
+      "Our model estimates the snow over an area; a station measures it at one point. The truth on the slope is usually in between."
+     ]
+    },
+    {
+     "h": "The next days in the forecast",
+     "p": [
+      "By 16 November the forecast adds 21 cm at Revelstoke, 16 cm at Big White and 6 cm at Banff Sunshine Village to the snowpack.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "A rule of thumb that is rarely wrong: high and north-facing keeps snow, south-facing loses it first.",
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "Get a powder alert in the SnowScope app to know when Big White gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in Western Canada on 13 November 2026 (SnowScope snow model): Big White, Marmot Basin, Revelstoke, Tweedsmuir Ski Club, Banff Sunshine Village."
+   }
+  },
+  "fr": {
+   "title": "En avance ou en retard ? La neige dans l'Ouest canadien comparée aux hivers passés (13 novembre)",
+   "description": "La réserve de neige se remplit-elle comme d'habitude ? Nous avons comparé la neige du jour dans 5 stations dans l'Ouest canadien avec la même date …",
+   "lede": "La réserve de neige se remplit-elle comme d'habitude ? Nous avons comparé la neige du jour dans 5 stations dans l'Ouest canadien avec la même date lors de chacun des 46 hivers passés. 1 gardent nettement plus de neige que la normale. La neige en montagne, c'est de l'eau mise de côté pour le printemps : ce qui tombe maintenant alimente plus tard rivières et barrages.",
+   "sections": [
+    {
+     "h": "Normal, en avance ou en retard ?",
+     "p": [
+      "À 1 891 m à Big White, les 43 cm du jour dépassent ce que cette date a donné lors de 37 des 46 hivers passés (habituel : 30 cm) : une bonne quantité d'eau est déjà stockée dans la neige.",
+      "La neige stocke moins d'eau que d'habitude à Marmot Basin : 20 cm à 2 114 m aujourd'hui, sous les 79 cm habituels ; seuls 0 des 46 hivers passés en avaient moins un 13 novembre.",
+      "À 1 369 m à Revelstoke, la réserve de neige est en retard : 24 cm aujourd'hui contre 55 cm d'habitude. Un 13 novembre, seuls 5 des 46 hivers passés en gardaient moins.",
+      "Tweedsmuir Ski Club garde une quantité de neige normale pour la date à 1 619 m : 63 cm, plus que lors de 30 des 46 hivers passés (habituel : 54 cm).",
+      "La neige stocke moins d'eau que d'habitude à Banff Sunshine Village : 3 cm à 2 173 m aujourd'hui, sous les 29 cm habituels ; seuls 0 des 46 hivers passés en avaient moins un 13 novembre."
+     ]
+    },
+    {
+     "h": "Combien de neige au sol",
+     "p": [
+      "Le manteau le plus épais du groupe est à Big White, environ 86 cm sur le haut du domaine ; ensuite Marmot Basin 54 cm et Revelstoke 53 cm.",
+      "Aujourd'hui, 201 390 km² de sol dans l'Ouest canadien sont couverts de neige selon notre modèle, et 31 stations sur 57 ont de la neige sur le haut du domaine.",
+      "Deux sortes de chiffres ici : des estimations du modèle pour le haut de chaque domaine, et des mesures exactes mais limitées à un point, à la date indiquée."
+     ]
+    },
+    {
+     "h": "Les prochains jours dans la prévision",
+     "p": [
+      "De l'eau arrive sous forme de neige : d'ici le 16 novembre, notre prévision donne 21 cm à Revelstoke, 16 cm à Big White et 6 cm à Banff Sunshine Village.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Une règle simple, rarement fausse : en haut et au nord, la neige reste ; au sud, elle part en premier.",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Big White reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest canadien le 13 novembre 2026 (modèle de neige SnowScope) : Big White, Marmot Basin, Revelstoke, Tweedsmuir Ski Club, Banff Sunshine Village."
+   }
+  },
+  "de": {
+   "title": "Früh dran oder im Rückstand? Schnee in Westkanada im Vergleich mit früheren Wintern (13. November)",
+   "description": "Füllt sich der Schneespeicher wie üblich? Wir haben den heutigen Schnee in 5 Skigebieten in Westkanada mit demselben Datum in jedem der letzten 46 …",
+   "lede": "Füllt sich der Schneespeicher wie üblich? Wir haben den heutigen Schnee in 5 Skigebieten in Westkanada mit demselben Datum in jedem der letzten 46 Winter verglichen. 1 davon haben deutlich mehr Schnee als normal. Schnee in den Bergen ist Wasser, das für den Frühling zurückgehalten wird: Was jetzt fällt, speist später Flüsse und Stauseen.",
+   "sections": [
+    {
+     "h": "Normal, früh oder spät?",
+     "p": [
+      "Auf 1.891 m in Big White sind die heutigen 43 cm mehr, als dieses Datum in 37 der letzten 46 Winter brachte (üblich: 30 cm): Im Schnee ist schon viel Wasser gespeichert.",
+      "In Marmot Basin ist weniger Wasser im Schnee gespeichert als üblich: heute 20 cm auf 2.114 m, unter den üblichen 79 cm; nur 0 der letzten 46 Winter hatten am 13. November weniger.",
+      "Auf 1.369 m in Revelstoke hinkt der Schneespeicher hinterher: heute 24 cm bei üblichen 55 cm. Am 13. November hielten nur 5 der letzten 46 Winter weniger.",
+      "Tweedsmuir Ski Club hält auf 1.619 m eine für das Datum normale Schneemenge: 63 cm, mehr als in 30 der letzten 46 Winter (üblich: 54 cm).",
+      "In Banff Sunshine Village ist weniger Wasser im Schnee gespeichert als üblich: heute 3 cm auf 2.173 m, unter den üblichen 29 cm; nur 0 der letzten 46 Winter hatten am 13. November weniger."
+     ]
+    },
+    {
+     "h": "Wie viel Schnee liegt",
+     "p": [
+      "Die dickste Schneedecke dieser Gruppe hat Big White, etwa 86 cm in den oberen Hängen; danach kommen Marmot Basin 54 cm und Revelstoke 53 cm.",
+      "Heute sind 201.390 km² Boden in Westkanada mit Schnee bedeckt, sagt unser Modell, und 31 von 57 Skigebieten haben Schnee in den oberen Hängen.",
+      "Hier gibt es zwei Arten von Zahlen: Modellschätzungen für die oberen Hänge jedes Skigebiets und Stationsmessungen, die genau sind, aber nur einen Punkt am angegebenen Tag abdecken."
+     ]
+    },
+    {
+     "h": "Die nächsten Tage in der Prognose",
+     "p": [
+      "Mehr Wasser ist als Schnee unterwegs: Bis zum 16. November ergibt unsere Prognose 21 cm in Revelstoke, 16 cm in Big White und 6 cm in Banff Sunshine Village.",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Eine Faustregel, die selten falsch liegt: hoch und nordseitig hält Schnee, südseitig verliert ihn zuerst.",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Früher Schnee ist dünn. Bleib auf offenen, präparierten Pisten: Steine und Gras liegen oft knapp darunter.",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Big White Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe in Westkanada am 13. November 2026 (SnowScope-Schneemodell): Big White, Marmot Basin, Revelstoke, Tweedsmuir Ski Club, Banff Sunshine Village."
+   }
+  },
+  "it": {
+   "title": "In anticipo o in ritardo? La neve nel Canada occidentale misurata sugli inverni passati (13 novembre)",
+   "description": "La riserva di neve si sta riempiendo come al solito? Abbiamo confrontato la neve di oggi in 5 località nel Canada occidentale con la stessa data in …",
+   "lede": "La riserva di neve si sta riempiendo come al solito? Abbiamo confrontato la neve di oggi in 5 località nel Canada occidentale con la stessa data in ciascuno dei 46 inverni passati. 1 hanno nettamente più neve del normale. La neve in montagna è acqua trattenuta per la primavera: quello che cade ora alimenterà più tardi fiumi e invasi.",
+   "sections": [
+    {
+     "h": "Normale, in anticipo o in ritardo?",
+     "p": [
+      "A 1.891 m a Big White, i 43 cm di oggi sono più di quanto questa data abbia portato in 37 dei 46 inverni passati (abituale: 30 cm): nella neve c'è già molta acqua immagazzinata.",
+      "Nella neve di Marmot Basin c'è meno acqua del solito: 20 cm a 2.114 m oggi, sotto i 79 cm abituali; solo 0 dei 46 inverni passati ne avevano meno il 13 novembre.",
+      "A 1.369 m a Revelstoke la riserva di neve è indietro: 24 cm oggi contro 55 cm abituali. Il 13 novembre, solo 5 dei 46 inverni passati ne trattenevano meno.",
+      "Tweedsmuir Ski Club trattiene a 1.619 m una quantità di neve normale per la data: 63 cm, più che in 30 dei 46 inverni passati (abituale: 54 cm).",
+      "Nella neve di Banff Sunshine Village c'è meno acqua del solito: 3 cm a 2.173 m oggi, sotto i 29 cm abituali; solo 0 dei 46 inverni passati ne avevano meno il 13 novembre."
+     ]
+    },
+    {
+     "h": "Quanta neve c'è",
+     "p": [
+      "Il manto più spesso di questo gruppo è a Big White, circa 86 cm sui pendii superiori; poi vengono Marmot Basin 54 cm e Revelstoke 53 cm.",
+      "Oggi 201.390 km² di terreno nel Canada occidentale sono coperti di neve, dice il nostro modello, e 31 località su 57 hanno neve sui pendii superiori.",
+      "Qui ci sono due tipi di numeri: stime del modello per i pendii superiori di ogni località e misure delle stazioni, precise ma riferite a un solo punto alla data indicata."
+     ]
+    },
+    {
+     "h": "I prossimi giorni nella previsione",
+     "p": [
+      "Altra acqua è in arrivo sotto forma di neve: fino al 16 novembre la nostra previsione indica 21 cm a Revelstoke, 16 cm a Big White e 6 cm a Banff Sunshine Village.",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Una regola pratica che sbaglia di rado: alto ed esposto a nord tiene la neve, esposto a sud la perde per primo.",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "La neve di inizio stagione è sottile. Resta sulle piste aperte e battute: sassi ed erba sono appena sotto.",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Big White riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve nel Canada occidentale il 13 novembre 2026 (modello neve SnowScope): Big White, Marmot Basin, Revelstoke, Tweedsmuir Ski Club, Banff Sunshine Village."
+   }
+  },
+  "es": {
+   "title": "¿Adelantado o con retraso? La nieve en el oeste de Canadá comparada con otros inviernos (13 de noviembre)",
+   "description": "¿Se llena la reserva de nieve como de costumbre? Comparamos la nieve de hoy en 5 estaciones en el oeste de Canadá con la misma fecha de cada uno de …",
+   "lede": "¿Se llena la reserva de nieve como de costumbre? Comparamos la nieve de hoy en 5 estaciones en el oeste de Canadá con la misma fecha de cada uno de los 46 inviernos pasados. 1 guardan claramente más nieve de lo normal. La nieve en la montaña es agua guardada para la primavera: lo que cae ahora alimenta después ríos y embalses.",
+   "sections": [
+    {
+     "h": "¿Normal, adelantado o con retraso?",
+     "p": [
+      "A 1891 m en Big White, los 43 cm de hoy superan lo que dio esta fecha en 37 de los 46 inviernos pasados (lo habitual: 30 cm): ya hay una buena cantidad de agua almacenada en la nieve.",
+      "La nieve almacena menos agua de lo habitual en Marmot Basin: 20 cm a 2114 m hoy, por debajo de los 79 cm habituales; solo 0 de los 46 inviernos pasados tenían menos el 13 de noviembre.",
+      "A 1369 m en Revelstoke la reserva de nieve va con retraso: 24 cm hoy frente a unos 55 cm habituales. El 13 de noviembre, solo 5 de los 46 inviernos pasados guardaban menos.",
+      "Tweedsmuir Ski Club guarda una cantidad de nieve normal para la fecha a 1619 m: 63 cm, más que en 30 de los 46 inviernos pasados (lo habitual: 54 cm).",
+      "La nieve almacena menos agua de lo habitual en Banff Sunshine Village: 3 cm a 2173 m hoy, por debajo de los 29 cm habituales; solo 0 de los 46 inviernos pasados tenían menos el 13 de noviembre."
+     ]
+    },
+    {
+     "h": "Cuánta nieve hay",
+     "p": [
+      "El manto más grueso del grupo está en Big White, unos 86 cm en las pistas altas; después Marmot Basin 54 cm y Revelstoke 53 cm.",
+      "Hoy 201.390 km² de suelo en el oeste de Canadá están cubiertos de nieve, según nuestro modelo, y 31 de 57 estaciones tienen nieve en las pistas altas.",
+      "Aquí hay dos tipos de cifras: estimaciones del modelo para las pistas altas de cada estación, y medidas exactas pero limitadas a un punto, en la fecha indicada."
+     ]
+    },
+    {
+     "h": "Los próximos días en la previsión",
+     "p": [
+      "Llega más agua en forma de nieve: hasta el 16 de noviembre, nuestra previsión da 21 cm en Revelstoke, 16 cm en Big White y 6 cm en Banff Sunshine Village.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Una regla sencilla que casi nunca falla: arriba y al norte, la nieve aguanta; al sur, se va primero.",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "La nieve de principio de temporada es fina. Quédate en pistas abiertas y pisadas: piedras y hierba están justo debajo.",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Big White recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en el oeste de Canadá el 13 de noviembre 2026 (modelo de nieve de SnowScope): Big White, Marmot Basin, Revelstoke, Tweedsmuir Ski Club, Banff Sunshine Village."
+   }
+  },
+  "ar": {
+   "title": "قبل الوقت ولا متأخر؟ التلج فغرب كندا مقارن مع الشتوات اللي فاتو (13 نونبر)",
+   "description": "واش الخزان ديال التلج كيتعمر بحال العادة؟ قارنّا التلج ديال اليوم ف 5 محطات فغرب كندا مع نفس التاريخ فكل وحدة من 46 ديال الشتوات اللي فاتو. 1 منهم …",
+   "lede": "واش الخزان ديال التلج كيتعمر بحال العادة؟ قارنّا التلج ديال اليوم ف 5 محطات فغرب كندا مع نفس التاريخ فكل وحدة من 46 ديال الشتوات اللي فاتو. 1 منهم خازنين تلج أكثر من العادي بوضوح. التلج فالجبال هو ما مخزون للربيع: اللي طاح دابا غادي يعمر الوديان والسدود من بعد.",
+   "sections": [
+    {
+     "h": "عادي، بكري ولا متأخر؟",
+     "p": [
+      "على علو 1891 م ف Big White، 43 سم ديال اليوم كثر من اللي جاب هاد التاريخ ف 37 من 46 ديال الشتوات اللي فاتو (العادي: 30 سم): كمية مزيانة ديال الما مخزونة دابا فالتلج.",
+      "الما المخزون فالتلج ف Marmot Basin أقل من العادي: 20 سم على علو 2114 م اليوم، تحت 79 سم العادية؛ غير 0 من 46 ديال الشتوات اللي فاتو كان فيهم أقل نهار 13 نونبر.",
+      "على علو 1369 م ف Revelstoke الخزان ديال التلج متأخر: 24 سم اليوم مقابل 55 سم العادية. نهار 13 نونبر، غير 5 من 46 ديال الشتوات اللي فاتو خزنو أقل.",
+      "Tweedsmuir Ski Club فيها كمية عادية ديال التلج فهاد التاريخ على علو 1619 م: 63 سم، أكثر من 30 من 46 ديال الشتوات اللي فاتو (العادي: 54 سم).",
+      "الما المخزون فالتلج ف Banff Sunshine Village أقل من العادي: 3 سم على علو 2173 م اليوم، تحت 29 سم العادية؛ غير 0 من 46 ديال الشتوات اللي فاتو كان فيهم أقل نهار 13 نونبر."
+     ]
+    },
+    {
+     "h": "شحال ديال التلج كاين",
+     "p": [
+      "أعمق طبقة ديال التلج فهاد المجموعة كاينة ف Big White، تقريبا 86 سم فالجهة الفوقانية؛ ومن بعدها Marmot Basin 54 سم و Revelstoke 53 سم.",
+      "اليوم 201390 كم² ديال الأرض فغرب كندا مغطية بالتلج، حسب الموديل ديالنا، و 31 محطة من 57 فيهم التلج فالجهة الفوقانية.",
+      "جوج أنواع ديال الأرقام هنا: تقديرات ديال الموديل للجهة الفوقانية ديال كل محطة، وقياسات ديال المحطات اللي مضبوطة ولكن كتغطي نقطة وحدة فالتاريخ المكتوب."
+     ]
+    },
+    {
+     "h": "الأيام الجاية فالتوقعات",
+     "p": [
+      "ما آخر جاي على شكل تلج: حتى ل 16 نونبر، التوقعات ديالنا كتعطي 21 سم ف Revelstoke، 16 سم ف Big White و 6 سم ف Banff Sunshine Village.",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "قاعدة قليل فين كتغلط: العالي واللي كيشوف للشمال كيحافظ على التلج، واللي كيشوف للجنوب كيضيعو اللول.",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "التلج ديال بداية الموسم رقيق. بقى فالبيستات المحلولة والمدكوكة: الحجر والربيع يمكن يكونو تحت نيشان.",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Big White يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فغرب كندا نهار 13 نونبر 2026 (الموديل ديال SnowScope): Big White, Marmot Basin, Revelstoke, Tweedsmuir Ski Club, Banff Sunshine Village."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "hydro"
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "hydro"
+  },
+  "de": {
+   "writer": "template",
+   "voice": "hydro"
+  },
+  "it": {
+   "writer": "template",
+   "voice": "hydro"
+  },
+  "es": {
+   "writer": "template",
+   "voice": "hydro"
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "hydro"
+  }
+ },
+ "words_en": 353,
+ "indexable": true,
+ "main": {
+  "slug": "big_white_ski_resort",
+  "name": "Big White",
+  "lat": 49.7358,
+  "lon": -118.9487
+ },
+ "places": [
+  {
+   "name": "Big White",
+   "lat": 49.7358,
+   "lon": -118.9487
+  },
+  {
+   "name": "Marmot Basin",
+   "lat": 52.7963,
+   "lon": -118.1058
+  },
+  {
+   "name": "Revelstoke",
+   "lat": 50.9631,
+   "lon": -118.119
+  },
+  {
+   "name": "Tweedsmuir Ski Club",
+   "lat": 52.5367,
+   "lon": -125.8476
+  },
+  {
+   "name": "Banff Sunshine Village",
+   "lat": 51.0874,
+   "lon": -115.77
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "big_white_ski_resort",
+   "name": "Big White"
+  },
+  {
+   "slug": "marmot_basin",
+   "name": "Marmot Basin"
+  },
+  {
+   "slug": "revelstoke",
+   "name": "Revelstoke"
+  },
+  {
+   "slug": "tweedsmuir_ski_club",
+   "name": "Tweedsmuir Ski Club"
+  },
+  {
+   "slug": "banff_sunshine_village",
+   "name": "Banff Sunshine Village"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "big_white_ski_resort",
+    "name": "Big White",
+    "depth": 86,
+    "new72": 0,
+    "next": 16,
+    "top_m": 2271
+   },
+   {
+    "slug": "marmot_basin",
+    "name": "Marmot Basin",
+    "depth": 54,
+    "new72": 1,
+    "next": 3,
+    "top_m": 2504
+   },
+   {
+    "slug": "revelstoke",
+    "name": "Revelstoke",
+    "depth": 53,
+    "new72": 4,
+    "next": 21,
+    "top_m": 2224
+   },
+   {
+    "slug": "tweedsmuir_ski_club",
+    "name": "Tweedsmuir Ski Club",
+    "depth": 45,
+    "new72": 27,
+    "next": 4,
+    "top_m": 1650
+   },
+   {
+    "slug": "banff_sunshine_village",
+    "name": "Banff Sunshine Village",
+    "depth": 44,
+    "new72": 0,
+    "next": 6,
+    "top_m": 2686
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Avalanche Canada",
+   "url": "https://avalanche.ca/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@49.736,-118.949,9.0",
+ "seconds": 0.0,
+ "facts_used": 24,
+ "voice": "hydro",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 19.9,
+  "after": 19.9,
+  "with": "alps-dent-de-vaulion-snow-depth-today-11-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.114,
+  "with": "pyrenees-snow-vs-past-winters-4-november-2026"
+ },
+ "publish_utc": "2026-11-13T16:43:49Z"
+}

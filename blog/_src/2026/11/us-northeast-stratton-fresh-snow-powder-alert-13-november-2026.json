@@ -1,0 +1,770 @@
+{
+ "id": "2026-11-13-us_ne-powder",
+ "slug": "us-northeast-stratton-fresh-snow-powder-alert-13-november-2026",
+ "date": "2026-11-13",
+ "published_utc": "2026-11-13T17:11:40Z",
+ "updated_utc": "2026-11-13T17:11:40Z",
+ "region": "US_NE",
+ "angle": "powder",
+ "score": 53.0,
+ "signature": "stratton_mountain_resort:20|killington:10|mount_snow:10",
+ "keyword": {
+  "family": "fresh-snow",
+  "entity": "stratton_mountain_resort",
+  "region": "US_NE",
+  "date": "2026-11-13"
+ },
+ "tags": [
+  "powder",
+  "stations",
+  "where-to-ski",
+  "avalanche"
+ ],
+ "facts": {
+  "angle": "powder_alert",
+  "region": "US Northeast",
+  "date": "2026-11-13",
+  "weekday": "Friday",
+  "model_run": "2026-11-13",
+  "forecast_days": [
+   "2026-11-14",
+   "2026-11-15",
+   "2026-11-16"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 14420,
+   "resorts_with_snow": 28,
+   "resorts_in_region": 112
+  },
+  "region_before": {
+   "date": "2026-11-11",
+   "snow_covered_area_km2": 240,
+   "resorts_with_snow": 6
+  },
+  "region_forecast": {
+   "date": "2026-11-16",
+   "snow_covered_area_km2": 7130,
+   "resorts_with_snow": 30
+  },
+  "question": "Where did fresh snow fall in the last 72 hours, and is more coming?",
+  "resorts": [
+   {
+    "name": "Stratton",
+    "country": "United States",
+    "top_m": 1183,
+    "base_m": 607,
+    "depth_cm_upper_slopes_today": 12,
+    "new_cm_last_24h": 8,
+    "new_cm_last_72h": 16,
+    "new_cm_forecast_next_days": 2,
+    "slug": "stratton_mountain_resort",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 8,
+     "2026-11-13": 8,
+     "2026-11-14": 1,
+     "2026-11-15": 1,
+     "2026-11-16": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 607,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 4
+     },
+     "mid": {
+      "elev_m": 895,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 5
+     },
+     "top": {
+      "elev_m": 1183,
+      "depth_cm_model": 10,
+      "new_cm_next_7_days": 6
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 60,
+      "max": 690
+     },
+     "2026-11-14": {
+      "min": 10,
+      "max": 680
+     },
+     "2026-11-15": {
+      "min": 90,
+      "max": 750
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-11-04"
+    }
+   },
+   {
+    "name": "Killington Resort",
+    "country": "United States",
+    "top_m": 1262,
+    "base_m": 354,
+    "depth_cm_upper_slopes_today": 12,
+    "new_cm_last_24h": 4,
+    "new_cm_last_72h": 12,
+    "new_cm_forecast_next_days": 2,
+    "slug": "killington",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 8,
+     "2026-11-13": 4,
+     "2026-11-14": 1,
+     "2026-11-15": 1,
+     "2026-11-16": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 354,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 3,
+      "depth_cm_measured": 0
+     },
+     "mid": {
+      "elev_m": 808,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 5,
+      "depth_cm_measured": 0
+     },
+     "top": {
+      "elev_m": 1262,
+      "depth_cm_model": 11,
+      "new_cm_next_7_days": 5
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 190,
+      "max": 750
+     },
+     "2026-11-14": {
+      "min": 180,
+      "max": 770
+     },
+     "2026-11-15": {
+      "min": 260,
+      "max": 680
+     }
+    },
+    "past_winters": {
+     "height_m": 808,
+     "snow_cm_at_this_height_today_model": 8,
+     "deeper_than_n_of_past_winters": 42,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 1
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-11-08"
+    },
+    "nearest_station": {
+     "station": "Shrewsbury 0.8 W",
+     "elev_m": 453,
+     "depth_cm_measured": 0,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-12",
+     "km_away": 13.6
+    }
+   },
+   {
+    "name": "Mount Snow",
+    "country": "United States",
+    "top_m": 1093,
+    "base_m": 591,
+    "depth_cm_upper_slopes_today": 8,
+    "new_cm_last_24h": 8,
+    "new_cm_last_72h": 12,
+    "new_cm_forecast_next_days": 2,
+    "slug": "mount_snow",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 4,
+     "2026-11-13": 8,
+     "2026-11-14": 1,
+     "2026-11-15": 1,
+     "2026-11-16": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 591,
+      "depth_cm_model": 3,
+      "new_cm_next_7_days": 5
+     },
+     "mid": {
+      "elev_m": 842,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 5
+     },
+     "top": {
+      "elev_m": 1093,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 6
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 100,
+      "max": 720
+     },
+     "2026-11-14": {
+      "min": 40,
+      "max": 660
+     },
+     "2026-11-15": {
+      "min": 90,
+      "max": 750
+     }
+    },
+    "past_winters": {
+     "height_m": 842,
+     "snow_cm_at_this_height_today_model": 8,
+     "deeper_than_n_of_past_winters": 43,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 0
+    },
+    "satellite_latest_clear_view": {
+     "state": "patchy",
+     "seen_on": "2026-11-09"
+    }
+   },
+   {
+    "name": "Okemo Mountain",
+    "country": "United States",
+    "top_m": 1012,
+    "base_m": 353,
+    "depth_cm_upper_slopes_today": 5,
+    "new_cm_last_24h": 5,
+    "new_cm_last_72h": 11,
+    "new_cm_forecast_next_days": 1,
+    "slug": "okemo_mountain",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 6,
+     "2026-11-13": 5,
+     "2026-11-14": 0,
+     "2026-11-15": 1,
+     "2026-11-16": 0
+    }
+   },
+   {
+    "name": "Gore Mountain",
+    "country": "United States",
+    "top_m": 1092,
+    "base_m": 321,
+    "depth_cm_upper_slopes_today": 8,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 10,
+    "new_cm_forecast_next_days": 2,
+    "slug": "gore_mountain",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 7,
+     "2026-11-13": 3,
+     "2026-11-14": 1,
+     "2026-11-15": 1,
+     "2026-11-16": 0
+    }
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map_new",
+   "kind": "new_map",
+   "file": "blog/media/2026/11/us-northeast-stratton-fresh-snow-powder-alert-13-november-2026/map_new.webp",
+   "thumb": "blog/media/2026/11/us-northeast-stratton-fresh-snow-powder-alert-13-november-2026/map_new_t.webp",
+   "bytes": 47862,
+   "snow_frac": 0.9642,
+   "weak": false
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Stratton</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"49\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"315\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"49\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"395\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"49\" class=\"vl\">1</text><rect x=\"475\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"49\" class=\"vl\">1</text><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Killington Resort</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"83\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"315\" y=\"70\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"353\" y=\"83\" class=\"vl\">4</text><rect x=\"395\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Snow</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"117\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"395\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Okemo Mountain</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"52\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"290\" y=\"151\" class=\"vl\">6</text><rect x=\"315\" y=\"138\" width=\"44\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"362\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Gore Mountain</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"61\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"293\" y=\"185\" text-anchor=\"end\" class=\"vl in\">7</text><rect x=\"315\" y=\"172\" width=\"26\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"344\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"185\" class=\"vl\">1</text><rect x=\"475\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Stratton</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"49\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"315\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"49\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"395\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"49\" class=\"vl\">1</text><rect x=\"475\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"49\" class=\"vl\">1</text><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Killington Resort</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"83\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"315\" y=\"70\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"353\" y=\"83\" class=\"vl\">4</text><rect x=\"395\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Snow</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"117\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"395\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Okemo Mountain</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"52\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"290\" y=\"151\" class=\"vl\">6</text><rect x=\"315\" y=\"138\" width=\"44\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"362\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Gore Mountain</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"61\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"293\" y=\"185\" text-anchor=\"end\" class=\"vl in\">7</text><rect x=\"315\" y=\"172\" width=\"26\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"344\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"185\" class=\"vl\">1</text><rect x=\"475\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Stratton</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"49\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"315\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"49\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"395\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"49\" class=\"vl\">1</text><rect x=\"475\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"49\" class=\"vl\">1</text><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Killington Resort</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"83\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"315\" y=\"70\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"353\" y=\"83\" class=\"vl\">4</text><rect x=\"395\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Snow</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"117\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"395\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Okemo Mountain</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"52\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"290\" y=\"151\" class=\"vl\">6</text><rect x=\"315\" y=\"138\" width=\"44\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"362\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Gore Mountain</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"61\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"293\" y=\"185\" text-anchor=\"end\" class=\"vl in\">7</text><rect x=\"315\" y=\"172\" width=\"26\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"344\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"185\" class=\"vl\">1</text><rect x=\"475\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Stratton</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"49\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"315\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"49\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"395\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"49\" class=\"vl\">1</text><rect x=\"475\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"49\" class=\"vl\">1</text><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Killington Resort</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"83\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"315\" y=\"70\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"353\" y=\"83\" class=\"vl\">4</text><rect x=\"395\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Snow</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"117\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"395\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Okemo Mountain</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"52\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"290\" y=\"151\" class=\"vl\">6</text><rect x=\"315\" y=\"138\" width=\"44\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"362\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Gore Mountain</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"61\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"293\" y=\"185\" text-anchor=\"end\" class=\"vl in\">7</text><rect x=\"315\" y=\"172\" width=\"26\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"344\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"185\" class=\"vl\">1</text><rect x=\"475\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Stratton</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"49\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"315\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"49\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"395\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"49\" class=\"vl\">1</text><rect x=\"475\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"49\" class=\"vl\">1</text><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Killington Resort</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"83\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"315\" y=\"70\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"353\" y=\"83\" class=\"vl\">4</text><rect x=\"395\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Snow</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"117\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"395\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Okemo Mountain</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"52\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"290\" y=\"151\" class=\"vl\">6</text><rect x=\"315\" y=\"138\" width=\"44\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"362\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Gore Mountain</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"61\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"293\" y=\"185\" text-anchor=\"end\" class=\"vl in\">7</text><rect x=\"315\" y=\"172\" width=\"26\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"344\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"185\" class=\"vl\">1</text><rect x=\"475\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Stratton</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"49\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"315\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"49\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"395\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"49\" class=\"vl\">1</text><rect x=\"475\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"49\" class=\"vl\">1</text><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Killington Resort</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"83\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"315\" y=\"70\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"353\" y=\"83\" class=\"vl\">4</text><rect x=\"395\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Mount Snow</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"35\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"273\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"117\" text-anchor=\"end\" class=\"vl in\">8</text><rect x=\"395\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Okemo Mountain</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"52\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"290\" y=\"151\" class=\"vl\">6</text><rect x=\"315\" y=\"138\" width=\"44\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"362\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Gore Mountain</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"61\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"293\" y=\"185\" text-anchor=\"end\" class=\"vl in\">7</text><rect x=\"315\" y=\"172\" width=\"26\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"344\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"185\" class=\"vl\">1</text><rect x=\"475\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"487\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Stratton gets 6 in of fresh snow in 72 hours (US Northeast, 13 November)",
+   "description": "Stratton by height, from our model: top 4 in (10 cm) (3,881 ft / 1,183 m), middle 2 in (6 cm) (2,936 ft / 895 m), base 1 in (2 cm) (1,991 ft / …",
+   "lede": "Stratton by height, from our model: top 4 in (10 cm) (3,881 ft / 1,183 m), middle 2 in (6 cm) (2,936 ft / 895 m), base 1 in (2 cm) (1,991 ft / 607 m). Stratton: +6 in (16 cm) in 72 hours, 3 in (8 cm) of it in the last 24 hours. Our snow model now puts about 5 in (12 cm) on its upper slopes. The model is right more often than a hunch, and less often than we would like.",
+   "sections": [
+    {
+     "h": "New snow, ranked",
+     "p": [
+      "Runners-up over the last 72 hours: Killington Resort, Mount Snow and Okemo Mountain, with 5 in (12 cm), 5 in (12 cm) and 4 in (11 cm).",
+      "Snow-covered ground in the US Northeast: 5,568 sq mi (14,420 km²). Resorts with snow: 28 of 112."
+     ]
+    },
+    {
+     "h": "Station check",
+     "p": [
+      "How sure are we? Resort values are model estimates for the upper slopes; stations are measurements, each at one point on the date shown."
+     ]
+    },
+    {
+     "h": "Coming up",
+     "p": [
+      "Forecast to 16 November: 1 in (2 cm) at Stratton, 1 in (2 cm) at Killington Resort and 1 in (2 cm) at Mount Snow. Treat the later days with care.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    },
+    {
+     "h": "By height and slope",
+     "p": [
+      "The freezing level at Stratton reaches 295 ft (90 m) to 2,461 ft (750 m) on 15 November, cutting the resort in two: wet snow below, wintry above."
+     ]
+    },
+    {
+     "h": "Staying safe",
+     "p": [
+      "After fresh snow, wind builds drifts on sheltered slopes. Off-piste, the first days after a snowfall need the most care."
+     ]
+    }
+   ],
+   "advice": [
+    "Fresh snow has a short best-before time: the first hours. Early starts win.",
+    "Satellite images show it every winter: snow stays longest high up and on north-facing slopes, and goes first on south-facing ones.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Get a powder alert in the SnowScope app to know when Stratton gets fresh snow."
+   ],
+   "captions": {
+    "map_new": "New snow in the last 72 hours in the US Northeast, up to 13 November 2026 (SnowScope snow model).",
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast)."
+   }
+  },
+  "fr": {
+   "title": "Stratton reçoit 6 in de neige fraîche en 72 heures (Nord-Est américain, 13 novembre)",
+   "description": "Stratton par altitude, selon notre modèle : sommet 4 in (10 cm) (3 881 ft / 1 183 m), milieu 2 in (6 cm) (2 936 ft / 895 m), bas 1 in (2 cm) …",
+   "lede": "Stratton par altitude, selon notre modèle : sommet 4 in (10 cm) (3 881 ft / 1 183 m), milieu 2 in (6 cm) (2 936 ft / 895 m), bas 1 in (2 cm) (1 991 ft / 607 m). Stratton : +6 in (16 cm) en 72 heures, dont 3 in (8 cm) dans les dernières 24 heures. Notre modèle de neige place maintenant environ 5 in (12 cm) sur le haut du domaine. Le modèle a raison plus souvent qu'une intuition, et moins souvent que nous le voudrions.",
+   "sections": [
+    {
+     "h": "Neige fraîche, le classement",
+     "p": [
+      "Dauphins des 72 dernières heures : Killington Resort, Mount Snow et Okemo Mountain, avec 5 in (12 cm), 5 in (12 cm) et 4 in (11 cm).",
+      "5 568 sq mi (14 420 km²) de sol sont enneigés dans le Nord-Est américain aujourd'hui, et 28 stations sur 112 ont de la neige sur le haut du domaine."
+     ]
+    },
+    {
+     "h": "Contrôle des stations",
+     "p": [
+      "Quelle confiance ? Les valeurs des stations de ski sont des estimations du modèle pour le haut du domaine ; les stations de mesure donnent des mesures, chacune en un point à la date indiquée."
+     ]
+    },
+    {
+     "h": "À venir",
+     "p": [
+      "Prévision jusqu'au 16 novembre : 1 in (2 cm) à Stratton, 1 in (2 cm) à Killington Resort et 1 in (2 cm) à Mount Snow. Prudence sur les derniers jours.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    },
+    {
+     "h": "Par altitude et par pente",
+     "p": [
+      "L'isotherme 0 °C à Stratton monte entre 295 ft (90 m) et 2 461 ft (750 m) le 15 novembre et coupe la station en deux : mouillé en bas, hivernal en haut."
+     ]
+    },
+    {
+     "h": "Rester en sécurité",
+     "p": [
+      "Après une chute de neige, le vent forme des plaques sur les pentes abritées. En hors-piste, les premiers jours demandent le plus de prudence."
+     ]
+    }
+   ],
+   "advice": [
+    "La neige fraîche a une date limite courte : les premières heures. Ceux qui partent tôt gagnent.",
+    "Les images satellite le montrent chaque hiver : la neige reste le plus longtemps en altitude et au nord, et part d'abord au sud.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Stratton reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map_new": "Neige fraîche des 72 dernières heures dans le Nord-Est américain, jusqu'au 13 novembre 2026 (modèle SnowScope).",
+    "bars": "Neige fraîche par jour dans les stations en tête (jours passés : modèle ; barres claires : prévision)."
+   }
+  },
+  "de": {
+   "title": "Stratton bekommt 6 in Neuschnee in 72 Stunden (Nordosten der USA, 13. November)",
+   "description": "Stratton nach Höhe, aus unserem Modell: Gipfel 4 in (10 cm) (3.881 ft / 1.183 m), Mitte 2 in (6 cm) (2.936 ft / 895 m), Tal 1 in (2 cm) (1.991 ft / …",
+   "lede": "Stratton nach Höhe, aus unserem Modell: Gipfel 4 in (10 cm) (3.881 ft / 1.183 m), Mitte 2 in (6 cm) (2.936 ft / 895 m), Tal 1 in (2 cm) (1.991 ft / 607 m). Stratton: +6 in (16 cm) in 72 Stunden, 3 in (8 cm) davon in den letzten 24 Stunden. Unser Schneemodell sieht jetzt etwa 5 in (12 cm) in den oberen Hängen. Das Modell liegt öfter richtig als ein Bauchgefühl, und seltener, als uns lieb wäre.",
+   "sections": [
+    {
+     "h": "Neuschnee im Ranking",
+     "p": [
+      "Die Verfolger der letzten 72 Stunden: Killington Resort, Mount Snow und Okemo Mountain, mit 5 in (12 cm), 5 in (12 cm) und 4 in (11 cm).",
+      "5.568 sq mi (14.420 km²) Boden ist heute im Nordosten der USA schneebedeckt, und 28 von 112 Skigebieten haben Schnee in den oberen Hängen."
+     ]
+    },
+    {
+     "h": "Stations-Check",
+     "p": [
+      "Wie sicher sind wir? Die Skigebietswerte sind Modellschätzungen für die oberen Hänge; Stationen sind Messungen, jede an einem Punkt am angegebenen Tag."
+     ]
+    },
+    {
+     "h": "Demnächst",
+     "p": [
+      "Prognose bis zum 16. November: 1 in (2 cm) in Stratton, 1 in (2 cm) in Killington Resort und 1 in (2 cm) in Mount Snow. Die späteren Tage mit Vorsicht lesen.",
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    },
+    {
+     "h": "Nach Höhe und Hang",
+     "p": [
+      "Die Nullgradgrenze in Stratton erreicht am 15. November 295 ft (90 m) bis 2.461 ft (750 m) und teilt das Skigebiet: unten nasser Schnee, oben winterlich."
+     ]
+    },
+    {
+     "h": "Sicher unterwegs",
+     "p": [
+      "Nach Neuschnee bildet der Wind Triebschnee in windabgewandten Hängen. Abseits der Piste sind die ersten Tage am heikelsten."
+     ]
+    }
+   ],
+   "advice": [
+    "Neuschnee hat ein kurzes Haltbarkeitsdatum: die ersten Stunden. Frühaufsteher gewinnen.",
+    "Satellitenbilder zeigen es jeden Winter: Schnee bleibt weit oben und an Nordhängen am längsten und verschwindet zuerst an Südhängen.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Schnee auf der Karte heißt nicht, dass das Skigebiet offen ist: Prüfe Lifte und Öffnungstermine auf der Website des Skigebiets.",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Stratton Neuschnee bekommt."
+   ],
+   "captions": {
+    "map_new": "Neuschnee der letzten 72 Stunden im Nordosten der USA, bis 13. November 2026 (SnowScope-Modell).",
+    "bars": "Neuschnee pro Tag in den führenden Skigebieten (vergangene Tage: Modell; helle Balken: Prognose)."
+   }
+  },
+  "it": {
+   "title": "Stratton riceve 6 in di neve fresca in 72 ore (Nord-est degli USA, 13 novembre)",
+   "description": "Stratton per quota, dal nostro modello: vetta 4 in (10 cm) (3.881 ft / 1.183 m), metà 2 in (6 cm) (2.936 ft / 895 m), base 1 in (2 cm) (1.991 ft / …",
+   "lede": "Stratton per quota, dal nostro modello: vetta 4 in (10 cm) (3.881 ft / 1.183 m), metà 2 in (6 cm) (2.936 ft / 895 m), base 1 in (2 cm) (1.991 ft / 607 m). Stratton: +6 in (16 cm) in 72 ore, di cui 3 in (8 cm) nelle ultime 24 ore. Il nostro modello neve ora mette circa 5 in (12 cm) sui pendii superiori. Il modello ci prende più spesso di un'intuizione, e meno spesso di quanto vorremmo.",
+   "sections": [
+    {
+     "h": "Neve nuova, in classifica",
+     "p": [
+      "Le inseguitrici delle ultime 72 ore: Killington Resort, Mount Snow e Okemo Mountain, con 5 in (12 cm), 5 in (12 cm) e 4 in (11 cm).",
+      "5.568 sq mi (14.420 km²) di terreno sono innevati nel Nord-est degli USA oggi, e 28 località su 112 hanno neve sui pendii superiori."
+     ]
+    },
+    {
+     "h": "Controllo stazioni",
+     "p": [
+      "Quanto ne siamo sicuri? I valori delle località sono stime del modello per i pendii superiori; le stazioni sono misure, ognuna in un punto alla data indicata."
+     ]
+    },
+    {
+     "h": "In arrivo",
+     "p": [
+      "Previsione fino al 16 novembre: 1 in (2 cm) a Stratton, 1 in (2 cm) a Killington Resort e 1 in (2 cm) a Mount Snow. Prendi i giorni più lontani con cautela.",
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    },
+    {
+     "h": "Per quota e pendio",
+     "p": [
+      "Lo zero termico a Stratton arriva tra 295 ft (90 m) e 2.461 ft (750 m) il 15 novembre e taglia in due la località: neve bagnata sotto, invernale sopra."
+     ]
+    },
+    {
+     "h": "In sicurezza",
+     "p": [
+      "Dopo una nevicata il vento forma accumuli sui pendii sottovento. In fuoripista i primi giorni richiedono più prudenza."
+     ]
+    }
+   ],
+   "advice": [
+    "La neve fresca ha una scadenza breve: le prime ore. Chi parte presto vince.",
+    "Le immagini satellitari lo mostrano ogni inverno: la neve dura di più in quota e sui versanti nord, e sparisce prima su quelli a sud.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Neve sulla mappa non significa località aperta: controlla impianti e date di apertura sul sito della località.",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Stratton riceve neve fresca."
+   ],
+   "captions": {
+    "map_new": "Neve fresca delle ultime 72 ore nel Nord-est degli USA, fino al 13 novembre 2026 (modello SnowScope).",
+    "bars": "Neve fresca al giorno nelle località in testa (giorni passati: modello; barre chiare: previsione)."
+   }
+  },
+  "es": {
+   "title": "Stratton recibe 6 in de nieve nueva en 72 horas (Noreste de EE. UU., 13 de noviembre)",
+   "description": "Stratton por altura, según nuestro modelo: arriba 4 in (10 cm) (3881 ft / 1183 m), en medio 2 in (6 cm) (2936 ft / 895 m), base 1 in (2 cm) (1991 ft …",
+   "lede": "Stratton por altura, según nuestro modelo: arriba 4 in (10 cm) (3881 ft / 1183 m), en medio 2 in (6 cm) (2936 ft / 895 m), base 1 in (2 cm) (1991 ft / 607 m). Stratton: +6 in (16 cm) en 72 horas, 3 in (8 cm) de ellos en las últimas 24 horas. Nuestro modelo de nieve sitúa ahora unos 5 in (12 cm) en las pistas altas. El modelo acierta más que una corazonada, y menos de lo que nos gustaría.",
+   "sections": [
+    {
+     "h": "Nieve nueva, clasificada",
+     "p": [
+      "Escoltas de las últimas 72 horas: Killington Resort, Mount Snow y Okemo Mountain, con 5 in (12 cm), 5 in (12 cm) y 4 in (11 cm).",
+      "Hoy hay 5568 sq mi (14.420 km²) de suelo nevado en el noreste de EE. UU., y 28 de 112 estaciones tienen nieve en las pistas altas."
+     ]
+    },
+    {
+     "h": "Control de estaciones",
+     "p": [
+      "¿Qué confianza tenemos? Los valores de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida dan medidas, cada una en un punto en la fecha indicada."
+     ]
+    },
+    {
+     "h": "Lo próximo",
+     "p": [
+      "Previsión hasta el 16 de noviembre: 1 in (2 cm) en Stratton, 1 in (2 cm) en Killington Resort y 1 in (2 cm) en Mount Snow. Cuidado con los últimos días.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    },
+    {
+     "h": "Por altura y ladera",
+     "p": [
+      "La cota de congelación en Stratton llega a 295 ft (90 m)-2461 ft (750 m) el 15 de noviembre y parte la estación en dos: húmeda abajo, invernal arriba."
+     ]
+    },
+    {
+     "h": "Con seguridad",
+     "p": [
+      "Tras una nevada, el viento forma placas en las laderas resguardadas. Fuera de pista, los primeros días piden más prudencia."
+     ]
+    }
+   ],
+   "advice": [
+    "La nieve nueva tiene una fecha de caducidad corta: las primeras horas. Madrugar gana.",
+    "Las imágenes de satélite lo muestran cada invierno: la nieve dura más arriba y en las laderas norte, y se va antes en las sur.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Stratton recibe nieve nueva."
+   ],
+   "captions": {
+    "map_new": "Nieve nueva de las últimas 72 horas en el noreste de EE. UU., hasta el 13 de noviembre 2026 (modelo SnowScope).",
+    "bars": "Nieve nueva por día en las estaciones líderes (días pasados: modelo; barras claras: previsión)."
+   }
+  },
+  "ar": {
+   "title": "Stratton جاها 6 إنش ديال التلج الجديد ف 72 ساعة (شمال شرق ميريكان، 13 نونبر)",
+   "description": "Stratton حسب العلو، من الموديل ديالنا: الفوق 4 إنش (10 سم) (3881 قدم / 1183 م)، الوسط 2 إنش (6 سم) (2936 قدم / 895 م)، التحت 1 إنش (2 سم) (1991 قدم / …",
+   "lede": "Stratton حسب العلو، من الموديل ديالنا: الفوق 4 إنش (10 سم) (3881 قدم / 1183 م)، الوسط 2 إنش (6 سم) (2936 قدم / 895 م)، التحت 1 إنش (2 سم) (1991 قدم / 607 م). Stratton: +6 إنش (16 سم) ف 72 ساعة، منهم 3 إنش (8 سم) ف 24 ساعة اللخرة. الموديل ديال التلج ديالنا كيحط دابا تقريبا 5 إنش (12 سم) فالجهة الفوقانية. الموديل كيصيب كثر من الحدس، وأقل من اللي كنبغيو.",
+   "sections": [
+    {
+     "h": "التلج الجديد، مرتب",
+     "p": [
+      "اللي من بعد ف 72 ساعة اللي فاتو: Killington Resort، Mount Snow و Okemo Mountain، ب 5 إنش (12 سم)، 5 إنش (12 سم) و 4 إنش (11 سم).",
+      "5568 ميل² (14420 كم²) ديال الأرض مغطية بالتلج فشمال شرق ميريكان اليوم، و 28 محطة من 112 فيهم التلج فالجهة الفوقانية."
+     ]
+    },
+    {
+     "h": "التحقق بالمحطات",
+     "p": [
+      "شحال حنا متأكدين؟ القيم ديال المحطات تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس قياسات، كل وحدة فنقطة وحدة فالتاريخ المكتوب."
+     ]
+    },
+    {
+     "h": "اللي جاي",
+     "p": [
+      "التوقعات حتى ل 16 نونبر: 1 إنش (2 سم) ف Stratton، 1 إنش (2 سم) ف Killington Resort و 1 إنش (2 سم) ف Mount Snow. الأيام اللخرين خاصهم الحذر.",
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    },
+    {
+     "h": "حسب العلو والجهة",
+     "p": [
+      "علو الجليد ف Stratton كيوصل ل 295 قدم (90 م) حتى ل 2461 قدم (750 م) نهار 15 نونبر، وكيقسم المحطة على جوج: مبلول لتحت، بارد لفوق."
+     ]
+    },
+    {
+     "h": "باش تبقى سالم",
+     "p": [
+      "من بعد التلج الجديد، الريح كتجمعو فالجهات المحمية. برا البيست، الأيام الأولى هي اللي خاصها حذر كثر."
+     ]
+    }
+   ],
+   "advice": [
+    "التلج الجديد عندو تاريخ صلاحية قصير: الساعات الأولى. اللي ناض بكري ربح.",
+    "صور الساتليت كتبينها كل شتا: التلج كيبقى كثر فالعلو وفالجهات اللي كتشوف للشمال، وكيمشي اللول من اللي كتشوف للجنوب.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "التلج فالخريطة ماكيعنيش بلي المحطة محلولة: شوف التيليسييج والتواريخ فالموقع ديال المحطة.",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Stratton يجيها تلج جديد."
+   ],
+   "captions": {
+    "map_new": "التلج الجديد ديال 72 ساعة اللي فاتو فشمال شرق ميريكان، حتى ل 13 نونبر 2026 (الموديل ديال SnowScope).",
+    "bars": "التلج الجديد فكل نهار فالمحطات اللولين (الأيام اللي فاتو من الموديل، والخطوط الفاتحة = التوقعات)."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "de": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "it": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "es": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  }
+ },
+ "words_en": 249,
+ "indexable": false,
+ "main": {
+  "slug": "stratton_mountain_resort",
+  "name": "Stratton",
+  "lat": 43.1067,
+  "lon": -72.9091
+ },
+ "places": [
+  {
+   "name": "Stratton",
+   "lat": 43.1067,
+   "lon": -72.9091
+  },
+  {
+   "name": "Killington Resort",
+   "lat": 43.6125,
+   "lon": -72.7948
+  },
+  {
+   "name": "Mount Snow",
+   "lat": 42.9625,
+   "lon": -72.9102
+  },
+  {
+   "name": "Okemo Mountain",
+   "lat": 43.4115,
+   "lon": -72.7305
+  },
+  {
+   "name": "Gore Mountain",
+   "lat": 43.6815,
+   "lon": -74.0164
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "stratton_mountain_resort",
+   "name": "Stratton"
+  },
+  {
+   "slug": "killington",
+   "name": "Killington Resort"
+  },
+  {
+   "slug": "mount_snow",
+   "name": "Mount Snow"
+  },
+  {
+   "slug": "okemo_mountain",
+   "name": "Okemo Mountain"
+  },
+  {
+   "slug": "gore_mountain",
+   "name": "Gore Mountain"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "stratton_mountain_resort",
+    "name": "Stratton",
+    "depth": 12,
+    "new72": 16,
+    "next": 2,
+    "top_m": 1183
+   },
+   {
+    "slug": "killington",
+    "name": "Killington Resort",
+    "depth": 12,
+    "new72": 12,
+    "next": 2,
+    "top_m": 1262
+   },
+   {
+    "slug": "mount_snow",
+    "name": "Mount Snow",
+    "depth": 8,
+    "new72": 12,
+    "next": 2,
+    "top_m": 1093
+   },
+   {
+    "slug": "okemo_mountain",
+    "name": "Okemo Mountain",
+    "depth": 5,
+    "new72": 11,
+    "next": 1,
+    "top_m": 1012
+   },
+   {
+    "slug": "gore_mountain",
+    "name": "Gore Mountain",
+    "depth": 8,
+    "new72": 10,
+    "next": 2,
+    "top_m": 1092
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Mount Washington Avalanche Center",
+   "url": "https://www.mountwashingtonavalanchecenter.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@43.107,-72.909,9.0",
+ "seconds": 0.0,
+ "facts_used": 21,
+ "voice": "sat",
+ "media_ids": [
+  "map_new",
+  "bars"
+ ],
+ "overlap": {
+  "before": 42.8,
+  "after": 16.9,
+  "with": "western-canada-mount-cain-alpine-park-fresh-snow-powder-alert-12-november-2026",
+  "tries": 1
+ },
+ "similarity": {
+  "max": 0.213,
+  "with": "alps-glacier-3000-fresh-snow-powder-alert-11-november-2026"
+ },
+ "publish_utc": "2026-11-13T15:58:33Z"
+}
