@@ -618,6 +618,11 @@
     // the regional line must agree with the local points, else the title says only what the points say
     const lowSnow = Math.min(...all.filter((p) => p.cm >= 1).map((p) => p.elev));
     if (fit && all.some((p) => (p.elev < fit.sl - 50 && p.cm >= 3) || (p.elev > fit.sl + 150 && p.cm < 1))) fit = { ...fit, local: false };
+    // the regional height line is drawn only where it really goes through this spot's points (owner 2026-11-13:
+    // a line beside the points "has no sense"); otherwise no line, the points speak for themselves
+    const own = [...P, ...(o.here && o.here.elev != null && o.here.cm != null ? [o.here] : [])].sort((a, b) => a.elev - b.elev);
+    if (fit && fit.local !== false && fit.b >= 0.5 && own.some((p) => { const m = Math.max(0, fit.b * (p.elev - fit.sl) / 100);
+      return Math.abs(m - p.cm) > Math.max(4, 0.25 * Math.max(m, p.cm)); })) fit = { ...fit, local: false };
     if (!anySnow) title = t("No snow at any height here yet");
     else if (fit && fit.local === false) title = all.some((p) => p.cm < 1) ? t("Snow from ~{a} up", el(Math.round(lowSnow / 50) * 50)) : t("More snow higher up");
     else if (fit && fit.b >= 0.5 && fit.sl <= zmin0) title = t("Snow all the way down, ~{b} more every 100 m higher", "", bTxt);
@@ -629,7 +634,7 @@
     for (const v of ticks(cmax / 1.1)) s += '<line class="g" x1="' + f1(X(v)) + '" x2="' + f1(X(v)) + '" y1="' + (H - bot) + '" y2="' + (H - bot + 4) + '"/><text class="ax" x="' + f1(X(v)) + '" y="' + (H - 6) + '" text-anchor="middle">' + esc(dep(v)) + "</text>";
     s += '<line class="ax0" x1="' + X(0) + '" x2="' + X(0) + '" y1="' + top + '" y2="' + (H - bot) + '"/><text class="ax" x="' + f1(X(0)) + '" y="' + (H - 6) + '">0</text>';
     let slLab = null;
-    if (fit && fit.b >= 0.5) {
+    if (fit && fit.local !== false && fit.b >= 0.5) {
       const z0 = Math.max(zlo, fit.sl), c1 = fit.b * (zhi - fit.sl) / 100;
       s += '<path class="lapse" d="M' + f1(X(fit.b * (z0 - fit.sl) / 100)) + "," + f1(Y(z0)) + "L" + f1(X(c1)) + "," + f1(Y(zhi)) + '"/>';
       if (fit.sl > zlo + 20 && fit.sl < zhi - 20) {

@@ -108,7 +108,7 @@
   // the range closest to the visitor (time zone, then browser country / language; a granted GPS refines it after the
   // map loads, see nearMe) > the region with the most resorts with snow today
   const RANGE_BOX = { ALPS: [4.5, 43.5, 16.5, 48.5], PYRENEES: [-2, 42, 3.5, 43.4], ATLAS: [-10.5, 29, -1.5, 36],
-    US_WEST: [-125, 33, -104, 49], CA_WEST: [-128, 49, -113, 54.5], US_NE: [-75.5, 42.5, -70.5, 45.5] };
+    US_WEST: [-125, 33, -104, 49], CA_WEST: [-128, 49, -113, 54.5], US_NE: [-75.5, 42.5, -70.5, 45.5], SCANDES: [5, 58.5, 31, 70.5] };
   const hasRegion = (c) => DATA.regions.some((r) => r.code === c);
   function nearestRange(lat, lon) {
     let best = null, bd = Infinity;
@@ -129,9 +129,12 @@
       : /^America\/(Vancouver|Edmonton|Calgary|Whitehorse|Yellowknife|Dawson_Creek|Fort_Nelson|Creston)$/.test(tz) ? "CA_WEST"
       : /^America\/(New_York|Toronto|Montreal|Detroit|Halifax|Moncton|Indiana\/.*|Kentucky\/.*|St_Johns)$|^US\/Eastern$/.test(tz) ? "US_NE"
       : /^(America\/|US\/|Pacific\/Honolulu)/.test(tz) ? "US_WEST"
+      : /^Europe\/(Stockholm|Oslo|Helsinki|Copenhagen|Mariehamn)$|^Arctic\/Longyearbyen$|^Atlantic\/Reykjavik$/.test(tz) ? (hasRegion("SCANDES") ? "SCANDES" : "ALPS")
       : /^(Europe|Atlantic)\//.test(tz) ? "ALPS" : null;
-    const byCc = { MA: "ATLAS", DZ: "ATLAS", TN: "ATLAS", ES: "PYRENEES", AD: "PYRENEES", PT: "PYRENEES", US: "US_WEST", CA: "CA_WEST" }[(cc || "").toUpperCase()];
-    const byLang = { ar: "ATLAS", es: "PYRENEES", ca: "PYRENEES", eu: "PYRENEES", fr: "ALPS", de: "ALPS", it: "ALPS", sl: "ALPS" }[lang];
+    const byCc = { MA: "ATLAS", DZ: "ATLAS", TN: "ATLAS", ES: "PYRENEES", AD: "PYRENEES", PT: "PYRENEES", US: "US_WEST", CA: "CA_WEST",
+      SE: "SCANDES", NO: "SCANDES", FI: "SCANDES", DK: "SCANDES", IS: "SCANDES" }[(cc || "").toUpperCase()];
+    const byLang = { ar: "ATLAS", es: "PYRENEES", ca: "PYRENEES", eu: "PYRENEES", fr: "ALPS", de: "ALPS", it: "ALPS", sl: "ALPS",
+      sv: "SCANDES", nb: "SCANDES", no: "SCANDES", nn: "SCANDES", fi: "SCANDES", da: "SCANDES" }[lang];
     return [byTz, byCc, byLang].find((c) => c && hasRegion(c)) || null;
   }
   const startFixed = () => !!(DATA.regions.find((r) => slugOf(r.code) === location.hash.slice(1)) || (store.get("ss_region") && store.get("ss_region_pick")));
@@ -2669,7 +2672,7 @@
     const [cin, cout] = stayDates(o), lang = String(I18N.lang || "en").toLowerCase();
     const q = new URLSearchParams({ aid: c.aid, ...(loc || stayLocs(o)[0]), checkin: cin, checkout: cout, adults: String(Math.min(Math.max(o.adults | 0 || 2, 1), 16)),
       campaign: ("snowscope_web_" + o.where + "map").replace(/[^a-z0-9_]/gi, ""), maincolor: "1463F3", hidesettings: "true", hidebrandlogo: "true", hidefooter: "true",
-      ljs: STAY_LJS.has(lang) ? lang : lang === "ar" ? "fr" : "en", currency: U.us() ? "USD" : "EUR", unitsystem: U.us() ? "imperial" : "metric", mapstyle: isDarkTheme() ? "dark" : "light" });
+      ljs: STAY_LJS.has(lang) ? lang : lang === "ar" ? "fr" : lang === "nb" ? "no" : "en", currency: U.us() ? "USD" : (SS.stayCur && SS.stayCur()) || "EUR", unitsystem: U.us() ? "imperial" : "metric", mapstyle: isDarkTheme() ? "dark" : "light" });
     if (o.f && o.f.budget) { q.set("max", "150"); q.set("priceper", "nightly"); }
     if (o.f && o.f.rentals) q.set("showhotels", "false");
     if (o.f && o.f.rated) q.set("minguestrating", "8");
@@ -2704,6 +2707,7 @@
     const q = new URLSearchParams({ aid: c.aid });
     if (loc && loc.address) q.set("address", loc.address); else { q.set("lat", o.lat.toFixed(4)); q.set("lng", o.lon.toFixed(4)); if (o.place) q.set("address", o.place); }
     q.set("checkin", cin); q.set("checkout", cout); q.set("adults", String(o.adults || 2)); q.set("campaign", "snowscope_web_" + o.where + "allez");
+    const cur = SS.stayCur && SS.stayCur(); if (cur) q.set("currency", cur);       // Nordic visitors: SEK / NOK / EUR
     return "https://www.stay22.com/allez/roam?" + q.toString();
   }
   function stayMapHref(lat, lon, place) {      // "See other deals" in the map popup: the same checked map, full page
@@ -2981,12 +2985,25 @@
     if (hb) hb.insertAdjacentHTML("afterend", followResort(x) + (window.Follow && Follow.appCard ? Follow.appCard({ slug: x.slug, name: x.short || x.name, via: "resort" }) : ""));   // + "Get the app" card (owner 2026-11-12)
     if (ra) ra.insertAdjacentHTML("afterend", '<div id="rLive"></div>');
     liveRows(x);
+    jobsRow(x);
     const gs = box.querySelector("[data-gostays]");
     if (gs) gs.onclick = () => { const d = box.querySelector("details.stays"); if (d) { d.open = true; d.scrollIntoView({ behavior: "smooth", block: "start" }); } };
     afterRender();
     daysChart(x, res);
     histChart(x); resortStrip(x);
     forecast(x);
+  }
+  // Ski jobs (docs/JOBS.md, owner 2026-11-13): "Jobs at this resort" when the employer feeds list open jobs here
+  // (jobs/resorts.json = {resort slug: {n, key}}, written by the daily jobs run); nothing when there are none
+  let jobsIdx = null;
+  function jobsRow(x) {
+    if (!jobsIdx) jobsIdx = SS.getJSON(BASE + "jobs/resorts.json").catch(() => ({}));
+    jobsIdx.then((j) => {
+      const e = j && j[x.slug], box = $("pbody"); if (!e || !e.n || st.slug !== x.slug || !box || box.querySelector("[data-jobsrow]")) return;
+      const at = box.querySelector(".rowlink") || box.querySelector("#rLive"); if (!at) return;
+      at.insertAdjacentHTML("afterend", '<a class="rowlink" data-jobsrow href="' + BASE + "jobs/" + encodeURIComponent(e.key) + '/"><span class="ms">work</span><span><b>' + esc(I18N.t("Jobs at this resort")) +
+        "</b><small>" + esc(I18N.t("{a} open jobs: lifts, ski school, kitchens, hotels").replace("{a}", e.n)) + '</small></span><span class="ms">chevron_right</span></a>');
+    });
   }
   // "3D videos" card (Powder tab): the first demo cover from the static studio/demos.json, opens the 3D Studio page
   let demosLoad = null;

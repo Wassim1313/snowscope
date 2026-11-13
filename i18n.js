@@ -6,11 +6,15 @@
    snow = التلج · resort = المحطة · piste = البيست · new snow = تلج جديد · depth = العلو ديال التلج ·
    forecast = التوقعات · powder = التلج الطري · upper slopes = الجهة الفوقانية · past winters = الشتوات اللي فاتو ·
    station (measuring) = محطة ديال القياس · places to stay = بلايص المبيت · free = فابور · ads = الإشهار.
+   Swedish (sv), Norwegian Bokmål (nb) and Finnish (fi), owner 2026-11-13: their table is i18n-nordic.json next to this
+   file ({"T": {English: [sv, nb, fi]}, "P": {...}}), fetched only by visitors in those languages; a string it does not
+   carry stays in English. Browser "no" / "nn" -> nb.
    Language: ?lang= > remembered choice > browser language > English. */
 (() => {
   "use strict";
-  const LANGS = { en: "English", fr: "Français", de: "Deutsch", it: "Italiano", es: "Español", ar: "الدارجة" };
-  const LOCALE = { en: "en-GB", fr: "fr-FR", de: "de-DE", it: "it-IT", es: "es-ES", ar: "ar-MA" };
+  const LANGS = { en: "English", fr: "Français", de: "Deutsch", it: "Italiano", es: "Español", ar: "الدارجة", sv: "Svenska", nb: "Norsk", fi: "Suomi" };
+  const LOCALE = { en: "en-GB", fr: "fr-FR", de: "de-DE", it: "it-IT", es: "es-ES", ar: "ar-MA", sv: "sv-SE", nb: "nb-NO", fi: "fi-FI" };
+  const SELF = document.currentScript && document.currentScript.src;
   // columns: fr, de, it, es, ar
   const T = {
     "Units": ["Unités", "Einheiten", "Unità", "Unidades", "الوحدات"],
@@ -23,6 +27,11 @@
       "Gratis: un aviso cuando llega la nieve y la previsión cada mañana.", "فابور: ميساج ملي يجي التلج، والتوقعات كل صباح."],
     // lodging pins on the main map (OpenStreetMap places + Stay22 link), owner 2026-11-09
     "Check prices": ["Voir les prix", "Preise prüfen", "Vedi i prezzi", "Ver precios", "شوف الأثمنة"],
+    // Ski jobs section (docs/JOBS.md, owner 2026-11-13): header link + "Jobs at this resort" on the resort panel
+    "Ski jobs": ["Emplois en station", "Jobs im Skigebiet", "Lavoro nelle stazioni", "Empleo en estaciones", "خدمة فمحطات التزلج"],
+    "Jobs at this resort": ["Emplois dans cette station", "Jobs in diesem Skigebiet", "Lavoro in questa stazione", "Empleo en esta estación", "الخدمة فهاد المحطة"],
+    "{a} open jobs: lifts, ski school, kitchens, hotels": ["{a} offres : remontées, école de ski, cuisine, hôtels", "{a} offene Stellen: Lifte, Skischule, Küche, Hotel",
+      "{a} offerte: impianti, scuola sci, cucina, hotel", "{a} ofertas: remontes, escuela de esquí, cocina, hoteles", "{a} خدمة: التيليسييج، مدرسة التزلج، الكوزينة، الفنادق"],
     "Hotel": ["Hôtel", "Hotel", "Hotel", "Hotel", "أوطيل"],
     "Chalet": ["Chalet", "Chalet", "Chalet", "Chalet", "شالي"],
     "Guest house": ["Maison d'hôtes", "Gästehaus", "Pensione", "Casa de huéspedes", "دار الضيافة"],
@@ -996,36 +1005,38 @@
   const toMetric = (k) => k.replace(/\u00a0mph(?![\w])/g, " km/h").replace(/\u00a0in(?![\w])/g, " cm").replace(/\u00a0ft(?![\w])/g, " m").replace(/\u00a0mi(?![\w])/g, " km");
   const toUS = (r) => r.replace(/ km\/h(?![\w])/g, "\u00a0mph").replace(/ cm(?![\w])/g, "\u00a0in").replace(/ km(?![\w])/g, "\u00a0mi").replace(/ m(?![\w])/g, "\u00a0ft")
     .replace(/كم\/س/g, "ميل/س").replace(/سم/g, "إنش").replace(/كم/g, "ميل").replace(/(^|\s)م(?=\s|$|[.,،])/g, "$1قدم");
-  const COL = { fr: 0, de: 1, it: 2, es: 3, ar: 4 };
+  const COL = { fr: 0, de: 1, it: 2, es: 3, ar: 4, sv: 5, nb: 6, fi: 7 };
+  const ALIAS = { no: "nb", nn: "nb" };
   const pick = () => {
     let q = null;
     try { q = new URLSearchParams(location.search).get("lang"); } catch { /* ignore */ }
     if (q && LANGS[q]) { try { localStorage.setItem("ss_lang", q); } catch { /* private */ } return q; }
     try { const s = localStorage.getItem("ss_lang"); if (s && LANGS[s]) return s; } catch { /* private */ }
-    for (const l of navigator.languages || [navigator.language || "en"]) { const k = String(l).slice(0, 2).toLowerCase(); if (LANGS[k]) return k; }
+    for (const l of navigator.languages || [navigator.language || "en"]) { let k = String(l).slice(0, 2).toLowerCase(); k = ALIAS[k] || k; if (LANGS[k]) return k; }
     return "en";
   };
   const lang = pick();
   const col = COL[lang];
   document.documentElement.lang = lang === "ar" ? "ar-MA" : lang;
   if (lang === "ar") document.documentElement.dir = "rtl";
-  const pats = col == null ? [] : Object.entries(P).map(([k, v]) => {
+  const mkPats = () => col == null ? [] : Object.entries(P).filter(([, v]) => v[col] != null).map(([k, v]) => {
     const names = [];
     const re = new RegExp("^" + k.replace(/[.*+?^$()|[\]\\]/g, "\\$&").replace(/\{([a-z])\}/g, (_, n) => { names.push(n); return "(.+?)"; }) + "$");
     return [re, names, v[col]];
   });
+  let pats = mkPats();
   function tr(s) {
     if (col == null) return s;
     const k0 = s.trim();
     if (!k0 || k0.length > 400) return s;
     const us = US_IN.test(k0), k = us ? toMetric(k0) : k0;     // "+4.7 in new" is translated on "+4.7 cm new"
     const hit = T[k];
-    if (hit) return s.replace(k0, us ? toUS(hit[col]) : hit[col]);
+    if (hit && hit[col] != null) return s.replace(k0, us ? toUS(hit[col]) : hit[col]);
     for (const [re, names, out] of pats) {
       const m = re.exec(k);
       if (m) {
         let r = out;
-        names.forEach((n, i) => { const v = m[i + 1], tv = T[v] || T[v.replace(/^the /, "")]; r = r.replace("{" + n + "}", tv ? tv[col] : v); });
+        names.forEach((n, i) => { const v = m[i + 1], tv = T[v] || T[v.replace(/^the /, "")]; r = r.replace("{" + n + "}", tv && tv[col] != null ? tv[col] : v); });
         return s.replace(k0, us ? toUS(r) : r);
       }
     }
@@ -1033,7 +1044,7 @@
   }
   // a template with metric units ("{a} m higher"), translated, units swapped when US is on, then filled
   function tu(tpl, ...vals) {
-    let r = col == null ? tpl : (T[tpl] ? T[tpl][col] : tr(tpl));
+    let r = col == null ? tpl : (T[tpl] && T[tpl][col] != null ? T[tpl][col] : tr(tpl));
     if (usOn()) r = toUS(r);
     vals.forEach((v, i) => { r = r.replace("{" + "ab"[i] + "}", v); });
     return r;
@@ -1058,6 +1069,18 @@
       }).observe(document.body, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: ATTRS });
     };
     if (document.body) go(); else document.addEventListener("DOMContentLoaded", go);
+  }
+  // sv / nb / fi: load their table, merge it as columns 5-7, translate what is already on the page
+  if (col >= 5 && SELF && window.fetch) {
+    fetch(new URL("i18n-nordic.json", SELF).href).then((r) => (r.ok ? r.json() : null)).then((J) => {
+      if (!J) return;
+      const put = (dst, src) => { for (const [k, v] of Object.entries(src || {})) { if (!Array.isArray(v)) continue; const row = dst[k] || (dst[k] = [null, null, null, null, null]); row[5] = v[0]; row[6] = v[1]; row[7] = v[2]; } };
+      put(T, J.T); put(P, J.P);
+      pats = mkPats();
+      const w = () => walk(document.body);
+      if (document.body) w(); else document.addEventListener("DOMContentLoaded", w);
+      document.dispatchEvent(new Event("i18n-ready"));
+    }).catch(() => {});
   }
   function menu(anchor) {
     const ul = document.createElement("div");

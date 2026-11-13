@@ -46,6 +46,22 @@
           c_rental_powder: "ثلج جديد في {r}: اكتري الزلاجات", c_rental: "اكتري الزلاجات في {r}", c_lesson: "دروس وجولات في {r}",
           c_transfer: "النقل من المطار إلى {r} · {d}", c_pass: "تذاكر وعروض التزلج · {r}", c_stay: "إقامة قرب {r} · {d}",
           c_insurance: "تأمين سفر للتزلج ليوم {d}", c_gear: "معدات التزلج للشتاء المقبل", note: "روابط شركاء: قد نحصل على عمولة." },
+    // Nordic (owner 2026-11-13)
+    sv: { s_title: "Snöoväder på väg {w}: +{n} cm", s_stay: "Boende för de dagarna", s_rent: "Hyr skidor för {d}", h: "Planera resan", partner: "Partner", stay: "Boende", rental: "Skiduthyrning", transfer: "Transfer", pass: "Liftkort",
+          lesson: "Skidskola", insurance: "Försäkring", gear: "Utrustning",
+          c_rental_powder: "Nysnö i {r}: hyr skidor", c_rental: "Hyr skidor i {r}", c_lesson: "Skidskola och turer i {r}",
+          c_transfer: "Flygplatstransfer till {r} · {d}", c_pass: "Liftkort och skidpaket · {r}", c_stay: "Boende nära {r} · {d}",
+          c_insurance: "Reseförsäkring för skidåkning, {d}", c_gear: "Skidutrustning för nästa vinter", note: "Partnerlänkar: vi kan få en provision." },
+    nb: { s_title: "Snøstorm på vei {w}: +{n} cm", s_stay: "Overnatting for de dagene", s_rent: "Lei ski for {d}", h: "Planlegg turen", partner: "Partner", stay: "Overnatting", rental: "Skiutleie", transfer: "Transfer", pass: "Heiskort",
+          lesson: "Skiskole", insurance: "Forsikring", gear: "Utstyr",
+          c_rental_powder: "Nysnø i {r}: lei ski", c_rental: "Lei ski i {r}", c_lesson: "Skiskole og turer i {r}",
+          c_transfer: "Flyplasstransfer til {r} · {d}", c_pass: "Heiskort og skipakker · {r}", c_stay: "Overnatting nær {r} · {d}",
+          c_insurance: "Reiseforsikring for skiferie, {d}", c_gear: "Skiutstyr til neste vinter", note: "Partnerlenker: vi kan få en provisjon." },
+    fi: { s_title: "Lumimyräkkä tulossa {w}: +{n} cm", s_stay: "Majoitus niille päiville", s_rent: "Vuokraa sukset: {d}", h: "Suunnittele matka", partner: "Kumppani", stay: "Majoitus", rental: "Välinevuokraus", transfer: "Kuljetukset", pass: "Hissilippu",
+          lesson: "Hiihtokoulu", insurance: "Vakuutus", gear: "Varusteet",
+          c_rental_powder: "Uutta lunta, {r}: vuokraa sukset", c_rental: "Vuokraa sukset, {r}", c_lesson: "Hiihtokoulu ja retket, {r}",
+          c_transfer: "Lentokenttäkuljetus, {r} · {d}", c_pass: "Hissiliput ja hiihtopaketit · {r}", c_stay: "Majoitus lähellä, {r} · {d}",
+          c_insurance: "Hiihtomatkan matkavakuutus, {d}", c_gear: "Hiihtovarusteet ensi talveksi", note: "Kumppanilinkit: voimme saada palkkion." },
   };
   const STORM_CM = 20, STORM_DAY_CM = 3;
   const ICON = { stay: "hotel", rental: "downhill_skiing", transfer: "airport_shuttle", pass: "confirmation_number", lesson: "school",

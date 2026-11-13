@@ -339,6 +339,16 @@
     const iso = (x) => x.getFullYear() + "-" + String(x.getMonth() + 1).padStart(2, "0") + "-" + String(x.getDate()).padStart(2, "0");
     return [iso(fri), iso(new Date(fri.getFullYear(), fri.getMonth(), fri.getDate() + 2))];
   }
+  // Nordic visitors (owner 2026-11-13): partner prices in their currency (Stay22 map + link "currency"), from the page
+  // language (sv / nb / fi), else the visitor's time zone; everyone else: Stay22's own choice
+  function stayCur() {
+    const l = (window.I18N && I18N.lang) || "";
+    const byLang = { sv: "SEK", nb: "NOK", fi: "EUR" }[l];
+    if (byLang) return byLang;
+    let tz = ""; try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ""; } catch { /* old browser */ }
+    return { "Europe/Stockholm": "SEK", "Europe/Oslo": "NOK", "Arctic/Longyearbyen": "NOK", "Europe/Helsinki": "EUR",
+             "Europe/Mariehamn": "EUR", "Europe/Copenhagen": "DKK" }[tz] || null;
+  }
   function stayLink(lat, lon, place, day) {
     const s = S.cfg && S.cfg.stay22;
     if (!s || !s.link) return null;
@@ -346,9 +356,12 @@
     const today = new Date().toISOString().slice(0, 10);
     let [cin, cout] = nextWeekend();
     if (day && day > today) { cin = day; const d = new Date(day + "T12:00:00Z"); d.setUTCDate(d.getUTCDate() + 1); cout = d.toISOString().slice(0, 10); }
-    const lang = (navigator.language || "en").slice(0, 2).toLowerCase();
+    const lang = (window.I18N && I18N.lang) || (navigator.language || "en").slice(0, 2).toLowerCase();
     const v = { lat: lat.toFixed(4), lon: lon.toFixed(4), place, checkin: cin, checkout: cout, adults: "2", lang };
-    return s.link.replace(/\{([a-z_]+)\}/g, (m, k) => (k in v ? encodeURIComponent(v[k]) : m));
+    let u = s.link.replace(/\{([a-z_]+)\}/g, (m, k) => (k in v ? encodeURIComponent(v[k]) : m));
+    const cur = stayCur();
+    if (cur && !/[?&]currency=/.test(u)) u += (u.includes("?") ? "&" : "?") + "currency=" + cur;
+    return u;
   }
   function stayMapUrl(lat, lon, place) {
     const s = S.cfg && S.cfg.stay22;
@@ -357,6 +370,8 @@
     // address + view box, not lat/lng: Stay22 refuses most lat/lng (its reverse geocoder, 2026-11-03, see app.js stayLocs)
     const q = new URLSearchParams({ aid: s.aid, address: place || "", nelat: (lat + 0.035).toFixed(4), nelng: (lon + 0.05).toFixed(4), swlat: (lat - 0.035).toFixed(4), swlng: (lon - 0.05).toFixed(4), checkin: cin,
                                     checkout: cout, adults: "2", campaign: s.campaign || "snowscope_web", maincolor: "1463F3" });
+    const cur = stayCur();
+    if (cur) q.set("currency", cur);
     return "https://www.stay22.com/embed/gm?" + q.toString();
   }
   /** "Stay near <place>" block: affiliate link + a hotels map that only loads when asked (no third-party load before). */
@@ -734,6 +749,6 @@
     return S;
   }
 
-  window.SS = { base, webPro, proHere, proIn, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink,
+  window.SS = { base, webPro, proHere, proIn, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink, stayCur,
                 resorts, mapLib, transformRequest, onChange: (f) => S.listeners.push(f), store, ROOT, IAB, refHost };
 })();
