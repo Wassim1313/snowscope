@@ -1,0 +1,804 @@
+{
+ "id": "2026-11-13-alps-coming",
+ "slug": "alps-devoluy-snow-forecast-13-november-2026",
+ "date": "2026-11-13",
+ "published_utc": "2026-11-13T13:16:05Z",
+ "updated_utc": "2026-11-13T13:16:05Z",
+ "region": "ALPS",
+ "angle": "coming",
+ "score": 57.5,
+ "signature": "orcieres_merlette:40|la_grave:30|devoluy:30",
+ "keyword": {
+  "family": "snow-forecast",
+  "entity": "devoluy",
+  "region": "ALPS",
+  "date": "2026-11-13"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "snow_forecast",
+  "region": "Alps",
+  "date": "2026-11-13",
+  "weekday": "Friday",
+  "model_run": "2026-11-13",
+  "forecast_days": [
+   "2026-11-14",
+   "2026-11-15",
+   "2026-11-16"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 76100,
+   "resorts_with_snow": 829,
+   "resorts_in_region": 1179
+  },
+  "region_before": {
+   "date": "2026-11-11",
+   "snow_covered_area_km2": 39090,
+   "resorts_with_snow": 628
+  },
+  "region_forecast": {
+   "date": "2026-11-16",
+   "snow_covered_area_km2": 57910,
+   "resorts_with_snow": 775
+  },
+  "question": "Where will new snow fall in the next days, and at which height?",
+  "resorts": [
+   {
+    "name": "Orcières Merlette",
+    "country": "France",
+    "top_m": 2731,
+    "base_m": 1826,
+    "depth_cm_upper_slopes_today": 35,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 36,
+    "new_cm_forecast_next_days": 35,
+    "slug": "orcieres_merlette",
+    "new_cm_by_day": {
+     "2026-11-11": 5,
+     "2026-11-12": 30,
+     "2026-11-13": 1,
+     "2026-11-14": 9,
+     "2026-11-15": 18,
+     "2026-11-16": 8
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1826,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 25
+     },
+     "mid": {
+      "elev_m": 2278,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 64
+     },
+     "top": {
+      "elev_m": 2731,
+      "depth_cm_model": 13,
+      "new_cm_next_7_days": 74
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 2530,
+      "max": 2770
+     },
+     "2026-11-14": {
+      "min": 2310,
+      "max": 2520
+     },
+     "2026-11-15": {
+      "min": 2270,
+      "max": 2310
+     },
+     "2026-11-16": {
+      "min": 2180,
+      "max": 2300
+     }
+    },
+    "past_winters": {
+     "height_m": 2278,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 4,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 14
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-07"
+    }
+   },
+   {
+    "name": "La Grave",
+    "country": "France",
+    "top_m": 3543,
+    "base_m": 3196,
+    "depth_cm_upper_slopes_today": 78,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 61,
+    "new_cm_forecast_next_days": 33,
+    "slug": "la_grave",
+    "new_cm_by_day": {
+     "2026-11-11": 5,
+     "2026-11-12": 53,
+     "2026-11-13": 3,
+     "2026-11-14": 7,
+     "2026-11-15": 16,
+     "2026-11-16": 10
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3196,
+      "depth_cm_model": 66,
+      "new_cm_next_7_days": 93
+     },
+     "mid": {
+      "elev_m": 3369,
+      "depth_cm_model": 71,
+      "new_cm_next_7_days": 97
+     },
+     "top": {
+      "elev_m": 3543,
+      "depth_cm_model": 72,
+      "new_cm_next_7_days": 101
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 2820,
+      "max": 2910
+     },
+     "2026-11-14": {
+      "min": 2700,
+      "max": 3210
+     },
+     "2026-11-15": {
+      "min": 2660,
+      "max": 3210
+     },
+     "2026-11-16": {
+      "min": 2490,
+      "max": 2690
+     }
+    },
+    "past_winters": {
+     "height_m": 3369,
+     "snow_cm_at_this_height_today_model": 11,
+     "deeper_than_n_of_past_winters": 10,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 53
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-05"
+    }
+   },
+   {
+    "name": "Dévoluy",
+    "country": "France",
+    "top_m": 2495,
+    "base_m": 1458,
+    "depth_cm_upper_slopes_today": 7,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 32,
+    "slug": "devoluy",
+    "new_cm_by_day": {
+     "2026-11-11": 0,
+     "2026-11-12": 3,
+     "2026-11-13": 1,
+     "2026-11-14": 9,
+     "2026-11-15": 19,
+     "2026-11-16": 4
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1458,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 1976,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 12
+     },
+     "top": {
+      "elev_m": 2495,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 28
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 2560,
+      "max": 2980
+     },
+     "2026-11-14": {
+      "min": 2250,
+      "max": 2520
+     },
+     "2026-11-15": {
+      "min": 2320,
+      "max": 2430
+     },
+     "2026-11-16": {
+      "min": 2040,
+      "max": 2320
+     }
+    },
+    "past_winters": {
+     "height_m": 1976,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 14,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 7
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-07"
+    },
+    "reliability": {
+     "range_cm": [
+      24,
+      32
+     ],
+     "mixed": true,
+     "snow_line_m": 2010.0,
+     "height_m": 2495
+    }
+   },
+   {
+    "name": "Alpe d'Huez Grand Domaine",
+    "country": "France",
+    "top_m": 3306,
+    "base_m": 1124,
+    "depth_cm_upper_slopes_today": 52,
+    "new_cm_last_24h": 5,
+    "new_cm_last_72h": 43,
+    "new_cm_forecast_next_days": 31,
+    "slug": "alpe_dhuez",
+    "new_cm_by_day": {
+     "2026-11-11": 4,
+     "2026-11-12": 34,
+     "2026-11-13": 5,
+     "2026-11-14": 6,
+     "2026-11-15": 18,
+     "2026-11-16": 7
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1124,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 2215,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 62
+     },
+     "top": {
+      "elev_m": 3306,
+      "depth_cm_model": 57,
+      "new_cm_next_7_days": 91
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-13": {
+      "min": 2180,
+      "max": 2670
+     },
+     "2026-11-14": {
+      "min": 2310,
+      "max": 2550
+     },
+     "2026-11-15": {
+      "min": 2220,
+      "max": 2510
+     },
+     "2026-11-16": {
+      "min": 2080,
+      "max": 2230
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-07"
+    }
+   },
+   {
+    "name": "Les Deux Alpes",
+    "country": "France",
+    "top_m": 3511,
+    "base_m": 1284,
+    "depth_cm_upper_slopes_today": 52,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 51,
+    "new_cm_forecast_next_days": 30,
+    "slug": "les_deux_alpes",
+    "new_cm_by_day": {
+     "2026-11-11": 5,
+     "2026-11-12": 43,
+     "2026-11-13": 3,
+     "2026-11-14": 6,
+     "2026-11-15": 17,
+     "2026-11-16": 7
+    }
+   }
+  ],
+  "focus_index": 2,
+  "title_focus_resort": "Dévoluy"
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/alps-devoluy-snow-forecast-13-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/alps-devoluy-snow-forecast-13-november-2026/map_t.webp",
+   "bytes": 60248,
+   "snow_frac": 0.3201,
+   "weak": false
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"49\" class=\"vl\">5</text><rect x=\"235\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"278\" y=\"49\" class=\"vl\">30</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"49\" class=\"vl\">9</text><rect x=\"475\" y=\"36\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"49\" class=\"vl\">18</text><rect x=\"555\" y=\"36\" width=\"11\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"569\" y=\"49\" class=\"vl\">8</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"70\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"83\" class=\"vl\">5</text><rect x=\"235\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"83\" text-anchor=\"end\" class=\"vl in\">53</text><rect x=\"315\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"83\" class=\"vl\">3</text><rect x=\"395\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"83\" class=\"vl\">7</text><rect x=\"475\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"83\" class=\"vl\">16</text><rect x=\"555\" y=\"70\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"571\" y=\"83\" class=\"vl\">10</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dévoluy</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"117\" class=\"vl\">1</text><rect x=\"395\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"117\" class=\"vl\">9</text><rect x=\"475\" y=\"104\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"503\" y=\"117\" class=\"vl\">19</text><rect x=\"555\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"563\" y=\"117\" class=\"vl\">4</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Alpe d'Huez Grand Do</text><rect x=\"155\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"151\" class=\"vl\">4</text><rect x=\"235\" y=\"138\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"151\" class=\"vl\">34</text><rect x=\"315\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"406\" y=\"151\" class=\"vl\">6</text><rect x=\"475\" y=\"138\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"151\" class=\"vl\">18</text><rect x=\"555\" y=\"138\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"151\" class=\"vl\">7</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Les Deux Alpes</text><rect x=\"155\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"185\" class=\"vl\">5</text><rect x=\"235\" y=\"172\" width=\"57\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"295\" y=\"185\" class=\"vl\">43</text><rect x=\"315\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"406\" y=\"185\" class=\"vl\">6</text><rect x=\"475\" y=\"172\" width=\"22\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"500\" y=\"185\" class=\"vl\">17</text><rect x=\"555\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"185\" class=\"vl\">7</text></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"49\" class=\"vl\">5</text><rect x=\"235\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"278\" y=\"49\" class=\"vl\">30</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"49\" class=\"vl\">9</text><rect x=\"475\" y=\"36\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"49\" class=\"vl\">18</text><rect x=\"555\" y=\"36\" width=\"11\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"569\" y=\"49\" class=\"vl\">8</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"70\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"83\" class=\"vl\">5</text><rect x=\"235\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"83\" text-anchor=\"end\" class=\"vl in\">53</text><rect x=\"315\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"83\" class=\"vl\">3</text><rect x=\"395\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"83\" class=\"vl\">7</text><rect x=\"475\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"83\" class=\"vl\">16</text><rect x=\"555\" y=\"70\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"571\" y=\"83\" class=\"vl\">10</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dévoluy</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"117\" class=\"vl\">1</text><rect x=\"395\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"117\" class=\"vl\">9</text><rect x=\"475\" y=\"104\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"503\" y=\"117\" class=\"vl\">19</text><rect x=\"555\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"563\" y=\"117\" class=\"vl\">4</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Alpe d'Huez Grand Do</text><rect x=\"155\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"151\" class=\"vl\">4</text><rect x=\"235\" y=\"138\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"151\" class=\"vl\">34</text><rect x=\"315\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"406\" y=\"151\" class=\"vl\">6</text><rect x=\"475\" y=\"138\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"151\" class=\"vl\">18</text><rect x=\"555\" y=\"138\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"151\" class=\"vl\">7</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Les Deux Alpes</text><rect x=\"155\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"185\" class=\"vl\">5</text><rect x=\"235\" y=\"172\" width=\"57\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"295\" y=\"185\" class=\"vl\">43</text><rect x=\"315\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"406\" y=\"185\" class=\"vl\">6</text><rect x=\"475\" y=\"172\" width=\"22\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"500\" y=\"185\" class=\"vl\">17</text><rect x=\"555\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"185\" class=\"vl\">7</text></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"49\" class=\"vl\">5</text><rect x=\"235\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"278\" y=\"49\" class=\"vl\">30</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"49\" class=\"vl\">9</text><rect x=\"475\" y=\"36\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"49\" class=\"vl\">18</text><rect x=\"555\" y=\"36\" width=\"11\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"569\" y=\"49\" class=\"vl\">8</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"70\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"83\" class=\"vl\">5</text><rect x=\"235\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"83\" text-anchor=\"end\" class=\"vl in\">53</text><rect x=\"315\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"83\" class=\"vl\">3</text><rect x=\"395\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"83\" class=\"vl\">7</text><rect x=\"475\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"83\" class=\"vl\">16</text><rect x=\"555\" y=\"70\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"571\" y=\"83\" class=\"vl\">10</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dévoluy</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"117\" class=\"vl\">1</text><rect x=\"395\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"117\" class=\"vl\">9</text><rect x=\"475\" y=\"104\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"503\" y=\"117\" class=\"vl\">19</text><rect x=\"555\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"563\" y=\"117\" class=\"vl\">4</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Alpe d'Huez Grand Do</text><rect x=\"155\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"151\" class=\"vl\">4</text><rect x=\"235\" y=\"138\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"151\" class=\"vl\">34</text><rect x=\"315\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"406\" y=\"151\" class=\"vl\">6</text><rect x=\"475\" y=\"138\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"151\" class=\"vl\">18</text><rect x=\"555\" y=\"138\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"151\" class=\"vl\">7</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Les Deux Alpes</text><rect x=\"155\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"185\" class=\"vl\">5</text><rect x=\"235\" y=\"172\" width=\"57\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"295\" y=\"185\" class=\"vl\">43</text><rect x=\"315\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"406\" y=\"185\" class=\"vl\">6</text><rect x=\"475\" y=\"172\" width=\"22\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"500\" y=\"185\" class=\"vl\">17</text><rect x=\"555\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"185\" class=\"vl\">7</text></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"49\" class=\"vl\">5</text><rect x=\"235\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"278\" y=\"49\" class=\"vl\">30</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"49\" class=\"vl\">9</text><rect x=\"475\" y=\"36\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"49\" class=\"vl\">18</text><rect x=\"555\" y=\"36\" width=\"11\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"569\" y=\"49\" class=\"vl\">8</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"70\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"83\" class=\"vl\">5</text><rect x=\"235\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"83\" text-anchor=\"end\" class=\"vl in\">53</text><rect x=\"315\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"83\" class=\"vl\">3</text><rect x=\"395\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"83\" class=\"vl\">7</text><rect x=\"475\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"83\" class=\"vl\">16</text><rect x=\"555\" y=\"70\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"571\" y=\"83\" class=\"vl\">10</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dévoluy</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"117\" class=\"vl\">1</text><rect x=\"395\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"117\" class=\"vl\">9</text><rect x=\"475\" y=\"104\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"503\" y=\"117\" class=\"vl\">19</text><rect x=\"555\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"563\" y=\"117\" class=\"vl\">4</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Alpe d'Huez Grand Do</text><rect x=\"155\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"151\" class=\"vl\">4</text><rect x=\"235\" y=\"138\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"151\" class=\"vl\">34</text><rect x=\"315\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"406\" y=\"151\" class=\"vl\">6</text><rect x=\"475\" y=\"138\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"151\" class=\"vl\">18</text><rect x=\"555\" y=\"138\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"151\" class=\"vl\">7</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Les Deux Alpes</text><rect x=\"155\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"185\" class=\"vl\">5</text><rect x=\"235\" y=\"172\" width=\"57\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"295\" y=\"185\" class=\"vl\">43</text><rect x=\"315\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"406\" y=\"185\" class=\"vl\">6</text><rect x=\"475\" y=\"172\" width=\"22\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"500\" y=\"185\" class=\"vl\">17</text><rect x=\"555\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"185\" class=\"vl\">7</text></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"49\" class=\"vl\">5</text><rect x=\"235\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"278\" y=\"49\" class=\"vl\">30</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"49\" class=\"vl\">9</text><rect x=\"475\" y=\"36\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"49\" class=\"vl\">18</text><rect x=\"555\" y=\"36\" width=\"11\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"569\" y=\"49\" class=\"vl\">8</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"70\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"83\" class=\"vl\">5</text><rect x=\"235\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"83\" text-anchor=\"end\" class=\"vl in\">53</text><rect x=\"315\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"83\" class=\"vl\">3</text><rect x=\"395\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"83\" class=\"vl\">7</text><rect x=\"475\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"83\" class=\"vl\">16</text><rect x=\"555\" y=\"70\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"571\" y=\"83\" class=\"vl\">10</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dévoluy</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"117\" class=\"vl\">1</text><rect x=\"395\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"117\" class=\"vl\">9</text><rect x=\"475\" y=\"104\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"503\" y=\"117\" class=\"vl\">19</text><rect x=\"555\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"563\" y=\"117\" class=\"vl\">4</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Alpe d'Huez Grand Do</text><rect x=\"155\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"151\" class=\"vl\">4</text><rect x=\"235\" y=\"138\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"151\" class=\"vl\">34</text><rect x=\"315\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"406\" y=\"151\" class=\"vl\">6</text><rect x=\"475\" y=\"138\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"151\" class=\"vl\">18</text><rect x=\"555\" y=\"138\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"151\" class=\"vl\">7</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Les Deux Alpes</text><rect x=\"155\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"185\" class=\"vl\">5</text><rect x=\"235\" y=\"172\" width=\"57\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"295\" y=\"185\" class=\"vl\">43</text><rect x=\"315\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"406\" y=\"185\" class=\"vl\">6</text><rect x=\"475\" y=\"172\" width=\"22\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"500\" y=\"185\" class=\"vl\">17</text><rect x=\"555\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"185\" class=\"vl\">7</text></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">11/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">12/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Orcières Merlette</text><rect x=\"155\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"49\" class=\"vl\">5</text><rect x=\"235\" y=\"36\" width=\"40\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"278\" y=\"49\" class=\"vl\">30</text><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"49\" class=\"vl\">9</text><rect x=\"475\" y=\"36\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"49\" class=\"vl\">18</text><rect x=\"555\" y=\"36\" width=\"11\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"569\" y=\"49\" class=\"vl\">8</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">La Grave</text><rect x=\"155\" y=\"70\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"83\" class=\"vl\">5</text><rect x=\"235\" y=\"70\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"302\" y=\"83\" text-anchor=\"end\" class=\"vl in\">53</text><rect x=\"315\" y=\"70\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"83\" class=\"vl\">3</text><rect x=\"395\" y=\"70\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"407\" y=\"83\" class=\"vl\">7</text><rect x=\"475\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"499\" y=\"83\" class=\"vl\">16</text><rect x=\"555\" y=\"70\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"571\" y=\"83\" class=\"vl\">10</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dévoluy</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"117\" class=\"vl\">1</text><rect x=\"395\" y=\"104\" width=\"12\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"410\" y=\"117\" class=\"vl\">9</text><rect x=\"475\" y=\"104\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"503\" y=\"117\" class=\"vl\">19</text><rect x=\"555\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"563\" y=\"117\" class=\"vl\">4</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Alpe d'Huez Grand Do</text><rect x=\"155\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"163\" y=\"151\" class=\"vl\">4</text><rect x=\"235\" y=\"138\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"151\" class=\"vl\">34</text><rect x=\"315\" y=\"138\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"325\" y=\"151\" class=\"vl\">5</text><rect x=\"395\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"406\" y=\"151\" class=\"vl\">6</text><rect x=\"475\" y=\"138\" width=\"24\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"502\" y=\"151\" class=\"vl\">18</text><rect x=\"555\" y=\"138\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"151\" class=\"vl\">7</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Les Deux Alpes</text><rect x=\"155\" y=\"172\" width=\"7\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"165\" y=\"185\" class=\"vl\">5</text><rect x=\"235\" y=\"172\" width=\"57\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"295\" y=\"185\" class=\"vl\">43</text><rect x=\"315\" y=\"172\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"322\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"8\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"406\" y=\"185\" class=\"vl\">6</text><rect x=\"475\" y=\"172\" width=\"22\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"500\" y=\"185\" class=\"vl\">17</text><rect x=\"555\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"185\" class=\"vl\">7</text></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Dévoluy snow outlook: in line for 24–32 cm by 16 November (Alps)",
+   "description": "Dévoluy snow outlook: in line for 24–32 cm by 16 November (Alps). The next few days look decidedly unsettled in the Alps, with the heaviest snow …",
+   "lede": "The next few days look decidedly unsettled in the Alps, with the heaviest snow concentrated in a handful of resorts. Next round by 16 November: 35 cm at Orcières Merlette, 33 cm at La Grave and 24–32 cm at Dévoluy, according to our forecast. How sure are we? Resort values are model estimates for the upper slopes; stations are measurements, each at one point on the date shown. Confidence: good for the trend, lower for any single number.",
+   "sections": [
+    {
+     "h": "Today's snow map",
+     "p": [
+      "Top of this list: La Grave, about 78 cm up high. Then Alpe d'Huez Grand Domaine 52 cm and Les Deux Alpes 52 cm.",
+      "The count of the day in the Alps: 829 of 1,179 resorts with snow up high, 76,100 km² of snow-covered ground."
+     ]
+    },
+    {
+     "h": "The forecast in short",
+     "p": [
+      "More snow ahead: 31 cm at Alpe d'Huez Grand Domaine and 30 cm at Les Deux Alpes by 16 November, if the forecast holds.",
+      "Snow-covered area: 39,090 km² on 11 November, 76,100 km² today, 57,910 km² forecast for 16 November. The trend is up, for now."
+     ]
+    },
+    {
+     "h": "Snow line check",
+     "p": [
+      "On 13 November the freezing level at Orcières Merlette sits at 2,530 m to 2,770 m, over the top of the resort (2,731 m): rain or wet snow could fall on all slopes.",
+      "La Grave, 14 November: freezing level 2,700 m to 3,210 m. Wet snow low down, winter up top.",
+      "Dévoluy, 13 November: freezing level 2,560 m to 2,980 m, above the top (2,495 m). Rain or wet snow is possible on every slope.",
+      "Orcières Merlette by height, from our model: top 13 cm (2,731 m), middle 1 cm (2,278 m), base 0 cm (1,826 m)."
+     ]
+    },
+    {
+     "h": "Staying safe",
+     "p": [
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Forecasts a few days ahead can change: look at the map again the day before you travel.",
+    "Freezing level above the top station? Expect wet snow and ski as high as the lifts allow.",
+    "Be on the first lift after a snowfall: by midday, sun and skiers have already changed the snow.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Orcières Merlette gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the Alps on 13 November 2026 (SnowScope snow model): Orcières Merlette, La Grave, Dévoluy, Alpe d'Huez Grand Domaine, Les Deux Alpes.",
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast)."
+   }
+  },
+  "fr": {
+   "title": "Dévoluy, tendance neige : jusqu'à 24–32 cm possibles d'ici le 16 novembre (Alpes)",
+   "description": "Dévoluy, tendance neige : jusqu'à 24–32 cm possibles d'ici le 16 novembre (Alpes). D'ici le 16 novembre, notre prévision donne 35 cm à Orcières …",
+   "lede": "Prévision jusqu'au 16 novembre : 35 cm à Orcières Merlette, 33 cm à La Grave et 24–32 cm à Dévoluy. Prudence sur les derniers jours. Quelle confiance ? Les valeurs des stations de ski sont des estimations du modèle pour le haut du domaine ; les stations de mesure donnent des mesures, chacune en un point à la date indiquée. Confiance : bonne pour la tendance, plus faible pour chaque chiffre pris seul.",
+   "sections": [
+    {
+     "h": "La carte de neige du jour",
+     "p": [
+      "En haut de la liste : La Grave, environ 78 cm en altitude. Puis Alpe d'Huez Grand Domaine 52 cm et Les Deux Alpes 52 cm.",
+      "Le compte du jour dans les Alpes : 829 stations sur 1 179 avec de la neige en haut, 76 100 km² de sol enneigé."
+     ]
+    },
+    {
+     "h": "La prévision en bref",
+     "p": [
+      "D'ici le 16 novembre, la prévision donne 31 cm à Alpe d'Huez Grand Domaine et 30 cm à Les Deux Alpes, avec moins de certitude à mesure qu'on s'éloigne.",
+      "La zone blanche sur la carte est passée de 39 090 km² (11 novembre) à 76 100 km² aujourd'hui, et la prévision dit 57 910 km² le 16 novembre."
+     ]
+    },
+    {
+     "h": "Contrôle de la limite pluie-neige",
+     "p": [
+      "Le 13 novembre, l'isotherme 0 °C à Orcières Merlette se situe entre 2 530 m et 2 770 m, au-dessus du sommet de la station (2 731 m) : pluie ou neige mouillée sur toutes les pentes possible.",
+      "La Grave, 14 novembre : isotherme 0 °C entre 2 700 m et 3 210 m. Neige mouillée en bas, hiver en haut.",
+      "Dévoluy, 13 novembre : isotherme 0 °C entre 2 560 m et 2 980 m, au-dessus du sommet (2 495 m). Pluie ou neige mouillée possibles sur toutes les pentes.",
+      "Orcières Merlette par altitude, selon notre modèle : sommet 13 cm (2 731 m), milieu 1 cm (2 278 m), bas 0 cm (1 826 m)."
+     ]
+    },
+    {
+     "h": "Rester en sécurité",
+     "p": [
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ.",
+    "Isotherme 0 °C au-dessus de la gare d'arrivée ? Attendez-vous à une neige mouillée et skiez aussi haut que possible.",
+    "Prenez la première remontée après une chute de neige : à midi, le soleil et les skieurs ont déjà changé la neige.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Orcières Merlette reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans les Alpes le 13 novembre 2026 (modèle de neige SnowScope) : Orcières Merlette, La Grave, Dévoluy, Alpe d'Huez Grand Domaine, Les Deux Alpes.",
+    "bars": "Neige fraîche par jour dans les stations en tête (jours passés : modèle ; barres claires : prévision)."
+   }
+  },
+  "de": {
+   "title": "Dévoluy Schnee-Ausblick: auf Kurs für 24–32 cm bis zum 16. November (Alpen)",
+   "description": "Dévoluy Schnee-Ausblick: auf Kurs für 24–32 cm bis zum 16. November (Alpen). Bis zum 16. November ergibt unsere Prognose 35 cm in Orcières Merlette, …",
+   "lede": "Prognose bis zum 16. November: 35 cm in Orcières Merlette, 33 cm in La Grave und 24–32 cm in Dévoluy. Die späteren Tage mit Vorsicht lesen. Wie sicher sind wir? Die Skigebietswerte sind Modellschätzungen für die oberen Hänge; Stationen sind Messungen, jede an einem Punkt am angegebenen Tag. Sicherheit: gut für den Trend, geringer für jede einzelne Zahl.",
+   "sections": [
+    {
+     "h": "Die Schneekarte von heute",
+     "p": [
+      "An der Spitze dieser Liste: La Grave, etwa 78 cm weit oben. Dann Alpe d'Huez Grand Domaine 52 cm und Les Deux Alpes 52 cm.",
+      "Die Zählung des Tages in den Alpen: 829 von 1.179 Skigebieten mit Schnee weit oben, 76.100 km² Schneefläche."
+     ]
+    },
+    {
+     "h": "Die Prognose in Kürze",
+     "p": [
+      "Bis zum 16. November ergibt die Prognose 31 cm in Alpe d'Huez Grand Domaine und 30 cm in Les Deux Alpes, mit weniger Sicherheit, je weiter es in die Zukunft geht.",
+      "Schneefläche: 39.090 km² am 11. November, heute 76.100 km², 57.910 km² erwartet für den 16. November. Der Trend zeigt nach oben, vorerst."
+     ]
+    },
+    {
+     "h": "Check der Schneefallgrenze",
+     "p": [
+      "Am 13. November liegt die Nullgradgrenze in Orcières Merlette bei 2.530 m bis 2.770 m, über dem höchsten Punkt des Skigebiets (2.731 m): Regen oder nasser Schnee könnte auf alle Hänge fallen.",
+      "La Grave, 14. November: Nullgradgrenze 2.700 m bis 3.210 m. Unten nasser Schnee, oben Winter.",
+      "Dévoluy, 13. November: Nullgradgrenze 2.560 m bis 2.980 m, über dem höchsten Punkt (2.495 m). Regen oder nasser Schnee ist auf allen Hängen möglich.",
+      "Orcières Merlette nach Höhe, aus unserem Modell: Gipfel 13 cm (2.731 m), Mitte 1 cm (2.278 m), Tal 0 cm (1.826 m)."
+     ]
+    },
+    {
+     "h": "Sicher unterwegs",
+     "p": [
+      "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte."
+     ]
+    }
+   ],
+   "advice": [
+    "Prognosen für einige Tage können sich ändern: Schau am Tag vor der Abfahrt noch einmal auf die Karte.",
+    "Nullgradgrenze über der Bergstation? Rechne mit nassem Schnee und fahr so hoch, wie die Lifte gehen.",
+    "Sei nach einem Schneefall am ersten Lift: Bis Mittag haben Sonne und Skifahrer den Schnee schon verändert.",
+    "Lies vor dem Freeriden oder einer Skitour den offiziellen Lawinenlagebericht (Links unten).",
+    "Stell in der SnowScope-App einen Pulverschnee-Alarm ein, damit du weißt, wann Orcières Merlette Neuschnee bekommt."
+   ],
+   "captions": {
+    "map": "Schneehöhe in den Alpen am 13. November 2026 (SnowScope-Schneemodell): Orcières Merlette, La Grave, Dévoluy, Alpe d'Huez Grand Domaine, Les Deux Alpes.",
+    "bars": "Neuschnee pro Tag in den führenden Skigebieten (vergangene Tage: Modell; helle Balken: Prognose)."
+   }
+  },
+  "it": {
+   "title": "Dévoluy, tendenza neve: fino a 24–32 cm possibili entro il 16 novembre (Alpi)",
+   "description": "Dévoluy, tendenza neve: fino a 24–32 cm possibili entro il 16 novembre (Alpi). Fino al 16 novembre la nostra previsione indica 35 cm a Orcières …",
+   "lede": "Previsione fino al 16 novembre: 35 cm a Orcières Merlette, 33 cm a La Grave e 24–32 cm a Dévoluy. Prendi i giorni più lontani con cautela. Quanto ne siamo sicuri? I valori delle località sono stime del modello per i pendii superiori; le stazioni sono misure, ognuna in un punto alla data indicata. Affidabilità: buona per la tendenza, minore per ogni singolo numero.",
+   "sections": [
+    {
+     "h": "La mappa neve di oggi",
+     "p": [
+      "In cima a questa lista: La Grave, circa 78 cm in alto. Poi Alpe d'Huez Grand Domaine 52 cm e Les Deux Alpes 52 cm.",
+      "Il conto del giorno sulle Alpi: 829 località su 1.179 con neve in alto, 76.100 km² di superficie innevata."
+     ]
+    },
+    {
+     "h": "La previsione in breve",
+     "p": [
+      "Fino al 16 novembre la previsione indica 31 cm a Alpe d'Huez Grand Domaine e 30 cm a Les Deux Alpes, con meno certezza più ci si allontana.",
+      "L'area bianca sulla mappa è passata da 39.090 km² (11 novembre) a 76.100 km² oggi, e la previsione dice 57.910 km² il 16 novembre."
+     ]
+    },
+    {
+     "h": "Controllo quota neve",
+     "p": [
+      "Il 13 novembre lo zero termico a Orcières Merlette sta tra 2.530 m e 2.770 m, sopra la quota massima della località (2.731 m): pioggia o neve bagnata potrebbero cadere su tutti i pendii.",
+      "La Grave, 14 novembre: zero termico tra 2.700 m e 3.210 m. Neve bagnata in basso, inverno in alto.",
+      "Dévoluy, 13 novembre: zero termico tra 2.560 m e 2.980 m, sopra la quota massima (2.495 m). Pioggia o neve bagnata possibili su tutti i pendii.",
+      "Orcières Merlette per quota, dal nostro modello: vetta 13 cm (2.731 m), metà 1 cm (2.278 m), base 0 cm (1.826 m)."
+     ]
+    },
+    {
+     "h": "In sicurezza",
+     "p": [
+      "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire."
+     ]
+    }
+   ],
+   "advice": [
+    "Le previsioni a qualche giorno possono cambiare: ricontrolla la mappa il giorno prima di partire.",
+    "Zero termico sopra la stazione a monte? Aspettati neve bagnata e scia più in alto che puoi.",
+    "Dopo una nevicata sii sul primo impianto: a mezzogiorno sole e sciatori hanno già cambiato la neve.",
+    "Prima del fuoripista o dello scialpinismo leggi il bollettino valanghe ufficiale (link qui sotto).",
+    "Attiva un avviso powder nell'app SnowScope per sapere quando Orcières Merlette riceve neve fresca."
+   ],
+   "captions": {
+    "map": "Altezza neve sulle Alpi il 13 novembre 2026 (modello neve SnowScope): Orcières Merlette, La Grave, Dévoluy, Alpe d'Huez Grand Domaine, Les Deux Alpes.",
+    "bars": "Neve fresca al giorno nelle località in testa (giorni passati: modello; barre chiare: previsione)."
+   }
+  },
+  "es": {
+   "title": "Dévoluy, tendencia de nieve: hasta 24–32 cm posibles hasta el 16 de noviembre (Alpes)",
+   "description": "Dévoluy, tendencia de nieve: hasta 24–32 cm posibles hasta el 16 de noviembre (Alpes). Hasta el 16 de noviembre, nuestra previsión da 35 cm en …",
+   "lede": "Previsión hasta el 16 de noviembre: 35 cm en Orcières Merlette, 33 cm en La Grave y 24–32 cm en Dévoluy. Cuidado con los últimos días. ¿Qué confianza tenemos? Los valores de las estaciones de esquí son estimaciones del modelo para las pistas altas; las estaciones de medida dan medidas, cada una en un punto en la fecha indicada. Confianza: buena para la tendencia, menor para cada cifra suelta.",
+   "sections": [
+    {
+     "h": "El mapa de nieve de hoy",
+     "p": [
+      "Arriba de la lista: La Grave, unos 78 cm en altura. Luego Alpe d'Huez Grand Domaine 52 cm y Les Deux Alpes 52 cm.",
+      "El recuento del día en los Alpes: 829 de 1179 estaciones con nieve arriba, 76.100 km² de suelo nevado."
+     ]
+    },
+    {
+     "h": "La previsión en breve",
+     "p": [
+      "Hasta el 16 de noviembre la previsión da 31 cm en Alpe d'Huez Grand Domaine y 30 cm en Les Deux Alpes, con menos certeza cuanto más lejos.",
+      "La zona blanca del mapa pasó de 39.090 km² (11 de noviembre) a 76.100 km² hoy, y la previsión dice 57.910 km² el 16 de noviembre."
+     ]
+    },
+    {
+     "h": "Control de la cota de nieve",
+     "p": [
+      "El 13 de noviembre la cota de congelación en Orcières Merlette se sitúa en 2530 m-2770 m, sobre la cota alta de la estación (2731 m): podría caer lluvia o nieve húmeda en todas las pistas.",
+      "La Grave, 14 de noviembre: cota de congelación 2700 m-3210 m. Nieve húmeda abajo, invierno arriba.",
+      "Dévoluy, 13 de noviembre: cota de congelación 2560 m-2980 m, por encima de la cima (2495 m). Puede haber lluvia o nieve húmeda en todas las pistas.",
+      "Orcières Merlette por altura, según nuestro modelo: arriba 13 cm (2731 m), en medio 1 cm (2278 m), base 0 cm (1826 m)."
+     ]
+    },
+    {
+     "h": "Con seguridad",
+     "p": [
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    }
+   ],
+   "advice": [
+    "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar.",
+    "¿Cota de congelación por encima de la llegada del remonte más alto? Cuenta con nieve húmeda y esquía tan alto como puedas.",
+    "Coge el primer remonte después de una nevada: a mediodía, el sol y los esquiadores ya han cambiado la nieve.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Orcières Merlette recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en los Alpes el 13 de noviembre 2026 (modelo de nieve de SnowScope): Orcières Merlette, La Grave, Dévoluy, Alpe d'Huez Grand Domaine, Les Deux Alpes.",
+    "bars": "Nieve nueva por día en las estaciones líderes (días pasados: modelo; barras claras: previsión)."
+   }
+  },
+  "ar": {
+   "title": "Dévoluy الاتجاه ديال التلج: يقدر يوصل ل 24–32 سم حتى ل 16 نونبر (جبال الألب)",
+   "description": "Dévoluy الاتجاه ديال التلج: يقدر يوصل ل 24–32 سم حتى ل 16 نونبر (جبال الألب). حتى ل 16 نونبر، التوقعات ديالنا كتعطي 35 سم ف Orcières Merlette، 33 سم …",
+   "lede": "التوقعات حتى ل 16 نونبر: 35 سم ف Orcières Merlette، 33 سم ف La Grave و 24–32 سم ف Dévoluy. الأيام اللخرين خاصهم الحذر. شحال حنا متأكدين؟ القيم ديال المحطات تقديرات ديال الموديل للجهة الفوقانية؛ محطات القياس قياسات، كل وحدة فنقطة وحدة فالتاريخ المكتوب. التأكد: مزيان فالاتجاه، أقل فكل رقم بوحدو.",
+   "sections": [
+    {
+     "h": "الخريطة ديال التلج اليوم",
+     "p": [
+      "فالراس ديال اللائحة: La Grave، تقريبا 78 سم فالعلو. ومن بعد Alpe d'Huez Grand Domaine 52 سم و Les Deux Alpes 52 سم.",
+      "الحساب ديال اليوم فجبال الألب: 829 محطة من 1179 فيهم التلج فالعلو، و 76100 كم² ديال الأرض اللي فيها التلج."
+     ]
+    },
+    {
+     "h": "التوقعات باختصار",
+     "p": [
+      "حتى ل 16 نونبر التوقعات كتعطي 31 سم ف Alpe d'Huez Grand Domaine و 30 سم ف Les Deux Alpes، والتأكد كينقص كل ما بعدنا.",
+      "المساحة البيضا فالخريطة دازت من 39090 كم² (11 نونبر) ل 76100 كم² اليوم، والتوقعات كتقول 57910 كم² نهار 16 نونبر."
+     ]
+    },
+    {
+     "h": "التحقق من الحد ديال التلج",
+     "p": [
+      "نهار 13 نونبر علو الجليد ف Orcières Merlette كيكون بين 2530 م و 2770 م، فوق القمة ديال المحطة (2731 م): الشتا ولا التلج المبلول يقدر يطيح فكاع البيستات.",
+      "La Grave، 14 نونبر: علو الجليد 2700 م حتى ل 3210 م. تلج مبلول لتحت، شتا حقيقية لفوق.",
+      "Dévoluy، 13 نونبر: علو الجليد 2560 م حتى ل 2980 م، فوق القمة (2495 م). الشتا ولا التلج المبلول ممكن فكاع البيستات.",
+      "Orcières Merlette حسب العلو، من الموديل ديالنا: الفوق 13 سم (2731 م)، الوسط 1 سم (2278 م)، التحت 0 سم (1826 م)."
+     ]
+    },
+    {
+     "h": "باش تبقى سالم",
+     "p": [
+      "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر."
+     ]
+    }
+   ],
+   "advice": [
+    "التوقعات ديال شي أيام يمكن تتبدل: عاود شوف الخريطة نهار قبل ما تسافر.",
+    "علو الجليد فوق آخر تيليسييج؟ توقع تلج مبلول وتزلج فأعلى بلاصة كيوصلو ليها التيليسييجات.",
+    "كون فأول تيليسييج من بعد التلج: مع الطناش، الشمس والناس كيكونو بدلو التلج.",
+    "قبل ما تخرج من البيست ولا دير جولة، قرا النشرة الرسمية ديال الانهيارات (الروابط لتحت).",
+    "فعّل تنبيه ديال التلج الطري فالتطبيق ديال SnowScope باش تعرف إمتى Orcières Merlette يجيها تلج جديد."
+   ],
+   "captions": {
+    "map": "العلو ديال التلج فجبال الألب نهار 13 نونبر 2026 (الموديل ديال SnowScope): Orcières Merlette, La Grave, Dévoluy, Alpe d'Huez Grand Domaine, Les Deux Alpes.",
+    "bars": "التلج الجديد فكل نهار فالمحطات اللولين (الأيام اللي فاتو من الموديل، والخطوط الفاتحة = التوقعات)."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "de": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "it": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "es": {
+   "writer": "template",
+   "voice": "sat"
+  },
+  "ar": {
+   "writer": "template",
+   "voice": "sat"
+  }
+ },
+ "words_en": 283,
+ "indexable": true,
+ "main": {
+  "slug": "devoluy",
+  "name": "Dévoluy",
+  "lat": 44.6687,
+  "lon": 5.9068
+ },
+ "places": [
+  {
+   "name": "Orcières Merlette",
+   "lat": 44.7122,
+   "lon": 6.3247
+  },
+  {
+   "name": "La Grave",
+   "lat": 45.0195,
+   "lon": 6.2771
+  },
+  {
+   "name": "Dévoluy",
+   "lat": 44.6687,
+   "lon": 5.9068
+  },
+  {
+   "name": "Alpe d'Huez Grand Domaine",
+   "lat": 45.1155,
+   "lon": 6.0858
+  },
+  {
+   "name": "Les Deux Alpes",
+   "lat": 45.0083,
+   "lon": 6.15
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "orcieres_merlette",
+   "name": "Orcières Merlette"
+  },
+  {
+   "slug": "la_grave",
+   "name": "La Grave"
+  },
+  {
+   "slug": "devoluy",
+   "name": "Dévoluy"
+  },
+  {
+   "slug": "alpe_dhuez",
+   "name": "Alpe d'Huez Grand Domaine"
+  },
+  {
+   "slug": "les_deux_alpes",
+   "name": "Les Deux Alpes"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "orcieres_merlette",
+    "name": "Orcières Merlette",
+    "depth": 35,
+    "new72": 36,
+    "next": 35,
+    "top_m": 2731
+   },
+   {
+    "slug": "la_grave",
+    "name": "La Grave",
+    "depth": 78,
+    "new72": 61,
+    "next": 33,
+    "top_m": 3543
+   },
+   {
+    "slug": "devoluy",
+    "name": "Dévoluy",
+    "depth": 7,
+    "new72": 4,
+    "next": 32,
+    "top_m": 2495
+   },
+   {
+    "slug": "alpe_dhuez",
+    "name": "Alpe d'Huez Grand Domaine",
+    "depth": 52,
+    "new72": 43,
+    "next": 31,
+    "top_m": 3306
+   },
+   {
+    "slug": "les_deux_alpes",
+    "name": "Les Deux Alpes",
+    "depth": 52,
+    "new72": 51,
+    "next": 30,
+    "top_m": 3511
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "EAWS (Alps)",
+   "url": "https://www.avalanches.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@44.669,5.907,9.0",
+ "seconds": 0.0,
+ "facts_used": 27,
+ "voice": "sat",
+ "media_ids": [
+  "map",
+  "bars"
+ ],
+ "overlap": {
+  "before": 26.3,
+  "after": 26.3,
+  "with": "western-canada-revelstoke-snow-forecast-13-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.12,
+  "with": "alps-glacier-3000-fresh-snow-powder-alert-11-november-2026"
+ },
+ "publish_utc": "2026-11-13T13:16:05Z"
+}
