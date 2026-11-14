@@ -1,0 +1,829 @@
+{
+ "id": "feature-tromso-snow-depth-13-november-2026",
+ "slug": "tromso-snow-depth-13-november-2026",
+ "date": "2026-11-13",
+ "published_utc": "2026-11-14T13:29:52Z",
+ "updated_utc": "2026-11-14T13:29:52Z",
+ "region": "SCANDES",
+ "angle": "guide_feature_climate",
+ "category": "guide",
+ "draft": false,
+ "kind": "climate",
+ "resort_class": "major",
+ "structure": "island-town-versus-alps-of-lyngen",
+ "score": 90,
+ "tags": [
+  "snow-depth",
+  "forecast"
+ ],
+ "facts": {
+  "kind": "climate",
+  "date": "2026-11-13",
+  "extra": {
+   "tromso": {
+    "city": {
+     "key": "tromso",
+     "name": "Tromsø",
+     "country": "NO",
+     "lat": 69.649,
+     "lon": 18.956
+    },
+    "date": "2026-11-13",
+    "measured": [
+     {
+      "id": "wmo:01026",
+      "name": "Tromso",
+      "country": "NO",
+      "lat": 69.65,
+      "lon": 18.933,
+      "elev_m": 114,
+      "km": 1,
+      "today_cm": 6.0,
+      "yesterday_cm": 8.0,
+      "four_days_ago_cm": 0.0
+     },
+     {
+      "id": "wmo:01035",
+      "name": "Lyngen Gjerdvassbu",
+      "country": "NO",
+      "lat": 69.567,
+      "lon": 20.1,
+      "elev_m": 710,
+      "km": 45,
+      "today_cm": 44.0,
+      "yesterday_cm": 44.0,
+      "four_days_ago_cm": 38.0
+     },
+     {
+      "id": "wmo:01023",
+      "name": "Bardufoss",
+      "country": "NO",
+      "lat": 69.056,
+      "lon": 18.54,
+      "elev_m": 77,
+      "km": 68,
+      "today_cm": 3.0,
+      "yesterday_cm": 3.0,
+      "four_days_ago_cm": 0.0
+     },
+     {
+      "id": "fmi:102016",
+      "name": "Enontekiö Kilpisjärvi kyläkeskus",
+      "country": "FI",
+      "lat": 69.03905,
+      "lon": 20.81379,
+      "elev_m": null,
+      "km": 100,
+      "today_cm": 13.0,
+      "yesterday_cm": 13.0,
+      "four_days_ago_cm": 9.0
+     },
+     {
+      "id": "wmo:01045",
+      "name": "Nordstraum I Kvaenangen",
+      "country": "NO",
+      "lat": 69.833,
+      "lon": 21.883,
+      "elev_m": 6,
+      "km": 115,
+      "today_cm": 8.0,
+      "yesterday_cm": 10.0,
+      "four_days_ago_cm": null
+     }
+    ],
+    "normal_13_nov": {
+     "elev_m": 40,
+     "n_winters": 46,
+     "winters_with_snow_on_13_nov": 32,
+     "p25_cm": 0.0,
+     "p50_cm": 8.0,
+     "p75_cm": 16.5,
+     "max_cm": 67.5,
+     "last_winters_13_nov_cm": {
+      "2021-22": 6.9,
+      "2022-23": 0.0,
+      "2023-24": 12.3,
+      "2024-25": 8.0,
+      "2025-26": 0.0
+     },
+     "p50_cm_12-01": 16.9,
+     "p50_cm_12-15": 27.4,
+     "p50_cm_01-15": 49.7,
+     "usual_start_mmdd_half_of_winters": "10-15"
+    },
+    "forecast": {
+     "model_point_elev_m": 0.0,
+     "days": {
+      "2026-11-13": {
+       "snow_cm_lo": 0.0,
+       "snow_cm_hi": 0.0,
+       "precip_mm_lo": 0.0,
+       "precip_mm_hi": 0.0,
+       "tmin_lo": -8,
+       "tmin_hi": -5,
+       "tmax_lo": -7,
+       "tmax_hi": -5,
+       "hours": 8
+      },
+      "2026-11-14": {
+       "snow_cm_lo": 0.0,
+       "snow_cm_hi": 0.0,
+       "precip_mm_lo": 0.0,
+       "precip_mm_hi": 0.0,
+       "tmin_lo": -11,
+       "tmin_hi": -6,
+       "tmax_lo": -7,
+       "tmax_hi": -4,
+       "hours": 24
+      },
+      "2026-11-15": {
+       "snow_cm_lo": 2.1,
+       "snow_cm_hi": 2.3,
+       "precip_mm_lo": 3.1,
+       "precip_mm_hi": 3.7,
+       "tmin_lo": -11,
+       "tmin_hi": -4,
+       "tmax_lo": -2,
+       "tmax_hi": 2,
+       "hours": 24
+      },
+      "2026-11-16": {
+       "snow_cm_lo": 0.0,
+       "snow_cm_hi": 0.3,
+       "precip_mm_lo": 0.3,
+       "precip_mm_hi": 1.8,
+       "tmin_lo": -7,
+       "tmin_hi": -2,
+       "tmax_lo": -2,
+       "tmax_hi": 2,
+       "hours": 24
+      }
+     },
+     "weekend_snow_cm_lo": 2.1,
+     "weekend_snow_cm_hi": 2.3,
+     "weekend_tmin": -11,
+     "weekend_tmax": 2
+    }
+   },
+   "season_names": [
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+   ],
+   "nearest_snow": {
+    "oslo": [
+     {
+      "km": 4,
+      "name": "Oslo-Blindern",
+      "cm": 4.0,
+      "elev_m": 97
+     },
+     {
+      "km": 8,
+      "name": "Tryvannshogda",
+      "cm": 37.0,
+      "elev_m": 528
+     },
+     {
+      "km": 16,
+      "name": "Bjornholt",
+      "cm": 31.0,
+      "elev_m": 360
+     },
+     {
+      "km": 18,
+      "name": "Asker",
+      "cm": 4.0,
+      "elev_m": 163
+     }
+    ],
+    "bergen": [
+     {
+      "km": 35,
+      "name": "Kvamskogen-Jonshogdi",
+      "cm": 5.0,
+      "elev_m": 455
+     },
+     {
+      "km": 95,
+      "name": "Mjolfjell",
+      "cm": 10.0,
+      "elev_m": 695
+     },
+     {
+      "km": 107,
+      "name": "Fet I Eidfjord",
+      "cm": 9.0,
+      "elev_m": 737
+     },
+     {
+      "km": 123,
+      "name": "Haukeliseter Testfelt",
+      "cm": 3.0,
+      "elev_m": 990
+     }
+    ],
+    "trondheim": [
+     {
+      "km": 67,
+      "name": "Meraker-Egge",
+      "cm": 5.0,
+      "elev_m": 171
+     },
+     {
+      "km": 78,
+      "name": "Tagdalen",
+      "cm": 18.0,
+      "elev_m": 415
+     },
+     {
+      "km": 88,
+      "name": "Storlien-Storvallen",
+      "cm": 8.0,
+      "elev_m": 583
+     },
+     {
+      "km": 108,
+      "name": "Roros",
+      "cm": 11.0,
+      "elev_m": 630
+     }
+    ],
+    "tromso": [
+     {
+      "km": 1,
+      "name": "Tromso",
+      "cm": 6.0,
+      "elev_m": 114
+     },
+     {
+      "km": 45,
+      "name": "Lyngen Gjerdvassbu",
+      "cm": 44.0,
+      "elev_m": 710
+     },
+     {
+      "km": 68,
+      "name": "Bardufoss",
+      "cm": 3.0,
+      "elev_m": 77
+     },
+     {
+      "km": 100,
+      "name": "Enontekiö Kilpisjärvi kyläkeskus",
+      "cm": 13.0,
+      "elev_m": null
+     }
+    ],
+    "stockholm": [
+     {
+      "km": 75,
+      "name": "Norrveda",
+      "cm": 2.0,
+      "elev_m": 23
+     },
+     {
+      "km": 137,
+      "name": "Börrum",
+      "cm": 5.0,
+      "elev_m": 16
+     },
+     {
+      "km": 157,
+      "name": "Tryserum",
+      "cm": 1.0,
+      "elev_m": 20
+     },
+     {
+      "km": 162,
+      "name": "Söderbärke",
+      "cm": 1.0,
+      "elev_m": 122
+     }
+    ],
+    "goteborg": [
+     {
+      "km": 39,
+      "name": "Gunntorp",
+      "cm": 12.0,
+      "elev_m": 32
+     },
+     {
+      "km": 40,
+      "name": "Fotskäl",
+      "cm": 2.0,
+      "elev_m": 132
+     },
+     {
+      "km": 45,
+      "name": "Humlebo",
+      "cm": 2.0,
+      "elev_m": 78
+     },
+     {
+      "km": 63,
+      "name": "Linhult",
+      "cm": 3.0,
+      "elev_m": 173
+     }
+    ],
+    "ostersund": [
+     {
+      "km": 14,
+      "name": "Norderön",
+      "cm": 19.0,
+      "elev_m": 321
+     },
+     {
+      "km": 18,
+      "name": "Marby",
+      "cm": 24.0,
+      "elev_m": 328
+     },
+     {
+      "km": 38,
+      "name": "Rissna",
+      "cm": 33.0,
+      "elev_m": 302
+     },
+     {
+      "km": 46,
+      "name": "Höglekardalen",
+      "cm": 17.0,
+      "elev_m": 595
+     }
+    ],
+    "umea": [
+     {
+      "km": 2,
+      "name": "Umeå-Röbäcksdalen",
+      "cm": 20.0,
+      "elev_m": 10
+     },
+     {
+      "km": 25,
+      "name": "Tavelsjö",
+      "cm": 16.0,
+      "elev_m": 116
+     },
+     {
+      "km": 25,
+      "name": "Vännäs",
+      "cm": 18.0,
+      "elev_m": 107
+     },
+     {
+      "km": 45,
+      "name": "Rickleå",
+      "cm": 12.0,
+      "elev_m": 12
+     }
+    ],
+    "lulea": [
+     {
+      "km": 35,
+      "name": "Klöverträsk",
+      "cm": 5.0,
+      "elev_m": 66
+     },
+     {
+      "km": 47,
+      "name": "Brännberg",
+      "cm": 5.0,
+      "elev_m": 93
+     },
+     {
+      "km": 48,
+      "name": "Piteå",
+      "cm": 3.0,
+      "elev_m": 8
+     },
+     {
+      "km": 55,
+      "name": "Kalix",
+      "cm": 4.0,
+      "elev_m": 2
+     }
+    ],
+    "kiruna": [
+     {
+      "km": 80,
+      "name": "Abiskout",
+      "cm": 2.0,
+      "elev_m": 392
+     },
+     {
+      "km": 106,
+      "name": "Katterjåkk",
+      "cm": 9.0,
+      "elev_m": 514
+     },
+     {
+      "km": 108,
+      "name": "Sadjem",
+      "cm": 2.0,
+      "elev_m": 359
+     },
+     {
+      "km": 124,
+      "name": "Straumsnes",
+      "cm": 2.0,
+      "elev_m": 200
+     }
+    ],
+    "helsinki": [
+     {
+      "km": 78,
+      "name": "Salo Kiikala lentokenttä",
+      "cm": 2.0,
+      "elev_m": null
+     },
+     {
+      "km": 160,
+      "name": "Pöytyä Yläne",
+      "cm": 1.0,
+      "elev_m": null
+     },
+     {
+      "km": 190,
+      "name": "Juupajoki Hyytiälä",
+      "cm": 2.0,
+      "elev_m": null
+     },
+     {
+      "km": 209,
+      "name": "Mikkeli lentoasema",
+      "cm": 2.0,
+      "elev_m": null
+     }
+    ],
+    "tampere": [
+     {
+      "km": 48,
+      "name": "Juupajoki Hyytiälä",
+      "cm": 2.0,
+      "elev_m": null
+     },
+     {
+      "km": 78,
+      "name": "Kankaanpää Niinisalo lentokenttä",
+      "cm": 2.0,
+      "elev_m": null
+     },
+     {
+      "km": 101,
+      "name": "Pöytyä Yläne",
+      "cm": 1.0,
+      "elev_m": null
+     },
+     {
+      "km": 106,
+      "name": "Alavus Sulkavankylä",
+      "cm": 1.0,
+      "elev_m": null
+     }
+    ],
+    "oulu": [
+     {
+      "km": 3,
+      "name": "Oulu Kaukovainio",
+      "cm": 7.0,
+      "elev_m": null
+     },
+     {
+      "km": 35,
+      "name": "Hailuoto Keskikylä",
+      "cm": 5.0,
+      "elev_m": null
+     },
+     {
+      "km": 41,
+      "name": "Siikajoki Ruukki",
+      "cm": 8.0,
+      "elev_m": null
+     },
+     {
+      "km": 73,
+      "name": "Vaala Pelso",
+      "cm": 4.0,
+      "elev_m": null
+     }
+    ],
+    "rovaniemi": [
+     {
+      "km": 9,
+      "name": "Rovaniemi lentoasema",
+      "cm": 7.0,
+      "elev_m": null
+     },
+     {
+      "km": 15,
+      "name": "Rovaniemi Apukka",
+      "cm": 8.0,
+      "elev_m": null
+     },
+     {
+      "km": 48,
+      "name": "Ylitornio Meltosjärvi",
+      "cm": 6.0,
+      "elev_m": null
+     },
+     {
+      "km": 65,
+      "name": "Ranua lentokenttä",
+      "cm": 3.0,
+      "elev_m": null
+     }
+    ],
+    "sweden_north_66_5": {
+     "stations": 22,
+     "with_snow": 5,
+     "max_cm": 9.0
+    }
+   }
+  }
+ },
+ "ref_numbers": [],
+ "media": [
+  {
+   "id": "snow",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/tromso-snow-depth-13-november-2026/snow.webp",
+   "thumb": "blog/media/2026/11/tromso-snow-depth-13-november-2026/snow_t.webp",
+   "w": 1200,
+   "h": 630,
+   "after": 0
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Tromsø snow depth: 6 cm in town, 44 cm in the Lyngen hills (13 November 2026)",
+   "description": "Measured snow in Tromsø on 13 November 2026: 6 cm at the town station on the island, 44 cm at 710 m in Lyngen, 3 cm at Bardufoss. Near normal for the date, and a very cold weekend ahead.",
+   "lede": "Tromsø has a thin white cover this Friday. The weather station on the island, 114 m up the hill above the town centre, measured 6 cm of snow on Friday morning, down from 8 cm on Thursday. The real snow is across the fjords: a station at 710 m in the Lyngen Alps has 44 cm.",
+   "sections": [
+    {
+     "h": "Town, fjords and hills",
+     "p": [
+      "The cover in town is new: on Monday the station still had bare ground, then the snow came mid-week and settled a little on Friday. Along the coast north-east of Tromsø, Nordstraum in Kvænangen has 8 cm. Inland, Bardufoss has only 3 cm.",
+      "Higher up it is a different season. Gjerdvassbu in Lyngen, at 710 m, has had a deep cover all week: 38 cm on Monday, 44 cm now. Across the border, Kilpisjärvi in Finland, 100 km away, has 13 cm."
+     ]
+    },
+    {
+     "h": "About normal for Tromsø",
+     "p": [
+      "Our snow history for Tromsø near sea level covers 46 past winters. On 13 November there was snow on the ground in 32 of them, and the middle value is 8 cm, with up to about 17 cm in a snowy year. Today's 6 cm, measured a little higher up, sits right in that range.",
+      "Recent winters on this date ranged from bare ground (2022-23 and last winter) to 12 cm in 2023-24. By 1 December the usual depth is about 17 cm, by mid-December about 27 cm, and by mid-January about 50 cm."
+     ]
+    },
+    {
+     "h": "The weekend: the cold arrives",
+     "p": [
+      "Saturday is dry and cold, with temperatures between about -11 °C and -4 °C depending on the forecast. Sunday brings around 2 cm of new snow and then milder air, close to zero. Monday stays near freezing with little snow. The thin cover will stay, and crisp."
+     ]
+    }
+   ],
+   "advice": [
+    "With 6 cm on the ground and dark afternoons, a headlamp and studded shoes make a town walk much easier this weekend.",
+    "If you are driving out of town towards Lyngen, the roads go from wet to icy as you climb.",
+    "Before skiing anywhere steep in the Lyngen Alps, read the avalanche warning on Varsom: 44 cm on bare, early-season ground is not a stable base."
+   ],
+   "captions": {
+    "snow": "Snow depth measured at the weather stations on 13 November 2026: each dot is a station, coloured by its depth (light blue = a few cm, dark blue = deep); white dots with a grey ring = bare ground. Labels give the depth at the main stations. Measurements only, no model layer."
+   },
+   "method": "Snow depth today: measured at weather stations on the morning of 13 November 2026 (MET Norway station reports in the international SYNOP format); a station reports the snow on its own small plot, so a few kilometres away and a hundred metres higher the ground can look different. Usual depth for the date: SnowScope snow history, 46 past winters (1980-81 to 2025-26), a model of the past at the city's height, not a station record. Weekend: two weather models (ECMWF IFS and DWD ICON, read through Open-Meteo), given as a range. Places and rules: the official pages listed below.",
+   "references": [
+    {
+     "text": "MET Norway, free meteorological data (station reports)",
+     "url": "https://www.met.no/en/free-meteorological-data"
+    },
+    {
+     "text": "Ogimet, archive of the international SYNOP station reports (Norway, WMO block 01)",
+     "url": "https://www.ogimet.com/"
+    },
+    {
+     "text": "Open-Meteo, weather forecast data (ECMWF and ICON models)",
+     "url": "https://open-meteo.com/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Snow map on SnowScope",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  },
+  "sv": {
+   "title": "Snödjup i Tromsø: 6 cm i stan, 44 cm i Lyngenfjällen (13 november 2026)",
+   "description": "Uppmätt snö i Tromsø den 13 november 2026: 6 cm vid stadens station på ön, 44 cm på 710 m i Lyngen, 3 cm i Bardufoss. Nära det normala för datumet, och en mycket kall helg framför sig.",
+   "lede": "Tromsø har ett tunt vitt täcke den här fredagen. Väderstationen på ön, 114 m upp i backen ovanför centrum, mätte 6 cm snö på fredagsmorgonen, ner från 8 cm i torsdags. Den riktiga snön ligger på andra sidan fjordarna: en station på 710 m i Lyngsalperna har 44 cm.",
+   "sections": [
+    {
+     "h": "Stad, fjordar och fjäll",
+     "p": [
+      "Täcket i stan är nytt: i måndags hade stationen fortfarande barmark, sedan kom snön mitt i veckan och satte sig lite på fredagen. Längs kusten nordost om Tromsø har Nordstraum i Kvænangen 8 cm. Inåt land har Bardufoss bara 3 cm.",
+      "Högre upp är det en annan årstid. Gjerdvassbu i Lyngen, på 710 m, har haft ett djupt täcke hela veckan: 38 cm i måndags, 44 cm nu. På andra sidan gränsen har Kilpisjärvi i Finland, 100 km bort, 13 cm."
+     ]
+    },
+    {
+     "h": "Ungefär normalt för Tromsø",
+     "p": [
+      "Vår snöhistorik för Tromsø nära havsnivån omfattar 46 vintrar. Den 13 november låg det snö på marken i 32 av dem, och mittvärdet är 8 cm, med upp till runt 17 cm ett snörikt år. Dagens 6 cm, uppmätta lite högre upp, ligger mitt i det spannet.",
+      "De senaste vintrarna varierade det här datumet från barmark (2022-23 och förra vintern) till 12 cm 2023-24. Den 1 december är det normala runt 17 cm, i mitten av december runt 27 cm och i mitten av januari runt 50 cm."
+     ]
+    },
+    {
+     "h": "Helgen: kylan kommer",
+     "p": [
+      "Lördagen är torr och kall, med temperaturer mellan ungefär -11 °C och -4 °C beroende på prognos. Söndagen ger runt 2 cm nysnö och sedan mildare luft, nära noll. Måndagen förblir kring noll med lite snö. Det tunna täcket ligger kvar, och knarrar."
+     ]
+    }
+   ],
+   "advice": [
+    "Med 6 cm på marken och mörka eftermiddagar gör pannlampa och broddar en promenad i stan mycket lättare i helgen.",
+    "Kör du ut från stan mot Lyngen går vägarna från blöta till isiga när du kommer högre.",
+    "Innan du åker skidor i brant terräng i Lyngsalperna, läs lavinvarningen på Varsom: 44 cm på bar mark tidigt på säsongen är ingen stabil grund."
+   ],
+   "captions": {
+    "snow": "Snödjup uppmätt vid väderstationerna den 13 november 2026: varje prick är en station, färgad efter snödjupet (ljusblått = några cm, mörkblått = djupt); vita prickar med grå ring = barmark. Etiketterna visar djupet vid de viktigaste stationerna. Bara mätningar, inget modellager."
+   },
+   "method": "Snödjup i dag: uppmätt vid väderstationer på morgonen den 13 november 2026 (MET Norges stationsrapporter i det internationella SYNOP-formatet). En station mäter snön på sin egen lilla yta, så några kilometer bort och hundra meter högre kan marken se annorlunda ut. Normalt snödjup för datumet: SnowScopes snöhistorik, 46 vintrar (1980-81 till 2025-26), en modell av det förflutna på stadens höjd, inte en stationsserie. Helgen: två vädermodeller (ECMWF IFS och DWD ICON via Open-Meteo), angivna som ett spann. Platser och regler: de officiella sidorna nedan.",
+   "references": [
+    {
+     "text": "MET Norway, free meteorological data (station reports)",
+     "url": "https://www.met.no/en/free-meteorological-data"
+    },
+    {
+     "text": "Ogimet, archive of the international SYNOP station reports (Norway, WMO block 01)",
+     "url": "https://www.ogimet.com/"
+    },
+    {
+     "text": "Open-Meteo, weather forecast data (ECMWF and ICON models)",
+     "url": "https://open-meteo.com/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Snökartan på SnowScope",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  },
+  "nb": {
+   "title": "Snødybde i Tromsø: 6 cm i byen, 44 cm i Lyngsalpene (13. november 2026)",
+   "description": "Målt snø i Tromsø 13. november 2026: 6 cm på byens stasjon på øya, 44 cm på 710 moh. i Lyngen, 3 cm på Bardufoss. Nær det normale for datoen, og en svært kald helg i vente.",
+   "lede": "Tromsø har et tynt hvitt dekke denne fredagen. Værstasjonen på øya, 114 m opp i lia over sentrum, målte 6 cm snø fredag morgen, ned fra 8 cm torsdag. Den ordentlige snøen ligger på andre siden av fjordene: en stasjon på 710 moh. i Lyngsalpene har 44 cm.",
+   "sections": [
+    {
+     "h": "By, fjorder og fjell",
+     "p": [
+      "Dekket i byen er nytt: mandag hadde stasjonen fortsatt bar bakke, så kom snøen midt i uka og satte seg litt fredag. Langs kysten nordøst for Tromsø har Nordstraum i Kvænangen 8 cm. Innover i landet har Bardufoss bare 3 cm.",
+      "Høyere opp er det en annen årstid. Gjerdvassbu i Lyngen, på 710 moh., har hatt et dypt dekke hele uka: 38 cm mandag, 44 cm nå. Over grensen har Kilpisjärvi i Finland, 100 km unna, 13 cm."
+     ]
+    },
+    {
+     "h": "Omtrent normalt for Tromsø",
+     "p": [
+      "Snøhistorikken vår for Tromsø nær havnivå dekker 46 vintre. Den 13. november lå det snø på bakken i 32 av dem, og midtverdien er 8 cm, med opptil rundt 17 cm i et snørikt år. Dagens 6 cm, målt litt høyere oppe, ligger midt i det spennet.",
+      "De siste vintrene varierte denne datoen fra bar bakke (2022-23 og i fjor) til 12 cm i 2023-24. Den 1. desember er det normale rundt 17 cm, midt i desember rundt 27 cm og midt i januar rundt 50 cm."
+     ]
+    },
+    {
+     "h": "Helgen: kulda kommer",
+     "p": [
+      "Lørdag er tørr og kald, med temperaturer mellom omtrent -11 °C og -4 °C avhengig av prognosen. Søndag gir rundt 2 cm nysnø og deretter mildere luft, nær null. Mandag holder seg rundt null med lite snø. Det tynne dekket blir liggende, og knirker."
+     ]
+    }
+   ],
+   "advice": [
+    "Med 6 cm på bakken og mørke ettermiddager gjør hodelykt og brodder en byvandring mye enklere i helgen.",
+    "Kjører du ut av byen mot Lyngen, går veiene fra våte til isete når du kommer høyere.",
+    "Før du går på ski i bratt terreng i Lyngsalpene, les skredvarselet på Varsom: 44 cm på bar bakke tidlig i sesongen er ikke et stabilt underlag."
+   ],
+   "captions": {
+    "snow": "Snødybde målt ved værstasjonene 13. november 2026: hver prikk er en stasjon, farget etter snødybden (lyseblått = noen få cm, mørkeblått = dypt); hvite prikker med grå ring = bar bakke. Etikettene viser dybden ved de viktigste stasjonene. Bare målinger, ikke noe modellag."
+   },
+   "method": "Snødybde i dag: målt ved værstasjoner om morgenen 13. november 2026 (Meteorologisk institutts stasjonsrapporter i det internasjonale SYNOP-formatet). En stasjon måler snøen på sin egen lille flekk, så noen kilometer unna og hundre meter høyere kan bakken se annerledes ut. Vanlig snødybde for datoen: SnowScopes snøhistorikk, 46 vintre (1980-81 til 2025-26), en modell av fortiden i byens høyde, ikke en stasjonsserie. Helgen: to værmodeller (ECMWF IFS og DWD ICON via Open-Meteo), oppgitt som et spenn. Steder og regler: de offisielle sidene nedenfor.",
+   "references": [
+    {
+     "text": "MET Norway, free meteorological data (station reports)",
+     "url": "https://www.met.no/en/free-meteorological-data"
+    },
+    {
+     "text": "Ogimet, archive of the international SYNOP station reports (Norway, WMO block 01)",
+     "url": "https://www.ogimet.com/"
+    },
+    {
+     "text": "Open-Meteo, weather forecast data (ECMWF and ICON models)",
+     "url": "https://open-meteo.com/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Snøkartet på SnowScope",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  },
+  "fi": {
+   "title": "Tromssan lumensyvyys: kaupungissa 6 cm, Lyngenin tuntureilla 44 cm (13. marraskuuta 2026)",
+   "description": "Mitattu lumi Tromssassa 13. marraskuuta 2026: saaren kaupunkiasemalla 6 cm, Lyngenissä 710 metrissä 44 cm, Bardufossissa 3 cm. Lähellä päivän tavallista, ja edessä hyvin kylmä viikonloppu.",
+   "lede": "Tromssassa on tänä perjantaina ohut valkoinen peite. Saaren sääasema, 114 metrin korkeudella keskustan yläpuolisella rinteellä, mittasi perjantaiaamuna 6 cm lunta, torstaina 8 cm. Kunnon lumi on vuonojen toisella puolella: Lyngenin Alppien 710 metrin asemalla on 44 cm.",
+   "sections": [
+    {
+     "h": "Kaupunki, vuonot ja tunturit",
+     "p": [
+      "Kaupungin peite on uusi: maanantaina asemalla oli vielä paljas maa, sitten lumi tuli viikon puolivälissä ja painui hieman perjantaina. Rannikolla Tromssasta koilliseen Kvænangenin Nordstraumissa on 8 cm. Sisämaassa Bardufossissa on vain 3 cm.",
+      "Ylempänä on eri vuodenaika. Lyngenin Gjerdvassbussa, 710 metrissä, peite on ollut paksu koko viikon: maanantaina 38 cm, nyt 44 cm. Rajan takana Suomen Kilpisjärvellä, 100 km päässä, on 13 cm."
+     ]
+    },
+    {
+     "h": "Suunnilleen tavallista Tromssalle",
+     "p": [
+      "Lumihistoriamme Tromssasta lähellä merenpintaa kattaa 46 talvea. Marraskuun 13. päivänä maassa oli lunta 32 talvena, ja keskimmäinen arvo on 8 cm, lumisena vuonna jopa noin 17 cm. Tämän päivän 6 cm, mitattuna vähän ylempää, osuu juuri siihen väliin.",
+      "Viime talvina tämä päivä vaihteli paljaasta maasta (2022-23 ja viime talvi) 12 senttiin talvella 2023-24. Joulukuun 1. päivänä tavallinen on noin 17 cm, joulukuun puolivälissä noin 27 cm ja tammikuun puolivälissä noin 50 cm."
+     ]
+    },
+    {
+     "h": "Viikonloppu: kylmä tulee",
+     "p": [
+      "Lauantai on kuiva ja kylmä, ennusteesta riippuen noin -11 ja -4 asteen välillä. Sunnuntaina sataa noin 2 cm uutta lunta, ja sitten tulee leudompaa ilmaa, nollan tuntumaan. Maanantai pysyy nollan tienoilla vähäisellä lumella. Ohut peite pysyy ja narskuu."
+     ]
+    }
+   ],
+   "advice": [
+    "Kun maassa on 6 cm ja iltapäivät ovat pimeitä, otsalamppu ja liukuesteet helpottavat kaupunkikävelyä viikonloppuna paljon.",
+    "Jos ajat kaupungista Lyngenin suuntaan, tiet muuttuvat märistä jäisiksi ylemmäs noustessa.",
+    "Ennen kuin hiihdät jyrkässä maastossa Lyngenin Alpeilla, lue lumivyöryvaroitus Varsomista: 44 cm paljaalla maalla alkukaudesta ei ole vakaa pohja."
+   ],
+   "captions": {
+    "snow": "Sääasemilla 13. marraskuuta 2026 mitattu lumensyvyys: jokainen piste on asema, väritetty lumensyvyyden mukaan (vaaleansininen = muutama cm, tummansininen = paksu); valkoinen piste harmaalla reunalla = paljas maa. Nimilaput kertovat syvyyden tärkeimmillä asemilla. Vain mittauksia, ei mallikerrosta."
+   },
+   "method": "Lumensyvyys tänään: mitattu sääasemilla aamulla 13. marraskuuta 2026 (Norjan ilmatieteen laitoksen asemaraportit kansainvälisessä SYNOP-muodossa). Asema mittaa lunta omalla pienellä alallaan, joten muutaman kilometrin päässä ja sata metriä korkeammalla maa voi näyttää toiselta. Tavallinen lumensyvyys päivälle: SnowScopen lumihistoria, 46 talvea (1980-81 – 2025-26), menneisyyden malli kaupungin korkeudella, ei aseman mittaussarja. Viikonloppu: kaksi säämallia (ECMWF IFS ja DWD ICON, Open-Meteon kautta), annettu vaihteluvälinä. Paikat ja säännöt: alla luetellut viralliset sivut.",
+   "references": [
+    {
+     "text": "MET Norway, free meteorological data (station reports)",
+     "url": "https://www.met.no/en/free-meteorological-data"
+    },
+    {
+     "text": "Ogimet, archive of the international SYNOP station reports (Norway, WMO block 01)",
+     "url": "https://www.ogimet.com/"
+    },
+    {
+     "text": "Open-Meteo, weather forecast data (ECMWF and ICON models)",
+     "url": "https://open-meteo.com/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Lumikartta SnowScopessa",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "hand (N1 Nordic, measured snow 13 Nov 2026)"
+  },
+  "sv": {
+   "writer": "hand (N1 Nordic, measured snow 13 Nov 2026)"
+  },
+  "nb": {
+   "writer": "hand (N1 Nordic, measured snow 13 Nov 2026)"
+  },
+  "fi": {
+   "writer": "hand (N1 Nordic, measured snow 13 Nov 2026)"
+  }
+ },
+ "words_en": 279,
+ "indexable": true,
+ "main": {
+  "slug": null,
+  "name": "Tromsø",
+  "lat": 69.649,
+  "lon": 18.956
+ },
+ "places": [],
+ "resort_links": [],
+ "table": null,
+ "bulletins": [],
+ "trip_day": "",
+ "map_link": "https://snowscope.app/",
+ "keyword": {
+  "family": "snow-now",
+  "entity": "tromso",
+  "region": "SCANDES",
+  "date": "2026-11-13"
+ },
+ "voice": "local",
+ "query": "snø tromsø",
+ "overlap": {
+  "before": 5.1,
+  "after": 5.1,
+  "with": "oslo-snow-depth-today-13-november-2026",
+  "tries": 0
+ },
+ "publish_utc": "2026-11-13T21:49:41Z"
+}

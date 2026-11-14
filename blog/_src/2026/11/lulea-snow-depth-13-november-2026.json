@@ -1,0 +1,825 @@
+{
+ "id": "feature-lulea-snow-depth-13-november-2026",
+ "slug": "lulea-snow-depth-13-november-2026",
+ "date": "2026-11-13",
+ "published_utc": "2026-11-14T13:29:52Z",
+ "updated_utc": "2026-11-14T13:29:52Z",
+ "region": "SCANDES",
+ "angle": "guide_feature_climate",
+ "category": "guide",
+ "draft": false,
+ "kind": "climate",
+ "resort_class": "major",
+ "structure": "missing-airport-reading-ring-of-stations",
+ "score": 90,
+ "tags": [
+  "snow-depth",
+  "forecast"
+ ],
+ "facts": {
+  "kind": "climate",
+  "date": "2026-11-13",
+  "extra": {
+   "lulea": {
+    "city": {
+     "key": "lulea",
+     "name": "Luleå",
+     "country": "SE",
+     "lat": 65.584,
+     "lon": 22.155
+    },
+    "date": "2026-11-13",
+    "measured": [
+     {
+      "id": "smhi:161900",
+      "name": "Klöverträsk",
+      "country": "SE",
+      "lat": 65.6348,
+      "lon": 21.4128,
+      "elev_m": 66,
+      "km": 35,
+      "today_cm": 5.0,
+      "yesterday_cm": 0.0,
+      "four_days_ago_cm": 0.0
+     },
+     {
+      "id": "smhi:161930",
+      "name": "Brännberg",
+      "country": "SE",
+      "lat": 65.7927,
+      "lon": 21.2555,
+      "elev_m": 93,
+      "km": 47,
+      "today_cm": 5.0,
+      "yesterday_cm": 0.0,
+      "four_days_ago_cm": 0.0
+     },
+     {
+      "id": "smhi:161790",
+      "name": "Piteå",
+      "country": "SE",
+      "lat": 65.2625,
+      "lon": 21.474,
+      "elev_m": 8,
+      "km": 48,
+      "today_cm": 3.0,
+      "yesterday_cm": 0.0,
+      "four_days_ago_cm": 0.0
+     },
+     {
+      "id": "smhi:163940",
+      "name": "Kalix",
+      "country": "SE",
+      "lat": 65.8369,
+      "lon": 23.1981,
+      "elev_m": 2,
+      "km": 55,
+      "today_cm": 4.0,
+      "yesterday_cm": 0.0,
+      "four_days_ago_cm": 0.0
+     },
+     {
+      "id": "smhi:160870",
+      "name": "Klockarträsk",
+      "country": "SE",
+      "lat": 65.4976,
+      "lon": 20.8901,
+      "elev_m": 148,
+      "km": 59,
+      "today_cm": 7.0,
+      "yesterday_cm": null,
+      "four_days_ago_cm": 0.0
+     },
+     {
+      "id": "smhi:172700",
+      "name": "Veniksel",
+      "country": "SE",
+      "lat": 66.0973,
+      "lon": 22.4947,
+      "elev_m": 75,
+      "km": 59,
+      "today_cm": 3.0,
+      "yesterday_cm": 0.0,
+      "four_days_ago_cm": 0.0
+     }
+    ],
+    "normal_13_nov": {
+     "elev_m": 10,
+     "n_winters": 46,
+     "winters_with_snow_on_13_nov": 31,
+     "p25_cm": 0.0,
+     "p50_cm": 2.0,
+     "p75_cm": 6.0,
+     "max_cm": 34.0,
+     "last_winters_13_nov_cm": {
+      "2021-22": 1.0,
+      "2022-23": 0.0,
+      "2023-24": 9.0,
+      "2024-25": 0.0,
+      "2025-26": 3.0
+     },
+     "p50_cm_12-01": 7.0,
+     "p50_cm_12-15": 11.0,
+     "p50_cm_01-15": 27.0,
+     "usual_start_mmdd_half_of_winters": "11-02"
+    },
+    "forecast": {
+     "model_point_elev_m": 4.0,
+     "days": {
+      "2026-11-13": {
+       "snow_cm_lo": 2.8,
+       "snow_cm_hi": 3.5,
+       "precip_mm_lo": 4.1,
+       "precip_mm_hi": 5.1,
+       "tmin_lo": -3,
+       "tmin_hi": -2,
+       "tmax_lo": -1,
+       "tmax_hi": 0,
+       "hours": 8
+      },
+      "2026-11-14": {
+       "snow_cm_lo": 0.5,
+       "snow_cm_hi": 0.6,
+       "precip_mm_lo": 0.7,
+       "precip_mm_hi": 0.8,
+       "tmin_lo": -8,
+       "tmin_hi": -6,
+       "tmax_lo": -3,
+       "tmax_hi": -2,
+       "hours": 24
+      },
+      "2026-11-15": {
+       "snow_cm_lo": 0.7,
+       "snow_cm_hi": 1.6,
+       "precip_mm_lo": 1.2,
+       "precip_mm_hi": 2.3,
+       "tmin_lo": -6,
+       "tmin_hi": -2,
+       "tmax_lo": 2,
+       "tmax_hi": 3,
+       "hours": 24
+      },
+      "2026-11-16": {
+       "snow_cm_lo": 0.0,
+       "snow_cm_hi": 0.4,
+       "precip_mm_lo": 5.3,
+       "precip_mm_hi": 8.5,
+       "tmin_lo": 1,
+       "tmin_hi": 1,
+       "tmax_lo": 4,
+       "tmax_hi": 4,
+       "hours": 24
+      }
+     },
+     "weekend_snow_cm_lo": 1.2,
+     "weekend_snow_cm_hi": 2.2,
+     "weekend_tmin": -8,
+     "weekend_tmax": 3
+    }
+   },
+   "season_names": [
+    "2021-22",
+    "2022-23",
+    "2023-24",
+    "2024-25",
+    "2025-26"
+   ],
+   "nearest_snow": {
+    "oslo": [
+     {
+      "km": 4,
+      "name": "Oslo-Blindern",
+      "cm": 4.0,
+      "elev_m": 97
+     },
+     {
+      "km": 8,
+      "name": "Tryvannshogda",
+      "cm": 37.0,
+      "elev_m": 528
+     },
+     {
+      "km": 16,
+      "name": "Bjornholt",
+      "cm": 31.0,
+      "elev_m": 360
+     },
+     {
+      "km": 18,
+      "name": "Asker",
+      "cm": 4.0,
+      "elev_m": 163
+     }
+    ],
+    "bergen": [
+     {
+      "km": 35,
+      "name": "Kvamskogen-Jonshogdi",
+      "cm": 5.0,
+      "elev_m": 455
+     },
+     {
+      "km": 95,
+      "name": "Mjolfjell",
+      "cm": 10.0,
+      "elev_m": 695
+     },
+     {
+      "km": 107,
+      "name": "Fet I Eidfjord",
+      "cm": 9.0,
+      "elev_m": 737
+     },
+     {
+      "km": 123,
+      "name": "Haukeliseter Testfelt",
+      "cm": 3.0,
+      "elev_m": 990
+     }
+    ],
+    "trondheim": [
+     {
+      "km": 67,
+      "name": "Meraker-Egge",
+      "cm": 5.0,
+      "elev_m": 171
+     },
+     {
+      "km": 78,
+      "name": "Tagdalen",
+      "cm": 18.0,
+      "elev_m": 415
+     },
+     {
+      "km": 88,
+      "name": "Storlien-Storvallen",
+      "cm": 8.0,
+      "elev_m": 583
+     },
+     {
+      "km": 108,
+      "name": "Roros",
+      "cm": 11.0,
+      "elev_m": 630
+     }
+    ],
+    "tromso": [
+     {
+      "km": 1,
+      "name": "Tromso",
+      "cm": 6.0,
+      "elev_m": 114
+     },
+     {
+      "km": 45,
+      "name": "Lyngen Gjerdvassbu",
+      "cm": 44.0,
+      "elev_m": 710
+     },
+     {
+      "km": 68,
+      "name": "Bardufoss",
+      "cm": 3.0,
+      "elev_m": 77
+     },
+     {
+      "km": 100,
+      "name": "Enontekiö Kilpisjärvi kyläkeskus",
+      "cm": 13.0,
+      "elev_m": null
+     }
+    ],
+    "stockholm": [
+     {
+      "km": 75,
+      "name": "Norrveda",
+      "cm": 2.0,
+      "elev_m": 23
+     },
+     {
+      "km": 137,
+      "name": "Börrum",
+      "cm": 5.0,
+      "elev_m": 16
+     },
+     {
+      "km": 157,
+      "name": "Tryserum",
+      "cm": 1.0,
+      "elev_m": 20
+     },
+     {
+      "km": 162,
+      "name": "Söderbärke",
+      "cm": 1.0,
+      "elev_m": 122
+     }
+    ],
+    "goteborg": [
+     {
+      "km": 39,
+      "name": "Gunntorp",
+      "cm": 12.0,
+      "elev_m": 32
+     },
+     {
+      "km": 40,
+      "name": "Fotskäl",
+      "cm": 2.0,
+      "elev_m": 132
+     },
+     {
+      "km": 45,
+      "name": "Humlebo",
+      "cm": 2.0,
+      "elev_m": 78
+     },
+     {
+      "km": 63,
+      "name": "Linhult",
+      "cm": 3.0,
+      "elev_m": 173
+     }
+    ],
+    "ostersund": [
+     {
+      "km": 14,
+      "name": "Norderön",
+      "cm": 19.0,
+      "elev_m": 321
+     },
+     {
+      "km": 18,
+      "name": "Marby",
+      "cm": 24.0,
+      "elev_m": 328
+     },
+     {
+      "km": 38,
+      "name": "Rissna",
+      "cm": 33.0,
+      "elev_m": 302
+     },
+     {
+      "km": 46,
+      "name": "Höglekardalen",
+      "cm": 17.0,
+      "elev_m": 595
+     }
+    ],
+    "umea": [
+     {
+      "km": 2,
+      "name": "Umeå-Röbäcksdalen",
+      "cm": 20.0,
+      "elev_m": 10
+     },
+     {
+      "km": 25,
+      "name": "Tavelsjö",
+      "cm": 16.0,
+      "elev_m": 116
+     },
+     {
+      "km": 25,
+      "name": "Vännäs",
+      "cm": 18.0,
+      "elev_m": 107
+     },
+     {
+      "km": 45,
+      "name": "Rickleå",
+      "cm": 12.0,
+      "elev_m": 12
+     }
+    ],
+    "lulea": [
+     {
+      "km": 35,
+      "name": "Klöverträsk",
+      "cm": 5.0,
+      "elev_m": 66
+     },
+     {
+      "km": 47,
+      "name": "Brännberg",
+      "cm": 5.0,
+      "elev_m": 93
+     },
+     {
+      "km": 48,
+      "name": "Piteå",
+      "cm": 3.0,
+      "elev_m": 8
+     },
+     {
+      "km": 55,
+      "name": "Kalix",
+      "cm": 4.0,
+      "elev_m": 2
+     }
+    ],
+    "kiruna": [
+     {
+      "km": 80,
+      "name": "Abiskout",
+      "cm": 2.0,
+      "elev_m": 392
+     },
+     {
+      "km": 106,
+      "name": "Katterjåkk",
+      "cm": 9.0,
+      "elev_m": 514
+     },
+     {
+      "km": 108,
+      "name": "Sadjem",
+      "cm": 2.0,
+      "elev_m": 359
+     },
+     {
+      "km": 124,
+      "name": "Straumsnes",
+      "cm": 2.0,
+      "elev_m": 200
+     }
+    ],
+    "helsinki": [
+     {
+      "km": 78,
+      "name": "Salo Kiikala lentokenttä",
+      "cm": 2.0,
+      "elev_m": null
+     },
+     {
+      "km": 160,
+      "name": "Pöytyä Yläne",
+      "cm": 1.0,
+      "elev_m": null
+     },
+     {
+      "km": 190,
+      "name": "Juupajoki Hyytiälä",
+      "cm": 2.0,
+      "elev_m": null
+     },
+     {
+      "km": 209,
+      "name": "Mikkeli lentoasema",
+      "cm": 2.0,
+      "elev_m": null
+     }
+    ],
+    "tampere": [
+     {
+      "km": 48,
+      "name": "Juupajoki Hyytiälä",
+      "cm": 2.0,
+      "elev_m": null
+     },
+     {
+      "km": 78,
+      "name": "Kankaanpää Niinisalo lentokenttä",
+      "cm": 2.0,
+      "elev_m": null
+     },
+     {
+      "km": 101,
+      "name": "Pöytyä Yläne",
+      "cm": 1.0,
+      "elev_m": null
+     },
+     {
+      "km": 106,
+      "name": "Alavus Sulkavankylä",
+      "cm": 1.0,
+      "elev_m": null
+     }
+    ],
+    "oulu": [
+     {
+      "km": 3,
+      "name": "Oulu Kaukovainio",
+      "cm": 7.0,
+      "elev_m": null
+     },
+     {
+      "km": 35,
+      "name": "Hailuoto Keskikylä",
+      "cm": 5.0,
+      "elev_m": null
+     },
+     {
+      "km": 41,
+      "name": "Siikajoki Ruukki",
+      "cm": 8.0,
+      "elev_m": null
+     },
+     {
+      "km": 73,
+      "name": "Vaala Pelso",
+      "cm": 4.0,
+      "elev_m": null
+     }
+    ],
+    "rovaniemi": [
+     {
+      "km": 9,
+      "name": "Rovaniemi lentoasema",
+      "cm": 7.0,
+      "elev_m": null
+     },
+     {
+      "km": 15,
+      "name": "Rovaniemi Apukka",
+      "cm": 8.0,
+      "elev_m": null
+     },
+     {
+      "km": 48,
+      "name": "Ylitornio Meltosjärvi",
+      "cm": 6.0,
+      "elev_m": null
+     },
+     {
+      "km": 65,
+      "name": "Ranua lentokenttä",
+      "cm": 3.0,
+      "elev_m": null
+     }
+    ],
+    "sweden_north_66_5": {
+     "stations": 22,
+     "with_snow": 5,
+     "max_cm": 9.0
+    }
+   }
+  }
+ },
+ "ref_numbers": [],
+ "media": [
+  {
+   "id": "snow",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/lulea-snow-depth-13-november-2026/snow.webp",
+   "thumb": "blog/media/2026/11/lulea-snow-depth-13-november-2026/snow_t.webp",
+   "w": 1200,
+   "h": 630,
+   "after": 0
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Luleå snow depth: no airport reading, 3 to 7 cm all around (13 November 2026)",
+   "description": "Luleå on 13 November 2026: the Kallax airport station sent no snow depth today, but the stations around the city measured 3 to 7 cm, all new since Thursday, with more snow falling on Friday.",
+   "lede": "Luleå is most likely white this Friday, but the city's own snow stake did not tell us. The station at Kallax airport, which had bare ground on Thursday, sent no snow-depth reading today. The ring of stations around the city did, and every one of them measured its first snow since at least late October.",
+   "sections": [
+    {
+     "h": "The ring around the city",
+     "p": [
+      "Klöverträsk, 35 km to the west, measured 5 cm. Brännberg, inland, 5 cm. Piteå, down the coast, 3 cm. Kalix, up the coast, 4 cm. Klockarträsk, at 148 m, 7 cm, and Veniksel 3 cm. Those that reported on Thursday all had bare ground.",
+      "With snow on all sides and the same storm overhead, it is a fair bet that Luleå itself has a few centimetres too, but that is our reading of the neighbours, not a measurement in the city."
+     ]
+    },
+    {
+     "h": "Normal for mid-November",
+     "p": [
+      "Our snow history for Luleå covers 46 past winters. On 13 November there was snow on the ground in 31 of them, and the middle value is 2 cm, with 6 cm or more in one winter of four. So 3 to 7 cm around the city is a normal-to-good start. Half the winters had their first lasting cover by 2 November.",
+      "By 1 December Luleå usually has about 7 cm, by mid-December about 11 cm and by mid-January about 27 cm. On this date in the last five winters: 1 cm, bare, 9 cm, bare and 3 cm."
+     ]
+    },
+    {
+     "h": "The weekend",
+     "p": [
+      "Friday itself brings about 3 cm more snow at just below zero. Saturday is colder, down to around -8 °C, with only a light dusting. Sunday adds 1 to 2 cm and turns milder in the afternoon, up to about 3 °C. On Monday rain, 5 to 8 mm, at a few degrees above zero, will test the cover."
+     ]
+    }
+   ],
+   "advice": [
+    "Saturday, cold and white, is the day for the first walk on the snowy paths along the shore.",
+    "The bay and the rivers are not frozen: stay off any ice, however white the shore looks.",
+    "Monday's rain on fresh snow means ice on Tuesday morning: ice grips by the door."
+   ],
+   "captions": {
+    "snow": "Snow depth measured at the weather stations on 13 November 2026: each dot is a station, coloured by its depth (light blue = a few cm, dark blue = deep); white dots with a grey ring = bare ground. Labels give the depth at the main stations. Measurements only, no model layer."
+   },
+   "method": "Snow depth today: measured at weather stations on the morning of 13 November 2026 (SMHI); a station reports the snow on its own small plot, so a few kilometres away and a hundred metres higher the ground can look different. Usual depth for the date: SnowScope snow history, 46 past winters (1980-81 to 2025-26), a model of the past at the city's height, not a station record. Weekend: two weather models (ECMWF IFS and DWD ICON, read through Open-Meteo), given as a range. Places and rules: the official pages listed below.",
+   "references": [
+    {
+     "text": "SMHI, open meteorological observations (snow depth, daily)",
+     "url": "https://www.smhi.se/data/meteorologi/ladda-ner-meteorologiska-observationer"
+    },
+    {
+     "text": "Open-Meteo, weather forecast data (ECMWF and ICON models)",
+     "url": "https://open-meteo.com/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Snow map on SnowScope",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  },
+  "sv": {
+   "title": "Snödjup i Luleå: inget värde från flygplatsen, 3 till 7 cm runt omkring (13 november 2026)",
+   "description": "Luleå den 13 november 2026: stationen vid Kallax flygplats skickade inget snödjup i dag, men stationerna runt staden mätte 3 till 7 cm, allt nytt sedan torsdagen, och mer snö faller på fredagen.",
+   "lede": "Luleå är troligen vitt den här fredagen, men stadens egen snöstation sa inget. Stationen vid Kallax flygplats, som hade barmark i torsdags, skickade inget snödjup i dag. Ringen av stationer runt staden gjorde det, och varenda en av dem mätte sin första snö sedan åtminstone slutet av oktober.",
+   "sections": [
+    {
+     "h": "Ringen runt staden",
+     "p": [
+      "Klöverträsk, 35 km västerut, mätte 5 cm. Brännberg, inåt land, 5 cm. Piteå, längre ner längs kusten, 3 cm. Kalix, upp längs kusten, 4 cm. Klockarträsk, på 148 m, 7 cm, och Veniksel 3 cm. De som rapporterade i torsdags hade alla barmark.",
+      "Med snö åt alla håll och samma oväder ovanför är det rimligt att Luleå också har några centimeter, men det är vår tolkning av grannarna, inte en mätning i staden."
+     ]
+    },
+    {
+     "h": "Normalt för mitten av november",
+     "p": [
+      "Vår snöhistorik för Luleå omfattar 46 vintrar. Den 13 november låg det snö på marken i 31 av dem, och mittvärdet är 2 cm, med 6 cm eller mer en vinter av fyra. Så 3 till 7 cm runt staden är en normal till bra start. Hälften av vintrarna hade sitt första bestående täcke den 2 november.",
+      "Den 1 december har Luleå normalt runt 7 cm, i mitten av december runt 11 cm och i mitten av januari runt 27 cm. Det här datumet de senaste fem vintrarna: 1 cm, barmark, 9 cm, barmark och 3 cm."
+     ]
+    },
+    {
+     "h": "Helgen",
+     "p": [
+      "Fredagen ger själv runt 3 cm mer snö strax under noll. Lördagen är kallare, ner mot -8 °C, med bara lite pudrande. Söndagen ger 1 till 2 cm och blir mildare på eftermiddagen, upp mot 3 °C. På måndag sätter regn, 5 till 8 mm, vid några plusgrader, täcket på prov."
+     ]
+    }
+   ],
+   "advice": [
+    "Lördagen, kall och vit, är dagen för första promenaden på de snöiga stigarna längs stranden.",
+    "Fjärden och älvarna är inte frusna: håll dig borta från all is, hur vit stranden än ser ut.",
+    "Måndagens regn på nysnö betyder is på tisdagsmorgonen: broddar vid dörren."
+   ],
+   "captions": {
+    "snow": "Snödjup uppmätt vid väderstationerna den 13 november 2026: varje prick är en station, färgad efter snödjupet (ljusblått = några cm, mörkblått = djupt); vita prickar med grå ring = barmark. Etiketterna visar djupet vid de viktigaste stationerna. Bara mätningar, inget modellager."
+   },
+   "method": "Snödjup i dag: uppmätt vid väderstationer på morgonen den 13 november 2026 (SMHI). En station mäter snön på sin egen lilla yta, så några kilometer bort och hundra meter högre kan marken se annorlunda ut. Normalt snödjup för datumet: SnowScopes snöhistorik, 46 vintrar (1980-81 till 2025-26), en modell av det förflutna på stadens höjd, inte en stationsserie. Helgen: två vädermodeller (ECMWF IFS och DWD ICON via Open-Meteo), angivna som ett spann. Platser och regler: de officiella sidorna nedan.",
+   "references": [
+    {
+     "text": "SMHI, open meteorological observations (snow depth, daily)",
+     "url": "https://www.smhi.se/data/meteorologi/ladda-ner-meteorologiska-observationer"
+    },
+    {
+     "text": "Open-Meteo, weather forecast data (ECMWF and ICON models)",
+     "url": "https://open-meteo.com/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Snökartan på SnowScope",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  },
+  "nb": {
+   "title": "Snødybde i Luleå: ingen måling fra flyplassen, 3 til 7 cm rundt omkring (13. november 2026)",
+   "description": "Luleå 13. november 2026: stasjonen på Kallax flyplass sendte ingen snødybde i dag, men stasjonene rundt byen målte 3 til 7 cm, alt nytt siden torsdag, og mer snø faller fredag.",
+   "lede": "Luleå er trolig hvit denne fredagen, men byens egen snøstasjon sa ingenting. Stasjonen på Kallax flyplass, som hadde bar bakke torsdag, sendte ingen snødybde i dag. Ringen av stasjoner rundt byen gjorde det, og hver eneste en målte sin første snø siden minst slutten av oktober.",
+   "sections": [
+    {
+     "h": "Ringen rundt byen",
+     "p": [
+      "Klöverträsk, 35 km mot vest, målte 5 cm. Brännberg, innover i landet, 5 cm. Piteå, lenger ned langs kysten, 3 cm. Kalix, opp langs kysten, 4 cm. Klockarträsk, på 148 m, 7 cm, og Veniksel 3 cm. De som meldte torsdag, hadde alle bar bakke.",
+      "Med snø på alle kanter og det samme været over seg er det rimelig å tro at Luleå også har noen centimeter, men det er vår lesning av naboene, ikke en måling i byen."
+     ]
+    },
+    {
+     "h": "Normalt for midten av november",
+     "p": [
+      "Snøhistorikken vår for Luleå dekker 46 vintre. Den 13. november lå det snø på bakken i 31 av dem, og midtverdien er 2 cm, med 6 cm eller mer én vinter av fire. Så 3 til 7 cm rundt byen er en normal til god start. Halvparten av vintrene hadde sitt første varige dekke innen 2. november.",
+      "Den 1. desember har Luleå vanligvis rundt 7 cm, midt i desember rundt 11 cm og midt i januar rundt 27 cm. På denne datoen de siste fem vintrene: 1 cm, bar bakke, 9 cm, bar bakke og 3 cm."
+     ]
+    },
+    {
+     "h": "Helgen",
+     "p": [
+      "Fredag gir selv rundt 3 cm mer snø like under null. Lørdag er kaldere, ned mot -8 °C, med bare et lett drys. Søndag gir 1 til 2 cm og blir mildere på ettermiddagen, opp mot 3 °C. Mandag setter regn, 5 til 8 mm, ved noen plussgrader, dekket på prøve."
+     ]
+    }
+   ],
+   "advice": [
+    "Lørdag, kald og hvit, er dagen for den første turen på de snødekte stiene langs stranden.",
+    "Fjorden og elvene er ikke frosne: hold deg unna all is, uansett hvor hvit stranden ser ut.",
+    "Regnet mandag på nysnø betyr is tirsdag morgen: brodder ved døra."
+   ],
+   "captions": {
+    "snow": "Snødybde målt ved værstasjonene 13. november 2026: hver prikk er en stasjon, farget etter snødybden (lyseblått = noen få cm, mørkeblått = dypt); hvite prikker med grå ring = bar bakke. Etikettene viser dybden ved de viktigste stasjonene. Bare målinger, ikke noe modellag."
+   },
+   "method": "Snødybde i dag: målt ved værstasjoner om morgenen 13. november 2026 (SMHI). En stasjon måler snøen på sin egen lille flekk, så noen kilometer unna og hundre meter høyere kan bakken se annerledes ut. Vanlig snødybde for datoen: SnowScopes snøhistorikk, 46 vintre (1980-81 til 2025-26), en modell av fortiden i byens høyde, ikke en stasjonsserie. Helgen: to værmodeller (ECMWF IFS og DWD ICON via Open-Meteo), oppgitt som et spenn. Steder og regler: de offisielle sidene nedenfor.",
+   "references": [
+    {
+     "text": "SMHI, open meteorological observations (snow depth, daily)",
+     "url": "https://www.smhi.se/data/meteorologi/ladda-ner-meteorologiska-observationer"
+    },
+    {
+     "text": "Open-Meteo, weather forecast data (ECMWF and ICON models)",
+     "url": "https://open-meteo.com/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Snøkartet på SnowScope",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  },
+  "fi": {
+   "title": "Luulajan lumensyvyys: lentoasemalta ei lukemaa, ympärillä 3–7 cm (13. marraskuuta 2026)",
+   "description": "Luulaja 13. marraskuuta 2026: Kallaxin lentoaseman asema ei lähettänyt tänään lumensyvyyttä, mutta kaupungin ympäristön asemat mittasivat 3–7 cm, kaikki torstain jälkeen satanutta, ja perjantaina sataa lisää.",
+   "lede": "Luulaja on tänä perjantaina todennäköisesti valkoinen, mutta kaupungin oma lumiasema ei kertonut sitä. Kallaxin lentoaseman asema, jossa torstaina oli paljas maa, ei lähettänyt tänään lumensyvyyttä. Kaupunkia ympäröivät asemat lähettivät, ja jokainen niistä mittasi ensimmäisen lumensa ainakin lokakuun lopun jälkeen.",
+   "sections": [
+    {
+     "h": "Rengas kaupungin ympärillä",
+     "p": [
+      "Klöverträsk, 35 km länteen, mittasi 5 cm. Brännberg sisämaassa 5 cm. Piitime rannikolla etelämpänä 3 cm. Kalix rannikolla pohjoisempana 4 cm. Klockarträsk, 148 metrissä, 7 cm, ja Veniksel 3 cm. Kaikilla torstaina raportoineilla oli paljas maa.",
+      "Kun lunta on joka suunnalla ja sama sää yllä, on kohtuullista olettaa, että Luulajassakin on muutama sentti, mutta se on meidän tulkintamme naapureista, ei mittaus kaupungissa."
+     ]
+    },
+    {
+     "h": "Tavallista marraskuun puolivälissä",
+     "p": [
+      "Lumihistoriamme Luulajasta kattaa 46 talvea. Marraskuun 13. päivänä maassa oli lunta 31 talvena, ja keskimmäinen arvo on 2 cm, joka neljäntenä talvena 6 cm tai enemmän. Joten 3–7 cm kaupungin ympärillä on tavallinen tai hyvä alku. Puolessa talvista ensimmäinen pysyvä peite oli tullut 2. marraskuuta mennessä.",
+      "Joulukuun 1. päivänä Luulajassa on tavallisesti noin 7 cm, joulukuun puolivälissä noin 11 cm ja tammikuun puolivälissä noin 27 cm. Tänä päivänä viitenä viime talvena: 1 cm, paljas, 9 cm, paljas ja 3 cm."
+     ]
+    },
+    {
+     "h": "Viikonloppu",
+     "p": [
+      "Perjantai itse tuo noin 3 cm lisää lunta vähän pakkasen puolella. Lauantai on kylmempi, noin -8 asteeseen, ja lunta tulee vain hieman. Sunnuntai tuo 1–2 cm ja on iltapäivällä leudompi, jopa 3 astetta. Maanantaina sade, 5–8 mm muutamassa plusasteessa, koettelee peitettä."
+     ]
+    }
+   ],
+   "advice": [
+    "Lauantai, kylmä ja valkoinen, on päivä ensimmäiselle kävelylle lumisilla rantapoluilla.",
+    "Lahti ja joet eivät ole jäässä: pysy poissa jäältä, näytti ranta kuinka valkoiselta tahansa.",
+    "Maanantain sade tuoreella lumella tarkoittaa jäätä tiistaiaamuna: liukuesteet oven viereen."
+   ],
+   "captions": {
+    "snow": "Sääasemilla 13. marraskuuta 2026 mitattu lumensyvyys: jokainen piste on asema, väritetty lumensyvyyden mukaan (vaaleansininen = muutama cm, tummansininen = paksu); valkoinen piste harmaalla reunalla = paljas maa. Nimilaput kertovat syvyyden tärkeimmillä asemilla. Vain mittauksia, ei mallikerrosta."
+   },
+   "method": "Lumensyvyys tänään: mitattu sääasemilla aamulla 13. marraskuuta 2026 (SMHI). Asema mittaa lunta omalla pienellä alallaan, joten muutaman kilometrin päässä ja sata metriä korkeammalla maa voi näyttää toiselta. Tavallinen lumensyvyys päivälle: SnowScopen lumihistoria, 46 talvea (1980-81 – 2025-26), menneisyyden malli kaupungin korkeudella, ei aseman mittaussarja. Viikonloppu: kaksi säämallia (ECMWF IFS ja DWD ICON, Open-Meteon kautta), annettu vaihteluvälinä. Paikat ja säännöt: alla luetellut viralliset sivut.",
+   "references": [
+    {
+     "text": "SMHI, open meteorological observations (snow depth, daily)",
+     "url": "https://www.smhi.se/data/meteorologi/ladda-ner-meteorologiska-observationer"
+    },
+    {
+     "text": "Open-Meteo, weather forecast data (ECMWF and ICON models)",
+     "url": "https://open-meteo.com/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Lumikartta SnowScopessa",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "hand (N1 Nordic, measured snow 13 Nov 2026)"
+  },
+  "sv": {
+   "writer": "hand (N1 Nordic, measured snow 13 Nov 2026)"
+  },
+  "nb": {
+   "writer": "hand (N1 Nordic, measured snow 13 Nov 2026)"
+  },
+  "fi": {
+   "writer": "hand (N1 Nordic, measured snow 13 Nov 2026)"
+  }
+ },
+ "words_en": 294,
+ "indexable": true,
+ "main": {
+  "slug": null,
+  "name": "Luleå",
+  "lat": 65.584,
+  "lon": 22.155
+ },
+ "places": [],
+ "resort_links": [],
+ "table": null,
+ "bulletins": [],
+ "trip_day": "",
+ "map_link": "https://snowscope.app/",
+ "keyword": {
+  "family": "snow-now",
+  "entity": "lulea",
+  "region": "SCANDES",
+  "date": "2026-11-13"
+ },
+ "voice": "local",
+ "query": "snödjup luleå",
+ "overlap": {
+  "before": 4.8,
+  "after": 4.8,
+  "with": "tromso-snow-depth-13-november-2026",
+  "tries": 0
+ },
+ "publish_utc": "2026-11-13T22:39:22Z"
+}

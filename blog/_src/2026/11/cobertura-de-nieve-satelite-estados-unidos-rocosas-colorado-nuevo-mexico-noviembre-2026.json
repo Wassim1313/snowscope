@@ -1,0 +1,785 @@
+{
+ "id": "feature-cobertura-de-nieve-satelite-estados-unidos-rocosas-colorado-nuevo-mexico-noviembre-2026",
+ "slug": "cobertura-de-nieve-satelite-estados-unidos-rocosas-colorado-nuevo-mexico-noviembre-2026",
+ "date": "2026-11-13",
+ "published_utc": "2026-11-14T13:29:52Z",
+ "updated_utc": "2026-11-14T13:29:52Z",
+ "region": "US_WEST",
+ "angle": "guide_feature_climate",
+ "category": "guide",
+ "draft": false,
+ "kind": "climate",
+ "resort_class": null,
+ "structure": "clear-day-melt-and-return",
+ "score": 90,
+ "tags": [
+  "satellite",
+  "snow-line",
+  "weather-physics",
+  "MODIS",
+  "NDSI",
+  "cobertura de nieve",
+  "satélite",
+  "teledetección",
+  "Colorado",
+  "Nuevo México",
+  "Montañas Rocosas"
+ ],
+ "facts": {
+  "kind": "climate",
+  "date": "2026-11-13",
+  "extra": {
+   "dem": "Copernicus GLO-90",
+   "box": {
+    "lat": [
+     34.0,
+     49.0
+    ],
+    "lon": [
+     -124.0,
+     -104.0
+    ]
+   },
+   "ground_min_m": 1500,
+   "window": {
+    "first": "2026-11-04",
+    "last": "2026-11-13",
+    "days": 10
+   },
+   "pixel_m": 500,
+   "cloud_buffer_px": 3,
+   "cloud_buffer_km": 1.5,
+   "composite": {
+    "mountain_km2": 1346708,
+    "snow_km2": 151099,
+    "free_km2": 1169974,
+    "snow_pct_of_mountain": 11,
+    "snow_pct_of_clear": 11,
+    "never_clear_pct": 1.9,
+    "never_clear_pct_int": 2,
+    "clear_pct": 98
+   },
+   "latest_look_share_pct": {
+    "2026-11-13": 14,
+    "2026-11-12": 65,
+    "2026-11-11": 11,
+    "2026-11-10": 3,
+    "2026-11-09": 1,
+    "2026-11-08": 0,
+    "2026-11-07": 3,
+    "2026-11-06": 0,
+    "2026-11-05": 0,
+    "2026-11-04": 1
+   },
+   "daily_cloud_pct": {
+    "2026-11-04": 39,
+    "2026-11-05": 43,
+    "2026-11-06": 39,
+    "2026-11-07": 26,
+    "2026-11-08": 41,
+    "2026-11-09": 26,
+    "2026-11-10": 38,
+    "2026-11-11": 20,
+    "2026-11-12": 24,
+    "2026-11-13": 86
+   },
+   "daily_terra_cloud_pct": {
+    "2026-11-04": 49,
+    "2026-11-05": 62,
+    "2026-11-06": 61,
+    "2026-11-07": 30,
+    "2026-11-08": 54,
+    "2026-11-09": 29,
+    "2026-11-10": 50,
+    "2026-11-11": 36,
+    "2026-11-12": 30,
+    "2026-11-13": 86
+   },
+   "daily_aqua_cloud_pct": {
+    "2026-11-04": 59,
+    "2026-11-05": 64,
+    "2026-11-06": 54,
+    "2026-11-07": 63,
+    "2026-11-08": 55,
+    "2026-11-09": 48,
+    "2026-11-10": 67,
+    "2026-11-11": 28,
+    "2026-11-12": 58,
+    "2026-11-13": 0
+   },
+   "daily_snow_pct_of_clear": {
+    "2026-11-04": 12,
+    "2026-11-05": 17,
+    "2026-11-06": 12,
+    "2026-11-07": 9,
+    "2026-11-08": 11,
+    "2026-11-09": 6,
+    "2026-11-10": 10,
+    "2026-11-11": 9,
+    "2026-11-12": 7,
+    "2026-11-13": 6
+   },
+   "clearest_day": "2026-11-11",
+   "clearest_day_cloud_pct": 20,
+   "snow_line_m": 3000,
+   "bands": [
+    {
+     "z0": 1500,
+     "z1": 1750,
+     "snow_pct": 6
+    },
+    {
+     "z0": 1750,
+     "z1": 2000,
+     "snow_pct": 6
+    },
+    {
+     "z0": 2000,
+     "z1": 2250,
+     "snow_pct": 6
+    },
+    {
+     "z0": 2250,
+     "z1": 2500,
+     "snow_pct": 11
+    },
+    {
+     "z0": 2500,
+     "z1": 2750,
+     "snow_pct": 21
+    },
+    {
+     "z0": 2750,
+     "z1": 3000,
+     "snow_pct": 36
+    },
+    {
+     "z0": 3000,
+     "z1": 3250,
+     "snow_pct": 63
+    },
+    {
+     "z0": 3250,
+     "z1": 3500,
+     "snow_pct": 83
+    },
+    {
+     "z0": 3500,
+     "z1": 3750,
+     "snow_pct": 92
+    },
+    {
+     "z0": 3750,
+     "z1": 4000,
+     "snow_pct": 96
+    },
+    {
+     "z0": 4000,
+     "z1": 4250,
+     "snow_pct": 97
+    }
+   ],
+   "sub": {
+    "sierra": {
+     "mountain_km2": 72849,
+     "snow_km2": 11115,
+     "snow_pct_of_clear": 15,
+     "clear_pct": 100,
+     "snow_line_m": 3000
+    },
+    "cascades": {
+     "mountain_km2": 27330,
+     "snow_km2": 7497,
+     "snow_pct_of_clear": 38,
+     "clear_pct": 72,
+     "snow_line_m": 2000
+    },
+    "colorado": {
+     "mountain_km2": 140207,
+     "snow_km2": 30658,
+     "snow_pct_of_clear": 22,
+     "clear_pct": 100,
+     "snow_line_m": 3100
+    },
+    "nm_colorado_south": {
+     "mountain_km2": 103140,
+     "snow_km2": 11030,
+     "snow_pct_of_clear": 11,
+     "clear_pct": 100,
+     "snow_line_m": 3200
+    },
+    "utah_wasatch_uinta": {
+     "mountain_km2": 38111,
+     "snow_km2": 4324,
+     "snow_pct_of_clear": 11,
+     "clear_pct": 100,
+     "snow_line_m": 3000
+    },
+    "idaho_montana_nrockies": {
+     "mountain_km2": 225598,
+     "snow_km2": 65865,
+     "snow_pct_of_clear": 31,
+     "clear_pct": 93,
+     "snow_line_m": 2500
+    },
+    "wyoming": {
+     "mountain_km2": 162444,
+     "snow_km2": 17429,
+     "snow_pct_of_clear": 11,
+     "clear_pct": 100,
+     "snow_line_m": 2900
+    }
+   },
+   "model": {
+    "day": "2026-11-12",
+    "model_day_kind": "analysis",
+    "compared_km2": 1021095,
+    "modis_snow_km2": 68147,
+    "model_snow_km2": 52780,
+    "agree_pct": 95.5,
+    "modis_snow_model_bare_pct": 3.0,
+    "model_snow_modis_bare_pct": 1.5
+   },
+   "south_rockies_box": {
+    "lat": [
+     35.0,
+     41.0
+    ],
+    "lon": [
+     -109.2,
+     -104.5
+    ]
+   },
+   "south_rockies": {
+    "mountain_km2": 192130,
+    "snow_km2": 33184,
+    "free_km2": 157770,
+    "never_clear_pct": 0.0,
+    "snow_pct_of_clear": 17,
+    "snow_line_m": 3100,
+    "daily": {
+     "2026-11-04": {
+      "cloud_pct": 30,
+      "snow_pct_of_clear": 17
+     },
+     "2026-11-05": {
+      "cloud_pct": 14,
+      "snow_pct_of_clear": 33
+     },
+     "2026-11-06": {
+      "cloud_pct": 57,
+      "snow_pct_of_clear": 16
+     },
+     "2026-11-07": {
+      "cloud_pct": 25,
+      "snow_pct_of_clear": 25
+     },
+     "2026-11-08": {
+      "cloud_pct": 4,
+      "snow_pct_of_clear": 13
+     },
+     "2026-11-09": {
+      "cloud_pct": 1,
+      "snow_pct_of_clear": 13
+     },
+     "2026-11-10": {
+      "cloud_pct": 42,
+      "snow_pct_of_clear": 12
+     },
+     "2026-11-11": {
+      "cloud_pct": 3,
+      "snow_pct_of_clear": 9
+     },
+     "2026-11-12": {
+      "cloud_pct": 11,
+      "snow_pct_of_clear": 19
+     },
+     "2026-11-13": {
+      "cloud_pct": 65,
+      "snow_pct_of_clear": 2
+     }
+    },
+    "above_4000_snow_pct": 97,
+    "sangre_nm": {
+     "snow_km2": 573,
+     "snow_pct_of_clear": 5,
+     "snow_line_m": 3500,
+     "box": [
+      35.5,
+      37.0,
+      -106.0,
+      -105.2
+     ]
+    },
+    "san_juans": {
+     "snow_km2": 9307,
+     "snow_pct_of_clear": 54,
+     "snow_line_m": 3000,
+     "box": [
+      37.2,
+      38.3,
+      -108.2,
+      -106.6
+     ]
+    },
+    "front_range_north": {
+     "snow_km2": 3283,
+     "snow_pct_of_clear": 29,
+     "snow_line_m": 3200,
+     "box": [
+      39.3,
+      40.8,
+      -106.2,
+      -105.4
+     ]
+    },
+    "latest_look_12nov_pct": 61,
+    "latest_look_13nov_pct": 34
+   },
+   "south_rockies_bands": [
+    {
+     "z0": 2000,
+     "z1": 2250,
+     "snow_pct": 1,
+     "area_km2": 55645
+    },
+    {
+     "z0": 2250,
+     "z1": 2500,
+     "snow_pct": 2,
+     "area_km2": 44949
+    },
+    {
+     "z0": 2500,
+     "z1": 2750,
+     "snow_pct": 6,
+     "area_km2": 31955
+    },
+    {
+     "z0": 2750,
+     "z1": 3000,
+     "snow_pct": 21,
+     "area_km2": 23743
+    },
+    {
+     "z0": 3000,
+     "z1": 3250,
+     "snow_pct": 51,
+     "area_km2": 16784
+    },
+    {
+     "z0": 3250,
+     "z1": 3500,
+     "snow_pct": 79,
+     "area_km2": 10736
+    },
+    {
+     "z0": 3500,
+     "z1": 3750,
+     "snow_pct": 91,
+     "area_km2": 6196
+    },
+    {
+     "z0": 3750,
+     "z1": 4000,
+     "snow_pct": 97,
+     "area_km2": 1943
+    },
+    {
+     "z0": 4000,
+     "z1": 4250,
+     "snow_pct": 97,
+     "area_km2": 178
+    }
+   ],
+   "stations": {
+    "sierra": {
+     "modis_line_m": 3000,
+     "stations_above_line_snow": [
+      0,
+      0
+     ],
+     "stations_below_line_snow": [
+      16,
+      35
+     ],
+     "n": 35
+    },
+    "cascades": {
+     "modis_line_m": 2000,
+     "stations_above_line_snow": [
+      1,
+      2
+     ],
+     "stations_below_line_snow": [
+      11,
+      106
+     ],
+     "n": 108
+    },
+    "colorado": {
+     "modis_line_m": 3100,
+     "stations_above_line_snow": [
+      49,
+      63
+     ],
+     "stations_below_line_snow": [
+      18,
+      54
+     ],
+     "n": 117
+    },
+    "nm_colorado_south": {
+     "modis_line_m": 3200,
+     "stations_above_line_snow": [
+      19,
+      25
+     ],
+     "stations_below_line_snow": [
+      12,
+      24
+     ],
+     "n": 49
+    },
+    "utah_wasatch_uinta": {
+     "modis_line_m": 3000,
+     "stations_above_line_snow": [
+      7,
+      8
+     ],
+     "stations_below_line_snow": [
+      7,
+      52
+     ],
+     "n": 60
+    },
+    "idaho_montana_nrockies": {
+     "modis_line_m": 2500,
+     "stations_above_line_snow": [
+      36,
+      44
+     ],
+     "stations_below_line_snow": [
+      40,
+      155
+     ],
+     "n": 199
+    },
+    "wyoming": {
+     "modis_line_m": 2900,
+     "stations_above_line_snow": [
+      15,
+      17
+     ],
+     "stations_below_line_snow": [
+      20,
+      73
+     ],
+     "n": 90
+    },
+    "sierra_detail": {
+     "stations_from_2300m": 24,
+     "with_snow": 16,
+     "below_2300m": 11,
+     "below_2300m_with_snow": 0,
+     "depth_cm_min": 2.5,
+     "depth_cm_max": 20.3,
+     "depth_in_min": 1,
+     "depth_in_max": 8
+    },
+    "all": {
+     "n": 3766,
+     "agree_pct": 77.5,
+     "modis_snow_station_bare": 477,
+     "modis_bare_station_snow": 370,
+     "both_snow": 1089,
+     "both_bare": 1830
+    },
+    "stations_12nov_by_band": {
+     "0": {
+      "n": 1,
+      "snow_pct": 0
+     },
+     "500": {
+      "n": 4,
+      "snow_pct": 0
+     },
+     "750": {
+      "n": 16,
+      "snow_pct": 0
+     },
+     "1000": {
+      "n": 36,
+      "snow_pct": 0
+     },
+     "1250": {
+      "n": 50,
+      "snow_pct": 2
+     },
+     "1500": {
+      "n": 71,
+      "snow_pct": 11
+     },
+     "1750": {
+      "n": 85,
+      "snow_pct": 25
+     },
+     "2000": {
+      "n": 84,
+      "snow_pct": 13
+     },
+     "2250": {
+      "n": 119,
+      "snow_pct": 25
+     },
+     "2500": {
+      "n": 128,
+      "snow_pct": 40
+     },
+     "2750": {
+      "n": 109,
+      "snow_pct": 56
+     },
+     "3000": {
+      "n": 65,
+      "snow_pct": 65
+     },
+     "3250": {
+      "n": 36,
+      "snow_pct": 75
+     },
+     "3500": {
+      "n": 9,
+      "snow_pct": 100
+     }
+    }
+   }
+  }
+ },
+ "ref_numbers": [
+  {
+   "n": [
+    6.1,
+    1.6,
+    0.1,
+    0.0
+   ],
+   "ref": 0,
+   "claim": "Collection 6.1; band 6 at 1.6 µm; NDSI < 0.1 reversed to not snow (low NDSI screen)"
+  },
+  {
+   "n": [
+    70,
+    85
+   ],
+   "ref": 0,
+   "claim": "low illumination at solar zenith > 70°, night at >= 85°"
+  },
+  {
+   "n": [
+    75
+   ],
+   "ref": 0,
+   "claim": "about 75 % of Aqua band 6 detectors non-functional"
+  },
+  {
+   "n": [
+    1300
+   ],
+   "ref": 0,
+   "claim": "surface temperature/height screen at 1300 m"
+  },
+  {
+   "n": [
+    2019
+   ],
+   "ref": 0,
+   "claim": "user guide date"
+  },
+  {
+   "n": [
+    2002
+   ],
+   "ref": 1,
+   "claim": "Hall et al. 2002"
+  },
+  {
+   "n": [
+    2011
+   ],
+   "ref": 2,
+   "claim": "Hall and Riggs 2011"
+  }
+ ],
+ "media": [
+  {
+   "id": "es_map",
+   "kind": "chart_img",
+   "file": "blog/media/2026/11/cobertura-de-nieve-satelite-estados-unidos-rocosas-colorado-nuevo-mexico-noviembre-2026/es_map.webp",
+   "thumb": "blog/media/2026/11/cobertura-de-nieve-satelite-estados-unidos-rocosas-colorado-nuevo-mexico-noviembre-2026/es_map_t.webp",
+   "w": 1200,
+   "h": 630,
+   "after": -1
+  },
+  {
+   "id": "es_bands",
+   "kind": "chart_img",
+   "file": "blog/media/2026/11/cobertura-de-nieve-satelite-estados-unidos-rocosas-colorado-nuevo-mexico-noviembre-2026/es_bands.webp",
+   "thumb": "blog/media/2026/11/cobertura-de-nieve-satelite-estados-unidos-rocosas-colorado-nuevo-mexico-noviembre-2026/es_bands_t.webp",
+   "w": 1200,
+   "h": 630,
+   "after": 1
+  },
+  {
+   "id": "es_ndsi",
+   "kind": "chart_img",
+   "file": "blog/media/2026/11/cobertura-de-nieve-satelite-estados-unidos-rocosas-colorado-nuevo-mexico-noviembre-2026/es_ndsi.webp",
+   "thumb": "blog/media/2026/11/cobertura-de-nieve-satelite-estados-unidos-rocosas-colorado-nuevo-mexico-noviembre-2026/es_ndsi_t.webp",
+   "w": 1200,
+   "h": 630,
+   "after": 2
+  }
+ ],
+ "docs": {
+  "es": {
+   "title": "Cobertura de nieve por satélite en Estados Unidos: las Rocosas de Colorado y Nuevo México vistas por MODIS (13 de noviembre de 2026)",
+   "description": "Cobertura de nieve por satélite en Estados Unidos: los satélites MODIS de la NASA vieron nieve en 33,184 km² (12,812 mi²) de las Rocosas de Colorado y Nuevo México. La nieve empieza hacia los 10,200 pies (3,100 m). Qué es el NDSI y cómo se separa la nieve de las nubes.",
+   "lede": "¿Hay nieve ya en las Rocosas del sur? Lo revisamos con los mapas diarios de nieve de los satélites MODIS de la NASA, píxel por píxel, para Colorado, el norte de Nuevo México y los bordes de Utah y Arizona. Con la vista despejada más reciente de cada píxel hasta el 13 de noviembre de 2026, MODIS vio nieve en 33,184 km² (12,812 millas cuadradas) de terreno por encima de 2,000 m (6,600 pies). Es el 17 % del terreno que el satélite pudo ver. Casi toda está en las cumbres.",
+   "sections": [
+    {
+     "h": "Una semana con cielos limpios",
+     "p": [
+      "MODIS va a bordo de dos satélites de la NASA: Terra pasa por la mañana y Aqua a primera hora de la tarde. Cada uno toma una imagen diaria con píxeles de unos 500 m. En las Rocosas del sur el cielo estuvo limpio varios días seguidos: con las dos pasadas juntas, las nubes cubrieron solo el 4 % del terreno alto el 8 de noviembre, el 1 % el 9 de noviembre y el 3 % el 11 de noviembre. Pocas veces se ve una cordillera entera de una sola vez.",
+      "Para el mapa usamos la vista despejada más reciente de cada píxel. El 61 % del terreno alto se vio por última vez el 12 de noviembre y el 34 % el 13 de noviembre. Ningún píxel quedó bajo las nubes en todas las pasadas. Como precaución, un píxel despejado a menos de 3 píxeles (unos 1.5 km) de una nube en la misma pasada se cuenta como nube: los bordes de las nubes son donde más se confunden con nieve.",
+      "La zona estudiada va de 35 a 41° N y de 109.2 a 104.5° O, y solo contamos el terreno a 2,000 m o más, según el modelo de elevación Copernicus GLO-90: 192,130 km² en total."
+     ]
+    },
+    {
+     "h": "La nieve que se fue y la que volvió",
+     "p": [
+      "Los días despejados permiten seguir la nieve día a día. El 5 de noviembre, el 33 % del terreno despejado estaba blanco. Con varios días despejados, esa nieve temprana se fue reduciendo: 13 % el 9 de noviembre y 9 % el 11 de noviembre. El 12 de noviembre la proporción subió al 19 %, lo más probable por una nevada nueva en las montañas altas. El satélite dice dónde hay nieve, pero no cuánta cayó ni qué espesor tiene.",
+      "La altura lo decide casi todo. Entre 2,000 y 2,500 m casi no había nieve: del 1 al 2 % del terreno despejado. Entre 2,750 y 3,000 m era el 21 %, entre 3,000 y 3,250 m el 51 % y entre 3,500 y 3,750 m el 91 %. Por encima de 4,000 m (13,100 pies), el 97 % del terreno despejado estaba blanco. La línea de nieve de la zona, la altura más baja a partir de la cual más de la mitad del terreno despejado está nevado, queda hacia los 3,100 m (10,200 pies).",
+      "Hay diferencias grandes entre sierras. En los San Juan, en el suroeste de Colorado, el 54 % del terreno despejado estaba blanco, con 9,307 km² de nieve y la línea hacia los 3,000 m (9,800 pies). En la parte norte del Front Range, cerca de Denver, era el 29 %, con la línea hacia los 3,200 m (10,500 pies). En la Sangre de Cristo de Nuevo México, solo el 5 % y la línea muy alta, hacia los 3,500 m (11,500 pies): por ahora, apenas las cumbres."
+     ]
+    },
+    {
+     "h": "Lo que dicen las estaciones y las noticias locales",
+     "p": [
+      "La red SNOTEL del Servicio de Conservación de Recursos Naturales (NRCS) mide el espesor de nieve con estaciones automáticas en las montañas del oeste. El 12 de noviembre, en nuestra zona de Colorado (37 a 41° N), 49 de las 63 estaciones situadas por encima de la línea de nieve del satélite, 3,100 m (10,200 pies), tenían nieve. Por debajo, solo 18 de 54. Más al sur, entre el sur de Colorado y Nuevo México, 19 de 25 estaciones por encima de 3,200 m (10,500 pies) tenían nieve y 12 de 24 por debajo. Las estaciones confirman la idea general: nieve arriba, poca o ninguna abajo, aunque en el sur la nieve fina baja algo más de lo que muestra el satélite.",
+      "Las noticias locales describen el mismo arranque flojo. CBS Colorado informó el 6 de noviembre que Breckenridge retrasó su apertura porque quería una base de nieve más gruesa, mientras que Copper Mountain recibió unas cuatro pulgadas de nieve durante la noche. En Nuevo México, KOB esperaba el 4 de noviembre hasta una pulgada de nieve en las montañas del extremo norte, con poca o ninguna acumulación en las zonas más bajas."
+     ]
+    },
+    {
+     "h": "Cómo distingue el satélite la nieve de una nube",
+     "p": [
+      "La nieve refleja mucha luz verde, pero en el infrarrojo de onda corta, cerca de 1.6 µm, se ve oscura, porque el hielo absorbe esa luz. La mayoría de las nubes de gotas de agua se ven brillantes en las dos. Las rocas, la tierra y las plantas reflejan poco en el verde. El Índice de Nieve de Diferencia Normalizada (NDSI, por sus siglas en inglés) aprovecha ese contraste: NDSI = (verde − infrarrojo) / (verde + infrarrojo), con las bandas 4 y 6 de MODIS. Si el valor es alto y positivo, es nieve.",
+      "El algoritmo de la NASA, la Colección 6.1, busca nieve donde el NDSI es mayor que cero y después descarta los casos dudosos. Por ejemplo, rechaza los valores por debajo de 0.1 y toma las nubes de una máscara de nubes aparte. Cada píxel recibe un valor de 'cobertura de nieve NDSI' de 0 a 100. Ese valor no es el porcentaje del píxel cubierto de nieve: según la guía de usuario, la Colección 6.1 ya no calcula la fracción de nieve. Aquí cualquier valor de 1 a 100 cuenta como nieve.",
+      "Hay límites. Debajo de un bosque espeso de pinos, el satélite ve las copas verdes y no la nieve. Las nubes finas de hielo, como los cirros, pueden parecer nieve, porque el hielo absorbe el infrarrojo también en el aire. Y en el satélite Aqua, cerca del 75 % de los detectores de la banda 6 no funcionan: la NASA reconstruye esa banda con un método de restauración de imagen, y desde la Colección 6 los dos satélites usan el mismo algoritmo."
+     ]
+    },
+    {
+     "h": "¿Coincide con el mapa de SnowScope?",
+     "p": [
+      "Para todo el oeste de Estados Unidos comparamos MODIS del 12 de noviembre con el mapa de nieve de SnowScope del mismo día. En 1,021,095 km² de terreno alto que el satélite vio despejado, los dos coinciden en el 95.5 % de la superficie. MODIS ve nieve donde nuestro mapa no tiene en el 3.0 % y al revés en el 1.5 %.",
+      "No es una prueba independiente: nuestro mapa ya quita la nieve donde una vista reciente y despejada de MODIS muestra el suelo sin nieve. Sirve para ver que los dos cuentan la misma historia, no para medir la precisión de cada uno."
+     ]
+    }
+   ],
+   "advice": [
+    "Para esquiar o caminar con nieve en noviembre, busca terreno por encima de unos 10,200 pies en Colorado; en Nuevo México, por ahora, solo las cumbres.",
+    "Mira la fecha de la última vista despejada antes de fiarte de un mapa de nieve por satélite, sobre todo después de una tormenta.",
+    "En el bosque puede haber más nieve de la que muestra el satélite: los árboles tapan el suelo."
+   ],
+   "captions": {
+    "es_map": "Cobertura de nieve en las Rocosas de Colorado y Nuevo México según MODIS de la NASA (Terra y Aqua), vista despejada más reciente de cada píxel de 500 m entre el 4 y el 13 de noviembre de 2026. Azul = nieve, gris claro = suelo sin nieve. Imágenes: NASA EOSDIS GIBS / MODIS.",
+    "es_bands": "Parte del terreno despejado con nieve según la altura, zona de 35 a 41° N y de 109.2 a 104.5° O, terreno a 2,000 m o más, vista despejada más reciente de MODIS entre el 4 y el 13 de noviembre de 2026. Alturas: Copernicus GLO-90. Imágenes: NASA EOSDIS GIBS / MODIS.",
+    "es_ndsi": "Esquema: nieve, nube de agua, nube de hielo y roca o pasto en luz verde y en infrarrojo de onda corta (un dibujo del principio, no valores medidos)."
+   },
+   "method": "Datos: capas diarias de NASA GIBS MODIS_Terra_NDSI_Snow_Cover y MODIS_Aqua_NDSI_Snow_Cover (hechas con MOD10_L2 / MYD10_L2, Colección 6.1, casi en tiempo real), mosaico de 500 m, decodificadas con la tabla de colores publicada de la capa para recuperar los valores del producto. Nieve = 1 a 100, sin nieve = 0. Cada día: Terra si está despejado, si no Aqua; los píxeles despejados a menos de 3 píxeles de una nube en la misma pasada cuentan como nube. Composición: vista despejada más reciente de cada píxel, del 4 al 13 de noviembre de 2026. Superficies con el tamaño real del píxel en cada latitud. Zona 35-41° N, 109.2-104.5° O, terreno a 2,000 m o más (Copernicus GLO-90). Sierras: San Juan 37.2-38.3° N 108.2-106.6° O; Front Range norte 39.3-40.8° N 106.2-105.4° O; Sangre de Cristo (Nuevo México) 35.5-37° N 106-105.2° O. Línea de nieve: banda de 100 m más baja por encima de la cual todas las bandas con suficiente terreno despejado están más de la mitad nevadas. Comparación con SnowScope: mapa de 500 m del 12 de noviembre, 1 cm o más = nieve.",
+   "references": [
+    {
+     "text": "Riggs, G.A., Hall, D.K. and Román, M.O. (2019). MODIS Snow Products Collection 6.1 User Guide, version 1.0. NASA / NSIDC",
+     "url": "https://nsidc.org/sites/default/files/c61_modis_snow_user_guide.pdf"
+    },
+    {
+     "text": "Hall, D.K., Riggs, G.A., Salomonson, V.V., DiGirolamo, N.E. and Bayr, K.J. (2002). MODIS snow-cover products. Remote Sensing of Environment 83, 181-194",
+     "url": "https://doi.org/10.1016/S0034-4257(02)00095-0"
+    },
+    {
+     "text": "Hall, D.K. and Riggs, G.A. (2011). Normalized-Difference Snow Index (NDSI). Encyclopedia of Snow, Ice and Glaciers, Springer",
+     "url": "https://doi.org/10.1007/978-90-481-2642-2_376"
+    },
+    {
+     "text": "NSIDC: MODIS/Terra Snow Cover Daily L3 Global 500m Grid, Version 61 (MOD10A1)",
+     "url": "https://nsidc.org/data/mod10a1/versions/61"
+    },
+    {
+     "text": "NASA EOSDIS Global Imagery Browse Services (GIBS): layers MODIS_Terra_NDSI_Snow_Cover and MODIS_Aqua_NDSI_Snow_Cover (from MOD10_L2 / MYD10_L2, Collection 6.1) and their colour map",
+     "url": "https://www.earthdata.nasa.gov/engage/open-data-services-software/earthdata-developer-portal/gibs-api"
+    },
+    {
+     "text": "Copernicus DEM GLO-90 (European Space Agency, Copernicus programme)",
+     "url": "https://doi.org/10.5270/ESA-c5d3d65"
+    },
+    {
+     "text": "USDA NRCS SNOTEL, espesor de nieve diario (Air and Water Database)",
+     "url": "https://www.nrcs.usda.gov/resources/data-and-reports/snow-and-water-interactive-map"
+    },
+    {
+     "text": "CBS Colorado (6 de noviembre de 2026): Breckenridge delays opening in Colorado mountains due to too warm overnight temps",
+     "url": "https://www.cbsnews.com/colorado/news/breckenridge-delays-opening-colorado-mountains-too-warm-overnight-temps/"
+    },
+    {
+     "text": "KOB 4 (4 de noviembre de 2026): Cold front brings strong winds, winter weather to parts of New Mexico",
+     "url": "https://www.kob.com/new-mexico/cold-front-brings-strong-winds-winter-weather-to-parts-of-new-mexico/"
+    }
+   ],
+   "links": [
+    {
+     "text": "Mapa de nieve de SnowScope en vivo",
+     "url": "https://snowscope.app/"
+    }
+   ]
+  }
+ },
+ "writers": {
+  "es": {
+   "writer": "hand (owner request: MODIS snow cover)"
+  }
+ },
+ "words_en": 1130,
+ "indexable": true,
+ "main": {
+  "slug": null,
+  "name": "Montañas Rocosas del sur (Colorado y Nuevo México)",
+  "lat": 38.0,
+  "lon": -106.8
+ },
+ "places": [
+  {
+   "name": "Montañas Rocosas del sur (Colorado y Nuevo México)",
+   "lat": 38.0,
+   "lon": -106.8
+  }
+ ],
+ "resort_links": [],
+ "table": null,
+ "bulletins": [],
+ "trip_day": "",
+ "map_link": "https://snowscope.app/",
+ "keyword": {
+  "family": "snow-cover-satellite",
+  "entity": "us_west_southern_rockies_es",
+  "region": "US_WEST",
+  "date": "2026-11-13"
+ },
+ "query": "cobertura de nieve satélite estados unidos",
+ "voice": "divulgador de ciencia de la nieve",
+ "overlap": {
+  "before": 0.4,
+  "after": 0.4,
+  "with": "snow-depth-100-mountain-ranges-9-november-2026",
+  "tries": 0
+ },
+ "publish_utc": "2026-11-13T22:03:00Z"
+}
