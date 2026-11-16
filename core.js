@@ -703,6 +703,32 @@
     if (once) { if (HITS.has(once)) return; HITS.add(once); }
     beacon(path, "", src);
   }
+  // time on screen (owner dashboard, 2026-11-16): visible seconds only, sent as /web/time {secs} each time the page is
+  // hidden or closed; the server sums them per daily visitor key (no id, no cookie)
+  let shownAt = document.visibilityState === "visible" ? Date.now() : 0;
+  function flushTime() {
+    if (!shownAt) return;
+    const secs = Math.round((Date.now() - shownAt) / 1000);
+    shownAt = 0;
+    if (lastPath === null || secs < 1 || BOT || !S.api || !navigator.sendBeacon) return;
+    try {
+      navigator.sendBeacon(base("/v1/hit") + "/v1/hit", new Blob([JSON.stringify({ path: "/web/time", src: "web",
+        secs: Math.min(secs, 14400), lang: (window.I18N && I18N.lang) || "" })], { type: "text/plain" }));
+    } catch { /* ignore */ }
+  }
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") flushTime(); else if (!shownAt) shownAt = Date.now();
+  });
+  addEventListener("pagehide", flushTime);
+  // real person (2026-11-16): crawlers run the page but never touch it; the first tap / mouse move / wheel / key of
+  // the page sends /web/human once, and only those visitors count as people on the owner dashboard
+  const HUMAN_EV = ["pointerdown", "pointermove", "touchstart", "wheel", "keydown"];
+  function human(e) {
+    if (e && e.isTrusted === false) return;
+    HUMAN_EV.forEach((t) => removeEventListener(t, human, true));
+    beacon("/web/human", "", "web");
+  }
+  if (!BOT) HUMAN_EV.forEach((t) => addEventListener(t, human, { capture: true, passive: true }));
   document.addEventListener("click", (e) => {            // which Stay22 placement works (no personal data)
     const a = e.target.closest('a[href*="stay22.com"]');
     if (a) {

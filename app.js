@@ -37,7 +37,9 @@
   const rainS = (mm) => (U.us() ? (mm / 25.4 < 0.995 ? (Math.round(mm / 25.4 * 10) / 10 || 0.1) : Math.round(mm / 25.4)) + "<small>in</small>" : (mm < 9.95 ? Math.round(mm * 10) / 10 : Math.round(mm)) + "<small>mm</small>");
   const AVAL = { 1: "#CCFF66", 2: "#FFFF00", 3: "#FF9900", 4: "#FF0000", 5: "#7A0000" };
   const AVAL_NAME = { 1: "Low", 2: "Moderate", 3: "Considerable", 4: "High", 5: "Very high" };
-  const NAMES = { ALPS: "Alps", PYRENEES: "Pyrenees", US_WEST: "US West", US_NE: "US Northeast", ATLAS: "Atlas (Morocco)", SCANDES: "Scandinavia", CA_WEST: "Canada West" };
+  const NAMES = { ALPS: "Alps", PYRENEES: "Pyrenees", US_WEST: "US West", US_NE: "US Northeast", ATLAS: "Atlas (Morocco)", SCANDES: "Scandinavia", CA_WEST: "Canada West",
+    BRITISH: "UK & Ireland", IBERIA: "Spain & Portugal", CANTABRIA: "Cantabrian Mountains", APENNINES: "Apennines",
+    BALKANS: "Balkans", CARPATHIANS: "Carpathians", CENTRAL_EU: "Central Europe" };
   // free, no-key basemaps (owner 2026-11-02: no Mapbox): OpenFreeMap vector styles + AWS Terrain Tiles (terrarium) for
   // relief and 3D. No satellite basemap (no free source that allows a site with ads).
   const STYLES = { outdoors: ["Outdoors", "https://tiles.openfreemap.org/styles/liberty"], light: ["Light", "https://tiles.openfreemap.org/styles/positron"] };
@@ -108,7 +110,10 @@
   // the range closest to the visitor (time zone, then browser country / language; a granted GPS refines it after the
   // map loads, see nearMe) > the region with the most resorts with snow today
   const RANGE_BOX = { ALPS: [4.5, 43.5, 16.5, 48.5], PYRENEES: [-2, 42, 3.5, 43.4], ATLAS: [-10.5, 29, -1.5, 36],
-    US_WEST: [-125, 33, -104, 49], CA_WEST: [-128, 49, -113, 54.5], US_NE: [-75.5, 42.5, -70.5, 45.5], SCANDES: [5, 58.5, 31, 70.5] };
+    US_WEST: [-125, 33, -104, 49], CA_WEST: [-128, 49, -113, 54.5], US_NE: [-75.5, 42.5, -70.5, 45.5], SCANDES: [5, 58.5, 31, 70.5],
+    BRITISH: [-8.5, 51.5, -1.5, 58.7], IBERIA: [-8, 37, -0.5, 41.5], CANTABRIA: [-7.5, 42.2, -3, 43.3],
+    APENNINES: [8.5, 37.5, 16.5, 44], BALKANS: [15.5, 40, 25, 44.5], CARPATHIANS: [18, 45, 26.5, 49.8],
+    CENTRAL_EU: [2, 45, 16, 51.5] };
   const hasRegion = (c) => DATA.regions.some((r) => r.code === c);
   function nearestRange(lat, lon) {
     let best = null, bd = Infinity;
@@ -130,11 +135,20 @@
       : /^America\/(New_York|Toronto|Montreal|Detroit|Halifax|Moncton|Indiana\/.*|Kentucky\/.*|St_Johns)$|^US\/Eastern$/.test(tz) ? "US_NE"
       : /^(America\/|US\/|Pacific\/Honolulu)/.test(tz) ? "US_WEST"
       : /^Europe\/(Stockholm|Oslo|Helsinki|Copenhagen|Mariehamn)$|^Arctic\/Longyearbyen$|^Atlantic\/Reykjavik$/.test(tz) ? (hasRegion("SCANDES") ? "SCANDES" : "ALPS")
+      : /^Europe\/(London|Dublin|Belfast|Isle_of_Man|Guernsey|Jersey)$/.test(tz) ? (hasRegion("BRITISH") ? "BRITISH" : "ALPS")
+      : /^Europe\/(Warsaw|Bratislava|Prague|Budapest|Bucharest|Kiev|Kyiv|Uzhgorod|Chisinau)$/.test(tz) ? (hasRegion("CARPATHIANS") ? "CARPATHIANS" : "ALPS")
+      : /^Europe\/(Sofia|Belgrade|Sarajevo|Skopje|Podgorica|Tirane|Athens|Zagreb)$/.test(tz) ? (hasRegion("BALKANS") ? "BALKANS" : "ALPS")
       : /^(Europe|Atlantic)\//.test(tz) ? "ALPS" : null;
     const byCc = { MA: "ATLAS", DZ: "ATLAS", TN: "ATLAS", ES: "PYRENEES", AD: "PYRENEES", PT: "PYRENEES", US: "US_WEST", CA: "CA_WEST",
-      SE: "SCANDES", NO: "SCANDES", FI: "SCANDES", DK: "SCANDES", IS: "SCANDES" }[(cc || "").toUpperCase()];
+      SE: "SCANDES", NO: "SCANDES", FI: "SCANDES", DK: "SCANDES", IS: "SCANDES", GB: "BRITISH", IE: "BRITISH",
+      PL: "CARPATHIANS", SK: "CARPATHIANS", RO: "CARPATHIANS", UA: "CARPATHIANS", HU: "CARPATHIANS", CZ: "CENTRAL_EU",
+      BG: "BALKANS", RS: "BALKANS", BA: "BALKANS", ME: "BALKANS", MK: "BALKANS", AL: "BALKANS", GR: "BALKANS",
+      HR: "BALKANS", XK: "BALKANS" }[(cc || "").toUpperCase()];
     const byLang = { ar: "ATLAS", es: "PYRENEES", ca: "PYRENEES", eu: "PYRENEES", fr: "ALPS", de: "ALPS", it: "ALPS", sl: "ALPS",
-      sv: "SCANDES", nb: "SCANDES", no: "SCANDES", nn: "SCANDES", fi: "SCANDES", da: "SCANDES" }[lang];
+      sv: "SCANDES", nb: "SCANDES", no: "SCANDES", nn: "SCANDES", fi: "SCANDES", da: "SCANDES", pl: "CARPATHIANS",
+      sk: "CARPATHIANS", ro: "CARPATHIANS", uk: "CARPATHIANS", hu: "CARPATHIANS", cs: "CENTRAL_EU", bg: "BALKANS",
+      sr: "BALKANS", bs: "BALKANS", hr: "BALKANS", mk: "BALKANS", sq: "BALKANS", el: "BALKANS", ga: "BRITISH",
+      cy: "BRITISH", gd: "BRITISH" }[lang];
     return [byTz, byCc, byLang].find((c) => c && hasRegion(c)) || null;
   }
   const startFixed = () => !!(DATA.regions.find((r) => slugOf(r.code) === location.hash.slice(1)) || (store.get("ss_region") && store.get("ss_region_pick")));

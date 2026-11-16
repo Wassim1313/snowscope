@@ -18,7 +18,9 @@
     get(k) { try { return W.sessionStorage.getItem(k); } catch { return null; } },
     set(k, v) { try { W.sessionStorage.setItem(k, v); } catch { /* blocked */ } },
   };
-  const REGIONS = { ALPS: "Alps", PYRENEES: "Pyrenees", US_WEST: "US West", US_NE: "US Northeast", CA_WEST: "Western Canada", SCANDES: "Scandinavia", ATLAS: "Atlas" };
+  const REGIONS = { ALPS: "Alps", PYRENEES: "Pyrenees", US_WEST: "US West", US_NE: "US Northeast", CA_WEST: "Western Canada", SCANDES: "Scandinavia", ATLAS: "Atlas",
+    BRITISH: "UK & Ireland", IBERIA: "Spain & Portugal", CANTABRIA: "Cantabrian Mountains", APENNINES: "Apennines",
+    BALKANS: "Balkans", CARPATHIANS: "Carpathians", CENTRAL_EU: "Central Europe" };
   const T = {
     en: { alert: "Powder alert", for: "For", region: "{r}: the whole region", when: "Tell me when this much new snow is coming", daily: "Every morning: today's and tomorrow's forecast (free)",
       notify: "Turn on notifications", or_email: "or by e-mail", send: "Send me alerts", note: "Free. One-click unsubscribe. We keep only your e-mail address and these choices.",
