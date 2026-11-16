@@ -1,0 +1,673 @@
+{
+ "id": "2026-11-16-scandes-deepest",
+ "slug": "scandinavia-riksgransen-snow-depth-today-16-november-2026",
+ "date": "2026-11-16",
+ "published_utc": "2026-11-16T20:42:46Z",
+ "updated_utc": "2026-11-16T20:42:46Z",
+ "region": "SCANDES",
+ "angle": "deepest",
+ "score": 70,
+ "signature": "riksgransen:170|sulitjelma_fjellandsby:130|abisko:130",
+ "keyword": {
+  "family": "snow-depth",
+  "entity": "riksgransen",
+  "region": "SCANDES",
+  "date": "2026-11-16"
+ },
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "Scandinavia",
+  "date": "2026-11-16",
+  "weekday": "Monday",
+  "model_run": "2026-11-16",
+  "forecast_days": [
+   "2026-11-17",
+   "2026-11-18",
+   "2026-11-19"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 729380,
+   "resorts_with_snow": 332,
+   "resorts_in_region": 423
+  },
+  "region_before": {
+   "date": "2026-11-14",
+   "snow_covered_area_km2": 859160,
+   "resorts_with_snow": 382
+  },
+  "region_forecast": {
+   "date": "2026-11-19",
+   "snow_covered_area_km2": 838270,
+   "resorts_with_snow": 357
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Riksgränsen",
+    "country": "Norway / Sweden",
+    "top_m": 900,
+    "base_m": 516,
+    "depth_cm_upper_slopes_today": 173,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 5,
+    "slug": "riksgransen",
+    "new_cm_by_day": {
+     "2026-11-14": 1,
+     "2026-11-15": 2,
+     "2026-11-16": 1,
+     "2026-11-17": 0,
+     "2026-11-18": 4,
+     "2026-11-19": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 516,
+      "depth_cm_model": 22,
+      "new_cm_next_7_days": 9
+     },
+     "mid": {
+      "elev_m": 708,
+      "depth_cm_model": 50,
+      "new_cm_next_7_days": 9
+     },
+     "top": {
+      "elev_m": 900,
+      "depth_cm_model": 88,
+      "new_cm_next_7_days": 10
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-17": {
+      "min": -130,
+      "max": 100
+     },
+     "2026-11-18": {
+      "min": 110,
+      "max": 300
+     },
+     "2026-11-19": {
+      "min": 150,
+      "max": 270
+     }
+    },
+    "past_winters": {
+     "height_m": 708,
+     "snow_cm_at_this_height_today_model": 46,
+     "deeper_than_n_of_past_winters": 12,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 57
+    },
+    "nearest_station": {
+     "station": "Katterjåkk",
+     "elev_m": 514,
+     "depth_cm_measured": 14,
+     "new_cm_measured_24h": null,
+     "measured_on": "2026-11-16",
+     "km_away": 2.3
+    }
+   },
+   {
+    "name": "Sulitjelma Fjellandsby",
+    "country": "Norway",
+    "top_m": 542,
+    "base_m": 388,
+    "depth_cm_upper_slopes_today": 130,
+    "new_cm_last_24h": 6,
+    "new_cm_last_72h": 10,
+    "new_cm_forecast_next_days": 3,
+    "slug": "sulitjelma_fjellandsby",
+    "new_cm_by_day": {
+     "2026-11-14": 2,
+     "2026-11-15": 2,
+     "2026-11-16": 6,
+     "2026-11-17": 1,
+     "2026-11-18": 1,
+     "2026-11-19": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 388,
+      "depth_cm_model": 29,
+      "new_cm_next_7_days": 8
+     },
+     "mid": {
+      "elev_m": 465,
+      "depth_cm_model": 35,
+      "new_cm_next_7_days": 8
+     },
+     "top": {
+      "elev_m": 542,
+      "depth_cm_model": 40,
+      "new_cm_next_7_days": 8
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-17": {
+      "min": 60,
+      "max": 440
+     },
+     "2026-11-18": {
+      "min": -240,
+      "max": 40
+     },
+     "2026-11-19": {
+      "min": 40,
+      "max": 210
+     }
+    },
+    "past_winters": {
+     "height_m": 465,
+     "snow_cm_at_this_height_today_model": 59,
+     "deeper_than_n_of_past_winters": 33,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 51
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-10"
+    }
+   },
+   {
+    "name": "Abisko",
+    "country": "Sweden",
+    "top_m": 902,
+    "base_m": 401,
+    "depth_cm_upper_slopes_today": 129,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 3,
+    "new_cm_forecast_next_days": 12,
+    "slug": "abisko",
+    "new_cm_by_day": {
+     "2026-11-14": 0,
+     "2026-11-15": 2,
+     "2026-11-16": 1,
+     "2026-11-17": 1,
+     "2026-11-18": 10,
+     "2026-11-19": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 401,
+      "depth_cm_model": 7,
+      "new_cm_next_7_days": 9
+     },
+     "mid": {
+      "elev_m": 651,
+      "depth_cm_model": 11,
+      "new_cm_next_7_days": 10
+     },
+     "top": {
+      "elev_m": 902,
+      "depth_cm_model": 66,
+      "new_cm_next_7_days": 11
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-17": {
+      "min": 50,
+      "max": 140
+     },
+     "2026-11-18": {
+      "min": 150,
+      "max": 400
+     },
+     "2026-11-19": {
+      "min": 170,
+      "max": 390
+     }
+    },
+    "past_winters": {
+     "height_m": 651,
+     "snow_cm_at_this_height_today_model": 13,
+     "deeper_than_n_of_past_winters": 2,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 27
+    },
+    "nearest_station": {
+     "station": "Abisko Aut",
+     "elev_m": 392,
+     "depth_cm_measured": 4,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-16",
+     "km_away": 2.8
+    }
+   },
+   {
+    "name": "Tromsø Alpinpark",
+    "country": "Norway",
+    "top_m": null,
+    "base_m": null,
+    "depth_cm_upper_slopes_today": 92,
+    "new_cm_last_24h": 5,
+    "new_cm_last_72h": 8,
+    "new_cm_forecast_next_days": 4,
+    "slug": "troms_alpinpark_norway",
+    "new_cm_by_day": {
+     "2026-11-14": 0,
+     "2026-11-15": 3,
+     "2026-11-16": 5,
+     "2026-11-17": 2,
+     "2026-11-18": 1,
+     "2026-11-19": 1
+    }
+   },
+   {
+    "name": "Narvik",
+    "country": "Norway",
+    "top_m": null,
+    "base_m": null,
+    "depth_cm_upper_slopes_today": 83,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 5,
+    "new_cm_forecast_next_days": 0,
+    "slug": "narvik",
+    "new_cm_by_day": {
+     "2026-11-14": 1,
+     "2026-11-15": 2,
+     "2026-11-16": 2,
+     "2026-11-17": 0,
+     "2026-11-18": 0,
+     "2026-11-19": 0
+    }
+   }
+  ],
+  "measured_at_stations": [
+   {
+    "station": "Bursiljum",
+    "elev_m": 92,
+    "depth_cm_measured": 53,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-16",
+    "network": "smhi"
+   },
+   {
+    "station": "Brände",
+    "elev_m": 54,
+    "depth_cm_measured": 51,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-15",
+    "network": "smhi"
+   },
+   {
+    "station": "Lyngen Gjerdvassbu",
+    "elev_m": 710,
+    "depth_cm_measured": 44,
+    "new_cm_measured_24h": 1,
+    "measured_on": "2026-11-16",
+    "network": "synop_no"
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/scandinavia-riksgransen-snow-depth-today-16-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/scandinavia-riksgransen-snow-depth-today-16-november-2026/map_t.webp",
+   "bytes": 47014,
+   "snow_frac": 0.7718,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Riksgränsen: 173 cm of snow, the deepest in Scandinavia (16 November)",
+   "description": "Snow in Scandinavia on 16 November: Riksgränsen about 173 cm on the upper slopes, 332 of 423 resorts with snow, and what is coming next.",
+   "lede": "If you want depth, Riksgränsen (Norway / Sweden) is the place this Monday: around 173 cm up top. The runners-up are Sulitjelma Fjellandsby (130 cm) and Abisko (129 cm). The details follow, with the heights that matter.",
+   "sections": [
+    {
+     "h": "What fell since Tuesday's lifts",
+     "p": [
+      "In the last 72 hours, Sulitjelma Fjellandsby got the most new snow: about 10 cm. Tromsø Alpinpark (8 cm) and Narvik (5 cm) also had new snow.",
+      "Depth is what decides whether a slope can be skied at all. Early in the season, a resort with a deep base on its upper slopes keeps good snow even after a few mild days, while thin cover turns icy or bare quickly."
+     ]
+    },
+    {
+     "h": "Low, middle and high",
+     "p": [
+      "Height matters at Riksgränsen: 88 cm at the top (900 m), 50 cm at 708 m and 22 cm down at 516 m."
+     ]
+    },
+    {
+     "h": "Where to go",
+     "p": [
+      "Riksgränsen, Norway / Sweden: skiing up to 900 m; a snow depth of about 173 cm near the top; 4 cm added over three days; a forecast of 5 cm by 19 November. Sulitjelma Fjellandsby, Norway: 130 cm of snow high up; 10 cm of new snow in three days; about 3 cm in the forecast to 19 November; a top station at 542 m. Abisko (Sweden): 129 cm of snow high up; 3 cm of new snow in three days; 12 cm more expected until 19 November; lifts up to 902 m. Tromsø Alpinpark, Norway: a forecast of 4 cm by 19 November; roughly 92 cm where the best runs start; 8 cm added over three days."
+     ]
+    },
+    {
+     "h": "Measured at the stations",
+     "p": [
+      "Bursiljum (92 m) measured 53 cm of snow on 16 November. Brände (54 m) measured 51 cm of snow on 15 November. Lyngen Gjerdvassbu (710 m) measured 44 cm of snow on 16 November, 1 cm of it new in 24 hours."
+     ]
+    },
+    {
+     "h": "Across Scandinavia",
+     "p": [
+      "332 of 423 resorts in Scandinavia show snow today (729,380 km² of snow cover). By 19 November the map expects 357."
+     ]
+    },
+    {
+     "h": "The next days",
+     "p": [
+      "Until 19 November, the forecast brings the most snow to Abisko: about 12 cm. Riksgränsen (5 cm) and Tromsø Alpinpark (4 cm) should get snow too."
+     ]
+    }
+   ],
+   "advice": [
+    "Thin early snow can hide rocks and stumps: keep to the marked slopes.",
+    "Cold and wind make the fjell feel much colder than the number: dress in layers and cover your face.",
+    "Many northern resorts light their main slopes in the afternoon: check the lit-slope hours before you go.",
+    "Early in the season, the highest lifts and the shady slopes keep the best snow."
+   ],
+   "captions": {
+    "map": "Snow depth in Scandinavia on 16 November (SnowScope snow map): Riksgränsen, Sulitjelma Fjellandsby, Abisko, Tromsø Alpinpark, Narvik."
+   }
+  },
+  "sv": {
+   "title": "Riksgränsen: 173 cm snö, mest i Skandinavien (16 november)",
+   "description": "Snö i Skandinavien den 16 november: Riksgränsen cirka 173 cm på de övre backarna, 332 av 423 skidorter med snö, och vad som är på väg.",
+   "lede": "Vill du ha djup snö är Riksgränsen (Norge / Sverige) platsen i dag, måndag: runt 173 cm uppe på berget. Tvåa och framåt: Sulitjelma Fjellandsby (130 cm) och Abisko (129 cm). Detaljerna följer, med de höjder som spelar roll.",
+   "sections": [
+    {
+     "h": "Det som har fallit nyss",
+     "p": [
+      "De senaste 72 timmarna fick Sulitjelma Fjellandsby mest nysnö: cirka 10 cm. Även Tromsø Alpinpark (8 cm) och Narvik (5 cm) fick nysnö.",
+      "Snödjupet avgör om en backe alls går att åka. Tidigt på säsongen behåller en skidort med djup bas på de övre backarna bra snö även efter några milda dagar, medan tunt snötäcke snabbt blir isigt eller barmark."
+     ]
+    },
+    {
+     "h": "Lågt, mitt emellan och högt",
+     "p": [
+      "Höjden avgör i Riksgränsen: 88 cm på toppen (900 m), 50 cm på 708 m och 22 cm nere på 516 m."
+     ]
+    },
+    {
+     "h": "Vart du ska åka",
+     "p": [
+      "Riksgränsen, Norge / Sverige: åkning upp till 900 m; ett snödjup på cirka 173 cm nära toppen; 4 cm tillkommet på tre dygn; en prognos på 5 cm till 19 november. Sulitjelma Fjellandsby, Norge: 130 cm snö högt upp; 10 cm nysnö på tre dygn; cirka 3 cm i prognosen till 19 november; en toppstation på 542 m. Abisko (Sverige): 129 cm snö högt upp; 3 cm nysnö på tre dygn; 12 cm till väntas fram till 19 november; liftar upp till 902 m. Tromsø Alpinpark, Norge: en prognos på 4 cm till 19 november; ungefär 92 cm där de bästa nedfarterna börjar; 8 cm tillkommet på tre dygn."
+     ]
+    },
+    {
+     "h": "Uppmätt vid stationerna",
+     "p": [
+      "Bursiljum (92 m) mätte 53 cm snö den 16 november. Brände (54 m) mätte 51 cm snö den 15 november. Lyngen Gjerdvassbu (710 m) mätte 44 cm snö den 16 november, varav 1 cm ny på ett dygn."
+     ]
+    },
+    {
+     "h": "I hela Skandinavien",
+     "p": [
+      "332 av 423 skidorter i Skandinavien har snö i dag (729 380 km² snötäcke). Till 19 november väntar kartan 357."
+     ]
+    },
+    {
+     "h": "De kommande dagarna",
+     "p": [
+      "Fram till 19 november ger prognosen mest snö till Abisko: cirka 12 cm. Även Riksgränsen (5 cm) och Tromsø Alpinpark (4 cm) bör få snö."
+     ]
+    }
+   ],
+   "advice": [
+    "Tunt snötäcke tidigt på säsongen kan dölja stenar och stubbar: håll dig till de preparerade backarna.",
+    "Kyla och vind gör att fjället känns mycket kallare än siffran: klä dig i lager och skydda ansiktet.",
+    "Många skidorter i norr belyser huvudbackarna på eftermiddagen: kolla tiderna för belysta backar innan du åker.",
+    "Tidigt på säsongen har de högsta liftarna och de skuggiga backarna bäst snö."
+   ],
+   "captions": {
+    "map": "Snödjup i Skandinavien den 16 november (SnowScopes snökarta): Riksgränsen, Sulitjelma Fjellandsby, Abisko, Tromsø Alpinpark, Narvik."
+   }
+  },
+  "nb": {
+   "title": "Riksgränsen: 173 cm snø, mest i Skandinavia (16. november)",
+   "description": "Snø i Skandinavia 16. november: Riksgränsen rundt 173 cm i de øvre bakkene, 332 av 423 skisteder med snø, og hva som kommer.",
+   "lede": "Vil du ha dyp snø, er Riksgränsen (Norge / Sverige) stedet i dag, mandag: rundt 173 cm på toppen. Deretter: Sulitjelma Fjellandsby (130 cm) og Abisko (129 cm). Detaljene følger, med høydene som betyr noe.",
+   "sections": [
+    {
+     "h": "Det som har kommet nylig",
+     "p": [
+      "De siste 72 timene fikk Sulitjelma Fjellandsby mest nysnø: rundt 10 cm. Også Tromsø Alpinpark (8 cm) og Narvik (5 cm) fikk nysnø.",
+      "Snødybden avgjør om en bakke i det hele tatt kan kjøres. Tidlig i sesongen beholder et skisted med dyp base i de øvre bakkene god snø selv etter noen milde dager, mens tynt snødekke fort blir isete eller bart."
+     ]
+    },
+    {
+     "h": "Lavt, midt imellom og høyt",
+     "p": [
+      "Høyden avgjør i Riksgränsen: 88 cm på toppen (900 m), 50 cm på 708 m og 22 cm nede på 516 m."
+     ]
+    },
+    {
+     "h": "Hvor du bør dra",
+     "p": [
+      "Riksgränsen, Norge / Sverige: kjøring opp til 900 m; en snødybde på rundt 173 cm nær toppen; 4 cm kommet til på tre døgn; en prognose på 5 cm til 19. november. Sulitjelma Fjellandsby, Norge: 130 cm snø høyt oppe; 10 cm nysnø på tre døgn; rundt 3 cm i prognosen til 19. november; en toppstasjon på 542 m. Abisko (Sverige): 129 cm snø høyt oppe; 3 cm nysnø på tre døgn; 12 cm til ventes fram til 19. november; heiser opp til 902 m. Tromsø Alpinpark, Norge: en prognose på 4 cm til 19. november; omtrent 92 cm der de beste nedfartene starter; 8 cm kommet til på tre døgn."
+     ]
+    },
+    {
+     "h": "Målt på stasjonene",
+     "p": [
+      "Bursiljum (92 m) målte 53 cm snø 16. november. Brände (54 m) målte 51 cm snø 15. november. Lyngen Gjerdvassbu (710 m) målte 44 cm snø 16. november, hvorav 1 cm nytt siste døgn."
+     ]
+    },
+    {
+     "h": "I hele Skandinavia",
+     "p": [
+      "332 av 423 skisteder i Skandinavia har snø i dag (729 380 km² snødekke). Til 19. november venter kartet 357."
+     ]
+    },
+    {
+     "h": "De neste dagene",
+     "p": [
+      "Fram til 19. november gir prognosen mest snø til Abisko: rundt 12 cm. Også Riksgränsen (5 cm) og Tromsø Alpinpark (4 cm) bør få snø."
+     ]
+    }
+   ],
+   "advice": [
+    "Tynt snødekke tidlig i sesongen kan skjule steiner og stubber: hold deg i de preparerte bakkene.",
+    "Kulde og vind gjør at fjellet kjennes mye kaldere enn tallet: kle deg i lag og beskytt ansiktet.",
+    "Mange skisteder i nord lyser opp hovedbakkene om ettermiddagen: sjekk tidene for lysløype og opplyste bakker før du drar.",
+    "Tidlig i sesongen har de høyeste heisene og de skyggefulle bakkene best snø."
+   ],
+   "captions": {
+    "map": "Snødybde i Skandinavia 16. november (SnowScopes snøkart): Riksgränsen, Sulitjelma Fjellandsby, Abisko, Tromsø Alpinpark, Narvik."
+   }
+  },
+  "fi": {
+   "title": "Riksgränsen: 173 cm lunta, eniten Pohjoismaissa (16. marraskuuta)",
+   "description": "Lumi Pohjoismaissa 16. marraskuuta: Riksgränsen ylärinteillä noin 173 cm, 332/423 keskusta lumessa, ja mitä on tulossa.",
+   "lede": "Jos haluat syvää lunta, paikka on tänään (maanantai) Riksgränsen (Norja / Ruotsi): ylhäällä noin 173 cm. Seuraavina: Sulitjelma Fjellandsby (130 cm) ja Abisko (129 cm). Yksityiskohdat seuraavat, korkeuksineen.",
+   "sections": [
+    {
+     "h": "Mitä on satanut viime päivinä",
+     "p": [
+      "Viimeisten 72 tunnin aikana eniten uutta lunta sai Sulitjelma Fjellandsby: noin 10 cm. Myös Tromsø Alpinpark (8 cm) ja Narvik (5 cm) saivat uutta lunta.",
+      "Lumensyvyys ratkaisee, voiko rinnettä laskea lainkaan. Kauden alussa keskus, jonka ylärinteillä on paksu pohja, pitää hyvän lumen lauhojen päivienkin jälkeen, kun taas ohut lumipeite jäätyy tai sulaa nopeasti."
+     ]
+    },
+    {
+     "h": "Alhaalla, keskellä ja ylhäällä",
+     "p": [
+      "Korkeus ratkaisee kohteessa Riksgränsen: huipulla (900 m) 88 cm, korkeudella 708 m 50 cm ja alhaalla (516 m) 22 cm."
+     ]
+    },
+    {
+     "h": "Minne lähteä",
+     "p": [
+      "Riksgränsen, Norja / Ruotsi: laskettavaa korkeudelle 900 m; huipun lähellä noin 173 cm lunta; kolmessa päivässä 4 cm lisää; ennuste 5 cm 19. marraskuuta mennessä. Sulitjelma Fjellandsby, Norja: ylhäällä lunta 130 cm; kolmessa päivässä 10 cm uutta lunta; ennusteessa noin 3 cm 19. marraskuuta asti; huippuasema korkeudella 542 m. Abisko (Ruotsi): ylhäällä lunta 129 cm; kolmessa päivässä 3 cm uutta lunta; 19. marraskuuta mennessä odotetaan 12 cm lisää; hissit korkeudelle 902 m. Tromsø Alpinpark, Norja: ennuste 4 cm 19. marraskuuta mennessä; parhaiden laskujen lähtöpaikoilla suunnilleen 92 cm; kolmessa päivässä 8 cm lisää."
+     ]
+    },
+    {
+     "h": "Mitattu asemilla",
+     "p": [
+      "Bursiljum (92 m) mittasi 16. marraskuuta lunta 53 cm. Brände (54 m) mittasi 15. marraskuuta lunta 51 cm. Lyngen Gjerdvassbu (710 m) mittasi 16. marraskuuta lunta 44 cm, josta 1 cm uutta vuorokaudessa."
+     ]
+    },
+    {
+     "h": "Koko Pohjolassa",
+     "p": [
+      "332/423 keskusta alueella Pohjoismaat on tänään lumen peitossa (729 380 km² lumipeitettä). 19. marraskuuta mennessä kartta odottaa 357."
+     ]
+    },
+    {
+     "h": "Seuraavat päivät",
+     "p": [
+      "Ennusteen mukaan eniten lunta saa 19. marraskuuta mennessä Abisko: noin 12 cm. Lunta pitäisi tulla myös: Riksgränsen (5 cm) ja Tromsø Alpinpark (4 cm)."
+     ]
+    }
+   ],
+   "advice": [
+    "Ohut alkukauden lumi voi peittää kiviä ja kantoja: pysy merkityillä rinteillä.",
+    "Pakkanen ja tuuli tekevät tunturista paljon kylmemmän kuin lukema kertoo: pukeudu kerroksittain ja suojaa kasvot.",
+    "Monet pohjoisen keskukset valaisevat päärinteensä iltapäivisin: tarkista valaistujen rinteiden ajat ennen lähtöä.",
+    "Kauden alussa paras lumi on ylimpien hissien ja varjoisten rinteiden luona."
+   ],
+   "captions": {
+    "map": "Lumensyvyys Pohjoismaissa 16. marraskuuta (SnowScopen lumikartta): Riksgränsen, Sulitjelma Fjellandsby, Abisko, Tromsø Alpinpark, Narvik."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "hydro"
+  },
+  "sv": {
+   "writer": "template",
+   "voice": "hydro"
+  },
+  "nb": {
+   "writer": "template",
+   "voice": "hydro"
+  },
+  "fi": {
+   "writer": "template",
+   "voice": "hydro"
+  }
+ },
+ "words_en": 337,
+ "indexable": true,
+ "main": {
+  "slug": "riksgransen",
+  "name": "Riksgränsen",
+  "lat": 68.4154,
+  "lon": 18.1137
+ },
+ "places": [
+  {
+   "name": "Riksgränsen",
+   "lat": 68.4154,
+   "lon": 18.1137
+  },
+  {
+   "name": "Sulitjelma Fjellandsby",
+   "lat": 67.0881,
+   "lon": 16.0707
+  },
+  {
+   "name": "Abisko",
+   "lat": 68.3631,
+   "lon": 18.7524
+  },
+  {
+   "name": "Tromsø Alpinpark",
+   "lat": 69.6749,
+   "lon": 19.0694
+  },
+  {
+   "name": "Narvik",
+   "lat": 68.4359,
+   "lon": 17.4394
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "riksgransen",
+   "name": "Riksgränsen"
+  },
+  {
+   "slug": "sulitjelma_fjellandsby",
+   "name": "Sulitjelma Fjellandsby"
+  },
+  {
+   "slug": "abisko",
+   "name": "Abisko"
+  },
+  {
+   "slug": "troms_alpinpark_norway",
+   "name": "Tromsø Alpinpark"
+  },
+  {
+   "slug": "narvik",
+   "name": "Narvik"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "riksgransen",
+    "name": "Riksgränsen",
+    "depth": 173,
+    "new72": 4,
+    "next": 5,
+    "top_m": 900
+   },
+   {
+    "slug": "sulitjelma_fjellandsby",
+    "name": "Sulitjelma Fjellandsby",
+    "depth": 130,
+    "new72": 10,
+    "next": 3,
+    "top_m": 542
+   },
+   {
+    "slug": "abisko",
+    "name": "Abisko",
+    "depth": 129,
+    "new72": 3,
+    "next": 12,
+    "top_m": 902
+   },
+   {
+    "slug": "troms_alpinpark_norway",
+    "name": "Tromsø Alpinpark",
+    "depth": 92,
+    "new72": 8,
+    "next": 4,
+    "top_m": null
+   },
+   {
+    "slug": "narvik",
+    "name": "Narvik",
+    "depth": 83,
+    "new72": 5,
+    "next": 0,
+    "top_m": null
+   }
+  ]
+ },
+ "bulletins": [],
+ "trip_day": "2026-11-21",
+ "map_link": "https://snowscope.app/#@68.415,18.114,9.0",
+ "seconds": 0.0,
+ "facts_used": 27,
+ "voice": "hydro",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 14.8,
+  "after": 14.8,
+  "with": "scandinavia-breimsbygda-skisenter-fresh-snow-powder-alert-16-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.054,
+  "with": "scandinavia-breimsbygda-skisenter-fresh-snow-powder-alert-16-november-2026"
+ },
+ "publish_utc": "2026-11-16T20:42:46Z"
+}
