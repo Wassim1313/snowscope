@@ -1445,8 +1445,13 @@
   }
 
   // ------------------------------------------------------------------ tap: the value under the finger
+  // overlapping European boxes (2026-11-16): one owner per point, the server's rule (engine/domains.py ceded)
+  const roW = (lat) => { const X = [44.3, 44.6, 44.8, 46.1], Y = [22.7, 22.5, 21.4, 20.3];
+    if (lat <= X[0]) return Y[0]; for (let i = 1; i < X.length; i++) if (lat <= X[i]) return Y[i - 1] + (Y[i] - Y[i - 1]) * (lat - X[i - 1]) / (X[i] - X[i - 1]); return Y[3]; };
+  const ceded = (c, lat, lon) => c === "APENNINES" ? lon >= 13.4 && lat >= 38.8 && lat <= 45.6 && lat > 45.5 - (lon - 12.4) * (5.9 / 6.8)
+    : c === "BALKANS" ? lat >= 44.3 && lon >= 17 && lon <= 27.6 && lon > roW(lat) : false;
   function regionAt(ll) {
-    return DATA.regions.find((r) => { const L = r.lattice; return ll.lng >= L.west && ll.lng < L.west + L.nx * L.dlon && ll.lat <= L.north && ll.lat > L.north - L.ny * L.dlat; });
+    return DATA.regions.find((r) => { const L = r.lattice; return ll.lng >= L.west && ll.lng < L.west + L.nx * L.dlon && ll.lat <= L.north && ll.lat > L.north - L.ny * L.dlat && !ceded(r.code, ll.lat, ll.lng); });
   }
   async function codeAt(r, p, ll, date = st.day, fineZoom = map && map.getZoom() >= 7) {
     const d = r.days.find((x) => x.date === date);
