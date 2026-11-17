@@ -18,6 +18,9 @@
   const addDays = (d, k) => { const x = D(d); x.setUTCDate(x.getUTCDate() + k); return x.toISOString().slice(0, 10); };
   const mercY = (lat) => Math.log(Math.tan(Math.PI / 4 + lat * Math.PI / 360));
   const store = SS.store;
+  // home page text (AdSense review 2026-11-16): the server-rendered "About SnowScope / snow today by region / guides"
+  // block (tools/build_web.py home_info) stays at the bottom of the Snow today panel after the app replaces the panel
+  const HOMEINFO = (() => { const e = $("homeinfo"); return e ? e.outerHTML : ""; })();
   // thin snow (1-10 cm on the 400 scale, 1-2.5 cm on the default 100 scale) is a clear sky blue, not the near-white
   // of the ColorBrewer ramp that vanished on the light basemap (owner 2026-11-03: "Oukaïmeden snow not visible")
   const DEPTH = [[1, [128, 184, 236]], [10, [116, 178, 228]], [25, [107, 174, 214]], [50, [66, 146, 198]], [100, [33, 113, 181]], [150, [8, 81, 156]], [250, [8, 48, 107]], [400, [37, 0, 79]]];
@@ -39,7 +42,7 @@
   const AVAL_NAME = { 1: "Low", 2: "Moderate", 3: "Considerable", 4: "High", 5: "Very high" };
   const NAMES = { ALPS: "Alps", PYRENEES: "Pyrenees", US_WEST: "US West", US_NE: "US Northeast", ATLAS: "Atlas (Morocco)", SCANDES: "Scandinavia", CA_WEST: "Canada West",
     BRITISH: "UK & Ireland", IBERIA: "Spain & Portugal", CANTABRIA: "Cantabrian Mountains", APENNINES: "Apennines",
-    BALKANS: "Balkans", CARPATHIANS: "Carpathians", CENTRAL_EU: "Central Europe" };
+    BALKANS: "Balkans", CARPATHIANS: "Carpathians", CENTRAL_EU: "Central Europe", RUSSIA: "Russia" };
   // free, no-key basemaps (owner 2026-11-02: no Mapbox): OpenFreeMap vector styles + AWS Terrain Tiles (terrarium) for
   // relief and 3D. No satellite basemap (no free source that allows a site with ads).
   const STYLES = { outdoors: ["Outdoors", "https://tiles.openfreemap.org/styles/liberty"], light: ["Light", "https://tiles.openfreemap.org/styles/positron"] };
@@ -113,7 +116,7 @@
     US_WEST: [-125, 33, -104, 49], CA_WEST: [-128, 49, -113, 54.5], US_NE: [-75.5, 42.5, -70.5, 45.5], SCANDES: [5, 58.5, 31, 70.5],
     BRITISH: [-8.5, 51.5, -1.5, 58.7], IBERIA: [-8, 37, -0.5, 41.5], CANTABRIA: [-7.5, 42.2, -3, 43.3],
     APENNINES: [8.5, 37.5, 16.5, 44], BALKANS: [15.5, 40, 25, 44.5], CARPATHIANS: [18, 45, 26.5, 49.8],
-    CENTRAL_EU: [2, 45, 16, 51.5] };
+    CENTRAL_EU: [2, 45, 16, 51.5], RUSSIA: [30, 42, 61, 69] };
   const hasRegion = (c) => DATA.regions.some((r) => r.code === c);
   function nearestRange(lat, lon) {
     let best = null, bd = Infinity;
@@ -137,18 +140,19 @@
       : /^Europe\/(Stockholm|Oslo|Helsinki|Copenhagen|Mariehamn)$|^Arctic\/Longyearbyen$|^Atlantic\/Reykjavik$/.test(tz) ? (hasRegion("SCANDES") ? "SCANDES" : "ALPS")
       : /^Europe\/(London|Dublin|Belfast|Isle_of_Man|Guernsey|Jersey)$/.test(tz) ? (hasRegion("BRITISH") ? "BRITISH" : "ALPS")
       : /^Europe\/(Warsaw|Bratislava|Prague|Budapest|Bucharest|Kiev|Kyiv|Uzhgorod|Chisinau)$/.test(tz) ? (hasRegion("CARPATHIANS") ? "CARPATHIANS" : "ALPS")
+      : /^(Europe\/(Moscow|Kaliningrad|Samara|Volgograd|Kirov|Ulyanovsk|Saratov|Astrakhan|Minsk)|Asia\/(Yekaterinburg|Omsk|Novosibirsk|Barnaul|Tomsk|Novokuznetsk|Krasnoyarsk|Irkutsk|Chita|Yakutsk|Vladivostok|Magadan|Sakhalin|Kamchatka))$/.test(tz) ? (hasRegion("RUSSIA") ? "RUSSIA" : "ALPS")
       : /^Europe\/(Sofia|Belgrade|Sarajevo|Skopje|Podgorica|Tirane|Athens|Zagreb)$/.test(tz) ? (hasRegion("BALKANS") ? "BALKANS" : "ALPS")
       : /^(Europe|Atlantic)\//.test(tz) ? "ALPS" : null;
     const byCc = { MA: "ATLAS", DZ: "ATLAS", TN: "ATLAS", ES: "PYRENEES", AD: "PYRENEES", PT: "PYRENEES", US: "US_WEST", CA: "CA_WEST",
       SE: "SCANDES", NO: "SCANDES", FI: "SCANDES", DK: "SCANDES", IS: "SCANDES", GB: "BRITISH", IE: "BRITISH",
       PL: "CARPATHIANS", SK: "CARPATHIANS", RO: "CARPATHIANS", UA: "CARPATHIANS", HU: "CARPATHIANS", CZ: "CENTRAL_EU",
       BG: "BALKANS", RS: "BALKANS", BA: "BALKANS", ME: "BALKANS", MK: "BALKANS", AL: "BALKANS", GR: "BALKANS",
-      HR: "BALKANS", XK: "BALKANS" }[(cc || "").toUpperCase()];
+      HR: "BALKANS", XK: "BALKANS", RU: "RUSSIA", BY: "RUSSIA", KZ: "RUSSIA" }[(cc || "").toUpperCase()];
     const byLang = { ar: "ATLAS", es: "PYRENEES", ca: "PYRENEES", eu: "PYRENEES", fr: "ALPS", de: "ALPS", it: "ALPS", sl: "ALPS",
       sv: "SCANDES", nb: "SCANDES", no: "SCANDES", nn: "SCANDES", fi: "SCANDES", da: "SCANDES", pl: "CARPATHIANS",
       sk: "CARPATHIANS", ro: "CARPATHIANS", uk: "CARPATHIANS", hu: "CARPATHIANS", cs: "CENTRAL_EU", bg: "BALKANS",
       sr: "BALKANS", bs: "BALKANS", hr: "BALKANS", mk: "BALKANS", sq: "BALKANS", el: "BALKANS", ga: "BRITISH",
-      cy: "BRITISH", gd: "BRITISH" }[lang];
+      cy: "BRITISH", gd: "BRITISH", ru: "RUSSIA", be: "RUSSIA" }[lang];
     return [byTz, byCc, byLang].find((c) => c && hasRegion(c)) || null;
   }
   const startFixed = () => !!(DATA.regions.find((r) => slugOf(r.code) === location.hash.slice(1)) || (store.get("ss_region") && store.get("ss_region_pick")));
@@ -1780,8 +1784,8 @@
   }
   const footer = () => {
     const c = (SS.S.cfg && SS.S.cfg.contact) || {};
-    return '<nav class="flinks"><a href="' + BASE + 'resorts/">All resorts</a><a href="' + BASE + 'sources.html">About &amp; sources</a>' +
-      (SS.Auth.enabled() ? '<a href="' + BASE + 'account.html">Your account</a>' : "") + '<a href="' + BASE + 'pricing.html">Pricing</a><a href="' + BASE + 'terms/">Terms</a><a href="' + BASE + 'privacy/">Privacy</a><a href="' + BASE + 'refund.html">Refund</a>' +
+    return '<nav class="flinks"><a href="' + BASE + 'resorts/">All resorts</a><a href="' + BASE + 'about/">About</a><a href="' + BASE + 'editorial/">Editorial policy</a><a href="' + BASE + 'contact/">Contact</a>' +
+      (SS.Auth.enabled() ? '<a href="' + BASE + 'account.html">Your account</a>' : "") + '<a href="' + BASE + 'pricing.html">Pricing</a><a href="' + BASE + 'terms/">Terms</a><a href="' + BASE + 'privacy/">Privacy</a><a href="' + BASE + 'refund.html">Refund</a><a href="' + BASE + 'sources.html">Credits</a>' +
       (c.support ? '<a href="mailto:' + esc(c.support) + '">Help</a>' : "") + '<a href="#" data-ad-choices hidden>Cookie settings</a>' +
       '<span>Hotel links marked “Partner” may earn us a commission. © 2026 SnowScope · Atlas Labs</span></nav>';
   };
@@ -1822,7 +1826,9 @@
       const z = dayOf(y);
       return '<button data-goregion="' + y.code + '"><b>' + esc(y.name) + "</b><small>" + (z.new_max_cm >= 1 ? "+" + U.depth(z.new_max_cm) : z.resorts_with_snow ? esc(I18N.tu("{a} resorts with snow", fmt(z.resorts_with_snow))) : esc(I18N.t("No snow yet"))) + "</small></button>";
     }).join("") + "</div>";
-    return h + appCard() + footer();
+    // the home text is English (crawlers, English visitors); US units: its cm numbers are rewritten like the panel's
+    const info = !I18N.lang || I18N.lang === "en" ? HOMEINFO.replace(/<span data-cm="(\d+)">[^<]*<\/span>/g, (m, v) => '<span data-cm="' + v + '">' + U.depth(+v) + "</span>") : "";
+    return h + appCard() + info + footer();
   }
   // follow flow (follow.js, owner 2026-11-09): "Your resorts" first (favourites of this browser, with their snow on the
   // shown day), then one big powder-alert button for the region on the home panel
@@ -2983,13 +2989,11 @@
       (s30 ? '<p class="measured s30"><span class="k">' + esc(I18N.t("Sharper view")) + '</span> <b>' + U.depth(Math.round(s30.depth_cm)) + "</b>" + (s30.elevation_m ? " · " + U.elev(s30.elevation_m) : "") + "</p>" : "") +
       measuredHtml(x.lat, x.lon, x.top_m || null, false) +
       '<div class="sect">Snow depth on the upper slopes, ' + U.du() + '</div><div id="rDays"></div>' +
-      // partners.js (MONETIZATION): "Plan your trip" right under the snow numbers + day strip, above the Stays card
-      '<div data-ptrip data-where="panel" data-lat="' + x.lat + '" data-lon="' + x.lon + '" data-place="' + esc(x.short) + '"' + (st.stayDay ? ' data-day="' + st.stayDay + '"' : "") + "></div>" +
-      stayModule(x.lat, x.lon, x.short, st.staysVia || "panel") +
       adSlot("resort", x) +
       '<div class="sect">This season vs past winters</div><p class="note" id="rHElev" hidden></p><div id="rStrip"><div class="skel" style="height:118px"></div></div><div id="rHist"></div>' +
       '<div class="sect">Next 7 days</div><div id="rFc"></div>' +
       '<div class="sect">Nearby resorts</div>' + near.map(([km, y]) => resRow(y, null, (y.snow[ti] || [])[0], U.dist(Math.round(km)), (y.snow[ti] || [])[1])).join("") + appCard() + footer();
+    const sVia = st.staysVia || "panel";
     st.staysVia = null;
     box.querySelector("[data-back]").onclick = () => (st.pushed ? history.back() : closeResort());
     box.querySelector(".hero2").insertAdjacentHTML("afterend", '<div class="acts3" style="margin-bottom:6px"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a><button class="btn ink" data-share="' + esc(slug) + '" data-sd="' + st.day + '"><span class="ms">share</span>Share</button>' +
@@ -2999,6 +3003,13 @@
     if (hb) { hb.insertAdjacentHTML("afterend", '<div class="seasonrow" id="rSeason"><span class="ms">event</span><span class="tx"><span class="skel" style="display:block;height:16px;width:60%"></span></span></div>'); seasonRow(slug); }
     // LIVE-DATA (2026-11-03): new-snow totals right under the hero, the powder-alert button, lifts / webcams only with data
     if (hb) { hb.insertAdjacentHTML("afterend", '<div id="rFall"><div class="skel" style="height:132px;margin:0 0 8px"></div></div><div id="rElev"></div>'); snowfallRow(x); }
+    // Stays card higher (owner 2026-11-16: 114 loads vs 6 views when it sat under the 7-day strip): "Plan your trip" +
+    // Stays right after the snowfall row, before the season row, so it is in the first screen (desktop) and in the
+    // half-open sheet (phones). Snow numbers stay first; Partner label, consent rules (core.js stayConsent) and the
+    // Pro switch (stayModule returns "" for Pro) are unchanged.
+    const re = $("rElev");
+    if (re) re.insertAdjacentHTML("afterend", '<div data-ptrip data-where="panel" data-lat="' + x.lat + '" data-lon="' + x.lon + '" data-place="' + esc(x.short) + '"' + (st.stayDay ? ' data-day="' + st.stayDay + '"' : "") + "></div>" +
+      stayModule(x.lat, x.lon, x.short, sVia));
     const ra = box.querySelector(".acts3");
     // follow flow (owner 2026-11-09): big ★ Favourite + Powder alert right under the snow numbers
     if (hb) hb.insertAdjacentHTML("afterend", followResort(x) + (window.Follow && Follow.appCard ? Follow.appCard({ slug: x.slug, name: x.short || x.name, via: "resort" }) : ""));   // + "Get the app" card (owner 2026-11-12)

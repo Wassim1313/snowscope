@@ -142,7 +142,9 @@
   let houseN = 0;
   function houseAd(el) {
     const d = el.dataset, kind = d.ad || "slot";
-    const stay = d.lat && d.lon && S.cfg && S.cfg.stay22 && !staysHidden() && houseN++ % 2 === 0;
+    // ad density (AdSense review 2026-11-16): no Stay22 house card where the panel / post already has its Stays card
+    const box = el.closest("#pbody, article, main"), hasStay = !!(box && box.querySelector("details.stays, [data-staycard]"));
+    const stay = d.lat && d.lon && S.cfg && S.cfg.stay22 && !staysHidden() && !hasStay && houseN++ % 2 === 0;
     if (stay) {
       let u = stayLink(+d.lat, +d.lon, d.place || "", d.day || null);
       if (u) {
