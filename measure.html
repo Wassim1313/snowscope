@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en" data-root="" data-noads="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Measure the snow with your phone · SnowScope</title>
+<meta name="description" content="No Android phone? Take one photo of your ski poles in the snow, upload it here, and your snow depth appears on the SnowScope community map.">
+<meta name="google-adsense-account" content="ca-pub-6693878731812238">
+<link rel="canonical" href="https://snowscope.app/measure.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowScope">
+<meta property="og:title" content="Measure the snow with your phone">
+<meta property="og:description" content="One photo of your ski poles in the snow is enough. Upload it, we put the depth on the map.">
+<meta property="og:url" content="https://snowscope.app/measure.html">
+<meta property="og:image" content="https://snowscope.app/og.png">
+<link rel="icon" href="logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..750&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
+<link rel="stylesheet" href="site.css">
+<style>
+[hidden]{display:none!important}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:16px}
+.steps .card{margin:0;display:flex;flex-direction:column;gap:6px}
+.steps .n{display:inline-flex;width:30px;height:30px;border-radius:50%;background:var(--accent-tint);color:var(--accent-ink);font-weight:700;align-items:center;justify-content:center;font-size:14px}
+.steps h2{font-size:16px;margin:0}.steps p{margin:0;color:var(--ink2);font-size:14px}
+.poles{display:flex;align-items:flex-end;justify-content:center;gap:34px;height:150px;margin:6px 0 2px;position:relative}
+.poles .snow{position:absolute;left:0;right:0;bottom:0;height:52px;border-radius:14px 14px 0 0;background:var(--surface3)}
+.poles .pole{position:relative;width:8px;border-radius:4px;background:linear-gradient(var(--ski2),var(--ski))}
+.poles .pole::before{content:"";position:absolute;left:-7px;top:-10px;width:22px;height:10px;border-radius:5px;background:var(--ink2)}
+.poles .pole.in{height:84px;z-index:1}.poles .pole.on{height:136px;margin-bottom:52px}
+.poles .lbl{position:absolute;font-size:12px;color:var(--ink3);white-space:nowrap}
+.form{margin-top:16px}
+.form .card{padding:18px}
+.field select,.field textarea{width:100%;height:46px;border-radius:12px;border:1px solid var(--outline);background:var(--surface2);color:var(--ink);padding:0 12px;font:inherit}
+.field select:focus{outline:2px solid var(--accent);outline-offset:-1px;background:var(--surface)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:420px){.two{grid-template-columns:1fr}}
+.drop{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:150px;border:2px dashed var(--outline);border-radius:16px;background:var(--surface2);cursor:pointer;text-align:center;padding:16px;color:var(--ink2);font-size:14px}
+.drop:focus-within,.drop:hover{border-color:var(--accent)}
+.drop .ms{font-size:34px;color:var(--accent)}
+.drop img{max-width:100%;max-height:300px;border-radius:12px;display:block}
+.drop input{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden}
+.loc{display:flex;align-items:center;gap:8px;font-size:14px;margin:8px 0 0;color:var(--ink2)}
+.loc .ms{font-size:20px}.loc.ok{color:var(--good)}.loc.warn{color:var(--fair)}
+.unit{position:relative}.unit input{padding-right:48px}
+.unit::after{content:attr(data-u);position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:13px;color:var(--ink3);pointer-events:none}
+.field span.opt{display:inline;font-weight:400;color:var(--ink3)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:14px}
+.done{text-align:center;padding:28px 18px}
+.done .ms{font-size:56px;color:var(--good)}
+.done h2{margin:6px 0 4px}.done p{color:var(--ink2);margin:0 0 12px}
+.small{font-size:13px;color:var(--ink3);margin:14px 0 0}
+</style>
+</head>
+<body data-page="measure">
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><img src="logo.svg" alt="" width="30" height="30">SnowScope</a>
+  <button class="btn icon langbtn" data-lang aria-label="Language"><span class="ms">language</span></button>
+  <div class="acct" id="acct" style="margin-left:auto"></div>
+</div></header>
+<main class="wrap" style="max-width:760px">
+  <div class="crumbs"><a href="./">Snow today</a> › Measure the snow</div>
+  <h1 style="margin-top:8px">Measure the snow with your phone</h1>
+  <p class="lede">Any phone works. Take one photo of your ski poles in the snow, send it here, and we read the snow depth for you. It then appears on the community snow map with everyone else's measurements.</p>
+
+  <div class="steps">
+    <div class="card"><span class="n">1</span><h2>Push one pole to the ground</h2><p>Push one ski pole straight down through the snow until it touches the ground.</p></div>
+    <div class="card"><span class="n">2</span><h2>Stand the other on the snow</h2><p>Stand the second pole upright on top of the snow, right next to the first one.</p></div>
+    <div class="card"><span class="n">3</span><h2>Take ONE photo</h2><p>Step back so both poles are fully in the picture, top to bottom. Keep location on in your camera so we know where the snow is.</p></div>
+  </div>
+  <div class="card" style="margin-top:12px">
+    <div class="poles" aria-hidden="true">
+      <div class="snow"></div>
+      <div class="pole in"></div>
+      <div class="pole on"></div>
+      <span class="lbl" style="left:12px;bottom:16px">snow</span>
+    </div>
+    <p class="small" style="margin-top:4px">The difference between the two poles is the snow depth. A ruler or an avalanche probe standing in the snow works too: just photograph it so the numbers are readable.</p>
+  </div>
+
+  <form class="form" id="f" novalidate>
+    <div class="card">
+      <label class="drop" id="drop" tabindex="0">
+        <span class="ms" id="dropIcon">add_a_photo</span>
+        <span id="dropText"><b>Take or choose the photo</b><br>JPEG from your camera, with both poles in the frame</span>
+        <img id="preview" alt="" hidden>
+        <input type="file" id="photo" name="image" accept="image/*" capture="environment">
+      </label>
+      <div class="loc" id="loc" hidden><span class="ms">location_on</span><span id="locText"></span></div>
+      <div id="manualLoc" hidden>
+        <p class="msg">The photo has no location. Please type where you took it (you can copy the numbers from your maps app).</p>
+        <div class="two">
+          <label class="field"><span>Latitude</span><input type="number" step="any" id="lat" name="lat" placeholder="45.9237" inputmode="decimal"></label>
+          <label class="field"><span>Longitude</span><input type="number" step="any" id="lon" name="lon" placeholder="6.8694" inputmode="decimal"></label>
+        </div>
+        <button type="button" class="btn ghost sm" id="useHere"><span class="ms">my_location</span> Use my current location</button>
+      </div>
+
+      <label class="field" style="margin-top:14px"><span>What is in the photo?</span>
+        <select id="gear" name="gear">
+          <option value="ski_poles">A pair of ski poles</option>
+          <option value="trekking_poles">A pair of trekking poles</option>
+          <option value="skis">A pair of skis</option>
+          <option value="probe">An avalanche probe</option>
+          <option value="ruler">A ruler or tape measure</option>
+        </select></label>
+      <div class="two">
+        <label class="field" id="lenField"><span>Length of one pole</span><div class="unit" data-u="cm"><input type="number" id="length_cm" name="length_cm" min="30" max="450" step="1" placeholder="125" inputmode="numeric"></div></label>
+        <label class="field"><span>Snow depth you measured <span class="opt">(optional)</span></span><div class="unit" data-u="cm"><input type="number" id="depth_cm" name="depth_cm" min="0" max="800" step="1" placeholder="60" inputmode="numeric"></div></label>
+      </div>
+      <div class="two">
+        <label class="field"><span>Your name <span class="opt">(optional, shown on the map)</span></span><input type="text" id="name" name="name" maxlength="40" autocomplete="nickname"></label>
+        <label class="field"><span>E-mail <span class="opt">(optional, to tell you when it is on the map)</span></span><input type="email" id="email" name="email" maxlength="120" autocomplete="email"></label>
+      </div>
+      <label class="chk"><input type="checkbox" id="consent" name="consent" value="true"> I agree that the photo and its location are used to put this snow measurement on the public map. The photo is deleted once it has been read.</label>
+      <div class="msg err" id="err" hidden></div>
+      <div class="actions">
+        <button type="submit" class="btn ski big" id="send"><span class="ms">cloud_upload</span> Send my measurement</button>
+        <span class="small" id="busy" hidden>Sending…</span>
+      </div>
+    </div>
+  </form>
+
+  <div class="card done" id="done" hidden>
+    <span class="ms">check_circle</span>
+    <h2>Thanks! Your measurement is being checked and will appear on the map.</h2>
+    <p>It usually takes a few hours. Measure again tomorrow and we will show how the snow changes.</p>
+    <a class="btn ghost" href="./">See the snow map</a>
+    <button type="button" class="btn tonal" id="again">Send another photo</button>
+  </div>
+
+  <p class="small">Have an Android phone? The free SnowScope app reads the photo on the spot and shows your depth right away. <a data-app-link href="download/">Get the app</a>.</p>
+
+  <footer class="foot"><nav><a href="about/">About</a><a href="editorial/">Editorial policy</a><a href="contact/">Contact</a><a href="./">Snow today</a><a href="pricing.html">Pricing</a><a href="terms/">Terms</a><a href="privacy/">Privacy</a><a href="refund.html">Refund</a></nav><p>Help: <a href="mailto:support@snowscope.app">support@snowscope.app</a> · Business and press: <a href="mailto:contact@snowscope.app">contact@snowscope.app</a> · Privacy requests: <a href="mailto:privacy@snowscope.app">privacy@snowscope.app</a></p>© 2026 SnowScope · Atlas Labs</footer>
+</main>
+<script src="i18n.js"></script>
+<script src="core.js"></script>
+<script>
+(function () {
+  "use strict";
+  var API_BUILD = "https://api.snowscope.app";                      // build_web.py fills it; unreplaced (local file) -> core.js / default
+  var $ = function (id) { return document.getElementById(id); };
+  var state = { file: null, exif: null };
+
+  // ---- tiny EXIF reader: GPS position + DateTimeOriginal from a JPEG (APP1 "Exif"), nothing else is read
+  function readExif(buf) {
+    var d = new DataView(buf), n = d.byteLength, out = { lat: null, lon: null, taken: null };
+    if (n < 4 || d.getUint16(0) !== 0xFFD8) return out;
+    var p = 2;
+    while (p + 4 <= n) {
+      var marker = d.getUint16(p); p += 2;
+      if (marker === 0xFFDA || marker === 0xFFD9) break;          // image data: no EXIF after this
+      if ((marker & 0xFF00) !== 0xFF00) break;
+      var len = d.getUint16(p);
+      if (marker === 0xFFE1 && p + 10 <= n && d.getUint32(p + 2) === 0x45786966) {   // "Exif"
+        parseTiff(d, p + 8, Math.min(n, p + len), out); break;
+      }
+      p += len;
+    }
+    return out;
+  }
+  function parseTiff(d, t, end, out) {
+    if (t + 8 > end) return;
+    var le = d.getUint16(t) === 0x4949;
+    var u16 = function (o) { return d.getUint16(o, le); }, u32 = function (o) { return d.getUint32(o, le); };
+    if (u16(t + 2) !== 42) return;
+    var ifd0 = t + u32(t + 4), gpsOff = null, exifOff = null;
+    function walk(ifd, fn) {
+      if (ifd + 2 > end) return;
+      var cnt = u16(ifd);
+      for (var i = 0; i < cnt; i++) {
+        var e = ifd + 2 + i * 12; if (e + 12 > end) return;
+        fn(u16(e), u16(e + 2), u32(e + 4), e + 8);
+      }
+    }
+    function val(type, cnt, at) {                  // ASCII (2) or RATIONAL (5); longer values live at an offset
+      var size = type === 2 ? 1 : type === 5 ? 8 : 4;
+      var o = size * cnt > 4 ? t + u32(at) : at;
+      if (o + size * cnt > end) return null;
+      if (type === 2) { var s = ""; for (var i = 0; i < cnt; i++) { var c = d.getUint8(o + i); if (!c) break; s += String.fromCharCode(c); } return s; }
+      if (type === 5) { var r = []; for (var j = 0; j < cnt; j++) { var den = u32(o + j * 8 + 4); r.push(den ? u32(o + j * 8) / den : 0); } return r; }
+      return null;
+    }
+    walk(ifd0, function (tag, type, cnt, at) {
+      if (tag === 0x8825) gpsOff = t + u32(at);
+      if (tag === 0x8769) exifOff = t + u32(at);
+    });
+    if (exifOff) walk(exifOff, function (tag, type, cnt, at) { if (tag === 0x9003) out.taken = val(type, cnt, at); });
+    if (gpsOff) {
+      var g = {};
+      walk(gpsOff, function (tag, type, cnt, at) { if (tag >= 1 && tag <= 4) g[tag] = val(type, cnt, at); });
+      var dms = function (a) { return a && a.length === 3 ? a[0] + a[1] / 60 + a[2] / 3600 : null; };
+      var lat = dms(g[2]), lon = dms(g[4]);
+      if (lat != null && lon != null && (lat || lon)) {
+        if (String(g[1] || "N").charAt(0) === "S") lat = -lat;
+        if (String(g[3] || "E").charAt(0) === "W") lon = -lon;
+        if (Math.abs(lat) <= 90 && Math.abs(lon) <= 180) { out.lat = lat; out.lon = lon; }
+      }
+    }
+  }
+
+  // ---- photo chosen
+  function showLoc(kind, text) {
+    var el = $("loc"); el.hidden = false; el.className = "loc " + kind; $("locText").textContent = text;
+    el.querySelector(".ms").textContent = kind === "ok" ? "location_on" : "location_off";
+  }
+  function fmt(v) { return (Math.round(v * 1e4) / 1e4).toString(); }
+  $("photo").addEventListener("change", function () {
+    var f = this.files && this.files[0]; state.file = f || null; state.exif = null; $("err").hidden = true;
+    if (!f) return;
+    var isHeic = /\.hei[cf]$/i.test(f.name) || /hei[cf]/i.test(f.type);
+    if (isHeic) { showErr("This photo is in HEIC format. Please choose a JPEG (on iPhone: Settings > Camera > Formats > Most Compatible)."); }
+    var img = $("preview"); img.src = URL.createObjectURL(f); img.hidden = false;
+    $("dropIcon").hidden = true; $("dropText").innerHTML = "<b>Photo chosen</b> · tap to change";
+    var r = new FileReader();
+    r.onload = function () {
+      try { state.exif = readExif(r.result); } catch (e) { state.exif = null; }
+      var ex = state.exif;
+      if (ex && ex.lat != null) {
+        showLoc("ok", "Location found ✓ (" + fmt(ex.lat) + ", " + fmt(ex.lon) + ")");
+        $("manualLoc").hidden = true;
+      } else {
+        showLoc("warn", "No location in this photo");
+        $("manualLoc").hidden = false;
+      }
+    };
+    r.readAsArrayBuffer(f.slice(0, 256 * 1024));                 // EXIF sits in the first bytes
+  });
+  $("useHere").addEventListener("click", function () {
+    if (!navigator.geolocation) { showErr("Your browser cannot share the location. Please type it."); return; }
+    var b = this; b.disabled = true;
+    navigator.geolocation.getCurrentPosition(function (pos) {
+      $("lat").value = fmt(pos.coords.latitude); $("lon").value = fmt(pos.coords.longitude); b.disabled = false;
+      showLoc("ok", "Using your current location (" + $("lat").value + ", " + $("lon").value + ")");
+    }, function () { b.disabled = false; showErr("Could not get your location. Please type it."); }, { timeout: 15000, maximumAge: 60000 });
+  });
+  $("gear").addEventListener("change", function () {
+    var g = this.value, lf = $("lenField");
+    lf.hidden = g === "ruler";
+    var lab = { ski_poles: "Length of one pole", trekking_poles: "Length of one pole (as set)", skis: "Length of one ski", probe: "Length of the probe" }[g] || "Length";
+    lf.querySelector("span").textContent = lab;
+    $("length_cm").placeholder = { ski_poles: "125", trekking_poles: "120", skis: "170", probe: "240" }[g] || "";
+  });
+  function showErr(t) { var e = $("err"); e.textContent = t; e.hidden = false; e.scrollIntoView({ behavior: "smooth", block: "nearest" }); }
+
+  // ---- send
+  function apiBase() {
+    try { var b = window.SS && SS.base && SS.base("/v1/obs/web_upload"); if (b) return String(b).replace(/\/$/, ""); } catch (e) { /* core not ready */ }
+    return API_BUILD.indexOf("{{") === 0 ? "https://api.snowscope.app" : API_BUILD;
+  }
+  $("f").addEventListener("submit", function (ev) {
+    ev.preventDefault(); $("err").hidden = true;
+    var f = state.file;
+    if (!f) return showErr("Please add the photo first.");
+    if (/\.hei[cf]$/i.test(f.name) || /hei[cf]/i.test(f.type)) return showErr("Please choose a JPEG photo (HEIC cannot be read here).");
+    if (f.size > 12 * 1024 * 1024) return showErr("The photo is too big (over 12 MB). Please send a smaller copy.");
+    var gear = $("gear").value, len = $("length_cm").value;
+    if (gear !== "ruler" && !(parseFloat(len) > 0)) return showErr("Please type the length in cm (it is printed on the pole or ski).");
+    var lat = null, lon = null;
+    if (state.exif && state.exif.lat != null) { lat = state.exif.lat; lon = state.exif.lon; }
+    if (!$("manualLoc").hidden || lat == null) {
+      var ml = parseFloat($("lat").value), mo = parseFloat($("lon").value);
+      if (isFinite(ml) && isFinite(mo)) { lat = ml; lon = mo; }
+    }
+    if (lat == null || lon == null) { $("manualLoc").hidden = false; return showErr("We need to know where the snow is: please type the location."); }
+    if (Math.abs(lat) > 90 || Math.abs(lon) > 180) return showErr("The location looks wrong. Latitude goes from -90 to 90, longitude from -180 to 180.");
+    if (!$("consent").checked) return showErr("Please tick the box so we can put your measurement on the map.");
+    var fd = new FormData();
+    fd.append("image", f, f.name || "snow.jpg");
+    fd.append("gear", gear);
+    if (gear !== "ruler") fd.append("length_cm", len);
+    if ($("depth_cm").value) fd.append("depth_cm", $("depth_cm").value);
+    fd.append("lat", String(lat)); fd.append("lon", String(lon));
+    if (state.exif && state.exif.taken) fd.append("taken_at", state.exif.taken);
+    if ($("name").value.trim()) fd.append("name", $("name").value.trim());
+    if ($("email").value.trim()) fd.append("email", $("email").value.trim());
+    fd.append("consent", "true");
+    fd.append("lang", (document.documentElement.lang || "en").slice(0, 8));
+    $("send").disabled = true; $("busy").hidden = false;
+    fetch(apiBase() + "/v1/obs/web_upload", { method: "POST", body: fd })
+      .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return { s: r.status, j: j }; }); })
+      .then(function (x) {
+        $("send").disabled = false; $("busy").hidden = true;
+        if (x.s === 200 && x.j && x.j.ok) {
+          $("f").hidden = true; $("done").hidden = false; $("done").scrollIntoView({ behavior: "smooth", block: "start" });
+          try { if (window.SS && SS.hit) SS.hit("/measure/sent"); } catch (e) { /* counter only */ }
+          return;
+        }
+        if (x.j && x.j.detail === "location_required") $("manualLoc").hidden = false;
+        if (x.s === 429) return showErr("That is enough for today, thank you! Come back tomorrow.");
+        showErr((x.j && x.j.message) || "Sorry, the photo did not go through. Please try again in a minute.");
+      })
+      .catch(function () { $("send").disabled = false; $("busy").hidden = true; showErr("No connection right now. Please try again in a minute."); });
+  });
+  $("again").addEventListener("click", function () {
+    $("done").hidden = true; $("f").hidden = false; $("f").reset(); state.file = null; state.exif = null;
+    $("preview").hidden = true; $("dropIcon").hidden = false; $("dropText").innerHTML = "<b>Take or choose the photo</b><br>JPEG from your camera, with both poles in the frame";
+    $("loc").hidden = true; $("manualLoc").hidden = true; $("lenField").hidden = false;
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  if (window.SS && SS.start) {
+    SS.start().then(function () {
+      document.querySelectorAll("[data-app-link]").forEach(function (a) { a.href = SS.appUrl(); });
+    }).catch(function () { /* the form works without config */ });
+  }
+})();
+</script>
+</body>
+</html>

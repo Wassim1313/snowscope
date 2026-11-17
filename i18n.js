@@ -45,6 +45,7 @@
     "Allow": ["Autoriser", "Erlauben", "Consenti", "Permitir", "قبل"],
     "No thanks": ["Non merci", "Nein danke", "No grazie", "No, gracias", "لا شكرا"],
     "Cookie choices": ["Choix des cookies", "Cookie-Einstellungen", "Scelte sui cookie", "Opciones de cookies", "اختيارات الكوكيز"],
+    "Measure the snow": ["Mesurer la neige", "Schnee messen", "Misura la neve", "Medir la nieve", "قيس التلج"],
     "The partner map uses cookies; showing it remembers your choice (Cookie choices to change).": ["La carte du partenaire utilise des cookies ; l'afficher retient votre choix (Choix des cookies pour changer).", "Die Partnerkarte nutzt Cookies; beim Anzeigen wird Ihre Wahl gespeichert (ändern unter Cookie-Einstellungen).", "La mappa del partner usa i cookie; mostrarla ricorda la tua scelta (Scelte sui cookie per cambiarla).", "El mapa del socio usa cookies; mostrarlo recuerda tu elección (Opciones de cookies para cambiarla).", "الخريطة ديال الشريك كتستعمل الكوكيز؛ إلا بيّنتيها كنتفكرو الاختيار ديالك (اختيارات الكوكيز باش تبدل)."],
     "Open the list": ["Ouvrir la liste", "Liste öffnen", "Apri l'elenco", "Abrir la lista", "حل اللائحة"],
     "The partner map uses cookies.": ["La carte du partenaire utilise des cookies.", "Die Partnerkarte verwendet Cookies.", "La mappa del partner usa i cookie.", "El mapa del socio usa cookies.", "الخريطة ديال الشريك كتستعمل الكوكيز."],
