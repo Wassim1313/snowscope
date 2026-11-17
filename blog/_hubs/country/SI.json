@@ -118,29 +118,23 @@
 "date": "2026-11-17",
 "quiet": false,
 "modelled_km2": 7340,
-"snow_km2_today": 430,
-"snow_km2_yesterday": 1130,
-"snow_km2_7_days_ago": 150,
-"new_cm_24h_max": 0,
+"snow_km2_today": 490,
+"snow_km2_yesterday": 1100,
+"snow_km2_7_days_ago": 160,
+"new_cm_24h_max": 1,
 "new_cm_72h_max": 2,
-"area_km2_5cm_new_72h": 10,
-"next_3_days_max_cm": 7,
-"next_7_days_max_cm": 7,
+"area_km2_5cm_new_72h": 0,
+"next_3_days_max_cm": 6,
+"next_7_days_max_cm": 8,
 "snowiest_day": "2026-11-19",
-"snowiest_day_cm": 6,
+"snowiest_day_cm": 5,
 "first_snow_day": "2026-11-19",
 "hotspots": [
 {
 "name": "the Julian Alps",
-"new_cm_72h": 10,
+"new_cm_72h": 5,
 "lat": 46.432,
 "lon": 13.819
-},
-{
-"name": "the Kamnik-Savinja Alps",
-"new_cm_72h": 3,
-"lat": 46.36,
-"lon": 14.518
 }
 ],
 "bands": [
@@ -148,73 +142,73 @@
 "from_m": 500,
 "to_m": 1000,
 "mean_depth_cm": 0,
-"snow_cover_pct": 2
+"snow_cover_pct": 3
 },
 {
 "from_m": 1000,
 "to_m": 1500,
 "mean_depth_cm": 0,
-"snow_cover_pct": 9
+"snow_cover_pct": 10
 },
 {
 "from_m": 1500,
 "to_m": 2000,
 "mean_depth_cm": 1,
-"snow_cover_pct": 28
+"snow_cover_pct": 25
 },
 {
 "from_m": 2000,
 "to_m": 2500,
-"mean_depth_cm": 4,
-"snow_cover_pct": 73
+"mean_depth_cm": 5,
+"snow_cover_pct": 72
 }
 ],
 "snow_line_m": 2000,
-"white_share_pct": 6,
+"white_share_pct": 7,
 "resorts": [
-{
-"name": "Vogel",
-"slug": "vogel",
-"depth_cm": 23,
-"new_cm_72h": 2,
-"next_3_days_cm": 2,
-"top_m": 1731
-},
 {
 "name": "Velika planina",
 "slug": "velika_planina",
-"depth_cm": 21,
+"depth_cm": 22,
 "new_cm_72h": 0,
-"next_3_days_cm": 1,
+"next_3_days_cm": 2,
 "top_m": 1664
 },
 {
-"name": "Golte",
-"slug": "golte",
-"depth_cm": 11,
-"new_cm_72h": 0,
+"name": "Vogel",
+"slug": "vogel",
+"depth_cm": 21,
+"new_cm_72h": 3,
 "next_3_days_cm": 1,
-"top_m": 1570
+"top_m": 1731
+},
+{
+"name": "Kope",
+"slug": "kope",
+"depth_cm": 20,
+"new_cm_72h": 0,
+"next_3_days_cm": 0,
+"top_m": 1535
 },
 {
 "name": "Rogla",
 "slug": "rogla",
-"depth_cm": 11,
+"depth_cm": 13,
 "new_cm_72h": 0,
 "next_3_days_cm": 0,
 "top_m": 1511
 },
 {
-"name": "Sella Nevea",
-"slug": "sella_nevea_kanin_sella_nevea_canin_kanin_sella_",
-"depth_cm": 9,
-"new_cm_72h": 4,
-"next_3_days_cm": 9,
-"top_m": 2137
+"name": "Soriška planina",
+"slug": "soriska_planina",
+"depth_cm": 12,
+"new_cm_72h": 1,
+"next_3_days_cm": 0,
+"top_m": 1526
 }
 ],
 "n_resorts": 27,
-"n_resorts_with_snow": 13,
+"n_resorts_with_snow": 15,
 "resort_next_until": "2026-11-20",
 "week2": {
 "week1_max_cm": 9,
@@ -226,8 +220,8 @@
 "from_day": 8,
 "to_day": 14
 },
-"change_vs_yesterday_km2": -700,
-"change_vs_7_days_km2": 280
+"change_vs_yesterday_km2": -610,
+"change_vs_7_days_km2": 330
 }
 }
 }

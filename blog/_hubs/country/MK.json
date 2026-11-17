@@ -97,28 +97,28 @@
 "country_code": "MK",
 "date": "2026-11-17",
 "quiet": false,
-"modelled_km2": 15870,
+"modelled_km2": 15890,
 "snow_km2_today": 50,
 "snow_km2_yesterday": 160,
-"snow_km2_7_days_ago": 10,
+"snow_km2_7_days_ago": 200,
 "new_cm_24h_max": 0,
 "new_cm_72h_max": 1,
 "area_km2_5cm_new_72h": 40,
-"next_3_days_max_cm": 1,
-"next_7_days_max_cm": 10,
+"next_3_days_max_cm": 0,
+"next_7_days_max_cm": 6,
 "snowiest_day": "2026-11-23",
-"snowiest_day_cm": 6,
-"first_snow_day": "2026-11-20",
+"snowiest_day_cm": 5,
+"first_snow_day": "2026-11-21",
 "hotspots": [
 {
 "name": "the Mavrovo mountains",
-"new_cm_72h": 24,
+"new_cm_72h": 25,
 "lat": 41.8,
 "lon": 20.541
 },
 {
 "name": "the Šar Mountains",
-"new_cm_72h": 7,
+"new_cm_72h": 8,
 "lat": 42.137,
 "lon": 20.972
 },
@@ -152,7 +152,7 @@
 "from_m": 2000,
 "to_m": 2500,
 "mean_depth_cm": 0,
-"snow_cover_pct": 11
+"snow_cover_pct": 12
 }
 ],
 "snow_line_m": 2400,
@@ -161,34 +161,27 @@
 {
 "name": "Скијачки центар Попова шапка",
 "slug": "area_north_macedo",
-"depth_cm": 0,
-"new_cm_72h": 7,
-"next_3_days_cm": 4,
+"depth_cm": 1,
+"new_cm_72h": 8,
+"next_3_days_cm": 0,
 "top_m": 2376
-},
-{
-"name": "Хотел Радика",
-"slug": "area_bf101a38",
-"depth_cm": 0,
-"new_cm_72h": 0,
-"next_3_days_cm": 0,
-"top_m": 1271
-},
-{
-"name": "Kruševo",
-"slug": "krusevo",
-"depth_cm": 0,
-"new_cm_72h": 0,
-"next_3_days_cm": 0,
-"top_m": 1406
 }
 ],
 "n_resorts": 8,
-"n_resorts_with_snow": 0,
+"n_resorts_with_snow": 1,
 "resort_next_until": "2026-11-20",
-"week2": null,
+"week2": {
+"week1_max_cm": 2,
+"week2_max_cm": 9,
+"week2_days": [
+"2026-11-25",
+"2026-12-01"
+],
+"from_day": 8,
+"to_day": 14
+},
 "change_vs_yesterday_km2": -110,
-"change_vs_7_days_km2": 40
+"change_vs_7_days_km2": -150
 }
 }
 }

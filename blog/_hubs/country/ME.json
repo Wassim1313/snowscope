@@ -108,27 +108,27 @@
 "modelled_km2": 11370,
 "snow_km2_today": 20,
 "snow_km2_yesterday": 80,
-"snow_km2_7_days_ago": 280,
+"snow_km2_7_days_ago": 1230,
 "new_cm_24h_max": 0,
 "new_cm_72h_max": 0,
 "area_km2_5cm_new_72h": 10,
-"next_3_days_max_cm": 1,
-"next_7_days_max_cm": 15,
+"next_3_days_max_cm": 0,
+"next_7_days_max_cm": 9,
 "snowiest_day": "2026-11-23",
-"snowiest_day_cm": 9,
-"first_snow_day": "2026-11-20",
+"snowiest_day_cm": 5,
+"first_snow_day": "2026-11-21",
 "hotspots": [
 {
 "name": "the Prokletije",
-"new_cm_72h": 21,
+"new_cm_72h": 20,
 "lat": 42.484,
 "lon": 19.872
 },
 {
 "name": "Durmitor",
 "new_cm_72h": 12,
-"lat": 43.15,
-"lon": 19.022
+"lat": 43.114,
+"lon": 19.077
 }
 ],
 "bands": [
@@ -163,18 +163,27 @@
 {
 "name": "Ski centar Savin kuk",
 "slug": "ski_centar_savin_kuk",
-"depth_cm": 15,
-"new_cm_72h": 10,
-"next_3_days_cm": 5,
+"depth_cm": 16,
+"new_cm_72h": 9,
+"next_3_days_cm": 3,
 "top_m": 2175
 }
 ],
 "n_resorts": 3,
 "n_resorts_with_snow": 1,
 "resort_next_until": "2026-11-20",
-"week2": null,
+"week2": {
+"week1_max_cm": 9,
+"week2_max_cm": 34,
+"week2_days": [
+"2026-11-25",
+"2026-12-01"
+],
+"from_day": 8,
+"to_day": 14
+},
 "change_vs_yesterday_km2": -60,
-"change_vs_7_days_km2": -260
+"change_vs_7_days_km2": -1210
 }
 }
 }

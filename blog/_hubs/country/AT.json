@@ -136,35 +136,35 @@
 "date": "2026-11-17",
 "quiet": false,
 "modelled_km2": 52110,
-"snow_km2_today": 15400,
-"snow_km2_yesterday": 19550,
-"snow_km2_7_days_ago": 15260,
-"new_cm_24h_max": 5,
-"new_cm_72h_max": 8,
-"area_km2_5cm_new_72h": 3370,
-"next_3_days_max_cm": 23,
+"snow_km2_today": 17500,
+"snow_km2_yesterday": 19680,
+"snow_km2_7_days_ago": 15560,
+"new_cm_24h_max": 3,
+"new_cm_72h_max": 6,
+"area_km2_5cm_new_72h": 1410,
+"next_3_days_max_cm": 22,
 "next_7_days_max_cm": 47,
-"snowiest_day": "2026-11-21",
-"snowiest_day_cm": 15,
+"snowiest_day": "2026-11-23",
+"snowiest_day_cm": 13,
 "first_snow_day": "2026-11-18",
 "hotspots": [
 {
 "name": "Vorarlberg",
-"new_cm_72h": 14,
-"lat": 47.233,
-"lon": 10.061
+"new_cm_72h": 11,
+"lat": 47.067,
+"lon": 9.699
 },
 {
 "name": "Tyrol",
-"new_cm_72h": 10,
-"lat": 47.188,
-"lon": 11.072
+"new_cm_72h": 7,
+"lat": 47.247,
+"lon": 11.046
 },
 {
 "name": "the Ötztal Alps",
-"new_cm_72h": 8,
-"lat": 47.089,
-"lon": 10.547
+"new_cm_72h": 6,
+"lat": 47.175,
+"lon": 10.521
 }
 ],
 "bands": [
@@ -177,74 +177,74 @@
 {
 "from_m": 1000,
 "to_m": 1500,
-"mean_depth_cm": 0,
-"snow_cover_pct": 12
+"mean_depth_cm": 1,
+"snow_cover_pct": 20
 },
 {
 "from_m": 1500,
 "to_m": 2000,
 "mean_depth_cm": 2,
-"snow_cover_pct": 56
+"snow_cover_pct": 64
 },
 {
 "from_m": 2000,
 "to_m": 2500,
 "mean_depth_cm": 12,
-"snow_cover_pct": 98
+"snow_cover_pct": 96
 },
 {
 "from_m": 2500,
 "to_m": 5000,
-"mean_depth_cm": 24,
+"mean_depth_cm": 23,
 "snow_cover_pct": 100
 }
 ],
-"snow_line_m": 1700,
-"white_share_pct": 30,
+"snow_line_m": 1600,
+"white_share_pct": 34,
 "resorts": [
+{
+"name": "Kaprun",
+"slug": "kaprun_kitzsteinhorn_maiskogel",
+"depth_cm": 66,
+"new_cm_72h": 3,
+"next_3_days_cm": 9,
+"top_m": 3024
+},
+{
+"name": "Weißsee Gletscherwelt",
+"slug": "weisee_gletscherwelt",
+"depth_cm": 58,
+"new_cm_72h": 3,
+"next_3_days_cm": 8,
+"top_m": 2555
+},
 {
 "name": "Kühtai",
 "slug": "kuhtai",
-"depth_cm": 54,
-"new_cm_72h": 9,
-"next_3_days_cm": 15,
+"depth_cm": 53,
+"new_cm_72h": 7,
+"next_3_days_cm": 14,
 "top_m": 2507
+},
+{
+"name": "Rifflsee",
+"slug": "rifflsee",
+"depth_cm": 50,
+"new_cm_72h": 5,
+"next_3_days_cm": 13,
+"top_m": 2804
 },
 {
 "name": "Stubaier Gletscher",
 "slug": "stubaier_gletscher",
-"depth_cm": 51,
-"new_cm_72h": 7,
+"depth_cm": 50,
+"new_cm_72h": 5,
 "next_3_days_cm": 13,
 "top_m": 3208
-},
-{
-"name": "Kaprun",
-"slug": "kaprun_kitzsteinhorn_maiskogel",
-"depth_cm": 49,
-"new_cm_72h": 5,
-"next_3_days_cm": 11,
-"top_m": 3024
-},
-{
-"name": "Bergeralm",
-"slug": "bergeralm",
-"depth_cm": 49,
-"new_cm_72h": 4,
-"next_3_days_cm": 9,
-"top_m": 2175
-},
-{
-"name": "Hochoetz-Kühtai",
-"slug": "hochoetz_kuhtai",
-"depth_cm": 44,
-"new_cm_72h": 9,
-"next_3_days_cm": 15,
-"top_m": 2507
 }
 ],
-"n_resorts": 279,
-"n_resorts_with_snow": 225,
+"n_resorts": 278,
+"n_resorts_with_snow": 232,
 "resort_next_until": "2026-11-20",
 "week2": {
 "week1_max_cm": 32,
@@ -256,8 +256,8 @@
 "from_day": 8,
 "to_day": 14
 },
-"change_vs_yesterday_km2": -4150,
-"change_vs_7_days_km2": 140
+"change_vs_yesterday_km2": -2180,
+"change_vs_7_days_km2": 1940
 }
 }
 }

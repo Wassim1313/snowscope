@@ -117,36 +117,36 @@
 "country_code": "SK",
 "date": "2026-11-17",
 "quiet": false,
-"modelled_km2": 18580,
-"snow_km2_today": 1830,
-"snow_km2_yesterday": 2020,
-"snow_km2_7_days_ago": 1710,
-"new_cm_24h_max": 4,
-"new_cm_72h_max": 5,
-"area_km2_5cm_new_72h": 280,
-"next_3_days_max_cm": 7,
-"next_7_days_max_cm": 12,
-"snowiest_day": "2026-11-23",
-"snowiest_day_cm": 4,
+"modelled_km2": 18610,
+"snow_km2_today": 2340,
+"snow_km2_yesterday": 2410,
+"snow_km2_7_days_ago": 2600,
+"new_cm_24h_max": 6,
+"new_cm_72h_max": 7,
+"area_km2_5cm_new_72h": 680,
+"next_3_days_max_cm": 9,
+"next_7_days_max_cm": 15,
+"snowiest_day": "2026-11-19",
+"snowiest_day_cm": 5,
 "first_snow_day": "2026-11-18",
 "hotspots": [
 {
 "name": "the High Tatras",
-"new_cm_72h": 8,
+"new_cm_72h": 12,
 "lat": 49.164,
-"lon": 20.029
-},
-{
-"name": "the Low Tatras",
-"new_cm_72h": 8,
-"lat": 48.939,
-"lon": 19.585
+"lon": 19.75
 },
 {
 "name": "Malá Fatra",
-"new_cm_72h": 7,
-"lat": 49.191,
-"lon": 19.027
+"new_cm_72h": 10,
+"lat": 48.885,
+"lon": 19.087
+},
+{
+"name": "the Low Tatras",
+"new_cm_72h": 5,
+"lat": 48.795,
+"lon": 19.903
 }
 ],
 "bands": [
@@ -154,29 +154,29 @@
 "from_m": 500,
 "to_m": 1000,
 "mean_depth_cm": 0,
-"snow_cover_pct": 3
+"snow_cover_pct": 5
 },
 {
 "from_m": 1000,
 "to_m": 1500,
-"mean_depth_cm": 1,
-"snow_cover_pct": 39
+"mean_depth_cm": 2,
+"snow_cover_pct": 50
 },
 {
 "from_m": 1500,
 "to_m": 2000,
-"mean_depth_cm": 9,
-"snow_cover_pct": 99
+"mean_depth_cm": 12,
+"snow_cover_pct": 100
 },
 {
 "from_m": 2000,
 "to_m": 2500,
-"mean_depth_cm": 17,
+"mean_depth_cm": 20,
 "snow_cover_pct": 100
 }
 ],
 "snow_line_m": 1200,
-"white_share_pct": 10,
+"white_share_pct": 13,
 "resorts": [
 {
 "name": "Ski centrum Dedinky",
@@ -187,44 +187,53 @@
 "top_m": 871
 },
 {
+"name": "Ski Grúniky",
+"slug": "ski_gruniky",
+"depth_cm": 31,
+"new_cm_72h": 2,
+"next_3_days_cm": 1,
+"top_m": 973
+},
+{
 "name": "Vernár",
 "slug": "vernar_studnicky",
-"depth_cm": 36,
-"new_cm_72h": 1,
+"depth_cm": 31,
+"new_cm_72h": 2,
 "next_3_days_cm": 0,
 "top_m": 1001
 },
 {
 "name": "Kubínská hola",
 "slug": "kubinska_hola",
-"depth_cm": 27,
-"new_cm_72h": 3,
-"next_3_days_cm": 3,
+"depth_cm": 29,
+"new_cm_72h": 5,
+"next_3_days_cm": 2,
 "top_m": 1390
 },
 {
 "name": "Ski Zábava Hruštín",
 "slug": "ski_zabava_hrustin",
-"depth_cm": 27,
-"new_cm_72h": 3,
+"depth_cm": 29,
+"new_cm_72h": 4,
 "next_3_days_cm": 2,
 "top_m": 1141
-},
-{
-"name": "Vrátna",
-"slug": "vratna",
-"depth_cm": 23,
-"new_cm_72h": 7,
-"next_3_days_cm": 9,
-"top_m": 1529
 }
 ],
 "n_resorts": 107,
-"n_resorts_with_snow": 34,
+"n_resorts_with_snow": 44,
 "resort_next_until": "2026-11-20",
-"week2": null,
-"change_vs_yesterday_km2": -190,
-"change_vs_7_days_km2": 120
+"week2": {
+"week1_max_cm": 4,
+"week2_max_cm": 27,
+"week2_days": [
+"2026-11-25",
+"2026-12-01"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": -70,
+"change_vs_7_days_km2": -260
 }
 }
 }

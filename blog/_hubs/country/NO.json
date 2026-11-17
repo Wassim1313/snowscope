@@ -130,29 +130,29 @@
 "date": "2026-11-17",
 "quiet": false,
 "modelled_km2": 282220,
-"snow_km2_today": 251050,
-"snow_km2_yesterday": 246310,
-"snow_km2_7_days_ago": 183090,
-"new_cm_24h_max": 4,
-"new_cm_72h_max": 37,
-"area_km2_5cm_new_72h": 122420,
-"next_3_days_max_cm": 19,
-"next_7_days_max_cm": 39,
-"snowiest_day": "2026-11-20",
-"snowiest_day_cm": 16,
+"snow_km2_today": 246210,
+"snow_km2_yesterday": 245320,
+"snow_km2_7_days_ago": 181980,
+"new_cm_24h_max": 10,
+"new_cm_72h_max": 36,
+"area_km2_5cm_new_72h": 140370,
+"next_3_days_max_cm": 21,
+"next_7_days_max_cm": 52,
+"snowiest_day": "2026-11-24",
+"snowiest_day_cm": 20,
 "first_snow_day": "2026-11-18",
 "hotspots": [
 {
 "name": "Hardangervidda",
-"new_cm_72h": 56,
+"new_cm_72h": 50,
 "lat": 60.476,
 "lon": 6.437
 },
 {
 "name": "Jotunheimen",
-"new_cm_72h": 48,
-"lat": 61.552,
-"lon": 6.719
+"new_cm_72h": 47,
+"lat": 61.628,
+"lon": 6.876
 }
 ],
 "bands": [
@@ -160,7 +160,7 @@
 "from_m": 0,
 "to_m": 500,
 "mean_depth_cm": 7,
-"snow_cover_pct": 80
+"snow_cover_pct": 77
 },
 {
 "from_m": 500,
@@ -171,31 +171,31 @@
 {
 "from_m": 1000,
 "to_m": 1500,
-"mean_depth_cm": 24,
+"mean_depth_cm": 25,
 "snow_cover_pct": 100
 },
 {
 "from_m": 1500,
 "to_m": 2000,
-"mean_depth_cm": 28,
+"mean_depth_cm": 30,
 "snow_cover_pct": 100
 },
 {
 "from_m": 2000,
 "to_m": 2500,
-"mean_depth_cm": 38,
+"mean_depth_cm": 42,
 "snow_cover_pct": 100
 }
 ],
 "snow_line_m": 0,
-"white_share_pct": 89,
+"white_share_pct": 87,
 "resorts": [
 {
 "name": "Riksgränsen",
 "slug": "riksgransen",
-"depth_cm": 171,
-"new_cm_72h": 3,
-"next_3_days_cm": 5,
+"depth_cm": 170,
+"new_cm_72h": 4,
+"next_3_days_cm": 1,
 "top_m": 900
 },
 {
@@ -203,7 +203,7 @@
 "slug": "sulitjelma_fjellandsby",
 "depth_cm": 127,
 "new_cm_72h": 8,
-"next_3_days_cm": 5,
+"next_3_days_cm": 2,
 "top_m": 542
 },
 {
@@ -211,32 +211,41 @@
 "slug": "troms_alpinpark_norway",
 "depth_cm": 91,
 "new_cm_72h": 10,
-"next_3_days_cm": 3,
-"top_m": null
-},
-{
-"name": "Steilia",
-"slug": "steilia",
-"depth_cm": 60,
-"new_cm_72h": 3,
-"next_3_days_cm": 2,
+"next_3_days_cm": 4,
 "top_m": null
 },
 {
 "name": "Galdhøpiggen Sommerskisenter",
 "slug": "galdhpiggen_sommerskisenter",
-"depth_cm": 59,
-"new_cm_72h": 12,
-"next_3_days_cm": 6,
+"depth_cm": 63,
+"new_cm_72h": 19,
+"next_3_days_cm": 3,
 "top_m": 2180
+},
+{
+"name": "Steilia",
+"slug": "steilia",
+"depth_cm": 59,
+"new_cm_72h": 5,
+"next_3_days_cm": 1,
+"top_m": null
 }
 ],
 "n_resorts": 155,
-"n_resorts_with_snow": 141,
+"n_resorts_with_snow": 143,
 "resort_next_until": "2026-11-20",
-"week2": null,
-"change_vs_yesterday_km2": 4740,
-"change_vs_7_days_km2": 67960
+"week2": {
+"week1_max_cm": 41,
+"week2_max_cm": 40,
+"week2_days": [
+"2026-11-25",
+"2026-12-01"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 890,
+"change_vs_7_days_km2": 64230
 }
 }
 }

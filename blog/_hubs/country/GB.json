@@ -123,76 +123,92 @@
 "country_code": "GB",
 "date": "2026-11-17",
 "quiet": false,
-"modelled_km2": 37420,
-"snow_km2_today": 8380,
-"snow_km2_yesterday": 5740,
-"snow_km2_7_days_ago": 1570,
-"new_cm_24h_max": 12,
-"new_cm_72h_max": 12,
-"area_km2_5cm_new_72h": 6130,
-"next_3_days_max_cm": 6,
-"next_7_days_max_cm": 11,
+"modelled_km2": 37520,
+"snow_km2_today": 5870,
+"snow_km2_yesterday": 4020,
+"snow_km2_7_days_ago": 760,
+"new_cm_24h_max": 11,
+"new_cm_72h_max": 11,
+"area_km2_5cm_new_72h": 3120,
+"next_3_days_max_cm": 4,
+"next_7_days_max_cm": 8,
 "snowiest_day": "2026-11-18",
-"snowiest_day_cm": 5,
+"snowiest_day_cm": 4,
 "first_snow_day": "2026-11-18",
 "hotspots": [
 {
-"name": "the North Pennines",
-"new_cm_72h": 27,
-"lat": 54.823,
-"lon": -2.224
-},
-{
 "name": "the Southern Uplands",
-"new_cm_72h": 20,
-"lat": 55.394,
-"lon": -3.225
+"new_cm_72h": 22,
+"lat": 55.421,
+"lon": -3.33
 },
 {
-"name": "the Cairngorms",
+"name": "the North Pennines",
 "new_cm_72h": 18,
-"lat": 57.131,
-"lon": -3.459
+"lat": 54.8,
+"lon": -2.232
+},
+{
+"name": "Glencoe",
+"new_cm_72h": 16,
+"lat": 56.276,
+"lon": -4.75
 }
 ],
 "bands": [
 {
 "from_m": 0,
 "to_m": 500,
-"mean_depth_cm": 1,
-"snow_cover_pct": 14
+"mean_depth_cm": 0,
+"snow_cover_pct": 6
 },
 {
 "from_m": 500,
 "to_m": 1000,
 "mean_depth_cm": 2,
-"snow_cover_pct": 42
+"snow_cover_pct": 39
 },
 {
 "from_m": 1000,
 "to_m": 1500,
-"mean_depth_cm": 8,
+"mean_depth_cm": 5,
 "snow_cover_pct": 100
 }
 ],
 "snow_line_m": 700,
-"white_share_pct": 22,
+"white_share_pct": 16,
 "resorts": [
+{
+"name": "Weardale Ski Club",
+"slug": "weardale_ski_club",
+"depth_cm": 15,
+"new_cm_72h": 17,
+"next_3_days_cm": 1,
+"top_m": 658
+},
+{
+"name": "Lowther Hills",
+"slug": "lowther_hills",
+"depth_cm": 15,
+"new_cm_72h": 14,
+"next_3_days_cm": 0,
+"top_m": 704
+},
 {
 "name": "Nevis Range",
 "slug": "nevis_range",
 "depth_cm": 15,
 "new_cm_72h": 5,
-"next_3_days_cm": 3,
+"next_3_days_cm": 2,
 "top_m": 1190
 },
 {
-"name": "Weardale Ski Club",
-"slug": "weardale_ski_club",
+"name": "Yad Moss",
+"slug": "yad_moss",
 "depth_cm": 12,
-"new_cm_72h": 19,
+"new_cm_72h": 14,
 "next_3_days_cm": 0,
-"top_m": 658
+"top_m": 719
 },
 {
 "name": "Glencoe",
@@ -201,30 +217,23 @@
 "new_cm_72h": 7,
 "next_3_days_cm": 3,
 "top_m": 1079
-},
-{
-"name": "Allenheads",
-"slug": "allenheads",
-"depth_cm": 10,
-"new_cm_72h": 27,
-"next_3_days_cm": 0,
-"top_m": 447
-},
-{
-"name": "Yad Moss",
-"slug": "yad_moss",
-"depth_cm": 10,
-"new_cm_72h": 16,
-"next_3_days_cm": 0,
-"top_m": 719
 }
 ],
 "n_resorts": 30,
-"n_resorts_with_snow": 11,
+"n_resorts_with_snow": 9,
 "resort_next_until": "2026-11-20",
-"week2": null,
-"change_vs_yesterday_km2": 2640,
-"change_vs_7_days_km2": 6810
+"week2": {
+"week1_max_cm": 5,
+"week2_max_cm": 5,
+"week2_days": [
+"2026-11-25",
+"2026-12-01"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 1850,
+"change_vs_7_days_km2": 5110
 }
 }
 }

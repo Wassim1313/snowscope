@@ -130,29 +130,29 @@
 "date": "2026-11-17",
 "quiet": false,
 "modelled_km2": 31030,
-"snow_km2_today": 12830,
-"snow_km2_yesterday": 16510,
-"snow_km2_7_days_ago": 12870,
-"new_cm_24h_max": 29,
-"new_cm_72h_max": 48,
-"area_km2_5cm_new_72h": 11300,
-"next_3_days_max_cm": 70,
-"next_7_days_max_cm": 85,
-"snowiest_day": "2026-11-20",
-"snowiest_day_cm": 29,
+"snow_km2_today": 14750,
+"snow_km2_yesterday": 16170,
+"snow_km2_7_days_ago": 12930,
+"new_cm_24h_max": 25,
+"new_cm_72h_max": 45,
+"area_km2_5cm_new_72h": 11480,
+"next_3_days_max_cm": 86,
+"next_7_days_max_cm": 129,
+"snowiest_day": "2026-11-19",
+"snowiest_day_cm": 32,
 "first_snow_day": "2026-11-18",
 "hotspots": [
 {
 "name": "the Valais Alps",
-"new_cm_72h": 92,
+"new_cm_72h": 85,
 "lat": 45.96,
 "lon": 7.017
 },
 {
 "name": "the Bernese Oberland",
-"new_cm_72h": 54,
-"lat": 46.41,
-"lon": 7.535
+"new_cm_72h": 46,
+"lat": 46.468,
+"lon": 7.988
 }
 ],
 "bands": [
@@ -166,73 +166,73 @@
 "from_m": 1000,
 "to_m": 1500,
 "mean_depth_cm": 0,
-"snow_cover_pct": 5
+"snow_cover_pct": 11
 },
 {
 "from_m": 1500,
 "to_m": 2000,
 "mean_depth_cm": 2,
-"snow_cover_pct": 52
+"snow_cover_pct": 74
 },
 {
 "from_m": 2000,
 "to_m": 2500,
 "mean_depth_cm": 8,
-"snow_cover_pct": 96
+"snow_cover_pct": 100
 },
 {
 "from_m": 2500,
 "to_m": 5000,
-"mean_depth_cm": 22,
+"mean_depth_cm": 21,
 "snow_cover_pct": 100
 }
 ],
-"snow_line_m": 1700,
-"white_share_pct": 41,
+"snow_line_m": 1600,
+"white_share_pct": 48,
 "resorts": [
-{
-"name": "Glacier 3000",
-"slug": "glacier_3000",
-"depth_cm": 46,
-"new_cm_72h": 67,
-"next_3_days_cm": 91,
-"top_m": 2931
-},
 {
 "name": "Zermatt",
 "slug": "zermatt",
-"depth_cm": 45,
-"new_cm_72h": 42,
-"next_3_days_cm": 60,
+"depth_cm": 47,
+"new_cm_72h": 41,
+"next_3_days_cm": 78,
 "top_m": 3872
 },
 {
 "name": "Jungfraujoch Snow Fun Park",
 "slug": "jungfraujoch_snow_fun_park",
-"depth_cm": 44,
-"new_cm_72h": 44,
-"next_3_days_cm": 71,
+"depth_cm": 43,
+"new_cm_72h": 40,
+"next_3_days_cm": 91,
 "top_m": 3461
+},
+{
+"name": "Glacier 3000",
+"slug": "glacier_3000",
+"depth_cm": 42,
+"new_cm_72h": 55,
+"next_3_days_cm": 111,
+"top_m": 2931
 },
 {
 "name": "Ovronnaz",
 "slug": "ovronnaz",
-"depth_cm": 40,
-"new_cm_72h": 54,
-"next_3_days_cm": 78,
+"depth_cm": 41,
+"new_cm_72h": 46,
+"next_3_days_cm": 94,
 "top_m": 2456
 },
 {
-"name": "Saas Grund",
-"slug": "saas_grund",
-"depth_cm": 37,
-"new_cm_72h": 28,
-"next_3_days_cm": 41,
-"top_m": 3142
+"name": "Lauchernalp",
+"slug": "lauchernalp",
+"depth_cm": 40,
+"new_cm_72h": 34,
+"next_3_days_cm": 78,
+"top_m": 3084
 }
 ],
 "n_resorts": 280,
-"n_resorts_with_snow": 195,
+"n_resorts_with_snow": 220,
 "resort_next_until": "2026-11-20",
 "week2": {
 "week1_max_cm": 80,
@@ -244,8 +244,8 @@
 "from_day": 8,
 "to_day": 14
 },
-"change_vs_yesterday_km2": -3680,
-"change_vs_7_days_km2": -40
+"change_vs_yesterday_km2": -1420,
+"change_vs_7_days_km2": 1820
 }
 }
 }

@@ -634,7 +634,7 @@
     {
      "name": "Kingvale",
      "slug": "kingvale",
-     "now_cm": 16,
+     "now_cm": 18,
      "usual_cm": 4,
      "high_cm": 42,
      "week_ago_cm": 0,
@@ -644,7 +644,7 @@
       11,
       12
      ],
-     "ratio_pct": 400
+     "ratio_pct": 450
     }
    ],
    "n": 1,
@@ -771,7 +771,7 @@
   }
  },
  "words_en": 1135,
- "indexable": false,
+ "indexable": true,
  "main": {
   "slug": "kingvale",
   "name": "Kingvale",
@@ -912,7 +912,6 @@
  },
  "publish_utc": "2026-11-16T17:56:41Z",
  "cover": {},
- "noindex_why": "quality: overlap 32 % with us-west-2-week-snow-forecast-maps-12-november-2026",
  "rewrite": {
   "v": 1,
   "story": "storm_next",
@@ -920,13 +919,11 @@
   "usd": 0.0
  },
  "quality": {
-  "ok": false,
-  "why": [
-   "overlap 32 % with us-west-2-week-snow-forecast-maps-12-november-2026"
-  ],
+  "ok": true,
+  "why": [],
   "words": 1135,
-  "overlap": 31.7,
-  "with": "us-west-2-week-snow-forecast-maps-12-november-2026",
+  "overlap": 18.7,
+  "with": "us-northeast-2-week-snow-forecast-maps-12-november-2026",
   "langs_off": [],
   "score": 155.8,
   "intent": "resort:kingvale|storm_next",

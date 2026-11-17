@@ -490,7 +490,7 @@
   }
  },
  "words_en": 617,
- "indexable": false,
+ "indexable": true,
  "main": {
   "slug": "bonneval_sur_arc",
   "name": "Bonneval-sur-Arc",
@@ -607,21 +607,37 @@
   "llm": false,
   "usd": 0.0
  },
- "noindex_why": "quality: overlap 52 % with alps-snow-depth-today-3-november-2026",
  "quality": {
-  "ok": false,
-  "why": [
-   "overlap 52 % with alps-snow-depth-today-3-november-2026"
-  ],
+  "ok": true,
+  "why": [],
   "words": 617,
-  "overlap": 51.8,
-  "with": "alps-snow-depth-today-3-november-2026",
-  "langs_off": [
-   "fr"
-  ],
+  "overlap": 19.0,
+  "with": "us-west-snow-depth-today-3-november-2026",
+  "langs_off": [],
   "score": 97.4,
   "intent": "resort:bonneval_sur_arc|height_gap",
   "guide": false,
   "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "hero",
+  "files": {
+   "en": [
+    "blog/media/2026/11/alps-snow-depth-today-6-november-2026/cover-en.webp",
+    "blog/media/2026/11/alps-snow-depth-today-6-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/alps-snow-depth-today-6-november-2026/cover-fr.webp",
+    "blog/media/2026/11/alps-snow-depth-today-6-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": {
+   "source": "Wikimedia Commons, Florian Pépellin",
+   "link": "https://commons.wikimedia.org/wiki/File:Bonneval-sur-Arc_et_piste_de_ski_de_fond_(f%C3%A9vrier_2023)_2.JPG",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "photo": null
  }
 }

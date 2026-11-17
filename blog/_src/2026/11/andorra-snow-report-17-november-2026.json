@@ -152,12 +152,20 @@
   },
   "neighbours": [
    {
+    "cc": "ES",
+    "name": "Spain",
+    "white_share_pct": 0,
+    "leader": "Tavascan",
+    "leader_cm": 6,
+    "next_7_days_max_cm": 5
+   },
+   {
     "cc": "FR",
     "name": "France",
     "white_share_pct": 10,
     "leader": "La Grave",
-    "leader_cm": 113,
-    "next_7_days_max_cm": 87
+    "leader_cm": 110,
+    "next_7_days_max_cm": 122
    }
   ],
   "glacier": false,
@@ -239,7 +247,7 @@
     {
      "h": "The neighbours today",
      "p": [
-      "For comparison, the neighbours on the same day: France: 10 % white, deepest La Grave with 113 cm, up to 87 cm in the week ahead."
+      "For comparison, the neighbours on the same day: Spain: 0 % white, deepest Tavascan with 6 cm, up to 5 cm in the week ahead; France: 10 % white, deepest La Grave with 110 cm, up to 122 cm in the week ahead."
      ]
     },
     {
@@ -382,7 +390,7 @@
    "rewrite": "requality"
   }
  },
- "words_en": 432,
+ "words_en": 448,
  "indexable": false,
  "main": {
   "slug": "ordino_arcalis",
@@ -460,18 +468,18 @@
   "llm": false,
   "usd": 0.0
  },
- "noindex_why": "quality: words 432 < 600; no table or chart of its own",
+ "noindex_why": "quality: words 448 < 600; no table or chart of its own",
  "quality": {
   "ok": false,
   "why": [
-   "words 432 < 600",
+   "words 448 < 600",
    "no table or chart of its own"
   ],
-  "words": 432,
-  "overlap": 15.9,
+  "words": 448,
+  "overlap": 15.8,
   "with": "france-snow-report-16-november-2026",
   "langs_off": [],
-  "score": 61.7,
+  "score": 62.5,
   "intent": "cc:AD|two_weeks",
   "guide": false,
   "v": 1

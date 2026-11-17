@@ -135,35 +135,35 @@
 "country_code": "BG",
 "date": "2026-11-17",
 "quiet": false,
-"modelled_km2": 31230,
-"snow_km2_today": 360,
-"snow_km2_yesterday": 690,
-"snow_km2_7_days_ago": 330,
+"modelled_km2": 31250,
+"snow_km2_today": 400,
+"snow_km2_yesterday": 720,
+"snow_km2_7_days_ago": 740,
 "new_cm_24h_max": 1,
 "new_cm_72h_max": 6,
-"area_km2_5cm_new_72h": 310,
-"next_3_days_max_cm": 1,
-"next_7_days_max_cm": 8,
+"area_km2_5cm_new_72h": 320,
+"next_3_days_max_cm": 0,
+"next_7_days_max_cm": 7,
 "snowiest_day": "2026-11-23",
 "snowiest_day_cm": 5,
-"first_snow_day": "2026-11-20",
+"first_snow_day": "2026-11-21",
 "hotspots": [
 {
 "name": "the Rila Mountains",
 "new_cm_72h": 10,
-"lat": 42.128,
-"lon": 23.529
+"lat": 42.106,
+"lon": 23.572
 },
 {
 "name": "the Pirin Mountains",
 "new_cm_72h": 9,
-"lat": 41.786,
-"lon": 23.377
+"lat": 41.75,
+"lon": 23.493
 },
 {
 "name": "Vitosha",
-"new_cm_72h": 3,
-"lat": 42.569,
+"new_cm_72h": 4,
+"lat": 42.565,
 "lon": 23.28
 }
 ],
@@ -184,13 +184,13 @@
 "from_m": 1500,
 "to_m": 2000,
 "mean_depth_cm": 0,
-"snow_cover_pct": 0
+"snow_cover_pct": 1
 },
 {
 "from_m": 2000,
 "to_m": 2500,
 "mean_depth_cm": 1,
-"snow_cover_pct": 36
+"snow_cover_pct": 37
 },
 {
 "from_m": 2500,
@@ -206,8 +206,8 @@
 "name": "Bansko",
 "slug": "bansko",
 "depth_cm": 4,
-"new_cm_72h": 9,
-"next_3_days_cm": 2,
+"new_cm_72h": 8,
+"next_3_days_cm": 3,
 "top_m": 2516
 },
 {
@@ -223,24 +223,33 @@
 "slug": "kartala",
 "depth_cm": 2,
 "new_cm_72h": 6,
-"next_3_days_cm": 1,
+"next_3_days_cm": 0,
 "top_m": 2245
 },
 {
 "name": "Dobrinishte",
 "slug": "dobrinishte",
 "depth_cm": 1,
-"new_cm_72h": 7,
-"next_3_days_cm": 1,
+"new_cm_72h": 6,
+"next_3_days_cm": 0,
 "top_m": 2226
 }
 ],
 "n_resorts": 11,
 "n_resorts_with_snow": 4,
 "resort_next_until": "2026-11-20",
-"week2": null,
-"change_vs_yesterday_km2": -330,
-"change_vs_7_days_km2": 30
+"week2": {
+"week1_max_cm": 1,
+"week2_max_cm": 2,
+"week2_days": [
+"2026-11-25",
+"2026-12-01"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": -320,
+"change_vs_7_days_km2": -340
 }
 }
 }
