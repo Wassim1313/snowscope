@@ -1788,7 +1788,7 @@
   const footer = () => {
     const c = (SS.S.cfg && SS.S.cfg.contact) || {};
     return '<nav class="flinks"><a href="' + BASE + 'resorts/">All resorts</a><a href="' + BASE + 'about/">About</a><a href="' + BASE + 'editorial/">Editorial policy</a><a href="' + BASE + 'contact/">Contact</a>' +
-      (SS.Auth.enabled() ? '<a href="' + BASE + 'account.html">Your account</a>' : "") + '<a href="' + BASE + 'pricing.html">Pricing</a><a href="' + BASE + 'terms/">Terms</a><a href="' + BASE + 'privacy/">Privacy</a><a href="' + BASE + 'refund.html">Refund</a><a href="' + BASE + 'sources.html">Credits</a>' +
+      (SS.Auth.enabled() ? '<a href="' + BASE + 'account.html">Your account</a>' : "") + '<a href="' + BASE + 'pricing.html">Pricing</a><a href="' + BASE + 'terms/">Terms</a><a href="' + BASE + 'privacy/">Privacy</a><a href="' + BASE + 'refund.html">Refund</a><a href="' + BASE + 'sources.html">Credits</a><a href="#" data-pcchoices>Cookie choices</a>' +
       (c.support ? '<a href="mailto:' + esc(c.support) + '">Help</a>' : "") + '<a href="#" data-ad-choices hidden>Cookie settings</a>' +
       '<span>Hotel links marked “Partner” may earn us a commission. © 2026 SnowScope · Atlas Labs</span></nav>';
   };
@@ -2788,8 +2788,8 @@
         sb.innerHTML = '<div class="stayask still"><span class="ms">hotel</span><p>Best prices for your dates on our partner\'s map.</p><div class="acts3">' +
           '<button class="btn ink" type="button" data-stayshow><span class="ms">map</span>Show places to stay</button>' +
           '<a class="btn tonal" target="_blank" rel="sponsored noopener" href="' + esc(stayAllez(o, null)) + '"><span class="ms">open_in_new</span>Open the list</a></div>' +
-          '<small class="stayck">The partner map uses cookies.</small></div>';
-        sb.querySelector("[data-stayshow]").onclick = () => { consent = true; SS.hit("/ad/stay22/" + (d.dataset.where || "panel") + "/consent_tap", "stay22"); load(); };
+          '<small class="stayck">The partner map uses cookies; showing it remembers your choice (Cookie choices to change).</small></div>';
+        sb.querySelector("[data-stayshow]").onclick = () => { consent = true; SS.hit("/ad/stay22/" + (d.dataset.where || "panel") + "/consent_tap", "stay22"); if (SS.partnerSet) SS.partnerSet(true, "map_tap"); load(); };
         if (out) out.href = stayAllez(o, null);
         if (!watching) { watching = true; SS.stayConsentWatch(() => { consent = true; load(); }); }
       };

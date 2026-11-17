@@ -408,6 +408,7 @@
     europe() { try { return /^(Europe|Atlantic\/(Canary|Madeira|Azores|Reykjavik|Faroe))/.test(Intl.DateTimeFormat().resolvedOptions().timeZone || ""); } catch { return true; } },
     start() {
       if (this.loaded || this.waiting || !this.want()) return;
+      if (this.europe() && PC.granted()) { this.load(); return; }
       this.waiting = true;
       const go = () => { this.waiting = false; if (this.want()) this.load(); };
       let tries = 0;
@@ -421,7 +422,7 @@
           });
         } else if (++tries < 16) setTimeout(poll, 500);
         else if (!this.europe()) go();                   // no consent tool after 8 s: outside Europe only
-        else this.waiting = false;
+        else { this.waiting = false; PC.ask(); }         // Europe, no tool: our own partner prompt
       };
       poll();
     },
@@ -436,11 +437,61 @@
     },
   };
 
+  // ------------------------------------------------------------------ partner consent (owner 2026-11-17: Stay22 loaded
+  // for < 10 % of visitors). In Europe the Stay22 map / script waited for Google's consent message (TCF), which is not
+  // served on this site (AdSense not approved) -> European visitors never loaded Stay22. Own prompt, only when no TCF
+  // tool answers: equal "Allow" / "No thanks" buttons, choice kept in this browser (localStorage ss_pc = {v, t}),
+  // asked again 30 days after a "No", changeable any time ("Cookie choices" link -> SS.partnerChoices()).
+  // Scope: the travel partner (Stay22) only; Google ads / analytics keep Consent Mode as before.
+  const PC = {
+    get() { const v = store.get("ss_pc"); return v && (v.v === "y" || v.v === "n") ? v : null; },
+    granted() { const v = this.get(); return !!(v && v.v === "y"); },
+    set(yes, via) {
+      store.set("ss_pc", { v: yes ? "y" : "n", t: Date.now() });
+      hit("/ad/stay22/consent/" + (yes ? "allow" : "deny") + "/" + (via || "card"), "stay22");
+      document.dispatchEvent(new CustomEvent("ss:pconsent", { detail: { yes } }));
+      if (yes) { LMA.waiting = false; LMA.start(); }
+    },
+    ask() {                                            // a Stay22 surface exists, no TCF tool, Europe, no recent answer
+      const v = this.get();
+      if (v && (v.v === "y" || Date.now() - v.t < 30 * 864e5)) return;
+      const c = S.cfg && S.cfg.stay22;
+      if (!c || !c.aid || S.noAds || NOADS || !LMA.europe() || document.getElementById("pcCard") || typeof window.__tcfapi === "function") return;
+      if (!document.getElementById("pcCss")) {
+        const st = document.createElement("style");
+        st.id = "pcCss";
+        st.textContent = ".pccard{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:9000;" +
+          "width:min(520px,calc(100vw - 24px));box-sizing:border-box;background:var(--surface,#fff);color:var(--ink,#0B1220);border:1px solid var(--outline,#D3DAE3);" +
+          "border-radius:20px;box-shadow:0 12px 40px rgba(11,18,32,.22);padding:16px 16px 12px;font:inherit;animation:pcup .35s ease-out}" +
+          "@keyframes pcup{from{transform:translate(-50%,24px);opacity:0}to{transform:translate(-50%,0);opacity:1}}" +
+          ".pccard .pcin{display:flex;gap:12px;align-items:flex-start}.pccard .pci{font-size:30px;color:var(--accent,#1463F3)}" +
+          ".pccard b{display:block;font-size:17px;margin:2px 0 4px}.pccard p{margin:0;font-size:14px;line-height:1.4;color:var(--ink2,#364152)}" +
+          ".pccard .pcbtn{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.pccard .pcbtn .btn{justify-content:center;min-height:44px;font-weight:700}" +
+          ".pccard .pcmore{display:inline-block;margin-top:8px;font-size:12px;color:var(--ink3,#5A6577)}";
+        document.head.appendChild(st);
+      }
+      const el = document.createElement("div");
+      el.id = "pcCard"; el.className = "pccard"; el.setAttribute("role", "dialog"); el.setAttribute("aria-label", "Partner cookies");
+      el.innerHTML = '<div class="pcin"><span class="ms pci">hotel</span><div class="pctx"><b>See hotel prices near the slopes?</b>' +
+        "<p>SnowScope is free. Our travel partner Stay22 shows live prices for places to stay and uses cookies to do it.</p></div></div>" +
+        '<div class="pcbtn"><button class="btn ink" data-pc="y">Allow</button><button class="btn ink" data-pc="n">No thanks</button></div>' +
+        '<a class="pcmore" href="' + ROOT + 'privacy/">Privacy</a>';
+      el.addEventListener("click", (e) => { const b = e.target.closest("[data-pc]"); if (!b) return; this.set(b.dataset.pc === "y", "card"); el.remove(); });
+      document.body.appendChild(el);
+      hit("/ad/stay22/consent/ask", "stay22");
+    },
+    // ask once the page has settled: 2.5 s after start (Google's tool, if any, has shown up by then)
+    later() { setTimeout(() => this.ask(), 2500); },
+  };
+  function partnerChoices() { store.set("ss_pc", null); const c = document.getElementById("pcCard"); if (c) c.remove(); PC.ask(); }
+
   // may a Stay22 iframe load now? outside Europe yes; in Europe only with Google's consent message saying yes
   // (purpose 1); without an answer the page shows a "load the map" button (an explicit click loads it)
   function stayConsent() {
     return new Promise((ok) => {
       if (!LMA.europe()) { ok(true); return; }
+      const own = PC.get();
+      if (own) { ok(own.v === "y"); return; }
       let done = false, tries = 0;
       const fin = (v) => { if (!done) { done = true; ok(v); } };
       const poll = () => {
@@ -462,6 +513,7 @@
   function stayConsentWatch(cb) {
     let done = false, tries = 0;
     const go = () => { if (!done) { done = true; cb(); } };
+    document.addEventListener("ss:pconsent", (e) => { if (e.detail && e.detail.yes) go(); });
     const hook = () => {
       if (typeof window.__tcfapi !== "function") { if (++tries < 40) setTimeout(hook, 1500); return; }
       window.__tcfapi("addEventListener", 2, (tc, good) => {
@@ -731,6 +783,10 @@
     beacon("/web/human", "", "web");
   }
   if (!BOT) HUMAN_EV.forEach((t) => addEventListener(t, human, { capture: true, passive: true }));
+  document.addEventListener("click", (e) => {            // "Cookie choices" link (any page)
+    const a = e.target.closest("[data-pcchoices]");
+    if (a) { e.preventDefault(); partnerChoices(); }
+  });
   document.addEventListener("click", (e) => {            // which Stay22 placement works (no personal data)
     const a = e.target.closest('a[href*="stay22.com"]');
     if (a) {
@@ -774,9 +830,10 @@
     if (!S.user) { S.noAds = false; S.pro = false; }
     emit();
     pageView();
+    if (!S.noAds) PC.later();
     return S;
   }
 
-  window.SS = { base, webPro, proHere, proIn, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink, stayCur,
+  window.SS = { base, webPro, proHere, proIn, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, partnerChoices, partnerGranted: () => PC.granted(), partnerSet: (y, via) => PC.set(y, via), getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink, stayCur,
                 resorts, mapLib, transformRequest, onChange: (f) => S.listeners.push(f), store, ROOT, IAB, refHost };
 })();
