@@ -317,7 +317,35 @@
   "notes": [
    "new snow = SnowScope forecast on the upper slopes",
    "snow line = about 300 m below the forecast freezing level"
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "La Grave",
+     "slug": "la_grave",
+     "now_cm": 43,
+     "usual_cm": 70,
+     "high_cm": 147,
+     "week_ago_cm": 26,
+     "height_m": 3370,
+     "best_weeks": [
+      16,
+      15,
+      17
+     ],
+     "ratio_pct": 61
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "story": {
+   "id": "week_jump",
+   "place": "resort:la_grave",
+   "score": 50,
+   "resort": "La Grave"
+  }
  },
  "media": [
   {
@@ -349,6 +377,15 @@
      "h": "Europe and Morocco",
      "p": [
       "La Grave (France) expects 26 cm in the next 24 hours and 61 cm over 72 hours, with the snow line near 2,900 m. At Alpe d'Huez Grand Domaine (France): 27 cm in the next 24 hours, 55 cm in 72 hours, snow line around 2,400 m. Orcières Merlette (France) expects 30 cm in the next 24 hours and 53 cm over 72 hours, with the snow line near 2,500 m."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 3,370 m, La Grave has 43 cm today; a normal 14 November has 70 cm there.",
+      "Only one winter in ten has more than 147 cm on this date.",
+      "A week ago the same spot had 26 cm.",
+      "In past winters the best snow at La Grave usually came mid-April / late April."
      ]
     },
     {
@@ -393,6 +430,15 @@
      "h": "Europe et Maroc",
      "p": [
       "La Grave (France) attend 26 cm dans les 24 heures et 61 cm sur 72 heures, avec la limite pluie-neige vers 2 900 m. À Alpe d'Huez Grand Domaine (France) : 27 cm dans les 24 heures, 55 cm en 72 heures, limite pluie-neige autour de 2 400 m. Orcières Merlette (France) attend 30 cm dans les 24 heures et 53 cm sur 72 heures, avec la limite pluie-neige vers 2 500 m."
+     ]
+    },
+    {
+     "h": "Face aux hivers passés",
+     "p": [
+      "Vers 3 370 m, La Grave a 43 cm aujourd'hui ; un 14 novembre normal y compte 70 cm.",
+      "Un hiver sur dix seulement dépasse 147 cm à cette date.",
+      "Il y a une semaine, le même endroit avait 26 cm.",
+      "Les hivers passés, la meilleure neige à La Grave arrivait d'habitude mi-avril / fin avril."
      ]
     },
     {
@@ -441,8 +487,8 @@
    "rewrite": 1
   }
  },
- "words_en": 354,
- "indexable": true,
+ "words_en": 512,
+ "indexable": false,
  "main": {
   "slug": "la_grave",
   "name": "La Grave",
@@ -849,7 +895,7 @@
  "publish_utc": "2026-11-14T11:39:40Z",
  "cover": {
   "v": 1,
-  "style": "hero",
+  "style": "ranked",
   "files": {
    "en": [
     "blog/media/2026/11/where-most-snow-falls-next-72-hours-14-november-2026/cover-en.webp",
@@ -862,5 +908,26 @@
   },
   "credit": null,
   "photo": null
+ },
+ "rewrite": {
+  "v": 1,
+  "story": "week_jump",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 512 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 512 < 600"
+  ],
+  "words": 512,
+  "overlap": 6.2,
+  "with": "us-west-bear-valley-snow-forecast-13-november-2026",
+  "langs_off": [],
+  "score": 101.6,
+  "intent": "resort:la_grave|week_jump",
+  "guide": false,
+  "v": 1
  }
 }

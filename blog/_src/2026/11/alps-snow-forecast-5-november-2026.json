@@ -498,7 +498,7 @@
   }
  },
  "words_en": 264,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "saas_grund",
   "name": "Saas Grund",
@@ -607,5 +607,21 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@46.139,7.966,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "noindex_why": "quality: words 366 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 366 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 366,
+  "overlap": 18.3,
+  "with": "us-west-snow-forecast-4-november-2026",
+  "langs_off": [],
+  "score": 38.4,
+  "intent": "saas_grund|snow-forecast",
+  "guide": false,
+  "v": 1
+ }
 }

@@ -413,7 +413,7 @@
   }
  },
  "words_en": 206,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "oukaimeden",
   "name": "Oukaïmeden",
@@ -484,5 +484,21 @@
  "trip_day": "2026-11-14",
  "map_link": "https://snowscope.app/#@31.191,-7.860,9.0",
  "seconds": 0.0,
- "publish_utc": "2026-11-07T11:43:00Z"
+ "publish_utc": "2026-11-07T11:43:00Z",
+ "noindex_why": "quality: words 286 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 286 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 286,
+  "overlap": 8.3,
+  "with": "alps-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 33.1,
+  "intent": "atlas|snow-check",
+  "guide": false,
+  "v": 1
+ }
 }

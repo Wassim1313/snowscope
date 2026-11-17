@@ -382,7 +382,7 @@
   }
  },
  "words_en": 252,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "rasos_de_peguera",
   "name": "Rasos de Peguera",
@@ -457,5 +457,24 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@42.142,1.765,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "noindex_why": "quality: words 359 < 600; overlap 34 % with pyrenees-where-to-ski-this-weekend-4-november-2026; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 359 < 600",
+   "overlap 34 % with pyrenees-where-to-ski-this-weekend-4-november-2026",
+   "dated pure-numbers daily"
+  ],
+  "words": 359,
+  "overlap": 34.2,
+  "with": "pyrenees-where-to-ski-this-weekend-4-november-2026",
+  "langs_off": [
+   "es"
+  ],
+  "score": 38.0,
+  "intent": "pyrenees|where-to-ski",
+  "guide": false,
+  "v": 1
+ }
 }

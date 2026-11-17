@@ -323,7 +323,45 @@
      "2026-11-14"
     ]
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Banff Sunshine Village",
+     "slug": "banff_sunshine_village",
+     "now_cm": 9,
+     "usual_cm": 29,
+     "high_cm": 54,
+     "week_ago_cm": 7,
+     "height_m": 2174,
+     "best_weeks": [
+      9,
+      11,
+      10
+     ],
+     "ratio_pct": 31
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Banff Sunshine Village",
+   "rain_day": "2026-11-12",
+   "freezing_m": 3410,
+   "lift_top_m": 2686,
+   "next_cm": 0,
+   "second": "Marmot Basin",
+   "second_cm": 26,
+   "depth_cm": 14
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:banff_sunshine_village",
+   "score": 34,
+   "resort": "Banff Sunshine Village"
+  }
  },
  "media": [
   {
@@ -350,6 +388,17 @@
       "Rain-on-snow risk at Panorama: about 19 cm on the upper slopes and a snow line above mid-mountain on 12 November and 14 November; the snow would get heavy and wet, then icy as it freezes again.",
       "At Whistler Blackcomb (2,284 m) the forecast gives 88 mm of precipitation, the water that reaches the mountain; during the wet hours the snow line is near 1,440 m.",
       "135 mm of precipitation is forecast at Vancouver (10 m); while it falls, the snow line sits near 1,260 m."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Thursday 12 November the freezing level climbs to about 3,410 m, above the top of the lifts at 2,686 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 2,174 m, Banff Sunshine Village has 9 cm today; a normal 12 November has 29 cm there.",
+      "Only one winter in ten has more than 54 cm on this date.",
+      "A week ago the same spot had 7 cm.",
+      "In past winters the best snow at Banff Sunshine Village usually came early March / mid-March."
      ]
     },
     {
@@ -401,6 +450,17 @@
      ]
     },
     {
+     "h": "De la pluie jusqu'en haut ?",
+     "p": [
+      "Le jeudi 12 novembre, l'isotherme 0 °C monte vers 3 410 m, au-dessus du sommet des remontées à 2 686 m : il peut pleuvoir jusqu'en haut.",
+      "La pluie sur la neige fraîche l'alourdit et, après une nuit froide, la rend glacée : les jours suivants conviennent mieux aux pistes damées qu'à la poudreuse.",
+      "Vers 2 174 m, Banff Sunshine Village a 9 cm aujourd'hui ; un 12 novembre normal y compte 29 cm.",
+      "Un hiver sur dix seulement dépasse 54 cm à cette date.",
+      "Il y a une semaine, le même endroit avait 7 cm.",
+      "Les hivers passés, la meilleure neige à Banff Sunshine Village arrivait d'habitude début mars / mi-mars."
+     ]
+    },
+    {
      "h": "Pluie ou neige dans chaque station",
      "p": [
       "Banff Sunshine Village (bas 1 661 m, sommet 2 686 m) : la limite pluie-neige monte vers 3 100 m le 12 novembre, au-dessus du sommet, donc les précipitations tomberaient en pluie ou en neige mouillée sur tout le domaine et ruisselleraient.",
@@ -444,7 +504,7 @@
    "voice": "hydro"
   }
  },
- "words_en": 518,
+ "words_en": 742,
  "indexable": true,
  "main": {
   "slug": "banff_sunshine_village",
@@ -570,5 +630,39 @@
   "max": 0.153,
   "with": "us-west-freezing-level-snow-line-8-november-2026"
  },
- "publish_utc": "2026-11-12T19:17:51Z"
+ "publish_utc": "2026-11-12T19:17:51Z",
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 742,
+  "overlap": 22.4,
+  "with": "us-west-freezing-level-snow-line-8-november-2026",
+  "langs_off": [],
+  "score": 92.7,
+  "intent": "resort:banff_sunshine_village|rain_risk",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "ranked",
+  "files": {
+   "en": [
+    "blog/media/2026/11/western-canada-freezing-level-snow-line-12-november-2026/cover-en.webp",
+    "blog/media/2026/11/western-canada-freezing-level-snow-line-12-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/western-canada-freezing-level-snow-line-12-november-2026/cover-fr.webp",
+    "blog/media/2026/11/western-canada-freezing-level-snow-line-12-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

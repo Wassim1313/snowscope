@@ -1145,7 +1145,7 @@
   }
  },
  "words_en": 266,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": null,
   "name": "Helsinki",
@@ -1172,5 +1172,21 @@
   "with": "stockholm-snow-today-13-november-2026",
   "tries": 0
  },
- "publish_utc": "2026-11-13T20:09:21Z"
+ "publish_utc": "2026-11-13T20:09:21Z",
+ "noindex_why": "quality: words 340 < 600; no table or chart of its own",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 340 < 600",
+   "no table or chart of its own"
+  ],
+  "words": 340,
+  "overlap": 0.1,
+  "with": "st-moritz-corviglia-glossary-snow-engadin",
+  "langs_off": [],
+  "score": 35.0,
+  "intent": "helsinki|snow-now",
+  "guide": false,
+  "v": 1
+ }
 }

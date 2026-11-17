@@ -1976,7 +1976,7 @@
   }
  },
  "words_en": 300,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": null,
   "name": "Sverige",
@@ -2003,5 +2003,21 @@
   "with": "nordic-cities-snow-today-13-november-2026",
   "tries": 0
  },
- "publish_utc": "2026-11-13T19:09:43Z"
+ "publish_utc": "2026-11-13T19:09:43Z",
+ "noindex_why": "quality: words 353 < 600; no table or chart of its own",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 353 < 600",
+   "no table or chart of its own"
+  ],
+  "words": 353,
+  "overlap": 0.1,
+  "with": "banff-sunshine-village-snow-month-by-month",
+  "langs_off": [],
+  "score": 35.6,
+  "intent": "sweden|snow-now-country",
+  "guide": false,
+  "v": 1
+ }
 }

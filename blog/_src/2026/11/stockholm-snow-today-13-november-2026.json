@@ -1133,7 +1133,7 @@
   }
  },
  "words_en": 235,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": null,
   "name": "Stockholm",
@@ -1160,5 +1160,21 @@
   "with": "banff-sunshine-village-snow-month-by-month",
   "tries": 0
  },
- "publish_utc": "2026-11-13T18:49:28Z"
+ "publish_utc": "2026-11-13T18:49:28Z",
+ "noindex_why": "quality: words 303 < 600; no table or chart of its own",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 303 < 600",
+   "no table or chart of its own"
+  ],
+  "words": 303,
+  "overlap": 0.4,
+  "with": "banff-sunshine-village-snow-month-by-month",
+  "langs_off": [],
+  "score": 33.1,
+  "intent": "stockholm|snow-now",
+  "guide": false,
+  "v": 1
+ }
 }

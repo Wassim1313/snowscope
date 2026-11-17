@@ -332,7 +332,48 @@
     "cm_in_72h": 26,
     "km_from_resort": 11
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Telluride",
+     "slug": "telluride_ski_area",
+     "now_cm": 24,
+     "usual_cm": 11,
+     "high_cm": 52,
+     "week_ago_cm": null,
+     "height_m": 3237,
+     "best_weeks": [
+      53,
+      11,
+      10
+     ],
+     "ratio_pct": 218,
+     "deeper_than": 32,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Telluride",
+   "top_cm": 97,
+   "top_m": 3812,
+   "base_cm": 3,
+   "base_m": 2662,
+   "next_cm": 2,
+   "second": "Silverton Mountain",
+   "second_cm": 119,
+   "depth_cm": 118
+  },
+  "story": {
+   "id": "vs_normal_high",
+   "place": "resort:telluride_ski_area",
+   "score": 62,
+   "resort": "Telluride"
+  }
  },
  "media": [
   {
@@ -392,6 +433,17 @@
      ]
     },
     {
+     "h": "Against past winters",
+     "p": [
+      "At about 10,620 ft (3,237 m), Telluride has 9 in (24 cm) today; a normal 4 November has 4 in (11 cm) there.",
+      "That is more than in 32 of the 46 past winters on this date.",
+      "In past winters the best snow at Telluride usually came early January / early March.",
+      "An early lead like this matters most for the lower and middle runs, which usually wait until December for this much snow.",
+      "Day by day at Telluride: Wednesday 4 November 1 in (3 cm); Thursday 5 November 1 in (2 cm).",
+      "Height by height at Telluride: 8,734 ft (2,662 m) 1 in (3 cm) on the ground, 1 in (2 cm) more in the next 7 days; 10,620 ft (3,237 m) 8 in (21 cm) on the ground, 1 in (3 cm) more in the next 7 days; 12,507 ft (3,812 m) 38 in (97 cm) on the ground, 2 in (4 cm) more in the next 7 days."
+     ]
+    },
+    {
      "h": "What the stations measured",
      "p": [
       "The Chepeta station (10,489 ft / 3,197 m) measured 20 in (51 cm) of snow on the ground on 1 November, with 12 in (30 cm) of new snow in 24 hours. The Red Mountain Pass station (11,060 ft / 3,371 m) measured 24 in (61 cm) of snow on the ground on 1 November, with 11 in (28 cm) of new snow in 24 hours. The Bison Lake station (10,951 ft / 3,338 m) measured 15 in (38 cm) of snow on the ground on 1 November, with 10 in (25 cm) of new snow in 24 hours.",
@@ -438,7 +490,7 @@
    "writer": "template"
   }
  },
- "words_en": 352,
+ "words_en": 630,
  "indexable": true,
  "main": {
   "slug": "telluride_ski_area",
@@ -548,5 +600,35 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@37.920,-107.835,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_high",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 630,
+  "overlap": 26.0,
+  "with": "us-west-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 117.2,
+  "intent": "resort:telluride_ski_area|vs_normal_high",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "split",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-fresh-snow-powder-alert-4-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-fresh-snow-powder-alert-4-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

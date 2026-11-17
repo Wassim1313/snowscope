@@ -352,7 +352,51 @@
      "seen_on": "2026-11-09"
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Big White",
+     "slug": "big_white_ski_resort",
+     "now_cm": 43,
+     "usual_cm": 30,
+     "high_cm": null,
+     "week_ago_cm": null,
+     "height_m": 1891,
+     "best_weeks": [
+      15,
+      14,
+      13
+     ],
+     "ratio_pct": 143,
+     "deeper_than": 37,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Big White",
+   "top_cm": 64,
+   "top_m": 2271,
+   "base_cm": 0,
+   "base_m": 1512,
+   "rain_day": "2026-11-13",
+   "freezing_m": 3060,
+   "lift_top_m": 2271,
+   "next_cm": 16,
+   "second": "Marmot Basin",
+   "second_cm": 54,
+   "depth_cm": 86
+  },
+  "story": {
+   "id": "vs_normal_high",
+   "place": "resort:big_white_ski_resort",
+   "score": 62,
+   "resort": "Big White"
+  }
  },
  "media": [
   {
@@ -379,6 +423,17 @@
       "At 1,369 m on Revelstoke the snow store is behind: 24 cm today against a usual 55 cm. On 13 November, only 5 of the past 46 winters held less.",
       "Tweedsmuir Ski Club holds a normal amount of snow for the date at 1,619 m: 63 cm, more than in 30 of the past 46 winters (usual: 54 cm).",
       "Less water is stored in the snow at Banff Sunshine Village than usual: 3 cm at 2,173 m today, below the usual 29 cm; only 0 of the past 46 winters had less on 13 November."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 1,891 m, Big White has 43 cm today; a normal 13 November has 30 cm there.",
+      "That is more than in 37 of the 46 past winters on this date.",
+      "In past winters the best snow at Big White usually came late March / early April.",
+      "An early lead like this matters most for the lower and middle runs, which usually wait until December for this much snow.",
+      "Day by day at Big White: Saturday 14 November 4 cm; Sunday 15 November 2 cm; Monday 16 November 10 cm.",
+      "Height by height at Big White: 1,512 m 0 cm on the ground, 7 cm more in the next 7 days; 1,891 m 8 cm on the ground, 9 cm more in the next 7 days; 2,271 m 64 cm on the ground, 9 cm more in the next 7 days."
      ]
     },
     {
@@ -423,6 +478,17 @@
      ]
     },
     {
+     "h": "Face aux hivers passés",
+     "p": [
+      "Vers 1 891 m, Big White a 43 cm aujourd'hui ; un 13 novembre normal y compte 30 cm.",
+      "C'est plus que lors de 37 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Big White arrivait d'habitude fin mars / début avril.",
+      "Une telle avance compte surtout pour les pistes basses et moyennes, qui attendent d'habitude décembre pour autant de neige.",
+      "Jour après jour à Big White : samedi 14 novembre 4 cm; dimanche 15 novembre 2 cm; lundi 16 novembre 10 cm.",
+      "Altitude par altitude à Big White : 1 512 m 0 cm au sol, 7 cm de plus dans les 7 prochains jours; 1 891 m 8 cm au sol, 9 cm de plus dans les 7 prochains jours; 2 271 m 64 cm au sol, 9 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
      "h": "Combien de neige au sol",
      "p": [
       "Le manteau le plus épais du groupe est à Big White, environ 86 cm sur le haut du domaine ; ensuite Marmot Basin 54 cm et Revelstoke 53 cm.",
@@ -459,8 +525,8 @@
    "voice": "hydro"
   }
  },
- "words_en": 353,
- "indexable": true,
+ "words_en": 582,
+ "indexable": false,
  "main": {
   "slug": "big_white_ski_resort",
   "name": "Big White",
@@ -585,5 +651,26 @@
   "max": 0.114,
   "with": "pyrenees-snow-vs-past-winters-4-november-2026"
  },
- "publish_utc": "2026-11-13T16:43:49Z"
+ "publish_utc": "2026-11-13T16:43:49Z",
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_high",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 582 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 582 < 600"
+  ],
+  "words": 582,
+  "overlap": 10.0,
+  "with": "alps-les-deux-alpes-snow-forecast-11-november-2026",
+  "langs_off": [],
+  "score": 110.9,
+  "intent": "resort:big_white_ski_resort|vs_normal_high",
+  "guide": false,
+  "v": 1
+ }
 }

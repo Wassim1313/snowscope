@@ -333,7 +333,51 @@
     "measured_on": "2026-11-01",
     "network": "snotel"
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Kendall Mountain",
+     "slug": "kendall_mountain_recreation_area",
+     "now_cm": 9,
+     "usual_cm": 5,
+     "high_cm": null,
+     "week_ago_cm": null,
+     "height_m": 2869,
+     "best_weeks": [
+      53,
+      10,
+      11
+     ],
+     "ratio_pct": 180,
+     "deeper_than": 27,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Kendall Mountain",
+   "top_cm": 13,
+   "top_m": 2904,
+   "base_cm": 11,
+   "base_m": 2835,
+   "rain_day": "2026-11-03",
+   "freezing_m": 3500,
+   "lift_top_m": 2904,
+   "next_cm": 3,
+   "second": "Telluride",
+   "second_cm": 130,
+   "depth_cm": 134
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:kendall_mountain_recreation_area",
+   "score": 58,
+   "resort": "Kendall Mountain"
+  }
  },
  "media": [
   {
@@ -355,6 +399,18 @@
      "p": [
       "The snow cover shrank from 102,441 sq mi (265,320 km²) on 1 November to 95,630 sq mi (247,680 km²) today, and our forecast gives 78,313 sq mi (202,830 km²) on 6 November.",
       "Height matters: at Telluride, our model gives 43 in (109 cm) at the top (12,507 ft / 3,812 m), 11 in (28 cm) at mid-mountain (10,620 ft / 3,237 m) and 2 in (6 cm) at the base (8,734 ft / 2,662 m)."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Tuesday 3 November the freezing level climbs to about 11,483 ft (3,500 m), above the top of the lifts at 9,528 ft (2,904 m): rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 9,413 ft (2,869 m), Kendall Mountain has 4 in (9 cm) today; a normal 3 November has 2 in (5 cm) there.",
+      "That is more than in 27 of the 46 past winters on this date.",
+      "In past winters the best snow at Kendall Mountain usually came early January / early March.",
+      "Day by day at Kendall Mountain: Tuesday 3 November 0 in (1 cm); Wednesday 4 November 1 in (2 cm); Thursday 5 November 0 in (1 cm).",
+      "Height by height at Kendall Mountain: 9,301 ft (2,835 m) 4 in (11 cm) on the ground, 1 in (2 cm) more in the next 7 days; 9,413 ft (2,869 m) 5 in (12 cm) on the ground, 1 in (2 cm) more in the next 7 days; 9,528 ft (2,904 m) 5 in (13 cm) on the ground, 1 in (2 cm) more in the next 7 days."
      ]
     },
     {
@@ -398,7 +454,7 @@
    "writer": "template"
   }
  },
- "words_en": 458,
+ "words_en": 800,
  "indexable": true,
  "main": {
   "slug": "kendall_mountain_recreation_area",
@@ -508,5 +564,35 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@37.812,-107.656,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 800,
+  "overlap": 0.0,
+  "with": null,
+  "langs_off": [],
+  "score": 122.0,
+  "intent": "resort:kendall_mountain_recreation_area|rain_risk",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "ranked",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-snow-depth-today-3-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-snow-depth-today-3-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

@@ -382,7 +382,7 @@
   }
  },
  "words_en": 304,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "ski_callaghan",
   "name": "Ski Callaghan",
@@ -812,5 +812,20 @@
    "with_after": "where-most-snow-falls-next-72-hours-7-november-2026",
    "voice": "sat"
   }
- ]
+ ],
+ "noindex_why": "quality: words 391 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 391 < 600"
+  ],
+  "words": 391,
+  "overlap": 1.1,
+  "with": "us-west-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 45.5,
+  "intent": "ski_callaghan|snow-forecast",
+  "guide": false,
+  "v": 1
+ }
 }

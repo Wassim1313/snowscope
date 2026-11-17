@@ -628,7 +628,42 @@
    "resort values = the slopes at or above mid-mountain within a few km of the resort, not the village",
    "days 1-14 = tomorrow to day 14; week 1 = days 1-7, week 2 = days 8-14",
    "snow by height = all the mountain terrain of the region, not only resorts"
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Kingvale",
+     "slug": "kingvale",
+     "now_cm": 16,
+     "usual_cm": 4,
+     "high_cm": 42,
+     "week_ago_cm": 0,
+     "height_m": 2144,
+     "best_weeks": [
+      10,
+      11,
+      12
+     ],
+     "ratio_pct": 400
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Kingvale",
+   "next_cm": 69,
+   "second": "Mt. Shasta Ski Park",
+   "second_cm": 50,
+   "depth_cm": 25
+  },
+  "story": {
+   "id": "storm_next",
+   "place": "resort:kingvale",
+   "score": 73.0,
+   "resort": "Kingvale"
+  }
  },
  "media": [
   {
@@ -674,6 +709,17 @@
       "Bear Valley (United States): about 49 in (124 cm) in 14 days (34 in (87 cm)–63 in (161 cm) between the models), 34 in (87 cm) in the first week and 15 in (37 cm) in the second. Mark 19 November: that is the biggest day, with 19 in (47 cm), out of 5 days at 5 cm or more.",
       "At Badger Pass (United States) the two weeks add up to about 47 in (119 cm) (33 in (83 cm)–61 in (155 cm) depending on the model): 37 in (93 cm) by the end of the first week, then 10 in (26 cm) more. The snowiest day is 19 November with 21 in (54 cm); 6 days bring 5 cm or more.",
       "At China Peak (United States) the two weeks add up to about 46 in (117 cm) (31 in (80 cm)–61 in (155 cm) depending on the model): 36 in (92 cm) by the end of the first week, then 10 in (25 cm) more. The snowiest day is 19 November with 22 in (56 cm); 6 days bring 5 cm or more."
+     ]
+    },
+    {
+     "h": "The snow still to come",
+     "p": [
+      "Up to 27 in (69 cm) of new snow is forecast at Kingvale over the next days.",
+      "Forecasts move: the timing is usually more reliable than the totals, so check again two days before you go.",
+      "At about 7,034 ft (2,144 m), Kingvale has 6 in (16 cm) today; a normal 16 November has 2 in (4 cm) there.",
+      "Only one winter in ten has more than 17 in (42 cm) on this date.",
+      "A week ago the same spot had 0 in (0 cm).",
+      "In past winters the best snow at Kingvale usually came early March / mid-March."
      ]
     },
     {
@@ -724,7 +770,7 @@
    "rewrite": 1
   }
  },
- "words_en": 919,
+ "words_en": 1135,
  "indexable": false,
  "main": {
   "slug": "kingvale",
@@ -865,17 +911,26 @@
   "with": "us-west-2-week-snow-forecast-maps-12-november-2026"
  },
  "publish_utc": "2026-11-16T17:56:41Z",
- "cover": {
+ "cover": {},
+ "noindex_why": "quality: overlap 32 % with us-west-2-week-snow-forecast-maps-12-november-2026",
+ "rewrite": {
   "v": 1,
-  "style": "map",
-  "files": {
-   "en": [
-    "blog/media/2026/11/us-west-2-week-snow-forecast-maps-16-november-2026/cover-en.webp",
-    "blog/media/2026/11/us-west-2-week-snow-forecast-maps-16-november-2026/cover-en_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "storm_next",
+  "llm": false,
+  "usd": 0.0
  },
- "noindex_why": "cadence: news quota 1 of 2026-11-17 used"
+ "quality": {
+  "ok": false,
+  "why": [
+   "overlap 32 % with us-west-2-week-snow-forecast-maps-12-november-2026"
+  ],
+  "words": 1135,
+  "overlap": 31.7,
+  "with": "us-west-2-week-snow-forecast-maps-12-november-2026",
+  "langs_off": [],
+  "score": 155.8,
+  "intent": "resort:kingvale|storm_next",
+  "guide": false,
+  "v": 1
+ }
 }

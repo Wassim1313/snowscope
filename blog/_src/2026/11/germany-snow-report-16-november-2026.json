@@ -133,6 +133,122 @@
    ],
    "from_day": 8,
    "to_day": 14
+  },
+  "trend": [
+   {
+    "date": "2026-11-16",
+    "snow_km2": 2110,
+    "new72": 2,
+    "leader": "Zugspitze",
+    "leader_cm": 44
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Zugspitze",
+     "slug": "gletscher_skigebiet_zugspitze_ski_resort_zugspit",
+     "now_cm": 12,
+     "usual_cm": 19,
+     "high_cm": 40,
+     "week_ago_cm": 9,
+     "height_m": 1811,
+     "best_weeks": [
+      13,
+      9,
+      12
+     ],
+     "ratio_pct": 63
+    },
+    {
+     "name": "Fellhorn/Kanzelwand",
+     "slug": "skigebiet_fellhorn_kanzelwand",
+     "now_cm": 3,
+     "usual_cm": 7,
+     "high_cm": 28,
+     "week_ago_cm": 0,
+     "height_m": 1442,
+     "best_weeks": [
+      9,
+      10,
+      7
+     ],
+     "ratio_pct": 43
+    },
+    {
+     "name": "Grasgehren",
+     "slug": "grasgehren",
+     "now_cm": 3,
+     "usual_cm": 11,
+     "high_cm": 34,
+     "week_ago_cm": 0,
+     "height_m": 1555,
+     "best_weeks": [
+      9,
+      10,
+      8
+     ],
+     "ratio_pct": 27
+    },
+    {
+     "name": "Hörnerbahn Bolsterlang",
+     "slug": "hornerbahn_bolsterlang",
+     "now_cm": 2,
+     "usual_cm": 7,
+     "high_cm": 27,
+     "week_ago_cm": 0,
+     "height_m": 1274,
+     "best_weeks": [
+      8,
+      9,
+      10
+     ],
+     "ratio_pct": 29
+    },
+    {
+     "name": "Söllereck",
+     "slug": "skigebiet_sollereck",
+     "now_cm": 4,
+     "usual_cm": 4,
+     "high_cm": 20,
+     "week_ago_cm": 0,
+     "height_m": 1200,
+     "best_weeks": [
+      9,
+      8,
+      7
+     ],
+     "ratio_pct": 100
+    }
+   ],
+   "n": 5,
+   "above": 0,
+   "median_pct": 43
+  },
+  "neighbours": [
+   {
+    "cc": "AT",
+    "name": "Austria",
+    "white_share_pct": 38,
+    "leader": "Kaprun",
+    "leader_cm": 83,
+    "next_7_days_max_cm": 50
+   },
+   {
+    "cc": "CH",
+    "name": "Switzerland",
+    "white_share_pct": 53,
+    "leader": "Ovronnaz",
+    "leader_cm": 136,
+    "next_7_days_max_cm": 112
+   }
+  ],
+  "glacier": false,
+  "story": {
+   "id": "vs_normal_low",
+   "place": "cc:DE",
+   "score": 52.2,
+   "resort": "Zugspitze"
   }
  },
  "media": [
@@ -144,30 +260,65 @@
    "bytes": 17200,
    "snow_frac": 0.2608,
    "weak": false
+  },
+  {
+   "id": "story",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg viewBox=\"0 0 640 240\" role=\"img\" aria-label=\"Snow depth today (bars) against a normal year (dashed)\" style=\"width:100%;height:auto;font:12px Inter,sans-serif\"><rect x=\"47.7\" y=\"22.0\" width=\"86.9\" height=\"184.0\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"56.9\" y=\"89.8\" width=\"68.6\" height=\"116.2\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"91.2\" y=\"83.8\" text-anchor=\"middle\" fill=\"currentColor\">12</text><text x=\"91.2\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Zugspitze</text><rect x=\"162.1\" y=\"138.2\" width=\"86.9\" height=\"67.8\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"171.3\" y=\"176.9\" width=\"68.6\" height=\"29.1\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"205.6\" y=\"170.9\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"205.6\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Fellhorn/Kan</text><rect x=\"276.5\" y=\"99.5\" width=\"86.9\" height=\"106.5\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"285.7\" y=\"176.9\" width=\"68.6\" height=\"29.1\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"320.0\" y=\"170.9\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"320.0\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Grasgehren</text><rect x=\"390.9\" y=\"138.2\" width=\"86.9\" height=\"67.8\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"400.1\" y=\"186.6\" width=\"68.6\" height=\"19.4\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"434.4\" y=\"180.6\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"434.4\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Hörnerbahn B</text><rect x=\"505.3\" y=\"167.3\" width=\"86.9\" height=\"38.7\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"514.5\" y=\"167.3\" width=\"68.6\" height=\"38.7\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"548.8\" y=\"161.3\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"548.8\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Söllereck</text><line x1=\"34\" x2=\"606\" y1=\"206\" y2=\"206\" stroke=\"currentColor\" stroke-opacity=\".3\"/></svg>",
+    "de": "<svg viewBox=\"0 0 640 240\" role=\"img\" aria-label=\"Schneehöhe heute (Balken) gegenüber einem normalen Jahr (gestrichelt)\" style=\"width:100%;height:auto;font:12px Inter,sans-serif\"><rect x=\"47.7\" y=\"22.0\" width=\"86.9\" height=\"184.0\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"56.9\" y=\"89.8\" width=\"68.6\" height=\"116.2\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"91.2\" y=\"83.8\" text-anchor=\"middle\" fill=\"currentColor\">12</text><text x=\"91.2\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Zugspitze</text><rect x=\"162.1\" y=\"138.2\" width=\"86.9\" height=\"67.8\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"171.3\" y=\"176.9\" width=\"68.6\" height=\"29.1\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"205.6\" y=\"170.9\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"205.6\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Fellhorn/Kan</text><rect x=\"276.5\" y=\"99.5\" width=\"86.9\" height=\"106.5\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"285.7\" y=\"176.9\" width=\"68.6\" height=\"29.1\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"320.0\" y=\"170.9\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"320.0\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Grasgehren</text><rect x=\"390.9\" y=\"138.2\" width=\"86.9\" height=\"67.8\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"400.1\" y=\"186.6\" width=\"68.6\" height=\"19.4\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"434.4\" y=\"180.6\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"434.4\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Hörnerbahn B</text><rect x=\"505.3\" y=\"167.3\" width=\"86.9\" height=\"38.7\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"514.5\" y=\"167.3\" width=\"68.6\" height=\"38.7\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"548.8\" y=\"161.3\" text-anchor=\"middle\" fill=\"currentColor\">4</text><text x=\"548.8\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Söllereck</text><line x1=\"34\" x2=\"606\" y1=\"206\" y2=\"206\" stroke=\"currentColor\" stroke-opacity=\".3\"/></svg>"
+   },
+   "cap": {
+    "en": "Snow depth today (bars) against a normal year (dashed)",
+    "de": "Schneehöhe heute (Balken) gegenüber einem normalen Jahr (gestrichelt)"
+   }
   }
  ],
  "docs": {
   "en": {
-   "title": "Germany snow conditions, 16 November 2026: depth, fresh snow and the next days",
-   "description": "Germany snow today, 16 November: snow cover, new snow, snow depth by height, the next days and the best resorts.",
-   "lede": "Snow covers roughly 2,110 km² in Germany on 16 November, 1,310 km² less than yesterday. Roughly 5 % of the country's mapped mountains and hills are covered.",
+   "title": "Why Zugspitze is short of snow for 16 November: 12 cm instead of 19 cm",
+   "description": "Why Zugspitze is short of snow for 16 November: 12 cm instead of 19 cm. Snow cover, new snow, resorts and the days ahead in Germany on 16 November.",
+   "lede": "Zugspitze has 12 cm at about 1,811 m today. A normal 16 November has 19 cm there, so the snow is at 63 % of the usual depth.",
    "sections": [
     {
-     "h": "Snow cover today",
+     "h": "Behind a normal year",
      "p": [
-      "Most of the ground is white from about 1,200 m up. A week ago it was 1,690 km², so the cover has grown by 420 km²."
+      "A slow start is common and says little about January. For now, plan on the highest lifts and on runs with snowmaking.",
+      "2,110 km² of snow-covered ground in Germany this Monday, down 1,310 km² on yesterday. In other words, 5 % of the mapped high ground is white."
      ]
     },
     {
-     "h": "Snow depth by height",
+     "h": "How this start compares",
      "p": [
-      "By height, the picture looks like this: between 500 and 1,000 m, under 1 cm on average, 1 % covered; between 1,000 and 1,500 m, 1 cm on average, 37 % covered; between 1,500 and 2,000 m, 4 cm on average, 93 % covered; between 2,000 and 2,500 m, 13 cm on average, 100 % covered."
+      "Resort by resort, today against a normal 16 November: Zugspitze: 12 cm at about 1,811 m, against 19 cm in a normal year; Fellhorn/Kanzelwand: 3 cm at about 1,442 m, against 7 cm in a normal year; Grasgehren: 3 cm at about 1,555 m, against 11 cm in a normal year; Hörnerbahn Bolsterlang: 2 cm at about 1,274 m, against 7 cm in a normal year.",
+      "0 of these 4 resorts are above their usual depth for the date.",
+      "These depths are for one height on each mountain, below the top, so they read lower than the upper-slope numbers further down.",
+      "In past winters the best snow at Zugspitze usually came early March / late March."
      ]
     },
     {
-     "h": "Where the fresh snow fell",
+     "h": "Forecast for the week",
      "p": [
-      "The last three days were dry or nearly so, with no more than 2 cm anywhere."
+      "Expect up to 5 cm on the snowiest slopes by the third day; the seven-day total reaches 31 cm.",
+      "The snowiest day looks like Saturday 21 November, with up to 15 cm in the snowiest spots.",
+      "The second week adds up to 27 cm where it snows most."
+     ]
+    },
+    {
+     "h": "From the valleys to the summits",
+     "p": [
+      "Average depth of the snowpack by height band: between 500 and 1,000 m, under 1 cm on average, 1 % covered; between 1,000 and 1,500 m, 1 cm on average, 37 % covered; between 1,500 and 2,000 m, 4 cm on average, 93 % covered; between 2,000 and 2,500 m, 13 cm on average, 100 % covered."
+     ]
+    },
+    {
+     "h": "Shortlist for the weekend",
+     "p": [
+      "The deepest snow of the country's resorts is at Zugspitze: 44 cm.",
+      "Close behind: Fellhorn/Kanzelwand (26 cm), Grasgehren (25 cm), Hörnerbahn Bolsterlang (25 cm) and Söllereck (22 cm).",
+      "At Zugspitze: 4 cm of fresh snow over three days, 15 cm more expected by Thursday 19 November.",
+      "At Fellhorn/Kanzelwand: 7 cm of fresh snow over three days, 19 cm more expected by Thursday 19 November.",
+      "67 of the 230 resorts we follow in Germany have snow on their upper slopes.",
+      "The rest of the shortlist: Grasgehren: 25 cm on top, 3 cm in three days, 11 cm expected; Hörnerbahn Bolsterlang: 25 cm on top, 2 cm in three days, 9 cm expected; Söllereck: 22 cm on top, 1 cm in three days, 9 cm expected."
      ]
     },
     {
@@ -178,54 +329,86 @@
      ]
     },
     {
-     "h": "What is coming",
+     "h": "How much of the country is white",
      "p": [
-      "Snow is in the forecast: up to 5 cm by the end of the third day, up to 31 cm within seven days.",
-      "The snowiest day looks like Saturday 21 November, with up to 15 cm in the snowiest spots.",
-      "The second week adds up to 27 cm where it snows most."
+      "A week ago it was 1,690 km², so the cover has grown by 420 km². Think 1,200 m and higher for a white landscape."
      ]
     },
     {
-     "h": "The resorts with the most snow",
+     "h": "The latest snowfall",
      "p": [
-      "At the top of the list, Zugspitze reports 44 cm.",
-      "Next on the list: Fellhorn/Kanzelwand (26 cm), Grasgehren (25 cm), Hörnerbahn Bolsterlang (25 cm) and Söllereck (22 cm).",
-      "Zugspitze picked up 4 cm in the last three days and could add 15 cm by Thursday 19 November.",
-      "Fellhorn/Kanzelwand picked up 7 cm in the last three days and could add 19 cm by Thursday 19 November.",
-      "Count 67 white resorts out of 230 in Germany today."
+      "Hardly any new snow fell in the last three days: the three-day maximum is 2 cm."
+     ]
+    },
+    {
+     "h": "The neighbours today",
+     "p": [
+      "For comparison, the neighbours on the same day: Austria: 38 % white, deepest Kaprun with 83 cm, up to 50 cm in the week ahead; Switzerland: 53 % white, deepest Ovronnaz with 136 cm, up to 112 cm in the week ahead."
+     ]
+    },
+    {
+     "h": "Planning a day on the snow",
+     "p": [
+      "Above 1,500 m the ground is almost fully white (93 % covered), so runs up there have a continuous base.",
+      "Between 1,000 m and 1,500 m the cover is patchy, about 37 % white: expect grass and stones between the snow.",
+      "Below 1,000 m the slopes are still almost bare."
      ]
     }
    ],
    "advice": [
-    "Early-season snow is thin over rocks: ski the groomed runs first.",
     "Snow above the tree line can be wind-packed: watch the ridges.",
-    "Fresh snow on a cold base sticks badly: take care on steep slopes."
+    "Check the resort's own lift status before you travel.",
+    "Read the local avalanche bulletin before going off-piste."
    ],
    "captions": {
-    "map": "Snow depth in Germany on 16 November"
+    "map": "Snow depth in Germany on 16 November",
+    "story": "Snow depth today (bars) against a normal year (dashed)"
    }
   },
   "de": {
-   "title": "Schneelage in Deutschland, 16. November 2026: Schneehöhen, Neuschnee und die nächsten Tage",
-   "description": "Schnee in Deutschland am 16. November: Schneedecke, Neuschnee, Schneehöhe nach Höhe, die nächsten Tage und die besten Skigebiete.",
-   "lede": "Schnee bedeckt am 16. November in Deutschland etwa 2.110 km², 1.310 km² weniger als gestern. Etwa 5 % der kartierten Berge und Hügel des Landes sind bedeckt.",
+   "title": "Warum Zugspitze für den 16. November zu wenig Schnee hat: 12 cm statt 19 cm",
+   "description": "Warum Zugspitze für den 16. November zu wenig Schnee hat: 12 cm statt 19 cm",
+   "lede": "Zugspitze hat heute auf etwa 1.811 m 12 cm. Normal sind am 16. November dort 19 cm: Der Schnee liegt bei 63 % der üblichen Höhe.",
    "sections": [
     {
-     "h": "Die Schneedecke heute",
+     "h": "Hinter einem normalen Jahr",
      "p": [
-      "Ab etwa 1.200 m ist der Boden überwiegend weiß. Vor einer Woche waren es 1.690 km²; die Schneedecke hat um 420 km² zugelegt."
+      "Ein langsamer Start ist häufig und sagt wenig über den Januar. Vorerst auf die höchsten Lifte und beschneite Pisten setzen.",
+      "2.110 km² schneebedeckter Boden in Deutschland an diesem Montag, ein Minus von 1.310 km² gegenüber gestern. Anders gesagt: 5 % des kartierten Berglands sind weiß."
      ]
     },
     {
-     "h": "Schneehöhe nach Höhenlage",
+     "h": "Wie dieser Start abschneidet",
      "p": [
-      "Nach Höhe ergibt sich folgendes Bild: zwischen 500 und 1.000 m im Schnitt unter 1 cm, 1 % bedeckt; zwischen 1.000 und 1.500 m im Schnitt 1 cm, 37 % bedeckt; zwischen 1.500 und 2.000 m im Schnitt 4 cm, 93 % bedeckt; zwischen 2.000 und 2.500 m im Schnitt 13 cm, 100 % bedeckt."
+      "Skigebiet für Skigebiet, heute gegenüber einem normalen 16. November: Zugspitze: 12 cm auf etwa 1.811 m, gegenüber 19 cm in einem normalen Jahr; Fellhorn/Kanzelwand: 3 cm auf etwa 1.442 m, gegenüber 7 cm in einem normalen Jahr; Grasgehren: 3 cm auf etwa 1.555 m, gegenüber 11 cm in einem normalen Jahr; Hörnerbahn Bolsterlang: 2 cm auf etwa 1.274 m, gegenüber 7 cm in einem normalen Jahr.",
+      "0 dieser 4 Skigebiete liegen über ihrer üblichen Höhe für dieses Datum.",
+      "Diese Höhen gelten für eine bestimmte Höhenlage jedes Bergs unterhalb des Gipfels und sind daher niedriger als die Werte der oberen Hänge weiter unten.",
+      "In früheren Wintern kam der beste Schnee in Zugspitze meist Anfang März / Ende März."
      ]
     },
     {
-     "h": "Wo der Neuschnee fiel",
+     "h": "Die Aussichten für die Woche",
      "p": [
-      "Die letzten drei Tage waren trocken oder fast, nirgends mehr als 2 cm."
+      "Bis zum dritten Tag sind an den schneereichsten Hängen bis zu 5 cm möglich; die Siebentagessumme erreicht 31 cm.",
+      "Der schneereichste Tag dürfte der Samstag, 21. November werden, mit bis zu 15 cm an den schneereichsten Stellen.",
+      "Die zweite Woche bringt bis zu 27 cm dort, wo es am meisten schneit."
+     ]
+    },
+    {
+     "h": "Von den Tälern bis zu den Gipfeln",
+     "p": [
+      "Mittlere Schneehöhe je Höhenband: zwischen 500 und 1.000 m im Schnitt unter 1 cm, 1 % bedeckt; zwischen 1.000 und 1.500 m im Schnitt 1 cm, 37 % bedeckt; zwischen 1.500 und 2.000 m im Schnitt 4 cm, 93 % bedeckt; zwischen 2.000 und 2.500 m im Schnitt 13 cm, 100 % bedeckt."
+     ]
+    },
+    {
+     "h": "Die Auswahl fürs Wochenende",
+     "p": [
+      "Den meisten Schnee unter den Skigebieten des Landes hat Zugspitze: 44 cm.",
+      "Knapp dahinter: Fellhorn/Kanzelwand (26 cm), Grasgehren (25 cm), Hörnerbahn Bolsterlang (25 cm) und Söllereck (22 cm).",
+      "In Zugspitze: 4 cm Neuschnee in drei Tagen, bis Donnerstag, 19. November werden 15 cm mehr erwartet.",
+      "In Fellhorn/Kanzelwand: 7 cm Neuschnee in drei Tagen, bis Donnerstag, 19. November werden 19 cm mehr erwartet.",
+      "67 der 230 beobachteten Skigebiete in Deutschland haben oben Schnee.",
+      "Der Rest der Auswahl: Grasgehren: 25 cm oben, 3 cm in drei Tagen, 11 cm erwartet; Hörnerbahn Bolsterlang: 25 cm oben, 2 cm in drei Tagen, 9 cm erwartet; Söllereck: 22 cm oben, 1 cm in drei Tagen, 9 cm erwartet."
      ]
     },
     {
@@ -236,46 +419,57 @@
      ]
     },
     {
-     "h": "Was kommt",
+     "h": "Wie viel des Landes weiß ist",
      "p": [
-      "Schnee ist angesagt: bis zu 5 cm in drei Tagen, bis zu 31 cm innerhalb von sieben Tagen.",
-      "Der schneereichste Tag dürfte der Samstag, 21. November werden, mit bis zu 15 cm an den schneereichsten Stellen.",
-      "Die zweite Woche bringt bis zu 27 cm dort, wo es am meisten schneit."
+      "Vor einer Woche waren es 1.690 km²; die Schneedecke hat um 420 km² zugelegt. Für eine weiße Landschaft: ab 1.200 m aufwärts."
      ]
     },
     {
-     "h": "Die schneereichsten Skigebiete",
+     "h": "Die letzten Schneefälle",
      "p": [
-      "An der Spitze steht Zugspitze mit 44 cm.",
-      "Danach: Fellhorn/Kanzelwand (26 cm), Grasgehren (25 cm), Hörnerbahn Bolsterlang (25 cm) und Söllereck (22 cm).",
-      "Zugspitze bekam in drei Tagen 4 cm und könnte bis Donnerstag, 19. November weitere 15 cm dazubekommen.",
-      "Fellhorn/Kanzelwand bekam in drei Tagen 7 cm und könnte bis Donnerstag, 19. November weitere 19 cm dazubekommen.",
-      "Heute sind 67 von 230 Skigebieten in Deutschland weiß."
+      "In den letzten drei Tagen kam kaum Neuschnee dazu: das Dreitagesmaximum liegt bei 2 cm."
+     ]
+    },
+    {
+     "h": "Die Nachbarn heute",
+     "p": [
+      "Zum Vergleich die Nachbarn am selben Tag: Österreich: 38 % weiß, vorn Kaprun mit 83 cm, bis zu 50 cm in der kommenden Woche; Schweiz: 53 % weiß, vorn Ovronnaz mit 136 cm, bis zu 112 cm in der kommenden Woche."
+     ]
+    },
+    {
+     "h": "Einen Skitag planen",
+     "p": [
+      "Über 1.500 m ist der Boden fast ganz weiß (93 % bedeckt), die Pisten dort haben eine durchgehende Unterlage.",
+      "Zwischen 1.000 m und 1.500 m ist die Decke lückenhaft, rund 37 % weiß: Gras und Steine zwischen dem Schnee.",
+      "Unterhalb von 1.000 m sind die Hänge noch fast schneefrei."
      ]
     }
    ],
    "advice": [
-    "Früher Schnee ist über Steinen dünn: zuerst auf präparierten Pisten bleiben.",
     "Über der Waldgrenze kann der Schnee verfrachtet sein: Grate im Blick behalten.",
-    "Neuschnee auf kalter Unterlage hält schlecht: an steilen Hängen vorsichtig sein."
+    "Vor der Anreise den Liftstatus des Skigebiets prüfen.",
+    "Vor dem Gelände abseits der Piste den lokalen Lawinenbericht lesen."
    ],
    "captions": {
-    "map": "Schneehöhe in Deutschland am 16. November"
+    "map": "Schneehöhe in Deutschland am 16. November",
+    "story": "Schneehöhe heute (Balken) gegenüber einem normalen Jahr (gestrichelt)"
    }
   }
  },
  "writers": {
   "en": {
    "writer": "template",
-   "voice": "sat"
+   "voice": "sat",
+   "rewrite": "requality"
   },
   "de": {
    "writer": "template",
-   "voice": "sat"
+   "voice": "sat",
+   "rewrite": "requality"
   }
  },
- "words_en": 284,
- "indexable": false,
+ "words_en": 632,
+ "indexable": true,
  "main": {
   "slug": "gletscher_skigebiet_zugspitze_ski_resort_zugspit",
   "name": "Zugspitze",
@@ -332,48 +526,103 @@
   }
  ],
  "table": {
-  "kind": "resorts",
+  "kind": "story",
+  "head": {
+   "en": [
+    "Resort",
+    "Today",
+    "Normal for the date",
+    "Share of normal"
+   ],
+   "fr": [
+    "Station",
+    "Aujourd'hui",
+    "Normale à cette date",
+    "Part de la normale"
+   ],
+   "de": [
+    "Skigebiet",
+    "Heute",
+    "Normal an diesem Tag",
+    "Anteil am Normalwert"
+   ]
+  },
   "rows": [
-   {
-    "slug": "gletscher_skigebiet_zugspitze_ski_resort_zugspit",
-    "name": "Zugspitze",
-    "depth": 44,
-    "new72": 4,
-    "next": 15,
-    "top_m": 2627
-   },
-   {
-    "slug": "skigebiet_fellhorn_kanzelwand",
-    "name": "Fellhorn/Kanzelwand",
-    "depth": 26,
-    "new72": 7,
-    "next": 19,
-    "top_m": 1965
-   },
-   {
-    "slug": "grasgehren",
-    "name": "Grasgehren",
-    "depth": 25,
-    "new72": 3,
-    "next": 11,
-    "top_m": 1674
-   },
-   {
-    "slug": "hornerbahn_bolsterlang",
-    "name": "Hörnerbahn Bolsterlang",
-    "depth": 25,
-    "new72": 2,
-    "next": 9,
-    "top_m": 1662
-   },
-   {
-    "slug": "skigebiet_sollereck",
-    "name": "Söllereck",
-    "depth": 22,
-    "new72": 1,
-    "next": 9,
-    "top_m": 1445
-   }
+   [
+    {
+     "t": "Zugspitze",
+     "slug": "gletscher_skigebiet_zugspitze_ski_resort_zugspit"
+    },
+    {
+     "cm": 12
+    },
+    {
+     "cm": 19
+    },
+    {
+     "pct": 63
+    }
+   ],
+   [
+    {
+     "t": "Fellhorn/Kanzelwand",
+     "slug": "skigebiet_fellhorn_kanzelwand"
+    },
+    {
+     "cm": 3
+    },
+    {
+     "cm": 7
+    },
+    {
+     "pct": 43
+    }
+   ],
+   [
+    {
+     "t": "Grasgehren",
+     "slug": "grasgehren"
+    },
+    {
+     "cm": 3
+    },
+    {
+     "cm": 11
+    },
+    {
+     "pct": 27
+    }
+   ],
+   [
+    {
+     "t": "Hörnerbahn Bolsterlang",
+     "slug": "hornerbahn_bolsterlang"
+    },
+    {
+     "cm": 2
+    },
+    {
+     "cm": 7
+    },
+    {
+     "pct": 29
+    }
+   ],
+   [
+    {
+     "t": "Söllereck",
+     "slug": "skigebiet_sollereck"
+    },
+    {
+     "cm": 4
+    },
+    {
+     "cm": 4
+    },
+    {
+     "pct": 100
+    }
+   ]
   ]
  },
  "bulletins": [],
@@ -396,20 +645,23 @@
   "with": "norway-snow-report-16-november-2026"
  },
  "publish_utc": "2026-11-16T20:42:46Z",
- "cover": {
+ "cover": {},
+ "rewrite": {
   "v": 1,
-  "style": "map",
-  "files": {
-   "en": [
-    "blog/media/2026/11/germany-snow-report-16-november-2026/cover-en.webp",
-    "blog/media/2026/11/germany-snow-report-16-november-2026/cover-en_t.webp"
-   ],
-   "de": [
-    "blog/media/2026/11/germany-snow-report-16-november-2026/cover-de.webp",
-    "blog/media/2026/11/germany-snow-report-16-november-2026/cover-de_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "vs_normal_low",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 632,
+  "overlap": 22.7,
+  "with": "france-snow-report-16-november-2026",
+  "langs_off": [],
+  "score": 105.2,
+  "intent": "cc:DE|vs_normal_low",
+  "guide": false,
+  "v": 1
  }
 }

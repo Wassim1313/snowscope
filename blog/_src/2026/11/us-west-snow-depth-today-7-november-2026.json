@@ -386,7 +386,7 @@
   }
  },
  "words_en": 421,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "kendall_mountain_recreation_area",
   "name": "Kendall Mountain",
@@ -496,5 +496,22 @@
  "trip_day": "2026-11-14",
  "map_link": "https://snowscope.app/#@37.812,-107.656,9.0",
  "seconds": 0.0,
- "publish_utc": "2026-11-07T18:30:00Z"
+ "publish_utc": "2026-11-07T18:30:00Z",
+ "noindex_why": "quality: words 545 < 600; overlap 54 % with us-west-snow-depth-today-3-november-2026; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 545 < 600",
+   "overlap 54 % with us-west-snow-depth-today-3-november-2026",
+   "dated pure-numbers daily"
+  ],
+  "words": 545,
+  "overlap": 53.7,
+  "with": "us-west-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 51.2,
+  "intent": "kendall_mountain_recreation_area|snow-depth",
+  "guide": false,
+  "v": 1
+ }
 }

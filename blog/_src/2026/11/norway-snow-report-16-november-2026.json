@@ -139,6 +139,121 @@
    ],
    "from_day": 8,
    "to_day": 14
+  },
+  "trend": [
+   {
+    "date": "2026-11-16",
+    "snow_km2": 246310,
+    "new72": 55,
+    "leader": "Riksgränsen",
+    "leader_cm": 173
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Riksgränsen",
+     "slug": "riksgransen",
+     "now_cm": 55,
+     "usual_cm": 57,
+     "high_cm": 88,
+     "week_ago_cm": 59,
+     "height_m": 708,
+     "best_weeks": [
+      15,
+      16,
+      14
+     ],
+     "ratio_pct": 96
+    },
+    {
+     "name": "Sulitjelma Fjellandsby",
+     "slug": "sulitjelma_fjellandsby",
+     "now_cm": 50,
+     "usual_cm": 51,
+     "high_cm": 76,
+     "week_ago_cm": 50,
+     "height_m": 465,
+     "best_weeks": [
+      14,
+      16,
+      15
+     ],
+     "ratio_pct": 98
+    },
+    {
+     "name": "Tromsø Alpinpark",
+     "slug": "troms_alpinpark_norway",
+     "now_cm": 16,
+     "usual_cm": 36,
+     "high_cm": 59,
+     "week_ago_cm": 9,
+     "height_m": 222,
+     "best_weeks": [
+      14,
+      13,
+      15
+     ],
+     "ratio_pct": 44
+    },
+    {
+     "name": "Galdhøpiggen Sommerskisenter",
+     "slug": "galdhpiggen_sommerskisenter",
+     "now_cm": 33,
+     "usual_cm": 80,
+     "high_cm": 116,
+     "week_ago_cm": 23,
+     "height_m": 2015,
+     "best_weeks": [
+      15,
+      16,
+      11
+     ],
+     "ratio_pct": 41
+    },
+    {
+     "name": "Steilia",
+     "slug": "steilia",
+     "now_cm": 30,
+     "usual_cm": 56,
+     "high_cm": 80,
+     "week_ago_cm": 28,
+     "height_m": 455,
+     "best_weeks": [
+      15,
+      14,
+      16
+     ],
+     "ratio_pct": 54
+    }
+   ],
+   "n": 5,
+   "above": 0,
+   "median_pct": 54
+  },
+  "neighbours": [
+   {
+    "cc": "SE",
+    "name": "Sweden",
+    "white_share_pct": 79,
+    "leader": "Abisko",
+    "leader_cm": 129,
+    "next_7_days_max_cm": 18
+   },
+   {
+    "cc": "FI",
+    "name": "Finland",
+    "white_share_pct": 52,
+    "leader": "Kallin",
+    "leader_cm": 23,
+    "next_7_days_max_cm": 19
+   }
+  ],
+  "glacier": false,
+  "story": {
+   "id": "storm_track",
+   "place": "cc:NO",
+   "score": 75
   }
  },
  "media": [
@@ -163,60 +278,91 @@
  ],
  "docs": {
   "en": {
-   "title": "Snow in Norway today: how much is on the ground, 16 November 2026",
-   "description": "Norway snow today, 16 November: snow cover, new snow, snow depth by height, the next days and the best resorts.",
-   "lede": "The white area in Norway stands at about 246,310 km² today, up 5,370 km² on yesterday. Roughly 87 % of the country's mapped mountains and hills are covered.",
+   "title": "Where the snow fell in Norway: Jotunheimen first, up to 55 cm",
+   "description": "Where the snow fell in Norway: Jotunheimen first, up to 55 cm. Snow cover, new snow, resorts and the days ahead in Norway on 16 November.",
+   "lede": "The last three days brought up to 55 cm in Norway. The snow did not fall evenly: Jotunheimen and Hardangervidda got the most.",
    "sections": [
     {
-     "h": "Today's snow cover",
+     "h": "Where the snow fell",
      "p": [
-      "Even the lowest ground is mostly white. Last week's 125,910 km² has grown by 120,400 km²."
+      "At least 5 cm fell over some 133,130 km². Resorts on the side of the mountains that faced the weather got the fresh snow; sheltered valleys got far less.",
+      "246,310 km² of snow-covered ground in Norway this Monday, up 5,370 km² on yesterday. In other words, 87 % of the mapped high ground is white."
      ]
     },
     {
-     "h": "The latest snowfall",
+     "h": "New snow in the last three days",
      "p": [
-      "In the last 72 hours the most new snow, up to 55 cm, fell over Jotunheimen and Hardangervidda.",
-      "In the past day, up to 11 cm was added.",
-      "About 133,130 km² received at least 5 cm."
+      "Jotunheimen and Hardangervidda got the most fresh snow over three days, up to 55 cm.",
+      "The last 24 hours alone brought up to 11 cm.",
+      "At least 5 cm fell over some 133,130 km²."
      ]
     },
     {
-     "h": "How deep it is, height by height",
-     "p": [
-      "Height makes the difference: between 0 and 500 m, 7 cm on average, 77 % covered; between 500 and 1,000 m, 18 cm on average, 96 % covered; between 1,000 and 1,500 m, 25 cm on average, 100 % covered; between 1,500 and 2,000 m, 29 cm on average, 100 % covered; between 2,000 and 2,500 m, 39 cm on average, 100 % covered."
-     ]
-    },
-    {
-     "h": "Skiing conditions",
-     "p": [
-      "Fresh snow on top of the base means soft turns on the upper slopes, while the lower runs stay patchy.",
-      "Keep an eye on the forecast: the coming snow could change the picture quickly."
-     ]
-    },
-    {
-     "h": "Best resorts right now",
+     "h": "The resorts with the most snow",
      "p": [
       "At the top of the list, Riksgränsen reports 173 cm.",
-      "Close behind: Sulitjelma Fjellandsby (130 cm), Tromsø Alpinpark (92 cm), Galdhøpiggen Sommerskisenter (61 cm) and Steilia (58 cm).",
-      "At Riksgränsen: 4 cm of fresh snow over three days, 5 cm more expected by Thursday 19 November.",
-      "At Sulitjelma Fjellandsby: 10 cm of fresh snow over three days, 3 cm more expected by Thursday 19 November.",
-      "Snow lies on the upper slopes of 144 out of 155 resorts in Norway."
+      "Next on the list: Sulitjelma Fjellandsby (130 cm), Tromsø Alpinpark (92 cm), Galdhøpiggen Sommerskisenter (61 cm) and Steilia (58 cm).",
+      "Riksgränsen picked up 4 cm in the last three days and could add 5 cm by Thursday 19 November.",
+      "Sulitjelma Fjellandsby picked up 10 cm in the last three days and could add 3 cm by Thursday 19 November.",
+      "Count 144 white resorts out of 155 in Norway today.",
+      "The rest of the shortlist: Tromsø Alpinpark: 92 cm on top, 8 cm in three days, 4 cm expected; Galdhøpiggen Sommerskisenter: 61 cm on top, 19 cm in three days, 1 cm expected; Steilia: 58 cm on top, 3 cm in three days, 2 cm expected."
      ]
     },
     {
-     "h": "The next days",
+     "h": "What is coming",
      "p": [
       "Snow is in the forecast: up to 11 cm by the end of the third day, up to 39 cm within seven days.",
       "The snowiest day looks like Friday 20 November, with up to 16 cm in the snowiest spots.",
-      "Further out, days 8 to 14 show up to 35 cm on the snowiest slopes."
+      "The second week adds up to 35 cm where it snows most."
+     ]
+    },
+    {
+     "h": "Low, middle and high ground",
+     "p": [
+      "Average depth of the snowpack by height band: between 0 and 500 m, 7 cm on average, 77 % covered; between 500 and 1,000 m, 18 cm on average, 96 % covered; between 1,000 and 1,500 m, 25 cm on average, 100 % covered; between 1,500 and 2,000 m, 29 cm on average, 100 % covered; between 2,000 and 2,500 m, 39 cm on average, 100 % covered."
+     ]
+    },
+    {
+     "h": "Snow cover today",
+     "p": [
+      "Last week's 125,910 km² has grown by 120,400 km². Even the lowest ground is mostly white."
+     ]
+    },
+    {
+     "h": "Compared with past winters",
+     "p": [
+      "Here is how the deepest resorts compare with their usual 16 November: Riksgränsen: 55 cm at about 708 m, against 57 cm in a normal year; Sulitjelma Fjellandsby: 50 cm at about 465 m, against 51 cm in a normal year; Tromsø Alpinpark: 16 cm at about 222 m, against 36 cm in a normal year; Galdhøpiggen Sommerskisenter: 33 cm at about 2,015 m, against 80 cm in a normal year.",
+      "0 of these 4 resorts are above their usual depth for the date.",
+      "These depths are for one height on each mountain, below the top, so they read lower than the upper-slope numbers further down.",
+      "In past winters the best snow at Riksgränsen usually came early April / mid-April."
+     ]
+    },
+    {
+     "h": "The neighbours today",
+     "p": [
+      "For comparison, the neighbours on the same day: Sweden: 79 % white, deepest Abisko with 129 cm, up to 18 cm in the week ahead; Finland: 52 % white, deepest Kallin with 23 cm, up to 19 cm in the week ahead."
+     ]
+    },
+    {
+     "h": "Planning a day on the snow",
+     "p": [
+      "Above 500 m the ground is almost fully white (96 % covered), so runs up there have a continuous base.",
+      "Between 0 m and 500 m the cover is patchy, about 77 % white: expect grass and stones between the snow.",
+      "If you can choose the day, go after Friday 20 November: the fresh snow then has time to settle and the roads to be cleared."
+     ]
+    },
+    {
+     "h": "What it means on the slopes",
+     "p": [
+      "The new snow freshens the upper slopes; lower down it may already be heavy or wet.",
+      "Keep an eye on the forecast: the coming snow could change the picture quickly."
      ]
     }
    ],
    "advice": [
-    "Early-season snow is thin over rocks: ski the groomed runs first.",
+    "Roads to the higher resorts may need winter tyres or chains.",
     "Snow above the tree line can be wind-packed: watch the ridges.",
-    "Fresh snow on a cold base sticks badly: take care on steep slopes."
+    "Check the resort's own lift status before you travel."
    ],
    "captions": {
     "new": "Snow depth in Norway on 16 November",
@@ -226,7 +372,7 @@
   "nb": {
    "title": "Hvor mye snø er det i Norge? Snødekke og varsel, 16. november 2026",
    "description": "Snø i Norge 16. november: snødekke, nysnø, snødybde etter høyde, de neste dagene og de beste skistedene.",
-   "lede": "Snødekket i Norge strekker seg over rundt 246 310 km² (mandag 16. november). Det er 5 370 km² mer enn i går. Det er 87 % av området i Norge vi følger.",
+   "lede": "I Norge er rundt 246 310 km² snødekt i dag (mandag 16. november). Det er 5 370 km² mer enn i går.",
    "sections": [
     {
      "h": "Snødekket i dag",
@@ -237,7 +383,7 @@
     {
      "h": "Snødybde etter høyde",
      "p": [
-      "Gjennomsnittlig snødybde etter høydelag: 0–500 m: i snitt 7 cm (77 % snødekt); 500–1 000 m: i snitt 18 cm (96 % snødekt); 1 000–1 500 m: i snitt 25 cm (100 % snødekt); 1 500–2 000 m: i snitt 29 cm (100 % snødekt); 2 000–2 500 m: i snitt 39 cm (100 % snødekt)."
+      "Snødybden avhenger av høyden: 0–500 m: i snitt 7 cm (77 % snødekt); 500–1 000 m: i snitt 18 cm (96 % snødekt); 1 000–1 500 m: i snitt 25 cm (100 % snødekt); 1 500–2 000 m: i snitt 29 cm (100 % snødekt); 2 000–2 500 m: i snitt 39 cm (100 % snødekt)."
      ]
     },
     {
@@ -259,8 +405,9 @@
      "h": "De beste skistedene nå",
      "p": [
       "Øverst på lista: Riksgränsen, 173 cm i de øvre bakkene.",
+      "Skisteder med snø i de øvre bakkene: 144 av 155.",
       "Deretter: Sulitjelma Fjellandsby (130 cm), Tromsø Alpinpark (92 cm), Galdhøpiggen Sommerskisenter (61 cm) og Steilia (58 cm).",
-      "Sulitjelma Fjellandsby: 10 cm nysnø på tre dager og opptil 3 cm til innen torsdag, 19. november."
+      "Riksgränsen: 4 cm nysnø på tre dager og opptil 5 cm til innen torsdag, 19. november."
      ]
     },
     {
@@ -273,8 +420,7 @@
     }
    ],
    "advice": [
-    "Over tregrensa kan snøen være vindpåvirket: vær varsom på ryggene.",
-    "Les det lokale skredvarselet før du kjører utenfor løypene."
+    "Tidlig i sesongen er snøen tynn over steinene: hold deg i preparerte bakker."
    ],
    "captions": {
     "new": "Snødybde i Norge, 16. november",
@@ -285,14 +431,16 @@
  "writers": {
   "en": {
    "writer": "template",
-   "voice": "field"
+   "voice": "field",
+   "rewrite": "requality"
   },
   "nb": {
    "writer": "template",
-   "voice": "field"
+   "voice": "field",
+   "rewrite": "requality"
   }
  },
- "words_en": 312,
+ "words_en": 671,
  "indexable": true,
  "main": {
   "slug": "riksgransen",
@@ -415,20 +563,23 @@
   "with": "alps-snow-cover-satellite-modis-13-november-2026"
  },
  "publish_utc": "2026-11-16T20:42:46Z",
- "cover": {
+ "cover": {},
+ "rewrite": {
   "v": 1,
-  "style": "ranked",
-  "files": {
-   "en": [
-    "blog/media/2026/11/norway-snow-report-16-november-2026/cover-en.webp",
-    "blog/media/2026/11/norway-snow-report-16-november-2026/cover-en_t.webp"
-   ],
-   "nb": [
-    "blog/media/2026/11/norway-snow-report-16-november-2026/cover-nb.webp",
-    "blog/media/2026/11/norway-snow-report-16-november-2026/cover-nb_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "storm_track",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 671,
+  "overlap": 0.8,
+  "with": "us-west-fresh-snow-powder-alert-4-november-2026",
+  "langs_off": [],
+  "score": 136.6,
+  "intent": "cc:NO|storm_track",
+  "guide": false,
+  "v": 1
  }
 }

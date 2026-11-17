@@ -2633,7 +2633,7 @@
   }
  },
  "words_en": 316,
- "indexable": true,
+ "indexable": false,
  "main": {
   "name": "Oukaïmeden",
   "lat": 31.2,
@@ -2661,5 +2661,21 @@
  "bulletins": [],
  "trip_day": "",
  "map_link": "https://snowscope.app/#@31.2,-7.86,8",
- "publish_utc": "2026-11-08T10:05:00Z"
+ "publish_utc": "2026-11-08T10:05:00Z",
+ "noindex_why": "quality: words 366 < 600; intent atlas|physics indexed on 2026-11-07",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 366 < 600",
+   "intent atlas|physics indexed on 2026-11-07"
+  ],
+  "words": 366,
+  "overlap": 0.8,
+  "with": "atlas-rain-not-snow-physics-7-november-2026",
+  "langs_off": [],
+  "score": 42.3,
+  "intent": "atlas|physics",
+  "guide": false,
+  "v": 1
+ }
 }

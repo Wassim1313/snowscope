@@ -313,7 +313,49 @@
    "high slopes and north-facing slopes keep snow longest",
    "early-season snow is thin: stay on groomed pistes",
    "read the official avalanche bulletin before off-piste"
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Telluride",
+     "slug": "telluride_ski_area",
+     "now_cm": 24,
+     "usual_cm": 26,
+     "high_cm": 76,
+     "week_ago_cm": 25,
+     "height_m": 3237,
+     "best_weeks": [
+      53,
+      11,
+      10
+     ],
+     "ratio_pct": 92
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Telluride",
+   "top_cm": 96,
+   "top_m": 3812,
+   "base_cm": 0,
+   "base_m": 2662,
+   "rain_day": "2026-11-12",
+   "freezing_m": 4000,
+   "lift_top_m": 3812,
+   "next_cm": 13,
+   "second": "Cimarron Mountain Club",
+   "second_cm": 98,
+   "depth_cm": 106
+  },
+  "story": {
+   "id": "vs_normal_par",
+   "place": "resort:telluride_ski_area",
+   "score": 32,
+   "resort": "Telluride"
+  }
  },
  "media": [
   {
@@ -337,6 +379,17 @@
      "p": [
       "By 15 November the forecast adds 5 in (13 cm) at Telluride, 3 in (7 cm) at Cimarron Mountain Club and 4 in (11 cm) at Wolf Creek to the snowpack.",
       "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 10,620 ft (3,237 m), Telluride has 9 in (24 cm) today; a normal 12 November has 10 in (26 cm) there.",
+      "Only one winter in ten has more than 30 in (76 cm) on this date.",
+      "A week ago the same spot had 10 in (25 cm).",
+      "In past winters the best snow at Telluride usually came early January / early March.",
+      "Day by day at Telluride: Saturday 14 November 5 in (12 cm); Sunday 15 November 0 in (1 cm).",
+      "Height by height at Telluride: 8,734 ft (2,662 m) 0 in (0 cm) on the ground, 4 in (10 cm) more in the next 7 days; 10,620 ft (3,237 m) 2 in (6 cm) on the ground, 8 in (20 cm) more in the next 7 days; 12,507 ft (3,812 m) 38 in (96 cm) on the ground, 9 in (23 cm) more in the next 7 days."
      ]
     },
     {
@@ -380,7 +433,7 @@
    "voice": "hydro"
   }
  },
- "words_en": 358,
+ "words_en": 632,
  "indexable": true,
  "main": {
   "slug": "telluride_ski_area",
@@ -489,5 +542,35 @@
   "max": 0.194,
   "with": "western-canada-where-to-ski-this-weekend-11-november-2026"
  },
- "publish_utc": "2026-11-12T18:23:30Z"
+ "publish_utc": "2026-11-12T18:23:30Z",
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_par",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 632,
+  "overlap": 20.0,
+  "with": "us-west-telluride-snow-depth-today-8-november-2026",
+  "langs_off": [],
+  "score": 85.2,
+  "intent": "resort:telluride_ski_area|vs_normal_par",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "hero",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-where-to-ski-this-weekend-12-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-where-to-ski-this-weekend-12-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

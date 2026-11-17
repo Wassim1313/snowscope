@@ -458,7 +458,7 @@
   }
  },
  "words_en": 449,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "purgatory_resort",
   "name": "Purgatory",
@@ -495,5 +495,20 @@
   "with": "oukaimeden-neige-atlas-maroc-12-novembre-2026",
   "tries": 0
  },
- "publish_utc": "2026-11-12T14:19:02Z"
+ "publish_utc": "2026-11-12T14:19:02Z",
+ "noindex_why": "quality: words 510 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 510 < 600"
+  ],
+  "words": 510,
+  "overlap": 1.8,
+  "with": "mammoth-mountain-season-planner",
+  "langs_off": [],
+  "score": 53.5,
+  "intent": "purgatory_resort|ski-report",
+  "guide": false,
+  "v": 1
+ }
 }

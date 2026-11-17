@@ -437,7 +437,7 @@
   }
  },
  "words_en": 353,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "la_grave",
   "name": "La Grave",
@@ -545,5 +545,21 @@
   "max": 0.156,
   "with": "alps-where-to-ski-this-weekend-4-november-2026"
  },
- "publish_utc": "2026-11-13T12:52:44Z"
+ "publish_utc": "2026-11-13T12:52:44Z",
+ "noindex_why": "quality: words 470 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 470 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 470,
+  "overlap": 10.8,
+  "with": "alps-where-to-ski-best-snow-8-november-2026",
+  "langs_off": [],
+  "score": 46.7,
+  "intent": "alps|where-to-ski",
+  "guide": false,
+  "v": 1
+ }
 }

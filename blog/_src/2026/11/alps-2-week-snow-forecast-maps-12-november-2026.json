@@ -628,7 +628,42 @@
    "resort values = the slopes at or above mid-mountain within a few km of the resort, not the village",
    "days 1-14 = tomorrow to day 14; week 1 = days 1-7, week 2 = days 8-14",
    "snow by height = all the mountain terrain of the region, not only resorts"
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Saint François Longchamp",
+     "slug": "saint_francois_longchamp",
+     "now_cm": 3,
+     "usual_cm": 24,
+     "high_cm": 55,
+     "week_ago_cm": 4,
+     "height_m": 2138,
+     "best_weeks": [
+      9,
+      10,
+      13
+     ],
+     "ratio_pct": 12
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Saint François Longchamp",
+   "next_cm": 8,
+   "second": "Paradiski",
+   "second_cm": 58,
+   "depth_cm": 24
+  },
+  "story": {
+   "id": "vs_normal_low",
+   "place": "resort:saint_francois_longchamp",
+   "score": 56,
+   "resort": "Saint François Longchamp"
+  }
  },
  "media": [
   {
@@ -674,6 +709,16 @@
       "At La Clusaz (France) the two weeks add up to about 110 cm (87 cm–134 cm depending on the model): 91 cm by the end of the first week, then 20 cm more. The snowiest day is 18 November with 35 cm; 5 days bring 5 cm or more.",
       "Ovronnaz (Switzerland): about 110 cm in 14 days (90 cm–130 cm between the models), 94 cm in the first week and 16 cm in the second. Mark 18 November: that is the biggest day, with 32 cm, out of 5 days at 5 cm or more.",
       "At Arêches Beaufort (France) the two weeks add up to about 108 cm (87 cm–129 cm depending on the model): 92 cm by the end of the first week, then 16 cm more. The snowiest day is 18 November with 37 cm; 5 days bring 5 cm or more."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 2,138 m, Saint François Longchamp has 3 cm today; a normal 12 November has 24 cm there.",
+      "Only one winter in ten has more than 55 cm on this date.",
+      "A week ago the same spot had 4 cm.",
+      "In past winters the best snow at Saint François Longchamp usually came early March / late March.",
+      "A slow start is common and says little about January; for now the highest lifts and the runs with snowmaking are the safe choice."
      ]
     },
     {
@@ -733,6 +778,16 @@
      ]
     },
     {
+     "h": "Face aux hivers passés",
+     "p": [
+      "Vers 2 138 m, Saint François Longchamp a 3 cm aujourd'hui ; un 12 novembre normal y compte 24 cm.",
+      "Un hiver sur dix seulement dépasse 55 cm à cette date.",
+      "Il y a une semaine, le même endroit avait 4 cm.",
+      "Les hivers passés, la meilleure neige à Saint François Longchamp arrivait d'habitude début mars / fin mars.",
+      "Un début lent est fréquent et dit peu de choses sur janvier ; pour l'instant, les remontées les plus hautes et les pistes équipées de neige de culture sont le choix sûr."
+     ]
+    },
+    {
      "h": "Première semaine contre seconde",
      "p": [
       "Sur toute la région, 78 % de la neige de la quinzaine tombe la première semaine (du 13 novembre au 19 novembre), le reste la seconde (du 20 novembre au 26 novembre).",
@@ -785,7 +840,7 @@
    "rewrite": 1
   }
  },
- "words_en": 744,
+ "words_en": 920,
  "indexable": true,
  "main": {
   "slug": "saint_francois_longchamp",
@@ -925,5 +980,39 @@
   "max": 0.126,
   "with": "us-west-2-week-snow-forecast-maps-12-november-2026"
  },
- "publish_utc": "2026-11-12T18:20:16Z"
+ "publish_utc": "2026-11-12T18:20:16Z",
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_low",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 920,
+  "overlap": 25.0,
+  "with": "us-west-2-week-snow-forecast-maps-12-november-2026",
+  "langs_off": [],
+  "score": 128.0,
+  "intent": "resort:saint_francois_longchamp|vs_normal_low",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "poster",
+  "files": {
+   "en": [
+    "blog/media/2026/11/alps-2-week-snow-forecast-maps-12-november-2026/cover-en.webp",
+    "blog/media/2026/11/alps-2-week-snow-forecast-maps-12-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/alps-2-week-snow-forecast-maps-12-november-2026/cover-fr.webp",
+    "blog/media/2026/11/alps-2-week-snow-forecast-maps-12-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

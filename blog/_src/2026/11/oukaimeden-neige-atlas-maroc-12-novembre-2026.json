@@ -680,7 +680,7 @@
   }
  },
  "words_en": 402,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "oukaimeden",
   "name": "Oukaïmeden",
@@ -744,5 +744,20 @@
   },
   "credit": null,
   "photo": null
+ },
+ "noindex_why": "quality: words 456 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 456 < 600"
+  ],
+  "words": 456,
+  "overlap": 1.0,
+  "with": "revelstoke-top-to-bottom-snow-on-the-longest-descent",
+  "langs_off": [],
+  "score": 50.8,
+  "intent": "oukaimeden|snow-check",
+  "guide": true,
+  "v": 1
  }
 }

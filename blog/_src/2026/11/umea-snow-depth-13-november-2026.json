@@ -313,7 +313,7 @@
   }
  },
  "words_en": 272,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": null,
   "name": "Umeå",
@@ -340,5 +340,21 @@
   "with": "oslo-snow-depth-today-13-november-2026",
   "tries": 0
  },
- "publish_utc": "2026-11-13T19:49:33Z"
+ "publish_utc": "2026-11-13T19:49:33Z",
+ "noindex_why": "quality: words 333 < 600; no table or chart of its own",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 333 < 600",
+   "no table or chart of its own"
+  ],
+  "words": 333,
+  "overlap": 0.3,
+  "with": "st-moritz-corviglia-glossary-snow-engadin",
+  "langs_off": [],
+  "score": 34.6,
+  "intent": "umea|snow-now",
+  "guide": false,
+  "v": 1
+ }
 }

@@ -130,7 +130,129 @@
   "n_resorts_with_snow": 59,
   "resort_next_until": "2026-11-20",
   "outlook": null,
-  "week2": null
+  "week2": null,
+  "trend": [
+   {
+    "date": "2026-11-16",
+    "snow_km2": 256990,
+    "new72": 9,
+    "leader": "Abisko",
+    "leader_cm": 129
+   },
+   {
+    "date": "2026-11-17",
+    "snow_km2": 258540,
+    "new72": 7,
+    "leader": "Björkliden",
+    "leader_cm": 131
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Björkliden",
+     "slug": "bjorkliden",
+     "now_cm": 45,
+     "usual_cm": 45,
+     "high_cm": 70,
+     "week_ago_cm": 48,
+     "height_m": 678,
+     "best_weeks": [
+      15,
+      14,
+      16
+     ],
+     "ratio_pct": 100
+    },
+    {
+     "name": "Abisko",
+     "slug": "abisko",
+     "now_cm": 32,
+     "usual_cm": 28,
+     "high_cm": 44,
+     "week_ago_cm": 31,
+     "height_m": 652,
+     "best_weeks": [
+      14,
+      15,
+      13
+     ],
+     "ratio_pct": 114
+    },
+    {
+     "name": "Huså",
+     "slug": "husa",
+     "now_cm": 19,
+     "usual_cm": 18,
+     "high_cm": 38,
+     "week_ago_cm": 3,
+     "height_m": 548,
+     "best_weeks": [
+      10,
+      11,
+      14
+     ],
+     "ratio_pct": 106
+    },
+    {
+     "name": "Almåsa",
+     "slug": "almasa",
+     "now_cm": 22,
+     "usual_cm": 16,
+     "high_cm": 36,
+     "week_ago_cm": 17,
+     "height_m": 560,
+     "best_weeks": [
+      13,
+      10,
+      11
+     ],
+     "ratio_pct": 138
+    },
+    {
+     "name": "Högfjället",
+     "slug": "hogfjallet",
+     "now_cm": 14,
+     "usual_cm": 9,
+     "high_cm": 31,
+     "week_ago_cm": 6,
+     "height_m": 790,
+     "best_weeks": [
+      8,
+      10,
+      11
+     ],
+     "ratio_pct": 156
+    }
+   ],
+   "n": 5,
+   "above": 4,
+   "median_pct": 114
+  },
+  "neighbours": [
+   {
+    "cc": "NO",
+    "name": "Norway",
+    "white_share_pct": 89,
+    "leader": "Riksgränsen",
+    "leader_cm": 171,
+    "next_7_days_max_cm": 39
+   },
+   {
+    "cc": "FI",
+    "name": "Finland",
+    "white_share_pct": 59,
+    "leader": "Kallin",
+    "leader_cm": 25,
+    "next_7_days_max_cm": 15
+   }
+  ],
+  "glacier": false,
+  "story": {
+   "id": "resorts_ready",
+   "place": "cc:SE",
+   "score": 45
+  }
  },
  "media": [
   {
@@ -154,58 +276,89 @@
  ],
  "docs": {
   "en": {
-   "title": "Sweden snow report today: snow depth and new snow, 17 November 2026",
-   "description": "Sweden snow today, 17 November: snow cover, new snow, snow depth by height, the next days and the best resorts.",
-   "lede": "Snow covers roughly 258,540 km² in Sweden on 17 November, about the same as yesterday. Roughly 79 % of the country's mapped mountains and hills are covered.",
+   "title": "How many resorts in Sweden have snow? 59 of 75 on 17 November",
+   "description": "How many resorts in Sweden have snow? 59 of 75 on 17 November. Snow cover, new snow, resorts and the days ahead in Sweden on 17 November.",
+   "lede": "59 of the 75 resorts in Sweden have snow on their upper slopes today. Björkliden leads with 45 cm.",
    "sections": [
     {
-     "h": "How much of the country is white",
+     "h": "Which resorts have snow",
      "p": [
-      "A week ago it was 119,070 km², so the cover has grown by 139,470 km². Even the lowest ground is mostly white."
+      "Snow on the upper slopes is not the same as open runs: lifts open when the base is deep enough to groom, and the resort decides that.",
+      "Snow covers roughly 258,540 km² in Sweden on 17 November, little changed from yesterday. That is 79 % of the high ground we map in Sweden."
      ]
     },
     {
-     "h": "The latest snowfall",
+     "h": "Shortlist for the weekend",
      "p": [
-      "In the last 72 hours the most new snow, up to 7 cm, fell over the Hemavan fjells, the Lapland fjells and the Jämtland mountains.",
-      "About 30,960 km² received at least 5 cm."
+      "Björkliden leads with 131 cm on its upper slopes.",
+      "Then come Abisko (131 cm), Huså (33 cm), Almåsa (32 cm) and Högfjället (29 cm).",
+      "Björkliden picked up 4 cm in the last three days and could add 11 cm by Friday 20 November.",
+      "Abisko picked up 4 cm in the last three days and could add 10 cm by Friday 20 November.",
+      "59 of the 75 resorts we follow in Sweden have snow on their upper slopes.",
+      "The rest of the shortlist: Huså: 33 cm on top, 3 cm in three days, 5 cm expected; Almåsa: 32 cm on top, 1 cm in three days, 6 cm expected; Högfjället: 29 cm on top, 1 cm in three days, 9 cm expected."
      ]
     },
     {
-     "h": "Low, middle and high ground",
+     "h": "Snow depth by height",
      "p": [
-      "Height makes the difference: 0-500 m: on average 8 cm (72 % of the ground white); 500-1,000 m: on average 14 cm (100 % of the ground white); 1,000-1,500 m: on average 42 cm (100 % of the ground white); 1,500-2,000 m: on average 67 cm (100 % of the ground white)."
+      "By height, the picture looks like this: between 0 and 500 m, 8 cm on average, 72 % covered; between 500 and 1,000 m, 14 cm on average, 100 % covered; between 1,000 and 1,500 m, 42 cm on average, 100 % covered; between 1,500 and 2,000 m, 67 cm on average, 100 % covered."
+     ]
+    },
+    {
+     "h": "The next days",
+     "p": [
+      "Over the next three days up to 15 cm is expected, and up to 17 cm over the week.",
+      "The snowiest day looks like Wednesday 18 November, with up to 11 cm in the snowiest spots."
      ]
     },
     {
      "h": "On the ground",
      "p": [
       "Each day adds white ground, a good sign for the resorts that rely on natural snow.",
-      "With more snow in the forecast, the next days should improve things further."
+      "Keep an eye on the forecast: the coming snow could change the picture quickly."
      ]
     },
     {
-     "h": "What is coming",
+     "h": "Snow on the ground",
      "p": [
-      "The week ahead could bring up to 17 cm, 15 cm of it in the next three days.",
-      "Wednesday 18 November stands out, with up to 11 cm in a day."
+      "Even the lowest ground is mostly white. Compared with 119,070 km² seven days ago, that is 139,470 km² more."
      ]
     },
     {
-     "h": "Shortlist for the weekend",
+     "h": "The latest snowfall",
      "p": [
-      "At the top of the list, Björkliden reports 131 cm.",
-      "Close behind: Abisko (131 cm), Huså (33 cm), Almåsa (32 cm) and Högfjället (29 cm).",
-      "At Björkliden: 4 cm of fresh snow over three days, 11 cm more expected by Friday 20 November.",
-      "Abisko picked up 4 cm in the last three days and could add 10 cm by Friday 20 November.",
-      "Snow lies on the upper slopes of 59 out of 75 resorts in Sweden."
+      "The Hemavan fjells, the Lapland fjells and the Jämtland mountains got the most fresh snow over three days, up to 7 cm.",
+      "About 30,960 km² received at least 5 cm."
+     ]
+    },
+    {
+     "h": "How this start compares",
+     "p": [
+      "Here is how the deepest resorts compare with their usual 17 November: Björkliden: 45 cm at about 678 m, against 45 cm in a normal year; Abisko: 32 cm at about 652 m, against 28 cm in a normal year; Huså: 19 cm at about 548 m, against 18 cm in a normal year; Almåsa: 22 cm at about 560 m, against 16 cm in a normal year.",
+      "3 of these 4 resorts are above their usual depth for the date.",
+      "These depths are for one height on each mountain, below the top, so they read lower than the upper-slope numbers further down.",
+      "In past winters the best snow at Björkliden usually came early April / mid-April."
+     ]
+    },
+    {
+     "h": "The neighbours today",
+     "p": [
+      "For comparison, the neighbours on the same day: Norway: 89 % white, deepest Riksgränsen with 171 cm, up to 39 cm in the week ahead; Finland: 59 % white, deepest Kallin with 25 cm, up to 15 cm in the week ahead."
+     ]
+    },
+    {
+     "h": "Planning a day on the snow",
+     "p": [
+      "Above 500 m the ground is almost fully white (100 % covered), so runs up there have a continuous base.",
+      "Between 0 m and 500 m the cover is patchy, about 72 % white: expect grass and stones between the snow.",
+      "If you can choose the day, go after Wednesday 18 November: the fresh snow then has time to settle and the roads to be cleared."
      ]
     }
    ],
    "advice": [
-    "Read the local avalanche bulletin before going off-piste.",
     "Fresh snow on a cold base sticks badly: take care on steep slopes.",
-    "Early-season snow is thin over rocks: ski the groomed runs first."
+    "Roads to the higher resorts may need winter tyres or chains.",
+    "Read the local avalanche bulletin before going off-piste."
    ],
    "captions": {
     "new": "Snow depth in Sweden on 17 November",
@@ -215,18 +368,12 @@
   "sv": {
    "title": "Snö i Sverige i dag: snödjup och nysnö, 17 november 2026",
    "description": "Snö i Sverige 17 november: snötäcke, nysnö, snödjup efter höjd, de närmaste dagarna och de bästa skidorterna.",
-   "lede": "Tisdag 17 november: snön täcker omkring 258 540 km² i Sverige. Ytan är nästan densamma som i går. Det är 79 % av området i Sverige som vi följer.",
+   "lede": "I Sverige är omkring 258 540 km² snötäckt i dag (tisdag 17 november). Ytan är nästan densamma som i går.",
    "sections": [
     {
      "h": "Snötäcket i dag",
      "p": [
-      "För en vecka sedan var det 119 070 km², så snötäcket har vuxit med 139 470 km². Snön ligger ända ner till låglandet och kusten."
-     ]
-    },
-    {
-     "h": "Var nysnön föll",
-     "p": [
-      "Mest nysnö de senaste 72 timmarna: upp till 7 cm. Områden: Hemavanfjällen, Lapplandsfjällen och Jämtlandsfjällen."
+      "Snön ligger ända ner till låglandet och kusten. För en vecka sedan var det 119 070 km², så snötäcket har vuxit med 139 470 km²."
      ]
     },
     {
@@ -236,9 +383,24 @@
      ]
     },
     {
+     "h": "Var nysnön föll",
+     "p": [
+      "Under tre dygn föll mest nysnö här: Hemavanfjällen, Lapplandsfjällen och Jämtlandsfjällen (upp till 7 cm)."
+     ]
+    },
+    {
      "h": "Vad det betyder i backen",
      "p": [
-      "Den vita ytan växer, och håller kylan i sig kan fler liftar öppna."
+      "Den vita ytan växer, och håller kylan i sig kan fler liftar öppna.",
+      "Med mer snö i prognosen bör de närmaste dagarna bli bättre."
+     ]
+    },
+    {
+     "h": "De bästa skidorterna nu",
+     "p": [
+      "Mest snö i de övre backarna: Björkliden, 131 cm.",
+      "Därefter: Abisko (131 cm), Huså (33 cm), Almåsa (32 cm) och Högfjället (29 cm).",
+      "Björkliden: 4 cm nysnö på tre dagar och upp till 11 cm till före fredag, 20 november."
      ]
     },
     {
@@ -247,17 +409,10 @@
       "Prognos för nysnö: upp till 15 cm på tre dagar och upp till 17 cm på sju dagar.",
       "Den snörikaste dagen: onsdag, 18 november, upp till 11 cm."
      ]
-    },
-    {
-     "h": "De bästa skidorterna nu",
-     "p": [
-      "Överst på listan: Björkliden, 131 cm i de övre backarna.",
-      "Därefter: Abisko (131 cm), Huså (33 cm), Almåsa (32 cm) och Högfjället (29 cm).",
-      "Abisko: 4 cm nysnö på tre dagar och upp till 10 cm till före fredag, 20 november."
-     ]
     }
    ],
    "advice": [
+    "Kolla att liftarna går innan du åker.",
     "Tidigt på säsongen är snön tunn över stenarna: håll dig i preparerade backar."
    ],
    "captions": {
@@ -269,15 +424,17 @@
  "writers": {
   "en": {
    "writer": "template",
-   "voice": "field"
+   "voice": "field",
+   "rewrite": "requality"
   },
   "sv": {
    "writer": "template",
-   "voice": "field"
+   "voice": "field",
+   "rewrite": "requality"
   }
  },
- "words_en": 270,
- "indexable": false,
+ "words_en": 622,
+ "indexable": true,
  "main": {
   "slug": "bjorkliden",
   "name": "Björkliden",
@@ -399,21 +556,23 @@
   "with": "sweden-snow-report-16-november-2026"
  },
  "publish_utc": "2026-11-17T10:22:38Z",
- "cover": {
+ "cover": {},
+ "rewrite": {
   "v": 1,
-  "style": "ranked",
-  "files": {
-   "en": [
-    "blog/media/2026/11/sweden-snow-report-17-november-2026/cover-en.webp",
-    "blog/media/2026/11/sweden-snow-report-17-november-2026/cover-en_t.webp"
-   ],
-   "sv": [
-    "blog/media/2026/11/sweden-snow-report-17-november-2026/cover-sv.webp",
-    "blog/media/2026/11/sweden-snow-report-17-november-2026/cover-sv_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "resorts_ready",
+  "llm": false,
+  "usd": 0.0
  },
- "noindex_why": "cadence: news quota 1 of 2026-11-17 used"
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 622,
+  "overlap": 27.7,
+  "with": "austria-snow-report-16-november-2026",
+  "langs_off": [],
+  "score": 99.8,
+  "intent": "cc:SE|resorts_ready",
+  "guide": false,
+  "v": 1
+ }
 }

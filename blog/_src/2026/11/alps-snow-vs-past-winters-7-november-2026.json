@@ -242,7 +242,48 @@
      "seen_on": "2026-11-01"
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "La Grave",
+     "slug": "la_grave",
+     "now_cm": 3,
+     "usual_cm": 38,
+     "high_cm": null,
+     "week_ago_cm": null,
+     "height_m": 3369,
+     "best_weeks": [
+      16,
+      15,
+      17
+     ],
+     "ratio_pct": 8,
+     "deeper_than": 9,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "La Grave",
+   "top_cm": 39,
+   "top_m": 3543,
+   "base_cm": 33,
+   "base_m": 3196,
+   "next_cm": 32,
+   "second": "Orelle",
+   "second_cm": 47,
+   "depth_cm": 50
+  },
+  "story": {
+   "id": "vs_normal_low",
+   "place": "resort:la_grave",
+   "score": 56,
+   "resort": "La Grave"
+  }
  },
  "media": [
   {
@@ -280,6 +321,17 @@
       "At 3,369 m on La Grave the season is late: our model has only 3 cm today, below the usual 38 cm. Only 9 of the past 46 winters had less snow there on 7 November.",
       "At 2,779 m on Orelle the season is late: our model has only 2 cm today, below the usual 28 cm. Only 6 of the past 46 winters had less snow there on 7 November.",
       "At 2,397 m on Les Deux Alpes the season is late: our model has only 1 cm today, below the usual 14 cm. Only 8 of the past 46 winters had less snow there on 7 November."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 3,369 m, La Grave has 3 cm today; a normal 7 November has 38 cm there.",
+      "That is more than in 9 of the 46 past winters on this date.",
+      "In past winters the best snow at La Grave usually came mid-April / late April.",
+      "A slow start is common and says little about January; for now the highest lifts and the runs with snowmaking are the safe choice.",
+      "Day by day at La Grave: Monday 9 November 13 cm; Tuesday 10 November 19 cm.",
+      "Height by height at La Grave: 3,196 m 33 cm on the ground, 34 cm more in the next 7 days; 3,369 m 39 cm on the ground, 34 cm more in the next 7 days; 3,543 m 39 cm on the ground, 35 cm more in the next 7 days."
      ]
     },
     {
@@ -323,6 +375,17 @@
      ]
     },
     {
+     "h": "Face aux hivers passés",
+     "p": [
+      "Vers 3 369 m, La Grave a 3 cm aujourd'hui ; un 7 novembre normal y compte 38 cm.",
+      "C'est plus que lors de 9 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à La Grave arrivait d'habitude mi-avril / fin avril.",
+      "Un début lent est fréquent et dit peu de choses sur janvier ; pour l'instant, les remontées les plus hautes et les pistes équipées de neige de culture sont le choix sûr.",
+      "Jour après jour à La Grave : lundi 9 novembre 13 cm; mardi 10 novembre 19 cm.",
+      "Altitude par altitude à La Grave : 3 196 m 33 cm au sol, 34 cm de plus dans les 7 prochains jours; 3 369 m 39 cm au sol, 34 cm de plus dans les 7 prochains jours; 3 543 m 39 cm au sol, 35 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
      "h": "Où est la neige aujourd'hui",
      "p": [
       "Parmi ces stations, La Grave a le plus de neige sur le haut du domaine aujourd'hui, environ 50 cm ; suivent Orelle 47 cm et Les Deux Alpes 46 cm.",
@@ -358,7 +421,7 @@
    "writer": "template"
   }
  },
- "words_en": 249,
+ "words_en": 478,
  "indexable": false,
  "main": {
   "slug": "la_grave",
@@ -435,5 +498,26 @@
  "trip_day": "2026-11-14",
  "map_link": "https://snowscope.app/#@45.020,6.277,9.0",
  "seconds": 0.0,
- "publish_utc": "2026-11-07T13:14:00Z"
+ "publish_utc": "2026-11-07T13:14:00Z",
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_low",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 478 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 478 < 600"
+  ],
+  "words": 478,
+  "overlap": 24.1,
+  "with": "alps-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 99.7,
+  "intent": "resort:la_grave|vs_normal_low",
+  "guide": false,
+  "v": 1
+ }
 }

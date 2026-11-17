@@ -190,7 +190,45 @@
      }
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Bonneval-sur-Arc",
+     "slug": "bonneval_sur_arc",
+     "now_cm": 15,
+     "usual_cm": 16,
+     "high_cm": 50,
+     "week_ago_cm": 5,
+     "height_m": 2371,
+     "best_weeks": [
+      10,
+      11,
+      9
+     ],
+     "ratio_pct": 94
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Bonneval-sur-Arc",
+   "rain_day": "2026-11-11",
+   "freezing_m": 3060,
+   "lift_top_m": 2948,
+   "next_cm": 11,
+   "second": "La Grave",
+   "second_cm": 50,
+   "depth_cm": 52
+  },
+  "story": {
+   "id": "best_week",
+   "place": "resort:bonneval_sur_arc",
+   "score": 31,
+   "resort": "Bonneval-sur-Arc"
+  }
  },
  "media": [
   {
@@ -227,6 +265,15 @@
      "p": [
       "A snowstorm on the way (20 cm or more forecast in the next days): La Grave (+32 cm) and Les Deux Alpes (+28 cm).",
       "Warm air that can leave a crust (snow line above the top on a warm day without much new snow): Kühtai."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 2,371 m, Bonneval-sur-Arc has 15 cm today; a normal 8 November has 16 cm there.",
+      "Only one winter in ten has more than 50 cm on this date.",
+      "A week ago the same spot had 5 cm.",
+      "In past winters the best snow at Bonneval-sur-Arc usually came early March / mid-March."
      ]
     },
     {
@@ -284,6 +331,15 @@
      ]
     },
     {
+     "h": "Face aux hivers passés",
+     "p": [
+      "Vers 2 371 m, Bonneval-sur-Arc a 15 cm aujourd'hui ; un 8 novembre normal y compte 16 cm.",
+      "Un hiver sur dix seulement dépasse 50 cm à cette date.",
+      "Il y a une semaine, le même endroit avait 5 cm.",
+      "Les hivers passés, la meilleure neige à Bonneval-sur-Arc arrivait d'habitude début mars / mi-mars."
+     ]
+    },
+    {
      "h": "Le meilleur moment et le meilleur endroit",
      "p": [
       "Les prévisions de tempête bougent, alors regardez la carte à nouveau la veille du départ.",
@@ -334,8 +390,8 @@
    "writer": "template"
   }
  },
- "words_en": 359,
- "indexable": true,
+ "words_en": 548,
+ "indexable": false,
  "main": {
   "slug": "bonneval_sur_arc",
   "name": "Bonneval-sur-Arc",
@@ -463,5 +519,26 @@
    "with_after": "pyrenees-what-to-bring-ski-gear-conditions-9-november-2026",
    "voice": "field"
   }
- ]
+ ],
+ "rewrite": {
+  "v": 1,
+  "story": "best_week",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 548 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 548 < 600"
+  ],
+  "words": 548,
+  "overlap": 9.3,
+  "with": "pyrenees-freezing-level-snow-line-8-november-2026",
+  "langs_off": [],
+  "score": 77.8,
+  "intent": "resort:bonneval_sur_arc|best_week",
+  "guide": false,
+  "v": 1
+ }
 }

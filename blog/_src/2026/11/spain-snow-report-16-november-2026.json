@@ -145,6 +145,121 @@
    ],
    "from_day": 8,
    "to_day": 14
+  },
+  "trend": [
+   {
+    "date": "2026-11-16",
+    "snow_km2": 310,
+    "new72": 0,
+    "leader": "Aramón Cerler",
+    "leader_cm": 17
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Aramón Cerler",
+     "slug": "aramon_cerler",
+     "now_cm": 0,
+     "usual_cm": 2,
+     "high_cm": 21,
+     "week_ago_cm": 0,
+     "height_m": 2060,
+     "best_weeks": [
+      7,
+      8,
+      5
+     ],
+     "ratio_pct": null
+    },
+    {
+     "name": "Candanchu",
+     "slug": "candanchu",
+     "now_cm": 0,
+     "usual_cm": 3,
+     "high_cm": 28,
+     "week_ago_cm": 0,
+     "height_m": 1876,
+     "best_weeks": [
+      8,
+      9,
+      10
+     ],
+     "ratio_pct": 0
+    },
+    {
+     "name": "Formigal",
+     "slug": "formigal",
+     "now_cm": 0,
+     "usual_cm": 4,
+     "high_cm": 31,
+     "week_ago_cm": 0,
+     "height_m": 1883,
+     "best_weeks": [
+      7,
+      6,
+      9
+     ],
+     "ratio_pct": 0
+    },
+    {
+     "name": "Boí Taüll",
+     "slug": "boi_taull",
+     "now_cm": 0,
+     "usual_cm": 4,
+     "high_cm": 26,
+     "week_ago_cm": 0,
+     "height_m": 2393,
+     "best_weeks": [
+      6,
+      7,
+      5
+     ],
+     "ratio_pct": 0
+    },
+    {
+     "name": "Estació d'Esquí Baqueira-Beret",
+     "slug": "baqueira",
+     "now_cm": 0,
+     "usual_cm": 2,
+     "high_cm": 24,
+     "week_ago_cm": 0,
+     "height_m": 2052,
+     "best_weeks": [
+      6,
+      7,
+      9
+     ],
+     "ratio_pct": null
+    }
+   ],
+   "n": 5,
+   "above": 0,
+   "median_pct": 0
+  },
+  "neighbours": [
+   {
+    "cc": "AD",
+    "name": "Andorra",
+    "white_share_pct": 2,
+    "leader": "Pal-Arinsal",
+    "leader_cm": 5,
+    "next_7_days_max_cm": 7
+   },
+   {
+    "cc": "FR",
+    "name": "France",
+    "white_share_pct": 11,
+    "leader": "Les Arcs",
+    "leader_cm": 94,
+    "next_7_days_max_cm": 105
+   }
+  ],
+  "glacier": false,
+  "story": {
+   "id": "week_loss",
+   "place": "cc:ES",
+   "score": 40.7
   }
  },
  "media": [
@@ -160,24 +275,50 @@
  ],
  "docs": {
   "en": {
-   "title": "Spain snow today (16 November 2026): snow depth, new snow and resorts",
-   "description": "Spain snow today, 16 November: snow cover, new snow, snow depth by height, the next days and the best resorts.",
-   "lede": "The white area in Spain stands at about 310 km² today, 440 km² lost since yesterday.",
+   "title": "Spain lost 540 km² of snow cover in a week: where it still holds",
+   "description": "Spain lost 540 km² of snow cover in a week: where it still holds. Snow cover, new snow, resorts and the days ahead in Spain on 16 November.",
+   "lede": "Seven days ago about 850 km² was white in Spain; today it is 310 km², 540 km² less.",
    "sections": [
     {
-     "h": "Snow cover today",
+     "h": "What melted this week",
      "p": [
-      "No height band is mostly white yet. A week ago it was 850 km²: 540 km² has melted away since."
+      "The losses are at the bottom of the slopes. Higher up the snow is settling rather than going, so the upper lifts are the safe bet.",
+      "Snow covers roughly 310 km² in Spain on 16 November, 440 km² lost since yesterday."
      ]
     },
     {
-     "h": "Snow depth by height",
+     "h": "How much of the country is white",
      "p": [
-      "Climb and the snow gets deeper: between 2,000 and 2,500 m, under 1 cm on average, 4 % covered; above 2,500 m: on average 3 cm (33 % white)."
+      "No height band is mostly white yet. Mild days have cost 540 km² since the 850 km² of a week ago."
      ]
     },
     {
-     "h": "Skiing conditions",
+     "h": "Low, middle and high ground",
+     "p": [
+      "Snow depth on the ground, height by height: 2,000-2,500 m: on average under 1 cm (4 % of the ground white); above 2,500 m: on average 3 cm (33 % white)."
+     ]
+    },
+    {
+     "h": "Shortlist for the weekend",
+     "p": [
+      "The deepest snow of the country's resorts is at Aramón Cerler: 17 cm.",
+      "Next on the list: Candanchu (14 cm), Formigal (11 cm), Boí Taüll (5 cm) and Estació d'Esquí Baqueira-Beret (3 cm).",
+      "Aramón Cerler picked up 13 cm in the last three days and could add 9 cm by Thursday 19 November.",
+      "At Candanchu: 28 cm of fresh snow over three days, 7 cm more expected by Thursday 19 November.",
+      "Snow lies on the upper slopes of 6 out of 31 resorts in Spain.",
+      "The rest of the shortlist: Formigal: 11 cm on top, 24 cm in three days, 6 cm expected; Boí Taüll: 5 cm on top, 11 cm in three days, 7 cm expected; Estació d'Esquí Baqueira-Beret: 3 cm on top, 5 cm in three days, 6 cm expected."
+     ]
+    },
+    {
+     "h": "The next days",
+     "p": [
+      "The week ahead could bring up to 4 cm, 2 cm of it in the next three days.",
+      "The snowiest day looks like Thursday 19 November, with up to 4 cm in the snowiest spots.",
+      "Further out, days 8 to 14 show up to 32 cm on the snowiest slopes."
+     ]
+    },
+    {
+     "h": "On the ground",
      "p": [
       "Mild weather is eating into the cover: expect firm snow in the morning and slush in the afternoon."
      ]
@@ -189,42 +330,45 @@
      ]
     },
     {
-     "h": "Snow on the way?",
+     "h": "How this start compares",
      "p": [
-      "Snow is in the forecast: up to 2 cm by the end of the third day, up to 4 cm within seven days.",
-      "Thursday 19 November stands out, with up to 4 cm in a day.",
-      "The second week adds up to 32 cm where it snows most."
+      "Here is how the deepest resorts compare with their usual 16 November: Aramón Cerler: 0 cm at about 2,060 m, against 2 cm in a normal year; Candanchu: 0 cm at about 1,876 m, against 3 cm in a normal year; Formigal: 0 cm at about 1,883 m, against 4 cm in a normal year; Boí Taüll: 0 cm at about 2,393 m, against 4 cm in a normal year.",
+      "0 of these 4 resorts are above their usual depth for the date.",
+      "These depths are for one height on each mountain, below the top, so they read lower than the upper-slope numbers further down.",
+      "In past winters the best snow at Aramón Cerler usually came early February / mid-February."
      ]
     },
     {
-     "h": "The resorts with the most snow",
+     "h": "The neighbours today",
      "p": [
-      "Aramón Cerler leads with 17 cm on its upper slopes.",
-      "Close behind: Candanchu (14 cm), Formigal (11 cm), Boí Taüll (5 cm) and Estació d'Esquí Baqueira-Beret (3 cm).",
-      "Aramón Cerler picked up 13 cm in the last three days and could add 9 cm by Thursday 19 November.",
-      "Candanchu picked up 28 cm in the last three days and could add 7 cm by Thursday 19 November.",
-      "Count 6 white resorts out of 31 in Spain today."
+      "For comparison, the neighbours on the same day: Andorra: 2 % white, deepest Pal-Arinsal with 5 cm, up to 7 cm in the week ahead; France: 11 % white, deepest Les Arcs with 94 cm, up to 105 cm in the week ahead."
      ]
     }
    ],
    "advice": [
-    "Morning snow is firm after a clear night: wait for the sun on south faces.",
-    "Roads to the higher resorts may need winter tyres or chains.",
-    "Snow above the tree line can be wind-packed: watch the ridges."
+    "Check the resort's own lift status before you travel.",
+    "Read the local avalanche bulletin before going off-piste.",
+    "Fresh snow on a cold base sticks badly: take care on steep slopes."
    ],
    "captions": {
     "map": "Snow depth in Spain on 16 November"
    }
   },
   "es": {
-   "title": "Nieve en España hoy: espesor de la capa de nieve y nieve nueva, 16 de noviembre de 2026",
+   "title": "¿Cuánta nieve hay en España? Manto de nieve y previsión, 16 de noviembre de 2026",
    "description": "Nieve en España el 16 de noviembre: manto de nieve, nieve nueva, espesor por altitud, próximos días y mejores estaciones.",
-   "lede": "El manto de nieve en España ocupa unos 310 km² (lunes, 16 de noviembre). Son 440 km² menos que ayer.",
+   "lede": "Lunes, 16 de noviembre: la nieve cubre unos 310 km² de montaña en España. Son 440 km² menos que ayer.",
    "sections": [
     {
      "h": "El manto de nieve hoy",
      "p": [
       "Ninguna franja de altitud está aún mayoritariamente blanca. Hace siete días la superficie era de 850 km², 540 km² más que ahora."
+     ]
+    },
+    {
+     "h": "Espesor de la nieve por altitud",
+     "p": [
+      "El espesor de la nieve depende de la altitud: 2000–2500 m: de media menos de 1 cm (4 % cubierto); por encima de 2500 m: de media 3 cm (33 % cubierto)."
      ]
     },
     {
@@ -240,30 +384,23 @@
      ]
     },
     {
-     "h": "Espesor de la nieve por altitud",
-     "p": [
-      "El espesor de la nieve depende de la altitud: 2000–2500 m: de media menos de 1 cm (4 % cubierto); por encima de 2500 m: de media 3 cm (33 % cubierto)."
-     ]
-    },
-    {
      "h": "Los próximos días",
      "p": [
-      "La semana puede traer hasta 4 cm, de ellos hasta 2 cm en los próximos tres días.",
+      "En los próximos tres días se esperan hasta 2 cm, y en toda la semana hasta 4 cm.",
       "El día más nevado: jueves, 19 de noviembre, con hasta 4 cm."
      ]
     },
     {
      "h": "Las mejores estaciones ahora",
      "p": [
-      "Más nieve en las pistas altas: Aramón Cerler, 17 cm.",
+      "En cabeza está Aramón Cerler: 17 cm en la parte alta de las pistas.",
       "Le siguen: Candanchu (14 cm), Formigal (11 cm), Boí Taüll (5 cm) y Estació d'Esquí Baqueira-Beret (3 cm).",
-      "Candanchu: 28 cm de nieve nueva en tres días y hasta 7 cm más antes del jueves, 19 de noviembre."
+      "Aramón Cerler: 13 cm de nieve nueva en tres días y hasta 9 cm más antes del jueves, 19 de noviembre."
      ]
     }
    ],
    "advice": [
-    "Antes de salir, comprobad que los remontes funcionan.",
-    "A principio de temporada la nieve es fina sobre las piedras: quedaos en pistas pisadas."
+    "Por encima del bosque la nieve puede estar venteada: cuidado en las crestas."
    ],
    "captions": {
     "map": "Espesor de nieve en España, 16 de noviembre"
@@ -273,14 +410,16 @@
  "writers": {
   "en": {
    "writer": "template",
-   "voice": "field"
+   "voice": "field",
+   "rewrite": "requality"
   },
   "es": {
    "writer": "template",
-   "voice": "field"
+   "voice": "field",
+   "rewrite": "requality"
   }
  },
- "words_en": 224,
+ "words_en": 534,
  "indexable": false,
  "main": {
   "slug": "aramon_cerler",
@@ -402,20 +541,26 @@
   "with": "italy-snow-report-16-november-2026"
  },
  "publish_utc": "2026-11-16T20:42:46Z",
- "cover": {
+ "cover": {},
+ "rewrite": {
   "v": 1,
-  "style": "map",
-  "files": {
-   "en": [
-    "blog/media/2026/11/spain-snow-report-16-november-2026/cover-en.webp",
-    "blog/media/2026/11/spain-snow-report-16-november-2026/cover-en_t.webp"
-   ],
-   "es": [
-    "blog/media/2026/11/spain-snow-report-16-november-2026/cover-es.webp",
-    "blog/media/2026/11/spain-snow-report-16-november-2026/cover-es_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "week_loss",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 534 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 534 < 600"
+  ],
+  "words": 534,
+  "overlap": 0.8,
+  "with": "alps-les-deux-alpes-fresh-snow-powder-alert-14-november-2026",
+  "langs_off": [],
+  "score": 88.4,
+  "intent": "cc:ES|week_loss",
+  "guide": false,
+  "v": 1
  }
 }

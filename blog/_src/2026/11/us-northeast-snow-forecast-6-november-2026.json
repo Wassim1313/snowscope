@@ -133,7 +133,51 @@
      "km_away": 9.0
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Ski Eldorado",
+     "slug": "ski_eldorado_secteur_10e_rang",
+     "now_cm": 0,
+     "usual_cm": 2,
+     "high_cm": 9,
+     "week_ago_cm": null,
+     "height_m": 734,
+     "best_weeks": [
+      9,
+      10,
+      8
+     ],
+     "ratio_pct": null,
+     "deeper_than": 17,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Ski Eldorado",
+   "top_cm": 0,
+   "top_m": 797,
+   "base_cm": 0,
+   "base_m": 671,
+   "rain_day": "2026-11-06",
+   "freezing_m": 3460,
+   "lift_top_m": 797,
+   "next_cm": 11,
+   "second": "Tuckerman Ravine",
+   "second_cm": 0,
+   "depth_cm": 0
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:ski_eldorado_secteur_10e_rang",
+   "score": 22,
+   "resort": "Ski Eldorado"
+  }
  },
  "media": [
   {
@@ -174,6 +218,18 @@
      "h": "What is coming next",
      "p": [
       "The snow cover shrank from 4 sq mi (10 km²) on 4 November to 0 sq mi (0 km²) today, and our forecast gives 178 sq mi (460 km²) on 9 November."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Friday 6 November the freezing level climbs to about 11,352 ft (3,460 m), above the top of the lifts at 2,615 ft (797 m): rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 2,408 ft (734 m), Ski Eldorado has 0 in (0 cm) today; a normal 6 November has 1 in (2 cm) there.",
+      "That is more than in 17 of the 46 past winters on this date.",
+      "In past winters the best snow at Ski Eldorado usually came late February / early March.",
+      "Day by day at Ski Eldorado: Sunday 8 November 3 in (7 cm); Monday 9 November 2 in (4 cm).",
+      "Height by height at Ski Eldorado: 2,201 ft (671 m) 0 in (0 cm) on the ground, 2 in (4 cm) more in the next 7 days; 2,408 ft (734 m) 0 in (0 cm) on the ground, 2 in (4 cm) more in the next 7 days; 2,615 ft (797 m) 0 in (0 cm) on the ground, 2 in (5 cm) more in the next 7 days."
      ]
     },
     {
@@ -219,6 +275,18 @@
      ]
     },
     {
+     "h": "De la pluie jusqu'en haut ?",
+     "p": [
+      "Le vendredi 6 novembre, l'isotherme 0 °C monte vers 11 352 ft (3 460 m), au-dessus du sommet des remontées à 2 615 ft (797 m) : il peut pleuvoir jusqu'en haut.",
+      "La pluie sur la neige fraîche l'alourdit et, après une nuit froide, la rend glacée : les jours suivants conviennent mieux aux pistes damées qu'à la poudreuse.",
+      "Vers 2 408 ft (734 m), Ski Eldorado a 0 in (0 cm) aujourd'hui ; un 6 novembre normal y compte 1 in (2 cm).",
+      "C'est plus que lors de 17 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Ski Eldorado arrivait d'habitude fin février / début mars.",
+      "Jour après jour à Ski Eldorado : dimanche 8 novembre 3 in (7 cm); lundi 9 novembre 2 in (4 cm).",
+      "Altitude par altitude à Ski Eldorado : 2 201 ft (671 m) 0 in (0 cm) au sol, 2 in (4 cm) de plus dans les 7 prochains jours; 2 408 ft (734 m) 0 in (0 cm) au sol, 2 in (4 cm) de plus dans les 7 prochains jours; 2 615 ft (797 m) 0 in (0 cm) au sol, 2 in (5 cm) de plus dans les 7 prochains jours."
+     ]
+    },
+    {
      "h": "Altitude, pentes et limite pluie-neige",
      "p": [
       "À Ski Eldorado, l'isotherme 0 °C monte entre 8 957 ft (2 730 m) et 11 352 ft (3 460 m) le 6 novembre, au-dessus du sommet de la station (2 615 ft / 797 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là."
@@ -260,7 +328,7 @@
    "usd": 0.003708
   }
  },
- "words_en": 158,
+ "words_en": 452,
  "indexable": false,
  "main": {
   "slug": "ski_eldorado_secteur_10e_rang",
@@ -320,5 +388,27 @@
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@45.312,-71.103,9.0",
  "seconds": 14.3,
- "publish_utc": "2026-11-06T14:00:00Z"
+ "publish_utc": "2026-11-06T14:00:00Z",
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 452 < 600; overlap 45 % with us-west-snow-forecast-4-november-2026",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 452 < 600",
+   "overlap 45 % with us-west-snow-forecast-4-november-2026"
+  ],
+  "words": 452,
+  "overlap": 45.4,
+  "with": "us-west-snow-forecast-4-november-2026",
+  "langs_off": [],
+  "score": 63.7,
+  "intent": "resort:ski_eldorado_secteur_10e_rang|rain_risk",
+  "guide": false,
+  "v": 1
+ }
 }

@@ -306,7 +306,35 @@
   "notes": [
    "new snow = SnowScope forecast on the upper slopes",
    "snow line = about 300 m below the forecast freezing level"
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "La Grave",
+     "slug": "la_grave",
+     "now_cm": 28,
+     "usual_cm": 47,
+     "high_cm": 144,
+     "week_ago_cm": 18,
+     "height_m": 3370,
+     "best_weeks": [
+      16,
+      15,
+      17
+     ],
+     "ratio_pct": 60
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "story": {
+   "id": "best_week",
+   "place": "resort:la_grave",
+   "score": 31,
+   "resort": "La Grave"
+  }
  },
  "media": [
   {
@@ -339,6 +367,15 @@
      "p": [
       "The French Alps are set to see the heaviest snow this week. La Grave is forecast to get 58 cm of new snow over the next 72 hours. Nearby Les Deux Alpes could see 51 cm. These amounts are estimated for the upper slopes, with the snow line expected around 2900 m for La Grave and 2600 m for Les Deux Alpes by Saturday.",
       "Italian resorts also show good prospects. Ponte di Legno is forecast to receive 44 cm of new snow, and Livigno 42 cm, both by Saturday. In Switzerland, Diavolezza-Lagalb could get 40 cm. These figures represent the total accumulation over the next three days, as estimated by our snow model on November 11."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 3,370 m, La Grave has 28 cm today; a normal 11 November has 47 cm there.",
+      "Only one winter in ten has more than 144 cm on this date.",
+      "A week ago the same spot had 18 cm.",
+      "In past winters the best snow at La Grave usually came mid-April / late April."
      ]
     },
     {
@@ -388,6 +425,15 @@
      ]
     },
     {
+     "h": "Face aux hivers passés",
+     "p": [
+      "Vers 3 370 m, La Grave a 28 cm aujourd'hui ; un 11 novembre normal y compte 47 cm.",
+      "Un hiver sur dix seulement dépasse 144 cm à cette date.",
+      "Il y a une semaine, le même endroit avait 18 cm.",
+      "Les hivers passés, la meilleure neige à La Grave arrivait d'habitude mi-avril / fin avril."
+     ]
+    },
+    {
      "h": "Ouest et Nord-Est des États-Unis : La neige en approche",
      "p": [
       "Dans l'ouest des États-Unis, Mt. Shasta Ski Park en Californie devrait recevoir 17 in (43 cm) de neige fraîche d'ici samedi. Kirkwood, également en Californie, devrait en obtenir 15 in (39 cm). La limite pluie-neige pour ces zones est prévue élevée, autour de 7 200 ft (2 200 m) pour Mt. Shasta Ski Park et 9 200 ft (2 800 m) pour Kirkwood.",
@@ -434,8 +480,8 @@
    "voice": "hydro"
   }
  },
- "words_en": 437,
- "indexable": true,
+ "words_en": 588,
+ "indexable": false,
  "main": {
   "slug": "la_grave",
   "name": "La Grave",
@@ -826,5 +872,26 @@
   "max": 0.023,
   "with": "where-most-snow-falls-next-72-hours-5-november-2026"
  },
- "publish_utc": "2026-11-11T18:44:22Z"
+ "publish_utc": "2026-11-11T18:44:22Z",
+ "rewrite": {
+  "v": 1,
+  "story": "best_week",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 588 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 588 < 600"
+  ],
+  "words": 588,
+  "overlap": 4.1,
+  "with": "alps-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 86.4,
+  "intent": "resort:la_grave|best_week",
+  "guide": false,
+  "v": 1
+ }
 }

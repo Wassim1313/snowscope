@@ -467,7 +467,7 @@
   }
  },
  "words_en": 425,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "boi_taull",
   "name": "Boí Taüll",
@@ -593,5 +593,21 @@
   "max": 0.16,
   "with": "us-west-freezing-level-snow-line-8-november-2026"
  },
- "publish_utc": "2026-11-13T12:19:32Z"
+ "publish_utc": "2026-11-13T12:19:32Z",
+ "noindex_why": "quality: words 536 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 536 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 536,
+  "overlap": 22.5,
+  "with": "us-west-freezing-level-snow-line-8-november-2026",
+  "langs_off": [],
+  "score": 45.2,
+  "intent": "pyrenees|snow-line",
+  "guide": false,
+  "v": 1
+ }
 }

@@ -201,7 +201,7 @@
   }
  },
  "words_en": 425,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "killington",
   "name": "Killington Resort",
@@ -309,5 +309,21 @@
   "max": 0.173,
   "with": "alps-snow-this-season-vs-last-season-8-november-2026"
  },
- "publish_utc": "2026-11-12T20:02:18Z"
+ "publish_utc": "2026-11-12T20:02:18Z",
+ "noindex_why": "quality: words 507 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 507 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 507,
+  "overlap": 17.6,
+  "with": "us-west-snow-this-season-vs-last-season-11-november-2026",
+  "langs_off": [],
+  "score": 43.8,
+  "intent": "us_ne|vs-last-season",
+  "guide": false,
+  "v": 1
+ }
 }

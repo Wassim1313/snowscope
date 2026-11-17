@@ -346,7 +346,48 @@
    }
   ],
   "focus_index": 1,
-  "title_focus_resort": "Les Grands Montets"
+  "title_focus_resort": "Les Grands Montets",
+  "normal": {
+   "rows": [
+    {
+     "name": "Les Grands Montets",
+     "slug": "chamonix",
+     "now_cm": 22,
+     "usual_cm": 22,
+     "high_cm": 51,
+     "week_ago_cm": null,
+     "height_m": 2001,
+     "best_weeks": [
+      10,
+      9,
+      8
+     ],
+     "ratio_pct": 100,
+     "deeper_than": 24,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Les Grands Montets",
+   "top_cm": 40,
+   "top_m": 2768,
+   "base_cm": 0,
+   "base_m": 1234,
+   "rain_day": "2026-11-17",
+   "freezing_m": 2860,
+   "lift_top_m": 2768,
+   "next_cm": 98
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:chamonix",
+   "score": 58,
+   "resort": "Les Grands Montets"
+  }
  },
  "media": [
   {
@@ -437,6 +478,18 @@
      ]
     },
     {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Tuesday 17 November the freezing level climbs to about 2,860 m, above the top of the lifts at 2,768 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 2,001 m, Les Grands Montets has 22 cm today; a normal 17 November has 22 cm there.",
+      "That is more than in 24 of the 46 past winters on this date.",
+      "In past winters the best snow at Les Grands Montets usually came late February / early March.",
+      "Day by day at Les Grands Montets: Tuesday 17 November 44 cm; Wednesday 18 November 20 cm; Thursday 19 November 36 cm; Friday 20 November 42 cm.",
+      "Height by height at Les Grands Montets: 1,234 m 0 cm on the ground, 13 cm more in the next 7 days; 2,001 m 9 cm on the ground, 78 cm more in the next 7 days; 2,768 m 40 cm on the ground, 126 cm more in the next 7 days."
+     ]
+    },
+    {
      "h": "Where the Most Snow Fell",
      "p": [
       "La Grave leads the region with 79 cm of new snow in the last 72 hours, including 40 cm in the last 24 hours. Les Grands Montets and Orelle also reported 74 cm of new snow over 72 hours. Alpe d'Huez Grand Domaine saw 72 cm, and Glacier 3000 in Switzerland received 67 cm.",
@@ -479,6 +532,18 @@
      "p": [
       "Les Alpes ont connu une augmentation notable de l'enneigement. Au 17 novembre 2026, notre modèle indique 51 380 kilomètres carrés de surface enneigée, avec 772 stations signalant de la neige. C'est une diminution par rapport au 15 novembre, où 65 120 kilomètres carrés étaient couverts, mais une quantité importante de neige fraîche est tombée en haute altitude.",
       "Pour les jours à venir, les prévisions suggèrent que la zone enneigée augmentera à 70 200 kilomètres carrés d'ici le 20 novembre, avec 945 stations qui devraient avoir de la neige. Cela indique une tendance positive pour les conditions de début de saison."
+     ]
+    },
+    {
+     "h": "De la pluie jusqu'en haut ?",
+     "p": [
+      "Le mardi 17 novembre, l'isotherme 0 °C monte vers 2 860 m, au-dessus du sommet des remontées à 2 768 m : il peut pleuvoir jusqu'en haut.",
+      "La pluie sur la neige fraîche l'alourdit et, après une nuit froide, la rend glacée : les jours suivants conviennent mieux aux pistes damées qu'à la poudreuse.",
+      "Vers 2 001 m, Les Grands Montets a 22 cm aujourd'hui ; un 17 novembre normal y compte 22 cm.",
+      "C'est plus que lors de 24 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Les Grands Montets arrivait d'habitude fin février / début mars.",
+      "Jour après jour à Les Grands Montets : mardi 17 novembre 44 cm; mercredi 18 novembre 20 cm; jeudi 19 novembre 36 cm; vendredi 20 novembre 42 cm.",
+      "Altitude par altitude à Les Grands Montets : 1 234 m 0 cm au sol, 13 cm de plus dans les 7 prochains jours; 2 001 m 9 cm au sol, 78 cm de plus dans les 7 prochains jours; 2 768 m 40 cm au sol, 126 cm de plus dans les 7 prochains jours."
      ]
     },
     {
@@ -527,7 +592,7 @@
    "voice": "sat"
   }
  },
- "words_en": 413,
+ "words_en": 740,
  "indexable": true,
  "main": {
   "slug": "chamonix",
@@ -655,20 +720,23 @@
   "with": "alps-fresh-snow-powder-alert-5-november-2026"
  },
  "publish_utc": "2026-11-17T08:38:49Z",
- "cover": {
+ "cover": {},
+ "rewrite": {
   "v": 1,
-  "style": "hero",
-  "files": {
-   "en": [
-    "blog/media/2026/11/alps-les-grands-montets-fresh-snow-powder-alert-17-november-2026/cover-en.webp",
-    "blog/media/2026/11/alps-les-grands-montets-fresh-snow-powder-alert-17-november-2026/cover-en_t.webp"
-   ],
-   "fr": [
-    "blog/media/2026/11/alps-les-grands-montets-fresh-snow-powder-alert-17-november-2026/cover-fr.webp",
-    "blog/media/2026/11/alps-les-grands-montets-fresh-snow-powder-alert-17-november-2026/cover-fr_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 740,
+  "overlap": 9.9,
+  "with": "alps-saint-luc-snow-depth-today-14-november-2026",
+  "langs_off": [],
+  "score": 122.6,
+  "intent": "resort:chamonix|rain_risk",
+  "guide": false,
+  "v": 1
  }
 }

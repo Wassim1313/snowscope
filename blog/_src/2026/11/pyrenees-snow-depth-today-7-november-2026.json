@@ -322,7 +322,51 @@
     "measured_on": "2026-11-02",
     "network": "smc_xema"
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Estació d'esquí Port del Comte",
+     "slug": "estacio_d_esqui_port_del_comte",
+     "now_cm": 16,
+     "usual_cm": 0,
+     "high_cm": 2,
+     "week_ago_cm": null,
+     "height_m": 1933,
+     "best_weeks": [
+      6,
+      4,
+      3
+     ],
+     "ratio_pct": null,
+     "deeper_than": 46,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Estació d'esquí Port del Comte",
+   "top_cm": 1,
+   "top_m": 2122,
+   "base_cm": 0,
+   "base_m": 1744,
+   "rain_day": "2026-11-08",
+   "freezing_m": 3720,
+   "lift_top_m": 2122,
+   "next_cm": 0,
+   "second": "Aramón Cerler",
+   "second_cm": 21,
+   "depth_cm": 29
+  },
+  "story": {
+   "id": "rare_for_date",
+   "place": "resort:estacio_d_esqui_port_del_comte",
+   "score": 78,
+   "resort": "Estació d'esquí Port del Comte"
+  }
  },
  "media": [
   {
@@ -358,6 +402,16 @@
      "h": "Today's snow",
      "p": [
       "The snow cover shrank from 2,380 km² on 5 November to 1,650 km² today, and our forecast gives 720 km² on 10 November."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 1,933 m, Estació d'esquí Port del Comte has 16 cm today; a normal 7 November has 0 cm there.",
+      "That is more than in 46 of the 46 past winters on this date.",
+      "In past winters the best snow at Estació d'esquí Port del Comte usually came mid-January / late January.",
+      "An early lead like this matters most for the lower and middle runs, which usually wait until December for this much snow.",
+      "Height by height at Estació d'esquí Port del Comte: 1,744 m 0 cm on the ground, 0 cm more in the next 7 days; 1,933 m 0 cm on the ground, 0 cm more in the next 7 days; 2,122 m 1 cm on the ground, 0 cm more in the next 7 days."
      ]
     },
     {
@@ -407,6 +461,16 @@
      ]
     },
     {
+     "h": "Frente a los inviernos pasados",
+     "p": [
+      "A unos 1933 m, Estació d'esquí Port del Comte tiene hoy 16 cm; un 7 de noviembre normal tiene 0 cm.",
+      "Es más que en 46 de los 46 inviernos pasados en esta fecha.",
+      "En inviernos pasados la mejor nieve en Estació d'esquí Port del Comte solía llegar a mediados de enero / finales de enero.",
+      "Una ventaja así cuenta sobre todo para las pistas bajas y medias, que suelen esperar a diciembre para tanta nieve.",
+      "Cota a cota en Estació d'esquí Port del Comte: 1744 m 0 cm en el suelo, 0 cm más en los próximos 7 días; 1933 m 0 cm en el suelo, 0 cm más en los próximos 7 días; 2122 m 1 cm en el suelo, 0 cm más en los próximos 7 días."
+     ]
+    },
+    {
      "h": "Lo que miden las estaciones",
      "p": [
       "La estación de medida Núria (1.971 m) (1971 m) midió 8 cm de nieve en el suelo el 2 de noviembre, con 1 cm de nieve nueva en 24 horas. La estación de medida Boí (2.537 m) (2537 m) midió 5 cm de nieve en el suelo el 2 de noviembre. La estación de medida Das - Aeròdrom (1096 m) midió 3 cm de nieve en el suelo el 2 de noviembre.",
@@ -452,8 +516,8 @@
    "writer": "template (a translation was rejected)"
   }
  },
- "words_en": 311,
- "indexable": true,
+ "words_en": 566,
+ "indexable": false,
  "main": {
   "slug": "estacio_d_esqui_port_del_comte",
   "name": "Estació d'esquí Port del Comte",
@@ -563,5 +627,26 @@
  "trip_day": "2026-11-14",
  "map_link": "https://snowscope.app/#@42.174,1.546,9.0",
  "seconds": 11.8,
- "publish_utc": "2026-11-07T10:26:21Z"
+ "publish_utc": "2026-11-07T10:26:21Z",
+ "rewrite": {
+  "v": 1,
+  "story": "rare_for_date",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 566 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 566 < 600"
+  ],
+  "words": 566,
+  "overlap": 23.1,
+  "with": "alps-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 125.7,
+  "intent": "resort:estacio_d_esqui_port_del_comte|rare_for_date",
+  "guide": false,
+  "v": 1
+ }
 }

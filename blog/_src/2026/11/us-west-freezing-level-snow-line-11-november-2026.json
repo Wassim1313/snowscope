@@ -363,7 +363,45 @@
      "2026-11-13"
     ]
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Aspen Snowmass",
+     "slug": "aspen_snowmass",
+     "now_cm": 4,
+     "usual_cm": 26,
+     "high_cm": 60,
+     "week_ago_cm": 4,
+     "height_m": 3144,
+     "best_weeks": [
+      13,
+      12,
+      14
+     ],
+     "ratio_pct": 15
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Aspen Snowmass",
+   "rain_day": "2026-11-12",
+   "freezing_m": 3960,
+   "lift_top_m": 3815,
+   "next_cm": 2,
+   "second": "Wolf Creek",
+   "second_cm": 87,
+   "depth_cm": 36
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:aspen_snowmass",
+   "score": 34,
+   "resort": "Aspen Snowmass"
+  }
  },
  "media": [
   {
@@ -390,6 +428,17 @@
       "At Big Sky Resort (base 6,818 ft (2,078 m), top 11,161 ft (3,402 m)) the snow line reaches about 12,139 ft (3,700 m) on 12 November, above the top: if it rains, it rains everywhere.",
       "Purgatory Resort (base 8,845 ft (2,696 m), top 10,797 ft (3,291 m)): on 11 November the snow line climbs to about 12,467 ft (3,800 m), higher than the top, so any rain or wet snow would hit the whole mountain.",
       "At Brighton Resort (base 8,747 ft (2,666 m), top 10,449 ft (3,185 m)) the snow line reaches about 12,795 ft (3,900 m) on 11 November, above the top: if it rains, it rains everywhere."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Thursday 12 November the freezing level climbs to about 12,992 ft (3,960 m), above the top of the lifts at 12,516 ft (3,815 m): rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 10,315 ft (3,144 m), Aspen Snowmass has 2 in (4 cm) today; a normal 11 November has 10 in (26 cm) there.",
+      "Only one winter in ten has more than 24 in (60 cm) on this date.",
+      "A week ago the same spot had 2 in (4 cm).",
+      "In past winters the best snow at Aspen Snowmass usually came late March / early April."
      ]
     },
     {
@@ -433,7 +482,7 @@
    "rewrite": 2
   }
  },
- "words_en": 546,
+ "words_en": 803,
  "indexable": true,
  "main": {
   "slug": "aspen_snowmass",
@@ -559,5 +608,35 @@
   "max": 0.143,
   "with": "pyrenees-freezing-level-snow-line-8-november-2026"
  },
- "publish_utc": "2026-11-11T18:44:22Z"
+ "publish_utc": "2026-11-11T18:44:22Z",
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 803,
+  "overlap": 28.1,
+  "with": "pyrenees-freezing-level-snow-line-8-november-2026",
+  "langs_off": [],
+  "score": 95.8,
+  "intent": "resort:aspen_snowmass|rain_risk",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "map",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-freezing-level-snow-line-11-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-freezing-level-snow-line-11-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

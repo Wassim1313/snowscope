@@ -272,7 +272,46 @@
      "2026-11-16": 0
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Stratton",
+     "slug": "stratton_mountain_resort",
+     "now_cm": 6,
+     "usual_cm": 0,
+     "high_cm": 6,
+     "week_ago_cm": 0,
+     "height_m": 895,
+     "best_weeks": [
+      10,
+      9,
+      8
+     ],
+     "ratio_pct": null
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Stratton",
+   "top_cm": 10,
+   "top_m": 1183,
+   "base_cm": 2,
+   "base_m": 607,
+   "next_cm": 2,
+   "second": "Killington Resort",
+   "second_cm": 12,
+   "depth_cm": 12
+  },
+  "story": {
+   "id": "best_week",
+   "place": "resort:stratton_mountain_resort",
+   "score": 19,
+   "resort": "Stratton"
+  }
  },
  "media": [
   {
@@ -316,6 +355,17 @@
      "p": [
       "Runners-up over the last 72 hours: Killington Resort, Mount Snow and Okemo Mountain, with 5 in (12 cm), 5 in (12 cm) and 4 in (11 cm).",
       "Snow-covered ground in the US Northeast: 5,568 sq mi (14,420 km²). Resorts with snow: 28 of 112."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 2,936 ft (895 m), Stratton has 2 in (6 cm) today; a normal 13 November has 0 in (0 cm) there.",
+      "Only one winter in ten has more than 2 in (6 cm) on this date.",
+      "A week ago the same spot had 0 in (0 cm).",
+      "In past winters the best snow at Stratton usually came late February / early March.",
+      "Day by day at Stratton: Friday 13 November 3 in (8 cm); Saturday 14 November 0 in (1 cm); Sunday 15 November 0 in (1 cm).",
+      "Height by height at Stratton: 1,991 ft (607 m) 1 in (2 cm) on the ground, 2 in (4 cm) more in the next 7 days; 2,936 ft (895 m) 2 in (6 cm) on the ground, 2 in (5 cm) more in the next 7 days; 3,881 ft (1,183 m) 4 in (10 cm) on the ground, 2 in (6 cm) more in the next 7 days."
      ]
     },
     {
@@ -364,7 +414,7 @@
    "rewrite": 1
   }
  },
- "words_en": 249,
+ "words_en": 506,
  "indexable": false,
  "main": {
   "slug": "stratton_mountain_resort",
@@ -491,5 +541,26 @@
   "max": 0.213,
   "with": "alps-glacier-3000-fresh-snow-powder-alert-11-november-2026"
  },
- "publish_utc": "2026-11-13T15:58:33Z"
+ "publish_utc": "2026-11-13T15:58:33Z",
+ "rewrite": {
+  "v": 1,
+  "story": "best_week",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 506 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 506 < 600"
+  ],
+  "words": 506,
+  "overlap": 18.5,
+  "with": "us-west-cimarron-mountain-club-snow-depth-today-12-november-2026",
+  "langs_off": [],
+  "score": 64.9,
+  "intent": "resort:stratton_mountain_resort|best_week",
+  "guide": false,
+  "v": 1
+ }
 }

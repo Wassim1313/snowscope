@@ -297,7 +297,51 @@
     "depth_cm_measured": 5,
     "measured_on": "2026-11-13"
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Bolton Valley Resort",
+     "slug": "bolton_valley_resort",
+     "now_cm": 5,
+     "usual_cm": 2,
+     "high_cm": 14,
+     "week_ago_cm": null,
+     "height_m": 712,
+     "best_weeks": [
+      11,
+      7,
+      10
+     ],
+     "ratio_pct": null,
+     "deeper_than": 31,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Bolton Valley Resort",
+   "top_cm": 7,
+   "top_m": 950,
+   "base_cm": 1,
+   "base_m": 475,
+   "rain_day": "2026-11-17",
+   "freezing_m": 2830,
+   "lift_top_m": 950,
+   "next_cm": 1,
+   "second": "Mount Snow",
+   "second_cm": 8,
+   "depth_cm": 8
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:bolton_valley_resort",
+   "score": 46,
+   "resort": "Bolton Valley Resort"
+  }
  },
  "media": [
   {
@@ -350,6 +394,18 @@
      ]
     },
     {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Tuesday 17 November the freezing level climbs to about 9,285 ft (2,830 m), above the top of the lifts at 3,117 ft (950 m): rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 2,336 ft (712 m), Bolton Valley Resort has 2 in (5 cm) today; a normal 15 November has 1 in (2 cm) there.",
+      "That is more than in 31 of the 46 past winters on this date.",
+      "In past winters the best snow at Bolton Valley Resort usually came mid-February / early March.",
+      "Day by day at Bolton Valley Resort: Sunday 15 November 2 in (5 cm); Monday 16 November 0 in (1 cm).",
+      "Height by height at Bolton Valley Resort: 1,558 ft (475 m) 0 in (1 cm) on the ground, 1 in (2 cm) more in the next 7 days; 2,336 ft (712 m) 2 in (6 cm) on the ground, 1 in (2 cm) more in the next 7 days; 3,117 ft (950 m) 3 in (7 cm) on the ground, 1 in (2 cm) more in the next 7 days."
+     ]
+    },
+    {
      "h": "Top, middle, bottom",
      "p": [
       "From the base to the top of Bolton Valley Resort: 0 in (1 cm) at the base (1,558 ft / 475 m), 2 in (6 cm) at mid-mountain (2,336 ft / 712 m) and 3 in (7 cm) at the top (3,117 ft / 950 m).",
@@ -397,8 +453,8 @@
    "rewrite": 1
   }
  },
- "words_en": 411,
- "indexable": true,
+ "words_en": 718,
+ "indexable": false,
  "main": {
   "slug": "bolton_valley_resort",
   "name": "Bolton Valley Resort",
@@ -519,5 +575,26 @@
   },
   "credit": null,
   "photo": null
+ },
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: powder alert of a small resort",
+ "quality": {
+  "ok": false,
+  "why": [
+   "powder alert of a small resort"
+  ],
+  "words": 718,
+  "overlap": 20.8,
+  "with": "us-west-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 101.9,
+  "intent": "resort:bolton_valley_resort|rain_risk",
+  "guide": false,
+  "v": 1
  }
 }

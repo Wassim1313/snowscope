@@ -236,7 +236,48 @@
      "seen_on": "2026-11-01"
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Les Deux Alpes",
+     "slug": "les_deux_alpes",
+     "now_cm": 0,
+     "usual_cm": 8,
+     "high_cm": null,
+     "week_ago_cm": null,
+     "height_m": 2397,
+     "best_weeks": [
+      9,
+      10,
+      14
+     ],
+     "ratio_pct": 0,
+     "deeper_than": 8,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Les Deux Alpes",
+   "top_cm": 32,
+   "top_m": 3511,
+   "base_cm": 0,
+   "base_m": 1284,
+   "next_cm": 24,
+   "second": "La Grave",
+   "second_cm": 42,
+   "depth_cm": 45
+  },
+  "story": {
+   "id": "height_gap",
+   "place": "resort:les_deux_alpes",
+   "score": 46,
+   "resort": "Les Deux Alpes"
+  }
  },
  "media": [
   {
@@ -297,6 +338,18 @@
      ]
     },
     {
+     "h": "Top and bottom are two different worlds",
+     "p": [
+      "The top of Les Deux Alpes has about 32 cm at 3,511 m, the bottom about 0 cm at 1,284 m.",
+      "Ski the upper lifts and plan to ride down by lift if the lower runs are thin.",
+      "At about 2,397 m, Les Deux Alpes has 0 cm today; a normal 4 November has 8 cm there.",
+      "That is more than in 8 of the 46 past winters on this date.",
+      "In past winters the best snow at Les Deux Alpes usually came early March / early April.",
+      "Day by day at Les Deux Alpes: Wednesday 4 November 2 cm; Thursday 5 November 6 cm; Friday 6 November 18 cm.",
+      "Height by height at Les Deux Alpes: 1,284 m 0 cm on the ground, 0 cm more in the next 7 days; 2,397 m 0 cm on the ground, 16 cm more in the next 7 days; 3,511 m 32 cm on the ground, 29 cm more in the next 7 days."
+     ]
+    },
+    {
      "h": "Today's snow",
      "p": [
       "Of these resorts, Les Deux Alpes has the most snow on its upper slopes today, about 45 cm; then come La Grave 42 cm and Orelle 41 cm.",
@@ -338,6 +391,18 @@
      ]
     },
     {
+     "h": "Le haut et le bas, deux mondes",
+     "p": [
+      "Le haut de Les Deux Alpes compte environ 32 cm à 3 511 m, le bas environ 0 cm à 1 284 m.",
+      "Skiez sur les remontées du haut et prévoyez de redescendre en remontée si le bas est trop maigre.",
+      "Vers 2 397 m, Les Deux Alpes a 0 cm aujourd'hui ; un 4 novembre normal y compte 8 cm.",
+      "C'est plus que lors de 8 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Les Deux Alpes arrivait d'habitude début mars / début avril.",
+      "Jour après jour à Les Deux Alpes : mercredi 4 novembre 2 cm; jeudi 5 novembre 6 cm; vendredi 6 novembre 18 cm.",
+      "Altitude par altitude à Les Deux Alpes : 1 284 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours; 2 397 m 0 cm au sol, 16 cm de plus dans les 7 prochains jours; 3 511 m 32 cm au sol, 29 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
      "h": "Où est la neige aujourd'hui",
      "p": [
       "Parmi ces stations, Les Deux Alpes a le plus de neige sur le haut du domaine aujourd'hui, environ 45 cm ; suivent La Grave 42 cm et Orelle 41 cm.",
@@ -374,7 +439,7 @@
    "writer": "template"
   }
  },
- "words_en": 240,
+ "words_en": 495,
  "indexable": false,
  "main": {
   "slug": "les_deux_alpes",
@@ -450,5 +515,26 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@45.008,6.150,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "rewrite": {
+  "v": 1,
+  "story": "height_gap",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 495 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 495 < 600"
+  ],
+  "words": 495,
+  "overlap": 24.9,
+  "with": "alps-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 90.5,
+  "intent": "resort:les_deux_alpes|height_gap",
+  "guide": false,
+  "v": 1
+ }
 }

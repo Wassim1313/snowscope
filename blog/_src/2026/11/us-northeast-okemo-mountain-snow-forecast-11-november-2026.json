@@ -355,7 +355,51 @@
      "2026-11-14": 1
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Okemo Mountain",
+     "slug": "okemo_mountain",
+     "now_cm": 0,
+     "usual_cm": 0,
+     "high_cm": 4,
+     "week_ago_cm": null,
+     "height_m": 682,
+     "best_weeks": [
+      9,
+      10,
+      11
+     ],
+     "ratio_pct": null,
+     "deeper_than": 30,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Okemo Mountain",
+   "top_cm": 0,
+   "top_m": 1012,
+   "base_cm": 0,
+   "base_m": 353,
+   "rain_day": "2026-11-11",
+   "freezing_m": 1180,
+   "lift_top_m": 1012,
+   "next_cm": 38,
+   "second": "Stratton",
+   "second_cm": 0,
+   "depth_cm": 0
+  },
+  "story": {
+   "id": "storm_next",
+   "place": "resort:okemo_mountain",
+   "score": 26.7,
+   "resort": "Okemo Mountain"
+  }
  },
  "media": [
   {
@@ -401,6 +445,18 @@
      ]
     },
     {
+     "h": "The snow still to come",
+     "p": [
+      "Up to 15 in (38 cm) of new snow is forecast at Okemo Mountain over the next days.",
+      "Forecasts move: the timing is usually more reliable than the totals, so check again two days before you go.",
+      "At about 2,238 ft (682 m), Okemo Mountain has 0 in (0 cm) today; a normal 11 November has 0 in (0 cm) there.",
+      "That is more than in 30 of the 46 past winters on this date.",
+      "In past winters the best snow at Okemo Mountain usually came early March / mid-March.",
+      "Day by day at Okemo Mountain: Thursday 12 November 3 in (8 cm); Friday 13 November 11 in (29 cm); Saturday 14 November 0 in (1 cm).",
+      "Height by height at Okemo Mountain: 1,158 ft (353 m) 0 in (0 cm) on the ground, 2 in (6 cm) more in the next 7 days; 2,238 ft (682 m) 0 in (0 cm) on the ground, 6 in (16 cm) more in the next 7 days; 3,320 ft (1,012 m) 0 in (0 cm) on the ground, 9 in (22 cm) more in the next 7 days."
+     ]
+    },
+    {
      "h": "The forecast in short",
      "p": [
       "Forecast to 14 November: 11 in (28 cm) at Killington Resort and 11 in (27 cm) at Mount Snow. Treat the later days with care.",
@@ -442,8 +498,8 @@
    "rewrite": 1
   }
  },
- "words_en": 271,
- "indexable": true,
+ "words_en": 568,
+ "indexable": false,
  "main": {
   "slug": "okemo_mountain",
   "name": "Okemo Mountain",
@@ -569,5 +625,26 @@
   "max": 0.12,
   "with": "us-west-mt-shasta-ski-park-snow-forecast-11-november-2026"
  },
- "publish_utc": "2026-11-11T18:44:22Z"
+ "publish_utc": "2026-11-11T18:44:22Z",
+ "rewrite": {
+  "v": 1,
+  "story": "storm_next",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 568 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 568 < 600"
+  ],
+  "words": 568,
+  "overlap": 15.7,
+  "with": "us-west-snow-forecast-4-november-2026",
+  "langs_off": [],
+  "score": 74.9,
+  "intent": "resort:okemo_mountain|storm_next",
+  "guide": false,
+  "v": 1
+ }
 }

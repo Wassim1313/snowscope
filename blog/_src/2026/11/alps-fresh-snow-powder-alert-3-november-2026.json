@@ -311,7 +311,51 @@
     "cm_in_72h": 23,
     "km_from_resort": 20
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Kope",
+     "slug": "kope",
+     "now_cm": 5,
+     "usual_cm": 0,
+     "high_cm": 1,
+     "week_ago_cm": null,
+     "height_m": 1120,
+     "best_weeks": [
+      9,
+      8,
+      7
+     ],
+     "ratio_pct": null,
+     "deeper_than": 44,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Kope",
+   "top_cm": 6,
+   "top_m": 1535,
+   "base_cm": 0,
+   "base_m": 705,
+   "rain_day": "2026-11-06",
+   "freezing_m": 2980,
+   "lift_top_m": 1535,
+   "next_cm": 2,
+   "second": "Lackenhof",
+   "second_cm": 10,
+   "depth_cm": 11
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:kope",
+   "score": 34,
+   "resort": "Kope"
+  }
  },
  "media": [
   {
@@ -371,6 +415,18 @@
      ]
     },
     {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Friday 6 November the freezing level climbs to about 2,980 m, above the top of the lifts at 1,535 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 1,120 m, Kope has 5 cm today; a normal 3 November has 0 cm there.",
+      "That is more than in 44 of the 46 past winters on this date.",
+      "In past winters the best snow at Kope usually came mid-February / late February.",
+      "Day by day at Kope: Tuesday 3 November 2 cm; Wednesday 4 November 2 cm.",
+      "Height by height at Kope: 705 m 0 cm on the ground, 0 cm more in the next 7 days; 1,120 m 1 cm on the ground, 0 cm more in the next 7 days; 1,535 m 6 cm on the ground, 2 cm more in the next 7 days."
+     ]
+    },
+    {
      "h": "What the stations measured",
      "p": [
       "The Schönbüel station (1,777 m) measured 14 cm of snow on the ground on 2 November, with 11 cm of new snow in 24 hours. The Feuerkogel station (1,618 m) measured 9 cm of snow on the ground on 1 November, with 9 cm of new snow in 24 hours. The Plattkopf station (2,220 m) measured 30 cm of snow on the ground on 2 November, with 8 cm of new snow in 24 hours.",
@@ -417,8 +473,8 @@
    "writer": "template"
   }
  },
- "words_en": 278,
- "indexable": true,
+ "words_en": 552,
+ "indexable": false,
  "main": {
   "slug": "kope",
   "name": "Kope",
@@ -527,5 +583,27 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@46.505,15.212,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 552 < 600; powder alert of a small resort",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 552 < 600",
+   "powder alert of a small resort"
+  ],
+  "words": 552,
+  "overlap": 0.0,
+  "with": null,
+  "langs_off": [],
+  "score": 82.7,
+  "intent": "resort:kope|rain_risk",
+  "guide": false,
+  "v": 1
+ }
 }

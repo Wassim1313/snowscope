@@ -378,7 +378,48 @@
    "instruction": "Do not give a single snow total: say 'mixed rain and snow' when mixed is true, give the range in cm and the height, and say rain falls below the snow line when it is given."
   },
   "focus_index": 1,
-  "title_focus_resort": "Les Grands Montets"
+  "title_focus_resort": "Les Grands Montets",
+  "normal": {
+   "rows": [
+    {
+     "name": "Les Grands Montets",
+     "slug": "chamonix",
+     "now_cm": 15,
+     "usual_cm": 19,
+     "high_cm": 47,
+     "week_ago_cm": null,
+     "height_m": 2001,
+     "best_weeks": [
+      10,
+      9,
+      8
+     ],
+     "ratio_pct": 79,
+     "deeper_than": 17,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Les Grands Montets",
+   "top_cm": 28,
+   "top_m": 2768,
+   "base_cm": 0,
+   "base_m": 1234,
+   "rain_day": "2026-11-17",
+   "freezing_m": 3010,
+   "lift_top_m": 2768,
+   "next_cm": 79
+  },
+  "story": {
+   "id": "storm_next",
+   "place": "resort:chamonix",
+   "score": 75,
+   "resort": "Les Grands Montets"
+  }
  },
  "media": [
   {
@@ -431,6 +472,18 @@
      ]
     },
     {
+     "h": "The snow still to come",
+     "p": [
+      "Up to 79 cm of new snow is forecast at Les Grands Montets over the next days.",
+      "Forecasts move: the timing is usually more reliable than the totals, so check again two days before you go.",
+      "At about 2,001 m, Les Grands Montets has 15 cm today; a normal 15 November has 19 cm there.",
+      "That is more than in 17 of the 46 past winters on this date.",
+      "In past winters the best snow at Les Grands Montets usually came late February / early March.",
+      "Day by day at Les Grands Montets: Sunday 15 November 12 cm; Monday 16 November 11 cm; Tuesday 17 November 38 cm; Wednesday 18 November 30 cm.",
+      "Height by height at Les Grands Montets: 1,234 m 0 cm on the ground, 4 cm more in the next 7 days; 2,001 m 4 cm on the ground, 73 cm more in the next 7 days; 2,768 m 28 cm on the ground, 114 cm more in the next 7 days."
+     ]
+    },
+    {
      "h": "The forecast in short",
      "p": [
       "Forecast to 18 November: 77 cm at Les Arcs and 77 cm at Orelle. Treat the later days with care.",
@@ -475,6 +528,18 @@
      "p": [
       "En haut de la liste : Orelle, environ 81 cm en altitude. Puis Les Arcs 41 cm et Les Grands Montets 39 cm.",
       "63 570 km² de sol sont enneigés dans les Alpes aujourd'hui, et 851 stations sur 1 178 ont de la neige sur le haut du domaine."
+     ]
+    },
+    {
+     "h": "La neige encore à venir",
+     "p": [
+      "Jusqu'à 79 cm de neige fraîche sont prévus à Les Grands Montets dans les prochains jours.",
+      "Les prévisions bougent : le moment est souvent plus fiable que les quantités, revérifiez deux jours avant de partir.",
+      "Vers 2 001 m, Les Grands Montets a 15 cm aujourd'hui ; un 15 novembre normal y compte 19 cm.",
+      "C'est plus que lors de 17 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Les Grands Montets arrivait d'habitude fin février / début mars.",
+      "Jour après jour à Les Grands Montets : dimanche 15 novembre 12 cm; lundi 16 novembre 11 cm; mardi 17 novembre 38 cm; mercredi 18 novembre 30 cm.",
+      "Altitude par altitude à Les Grands Montets : 1 234 m 0 cm au sol, 4 cm de plus dans les 7 prochains jours; 2 001 m 4 cm au sol, 73 cm de plus dans les 7 prochains jours; 2 768 m 28 cm au sol, 114 cm de plus dans les 7 prochains jours."
      ]
     },
     {
@@ -525,8 +590,8 @@
    "rewrite": 1
   }
  },
- "words_en": 306,
- "indexable": true,
+ "words_en": 585,
+ "indexable": false,
  "main": {
   "slug": "chamonix",
   "name": "Les Grands Montets",
@@ -668,5 +733,26 @@
   },
   "credit": null,
   "photo": null
+ },
+ "rewrite": {
+  "v": 1,
+  "story": "storm_next",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 585 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 585 < 600"
+  ],
+  "words": 585,
+  "overlap": 20.5,
+  "with": "us-west-mt-shasta-ski-park-snow-forecast-11-november-2026",
+  "langs_off": [],
+  "score": 127.8,
+  "intent": "resort:chamonix|storm_next",
+  "guide": false,
+  "v": 1
  }
 }

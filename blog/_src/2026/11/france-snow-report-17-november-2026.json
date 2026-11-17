@@ -145,6 +145,128 @@
    ],
    "from_day": 8,
    "to_day": 14
+  },
+  "trend": [
+   {
+    "date": "2026-11-16",
+    "snow_km2": 9450,
+    "new72": 29,
+    "leader": "Les Arcs",
+    "leader_cm": 94
+   },
+   {
+    "date": "2026-11-17",
+    "snow_km2": 8720,
+    "new72": 47,
+    "leader": "La Grave",
+    "leader_cm": 113
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "La Grave",
+     "slug": "la_grave",
+     "now_cm": 64,
+     "usual_cm": 74,
+     "high_cm": 161,
+     "week_ago_cm": 28,
+     "height_m": 3370,
+     "best_weeks": [
+      16,
+      15,
+      17
+     ],
+     "ratio_pct": 86
+    },
+    {
+     "name": "Orelle",
+     "slug": "orelle",
+     "now_cm": 42,
+     "usual_cm": 53,
+     "high_cm": 103,
+     "week_ago_cm": 14,
+     "height_m": 2780,
+     "best_weeks": [
+      10,
+      9,
+      11
+     ],
+     "ratio_pct": 79
+    },
+    {
+     "name": "Val Thorens",
+     "slug": "val_thorens",
+     "now_cm": 71,
+     "usual_cm": 37,
+     "high_cm": 73,
+     "week_ago_cm": 31,
+     "height_m": 2474,
+     "best_weeks": [
+      10,
+      9,
+      14
+     ],
+     "ratio_pct": 192
+    },
+    {
+     "name": "Les Deux Alpes",
+     "slug": "les_deux_alpes",
+     "now_cm": 14,
+     "usual_cm": 26,
+     "high_cm": 66,
+     "week_ago_cm": 2,
+     "height_m": 2398,
+     "best_weeks": [
+      9,
+      10,
+      14
+     ],
+     "ratio_pct": 54
+    },
+    {
+     "name": "Alpe d'Huez Grand Domaine",
+     "slug": "alpe_dhuez",
+     "now_cm": 13,
+     "usual_cm": 22,
+     "high_cm": 55,
+     "week_ago_cm": 2,
+     "height_m": 2215,
+     "best_weeks": [
+      10,
+      9,
+      8
+     ],
+     "ratio_pct": 59
+    }
+   ],
+   "n": 5,
+   "above": 1,
+   "median_pct": 79
+  },
+  "neighbours": [
+   {
+    "cc": "CH",
+    "name": "Switzerland",
+    "white_share_pct": 41,
+    "leader": "Glacier 3000",
+    "leader_cm": 46,
+    "next_7_days_max_cm": 85
+   },
+   {
+    "cc": "IT",
+    "name": "Italy",
+    "white_share_pct": 13,
+    "leader": "La Thuile ski",
+    "leader_cm": 50,
+    "next_7_days_max_cm": 58
+   }
+  ],
+  "glacier": false,
+  "story": {
+   "id": "storm_track",
+   "place": "cc:FR",
+   "score": 73.5
   }
  },
  "media": [
@@ -169,60 +291,92 @@
  ],
  "docs": {
   "en": {
-   "title": "Is there snow in France? Snow depth and new snow on 17 November 2026",
-   "description": "France snow today, 17 November: snow cover, new snow, snow depth by height, the next days and the best resorts.",
-   "lede": "The white area in France stands at about 8,720 km² today, 730 km² less than yesterday. Roughly 10 % of the country's mapped mountains and hills are covered.",
+   "title": "Where the snow fell in France: The Mont Blanc massif first, up to 47 cm",
+   "description": "Where the snow fell in France: The Mont Blanc massif first, up to 47 cm. Snow cover, new snow, resorts and the days ahead in France on 17 November.",
+   "lede": "The last three days brought up to 47 cm in France. The snow did not fall evenly: the Mont Blanc massif, the southern French Alps and the northern French Alps got the most.",
    "sections": [
     {
-     "h": "Today's snow cover",
+     "h": "Where the snow fell",
      "p": [
-      "Think 1,900 m and higher for a white landscape. Compared with 6,860 km² seven days ago, that is 1,860 km² more."
-     ]
-    },
-    {
-     "h": "Low, middle and high ground",
-     "p": [
-      "By height, the picture looks like this: between 1,000 and 1,500 m, under 1 cm on average, 1 % covered; between 1,500 and 2,000 m, 1 cm on average, 27 % covered; between 2,000 and 2,500 m, 7 cm on average, 70 % covered; above 2,500 m: on average 31 cm (94 % white)."
-     ]
-    },
-    {
-     "h": "Skiing conditions",
-     "p": [
-      "The new snow freshens the upper slopes; lower down it may already be heavy or wet.",
-      "With more snow in the forecast, the next days should improve things further."
+      "At least 5 cm fell over some 8,300 km². Resorts on the side of the mountains that faced the weather got the fresh snow; sheltered valleys got far less.",
+      "8,720 km² of snow-covered ground in France this Tuesday, down 730 km² on yesterday. Roughly 10 % of the country's mapped mountains and hills are covered."
      ]
     },
     {
      "h": "The latest snowfall",
      "p": [
       "Three-day totals peak at 47 cm, around the Mont Blanc massif, the southern French Alps and the northern French Alps.",
-      "In the past day, up to 23 cm was added.",
-      "About 8,300 km² received at least 5 cm."
+      "The last 24 hours alone brought up to 23 cm.",
+      "At least 5 cm fell over some 8,300 km²."
      ]
     },
     {
-     "h": "Shortlist for the weekend",
+     "h": "Best resorts right now",
      "p": [
       "The deepest snow of the country's resorts is at La Grave: 113 cm.",
-      "Next on the list: Orelle (108 cm), Val Thorens (108 cm), Les Deux Alpes (91 cm) and Alpe d'Huez Grand Domaine (78 cm).",
-      "La Grave picked up 79 cm in the last three days and could add 92 cm by Friday 20 November.",
+      "Then come Orelle (108 cm), Val Thorens (108 cm), Les Deux Alpes (91 cm) and Alpe d'Huez Grand Domaine (78 cm).",
+      "At La Grave: 79 cm of fresh snow over three days, 92 cm more expected by Friday 20 November.",
       "Orelle picked up 74 cm in the last three days and could add 102 cm by Friday 20 November.",
-      "104 of the 224 resorts we follow in France have snow on their upper slopes."
+      "Snow lies on the upper slopes of 104 out of 224 resorts in France.",
+      "The rest of the shortlist: Val Thorens: 108 cm on top, 74 cm in three days, 102 cm expected; Les Deux Alpes: 91 cm on top, 67 cm in three days, 68 cm expected; Alpe d'Huez Grand Domaine: 78 cm on top, 72 cm in three days, 85 cm expected."
      ]
     },
     {
-     "h": "Snow on the way?",
+     "h": "The next days",
      "p": [
-      "Snow is in the forecast: up to 72 cm by the end of the third day, up to 87 cm within seven days.",
-      "The snowiest day looks like Friday 20 November, with up to 33 cm in the snowiest spots.",
-      "The second week adds up to 38 cm where it snows most."
+      "The week ahead could bring up to 87 cm, 72 cm of it in the next three days.",
+      "Friday 20 November stands out, with up to 33 cm in a day.",
+      "Further out, days 8 to 14 show up to 38 cm on the snowiest slopes."
+     ]
+    },
+    {
+     "h": "How deep it is, height by height",
+     "p": [
+      "Climb and the snow gets deeper: 1,000-1,500 m: on average under 1 cm (1 % of the ground white); 1,500-2,000 m: on average 1 cm (27 % of the ground white); 2,000-2,500 m: on average 7 cm (70 % of the ground white); above 2,500 m: on average 31 cm (94 % white)."
+     ]
+    },
+    {
+     "h": "How much of the country is white",
+     "p": [
+      "Below about 1,900 m the slopes are mostly green or brown. A week ago it was 6,860 km², so the cover has grown by 1,860 km²."
+     ]
+    },
+    {
+     "h": "How this start compares",
+     "p": [
+      "Here is how the deepest resorts compare with their usual 17 November: La Grave: 64 cm at about 3,370 m, against 74 cm in a normal year; Orelle: 42 cm at about 2,780 m, against 53 cm in a normal year; Val Thorens: 71 cm at about 2,474 m, against 37 cm in a normal year; Les Deux Alpes: 14 cm at about 2,398 m, against 26 cm in a normal year.",
+      "1 of these 4 resorts are above their usual depth for the date.",
+      "These depths are for one height on each mountain, below the top, so they read lower than the upper-slope numbers further down.",
+      "In past winters the best snow at La Grave usually came mid-April / late April."
+     ]
+    },
+    {
+     "h": "The neighbours today",
+     "p": [
+      "For comparison, the neighbours on the same day: Switzerland: 41 % white, deepest Glacier 3000 with 46 cm, up to 85 cm in the week ahead; Italy: 13 % white, deepest La Thuile ski with 50 cm, up to 58 cm in the week ahead."
+     ]
+    },
+    {
+     "h": "Planning a day on the snow",
+     "p": [
+      "Above 2,500 m the ground is almost fully white (94 % covered), so runs up there have a continuous base.",
+      "Between 1,500 m and 2,500 m the cover is patchy, about 27 % white: expect grass and stones between the snow.",
+      "Below 1,500 m the slopes are still almost bare.",
+      "If you can choose the day, go after Friday 20 November: the fresh snow then has time to settle and the roads to be cleared."
+     ]
+    },
+    {
+     "h": "What it means on the slopes",
+     "p": [
+      "The new snow freshens the upper slopes; lower down it may already be heavy or wet.",
+      "Keep an eye on the forecast: the coming snow could change the picture quickly."
      ]
     }
    ],
    "advice": [
+    "Roads to the higher resorts may need winter tyres or chains.",
     "Read the local avalanche bulletin before going off-piste.",
-    "Fresh snow on a cold base sticks badly: take care on steep slopes.",
-    "Early-season snow is thin over rocks: ski the groomed runs first."
+    "Morning snow is firm after a clear night: wait for the sun on south faces."
    ],
    "captions": {
     "map": "Snow depth in France on 17 November",
@@ -230,60 +384,92 @@
    }
   },
   "fr": {
-   "title": "Y a-t-il de la neige en France ? Hauteurs et neige fraîche le 17 novembre 2026",
-   "description": "Neige en France le 17 novembre : couverture, neige fraîche, hauteurs selon l'altitude, prochains jours et meilleures stations.",
-   "lede": "La surface blanche en France atteint environ 8 720 km² aujourd'hui, 730 km² de moins qu'hier. Environ 10 % des montagnes et collines cartographiées du pays sont couvertes.",
+   "title": "Où la neige est tombée en France : Le massif du Mont-Blanc en tête, jusqu'à 47 cm",
+   "description": "Où la neige est tombée en France : Le massif du Mont-Blanc en tête, jusqu'à 47 cm",
+   "lede": "Les trois derniers jours ont apporté jusqu'à 47 cm en France. La neige n'est pas tombée partout pareil : le massif du Mont-Blanc, les Alpes du Sud et les Alpes du Nord ont reçu le plus.",
    "sections": [
     {
-     "h": "Couverture neigeuse aujourd'hui",
+     "h": "Où la neige est tombée",
      "p": [
-      "Pour un paysage blanc, visez 1 900 m et plus haut. Par rapport aux 6 860 km² d'il y a sept jours, c'est 1 860 km² de plus."
-     ]
-    },
-    {
-     "h": "En bas, à mi-pente et en haut",
-     "p": [
-      "Selon l'altitude, le tableau est le suivant : entre 1 000 et 1 500 m, moins de 1 cm en moyenne, 1 % couverts; entre 1 500 et 2 000 m, 1 cm en moyenne, 27 % couverts; entre 2 000 et 2 500 m, 7 cm en moyenne, 70 % couverts; au-dessus de 2 500 m : en moyenne 31 cm (94 % blanc)."
-     ]
-    },
-    {
-     "h": "Conditions de ski",
-     "p": [
-      "La neige fraîche rafraîchit le haut des pistes ; plus bas, elle peut déjà être lourde ou mouillée.",
-      "Avec de la neige annoncée, les prochains jours devraient encore améliorer la situation."
+      "Au moins 5 cm sont tombés sur environ 8 300 km². Les stations exposées à la perturbation ont reçu la neige fraîche ; les vallées abritées beaucoup moins.",
+      "8 720 km² de terrain enneigé en France ce mardi, en baisse de 730 km² sur un jour. Environ 10 % des montagnes et collines cartographiées du pays sont couvertes."
      ]
     },
     {
      "h": "Les dernières chutes",
      "p": [
       "Les cumuls sur trois jours culminent à 47 cm, autour de le massif du Mont-Blanc, les Alpes du Sud et les Alpes du Nord.",
-      "En une journée, jusqu'à 23 cm se sont ajoutés.",
-      "Environ 8 300 km² ont reçu au moins 5 cm."
+      "Les dernières 24 heures ont apporté jusqu'à 23 cm.",
+      "Au moins 5 cm sont tombés sur quelque 8 300 km²."
      ]
     },
     {
-     "h": "La sélection pour le week-end",
+     "h": "Les meilleures stations du moment",
      "p": [
       "La neige la plus épaisse des stations du pays est à La Grave : 113 cm.",
-      "Ensuite : Orelle (108 cm), Val Thorens (108 cm), Les Deux Alpes (91 cm) et Alpe d'Huez Grand Domaine (78 cm).",
-      "La Grave a reçu 79 cm en trois jours et pourrait gagner 92 cm d'ici vendredi 20 novembre.",
+      "Suivent Orelle (108 cm), Val Thorens (108 cm), Les Deux Alpes (91 cm) et Alpe d'Huez Grand Domaine (78 cm).",
+      "À La Grave : 79 cm de neige fraîche en trois jours, 92 cm de plus attendus d'ici vendredi 20 novembre.",
       "Orelle a reçu 74 cm en trois jours et pourrait gagner 102 cm d'ici vendredi 20 novembre.",
-      "104 des 224 stations suivies en France ont de la neige sur le haut du domaine."
+      "La neige recouvre le haut de 104 stations sur 224 en France.",
+      "Le reste de la sélection : Val Thorens : 108 cm en haut, 74 cm en trois jours, 102 cm attendus; Les Deux Alpes : 91 cm en haut, 67 cm en trois jours, 68 cm attendus; Alpe d'Huez Grand Domaine : 78 cm en haut, 72 cm en trois jours, 85 cm attendus."
      ]
     },
     {
-     "h": "De la neige en route ?",
+     "h": "Les prochains jours",
      "p": [
-      "De la neige est prévue : jusqu'à 72 cm d'ici trois jours, jusqu'à 87 cm en sept jours.",
-      "Le jour le plus neigeux devrait être le vendredi 20 novembre, avec jusqu'à 33 cm aux endroits les plus arrosés.",
-      "La deuxième semaine ajoute jusqu'à 38 cm là où il neige le plus."
+      "La semaine à venir pourrait apporter jusqu'à 87 cm, dont 72 cm dans les trois prochains jours.",
+      "Le vendredi 20 novembre se détache, avec jusqu'à 33 cm en une journée.",
+      "Plus loin, les jours 8 à 14 montrent jusqu'à 38 cm sur les pentes les plus enneigées."
+     ]
+    },
+    {
+     "h": "L'épaisseur, étage par étage",
+     "p": [
+      "Plus on monte, plus la neige est épaisse : 1 000-1 500 m : en moyenne moins de 1 cm (1 % du sol blanc); 1 500-2 000 m : en moyenne 1 cm (27 % du sol blanc); 2 000-2 500 m : en moyenne 7 cm (70 % du sol blanc); au-dessus de 2 500 m : en moyenne 31 cm (94 % blanc)."
+     ]
+    },
+    {
+     "h": "Quelle part du pays est blanche",
+     "p": [
+      "Sous 1 900 m environ, les pentes sont surtout vertes ou brunes. Il y a une semaine, c'était 6 860 km² : la couverture a gagné 1 860 km²."
+     ]
+    },
+    {
+     "h": "Comment ce début se situe",
+     "p": [
+      "Voici comment les stations les plus enneigées se situent par rapport à leur 17 novembre habituel : La Grave : 64 cm vers 3 370 m, contre 74 cm une année normale; Orelle : 42 cm vers 2 780 m, contre 53 cm une année normale; Val Thorens : 71 cm vers 2 474 m, contre 37 cm une année normale; Les Deux Alpes : 14 cm vers 2 398 m, contre 26 cm une année normale.",
+      "1 de ces 4 stations sont au-dessus de leur hauteur habituelle à cette date.",
+      "Ces hauteurs valent pour une altitude donnée de chaque montagne, sous le sommet : elles sont donc plus basses que les chiffres du haut des pistes plus loin.",
+      "Les hivers passés, la meilleure neige à La Grave arrivait d'habitude mi-avril / fin avril."
+     ]
+    },
+    {
+     "h": "Les voisins aujourd'hui",
+     "p": [
+      "Pour comparer, les voisins le même jour : Suisse : 41 % de blanc, Glacier 3000 en tête avec 46 cm, jusqu'à 85 cm dans la semaine; Italie : 13 % de blanc, La Thuile ski en tête avec 50 cm, jusqu'à 58 cm dans la semaine."
+     ]
+    },
+    {
+     "h": "Préparer une journée sur la neige",
+     "p": [
+      "Au-dessus de 2 500 m, le sol est presque entièrement blanc (94 % couvert) : les pistes y ont une sous-couche continue.",
+      "Entre 1 500 m et 2 500 m, la couverture est irrégulière, environ 27 % de blanc : herbe et cailloux entre les plaques.",
+      "Sous 1 500 m, les pentes sont encore presque nues.",
+      "Si vous pouvez choisir le jour, partez après le vendredi 20 novembre : la neige fraîche aura le temps de se tasser et les routes d'être dégagées."
+     ]
+    },
+    {
+     "h": "Ce que cela donne sur les pistes",
+     "p": [
+      "La neige fraîche rafraîchit le haut des pistes ; plus bas, elle peut déjà être lourde ou mouillée.",
+      "Surveillez les prévisions : la neige à venir peut vite changer la donne."
      ]
     }
    ],
    "advice": [
+    "Les routes des stations d'altitude peuvent exiger pneus hiver ou chaînes.",
     "Lisez le bulletin d'avalanche local avant le hors-piste.",
-    "Neige fraîche sur base froide : prudence dans les pentes raides.",
-    "La neige de début de saison est fine sur les cailloux : privilégiez les pistes damées."
+    "Après une nuit claire, la neige est dure le matin : attendez le soleil sur les faces sud."
    ],
    "captions": {
     "map": "Hauteur de neige en France le 17 novembre",
@@ -294,15 +480,17 @@
  "writers": {
   "en": {
    "writer": "template",
-   "voice": "hydro"
+   "voice": "sat",
+   "rewrite": "requality"
   },
   "fr": {
    "writer": "template",
-   "voice": "hydro"
+   "voice": "sat",
+   "rewrite": "requality"
   }
  },
- "words_en": 312,
- "indexable": false,
+ "words_en": 717,
+ "indexable": true,
  "main": {
   "slug": "la_grave",
   "name": "La Grave",
@@ -424,20 +612,23 @@
   "with": "germany-snow-report-16-november-2026"
  },
  "publish_utc": "2026-11-17T09:36:59Z",
- "cover": {
+ "cover": {},
+ "rewrite": {
   "v": 1,
-  "style": "ranked",
-  "files": {
-   "en": [
-    "blog/media/2026/11/france-snow-report-17-november-2026/cover-en.webp",
-    "blog/media/2026/11/france-snow-report-17-november-2026/cover-en_t.webp"
-   ],
-   "fr": [
-    "blog/media/2026/11/france-snow-report-17-november-2026/cover-fr.webp",
-    "blog/media/2026/11/france-snow-report-17-november-2026/cover-fr_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "storm_track",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 717,
+  "overlap": 27.8,
+  "with": "norway-snow-report-16-november-2026",
+  "langs_off": [],
+  "score": 135.9,
+  "intent": "cc:FR|storm_track",
+  "guide": false,
+  "v": 1
  }
 }

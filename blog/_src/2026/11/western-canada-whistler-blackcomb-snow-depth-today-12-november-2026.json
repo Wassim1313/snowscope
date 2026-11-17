@@ -378,7 +378,7 @@
   }
  },
  "words_en": 296,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "whistler",
   "name": "Whistler Blackcomb",
@@ -503,5 +503,21 @@
   "max": 0.234,
   "with": "western-canada-mount-washington-alpine-resort-snow-depth-today-8-november-2026"
  },
- "publish_utc": "2026-11-12T17:37:52Z"
+ "publish_utc": "2026-11-12T17:37:52Z",
+ "noindex_why": "quality: words 403 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 403 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 403,
+  "overlap": 7.0,
+  "with": "us-west-telluride-snow-depth-today-8-november-2026",
+  "langs_off": [],
+  "score": 44.1,
+  "intent": "whistler|snow-depth",
+  "guide": false,
+  "v": 1
+ }
 }

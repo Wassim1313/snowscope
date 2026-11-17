@@ -377,7 +377,7 @@
   }
  },
  "words_en": 360,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "masella",
   "name": "Masella",
@@ -452,5 +452,21 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@42.336,1.902,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "noindex_why": "quality: words 477 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 477 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 477,
+  "overlap": 0.0,
+  "with": null,
+  "langs_off": [],
+  "score": 43.8,
+  "intent": "pyrenees|where-to-ski",
+  "guide": false,
+  "v": 1
+ }
 }

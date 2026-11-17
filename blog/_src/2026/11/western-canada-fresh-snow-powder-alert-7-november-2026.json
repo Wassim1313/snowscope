@@ -258,7 +258,51 @@
     "cm_in_72h": 98,
     "km_from_resort": 26
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Ski Callaghan",
+     "slug": "ski_callaghan",
+     "now_cm": 13,
+     "usual_cm": 38,
+     "high_cm": 100,
+     "week_ago_cm": null,
+     "height_m": 923,
+     "best_weeks": [
+      12,
+      13,
+      14
+     ],
+     "ratio_pct": 34,
+     "deeper_than": 10,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Ski Callaghan",
+   "top_cm": 10,
+   "top_m": 998,
+   "base_cm": 3,
+   "base_m": 848,
+   "rain_day": "2026-11-07",
+   "freezing_m": 2090,
+   "lift_top_m": 998,
+   "next_cm": 99,
+   "second": "Tweedsmuir Ski Club",
+   "second_cm": 55,
+   "depth_cm": 48
+  },
+  "story": {
+   "id": "best_week",
+   "place": "resort:ski_callaghan",
+   "score": 31,
+   "resort": "Ski Callaghan"
+  }
  },
  "media": [
   {
@@ -300,6 +344,16 @@
      "p": [
       "Elsewhere, Tweedsmuir Ski Club, Whistler Blackcomb and Mount Cain Alpine Park got 55 cm, 45 cm and 20 cm in the last 72 hours.",
       "50 of 57 resorts in Western Canada have snow on their upper slopes today, and our model counts 300,720 km² of snow-covered ground."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 923 m, Ski Callaghan has 13 cm today; a normal 7 November has 38 cm there.",
+      "That is more than in 10 of the 46 past winters on this date.",
+      "In past winters the best snow at Ski Callaghan usually came late March / early April.",
+      "Day by day at Ski Callaghan: Saturday 7 November 9 cm; Sunday 8 November 62 cm; Monday 9 November 3 cm; Tuesday 10 November 34 cm.",
+      "Height by height at Ski Callaghan: 848 m 3 cm on the ground, 2 cm more in the next 7 days; 923 m 6 cm on the ground, 5 cm more in the next 7 days; 998 m 10 cm on the ground, 10 cm more in the next 7 days."
      ]
     },
     {
@@ -347,7 +401,7 @@
    "usd": 0.004134
   }
  },
- "words_en": 204,
+ "words_en": 428,
  "indexable": false,
  "main": {
   "slug": "ski_callaghan",
@@ -458,5 +512,27 @@
  "trip_day": "2026-11-14",
  "map_link": "https://snowscope.app/#@50.166,-123.166,9.0",
  "seconds": 14.9,
- "publish_utc": "2026-11-07T14:00:00Z"
+ "publish_utc": "2026-11-07T14:00:00Z",
+ "rewrite": {
+  "v": 1,
+  "story": "best_week",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 428 < 600; powder alert of a small resort",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 428 < 600",
+   "powder alert of a small resort"
+  ],
+  "words": 428,
+  "overlap": 25.4,
+  "with": "us-west-fresh-snow-powder-alert-4-november-2026",
+  "langs_off": [],
+  "score": 78.6,
+  "intent": "resort:ski_callaghan|best_week",
+  "guide": false,
+  "v": 1
+ }
 }

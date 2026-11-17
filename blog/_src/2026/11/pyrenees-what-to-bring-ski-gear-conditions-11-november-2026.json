@@ -340,7 +340,7 @@
   }
  },
  "words_en": 408,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "aramon_cerler",
   "name": "Aramón Cerler",
@@ -466,5 +466,21 @@
   "max": 0.133,
   "with": "pyrenees-what-to-bring-ski-gear-conditions-9-november-2026"
  },
- "publish_utc": "2026-11-11T18:44:22Z"
+ "publish_utc": "2026-11-11T18:44:22Z",
+ "noindex_why": "quality: words 512 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 512 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 512,
+  "overlap": 3.9,
+  "with": "pyrenees-freezing-level-snow-line-8-november-2026",
+  "langs_off": [],
+  "score": 45.0,
+  "intent": "pyrenees|ski-gear",
+  "guide": false,
+  "v": 1
+ }
 }

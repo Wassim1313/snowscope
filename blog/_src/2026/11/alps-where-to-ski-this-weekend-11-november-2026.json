@@ -316,7 +316,51 @@
    "high slopes and north-facing slopes keep snow longest",
    "early-season snow is thin: stay on groomed pistes",
    "read the official avalanche bulletin before off-piste"
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Dent de Vaulion",
+     "slug": "dent_de_vaulion_le_morez",
+     "now_cm": 0,
+     "usual_cm": 0,
+     "high_cm": 4,
+     "week_ago_cm": null,
+     "height_m": 1308,
+     "best_weeks": [
+      7,
+      8,
+      9
+     ],
+     "ratio_pct": null,
+     "deeper_than": 34,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Dent de Vaulion",
+   "top_cm": 0,
+   "top_m": 1465,
+   "base_cm": 0,
+   "base_m": 1152,
+   "rain_day": "2026-11-12",
+   "freezing_m": 2800,
+   "lift_top_m": 1465,
+   "next_cm": 0,
+   "second": "Glacier 3000",
+   "second_cm": 94,
+   "depth_cm": 300
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:dent_de_vaulion_le_morez",
+   "score": 46,
+   "resort": "Dent de Vaulion"
+  }
  },
  "media": [
   {
@@ -340,6 +384,17 @@
      "p": [
       "Next round by 14 November: 33 cm at Glacier 3000, 30 cm at Ovronnaz and 58 cm at La Grave, according to our forecast.",
       "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Thursday 12 November the freezing level climbs to about 2,800 m, above the top of the lifts at 1,465 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 1,308 m, Dent de Vaulion has 0 cm today; a normal 11 November has 0 cm there.",
+      "That is more than in 34 of the 46 past winters on this date.",
+      "In past winters the best snow at Dent de Vaulion usually came mid-February / late February.",
+      "Height by height at Dent de Vaulion: 1,152 m 0 cm on the ground, 0 cm more in the next 7 days; 1,308 m 0 cm on the ground, 0 cm more in the next 7 days; 1,465 m 0 cm on the ground, 0 cm more in the next 7 days."
      ]
     },
     {
@@ -388,6 +443,17 @@
      ]
     },
     {
+     "h": "De la pluie jusqu'en haut ?",
+     "p": [
+      "Le jeudi 12 novembre, l'isotherme 0 °C monte vers 2 800 m, au-dessus du sommet des remontées à 1 465 m : il peut pleuvoir jusqu'en haut.",
+      "La pluie sur la neige fraîche l'alourdit et, après une nuit froide, la rend glacée : les jours suivants conviennent mieux aux pistes damées qu'à la poudreuse.",
+      "Vers 1 308 m, Dent de Vaulion a 0 cm aujourd'hui ; un 11 novembre normal y compte 0 cm.",
+      "C'est plus que lors de 34 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Dent de Vaulion arrivait d'habitude mi-février / fin février.",
+      "Altitude par altitude à Dent de Vaulion : 1 152 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours; 1 308 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours; 1 465 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
      "h": "Contrôle de la limite pluie-neige",
      "p": [
       "Le 12 novembre, l'isotherme 0 °C à Dent de Vaulion se situe entre 2 280 m et 2 800 m, au-dessus du sommet de la station (1 465 m) : pluie ou neige mouillée sur toutes les pentes possible.",
@@ -431,8 +497,8 @@
    "voice": "sat"
   }
  },
- "words_en": 252,
- "indexable": true,
+ "words_en": 522,
+ "indexable": false,
  "main": {
   "slug": "dent_de_vaulion_le_morez",
   "name": "Dent de Vaulion",
@@ -540,5 +606,26 @@
   "max": 0.322,
   "with": "us-west-where-to-ski-this-weekend-11-november-2026"
  },
- "publish_utc": "2026-11-11T18:44:22Z"
+ "publish_utc": "2026-11-11T18:44:22Z",
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 522 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 522 < 600"
+  ],
+  "words": 522,
+  "overlap": 15.8,
+  "with": "pyrenees-where-to-ski-this-weekend-4-november-2026",
+  "langs_off": [],
+  "score": 95.7,
+  "intent": "resort:dent_de_vaulion_le_morez|rain_risk",
+  "guide": false,
+  "v": 1
+ }
 }

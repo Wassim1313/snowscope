@@ -481,7 +481,7 @@
   }
  },
  "words_en": 492,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "obergurgl_hochgurgl",
   "name": "Obergurgl",
@@ -518,5 +518,20 @@
   "with": "schneehoehe-soelden-gletscher-und-tal-13-november-2026",
   "tries": 0
  },
- "publish_utc": "2026-11-13T12:00:00Z"
+ "publish_utc": "2026-11-13T12:00:00Z",
+ "noindex_why": "quality: words 570 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 570 < 600"
+  ],
+  "words": 570,
+  "overlap": 1.4,
+  "with": "us-west-fresh-snow-powder-alert-4-november-2026",
+  "langs_off": [],
+  "score": 56.5,
+  "intent": "obergurgl_hochgurgl|snow-report",
+  "guide": false,
+  "v": 1
+ }
 }

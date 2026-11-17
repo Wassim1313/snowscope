@@ -315,7 +315,45 @@
    }
   ],
   "focus_index": 1,
-  "title_focus_resort": "Les Deux Alpes"
+  "title_focus_resort": "Les Deux Alpes",
+  "normal": {
+   "rows": [
+    {
+     "name": "Les Deux Alpes",
+     "slug": "les_deux_alpes",
+     "now_cm": 0,
+     "usual_cm": 18,
+     "high_cm": null,
+     "week_ago_cm": null,
+     "height_m": 2397,
+     "best_weeks": [
+      9,
+      10,
+      14
+     ],
+     "ratio_pct": 0,
+     "deeper_than": 5,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Les Deux Alpes",
+   "top_cm": 48,
+   "top_m": 3511,
+   "base_cm": 0,
+   "base_m": 1284,
+   "next_cm": 51
+  },
+  "story": {
+   "id": "storm_next",
+   "place": "resort:les_deux_alpes",
+   "score": 67.0,
+   "resort": "Les Deux Alpes"
+  }
  },
  "media": [
   {
@@ -362,6 +400,18 @@
      ]
     },
     {
+     "h": "The snow still to come",
+     "p": [
+      "Up to 51 cm of new snow is forecast at Les Deux Alpes over the next days.",
+      "Forecasts move: the timing is usually more reliable than the totals, so check again two days before you go.",
+      "At about 2,397 m, Les Deux Alpes has 0 cm today; a normal 11 November has 18 cm there.",
+      "That is more than in 5 of the 46 past winters on this date.",
+      "In past winters the best snow at Les Deux Alpes usually came early March / early April.",
+      "Day by day at Les Deux Alpes: Wednesday 11 November 5 cm; Thursday 12 November 45 cm; Friday 13 November 5 cm; Saturday 14 November 1 cm.",
+      "Height by height at Les Deux Alpes: 1,284 m 0 cm on the ground, 0 cm more in the next 7 days; 2,397 m 0 cm on the ground, 39 cm more in the next 7 days; 3,511 m 48 cm on the ground, 76 cm more in the next 7 days."
+     ]
+    },
+    {
      "h": "The next days in the forecast",
      "p": [
       "More snow, and so more stored water, is on the way: by 14 November our forecast gives 42 cm at Alpe d'Huez Grand Domaine and 42 cm at Livigno."
@@ -405,6 +455,18 @@
      "p": [
       "Le manteau le plus épais du groupe est à Ponte di Legno, environ 62 cm sur le haut du domaine ; ensuite La Grave 39 cm et Les Deux Alpes 29 cm.",
       "Aujourd'hui, 38 440 km² de sol dans les Alpes sont couverts de neige selon notre modèle, et 623 stations sur 1 179 ont de la neige sur le haut du domaine."
+     ]
+    },
+    {
+     "h": "La neige encore à venir",
+     "p": [
+      "Jusqu'à 51 cm de neige fraîche sont prévus à Les Deux Alpes dans les prochains jours.",
+      "Les prévisions bougent : le moment est souvent plus fiable que les quantités, revérifiez deux jours avant de partir.",
+      "Vers 2 397 m, Les Deux Alpes a 0 cm aujourd'hui ; un 11 novembre normal y compte 18 cm.",
+      "C'est plus que lors de 5 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Les Deux Alpes arrivait d'habitude début mars / début avril.",
+      "Jour après jour à Les Deux Alpes : mercredi 11 novembre 5 cm; jeudi 12 novembre 45 cm; vendredi 13 novembre 5 cm; samedi 14 novembre 1 cm.",
+      "Altitude par altitude à Les Deux Alpes : 1 284 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours; 2 397 m 0 cm au sol, 39 cm de plus dans les 7 prochains jours; 3 511 m 48 cm au sol, 76 cm de plus dans les 7 prochains jours."
      ]
     },
     {
@@ -461,7 +523,7 @@
    "voice": "hydro"
   }
  },
- "words_en": 326,
+ "words_en": 601,
  "indexable": true,
  "main": {
   "slug": "les_deux_alpes",
@@ -588,5 +650,39 @@
   "max": 0.085,
   "with": "us-northeast-north-county-school-snow-forecast-10-november-2026"
  },
- "publish_utc": "2026-11-11T18:44:22Z"
+ "publish_utc": "2026-11-11T18:44:22Z",
+ "rewrite": {
+  "v": 1,
+  "story": "storm_next",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 601,
+  "overlap": 18.4,
+  "with": "alps-where-to-ski-best-snow-8-november-2026",
+  "langs_off": [],
+  "score": 122.5,
+  "intent": "resort:les_deux_alpes|storm_next",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "hero",
+  "files": {
+   "en": [
+    "blog/media/2026/11/alps-les-deux-alpes-snow-forecast-11-november-2026/cover-en.webp",
+    "blog/media/2026/11/alps-les-deux-alpes-snow-forecast-11-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/alps-les-deux-alpes-snow-forecast-11-november-2026/cover-fr.webp",
+    "blog/media/2026/11/alps-les-deux-alpes-snow-forecast-11-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

@@ -342,7 +342,39 @@
    }
   ],
   "focus_index": 4,
-  "title_focus_resort": "Les Arcs"
+  "title_focus_resort": "Les Arcs",
+  "normal": {
+   "rows": [
+    {
+     "name": "Les Arcs",
+     "slug": "les_arcs",
+     "now_cm": 20,
+     "usual_cm": 27,
+     "high_cm": 56,
+     "week_ago_cm": 6,
+     "height_m": 2214,
+     "best_weeks": [
+      10,
+      14,
+      11
+     ],
+     "ratio_pct": 74
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Les Arcs",
+   "next_cm": 96
+  },
+  "story": {
+   "id": "storm_next",
+   "place": "resort:les_arcs",
+   "score": 63,
+   "resort": "Les Arcs"
+  }
  },
  "media": [
   {
@@ -392,6 +424,18 @@
      "p": [
       "Among these resorts, La Grave holds the most snow on its upper slopes today, about 96 cm, followed by Orelle 85 cm and Les Arcs 46 cm.",
       "Snow now covers 66,020 km² in the Alps; 912 of 1,204 resorts have some on their upper slopes."
+     ]
+    },
+    {
+     "h": "The snow still to come",
+     "p": [
+      "Up to 96 cm of new snow is forecast at Les Arcs over the next days.",
+      "Forecasts move: the timing is usually more reliable than the totals, so check again two days before you go.",
+      "At about 2,214 m, Les Arcs has 20 cm today; a normal 16 November has 27 cm there.",
+      "Only one winter in ten has more than 56 cm on this date.",
+      "A week ago the same spot had 6 cm.",
+      "In past winters the best snow at Les Arcs usually came early March / mid-March.",
+      "Day by day at Les Arcs: Monday 16 November 15 cm; Tuesday 17 November 39 cm; Wednesday 18 November 22 cm; Thursday 19 November 35 cm."
      ]
     },
     {
@@ -489,7 +533,7 @@
    "rewrite": 1
   }
  },
- "words_en": 329,
+ "words_en": 556,
  "indexable": false,
  "main": {
   "slug": "les_arcs",
@@ -617,21 +661,26 @@
   "with": "us-west-kirkwood-snow-forecast-12-november-2026"
  },
  "publish_utc": "2026-11-16T12:43:39Z",
- "cover": {
+ "cover": {},
+ "noindex_why": "quality: words 556 < 600",
+ "rewrite": {
   "v": 1,
-  "style": "hero",
-  "files": {
-   "en": [
-    "blog/media/2026/11/alps-les-arcs-snow-forecast-16-november-2026/cover-en.webp",
-    "blog/media/2026/11/alps-les-arcs-snow-forecast-16-november-2026/cover-en_t.webp"
-   ],
-   "fr": [
-    "blog/media/2026/11/alps-les-arcs-snow-forecast-16-november-2026/cover-fr.webp",
-    "blog/media/2026/11/alps-les-arcs-snow-forecast-16-november-2026/cover-fr_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "storm_next",
+  "llm": false,
+  "usd": 0.0
  },
- "noindex_why": "cadence: data quota 2 of 2026-11-17 used"
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 556 < 600"
+  ],
+  "words": 556,
+  "overlap": 14.9,
+  "with": "alps-les-deux-alpes-snow-forecast-11-november-2026",
+  "langs_off": [],
+  "score": 116.4,
+  "intent": "resort:les_arcs|storm_next",
+  "guide": false,
+  "v": 1
+ }
 }

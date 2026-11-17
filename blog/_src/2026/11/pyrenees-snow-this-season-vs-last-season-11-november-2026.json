@@ -293,7 +293,7 @@
   }
  },
  "words_en": 394,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "aramon_cerler",
   "name": "Aramón Cerler",
@@ -402,5 +402,21 @@
   "max": 0.154,
   "with": "alps-snow-this-season-vs-last-season-8-november-2026"
  },
- "publish_utc": "2026-11-11T18:44:22Z"
+ "publish_utc": "2026-11-11T18:44:22Z",
+ "noindex_why": "quality: words 490 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 490 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 490,
+  "overlap": 2.7,
+  "with": "pyrenees-freezing-level-snow-line-8-november-2026",
+  "langs_off": [],
+  "score": 42.9,
+  "intent": "pyrenees|vs-last-season",
+  "guide": false,
+  "v": 1
+ }
 }

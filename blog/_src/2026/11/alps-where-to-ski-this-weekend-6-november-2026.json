@@ -426,7 +426,7 @@
   }
  },
  "words_en": 374,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "isola_2000",
   "name": "Isola 2000",
@@ -519,5 +519,21 @@
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@44.183,7.149,9.0",
  "seconds": 0.0,
- "publish_utc": "2026-11-06T12:45:00Z"
+ "publish_utc": "2026-11-06T12:45:00Z",
+ "noindex_why": "quality: words 502 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 502 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 502,
+  "overlap": 26.1,
+  "with": "pyrenees-where-to-ski-this-weekend-4-november-2026",
+  "langs_off": [],
+  "score": 45.1,
+  "intent": "alps|where-to-ski",
+  "guide": false,
+  "v": 1
+ }
 }

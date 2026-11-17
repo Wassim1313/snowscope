@@ -914,7 +914,7 @@
   }
  },
  "words_en": 421,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "kaunertaler_gletscher",
   "name": "Kaunertaler Gletscher",
@@ -1101,5 +1101,20 @@
    "licence_url": "https://creativecommons.org/licenses/by/4.0"
   },
   "photo": "photo"
+ },
+ "noindex_why": "quality: words 550 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 550 < 600"
+  ],
+  "words": 550,
+  "overlap": 0.0,
+  "with": null,
+  "langs_off": [],
+  "score": 57.5,
+  "intent": "world|guide_reliability",
+  "guide": true,
+  "v": 1
  }
 }

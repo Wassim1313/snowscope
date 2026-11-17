@@ -335,7 +335,51 @@
      "2026-11-14": 23
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Mt. Shasta Ski Park",
+     "slug": "mt_shasta_ski_park",
+     "now_cm": 0,
+     "usual_cm": 4,
+     "high_cm": 54,
+     "week_ago_cm": null,
+     "height_m": 1982,
+     "best_weeks": [
+      53,
+      10,
+      11
+     ],
+     "ratio_pct": 0,
+     "deeper_than": 21,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Mt. Shasta Ski Park",
+   "top_cm": 0,
+   "top_m": 2298,
+   "base_cm": 0,
+   "base_m": 1666,
+   "rain_day": "2026-11-11",
+   "freezing_m": 3960,
+   "lift_top_m": 2298,
+   "next_cm": 43,
+   "second": "Kirkwood",
+   "second_cm": 20,
+   "depth_cm": 0
+  },
+  "story": {
+   "id": "storm_next",
+   "place": "resort:mt_shasta_ski_park",
+   "score": 52.3,
+   "resort": "Mt. Shasta Ski Park"
+  }
  },
  "media": [
   {
@@ -382,6 +426,18 @@
      ]
     },
     {
+     "h": "The snow still to come",
+     "p": [
+      "Up to 17 in (43 cm) of new snow is forecast at Mt. Shasta Ski Park over the next days.",
+      "Forecasts move: the timing is usually more reliable than the totals, so check again two days before you go.",
+      "At about 6,503 ft (1,982 m), Mt. Shasta Ski Park has 0 in (0 cm) today; a normal 11 November has 2 in (4 cm) there.",
+      "That is more than in 21 of the 46 past winters on this date.",
+      "In past winters the best snow at Mt. Shasta Ski Park usually came early January / early March.",
+      "Day by day at Mt. Shasta Ski Park: Friday 13 November 11 in (29 cm); Saturday 14 November 6 in (14 cm).",
+      "Height by height at Mt. Shasta Ski Park: 5,466 ft (1,666 m) 0 in (0 cm) on the ground, 3 in (8 cm) more in the next 7 days; 6,503 ft (1,982 m) 0 in (0 cm) on the ground, 13 in (33 cm) more in the next 7 days; 7,539 ft (2,298 m) 0 in (0 cm) on the ground, 19 in (47 cm) more in the next 7 days."
+     ]
+    },
+    {
      "h": "Coming up",
      "p": [
       "Forecast to 14 November: 14 in (36 cm) at Boreal and 14 in (35 cm) at Palisades Tahoe Olympic Valley. Treat the later days with care.",
@@ -423,7 +479,7 @@
    "rewrite": 1
   }
  },
- "words_en": 305,
+ "words_en": 616,
  "indexable": true,
  "main": {
   "slug": "mt_shasta_ski_park",
@@ -550,5 +606,35 @@
   "max": 0.101,
   "with": "us-northeast-snow-forecast-6-november-2026"
  },
- "publish_utc": "2026-11-11T18:44:22Z"
+ "publish_utc": "2026-11-11T18:44:22Z",
+ "rewrite": {
+  "v": 1,
+  "story": "storm_next",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 616,
+  "overlap": 16.5,
+  "with": "us-west-snow-forecast-4-november-2026",
+  "langs_off": [],
+  "score": 107.0,
+  "intent": "resort:mt_shasta_ski_park|storm_next",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "poster",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-mt-shasta-ski-park-snow-forecast-11-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-mt-shasta-ski-park-snow-forecast-11-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

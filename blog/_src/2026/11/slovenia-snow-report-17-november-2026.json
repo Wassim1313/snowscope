@@ -133,6 +133,129 @@
    ],
    "from_day": 8,
    "to_day": 14
+  },
+  "trend": [
+   {
+    "date": "2026-11-16",
+    "snow_km2": 1130,
+    "new72": 1,
+    "leader": "Gače",
+    "leader_cm": 28
+   },
+   {
+    "date": "2026-11-17",
+    "snow_km2": 430,
+    "new72": 2,
+    "leader": "Vogel",
+    "leader_cm": 23
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Vogel",
+     "slug": "vogel",
+     "now_cm": 1,
+     "usual_cm": 1,
+     "high_cm": 7,
+     "week_ago_cm": 0,
+     "height_m": 1152,
+     "best_weeks": [
+      14,
+      3,
+      6
+     ],
+     "ratio_pct": null
+    },
+    {
+     "name": "Velika planina",
+     "slug": "velika_planina",
+     "now_cm": 1,
+     "usual_cm": 0,
+     "high_cm": 15,
+     "week_ago_cm": 0,
+     "height_m": 1536,
+     "best_weeks": [
+      6,
+      9,
+      10
+     ],
+     "ratio_pct": null
+    },
+    {
+     "name": "Golte",
+     "slug": "golte",
+     "now_cm": 1,
+     "usual_cm": 0,
+     "high_cm": 12,
+     "week_ago_cm": 0,
+     "height_m": 1424,
+     "best_weeks": [
+      7,
+      8,
+      10
+     ],
+     "ratio_pct": null
+    },
+    {
+     "name": "Rogla",
+     "slug": "rogla",
+     "now_cm": 2,
+     "usual_cm": 0,
+     "high_cm": 13,
+     "week_ago_cm": 1,
+     "height_m": 1288,
+     "best_weeks": [
+      9,
+      10,
+      8
+     ],
+     "ratio_pct": null
+    },
+    {
+     "name": "Sella Nevea",
+     "slug": "sella_nevea_kanin_sella_nevea_canin_kanin_sella_",
+     "now_cm": 1,
+     "usual_cm": 1,
+     "high_cm": 18,
+     "week_ago_cm": 2,
+     "height_m": 1622,
+     "best_weeks": [
+      8,
+      9,
+      10
+     ],
+     "ratio_pct": null
+    }
+   ],
+   "n": 5,
+   "above": 3,
+   "median_pct": null
+  },
+  "neighbours": [
+   {
+    "cc": "AT",
+    "name": "Austria",
+    "white_share_pct": 30,
+    "leader": "Kühtai",
+    "leader_cm": 54,
+    "next_7_days_max_cm": 47
+   },
+   {
+    "cc": "IT",
+    "name": "Italy",
+    "white_share_pct": 13,
+    "leader": "La Thuile ski",
+    "leader_cm": 50,
+    "next_7_days_max_cm": 58
+   }
+  ],
+  "glacier": false,
+  "story": {
+   "id": "neighbour",
+   "place": "cc:SI",
+   "score": 43.1,
+   "cc": "AT"
   }
  },
  "media": [
@@ -148,20 +271,52 @@
  ],
  "docs": {
   "en": {
-   "title": "Slovenia snow report today: snow depth and new snow, 17 November 2026",
-   "description": "Slovenia snow today, 17 November: snow cover, new snow, snow depth by height, the next days and the best resorts.",
-   "lede": "Snow covers roughly 430 km² in Slovenia on 17 November, 700 km² lost since yesterday. In other words, 6 % of the mapped high ground is white.",
+   "title": "Slovenia or Austria? Where the snow is better on 17 November",
+   "description": "Slovenia or Austria? Where the snow is better on 17 November. Snow cover, new snow, resorts and the days ahead in Slovenia on 17 November.",
+   "lede": "6 % of the mapped high ground is white in Slovenia, against 30 % in Austria. The deepest resort in Slovenia has 1 cm; in Austria it is Kühtai with 54 cm.",
    "sections": [
     {
-     "h": "How much of the country is white",
+     "h": "Across the border",
      "p": [
-      "A week ago it was 150 km², so the cover has grown by 280 km². Most of the ground is white from about 2,000 m up."
+      "For a trip near the border this decides the direction: the snow is not where the map of borders would suggest, it is where the last storm went.",
+      "The white area in Slovenia stands at about 430 km² today, 700 km² lost since yesterday. That is 6 % of the high ground we map in Slovenia."
      ]
     },
     {
-     "h": "From the valleys to the summits",
+     "h": "The neighbours today",
      "p": [
-      "Average depth of the snowpack by height band: 500-1,000 m: on average under 1 cm (2 % of the ground white); 1,000-1,500 m: on average under 1 cm (9 % of the ground white); 1,500-2,000 m: on average 1 cm (28 % of the ground white); 2,000-2,500 m: on average 4 cm (73 % of the ground white)."
+      "For comparison, the neighbours on the same day: Austria: 30 % white, deepest Kühtai with 54 cm, up to 47 cm in the week ahead; Italy: 13 % white, deepest La Thuile ski with 50 cm, up to 58 cm in the week ahead."
+     ]
+    },
+    {
+     "h": "Best resorts right now",
+     "p": [
+      "At the top of the list, Vogel reports 23 cm.",
+      "Then come Velika planina (21 cm), Golte (11 cm), Rogla (11 cm) and Sella Nevea (9 cm).",
+      "At Vogel: 2 cm of fresh snow over three days, 2 cm more expected by Friday 20 November.",
+      "Velika planina had no fresh snow in the last three days; 1 cm could fall by Friday 20 November.",
+      "13 of the 27 resorts we follow in Slovenia have snow on their upper slopes.",
+      "The rest of the shortlist: Golte: 11 cm on top, 0 cm in three days, 1 cm expected; Rogla: 11 cm on top, 0 cm in three days, 0 cm expected; Sella Nevea: 9 cm on top, 4 cm in three days, 9 cm expected."
+     ]
+    },
+    {
+     "h": "What is coming",
+     "p": [
+      "Over the next three days up to 7 cm is expected, and up to 7 cm over the week.",
+      "The snowiest day looks like Thursday 19 November, with up to 6 cm in the snowiest spots.",
+      "Further out, days 8 to 14 show up to 22 cm on the snowiest slopes."
+     ]
+    },
+    {
+     "h": "Snow depth by height",
+     "p": [
+      "Snow depth on the ground, height by height: 500-1,000 m: on average under 1 cm (2 % of the ground white); 1,000-1,500 m: on average under 1 cm (9 % of the ground white); 1,500-2,000 m: on average 1 cm (28 % of the ground white); 2,000-2,500 m: on average 4 cm (73 % of the ground white)."
+     ]
+    },
+    {
+     "h": "Today's snow cover",
+     "p": [
+      "Last week's 150 km² has grown by 280 km². The snow line sits near 2,000 m."
      ]
     },
     {
@@ -171,48 +326,46 @@
      ]
     },
     {
+     "h": "How this start compares",
+     "p": [
+      "Here is how the deepest resorts compare with their usual 17 November: Vogel: 1 cm at about 1,152 m, against 1 cm in a normal year; Velika planina: 1 cm at about 1,536 m, against 0 cm in a normal year; Golte: 1 cm at about 1,424 m, against 0 cm in a normal year; Rogla: 2 cm at about 1,288 m, against 0 cm in a normal year.",
+      "3 of these 4 resorts are above their usual depth for the date.",
+      "These depths are for one height on each mountain, below the top, so they read lower than the upper-slope numbers further down.",
+      "In past winters the best snow at Vogel usually came mid-January / early February."
+     ]
+    },
+    {
+     "h": "Planning a day on the snow",
+     "p": [
+      "Between 1,500 m and 2,500 m the cover is patchy, about 28 % white: expect grass and stones between the snow.",
+      "Below 1,500 m the slopes are still almost bare."
+     ]
+    },
+    {
      "h": "What it means on the slopes",
      "p": [
-      "The snow is retreating uphill, so plan on the higher lifts and avoid the low valley runs."
-     ]
-    },
-    {
-     "h": "Forecast for the week",
-     "p": [
-      "The week ahead could bring up to 7 cm, 7 cm of it in the next three days.",
-      "Thursday 19 November stands out, with up to 6 cm in a day.",
-      "The second week adds up to 22 cm where it snows most."
-     ]
-    },
-    {
-     "h": "Shortlist for the weekend",
-     "p": [
-      "At the top of the list, Vogel reports 23 cm.",
-      "Then come Velika planina (21 cm), Golte (11 cm), Rogla (11 cm) and Sella Nevea (9 cm).",
-      "Vogel picked up 2 cm in the last three days and could add 2 cm by Friday 20 November.",
-      "Velika planina had no fresh snow in the last three days; 1 cm could fall by Friday 20 November.",
-      "Snow lies on the upper slopes of 13 out of 27 resorts in Slovenia."
+      "Mild weather is eating into the cover: expect firm snow in the morning and slush in the afternoon."
      ]
     }
    ],
    "advice": [
+    "Morning snow is firm after a clear night: wait for the sun on south faces.",
     "Check the resort's own lift status before you travel.",
-    "Read the local avalanche bulletin before going off-piste.",
-    "Fresh snow on a cold base sticks badly: take care on steep slopes."
+    "Early-season snow is thin over rocks: ski the groomed runs first."
    ],
    "captions": {
     "map": "Snow depth in Slovenia on 17 November"
    }
   },
   "sl": {
-   "title": "Koliko snega je v Sloveniji? Snežna odeja in napoved, 17. novembra 2026",
+   "title": "Snežne razmere v Sloveniji, 17. novembra 2026: smučišča, novi sneg in naslednji dnevi",
    "description": "Sneg v Sloveniji 17. novembra: snežna odeja, novi sneg, višina po nadmorski višini, naslednji dnevi in najboljša smučišča.",
-   "lede": "V Sloveniji je danes pod snegom približno 430 km² (torek, 17. novembra). To je 700 km² manj kot včeraj. To je 6 % gorskega območja v Sloveniji, ki ga spremljamo.",
+   "lede": "Snežna odeja v Sloveniji obsega približno 430 km² (torek, 17. novembra). To je 700 km² manj kot včeraj. To je 6 % gorskega območja v Sloveniji, ki ga spremljamo.",
    "sections": [
     {
      "h": "Snežna odeja danes",
      "p": [
-      "V primerjavi z 150 km² pred sedmimi dnevi je to 280 km² več. Teren je večinoma bel približno od 2.000 m navzgor."
+      "V primerjavi z 150 km² pred sedmimi dnevi je to 280 km² več. Snežna meja je okoli 2.000 m."
      ]
     },
     {
@@ -234,24 +387,23 @@
      ]
     },
     {
-     "h": "Naslednji dnevi",
-     "p": [
-      "Napoved novega snega: do 7 cm v treh dneh in do 7 cm v sedmih dneh.",
-      "Najbolj snežen dan: četrtek, 19. novembra, do 6 cm."
-     ]
-    },
-    {
      "h": "Najboljša smučišča zdaj",
      "p": [
       "Največ snega na zgornjih progah: Vogel, 23 cm.",
-      "Smučišča s snegom na zgornjih progah: 13 od 27.",
       "Sledijo: Velika planina (21 cm), Golte (11 cm), Rogla (11 cm) in Sella Nevea (9 cm).",
-      "Vogel: 2 cm novega snega v treh dneh in do datuma petek, 20. novembra še do 2 cm."
+      "Velika planina: tri dni brez novega snega; do datuma petek, 20. novembra lahko pade 1 cm."
+     ]
+    },
+    {
+     "h": "Naslednji dnevi",
+     "p": [
+      "V naslednjih treh dneh pričakujemo do 7 cm, v celem tednu do 7 cm.",
+      "Najbolj snežen dan: četrtek, 19. novembra, do 6 cm."
      ]
     }
    ],
    "advice": [
-    "Pred odhodom preverite, ali naprave obratujejo."
+    "Nad gozdno mejo je sneg lahko nanosil veter: previdno na grebenih."
    ],
    "captions": {
     "map": "Višina snega v Sloveniji, 17. novembra"
@@ -261,15 +413,17 @@
  "writers": {
   "en": {
    "writer": "template",
-   "voice": "sat"
+   "voice": "hydro",
+   "rewrite": "requality"
   },
   "sl": {
    "writer": "template",
-   "voice": "sat"
+   "voice": "hydro",
+   "rewrite": "requality"
   }
  },
- "words_en": 266,
- "indexable": false,
+ "words_en": 611,
+ "indexable": true,
  "main": {
   "slug": "vogel",
   "name": "Vogel",
@@ -326,48 +480,70 @@
   }
  ],
  "table": {
-  "kind": "resorts",
+  "kind": "story",
+  "head": {
+   "en": [
+    "Country",
+    "White",
+    "Deepest resort",
+    "Next 7 days"
+   ],
+   "fr": [
+    "Pays",
+    "Blanc",
+    "Station la plus enneigée",
+    "7 prochains jours"
+   ],
+   "de": [
+    "Land",
+    "Weiß",
+    "Schneereichstes Skigebiet",
+    "Nächste 7 Tage"
+   ]
+  },
   "rows": [
-   {
-    "slug": "vogel",
-    "name": "Vogel",
-    "depth": 23,
-    "new72": 2,
-    "next": 2,
-    "top_m": 1731
-   },
-   {
-    "slug": "velika_planina",
-    "name": "Velika planina",
-    "depth": 21,
-    "new72": 0,
-    "next": 1,
-    "top_m": 1664
-   },
-   {
-    "slug": "golte",
-    "name": "Golte",
-    "depth": 11,
-    "new72": 0,
-    "next": 1,
-    "top_m": 1570
-   },
-   {
-    "slug": "rogla",
-    "name": "Rogla",
-    "depth": 11,
-    "new72": 0,
-    "next": 0,
-    "top_m": 1511
-   },
-   {
-    "slug": "sella_nevea_kanin_sella_nevea_canin_kanin_sella_",
-    "name": "Sella Nevea",
-    "depth": 9,
-    "new72": 4,
-    "next": 9,
-    "top_m": 2137
-   }
+   [
+    {
+     "cc": "SI"
+    },
+    {
+     "pct": 6
+    },
+    {
+     "t": "Vogel"
+    },
+    {
+     "cm": 7
+    }
+   ],
+   [
+    {
+     "cc": "AT"
+    },
+    {
+     "pct": 30
+    },
+    {
+     "t": "Kühtai"
+    },
+    {
+     "cm": 47
+    }
+   ],
+   [
+    {
+     "cc": "IT"
+    },
+    {
+     "pct": 13
+    },
+    {
+     "t": "La Thuile ski"
+    },
+    {
+     "cm": 58
+    }
+   ]
   ]
  },
  "bulletins": [],
@@ -390,20 +566,23 @@
   "with": "slovenia-snow-report-16-november-2026"
  },
  "publish_utc": "2026-11-17T12:17:29Z",
- "cover": {
+ "cover": {},
+ "rewrite": {
   "v": 1,
-  "style": "hero",
-  "files": {
-   "en": [
-    "blog/media/2026/11/slovenia-snow-report-17-november-2026/cover-en.webp",
-    "blog/media/2026/11/slovenia-snow-report-17-november-2026/cover-en_t.webp"
-   ],
-   "sl": [
-    "blog/media/2026/11/slovenia-snow-report-17-november-2026/cover-sl.webp",
-    "blog/media/2026/11/slovenia-snow-report-17-november-2026/cover-sl_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "neighbour",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 611,
+  "overlap": 25.5,
+  "with": "france-snow-report-16-november-2026",
+  "langs_off": [],
+  "score": 94.9,
+  "intent": "cc:SI|neighbour",
+  "guide": false,
+  "v": 1
  }
 }

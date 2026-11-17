@@ -332,7 +332,46 @@
    }
   ],
   "focus_index": 1,
-  "title_focus_resort": "Telluride"
+  "title_focus_resort": "Telluride",
+  "normal": {
+   "rows": [
+    {
+     "name": "Telluride",
+     "slug": "telluride_ski_area",
+     "now_cm": 25,
+     "usual_cm": 16,
+     "high_cm": 62,
+     "week_ago_cm": 20,
+     "height_m": 3237,
+     "best_weeks": [
+      53,
+      11,
+      10
+     ],
+     "ratio_pct": 156
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Telluride",
+   "top_cm": 96,
+   "top_m": 3812,
+   "base_cm": 0,
+   "base_m": 2662,
+   "rain_day": "2026-11-09",
+   "freezing_m": 4280,
+   "lift_top_m": 3812,
+   "next_cm": 0
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:telluride_ski_area",
+   "score": 46,
+   "resort": "Telluride"
+  }
  },
  "media": [
   {
@@ -369,6 +408,18 @@
      "p": [
       "Kendall Mountain holds a normal amount of snow for the date at 9,413 ft (2,869 m): 2 in (6 cm), more than in 23 of the past 46 winters (usual: 4 in (9 cm)).",
       "At 11,010 ft (3,356 m) on Wolf Creek, today's 26 in (65 cm) is more than this date brought in 37 of the past 46 winters (usual: 6 in (14 cm)): a good amount of water is already stored in the snow."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Monday 9 November the freezing level climbs to about 14,042 ft (4,280 m), above the top of the lifts at 12,507 ft (3,812 m): rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 10,620 ft (3,237 m), Telluride has 10 in (25 cm) today; a normal 8 November has 6 in (16 cm) there.",
+      "Only one winter in ten has more than 24 in (62 cm) on this date.",
+      "A week ago the same spot had 8 in (20 cm).",
+      "In past winters the best snow at Telluride usually came early January / early March.",
+      "Height by height at Telluride: 8,734 ft (2,662 m) 0 in (0 cm) on the ground, 0 in (0 cm) more in the next 7 days; 10,620 ft (3,237 m) 6 in (14 cm) on the ground, 0 in (0 cm) more in the next 7 days; 12,507 ft (3,812 m) 38 in (96 cm) on the ground, 0 in (0 cm) more in the next 7 days."
      ]
     },
     {
@@ -411,7 +462,7 @@
    "writer": "template"
   }
  },
- "words_en": 405,
+ "words_en": 764,
  "indexable": true,
  "main": {
   "slug": "telluride_ski_area",
@@ -540,5 +591,35 @@
    "with_after": "us-northeast-ski-eldorado-fresh-snow-powder-alert-8-november-2026",
    "voice": "hydro"
   }
- ]
+ ],
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 764,
+  "overlap": 25.5,
+  "with": "us-west-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 106.2,
+  "intent": "resort:telluride_ski_area|rain_risk",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "ranked",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-telluride-snow-depth-today-8-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-telluride-snow-depth-today-8-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

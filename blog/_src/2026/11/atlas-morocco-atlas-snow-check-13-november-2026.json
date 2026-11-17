@@ -364,7 +364,7 @@
   }
  },
  "words_en": 207,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "habri_ski_resort",
   "name": "Habri",
@@ -450,5 +450,21 @@
   "max": 0.292,
   "with": "atlas-morocco-atlas-snow-check-10-november-2026"
  },
- "publish_utc": "2026-11-13T11:26:51Z"
+ "publish_utc": "2026-11-13T11:26:51Z",
+ "noindex_why": "quality: words 285 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 285 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 285,
+  "overlap": 5.5,
+  "with": "us-west-telluride-snow-depth-today-8-november-2026",
+  "langs_off": [],
+  "score": 33.0,
+  "intent": "atlas|snow-check",
+  "guide": false,
+  "v": 1
+ }
 }

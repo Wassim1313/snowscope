@@ -326,7 +326,51 @@
      "2026-11-06": 10
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Chabanon",
+     "slug": "chabanon",
+     "now_cm": 0,
+     "usual_cm": 0,
+     "high_cm": 6,
+     "week_ago_cm": null,
+     "height_m": 1781,
+     "best_weeks": [
+      10,
+      7,
+      6
+     ],
+     "ratio_pct": null,
+     "deeper_than": 29,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Chabanon",
+   "top_cm": 0,
+   "top_m": 2028,
+   "base_cm": 0,
+   "base_m": 1534,
+   "rain_day": "2026-11-05",
+   "freezing_m": 2480,
+   "lift_top_m": 2028,
+   "next_cm": 37,
+   "second": "Dévoluy",
+   "second_cm": 0,
+   "depth_cm": 0
+  },
+  "story": {
+   "id": "storm_next",
+   "place": "resort:chabanon",
+   "score": 62.3,
+   "resort": "Chabanon"
+  }
  },
  "media": [
   {
@@ -386,6 +430,18 @@
      ]
     },
     {
+     "h": "The snow still to come",
+     "p": [
+      "Up to 37 cm of new snow is forecast at Chabanon over the next days.",
+      "Forecasts move: the timing is usually more reliable than the totals, so check again two days before you go.",
+      "At about 1,781 m, Chabanon has 0 cm today; a normal 3 November has 0 cm there.",
+      "That is more than in 29 of the 46 past winters on this date.",
+      "In past winters the best snow at Chabanon usually came early February / mid-February.",
+      "Day by day at Chabanon: Wednesday 4 November 4 cm; Thursday 5 November 11 cm; Friday 6 November 22 cm.",
+      "Height by height at Chabanon: 1,534 m 0 cm on the ground, 7 cm more in the next 7 days; 1,781 m 0 cm on the ground, 6 cm more in the next 7 days; 2,028 m 0 cm on the ground, 14 cm more in the next 7 days."
+     ]
+    },
+    {
      "h": "Height, slopes and snow line",
      "p": [
       "At Chabanon, the freezing level reaches 2,330 m to 2,480 m on 5 November, above the top of the resort (2,028 m): rain or wet snow is possible on every slope that day.",
@@ -432,6 +488,18 @@
      ]
     },
     {
+     "h": "La neige encore à venir",
+     "p": [
+      "Jusqu'à 37 cm de neige fraîche sont prévus à Chabanon dans les prochains jours.",
+      "Les prévisions bougent : le moment est souvent plus fiable que les quantités, revérifiez deux jours avant de partir.",
+      "Vers 1 781 m, Chabanon a 0 cm aujourd'hui ; un 3 novembre normal y compte 0 cm.",
+      "C'est plus que lors de 29 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Chabanon arrivait d'habitude début février / mi-février.",
+      "Jour après jour à Chabanon : mercredi 4 novembre 4 cm; jeudi 5 novembre 11 cm; vendredi 6 novembre 22 cm.",
+      "Altitude par altitude à Chabanon : 1 534 m 0 cm au sol, 7 cm de plus dans les 7 prochains jours; 1 781 m 0 cm au sol, 6 cm de plus dans les 7 prochains jours; 2 028 m 0 cm au sol, 14 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
      "h": "Altitude, pentes et limite pluie-neige",
      "p": [
       "À Chabanon, l'isotherme 0 °C monte entre 2 330 m et 2 480 m le 5 novembre, au-dessus du sommet de la station (2 028 m) : pluie ou neige mouillée possibles sur toutes les pentes ce jour-là.",
@@ -474,7 +542,7 @@
    "writer": "template"
   }
  },
- "words_en": 220,
+ "words_en": 470,
  "indexable": false,
  "main": {
   "slug": "chabanon",
@@ -584,5 +652,26 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@44.342,6.291,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "rewrite": {
+  "v": 1,
+  "story": "storm_next",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 470 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 470 < 600"
+  ],
+  "words": 470,
+  "overlap": 0.0,
+  "with": null,
+  "langs_off": [],
+  "score": 107.5,
+  "intent": "resort:chabanon|storm_next",
+  "guide": false,
+  "v": 1
+ }
 }

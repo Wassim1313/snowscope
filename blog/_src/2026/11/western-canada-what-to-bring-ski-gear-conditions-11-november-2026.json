@@ -218,7 +218,45 @@
      }
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Manning Park Resort",
+     "slug": "manning_park_resort",
+     "now_cm": 7,
+     "usual_cm": 30,
+     "high_cm": 76,
+     "week_ago_cm": 5,
+     "height_m": 1574,
+     "best_weeks": [
+      14,
+      13,
+      12
+     ],
+     "ratio_pct": 23
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Manning Park Resort",
+   "rain_day": "2026-11-11",
+   "freezing_m": 3180,
+   "lift_top_m": 1789,
+   "next_cm": 3,
+   "second": "Big White",
+   "second_cm": 83,
+   "depth_cm": 101
+  },
+  "story": {
+   "id": "vs_normal_low",
+   "place": "resort:manning_park_resort",
+   "score": 56,
+   "resort": "Manning Park Resort"
+  }
  },
  "media": [
   {
@@ -244,6 +282,16 @@
       "A snowstorm on the way (20 cm or more forecast in the next days): Whistler Blackcomb (+34 cm) and Mount Cain Alpine Park (+22 cm).",
       "Icy mornings and soft afternoons (0 °C level above mid-mountain by day, below the base at night): Tweedsmuir Ski Club.",
       "Warm air that can leave a crust (snow line above the top on a warm day without much new snow): Manning Park Resort and Big White."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 1,574 m, Manning Park Resort has 7 cm today; a normal 11 November has 30 cm there.",
+      "Only one winter in ten has more than 76 cm on this date.",
+      "A week ago the same spot had 5 cm.",
+      "In past winters the best snow at Manning Park Resort usually came late March / early April.",
+      "A slow start is common and says little about January; for now the highest lifts and the runs with snowmaking are the safe choice."
      ]
     },
     {
@@ -298,7 +346,7 @@
    "voice": "field"
   }
  },
- "words_en": 538,
+ "words_en": 721,
  "indexable": true,
  "main": {
   "slug": "manning_park_resort",
@@ -424,5 +472,35 @@
   "max": 0.185,
   "with": "alps-what-to-bring-ski-gear-conditions-8-november-2026"
  },
- "publish_utc": "2026-11-11T18:44:22Z"
+ "publish_utc": "2026-11-11T18:44:22Z",
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_low",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 721,
+  "overlap": 7.8,
+  "with": "us-west-freezing-level-snow-line-8-november-2026",
+  "langs_off": [],
+  "score": 113.5,
+  "intent": "resort:manning_park_resort|vs_normal_low",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "poster",
+  "files": {
+   "en": [
+    "blog/media/2026/11/western-canada-what-to-bring-ski-gear-conditions-11-november-2026/cover-en.webp",
+    "blog/media/2026/11/western-canada-what-to-bring-ski-gear-conditions-11-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

@@ -307,7 +307,51 @@
     "measured_on": "2026-11-11",
     "network": "slf_imis"
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Dent de Vaulion",
+     "slug": "dent_de_vaulion_le_morez",
+     "now_cm": 0,
+     "usual_cm": 0,
+     "high_cm": 4,
+     "week_ago_cm": null,
+     "height_m": 1308,
+     "best_weeks": [
+      7,
+      8,
+      9
+     ],
+     "ratio_pct": null,
+     "deeper_than": 34,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Dent de Vaulion",
+   "top_cm": 0,
+   "top_m": 1465,
+   "base_cm": 0,
+   "base_m": 1152,
+   "rain_day": "2026-11-12",
+   "freezing_m": 2800,
+   "lift_top_m": 1465,
+   "next_cm": 0,
+   "second": "L'Orient",
+   "second_cm": 121,
+   "depth_cm": 300
+  },
+  "story": {
+   "id": "resort_lead",
+   "place": "resort:dent_de_vaulion_le_morez",
+   "score": 47,
+   "resort": "Dent de Vaulion"
+  }
  },
  "media": [
   {
@@ -330,6 +374,16 @@
      "h": "Normal, early or late?",
      "p": [
       "Dent de Vaulion has a good start to its snow store: 0 cm at 1,308 m, deeper than on this date in 34 of the past 46 winters (usual: 0 cm)."
+     ]
+    },
+    {
+     "h": "Far ahead of the rest",
+     "p": [
+      "Dent de Vaulion has 300 cm on its upper slopes, well ahead of L'Orient with 121 cm.",
+      "At about 1,308 m, Dent de Vaulion has 0 cm today; a normal 11 November has 0 cm there.",
+      "That is more than in 34 of the 46 past winters on this date.",
+      "In past winters the best snow at Dent de Vaulion usually came mid-February / late February.",
+      "Height by height at Dent de Vaulion: 1,152 m 0 cm on the ground, 0 cm more in the next 7 days; 1,308 m 0 cm on the ground, 0 cm more in the next 7 days; 1,465 m 0 cm on the ground, 0 cm more in the next 7 days."
      ]
     },
     {
@@ -374,6 +428,16 @@
      "h": "Normal, en avance ou en retard ?",
      "p": [
       "Dent de Vaulion commence bien à remplir sa réserve de neige : 0 cm à 1 308 m, plus qu'à cette date lors de 34 des 46 hivers passés (habituel : 0 cm)."
+     ]
+    },
+    {
+     "h": "Loin devant les autres",
+     "p": [
+      "Dent de Vaulion compte 300 cm sur le haut du domaine, loin devant L'Orient avec 121 cm.",
+      "Vers 1 308 m, Dent de Vaulion a 0 cm aujourd'hui ; un 11 novembre normal y compte 0 cm.",
+      "C'est plus que lors de 34 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Dent de Vaulion arrivait d'habitude mi-février / fin février.",
+      "Altitude par altitude à Dent de Vaulion : 1 152 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours; 1 308 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours; 1 465 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours."
      ]
     },
     {
@@ -423,8 +487,8 @@
    "voice": "hydro"
   }
  },
- "words_en": 363,
- "indexable": true,
+ "words_en": 595,
+ "indexable": false,
  "main": {
   "slug": "dent_de_vaulion_le_morez",
   "name": "Dent de Vaulion",
@@ -549,5 +613,26 @@
   "max": 0.188,
   "with": "us-west-telluride-snow-depth-today-8-november-2026"
  },
- "publish_utc": "2026-11-11T18:44:22Z"
+ "publish_utc": "2026-11-11T18:44:22Z",
+ "rewrite": {
+  "v": 1,
+  "story": "resort_lead",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 595 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 595 < 600"
+  ],
+  "words": 595,
+  "overlap": 18.2,
+  "with": "us-west-telluride-snow-depth-today-8-november-2026",
+  "langs_off": [],
+  "score": 100.8,
+  "intent": "resort:dent_de_vaulion_le_morez|resort_lead",
+  "guide": false,
+  "v": 1
+ }
 }

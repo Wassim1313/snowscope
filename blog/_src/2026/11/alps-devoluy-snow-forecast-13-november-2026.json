@@ -330,7 +330,48 @@
    }
   ],
   "focus_index": 2,
-  "title_focus_resort": "Dévoluy"
+  "title_focus_resort": "Dévoluy",
+  "normal": {
+   "rows": [
+    {
+     "name": "Dévoluy",
+     "slug": "devoluy",
+     "now_cm": 0,
+     "usual_cm": 7,
+     "high_cm": 28,
+     "week_ago_cm": null,
+     "height_m": 1976,
+     "best_weeks": [
+      11,
+      9,
+      8
+     ],
+     "ratio_pct": 0,
+     "deeper_than": 14,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Dévoluy",
+   "top_cm": 2,
+   "top_m": 2495,
+   "base_cm": 0,
+   "base_m": 1458,
+   "rain_day": "2026-11-13",
+   "freezing_m": 2980,
+   "lift_top_m": 2495,
+   "next_cm": 32
+  },
+  "story": {
+   "id": "storm_next",
+   "place": "resort:devoluy",
+   "score": 60.7,
+   "resort": "Dévoluy"
+  }
  },
  "media": [
   {
@@ -374,6 +415,18 @@
      "p": [
       "Top of this list: La Grave, about 78 cm up high. Then Alpe d'Huez Grand Domaine 52 cm and Les Deux Alpes 52 cm.",
       "The count of the day in the Alps: 829 of 1,179 resorts with snow up high, 76,100 km² of snow-covered ground."
+     ]
+    },
+    {
+     "h": "The snow still to come",
+     "p": [
+      "Up to 32 cm of new snow is forecast at Dévoluy over the next days.",
+      "Forecasts move: the timing is usually more reliable than the totals, so check again two days before you go.",
+      "At about 1,976 m, Dévoluy has 0 cm today; a normal 13 November has 7 cm there.",
+      "That is more than in 14 of the 46 past winters on this date.",
+      "In past winters the best snow at Dévoluy usually came late February / early March.",
+      "Day by day at Dévoluy: Friday 13 November 1 cm; Saturday 14 November 9 cm; Sunday 15 November 19 cm; Monday 16 November 4 cm.",
+      "Height by height at Dévoluy: 1,458 m 0 cm on the ground, 0 cm more in the next 7 days; 1,976 m 0 cm on the ground, 12 cm more in the next 7 days; 2,495 m 2 cm on the ground, 28 cm more in the next 7 days."
      ]
     },
     {
@@ -424,6 +477,18 @@
      ]
     },
     {
+     "h": "La neige encore à venir",
+     "p": [
+      "Jusqu'à 32 cm de neige fraîche sont prévus à Dévoluy dans les prochains jours.",
+      "Les prévisions bougent : le moment est souvent plus fiable que les quantités, revérifiez deux jours avant de partir.",
+      "Vers 1 976 m, Dévoluy a 0 cm aujourd'hui ; un 13 novembre normal y compte 7 cm.",
+      "C'est plus que lors de 14 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Dévoluy arrivait d'habitude fin février / début mars.",
+      "Jour après jour à Dévoluy : vendredi 13 novembre 1 cm; samedi 14 novembre 9 cm; dimanche 15 novembre 19 cm; lundi 16 novembre 4 cm.",
+      "Altitude par altitude à Dévoluy : 1 458 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours; 1 976 m 0 cm au sol, 12 cm de plus dans les 7 prochains jours; 2 495 m 2 cm au sol, 28 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
      "h": "La prévision en bref",
      "p": [
       "D'ici le 16 novembre, la prévision donne 31 cm à Alpe d'Huez Grand Domaine et 30 cm à Les Deux Alpes, avec moins de certitude à mesure qu'on s'éloigne.",
@@ -469,8 +534,8 @@
    "voice": "sat"
   }
  },
- "words_en": 283,
- "indexable": true,
+ "words_en": 545,
+ "indexable": false,
  "main": {
   "slug": "devoluy",
   "name": "Dévoluy",
@@ -596,5 +661,26 @@
   "max": 0.12,
   "with": "alps-glacier-3000-fresh-snow-powder-alert-11-november-2026"
  },
- "publish_utc": "2026-11-13T13:16:05Z"
+ "publish_utc": "2026-11-13T13:16:05Z",
+ "rewrite": {
+  "v": 1,
+  "story": "storm_next",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 545 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 545 < 600"
+  ],
+  "words": 545,
+  "overlap": 17.6,
+  "with": "us-west-mt-shasta-ski-park-snow-forecast-11-november-2026",
+  "langs_off": [],
+  "score": 109.5,
+  "intent": "resort:devoluy|storm_next",
+  "guide": false,
+  "v": 1
+ }
 }

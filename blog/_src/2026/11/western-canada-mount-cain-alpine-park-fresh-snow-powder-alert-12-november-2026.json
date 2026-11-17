@@ -225,7 +225,48 @@
    }
   ],
   "focus_index": 2,
-  "title_focus_resort": "Mount Cain Alpine Park"
+  "title_focus_resort": "Mount Cain Alpine Park",
+  "normal": {
+   "rows": [
+    {
+     "name": "Mount Cain Alpine Park",
+     "slug": "mount_cain_alpine_park",
+     "now_cm": 28,
+     "usual_cm": 12,
+     "high_cm": 81,
+     "week_ago_cm": null,
+     "height_m": 1403,
+     "best_weeks": [
+      53,
+      15,
+      16
+     ],
+     "ratio_pct": 233,
+     "deeper_than": 26,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Mount Cain Alpine Park",
+   "top_cm": 52,
+   "top_m": 1616,
+   "base_cm": 0,
+   "base_m": 1190,
+   "rain_day": "2026-11-13",
+   "freezing_m": 2160,
+   "lift_top_m": 1616,
+   "next_cm": 37
+  },
+  "story": {
+   "id": "height_gap",
+   "place": "resort:mount_cain_alpine_park",
+   "score": 46,
+   "resort": "Mount Cain Alpine Park"
+  }
  },
  "media": [
   {
@@ -269,6 +310,18 @@
      "p": [
       "Other resorts did well too: Whistler Blackcomb and Mount Cain Alpine Park got 40 cm and 15 cm over the last 72 hours.",
       "Across the region, 39 of 57 resorts in Western Canada have snow up high today, and our model finds 255,860 km² of white ground."
+     ]
+    },
+    {
+     "h": "Top and bottom are two different worlds",
+     "p": [
+      "The top of Mount Cain Alpine Park has about 52 cm at 1,616 m, the bottom about 0 cm at 1,190 m.",
+      "Ski the upper lifts and plan to ride down by lift if the lower runs are thin.",
+      "At about 1,403 m, Mount Cain Alpine Park has 28 cm today; a normal 12 November has 12 cm there.",
+      "That is more than in 26 of the 46 past winters on this date.",
+      "In past winters the best snow at Mount Cain Alpine Park usually came early January / mid-April.",
+      "Day by day at Mount Cain Alpine Park: Thursday 12 November 6 cm; Friday 13 November 1 cm; Saturday 14 November 7 cm; Sunday 15 November 29 cm.",
+      "Height by height at Mount Cain Alpine Park: 1,190 m 0 cm on the ground, 12 cm more in the next 7 days; 1,403 m 7 cm on the ground, 16 cm more in the next 7 days; 1,616 m 52 cm on the ground, 21 cm more in the next 7 days."
      ]
     },
     {
@@ -318,8 +371,8 @@
    "voice": "field"
   }
  },
- "words_en": 284,
- "indexable": true,
+ "words_en": 559,
+ "indexable": false,
  "main": {
   "slug": "mount_cain_alpine_park",
   "name": "Mount Cain Alpine Park",
@@ -411,5 +464,27 @@
   "max": 0.194,
   "with": "us-northeast-ski-eldorado-fresh-snow-powder-alert-8-november-2026"
  },
- "publish_utc": "2026-11-12T15:46:55Z"
+ "publish_utc": "2026-11-12T15:46:55Z",
+ "rewrite": {
+  "v": 1,
+  "story": "height_gap",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 559 < 600; powder alert of a small resort",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 559 < 600",
+   "powder alert of a small resort"
+  ],
+  "words": 559,
+  "overlap": 9.7,
+  "with": "alps-les-deux-alpes-snow-forecast-11-november-2026",
+  "langs_off": [],
+  "score": 99.2,
+  "intent": "resort:mount_cain_alpine_park|height_gap",
+  "guide": false,
+  "v": 1
+ }
 }

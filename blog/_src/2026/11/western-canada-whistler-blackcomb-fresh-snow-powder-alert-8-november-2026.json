@@ -269,7 +269,51 @@
      "2026-11-11": 0
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Whistler Blackcomb",
+     "slug": "whistler",
+     "now_cm": 51,
+     "usual_cm": 74,
+     "high_cm": 131,
+     "week_ago_cm": null,
+     "height_m": 1456,
+     "best_weeks": [
+      13,
+      12,
+      11
+     ],
+     "ratio_pct": 69,
+     "deeper_than": 13,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Whistler Blackcomb",
+   "top_cm": 96,
+   "top_m": 2259,
+   "base_cm": 0,
+   "base_m": 653,
+   "rain_day": "2026-11-11",
+   "freezing_m": 2930,
+   "lift_top_m": 2259,
+   "next_cm": 62,
+   "second": "Ski Callaghan",
+   "second_cm": 82,
+   "depth_cm": 131
+  },
+  "story": {
+   "id": "height_gap",
+   "place": "resort:whistler",
+   "score": 46,
+   "resort": "Whistler Blackcomb"
+  }
  },
  "media": [
   {
@@ -329,6 +373,18 @@
      ]
     },
     {
+     "h": "Top and bottom are two different worlds",
+     "p": [
+      "The top of Whistler Blackcomb has about 96 cm at 2,259 m, the bottom about 0 cm at 653 m.",
+      "Ski the upper lifts and plan to ride down by lift if the lower runs are thin.",
+      "At about 1,456 m, Whistler Blackcomb has 51 cm today; a normal 8 November has 74 cm there.",
+      "That is more than in 13 of the 46 past winters on this date.",
+      "In past winters the best snow at Whistler Blackcomb usually came mid-March / late March.",
+      "Day by day at Whistler Blackcomb: Sunday 8 November 68 cm; Monday 9 November 1 cm; Tuesday 10 November 15 cm; Wednesday 11 November 46 cm.",
+      "Height by height at Whistler Blackcomb: 653 m 0 cm on the ground, 0 cm more in the next 7 days; 1,456 m 62 cm on the ground, 112 cm more in the next 7 days; 2,259 m 96 cm on the ground, 174 cm more in the next 7 days."
+     ]
+    },
+    {
      "h": "What the stations measured",
      "p": [
       "Resort numbers are model estimates for the upper slopes; station numbers are measurements at one point, on the date shown."
@@ -378,6 +434,18 @@
      "p": [
       "Ailleurs, Ski Callaghan, Tweedsmuir Ski Club et Mount Cain Alpine Park ont reçu 97 cm, 59 cm et 50 cm en 72 heures.",
       "45 stations sur 57 dans l'Ouest canadien ont de la neige sur le haut du domaine aujourd'hui, et notre modèle compte 288 610 km² de surface enneigée."
+     ]
+    },
+    {
+     "h": "Le haut et le bas, deux mondes",
+     "p": [
+      "Le haut de Whistler Blackcomb compte environ 96 cm à 2 259 m, le bas environ 0 cm à 653 m.",
+      "Skiez sur les remontées du haut et prévoyez de redescendre en remontée si le bas est trop maigre.",
+      "Vers 1 456 m, Whistler Blackcomb a 51 cm aujourd'hui ; un 8 novembre normal y compte 74 cm.",
+      "C'est plus que lors de 13 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Whistler Blackcomb arrivait d'habitude mi-mars / fin mars.",
+      "Jour après jour à Whistler Blackcomb : dimanche 8 novembre 68 cm; lundi 9 novembre 1 cm; mardi 10 novembre 15 cm; mercredi 11 novembre 46 cm.",
+      "Altitude par altitude à Whistler Blackcomb : 653 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours; 1 456 m 62 cm au sol, 112 cm de plus dans les 7 prochains jours; 2 259 m 96 cm au sol, 174 cm de plus dans les 7 prochains jours."
      ]
     },
     {
@@ -432,7 +500,7 @@
    "rejected": "shape"
   }
  },
- "words_en": 227,
+ "words_en": 496,
  "indexable": false,
  "main": {
   "slug": "whistler",
@@ -548,5 +616,26 @@
   "max": 0.455,
   "with": "western-canada-fresh-snow-powder-alert-6-november-2026"
  },
- "publish_utc": "2026-11-08T20:08:16Z"
+ "publish_utc": "2026-11-08T20:08:16Z",
+ "rewrite": {
+  "v": 1,
+  "story": "height_gap",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 496 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 496 < 600"
+  ],
+  "words": 496,
+  "overlap": 21.4,
+  "with": "us-west-fresh-snow-powder-alert-4-november-2026",
+  "langs_off": [],
+  "score": 98.4,
+  "intent": "resort:whistler|height_gap",
+  "guide": false,
+  "v": 1
+ }
 }

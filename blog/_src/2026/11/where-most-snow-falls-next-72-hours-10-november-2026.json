@@ -394,7 +394,7 @@
   }
  },
  "words_en": 302,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "whistler",
   "name": "Whistler Blackcomb",
@@ -788,5 +788,20 @@
    "with_after": "where-most-snow-falls-next-72-hours-8-november-2026",
    "voice": "field"
   }
- ]
+ ],
+ "noindex_why": "quality: words 447 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 447 < 600"
+  ],
+  "words": 447,
+  "overlap": 2.3,
+  "with": "us-west-fresh-snow-powder-alert-4-november-2026",
+  "langs_off": [],
+  "score": 48.4,
+  "intent": "whistler|snow-forecast",
+  "guide": false,
+  "v": 1
+ }
 }

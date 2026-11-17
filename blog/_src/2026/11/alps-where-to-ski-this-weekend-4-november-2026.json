@@ -270,7 +270,48 @@
    "high slopes and north-facing slopes keep snow longest",
    "early-season snow is thin: stay on groomed pistes",
    "read the official avalanche bulletin before off-piste"
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Crissolo",
+     "slug": "crissolo_monviso_ski",
+     "now_cm": 6,
+     "usual_cm": 0,
+     "high_cm": 14,
+     "week_ago_cm": null,
+     "height_m": 1922,
+     "best_weeks": [
+      9,
+      7,
+      10
+     ],
+     "ratio_pct": null,
+     "deeper_than": 36,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Crissolo",
+   "top_cm": 6,
+   "top_m": 2308,
+   "base_cm": 4,
+   "base_m": 1537,
+   "next_cm": 21,
+   "second": "Prali",
+   "second_cm": 39,
+   "depth_cm": 33
+  },
+  "story": {
+   "id": "best_week",
+   "place": "resort:crissolo_monviso_ski",
+   "score": 31,
+   "resort": "Crissolo"
+  }
  },
  "media": [
   {
@@ -308,6 +349,16 @@
       "Crissolo got 19 cm of new snow in the last 72 hours, 18 cm of it in the last 24 hours. Satellites saw Crissolo snow-covered on 25 October, its last clear day.",
       "Prali got 14 cm of new snow in the last 72 hours, 14 cm of it in the last 24 hours. Satellites saw Prali snow-covered on 25 October, its last clear day.",
       "La Grave got 3 cm of new snow in the last 72 hours, 3 cm of it in the last 24 hours. Height matters: at La Grave, our model gives 32 cm at the top (3,543 m), 32 cm at mid-mountain (3,369 m) and 26 cm at the base (3,196 m). Satellites saw La Grave snow-covered on 1 November, its last clear day."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 1,922 m, Crissolo has 6 cm today; a normal 4 November has 0 cm there.",
+      "That is more than in 36 of the 46 past winters on this date.",
+      "In past winters the best snow at Crissolo usually came mid-February / early March.",
+      "Day by day at Crissolo: Wednesday 4 November 18 cm; Thursday 5 November 8 cm; Friday 6 November 12 cm; Saturday 7 November 1 cm.",
+      "Height by height at Crissolo: 1,537 m 4 cm on the ground, 8 cm more in the next 7 days; 1,922 m 6 cm on the ground, 20 cm more in the next 7 days; 2,308 m 6 cm on the ground, 24 cm more in the next 7 days."
      ]
     },
     {
@@ -357,6 +408,16 @@
      ]
     },
     {
+     "h": "Rispetto agli inverni passati",
+     "p": [
+      "A circa 1.922 m, Crissolo ha oggi 6 cm; un 4 novembre normale ne ha 0 cm.",
+      "È più che in 36 dei 46 inverni passati in questa data.",
+      "Negli inverni passati la neve migliore a Crissolo arrivava di solito a metà febbraio / inizio marzo.",
+      "Giorno per giorno a Crissolo: mercoledì 4 novembre 18 cm; giovedì 5 novembre 8 cm; venerdì 6 novembre 12 cm; sabato 7 novembre 1 cm.",
+      "Quota per quota a Crissolo: 1.537 m 4 cm al suolo, 8 cm in più nei prossimi 7 giorni; 1.922 m 6 cm al suolo, 20 cm in più nei prossimi 7 giorni; 2.308 m 6 cm al suolo, 24 cm in più nei prossimi 7 giorni."
+     ]
+    },
+    {
      "h": "Quota, pendii e quota neve",
      "p": [
       "A Crissolo lo zero termico sale tra 1.990 m e 2.070 m il 7 novembre: in basso la neve può essere bagnata, mentre in alto resta invernale.",
@@ -398,8 +459,8 @@
    "writer": "template"
   }
  },
- "words_en": 276,
- "indexable": true,
+ "words_en": 510,
+ "indexable": false,
  "main": {
   "slug": "crissolo_monviso_ski",
   "name": "Crissolo",
@@ -491,5 +552,26 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@44.692,7.130,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "rewrite": {
+  "v": 1,
+  "story": "best_week",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 510 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 510 < 600"
+  ],
+  "words": 510,
+  "overlap": 19.6,
+  "with": "alps-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 78.8,
+  "intent": "resort:crissolo_monviso_ski|best_week",
+  "guide": false,
+  "v": 1
+ }
 }

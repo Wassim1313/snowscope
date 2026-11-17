@@ -338,6 +338,48 @@
    "height_m": 2298,
    "resort": "Mt. Shasta Ski Park",
    "instruction": "Do not give a single snow total: say 'mixed rain and snow' when mixed is true, give the range in cm and the height, and say rain falls below the snow line when it is given."
+  },
+  "normal": {
+   "rows": [
+    {
+     "name": "Mt. Shasta Ski Park",
+     "slug": "mt_shasta_ski_park",
+     "now_cm": 4,
+     "usual_cm": 5,
+     "high_cm": 62,
+     "week_ago_cm": 0,
+     "height_m": 1982,
+     "best_weeks": [
+      53,
+      10,
+      11
+     ],
+     "ratio_pct": 80
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Mt. Shasta Ski Park",
+   "top_cm": 20,
+   "top_m": 2298,
+   "base_cm": 0,
+   "base_m": 1666,
+   "rain_day": "2026-11-13",
+   "freezing_m": 2460,
+   "lift_top_m": 2298,
+   "next_cm": 32,
+   "second": "Boreal",
+   "second_cm": 13,
+   "depth_cm": 14
+  },
+  "story": {
+   "id": "height_gap",
+   "place": "resort:mt_shasta_ski_park",
+   "score": 46,
+   "resort": "Mt. Shasta Ski Park"
   }
  },
  "media": [
@@ -382,6 +424,19 @@
      "p": [
       "Runners-up over the last 72 hours: Boreal, Bear Valley and Kirkwood, with 6 in (14 cm), 5 in (13 cm) and 5 in (13 cm).",
       "The snow map in the US West shows 49,050 sq mi (127,040 km²) of white ground today and snow at 122 of 195 resorts."
+     ]
+    },
+    {
+     "h": "Top and bottom are two different worlds",
+     "p": [
+      "The top of Mt. Shasta Ski Park has about 8 in (20 cm) at 7,539 ft (2,298 m), the bottom about 0 in (0 cm) at 5,466 ft (1,666 m).",
+      "Ski the upper lifts and plan to ride down by lift if the lower runs are thin.",
+      "At about 6,503 ft (1,982 m), Mt. Shasta Ski Park has 2 in (4 cm) today; a normal 13 November has 2 in (5 cm) there.",
+      "Only one winter in ten has more than 24 in (62 cm) on this date.",
+      "A week ago the same spot had 0 in (0 cm).",
+      "In past winters the best snow at Mt. Shasta Ski Park usually came early January / early March.",
+      "Day by day at Mt. Shasta Ski Park: Friday 13 November 6 in (16 cm); Saturday 14 November 2 in (6 cm); Sunday 15 November 9 in (22 cm); Monday 16 November 2 in (4 cm).",
+      "Height by height at Mt. Shasta Ski Park: 5,466 ft (1,666 m) 0 in (0 cm) on the ground, 11 in (29 cm) more in the next 7 days; 6,503 ft (1,982 m) 3 in (7 cm) on the ground, 21 in (54 cm) more in the next 7 days; 7,539 ft (2,298 m) 8 in (20 cm) on the ground, 26 in (67 cm) more in the next 7 days."
      ]
     },
     {
@@ -432,8 +487,8 @@
    "rewrite": 1
   }
  },
- "words_en": 410,
- "indexable": true,
+ "words_en": 766,
+ "indexable": false,
  "main": {
   "slug": "mt_shasta_ski_park",
   "name": "Mt. Shasta Ski Park",
@@ -559,5 +614,26 @@
   "max": 0.184,
   "with": "alps-glacier-3000-fresh-snow-powder-alert-11-november-2026"
  },
- "publish_utc": "2026-11-13T21:01:55Z"
+ "publish_utc": "2026-11-13T21:01:55Z",
+ "rewrite": {
+  "v": 1,
+  "story": "height_gap",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: powder alert of a small resort",
+ "quality": {
+  "ok": false,
+  "why": [
+   "powder alert of a small resort"
+  ],
+  "words": 766,
+  "overlap": 17.2,
+  "with": "us-west-mt-shasta-ski-park-snow-forecast-11-november-2026",
+  "langs_off": [],
+  "score": 102.9,
+  "intent": "resort:mt_shasta_ski_park|height_gap",
+  "guide": false,
+  "v": 1
+ }
 }

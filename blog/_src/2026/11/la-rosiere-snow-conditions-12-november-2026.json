@@ -515,7 +515,7 @@
   }
  },
  "words_en": 436,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "la_rosiere",
   "name": "La Rosière",
@@ -552,5 +552,20 @@
   "with": "meribel-snow-conditions-12-november-2026",
   "tries": 0
  },
- "publish_utc": "2026-11-12T09:53:07Z"
+ "publish_utc": "2026-11-12T09:53:07Z",
+ "noindex_why": "quality: words 517 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 517 < 600"
+  ],
+  "words": 517,
+  "overlap": 1.1,
+  "with": "us-west-where-to-ski-this-weekend-5-november-2026",
+  "langs_off": [],
+  "score": 53.9,
+  "intent": "la_rosiere|snow-conditions",
+  "guide": false,
+  "v": 1
+ }
 }

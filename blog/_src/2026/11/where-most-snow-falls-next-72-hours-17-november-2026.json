@@ -317,7 +317,35 @@
   "notes": [
    "new snow = SnowScope forecast on the upper slopes",
    "snow line = about 300 m below the forecast freezing level"
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Orelle",
+     "slug": "orelle",
+     "now_cm": 42,
+     "usual_cm": 53,
+     "high_cm": 103,
+     "week_ago_cm": 14,
+     "height_m": 2780,
+     "best_weeks": [
+      10,
+      9,
+      11
+     ],
+     "ratio_pct": 79
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "story": {
+   "id": "vs_normal_par",
+   "place": "resort:orelle",
+   "score": 32,
+   "resort": "Orelle"
+  }
  },
  "media": [
   {
@@ -349,6 +377,15 @@
      "h": "Europe and Morocco",
      "p": [
       "Orelle (France): 102 cm within 72 hours (22 cm in the next 24 hours), snow line about 2,500 m. Courmayeur (Italy): next 24 hours 28 cm, 72 hours 100 cm, snow line near 2,000 m. Balme (France / Switzerland): 99 cm within 72 hours (20 cm in the next 24 hours), snow line about 2,000 m."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 2,780 m, Orelle has 42 cm today; a normal 17 November has 53 cm there.",
+      "Only one winter in ten has more than 103 cm on this date.",
+      "A week ago the same spot had 14 cm.",
+      "In past winters the best snow at Orelle usually came early March / mid-March."
      ]
     },
     {
@@ -393,6 +430,15 @@
      "h": "Europe et Maroc",
      "p": [
       "Orelle (France) : 102 cm en 72 heures (22 cm dans les 24 heures), limite pluie-neige vers 2 500 m. Courmayeur (Italie) : 24 heures 28 cm, 72 heures 100 cm, limite pluie-neige vers 2 000 m. Balme (France / Suisse) : 99 cm en 72 heures (20 cm dans les 24 heures), limite pluie-neige vers 2 000 m."
+     ]
+    },
+    {
+     "h": "Face aux hivers passés",
+     "p": [
+      "Vers 2 780 m, Orelle a 42 cm aujourd'hui ; un 17 novembre normal y compte 53 cm.",
+      "Un hiver sur dix seulement dépasse 103 cm à cette date.",
+      "Il y a une semaine, le même endroit avait 14 cm.",
+      "Les hivers passés, la meilleure neige à Orelle arrivait d'habitude début mars / mi-mars."
      ]
     },
     {
@@ -441,7 +487,7 @@
    "rewrite": 2
   }
  },
- "words_en": 287,
+ "words_en": 446,
  "indexable": false,
  "main": {
   "slug": "orelle",
@@ -847,21 +893,26 @@
   "with": "where-most-snow-falls-next-72-hours-4-november-2026"
  },
  "publish_utc": "2026-11-17T08:17:55Z",
- "cover": {
+ "cover": {},
+ "noindex_why": "quality: words 446 < 600",
+ "rewrite": {
   "v": 1,
-  "style": "hero",
-  "files": {
-   "en": [
-    "blog/media/2026/11/where-most-snow-falls-next-72-hours-17-november-2026/cover-en.webp",
-    "blog/media/2026/11/where-most-snow-falls-next-72-hours-17-november-2026/cover-en_t.webp"
-   ],
-   "fr": [
-    "blog/media/2026/11/where-most-snow-falls-next-72-hours-17-november-2026/cover-fr.webp",
-    "blog/media/2026/11/where-most-snow-falls-next-72-hours-17-november-2026/cover-fr_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "vs_normal_par",
+  "llm": false,
+  "usd": 0.0
  },
- "noindex_why": "cadence: news quota 1 of 2026-11-17 used"
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 446 < 600"
+  ],
+  "words": 446,
+  "overlap": 6.8,
+  "with": "alps-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 80.3,
+  "intent": "resort:orelle|vs_normal_par",
+  "guide": false,
+  "v": 1
+ }
 }

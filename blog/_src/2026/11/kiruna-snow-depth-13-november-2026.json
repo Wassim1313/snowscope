@@ -660,7 +660,7 @@
   }
  },
  "words_en": 275,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": null,
   "name": "Kiruna",
@@ -687,5 +687,21 @@
   "with": "alps-snow-depth-today-4-november-2026",
   "tries": 0
  },
- "publish_utc": "2026-11-13T19:29:18Z"
+ "publish_utc": "2026-11-13T19:29:18Z",
+ "noindex_why": "quality: words 344 < 600; no table or chart of its own",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 344 < 600",
+   "no table or chart of its own"
+  ],
+  "words": 344,
+  "overlap": 1.0,
+  "with": "alps-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 35.2,
+  "intent": "kiruna|snow-now",
+  "guide": false,
+  "v": 1
+ }
 }

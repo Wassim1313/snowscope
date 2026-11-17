@@ -331,7 +331,51 @@
      "km_away": 6.7
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Magic Mountain",
+     "slug": "magic_mountain_ski_area",
+     "now_cm": 0,
+     "usual_cm": 1,
+     "high_cm": 6,
+     "week_ago_cm": null,
+     "height_m": 644,
+     "best_weeks": [
+      10,
+      9,
+      11
+     ],
+     "ratio_pct": null,
+     "deeper_than": 23,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Magic Mountain",
+   "top_cm": 3,
+   "top_m": 869,
+   "base_cm": 0,
+   "base_m": 420,
+   "rain_day": "2026-11-18",
+   "freezing_m": 3190,
+   "lift_top_m": 869,
+   "next_cm": 0,
+   "second": "Gore Mountain",
+   "second_cm": 10,
+   "depth_cm": 13
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:magic_mountain_ski_area",
+   "score": 34,
+   "resort": "Magic Mountain"
+  }
  },
  "media": [
   {
@@ -385,6 +429,17 @@
      ]
     },
     {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Wednesday 18 November the freezing level climbs to about 10,466 ft (3,190 m), above the top of the lifts at 2,851 ft (869 m): rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 2,113 ft (644 m), Magic Mountain has 0 in (0 cm) today; a normal 15 November has 0 in (1 cm) there.",
+      "That is more than in 23 of the 46 past winters on this date.",
+      "In past winters the best snow at Magic Mountain usually came early March / mid-March.",
+      "Height by height at Magic Mountain: 1,378 ft (420 m) 0 in (0 cm) on the ground, 0 in (0 cm) more in the next 7 days; 2,113 ft (644 m) 0 in (0 cm) on the ground, 0 in (0 cm) more in the next 7 days; 2,851 ft (869 m) 1 in (3 cm) on the ground, 0 in (0 cm) more in the next 7 days."
+     ]
+    },
+    {
      "h": "What to expect next",
      "p": [
       "Forecasts a few days ahead can change: look at the map again the day before you travel."
@@ -418,8 +473,8 @@
    "voice": "field"
   }
  },
- "words_en": 305,
- "indexable": true,
+ "words_en": 572,
+ "indexable": false,
  "main": {
   "slug": "magic_mountain_ski_area",
   "name": "Magic Mountain",
@@ -540,5 +595,26 @@
   },
   "credit": null,
   "photo": null
+ },
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 572 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 572 < 600"
+  ],
+  "words": 572,
+  "overlap": 19.4,
+  "with": "us-west-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 82.4,
+  "intent": "resort:magic_mountain_ski_area|rain_risk",
+  "guide": false,
+  "v": 1
  }
 }

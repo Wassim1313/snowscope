@@ -181,7 +181,51 @@
      "km_away": 19.2
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Rasos de Peguera",
+     "slug": "rasos_de_peguera",
+     "now_cm": 5,
+     "usual_cm": 0,
+     "high_cm": 0,
+     "week_ago_cm": null,
+     "height_m": 1931,
+     "best_weeks": [
+      6,
+      7,
+      5
+     ],
+     "ratio_pct": null,
+     "deeper_than": 44,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Rasos de Peguera",
+   "top_cm": 0,
+   "top_m": 2036,
+   "base_cm": 0,
+   "base_m": 1826,
+   "rain_day": "2026-11-08",
+   "freezing_m": 3520,
+   "lift_top_m": 2036,
+   "next_cm": 0,
+   "second": "Estació d'esquí Port del Comte",
+   "second_cm": 9,
+   "depth_cm": 20
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:rasos_de_peguera",
+   "score": 46,
+   "resort": "Rasos de Peguera"
+  }
  },
  "media": [
   {
@@ -241,6 +285,17 @@
      ]
     },
     {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Sunday 8 November the freezing level climbs to about 3,520 m, above the top of the lifts at 2,036 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 1,931 m, Rasos de Peguera has 5 cm today; a normal 5 November has 0 cm there.",
+      "That is more than in 44 of the 46 past winters on this date.",
+      "In past winters the best snow at Rasos de Peguera usually came early February / mid-February.",
+      "Height by height at Rasos de Peguera: 1,826 m 0 cm on the ground, 0 cm more in the next 7 days; 1,931 m 1 cm on the ground, 0 cm more in the next 7 days; 2,036 m 0 cm on the ground, 0 cm more in the next 7 days."
+     ]
+    },
+    {
      "h": "What the stations measured",
      "p": [
       "The Cadí Nord (2.145 m) - Prat d'Aguiló station (2,145 m) measured 2 cm of snow on the ground on 2 November, with 1 cm of new snow in 24 hours. The Cadí Nord (2.145 m) - Prat d'Aguiló station (2,145 m) measured 2 cm of snow on the ground on 2 November, with 1 cm of new snow in 24 hours.",
@@ -292,6 +347,17 @@
      ]
     },
     {
+     "h": "¿Lluvia hasta arriba?",
+     "p": [
+      "El domingo 8 de noviembre la isoterma de 0 °C sube hacia 3520 m, por encima del remonte más alto a 2036 m: puede llover hasta arriba.",
+      "La lluvia sobre nieve nueva la hace pesada y, tras una noche fría, helada: los días siguientes son mejores para pistas pisadas que para nieve polvo.",
+      "A unos 1931 m, Rasos de Peguera tiene hoy 5 cm; un 5 de noviembre normal tiene 0 cm.",
+      "Es más que en 44 de los 46 inviernos pasados en esta fecha.",
+      "En inviernos pasados la mejor nieve en Rasos de Peguera solía llegar a principios de febrero / mediados de febrero.",
+      "Cota a cota en Rasos de Peguera: 1826 m 0 cm en el suelo, 0 cm más en los próximos 7 días; 1931 m 1 cm en el suelo, 0 cm más en los próximos 7 días; 2036 m 0 cm en el suelo, 0 cm más en los próximos 7 días."
+     ]
+    },
+    {
      "h": "Lo que miden las estaciones",
      "p": [
       "La estación de medida Cadí Nord (2.145 m) - Prat d'Aguiló (2145 m) midió 2 cm de nieve en el suelo el 2 de noviembre, con 1 cm de nieve nueva en 24 horas. La estación de medida Cadí Nord (2.145 m) - Prat d'Aguiló (2145 m) midió 2 cm de nieve en el suelo el 2 de noviembre, con 1 cm de nieve nueva en 24 horas.",
@@ -339,7 +405,7 @@
    "writer": "template"
   }
  },
- "words_en": 221,
+ "words_en": 486,
  "indexable": false,
  "main": {
   "slug": "rasos_de_peguera",
@@ -398,5 +464,27 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@42.142,1.765,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 486 < 600; powder alert of a small resort",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 486 < 600",
+   "powder alert of a small resort"
+  ],
+  "words": 486,
+  "overlap": 24.6,
+  "with": "us-west-fresh-snow-powder-alert-4-november-2026",
+  "langs_off": [],
+  "score": 90.8,
+  "intent": "resort:rasos_de_peguera|rain_risk",
+  "guide": false,
+  "v": 1
+ }
 }

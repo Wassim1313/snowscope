@@ -340,7 +340,45 @@
    }
   ],
   "focus_index": 1,
-  "title_focus_resort": "Les Deux Alpes"
+  "title_focus_resort": "Les Deux Alpes",
+  "normal": {
+   "rows": [
+    {
+     "name": "Les Deux Alpes",
+     "slug": "les_deux_alpes",
+     "now_cm": 2,
+     "usual_cm": 25,
+     "high_cm": null,
+     "week_ago_cm": null,
+     "height_m": 2397,
+     "best_weeks": [
+      9,
+      10,
+      14
+     ],
+     "ratio_pct": 8,
+     "deeper_than": 6,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Les Deux Alpes",
+   "top_cm": 73,
+   "top_m": 3511,
+   "base_cm": 0,
+   "base_m": 1284,
+   "next_cm": 53
+  },
+  "story": {
+   "id": "vs_normal_low",
+   "place": "resort:les_deux_alpes",
+   "score": 56,
+   "resort": "Les Deux Alpes"
+  }
  },
  "media": [
   {
@@ -402,6 +440,17 @@
      ]
     },
     {
+     "h": "Against past winters",
+     "p": [
+      "At about 2,397 m, Les Deux Alpes has 2 cm today; a normal 14 November has 25 cm there.",
+      "That is more than in 6 of the 46 past winters on this date.",
+      "In past winters the best snow at Les Deux Alpes usually came early March / early April.",
+      "A slow start is common and says little about January; for now the highest lifts and the runs with snowmaking are the safe choice.",
+      "Day by day at Les Deux Alpes: Saturday 14 November 7 cm; Sunday 15 November 25 cm; Monday 16 November 8 cm; Tuesday 17 November 20 cm.",
+      "Height by height at Les Deux Alpes: 1,284 m 0 cm on the ground, 1 cm more in the next 7 days; 2,397 m 3 cm on the ground, 66 cm more in the next 7 days; 3,511 m 73 cm on the ground, 88 cm more in the next 7 days."
+     ]
+    },
+    {
      "h": "Snow still to come",
      "p": [
       "More snow, and so more stored water, is on the way: by 17 November our forecast gives 61 cm at La Grave, 37 cm at Alpe d'Huez Grand Domaine and 38–42 cm at Les Deux Alpes.",
@@ -453,6 +502,17 @@
      "p": [
       "Dans la région, Les Deux Alpes, Alpe d'Huez Grand Domaine et Bonneval-sur-Arc ont gagné 42 cm, 37 cm et 33 cm en 72 heures.",
       "La neige couvre maintenant 68 650 km² dans les Alpes ; 791 stations sur 1 179 en ont sur le haut du domaine."
+     ]
+    },
+    {
+     "h": "Face aux hivers passés",
+     "p": [
+      "Vers 2 397 m, Les Deux Alpes a 2 cm aujourd'hui ; un 14 novembre normal y compte 25 cm.",
+      "C'est plus que lors de 6 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Les Deux Alpes arrivait d'habitude début mars / début avril.",
+      "Un début lent est fréquent et dit peu de choses sur janvier ; pour l'instant, les remontées les plus hautes et les pistes équipées de neige de culture sont le choix sûr.",
+      "Jour après jour à Les Deux Alpes : samedi 14 novembre 7 cm; dimanche 15 novembre 25 cm; lundi 16 novembre 8 cm; mardi 17 novembre 20 cm.",
+      "Altitude par altitude à Les Deux Alpes : 1 284 m 0 cm au sol, 1 cm de plus dans les 7 prochains jours; 2 397 m 3 cm au sol, 66 cm de plus dans les 7 prochains jours; 3 511 m 73 cm au sol, 88 cm de plus dans les 7 prochains jours."
      ]
     },
     {
@@ -510,7 +570,7 @@
    "rewrite": 1
   }
  },
- "words_en": 363,
+ "words_en": 635,
  "indexable": true,
  "main": {
   "slug": "les_deux_alpes",
@@ -641,7 +701,7 @@
  "publish_utc": "2026-11-14T12:09:21Z",
  "cover": {
   "v": 1,
-  "style": "ranked",
+  "style": "split",
   "files": {
    "en": [
     "blog/media/2026/11/alps-les-deux-alpes-fresh-snow-powder-alert-14-november-2026/cover-en.webp",
@@ -654,5 +714,23 @@
   },
   "credit": null,
   "photo": null
+ },
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_low",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 635,
+  "overlap": 21.2,
+  "with": "alps-les-deux-alpes-snow-forecast-11-november-2026",
+  "langs_off": [],
+  "score": 113.7,
+  "intent": "resort:les_deux_alpes|vs_normal_low",
+  "guide": false,
+  "v": 1
  }
 }

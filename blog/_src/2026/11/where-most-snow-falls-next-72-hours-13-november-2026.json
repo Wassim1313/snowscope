@@ -444,7 +444,7 @@
   }
  },
  "words_en": 366,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "whistler",
   "name": "Whistler Blackcomb",
@@ -848,5 +848,20 @@
   "max": 0.035,
   "with": "where-most-snow-falls-next-72-hours-11-november-2026"
  },
- "publish_utc": "2026-11-13T10:07:36Z"
+ "publish_utc": "2026-11-13T10:07:36Z",
+ "noindex_why": "quality: words 458 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 458 < 600"
+  ],
+  "words": 458,
+  "overlap": 0.2,
+  "with": "western-canada-what-to-bring-ski-gear-conditions-11-november-2026",
+  "langs_off": [],
+  "score": 50.9,
+  "intent": "whistler|snow-forecast",
+  "guide": false,
+  "v": 1
+ }
 }

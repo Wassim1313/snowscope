@@ -304,7 +304,51 @@
      "2026-11-06": 3
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Ski Callaghan",
+     "slug": "ski_callaghan",
+     "now_cm": 5,
+     "usual_cm": 28,
+     "high_cm": 83,
+     "week_ago_cm": null,
+     "height_m": 923,
+     "best_weeks": [
+      12,
+      13,
+      14
+     ],
+     "ratio_pct": 18,
+     "deeper_than": 11,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Ski Callaghan",
+   "top_cm": 4,
+   "top_m": 998,
+   "base_cm": 2,
+   "base_m": 848,
+   "rain_day": "2026-11-03",
+   "freezing_m": 2050,
+   "lift_top_m": 998,
+   "next_cm": 33,
+   "second": "Mount Cain Alpine Park",
+   "second_cm": 68,
+   "depth_cm": 20
+  },
+  "story": {
+   "id": "vs_normal_low",
+   "place": "resort:ski_callaghan",
+   "score": 56,
+   "resort": "Ski Callaghan"
+  }
  },
  "media": [
   {
@@ -349,6 +393,17 @@
      ]
     },
     {
+     "h": "Against past winters",
+     "p": [
+      "At about 923 m, Ski Callaghan has 5 cm today; a normal 3 November has 28 cm there.",
+      "That is more than in 11 of the 46 past winters on this date.",
+      "In past winters the best snow at Ski Callaghan usually came late March / early April.",
+      "A slow start is common and says little about January; for now the highest lifts and the runs with snowmaking are the safe choice.",
+      "Day by day at Ski Callaghan: Tuesday 3 November 2 cm; Thursday 5 November 13 cm; Friday 6 November 20 cm.",
+      "Height by height at Ski Callaghan: 848 m 2 cm on the ground, 1 cm more in the next 7 days; 923 m 3 cm on the ground, 4 cm more in the next 7 days; 998 m 4 cm on the ground, 5 cm more in the next 7 days."
+     ]
+    },
+    {
      "h": "Which height to ski",
      "p": [
       "At Ski Callaghan, the freezing level reaches 1,260 m to 2,050 m on 3 November, above the top of the resort (998 m): rain or wet snow is possible on every slope that day.",
@@ -388,7 +443,7 @@
    "writer": "template"
   }
  },
- "words_en": 249,
+ "words_en": 488,
  "indexable": false,
  "main": {
   "slug": "ski_callaghan",
@@ -498,5 +553,26 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@50.166,-123.166,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_low",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 488 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 488 < 600"
+  ],
+  "words": 488,
+  "overlap": 0.0,
+  "with": null,
+  "langs_off": [],
+  "score": 101.7,
+  "intent": "resort:ski_callaghan|vs_normal_low",
+  "guide": false,
+  "v": 1
+ }
 }

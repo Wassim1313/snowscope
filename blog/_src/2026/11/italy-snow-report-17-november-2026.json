@@ -145,6 +145,128 @@
    ],
    "from_day": 8,
    "to_day": 14
+  },
+  "trend": [
+   {
+    "date": "2026-11-16",
+    "snow_km2": 21210,
+    "new72": 16,
+    "leader": "Monterosa Ski",
+    "leader_cm": 99
+   },
+   {
+    "date": "2026-11-17",
+    "snow_km2": 12540,
+    "new72": 31,
+    "leader": "La Thuile ski",
+    "leader_cm": 50
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "La Thuile ski",
+     "slug": "la_thuile_ski",
+     "now_cm": 29,
+     "usual_cm": 24,
+     "high_cm": 55,
+     "week_ago_cm": 7,
+     "height_m": 2038,
+     "best_weeks": [
+      10,
+      11,
+      8
+     ],
+     "ratio_pct": 121
+    },
+    {
+     "name": "Prali",
+     "slug": "prali_italy",
+     "now_cm": 15,
+     "usual_cm": 12,
+     "high_cm": 36,
+     "week_ago_cm": 11,
+     "height_m": 2173,
+     "best_weeks": [
+      10,
+      9,
+      11
+     ],
+     "ratio_pct": 125
+    },
+    {
+     "name": "Courmayeur",
+     "slug": "courmayeur",
+     "now_cm": 40,
+     "usual_cm": 21,
+     "high_cm": 51,
+     "week_ago_cm": 14,
+     "height_m": 1976,
+     "best_weeks": [
+      10,
+      9,
+      8
+     ],
+     "ratio_pct": 190
+    },
+    {
+     "name": "Schnalstal",
+     "slug": "schnalstal",
+     "now_cm": 23,
+     "usual_cm": 45,
+     "high_cm": 89,
+     "week_ago_cm": 14,
+     "height_m": 2602,
+     "best_weeks": [
+      16,
+      13,
+      14
+     ],
+     "ratio_pct": 51
+    },
+    {
+     "name": "Passo Stelvio",
+     "slug": "passo_stelvio_stilfserjoch",
+     "now_cm": 28,
+     "usual_cm": 50,
+     "high_cm": 116,
+     "week_ago_cm": 19,
+     "height_m": 3062,
+     "best_weeks": [
+      15,
+      14,
+      13
+     ],
+     "ratio_pct": 56
+    }
+   ],
+   "n": 5,
+   "above": 3,
+   "median_pct": 121
+  },
+  "neighbours": [
+   {
+    "cc": "AT",
+    "name": "Austria",
+    "white_share_pct": 30,
+    "leader": "Kühtai",
+    "leader_cm": 54,
+    "next_7_days_max_cm": 47
+   },
+   {
+    "cc": "CH",
+    "name": "Switzerland",
+    "white_share_pct": 41,
+    "leader": "Glacier 3000",
+    "leader_cm": 46,
+    "next_7_days_max_cm": 85
+   }
+  ],
+  "glacier": false,
+  "story": {
+   "id": "thaw",
+   "place": "cc:IT",
+   "score": 62.4
   }
  },
  "media": [
@@ -169,60 +291,92 @@
  ],
  "docs": {
   "en": {
-   "title": "Snow in Italy today: how much is on the ground, 17 November 2026",
-   "description": "Italy snow today, 17 November: snow cover, new snow, snow depth by height, the next days and the best resorts.",
-   "lede": "The white area in Italy stands at about 12,540 km² today, 8,670 km² less than yesterday. That is 13 % of the high ground we map in Italy.",
+   "title": "Mild day in Italy: the snow retreats to 2,000 m",
+   "description": "Mild day in Italy: the snow retreats to 2,000 m. Snow cover, new snow, resorts and the days ahead in Italy on 17 November.",
+   "lede": "Yesterday about 21,210 km² was white in Italy; today 12,540 km² is left, 8,670 km² less in one day.",
    "sections": [
     {
-     "h": "Snow cover today",
+     "h": "A mild day eats the snow",
      "p": [
-      "A week ago it was 21,840 km²: 9,300 km² has melted away since. The snow line sits near 2,000 m."
+      "Mild air hits the thin snow of the valleys first. Expect wet, heavy snow low down in the afternoon and firm, icy patches the next morning.",
+      "In Italy, about 12,540 km² of high ground is white today, down 8,670 km² on yesterday. That is 13 % of the high ground we map in Italy."
      ]
     },
     {
-     "h": "How deep it is, height by height",
+     "h": "From the valleys to the summits",
      "p": [
-      "By height, the picture looks like this: 1,500-2,000 m: on average under 1 cm (17 % of the ground white); 2,000-2,500 m: on average 5 cm (78 % of the ground white); above 2,500 m: on average 20 cm (99 % white)."
-     ]
-    },
-    {
-     "h": "Where the fresh snow fell",
-     "p": [
-      "The Aosta Valley, the Piedmont Alps and the central Apennines got the most fresh snow over three days, up to 31 cm.",
-      "In the past day, up to 18 cm was added.",
-      "About 6,690 km² received at least 5 cm."
-     ]
-    },
-    {
-     "h": "On the ground",
-     "p": [
-      "Fresh snow on top of the base means soft turns on the upper slopes, while the lower runs stay patchy.",
-      "With more snow in the forecast, the next days should improve things further."
+      "Average depth of the snowpack by height band: 1,500-2,000 m: on average under 1 cm (17 % of the ground white); 2,000-2,500 m: on average 5 cm (78 % of the ground white); above 2,500 m: on average 20 cm (99 % white)."
      ]
     },
     {
      "h": "The resorts with the most snow",
      "p": [
-      "The deepest snow of the country's resorts is at La Thuile ski: 50 cm.",
-      "Close behind: Prali (49 cm), Courmayeur (42 cm), Schnalstal (39 cm) and Passo Stelvio (37 cm).",
-      "La Thuile ski picked up 65 cm in the last three days and could add 89 cm by Friday 20 November.",
-      "Prali picked up 18 cm in the last three days and could add 32 cm by Friday 20 November.",
-      "Snow lies on the upper slopes of 122 out of 237 resorts in Italy."
+      "At the top of the list, La Thuile ski reports 50 cm.",
+      "Then come Prali (49 cm), Courmayeur (42 cm), Schnalstal (39 cm) and Passo Stelvio (37 cm).",
+      "At La Thuile ski: 65 cm of fresh snow over three days, 89 cm more expected by Friday 20 November.",
+      "At Prali: 18 cm of fresh snow over three days, 32 cm more expected by Friday 20 November.",
+      "122 of the 237 resorts we follow in Italy have snow on their upper slopes.",
+      "The rest of the shortlist: Courmayeur: 42 cm on top, 65 cm in three days, 100 cm expected; Schnalstal: 39 cm on top, 5 cm in three days, 9 cm expected; Passo Stelvio: 37 cm on top, 6 cm in three days, 8 cm expected."
      ]
     },
     {
      "h": "What is coming",
      "p": [
-      "Expect up to 48 cm on the snowiest slopes by the third day; the seven-day total reaches 58 cm.",
+      "The week ahead could bring up to 58 cm, 48 cm of it in the next three days.",
       "The snowiest day looks like Thursday 19 November, with up to 24 cm in the snowiest spots.",
-      "Further out, days 8 to 14 show up to 41 cm on the snowiest slopes."
+      "The second week adds up to 41 cm where it snows most."
+     ]
+    },
+    {
+     "h": "Skiing conditions",
+     "p": [
+      "The new snow freshens the upper slopes; lower down it may already be heavy or wet.",
+      "With more snow in the forecast, the next days should improve things further."
+     ]
+    },
+    {
+     "h": "How much of the country is white",
+     "p": [
+      "Below about 2,000 m the slopes are mostly green or brown. Seven days ago the figure was 21,840 km², 9,300 km² more than now."
+     ]
+    },
+    {
+     "h": "The latest snowfall",
+     "p": [
+      "In the last 72 hours the most new snow, up to 31 cm, fell over the Aosta Valley, the Piedmont Alps and the central Apennines.",
+      "The last 24 hours alone brought up to 18 cm.",
+      "About 6,690 km² received at least 5 cm."
+     ]
+    },
+    {
+     "h": "Compared with past winters",
+     "p": [
+      "Here is how the deepest resorts compare with their usual 17 November: La Thuile ski: 29 cm at about 2,038 m, against 24 cm in a normal year; Prali: 15 cm at about 2,173 m, against 12 cm in a normal year; Courmayeur: 40 cm at about 1,976 m, against 21 cm in a normal year; Schnalstal: 23 cm at about 2,602 m, against 45 cm in a normal year.",
+      "3 of these 4 resorts are above their usual depth for the date.",
+      "These depths are for one height on each mountain, below the top, so they read lower than the upper-slope numbers further down.",
+      "In past winters the best snow at La Thuile ski usually came late February / early March."
+     ]
+    },
+    {
+     "h": "The neighbours today",
+     "p": [
+      "For comparison, the neighbours on the same day: Austria: 30 % white, deepest Kühtai with 54 cm, up to 47 cm in the week ahead; Switzerland: 41 % white, deepest Glacier 3000 with 46 cm, up to 85 cm in the week ahead."
+     ]
+    },
+    {
+     "h": "Planning a day on the snow",
+     "p": [
+      "Above 2,500 m the ground is almost fully white (99 % covered), so runs up there have a continuous base.",
+      "Between 2,000 m and 2,500 m the cover is patchy, about 78 % white: expect grass and stones between the snow.",
+      "Below 1,500 m the slopes are still almost bare.",
+      "If you can choose the day, go after Thursday 19 November: the fresh snow then has time to settle and the roads to be cleared."
      ]
     }
    ],
    "advice": [
-    "Morning snow is firm after a clear night: wait for the sun on south faces.",
-    "Snow above the tree line can be wind-packed: watch the ridges.",
-    "Read the local avalanche bulletin before going off-piste."
+    "Roads to the higher resorts may need winter tyres or chains.",
+    "Check the resort's own lift status before you travel.",
+    "Fresh snow on a cold base sticks badly: take care on steep slopes."
    ],
    "captions": {
     "map": "Snow depth in Italy on 17 November",
@@ -230,26 +384,20 @@
    }
   },
   "it": {
-   "title": "Quanta neve c'è in Italia? Manto nevoso e previsioni, 17 novembre 2026",
+   "title": "Situazione neve in Italia, 17 novembre 2026: località, neve fresca e prossimi giorni",
    "description": "Neve in Italia il 17 novembre: manto nevoso, neve fresca, altezza per quota, prossimi giorni e migliori località.",
-   "lede": "Martedì 17 novembre: la neve copre circa 12.540 km² delle montagne in Italia. Sono 8.670 km² in meno rispetto a ieri. È il 13 % del territorio montano in Italia che seguiamo.",
+   "lede": "In Italia oggi circa 12.540 km² sono innevati (martedì 17 novembre). Sono 8.670 km² in meno rispetto a ieri.",
    "sections": [
     {
      "h": "Il manto nevoso oggi",
      "p": [
-      "Sette giorni fa la superficie era di 21.840 km², 9.300 km² in più di adesso. Il limite della neve è intorno ai 2.000 m."
-     ]
-    },
-    {
-     "h": "Altezza della neve per quota",
-     "p": [
-      "L'altezza della neve dipende dalla quota: 1.500–2.000 m: in media meno di 1 cm (17 % innevato); 2.000–2.500 m: in media 5 cm (78 % innevato); sopra i 2.500 m: in media 20 cm (99 % innevato)."
+      "Il terreno è per lo più bianco da circa 2.000 m in su. Sette giorni fa la superficie era di 21.840 km², 9.300 km² in più di adesso."
      ]
     },
     {
      "h": "Dove è caduta la neve fresca",
      "p": [
-      "In tre giorni la neve fresca più abbondante è caduta qui: Valle d'Aosta, Alpi piemontesi e Appennino centrale (fino a 31 cm).",
+      "La neve fresca più abbondante nelle ultime 72 ore: fino a 31 cm. Zone: Valle d'Aosta, Alpi piemontesi e Appennino centrale.",
       "Solo nelle ultime 24 ore sono caduti fino a 18 cm.",
       "Almeno 5 cm di neve fresca coprono circa 6.690 km²."
      ]
@@ -261,9 +409,15 @@
      ]
     },
     {
+     "h": "Altezza della neve per quota",
+     "p": [
+      "Altezza media del manto nevoso per fascia di quota: 1.500–2.000 m: in media meno di 1 cm (17 % innevato); 2.000–2.500 m: in media 5 cm (78 % innevato); sopra i 2.500 m: in media 20 cm (99 % innevato)."
+     ]
+    },
+    {
      "h": "Le migliori località ora",
      "p": [
-      "Più neve sulle piste in quota: La Thuile ski, 50 cm.",
+      "In testa c'è La Thuile ski: 50 cm nella parte alta delle piste.",
       "Seguono: Prali (49 cm), Courmayeur (42 cm), Schnalstal (39 cm) e Passo Stelvio (37 cm).",
       "La Thuile ski: 65 cm di neve fresca in tre giorni e fino a 89 cm in più entro venerdì, 20 novembre."
      ]
@@ -271,14 +425,15 @@
     {
      "h": "I prossimi giorni",
      "p": [
-      "Nei prossimi tre giorni sono attesi fino a 48 cm, nell'intera settimana fino a 58 cm.",
+      "Previsione di neve fresca: fino a 48 cm in tre giorni e fino a 58 cm in sette giorni.",
       "Il giorno più nevoso: giovedì, 19 novembre, fino a 24 cm.",
       "Più avanti, nei giorni 8–14, sui pendii più innevati possono aggiungersi fino a 41 cm."
      ]
     }
    ],
    "advice": [
-    "Prima di partire verificate che gli impianti siano aperti."
+    "A inizio stagione la neve sulle rocce è sottile: restate sulle piste battute.",
+    "Sopra il limite del bosco la neve può essere ventata: attenzione sulle creste."
    ],
    "captions": {
     "map": "Altezza della neve in Italia, 17 novembre",
@@ -289,15 +444,17 @@
  "writers": {
   "en": {
    "writer": "template",
-   "voice": "hydro"
+   "voice": "field",
+   "rewrite": "requality"
   },
   "it": {
    "writer": "template",
-   "voice": "hydro"
+   "voice": "field",
+   "rewrite": "requality"
   }
  },
- "words_en": 298,
- "indexable": false,
+ "words_en": 675,
+ "indexable": true,
  "main": {
   "slug": "la_thuile_ski",
   "name": "La Thuile ski",
@@ -419,20 +576,25 @@
   "with": "switzerland-snow-report-17-november-2026"
  },
  "publish_utc": "2026-11-17T09:57:44Z",
- "cover": {
+ "cover": {},
+ "rewrite": {
   "v": 1,
-  "style": "poster",
-  "files": {
-   "en": [
-    "blog/media/2026/11/italy-snow-report-17-november-2026/cover-en.webp",
-    "blog/media/2026/11/italy-snow-report-17-november-2026/cover-en_t.webp"
-   ],
-   "it": [
-    "blog/media/2026/11/italy-snow-report-17-november-2026/cover-it.webp",
-    "blog/media/2026/11/italy-snow-report-17-november-2026/cover-it_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "thaw",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 675,
+  "overlap": 24.8,
+  "with": "switzerland-snow-report-16-november-2026",
+  "langs_off": [
+   "it"
+  ],
+  "score": 121.5,
+  "intent": "cc:IT|thaw",
+  "guide": false,
+  "v": 1
  }
 }

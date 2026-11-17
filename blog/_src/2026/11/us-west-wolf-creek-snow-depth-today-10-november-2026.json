@@ -325,7 +325,51 @@
     "measured_on": "2026-11-09",
     "network": "snotel"
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Wolf Creek",
+     "slug": "wolf_creek_ski_area",
+     "now_cm": 65,
+     "usual_cm": 18,
+     "high_cm": 100,
+     "week_ago_cm": null,
+     "height_m": 3356,
+     "best_weeks": [
+      53,
+      12,
+      11
+     ],
+     "ratio_pct": 361,
+     "deeper_than": 35,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Wolf Creek",
+   "top_cm": 47,
+   "top_m": 3585,
+   "base_cm": 8,
+   "base_m": 3128,
+   "rain_day": "2026-11-12",
+   "freezing_m": 4150,
+   "lift_top_m": 3585,
+   "next_cm": 0,
+   "second": "Telluride",
+   "second_cm": 85,
+   "depth_cm": 90
+  },
+  "story": {
+   "id": "vs_normal_high",
+   "place": "resort:wolf_creek_ski_area",
+   "score": 62,
+   "resort": "Wolf Creek"
+  }
  },
  "media": [
   {
@@ -349,6 +393,16 @@
      "p": [
       "The snow has pulled back since 8 November, from 66,850 sq mi (173,140 km²) to 57,545 sq mi (149,040 km²) today; for 13 November our forecast gives 50,919 sq mi (131,880 km²).",
       "At Wolf Creek, the difference between top and bottom is clear: 19 in (47 cm) at the top (11,762 ft / 3,585 m), 14 in (36 cm) at mid-mountain (11,010 ft / 3,356 m) and 3 in (8 cm) at the base (10,262 ft / 3,128 m)."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 11,010 ft (3,356 m), Wolf Creek has 26 in (65 cm) today; a normal 10 November has 7 in (18 cm) there.",
+      "That is more than in 35 of the 46 past winters on this date.",
+      "In past winters the best snow at Wolf Creek usually came early January / mid-March.",
+      "An early lead like this matters most for the lower and middle runs, which usually wait until December for this much snow.",
+      "Height by height at Wolf Creek: 10,262 ft (3,128 m) 3 in (8 cm) on the ground, 2 in (5 cm) more in the next 7 days; 11,010 ft (3,356 m) 14 in (36 cm) on the ground, 2 in (5 cm) more in the next 7 days; 11,762 ft (3,585 m) 19 in (47 cm) on the ground, 2 in (5 cm) more in the next 7 days."
      ]
     },
     {
@@ -393,7 +447,7 @@
    "rewrite": 1
   }
  },
- "words_en": 423,
+ "words_en": 696,
  "indexable": true,
  "main": {
   "slug": "wolf_creek_ski_area",
@@ -516,5 +570,35 @@
   "with": "us-west-snow-depth-today-7-november-2026",
   "tries": 1
  },
- "voice": "field"
+ "voice": "field",
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_high",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 696,
+  "overlap": 17.1,
+  "with": "us-west-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 119.3,
+  "intent": "resort:wolf_creek_ski_area|vs_normal_high",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "split",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-wolf-creek-snow-depth-today-10-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-wolf-creek-snow-depth-today-10-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

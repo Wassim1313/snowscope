@@ -325,7 +325,7 @@
   }
  },
  "words_en": 280,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": null,
   "name": "Östersund",
@@ -352,5 +352,21 @@
   "with": "umea-snow-depth-13-november-2026",
   "tries": 0
  },
- "publish_utc": "2026-11-13T20:49:16Z"
+ "publish_utc": "2026-11-13T20:49:16Z",
+ "noindex_why": "quality: words 350 < 600; no table or chart of its own",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 350 < 600",
+   "no table or chart of its own"
+  ],
+  "words": 350,
+  "overlap": 0.5,
+  "with": "us-west-fresh-snow-powder-alert-4-november-2026",
+  "langs_off": [],
+  "score": 35.5,
+  "intent": "ostersund|snow-now",
+  "guide": false,
+  "v": 1
+ }
 }

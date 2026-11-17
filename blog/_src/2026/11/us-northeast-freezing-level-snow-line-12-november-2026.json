@@ -381,7 +381,7 @@
   }
  },
  "words_en": 441,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "whiteface_mountain_ski_center",
   "name": "Whiteface Mountain",
@@ -507,5 +507,21 @@
   "max": 0.162,
   "with": "pyrenees-freezing-level-snow-line-8-november-2026"
  },
- "publish_utc": "2026-11-12T20:48:34Z"
+ "publish_utc": "2026-11-12T20:48:34Z",
+ "noindex_why": "quality: words 541 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 541 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 541,
+  "overlap": 22.4,
+  "with": "us-west-freezing-level-snow-line-11-november-2026",
+  "langs_off": [],
+  "score": 45.8,
+  "intent": "us_ne|snow-line",
+  "guide": false,
+  "v": 1
+ }
 }

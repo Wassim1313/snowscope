@@ -317,7 +317,48 @@
    "high slopes and north-facing slopes keep snow longest",
    "early-season snow is thin: stay on groomed pistes",
    "read the official avalanche bulletin before off-piste"
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "La Grave",
+     "slug": "la_grave",
+     "now_cm": 16,
+     "usual_cm": 39,
+     "high_cm": null,
+     "week_ago_cm": null,
+     "height_m": 3369,
+     "best_weeks": [
+      16,
+      15,
+      17
+     ],
+     "ratio_pct": 41,
+     "deeper_than": 12,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "La Grave",
+   "top_cm": 39,
+   "top_m": 3543,
+   "base_cm": 32,
+   "base_m": 3196,
+   "next_cm": 32,
+   "second": "Les Deux Alpes",
+   "second_cm": 47,
+   "depth_cm": 50
+  },
+  "story": {
+   "id": "storm_next",
+   "place": "resort:la_grave",
+   "score": 60.7,
+   "resort": "La Grave"
+  }
  },
  "media": [
   {
@@ -363,6 +404,18 @@
       "La Grave got 12 cm of new snow in the last 72 hours. Height matters: at La Grave, our model gives 39 cm at the top (3,543 m), 39 cm at mid-mountain (3,369 m) and 32 cm at the base (3,196 m). Satellites saw La Grave snow-covered on 5 November, its last clear day.",
       "Les Deux Alpes got 8 cm of new snow in the last 72 hours. Height matters: at Les Deux Alpes, our model gives 39 cm at the top (3,511 m), 1 cm at mid-mountain (2,397 m) and 0 cm at the base (1,284 m). Satellites saw Les Deux Alpes snow-covered on 3 November, its last clear day.",
       "Les Grands Montets got 23 cm of new snow in the last 72 hours. Satellites saw Les Grands Montets snow-covered on 5 November, its last clear day."
+     ]
+    },
+    {
+     "h": "The snow still to come",
+     "p": [
+      "Up to 32 cm of new snow is forecast at La Grave over the next days.",
+      "Forecasts move: the timing is usually more reliable than the totals, so check again two days before you go.",
+      "At about 3,369 m, La Grave has 16 cm today; a normal 8 November has 39 cm there.",
+      "That is more than in 12 of the 46 past winters on this date.",
+      "In past winters the best snow at La Grave usually came mid-April / late April.",
+      "Day by day at La Grave: Sunday 8 November 1 cm; Monday 9 November 10 cm; Tuesday 10 November 17 cm; Wednesday 11 November 5 cm.",
+      "Height by height at La Grave: 3,196 m 32 cm on the ground, 33 cm more in the next 7 days; 3,369 m 39 cm on the ground, 34 cm more in the next 7 days; 3,543 m 39 cm on the ground, 35 cm more in the next 7 days."
      ]
     },
     {
@@ -414,6 +467,18 @@
      ]
     },
     {
+     "h": "La neige encore à venir",
+     "p": [
+      "Jusqu'à 32 cm de neige fraîche sont prévus à La Grave dans les prochains jours.",
+      "Les prévisions bougent : le moment est souvent plus fiable que les quantités, revérifiez deux jours avant de partir.",
+      "Vers 3 369 m, La Grave a 16 cm aujourd'hui ; un 8 novembre normal y compte 39 cm.",
+      "C'est plus que lors de 12 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à La Grave arrivait d'habitude mi-avril / fin avril.",
+      "Jour après jour à La Grave : dimanche 8 novembre 1 cm; lundi 9 novembre 10 cm; mardi 10 novembre 17 cm; mercredi 11 novembre 5 cm.",
+      "Altitude par altitude à La Grave : 3 196 m 32 cm au sol, 33 cm de plus dans les 7 prochains jours; 3 369 m 39 cm au sol, 34 cm de plus dans les 7 prochains jours; 3 543 m 39 cm au sol, 35 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
      "h": "Limite pluie-neige et pentes",
      "p": [
       "À La Grave, l'isotherme 0 °C monte entre 2 870 m et 3 210 m le 10 novembre : le bas du domaine peut recevoir de la neige mouillée, le haut reste bien hivernal.",
@@ -457,7 +522,7 @@
    "writer": "template"
   }
  },
- "words_en": 337,
+ "words_en": 619,
  "indexable": true,
  "main": {
   "slug": "la_grave",
@@ -556,5 +621,39 @@
   "max": 0.314,
   "with": "alps-where-to-ski-this-weekend-4-november-2026"
  },
- "publish_utc": "2026-11-08T21:27:10Z"
+ "publish_utc": "2026-11-08T21:27:10Z",
+ "rewrite": {
+  "v": 1,
+  "story": "storm_next",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 619,
+  "overlap": 21.4,
+  "with": "pyrenees-where-to-ski-this-weekend-4-november-2026",
+  "langs_off": [],
+  "score": 112.2,
+  "intent": "resort:la_grave|storm_next",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "ranked",
+  "files": {
+   "en": [
+    "blog/media/2026/11/alps-where-to-ski-best-snow-8-november-2026/cover-en.webp",
+    "blog/media/2026/11/alps-where-to-ski-best-snow-8-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/alps-where-to-ski-best-snow-8-november-2026/cover-fr.webp",
+    "blog/media/2026/11/alps-where-to-ski-best-snow-8-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

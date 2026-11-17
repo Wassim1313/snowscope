@@ -483,7 +483,7 @@
   }
  },
  "words_en": 445,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "silvretta_arena_ischgl_samnaun",
   "name": "Ischgl",
@@ -520,5 +520,20 @@
   "with": "schneehoehe-soelden-gletscher-und-tal-13-november-2026",
   "tries": 0
  },
- "publish_utc": "2026-11-13T12:40:00Z"
+ "publish_utc": "2026-11-13T12:40:00Z",
+ "noindex_why": "quality: words 527 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 527 < 600"
+  ],
+  "words": 527,
+  "overlap": 1.1,
+  "with": "us-west-fresh-snow-powder-alert-4-november-2026",
+  "langs_off": [],
+  "score": 54.4,
+  "intent": "silvretta_arena_ischgl_samnaun|snow-depth",
+  "guide": false,
+  "v": 1
+ }
 }

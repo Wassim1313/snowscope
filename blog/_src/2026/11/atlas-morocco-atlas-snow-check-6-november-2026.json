@@ -417,7 +417,7 @@
   }
  },
  "words_en": 252,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "oukaimeden",
   "name": "Oukaimden",
@@ -488,5 +488,21 @@
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@31.191,-7.860,9.0",
  "seconds": 0.0,
- "publish_utc": "2026-11-06T13:22:00Z"
+ "publish_utc": "2026-11-06T13:22:00Z",
+ "noindex_why": "quality: words 332 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 332 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 332,
+  "overlap": 9.1,
+  "with": "pyrenees-where-to-ski-this-weekend-4-november-2026",
+  "langs_off": [],
+  "score": 35.7,
+  "intent": "atlas|snow-check",
+  "guide": false,
+  "v": 1
+ }
 }

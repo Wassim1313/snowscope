@@ -118,7 +118,130 @@
   "n_resorts_with_snow": 28,
   "resort_next_until": "2026-11-20",
   "outlook": null,
-  "week2": null
+  "week2": null,
+  "trend": [
+   {
+    "date": "2026-11-16",
+    "snow_km2": 157360,
+    "new72": 11,
+    "leader": "Kallin",
+    "leader_cm": 23
+   },
+   {
+    "date": "2026-11-17",
+    "snow_km2": 178550,
+    "new72": 10,
+    "leader": "Kallin",
+    "leader_cm": 25
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Kallin",
+     "slug": "kallin",
+     "now_cm": 13,
+     "usual_cm": 4,
+     "high_cm": 15,
+     "week_ago_cm": 0,
+     "height_m": 40,
+     "best_weeks": [
+      10,
+      11,
+      9
+     ],
+     "ratio_pct": 325
+    },
+    {
+     "name": "Salla",
+     "slug": "salla_ski_resort",
+     "now_cm": 19,
+     "usual_cm": 17,
+     "high_cm": 30,
+     "week_ago_cm": 2,
+     "height_m": 356,
+     "best_weeks": [
+      11,
+      10,
+      9
+     ],
+     "ratio_pct": 112
+    },
+    {
+     "name": "Rukatunturi",
+     "slug": "rukatunturi_ruka",
+     "now_cm": 16,
+     "usual_cm": 15,
+     "high_cm": 28,
+     "week_ago_cm": 4,
+     "height_m": 390,
+     "best_weeks": [
+      11,
+      9,
+      10
+     ],
+     "ratio_pct": 107
+    },
+    {
+     "name": "Pyhä",
+     "slug": "pyha_ski_resort",
+     "now_cm": 13,
+     "usual_cm": 16,
+     "high_cm": 31,
+     "week_ago_cm": 2,
+     "height_m": 285,
+     "best_weeks": [
+      8,
+      11,
+      10
+     ],
+     "ratio_pct": 81
+    },
+    {
+     "name": "Suomutunturi",
+     "slug": "suomutunturi",
+     "now_cm": 13,
+     "usual_cm": 14,
+     "high_cm": 25,
+     "week_ago_cm": 2,
+     "height_m": 285,
+     "best_weeks": [
+      10,
+      9,
+      8
+     ],
+     "ratio_pct": 93
+    }
+   ],
+   "n": 5,
+   "above": 3,
+   "median_pct": 107
+  },
+  "neighbours": [
+   {
+    "cc": "SE",
+    "name": "Sweden",
+    "white_share_pct": 79,
+    "leader": "Björkliden",
+    "leader_cm": 131,
+    "next_7_days_max_cm": 17
+   },
+   {
+    "cc": "NO",
+    "name": "Norway",
+    "white_share_pct": 89,
+    "leader": "Riksgränsen",
+    "leader_cm": 171,
+    "next_7_days_max_cm": 39
+   }
+  ],
+  "glacier": false,
+  "story": {
+   "id": "neighbour",
+   "place": "cc:FI",
+   "score": 59,
+   "cc": "SE"
+  }
  },
  "media": [
   {
@@ -142,52 +265,83 @@
  ],
  "docs": {
   "en": {
-   "title": "Is there snow in Finland? Snow depth and new snow on 17 November 2026",
-   "description": "Finland snow today, 17 November: snow cover, new snow, snow depth by height, the next days and the best resorts.",
-   "lede": "In Finland, about 178,550 km² of high ground is white today, up 21,190 km² on yesterday. In other words, 59 % of the mapped high ground is white.",
+   "title": "Finland or Sweden? Where the snow is better on 17 November",
+   "description": "Finland or Sweden? Where the snow is better on 17 November. Snow cover, new snow, resorts and the days ahead in Finland on 17 November.",
+   "lede": "59 % of the mapped high ground is white in Finland, against 79 % in Sweden. The deepest resort in Finland has 13 cm; in Sweden it is Björkliden with 131 cm.",
    "sections": [
     {
-     "h": "Snow cover today",
+     "h": "Across the border",
      "p": [
-      "Even the lowest ground is mostly white. Compared with 52,200 km² seven days ago, that is 126,350 km² more."
+      "For a trip near the border this decides the direction: the snow is not where the map of borders would suggest, it is where the last storm went.",
+      "Snow covers roughly 178,550 km² in Finland on 17 November, up 21,190 km² on yesterday. In other words, 59 % of the mapped high ground is white."
      ]
     },
     {
-     "h": "The latest snowfall",
+     "h": "The neighbours today",
      "p": [
-      "Three-day totals peak at 10 cm, around the Kainuu hills and the Ruka fells.",
-      "The last 24 hours alone brought up to 6 cm.",
-      "About 69,510 km² received at least 5 cm."
+      "For comparison, the neighbours on the same day: Sweden: 79 % white, deepest Björkliden with 131 cm, up to 17 cm in the week ahead; Norway: 89 % white, deepest Riksgränsen with 171 cm, up to 39 cm in the week ahead."
      ]
     },
     {
-     "h": "Skiing conditions",
-     "p": [
-      "The new snow freshens the upper slopes; lower down it may already be heavy or wet.",
-      "With more snow in the forecast, the next days should improve things further."
-     ]
-    },
-    {
-     "h": "Snow depth by height",
-     "p": [
-      "Snow depth on the ground, height by height: between 0 and 500 m, 4 cm on average, 59 % covered; between 500 and 1,000 m, 13 cm on average, 99 % covered; between 1,000 and 1,500 m, 38 cm on average, 100 % covered."
-     ]
-    },
-    {
-     "h": "The resorts with the most snow",
+     "h": "Best resorts right now",
      "p": [
       "At the top of the list, Kallin reports 25 cm.",
-      "Then come Salla (20 cm), Rukatunturi (19 cm), Pyhä (18 cm) and Suomutunturi (17 cm).",
+      "Next on the list: Salla (20 cm), Rukatunturi (19 cm), Pyhä (18 cm) and Suomutunturi (17 cm).",
       "Kallin picked up 6 cm in the last three days and could add 10 cm by Friday 20 November.",
       "Salla picked up 10 cm in the last three days and could add 7 cm by Friday 20 November.",
-      "28 of the 67 resorts we follow in Finland have snow on their upper slopes."
+      "Snow lies on the upper slopes of 28 out of 67 resorts in Finland.",
+      "The rest of the shortlist: Rukatunturi: 19 cm on top, 10 cm in three days, 7 cm expected; Pyhä: 18 cm on top, 6 cm in three days, 11 cm expected; Suomutunturi: 17 cm on top, 12 cm in three days, 7 cm expected."
      ]
     },
     {
      "h": "Snow on the way?",
      "p": [
-      "Over the next three days up to 11 cm is expected, and up to 15 cm over the week.",
+      "Expect up to 11 cm on the snowiest slopes by the third day; the seven-day total reaches 15 cm.",
       "Wednesday 18 November stands out, with up to 8 cm in a day."
+     ]
+    },
+    {
+     "h": "How deep it is, height by height",
+     "p": [
+      "Snow depth on the ground, height by height: 0-500 m: on average 4 cm (59 % of the ground white); 500-1,000 m: on average 13 cm (99 % of the ground white); 1,000-1,500 m: on average 38 cm (100 % of the ground white)."
+     ]
+    },
+    {
+     "h": "How much of the country is white",
+     "p": [
+      "Compared with 52,200 km² seven days ago, that is 126,350 km² more. Even the lowest ground is mostly white."
+     ]
+    },
+    {
+     "h": "Where the fresh snow fell",
+     "p": [
+      "Three-day totals peak at 10 cm, around the Kainuu hills and the Ruka fells.",
+      "In the past day, up to 6 cm was added.",
+      "At least 5 cm fell over some 69,510 km²."
+     ]
+    },
+    {
+     "h": "Compared with past winters",
+     "p": [
+      "Here is how the deepest resorts compare with their usual 17 November: Kallin: 13 cm at about 40 m, against 4 cm in a normal year; Salla: 19 cm at about 356 m, against 17 cm in a normal year; Rukatunturi: 16 cm at about 390 m, against 15 cm in a normal year; Pyhä: 13 cm at about 285 m, against 16 cm in a normal year.",
+      "3 of these 4 resorts are above their usual depth for the date.",
+      "These depths are for one height on each mountain, below the top, so they read lower than the upper-slope numbers further down.",
+      "In past winters the best snow at Kallin usually came early March / mid-March."
+     ]
+    },
+    {
+     "h": "Planning a day on the snow",
+     "p": [
+      "Above 500 m the ground is almost fully white (99 % covered), so runs up there have a continuous base.",
+      "Between 0 m and 500 m the cover is patchy, about 59 % white: expect grass and stones between the snow.",
+      "If you can choose the day, go after Wednesday 18 November: the fresh snow then has time to settle and the roads to be cleared."
+     ]
+    },
+    {
+     "h": "What it means on the slopes",
+     "p": [
+      "The new snow freshens the upper slopes; lower down it may already be heavy or wet.",
+      "With more snow in the forecast, the next days should improve things further."
      ]
     }
    ],
@@ -202,28 +356,14 @@
    }
   },
   "fi": {
-   "title": "Lunta Suomessa tänään: lumensyvyys ja uusi lumi, 17. marraskuuta 2026",
+   "title": "Paljonko lunta on Suomessa? Lumipeite ja ennuste, 17. marraskuuta 2026",
    "description": "Lunta Suomessa 17. marraskuuta: lumipeite, uusi lumi, lumensyvyys korkeuden mukaan, tulevat päivät ja parhaat keskukset.",
-   "lede": "Lumipeite Suomessa kattaa noin 178 550 km² (tiistai 17. marraskuuta). Se on 21 190 km² enemmän kuin eilen. Se on 59 % seuraamastamme alueesta.",
+   "lede": "Suomessa lumen alla on tänään noin 178 550 km² (tiistai 17. marraskuuta). Se on 21 190 km² enemmän kuin eilen.",
    "sections": [
     {
      "h": "Lumipeite tänään",
      "p": [
-      "Lumi ulottuu alavimpiin maihin ja rannikolle asti. Seitsemän päivän takaiseen 52 200 km² verrattuna kasvua on 126 350 km²."
-     ]
-    },
-    {
-     "h": "Missä satoi uutta lunta",
-     "p": [
-      "Kolmen päivän summat yltävät lukemaan 10 cm. Eniten: Kainuun vaarat ja Rukan tunturit.",
-      "Pelkästään viimeisen vuorokauden aikana satoi enintään 6 cm.",
-      "Vähintään 5 cm uutta lunta peittää noin 69 510 km²."
-     ]
-    },
-    {
-     "h": "Mitä se tarkoittaa rinteessä",
-     "p": [
-      "Uusi lumi pohjan päällä antaa pehmeitä käännöksiä ylhäällä; alempana on vielä laikukasta."
+      "Viikko sitten luku oli 52 200 km², joten lumipeite on kasvanut 126 350 km². Lumi ulottuu alavimpiin maihin ja rannikolle asti."
      ]
     },
     {
@@ -233,9 +373,22 @@
      ]
     },
     {
+     "h": "Mitä se tarkoittaa rinteessä",
+     "p": [
+      "Uusi lumi pohjan päällä antaa pehmeitä käännöksiä ylhäällä; alempana on vielä laikukasta."
+     ]
+    },
+    {
+     "h": "Missä satoi uutta lunta",
+     "p": [
+      "Kolmen päivän summat yltävät lukemaan 10 cm. Eniten: Kainuun vaarat ja Rukan tunturit.",
+      "Pelkästään viimeisen vuorokauden aikana satoi enintään 6 cm."
+     ]
+    },
+    {
      "h": "Parhaat hiihtokeskukset nyt",
      "p": [
-      "Kärjessä: Kallin, 25 cm ylärinteillä.",
+      "Eniten lunta ylärinteillä: Kallin, 25 cm.",
       "Hiihtokeskuksia, joiden ylärinteillä on lunta: 28/67.",
       "Seuraavina: Salla (20 cm), Rukatunturi (19 cm), Pyhä (18 cm) ja Suomutunturi (17 cm).",
       "Kallin: 6 cm uutta lunta kolmessa päivässä ja vielä enintään 10 cm ennen päivää perjantai, 20. marraskuuta."
@@ -244,14 +397,13 @@
     {
      "h": "Tulevat päivät",
      "p": [
-      "Seuraavien kolmen päivän aikana odotetaan enintään 11 cm ja koko viikolla enintään 15 cm.",
+      "Uuden lumen ennuste: enintään 11 cm kolmessa päivässä ja enintään 15 cm seitsemässä päivässä.",
       "Lumisin päivä: keskiviikko, 18. marraskuuta, enintään 8 cm."
      ]
     }
    ],
    "advice": [
-    "Lue paikallinen lumivyöryennuste ennen rinteiden ulkopuolelle lähtöä.",
-    "Tarkista ennen lähtöä, että hissit ovat käynnissä."
+    "Lue paikallinen lumivyöryennuste ennen rinteiden ulkopuolelle lähtöä."
    ],
    "captions": {
     "new": "Lumensyvyys Suomessa, 17. marraskuuta",
@@ -263,16 +415,16 @@
   "en": {
    "writer": "template",
    "voice": "sat",
-   "rewrite": 1
+   "rewrite": "requality"
   },
   "fi": {
    "writer": "template",
    "voice": "sat",
-   "rewrite": 1
+   "rewrite": "requality"
   }
  },
- "words_en": 262,
- "indexable": false,
+ "words_en": 631,
+ "indexable": true,
  "main": {
   "slug": "kallin",
   "name": "Kallin",
@@ -329,48 +481,70 @@
   }
  ],
  "table": {
-  "kind": "resorts",
+  "kind": "story",
+  "head": {
+   "en": [
+    "Country",
+    "White",
+    "Deepest resort",
+    "Next 7 days"
+   ],
+   "fr": [
+    "Pays",
+    "Blanc",
+    "Station la plus enneigée",
+    "7 prochains jours"
+   ],
+   "de": [
+    "Land",
+    "Weiß",
+    "Schneereichstes Skigebiet",
+    "Nächste 7 Tage"
+   ]
+  },
   "rows": [
-   {
-    "slug": "kallin",
-    "name": "Kallin",
-    "depth": 25,
-    "new72": 6,
-    "next": 10,
-    "top_m": 65
-   },
-   {
-    "slug": "salla_ski_resort",
-    "name": "Salla",
-    "depth": 20,
-    "new72": 10,
-    "next": 7,
-    "top_m": 462
-   },
-   {
-    "slug": "rukatunturi_ruka",
-    "name": "Rukatunturi",
-    "depth": 19,
-    "new72": 10,
-    "next": 7,
-    "top_m": 494
-   },
-   {
-    "slug": "pyha_ski_resort",
-    "name": "Pyhä",
-    "depth": 18,
-    "new72": 6,
-    "next": 11,
-    "top_m": 375
-   },
-   {
-    "slug": "suomutunturi",
-    "name": "Suomutunturi",
-    "depth": 17,
-    "new72": 12,
-    "next": 7,
-    "top_m": 400
-   }
+   [
+    {
+     "cc": "FI"
+    },
+    {
+     "pct": 59
+    },
+    {
+     "t": "Kallin"
+    },
+    {
+     "cm": 15
+    }
+   ],
+   [
+    {
+     "cc": "SE"
+    },
+    {
+     "pct": 79
+    },
+    {
+     "t": "Björkliden"
+    },
+    {
+     "cm": 17
+    }
+   ],
+   [
+    {
+     "cc": "NO"
+    },
+    {
+     "pct": 89
+    },
+    {
+     "t": "Riksgränsen"
+    },
+    {
+     "cm": 39
+    }
+   ]
   ]
  },
  "bulletins": [],
@@ -394,21 +568,23 @@
   "with": "finland-snow-report-16-november-2026"
  },
  "publish_utc": "2026-11-17T10:09:20Z",
- "cover": {
+ "cover": {},
+ "rewrite": {
   "v": 1,
-  "style": "hero",
-  "files": {
-   "en": [
-    "blog/media/2026/11/finland-snow-report-17-november-2026/cover-en.webp",
-    "blog/media/2026/11/finland-snow-report-17-november-2026/cover-en_t.webp"
-   ],
-   "fi": [
-    "blog/media/2026/11/finland-snow-report-17-november-2026/cover-fi.webp",
-    "blog/media/2026/11/finland-snow-report-17-november-2026/cover-fi_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "neighbour",
+  "llm": false,
+  "usd": 0.0
  },
- "noindex_why": "cadence: news quota 1 of 2026-11-17 used"
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 631,
+  "overlap": 28.0,
+  "with": "france-snow-report-16-november-2026",
+  "langs_off": [],
+  "score": 114.5,
+  "intent": "cc:FI|neighbour",
+  "guide": false,
+  "v": 1
+ }
 }

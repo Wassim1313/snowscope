@@ -331,7 +331,45 @@
      "2026-11-11"
     ]
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Boí Taüll",
+     "slug": "boi_taull",
+     "now_cm": 1,
+     "usual_cm": 2,
+     "high_cm": 15,
+     "week_ago_cm": 0,
+     "height_m": 2393,
+     "best_weeks": [
+      6,
+      7,
+      5
+     ],
+     "ratio_pct": null
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Boí Taüll",
+   "rain_day": "2026-11-09",
+   "freezing_m": 3430,
+   "lift_top_m": 2747,
+   "next_cm": 3,
+   "second": "GrandValira",
+   "second_cm": 15,
+   "depth_cm": 5
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:boi_taull",
+   "score": 34,
+   "resort": "Boí Taüll"
+  }
  },
  "media": [
   {
@@ -356,6 +394,17 @@
       "At Masella (base 1,615 m, top 2,509 m) the snow line reaches about 3,200 m on 9 November, above the top: if it rains, it rains everywhere.",
       "Espace Cambre d'Aze (base 1,631 m, top 2,377 m): on 9 November the snow line climbs to about 3,300 m, higher than the top, so any rain or wet snow would hit the whole mountain.",
       "At Astun (base 1,659 m, top 2,272 m) the snow line reaches about 3,200 m on 9 November, above the top: if it rains, it rains everywhere."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Monday 9 November the freezing level climbs to about 3,430 m, above the top of the lifts at 2,747 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 2,393 m, Boí Taüll has 1 cm today; a normal 8 November has 2 cm there.",
+      "Only one winter in ten has more than 15 cm on this date.",
+      "A week ago the same spot had 0 cm.",
+      "In past winters the best snow at Boí Taüll usually came early February / mid-February."
      ]
     },
     {
@@ -407,6 +456,17 @@
      ]
     },
     {
+     "h": "¿Lluvia hasta arriba?",
+     "p": [
+      "El lunes 9 de noviembre la isoterma de 0 °C sube hacia 3430 m, por encima del remonte más alto a 2747 m: puede llover hasta arriba.",
+      "La lluvia sobre nieve nueva la hace pesada y, tras una noche fría, helada: los días siguientes son mejores para pistas pisadas que para nieve polvo.",
+      "A unos 2393 m, Boí Taüll tiene hoy 1 cm; un 8 de noviembre normal tiene 2 cm.",
+      "Solo un invierno de cada diez supera 15 cm en esta fecha.",
+      "Hace una semana, el mismo punto tenía 0 cm.",
+      "En inviernos pasados la mejor nieve en Boí Taüll solía llegar a principios de febrero / mediados de febrero."
+     ]
+    },
+    {
      "h": "¿Lluvia sobre la nieve?",
      "p": [
       "Boí Taüll tiene unos 5 cm arriba, pero el 9 de noviembre, 10 de noviembre y 11 de noviembre la cota de nieve queda por encima de media montaña: la lluvia vuelve esa nieve pesada y húmeda, y helada cuando se vuelve a congelar.",
@@ -449,7 +509,7 @@
    "writer": "template"
   }
  },
- "words_en": 459,
+ "words_en": 681,
  "indexable": true,
  "main": {
   "slug": "boi_taull",
@@ -578,5 +638,39 @@
    "with_after": "pyrenees-freezing-level-snow-line-10-november-2026",
    "voice": "field"
   }
- ]
+ ],
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 681,
+  "overlap": 10.4,
+  "with": "pyrenees-where-to-ski-this-weekend-4-november-2026",
+  "langs_off": [],
+  "score": 89.6,
+  "intent": "resort:boi_taull|rain_risk",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "hero",
+  "files": {
+   "en": [
+    "blog/media/2026/11/pyrenees-freezing-level-snow-line-8-november-2026/cover-en.webp",
+    "blog/media/2026/11/pyrenees-freezing-level-snow-line-8-november-2026/cover-en_t.webp"
+   ],
+   "es": [
+    "blog/media/2026/11/pyrenees-freezing-level-snow-line-8-november-2026/cover-es.webp",
+    "blog/media/2026/11/pyrenees-freezing-level-snow-line-8-november-2026/cover-es_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

@@ -265,7 +265,51 @@
      "usual_cm_on_this_date": 0
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Jbel Hebri",
+     "slug": "jbel_hebri",
+     "now_cm": 0,
+     "usual_cm": 0,
+     "high_cm": 0,
+     "week_ago_cm": null,
+     "height_m": 2028,
+     "best_weeks": [
+      6,
+      7,
+      51
+     ],
+     "ratio_pct": null,
+     "deeper_than": 43,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Jbel Hebri",
+   "top_cm": 0,
+   "top_m": 2108,
+   "base_cm": 0,
+   "base_m": 1949,
+   "rain_day": "2026-11-15",
+   "freezing_m": 4120,
+   "lift_top_m": 2108,
+   "next_cm": 0,
+   "second": "Michlifen",
+   "second_cm": 0,
+   "depth_cm": 0
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:jbel_hebri",
+   "score": 10,
+   "resort": "Jbel Hebri"
+  }
  },
  "media": [
   {
@@ -289,6 +333,17 @@
      "p": [
       "Jbel Hebri: no snow seen on the slopes. Michlifen: bare slopes. Oukaïmeden: no snow seen on the slopes.",
       "Snow-covered area: 60 km² on 10 November, 40 km² today, 30 km² forecast for 15 November. The map is getting less white."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Sunday 15 November the freezing level climbs to about 4,120 m, above the top of the lifts at 2,108 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 2,028 m, Jbel Hebri has 0 cm today; a normal 12 November has 0 cm there.",
+      "That is more than in 43 of the 46 past winters on this date.",
+      "In past winters the best snow at Jbel Hebri usually came mid-December / early February.",
+      "Height by height at Jbel Hebri: 1,949 m 0 cm on the ground, 0 cm more in the next 7 days; 2,028 m 0 cm on the ground, 0 cm more in the next 7 days; 2,108 m 0 cm on the ground, 0 cm more in the next 7 days."
      ]
     },
     {
@@ -332,6 +387,17 @@
      "p": [
       "Jbel Hebri : aucune neige visible sur les pentes. Michlifen : pentes nues. Oukaïmeden : aucune neige visible sur les pentes.",
       "La zone blanche sur la carte est passée de 60 km² (10 novembre) à 40 km² aujourd'hui, et la prévision dit 30 km² le 15 novembre."
+     ]
+    },
+    {
+     "h": "De la pluie jusqu'en haut ?",
+     "p": [
+      "Le dimanche 15 novembre, l'isotherme 0 °C monte vers 4 120 m, au-dessus du sommet des remontées à 2 108 m : il peut pleuvoir jusqu'en haut.",
+      "La pluie sur la neige fraîche l'alourdit et, après une nuit froide, la rend glacée : les jours suivants conviennent mieux aux pistes damées qu'à la poudreuse.",
+      "Vers 2 028 m, Jbel Hebri a 0 cm aujourd'hui ; un 12 novembre normal y compte 0 cm.",
+      "C'est plus que lors de 43 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Jbel Hebri arrivait d'habitude mi-décembre / début février.",
+      "Altitude par altitude à Jbel Hebri : 1 949 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours; 2 028 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours; 2 108 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours."
      ]
     },
     {
@@ -423,8 +489,8 @@
    "voice": "sat"
   }
  },
- "words_en": 213,
- "indexable": true,
+ "words_en": 450,
+ "indexable": false,
  "main": {
   "slug": "jbel_hebri",
   "name": "Jbel Hebri",
@@ -510,5 +576,26 @@
   "max": 0.201,
   "with": "atlas-morocco-atlas-snow-check-11-november-2026"
  },
- "publish_utc": "2026-11-12T11:59:56Z"
+ "publish_utc": "2026-11-12T11:59:56Z",
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 450 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 450 < 600"
+  ],
+  "words": 450,
+  "overlap": 14.7,
+  "with": "pyrenees-where-to-ski-this-weekend-4-november-2026",
+  "langs_off": [],
+  "score": 51.3,
+  "intent": "resort:jbel_hebri|rain_risk",
+  "guide": false,
+  "v": 1
+ }
 }

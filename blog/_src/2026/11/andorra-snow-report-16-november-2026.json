@@ -103,6 +103,77 @@
    ],
    "from_day": 8,
    "to_day": 14
+  },
+  "trend": [
+   {
+    "date": "2026-11-16",
+    "snow_km2": 10,
+    "new72": 3,
+    "leader": "Pal-Arinsal",
+    "leader_cm": 5
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Pal-Arinsal",
+     "slug": "pal_arinsal",
+     "now_cm": 0,
+     "usual_cm": 3,
+     "high_cm": 29,
+     "week_ago_cm": 0,
+     "height_m": 2024,
+     "best_weeks": [
+      5,
+      7,
+      6
+     ],
+     "ratio_pct": 0
+    },
+    {
+     "name": "Ordino-Arcalis",
+     "slug": "ordino_arcalis",
+     "now_cm": 0,
+     "usual_cm": 4,
+     "high_cm": 37,
+     "week_ago_cm": 1,
+     "height_m": 2284,
+     "best_weeks": [
+      10,
+      9,
+      7
+     ],
+     "ratio_pct": 0
+    }
+   ],
+   "n": 2,
+   "above": 0,
+   "median_pct": 0
+  },
+  "neighbours": [
+   {
+    "cc": "ES",
+    "name": "Spain",
+    "white_share_pct": 0,
+    "leader": "Aramón Cerler",
+    "leader_cm": 17,
+    "next_7_days_max_cm": 4
+   },
+   {
+    "cc": "FR",
+    "name": "France",
+    "white_share_pct": 11,
+    "leader": "Les Arcs",
+    "leader_cm": 94,
+    "next_7_days_max_cm": 105
+   }
+  ],
+  "glacier": false,
+  "story": {
+   "id": "neighbour",
+   "place": "cc:AD",
+   "score": 31.9,
+   "cc": "FR"
   }
  },
  "media": [
@@ -118,83 +189,105 @@
  ],
  "docs": {
   "en": {
-   "title": "Is there snow in Andorra? Snow depth and new snow on 16 November 2026",
-   "description": "Andorra snow today, 16 November: snow cover, new snow, snow depth by height, the next days and the best resorts.",
-   "lede": "In Andorra, about 10 km² of high ground is white today, little changed from yesterday. Roughly 2 % of the country's mapped mountains and hills are covered.",
+   "title": "Andorra vs France: 2 % white against 11 %",
+   "description": "Andorra vs France: 2 % white against 11 %. Snow cover, new snow, resorts and the days ahead in Andorra on 16 November.",
+   "lede": "2 % of the mapped high ground is white in Andorra, against 11 % in France. The deepest resort in Andorra has 0 cm; in France it is Les Arcs with 94 cm.",
    "sections": [
     {
-     "h": "Today's snow cover",
+     "h": "Across the border",
      "p": [
-      "No height band is mostly white yet. A week ago it was 90 km²: 80 km² has melted away since."
+      "For a trip near the border this decides the direction: the snow is not where the map of borders would suggest, it is where the last storm went.",
+      "The white area in Andorra stands at about 10 km² today, about the same as yesterday. That is 2 % of the high ground we map in Andorra."
      ]
     },
     {
-     "h": "Low, middle and high ground",
+     "h": "The neighbours today",
      "p": [
-      "Height makes the difference: 2,000-2,500 m: on average under 1 cm (1 % of the ground white); above 2,500 m: on average under 1 cm (9 % white)."
-     ]
-    },
-    {
-     "h": "New snow in the last three days",
-     "p": [
-      "Three-day totals peak at 3 cm, around the Andorran peaks."
-     ]
-    },
-    {
-     "h": "What it means on the slopes",
-     "p": [
-      "The snow is retreating uphill, so plan on the higher lifts and avoid the low valley runs."
-     ]
-    },
-    {
-     "h": "What is coming",
-     "p": [
-      "Snow is in the forecast: up to 5 cm by the end of the third day, up to 7 cm within seven days.",
-      "Thursday 19 November stands out, with up to 5 cm in a day.",
-      "Further out, days 8 to 14 show up to 21 cm on the snowiest slopes."
+      "For comparison, the neighbours on the same day: Spain: 0 % white, deepest Aramón Cerler with 17 cm, up to 4 cm in the week ahead; France: 11 % white, deepest Les Arcs with 94 cm, up to 105 cm in the week ahead."
      ]
     },
     {
      "h": "Shortlist for the weekend",
      "p": [
-      "At the top of the list, Pal-Arinsal reports 5 cm.",
-      "Next on the list: Ordino-Arcalis (5 cm).",
+      "Pal-Arinsal leads with 5 cm on its upper slopes.",
+      "Close behind: Ordino-Arcalis (5 cm).",
       "Pal-Arinsal picked up 5 cm in the last three days and could add 4 cm by Thursday 19 November.",
       "At Ordino-Arcalis: 4 cm of fresh snow over three days, 9 cm more expected by Thursday 19 November.",
-      "2 of the 4 resorts we follow in Andorra have snow on their upper slopes."
+      "Snow lies on the upper slopes of 2 out of 4 resorts in Andorra."
+     ]
+    },
+    {
+     "h": "Snow on the way?",
+     "p": [
+      "Snow is in the forecast: up to 5 cm by the end of the third day, up to 7 cm within seven days.",
+      "The snowiest day looks like Thursday 19 November, with up to 5 cm in the snowiest spots.",
+      "The second week adds up to 21 cm where it snows most."
+     ]
+    },
+    {
+     "h": "How deep it is, height by height",
+     "p": [
+      "By height, the picture looks like this: between 2,000 and 2,500 m, under 1 cm on average, 1 % covered; above 2,500 m: on average under 1 cm (9 % white)."
+     ]
+    },
+    {
+     "h": "How much of the country is white",
+     "p": [
+      "No height band is mostly white yet. Mild days have cost 80 km² since the 90 km² of a week ago."
+     ]
+    },
+    {
+     "h": "New snow in the last three days",
+     "p": [
+      "The Andorran peaks got the most fresh snow over three days, up to 3 cm."
+     ]
+    },
+    {
+     "h": "Compared with past winters",
+     "p": [
+      "Resort by resort, today against a normal 16 November: Pal-Arinsal: 0 cm at about 2,024 m, against 3 cm in a normal year; Ordino-Arcalis: 0 cm at about 2,284 m, against 4 cm in a normal year.",
+      "0 of these 2 resorts are above their usual depth for the date.",
+      "These depths are for one height on each mountain, below the top, so they read lower than the upper-slope numbers further down.",
+      "In past winters the best snow at Pal-Arinsal usually came early February / mid-February."
+     ]
+    },
+    {
+     "h": "Skiing conditions",
+     "p": [
+      "The snow is retreating uphill, so plan on the higher lifts and avoid the low valley runs."
      ]
     }
    ],
    "advice": [
-    "Roads to the higher resorts may need winter tyres or chains.",
-    "Snow above the tree line can be wind-packed: watch the ridges.",
-    "Check the resort's own lift status before you travel."
+    "Early-season snow is thin over rocks: ski the groomed runs first.",
+    "Morning snow is firm after a clear night: wait for the sun on south faces.",
+    "Roads to the higher resorts may need winter tyres or chains."
    ],
    "captions": {
     "map": "Snow depth in Andorra on 16 November"
    }
   },
   "ca": {
-   "title": "Estat de la neu a Andorra, 16 de novembre de 2026: estacions, neu nova i propers dies",
+   "title": "Quanta neu hi ha a Andorra? Mantell de neu i previsió, 16 de novembre de 2026",
    "description": "Neu a Andorra el 16 de novembre: mantell de neu, neu nova, gruix per altitud, propers dies i millors estacions.",
-   "lede": "Dilluns, 16 de novembre: la neu cobreix uns 10 km² de muntanya a Andorra. La superfície és gairebé la mateixa que ahir. És el 2 % del terreny de muntanya a Andorra que seguim.",
+   "lede": "Dilluns, 16 de novembre: la neu cobreix uns 10 km² de muntanya a Andorra. La superfície és gairebé la mateixa que ahir.",
    "sections": [
     {
      "h": "El mantell de neu avui",
      "p": [
-      "Fa set dies la superfície era de 90 km², 80 km² més que ara. Cap franja d'altitud és encara majoritàriament blanca."
-     ]
-    },
-    {
-     "h": "On ha caigut neu nova",
-     "p": [
-      "Els acumulats de tres dies arriben a 3 cm. El màxim: Pirineu andorrà."
+      "Cap franja d'altitud és encara majoritàriament blanca. Fa set dies la superfície era de 90 km², 80 km² més que ara."
      ]
     },
     {
      "h": "Gruix de neu per altitud",
      "p": [
-      "Gruix mitjà del mantell de neu per altitud: 2.000–2.500 m: de mitjana menys d'1 cm (1 % cobert); per sobre de 2.500 m: de mitjana menys d'1 cm (9 % cobert)."
+      "El gruix de neu depèn de l'altitud: 2.000–2.500 m: de mitjana menys d'1 cm (1 % cobert); per sobre de 2.500 m: de mitjana menys d'1 cm (9 % cobert)."
+     ]
+    },
+    {
+     "h": "On ha caigut neu nova",
+     "p": [
+      "En tres dies la neu nova més abundant ha caigut aquí: Pirineu andorrà (fins a 3 cm)."
      ]
     },
     {
@@ -204,20 +297,20 @@
      ]
     },
     {
-     "h": "Les millors estacions ara",
+     "h": "Els propers dies",
      "p": [
-      "Més neu a les pistes altes: Pal-Arinsal, 5 cm.",
-      "Estacions amb neu a les pistes altes: 2 de 4.",
-      "Segueixen: Ordino-Arcalis (5 cm).",
-      "Ordino-Arcalis: 4 cm de neu nova en tres dies i fins a 9 cm més abans del dijous, 19 de novembre."
+      "Previsió de neu nova: fins a 5 cm en tres dies i fins a 7 cm en set dies.",
+      "El dia més nevat: dijous, 19 de novembre, amb fins a 5 cm.",
+      "Més endavant, els dies 8–14, els vessants més nevats poden sumar fins a 21 cm."
      ]
     },
     {
-     "h": "Els propers dies",
+     "h": "Les millors estacions ara",
      "p": [
-      "Els propers tres dies s'esperen fins a 5 cm, i en tota la setmana fins a 7 cm.",
-      "El dia més nevat: dijous, 19 de novembre, amb fins a 5 cm.",
-      "Més endavant, els dies 8–14, els vessants més nevats poden sumar fins a 21 cm."
+      "Al capdavant hi ha Pal-Arinsal: 5 cm a la part alta de les pistes.",
+      "Estacions amb neu a les pistes altes: 2 de 4.",
+      "Segueixen: Ordino-Arcalis (5 cm).",
+      "Pal-Arinsal: 5 cm de neu nova en tres dies i fins a 4 cm més abans del dijous, 19 de novembre."
      ]
     }
    ],
@@ -229,26 +322,26 @@
    }
   },
   "es": {
-   "title": "Estado de la nieve en Andorra, 16 de noviembre de 2026: estaciones, nieve nueva y próximos días",
+   "title": "¿Cuánta nieve hay en Andorra? Manto de nieve y previsión, 16 de noviembre de 2026",
    "description": "Nieve en Andorra el 16 de noviembre: manto de nieve, nieve nueva, espesor por altitud, próximos días y mejores estaciones.",
-   "lede": "Lunes, 16 de noviembre: la nieve cubre unos 10 km² de montaña en Andorra. La superficie es casi la misma que ayer. Es el 2 % del terreno de montaña en Andorra que seguimos.",
+   "lede": "Lunes, 16 de noviembre: la nieve cubre unos 10 km² de montaña en Andorra. La superficie es casi la misma que ayer.",
    "sections": [
     {
      "h": "El manto de nieve hoy",
      "p": [
-      "Hace siete días la superficie era de 90 km², 80 km² más que ahora. Ninguna franja de altitud está aún mayoritariamente blanca."
-     ]
-    },
-    {
-     "h": "Dónde cayó la nieve nueva",
-     "p": [
-      "Los acumulados de tres días llegan a 3 cm. Lo máximo: Pirineu andorrà."
+      "Ninguna franja de altitud está aún mayoritariamente blanca. Hace siete días la superficie era de 90 km², 80 km² más que ahora."
      ]
     },
     {
      "h": "Espesor de la nieve por altitud",
      "p": [
-      "Espesor medio del manto de nieve por altitud: 2000–2500 m: de media menos de 1 cm (1 % cubierto); por encima de 2500 m: de media menos de 1 cm (9 % cubierto)."
+      "El espesor de la nieve depende de la altitud: 2000–2500 m: de media menos de 1 cm (1 % cubierto); por encima de 2500 m: de media menos de 1 cm (9 % cubierto)."
+     ]
+    },
+    {
+     "h": "Dónde cayó la nieve nueva",
+     "p": [
+      "En tres días la mayor parte de la nieve nueva cayó aquí: Pirineu andorrà (hasta 3 cm)."
      ]
     },
     {
@@ -258,20 +351,20 @@
      ]
     },
     {
-     "h": "Las mejores estaciones ahora",
+     "h": "Los próximos días",
      "p": [
-      "Más nieve en las pistas altas: Pal-Arinsal, 5 cm.",
-      "Estaciones con nieve en las pistas altas: 2 de 4.",
-      "Le siguen: Ordino-Arcalis (5 cm).",
-      "Ordino-Arcalis: 4 cm de nieve nueva en tres días y hasta 9 cm más antes del jueves, 19 de noviembre."
+      "Previsión de nieve nueva: hasta 5 cm en tres días y hasta 7 cm en siete días.",
+      "El día más nevado: jueves, 19 de noviembre, con hasta 5 cm.",
+      "Más adelante, en los días 8–14, las laderas más nevadas pueden sumar hasta 21 cm."
      ]
     },
     {
-     "h": "Los próximos días",
+     "h": "Las mejores estaciones ahora",
      "p": [
-      "En los próximos tres días se esperan hasta 5 cm, y en toda la semana hasta 7 cm.",
-      "El día más nevado: jueves, 19 de noviembre, con hasta 5 cm.",
-      "Más adelante, en los días 8–14, las laderas más nevadas pueden sumar hasta 21 cm."
+      "En cabeza está Pal-Arinsal: 5 cm en la parte alta de las pistas.",
+      "Estaciones con nieve en las pistas altas: 2 de 4.",
+      "Le siguen: Ordino-Arcalis (5 cm).",
+      "Pal-Arinsal: 5 cm de nieve nueva en tres días y hasta 4 cm más antes del jueves, 19 de noviembre."
      ]
     }
    ],
@@ -286,18 +379,21 @@
  "writers": {
   "en": {
    "writer": "template",
-   "voice": "field"
+   "voice": "sat",
+   "rewrite": "requality"
   },
   "ca": {
    "writer": "template",
-   "voice": "field"
+   "voice": "sat",
+   "rewrite": "requality"
   },
   "es": {
    "writer": "template",
-   "voice": "field"
+   "voice": "sat",
+   "rewrite": "requality"
   }
  },
- "words_en": 222,
+ "words_en": 464,
  "indexable": false,
  "main": {
   "slug": "pal_arinsal",
@@ -328,24 +424,70 @@
   }
  ],
  "table": {
-  "kind": "resorts",
+  "kind": "story",
+  "head": {
+   "en": [
+    "Country",
+    "White",
+    "Deepest resort",
+    "Next 7 days"
+   ],
+   "fr": [
+    "Pays",
+    "Blanc",
+    "Station la plus enneigée",
+    "7 prochains jours"
+   ],
+   "de": [
+    "Land",
+    "Weiß",
+    "Schneereichstes Skigebiet",
+    "Nächste 7 Tage"
+   ]
+  },
   "rows": [
-   {
-    "slug": "pal_arinsal",
-    "name": "Pal-Arinsal",
-    "depth": 5,
-    "new72": 5,
-    "next": 4,
-    "top_m": 2494
-   },
-   {
-    "slug": "ordino_arcalis",
-    "name": "Ordino-Arcalis",
-    "depth": 5,
-    "new72": 4,
-    "next": 9,
-    "top_m": 2626
-   }
+   [
+    {
+     "cc": "AD"
+    },
+    {
+     "pct": 2
+    },
+    {
+     "t": "Pal-Arinsal"
+    },
+    {
+     "cm": 7
+    }
+   ],
+   [
+    {
+     "cc": "ES"
+    },
+    {
+     "pct": 0
+    },
+    {
+     "t": "Aramón Cerler"
+    },
+    {
+     "cm": 4
+    }
+   ],
+   [
+    {
+     "cc": "FR"
+    },
+    {
+     "pct": 11
+    },
+    {
+     "t": "Les Arcs"
+    },
+    {
+     "cm": 105
+    }
+   ]
   ]
  },
  "bulletins": [],
@@ -368,24 +510,26 @@
   "with": "bosnia-and-herzegovina-snow-report-16-november-2026"
  },
  "publish_utc": "2026-11-16T20:42:46Z",
- "cover": {
+ "cover": {},
+ "rewrite": {
   "v": 1,
-  "style": "hero",
-  "files": {
-   "en": [
-    "blog/media/2026/11/andorra-snow-report-16-november-2026/cover-en.webp",
-    "blog/media/2026/11/andorra-snow-report-16-november-2026/cover-en_t.webp"
-   ],
-   "ca": [
-    "blog/media/2026/11/andorra-snow-report-16-november-2026/cover-ca.webp",
-    "blog/media/2026/11/andorra-snow-report-16-november-2026/cover-ca_t.webp"
-   ],
-   "es": [
-    "blog/media/2026/11/andorra-snow-report-16-november-2026/cover-es.webp",
-    "blog/media/2026/11/andorra-snow-report-16-november-2026/cover-es_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "neighbour",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 464 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 464 < 600"
+  ],
+  "words": 464,
+  "overlap": 0.8,
+  "with": "alps-2-week-snow-forecast-maps-12-november-2026",
+  "langs_off": [],
+  "score": 76.4,
+  "intent": "cc:AD|neighbour",
+  "guide": false,
+  "v": 1
  }
 }

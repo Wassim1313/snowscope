@@ -396,7 +396,51 @@
      "seen_on": "2026-11-08"
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Wolf Creek",
+     "slug": "wolf_creek_ski_area",
+     "now_cm": 66,
+     "usual_cm": 20,
+     "high_cm": 102,
+     "week_ago_cm": null,
+     "height_m": 3356,
+     "best_weeks": [
+      53,
+      12,
+      11
+     ],
+     "ratio_pct": 330,
+     "deeper_than": 32,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Wolf Creek",
+   "top_cm": 47,
+   "top_m": 3585,
+   "base_cm": 8,
+   "base_m": 3128,
+   "rain_day": "2026-11-11",
+   "freezing_m": 4040,
+   "lift_top_m": 3585,
+   "next_cm": 8,
+   "second": "Telluride",
+   "second_cm": 86,
+   "depth_cm": 87
+  },
+  "story": {
+   "id": "height_gap",
+   "place": "resort:wolf_creek_ski_area",
+   "score": 34,
+   "resort": "Wolf Creek"
+  }
  },
  "media": [
   {
@@ -421,6 +465,17 @@
       "Top of this list: Wolf Creek, about 34 in (87 cm) up high. Then Telluride 34 in (86 cm) and Silverton Mountain 23 in (58 cm).",
       "Snow-covered ground in the US West: 51,942 sq mi (134,530 km²). Resorts with snow: 123 of 195.",
       "How sure are we? Resort values are model estimates for the upper slopes; stations are measurements, each at one point on the date shown."
+     ]
+    },
+    {
+     "h": "Top and bottom are two different worlds",
+     "p": [
+      "The top of Wolf Creek has about 19 in (47 cm) at 11,762 ft (3,585 m), the bottom about 3 in (8 cm) at 10,262 ft (3,128 m).",
+      "Ski the upper lifts and plan to ride down by lift if the lower runs are thin.",
+      "At about 11,010 ft (3,356 m), Wolf Creek has 26 in (66 cm) today; a normal 11 November has 8 in (20 cm) there.",
+      "That is more than in 32 of the 46 past winters on this date.",
+      "In past winters the best snow at Wolf Creek usually came early January / mid-March.",
+      "Height by height at Wolf Creek: 10,262 ft (3,128 m) 3 in (8 cm) on the ground, 5 in (12 cm) more in the next 7 days; 11,010 ft (3,356 m) 15 in (37 cm) on the ground, 5 in (13 cm) more in the next 7 days; 11,762 ft (3,585 m) 19 in (47 cm) on the ground, 5 in (13 cm) more in the next 7 days."
      ]
     },
     {
@@ -458,8 +513,8 @@
    "voice": "sat"
   }
  },
- "words_en": 312,
- "indexable": true,
+ "words_en": 579,
+ "indexable": false,
  "main": {
   "slug": "wolf_creek_ski_area",
   "name": "Wolf Creek",
@@ -584,5 +639,26 @@
   "max": 0.118,
   "with": "us-west-where-to-ski-this-weekend-11-november-2026"
  },
- "publish_utc": "2026-11-11T18:44:22Z"
+ "publish_utc": "2026-11-11T18:44:22Z",
+ "rewrite": {
+  "v": 1,
+  "story": "height_gap",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 579 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 579 < 600"
+  ],
+  "words": 579,
+  "overlap": 17.2,
+  "with": "us-west-wolf-creek-snow-depth-today-10-november-2026",
+  "langs_off": [],
+  "score": 82.8,
+  "intent": "resort:wolf_creek_ski_area|height_gap",
+  "guide": false,
+  "v": 1
+ }
 }

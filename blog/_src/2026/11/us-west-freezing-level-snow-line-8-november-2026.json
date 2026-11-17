@@ -359,7 +359,45 @@
      "2026-11-11"
     ]
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Aspen Snowmass",
+     "slug": "aspen_snowmass",
+     "now_cm": 5,
+     "usual_cm": 22,
+     "high_cm": 53,
+     "week_ago_cm": 1,
+     "height_m": 3144,
+     "best_weeks": [
+      13,
+      12,
+      14
+     ],
+     "ratio_pct": 23
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Aspen Snowmass",
+   "rain_day": "2026-11-09",
+   "freezing_m": 4220,
+   "lift_top_m": 3815,
+   "next_cm": 0,
+   "second": "Taos Ski Valley",
+   "second_cm": 39,
+   "depth_cm": 43
+  },
+  "story": {
+   "id": "vs_normal_low",
+   "place": "resort:aspen_snowmass",
+   "score": 56,
+   "resort": "Aspen Snowmass"
+  }
  },
  "media": [
   {
@@ -398,6 +436,16 @@
       "Rain-on-snow risk at Taos Ski Valley: about 15 in (39 cm) on the upper slopes and a snow line above mid-mountain on 10 November and 11 November; the snow would get heavy and wet, then icy as it freezes again.",
       "Crested Butte holds about 17 in (42 cm) on its upper slopes, and on 10 November and 11 November the snow line sits above mid-mountain: rain on that snow adds water, makes it heavy and can speed up the melt, then it turns icy when it freezes.",
       "105 mm of precipitation is forecast at Mt. Baker (5,052 ft (1,540 m)); while it falls, the snow line sits near 5,774 ft (1,760 m)."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 10,315 ft (3,144 m), Aspen Snowmass has 2 in (5 cm) today; a normal 8 November has 9 in (22 cm) there.",
+      "Only one winter in ten has more than 21 in (53 cm) on this date.",
+      "A week ago the same spot had 0 in (1 cm).",
+      "In past winters the best snow at Aspen Snowmass usually came late March / early April.",
+      "A slow start is common and says little about January; for now the highest lifts and the runs with snowmaking are the safe choice."
      ]
     },
     {
@@ -440,7 +488,7 @@
    "writer": "template"
   }
  },
- "words_en": 514,
+ "words_en": 787,
  "indexable": true,
  "main": {
   "slug": "aspen_snowmass",
@@ -569,5 +617,35 @@
    "with_after": "pyrenees-freezing-level-snow-line-8-november-2026",
    "voice": "hydro"
   }
- ]
+ ],
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_low",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 787,
+  "overlap": 10.7,
+  "with": "pyrenees-freezing-level-snow-line-8-november-2026",
+  "langs_off": [],
+  "score": 116.9,
+  "intent": "resort:aspen_snowmass|vs_normal_low",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "ranked",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-freezing-level-snow-line-8-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-freezing-level-snow-line-8-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

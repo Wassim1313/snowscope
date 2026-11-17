@@ -235,7 +235,51 @@
      "usual_cm_on_this_date": 10
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Tweedsmuir Ski Club",
+     "slug": "tweedsmuir_ski_club",
+     "now_cm": 65,
+     "usual_cm": 53,
+     "high_cm": 84,
+     "week_ago_cm": null,
+     "height_m": 1619,
+     "best_weeks": [
+      10,
+      8,
+      11
+     ],
+     "ratio_pct": 123,
+     "deeper_than": 33,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Tweedsmuir Ski Club",
+   "top_cm": 61,
+   "top_m": 1650,
+   "base_cm": 58,
+   "base_m": 1588,
+   "rain_day": "2026-11-13",
+   "freezing_m": 1870,
+   "lift_top_m": 1650,
+   "next_cm": 15,
+   "second": "Whistler Blackcomb",
+   "second_cm": 74,
+   "depth_cm": 72
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:tweedsmuir_ski_club",
+   "score": 58,
+   "resort": "Tweedsmuir Ski Club"
+  }
  },
  "media": [
   {
@@ -279,6 +323,18 @@
      "p": [
       "Across the region, Whistler Blackcomb and Mount Cain Alpine Park gained 29 cm and 14 cm in the last 72 hours.",
       "Today 245,310 km² of ground in Western Canada is covered by snow, our model says, and 39 of 57 resorts have snow on their upper slopes."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Friday 13 November the freezing level climbs to about 1,870 m, above the top of the lifts at 1,650 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 1,619 m, Tweedsmuir Ski Club has 65 cm today; a normal 11 November has 53 cm there.",
+      "That is more than in 33 of the 46 past winters on this date.",
+      "In past winters the best snow at Tweedsmuir Ski Club usually came late February / early March.",
+      "Day by day at Tweedsmuir Ski Club: Wednesday 11 November 35 cm; Thursday 12 November 12 cm; Friday 13 November 3 cm.",
+      "Height by height at Tweedsmuir Ski Club: 1,588 m 58 cm on the ground, 32 cm more in the next 7 days; 1,619 m 59 cm on the ground, 33 cm more in the next 7 days; 1,650 m 61 cm on the ground, 34 cm more in the next 7 days."
      ]
     },
     {
@@ -328,8 +384,8 @@
    "voice": "hydro"
   }
  },
- "words_en": 288,
- "indexable": true,
+ "words_en": 568,
+ "indexable": false,
  "main": {
   "slug": "tweedsmuir_ski_club",
   "name": "Tweedsmuir Ski Club",
@@ -421,5 +477,27 @@
   "max": 0.178,
   "with": "western-canada-fresh-snow-powder-alert-6-november-2026"
  },
- "publish_utc": "2026-11-11T18:44:22Z"
+ "publish_utc": "2026-11-11T18:44:22Z",
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 568 < 600; powder alert of a small resort",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 568 < 600",
+   "powder alert of a small resort"
+  ],
+  "words": 568,
+  "overlap": 16.3,
+  "with": "pyrenees-where-to-ski-this-weekend-4-november-2026",
+  "langs_off": [],
+  "score": 110.8,
+  "intent": "resort:tweedsmuir_ski_club|rain_risk",
+  "guide": false,
+  "v": 1
+ }
 }

@@ -252,7 +252,43 @@
    }
   ],
   "focus_index": 2,
-  "title_focus_resort": "Manning Park Resort"
+  "title_focus_resort": "Manning Park Resort",
+  "normal": {
+   "rows": [
+    {
+     "name": "Manning Park Resort",
+     "slug": "manning_park_resort",
+     "now_cm": 8,
+     "usual_cm": 37,
+     "high_cm": 82,
+     "week_ago_cm": 7,
+     "height_m": 1574,
+     "best_weeks": [
+      14,
+      13,
+      12
+     ],
+     "ratio_pct": 22
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Manning Park Resort",
+   "top_cm": 17,
+   "top_m": 1789,
+   "base_cm": 1,
+   "base_m": 1359,
+   "next_cm": 2
+  },
+  "story": {
+   "id": "best_week",
+   "place": "resort:manning_park_resort",
+   "score": 31,
+   "resort": "Manning Park Resort"
+  }
  },
  "media": [
   {
@@ -305,6 +341,17 @@
      ]
     },
     {
+     "h": "Against past winters",
+     "p": [
+      "At about 1,574 m, Manning Park Resort has 8 cm today; a normal 15 November has 37 cm there.",
+      "Only one winter in ten has more than 82 cm on this date.",
+      "A week ago the same spot had 7 cm.",
+      "In past winters the best snow at Manning Park Resort usually came late March / early April.",
+      "Day by day at Manning Park Resort: Sunday 15 November 8 cm; Monday 16 November 2 cm.",
+      "Height by height at Manning Park Resort: 1,359 m 1 cm on the ground, 1 cm more in the next 7 days; 1,574 m 7 cm on the ground, 3 cm more in the next 7 days; 1,789 m 17 cm on the ground, 4 cm more in the next 7 days."
+     ]
+    },
+    {
      "h": "Ground truth",
      "p": [
       "How sure are we? Resort values are model estimates for the upper slopes; stations are measurements, each at one point on the date shown."
@@ -351,7 +398,7 @@
    "rewrite": 1
   }
  },
- "words_en": 233,
+ "words_en": 463,
  "indexable": false,
  "main": {
   "slug": "manning_park_resort",
@@ -456,5 +503,27 @@
   },
   "credit": null,
   "photo": null
+ },
+ "rewrite": {
+  "v": 1,
+  "story": "best_week",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 463 < 600; powder alert of a small resort",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 463 < 600",
+   "powder alert of a small resort"
+  ],
+  "words": 463,
+  "overlap": 11.7,
+  "with": "alps-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 81.8,
+  "intent": "resort:manning_park_resort|best_week",
+  "guide": false,
+  "v": 1
  }
 }

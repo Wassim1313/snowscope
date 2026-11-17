@@ -279,7 +279,45 @@
     "days_all_day_below_0c_at_base": [],
     "rain_on_snow_risk_days": []
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Whiteface Mountain",
+     "slug": "whiteface_mountain_ski_center",
+     "now_cm": 0,
+     "usual_cm": 1,
+     "high_cm": 9,
+     "week_ago_cm": 0,
+     "height_m": 852,
+     "best_weeks": [
+      8,
+      10,
+      11
+     ],
+     "ratio_pct": null
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Whiteface Mountain",
+   "rain_day": "2026-11-10",
+   "freezing_m": 1620,
+   "lift_top_m": 1333,
+   "next_cm": 24,
+   "second": "Stratton",
+   "second_cm": 0,
+   "depth_cm": 0
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:whiteface_mountain_ski_center",
+   "score": 46,
+   "resort": "Whiteface Mountain"
+  }
  },
  "media": [
   {
@@ -302,6 +340,17 @@
      "h": "The 0 °C level, daily",
      "p": [
       "The 0 °C level at the resorts below, from the coldest to the warmest hour of each day: Tuesday 10 November: from 2,756 ft (840 m) to 5,971 ft (1,820 m). Wednesday 11 November: from 2,461 ft (750 m) to 4,003 ft (1,220 m). Thursday 12 November: from 1,936 ft (590 m) to 6,037 ft (1,840 m)."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Tuesday 10 November the freezing level climbs to about 5,315 ft (1,620 m), above the top of the lifts at 4,373 ft (1,333 m): rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 2,795 ft (852 m), Whiteface Mountain has 0 in (0 cm) today; a normal 10 November has 0 in (1 cm) there.",
+      "Only one winter in ten has more than 4 in (9 cm) on this date.",
+      "A week ago the same spot had 0 in (0 cm).",
+      "In past winters the best snow at Whiteface Mountain usually came late February / early March."
      ]
     },
     {
@@ -346,8 +395,8 @@
    "rewrite": 1
   }
  },
- "words_en": 360,
- "indexable": true,
+ "words_en": 592,
+ "indexable": false,
  "main": {
   "slug": "whiteface_mountain_ski_center",
   "name": "Whiteface Mountain",
@@ -452,5 +501,26 @@
   "with": "us-west-freezing-level-snow-line-8-november-2026",
   "tries": 1
  },
- "voice": "sat"
+ "voice": "sat",
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 592 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 592 < 600"
+  ],
+  "words": 592,
+  "overlap": 15.2,
+  "with": "us-west-freezing-level-snow-line-8-november-2026",
+  "langs_off": [],
+  "score": 95.2,
+  "intent": "resort:whiteface_mountain_ski_center|rain_risk",
+  "guide": false,
+  "v": 1
+ }
 }

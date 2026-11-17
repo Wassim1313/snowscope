@@ -133,6 +133,128 @@
    ],
    "from_day": 8,
    "to_day": 14
+  },
+  "trend": [
+   {
+    "date": "2026-11-16",
+    "snow_km2": 2110,
+    "new72": 2,
+    "leader": "Zugspitze",
+    "leader_cm": 44
+   },
+   {
+    "date": "2026-11-17",
+    "snow_km2": 860,
+    "new72": 2,
+    "leader": "Zugspitze",
+    "leader_cm": 54
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Zugspitze",
+     "slug": "gletscher_skigebiet_zugspitze_ski_resort_zugspit",
+     "now_cm": 12,
+     "usual_cm": 20,
+     "high_cm": 41,
+     "week_ago_cm": 9,
+     "height_m": 1811,
+     "best_weeks": [
+      13,
+      9,
+      12
+     ],
+     "ratio_pct": 60
+    },
+    {
+     "name": "Karwendelbahn (Dammkar-Mittenwal",
+     "slug": "karwendelbahn_dammkar_mittenwald",
+     "now_cm": 1,
+     "usual_cm": 12,
+     "high_cm": 33,
+     "week_ago_cm": 1,
+     "height_m": 1589,
+     "best_weeks": [
+      9,
+      10,
+      8
+     ],
+     "ratio_pct": 8
+    },
+    {
+     "name": "Fellhorn/Kanzelwand",
+     "slug": "skigebiet_fellhorn_kanzelwand",
+     "now_cm": 2,
+     "usual_cm": 7,
+     "high_cm": 29,
+     "week_ago_cm": 0,
+     "height_m": 1442,
+     "best_weeks": [
+      9,
+      10,
+      7
+     ],
+     "ratio_pct": 29
+    },
+    {
+     "name": "Nebelhorn",
+     "slug": "skigebiet_nebelhorn",
+     "now_cm": 1,
+     "usual_cm": 10,
+     "high_cm": 31,
+     "week_ago_cm": 0,
+     "height_m": 1518,
+     "best_weeks": [
+      9,
+      10,
+      8
+     ],
+     "ratio_pct": 10
+    },
+    {
+     "name": "Garmisch-Classic",
+     "slug": "skigebiet_garmisch_classic",
+     "now_cm": 4,
+     "usual_cm": 8,
+     "high_cm": 27,
+     "week_ago_cm": 2,
+     "height_m": 1387,
+     "best_weeks": [
+      6,
+      9,
+      7
+     ],
+     "ratio_pct": 50
+    }
+   ],
+   "n": 5,
+   "above": 0,
+   "median_pct": 29
+  },
+  "neighbours": [
+   {
+    "cc": "AT",
+    "name": "Austria",
+    "white_share_pct": 30,
+    "leader": "Kühtai",
+    "leader_cm": 54,
+    "next_7_days_max_cm": 47
+   },
+   {
+    "cc": "CH",
+    "name": "Switzerland",
+    "white_share_pct": 41,
+    "leader": "Glacier 3000",
+    "leader_cm": 46,
+    "next_7_days_max_cm": 85
+   }
+  ],
+  "glacier": false,
+  "story": {
+   "id": "week_loss",
+   "place": "cc:DE",
+   "score": 49.9
   }
  },
  "media": [
@@ -148,14 +270,53 @@
  ],
  "docs": {
   "en": {
-   "title": "Germany snow conditions, 17 November 2026: depth, fresh snow and the next days",
-   "description": "Germany snow today, 17 November: snow cover, new snow, snow depth by height, the next days and the best resorts.",
-   "lede": "860 km² of snow-covered ground in Germany this Tuesday, down 1,250 km² on yesterday. That is 2 % of the high ground we map in Germany.",
+   "title": "The snow is shrinking in Germany: 840 km² gone since last week",
+   "description": "The snow is shrinking in Germany: 840 km² gone since last week. Snow cover, new snow, resorts and the days ahead in Germany on 17 November.",
+   "lede": "Seven days ago about 1,700 km² was white in Germany; today it is 860 km², 840 km² less.",
    "sections": [
     {
-     "h": "Snow on the ground",
+     "h": "What melted this week",
      "p": [
-      "Mild days have cost 840 km² since the 1,700 km² of a week ago. Think 1,600 m and higher for a white landscape."
+      "The losses are at the bottom of the slopes. Higher up the snow is settling rather than going, so the upper lifts are the safe bet.",
+      "Snow covers roughly 860 km² in Germany on 17 November, 1,250 km² less than yesterday. In other words, 2 % of the mapped high ground is white."
+     ]
+    },
+    {
+     "h": "Today's snow cover",
+     "p": [
+      "Seven days ago the figure was 1,700 km², 840 km² more than now. Most of the ground is white from about 1,600 m up."
+     ]
+    },
+    {
+     "h": "Snow depth by height",
+     "p": [
+      "Climb and the snow gets deeper: between 1,000 and 1,500 m, under 1 cm on average, 14 % covered; between 1,500 and 2,000 m, 2 cm on average, 59 % covered; between 2,000 and 2,500 m, 13 cm on average, 98 % covered."
+     ]
+    },
+    {
+     "h": "Where to ski first",
+     "p": [
+      "Zugspitze leads with 54 cm on its upper slopes.",
+      "Next on the list: Karwendelbahn (Dammkar-Mittenwal (19 cm), Fellhorn/Kanzelwand (15 cm), Nebelhorn (15 cm) and Garmisch-Classic (15 cm).",
+      "Zugspitze picked up 12 cm in the last three days and could add 20 cm by Friday 20 November.",
+      "At Karwendelbahn (Dammkar-Mittenwal: 5 cm of fresh snow over three days, 16 cm more expected by Friday 20 November.",
+      "Count 48 white resorts out of 231 in Germany today.",
+      "The rest of the shortlist: Fellhorn/Kanzelwand: 15 cm on top, 7 cm in three days, 33 cm expected; Nebelhorn: 15 cm on top, 7 cm in three days, 32 cm expected; Garmisch-Classic: 15 cm on top, 5 cm in three days, 18 cm expected."
+     ]
+    },
+    {
+     "h": "Forecast for the week",
+     "p": [
+      "Over the next three days up to 11 cm is expected, and up to 31 cm over the week.",
+      "Saturday 21 November stands out, with up to 15 cm in a day.",
+      "Further out, days 8 to 14 show up to 12 cm on the snowiest slopes."
+     ]
+    },
+    {
+     "h": "Skiing conditions",
+     "p": [
+      "The snow is retreating uphill, so plan on the higher lifts and avoid the low valley runs.",
+      "Keep an eye on the forecast: the coming snow could change the picture quickly."
      ]
     },
     {
@@ -165,40 +326,33 @@
      ]
     },
     {
-     "h": "Low, middle and high ground",
+     "h": "How this start compares",
      "p": [
-      "By height, the picture looks like this: between 1,000 and 1,500 m, under 1 cm on average, 14 % covered; between 1,500 and 2,000 m, 2 cm on average, 59 % covered; between 2,000 and 2,500 m, 13 cm on average, 98 % covered."
+      "Resort by resort, today against a normal 17 November: Zugspitze: 12 cm at about 1,811 m, against 20 cm in a normal year; Karwendelbahn (Dammkar-Mittenwal: 1 cm at about 1,589 m, against 12 cm in a normal year; Fellhorn/Kanzelwand: 2 cm at about 1,442 m, against 7 cm in a normal year; Nebelhorn: 1 cm at about 1,518 m, against 10 cm in a normal year.",
+      "0 of these 4 resorts are above their usual depth for the date.",
+      "These depths are for one height on each mountain, below the top, so they read lower than the upper-slope numbers further down.",
+      "In past winters the best snow at Zugspitze usually came early March / late March."
      ]
     },
     {
-     "h": "On the ground",
+     "h": "The neighbours today",
      "p": [
-      "Mild weather is eating into the cover: expect firm snow in the morning and slush in the afternoon.",
-      "With more snow in the forecast, the next days should improve things further."
+      "For comparison, the neighbours on the same day: Austria: 30 % white, deepest Kühtai with 54 cm, up to 47 cm in the week ahead; Switzerland: 41 % white, deepest Glacier 3000 with 46 cm, up to 85 cm in the week ahead."
      ]
     },
     {
-     "h": "The resorts with the most snow",
+     "h": "Planning a day on the snow",
      "p": [
-      "The deepest snow of the country's resorts is at Zugspitze: 54 cm.",
-      "Close behind: Karwendelbahn (Dammkar-Mittenwal (19 cm), Fellhorn/Kanzelwand (15 cm), Nebelhorn (15 cm) and Garmisch-Classic (15 cm).",
-      "Zugspitze picked up 12 cm in the last three days and could add 20 cm by Friday 20 November.",
-      "At Karwendelbahn (Dammkar-Mittenwal: 5 cm of fresh snow over three days, 16 cm more expected by Friday 20 November.",
-      "Snow lies on the upper slopes of 48 out of 231 resorts in Germany."
-     ]
-    },
-    {
-     "h": "Snow on the way?",
-     "p": [
-      "Expect up to 11 cm on the snowiest slopes by the third day; the seven-day total reaches 31 cm.",
-      "The snowiest day looks like Saturday 21 November, with up to 15 cm in the snowiest spots.",
-      "The second week adds up to 12 cm where it snows most."
+      "Above 2,000 m the ground is almost fully white (98 % covered), so runs up there have a continuous base.",
+      "Between 1,500 m and 2,000 m the cover is patchy, about 59 % white: expect grass and stones between the snow.",
+      "Below 1,000 m the slopes are still almost bare.",
+      "If you can choose the day, go after Saturday 21 November: the fresh snow then has time to settle and the roads to be cleared."
      ]
     }
    ],
    "advice": [
-    "Check the resort's own lift status before you travel.",
-    "Early-season snow is thin over rocks: ski the groomed runs first.",
+    "Morning snow is firm after a clear night: wait for the sun on south faces.",
+    "Roads to the higher resorts may need winter tyres or chains.",
     "Snow above the tree line can be wind-packed: watch the ridges."
    ],
    "captions": {
@@ -206,14 +360,53 @@
    }
   },
   "de": {
-   "title": "Schneelage in Deutschland, 17. November 2026: Schneehöhen, Neuschnee und die nächsten Tage",
-   "description": "Schnee in Deutschland am 17. November: Schneedecke, Neuschnee, Schneehöhe nach Höhe, die nächsten Tage und die besten Skigebiete.",
-   "lede": "860 km² schneebedeckter Boden in Deutschland an diesem Dienstag, ein Minus von 1.250 km² gegenüber gestern. Das sind 2 % des kartierten Berglands in Deutschland.",
+   "title": "Der Schnee schrumpft in Deutschland: 840 km² weniger als vor einer Woche",
+   "description": "Der Schnee schrumpft in Deutschland: 840 km² weniger als vor einer Woche",
+   "lede": "Vor sieben Tagen waren in Deutschland rund 1.700 km² weiß, heute sind es 860 km², also 840 km² weniger.",
    "sections": [
     {
-     "h": "Schnee am Boden",
+     "h": "Was diese Woche geschmolzen ist",
      "p": [
-      "Milde Tage haben seit den 1.700 km² der Vorwoche 840 km² gekostet. Für eine weiße Landschaft: ab 1.600 m aufwärts."
+      "Verloren geht der Schnee unten. Weiter oben setzt er sich eher, als dass er verschwindet: Die oberen Lifte sind die sichere Wahl.",
+      "Schnee bedeckt am 17. November in Deutschland etwa 860 km², 1.250 km² weniger als gestern. Anders gesagt: 2 % des kartierten Berglands sind weiß."
+     ]
+    },
+    {
+     "h": "Schneebedeckung heute",
+     "p": [
+      "Vor sieben Tagen waren es 1.700 km², also 840 km² mehr als jetzt. Ab etwa 1.600 m ist der Boden überwiegend weiß."
+     ]
+    },
+    {
+     "h": "Schneehöhe nach Höhenlage",
+     "p": [
+      "Je höher, desto mehr Schnee: zwischen 1.000 und 1.500 m im Schnitt unter 1 cm, 14 % bedeckt; zwischen 1.500 und 2.000 m im Schnitt 2 cm, 59 % bedeckt; zwischen 2.000 und 2.500 m im Schnitt 13 cm, 98 % bedeckt."
+     ]
+    },
+    {
+     "h": "Wo man zuerst fahren sollte",
+     "p": [
+      "Zugspitze liegt vorn mit 54 cm im oberen Bereich.",
+      "Danach: Karwendelbahn (Dammkar-Mittenwal (19 cm), Fellhorn/Kanzelwand (15 cm), Nebelhorn (15 cm) und Garmisch-Classic (15 cm).",
+      "Zugspitze bekam in drei Tagen 12 cm und könnte bis Freitag, 20. November weitere 20 cm dazubekommen.",
+      "In Karwendelbahn (Dammkar-Mittenwal: 5 cm Neuschnee in drei Tagen, bis Freitag, 20. November werden 16 cm mehr erwartet.",
+      "Heute sind 48 von 231 Skigebieten in Deutschland weiß.",
+      "Der Rest der Auswahl: Fellhorn/Kanzelwand: 15 cm oben, 7 cm in drei Tagen, 33 cm erwartet; Nebelhorn: 15 cm oben, 7 cm in drei Tagen, 32 cm erwartet; Garmisch-Classic: 15 cm oben, 5 cm in drei Tagen, 18 cm erwartet."
+     ]
+    },
+    {
+     "h": "Die Aussichten für die Woche",
+     "p": [
+      "In den nächsten drei Tagen werden bis zu 11 cm erwartet, über die Woche bis zu 31 cm.",
+      "Der Samstag, 21. November sticht heraus, mit bis zu 15 cm an einem Tag.",
+      "Weiter voraus zeigen die Tage 8 bis 14 bis zu 12 cm an den schneereichsten Hängen."
+     ]
+    },
+    {
+     "h": "Skibedingungen",
+     "p": [
+      "Der Schnee zieht sich nach oben zurück: auf die hohen Lifte setzen, tiefe Talabfahrten meiden.",
+      "Die Vorhersage im Blick behalten: Der kommende Schnee kann das Bild schnell ändern."
      ]
     },
     {
@@ -223,40 +416,33 @@
      ]
     },
     {
-     "h": "Tal, Mittelstation und Gipfel",
+     "h": "Wie dieser Start abschneidet",
      "p": [
-      "Nach Höhe ergibt sich folgendes Bild: zwischen 1.000 und 1.500 m im Schnitt unter 1 cm, 14 % bedeckt; zwischen 1.500 und 2.000 m im Schnitt 2 cm, 59 % bedeckt; zwischen 2.000 und 2.500 m im Schnitt 13 cm, 98 % bedeckt."
+      "Skigebiet für Skigebiet, heute gegenüber einem normalen 17. November: Zugspitze: 12 cm auf etwa 1.811 m, gegenüber 20 cm in einem normalen Jahr; Karwendelbahn (Dammkar-Mittenwal: 1 cm auf etwa 1.589 m, gegenüber 12 cm in einem normalen Jahr; Fellhorn/Kanzelwand: 2 cm auf etwa 1.442 m, gegenüber 7 cm in einem normalen Jahr; Nebelhorn: 1 cm auf etwa 1.518 m, gegenüber 10 cm in einem normalen Jahr.",
+      "0 dieser 4 Skigebiete liegen über ihrer üblichen Höhe für dieses Datum.",
+      "Diese Höhen gelten für eine bestimmte Höhenlage jedes Bergs unterhalb des Gipfels und sind daher niedriger als die Werte der oberen Hänge weiter unten.",
+      "In früheren Wintern kam der beste Schnee in Zugspitze meist Anfang März / Ende März."
      ]
     },
     {
-     "h": "Vor Ort",
+     "h": "Die Nachbarn heute",
      "p": [
-      "Milde Luft zehrt an der Schneedecke: morgens harter Schnee, nachmittags Sulz.",
-      "Mit weiterem Schnee in Sicht dürften die nächsten Tage noch besser werden."
+      "Zum Vergleich die Nachbarn am selben Tag: Österreich: 30 % weiß, vorn Kühtai mit 54 cm, bis zu 47 cm in der kommenden Woche; Schweiz: 41 % weiß, vorn Glacier 3000 mit 46 cm, bis zu 85 cm in der kommenden Woche."
      ]
     },
     {
-     "h": "Die schneereichsten Skigebiete",
+     "h": "Einen Skitag planen",
      "p": [
-      "Den meisten Schnee unter den Skigebieten des Landes hat Zugspitze: 54 cm.",
-      "Knapp dahinter: Karwendelbahn (Dammkar-Mittenwal (19 cm), Fellhorn/Kanzelwand (15 cm), Nebelhorn (15 cm) und Garmisch-Classic (15 cm).",
-      "Zugspitze bekam in drei Tagen 12 cm und könnte bis Freitag, 20. November weitere 20 cm dazubekommen.",
-      "In Karwendelbahn (Dammkar-Mittenwal: 5 cm Neuschnee in drei Tagen, bis Freitag, 20. November werden 16 cm mehr erwartet.",
-      "Auf 48 von 231 Skigebieten in Deutschland liegt oben Schnee."
-     ]
-    },
-    {
-     "h": "Kommt Schnee?",
-     "p": [
-      "Bis zum dritten Tag sind an den schneereichsten Hängen bis zu 11 cm möglich; die Siebentagessumme erreicht 31 cm.",
-      "Der schneereichste Tag dürfte der Samstag, 21. November werden, mit bis zu 15 cm an den schneereichsten Stellen.",
-      "Die zweite Woche bringt bis zu 12 cm dort, wo es am meisten schneit."
+      "Über 2.000 m ist der Boden fast ganz weiß (98 % bedeckt), die Pisten dort haben eine durchgehende Unterlage.",
+      "Zwischen 1.500 m und 2.000 m ist die Decke lückenhaft, rund 59 % weiß: Gras und Steine zwischen dem Schnee.",
+      "Unterhalb von 1.000 m sind die Hänge noch fast schneefrei.",
+      "Wer den Tag wählen kann, fährt nach dem Samstag, 21. November: Dann kann sich der Neuschnee setzen und die Straßen sind geräumt."
      ]
     }
    ],
    "advice": [
-    "Vor der Anreise den Liftstatus des Skigebiets prüfen.",
-    "Früher Schnee ist über Steinen dünn: zuerst auf präparierten Pisten bleiben.",
+    "Nach klarer Nacht ist der Schnee morgens hart: an Südhängen auf die Sonne warten.",
+    "Für die Straßen zu hoch gelegenen Skigebieten können Winterreifen oder Ketten nötig sein.",
     "Über der Waldgrenze kann der Schnee verfrachtet sein: Grate im Blick behalten."
    ],
    "captions": {
@@ -267,15 +453,17 @@
  "writers": {
   "en": {
    "writer": "template",
-   "voice": "hydro"
+   "voice": "sat",
+   "rewrite": "requality"
   },
   "de": {
    "writer": "template",
-   "voice": "hydro"
+   "voice": "sat",
+   "rewrite": "requality"
   }
  },
- "words_en": 268,
- "indexable": false,
+ "words_en": 641,
+ "indexable": true,
  "main": {
   "slug": "gletscher_skigebiet_zugspitze_ski_resort_zugspit",
   "name": "Zugspitze",
@@ -396,20 +584,23 @@
   "with": "germany-snow-report-16-november-2026"
  },
  "publish_utc": "2026-11-17T12:12:43Z",
- "cover": {
+ "cover": {},
+ "rewrite": {
   "v": 1,
-  "style": "ranked",
-  "files": {
-   "en": [
-    "blog/media/2026/11/germany-snow-report-17-november-2026/cover-en.webp",
-    "blog/media/2026/11/germany-snow-report-17-november-2026/cover-en_t.webp"
-   ],
-   "de": [
-    "blog/media/2026/11/germany-snow-report-17-november-2026/cover-de.webp",
-    "blog/media/2026/11/germany-snow-report-17-november-2026/cover-de_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "week_loss",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 641,
+  "overlap": 25.7,
+  "with": "italy-snow-report-16-november-2026",
+  "langs_off": [],
+  "score": 103.2,
+  "intent": "cc:DE|week_loss",
+  "guide": false,
+  "v": 1
  }
 }

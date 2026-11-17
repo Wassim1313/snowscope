@@ -268,7 +268,45 @@
    }
   ],
   "focus_index": 2,
-  "title_focus_resort": "Big White"
+  "title_focus_resort": "Big White",
+  "normal": {
+   "rows": [
+    {
+     "name": "Big White",
+     "slug": "big_white_ski_resort",
+     "now_cm": 48,
+     "usual_cm": 32,
+     "high_cm": null,
+     "week_ago_cm": null,
+     "height_m": 1891,
+     "best_weeks": [
+      15,
+      14,
+      13
+     ],
+     "ratio_pct": 150,
+     "deeper_than": 37,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Big White",
+   "top_cm": 68,
+   "top_m": 2271,
+   "base_cm": 0,
+   "base_m": 1512,
+   "next_cm": 4
+  },
+  "story": {
+   "id": "height_gap",
+   "place": "resort:big_white_ski_resort",
+   "score": 46,
+   "resort": "Big White"
+  }
  },
  "media": [
   {
@@ -292,6 +330,18 @@
      "p": [
       "Less ground is white now: 258,160 km² on 13 November, only 253,880 km² today, and 298,900 km² expected on 18 November.",
       "From the base to the top of Whistler Blackcomb: 0 cm at the base (653 m), 48 cm at mid-mountain (1,456 m) and 103 cm at the top (2,259 m)."
+     ]
+    },
+    {
+     "h": "Top and bottom are two different worlds",
+     "p": [
+      "The top of Big White has about 68 cm at 2,271 m, the bottom about 0 cm at 1,512 m.",
+      "Ski the upper lifts and plan to ride down by lift if the lower runs are thin.",
+      "At about 1,891 m, Big White has 48 cm today; a normal 15 November has 32 cm there.",
+      "That is more than in 37 of the 46 past winters on this date.",
+      "In past winters the best snow at Big White usually came late March / early April.",
+      "Day by day at Big White: Sunday 15 November 1 cm; Monday 16 November 3 cm; Tuesday 17 November 1 cm.",
+      "Height by height at Big White: 1,512 m 0 cm on the ground, 2 cm more in the next 7 days; 1,891 m 11 cm on the ground, 4 cm more in the next 7 days; 2,271 m 68 cm on the ground, 5 cm more in the next 7 days."
      ]
     },
     {
@@ -340,6 +390,18 @@
      ]
     },
     {
+     "h": "Le haut et le bas, deux mondes",
+     "p": [
+      "Le haut de Big White compte environ 68 cm à 2 271 m, le bas environ 0 cm à 1 512 m.",
+      "Skiez sur les remontées du haut et prévoyez de redescendre en remontée si le bas est trop maigre.",
+      "Vers 1 891 m, Big White a 48 cm aujourd'hui ; un 15 novembre normal y compte 32 cm.",
+      "C'est plus que lors de 37 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Big White arrivait d'habitude fin mars / début avril.",
+      "Jour après jour à Big White : dimanche 15 novembre 1 cm; lundi 16 novembre 3 cm; mardi 17 novembre 1 cm.",
+      "Altitude par altitude à Big White : 1 512 m 0 cm au sol, 2 cm de plus dans les 7 prochains jours; 1 891 m 11 cm au sol, 4 cm de plus dans les 7 prochains jours; 2 271 m 68 cm au sol, 5 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
      "h": "Les jours à venir",
      "p": [
       "Entre aujourd'hui et le 18 novembre, nous attendons 13 cm à Whistler Blackcomb, 11 cm à Mount Washington Alpine Resort et 9 cm à Mount Cain Alpine Park.",
@@ -385,8 +447,8 @@
    "rewrite": 1
   }
  },
- "words_en": 310,
- "indexable": true,
+ "words_en": 575,
+ "indexable": false,
  "main": {
   "slug": "big_white_ski_resort",
   "name": "Big White",
@@ -527,5 +589,26 @@
   },
   "credit": null,
   "photo": null
+ },
+ "rewrite": {
+  "v": 1,
+  "story": "height_gap",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 575 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 575 < 600"
+  ],
+  "words": 575,
+  "overlap": 12.6,
+  "with": "us-west-wolf-creek-snow-depth-today-10-november-2026",
+  "langs_off": [],
+  "score": 98.8,
+  "intent": "resort:big_white_ski_resort|height_gap",
+  "guide": false,
+  "v": 1
  }
 }

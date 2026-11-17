@@ -130,7 +130,7 @@
   }
  },
  "words_en": 302,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": null,
   "name": "Alps",
@@ -143,5 +143,21 @@
  "bulletins": [],
  "trip_day": "",
  "map_link": "https://snowscope.app/",
- "publish_utc": "2026-11-09T21:24:32Z"
+ "publish_utc": "2026-11-09T21:24:32Z",
+ "noindex_why": "quality: words 345 < 600; no table or chart of its own",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 345 < 600",
+   "no table or chart of its own"
+  ],
+  "words": 345,
+  "overlap": 0.2,
+  "with": "early-season-snow-check-3-november-2026",
+  "langs_off": [],
+  "score": 35.2,
+  "intent": "world|guide_feature_climate",
+  "guide": false,
+  "v": 1
+ }
 }

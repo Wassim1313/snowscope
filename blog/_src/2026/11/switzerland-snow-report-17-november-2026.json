@@ -139,6 +139,129 @@
    ],
    "from_day": 8,
    "to_day": 14
+  },
+  "trend": [
+   {
+    "date": "2026-11-16",
+    "snow_km2": 16510,
+    "new72": 22,
+    "leader": "Ovronnaz",
+    "leader_cm": 136
+   },
+   {
+    "date": "2026-11-17",
+    "snow_km2": 12830,
+    "new72": 48,
+    "leader": "Glacier 3000",
+    "leader_cm": 46
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Glacier 3000",
+     "slug": "glacier_3000",
+     "now_cm": 35,
+     "usual_cm": 22,
+     "high_cm": 51,
+     "week_ago_cm": 14,
+     "height_m": 2238,
+     "best_weeks": [
+      14,
+      13,
+      16
+     ],
+     "ratio_pct": 159
+    },
+    {
+     "name": "Zermatt",
+     "slug": "zermatt",
+     "now_cm": 222,
+     "usual_cm": 31,
+     "high_cm": 55,
+     "week_ago_cm": 198,
+     "height_m": 2716,
+     "best_weeks": [
+      16,
+      15,
+      14
+     ],
+     "ratio_pct": 716
+    },
+    {
+     "name": "Jungfraujoch Snow Fun Park",
+     "slug": "jungfraujoch_snow_fun_park",
+     "now_cm": 52,
+     "usual_cm": 71,
+     "high_cm": 129,
+     "week_ago_cm": 32,
+     "height_m": 3450,
+     "best_weeks": [
+      16,
+      15,
+      17
+     ],
+     "ratio_pct": 73
+    },
+    {
+     "name": "Ovronnaz",
+     "slug": "ovronnaz",
+     "now_cm": 23,
+     "usual_cm": 19,
+     "high_cm": 43,
+     "week_ago_cm": 7,
+     "height_m": 1898,
+     "best_weeks": [
+      10,
+      13,
+      11
+     ],
+     "ratio_pct": 121
+    },
+    {
+     "name": "Saas Grund",
+     "slug": "saas_grund",
+     "now_cm": 33,
+     "usual_cm": 16,
+     "high_cm": 33,
+     "week_ago_cm": 18,
+     "height_m": 2348,
+     "best_weeks": [
+      14,
+      11,
+      15
+     ],
+     "ratio_pct": 206
+    }
+   ],
+   "n": 5,
+   "above": 4,
+   "median_pct": 159
+  },
+  "neighbours": [
+   {
+    "cc": "AT",
+    "name": "Austria",
+    "white_share_pct": 30,
+    "leader": "Kühtai",
+    "leader_cm": 54,
+    "next_7_days_max_cm": 47
+   },
+   {
+    "cc": "FR",
+    "name": "France",
+    "white_share_pct": 10,
+    "leader": "La Grave",
+    "leader_cm": 113,
+    "next_7_days_max_cm": 87
+   }
+  ],
+  "glacier": true,
+  "story": {
+   "id": "storm_next",
+   "place": "cc:CH",
+   "score": 76.3,
+   "day": "2026-11-20"
   }
  },
  "media": [
@@ -163,60 +286,92 @@
  ],
  "docs": {
   "en": {
-   "title": "Snow in Switzerland today: how much is on the ground, 17 November 2026",
-   "description": "Switzerland snow today, 17 November: snow cover, new snow, snow depth by height, the next days and the best resorts.",
-   "lede": "The white area in Switzerland stands at about 12,830 km² today, down 3,680 km² on yesterday. That is 41 % of the high ground we map in Switzerland.",
+   "title": "Switzerland: up to 85 cm of new snow on the way, most of it on Friday 20 November",
+   "description": "Switzerland: up to 85 cm of new snow on the way, most of it on Friday 20 November",
+   "lede": "The week ahead could bring up to 85 cm to the snowiest slopes in Switzerland, 70 cm of it in the next three days. The biggest day looks like Friday 20 November, with up to 29 cm.",
    "sections": [
     {
-     "h": "How much of the country is white",
+     "h": "The snow on its way",
      "p": [
-      "That is close to the 12,870 km² of a week ago. Most of the ground is white from about 1,700 m up."
+      "Forecasts this far out move. The timing is usually more reliable than the totals, so keep a flexible plan and check again two days before you go.",
+      "Snow covers roughly 12,830 km² in Switzerland on 17 November, 3,680 km² less than yesterday. That is 41 % of the high ground we map in Switzerland."
      ]
     },
     {
-     "h": "How deep it is, height by height",
+     "h": "Snow on the way?",
      "p": [
-      "Snow depth on the ground, height by height: 1,000-1,500 m: on average under 1 cm (5 % of the ground white); 1,500-2,000 m: on average 2 cm (52 % of the ground white); 2,000-2,500 m: on average 8 cm (96 % of the ground white); above 2,500 m: on average 22 cm (100 % white)."
+      "Expect up to 70 cm on the snowiest slopes by the third day; the seven-day total reaches 85 cm.",
+      "The snowiest day looks like Friday 20 November, with up to 29 cm in the snowiest spots.",
+      "The second week adds up to 40 cm where it snows most."
      ]
     },
     {
-     "h": "The latest snowfall",
+     "h": "The resorts with the most snow",
      "p": [
-      "Three-day totals peak at 48 cm, around the Valais Alps and the Bernese Oberland.",
+      "At the top of the list, Glacier 3000 reports 46 cm.",
+      "Close behind: Zermatt (45 cm), Jungfraujoch Snow Fun Park (44 cm), Ovronnaz (40 cm) and Saas Grund (37 cm).",
+      "Glacier 3000 picked up 67 cm in the last three days and could add 91 cm by Friday 20 November.",
+      "Zermatt picked up 42 cm in the last three days and could add 60 cm by Friday 20 November.",
+      "195 of the 280 resorts we follow in Switzerland have snow on their upper slopes.",
+      "The rest of the shortlist: Jungfraujoch Snow Fun Park: 44 cm on top, 44 cm in three days, 71 cm expected; Ovronnaz: 40 cm on top, 54 cm in three days, 78 cm expected; Saas Grund: 37 cm on top, 28 cm in three days, 41 cm expected."
+     ]
+    },
+    {
+     "h": "Where the fresh snow fell",
+     "p": [
+      "The Valais Alps and the Bernese Oberland got the most fresh snow over three days, up to 48 cm.",
       "The last 24 hours alone brought up to 29 cm.",
-      "About 11,300 km² received at least 5 cm."
+      "At least 5 cm fell over some 11,300 km²."
+     ]
+    },
+    {
+     "h": "From the valleys to the summits",
+     "p": [
+      "Height makes the difference: between 1,000 and 1,500 m, under 1 cm on average, 5 % covered; between 1,500 and 2,000 m, 2 cm on average, 52 % covered; between 2,000 and 2,500 m, 8 cm on average, 96 % covered; above 2,500 m: on average 22 cm (100 % white)."
+     ]
+    },
+    {
+     "h": "Today's snow cover",
+     "p": [
+      "The snow line sits near 1,700 m. Over the week the white area has hardly moved from 12,870 km²."
+     ]
+    },
+    {
+     "h": "Compared with past winters",
+     "p": [
+      "Resort by resort, today against a normal 17 November: Glacier 3000: 35 cm at about 2,238 m, against 22 cm in a normal year; Zermatt: 222 cm at about 2,716 m, against 31 cm in a normal year; Jungfraujoch Snow Fun Park: 52 cm at about 3,450 m, against 71 cm in a normal year; Ovronnaz: 23 cm at about 1,898 m, against 19 cm in a normal year.",
+      "3 of these 4 resorts are above their usual depth for the date.",
+      "These depths are for one height on each mountain, below the top, so they read lower than the upper-slope numbers further down.",
+      "In past winters the best snow at Glacier 3000 usually came late March / early April."
+     ]
+    },
+    {
+     "h": "The neighbours today",
+     "p": [
+      "For comparison, the neighbours on the same day: Austria: 30 % white, deepest Kühtai with 54 cm, up to 47 cm in the week ahead; France: 10 % white, deepest La Grave with 113 cm, up to 87 cm in the week ahead."
+     ]
+    },
+    {
+     "h": "Planning a day on the snow",
+     "p": [
+      "Above 2,000 m the ground is almost fully white (96 % covered), so runs up there have a continuous base.",
+      "Between 1,500 m and 2,000 m the cover is patchy, about 52 % white: expect grass and stones between the snow.",
+      "Below 1,500 m the slopes are still almost bare.",
+      "If you can choose the day, go after Friday 20 November: the fresh snow then has time to settle and the roads to be cleared."
      ]
     },
     {
      "h": "What it means on the slopes",
      "p": [
-      "Fresh snow on top of the base means soft turns on the upper slopes, while the lower runs stay patchy.",
+      "The new snow freshens the upper slopes; lower down it may already be heavy or wet.",
       "Keep an eye on the forecast: the coming snow could change the picture quickly."
-     ]
-    },
-    {
-     "h": "Where to ski first",
-     "p": [
-      "The deepest snow of the country's resorts is at Glacier 3000: 46 cm.",
-      "Close behind: Zermatt (45 cm), Jungfraujoch Snow Fun Park (44 cm), Ovronnaz (40 cm) and Saas Grund (37 cm).",
-      "Glacier 3000 picked up 67 cm in the last three days and could add 91 cm by Friday 20 November.",
-      "At Zermatt: 42 cm of fresh snow over three days, 60 cm more expected by Friday 20 November.",
-      "Snow lies on the upper slopes of 195 out of 280 resorts in Switzerland."
-     ]
-    },
-    {
-     "h": "What is coming",
-     "p": [
-      "The week ahead could bring up to 85 cm, 70 cm of it in the next three days.",
-      "Friday 20 November stands out, with up to 29 cm in a day.",
-      "Further out, days 8 to 14 show up to 40 cm on the snowiest slopes."
      ]
     }
    ],
    "advice": [
-    "Fresh snow on a cold base sticks badly: take care on steep slopes.",
-    "Roads to the higher resorts may need winter tyres or chains.",
-    "Read the local avalanche bulletin before going off-piste."
+    "Early-season snow is thin over rocks: ski the groomed runs first.",
+    "Morning snow is firm after a clear night: wait for the sun on south faces.",
+    "Roads to the higher resorts may need winter tyres or chains."
    ],
    "captions": {
     "new": "Snow depth in Switzerland on 17 November",
@@ -224,60 +379,92 @@
    }
   },
   "fr": {
-   "title": "Combien de neige en Suisse ? Le point du 17 novembre 2026",
-   "description": "Neige en Suisse le 17 novembre : couverture, neige fraîche, hauteurs selon l'altitude, prochains jours et meilleures stations.",
-   "lede": "La surface blanche en Suisse atteint environ 12 830 km² aujourd'hui, en baisse de 3 680 km² sur un jour. Cela représente 41 % du relief cartographié en Suisse.",
+   "title": "Suisse : jusqu'à 85 cm de neige fraîche en route, surtout le vendredi 20 novembre",
+   "description": "Suisse : jusqu'à 85 cm de neige fraîche en route, surtout le vendredi 20 novembre",
+   "lede": "La semaine à venir pourrait apporter jusqu'à 85 cm sur les pentes les plus arrosées en Suisse, dont 70 cm dans les trois prochains jours. Le gros jour semble être le vendredi 20 novembre, avec jusqu'à 29 cm.",
    "sections": [
     {
-     "h": "Quelle part du pays est blanche",
+     "h": "La neige qui arrive",
      "p": [
-      "C'est proche des 12 870 km² d'il y a une semaine. Le sol est blanc en majorité à partir de 1 700 m environ."
+      "Les prévisions à cette échéance bougent. Le moment est souvent plus fiable que les quantités : gardez un plan souple et revérifiez deux jours avant de partir.",
+      "La neige couvre environ 12 830 km² en Suisse ce 17 novembre, 3 680 km² de moins qu'hier. Cela représente 41 % du relief cartographié en Suisse."
      ]
     },
     {
-     "h": "L'épaisseur, étage par étage",
+     "h": "De la neige en route ?",
      "p": [
-      "Hauteur de neige au sol, par tranche d'altitude : 1 000-1 500 m : en moyenne moins de 1 cm (5 % du sol blanc); 1 500-2 000 m : en moyenne 2 cm (52 % du sol blanc); 2 000-2 500 m : en moyenne 8 cm (96 % du sol blanc); au-dessus de 2 500 m : en moyenne 22 cm (100 % blanc)."
+      "Comptez jusqu'à 70 cm sur les pentes les plus arrosées d'ici le troisième jour ; le cumul sur sept jours atteint 85 cm.",
+      "Le jour le plus neigeux devrait être le vendredi 20 novembre, avec jusqu'à 29 cm aux endroits les plus arrosés.",
+      "La deuxième semaine ajoute jusqu'à 40 cm là où il neige le plus."
      ]
     },
     {
-     "h": "Les dernières chutes",
+     "h": "Les stations les mieux enneigées",
      "p": [
-      "Les cumuls sur trois jours culminent à 48 cm, autour de les Alpes valaisannes et l'Oberland bernois.",
+      "En tête de liste, Glacier 3000 affiche 46 cm.",
+      "Juste derrière : Zermatt (45 cm), Jungfraujoch Snow Fun Park (44 cm), Ovronnaz (40 cm) et Saas Grund (37 cm).",
+      "Glacier 3000 a reçu 67 cm en trois jours et pourrait gagner 91 cm d'ici vendredi 20 novembre.",
+      "Zermatt a reçu 42 cm en trois jours et pourrait gagner 60 cm d'ici vendredi 20 novembre.",
+      "195 des 280 stations suivies en Suisse ont de la neige sur le haut du domaine.",
+      "Le reste de la sélection : Jungfraujoch Snow Fun Park : 44 cm en haut, 44 cm en trois jours, 71 cm attendus; Ovronnaz : 40 cm en haut, 54 cm en trois jours, 78 cm attendus; Saas Grund : 37 cm en haut, 28 cm en trois jours, 41 cm attendus."
+     ]
+    },
+    {
+     "h": "Où est tombée la neige fraîche",
+     "p": [
+      "Les Alpes valaisannes et l'Oberland bernois ont reçu le plus de neige fraîche en trois jours, jusqu'à 48 cm.",
       "Les dernières 24 heures ont apporté jusqu'à 29 cm.",
-      "Environ 11 300 km² ont reçu au moins 5 cm."
+      "Au moins 5 cm sont tombés sur quelque 11 300 km²."
+     ]
+    },
+    {
+     "h": "Des vallées aux sommets",
+     "p": [
+      "L'altitude fait la différence : entre 1 000 et 1 500 m, moins de 1 cm en moyenne, 5 % couverts; entre 1 500 et 2 000 m, 2 cm en moyenne, 52 % couverts; entre 2 000 et 2 500 m, 8 cm en moyenne, 96 % couverts; au-dessus de 2 500 m : en moyenne 22 cm (100 % blanc)."
+     ]
+    },
+    {
+     "h": "Couverture neigeuse aujourd'hui",
+     "p": [
+      "La limite de l'enneigement se situe vers 1 700 m. Sur la semaine, la surface blanche a peu bougé par rapport aux 12 870 km²."
+     ]
+    },
+    {
+     "h": "Comparé aux hivers passés",
+     "p": [
+      "Station par station, aujourd'hui face à un 17 novembre normal : Glacier 3000 : 35 cm vers 2 238 m, contre 22 cm une année normale; Zermatt : 222 cm vers 2 716 m, contre 31 cm une année normale; Jungfraujoch Snow Fun Park : 52 cm vers 3 450 m, contre 71 cm une année normale; Ovronnaz : 23 cm vers 1 898 m, contre 19 cm une année normale.",
+      "3 de ces 4 stations sont au-dessus de leur hauteur habituelle à cette date.",
+      "Ces hauteurs valent pour une altitude donnée de chaque montagne, sous le sommet : elles sont donc plus basses que les chiffres du haut des pistes plus loin.",
+      "Les hivers passés, la meilleure neige à Glacier 3000 arrivait d'habitude fin mars / début avril."
+     ]
+    },
+    {
+     "h": "Les voisins aujourd'hui",
+     "p": [
+      "Pour comparer, les voisins le même jour : Autriche : 30 % de blanc, Kühtai en tête avec 54 cm, jusqu'à 47 cm dans la semaine; France : 10 % de blanc, La Grave en tête avec 113 cm, jusqu'à 87 cm dans la semaine."
+     ]
+    },
+    {
+     "h": "Préparer une journée sur la neige",
+     "p": [
+      "Au-dessus de 2 000 m, le sol est presque entièrement blanc (96 % couvert) : les pistes y ont une sous-couche continue.",
+      "Entre 1 500 m et 2 000 m, la couverture est irrégulière, environ 52 % de blanc : herbe et cailloux entre les plaques.",
+      "Sous 1 500 m, les pentes sont encore presque nues.",
+      "Si vous pouvez choisir le jour, partez après le vendredi 20 novembre : la neige fraîche aura le temps de se tasser et les routes d'être dégagées."
      ]
     },
     {
      "h": "Ce que cela donne sur les pistes",
      "p": [
-      "La neige fraîche sur la sous-couche promet des virages souples en haut, tandis que le bas reste irrégulier.",
+      "La neige fraîche rafraîchit le haut des pistes ; plus bas, elle peut déjà être lourde ou mouillée.",
       "Surveillez les prévisions : la neige à venir peut vite changer la donne."
-     ]
-    },
-    {
-     "h": "Où skier en premier",
-     "p": [
-      "La neige la plus épaisse des stations du pays est à Glacier 3000 : 46 cm.",
-      "Juste derrière : Zermatt (45 cm), Jungfraujoch Snow Fun Park (44 cm), Ovronnaz (40 cm) et Saas Grund (37 cm).",
-      "Glacier 3000 a reçu 67 cm en trois jours et pourrait gagner 91 cm d'ici vendredi 20 novembre.",
-      "À Zermatt : 42 cm de neige fraîche en trois jours, 60 cm de plus attendus d'ici vendredi 20 novembre.",
-      "La neige recouvre le haut de 195 stations sur 280 en Suisse."
-     ]
-    },
-    {
-     "h": "Ce qui arrive",
-     "p": [
-      "La semaine à venir pourrait apporter jusqu'à 85 cm, dont 70 cm dans les trois prochains jours.",
-      "Le vendredi 20 novembre se détache, avec jusqu'à 29 cm en une journée.",
-      "Plus loin, les jours 8 à 14 montrent jusqu'à 40 cm sur les pentes les plus enneigées."
      ]
     }
    ],
    "advice": [
-    "Neige fraîche sur base froide : prudence dans les pentes raides.",
-    "Les routes des stations d'altitude peuvent exiger pneus hiver ou chaînes.",
-    "Lisez le bulletin d'avalanche local avant le hors-piste."
+    "La neige de début de saison est fine sur les cailloux : privilégiez les pistes damées.",
+    "Après une nuit claire, la neige est dure le matin : attendez le soleil sur les faces sud.",
+    "Les routes des stations d'altitude peuvent exiger pneus hiver ou chaînes."
    ],
    "captions": {
     "new": "Hauteur de neige en Suisse le 17 novembre",
@@ -285,60 +472,92 @@
    }
   },
   "de": {
-   "title": "Wie viel Schnee liegt in der Schweiz? Der Stand am 17. November 2026",
-   "description": "Schnee in der Schweiz am 17. November: Schneedecke, Neuschnee, Schneehöhe nach Höhe, die nächsten Tage und die besten Skigebiete.",
-   "lede": "Die weiße Fläche in der Schweiz liegt heute bei etwa 12.830 km², ein Minus von 3.680 km² gegenüber gestern. Das sind 41 % des kartierten Berglands in der Schweiz.",
+   "title": "Schweiz: bis zu 85 cm Neuschnee im Anmarsch, das meiste am Freitag, 20. November",
+   "description": "Schweiz: bis zu 85 cm Neuschnee im Anmarsch, das meiste am Freitag, 20. November",
+   "lede": "Die kommende Woche könnte den schneereichsten Hängen in der Schweiz bis zu 85 cm bringen, 70 cm davon in den nächsten drei Tagen. Der stärkste Tag dürfte der Freitag, 20. November werden, mit bis zu 29 cm.",
    "sections": [
     {
-     "h": "Wie viel des Landes weiß ist",
+     "h": "Der Schnee, der kommt",
      "p": [
-      "Das ist nah an den 12.870 km² von vor einer Woche. Ab etwa 1.700 m ist der Boden überwiegend weiß."
+      "Vorhersagen so weit voraus ändern sich. Der Zeitpunkt ist meist verlässlicher als die Mengen: flexibel planen und zwei Tage vorher noch einmal prüfen.",
+      "Schnee bedeckt am 17. November in der Schweiz etwa 12.830 km², 3.680 km² weniger als gestern. Das sind 41 % des kartierten Berglands in der Schweiz."
      ]
     },
     {
-     "h": "Wie tief, Höhenstufe für Höhenstufe",
+     "h": "Kommt Schnee?",
      "p": [
-      "Schneehöhe am Boden nach Höhenstufen: 1.000-1.500 m: im Mittel unter 1 cm (5 % des Bodens weiß); 1.500-2.000 m: im Mittel 2 cm (52 % des Bodens weiß); 2.000-2.500 m: im Mittel 8 cm (96 % des Bodens weiß); über 2.500 m: im Mittel 22 cm (100 % weiß)."
+      "Bis zum dritten Tag sind an den schneereichsten Hängen bis zu 70 cm möglich; die Siebentagessumme erreicht 85 cm.",
+      "Der schneereichste Tag dürfte der Freitag, 20. November werden, mit bis zu 29 cm an den schneereichsten Stellen.",
+      "Die zweite Woche bringt bis zu 40 cm dort, wo es am meisten schneit."
      ]
     },
     {
-     "h": "Die letzten Schneefälle",
+     "h": "Die schneereichsten Skigebiete",
      "p": [
-      "Die Dreitagessummen erreichen bis zu 48 cm, rund um die Walliser Alpen und das Berner Oberland.",
+      "An der Spitze steht Glacier 3000 mit 46 cm.",
+      "Knapp dahinter: Zermatt (45 cm), Jungfraujoch Snow Fun Park (44 cm), Ovronnaz (40 cm) und Saas Grund (37 cm).",
+      "Glacier 3000 bekam in drei Tagen 67 cm und könnte bis Freitag, 20. November weitere 91 cm dazubekommen.",
+      "Zermatt bekam in drei Tagen 42 cm und könnte bis Freitag, 20. November weitere 60 cm dazubekommen.",
+      "195 der 280 beobachteten Skigebiete in der Schweiz haben oben Schnee.",
+      "Der Rest der Auswahl: Jungfraujoch Snow Fun Park: 44 cm oben, 44 cm in drei Tagen, 71 cm erwartet; Ovronnaz: 40 cm oben, 54 cm in drei Tagen, 78 cm erwartet; Saas Grund: 37 cm oben, 28 cm in drei Tagen, 41 cm erwartet."
+     ]
+    },
+    {
+     "h": "Wo der Neuschnee fiel",
+     "p": [
+      "Die Walliser Alpen und das Berner Oberland bekamen in drei Tagen den meisten Neuschnee, bis zu 48 cm.",
       "Allein die letzten 24 Stunden brachten bis zu 29 cm.",
-      "Rund 11.300 km² bekamen mindestens 5 cm."
+      "Mindestens 5 cm fielen auf etwa 11.300 km²."
+     ]
+    },
+    {
+     "h": "Von den Tälern bis zu den Gipfeln",
+     "p": [
+      "Die Höhe macht den Unterschied: zwischen 1.000 und 1.500 m im Schnitt unter 1 cm, 5 % bedeckt; zwischen 1.500 und 2.000 m im Schnitt 2 cm, 52 % bedeckt; zwischen 2.000 und 2.500 m im Schnitt 8 cm, 96 % bedeckt; über 2.500 m: im Mittel 22 cm (100 % weiß)."
+     ]
+    },
+    {
+     "h": "Schneebedeckung heute",
+     "p": [
+      "Die Schneegrenze liegt um 1.700 m. Über die Woche hat sich die weiße Fläche gegenüber 12.870 km² kaum verändert."
+     ]
+    },
+    {
+     "h": "Im Vergleich zu früheren Wintern",
+     "p": [
+      "Skigebiet für Skigebiet, heute gegenüber einem normalen 17. November: Glacier 3000: 35 cm auf etwa 2.238 m, gegenüber 22 cm in einem normalen Jahr; Zermatt: 222 cm auf etwa 2.716 m, gegenüber 31 cm in einem normalen Jahr; Jungfraujoch Snow Fun Park: 52 cm auf etwa 3.450 m, gegenüber 71 cm in einem normalen Jahr; Ovronnaz: 23 cm auf etwa 1.898 m, gegenüber 19 cm in einem normalen Jahr.",
+      "3 dieser 4 Skigebiete liegen über ihrer üblichen Höhe für dieses Datum.",
+      "Diese Höhen gelten für eine bestimmte Höhenlage jedes Bergs unterhalb des Gipfels und sind daher niedriger als die Werte der oberen Hänge weiter unten.",
+      "In früheren Wintern kam der beste Schnee in Glacier 3000 meist Ende März / Anfang April."
+     ]
+    },
+    {
+     "h": "Die Nachbarn heute",
+     "p": [
+      "Zum Vergleich die Nachbarn am selben Tag: Österreich: 30 % weiß, vorn Kühtai mit 54 cm, bis zu 47 cm in der kommenden Woche; Frankreich: 10 % weiß, vorn La Grave mit 113 cm, bis zu 87 cm in der kommenden Woche."
+     ]
+    },
+    {
+     "h": "Einen Skitag planen",
+     "p": [
+      "Über 2.000 m ist der Boden fast ganz weiß (96 % bedeckt), die Pisten dort haben eine durchgehende Unterlage.",
+      "Zwischen 1.500 m und 2.000 m ist die Decke lückenhaft, rund 52 % weiß: Gras und Steine zwischen dem Schnee.",
+      "Unterhalb von 1.500 m sind die Hänge noch fast schneefrei.",
+      "Wer den Tag wählen kann, fährt nach dem Freitag, 20. November: Dann kann sich der Neuschnee setzen und die Straßen sind geräumt."
      ]
     },
     {
      "h": "Was das auf der Piste bedeutet",
      "p": [
-      "Neuschnee auf der Unterlage verspricht weiche Schwünge oben, unten bleibt es fleckig.",
+      "Der Neuschnee frischt die oberen Hänge auf; weiter unten kann er schon schwer oder nass sein.",
       "Die Vorhersage im Blick behalten: Der kommende Schnee kann das Bild schnell ändern."
-     ]
-    },
-    {
-     "h": "Wo man zuerst fahren sollte",
-     "p": [
-      "Den meisten Schnee unter den Skigebieten des Landes hat Glacier 3000: 46 cm.",
-      "Knapp dahinter: Zermatt (45 cm), Jungfraujoch Snow Fun Park (44 cm), Ovronnaz (40 cm) und Saas Grund (37 cm).",
-      "Glacier 3000 bekam in drei Tagen 67 cm und könnte bis Freitag, 20. November weitere 91 cm dazubekommen.",
-      "In Zermatt: 42 cm Neuschnee in drei Tagen, bis Freitag, 20. November werden 60 cm mehr erwartet.",
-      "Auf 195 von 280 Skigebieten in der Schweiz liegt oben Schnee."
-     ]
-    },
-    {
-     "h": "Was kommt",
-     "p": [
-      "Die kommende Woche könnte bis zu 85 cm bringen, davon 70 cm in den nächsten drei Tagen.",
-      "Der Freitag, 20. November sticht heraus, mit bis zu 29 cm an einem Tag.",
-      "Weiter voraus zeigen die Tage 8 bis 14 bis zu 40 cm an den schneereichsten Hängen."
      ]
     }
    ],
    "advice": [
-    "Neuschnee auf kalter Unterlage hält schlecht: an steilen Hängen vorsichtig sein.",
-    "Für die Straßen zu hoch gelegenen Skigebieten können Winterreifen oder Ketten nötig sein.",
-    "Vor dem Gelände abseits der Piste den lokalen Lawinenbericht lesen."
+    "Früher Schnee ist über Steinen dünn: zuerst auf präparierten Pisten bleiben.",
+    "Nach klarer Nacht ist der Schnee morgens hart: an Südhängen auf die Sonne warten.",
+    "Für die Straßen zu hoch gelegenen Skigebieten können Winterreifen oder Ketten nötig sein."
    ],
    "captions": {
     "new": "Schneehöhe in der Schweiz am 17. November",
@@ -349,19 +568,22 @@
  "writers": {
   "en": {
    "writer": "template",
-   "voice": "field"
+   "voice": "field",
+   "rewrite": "requality"
   },
   "fr": {
    "writer": "template",
-   "voice": "field"
+   "voice": "field",
+   "rewrite": "requality"
   },
   "de": {
    "writer": "template",
-   "voice": "field"
+   "voice": "field",
+   "rewrite": "requality"
   }
  },
- "words_en": 301,
- "indexable": false,
+ "words_en": 697,
+ "indexable": true,
  "main": {
   "slug": "glacier_3000",
   "name": "Glacier 3000",
@@ -483,20 +705,23 @@
   "with": "switzerland-snow-report-16-november-2026"
  },
  "publish_utc": "2026-11-17T08:46:04Z",
- "cover": {
+ "cover": {},
+ "rewrite": {
   "v": 1,
-  "style": "map",
-  "files": {
-   "en": [
-    "blog/media/2026/11/switzerland-snow-report-17-november-2026/cover-en.webp",
-    "blog/media/2026/11/switzerland-snow-report-17-november-2026/cover-en_t.webp"
-   ],
-   "de": [
-    "blog/media/2026/11/switzerland-snow-report-17-november-2026/cover-de.webp",
-    "blog/media/2026/11/switzerland-snow-report-17-november-2026/cover-de_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "storm_next",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 697,
+  "overlap": 27.2,
+  "with": "norway-snow-report-16-november-2026",
+  "langs_off": [],
+  "score": 138.2,
+  "intent": "cc:CH|storm_next",
+  "guide": false,
+  "v": 1
  }
 }

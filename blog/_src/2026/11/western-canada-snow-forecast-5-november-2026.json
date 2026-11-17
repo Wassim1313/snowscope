@@ -281,7 +281,51 @@
      "2026-11-08": 19
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Whistler Blackcomb",
+     "slug": "whistler",
+     "now_cm": 20,
+     "usual_cm": 66,
+     "high_cm": 115,
+     "week_ago_cm": null,
+     "height_m": 1456,
+     "best_weeks": [
+      13,
+      12,
+      11
+     ],
+     "ratio_pct": 30,
+     "deeper_than": 4,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Whistler Blackcomb",
+   "top_cm": 36,
+   "top_m": 2259,
+   "base_cm": 0,
+   "base_m": 653,
+   "rain_day": "2026-11-07",
+   "freezing_m": 2660,
+   "lift_top_m": 2259,
+   "next_cm": 94,
+   "second": "Ski Callaghan",
+   "second_cm": 24,
+   "depth_cm": 65
+  },
+  "story": {
+   "id": "storm_next",
+   "place": "resort:whistler",
+   "score": 75,
+   "resort": "Whistler Blackcomb"
+  }
  },
  "media": [
   {
@@ -341,6 +385,18 @@
      ]
     },
     {
+     "h": "The snow still to come",
+     "p": [
+      "Up to 94 cm of new snow is forecast at Whistler Blackcomb over the next days.",
+      "Forecasts move: the timing is usually more reliable than the totals, so check again two days before you go.",
+      "At about 1,456 m, Whistler Blackcomb has 20 cm today; a normal 5 November has 66 cm there.",
+      "That is more than in 4 of the 46 past winters on this date.",
+      "In past winters the best snow at Whistler Blackcomb usually came mid-March / late March.",
+      "Day by day at Whistler Blackcomb: Thursday 5 November 11 cm; Friday 6 November 22 cm; Saturday 7 November 14 cm; Sunday 8 November 58 cm.",
+      "Height by height at Whistler Blackcomb: 653 m 0 cm on the ground, 0 cm more in the next 7 days; 1,456 m 22 cm on the ground, 76 cm more in the next 7 days; 2,259 m 36 cm on the ground, 104 cm more in the next 7 days."
+     ]
+    },
+    {
      "h": "Height, slopes and snow line",
      "p": [
       "At Whistler Blackcomb, the freezing level reaches 1,690 m to 2,660 m on 7 November, above the top of the resort (2,259 m): rain or wet snow is possible on every slope that day.",
@@ -386,6 +442,18 @@
      "p": [
       "D'ici le 8 novembre, notre prévision donne 54 cm à Mount Cain Alpine Park et 20 cm à Sasquatch.",
       "La surface enneigée est passée de 340 910 km² le 3 novembre à 314 170 km² aujourd'hui, et notre prévision donne 284 240 km² le 8 novembre."
+     ]
+    },
+    {
+     "h": "La neige encore à venir",
+     "p": [
+      "Jusqu'à 94 cm de neige fraîche sont prévus à Whistler Blackcomb dans les prochains jours.",
+      "Les prévisions bougent : le moment est souvent plus fiable que les quantités, revérifiez deux jours avant de partir.",
+      "Vers 1 456 m, Whistler Blackcomb a 20 cm aujourd'hui ; un 5 novembre normal y compte 66 cm.",
+      "C'est plus que lors de 4 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Whistler Blackcomb arrivait d'habitude mi-mars / fin mars.",
+      "Jour après jour à Whistler Blackcomb : jeudi 5 novembre 11 cm; vendredi 6 novembre 22 cm; samedi 7 novembre 14 cm; dimanche 8 novembre 58 cm.",
+      "Altitude par altitude à Whistler Blackcomb : 653 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours; 1 456 m 22 cm au sol, 76 cm de plus dans les 7 prochains jours; 2 259 m 36 cm au sol, 104 cm de plus dans les 7 prochains jours."
      ]
     },
     {
@@ -442,8 +510,8 @@
    "writer": "template"
   }
  },
- "words_en": 298,
- "indexable": true,
+ "words_en": 560,
+ "indexable": false,
  "main": {
   "slug": "whistler",
   "name": "Whistler Blackcomb",
@@ -552,5 +620,26 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@50.089,-122.942,9.0",
- "seconds": 27.2
+ "seconds": 27.2,
+ "rewrite": {
+  "v": 1,
+  "story": "storm_next",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 560 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 560 < 600"
+  ],
+  "words": 560,
+  "overlap": 17.8,
+  "with": "us-west-snow-forecast-4-november-2026",
+  "langs_off": [],
+  "score": 128.6,
+  "intent": "resort:whistler|storm_next",
+  "guide": false,
+  "v": 1
+ }
 }

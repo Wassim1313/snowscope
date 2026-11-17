@@ -258,7 +258,49 @@
      "2026-11-13": 4
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Manning Park Resort",
+     "slug": "manning_park_resort",
+     "now_cm": 8,
+     "usual_cm": 28,
+     "high_cm": 75,
+     "week_ago_cm": 5,
+     "height_m": 1574,
+     "best_weeks": [
+      14,
+      13,
+      12
+     ],
+     "ratio_pct": 29
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Manning Park Resort",
+   "top_cm": 18,
+   "top_m": 1789,
+   "base_cm": 1,
+   "base_m": 1359,
+   "rain_day": "2026-11-11",
+   "freezing_m": 3030,
+   "lift_top_m": 1789,
+   "next_cm": 0,
+   "second": "Big White",
+   "second_cm": 85,
+   "depth_cm": 110
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:manning_park_resort",
+   "score": 58,
+   "resort": "Manning Park Resort"
+  }
  },
  "media": [
   {
@@ -282,6 +324,18 @@
      "p": [
       "The white area on the map dropped from 270,720 km² (8 November) to 260,060 km² today, and the forecast says 235,100 km² on 13 November.",
       "Big White by height, from our model: top 62 cm (2,271 m), middle 10 cm (1,891 m), base 0 cm (1,512 m)."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Wednesday 11 November the freezing level climbs to about 3,030 m, above the top of the lifts at 1,789 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 1,574 m, Manning Park Resort has 8 cm today; a normal 10 November has 28 cm there.",
+      "Only one winter in ten has more than 75 cm on this date.",
+      "A week ago the same spot had 5 cm.",
+      "In past winters the best snow at Manning Park Resort usually came late March / early April.",
+      "Height by height at Manning Park Resort: 1,359 m 1 cm on the ground, 4 cm more in the next 7 days; 1,574 m 9 cm on the ground, 12 cm more in the next 7 days; 1,789 m 18 cm on the ground, 12 cm more in the next 7 days."
      ]
     },
     {
@@ -323,8 +377,8 @@
    "writer": "template"
   }
  },
- "words_en": 288,
- "indexable": true,
+ "words_en": 541,
+ "indexable": false,
  "main": {
   "slug": "manning_park_resort",
   "name": "Manning Park Resort",
@@ -452,5 +506,26 @@
    "with_after": "western-canada-mount-washington-alpine-resort-snow-depth-today-8-november-2026",
    "voice": "sat"
   }
- ]
+ ],
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 541 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 541 < 600"
+  ],
+  "words": 541,
+  "overlap": 16.9,
+  "with": "pyrenees-where-to-ski-this-weekend-4-november-2026",
+  "langs_off": [],
+  "score": 108.5,
+  "intent": "resort:manning_park_resort|rain_risk",
+  "guide": false,
+  "v": 1
+ }
 }

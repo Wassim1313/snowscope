@@ -343,7 +343,7 @@
   }
  },
  "words_en": 410,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "meribel",
   "name": "Méribel",
@@ -387,5 +387,20 @@
   },
   "credit": null,
   "photo": null
+ },
+ "noindex_why": "quality: words 469 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 469 < 600"
+  ],
+  "words": 469,
+  "overlap": 0.6,
+  "with": "tignes-snow-conditions-13-november-2026",
+  "langs_off": [],
+  "score": 51.5,
+  "intent": "meribel|snow-forecast",
+  "guide": false,
+  "v": 1
  }
 }

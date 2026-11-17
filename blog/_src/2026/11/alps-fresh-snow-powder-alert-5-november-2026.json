@@ -308,7 +308,48 @@
     "cm_in_72h": 36,
     "km_from_resort": 5
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Isola 2000",
+     "slug": "isola_2000",
+     "now_cm": 14,
+     "usual_cm": 1,
+     "high_cm": 12,
+     "week_ago_cm": null,
+     "height_m": 2214,
+     "best_weeks": [
+      8,
+      6,
+      7
+     ],
+     "ratio_pct": null,
+     "deeper_than": 43,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Isola 2000",
+   "top_cm": 17,
+   "top_m": 2601,
+   "base_cm": 12,
+   "base_m": 1828,
+   "next_cm": 7,
+   "second": "Artesina",
+   "second_cm": 22,
+   "depth_cm": 19
+  },
+  "story": {
+   "id": "best_week",
+   "place": "resort:isola_2000",
+   "score": 31,
+   "resort": "Isola 2000"
+  }
  },
  "media": [
   {
@@ -368,6 +409,16 @@
      ]
     },
     {
+     "h": "Against past winters",
+     "p": [
+      "At about 2,214 m, Isola 2000 has 14 cm today; a normal 5 November has 1 cm there.",
+      "That is more than in 43 of the 46 past winters on this date.",
+      "In past winters the best snow at Isola 2000 usually came early February / mid-February.",
+      "Day by day at Isola 2000: Thursday 5 November 30 cm; Friday 6 November 7 cm.",
+      "Height by height at Isola 2000: 1,828 m 12 cm on the ground, 13 cm more in the next 7 days; 2,214 m 14 cm on the ground, 19 cm more in the next 7 days; 2,601 m 17 cm on the ground, 25 cm more in the next 7 days."
+     ]
+    },
+    {
      "h": "Current Snow Depths and Freezing Levels",
      "p": [
       "As of Thursday, November 5, 2026, Isola 2000 has a modelled snow depth of 19 cm on its upper slopes. Artesina reports 22 cm, and Valberg has 12 cm. The freezing level at Isola 2000 is expected to be between 2200 m and 2430 m today, November 5, and similar tomorrow, November 6. At Artesina, the freezing level is lower, ranging from 1490 m to 1670 m today.",
@@ -411,6 +462,16 @@
      "p": [
       "Au cours des trois derniers jours, les Alpes du Sud ont connu d'importantes chutes de neige. Isola 2000 en France a reçu 58 cm de neige fraîche, dont 30 cm tombés au cours des dernières 24 heures seulement, selon la modélisation du 5 novembre 2026. Artesina en Italie a également vu 55 cm de neige fraîche au cours des dernières 72 heures, dont 31 cm au cours des dernières 24 heures.",
       "D'autres stations ont enregistré d'importantes chutes de neige fraîche, notamment Valberg en France avec 53 cm, Monesi di Triora en Italie avec 52 cm et Riserva Bianca en Italie avec 52 cm. Ces chiffres représentent l'accumulation de neige sur les pistes supérieures, telle qu'estimée par notre modèle de neige le 5 novembre 2026. La superficie totale enneigée dans les Alpes est passée de 35 390 km² le 3 novembre à 46 450 km² le 5 novembre."
+     ]
+    },
+    {
+     "h": "Face aux hivers passés",
+     "p": [
+      "Vers 2 214 m, Isola 2000 a 14 cm aujourd'hui ; un 5 novembre normal y compte 1 cm.",
+      "C'est plus que lors de 43 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Isola 2000 arrivait d'habitude début février / mi-février.",
+      "Jour après jour à Isola 2000 : jeudi 5 novembre 30 cm; vendredi 6 novembre 7 cm.",
+      "Altitude par altitude à Isola 2000 : 1 828 m 12 cm au sol, 13 cm de plus dans les 7 prochains jours; 2 214 m 14 cm au sol, 19 cm de plus dans les 7 prochains jours; 2 601 m 17 cm au sol, 25 cm de plus dans les 7 prochains jours."
      ]
     },
     {
@@ -458,8 +519,8 @@
    "usd": 0.004023
   }
  },
- "words_en": 497,
- "indexable": true,
+ "words_en": 720,
+ "indexable": false,
  "main": {
   "slug": "isola_2000",
   "name": "Isola 2000",
@@ -568,5 +629,26 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@44.183,7.149,9.0",
- "seconds": 25.4
+ "seconds": 25.4,
+ "rewrite": {
+  "v": 1,
+  "story": "best_week",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: powder alert of a small resort",
+ "quality": {
+  "ok": false,
+  "why": [
+   "powder alert of a small resort"
+  ],
+  "words": 720,
+  "overlap": 4.3,
+  "with": "us-west-fresh-snow-powder-alert-4-november-2026",
+  "langs_off": [],
+  "score": 93.4,
+  "intent": "resort:isola_2000|best_week",
+  "guide": false,
+  "v": 1
+ }
 }

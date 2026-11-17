@@ -211,7 +211,7 @@
   }
  },
  "words_en": 289,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "val_thorens",
   "name": "Val Thorens",
@@ -379,5 +379,21 @@
   },
   "credit": null,
   "photo": null
+ },
+ "noindex_why": "quality: words 326 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 326 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 326,
+  "overlap": 0.8,
+  "with": "france-snow-report-16-november-2026",
+  "langs_off": [],
+  "score": 42.3,
+  "intent": "alps|market-uk",
+  "guide": false,
+  "v": 1
  }
 }

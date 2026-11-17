@@ -805,7 +805,7 @@
   }
  },
  "words_en": 550,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "alta",
   "name": "Alta Ski Area",
@@ -867,5 +867,20 @@
   },
   "credit": null,
   "photo": null
+ },
+ "noindex_why": "quality: words 580 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 580 < 600"
+  ],
+  "words": 580,
+  "overlap": 1.1,
+  "with": "us-west-fresh-snow-powder-alert-4-november-2026",
+  "langs_off": [],
+  "score": 57.0,
+  "intent": "us_west|guide_feature_resort",
+  "guide": true,
+  "v": 1
  }
 }

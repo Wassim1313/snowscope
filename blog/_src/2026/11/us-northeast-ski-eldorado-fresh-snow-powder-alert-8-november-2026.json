@@ -233,7 +233,7 @@
   }
  },
  "words_en": 263,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "ski_eldorado_secteur_10e_rang",
   "name": "Ski Eldorado",
@@ -293,5 +293,23 @@
    "with_after": "us-west-telluride-snow-depth-today-8-november-2026",
    "voice": "field"
   }
- ]
+ ],
+ "noindex_why": "quality: words 385 < 600; no table or chart of its own; dated pure-numbers daily; powder alert of a small resort",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 385 < 600",
+   "no table or chart of its own",
+   "dated pure-numbers daily",
+   "powder alert of a small resort"
+  ],
+  "words": 385,
+  "overlap": 10.4,
+  "with": "us-west-fresh-snow-powder-alert-4-november-2026",
+  "langs_off": [],
+  "score": 29.9,
+  "intent": "ski_eldorado_secteur_10e_rang|fresh-snow",
+  "guide": false,
+  "v": 1
+ }
 }

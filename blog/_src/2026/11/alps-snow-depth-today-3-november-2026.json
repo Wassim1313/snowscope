@@ -309,7 +309,46 @@
     "measured_on": "2026-11-01",
     "network": "lombardia"
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Bonneval-sur-Arc",
+     "slug": "bonneval_sur_arc",
+     "now_cm": 6,
+     "usual_cm": 10,
+     "high_cm": 38,
+     "week_ago_cm": 6,
+     "height_m": 2371,
+     "best_weeks": [
+      10,
+      11,
+      9
+     ],
+     "ratio_pct": 60
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Bonneval-sur-Arc",
+   "top_cm": 15,
+   "top_m": 2948,
+   "base_cm": 0,
+   "base_m": 1794,
+   "next_cm": 14,
+   "second": "Schnalstal",
+   "second_cm": 48,
+   "depth_cm": 55
+  },
+  "story": {
+   "id": "vs_normal_low",
+   "place": "resort:bonneval_sur_arc",
+   "score": 44,
+   "resort": "Bonneval-sur-Arc"
+  }
  },
  "media": [
   {
@@ -346,6 +385,18 @@
      "p": [
       "The snow cover shrank from 37,780 km² on 1 November to 25,190 km² today, and our forecast gives 28,740 km² on 6 November.",
       "Height matters: at Bonneval-sur-Arc, our model gives 15 cm at the top (2,948 m), 0 cm at mid-mountain (2,371 m) and 0 cm at the base (1,794 m)."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 2,371 m, Bonneval-sur-Arc has 6 cm today; a normal 3 November has 10 cm there.",
+      "Only one winter in ten has more than 38 cm on this date.",
+      "A week ago the same spot had 6 cm.",
+      "In past winters the best snow at Bonneval-sur-Arc usually came early March / mid-March.",
+      "A slow start is common and says little about January; for now the highest lifts and the runs with snowmaking are the safe choice.",
+      "Day by day at Bonneval-sur-Arc: Wednesday 4 November 6 cm; Thursday 5 November 2 cm; Friday 6 November 6 cm.",
+      "Height by height at Bonneval-sur-Arc: 1,794 m 0 cm on the ground, 6 cm more in the next 7 days; 2,371 m 0 cm on the ground, 10 cm more in the next 7 days; 2,948 m 15 cm on the ground, 12 cm more in the next 7 days."
      ]
     },
     {
@@ -396,6 +447,18 @@
      ]
     },
     {
+     "h": "Face aux hivers passés",
+     "p": [
+      "Vers 2 371 m, Bonneval-sur-Arc a 6 cm aujourd'hui ; un 3 novembre normal y compte 10 cm.",
+      "Un hiver sur dix seulement dépasse 38 cm à cette date.",
+      "Il y a une semaine, le même endroit avait 6 cm.",
+      "Les hivers passés, la meilleure neige à Bonneval-sur-Arc arrivait d'habitude début mars / mi-mars.",
+      "Un début lent est fréquent et dit peu de choses sur janvier ; pour l'instant, les remontées les plus hautes et les pistes équipées de neige de culture sont le choix sûr.",
+      "Jour après jour à Bonneval-sur-Arc : mercredi 4 novembre 6 cm; jeudi 5 novembre 2 cm; vendredi 6 novembre 6 cm.",
+      "Altitude par altitude à Bonneval-sur-Arc : 1 794 m 0 cm au sol, 6 cm de plus dans les 7 prochains jours; 2 371 m 0 cm au sol, 10 cm de plus dans les 7 prochains jours; 2 948 m 15 cm au sol, 12 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
      "h": "Ce que mesurent les stations",
      "p": [
       "La station de mesure Rosskar (2 680 m) a mesuré 32 cm de neige au sol le 2 novembre. La station de mesure Plattkopf (2 220 m) a mesuré 30 cm de neige au sol le 2 novembre, dont 8 cm de neige fraîche en 24 heures. La station de mesure Pian Camuno Roncaglia SCM2 (600 m) a mesuré 26 cm de neige au sol le 1 novembre.",
@@ -439,7 +502,7 @@
    "writer": "template"
   }
  },
- "words_en": 325,
+ "words_en": 604,
  "indexable": true,
  "main": {
   "slug": "bonneval_sur_arc",
@@ -549,5 +612,39 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@45.361,7.057,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_low",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 604,
+  "overlap": 14.7,
+  "with": "us-west-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 95.0,
+  "intent": "resort:bonneval_sur_arc|vs_normal_low",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "split",
+  "files": {
+   "en": [
+    "blog/media/2026/11/alps-snow-depth-today-3-november-2026/cover-en.webp",
+    "blog/media/2026/11/alps-snow-depth-today-3-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/alps-snow-depth-today-3-november-2026/cover-fr.webp",
+    "blog/media/2026/11/alps-snow-depth-today-3-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

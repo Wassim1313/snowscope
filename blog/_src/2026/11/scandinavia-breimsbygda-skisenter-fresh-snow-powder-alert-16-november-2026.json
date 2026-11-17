@@ -309,7 +309,48 @@
     "cm_in_72h": 76,
     "km_from_resort": 16
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Breimsbygda Skisenter",
+     "slug": "breimsbygda_skisenter",
+     "now_cm": 41,
+     "usual_cm": 84,
+     "high_cm": 120,
+     "week_ago_cm": null,
+     "height_m": 740,
+     "best_weeks": [
+      12,
+      13,
+      14
+     ],
+     "ratio_pct": 49,
+     "deeper_than": 6,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Breimsbygda Skisenter",
+   "top_cm": 36,
+   "top_m": 845,
+   "base_cm": 28,
+   "base_m": 635,
+   "next_cm": 1,
+   "second": "Jølster Skisenter",
+   "second_cm": 45,
+   "depth_cm": 50
+  },
+  "story": {
+   "id": "vs_normal_low",
+   "place": "resort:breimsbygda_skisenter",
+   "score": 56,
+   "resort": "Breimsbygda Skisenter"
+  }
  },
  "media": [
   {
@@ -359,6 +400,17 @@
      "p": [
       "If you want depth, Breimsbygda Skisenter (Norway) is the place this Monday: around 50 cm up top. The runners-up are Myrkdalen (49 cm) and Harpefossen skisenter (46 cm).",
       "Fresh snow changes fast: wind packs it on open slopes and mild air makes it heavy, so the best of it is usually in the first morning after the snowfall, in the trees and on the sheltered side of the fjell."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 740 m, Breimsbygda Skisenter has 41 cm today; a normal 16 November has 84 cm there.",
+      "That is more than in 6 of the 46 past winters on this date.",
+      "In past winters the best snow at Breimsbygda Skisenter usually came late March / early April.",
+      "A slow start is common and says little about January; for now the highest lifts and the runs with snowmaking are the safe choice.",
+      "Day by day at Breimsbygda Skisenter: Monday 16 November 1 cm; Thursday 19 November 1 cm.",
+      "Height by height at Breimsbygda Skisenter: 635 m 28 cm on the ground, 10 cm more in the next 7 days; 740 m 34 cm on the ground, 9 cm more in the next 7 days; 845 m 36 cm on the ground, 10 cm more in the next 7 days."
      ]
     },
     {
@@ -468,8 +520,8 @@
    "voice": "sat"
   }
  },
- "words_en": 300,
- "indexable": true,
+ "words_en": 511,
+ "indexable": false,
  "main": {
   "slug": "breimsbygda_skisenter",
   "name": "Breimsbygda Skisenter",
@@ -591,20 +643,27 @@
   "with": "alps-les-deux-alpes-fresh-snow-powder-alert-15-november-2026"
  },
  "publish_utc": "2026-11-16T20:42:46Z",
- "cover": {
+ "cover": {},
+ "rewrite": {
   "v": 1,
-  "style": "hero",
-  "files": {
-   "en": [
-    "blog/media/2026/11/scandinavia-breimsbygda-skisenter-fresh-snow-powder-alert-16-november-2026/cover-en.webp",
-    "blog/media/2026/11/scandinavia-breimsbygda-skisenter-fresh-snow-powder-alert-16-november-2026/cover-en_t.webp"
-   ],
-   "nb": [
-    "blog/media/2026/11/scandinavia-breimsbygda-skisenter-fresh-snow-powder-alert-16-november-2026/cover-nb.webp",
-    "blog/media/2026/11/scandinavia-breimsbygda-skisenter-fresh-snow-powder-alert-16-november-2026/cover-nb_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "vs_normal_low",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 511 < 600; powder alert of a small resort",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 511 < 600",
+   "powder alert of a small resort"
+  ],
+  "words": 511,
+  "overlap": 9.8,
+  "with": "alps-les-deux-alpes-fresh-snow-powder-alert-14-november-2026",
+  "langs_off": [],
+  "score": 108.2,
+  "intent": "resort:breimsbygda_skisenter|vs_normal_low",
+  "guide": false,
+  "v": 1
  }
 }

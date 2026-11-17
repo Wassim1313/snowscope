@@ -204,7 +204,38 @@
      "network": "USDA NRCS SNOTEL"
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Wolf Creek",
+     "slug": "wolf_creek_ski_area",
+     "now_cm": 23,
+     "usual_cm": 20,
+     "high_cm": 102,
+     "week_ago_cm": 24,
+     "height_m": 3356,
+     "best_weeks": [
+      53,
+      12,
+      11
+     ],
+     "ratio_pct": 115
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Wolf Creek"
+  },
+  "story": {
+   "id": "vs_normal_par",
+   "place": "resort:wolf_creek_ski_area",
+   "score": 32,
+   "resort": "Wolf Creek"
+  }
  },
  "media": [
   {
@@ -230,6 +261,15 @@
       "Telluride, 10,620 ft (3,237 m): 8 in (20 cm) today, more than last winter's 0 in (0 cm) on 11 November. The usual value for this date: 9 in (24 cm).",
       "Silverton Mountain at 10,643 ft (3,244 m): 31 in (79 cm) now, more than the 0 in (0 cm) of 11 November last winter. Usual for the date: 7 in (17 cm).",
       "Purgatory Resort, 9,820 ft (2,993 m): 4 in (10 cm) today, more than last winter's 0 in (0 cm) on 11 November. The usual value for this date: 6 in (14 cm)."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 11,010 ft (3,356 m), Wolf Creek has 9 in (23 cm) today; a normal 11 November has 8 in (20 cm) there.",
+      "Only one winter in ten has more than 40 in (102 cm) on this date.",
+      "A week ago the same spot had 9 in (24 cm).",
+      "In past winters the best snow at Wolf Creek usually came early January / mid-March."
      ]
     },
     {
@@ -278,7 +318,7 @@
    "voice": "sat"
   }
  },
- "words_en": 515,
+ "words_en": 689,
  "indexable": true,
  "main": {
   "slug": "wolf_creek_ski_area",
@@ -387,5 +427,35 @@
   "max": 0.13,
   "with": "alps-snow-this-season-vs-last-season-8-november-2026"
  },
- "publish_utc": "2026-11-11T18:44:22Z"
+ "publish_utc": "2026-11-11T18:44:22Z",
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_par",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 689,
+  "overlap": 7.2,
+  "with": "us-west-freezing-level-snow-line-8-november-2026",
+  "langs_off": [],
+  "score": 88.0,
+  "intent": "resort:wolf_creek_ski_area|vs_normal_par",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "hero",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-snow-this-season-vs-last-season-11-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-snow-this-season-vs-last-season-11-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

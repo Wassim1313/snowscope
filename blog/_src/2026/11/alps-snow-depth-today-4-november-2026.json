@@ -304,7 +304,49 @@
     "measured_on": "2026-11-01",
     "network": "lombardia"
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Terenten",
+     "slug": "terenten_terento_terenten_terento",
+     "now_cm": 0,
+     "usual_cm": 1,
+     "high_cm": 15,
+     "week_ago_cm": 0,
+     "height_m": 1308,
+     "best_weeks": [
+      9,
+      8,
+      6
+     ],
+     "ratio_pct": null
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Terenten",
+   "top_cm": 1,
+   "top_m": 1381,
+   "base_cm": 0,
+   "base_m": 1235,
+   "rain_day": "2026-11-05",
+   "freezing_m": 2970,
+   "lift_top_m": 1381,
+   "next_cm": 0,
+   "second": "Speikboden",
+   "second_cm": 50,
+   "depth_cm": 73
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:terenten_terento_terenten_terento",
+   "score": 22,
+   "resort": "Terenten"
+  }
  },
  "media": [
   {
@@ -325,6 +367,18 @@
      "h": "Where the snow is today",
      "p": [
       "The snow cover grew from 36,920 km² on 2 November to 43,150 km² today, and our forecast gives 31,110 km² on 7 November."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Thursday 5 November the freezing level climbs to about 2,970 m, above the top of the lifts at 1,381 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 1,308 m, Terenten has 0 cm today; a normal 4 November has 1 cm there.",
+      "Only one winter in ten has more than 15 cm on this date.",
+      "A week ago the same spot had 0 cm.",
+      "In past winters the best snow at Terenten usually came early February / late February.",
+      "Height by height at Terenten: 1,235 m 0 cm on the ground, 0 cm more in the next 7 days; 1,308 m 0 cm on the ground, 0 cm more in the next 7 days; 1,381 m 1 cm on the ground, 0 cm more in the next 7 days."
      ]
     },
     {
@@ -372,6 +426,18 @@
      ]
     },
     {
+     "h": "Regen bis ganz oben?",
+     "p": [
+      "Am Donnerstag, 5. November steigt die Nullgradgrenze auf etwa 2.970 m, über die Bergstation auf 1.381 m: Regen ist bis ganz oben möglich.",
+      "Regen auf Neuschnee macht ihn schwer und nach einer kalten Nacht eisig: Die Tage danach eignen sich eher für Pisten als für Powder.",
+      "Auf etwa 1.308 m hat Terenten heute 0 cm; an einem normalen 4. November sind es dort 1 cm.",
+      "Nur jeder zehnte Winter hat an diesem Tag mehr als 15 cm.",
+      "Vor einer Woche lagen an derselben Stelle 0 cm.",
+      "In früheren Wintern kam der beste Schnee in Terenten meist Anfang Februar / Ende Februar.",
+      "Höhe für Höhe in Terenten: 1.235 m 0 cm am Boden, 0 cm mehr in den nächsten 7 Tagen; 1.308 m 0 cm am Boden, 0 cm mehr in den nächsten 7 Tagen; 1.381 m 1 cm am Boden, 0 cm mehr in den nächsten 7 Tagen."
+     ]
+    },
+    {
      "h": "Was die Messstationen zeigen",
      "p": [
       "Die Messstation Rosskar (2.680 m) maß am 2. November eine Schneehöhe von 32 cm. Die Messstation Plattkopf (2.220 m) maß am 2. November eine Schneehöhe von 30 cm, davon 8 cm Neuschnee in 24 Stunden. Die Messstation Pian Camuno Roncaglia SCM2 (600 m) maß am 1. November eine Schneehöhe von 26 cm.",
@@ -413,6 +479,18 @@
      "h": "Dove c'è neve oggi",
      "p": [
       "La superficie innevata è passata da 36.920 km² il 2 novembre a 43.150 km² oggi, e la nostra previsione indica 31.110 km² il 7 novembre."
+     ]
+    },
+    {
+     "h": "Pioggia fino in cima?",
+     "p": [
+      "Il giovedì 5 novembre lo zero termico sale verso 2.970 m, sopra la cima degli impianti a 1.381 m: può piovere fino in alto.",
+      "La pioggia sulla neve fresca la appesantisce e, dopo una notte fredda, la rende ghiacciata: i giorni dopo sono più adatti alle piste battute che alla powder.",
+      "A circa 1.308 m, Terenten ha oggi 0 cm; un 4 novembre normale ne ha 1 cm.",
+      "Solo un inverno su dieci supera 15 cm in questa data.",
+      "Una settimana fa nello stesso punto c'erano 0 cm.",
+      "Negli inverni passati la neve migliore a Terenten arrivava di solito a inizio febbraio / fine febbraio.",
+      "Quota per quota a Terenten: 1.235 m 0 cm al suolo, 0 cm in più nei prossimi 7 giorni; 1.308 m 0 cm al suolo, 0 cm in più nei prossimi 7 giorni; 1.381 m 1 cm al suolo, 0 cm in più nei prossimi 7 giorni."
      ]
     },
     {
@@ -460,8 +538,8 @@
    "writer": "template"
   }
  },
- "words_en": 270,
- "indexable": true,
+ "words_en": 539,
+ "indexable": false,
  "main": {
   "slug": "terenten_terento_terenten_terento",
   "name": "Terenten",
@@ -570,5 +648,27 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@46.834,11.780,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 539 < 600; overlap 37 % with alps-snow-depth-today-3-november-2026",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 539 < 600",
+   "overlap 37 % with alps-snow-depth-today-3-november-2026"
+  ],
+  "words": 539,
+  "overlap": 36.8,
+  "with": "alps-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 68.6,
+  "intent": "resort:terenten_terento_terenten_terento|rain_risk",
+  "guide": false,
+  "v": 1
+ }
 }

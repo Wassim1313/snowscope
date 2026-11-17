@@ -448,7 +448,7 @@
   }
  },
  "words_en": 497,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "isola_2000",
   "name": "Isola 2000",
@@ -485,5 +485,20 @@
   "with": "oukaimeden-neige-atlas-maroc-12-novembre-2026",
   "tries": 0
  },
- "publish_utc": "2026-11-12T07:43:49Z"
+ "publish_utc": "2026-11-12T07:43:49Z",
+ "noindex_why": "quality: words 563 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 563 < 600"
+  ],
+  "words": 563,
+  "overlap": 1.4,
+  "with": "alps-where-to-ski-best-snow-8-november-2026",
+  "langs_off": [],
+  "score": 56.1,
+  "intent": "isola_2000|ski-map",
+  "guide": false,
+  "v": 1
+ }
 }

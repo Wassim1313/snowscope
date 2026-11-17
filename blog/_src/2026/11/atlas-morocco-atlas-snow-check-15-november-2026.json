@@ -427,7 +427,7 @@
   }
  },
  "words_en": 240,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "jbel_hebri",
   "name": "Jbel Hebri",
@@ -533,5 +533,21 @@
   },
   "credit": null,
   "photo": null
+ },
+ "noindex_why": "quality: words 320 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 320 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 320,
+  "overlap": 8.7,
+  "with": "us-west-kirkwood-snow-forecast-12-november-2026",
+  "langs_off": [],
+  "score": 34.8,
+  "intent": "atlas|snow-check",
+  "guide": false,
+  "v": 1
  }
 }

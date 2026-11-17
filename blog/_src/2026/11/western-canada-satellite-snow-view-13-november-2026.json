@@ -162,7 +162,42 @@
      "seen_on": "2026-11-10"
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Manning Park Resort",
+     "slug": "manning_park_resort",
+     "now_cm": 7,
+     "usual_cm": 33,
+     "high_cm": 77,
+     "week_ago_cm": 6,
+     "height_m": 1574,
+     "best_weeks": [
+      14,
+      13,
+      12
+     ],
+     "ratio_pct": 21
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Manning Park Resort",
+   "next_cm": 10,
+   "second": "Big White",
+   "second_cm": 86,
+   "depth_cm": 120
+  },
+  "story": {
+   "id": "resort_lead",
+   "place": "resort:manning_park_resort",
+   "score": 23,
+   "resort": "Manning Park Resort"
+  }
  },
  "media": [
   {
@@ -199,6 +234,17 @@
      ]
     },
     {
+     "h": "Far ahead of the rest",
+     "p": [
+      "Manning Park Resort has 120 cm on its upper slopes, well ahead of Big White with 86 cm.",
+      "At about 1,574 m, Manning Park Resort has 7 cm today; a normal 13 November has 33 cm there.",
+      "Only one winter in ten has more than 77 cm on this date.",
+      "A week ago the same spot had 6 cm.",
+      "In past winters the best snow at Manning Park Resort usually came late March / early April.",
+      "Day by day at Manning Park Resort: Saturday 14 November 2 cm; Sunday 15 November 6 cm; Monday 16 November 2 cm."
+     ]
+    },
+    {
      "h": "Seen from orbit",
      "p": [
       "Manning Park Resort: snow-covered in the last clear view, on 4 November. Clear sky over Big White on 4 November, and the image shows snow cover. Marmot Basin: snow-covered in the last clear view, on 4 November. Clear sky over Revelstoke on 4 November, and the image shows snow cover. Tweedsmuir Ski Club: snow-covered in the last clear view, on 10 November."
@@ -230,7 +276,7 @@
    "voice": "sat"
   }
  },
- "words_en": 228,
+ "words_en": 414,
  "indexable": false,
  "main": {
   "slug": "manning_park_resort",
@@ -357,5 +403,26 @@
   "max": 0.146,
   "with": "us-west-snow-vs-past-winters-11-november-2026"
  },
- "publish_utc": "2026-11-13T19:19:23Z"
+ "publish_utc": "2026-11-13T19:19:23Z",
+ "rewrite": {
+  "v": 1,
+  "story": "resort_lead",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 414 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 414 < 600"
+  ],
+  "words": 414,
+  "overlap": 9.9,
+  "with": "us-west-cimarron-mountain-club-snow-depth-today-12-november-2026",
+  "langs_off": [],
+  "score": 62.3,
+  "intent": "resort:manning_park_resort|resort_lead",
+  "guide": false,
+  "v": 1
+ }
 }

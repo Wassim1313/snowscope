@@ -714,7 +714,7 @@
   }
  },
  "words_en": 516,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "jackson_hole",
   "name": "Jackson Hole Mountain Resort",
@@ -765,5 +765,20 @@
   },
   "credit": null,
   "photo": null
+ },
+ "noindex_why": "quality: words 594 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 594 < 600"
+  ],
+  "words": 594,
+  "overlap": 1.0,
+  "with": "st-anton-snow-month-by-month-arlberg",
+  "langs_off": [],
+  "score": 57.7,
+  "intent": "us_west|guide_feature_resort",
+  "guide": true,
+  "v": 1
  }
 }

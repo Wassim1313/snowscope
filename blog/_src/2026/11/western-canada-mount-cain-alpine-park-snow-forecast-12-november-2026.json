@@ -163,7 +163,48 @@
    }
   ],
   "focus_index": 1,
-  "title_focus_resort": "Mount Cain Alpine Park"
+  "title_focus_resort": "Mount Cain Alpine Park",
+  "normal": {
+   "rows": [
+    {
+     "name": "Mount Cain Alpine Park",
+     "slug": "mount_cain_alpine_park",
+     "now_cm": 28,
+     "usual_cm": 12,
+     "high_cm": 81,
+     "week_ago_cm": null,
+     "height_m": 1403,
+     "best_weeks": [
+      53,
+      15,
+      16
+     ],
+     "ratio_pct": 233,
+     "deeper_than": 26,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Mount Cain Alpine Park",
+   "top_cm": 52,
+   "top_m": 1616,
+   "base_cm": 0,
+   "base_m": 1190,
+   "rain_day": "2026-11-13",
+   "freezing_m": 2160,
+   "lift_top_m": 1616,
+   "next_cm": 37
+  },
+  "story": {
+   "id": "vs_normal_high",
+   "place": "resort:mount_cain_alpine_park",
+   "score": 62,
+   "resort": "Mount Cain Alpine Park"
+  }
  },
  "media": [
   {
@@ -210,6 +251,17 @@
      ]
     },
     {
+     "h": "Against past winters",
+     "p": [
+      "At about 1,403 m, Mount Cain Alpine Park has 28 cm today; a normal 12 November has 12 cm there.",
+      "That is more than in 26 of the 46 past winters on this date.",
+      "In past winters the best snow at Mount Cain Alpine Park usually came early January / mid-April.",
+      "An early lead like this matters most for the lower and middle runs, which usually wait until December for this much snow.",
+      "Day by day at Mount Cain Alpine Park: Thursday 12 November 6 cm; Friday 13 November 1 cm; Saturday 14 November 7 cm; Sunday 15 November 29 cm.",
+      "Height by height at Mount Cain Alpine Park: 1,190 m 0 cm on the ground, 12 cm more in the next 7 days; 1,403 m 7 cm on the ground, 16 cm more in the next 7 days; 1,616 m 52 cm on the ground, 21 cm more in the next 7 days."
+     ]
+    },
+    {
      "h": "Top, middle, bottom",
      "p": [
       "On 13 November the freezing level at Whistler Blackcomb climbs to 1,480 m to 2,680 m, higher than the top of the lifts (2,259 m): expect rain or wet snow on every slope.",
@@ -250,8 +302,8 @@
    "rewrite": 1
   }
  },
- "words_en": 271,
- "indexable": true,
+ "words_en": 531,
+ "indexable": false,
  "main": {
   "slug": "mount_cain_alpine_park",
   "name": "Mount Cain Alpine Park",
@@ -326,5 +378,26 @@
   "max": 0.144,
   "with": "western-canada-mount-cain-alpine-park-fresh-snow-powder-alert-12-november-2026"
  },
- "publish_utc": "2026-11-12T14:17:06Z"
+ "publish_utc": "2026-11-12T14:17:06Z",
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_high",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 531 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 531 < 600"
+  ],
+  "words": 531,
+  "overlap": 13.8,
+  "with": "us-west-wolf-creek-snow-depth-today-10-november-2026",
+  "langs_off": [],
+  "score": 114.1,
+  "intent": "resort:mount_cain_alpine_park|vs_normal_high",
+  "guide": false,
+  "v": 1
+ }
 }

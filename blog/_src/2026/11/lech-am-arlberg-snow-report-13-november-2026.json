@@ -490,7 +490,7 @@
   }
  },
  "words_en": 504,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "lech_zurs",
   "name": "Lech Zürs am Arlberg",
@@ -527,5 +527,20 @@
   "with": "st-anton-snow-depth-13-november-2026",
   "tries": 0
  },
- "publish_utc": "2026-11-13T13:50:00Z"
+ "publish_utc": "2026-11-13T13:50:00Z",
+ "noindex_why": "quality: words 588 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 588 < 600"
+  ],
+  "words": 588,
+  "overlap": 1.2,
+  "with": "pyrenees-where-to-ski-this-weekend-4-november-2026",
+  "langs_off": [],
+  "score": 57.4,
+  "intent": "lech_zurs|snow-report",
+  "guide": false,
+  "v": 1
+ }
 }

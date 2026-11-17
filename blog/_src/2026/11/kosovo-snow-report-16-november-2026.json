@@ -101,6 +101,39 @@
    ],
    "from_day": 8,
    "to_day": 14
+  },
+  "trend": [
+   {
+    "date": "2026-11-16",
+    "snow_km2": 120,
+    "new72": 5,
+    "leader": "Brezovica",
+    "leader_cm": 2
+   }
+  ],
+  "neighbours": [
+   {
+    "cc": "AL",
+    "name": "Albania",
+    "white_share_pct": 1,
+    "leader": "Ski Pista Bigëll",
+    "leader_cm": 0,
+    "next_7_days_max_cm": 16
+   },
+   {
+    "cc": "MK",
+    "name": "North Macedonia",
+    "white_share_pct": 1,
+    "leader": "Скијачки центар Попова шапка",
+    "leader_cm": 2,
+    "next_7_days_max_cm": 10
+   }
+  ],
+  "glacier": false,
+  "story": {
+   "id": "two_weeks",
+   "place": "cc:XK",
+   "score": 29
   }
  },
  "media": [
@@ -125,57 +158,78 @@
  ],
  "docs": {
   "en": {
-   "title": "Kosovo snow today (16 November 2026): snow depth, new snow and resorts",
-   "description": "Kosovo snow today, 16 November: snow cover, new snow, snow depth by height, the next days and the best resorts.",
-   "lede": "120 km² of snow-covered ground in Kosovo this Monday, a gain of 50 km² in a day. In other words, 2 % of the mapped high ground is white.",
+   "title": "Kosovo's next two weeks: 7 cm first, then 18 cm",
+   "description": "Kosovo's next two weeks: 7 cm first, then 18 cm. Snow cover, new snow, resorts and the days ahead in Kosovo on 16 November.",
+   "lede": "The first week could bring up to 7 cm to the snowiest slopes in Kosovo, the second up to 18 cm.",
    "sections": [
+    {
+     "h": "Two weeks ahead",
+     "p": [
+      "Two weeks out, the trend counts more than the totals: it tells you whether to book now or wait for the next storm.",
+      "Snow covers roughly 120 km² in Kosovo on 16 November, up 50 km² on yesterday. That is 2 % of the high ground we map in Kosovo."
+     ]
+    },
+    {
+     "h": "The next days",
+     "p": [
+      "The week ahead could bring up to 11 cm, 0 cm of it in the next three days.",
+      "The snowiest day looks like Saturday 21 November, with up to 5 cm in the snowiest spots.",
+      "The second week adds up to 18 cm where it snows most."
+     ]
+    },
+    {
+     "h": "Best resorts right now",
+     "p": [
+      "Brezovica leads with 2 cm on its upper slopes.",
+      "Brezovica picked up 8 cm in the last three days and could add 0 cm by Thursday 19 November."
+     ]
+    },
+    {
+     "h": "Low, middle and high ground",
+     "p": [
+      "Climb and the snow gets deeper: 2,000-2,500 m: on average 2 cm (57 % of the ground white)."
+     ]
+    },
     {
      "h": "How much of the country is white",
      "p": [
-      "Below about 2,100 m the slopes are mostly green or brown. That is close to the 80 km² of a week ago."
+      "Over the week the white area has hardly moved from 80 km². Think 2,100 m and higher for a white landscape."
      ]
     },
     {
      "h": "Fresh snow",
      "p": [
-      "In the last 72 hours the most new snow, up to 5 cm, fell over the Accursed Mountains and the Šar Mountains.",
-      "In the past day, up to 2 cm was added.",
+      "The Accursed Mountains and the Šar Mountains got the most fresh snow over three days, up to 5 cm.",
+      "The last 24 hours alone brought up to 2 cm.",
       "About 80 km² received at least 5 cm."
      ]
     },
     {
-     "h": "Skiing conditions",
+     "h": "The neighbours today",
+     "p": [
+      "For comparison, the neighbours on the same day: Albania: 1 % white, deepest Ski Pista Bigëll with 0 cm, up to 16 cm in the week ahead; North Macedonia: 1 % white, deepest Скијачки центар Попова шапка with 2 cm, up to 10 cm in the week ahead."
+     ]
+    },
+    {
+     "h": "Planning a day on the snow",
+     "p": [
+      "Between 2,000 m and 2,500 m the cover is patchy, about 57 % white: expect grass and stones between the snow.",
+      "Below 2,000 m the slopes are still almost bare.",
+      "Little new snow is expected in the next three days, so today's picture should hold for a weekend trip."
+     ]
+    },
+    {
+     "h": "On the ground",
      "p": [
       "Each day adds white ground, a good sign for the resorts that rely on natural snow.",
       "With more snow in the forecast, the next days should improve things further."
-     ]
-    },
-    {
-     "h": "How deep it is, height by height",
-     "p": [
-      "Average depth of the snowpack by height band: 2,000-2,500 m: on average 2 cm (57 % of the ground white)."
-     ]
-    },
-    {
-     "h": "Shortlist for the weekend",
-     "p": [
-      "At the top of the list, Brezovica reports 2 cm.",
-      "Brezovica picked up 8 cm in the last three days and could add 0 cm by Thursday 19 November."
-     ]
-    },
-    {
-     "h": "What is coming",
-     "p": [
-      "The week ahead could bring up to 11 cm, 0 cm of it in the next three days.",
-      "Saturday 21 November stands out, with up to 5 cm in a day.",
-      "The second week adds up to 18 cm where it snows most."
      ]
     }
    ],
    "advice": [
     "Snow above the tree line can be wind-packed: watch the ridges.",
-    "Check the resort's own lift status before you travel.",
-    "Read the local avalanche bulletin before going off-piste."
+    "Fresh snow on a cold base sticks badly: take care on steep slopes.",
+    "Roads to the higher resorts may need winter tyres or chains."
    ],
    "captions": {
     "new": "Snow depth in Kosovo on 16 November",
@@ -185,19 +239,12 @@
   "sq": {
    "title": "Gjendja e borës në Kosovë, 16 nëntor 2026: qendrat e skive, bora e re dhe ditët në vijim",
    "description": "Borë në Kosovë më 16 nëntor: shtresa e borës, bora e re, trashësia sipas lartësisë, ditët në vijim dhe qendrat më të mira.",
-   "lede": "Në Kosovë sot rreth 120 km² janë nën borë (e hënë, 16 nëntor). Kjo është 50 km² më shumë se dje.",
+   "lede": "E hënë, 16 nëntor: bora mbulon rreth 120 km² të maleve në Kosovë. Kjo është 50 km² më shumë se dje.",
    "sections": [
     {
      "h": "Shtresa e borës sot",
      "p": [
       "Brenda javës sipërfaqja pothuajse nuk ndryshoi krahasuar me 80 km². Kufiri i borës është rreth 2.100 m."
-     ]
-    },
-    {
-     "h": "Ku ra borë e re",
-     "p": [
-      "Sasitë e tri ditëve arrijnë 5 cm. Më shumë: Bjeshkët e Nemuna dhe Malet e Sharrit.",
-      "Vetëm në 24 orët e fundit ranë deri në 2 cm."
      ]
     },
     {
@@ -209,29 +256,34 @@
     {
      "h": "Çfarë do të thotë për pistat",
      "p": [
-      "Sipërfaqja e bardhë po rritet dhe, nëse i ftohti mban, mund të nisin më shumë teleferikë.",
-      "Me më shumë borë në parashikim, ditët në vijim duhet të jenë më të mira."
+      "Sipërfaqja e bardhë po rritet dhe, nëse i ftohti mban, mund të nisin më shumë teleferikë."
      ]
     },
     {
-     "h": "Qendrat më të mira tani",
+     "h": "Ku ra borë e re",
      "p": [
-      "Më shumë borë në pistat e sipërme: Brezovica, 2 cm.",
-      "Brezovica: 8 cm borë e re në tri ditë dhe deri në datën e enjte, 19 nëntor edhe deri në 0 cm."
+      "Në tri ditë bora më e shumtë ra këtu: Bjeshkët e Nemuna dhe Malet e Sharrit (deri në 5 cm).",
+      "Vetëm në 24 orët e fundit ranë deri në 2 cm."
      ]
     },
     {
      "h": "Ditët në vijim",
      "p": [
-      "Parashikimi i borës së re: deri në 0 cm për tri ditë dhe deri në 11 cm për shtatë ditë.",
+      "Në tri ditët e ardhshme priten deri në 0 cm, kurse gjatë gjithë javës deri në 11 cm.",
       "Dita me më shumë borë: e shtunë, 21 nëntor, deri në 5 cm.",
       "Më tej, në ditët 8–14, në shpatet më me borë mund të shtohen deri në 18 cm."
+     ]
+    },
+    {
+     "h": "Qendrat më të mira tani",
+     "p": [
+      "Më shumë borë në pistat e sipërme: Brezovica, 2 cm."
      ]
     }
    ],
    "advice": [
-    "Mbi kufirin e pyllit era mund ta ketë grumbulluar borën: kujdes në kreshta.",
-    "Para skijimit jashtë pistave lexoni buletinin vendor të ortekëve."
+    "Në fillim të sezonit bora mbi gurë është e hollë: qëndroni në pistat e përgatitura.",
+    "Mbi kufirin e pyllit era mund ta ketë grumbulluar borën: kujdes në kreshta."
    ],
    "captions": {
     "new": "Trashësia e borës në Kosovë, 16 nëntor",
@@ -242,14 +294,16 @@
  "writers": {
   "en": {
    "writer": "template",
-   "voice": "sat"
+   "voice": "sat",
+   "rewrite": "requality"
   },
   "sq": {
    "writer": "template",
-   "voice": "sat"
+   "voice": "sat",
+   "rewrite": "requality"
   }
  },
- "words_en": 212,
+ "words_en": 387,
  "indexable": false,
  "main": {
   "slug": "ski_center_brezovica",
@@ -304,20 +358,27 @@
   "with": "romania-snow-report-16-november-2026"
  },
  "publish_utc": "2026-11-16T20:42:46Z",
- "cover": {
+ "cover": {},
+ "rewrite": {
   "v": 1,
-  "style": "hero",
-  "files": {
-   "en": [
-    "blog/media/2026/11/kosovo-snow-report-16-november-2026/cover-en.webp",
-    "blog/media/2026/11/kosovo-snow-report-16-november-2026/cover-en_t.webp"
-   ],
-   "sq": [
-    "blog/media/2026/11/kosovo-snow-report-16-november-2026/cover-sq.webp",
-    "blog/media/2026/11/kosovo-snow-report-16-november-2026/cover-sq_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "two_weeks",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 387 < 600; no table or chart of its own",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 387 < 600",
+   "no table or chart of its own"
+  ],
+  "words": 387,
+  "overlap": 0.6,
+  "with": "us-west-fresh-snow-powder-alert-4-november-2026",
+  "langs_off": [],
+  "score": 59.9,
+  "intent": "cc:XK|two_weeks",
+  "guide": false,
+  "v": 1
  }
 }

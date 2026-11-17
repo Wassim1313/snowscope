@@ -582,7 +582,7 @@
   }
  },
  "words_en": 323,
- "indexable": true,
+ "indexable": false,
  "main": {
   "name": "Whistler Blackcomb",
   "lat": 50.08882,
@@ -615,5 +615,20 @@
  "bulletins": [],
  "trip_day": "",
  "map_link": "https://snowscope.app/#@50.08882,-122.94191,8",
- "publish_utc": "2026-11-08T14:35:00Z"
+ "publish_utc": "2026-11-08T14:35:00Z",
+ "noindex_why": "quality: words 368 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 368 < 600"
+  ],
+  "words": 368,
+  "overlap": 0.8,
+  "with": "atlas-rain-not-snow-physics-7-november-2026",
+  "langs_off": [],
+  "score": 42.4,
+  "intent": "ca_west|physics",
+  "guide": false,
+  "v": 1
+ }
 }

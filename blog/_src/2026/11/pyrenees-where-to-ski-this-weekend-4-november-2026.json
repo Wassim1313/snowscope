@@ -313,7 +313,49 @@
    "high slopes and north-facing slopes keep snow longest",
    "early-season snow is thin: stay on groomed pistes",
    "read the official avalanche bulletin before off-piste"
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Masella",
+     "slug": "masella",
+     "now_cm": 1,
+     "usual_cm": 0,
+     "high_cm": 9,
+     "week_ago_cm": 0,
+     "height_m": 2062,
+     "best_weeks": [
+      7,
+      9,
+      6
+     ],
+     "ratio_pct": null
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Masella",
+   "top_cm": 4,
+   "top_m": 2509,
+   "base_cm": 0,
+   "base_m": 1615,
+   "rain_day": "2026-11-07",
+   "freezing_m": 3040,
+   "lift_top_m": 2509,
+   "next_cm": 2,
+   "second": "Cauterets Cirque du Lys",
+   "second_cm": 25,
+   "depth_cm": 16
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:masella",
+   "score": 46,
+   "resort": "Masella"
+  }
  },
  "media": [
   {
@@ -336,6 +378,19 @@
       "Masella got 12 cm of new snow in the last 72 hours. Height matters: at Masella, our model gives 4 cm at the top (2,509 m), 0 cm at mid-mountain (2,062 m) and 0 cm at the base (1,615 m). On its last clear day, 2 November, satellites saw no snow at Masella: the snow there may be only on the highest slopes, or it fell after that day.",
       "Cauterets Cirque du Lys got 4 cm of new snow in the last 72 hours. On its last clear day, 31 October, satellites saw no snow at Cauterets Cirque du Lys: the snow there may be only on the highest slopes, or it fell after that day.",
       "Aramón Cerler got 6 cm of new snow in the last 72 hours. On its last clear day, 31 October, satellites saw no snow at Aramón Cerler: the snow there may be only on the highest slopes, or it fell after that day."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Saturday 7 November the freezing level climbs to about 3,040 m, above the top of the lifts at 2,509 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 2,062 m, Masella has 1 cm today; a normal 4 November has 0 cm there.",
+      "Only one winter in ten has more than 9 cm on this date.",
+      "A week ago the same spot had 0 cm.",
+      "In past winters the best snow at Masella usually came early February / mid-February.",
+      "Day by day at Masella: Wednesday 4 November 2 cm; Thursday 5 November 2 cm.",
+      "Height by height at Masella: 1,615 m 0 cm on the ground, 0 cm more in the next 7 days; 2,062 m 0 cm on the ground, 1 cm more in the next 7 days; 2,509 m 4 cm on the ground, 2 cm more in the next 7 days."
      ]
     },
     {
@@ -384,6 +439,19 @@
      ]
     },
     {
+     "h": "¿Lluvia hasta arriba?",
+     "p": [
+      "El sábado 7 de noviembre la isoterma de 0 °C sube hacia 3040 m, por encima del remonte más alto a 2509 m: puede llover hasta arriba.",
+      "La lluvia sobre nieve nueva la hace pesada y, tras una noche fría, helada: los días siguientes son mejores para pistas pisadas que para nieve polvo.",
+      "A unos 2062 m, Masella tiene hoy 1 cm; un 4 de noviembre normal tiene 0 cm.",
+      "Solo un invierno de cada diez supera 9 cm en esta fecha.",
+      "Hace una semana, el mismo punto tenía 0 cm.",
+      "En inviernos pasados la mejor nieve en Masella solía llegar a principios de febrero / mediados de febrero.",
+      "Día a día en Masella: miércoles 4 de noviembre 2 cm; jueves 5 de noviembre 2 cm.",
+      "Cota a cota en Masella: 1615 m 0 cm en el suelo, 0 cm más en los próximos 7 días; 2062 m 0 cm en el suelo, 1 cm más en los próximos 7 días; 2509 m 4 cm en el suelo, 2 cm más en los próximos 7 días."
+     ]
+    },
+    {
      "h": "Altitud, laderas y cota de nieve",
      "p": [
       "En Masella, la cota de congelación llega a 2490 m-3040 m el 7 de noviembre, por encima de la cota alta de la estación (2509 m): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
@@ -424,7 +492,7 @@
    "writer": "template"
   }
  },
- "words_en": 323,
+ "words_en": 607,
  "indexable": true,
  "main": {
   "slug": "masella",
@@ -517,5 +585,39 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@42.336,1.902,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 607,
+  "overlap": 18.2,
+  "with": "alps-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 96.3,
+  "intent": "resort:masella|rain_risk",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "map",
+  "files": {
+   "en": [
+    "blog/media/2026/11/pyrenees-where-to-ski-this-weekend-4-november-2026/cover-en.webp",
+    "blog/media/2026/11/pyrenees-where-to-ski-this-weekend-4-november-2026/cover-en_t.webp"
+   ],
+   "es": [
+    "blog/media/2026/11/pyrenees-where-to-ski-this-weekend-4-november-2026/cover-es.webp",
+    "blog/media/2026/11/pyrenees-where-to-ski-this-weekend-4-november-2026/cover-es_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

@@ -312,7 +312,48 @@
    }
   ],
   "focus_index": 1,
-  "title_focus_resort": "Revelstoke"
+  "title_focus_resort": "Revelstoke",
+  "normal": {
+   "rows": [
+    {
+     "name": "Revelstoke",
+     "slug": "revelstoke",
+     "now_cm": 24,
+     "usual_cm": 55,
+     "high_cm": 97,
+     "week_ago_cm": null,
+     "height_m": 1369,
+     "best_weeks": [
+      11,
+      13,
+      12
+     ],
+     "ratio_pct": 44,
+     "deeper_than": 5,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Revelstoke",
+   "top_cm": 32,
+   "top_m": 2224,
+   "base_cm": 0,
+   "base_m": 514,
+   "rain_day": "2026-11-13",
+   "freezing_m": 3170,
+   "lift_top_m": 2224,
+   "next_cm": 21
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:revelstoke",
+   "score": 58,
+   "resort": "Revelstoke"
+  }
  },
  "media": [
   {
@@ -356,6 +397,18 @@
      "p": [
       "Depth ranking for these resorts: Whistler Blackcomb first with about 166 cm on the upper slopes, then Revelstoke 53 cm and Mount Cain Alpine Park 33 cm.",
       "Snow-covered ground in Western Canada: 201,390 km². Resorts with snow: 31 of 57."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Friday 13 November the freezing level climbs to about 3,170 m, above the top of the lifts at 2,224 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 1,369 m, Revelstoke has 24 cm today; a normal 13 November has 55 cm there.",
+      "That is more than in 5 of the 46 past winters on this date.",
+      "In past winters the best snow at Revelstoke usually came mid-March / late March.",
+      "Day by day at Revelstoke: Saturday 14 November 4 cm; Sunday 15 November 3 cm; Monday 16 November 14 cm.",
+      "Height by height at Revelstoke: 514 m 0 cm on the ground, 0 cm more in the next 7 days; 1,369 m 8 cm on the ground, 4 cm more in the next 7 days; 2,224 m 32 cm on the ground, 12 cm more in the next 7 days."
      ]
     },
     {
@@ -405,6 +458,18 @@
      ]
     },
     {
+     "h": "De la pluie jusqu'en haut ?",
+     "p": [
+      "Le vendredi 13 novembre, l'isotherme 0 °C monte vers 3 170 m, au-dessus du sommet des remontées à 2 224 m : il peut pleuvoir jusqu'en haut.",
+      "La pluie sur la neige fraîche l'alourdit et, après une nuit froide, la rend glacée : les jours suivants conviennent mieux aux pistes damées qu'à la poudreuse.",
+      "Vers 1 369 m, Revelstoke a 24 cm aujourd'hui ; un 13 novembre normal y compte 55 cm.",
+      "C'est plus que lors de 5 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Revelstoke arrivait d'habitude mi-mars / fin mars.",
+      "Jour après jour à Revelstoke : samedi 14 novembre 4 cm; dimanche 15 novembre 3 cm; lundi 16 novembre 14 cm.",
+      "Altitude par altitude à Revelstoke : 514 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours; 1 369 m 8 cm au sol, 4 cm de plus dans les 7 prochains jours; 2 224 m 32 cm au sol, 12 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
      "h": "À venir",
      "p": [
       "D'ici le 16 novembre, la prévision donne 20 cm à Red et 17 cm à Mt. Baldy Family, avec moins de certitude à mesure qu'on s'éloigne.",
@@ -451,8 +516,8 @@
    "rewrite": 1
   }
  },
- "words_en": 279,
- "indexable": true,
+ "words_en": 551,
+ "indexable": false,
  "main": {
   "slug": "revelstoke",
   "name": "Revelstoke",
@@ -578,5 +643,26 @@
   "max": 0.136,
   "with": "us-west-mt-shasta-ski-park-snow-forecast-11-november-2026"
  },
- "publish_utc": "2026-11-13T14:23:45Z"
+ "publish_utc": "2026-11-13T14:23:45Z",
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 551 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 551 < 600"
+  ],
+  "words": 551,
+  "overlap": 14.2,
+  "with": "us-west-mt-shasta-ski-park-snow-forecast-11-november-2026",
+  "langs_off": [],
+  "score": 111.1,
+  "intent": "resort:revelstoke|rain_risk",
+  "guide": false,
+  "v": 1
+ }
 }

@@ -610,7 +610,42 @@
    "resort values = the slopes at or above mid-mountain within a few km of the resort, not the village",
    "days 1-14 = tomorrow to day 14; week 1 = days 1-7, week 2 = days 8-14",
    "snow by height = all the mountain terrain of the region, not only resorts"
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Mount Cain Alpine Park",
+     "slug": "mount_cain_alpine_park",
+     "now_cm": 5,
+     "usual_cm": 12,
+     "high_cm": 81,
+     "week_ago_cm": 7,
+     "height_m": 1403,
+     "best_weeks": [
+      53,
+      15,
+      16
+     ],
+     "ratio_pct": 42
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Mount Cain Alpine Park",
+   "next_cm": 37,
+   "second": "Whistler Blackcomb",
+   "second_cm": 67,
+   "depth_cm": 58
+  },
+  "story": {
+   "id": "vs_normal_low",
+   "place": "resort:mount_cain_alpine_park",
+   "score": 44,
+   "resort": "Mount Cain Alpine Park"
+  }
  },
  "media": [
   {
@@ -656,6 +691,16 @@
       "Ski Callaghan (Canada): about 43 cm in 14 days (29 cm–57 cm between the models), 35 cm in the first week and 8 cm in the second. The snowiest day is 15 November with 19 cm; 2 days bring 5 cm or more.",
       "Cypress Mountain (Canada): about 26 cm in 14 days (6 cm–45 cm between the models), 15 cm in the first week and 10 cm in the second. Mark 16 November: that is the biggest day, with 13 cm, out of 2 days at 5 cm or more.",
       "Mt Seymour (Canada): about 24 cm in 14 days (2 cm–46 cm between the models), 16 cm in the first week and 8 cm in the second. Mark 16 November: that is the biggest day, with 14 cm."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 1,403 m, Mount Cain Alpine Park has 5 cm today; a normal 12 November has 12 cm there.",
+      "Only one winter in ten has more than 81 cm on this date.",
+      "A week ago the same spot had 7 cm.",
+      "In past winters the best snow at Mount Cain Alpine Park usually came early January / mid-April.",
+      "A slow start is common and says little about January; for now the highest lifts and the runs with snowmaking are the safe choice."
      ]
     },
     {
@@ -706,7 +751,7 @@
    "voice": "sat"
   }
  },
- "words_en": 685,
+ "words_en": 879,
  "indexable": true,
  "main": {
   "slug": "mount_cain_alpine_park",
@@ -846,5 +891,35 @@
   "max": 0.119,
   "with": "alps-2-week-snow-forecast-maps-12-november-2026"
  },
- "publish_utc": "2026-11-12T18:27:41Z"
+ "publish_utc": "2026-11-12T18:27:41Z",
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_low",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 879,
+  "overlap": 28.3,
+  "with": "alps-2-week-snow-forecast-maps-12-november-2026",
+  "langs_off": [],
+  "score": 114.0,
+  "intent": "resort:mount_cain_alpine_park|vs_normal_low",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "hero",
+  "files": {
+   "en": [
+    "blog/media/2026/11/western-canada-2-week-snow-forecast-maps-12-november-2026/cover-en.webp",
+    "blog/media/2026/11/western-canada-2-week-snow-forecast-maps-12-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

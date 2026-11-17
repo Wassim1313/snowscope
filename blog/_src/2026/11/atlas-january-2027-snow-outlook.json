@@ -1004,7 +1004,7 @@
   }
  },
  "words_en": 478,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": null,
   "name": "Atlas",
@@ -1049,5 +1049,20 @@
   },
   "credit": null,
   "photo": null
+ },
+ "noindex_why": "quality: words 525 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 525 < 600"
+  ],
+  "words": 525,
+  "overlap": 0.2,
+  "with": "alps-snow-days-climate-change-46-winters",
+  "langs_off": [],
+  "score": 44.2,
+  "intent": "atlas|guide_feature_climate",
+  "guide": true,
+  "v": 1
  }
 }

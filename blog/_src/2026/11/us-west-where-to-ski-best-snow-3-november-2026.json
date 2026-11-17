@@ -344,7 +344,51 @@
    "high slopes and north-facing slopes keep snow longest",
    "early-season snow is thin: stay on groomed pistes",
    "read the official avalanche bulletin before off-piste"
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Silverton Mountain",
+     "slug": "silverton_mountain",
+     "now_cm": 92,
+     "usual_cm": 7,
+     "high_cm": 44,
+     "week_ago_cm": null,
+     "height_m": 3244,
+     "best_weeks": [
+      53,
+      11,
+      12
+     ],
+     "ratio_pct": 1314,
+     "deeper_than": 46,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Silverton Mountain",
+   "top_cm": 58,
+   "top_m": 3345,
+   "base_cm": 32,
+   "base_m": 3143,
+   "rain_day": "2026-11-03",
+   "freezing_m": 3420,
+   "lift_top_m": 3345,
+   "next_cm": 5,
+   "second": "Telluride",
+   "second_cm": 130,
+   "depth_cm": 131
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:silverton_mountain",
+   "score": 46,
+   "resort": "Silverton Mountain"
+  }
  },
  "media": [
   {
@@ -382,6 +426,18 @@
       "Silverton Mountain got 26 in (66 cm) of new snow in the last 72 hours. Height matters: at Silverton Mountain, our model gives 23 in (58 cm) at the top (10,974 ft / 3,345 m), 17 in (43 cm) at mid-mountain (10,643 ft / 3,244 m) and 13 in (32 cm) at the base (10,312 ft / 3,143 m). Satellites saw Silverton Mountain snow-covered on 30 October, its last clear day.",
       "Telluride got 25 in (64 cm) of new snow in the last 72 hours. Height matters: at Telluride, our model gives 43 in (109 cm) at the top (12,507 ft / 3,812 m), 11 in (28 cm) at mid-mountain (10,620 ft / 3,237 m) and 2 in (6 cm) at the base (8,734 ft / 2,662 m). Satellites saw Telluride snow-covered on 30 October, its last clear day.",
       "Lee's Ski Hill got 16 in (40 cm) of new snow in the last 72 hours. Satellites saw Lee's Ski Hill snow-covered on 30 October, its last clear day."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Tuesday 3 November the freezing level climbs to about 11,220 ft (3,420 m), above the top of the lifts at 10,974 ft (3,345 m): rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 10,643 ft (3,244 m), Silverton Mountain has 36 in (92 cm) today; a normal 3 November has 3 in (7 cm) there.",
+      "That is more than in 46 of the 46 past winters on this date.",
+      "In past winters the best snow at Silverton Mountain usually came early January / mid-March.",
+      "Day by day at Silverton Mountain: Tuesday 3 November 0 in (1 cm); Wednesday 4 November 1 in (3 cm); Thursday 5 November 1 in (2 cm).",
+      "Height by height at Silverton Mountain: 10,312 ft (3,143 m) 13 in (32 cm) on the ground, 1 in (3 cm) more in the next 7 days; 10,643 ft (3,244 m) 17 in (43 cm) on the ground, 1 in (3 cm) more in the next 7 days; 10,974 ft (3,345 m) 23 in (58 cm) on the ground, 2 in (4 cm) more in the next 7 days."
      ]
     },
     {
@@ -424,8 +480,8 @@
    "writer": "template"
   }
  },
- "words_en": 375,
- "indexable": true,
+ "words_en": 715,
+ "indexable": false,
  "main": {
   "slug": "silverton_mountain",
   "name": "Silverton Mountain",
@@ -517,5 +573,26 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@37.877,-107.656,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: overlap 35 % with us-west-snow-depth-today-3-november-2026",
+ "quality": {
+  "ok": false,
+  "why": [
+   "overlap 35 % with us-west-snow-depth-today-3-november-2026"
+  ],
+  "words": 715,
+  "overlap": 34.7,
+  "with": "us-west-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 103.3,
+  "intent": "resort:silverton_mountain|rain_risk",
+  "guide": false,
+  "v": 1
+ }
 }

@@ -709,7 +709,7 @@
   }
  },
  "words_en": 343,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "saas_fee",
   "name": "Saas Fee",
@@ -765,5 +765,20 @@
    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
   },
   "photo": "photo"
+ },
+ "noindex_why": "quality: words 423 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 423 < 600"
+  ],
+  "words": 423,
+  "overlap": 0.2,
+  "with": "alps-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 49.1,
+  "intent": "alps|guide_feature_access",
+  "guide": true,
+  "v": 1
  }
 }

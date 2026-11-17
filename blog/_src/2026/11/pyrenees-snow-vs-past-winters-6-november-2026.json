@@ -442,7 +442,7 @@
   }
  },
  "words_en": 257,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "aramon_cerler",
   "name": "Aramón Cerler",
@@ -535,5 +535,21 @@
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@42.560,0.556,9.0",
  "seconds": 0.0,
- "publish_utc": "2026-11-06T12:08:00Z"
+ "publish_utc": "2026-11-06T12:08:00Z",
+ "noindex_why": "quality: words 349 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 349 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 349,
+  "overlap": 13.7,
+  "with": "us-west-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 37.2,
+  "intent": "pyrenees|vs-normal",
+  "guide": false,
+  "v": 1
+ }
 }

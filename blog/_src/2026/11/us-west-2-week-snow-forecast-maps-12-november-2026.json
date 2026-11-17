@@ -628,7 +628,42 @@
    "resort values = the slopes at or above mid-mountain within a few km of the resort, not the village",
    "days 1-14 = tomorrow to day 14; week 1 = days 1-7, week 2 = days 8-14",
    "snow by height = all the mountain terrain of the region, not only resorts"
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "China Peak",
+     "slug": "china_peak_mountain_resort",
+     "now_cm": 0,
+     "usual_cm": 2,
+     "high_cm": 21,
+     "week_ago_cm": 0,
+     "height_m": 2386,
+     "best_weeks": [
+      10,
+      12,
+      8
+     ],
+     "ratio_pct": null
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "China Peak",
+   "next_cm": 35,
+   "second": "Dodge Ridge",
+   "second_cm": 16,
+   "depth_cm": 0
+  },
+  "story": {
+   "id": "storm_next",
+   "place": "resort:china_peak_mountain_resort",
+   "score": 61.7,
+   "resort": "China Peak"
+  }
  },
  "media": [
   {
@@ -674,6 +709,17 @@
       "Badger Pass (United States): about 50 in (126 cm) in 14 days (17 in (43 cm)–83 in (210 cm) between the models), 26 in (66 cm) in the first week and 24 in (61 cm) in the second. The snowiest day is 20 November with 9 in (23 cm); 8 days bring 5 cm or more.",
       "At Mammoth Mountain (United States) the two weeks add up to about 46 in (118 cm) (15 in (38 cm)–78 in (197 cm) depending on the model): 23 in (58 cm) by the end of the first week, then 24 in (60 cm) more. The snowiest day is 26 November with 9 in (22 cm); 6 days bring 5 cm or more.",
       "At Kirkwood (United States) the two weeks add up to about 45 in (114 cm) (17 in (44 cm)–73 in (185 cm) depending on the model): 24 in (62 cm) by the end of the first week, then 20 in (52 cm) more. Mark 14 November: that is the biggest day, with 8 in (20 cm), out of 8 days at 5 cm or more."
+     ]
+    },
+    {
+     "h": "The snow still to come",
+     "p": [
+      "Up to 14 in (35 cm) of new snow is forecast at China Peak over the next days.",
+      "Forecasts move: the timing is usually more reliable than the totals, so check again two days before you go.",
+      "At about 7,828 ft (2,386 m), China Peak has 0 in (0 cm) today; a normal 12 November has 1 in (2 cm) there.",
+      "Only one winter in ten has more than 8 in (21 cm) on this date.",
+      "A week ago the same spot had 0 in (0 cm).",
+      "In past winters the best snow at China Peak usually came late February / early March."
      ]
     },
     {
@@ -725,7 +771,7 @@
    "voice": "field"
   }
  },
- "words_en": 881,
+ "words_en": 1101,
  "indexable": true,
  "main": {
   "slug": "china_peak_mountain_resort",
@@ -865,5 +911,35 @@
   "max": 0.048,
   "with": "western-canada-what-to-bring-ski-gear-conditions-11-november-2026"
  },
- "publish_utc": "2026-11-12T18:20:16Z"
+ "publish_utc": "2026-11-12T18:20:16Z",
+ "rewrite": {
+  "v": 1,
+  "story": "storm_next",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 1101,
+  "overlap": 8.3,
+  "with": "us-west-freezing-level-snow-line-11-november-2026",
+  "langs_off": [],
+  "score": 142.8,
+  "intent": "resort:china_peak_mountain_resort|storm_next",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "ranked",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-2-week-snow-forecast-maps-12-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-2-week-snow-forecast-maps-12-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
 }

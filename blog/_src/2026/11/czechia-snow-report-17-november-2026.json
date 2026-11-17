@@ -112,7 +112,47 @@
   "n_resorts_with_snow": 22,
   "resort_next_until": "2026-11-20",
   "outlook": null,
-  "week2": null
+  "week2": null,
+  "trend": [
+   {
+    "date": "2026-11-16",
+    "snow_km2": 720,
+    "new72": 0,
+    "leader": "Bílá",
+    "leader_cm": 31
+   },
+   {
+    "date": "2026-11-17",
+    "snow_km2": 250,
+    "new72": 1,
+    "leader": "Ramzová",
+    "leader_cm": 21
+   }
+  ],
+  "neighbours": [
+   {
+    "cc": "SK",
+    "name": "Slovakia",
+    "white_share_pct": 10,
+    "leader": "Ski centrum Dedinky",
+    "leader_cm": 42,
+    "next_7_days_max_cm": 12
+   },
+   {
+    "cc": "PL",
+    "name": "Poland",
+    "white_share_pct": 6,
+    "leader": "Karpacz",
+    "leader_cm": 36,
+    "next_7_days_max_cm": 12
+   }
+  ],
+  "glacier": false,
+  "story": {
+   "id": "resorts_ready",
+   "place": "cc:CZ",
+   "score": 11.6
+  }
  },
  "media": [
   {
@@ -127,39 +167,15 @@
  ],
  "docs": {
   "en": {
-   "title": "Czechia snow today (17 November 2026): snow depth, new snow and resorts",
-   "description": "Czechia snow today, 17 November: snow cover, new snow, snow depth by height, the next days and the best resorts.",
-   "lede": "Snow covers roughly 250 km² in Czechia on 17 November, 470 km² lost since yesterday. That is 1 % of the high ground we map in Czechia.",
+   "title": "How many resorts in Czechia have snow? 22 of 170 on 17 November",
+   "description": "How many resorts in Czechia have snow? 22 of 170 on 17 November. Snow cover, new snow, resorts and the days ahead in Czechia on 17 November.",
+   "lede": "22 of the 170 resorts in Czechia have snow on their upper slopes today. Ramzová leads with 21 cm.",
    "sections": [
     {
-     "h": "Snow on the ground",
+     "h": "Which resorts have snow",
      "p": [
-      "Below about 1,300 m the slopes are mostly green or brown. Seven days ago the figure was 830 km², 580 km² more than now."
-     ]
-    },
-    {
-     "h": "Low, middle and high ground",
-     "p": [
-      "By height, the picture looks like this: 1,000-1,500 m: on average 1 cm (16 % of the ground white)."
-     ]
-    },
-    {
-     "h": "Skiing conditions",
-     "p": [
-      "The snow is retreating uphill, so plan on the higher lifts and avoid the low valley runs."
-     ]
-    },
-    {
-     "h": "New snow in the last three days",
-     "p": [
-      "Hardly any new snow fell in the last three days: the three-day maximum is 1 cm."
-     ]
-    },
-    {
-     "h": "The next days",
-     "p": [
-      "Over the next three days up to 3 cm is expected, and up to 7 cm over the week.",
-      "The snowiest day looks like Monday 23 November, with up to 4 cm in the snowiest spots."
+      "Snow on the upper slopes is not the same as open runs: lifts open when the base is deep enough to groom, and the resort decides that.",
+      "250 km² of snow-covered ground in Czechia this Tuesday, 470 km² lost since yesterday. Roughly 1 % of the country's mapped mountains and hills are covered."
      ]
     },
     {
@@ -169,28 +185,66 @@
       "Then come Figura Praděd (19 cm), Švýcárna (19 cm), Lyžařský vlek Malý Šišák (16 cm) and Skiareál Horní Domky (6 cm).",
       "Ramzová picked up 6 cm in the last three days and could add 4 cm by Friday 20 November.",
       "At Figura Praděd: 7 cm of fresh snow over three days, 5 cm more expected by Friday 20 November.",
-      "Snow lies on the upper slopes of 22 out of 170 resorts in Czechia."
+      "Count 22 white resorts out of 170 in Czechia today.",
+      "The rest of the shortlist: Švýcárna: 19 cm on top, 7 cm in three days, 5 cm expected; Lyžařský vlek Malý Šišák: 16 cm on top, 6 cm in three days, 5 cm expected; Skiareál Horní Domky: 6 cm on top, 7 cm in three days, 7 cm expected."
+     ]
+    },
+    {
+     "h": "From the valleys to the summits",
+     "p": [
+      "Average depth of the snowpack by height band: 1,000-1,500 m: on average 1 cm (16 % of the ground white)."
+     ]
+    },
+    {
+     "h": "Forecast for the week",
+     "p": [
+      "The week ahead could bring up to 7 cm, 3 cm of it in the next three days.",
+      "Monday 23 November stands out, with up to 4 cm in a day."
+     ]
+    },
+    {
+     "h": "Skiing conditions",
+     "p": [
+      "Mild weather is eating into the cover: expect firm snow in the morning and slush in the afternoon."
+     ]
+    },
+    {
+     "h": "Snow on the ground",
+     "p": [
+      "Think 1,300 m and higher for a white landscape. A week ago it was 830 km²: 580 km² has melted away since."
+     ]
+    },
+    {
+     "h": "Fresh snow",
+     "p": [
+      "The last three days were dry or nearly so, with no more than 1 cm anywhere."
+     ]
+    },
+    {
+     "h": "The neighbours today",
+     "p": [
+      "For comparison, the neighbours on the same day: Slovakia: 10 % white, deepest Ski centrum Dedinky with 42 cm, up to 12 cm in the week ahead; Poland: 6 % white, deepest Karpacz with 36 cm, up to 12 cm in the week ahead."
      ]
     }
    ],
    "advice": [
-    "Check the resort's own lift status before you travel.",
-    "Early-season snow is thin over rocks: ski the groomed runs first.",
-    "Snow above the tree line can be wind-packed: watch the ridges."
+    "Snow above the tree line can be wind-packed: watch the ridges.",
+    "Read the local avalanche bulletin before going off-piste.",
+    "Early-season snow is thin over rocks: ski the groomed runs first."
    ],
    "captions": {
     "map": "Snow depth in Czechia on 17 November"
    }
   },
   "cs": {
-   "title": "Sněhové podmínky v Česku, 17. listopadu 2026: areály, nový sníh a další dny",
+   "title": "Sníh v Česku dnes: výška sněhové pokrývky a nový sníh, 17. listopadu 2026",
    "description": "Sníh v Česku 17. listopadu: sněhová pokrývka, nový sníh, výška podle nadmořské výšky, další dny a nejlepší areály.",
    "lede": "Sněhová pokrývka v Česku zabírá asi 250 km² (úterý, 17. listopadu). To je o 470 km² méně než včera.",
    "sections": [
     {
      "h": "Sněhová pokrývka dnes",
      "p": [
-      "Terén je převážně bílý zhruba od 1 300 m výš. Před týdnem to bylo 830 km²: od té doby roztálo 580 km²."
+      "Sněhová hranice leží kolem 1 300 m. Před sedmi dny měřila plocha 830 km², o 580 km² více než teď."
      ]
     },
     {
@@ -200,37 +254,36 @@
      ]
     },
     {
-     "h": "Co to znamená na sjezdovkách",
-     "p": [
-      "Obleva ukusuje pokrývku: ráno tvrdý sníh, odpoledne mokrý."
-     ]
-    },
-    {
      "h": "Kde napadl nový sníh",
      "p": [
       "Poslední tři dny téměř nesněžilo: maximum je 1 cm."
      ]
     },
     {
-     "h": "Další dny",
+     "h": "Co to znamená na sjezdovkách",
      "p": [
-      "Předpověď nového sněhu: až 3 cm za tři dny a až 7 cm za sedm dní.",
-      "Nejsněživější den: pondělí, 23. listopadu, až 4 cm."
+      "Obleva ukusuje pokrývku: ráno tvrdý sníh, odpoledne mokrý."
      ]
     },
     {
      "h": "Nejlepší areály teď",
      "p": [
-      "Vede Ramzová: 21 cm v horní části sjezdovek.",
-      "Areály se sněhem na horních tratích: 22 z 170.",
+      "Nejvíc sněhu na horních tratích: Ramzová, 21 cm.",
       "Dále: Figura Praděd (19 cm), Švýcárna (19 cm), Lyžařský vlek Malý Šišák (16 cm) a Skiareál Horní Domky (6 cm).",
       "Ramzová: 6 cm nového sněhu za tři dny a do data pátek, 20. listopadu ještě až 4 cm."
+     ]
+    },
+    {
+     "h": "Další dny",
+     "p": [
+      "Během příštích tří dnů se čeká až 3 cm, za celý týden až 7 cm.",
+      "Nejsněživější den: pondělí, 23. listopadu, až 4 cm."
      ]
     }
    ],
    "advice": [
-    "Nad hranicí lesa může být sníh navátý větrem: pozor na hřebenech.",
-    "Před jízdou mimo sjezdovky si přečtěte místní lavinovou předpověď."
+    "Před jízdou mimo sjezdovky si přečtěte místní lavinovou předpověď.",
+    "Před cestou si ověřte, zda vleky jezdí."
    ],
    "captions": {
     "map": "Výška sněhu v Česku, 17. listopadu"
@@ -240,14 +293,16 @@
  "writers": {
   "en": {
    "writer": "template",
-   "voice": "field"
+   "voice": "field",
+   "rewrite": "requality"
   },
   "cs": {
    "writer": "template",
-   "voice": "field"
+   "voice": "field",
+   "rewrite": "requality"
   }
  },
- "words_en": 221,
+ "words_en": 385,
  "indexable": false,
  "main": {
   "slug": "ramzova",
@@ -369,20 +424,26 @@
   "with": "montenegro-snow-report-16-november-2026"
  },
  "publish_utc": "2026-11-17T12:32:59Z",
- "cover": {
+ "cover": {},
+ "rewrite": {
   "v": 1,
-  "style": "poster",
-  "files": {
-   "en": [
-    "blog/media/2026/11/czechia-snow-report-17-november-2026/cover-en.webp",
-    "blog/media/2026/11/czechia-snow-report-17-november-2026/cover-en_t.webp"
-   ],
-   "cs": [
-    "blog/media/2026/11/czechia-snow-report-17-november-2026/cover-cs.webp",
-    "blog/media/2026/11/czechia-snow-report-17-november-2026/cover-cs_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "resorts_ready",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 385 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 385 < 600"
+  ],
+  "words": 385,
+  "overlap": 14.5,
+  "with": "austria-snow-report-16-november-2026",
+  "langs_off": [],
+  "score": 52.0,
+  "intent": "cc:CZ|resorts_ready",
+  "guide": false,
+  "v": 1
  }
 }

@@ -303,7 +303,48 @@
     "measured_on": "2026-11-16",
     "network": "synop_no"
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Riksgränsen",
+     "slug": "riksgransen",
+     "now_cm": 46,
+     "usual_cm": 57,
+     "high_cm": 88,
+     "week_ago_cm": null,
+     "height_m": 708,
+     "best_weeks": [
+      15,
+      16,
+      14
+     ],
+     "ratio_pct": 81,
+     "deeper_than": 12,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Riksgränsen",
+   "top_cm": 88,
+   "top_m": 900,
+   "base_cm": 22,
+   "base_m": 516,
+   "next_cm": 5,
+   "second": "Sulitjelma Fjellandsby",
+   "second_cm": 130,
+   "depth_cm": 173
+  },
+  "story": {
+   "id": "resort_lead",
+   "place": "resort:riksgransen",
+   "score": 47,
+   "resort": "Riksgränsen"
+  }
  },
  "media": [
   {
@@ -327,6 +368,17 @@
      "p": [
       "In the last 72 hours, Sulitjelma Fjellandsby got the most new snow: about 10 cm. Tromsø Alpinpark (8 cm) and Narvik (5 cm) also had new snow.",
       "Depth is what decides whether a slope can be skied at all. Early in the season, a resort with a deep base on its upper slopes keeps good snow even after a few mild days, while thin cover turns icy or bare quickly."
+     ]
+    },
+    {
+     "h": "Far ahead of the rest",
+     "p": [
+      "Riksgränsen has 173 cm on its upper slopes, well ahead of Sulitjelma Fjellandsby with 130 cm.",
+      "At about 708 m, Riksgränsen has 46 cm today; a normal 16 November has 57 cm there.",
+      "That is more than in 12 of the 46 past winters on this date.",
+      "In past winters the best snow at Riksgränsen usually came early April / mid-April.",
+      "Day by day at Riksgränsen: Monday 16 November 1 cm; Wednesday 18 November 4 cm; Thursday 19 November 1 cm.",
+      "Height by height at Riksgränsen: 516 m 22 cm on the ground, 9 cm more in the next 7 days; 708 m 50 cm on the ground, 9 cm more in the next 7 days; 900 m 88 cm on the ground, 10 cm more in the next 7 days."
      ]
     },
     {
@@ -434,8 +486,8 @@
    "voice": "hydro"
   }
  },
- "words_en": 337,
- "indexable": true,
+ "words_en": 533,
+ "indexable": false,
  "main": {
   "slug": "riksgransen",
   "name": "Riksgränsen",
@@ -556,20 +608,26 @@
   "with": "scandinavia-breimsbygda-skisenter-fresh-snow-powder-alert-16-november-2026"
  },
  "publish_utc": "2026-11-16T20:42:46Z",
- "cover": {
+ "cover": {},
+ "rewrite": {
   "v": 1,
-  "style": "map",
-  "files": {
-   "en": [
-    "blog/media/2026/11/scandinavia-riksgransen-snow-depth-today-16-november-2026/cover-en.webp",
-    "blog/media/2026/11/scandinavia-riksgransen-snow-depth-today-16-november-2026/cover-en_t.webp"
-   ],
-   "nb": [
-    "blog/media/2026/11/scandinavia-riksgransen-snow-depth-today-16-november-2026/cover-nb.webp",
-    "blog/media/2026/11/scandinavia-riksgransen-snow-depth-today-16-november-2026/cover-nb_t.webp"
-   ]
-  },
-  "credit": null,
-  "photo": null
+  "story": "resort_lead",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 533 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 533 < 600"
+  ],
+  "words": 533,
+  "overlap": 7.0,
+  "with": "alps-where-to-ski-best-snow-8-november-2026",
+  "langs_off": [],
+  "score": 97.7,
+  "intent": "resort:riksgransen|resort_lead",
+  "guide": false,
+  "v": 1
  }
 }

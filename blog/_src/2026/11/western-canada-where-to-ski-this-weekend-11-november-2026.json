@@ -420,7 +420,7 @@
   }
  },
  "words_en": 380,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "whistler",
   "name": "Whistler Blackcomb",
@@ -528,5 +528,21 @@
   "max": 0.138,
   "with": "western-canada-where-to-ski-this-weekend-4-november-2026"
  },
- "publish_utc": "2026-11-11T18:44:22Z"
+ "publish_utc": "2026-11-11T18:44:22Z",
+ "noindex_why": "quality: words 493 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 493 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 493,
+  "overlap": 9.1,
+  "with": "pyrenees-where-to-ski-this-weekend-4-november-2026",
+  "langs_off": [],
+  "score": 47.7,
+  "intent": "ca_west|where-to-ski",
+  "guide": false,
+  "v": 1
+ }
 }

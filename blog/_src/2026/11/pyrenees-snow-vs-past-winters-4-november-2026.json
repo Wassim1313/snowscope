@@ -318,7 +318,51 @@
      "km_away": 2.8
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Cauterets Cirque du Lys",
+     "slug": "cauterets",
+     "now_cm": 0,
+     "usual_cm": 1,
+     "high_cm": 14,
+     "week_ago_cm": null,
+     "height_m": 2072,
+     "best_weeks": [
+      7,
+      6,
+      9
+     ],
+     "ratio_pct": null,
+     "deeper_than": 21,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Cauterets Cirque du Lys",
+   "top_cm": 0,
+   "top_m": 2420,
+   "base_cm": 0,
+   "base_m": 1725,
+   "rain_day": "2026-11-07",
+   "freezing_m": 2810,
+   "lift_top_m": 2420,
+   "next_cm": 3,
+   "second": "Aramón Cerler",
+   "second_cm": 18,
+   "depth_cm": 25
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:cauterets",
+   "score": 34,
+   "resort": "Cauterets Cirque du Lys"
+  }
  },
  "media": [
   {
@@ -380,6 +424,18 @@
      ]
     },
     {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Saturday 7 November the freezing level climbs to about 2,810 m, above the top of the lifts at 2,420 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 2,072 m, Cauterets Cirque du Lys has 0 cm today; a normal 4 November has 1 cm there.",
+      "That is more than in 21 of the 46 past winters on this date.",
+      "In past winters the best snow at Cauterets Cirque du Lys usually came early February / mid-February.",
+      "Day by day at Cauterets Cirque du Lys: Thursday 5 November 1 cm; Saturday 7 November 2 cm.",
+      "Height by height at Cauterets Cirque du Lys: 1,725 m 0 cm on the ground, 0 cm more in the next 7 days; 2,072 m 0 cm on the ground, 0 cm more in the next 7 days; 2,420 m 0 cm on the ground, 0 cm more in the next 7 days."
+     ]
+    },
+    {
      "h": "Today's snow",
      "p": [
       "Of these resorts, Cauterets Cirque du Lys has the most snow on its upper slopes today, about 25 cm; then come Aramón Cerler 18 cm and Rasos de Peguera 13 cm.",
@@ -422,6 +478,18 @@
      ]
     },
     {
+     "h": "De la pluie jusqu'en haut ?",
+     "p": [
+      "Le samedi 7 novembre, l'isotherme 0 °C monte vers 2 810 m, au-dessus du sommet des remontées à 2 420 m : il peut pleuvoir jusqu'en haut.",
+      "La pluie sur la neige fraîche l'alourdit et, après une nuit froide, la rend glacée : les jours suivants conviennent mieux aux pistes damées qu'à la poudreuse.",
+      "Vers 2 072 m, Cauterets Cirque du Lys a 0 cm aujourd'hui ; un 4 novembre normal y compte 1 cm.",
+      "C'est plus que lors de 21 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Cauterets Cirque du Lys arrivait d'habitude début février / mi-février.",
+      "Jour après jour à Cauterets Cirque du Lys : jeudi 5 novembre 1 cm; samedi 7 novembre 2 cm.",
+      "Altitude par altitude à Cauterets Cirque du Lys : 1 725 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours; 2 072 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours; 2 420 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
      "h": "Où est la neige aujourd'hui",
      "p": [
       "Parmi ces stations, Cauterets Cirque du Lys a le plus de neige sur le haut du domaine aujourd'hui, environ 25 cm ; suivent Aramón Cerler 18 cm et Rasos de Peguera 13 cm.",
@@ -458,8 +526,8 @@
    "writer": "template"
   }
  },
- "words_en": 267,
- "indexable": true,
+ "words_en": 539,
+ "indexable": false,
  "main": {
   "slug": "cauterets",
   "name": "Cauterets Cirque du Lys",
@@ -551,5 +619,26 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@42.883,-0.164,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 539 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 539 < 600"
+  ],
+  "words": 539,
+  "overlap": 23.7,
+  "with": "us-west-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 80.8,
+  "intent": "resort:cauterets|rain_risk",
+  "guide": false,
+  "v": 1
+ }
 }

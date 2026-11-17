@@ -330,7 +330,48 @@
    "high slopes and north-facing slopes keep snow longest",
    "early-season snow is thin: stay on groomed pistes",
    "read the official avalanche bulletin before off-piste"
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Telluride",
+     "slug": "telluride_ski_area",
+     "now_cm": 20,
+     "usual_cm": 26,
+     "high_cm": 80,
+     "week_ago_cm": null,
+     "height_m": 3237,
+     "best_weeks": [
+      53,
+      11,
+      10
+     ],
+     "ratio_pct": 77,
+     "deeper_than": 17,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Telluride",
+   "top_cm": 96,
+   "top_m": 3812,
+   "base_cm": 0,
+   "base_m": 2662,
+   "next_cm": 12,
+   "second": "Wolf Creek",
+   "second_cm": 86,
+   "depth_cm": 99
+  },
+  "story": {
+   "id": "best_week",
+   "place": "resort:telluride_ski_area",
+   "score": 31,
+   "resort": "Telluride"
+  }
  },
  "media": [
   {
@@ -354,6 +395,15 @@
      "p": [
       "Next round by 16 November: 5 in (12 cm) at Telluride, 3 in (7 cm) at Wolf Creek and 10 in (25 cm) at Brian Head Resort, according to our forecast.",
       "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 10,620 ft (3,237 m), Telluride has 8 in (20 cm) today; a normal 13 November has 10 in (26 cm) there.",
+      "That is more than in 17 of the 46 past winters on this date.",
+      "In past winters the best snow at Telluride usually came early January / early March.",
+      "Height by height at Telluride: 8,734 ft (2,662 m) 0 in (0 cm) on the ground, 4 in (9 cm) more in the next 7 days; 10,620 ft (3,237 m) 2 in (6 cm) on the ground, 9 in (22 cm) more in the next 7 days; 12,507 ft (3,812 m) 38 in (96 cm) on the ground, 10 in (25 cm) more in the next 7 days."
      ]
     },
     {
@@ -398,8 +448,8 @@
    "rewrite": 1
   }
  },
- "words_en": 333,
- "indexable": true,
+ "words_en": 566,
+ "indexable": false,
  "main": {
   "slug": "telluride_ski_area",
   "name": "Telluride",
@@ -507,5 +557,27 @@
   "max": 0.219,
   "with": "us-west-where-to-ski-this-weekend-11-november-2026"
  },
- "publish_utc": "2026-11-13T15:14:00Z"
+ "publish_utc": "2026-11-13T15:14:00Z",
+ "rewrite": {
+  "v": 1,
+  "story": "best_week",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 566 < 600; overlap 35 % with us-west-where-to-ski-this-weekend-11-november-2026",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 566 < 600",
+   "overlap 35 % with us-west-where-to-ski-this-weekend-11-november-2026"
+  ],
+  "words": 566,
+  "overlap": 34.6,
+  "with": "us-west-where-to-ski-this-weekend-11-november-2026",
+  "langs_off": [],
+  "score": 80.9,
+  "intent": "resort:telluride_ski_area|best_week",
+  "guide": false,
+  "v": 1
+ }
 }

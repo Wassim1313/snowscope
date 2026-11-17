@@ -448,7 +448,7 @@
   }
  },
  "words_en": 437,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "alpe_devero",
   "name": "Alpe Devero",
@@ -485,5 +485,20 @@
   "with": "les-arcs-snow-conditions-report-12-november-2026",
   "tries": 0
  },
- "publish_utc": "2026-11-12T08:41:04Z"
+ "publish_utc": "2026-11-12T08:41:04Z",
+ "noindex_why": "quality: words 502 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 502 < 600"
+  ],
+  "words": 502,
+  "overlap": 1.9,
+  "with": "pyrenees-where-to-ski-this-weekend-4-november-2026",
+  "langs_off": [],
+  "score": 53.1,
+  "intent": "alpe_devero|snow-conditions",
+  "guide": false,
+  "v": 1
+ }
 }

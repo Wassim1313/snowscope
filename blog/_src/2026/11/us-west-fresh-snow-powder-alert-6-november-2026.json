@@ -308,7 +308,49 @@
     "cm_in_72h": 39,
     "km_from_resort": 14
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Mt Baker",
+     "slug": "mt_baker",
+     "now_cm": 14,
+     "usual_cm": 10,
+     "high_cm": 66,
+     "week_ago_cm": 18,
+     "height_m": 1331,
+     "best_weeks": [
+      13,
+      14,
+      15
+     ],
+     "ratio_pct": 140
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Mt Baker",
+   "top_cm": 25,
+   "top_m": 1556,
+   "base_cm": 5,
+   "base_m": 1106,
+   "rain_day": "2026-11-06",
+   "freezing_m": 2880,
+   "lift_top_m": 1556,
+   "next_cm": 33,
+   "second": "Buttermilk",
+   "second_cm": 46,
+   "depth_cm": 47
+  },
+  "story": {
+   "id": "vs_normal_high",
+   "place": "resort:mt_baker",
+   "score": 62,
+   "resort": "Mt Baker"
+  }
  },
  "media": [
   {
@@ -368,6 +410,18 @@
      ]
     },
     {
+     "h": "Against past winters",
+     "p": [
+      "At about 4,367 ft (1,331 m), Mt Baker has 6 in (14 cm) today; a normal 6 November has 4 in (10 cm) there.",
+      "Only one winter in ten has more than 26 in (66 cm) on this date.",
+      "A week ago the same spot had 7 in (18 cm).",
+      "In past winters the best snow at Mt Baker usually came late March / early April.",
+      "An early lead like this matters most for the lower and middle runs, which usually wait until December for this much snow.",
+      "Day by day at Mt Baker: Friday 6 November 4 in (11 cm); Saturday 7 November 2 in (6 cm); Sunday 8 November 10 in (25 cm); Monday 9 November 1 in (2 cm).",
+      "Height by height at Mt Baker: 3,629 ft (1,106 m) 2 in (5 cm) on the ground, 1 in (2 cm) more in the next 7 days; 4,367 ft (1,331 m) 6 in (15 cm) on the ground, 6 in (16 cm) more in the next 7 days; 5,105 ft (1,556 m) 10 in (25 cm) on the ground, 9 in (22 cm) more in the next 7 days."
+     ]
+    },
+    {
      "h": "What the stations measured",
      "p": [
       "The Chepeta station (10,489 ft / 3,197 m) measured 20 in (51 cm) of snow on the ground on 1 November, with 12 in (30 cm) of new snow in 24 hours. The Red Mountain Pass station (11,060 ft / 3,371 m) measured 24 in (61 cm) of snow on the ground on 1 November, with 11 in (28 cm) of new snow in 24 hours. The Bison Lake station (10,951 ft / 3,338 m) measured 15 in (38 cm) of snow on the ground on 1 November, with 10 in (25 cm) of new snow in 24 hours.",
@@ -414,8 +468,8 @@
    "writer": "template"
   }
  },
- "words_en": 348,
- "indexable": true,
+ "words_en": 657,
+ "indexable": false,
  "main": {
   "slug": "mt_baker",
   "name": "Mt Baker",
@@ -525,5 +579,27 @@
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@48.857,-121.665,9.0",
  "seconds": 0.0,
- "publish_utc": "2026-11-06T15:30:00Z"
+ "publish_utc": "2026-11-06T15:30:00Z",
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_high",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: overlap 56 % with us-west-fresh-snow-powder-alert-4-november-2026; powder alert of a small resort",
+ "quality": {
+  "ok": false,
+  "why": [
+   "overlap 56 % with us-west-fresh-snow-powder-alert-4-november-2026",
+   "powder alert of a small resort"
+  ],
+  "words": 657,
+  "overlap": 55.7,
+  "with": "us-west-fresh-snow-powder-alert-4-november-2026",
+  "langs_off": [],
+  "score": 116.5,
+  "intent": "resort:mt_baker|vs_normal_high",
+  "guide": false,
+  "v": 1
+ }
 }

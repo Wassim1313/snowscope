@@ -268,7 +268,51 @@
      "2026-11-06": 14
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Big White",
+     "slug": "big_white_ski_resort",
+     "now_cm": 39,
+     "usual_cm": 13,
+     "high_cm": null,
+     "week_ago_cm": null,
+     "height_m": 1891,
+     "best_weeks": [
+      15,
+      14,
+      13
+     ],
+     "ratio_pct": 300,
+     "deeper_than": 43,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Big White",
+   "top_cm": 58,
+   "top_m": 2271,
+   "base_cm": 0,
+   "base_m": 1512,
+   "rain_day": "2026-11-03",
+   "freezing_m": 2600,
+   "lift_top_m": 2271,
+   "next_cm": 2,
+   "second": "Silver Star",
+   "second_cm": 84,
+   "depth_cm": 91
+  },
+  "story": {
+   "id": "rare_for_date",
+   "place": "resort:big_white_ski_resort",
+   "score": 66,
+   "resort": "Big White"
+  }
  },
  "media": [
   {
@@ -305,6 +349,16 @@
      "p": [
       "The snow cover shrank from 370,180 km² on 1 November to 329,280 km² today, and our forecast gives 302,380 km² on 6 November.",
       "Height matters: at Big White, our model gives 58 cm at the top (2,271 m), 8 cm at mid-mountain (1,891 m) and 0 cm at the base (1,512 m)."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 1,891 m, Big White has 39 cm today; a normal 3 November has 13 cm there.",
+      "That is more than in 43 of the 46 past winters on this date.",
+      "In past winters the best snow at Big White usually came late March / early April.",
+      "An early lead like this matters most for the lower and middle runs, which usually wait until December for this much snow.",
+      "Height by height at Big White: 1,512 m 0 cm on the ground, 3 cm more in the next 7 days; 1,891 m 8 cm on the ground, 3 cm more in the next 7 days; 2,271 m 58 cm on the ground, 4 cm more in the next 7 days."
      ]
     },
     {
@@ -354,6 +408,16 @@
      ]
     },
     {
+     "h": "Face aux hivers passés",
+     "p": [
+      "Vers 1 891 m, Big White a 39 cm aujourd'hui ; un 3 novembre normal y compte 13 cm.",
+      "C'est plus que lors de 43 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Big White arrivait d'habitude fin mars / début avril.",
+      "Une telle avance compte surtout pour les pistes basses et moyennes, qui attendent d'habitude décembre pour autant de neige.",
+      "Altitude par altitude à Big White : 1 512 m 0 cm au sol, 3 cm de plus dans les 7 prochains jours; 1 891 m 8 cm au sol, 3 cm de plus dans les 7 prochains jours; 2 271 m 58 cm au sol, 4 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
      "h": "Ce que mesurent les stations",
      "p": [
       "Les chiffres des stations de ski sont des estimations du modèle pour le haut du domaine ; ceux des stations de mesure sont mesurés en un point, à la date indiquée."
@@ -396,8 +460,8 @@
    "writer": "template"
   }
  },
- "words_en": 268,
- "indexable": true,
+ "words_en": 501,
+ "indexable": false,
  "main": {
   "slug": "big_white_ski_resort",
   "name": "Big White",
@@ -506,5 +570,26 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@49.736,-118.949,9.0",
- "seconds": 0.0
+ "seconds": 0.0,
+ "rewrite": {
+  "v": 1,
+  "story": "rare_for_date",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 501 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 501 < 600"
+  ],
+  "words": 501,
+  "overlap": 0.0,
+  "with": null,
+  "langs_off": [],
+  "score": 113.6,
+  "intent": "resort:big_white_ski_resort|rare_for_date",
+  "guide": false,
+  "v": 1
+ }
 }

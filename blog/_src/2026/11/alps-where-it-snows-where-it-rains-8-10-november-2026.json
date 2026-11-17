@@ -853,7 +853,7 @@
   }
  },
  "words_en": 337,
- "indexable": true,
+ "indexable": false,
  "main": {
   "name": "Andermatt",
   "kind": "resort",
@@ -935,5 +935,20 @@
  "bulletins": [],
  "trip_day": "",
  "map_link": "https://snowscope.app/#@46.63,8.59,8",
- "publish_utc": "2026-11-08T09:05:00Z"
+ "publish_utc": "2026-11-08T09:05:00Z",
+ "noindex_why": "quality: words 391 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 391 < 600"
+  ],
+  "words": 391,
+  "overlap": 0.5,
+  "with": "atlas-rain-not-snow-physics-7-november-2026",
+  "langs_off": [],
+  "score": 43.5,
+  "intent": "alps|physics",
+  "guide": false,
+  "v": 1
+ }
 }

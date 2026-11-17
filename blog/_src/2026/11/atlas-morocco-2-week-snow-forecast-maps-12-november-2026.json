@@ -485,7 +485,7 @@
   }
  },
  "words_en": 309,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "habri_ski_resort",
   "name": "Habri",
@@ -556,5 +556,21 @@
   "max": 0.187,
   "with": "us-west-2-week-snow-forecast-maps-12-november-2026"
  },
- "publish_utc": "2026-11-12T18:20:16Z"
+ "publish_utc": "2026-11-12T18:20:16Z",
+ "noindex_why": "quality: words 404 < 600; no table or chart of its own",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 404 < 600",
+   "no table or chart of its own"
+  ],
+  "words": 404,
+  "overlap": 7.2,
+  "with": "western-canada-what-to-bring-ski-gear-conditions-11-november-2026",
+  "langs_off": [],
+  "score": 31.4,
+  "intent": "atlas|two-week-forecast",
+  "guide": false,
+  "v": 1
+ }
 }

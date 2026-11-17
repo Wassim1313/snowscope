@@ -324,7 +324,51 @@
     "measured_on": "2026-11-14",
     "network": "bolzano"
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Saint-Luc",
+     "slug": "saint_luc_chandolin",
+     "now_cm": 7,
+     "usual_cm": 22,
+     "high_cm": null,
+     "week_ago_cm": null,
+     "height_m": 2327,
+     "best_weeks": [
+      9,
+      10,
+      13
+     ],
+     "ratio_pct": 32,
+     "deeper_than": 8,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Saint-Luc",
+   "top_cm": 14,
+   "top_m": 2973,
+   "base_cm": 0,
+   "base_m": 1682,
+   "rain_day": "2026-11-17",
+   "freezing_m": 3160,
+   "lift_top_m": 2973,
+   "next_cm": 24,
+   "second": "Monterosa Ski",
+   "second_cm": 106,
+   "depth_cm": 110
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:saint_luc_chandolin",
+   "score": 58,
+   "resort": "Saint-Luc"
+  }
  },
  "media": [
   {
@@ -347,6 +391,18 @@
      "h": "Snow on the slopes today",
      "p": [
       "More ground is white now: 35,250 km² on 12 November, 68,650 km² today, and 56,290 km² expected on 17 November."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Tuesday 17 November the freezing level climbs to about 3,160 m, above the top of the lifts at 2,973 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 2,327 m, Saint-Luc has 7 cm today; a normal 14 November has 22 cm there.",
+      "That is more than in 8 of the 46 past winters on this date.",
+      "In past winters the best snow at Saint-Luc usually came early March / late March.",
+      "Day by day at Saint-Luc: Sunday 15 November 4 cm; Monday 16 November 7 cm; Tuesday 17 November 13 cm.",
+      "Height by height at Saint-Luc: 1,682 m 0 cm on the ground, 37 cm more in the next 7 days; 2,327 m 5 cm on the ground, 50 cm more in the next 7 days; 2,973 m 14 cm on the ground, 58 cm more in the next 7 days."
      ]
     },
     {
@@ -392,6 +448,18 @@
      "h": "La neige sur les pentes aujourd'hui",
      "p": [
       "Depuis le 12 novembre, la neige est passée de 35 250 km² à 68 650 km² aujourd'hui ; pour le 17 novembre, notre prévision donne 56 290 km²."
+     ]
+    },
+    {
+     "h": "De la pluie jusqu'en haut ?",
+     "p": [
+      "Le mardi 17 novembre, l'isotherme 0 °C monte vers 3 160 m, au-dessus du sommet des remontées à 2 973 m : il peut pleuvoir jusqu'en haut.",
+      "La pluie sur la neige fraîche l'alourdit et, après une nuit froide, la rend glacée : les jours suivants conviennent mieux aux pistes damées qu'à la poudreuse.",
+      "Vers 2 327 m, Saint-Luc a 7 cm aujourd'hui ; un 14 novembre normal y compte 22 cm.",
+      "C'est plus que lors de 8 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Saint-Luc arrivait d'habitude début mars / fin mars.",
+      "Jour après jour à Saint-Luc : dimanche 15 novembre 4 cm; lundi 16 novembre 7 cm; mardi 17 novembre 13 cm.",
+      "Altitude par altitude à Saint-Luc : 1 682 m 0 cm au sol, 37 cm de plus dans les 7 prochains jours; 2 327 m 5 cm au sol, 50 cm de plus dans les 7 prochains jours; 2 973 m 14 cm au sol, 58 cm de plus dans les 7 prochains jours."
      ]
     },
     {
@@ -441,7 +509,7 @@
    "rewrite": 1
   }
  },
- "words_en": 320,
+ "words_en": 609,
  "indexable": true,
  "main": {
   "slug": "saint_luc_chandolin",
@@ -583,5 +651,23 @@
   },
   "credit": null,
   "photo": null
+ },
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 609,
+  "overlap": 14.2,
+  "with": "us-west-wolf-creek-snow-depth-today-10-november-2026",
+  "langs_off": [],
+  "score": 110.0,
+  "intent": "resort:saint_luc_chandolin|rain_risk",
+  "guide": false,
+  "v": 1
  }
 }

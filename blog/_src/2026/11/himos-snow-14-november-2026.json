@@ -746,7 +746,7 @@
   }
  },
  "words_en": 336,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "hiihtokeskus_himosvuori",
   "name": "Hiihtokeskus Himosvuori",
@@ -798,5 +798,20 @@
   },
   "credit": null,
   "photo": null
+ },
+ "noindex_why": "quality: words 385 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 385 < 600"
+  ],
+  "words": 385,
+  "overlap": 0.8,
+  "with": "sillian-ski-map-hochpustertal-snow-13-november-2026",
+  "langs_off": [],
+  "score": 47.2,
+  "intent": "himos|snow-conditions",
+  "guide": false,
+  "v": 1
  }
 }

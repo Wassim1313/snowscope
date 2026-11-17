@@ -255,7 +255,51 @@
    "high slopes and north-facing slopes keep snow longest",
    "early-season snow is thin: stay on groomed pistes",
    "read the official avalanche bulletin before off-piste"
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Aramón Cerler",
+     "slug": "aramon_cerler",
+     "now_cm": 0,
+     "usual_cm": 1,
+     "high_cm": 13,
+     "week_ago_cm": null,
+     "height_m": 2060,
+     "best_weeks": [
+      7,
+      8,
+      5
+     ],
+     "ratio_pct": null,
+     "deeper_than": 17,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Aramón Cerler",
+   "top_cm": 0,
+   "top_m": 2618,
+   "base_cm": 0,
+   "base_m": 1503,
+   "rain_day": "2026-11-08",
+   "freezing_m": 3620,
+   "lift_top_m": 2618,
+   "next_cm": 1,
+   "second": "Rasos de Peguera",
+   "second_cm": 20,
+   "depth_cm": 21
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:aramon_cerler",
+   "score": 34,
+   "resort": "Aramón Cerler"
+  }
  },
  "media": [
   {
@@ -278,6 +322,17 @@
       "On its last clear day, 31 October, satellites saw no snow at Aramón Cerler: the snow there may be only on the highest slopes, or it fell after that day.",
       "Rasos de Peguera got 3 cm of new snow in the last 72 hours. On its last clear day, 2 November, satellites saw no snow at Rasos de Peguera: the snow there may be only on the highest slopes, or it fell after that day.",
       "Satellites saw Masella snow-covered on 4 November, its last clear day."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Sunday 8 November the freezing level climbs to about 3,620 m, above the top of the lifts at 2,618 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 2,060 m, Aramón Cerler has 0 cm today; a normal 6 November has 1 cm there.",
+      "That is more than in 17 of the 46 past winters on this date.",
+      "In past winters the best snow at Aramón Cerler usually came early February / mid-February.",
+      "Height by height at Aramón Cerler: 1,503 m 0 cm on the ground, 0 cm more in the next 7 days; 2,060 m 0 cm on the ground, 0 cm more in the next 7 days; 2,618 m 0 cm on the ground, 1 cm more in the next 7 days."
      ]
     },
     {
@@ -326,6 +381,17 @@
      ]
     },
     {
+     "h": "¿Lluvia hasta arriba?",
+     "p": [
+      "El domingo 8 de noviembre la isoterma de 0 °C sube hacia 3620 m, por encima del remonte más alto a 2618 m: puede llover hasta arriba.",
+      "La lluvia sobre nieve nueva la hace pesada y, tras una noche fría, helada: los días siguientes son mejores para pistas pisadas que para nieve polvo.",
+      "A unos 2060 m, Aramón Cerler tiene hoy 0 cm; un 6 de noviembre normal tiene 1 cm.",
+      "Es más que en 17 de los 46 inviernos pasados en esta fecha.",
+      "En inviernos pasados la mejor nieve en Aramón Cerler solía llegar a principios de febrero / mediados de febrero.",
+      "Cota a cota en Aramón Cerler: 1503 m 0 cm en el suelo, 0 cm más en los próximos 7 días; 2060 m 0 cm en el suelo, 0 cm más en los próximos 7 días; 2618 m 0 cm en el suelo, 1 cm más en los próximos 7 días."
+     ]
+    },
+    {
      "h": "Altitud, laderas y cota de nieve",
      "p": [
       "En Aramón Cerler, la cota de congelación llega a 2880 m-3620 m el 8 de noviembre, por encima de la cota alta de la estación (2618 m): ese día puede haber lluvia o nieve húmeda en todas las pistas.",
@@ -366,7 +432,7 @@
    "writer": "template"
   }
  },
- "words_en": 237,
+ "words_en": 499,
  "indexable": false,
  "main": {
   "slug": "aramon_cerler",
@@ -443,5 +509,29 @@
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@42.560,0.556,9.0",
  "seconds": 0.0,
- "publish_utc": "2026-11-06T10:53:00Z"
+ "publish_utc": "2026-11-06T10:53:00Z",
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 499 < 600; overlap 45 % with pyrenees-where-to-ski-this-weekend-4-november-2026",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 499 < 600",
+   "overlap 45 % with pyrenees-where-to-ski-this-weekend-4-november-2026"
+  ],
+  "words": 499,
+  "overlap": 44.6,
+  "with": "pyrenees-where-to-ski-this-weekend-4-november-2026",
+  "langs_off": [
+   "es"
+  ],
+  "score": 79.0,
+  "intent": "resort:aramon_cerler|rain_risk",
+  "guide": false,
+  "v": 1
+ }
 }

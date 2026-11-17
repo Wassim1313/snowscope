@@ -494,7 +494,7 @@
   }
  },
  "words_en": 470,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "boi_taull",
   "name": "Boí Taüll",
@@ -622,5 +622,21 @@
    "with_after": "pyrenees-freezing-level-snow-line-8-november-2026",
    "voice": "sat"
   }
- ]
+ ],
+ "noindex_why": "quality: words 541 < 600; dated pure-numbers daily",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 541 < 600",
+   "dated pure-numbers daily"
+  ],
+  "words": 541,
+  "overlap": 10.3,
+  "with": "pyrenees-freezing-level-snow-line-8-november-2026",
+  "langs_off": [],
+  "score": 48.6,
+  "intent": "pyrenees|snow-line",
+  "guide": false,
+  "v": 1
+ }
 }

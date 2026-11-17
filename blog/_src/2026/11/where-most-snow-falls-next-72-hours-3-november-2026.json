@@ -428,7 +428,7 @@
   }
  },
  "words_en": 303,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "chabanon",
   "name": "Chabanon",
@@ -858,5 +858,20 @@
    "with_after": "where-most-snow-falls-next-72-hours-8-november-2026",
    "voice": "field"
   }
- ]
+ ],
+ "noindex_why": "quality: words 442 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 442 < 600"
+  ],
+  "words": 442,
+  "overlap": 0.0,
+  "with": null,
+  "langs_off": [],
+  "score": 50.1,
+  "intent": "chabanon|snow-forecast",
+  "guide": false,
+  "v": 1
+ }
 }

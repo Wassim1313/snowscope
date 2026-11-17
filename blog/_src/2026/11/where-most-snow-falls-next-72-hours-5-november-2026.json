@@ -311,7 +311,35 @@
   "notes": [
    "new snow = SnowScope forecast on the upper slopes",
    "snow line = about 300 m below the forecast freezing level"
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Whistler",
+     "slug": "whistler",
+     "now_cm": 27,
+     "usual_cm": 66,
+     "high_cm": 115,
+     "week_ago_cm": 28,
+     "height_m": 1456,
+     "best_weeks": [
+      13,
+      12,
+      11
+     ],
+     "ratio_pct": 41
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "story": {
+   "id": "vs_normal_low",
+   "place": "resort:whistler",
+   "score": 56,
+   "resort": "Whistler"
+  }
  },
  "media": [
   {
@@ -358,6 +386,16 @@
      ]
     },
     {
+     "h": "Against past winters",
+     "p": [
+      "At about 1,456 m, Whistler has 27 cm today; a normal 5 November has 66 cm there.",
+      "Only one winter in ten has more than 115 cm on this date.",
+      "A week ago the same spot had 28 cm.",
+      "In past winters the best snow at Whistler usually came mid-March / late March.",
+      "A slow start is common and says little about January; for now the highest lifts and the runs with snowmaking are the safe choice."
+     ]
+    },
+    {
      "h": "European Alps: Fresh Snow for Switzerland and France",
      "p": [
       "In the European Alps, several Swiss resorts are forecast to receive fresh snow by Sunday, November 8, 2026. Saas Grund is expected to get 21 cm, while Grindelwald and Zermatt are both predicted to receive 18 cm of new snow.",
@@ -394,6 +432,16 @@
      "p": [
       "Les plus grandes quantités de neige au cours des 72 prochaines heures sont attendues dans l'Ouest canadien. Whistler Blackcomb devrait recevoir 94 cm de neige fraîche d'ici le dimanche 8 novembre 2026. Ski Callaghan suit de près avec une prévision de 93 cm de neige fraîche.",
       "Le Tweedsmuir Ski Club est également prêt pour d'importantes chutes de neige, avec 70 cm attendus d'ici dimanche. Pour les prochaines 24 heures, le Tweedsmuir Ski Club est en tête avec 37 cm, suivi de Ski Callaghan avec 32 cm et Whistler Blackcomb avec 22 cm de neige fraîche."
+     ]
+    },
+    {
+     "h": "Face aux hivers passés",
+     "p": [
+      "Vers 1 456 m, Whistler a 27 cm aujourd'hui ; un 5 novembre normal y compte 66 cm.",
+      "Un hiver sur dix seulement dépasse 115 cm à cette date.",
+      "Il y a une semaine, le même endroit avait 28 cm.",
+      "Les hivers passés, la meilleure neige à Whistler arrivait d'habitude mi-mars / fin mars.",
+      "Un début lent est fréquent et dit peu de choses sur janvier ; pour l'instant, les remontées les plus hautes et les pistes équipées de neige de culture sont le choix sûr."
      ]
     },
     {
@@ -434,8 +482,8 @@
    "usd": 0.002835
   }
  },
- "words_en": 289,
- "indexable": true,
+ "words_en": 478,
+ "indexable": false,
  "main": {
   "slug": "whistler",
   "name": "Whistler Blackcomb",
@@ -822,5 +870,26 @@
  ],
  "trip_day": "2026-11-07",
  "map_link": "https://snowscope.app/#@46.000,10.000,5.0",
- "seconds": 47.0
+ "seconds": 47.0,
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_low",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 478 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 478 < 600"
+  ],
+  "words": 478,
+  "overlap": 6.9,
+  "with": "alps-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 105.9,
+  "intent": "resort:whistler|vs_normal_low",
+  "guide": false,
+  "v": 1
+ }
 }

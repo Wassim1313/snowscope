@@ -134,7 +134,48 @@
     "cm_in_72h": 33,
     "km_from_resort": 9
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Piau-Engaly",
+     "slug": "piau_engaly",
+     "now_cm": 0,
+     "usual_cm": 2,
+     "high_cm": 20,
+     "week_ago_cm": null,
+     "height_m": 2144,
+     "best_weeks": [
+      7,
+      6,
+      10
+     ],
+     "ratio_pct": null,
+     "deeper_than": 17,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Piau-Engaly",
+   "top_cm": 2,
+   "top_m": 2527,
+   "base_cm": 0,
+   "base_m": 1762,
+   "rain_day": "2026-11-12",
+   "freezing_m": 3060,
+   "lift_top_m": 2527,
+   "next_cm": 29
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:piau_engaly",
+   "score": 22,
+   "resort": "Piau-Engaly"
+  }
  },
  "media": [
   {
@@ -157,6 +198,18 @@
      "h": "New snow on the mountains",
      "p": [
       "Our model spreads today's snow over 790 km² in the Pyrenees, reaching 21 of 53 resorts."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Thursday 12 November the freezing level climbs to about 3,060 m, above the top of the lifts at 2,527 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 2,144 m, Piau-Engaly has 0 cm today; a normal 12 November has 2 cm there.",
+      "That is more than in 17 of the 46 past winters on this date.",
+      "In past winters the best snow at Piau-Engaly usually came early February / mid-February.",
+      "Day by day at Piau-Engaly: Thursday 12 November 9 cm; Friday 13 November 5 cm; Saturday 14 November 7 cm; Sunday 15 November 17 cm.",
+      "Height by height at Piau-Engaly: 1,762 m 0 cm on the ground, 0 cm more in the next 7 days; 2,144 m 0 cm on the ground, 8 cm more in the next 7 days; 2,527 m 2 cm on the ground, 21 cm more in the next 7 days."
      ]
     },
     {
@@ -206,6 +259,18 @@
      "h": "Neige fraîche sur les montagnes",
      "p": [
       "Aujourd'hui, 790 km² de sol dans les Pyrénées sont couverts de neige selon notre modèle, et 21 stations sur 53 ont de la neige sur le haut du domaine."
+     ]
+    },
+    {
+     "h": "De la pluie jusqu'en haut ?",
+     "p": [
+      "Le jeudi 12 novembre, l'isotherme 0 °C monte vers 3 060 m, au-dessus du sommet des remontées à 2 527 m : il peut pleuvoir jusqu'en haut.",
+      "La pluie sur la neige fraîche l'alourdit et, après une nuit froide, la rend glacée : les jours suivants conviennent mieux aux pistes damées qu'à la poudreuse.",
+      "Vers 2 144 m, Piau-Engaly a 0 cm aujourd'hui ; un 12 novembre normal y compte 2 cm.",
+      "C'est plus que lors de 17 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Piau-Engaly arrivait d'habitude début février / mi-février.",
+      "Jour après jour à Piau-Engaly : jeudi 12 novembre 9 cm; vendredi 13 novembre 5 cm; samedi 14 novembre 7 cm; dimanche 15 novembre 17 cm.",
+      "Altitude par altitude à Piau-Engaly : 1 762 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours; 2 144 m 0 cm au sol, 8 cm de plus dans les 7 prochains jours; 2 527 m 2 cm au sol, 21 cm de plus dans les 7 prochains jours."
      ]
     },
     {
@@ -259,7 +324,7 @@
    "rewrite": 1
   }
  },
- "words_en": 240,
+ "words_en": 527,
  "indexable": false,
  "main": {
   "slug": "piau_engaly",
@@ -317,5 +382,28 @@
   "max": 0.155,
   "with": "alps-glacier-3000-fresh-snow-powder-alert-11-november-2026"
  },
- "publish_utc": "2026-11-12T13:06:52Z"
+ "publish_utc": "2026-11-12T13:06:52Z",
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 527 < 600; no table or chart of its own; powder alert of a small resort",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 527 < 600",
+   "no table or chart of its own",
+   "powder alert of a small resort"
+  ],
+  "words": 527,
+  "overlap": 14.3,
+  "with": "pyrenees-where-to-ski-this-weekend-4-november-2026",
+  "langs_off": [],
+  "score": 59.0,
+  "intent": "resort:piau_engaly|rain_risk",
+  "guide": false,
+  "v": 1
+ }
 }

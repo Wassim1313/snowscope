@@ -285,7 +285,51 @@
      "2026-11-10": 4
     }
    }
-  ]
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Whistler Blackcomb",
+     "slug": "whistler",
+     "now_cm": 31,
+     "usual_cm": 72,
+     "high_cm": 129,
+     "week_ago_cm": null,
+     "height_m": 1456,
+     "best_weeks": [
+      13,
+      12,
+      11
+     ],
+     "ratio_pct": 43,
+     "deeper_than": 8,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Whistler Blackcomb",
+   "top_cm": 56,
+   "top_m": 2259,
+   "base_cm": 0,
+   "base_m": 653,
+   "rain_day": "2026-11-07",
+   "freezing_m": 2380,
+   "lift_top_m": 2259,
+   "next_cm": 103,
+   "second": "Ski Callaghan",
+   "second_cm": 48,
+   "depth_cm": 85
+  },
+  "story": {
+   "id": "resort_lead",
+   "place": "resort:whistler",
+   "score": 47,
+   "resort": "Whistler Blackcomb"
+  }
  },
  "media": [
   {
@@ -345,6 +389,17 @@
      ]
     },
     {
+     "h": "Far ahead of the rest",
+     "p": [
+      "Whistler Blackcomb has 85 cm on its upper slopes, well ahead of Ski Callaghan with 48 cm.",
+      "At about 1,456 m, Whistler Blackcomb has 31 cm today; a normal 7 November has 72 cm there.",
+      "That is more than in 8 of the 46 past winters on this date.",
+      "In past winters the best snow at Whistler Blackcomb usually came mid-March / late March.",
+      "Day by day at Whistler Blackcomb: Saturday 7 November 10 cm; Sunday 8 November 67 cm; Monday 9 November 3 cm; Tuesday 10 November 33 cm.",
+      "Height by height at Whistler Blackcomb: 653 m 0 cm on the ground, 0 cm more in the next 7 days; 1,456 m 37 cm on the ground, 97 cm more in the next 7 days; 2,259 m 56 cm on the ground, 137 cm more in the next 7 days."
+     ]
+    },
+    {
      "h": "Height, slopes and snow line",
      "p": [
       "At Whistler Blackcomb, the freezing level reaches 1,500 m to 2,380 m on 7 November, above the top of the resort (2,259 m): rain or wet snow is possible on every slope that day.",
@@ -390,6 +445,17 @@
      "p": [
       "D'ici le 10 novembre, notre prévision donne 29 cm à Manning Park Resort et 29 cm à Sasquatch.",
       "La surface enneigée est passée de 310 410 km² le 5 novembre à 300 720 km² aujourd'hui, et notre prévision donne 278 020 km² le 10 novembre."
+     ]
+    },
+    {
+     "h": "Loin devant les autres",
+     "p": [
+      "Whistler Blackcomb compte 85 cm sur le haut du domaine, loin devant Ski Callaghan avec 48 cm.",
+      "Vers 1 456 m, Whistler Blackcomb a 31 cm aujourd'hui ; un 7 novembre normal y compte 72 cm.",
+      "C'est plus que lors de 8 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Whistler Blackcomb arrivait d'habitude mi-mars / fin mars.",
+      "Jour après jour à Whistler Blackcomb : samedi 7 novembre 10 cm; dimanche 8 novembre 67 cm; lundi 9 novembre 3 cm; mardi 10 novembre 33 cm.",
+      "Altitude par altitude à Whistler Blackcomb : 653 m 0 cm au sol, 0 cm de plus dans les 7 prochains jours; 1 456 m 37 cm au sol, 97 cm de plus dans les 7 prochains jours; 2 259 m 56 cm au sol, 137 cm de plus dans les 7 prochains jours."
      ]
     },
     {
@@ -439,8 +505,8 @@
    "usd": 0.003819
   }
  },
- "words_en": 299,
- "indexable": true,
+ "words_en": 543,
+ "indexable": false,
  "main": {
   "slug": "whistler",
   "name": "Whistler Blackcomb",
@@ -550,5 +616,26 @@
  "trip_day": "2026-11-14",
  "map_link": "https://snowscope.app/#@50.089,-122.942,9.0",
  "seconds": 31.4,
- "publish_utc": "2026-11-07T17:00:00Z"
+ "publish_utc": "2026-11-07T17:00:00Z",
+ "rewrite": {
+  "v": 1,
+  "story": "resort_lead",
+  "llm": false,
+  "usd": 0.0
+ },
+ "noindex_why": "quality: words 543 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 543 < 600"
+  ],
+  "words": 543,
+  "overlap": 19.6,
+  "with": "us-west-snow-forecast-4-november-2026",
+  "langs_off": [],
+  "score": 99.8,
+  "intent": "resort:whistler|resort_lead",
+  "guide": false,
+  "v": 1
+ }
 }

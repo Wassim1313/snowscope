@@ -371,7 +371,7 @@
   }
  },
  "words_en": 338,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": null,
   "name": "Oslo",
@@ -398,5 +398,21 @@
   "with": "where-to-ski-winter-2026-27-snow-reliability-by-region",
   "tries": 0
  },
- "publish_utc": "2026-11-13T18:29:12Z"
+ "publish_utc": "2026-11-13T18:29:12Z",
+ "noindex_why": "quality: words 402 < 600; no table or chart of its own",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 402 < 600",
+   "no table or chart of its own"
+  ],
+  "words": 402,
+  "overlap": 0.7,
+  "with": "alps-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 38.1,
+  "intent": "oslo|snow-now",
+  "guide": false,
+  "v": 1
+ }
 }
