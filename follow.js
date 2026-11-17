@@ -57,6 +57,10 @@
       later: "Demasiados intentos. Inténtalo en una hora.", fav: "Favorito", faved: "Favorito", saved: "{p} está en tus estaciones. ¿Recibir su nieve cada mañana?",
       your: "Tus estaciones", app_line: "Recíbelo cada mañana en la app gratuita", banner: "Alertas de nieve para {p}: app gratuita", banner0: "Alertas de nieve: app gratuita", install: "Obtener", close: "Cerrar", app_h: "La app gratis", app_push: "Un aviso la noche antes de un día de nieve polvo", app_on: "DISPONIBLE EN", app_scan: "Escanea con tu móvil",
       new: "nueva", nosnow: "Aún sin nieve", alerts_on: "Alertas activas", pick: "Elige una estación" },
+    // Arabic UI: the app card / banner lines (other follow texts fall back to English, like the rest of the ar UI)
+    ar: { app_line: "توصل بهاد المعلومات كل صباح فالتطبيق المجاني", banner: "تنبيهات التلج ل {p}: تطبيق مجاني", banner0: "تنبيهات التلج: تطبيق مجاني",
+      install: "حمّل", close: "سدّ", app_h: "حمّل التطبيق المجاني", app_push: "توصل بتنبيه فالليلة اللي قبل نهار التلج", app_on: "حمّلو من",
+      app_scan: "سكاني بالتليفون ديالك" },
   };
   const lang = () => { const l = ((W.I18N && I18N.lang) || D.documentElement.lang || "en").slice(0, 2).toLowerCase(); return T[l] ? l : "en"; };
   const t = (k, v) => { const s = (T[lang()][k] || T.en[k] || k); return v ? s.replace(/\{(\w)\}/g, (_, x) => (v[x] != null ? v[x] : "")) : s; };

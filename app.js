@@ -21,6 +21,9 @@
   // home page text (AdSense review 2026-11-16): the server-rendered "About SnowScope / snow today by region / guides"
   // block (tools/build_web.py home_info) stays at the bottom of the Snow today panel after the app replaces the panel
   const HOMEINFO = (() => { const e = $("homeinfo"); return e ? e.outerHTML : ""; })();
+  // resort guide (AdSense review 2026-11-17, tools/resort_guide.py): the server-rendered "About <resort>" text of a
+  // resort page stays at the bottom of that resort's panel (English UI only), with its numbers in the visitor's units
+  const RGUIDE = (() => { const e = $("rguide"); return e ? { slug: e.dataset.for, html: e.outerHTML } : null; })();
   // thin snow (1-10 cm on the 400 scale, 1-2.5 cm on the default 100 scale) is a clear sky blue, not the near-white
   // of the ColorBrewer ramp that vanished on the light basemap (owner 2026-11-03: "Oukaïmeden snow not visible")
   const DEPTH = [[1, [128, 184, 236]], [10, [116, 178, 228]], [25, [107, 174, 214]], [50, [66, 146, 198]], [100, [33, 113, 181]], [150, [8, 81, 156]], [250, [8, 48, 107]], [400, [37, 0, 79]]];
@@ -2968,6 +2971,12 @@
     const two = [...new Set(weeks.map(name))].slice(0, 2);   // built in the page language (fix 0.9.34b: "early mars and early avril")
     return two.length > 1 ? I18N.tu("{a} and {b}", two[0], two[1]) : two.join("");
   };
+  const guideHtml = (slug) => {
+    if (!RGUIDE || RGUIDE.slug !== slug || (I18N.lang && I18N.lang !== "en")) return "";
+    return RGUIDE.html.replace(/<span data-cm="(\d+)">[^<]*<\/span>/g, (m, v) => '<span data-cm="' + v + '">' + U.depth(+v) + "</span>")
+      .replace(/<span data-m="(\d+)">[^<]*<\/span>/g, (m, v) => '<span data-m="' + v + '">' + U.elev(+v) + "</span>")
+      .replace(/<span data-km="([\d.]+)">[^<]*<\/span>/g, (m, v) => '<span data-km="' + v + '">' + U.dist(+v) + "</span>");
+  };
   async function resortView(slug) {
     const box = $("pbody");
     const res = await RES.catch(() => null);
@@ -2992,7 +3001,8 @@
       adSlot("resort", x) +
       '<div class="sect">This season vs past winters</div><p class="note" id="rHElev" hidden></p><div id="rStrip"><div class="skel" style="height:118px"></div></div><div id="rHist"></div>' +
       '<div class="sect">Next 7 days</div><div id="rFc"></div>' +
-      '<div class="sect">Nearby resorts</div>' + near.map(([km, y]) => resRow(y, null, (y.snow[ti] || [])[0], U.dist(Math.round(km)), (y.snow[ti] || [])[1])).join("") + appCard() + footer();
+      '<div class="sect">Nearby resorts</div>' + near.map(([km, y]) => resRow(y, null, (y.snow[ti] || [])[0], U.dist(Math.round(km)), (y.snow[ti] || [])[1])).join("") +
+      guideHtml(slug) + appCard() + footer();
     const sVia = st.staysVia || "panel";
     st.staysVia = null;
     box.querySelector("[data-back]").onclick = () => (st.pushed ? history.back() : closeResort());
