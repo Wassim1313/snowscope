@@ -258,6 +258,135 @@
 },
 "change_vs_yesterday_km2": -2180,
 "change_vs_7_days_km2": 1940
+},
+"2026-11-18": {
+"country": "Austria",
+"country_code": "AT",
+"date": "2026-11-18",
+"quiet": false,
+"modelled_km2": 52110,
+"snow_km2_today": 18140,
+"snow_km2_yesterday": 16240,
+"snow_km2_7_days_ago": 15820,
+"new_cm_24h_max": 8,
+"new_cm_72h_max": 14,
+"area_km2_5cm_new_72h": 8860,
+"next_3_days_max_cm": 25,
+"next_7_days_max_cm": 44,
+"snowiest_day": "2026-11-19",
+"snowiest_day_cm": 12,
+"first_snow_day": "2026-11-19",
+"hotspots": [
+{
+"name": "Vorarlberg",
+"new_cm_72h": 23,
+"lat": 47.278,
+"lon": 10.074
+},
+{
+"name": "Tyrol",
+"new_cm_72h": 15,
+"lat": 47.395,
+"lon": 10.735
+},
+{
+"name": "the Ötztal Alps",
+"new_cm_72h": 15,
+"lat": 46.891,
+"lon": 10.865
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 1
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 1,
+"snow_cover_pct": 26
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 3,
+"snow_cover_pct": 66
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 10,
+"snow_cover_pct": 92
+},
+{
+"from_m": 2500,
+"to_m": 5000,
+"mean_depth_cm": 22,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 1500,
+"white_share_pct": 35,
+"resorts": [
+{
+"name": "Stubaier Gletscher",
+"slug": "stubaier_gletscher",
+"depth_cm": 72,
+"new_cm_72h": 13,
+"next_3_days_cm": 16,
+"top_m": 3208
+},
+{
+"name": "Pitztaler Gletscher",
+"slug": "pitztaler_gletscher",
+"depth_cm": 62,
+"new_cm_72h": 14,
+"next_3_days_cm": 19,
+"top_m": 3424
+},
+{
+"name": "Kaprun",
+"slug": "kaprun_kitzsteinhorn_maiskogel",
+"depth_cm": 59,
+"new_cm_72h": 7,
+"next_3_days_cm": 11,
+"top_m": 3024
+},
+{
+"name": "Kaunertaler Gletscher",
+"slug": "kaunertaler_gletscher",
+"depth_cm": 52,
+"new_cm_72h": 12,
+"next_3_days_cm": 18,
+"top_m": 3107
+},
+{
+"name": "Weißsee Gletscherwelt",
+"slug": "weisee_gletscherwelt",
+"depth_cm": 51,
+"new_cm_72h": 7,
+"next_3_days_cm": 14,
+"top_m": 2555
+}
+],
+"n_resorts": 278,
+"n_resorts_with_snow": 216,
+"resort_next_until": "2026-11-21",
+"week2": {
+"week1_max_cm": 35,
+"week2_max_cm": 69,
+"week2_days": [
+"2026-11-26",
+"2026-12-02"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 1900,
+"change_vs_7_days_km2": 2320
 }
 }
 }
