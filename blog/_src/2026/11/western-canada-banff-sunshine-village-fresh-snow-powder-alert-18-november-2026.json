@@ -1,0 +1,688 @@
+{
+ "id": "2026-11-18-ca_west-powder",
+ "slug": "western-canada-banff-sunshine-village-fresh-snow-powder-alert-18-november-2026",
+ "date": "2026-11-18",
+ "published_utc": "2026-11-18T16:53:05Z",
+ "updated_utc": "2026-11-18T16:53:05Z",
+ "region": "CA_WEST",
+ "angle": "powder",
+ "score": 152.5,
+ "signature": "sasquatch_mountain_resort:20|revelstoke:10|castle_mountain_resort:10",
+ "keyword": {
+  "family": "fresh-snow",
+  "entity": "banff_sunshine_village",
+  "region": "CA_WEST",
+  "date": "2026-11-18"
+ },
+ "tags": [
+  "powder",
+  "stations",
+  "where-to-ski",
+  "avalanche"
+ ],
+ "facts": {
+  "angle": "powder_alert",
+  "region": "Western Canada",
+  "date": "2026-11-18",
+  "weekday": "Wednesday",
+  "model_run": "2026-11-18",
+  "forecast_days": [
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 322740,
+   "resorts_with_snow": 46,
+   "resorts_in_region": 57
+  },
+  "region_before": {
+   "date": "2026-11-16",
+   "snow_covered_area_km2": 278460,
+   "resorts_with_snow": 43
+  },
+  "region_forecast": {
+   "date": "2026-11-21",
+   "snow_covered_area_km2": 317430,
+   "resorts_with_snow": 46
+  },
+  "question": "Where did fresh snow fall in the last 72 hours, and is more coming?",
+  "resorts": [
+   {
+    "name": "Sasquatch",
+    "country": "Canada",
+    "top_m": 1316,
+    "base_m": 975,
+    "depth_cm_upper_slopes_today": 23,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 15,
+    "new_cm_forecast_next_days": 0,
+    "slug": "sasquatch_mountain_resort",
+    "new_cm_by_day": {
+     "2026-11-16": 15,
+     "2026-11-17": 0,
+     "2026-11-18": 0,
+     "2026-11-19": 0,
+     "2026-11-20": 0,
+     "2026-11-21": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 975,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 1145,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 2
+     },
+     "top": {
+      "elev_m": 1316,
+      "depth_cm_model": 9,
+      "new_cm_next_7_days": 2
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-18": {
+      "min": 1050,
+      "max": 1480
+     },
+     "2026-11-19": {
+      "min": 1050,
+      "max": 1500
+     },
+     "2026-11-20": {
+      "min": 580,
+      "max": 1100
+     }
+    },
+    "past_winters": {
+     "height_m": 1145,
+     "snow_cm_at_this_height_today_model": 5,
+     "deeper_than_n_of_past_winters": 4,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 45
+    }
+   },
+   {
+    "name": "Revelstoke",
+    "country": "Canada",
+    "top_m": 2224,
+    "base_m": 514,
+    "depth_cm_upper_slopes_today": 44,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 14,
+    "new_cm_forecast_next_days": 0,
+    "slug": "revelstoke",
+    "new_cm_by_day": {
+     "2026-11-16": 14,
+     "2026-11-17": 0,
+     "2026-11-18": 0,
+     "2026-11-19": 0,
+     "2026-11-20": 0,
+     "2026-11-21": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 514,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 1369,
+      "depth_cm_model": 11,
+      "new_cm_next_7_days": 1
+     },
+     "top": {
+      "elev_m": 2224,
+      "depth_cm_model": 40,
+      "new_cm_next_7_days": 1
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-18": {
+      "min": 320,
+      "max": 1410
+     },
+     "2026-11-19": {
+      "min": 320,
+      "max": 1430
+     },
+     "2026-11-20": {
+      "min": 160,
+      "max": 1110
+     }
+    },
+    "past_winters": {
+     "height_m": 1369,
+     "snow_cm_at_this_height_today_model": 33,
+     "deeper_than_n_of_past_winters": 3,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 70
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-17"
+    },
+    "reliability": {
+     "range_cm": [
+      9,
+      14
+     ],
+     "mixed": true,
+     "snow_line_m": 1360.0,
+     "height_m": 2224
+    }
+   },
+   {
+    "name": "Castle",
+    "country": "Canada",
+    "top_m": 2259,
+    "base_m": 1409,
+    "depth_cm_upper_slopes_today": 16,
+    "new_cm_last_24h": 6,
+    "new_cm_last_72h": 12,
+    "new_cm_forecast_next_days": 4,
+    "slug": "castle_mountain_resort",
+    "new_cm_by_day": {
+     "2026-11-16": 2,
+     "2026-11-17": 4,
+     "2026-11-18": 6,
+     "2026-11-19": 1,
+     "2026-11-20": 1,
+     "2026-11-21": 2
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1409,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 5
+     },
+     "mid": {
+      "elev_m": 1834,
+      "depth_cm_model": 7,
+      "new_cm_next_7_days": 6
+     },
+     "top": {
+      "elev_m": 2259,
+      "depth_cm_model": 13,
+      "new_cm_next_7_days": 7
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-18": {
+      "min": 880,
+      "max": 1440
+     },
+     "2026-11-19": {
+      "min": 640,
+      "max": 1150
+     },
+     "2026-11-20": {
+      "min": 510,
+      "max": 1300
+     }
+    },
+    "past_winters": {
+     "height_m": 1834,
+     "snow_cm_at_this_height_today_model": 7,
+     "deeper_than_n_of_past_winters": 4,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 22
+    }
+   },
+   {
+    "name": "Banff Sunshine Village",
+    "country": "Canada",
+    "top_m": 2686,
+    "base_m": 1661,
+    "depth_cm_upper_slopes_today": 21,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 11,
+    "new_cm_forecast_next_days": 0,
+    "slug": "banff_sunshine_village",
+    "new_cm_by_day": {
+     "2026-11-16": 9,
+     "2026-11-17": 0,
+     "2026-11-18": 3,
+     "2026-11-19": 0,
+     "2026-11-20": 0,
+     "2026-11-21": 0
+    }
+   },
+   {
+    "name": "Grouse Mountain",
+    "country": "Canada",
+    "top_m": 1228,
+    "base_m": 872,
+    "depth_cm_upper_slopes_today": 5,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 10,
+    "new_cm_forecast_next_days": 0,
+    "slug": "grouse_mountain",
+    "new_cm_by_day": {
+     "2026-11-16": 10,
+     "2026-11-17": 0,
+     "2026-11-18": 0,
+     "2026-11-19": 0,
+     "2026-11-20": 0,
+     "2026-11-21": 0
+    }
+   }
+  ],
+  "storm_cells_72h": [
+   {
+    "near": "Sasquatch",
+    "cm_in_72h": 31,
+    "km_from_resort": 30
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Sasquatch",
+     "slug": "sasquatch_mountain_resort",
+     "now_cm": 5,
+     "usual_cm": 45,
+     "high_cm": null,
+     "week_ago_cm": null,
+     "height_m": 1145,
+     "best_weeks": [
+      13,
+      12,
+      15
+     ],
+     "ratio_pct": 11,
+     "deeper_than": 4,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Sasquatch",
+   "top_cm": 9,
+   "top_m": 1316,
+   "base_cm": 2,
+   "base_m": 975,
+   "rain_day": "2026-11-19",
+   "freezing_m": 1500,
+   "lift_top_m": 1316,
+   "next_cm": 0,
+   "second": "Revelstoke",
+   "second_cm": 44,
+   "depth_cm": 23
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:sasquatch_mountain_resort",
+   "score": 58,
+   "resort": "Sasquatch"
+  },
+  "focus_index": 3,
+  "title_focus_resort": "Banff Sunshine Village"
+ },
+ "media": [
+  {
+   "id": "map_new",
+   "kind": "new_map",
+   "file": "blog/media/2026/11/western-canada-banff-sunshine-village-fresh-snow-powder-alert-18-november-2026/map_new.webp",
+   "thumb": "blog/media/2026/11/western-canada-banff-sunshine-village-fresh-snow-powder-alert-18-november-2026/map_new_t.webp",
+   "bytes": 54592,
+   "snow_frac": 0.7213,
+   "weak": false
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "sv": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nysnö, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "nb": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nysnø, 72 t\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "fi": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Uusi lumi, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "nl": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Verse sneeuw, 72 u\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "ru": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Новый снег, 72 ч\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "sl": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Novi sneg, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "ca": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neu nova, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "pt": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve nova, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "pl": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Świeży śnieg, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "cs": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nový sníh, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "sk": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nový sneh, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "hu": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Friss hó, 72 óra\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "ro": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Zăpadă nouă, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "uk": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Новий сніг, 72 год\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "bg": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Нов сняг, 72 ч\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "sr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Novi sneg, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "bs": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Novi snijeg, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "hr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Novi snijeg, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "cnr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Novi snijeg, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "mk": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Нов снег, 72 ч\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "sq": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Borë e re, 72 orë\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "el": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Φρέσκο χιόνι, 72 ώρες\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">15</text><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Revelstoke</text><rect x=\"155\" y=\"70\" width=\"65\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"217\" y=\"83\" text-anchor=\"end\" class=\"vl in\">14</text><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Castle</text><rect x=\"155\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"117\" class=\"vl\">2</text><rect x=\"235\" y=\"104\" width=\"19\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"257\" y=\"117\" class=\"vl\">4</text><rect x=\"315\" y=\"104\" width=\"28\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"346\" y=\"117\" class=\"vl\">6</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">1</text><rect x=\"475\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"483\" y=\"117\" class=\"vl\">1</text><rect x=\"555\" y=\"104\" width=\"9\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"567\" y=\"117\" class=\"vl\">2</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Banff Sunshine Villa</text><rect x=\"155\" y=\"138\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"200\" y=\"151\" class=\"vl\">9</text><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"14\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"332\" y=\"151\" class=\"vl\">3</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Grouse Mountain</text><rect x=\"155\" y=\"172\" width=\"47\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"205\" y=\"185\" class=\"vl\">10</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>",
+    "sv": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Tidigare dagar (modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognos</span></div>",
+    "nb": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Tidligere dager (modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "fi": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Menneet päivät (malli)</span><span><i style=\"background:var(--chart-fc)\"></i>Ennuste</span></div>",
+    "nl": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "ru": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "sl": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "ca": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "pt": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "pl": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "cs": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "sk": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "hu": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "ro": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "uk": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "bg": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "sr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "bs": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "hr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "cnr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "mk": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "sq": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "el": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Snow forecast sunshine: 1,500 m freezing level brings rain risk Thursday",
+   "description": "Freezing level reaches 1,500 m at Banff Sunshine Village on November 19. Fresh snow fell across Western Canada in the last 72 hours, but rain threatens the new powder.",
+   "lede": "Snow forecast sunshine – Fresh snow arrived across Western Canada in the last three days, with Castle Mountain and Revelstoke picking up 12 to 14 cm. The catch: a freezing level of 1,500 m will push rain down to the summits at Banff Sunshine Village on Thursday, capping the new powder and binding the base.",
+   "sections": [
+    {
+     "h": "Where the new snow fell",
+     "p": [
+      "A storm cell moved in over the past 72 hours, delivering measurable snow across the region. Castle Mountain got 12 cm of new snow, with the most falling on Monday and Tuesday. Revelstoke and Sasquatch both saw 14 to 15 cm in the same window. Grouse Mountain picked up 10 cm. Even Banff Sunshine Village, the highest resort here at 2,686 m, received 11 cm over three days.",
+      "The snow is thin at lower elevations. At Sasquatch's base (975 m), our model shows just 2 cm on the ground today. Grouse Mountain sits at only 5 cm on the upper slopes. This is early season snow on mostly bare ground, so coverage is patchy and rocks are likely close to the surface on many slopes."
+     ]
+    },
+    {
+     "h": "Rain risk at the highest peaks",
+     "p": [
+      "The critical issue this week is not more snow but rising air temperature. On Thursday November 19, the freezing level at Banff Sunshine Village will climb to 1,500 m. The lift top sits at 2,686 m, well above that line. This means rain will fall on the fresh snow at the summit.",
+      "Rain on fresh snow does two things: it stops the powder from staying light, and it creates a crust that bonds to the base. That crust can trap water or become hard and icy. It is not a disaster for skiing, but it ends the pure powder window. At Revelstoke, which tops at 2,224 m, rain will fall closer to the summit too, though the highest slopes may escape with wet snow instead of pure rain."
+     ]
+    },
+    {
+     "h": "Castle Mountain stands out",
+     "p": [
+      "Castle Mountain is different. It sits lower than the other high peaks, with its summit at 2,259 m. More importantly, 6 cm of new snow fell there yesterday (Wednesday), which is unusual after three quiet days. The freezing level there on Thursday will drop to 640 m, then to 510 m on Friday, so the rain risk is lower. Castle also has more snow forecast: about 4 cm over the next few days, mostly on Thursday and Friday.",
+      "If you are chasing fresh snow, Castle is the better bet this week. The new fall there will not be capped by rain as early as the highest summits."
+     ]
+    },
+    {
+     "h": "What the numbers tell us",
+     "p": [
+      "Snow coverage across Western Canada has grown from 278,460 km² two days ago to 322,740 km² today. That gain of 44,000 km² is real: the region is whiter. But the absolute depths are still thin. At mid-slope elevation (1,369 m) at Revelstoke, our model reads 11 cm. At Sasquatch's mid level (1,145 m), it is just 6 cm. These are estimates for large areas, not exact measurements, so they come with uncertainty. On past seasons, by mid-November, Sasquatch mid-slopes usually hold 45 cm. Today we see 5 cm there. That is 11 per cent of normal.",
+      "The snow that fell Monday was the heaviest hit. By Tuesday, the weather had dried out. Yesterday and today brought nothing new. The forecast for Thursday through Friday is dry too, though Thursday's rain will reset the surface."
+     ]
+    },
+    {
+     "h": "What to watch on the mountains",
+     "p": [
+      "The snow line matters most right now. At Revelstoke on November 20, the freezing level will drop to 160 m, so almost all terrain will see snow, not rain. At Castle, it will hover around 510 m. But at Banff Sunshine Village on Thursday, rain is certain above 1,500 m. If you ski there that day, expect wet snow high and rain lower down.",
+      "The window for dry powder is very narrow this week because the freeze is high and the new snow is thin. Early season conditions mean a short honeymoon. By Friday, the crust will set hard, and the powder phase will be over."
+     ]
+    }
+   ],
+   "advice": [
+    "If you want fresh snow without rain, go to Castle Mountain on Thursday or Friday. The freezing level stays below 1,150 m both days, so rain will not reach the new powder.",
+    "At Banff Sunshine Village, ski early Thursday before 10 a.m., or wait until Friday when the freezing level drops below 1,100 m and snow returns to all elevations.",
+    "Avoid lower elevations on Thursday. Base areas at all resorts will see rain or wet slush as the freezing level peaks.",
+    "Check the official avalanche bulletin before you go off-piste. Early season snow is thin and may hide rocks or sit loosely on bare ground.",
+    "Upper slopes at Revelstoke will see snow fall on Thursday, not rain, so it remains skiable. The snow line sits around 1,360 m there."
+   ],
+   "captions": {
+    "map_new": "Fresh snow from the past 72 hours across Western Canada on November 18, 2026. Castle Mountain received 12 cm, Revelstoke and Sasquatch each received 14 to 15 cm. Snow coverage grew from 278,460 km² on November 16 to 322,740 km² today."
+   }
+  },
+  "fr": {
+   "title": "Banff Sunshine Village : un niveau de congélation à 1 500 m expose à un risque de pluie jeudi",
+   "description": "Le niveau de congélation atteint 1 500 m à Banff Sunshine Village le 19 novembre. De la neige fraîche est tombée dans tout l'ouest du Canada au cours des 72 dernières heures, mais la pluie menace la poudreuse nouvelle.",
+   "lede": "De la neige fraîche est arrivée dans tout l'ouest du Canada au cours des trois derniers jours, Castle Mountain et Revelstoke ayant reçu 12 à 14 cm. Le hic : un niveau de congélation de 1 500 m poussera la pluie jusqu'aux sommets de Banff Sunshine Village jeudi, scellant la poudreuse nouvelle et liant le manteau.",
+   "sections": [
+    {
+     "h": "Où la neige nouvelle est tombée",
+     "p": [
+      "Une cellule orageuse s'est installée au cours des 72 dernières heures, apportant de la neige mesurable dans la région. Castle Mountain a reçu 12 cm de neige nouvelle, avec les chutes les plus importantes lundi et mardi. Revelstoke et Sasquatch ont tous deux vu 14 à 15 cm dans la même période. Grouse Mountain a reçu 10 cm. Même Banff Sunshine Village, la station la plus haute ici à 2 686 m, a reçu 11 cm en trois jours.",
+      "La neige est mince aux basses altitudes. À la base de Sasquatch (975 m), notre modèle indique seulement 2 cm au sol aujourd'hui. Grouse Mountain n'enregistre que 5 cm sur les pentes supérieures. C'est une neige de début de saison sur un sol pratiquement dénudé, donc la couverture est inégale et les rochers sont probablement près de la surface sur de nombreuses pentes."
+     ]
+    },
+    {
+     "h": "Risque de pluie aux plus hauts sommets",
+     "p": [
+      "Le problème critique cette semaine n'est pas la neige supplémentaire mais la hausse de la température de l'air. Jeudi 19 novembre, le niveau de congélation à Banff Sunshine Village grimera à 1 500 m. Le sommet des remontées se situe à 2 686 m, bien au-dessus de cette limite. Cela signifie que de la pluie tombera sur la neige fraîche au sommet.",
+      "La pluie sur la neige fraîche fait deux choses : elle empêche la poudreuse de rester légère et crée une croûte qui se lie au manteau. Cette croûte peut piéger l'eau ou devenir dure et verglaçante. Ce n'est pas un désastre pour le ski, mais cela termine la fenêtre de pure poudreuse. À Revelstoke, qui culmine à 2 224 m, la pluie tombera aussi plus près du sommet, bien que les pentes les plus hautes pourraient échapper à de la pluie pure en faveur de la neige mouillée."
+     ]
+    },
+    {
+     "h": "Castle Mountain se distingue",
+     "p": [
+      "Castle Mountain est différent. Son sommet se situe à 2 259 m, plus bas que les autres hauts pics. Plus important encore, 6 cm de neige nouvelle sont tombés là-bas hier (mercredi), ce qui est inhabituel après trois jours calmes. Le niveau de congélation là-bas jeudi descendra à 640 m, puis à 510 m vendredi, donc le risque de pluie est moins élevé. Castle bénéficie aussi d'une neige supplémentaire prévue : environ 4 cm dans les prochains jours, surtout jeudi et vendredi.",
+      "Si vous recherchez de la neige fraîche, Castle est le meilleur pari cette semaine. La neige nouvelle là-bas ne sera pas scellée par la pluie aussi tôt que sur les plus hauts sommets."
+     ]
+    },
+    {
+     "h": "Ce que les chiffres nous disent",
+     "p": [
+      "La couverture neigeuse dans l'ouest du Canada est passée de 278 460 km² il y a deux jours à 322 740 km² aujourd'hui. Ce gain de 44 000 km² est réel : la région est plus blanche. Mais les profondeurs absolues restent minces. À mi-pente (1 369 m) à Revelstoke, notre modèle indique 11 cm. À mi-niveau à Sasquatch (1 145 m), c'est seulement 6 cm. Ce sont des estimations pour de grandes surfaces, pas des mesures exactes, donc elles comportent de l'incertitude. Les années passées, à la mi-novembre, les pentes mi-niveau de Sasquatch contenaient habituellement 45 cm. Aujourd'hui nous voyons 5 cm là-bas. C'est 11 pour cent de la normale.",
+      "La neige tombée lundi a eu le plus fort impact. Mardi, le temps s'était asséché. Hier et aujourd'hui n'ont rien apporté de nouveau. La prévision jeudi à vendredi est sèche aussi, bien que la pluie de jeudi réinitialisera la surface."
+     ]
+    },
+    {
+     "h": "Ce qu'il faut observer sur les montagnes",
+     "p": [
+      "La limite de neige compte surtout en ce moment. À Revelstoke le 20 novembre, le niveau de congélation descendra à 160 m, donc pratiquement tout le terrain verra de la neige, pas de la pluie. À Castle, il tournera autour de 510 m. Mais à Banff Sunshine Village jeudi, la pluie est certaine au-dessus de 1 500 m. Si vous skiez là-bas ce jour-là, attendez-vous à de la neige mouillée en haut et de la pluie en bas.",
+      "La fenêtre de poudreuse sèche est très étroite cette semaine parce que le gel est élevé et la neige nouvelle est mince. Les conditions de début de saison signifient une brève lune de miel. Vendredi, la croûte se cristallisera dur, et la phase de poudreuse sera terminée."
+     ]
+    }
+   ],
+   "advice": [
+    "Si vous voulez de la neige fraîche sans pluie, allez à Castle Mountain jeudi ou vendredi. Le niveau de congélation reste en dessous de 1 150 m les deux jours, donc la pluie n'atteindra pas la poudreuse nouvelle.",
+    "À Banff Sunshine Village, skiez tôt jeudi avant 10 h, ou attendez vendredi quand le niveau de congélation descend en dessous de 1 100 m et la neige revient à toutes les altitudes.",
+    "Évitez les basses altitudes jeudi. Les zones de base de toutes les stations verront de la pluie ou de la gadoue mouillée quand le niveau de congélation culmine.",
+    "Consultez le bulletin officiel d'avalanche avant d'aller hors-piste. La neige de début de saison est mince et peut cacher des rochers ou s'accumuler mollement sur un sol dénudé.",
+    "Les pentes supérieures de Revelstoke verront de la neige tomber jeudi, pas de la pluie, donc c'est skiable. La limite de neige se situe autour de 1 360 m là-bas."
+   ],
+   "captions": {
+    "map_new": "Neige fraîche des 72 dernières heures dans l'ouest du Canada le 18 novembre 2026. Castle Mountain a reçu 12 cm, Revelstoke et Sasquatch ont chacun reçu 14 à 15 cm. La couverture neigeuse a augmenté de 278 460 km² le 16 novembre à 322 740 km² aujourd'hui."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "voice": "field"
+  },
+  "fr": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "voice": "field"
+  }
+ },
+ "words_en": 651,
+ "indexable": true,
+ "main": {
+  "slug": "banff_sunshine_village",
+  "name": "Banff Sunshine Village",
+  "lat": 51.0874,
+  "lon": -115.77
+ },
+ "places": [
+  {
+   "name": "Sasquatch",
+   "lat": 49.3814,
+   "lon": -121.9441
+  },
+  {
+   "name": "Revelstoke",
+   "lat": 50.9631,
+   "lon": -118.119
+  },
+  {
+   "name": "Castle",
+   "lat": 49.3135,
+   "lon": -114.4272
+  },
+  {
+   "name": "Banff Sunshine Village",
+   "lat": 51.0874,
+   "lon": -115.77
+  },
+  {
+   "name": "Grouse Mountain",
+   "lat": 49.3804,
+   "lon": -123.075
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "sasquatch_mountain_resort",
+   "name": "Sasquatch"
+  },
+  {
+   "slug": "revelstoke",
+   "name": "Revelstoke"
+  },
+  {
+   "slug": "castle_mountain_resort",
+   "name": "Castle"
+  },
+  {
+   "slug": "banff_sunshine_village",
+   "name": "Banff Sunshine Village"
+  },
+  {
+   "slug": "grouse_mountain",
+   "name": "Grouse Mountain"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "sasquatch_mountain_resort",
+    "name": "Sasquatch",
+    "depth": 23,
+    "new72": 15,
+    "next": 0,
+    "top_m": 1316
+   },
+   {
+    "slug": "revelstoke",
+    "name": "Revelstoke",
+    "depth": 44,
+    "new72": 14,
+    "next": 0,
+    "top_m": 2224
+   },
+   {
+    "slug": "castle_mountain_resort",
+    "name": "Castle",
+    "depth": 16,
+    "new72": 12,
+    "next": 4,
+    "top_m": 2259
+   },
+   {
+    "slug": "banff_sunshine_village",
+    "name": "Banff Sunshine Village",
+    "depth": 21,
+    "new72": 11,
+    "next": 0,
+    "top_m": 2686
+   },
+   {
+    "slug": "grouse_mountain",
+    "name": "Grouse Mountain",
+    "depth": 5,
+    "new72": 10,
+    "next": 0,
+    "top_m": 1228
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Avalanche Canada",
+   "url": "https://avalanche.ca/"
+  }
+ ],
+ "trip_day": "2026-11-21",
+ "map_link": "https://snowscope.app/#@51.087,-115.770,9.0",
+ "seconds": 38.6,
+ "facts_used": 24,
+ "voice": "field",
+ "media_ids": [
+  "map_new"
+ ],
+ "seo_target": {
+  "topic": "banff_sunshine_village:forecast",
+  "query": "snow forecast sunshine",
+  "lang": "en",
+  "slug": "banff_sunshine_village",
+  "region": "CA_WEST",
+  "intent": "forecast",
+  "priority": "A",
+  "position": 11.0,
+  "impressions": 1,
+  "applied": true
+ },
+ "overlap": {
+  "before": 0.9,
+  "after": 0.9,
+  "with": "pyrenees-piau-engaly-fresh-snow-powder-alert-12-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.005,
+  "with": "pyrenees-what-to-bring-ski-gear-conditions-15-november-2026"
+ },
+ "publish_utc": "2026-11-18T16:53:05Z",
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 806,
+  "overlap": 0.7,
+  "with": "alps-what-to-bring-ski-gear-conditions-8-november-2026",
+  "langs_off": [],
+  "score": 238.8,
+  "intent": "resort:sasquatch_mountain_resort|rain_risk",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "map",
+  "files": {
+   "en": [
+    "blog/media/2026/11/western-canada-banff-sunshine-village-fresh-snow-powder-alert-18-november-2026/cover-en.webp",
+    "blog/media/2026/11/western-canada-banff-sunshine-village-fresh-snow-powder-alert-18-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/western-canada-banff-sunshine-village-fresh-snow-powder-alert-18-november-2026/cover-fr.webp",
+    "blog/media/2026/11/western-canada-banff-sunshine-village-fresh-snow-powder-alert-18-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}
