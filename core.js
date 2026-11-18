@@ -157,7 +157,7 @@
     if (webPro()) {
       hit("/ad/slot/" + kind + "/house_pro", "ads", "hp|" + kind);
       return '<a class="housead pro" href="' + ROOT + 'pricing/"><span class="hl">Sponsored</span><span class="ic"><span class="ms f">workspace_premium</span></span>' +
-        "<span><b>SnowScope Pro</b><small>Every peak named, 3D videos, no ads · one payment</small></span></a>";
+        "<span><b>SnowScope Pro</b><small>Every peak named, 3D videos, no ads · monthly or season</small></span></a>";
     }
     const a = (S.cfg && S.cfg.app) || {};
     const play = a.play_live && a.play_package ? "https://play.google.com/store/apps/details?id=" + encodeURIComponent(a.play_package) +
@@ -545,6 +545,8 @@
   // Freemium (owner 2026-11-03, docs/TIERS.md): the website is free for everyone (ads + Stay22 + partners); the old Pro
   // locks and the web checkout come back only with web_config "web_pro_enabled": true (Paddle code kept dormant).
   const webPro = () => !!(S.cfg && S.cfg.web_pro_enabled === true);
+  // owner 2026-11-18: sell Pro (monthly / season) on the website without locking anything on it
+  const webSell = () => !!(S.cfg && S.cfg.web_sell_enabled === true);
   function proHere(c) {
     if (!webPro()) return true;
     if (!S.pro) return false;
@@ -556,12 +558,141 @@
   /** Pro for a domain / region code ("ATLAS", "ALPS", ...). */
   const proIn = (code) => !webPro() || !!S.pro && (!S.scope || S.scope.includes(String(code || "").toUpperCase()));
 
+  // ------------------------------------------------------------------ Pro split (owner 2026-11-18, docs/TIERS.md)
+  // web_config "tiers_mode": "pro" (default "freemium") = the free window is today -2 .. today +2; Pro = every forecast
+  // day, the 72 h / 7-day totals and meteogram, the full powder ranking, more powder alerts, any trip date. The static
+  // day files cannot be gated by the server, so the site locks them here. Season vs past winters stays free on the
+  // website (adUnlock hook for the future rewarded AdSense) and is Pro in the apps (html[data-native]).
+  const tiersMode = () => String((S.cfg && S.cfg.tiers_mode) || "freemium");
+  const proSplit = () => tiersMode() === "pro";
+  const isNative = () => !!document.documentElement.dataset.native;
+  const nativePro = () => { try { return isNative() && localStorage.getItem("ss_native_pro") === "1"; } catch { return false; } };
+  const isPro = () => !!S.pro || nativePro();
+  const FREE_BACK = 2, FREE_AHEAD = 2;
+  /** TODO (rewarded AdSense, once AdSense is approved): show a rewarded ad and resolve true when it was watched. */
+  function adUnlock(what) { void what; return true; }
+  /** true when this Pro feature is locked for the visitor (mode pro, not Pro). */
+  function locked(feature) {
+    if (!proSplit() || isPro()) return false;
+    if (feature === "history" && !isNative()) return !adUnlock("history");    // website: free (later: after an ad)
+    return true;
+  }
+  const dayNum = (d) => Date.UTC(+d.slice(0, 4), +d.slice(5, 7) - 1, +d.slice(8, 10)) / 864e5;
+  /** a map / resort day outside today -2 .. today +2 (both YYYY-MM-DD) that the visitor cannot open. */
+  function dayLocked(d, today) {
+    if (!d || !today || !locked("forecast_plus")) return false;
+    const k = dayNum(d) - dayNum(today);
+    return k < -FREE_BACK || k > FREE_AHEAD;
+  }
+  const PT = (s) => (window.I18N ? I18N.t(s) : s);
+  const PTU = (s, ...v) => (window.I18N && I18N.tu ? I18N.tu(s, ...v) : v.reduce((r, x, i) => r.replace("{" + "ab"[i] + "}", x), s));
+  const SELL_TITLE = {
+    forecast_plus: "See the whole week with Pro", ranking_full: "See the full powder ranking with Pro",
+    alerts_plus: "More powder alerts with Pro", planner_plus: "Plan any date with Pro",
+    history: "Compare this season with past winters with Pro",
+  };
+  const DEF_PRICE = { pro_yearly: "€29.99", pro_monthly: "€4.99" };
+  let sellOpen = false;
+  const seen = { get() { try { return !!sessionStorage.getItem("ss_sell_seen"); } catch { return false; } },
+                 set() { try { sessionStorage.setItem("ss_sell_seen", "1"); } catch { /* private */ } } };
+  /** The Pro sales sheet. feature: forecast_plus | ranking_full | alerts_plus | planner_plus | history | "";
+      o: {title, line, src} (src = beacon tag: day, card, ranking, alerts, planner, nudge_visit, nudge_snow, ...). */
+  function proSell(feature, o = {}) {
+    if (sellOpen) return null;
+    const src = String(o.src || feature || "pro").replace(/[^a-z0-9_]/gi, "").slice(0, 24) || "pro";
+    const native = isNative();
+    const pay = !native && !!(window.SSPay && SSPay.enabled());
+    const bullets = ["Every day of the forecast, not just the next 2", "72-hour and 7-day snow totals, hour by hour",
+      "The full powder ranking and unlimited powder alerts",
+      native ? "Season against past winters, and no ads" : "No ads, here and in the app (same account)"];
+    const live = pay || native;
+    const plan = (k, name, sub, best) => (live ? '<button type="button" class="psell-plan' + (best ? " best" : "") + '" data-plan="' + k + '">' : '<div class="psell-plan' + (best ? " best" : "") + '">') +
+      (best ? '<span class="tag">' + esc(PT("Best value")) + "</span>" : "") + "<b>" + esc(PT(name)) + '</b><span class="pr" data-noi18n data-price-of="' + k + '">' + esc(DEF_PRICE[k]) + "</span><small>" + esc(PT(sub)) + "</small>" + (live ? "</button>" : "</div>");
+    const acts = live
+      ? '<button type="button" class="btn ski big full" data-plan="pro_yearly"><span class="ms f">workspace_premium</span>' + esc(PT("Get the season pass")) + "</button>" +
+        '<button type="button" class="btn ghost big full" style="margin-top:8px" data-plan="pro_monthly">' + esc(PT("Monthly")) + "</button>"
+      : '<a class="btn ski big full" data-plan="app" href="' + esc(appUrl()) + '"><span class="ms f">downhill_skiing</span>' + esc(PT("Get Pro in the app")) + "</a>";
+    const scoped = !!(S.pro && S.scope);
+    let clicked = false;
+    const m = modal(head('<span class="pro"><span class="ms f">workspace_premium</span>PRO</span>') +
+      '<div class="psell"><p class="psell-h">' + esc(PT(o.title || SELL_TITLE[feature] || "Get SnowScope Pro")) + "</p>" +
+      (o.line ? '<p class="psell-ctx">' + esc(o.line) + "</p>" : "") +
+      (scoped ? '<p class="psell-ctx">' + esc(PT("Your Pro covers the High Atlas. Get Pro everywhere")) + "</p>" : "") +
+      '<ul class="psell-b">' + bullets.map((b) => '<li><span class="ms f">check_circle</span>' + esc(PT(b)) + "</li>").join("") + "</ul>" +
+      '<div class="psell-plans">' + plan("pro_yearly", "Season pass", "for the whole season (1 year)", true) + plan("pro_monthly", "Monthly", "a month, cancel anytime", false) + "</div>" +
+      acts + '<button type="button" class="linkbtn psell-no" data-close>' + esc(PT("Not now")) + "</button>" +
+      (!native && fbEnabled() && !S.user ? '<button type="button" class="linkbtn psell-in" data-signin>' + esc(PT("Already Pro? Sign in")) + "</button>" : "") +
+      "</div>", { onClose: () => { sellOpen = false; if (!clicked) hit("/pro/sell/" + src + "/close", "web"); } });
+    sellOpen = true;
+    seen.set();
+    hit("/pro/sell/" + src + "/show", "web");
+    if (window.gtag) try { gtag("event", "pro_sell_show", { placement: src }); } catch { /* ignore */ }
+    if (pay && SSPay.locate) SSPay.locate(null).then((r) => {   // Paddle's localized prices when it answers
+      m.el.querySelectorAll("[data-price-of]").forEach((el) => { const v = r && r.prices && r.prices[el.dataset.priceOf]; if (v) el.textContent = v; });
+    }).catch(() => {});
+    m.el.addEventListener("click", (e) => {
+      if (e.target.closest("[data-signin]")) { clicked = true; m.close(); signInModal(); return; }
+      const b = e.target.closest("[data-plan]");
+      if (!b) return;
+      const k = b.dataset.plan;
+      clicked = true;
+      hit("/pro/sell/" + src + "/click_" + (k === "pro_yearly" ? "season" : k === "pro_monthly" ? "monthly" : "app"), "web");
+      if (window.gtag) try { gtag("event", "pro_sell_click", { placement: src, plan: k }); } catch { /* ignore */ }
+      if (k === "app") return;                              // the link opens the app / store
+      e.preventDefault();
+      m.close();
+      if (native) { if (window.SSNative && SSNative.paywall) SSNative.paywall(); return; }   // App Store 3.1.1: StoreKit only
+      SSPay.open(k);
+    });
+    return m;
+  }
+
+  // smart Pro popup (owner 2026-11-18): never on the first visit, never twice in a session, at most once per 3 days per
+  // browser, never for Pro, never on account / pricing / legal pages. Moments: (a) 2nd+ visit after ~40 s of use;
+  // (b) a resort whose days beyond today +2 bring big new snow; (c) a tap on a locked day / card (proSell directly).
+  const NUDGE_GAP = 3 * 864e5, NUDGE_AFTER_S = 40;
+  const NO_NUDGE = /(^|\/)(account|pricing|refund|privacy|terms|legal|sources|contact|welcome|about|editorial|jobs)(\.html|\/|$)/;
+  const visits = (() => {   // this browser's visit number (a visit = a browser session)
+    let n = 0;
+    try {
+      n = +localStorage.getItem("ss_visits") || 0;
+      if (!sessionStorage.getItem("ss_visit")) { n += 1; localStorage.setItem("ss_visits", String(n)); sessionStorage.setItem("ss_visit", "1"); }
+    } catch { n = 0; }
+    return n;
+  })();
+  function nudgeOk() {
+    if (!proSplit() || isPro() || sellOpen || seen.get() || visits < 2 || NOADS) return false;
+    if (NO_NUDGE.test(location.pathname) || /^(account|pricing|refund|legal)$/.test((document.body && document.body.dataset.page) || "")) return false;
+    if (document.querySelector(".scrim")) return false;                 // another sheet is open: not now
+    let last = 0; try { last = +localStorage.getItem("ss_nudge_at") || 0; } catch { return false; }
+    return Date.now() - last >= NUDGE_GAP;
+  }
+  /** o: {kind: "visit"|"snow", name, cm (week total, cm)} -> true when the popup was shown */
+  function proNudge(o = {}) {
+    if (!nudgeOk()) return false;
+    try { localStorage.setItem("ss_nudge_at", String(Date.now())); } catch { return false; }
+    const snow = o.kind === "snow" && o.name && o.cm;
+    proSell("forecast_plus", snow
+      ? { src: "nudge_snow", title: PTU("{a} gets {b} this week", o.name, U.depth(Math.round(o.cm))),
+          line: PT("You see the first 2 days; Pro shows the whole week.") }
+      : { src: "nudge_visit", title: "Know when the snow comes, the whole week ahead",
+          line: PT("Free shows today and the next 2 days. Pro shows the whole week, the 72-hour and 7-day totals and the full powder ranking.") });
+    return true;
+  }
+  let activeS = 0;
+  setInterval(() => {                    // (a) seconds of visible use of this page
+    if (document.visibilityState !== "visible" || !S.started || !proSplit()) return;
+    activeS += 5;
+    if (activeS >= NUDGE_AFTER_S && activeS % 20 === 0) proNudge({ kind: "visit" });
+  }, 5000);
+
   function upsell(what) {
+    if (proSplit()) return proSell("", { line: what || "", src: "upsell" });   // mode pro: one sales sheet everywhere
     const scoped = !!(S.pro && S.scope);
     const m = modal(head('<span class="pro"><span class="ms f">lock</span>PRO</span>') +
       '<p style="font-size:17px;font-weight:620;margin:6px 0 4px">' + esc(what || "This is a Pro feature") + "</p>" +
-      (scoped ? '<p style="margin:0 0 10px"><b>Your Pro covers the High Atlas. Get Pro everywhere</b> (Alps, Pyrenees, North America…) with one payment in the app.</p>' : "") +
-      (!webPro() ? '<p style="color:var(--ink2);margin:0 0 14px">Everything on the website is free. In the Android app, SnowScope Pro names every peak around you, creates 3D videos and removes the ads: one payment, no subscription.</p>' : "") +
+      (scoped ? '<p style="margin:0 0 10px"><b>Your Pro covers the High Atlas. Get Pro everywhere</b> (Alps, Pyrenees, North America…) with the monthly plan or the season pass.</p>' : "") +
+      (!webPro() ? '<p style="color:var(--ink2);margin:0 0 14px">Everything on the website is free. SnowScope Pro names every peak around you in the Android app, creates 3D videos and removes the ads, here and in the app: €4.99 a month or €29.99 for the whole season (1 year).</p>' : "") +
       (!webPro() ? "" : '<p style="color:var(--ink2);margin:0 0 14px">SnowScope Pro adds the sharper snow map, 15 days instead of 5, new snow, wind, freezing level, satellite snow and the 7-day resort forecast, without ads. Get it in the Android app, then sign in here with the same account.</p>') +
       (window.SSPay && SSPay.enabled() ? '<button class="btn ski big full" data-buy-pro><span class="ms f">workspace_premium</span>Get Pro</button>' +
         '<a class="btn ghost big full" style="margin-top:8px" href="' + esc(appUrl()) + '"><span class="ms f">downhill_skiing</span>Get the Android app</a>'
@@ -816,7 +947,7 @@
     analytics();
     setupFind();
     // web payments (Paddle overlay checkout, paddle.js): only when the owner config has a client-side token
-    if (webPro() && S.cfg.paddle && S.cfg.paddle.client_token) loadScript(ROOT + "paddle.js").catch(() => {});
+    if ((webPro() || webSell()) && S.cfg.paddle && S.cfg.paddle.client_token) loadScript(ROOT + "paddle.js").catch(() => {});
     document.querySelectorAll("[data-app-link]").forEach((a) => { a.href = appUrl(); });
     // a visitor who was Pro last time: wait (max 4 s) for the sign-in check before any ad loads
     const c = store.get("ss_ent");
@@ -834,6 +965,6 @@
     return S;
   }
 
-  window.SS = { base, webPro, proHere, proIn, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, partnerChoices, partnerGranted: () => PC.granted(), partnerSet: (y, via) => PC.set(y, via), getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink, stayCur,
+  window.SS = { base, webPro, webSell, proHere, proIn, tiersMode, proSplit, isPro, locked, dayLocked, adUnlock, proSell, proNudge, isNative, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, partnerChoices, partnerGranted: () => PC.granted(), partnerSet: (y, via) => PC.set(y, via), getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink, stayCur,
                 resorts, mapLib, transformRequest, onChange: (f) => S.listeners.push(f), store, ROOT, IAB, refHost };
 })();

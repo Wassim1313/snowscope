@@ -132,7 +132,11 @@
   }
   function stepDay(k) {
     const ds = dates(), i = ds.indexOf(X.st.day), j = i + k;
-    if (j < 0 || j >= ds.length) { if (!X.st.pro) SS.upsell("See 15 days of snow: the past week and the week ahead"); return; }
+    if (j < 0 || j >= ds.length) {
+      if (SS.locked && SS.locked("forecast_plus")) SS.proSell("forecast_plus", { src: "day_key" });   // Pro split 2026-11-18
+      else if (!X.st.pro) SS.upsell("See 15 days of snow: the past week and the week ahead");
+      return;
+    }
     X.setDay(ds[j]);
   }
   function hoursList() {                 // Pro wind / freezing level: the 3-hour steps of the day; radar: its frames
@@ -223,10 +227,12 @@
 
   // ------------------------------------------------------------------ meteogram (point panel): hour by hour at a spot
   const FC = new Map();
+  // Pro split (owner 2026-11-18): a free visitor gets 48 h (the API answers 402 to hours > 48 without Pro)
+  const fcLocked = () => !!(SS.locked && SS.locked("forecast_plus"));
   async function meteogram(pt, days, region) {
     const box = $("ptMeteo"); if (!box) return;
-    const st = X.st, key = pt.lat + "," + pt.lon;
-    if (!FC.has(key)) FC.set(key, SS.api("/v1/point/forecast?lat=" + pt.lat + "&lon=" + pt.lon + "&hours=168", { auth: true, timeout: 25000 }).catch((e) => ({ err: e })));
+    const st = X.st, hrs = fcLocked() ? 48 : 168, key = pt.lat + "," + pt.lon + "," + hrs;
+    if (!FC.has(key)) FC.set(key, SS.api("/v1/point/forecast?lat=" + pt.lat + "&lon=" + pt.lon + "&hours=" + hrs, { auth: true, timeout: 25000 }).catch((e) => ({ err: e })));
     if (FC.size > 24) FC.delete(FC.keys().next().value);
     const fc = await FC.get(key);
     if (!$("ptMeteo") || st.point !== pt) return;
@@ -240,7 +246,7 @@
     const draw = (cmp) => { $("ptMeteo").innerHTML = meteoHtml(fc, days, cmp); bind(); };
     const bind = () => {
       const b = $("ptMeteo").querySelector("[data-cmp]"); if (b) b.onclick = () => draw(b.getAttribute("aria-pressed") !== "true");
-      const u = $("ptMeteo").querySelector("[data-up]"); if (u) u.onclick = () => SS.upsell("The whole week, hour by hour, is in Pro");
+      const u = $("ptMeteo").querySelector("[data-up]"); if (u) u.onclick = () => (fcLocked() ? SS.proSell("forecast_plus", { src: "meteogram" }) : SS.upsell("The whole week, hour by hour, is in Pro"));
       const sc = $("ptMeteo").querySelector(".meteo"); if (sc && document.documentElement.dir === "rtl") sc.scrollLeft = 0;
     };
     draw(false);
@@ -248,8 +254,8 @@
   const sum = (a) => a.reduce((s, v) => s + (v || 0), 0);
   const avg = (a) => { const v = a.filter((x) => x != null); return v.length ? v.reduce((s, x) => s + x, 0) / v.length : null; };
   function meteoHtml(fc, days, cmp) {
-    const st = X.st, DATA = X.data(), V = fc.variables || {}, T = fc.times, pro = st.pro;
-    const hours = Math.min(T.length, pro ? 168 : 72), nb = Math.floor(hours / 3);
+    const lk = fcLocked(), st = X.st, DATA = X.data(), V = fc.variables || {}, T = fc.times, pro = st.pro && !lk;
+    const hours = Math.min(T.length, pro ? 168 : lk ? 48 : 72), nb = Math.floor(hours / 3);
     if (nb < 4) return '<p class="none">' + esc(t("The hour-by-hour forecast is updating, try again in a minute.")) + "</p>";
     const med = (v, i) => (V[v] && V[v].median ? V[v].median[i] : null), lo = (v, i) => (V[v] && V[v].lo ? V[v].lo[i] : null), hi = (v, i) => (V[v] && V[v].hi ? V[v].hi[i] : null);
     const bins = [];
@@ -344,7 +350,7 @@
     return '<div class="meteo">' + s + "</div>" +
       '<div class="keyrow"><span><i style="background:var(--accent)"></i>' + esc(t("new snow")) + '</span><span><i style="background:var(--fair)"></i>' + esc(t("temperature")) + '</span><span><i style="background:var(--accent-ink);height:2px"></i>' + esc(t("freezing level")) + "</span><span>↑ " + esc(t("wind")) + "</span></div>" +
       (agree ? '<p class="agree">' + esc(agree) + (pm && Object.keys(pm).length >= 2 ? ' <button class="linkbtn" data-cmp aria-pressed="' + cmp + '">' + esc(cmp ? t("Hide the comparison") : t("Compare forecasts")) + "</button>" : "") + "</p>" : "") +
-      (pro ? "" : '<div class="prolock" style="margin-top:8px"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>' + esc(t("3 days are free.")) + "</b> " + esc(t("Pro shows the whole week, hour by hour.")) + '</p><button class="btn ink" data-up>' + esc(t("See the week")) + "</button></div>");
+      (pro ? "" : '<div class="prolock" style="margin-top:8px"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>' + esc(t(lk ? "2 days are free." : "3 days are free.")) + "</b> " + esc(t("Pro shows the whole week, hour by hour.")) + '</p><button class="btn ink" data-up>' + esc(t(lk ? "See the 7-day forecast with Pro" : "See the week")) + "</button></div>");
   }
 
   // ------------------------------------------------------------------ init

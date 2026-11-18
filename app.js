@@ -264,6 +264,7 @@
         st.proDates = [...s].sort();
       } catch (e) { st.proIdx = null; st.proDates = null; if (e.down) toast("Pro data is updating, try again in a minute.", 5000); }
     }
+    if (lockedDay(st.day)) st.day = DATA.today;     // Pro split: the shown day stays inside today -2 .. +2
     if (!st.pro) {
       if (["sat", ...FIELD_MODES].includes(st.main)) st.main = "depth";
       st.nw = 1;
@@ -274,10 +275,26 @@
     if (window.SSX) SSX.refresh();
   }
   const proLive = () => st.pro && st.proIdx;
+  // Pro split (owner 2026-11-18, docs/TIERS.md, core.js SS.locked): free = today -2 .. today +2, locked cards / rows
+  const lockedFc = () => !!(SS.locked && SS.locked("forecast_plus"));
+  const lockedDay = (d) => !!(SS.dayLocked && SS.dayLocked(d, DATA.today));
+  const lockedHist = () => !!(SS.locked && SS.locked("history"));
+  // a locked card: the content blurred behind, one line + one button (tap = the Pro sales sheet)
+  const proCard = (feature, src, title, line, btn, blurred) => '<div class="pcard" data-pro-lock="' + feature + '" data-src="' + src + '">' +
+    '<div class="pblur" aria-hidden="true">' + (blurred || '<div class="skel" style="height:120px"></div>') + '</div><div class="pover"><span class="pro"><span class="ms f">lock</span>PRO</span>' +
+    "<b>" + esc(I18N.t(title)) + "</b>" + (line ? '<small style="color:var(--ink2)">' + esc(I18N.t(line)) + "</small>" : "") +
+    '<button class="btn ink" type="button">' + esc(I18N.t(btn)) + "</button></div></div>";
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-pro-lock]");
+    if (!b || !SS.proSell) return;
+    e.preventDefault(); e.stopPropagation();
+    SS.proSell(b.dataset.proLock, { src: b.dataset.src || b.dataset.proLock });
+  }, true);
   const isStatic = (d) => DATA.dates.includes(d);
 
   // ------------------------------------------------------------------ timeline
   function dayLocked(d) {
+    if (lockedDay(d)) return true;                  // Pro split (2026-11-18): beyond today +2 / before today -2
     if (st.pro) return false;
     if (st.main === "powder") return d !== DATA.today;
     return !isStatic(d);
@@ -294,13 +311,15 @@
     box.onclick = (e) => {
       const b = e.target.closest("[data-d]");
       if (!b) return;
-      if (b.getAttribute("aria-disabled") === "true") SS.upsell(st.main === "powder" ? "Powder on other days is in Pro" : "See 15 days of snow: the past week and the week ahead");
+      if (b.getAttribute("aria-disabled") === "true" && lockedDay(b.dataset.d)) SS.proSell("forecast_plus", { src: "day" });
+      else if (b.getAttribute("aria-disabled") === "true") SS.upsell(st.main === "powder" ? "Powder on other days is in Pro" : "See 15 days of snow: the past week and the week ahead");
       else setDay(b.dataset.d);
     };
     const on = box.querySelector('[aria-pressed="true"]');
     if (on) box.scrollLeft = on.offsetLeft - box.offsetLeft - box.clientWidth / 2 + on.offsetWidth / 2;
   }
   function setDay(d) {
+    if (lockedDay(d)) { SS.proSell("forecast_plus", { src: "day" }); return; }
     st.day = d;
     if (popup) popup.remove();
     document.querySelectorAll("#days [data-d]:not([aria-disabled])").forEach((b) => b.setAttribute("aria-pressed", b.dataset.d === d));
@@ -1807,7 +1826,7 @@
     const what = fresh ? "Fresh snow in " + the(r.name) : best ? "Deepest snow in " + the(r.name) : x.max_cm >= 1 ? "On the high peaks of " + the(r.name) : "No snow in " + the(r.name) + " yet";
     const where = fresh ? "" : best ? best.name : "";
     // 7 days of the region's biggest fresh snow (bars), today / the shown day highlighted
-    const ds = r.days.slice(-9), mx = Math.max(5, ...ds.map((y) => y.new_max_cm || 0));
+    const ds = r.days.slice(-9).filter((y) => !lockedDay(y.date)), mx = Math.max(5, ...ds.map((y) => y.new_max_cm || 0));   // Pro split: free days only
     const bars = '<div class="hbars" aria-hidden="true">' + ds.map((y) => '<span class="' + (y.date === st.day ? "on" : "") + (y.date > DATA.today ? " fc" : "") + '"><i style="height:' + Math.max(3, Math.round(((y.new_max_cm || 0) / mx) * 44)) + 'px"></i><b>' +
       (y.new_max_cm >= 1 ? U.dep(y.new_max_cm) : "") + "</b><small>" + (y.date === DATA.today ? esc(I18N.t("Today")) : wd(y.date)) + "</small></span>").join("") + "</div>";
     // freshness (v3 trust cue): when the pictures were built, in the visitor's time ("Updated 07:12" / "Updated 2 Nov")
@@ -1862,6 +1881,7 @@
   const RADII = [50, 100, 200, 400, 0];
   const nextSat = () => { for (let k = 1; k < 8; k++) { const d = addDays(DATA.today, k); if (D(d).getUTCDay() === 6) return d; } return null; };
   const kmTo = (o, x) => Math.hypot((x.lon - o.lon) * Math.cos(o.lat * Math.PI / 180), x.lat - o.lat) * 111.2;
+  const weekendDay = () => { for (let k = 0; k < 7; k++) { const d = addDays(DATA.today, k); if (D(d).getUTCDay() === 6) return d; } return null; };
   const dayIdx = (res, when) => {
     if (when === "tomorrow") return res.dates.indexOf(addDays(DATA.today, 1));
     if (when === "weekend") { for (let k = 0; k < 7; k++) { const d = addDays(DATA.today, k); if (D(d).getUTCDay() === 6) return res.dates.indexOf(d); } return -1; }
@@ -1909,7 +1929,7 @@
   }
   function bestDay(res, x) {
     let b = null;
-    res.dates.forEach((d, i) => { if (d < DATA.today) return; const s = x.snow[i] || []; const v = (s[1] || 0) * 3 + (s[0] || 0); if (s[0] != null && (!b || v > b[1])) b = [d, v]; });
+    res.dates.forEach((d, i) => { if (d < DATA.today || lockedDay(d)) return; const s = x.snow[i] || []; const v = (s[1] || 0) * 3 + (s[0] || 0); if (s[0] != null && (!b || v > b[1])) b = [d, v]; });
     return b ? (b[0] === DATA.today ? "Today" : wd(b[0]) + " " + dnum(b[0])) : "";
   }
   function card(res, x, i, ti, dist) {
@@ -1951,6 +1971,7 @@
     const res = await RES.catch(() => null);
     if (!res) return '<p class="msg">Resorts are loading…</p>';
     const S2 = st.ski, o = st.origin;
+    if (S2.when === "weekend" && lockedDay(weekendDay())) S2.when = "today";     // Pro split: the weekend ranking is Pro
     if (!o && !st.geoDenied && !st.geoAsked) { st.geoAsked = true; locate(true); }
     const ti = dayIdx(res, S2.when);
     // v3 (UX audit P1): the same distance slider as Powder instead of 5 pills; depth / fresh snow folded under "Filters"
@@ -1958,7 +1979,7 @@
     const ri = RADII.indexOf(S2.radius) < 0 ? 2 : RADII.indexOf(S2.radius), nf = (S2.min ? 1 : 0) + (S2.fresh ? 1 : 0);
     let h = '<div class="over">Ski finder</div><h1>Where to ski ' + ({ today: "today", tomorrow: "tomorrow", weekend: "this weekend" })[S2.when] + '</h1><div class="nopills">' + originBar(res) + "</div>" +
       '<label class="range"><span>' + (S2.radius ? "within " + U.dist(S2.radius) : "Anywhere") + '</span><input type="range" min="0" max="' + (RADII.length - 1) + '" step="1" value="' + ri + '" data-radius-range aria-label="Distance"></label>' +
-      '<div class="filters"><div class="seg2" role="group" aria-label="Day">' + ["today", "tomorrow", "weekend"].map((w) => '<button data-when="' + w + '" aria-pressed="' + (S2.when === w) + '">' + ({ today: "Today", tomorrow: "Tomorrow", weekend: "Weekend" })[w] + "</button>").join("") + "</div></div>" +
+      '<div class="filters"><div class="seg2" role="group" aria-label="Day">' + ["today", "tomorrow", "weekend"].map((w) => '<button data-when="' + w + '" aria-pressed="' + (S2.when === w) + '">' + ({ today: "Today", tomorrow: "Tomorrow", weekend: "Weekend" })[w] + (w === "weekend" && lockedDay(weekendDay()) ? ' <span class="ms f" style="font-size:14px;color:var(--gold-ink)" aria-label="Pro">lock</span>' : "") + "</button>").join("") + "</div></div>" +
       '<details class="morefilt"' + (nf ? " open" : "") + '><summary><span class="ms">tune</span>Filters' + (nf ? ' <span class="nfb">' + nf + "</span>" : "") + "</summary>" +
       '<div class="filters"><div class="seg2" role="group" aria-label="Snow on the upper slopes">' + [0, 10, 30, 60].map((v) => '<button data-min="' + v + '" aria-pressed="' + (S2.min === v) + '">' + (v ? U.dep(v) + "+ " + U.du() : "Any snow") + "</button>").join("") + "</div>" +
       '<button class="pill" data-fresh aria-pressed="' + S2.fresh + '">Fresh snow only</button></div></details>';
@@ -1985,9 +2006,11 @@
   const flagOf = (c) => (c || "").split(" / ").map((x) => FLAG[x.trim()] || "").join("");
   const newTier = (n) => (n >= 30 ? "#0C2C84" : n >= 10 ? "var(--accent-ink)" : "var(--ink)");
   function strip7(res, x) {         // fresh snow per day over the free window: small bars with the day letters
-    const n = res.dates.length, W = 300, H = 54, bw = W / n, vals = res.dates.map((d, i) => (x.snow[i] || [])[1] || 0), max = Math.max(5, ...vals);
+    const idx = res.dates.map((d, i) => i).filter((i) => !lockedDay(res.dates[i]));   // Pro split: free days only
+    const dates = idx.map((i) => res.dates[i]);
+    const n = dates.length, W = 300, H = 54, bw = W / n, vals = idx.map((i) => (x.snow[i] || [])[1] || 0), max = Math.max(5, ...vals);
     let o = '<svg class="strip7" viewBox="0 0 ' + W + " " + H + '" aria-hidden="true">';
-    res.dates.forEach((d, i) => { const h = (vals[i] / max) * 24, today = d === DATA.today;
+    dates.forEach((d, i) => { const h = (vals[i] / max) * 24, today = d === DATA.today;
       o += '<rect x="' + (i * bw + bw * 0.2) + '" y="' + (36 - h) + '" width="' + bw * 0.6 + '" height="' + Math.max(h, 1.5) + '" rx="2" fill="' + (today ? "var(--ink)" : d > DATA.today ? "var(--accent-tint)" : "var(--accent)") + '"/>' +
         (vals[i] >= 1 ? '<text x="' + (i * bw + bw / 2) + '" y="' + (32 - h) + '" text-anchor="middle" class="lbl">+' + U.dep(vals[i]) + "</text>" : "") +
         '<text x="' + (i * bw + bw / 2) + '" y="50" text-anchor="middle">' + esc(today ? "Today" : wd(d).slice(0, 2)) + "</text>"; });
@@ -2008,6 +2031,10 @@
       rows = fresh.sort((a, b) => kmTo(o, a) - kmTo(o, b)).slice(0, 25); far = true; title = "Nearest powder from your position";
     }
     const top = rows[0];
+    // Pro split (owner 2026-11-18): the free ranking is the top 3, the others are counted behind a locked row
+    const rkLocked = !!(SS.locked && SS.locked("ranking_full"));
+    const rkMore = rkLocked ? Math.max(0, (far ? fresh.length : fresh.filter((x) => !o || !R || kmTo(o, x) <= R).length) - 3) : 0;
+    if (rkLocked) rows = rows.slice(0, 3);
     let h = '<div class="over">Powder</div><h1>' + title + '</h1><div class="nopills">' + originBar(res) + "</div>";
     const ri = RADII.indexOf(R) < 0 ? 2 : RADII.indexOf(R);
     h += '<div class="filters"><div class="seg2" role="group" aria-label="Period">' + [[1, "24 hours"], [2, "48 hours"], [7, "7 days"]].map(([w, l]) => '<button data-pnw="' + w + '" aria-pressed="' + (nwk === w) + '">' + l + "</button>").join("") + "</div>" +
@@ -2033,6 +2060,7 @@
       esc([x.country, o ? U.dist(Math.round(kmTo(o, x))) + " away" : NAMES[x.dom] || ""].filter(Boolean).join(" · ")) + " " + trendOf(x, ti) + '</small>' + measuredHtml(x.lat, x.lon, x.top_m || null, true) + '</span>' +
       '<span class="val"><b style="color:' + newTier(x.snow[ti][k]) + '">+' + cmS(x.snow[ti][k]) + "</b><em>" + (nwk > 1 ? "+" + U.dep(x.snow[ti][1] || 0) + " in 24 h" : "+" + U.dep(x.snow[ti][4] || 0) + " in 7 days") + " · " + U.depth(x.snow[ti][0] || 0) + " deep</em></span></a>").join("")
       : '<p class="none">' + esc(I18N.tu("Nothing over {b} cm in the last {a}. Check tomorrow.", I18N.t(nwk === 7 ? "7 days" : nwk === 2 ? "48 hours" : "24 hours"), U.dep(1))) + "</p>";
+    if (rkMore > 0) h += '<button type="button" class="rrow plock" data-pro-lock="ranking_full" data-src="ranking"><span class="ms f">lock</span>' + esc(I18N.tu("+{a} more resorts with Pro", rkMore)) + "</button>";
     if (rows.length) h += '<button class="btn ghost" data-propost="powder" style="margin-top:10px"><span class="ms">add_photo_alternate</span>Create post' + (st.pro ? "" : ' <span class="pro">PRO</span>') + "</button>";
     const storms = (DATA.storms || []).map((x, i) => [x, i]).sort((a, b) => b[0].cm - a[0].cm).slice(0, 8);
     h += '<div class="sect">Snow storms</div>' + (storms.length ? storms.map(([x, i]) => '<article class="card storm"><div class="over">' + esc((x.date === DATA.today ? "Today" : wd(x.date) + " " + dnum(x.date)) + " · " + (NAMES[x.region] || "")) + '</div>' +
@@ -2060,7 +2088,7 @@
     if (!SS.Auth.enabled()) acc = '<div class="card"><b>Your SnowScope account</b><p class="none" style="padding:4px 0 0">Your account and Pro live in the app. Signing in here is coming soon.</p></div>';
     else if (!u) acc = '<div class="card"><b>One account for the app and the website</b><p class="none" style="padding:4px 0 8px">Sign in to remove ads and unlock Pro if you have it.</p><button class="btn ink" data-signin>Sign in</button> <button class="btn ghost" data-signup>Create an account</button></div>';
     else acc = '<div class="card"><b>' + esc(u.displayName || u.email || "Signed in") + '</b><p class="none" style="padding:2px 0 8px">' + (S.pro ? '<span class="pro"><span class="ms f">workspace_premium</span>PRO</span> You have SnowScope Pro.' : S.state === "no_account" ? "Open the app once with this account to connect it." : S.state === "api_down" ? "Pro data is updating, try again in a minute." : "Free plan") + '</p><a class="btn tonal" href="' + BASE + 'account.html">Manage account</a></div>';
-    const pro = S.pro ? "" : !SS.webPro() ? '<div class="card"><span class="pro"><span class="ms f">workspace_premium</span>PRO</span><p style="margin:8px 0;font-size:14px;color:var(--ink2)">Everything on the website is free. In the Android app, SnowScope Pro names every peak around you, creates 3D videos and removes the ads: one payment, no subscription.</p><a class="btn ink" href="' + esc(SS.appUrl()) + '">Get the app</a></div>' : '<div class="card"><span class="pro"><span class="ms f">workspace_premium</span>PRO</span><p style="margin:8px 0;font-size:14px;color:var(--ink2)">No ads, the sharpest snow map, 15 days, powder on every day, wind, freezing level, satellite snow, 7-day resort forecasts and past winters.</p>' + (window.SSPay && SSPay.enabled() ? '<button class="btn ink" data-buy-pro>Get Pro</button>' : '<a class="btn ink" href="' + esc(SS.appUrl()) + '">Get Pro in the app</a>') + '</div>';
+    const pro = S.pro ? "" : !SS.webPro() ? '<div class="card"><span class="pro"><span class="ms f">workspace_premium</span>PRO</span><p style="margin:8px 0;font-size:14px;color:var(--ink2)">Everything on the website is free. SnowScope Pro names every peak around you in the Android app, creates 3D videos and removes the ads, here and in the app: €4.99 a month or €29.99 for the whole season (1 year).</p>' + (window.SSPay && SSPay.enabled() ? '<button class="btn ink" data-buy-pro>Get Pro</button>' : '<a class="btn ink" href="' + esc(SS.appUrl()) + '">Get the app</a>') + '</div>' : '<div class="card"><span class="pro"><span class="ms f">workspace_premium</span>PRO</span><p style="margin:8px 0;font-size:14px;color:var(--ink2)">No ads, the sharpest snow map, 15 days, powder on every day, wind, freezing level, satellite snow, 7-day resort forecasts and past winters.</p>' + (window.SSPay && SSPay.enabled() ? '<button class="btn ink" data-buy-pro>Get Pro</button>' : '<a class="btn ink" href="' + esc(SS.appUrl()) + '">Get Pro in the app</a>') + '</div>';
     const teaser = (icon, bg, t, s) => '<a class="teaser" href="' + esc(SS.appUrl()) + '"><span class="ic" style="background:' + bg + '"><span class="ms f">' + icon + "</span></span><span><b>" + t + "</b><small>" + s + "</small></span></a>";
     const hide = S.pro ? '<button class="row" role="switch" data-nostay aria-checked="' + !store.get("ss_nostay") + '"><span class="ic"><span class="ms">hotel</span></span><span class="tx"><b>Hotel suggestions</b><small>Places to stay near resorts</small></span><span class="sw-t"></span></button>' : "";
     const units = '<div class="sect">Units</div><div class="seg2" role="group" aria-label="Units"><button data-units="metric" aria-pressed="' + !U.us() + '">Metric · cm, m, km, °C</button><button data-units="us" aria-pressed="' + U.us() + '">US · in, ft, mi, °F</button></div>';
@@ -2075,6 +2103,7 @@
   }
   $("pbody").addEventListener("click", (e) => {
     const w = e.target.closest("[data-when]"), p7 = e.target.closest("[data-pnw]");
+    if (w && w.dataset.when === "weekend" && lockedDay(weekendDay())) { SS.proSell("ranking_full", { src: "weekend", title: "See the weekend ranking with Pro" }); return; }   // Pro split
     if (w) { st.ski.when = w.dataset.when; renderPanel(); }
     const rb = e.target.closest("[data-radius]"); if (rb) { st.ski.radius = +rb.dataset.radius; store.set("ss_radius", st.ski.radius); renderPanel(); }
     const rr = e.target.closest("[data-radius-range]"); if (rr) { st.ski.radius = RADII[+rr.value] || 0; store.set("ss_radius", st.ski.radius); renderPanel(); }
@@ -2381,7 +2410,9 @@
     const box = $("ptChart");
     let h = null, live = null;
     let herr = null;
-    try { h = await histPoint(pt.lat, pt.lon, true); } catch (e) { h = null; herr = e; }
+    const fl = lockedFc(), hl = lockedHist();
+    if (fl) days = days.filter((d) => !lockedDay(d.date));     // Pro split: today -2 .. +2
+    if (!hl) { try { h = await histPoint(pt.lat, pt.lon, true); } catch (e) { h = null; herr = e; } }
     // the heading shows the height the numbers are for: the model cell (500 m pixel) of today's depth and of the
     // past-winters comparison, else the ground height under the tap (polish 0.9.34: one height per card)
     const m5 = h && h.compare && h.compare.model_14d && h.compare.model_14d.point_500m;
@@ -2401,8 +2432,8 @@
     const byDate = {};
     if (h) for (const q of h.current || []) if (q.depth_cm != null) byDate[q.date] = { dep: q.depth_cm, past: true };
     for (const d of days) if (d.dep != null) byDate[d.date] = { dep: d.dep, nw: d.nw };
-    for (const d of live || []) if (d.dep != null && (d.date > DATA.today || !byDate[d.date])) byDate[d.date] = { dep: d.dep, nw: d.nw };
-    const freeEnd = addDays(DATA.today, 3), end = addDays(DATA.today, 15);
+    for (const d of live || []) if (d.dep != null && !(fl && lockedDay(d.date)) && (d.date > DATA.today || !byDate[d.date])) byDate[d.date] = { dep: d.dep, nw: d.nw };
+    const freeEnd = addDays(DATA.today, fl ? 2 : 3), end = addDays(DATA.today, 15), pPro = st.pro && !fl;
     const year = +DATA.today.slice(0, 4), m = +DATA.today.slice(5, 7);
     const start = (m >= 8 ? year : year - 1) + "-10-01";
     const nDays = Math.round((D(end) - D(start)) / 864e5);
@@ -2425,15 +2456,19 @@
     const path = (from, to) => pts.filter((d) => d >= from && d <= to).map((d, i) => (i ? "L" : "M") + px(X(d)).toFixed(1) + "," + py(byDate[d].dep).toFixed(1)).join("");
     const lockX = px(X(freeEnd));
     // DATAVIZ 2026-11-03: the season curve is drawn by charts.js (takeaway title, fan, today + storms labelled)
-    const series = pts.filter((d) => d <= (st.pro ? end : freeEnd)).map((d) => ({ d, v: byDate[d].dep, nw: byDate[d].nw, fc: d > DATA.today }));
+    const series = pts.filter((d) => d <= (pPro ? end : freeEnd)).map((d) => ({ d, v: byDate[d].dep, nw: byDate[d].nw, fc: d > DATA.today }));
     // HISTORY VIZ 2026-11-06: percentile bands of past winters (10-90, 25-75, usual) around today, this winter + forecast
-    const SC = window.SSC ? SSC.bands({ box, today: DATA.today, series, clim: clim ? at : null, lockFrom: st.pro ? null : freeEnd }) : null;
-    const next = Object.keys(byDate).sort().find((d) => d > DATA.today && d <= (st.pro ? end : freeEnd) && (byDate[d].nw || 0) >= 5);
+    const SC = window.SSC ? SSC.bands({ box, today: DATA.today, series, clim: clim ? at : null, lockFrom: pPro ? null : freeEnd }) : null;
+    const next = Object.keys(byDate).sort().find((d) => d > DATA.today && d <= (pPro ? end : freeEnd) && (byDate[d].nw || 0) >= 5);
     if ($("ptNext")) $("ptNext").textContent = next ? I18N.tu("Snow expected {a}: +{b} cm", D(next).toLocaleDateString(LOC, { weekday: "long", timeZone: "UTC" }), U.dep(byDate[next].nw)) : "";
-    pastBlock(h, byDate, at, herr);
+    if (hl) {                          // apps (Pro split): past winters are Pro
+      if ($("ptPast")) $("ptPast").innerHTML = proCard("history", "hist_point", "Is this a good winter?", "This season against past winters, and the best weeks to go.", "See past winters");
+      if ($("ptRank")) $("ptRank").textContent = "";
+    } else pastBlock(h, byDate, at, herr);
     stationBlock(pt, ctx, byDate);
     box.innerHTML = (SC ? SC.html : "") +
-      (!st.pro ? '<div class="prolock" style="margin-top:10px"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>The next 3 days are free.</b><br>Pro adds the whole week ahead and the outlook.</p><button class="btn ink" data-up>Unlock the week</button></div>' : "");
+      (fl ? '<div class="prolock" style="margin-top:10px" data-pro-lock="forecast_plus" data-src="point_week"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>' + esc(I18N.t("Today and the next 2 days are free.")) + "</b><br>" + esc(I18N.t("Pro adds the whole week ahead and the outlook.")) + '</p><button class="btn ink" type="button">' + esc(I18N.t("See the 7-day forecast with Pro")) + "</button></div>"
+        : !st.pro ? '<div class="prolock" style="margin-top:10px"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>The next 3 days are free.</b><br>Pro adds the whole week ahead and the outlook.</p><button class="btn ink" data-up>Unlock the week</button></div>' : "");
     const up = box.querySelector("[data-up]"); if (up) up.onclick = () => SS.upsell("The week ahead is in Pro");
     if (window.SSC) SSC.bind(box);
   }
@@ -3069,8 +3104,13 @@
     if (!lv.length) { box.innerHTML = ""; return; }
     const NM = { base: "Base", mid: "Mid", top: "Top" };
     // DATAVIZ: each cell = the value + a bullet bar against the "big day" mark (charts.js fallCell)
-    const cell = (q, k, mx) => { if (window.SSC) return SSC.fallCell(q && q.cm, k, mx, q && q.kind === "measured"); if (!q || q.cm == null) return "<td>–</td>"; const v = Math.round(q.cm); return "<td>" + (v >= 1 ? "<b>" + U.dep(v) + "</b>" : '<span class="z">0</span>') + (q.kind === "measured" ? '<i class="mdot" title="' + esc(I18N.t("measured")) + '"></i>' : "") + "</td>"; };
+    const fl = lockedFc();
+    const cell0 = (q, k, mx) => { if (window.SSC) return SSC.fallCell(q && q.cm, k, mx, q && q.kind === "measured"); if (!q || q.cm == null) return "<td>–</td>"; const v = Math.round(q.cm); return "<td>" + (v >= 1 ? "<b>" + U.dep(v) + "</b>" : '<span class="z">0</span>') + (q.kind === "measured" ? '<i class="mdot" title="' + esc(I18N.t("measured")) + '"></i>' : "") + "</td>"; };
+    const cell = cell0;
+    // Pro split: the next 7 days are Pro (a locked row; the title is written without them)
+    const Lt = fl ? Object.fromEntries(lv.map((l) => [l, { ...L[l], windows: { ...(L[l].windows || {}), next_7d: null } }])) : L;
     const rows = (pre) => [["24h", "24 h"], ["48h", "48 h"], ["7d", "7 days"]].map(([k, lab]) => { const mx = Math.max(0, ...lv.map((l) => ((L[l].windows && L[l].windows[pre + "_" + k]) || {}).cm || 0));
+      if (fl && pre === "next" && k === "7d") return '<tr class="plk" data-pro-lock="forecast_plus" data-src="fall7" style="cursor:pointer"><th>' + esc(I18N.t(lab)) + '</th><td colspan="' + lv.length + '" class="plk"><span class="ms f">lock</span> ' + esc(I18N.t("See the 7-day forecast with Pro")) + "</td></tr>";
       return "<tr><th>" + esc(I18N.t(lab)) + "</th>" + lv.map((l) => cell(L[l].windows && L[l].windows[pre + "_" + k], k, mx)).join("") + "</tr>"; }).join("");
     const nextSum = lv.reduce((a, l) => a + ((L[l].windows && L[l].windows.next_7d && L[l].windows.next_7d.cm) || 0), 0), pastSum = lv.reduce((a, l) => a + ((L[l].windows && L[l].windows.past_7d && L[l].windows.past_7d.cm) || 0), 0);
     let mode = pastSum < 1 && nextSum >= 1 ? "next" : "past";
@@ -3078,7 +3118,7 @@
     const draw = () => {
       box.innerHTML = '<div class="card fall"><div class="fallh"><b>' + esc(I18N.t("New snow")) + ' <span class="unit">' + U.du() + '</span></b><div class="seg2" role="group" aria-label="' + esc(I18N.t("New snow")) + '"><button data-fm="past" aria-pressed="' + (mode === "past") + '">' + esc(I18N.t("Last days")) +
         '</button><button data-fm="next" aria-pressed="' + (mode === "next") + '">' + esc(I18N.t("Next days")) + "</button></div></div>" +
-        (window.SSC ? '<p class="ssc-t falltt" data-noi18n>' + esc(SSC.fallTitle(L, lv, mode)) + "</p>" : "") +
+        (window.SSC ? '<p class="ssc-t falltt" data-noi18n>' + esc(SSC.fallTitle(mode === "next" ? Lt : L, lv, mode)) + "</p>" : "") +
         '<table class="falltb"><thead><tr><th></th>' + lv.map((l) => "<th>" + esc(I18N.t(NM[l])) + "<small>" + esc(U.elev(L[l].elev_m)) + "</small></th>").join("") + "</tr></thead><tbody>" + rows(mode) +
         '<tr class="dep"><th>' + esc(I18N.t("Snow depth")) + "</th>" + lv.map((l) => { const d = L[l].depth_cm && L[l].depth_cm.best; return "<td>" + (d == null ? "–" : U.dep(Math.round(d))) + (L[l].depth_cm && L[l].depth_cm.measured != null ? '<i class="mdot"></i>' : "") + "</td>"; }).join("") + "</tr></tbody></table>" +
         (meas ? '<p class="note"><i class="mdot"></i> ' + esc(I18N.t("measured")) + "</p>" : "") + "</div>";
@@ -3087,6 +3127,12 @@
     };
     draw();
     resortElev(x, L, lv);
+    // smart popup (b): big new snow beyond today +2 at this resort -> "Tignes gets 92 cm this week"
+    if (fl && SS.proNudge) {
+      const w = (k) => Math.max(0, ...lv.map((l) => ((L[l].windows && L[l].windows[k]) || {}).cm || 0));
+      const wk = w("next_7d"), later = wk - w("next_48h");
+      if (wk >= 30 && later >= 15) setTimeout(() => { if (st.slug === x.slug) SS.proNudge({ kind: "snow", name: x.short, cm: wk }); }, 6000);
+    }
   }
   // DATAVIZ: snow depth by height at the resort (base / mid / top from our map, the local height line of the 500 m map
   // around the resort when the Pro point answers, measured stations nearby) -> charts.js elev
@@ -3157,6 +3203,7 @@
         say(r && r.status === "active" ? I18N.t("Done - alerts updated.") : I18N.t("Check your inbox to confirm."), "ok");
         SS.hit("/alert/powder/subscribe", "web");
       } catch (e) {
+        if (e.status === 402 && SS.proSell) { m.close(); SS.proSell("alerts_plus", { src: "alerts" }); return; }   // Pro split
         say(e.status === 429 ? I18N.t("Please try again later.") : e.status === 422 ? I18N.t("Please enter a valid e-mail address.") : I18N.t("Couldn't sign you up right now. Please try again later."), "err");
       } finally { btn.disabled = false; }
     };
@@ -3219,6 +3266,11 @@
     const box = $("rDays");
     const stat = res.dates.map((d, i) => ({ date: d, dep: (x.snow[i] || [])[0], nw: (x.snow[i] || [])[1] }));
     const lock = '<div class="prolock" style="margin-top:10px"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>15 days at ' + esc(x.short) + "</b><br>The past week and the week ahead.</p><button class=\"btn ink\" data-up>See 15 days</button></div>";
+    if (lockedFc()) {                // Pro split: today -2 .. +2, then a locked card
+      box.innerHTML = svgBars(stat.filter((d) => !lockedDay(d.date)), DATA.today, '<div class="prolock" style="margin-top:10px" data-pro-lock="forecast_plus" data-src="days15"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>' +
+        esc(I18N.t("See the 7-day forecast with Pro")) + "</b><br>" + esc(I18N.t("The past week and the week ahead.")) + '</p><button class="btn ink" type="button">' + esc(I18N.t("See 15 days")) + "</button></div>");
+      return;
+    }
     if (!st.pro) { box.innerHTML = svgBars(stat, DATA.today, lock); box.querySelector("[data-up]").onclick = () => SS.upsell("15 days of snow at " + x.short + " are in Pro"); return; }
     box.innerHTML = svgBars(stat, DATA.today);
     try {
@@ -3230,6 +3282,7 @@
   }
   async function resortStrip(x) {     // the winter strip for the resort point (free /v1/history/point), same component as a point
     const box = $("rStrip"); if (!box || !SS.S.api) return;
+    if (lockedHist()) { box.innerHTML = ""; return; }     // apps (Pro split): the season chart card carries the lock
     let h = null;
     // one "today" on the resort page (polish 0.9.34): the rank bars use the resort history's height (mid-mountain,
     // the season chart's /v1/history/resort and snow/hist elevation) and that history's depth today, not the 500 m pixel
@@ -3257,6 +3310,10 @@
   }
   async function histChart(x) {
     const box = $("rHist");
+    if (box && lockedHist()) {       // Pro split: season vs past winters is Pro in the apps (website: free)
+      box.innerHTML = proCard("history", "hist", "Is this a good winter?", "This season against past winters, and the best weeks to go.", "See past winters");
+      return;
+    }
     let h = null;
     if (x.h) { try { h = await SS.getJSON(BASE + "snow/hist/" + encodeURIComponent(x.slug) + ".json?v=" + DATA.digest); } catch { h = null; } }
     if (!h && st.pro) {
@@ -3300,6 +3357,11 @@
   }
   async function forecast(x) {
     const box = $("rFc");
+    if (box && lockedFc()) {         // Pro split: the 7-day meteogram card is Pro (blurred placeholder, no API call)
+      const fake = '<table class="fc"><tbody>' + [0, 1, 2, 3, 4].map((i) => "<tr><td>" + wd(addDays(DATA.today, i + 3)) + "</td><td>" + U.depth([12, 4, 0, 25, 8][i]) + "</td><td>-6° / 1°</td><td>" + U.wind(20) + "</td></tr>").join("") + "</tbody></table>";
+      box.innerHTML = proCard("forecast_plus", "fc7", "See the 7-day forecast with Pro", "New snow, temperature and wind for each day.", "See 7 days", fake);
+      return;
+    }
     if (!st.pro) {
       box.innerHTML = '<div class="prolock"><span class="pro"><span class="ms f">lock</span>PRO</span><p><b>7 more days at ' + esc(x.short) + "</b><br>New snow, temperature and wind for each day.</p><button class=\"btn ink\" data-up>See 7 days</button></div>";
       box.querySelector("[data-up]").onclick = () => SS.upsell("The 7-day forecast for " + x.short + " is in Pro");
@@ -3333,6 +3395,7 @@
   st.day = DATA.dates.includes(DATA.today) ? DATA.today : DATA.dates[DATA.dates.length - 1];
   const dq = new URLSearchParams(location.search).get("d");
   if (dq && DATA.dates.includes(dq)) st.day = dq;
+  started.then(() => { if (lockedDay(st.day)) { st.day = DATA.today; drawDays(); if (ready) renderMain(); } });
   // powder-alert deep links (?d=<storm day>, MONETIZATION): the Stays card checks in on that day even beyond the map days
   if (dq && /^\d{4}-\d{2}-\d{2}$/.test(dq) && dq >= DATA.today && dq <= addDays(DATA.today, 30)) st.stayDay = dq;
   st.region = homeRegion();

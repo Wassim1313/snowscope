@@ -976,3 +976,23 @@ label.chk input{width:20px;height:20px;accent-color:var(--accent)}
 .btn.alertbtn{flex:none;padding:0 12px;gap:6px;background:#1463F3;color:#fff}.zoomctl .zbell{display:none}
 @media (max-width:640px){body.app .btn.alertbtn{display:none}.zoomctl button.zbell{display:grid;background:#1463F3;color:#fff;margin-bottom:4px}.zoomctl button.zbell:hover{background:#0f4fc4}}
 .nomap #map,.nomap .timeline,.nomap .legend,.nomap .mapctl{display:none}.nomap{background:var(--bg)}
+/* Pro split (owner 2026-11-18, core.js proSell / proNudge): the sales sheet + the locked cards / rows */
+.psell-h{font-size:21px;line-height:27px;font-weight:720;letter-spacing:-.3px;margin:4px 0 6px}
+.psell-ctx{color:var(--ink2);margin:0 0 10px;font-size:15px}
+.psell-b{list-style:none;padding:0;margin:4px 0 14px;display:grid;gap:7px}
+.psell-b li{display:flex;gap:8px;align-items:flex-start;font-size:14.5px}.psell-b .ms{color:var(--accent);font-size:20px;flex:none}
+.psell-plans{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 12px}
+.psell-plan{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-align:start;padding:14px 12px 12px;border-radius:16px;
+  border:1.5px solid var(--outline);background:var(--surface);color:var(--ink);font:inherit;cursor:default;min-width:0}
+button.psell-plan{cursor:pointer}button.psell-plan:hover{border-color:var(--accent)}
+.psell-plan.best{border-color:var(--gold);background:var(--gold-tint)}
+.psell-plan b{font-size:15px}.psell-plan .pr{font-size:22px;font-weight:750;letter-spacing:-.3px}.psell-plan small{color:var(--ink2);font-size:12.5px;line-height:16px}
+.psell-plan .tag{position:absolute;top:-10px;inset-inline-end:10px;background:var(--gold);color:#241a00;font-size:11px;font-weight:750;padding:2px 8px;border-radius:9px}
+.psell-no,.psell-in{display:block;margin:10px auto 0}
+.pcard{position:relative;overflow:hidden;border-radius:16px}
+.pcard .pblur{filter:blur(5px);opacity:.55;pointer-events:none;user-select:none}
+.pcard .pover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:12px;
+  background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--surface) 70%,transparent) 40%)}
+.pcard .pover b{font-size:15px}
+.rrow.plock{border:1px dashed var(--gold);background:var(--gold-tint);cursor:pointer;justify-content:center;gap:8px;font-weight:650;color:var(--gold-ink);width:100%}
+td.plk,.plk{color:var(--gold-ink)}td.plk .ms{font-size:16px;vertical-align:-3px}

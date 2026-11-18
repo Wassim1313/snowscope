@@ -100,6 +100,17 @@
     return on;
   }
   const followed = () => LS.get("ss_follow") || {};
+  // Pro split (owner 2026-11-18, core.js SS.locked): a free visitor follows ONE resort with the default threshold (20 cm);
+  // a second resort, a region or another threshold opens the Pro sales sheet (the API answers 402 alerts_plus too)
+  const FREE_TH = 20;
+  const alertsLocked = () => !!(W.SS && SS.locked && SS.locked("alerts_plus"));
+  function proGate(sel) {
+    if (!alertsLocked()) return false;
+    const mine = Object.keys(followed()).filter((k) => k.startsWith("r:"));
+    const other = (sel.resorts || []).some((r) => mine.length && !mine.includes("r:" + r));
+    return !!((sel.regions || []).length || (sel.resorts || []).length > 1 || other || (+sel.threshold || FREE_TH) !== FREE_TH);
+  }
+  const proSheet = () => { if (W.SS && SS.proSell) SS.proSell("alerts_plus", { src: "alerts" }); };
   function markFollowed(key, how) { const f = followed(); f[key] = { ...(f[key] || {}), [how]: Date.now() }; LS.set("ss_follow", f); }
   function paintFavs() {
     D.querySelectorAll("[data-fw-fav]").forEach((b) => {
@@ -215,8 +226,9 @@
     sc.innerHTML = '<div class="fw-sheet" role="dialog" aria-modal="true" aria-labelledby="fw-h"><h3 id="fw-h"><span class="ms f" aria-hidden="true" style="color:#1463F3">notifications_active</span>' + esc(t("alert")) +
       '<button class="fw-x" data-x aria-label="' + esc(t("close")) + '">×</button></h3>' +
       (opts.saved ? '<p style="margin:8px 0 0">' + esc(t("saved", { p: name || slug })) + "</p>" : "") +
-      '<label class="fw-lab" for="fw-sel">' + esc(t("for")) + '</label><select id="fw-sel">' + opt.map(([v, l]) => '<option value="' + esc(v) + '">' + esc(l) + "</option>").join("") + "</select>" +
-      '<span class="fw-lab">' + esc(t("when")) + '</span><div class="fw-seg" role="group">' + TH.map((v, i) => '<button type="button" data-t="' + v + '" aria-pressed="' + (i === 1) + '">' + (U ? [4, 8, 12][i] + " in" : v + " cm") + "</button>").join("") + "</div>" +
+      '<label class="fw-lab" for="fw-sel">' + esc(t("for")) + '</label><select id="fw-sel">' + opt.map(([v, l]) => '<option value="' + esc(v) + '">' + esc(l) + (alertsLocked() && v.startsWith("g:") ? " · PRO" : "") + "</option>").join("") + "</select>" +
+      '<span class="fw-lab">' + esc(t("when")) + '</span><div class="fw-seg" role="group">' + TH.map((v, i) => '<button type="button" data-t="' + v + '" aria-pressed="' + (i === 1) + '"' + (alertsLocked() && v !== FREE_TH ? ' data-tlock="1"' : "") + ">" + (U ? [4, 8, 12][i] + " in" : v + " cm") + (alertsLocked() && v !== FREE_TH ? ' <span class="ms f" style="font-size:14px;color:var(--gold-ink,#7A5A00)" aria-label="Pro">lock</span>' : "") + "</button>").join("") + "</div>" +
+      (alertsLocked() ? '<p class="fw-note" style="margin-top:6px"><span class="pro" style="font-size:10px">PRO</span> ' + esc((W.I18N ? I18N.t("Free: 1 resort at the default threshold. Pro: every resort, regions and your own threshold.") : "Free: 1 resort at the default threshold. Pro: every resort, regions and your own threshold.")) + "</p>" : "") +
       '<label class="fw-chk"><input type="checkbox" data-daily checked> <span>' + esc(t("daily")) + "</span></label>" +
       (PUSH_OK ? '<button class="fw-btn" data-push><span class="ms f" aria-hidden="true">notifications</span>' + esc(t("notify")) + '</button><p class="fw-or">' + esc(t("or_email")) + "</p>" : "") +
       '<div class="fw-row2"><input class="fw-in" type="email" data-email autocomplete="email" inputmode="email" placeholder="you@example.com" aria-label="E-mail"><button class="fw-btn' + (PUSH_OK ? " alt" : "") + '" data-mail>' + esc(t("send")) + "</button></div>" +
@@ -227,7 +239,7 @@
     const key = (e) => { if (e.key === "Escape") close(); };
     D.addEventListener("keydown", key);
     sc.addEventListener("click", (e) => { if (e.target === sc || e.target.closest("[data-x]")) close(); });
-    el.querySelectorAll("[data-t]").forEach((b) => { b.onclick = () => el.querySelectorAll("[data-t]").forEach((q) => q.setAttribute("aria-pressed", q === b ? "true" : "false")); });
+    el.querySelectorAll("[data-t]").forEach((b) => { b.onclick = () => { if (b.dataset.tlock) { proSheet(); return; } el.querySelectorAll("[data-t]").forEach((q) => q.setAttribute("aria-pressed", q === b ? "true" : "false")); }; });
     const say = (m, ok) => { const p = el.querySelector("[data-msg]"); p.hidden = false; p.className = "fw-msg " + (ok ? "ok" : "err"); p.textContent = m; };
     const sel = () => {
       const v = el.querySelector("#fw-sel").value, th = +((el.querySelector('[data-t][aria-pressed="true"]') || {}).dataset || {}).t || 20;
@@ -247,21 +259,24 @@
     };
     const pb = el.querySelector("[data-push]");
     if (pb) pb.onclick = async () => {
-      const s = sel(); pb.disabled = true;
+      const s = sel();
+      if (proGate(s)) { proSheet(); return; }
+      pb.disabled = true;
       try { await pushSubscribe(Object.fromEntries(Object.entries(s).filter(([k]) => !k.startsWith("_")))); say(t("ok_push", { p: s._label }), true); hit("/follow/push/ok"); after(s, "push"); }
-      catch (e) { say(e.code === "denied" ? t("denied") : t("err"), false); hit("/follow/push/" + (e.code === "denied" ? "denied" : "error")); }
+      catch (e) { if (e.status === 402) { proSheet(); return; } say(e.code === "denied" ? t("denied") : t("err"), false); hit("/follow/push/" + (e.code === "denied" ? "denied" : "error")); }
       finally { pb.disabled = false; }
     };
     const mb = el.querySelector("[data-mail]");
     mb.onclick = async () => {
       const s = sel(), em = el.querySelector("[data-email]").value.trim();
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { say(t("bad_email"), false); return; }
+      if (proGate(s)) { proSheet(); return; }
       mb.disabled = true;
       try {
         const b = Object.fromEntries(Object.entries(s).filter(([k]) => !k.startsWith("_")));
         const r = await post("/v1/alerts/powder/subscribe", { email: em, storm: true, ...b });
         say(r && r.status === "active" ? t("ok_mail_active") : t("ok_mail"), true); hit("/follow/email/ok"); after(s, "mail");
-      } catch (e) { say(e.status === 429 ? t("later") : e.status === 422 ? t("bad_email") : t("err"), false); hit("/follow/email/error"); }
+      } catch (e) { if (e.status === 402) { proSheet(); return; } say(e.status === 429 ? t("later") : e.status === 422 ? t("bad_email") : t("err"), false); hit("/follow/email/error"); }
       finally { mb.disabled = false; }
     };
     setTimeout(() => { const f = el.querySelector("[data-push]") || el.querySelector("[data-email]"); if (f) f.focus(); }, 40);
@@ -367,7 +382,7 @@
     const l = D.createElement("link"); l.rel = "manifest"; l.href = ROOT + "manifest.webmanifest"; D.head.appendChild(l);
   }
 
-  W.Follow = { open, favs, isFav, toggleFav, yourRow, playUrl, playClick, appCard, source, paintFavs, paintAlerts, style, t };
+  W.Follow = { open, favs, isFav, toggleFav, yourRow, playUrl, playClick, appCard, source, paintFavs, paintAlerts, style, t, proGate, proSheet };
   const boot = () => { style(); manifest(); paintFavs(); paintAlerts(); cfgReady().then(() => { blogCard(); banner(); }); W.addEventListener("load", sw); if (D.readyState === "complete") sw(); };
   if (D.readyState === "loading") D.addEventListener("DOMContentLoaded", boot); else boot();
 })();

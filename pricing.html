@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Pricing · SnowScope is free</title>
-<meta name="description" content="Everything on the SnowScope website is free: every forecast day, every snow layer, wind, freezing level, past winters and the powder ranking. In the Android app, SnowScope Pro names every peak around you and creates 3D videos, without ads: one payment, no subscription.">
+<title>Pricing · SnowScope Free and Pro</title>
+<meta name="description" content="SnowScope is free with ads: the snow map, resorts and hourly weather for today and the next 2 days, avalanche danger, the community snow map and past winters. SnowScope Pro: the whole week ahead, 72-hour and 7-day totals, the full powder ranking, unlimited powder alerts and no ads. €4.99 a month or €29.99 for the whole season.">
 <meta name="google-adsense-account" content="ca-pub-6693878731812238">
 <link rel="canonical" href="https://snowscope.app/pricing.html">
 <link rel="icon" href="logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-512.png">
@@ -22,6 +22,7 @@
 .cmp{width:100%;border-collapse:collapse;font-size:14px;margin-top:6px}
 .cmp th,.cmp td{padding:9px 8px;border-bottom:1px solid var(--outline);text-align:start}
 .cmp td.c,.cmp th.c{text-align:center;width:72px}.cmp .y{color:var(--good);font-weight:700}.cmp .n{color:var(--ink2)}
+.cmp td.t{text-align:center;font-size:13px;color:var(--ink2);width:150px}.cmp td.t.y{color:var(--good)}
 </style>
 </head>
 <body data-page="pricing">
@@ -35,20 +36,47 @@
   <h1 style="margin-top:8px">Pricing</h1>
   <!-- Freemium (owner 2026-11-03, docs/TIERS.md): the website is free; the web plans below sleep (hidden) unless
        web_config "web_pro_enabled": true, which also wakes the Paddle checkout (paddle.js).
-       Sales freeze (owner 2026-11-09): the only thing sold is the one-time SnowScope Pro in the Android app. -->
+       Sales (owner 2026-11-18): Pro monthly / season pass in the app and, with web_config "web_sell_enabled": true, on the website (Paddle) - the website itself stays free. -->
   <section data-web-free>
-  <p class="lede">Everything on the SnowScope website is free, for everyone. Ads and hotel suggestions keep it that way.</p>
+  <!-- Pro split (owner 2026-11-18, docs/TIERS.md): web_config "tiers_mode": "pro" shows [data-tiers=pro], else the
+       freemium texts [data-tiers=freemium] (everything free on the website) -->
+  <p class="lede" data-tiers="pro">SnowScope is free, with ads: the snow map, resorts and hourly weather for today and the next 2 days. SnowScope Pro shows the whole week ahead, without ads, here and in the app.</p>
+  <p class="lede" data-tiers="freemium" hidden>Everything on the SnowScope website is free, for everyone. Ads and hotel suggestions keep it that way.</p>
   <div class="plans">
-    <div class="card"><h2>Website</h2><div class="price">Free</div>
+    <div class="card" data-tiers="pro"><h2>Free</h2><div class="price">€0</div>
+      <p>The snow map, resort pages and hourly weather for today and the next 2 days, the top 3 of the powder ranking, one powder alert, avalanche danger, the community snow map and past winters on the website. With ads.</p>
+      <a class="btn ghost" href="./">Open the snow map</a></div>
+    <div class="card" data-tiers="freemium" hidden><h2>Website</h2><div class="price">Free</div>
       <p>Every forecast day, the sharpest snow map, every layer (new snow, wind, freezing level, satellite snow), past winters, the powder ranking and the 7-day resort forecasts.</p>
       <a class="btn ghost" href="./">Open the snow map</a></div>
-    <div class="card"><h2>Android app</h2><div class="price">Free</div>
+    <div class="card" data-tiers="freemium" hidden><h2>Android app</h2><div class="price">Free</div>
       <p>The same snow data on your phone, with ads, plus offline trip packs and powder alerts.</p>
       <a class="btn ghost" data-app-link href="download/">Get the app</a></div>
-    <div class="card"><h2>SnowScope Pro</h2><div class="price">One payment</div>
-      <p>Name every peak around you with the Peak finder camera, create 3D videos of your resort and your runs, and use the app without ads.</p>
-      <p>About $1 / €0.99, once, in the Android app (Google Play shows the price in your currency). No subscription.</p>
-      <a class="btn ski" data-app-link href="download/">Get Pro in the app</a></div>
+    <div class="card"><h2>SnowScope Pro</h2><div class="price">Monthly or season</div>
+      <p data-tiers="pro">Every forecast day, the 72-hour and 7-day snow totals, the 7-day forecast, the full powder ranking, unlimited powder alerts and no ads. In the app also: every peak named, 3D videos, offline packs and the season against past winters.</p>
+      <p data-tiers="freemium" hidden>Name every peak around you with the Peak finder camera, create 3D videos of your resort and your runs, and use SnowScope without ads, here and in the app.</p>
+      <p>€4.99 a month, or €29.99 for the whole season (1 year). On the website or in the Android app, one account for both.</p>
+      <p>In the app, the season pass starts with 7 days free.</p>
+      <button class="btn ski" data-buy-price="pro_yearly" data-sell-only hidden>Season pass</button>
+      <button class="btn ghost" data-buy-price="pro_monthly" data-sell-only hidden>Monthly</button>
+      <a class="btn ghost" data-app-link href="download/">Get Pro in the app</a>
+      <p style="font-size:13px;color:var(--ink2)">Cancel anytime. Prices include tax.</p></div>
+  </div>
+  <div class="card" style="margin-top:12px" data-tiers="pro">
+    <h2 style="font-size:17px;margin:0 0 6px">What you get</h2>
+    <table class="cmp">
+      <thead><tr><th>Feature</th><th class="c">Free</th><th class="c">Pro</th></tr></thead>
+      <tbody>
+        <tr><td>Snow map, resorts, hourly weather</td><td class="t">today and the next 2 days</td><td class="t y">every day, the past week and the week ahead</td></tr>
+        <tr><td>72-hour and 7-day totals, 7-day forecast</td><td class="c n">–</td><td class="c y">✓</td></tr>
+        <tr><td>Powder ranking</td><td class="t">the top 3</td><td class="t y">the full ranking</td></tr>
+        <tr><td>Powder alerts</td><td class="t">1 resort</td><td class="t y">every resort, regions, your threshold</td></tr>
+        <tr><td>Season against past winters</td><td class="t">free on the website</td><td class="c y">✓</td></tr>
+        <tr><td>Every peak named, 3D videos, offline packs (app)</td><td class="c n">–</td><td class="c y">✓</td></tr>
+        <tr><td>Avalanche danger, snow depth today, community snow map, hotels</td><td class="t y">always free</td><td class="c y">✓</td></tr>
+        <tr><td>Ads</td><td class="t">yes</td><td class="t y">none</td></tr>
+      </tbody>
+    </table>
   </div>
     <p style="margin-top:12px"><a href="terms/">Terms of use</a> · <a href="privacy/">Privacy policy</a></p>
   </section>
@@ -102,7 +130,7 @@
   </div>
   </section>
 
-  <div class="card" style="margin-top:12px" data-web-pro hidden>
+  <div class="card" style="margin-top:12px" data-web-pro data-pay-info hidden>
     <h2 style="font-size:17px;margin:0 0 6px">Payments</h2>
     <p>Payments are processed by Paddle.com, our online reseller and Merchant of Record for all our orders. Paddle handles payment questions, receipts and refunds. Prices include tax where it applies; customers outside the euro area pay in US dollars.</p>
     <p>Refund within 14 days of any payment, cancel any time: see <a href="refund.html">Refunds and cancelling</a>. Purchases made in the Android app go through Google Play instead.</p>
@@ -118,6 +146,11 @@ SS.start().then(() => {                            // freemium: the web plans on
   document.querySelectorAll("[data-web-pro]").forEach((x) => { x.hidden = !pro; });
   document.querySelector("[data-web-free]").hidden = pro;
   document.querySelectorAll("[data-app-link]").forEach((a) => { a.href = SS.appUrl(); });
+  const tm = SS.tiersMode ? SS.tiersMode() : "freemium";      // Pro split (owner 2026-11-18)
+  document.querySelectorAll("[data-tiers]").forEach((x) => { x.hidden = x.dataset.tiers !== tm; });
+  if (!pro && SS.webSell && SS.webSell()) {        // owner 2026-11-18: sell monthly / season here, website stays free
+    document.querySelectorAll("[data-sell-only], [data-pay-info]").forEach((x) => { x.hidden = false; });
+  }
 });
 document.addEventListener("click", (e) => {          // yearly / monthly toggle
   const b = e.target.closest("[data-period]"); if (!b) return;

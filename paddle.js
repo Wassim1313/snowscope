@@ -30,6 +30,9 @@
        "después {p} al año. Cancela antes de que acaben los 3 días y no pagas nada más.",
        "ثم {p} في السنة. ألغِ قبل نهاية الأيام الثلاثة ولن تدفع شيئًا آخر."],
     "Yearly": ["Annuel", "Jährlich", "Annuale", "Anual", "سنوي"],
+    "Season pass · 1 year": ["Pass saison · 1 an", "Saisonpass · 1 Jahr", "Pass stagione · 1 anno", "Pase de temporada · 1 año", "اشتراك الموسم · سنة واحدة"],
+    "{p} for the whole season (1 year), renews every year until you cancel": ["{p} pour toute la saison (1 an), renouvelé chaque année jusqu'à résiliation", "{p} für die ganze Saison (1 Jahr), verlängert sich jährlich bis zur Kündigung", "{p} per tutta la stagione (1 anno), si rinnova ogni anno fino alla disdetta", "{p} toda la temporada (1 año), se renueva cada año hasta que canceles", "{p} للموسم كاملًا (سنة واحدة)، يتجدد كل سنة حتى تلغي"],
+    "{p} a month, cancel anytime": ["{p} par mois, résiliable à tout moment", "{p} pro Monat, jederzeit kündbar", "{p} al mese, disdici quando vuoi", "{p} al mes, cancela cuando quieras", "{p} في الشهر، ألغِ متى شئت"],
     "Monthly": ["Mensuel", "Monatlich", "Mensile", "Mensual", "شهري"],
     "{p} a year": ["{p} par an", "{p} pro Jahr", "{p} all'anno", "{p} al año", "{p} في السنة"],
     "{p} a month": ["{p} par mois", "{p} pro Monat", "{p} al mese", "{p} al mes", "{p} في الشهر"],
@@ -54,8 +57,9 @@
 
   let paddleReady = null, cur = "USD", country = null, pending = null;
   const money = (v) => { try { return new Intl.NumberFormat((window.I18N && I18N.locale) || "en-GB", { style: "currency", currency: cur }).format(v); } catch { return "$" + v; } };
-  // freemium (2026-11-03): the web checkout sleeps unless web_config "web_pro_enabled": true (docs/TIERS.md)
-  const enabled = () => !!(window.SS && SS.webPro && SS.webPro()) && !!(cfg().client_token && cfg().prices && cfg().prices.pro_yearly);
+  // freemium (2026-11-03): the web checkout sleeps unless web_config "web_pro_enabled": true (docs/TIERS.md), or
+  // "web_sell_enabled": true (owner 2026-11-18: sell Pro monthly / season on the website, every website feature stays free)
+  const enabled = () => !!(window.SS && ((SS.webPro && SS.webPro()) || (SS.webSell && SS.webSell()))) && !!(cfg().client_token && cfg().prices && cfg().prices.pro_yearly);
 
   function loadPaddle() {
     if (paddleReady) return paddleReady;
@@ -128,8 +132,9 @@
     if (ma) h += offer("pro_lifetime_ma", t("SnowScope Pro for life") + " · " + t("the price of a coffee"), t("One payment of {p} (about 10 MAD), yours forever.", fmt("pro_lifetime_ma")), true);
     else {
       if (session.trial_eligible && cfg().prices.pro_yearly_trial) h += offer("pro_yearly_trial", t("Try 3 days for {p}", fmt("pro_yearly_trial")), t("then {p} a year. Cancel anytime before the 3 days end and you pay nothing more.", fmt("pro_yearly")), true);
-      h += offer("pro_yearly", t("Yearly"), t("{p} a year", fmt("pro_yearly")), !session.trial_eligible);
-      h += offer("pro_monthly", t("Monthly"), t("{p} a month", fmt("pro_monthly")));
+      const sell = !!(SS.webSell && SS.webSell());     // owner 2026-11-18: "Season pass" wording, plain monthly
+      h += offer("pro_yearly", t(sell ? "Season pass · 1 year" : "Yearly"), sell ? t("{p} for the whole season (1 year), renews every year until you cancel", fmt("pro_yearly")) : t("{p} a year", fmt("pro_yearly")), sell || !session.trial_eligible);
+      h += offer("pro_monthly", t("Monthly"), sell ? t("{p} a month, cancel anytime", fmt("pro_monthly")) : t("{p} a month", fmt("pro_monthly")));
       if (!(session.entitlement || {}).no_ads && cfg().prices.noads_once) h += offer("noads_once", t("Remove ads"), t("{p} once, no ads for good (Pro features not included)", fmt("noads_once")));
     }
     h += '<p style="color:var(--ink2);font-size:13px;margin:12px 0 0">' + esc(t("Secure payment by Paddle, our reseller. Prices include tax.")) +
