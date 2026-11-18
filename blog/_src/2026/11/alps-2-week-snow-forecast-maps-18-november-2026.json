@@ -1,0 +1,988 @@
+{
+ "id": "2026-11-18-alps-outlook14",
+ "slug": "alps-2-week-snow-forecast-maps-18-november-2026",
+ "date": "2026-11-18",
+ "published_utc": "2026-11-18T11:22:56Z",
+ "updated_utc": "2026-11-18T11:22:56Z",
+ "region": "ALPS",
+ "angle": "outlook14",
+ "score": 80,
+ "signature": "2026-11-18|saint_francois_longchamp:230|paradiski:220|val_thorens_france:210",
+ "keyword": {
+  "family": "two-week-forecast",
+  "entity": "alps",
+  "region": "ALPS",
+  "date": "2026-11-18"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "two_week_snow_outlook",
+  "region": "Alps",
+  "date": "2026-11-18",
+  "weekday": "Wednesday",
+  "model_run": "2026-11-18",
+  "forecast_days": [
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 60480,
+   "resorts_with_snow": 818,
+   "resorts_in_region": 1204
+  },
+  "region_before": {
+   "date": "2026-11-16",
+   "snow_covered_area_km2": 63230,
+   "resorts_with_snow": 916
+  },
+  "region_forecast": {
+   "date": "2026-11-21",
+   "snow_covered_area_km2": 77470,
+   "resorts_with_snow": 890
+  },
+  "question": "Where will new snow fall in the next two weeks, how much, in which week, and at which height?",
+  "outlook_days": [
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30",
+   "2026-12-01",
+   "2026-12-02"
+  ],
+  "week1": {
+   "from": "2026-11-19",
+   "to": "2026-11-25"
+  },
+  "week2": {
+   "from": "2026-11-26",
+   "to": "2026-12-02"
+  },
+  "models": [
+   "ECMWF IFS",
+   "NOAA GFS"
+  ],
+  "lattice_points": 522,
+  "region_outlook": {
+   "max_new_cm_next_14_days": 264,
+   "area_km2_with_20cm_or_more": 95483,
+   "area_km2_with_50cm_or_more": 47273,
+   "area_km2_mountains": 514856,
+   "week1_share_pct": 46
+  },
+  "new_cm_next_14_days_by_height": [
+   {
+    "from_m": 1000,
+    "to_m": 1500,
+    "new_cm_next_14_days_median": 20,
+    "new_cm_next_14_days_upper_quarter": 38
+   },
+   {
+    "from_m": 1500,
+    "to_m": 2000,
+    "new_cm_next_14_days_median": 46,
+    "new_cm_next_14_days_upper_quarter": 81
+   },
+   {
+    "from_m": 2000,
+    "to_m": 2500,
+    "new_cm_next_14_days_median": 61,
+    "new_cm_next_14_days_upper_quarter": 105
+   },
+   {
+    "from_m": 2500,
+    "to_m": 3000,
+    "new_cm_next_14_days_median": 70,
+    "new_cm_next_14_days_upper_quarter": 128
+   },
+   {
+    "from_m": 3000,
+    "to_m": 4500,
+    "new_cm_next_14_days_median": 120,
+    "new_cm_next_14_days_upper_quarter": 153
+   }
+  ],
+  "resorts_followed": 1186,
+  "thresholds_cm": [
+   1,
+   5,
+   20,
+   50
+  ],
+  "best_days": [
+   {
+    "date": "2026-11-19",
+    "resorts_with_5cm_or_more": 524,
+    "max_cm": 35,
+    "top_resort": "Saint François Longchamp"
+   },
+   {
+    "date": "2026-11-22",
+    "resorts_with_5cm_or_more": 622,
+    "max_cm": 38,
+    "top_resort": "Les 7 Laux"
+   },
+   {
+    "date": "2026-11-26",
+    "resorts_with_5cm_or_more": 601,
+    "max_cm": 32,
+    "top_resort": "Paradiski"
+   },
+   {
+    "date": "2026-11-29",
+    "resorts_with_5cm_or_more": 660,
+    "max_cm": 48,
+    "top_resort": "Pizol"
+   }
+  ],
+  "resorts": [
+   {
+    "name": "Saint François Longchamp",
+    "country": "France",
+    "top_m": 2516,
+    "base_m": 1761,
+    "depth_cm_upper_slopes_today": 42,
+    "new_cm_last_24h": 25,
+    "new_cm_last_72h": 57,
+    "new_cm_forecast_next_days": 96,
+    "slug": "saint_francois_longchamp",
+    "new_cm_next_14_days": 228,
+    "new_cm_next_14_days_low": 142,
+    "new_cm_next_14_days_high": 314,
+    "new_cm_days_1_7": 138,
+    "new_cm_days_8_14": 90,
+    "snowiest_day": "2026-11-19",
+    "snowiest_day_cm": 35,
+    "days_with_5cm_or_more": 9,
+    "days_with_snow": 11,
+    "daily": [
+     {
+      "date": "2026-11-19",
+      "cm": 35
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 28
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 34
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 34
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 30
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 15
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 13
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 25
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 6
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 2331
+   },
+   {
+    "name": "Paradiski",
+    "country": "France",
+    "top_m": 3205,
+    "base_m": 1199,
+    "depth_cm_upper_slopes_today": 51,
+    "new_cm_last_24h": 28,
+    "new_cm_last_72h": 72,
+    "new_cm_forecast_next_days": 90,
+    "slug": "paradiski",
+    "new_cm_next_14_days": 217,
+    "new_cm_next_14_days_low": 124,
+    "new_cm_next_14_days_high": 310,
+    "new_cm_days_1_7": 124,
+    "new_cm_days_8_14": 93,
+    "snowiest_day": "2026-11-19",
+    "snowiest_day_cm": 34,
+    "days_with_5cm_or_more": 9,
+    "days_with_snow": 11,
+    "daily": [
+     {
+      "date": "2026-11-19",
+      "cm": 34
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 30
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 24
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 30
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 32
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 14
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 13
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 28
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 5
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 2443
+   },
+   {
+    "name": "Val Thorens",
+    "country": "France",
+    "top_m": 3175,
+    "base_m": 1822,
+    "depth_cm_upper_slopes_today": 110,
+    "new_cm_last_24h": 32,
+    "new_cm_last_72h": 82,
+    "new_cm_forecast_next_days": 104,
+    "slug": "val_thorens_france",
+    "new_cm_next_14_days": 206,
+    "new_cm_next_14_days_low": 110,
+    "new_cm_next_14_days_high": 302,
+    "new_cm_days_1_7": 118,
+    "new_cm_days_8_14": 88,
+    "snowiest_day": "2026-11-25",
+    "snowiest_day_cm": 32,
+    "days_with_5cm_or_more": 8,
+    "days_with_snow": 11,
+    "daily": [
+     {
+      "date": "2026-11-19",
+      "cm": 32
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 24
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 25
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 32
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 32
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 14
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 12
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 25
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 4
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 2794
+   },
+   {
+    "name": "Les Grands Montets",
+    "country": "France",
+    "top_m": 2768,
+    "base_m": 1234,
+    "depth_cm_upper_slopes_today": 60,
+    "new_cm_last_24h": 29,
+    "new_cm_last_72h": 82,
+    "new_cm_forecast_next_days": 105,
+    "slug": "chamonix",
+    "new_cm_next_14_days": 201,
+    "new_cm_next_14_days_low": 120,
+    "new_cm_next_14_days_high": 282,
+    "new_cm_days_1_7": 115,
+    "new_cm_days_8_14": 86,
+    "snowiest_day": "2026-11-20",
+    "snowiest_day_cm": 33,
+    "days_with_5cm_or_more": 9,
+    "days_with_snow": 12,
+    "daily": [
+     {
+      "date": "2026-11-19",
+      "cm": 31
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 33
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 23
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 23
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 24
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 14
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 12
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 27
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 8
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 1
+     }
+    ],
+    "upper_slopes_height_m": 2663
+   },
+   {
+    "name": "Arêches Beaufort",
+    "country": "France",
+    "top_m": 2319,
+    "base_m": 1022,
+    "depth_cm_upper_slopes_today": 25,
+    "new_cm_last_24h": 32,
+    "new_cm_last_72h": 51,
+    "new_cm_forecast_next_days": 92,
+    "slug": "areches_beaufort",
+    "new_cm_next_14_days": 199,
+    "new_cm_next_14_days_low": 120,
+    "new_cm_next_14_days_high": 277,
+    "new_cm_days_1_7": 123,
+    "new_cm_days_8_14": 75,
+    "snowiest_day": "2026-11-19",
+    "snowiest_day_cm": 31,
+    "days_with_5cm_or_more": 9,
+    "days_with_snow": 11,
+    "daily": [
+     {
+      "date": "2026-11-19",
+      "cm": 31
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 29
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 28
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 29
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 29
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 12
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 11
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 16
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 5
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 1990
+   },
+   {
+    "name": "Alpe d'Huez Grand Domaine",
+    "country": "France",
+    "top_m": 3306,
+    "base_m": 1124,
+    "depth_cm_upper_slopes_today": 71,
+    "new_cm_last_24h": 21,
+    "new_cm_last_72h": 59,
+    "new_cm_forecast_next_days": 91,
+    "slug": "alpe_dhuez",
+    "new_cm_next_14_days": 198,
+    "new_cm_next_14_days_low": 121,
+    "new_cm_next_14_days_high": 275,
+    "new_cm_days_1_7": 124,
+    "new_cm_days_8_14": 75,
+    "snowiest_day": "2026-11-22",
+    "snowiest_day_cm": 36,
+    "days_with_5cm_or_more": 8,
+    "days_with_snow": 12,
+    "daily": [
+     {
+      "date": "2026-11-19",
+      "cm": 30
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 21
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 36
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 30
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 26
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 15
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 11
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 17
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 4
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 1
+     }
+    ],
+    "upper_slopes_height_m": 2687
+   }
+  ],
+  "notes": [
+   "new snow = middle of the two models' daily snowfall, brought onto the terrain (1 km); low / high = the two models",
+   "resort values = the slopes at or above mid-mountain within a few km of the resort, not the village",
+   "days 1-14 = tomorrow to day 14; week 1 = days 1-7, week 2 = days 8-14",
+   "snow by height = all the mountain terrain of the region, not only resorts"
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Saint François Longchamp",
+     "slug": "saint_francois_longchamp",
+     "now_cm": 32,
+     "usual_cm": 29,
+     "high_cm": 67,
+     "week_ago_cm": 2,
+     "height_m": 2138,
+     "best_weeks": [
+      9,
+      10,
+      13
+     ],
+     "ratio_pct": 110
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Saint François Longchamp",
+   "next_cm": 96,
+   "second": "Paradiski",
+   "second_cm": 51,
+   "depth_cm": 42
+  },
+  "story": {
+   "id": "storm_next",
+   "place": "resort:saint_francois_longchamp",
+   "score": 51,
+   "resort": "Saint François Longchamp"
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/alps-2-week-snow-forecast-maps-18-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/alps-2-week-snow-forecast-maps-18-november-2026/map_t.webp",
+   "bytes": 55642,
+   "snow_frac": 0.3652,
+   "weak": false
+  },
+  {
+   "id": "week1",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/alps-2-week-snow-forecast-maps-18-november-2026/week1.webp",
+   "thumb": "blog/media/2026/11/alps-2-week-snow-forecast-maps-18-november-2026/week1_t.webp",
+   "bytes": 50822,
+   "snow_frac": 0.3063,
+   "weak": false
+  },
+  {
+   "id": "week2",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/alps-2-week-snow-forecast-maps-18-november-2026/week2.webp",
+   "thumb": "blog/media/2026/11/alps-2-week-snow-forecast-maps-18-november-2026/week2_t.webp",
+   "bytes": 51530,
+   "snow_frac": 0.341,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Will the Alps get fresh snow this week? Up to 228 cm in the next two weeks",
+   "description": "New snow forecast for the Alps through early December. Saint François Longchamp leads with 228 cm expected over 14 days, starting with 35 cm on Thursday.",
+   "lede": "Yes, significant snow is coming to the Alps over the next two weeks, with the first pulse hitting as early as Thursday. Our forecast models agree that high terrain above 2500 m will see the most snow, with some areas collecting over 120 cm by early December.",
+   "sections": [
+    {
+     "h": "When does the snow arrive?",
+     "p": [
+      "The first major snow event begins tomorrow, Thursday 19 November. Saint François Longchamp and Paradiski will lead the Alps with 35 cm and 34 cm respectively on that day, while Les Grands Montets and Arêches Beaufort also see substantial falls. This opening burst carries most resorts' Thursday snowfall across the region.",
+      "Friday 20 November brings a second significant event, particularly at Les Grands Montets (33 cm) and Paradiski (30 cm). By contrast, Val Thorens will see the heaviest single day later, on Wednesday 25 November, with 32 cm. The pattern then shifts: week two (26 November to 2 December) brings a wetter, less concentrated pattern, though 29 November offers another active day across much of the region."
+     ]
+    },
+    {
+     "h": "Where will snow pile up most?",
+     "p": [
+      "Height matters dramatically here. High terrain above 3000 m will average 120 cm of new snow over the two weeks, with some slopes reaching 153 cm. At 2500–3000 m, expect around 70 cm, rising to 128 cm in favourable locations. Even at mid-mountain (2000–2500 m) the median is 61 cm, though some areas will exceed 100 cm.",
+      "Among named resorts, Saint François Longchamp leads with 228 cm forecast over the two weeks, followed closely by Paradiski (217 cm), Val Thorens (206 cm), and Les Grands Montets (201 cm). Saint François Longchamp sits at a sweet spot between 1761 m and 2516 m, catching both storms well. All these resorts should see nine or more days with 5 cm or more of new snow."
+     ]
+    },
+    {
+     "h": "How is snow split between the two weeks?",
+     "p": [
+      "Week one (19–25 November) dominates the forecast: it accounts for about 46 percent of the total snow that will fall in the full 14 days. Saint François Longchamp is expected to receive 138 cm in days 1–7, then 90 cm in days 8–14. The pattern is front-loaded because the first two storms (Thursday and Friday) are sharp and well-defined, whereas the second week becomes more scattered.",
+      "Week two stabilises conditions but brings less fresh snow per day. By early December, resorts will be approaching saturation and the models show diminishing snowfall. This two-step pattern is typical of late-autumn setup in the Alps: an energetic system to kick-start the season, followed by a quieter, slower recharge."
+     ]
+    },
+    {
+     "h": "What does our model say about confidence?",
+     "p": [
+      "Both ECMWF and NOAA models agree on the main storms on 19 and 20 November, which raises confidence in those days. The 14-day totals show wider uncertainty bands: Saint François Longchamp's low estimate is 142 cm and the high is 314 cm, reflecting the typical spread as we look further ahead. By contrast, the first three days are more tightly constrained because short-range patterns are more predictable.",
+      "Across the Alps, we estimate 95,500 km² of terrain will receive 20 cm or more over the next two weeks, and roughly 47,300 km² will exceed 50 cm. These are broad regional averages; actual accumulation will vary with slope angle, aspect, and local wind."
+     ]
+    },
+    {
+     "h": "What should you watch out for?",
+     "p": [
+      "Early-season snow can be thin and may expose rocks in some areas, especially at lower elevations. Snow from Thursday 19 November may settle quickly once it lands on warmer ground. By Friday and Saturday the picture improves as cumulative depth builds.",
+      "The gap between 21 and 24 November is dry and brief, so consolidation time is limited before the next pulse on 25 November. Upper slopes, particularly above 2500 m at resorts like Val Thorens and Paradiski, will fill in fastest. Lower resort bases may remain patchy until mid-week."
+     ]
+    }
+   ],
+   "advice": [
+    "Target Thursday and Friday (19–20 November) for the heaviest single-day falls; Saint François Longchamp and Les Grands Montets lead on those days.",
+    "High slopes above 2500 m will offer the best and most continuous snow coverage throughout the two weeks; mid-mountain terrain (2000–2500 m) is reliable but may be thinner at the base.",
+    "Watch the small dry window on 21–24 November: snow from Thursday and Friday will settle during this time, then 25 November brings a fresh top-up.",
+    "Remember that these values are model estimates averaged over terrain; actual depth on your chosen run will depend on aspect, wind transport, and slope angle.",
+    "Consult your local avalanche bulletin before skiing off-piste, especially in the first 48 hours when fresh snow on the ground is deepest."
+   ],
+   "captions": {
+    "map": "Snow-covered terrain across the Alps on 18 November (grey) and forecast on 21 November (white), showing expected growth in coverage from the first storms.",
+    "week1": "Daily new snow forecast for selected resorts, 19–25 November: Thursday 19th and Friday 20th dominate, with a secondary peak on Wednesday 25th.",
+    "week2": "Daily new snow forecast for selected resorts, 26 November–2 December: a more scattered pattern with the strongest day on Sunday 29 November."
+   }
+  },
+  "fr": {
+   "title": "Les Alpes recevront-elles de la neige fraîche cette semaine ? Jusqu'à 228 cm en deux semaines",
+   "description": "Prévisions de neige fraîche pour les Alpes jusqu'à début décembre. Saint François Longchamp en tête avec 228 cm attendus sur 14 jours, en commençant par 35 cm jeudi.",
+   "lede": "Oui, une neige importante arrive sur les Alpes au cours des deux prochaines semaines, la première vague arrivant dès jeudi. Nos modèles de prévisions s'accordent à dire que les terrains d'altitude au-dessus de 2 500 m verront le plus de neige, certaines zones accumulant plus de 120 cm début décembre.",
+   "sections": [
+    {
+     "h": "Quand la neige arrive-t-elle ?",
+     "p": [
+      "Le premier événement neigeux majeur commence demain, jeudi 19 novembre. Saint François Longchamp et Paradiski mèneront les Alpes avec respectivement 35 cm et 34 cm ce jour-là, tandis que Les Grands Montets et Arêches Beaufort enregistrent aussi des chutes importantes. Cette première vague représente l'essentiel des chutes de jeudi dans la région.",
+      "Vendredi 20 novembre apporte un deuxième événement important, notamment aux Grands Montets (33 cm) et à Paradiski (30 cm). En revanche, Val Thorens enregistrera les plus fortes chutes quotidiennes plus tard, mercredi 25 novembre, avec 32 cm. Le schéma change ensuite : la deuxième semaine (26 novembre au 2 décembre) apporte un régime plus humide et moins concentré, bien que le 29 novembre soit à nouveau actif dans la majeure partie de la région."
+     ]
+    },
+    {
+     "h": "Où la neige s'accumulera-t-elle le plus ?",
+     "p": [
+      "L'altitude joue un rôle crucial ici. Les terrains d'altitude au-dessus de 3 000 m verront en moyenne 120 cm de neige fraîche sur les deux semaines, certaines pentes atteignant 153 cm. Entre 2 500 et 3 000 m, attendez-vous à environ 70 cm, montant jusqu'à 128 cm dans les lieux favorables. Même en moyenne montagne (2 000–2 500 m), la médiane est de 61 cm, bien que certaines zones dépasseront 100 cm.",
+      "Parmi les stations nommées, Saint François Longchamp est en tête avec 228 cm prévus sur deux semaines, suivi de près par Paradiski (217 cm), Val Thorens (206 cm) et Les Grands Montets (201 cm). Saint François Longchamp se situe à une altitude optimale entre 1 761 m et 2 516 m, bénéficiant bien des deux systèmes orageux. Toutes ces stations devraient connaître neuf jours ou plus avec 5 cm ou plus de neige fraîche."
+     ]
+    },
+    {
+     "h": "Comment la neige se répartit-elle entre les deux semaines ?",
+     "p": [
+      "La première semaine (19–25 novembre) domine la prévision : elle représente environ 46 pour cent de la neige totale qui tombera en 14 jours. Saint François Longchamp devrait recevoir 138 cm les jours 1–7, puis 90 cm les jours 8–14. Le régime est concentré au début car les deux premiers systèmes (jeudi et vendredi) sont nets et bien définis, tandis que la deuxième semaine devient plus dispersée.",
+      "La deuxième semaine stabilise les conditions mais apporte moins de neige fraîche par jour. Début décembre, les stations approchent la saturation et les modèles montrent des chutes de neige diminuantes. Ce régime en deux temps est typique du setup de fin d'automne dans les Alpes : un système énergique pour démarrer la saison, suivi d'une recharge plus lente et plus calme."
+     ]
+    },
+    {
+     "h": "Que dit notre modèle sur la confiance ?",
+     "p": [
+      "Les modèles ECMWF et NOAA s'accordent sur les principaux systèmes des 19 et 20 novembre, ce qui augmente la confiance pour ces jours. Les totaux sur 14 jours affichent des bandes d'incertitude plus larges : l'estimation basse de Saint François Longchamp est de 142 cm et l'estimation haute de 314 cm, reflétant la dispersion typique lorsqu'on regarde plus loin. En revanche, les trois premiers jours sont plus resserrés car les régimes à court terme sont plus prévisibles.",
+      "Dans les Alpes, nous estimons que 95 500 km² de terrain recevront 20 cm ou plus au cours des deux prochaines semaines, et environ 47 300 km² dépasseront 50 cm. Ce sont des moyennes régionales générales ; l'accumulation réelle variera selon l'angle de pente, l'exposition et les vents locaux."
+     ]
+    },
+    {
+     "h": "À quoi faut-il faire attention ?",
+     "p": [
+      "La neige en début de saison peut être fine et peut exposer les rochers dans certaines zones, particulièrement en basse altitude. La neige du jeudi 19 novembre peut se tasser rapidement une fois tombée sur un sol plus chaud. Dès vendredi et samedi, la situation s'améliore à mesure que la profondeur cumulée s'accumule.",
+      "L'interruption entre le 21 et le 24 novembre est sèche et brève, le temps de consolidation est donc limité avant la prochaine vague le 25 novembre. Les pentes hautes, particulièrement au-dessus de 2 500 m aux stations comme Val Thorens et Paradiski, se rempliront le plus rapidement. Les bases des stations moins élevées peuvent rester mosaïquées jusqu'au milieu de la semaine."
+     ]
+    }
+   ],
+   "advice": [
+    "Privilégiez jeudi et vendredi (19–20 novembre) pour les chutes les plus fortes sur une seule journée ; Saint François Longchamp et Les Grands Montets sont en tête ces jours-là.",
+    "Les pentes hautes au-dessus de 2 500 m offriront la meilleure couverture de neige et la plus continue sur les deux semaines ; le terrain de moyenne montagne (2 000–2 500 m) est fiable mais peut être plus fin à la base.",
+    "Surveillez la petite fenêtre sèche du 21–24 novembre : la neige de jeudi et vendredi se tassera pendant cette période, puis le 25 novembre apporte un nouveau renouvellement.",
+    "Rappelez-vous que ces valeurs sont des estimations de modèle moyennes sur le terrain ; la profondeur réelle sur votre piste choisie dépendra de l'exposition, du transport éolien et de l'angle de pente.",
+    "Consultez votre bulletin d'avalanche local avant de skier hors-piste, particulièrement dans les 48 premières heures lorsque la neige fraîche au sol est la plus profonde."
+   ],
+   "captions": {
+    "map": "Terrain enneigé dans les Alpes le 18 novembre (gris) et prévu le 21 novembre (blanc), montrant l'extension attendue de la couverture neigeuse issus des premiers systèmes.",
+    "week1": "Prévisions de neige fraîche quotidienne pour les stations sélectionnées, 19–25 novembre : les 19 et 20 novembre dominent, avec un pic secondaire mercredi 25.",
+    "week2": "Prévisions de neige fraîche quotidienne pour les stations sélectionnées, 26 novembre–2 décembre : un régime plus dispersé avec la journée la plus forte dimanche 29 novembre."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "voice": "sat"
+  },
+  "fr": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "voice": "sat"
+  }
+ },
+ "words_en": 602,
+ "indexable": true,
+ "main": {
+  "slug": "saint_francois_longchamp",
+  "name": "Saint François Longchamp",
+  "lat": 45.4305,
+  "lon": 6.381
+ },
+ "places": [
+  {
+   "name": "Saint François Longchamp",
+   "lat": 45.4305,
+   "lon": 6.381
+  },
+  {
+   "name": "Paradiski",
+   "lat": 45.5325,
+   "lon": 6.7491
+  },
+  {
+   "name": "Val Thorens",
+   "lat": 45.2904,
+   "lon": 6.5763
+  },
+  {
+   "name": "Les Grands Montets",
+   "lat": 45.9617,
+   "lon": 6.944
+  },
+  {
+   "name": "Arêches Beaufort",
+   "lat": 45.6616,
+   "lon": 6.5443
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "saint_francois_longchamp",
+   "name": "Saint François Longchamp"
+  },
+  {
+   "slug": "paradiski",
+   "name": "Paradiski"
+  },
+  {
+   "slug": "val_thorens_france",
+   "name": "Val Thorens"
+  },
+  {
+   "slug": "chamonix",
+   "name": "Les Grands Montets"
+  },
+  {
+   "slug": "areches_beaufort",
+   "name": "Arêches Beaufort"
+  },
+  {
+   "slug": "alpe_dhuez",
+   "name": "Alpe d'Huez Grand Domaine"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "saint_francois_longchamp",
+    "name": "Saint François Longchamp",
+    "depth": 42,
+    "new72": 57,
+    "next": 96,
+    "top_m": 2516
+   },
+   {
+    "slug": "paradiski",
+    "name": "Paradiski",
+    "depth": 51,
+    "new72": 72,
+    "next": 90,
+    "top_m": 3205
+   },
+   {
+    "slug": "val_thorens_france",
+    "name": "Val Thorens",
+    "depth": 110,
+    "new72": 82,
+    "next": 104,
+    "top_m": 3175
+   },
+   {
+    "slug": "chamonix",
+    "name": "Les Grands Montets",
+    "depth": 60,
+    "new72": 82,
+    "next": 105,
+    "top_m": 2768
+   },
+   {
+    "slug": "areches_beaufort",
+    "name": "Arêches Beaufort",
+    "depth": 25,
+    "new72": 51,
+    "next": 92,
+    "top_m": 2319
+   },
+   {
+    "slug": "alpe_dhuez",
+    "name": "Alpe d'Huez Grand Domaine",
+    "depth": 71,
+    "new72": 59,
+    "next": 91,
+    "top_m": 3306
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "EAWS (Alps)",
+   "url": "https://www.avalanches.org/"
+  }
+ ],
+ "trip_day": "2026-11-21",
+ "map_link": "https://snowscope.app/#@45.431,6.381,9.0",
+ "seconds": 38.0,
+ "facts_used": 37,
+ "voice": "sat",
+ "media_ids": [
+  "map",
+  "week1",
+  "week2"
+ ],
+ "overlap": {
+  "before": 0.9,
+  "after": 0.9,
+  "with": "western-canada-2-week-snow-forecast-maps-18-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.008,
+  "with": "western-canada-2-week-snow-forecast-maps-18-november-2026"
+ },
+ "publish_utc": "2026-11-18T11:22:56Z",
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 752,
+  "overlap": 0.6,
+  "with": "western-canada-whistler-blackcomb-fresh-snow-powder-alert-16-november-2026",
+  "langs_off": [],
+  "score": 114.6,
+  "intent": "resort:saint_francois_longchamp|storm_next",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "map",
+  "files": {
+   "en": [
+    "blog/media/2026/11/alps-2-week-snow-forecast-maps-18-november-2026/cover-en.webp",
+    "blog/media/2026/11/alps-2-week-snow-forecast-maps-18-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/alps-2-week-snow-forecast-maps-18-november-2026/cover-fr.webp",
+    "blog/media/2026/11/alps-2-week-snow-forecast-maps-18-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}
