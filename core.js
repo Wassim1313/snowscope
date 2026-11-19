@@ -762,6 +762,8 @@
       if (S.pro) h = '<span class="pro hide-s"><span class="ms f">workspace_premium</span>PRO</span>' + h;
     } else if (fbEnabled()) h = '<button class="btn ghost" data-signin>Sign in</button>';
     h += '<a class="btn ink hide-s" href="' + esc(appUrl()) + '">Get the app</a>';
+    // ski trip planner (owner 2026-11-19): a clear button on every page, before the account buttons
+    if (!/planner\.html$/.test(location.pathname)) h = '<a class="btn plantrip" href="' + ROOT + 'planner.html" aria-label="Plan ski trip" title="Plan ski trip"><span class="ms f">downhill_skiing</span><span class="t">Plan ski trip</span><span class="ts">Plan trip</span></a>' + h;
     box.innerHTML = h;
   }
   document.addEventListener("click", (e) => {

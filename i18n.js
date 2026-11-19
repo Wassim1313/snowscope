@@ -333,6 +333,8 @@
     "Find a ski resort": ["Trouver une station", "Skigebiet suchen", "Cerca una stazione", "Buscar una estación", "قلب على محطة ديال التزلج"],
     "Sign in": ["Se connecter", "Anmelden", "Accedi", "Iniciar sesión", "دخل"],
     "Get the app": ["Obtenir l'appli", "App holen", "Scarica l'app", "Descargar la app", "جيب التطبيق"],
+    "Plan ski trip": ["Planifier mon séjour", "Skiurlaub planen", "Pianifica il viaggio", "Planear viaje de esquí", "خطط لرحلة التزلج"],
+    "Plan trip": ["Séjour", "Planen", "Viaggio", "Viaje", "الرحلة"],
     "Today": ["Aujourd'hui", "Heute", "Oggi", "Hoy", "اليوم"],
     "Today (day chip)": ["Auj.", "Heute", "Oggi", "Hoy", "اليوم"],
     "Near me": ["Près de moi", "In meiner Nähe", "Vicino a me", "Cerca de mí", "قريب مني"],

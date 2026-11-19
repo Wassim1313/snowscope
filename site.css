@@ -996,3 +996,10 @@ button.psell-plan{cursor:pointer}button.psell-plan:hover{border-color:var(--acce
 .pcard .pover b{font-size:15px}
 .rrow.plock{border:1px dashed var(--gold);background:var(--gold-tint);cursor:pointer;justify-content:center;gap:8px;font-weight:650;color:var(--gold-ink);width:100%}
 td.plk,.plk{color:var(--gold-ink)}td.plk .ms{font-size:16px;vertical-align:-3px}
+/* "Plan ski trip" header button (every page, core.js renderAcct) */
+.btn.plantrip{background:#FFD23F;color:#0B1E4A;border:2px solid #0B1E4A;box-shadow:2px 2px 0 #0B1E4A;font-weight:750}
+.btn.plantrip:hover{background:#FFDD66}.btn.plantrip .ms{font-size:20px}
+.btn.plantrip .ts{display:none}
+@media (max-width:440px){.btn.plantrip{padding-inline:8px;gap:4px}.btn.plantrip .t{display:none}.btn.plantrip .ts{display:inline;font-size:13px}.btn.plantrip .ms{font-size:18px}}
+@media (max-width:360px){.btn.plantrip .ts{display:none}.btn.plantrip{padding-inline:9px}}
+
