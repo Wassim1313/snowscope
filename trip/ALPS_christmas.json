@@ -10,7 +10,7 @@
  "budget_eur": 1000.0,
  "currency": "EUR",
  "fx": {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "source": "frankfurter.app",
   "rate": null
  },
@@ -36,6 +36,17 @@
    "lifts": 10,
    "opens": "2026-12-19",
    "pass_day_eur": 38.2,
+   "pass_day_walkup": 38.2,
+   "pass_day_multi_eur": 32.17,
+   "pass_multi": {
+    "days": 6,
+    "price": 193.0,
+    "ccy": "EUR",
+    "per_day": 32.17,
+    "estimated": false,
+    "note": "6-day adult pass, official site unreachable, cross-checked via aggregator (+7% YoY)",
+    "src": "https://www.alti-mag.com/en/ski-pass-prices-france"
+   },
    "pass_day_local": {
     "ccy": "EUR",
     "holiday": 38.2,
@@ -65,7 +76,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 74,
+       "snowfall_p50_cm": 73,
        "p50_cm": 140
       },
       "GFS": {
@@ -79,12 +90,14 @@
     }
    },
    "cost": {
-    "pass_eur": 229,
+    "pass_eur": 193,
     "hotel_eur": 315,
     "food_eur": 294,
-    "total_eur": 838,
-    "party_total_eur": 838,
-    "left_eur": 162,
+    "total_eur": 802,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 229,
+    "party_total_eur": 802,
+    "left_eur": 198,
     "need_eur": 0,
     "fits": true
    },
@@ -94,16 +107,16 @@
     "pistes": "MID",
     "snow": "HIGH"
    },
-   "value_cm_per_eur": 3.66,
+   "value_cm_per_eur": 4.35,
    "pros": [
     "~140 cm at the start",
-    "day pass 38 EUR",
+    "6-day pass 193 EUR",
     "cheap places to stay"
    ],
    "cons": [
     "10 lifts, queues on peak days"
    ],
-   "score": 79.8,
+   "score": 79.9,
    "score_parts": {
     "MONEY": 96,
     "SNOW": 63
@@ -123,6 +136,17 @@
    "lifts": 10,
    "opens": "2026-12-12",
    "pass_day_eur": 41.0,
+   "pass_day_walkup": 41.0,
+   "pass_day_multi_eur": 35.33,
+   "pass_multi": {
+    "days": 6,
+    "price": 212.0,
+    "ccy": "EUR",
+    "per_day": 35.33,
+    "estimated": false,
+    "note": "6-day adult pass, dynamic pricing via aussois360.com",
+    "src": "https://www.aussois.com/en/ski-et-glisse/les-forfaits-de-ski/"
+   },
    "pass_day_local": {
     "ccy": "EUR",
     "holiday": 41.0,
@@ -152,7 +176,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 113,
+       "snowfall_p50_cm": 112,
        "p50_cm": 115
       },
       "GFS": {
@@ -166,12 +190,14 @@
     }
    },
    "cost": {
-    "pass_eur": 246,
+    "pass_eur": 212,
     "hotel_eur": 280,
     "food_eur": 266,
-    "total_eur": 792,
-    "party_total_eur": 792,
-    "left_eur": 208,
+    "total_eur": 758,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 246,
+    "party_total_eur": 758,
+    "left_eur": 242,
     "need_eur": 0,
     "fits": true
    },
@@ -181,9 +207,9 @@
     "pistes": "LOW",
     "snow": "MID"
    },
-   "value_cm_per_eur": 2.8,
+   "value_cm_per_eur": 3.25,
    "pros": [
-    "day pass 41 EUR",
+    "6-day pass 212 EUR",
     "cheap places to stay"
    ],
    "cons": [
@@ -210,6 +236,17 @@
    "lifts": 9,
    "opens": "2026-12-19",
    "pass_day_eur": 43.6,
+   "pass_day_walkup": 43.6,
+   "pass_day_multi_eur": 36.13,
+   "pass_multi": {
+    "days": 6,
+    "price": 216.8,
+    "ccy": "EUR",
+    "per_day": 36.13,
+    "estimated": false,
+    "note": "6-day adult pass booked online >=6 days ahead; covers Valfrejus+La Norma",
+    "src": "https://www.la-norma.ski/en/ski-passes-prices/"
+   },
    "pass_day_local": {
     "ccy": "EUR",
     "holiday": 43.6,
@@ -239,7 +276,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 113,
+       "snowfall_p50_cm": 112,
        "p50_cm": 120
       },
       "GFS": {
@@ -253,12 +290,14 @@
     }
    },
    "cost": {
-    "pass_eur": 262,
+    "pass_eur": 217,
     "hotel_eur": 336,
     "food_eur": 266,
-    "total_eur": 864,
-    "party_total_eur": 864,
-    "left_eur": 136,
+    "total_eur": 819,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 262,
+    "party_total_eur": 819,
+    "left_eur": 181,
     "need_eur": 0,
     "fits": true
    },
@@ -268,19 +307,19 @@
     "pistes": "LOW",
     "snow": "HIGH"
    },
-   "value_cm_per_eur": 2.75,
+   "value_cm_per_eur": 3.32,
    "pros": [
     "~120 cm at the start",
-    "day pass 44 EUR",
+    "6-day pass 217 EUR",
     "cheap places to stay"
    ],
    "cons": [
     "only 36 km of pistes",
     "9 lifts, queues on peak days"
    ],
-   "score": 72.1,
+   "score": 72.5,
    "score_parts": {
-    "MONEY": 94,
+    "MONEY": 95,
     "SNOW": 50
    },
    "rank": 3
@@ -298,6 +337,17 @@
    "lifts": 32,
    "opens": "2026-12-12",
    "pass_day_eur": 50.0,
+   "pass_day_walkup": 50.0,
+   "pass_day_multi_eur": 43.08,
+   "pass_multi": {
+    "days": 6,
+    "price": 258.5,
+    "ccy": "EUR",
+    "per_day": 43.08,
+    "estimated": false,
+    "note": "6-day adult pass, official site unreachable, via aggregator, dynamic pricing",
+    "src": "https://www.alti-mag.com/tarifs-forfaits-de-ski"
+   },
    "pass_day_local": {
     "ccy": "EUR",
     "holiday": 50.0,
@@ -327,7 +377,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 74,
+       "snowfall_p50_cm": 73,
        "p50_cm": 115
       },
       "GFS": {
@@ -341,31 +391,33 @@
     }
    },
    "cost": {
-    "pass_eur": 300,
+    "pass_eur": 258,
     "hotel_eur": 350,
     "food_eur": 280,
-    "total_eur": 930,
-    "party_total_eur": 930,
-    "left_eur": 70,
+    "total_eur": 888,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 300,
+    "party_total_eur": 888,
+    "left_eur": 112,
     "need_eur": 0,
     "fits": true
    },
    "tiers": {
-    "pass": "MID",
+    "pass": "LOW",
     "hotel": "LOW",
     "pistes": "MID",
     "snow": "HIGH"
    },
-   "value_cm_per_eur": 2.5,
+   "value_cm_per_eur": 2.9,
    "pros": [
     "~125 cm at the start",
-    "cheap places to stay",
-    "32 lifts"
+    "6-day pass 258 EUR",
+    "cheap places to stay"
    ],
    "cons": [
     "small village, few shops"
    ],
-   "score": 71.2,
+   "score": 71.3,
    "score_parts": {
     "MONEY": 89,
     "SNOW": 53
@@ -385,6 +437,17 @@
    "lifts": 17,
    "opens": "2026-11-28",
    "pass_day_eur": 56.0,
+   "pass_day_walkup": 56.0,
+   "pass_day_multi_eur": 51.85,
+   "pass_multi": {
+    "days": 6,
+    "price": 311.1,
+    "ccy": "EUR",
+    "per_day": 51.85,
+    "estimated": true,
+    "note": "estimate: 0.85 x day pass x 6; lathuile.it/espacesanbernardo.com unreachable this session (WebFetch/WebSearch blocked)",
+    "src": "https://www.lathuile.it"
+   },
    "pass_day_local": {
     "ccy": "EUR",
     "holiday": 61.0,
@@ -398,7 +461,8 @@
    "stay_src": "estimate: La Thuile hotels; refuges 15-35 EUR, Brasserie du Bathieu 15-20 EUR",
    "estimates": [
     "night_eur",
-    "food_day_eur"
+    "food_day_eur",
+    "pass_multi"
    ],
    "snow": {
     "now_cm": 65,
@@ -414,7 +478,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 139,
+       "snowfall_p50_cm": 135,
        "p50_cm": 150
       },
       "GFS": {
@@ -428,13 +492,15 @@
     }
    },
    "cost": {
-    "pass_eur": 336,
+    "pass_eur": 311,
     "hotel_eur": 490,
     "food_eur": 280,
-    "total_eur": 1106,
-    "party_total_eur": 1106,
-    "left_eur": -106,
-    "need_eur": 106,
+    "total_eur": 1081,
+    "pass_basis": "advance 6-day pass (estimate)",
+    "pass_walkup": 336,
+    "party_total_eur": 1081,
+    "left_eur": -81,
+    "need_eur": 81,
     "fits": false
    },
    "tiers": {
@@ -443,16 +509,16 @@
     "pistes": "MID",
     "snow": "HIGH"
    },
-   "value_cm_per_eur": 2.5,
+   "value_cm_per_eur": 2.7,
    "pros": [
     "~140 cm at the start"
    ],
    "cons": [
-    "1,106 EUR per person"
+    "1,081 EUR per person"
    ],
-   "score": 69.2,
+   "score": 68.4,
    "score_parts": {
-    "MONEY": 75,
+    "MONEY": 74,
     "SNOW": 63
    },
    "rank": 5
@@ -470,6 +536,17 @@
    "lifts": 14,
    "opens": "2026-12-19",
    "pass_day_eur": 36.0,
+   "pass_day_walkup": 36.0,
+   "pass_day_multi_eur": 31.83,
+   "pass_multi": {
+    "days": 6,
+    "price": 191.0,
+    "ccy": "EUR",
+    "per_day": 31.83,
+    "estimated": false,
+    "note": "6-day adult pass, season 2026-27 (19 Dec 2026-10 Apr 2027)",
+    "src": "https://www.leskarellis.com/fr/tarifs-2026-2027-sans-lien"
+   },
    "pass_day_local": {
     "ccy": "EUR",
     "holiday": 36.0,
@@ -499,7 +576,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 105,
+       "snowfall_p50_cm": 106,
        "p50_cm": 105
       },
       "GFS": {
@@ -513,12 +590,14 @@
     }
    },
    "cost": {
-    "pass_eur": 216,
+    "pass_eur": 191,
     "hotel_eur": 350,
     "food_eur": 280,
-    "total_eur": 846,
-    "party_total_eur": 846,
-    "left_eur": 154,
+    "total_eur": 821,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 216,
+    "party_total_eur": 821,
+    "left_eur": 179,
     "need_eur": 0,
     "fits": true
    },
@@ -528,17 +607,17 @@
     "pistes": "LOW",
     "snow": "MID"
    },
-   "value_cm_per_eur": 2.92,
+   "value_cm_per_eur": 3.3,
    "pros": [
-    "day pass 36 EUR",
+    "6-day pass 191 EUR",
     "cheap places to stay"
    ],
    "cons": [
     "only 45 km of pistes"
    ],
-   "score": 67.9,
+   "score": 67.4,
    "score_parts": {
-    "MONEY": 96,
+    "MONEY": 95,
     "SNOW": 40
    },
    "rank": 6
@@ -556,6 +635,17 @@
    "lifts": 33,
    "opens": "2026-11-21",
    "pass_day_eur": 73.5,
+   "pass_day_walkup": 73.5,
+   "pass_day_multi_eur": 61.25,
+   "pass_multi": {
+    "days": 6,
+    "price": 367.5,
+    "ccy": "EUR",
+    "per_day": 61.25,
+    "estimated": false,
+    "note": "6-day adult pass Val Thorens-Orelle, Christmas period",
+    "src": "https://www.valthorens.com"
+   },
    "pass_day_local": {
     "ccy": "EUR",
     "holiday": 73.5,
@@ -585,7 +675,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 105,
+       "snowfall_p50_cm": 106,
        "p50_cm": 215
       },
       "GFS": {
@@ -599,31 +689,32 @@
     }
    },
    "cost": {
-    "pass_eur": 441,
+    "pass_eur": 368,
     "hotel_eur": 1190,
     "food_eur": 420,
-    "total_eur": 2051,
-    "party_total_eur": 2051,
-    "left_eur": -1051,
-    "need_eur": 1051,
+    "total_eur": 1978,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 441,
+    "party_total_eur": 1978,
+    "left_eur": -978,
+    "need_eur": 978,
     "fits": false
    },
    "tiers": {
-    "pass": "HIGH",
+    "pass": "MID",
     "hotel": "HIGH",
     "pistes": "HIGH",
     "snow": "HIGH"
    },
-   "value_cm_per_eur": 2.65,
+   "value_cm_per_eur": 3.18,
    "pros": [
     "~195 cm at the start",
     "141 km of pistes",
     "skiing up to 3221 m"
    ],
    "cons": [
-    "2,051 EUR per person",
-    "nights from 170 EUR per person",
-    "day pass 74 EUR"
+    "1,978 EUR per person",
+    "nights from 170 EUR per person"
    ],
    "score": 50.0,
    "score_parts": {
@@ -644,7 +735,18 @@
    "km": 17.0,
    "lifts": 7,
    "opens": "2026-12-12",
-   "pass_day_eur": 70.32,
+   "pass_day_eur": 70.18,
+   "pass_day_walkup": 70.18,
+   "pass_day_multi_eur": 59.65,
+   "pass_multi": {
+    "days": 6,
+    "price": 331.5,
+    "ccy": "CHF",
+    "per_day": 55.25,
+    "estimated": true,
+    "note": "estimate: 0.85 x day pass x 6; ovronnaz.ch unreachable this session (WebFetch/WebSearch blocked)",
+    "src": "https://www.ovronnaz.ch"
+   },
    "pass_day_local": {
     "ccy": "CHF",
     "holiday": 65.0,
@@ -653,12 +755,13 @@
    "pass_period": "holiday",
    "pass_note": "adult day pass CHF 65",
    "pass_src": "https://www.ovronnaz.ch",
-   "night_eur": 100.62,
-   "food_day_eur": 61.67,
+   "night_eur": 100.41,
+   "food_day_eur": 61.54,
    "stay_src": "estimate: CHF 180-220 doubles; menu CHF 24, pasta CHF 18",
    "estimates": [
     "night_eur",
-    "food_day_eur"
+    "food_day_eur",
+    "pass_multi"
    ],
    "snow": {
     "now_cm": 55,
@@ -674,7 +777,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 106,
+       "snowfall_p50_cm": 104,
        "p50_cm": 120
       },
       "GFS": {
@@ -688,33 +791,35 @@
     }
    },
    "cost": {
-    "pass_eur": 422,
-    "hotel_eur": 704,
-    "food_eur": 432,
-    "total_eur": 1558,
-    "party_total_eur": 1558,
-    "left_eur": -558,
-    "need_eur": 558,
+    "pass_eur": 358,
+    "hotel_eur": 703,
+    "food_eur": 431,
+    "total_eur": 1492,
+    "pass_basis": "advance 6-day pass (estimate)",
+    "pass_walkup": 421,
+    "party_total_eur": 1492,
+    "left_eur": -492,
+    "need_eur": 492,
     "fits": false
    },
    "tiers": {
-    "pass": "HIGH",
+    "pass": "MID",
     "hotel": "MID",
     "pistes": "LOW",
     "snow": "HIGH"
    },
-   "value_cm_per_eur": 1.85,
+   "value_cm_per_eur": 2.18,
    "pros": [
     "~130 cm at the start"
    ],
    "cons": [
-    "1,558 EUR per person",
+    "1,492 EUR per person",
     "only 17 km of pistes",
-    "day pass 70 EUR"
+    "7 lifts, queues on peak days"
    ],
-   "score": 47.9,
+   "score": 48.3,
    "score_parts": {
-    "MONEY": 39,
+    "MONEY": 40,
     "SNOW": 57
    },
    "rank": 8
@@ -732,6 +837,17 @@
    "lifts": 23,
    "opens": "2026-10-24",
    "pass_day_eur": 75.5,
+   "pass_day_walkup": 75.5,
+   "pass_day_multi_eur": 64.17,
+   "pass_multi": {
+    "days": 6,
+    "price": 385.05,
+    "ccy": "EUR",
+    "per_day": 64.17,
+    "estimated": true,
+    "note": "estimate: 0.85 x day pass x 6; stubaier-gletscher.com unreachable this session (WebFetch/WebSearch blocked)",
+    "src": "https://www.stubaier-gletscher.com"
+   },
    "pass_day_local": {
     "ccy": "EUR",
     "holiday": 75.5,
@@ -745,7 +861,8 @@
    "stay_src": "estimate: Neustift hotels; Eisgrat pasta 12.80 EUR, hut mains 16-20 EUR",
    "estimates": [
     "night_eur",
-    "food_day_eur"
+    "food_day_eur",
+    "pass_multi"
    ],
    "snow": {
     "now_cm": 60,
@@ -761,8 +878,8 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 42,
-       "p50_cm": 110
+       "snowfall_p50_cm": 40,
+       "p50_cm": 105
       },
       "GFS": {
        "members": 31,
@@ -775,33 +892,34 @@
     }
    },
    "cost": {
-    "pass_eur": 453,
+    "pass_eur": 385,
     "hotel_eur": 560,
     "food_eur": 315,
-    "total_eur": 1328,
-    "party_total_eur": 1328,
-    "left_eur": -328,
-    "need_eur": 328,
+    "total_eur": 1260,
+    "pass_basis": "advance 6-day pass (estimate)",
+    "pass_walkup": 453,
+    "party_total_eur": 1260,
+    "left_eur": -260,
+    "need_eur": 260,
     "fits": false
    },
    "tiers": {
-    "pass": "HIGH",
+    "pass": "MID",
     "hotel": "MID",
     "pistes": "MID",
     "snow": "MID"
    },
-   "value_cm_per_eur": 1.19,
+   "value_cm_per_eur": 1.4,
    "pros": [
     "skiing up to 3208 m"
    ],
    "cons": [
-    "1,328 EUR per person",
-    "~90 cm at the start",
-    "day pass 76 EUR"
+    "1,260 EUR per person",
+    "~90 cm at the start"
    ],
-   "score": 43.7,
+   "score": 44.4,
    "score_parts": {
-    "MONEY": 57,
+    "MONEY": 59,
     "SNOW": 30
    },
    "rank": 9
@@ -819,6 +937,17 @@
    "lifts": 38,
    "opens": "2026-11-27",
    "pass_day_eur": 70.5,
+   "pass_day_walkup": 70.5,
+   "pass_day_multi_eur": 59.93,
+   "pass_multi": {
+    "days": 6,
+    "price": 359.55,
+    "ccy": "EUR",
+    "per_day": 59.93,
+    "estimated": true,
+    "note": "estimate: 0.85 x day pass x 6; zugspitze.de unreachable this session (WebFetch/WebSearch blocked)",
+    "src": "https://zugspitze.de"
+   },
    "pass_day_local": {
     "ccy": "EUR",
     "holiday": 70.5,
@@ -832,7 +961,8 @@
    "stay_src": "estimate: Garmisch / Grainau hotels; hut lunch 20.40 EUR, Schnitzel 23.90 EUR",
    "estimates": [
     "night_eur",
-    "food_day_eur"
+    "food_day_eur",
+    "pass_multi"
    ],
    "snow": {
     "now_cm": 55,
@@ -848,8 +978,8 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 42,
-       "p50_cm": 110
+       "snowfall_p50_cm": 38,
+       "p50_cm": 105
       },
       "GFS": {
        "members": 31,
@@ -862,33 +992,35 @@
     }
    },
    "cost": {
-    "pass_eur": 423,
+    "pass_eur": 360,
     "hotel_eur": 490,
     "food_eur": 336,
-    "total_eur": 1249,
-    "party_total_eur": 1249,
-    "left_eur": -249,
-    "need_eur": 249,
+    "total_eur": 1186,
+    "pass_basis": "advance 6-day pass (estimate)",
+    "pass_walkup": 423,
+    "party_total_eur": 1186,
+    "left_eur": -186,
+    "need_eur": 186,
     "fits": false
    },
    "tiers": {
-    "pass": "HIGH",
+    "pass": "MID",
     "hotel": "MID",
     "pistes": "LOW",
     "snow": "MID"
    },
-   "value_cm_per_eur": 1.13,
+   "value_cm_per_eur": 1.34,
    "pros": [
     "38 lifts"
    ],
    "cons": [
-    "1,249 EUR per person",
+    "1,186 EUR per person",
     "only 16 km of pistes",
     "~80 cm at the start"
    ],
-   "score": 43.5,
+   "score": 44.1,
    "score_parts": {
-    "MONEY": 64,
+    "MONEY": 65,
     "SNOW": 23
    },
    "rank": 10
@@ -906,6 +1038,17 @@
    "lifts": 52,
    "opens": "2026-12-05",
    "pass_day_eur": 72.9,
+   "pass_day_walkup": 72.9,
+   "pass_day_multi_eur": 61.97,
+   "pass_multi": {
+    "days": 6,
+    "price": 371.79,
+    "ccy": "EUR",
+    "per_day": 61.97,
+    "estimated": true,
+    "note": "estimate: 0.85 x day pass x 6; ok-bergbahnen.com unreachable this session (WebFetch/WebSearch blocked)",
+    "src": "https://www.ok-bergbahnen.com"
+   },
    "pass_day_local": {
     "ccy": "EUR",
     "holiday": 72.9,
@@ -919,15 +1062,16 @@
    "stay_src": "estimate: Oberstdorf hotels; Allgäu hut lunches ~20 EUR",
    "estimates": [
     "night_eur",
-    "food_day_eur"
+    "food_day_eur",
+    "pass_multi"
    ],
    "snow": {
     "now_cm": 25,
     "start": {
-     "cm": 60,
+     "cm": 55,
      "p20": 35,
-     "p50": 60,
-     "p80": 85,
+     "p50": 55,
+     "p80": 80,
      "p_ge50": 0.56,
      "basis": "ensemble+climatology",
      "normal_cm": 70,
@@ -935,8 +1079,8 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 68,
-       "p50_cm": 80
+       "snowfall_p50_cm": 59,
+       "p50_cm": 75
       },
       "GFS": {
        "members": 31,
@@ -949,34 +1093,35 @@
     }
    },
    "cost": {
-    "pass_eur": 437,
+    "pass_eur": 372,
     "hotel_eur": 525,
     "food_eur": 336,
-    "total_eur": 1298,
-    "party_total_eur": 1298,
-    "left_eur": -298,
-    "need_eur": 298,
+    "total_eur": 1233,
+    "pass_basis": "advance 6-day pass (estimate)",
+    "pass_walkup": 437,
+    "party_total_eur": 1233,
+    "left_eur": -233,
+    "need_eur": 233,
     "fits": false
    },
    "tiers": {
-    "pass": "HIGH",
+    "pass": "MID",
     "hotel": "MID",
     "pistes": "MID",
-    "snow": "MID"
+    "snow": "LOW"
    },
-   "value_cm_per_eur": 0.82,
+   "value_cm_per_eur": 0.89,
    "pros": [
     "52 lifts"
    ],
    "cons": [
-    "1,298 EUR per person",
-    "~60 cm at the start",
-    "day pass 73 EUR"
+    "1,233 EUR per person",
+    "~55 cm at the start"
    ],
-   "score": 34.9,
+   "score": 33.9,
    "score_parts": {
-    "MONEY": 60,
-    "SNOW": 10
+    "MONEY": 61,
+    "SNOW": 7
    },
    "rank": 11
   },
@@ -993,6 +1138,17 @@
    "lifts": 18,
    "opens": "2026-12-12",
    "pass_day_eur": 69.0,
+   "pass_day_walkup": 69.0,
+   "pass_day_multi_eur": 58.65,
+   "pass_multi": {
+    "days": 6,
+    "price": 351.9,
+    "ccy": "EUR",
+    "per_day": 58.65,
+    "estimated": true,
+    "note": "estimate: 0.85 x day pass x 6; zugspitze.de unreachable this session (WebFetch/WebSearch blocked)",
+    "src": "https://zugspitze.de"
+   },
    "pass_day_local": {
     "ccy": "EUR",
     "holiday": 69.0,
@@ -1006,7 +1162,8 @@
    "stay_src": "estimate: Garmisch hotels; hut lunch 20.40 EUR, Schnitzel 23.90 EUR",
    "estimates": [
     "night_eur",
-    "food_day_eur"
+    "food_day_eur",
+    "pass_multi"
    ],
    "snow": {
     "now_cm": 20,
@@ -1015,14 +1172,14 @@
      "p20": 35,
      "p50": 45,
      "p80": 65,
-     "p_ge50": 0.44,
+     "p_ge50": 0.41,
      "basis": "ensemble+climatology",
      "normal_cm": 50,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 42,
+       "snowfall_p50_cm": 37,
        "p50_cm": 60
       },
       "GFS": {
@@ -1036,48 +1193,50 @@
     }
    },
    "cost": {
-    "pass_eur": 414,
+    "pass_eur": 352,
     "hotel_eur": 490,
     "food_eur": 336,
-    "total_eur": 1240,
-    "party_total_eur": 1240,
-    "left_eur": -240,
-    "need_eur": 240,
+    "total_eur": 1178,
+    "pass_basis": "advance 6-day pass (estimate)",
+    "pass_walkup": 414,
+    "party_total_eur": 1178,
+    "left_eur": -178,
+    "need_eur": 178,
     "fits": false
    },
    "tiers": {
-    "pass": "HIGH",
+    "pass": "MID",
     "hotel": "MID",
     "pistes": "LOW",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.65,
+   "value_cm_per_eur": 0.77,
    "pros": [
     "solid all-rounder"
    ],
    "cons": [
-    "1,240 EUR per person",
+    "1,178 EUR per person",
     "only 38 km of pistes",
     "~45 cm at the start"
    ],
-   "score": 32.2,
+   "score": 32.8,
    "score_parts": {
-    "MONEY": 64,
+    "MONEY": 66,
     "SNOW": 0
    },
    "rank": 12
   }
  ],
  "tiers": {
-  "pass": "LOW < 45 EUR <= MID <= 65 EUR < HIGH (adult day pass, EUR)",
+  "pass": "LOW < 45 EUR <= MID <= 65 EUR < HIGH (per ski day: advance multi-day pass rate when the trip has >= 3 ski days, else the adult day ticket, EUR)",
   "hotel": "LOW < 60 EUR <= MID <= 120 EUR < HIGH (per person per night sharing, estimate)",
   "pistes": "size + altitude: >=120 km = 2 pts, >=50 km = 1, top >=2900 m = +1; HIGH >=2, MID 1, LOW 0",
   "snow": "projected depth at the start date (P50): HIGH >=120 cm, MID >=60 cm, LOW below"
  },
- "explainer": "Snow at the start date = snow now at the resort + 40 % of the ensemble members' snowfall (ECMWF and GFS ensembles to their horizon) + the change the past winters show from that horizon to the date. Likely range = 20th-80th percentile of the scenarios. Prices: day pass from the resort shop; night and food are estimates. Multi-day passes and early bookings are often cheaper than the figures here.",
+ "explainer": "Snow at the start date = snow now at the resort + 40 % of the ensemble members' snowfall (ECMWF and GFS ensembles to their horizon) + the change the past winters show from that horizon to the date. Likely range = 20th-80th percentile of the scenarios. Prices: lift pass at the advance multi-day pass rate for trips of 3 ski days or more (walk-up day tickets cost more, shown as pass_walkup); night and food are estimates.",
  "notes": [
   "night_eur and food_day_eur are estimates per person (sharing a room / apartment)",
-  "pass = ski days x adult day pass; multi-day passes are usually cheaper",
+  "pass = advance multi-day pass rate x ski days for 3+ ski days (cost.pass_basis), else walk-up day tickets; cost.pass_walkup = what day tickets would cost",
   "budget_eur is the whole party's budget; left_eur compares it with party_total_eur"
  ],
  "static": true

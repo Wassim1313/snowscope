@@ -10,7 +10,7 @@
  "budget_eur": 1000.0,
  "currency": "EUR",
  "fx": {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "source": "frankfurter.app",
   "rate": null
  },
@@ -35,7 +35,18 @@
    "km": 70.0,
    "lifts": 27,
    "opens": "2026-11-21",
-   "pass_day_eur": 224.29,
+   "pass_day_eur": 223.8,
+   "pass_day_walkup": 223.8,
+   "pass_day_multi_eur": 120.31,
+   "pass_multi": {
+    "days": 4,
+    "price": 529.0,
+    "ccy": "USD",
+    "per_day": 132.25,
+    "estimated": false,
+    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
+    "src": "https://www.ikonpass.com/en/passes/session-pass"
+   },
    "pass_day_local": {
     "ccy": "USD",
     "holiday": 246.0,
@@ -44,8 +55,8 @@
    "pass_period": "holiday",
    "pass_note": "adult 1-day online advance purchase, dynamic pricing; resort's reported 2026-27 adult day-ticket range is roughly $103-246 depending on date; $246 used as the holiday-window representative, $135 as a mid-range regular midweek estimate; Ikon Pass ecosystem",
    "pass_src": "https://www.palisadestahoe.com/plan-your-visit/lift-tickets-season-pass",
-   "night_eur": 136.76,
-   "food_day_eur": 68.38,
+   "night_eur": 136.46,
+   "food_day_eur": 68.23,
    "stay_src": "estimate: Olympic Valley/Tahoe City lodging is mid-tier for this list, similar to Breckenridge/Steamboat for holiday-week doubles/condos; on-mountain lunch ~$20-30",
    "estimates": [
     "night_eur",
@@ -66,7 +77,7 @@
        "members": 51,
        "horizon_days": 13,
        "snowfall_p50_cm": 79,
-       "p50_cm": 185
+       "p50_cm": 180
       },
       "GFS": {
        "members": 31,
@@ -79,13 +90,15 @@
     }
    },
    "cost": {
-    "pass_eur": 1346,
-    "hotel_eur": 957,
-    "food_eur": 479,
-    "total_eur": 2782,
-    "party_total_eur": 2782,
-    "left_eur": -1782,
-    "need_eur": 1782,
+    "pass_eur": 722,
+    "hotel_eur": 955,
+    "food_eur": 478,
+    "total_eur": 2155,
+    "pass_basis": "advance 4-day pass",
+    "pass_walkup": 1343,
+    "party_total_eur": 2155,
+    "left_eur": -1155,
+    "need_eur": 1155,
     "fits": false
    },
    "tiers": {
@@ -94,109 +107,21 @@
     "pistes": "MID",
     "snow": "HIGH"
    },
-   "value_cm_per_eur": 0.76,
+   "value_cm_per_eur": 1.41,
    "pros": [
     "~170 cm at the start"
    ],
    "cons": [
-    "2,782 EUR per person",
-    "nights from 137 EUR per person",
-    "day pass 224 EUR"
+    "2,155 EUR per person",
+    "nights from 136 EUR per person",
+    "4-day pass 529 USD"
    ],
-   "score": 94.7,
+   "score": 94.0,
    "score_parts": {
-    "MONEY": 89,
+    "MONEY": 88,
     "SNOW": 100
    },
    "rank": 1
-  },
-  {
-   "slug": "snowbird",
-   "label": "Snowbird",
-   "country": "US",
-   "area": "Utah",
-   "lat": 40.57148,
-   "lon": -111.64099,
-   "top_m": 3340,
-   "base_m": 2365,
-   "km": 97.0,
-   "lifts": 14,
-   "opens": "2026-11-27",
-   "pass_day_eur": 205.14,
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 225.0,
-    "regular": 205.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult 1-day online advance purchase; Snowbird publishes a flatter weekday ($205) / weekend ($225) structure rather than steep holiday surge pricing, so the holiday-window figure here is the weekend rate and regular is the weekday rate - less dynamic variation than peer resorts in this set; Ikon Pass ecosystem",
-   "pass_src": "https://www.snowbird.com/tickets-passes/tickets/",
-   "night_eur": 127.64,
-   "food_day_eur": 63.82,
-   "stay_src": "estimate: Snowbird/Little Cottonwood Canyon lodging and Salt Lake City-area holiday-week rates are mid-tier for this list; on-mountain lunch ~$20-30",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 75,
-    "start": {
-     "cm": 105,
-     "p20": 90,
-     "p50": 105,
-     "p80": 135,
-     "p_ge50": 0.99,
-     "basis": "ensemble+climatology",
-     "normal_cm": 135,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 31,
-       "p50_cm": 130
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 32,
-       "snowfall_p50_cm": 58,
-       "p50_cm": 95
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 1231,
-    "hotel_eur": 894,
-    "food_eur": 447,
-    "total_eur": 2572,
-    "party_total_eur": 2572,
-    "left_eur": -1572,
-    "need_eur": 1572,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "HIGH",
-    "pistes": "HIGH",
-    "snow": "MID"
-   },
-   "value_cm_per_eur": 0.51,
-   "pros": [
-    "97 km of pistes",
-    "skiing up to 3340 m"
-   ],
-   "cons": [
-    "2,572 EUR per person",
-    "nights from 128 EUR per person",
-    "day pass 205 EUR"
-   ],
-   "score": 75.0,
-   "score_parts": {
-    "MONEY": 100,
-    "SNOW": 50
-   },
-   "rank": 2
   },
   {
    "slug": "mammoth_mountain",
@@ -210,7 +135,18 @@
    "km": 86.0,
    "lifts": 28,
    "opens": "2026-11-05",
-   "pass_day_eur": 245.26,
+   "pass_day_eur": 244.72,
+   "pass_day_walkup": 244.72,
+   "pass_day_multi_eur": 120.31,
+   "pass_multi": {
+    "days": 4,
+    "price": 529.0,
+    "ccy": "USD",
+    "per_day": 132.25,
+    "estimated": false,
+    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
+    "src": "https://www.ikonpass.com/en/passes/session-pass"
+   },
    "pass_day_local": {
     "ccy": "USD",
     "holiday": 269.0,
@@ -219,8 +155,8 @@
    "pass_period": "holiday",
    "pass_note": "adult 1-day online advance purchase, dynamic pricing; resort's own range runs from $89 (early/late season) up to $269 on holidays, with a published general weekday adult rate near $209; regular mid-January midweek estimated below that weekday baseline",
    "pass_src": "https://www.mammothmountain.com/plan-your-trip/tickets/winter-lift-tickets",
-   "night_eur": 127.64,
-   "food_day_eur": 59.26,
+   "night_eur": 127.37,
+   "food_day_eur": 59.13,
    "stay_src": "estimate: Mammoth Lakes lodging is cheaper than the Colorado/Utah/Wyoming resorts in this list - booking sites show winter rates commonly $150-300+/night per room over peak weeks (vs ~$150 summer); on-mountain lunch and town dining are moderate, $20-30",
    "estimates": [
     "night_eur",
@@ -240,8 +176,8 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 83,
-       "p50_cm": 125
+       "snowfall_p50_cm": 88,
+       "p50_cm": 130
       },
       "GFS": {
        "members": 31,
@@ -254,13 +190,15 @@
     }
    },
    "cost": {
-    "pass_eur": 1472,
-    "hotel_eur": 894,
-    "food_eur": 415,
-    "total_eur": 2781,
-    "party_total_eur": 2781,
-    "left_eur": -1781,
-    "need_eur": 1781,
+    "pass_eur": 722,
+    "hotel_eur": 892,
+    "food_eur": 414,
+    "total_eur": 2028,
+    "pass_basis": "advance 4-day pass",
+    "pass_walkup": 1468,
+    "party_total_eur": 2028,
+    "left_eur": -1028,
+    "need_eur": 1028,
     "fits": false
    },
    "tiers": {
@@ -269,20 +207,121 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.47,
+   "value_cm_per_eur": 0.96,
    "pros": [
     "86 km of pistes",
     "skiing up to 3360 m"
    ],
    "cons": [
-    "2,781 EUR per person",
-    "nights from 128 EUR per person",
-    "day pass 245 EUR"
+    "2,028 EUR per person",
+    "nights from 127 EUR per person",
+    "4-day pass 529 USD"
    ],
-   "score": 73.6,
+   "score": 76.0,
    "score_parts": {
-    "MONEY": 89,
+    "MONEY": 94,
     "SNOW": 58
+   },
+   "rank": 2
+  },
+  {
+   "slug": "snowbird",
+   "label": "Snowbird",
+   "country": "US",
+   "area": "Utah",
+   "lat": 40.57148,
+   "lon": -111.64099,
+   "top_m": 3340,
+   "base_m": 2365,
+   "km": 97.0,
+   "lifts": 14,
+   "opens": "2026-11-27",
+   "pass_day_eur": 204.69,
+   "pass_day_walkup": 204.69,
+   "pass_day_multi_eur": 120.31,
+   "pass_multi": {
+    "days": 4,
+    "price": 529.0,
+    "ccy": "USD",
+    "per_day": 132.25,
+    "estimated": false,
+    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
+    "src": "https://www.ikonpass.com/en/passes/session-pass"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 225.0,
+    "regular": 205.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day online advance purchase; Snowbird publishes a flatter weekday ($205) / weekend ($225) structure rather than steep holiday surge pricing, so the holiday-window figure here is the weekend rate and regular is the weekday rate - less dynamic variation than peer resorts in this set; Ikon Pass ecosystem",
+   "pass_src": "https://www.snowbird.com/tickets-passes/tickets/",
+   "night_eur": 127.37,
+   "food_day_eur": 63.68,
+   "stay_src": "estimate: Snowbird/Little Cottonwood Canyon lodging and Salt Lake City-area holiday-week rates are mid-tier for this list; on-mountain lunch ~$20-30",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 75,
+    "start": {
+     "cm": 105,
+     "p20": 90,
+     "p50": 105,
+     "p80": 135,
+     "p_ge50": 0.99,
+     "basis": "ensemble+climatology",
+     "normal_cm": 135,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 29,
+       "p50_cm": 130
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 32,
+       "snowfall_p50_cm": 58,
+       "p50_cm": 95
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 722,
+    "hotel_eur": 892,
+    "food_eur": 446,
+    "total_eur": 2060,
+    "pass_basis": "advance 4-day pass",
+    "pass_walkup": 1228,
+    "party_total_eur": 2060,
+    "left_eur": -1060,
+    "need_eur": 1060,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "HIGH",
+    "pistes": "HIGH",
+    "snow": "MID"
+   },
+   "value_cm_per_eur": 0.87,
+   "pros": [
+    "97 km of pistes",
+    "skiing up to 3340 m"
+   ],
+   "cons": [
+    "2,060 EUR per person",
+    "nights from 127 EUR per person",
+    "4-day pass 529 USD"
+   ],
+   "score": 71.4,
+   "score_parts": {
+    "MONEY": 93,
+    "SNOW": 50
    },
    "rank": 3
   },
@@ -298,7 +337,18 @@
    "km": 236.0,
    "lifts": 45,
    "opens": "2026-11-25",
-   "pass_day_eur": 202.41,
+   "pass_day_eur": 201.97,
+   "pass_day_walkup": 201.97,
+   "pass_day_multi_eur": 120.31,
+   "pass_multi": {
+    "days": 4,
+    "price": 529.0,
+    "ccy": "USD",
+    "per_day": 132.25,
+    "estimated": false,
+    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
+    "src": "https://www.ikonpass.com/en/passes/session-pass"
+   },
    "pass_day_local": {
     "ccy": "USD",
     "holiday": 222.0,
@@ -307,8 +357,8 @@
    "pass_period": "holiday",
    "pass_note": "adult 1-day online advance purchase, dynamic pricing; resort's reported 2026-27 day-ticket range is $98-222 depending on date, with published weekday/weekend baselines of $148/$200; $222 used as the holiday-window representative; Ikon Pass ecosystem",
    "pass_src": "https://www.bigskyresort.com/winter-tickets/lift-ticket",
-   "night_eur": 136.76,
-   "food_day_eur": 68.38,
+   "night_eur": 136.46,
+   "food_day_eur": 68.23,
    "stay_src": "estimate: Big Sky, Montana Mountain Village lodging is mid-to-upper tier given the remote/destination nature of the resort; on-mountain lunch ~$20-30",
    "estimates": [
     "night_eur",
@@ -328,7 +378,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 19,
+       "snowfall_p50_cm": 18,
        "p50_cm": 110
       },
       "GFS": {
@@ -342,13 +392,15 @@
     }
    },
    "cost": {
-    "pass_eur": 1214,
-    "hotel_eur": 957,
-    "food_eur": 479,
-    "total_eur": 2650,
-    "party_total_eur": 2650,
-    "left_eur": -1650,
-    "need_eur": 1650,
+    "pass_eur": 722,
+    "hotel_eur": 955,
+    "food_eur": 478,
+    "total_eur": 2155,
+    "pass_basis": "advance 4-day pass",
+    "pass_walkup": 1212,
+    "party_total_eur": 2155,
+    "left_eur": -1155,
+    "need_eur": 1155,
     "fits": false
    },
    "tiers": {
@@ -357,20 +409,20 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.42,
+   "value_cm_per_eur": 0.71,
    "pros": [
     "236 km of pistes",
     "skiing up to 3402 m",
     "45 lifts"
    ],
    "cons": [
-    "2,650 EUR per person",
-    "nights from 137 EUR per person",
+    "2,155 EUR per person",
+    "nights from 136 EUR per person",
     "~85 cm at the start"
    ],
-   "score": 65.3,
+   "score": 61.3,
    "score_parts": {
-    "MONEY": 96,
+    "MONEY": 88,
     "SNOW": 35
    },
    "rank": 4
@@ -387,7 +439,18 @@
    "km": 256.0,
    "lifts": 43,
    "opens": "2026-11-20",
-   "pass_day_eur": 263.49,
+   "pass_day_eur": 262.92,
+   "pass_day_walkup": 262.92,
+   "pass_day_multi_eur": 91.11,
+   "pass_multi": {
+    "days": 7,
+    "price": 701.0,
+    "ccy": "USD",
+    "per_day": 100.14,
+    "estimated": false,
+    "note": "Epic Day Pass 7-Day unrestricted tier (no blackout dates, holiday-valid), 2026-27 adult, advance online",
+    "src": "https://www.onthesnow.com/news/epic-pass-buyers-guide/"
+   },
    "pass_day_local": {
     "ccy": "USD",
     "holiday": 289.0,
@@ -396,8 +459,8 @@
    "pass_period": "holiday",
    "pass_note": "adult 1-day online advance purchase, dynamic pricing; December online range reported as $202-249 with a top peak-day ceiling of $369 (walk-up/peak online days per 2026-27 reporting) - $289 used as a representative holiday-window figure between those; Epic Pass ecosystem",
    "pass_src": "https://townlift.com/2026/09/park-city-deer-valley-among-the-countrys-priciest-ski-days-as-2026-27-tickets-climb-again/",
-   "night_eur": 145.88,
-   "food_day_eur": 72.94,
+   "night_eur": 145.56,
+   "food_day_eur": 72.78,
    "stay_src": "estimate: Park City lodging is comparable to Vail/Colorado high-tier resorts for holiday-week doubles/condos near Park City Mountain or Main Street; on-mountain lunch ~$25-35",
    "estimates": [
     "night_eur",
@@ -431,13 +494,15 @@
     }
    },
    "cost": {
-    "pass_eur": 1581,
-    "hotel_eur": 1021,
-    "food_eur": 511,
-    "total_eur": 3113,
-    "party_total_eur": 3113,
-    "left_eur": -2113,
-    "need_eur": 2113,
+    "pass_eur": 547,
+    "hotel_eur": 1019,
+    "food_eur": 509,
+    "total_eur": 2075,
+    "pass_basis": "advance 7-day pass",
+    "pass_walkup": 1578,
+    "party_total_eur": 2075,
+    "left_eur": -1075,
+    "need_eur": 1075,
     "fits": false
    },
    "tiers": {
@@ -446,20 +511,20 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.28,
+   "value_cm_per_eur": 0.82,
    "pros": [
     "256 km of pistes",
     "skiing up to 3041 m",
     "43 lifts"
    ],
    "cons": [
-    "3,113 EUR per person",
+    "2,075 EUR per person",
     "nights from 146 EUR per person",
     "~75 cm at the start"
    ],
-   "score": 49.8,
+   "score": 59.5,
    "score_parts": {
-    "MONEY": 73,
+    "MONEY": 92,
     "SNOW": 27
    },
    "rank": 5
@@ -476,7 +541,18 @@
    "km": 215.0,
    "lifts": 32,
    "opens": "2026-11-13",
-   "pass_day_eur": 236.14,
+   "pass_day_eur": 235.63,
+   "pass_day_walkup": 235.63,
+   "pass_day_multi_eur": 91.11,
+   "pass_multi": {
+    "days": 7,
+    "price": 701.0,
+    "ccy": "USD",
+    "per_day": 100.14,
+    "estimated": false,
+    "note": "Epic Day Pass 7-Day unrestricted tier (no blackout dates, holiday-valid), 2026-27 adult, advance online",
+    "src": "https://www.onthesnow.com/news/epic-pass-buyers-guide/"
+   },
    "pass_day_local": {
     "ccy": "USD",
     "holiday": 259.0,
@@ -485,8 +561,8 @@
    "pass_period": "holiday",
    "pass_note": "adult 1-day online advance purchase, dynamic pricing; official vail.com ticket page uses a JS calendar with no static price, so figures are from aggregator reporting of Vail Resorts 2026-27 pricing ($202-259 advance online range, up to $374 at walk-up window on peak days); Epic Pass ecosystem",
    "pass_src": "https://snowstash.com/usa/colorado/vail/lift-tickets",
-   "night_eur": 145.88,
-   "food_day_eur": 72.94,
+   "night_eur": 145.56,
+   "food_day_eur": 72.78,
    "stay_src": "estimate: based on booking.com/orbitz Vail hotel listings for Dec 13-20 2026 (Highline DoubleTree ~$176/room, Lodge at Vail ~$228/room, Arrabelle ~$397/room night; per-person-sharing taken as a fraction of mid-tier room) + typical $25-40 on-mountain lunch in Vail Village/Lionshead",
    "estimates": [
     "night_eur",
@@ -506,7 +582,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 18,
+       "snowfall_p50_cm": 17,
        "p50_cm": 75
       },
       "GFS": {
@@ -520,13 +596,15 @@
     }
    },
    "cost": {
-    "pass_eur": 1417,
-    "hotel_eur": 1021,
-    "food_eur": 511,
-    "total_eur": 2949,
-    "party_total_eur": 2949,
-    "left_eur": -1949,
-    "need_eur": 1949,
+    "pass_eur": 547,
+    "hotel_eur": 1019,
+    "food_eur": 509,
+    "total_eur": 2075,
+    "pass_basis": "advance 7-day pass",
+    "pass_walkup": 1414,
+    "party_total_eur": 2075,
+    "left_eur": -1075,
+    "need_eur": 1075,
     "fits": false
    },
    "tiers": {
@@ -535,23 +613,125 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.25,
+   "value_cm_per_eur": 0.66,
    "pros": [
     "215 km of pistes",
     "skiing up to 3526 m",
     "32 lifts"
    ],
    "cons": [
-    "2,949 EUR per person",
+    "2,075 EUR per person",
     "nights from 146 EUR per person",
     "~60 cm at the start"
    ],
-   "score": 48.2,
+   "score": 53.7,
    "score_parts": {
-    "MONEY": 81,
+    "MONEY": 92,
     "SNOW": 15
    },
    "rank": 6
+  },
+  {
+   "slug": "breckenridge_ski_resort",
+   "label": "Breckenridge",
+   "country": "US",
+   "area": "Colorado",
+   "lat": 39.47225,
+   "lon": -106.06571,
+   "top_m": 3913,
+   "base_m": 2918,
+   "km": 113.0,
+   "lifts": 35,
+   "opens": "2026-11-11",
+   "pass_day_eur": 266.56,
+   "pass_day_walkup": 266.56,
+   "pass_day_multi_eur": 91.11,
+   "pass_multi": {
+    "days": 7,
+    "price": 701.0,
+    "ccy": "USD",
+    "per_day": 100.14,
+    "estimated": false,
+    "note": "Epic Day Pass 7-Day unrestricted tier (no blackout dates, holiday-valid), 2026-27 adult, advance online",
+    "src": "https://www.onthesnow.com/news/epic-pass-buyers-guide/"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 293.0,
+    "regular": 199.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day online advance purchase, dynamic pricing; published weekend price $293 used as holiday-window representative, weekday price used as a conservative read for regular mid-January midweek (resort's own dynamic range runs roughly $185-332 adult/day); Epic Pass ecosystem",
+   "pass_src": "https://skiliftticketprices.com/breckenridge-lift-ticket-prices/",
+   "night_eur": 127.37,
+   "food_day_eur": 68.23,
+   "stay_src": "estimate: Breckenridge town lodging runs slightly below Vail for comparable holiday-week doubles/condos; on-mountain lunch ~$20-35",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 35,
+    "start": {
+     "cm": 45,
+     "p20": 40,
+     "p50": 45,
+     "p80": 70,
+     "p_ge50": 0.41,
+     "basis": "ensemble+climatology",
+     "normal_cm": 80,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 16,
+       "p50_cm": 65
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 32,
+       "snowfall_p50_cm": 17,
+       "p50_cm": 40
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 547,
+    "hotel_eur": 892,
+    "food_eur": 478,
+    "total_eur": 1917,
+    "pass_basis": "advance 7-day pass",
+    "pass_walkup": 1599,
+    "party_total_eur": 1917,
+    "left_eur": -917,
+    "need_eur": 917,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "HIGH",
+    "pistes": "HIGH",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.49,
+   "pros": [
+    "113 km of pistes",
+    "skiing up to 3913 m",
+    "35 lifts"
+   ],
+   "cons": [
+    "1,917 EUR per person",
+    "nights from 127 EUR per person",
+    "~45 cm at the start"
+   ],
+   "score": 51.9,
+   "score_parts": {
+    "MONEY": 100,
+    "SNOW": 4
+   },
+   "rank": 7
   },
   {
    "slug": "steamboat_ski_resort",
@@ -565,7 +745,18 @@
    "km": 118.0,
    "lifts": 24,
    "opens": "2026-11-27",
-   "pass_day_eur": 235.23,
+   "pass_day_eur": 234.72,
+   "pass_day_walkup": 234.72,
+   "pass_day_multi_eur": 120.31,
+   "pass_multi": {
+    "days": 4,
+    "price": 529.0,
+    "ccy": "USD",
+    "per_day": 132.25,
+    "estimated": false,
+    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
+    "src": "https://www.ikonpass.com/en/passes/session-pass"
+   },
    "pass_day_local": {
     "ccy": "USD",
     "holiday": 258.0,
@@ -574,8 +765,8 @@
    "pass_period": "holiday",
    "pass_note": "adult 1-day online advance purchase, dynamic pricing; resort's reported December online range is $138-258 (a window/walk-up price near $344 carries a ~25% online discount to $258 on peak days); $258 used as holiday-window representative, $162 as a regular mid-January midweek estimate within the published range; Ikon Pass ecosystem",
    "pass_src": "https://skiliftticketprices.com/steamboat-springs-lift-ticket-prices/",
-   "night_eur": 127.64,
-   "food_day_eur": 68.38,
+   "night_eur": 127.37,
+   "food_day_eur": 68.23,
    "stay_src": "estimate: Steamboat Springs lodging is comparable to Breckenridge for holiday-week doubles/condos; on-mountain lunch ~$20-30",
    "estimates": [
     "night_eur",
@@ -596,7 +787,7 @@
        "members": 51,
        "horizon_days": 13,
        "snowfall_p50_cm": 29,
-       "p50_cm": 65
+       "p50_cm": 60
       },
       "GFS": {
        "members": 31,
@@ -609,13 +800,15 @@
     }
    },
    "cost": {
-    "pass_eur": 1411,
-    "hotel_eur": 894,
-    "food_eur": 479,
-    "total_eur": 2784,
-    "party_total_eur": 2784,
-    "left_eur": -1784,
-    "need_eur": 1784,
+    "pass_eur": 722,
+    "hotel_eur": 892,
+    "food_eur": 478,
+    "total_eur": 2092,
+    "pass_basis": "advance 4-day pass",
+    "pass_walkup": 1408,
+    "party_total_eur": 2092,
+    "left_eur": -1092,
+    "need_eur": 1092,
     "fits": false
    },
    "tiers": {
@@ -624,109 +817,20 @@
     "pistes": "HIGH",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.17,
+   "value_cm_per_eur": 0.33,
    "pros": [
     "118 km of pistes",
     "skiing up to 3213 m"
    ],
    "cons": [
-    "2,784 EUR per person",
-    "nights from 128 EUR per person",
+    "2,092 EUR per person",
+    "nights from 127 EUR per person",
     "~40 cm at the start"
    ],
-   "score": 44.7,
+   "score": 45.6,
    "score_parts": {
-    "MONEY": 89,
+    "MONEY": 91,
     "SNOW": 0
-   },
-   "rank": 7
-  },
-  {
-   "slug": "breckenridge_ski_resort",
-   "label": "Breckenridge",
-   "country": "US",
-   "area": "Colorado",
-   "lat": 39.47225,
-   "lon": -106.06571,
-   "top_m": 3913,
-   "base_m": 2918,
-   "km": 113.0,
-   "lifts": 35,
-   "opens": "2026-11-11",
-   "pass_day_eur": 267.14,
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 293.0,
-    "regular": 199.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult 1-day online advance purchase, dynamic pricing; published weekend price $293 used as holiday-window representative, weekday price used as a conservative read for regular mid-January midweek (resort's own dynamic range runs roughly $185-332 adult/day); Epic Pass ecosystem",
-   "pass_src": "https://skiliftticketprices.com/breckenridge-lift-ticket-prices/",
-   "night_eur": 127.64,
-   "food_day_eur": 68.38,
-   "stay_src": "estimate: Breckenridge town lodging runs slightly below Vail for comparable holiday-week doubles/condos; on-mountain lunch ~$20-35",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 35,
-    "start": {
-     "cm": 45,
-     "p20": 40,
-     "p50": 45,
-     "p80": 70,
-     "p_ge50": 0.41,
-     "basis": "ensemble+climatology",
-     "normal_cm": 80,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 17,
-       "p50_cm": 65
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 32,
-       "snowfall_p50_cm": 17,
-       "p50_cm": 40
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 1603,
-    "hotel_eur": 894,
-    "food_eur": 479,
-    "total_eur": 2976,
-    "party_total_eur": 2976,
-    "left_eur": -1976,
-    "need_eur": 1976,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "HIGH",
-    "pistes": "HIGH",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.17,
-   "pros": [
-    "113 km of pistes",
-    "skiing up to 3913 m",
-    "35 lifts"
-   ],
-   "cons": [
-    "2,976 EUR per person",
-    "nights from 128 EUR per person",
-    "~45 cm at the start"
-   ],
-   "score": 41.7,
-   "score_parts": {
-    "MONEY": 80,
-    "SNOW": 4
    },
    "rank": 8
   },
@@ -742,7 +846,18 @@
    "km": 78.0,
    "lifts": 17,
    "opens": "2026-11-27",
-   "pass_day_eur": 263.49,
+   "pass_day_eur": 262.92,
+   "pass_day_walkup": 262.92,
+   "pass_day_multi_eur": 120.31,
+   "pass_multi": {
+    "days": 4,
+    "price": 529.0,
+    "ccy": "USD",
+    "per_day": 132.25,
+    "estimated": false,
+    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
+    "src": "https://www.ikonpass.com/en/passes/session-pass"
+   },
    "pass_day_local": {
     "ccy": "USD",
     "holiday": 289.0,
@@ -751,8 +866,8 @@
    "pass_period": "holiday",
    "pass_note": "adult 1-day online advance purchase; $289/day reported specifically for the Christmas Day-New Year's Day window, $225 is the published regular weekday rate; day tickets are sold online in limited date-based price tiers that rise as each tier sells out, so booking early matters more here than at most resorts",
    "pass_src": "https://www.powder.com/news/jackson-hole-lift-ticket-sale",
-   "night_eur": 200.58,
-   "food_day_eur": 82.06,
+   "night_eur": 200.15,
+   "food_day_eur": 81.88,
    "stay_src": "estimate: Teton Village/Jackson Hole lodging is expensive and skews luxury (Four Seasons ~$569-683/night, Gravity Haus ~$400-410/night, Hotel Terra ~$1,029/night per room); per-person-sharing figure reflects a mid-tier (Gravity Haus-level) double room over Christmas week; apres-ski dining is pricey",
    "estimates": [
     "night_eur",
@@ -786,13 +901,15 @@
     }
    },
    "cost": {
-    "pass_eur": 1581,
-    "hotel_eur": 1404,
-    "food_eur": 574,
-    "total_eur": 3559,
-    "party_total_eur": 3559,
-    "left_eur": -2559,
-    "need_eur": 2559,
+    "pass_eur": 722,
+    "hotel_eur": 1401,
+    "food_eur": 573,
+    "total_eur": 2696,
+    "pass_basis": "advance 4-day pass",
+    "pass_walkup": 1578,
+    "party_total_eur": 2696,
+    "left_eur": -1696,
+    "need_eur": 1696,
     "fits": false
    },
    "tiers": {
@@ -801,19 +918,19 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.25,
+   "value_cm_per_eur": 0.54,
    "pros": [
     "78 km of pistes",
     "skiing up to 3169 m"
    ],
    "cons": [
-    "3,559 EUR per person",
-    "nights from 201 EUR per person",
+    "2,696 EUR per person",
+    "nights from 200 EUR per person",
     "~65 cm at the start"
    ],
-   "score": 34.8,
+   "score": 39.9,
    "score_parts": {
-    "MONEY": 50,
+    "MONEY": 61,
     "SNOW": 19
    },
    "rank": 9
@@ -830,7 +947,18 @@
    "km": 120.0,
    "lifts": 19,
    "opens": "2026-11-26",
-   "pass_day_eur": 254.38,
+   "pass_day_eur": 253.82,
+   "pass_day_walkup": 253.82,
+   "pass_day_multi_eur": 145.41,
+   "pass_multi": {
+    "days": 6,
+    "price": 959.0,
+    "ccy": "USD",
+    "per_day": 159.83,
+    "estimated": false,
+    "note": "Flex Pass, select-6-days, no blackout dates, standard online tier (reported range $769-959 by purchase timing)",
+    "src": "https://www.aspensnowmass.com/visit/tickets-and-passes/2026-2027-season-passes/flex-pass"
+   },
    "pass_day_local": {
     "ccy": "USD",
     "holiday": 279.0,
@@ -839,8 +967,8 @@
    "pass_period": "holiday",
    "pass_note": "adult 1-day online advance purchase; $279 is Aspen Snowmass's published standard day-ticket price (dynamic pricing means exact day price varies); regular mid-January midweek estimated lower within the resort's advance-purchase discount range (4-day packages booked 30 days ahead start near $142/day); no Epic/Ikon pass access, Aspen sells its own pass",
    "pass_src": "https://www.aspensnowmass.com/visit/tickets-and-passes/lift-tickets",
-   "night_eur": 341.9,
-   "food_day_eur": 91.17,
+   "night_eur": 341.16,
+   "food_day_eur": 90.98,
    "stay_src": "estimate: Aspen is the priciest resort in this set - reporting puts Aspen's December hotel ADR near $1,324 and standard rooms at $600-1,200/night over Christmas week (travelandtourworld.com, foresttravel.com); per-person-sharing taken as roughly half a mid-range Christmas-week room rate; dining in Aspen is upscale, $80-130/day for 3 meals",
    "estimates": [
     "night_eur",
@@ -860,7 +988,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 29,
+       "snowfall_p50_cm": 27,
        "p50_cm": 105
       },
       "GFS": {
@@ -874,13 +1002,15 @@
     }
    },
    "cost": {
-    "pass_eur": 1526,
-    "hotel_eur": 2393,
-    "food_eur": 638,
-    "total_eur": 4557,
-    "party_total_eur": 4557,
-    "left_eur": -3557,
-    "need_eur": 3557,
+    "pass_eur": 872,
+    "hotel_eur": 2388,
+    "food_eur": 637,
+    "total_eur": 3897,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 1523,
+    "party_total_eur": 3897,
+    "left_eur": -2897,
+    "need_eur": 2897,
     "fits": false
    },
    "tiers": {
@@ -889,14 +1019,14 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.33,
+   "value_cm_per_eur": 0.58,
    "pros": [
     "120 km of pistes",
     "skiing up to 3815 m"
    ],
    "cons": [
-    "4,557 EUR per person",
-    "nights from 342 EUR per person",
+    "3,897 EUR per person",
+    "nights from 341 EUR per person",
     "~85 cm at the start"
    ],
    "score": 17.3,
@@ -908,15 +1038,15 @@
   }
  ],
  "tiers": {
-  "pass": "LOW < 45 EUR <= MID <= 65 EUR < HIGH (adult day pass, EUR)",
+  "pass": "LOW < 45 EUR <= MID <= 65 EUR < HIGH (per ski day: advance multi-day pass rate when the trip has >= 3 ski days, else the adult day ticket, EUR)",
   "hotel": "LOW < 60 EUR <= MID <= 120 EUR < HIGH (per person per night sharing, estimate)",
   "pistes": "size + altitude: >=120 km = 2 pts, >=50 km = 1, top >=2900 m = +1; HIGH >=2, MID 1, LOW 0",
   "snow": "projected depth at the start date (P50): HIGH >=120 cm, MID >=60 cm, LOW below"
  },
- "explainer": "Snow at the start date = snow now at the resort + 40 % of the ensemble members' snowfall (ECMWF and GFS ensembles to their horizon) + the change the past winters show from that horizon to the date. Likely range = 20th-80th percentile of the scenarios. Prices: day pass from the resort shop; night and food are estimates. Multi-day passes and early bookings are often cheaper than the figures here.",
+ "explainer": "Snow at the start date = snow now at the resort + 40 % of the ensemble members' snowfall (ECMWF and GFS ensembles to their horizon) + the change the past winters show from that horizon to the date. Likely range = 20th-80th percentile of the scenarios. Prices: lift pass at the advance multi-day pass rate for trips of 3 ski days or more (walk-up day tickets cost more, shown as pass_walkup); night and food are estimates.",
  "notes": [
   "night_eur and food_day_eur are estimates per person (sharing a room / apartment)",
-  "pass = ski days x adult day pass; multi-day passes are usually cheaper",
+  "pass = advance multi-day pass rate x ski days for 3+ ski days (cost.pass_basis), else walk-up day tickets; cost.pass_walkup = what day tickets would cost",
   "budget_eur is the whole party's budget; left_eur compares it with party_total_eur"
  ],
  "static": true

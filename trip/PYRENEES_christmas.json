@@ -10,7 +10,7 @@
  "budget_eur": 1000.0,
  "currency": "EUR",
  "fx": {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "source": "frankfurter.app",
   "rate": null
  },
@@ -25,7 +25,7 @@
  "resorts": [
   {
    "slug": "grand_tourmalet",
-   "label": "Grand Tourmalet La Mongie-Bareges",
+   "label": "Grand Tourmalet",
    "country": "FR",
    "area": "Hautes-Pyrenees",
    "lat": 42.90394,
@@ -36,6 +36,17 @@
    "lifts": 29,
    "opens": "2026-12-05",
    "pass_day_eur": 58.8,
+   "pass_day_walkup": 58.8,
+   "pass_day_multi_eur": 49.0,
+   "pass_multi": {
+    "days": 6,
+    "price": 294.0,
+    "ccy": "EUR",
+    "per_day": 49.0,
+    "estimated": false,
+    "note": "6-day adult public rate, official N'PY, flat online=window; No Souci card gives 280.80",
+    "src": "https://www.n-py.com/fr/grand-tourmalet/forfaits-ski"
+   },
    "pass_day_local": {
     "ccy": "EUR",
     "holiday": 58.8,
@@ -54,10 +65,10 @@
    "snow": {
     "now_cm": 5,
     "start": {
-     "cm": 15,
+     "cm": 20,
      "p20": 5,
-     "p50": 15,
-     "p80": 40,
+     "p50": 20,
+     "p80": 45,
      "p_ge50": 0.16,
      "basis": "ensemble+climatology",
      "normal_cm": 30,
@@ -65,7 +76,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 43,
+       "snowfall_p50_cm": 47,
        "p50_cm": 35
       },
       "GFS": {
@@ -79,12 +90,14 @@
     }
    },
    "cost": {
-    "pass_eur": 353,
+    "pass_eur": 294,
     "hotel_eur": 350,
     "food_eur": 231,
-    "total_eur": 934,
-    "party_total_eur": 934,
-    "left_eur": 66,
+    "total_eur": 875,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 353,
+    "party_total_eur": 875,
+    "left_eur": 125,
     "need_eur": 0,
     "fits": true
    },
@@ -94,16 +107,16 @@
     "pistes": "MID",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.26,
+   "value_cm_per_eur": 0.41,
    "pros": [
     "cheap places to stay"
    ],
    "cons": [
-    "~15 cm at the start"
+    "~20 cm at the start"
    ],
-   "score": 94.0,
+   "score": 95.0,
    "score_parts": {
-    "MONEY": 88,
+    "MONEY": 90,
     "SNOW": 100
    },
    "rank": 1
@@ -121,6 +134,17 @@
    "lifts": 27,
    "opens": "2026-12-05",
    "pass_day_eur": 59.0,
+   "pass_day_walkup": 59.0,
+   "pass_day_multi_eur": 47.5,
+   "pass_multi": {
+    "days": 6,
+    "price": 285.0,
+    "ccy": "EUR",
+    "per_day": 47.5,
+    "estimated": false,
+    "note": "6-day adult Saison tariff, official Altiservice PDF, season covers Christmas/NY",
+    "src": "https://www.altiservice.com/sites/default/files/2026-09/ALT_2026_Saint-Lary_Hiver_Fiche-Tarifs_paysage_WEB.pdf"
+   },
    "pass_day_local": {
     "ccy": "EUR",
     "holiday": 59.0,
@@ -150,7 +174,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 24,
+       "snowfall_p50_cm": 28,
        "p50_cm": 30
       },
       "GFS": {
@@ -164,12 +188,14 @@
     }
    },
    "cost": {
-    "pass_eur": 354,
+    "pass_eur": 285,
     "hotel_eur": 385,
     "food_eur": 245,
-    "total_eur": 984,
-    "party_total_eur": 984,
-    "left_eur": 16,
+    "total_eur": 915,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 354,
+    "party_total_eur": 915,
+    "left_eur": 85,
     "need_eur": 0,
     "fits": true
    },
@@ -179,19 +205,318 @@
     "pistes": "MID",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.25,
+   "value_cm_per_eur": 0.32,
    "pros": [
     "cheap places to stay"
    ],
    "cons": [
     "~15 cm at the start"
    ],
-   "score": 90.0,
+   "score": 74.9,
    "score_parts": {
-    "MONEY": 80,
-    "SNOW": 100
+    "MONEY": 83,
+    "SNOW": 67
    },
    "rank": 2
+  },
+  {
+   "slug": "ax_3_domaines",
+   "label": "Ax 3 Domaines",
+   "country": "FR",
+   "area": "Ariege",
+   "lat": 42.67662,
+   "lon": 1.80243,
+   "top_m": 2345,
+   "base_m": 1376,
+   "km": 51.0,
+   "lifts": 24,
+   "opens": "2026-12-05",
+   "pass_day_eur": 50.0,
+   "pass_day_walkup": 50.0,
+   "pass_day_multi_eur": 42.5,
+   "pass_multi": {
+    "days": 6,
+    "price": 255.0,
+    "ccy": "EUR",
+    "per_day": 42.5,
+    "estimated": true,
+    "note": "estimate: 0.85 x day pass x 6; ax.ski unreachable (network block), only unverifiable aggregator figure (185 EUR, labelled indicative) found",
+    "src": "https://www.ax.ski/fr/forfait-journee-ax"
+   },
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 50.0,
+    "regular": 47.5
+   },
+   "pass_period": "holiday",
+   "pass_note": "47.50 EUR is the current published public day rate (site notes this may be a reduced rate during partial opening); modest holiday uplift estimated, no official split found",
+   "pass_src": "https://www.ax.ski/fr/forfait-journee-ax",
+   "night_eur": 48.0,
+   "food_day_eur": 32.0,
+   "stay_src": "estimate: Ax-les-Thermes is a budget Pyrenees spa town, among the cheapest lodging/dining options in the French Pyrenees",
+   "estimates": [
+    "night_eur",
+    "food_day_eur",
+    "pass_multi"
+   ],
+   "snow": {
+    "now_cm": 0,
+    "start": {
+     "cm": 10,
+     "p20": 5,
+     "p50": 10,
+     "p80": 20,
+     "p_ge50": 0.01,
+     "basis": "ensemble+climatology",
+     "normal_cm": 25,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 14,
+       "p50_cm": 15
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 17,
+       "p50_cm": 5
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 255,
+    "hotel_eur": 336,
+    "food_eur": 224,
+    "total_eur": 815,
+    "pass_basis": "advance 6-day pass (estimate)",
+    "pass_walkup": 300,
+    "party_total_eur": 815,
+    "left_eur": 185,
+    "need_eur": 0,
+    "fits": true
+   },
+   "tiers": {
+    "pass": "LOW",
+    "hotel": "LOW",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.24,
+   "pros": [
+    "6-day pass 255 EUR",
+    "cheap places to stay"
+   ],
+   "cons": [
+    "~10 cm at the start"
+   ],
+   "score": 66.7,
+   "score_parts": {
+    "MONEY": 100,
+    "SNOW": 33
+   },
+   "rank": 3
+  },
+  {
+   "slug": "font_romeu_pyrenees_2000_font_romeu",
+   "label": "Font-Romeu Pyrénées 2000",
+   "country": "FR",
+   "area": "Pyrenees-Orientales",
+   "lat": 42.53068,
+   "lon": 2.03614,
+   "top_m": 2215,
+   "base_m": 1716,
+   "km": 36.0,
+   "lifts": 25,
+   "opens": "2026-12-04",
+   "pass_day_eur": 52.0,
+   "pass_day_walkup": 52.0,
+   "pass_day_multi_eur": 42.67,
+   "pass_multi": {
+    "days": 6,
+    "price": 256.0,
+    "ccy": "EUR",
+    "per_day": 42.67,
+    "estimated": false,
+    "note": "6-day adult Saison tariff, official Altiservice PDF, season covers Christmas/NY",
+    "src": "https://www.altiservice.com/sites/default/files/2026-10/ALT_2026_FRP2K_Hiver_FICHE-TARIFS_FR_WEB-1.pdf"
+   },
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 52.0,
+    "regular": 49.5
+   },
+   "pass_period": "holiday",
+   "pass_note": "49.50 EUR is the published public day rate; one aggregator listed a lower 44.60 EUR school-holiday figure that looks anomalous (lower than regular) and was treated as an outlier - holiday price here is a conservative small-uplift estimate",
+   "pass_src": "https://skiradar.fr/stations/font-romeu/forfaits",
+   "night_eur": 48.0,
+   "food_day_eur": 32.0,
+   "stay_src": "estimate: similar budget tier to other small Pyrenees-Orientales resorts",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 0,
+    "start": {
+     "cm": 10,
+     "p20": 0,
+     "p50": 10,
+     "p80": 15,
+     "p_ge50": 0.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 20,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 5,
+       "p50_cm": 10
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 17,
+       "p50_cm": 5
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 256,
+    "hotel_eur": 336,
+    "food_eur": 224,
+    "total_eur": 816,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 312,
+    "party_total_eur": 816,
+    "left_eur": 184,
+    "need_eur": 0,
+    "fits": true
+   },
+   "tiers": {
+    "pass": "LOW",
+    "hotel": "LOW",
+    "pistes": "LOW",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.23,
+   "pros": [
+    "6-day pass 256 EUR",
+    "cheap places to stay"
+   ],
+   "cons": [
+    "only 36 km of pistes",
+    "~10 cm at the start"
+   ],
+   "score": 66.6,
+   "score_parts": {
+    "MONEY": 100,
+    "SNOW": 33
+   },
+   "rank": 4
+  },
+  {
+   "slug": "formigal",
+   "label": "Formigal-Panticosa",
+   "country": "ES",
+   "area": "Aragon",
+   "lat": 42.77445,
+   "lon": -0.40679,
+   "top_m": 2264,
+   "base_m": 1502,
+   "km": 104.0,
+   "lifts": 25,
+   "opens": "2026-11-27",
+   "pass_day_eur": 60.0,
+   "pass_day_walkup": 60.0,
+   "pass_day_multi_eur": 51.67,
+   "pass_multi": {
+    "days": 6,
+    "price": 310.0,
+    "ccy": "EUR",
+    "per_day": 51.67,
+    "estimated": false,
+    "note": "6-day adult pass via aggregator, official Aramon JS booking widget not scrapeable, moderate confidence",
+    "src": "https://www.caranvasports.com/products/formigal-pass-2026-2027-season"
+   },
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 61.0,
+    "regular": 55.0
+   },
+   "pass_period": "mixed",
+   "pass_note": "2025-26 confirmed rates carried forward as 2026-27 estimate (official 26-27 tariff not yet published); 61 EUR ticket window, ~55 EUR online",
+   "pass_src": "https://www.hoyaragon.es/aragon/cuanto-vale-esquiar-formigal-asi-son-tarifas-forfait-formigal-panticosa-temporada/20251211201500118571.html",
+   "night_eur": 70.0,
+   "food_day_eur": 40.0,
+   "stay_src": "estimate: Formigal/Sallent de Gallego 3-star doubles ~110-150 EUR in high season; menu del dia ~16-20 EUR, slope lunch ~20 EUR",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 5,
+    "start": {
+     "cm": 15,
+     "p20": 5,
+     "p50": 15,
+     "p80": 35,
+     "p_ge50": 0.13,
+     "basis": "ensemble+climatology",
+     "normal_cm": 35,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 25,
+       "p50_cm": 25
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 15,
+       "p50_cm": 10
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 310,
+    "hotel_eur": 490,
+    "food_eur": 280,
+    "total_eur": 1080,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 360,
+    "party_total_eur": 1080,
+    "left_eur": -80,
+    "need_eur": 80,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.29,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,080 EUR per person",
+    "~15 cm at the start"
+   ],
+   "score": 61.1,
+   "score_parts": {
+    "MONEY": 56,
+    "SNOW": 67
+   },
+   "rank": 5
   },
   {
    "slug": "pal_arinsal",
@@ -206,6 +531,17 @@
    "lifts": 31,
    "opens": "2026-12-05",
    "pass_day_eur": 54.17,
+   "pass_day_walkup": 54.17,
+   "pass_day_multi_eur": 50.0,
+   "pass_multi": {
+    "days": 6,
+    "price": 300.0,
+    "ccy": "EUR",
+    "per_day": 50.0,
+    "estimated": false,
+    "note": "Nord Pass 6-day adult, valid Pal Arinsal+Ordino Arcalis (official Vallnord)",
+    "src": "https://www.palarinsal.com/es/forfait/temporada/nord-pass"
+   },
    "pass_day_local": {
     "ccy": "EUR",
     "holiday": 55.0,
@@ -249,13 +585,15 @@
     }
    },
    "cost": {
-    "pass_eur": 325,
+    "pass_eur": 300,
     "hotel_eur": 525,
     "food_eur": 280,
-    "total_eur": 1130,
-    "party_total_eur": 1130,
-    "left_eur": -130,
-    "need_eur": 130,
+    "total_eur": 1105,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 325,
+    "party_total_eur": 1105,
+    "left_eur": -105,
+    "need_eur": 105,
     "fits": false
    },
    "tiers": {
@@ -264,276 +602,19 @@
     "pistes": "LOW",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.28,
+   "value_cm_per_eur": 0.3,
    "pros": [
     "31 lifts"
    ],
    "cons": [
-    "1,130 EUR per person",
+    "1,105 EUR per person",
     "only 39 km of pistes",
     "~15 cm at the start"
    ],
-   "score": 78.2,
+   "score": 59.0,
    "score_parts": {
-    "MONEY": 56,
-    "SNOW": 100
-   },
-   "rank": 3
-  },
-  {
-   "slug": "formigal",
-   "label": "Formigal-Panticosa",
-   "country": "ES",
-   "area": "Aragon",
-   "lat": 42.77445,
-   "lon": -0.40679,
-   "top_m": 2264,
-   "base_m": 1502,
-   "km": 104.0,
-   "lifts": 25,
-   "opens": "2026-11-27",
-   "pass_day_eur": 60.0,
-   "pass_day_local": {
-    "ccy": "EUR",
-    "holiday": 61.0,
-    "regular": 55.0
-   },
-   "pass_period": "mixed",
-   "pass_note": "2025-26 confirmed rates carried forward as 2026-27 estimate (official 26-27 tariff not yet published); 61 EUR ticket window, ~55 EUR online",
-   "pass_src": "https://www.hoyaragon.es/aragon/cuanto-vale-esquiar-formigal-asi-son-tarifas-forfait-formigal-panticosa-temporada/20251211201500118571.html",
-   "night_eur": 70.0,
-   "food_day_eur": 40.0,
-   "stay_src": "estimate: Formigal/Sallent de Gallego 3-star doubles ~110-150 EUR in high season; menu del dia ~16-20 EUR, slope lunch ~20 EUR",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 5,
-    "start": {
-     "cm": 15,
-     "p20": 5,
-     "p50": 15,
-     "p80": 35,
-     "p_ge50": 0.13,
-     "basis": "ensemble+climatology",
-     "normal_cm": 35,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 24,
-       "p50_cm": 25
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 15,
-       "p50_cm": 10
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 360,
-    "hotel_eur": 490,
-    "food_eur": 280,
-    "total_eur": 1130,
-    "party_total_eur": 1130,
-    "left_eur": -130,
-    "need_eur": 130,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "MID",
-    "hotel": "MID",
-    "pistes": "MID",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.25,
-   "pros": [
-    "solid all-rounder"
-   ],
-   "cons": [
-    "1,130 EUR per person",
-    "~15 cm at the start"
-   ],
-   "score": 78.2,
-   "score_parts": {
-    "MONEY": 56,
-    "SNOW": 100
-   },
-   "rank": 4
-  },
-  {
-   "slug": "ax_3_domaines",
-   "label": "Ax 3 Domaines",
-   "country": "FR",
-   "area": "Ariege",
-   "lat": 42.67662,
-   "lon": 1.80243,
-   "top_m": 2345,
-   "base_m": 1376,
-   "km": 51.0,
-   "lifts": 24,
-   "opens": "2026-12-05",
-   "pass_day_eur": 50.0,
-   "pass_day_local": {
-    "ccy": "EUR",
-    "holiday": 50.0,
-    "regular": 47.5
-   },
-   "pass_period": "holiday",
-   "pass_note": "47.50 EUR is the current published public day rate (site notes this may be a reduced rate during partial opening); modest holiday uplift estimated, no official split found",
-   "pass_src": "https://www.ax.ski/fr/forfait-journee-ax",
-   "night_eur": 48.0,
-   "food_day_eur": 32.0,
-   "stay_src": "estimate: Ax-les-Thermes is a budget Pyrenees spa town, among the cheapest lodging/dining options in the French Pyrenees",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 0,
-    "start": {
-     "cm": 10,
-     "p20": 5,
-     "p50": 10,
-     "p80": 20,
-     "p_ge50": 0.01,
-     "basis": "ensemble+climatology",
-     "normal_cm": 25,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 13,
-       "p50_cm": 15
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 17,
-       "p50_cm": 5
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 300,
-    "hotel_eur": 336,
-    "food_eur": 224,
-    "total_eur": 860,
-    "party_total_eur": 860,
-    "left_eur": 140,
-    "need_eur": 0,
-    "fits": true
-   },
-   "tiers": {
-    "pass": "MID",
-    "hotel": "LOW",
-    "pistes": "MID",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.2,
-   "pros": [
-    "cheap places to stay"
-   ],
-   "cons": [
-    "~10 cm at the start"
-   ],
-   "score": 75.0,
-   "score_parts": {
-    "MONEY": 100,
-    "SNOW": 50
-   },
-   "rank": 5
-  },
-  {
-   "slug": "font_romeu_pyrenees_2000_font_romeu",
-   "label": "Font-Romeu Pyrenees 2000",
-   "country": "FR",
-   "area": "Pyrenees-Orientales",
-   "lat": 42.53068,
-   "lon": 2.03614,
-   "top_m": 2215,
-   "base_m": 1716,
-   "km": 36.0,
-   "lifts": 25,
-   "opens": "2026-12-04",
-   "pass_day_eur": 52.0,
-   "pass_day_local": {
-    "ccy": "EUR",
-    "holiday": 52.0,
-    "regular": 49.5
-   },
-   "pass_period": "holiday",
-   "pass_note": "49.50 EUR is the published public day rate; one aggregator listed a lower 44.60 EUR school-holiday figure that looks anomalous (lower than regular) and was treated as an outlier - holiday price here is a conservative small-uplift estimate",
-   "pass_src": "https://skiradar.fr/stations/font-romeu/forfaits",
-   "night_eur": 48.0,
-   "food_day_eur": 32.0,
-   "stay_src": "estimate: similar budget tier to other small Pyrenees-Orientales resorts",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 0,
-    "start": {
-     "cm": 10,
-     "p20": 0,
-     "p50": 10,
-     "p80": 15,
-     "p_ge50": 0.0,
-     "basis": "ensemble+climatology",
-     "normal_cm": 20,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 3,
-       "p50_cm": 10
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 17,
-       "p50_cm": 5
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 312,
-    "hotel_eur": 336,
-    "food_eur": 224,
-    "total_eur": 872,
-    "party_total_eur": 872,
-    "left_eur": 128,
-    "need_eur": 0,
-    "fits": true
-   },
-   "tiers": {
-    "pass": "MID",
-    "hotel": "LOW",
-    "pistes": "LOW",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.19,
-   "pros": [
-    "cheap places to stay"
-   ],
-   "cons": [
-    "only 36 km of pistes",
-    "~10 cm at the start"
-   ],
-   "score": 74.0,
-   "score_parts": {
-    "MONEY": 98,
-    "SNOW": 50
+    "MONEY": 51,
+    "SNOW": 67
    },
    "rank": 6
   },
@@ -550,6 +631,17 @@
    "lifts": 22,
    "opens": "2026-11-27",
    "pass_day_eur": 60.1,
+   "pass_day_walkup": 60.1,
+   "pass_day_multi_eur": 53.33,
+   "pass_multi": {
+    "days": 6,
+    "price": 320.0,
+    "ccy": "EUR",
+    "per_day": 53.33,
+    "estimated": false,
+    "note": "6-day adult pass via aggregator; one source says 2026-27 rate not yet officially published, provisional",
+    "src": "https://www.caranvasports.com"
+   },
    "pass_day_local": {
     "ccy": "EUR",
     "holiday": 61.0,
@@ -572,14 +664,14 @@
      "p20": 5,
      "p50": 10,
      "p80": 25,
-     "p_ge50": 0.04,
+     "p_ge50": 0.05,
      "basis": "ensemble+climatology",
      "normal_cm": 25,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 6,
+       "snowfall_p50_cm": 7,
        "p50_cm": 20
       },
       "GFS": {
@@ -593,13 +685,15 @@
     }
    },
    "cost": {
-    "pass_eur": 361,
+    "pass_eur": 320,
     "hotel_eur": 455,
     "food_eur": 266,
-    "total_eur": 1082,
-    "party_total_eur": 1082,
-    "left_eur": -82,
-    "need_eur": 82,
+    "total_eur": 1041,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 361,
+    "party_total_eur": 1041,
+    "left_eur": -41,
+    "need_eur": 41,
     "fits": false
    },
    "tiers": {
@@ -608,196 +702,20 @@
     "pistes": "MID",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.17,
+   "value_cm_per_eur": 0.19,
    "pros": [
     "solid all-rounder"
    ],
    "cons": [
-    "1,082 EUR per person",
+    "1,041 EUR per person",
     "~10 cm at the start"
    ],
-   "score": 57.1,
+   "score": 47.7,
    "score_parts": {
-    "MONEY": 64,
-    "SNOW": 50
+    "MONEY": 62,
+    "SNOW": 33
    },
    "rank": 7
-  },
-  {
-   "slug": "baqueira",
-   "label": "Baqueira Beret",
-   "country": "ES",
-   "area": "Val d'Aran",
-   "lat": 42.70488,
-   "lon": 0.96644,
-   "top_m": 2600,
-   "base_m": 1504,
-   "km": 154.0,
-   "lifts": 36,
-   "opens": "2026-11-28",
-   "pass_day_eur": 70.0,
-   "pass_day_local": {
-    "ccy": "EUR",
-    "holiday": 70.0,
-    "regular": 70.0
-   },
-   "pass_period": "mixed",
-   "pass_note": "flat daily rate all season on the BaqueiraPASS online card (no demand pricing); ticket-window walk-up price is 74 EUR",
-   "pass_src": "https://baqueira.net/blog/baqueira-lift-pass",
-   "night_eur": 100.0,
-   "food_day_eur": 50.0,
-   "stay_src": "estimate: 3-4 star doubles ~170-280 EUR/night over Christmas on booking sites (Eurostars La Pleta ~138 EUR pp, AC Baqueira ~170 EUR pp); slope lunch + dinner ~45-55 EUR pp",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 0,
-    "start": {
-     "cm": 15,
-     "p20": 5,
-     "p50": 15,
-     "p80": 30,
-     "p_ge50": 0.06,
-     "basis": "ensemble+climatology",
-     "normal_cm": 30,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 25,
-       "p50_cm": 25
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 17,
-       "p50_cm": 10
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 420,
-    "hotel_eur": 700,
-    "food_eur": 350,
-    "total_eur": 1470,
-    "party_total_eur": 1470,
-    "left_eur": -470,
-    "need_eur": 470,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "MID",
-    "pistes": "HIGH",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.21,
-   "pros": [
-    "154 km of pistes",
-    "36 lifts"
-   ],
-   "cons": [
-    "1,470 EUR per person",
-    "~15 cm at the start",
-    "day pass 70 EUR"
-   ],
-   "score": 50.7,
-   "score_parts": {
-    "MONEY": 1,
-    "SNOW": 100
-   },
-   "rank": 8
-  },
-  {
-   "slug": "grandvalira",
-   "label": "Grandvalira",
-   "country": "AD",
-   "area": "Andorra",
-   "lat": 42.54956,
-   "lon": 1.66927,
-   "top_m": 2619,
-   "base_m": 1674,
-   "km": 136.0,
-   "lifts": 53,
-   "opens": "2026-12-04",
-   "pass_day_eur": 77.33,
-   "pass_day_local": {
-    "ccy": "EUR",
-    "holiday": 79.0,
-    "regular": 69.0
-   },
-   "pass_period": "mixed",
-   "pass_note": "dynamic pricing; 69 EUR is the published base online adult day rate, Christmas/New Year days run higher - estimate, check grandvalira.com closer to date",
-   "pass_src": "https://www.caranvasports.com/blogs/esqui/forfait-andorra-2026-27-grandvalira-pal-arinsal-ordino-arcalis",
-   "night_eur": 100.0,
-   "food_day_eur": 45.0,
-   "stay_src": "estimate: Grandvalira-area hotels average ~212 USD/night per room on booking.com (~106 EUR pp double), higher at Christmas; Andorra sit-down meals ~15-25 EUR",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 0,
-    "start": {
-     "cm": 15,
-     "p20": 5,
-     "p50": 15,
-     "p80": 30,
-     "p_ge50": 0.05,
-     "basis": "ensemble+climatology",
-     "normal_cm": 45,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 13,
-       "p50_cm": 25
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 20,
-       "p50_cm": 10
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 464,
-    "hotel_eur": 700,
-    "food_eur": 315,
-    "total_eur": 1479,
-    "party_total_eur": 1479,
-    "left_eur": -479,
-    "need_eur": 479,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "MID",
-    "pistes": "HIGH",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.19,
-   "pros": [
-    "136 km of pistes",
-    "53 lifts"
-   ],
-   "cons": [
-    "1,479 EUR per person",
-    "~15 cm at the start",
-    "day pass 77 EUR"
-   ],
-   "score": 50.0,
-   "score_parts": {
-    "MONEY": 0,
-    "SNOW": 100
-   },
-   "rank": 9
   },
   {
    "slug": "peyragudes",
@@ -812,6 +730,17 @@
    "lifts": 23,
    "opens": "2026-12-05",
    "pass_day_eur": 55.0,
+   "pass_day_walkup": 55.0,
+   "pass_day_multi_eur": 46.0,
+   "pass_multi": {
+    "days": 6,
+    "price": 276.0,
+    "ccy": "EUR",
+    "per_day": 46.0,
+    "estimated": false,
+    "note": "6-day adult public rate, official N'PY, flat online=window",
+    "src": "https://www.n-py.com/fr/peyragudes/forfaits-ski"
+   },
    "pass_day_local": {
     "ccy": "EUR",
     "holiday": 55.0,
@@ -841,7 +770,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 12,
+       "snowfall_p50_cm": 14,
        "p50_cm": 15
       },
       "GFS": {
@@ -855,12 +784,14 @@
     }
    },
    "cost": {
-    "pass_eur": 330,
+    "pass_eur": 276,
     "hotel_eur": 385,
     "food_eur": 245,
-    "total_eur": 960,
-    "party_total_eur": 960,
-    "left_eur": 40,
+    "total_eur": 906,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 330,
+    "party_total_eur": 906,
+    "left_eur": 94,
     "need_eur": 0,
     "fits": true
    },
@@ -870,7 +801,7 @@
     "pistes": "LOW",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.09,
+   "value_cm_per_eur": 0.11,
    "pros": [
     "cheap places to stay"
    ],
@@ -878,24 +809,225 @@
     "only 44 km of pistes",
     "~5 cm at the start"
    ],
-   "score": 41.9,
+   "score": 42.4,
    "score_parts": {
-    "MONEY": 84,
+    "MONEY": 85,
     "SNOW": 0
+   },
+   "rank": 8
+  },
+  {
+   "slug": "baqueira",
+   "label": "Baqueira Beret",
+   "country": "ES",
+   "area": "Val d'Aran",
+   "lat": 42.70488,
+   "lon": 0.96644,
+   "top_m": 2600,
+   "base_m": 1504,
+   "km": 154.0,
+   "lifts": 36,
+   "opens": "2026-11-28",
+   "pass_day_eur": 70.0,
+   "pass_day_walkup": 70.0,
+   "pass_day_multi_eur": 59.1,
+   "pass_multi": {
+    "days": 5,
+    "price": 295.5,
+    "ccy": "EUR",
+    "per_day": 59.1,
+    "estimated": false,
+    "note": "closest product is 5-day BaqueiraPASS (no 6-day sold); 7-day BaqueiraPASS is 367.50 EUR",
+    "src": "https://baqueira.net/blog/baqueira-lift-pass"
+   },
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 70.0,
+    "regular": 70.0
+   },
+   "pass_period": "mixed",
+   "pass_note": "flat daily rate all season on the BaqueiraPASS online card (no demand pricing); ticket-window walk-up price is 74 EUR",
+   "pass_src": "https://baqueira.net/blog/baqueira-lift-pass",
+   "night_eur": 100.0,
+   "food_day_eur": 50.0,
+   "stay_src": "estimate: 3-4 star doubles ~170-280 EUR/night over Christmas on booking sites (Eurostars La Pleta ~138 EUR pp, AC Baqueira ~170 EUR pp); slope lunch + dinner ~45-55 EUR pp",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 0,
+    "start": {
+     "cm": 15,
+     "p20": 5,
+     "p50": 15,
+     "p80": 30,
+     "p_ge50": 0.06,
+     "basis": "ensemble+climatology",
+     "normal_cm": 30,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 27,
+       "p50_cm": 25
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 17,
+       "p50_cm": 10
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 355,
+    "hotel_eur": 700,
+    "food_eur": 350,
+    "total_eur": 1405,
+    "pass_basis": "advance 5-day pass",
+    "pass_walkup": 420,
+    "party_total_eur": 1405,
+    "left_eur": -405,
+    "need_eur": 405,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "MID",
+    "pistes": "HIGH",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.25,
+   "pros": [
+    "154 km of pistes",
+    "36 lifts"
+   ],
+   "cons": [
+    "1,405 EUR per person",
+    "~15 cm at the start"
+   ],
+   "score": 33.8,
+   "score_parts": {
+    "MONEY": 1,
+    "SNOW": 67
+   },
+   "rank": 9
+  },
+  {
+   "slug": "grandvalira",
+   "label": "Grandvalira",
+   "country": "AD",
+   "area": "Andorra",
+   "lat": 42.54956,
+   "lon": 1.66927,
+   "top_m": 2619,
+   "base_m": 1674,
+   "km": 136.0,
+   "lifts": 53,
+   "opens": "2026-12-04",
+   "pass_day_eur": 77.33,
+   "pass_day_walkup": 77.33,
+   "pass_day_multi_eur": 66.0,
+   "pass_multi": {
+    "days": 6,
+    "price": 396.0,
+    "ccy": "EUR",
+    "per_day": 66.0,
+    "estimated": false,
+    "note": "6-day adult pass, official shop listing; up to ~15% further online discount may apply at checkout",
+    "src": "https://hoteles.grandvalira.com/es/6-dias-forfait_f_45817.htm"
+   },
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 79.0,
+    "regular": 69.0
+   },
+   "pass_period": "mixed",
+   "pass_note": "dynamic pricing; 69 EUR is the published base online adult day rate, Christmas/New Year days run higher - estimate, check grandvalira.com closer to date",
+   "pass_src": "https://www.caranvasports.com/blogs/esqui/forfait-andorra-2026-27-grandvalira-pal-arinsal-ordino-arcalis",
+   "night_eur": 100.0,
+   "food_day_eur": 45.0,
+   "stay_src": "estimate: Grandvalira-area hotels average ~212 USD/night per room on booking.com (~106 EUR pp double), higher at Christmas; Andorra sit-down meals ~15-25 EUR",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 0,
+    "start": {
+     "cm": 15,
+     "p20": 5,
+     "p50": 15,
+     "p80": 30,
+     "p_ge50": 0.05,
+     "basis": "ensemble+climatology",
+     "normal_cm": 45,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 14,
+       "p50_cm": 25
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 20,
+       "p50_cm": 10
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 396,
+    "hotel_eur": 700,
+    "food_eur": 315,
+    "total_eur": 1411,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 464,
+    "party_total_eur": 1411,
+    "left_eur": -411,
+    "need_eur": 411,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "HIGH",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.23,
+   "pros": [
+    "136 km of pistes",
+    "53 lifts"
+   ],
+   "cons": [
+    "1,411 EUR per person",
+    "~15 cm at the start",
+    "6-day pass 396 EUR"
+   ],
+   "score": 33.3,
+   "score_parts": {
+    "MONEY": 0,
+    "SNOW": 67
    },
    "rank": 10
   }
  ],
  "tiers": {
-  "pass": "LOW < 45 EUR <= MID <= 65 EUR < HIGH (adult day pass, EUR)",
+  "pass": "LOW < 45 EUR <= MID <= 65 EUR < HIGH (per ski day: advance multi-day pass rate when the trip has >= 3 ski days, else the adult day ticket, EUR)",
   "hotel": "LOW < 60 EUR <= MID <= 120 EUR < HIGH (per person per night sharing, estimate)",
   "pistes": "size + altitude: >=120 km = 2 pts, >=50 km = 1, top >=2900 m = +1; HIGH >=2, MID 1, LOW 0",
   "snow": "projected depth at the start date (P50): HIGH >=120 cm, MID >=60 cm, LOW below"
  },
- "explainer": "Snow at the start date = snow now at the resort + 40 % of the ensemble members' snowfall (ECMWF and GFS ensembles to their horizon) + the change the past winters show from that horizon to the date. Likely range = 20th-80th percentile of the scenarios. Prices: day pass from the resort shop; night and food are estimates. Multi-day passes and early bookings are often cheaper than the figures here.",
+ "explainer": "Snow at the start date = snow now at the resort + 40 % of the ensemble members' snowfall (ECMWF and GFS ensembles to their horizon) + the change the past winters show from that horizon to the date. Likely range = 20th-80th percentile of the scenarios. Prices: lift pass at the advance multi-day pass rate for trips of 3 ski days or more (walk-up day tickets cost more, shown as pass_walkup); night and food are estimates.",
  "notes": [
   "night_eur and food_day_eur are estimates per person (sharing a room / apartment)",
-  "pass = ski days x adult day pass; multi-day passes are usually cheaper",
+  "pass = advance multi-day pass rate x ski days for 3+ ski days (cost.pass_basis), else walk-up day tickets; cost.pass_walkup = what day tickets would cost",
   "budget_eur is the whole party's budget; left_eur compares it with party_total_eur"
  ],
  "static": true
