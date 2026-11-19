@@ -367,6 +367,135 @@
 },
 "change_vs_yesterday_km2": 40,
 "change_vs_7_days_km2": 0
+},
+"2026-11-19": {
+"country": "Spain",
+"country_code": "ES",
+"date": "2026-11-19",
+"quiet": false,
+"modelled_km2": 205710,
+"snow_km2_today": 530,
+"snow_km2_yesterday": 280,
+"snow_km2_7_days_ago": 430,
+"new_cm_24h_max": 1,
+"new_cm_72h_max": 1,
+"area_km2_5cm_new_72h": 170,
+"next_3_days_max_cm": 1,
+"next_7_days_max_cm": 5,
+"snowiest_day": "2026-11-25",
+"snowiest_day_cm": 9,
+"first_snow_day": "2026-11-21",
+"hotspots": [
+{
+"name": "the Spanish Pyrenees",
+"new_cm_72h": 26,
+"lat": 42.768,
+"lon": -0.264
+},
+{
+"name": "the Galician mountains",
+"new_cm_72h": 7,
+"lat": 42.882,
+"lon": -6.78
+},
+{
+"name": "the Cantabrian Mountains",
+"new_cm_72h": 5,
+"lat": 43.197,
+"lon": -4.844
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 9
+},
+{
+"from_m": 2500,
+"to_m": 5000,
+"mean_depth_cm": 3,
+"snow_cover_pct": 46
+}
+],
+"snow_line_m": null,
+"white_share_pct": 0,
+"resorts": [
+{
+"name": "Formigal",
+"slug": "formigal",
+"depth_cm": 6,
+"new_cm_72h": 5,
+"next_3_days_cm": 13,
+"top_m": 2264
+},
+{
+"name": "Estació d'Esquí Baqueira-Beret",
+"slug": "baqueira",
+"depth_cm": 6,
+"new_cm_72h": 5,
+"next_3_days_cm": 6,
+"top_m": 2600
+},
+{
+"name": "Tavascan",
+"slug": "tavascan",
+"depth_cm": 6,
+"new_cm_72h": 4,
+"next_3_days_cm": 7,
+"top_m": 2196
+},
+{
+"name": "Espot",
+"slug": "espot",
+"depth_cm": 6,
+"new_cm_72h": 4,
+"next_3_days_cm": 6,
+"top_m": 2290
+},
+{
+"name": "Candanchu",
+"slug": "candanchu",
+"depth_cm": 5,
+"new_cm_72h": 5,
+"next_3_days_cm": 13,
+"top_m": 2238
+}
+],
+"n_resorts": 31,
+"n_resorts_with_snow": 9,
+"resort_next_until": "2026-11-22",
+"week2": {
+"week1_max_cm": 22,
+"week2_max_cm": 20,
+"week2_days": [
+"2026-11-27",
+"2026-12-03"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 250,
+"change_vs_7_days_km2": 100
 }
 }
 }

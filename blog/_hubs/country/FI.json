@@ -327,6 +327,117 @@
 },
 "change_vs_yesterday_km2": -12090,
 "change_vs_7_days_km2": 100610
+},
+"2026-11-19": {
+"country": "Finland",
+"country_code": "FI",
+"date": "2026-11-19",
+"quiet": false,
+"modelled_km2": 300730,
+"snow_km2_today": 166530,
+"snow_km2_yesterday": 164810,
+"snow_km2_7_days_ago": 103050,
+"new_cm_24h_max": 3,
+"new_cm_72h_max": 11,
+"area_km2_5cm_new_72h": 151680,
+"next_3_days_max_cm": 12,
+"next_7_days_max_cm": 13,
+"snowiest_day": "2026-11-21",
+"snowiest_day_cm": 6,
+"first_snow_day": "2026-11-20",
+"hotspots": [
+{
+"name": "the Kainuu hills",
+"new_cm_72h": 31,
+"lat": 63.437,
+"lon": 28.785
+},
+{
+"name": "the Ruka fells",
+"new_cm_72h": 12,
+"lat": 65.732,
+"lon": 29.987
+}
+],
+"bands": [
+{
+"from_m": 0,
+"to_m": 500,
+"mean_depth_cm": 5,
+"snow_cover_pct": 55
+},
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 16,
+"snow_cover_pct": 100
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 41,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 200,
+"white_share_pct": 55,
+"resorts": [
+{
+"name": "Salla",
+"slug": "salla_ski_resort",
+"depth_cm": 25,
+"new_cm_72h": 8,
+"next_3_days_cm": 3,
+"top_m": 462
+},
+{
+"name": "Kallin",
+"slug": "kallin",
+"depth_cm": 25,
+"new_cm_72h": 5,
+"next_3_days_cm": 3,
+"top_m": 65
+},
+{
+"name": "Pyhä",
+"slug": "pyha_ski_resort",
+"depth_cm": 24,
+"new_cm_72h": 10,
+"next_3_days_cm": 6,
+"top_m": 375
+},
+{
+"name": "Rukatunturi",
+"slug": "rukatunturi_ruka",
+"depth_cm": 23,
+"new_cm_72h": 9,
+"next_3_days_cm": 4,
+"top_m": 494
+},
+{
+"name": "Suomutunturi",
+"slug": "suomutunturi",
+"depth_cm": 21,
+"new_cm_72h": 7,
+"next_3_days_cm": 5,
+"top_m": 400
+}
+],
+"n_resorts": 67,
+"n_resorts_with_snow": 28,
+"resort_next_until": "2026-11-22",
+"week2": {
+"week1_max_cm": 3,
+"week2_max_cm": 6,
+"week2_days": [
+"2026-11-27",
+"2026-12-03"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 1720,
+"change_vs_7_days_km2": 63480
 }
 }
 }

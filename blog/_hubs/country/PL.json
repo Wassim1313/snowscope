@@ -332,6 +332,123 @@
 },
 "change_vs_yesterday_km2": -580,
 "change_vs_7_days_km2": -570
+},
+"2026-11-19": {
+"country": "Poland",
+"country_code": "PL",
+"date": "2026-11-19",
+"quiet": false,
+"modelled_km2": 11060,
+"snow_km2_today": 370,
+"snow_km2_yesterday": 580,
+"snow_km2_7_days_ago": 1050,
+"new_cm_24h_max": 5,
+"new_cm_72h_max": 9,
+"area_km2_5cm_new_72h": 180,
+"next_3_days_max_cm": 7,
+"next_7_days_max_cm": 14,
+"snowiest_day": "2026-11-20",
+"snowiest_day_cm": 6,
+"first_snow_day": "2026-11-20",
+"hotspots": [
+{
+"name": "the Tatras",
+"new_cm_72h": 22,
+"lat": 49.2,
+"lon": 19.823
+},
+{
+"name": "the Beskids",
+"new_cm_72h": 11,
+"lat": 49.569,
+"lon": 19.538
+},
+{
+"name": "the Karkonosze",
+"new_cm_72h": 10,
+"lat": 50.75,
+"lon": 15.688
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 1
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 2,
+"snow_cover_pct": 32
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 22,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 1200,
+"white_share_pct": 3,
+"resorts": [
+{
+"name": "Karpacz",
+"slug": "karpacz_ski_arena",
+"depth_cm": 45,
+"new_cm_72h": 9,
+"next_3_days_cm": 10,
+"top_m": 1350
+},
+{
+"name": "Kasprowy Wierch",
+"slug": "kasprowy_wierch",
+"depth_cm": 32,
+"new_cm_72h": 19,
+"next_3_days_cm": 9,
+"top_m": 1958
+},
+{
+"name": "Szrenica",
+"slug": "szrenica_ski_arena",
+"depth_cm": 27,
+"new_cm_72h": 7,
+"next_3_days_cm": 9,
+"top_m": 1306
+},
+{
+"name": "Tobołów",
+"slug": "toboow",
+"depth_cm": 8,
+"new_cm_72h": 1,
+"next_3_days_cm": 2,
+"top_m": 965
+},
+{
+"name": "Borowice",
+"slug": "borowice",
+"depth_cm": 7,
+"new_cm_72h": 5,
+"next_3_days_cm": 7,
+"top_m": null
+}
+],
+"n_resorts": 114,
+"n_resorts_with_snow": 16,
+"resort_next_until": "2026-11-22",
+"week2": {
+"week1_max_cm": 5,
+"week2_max_cm": 6,
+"week2_days": [
+"2026-11-27",
+"2026-12-03"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": -210,
+"change_vs_7_days_km2": -680
 }
 }
 }

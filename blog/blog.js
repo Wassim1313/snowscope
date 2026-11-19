@@ -20,6 +20,37 @@
         a.href = u.replace("campaign=snowscope_web", "campaign=snowscope_web_blog");
         el.hidden = false;
       });
+      // budget stays map of price posts (engine/blog/render.staymap_html): Stay22 loads only on tap; chips switch the pick
+      document.querySelectorAll("[data-staymap-blog]").forEach((fig) => {
+        const c = SS.S && SS.S.cfg && SS.S.cfg.stay22;
+        if (!c || !c.aid || (SS.staysHidden && SS.staysHidden())) return;
+        fig.hidden = false;
+        const box = fig.querySelector(".smbox"), lang = (document.documentElement.lang || "en").slice(0, 2);
+        const today = new Date().toISOString().slice(0, 10);
+        const url = (b) => {
+          const d = b.dataset, q = new URLSearchParams({ aid: c.aid });
+          ["address", "nelat", "nelng", "swlat", "swlng", "lat", "lng"].forEach((k) => { if (d[k]) q.set(k, d[k]); });
+          let cin = d.cin && d.cin > today ? d.cin : today, cout = d.cout && d.cout > cin ? d.cout : "";
+          if (!cout) { const x = new Date(cin + "T12:00:00Z"); x.setUTCDate(x.getUTCDate() + 2); cout = x.toISOString().slice(0, 10); }
+          q.set("checkin", cin); q.set("checkout", cout); q.set("adults", "2");
+          q.set("campaign", "snowscope_web_blog_budgetmap"); q.set("maincolor", "1463F3");
+          q.set("hidesettings", "true"); q.set("hidebrandlogo", "true"); q.set("hidefooter", "true");
+          q.set("ljs", ["en", "fr", "de", "es", "it"].includes(lang) ? lang : "en");
+          q.set("currency", (SS.stayCur && SS.stayCur()) || d.cur || "EUR");
+          if (d.max) { q.set("max", d.max); q.set("priceper", "nightly"); }
+          return "https://www.stay22.com/embed/gm?" + q.toString();
+        };
+        // the tap on "Show" is the reader's yes to the partner map, remembered like the site's map tap (core.js PC)
+        const show = (b) => { if (SS.partnerSet && !(SS.partnerGranted && SS.partnerGranted())) { SS.partnerSet(true, "blog_map_tap"); const pc = document.getElementById("pcCard"); if (pc) pc.remove(); }
+          if (SS.hit) SS.hit("/ad/stay22/blog/budgetmap_open", "stay22");
+          box.innerHTML = '<iframe loading="lazy" title="' + SS.esc(b.dataset.place) + '" src="' + SS.esc(url(b)) + '"></iframe>'; };
+        fig.querySelectorAll(".smchip").forEach((b) => b.addEventListener("click", () => {
+          fig.querySelectorAll(".smchip").forEach((x) => x.setAttribute("aria-pressed", x === b ? "true" : "false"));
+          if (box.querySelector("iframe")) show(b);
+        }));
+        const go = fig.querySelector(".smgo");
+        if (go) go.addEventListener("click", () => show(fig.querySelector('.smchip[aria-pressed="true"]') || fig.querySelector(".smchip")));
+      });
     }).catch(() => {});
   };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", go); else go();
