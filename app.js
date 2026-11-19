@@ -26,6 +26,10 @@
   const RGUIDE = (() => { const e = $("rguide"); return e ? { slug: e.dataset.for, html: e.outerHTML } : null; })();
   // rich resort page (docs/SEO_RESORT_PAGES.md): the server-written daily paragraph + partner map + history + plan +
   // FAQ of this page, kept in the panel (under the 7-day forecast) when the page language is the visitor's language
+  // "Chalet & stay options" (owner 2026-11-19): the ~200 most visited non-rich resort pages carry a static #rsbook
+  // section (build_web.py, data/resort_stay_pages.json); there (and on rich pages, inside their stay section) the
+  // panel's Stays card becomes that block (no second Stay22 box)
+  const RSTAY = (() => { const e = $("rsbook"); return e ? e.dataset.for : null; })();
   const RRICH = (() => { const e = $("rrich"); return e ? { slug: e.dataset.for, lang: e.dataset.lang || "en", title: e.dataset.title || "", html: e.outerHTML } : null; })();
   // thin snow (1-10 cm on the 400 scale, 1-2.5 cm on the default 100 scale) is a clear sky blue, not the near-white
   // of the ColorBrewer ramp that vanished on the light basemap (owner 2026-11-03: "Oukaïmeden snow not visible")
@@ -2115,7 +2119,7 @@
     if (e.target.closest("[data-fresh]")) { st.ski.fresh = !st.ski.fresh; renderPanel(); }
     if (e.target.closest("[data-locate]")) locate(false);
     const shb = e.target.closest("[data-share]"); if (shb) { e.preventDefault(); shareResort(shb.dataset.share, shb.dataset.sd); }
-    const ql = e.target.closest("[data-place]"); if (ql) { const pl = st.places[+ql.dataset.place]; setOrigin({ lat: pl.lat, lon: pl.lon, label: pl.label, zoom: 8 }); }
+    const ql = e.target.closest("[data-place]"); const pl = ql && st.places ? st.places[+ql.dataset.place] : null; if (pl) { setOrigin({ lat: pl.lat, lon: pl.lon, label: pl.label, zoom: 8 }); }
     if (p7) { st.nw = +p7.dataset.pnw; renderPanel(); drawPins(); if (st.main === "powder") { renderMain(); drawLegend(); } }
     if (e.target.closest("[data-showpowder]")) { setMain("powder"); if (innerWidth <= 760) setSheet("peek"); }
     if (e.target.closest("[data-signup]")) SS.signInModal("up");
@@ -2773,7 +2777,7 @@
     const [cin, cout] = stayDates(o);
     const q = new URLSearchParams({ aid: c.aid });
     if (loc && loc.address) q.set("address", loc.address); else { q.set("lat", o.lat.toFixed(4)); q.set("lng", o.lon.toFixed(4)); if (o.place) q.set("address", o.place); }
-    q.set("checkin", cin); q.set("checkout", cout); q.set("adults", String(o.adults || 2)); q.set("campaign", "snowscope_web_" + o.where + "allez");
+    q.set("checkin", cin); q.set("checkout", cout); q.set("adults", String(o.adults || 2)); q.set("campaign", o.camp || "snowscope_web_" + o.where + "allez");
     const cur = SS.stayCur && SS.stayCur(); if (cur) q.set("currency", cur);       // Nordic visitors: SEK / NOK / EUR
     return "https://www.stay22.com/allez/roam?" + q.toString();
   }
@@ -2787,23 +2791,28 @@
   // the card is open and on screen; in Europe only once the visitor has accepted (Google consent message / TCF), else a
   // still preview with the partner link, which turns into the map as soon as consent is given.
   const STAYF = { budget: "Under {a}", rentals: "Chalets & apartments", rated: "Top rated" };
-  function stayModule(lat, lon, place, where, camp) {
+  function stayModule(lat, lon, place, where, camp, rs) {
     if (SS.staysHidden() || !(SS.S.cfg && SS.S.cfg.stay22 && SS.S.cfg.stay22.aid)) return "";
-    const cin0 = st.stayDay && st.stayDay >= stayToday() ? st.stayDay : st.day > stayToday() ? st.day : stayToday();
+    // rs = "Chalet & stay options" block: next weekend (Fri -> Sun, worked out here so it never goes stale), 2 adults
+    const wk = rs && SS.nextWeekend ? SS.nextWeekend() : null;
+    const cin0 = st.stayDay && st.stayDay >= stayToday() ? st.stayDay : wk ? wk[0] : st.day > stayToday() ? st.day : stayToday();
     const sv = (() => { try { return JSON.parse(sessionStorage.getItem("ss_staysel") || "null") || {}; } catch { return {}; } })();
-    const cin = !st.stayDay && sv.cin && sv.cin >= stayToday() ? sv.cin : cin0, cout = sv.cout && sv.cout > cin ? sv.cout : addDays(cin, 1), ad = sv.adults || 2;
+    const cin = !st.stayDay && sv.cin && sv.cin >= stayToday() ? sv.cin : cin0, cout = sv.cout && sv.cout > cin ? sv.cout : wk && cin === wk[0] ? wk[1] : addDays(cin, 1), ad = sv.adults || 2;
     // compact card, open by default (owner 2026-11-03, Stay22 viewability): live map first (220 px desktop, 180 px phone),
     // then dates / guests / filters; the map loads only once the card is half on screen (bindStays)
     const open = 1;     // owner 2026-11-09 "show the mini-map direct": always open, the map loads with the panel
-    return '<details class="fold stays" data-fold="stays2" data-lat="' + lat + '" data-lon="' + lon + '" data-place="' + esc(place) + '" data-where="' + where + '"' + (camp ? ' data-camp="' + esc(camp) + '"' : "") + (open ? " open" : "") + ">" +
-      '<summary><span class="stsum"><span>Stays near the slopes</span><small>Hotels and chalets near the slopes for your dates.</small></span><span class="partner">Partner</span></summary>' +
+    return '<details class="fold stays' + (rs ? " rstayb" : "") + '" data-fold="stays2" data-lat="' + lat + '" data-lon="' + lon + '" data-place="' + esc(place) + '" data-where="' + where + '"' + (camp ? ' data-camp="' + esc(camp) + '"' : "") +
+      (rs ? ' data-rs="1"' : "") + (open ? " open" : "") + ">" +
+      (rs ? '<summary><span class="stsum"><span>' + esc(I18N.tu("Chalet & stay options near {a}", place)) + "</span><small>Hotels, chalets and apartments near the lifts.</small></span><span class=\"partner\">Partner</span></summary>"
+        : '<summary><span class="stsum"><span>Stays near the slopes</span><small>Hotels and chalets near the slopes for your dates.</small></span><span class="partner">Partner</span></summary>') +
       '<div class="staymap" data-staybox><div class="stayload"><span class="ms">hotel</span><p>Loading places to stay…</p></div></div>' +
       '<div class="stayctl"><label><span>Check-in</span><input type="date" data-cin value="' + cin + '" min="' + stayToday() + '"></label>' +
       '<label><span>Check-out</span><input type="date" data-cout value="' + cout + '" min="' + addDays(cin, 1) + '"></label>' +
       '<label><span>Guests</span><select data-adults>' + [1, 2, 3, 4, 5, 6, 8].map((n) => '<option value="' + n + '"' + (n === ad ? " selected" : "") + ">" + n + "</option>").join("") + "</select></label></div>" +
       '<div class="pills inl stayf" role="group" aria-label="Filters">' + Object.entries(STAYF).map(([k, v]) => '<button class="pill" data-sf="' + k + '" aria-pressed="' + !!(sv.f && sv.f[k]) + '">' +
         esc(k === "budget" ? I18N.tu(v, U.us() ? "$150" : "€150") : v) + "</button>").join("") + "</div>" +
-      '<div class="stayfoot"><a class="btn tonal sm stayout" target="_blank" rel="sponsored noopener" data-stayout data-s22="' + esc(where) + '" href="#"><span class="ms">open_in_new</span>Open the full map</a>' +
+      '<div class="stayfoot">' + (rs ? '<button class="btn ink sm" type="button" data-staycheck><span class="ms">hotel</span>Check prices</button>' : "") +
+      '<a class="btn tonal sm stayout" target="_blank" rel="sponsored noopener" data-stayout data-s22="' + esc(where) + '" href="#"><span class="ms">open_in_new</span>Open the full map</a>' +
       '<p class="note">Partner · we may earn a commission from bookings.</p></div></details>';
   }
   function bindStays(box) {
@@ -2869,7 +2878,7 @@
       d.querySelectorAll("[data-sf]").forEach((b) => { b.onclick = () => { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") !== "true"); load(); }; });
       // viewability (owner 2026-11-03): the Stay22 frame (and its location check) loads only once the map box is at
       // least half on screen; "view" = frame loaded + half on screen for 1 s; "click" = focus moved into the frame
-      const pl = d.dataset.where || "panel", key = pl + "|" + d.dataset.lat + "," + d.dataset.lon;
+      const pl = d.dataset.where === "resort_stay" ? "resort_stay_map" : d.dataset.where || "panel", key = pl + "|" + d.dataset.lat + "," + d.dataset.lon;
       let vis = false, viewT = 0;
       const tryView = () => { clearTimeout(viewT); const f = sb.querySelector("iframe"); if (vis && f && f.dataset.ok) viewT = setTimeout(() => { if (vis) SS.hit("/ad/stay22/" + pl + "/view", "stay22", "v|" + key); }, 1000); };
       sb.addEventListener("s22load", tryView);
@@ -2889,6 +2898,24 @@
         io.observe(sb);
       } else vis = true;
       window.addEventListener("blur", () => { const f = sb.querySelector("iframe"); if (f && document.activeElement === f) SS.hit("/ad/stay22/" + pl + "/click", "stay22", "c|" + key); });
+      // "Chalet & stay options": the block on screen = /view (once per page); "Check prices" = /click, then the map
+      // here (Europe: the tap is the partner consent, as on the blog map) or, once it shows, the full map in a new tab
+      const ck = d.dataset.rs ? d.querySelector("[data-staycheck]") : null;
+      if (ck) {
+        if ("IntersectionObserver" in window) {
+          const io2 = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { SS.hit("/ad/stay22/resort_stay/view", "stay22", "rsv|" + location.pathname); io2.disconnect(); } }, { threshold: 0.3 });
+          io2.observe(d);
+        } else SS.hit("/ad/stay22/resort_stay/view", "stay22", "rsv|" + location.pathname);
+        ck.onclick = () => {
+          SS.hit("/ad/stay22/resort_stay/click", "stay22");
+          const f = sb.querySelector("iframe");
+          if (f && consent && out && out.href && !/#$/.test(out.href)) { window.open(out.href, "_blank", "noopener"); return; }
+          if (!consent && SS.partnerSet) SS.partnerSet(true, "resort_stay");
+          consent = true; seen = true; d.open = true;
+          load();
+          sb.scrollIntoView({ behavior: "smooth", block: "center" });
+        };
+      }
       if (st.openStays) { st.openStays = false; d.open = true; setTimeout(() => d.scrollIntoView({ behavior: "smooth", block: "start" }), 250); }
     });
   }
@@ -3053,6 +3080,7 @@
       guideHtml(slug) + appCard() + footer();
     const sVia = st.staysVia || "panel";
     st.staysVia = null;
+    const rsOn = RSTAY === slug && sVia === "panel" && !SS.S.noAds;   // Pro / no-ads: the plain Stays card as before
     box.querySelector("[data-back]").onclick = () => (st.pushed ? history.back() : closeResort());
     box.querySelector(".hero2").insertAdjacentHTML("afterend", '<div class="acts3" style="margin-bottom:6px"><a class="btn tonal" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' + x.lat + "," + x.lon + '"><span class="ms">directions_car</span>Directions</a><button class="btn ink" data-share="' + esc(slug) + '" data-sd="' + st.day + '"><span class="ms">share</span>Share</button>' +
       (stayModule(0, 0, "", "x") ? '<button class="btn tonal" data-gostays><span class="ms">hotel</span>Stays</button>' : "") + "</div>" +
@@ -3075,11 +3103,11 @@
     if (rsb) {
       const xmas = (() => { try { return new URLSearchParams(location.search).get("stay") === "xmas"; } catch { return false; } })();
       const cin = xmas ? rsb.dataset.xcin : rsb.dataset.cin, cout = xmas ? rsb.dataset.xcout : rsb.dataset.cout;
-      rsb.outerHTML = stayModule(x.lat, x.lon, x.short, "resort", rsb.dataset.camp);
+      rsb.outerHTML = stayModule(x.lat, x.lon, x.short, "resort", rsb.dataset.camp, !SS.S.noAds);
       const d = box.querySelector("details.stays"), ci = d && d.querySelector("[data-cin]"), co = d && d.querySelector("[data-cout]");
       if (ci && cin && cin >= stayToday()) { ci.value = cin; if (co && cout > cin) co.value = cout; }
     }
-    if (hb) hb.insertAdjacentHTML("afterend", (richOn ? "" : stayModule(x.lat, x.lon, x.short, sVia)) + '<div data-ptrip data-where="panel" data-lat="' + x.lat + '" data-lon="' + x.lon + '" data-place="' + esc(x.short) + '"' + (st.stayDay ? ' data-day="' + st.stayDay + '"' : "") + "></div>");
+    if (hb) hb.insertAdjacentHTML("afterend", (richOn ? "" : rsOn ? stayModule(x.lat, x.lon, x.short, "resort_stay", "snowscope_web_resort_stay", true) : stayModule(x.lat, x.lon, x.short, sVia)) + '<div data-ptrip data-where="panel" data-lat="' + x.lat + '" data-lon="' + x.lon + '" data-place="' + esc(x.short) + '"' + (st.stayDay ? ' data-day="' + st.stayDay + '"' : "") + "></div>");
     if (ra) ra.insertAdjacentHTML("afterend", '<div id="rLive"></div>');
     liveRows(x);
     jobsRow(x);

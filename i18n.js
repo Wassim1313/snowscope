@@ -26,6 +26,7 @@
       "Gratis: eine Nachricht, wenn Neuschnee kommt, und jeden Morgen die Vorhersage.", "Gratis: un messaggio quando arriva la neve e il meteo ogni mattina.",
       "Gratis: un aviso cuando llega la nieve y la previsión cada mañana.", "فابور: ميساج ملي يجي التلج، والتوقعات كل صباح."],
     // lodging pins on the main map (OpenStreetMap places + Stay22 link), owner 2026-11-09
+    "Hotels, chalets and apartments near the lifts.": ["Hôtels, chalets et appartements près des remontées.", "Hotels, Chalets und Ferienwohnungen nahe den Liften.", "Hotel, chalet e appartamenti vicino agli impianti.", "Hoteles, chalets y apartamentos cerca de los remontes.", "أوطيلات، شاليهات وشقق قريبين من المصاعد."],
     "Check prices": ["Voir les prix", "Preise prüfen", "Vedi i prezzi", "Ver precios", "شوف الأثمنة"],
     // Ski jobs section (docs/JOBS.md, owner 2026-11-13): header link + "Jobs at this resort" on the resort panel
     "Ski jobs": ["Emplois en station", "Jobs im Skigebiet", "Lavoro nelle stazioni", "Empleo en estaciones", "خدمة فمحطات التزلج"],
@@ -997,6 +998,9 @@
     "An e-mail when {a} gets fresh snow overnight.": ["Un e-mail quand {a} reçoit de la neige fraîche dans la nuit.", "Eine E-Mail, wenn {a} über Nacht Neuschnee bekommt.", "Un'e-mail quando a {a} cade neve fresca nella notte.", "Un correo cuando {a} reciba nieve fresca por la noche.", "إيميل ملي يطيح التلج الجديد ف{a} فالليل."],
     "{a} / {b} lifts open": ["{a} / {b} remontées ouvertes", "{a} / {b} Lifte offen", "{a} / {b} impianti aperti", "{a} / {b} remontes abiertos", "{a} / {b} مصاعد محلولين"],
     "{a} lifts": ["{a} remontées", "{a} Lifte", "{a} impianti", "{a} remontes", "{a} مصاعد"],
+    // "Chalet & stay options" block on the most visited resort pages (owner 2026-11-19)
+    "Chalet & stay options near {a}": ["Chalets et hébergements près de {a}", "Chalets und Unterkünfte bei {a}", "Chalet e alloggi vicino a {a}", "Chalets y alojamientos cerca de {a}", "شاليهات وبلايص المبيت قريب من {a}"],
+    "Hotels, chalets and apartments near the lifts of {a}. Pick your dates and check prices on our travel partner's map.": ["Hôtels, chalets et appartements près des remontées de {a}. Choisissez vos dates et voyez les prix sur la carte de notre partenaire voyage.", "Hotels, Chalets und Ferienwohnungen nahe den Liften von {a}. Wählen Sie Ihre Daten und prüfen Sie die Preise auf der Karte unseres Reisepartners.", "Hotel, chalet e appartamenti vicino agli impianti di {a}. Scegli le date e guarda i prezzi sulla mappa del nostro partner di viaggio.", "Hoteles, chalets y apartamentos cerca de los remontes de {a}. Elige tus fechas y mira los precios en el mapa de nuestro socio de viajes.", "أوطيلات، شاليهات وشقق قريبين من المصاعد ديال {a}. ختار التواريخ وشوف الأثمنة فالخريطة ديال الشريك ديالنا."],
     "Stays near {a}": ["Hébergements près de {a}", "Unterkünfte bei {a}", "Alloggi vicino a {a}", "Alojamientos cerca de {a}", "بلايص المبيت قريب من {a}"],
     "Renews on {a}.": ["Renouvellement le {a}.", "Verlängert sich am {a}.", "Si rinnova il {a}.", "Se renueva el {a}.", "كيتجدد نهار {a}."],
     "Until {a}.": ["Jusqu'au {a}.", "Bis {a}.", "Fino al {a}.", "Hasta el {a}.", "حتى لـ {a}."],
