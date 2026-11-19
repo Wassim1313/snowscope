@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="sv" data-lang="sv" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Snörapport Ramundberget idag: 21 cm, nysnö och de närmaste dagarna</title>
+<meta name="description" content="Ramundberget idag: 21 cm snö på toppen, 2 cm nysnö på 3 dagar, 3 cm på väg. Till jul brukar det vara 51 cm, bästa månad mars.">
+<meta name="google-adsense-account" content="ca-pub-6693878731812238">
+<link rel="canonical" href="https://snowscope.app/resorts/ramundberget.sv.html">
+<link rel="alternate" hreflang="sv" href="https://snowscope.app/resorts/ramundberget.sv.html">
+<link rel="alternate" hreflang="en" href="https://snowscope.app/resorts/ramundberget.html">
+<link rel="alternate" hreflang="x-default" href="https://snowscope.app/resorts/ramundberget.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowScope">
+<meta property="og:title" content="Snörapport Ramundberget idag: 21 cm, nysnö och de närmaste dagarna">
+<meta property="og:description" content="Ramundberget idag: 21 cm snö på toppen, 2 cm nysnö på 3 dagar, 3 cm på väg. Till jul brukar det vara 51 cm, bästa månad mars.">
+<meta property="og:url" content="https://snowscope.app/resorts/ramundberget.sv.html">
+<meta property="og:image" content="https://snowscope.app/og/SCANDES.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F4F6F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0F17" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../icon-512.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..750&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
+<link rel="stylesheet" href="../site.css?v=4c0d1183">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SkiResort", "name": "Ramundberget", "url": "https://snowscope.app/resorts/ramundberget.sv.html", "geo": {"@type": "GeoCoordinates", "latitude": 62.69508, "longitude": 12.38347}, "address": {"@type": "PostalAddress", "addressCountry": "Sweden"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Finns det snö i Ramundberget till jul?", "acceptedAnswer": {"@type": "Answer", "text": "Oftast ja. Toppen har ungefär 51 cm till jul, och 70 % av de senaste 46 vintrarna hade minst 50 cm den 1 januari. Idag: 21 cm."}}, {"@type": "Question", "name": "Vilken månad är bäst för skidåkning i Ramundberget?", "acceptedAnswer": {"@type": "Answer", "text": "Mars: då toppar snön på ungefär 92 cm. Ett underlag på minst 30 cm varar vanligen från slutet av november till mitten av maj."}}, {"@type": "Question", "name": "Hur djup blir snön i Ramundberget?", "acceptedAnswer": {"@type": "Answer", "text": "En typisk vinter toppar snön på toppen på ungefär 92 cm i slutet av mars. Den djupaste av 46 vintrar nådde 136 cm (1987-88), den tunnaste 61 cm (1995-96)."}}]}]}</script>
+</head>
+<body class="app" data-slug="ramundberget">
+<a class="skip" href="#pbody">Skip to the snow list</a>
+<div id="map" role="region" aria-label="Snow map. The panel lists the same values."></div>
+
+<header class="appbar glass">
+  <a class="brand" href="../" data-nav="map"><img src="../logo.svg" alt="" width="30" height="30"><span>SnowScope</span></a>
+  <div class="find" role="search"><span class="ms">search</span><input type="search" placeholder="Find a ski resort" aria-label="Find a ski resort" autocomplete="off"><ul hidden></ul></div>
+  <button class="btn icon only-s" data-find-open aria-label="Find a ski resort"><span class="ms">search</span></button>
+  <button class="btn alertbtn" data-fw-alert aria-label="Powder alert" title="Powder alert"><span class="ms f">notifications_active</span><span class="lbl hide-s">Powder alert</span></button>
+  <a class="btn tonal blogbtn" data-blog href="../blog/en/" aria-label="Snow reports" title="Snow reports"><span class="ms">article</span><span class="lbl hide-s">Snow reports</span></a>
+  <a class="btn tonal mabtn" data-ma href="../maroc.html" style="display:none" aria-label="Morocco weather" title="Morocco weather"><span class="ms">rainy</span><span class="lbl hide-s">Morocco weather</span></a>
+  <button class="btn icon langbtn" data-lang aria-label="Language"><span class="ms">language</span></button>
+  <div class="acct" id="acct"></div>
+</header>
+<div class="regions pills" id="regions" role="group" aria-label="Region"></div>
+<div class="mapctl">
+  <button class="mapbtn" id="layersBtn" aria-haspopup="dialog" aria-label="Map layers"><span class="ms">layers</span><span class="lbl">Layers</span></button>
+  <button class="mapbtn" id="btn3d" aria-pressed="false" aria-label="3D view"><span class="ms">view_in_ar</span><span class="lbl">3D</span></button>
+</div>
+
+<aside class="panel" id="panel" aria-label="Snow details">
+  <button class="grab" id="grab" aria-label="Expand or collapse the panel"></button>
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <button data-tab="map" aria-current="page"><span class="ms">map</span>Snow today</button>
+    <button data-tab="ski"><span class="ms">downhill_skiing</span>Where to ski</button>
+    <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
+    <button data-tab="you"><span class="ms">person</span>You</button>
+  </nav>
+  <div class="pbody" id="pbody" tabindex="-1"><div class="seo rich" id="rrich" data-for="ramundberget" data-lang="sv" data-title="Snörapport Ramundberget idag: 21 cm, nysnö och de närmaste dagarna"><div class="over">Skidort · Jamtland, Sweden</div><h1>Snörapport Ramundberget idag: 21 cm, nysnö och de närmaste dagarna</h1><p class="lede rdaily" id="rdaily">Ramundberget har idag <span data-cm="21">21 cm</span> snö i de övre backarna, med <span data-cm="7">7 cm</span> längst ner. <span data-cm="1">1 cm</span> föll de senaste 24 timmarna, <span data-cm="2">2 cm</span> på 3 dagar. Ungefär <span data-cm="3">3 cm</span> nysnö väntas på 3 dagar; toppen bör nå cirka <span data-cm="23">23 cm</span> på söndag. Snögränsen går vid cirka <span data-m="850">850 m</span>.</p><p class="rlangs"><a href="ramundberget.html" hreflang="en" lang="en">English</a></p><section class="rstay" id="rstay"><h2>Hotell och stugor nära pisterna i Ramundberget</h2><div class="staybox still" data-rstay data-lat="62.69508" data-lon="12.38347" data-place="Ramundberget" data-camp="snowscope_resort_ramundberget" data-cin="2026-11-20" data-cout="2026-11-22" data-xcin="2026-12-19" data-xcout="2026-12-26"><svg class="pv" viewBox="0 0 120 60" aria-hidden="true"><rect width="120" height="60" rx="6"/><path d="M0 22h120M0 40h120M30 0v60M70 0v60M95 0v60" class="rd"/><circle cx="60" cy="27" r="7" class="pin"/><circle cx="60" cy="27" r="2.5" class="pinc"/></svg><p>Vår partners karta visar aktuella priser för dina datum och använder kakor.</p><div class="acts3"><button class="btn ink" type="button" data-rstay-show><span class="ms">map</span>Visa hotellkartan</button><a class="btn tonal" target="_blank" rel="sponsored noopener" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;address=Ramundberget%2C%20Sweden&amp;checkin=2026-11-20&amp;checkout=2026-11-22&amp;adults=2&amp;campaign=snowscope_resort_ramundberget_allez"><span class="ms">open_in_new</span>Öppna boenden</a></div></div><p>Boende nära pisterna:</p><ul class="stl"><li>Fjällgården<small> · Hotel</small></li><li>Gruvgården<small> · </small></li><li>Walles fjällhotell<small> · Hotel</small></li><li>Doff<small> · Chalet</small></li><li>Dole<small> · Chalet</small></li></ul><p><a target="_blank" rel="sponsored noopener" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=62.6951&amp;lng=12.3835&amp;address=Ramundberget&amp;checkin=2026-11-20&amp;checkout=2026-11-22&amp;adults=2&amp;lang=sv&amp;campaign=snowscope_resort_ramundberget">Hotellkarta runt Ramundberget</a></p><p class="partner">Partner · vi kan få provision på bokningar, utan extra kostnad för dig.</p></section><section class="rhist" id="rhist"><h2>Ramundberget under tidigare vintrar</h2><figure class="rchart"><svg viewBox="0 0 340 150" role="img" aria-label="Snödjup genom vintern: det vanliga djupet, normalspannet och den här vintern hittills." preserveAspectRatio="none"><title>Snödjup genom vintern: det vanliga djupet, normalspannet och den här vintern hittills.</title><line x1="30" x2="332" y1="130.0" y2="130.0" class="g"/><text x="26" y="134.0" class="t" text-anchor="end">0</text><line x1="30" x2="332" y1="69.0" y2="69.0" class="g"/><text x="26" y="73.0" class="t" text-anchor="end">75</text><line x1="30" x2="332" y1="8.0" y2="8.0" class="g"/><text x="26" y="12.0" class="t" text-anchor="end">150</text><polygon points="30.0,128.4 38.7,127.6 47.4,125.1 56.1,121.1 64.8,115.4 73.5,109.7 82.2,104.8 90.9,99.1 99.6,94.2 108.3,89.3 117.0,86.1 125.7,83.6 134.4,80.4 143.1,74.7 151.8,71.4 160.5,69.8 169.2,64.1 177.9,61.7 186.6,58.4 195.3,55.2 204.0,56.0 212.7,52.7 221.4,51.9 230.1,51.9 238.8,50.3 247.5,49.5 256.2,49.5 264.9,47.0 273.6,48.7 282.3,51.1 291.0,60.1 299.7,65.7 308.4,71.4 317.1,89.3 325.8,110.5 325.8,130.0 317.1,126.7 308.4,110.5 299.7,91.8 291.0,81.2 282.3,72.3 273.6,68.2 264.9,67.4 256.2,67.4 247.5,68.2 238.8,69.0 230.1,68.2 221.4,69.8 212.7,69.8 204.0,70.6 195.3,73.1 186.6,74.7 177.9,76.3 169.2,77.9 160.5,82.0 151.8,87.7 143.1,91.8 134.4,95.8 125.7,99.9 117.0,102.3 108.3,108.9 99.6,113.7 90.9,119.4 82.2,123.5 73.5,125.9 64.8,128.4 56.1,129.2 47.4,129.2 38.7,130.0 30.0,130.0" class="band"/><polyline points="30.0,130.0 38.7,129.2 47.4,128.4 56.1,126.7 64.8,125.1 73.5,119.4 82.2,114.5 90.9,108.9 99.6,104.0 108.3,99.9 117.0,93.4 125.7,91.0 134.4,89.3 143.1,84.5 151.8,78.8 160.5,74.7 169.2,73.1 177.9,69.8 186.6,64.9 195.3,62.5 204.0,61.7 212.7,60.9 221.4,60.1 230.1,59.2 238.8,57.6 247.5,56.8 256.2,55.2 264.9,57.6 273.6,59.2 282.3,61.7 291.0,69.8 299.7,82.0 308.4,96.7 317.1,110.5 325.8,125.9" class="med" fill="none"/><polyline points="78.5,128.4 79.7,127.6 81.0,125.1 82.2,123.5 83.4,123.5 84.7,122.7 85.9,121.9 87.2,121.9 88.4,121.9 89.7,121.9 90.9,121.9" class="now" fill="none"/><text x="30.0" y="144" class="t" text-anchor="middle">O</text><text x="68.5" y="144" class="t" text-anchor="middle">N</text><text x="105.8" y="144" class="t" text-anchor="middle">D</text><text x="144.3" y="144" class="t" text-anchor="middle">J</text><text x="182.9" y="144" class="t" text-anchor="middle">F</text><text x="218.9" y="144" class="t" text-anchor="middle">M</text><text x="257.4" y="144" class="t" text-anchor="middle">A</text><text x="294.7" y="144" class="t" text-anchor="middle">M</text><text x="26" y="10" class="t" text-anchor="end" font-size="7">cm</text></svg><figcaption><span class="lg"><i class="band"></i>Normalt spann</span><span class="lg"><i class="med"></i>Vanligt djup</span><span class="lg"><i class="now"></i>Den här vintern</span></figcaption></figure><p>46 vintrar av snödjup på toppen av Ramundberget (cirka <span data-m="831">831 m</span>), så att du kan planera med riktiga odds.</p><p>Till jul ligger vanligen <span data-cm="51">51 cm</span> på toppen; hälften av vintrarna hamnar mellan <span data-cm="42">42 cm</span> och <span data-cm="62">62 cm</span>.</p><p>I mitten av februari är det vanliga djupet <span data-cm="83">83 cm</span> (<span data-cm="72">72 cm</span>–<span data-cm="91">91 cm</span>).</p><p>mars är den djupaste månaden, med runt <span data-cm="92">92 cm</span>.</p><p>Ett 50 cm underlag fanns den 15 december i 43 % av vintrarna, och vid nyår i 70 %.</p><p>Den snörikaste vintern var 1987-88 (<span data-cm="136">136 cm</span> som mest); den sämsta 1995-96 (<span data-cm="61">61 cm</span>).</p><p>Ett täcke på minst <span data-cm="30">30 cm</span> varar vanligen från slutet av november till mitten av maj, cirka 179 dagar.</p><p>Den här vintern: <span data-cm="10">10 cm</span> den 19 november (vanligt: <span data-cm="26">26 cm</span>).</p></section><section class="rplan" id="rplan"><h2>Skidåkning i Ramundberget: det praktiska</h2><p>Pisterna går från <span data-m="701">701 m</span> till <span data-m="961">961 m</span> (<span data-m="260">260 m</span> fallhöjd), med <span data-km="22.0">22 km</span> markerade nedfarter och 10 liftar.</p><p>Närmaste flygplatser: Trondheim Vaernes (TRD, <span data-km="112.9">113 km</span>), Are Ostersund (OSD, <span data-km="121.6">122 km</span>), Oslo Gardermoen (OSL, <span data-km="285.7">286 km</span>).</p></section><section class="rmore"><h2>Nära Ramundberget</h2><ul><li><a href="tanndalen.sv.html">Tänndalen</a> · <span data-cm="18">18 cm</span> idag · <span data-km="16.7">17 km</span> bort</li><li><a href="funasdalen.sv.html">Funäsdalen</a> · <span data-cm="12">12 cm</span> idag · <span data-km="18.2">18 km</span> bort</li><li><a href="storlien.html">Storlien</a> · <span data-cm="17">17 cm</span> idag · <span data-km="70.9">71 km</span> bort</li></ul><p><a href="https://snowscope.app/blog/en/region/scandes.html">Snön idag: Skandinavien</a> · <a href="https://snowscope.app/planner.html?region=SCANDES">Reseplanerare</a> · <a href="./">Alla skidorter</a></p></section><section class="rfaq"><h2>Frågor om Ramundberget</h2><h3>Finns det snö i Ramundberget till jul?</h3><p>Oftast ja. Toppen har ungefär <span data-cm="51">51 cm</span> till jul, och 70 % av de senaste 46 vintrarna hade minst <span data-cm="50">50 cm</span> den 1 januari. Idag: <span data-cm="21">21 cm</span>.</p><h3>Vilken månad är bäst för skidåkning i Ramundberget?</h3><p>Mars: då toppar snön på ungefär <span data-cm="92">92 cm</span>. Ett underlag på minst <span data-cm="30">30 cm</span> varar vanligen från slutet av november till mitten av maj.</p><h3>Hur djup blir snön i Ramundberget?</h3><p>En typisk vinter toppar snön på toppen på ungefär <span data-cm="92">92 cm</span> i slutet av mars. Den djupaste av 46 vintrar nådde <span data-cm="136">136 cm</span> (1987-88), den tunnaste <span data-cm="61">61 cm</span> (1995-96).</p></section></div></div>
+</aside>
+
+<div class="timeline glass" id="timeline">
+  <button class="play" id="play" aria-label="Play the days"><span class="ms f">play_arrow</span></button>
+  <div class="days" id="days" role="group" aria-label="Day"></div>
+</div>
+<div class="legend glass" id="legend"></div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<nav class="bottomnav" id="bnav" aria-label="Sections">
+  <button data-tab="map" aria-current="page"><span class="ms f">map</span>Map</button>
+  <button data-tab="ski"><span class="ms">downhill_skiing</span>Where to ski</button>
+  <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
+  <button data-tab="you"><span class="ms">person</span>You</button>
+</nav>
+<script src="../i18n.js?v=69ab69e5"></script>
+<script>/* Morocco weather reel page for visitors in Morocco / Darija (tools/morocco_reel.py) */(function(){try{var tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"",l=(window.I18N&&I18N.lang)||"",n=navigator.language||"",a=document.querySelector("[data-ma]");if(a&&(/^Africa\/(Casablanca|El_Aaiun)$/.test(tz)||l==="ar"||/-MA$/i.test(n))){var t=l==="ar"?"طقس المغرب":l==="fr"?"Météo Maroc":"Morocco weather";a.querySelector(".lbl").textContent=t;a.title=t;a.setAttribute("aria-label",t);if(l==="ar"||l==="fr")a.href=a.getAttribute("href")+"?lang="+l;a.style.display="";}}catch(e){}})();</script>
+<script src="../core.js?v=0aa25603"></script>
+<script src="../follow.js?v=a7609e9b" defer></script>
+<script src="../partners.js?v=08f61494" defer></script>
+<script src="../post.js?v=39100f9c" defer></script>
+<script src="../expert.js?v=7ed56ff3"></script>
+<script src="../charts.js?v=5c43184a"></script>
+<script src="../app.js?v=f4fda424"></script>
+</body>
+</html>

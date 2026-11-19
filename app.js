@@ -24,6 +24,9 @@
   // resort guide (AdSense review 2026-11-17, tools/resort_guide.py): the server-rendered "About <resort>" text of a
   // resort page stays at the bottom of that resort's panel (English UI only), with its numbers in the visitor's units
   const RGUIDE = (() => { const e = $("rguide"); return e ? { slug: e.dataset.for, html: e.outerHTML } : null; })();
+  // rich resort page (docs/SEO_RESORT_PAGES.md): the server-written daily paragraph + partner map + history + plan +
+  // FAQ of this page, kept in the panel (under the 7-day forecast) when the page language is the visitor's language
+  const RRICH = (() => { const e = $("rrich"); return e ? { slug: e.dataset.for, lang: e.dataset.lang || "en", title: e.dataset.title || "", html: e.outerHTML } : null; })();
   // thin snow (1-10 cm on the 400 scale, 1-2.5 cm on the default 100 scale) is a clear sky blue, not the near-white
   // of the ColorBrewer ramp that vanished on the light basemap (owner 2026-11-03: "Oukaïmeden snow not visible")
   const DEPTH = [[1, [128, 184, 236]], [10, [116, 178, 228]], [25, [107, 174, 214]], [50, [66, 146, 198]], [100, [33, 113, 181]], [150, [8, 81, 156]], [250, [8, 48, 107]], [400, [37, 0, 79]]];
@@ -2735,7 +2738,7 @@
     if (!c || !c.aid) return "";
     const [cin, cout] = stayDates(o), lang = String(I18N.lang || "en").toLowerCase();
     const q = new URLSearchParams({ aid: c.aid, ...(loc || stayLocs(o)[0]), checkin: cin, checkout: cout, adults: String(Math.min(Math.max(o.adults | 0 || 2, 1), 16)),
-      campaign: ("snowscope_web_" + o.where + "map").replace(/[^a-z0-9_]/gi, ""), maincolor: "1463F3", hidesettings: "true", hidebrandlogo: "true", hidefooter: "true",
+      campaign: (o.camp || ("snowscope_web_" + o.where + "map")).replace(/[^a-z0-9_]/gi, ""), maincolor: "1463F3", hidesettings: "true", hidebrandlogo: "true", hidefooter: "true",
       ljs: STAY_LJS.has(lang) ? lang : lang === "ar" ? "fr" : lang === "nb" ? "no" : "en", currency: U.us() ? "USD" : (SS.stayCur && SS.stayCur()) || "EUR", unitsystem: U.us() ? "imperial" : "metric", mapstyle: isDarkTheme() ? "dark" : "light" });
     if (o.f && o.f.budget) { q.set("max", "150"); q.set("priceper", "nightly"); }
     if (o.f && o.f.rentals) q.set("showhotels", "false");
@@ -2784,7 +2787,7 @@
   // the card is open and on screen; in Europe only once the visitor has accepted (Google consent message / TCF), else a
   // still preview with the partner link, which turns into the map as soon as consent is given.
   const STAYF = { budget: "Under {a}", rentals: "Chalets & apartments", rated: "Top rated" };
-  function stayModule(lat, lon, place, where) {
+  function stayModule(lat, lon, place, where, camp) {
     if (SS.staysHidden() || !(SS.S.cfg && SS.S.cfg.stay22 && SS.S.cfg.stay22.aid)) return "";
     const cin0 = st.stayDay && st.stayDay >= stayToday() ? st.stayDay : st.day > stayToday() ? st.day : stayToday();
     const sv = (() => { try { return JSON.parse(sessionStorage.getItem("ss_staysel") || "null") || {}; } catch { return {}; } })();
@@ -2792,7 +2795,7 @@
     // compact card, open by default (owner 2026-11-03, Stay22 viewability): live map first (220 px desktop, 180 px phone),
     // then dates / guests / filters; the map loads only once the card is half on screen (bindStays)
     const open = 1;     // owner 2026-11-09 "show the mini-map direct": always open, the map loads with the panel
-    return '<details class="fold stays" data-fold="stays2" data-lat="' + lat + '" data-lon="' + lon + '" data-place="' + esc(place) + '" data-where="' + where + '"' + (open ? " open" : "") + ">" +
+    return '<details class="fold stays" data-fold="stays2" data-lat="' + lat + '" data-lon="' + lon + '" data-place="' + esc(place) + '" data-where="' + where + '"' + (camp ? ' data-camp="' + esc(camp) + '"' : "") + (open ? " open" : "") + ">" +
       '<summary><span class="stsum"><span>Stays near the slopes</span><small>Hotels and chalets near the slopes for your dates.</small></span><span class="partner">Partner</span></summary>' +
       '<div class="staymap" data-staybox><div class="stayload"><span class="ms">hotel</span><p>Loading places to stay…</p></div></div>' +
       '<div class="stayctl"><label><span>Check-in</span><input type="date" data-cin value="' + cin + '" min="' + stayToday() + '"></label>' +
@@ -2805,7 +2808,7 @@
   }
   function bindStays(box) {
     box.querySelectorAll("details.stays").forEach((d) => {
-      const read = () => ({ lat: +d.dataset.lat, lon: +d.dataset.lon, place: d.dataset.place, where: d.dataset.where,
+      const read = () => ({ lat: +d.dataset.lat, lon: +d.dataset.lon, place: d.dataset.place, where: d.dataset.where, camp: d.dataset.camp || "",
         cin: d.querySelector("[data-cin]").value || stayToday(), cout: d.querySelector("[data-cout]").value, adults: +d.querySelector("[data-adults]").value || 2,
         f: Object.fromEntries([...d.querySelectorAll("[data-sf]")].map((b) => [b.dataset.sf, b.getAttribute("aria-pressed") === "true"])) });
       const sb = d.querySelector("[data-staybox]"), out = d.querySelector("[data-stayout]");
@@ -3012,12 +3015,14 @@
     const two = [...new Set(weeks.map(name))].slice(0, 2);   // built in the page language (fix 0.9.34b: "early mars and early avril")
     return two.length > 1 ? I18N.tu("{a} and {b}", two[0], two[1]) : two.join("");
   };
-  const guideHtml = (slug) => {
-    if (!RGUIDE || RGUIDE.slug !== slug || (I18N.lang && I18N.lang !== "en")) return "";
-    return RGUIDE.html.replace(/<span data-cm="(\d+)">[^<]*<\/span>/g, (m, v) => '<span data-cm="' + v + '">' + U.depth(+v) + "</span>")
+  const unitsHtml = (h) => h.replace(/<span data-cm="(\d+)">[^<]*<\/span>/g, (m, v) => '<span data-cm="' + v + '">' + U.depth(+v) + "</span>")
       .replace(/<span data-m="(\d+)">[^<]*<\/span>/g, (m, v) => '<span data-m="' + v + '">' + U.elev(+v) + "</span>")
       .replace(/<span data-km="([\d.]+)">[^<]*<\/span>/g, (m, v) => '<span data-km="' + v + '">' + U.dist(+v) + "</span>");
+  const guideHtml = (slug) => {
+    if (!RGUIDE || RGUIDE.slug !== slug || (I18N.lang && I18N.lang !== "en")) return "";
+    return unitsHtml(RGUIDE.html);
   };
+  const richHtml = (slug) => (RRICH && RRICH.slug === slug && (I18N.lang || "en") === RRICH.lang ? unitsHtml(RRICH.html) : "");
   async function resortView(slug) {
     const box = $("pbody");
     const res = await RES.catch(() => null);
@@ -3026,7 +3031,8 @@
     const s30 = x ? await s30Point(x.lat, x.lon) : null;
     if (st.slug !== slug) return;
     if (!x) { box.innerHTML = '<button class="back" data-back><span class="ms">arrow_back</span>Back</button><p class="msg">This resort could not be loaded.</p>'; box.querySelector("[data-back]").onclick = () => closeResort(); return; }
-    document.title = x.short + " snow depth today · SnowScope";
+    const richOn = !!richHtml(slug);
+    document.title = richOn && RRICH.title ? RRICH.title : x.short + " snow depth today · SnowScope";
     const ti = res.dates.indexOf(DATA.today) >= 0 ? res.dates.indexOf(DATA.today) : 2;
     const [d0, n0] = x.snow[ti] || [];
     const verdict = d0 == null ? "No snow data here yet." : d0 >= 100 ? "Deep snow." : d0 >= 40 ? "Good snow cover." : d0 >= 10 ? "Some snow." : d0 >= 1 ? "A thin layer." : "No snow yet.";
@@ -3042,6 +3048,7 @@
       adSlot("resort", x) +
       '<div class="sect">This season vs past winters</div><p class="note" id="rHElev" hidden></p><div id="rStrip"><div class="skel" style="height:118px"></div></div><div id="rHist"></div>' +
       '<div class="sect">Next 7 days</div><div id="rFc"></div>' +
+      richHtml(slug) +
       '<div class="sect">Nearby resorts</div>' + near.map(([km, y]) => resRow(y, null, (y.snow[ti] || [])[0], U.dist(Math.round(km)), (y.snow[ti] || [])[1])).join("") +
       guideHtml(slug) + appCard() + footer();
     const sVia = st.staysVia || "panel";
@@ -3062,7 +3069,17 @@
     if (hb) hb.insertAdjacentHTML("afterend", followResort(x) + (window.Follow && Follow.appCard ? Follow.appCard({ slug: x.slug, name: x.short || x.name, via: "resort" }) : ""));   // + "Get the app" card (owner 2026-11-12)
     // Stays card first under the snow numbers (2026-11-18, load-to-view): above Favourite / app card / snowfall row so
     // the map is in the half-open sheet on phones and the first screen on desktop; partner row right after it
-    if (hb) hb.insertAdjacentHTML("afterend", stayModule(x.lat, x.lon, x.short, sVia) + '<div data-ptrip data-where="panel" data-lat="' + x.lat + '" data-lon="' + x.lon + '" data-place="' + esc(x.short) + '"' + (st.stayDay ? ' data-day="' + st.stayDay + '"' : "") + "></div>");
+    // rich pages: the partner map sits inside the rich block under the forecast (owner 2026-11-20), campaign
+    // snowscope_resort_<slug>, check-in next weekend (19-26 Dec with ?stay=xmas), same consent / beacon rules
+    const rsb = richOn ? box.querySelector("[data-rstay]") : null;
+    if (rsb) {
+      const xmas = (() => { try { return new URLSearchParams(location.search).get("stay") === "xmas"; } catch { return false; } })();
+      const cin = xmas ? rsb.dataset.xcin : rsb.dataset.cin, cout = xmas ? rsb.dataset.xcout : rsb.dataset.cout;
+      rsb.outerHTML = stayModule(x.lat, x.lon, x.short, "resort", rsb.dataset.camp);
+      const d = box.querySelector("details.stays"), ci = d && d.querySelector("[data-cin]"), co = d && d.querySelector("[data-cout]");
+      if (ci && cin && cin >= stayToday()) { ci.value = cin; if (co && cout > cin) co.value = cout; }
+    }
+    if (hb) hb.insertAdjacentHTML("afterend", (richOn ? "" : stayModule(x.lat, x.lon, x.short, sVia)) + '<div data-ptrip data-where="panel" data-lat="' + x.lat + '" data-lon="' + x.lon + '" data-place="' + esc(x.short) + '"' + (st.stayDay ? ' data-day="' + st.stayDay + '"' : "") + "></div>");
     if (ra) ra.insertAdjacentHTML("afterend", '<div id="rLive"></div>');
     liveRows(x);
     jobsRow(x);

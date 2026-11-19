@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="sv" data-lang="sv" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Snörapport Järvsöbacken idag: 19 cm, nysnö och de närmaste dagarna</title>
+<meta name="description" content="Järvsöbacken idag: 19 cm snö på toppen, 5 cm nysnö på 3 dagar, 11 cm på väg. Till jul brukar det vara 22 cm, bästa månad februari.">
+<meta name="google-adsense-account" content="ca-pub-6693878731812238">
+<link rel="canonical" href="https://snowscope.app/resorts/jarvsobacken.sv.html">
+<link rel="alternate" hreflang="sv" href="https://snowscope.app/resorts/jarvsobacken.sv.html">
+<link rel="alternate" hreflang="en" href="https://snowscope.app/resorts/jarvsobacken.html">
+<link rel="alternate" hreflang="x-default" href="https://snowscope.app/resorts/jarvsobacken.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowScope">
+<meta property="og:title" content="Snörapport Järvsöbacken idag: 19 cm, nysnö och de närmaste dagarna">
+<meta property="og:description" content="Järvsöbacken idag: 19 cm snö på toppen, 5 cm nysnö på 3 dagar, 11 cm på väg. Till jul brukar det vara 22 cm, bästa månad februari.">
+<meta property="og:url" content="https://snowscope.app/resorts/jarvsobacken.sv.html">
+<meta property="og:image" content="https://snowscope.app/og/SCANDES.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F4F6F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0F17" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../icon-512.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..750&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
+<link rel="stylesheet" href="../site.css?v=4c0d1183">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SkiResort", "name": "Järvsöbacken", "url": "https://snowscope.app/resorts/jarvsobacken.sv.html", "geo": {"@type": "GeoCoordinates", "latitude": 61.71559, "longitude": 16.14929}, "address": {"@type": "PostalAddress", "addressCountry": "Sweden"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Kan man åka skidor i Järvsöbacken över jul?", "acceptedAnswer": {"@type": "Answer", "text": "Det beror på vintern. Det vanliga juldjupet är 22 cm, och bara 7 % av de senaste 46 vintrarna hade 50 cm den 1 januari. Idag: 19 cm."}}, {"@type": "Question", "name": "När är det bäst att åka till Järvsöbacken?", "acceptedAnswer": {"@type": "Answer", "text": "Februari: då toppar snön på ungefär 41 cm. Ett underlag på minst 30 cm varar vanligen från slutet av december till slutet av mars."}}, {"@type": "Question", "name": "Hur mycket snö får Järvsöbacken?", "acceptedAnswer": {"@type": "Answer", "text": "En typisk vinter toppar snön på toppen på ungefär 41 cm i början av februari. Den djupaste av 46 vintrar nådde 90 cm (1981-82), den tunnaste 19 cm (1991-92)."}}]}]}</script>
+</head>
+<body class="app" data-slug="jarvsobacken">
+<a class="skip" href="#pbody">Skip to the snow list</a>
+<div id="map" role="region" aria-label="Snow map. The panel lists the same values."></div>
+
+<header class="appbar glass">
+  <a class="brand" href="../" data-nav="map"><img src="../logo.svg" alt="" width="30" height="30"><span>SnowScope</span></a>
+  <div class="find" role="search"><span class="ms">search</span><input type="search" placeholder="Find a ski resort" aria-label="Find a ski resort" autocomplete="off"><ul hidden></ul></div>
+  <button class="btn icon only-s" data-find-open aria-label="Find a ski resort"><span class="ms">search</span></button>
+  <button class="btn alertbtn" data-fw-alert aria-label="Powder alert" title="Powder alert"><span class="ms f">notifications_active</span><span class="lbl hide-s">Powder alert</span></button>
+  <a class="btn tonal blogbtn" data-blog href="../blog/en/" aria-label="Snow reports" title="Snow reports"><span class="ms">article</span><span class="lbl hide-s">Snow reports</span></a>
+  <a class="btn tonal mabtn" data-ma href="../maroc.html" style="display:none" aria-label="Morocco weather" title="Morocco weather"><span class="ms">rainy</span><span class="lbl hide-s">Morocco weather</span></a>
+  <button class="btn icon langbtn" data-lang aria-label="Language"><span class="ms">language</span></button>
+  <div class="acct" id="acct"></div>
+</header>
+<div class="regions pills" id="regions" role="group" aria-label="Region"></div>
+<div class="mapctl">
+  <button class="mapbtn" id="layersBtn" aria-haspopup="dialog" aria-label="Map layers"><span class="ms">layers</span><span class="lbl">Layers</span></button>
+  <button class="mapbtn" id="btn3d" aria-pressed="false" aria-label="3D view"><span class="ms">view_in_ar</span><span class="lbl">3D</span></button>
+</div>
+
+<aside class="panel" id="panel" aria-label="Snow details">
+  <button class="grab" id="grab" aria-label="Expand or collapse the panel"></button>
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <button data-tab="map" aria-current="page"><span class="ms">map</span>Snow today</button>
+    <button data-tab="ski"><span class="ms">downhill_skiing</span>Where to ski</button>
+    <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
+    <button data-tab="you"><span class="ms">person</span>You</button>
+  </nav>
+  <div class="pbody" id="pbody" tabindex="-1"><div class="seo rich" id="rrich" data-for="jarvsobacken" data-lang="sv" data-title="Snörapport Järvsöbacken idag: 19 cm, nysnö och de närmaste dagarna"><div class="over">Skidort · Gavleborg, Sweden</div><h1>Snörapport Järvsöbacken idag: 19 cm, nysnö och de närmaste dagarna</h1><p class="lede rdaily" id="rdaily">Idag ligger <span data-cm="19">19 cm</span> snö på toppen av Järvsöbacken, med <span data-cm="11">11 cm</span> längst ner. <span data-cm="4">4 cm</span> föll de senaste 24 timmarna, <span data-cm="5">5 cm</span> på 3 dagar. De närmaste 3 dagarna ger ungefär <span data-cm="11">11 cm</span> till, så toppen når runt <span data-cm="26">26 cm</span> på söndag.</p><p class="rlangs"><a href="jarvsobacken.html" hreflang="en" lang="en">English</a></p><section class="rstay" id="rstay"><h2>Hotell och stugor nära pisterna i Järvsöbacken</h2><div class="staybox still" data-rstay data-lat="61.71559" data-lon="16.14929" data-place="Järvsöbacken" data-camp="snowscope_resort_jarvsobacken" data-cin="2026-11-20" data-cout="2026-11-22" data-xcin="2026-12-19" data-xcout="2026-12-26"><svg class="pv" viewBox="0 0 120 60" aria-hidden="true"><rect width="120" height="60" rx="6"/><path d="M0 22h120M0 40h120M30 0v60M70 0v60M95 0v60" class="rd"/><circle cx="60" cy="27" r="7" class="pin"/><circle cx="60" cy="27" r="2.5" class="pinc"/></svg><p>Vår partners karta visar aktuella priser för dina datum och använder kakor.</p><div class="acts3"><button class="btn ink" type="button" data-rstay-show><span class="ms">map</span>Visa hotellkartan</button><a class="btn tonal" target="_blank" rel="sponsored noopener" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;address=J%C3%A4rvs%C3%B6backen%2C%20Sweden&amp;checkin=2026-11-20&amp;checkout=2026-11-22&amp;adults=2&amp;campaign=snowscope_resort_jarvsobacken_allez"><span class="ms">open_in_new</span>Öppna boenden</a></div></div><p>Boende nära pisterna:</p><ul class="stl"><li>JBP hotell<small> · Hotel</small></li><li>Bergshotellet<small> · Hotel</small></li><li>Top Resort Järvsö<small> · Hotel</small></li><li>Järvsö crêperie &amp; nattlogi<small> · Chalet</small></li><li>Toppstugorna<small> · Hotel</small></li></ul><p><a target="_blank" rel="sponsored noopener" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=61.7156&amp;lng=16.1493&amp;address=J%C3%A4rvs%C3%B6backen&amp;checkin=2026-11-20&amp;checkout=2026-11-22&amp;adults=2&amp;lang=sv&amp;campaign=snowscope_resort_jarvsobacken">Hotellkarta runt Järvsöbacken</a></p><p class="partner">Partner · vi kan få provision på bokningar, utan extra kostnad för dig.</p></section><section class="rhist" id="rhist"><h2>Järvsöbacken under tidigare vintrar</h2><figure class="rchart"><svg viewBox="0 0 340 150" role="img" aria-label="Snödjup genom vintern: det vanliga djupet, normalspannet och den här vintern hittills." preserveAspectRatio="none"><title>Snödjup genom vintern: det vanliga djupet, normalspannet och den här vintern hittills.</title><line x1="30" x2="332" y1="130.0" y2="130.0" class="g"/><text x="26" y="134.0" class="t" text-anchor="end">0</text><line x1="30" x2="332" y1="69.0" y2="69.0" class="g"/><text x="26" y="73.0" class="t" text-anchor="end">50</text><line x1="30" x2="332" y1="8.0" y2="8.0" class="g"/><text x="26" y="12.0" class="t" text-anchor="end">100</text><polygon points="30.0,130.0 38.7,130.0 47.4,130.0 56.1,128.8 64.8,128.8 73.5,123.9 82.2,120.2 90.9,117.8 99.6,111.7 108.3,105.6 117.0,100.7 125.7,93.4 134.4,92.2 143.1,84.9 151.8,82.4 160.5,76.3 169.2,73.9 177.9,71.4 186.6,66.6 195.3,64.1 204.0,65.3 212.7,61.7 221.4,66.6 230.1,69.0 238.8,70.2 247.5,71.4 256.2,72.7 264.9,78.8 273.6,98.3 282.3,109.3 291.0,123.9 299.7,128.8 308.4,130.0 317.1,130.0 325.8,130.0 325.8,130.0 317.1,130.0 308.4,130.0 299.7,130.0 291.0,130.0 282.3,128.8 273.6,127.6 264.9,123.9 256.2,121.5 247.5,112.9 238.8,109.3 230.1,101.9 221.4,99.5 212.7,98.3 204.0,97.1 195.3,98.3 186.6,98.3 177.9,95.8 169.2,99.5 160.5,103.2 151.8,108.0 143.1,114.1 134.4,117.8 125.7,117.8 117.0,121.5 108.3,126.3 99.6,127.6 90.9,128.8 82.2,130.0 73.5,130.0 64.8,130.0 56.1,130.0 47.4,130.0 38.7,130.0 30.0,130.0" class="band"/><polyline points="30.0,130.0 38.7,130.0 47.4,130.0 56.1,130.0 64.8,130.0 73.5,128.8 82.2,127.6 90.9,123.9 99.6,121.5 108.3,116.6 117.0,111.7 125.7,108.0 134.4,103.2 143.1,98.3 151.8,93.4 160.5,92.2 169.2,91.0 177.9,84.9 186.6,81.2 195.3,80.0 204.0,81.2 212.7,84.9 221.4,86.1 230.1,84.9 238.8,86.1 247.5,87.3 256.2,99.5 264.9,105.6 273.6,115.4 282.3,125.1 291.0,128.8 299.7,130.0 308.4,130.0 317.1,130.0 325.8,130.0" class="med" fill="none"/><polyline points="78.5,125.1 79.7,123.9 81.0,123.9 82.2,121.5 83.4,116.6 84.7,112.9 85.9,119.0 87.2,121.5 88.4,121.5 89.7,120.2 90.9,116.6" class="now" fill="none"/><text x="30.0" y="144" class="t" text-anchor="middle">O</text><text x="68.5" y="144" class="t" text-anchor="middle">N</text><text x="105.8" y="144" class="t" text-anchor="middle">D</text><text x="144.3" y="144" class="t" text-anchor="middle">J</text><text x="182.9" y="144" class="t" text-anchor="middle">F</text><text x="218.9" y="144" class="t" text-anchor="middle">M</text><text x="257.4" y="144" class="t" text-anchor="middle">A</text><text x="294.7" y="144" class="t" text-anchor="middle">M</text><text x="26" y="10" class="t" text-anchor="end" font-size="7">cm</text></svg><figcaption><span class="lg"><i class="band"></i>Normalt spann</span><span class="lg"><i class="med"></i>Vanligt djup</span><span class="lg"><i class="now"></i>Den här vintern</span></figcaption></figure><p>Så här brukar snön byggas upp i Järvsöbacken (<span data-m="274">274 m</span>), enligt 46 tidigare vintrar.</p><p>Julveckan bjuder normalt på <span data-cm="22">22 cm</span> (<span data-cm="11">11 cm</span> till <span data-cm="31">31 cm</span> i den mittersta hälften av vintrarna).</p><p>I mitten av februari är det vanliga djupet <span data-cm="40">40 cm</span> (<span data-cm="25">25 cm</span>–<span data-cm="53">53 cm</span>).</p><p>februari är den djupaste månaden, med runt <span data-cm="41">41 cm</span>.</p><p>2 % av vintrarna hade minst <span data-cm="50">50 cm</span> den 15 december, och 7 % den 1 januari.</p><p>Den snörikaste vintern var 1981-82 (<span data-cm="90">90 cm</span> som mest); den sämsta 1991-92 (<span data-cm="19">19 cm</span>).</p><p>Säsongen med minst <span data-cm="30">30 cm</span> går normalt från slutet av december till slutet av mars (103 dagar).</p><p>Den här vintern: <span data-cm="11">11 cm</span> den 19 november (vanligt: <span data-cm="5">5 cm</span>).</p></section><section class="rplan" id="rplan"><h2>Skidåkning i Järvsöbacken: det praktiska</h2><p>Pisterna går från <span data-m="178">178 m</span> till <span data-m="370">370 m</span> (<span data-m="192">192 m</span> fallhöjd), med <span data-km="11.0">11 km</span> markerade nedfarter och 13 liftar.</p><p>Flygplatser: Are Ostersund (OSD, <span data-km="185.8">186 km</span>), Stockholm Arlanda (ARN, <span data-km="247.7">248 km</span>), Oslo Gardermoen (OSL, <span data-km="315.3">315 km</span>).</p></section><section class="rmore"><h2>Nära Järvsöbacken</h2><ul><li><a href="orsa_gronklitt.sv.html">Orsa Grönklitt</a> · <span data-cm="27">27 cm</span> idag · <span data-km="101.5">101 km</span> bort</li><li><a href="kungsberget.sv.html">Kungsberget</a> · <span data-cm="7">7 cm</span> idag · <span data-km="108.5">108 km</span> bort</li><li><a href="klovsjo_storhogna.sv.html">Klövsjö / Storhogna</a> · <span data-cm="12">12 cm</span> idag · <span data-km="137.1">137 km</span> bort</li></ul><p><a href="https://snowscope.app/blog/en/region/scandes.html">Snön idag: Skandinavien</a> · <a href="https://snowscope.app/planner.html?region=SCANDES">Reseplanerare</a> · <a href="./">Alla skidorter</a></p></section><section class="rfaq"><h2>Järvsöbacken: snabba svar</h2><h3>Kan man åka skidor i Järvsöbacken över jul?</h3><p>Det beror på vintern. Det vanliga juldjupet är <span data-cm="22">22 cm</span>, och bara 7 % av de senaste 46 vintrarna hade <span data-cm="50">50 cm</span> den 1 januari. Idag: <span data-cm="19">19 cm</span>.</p><h3>När är det bäst att åka till Järvsöbacken?</h3><p>Februari: då toppar snön på ungefär <span data-cm="41">41 cm</span>. Ett underlag på minst <span data-cm="30">30 cm</span> varar vanligen från slutet av december till slutet av mars.</p><h3>Hur mycket snö får Järvsöbacken?</h3><p>En typisk vinter toppar snön på toppen på ungefär <span data-cm="41">41 cm</span> i början av februari. Den djupaste av 46 vintrar nådde <span data-cm="90">90 cm</span> (1981-82), den tunnaste <span data-cm="19">19 cm</span> (1991-92).</p></section></div></div>
+</aside>
+
+<div class="timeline glass" id="timeline">
+  <button class="play" id="play" aria-label="Play the days"><span class="ms f">play_arrow</span></button>
+  <div class="days" id="days" role="group" aria-label="Day"></div>
+</div>
+<div class="legend glass" id="legend"></div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<nav class="bottomnav" id="bnav" aria-label="Sections">
+  <button data-tab="map" aria-current="page"><span class="ms f">map</span>Map</button>
+  <button data-tab="ski"><span class="ms">downhill_skiing</span>Where to ski</button>
+  <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
+  <button data-tab="you"><span class="ms">person</span>You</button>
+</nav>
+<script src="../i18n.js?v=69ab69e5"></script>
+<script>/* Morocco weather reel page for visitors in Morocco / Darija (tools/morocco_reel.py) */(function(){try{var tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"",l=(window.I18N&&I18N.lang)||"",n=navigator.language||"",a=document.querySelector("[data-ma]");if(a&&(/^Africa\/(Casablanca|El_Aaiun)$/.test(tz)||l==="ar"||/-MA$/i.test(n))){var t=l==="ar"?"طقس المغرب":l==="fr"?"Météo Maroc":"Morocco weather";a.querySelector(".lbl").textContent=t;a.title=t;a.setAttribute("aria-label",t);if(l==="ar"||l==="fr")a.href=a.getAttribute("href")+"?lang="+l;a.style.display="";}}catch(e){}})();</script>
+<script src="../core.js?v=0aa25603"></script>
+<script src="../follow.js?v=a7609e9b" defer></script>
+<script src="../partners.js?v=08f61494" defer></script>
+<script src="../post.js?v=39100f9c" defer></script>
+<script src="../expert.js?v=7ed56ff3"></script>
+<script src="../charts.js?v=5c43184a"></script>
+<script src="../app.js?v=f4fda424"></script>
+</body>
+</html>

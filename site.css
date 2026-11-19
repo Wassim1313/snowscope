@@ -293,6 +293,24 @@ body.app .legend{position:fixed;left:auto;right:12px;bottom:84px;z-index:14;max-
 .toast{position:fixed;top:132px;z-index:30}
 .bottomnav{display:none}
 .seo h2{font-size:15px;margin:14px 0 4px}.seo ul{padding-left:18px;margin:0}
+/* rich resort pages (docs/SEO_RESORT_PAGES.md): daily paragraph, partner map, history chart, plan, FAQ */
+.rich h1{font-size:22px;line-height:27px}.rich h3{font-size:14px;margin:12px 0 2px}.rich p{margin:0 0 8px;font-size:14px;line-height:1.45}
+.rich .rlangs{font-size:12px;color:var(--ink3)}.rich .partner{font-size:12px;color:var(--ink3)}.rich ul.stl{list-style:none;padding:0;margin:0 0 8px}
+.rich ul.stl li{padding:3px 0;border-bottom:1px solid var(--hair);font-size:14px}.rich ul.stl small{color:var(--ink3)}
+.rich .richlist{font-size:13px}.rich section{margin:12px 0}
+.rchart{margin:6px 0 10px}.rchart svg{width:100%;height:150px;display:block;color:var(--ink3);font-family:inherit}
+.rchart .g{stroke:var(--hair);stroke-width:1}.rchart .t{fill:var(--ink3);font-size:9px}
+.rchart .band{fill:var(--accent);fill-opacity:.16}.rchart .med{stroke:var(--ink2);stroke-width:2;stroke-linejoin:round}
+.rchart .now{stroke:var(--accent);stroke-width:2;stroke-linejoin:round}
+.rchart figcaption{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--ink3);margin-top:4px}
+.rchart .lg i{display:inline-block;width:14px;height:8px;border-radius:2px;margin-right:5px;vertical-align:middle}
+.rchart .lg i.band{background:var(--accent);opacity:.3}.rchart .lg i.med{background:var(--ink2);height:3px}.rchart .lg i.now{background:var(--accent);height:3px}
+.rich .staybox.still{border:1px solid var(--hair);border-radius:14px;padding:12px;margin-bottom:8px;background:var(--surface2)}
+.rich .staybox .pv{width:100%;height:72px;display:block;margin-bottom:8px}.rich .staybox .pv rect{fill:var(--surface3)}
+.rich .staybox .pv .rd{stroke:var(--hair);stroke-width:2}.rich .staybox .pv .pin{fill:var(--accent)}.rich .staybox .pv .pinc{fill:#fff}
+.rich .staybox p{font-size:13px;color:var(--ink2)}.homerich h4{font-size:13px;margin:10px 0 2px}.homerich ul{columns:2;padding-left:18px;margin:0;font-size:13px}
+.richlist{font-size:13px;line-height:1.7;margin:4px 0 10px}.richlist b{font-weight:600}
+[dir=rtl] .rchart .t{direction:ltr}
 .homeinfo{margin-top:22px;padding-top:12px;border-top:1px solid var(--hair);font-size:14px;color:var(--ink2)}.homeinfo h2{font-size:16px;margin:0 0 6px;color:var(--ink)}.homeinfo h3{font-size:14px;margin:14px 0 4px;color:var(--ink)}.homeinfo ul{padding-left:18px;margin:0}.homeinfo li{margin:3px 0}
 .rguide{margin-top:22px;padding-top:12px;border-top:1px solid var(--hair);font-size:14px;line-height:1.55;color:var(--ink2)}.rguide h2{font-size:16px;margin:16px 0 6px;color:var(--ink)}.rguide h2:first-child{margin-top:0}.rguide h3{font-size:14px;margin:12px 0 3px;color:var(--ink)}.rguide p{margin:0 0 8px}.rguide table{width:100%;border-collapse:collapse;margin:4px 0 10px;font-size:13px}.rguide th,.rguide td{text-align:left;padding:4px 6px 4px 0;border-bottom:1px solid var(--hair);vertical-align:top}.rguide thead th{color:var(--ink3,var(--ink2));font-weight:600;font-size:12px}.rguide td{font-variant-numeric:tabular-nums}.rguide a{color:inherit}.rguide .tw{overflow-x:auto;max-width:100%}
 /* lists */
@@ -1002,4 +1020,27 @@ td.plk,.plk{color:var(--gold-ink)}td.plk .ms{font-size:16px;vertical-align:-3px}
 .btn.plantrip .ts{display:none}
 @media (max-width:440px){.btn.plantrip{padding-inline:8px;gap:4px}.btn.plantrip .t{display:none}.btn.plantrip .ts{display:inline;font-size:13px}.btn.plantrip .ms{font-size:18px}}
 @media (max-width:360px){.btn.plantrip .ts{display:none}.btn.plantrip{padding-inline:9px}}
+/* planner promo: Christmas strip under the header + pixel skier on the home map (core.js planPromo) */
+.xmasbar{display:flex;align-items:center;gap:10px;justify-content:center;flex-wrap:wrap;padding:9px 14px;background:#0B1E4A;color:#fff;text-decoration:none;font-weight:700;font-size:14.5px;text-align:center}
+.xmasbar .go{background:#FFD23F;color:#0B1E4A;border:2px solid #fff;padding:4px 9px;font-weight:800;font-size:13px;letter-spacing:.04em}
+.xmasbar:hover .go{background:#FFDD66}
+.xmasbar.inpanel{margin:6px 12px 4px;border-radius:12px;padding:8px 10px;font-size:13.5px;flex:none}
+.planbud{position:fixed;z-index:16;right:14px;bottom:170px;display:flex;align-items:flex-end;gap:6px;pointer-events:none}
+.planbud a,.planbud button{pointer-events:auto}
+.planbud .bub{position:relative;background:#fff;color:#0B1E4A;border:3px solid #0B1E4A;box-shadow:3px 3px 0 #0B1E4A;padding:8px 10px;font-weight:800;font-size:13.5px;text-decoration:none;margin-bottom:46px;white-space:nowrap}
+.planbud .bub::after{content:"";position:absolute;right:-12px;bottom:8px;border:6px solid transparent;border-left:9px solid #0B1E4A}
+.planbud .sk{display:block;width:64px;height:64px;filter:drop-shadow(2px 3px 0 rgba(11,30,74,.35))}
+.planbud .sk svg{display:block;width:64px;height:64px;image-rendering:pixelated}
+.planbud .fb{opacity:0}.planbud:not(.calm) .fa{animation:pbA .9s steps(1) infinite}.planbud:not(.calm) .fb{animation:pbB .9s steps(1) infinite}
+@keyframes pbA{0%{opacity:1}50%{opacity:0}}@keyframes pbB{0%{opacity:0}50%{opacity:1}}
+.planbud .x{position:absolute;right:-6px;top:-10px;width:28px;height:28px;border-radius:50%;border:2px solid #0B1E4A;background:#fff;color:#0B1E4A;font-size:13px;line-height:1;cursor:pointer;padding:0}
+@media (max-width:760px){
+  .planbud.left{flex-direction:row-reverse}
+  .planbud.left .bub{margin-bottom:40px}
+  .planbud.left .bub::after{right:auto;left:-12px;border-left-color:transparent;border-right:9px solid #0B1E4A}
+  .planbud.left .x{right:auto;left:46px;top:-10px}
+  .planbud .bub{font-size:12.5px;padding:7px 8px}
+  .panel.half~.planbud,.panel.full~.planbud{opacity:0;pointer-events:none}.panel.half~.planbud *,.panel.full~.planbud *{pointer-events:none}
+}
+@media (prefers-reduced-motion:reduce){.planbud .fa,.planbud .fb{animation:none}}
 

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="nb-NO" data-lang="nb" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Snødybde Trysil i dag: 7 cm på toppen, varsel og bakker</title>
+<meta name="description" content="Snødybde i Trysil i dag (7 cm på toppen), nysnø, 3 dager fram, 46 tidligere vintre, priser, flyplasser og overnatting.">
+<meta name="google-adsense-account" content="ca-pub-6693878731812238">
+<link rel="canonical" href="https://snowscope.app/resorts/trysil.nb.html">
+<link rel="alternate" hreflang="nb" href="https://snowscope.app/resorts/trysil.nb.html">
+<link rel="alternate" hreflang="en" href="https://snowscope.app/resorts/trysil.html">
+<link rel="alternate" hreflang="x-default" href="https://snowscope.app/resorts/trysil.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowScope">
+<meta property="og:title" content="Snødybde Trysil i dag: 7 cm på toppen, varsel og bakker">
+<meta property="og:description" content="Snødybde i Trysil i dag (7 cm på toppen), nysnø, 3 dager fram, 46 tidligere vintre, priser, flyplasser og overnatting.">
+<meta property="og:url" content="https://snowscope.app/resorts/trysil.nb.html">
+<meta property="og:image" content="https://snowscope.app/og/SCANDES.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F4F6F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0F17" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../icon-512.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..750&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
+<link rel="stylesheet" href="../site.css?v=4c0d1183">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SkiResort", "name": "Trysil", "url": "https://snowscope.app/resorts/trysil.nb.html", "geo": {"@type": "GeoCoordinates", "latitude": 61.31419, "longitude": 12.2052}, "address": {"@type": "PostalAddress", "addressCountry": "Norway"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Er det snø i Trysil til jul?", "acceptedAnswer": {"@type": "Answer", "text": "Som regel ja. Toppen har omtrent 52 cm til jul, og 67 % av de siste 46 vintrene hadde minst 50 cm 1. januar. I dag: 7 cm."}}, {"@type": "Question", "name": "Når er det best å dra til Trysil?", "acceptedAnswer": {"@type": "Answer", "text": "Mars: da topper snøen på omtrent 87 cm. Et underlag på minst 30 cm varer vanligvis fra slutten av november til tidlig i mai."}}, {"@type": "Question", "name": "Hvor dyp blir snøen i Trysil?", "acceptedAnswer": {"@type": "Answer", "text": "En typisk vinter topper snøen på toppen på omtrent 87 cm i slutten av mars. Den dypeste av 46 vintre nådde 146 cm (1987-88), den tynneste 54 cm (1995-96)."}}]}]}</script>
+</head>
+<body class="app" data-slug="trysil">
+<a class="skip" href="#pbody">Skip to the snow list</a>
+<div id="map" role="region" aria-label="Snow map. The panel lists the same values."></div>
+
+<header class="appbar glass">
+  <a class="brand" href="../" data-nav="map"><img src="../logo.svg" alt="" width="30" height="30"><span>SnowScope</span></a>
+  <div class="find" role="search"><span class="ms">search</span><input type="search" placeholder="Find a ski resort" aria-label="Find a ski resort" autocomplete="off"><ul hidden></ul></div>
+  <button class="btn icon only-s" data-find-open aria-label="Find a ski resort"><span class="ms">search</span></button>
+  <button class="btn alertbtn" data-fw-alert aria-label="Powder alert" title="Powder alert"><span class="ms f">notifications_active</span><span class="lbl hide-s">Powder alert</span></button>
+  <a class="btn tonal blogbtn" data-blog href="../blog/en/" aria-label="Snow reports" title="Snow reports"><span class="ms">article</span><span class="lbl hide-s">Snow reports</span></a>
+  <a class="btn tonal mabtn" data-ma href="../maroc.html" style="display:none" aria-label="Morocco weather" title="Morocco weather"><span class="ms">rainy</span><span class="lbl hide-s">Morocco weather</span></a>
+  <button class="btn icon langbtn" data-lang aria-label="Language"><span class="ms">language</span></button>
+  <div class="acct" id="acct"></div>
+</header>
+<div class="regions pills" id="regions" role="group" aria-label="Region"></div>
+<div class="mapctl">
+  <button class="mapbtn" id="layersBtn" aria-haspopup="dialog" aria-label="Map layers"><span class="ms">layers</span><span class="lbl">Layers</span></button>
+  <button class="mapbtn" id="btn3d" aria-pressed="false" aria-label="3D view"><span class="ms">view_in_ar</span><span class="lbl">3D</span></button>
+</div>
+
+<aside class="panel" id="panel" aria-label="Snow details">
+  <button class="grab" id="grab" aria-label="Expand or collapse the panel"></button>
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <button data-tab="map" aria-current="page"><span class="ms">map</span>Snow today</button>
+    <button data-tab="ski"><span class="ms">downhill_skiing</span>Where to ski</button>
+    <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
+    <button data-tab="you"><span class="ms">person</span>You</button>
+  </nav>
+  <div class="pbody" id="pbody" tabindex="-1"><div class="seo rich" id="rrich" data-for="trysil" data-lang="nb" data-title="Snødybde Trysil i dag: 7 cm på toppen, varsel og bakker"><div class="over">Skisted · Innlandet, Norway</div><h1>Snødybde Trysil i dag: 7 cm på toppen, varsel og bakker</h1><p class="lede rdaily" id="rdaily">I dag ligger det <span data-cm="7">7 cm</span> snø på toppen av Trysil og omtrent <span data-cm="2">2 cm</span> nederst. Ingen nysnø de siste 3 dagene. Ikke noe nevneverdig snøfall de neste 3 dagene. Heisene starter 4 desember.</p><p class="rlangs"><a href="trysil.html" hreflang="en" lang="en">English</a></p><section class="rstay" id="rstay"><h2>Overnatting nær Trysil</h2><div class="staybox still" data-rstay data-lat="61.31419" data-lon="12.2052" data-place="Trysil" data-camp="snowscope_resort_trysil" data-cin="2026-11-20" data-cout="2026-11-22" data-xcin="2026-12-19" data-xcout="2026-12-26"><svg class="pv" viewBox="0 0 120 60" aria-hidden="true"><rect width="120" height="60" rx="6"/><path d="M0 22h120M0 40h120M30 0v60M70 0v60M95 0v60" class="rd"/><circle cx="60" cy="27" r="7" class="pin"/><circle cx="60" cy="27" r="2.5" class="pinc"/></svg><p>Partnerens kart viser aktuelle priser for datoene dine og bruker informasjonskapsler.</p><div class="acts3"><button class="btn ink" type="button" data-rstay-show><span class="ms">map</span>Vis hotellkartet</button><a class="btn tonal" target="_blank" rel="sponsored noopener" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;address=Trysil%2C%20Norway&amp;checkin=2026-11-20&amp;checkout=2026-11-22&amp;adults=2&amp;campaign=snowscope_resort_trysil_allez"><span class="ms">open_in_new</span>Åpne overnatting</a></div></div><p>Overnatting nær bakkene:</p><ul class="stl"><li>Radisson Blu Resort Trysil<small> · Hotel</small></li><li>SkiStar Lodge Trysil<small> · Hotel</small></li><li>Trysil Hotell<small> · Hotel</small></li><li>Trysil Hotel<small> · Hotel</small></li><li>15 Elghytta<small> · Chalet</small></li></ul><p><a target="_blank" rel="sponsored noopener" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=61.3142&amp;lng=12.2052&amp;address=Trysil&amp;checkin=2026-11-20&amp;checkout=2026-11-22&amp;adults=2&amp;lang=no&amp;campaign=snowscope_resort_trysil">Hotellkart rundt Trysil</a></p><p class="partner">Partner · vi kan få provisjon på bestillinger, uten ekstra kostnad for deg.</p></section><section class="rhist" id="rhist"><h2>Trysil i tidligere vintre</h2><figure class="rchart"><svg viewBox="0 0 340 150" role="img" aria-label="Snødybde gjennom vinteren: den vanlige dybden, normalspennet og denne vinteren så langt." preserveAspectRatio="none"><title>Snødybde gjennom vinteren: den vanlige dybden, normalspennet og denne vinteren så langt.</title><line x1="30" x2="332" y1="130.0" y2="130.0" class="g"/><text x="26" y="134.0" class="t" text-anchor="end">0</text><line x1="30" x2="332" y1="69.0" y2="69.0" class="g"/><text x="26" y="73.0" class="t" text-anchor="end">75</text><line x1="30" x2="332" y1="8.0" y2="8.0" class="g"/><text x="26" y="12.0" class="t" text-anchor="end">150</text><polygon points="30.0,130.0 38.7,130.0 47.4,128.4 56.1,125.1 64.8,122.7 73.5,115.4 82.2,107.2 90.9,101.5 99.6,94.2 108.3,91.0 117.0,90.1 125.7,85.3 134.4,81.2 143.1,72.3 151.8,69.0 160.5,64.1 169.2,60.9 177.9,57.6 186.6,56.0 195.3,51.9 204.0,54.4 212.7,54.4 221.4,49.5 230.1,47.9 238.8,47.9 247.5,48.7 256.2,48.7 264.9,49.5 273.6,51.9 282.3,53.5 291.0,62.5 299.7,70.6 308.4,90.1 317.1,115.4 325.8,130.0 325.8,130.0 317.1,130.0 308.4,130.0 299.7,115.4 291.0,95.8 282.3,82.8 273.6,77.9 264.9,73.9 256.2,70.6 247.5,69.8 238.8,70.6 230.1,69.8 221.4,70.6 212.7,69.0 204.0,72.3 195.3,72.3 186.6,74.7 177.9,77.1 169.2,80.4 160.5,86.1 151.8,87.7 143.1,93.4 134.4,99.1 125.7,103.2 117.0,107.2 108.3,114.5 99.6,117.8 90.9,124.3 82.2,126.7 73.5,128.4 64.8,130.0 56.1,130.0 47.4,130.0 38.7,130.0 30.0,130.0" class="band"/><polyline points="30.0,130.0 38.7,130.0 47.4,130.0 56.1,128.4 64.8,126.7 73.5,123.5 82.2,118.6 90.9,115.4 99.6,107.2 108.3,103.2 117.0,97.5 125.7,93.4 134.4,87.7 143.1,84.5 151.8,79.6 160.5,75.5 169.2,71.4 177.9,68.2 186.6,67.4 195.3,64.1 204.0,64.1 212.7,64.1 221.4,61.7 230.1,61.7 238.8,60.1 247.5,59.2 256.2,60.9 264.9,60.1 273.6,61.7 282.3,69.8 291.0,77.9 299.7,92.6 308.4,113.7 317.1,130.0 325.8,130.0" class="med" fill="none"/><polyline points="78.5,130.0 79.7,127.6 81.0,125.9 82.2,122.7 83.4,121.1 84.7,121.1 85.9,121.9 87.2,124.3 88.4,125.9 89.7,125.9 90.9,125.9" class="now" fill="none"/><text x="30.0" y="144" class="t" text-anchor="middle">O</text><text x="68.5" y="144" class="t" text-anchor="middle">N</text><text x="105.8" y="144" class="t" text-anchor="middle">D</text><text x="144.3" y="144" class="t" text-anchor="middle">J</text><text x="182.9" y="144" class="t" text-anchor="middle">F</text><text x="218.9" y="144" class="t" text-anchor="middle">M</text><text x="257.4" y="144" class="t" text-anchor="middle">A</text><text x="294.7" y="144" class="t" text-anchor="middle">M</text><text x="26" y="10" class="t" text-anchor="end" font-size="7">cm</text></svg><figcaption><span class="lg"><i class="band"></i>Normalt spenn</span><span class="lg"><i class="med"></i>Vanlig dybde</span><span class="lg"><i class="now"></i>Denne vinteren</span></figcaption></figure><p>Slik bygger snøen seg vanligvis opp i Trysil (<span data-m="758">758 m</span>), ifølge 46 tidligere vintre.</p><p>Til jul ligger det vanligvis <span data-cm="52">52 cm</span> på toppen; halvparten av vintrene havner mellom <span data-cm="38">38 cm</span> og <span data-cm="61">61 cm</span>.</p><p>15. februar ligger det vanligvis <span data-cm="81">81 cm</span>, mellom <span data-cm="71">71 cm</span> og <span data-cm="95">95 cm</span> en normal vinter.</p><p>Den snørikeste måneden er mars, da dekket topper på cirka <span data-cm="87">87 cm</span>.</p><p>Et 50 cm underlag var der 15. desember i 28 % av vintrene, og ved nyttår i 67 %.</p><p>Den snørikeste vinteren var 1987-88 (<span data-cm="146">146 cm</span> på det meste); den dårligste 1995-96 (<span data-cm="54">54 cm</span>).</p><p>Sesongen med minst <span data-cm="30">30 cm</span> går normalt fra slutten av november til tidlig i mai (172 dager).</p><p>Denne vinteren så langt: <span data-cm="5">5 cm</span> den 19 november, mot vanlige <span data-cm="18">18 cm</span> for datoen.</p></section><section class="rplan" id="rplan"><h2>Planlegg en tur til Trysil</h2><p>Trysil kjøres mellom <span data-m="407">407 m</span> og <span data-m="1109">1 109 m</span>: <span data-m="702">702 m</span> fallhøyde, <span data-km="101.0">101 km</span> bakker, 40 heiser.</p><p>Et dagskort koster omtrent 803 kr; 6 dager 3 621 kr. Netter fra cirka 850 kr per person.</p><p>Nærmeste flyplasser: Oslo Gardermoen (OSL, <span data-km="137.8">138 km</span>), Are Ostersund (OSD, <span data-km="242.3">242 km</span>), Trondheim Vaernes (TRD, <span data-km="248.0">248 km</span>).</p><p><a href="https://snowscope.app/planner.html?region=SCANDES">Åpne reiseplanleggeren for Skandinavia</a></p></section><section class="rmore"><h2>Nær Trysil</h2><ul><li><a href="furutangen_skisenter.nb.html">Furutangen skisenter</a> · <span data-cm="3">3 cm</span> i dag · <span data-km="22.4">22 km</span> unna</li><li><a href="stoten_i_salen.html">Stöten i Sälen</a> · <span data-cm="18">18 cm</span> i dag · <span data-km="37.1">37 km</span> unna</li><li><a href="tandadalen.html">Tandådalen</a> · <span data-cm="11">11 cm</span> i dag · <span data-km="45.9">46 km</span> unna</li></ul><p><a href="https://snowscope.app/blog/en/region/scandes.html">Snøen i dag: Skandinavia</a> · <a href="https://snowscope.app/planner.html?region=SCANDES">Reiseplanlegger</a> · <a href="./">Alle skisteder</a></p></section><section class="rfaq"><h2>Spørsmål om Trysil</h2><h3>Er det snø i Trysil til jul?</h3><p>Som regel ja. Toppen har omtrent <span data-cm="52">52 cm</span> til jul, og 67 % av de siste 46 vintrene hadde minst <span data-cm="50">50 cm</span> 1. januar. I dag: <span data-cm="7">7 cm</span>.</p><h3>Når er det best å dra til Trysil?</h3><p>Mars: da topper snøen på omtrent <span data-cm="87">87 cm</span>. Et underlag på minst <span data-cm="30">30 cm</span> varer vanligvis fra slutten av november til tidlig i mai.</p><h3>Hvor dyp blir snøen i Trysil?</h3><p>En typisk vinter topper snøen på toppen på omtrent <span data-cm="87">87 cm</span> i slutten av mars. Den dypeste av 46 vintre nådde <span data-cm="146">146 cm</span> (1987-88), den tynneste <span data-cm="54">54 cm</span> (1995-96).</p></section></div></div>
+</aside>
+
+<div class="timeline glass" id="timeline">
+  <button class="play" id="play" aria-label="Play the days"><span class="ms f">play_arrow</span></button>
+  <div class="days" id="days" role="group" aria-label="Day"></div>
+</div>
+<div class="legend glass" id="legend"></div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<nav class="bottomnav" id="bnav" aria-label="Sections">
+  <button data-tab="map" aria-current="page"><span class="ms f">map</span>Map</button>
+  <button data-tab="ski"><span class="ms">downhill_skiing</span>Where to ski</button>
+  <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
+  <button data-tab="you"><span class="ms">person</span>You</button>
+</nav>
+<script src="../i18n.js?v=69ab69e5"></script>
+<script>/* Morocco weather reel page for visitors in Morocco / Darija (tools/morocco_reel.py) */(function(){try{var tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"",l=(window.I18N&&I18N.lang)||"",n=navigator.language||"",a=document.querySelector("[data-ma]");if(a&&(/^Africa\/(Casablanca|El_Aaiun)$/.test(tz)||l==="ar"||/-MA$/i.test(n))){var t=l==="ar"?"طقس المغرب":l==="fr"?"Météo Maroc":"Morocco weather";a.querySelector(".lbl").textContent=t;a.title=t;a.setAttribute("aria-label",t);if(l==="ar"||l==="fr")a.href=a.getAttribute("href")+"?lang="+l;a.style.display="";}}catch(e){}})();</script>
+<script src="../core.js?v=0aa25603"></script>
+<script src="../follow.js?v=a7609e9b" defer></script>
+<script src="../partners.js?v=08f61494" defer></script>
+<script src="../post.js?v=39100f9c" defer></script>
+<script src="../expert.js?v=7ed56ff3"></script>
+<script src="../charts.js?v=5c43184a"></script>
+<script src="../app.js?v=f4fda424"></script>
+</body>
+</html>

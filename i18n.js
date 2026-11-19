@@ -334,7 +334,10 @@
     "Sign in": ["Se connecter", "Anmelden", "Accedi", "Iniciar sesión", "دخل"],
     "Get the app": ["Obtenir l'appli", "App holen", "Scarica l'app", "Descargar la app", "جيب التطبيق"],
     "Plan ski trip": ["Planifier mon séjour", "Skiurlaub planen", "Pianifica il viaggio", "Planear viaje de esquí", "خطط لرحلة التزلج"],
-    "Plan trip": ["Séjour", "Planen", "Viaggio", "Viaje", "الرحلة"],
+    "Plan": ["Planifier", "Planen", "Pianifica", "Planear", "خطط"],
+    "Hide for a week": ["Masquer une semaine", "Eine Woche ausblenden", "Nascondi per una settimana", "Ocultar una semana", "خبي لسيمانة"],
+    "Plan your ski trip": ["Planifie ton séjour au ski", "Plane deinen Skiurlaub", "Pianifica il tuo viaggio sugli sci", "Planea tu viaje de esquí", "خطط لرحلة التزلج ديالك"],
+    "Christmas week: best snow for your money": ["Semaine de Noël : la meilleure neige pour ton budget", "Weihnachtswoche: der beste Schnee fürs Geld", "Settimana di Natale: la neve migliore per il tuo budget", "Semana de Navidad: la mejor nieve por tu dinero", "سيمانة الكريسماس: أحسن تلج بأحسن ثمن"],
     "Today": ["Aujourd'hui", "Heute", "Oggi", "Hoy", "اليوم"],
     "Today (day chip)": ["Auj.", "Heute", "Oggi", "Hoy", "اليوم"],
     "Near me": ["Près de moi", "In meiner Nähe", "Vicino a me", "Cerca de mí", "قريب مني"],
@@ -1099,6 +1102,8 @@
     let q = null;
     try { q = new URLSearchParams(location.search).get("lang"); } catch { /* ignore */ }
     if (q && LANGS[q]) { try { localStorage.setItem("ss_lang", q); } catch { /* private */ } return q; }
+    const dl = document.documentElement.dataset.lang;        // a page written in one language (resorts/<slug>.<lang>.html)
+    if (dl && LANGS[dl]) return dl;
     try { const s = localStorage.getItem("ss_lang"); if (s && LANGS[s]) return s; } catch { /* private */ }
     for (const l of navigator.languages || [navigator.language || "en"]) { let k = String(l).slice(0, 2).toLowerCase(); k = ALIAS[k] || k; if (LANGS[k]) return k; }
     return "en";

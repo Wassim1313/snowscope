@@ -439,7 +439,14 @@
       const c = S.cfg.stay22;
       this.loaded = true;
       window.Stay22 = window.Stay22 || {};
-      window.Stay22.params = { aid: c.aid, campaign: c.campaign || "snowscope_web", excludes: [], deepStruct: [] };
+      // campaign per page type (owner 2026-11-19, "Spark" = these automatic contextual stay links) for the Stay22 Hub stats
+      const kind = document.body.dataset.page || (/\/blog\//.test(location.pathname) ? "blog" : /\/resorts\//.test(location.pathname) ? "resort"
+        : /(planner|christmas)\.html$/.test(location.pathname) ? "planner" : document.getElementById("map") ? "home" : "page");
+      window.Stay22.params = { aid: c.aid, campaign: "snowscope_spark_" + String(kind).replace(/[^a-z0-9_]/gi, "").slice(0, 20), excludes: [], deepStruct: [] };
+      // "Nova" (intent-triggered background tab): web_config.json stay22_script.nova (default false); when true the exact
+      // parameters of the Stay22 Hub snippet are merged from stay22_script.nova_params (docs/ADS.md "Stay22 Spark / Nova")
+      const sc = S.cfg.stay22_script || {};
+      if (sc.nova === true && sc.nova_params && typeof sc.nova_params === "object") Object.assign(window.Stay22.params, sc.nova_params);
       const s = document.createElement("script");
       s.async = true; s.src = "https://scripts.stay22.com/letmeallez.js";
       document.head.appendChild(s);
@@ -763,7 +770,7 @@
     } else if (fbEnabled()) h = '<button class="btn ghost" data-signin>Sign in</button>';
     h += '<a class="btn ink hide-s" href="' + esc(appUrl()) + '">Get the app</a>';
     // ski trip planner (owner 2026-11-19): a clear button on every page, before the account buttons
-    if (!/planner\.html$/.test(location.pathname)) h = '<a class="btn plantrip" href="' + ROOT + 'planner.html" aria-label="Plan ski trip" title="Plan ski trip"><span class="ms f">downhill_skiing</span><span class="t">Plan ski trip</span><span class="ts">Plan trip</span></a>' + h;
+    if (!/planner\.html$/.test(location.pathname)) h = '<a class="btn plantrip" href="' + ROOT + 'planner.html" aria-label="Plan ski trip" title="Plan ski trip"><span class="ms f">downhill_skiing</span><span class="t">Plan ski trip</span><span class="ts">Plan</span></a>' + h;
     box.innerHTML = h;
   }
   document.addEventListener("click", (e) => {
@@ -976,7 +983,55 @@
     emit();
     pageView();
     if (!S.noAds) PC.later();
+    planPromo();
     return S;
+  }
+  // ------------------------------------------------------------------ ski trip planner entry (owner 2026-11-19):
+  // home map: a pixel skier with a speech bubble (hidden 7 days on ✕); every page: a Christmas strip until 26 Dec
+  function planPromo() {
+    try {
+      if (isNative() || /(planner|christmas)\.html$/.test(location.pathname) || document.documentElement.classList.contains("app")) return;
+      const href = ROOT + "planner.html?utm_source=site&utm_medium=promo";
+      const calm = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (new Date() < new Date("2026-12-27T00:00:00")) {
+        const bar = document.createElement("a");
+        bar.className = "xmasbar"; bar.href = ROOT + "christmas.html?utm_source=site&utm_medium=strip";
+        bar.innerHTML = '<span class="e" aria-hidden="true">🎄</span><span class="t">Christmas week: best snow for your money</span><span class="go">PLAN ▶</span>';
+        const hdr = document.querySelector("header.top");      // pages with the site header (the home map has the skier instead)
+        if (hdr) hdr.insertAdjacentElement("afterend", bar);
+      }
+      if (!document.getElementById("map") || (store.get("ss_plan_hide") || 0) > Date.now()) return;
+      const px = (rows, pal) => rows.map((r, y) => [...r].map((c, x) => pal[c] ? '<rect x="' + x + '" y="' + y + '" width="1" height="1" fill="' + pal[c] + '"/>' : "").join("")).join("");
+      const pal = { R: "#D63A3F", W: "#FFFFFF", S: "#F2C9A0", E: "#14233F", B: "#1E63D6", K: "#8A5A2B", D: "#24324F", G: "#FFD23F" };
+      const top = ["......R.........", ".....RRR........", "....RRRRR.......", "....WWWWW.......", "....SSSES.......", "....SSSSS.......",
+                   "..KKBBBBB.......", "..KKBBBBBS......", "..KKBBBBB.......", "...KBBBBB.......", "....DDDDD......."];
+      const a = top.concat(["...DD...DD......", "..DD.....DD.....", "GGGGGGGGGGGGG...", "................", "................"]);
+      const b = top.slice(0, 7).concat(["..KKBBBBB.S.....", "..KKBBBBB.......", "...KBBBBB.......", "....DDDDD.......", "....DD.DD.......", "....DD.DD.......", ".GGGGGGGGGGGGG..", "................", "................"]);
+      const el = document.createElement("div");
+      el.className = "planbud" + (calm ? " calm" : "");
+      el.innerHTML = '<a class="bub" href="' + href + '"><span>Plan your ski trip</span> ▶</a>' +
+        '<a class="sk" href="' + href + '" aria-label="Plan your ski trip"><svg viewBox="0 0 16 16" width="64" height="64" shape-rendering="crispEdges" aria-hidden="true">' +
+        '<g class="fa">' + px(a, pal) + '</g><g class="fb">' + px(b, pal) + "</g></svg></a>" +
+        '<button type="button" class="x" aria-label="Hide for a week">✕</button>';
+      el.querySelector(".x").addEventListener("click", () => { store.set("ss_plan_hide", Date.now() + 7 * 864e5); el.remove(); hit("/web/planbud/hide", "ui"); });
+      el.querySelectorAll("a").forEach((x) => x.addEventListener("click", () => hit("/web/planbud/open", "ui")));
+      document.body.appendChild(el);
+      // keep it clear of the map controls: phones above the layer rail on the left, wide screens above the day timeline
+      const place = () => {
+        const r = (id) => { const e = document.getElementById(id); if (!e) return null; const b = e.getBoundingClientRect(); return b.width ? b : null; };
+        const tl = r("timeline"), rail = r("rail"), vw = innerWidth, vh = innerHeight;
+        if (vw <= 760) {
+          const top = Math.min(...[tl, rail].filter(Boolean).map((b) => b.top).concat([vh - 260]));
+          el.classList.add("left"); el.style.left = "8px"; el.style.right = "auto"; el.style.bottom = Math.round(vh - top + 8) + "px";
+        } else {
+          el.classList.remove("left"); el.style.left = "auto";
+          el.style.right = Math.round(tl ? vw - tl.right : 14) + "px"; el.style.bottom = Math.round(tl ? vh - tl.top + 10 : 170) + "px";
+        }
+      };
+      place(); addEventListener("resize", place, { passive: true });
+      let n = 0; const iv = setInterval(() => { place(); if (++n > 8) clearInterval(iv); }, 1200);
+      hit("/web/planbud/view", "ui", "planbud");
+    } catch { /* promo only */ }
   }
 
   window.SS = { base, webPro, webSell, proHere, proIn, tiersMode, proSplit, isPro, locked, dayLocked, adUnlock, proSell, proNudge, isNative, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, isHuman: () => HUMAN, partnerChoices, partnerGranted: () => PC.granted(), partnerSet: (y, via) => PC.set(y, via), getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink, stayCur,
