@@ -362,7 +362,7 @@
   }
  },
  "words_en": 728,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "ski_centrum_dedinky",
   "name": "Ski centrum Dedinky",
@@ -485,8 +485,10 @@
  },
  "publish_utc": "2026-11-19T13:34:29Z",
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "day cap 6 reached"
+  ],
   "words": 848,
   "overlap": 1.1,
   "with": "slovakia-snow-report-17-november-2026",
@@ -511,5 +513,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: day cap 6 reached"
 }

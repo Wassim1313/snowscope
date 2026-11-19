@@ -690,7 +690,7 @@
   }
  },
  "words_en": 753,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "sugarbush_resort",
   "name": "Sugarbush Resort",
@@ -831,11 +831,13 @@
  },
  "publish_utc": "2026-11-12T18:27:41Z",
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "sentence-bank template article (AdSense review)"
+  ],
   "words": 846,
-  "overlap": 3.6,
-  "with": "us-west-fresh-snow-powder-alert-4-november-2026",
+  "overlap": 1.6,
+  "with": "early-season-snow-check-3-november-2026",
   "langs_off": [],
   "score": 64.6,
   "intent": "us_ne|two-week-forecast",
@@ -853,5 +855,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: sentence-bank template article (AdSense review)"
 }

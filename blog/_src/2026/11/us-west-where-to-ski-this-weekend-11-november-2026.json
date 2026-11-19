@@ -457,7 +457,7 @@
   }
  },
  "words_en": 614,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "telluride_ski_area",
   "name": "Telluride",
@@ -574,11 +574,13 @@
   "usd": 0.0
  },
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "sentence-bank template article (AdSense review)"
+  ],
   "words": 614,
-  "overlap": 16.9,
-  "with": "us-west-fresh-snow-powder-alert-4-november-2026",
+  "overlap": 2.9,
+  "with": "early-season-snow-check-3-november-2026",
   "langs_off": [],
   "score": 100.0,
   "intent": "resort:telluride_ski_area|height_gap",
@@ -596,5 +598,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: sentence-bank template article (AdSense review)"
 }

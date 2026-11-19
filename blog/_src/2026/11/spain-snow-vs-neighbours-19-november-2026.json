@@ -437,7 +437,7 @@
   }
  },
  "words_en": 629,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "espot",
   "name": "Espot",
@@ -581,11 +581,13 @@
  },
  "publish_utc": "2026-11-19T13:02:00Z",
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "day cap 6 reached"
+  ],
   "words": 788,
-  "overlap": 1.1,
-  "with": "ukraine-snow-on-the-way-19-november-2026",
+  "overlap": 0.9,
+  "with": "austria-snow-report-16-november-2026",
   "langs_off": [],
   "score": 99.1,
   "intent": "cc:ES|neighbour",
@@ -607,5 +609,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: day cap 6 reached"
 }

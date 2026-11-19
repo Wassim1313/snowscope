@@ -490,7 +490,7 @@
   }
  },
  "words_en": 617,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "bonneval_sur_arc",
   "name": "Bonneval-sur-Arc",
@@ -608,11 +608,13 @@
   "usd": 0.0
  },
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "sentence-bank template article (AdSense review)"
+  ],
   "words": 617,
-  "overlap": 19.0,
-  "with": "us-west-snow-depth-today-3-november-2026",
+  "overlap": 6.6,
+  "with": "early-season-snow-check-3-november-2026",
   "langs_off": [],
   "score": 97.4,
   "intent": "resort:bonneval_sur_arc|height_gap",
@@ -639,5 +641,6 @@
    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
   },
   "photo": null
- }
+ },
+ "noindex_why": "quality: sentence-bank template article (AdSense review)"
 }

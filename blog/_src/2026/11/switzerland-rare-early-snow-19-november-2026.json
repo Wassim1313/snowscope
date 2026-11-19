@@ -571,7 +571,7 @@
   }
  },
  "words_en": 665,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "glacier_3000",
   "name": "Glacier 3000",
@@ -749,8 +749,10 @@
  },
  "publish_utc": "2026-11-19T11:34:30Z",
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "day cap 6 reached"
+  ],
   "words": 820,
   "overlap": 1.4,
   "with": "switzerland-snow-ahead-of-normal-18-november-2026",
@@ -775,5 +777,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: day cap 6 reached"
 }

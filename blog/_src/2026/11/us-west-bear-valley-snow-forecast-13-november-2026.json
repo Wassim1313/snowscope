@@ -472,7 +472,7 @@
   }
  },
  "words_en": 679,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "bear_valley",
   "name": "Bear Valley",
@@ -606,11 +606,13 @@
   "usd": 0.0
  },
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "sentence-bank template article (AdSense review)"
+  ],
   "words": 679,
-  "overlap": 13.1,
-  "with": "us-west-snow-depth-today-3-november-2026",
+  "overlap": 2.3,
+  "with": "early-season-snow-check-3-november-2026",
   "langs_off": [],
   "score": 102.7,
   "intent": "resort:bear_valley|storm_next",
@@ -628,5 +630,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: sentence-bank template article (AdSense review)"
 }

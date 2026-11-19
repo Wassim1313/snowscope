@@ -339,7 +339,7 @@
   }
  },
  "words_en": 606,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "drahobrat",
   "name": "Драгобрат",
@@ -428,11 +428,13 @@
  },
  "publish_utc": "2026-11-19T13:42:55Z",
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "day cap 6 reached"
+  ],
   "words": 707,
-  "overlap": 1.2,
-  "with": "switzerland-rare-early-snow-19-november-2026",
+  "overlap": 1.0,
+  "with": "slovakia-snow-report-17-november-2026",
   "langs_off": [],
   "score": 106.7,
   "intent": "cc:UA|storm_next",
@@ -454,5 +456,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: day cap 6 reached"
 }

@@ -455,7 +455,7 @@
   }
  },
  "words_en": 620,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "orelle",
   "name": "Orelle",
@@ -614,8 +614,10 @@
  },
  "publish_utc": "2026-11-19T12:19:17Z",
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "day cap 6 reached"
+  ],
   "words": 782,
   "overlap": 1.2,
   "with": "switzerland-snow-report-16-november-2026",
@@ -640,5 +642,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: day cap 6 reached"
 }

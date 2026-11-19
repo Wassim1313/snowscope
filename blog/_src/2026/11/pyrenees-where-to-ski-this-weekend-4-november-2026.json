@@ -493,7 +493,7 @@
   }
  },
  "words_en": 607,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "masella",
   "name": "Masella",
@@ -593,11 +593,13 @@
   "usd": 0.0
  },
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "sentence-bank template article (AdSense review)"
+  ],
   "words": 607,
-  "overlap": 17.5,
-  "with": "us-west-snow-depth-today-3-november-2026",
+  "overlap": 2.7,
+  "with": "early-season-snow-check-3-november-2026",
   "langs_off": [],
   "score": 96.3,
   "intent": "resort:masella|rain_risk",
@@ -619,5 +621,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: sentence-bank template article (AdSense review)"
 }

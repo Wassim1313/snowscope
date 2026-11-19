@@ -424,7 +424,7 @@
   }
  },
  "words_en": 688,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "cimarron_mountain_club",
   "name": "Cimarron Mountain Club",
@@ -557,11 +557,13 @@
   "usd": 0.0
  },
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "sentence-bank template article (AdSense review)"
+  ],
   "words": 688,
-  "overlap": 22.0,
-  "with": "us-west-snow-depth-today-3-november-2026",
+  "overlap": 3.3,
+  "with": "early-season-snow-check-3-november-2026",
   "langs_off": [],
   "score": 103.7,
   "intent": "resort:cimarron_mountain_club|rain_risk",
@@ -579,5 +581,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: sentence-bank template article (AdSense review)"
 }

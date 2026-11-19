@@ -491,7 +491,7 @@
   }
  },
  "words_en": 630,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "telluride_ski_area",
   "name": "Telluride",
@@ -608,11 +608,13 @@
   "usd": 0.0
  },
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "sentence-bank template article (AdSense review)"
+  ],
   "words": 630,
-  "overlap": 27.8,
-  "with": "us-west-snow-depth-today-3-november-2026",
+  "overlap": 4.4,
+  "with": "early-season-snow-check-3-november-2026",
   "langs_off": [],
   "score": 117.2,
   "intent": "resort:telluride_ski_area|vs_normal_high",
@@ -630,5 +632,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: sentence-bank template article (AdSense review)"
 }

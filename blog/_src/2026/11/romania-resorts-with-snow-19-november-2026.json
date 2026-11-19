@@ -353,7 +353,7 @@
   }
  },
  "words_en": 655,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "balea_lac",
   "name": "Balea Lac",
@@ -475,8 +475,10 @@
  },
  "publish_utc": "2026-11-19T12:29:12Z",
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "day cap 6 reached"
+  ],
   "words": 776,
   "overlap": 1.6,
   "with": "switzerland-snow-report-16-november-2026",
@@ -501,5 +503,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: day cap 6 reached"
 }

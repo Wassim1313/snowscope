@@ -442,7 +442,7 @@
   }
  },
  "words_en": 549,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "la_thuile_ski",
   "name": "La Thuile ski",
@@ -565,8 +565,10 @@
  },
  "publish_utc": "2026-11-19T11:54:33Z",
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "day cap 6 reached"
+  ],
   "words": 683,
   "overlap": 1.2,
   "with": "italy-snow-on-the-way-18-november-2026",
@@ -591,5 +593,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: day cap 6 reached"
 }

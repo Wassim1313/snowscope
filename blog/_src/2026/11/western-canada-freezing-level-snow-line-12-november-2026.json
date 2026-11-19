@@ -505,7 +505,7 @@
   }
  },
  "words_en": 742,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "banff_sunshine_village",
   "name": "Banff Sunshine Village",
@@ -638,11 +638,13 @@
   "usd": 0.0
  },
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "sentence-bank template article (AdSense review)"
+  ],
   "words": 742,
-  "overlap": 10.7,
-  "with": "pyrenees-where-to-ski-this-weekend-4-november-2026",
+  "overlap": 0.9,
+  "with": "ischgl-week-snow-diary-silvretta-arena-samnaun",
   "langs_off": [],
   "score": 92.7,
   "intent": "resort:banff_sunshine_village|rain_risk",
@@ -664,5 +666,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: sentence-bank template article (AdSense review)"
 }

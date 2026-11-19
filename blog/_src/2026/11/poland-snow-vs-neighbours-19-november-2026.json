@@ -358,7 +358,7 @@
   }
  },
  "words_en": 640,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "karpacz_ski_arena",
   "name": "Karpacz",
@@ -503,8 +503,10 @@
  },
  "publish_utc": "2026-11-19T13:58:45Z",
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "day cap 6 reached"
+  ],
   "words": 783,
   "overlap": 0.6,
   "with": "slovakia-thaw-18-november-2026",
@@ -529,5 +531,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: day cap 6 reached"
 }

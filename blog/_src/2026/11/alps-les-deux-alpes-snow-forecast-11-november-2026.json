@@ -524,7 +524,7 @@
   }
  },
  "words_en": 601,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "les_deux_alpes",
   "name": "Les Deux Alpes",
@@ -658,11 +658,13 @@
   "usd": 0.0
  },
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "sentence-bank template article (AdSense review)"
+  ],
   "words": 601,
-  "overlap": 18.8,
-  "with": "alps-where-to-ski-best-snow-8-november-2026",
+  "overlap": 2.0,
+  "with": "early-season-snow-check-3-november-2026",
   "langs_off": [],
   "score": 122.5,
   "intent": "resort:les_deux_alpes|storm_next",
@@ -684,5 +686,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: sentence-bank template article (AdSense review)"
 }
