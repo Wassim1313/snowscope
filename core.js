@@ -214,6 +214,15 @@
       if (ins && hw) new MutationObserver(() => { const v = ins.getAttribute("data-ad-status"), f = v === "filled"; hw.hidden = f; sl.style.height = f ? "" : "0"; el.querySelector(".adl").hidden = !f;
         if (v) hit("/ad/slot/" + el.dataset.ad + "/adsense_" + v, "ads", "as|" + el.dataset.ad + "|" + v); })
         .observe(ins, { attributes: true, attributeFilter: ["data-ad-status"] });
+      // responsive units: Google sets "height: auto !important" inline on every fixed-height ancestor so the ad can
+      // grow (2026-11-18: the phone resort sheet #panel became ~7600 px tall and opened mid-content, so the snow numbers
+      // and the Stays card were never on screen). The slot wrapper may grow; outside it the override is undone.
+      for (let n = el.parentElement; n && n !== document.body; n = n.parentElement) {
+        if (n.dataset.adGuard) continue;
+        n.dataset.adGuard = "1";
+        const fix = () => { if (n.style.getPropertyPriority("height") === "important") n.style.removeProperty("height"); };
+        new MutationObserver(fix).observe(n, { attributes: true, attributeFilter: ["style"] });
+      }
     },
     flush() {       // one push per <ins> still on the page and not yet served; pushes queued before the tag loaded
       // used to outnumber the units after a panel re-render ("All 'ins' elements ... already have ads")
@@ -908,10 +917,13 @@
   // real person (2026-11-16): crawlers run the page but never touch it; the first tap / mouse move / wheel / key of
   // the page sends /web/human once, and only those visitors count as people on the owner dashboard
   const HUMAN_EV = ["pointerdown", "pointermove", "touchstart", "wheel", "keydown"];
+  let HUMAN = false;
   function human(e) {
     if (e && e.isTrusted === false) return;
     HUMAN_EV.forEach((t) => removeEventListener(t, human, true));
+    HUMAN = true;
     beacon("/web/human", "", "web");
+    dispatchEvent(new Event("ss:human"));            // Stay22 cards wait for this (app.js bindStays)
   }
   if (!BOT) HUMAN_EV.forEach((t) => addEventListener(t, human, { capture: true, passive: true }));
   document.addEventListener("click", (e) => {            // "Cookie choices" link (any page)
@@ -965,6 +977,6 @@
     return S;
   }
 
-  window.SS = { base, webPro, webSell, proHere, proIn, tiersMode, proSplit, isPro, locked, dayLocked, adUnlock, proSell, proNudge, isNative, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, partnerChoices, partnerGranted: () => PC.granted(), partnerSet: (y, via) => PC.set(y, via), getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink, stayCur,
+  window.SS = { base, webPro, webSell, proHere, proIn, tiersMode, proSplit, isPro, locked, dayLocked, adUnlock, proSell, proNudge, isNative, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, isHuman: () => HUMAN, partnerChoices, partnerGranted: () => PC.granted(), partnerSet: (y, via) => PC.set(y, via), getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink, stayCur,
                 resorts, mapLib, transformRequest, onChange: (f) => S.listeners.push(f), store, ROOT, IAB, refHost };
 })();

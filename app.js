@@ -45,7 +45,7 @@
   const AVAL_NAME = { 1: "Low", 2: "Moderate", 3: "Considerable", 4: "High", 5: "Very high" };
   const NAMES = { ALPS: "Alps", PYRENEES: "Pyrenees", US_WEST: "US West", US_NE: "US Northeast", ATLAS: "Atlas (Morocco)", SCANDES: "Scandinavia", CA_WEST: "Canada West",
     BRITISH: "UK & Ireland", IBERIA: "Spain & Portugal", CANTABRIA: "Cantabrian Mountains", APENNINES: "Apennines",
-    BALKANS: "Balkans", CARPATHIANS: "Carpathians", CENTRAL_EU: "Central Europe", RUSSIA: "Russia" };
+    BALKANS: "Balkans", CARPATHIANS: "Carpathians", CENTRAL_EU: "Central Europe", RUSSIA: "Russia", JAPAN: "Japan" };
   // free, no-key basemaps (owner 2026-11-02: no Mapbox): OpenFreeMap vector styles + AWS Terrain Tiles (terrarium) for
   // relief and 3D. No satellite basemap (no free source that allows a site with ads).
   const STYLES = { outdoors: ["Outdoors", "https://tiles.openfreemap.org/styles/liberty"], light: ["Light", "https://tiles.openfreemap.org/styles/positron"] };
@@ -119,7 +119,7 @@
     US_WEST: [-125, 33, -104, 49], CA_WEST: [-128, 49, -113, 54.5], US_NE: [-75.5, 42.5, -70.5, 45.5], SCANDES: [5, 58.5, 31, 70.5],
     BRITISH: [-8.5, 51.5, -1.5, 58.7], IBERIA: [-8, 37, -0.5, 41.5], CANTABRIA: [-7.5, 42.2, -3, 43.3],
     APENNINES: [8.5, 37.5, 16.5, 44], BALKANS: [15.5, 40, 25, 44.5], CARPATHIANS: [18, 45, 26.5, 49.8],
-    CENTRAL_EU: [2, 45, 16, 51.5], RUSSIA: [30, 42, 61, 69] };
+    CENTRAL_EU: [2, 45, 16, 51.5], RUSSIA: [30, 42, 61, 69], JAPAN: [135, 34.5, 145.5, 45.5] };
   const hasRegion = (c) => DATA.regions.some((r) => r.code === c);
   function nearestRange(lat, lon) {
     let best = null, bd = Infinity;
@@ -136,6 +136,7 @@
     const langs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""]).map(String);
     const l0 = langs[0] || "", cc = (/[-_]([A-Za-z]{2})$/.exec(l0) || [])[1], lang = l0.slice(0, 2).toLowerCase();
     const byTz = /^Africa\/(Casablanca|El_Aaiun|Algiers|Tunis)$/.test(tz) ? "ATLAS"
+      : /^(Asia\/Tokyo|Japan)$/.test(tz) ? (hasRegion("JAPAN") ? "JAPAN" : null)
       : /^Europe\/(Madrid|Andorra|Lisbon)$/.test(tz) ? "PYRENEES"
       : /^America\/(Vancouver|Edmonton|Calgary|Whitehorse|Yellowknife|Dawson_Creek|Fort_Nelson|Creston)$/.test(tz) ? "CA_WEST"
       : /^America\/(New_York|Toronto|Montreal|Detroit|Halifax|Moncton|Indiana\/.*|Kentucky\/.*|St_Johns)$|^US\/Eastern$/.test(tz) ? "US_NE"
@@ -150,12 +151,12 @@
       SE: "SCANDES", NO: "SCANDES", FI: "SCANDES", DK: "SCANDES", IS: "SCANDES", GB: "BRITISH", IE: "BRITISH",
       PL: "CARPATHIANS", SK: "CARPATHIANS", RO: "CARPATHIANS", UA: "CARPATHIANS", HU: "CARPATHIANS", CZ: "CENTRAL_EU",
       BG: "BALKANS", RS: "BALKANS", BA: "BALKANS", ME: "BALKANS", MK: "BALKANS", AL: "BALKANS", GR: "BALKANS",
-      HR: "BALKANS", XK: "BALKANS", RU: "RUSSIA", BY: "RUSSIA", KZ: "RUSSIA" }[(cc || "").toUpperCase()];
+      HR: "BALKANS", XK: "BALKANS", RU: "RUSSIA", BY: "RUSSIA", KZ: "RUSSIA", JP: "JAPAN" }[(cc || "").toUpperCase()];
     const byLang = { ar: "ATLAS", es: "PYRENEES", ca: "PYRENEES", eu: "PYRENEES", fr: "ALPS", de: "ALPS", it: "ALPS", sl: "ALPS",
       sv: "SCANDES", nb: "SCANDES", no: "SCANDES", nn: "SCANDES", fi: "SCANDES", da: "SCANDES", pl: "CARPATHIANS",
       sk: "CARPATHIANS", ro: "CARPATHIANS", uk: "CARPATHIANS", hu: "CARPATHIANS", cs: "CENTRAL_EU", bg: "BALKANS",
       sr: "BALKANS", bs: "BALKANS", hr: "BALKANS", mk: "BALKANS", sq: "BALKANS", el: "BALKANS", ga: "BRITISH",
-      cy: "BRITISH", gd: "BRITISH", ru: "RUSSIA", be: "RUSSIA" }[lang];
+      cy: "BRITISH", gd: "BRITISH", ru: "RUSSIA", be: "RUSSIA", ja: "JAPAN" }[lang];
     return [byTz, byCc, byLang].find((c) => c && hasRegion(c)) || null;
   }
   const startFixed = () => !!(DATA.regions.find((r) => slugOf(r.code) === location.hash.slice(1)) || (store.get("ss_region") && store.get("ss_region_pick")));
@@ -2869,16 +2870,21 @@
       let vis = false, viewT = 0;
       const tryView = () => { clearTimeout(viewT); const f = sb.querySelector("iframe"); if (vis && f && f.dataset.ok) viewT = setTimeout(() => { if (vis) SS.hit("/ad/stay22/" + pl + "/view", "stay22", "v|" + key); }, 1000); };
       sb.addEventListener("s22load", tryView);
+      // load-to-view (2026-11-18: panel 1215 loads / 4 views in a day, eager loads from crawlers that run the page and
+      // from cards never scrolled to): the frame loads once the map box is half on screen AND the visitor has touched /
+      // moved / scrolled the page (SS.isHuman, core.js). The card sits right under the snow numbers, so for a person it
+      // still loads at once; 200 ms so a card replaced by the panel's second render never loads a frame for nothing
+      let armed = false;
+      const go = () => { if (armed && vis && d.isConnected && !seen && (!SS.isHuman || SS.isHuman())) { seen = true; load(); } };
+      setTimeout(() => { armed = true; go(); }, 200);
+      addEventListener("ss:human", go, { once: true });
       if ("IntersectionObserver" in window) {
         const io = new IntersectionObserver((es) => {
           const e = es[es.length - 1]; vis = e.isIntersecting && e.intersectionRatio >= 0.5;
-          tryView();
+          go(); tryView();
         }, { threshold: [0, 0.5, 1] });
         io.observe(sb);
-      }
-      // eager (owner 2026-11-09): no waiting for the card to scroll into view; 200 ms so a card replaced by the panel's
-      // second render (resort pages render twice on start) never loads a frame for nothing
-      setTimeout(() => { if (d.isConnected) { seen = true; load(); } }, 200);
+      } else vis = true;
       window.addEventListener("blur", () => { const f = sb.querySelector("iframe"); if (f && document.activeElement === f) SS.hit("/ad/stay22/" + pl + "/click", "stay22", "c|" + key); });
       if (st.openStays) { st.openStays = false; d.open = true; setTimeout(() => d.scrollIntoView({ behavior: "smooth", block: "start" }), 250); }
     });
@@ -3048,16 +3054,15 @@
     if (hb) { hb.insertAdjacentHTML("afterend", '<div class="seasonrow" id="rSeason"><span class="ms">event</span><span class="tx"><span class="skel" style="display:block;height:16px;width:60%"></span></span></div>'); seasonRow(slug); }
     // LIVE-DATA (2026-11-03): new-snow totals right under the hero, the powder-alert button, lifts / webcams only with data
     if (hb) { hb.insertAdjacentHTML("afterend", '<div id="rFall"><div class="skel" style="height:132px;margin:0 0 8px"></div></div><div id="rElev"></div>'); snowfallRow(x); }
-    // Stays card higher (owner 2026-11-16: 114 loads vs 6 views when it sat under the 7-day strip): "Plan your trip" +
-    // Stays right after the snowfall row, before the season row, so it is in the first screen (desktop) and in the
-    // half-open sheet (phones). Snow numbers stay first; Partner label, consent rules (core.js stayConsent) and the
-    // Pro switch (stayModule returns "" for Pro) are unchanged.
-    const re = $("rElev");
-    if (re) re.insertAdjacentHTML("afterend", '<div data-ptrip data-where="panel" data-lat="' + x.lat + '" data-lon="' + x.lon + '" data-place="' + esc(x.short) + '"' + (st.stayDay ? ' data-day="' + st.stayDay + '"' : "") + "></div>" +
-      stayModule(x.lat, x.lon, x.short, sVia));
+    // Stays card: see below (owner 2026-11-16 moved it up from under the 7-day strip, 114 loads vs 6 views; 2026-11-18
+    // moved again to directly under the snow numbers). Partner label, consent rules (core.js stayConsent) and the Pro
+    // switch (stayModule returns "" for Pro) are unchanged.
     const ra = box.querySelector(".acts3");
     // follow flow (owner 2026-11-09): big ★ Favourite + Powder alert right under the snow numbers
     if (hb) hb.insertAdjacentHTML("afterend", followResort(x) + (window.Follow && Follow.appCard ? Follow.appCard({ slug: x.slug, name: x.short || x.name, via: "resort" }) : ""));   // + "Get the app" card (owner 2026-11-12)
+    // Stays card first under the snow numbers (2026-11-18, load-to-view): above Favourite / app card / snowfall row so
+    // the map is in the half-open sheet on phones and the first screen on desktop; partner row right after it
+    if (hb) hb.insertAdjacentHTML("afterend", stayModule(x.lat, x.lon, x.short, sVia) + '<div data-ptrip data-where="panel" data-lat="' + x.lat + '" data-lon="' + x.lon + '" data-place="' + esc(x.short) + '"' + (st.stayDay ? ' data-day="' + st.stayDay + '"' : "") + "></div>");
     if (ra) ra.insertAdjacentHTML("afterend", '<div id="rLive"></div>');
     liveRows(x);
     jobsRow(x);
