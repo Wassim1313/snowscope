@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
 <link rel="stylesheet" href="site.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="share.css">
 <script>(function(){var h=document.documentElement;h.classList.add("js");try{if(new URLSearchParams(location.search).get("app")==="1"){h.classList.add("app");h.dataset.noads="1";}}catch(e){}})();</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "Christmas skiing 2026: best snow for your money", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Bonneval-sur-Arc", "url": "https://snowscope.app/christmas.html#bonneval_sur_arc"}, {"@type": "ListItem", "position": 2, "name": "Les Karellis", "url": "https://snowscope.app/christmas.html#les_karellis"}, {"@type": "ListItem", "position": 3, "name": "Aussois", "url": "https://snowscope.app/christmas.html#aussois"}, {"@type": "ListItem", "position": 4, "name": "Valfréjus · La Norma", "url": "https://snowscope.app/christmas.html#valfrejus"}, {"@type": "ListItem", "position": 5, "name": "Val Thorens", "url": "https://snowscope.app/christmas.html#val_thorens"}, {"@type": "ListItem", "position": 6, "name": "Val Cenis", "url": "https://snowscope.app/christmas.html#val_cenis"}, {"@type": "ListItem", "position": 7, "name": "La Thuile", "url": "https://snowscope.app/christmas.html#la_thuile_ski"}, {"@type": "ListItem", "position": 8, "name": "Ovronnaz", "url": "https://snowscope.app/christmas.html#ovronnaz"}, {"@type": "ListItem", "position": 9, "name": "Zugspitze", "url": "https://snowscope.app/christmas.html#gletscher_skigebiet_zugspitze_ski_resort_zugspit"}, {"@type": "ListItem", "position": 10, "name": "Stubai Glacier", "url": "https://snowscope.app/christmas.html#stubaier_gletscher"}, {"@type": "ListItem", "position": 11, "name": "Oberstdorf · Kleinwalsertal", "url": "https://snowscope.app/christmas.html#kleinwalsertal_oberstdorf"}, {"@type": "ListItem", "position": 12, "name": "Garmisch-Classic", "url": "https://snowscope.app/christmas.html#skigebiet_garmisch_classic"}]}</script>
 <style>
@@ -374,6 +375,7 @@ html[data-preset="planner"] .top2{grid-template-columns:1fr}
 .bottomsw .go2{cursor:pointer;font-family:"Press Start 2P",monospace}
 .xs .est{display:block;font-size:11.5px;color:var(--mut);margin-top:4px}
 @media (max-width:520px){.nmk{padding:3px 5px 4px}.nmk b{font-size:11px}.nmk span{font-size:10px}.nmk .rk{font-size:6px}}
+.sharebox{margin:16px 0 0}.sharebox:empty{display:none}
 </style>
 </head>
 <body data-page="christmas">
@@ -985,6 +987,7 @@ html[data-preset="planner"] .top2{grid-template-columns:1fr}
 </article>
   </div>
   <div class="m-norm" id="remindN"></div>
+  <div class="m-norm sharebox" id="shareN"></div>
   <div class="bottomsw m-norm"><button type="button" class="go2 px" data-mode-to="game" data-l="play">&#9654; PLAY IT AS A GAME</button></div>
 
   <!-- GAME MODE: one screen = overworld + the same controls + START -> race -> results -->
@@ -1035,10 +1038,11 @@ html[data-preset="planner"] .top2{grid-template-columns:1fr}
 
   <p class="disc">Prices: public adult lift passes for the 2026-27 season, checked on 19 November 2026, in euros (other currencies converted). Some resorts use dynamic pricing, so prices may change. Hotel and food figures are estimates. Places to stay: © OpenStreetMap contributors, ODbL. “Book” buttons and price maps are partner links (your dates, 2 adults): we may earn a commission if you book, at no extra cost to you.</p>
 
-  <footer class="foot"><nav><a href="about/">About</a><a href="editorial/">Editorial policy</a><a href="contact/">Contact</a><a href="./">Snow today</a><a href="pricing.html">Pricing</a><a href="terms/">Terms</a><a href="privacy/">Privacy</a><a href="refund.html">Refund</a></nav><p>Help: <a href="mailto:support@snowscope.app">support@snowscope.app</a> · Business and press: <a href="mailto:contact@snowscope.app">contact@snowscope.app</a> · Privacy requests: <a href="mailto:privacy@snowscope.app">privacy@snowscope.app</a></p>© 2026 SnowScope · Atlas Labs</footer>
+  <footer class="foot"><nav><a href="about/">About</a><a href="editorial/">Editorial policy</a><a href="contact/">Contact</a><a href="./">Snow today</a><a href="pricing.html">Pricing</a><a href="terms/">Terms</a><a href="privacy/">Privacy</a><a href="refund.html">Refund</a><a href="halloffame.html" id="hallLink">Hall of Fame</a></nav><p>Help: <a href="mailto:support@snowscope.app">support@snowscope.app</a> · Business and press: <a href="mailto:contact@snowscope.app">contact@snowscope.app</a> · Privacy requests: <a href="mailto:privacy@snowscope.app">privacy@snowscope.app</a></p>© 2026 SnowScope · Atlas Labs</footer>
 </main>
 <script src="i18n.js"></script>
 <script src="core.js"></script>
+<script src="share.js"></script>
 <script src="follow.js" defer></script>
 <script>
 (function () {
@@ -1397,11 +1401,12 @@ html[data-preset="planner"] .top2{grid-template-columns:1fr}
     var card = document.getElementById(win.slug);
     GP.innerHTML = '<p class="lead">Ranked by <b>' + esc(by) + "</b> with €" + budget.toLocaleString("en-US") + " per person." + (fin.length ? "" : " Nobody finished on this budget: here is the closest.") + "</p>" +
       '<div class="pod">' + pod + '</div><ol class="rkl">' + rows + "</ol>" +
-      '<div class="ybd"><p class="cap px">YOUR BEST DEAL</p><div id="gpCard"></div></div>' + remindHtml() +
+      '<div class="ybd"><p class="cap px">YOUR BEST DEAL</p><div id="gpCard"></div></div><div class="sharebox" id="shareG"></div>' + remindHtml() +
       '<div class="gacts"><button type="button" class="bigb gold" id="gpAgain">PLAY AGAIN ▶</button><button type="button" class="bigb alt" id="gpShare">SHARE</button><button type="button" class="bigb alt" id="gpMap">SEE ON MAP</button></div>';
     if (card) { var c = card.cloneNode(true); c.removeAttribute("id"); c.querySelectorAll("a[data-stay]").forEach(function (a) { a.dataset.via = "game"; }); var rk = c.querySelector(".xrk"); if (rk) rk.textContent = "WIN"; var t3 = document.createElement("div"); c.insertBefore(t3, c.querySelector(".rf")); top3(t3, win.slug, "snowscope_xmas_game_" + win.slug.slice(0, 40)); document.getElementById("gpCard").appendChild(c); }
     if (isAlps()) { var i = nodes.findIndex(function (nd) { return nd.dataset.slug === win.slug; }); if (i >= 0) { cur = -2; go(i, true); } }
     lastRes = { win: win, by: by };
+    shareCard(win, document.getElementById("shareG"));
     var prev = store.get(bestKey);
     if (!prev || !BY[prev.slug] || win.total < BY[prev.slug].total) store.set(bestKey, { slug: win.slug, by: by, round: round });
     try { SS.track && SS.track("xmas_round", { round: round, winner: win.slug, by: by, budget: budget, region: PLAN.region }); } catch (e) { /* */ }
@@ -1605,6 +1610,7 @@ html[data-preset="planner"] .top2{grid-template-columns:1fr}
     applyRank(ranked(), false);
     renderCmp();
     document.getElementById("remindN").innerHTML = remindHtml();
+    shareNormal();
     if (GP.className === "gpb") startScreen();
     firstResults();
   }
@@ -1821,6 +1827,23 @@ html[data-preset="planner"] .top2{grid-template-columns:1fr}
     if (firstShown) return; firstShown = true;
     setTimeout(function () { if (H.dataset.mode !== "game") travelPopup("normal"); }, calm ? 300 : 2500);
   }
+  // ---- SHARE CARD (web/snowweb/share.js, other agent 2026-11-20): the best deal as a 1080x1920 card + 6 s clip
+  var shareKeyN = "";
+  function shareCard(r, box) {
+    if (!box || !(window.SSShare && SSShare.resultCard)) return;
+    try {
+      box.innerHTML = "";
+      SSShare.resultCard({ region: PLAN.region, resort: { slug: r.slug, label: r.name, country: r.country, week_total: r.total, currency: "€", left: budget - r.total, snow_p50_cm: r.snow, units: "metric" }, player: { code: SSShare.playerCode() } });
+      SSShare.mount(box);
+    } catch (e) { /* the card is a bonus: never block the results */ }
+  }
+  function shareNormal() {
+    var top = ranked()[0], box = document.getElementById("shareN"); if (!top || !box) return;
+    var key = PLAN.region + "|" + top.slug + "|" + top.total + "|" + budget;
+    if (key === shareKeyN) return;
+    shareKeyN = key; shareCard(top, box);
+  }
+  try { var hl = document.getElementById("hallLink"); if (hl && window.SSShare && SSShare.hallLink) hl.href = SSShare.hallLink(); } catch (e) { /* */ }
   // ---- REMINDER after the results: powder alerts for the region (follow.js flow; the app when it is not there)
   function remindHtml() {
     return '<div class="remind"><span class="ms" aria-hidden="true">notifications_active</span><div class="rt"><b>' + esc(t("remind", rName(PLAN.region))) + "</b><span>" + esc(t("remind_p")) + '</span></div><button type="button" data-remind="' + esc(PLAN.region) + '">' + esc(t("remind_b")) + "</button></div>";
@@ -1842,6 +1865,7 @@ html[data-preset="planner"] .top2{grid-template-columns:1fr}
   priChips();
   H.dataset.alps = "1"; H.dataset.view = "cards";
   var u0 = null; try { u0 = new URLSearchParams(location.search); } catch (e) { /* old browser */ }
+  try { var ref0 = (u0 && u0.get("ref") || "").toUpperCase(); if (/^[A-Z0-9]{6}$/.test(ref0) && window.SS && SS.hit) SS.hit("/share/ref/" + ref0, "share"); } catch (e) { /* never block rendering */ }
   H.dataset.mode = "normal";
   replan();
   go(0, false);
