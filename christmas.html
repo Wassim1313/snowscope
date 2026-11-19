@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-root="">
+<html lang="en" data-root="" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -13,86 +13,129 @@
 <meta property="og:description" content="Ski days from 36 € with up to 75 cm of snow already. Snow now, Christmas projection, prices and where to stay.">
 <meta property="og:url" content="https://snowscope.app/christmas.html">
 <meta property="og:image" content="https://snowscope.app/og.png">
+<meta name="theme-color" content="#5CC8FF">
 <link rel="icon" href="logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Press+Start+2P&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
 <link rel="stylesheet" href="site.css">
+<script>document.documentElement.classList.add("js");</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "Christmas skiing 2026: best snow for your money", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Les Karellis", "url": "https://snowscope.app/christmas.html#les_karellis"}, {"@type": "ListItem", "position": 2, "name": "Bonneval-sur-Arc", "url": "https://snowscope.app/christmas.html#bonneval_sur_arc"}, {"@type": "ListItem", "position": 3, "name": "Aussois", "url": "https://snowscope.app/christmas.html#aussois"}, {"@type": "ListItem", "position": 4, "name": "Valfréjus · La Norma", "url": "https://snowscope.app/christmas.html#valfrejus"}, {"@type": "ListItem", "position": 5, "name": "Val Cenis", "url": "https://snowscope.app/christmas.html#val_cenis"}, {"@type": "ListItem", "position": 6, "name": "Val Thorens", "url": "https://snowscope.app/christmas.html#val_thorens"}, {"@type": "ListItem", "position": 7, "name": "Garmisch-Classic", "url": "https://snowscope.app/christmas.html#skigebiet_garmisch_classic"}, {"@type": "ListItem", "position": 8, "name": "Zugspitze", "url": "https://snowscope.app/christmas.html#gletscher_skigebiet_zugspitze_ski_resort_zugspit"}, {"@type": "ListItem", "position": 9, "name": "Oberstdorf · Kleinwalsertal", "url": "https://snowscope.app/christmas.html#kleinwalsertal_oberstdorf"}]}</script>
 <style>
+:root{--sky:#5CC8FF;--sky2:#A8E4FF;--snow:#F4FBFF;--navy:#0B1E4A;--ink9:#14233F;--gold:#FFD23F;--gold2:#E8A400;--green:#1E9E5A;--green2:#7BE0A6;--red:#D63A3F;--red2:#FFB3B5;--pine:#1C6B3A;--pine2:#2E8F4F;--mut:#3D4F6E;color-scheme:light}
 [hidden]{display:none!important}
-:root{--xm:#0B7A53;--de:#B0413E;--gold2:#F5B82E;--navy:#09265C}
-.hero{margin-top:10px;border-radius:24px;padding:26px 20px 22px;color:#fff;background:linear-gradient(150deg,#0B3A8C 0%,#1463F3 55%,#5C9DFF 100%);box-shadow:var(--e1);position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.08)}
-.hero .kick{display:inline-block;background:var(--gold2);color:var(--navy);font-weight:800;font-size:13px;letter-spacing:.04em;border-radius:999px;padding:5px 12px;text-transform:uppercase}
-.hero h1{color:#fff;margin:12px 0 6px;font-size:clamp(28px,6.4vw,44px);line-height:1.12;font-weight:800;letter-spacing:-.01em}
-.hero p{margin:0;color:#E6EFFF;font-size:16.5px;max-width:620px}
-.hero .big{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
-.hero .big div{background:rgba(255,255,255,.14);border-radius:14px;padding:10px 14px;min-width:0}
-.hero .big b{display:block;font-size:22px;font-weight:800}
-.hero .big span{font-size:13px;color:#DCE8FF}
-.legend{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0 4px}
-.legend .card{margin:0;padding:14px}
-.legend h2{font-size:15px;margin:0 0 4px;display:flex;align-items:center;gap:8px}
-.legend p{margin:0;font-size:14px;color:var(--ink2)}
-.sw{width:14px;height:14px;border-radius:4px;flex:none}.sw.n{background:var(--ski)}.sw.x{background:var(--xm)}
-@media (max-width:620px){.legend{grid-template-columns:1fr}}
-.vs{margin:18px 0 6px}
-.vs h2{margin:0 0 10px;font-size:20px}
-.vsg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.vsg .card{margin:0;padding:14px;border-top:5px solid var(--xm)}
-.vsg .card.de{border-top-color:var(--de)}.vsg .card.ref{border-top-color:var(--gold2)}
-.vsg h3{margin:0 0 8px;font-size:15px}
-.vsg dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:14px}
-.vsg dt{color:var(--ink3)}.vsg dd{margin:0;text-align:right;font-weight:700;font-variant-numeric:tabular-nums}
-@media (max-width:720px){.vsg{grid-template-columns:1fr}}
-.punch{margin:12px 0 0;border-radius:16px;padding:14px 16px;background:var(--gold-tint,#FFF6DD);color:var(--ink);font-weight:600}
-.punch b{color:var(--xm)}
-h2.sec{margin:26px 0 4px;font-size:22px}
-p.sub{margin:0 0 12px;color:var(--ink2);font-size:14.5px}
-.deal{background:var(--surface);border-radius:20px;box-shadow:var(--e1);padding:16px;margin:12px 0;border-left:6px solid var(--xm);scroll-margin-top:16px}
-.deal.de{border-left-color:var(--de)}.deal.ref{border-left-color:var(--gold2)}
-.dh{display:flex;align-items:flex-start;gap:12px}
-.rank{flex:none;width:36px;height:36px;border-radius:50%;background:var(--xm);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
-.de .rank{background:var(--de)}.ref .rank{background:var(--gold2);color:var(--navy)}
-.nm{flex:1;min-width:0}.nm h3{margin:0;font-size:19px;line-height:1.2}.nm p{margin:2px 0 0;font-size:13.5px;color:var(--ink3)}
-.tg{font-weight:700;color:var(--xm)}.de .tg{color:var(--de)}.ref .tg{color:var(--fair)}
-.pr{text-align:right;flex:none;max-width:42%}.pr b{display:block;font-size:26px;font-weight:800;color:var(--xm);line-height:1.1}
-.de .pr b{color:var(--de)}.ref .pr b{color:var(--ink)}
-.pr span{font-size:12.5px;color:var(--ink3);display:block}.pr .pn{font-size:11.5px}
-.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0 4px}
-.facts div{background:var(--surface2);border-radius:12px;padding:8px 10px;min-width:0}
-.facts .now{background:var(--accent-tint)}
-.k{display:block;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink3);font-weight:700}
-.facts b{display:block;font-size:19px;font-weight:800;font-variant-numeric:tabular-nums}
-.facts .now b{color:var(--accent-ink)}
-.s{display:block;font-size:12px;color:var(--ink3)}
-@media (max-width:560px){.facts{grid-template-columns:1fr 1fr}}
-.xm{margin-top:10px;background:var(--good-tint);border-radius:14px;padding:10px 12px}
-.de .xm{background:var(--surface2)}
-.xl b{font-size:21px;font-weight:800;color:var(--xm);display:block;font-variant-numeric:tabular-nums}
-.de .xl b{color:var(--de)}
-.bar{position:relative;height:16px;border-radius:8px;background:var(--surface3);margin:10px 0 4px;overflow:visible}
-.bar .nowb{position:absolute;left:0;top:0;bottom:0;border-radius:8px;background:var(--ski);opacity:.85}
-.bar .rng{position:absolute;top:-3px;bottom:-3px;border-radius:9px;background:var(--xm);opacity:.55}
-.de .bar .rng{background:var(--de)}
-.bar .p50{position:absolute;top:-6px;bottom:-6px;width:4px;margin-left:-2px;border-radius:2px;background:var(--ink)}
-.bar .nrm{position:absolute;top:-9px;width:0;height:0;margin-left:-6px;border-left:6px solid transparent;border-right:6px solid transparent;border-top:8px solid var(--fair)}
-.md{margin:4px 0 0;font-size:12.5px;color:var(--ink3)}
-.df{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:12px}
-.op{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;color:var(--ink2);font-weight:600}
-.op .ms{font-size:18px}
-.stay{flex:1 1 220px}
-.more{font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap}
-.keyrow{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);margin:4px 0 6px}
-.keyrow i{display:inline-block;vertical-align:middle;margin-right:5px}
-.k1{width:18px;height:8px;border-radius:4px;background:var(--ski)}.k2{width:18px;height:10px;border-radius:5px;background:var(--xm);opacity:.6}
-.k3{width:4px;height:12px;background:var(--ink)}.k4{width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:7px solid var(--fair)}
-.how{margin-top:22px}.how h2{font-size:18px;margin:0 0 6px}.how p{font-size:14px;color:var(--ink2);margin:6px 0}
-.cta{margin:22px 0 6px;border-radius:20px;padding:18px;background:var(--navy);color:#fff;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
-.cta p{margin:0;font-size:16px;font-weight:600;max-width:460px}
-.cta .btn.tonal{background:#fff;color:var(--navy)}
-.partner{font-size:12.5px;color:var(--ink3);margin:10px 0 0}
+body{background:linear-gradient(180deg,var(--sky) 0,var(--sky2) 520px,var(--snow) 1100px,var(--snow) 100%);color:var(--ink9)}
+.px{font-family:"Press Start 2P",ui-monospace,monospace;letter-spacing:0;font-weight:400;-webkit-font-smoothing:none}
+.wrapx{max-width:880px;margin:0 auto;padding:0 16px 40px}
+.box{background:#fff;border:4px solid var(--navy);box-shadow:6px 6px 0 var(--navy);border-radius:0}
+/* ---------- title screen */
+.title{position:relative;margin:14px 0 0;overflow:hidden;background:linear-gradient(180deg,#1B3F8F 0,#2F6FD6 45%,#5CC8FF 100%);color:#fff;padding:22px 16px 0;min-height:300px}
+.title canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.title .kick{display:inline-block;background:var(--gold);color:var(--navy);border:3px solid var(--navy);padding:6px 8px;font-size:10px;line-height:1.4;position:relative;z-index:2}
+.title h1{position:relative;z-index:2;color:#fff;margin:16px 0 10px;font-size:clamp(17px,4.6vw,30px);line-height:1.45;text-shadow:3px 3px 0 var(--navy)}
+.title h1 em{font-style:normal;color:var(--gold)}
+.title p{position:relative;z-index:2;margin:0;max-width:560px;font-size:15.5px;line-height:1.55;color:#fff;text-shadow:1px 1px 0 rgba(11,30,74,.6)}
+.title .blink{position:relative;z-index:2;display:inline-block;margin:14px 0 0;font-size:10px;color:var(--gold);animation:blink 1.1s steps(2,end) infinite}
+@keyframes blink{50%{opacity:0}}
+.title svg{display:block;position:relative;z-index:1;width:calc(100% + 32px);margin:10px -16px 0;height:auto;shape-rendering:crispEdges}
+/* ---------- HUD */
+.hud{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 0}
+.hud .box{padding:12px;text-align:center}
+.hud b{display:block;font-size:clamp(14px,3.4vw,20px);color:var(--navy);margin:6px 0 4px}
+.hud .v1 b{color:var(--green)}.hud .v3 b{color:var(--red)}
+.hud span{font-size:12.5px;color:var(--mut);line-height:1.35;display:block}
+.hud .lb{font-size:8px;color:var(--mut)}
+@media (max-width:560px){.hud{grid-template-columns:1fr}}
+.xlegend{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0 0}
+.xlegend .box{padding:12px 14px}
+.xlegend h2{font-size:11px;margin:0 0 8px;display:flex;align-items:center;gap:8px;line-height:1.4}
+.xlegend p{margin:0;font-size:14px;color:var(--mut);line-height:1.5}
+.sq{width:14px;height:14px;flex:none;border:2px solid var(--navy)}.sq.n{background:var(--sky)}.sq.x{background:var(--gold)}
+@media (max-width:620px){.xlegend{grid-template-columns:1fr}}
+/* ---------- VS screen */
+.vs{margin:28px 0 0;background:var(--navy);border:4px solid var(--navy);box-shadow:6px 6px 0 rgba(11,30,74,.35);padding:16px;color:#fff}
+.vs h2{color:var(--gold);font-size:clamp(12px,3vw,16px);margin:0 0 14px;text-align:center;line-height:1.5}
+.vsg{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center}
+.pl{background:#fff;color:var(--ink9);border:4px solid var(--green2);padding:12px}
+.pl.de{border-color:var(--red2)}
+.pl h3{font-size:10px;line-height:1.6;margin:0 0 10px;color:var(--green)}
+.pl.de h3{color:var(--red)}
+.pl dl{margin:0;display:grid;grid-template-columns:1fr auto;gap:6px 8px;font-size:13.5px}
+.pl dt{color:var(--mut)}.pl dd{margin:0;text-align:right;font-family:"Press Start 2P",monospace;font-size:11px;line-height:1.7}
+.vsx{font-size:clamp(22px,5vw,34px);color:var(--gold);text-shadow:4px 4px 0 var(--red);animation:pulse 1.4s ease-in-out infinite;text-align:center}
+@keyframes pulse{50%{transform:scale(1.14) rotate(-4deg)}}
+@media (max-width:640px){.vsg{grid-template-columns:1fr}.vsx{padding:4px 0}}
+.boss{margin:12px 0 0;background:#fff;color:var(--ink9);border:4px solid var(--gold);padding:12px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;font-size:13.5px}
+.boss .px{font-size:10px;color:var(--gold2)}
+.punch{margin:14px 0 0;color:#fff;font-size:15px;line-height:1.6}
+.punch b{color:var(--gold)}
+/* ---------- level select */
+h2.sec{font-size:clamp(13px,3.2vw,18px);margin:34px 0 8px;line-height:1.5;color:var(--navy)}
+p.sub{margin:0 0 6px;color:var(--mut);font-size:14.5px}
+.xkeyrow{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12.5px;color:var(--mut);margin:8px 0 4px}
+.xkeyrow i{display:inline-block;vertical-align:middle;margin-right:6px;border:2px solid var(--navy)}
+.k1{width:18px;height:10px;background:var(--sky)}.k2{width:18px;height:10px;background:var(--gold)}.k3{width:4px;height:14px;background:var(--navy);border:0!important}.k4{width:10px;height:10px;background:var(--red)}
+.lv{position:relative;background:#fff;border:4px solid var(--navy);box-shadow:6px 6px 0 var(--navy);padding:14px;margin:18px 0;scroll-margin-top:16px}
+.lv.ref{border-color:var(--gold2);box-shadow:6px 6px 0 var(--gold2)}
+.lv.de{border-color:var(--red);box-shadow:6px 6px 0 var(--red)}
+.lh{display:flex;gap:8px;align-items:center;margin:-14px -14px 12px;padding:8px 14px;background:var(--navy);color:#fff}
+.lv.ref .lh{background:var(--gold2);color:var(--navy)}.lv.de .lh{background:var(--red)}
+.lvl{font-size:11px}.xtag{margin-left:auto;font-size:8px;background:var(--gold);color:var(--navy);padding:5px 6px}
+.ln{display:flex;gap:12px;align-items:flex-start}
+.xnm{flex:1;min-width:0}.xnm h3{margin:0;font-size:20px;line-height:1.2;font-weight:800;color:var(--navy)}.xnm p{margin:4px 0 0;font-size:13.5px;color:var(--mut)}
+.coin{flex:none;text-align:right;max-width:46%}
+.coin b{display:inline-block;font-size:clamp(14px,3.6vw,20px);color:var(--green);vertical-align:middle}
+.lv.ref .coin b{color:var(--gold2)}.lv.de .coin b{color:var(--red)}
+.coin span{display:block;font-size:12px;color:var(--mut);margin-top:4px}.coin .pn{font-size:11.5px}
+.cn{display:inline-block;width:16px;height:16px;margin-right:8px;vertical-align:middle;background:var(--gold);box-shadow:0 0 0 2px var(--navy),inset -3px -3px 0 var(--gold2),inset 3px 3px 0 #FFF1A8;animation:spin 2.4s steps(8) infinite}
+@keyframes spin{0%,40%{transform:scaleX(1)}50%{transform:scaleX(.2)}60%,100%{transform:scaleX(1)}}
+.st{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0 0}
+.st>div{border:3px solid var(--navy);background:var(--snow);padding:8px;min-width:0}
+.st .xnw{background:#E3F6FF}
+.xk{display:block;font-size:8px;color:var(--mut);line-height:1.4}
+.st b{display:block;font-size:clamp(11px,2.6vw,14px);margin:6px 0 4px;color:var(--navy);white-space:nowrap}
+.st .xnw b{color:#0B6FB8}
+.s{display:block;font-size:12px;color:var(--mut);line-height:1.3}
+@media (max-width:560px){.st{grid-template-columns:1fr 1fr}}
+.xhp{margin:12px 0 0;border:3px solid var(--navy);background:#FFFBEA;padding:10px}
+.xhl{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.xhl b{font-size:clamp(12px,3vw,16px);color:var(--green)}
+.lv.de .xhl b{color:var(--red)}
+.xbar{position:relative;height:22px;margin:12px 0 8px;border:3px solid var(--navy);background:repeating-linear-gradient(90deg,#DCE8F5 0 10px,#C9D9EC 10px 12px)}
+.xbar .fill{position:absolute;left:0;top:0;bottom:0;width:var(--w);background:repeating-linear-gradient(90deg,var(--sky) 0 10px,#2FA8E8 10px 12px);transform-origin:left center;transform:scaleX(1)}
+.xbar .xrng{position:absolute;top:3px;bottom:3px;background:repeating-linear-gradient(90deg,var(--gold) 0 6px,#FFE48A 6px 8px);outline:2px solid var(--navy);opacity:.95}
+.xbar .p50{position:absolute;top:-8px;bottom:-8px;width:4px;margin-left:-2px;background:var(--navy)}
+.xbar .nrm{position:absolute;top:-12px;width:8px;height:8px;margin-left:-4px;background:var(--red);outline:2px solid #fff}
+.xmd{margin:0;font-size:12.5px;color:var(--mut);line-height:1.5}
+.lf{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:14px 0 0}
+.op{font-size:9px;color:var(--navy);background:var(--snow);border:3px solid var(--navy);padding:8px}
+.start{flex:1 1 230px;display:flex;align-items:center;justify-content:center;min-height:52px;padding:10px 12px;text-align:center;text-decoration:none;font-size:12px;line-height:1.4;color:var(--navy);background:var(--gold);border:4px solid var(--navy);box-shadow:5px 5px 0 var(--navy);transition:transform .08s,box-shadow .08s;-webkit-tap-highlight-color:transparent}
+.start:hover{background:#FFDD66}
+.start:active,.start.prs{transform:translate(4px,4px);box-shadow:1px 1px 0 var(--navy)}
+.start:focus-visible{outline:4px solid var(--red);outline-offset:3px}
+.more{font-size:14px;font-weight:700;text-decoration:none;color:#0B57B8;white-space:nowrap}
+/* reveal (JS only, transform/opacity only) */
+html.js .rv{opacity:0;transform:translateY(28px) scale(.97)}
+html.js .rv.in{opacity:1;transform:none;transition:opacity .45s ease-out var(--d,0ms),transform .55s cubic-bezier(.2,1.4,.4,1) var(--d,0ms)}
+html.js .rv .fill{transform:scaleX(0)}
+html.js .rv.in .fill{transform:scaleX(1);transition:transform .9s steps(14,end) calc(var(--d,0ms) + .25s)}
+.lv.in:hover{transform:translate(-2px,-2px);transition:transform .15s}
+/* ---------- how + cta */
+.how{margin:30px 0 0;padding:14px}
+.how h2{font-size:11px;margin:0 0 8px;line-height:1.5;color:var(--navy)}
+.how p{font-size:14px;color:var(--mut);margin:8px 0;line-height:1.55}
+.cta{margin:26px 0 0;background:var(--navy);color:#fff;border:4px solid var(--navy);box-shadow:6px 6px 0 rgba(11,30,74,.35);padding:16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.cta p{margin:0;font-size:11px;line-height:1.7;max-width:420px;color:var(--gold)}
+.cta a{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:8px 14px;text-decoration:none;font-size:10px;line-height:1.4;border:4px solid #fff;box-shadow:4px 4px 0 #000;transition:transform .08s,box-shadow .08s}
+.cta a:active{transform:translate(3px,3px);box-shadow:1px 1px 0 #000}
+.cta .a1{background:#fff;color:var(--navy)}.cta .a2{background:var(--green);color:#fff}
+.xpartner{font-size:12.5px;color:var(--mut);margin:16px 0 0;line-height:1.55}
+@media (prefers-reduced-motion:reduce){
+  .title .blink,.vsx,.cn{animation:none}
+  html.js .rv,html.js .rv.in{opacity:1;transform:none;transition:none}
+  html.js .rv .fill,html.js .rv.in .fill{transform:none;transition:none}
+  .lv:hover,.lv.in:hover{transform:none}
+}
 </style>
 </head>
 <body data-page="christmas">
@@ -100,305 +143,338 @@ p.sub{margin:0 0 12px;color:var(--ink2);font-size:14.5px}
   <a class="brand" href="./"><img src="logo.svg" alt="" width="30" height="30">SnowScope</a>
   <div class="acct" id="acct" style="margin-left:auto"></div>
 </div></header>
-<main class="wrap" style="max-width:820px">
+<main class="wrapx">
   <div class="crumbs"><a href="./">Snow today</a> › Christmas ski deals</div>
 
-  <section class="hero">
-    <span class="kick">Christmas 2026 · ski deals</span>
-    <h1>Christmas skiing 2026: the best snow for your money</h1>
+  <section class="title box" aria-label="Christmas ski deals 2026">
+    <canvas id="flakes" aria-hidden="true"></canvas>
+    <span class="kick px">XMAS 2026 · SKI DEALS</span>
+    <h1 class="px">CHRISTMAS SKIING: <em>BEST SNOW</em> FOR YOUR MONEY</h1>
     <p>Same storm, half the price. The Maurienne valley sits right behind Val Thorens. It already has deep snow, and a day on the slopes costs from 36 €.</p>
-    <div class="big">
-      <div><b>42 €</b><span>average day pass, 5 best-value resorts</span></div>
-      <div><b>73.50 €</b><span>Val Thorens day pass</span></div>
-      <div><b>71 €</b><span>average, Bavaria &amp; Allgäu</span></div>
-    </div>
+    <span class="blink px">PRESS START ▼</span>
+    <svg viewBox="0 0 160 46" preserveAspectRatio="none" aria-hidden="true">
+      <polygon fill="#E8F4FF" points="0,46 0,30 8,30 8,26 14,26 14,20 20,20 20,14 26,14 26,8 30,8 30,4 34,4 34,8 38,8 38,14 44,14 44,20 50,20 50,24 56,24 56,18 62,18 62,12 66,12 66,6 70,6 70,2 74,2 74,6 78,6 78,12 84,12 84,18 90,18 90,24 96,24 96,16 102,16 102,10 106,10 106,6 110,6 110,10 114,10 114,16 120,16 120,22 128,22 128,16 134,16 134,12 138,12 138,16 144,16 144,22 150,22 150,28 160,28 160,46"/>
+      <polygon fill="#9CC7EE" points="34,8 38,8 38,14 44,14 44,20 50,20 50,24 46,24 46,30 40,30 40,22 36,22 36,14 34,14"/>
+      <polygon fill="#9CC7EE" points="74,6 78,6 78,12 84,12 84,18 90,18 90,24 86,24 86,30 80,30 80,20 76,20 76,12 74,12"/>
+      <polygon fill="#9CC7EE" points="110,10 114,10 114,16 120,16 120,22 116,22 116,28 112,28 112,18 110,18"/>
+      <rect fill="#FFFFFF" x="0" y="36" width="160" height="10"/>
+      <g fill="#1C6B3A"><polygon points="6,36 9,28 12,36"/><polygon points="16,38 20,29 24,38"/><polygon points="132,37 135,29 138,37"/><polygon points="142,38 146,28 150,38"/><polygon points="58,38 61,31 64,38"/></g>
+      <g fill="#2E8F4F"><polygon points="7,33 9,28 11,33"/><polygon points="17,35 20,29 23,35"/><polygon points="133,34 135,29 137,34"/><polygon points="143,35 146,28 149,35"/></g>
+      <g fill="#6B3E1E"><rect x="8.5" y="36" width="1" height="2"/><rect x="19.5" y="38" width="1" height="2"/><rect x="134.5" y="37" width="1" height="2"/><rect x="145.5" y="38" width="1" height="2"/><rect x="60.5" y="38" width="1" height="2"/></g>
+      <g fill="#D63A3F"><rect x="94" y="39" width="3" height="2"/><rect x="93" y="41" width="5" height="1"/></g>
+    </svg>
   </section>
 
-  <div class="legend">
-    <div class="card"><h2><span class="sw n"></span>Snow now</h2><p>The actual snowpack today on the upper slopes of each resort.</p></div>
-    <div class="card"><h2><span class="sw x"></span>Christmas projection</h2><p>Christmas is 5 weeks away, so this is a likely range, not a promise. It starts from today's snowpack and is updated as the forecasts move.</p></div>
+  <div class="hud">
+    <div class="box v1 rv"><span class="lb px">MAURIENNE AVG</span><b class="px">42 €</b><span>per day, 5 best-value resorts</span></div>
+    <div class="box v2 rv" style="--d:70ms"><span class="lb px">VAL THORENS</span><b class="px">73.50 €</b><span>per day, the famous one</span></div>
+    <div class="box v3 rv" style="--d:140ms"><span class="lb px">GERMANY AVG</span><b class="px">71 €</b><span>per day, Bavaria &amp; Allgäu</span></div>
   </div>
 
-  <section class="vs">
-    <h2>France vs Germany at Christmas</h2>
+  <div class="xlegend">
+    <div class="box rv"><h2 class="px"><span class="sq n"></span>SNOW NOW</h2><p>The actual snowpack today on the upper slopes of each resort.</p></div>
+    <div class="box rv" style="--d:70ms"><h2 class="px"><span class="sq x"></span>XMAS PROJECTION</h2><p>Christmas is 5 weeks away, so this is a likely range, not a promise. It starts from today's snowpack and is updated as the forecasts move.</p></div>
+  </div>
+
+  <section class="vs rv" aria-label="France vs Germany">
+    <h2 class="px">FRANCE VS GERMANY</h2>
     <div class="vsg">
-      <div class="card"><h3>Maurienne, France (5 resorts)</h3><dl><dt>Day pass</dt><dd>42 €</dd><dt>Snow now</dt><dd>56 cm</dd><dt>Christmas, most likely</dt><dd>129 cm</dd><dt>6 days at the day price</dt><dd>251 €</dd></dl></div>
-      <div class="card de"><h3>Bavaria &amp; Allgäu, Germany (3 resorts)</h3><dl><dt>Day pass</dt><dd>71 €</dd><dt>Snow now</dt><dd>27 cm</dd><dt>Christmas, most likely</dt><dd>63 cm</dd><dt>6 days at the day price</dt><dd>425 €</dd></dl></div>
-      <div class="card ref"><h3>Val Thorens, the famous one</h3><dl><dt>Day pass</dt><dd>73.50 €</dd><dt>Snow now</dt><dd>135 cm</dd><dt>Christmas, most likely</dt><dd>205 cm</dd><dt>Top of the pistes</dt><dd>3,221 m</dd></dl></div>
+      <div class="pl"><h3 class="px">MAURIENNE, FR (5)</h3><dl><dt>Day pass</dt><dd>42 €</dd><dt>Snow now</dt><dd>56 cm</dd><dt>Christmas, most likely</dt><dd>129 cm</dd><dt>6 days at the day price</dt><dd>251 €</dd></dl></div>
+      <div class="vsx px" aria-hidden="true">VS</div>
+      <div class="pl de"><h3 class="px">BAVARIA &amp; ALLGÄU, DE (3)</h3><dl><dt>Day pass</dt><dd>71 €</dd><dt>Snow now</dt><dd>27 cm</dd><dt>Christmas, most likely</dt><dd>63 cm</dd><dt>6 days at the day price</dt><dd>425 €</dd></dl></div>
     </div>
+    <div class="boss"><span class="px">BOSS: VAL THORENS</span><span>73.50 € per day</span><span>135 cm now</span><span>~205 cm at Christmas</span><span>top 3,221 m</span></div>
     <p class="punch">1 day at Val Thorens (73.50 €) ≈ 2 days at Bonneval-sur-Arc (38.20 €). Six ski days in the Maurienne cost about <b>174 € less</b> per adult than in the German Alps, with more snow.</p>
   </section>
 
-  <h2 class="sec">The deals, cheapest first</h2>
-  <p class="sub">Adult 1-day pass for the Christmas holidays · snow on the upper slopes · tap “Where to stay” for chalets and hotels on your dates (19–26 Dec, 2 adults).</p>
-  <div class="keyrow"><span><i class="k1"></i>snow now</span><span><i class="k2"></i>Christmas likely range</span><span><i class="k3"></i>most likely</span><span><i class="k4"></i>normal Christmas</span></div>
+  <h2 class="xsec px">SELECT YOUR LEVEL</h2>
+  <p class="sub">Adult 1-day pass for the Christmas holidays · snow on the upper slopes · “Book hotel” opens chalets and hotels for 19–26 Dec, 2 adults.</p>
+  <div class="xkeyrow"><span><i class="k1"></i>snow now</span><span><i class="k2"></i>Christmas likely range</span><span><i class="k3"></i>most likely</span><span><i class="k4"></i>normal Christmas</span></div>
 
-<article class="deal cheap" id="les_karellis">
-  <div class="dh">
-    <span class="rank">1</span>
-    <div class="nm"><h3>Les Karellis</h3><p>Maurienne, France · <span class="tg">Best value</span></p></div>
-    <div class="pr"><b>36 €</b><span>per day</span></div>
+<article class="lv cheap rv" id="les_karellis" style="--d:0ms">
+  <div class="lh">
+    <span class="lvl px">LEVEL 1</span><span class="xtag px">BEST VALUE</span>
   </div>
-  <div class="facts">
-    <div><span class="k">Pistes</span><b>60 km</b><span class="s">14 lifts</span></div>
-    <div><span class="k">Altitude</span><b>2,484 m</b><span class="s">base 1,550 m</span></div>
-    <div class="now"><span class="k">Snow now</span><b>40 cm</b><span class="s">actual snowpack</span></div>
-    <div><span class="k">Next 7 days</span><b>+75 cm</b><span class="s">new snow</span></div>
+  <div class="ln">
+    <div class="xnm"><h3>Les Karellis</h3><p>Maurienne, France</p></div>
+    <div class="coin"><i class="cn" aria-hidden="true"></i><b class="px">36 €</b><span>per day</span></div>
   </div>
-  <div class="xm">
-    <div class="xl"><span class="k">Christmas projection</span><b>95–140 cm</b><span class="s">most likely ~115 cm · normal Christmas 90 cm</span></div>
-    <div class="bar" role="img" aria-label="Christmas snow likely between 95 and 140 cm, normal 90 cm, now 40 cm">
-      <span class="nowb" style="width:15.4%"></span>
-      <span class="rng" style="left:36.5%;width:calc(53.8% - 36.5%)"></span>
+  <div class="st">
+    <div><span class="xk px">KM</span><b class="px">60</b><span class="s">pistes · 14 lifts</span></div>
+    <div><span class="xk px">TOP</span><b class="px">2,484m</b><span class="s">base 1,550 m</span></div>
+    <div class="xnw"><span class="xk px">NOW</span><b class="px">40cm</b><span class="s">actual snowpack</span></div>
+    <div><span class="xk px">+7 DAYS</span><b class="px">+75</b><span class="s">cm new snow</span></div>
+  </div>
+  <div class="xhp">
+    <div class="xhl"><span class="xk px">XMAS</span><b class="px">95-140cm</b></div>
+    <div class="xbar" role="img" aria-label="Snow now 40 cm. Christmas likely 95 to 140 cm, most likely 115 cm, normal Christmas 90 cm">
+      <span class="fill" style="--w:15.4%"></span>
+      <span class="xrng" style="left:36.5%;width:calc(53.8% - 36.5%)"></span>
       <span class="p50" style="left:44.2%"></span>
-      <span class="nrm" style="left:34.6%" title="Normal Christmas"></span>
+      <span class="nrm" style="left:34.6%"></span>
     </div>
-    <p class="md">ECMWF ensemble ~115 cm · GFS ensemble ~115 cm</p>
+    <p class="xmd">Most likely ~115 cm · normal Christmas 90 cm<br>ECMWF ensemble ~115 cm · GFS ensemble ~115 cm</p>
   </div>
-  <div class="df">
-    <span class="op"><span class="ms">event</span>Opens 19 Dec</span>
-    <a class="btn ski stay" target="_blank" rel="sponsored noopener" data-stay="les_karellis" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=45.2160&amp;lng=6.3997&amp;address=Les+Karellis%2C+France&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_les_karellis"><span class="ms">hotel</span><span class="t">Where to stay for Christmas</span></a>
-    <a class="more" href="resorts/les_karellis.html">Live snow &amp; forecast ›</a>
+  <div class="lf">
+    <span class="op px">OPENS 19 DEC</span>
+    <a class="start px" target="_blank" rel="sponsored noopener" data-stay="les_karellis" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=45.2160&amp;lng=6.3997&amp;address=Les+Karellis%2C+France&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_les_karellis">START &#9654; BOOK HOTEL</a>
+    <a class="more" href="resorts/les_karellis.html">Live snow &amp; forecast &rsaquo;</a>
   </div>
 </article>
-<article class="deal cheap" id="bonneval_sur_arc">
-  <div class="dh">
-    <span class="rank">2</span>
-    <div class="nm"><h3>Bonneval-sur-Arc</h3><p>Haute Maurienne, France · <span class="tg">Best value</span></p></div>
-    <div class="pr"><b>38.20 €</b><span>per day</span></div>
+<article class="lv cheap rv" id="bonneval_sur_arc" style="--d:70ms">
+  <div class="lh">
+    <span class="lvl px">LEVEL 2</span><span class="xtag px">BEST VALUE</span>
   </div>
-  <div class="facts">
-    <div><span class="k">Pistes</span><b>32 km</b><span class="s">10 lifts</span></div>
-    <div><span class="k">Altitude</span><b>2,948 m</b><span class="s">base 1,794 m</span></div>
-    <div class="now"><span class="k">Snow now</span><b>75 cm</b><span class="s">actual snowpack</span></div>
-    <div><span class="k">Next 7 days</span><b>+65 cm</b><span class="s">new snow</span></div>
+  <div class="ln">
+    <div class="xnm"><h3>Bonneval-sur-Arc</h3><p>Haute Maurienne, France</p></div>
+    <div class="coin"><i class="cn" aria-hidden="true"></i><b class="px">38.20 €</b><span>per day</span></div>
   </div>
-  <div class="xm">
-    <div class="xl"><span class="k">Christmas projection</span><b>125–175 cm</b><span class="s">most likely ~150 cm · normal Christmas 130 cm</span></div>
-    <div class="bar" role="img" aria-label="Christmas snow likely between 125 and 175 cm, normal 130 cm, now 75 cm">
-      <span class="nowb" style="width:28.8%"></span>
-      <span class="rng" style="left:48.1%;width:calc(67.3% - 48.1%)"></span>
+  <div class="st">
+    <div><span class="xk px">KM</span><b class="px">32</b><span class="s">pistes · 10 lifts</span></div>
+    <div><span class="xk px">TOP</span><b class="px">2,948m</b><span class="s">base 1,794 m</span></div>
+    <div class="xnw"><span class="xk px">NOW</span><b class="px">75cm</b><span class="s">actual snowpack</span></div>
+    <div><span class="xk px">+7 DAYS</span><b class="px">+65</b><span class="s">cm new snow</span></div>
+  </div>
+  <div class="xhp">
+    <div class="xhl"><span class="xk px">XMAS</span><b class="px">125-175cm</b></div>
+    <div class="xbar" role="img" aria-label="Snow now 75 cm. Christmas likely 125 to 175 cm, most likely 150 cm, normal Christmas 130 cm">
+      <span class="fill" style="--w:28.8%"></span>
+      <span class="xrng" style="left:48.1%;width:calc(67.3% - 48.1%)"></span>
       <span class="p50" style="left:57.7%"></span>
-      <span class="nrm" style="left:50.0%" title="Normal Christmas"></span>
+      <span class="nrm" style="left:50.0%"></span>
     </div>
-    <p class="md">ECMWF ensemble ~155 cm · GFS ensemble ~145 cm</p>
+    <p class="xmd">Most likely ~150 cm · normal Christmas 130 cm<br>ECMWF ensemble ~155 cm · GFS ensemble ~145 cm</p>
   </div>
-  <div class="df">
-    <span class="op"><span class="ms">event</span>Opens 19 Dec</span>
-    <a class="btn ski stay" target="_blank" rel="sponsored noopener" data-stay="bonneval_sur_arc" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=45.3614&amp;lng=7.0569&amp;address=Bonneval-sur-Arc%2C+France&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_bonneval_sur_arc"><span class="ms">hotel</span><span class="t">Where to stay for Christmas</span></a>
-    <a class="more" href="resorts/bonneval_sur_arc.html">Live snow &amp; forecast ›</a>
+  <div class="lf">
+    <span class="op px">OPENS 19 DEC</span>
+    <a class="start px" target="_blank" rel="sponsored noopener" data-stay="bonneval_sur_arc" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=45.3614&amp;lng=7.0569&amp;address=Bonneval-sur-Arc%2C+France&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_bonneval_sur_arc">START &#9654; BOOK HOTEL</a>
+    <a class="more" href="resorts/bonneval_sur_arc.html">Live snow &amp; forecast &rsaquo;</a>
   </div>
 </article>
-<article class="deal cheap" id="aussois">
-  <div class="dh">
-    <span class="rank">3</span>
-    <div class="nm"><h3>Aussois</h3><p>Haute Maurienne, France · <span class="tg">Best value</span></p></div>
-    <div class="pr"><b>41 €</b><span>per day</span><span class="pn">dynamic pricing</span></div>
+<article class="lv cheap rv" id="aussois" style="--d:140ms">
+  <div class="lh">
+    <span class="lvl px">LEVEL 3</span><span class="xtag px">BEST VALUE</span>
   </div>
-  <div class="facts">
-    <div><span class="k">Pistes</span><b>55 km</b><span class="s">10 lifts</span></div>
-    <div><span class="k">Altitude</span><b>2,680 m</b><span class="s">base 1,532 m</span></div>
-    <div class="now"><span class="k">Snow now</span><b>50 cm</b><span class="s">actual snowpack</span></div>
-    <div><span class="k">Next 7 days</span><b>+85 cm</b><span class="s">new snow</span></div>
+  <div class="ln">
+    <div class="xnm"><h3>Aussois</h3><p>Haute Maurienne, France</p></div>
+    <div class="coin"><i class="cn" aria-hidden="true"></i><b class="px">41 €</b><span>per day</span><span class="pn">dynamic pricing</span></div>
   </div>
-  <div class="xm">
-    <div class="xl"><span class="k">Christmas projection</span><b>100–145 cm</b><span class="s">most likely ~120 cm · normal Christmas 85 cm</span></div>
-    <div class="bar" role="img" aria-label="Christmas snow likely between 100 and 145 cm, normal 85 cm, now 50 cm">
-      <span class="nowb" style="width:19.2%"></span>
-      <span class="rng" style="left:38.5%;width:calc(55.8% - 38.5%)"></span>
+  <div class="st">
+    <div><span class="xk px">KM</span><b class="px">55</b><span class="s">pistes · 10 lifts</span></div>
+    <div><span class="xk px">TOP</span><b class="px">2,680m</b><span class="s">base 1,532 m</span></div>
+    <div class="xnw"><span class="xk px">NOW</span><b class="px">50cm</b><span class="s">actual snowpack</span></div>
+    <div><span class="xk px">+7 DAYS</span><b class="px">+85</b><span class="s">cm new snow</span></div>
+  </div>
+  <div class="xhp">
+    <div class="xhl"><span class="xk px">XMAS</span><b class="px">100-145cm</b></div>
+    <div class="xbar" role="img" aria-label="Snow now 50 cm. Christmas likely 100 to 145 cm, most likely 120 cm, normal Christmas 85 cm">
+      <span class="fill" style="--w:19.2%"></span>
+      <span class="xrng" style="left:38.5%;width:calc(55.8% - 38.5%)"></span>
       <span class="p50" style="left:46.2%"></span>
-      <span class="nrm" style="left:32.7%" title="Normal Christmas"></span>
+      <span class="nrm" style="left:32.7%"></span>
     </div>
-    <p class="md">ECMWF ensemble ~120 cm · GFS ensemble ~120 cm</p>
+    <p class="xmd">Most likely ~120 cm · normal Christmas 85 cm<br>ECMWF ensemble ~120 cm · GFS ensemble ~120 cm</p>
   </div>
-  <div class="df">
-    <span class="op"><span class="ms">event</span>Opens 12 Dec</span>
-    <a class="btn ski stay" target="_blank" rel="sponsored noopener" data-stay="aussois" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=45.2473&amp;lng=6.7380&amp;address=Aussois%2C+France&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_aussois"><span class="ms">hotel</span><span class="t">Where to stay for Christmas</span></a>
-    <a class="more" href="resorts/aussois.html">Live snow &amp; forecast ›</a>
+  <div class="lf">
+    <span class="op px">OPENS 12 DEC</span>
+    <a class="start px" target="_blank" rel="sponsored noopener" data-stay="aussois" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=45.2473&amp;lng=6.7380&amp;address=Aussois%2C+France&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_aussois">START &#9654; BOOK HOTEL</a>
+    <a class="more" href="resorts/aussois.html">Live snow &amp; forecast &rsaquo;</a>
   </div>
 </article>
-<article class="deal cheap" id="valfrejus">
-  <div class="dh">
-    <span class="rank">4</span>
-    <div class="nm"><h3>Valfréjus · La Norma</h3><p>Maurienne, France · <span class="tg">Best value</span></p></div>
-    <div class="pr"><b>43.60 €</b><span>per day</span><span class="pn">one pass for both</span></div>
+<article class="lv cheap rv" id="valfrejus" style="--d:0ms">
+  <div class="lh">
+    <span class="lvl px">LEVEL 4</span><span class="xtag px">BEST VALUE</span>
   </div>
-  <div class="facts">
-    <div><span class="k">Pistes</span><b>135 km</b><span class="s">22 lifts</span></div>
-    <div><span class="k">Altitude</span><b>2,724 m</b><span class="s">base 1,552 m</span></div>
-    <div class="now"><span class="k">Snow now</span><b>55 cm</b><span class="s">actual snowpack</span></div>
-    <div><span class="k">Next 7 days</span><b>+75 cm</b><span class="s">new snow</span></div>
+  <div class="ln">
+    <div class="xnm"><h3>Valfréjus · La Norma</h3><p>Maurienne, France</p></div>
+    <div class="coin"><i class="cn" aria-hidden="true"></i><b class="px">43.60 €</b><span>per day</span><span class="pn">one pass for both</span></div>
   </div>
-  <div class="xm">
-    <div class="xl"><span class="k">Christmas projection</span><b>110–150 cm</b><span class="s">most likely ~130 cm · normal Christmas 85 cm</span></div>
-    <div class="bar" role="img" aria-label="Christmas snow likely between 110 and 150 cm, normal 85 cm, now 55 cm">
-      <span class="nowb" style="width:21.2%"></span>
-      <span class="rng" style="left:42.3%;width:calc(57.7% - 42.3%)"></span>
+  <div class="st">
+    <div><span class="xk px">KM</span><b class="px">135</b><span class="s">pistes · 22 lifts</span></div>
+    <div><span class="xk px">TOP</span><b class="px">2,724m</b><span class="s">base 1,552 m</span></div>
+    <div class="xnw"><span class="xk px">NOW</span><b class="px">55cm</b><span class="s">actual snowpack</span></div>
+    <div><span class="xk px">+7 DAYS</span><b class="px">+75</b><span class="s">cm new snow</span></div>
+  </div>
+  <div class="xhp">
+    <div class="xhl"><span class="xk px">XMAS</span><b class="px">110-150cm</b></div>
+    <div class="xbar" role="img" aria-label="Snow now 55 cm. Christmas likely 110 to 150 cm, most likely 130 cm, normal Christmas 85 cm">
+      <span class="fill" style="--w:21.2%"></span>
+      <span class="xrng" style="left:42.3%;width:calc(57.7% - 42.3%)"></span>
       <span class="p50" style="left:50.0%"></span>
-      <span class="nrm" style="left:32.7%" title="Normal Christmas"></span>
+      <span class="nrm" style="left:32.7%"></span>
     </div>
-    <p class="md">ECMWF ensemble ~130 cm · GFS ensemble ~130 cm</p>
+    <p class="xmd">Most likely ~130 cm · normal Christmas 85 cm<br>ECMWF ensemble ~130 cm · GFS ensemble ~130 cm</p>
   </div>
-  <div class="df">
-    <span class="op"><span class="ms">event</span>Opens 19 Dec</span>
-    <a class="btn ski stay" target="_blank" rel="sponsored noopener" data-stay="valfrejus" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=45.1584&amp;lng=6.6608&amp;address=Valfr%C3%A9jus%2C+France&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_valfrejus"><span class="ms">hotel</span><span class="t">Where to stay for Christmas</span></a>
-    <a class="more" href="resorts/valfrejus.html">Live snow &amp; forecast ›</a>
+  <div class="lf">
+    <span class="op px">OPENS 19 DEC</span>
+    <a class="start px" target="_blank" rel="sponsored noopener" data-stay="valfrejus" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=45.1584&amp;lng=6.6608&amp;address=Valfr%C3%A9jus%2C+France&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_valfrejus">START &#9654; BOOK HOTEL</a>
+    <a class="more" href="resorts/valfrejus.html">Live snow &amp; forecast &rsaquo;</a>
   </div>
 </article>
-<article class="deal cheap" id="val_cenis">
-  <div class="dh">
-    <span class="rank">5</span>
-    <div class="nm"><h3>Val Cenis</h3><p>Haute Maurienne, France · <span class="tg">Best value</span></p></div>
-    <div class="pr"><b>50 €</b><span>per day</span><span class="pn">dynamic pricing</span></div>
+<article class="lv cheap rv" id="val_cenis" style="--d:70ms">
+  <div class="lh">
+    <span class="lvl px">LEVEL 5</span><span class="xtag px">BEST VALUE</span>
   </div>
-  <div class="facts">
-    <div><span class="k">Pistes</span><b>125 km</b><span class="s">32 lifts</span></div>
-    <div><span class="k">Altitude</span><b>2,737 m</b><span class="s">base 1,306 m</span></div>
-    <div class="now"><span class="k">Snow now</span><b>60 cm</b><span class="s">actual snowpack</span></div>
-    <div><span class="k">Next 7 days</span><b>+65 cm</b><span class="s">new snow</span></div>
+  <div class="ln">
+    <div class="xnm"><h3>Val Cenis</h3><p>Haute Maurienne, France</p></div>
+    <div class="coin"><i class="cn" aria-hidden="true"></i><b class="px">50 €</b><span>per day</span><span class="pn">dynamic pricing</span></div>
   </div>
-  <div class="xm">
-    <div class="xl"><span class="k">Christmas projection</span><b>110–150 cm</b><span class="s">most likely ~130 cm · normal Christmas 100 cm</span></div>
-    <div class="bar" role="img" aria-label="Christmas snow likely between 110 and 150 cm, normal 100 cm, now 60 cm">
-      <span class="nowb" style="width:23.1%"></span>
-      <span class="rng" style="left:42.3%;width:calc(57.7% - 42.3%)"></span>
+  <div class="st">
+    <div><span class="xk px">KM</span><b class="px">125</b><span class="s">pistes · 32 lifts</span></div>
+    <div><span class="xk px">TOP</span><b class="px">2,737m</b><span class="s">base 1,306 m</span></div>
+    <div class="xnw"><span class="xk px">NOW</span><b class="px">60cm</b><span class="s">actual snowpack</span></div>
+    <div><span class="xk px">+7 DAYS</span><b class="px">+65</b><span class="s">cm new snow</span></div>
+  </div>
+  <div class="xhp">
+    <div class="xhl"><span class="xk px">XMAS</span><b class="px">110-150cm</b></div>
+    <div class="xbar" role="img" aria-label="Snow now 60 cm. Christmas likely 110 to 150 cm, most likely 130 cm, normal Christmas 100 cm">
+      <span class="fill" style="--w:23.1%"></span>
+      <span class="xrng" style="left:42.3%;width:calc(57.7% - 42.3%)"></span>
       <span class="p50" style="left:50.0%"></span>
-      <span class="nrm" style="left:38.5%" title="Normal Christmas"></span>
+      <span class="nrm" style="left:38.5%"></span>
     </div>
-    <p class="md">ECMWF ensemble ~125 cm · GFS ensemble ~130 cm</p>
+    <p class="xmd">Most likely ~130 cm · normal Christmas 100 cm<br>ECMWF ensemble ~125 cm · GFS ensemble ~130 cm</p>
   </div>
-  <div class="df">
-    <span class="op"><span class="ms">event</span>Opens 12 Dec</span>
-    <a class="btn ski stay" target="_blank" rel="sponsored noopener" data-stay="val_cenis" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=45.2761&amp;lng=6.8816&amp;address=Val+Cenis%2C+France&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_val_cenis"><span class="ms">hotel</span><span class="t">Where to stay for Christmas</span></a>
-    <a class="more" href="resorts/val_cenis.html">Live snow &amp; forecast ›</a>
+  <div class="lf">
+    <span class="op px">OPENS 12 DEC</span>
+    <a class="start px" target="_blank" rel="sponsored noopener" data-stay="val_cenis" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=45.2761&amp;lng=6.8816&amp;address=Val+Cenis%2C+France&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_val_cenis">START &#9654; BOOK HOTEL</a>
+    <a class="more" href="resorts/val_cenis.html">Live snow &amp; forecast &rsaquo;</a>
   </div>
 </article>
-<article class="deal ref" id="val_thorens">
-  <div class="dh">
-    <span class="rank">6</span>
-    <div class="nm"><h3>Val Thorens</h3><p>Tarentaise, France · <span class="tg">Famous reference</span></p></div>
-    <div class="pr"><b>73.50 €</b><span>per day</span><span class="pn">Val Thorens-Orelle pass</span></div>
+<article class="lv ref rv" id="val_thorens" style="--d:140ms">
+  <div class="lh">
+    <span class="lvl px">BOSS LEVEL</span><span class="xtag px">FAMOUS</span>
   </div>
-  <div class="facts">
-    <div><span class="k">Pistes</span><b>150 km</b><span class="s">33 lifts</span></div>
-    <div><span class="k">Altitude</span><b>3,221 m</b><span class="s">base 1,726 m</span></div>
-    <div class="now"><span class="k">Snow now</span><b>135 cm</b><span class="s">actual snowpack</span></div>
-    <div><span class="k">Next 7 days</span><b>+95 cm</b><span class="s">new snow</span></div>
+  <div class="ln">
+    <div class="xnm"><h3>Val Thorens</h3><p>Tarentaise, France</p></div>
+    <div class="coin"><i class="cn" aria-hidden="true"></i><b class="px">73.50 €</b><span>per day</span><span class="pn">Val Thorens-Orelle pass</span></div>
   </div>
-  <div class="xm">
-    <div class="xl"><span class="k">Christmas projection</span><b>185–250 cm</b><span class="s">most likely ~205 cm · normal Christmas 165 cm</span></div>
-    <div class="bar" role="img" aria-label="Christmas snow likely between 185 and 250 cm, normal 165 cm, now 135 cm">
-      <span class="nowb" style="width:51.9%"></span>
-      <span class="rng" style="left:71.2%;width:calc(96.2% - 71.2%)"></span>
+  <div class="st">
+    <div><span class="xk px">KM</span><b class="px">150</b><span class="s">pistes · 33 lifts</span></div>
+    <div><span class="xk px">TOP</span><b class="px">3,221m</b><span class="s">base 1,726 m</span></div>
+    <div class="xnw"><span class="xk px">NOW</span><b class="px">135cm</b><span class="s">actual snowpack</span></div>
+    <div><span class="xk px">+7 DAYS</span><b class="px">+95</b><span class="s">cm new snow</span></div>
+  </div>
+  <div class="xhp">
+    <div class="xhl"><span class="xk px">XMAS</span><b class="px">185-250cm</b></div>
+    <div class="xbar" role="img" aria-label="Snow now 135 cm. Christmas likely 185 to 250 cm, most likely 205 cm, normal Christmas 165 cm">
+      <span class="fill" style="--w:51.9%"></span>
+      <span class="xrng" style="left:71.2%;width:calc(96.2% - 71.2%)"></span>
       <span class="p50" style="left:78.8%"></span>
-      <span class="nrm" style="left:63.5%" title="Normal Christmas"></span>
+      <span class="nrm" style="left:63.5%"></span>
     </div>
-    <p class="md">ECMWF ensemble ~230 cm · GFS ensemble ~195 cm · the two disagree, so the range is wide</p>
+    <p class="xmd">Most likely ~205 cm · normal Christmas 165 cm<br>ECMWF ensemble ~230 cm · GFS ensemble ~195 cm · they disagree, so the range is wide</p>
   </div>
-  <div class="df">
-    <span class="op"><span class="ms">event</span>Opens 21 Nov</span>
-    <a class="btn ski stay" target="_blank" rel="sponsored noopener" data-stay="val_thorens" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=45.2845&amp;lng=6.5770&amp;address=Val+Thorens%2C+France&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_val_thorens"><span class="ms">hotel</span><span class="t">Where to stay for Christmas</span></a>
-    <a class="more" href="resorts/val_thorens.html">Live snow &amp; forecast ›</a>
+  <div class="lf">
+    <span class="op px">OPENS 21 NOV</span>
+    <a class="start px" target="_blank" rel="sponsored noopener" data-stay="val_thorens" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=45.2845&amp;lng=6.5770&amp;address=Val+Thorens%2C+France&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_val_thorens">START &#9654; BOOK HOTEL</a>
+    <a class="more" href="resorts/val_thorens.html">Live snow &amp; forecast &rsaquo;</a>
   </div>
 </article>
-<article class="deal de" id="skigebiet_garmisch_classic">
-  <div class="dh">
-    <span class="rank">7</span>
-    <div class="nm"><h3>Garmisch-Classic</h3><p>Bavaria, Germany · <span class="tg">Germany</span></p></div>
-    <div class="pr"><b>69 €</b><span>per day</span><span class="pn">online, 72 € at the desk</span></div>
+<article class="lv de rv" id="skigebiet_garmisch_classic" style="--d:0ms">
+  <div class="lh">
+    <span class="lvl px">BONUS · DE</span><span class="xtag px">GERMANY</span>
   </div>
-  <div class="facts">
-    <div><span class="k">Pistes</span><b>40 km</b><span class="s">18 lifts</span></div>
-    <div><span class="k">Altitude</span><b>2,047 m</b><span class="s">base 727 m</span></div>
-    <div class="now"><span class="k">Snow now</span><b>30 cm</b><span class="s">actual snowpack</span></div>
-    <div><span class="k">Next 7 days</span><b>+15 cm</b><span class="s">new snow</span></div>
+  <div class="ln">
+    <div class="xnm"><h3>Garmisch-Classic</h3><p>Bavaria, Germany</p></div>
+    <div class="coin"><i class="cn" aria-hidden="true"></i><b class="px">69 €</b><span>per day</span><span class="pn">online, 72 € at the desk</span></div>
   </div>
-  <div class="xm">
-    <div class="xl"><span class="k">Christmas projection</span><b>50–85 cm</b><span class="s">most likely ~60 cm · normal Christmas 60 cm</span></div>
-    <div class="bar" role="img" aria-label="Christmas snow likely between 50 and 85 cm, normal 60 cm, now 30 cm">
-      <span class="nowb" style="width:11.5%"></span>
-      <span class="rng" style="left:19.2%;width:calc(32.7% - 19.2%)"></span>
+  <div class="st">
+    <div><span class="xk px">KM</span><b class="px">40</b><span class="s">pistes · 18 lifts</span></div>
+    <div><span class="xk px">TOP</span><b class="px">2,047m</b><span class="s">base 727 m</span></div>
+    <div class="xnw"><span class="xk px">NOW</span><b class="px">30cm</b><span class="s">actual snowpack</span></div>
+    <div><span class="xk px">+7 DAYS</span><b class="px">+15</b><span class="s">cm new snow</span></div>
+  </div>
+  <div class="xhp">
+    <div class="xhl"><span class="xk px">XMAS</span><b class="px">50-85cm</b></div>
+    <div class="xbar" role="img" aria-label="Snow now 30 cm. Christmas likely 50 to 85 cm, most likely 60 cm, normal Christmas 60 cm">
+      <span class="fill" style="--w:11.5%"></span>
+      <span class="xrng" style="left:19.2%;width:calc(32.7% - 19.2%)"></span>
       <span class="p50" style="left:23.1%"></span>
-      <span class="nrm" style="left:23.1%" title="Normal Christmas"></span>
+      <span class="nrm" style="left:23.1%"></span>
     </div>
-    <p class="md">ECMWF ensemble ~75 cm · GFS ensemble ~50 cm</p>
+    <p class="xmd">Most likely ~60 cm · normal Christmas 60 cm<br>ECMWF ensemble ~75 cm · GFS ensemble ~50 cm</p>
   </div>
-  <div class="df">
-    <span class="op"><span class="ms">event</span>Opens 12 Dec</span>
-    <a class="btn ski stay" target="_blank" rel="sponsored noopener" data-stay="skigebiet_garmisch_classic" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=47.4558&amp;lng=11.0759&amp;address=Garmisch-Classic%2C+Germany&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_skigebiet_garmisch_classic"><span class="ms">hotel</span><span class="t">Where to stay for Christmas</span></a>
-    <a class="more" href="resorts/skigebiet_garmisch_classic.html">Live snow &amp; forecast ›</a>
+  <div class="lf">
+    <span class="op px">OPENS 12 DEC</span>
+    <a class="start px" target="_blank" rel="sponsored noopener" data-stay="skigebiet_garmisch_classic" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=47.4558&amp;lng=11.0759&amp;address=Garmisch-Classic%2C+Germany&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_skigebiet_garmisch_classic">START &#9654; BOOK HOTEL</a>
+    <a class="more" href="resorts/skigebiet_garmisch_classic.html">Live snow &amp; forecast &rsaquo;</a>
   </div>
 </article>
-<article class="deal de" id="gletscher_skigebiet_zugspitze_ski_resort_zugspit">
-  <div class="dh">
-    <span class="rank">8</span>
-    <div class="nm"><h3>Zugspitze</h3><p>Bavaria, Germany · <span class="tg">Germany</span></p></div>
-    <div class="pr"><b>70.50 €</b><span>per day</span><span class="pn">online, 78 € at the desk</span></div>
+<article class="lv de rv" id="gletscher_skigebiet_zugspitze_ski_resort_zugspit" style="--d:70ms">
+  <div class="lh">
+    <span class="lvl px">BONUS · DE</span><span class="xtag px">GERMANY</span>
   </div>
-  <div class="facts">
-    <div><span class="k">Pistes</span><b>20 km</b><span class="s">10 lifts</span></div>
-    <div><span class="k">Altitude</span><b>2,627 m</b><span class="s">base 995 m</span></div>
-    <div class="now"><span class="k">Snow now</span><b>35 cm</b><span class="s">actual snowpack</span></div>
-    <div><span class="k">Next 7 days</span><b>+15 cm</b><span class="s">new snow</span></div>
+  <div class="ln">
+    <div class="xnm"><h3>Zugspitze</h3><p>Bavaria, Germany</p></div>
+    <div class="coin"><i class="cn" aria-hidden="true"></i><b class="px">70.50 €</b><span>per day</span><span class="pn">online, 78 € at the desk</span></div>
   </div>
-  <div class="xm">
-    <div class="xl"><span class="k">Christmas projection</span><b>55–110 cm</b><span class="s">most likely ~75 cm · normal Christmas 130 cm</span></div>
-    <div class="bar" role="img" aria-label="Christmas snow likely between 55 and 110 cm, normal 130 cm, now 35 cm">
-      <span class="nowb" style="width:13.5%"></span>
-      <span class="rng" style="left:21.2%;width:calc(42.3% - 21.2%)"></span>
+  <div class="st">
+    <div><span class="xk px">KM</span><b class="px">20</b><span class="s">pistes · 10 lifts</span></div>
+    <div><span class="xk px">TOP</span><b class="px">2,627m</b><span class="s">base 995 m</span></div>
+    <div class="xnw"><span class="xk px">NOW</span><b class="px">35cm</b><span class="s">actual snowpack</span></div>
+    <div><span class="xk px">+7 DAYS</span><b class="px">+15</b><span class="s">cm new snow</span></div>
+  </div>
+  <div class="xhp">
+    <div class="xhl"><span class="xk px">XMAS</span><b class="px">55-110cm</b></div>
+    <div class="xbar" role="img" aria-label="Snow now 35 cm. Christmas likely 55 to 110 cm, most likely 75 cm, normal Christmas 130 cm">
+      <span class="fill" style="--w:13.5%"></span>
+      <span class="xrng" style="left:21.2%;width:calc(42.3% - 21.2%)"></span>
       <span class="p50" style="left:28.8%"></span>
-      <span class="nrm" style="left:50.0%" title="Normal Christmas"></span>
+      <span class="nrm" style="left:50.0%"></span>
     </div>
-    <p class="md">ECMWF ensemble ~105 cm · GFS ensemble ~60 cm · the two disagree, so the range is wide</p>
+    <p class="xmd">Most likely ~75 cm · normal Christmas 130 cm<br>ECMWF ensemble ~105 cm · GFS ensemble ~60 cm · they disagree, so the range is wide</p>
   </div>
-  <div class="df">
-    <span class="op"><span class="ms">event</span>Opens 27 Nov</span>
-    <a class="btn ski stay" target="_blank" rel="sponsored noopener" data-stay="gletscher_skigebiet_zugspitze_ski_resort_zugspit" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=47.4130&amp;lng=10.9858&amp;address=Zugspitze%2C+Germany&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_gletscher_skigebiet_zugspitze_ski_resort"><span class="ms">hotel</span><span class="t">Where to stay for Christmas</span></a>
-    <a class="more" href="resorts/gletscher_skigebiet_zugspitze_ski_resort_zugspit.html">Live snow &amp; forecast ›</a>
+  <div class="lf">
+    <span class="op px">OPENS 27 NOV</span>
+    <a class="start px" target="_blank" rel="sponsored noopener" data-stay="gletscher_skigebiet_zugspitze_ski_resort_zugspit" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=47.4130&amp;lng=10.9858&amp;address=Zugspitze%2C+Germany&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_gletscher_skigebiet_zugspitze_ski_resort">START &#9654; BOOK HOTEL</a>
+    <a class="more" href="resorts/gletscher_skigebiet_zugspitze_ski_resort_zugspit.html">Live snow &amp; forecast &rsaquo;</a>
   </div>
 </article>
-<article class="deal de" id="kleinwalsertal_oberstdorf">
-  <div class="dh">
-    <span class="rank">9</span>
-    <div class="nm"><h3>Oberstdorf · Kleinwalsertal</h3><p>Allgäu, Germany · <span class="tg">Germany</span></p></div>
-    <div class="pr"><b>72.90 €</b><span>per day</span></div>
+<article class="lv de rv" id="kleinwalsertal_oberstdorf" style="--d:140ms">
+  <div class="lh">
+    <span class="lvl px">BONUS · DE</span><span class="xtag px">GERMANY</span>
   </div>
-  <div class="facts">
-    <div><span class="k">Pistes</span><b>130 km</b><span class="s">48 lifts</span></div>
-    <div><span class="k">Altitude</span><b>2,213 m</b><span class="s">base 823 m</span></div>
-    <div class="now"><span class="k">Snow now</span><b>15 cm</b><span class="s">actual snowpack</span></div>
-    <div><span class="k">Next 7 days</span><b>+40 cm</b><span class="s">new snow</span></div>
+  <div class="ln">
+    <div class="xnm"><h3>Oberstdorf · Kleinwalsertal</h3><p>Allgäu, Germany</p></div>
+    <div class="coin"><i class="cn" aria-hidden="true"></i><b class="px">72.90 €</b><span>per day</span></div>
   </div>
-  <div class="xm">
-    <div class="xl"><span class="k">Christmas projection</span><b>30–90 cm</b><span class="s">most likely ~55 cm · normal Christmas 80 cm</span></div>
-    <div class="bar" role="img" aria-label="Christmas snow likely between 30 and 90 cm, normal 80 cm, now 15 cm">
-      <span class="nowb" style="width:5.8%"></span>
-      <span class="rng" style="left:11.5%;width:calc(34.6% - 11.5%)"></span>
+  <div class="st">
+    <div><span class="xk px">KM</span><b class="px">130</b><span class="s">pistes · 48 lifts</span></div>
+    <div><span class="xk px">TOP</span><b class="px">2,213m</b><span class="s">base 823 m</span></div>
+    <div class="xnw"><span class="xk px">NOW</span><b class="px">15cm</b><span class="s">actual snowpack</span></div>
+    <div><span class="xk px">+7 DAYS</span><b class="px">+40</b><span class="s">cm new snow</span></div>
+  </div>
+  <div class="xhp">
+    <div class="xhl"><span class="xk px">XMAS</span><b class="px">30-90cm</b></div>
+    <div class="xbar" role="img" aria-label="Snow now 15 cm. Christmas likely 30 to 90 cm, most likely 55 cm, normal Christmas 80 cm">
+      <span class="fill" style="--w:5.8%"></span>
+      <span class="xrng" style="left:11.5%;width:calc(34.6% - 11.5%)"></span>
       <span class="p50" style="left:21.2%"></span>
-      <span class="nrm" style="left:30.8%" title="Normal Christmas"></span>
+      <span class="nrm" style="left:30.8%"></span>
     </div>
-    <p class="md">ECMWF ensemble ~80 cm · GFS ensemble ~35 cm · the two disagree, so the range is wide</p>
+    <p class="xmd">Most likely ~55 cm · normal Christmas 80 cm<br>ECMWF ensemble ~80 cm · GFS ensemble ~35 cm · they disagree, so the range is wide</p>
   </div>
-  <div class="df">
-    <span class="op"><span class="ms">event</span>Opens 5 Dec</span>
-    <a class="btn ski stay" target="_blank" rel="sponsored noopener" data-stay="kleinwalsertal_oberstdorf" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=47.3635&amp;lng=10.2144&amp;address=Oberstdorf%2C+Germany&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_kleinwalsertal_oberstdorf"><span class="ms">hotel</span><span class="t">Where to stay for Christmas</span></a>
-    <a class="more" href="resorts/kleinwalsertal_oberstdorf.html">Live snow &amp; forecast ›</a>
+  <div class="lf">
+    <span class="op px">OPENS 5 DEC</span>
+    <a class="start px" target="_blank" rel="sponsored noopener" data-stay="kleinwalsertal_oberstdorf" href="https://www.stay22.com/allez/roam?aid=wassim1313&amp;lat=47.3635&amp;lng=10.2144&amp;address=Oberstdorf%2C+Germany&amp;checkin=2026-12-19&amp;checkout=2026-12-26&amp;adults=2&amp;lang=en&amp;campaign=snowscope_xmas_kleinwalsertal_oberstdorf">START &#9654; BOOK HOTEL</a>
+    <a class="more" href="resorts/kleinwalsertal_oberstdorf.html">Live snow &amp; forecast &rsaquo;</a>
   </div>
 </article>
 
-  <section class="how card">
-    <h2>How the Christmas projection works</h2>
+  <section class="how box rv">
+    <h2 class="px">HOW THE XMAS PROJECTION WORKS</h2>
     <p>We start from today's snowpack at each resort. We add the snowfall of every run of the ECMWF and GFS ensemble forecasts, as far ahead as they go (ECMWF to early December, GFS to about 22 December). Then we add how the snow changed until 25 December in each of the last 46 winters at the same place and height.</p>
     <p>That gives thousands of possible Christmases. The range shows the middle 60 % of them, and the tick shows the most likely one. When the two ensembles disagree, the range gets wider. We will keep updating it as Christmas gets closer.</p>
   </section>
 
-  <div class="cta">
-    <p>Follow the snow every day, resort by resort, until you leave.</p>
-    <a class="btn tonal big" href="./"><span class="ms">map</span><span class="t">Live snow map</span></a>
-    <a class="btn ski big" data-app-link href="download/"><span class="ms">smartphone</span><span class="t">Get the free app</span></a>
+  <div class="cta rv">
+    <p class="px">CONTINUE? FOLLOW THE SNOW EVERY DAY UNTIL YOU LEAVE</p>
+    <a class="a1 px" href="./">&#9654; LIVE SNOW MAP</a>
+    <a class="a2 px" data-app-link href="download/">&#9654; FREE APP</a>
   </div>
 
-  <p class="partner">Prices: public adult 1-day lift passes for the 2026-27 Christmas holidays, checked on 19 November 2026. Some resorts use dynamic pricing, so prices may change. “Where to stay” buttons are partner links: we may earn a commission if you book, at no extra cost to you.</p>
+  <p class="xpartner">Prices: public adult 1-day lift passes for the 2026-27 Christmas holidays, checked on 19 November 2026. Some resorts use dynamic pricing, so prices may change. “Book hotel” buttons are partner links: we may earn a commission if you book, at no extra cost to you.</p>
 
   <footer class="foot"><nav><a href="about/">About</a><a href="editorial/">Editorial policy</a><a href="contact/">Contact</a><a href="./">Snow today</a><a href="pricing.html">Pricing</a><a href="terms/">Terms</a><a href="privacy/">Privacy</a><a href="refund.html">Refund</a></nav><p>Help: <a href="mailto:support@snowscope.app">support@snowscope.app</a> · Business and press: <a href="mailto:contact@snowscope.app">contact@snowscope.app</a> · Privacy requests: <a href="mailto:privacy@snowscope.app">privacy@snowscope.app</a></p>© 2026 SnowScope · Atlas Labs</footer>
 </main>
@@ -408,12 +484,53 @@ p.sub{margin:0 0 12px;color:var(--ink2);font-size:14.5px}
 (function () {
   "use strict";
   if (window.SS && SS.start) SS.start().catch(function () {});
+  var calm = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // cards pop in on scroll (transform/opacity only)
+  var els = document.querySelectorAll(".rv");
+  if (calm || !("IntersectionObserver" in window)) { els.forEach(function (e) { e.classList.add("in"); }); }
+  else {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    els.forEach(function (e) { io.observe(e); });
+  }
+  // pixel snowflakes on the title screen: square flakes, ~60 fps, paused off-screen / hidden tab, off for reduced motion
+  var cv = document.getElementById("flakes");
+  if (cv && !calm && cv.getContext) {
+    var cx = cv.getContext("2d"), W = 0, H = 0, dpr = 1, fl = [], run = true, vis = true, last = 0;
+    var fit = function () {
+      var r = cv.getBoundingClientRect(); dpr = Math.min(2, window.devicePixelRatio || 1);
+      W = Math.max(1, Math.round(r.width)); H = Math.max(1, Math.round(r.height));
+      cv.width = W * dpr; cv.height = H * dpr; cx.setTransform(dpr, 0, 0, dpr, 0, 0); cx.imageSmoothingEnabled = false;
+      var n = Math.round(Math.min(90, W * H / 5200));
+      while (fl.length < n) fl.push({ x: Math.random() * W, y: Math.random() * H, s: [2, 3, 4][Math.floor(Math.random() * 3)], v: 18 + Math.random() * 34, w: Math.random() * 6.28 });
+      fl.length = n;
+    };
+    fit(); window.addEventListener("resize", fit, { passive: true });
+    if ("IntersectionObserver" in window) new IntersectionObserver(function (es) { vis = es[0].isIntersecting; if (vis && run) requestAnimationFrame(tick); }).observe(cv);
+    document.addEventListener("visibilitychange", function () { run = !document.hidden; if (run && vis) { last = 0; requestAnimationFrame(tick); } });
+    var tick = function (t) {
+      if (!run || !vis) { last = 0; return; }
+      var dt = last ? Math.min(0.05, (t - last) / 1000) : 0; last = t;
+      cx.clearRect(0, 0, W, H); cx.fillStyle = "#fff";
+      for (var i = 0; i < fl.length; i++) {
+        var f = fl[i]; f.y += f.v * dt; f.w += dt * 1.3; var x = f.x + Math.sin(f.w) * 6;
+        if (f.y > H) { f.y = -4; f.x = Math.random() * W; }
+        cx.fillRect(Math.round(x), Math.round(f.y), f.s, f.s);
+      }
+      requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }
+  // partner click beacons + press feedback on touch
   document.addEventListener("click", function (e) {
     var a = e.target.closest && e.target.closest("a[data-stay]");
     if (!a || !window.SS) return;
     try { SS.hit("/ad/stay22/xmas/" + a.getAttribute("data-stay"), "ads"); } catch (err) { /* beacon only */ }
     try { SS.track && SS.track("stay_click", { place: a.getAttribute("data-stay"), via: "christmas" }); } catch (err) { /* */ }
   });
+  document.addEventListener("touchstart", function (e) { var b = e.target.closest && e.target.closest(".start"); if (b) b.classList.add("prs"); }, { passive: true });
+  document.addEventListener("touchend", function () { document.querySelectorAll(".start.prs").forEach(function (b) { b.classList.remove("prs"); }); }, { passive: true });
 })();
 </script>
 </body>
