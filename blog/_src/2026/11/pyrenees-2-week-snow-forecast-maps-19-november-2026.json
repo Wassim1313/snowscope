@@ -1,0 +1,971 @@
+{
+ "id": "2026-11-19-pyrenees-outlook14",
+ "slug": "pyrenees-2-week-snow-forecast-maps-19-november-2026",
+ "date": "2026-11-19",
+ "published_utc": "2026-11-19T12:26:49Z",
+ "updated_utc": "2026-11-19T12:26:49Z",
+ "region": "PYRENEES",
+ "angle": "outlook14",
+ "score": 74.0,
+ "signature": "2026-11-19|cauterets:70|gourette:70|gavarnie_gedre:70",
+ "keyword": {
+  "family": "two-week-forecast",
+  "entity": "pyrenees",
+  "region": "PYRENEES",
+  "date": "2026-11-19"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "two_week_snow_outlook",
+  "region": "Pyrenees",
+  "date": "2026-11-19",
+  "weekday": "Thursday",
+  "model_run": "2026-11-18",
+  "forecast_days": [
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 1710,
+   "resorts_with_snow": 32,
+   "resorts_in_region": 53
+  },
+  "region_before": {
+   "date": "2026-11-17",
+   "snow_covered_area_km2": 560,
+   "resorts_with_snow": 17
+  },
+  "region_forecast": {
+   "date": "2026-11-22",
+   "snow_covered_area_km2": 3160,
+   "resorts_with_snow": 36
+  },
+  "question": "Where will new snow fall in the next two weeks, how much, in which week, and at which height?",
+  "outlook_days": [
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30",
+   "2026-12-01",
+   "2026-12-02",
+   "2026-12-03"
+  ],
+  "week1": {
+   "from": "2026-11-20",
+   "to": "2026-11-26"
+  },
+  "week2": {
+   "from": "2026-11-27",
+   "to": "2026-12-03"
+  },
+  "models": [
+   "ECMWF IFS",
+   "NOAA GFS"
+  ],
+  "lattice_points": 85,
+  "region_outlook": {
+   "max_new_cm_next_14_days": 91,
+   "area_km2_with_20cm_or_more": 5119,
+   "area_km2_with_50cm_or_more": 1253,
+   "area_km2_mountains": 70044,
+   "week1_share_pct": 49
+  },
+  "new_cm_next_14_days_by_height": [
+   {
+    "from_m": 1000,
+    "to_m": 1500,
+    "new_cm_next_14_days_median": 1,
+    "new_cm_next_14_days_upper_quarter": 3
+   },
+   {
+    "from_m": 1500,
+    "to_m": 2000,
+    "new_cm_next_14_days_median": 11,
+    "new_cm_next_14_days_upper_quarter": 21
+   },
+   {
+    "from_m": 2000,
+    "to_m": 2500,
+    "new_cm_next_14_days_median": 32,
+    "new_cm_next_14_days_upper_quarter": 51
+   },
+   {
+    "from_m": 2500,
+    "to_m": 3000,
+    "new_cm_next_14_days_median": 44,
+    "new_cm_next_14_days_upper_quarter": 60
+   }
+  ],
+  "resorts_followed": 53,
+  "thresholds_cm": [
+   1,
+   5,
+   20,
+   50
+  ],
+  "best_days": [
+   {
+    "date": "2026-11-25",
+    "resorts_with_5cm_or_more": 19,
+    "max_cm": 15,
+    "top_resort": "Gavarnie-Gèdre"
+   },
+   {
+    "date": "2026-11-27",
+    "resorts_with_5cm_or_more": 21,
+    "max_cm": 8,
+    "top_resort": "Ordino-Arcalis"
+   },
+   {
+    "date": "2026-11-28",
+    "resorts_with_5cm_or_more": 23,
+    "max_cm": 9,
+    "top_resort": "Estació d'Esquí Baqueira-Beret"
+   },
+   {
+    "date": "2026-12-03",
+    "resorts_with_5cm_or_more": 23,
+    "max_cm": 12,
+    "top_resort": "Gourette"
+   }
+  ],
+  "resorts": [
+   {
+    "name": "Cauterets Cirque du Lys",
+    "country": "France",
+    "top_m": 2420,
+    "base_m": 1725,
+    "depth_cm_upper_slopes_today": 9,
+    "new_cm_last_24h": 8,
+    "new_cm_last_72h": 8,
+    "new_cm_forecast_next_days": 22,
+    "slug": "cauterets",
+    "new_cm_next_14_days": 72,
+    "new_cm_next_14_days_low": 40,
+    "new_cm_next_14_days_high": 104,
+    "new_cm_days_1_7": 44,
+    "new_cm_days_8_14": 29,
+    "snowiest_day": "2026-11-26",
+    "snowiest_day_cm": 12,
+    "days_with_5cm_or_more": 6,
+    "days_with_snow": 12,
+    "daily": [
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 11
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 12
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 12
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 3
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 3
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 9
+     }
+    ],
+    "upper_slopes_height_m": 2284
+   },
+   {
+    "name": "Gourette",
+    "country": "France",
+    "top_m": 2453,
+    "base_m": 1353,
+    "depth_cm_upper_slopes_today": 9,
+    "new_cm_last_24h": 7,
+    "new_cm_last_72h": 8,
+    "new_cm_forecast_next_days": 20,
+    "slug": "gourette",
+    "new_cm_next_14_days": 70,
+    "new_cm_next_14_days_low": 27,
+    "new_cm_next_14_days_high": 112,
+    "new_cm_days_1_7": 35,
+    "new_cm_days_8_14": 35,
+    "snowiest_day": "2026-11-26",
+    "snowiest_day_cm": 12,
+    "days_with_5cm_or_more": 6,
+    "days_with_snow": 12,
+    "daily": [
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 9
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 12
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 8
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 4
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 4
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 12
+     }
+    ],
+    "upper_slopes_height_m": 2134
+   },
+   {
+    "name": "Gavarnie-Gèdre",
+    "country": "France",
+    "top_m": 2283,
+    "base_m": 1818,
+    "depth_cm_upper_slopes_today": 3,
+    "new_cm_last_24h": 4,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 10,
+    "slug": "gavarnie_gedre",
+    "new_cm_next_14_days": 66,
+    "new_cm_next_14_days_low": 36,
+    "new_cm_next_14_days_high": 96,
+    "new_cm_days_1_7": 50,
+    "new_cm_days_8_14": 16,
+    "snowiest_day": "2026-11-21",
+    "snowiest_day_cm": 15,
+    "days_with_5cm_or_more": 4,
+    "days_with_snow": 10,
+    "daily": [
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 15
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 15
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 13
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 3
+     }
+    ],
+    "upper_slopes_height_m": 2414
+   },
+   {
+    "name": "Piau-Engaly",
+    "country": "France",
+    "top_m": 2527,
+    "base_m": 1762,
+    "depth_cm_upper_slopes_today": 15,
+    "new_cm_last_24h": 7,
+    "new_cm_last_72h": 13,
+    "new_cm_forecast_next_days": 17,
+    "slug": "piau_engaly",
+    "new_cm_next_14_days": 63,
+    "new_cm_next_14_days_low": 34,
+    "new_cm_next_14_days_high": 92,
+    "new_cm_days_1_7": 42,
+    "new_cm_days_8_14": 21,
+    "snowiest_day": "2026-11-25",
+    "snowiest_day_cm": 13,
+    "days_with_5cm_or_more": 5,
+    "days_with_snow": 11,
+    "daily": [
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 12
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 13
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 11
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 7
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 5
+     }
+    ],
+    "upper_slopes_height_m": 2444
+   },
+   {
+    "name": "Astun",
+    "country": "Spain",
+    "top_m": 2272,
+    "base_m": 1659,
+    "depth_cm_upper_slopes_today": 3,
+    "new_cm_last_24h": 6,
+    "new_cm_last_72h": 6,
+    "new_cm_forecast_next_days": 15,
+    "slug": "astun",
+    "new_cm_next_14_days": 60,
+    "new_cm_next_14_days_low": 28,
+    "new_cm_next_14_days_high": 93,
+    "new_cm_days_1_7": 37,
+    "new_cm_days_8_14": 23,
+    "snowiest_day": "2026-11-26",
+    "snowiest_day_cm": 10,
+    "days_with_5cm_or_more": 5,
+    "days_with_snow": 12,
+    "daily": [
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 9
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 8
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 10
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 3
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 8
+     }
+    ],
+    "upper_slopes_height_m": 2100
+   },
+   {
+    "name": "Grand Tourmalet",
+    "country": "France",
+    "top_m": 2464,
+    "base_m": 1459,
+    "depth_cm_upper_slopes_today": 6,
+    "new_cm_last_24h": 6,
+    "new_cm_last_72h": 7,
+    "new_cm_forecast_next_days": 14,
+    "slug": "grand_tourmalet",
+    "new_cm_next_14_days": 59,
+    "new_cm_next_14_days_low": 30,
+    "new_cm_next_14_days_high": 89,
+    "new_cm_days_1_7": 33,
+    "new_cm_days_8_14": 26,
+    "snowiest_day": "2026-11-25",
+    "snowiest_day_cm": 11,
+    "days_with_5cm_or_more": 5,
+    "days_with_snow": 11,
+    "daily": [
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 11
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 10
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 9
+     }
+    ],
+    "upper_slopes_height_m": 2247
+   }
+  ],
+  "notes": [
+   "new snow = middle of the two models' daily snowfall, brought onto the terrain (1 km); low / high = the two models",
+   "resort values = the slopes at or above mid-mountain within a few km of the resort, not the village",
+   "days 1-14 = tomorrow to day 14; week 1 = days 1-7, week 2 = days 8-14",
+   "snow by height = all the mountain terrain of the region, not only resorts"
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Cauterets Cirque du Lys",
+     "slug": "cauterets",
+     "now_cm": 2,
+     "usual_cm": 5,
+     "high_cm": 41,
+     "week_ago_cm": 1,
+     "height_m": 2072,
+     "best_weeks": [
+      7,
+      6,
+      9
+     ],
+     "ratio_pct": 40
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Cauterets Cirque du Lys",
+   "next_cm": 22,
+   "second": "Gourette",
+   "second_cm": 9,
+   "depth_cm": 9
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/pyrenees-2-week-snow-forecast-maps-19-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/pyrenees-2-week-snow-forecast-maps-19-november-2026/map_t.webp",
+   "bytes": 40768,
+   "snow_frac": 0.1906,
+   "weak": false
+  },
+  {
+   "id": "week1",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/pyrenees-2-week-snow-forecast-maps-19-november-2026/week1.webp",
+   "thumb": "blog/media/2026/11/pyrenees-2-week-snow-forecast-maps-19-november-2026/week1_t.webp",
+   "bytes": 38828,
+   "snow_frac": 0.1603,
+   "weak": false
+  },
+  {
+   "id": "week2",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/pyrenees-2-week-snow-forecast-maps-19-november-2026/week2.webp",
+   "thumb": "blog/media/2026/11/pyrenees-2-week-snow-forecast-maps-19-november-2026/week2_t.webp",
+   "bytes": 38800,
+   "snow_frac": 0.1665,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Pyrenees two-week outlook: 91 cm by early December, more in week 2",
+   "description": "The Pyrenees will see 91 cm of new snow in the next 14 days, with half falling in week 1. Upper slopes above 2500 m get the most. Forecast from 2026-11-18.",
+   "lede": "New snow will come to the Pyrenees in two pulses over the next two weeks, with roughly half the total (49 percent) arriving by 26 November. The highest slopes, above 2500 m, will collect around 44 cm on average across the range, while lower terrain gets much less.",
+   "sections": [
+    {
+     "h": "When the snow falls: week 1 or week 2?",
+     "p": [
+      "The first week (20–26 November) brings the initial push. During this period, our snow model shows that 44 cm will accumulate on upper slopes of Cauterets Cirque du Lys, while Gavarnie-Gèdre will receive 50 cm. The heaviest single day in week 1 is 25–26 November, when Gavarnie-Gèdre sees 15 cm and Cauterets gets 12 cm.",
+      "Week 2 (27 November–3 December) will be quieter but steadier. Snow totals are smaller day to day, but they add up: Cauterets will gain 29 cm in week 2, and Gourette receives 35 cm. The final peak day is 3 December, when Gourette and Ordino-Arcalis lead with up to 12 cm."
+     ]
+    },
+    {
+     "h": "Height matters: where snow is deepest",
+     "p": [
+      "The mountains store most water as snow at high altitude. Between 2500 and 3000 m, the model estimates a median of 44 cm across the Pyrenees range over 14 days, with the upper quarter of predictions reaching 60 cm. This is where the snowpack builds most reliably.",
+      "At 2000–2500 m (the mid-mountain band of many resorts), you can expect 32 cm as a typical outcome, though some runs of the model show 51 cm. Below 1500 m, snow is scarce: only 1 cm median at 1000–1500 m, with high uncertainty. Early-season cover at low elevations is thin and risky."
+     ]
+    },
+    {
+     "h": "What the models agree and disagree on",
+     "p": [
+      "Both ECMWF IFS and NOAA GFS agree that snow is coming. They track the same weather systems. Disagreement emerges in the detail: at Gourette, one model sees as little as 27 cm total over 14 days, while the other predicts 112 cm. This spread reflects the forecast's natural limits two weeks ahead.",
+      "The most confident signals are for mid-week of week 1 (around 24–26 November) and early December (1–3 December). The gap between models narrows on these dates."
+     ]
+    },
+    {
+     "h": "Water stored in the mountains",
+     "p": [
+      "By 22 November, three days from now, the forecast shows 1710 km² of the Pyrenees will carry snow, up steeply from 560 km² two days ago. By 3 December, that area grows to 3160 km². More importantly, 1253 km² will hold 50 cm or more—enough to begin sustaining skiing and feeding winter runoff. The total range is 70044 km², so reliable snow depth will cover about 2 percent of terrain.",
+      "In water terms, 44 cm at 2500–3000 m represents significant storage for a Mediterranean mountain range where winter moisture is sparse. Ski resorts depend on this height band; lower slopes remain vulnerable."
+     ]
+    }
+   ],
+   "advice": [
+    "Ski above 2000 m for the best snow-to-rock ratio over the next two weeks. Terrain above 2500 m is safest for early season.",
+    "Watch 25–26 November (week 1 peak) and 3 December (week 2 peak) as the two best days for new snow. Plan climbing or runs for the days after, once snow settles.",
+    "Before going off-piste, check the official avalanche bulletin for the Pyrenees. Fresh snow on steep slopes raises instability, especially where the snowpack is thin.",
+    "Expect melt or refreezing at slopes below 1500 m; ice may form under any new snow if temperatures are near zero.",
+    "Use the SnowScope app to zoom into upper slopes at your chosen resort and track how the forecast evolves day by day."
+   ],
+   "captions": {
+    "map": "Snow-covered area in the Pyrenees on 22 November (forecast). High terrain above 2000 m shows the greatest coverage.",
+    "week1": "Modelled new snow for 20–26 November by height across the Pyrenees. Upper slopes above 2500 m receive 44 cm typical, 60 cm high.",
+    "week2": "Modelled new snow for 27 November–3 December by height across the Pyrenees. Week 2 brings less daily snow but cumulates to 21–26 cm at 2500–3000 m."
+   }
+  },
+  "fr": {
+   "title": "Pyrénées : perspectives à deux semaines, 91 cm début décembre, davantage la semaine 2",
+   "description": "Les Pyrénées verront 91 cm de neige nouvelle en 14 jours, avec moitié tombant en semaine 1. Les pentes hautes au-dessus de 2 500 m en reçoivent le plus. Prévision du 2026-11-18.",
+   "lede": "La neige nouvelle arrivera aux Pyrénées en deux vagues sur les deux prochaines semaines, à peu près moitié du total (49 %) arrivant le 26 novembre. Les pentes les plus hautes, au-dessus de 2 500 m, accumuleront environ 44 cm en moyenne sur toute la chaîne, tandis que les terrains plus bas en reçoivent bien moins.",
+   "sections": [
+    {
+     "h": "Quand tombe la neige : semaine 1 ou semaine 2 ?",
+     "p": [
+      "La première semaine (20–26 novembre) apporte la première vague. Pendant cette période, notre modèle de neige montre que 44 cm s'accumuleront sur les pentes hautes du Cirque du Lys à Cauterets, tandis que Gavarnie-Gèdre en recevra 50 cm. Le jour le plus chargé de la semaine 1 est 25–26 novembre, quand Gavarnie-Gèdre voit 15 cm et Cauterets reçoit 12 cm.",
+      "La semaine 2 (27 novembre–3 décembre) sera plus calme mais régulière. Les totaux de neige sont plus modestes jour après jour, mais ils s'accumulent : Cauterets gagnera 29 cm en semaine 2, et Gourette en reçoit 35 cm. Le jour de pic final est 3 décembre, quand Gourette et Ordino-Arcalis dominent avec jusqu'à 12 cm."
+     ]
+    },
+    {
+     "h": "L'altitude compte : où le manteau est le plus épais",
+     "p": [
+      "Les montagnes stockent l'essentiel de l'eau sous forme de neige en altitude. Entre 2 500 et 3 000 m, le modèle estime une médiane de 44 cm sur toute la chaîne pyrénéenne en 14 jours, les prévisions du quartile supérieur atteignant 60 cm. C'est là que le manteau neigeux se constitue le plus régulièrement.",
+      "À 2 000–2 500 m (la bande d'altitude moyenne de nombreuses stations), on peut s'attendre à 32 cm comme résultat typique, bien que certaines séries du modèle affichent 51 cm. Sous 1 500 m, la neige est rare : seulement 1 cm de médiane à 1 000–1 500 m, avec forte incertitude. L'enneigement en début de saison aux basses altitudes est mince et risqué."
+     ]
+    },
+    {
+     "h": "Sur quoi les modèles s'accordent et divergent",
+     "p": [
+      "Le CEPMMT IFS et le NOAA GFS s'accordent sur l'arrivée de neige. Ils suivent les mêmes systèmes météorologiques. Le désaccord apparaît dans les détails : à Gourette, un modèle voit aussi peu que 27 cm total en 14 jours, tandis que l'autre en prédit 112 cm. Cet écart reflète les limites naturelles de la prévision à deux semaines.",
+      "Les signaux les plus fiables concernent le milieu de la semaine 1 (autour de 24–26 novembre) et début décembre (1–3 décembre). L'écart entre les modèles se réduit à ces dates."
+     ]
+    },
+    {
+     "h": "L'eau stockée en montagne",
+     "p": [
+      "Le 22 novembre, dans trois jours, la prévision montre que 1 710 km² des Pyrénées porteront de la neige, en hausse nette par rapport aux 560 km² deux jours auparavant. Le 3 décembre, cette zone passe à 3 160 km². Plus important encore, 1 253 km² contiendront 50 cm ou plus — assez pour commencer à soutenir le ski et alimenter les écoulements hivernaux. La surface totale de la chaîne est de 70 044 km², donc l'enneigement fiable couvrira environ 2 % du terrain.",
+      "En termes d'eau, 44 cm à 2 500–3 000 m représente un stockage important pour une chaîne de montagne méditerranéenne où l'humidité hivernale est clairsemée. Les stations de ski dépendent de cette bande d'altitude ; les pentes basses restent vulnérables."
+     ]
+    }
+   ],
+   "advice": [
+    "Skiez au-dessus de 2 000 m pour le meilleur rapport neige-roche durant les deux prochaines semaines. Le terrain au-dessus de 2 500 m est le plus sûr en début de saison.",
+    "Notez 25–26 novembre (pic de semaine 1) et 3 décembre (pic de semaine 2) comme les deux meilleures journées de neige nouvelle. Prévoyez vos sorties ou descentes pour les jours suivants, une fois la neige tassée.",
+    "Avant une sortie hors-piste, consultez le bulletin d'avalanche officiel des Pyrénées. La neige fraîche sur pentes raides augmente l'instabilité, surtout où le manteau est mince.",
+    "Attendez-vous à du tassement ou regel sur les pentes sous 1 500 m ; de la glace peut se former sous toute neige nouvelle si les températures sont proches de zéro.",
+    "Utilisez l'appli SnowScope pour zoomer sur les pentes hautes de votre station choisie et suivre comment la prévision évolue jour après jour."
+   ],
+   "captions": {
+    "map": "Zone enneigée aux Pyrénées le 22 novembre (prévision). Le terrain élevé au-dessus de 2 000 m montre la plus grande couverture.",
+    "week1": "Neige nouvelle modélisée pour 20–26 novembre par altitude sur les Pyrénées. Les pentes hautes au-dessus de 2 500 m reçoivent 44 cm typique, 60 cm élevé.",
+    "week2": "Neige nouvelle modélisée pour 27 novembre–3 décembre par altitude sur les Pyrénées. La semaine 2 apporte moins de neige quotidienne mais cumule 21–26 cm à 2 500–3 000 m."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "rejected_numbers": [
+    [
+     "2400",
+     "2300"
+    ]
+   ],
+   "voice": "hydro"
+  },
+  "fr": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "voice": "hydro"
+  }
+ },
+ "words_en": 433,
+ "indexable": false,
+ "main": {
+  "slug": "cauterets",
+  "name": "Cauterets Cirque du Lys",
+  "lat": 42.8826,
+  "lon": -0.1635
+ },
+ "places": [
+  {
+   "name": "Cauterets Cirque du Lys",
+   "lat": 42.8826,
+   "lon": -0.1635
+  },
+  {
+   "name": "Gourette",
+   "lat": 42.9461,
+   "lon": -0.3364
+  },
+  {
+   "name": "Gavarnie-Gèdre",
+   "lat": 42.7238,
+   "lon": -0.0385
+  },
+  {
+   "name": "Piau-Engaly",
+   "lat": 42.7771,
+   "lon": 0.1571
+  },
+  {
+   "name": "Astun",
+   "lat": 42.8042,
+   "lon": -0.4975
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "cauterets",
+   "name": "Cauterets Cirque du Lys"
+  },
+  {
+   "slug": "gourette",
+   "name": "Gourette"
+  },
+  {
+   "slug": "gavarnie_gedre",
+   "name": "Gavarnie-Gèdre"
+  },
+  {
+   "slug": "piau_engaly",
+   "name": "Piau-Engaly"
+  },
+  {
+   "slug": "astun",
+   "name": "Astun"
+  },
+  {
+   "slug": "grand_tourmalet",
+   "name": "Grand Tourmalet"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "cauterets",
+    "name": "Cauterets Cirque du Lys",
+    "depth": 9,
+    "new72": 8,
+    "next": 22,
+    "top_m": 2420
+   },
+   {
+    "slug": "gourette",
+    "name": "Gourette",
+    "depth": 9,
+    "new72": 8,
+    "next": 20,
+    "top_m": 2453
+   },
+   {
+    "slug": "gavarnie_gedre",
+    "name": "Gavarnie-Gèdre",
+    "depth": 3,
+    "new72": 4,
+    "next": 10,
+    "top_m": 2283
+   },
+   {
+    "slug": "piau_engaly",
+    "name": "Piau-Engaly",
+    "depth": 15,
+    "new72": 13,
+    "next": 17,
+    "top_m": 2527
+   },
+   {
+    "slug": "astun",
+    "name": "Astun",
+    "depth": 3,
+    "new72": 6,
+    "next": 15,
+    "top_m": 2272
+   },
+   {
+    "slug": "grand_tourmalet",
+    "name": "Grand Tourmalet",
+    "depth": 6,
+    "new72": 7,
+    "next": 14,
+    "top_m": 2464
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Météo-France / Meteocat / AEMET",
+   "url": "https://www.avalanches.org/"
+  }
+ ],
+ "trip_day": "2026-11-21",
+ "map_link": "https://snowscope.app/#@42.883,-0.164,9.0",
+ "seconds": 0.0,
+ "facts_used": 29,
+ "voice": "hydro",
+ "media_ids": [
+  "map",
+  "week1",
+  "week2"
+ ],
+ "overlap": {
+  "before": 0.7,
+  "after": 0.7,
+  "with": "pyrenees-2-week-snow-forecast-maps-18-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.004,
+  "with": "western-canada-manning-park-resort-fresh-snow-powder-alert-15-november-2026"
+ },
+ "publish_utc": "2026-11-19T12:26:49Z",
+ "noindex_why": "quality: words 574 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 574 < 600"
+  ],
+  "words": 574,
+  "overlap": 0.6,
+  "with": "western-canada-2-week-snow-forecast-maps-18-november-2026",
+  "langs_off": [],
+  "score": 53.5,
+  "intent": "pyrenees|two-week-forecast",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "hero",
+  "files": {
+   "en": [
+    "blog/media/2026/11/pyrenees-2-week-snow-forecast-maps-19-november-2026/cover-en.webp",
+    "blog/media/2026/11/pyrenees-2-week-snow-forecast-maps-19-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/pyrenees-2-week-snow-forecast-maps-19-november-2026/cover-fr.webp",
+    "blog/media/2026/11/pyrenees-2-week-snow-forecast-maps-19-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}
