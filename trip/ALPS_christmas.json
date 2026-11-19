@@ -1,0 +1,1084 @@
+{
+ "region": "ALPS",
+ "label": "Alps",
+ "start": "2026-12-19",
+ "end": "2026-12-26",
+ "nights": 7,
+ "ski_days": 6,
+ "food_days": 7,
+ "party": 1,
+ "budget_eur": 1000.0,
+ "currency": "EUR",
+ "fx": {
+  "date": "2026-11-18",
+  "source": "frankfurter.app",
+  "rate": null
+ },
+ "priority": [
+  "MONEY",
+  "SNOW"
+ ],
+ "snow_day0": "2026-11-19",
+ "snow_stale": false,
+ "projection": true,
+ "travel": null,
+ "resorts": [
+  {
+   "slug": "bonneval_sur_arc",
+   "label": "Bonneval-sur-Arc",
+   "country": "FR",
+   "area": "Haute Maurienne",
+   "lat": 45.36135,
+   "lon": 7.05689,
+   "top_m": 2948,
+   "base_m": 1794,
+   "km": 20.0,
+   "lifts": 10,
+   "opens": "2026-12-19",
+   "pass_day_eur": 38.2,
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 38.2,
+    "regular": 38.2
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult day pass",
+   "pass_src": "https://www.bonneval-sur-arc.com",
+   "night_eur": 45.0,
+   "food_day_eur": 42.0,
+   "stay_src": "estimate: apartments from 455 EUR/week; La Greppa budget, Evettes mid",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 70,
+    "start": {
+     "cm": 140,
+     "p20": 120,
+     "p50": 140,
+     "p80": 160,
+     "p_ge50": 1.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 120,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 74,
+       "p50_cm": 140
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 177,
+       "p50_cm": 145
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 229,
+    "hotel_eur": 315,
+    "food_eur": 294,
+    "total_eur": 838,
+    "party_total_eur": 838,
+    "left_eur": 162,
+    "need_eur": 0,
+    "fits": true
+   },
+   "tiers": {
+    "pass": "LOW",
+    "hotel": "LOW",
+    "pistes": "MID",
+    "snow": "HIGH"
+   },
+   "value_cm_per_eur": 3.66,
+   "pros": [
+    "~140 cm at the start",
+    "day pass 38 EUR",
+    "cheap places to stay"
+   ],
+   "cons": [
+    "10 lifts, queues on peak days"
+   ],
+   "score": 79.8,
+   "score_parts": {
+    "MONEY": 96,
+    "SNOW": 63
+   },
+   "rank": 1
+  },
+  {
+   "slug": "aussois",
+   "label": "Aussois",
+   "country": "FR",
+   "area": "Haute Maurienne",
+   "lat": 45.24734,
+   "lon": 6.73799,
+   "top_m": 2680,
+   "base_m": 1532,
+   "km": 30.0,
+   "lifts": 10,
+   "opens": "2026-12-12",
+   "pass_day_eur": 41.0,
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 41.0,
+    "regular": 38.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "dynamic pricing, adult day pass",
+   "pass_src": "https://www.aussois.com",
+   "night_eur": 40.0,
+   "food_day_eur": 38.0,
+   "stay_src": "estimate: 4-person apartments from 430 EUR/week; L'Etagne",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 45,
+    "start": {
+     "cm": 115,
+     "p20": 100,
+     "p50": 115,
+     "p80": 130,
+     "p_ge50": 1.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 75,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 113,
+       "p50_cm": 115
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 171,
+       "p50_cm": 115
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 246,
+    "hotel_eur": 280,
+    "food_eur": 266,
+    "total_eur": 792,
+    "party_total_eur": 792,
+    "left_eur": 208,
+    "need_eur": 0,
+    "fits": true
+   },
+   "tiers": {
+    "pass": "LOW",
+    "hotel": "LOW",
+    "pistes": "LOW",
+    "snow": "MID"
+   },
+   "value_cm_per_eur": 2.8,
+   "pros": [
+    "day pass 41 EUR",
+    "cheap places to stay"
+   ],
+   "cons": [
+    "only 30 km of pistes",
+    "10 lifts, queues on peak days"
+   ],
+   "score": 73.3,
+   "score_parts": {
+    "MONEY": 100,
+    "SNOW": 47
+   },
+   "rank": 2
+  },
+  {
+   "slug": "valfrejus",
+   "label": "Valfréjus · La Norma",
+   "country": "FR",
+   "area": "Maurienne",
+   "lat": 45.15836,
+   "lon": 6.66075,
+   "top_m": 2724,
+   "base_m": 1552,
+   "km": 36.0,
+   "lifts": 9,
+   "opens": "2026-12-19",
+   "pass_day_eur": 43.6,
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 43.6,
+    "regular": 43.6
+   },
+   "pass_period": "holiday",
+   "pass_note": "one pass for both resorts",
+   "pass_src": "https://www.valfrejus.com",
+   "night_eur": 48.0,
+   "food_day_eur": 38.0,
+   "stay_src": "estimate: Valfréjus / La Norma residences",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 50,
+    "start": {
+     "cm": 120,
+     "p20": 105,
+     "p50": 120,
+     "p80": 135,
+     "p_ge50": 1.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 80,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 113,
+       "p50_cm": 120
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 171,
+       "p50_cm": 120
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 262,
+    "hotel_eur": 336,
+    "food_eur": 266,
+    "total_eur": 864,
+    "party_total_eur": 864,
+    "left_eur": 136,
+    "need_eur": 0,
+    "fits": true
+   },
+   "tiers": {
+    "pass": "LOW",
+    "hotel": "LOW",
+    "pistes": "LOW",
+    "snow": "HIGH"
+   },
+   "value_cm_per_eur": 2.75,
+   "pros": [
+    "~120 cm at the start",
+    "day pass 44 EUR",
+    "cheap places to stay"
+   ],
+   "cons": [
+    "only 36 km of pistes",
+    "9 lifts, queues on peak days"
+   ],
+   "score": 72.1,
+   "score_parts": {
+    "MONEY": 94,
+    "SNOW": 50
+   },
+   "rank": 3
+  },
+  {
+   "slug": "val_cenis",
+   "label": "Val Cenis",
+   "country": "FR",
+   "area": "Haute Maurienne",
+   "lat": 45.27607,
+   "lon": 6.88159,
+   "top_m": 2737,
+   "base_m": 1306,
+   "km": 89.0,
+   "lifts": 32,
+   "opens": "2026-12-12",
+   "pass_day_eur": 50.0,
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 50.0,
+    "regular": 46.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "dynamic pricing, adult day pass",
+   "pass_src": "https://www.valcenis.com",
+   "night_eur": 50.0,
+   "food_day_eur": 40.0,
+   "stay_src": "estimate: Val Cenis residences; La Vieille Poste",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 60,
+    "start": {
+     "cm": 125,
+     "p20": 105,
+     "p50": 125,
+     "p80": 145,
+     "p_ge50": 1.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 90,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 74,
+       "p50_cm": 115
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 177,
+       "p50_cm": 130
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 300,
+    "hotel_eur": 350,
+    "food_eur": 280,
+    "total_eur": 930,
+    "party_total_eur": 930,
+    "left_eur": 70,
+    "need_eur": 0,
+    "fits": true
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "LOW",
+    "pistes": "MID",
+    "snow": "HIGH"
+   },
+   "value_cm_per_eur": 2.5,
+   "pros": [
+    "~125 cm at the start",
+    "cheap places to stay",
+    "32 lifts"
+   ],
+   "cons": [
+    "small village, few shops"
+   ],
+   "score": 71.2,
+   "score_parts": {
+    "MONEY": 89,
+    "SNOW": 53
+   },
+   "rank": 4
+  },
+  {
+   "slug": "la_thuile_ski",
+   "label": "La Thuile",
+   "country": "IT",
+   "area": "Aosta Valley",
+   "lat": 45.69498,
+   "lon": 6.92452,
+   "top_m": 2608,
+   "base_m": 1468,
+   "km": 79.0,
+   "lifts": 17,
+   "opens": "2026-11-28",
+   "pass_day_eur": 56.0,
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 61.0,
+    "regular": 55.0
+   },
+   "pass_period": "mixed",
+   "pass_note": "Espace San Bernardo with La Rosière",
+   "pass_src": "https://www.lathuile.it",
+   "night_eur": 70.0,
+   "food_day_eur": 40.0,
+   "stay_src": "estimate: La Thuile hotels; refuges 15-35 EUR, Brasserie du Bathieu 15-20 EUR",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 65,
+    "start": {
+     "cm": 140,
+     "p20": 125,
+     "p50": 140,
+     "p80": 165,
+     "p_ge50": 1.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 90,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 139,
+       "p50_cm": 150
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 177,
+       "p50_cm": 135
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 336,
+    "hotel_eur": 490,
+    "food_eur": 280,
+    "total_eur": 1106,
+    "party_total_eur": 1106,
+    "left_eur": -106,
+    "need_eur": 106,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "HIGH"
+   },
+   "value_cm_per_eur": 2.5,
+   "pros": [
+    "~140 cm at the start"
+   ],
+   "cons": [
+    "1,106 EUR per person"
+   ],
+   "score": 69.2,
+   "score_parts": {
+    "MONEY": 75,
+    "SNOW": 63
+   },
+   "rank": 5
+  },
+  {
+   "slug": "les_karellis",
+   "label": "Les Karellis",
+   "country": "FR",
+   "area": "Maurienne",
+   "lat": 45.21602,
+   "lon": 6.39973,
+   "top_m": 2484,
+   "base_m": 1550,
+   "km": 45.0,
+   "lifts": 14,
+   "opens": "2026-12-19",
+   "pass_day_eur": 36.0,
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 36.0,
+    "regular": 36.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult day pass",
+   "pass_src": "https://www.karellis.com",
+   "night_eur": 50.0,
+   "food_day_eur": 40.0,
+   "stay_src": "estimate: Karellis apartments (holiday week), plat du jour ~16 EUR",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 35,
+    "start": {
+     "cm": 105,
+     "p20": 90,
+     "p50": 105,
+     "p80": 120,
+     "p_ge50": 1.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 75,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 105,
+       "p50_cm": 105
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 171,
+       "p50_cm": 105
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 216,
+    "hotel_eur": 350,
+    "food_eur": 280,
+    "total_eur": 846,
+    "party_total_eur": 846,
+    "left_eur": 154,
+    "need_eur": 0,
+    "fits": true
+   },
+   "tiers": {
+    "pass": "LOW",
+    "hotel": "LOW",
+    "pistes": "LOW",
+    "snow": "MID"
+   },
+   "value_cm_per_eur": 2.92,
+   "pros": [
+    "day pass 36 EUR",
+    "cheap places to stay"
+   ],
+   "cons": [
+    "only 45 km of pistes"
+   ],
+   "score": 67.9,
+   "score_parts": {
+    "MONEY": 96,
+    "SNOW": 40
+   },
+   "rank": 6
+  },
+  {
+   "slug": "val_thorens",
+   "label": "Val Thorens",
+   "country": "FR",
+   "area": "Tarentaise",
+   "lat": 45.28447,
+   "lon": 6.57703,
+   "top_m": 3221,
+   "base_m": 1726,
+   "km": 141.0,
+   "lifts": 33,
+   "opens": "2026-11-21",
+   "pass_day_eur": 73.5,
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 73.5,
+    "regular": 73.5
+   },
+   "pass_period": "holiday",
+   "pass_note": "Val Thorens-Orelle adult day pass",
+   "pass_src": "https://www.valthorens.com",
+   "night_eur": 170.0,
+   "food_day_eur": 60.0,
+   "stay_src": "estimate: apartments from 5,500 EUR/week at Christmas; lunch 20-35 EUR, menu 35 EUR",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 130,
+    "start": {
+     "cm": 195,
+     "p20": 180,
+     "p50": 195,
+     "p80": 225,
+     "p_ge50": 1.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 150,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 105,
+       "p50_cm": 215
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 148,
+       "p50_cm": 190
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 441,
+    "hotel_eur": 1190,
+    "food_eur": 420,
+    "total_eur": 2051,
+    "party_total_eur": 2051,
+    "left_eur": -1051,
+    "need_eur": 1051,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "HIGH",
+    "pistes": "HIGH",
+    "snow": "HIGH"
+   },
+   "value_cm_per_eur": 2.65,
+   "pros": [
+    "~195 cm at the start",
+    "141 km of pistes",
+    "skiing up to 3221 m"
+   ],
+   "cons": [
+    "2,051 EUR per person",
+    "nights from 170 EUR per person",
+    "day pass 74 EUR"
+   ],
+   "score": 50.0,
+   "score_parts": {
+    "MONEY": 0,
+    "SNOW": 100
+   },
+   "rank": 7
+  },
+  {
+   "slug": "ovronnaz",
+   "label": "Ovronnaz",
+   "country": "CH",
+   "area": "Valais",
+   "lat": 46.20254,
+   "lon": 7.13818,
+   "top_m": 2456,
+   "base_m": 1340,
+   "km": 17.0,
+   "lifts": 7,
+   "opens": "2026-12-12",
+   "pass_day_eur": 70.32,
+   "pass_day_local": {
+    "ccy": "CHF",
+    "holiday": 65.0,
+    "regular": 65.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult day pass CHF 65",
+   "pass_src": "https://www.ovronnaz.ch",
+   "night_eur": 100.62,
+   "food_day_eur": 61.67,
+   "stay_src": "estimate: CHF 180-220 doubles; menu CHF 24, pasta CHF 18",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 55,
+    "start": {
+     "cm": 130,
+     "p20": 110,
+     "p50": 130,
+     "p80": 145,
+     "p_ge50": 1.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 70,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 106,
+       "p50_cm": 120
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 205,
+       "p50_cm": 135
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 422,
+    "hotel_eur": 704,
+    "food_eur": 432,
+    "total_eur": 1558,
+    "party_total_eur": 1558,
+    "left_eur": -558,
+    "need_eur": 558,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "LOW",
+    "snow": "HIGH"
+   },
+   "value_cm_per_eur": 1.85,
+   "pros": [
+    "~130 cm at the start"
+   ],
+   "cons": [
+    "1,558 EUR per person",
+    "only 17 km of pistes",
+    "day pass 70 EUR"
+   ],
+   "score": 47.9,
+   "score_parts": {
+    "MONEY": 39,
+    "SNOW": 57
+   },
+   "rank": 8
+  },
+  {
+   "slug": "stubaier_gletscher",
+   "label": "Stubai Glacier",
+   "country": "AT",
+   "area": "Tyrol",
+   "lat": 46.99161,
+   "lon": 11.12463,
+   "top_m": 3208,
+   "base_m": 1692,
+   "km": 49.0,
+   "lifts": 23,
+   "opens": "2026-10-24",
+   "pass_day_eur": 75.5,
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 75.5,
+    "regular": 75.5
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult day pass",
+   "pass_src": "https://www.stubaier-gletscher.com",
+   "night_eur": 80.0,
+   "food_day_eur": 45.0,
+   "stay_src": "estimate: Neustift hotels; Eisgrat pasta 12.80 EUR, hut mains 16-20 EUR",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 60,
+    "start": {
+     "cm": 90,
+     "p20": 80,
+     "p50": 90,
+     "p80": 115,
+     "p_ge50": 0.99,
+     "basis": "ensemble+climatology",
+     "normal_cm": 160,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 42,
+       "p50_cm": 110
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 67,
+       "p50_cm": 85
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 453,
+    "hotel_eur": 560,
+    "food_eur": 315,
+    "total_eur": 1328,
+    "party_total_eur": 1328,
+    "left_eur": -328,
+    "need_eur": 328,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "MID"
+   },
+   "value_cm_per_eur": 1.19,
+   "pros": [
+    "skiing up to 3208 m"
+   ],
+   "cons": [
+    "1,328 EUR per person",
+    "~90 cm at the start",
+    "day pass 76 EUR"
+   ],
+   "score": 43.7,
+   "score_parts": {
+    "MONEY": 57,
+    "SNOW": 30
+   },
+   "rank": 9
+  },
+  {
+   "slug": "gletscher_skigebiet_zugspitze_ski_resort_zugspit",
+   "label": "Zugspitze",
+   "country": "DE",
+   "area": "Bavaria",
+   "lat": 47.41297,
+   "lon": 10.98583,
+   "top_m": 2627,
+   "base_m": 995,
+   "km": 16.0,
+   "lifts": 38,
+   "opens": "2026-11-27",
+   "pass_day_eur": 70.5,
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 70.5,
+    "regular": 70.5
+   },
+   "pass_period": "holiday",
+   "pass_note": "online; 78 EUR at the desk",
+   "pass_src": "https://zugspitze.de",
+   "night_eur": 70.0,
+   "food_day_eur": 48.0,
+   "stay_src": "estimate: Garmisch / Grainau hotels; hut lunch 20.40 EUR, Schnitzel 23.90 EUR",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 55,
+    "start": {
+     "cm": 80,
+     "p20": 70,
+     "p50": 80,
+     "p80": 115,
+     "p_ge50": 0.99,
+     "basis": "ensemble+climatology",
+     "normal_cm": 115,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 42,
+       "p50_cm": 110
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 44,
+       "p50_cm": 70
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 423,
+    "hotel_eur": 490,
+    "food_eur": 336,
+    "total_eur": 1249,
+    "party_total_eur": 1249,
+    "left_eur": -249,
+    "need_eur": 249,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "LOW",
+    "snow": "MID"
+   },
+   "value_cm_per_eur": 1.13,
+   "pros": [
+    "38 lifts"
+   ],
+   "cons": [
+    "1,249 EUR per person",
+    "only 16 km of pistes",
+    "~80 cm at the start"
+   ],
+   "score": 43.5,
+   "score_parts": {
+    "MONEY": 64,
+    "SNOW": 23
+   },
+   "rank": 10
+  },
+  {
+   "slug": "kleinwalsertal_oberstdorf",
+   "label": "Oberstdorf · Kleinwalsertal",
+   "country": "DE",
+   "area": "Allgäu",
+   "lat": 47.36355,
+   "lon": 10.21437,
+   "top_m": 2213,
+   "base_m": 823,
+   "km": 108.0,
+   "lifts": 52,
+   "opens": "2026-12-05",
+   "pass_day_eur": 72.9,
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 72.9,
+    "regular": 72.9
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult day pass, whole area",
+   "pass_src": "https://www.ok-bergbahnen.com",
+   "night_eur": 75.0,
+   "food_day_eur": 48.0,
+   "stay_src": "estimate: Oberstdorf hotels; Allgäu hut lunches ~20 EUR",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 25,
+    "start": {
+     "cm": 60,
+     "p20": 35,
+     "p50": 60,
+     "p80": 85,
+     "p_ge50": 0.56,
+     "basis": "ensemble+climatology",
+     "normal_cm": 70,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 68,
+       "p50_cm": 80
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 38,
+       "p50_cm": 40
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 437,
+    "hotel_eur": 525,
+    "food_eur": 336,
+    "total_eur": 1298,
+    "party_total_eur": 1298,
+    "left_eur": -298,
+    "need_eur": 298,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "MID"
+   },
+   "value_cm_per_eur": 0.82,
+   "pros": [
+    "52 lifts"
+   ],
+   "cons": [
+    "1,298 EUR per person",
+    "~60 cm at the start",
+    "day pass 73 EUR"
+   ],
+   "score": 34.9,
+   "score_parts": {
+    "MONEY": 60,
+    "SNOW": 10
+   },
+   "rank": 11
+  },
+  {
+   "slug": "skigebiet_garmisch_classic",
+   "label": "Garmisch-Classic",
+   "country": "DE",
+   "area": "Bavaria",
+   "lat": 47.45578,
+   "lon": 11.0759,
+   "top_m": 2047,
+   "base_m": 727,
+   "km": 38.0,
+   "lifts": 18,
+   "opens": "2026-12-12",
+   "pass_day_eur": 69.0,
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 69.0,
+    "regular": 69.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "online; 72 EUR at the desk",
+   "pass_src": "https://zugspitze.de",
+   "night_eur": 70.0,
+   "food_day_eur": 48.0,
+   "stay_src": "estimate: Garmisch hotels; hut lunch 20.40 EUR, Schnitzel 23.90 EUR",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 20,
+    "start": {
+     "cm": 45,
+     "p20": 35,
+     "p50": 45,
+     "p80": 65,
+     "p_ge50": 0.44,
+     "basis": "ensemble+climatology",
+     "normal_cm": 50,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 42,
+       "p50_cm": 60
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 44,
+       "p50_cm": 40
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 414,
+    "hotel_eur": 490,
+    "food_eur": 336,
+    "total_eur": 1240,
+    "party_total_eur": 1240,
+    "left_eur": -240,
+    "need_eur": 240,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "LOW",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.65,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,240 EUR per person",
+    "only 38 km of pistes",
+    "~45 cm at the start"
+   ],
+   "score": 32.2,
+   "score_parts": {
+    "MONEY": 64,
+    "SNOW": 0
+   },
+   "rank": 12
+  }
+ ],
+ "tiers": {
+  "pass": "LOW < 45 EUR <= MID <= 65 EUR < HIGH (adult day pass, EUR)",
+  "hotel": "LOW < 60 EUR <= MID <= 120 EUR < HIGH (per person per night sharing, estimate)",
+  "pistes": "size + altitude: >=120 km = 2 pts, >=50 km = 1, top >=2900 m = +1; HIGH >=2, MID 1, LOW 0",
+  "snow": "projected depth at the start date (P50): HIGH >=120 cm, MID >=60 cm, LOW below"
+ },
+ "explainer": "Snow at the start date = snow now at the resort + 40 % of the ensemble members' snowfall (ECMWF and GFS ensembles to their horizon) + the change the past winters show from that horizon to the date. Likely range = 20th-80th percentile of the scenarios. Prices: day pass from the resort shop; night and food are estimates. Multi-day passes and early bookings are often cheaper than the figures here.",
+ "notes": [
+  "night_eur and food_day_eur are estimates per person (sharing a room / apartment)",
+  "pass = ski days x adult day pass; multi-day passes are usually cheaper",
+  "budget_eur is the whole party's budget; left_eur compares it with party_total_eur"
+ ],
+ "static": true
+}

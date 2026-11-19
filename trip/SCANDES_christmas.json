@@ -1,0 +1,910 @@
+{
+ "region": "SCANDES",
+ "label": "Scandinavia",
+ "start": "2026-12-19",
+ "end": "2026-12-26",
+ "nights": 7,
+ "ski_days": 6,
+ "food_days": 7,
+ "party": 1,
+ "budget_eur": 1000.0,
+ "currency": "EUR",
+ "fx": {
+  "date": "2026-11-18",
+  "source": "frankfurter.app",
+  "rate": null
+ },
+ "priority": [
+  "MONEY",
+  "SNOW"
+ ],
+ "snow_day0": "2026-11-19",
+ "snow_stale": false,
+ "projection": true,
+ "travel": null,
+ "resorts": [
+  {
+   "slug": "hemsedal",
+   "label": "Hemsedal",
+   "country": "NO",
+   "area": "Buskerud",
+   "lat": 60.85223,
+   "lon": 8.50885,
+   "top_m": 1439,
+   "base_m": 640,
+   "km": 48.0,
+   "lifts": 22,
+   "opens": "2026-12-11",
+   "pass_day_eur": 84.78,
+   "pass_day_local": {
+    "ccy": "NOK",
+    "holiday": 899.0,
+    "regular": 755.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "SkiStar dynamic pricing, 755-899 NOK range reported for 2026-27 adult day pass",
+   "pass_src": "https://www.skiinfo.no/ostlandet/hemsedal/heiskort",
+   "night_eur": 89.58,
+   "food_day_eur": 42.43,
+   "stay_src": "estimate: Hemsedal high-season average ~286 USD/night per room (tripadvisor), one of the pricier Norwegian resorts; Norway restaurant pricing similar to Trysil",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 40,
+    "start": {
+     "cm": 50,
+     "p20": 45,
+     "p50": 50,
+     "p80": 65,
+     "p_ge50": 0.65,
+     "basis": "ensemble+climatology",
+     "normal_cm": 90,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 10,
+       "p50_cm": 60
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 27,
+       "p50_cm": 50
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 509,
+    "hotel_eur": 627,
+    "food_eur": 297,
+    "total_eur": 1433,
+    "party_total_eur": 1433,
+    "left_eur": -433,
+    "need_eur": 433,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "LOW",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.59,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,433 EUR per person",
+    "only 48 km of pistes",
+    "~50 cm at the start"
+   ],
+   "score": 85.5,
+   "score_parts": {
+    "MONEY": 71,
+    "SNOW": 100
+   },
+   "rank": 1
+  },
+  {
+   "slug": "salen",
+   "label": "Salen",
+   "country": "SE",
+   "area": "Lindvallen-Hogfjallet (SkiStar)",
+   "lat": 61.16455,
+   "lon": 13.09204,
+   "top_m": 886,
+   "base_m": 567,
+   "km": 90.0,
+   "lifts": 98,
+   "opens": "2026-11-28",
+   "pass_day_eur": 71.79,
+   "pass_day_local": {
+    "ccy": "SEK",
+    "holiday": 800.0,
+    "regular": 715.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "SkiStar dynamic pricing; 715 SEK is the published 2026-27 Lindvallen/Hogfjallet adult day rate (+4% YoY), holiday figure is a dynamic-pricing estimate",
+   "pass_src": "https://pistat.se/liftkortspriser",
+   "night_eur": 62.82,
+   "food_day_eur": 34.1,
+   "stay_src": "estimate: Salen cheap-hotel average ~107 USD/night, 3-star ~209 USD/night per room on booking.com; on-mountain lunch ~195 SEK confirmed (SkiStar Salen), Salen is one of the pricier food destinations in Sweden despite budget lodging",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 25,
+    "start": {
+     "cm": 35,
+     "p20": 30,
+     "p50": 35,
+     "p80": 45,
+     "p_ge50": 0.07,
+     "basis": "ensemble+climatology",
+     "normal_cm": 30,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 8,
+       "p50_cm": 35
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 24,
+       "p50_cm": 35
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 431,
+    "hotel_eur": 440,
+    "food_eur": 239,
+    "total_eur": 1110,
+    "party_total_eur": 1110,
+    "left_eur": -110,
+    "need_eur": 110,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.49,
+   "pros": [
+    "98 lifts"
+   ],
+   "cons": [
+    "1,110 EUR per person",
+    "~35 cm at the start",
+    "day pass 72 EUR"
+   ],
+   "score": 75.3,
+   "score_parts": {
+    "MONEY": 93,
+    "SNOW": 57
+   },
+   "rank": 2
+  },
+  {
+   "slug": "are",
+   "label": "Are",
+   "country": "SE",
+   "area": "Jamtland",
+   "lat": 63.40571,
+   "lon": 13.02728,
+   "top_m": 1318,
+   "base_m": 389,
+   "km": 116.0,
+   "lifts": 48,
+   "opens": "2026-12-12",
+   "pass_day_eur": 74.93,
+   "pass_day_local": {
+    "ccy": "SEK",
+    "holiday": 835.0,
+    "regular": 750.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "SkiStar dynamic pricing; 835 SEK reported as the 2026-27 adult day rate (peak weeks), 750 SEK the from-price in lower-demand periods",
+   "pass_src": "https://www.freeride.se/liftkortspriser-sverige-fjallen/",
+   "night_eur": 80.77,
+   "food_day_eur": 35.9,
+   "stay_src": "estimate: Are village hotels ~110-180 USD/night per room on booking.com (~SEK 1000-1900 total for 2); on-mountain dagens lunch 120-180 SEK + village dinner 200-400 SEK",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 25,
+    "start": {
+     "cm": 35,
+     "p20": 30,
+     "p50": 35,
+     "p80": 45,
+     "p_ge50": 0.13,
+     "basis": "ensemble+climatology",
+     "normal_cm": 50,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 7,
+       "p50_cm": 35
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 28,
+       "p50_cm": 35
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 450,
+    "hotel_eur": 565,
+    "food_eur": 251,
+    "total_eur": 1266,
+    "party_total_eur": 1266,
+    "left_eur": -266,
+    "need_eur": 266,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.47,
+   "pros": [
+    "48 lifts"
+   ],
+   "cons": [
+    "1,266 EUR per person",
+    "~35 cm at the start",
+    "day pass 75 EUR"
+   ],
+   "score": 69.9,
+   "score_parts": {
+    "MONEY": 83,
+    "SNOW": 57
+   },
+   "rank": 3
+  },
+  {
+   "slug": "hafjell",
+   "label": "Hafjell",
+   "country": "NO",
+   "area": "Innlandet",
+   "lat": 61.23692,
+   "lon": 10.46792,
+   "top_m": 1058,
+   "base_m": 192,
+   "km": 39.0,
+   "lifts": 17,
+   "opens": "2026-11-28",
+   "pass_day_eur": 65.92,
+   "pass_day_local": {
+    "ccy": "NOK",
+    "holiday": 699.0,
+    "regular": 599.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "Alpinco dynamic pricing, 599-699 NOK range reported for the 2026-27 adult day pass",
+   "pass_src": "https://www.onthesnow.co.uk/eastern-norway/hafjell/skipass",
+   "night_eur": 66.01,
+   "food_day_eur": 37.72,
+   "stay_src": "estimate: Hafjell/Lillehammer area, mid-range Norwegian pricing, Olympic-legacy family resort",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 15,
+    "start": {
+     "cm": 30,
+     "p20": 25,
+     "p50": 30,
+     "p80": 40,
+     "p_ge50": 0.06,
+     "basis": "ensemble+climatology",
+     "normal_cm": 55,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 8,
+       "p50_cm": 35
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 28,
+       "p50_cm": 30
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 395,
+    "hotel_eur": 462,
+    "food_eur": 264,
+    "total_eur": 1121,
+    "party_total_eur": 1121,
+    "left_eur": -121,
+    "need_eur": 121,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "LOW",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.46,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,121 EUR per person",
+    "only 39 km of pistes",
+    "~30 cm at the start"
+   ],
+   "score": 67.8,
+   "score_parts": {
+    "MONEY": 93,
+    "SNOW": 43
+   },
+   "rank": 4
+  },
+  {
+   "slug": "rukatunturi_ruka",
+   "label": "Ruka",
+   "country": "FI",
+   "area": "Lapland",
+   "lat": 66.16706,
+   "lon": 29.15838,
+   "top_m": 494,
+   "base_m": 286,
+   "km": 25.0,
+   "lifts": 24,
+   "opens": "2026-10-02",
+   "pass_day_eur": 59.0,
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 59.0,
+    "regular": 56.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "59 EUR ticket-office price, ~56 EUR online; no separate calendar holiday surcharge published, a modest online/window spread only",
+   "pass_src": "https://www.ruka.fi/en/shop/skipasses",
+   "night_eur": 85.0,
+   "food_day_eur": 45.0,
+   "stay_src": "estimate: Ruka hotel high-season average ~168 EUR/night per room (hotellitopas.fi, Dec-Feb), ~84 EUR pp; lunch/dinner pricing similar tier to Levi",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 20,
+    "start": {
+     "cm": 30,
+     "p20": 30,
+     "p50": 30,
+     "p80": 35,
+     "p_ge50": 0.01,
+     "basis": "ensemble+climatology",
+     "normal_cm": 40,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 6,
+       "p50_cm": 35
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 19,
+       "p50_cm": 30
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 354,
+    "hotel_eur": 595,
+    "food_eur": 315,
+    "total_eur": 1264,
+    "party_total_eur": 1264,
+    "left_eur": -264,
+    "need_eur": 264,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "MID",
+    "pistes": "LOW",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.51,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,264 EUR per person",
+    "only 25 km of pistes",
+    "~30 cm at the start"
+   ],
+   "score": 62.8,
+   "score_parts": {
+    "MONEY": 83,
+    "SNOW": 43
+   },
+   "rank": 5
+  },
+  {
+   "slug": "kvitfjell",
+   "label": "Kvitfjell",
+   "country": "NO",
+   "area": "Innlandet",
+   "lat": 61.45605,
+   "lon": 10.11271,
+   "top_m": 1038,
+   "base_m": 184,
+   "km": 38.0,
+   "lifts": 14,
+   "opens": "2026-11-28",
+   "pass_day_eur": 53.66,
+   "pass_day_local": {
+    "ccy": "NOK",
+    "holiday": 569.0,
+    "regular": 569.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "569 NOK is the flat published adult day rate; limited public dynamic-pricing detail found specifically for Kvitfjell, so holiday = regular here",
+   "pass_src": "https://www.skiinfo.no/ostlandet/kvitfjell/heiskort",
+   "night_eur": 61.29,
+   "food_day_eur": 37.72,
+   "stay_src": "estimate: Kvitfjell is quieter/smaller than sister resort Hafjell with similar regional pricing, limited on-mountain lodging",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 5,
+    "start": {
+     "cm": 15,
+     "p20": 10,
+     "p50": 15,
+     "p80": 25,
+     "p_ge50": 0.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 55,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 7,
+       "p50_cm": 20
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 22,
+       "p50_cm": 15
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 322,
+    "hotel_eur": 429,
+    "food_eur": 264,
+    "total_eur": 1015,
+    "party_total_eur": 1015,
+    "left_eur": -15,
+    "need_eur": 15,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "MID",
+    "pistes": "LOW",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.28,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,015 EUR per person",
+    "only 38 km of pistes",
+    "~15 cm at the start"
+   ],
+   "score": 50.0,
+   "score_parts": {
+    "MONEY": 100,
+    "SNOW": 0
+   },
+   "rank": 6
+  },
+  {
+   "slug": "ski_geilo",
+   "label": "Geilo",
+   "country": "NO",
+   "area": "Buskerud",
+   "lat": 60.52989,
+   "lon": 8.19991,
+   "top_m": 1163,
+   "base_m": 779,
+   "km": 35.0,
+   "lifts": 20,
+   "opens": "2026-11-28",
+   "pass_day_eur": 75.35,
+   "pass_day_local": {
+    "ccy": "NOK",
+    "holiday": 799.0,
+    "regular": 693.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "dynamic pricing, 693-799 NOK range reported for the 2026-27 adult day pass",
+   "pass_src": "https://www.skiinfo.no/ostlandet/geilo/heiskort",
+   "night_eur": 70.72,
+   "food_day_eur": 39.61,
+   "stay_src": "estimate: Geilo is slightly cheaper than Hemsedal/Trysil, a traditional lower-key Norwegian resort town",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 10,
+    "start": {
+     "cm": 20,
+     "p20": 15,
+     "p50": 20,
+     "p80": 35,
+     "p_ge50": 0.04,
+     "basis": "ensemble+climatology",
+     "normal_cm": 60,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 10,
+       "p50_cm": 30
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 22,
+       "p50_cm": 20
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 452,
+    "hotel_eur": 495,
+    "food_eur": 277,
+    "total_eur": 1224,
+    "party_total_eur": 1224,
+    "left_eur": -224,
+    "need_eur": 224,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "LOW",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.27,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,224 EUR per person",
+    "only 35 km of pistes",
+    "~20 cm at the start"
+   ],
+   "score": 49.9,
+   "score_parts": {
+    "MONEY": 86,
+    "SNOW": 14
+   },
+   "rank": 7
+  },
+  {
+   "slug": "trysil",
+   "label": "Trysil",
+   "country": "NO",
+   "area": "Innlandet",
+   "lat": 61.31419,
+   "lon": 12.2052,
+   "top_m": 1109,
+   "base_m": 407,
+   "km": 101.0,
+   "lifts": 40,
+   "opens": "2026-11-28",
+   "pass_day_eur": 84.87,
+   "pass_day_local": {
+    "ccy": "NOK",
+    "holiday": 900.0,
+    "regular": 803.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "SkiStar dynamic pricing; 803 NOK is the recently published 2026-27 adult day rate, Christmas/New Year typically runs higher - holiday figure is an estimate",
+   "pass_src": "https://www.skiinfo.no/ostlandet/trysil/heiskort",
+   "night_eur": 80.15,
+   "food_day_eur": 42.43,
+   "stay_src": "estimate: Trysil winter high-season average ~187 USD/night per room (tripadvisor/booking); Norway restaurant lunch 200-400 NOK + dinner 350-600 NOK",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 5,
+    "start": {
+     "cm": 20,
+     "p20": 10,
+     "p50": 20,
+     "p80": 25,
+     "p_ge50": 0.02,
+     "basis": "ensemble+climatology",
+     "normal_cm": 55,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 7,
+       "p50_cm": 20
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 28,
+       "p50_cm": 20
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 509,
+    "hotel_eur": 561,
+    "food_eur": 297,
+    "total_eur": 1367,
+    "party_total_eur": 1367,
+    "left_eur": -367,
+    "need_eur": 367,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.24,
+   "pros": [
+    "40 lifts"
+   ],
+   "cons": [
+    "1,367 EUR per person",
+    "~20 cm at the start",
+    "day pass 85 EUR"
+   ],
+   "score": 45.0,
+   "score_parts": {
+    "MONEY": 76,
+    "SNOW": 14
+   },
+   "rank": 8
+  },
+  {
+   "slug": "yllas",
+   "label": "Yllas",
+   "country": "FI",
+   "area": "Lapland",
+   "lat": 67.57941,
+   "lon": 24.20434,
+   "top_m": 717,
+   "base_m": 273,
+   "km": 18.0,
+   "lifts": 21,
+   "opens": "2026-09-15",
+   "pass_day_eur": 60.0,
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 60.0,
+    "regular": 55.5
+   },
+   "pass_period": "holiday",
+   "pass_note": "official price list: 60 EUR normal season (12 Dec 2026 onward), 55.50 EUR low season (start of season-11 Dec 2026)",
+   "pass_src": "https://ski.yllas.fi/en/lift-tickets/yllas-lift-ticket-price-list/",
+   "night_eur": 150.0,
+   "food_day_eur": 45.0,
+   "stay_src": "estimate: Yllas cabins from ~43-70 EUR/day in low season, rising for Christmas; similar dining tier to Ruka",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 10,
+    "start": {
+     "cm": 20,
+     "p20": 15,
+     "p50": 20,
+     "p80": 25,
+     "p_ge50": 0.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 40,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 7,
+       "p50_cm": 20
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 22,
+       "p50_cm": 15
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 360,
+    "hotel_eur": 1050,
+    "food_eur": 315,
+    "total_eur": 1725,
+    "party_total_eur": 1725,
+    "left_eur": -725,
+    "need_eur": 725,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "HIGH",
+    "pistes": "LOW",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.33,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,725 EUR per person",
+    "nights from 150 EUR per person",
+    "only 18 km of pistes"
+   ],
+   "score": 32.6,
+   "score_parts": {
+    "MONEY": 51,
+    "SNOW": 14
+   },
+   "rank": 9
+  },
+  {
+   "slug": "levi",
+   "label": "Levi",
+   "country": "FI",
+   "area": "Lapland",
+   "lat": 67.78769,
+   "lon": 24.84606,
+   "top_m": 530,
+   "base_m": 197,
+   "km": 50.0,
+   "lifts": 27,
+   "opens": "2026-10-02",
+   "pass_day_eur": 60.0,
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 60.0,
+    "regular": 57.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "60 EUR ticket-window/walk-up price; 57 EUR is the online 14+-day-advance rate (valid 1 Dec 2026-2 May 2027); Levi does not publish a separate calendar holiday surcharge",
+   "pass_src": "https://www.levi.fi/en/ski/levi-ski-resort-services/skipasses/",
+   "night_eur": 250.0,
+   "food_day_eur": 50.0,
+   "stay_src": "estimate: Levi Christmas-week hotel nights average up to ~495 EUR/night per room (hotellitopas.fi), cabins from ~100 EUR/night, roughly 150-250 EUR pp in peak week; lounas buffet 14-22 EUR, dinner 20-40 EUR",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 5,
+    "start": {
+     "cm": 15,
+     "p20": 15,
+     "p50": 15,
+     "p80": 20,
+     "p_ge50": 0.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 40,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 6,
+       "p50_cm": 20
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 20,
+       "p50_cm": 15
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 360,
+    "hotel_eur": 1750,
+    "food_eur": 350,
+    "total_eur": 2460,
+    "party_total_eur": 2460,
+    "left_eur": -1460,
+    "need_eur": 1460,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "HIGH",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.25,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "2,460 EUR per person",
+    "nights from 250 EUR per person",
+    "~15 cm at the start"
+   ],
+   "score": 0.0,
+   "score_parts": {
+    "MONEY": 0,
+    "SNOW": 0
+   },
+   "rank": 10
+  }
+ ],
+ "tiers": {
+  "pass": "LOW < 45 EUR <= MID <= 65 EUR < HIGH (adult day pass, EUR)",
+  "hotel": "LOW < 60 EUR <= MID <= 120 EUR < HIGH (per person per night sharing, estimate)",
+  "pistes": "size + altitude: >=120 km = 2 pts, >=50 km = 1, top >=2900 m = +1; HIGH >=2, MID 1, LOW 0",
+  "snow": "projected depth at the start date (P50): HIGH >=120 cm, MID >=60 cm, LOW below"
+ },
+ "explainer": "Snow at the start date = snow now at the resort + 40 % of the ensemble members' snowfall (ECMWF and GFS ensembles to their horizon) + the change the past winters show from that horizon to the date. Likely range = 20th-80th percentile of the scenarios. Prices: day pass from the resort shop; night and food are estimates. Multi-day passes and early bookings are often cheaper than the figures here.",
+ "notes": [
+  "night_eur and food_day_eur are estimates per person (sharing a room / apartment)",
+  "pass = ski days x adult day pass; multi-day passes are usually cheaper",
+  "budget_eur is the whole party's budget; left_eur compares it with party_total_eur"
+ ],
+ "static": true
+}

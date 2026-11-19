@@ -1,0 +1,216 @@
+{
+ "region": "ATLAS",
+ "label": "High Atlas · Middle Atlas",
+ "start": "2026-12-19",
+ "end": "2026-12-26",
+ "nights": 7,
+ "ski_days": 6,
+ "food_days": 7,
+ "party": 1,
+ "budget_eur": 1000.0,
+ "currency": "EUR",
+ "fx": {
+  "date": "2026-11-18",
+  "source": "frankfurter.app",
+  "rate": null
+ },
+ "priority": [
+  "MONEY",
+  "SNOW"
+ ],
+ "snow_day0": "2026-11-19",
+ "snow_stale": false,
+ "projection": true,
+ "travel": null,
+ "resorts": [
+  {
+   "slug": "oukaimeden",
+   "label": "Oukaimeden",
+   "country": "MA",
+   "area": "High Atlas",
+   "lat": 31.19074,
+   "lon": -7.85984,
+   "top_m": 3258,
+   "base_m": 2600,
+   "km": 10.0,
+   "lifts": 1,
+   "opens": "2026-12-15",
+   "pass_day_eur": 13.89,
+   "pass_day_local": {
+    "ccy": "MAD",
+    "holiday": 150.0,
+    "regular": 150.0
+   },
+   "pass_period": "mixed",
+   "pass_note": "no all-mountain day pass exists: lifts are sold per ride (~20 MAD/ride) or as separate access - main chairlift ~100 MAD/day, the six small drag lifts ~50 MAD/day combined; 150 MAD is a realistic estimate for a full ski day using both. No fixed holiday surcharge found",
+   "pass_src": "https://www.excursions-ourika.com/ski-maroc-oukaimeden/",
+   "night_eur": 23.15,
+   "food_day_eur": 13.89,
+   "stay_src": "estimate: very limited lodging at Oukaimeden itself (small inns/CAF refuge, roughly 200-400 MAD/night per room); many visitors day-trip from Marrakech (~1h15) instead; simple tagine lunch and dinner ~60-80 MAD each",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 0,
+    "start": {
+     "cm": 0,
+     "p20": 0,
+     "p50": 0,
+     "p80": 10,
+     "p_ge50": 0.01,
+     "basis": "ensemble+climatology",
+     "normal_cm": 20,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 0,
+       "p50_cm": 0
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 0,
+       "p50_cm": 0
+      }
+     },
+     "winters": 45
+    }
+   },
+   "cost": {
+    "pass_eur": 83,
+    "hotel_eur": 162,
+    "food_eur": 97,
+    "total_eur": 342,
+    "party_total_eur": 342,
+    "left_eur": 658,
+    "need_eur": 0,
+    "fits": true
+   },
+   "tiers": {
+    "pass": "LOW",
+    "hotel": "LOW",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": null,
+   "pros": [
+    "day pass 14 EUR",
+    "cheap places to stay",
+    "skiing up to 3258 m"
+   ],
+   "cons": [
+    "~0 cm at the start",
+    "1 lifts, queues on peak days"
+   ],
+   "score": 100.0,
+   "score_parts": {
+    "MONEY": 100,
+    "SNOW": 100
+   },
+   "rank": 1
+  },
+  {
+   "slug": "michlifen",
+   "label": "Michlifen",
+   "country": "MA",
+   "area": "Middle Atlas (near Ifrane)",
+   "lat": 33.41106,
+   "lon": -5.08029,
+   "top_m": 2070,
+   "base_m": 1870,
+   "km": 0.0,
+   "lifts": 2,
+   "opens": "2027-01-05",
+   "pass_day_eur": 13.43,
+   "pass_day_local": {
+    "ccy": "MAD",
+    "holiday": 150.0,
+    "regular": 120.0
+   },
+   "pass_period": "mixed",
+   "pass_note": "day pass reported in the 100-150 MAD range depending on season/source; no official season price sheet found online, so a 120 MAD regular / 150 MAD holiday estimate is used; opening date (2027-01-05) is typical/illustrative only - the station runs entirely on snow-dependent, ad-hoc opening (only when snowpack exceeds ~50cm, typically 3-6 weeks/winter)",
+   "pass_src": "https://www.maroc-maroc.com/la-station-de-ski-de-michlifen-a-ifrane/",
+   "night_eur": 27.78,
+   "food_day_eur": 18.52,
+   "stay_src": "estimate: budget/mid Ifrane-town hotels (Farah Inn ~37 EUR, Hotel Perce Neige ~40 EUR per room) roughly 200-350 MAD pp - excludes the separate 5-star Michlifen Resort & Golf (210+ EUR/night); simple Ifrane restaurant meals ~35-150 MAD per person per meal",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 0,
+    "start": {
+     "cm": 0,
+     "p20": 0,
+     "p50": 0,
+     "p80": 0,
+     "p_ge50": 0.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 0,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 0,
+       "p50_cm": 0
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 0,
+       "p50_cm": 0
+      }
+     },
+     "winters": 45
+    }
+   },
+   "cost": {
+    "pass_eur": 81,
+    "hotel_eur": 194,
+    "food_eur": 130,
+    "total_eur": 405,
+    "party_total_eur": 405,
+    "left_eur": 595,
+    "need_eur": 0,
+    "fits": true
+   },
+   "tiers": {
+    "pass": "LOW",
+    "hotel": "LOW",
+    "pistes": "LOW",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": null,
+   "pros": [
+    "day pass 13 EUR",
+    "cheap places to stay"
+   ],
+   "cons": [
+    "only 0 km of pistes",
+    "~0 cm at the start",
+    "2 lifts, queues on peak days"
+   ],
+   "score": 50.0,
+   "score_parts": {
+    "MONEY": 0,
+    "SNOW": 100
+   },
+   "rank": 2
+  }
+ ],
+ "tiers": {
+  "pass": "LOW < 45 EUR <= MID <= 65 EUR < HIGH (adult day pass, EUR)",
+  "hotel": "LOW < 60 EUR <= MID <= 120 EUR < HIGH (per person per night sharing, estimate)",
+  "pistes": "size + altitude: >=120 km = 2 pts, >=50 km = 1, top >=2900 m = +1; HIGH >=2, MID 1, LOW 0",
+  "snow": "projected depth at the start date (P50): HIGH >=120 cm, MID >=60 cm, LOW below"
+ },
+ "explainer": "Snow at the start date = snow now at the resort + 40 % of the ensemble members' snowfall (ECMWF and GFS ensembles to their horizon) + the change the past winters show from that horizon to the date. Likely range = 20th-80th percentile of the scenarios. Prices: day pass from the resort shop; night and food are estimates. Multi-day passes and early bookings are often cheaper than the figures here.",
+ "notes": [
+  "night_eur and food_day_eur are estimates per person (sharing a room / apartment)",
+  "pass = ski days x adult day pass; multi-day passes are usually cheaper",
+  "budget_eur is the whole party's budget; left_eur compares it with party_total_eur"
+ ],
+ "static": true
+}

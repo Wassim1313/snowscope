@@ -1,0 +1,824 @@
+{
+ "region": "CA_WEST",
+ "label": "Western Canada",
+ "start": "2026-12-19",
+ "end": "2026-12-26",
+ "nights": 7,
+ "ski_days": 6,
+ "food_days": 7,
+ "party": 1,
+ "budget_eur": 1000.0,
+ "currency": "EUR",
+ "fx": {
+  "date": "2026-11-18",
+  "source": "frankfurter.app",
+  "rate": null
+ },
+ "priority": [
+  "MONEY",
+  "SNOW"
+ ],
+ "snow_day0": "2026-11-19",
+ "snow_stale": false,
+ "projection": true,
+ "travel": null,
+ "resorts": [
+  {
+   "slug": "big_white_ski_resort",
+   "label": "Big White",
+   "country": "CA",
+   "area": "BC",
+   "lat": 49.73585,
+   "lon": -118.94868,
+   "top_m": 2271,
+   "base_m": 1512,
+   "km": 96.0,
+   "lifts": 16,
+   "opens": "2026-11-26",
+   "pass_day_eur": 120.46,
+   "pass_day_local": {
+    "ccy": "CAD",
+    "holiday": 189.0,
+    "regular": 124.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day online; resort's own peak-season window is Dec 19 2026-Jan 3 2027 at 189 CAD, regular = online weekday rate outside peak (independent resort, not Epic/Ikon)",
+   "pass_src": "https://www.bigwhite.com/tickets-passes/lift-tickets",
+   "night_eur": 76.48,
+   "food_day_eur": 44.61,
+   "stay_src": "estimate: Big White is mostly ski-in/ski-out condos; typical holiday-week condo/hotel rate split per person plus on-mountain lunch and village meals",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 100,
+    "start": {
+     "cm": 115,
+     "p20": 110,
+     "p50": 115,
+     "p80": 130,
+     "p_ge50": 1.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 85,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 21,
+       "p50_cm": 125
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 32,
+       "snowfall_p50_cm": 22,
+       "p50_cm": 110
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 723,
+    "hotel_eur": 535,
+    "food_eur": 312,
+    "total_eur": 1570,
+    "party_total_eur": 1570,
+    "left_eur": -570,
+    "need_eur": 570,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "MID"
+   },
+   "value_cm_per_eur": 0.95,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,570 EUR per person",
+    "day pass 120 EUR"
+   ],
+   "score": 66.9,
+   "score_parts": {
+    "MONEY": 88,
+    "SNOW": 46
+   },
+   "rank": 1
+  },
+  {
+   "slug": "silver_star_mountain_resort",
+   "label": "SilverStar",
+   "country": "CA",
+   "area": "BC",
+   "lat": 50.36573,
+   "lon": -119.05158,
+   "top_m": 1886,
+   "base_m": 1146,
+   "km": 111.0,
+   "lifts": 11,
+   "opens": "2026-11-27",
+   "pass_day_eur": 111.54,
+   "pass_day_local": {
+    "ccy": "CAD",
+    "holiday": 175.0,
+    "regular": 145.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day; 145 CAD weekday / 175 CAD weekend online rates are the clearest published figures, used here as regular/holiday proxies respectively (some early-bird advance specials as low as 109-129 CAD were also seen but are not representative of the holiday window); independent resort",
+   "pass_src": "https://www.onthesnow.com/british-columbia/silver-star/lift-tickets",
+   "night_eur": 73.3,
+   "food_day_eur": 44.61,
+   "stay_src": "estimate: SilverStar's colourful ski-in/ski-out village condo/hotel holiday-week rate split per person, plus on-mountain lunch and village meals",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 75,
+    "start": {
+     "cm": 85,
+     "p20": 80,
+     "p50": 85,
+     "p80": 95,
+     "p_ge50": 1.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 35,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 8,
+       "p50_cm": 90
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 32,
+       "snowfall_p50_cm": 17,
+       "p50_cm": 85
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 669,
+    "hotel_eur": 513,
+    "food_eur": 312,
+    "total_eur": 1494,
+    "party_total_eur": 1494,
+    "left_eur": -494,
+    "need_eur": 494,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "MID"
+   },
+   "value_cm_per_eur": 0.76,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,494 EUR per person",
+    "~85 cm at the start",
+    "day pass 112 EUR"
+   ],
+   "score": 64.1,
+   "score_parts": {
+    "MONEY": 98,
+    "SNOW": 31
+   },
+   "rank": 2
+  },
+  {
+   "slug": "kicking_horse_resort",
+   "label": "Kicking Horse",
+   "country": "CA",
+   "area": "BC",
+   "lat": 51.28686,
+   "lon": -117.0724,
+   "top_m": 2424,
+   "base_m": 1262,
+   "km": 46.0,
+   "lifts": 5,
+   "opens": "2026-12-11",
+   "pass_day_eur": 126.83,
+   "pass_day_local": {
+    "ccy": "CAD",
+    "holiday": 199.0,
+    "regular": 185.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "regular = adult weekday online day pass as listed by aggregator (185 CAD); holiday figure is an estimate (+~15 CAD typical peak uplift) since no separate published holiday-period price was found, independent resort",
+   "pass_src": "https://www.onthesnow.com/british-columbia/kicking-horse/lift-tickets",
+   "night_eur": 60.55,
+   "food_day_eur": 41.43,
+   "stay_src": "estimate: Golden/Kicking Horse base-area lodging is cheaper than Whistler/Banff tier; holiday-week hotel/condo rate split per person, plus simple on-mountain and town meals",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 20,
+    "start": {
+     "cm": 40,
+     "p20": 30,
+     "p50": 40,
+     "p80": 50,
+     "p_ge50": 0.21,
+     "basis": "ensemble+climatology",
+     "normal_cm": 100,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 11,
+       "p50_cm": 45
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 32,
+       "snowfall_p50_cm": 30,
+       "p50_cm": 35
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 761,
+    "hotel_eur": 424,
+    "food_eur": 290,
+    "total_eur": 1475,
+    "party_total_eur": 1475,
+    "left_eur": -475,
+    "need_eur": 475,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "LOW",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.32,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,475 EUR per person",
+    "only 46 km of pistes",
+    "~40 cm at the start"
+   ],
+   "score": 53.8,
+   "score_parts": {
+    "MONEY": 100,
+    "SNOW": 8
+   },
+   "rank": 3
+  },
+  {
+   "slug": "fernie_alpine_resort",
+   "label": "Fernie",
+   "country": "CA",
+   "area": "BC",
+   "lat": 49.45626,
+   "lon": -115.10221,
+   "top_m": 2097,
+   "base_m": 1059,
+   "km": 82.0,
+   "lifts": 10,
+   "opens": "2026-12-05",
+   "pass_day_eur": 120.46,
+   "pass_day_local": {
+    "ccy": "CAD",
+    "holiday": 189.0,
+    "regular": 175.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day online, dynamic pricing (published range ~175-189 CAD); Resorts of the Canadian Rockies (RCR) property, sister resort to Kimberley",
+   "pass_src": "https://www.onthesnow.com/british-columbia/fernie-alpine/lift-tickets",
+   "night_eur": 70.11,
+   "food_day_eur": 41.43,
+   "stay_src": "estimate: based on booking-site average 3-4 star Fernie hotel rates (~178-223 CAD/night double off-peak per search), scaled up for Christmas-week demand and split per person, plus simple on-mountain and town meals",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 20,
+    "start": {
+     "cm": 35,
+     "p20": 35,
+     "p50": 35,
+     "p80": 50,
+     "p_ge50": 0.2,
+     "basis": "ensemble+climatology",
+     "normal_cm": 80,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 16,
+       "p50_cm": 45
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 32,
+       "snowfall_p50_cm": 38,
+       "p50_cm": 35
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 723,
+    "hotel_eur": 491,
+    "food_eur": 290,
+    "total_eur": 1504,
+    "party_total_eur": 1504,
+    "left_eur": -504,
+    "need_eur": 504,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.29,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,504 EUR per person",
+    "~35 cm at the start",
+    "day pass 120 EUR"
+   ],
+   "score": 50.7,
+   "score_parts": {
+    "MONEY": 96,
+    "SNOW": 5
+   },
+   "rank": 4
+  },
+  {
+   "slug": "revelstoke",
+   "label": "Revelstoke",
+   "country": "CA",
+   "area": "BC",
+   "lat": 50.96308,
+   "lon": -118.119,
+   "top_m": 2224,
+   "base_m": 514,
+   "km": 84.0,
+   "lifts": 7,
+   "opens": "2026-12-05",
+   "pass_day_eur": 140.22,
+   "pass_day_local": {
+    "ccy": "CAD",
+    "holiday": 220.0,
+    "regular": 199.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day online; official tiers are Nov 28-Dec 23 2026 & Mar 15-Apr 11 2027 at 199 CAD vs Dec 24 2026-Mar 14 2027 at 220 CAD, so holiday and mid-Jan regular season both fall in the 220 CAD tier on the resort's own calendar; regular figure here is set slightly lower as an estimate since no separate mid-Jan discount is published, independent resort",
+   "pass_src": "https://www.revelstokemountainresort.com/tickets-passes/winter-tickets/",
+   "night_eur": 73.3,
+   "food_day_eur": 44.61,
+   "stay_src": "estimate: Revelstoke town/base hotel and condo holiday-week rates split per person, plus on-mountain lunch and town meals",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 45,
+    "start": {
+     "cm": 75,
+     "p20": 60,
+     "p50": 75,
+     "p80": 90,
+     "p_ge50": 0.97,
+     "basis": "ensemble+climatology",
+     "normal_cm": 150,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 28,
+       "p50_cm": 80
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 32,
+       "snowfall_p50_cm": 66,
+       "p50_cm": 70
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 841,
+    "hotel_eur": 513,
+    "food_eur": 312,
+    "total_eur": 1666,
+    "party_total_eur": 1666,
+    "left_eur": -666,
+    "need_eur": 666,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "MID"
+   },
+   "value_cm_per_eur": 0.53,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,666 EUR per person",
+    "~75 cm at the start",
+    "day pass 140 EUR"
+   ],
+   "score": 50.3,
+   "score_parts": {
+    "MONEY": 75,
+    "SNOW": 26
+   },
+   "rank": 5
+  },
+  {
+   "slug": "whistler",
+   "label": "Whistler Blackcomb",
+   "country": "CA",
+   "area": "British Columbia",
+   "lat": 50.08882,
+   "lon": -122.94191,
+   "top_m": 2259,
+   "base_m": 653,
+   "km": 299.0,
+   "lifts": 36,
+   "opens": "2026-11-20",
+   "pass_day_eur": 168.9,
+   "pass_day_local": {
+    "ccy": "CAD",
+    "holiday": 265.0,
+    "regular": 219.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day, dynamic online pricing (Vail/Epic property); holiday = late-Dec/New-Year window, regular = mid-Jan weekday",
+   "pass_src": "https://www.onthesnow.com/british-columbia/whistler-blackcomb/lift-tickets",
+   "night_eur": 121.1,
+   "food_day_eur": 54.17,
+   "stay_src": "estimate: based on booking-site holiday-week rates for Whistler Village (hotels commonly $300-600+ CAD/night double during Christmas week) split per person, plus ~25-35 CAD on-mountain lunch and typical village breakfast/dinner costs",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 135,
+    "start": {
+     "cm": 220,
+     "p20": 195,
+     "p50": 220,
+     "p80": 265,
+     "p_ge50": 1.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 250,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 84,
+       "p50_cm": 225
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 32,
+       "snowfall_p50_cm": 204,
+       "p50_cm": 220
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 1013,
+    "hotel_eur": 848,
+    "food_eur": 379,
+    "total_eur": 2240,
+    "party_total_eur": 2240,
+    "left_eur": -1240,
+    "need_eur": 1240,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "HIGH",
+    "pistes": "HIGH",
+    "snow": "HIGH"
+   },
+   "value_cm_per_eur": 1.3,
+   "pros": [
+    "~220 cm at the start",
+    "299 km of pistes",
+    "36 lifts"
+   ],
+   "cons": [
+    "2,240 EUR per person",
+    "nights from 121 EUR per person",
+    "day pass 169 EUR"
+   ],
+   "score": 50.0,
+   "score_parts": {
+    "MONEY": 0,
+    "SNOW": 100
+   },
+   "rank": 6
+  },
+  {
+   "slug": "sun_peaks_resort",
+   "label": "Sun Peaks",
+   "country": "CA",
+   "area": "BC",
+   "lat": 50.89015,
+   "lon": -119.8946,
+   "top_m": 2087,
+   "base_m": 1200,
+   "km": 156.0,
+   "lifts": 13,
+   "opens": "2026-11-21",
+   "pass_day_eur": 126.83,
+   "pass_day_local": {
+    "ccy": "CAD",
+    "holiday": 199.0,
+    "regular": 149.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day, dynamic online pricing (published range ~124-209 CAD); holiday figure estimated near the top of that range since Dec 26-30 is a published Ikon-pass blackout (high-demand) period, independent resort",
+   "pass_src": "https://www.sunpeaksresort.com/ski-ride/tickets-passes/compare-ticket-pass-options",
+   "night_eur": 79.67,
+   "food_day_eur": 44.61,
+   "stay_src": "estimate: based on general Sun Peaks village condo/hotel holiday-week pricing tier, similar to Big White, plus on-mountain lunch and village meals",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 45,
+    "start": {
+     "cm": 55,
+     "p20": 50,
+     "p50": 55,
+     "p80": 70,
+     "p_ge50": 0.71,
+     "basis": "ensemble+climatology",
+     "normal_cm": 65,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 15,
+       "p50_cm": 65
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 32,
+       "snowfall_p50_cm": 16,
+       "p50_cm": 50
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 761,
+    "hotel_eur": 558,
+    "food_eur": 312,
+    "total_eur": 1631,
+    "party_total_eur": 1631,
+    "left_eur": -631,
+    "need_eur": 631,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "HIGH",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.43,
+   "pros": [
+    "156 km of pistes"
+   ],
+   "cons": [
+    "1,631 EUR per person",
+    "~55 cm at the start",
+    "day pass 127 EUR"
+   ],
+   "score": 47.5,
+   "score_parts": {
+    "MONEY": 80,
+    "SNOW": 15
+   },
+   "rank": 7
+  },
+  {
+   "slug": "banff_sunshine_village",
+   "label": "Banff Sunshine",
+   "country": "CA",
+   "area": "Alberta",
+   "lat": 51.08739,
+   "lon": -115.77001,
+   "top_m": 2686,
+   "base_m": 1661,
+   "km": 77.0,
+   "lifts": 14,
+   "opens": "2026-11-06",
+   "pass_day_eur": 120.46,
+   "pass_day_local": {
+    "ccy": "CAD",
+    "holiday": 189.0,
+    "regular": 179.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day online/mobile ticket; aggregator-sourced since official skibanff.com pricing page did not expose numbers directly; independent resort, part of the SkiBig3 trio with Lake Louise and Mt Norquay",
+   "pass_src": "https://skiliftticketprices.com/sunshine-lift-ticket-prices/",
+   "night_eur": 101.98,
+   "food_day_eur": 50.99,
+   "stay_src": "estimate: based on staying in the town of Banff during Christmas week (higher-tier mountain-town pricing, though below Lake Louise's in-park hotels), per-person share of a double room plus on-mountain and Banff-town meals",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 20,
+    "start": {
+     "cm": 35,
+     "p20": 25,
+     "p50": 35,
+     "p80": 40,
+     "p_ge50": 0.07,
+     "basis": "ensemble+climatology",
+     "normal_cm": 80,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 8,
+       "p50_cm": 40
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 32,
+       "snowfall_p50_cm": 24,
+       "p50_cm": 30
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 723,
+    "hotel_eur": 714,
+    "food_eur": 357,
+    "total_eur": 1794,
+    "party_total_eur": 1794,
+    "left_eur": -794,
+    "need_eur": 794,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.29,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,794 EUR per person",
+    "~35 cm at the start",
+    "day pass 120 EUR"
+   ],
+   "score": 31.7,
+   "score_parts": {
+    "MONEY": 58,
+    "SNOW": 5
+   },
+   "rank": 8
+  },
+  {
+   "slug": "lake_louise",
+   "label": "Lake Louise",
+   "country": "CA",
+   "area": "Alberta",
+   "lat": 51.45264,
+   "lon": -116.13103,
+   "top_m": 2643,
+   "base_m": 1647,
+   "km": 81.0,
+   "lifts": 13,
+   "opens": "2026-11-06",
+   "pass_day_eur": 117.91,
+   "pass_day_local": {
+    "ccy": "CAD",
+    "holiday": 185.0,
+    "regular": 160.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day online, dynamic pricing (published range ~160-185 CAD, excl. 5% GST); independent resort, part of the SkiBig3 trio with Banff Sunshine and Mt Norquay",
+   "pass_src": "https://www.onthesnow.com/alberta/lake-louise/lift-tickets",
+   "night_eur": 114.72,
+   "food_day_eur": 54.17,
+   "stay_src": "estimate: Banff/Lake Louise National Park lodging (Fairmont Chateau Lake Louise and similar) runs well above typical BC resort towns during Christmas week; per-person share of a double room plus on-mountain and Banff-area meals",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 15,
+    "start": {
+     "cm": 25,
+     "p20": 20,
+     "p50": 25,
+     "p80": 35,
+     "p_ge50": 0.02,
+     "basis": "ensemble+climatology",
+     "normal_cm": 75,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 10,
+       "p50_cm": 35
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 32,
+       "snowfall_p50_cm": 11,
+       "p50_cm": 20
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 707,
+    "hotel_eur": 803,
+    "food_eur": 379,
+    "total_eur": 1889,
+    "party_total_eur": 1889,
+    "left_eur": -889,
+    "need_eur": 889,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.21,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,889 EUR per person",
+    "~25 cm at the start",
+    "day pass 118 EUR"
+   ],
+   "score": 22.9,
+   "score_parts": {
+    "MONEY": 46,
+    "SNOW": 0
+   },
+   "rank": 9
+  }
+ ],
+ "tiers": {
+  "pass": "LOW < 45 EUR <= MID <= 65 EUR < HIGH (adult day pass, EUR)",
+  "hotel": "LOW < 60 EUR <= MID <= 120 EUR < HIGH (per person per night sharing, estimate)",
+  "pistes": "size + altitude: >=120 km = 2 pts, >=50 km = 1, top >=2900 m = +1; HIGH >=2, MID 1, LOW 0",
+  "snow": "projected depth at the start date (P50): HIGH >=120 cm, MID >=60 cm, LOW below"
+ },
+ "explainer": "Snow at the start date = snow now at the resort + 40 % of the ensemble members' snowfall (ECMWF and GFS ensembles to their horizon) + the change the past winters show from that horizon to the date. Likely range = 20th-80th percentile of the scenarios. Prices: day pass from the resort shop; night and food are estimates. Multi-day passes and early bookings are often cheaper than the figures here.",
+ "notes": [
+  "night_eur and food_day_eur are estimates per person (sharing a room / apartment)",
+  "pass = ski days x adult day pass; multi-day passes are usually cheaper",
+  "budget_eur is the whole party's budget; left_eur compares it with party_total_eur"
+ ],
+ "static": true
+}
