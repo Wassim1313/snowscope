@@ -1,0 +1,602 @@
+{
+ "id": "2026-11-19-europe-country_at",
+ "slug": "austria-snow-on-the-way-19-november-2026",
+ "date": "2026-11-19",
+ "published_utc": "2026-11-19T12:38:03Z",
+ "updated_utc": "2026-11-19T12:38:03Z",
+ "region": "EUROPE",
+ "angle": "country_at",
+ "score": 107.7,
+ "signature": "AT:25250:19:55",
+ "keyword": {
+  "family": "country-report",
+  "entity": "europe",
+  "region": "EUROPE",
+  "date": "2026-11-19"
+ },
+ "tags": [],
+ "facts": {
+  "angle": "country_at",
+  "date": "2026-11-19",
+  "country": "Austria",
+  "country_code": "AT",
+  "region": "Europe by country",
+  "quiet": false,
+  "modelled_km2": 52110,
+  "snow_km2_today": 25250,
+  "snow_km2_yesterday": 19360,
+  "snow_km2_7_days_ago": 15960,
+  "new_cm_24h_max": 11,
+  "new_cm_72h_max": 19,
+  "area_km2_5cm_new_72h": 17980,
+  "next_3_days_max_cm": 34,
+  "next_7_days_max_cm": 55,
+  "snowiest_day": "2026-11-23",
+  "snowiest_day_cm": 15,
+  "first_snow_day": "2026-11-20",
+  "hotspots": [
+   {
+    "name": "Carinthia",
+    "new_cm_72h": 31,
+    "lat": 46.441,
+    "lon": 14.214
+   },
+   {
+    "name": "Vorarlberg",
+    "new_cm_72h": 28,
+    "lat": 47.305,
+    "lon": 9.828
+   },
+   {
+    "name": "the Ötztal Alps",
+    "new_cm_72h": 25,
+    "lat": 46.887,
+    "lon": 10.865
+   }
+  ],
+  "bands": [
+   {
+    "from_m": 500,
+    "to_m": 1000,
+    "mean_depth_cm": 0,
+    "snow_cover_pct": 2
+   },
+   {
+    "from_m": 1000,
+    "to_m": 1500,
+    "mean_depth_cm": 1,
+    "snow_cover_pct": 46
+   },
+   {
+    "from_m": 1500,
+    "to_m": 2000,
+    "mean_depth_cm": 6,
+    "snow_cover_pct": 100
+   },
+   {
+    "from_m": 2000,
+    "to_m": 2500,
+    "mean_depth_cm": 15,
+    "snow_cover_pct": 100
+   },
+   {
+    "from_m": 2500,
+    "to_m": 5000,
+    "mean_depth_cm": 27,
+    "snow_cover_pct": 100
+   }
+  ],
+  "snow_line_m": 1300,
+  "change_vs_yesterday_km2": 5890,
+  "white_share_pct": 48,
+  "change_vs_7_days_km2": 9290,
+  "resorts": [
+   {
+    "name": "Stubaier Gletscher",
+    "slug": "stubaier_gletscher",
+    "depth_cm": 74,
+    "new_cm_72h": 16,
+    "next_3_days_cm": 15,
+    "top_m": 3208
+   },
+   {
+    "name": "Pitztaler Gletscher",
+    "slug": "pitztaler_gletscher",
+    "depth_cm": 64,
+    "new_cm_72h": 18,
+    "next_3_days_cm": 17,
+    "top_m": 3424
+   },
+   {
+    "name": "Kaunertaler Gletscher",
+    "slug": "kaunertaler_gletscher",
+    "depth_cm": 54,
+    "new_cm_72h": 17,
+    "next_3_days_cm": 16,
+    "top_m": 3107
+   },
+   {
+    "name": "Axamer Lizum",
+    "slug": "axamer_lizum_muttereralm",
+    "depth_cm": 54,
+    "new_cm_72h": 11,
+    "next_3_days_cm": 12,
+    "top_m": 2334
+   },
+   {
+    "name": "Kaprun",
+    "slug": "kaprun_kitzsteinhorn_maiskogel",
+    "depth_cm": 52,
+    "new_cm_72h": 10,
+    "next_3_days_cm": 8,
+    "top_m": 3024
+   }
+  ],
+  "n_resorts": 278,
+  "n_resorts_with_snow": 223,
+  "resort_next_until": "2026-11-22",
+  "outlook": null,
+  "week2": {
+   "week1_max_cm": 38,
+   "week2_max_cm": 15,
+   "week2_days": [
+    "2026-11-27",
+    "2026-12-03"
+   ],
+   "from_day": 8,
+   "to_day": 14
+  },
+  "trend": [
+   {
+    "date": "2026-11-16",
+    "snow_km2": 19550,
+    "new72": 4,
+    "leader": "Kaprun",
+    "leader_cm": 83
+   },
+   {
+    "date": "2026-11-17",
+    "snow_km2": 17500,
+    "new72": 6,
+    "leader": "Kaprun",
+    "leader_cm": 66
+   },
+   {
+    "date": "2026-11-18",
+    "snow_km2": 18140,
+    "new72": 14,
+    "leader": "Stubaier Gletscher",
+    "leader_cm": 72
+   },
+   {
+    "date": "2026-11-19",
+    "snow_km2": 25250,
+    "new72": 19,
+    "leader": "Stubaier Gletscher",
+    "leader_cm": 74
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Stubaier Gletscher",
+     "slug": "stubaier_gletscher",
+     "now_cm": 30,
+     "usual_cm": 45,
+     "high_cm": 82,
+     "week_ago_cm": 23,
+     "height_m": 2450,
+     "best_weeks": [
+      13,
+      14,
+      10
+     ],
+     "ratio_pct": 67
+    },
+    {
+     "name": "Pitztaler Gletscher",
+     "slug": "pitztaler_gletscher",
+     "now_cm": 53,
+     "usual_cm": 46,
+     "high_cm": 89,
+     "week_ago_cm": 38,
+     "height_m": 2576,
+     "best_weeks": [
+      10,
+      9,
+      11
+     ],
+     "ratio_pct": 115
+    },
+    {
+     "name": "Kaunertaler Gletscher",
+     "slug": "kaunertaler_gletscher",
+     "now_cm": 33,
+     "usual_cm": 810,
+     "high_cm": 836,
+     "week_ago_cm": 23,
+     "height_m": 2641,
+     "best_weeks": [
+      11,
+      12,
+      9
+     ],
+     "ratio_pct": 4
+    },
+    {
+     "name": "Axamer Lizum",
+     "slug": "axamer_lizum_muttereralm",
+     "now_cm": 5,
+     "usual_cm": 14,
+     "high_cm": 29,
+     "week_ago_cm": 2,
+     "height_m": 1613,
+     "best_weeks": [
+      9,
+      10,
+      8
+     ],
+     "ratio_pct": 36
+    },
+    {
+     "name": "Kaprun",
+     "slug": "kaprun_kitzsteinhorn_maiskogel",
+     "now_cm": 20,
+     "usual_cm": 22,
+     "high_cm": 45,
+     "week_ago_cm": 13,
+     "height_m": 1894,
+     "best_weeks": [
+      10,
+      9,
+      12
+     ],
+     "ratio_pct": 91
+    }
+   ],
+   "n": 5,
+   "above": 1,
+   "median_pct": 67
+  },
+  "neighbours": [
+   {
+    "cc": "CH",
+    "name": "Switzerland",
+    "white_share_pct": 59,
+    "leader": "Glacier 3000",
+    "leader_cm": 60,
+    "next_7_days_max_cm": 125
+   },
+   {
+    "cc": "DE",
+    "name": "Germany",
+    "white_share_pct": 4,
+    "leader": "Zugspitze",
+    "leader_cm": 36,
+    "next_7_days_max_cm": 38
+   }
+  ],
+  "glacier": true,
+  "story": {
+   "id": "storm_next",
+   "place": "cc:AT",
+   "score": 66.3,
+   "day": "2026-11-23"
+  }
+ },
+ "media": [
+  {
+   "id": "new",
+   "kind": "new_map",
+   "file": "blog/media/2026/11/austria-snow-on-the-way-19-november-2026/new.webp",
+   "thumb": "blog/media/2026/11/austria-snow-on-the-way-19-november-2026/new_t.webp",
+   "bytes": 38014,
+   "snow_frac": 0.194,
+   "weak": false
+  },
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/austria-snow-on-the-way-19-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/austria-snow-on-the-way-19-november-2026/map_t.webp",
+   "bytes": 36666,
+   "snow_frac": 0.3945,
+   "weak": false
+  },
+  {
+   "id": "story",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg viewBox=\"0 0 640 240\" role=\"img\" aria-label=\"White area in Austria, day by day\" style=\"width:100%;height:auto;font:12px Inter,sans-serif\"><rect x=\"62.6\" y=\"63.5\" width=\"85.8\" height=\"142.5\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"105.5\" y=\"57.5\" text-anchor=\"middle\" fill=\"currentColor\">19,550</text><text x=\"105.5\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">16</text><rect x=\"205.6\" y=\"78.5\" width=\"85.8\" height=\"127.5\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"248.5\" y=\"72.5\" text-anchor=\"middle\" fill=\"currentColor\">17,500</text><text x=\"248.5\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">17</text><rect x=\"348.6\" y=\"73.8\" width=\"85.8\" height=\"132.2\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"391.5\" y=\"67.8\" text-anchor=\"middle\" fill=\"currentColor\">18,140</text><text x=\"391.5\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">18</text><rect x=\"491.6\" y=\"22.0\" width=\"85.8\" height=\"184.0\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"534.5\" y=\"16.0\" text-anchor=\"middle\" fill=\"currentColor\">25,250</text><text x=\"534.5\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">19</text><line x1=\"34\" x2=\"606\" y1=\"206\" y2=\"206\" stroke=\"currentColor\" stroke-opacity=\".3\"/></svg>",
+    "de": "<svg viewBox=\"0 0 640 240\" role=\"img\" aria-label=\"Weiße Fläche in Österreich, Tag für Tag\" style=\"width:100%;height:auto;font:12px Inter,sans-serif\"><rect x=\"62.6\" y=\"63.5\" width=\"85.8\" height=\"142.5\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"105.5\" y=\"57.5\" text-anchor=\"middle\" fill=\"currentColor\">19,550</text><text x=\"105.5\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">16</text><rect x=\"205.6\" y=\"78.5\" width=\"85.8\" height=\"127.5\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"248.5\" y=\"72.5\" text-anchor=\"middle\" fill=\"currentColor\">17,500</text><text x=\"248.5\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">17</text><rect x=\"348.6\" y=\"73.8\" width=\"85.8\" height=\"132.2\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"391.5\" y=\"67.8\" text-anchor=\"middle\" fill=\"currentColor\">18,140</text><text x=\"391.5\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">18</text><rect x=\"491.6\" y=\"22.0\" width=\"85.8\" height=\"184.0\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"534.5\" y=\"16.0\" text-anchor=\"middle\" fill=\"currentColor\">25,250</text><text x=\"534.5\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">19</text><line x1=\"34\" x2=\"606\" y1=\"206\" y2=\"206\" stroke=\"currentColor\" stroke-opacity=\".3\"/></svg>"
+   },
+   "cap": {
+    "en": "White area in Austria, day by day",
+    "de": "Weiße Fläche in Österreich, Tag für Tag"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Austria set for major snow event: 55 cm possible within seven days",
+   "description": "Austria's snow cover jumped to 48 percent this week. A significant storm arrives 23 November, with up to 55 cm forecast over the next week.",
+   "lede": "Austria gained nearly 6,000 km2 of snow cover in one day as a storm system moved in. The week ahead looks decisive: 55 cm is possible at high elevations, with 15 cm falling on 23 November alone.",
+   "sections": [
+    {
+     "h": "Major snow arriving this week",
+     "p": [
+      "A storm is heading for the Alps. Our model shows Austria could see up to 55 cm of new snow in the next seven days, with the heaviest fall on 23 November when 15 cm is forecast. The three days from now until 22 November could bring 34 cm to the highest peaks.",
+      "This is the turning point in the season. Right now, 48 percent of Austria's modelled ski area is white, up from 30 percent just seven days ago. Snow has jumped from 16,000 km2 to 25,250 km2 in that time, the fastest gain in recent weeks."
+     ]
+    },
+    {
+     "h": "Where the snow is falling hardest",
+     "p": [
+      "Three regions are leading the accumulation. Carinthia has picked up 31 cm in the last three days, Vorarlberg 28 cm, and the Ötztal Alps 25 cm. These are the zones where the model is most confident about fresh snow through the week.",
+      "The glacier resorts in Tyrol are catching the best of it. Stubaier Gletscher holds 74 cm now after 16 cm in the last three days, while Pitztaler Gletscher sits at 64 cm. Both should gain another 15 to 17 cm in the next three days."
+     ]
+    },
+    {
+     "h": "Height matters now",
+     "p": [
+      "The snow line today sits at 1,300 m, still low for mid-November. Above 2,000 m, our model shows full coverage and depths of 15 cm at 2,000 to 2,500 m, rising to 27 cm above 2,500 m. The higher you go, the deeper the snow.",
+      "Below 1,500 m, coverage is thin and patchy. Only 46 percent of the band from 1,000 to 1,500 m has snow, with an average of just 1 cm. Any skiing below 1,200 m depends on a base laid down in the next few days or on a resort maintaining it artificially."
+     ]
+    },
+    {
+     "h": "How this week compares to recent days",
+     "p": [
+      "Yesterday alone added 5,890 km2 of snow cover—a jump we have not seen in weeks. The 72-hour total of 19 cm is the peak we have modelled so far this season. This is not a steady climb; it is a step change.",
+      "Four days ago, Kaprun led with 83 cm. Today, Stubaier Gletscher has taken the top spot at 74 cm. The glacier resorts are sorting themselves by altitude and location as this storm system beds in. Watch the highest peaks: they are where the gains will keep coming."
+     ]
+    },
+    {
+     "h": "What comes after the storm",
+     "p": [
+      "The first week of December looks quieter. Our model forecasts a maximum of 15 cm in the period 27 November to 3 December, a sharp drop from this week's intensity. The main event is now, not later."
+     ]
+    },
+    {
+     "h": "Glaciers versus lower resorts",
+     "p": [
+      "The gap between the glaciers and the lower valleys is widening. Stubaier Gletscher at 3,208 m is 20 cm deeper than Axamer Lizum at 2,334 m, even though Axamer Lizum is in the same region. By 22 November, that gap will grow. If you are choosing where to ski in the next week, altitude is your best friend."
+     ]
+    }
+   ],
+   "advice": [
+    "Aim for elevations above 2,000 m in the next three days. The model shows full snow cover and depths that will improve daily. Glaciers and high peaks are your safest bet.",
+    "Watch 23 November closely. That is when the heaviest single snowfall is forecast—15 cm. Plan your timing around that date if you can.",
+    "Carinthia, Vorarlberg, and the Ötztal Alps are receiving the most snow. If you have flexibility, these regions are tracking ahead of the Austrian average.",
+    "Before heading off-piste, check the official avalanche bulletin. Fresh snow of this scale always raises the question of stability. Early-season snow on thin ground can slide.",
+    "Lower elevations are still marginal. Below 1,500 m, do not assume there will be enough to ski on. The thaw line at 1,300 m will shift up only slowly as the week progresses."
+   ],
+   "captions": {
+    "new": "New snow in the last 72 hours across Austria, showing 19 cm maximum. Carinthia, Vorarlberg, and the Ötztal Alps in the lead. Data from 19 November.",
+    "map": "Snow cover in Austria on 19 November: 48 percent of the ski area is white, with 25,250 km2 covered. Full coverage above 2,000 m; patchy coverage below 1,500 m. The snow line runs at 1,300 m.",
+    "story": "White area in Austria, day by day"
+   }
+  },
+  "de": {
+   "title": "Österreich steht vor großem Schneefall: 55 cm möglich in sieben Tagen",
+   "description": "Österreichs Schneedecke ist diese Woche auf 48 Prozent angewachsen. Ein bedeutender Sturm kommt am 23. November, mit bis zu 55 cm Neuschnee in der kommenden Woche.",
+   "lede": "Österreich gewann an einem Tag fast 6.000 km² Schneebedeckung, als ein Sturmsystem durchzog. Die kommende Woche sieht entscheidend aus: 55 cm sind auf höheren Lagen möglich, mit 15 cm, die allein am 23. November fallen.",
+   "sections": [
+    {
+     "h": "Großer Schneefall kommt diese Woche",
+     "p": [
+      "Ein Sturm steuert auf die Alpen zu. Unser Modell zeigt, dass Österreich in den nächsten sieben Tagen bis zu 55 cm Neuschnee bekommen könnte, mit dem stärksten Schneefall am 23. November, wenn 15 cm vorhergesagt sind. Die drei Tage von jetzt bis 22. November könnten auf den höchsten Gipfeln 34 cm bringen.",
+      "Dies ist der Wendepunkt der Saison. Derzeit ist 48 Prozent der modellierten Skigebiete Österreichs weiß, gegenüber 30 Prozent noch vor einer Woche. Der Schnee ist in dieser Zeit von 16.000 km² auf 25.250 km² angewachsen – der schnellste Zuwachs in den letzten Wochen."
+     ]
+    },
+    {
+     "h": "Wo der Schnee am stärksten fällt",
+     "p": [
+      "Drei Regionen führen die Schneeakkumulation an. Kärnten hat in den letzten drei Tagen 31 cm erhalten, Vorarlberg 28 cm und die Ötztal-Alpen 25 cm. Dies sind die Zonen, in denen sich das Modell beim Neuschnee über die Woche am sichersten ist.",
+      "Die Gletschergebiete in Tirol bekommen das Beste davon ab. Der Stubaier Gletscher hat jetzt 74 cm nach 16 cm in den letzten drei Tagen, während der Pitztaler Gletscher bei 64 cm liegt. Beide sollten in den nächsten drei Tagen noch 15 bis 17 cm zulegen."
+     ]
+    },
+    {
+     "h": "Die Höhe zählt jetzt",
+     "p": [
+      "Die Schneegrenze liegt heute bei 1.300 m, noch niedrig für Mitte November. Über 2.000 m zeigt unser Modell volle Bedeckung und Tiefen von 15 cm bei 2.000 bis 2.500 m, ansteigend auf 27 cm über 2.500 m. Je höher du gehst, desto tiefer der Schnee.",
+      "Unter 1.500 m ist die Bedeckung dünn und fleckig. Nur 46 Prozent der Höhenlage von 1.000 bis 1.500 m haben Schnee, mit durchschnittlich nur 1 cm. Skifahren unter 1.200 m hängt davon ab, dass in den nächsten Tagen eine Basis aufgebaut wird oder dass ein Skigebiet diese künstlich erhält."
+     ]
+    },
+    {
+     "h": "Wie diese Woche mit den letzten Tagen vergleicht",
+     "p": [
+      "Gestern allein kamen 5.890 km² Schneebedeckung hinzu – ein Zuwachs, wie wir ihn seit Wochen nicht gesehen haben. Die 72-Stunden-Summe von 19 cm ist der Peak, den wir bisher in dieser Saison modelliert haben. Dies ist kein stetiger Anstieg; es ist ein Sprung.",
+      "Vor vier Tagen führte Kaprun mit 83 cm. Heute hat der Stubaier Gletscher mit 74 cm die Spitzenposition übernommen. Die Gletschergebiete sortieren sich nach Höhe und Lage, während sich dieses Sturmsystem einnistet. Beobachte die höchsten Gipfel: hier werden die Zuwächse weiterhin stattfinden."
+     ]
+    },
+    {
+     "h": "Was nach dem Sturm kommt",
+     "p": [
+      "Die erste Dezemberwoche sieht ruhiger aus. Unser Modell sagt maximal 15 cm für den Zeitraum 27. November bis 3. Dezember voraus – ein starker Rückgang gegenüber der Intensität dieser Woche. Das Hauptereignis ist jetzt, nicht später."
+     ]
+    },
+    {
+     "h": "Gletscher versus tiefere Skigebiete",
+     "p": [
+      "Der Unterschied zwischen den Gletschern und den tieferen Tälern wächst. Der Stubaier Gletscher auf 3.208 m ist 20 cm tiefer als die Axamer Lizum auf 2.334 m, obwohl die Axamer Lizum in der gleichen Region liegt. Bis 22. November wird sich diese Lücke vergrößern. Wenn du in der nächsten Woche wählen kannst, wo du fahren möchtest, ist die Höhe dein bester Freund."
+     ]
+    }
+   ],
+   "advice": [
+    "Ziele in den nächsten drei Tagen Höhenlagen über 2.000 m an. Das Modell zeigt volle Schneebedeckung und Tiefen, die sich täglich verbessern. Gletscher und hohe Gipfel sind deine sicherste Option.",
+    "Beobachte den 23. November genau. Das ist der Tag, an dem der stärkste einzelne Schneefall vorhergesagt ist – 15 cm. Plane dein Timing um diesen Termin, wenn du kannst.",
+    "Kärnten, Vorarlberg und die Ötztal-Alpen bekommen das meiste Schnee. Wenn du Flexibilität hast, liegen diese Regionen über dem österreichischen Durchschnitt.",
+    "Bevor du abseits der Piste fährst, prüfe den amtlichen Lawinenbericht. Neuschnee in dieser Menge stellt immer die Frage nach der Stabilität. Frühjahrschnee auf dünnem Untergrund kann rutschen.",
+    "Tiefere Lagen sind noch marginal. Unter 1.500 m rechne nicht damit, dass genug zum Skifahren da ist. Die Auftaulinie auf 1.300 m wird sich nur langsam im Laufe der Woche nach oben verschieben."
+   ],
+   "captions": {
+    "new": "Neuschnee in den letzten 72 Stunden in Österreich, zeigt 19 cm Maximum. Kärnten, Vorarlberg und die Ötztal-Alpen führen an. Daten von 19. November.",
+    "map": "Schneebedeckung in Österreich am 19. November: 48 Prozent des Skigebiets sind weiß, mit 25.250 km² bedeckt. Volle Bedeckung über 2.000 m; fleckige Bedeckung unter 1.500 m. Die Schneegrenze verläuft bei 1.300 m.",
+    "story": "Weiße Fläche in Österreich, Tag für Tag"
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "voice": "sat"
+  },
+  "de": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "voice": "sat"
+  }
+ },
+ "words_en": 502,
+ "indexable": true,
+ "main": {
+  "slug": "stubaier_gletscher",
+  "name": "Stubaier Gletscher",
+  "lat": 46.9916,
+  "lon": 11.1246
+ },
+ "places": [
+  {
+   "name": "Stubaier Gletscher",
+   "lat": 46.9916,
+   "lon": 11.1246
+  },
+  {
+   "name": "Pitztaler Gletscher",
+   "lat": 46.9223,
+   "lon": 10.876
+  },
+  {
+   "name": "Kaunertaler Gletscher",
+   "lat": 46.8657,
+   "lon": 10.7075
+  },
+  {
+   "name": "Axamer Lizum",
+   "lat": 47.1966,
+   "lon": 11.308
+  },
+  {
+   "name": "Kaprun",
+   "lat": 47.2182,
+   "lon": 12.6958
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "stubaier_gletscher",
+   "name": "Stubaier Gletscher"
+  },
+  {
+   "slug": "pitztaler_gletscher",
+   "name": "Pitztaler Gletscher"
+  },
+  {
+   "slug": "kaunertaler_gletscher",
+   "name": "Kaunertaler Gletscher"
+  },
+  {
+   "slug": "axamer_lizum_muttereralm",
+   "name": "Axamer Lizum"
+  },
+  {
+   "slug": "kaprun_kitzsteinhorn_maiskogel",
+   "name": "Kaprun"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "stubaier_gletscher",
+    "name": "Stubaier Gletscher",
+    "depth": 74,
+    "new72": 16,
+    "next": 15,
+    "top_m": 3208
+   },
+   {
+    "slug": "pitztaler_gletscher",
+    "name": "Pitztaler Gletscher",
+    "depth": 64,
+    "new72": 18,
+    "next": 17,
+    "top_m": 3424
+   },
+   {
+    "slug": "kaunertaler_gletscher",
+    "name": "Kaunertaler Gletscher",
+    "depth": 54,
+    "new72": 17,
+    "next": 16,
+    "top_m": 3107
+   },
+   {
+    "slug": "axamer_lizum_muttereralm",
+    "name": "Axamer Lizum",
+    "depth": 54,
+    "new72": 11,
+    "next": 12,
+    "top_m": 2334
+   },
+   {
+    "slug": "kaprun_kitzsteinhorn_maiskogel",
+    "name": "Kaprun",
+    "depth": 52,
+    "new72": 10,
+    "next": 8,
+    "top_m": 3024
+   }
+  ]
+ },
+ "bulletins": [],
+ "trip_day": "",
+ "map_link": "https://snowscope.app/#@46.992,11.125,8.0",
+ "seconds": 0.0,
+ "facts_used": 30,
+ "voice": "sat",
+ "media_ids": [
+  "new",
+  "map"
+ ],
+ "overlap": {
+  "before": 1.6,
+  "after": 1.6,
+  "with": "slovakia-snow-report-17-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.01,
+  "with": "slovakia-snow-report-17-november-2026"
+ },
+ "publish_utc": "2026-11-19T12:38:03Z",
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 665,
+  "overlap": 1.6,
+  "with": "slovakia-snow-report-17-november-2026",
+  "langs_off": [],
+  "score": 131.1,
+  "intent": "cc:AT|storm_next",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "map",
+  "files": {
+   "en": [
+    "blog/media/2026/11/austria-snow-on-the-way-19-november-2026/cover-en.webp",
+    "blog/media/2026/11/austria-snow-on-the-way-19-november-2026/cover-en_t.webp"
+   ],
+   "de": [
+    "blog/media/2026/11/austria-snow-on-the-way-19-november-2026/cover-de.webp",
+    "blog/media/2026/11/austria-snow-on-the-way-19-november-2026/cover-de_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}
