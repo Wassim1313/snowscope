@@ -1,0 +1,19 @@
+/* SnowScope share panel (share.js SSShare.mount) + Hall of Fame pixel bits. Self-contained; the host page (planner /
+   christmas / halloffame) brings site.css and the Press Start 2P font. */
+.ssshare{--ssn:#0B1E4A;--ssg:#FFD23F;display:grid;grid-template-columns:minmax(150px,220px) 1fr;gap:18px;align-items:start;margin:16px 0;padding:16px;border:4px solid var(--ssn);background:#fff;color:var(--ssn);box-shadow:6px 6px 0 var(--ssn);image-rendering:pixelated}
+@media (max-width:560px){.ssshare{grid-template-columns:1fr}.ssshare-prev{max-width:220px;margin:0 auto}}
+.ssshare-prev{position:relative;aspect-ratio:9/16;background:#13295E;border:3px solid var(--ssn);overflow:hidden}
+.ssshare-prev img{display:block;width:100%;height:100%;object-fit:cover;image-rendering:auto}
+.ssshare-wait{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:12px;text-align:center;color:#fff;font-family:"Press Start 2P",ui-monospace,monospace;font-size:9px;line-height:1.6}
+.ssshare-h{margin:0 0 6px;font-family:"Press Start 2P",ui-monospace,monospace;font-weight:400;font-size:13px;line-height:1.5;color:var(--ssn)}
+.ssshare-p{margin:0 0 12px;font-size:14px;line-height:1.45;color:#364152}
+.ssshare-btns{display:flex;flex-wrap:wrap;gap:10px}
+.ssshare-b{min-height:46px;padding:10px 14px;border:3px solid var(--ssn);background:#fff;color:var(--ssn);font-family:"Press Start 2P",ui-monospace,monospace;font-size:9px;line-height:1.4;cursor:pointer;box-shadow:3px 3px 0 var(--ssn);transition:transform .08s,box-shadow .08s;-webkit-tap-highlight-color:transparent}
+.ssshare-b:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ssn)}
+.ssshare-b.main{background:#1E9E5A;color:#fff;border-color:#fff;box-shadow:4px 4px 0 var(--ssn);flex:1 1 100%;font-size:10px;min-height:54px}
+.ssshare-b[disabled]{opacity:.55;cursor:progress}
+.ssshare-status{min-height:18px;margin:10px 0 6px;font-size:13px;color:#1E4FB8}
+.ssshare-cap{width:100%;box-sizing:border-box;border:2px solid #CFE0FF;background:#F4F8FF;color:#13295E;font:13px/1.45 ui-monospace,Menlo,monospace;padding:8px;resize:vertical}
+.ssshare-hall{display:inline-block;margin-top:10px;font-family:"Press Start 2P",ui-monospace,monospace;font-size:9px;color:var(--ssn);text-decoration:none;background:var(--ssg);border:3px solid var(--ssn);padding:9px 10px;box-shadow:3px 3px 0 var(--ssn)}
+[dir="rtl"] .ssshare{box-shadow:-6px 6px 0 var(--ssn)}
+@media (prefers-color-scheme:dark){.ssshare{background:#0F1B33;color:#fff;border-color:#CFE0FF;box-shadow:6px 6px 0 #000}.ssshare-h{color:#fff}.ssshare-p{color:#CFE0FF}.ssshare-b{background:#13295E;color:#fff;border-color:#fff;box-shadow:3px 3px 0 #000}.ssshare-hall{color:#0B1E4A}.ssshare-cap{background:#13295E;color:#fff;border-color:#2B4A8E}.ssshare-status{color:#9FD2FF}}
