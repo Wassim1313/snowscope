@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Press+Start+2P&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
 <link rel="stylesheet" href="site.css">
-<script>document.documentElement.classList.add("js");</script>
+<script>(function(){var h=document.documentElement;h.classList.add("js");try{if(new URLSearchParams(location.search).get("app")==="1"){h.classList.add("app");h.dataset.noads="1";}}catch(e){}})();</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "Christmas skiing 2026: best snow for your money", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Bonneval-sur-Arc", "url": "https://snowscope.app/christmas.html#bonneval_sur_arc"}, {"@type": "ListItem", "position": 2, "name": "Les Karellis", "url": "https://snowscope.app/christmas.html#les_karellis"}, {"@type": "ListItem", "position": 3, "name": "Aussois", "url": "https://snowscope.app/christmas.html#aussois"}, {"@type": "ListItem", "position": 4, "name": "Valfréjus · La Norma", "url": "https://snowscope.app/christmas.html#valfrejus"}, {"@type": "ListItem", "position": 5, "name": "Val Thorens", "url": "https://snowscope.app/christmas.html#val_thorens"}, {"@type": "ListItem", "position": 6, "name": "Val Cenis", "url": "https://snowscope.app/christmas.html#val_cenis"}, {"@type": "ListItem", "position": 7, "name": "La Thuile", "url": "https://snowscope.app/christmas.html#la_thuile_ski"}, {"@type": "ListItem", "position": 8, "name": "Ovronnaz", "url": "https://snowscope.app/christmas.html#ovronnaz"}, {"@type": "ListItem", "position": 9, "name": "Zugspitze", "url": "https://snowscope.app/christmas.html#gletscher_skigebiet_zugspitze_ski_resort_zugspit"}, {"@type": "ListItem", "position": 10, "name": "Stubai Glacier", "url": "https://snowscope.app/christmas.html#stubaier_gletscher"}, {"@type": "ListItem", "position": 11, "name": "Oberstdorf · Kleinwalsertal", "url": "https://snowscope.app/christmas.html#kleinwalsertal_oberstdorf"}, {"@type": "ListItem", "position": 12, "name": "Garmisch-Classic", "url": "https://snowscope.app/christmas.html#skigebiet_garmisch_classic"}]}</script>
 <style>
 :root{--navy:#0B1E4A;--navy2:#13295E;--ink9:#14233F;--mut:#4A5A75;--line:#D5DEEB;--snow:#F4F7FB;--gold:#FFD23F;--ok:#1E9E5A;--ko:#D63A3F;--mi:#E0A100;color-scheme:light}
@@ -147,6 +147,42 @@ h2.xh{font-size:clamp(11px,2.8vw,15px);line-height:1.5;margin:30px 0 10px;color:
 .cta a{display:inline-flex;align-items:center;min-height:46px;padding:8px 14px;text-decoration:none;font-size:10px;border:3px solid #fff;color:var(--navy);background:#fff}
 .cta a.a2{background:var(--ok);color:#fff}
 .disc{font-size:12.5px;color:var(--mut);margin:14px 0 0;line-height:1.55}
+/* ---------- top: reel + heading */
+.top2{display:grid;grid-template-columns:1fr;gap:14px;align-items:center;margin:14px 0 0}
+@media (min-width:760px){.top2{grid-template-columns:260px 1fr;gap:26px}}
+.phone{position:relative;justify-self:center;width:min(62vw,260px);aspect-ratio:9/16;background:#000;border:6px solid var(--navy);border-radius:26px;box-shadow:6px 6px 0 var(--navy);overflow:hidden}
+.phone::before{content:"";position:absolute;left:50%;top:7px;width:56px;height:6px;margin-left:-28px;border-radius:3px;background:#1d2a4d;z-index:2}
+.phone video{width:100%;height:100%;object-fit:cover;display:block;background:#0B1E4A}
+.phone .snd{position:absolute;right:8px;bottom:8px;z-index:2;border:2px solid #fff;background:rgba(11,30,74,.8);color:#fff;font-size:8px;padding:6px 7px;cursor:pointer}
+.top2 .xhd{margin:0;display:block}.top2 .xhd .kick{display:inline-block;margin:0 0 12px}.top2 .xhd h1{margin:0 0 10px}
+.go2{display:inline-flex;align-items:center;min-height:46px;margin-top:12px;padding:8px 14px;font-size:10px;text-decoration:none;color:var(--navy);background:var(--gold);border:3px solid var(--navy);box-shadow:4px 4px 0 var(--navy)}
+.go2:active{transform:translate(4px,4px);box-shadow:none}
+/* ---------- quiz */
+.qz{margin:26px 0 0;background:var(--navy);color:#fff;border:4px solid var(--navy);box-shadow:6px 6px 0 rgba(11,30,74,.35);padding:16px;scroll-margin-top:12px}
+.qz h2{margin:0;font-size:clamp(12px,3vw,16px);line-height:1.5;color:var(--gold)}
+.qz .qs{margin:4px 0 0;font-size:14px;color:#C9D6EA}
+.qstep{margin:14px 0 0}
+.qstep .qn{font-size:8px;color:#9FB2D6}
+.qstep h3{margin:8px 0 10px;font-size:17px;font-weight:800;color:#fff}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+.opt{min-height:52px;border:3px solid #fff;background:#13295E;color:#fff;font:700 14px Inter,system-ui,sans-serif;cursor:pointer;padding:8px 10px;box-shadow:3px 3px 0 #000;transition:transform .08s,box-shadow .08s,background .1s;-webkit-tap-highlight-color:transparent;display:flex;align-items:center;justify-content:center;gap:8px;text-align:center}
+.opt:hover{background:#1C3A80}.opt:active{transform:translate(3px,3px);box-shadow:none}
+.opt.sel{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.opt:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.qbar{display:flex;gap:4px;margin:12px 0 0}.qbar i{flex:1;height:8px;background:#2A3F72}.qbar i.on{background:var(--gold)}
+.qback{margin-top:12px;background:none;border:0;color:#C9D6EA;font:600 13px Inter,sans-serif;cursor:pointer;text-decoration:underline}
+.qres{margin:14px 0 0}
+.qres .xrc{margin:0;color:var(--ink9)}
+.qres .yl{display:block;font-size:10px;color:var(--gold);margin:0 0 10px}
+.qres .alts{margin:12px 0 0;font-size:13.5px;color:#C9D6EA}
+.qres .alts a{color:#fff;font-weight:700}
+.qres .row2{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 0}
+.qres .row2 .start{flex:1 1 200px}
+.qres .row2 button{flex:1 1 160px;min-height:50px;border:3px solid var(--navy);background:#fff;color:var(--navy);font-size:10px;cursor:pointer;box-shadow:4px 4px 0 var(--navy)}
+.qnote{font-size:12.5px;color:var(--mut);margin:8px 0 0}
+/* ---------- in-app (Android WebView): no site chrome, no ads */
+html.app header.top,html.app .crumbs,html.app footer.foot,html.app .cta,html.app #pcCard,html.app .adsbygoogle,html.app ins.adsbygoogle{display:none!important}
+html.app .wrapx{padding-top:4px}
 @media (prefers-reduced-motion:reduce){
   .lay{transition:none}
   .stage .xrc.swap{animation:none}
@@ -163,10 +199,15 @@ h2.xh{font-size:clamp(11px,2.8vw,15px);line-height:1.5;margin:30px 0 10px;color:
 <main class="wrapx">
   <div class="crumbs"><a href="./">Snow today</a> › Christmas ski deals</div>
 
-  <div class="xhd">
+  <div class="top2">
+    <div class="phone"><video id="reel" muted loop playsinline preload="none" poster="xmas/2026-11-19_ski_kart.jpg" data-src="xmas/2026-11-19_ski_kart.mp4" aria-label="Christmas ski reel"></video><button type="button" class="snd px" id="snd" aria-label="Sound on or off">SOUND</button></div>
+  <div class="xhd" style="margin:0">
     <span class="kick px">CHRISTMAS 2026</span>
     <h1 class="px">BEST SNOW FOR <em>YOUR MONEY</em></h1>
-    <p>12 resorts in 5 countries on one map: projected Christmas snow and a clear week budget per person (ski pass + hotel + food). Use ◀ ▶ to go from the best value to the worst.</p>
+    <p>12 resorts in 5 countries on one map: projected Christmas snow and a clear week budget per person (ski pass + hotel + food). Use ◀ ▶ to go from the best value to the worst, or let the game pick for you.</p>
+    <a class="go2 px" href="#quiz">&#9654; FIND MY CHALET</a>
+  </div>
+
   </div>
 
   <section class="vp" id="vp" tabindex="0" aria-label="Map of the Alps with projected Christmas snow and resort day-pass prices. Use the left and right arrow keys to move between resorts.">
@@ -186,6 +227,13 @@ h2.xh{font-size:clamp(11px,2.8vw,15px);line-height:1.5;margin:30px 0 10px;color:
   <p class="cap0">Map: projected snow at Christmas. Pins: Christmas week per person (6-day pass + 7 nights + food), green = cheap, red = expensive. Order: Christmas snow per euro of ski pass, best first.</p>
 
   <div class="stage" id="stage" aria-live="polite"></div>
+
+  <section class="qz" id="quiz" aria-label="Find my chalet">
+    <h2 class="px">FIND MY CHALET</h2>
+    <p class="qs">4 quick questions, then the best Christmas week for you, with the full budget.</p>
+    <div class="qbar" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div id="qbody"></div>
+  </section>
 
   <h2 class="xh px">COUNTRIES</h2>
   <div class="ctys"><div class="cty"><span class="flag ffr"></span><b>France</b><span class="cv px" style="color:#7cb444">1,082 €</span><span class="cx">avg Christmas week, per person (6 resorts) · day pass avg 47 €</span><span class="cv px">~140 cm</span><span class="cx">Christmas snow, avg</span><span class="cb">Best value: <a href="#bonneval_sur_arc" data-go="bonneval_sur_arc">Bonneval-sur-Arc</a></span></div><div class="cty"><span class="flag fit"></span><b>Italy</b><span class="cv px" style="color:#d0bf31">1,297 €</span><span class="cx">avg Christmas week, per person (1 resort) · day pass avg 61 €</span><span class="cv px">~150 cm</span><span class="cx">Christmas snow, avg</span><span class="cb">Best value: <a href="#la_thuile_ski" data-go="la_thuile_ski">La Thuile</a></span></div><div class="cty"><span class="flag fde"></span><b>Germany</b><span class="cv px" style="color:#f1c329">1,384 €</span><span class="cx">avg Christmas week, per person (3 resorts) · day pass avg 71 €</span><span class="cv px">~68 cm</span><span class="cx">Christmas snow, avg</span><span class="cb">Best value: <a href="#gletscher_skigebiet_zugspitze_ski_resort_zugspit" data-go="gletscher_skigebiet_zugspitze_ski_resort_zugspit">Zugspitze</a></span></div><div class="cty"><span class="flag fat"></span><b>Austria</b><span class="cv px" style="color:#f4ba29">1,433 €</span><span class="cx">avg Christmas week, per person (1 resort) · day pass avg 76 €</span><span class="cv px">~95 cm</span><span class="cx">Christmas snow, avg</span><span class="cb">Best value: <a href="#stubaier_gletscher" data-go="stubaier_gletscher">Stubai Glacier</a></span></div><div class="cty"><span class="flag fch"></span><b>Switzerland</b><span class="cv px" style="color:#f0a62c">1,507 €</span><span class="cx">avg Christmas week, per person (1 resort) · day pass avg 70 €</span><span class="cv px">~135 cm</span><span class="cx">Christmas snow, avg</span><span class="cb">Best value: <a href="#ovronnaz" data-go="ovronnaz">Ovronnaz</a></span></div></div>
@@ -714,12 +762,94 @@ h2.xh{font-size:clamp(11px,2.8vw,15px);line-height:1.5;margin:30px 0 10px;color:
   var deep = location.hash ? nodes.findIndex(function (n) { return "#" + n.dataset.slug === location.hash; }) : -1;
   go(0, false);
   if (deep > 0) setTimeout(function () { go(deep, true); }, 350);
+  // ------------------------------------------------ reel: loads and plays only when on screen
+  var rv = document.getElementById("reel");
+  if (rv) {
+    var startReel = function () { if (!rv.src) { rv.src = rv.dataset.src; } if (!calm) rv.play().catch(function () {}); };
+    if ("IntersectionObserver" in window) new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) startReel(); else if (rv.src) rv.pause(); }); }, { threshold: 0.3 }).observe(rv);
+    else startReel();
+    document.getElementById("snd").addEventListener("click", function () { rv.muted = !rv.muted; startReel(); this.textContent = rv.muted ? "SOUND" : "MUTE"; });
+  }
+  // ------------------------------------------------ FIND MY CHALET
+  var R = [{"slug": "bonneval_sur_arc", "name": "Bonneval-sur-Arc", "cc": "FR", "country": "France", "snow": 150, "lo": 125, "hi": 175, "km": 32, "top": 2948, "piste": 2, "hotel": 1, "pass": 229, "nights": 385, "night": 55, "food": 280, "day": 38.2, "stay": "https://www.stay22.com/allez/roam?aid=wassim1313&lat=45.3614&lng=7.0569&address=Bonneval-sur-Arc%2C+France&checkin=2026-12-19&checkout=2026-12-26&adults=2&lang=en&campaign=snowscope_xmas_quiz_bonneval_sur_arc"}, {"slug": "les_karellis", "name": "Les Karellis", "cc": "FR", "country": "France", "snow": 110, "lo": 95, "hi": 135, "km": 60, "top": 2484, "piste": 2, "hotel": 1, "pass": 216, "nights": 385, "night": 55, "food": 280, "day": 36.0, "stay": "https://www.stay22.com/allez/roam?aid=wassim1313&lat=45.2160&lng=6.3997&address=Les+Karellis%2C+France&checkin=2026-12-19&checkout=2026-12-26&adults=2&lang=en&campaign=snowscope_xmas_quiz_les_karellis"}, {"slug": "aussois", "name": "Aussois", "cc": "FR", "country": "France", "snow": 120, "lo": 105, "hi": 140, "km": 55, "top": 2680, "piste": 2, "hotel": 1, "pass": 246, "nights": 385, "night": 55, "food": 280, "day": 41.0, "stay": "https://www.stay22.com/allez/roam?aid=wassim1313&lat=45.2473&lng=6.7380&address=Aussois%2C+France&checkin=2026-12-19&checkout=2026-12-26&adults=2&lang=en&campaign=snowscope_xmas_quiz_aussois"}, {"slug": "valfrejus", "name": "Valfréjus · La Norma", "cc": "FR", "country": "France", "snow": 125, "lo": 105, "hi": 145, "km": 135, "top": 2724, "piste": 3, "hotel": 1, "pass": 262, "nights": 385, "night": 55, "food": 280, "day": 43.6, "stay": "https://www.stay22.com/allez/roam?aid=wassim1313&lat=45.1584&lng=6.6608&address=Valfr%C3%A9jus%2C+France&checkin=2026-12-19&checkout=2026-12-26&adults=2&lang=en&campaign=snowscope_xmas_quiz_valfrejus"}, {"slug": "val_thorens", "name": "Val Thorens", "cc": "FR", "country": "France", "snow": 205, "lo": 185, "hi": 245, "km": 150, "top": 3221, "piste": 3, "hotel": 3, "pass": 441, "nights": 1190, "night": 170, "food": 280, "day": 73.5, "stay": "https://www.stay22.com/allez/roam?aid=wassim1313&lat=45.2845&lng=6.5770&address=Val+Thorens%2C+France&checkin=2026-12-19&checkout=2026-12-26&adults=2&lang=en&campaign=snowscope_xmas_quiz_val_thorens"}, {"slug": "val_cenis", "name": "Val Cenis", "cc": "FR", "country": "France", "snow": 130, "lo": 110, "hi": 150, "km": 125, "top": 2737, "piste": 3, "hotel": 1, "pass": 300, "nights": 385, "night": 55, "food": 280, "day": 50.0, "stay": "https://www.stay22.com/allez/roam?aid=wassim1313&lat=45.2761&lng=6.8816&address=Val+Cenis%2C+France&checkin=2026-12-19&checkout=2026-12-26&adults=2&lang=en&campaign=snowscope_xmas_quiz_val_cenis"}, {"slug": "la_thuile_ski", "name": "La Thuile", "cc": "IT", "country": "Italy", "snow": 150, "lo": 125, "hi": 180, "km": 152, "top": 2608, "piste": 3, "hotel": 2, "pass": 366, "nights": 665, "night": 95, "food": 266, "day": 61.0, "stay": "https://www.stay22.com/allez/roam?aid=wassim1313&lat=45.6950&lng=6.9245&address=La+Thuile%2C+Italy&checkin=2026-12-19&checkout=2026-12-26&adults=2&lang=en&campaign=snowscope_xmas_quiz_la_thuile_ski"}, {"slug": "ovronnaz", "name": "Ovronnaz", "cc": "CH", "country": "Switzerland", "snow": 135, "lo": 115, "hi": 160, "km": 30, "top": 2456, "piste": 1, "hotel": 2, "pass": 422, "nights": 665, "night": 95, "food": 420, "day": 70.3, "stay": "https://www.stay22.com/allez/roam?aid=wassim1313&lat=46.2025&lng=7.1382&address=Ovronnaz%2C+Switzerland&checkin=2026-12-19&checkout=2026-12-26&adults=2&lang=en&campaign=snowscope_xmas_quiz_ovronnaz"}, {"slug": "gletscher_skigebiet_zugspitze_ski_resort_zugspit", "name": "Zugspitze", "cc": "DE", "country": "Germany", "snow": 90, "lo": 70, "hi": 125, "km": 20, "top": 2627, "piste": 1, "hotel": 2, "pass": 423, "nights": 665, "night": 95, "food": 294, "day": 70.5, "stay": "https://www.stay22.com/allez/roam?aid=wassim1313&lat=47.4130&lng=10.9858&address=Zugspitze%2C+Germany&checkin=2026-12-19&checkout=2026-12-26&adults=2&lang=en&campaign=snowscope_xmas_quiz_gletscher_skigebiet_zugspitze_ski_resort"}, {"slug": "stubaier_gletscher", "name": "Stubai Glacier", "cc": "AT", "country": "Austria", "snow": 95, "lo": 80, "hi": 125, "km": 65, "top": 3208, "piste": 3, "hotel": 2, "pass": 453, "nights": 665, "night": 95, "food": 315, "day": 75.5, "stay": "https://www.stay22.com/allez/roam?aid=wassim1313&lat=46.9916&lng=11.1246&address=Stubai+Glacier%2C+Austria&checkin=2026-12-19&checkout=2026-12-26&adults=2&lang=en&campaign=snowscope_xmas_quiz_stubaier_gletscher"}, {"slug": "kleinwalsertal_oberstdorf", "name": "Oberstdorf · Kleinwalsertal", "cc": "DE", "country": "Germany", "snow": 65, "lo": 40, "hi": 95, "km": 130, "top": 2213, "piste": 3, "hotel": 2, "pass": 437, "nights": 665, "night": 95, "food": 294, "day": 72.9, "stay": "https://www.stay22.com/allez/roam?aid=wassim1313&lat=47.3635&lng=10.2144&address=Oberstdorf%2C+Germany&checkin=2026-12-19&checkout=2026-12-26&adults=2&lang=en&campaign=snowscope_xmas_quiz_kleinwalsertal_oberstdorf"}, {"slug": "skigebiet_garmisch_classic", "name": "Garmisch-Classic", "cc": "DE", "country": "Germany", "snow": 50, "lo": 40, "hi": 75, "km": 40, "top": 2047, "piste": 1, "hotel": 2, "pass": 414, "nights": 665, "night": 95, "food": 294, "day": 69.0, "stay": "https://www.stay22.com/allez/roam?aid=wassim1313&lat=47.4558&lng=11.0759&address=Garmisch-Classic%2C+Germany&checkin=2026-12-19&checkout=2026-12-26&adults=2&lang=en&campaign=snowscope_xmas_quiz_skigebiet_garmisch_classic"}];
+  var Q = [
+    { k: "budget", t: "Budget per person for the week (pass + hotel + food)?", o: [ ["900", "€900"], ["1300", "€1,300"], ["2000", "€2,000+"]] },
+    { k: "country", t: "Which country?", o: [ ["any", "Any"], ["FR", "France"], ["IT", "Italy"], ["CH", "Switzerland"], ["AT", "Austria"], ["DE", "Germany"]] },
+    { k: "want", t: "What matters most?", o: [ ["snow", "Most snow"], ["pistes", "Big pistes"], ["cheap", "Cheapest"]] },
+    { k: "party", t: "Who is going?", o: [ ["solo", "Solo"], ["couple", "Couple"], ["family", "Family"]] }
+  ];
+  var FLAGS = { FR: "ffr", IT: "fit", CH: "fch", AT: "fat", DE: "fde" };
+  var HOTEL_F = { solo: 1.7, couple: 1, family: 0.75 };          // room shared by 1 / 2 / 4 people
+  var ans = {}, step = 0, qbody = document.getElementById("qbody"), qbars = document.querySelectorAll(".qbar i");
+  var money = function (v) { return Math.round(v).toLocaleString("en-US") + " €"; };
+  var esc = function (t) { return String(t).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
+  function cost(r) { var n = Math.round(r.nights * HOTEL_F[ans.party || "couple"]); return { n: n, t: r.pass + n + r.food }; }
+  function pick() {
+    var budget = +ans.budget >= 2000 ? 1e9 : +ans.budget, pool = R.filter(function (r) { return ans.country === "any" || r.cc === ans.country; });
+    var widened = !pool.length; if (widened) pool = R.slice();
+    var maxS = Math.max.apply(null, pool.map(function (r) { return r.snow; })), minT = Math.min.apply(null, pool.map(function (r) { return cost(r).t; }));
+    var sc = pool.map(function (r) {
+      var c = cost(r).t, over = Math.max(0, c - budget), v;
+      if (ans.want === "snow") v = r.snow / maxS * 100;
+      else if (ans.want === "pistes") v = r.piste * 25 + Math.min(r.km, 150) / 150 * 25 + (r.top >= 2900 ? 15 : 0);
+      else v = minT / c * 100;
+      v += r.snow / maxS * 20 - over / 12;
+      return { r: r, v: v };
+    }).sort(function (a, b) { return b.v - a.v; });
+    return { best: sc[0].r, alts: sc.slice(1, 3).map(function (x) { return x.r; }), budget: budget, widened: widened };
+  }
+  function bars() { qbars.forEach(function (b, i) { b.classList.toggle("on", i < step || (step === 4 && i < 4)); }); }
+  function ask() {
+    bars();
+    var q = Q[step];
+    qbody.innerHTML = '<div class="qstep"><span class="qn px">QUESTION ' + (step + 1) + "/4</span><h3>" + q.t + '</h3><div class="opts">' +
+      q.o.map(function (o) { return '<button type="button" class="opt' + (ans[q.k] === o[0] ? " sel" : "") + '" data-v="' + o[0] + '">' + (FLAGS[o[0]] ? '<span class="flag ' + FLAGS[o[0]] + '"></span>' : "") + o[1] + "</button>"; }).join("") +
+      "</div>" + (step ? '<button type="button" class="qback" id="qback">← Back</button>' : "") + "</div>";
+  }
+  function result() {
+    step = 4; bars();
+    var p = pick(), r = p.best, c = cost(r), left = p.budget - c.t;
+    var stay = r.stay.replace("adults=2", "adults=" + (ans.party === "solo" ? 1 : 2));
+    var party = { solo: "solo, own room", couple: "couple, sharing a room", family: "family of 4, sharing" }[ans.party];
+    var verdict = p.budget > 1e8 ? '<b class="px ok">WEEK ' + money(c.t) + "</b>" : (left >= 0 ? '<b class="px ok">+' + money(left) + " LEFT</b>" : '<b class="px ko">NEED +' + money(-left) + "</b>");
+    qbody.innerHTML = '<div class="qres"><span class="yl px">YOUR LEVEL</span><article class="xrc" style="--pc:#FFD23F">' +
+      '<header class="xrh"><span class="flag ' + FLAGS[r.cc] + '"></span><div class="xrt"><h3>' + esc(r.name) + "</h3><p>" + esc(r.country) + " · ~" + r.snow + " cm of snow at Christmas (likely " + r.lo + "–" + r.hi + " cm)</p></div></header>" +
+      '<div class="wk go"><span class="cap px">CHRISTMAS WEEK · PER PERSON · ' + esc(party.toUpperCase()) + "</span>" +
+      '<p class="wl3"><span><i class="kp"></i>6-day pass ' + money(r.pass) + '</span> <span><i class="kh"></i>7 nights ' + money(c.n) + '</span> <span><i class="kf"></i>food 7 days ' + money(r.food) + '</span> <span class="eq">= ' + money(c.t) + "</span></p>" +
+      '<div class="wr">' + verdict + "<span>" + (p.budget > 1e8 ? "no budget limit" : "vs your " + money(p.budget) + " budget") + "</span></div></div>" +
+      '<div class="row2"><a class="start px" target="_blank" rel="sponsored noopener" data-stay="' + esc(r.slug) + '" data-quiz="1" href="' + esc(stay) + '">BOOK HOTEL &#9654;</a><button type="button" class="px" id="qmap">SEE ON MAP</button></div>' +
+      '<p class="qnote">' + (p.widened ? "No resort in that country on our list, so we looked everywhere. " : "") + "Estimates per person: pass and food fixed, hotel scaled for " + esc(party) + ".</p></article>" +
+      (p.alts.length ? '<p class="alts">Also good: ' + p.alts.map(function (a) { return '<a href="#' + esc(a.slug) + '" data-go="' + esc(a.slug) + '">' + esc(a.name) + "</a> (" + money(cost(a).t) + ")"; }).join(" · ") + "</p>" : "") +
+      '<button type="button" class="qback" id="qagain">Play again</button></div>';
+    document.getElementById("qmap").addEventListener("click", function () {
+      var i = nodes.findIndex(function (n) { return n.dataset.slug === r.slug; });
+      vp.scrollIntoView({ behavior: calm ? "auto" : "smooth", block: "start" });
+      if (i >= 0) setTimeout(function () { go(i, true); }, calm ? 0 : 450);
+    });
+    document.getElementById("qagain").addEventListener("click", function () { ans = {}; step = 0; ask(); });
+    try { SS.track && SS.track("xmas_quiz", { place: r.slug, budget: ans.budget, country: ans.country, want: ans.want, party: ans.party }); } catch (e) { /* */ }
+  }
+  qbody.addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b) return;
+    if (b.id === "qback") { step = Math.max(0, step - 1); ask(); return; }
+    if (!b.classList.contains("opt")) return;
+    ans[Q[step].k] = b.dataset.v; b.classList.add("sel");
+    setTimeout(function () { step++; if (step < 4) ask(); else result(); }, calm ? 0 : 140);
+  });
+  ask();
+  // app mode (Android WebView): links that leave the site open outside
+  if (document.documentElement.classList.contains("app")) {
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest("a[href]");
+      if (a && a.host && a.host !== location.host) a.target = "_blank";
+    }, true);
+  }
   // ------------------------------------------------ partner click beacons + touch press
   document.addEventListener("click", function (e) {
     var a = e.target.closest && e.target.closest("a[data-stay]");
     if (!a || !window.SS) return;
-    try { SS.hit("/ad/stay22/xmas/" + a.getAttribute("data-stay"), "ads"); } catch (err) { /* beacon only */ }
-    try { SS.track && SS.track("stay_click", { place: a.getAttribute("data-stay"), via: a.closest("#stage") ? "christmas_map" : "christmas" }); } catch (err) { /* */ }
+    try { SS.hit("/ad/stay22/xmas" + (a.dataset.quiz ? "_quiz/" : "/") + a.getAttribute("data-stay"), "ads"); } catch (err) { /* beacon only */ }
+    try { SS.track && SS.track("stay_click", { place: a.getAttribute("data-stay"), via: a.dataset.quiz ? "christmas_quiz" : a.closest("#stage") ? "christmas_map" : "christmas" }); } catch (err) { /* */ }
   });
   document.addEventListener("touchstart", function (e) { var b = e.target.closest && e.target.closest(".start"); if (b) b.classList.add("prs"); }, { passive: true });
   document.addEventListener("touchend", function () { document.querySelectorAll(".start.prs").forEach(function (b) { b.classList.remove("prs"); }); }, { passive: true });
