@@ -418,20 +418,11 @@
     start() {
       if (this.loaded || this.waiting || !this.want()) return;
       if (this.europe() && PC.granted()) { this.load(); return; }
-      // outside Europe (owner 2026-11-19: US+CA 441 visitors, 0 Stay22 clicks, the script waited 8 s for a TCF tool
-      // that is never served): load at once; a consent tool already on the page (__tcfapi) is still asked first
-      if (!this.europe() && typeof window.__tcfapi !== "function") { this.load(); return; }
       this.waiting = true;
       const go = () => { this.waiting = false; if (this.want()) this.load(); };
-      let tries = 0, hooked = false;
-      // Europe without a TCF tool: our own partner card after 1.5 s (was 8 s poll + 2.5 s: asked 4 % of EU visitors);
-      // a TCF tool that shows up later still wins (the card is taken down while unanswered, its answer is followed)
-      if (this.europe()) setTimeout(() => { if (!hooked && !this.loaded) PC.ask(); }, PC.delay());
+      let tries = 0;
       const poll = () => {                               // Google's consent message exposes the TCF API (__tcfapi)
         if (typeof window.__tcfapi === "function") {
-          hooked = true;
-          const card = document.getElementById("pcCard");
-          if (card && !PC.get()) card.remove();
           window.__tcfapi("addEventListener", 2, (tc, ok) => {
             if (!ok || !tc || this.loaded) return;
             if (tc.eventStatus !== "tcloaded" && tc.eventStatus !== "useractioncomplete") return;
@@ -439,8 +430,8 @@
             else this.waiting = false;
           });
         } else if (++tries < 16) setTimeout(poll, 500);
-        else if (!this.europe()) go();                   // (not reached: outside Europe loads above)
-        else this.waiting = false;                       // Europe, no tool: the partner card (asked at 1.5 s) decides
+        else if (!this.europe()) go();                   // no consent tool after 8 s: outside Europe only
+        else { this.waiting = false; PC.ask(); }         // Europe, no tool: our own partner prompt
       };
       poll();
     },
@@ -505,10 +496,8 @@
       document.body.appendChild(el);
       hit("/ad/stay22/consent/ask", "stay22");
     },
-    // ask once the page has settled: 1.5 s after start (owner 2026-11-19, was 2.5 s; a TCF tool that appears later
-    // takes the card down and wins, see LMA.start)
-    later() { setTimeout(() => this.ask(), this.delay()); },
-    delay() { try { return Math.max(0, 1500 - performance.now()); } catch { return 1500; } },     // ~1.5 s after the page opened
+    // ask once the page has settled: 2.5 s after start (Google's tool, if any, has shown up by then)
+    later() { setTimeout(() => this.ask(), 2500); },
   };
   function partnerChoices() { store.set("ss_pc", null); const c = document.getElementById("pcCard"); if (c) c.remove(); PC.ask(); }
 
@@ -1045,6 +1034,6 @@
     } catch { /* promo only */ }
   }
 
-  window.SS = { base, webPro, webSell, proHere, proIn, tiersMode, proSplit, isPro, locked, dayLocked, adUnlock, proSell, proNudge, isNative, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, isHuman: () => HUMAN, partnerChoices, partnerGranted: () => PC.granted(), partnerSet: (y, via) => PC.set(y, via), getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink, stayCur, nextWeekend,
+  window.SS = { base, webPro, webSell, proHere, proIn, tiersMode, proSplit, isPro, locked, dayLocked, adUnlock, proSell, proNudge, isNative, U, S, stayConsent, stayConsentWatch, start, api, refreshMe, ensureAuth, staysHidden, track, pageView, hit, isHuman: () => HUMAN, partnerChoices, partnerGranted: () => PC.granted(), partnerSet: (y, via) => PC.set(y, via), getJSON, esc, appUrl, upsell, signInModal, modal, head, Auth, Ads, stayBlock, stayLink, stayCur,
                 resorts, mapLib, transformRequest, onChange: (f) => S.listeners.push(f), store, ROOT, IAB, refHost };
 })();
