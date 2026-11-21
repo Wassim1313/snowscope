@@ -377,7 +377,7 @@
   }
  },
  "words_en": 695,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "rifflsee",
   "name": "Rifflsee",
@@ -500,8 +500,10 @@
  },
  "publish_utc": "2026-11-21T11:49:34Z",
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "day cap 6 reached"
+  ],
   "words": 892,
   "overlap": 0.8,
   "with": "france-where-the-snow-fell-18-november-2026",
@@ -526,5 +528,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: day cap 6 reached"
 }

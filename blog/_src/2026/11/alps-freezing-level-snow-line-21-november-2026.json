@@ -1,0 +1,678 @@
+{
+ "id": "2026-11-21-alps-isotherm",
+ "slug": "alps-freezing-level-snow-line-21-november-2026",
+ "date": "2026-11-21",
+ "published_utc": "2026-11-21T12:33:48Z",
+ "updated_utc": "2026-11-21T12:33:48Z",
+ "region": "ALPS",
+ "angle": "isotherm",
+ "score": 52,
+ "signature": "la_grave:3200|alpe_dhuez:2800|les_arcs:2700",
+ "keyword": {
+  "family": "snow-line",
+  "entity": "alps",
+  "region": "ALPS",
+  "date": "2026-11-21"
+ },
+ "tags": [
+  "snow-line",
+  "forecast",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "freezing_level_analysis",
+  "region": "Alps",
+  "date": "2026-11-21",
+  "weekday": "Saturday",
+  "model_run": "2026-11-21",
+  "forecast_days": [
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 87520,
+   "resorts_with_snow": 971,
+   "resorts_in_region": 1204
+  },
+  "region_before": {
+   "date": "2026-11-19",
+   "snow_covered_area_km2": 80890,
+   "resorts_with_snow": 929
+  },
+  "region_forecast": {
+   "date": "2026-11-24",
+   "snow_covered_area_km2": 117270,
+   "resorts_with_snow": 1123
+  },
+  "question": "How high is the 0 °C level in the next days, where does rain turn to snow, and is rain falling on the snowpack?",
+  "snow_line_below_freezing_level_m": 300,
+  "region_freezing_level_m_by_day": {
+   "2026-11-21": {
+    "lowest": 2000,
+    "highest": 2990
+   },
+   "2026-11-22": {
+    "lowest": 1860,
+    "highest": 3210
+   },
+   "2026-11-23": {
+    "lowest": 1340,
+    "highest": 3210
+   },
+   "2026-11-24": {
+    "lowest": 1330,
+    "highest": 2480
+   }
+  },
+  "forecast_points": [
+   {
+    "place": "Andermatt",
+    "elev_m": 2963,
+    "precip_mm_total_next_days": 64,
+    "precip_mm_by_day": {
+     "2026-11-21": 0,
+     "2026-11-22": 24,
+     "2026-11-23": 33,
+     "2026-11-24": 0,
+     "2026-11-25": 4,
+     "2026-11-26": 4
+    },
+    "freezing_level_m_when_wet": 1470,
+    "snow_line_m_when_wet": 1170,
+    "share_of_precip_as_snow_at_this_height_pct": 100
+   },
+   {
+    "place": "Lugano",
+    "elev_m": 300,
+    "precip_mm_total_next_days": 44,
+    "precip_mm_by_day": {
+     "2026-11-21": 0,
+     "2026-11-22": 5,
+     "2026-11-23": 0,
+     "2026-11-24": 0,
+     "2026-11-25": 18,
+     "2026-11-26": 21
+    },
+    "freezing_level_m_when_wet": 1250,
+    "snow_line_m_when_wet": 950,
+    "share_of_precip_as_snow_at_this_height_pct": 0
+   },
+   {
+    "place": "Altdorf",
+    "elev_m": 450,
+    "precip_mm_total_next_days": 46,
+    "precip_mm_by_day": {
+     "2026-11-21": 1,
+     "2026-11-22": 18,
+     "2026-11-23": 20,
+     "2026-11-24": 0,
+     "2026-11-25": 1,
+     "2026-11-26": 6
+    },
+    "freezing_level_m_when_wet": 1350,
+    "snow_line_m_when_wet": 1050,
+    "share_of_precip_as_snow_at_this_height_pct": 0
+   },
+   {
+    "place": "Innsbruck",
+    "elev_m": 580,
+    "precip_mm_total_next_days": 14,
+    "precip_mm_by_day": {
+     "2026-11-21": 0,
+     "2026-11-22": 7,
+     "2026-11-23": 4,
+     "2026-11-24": 0,
+     "2026-11-25": 0,
+     "2026-11-26": 3
+    },
+    "freezing_level_m_when_wet": 1310,
+    "snow_line_m_when_wet": 1010,
+    "share_of_precip_as_snow_at_this_height_pct": 8
+   }
+  ],
+  "notes": [
+   "0 °C level = height where the air temperature crosses 0 °C (forecast, daily lowest and highest)",
+   "snow line = about 300 m below the 0 °C level, at the warmest hours of the day",
+   "rain-on-snow risk = snow on the slopes and a snow line above mid-mountain on a day with precipitation"
+  ],
+  "resorts": [
+   {
+    "name": "La Grave",
+    "country": "France",
+    "top_m": 3543,
+    "base_m": 3196,
+    "depth_cm_upper_slopes_today": 132,
+    "new_cm_last_24h": 6,
+    "new_cm_last_72h": 92,
+    "new_cm_forecast_next_days": 90,
+    "slug": "la_grave",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2740,
+      "max": 2990
+     },
+     "2026-11-22": {
+      "min": 2810,
+      "max": 3210
+     },
+     "2026-11-23": {
+      "min": 2360,
+      "max": 3210
+     },
+     "2026-11-24": {
+      "min": 2420,
+      "max": 2480
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-21": 2700,
+     "2026-11-22": 2900,
+     "2026-11-23": 2900,
+     "2026-11-24": 2200
+    },
+    "days_snow_line_above_top": [],
+    "days_snow_line_above_base": [],
+    "days_all_day_below_0c_at_base": [
+     "2026-11-21",
+     "2026-11-24"
+    ],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Alpe d'Huez Grand Domaine",
+    "country": "France",
+    "top_m": 3306,
+    "base_m": 1124,
+    "depth_cm_upper_slopes_today": 92,
+    "new_cm_last_24h": 5,
+    "new_cm_last_72h": 84,
+    "new_cm_forecast_next_days": 89,
+    "slug": "alpe_dhuez",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2180,
+      "max": 2790
+     },
+     "2026-11-22": {
+      "min": 2160,
+      "max": 2610
+     },
+     "2026-11-23": {
+      "min": 1860,
+      "max": 2230
+     },
+     "2026-11-24": {
+      "min": 1930,
+      "max": 2030
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-21": 2500,
+     "2026-11-22": 2300,
+     "2026-11-23": 1900,
+     "2026-11-24": 1700
+    },
+    "days_snow_line_above_top": [],
+    "days_snow_line_above_base": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-22"
+    ]
+   },
+   {
+    "name": "Les Arcs",
+    "country": "France",
+    "top_m": 3205,
+    "base_m": 1222,
+    "depth_cm_upper_slopes_today": 80,
+    "new_cm_last_24h": 11,
+    "new_cm_last_72h": 102,
+    "new_cm_forecast_next_days": 74,
+    "slug": "les_arcs",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2000,
+      "max": 2740
+     },
+     "2026-11-22": {
+      "min": 1860,
+      "max": 2720
+     },
+     "2026-11-23": {
+      "min": 1350,
+      "max": 1760
+     },
+     "2026-11-24": {
+      "min": 1330,
+      "max": 1820
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-21": 2400,
+     "2026-11-22": 2400,
+     "2026-11-23": 1500,
+     "2026-11-24": 1500
+    },
+    "days_snow_line_above_top": [],
+    "days_snow_line_above_base": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-22"
+    ]
+   },
+   {
+    "name": "La Plagne",
+    "country": "France",
+    "top_m": 3058,
+    "base_m": 1217,
+    "depth_cm_upper_slopes_today": 49,
+    "new_cm_last_24h": 9,
+    "new_cm_last_72h": 91,
+    "new_cm_forecast_next_days": 73,
+    "slug": "la_plagne",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2030,
+      "max": 2750
+     },
+     "2026-11-22": {
+      "min": 1870,
+      "max": 2750
+     },
+     "2026-11-23": {
+      "min": 1340,
+      "max": 1740
+     },
+     "2026-11-24": {
+      "min": 1350,
+      "max": 2350
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-21": 2400,
+     "2026-11-22": 2400,
+     "2026-11-23": 1400,
+     "2026-11-24": 2000
+    },
+    "days_snow_line_above_top": [],
+    "days_snow_line_above_base": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-22"
+    ]
+   },
+   {
+    "name": "Espace Haute Maurienne Vanoise",
+    "country": "France",
+    "top_m": 2948,
+    "base_m": 1306,
+    "depth_cm_upper_slopes_today": 81,
+    "new_cm_last_24h": 5,
+    "new_cm_last_72h": 62,
+    "new_cm_forecast_next_days": 47,
+    "slug": "espace_haute_maurienne_vanoise",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2030,
+      "max": 2720
+     },
+     "2026-11-22": {
+      "min": 2020,
+      "max": 2480
+     },
+     "2026-11-23": {
+      "min": 1630,
+      "max": 2060
+     },
+     "2026-11-24": {
+      "min": 1640,
+      "max": 1820
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-21": 2400,
+     "2026-11-22": 2200,
+     "2026-11-23": 1800,
+     "2026-11-24": 1500
+    },
+    "days_snow_line_above_top": [],
+    "days_snow_line_above_base": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-22"
+    ]
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "La Grave",
+     "slug": "la_grave",
+     "now_cm": 86,
+     "usual_cm": 80,
+     "high_cm": 164,
+     "week_ago_cm": 40,
+     "height_m": 3370,
+     "best_weeks": [
+      16,
+      15,
+      17
+     ],
+     "ratio_pct": 108
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "La Grave",
+   "next_cm": 90,
+   "second": "Alpe d'Huez Grand Domaine",
+   "second_cm": 92,
+   "depth_cm": 132
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/alps-freezing-level-snow-line-21-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/alps-freezing-level-snow-line-21-november-2026/map_t.webp",
+   "bytes": 58846,
+   "snow_frac": 0.6913,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Alps freezing level: 0 °C from 1,330 m to 3,210 m, snow line up to 2,900 m (21 November)",
+   "description": "The 0 °C level in the Alps, next days: 1,330 m to 3,210 m. Warmest hours: snow line about 300 m lower, up to 2,900 m at La Grave on Sunday 22 …",
+   "lede": "The 0 °C level in the Alps, next days: 1,330 m to 3,210 m. Warmest hours: snow line about 300 m lower, up to 2,900 m at La Grave on Sunday 22 November. The snow line is a forecast of a forecast: it follows the freezing level, which can move by hundreds of metres.",
+   "sections": [
+    {
+     "h": "The 0 °C level, daily",
+     "p": [
+      "The 0 °C level at the resorts below, from the coldest to the warmest hour of each day: Saturday 21 November: from 2,000 m to 2,990 m. Sunday 22 November: from 1,860 m to 3,210 m. Monday 23 November: from 1,340 m to 3,210 m. Tuesday 24 November: from 1,330 m to 2,480 m."
+     ]
+    },
+    {
+     "h": "Snow line by resort",
+     "p": [
+      "La Grave (base 3,196 m, top 3,543 m): snow line about 2,900 m on 22 November, below the base. Snow everywhere.",
+      "Alpe d'Huez Grand Domaine, base 1,124 m, top 3,306 m: snow line near 2,500 m on 21 November, splitting the resort: snow up high, wet lower down.",
+      "Les Arcs (base 1,222 m, top 3,205 m): snow line about 2,400 m on 21 November, mid-mountain. Snow above, rain or wet snow below.",
+      "La Plagne, base 1,217 m, top 3,058 m: snow line near 2,400 m on 21 November, splitting the resort: snow up high, wet lower down.",
+      "Espace Haute Maurienne Vanoise (base 1,306 m, top 2,948 m): snow line about 2,400 m on 21 November, mid-mountain. Snow above, rain or wet snow below."
+     ]
+    },
+    {
+     "h": "Rain-on-snow risk",
+     "p": [
+      "Alpe d'Huez Grand Domaine: about 92 cm on the upper slopes, snow line above mid-mountain on 22 November. Rain on snow means heavy and wet first, icy after the refreeze.",
+      "Risk flag at Les Arcs: about 80 cm up high and a snow line above mid-mountain on 22 November; rain would make the snow wet, then icy.",
+      "La Plagne: about 49 cm on the upper slopes, snow line above mid-mountain on 22 November. Rain on snow means heavy and wet first, icy after the refreeze.",
+      "The forecast gives Andermatt (2,963 m) 64 mm of precipitation, with the snow line near 1,170 m during the wet hours.",
+      "Lugano (300 m): 44 mm forecast, snow line near 950 m while it falls."
+     ]
+    },
+    {
+     "h": "The 0 °C level and the snow line, briefly",
+     "p": [
+      "Air cools with height, as a rule. Below the 0 °C level flakes begin to melt; melting is slow, so rain starts only some 300 m lower. That is the snow line. Dry air cools the snow by evaporation and pushes the line lower still."
+     ]
+    }
+   ],
+   "advice": [
+    "Warm air softens the snow by midday, so ski high and on north-facing slopes early.",
+    "The 0 °C level is a forecast and can move by several hundred metres, which changes where rain turns to snow: check the map again the day before you go.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website."
+   ],
+   "captions": {
+    "map": "Snow depth in the Alps on 21 November (SnowScope snow model) with the resorts of this freezing-level analysis and their top heights."
+   }
+  },
+  "fr": {
+   "title": "Isotherme 0 °C dans les Alpes : de 1 330 m à 3 210 m, limite pluie-neige jusqu'à 2 900 m (21 novembre)",
+   "description": "L'isotherme 0 °C dans les Alpes, prochains jours : 1 330 m à 3 210 m. Heures les plus douces : limite pluie-neige environ 300 m plus bas, jusqu'à …",
+   "lede": "L'isotherme 0 °C dans les Alpes, prochains jours : 1 330 m à 3 210 m. Heures les plus douces : limite pluie-neige environ 300 m plus bas, jusqu'à 2 900 m à La Grave le dimanche 22 novembre. La limite pluie-neige est la prévision d'une prévision : elle suit l'isotherme, qui peut bouger de centaines de mètres.",
+   "sections": [
+    {
+     "h": "L'isotherme 0 °C, au quotidien",
+     "p": [
+      "L'isotherme 0 °C au-dessus des stations ci-dessous, de l'heure la plus froide à la plus douce de chaque jour : samedi 21 novembre : de 2 000 m à 2 990 m. dimanche 22 novembre : de 1 860 m à 3 210 m. lundi 23 novembre : de 1 340 m à 3 210 m. mardi 24 novembre : de 1 330 m à 2 480 m."
+     ]
+    },
+    {
+     "h": "Limite pluie-neige par station",
+     "p": [
+      "La Grave (bas 3 196 m, sommet 3 543 m) : limite pluie-neige vers 2 900 m le 22 novembre, sous le bas. De la neige partout.",
+      "Alpe d'Huez Grand Domaine, bas 1 124 m, sommet 3 306 m : limite pluie-neige vers 2 500 m le 21 novembre, qui coupe la station : neige en haut, mouillé plus bas.",
+      "Les Arcs (bas 1 222 m, sommet 3 205 m) : limite pluie-neige vers 2 400 m le 21 novembre, à mi-pente. Neige au-dessus, pluie ou neige mouillée en dessous.",
+      "La Plagne, bas 1 217 m, sommet 3 058 m : limite pluie-neige vers 2 400 m le 21 novembre, qui coupe la station : neige en haut, mouillé plus bas.",
+      "Espace Haute Maurienne Vanoise (bas 1 306 m, sommet 2 948 m) : limite pluie-neige vers 2 400 m le 21 novembre, à mi-pente. Neige au-dessus, pluie ou neige mouillée en dessous."
+     ]
+    },
+    {
+     "h": "Risque de pluie sur neige",
+     "p": [
+      "Alpe d'Huez Grand Domaine : environ 92 cm en haut du domaine, limite pluie-neige au-dessus de mi-pente le 22 novembre. Pluie sur neige : lourde et mouillée d'abord, glacée après le regel.",
+      "Signal de risque à Les Arcs : environ 80 cm en altitude et une limite pluie-neige au-dessus de mi-pente le 22 novembre ; la pluie rendrait la neige mouillée, puis glacée.",
+      "La Plagne : environ 49 cm en haut du domaine, limite pluie-neige au-dessus de mi-pente le 22 novembre. Pluie sur neige : lourde et mouillée d'abord, glacée après le regel.",
+      "La prévision donne à Andermatt (2 963 m) 64 mm de précipitations, avec la limite pluie-neige vers 1 170 m pendant les heures humides.",
+      "Lugano (300 m) : 44 mm prévus, limite pluie-neige vers 950 m pendant ce temps."
+     ]
+    },
+    {
+     "h": "L'isotherme 0 °C et la limite pluie-neige, en bref",
+     "p": [
+      "L'air se refroidit avec l'altitude, en règle générale. Sous l'isotherme 0 °C les flocons commencent à fondre ; la fonte est lente, donc la pluie ne commence qu'environ 300 m plus bas. C'est la limite pluie-neige. Un air sec refroidit la neige par évaporation et pousse la limite encore plus bas."
+     ]
+    }
+   ],
+   "advice": [
+    "L'air doux ramollit la neige dès midi, alors skiez tôt, en haut et sur les pentes nord.",
+    "L'isotherme 0 °C est une prévision et peut bouger de plusieurs centaines de mètres, ce qui change l'endroit où la pluie devient neige : revoyez la carte la veille.",
+    "Avant toute sortie hors-piste ou en randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates sur son site."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans les Alpes le 21 novembre (modèle SnowScope), avec les stations de cette analyse et l'altitude de leur sommet."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  }
+ },
+ "words_en": 396,
+ "indexable": false,
+ "main": {
+  "slug": "la_grave",
+  "name": "La Grave",
+  "lat": 45.0195,
+  "lon": 6.2771
+ },
+ "places": [
+  {
+   "name": "La Grave",
+   "lat": 45.0195,
+   "lon": 6.2771
+  },
+  {
+   "name": "Alpe d'Huez Grand Domaine",
+   "lat": 45.1155,
+   "lon": 6.0858
+  },
+  {
+   "name": "Les Arcs",
+   "lat": 45.5707,
+   "lon": 6.8069
+  },
+  {
+   "name": "La Plagne",
+   "lat": 45.5088,
+   "lon": 6.6956
+  },
+  {
+   "name": "Espace Haute Maurienne Vanoise",
+   "lat": 45.2607,
+   "lon": 6.8458
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "la_grave",
+   "name": "La Grave"
+  },
+  {
+   "slug": "alpe_dhuez",
+   "name": "Alpe d'Huez Grand Domaine"
+  },
+  {
+   "slug": "les_arcs",
+   "name": "Les Arcs"
+  },
+  {
+   "slug": "la_plagne",
+   "name": "La Plagne"
+  },
+  {
+   "slug": "espace_haute_maurienne_vanoise",
+   "name": "Espace Haute Maurienne Vanoise"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "la_grave",
+    "name": "La Grave",
+    "depth": 132,
+    "new72": 92,
+    "next": 90,
+    "top_m": 3543
+   },
+   {
+    "slug": "alpe_dhuez",
+    "name": "Alpe d'Huez Grand Domaine",
+    "depth": 92,
+    "new72": 84,
+    "next": 89,
+    "top_m": 3306
+   },
+   {
+    "slug": "les_arcs",
+    "name": "Les Arcs",
+    "depth": 80,
+    "new72": 102,
+    "next": 74,
+    "top_m": 3205
+   },
+   {
+    "slug": "la_plagne",
+    "name": "La Plagne",
+    "depth": 49,
+    "new72": 91,
+    "next": 73,
+    "top_m": 3058
+   },
+   {
+    "slug": "espace_haute_maurienne_vanoise",
+    "name": "Espace Haute Maurienne Vanoise",
+    "depth": 81,
+    "new72": 62,
+    "next": 47,
+    "top_m": 2948
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "EAWS (Alps)",
+   "url": "https://www.avalanches.org/"
+  }
+ ],
+ "trip_day": "2026-11-28",
+ "map_link": "https://snowscope.app/#@45.020,6.277,9.0",
+ "seconds": 30.3,
+ "facts_used": 33,
+ "voice": "sat",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 36.2,
+  "after": 29.1,
+  "with": "pyrenees-freezing-level-snow-line-18-november-2026",
+  "tries": 1
+ },
+ "similarity": {
+  "max": 0.141,
+  "with": "pyrenees-freezing-level-snow-line-10-november-2026"
+ },
+ "publish_utc": "2026-11-21T12:33:48Z",
+ "noindex_why": "quality: words 511 < 600; dated pure-numbers daily; sentence-bank template article (AdSense review)",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 511 < 600",
+   "dated pure-numbers daily",
+   "sentence-bank template article (AdSense review)"
+  ],
+  "words": 511,
+  "overlap": 1.0,
+  "with": "ischgl-week-snow-diary-silvretta-arena-samnaun",
+  "langs_off": [],
+  "score": 45.9,
+  "intent": "alps|snow-line",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "ranked",
+  "files": {
+   "en": [
+    "blog/media/2026/11/alps-freezing-level-snow-line-21-november-2026/cover-en.webp",
+    "blog/media/2026/11/alps-freezing-level-snow-line-21-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/alps-freezing-level-snow-line-21-november-2026/cover-fr.webp",
+    "blog/media/2026/11/alps-freezing-level-snow-line-21-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}
