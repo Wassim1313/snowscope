@@ -492,6 +492,129 @@
 },
 "change_vs_yesterday_km2": 2070,
 "change_vs_7_days_km2": 5060
+},
+"2026-11-20": {
+"country": "Switzerland",
+"country_code": "CH",
+"date": "2026-11-20",
+"quiet": false,
+"modelled_km2": 31030,
+"snow_km2_today": 19900,
+"snow_km2_yesterday": 18160,
+"snow_km2_7_days_ago": 16170,
+"new_cm_24h_max": 37,
+"new_cm_72h_max": 99,
+"area_km2_5cm_new_72h": 18380,
+"next_3_days_max_cm": 72,
+"next_7_days_max_cm": 89,
+"snowiest_day": "2026-11-22",
+"snowiest_day_cm": 38,
+"first_snow_day": "2026-11-21",
+"hotspots": [
+{
+"name": "the Valais Alps",
+"new_cm_72h": 192,
+"lat": 45.96,
+"lon": 7.017
+},
+{
+"name": "the Bernese Oberland",
+"new_cm_72h": 119,
+"lat": 46.468,
+"lon": 7.988
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 9
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 2,
+"snow_cover_pct": 59
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 10,
+"snow_cover_pct": 93
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 16,
+"snow_cover_pct": 100
+},
+{
+"from_m": 2500,
+"to_m": 5000,
+"mean_depth_cm": 29,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 1200,
+"white_share_pct": 64,
+"resorts": [
+{
+"name": "Glacier 3000",
+"slug": "glacier_3000",
+"depth_cm": 124,
+"new_cm_72h": 128,
+"next_3_days_cm": 86,
+"top_m": 2931
+},
+{
+"name": "Lauchernalp",
+"slug": "lauchernalp",
+"depth_cm": 123,
+"new_cm_72h": 86,
+"next_3_days_cm": 68,
+"top_m": 3084
+},
+{
+"name": "Saint-Luc",
+"slug": "saint_luc_chandolin",
+"depth_cm": 116,
+"new_cm_72h": 84,
+"next_3_days_cm": 52,
+"top_m": 2973
+},
+{
+"name": "Leukerbad (Torrent)",
+"slug": "leukerbad_torrent",
+"depth_cm": 110,
+"new_cm_72h": 82,
+"next_3_days_cm": 61,
+"top_m": 2596
+},
+{
+"name": "Zermatt",
+"slug": "zermatt",
+"depth_cm": 109,
+"new_cm_72h": 100,
+"next_3_days_cm": 50,
+"top_m": 3872
+}
+],
+"n_resorts": 280,
+"n_resorts_with_snow": 224,
+"resort_next_until": "2026-11-23",
+"week2": {
+"week1_max_cm": 55,
+"week2_max_cm": 24,
+"week2_days": [
+"2026-11-28",
+"2026-12-04"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 1740,
+"change_vs_7_days_km2": 3730
 }
 }
 }

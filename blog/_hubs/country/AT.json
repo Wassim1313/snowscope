@@ -516,6 +516,135 @@
 },
 "change_vs_yesterday_km2": 5980,
 "change_vs_7_days_km2": 9210
+},
+"2026-11-20": {
+"country": "Austria",
+"country_code": "AT",
+"date": "2026-11-20",
+"quiet": false,
+"modelled_km2": 52110,
+"snow_km2_today": 22850,
+"snow_km2_yesterday": 25170,
+"snow_km2_7_days_ago": 24830,
+"new_cm_24h_max": 11,
+"new_cm_72h_max": 26,
+"area_km2_5cm_new_72h": 19620,
+"next_3_days_max_cm": 38,
+"next_7_days_max_cm": 44,
+"snowiest_day": "2026-11-23",
+"snowiest_day_cm": 15,
+"first_snow_day": "2026-11-21",
+"hotspots": [
+{
+"name": "Vorarlberg",
+"new_cm_72h": 41,
+"lat": 47.305,
+"lon": 9.828
+},
+{
+"name": "Carinthia",
+"new_cm_72h": 31,
+"lat": 46.441,
+"lon": 14.214
+},
+{
+"name": "the Ötztal Alps",
+"new_cm_72h": 28,
+"lat": 46.887,
+"lon": 10.865
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 3
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 1,
+"snow_cover_pct": 32
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 7,
+"snow_cover_pct": 97
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 16,
+"snow_cover_pct": 100
+},
+{
+"from_m": 2500,
+"to_m": 5000,
+"mean_depth_cm": 27,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 1400,
+"white_share_pct": 44,
+"resorts": [
+{
+"name": "Rifflsee",
+"slug": "rifflsee",
+"depth_cm": 120,
+"new_cm_72h": 17,
+"next_3_days_cm": 21,
+"top_m": 2804
+},
+{
+"name": "Ski Arlberg",
+"slug": "ski_arlberg",
+"depth_cm": 67,
+"new_cm_72h": 31,
+"next_3_days_cm": 37,
+"top_m": 2642
+},
+{
+"name": "Lech/Zürs",
+"slug": "lech_zurs",
+"depth_cm": 65,
+"new_cm_72h": 31,
+"next_3_days_cm": 39,
+"top_m": 2436
+},
+{
+"name": "St. Anton/St. Christoph/Stuben",
+"slug": "st_anton",
+"depth_cm": 65,
+"new_cm_72h": 25,
+"next_3_days_cm": 36,
+"top_m": 2642
+},
+{
+"name": "See",
+"slug": "see",
+"depth_cm": 62,
+"new_cm_72h": 21,
+"next_3_days_cm": 28,
+"top_m": 2567
+}
+],
+"n_resorts": 277,
+"n_resorts_with_snow": 217,
+"resort_next_until": "2026-11-23",
+"week2": {
+"week1_max_cm": 36,
+"week2_max_cm": 14,
+"week2_days": [
+"2026-11-28",
+"2026-12-04"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": -2320,
+"change_vs_7_days_km2": -1980
 }
 }
 }

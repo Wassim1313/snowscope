@@ -419,6 +419,108 @@
 },
 "change_vs_yesterday_km2": -10,
 "change_vs_7_days_km2": -510
+},
+"2026-11-20": {
+"country": "Czechia",
+"country_code": "CZ",
+"date": "2026-11-20",
+"quiet": false,
+"modelled_km2": 28470,
+"snow_km2_today": 660,
+"snow_km2_yesterday": 50,
+"snow_km2_7_days_ago": 1000,
+"new_cm_24h_max": 2,
+"new_cm_72h_max": 2,
+"area_km2_5cm_new_72h": 100,
+"next_3_days_max_cm": 4,
+"next_7_days_max_cm": 9,
+"snowiest_day": "2026-11-26",
+"snowiest_day_cm": 6,
+"first_snow_day": "2026-11-21",
+"hotspots": [
+{
+"name": "the Krkonoše",
+"new_cm_72h": 15,
+"lat": 50.736,
+"lon": 15.701
+},
+{
+"name": "the Jeseníky",
+"new_cm_72h": 7,
+"lat": 50.185,
+"lon": 17.103
+},
+{
+"name": "Šumava",
+"new_cm_72h": 6,
+"lat": 48.981,
+"lon": 13.543
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 1
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 1,
+"snow_cover_pct": 32
+}
+],
+"snow_line_m": 1200,
+"white_share_pct": 2,
+"resorts": [
+{
+"name": "Skiareál Horní Domky",
+"slug": "skiareal_horni_domky_lysa_hora",
+"depth_cm": 12,
+"new_cm_72h": 14,
+"next_3_days_cm": 6,
+"top_m": 1308
+},
+{
+"name": "Figura Praděd",
+"slug": "figura_praded",
+"depth_cm": 12,
+"new_cm_72h": 6,
+"next_3_days_cm": 3,
+"top_m": 1441
+},
+{
+"name": "Švýcárna",
+"slug": "svycarna",
+"depth_cm": 12,
+"new_cm_72h": 6,
+"next_3_days_cm": 3,
+"top_m": 1307
+},
+{
+"name": "Lyžařský vlek Malý Šišák",
+"slug": "lyzarsky_vlek_maly_sisak",
+"depth_cm": 11,
+"new_cm_72h": 8,
+"next_3_days_cm": 5,
+"top_m": 1153
+},
+{
+"name": "Ramzová",
+"slug": "ramzova",
+"depth_cm": 11,
+"new_cm_72h": 5,
+"next_3_days_cm": 3,
+"top_m": 1328
+}
+],
+"n_resorts": 171,
+"n_resorts_with_snow": 24,
+"resort_next_until": "2026-11-23",
+"week2": null,
+"change_vs_yesterday_km2": 610,
+"change_vs_7_days_km2": -340
 }
 }
 }

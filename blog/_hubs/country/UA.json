@@ -412,6 +412,98 @@
 },
 "change_vs_yesterday_km2": -80,
 "change_vs_7_days_km2": -3940
+},
+"2026-11-20": {
+"country": "Ukraine",
+"country_code": "UA",
+"date": "2026-11-20",
+"quiet": false,
+"modelled_km2": 17620,
+"snow_km2_today": 1100,
+"snow_km2_yesterday": 370,
+"snow_km2_7_days_ago": 13190,
+"new_cm_24h_max": 6,
+"new_cm_72h_max": 7,
+"area_km2_5cm_new_72h": 540,
+"next_3_days_max_cm": 17,
+"next_7_days_max_cm": 24,
+"snowiest_day": "2026-11-21",
+"snowiest_day_cm": 8,
+"first_snow_day": "2026-11-21",
+"hotspots": [
+{
+"name": "the Gorgany",
+"new_cm_72h": 15,
+"lat": 48.66,
+"lon": 23.871
+},
+{
+"name": "Chornohora",
+"new_cm_72h": 15,
+"lat": 47.926,
+"lon": 24.329
+},
+{
+"name": "the Borzhava ridge",
+"new_cm_72h": 12,
+"lat": 48.619,
+"lon": 23.194
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 18
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 6,
+"snow_cover_pct": 99
+}
+],
+"snow_line_m": 1300,
+"white_share_pct": 6,
+"resorts": [
+{
+"name": "Драгобрат",
+"slug": "drahobrat",
+"depth_cm": 11,
+"new_cm_72h": 11,
+"next_3_days_cm": 20,
+"top_m": 1706
+},
+{
+"name": "Pylypets",
+"slug": "pylypets",
+"depth_cm": 2,
+"new_cm_72h": 1,
+"next_3_days_cm": 8,
+"top_m": 1165
+},
+{
+"name": "Буковель",
+"slug": "bukowina",
+"depth_cm": 1,
+"new_cm_72h": 2,
+"next_3_days_cm": 14,
+"top_m": 1370
+}
+],
+"n_resorts": 20,
+"n_resorts_with_snow": 3,
+"resort_next_until": "2026-11-23",
+"week2": null,
+"change_vs_yesterday_km2": 730,
+"change_vs_7_days_km2": -12090
 }
 }
 }

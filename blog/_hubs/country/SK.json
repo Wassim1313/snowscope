@@ -480,6 +480,120 @@
 },
 "change_vs_yesterday_km2": -80,
 "change_vs_7_days_km2": 1100
+},
+"2026-11-20": {
+"country": "Slovakia",
+"country_code": "SK",
+"date": "2026-11-20",
+"quiet": false,
+"modelled_km2": 18610,
+"snow_km2_today": 1660,
+"snow_km2_yesterday": 2010,
+"snow_km2_7_days_ago": 4640,
+"new_cm_24h_max": 3,
+"new_cm_72h_max": 13,
+"area_km2_5cm_new_72h": 520,
+"next_3_days_max_cm": 6,
+"next_7_days_max_cm": 16,
+"snowiest_day": "2026-11-26",
+"snowiest_day_cm": 10,
+"first_snow_day": "2026-11-21",
+"hotspots": [
+{
+"name": "the High Tatras",
+"new_cm_72h": 20,
+"lat": 49.213,
+"lon": 19.684
+},
+{
+"name": "Malá Fatra",
+"new_cm_72h": 13,
+"lat": 49.191,
+"lon": 19.034
+},
+{
+"name": "the Low Tatras",
+"new_cm_72h": 13,
+"lat": 48.894,
+"lon": 19.352
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 3
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 1,
+"snow_cover_pct": 37
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 17,
+"snow_cover_pct": 100
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 28,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 1300,
+"white_share_pct": 9,
+"resorts": [
+{
+"name": "Vysoké Tatry",
+"slug": "vysoke_tatry_tatranska_lomnica",
+"depth_cm": 33,
+"new_cm_72h": 18,
+"next_3_days_cm": 11,
+"top_m": 2182
+},
+{
+"name": "Roháče",
+"slug": "rohace_spalena",
+"depth_cm": 27,
+"new_cm_72h": 17,
+"next_3_days_cm": 9,
+"top_m": 1496
+},
+{
+"name": "Štrbské Pleso",
+"slug": "strbske_pleso",
+"depth_cm": 26,
+"new_cm_72h": 20,
+"next_3_days_cm": 11,
+"top_m": 1822
+},
+{
+"name": "Jasna Low Tatras",
+"slug": "jasna_low_tatras",
+"depth_cm": 26,
+"new_cm_72h": 20,
+"next_3_days_cm": 8,
+"top_m": 2003
+},
+{
+"name": "Vrátna",
+"slug": "vratna",
+"depth_cm": 18,
+"new_cm_72h": 16,
+"next_3_days_cm": 12,
+"top_m": 1529
+}
+],
+"n_resorts": 107,
+"n_resorts_with_snow": 35,
+"resort_next_until": "2026-11-23",
+"week2": null,
+"change_vs_yesterday_km2": -350,
+"change_vs_7_days_km2": -2980
 }
 }
 }
