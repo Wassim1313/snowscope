@@ -69,14 +69,14 @@
      "p20": 45,
      "p50": 50,
      "p80": 65,
-     "p_ge50": 0.55,
+     "p_ge50": 0.53,
      "basis": "ensemble+climatology",
      "normal_cm": 90,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 9,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 6,
        "p50_cm": 55
       },
       "GFS": {
@@ -165,24 +165,24 @@
    "snow": {
     "now_cm": 30,
     "start": {
-     "cm": 40,
-     "p20": 35,
-     "p50": 40,
+     "cm": 35,
+     "p20": 30,
+     "p50": 35,
      "p80": 45,
-     "p_ge50": 0.12,
+     "p_ge50": 0.11,
      "basis": "ensemble+climatology",
      "normal_cm": 50,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
+       "horizon_days": 14,
        "snowfall_p50_cm": 5,
        "p50_cm": 40
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 22,
+       "snowfall_p50_cm": 17,
        "p50_cm": 35
       }
      },
@@ -207,18 +207,18 @@
     "pistes": "MID",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.73,
+   "value_cm_per_eur": 0.64,
    "pros": [
     "48 lifts"
    ],
    "cons": [
     "1,139 EUR per person",
-    "~40 cm at the start"
+    "~35 cm at the start"
    ],
-   "score": 79.1,
+   "score": 71.9,
    "score_parts": {
     "MONEY": 87,
-    "SNOW": 71
+    "SNOW": 57
    },
    "rank": 2
   },
@@ -267,21 +267,21 @@
      "cm": 30,
      "p20": 25,
      "p50": 30,
-     "p80": 40,
-     "p_ge50": 0.04,
+     "p80": 35,
+     "p_ge50": 0.03,
      "basis": "ensemble+climatology",
      "normal_cm": 30,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
+       "horizon_days": 14,
        "snowfall_p50_cm": 5,
        "p50_cm": 35
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 18,
+       "snowfall_p50_cm": 14,
        "p50_cm": 30
       }
      },
@@ -362,9 +362,9 @@
    "snow": {
     "now_cm": 25,
     "start": {
-     "cm": 35,
+     "cm": 30,
      "p20": 30,
-     "p50": 35,
+     "p50": 30,
      "p80": 40,
      "p_ge50": 0.01,
      "basis": "ensemble+climatology",
@@ -372,8 +372,8 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 4,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 3,
        "p50_cm": 35
       },
       "GFS": {
@@ -404,19 +404,19 @@
     "pistes": "LOW",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.79,
+   "value_cm_per_eur": 0.68,
    "pros": [
     "6-day pass 265 EUR"
    ],
    "cons": [
     "1,175 EUR per person",
     "only 25 km of pistes",
-    "~35 cm at the start"
+    "~30 cm at the start"
    ],
-   "score": 70.7,
+   "score": 63.5,
    "score_parts": {
     "MONEY": 84,
-    "SNOW": 57
+    "SNOW": 43
    },
    "rank": 4
   },
@@ -466,20 +466,20 @@
      "p20": 20,
      "p50": 25,
      "p80": 35,
-     "p_ge50": 0.05,
+     "p_ge50": 0.04,
      "basis": "ensemble+climatology",
      "normal_cm": 55,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 6,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 4,
        "p50_cm": 30
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 20,
+       "snowfall_p50_cm": 17,
        "p50_cm": 25
       }
      },
@@ -566,20 +566,20 @@
      "p20": 15,
      "p50": 20,
      "p80": 30,
-     "p_ge50": 0.03,
+     "p_ge50": 0.02,
      "basis": "ensemble+climatology",
      "normal_cm": 60,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 9,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 6,
        "p50_cm": 25
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 18,
+       "snowfall_p50_cm": 20,
        "p50_cm": 20
       }
      },
@@ -672,15 +672,15 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 6,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 4,
        "p50_cm": 20
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 16,
-       "p50_cm": 15
+       "snowfall_p50_cm": 13,
+       "p50_cm": 10
       }
      },
      "winters": 46
@@ -771,14 +771,14 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 6,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 4,
        "p50_cm": 20
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 20,
+       "snowfall_p50_cm": 17,
        "p50_cm": 15
       }
      },
@@ -870,14 +870,14 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 4,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 3,
        "p50_cm": 20
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 12,
+       "snowfall_p50_cm": 11,
        "p50_cm": 15
       }
      },
@@ -970,8 +970,8 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 4,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 3,
        "p50_cm": 20
       },
       "GFS": {
