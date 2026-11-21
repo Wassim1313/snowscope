@@ -10,7 +10,7 @@
  "budget_eur": 1000.0,
  "currency": "EUR",
  "fx": {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "source": "frankfurter.app",
   "rate": null
  },
@@ -18,7 +18,7 @@
   "MONEY",
   "SNOW"
  ],
- "snow_day0": "2026-11-19",
+ "snow_day0": "2026-11-21",
  "snow_stale": false,
  "projection": true,
  "travel": null,
@@ -63,27 +63,27 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 5,
+    "now_cm": 15,
     "start": {
-     "cm": 20,
-     "p20": 5,
-     "p50": 20,
-     "p80": 45,
-     "p_ge50": 0.16,
+     "cm": 30,
+     "p20": 20,
+     "p50": 30,
+     "p80": 50,
+     "p_ge50": 0.21,
      "basis": "ensemble+climatology",
      "normal_cm": 30,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 47,
-       "p50_cm": 35
+       "horizon_days": 13,
+       "snowfall_p50_cm": 43,
+       "p50_cm": 45
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 18,
-       "p50_cm": 10
+       "snowfall_p50_cm": 26,
+       "p50_cm": 25
       }
      },
      "winters": 46
@@ -107,12 +107,12 @@
     "pistes": "MID",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.41,
+   "value_cm_per_eur": 0.61,
    "pros": [
     "cheap places to stay"
    ],
    "cons": [
-    "~20 cm at the start"
+    "~30 cm at the start"
    ],
    "score": 95.0,
    "score_parts": {
@@ -122,100 +122,101 @@
    "rank": 1
   },
   {
-   "slug": "saint_lary",
-   "label": "Saint-Lary",
+   "slug": "peyragudes",
+   "label": "Peyragudes",
    "country": "FR",
    "area": "Hautes-Pyrenees",
-   "lat": 42.82509,
-   "lon": 0.25219,
-   "top_m": 2462,
-   "base_m": 1595,
-   "km": 72.0,
-   "lifts": 27,
+   "lat": 42.78013,
+   "lon": 0.45587,
+   "top_m": 2360,
+   "base_m": 1389,
+   "km": 44.0,
+   "lifts": 23,
    "opens": "2026-12-05",
-   "pass_day_eur": 59.0,
-   "pass_day_walkup": 59.0,
-   "pass_day_multi_eur": 47.5,
+   "pass_day_eur": 55.0,
+   "pass_day_walkup": 55.0,
+   "pass_day_multi_eur": 46.0,
    "pass_multi": {
     "days": 6,
-    "price": 285.0,
+    "price": 276.0,
     "ccy": "EUR",
-    "per_day": 47.5,
+    "per_day": 46.0,
     "estimated": false,
-    "note": "6-day adult Saison tariff, official Altiservice PDF, season covers Christmas/NY",
-    "src": "https://www.altiservice.com/sites/default/files/2026-09/ALT_2026_Saint-Lary_Hiver_Fiche-Tarifs_paysage_WEB.pdf"
+    "note": "6-day adult public rate, official N'PY, flat online=window",
+    "src": "https://www.n-py.com/fr/peyragudes/forfaits-ski"
    },
    "pass_day_local": {
     "ccy": "EUR",
-    "holiday": 59.0,
-    "regular": 54.7
+    "holiday": 55.0,
+    "regular": 51.0
    },
    "pass_period": "holiday",
-   "pass_note": "54.70 EUR is the published public adult day rate (ages 18-64); holiday-week uplift estimated by analogy with Grand Tourmalet (same N'PY-style Pyrenees pricing)",
-   "pass_src": "https://www.skideals.fr/station/saint-lary/forfaits",
+   "pass_note": "51 EUR is the published public adult day rate (ages 18-74); holiday-week uplift estimated by analogy with Grand Tourmalet (same N'PY-style pricing); 'No Souci' card gives 35.70-43.40 EUR",
+   "pass_src": "https://www.skideals.fr/station/peyragudes/forfaits",
    "night_eur": 55.0,
    "food_day_eur": 35.0,
-   "stay_src": "estimate: Saint-Lary studios/apartments from 58 EUR/night for the unit (~29 EUR pp for 2), 3-star hotels ~134 USD/night on booking.com; cafeteria lunch + simple dinner ~30-40 EUR",
+   "stay_src": "estimate: Peyragudes/Peyresourde area mid-range French Pyrenees pricing, similar to Saint-Lary",
    "estimates": [
     "night_eur",
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 5,
+    "now_cm": 20,
     "start": {
-     "cm": 15,
-     "p20": 10,
-     "p50": 15,
-     "p80": 35,
+     "cm": 25,
+     "p20": 25,
+     "p50": 25,
+     "p80": 40,
      "p_ge50": 0.11,
      "basis": "ensemble+climatology",
-     "normal_cm": 30,
+     "normal_cm": 20,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 28,
-       "p50_cm": 30
+       "horizon_days": 13,
+       "snowfall_p50_cm": 14,
+       "p50_cm": 35
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 8,
-       "p50_cm": 10
+       "snowfall_p50_cm": 11,
+       "p50_cm": 25
       }
      },
      "winters": 46
     }
    },
    "cost": {
-    "pass_eur": 285,
+    "pass_eur": 276,
     "hotel_eur": 385,
     "food_eur": 245,
-    "total_eur": 915,
+    "total_eur": 906,
     "pass_basis": "advance 6-day pass",
-    "pass_walkup": 354,
-    "party_total_eur": 915,
-    "left_eur": 85,
+    "pass_walkup": 330,
+    "party_total_eur": 906,
+    "left_eur": 94,
     "need_eur": 0,
     "fits": true
    },
    "tiers": {
     "pass": "MID",
     "hotel": "LOW",
-    "pistes": "MID",
+    "pistes": "LOW",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.32,
+   "value_cm_per_eur": 0.54,
    "pros": [
     "cheap places to stay"
    ],
    "cons": [
-    "~15 cm at the start"
+    "only 44 km of pistes",
+    "~25 cm at the start"
    ],
-   "score": 74.9,
+   "score": 79.9,
    "score_parts": {
-    "MONEY": 83,
-    "SNOW": 67
+    "MONEY": 85,
+    "SNOW": 75
    },
    "rank": 2
   },
@@ -260,27 +261,27 @@
     "pass_multi"
    ],
    "snow": {
-    "now_cm": 0,
+    "now_cm": 10,
     "start": {
-     "cm": 10,
-     "p20": 5,
-     "p50": 10,
-     "p80": 20,
-     "p_ge50": 0.01,
+     "cm": 20,
+     "p20": 10,
+     "p50": 20,
+     "p80": 30,
+     "p_ge50": 0.02,
      "basis": "ensemble+climatology",
      "normal_cm": 25,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 14,
-       "p50_cm": 15
+       "horizon_days": 13,
+       "snowfall_p50_cm": 13,
+       "p50_cm": 20
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 17,
-       "p50_cm": 5
+       "snowfall_p50_cm": 24,
+       "p50_cm": 20
       }
      },
      "winters": 46
@@ -304,20 +305,218 @@
     "pistes": "MID",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.24,
+   "value_cm_per_eur": 0.47,
    "pros": [
     "6-day pass 255 EUR",
     "cheap places to stay"
    ],
    "cons": [
-    "~10 cm at the start"
+    "~20 cm at the start"
    ],
-   "score": 66.7,
+   "score": 75.0,
    "score_parts": {
     "MONEY": 100,
-    "SNOW": 33
+    "SNOW": 50
    },
    "rank": 3
+  },
+  {
+   "slug": "saint_lary",
+   "label": "Saint-Lary",
+   "country": "FR",
+   "area": "Hautes-Pyrenees",
+   "lat": 42.82509,
+   "lon": 0.25219,
+   "top_m": 2462,
+   "base_m": 1595,
+   "km": 72.0,
+   "lifts": 27,
+   "opens": "2026-12-05",
+   "pass_day_eur": 59.0,
+   "pass_day_walkup": 59.0,
+   "pass_day_multi_eur": 47.5,
+   "pass_multi": {
+    "days": 6,
+    "price": 285.0,
+    "ccy": "EUR",
+    "per_day": 47.5,
+    "estimated": false,
+    "note": "6-day adult Saison tariff, official Altiservice PDF, season covers Christmas/NY",
+    "src": "https://www.altiservice.com/sites/default/files/2026-09/ALT_2026_Saint-Lary_Hiver_Fiche-Tarifs_paysage_WEB.pdf"
+   },
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 59.0,
+    "regular": 54.7
+   },
+   "pass_period": "holiday",
+   "pass_note": "54.70 EUR is the published public adult day rate (ages 18-64); holiday-week uplift estimated by analogy with Grand Tourmalet (same N'PY-style Pyrenees pricing)",
+   "pass_src": "https://www.skideals.fr/station/saint-lary/forfaits",
+   "night_eur": 55.0,
+   "food_day_eur": 35.0,
+   "stay_src": "estimate: Saint-Lary studios/apartments from 58 EUR/night for the unit (~29 EUR pp for 2), 3-star hotels ~134 USD/night on booking.com; cafeteria lunch + simple dinner ~30-40 EUR",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 10,
+    "start": {
+     "cm": 15,
+     "p20": 10,
+     "p50": 15,
+     "p80": 35,
+     "p_ge50": 0.1,
+     "basis": "ensemble+climatology",
+     "normal_cm": 30,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 26,
+       "p50_cm": 30
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 11,
+       "p50_cm": 15
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 285,
+    "hotel_eur": 385,
+    "food_eur": 245,
+    "total_eur": 915,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 354,
+    "party_total_eur": 915,
+    "left_eur": 85,
+    "need_eur": 0,
+    "fits": true
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "LOW",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.32,
+   "pros": [
+    "cheap places to stay"
+   ],
+   "cons": [
+    "~15 cm at the start"
+   ],
+   "score": 54.1,
+   "score_parts": {
+    "MONEY": 83,
+    "SNOW": 25
+   },
+   "rank": 4
+  },
+  {
+   "slug": "pal_arinsal",
+   "label": "Pal Arinsal",
+   "country": "AD",
+   "area": "Andorra",
+   "lat": 42.54575,
+   "lon": 1.45333,
+   "top_m": 2494,
+   "base_m": 1554,
+   "km": 39.0,
+   "lifts": 31,
+   "opens": "2026-12-05",
+   "pass_day_eur": 54.17,
+   "pass_day_walkup": 54.17,
+   "pass_day_multi_eur": 50.0,
+   "pass_multi": {
+    "days": 6,
+    "price": 300.0,
+    "ccy": "EUR",
+    "per_day": 50.0,
+    "estimated": false,
+    "note": "Nord Pass 6-day adult, valid Pal Arinsal+Ordino Arcalis (official Vallnord)",
+    "src": "https://www.palarinsal.com/es/forfait/temporada/nord-pass"
+   },
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 55.0,
+    "regular": 50.0
+   },
+   "pass_period": "mixed",
+   "pass_note": "dynamic pricing, up to 15% discount buying online in advance; 50 EUR is the standard public adult day rate - holiday figure is an estimate; opening date is typical (no official 2026-27 date found)",
+   "pass_src": "https://www.caranvasports.com/products/pal-arinsal-ski-pass",
+   "night_eur": 75.0,
+   "food_day_eur": 40.0,
+   "stay_src": "estimate: Pal-Arinsal lodging runs cheaper than Grandvalira/Baqueira; Andorra VAT-free dining ~15-20 EUR/meal",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 5,
+    "start": {
+     "cm": 20,
+     "p20": 10,
+     "p50": 20,
+     "p80": 25,
+     "p_ge50": 0.03,
+     "basis": "ensemble+climatology",
+     "normal_cm": 35,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 10,
+       "p50_cm": 20
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 31,
+       "p50_cm": 15
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 300,
+    "hotel_eur": 525,
+    "food_eur": 280,
+    "total_eur": 1105,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 325,
+    "party_total_eur": 1105,
+    "left_eur": -105,
+    "need_eur": 105,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "MID",
+    "pistes": "LOW",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.4,
+   "pros": [
+    "31 lifts"
+   ],
+   "cons": [
+    "1,105 EUR per person",
+    "only 39 km of pistes",
+    "~20 cm at the start"
+   ],
+   "score": 50.7,
+   "score_parts": {
+    "MONEY": 51,
+    "SNOW": 50
+   },
+   "rank": 5
   },
   {
    "slug": "font_romeu_pyrenees_2000_font_romeu",
@@ -371,15 +570,15 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
+       "horizon_days": 13,
        "snowfall_p50_cm": 5,
-       "p50_cm": 10
+       "p50_cm": 5
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 17,
-       "p50_cm": 5
+       "snowfall_p50_cm": 21,
+       "p50_cm": 10
       }
      },
      "winters": 46
@@ -412,12 +611,111 @@
     "only 36 km of pistes",
     "~10 cm at the start"
    ],
-   "score": 66.6,
+   "score": 49.9,
    "score_parts": {
     "MONEY": 100,
-    "SNOW": 33
+    "SNOW": 0
    },
-   "rank": 4
+   "rank": 6
+  },
+  {
+   "slug": "aramon_cerler",
+   "label": "Cerler",
+   "country": "ES",
+   "area": "Aragon",
+   "lat": 42.56028,
+   "lon": 0.55585,
+   "top_m": 2618,
+   "base_m": 1503,
+   "km": 62.0,
+   "lifts": 22,
+   "opens": "2026-11-27",
+   "pass_day_eur": 60.1,
+   "pass_day_walkup": 60.1,
+   "pass_day_multi_eur": 53.33,
+   "pass_multi": {
+    "days": 6,
+    "price": 320.0,
+    "ccy": "EUR",
+    "per_day": 53.33,
+    "estimated": false,
+    "note": "6-day adult pass via aggregator; one source says 2026-27 rate not yet officially published, provisional",
+    "src": "https://www.caranvasports.com"
+   },
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 61.0,
+    "regular": 55.6
+   },
+   "pass_period": "mixed",
+   "pass_note": "Aramon-group pricing with a similar structure to Formigal; 55.60 EUR is the official technical-sheet base adult day rate, holiday figure estimated",
+   "pass_src": "https://www.infonieve.es/estacion-esqui/cerler/ficha-tecnica/",
+   "night_eur": 65.0,
+   "food_day_eur": 38.0,
+   "stay_src": "estimate: Cerler/Benasque valley 3-star doubles ~100-140 EUR in high season; menu del dia ~16-20 EUR",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 10,
+    "start": {
+     "cm": 15,
+     "p20": 15,
+     "p50": 15,
+     "p80": 30,
+     "p_ge50": 0.08,
+     "basis": "ensemble+climatology",
+     "normal_cm": 25,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 9,
+       "p50_cm": 25
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 11,
+       "p50_cm": 15
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 320,
+    "hotel_eur": 455,
+    "food_eur": 266,
+    "total_eur": 1041,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 361,
+    "party_total_eur": 1041,
+    "left_eur": -41,
+    "need_eur": 41,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.28,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,041 EUR per person",
+    "~15 cm at the start"
+   ],
+   "score": 43.5,
+   "score_parts": {
+    "MONEY": 62,
+    "SNOW": 25
+   },
+   "rank": 7
   },
   {
    "slug": "formigal",
@@ -465,21 +763,21 @@
      "p20": 5,
      "p50": 15,
      "p80": 35,
-     "p_ge50": 0.13,
+     "p_ge50": 0.12,
      "basis": "ensemble+climatology",
      "normal_cm": 35,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 25,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 29,
        "p50_cm": 25
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 15,
-       "p50_cm": 10
+       "snowfall_p50_cm": 27,
+       "p50_cm": 15
       }
      },
      "winters": 46
@@ -511,308 +809,10 @@
     "1,080 EUR per person",
     "~15 cm at the start"
    ],
-   "score": 61.1,
+   "score": 40.3,
    "score_parts": {
     "MONEY": 56,
-    "SNOW": 67
-   },
-   "rank": 5
-  },
-  {
-   "slug": "pal_arinsal",
-   "label": "Pal Arinsal",
-   "country": "AD",
-   "area": "Andorra",
-   "lat": 42.54575,
-   "lon": 1.45333,
-   "top_m": 2494,
-   "base_m": 1554,
-   "km": 39.0,
-   "lifts": 31,
-   "opens": "2026-12-05",
-   "pass_day_eur": 54.17,
-   "pass_day_walkup": 54.17,
-   "pass_day_multi_eur": 50.0,
-   "pass_multi": {
-    "days": 6,
-    "price": 300.0,
-    "ccy": "EUR",
-    "per_day": 50.0,
-    "estimated": false,
-    "note": "Nord Pass 6-day adult, valid Pal Arinsal+Ordino Arcalis (official Vallnord)",
-    "src": "https://www.palarinsal.com/es/forfait/temporada/nord-pass"
-   },
-   "pass_day_local": {
-    "ccy": "EUR",
-    "holiday": 55.0,
-    "regular": 50.0
-   },
-   "pass_period": "mixed",
-   "pass_note": "dynamic pricing, up to 15% discount buying online in advance; 50 EUR is the standard public adult day rate - holiday figure is an estimate; opening date is typical (no official 2026-27 date found)",
-   "pass_src": "https://www.caranvasports.com/products/pal-arinsal-ski-pass",
-   "night_eur": 75.0,
-   "food_day_eur": 40.0,
-   "stay_src": "estimate: Pal-Arinsal lodging runs cheaper than Grandvalira/Baqueira; Andorra VAT-free dining ~15-20 EUR/meal",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 5,
-    "start": {
-     "cm": 15,
-     "p20": 5,
-     "p50": 15,
-     "p80": 30,
-     "p_ge50": 0.04,
-     "basis": "ensemble+climatology",
-     "normal_cm": 35,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 10,
-       "p50_cm": 20
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 20,
-       "p50_cm": 10
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 300,
-    "hotel_eur": 525,
-    "food_eur": 280,
-    "total_eur": 1105,
-    "pass_basis": "advance 6-day pass",
-    "pass_walkup": 325,
-    "party_total_eur": 1105,
-    "left_eur": -105,
-    "need_eur": 105,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "MID",
-    "hotel": "MID",
-    "pistes": "LOW",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.3,
-   "pros": [
-    "31 lifts"
-   ],
-   "cons": [
-    "1,105 EUR per person",
-    "only 39 km of pistes",
-    "~15 cm at the start"
-   ],
-   "score": 59.0,
-   "score_parts": {
-    "MONEY": 51,
-    "SNOW": 67
-   },
-   "rank": 6
-  },
-  {
-   "slug": "aramon_cerler",
-   "label": "Cerler",
-   "country": "ES",
-   "area": "Aragon",
-   "lat": 42.56028,
-   "lon": 0.55585,
-   "top_m": 2618,
-   "base_m": 1503,
-   "km": 62.0,
-   "lifts": 22,
-   "opens": "2026-11-27",
-   "pass_day_eur": 60.1,
-   "pass_day_walkup": 60.1,
-   "pass_day_multi_eur": 53.33,
-   "pass_multi": {
-    "days": 6,
-    "price": 320.0,
-    "ccy": "EUR",
-    "per_day": 53.33,
-    "estimated": false,
-    "note": "6-day adult pass via aggregator; one source says 2026-27 rate not yet officially published, provisional",
-    "src": "https://www.caranvasports.com"
-   },
-   "pass_day_local": {
-    "ccy": "EUR",
-    "holiday": 61.0,
-    "regular": 55.6
-   },
-   "pass_period": "mixed",
-   "pass_note": "Aramon-group pricing with a similar structure to Formigal; 55.60 EUR is the official technical-sheet base adult day rate, holiday figure estimated",
-   "pass_src": "https://www.infonieve.es/estacion-esqui/cerler/ficha-tecnica/",
-   "night_eur": 65.0,
-   "food_day_eur": 38.0,
-   "stay_src": "estimate: Cerler/Benasque valley 3-star doubles ~100-140 EUR in high season; menu del dia ~16-20 EUR",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 5,
-    "start": {
-     "cm": 10,
-     "p20": 5,
-     "p50": 10,
-     "p80": 25,
-     "p_ge50": 0.05,
-     "basis": "ensemble+climatology",
-     "normal_cm": 25,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 7,
-       "p50_cm": 20
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 8,
-       "p50_cm": 5
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 320,
-    "hotel_eur": 455,
-    "food_eur": 266,
-    "total_eur": 1041,
-    "pass_basis": "advance 6-day pass",
-    "pass_walkup": 361,
-    "party_total_eur": 1041,
-    "left_eur": -41,
-    "need_eur": 41,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "MID",
-    "hotel": "MID",
-    "pistes": "MID",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.19,
-   "pros": [
-    "solid all-rounder"
-   ],
-   "cons": [
-    "1,041 EUR per person",
-    "~10 cm at the start"
-   ],
-   "score": 47.7,
-   "score_parts": {
-    "MONEY": 62,
-    "SNOW": 33
-   },
-   "rank": 7
-  },
-  {
-   "slug": "peyragudes",
-   "label": "Peyragudes",
-   "country": "FR",
-   "area": "Hautes-Pyrenees",
-   "lat": 42.78013,
-   "lon": 0.45587,
-   "top_m": 2360,
-   "base_m": 1389,
-   "km": 44.0,
-   "lifts": 23,
-   "opens": "2026-12-05",
-   "pass_day_eur": 55.0,
-   "pass_day_walkup": 55.0,
-   "pass_day_multi_eur": 46.0,
-   "pass_multi": {
-    "days": 6,
-    "price": 276.0,
-    "ccy": "EUR",
-    "per_day": 46.0,
-    "estimated": false,
-    "note": "6-day adult public rate, official N'PY, flat online=window",
-    "src": "https://www.n-py.com/fr/peyragudes/forfaits-ski"
-   },
-   "pass_day_local": {
-    "ccy": "EUR",
-    "holiday": 55.0,
-    "regular": 51.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "51 EUR is the published public adult day rate (ages 18-74); holiday-week uplift estimated by analogy with Grand Tourmalet (same N'PY-style pricing); 'No Souci' card gives 35.70-43.40 EUR",
-   "pass_src": "https://www.skideals.fr/station/peyragudes/forfaits",
-   "night_eur": 55.0,
-   "food_day_eur": 35.0,
-   "stay_src": "estimate: Peyragudes/Peyresourde area mid-range French Pyrenees pricing, similar to Saint-Lary",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 0,
-    "start": {
-     "cm": 5,
-     "p20": 0,
-     "p50": 5,
-     "p80": 20,
-     "p_ge50": 0.02,
-     "basis": "ensemble+climatology",
-     "normal_cm": 20,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 14,
-       "p50_cm": 15
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 8,
-       "p50_cm": 5
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 276,
-    "hotel_eur": 385,
-    "food_eur": 245,
-    "total_eur": 906,
-    "pass_basis": "advance 6-day pass",
-    "pass_walkup": 330,
-    "party_total_eur": 906,
-    "left_eur": 94,
-    "need_eur": 0,
-    "fits": true
-   },
-   "tiers": {
-    "pass": "MID",
-    "hotel": "LOW",
-    "pistes": "LOW",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.11,
-   "pros": [
-    "cheap places to stay"
-   ],
-   "cons": [
-    "only 44 km of pistes",
-    "~5 cm at the start"
-   ],
-   "score": 42.4,
-   "score_parts": {
-    "MONEY": 85,
-    "SNOW": 0
+    "SNOW": 25
    },
    "rank": 8
   },
@@ -856,27 +856,27 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 0,
+    "now_cm": 10,
     "start": {
-     "cm": 15,
-     "p20": 5,
-     "p50": 15,
-     "p80": 30,
-     "p_ge50": 0.06,
+     "cm": 25,
+     "p20": 15,
+     "p50": 25,
+     "p80": 40,
+     "p_ge50": 0.1,
      "basis": "ensemble+climatology",
      "normal_cm": 30,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 27,
-       "p50_cm": 25
+       "horizon_days": 13,
+       "snowfall_p50_cm": 25,
+       "p50_cm": 35
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 17,
-       "p50_cm": 10
+       "snowfall_p50_cm": 24,
+       "p50_cm": 20
       }
      },
      "winters": 46
@@ -900,19 +900,19 @@
     "pistes": "HIGH",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.25,
+   "value_cm_per_eur": 0.42,
    "pros": [
     "154 km of pistes",
     "36 lifts"
    ],
    "cons": [
     "1,405 EUR per person",
-    "~15 cm at the start"
+    "~25 cm at the start"
    ],
-   "score": 33.8,
+   "score": 38.0,
    "score_parts": {
     "MONEY": 1,
-    "SNOW": 67
+    "SNOW": 75
    },
    "rank": 9
   },
@@ -956,27 +956,27 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 0,
+    "now_cm": 15,
     "start": {
-     "cm": 15,
-     "p20": 5,
-     "p50": 15,
-     "p80": 30,
-     "p_ge50": 0.05,
+     "cm": 25,
+     "p20": 15,
+     "p50": 25,
+     "p80": 40,
+     "p_ge50": 0.12,
      "basis": "ensemble+climatology",
      "normal_cm": 45,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 14,
-       "p50_cm": 25
+       "horizon_days": 13,
+       "snowfall_p50_cm": 12,
+       "p50_cm": 30
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 20,
-       "p50_cm": 10
+       "snowfall_p50_cm": 31,
+       "p50_cm": 25
       }
      },
      "winters": 46
@@ -1000,20 +1000,20 @@
     "pistes": "HIGH",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.23,
+   "value_cm_per_eur": 0.38,
    "pros": [
     "136 km of pistes",
     "53 lifts"
    ],
    "cons": [
     "1,411 EUR per person",
-    "~15 cm at the start",
+    "~25 cm at the start",
     "6-day pass 396 EUR"
    ],
-   "score": 33.3,
+   "score": 37.5,
    "score_parts": {
     "MONEY": 0,
-    "SNOW": 67
+    "SNOW": 75
    },
    "rank": 10
   }

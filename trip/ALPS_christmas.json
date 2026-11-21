@@ -10,7 +10,7 @@
  "budget_eur": 1000.0,
  "currency": "EUR",
  "fx": {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "source": "frankfurter.app",
   "rate": null
  },
@@ -18,7 +18,7 @@
   "MONEY",
   "SNOW"
  ],
- "snow_day0": "2026-11-19",
+ "snow_day0": "2026-11-21",
  "snow_stale": false,
  "projection": true,
  "travel": null,
@@ -63,27 +63,27 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 70,
+    "now_cm": 75,
     "start": {
-     "cm": 140,
-     "p20": 120,
-     "p50": 140,
-     "p80": 160,
+     "cm": 120,
+     "p20": 105,
+     "p50": 120,
+     "p80": 140,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 120,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 73,
-       "p50_cm": 140
+       "horizon_days": 13,
+       "snowfall_p50_cm": 48,
+       "p50_cm": 130
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 177,
-       "p50_cm": 145
+       "snowfall_p50_cm": 92,
+       "p50_cm": 115
       }
      },
      "winters": 46
@@ -107,19 +107,19 @@
     "pistes": "MID",
     "snow": "HIGH"
    },
-   "value_cm_per_eur": 4.35,
+   "value_cm_per_eur": 3.73,
    "pros": [
-    "~140 cm at the start",
+    "~120 cm at the start",
     "6-day pass 193 EUR",
     "cheap places to stay"
    ],
    "cons": [
     "10 lifts, queues on peak days"
    ],
-   "score": 79.9,
+   "score": 72.3,
    "score_parts": {
     "MONEY": 96,
-    "SNOW": 63
+    "SNOW": 48
    },
    "rank": 1
   },
@@ -163,27 +163,27 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 45,
+    "now_cm": 50,
     "start": {
-     "cm": 115,
-     "p20": 100,
-     "p50": 115,
-     "p80": 130,
+     "cm": 100,
+     "p20": 85,
+     "p50": 100,
+     "p80": 115,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 75,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 112,
-       "p50_cm": 115
+       "horizon_days": 13,
+       "snowfall_p50_cm": 71,
+       "p50_cm": 100
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 171,
-       "p50_cm": 115
+       "snowfall_p50_cm": 113,
+       "p50_cm": 95
       }
      },
      "winters": 46
@@ -207,7 +207,7 @@
     "pistes": "LOW",
     "snow": "MID"
    },
-   "value_cm_per_eur": 3.25,
+   "value_cm_per_eur": 2.83,
    "pros": [
     "6-day pass 212 EUR",
     "cheap places to stay"
@@ -216,10 +216,10 @@
     "only 30 km of pistes",
     "10 lifts, queues on peak days"
    ],
-   "score": 73.3,
+   "score": 66.7,
    "score_parts": {
     "MONEY": 100,
-    "SNOW": 47
+    "SNOW": 33
    },
    "rank": 2
   },
@@ -265,25 +265,25 @@
    "snow": {
     "now_cm": 50,
     "start": {
-     "cm": 120,
-     "p20": 105,
-     "p50": 120,
-     "p80": 135,
+     "cm": 100,
+     "p20": 85,
+     "p50": 100,
+     "p80": 115,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 80,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 112,
-       "p50_cm": 120
+       "horizon_days": 13,
+       "snowfall_p50_cm": 71,
+       "p50_cm": 100
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 171,
-       "p50_cm": 120
+       "snowfall_p50_cm": 113,
+       "p50_cm": 95
       }
      },
      "winters": 46
@@ -305,11 +305,10 @@
     "pass": "LOW",
     "hotel": "LOW",
     "pistes": "LOW",
-    "snow": "HIGH"
+    "snow": "MID"
    },
-   "value_cm_per_eur": 3.32,
+   "value_cm_per_eur": 2.77,
    "pros": [
-    "~120 cm at the start",
     "6-day pass 217 EUR",
     "cheap places to stay"
    ],
@@ -317,10 +316,10 @@
     "only 36 km of pistes",
     "9 lifts, queues on peak days"
    ],
-   "score": 72.5,
+   "score": 64.2,
    "score_parts": {
     "MONEY": 95,
-    "SNOW": 50
+    "SNOW": 33
    },
    "rank": 3
   },
@@ -366,25 +365,25 @@
    "snow": {
     "now_cm": 60,
     "start": {
-     "cm": 125,
-     "p20": 105,
-     "p50": 125,
-     "p80": 145,
+     "cm": 105,
+     "p20": 90,
+     "p50": 105,
+     "p80": 120,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 90,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 73,
-       "p50_cm": 115
+       "horizon_days": 13,
+       "snowfall_p50_cm": 48,
+       "p50_cm": 110
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 177,
-       "p50_cm": 130
+       "snowfall_p50_cm": 92,
+       "p50_cm": 100
       }
      },
      "winters": 46
@@ -406,21 +405,21 @@
     "pass": "LOW",
     "hotel": "LOW",
     "pistes": "MID",
-    "snow": "HIGH"
+    "snow": "MID"
    },
-   "value_cm_per_eur": 2.9,
+   "value_cm_per_eur": 2.44,
    "pros": [
-    "~125 cm at the start",
     "6-day pass 258 EUR",
-    "cheap places to stay"
+    "cheap places to stay",
+    "32 lifts"
    ],
    "cons": [
     "small village, few shops"
    ],
-   "score": 71.3,
+   "score": 63.2,
    "score_parts": {
     "MONEY": 89,
-    "SNOW": 53
+    "SNOW": 37
    },
    "rank": 4
   },
@@ -465,27 +464,27 @@
     "pass_multi"
    ],
    "snow": {
-    "now_cm": 65,
+    "now_cm": 70,
     "start": {
-     "cm": 140,
-     "p20": 125,
-     "p50": 140,
-     "p80": 165,
+     "cm": 125,
+     "p20": 100,
+     "p50": 125,
+     "p80": 145,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 90,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 135,
-       "p50_cm": 150
+       "horizon_days": 13,
+       "snowfall_p50_cm": 86,
+       "p50_cm": 135
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 177,
-       "p50_cm": 135
+       "snowfall_p50_cm": 92,
+       "p50_cm": 110
       }
      },
      "winters": 46
@@ -509,17 +508,17 @@
     "pistes": "MID",
     "snow": "HIGH"
    },
-   "value_cm_per_eur": 2.7,
+   "value_cm_per_eur": 2.41,
    "pros": [
-    "~140 cm at the start"
+    "~125 cm at the start"
    ],
    "cons": [
     "1,081 EUR per person"
    ],
-   "score": 68.4,
+   "score": 62.7,
    "score_parts": {
     "MONEY": 74,
-    "SNOW": 63
+    "SNOW": 52
    },
    "rank": 5
   },
@@ -563,27 +562,27 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 35,
+    "now_cm": 45,
     "start": {
-     "cm": 105,
-     "p20": 90,
-     "p50": 105,
-     "p80": 120,
+     "cm": 90,
+     "p20": 75,
+     "p50": 90,
+     "p80": 105,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 75,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 106,
-       "p50_cm": 105
+       "horizon_days": 13,
+       "snowfall_p50_cm": 71,
+       "p50_cm": 95
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 171,
-       "p50_cm": 105
+       "snowfall_p50_cm": 113,
+       "p50_cm": 90
       }
      },
      "winters": 46
@@ -607,20 +606,121 @@
     "pistes": "LOW",
     "snow": "MID"
    },
-   "value_cm_per_eur": 3.3,
+   "value_cm_per_eur": 2.83,
    "pros": [
     "6-day pass 191 EUR",
     "cheap places to stay"
    ],
    "cons": [
-    "only 45 km of pistes"
+    "only 45 km of pistes",
+    "~90 cm at the start"
    ],
-   "score": 67.4,
+   "score": 60.4,
    "score_parts": {
     "MONEY": 95,
-    "SNOW": 40
+    "SNOW": 26
    },
    "rank": 6
+  },
+  {
+   "slug": "gletscher_skigebiet_zugspitze_ski_resort_zugspit",
+   "label": "Zugspitze",
+   "country": "DE",
+   "area": "Bavaria",
+   "lat": 47.41297,
+   "lon": 10.98583,
+   "top_m": 2627,
+   "base_m": 995,
+   "km": 16.0,
+   "lifts": 38,
+   "opens": "2026-11-27",
+   "pass_day_eur": 70.5,
+   "pass_day_walkup": 70.5,
+   "pass_day_multi_eur": 59.93,
+   "pass_multi": {
+    "days": 6,
+    "price": 359.55,
+    "ccy": "EUR",
+    "per_day": 59.93,
+    "estimated": true,
+    "note": "estimate: 0.85 x day pass x 6; zugspitze.de unreachable this session (WebFetch/WebSearch blocked)",
+    "src": "https://zugspitze.de"
+   },
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 70.5,
+    "regular": 70.5
+   },
+   "pass_period": "holiday",
+   "pass_note": "online; 78 EUR at the desk",
+   "pass_src": "https://zugspitze.de",
+   "night_eur": 70.0,
+   "food_day_eur": 48.0,
+   "stay_src": "estimate: Garmisch / Grainau hotels; hut lunch 20.40 EUR, Schnitzel 23.90 EUR",
+   "estimates": [
+    "night_eur",
+    "food_day_eur",
+    "pass_multi"
+   ],
+   "snow": {
+    "now_cm": 80,
+    "start": {
+     "cm": 105,
+     "p20": 95,
+     "p50": 105,
+     "p80": 135,
+     "p_ge50": 1.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 115,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 33,
+       "p50_cm": 130
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 38,
+       "p50_cm": 95
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 360,
+    "hotel_eur": 490,
+    "food_eur": 336,
+    "total_eur": 1186,
+    "pass_basis": "advance 6-day pass (estimate)",
+    "pass_walkup": 423,
+    "party_total_eur": 1186,
+    "left_eur": -186,
+    "need_eur": 186,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "MID",
+    "pistes": "LOW",
+    "snow": "MID"
+   },
+   "value_cm_per_eur": 1.75,
+   "pros": [
+    "38 lifts"
+   ],
+   "cons": [
+    "1,186 EUR per person",
+    "only 16 km of pistes"
+   ],
+   "score": 51.0,
+   "score_parts": {
+    "MONEY": 65,
+    "SNOW": 37
+   },
+   "rank": 7
   },
   {
    "slug": "val_thorens",
@@ -662,27 +762,27 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 130,
+    "now_cm": 135,
     "start": {
-     "cm": 195,
-     "p20": 180,
-     "p50": 195,
-     "p80": 225,
+     "cm": 190,
+     "p20": 170,
+     "p50": 190,
+     "p80": 210,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 150,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 106,
-       "p50_cm": 215
+       "horizon_days": 13,
+       "snowfall_p50_cm": 72,
+       "p50_cm": 200
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 148,
-       "p50_cm": 190
+       "snowfall_p50_cm": 96,
+       "p50_cm": 175
       }
      },
      "winters": 46
@@ -706,9 +806,9 @@
     "pistes": "HIGH",
     "snow": "HIGH"
    },
-   "value_cm_per_eur": 3.18,
+   "value_cm_per_eur": 3.1,
    "pros": [
-    "~195 cm at the start",
+    "~190 cm at the start",
     "141 km of pistes",
     "skiing up to 3221 m"
    ],
@@ -720,107 +820,6 @@
    "score_parts": {
     "MONEY": 0,
     "SNOW": 100
-   },
-   "rank": 7
-  },
-  {
-   "slug": "ovronnaz",
-   "label": "Ovronnaz",
-   "country": "CH",
-   "area": "Valais",
-   "lat": 46.20254,
-   "lon": 7.13818,
-   "top_m": 2456,
-   "base_m": 1340,
-   "km": 17.0,
-   "lifts": 7,
-   "opens": "2026-12-12",
-   "pass_day_eur": 70.18,
-   "pass_day_walkup": 70.18,
-   "pass_day_multi_eur": 59.65,
-   "pass_multi": {
-    "days": 6,
-    "price": 331.5,
-    "ccy": "CHF",
-    "per_day": 55.25,
-    "estimated": true,
-    "note": "estimate: 0.85 x day pass x 6; ovronnaz.ch unreachable this session (WebFetch/WebSearch blocked)",
-    "src": "https://www.ovronnaz.ch"
-   },
-   "pass_day_local": {
-    "ccy": "CHF",
-    "holiday": 65.0,
-    "regular": 65.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult day pass CHF 65",
-   "pass_src": "https://www.ovronnaz.ch",
-   "night_eur": 100.41,
-   "food_day_eur": 61.54,
-   "stay_src": "estimate: CHF 180-220 doubles; menu CHF 24, pasta CHF 18",
-   "estimates": [
-    "night_eur",
-    "food_day_eur",
-    "pass_multi"
-   ],
-   "snow": {
-    "now_cm": 55,
-    "start": {
-     "cm": 130,
-     "p20": 110,
-     "p50": 130,
-     "p80": 145,
-     "p_ge50": 1.0,
-     "basis": "ensemble+climatology",
-     "normal_cm": 70,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 104,
-       "p50_cm": 120
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 205,
-       "p50_cm": 135
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 358,
-    "hotel_eur": 703,
-    "food_eur": 431,
-    "total_eur": 1492,
-    "pass_basis": "advance 6-day pass (estimate)",
-    "pass_walkup": 421,
-    "party_total_eur": 1492,
-    "left_eur": -492,
-    "need_eur": 492,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "MID",
-    "hotel": "MID",
-    "pistes": "LOW",
-    "snow": "HIGH"
-   },
-   "value_cm_per_eur": 2.18,
-   "pros": [
-    "~130 cm at the start"
-   ],
-   "cons": [
-    "1,492 EUR per person",
-    "only 17 km of pistes",
-    "7 lifts, queues on peak days"
-   ],
-   "score": 48.3,
-   "score_parts": {
-    "MONEY": 40,
-    "SNOW": 57
    },
    "rank": 8
   },
@@ -865,27 +864,27 @@
     "pass_multi"
    ],
    "snow": {
-    "now_cm": 60,
+    "now_cm": 65,
     "start": {
-     "cm": 90,
-     "p20": 80,
-     "p50": 90,
-     "p80": 115,
+     "cm": 85,
+     "p20": 75,
+     "p50": 85,
+     "p80": 110,
      "p_ge50": 0.99,
      "basis": "ensemble+climatology",
      "normal_cm": 160,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 40,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 32,
        "p50_cm": 105
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 67,
-       "p50_cm": 85
+       "snowfall_p50_cm": 42,
+       "p50_cm": 80
       }
      },
      "winters": 46
@@ -909,98 +908,98 @@
     "pistes": "MID",
     "snow": "MID"
    },
-   "value_cm_per_eur": 1.4,
+   "value_cm_per_eur": 1.32,
    "pros": [
     "skiing up to 3208 m"
    ],
    "cons": [
     "1,260 EUR per person",
-    "~90 cm at the start"
+    "~85 cm at the start"
    ],
-   "score": 44.4,
+   "score": 40.5,
    "score_parts": {
     "MONEY": 59,
-    "SNOW": 30
+    "SNOW": 22
    },
    "rank": 9
   },
   {
-   "slug": "gletscher_skigebiet_zugspitze_ski_resort_zugspit",
-   "label": "Zugspitze",
-   "country": "DE",
-   "area": "Bavaria",
-   "lat": 47.41297,
-   "lon": 10.98583,
-   "top_m": 2627,
-   "base_m": 995,
-   "km": 16.0,
-   "lifts": 38,
-   "opens": "2026-11-27",
-   "pass_day_eur": 70.5,
-   "pass_day_walkup": 70.5,
-   "pass_day_multi_eur": 59.93,
+   "slug": "ovronnaz",
+   "label": "Ovronnaz",
+   "country": "CH",
+   "area": "Valais",
+   "lat": 46.20254,
+   "lon": 7.13818,
+   "top_m": 2456,
+   "base_m": 1340,
+   "km": 17.0,
+   "lifts": 7,
+   "opens": "2026-12-12",
+   "pass_day_eur": 70.48,
+   "pass_day_walkup": 70.48,
+   "pass_day_multi_eur": 59.9,
    "pass_multi": {
     "days": 6,
-    "price": 359.55,
-    "ccy": "EUR",
-    "per_day": 59.93,
+    "price": 331.5,
+    "ccy": "CHF",
+    "per_day": 55.25,
     "estimated": true,
-    "note": "estimate: 0.85 x day pass x 6; zugspitze.de unreachable this session (WebFetch/WebSearch blocked)",
-    "src": "https://zugspitze.de"
+    "note": "estimate: 0.85 x day pass x 6; ovronnaz.ch unreachable this session (WebFetch/WebSearch blocked)",
+    "src": "https://www.ovronnaz.ch"
    },
    "pass_day_local": {
-    "ccy": "EUR",
-    "holiday": 70.5,
-    "regular": 70.5
+    "ccy": "CHF",
+    "holiday": 65.0,
+    "regular": 65.0
    },
    "pass_period": "holiday",
-   "pass_note": "online; 78 EUR at the desk",
-   "pass_src": "https://zugspitze.de",
-   "night_eur": 70.0,
-   "food_day_eur": 48.0,
-   "stay_src": "estimate: Garmisch / Grainau hotels; hut lunch 20.40 EUR, Schnitzel 23.90 EUR",
+   "pass_note": "adult day pass CHF 65",
+   "pass_src": "https://www.ovronnaz.ch",
+   "night_eur": 100.83,
+   "food_day_eur": 61.8,
+   "stay_src": "estimate: CHF 180-220 doubles; menu CHF 24, pasta CHF 18",
    "estimates": [
     "night_eur",
     "food_day_eur",
     "pass_multi"
    ],
    "snow": {
-    "now_cm": 55,
+    "now_cm": 60,
     "start": {
-     "cm": 80,
-     "p20": 70,
-     "p50": 80,
-     "p80": 115,
-     "p_ge50": 0.99,
+     "cm": 110,
+     "p20": 95,
+     "p50": 110,
+     "p80": 125,
+     "p_ge50": 1.0,
      "basis": "ensemble+climatology",
-     "normal_cm": 115,
+     "normal_cm": 70,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 38,
-       "p50_cm": 105
+       "horizon_days": 13,
+       "snowfall_p50_cm": 71,
+       "p50_cm": 110
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 44,
-       "p50_cm": 70
+       "snowfall_p50_cm": 100,
+       "p50_cm": 100
       }
      },
      "winters": 46
     }
    },
    "cost": {
-    "pass_eur": 360,
-    "hotel_eur": 490,
-    "food_eur": 336,
-    "total_eur": 1186,
+    "pass_eur": 359,
+    "hotel_eur": 706,
+    "food_eur": 433,
+    "total_eur": 1498,
     "pass_basis": "advance 6-day pass (estimate)",
     "pass_walkup": 423,
-    "party_total_eur": 1186,
-    "left_eur": -186,
-    "need_eur": 186,
+    "party_total_eur": 1498,
+    "left_eur": -498,
+    "need_eur": 498,
     "fits": false
    },
    "tiers": {
@@ -1009,121 +1008,21 @@
     "pistes": "LOW",
     "snow": "MID"
    },
-   "value_cm_per_eur": 1.34,
+   "value_cm_per_eur": 1.84,
    "pros": [
-    "38 lifts"
+    "solid all-rounder"
    ],
    "cons": [
-    "1,186 EUR per person",
-    "only 16 km of pistes",
-    "~80 cm at the start"
+    "1,498 EUR per person",
+    "only 17 km of pistes",
+    "7 lifts, queues on peak days"
    ],
-   "score": 44.1,
+   "score": 40.0,
    "score_parts": {
-    "MONEY": 65,
-    "SNOW": 23
+    "MONEY": 39,
+    "SNOW": 41
    },
    "rank": 10
-  },
-  {
-   "slug": "kleinwalsertal_oberstdorf",
-   "label": "Oberstdorf · Kleinwalsertal",
-   "country": "DE",
-   "area": "Allgäu",
-   "lat": 47.36355,
-   "lon": 10.21437,
-   "top_m": 2213,
-   "base_m": 823,
-   "km": 108.0,
-   "lifts": 52,
-   "opens": "2026-12-05",
-   "pass_day_eur": 72.9,
-   "pass_day_walkup": 72.9,
-   "pass_day_multi_eur": 61.97,
-   "pass_multi": {
-    "days": 6,
-    "price": 371.79,
-    "ccy": "EUR",
-    "per_day": 61.97,
-    "estimated": true,
-    "note": "estimate: 0.85 x day pass x 6; ok-bergbahnen.com unreachable this session (WebFetch/WebSearch blocked)",
-    "src": "https://www.ok-bergbahnen.com"
-   },
-   "pass_day_local": {
-    "ccy": "EUR",
-    "holiday": 72.9,
-    "regular": 72.9
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult day pass, whole area",
-   "pass_src": "https://www.ok-bergbahnen.com",
-   "night_eur": 75.0,
-   "food_day_eur": 48.0,
-   "stay_src": "estimate: Oberstdorf hotels; Allgäu hut lunches ~20 EUR",
-   "estimates": [
-    "night_eur",
-    "food_day_eur",
-    "pass_multi"
-   ],
-   "snow": {
-    "now_cm": 25,
-    "start": {
-     "cm": 55,
-     "p20": 35,
-     "p50": 55,
-     "p80": 80,
-     "p_ge50": 0.56,
-     "basis": "ensemble+climatology",
-     "normal_cm": 70,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 59,
-       "p50_cm": 75
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 38,
-       "p50_cm": 40
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 372,
-    "hotel_eur": 525,
-    "food_eur": 336,
-    "total_eur": 1233,
-    "pass_basis": "advance 6-day pass (estimate)",
-    "pass_walkup": 437,
-    "party_total_eur": 1233,
-    "left_eur": -233,
-    "need_eur": 233,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "MID",
-    "hotel": "MID",
-    "pistes": "MID",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.89,
-   "pros": [
-    "52 lifts"
-   ],
-   "cons": [
-    "1,233 EUR per person",
-    "~55 cm at the start"
-   ],
-   "score": 33.9,
-   "score_parts": {
-    "MONEY": 61,
-    "SNOW": 7
-   },
-   "rank": 11
   },
   {
    "slug": "skigebiet_garmisch_classic",
@@ -1166,27 +1065,27 @@
     "pass_multi"
    ],
    "snow": {
-    "now_cm": 20,
+    "now_cm": 30,
     "start": {
-     "cm": 45,
-     "p20": 35,
-     "p50": 45,
-     "p80": 65,
-     "p_ge50": 0.41,
+     "cm": 55,
+     "p20": 45,
+     "p50": 55,
+     "p80": 70,
+     "p_ge50": 0.61,
      "basis": "ensemble+climatology",
      "normal_cm": 50,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 37,
-       "p50_cm": 60
+       "horizon_days": 13,
+       "snowfall_p50_cm": 32,
+       "p50_cm": 65
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 44,
-       "p50_cm": 40
+       "snowfall_p50_cm": 38,
+       "p50_cm": 45
       }
      },
      "winters": 46
@@ -1210,19 +1109,119 @@
     "pistes": "LOW",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.77,
+   "value_cm_per_eur": 0.94,
    "pros": [
     "solid all-rounder"
    ],
    "cons": [
     "1,178 EUR per person",
     "only 38 km of pistes",
-    "~45 cm at the start"
+    "~55 cm at the start"
    ],
    "score": 32.8,
    "score_parts": {
     "MONEY": 66,
     "SNOW": 0
+   },
+   "rank": 11
+  },
+  {
+   "slug": "kleinwalsertal_oberstdorf",
+   "label": "Oberstdorf · Kleinwalsertal",
+   "country": "DE",
+   "area": "Allgäu",
+   "lat": 47.36355,
+   "lon": 10.21437,
+   "top_m": 2213,
+   "base_m": 823,
+   "km": 108.0,
+   "lifts": 52,
+   "opens": "2026-12-05",
+   "pass_day_eur": 72.9,
+   "pass_day_walkup": 72.9,
+   "pass_day_multi_eur": 61.97,
+   "pass_multi": {
+    "days": 6,
+    "price": 371.79,
+    "ccy": "EUR",
+    "per_day": 61.97,
+    "estimated": true,
+    "note": "estimate: 0.85 x day pass x 6; ok-bergbahnen.com unreachable this session (WebFetch/WebSearch blocked)",
+    "src": "https://www.ok-bergbahnen.com"
+   },
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 72.9,
+    "regular": 72.9
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult day pass, whole area",
+   "pass_src": "https://www.ok-bergbahnen.com",
+   "night_eur": 75.0,
+   "food_day_eur": 48.0,
+   "stay_src": "estimate: Oberstdorf hotels; Allgäu hut lunches ~20 EUR",
+   "estimates": [
+    "night_eur",
+    "food_day_eur",
+    "pass_multi"
+   ],
+   "snow": {
+    "now_cm": 35,
+    "start": {
+     "cm": 60,
+     "p20": 50,
+     "p50": 60,
+     "p80": 85,
+     "p_ge50": 0.76,
+     "basis": "ensemble+climatology",
+     "normal_cm": 70,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 53,
+       "p50_cm": 85
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 38,
+       "p50_cm": 50
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 372,
+    "hotel_eur": 525,
+    "food_eur": 336,
+    "total_eur": 1233,
+    "pass_basis": "advance 6-day pass (estimate)",
+    "pass_walkup": 437,
+    "party_total_eur": 1233,
+    "left_eur": -233,
+    "need_eur": 233,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "MID"
+   },
+   "value_cm_per_eur": 0.97,
+   "pros": [
+    "52 lifts"
+   ],
+   "cons": [
+    "1,233 EUR per person",
+    "~60 cm at the start"
+   ],
+   "score": 32.4,
+   "score_parts": {
+    "MONEY": 61,
+    "SNOW": 4
    },
    "rank": 12
   }
