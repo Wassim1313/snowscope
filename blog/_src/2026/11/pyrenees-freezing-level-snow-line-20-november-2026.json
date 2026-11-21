@@ -1,0 +1,628 @@
+{
+ "id": "2026-11-20-pyrenees-isotherm",
+ "slug": "pyrenees-freezing-level-snow-line-20-november-2026",
+ "date": "2026-11-20",
+ "published_utc": "2026-11-21T12:44:34Z",
+ "updated_utc": "2026-11-21T12:44:34Z",
+ "region": "PYRENEES",
+ "angle": "isotherm",
+ "score": 58,
+ "signature": "boi_taull:3100|ordino_arcalis:3600|pal_arinsal:3400",
+ "keyword": {
+  "family": "snow-line",
+  "entity": "pyrenees",
+  "region": "PYRENEES",
+  "date": "2026-11-20"
+ },
+ "tags": [
+  "snow-line",
+  "forecast",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "freezing_level_analysis",
+  "region": "Pyrenees",
+  "date": "2026-11-20",
+  "weekday": "Friday",
+  "model_run": "2026-11-20",
+  "forecast_days": [
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 1090,
+   "resorts_with_snow": 25,
+   "resorts_in_region": 53
+  },
+  "region_before": {
+   "date": "2026-11-18",
+   "snow_covered_area_km2": 710,
+   "resorts_with_snow": 18
+  },
+  "region_forecast": {
+   "date": "2026-11-23",
+   "snow_covered_area_km2": 2510,
+   "resorts_with_snow": 32
+  },
+  "question": "How high is the 0 °C level in the next days, where does rain turn to snow, and is rain falling on the snowpack?",
+  "snow_line_below_freezing_level_m": 300,
+  "region_freezing_level_m_by_day": {
+   "2026-11-21": {
+    "lowest": 2140,
+    "highest": 3550
+   },
+   "2026-11-22": {
+    "lowest": 1740,
+    "highest": 3100
+   },
+   "2026-11-23": {
+    "lowest": 1640,
+    "highest": 3500
+   },
+   "2026-11-24": {
+    "lowest": 2650,
+    "highest": 3460
+   }
+  },
+  "forecast_points": [
+   {
+    "place": "Baqueira-Beret",
+    "elev_m": 2510,
+    "precip_mm_total_next_days": 30,
+    "precip_mm_by_day": {
+     "2026-11-21": 1,
+     "2026-11-22": 7,
+     "2026-11-23": 3,
+     "2026-11-24": 2,
+     "2026-11-25": 15,
+     "2026-11-26": 3
+    },
+    "freezing_level_m_when_wet": 1940,
+    "snow_line_m_when_wet": 1640,
+    "share_of_precip_as_snow_at_this_height_pct": 95
+   },
+   {
+    "place": "Saint-Lary",
+    "elev_m": 2515,
+    "precip_mm_total_next_days": 40,
+    "precip_mm_by_day": {
+     "2026-11-21": 10,
+     "2026-11-22": 8,
+     "2026-11-23": 1,
+     "2026-11-24": 10,
+     "2026-11-25": 7,
+     "2026-11-26": 4
+    },
+    "freezing_level_m_when_wet": 2380,
+    "snow_line_m_when_wet": 2080,
+    "share_of_precip_as_snow_at_this_height_pct": 70
+   }
+  ],
+  "notes": [
+   "0 °C level = height where the air temperature crosses 0 °C (forecast, daily lowest and highest)",
+   "snow line = about 300 m below the 0 °C level, at the warmest hours of the day",
+   "rain-on-snow risk = snow on the slopes and a snow line above mid-mountain on a day with precipitation"
+  ],
+  "resorts": [
+   {
+    "name": "Boí Taüll",
+    "country": "Spain",
+    "top_m": 2747,
+    "base_m": 2039,
+    "depth_cm_upper_slopes_today": 2,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 6,
+    "new_cm_forecast_next_days": 14,
+    "slug": "boi_taull",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2270,
+      "max": 3100
+     },
+     "2026-11-22": {
+      "min": 2270,
+      "max": 2770
+     },
+     "2026-11-23": {
+      "min": 2270,
+      "max": 2880
+     },
+     "2026-11-24": {
+      "min": 2650,
+      "max": 2860
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-21": 2800,
+     "2026-11-22": 2500,
+     "2026-11-23": 2600,
+     "2026-11-24": 2600
+    },
+    "days_snow_line_above_top": [
+     "2026-11-21"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Ordino-Arcalis",
+    "country": "Andorra",
+    "top_m": 2626,
+    "base_m": 1943,
+    "depth_cm_upper_slopes_today": 4,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 7,
+    "new_cm_forecast_next_days": 9,
+    "slug": "ordino_arcalis",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2140,
+      "max": 3550
+     },
+     "2026-11-22": {
+      "min": 1930,
+      "max": 3100
+     },
+     "2026-11-23": {
+      "min": 1900,
+      "max": 3440
+     },
+     "2026-11-24": {
+      "min": 3270,
+      "max": 3460
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-21": 3200,
+     "2026-11-22": 2800,
+     "2026-11-23": 3100,
+     "2026-11-24": 3200
+    },
+    "days_snow_line_above_top": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Pal-Arinsal",
+    "country": "Andorra / Spain",
+    "top_m": 2494,
+    "base_m": 1554,
+    "depth_cm_upper_slopes_today": 2,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 8,
+    "slug": "pal_arinsal",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2170,
+      "max": 3370
+     },
+     "2026-11-22": {
+      "min": 2110,
+      "max": 2890
+     },
+     "2026-11-23": {
+      "min": 2060,
+      "max": 2920
+     },
+     "2026-11-24": {
+      "min": 2830,
+      "max": 3060
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-21": 3100,
+     "2026-11-22": 2600,
+     "2026-11-23": 2600,
+     "2026-11-24": 2800
+    },
+    "days_snow_line_above_top": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Peyragudes",
+    "country": "France",
+    "top_m": 2360,
+    "base_m": 1389,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 2,
+    "new_cm_forecast_next_days": 9,
+    "slug": "peyragudes",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2820,
+      "max": 3410
+     },
+     "2026-11-22": {
+      "min": 1740,
+      "max": 3100
+     },
+     "2026-11-23": {
+      "min": 1640,
+      "max": 2960
+     },
+     "2026-11-24": {
+      "min": 2880,
+      "max": 3020
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-21": 3100,
+     "2026-11-22": 2800,
+     "2026-11-23": 2700,
+     "2026-11-24": 2700
+    },
+    "days_snow_line_above_top": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23",
+     "2026-11-24"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Candanchu",
+    "country": "France / Spain",
+    "top_m": 2238,
+    "base_m": 1514,
+    "depth_cm_upper_slopes_today": 7,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 7,
+    "new_cm_forecast_next_days": 20,
+    "slug": "candanchu",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2140,
+      "max": 2590
+     },
+     "2026-11-22": {
+      "min": 1820,
+      "max": 2420
+     },
+     "2026-11-23": {
+      "min": 2330,
+      "max": 3500
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-21": 2300,
+     "2026-11-22": 2100,
+     "2026-11-23": 3200
+    },
+    "days_snow_line_above_top": [
+     "2026-11-21",
+     "2026-11-23"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": [
+     "2026-11-21",
+     "2026-11-22"
+    ]
+   }
+  ],
+  "spot": {
+   "name": "Boí Taüll",
+   "rain_day": "2026-11-21",
+   "freezing_m": 3100,
+   "lift_top_m": 2747,
+   "next_cm": 14,
+   "second": "Ordino-Arcalis",
+   "second_cm": 4,
+   "depth_cm": 2
+  }
+ },
+ "media": [
+  {
+   "id": "alt_new",
+   "kind": "new_map",
+   "file": "blog/media/2026/11/pyrenees-freezing-level-snow-line-20-november-2026/alt_new.webp",
+   "thumb": "blog/media/2026/11/pyrenees-freezing-level-snow-line-20-november-2026/alt_new_t.webp",
+   "bytes": 60190,
+   "snow_frac": 0.1925,
+   "weak": false
+  },
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/pyrenees-freezing-level-snow-line-20-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/pyrenees-freezing-level-snow-line-20-november-2026/map_t.webp",
+   "bytes": 59378,
+   "snow_frac": 0.0464,
+   "weak": true
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Pyrenees snow line above most resorts this weekend",
+   "description": "Rain will fall on existing snow at several Pyrenees resorts on Friday and Saturday as the 0 °C level stays between 1,600 and 3,500 m across the range.",
+   "lede": "The freezing level stays well above the base of most Pyrenees resorts through Saturday, with rain falling on the existing snowpack at lower elevations. Only from Sunday onwards will it drop enough for most of the range to see consistent snow.",
+   "sections": [
+    {
+     "h": "Where the boundary between rain and snow sits",
+     "p": [
+      "The 0 °C level (the height where air temperature crosses freezing) ranges from 2,140 m on Friday to 1,740 m on Saturday across the Pyrenees. At the warmest part of each day, the actual snow line sits roughly 300 m below that—so around 1,840 m on Friday and 1,440 m on Saturday. This means rain is falling on the existing snowpack at resorts below those heights.",
+      "Candanchu faces the clearest risk: snow on the slopes and rain falling on it both Friday and Saturday. At Boí Taüll, the snow line climbs above the resort top (2,747 m) on Friday alone. Ordino-Arcalis, Pal-Arinsal and Peyragudes remain above the snow line through the whole forecast period, so any new precipitation arrives as rain across all elevations."
+     ]
+    },
+    {
+     "h": "What happens after Saturday",
+     "p": [
+      "Sunday brings a sharp shift. The freezing level drops to 1,640 m in the northern sections, with the snow line settling around 1,340 m. By then, 32 of the 53 resorts in the range should see snow cover, up from 25 today. Snow coverage across the region is forecast to nearly double, from 1,090 km² to 2,510 km² by Sunday evening.",
+      "The pattern then steadies: Monday sees the freezing level rise again to 2,650 m, but by then the high-altitude resorts will have accumulated fresh snow from the preceding days."
+     ]
+    },
+    {
+     "h": "What the numbers mean for your run",
+     "p": [
+      "Candanchu leads the forecast with 20 cm of new snow expected over the next few days, partly because it sits low enough to catch snow on Sunday and Monday. Boí Taüll and Ordino-Arcalis will each gain around 14 and 9 cm respectively. All three are still shallow—Candanchu today has only 7 cm on the upper slopes—so thin coverage and exposed rock remain hazards.",
+      "The satellite model shows a clear divide this weekend: high peaks gain altitude-appropriate snow, whilst mid-mountain slopes endure rain-on-snow conditions that will bond layers and add weight to the existing base. By Sunday, the entire range tips into dry snow accumulation mode."
+     ]
+    }
+   ],
+   "advice": [
+    "Friday and Saturday: stay above 2,500 m if you want dry snow; rain-on-snow at lower elevations will soften surface conditions and increase slope stability risk.",
+    "Candanchu faces rain on snow both Friday and Saturday; check the official avalanche bulletin before skiing off-piste.",
+    "Sunday onwards: snow line drops to around 1,340 m; the full range becomes skiable in snow for the first time in days.",
+    "Expect rapid overnight refreezing at high elevations from Sunday, creating firm crust early mornings that softens through the day.",
+    "Total accumulation over the forecast period peaks at Candanchu (20 cm) and Baqueira-Beret (14 cm); these will offer the best riding once the transition finishes."
+   ],
+   "captions": {
+    "alt_new": "Forecast new snow by resort over the next five days, with Candanchu and Boí Taüll leading the Pyrenees; data from 20 November 2026.",
+    "map": "Snow line position (in metres) for each day of the forecast, showing rain-on-snow risk below the line on Friday and Saturday; freezing level data from 20 November 2026."
+   }
+  },
+  "es": {
+   "title": "Línea de nieve por encima de la mayoría de estaciones pirenáicas este fin de semana",
+   "description": "La lluvia caerá sobre la nieve existente en varias estaciones de los Pirineos el viernes y sábado, ya que el nivel de 0 °C se mantiene entre 1 600 y 3 500 m en toda la cordillera.",
+   "lede": "El nivel de congelación se mantiene muy por encima de la base de la mayoría de estaciones pirenaicas hasta el sábado, con lluvia cayendo sobre el manto nivoso existente en cotas más bajas. Solo a partir del domingo bajará lo suficiente para que la mayoría de la cordillera vea nieve de forma consistente.",
+   "sections": [
+    {
+     "h": "Dónde se sitúa el límite entre lluvia y nieve",
+     "p": [
+      "El nivel de 0 °C (la altura donde la temperatura del aire cruza la congelación) oscila entre 2 140 m el viernes y 1 740 m el sábado en los Pirineos. En la parte más cálida de cada día, la línea de nieve real se sitúa aproximadamente 300 m por debajo—es decir, alrededor de 1 840 m el viernes y 1 440 m el sábado. Esto significa que lluvia cae sobre el manto nivoso existente en estaciones por debajo de esas cotas.",
+      "Candanchú afronta el riesgo más claro: nieve en las pistas y lluvia cayendo sobre ella tanto el viernes como el sábado. En Boí Taüll, la línea de nieve sube por encima de la cota más alta de la estación (2 747 m) solo el viernes. Ordino-Arcalís, Pal-Arinsal y Peyragudes se mantienen por encima de la línea de nieve durante todo el período de predicción, así que cualquier nueva precipitación llega en forma de lluvia en todas las elevaciones."
+     ]
+    },
+    {
+     "h": "Qué ocurre después del sábado",
+     "p": [
+      "El domingo trae un cambio brusco. El nivel de congelación baja a 1 640 m en las secciones del norte, con la línea de nieve asentándose alrededor de 1 340 m. Para entonces, 32 de las 53 estaciones de la cordillera deberían ver cobertura de nieve, en comparación con 25 hoy. La cobertura de nieve en toda la región se prevé que casi se duplique, de 1 090 km² a 2 510 km² el domingo por la tarde.",
+      "El patrón se estabiliza entonces: el lunes el nivel de congelación sube de nuevo a 2 650 m, pero para entonces las estaciones de gran altitud habrán acumulado nieve fresca de los días anteriores."
+     ]
+    },
+    {
+     "h": "Qué significan los números para tu pista",
+     "p": [
+      "Candanchú lidera la predicción con 20 cm de nieve nueva esperada durante los próximos días, en parte porque se sitúa lo bastante bajo para captar nieve el domingo y lunes. Boí Taüll y Ordino-Arcalís ganará aproximadamente 14 y 9 cm respectivamente. Los tres siguen siendo poco profundos—Candanchú hoy tiene solo 7 cm en las pistas superiores—así que el recubrimiento escaso y las rocas expuestas siguen siendo peligros.",
+      "El modelo de satélite muestra una división clara este fin de semana: los picos altos ganan nieve apropiada para la altitud, mientras que las laderas de media montaña sufren condiciones de lluvia sobre nieve que unirán capas y añadirán peso a la base existente. El domingo, toda la cordillera pasa a modo de acumulación de nieve seca."
+     ]
+    }
+   ],
+   "advice": [
+    "Viernes y sábado: mantente por encima de 2 500 m si quieres nieve seca; lluvia sobre nieve en cotas más bajas ablandará las condiciones de la superficie e incrementará el riesgo de estabilidad de laderas.",
+    "Candanchú afronta lluvia sobre nieve el viernes y sábado; consulta el boletín oficial de aludes antes de esquiar fuera de pista.",
+    "Domingo en adelante: línea de nieve baja alrededor de 1 340 m; toda la cordillera se vuelve esquiable en nieve por primera vez en días.",
+    "Espera una refundición rápida por las noches en elevaciones altas a partir del domingo, creando costras duras a primera hora de la mañana que se ablandan durante el día.",
+    "La acumulación total durante el período de predicción alcanza su máximo en Candanchú (20 cm) y Baqueira-Beret (14 cm); estos ofrecerán el mejor riding una vez que la transición termine."
+   ],
+   "captions": {
+    "alt_new": "Nieve nueva prevista por estación durante los próximos cinco días, con Candanchú y Boí Taüll liderando los Pirineos; datos del 20 de noviembre de 2026.",
+    "map": "Posición de la línea de nieve (en metros) para cada día de la predicción, mostrando riesgo de lluvia sobre nieve por debajo de la línea el viernes y sábado; datos del nivel de congelación del 20 de noviembre de 2026."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "voice": "sat"
+  },
+  "es": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "voice": "sat"
+  }
+ },
+ "words_en": 360,
+ "indexable": false,
+ "main": {
+  "slug": "boi_taull",
+  "name": "Boí Taüll",
+  "lat": 42.4725,
+  "lon": 0.8743
+ },
+ "places": [
+  {
+   "name": "Boí Taüll",
+   "lat": 42.4725,
+   "lon": 0.8743
+  },
+  {
+   "name": "Ordino-Arcalis",
+   "lat": 42.6283,
+   "lon": 1.489
+  },
+  {
+   "name": "Pal-Arinsal",
+   "lat": 42.5457,
+   "lon": 1.4533
+  },
+  {
+   "name": "Peyragudes",
+   "lat": 42.7801,
+   "lon": 0.4559
+  },
+  {
+   "name": "Candanchu",
+   "lat": 42.7786,
+   "lon": -0.5425
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "boi_taull",
+   "name": "Boí Taüll"
+  },
+  {
+   "slug": "ordino_arcalis",
+   "name": "Ordino-Arcalis"
+  },
+  {
+   "slug": "pal_arinsal",
+   "name": "Pal-Arinsal"
+  },
+  {
+   "slug": "peyragudes",
+   "name": "Peyragudes"
+  },
+  {
+   "slug": "candanchu",
+   "name": "Candanchu"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "boi_taull",
+    "name": "Boí Taüll",
+    "depth": 2,
+    "new72": 6,
+    "next": 14,
+    "top_m": 2747
+   },
+   {
+    "slug": "ordino_arcalis",
+    "name": "Ordino-Arcalis",
+    "depth": 4,
+    "new72": 7,
+    "next": 9,
+    "top_m": 2626
+   },
+   {
+    "slug": "pal_arinsal",
+    "name": "Pal-Arinsal",
+    "depth": 2,
+    "new72": 4,
+    "next": 8,
+    "top_m": 2494
+   },
+   {
+    "slug": "peyragudes",
+    "name": "Peyragudes",
+    "depth": 0,
+    "new72": 2,
+    "next": 9,
+    "top_m": 2360
+   },
+   {
+    "slug": "candanchu",
+    "name": "Candanchu",
+    "depth": 7,
+    "new72": 7,
+    "next": 20,
+    "top_m": 2238
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Météo-France / Meteocat / AEMET",
+   "url": "https://www.avalanches.org/"
+  }
+ ],
+ "trip_day": "2026-11-21",
+ "map_link": "https://snowscope.app/#@42.472,0.874,9.0",
+ "seconds": 31.2,
+ "facts_used": 14,
+ "voice": "sat",
+ "media_ids": [
+  "alt_new",
+  "map"
+ ],
+ "overlap": {
+  "before": 0.8,
+  "after": 0.8,
+  "with": "us-west-freezing-level-snow-line-8-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.008,
+  "with": "us-west-freezing-level-snow-line-8-november-2026"
+ },
+ "publish_utc": "2026-11-21T12:44:34Z",
+ "noindex_why": "quality: words 495 < 600",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 495 < 600"
+  ],
+  "words": 495,
+  "overlap": 0.8,
+  "with": "us-west-freezing-level-snow-line-8-november-2026",
+  "langs_off": [],
+  "score": 46.4,
+  "intent": "pyrenees|snow-line",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "map",
+  "files": {
+   "en": [
+    "blog/media/2026/11/pyrenees-freezing-level-snow-line-20-november-2026/cover-en.webp",
+    "blog/media/2026/11/pyrenees-freezing-level-snow-line-20-november-2026/cover-en_t.webp"
+   ],
+   "es": [
+    "blog/media/2026/11/pyrenees-freezing-level-snow-line-20-november-2026/cover-es.webp",
+    "blog/media/2026/11/pyrenees-freezing-level-snow-line-20-november-2026/cover-es_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}
