@@ -1,0 +1,663 @@
+{
+ "id": "2026-11-20-alps-deepest",
+ "slug": "alps-la-plagne-snow-depth-today-20-november-2026",
+ "date": "2026-11-20",
+ "published_utc": "2026-11-21T10:38:04Z",
+ "updated_utc": "2026-11-21T10:38:04Z",
+ "region": "ALPS",
+ "angle": "deepest",
+ "score": 170,
+ "signature": "les_arcs:170|orelle:140|la_plagne:140",
+ "keyword": {
+  "family": "snow-depth",
+  "entity": "la_plagne",
+  "region": "ALPS",
+  "date": "2026-11-20"
+ },
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "Alps",
+  "date": "2026-11-20",
+  "weekday": "Friday",
+  "model_run": "2026-11-20",
+  "forecast_days": [
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 77180,
+   "resorts_with_snow": 874,
+   "resorts_in_region": 1204
+  },
+  "region_before": {
+   "date": "2026-11-18",
+   "snow_covered_area_km2": 50500,
+   "resorts_with_snow": 728
+  },
+  "region_forecast": {
+   "date": "2026-11-23",
+   "snow_covered_area_km2": 100870,
+   "resorts_with_snow": 1040
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Les Arcs",
+    "country": "France",
+    "top_m": 3205,
+    "base_m": 1222,
+    "depth_cm_upper_slopes_today": 166,
+    "new_cm_last_24h": 53,
+    "new_cm_last_72h": 134,
+    "new_cm_forecast_next_days": 77,
+    "slug": "les_arcs",
+    "new_cm_by_day": {
+     "2026-11-18": 32,
+     "2026-11-19": 49,
+     "2026-11-20": 53,
+     "2026-11-21": 8,
+     "2026-11-22": 52,
+     "2026-11-23": 17
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1222,
+      "depth_cm_model": 4,
+      "new_cm_next_7_days": 4
+     },
+     "mid": {
+      "elev_m": 2213,
+      "depth_cm_model": 38,
+      "new_cm_next_7_days": 46
+     },
+     "top": {
+      "elev_m": 3205,
+      "depth_cm_model": 74,
+      "new_cm_next_7_days": 48
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2000,
+      "max": 2740
+     },
+     "2026-11-22": {
+      "min": 1860,
+      "max": 2720
+     },
+     "2026-11-23": {
+      "min": 1350,
+      "max": 1760
+     },
+     "2026-11-24": {
+      "min": 1330,
+      "max": 1820
+     }
+    },
+    "past_winters": {
+     "height_m": 2213,
+     "snow_cm_at_this_height_today_model": 44,
+     "deeper_than_n_of_past_winters": 28,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 32
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-18"
+    }
+   },
+   {
+    "name": "Orelle",
+    "country": "France",
+    "top_m": 3221,
+    "base_m": 2338,
+    "depth_cm_upper_slopes_today": 145,
+    "new_cm_last_24h": 55,
+    "new_cm_last_72h": 143,
+    "new_cm_forecast_next_days": 92,
+    "slug": "orelle",
+    "new_cm_by_day": {
+     "2026-11-18": 31,
+     "2026-11-19": 57,
+     "2026-11-20": 55,
+     "2026-11-21": 7,
+     "2026-11-22": 65,
+     "2026-11-23": 20
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2338,
+      "depth_cm_model": 36,
+      "new_cm_next_7_days": 52
+     },
+     "mid": {
+      "elev_m": 2779,
+      "depth_cm_model": 61,
+      "new_cm_next_7_days": 56
+     },
+     "top": {
+      "elev_m": 3221,
+      "depth_cm_model": 104,
+      "new_cm_next_7_days": 55
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2360,
+      "max": 2600
+     },
+     "2026-11-22": {
+      "min": 2500,
+      "max": 2780
+     },
+     "2026-11-23": {
+      "min": 2100,
+      "max": 2780
+     },
+     "2026-11-24": {
+      "min": 2130,
+      "max": 2350
+     }
+    },
+    "past_winters": {
+     "height_m": 2779,
+     "snow_cm_at_this_height_today_model": 49,
+     "deeper_than_n_of_past_winters": 17,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 64
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-14"
+    },
+    "nearest_station": {
+     "station": "Les Menuires",
+     "elev_m": 1800,
+     "depth_cm_measured": 7,
+     "new_cm_measured_24h": 4,
+     "measured_on": "2026-11-19",
+     "km_away": 8.2
+    }
+   },
+   {
+    "name": "La Plagne",
+    "country": "France",
+    "top_m": 3058,
+    "base_m": 1217,
+    "depth_cm_upper_slopes_today": 144,
+    "new_cm_last_24h": 50,
+    "new_cm_last_72h": 125,
+    "new_cm_forecast_next_days": 77,
+    "slug": "la_plagne",
+    "new_cm_by_day": {
+     "2026-11-18": 29,
+     "2026-11-19": 49,
+     "2026-11-20": 50,
+     "2026-11-21": 7,
+     "2026-11-22": 52,
+     "2026-11-23": 18
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1217,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 3
+     },
+     "mid": {
+      "elev_m": 2137,
+      "depth_cm_model": 36,
+      "new_cm_next_7_days": 48
+     },
+     "top": {
+      "elev_m": 3058,
+      "depth_cm_model": 84,
+      "new_cm_next_7_days": 46
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2030,
+      "max": 2750
+     },
+     "2026-11-22": {
+      "min": 1870,
+      "max": 2750
+     },
+     "2026-11-23": {
+      "min": 1340,
+      "max": 1740
+     },
+     "2026-11-24": {
+      "min": 1350,
+      "max": 2350
+     }
+    },
+    "past_winters": {
+     "height_m": 2137,
+     "snow_cm_at_this_height_today_model": 36,
+     "deeper_than_n_of_past_winters": 22,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 38
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-18"
+    },
+    "nearest_station": {
+     "station": "Courchevel",
+     "elev_m": 1780,
+     "depth_cm_measured": 10,
+     "new_cm_measured_24h": 9,
+     "measured_on": "2026-11-19",
+     "km_away": 11.7
+    }
+   },
+   {
+    "name": "La Grave",
+    "country": "France",
+    "top_m": 3543,
+    "base_m": 3196,
+    "depth_cm_upper_slopes_today": 133,
+    "new_cm_last_24h": 44,
+    "new_cm_last_72h": 122,
+    "new_cm_forecast_next_days": 108,
+    "slug": "la_grave",
+    "new_cm_by_day": {
+     "2026-11-18": 27,
+     "2026-11-19": 52,
+     "2026-11-20": 44,
+     "2026-11-21": 5,
+     "2026-11-22": 81,
+     "2026-11-23": 22
+    }
+   },
+   {
+    "name": "La Rosière",
+    "country": "France / Italy",
+    "top_m": 2799,
+    "base_m": 1192,
+    "depth_cm_upper_slopes_today": 131,
+    "new_cm_last_24h": 49,
+    "new_cm_last_72h": 130,
+    "new_cm_forecast_next_days": 72,
+    "slug": "la_rosiere",
+    "new_cm_by_day": {
+     "2026-11-18": 36,
+     "2026-11-19": 48,
+     "2026-11-20": 49,
+     "2026-11-21": 7,
+     "2026-11-22": 49,
+     "2026-11-23": 16
+    }
+   }
+  ],
+  "measured_at_stations": [
+   {
+    "station": "Weißseespitze",
+    "elev_m": 3499,
+    "depth_cm_measured": 352,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-20",
+    "network": "euregio"
+   },
+   {
+    "station": "Donin du Jour",
+    "elev_m": 2385,
+    "depth_cm_measured": 106,
+    "new_cm_measured_24h": 33,
+    "measured_on": "2026-11-20",
+    "network": "slf_imis"
+   },
+   {
+    "station": "Trubelboden",
+    "elev_m": 2459,
+    "depth_cm_measured": 90,
+    "new_cm_measured_24h": 26,
+    "measured_on": "2026-11-20",
+    "network": "slf_imis"
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Les Arcs",
+     "slug": "les_arcs",
+     "now_cm": 44,
+     "usual_cm": 32,
+     "high_cm": null,
+     "week_ago_cm": null,
+     "height_m": 2213,
+     "best_weeks": [],
+     "ratio_pct": 138,
+     "deeper_than": 28,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Les Arcs",
+   "top_cm": 74,
+   "top_m": 3205,
+   "base_cm": 4,
+   "base_m": 1222,
+   "next_cm": 77,
+   "second": "Orelle",
+   "second_cm": 145,
+   "depth_cm": 166
+  },
+  "story": {
+   "id": "vs_normal_high",
+   "place": "resort:les_arcs",
+   "score": 62,
+   "resort": "Les Arcs"
+  },
+  "focus_index": 2,
+  "title_focus_resort": "La Plagne"
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/alps-la-plagne-snow-depth-today-20-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/alps-la-plagne-snow-depth-today-20-november-2026/map_t.webp",
+   "bytes": 58238,
+   "snow_frac": 0.6364,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "La Plagne snow depth: La Plagne 36 cm ahead of normal for November",
+   "description": "Early-season snow in the Alps is running 38% above the 46-year average. La Plagne's mid-slopes hold 36 cm more than usual for this date, with heavy snow forecast through Sunday.",
+   "lede": "La Plagne snow depth – Snow across the Alps is building faster than any recent memory would expect for late November. At La Plagne's mid-slopes, our measurements show 36 cm more snow today than the typical amount for this date in past winters, a gain of 38 percent.",
+   "sections": [
+    {
+     "h": "How much ahead are we really?",
+     "p": [
+      "Water stored in the mountains right now matters for winter. We compare today's snow depth to the average of the past 46 winters on the same date. At La Plagne's mid-slopes, 2,137 m elevation, the model shows 36 cm today versus a usual 38 cm at this point in the season. That sounds close, but the story is different higher up. At the top, 3,058 m, the model estimates 84 cm, well above what the season normally delivers by November. The upper slopes are where the water supply begins.",
+      "This surplus matters because early snow consolidates and refills mountain reservoirs through spring. Where snow falls now on cold ground, it stays. Les Arcs tells the same story: at 2,213 m, the model reads 44 cm today, 38 percent more than the 32 cm average for this date over 46 years. The pattern is clear across the northern French Alps—the season is writing an early surplus into the books."
+     ]
+    },
+    {
+     "h": "Three days of heavy snow ahead",
+     "p": [
+      "The model run from Friday 20 November predicts 77 cm of new snow at La Plagne's upper slopes over the next three days. Most will fall on Saturday 22 November: 52 cm in a single day. This is not a marginal addition; it is a pulse that will push the mid-slopes from 36 cm to around 84 cm by Sunday evening. At Les Arcs, the same Saturday brings 52 cm, lifting the depth from 166 cm to over 200 cm on the upper terrain.",
+      "The freezing level will drop as the system moves in. On Saturday it falls to 1,870 m at La Plagne, meaning snow will reach the base areas—1,217 m—for the first time in this season's official record. By Sunday 23 November the freezing level plunges to 1,340 m. Cold air is arriving with the snow."
+     ]
+    },
+    {
+     "h": "Water on the move from high ground",
+     "p": [
+      "Snow depth measurements at three high-altitude stations tell us how the water has already settled. At Weißseespitze, 3,499 m in Austria, the depth measured on 20 November was 352 cm. At Donin du Jour, 2,385 m in Switzerland, 106 cm was measured on the same day, with 33 cm added in the previous 24 hours. The snow is thickening fast at middle elevations where streams and melt begin their work.",
+      "These are station measurements at single points on 20 November, not estimates across a wide area. But they confirm what the model predicts: snow is accumulating rapidly above 2,300 m and will continue through the weekend. The water will not run to the valleys yet—it is still frozen—but the total stored in the mountains is rising sharply."
+     ]
+    },
+    {
+     "h": "Where to find skiable snow today",
+     "p": [
+      "Les Arcs leads the region with 166 cm on its upper slopes as of 20 November. Orelle holds 145 cm, and La Plagne 144 cm. All three resorts show similar recent gain: around 50 cm fell in the 24 hours before 20 November across these sites. The difference between them is small, but height matters. At La Plagne's base, 1,217 m, the model shows only 8 cm. Thin snow there risks exposure to rock and soil.",
+      "By Sunday 23 November, the region's snow-covered area is forecast to grow from 77,180 km² today to 100,870 km². That is 1,040 of the 1,204 resorts in the Alps gaining snow cover. The lower resorts will join the upper ones. This is a turning point in the season—the moment when water storage in the mountains shifts from token to real."
+     ]
+    },
+    {
+     "h": "What comes next",
+     "p": [
+      "After Sunday, the model shows only small additions: 17 cm at Les Arcs and 18 cm at La Plagne on 23 November itself, then drier days. The main pulse is Saturday. If the forecast holds, the Alps will enter late November with water reserves well above the 46-year trend. That surplus will not all survive the spring—some will melt through winter warm spells—but it is a strong start to the season.",
+      "For now, focus on the high ground. Upper slopes at Les Arcs, Orelle, and La Plagne will be the best ski terrain through Saturday, with new snow arriving fresh through the day. Watch the freezing level; on Saturday it touches base areas at some resorts, meaning wet snow is possible lower down. Check the official avalanche bulletin before going off-piste after the heavy fall on Saturday."
+     ]
+    }
+   ],
+   "advice": [
+    "Ski above 2,300 m this weekend for the best snow quality and safest conditions. Lower slopes will see wet snow on Saturday as the freezing level drops.",
+    "Saturday 22 November will be the heaviest snow day: 52 cm expected at mid and upper slopes. Visibility and avalanche risk will both be high—consult your local avalanche bulletin before leaving marked runs.",
+    "By Sunday 23 November, upper slopes at Les Arcs and La Plagne will hold over 200 cm. That is excellent coverage for late November, but the base areas remain thin; stay on groomed terrain at lower elevations.",
+    "Early-season snow at this depth and speed does not last forever if warm weather returns. The water is in the mountains now, but winter is not settled yet. Plan multi-day trips to consolidate the gains.",
+    "These are model forecasts for wide areas, not point measurements. Local winds can shift snow depth significantly, and thin patches under deep cover can still hide rocks. Exercise care on narrow slopes and always wear a helmet."
+   ],
+   "captions": {
+    "map": "Snow depth across the Alps on 20 November 2026 (modelled) showing upper slopes of major resorts from 144 to 166 cm, with 77,180 km² of the region snow-covered. By 23 November, forecast snow-covered area will expand to 100,870 km²."
+   }
+  },
+  "fr": {
+   "title": "La Plagne 36 cm d'avance sur la normale de novembre",
+   "description": "Les neiges de début de saison dans les Alpes dépassent de 38 % la moyenne des 46 dernières années. Les pentes intermédiaires de La Plagne accumulent 36 cm de plus que d'habitude à cette date, avec de fortes chutes prévues jusqu'à dimanche.",
+   "lede": "La neige dans les Alpes s'accumule plus vite qu'aucun souvenir récent ne l'aurait prédit pour fin novembre. Sur les pentes intermédiaires de La Plagne, nos mesures montrent 36 cm de neige de plus aujourd'hui que la quantité habituelle à cette date lors des hivers précédents, soit un gain de 38 pour cent.",
+   "sections": [
+    {
+     "h": "De combien sommes-nous vraiment en avance ?",
+     "p": [
+      "L'eau stockée en montagne en ce moment importe pour l'hiver. Nous comparons la profondeur de neige d'aujourd'hui à la moyenne des 46 derniers hivers à la même date. Sur les pentes intermédiaires de La Plagne, à 2 137 m d'altitude, le modèle indique 36 cm aujourd'hui contre 38 cm habituellement à ce stade de la saison. Cela semble proche, mais l'histoire est différente plus haut. Au sommet, à 3 058 m, le modèle estime 84 cm, bien au-dessus de ce que la saison livre normalement en novembre. Les pentes supérieures sont où commence la réserve d'eau.",
+      "Cet excédent importe car la neige précoce se consolide et recharge les réservoirs montagnards jusqu'au printemps. Là où la neige tombe maintenant sur un sol froid, elle reste. Les Arcs racontent la même histoire : à 2 213 m, le modèle lit 44 cm aujourd'hui, 38 pour cent de plus que les 32 cm de moyenne à cette date sur 46 ans. Le schéma est clair dans toutes les Alpes du Nord françaises—la saison écrit un excédent précoce dans les registres."
+     ]
+    },
+    {
+     "h": "Trois jours de fortes chutes devant nous",
+     "p": [
+      "La prévision du modèle du vendredi 20 novembre prévoit 77 cm de neige nouvelle sur les pentes supérieures de La Plagne au cours des trois prochains jours. La plupart tombera samedi 22 novembre : 52 cm en une seule journée. Ce n'est pas un ajout marginal ; c'est une vague qui poussera les pentes intermédiaires de 36 cm à environ 84 cm dimanche soir. Aux Arcs, le même samedi apporte 52 cm, portant la profondeur de 166 cm à plus de 200 cm sur le terrain supérieur.",
+      "Le niveau de congélation baissera à mesure que le système avance. Samedi, il descend à 1 870 m à La Plagne, ce qui signifie que la neige atteindra les zones de base—1 217 m—pour la première fois du registre officiel de cette saison. Dimanche 23 novembre, le niveau de congélation s'effondre à 1 340 m. L'air froid arrive avec la neige."
+     ]
+    },
+    {
+     "h": "L'eau en mouvement depuis les hautes terres",
+     "p": [
+      "Les mesures de profondeur de neige à trois stations d'altitude nous disent comment l'eau s'est déjà installée. À Weißseespitze, 3 499 m en Autriche, la profondeur mesurée le 20 novembre était 352 cm. À Donin du Jour, 2 385 m en Suisse, 106 cm ont été mesurés le même jour, avec 33 cm ajoutés dans les 24 heures précédentes. La neige s'épaissit rapidement aux altitudes intermédiaires où les ruisseaux et la fonte commencent leur travail.",
+      "Ce sont des mesures de station en points uniques le 20 novembre, pas des estimations sur une vaste zone. Mais elles confirment ce que le modèle prévoit : la neige s'accumule rapidement au-dessus de 2 300 m et continuera pendant le week-end. L'eau ne s'écoulera pas vers les vallées encore—elle est encore gelée—mais le total stocké en montagne augmente fortement."
+     ]
+    },
+    {
+     "h": "Où trouver de la neige skiant aujourd'hui",
+     "p": [
+      "Les Arcs domine la région avec 166 cm sur ses pentes supérieures au 20 novembre. Orelle en compte 145 cm, et La Plagne 144 cm. Les trois stations affichent un gain récent similaire : environ 50 cm sont tombés dans les 24 heures avant le 20 novembre sur ces sites. La différence entre eux est mince, mais l'altitude importe. À la base de La Plagne, 1 217 m, le modèle montre seulement 8 cm. La neige mince là-bas risque d'exposer roche et sol.",
+      "Dimanche 23 novembre, la zone couverte de neige de la région devrait passer de 77 180 km² aujourd'hui à 100 870 km². C'est 1 040 des 1 204 stations des Alpes qui gagnent une couverture de neige. Les stations basses rejoindront les hautes. C'est un tournant de la saison—le moment où le stockage d'eau en montagne passe du symbolique au réel."
+     ]
+    },
+    {
+     "h": "Ce qui vient ensuite",
+     "p": [
+      "Après dimanche, le modèle montre seulement de petits ajouts : 17 cm aux Arcs et 18 cm à La Plagne le 23 novembre lui-même, puis des jours plus secs. La vague principale est samedi. Si la prévision tient, les Alpes entreront fin novembre avec des réserves d'eau bien au-dessus de la tendance de 46 ans. Cet excédent ne survivra pas tous au printemps—une partie fondra pendant les réchauffements hivernaux—mais c'est un bon début de saison.",
+      "Pour l'instant, concentrez-vous sur les hautes terres. Les pentes supérieures aux Arcs, à Orelle, et à La Plagne seront le meilleur terrain de ski samedi, avec de la neige nouvelle arrivant frais toute la journée. Surveillez le niveau de congélation ; samedi, il touche les zones de base dans certaines stations, ce qui signifie que la neige mouillée est possible plus bas. Consultez le bulletin d'avalanche officiel avant de quitter les pistes balisées après les fortes chutes de samedi."
+     ]
+    }
+   ],
+   "advice": [
+    "Skiez au-dessus de 2 300 m ce week-end pour la meilleure qualité de neige et les conditions les plus sûres. Les pentes basses verront de la neige mouillée samedi à mesure que le niveau de congélation baisse.",
+    "Samedi 22 novembre sera la journée des plus fortes chutes : 52 cm prévus sur les pentes intermédiaires et supérieures. La visibilité et le risque d'avalanche seront tous deux élevés—consultez votre bulletin d'avalanche local avant de quitter les pistes balisées.",
+    "Dimanche 23 novembre, les pentes supérieures aux Arcs et à La Plagne détiendront plus de 200 cm. C'est une excellente couverture pour fin novembre, mais les zones de base restent minces ; restez sur un terrain damé aux altitudes basses.",
+    "La neige de début de saison à cette profondeur et cette vitesse ne dure pas pour toujours si un temps chaud revient. L'eau est en montagne maintenant, mais l'hiver n'est pas encore établi. Planifiez des voyages multi-jours pour consolider les gains.",
+    "Ce sont des prévisions de modèle pour des zones larges, pas des mesures ponctuelles. Les vents locaux peuvent déplacer significativement la profondeur de neige, et les zones minces sous une couverture épaisse peuvent toujours cacher des rochers. Exercez la prudence sur les pentes étroites et portez toujours un casque."
+   ],
+   "captions": {
+    "map": "Profondeur de neige dans les Alpes le 20 novembre 2026 (modélisée) montrant les pentes supérieures des grandes stations de 144 à 166 cm, avec 77 180 km² de la région couverts de neige. D'ici 23 novembre, la zone couverte de neige prévue s'étendra à 100 870 km²."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "voice": "hydro"
+  },
+  "fr": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "voice": "hydro"
+  }
+ },
+ "words_en": 739,
+ "indexable": true,
+ "main": {
+  "slug": "la_plagne",
+  "name": "La Plagne",
+  "lat": 45.5088,
+  "lon": 6.6956
+ },
+ "places": [
+  {
+   "name": "Les Arcs",
+   "lat": 45.5707,
+   "lon": 6.8069
+  },
+  {
+   "name": "Orelle",
+   "lat": 45.2542,
+   "lon": 6.5773
+  },
+  {
+   "name": "La Plagne",
+   "lat": 45.5088,
+   "lon": 6.6956
+  },
+  {
+   "name": "La Grave",
+   "lat": 45.0195,
+   "lon": 6.2771
+  },
+  {
+   "name": "La Rosière",
+   "lat": 45.6407,
+   "lon": 6.864
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "les_arcs",
+   "name": "Les Arcs"
+  },
+  {
+   "slug": "orelle",
+   "name": "Orelle"
+  },
+  {
+   "slug": "la_plagne",
+   "name": "La Plagne"
+  },
+  {
+   "slug": "la_grave",
+   "name": "La Grave"
+  },
+  {
+   "slug": "la_rosiere",
+   "name": "La Rosière"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "les_arcs",
+    "name": "Les Arcs",
+    "depth": 166,
+    "new72": 134,
+    "next": 77,
+    "top_m": 3205
+   },
+   {
+    "slug": "orelle",
+    "name": "Orelle",
+    "depth": 145,
+    "new72": 143,
+    "next": 92,
+    "top_m": 3221
+   },
+   {
+    "slug": "la_plagne",
+    "name": "La Plagne",
+    "depth": 144,
+    "new72": 125,
+    "next": 77,
+    "top_m": 3058
+   },
+   {
+    "slug": "la_grave",
+    "name": "La Grave",
+    "depth": 133,
+    "new72": 122,
+    "next": 108,
+    "top_m": 3543
+   },
+   {
+    "slug": "la_rosiere",
+    "name": "La Rosière",
+    "depth": 131,
+    "new72": 130,
+    "next": 72,
+    "top_m": 2799
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "EAWS (Alps)",
+   "url": "https://www.avalanches.org/"
+  }
+ ],
+ "trip_day": "2026-11-21",
+ "map_link": "https://snowscope.app/#@45.509,6.696,9.0",
+ "seconds": 54.5,
+ "facts_used": 34,
+ "voice": "hydro",
+ "media_ids": [
+  "map"
+ ],
+ "seo_target": {
+  "topic": "la_plagne:depth",
+  "query": "la plagne snow depth",
+  "lang": "en",
+  "slug": "la_plagne",
+  "region": "ALPS",
+  "intent": "depth",
+  "priority": "A",
+  "position": 1.0,
+  "impressions": 1,
+  "applied": true
+ },
+ "overlap": {
+  "before": 0.8,
+  "after": 0.8,
+  "with": "western-canada-whistler-blackcomb-fresh-snow-powder-alert-8-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.006,
+  "with": "western-canada-whistler-blackcomb-fresh-snow-powder-alert-8-november-2026"
+ },
+ "publish_utc": "2026-11-21T10:38:04Z",
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 952,
+  "overlap": 0.8,
+  "with": "western-canada-whistler-blackcomb-fresh-snow-powder-alert-8-november-2026",
+  "langs_off": [],
+  "score": 253.6,
+  "intent": "resort:les_arcs|vs_normal_high",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "split",
+  "files": {
+   "en": [
+    "blog/media/2026/11/alps-la-plagne-snow-depth-today-20-november-2026/cover-en.webp",
+    "blog/media/2026/11/alps-la-plagne-snow-depth-today-20-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/alps-la-plagne-snow-depth-today-20-november-2026/cover-fr.webp",
+    "blog/media/2026/11/alps-la-plagne-snow-depth-today-20-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}
