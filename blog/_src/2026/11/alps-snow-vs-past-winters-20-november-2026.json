@@ -1,0 +1,721 @@
+{
+ "id": "2026-11-20-alps-history",
+ "slug": "alps-snow-vs-past-winters-20-november-2026",
+ "date": "2026-11-20",
+ "published_utc": "2026-11-21T11:18:20Z",
+ "updated_utc": "2026-11-21T11:18:20Z",
+ "region": "ALPS",
+ "angle": "history",
+ "score": 134,
+ "signature": "les_arcs:5|orelle:3|la_plagne:4",
+ "keyword": {
+  "family": "vs-normal",
+  "entity": "alps",
+  "region": "ALPS",
+  "date": "2026-11-20"
+ },
+ "tags": [
+  "past-winters",
+  "snow-depth"
+ ],
+ "facts": {
+  "angle": "snow_vs_past_winters",
+  "region": "Alps",
+  "date": "2026-11-20",
+  "weekday": "Friday",
+  "model_run": "2026-11-20",
+  "forecast_days": [
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 77180,
+   "resorts_with_snow": 874,
+   "resorts_in_region": 1204
+  },
+  "region_before": {
+   "date": "2026-11-18",
+   "snow_covered_area_km2": 50500,
+   "resorts_with_snow": 728
+  },
+  "region_forecast": {
+   "date": "2026-11-23",
+   "snow_covered_area_km2": 100870,
+   "resorts_with_snow": 1040
+  },
+  "question": "Is there more or less snow than usual for the date, compared with the past 46 winters?",
+  "past_winters_period": "1980-81 to 2025-26",
+  "resorts": [
+   {
+    "name": "Les Arcs",
+    "country": "France",
+    "top_m": 3205,
+    "base_m": 1222,
+    "depth_cm_upper_slopes_today": 166,
+    "new_cm_last_24h": 53,
+    "new_cm_last_72h": 134,
+    "new_cm_forecast_next_days": 77,
+    "slug": "les_arcs",
+    "new_cm_by_day": {
+     "2026-11-18": 32,
+     "2026-11-19": 49,
+     "2026-11-20": 53,
+     "2026-11-21": 8,
+     "2026-11-22": 52,
+     "2026-11-23": 17
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1222,
+      "depth_cm_model": 4,
+      "new_cm_next_7_days": 4
+     },
+     "mid": {
+      "elev_m": 2213,
+      "depth_cm_model": 38,
+      "new_cm_next_7_days": 46
+     },
+     "top": {
+      "elev_m": 3205,
+      "depth_cm_model": 74,
+      "new_cm_next_7_days": 48
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2000,
+      "max": 2740
+     },
+     "2026-11-22": {
+      "min": 1860,
+      "max": 2720
+     },
+     "2026-11-23": {
+      "min": 1350,
+      "max": 1760
+     },
+     "2026-11-24": {
+      "min": 1330,
+      "max": 1820
+     }
+    },
+    "past_winters": {
+     "height_m": 2213,
+     "snow_cm_at_this_height_today_model": 44,
+     "deeper_than_n_of_past_winters": 28,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 32
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-18"
+    }
+   },
+   {
+    "name": "Orelle",
+    "country": "France",
+    "top_m": 3221,
+    "base_m": 2338,
+    "depth_cm_upper_slopes_today": 145,
+    "new_cm_last_24h": 55,
+    "new_cm_last_72h": 143,
+    "new_cm_forecast_next_days": 92,
+    "slug": "orelle",
+    "new_cm_by_day": {
+     "2026-11-18": 31,
+     "2026-11-19": 57,
+     "2026-11-20": 55,
+     "2026-11-21": 7,
+     "2026-11-22": 65,
+     "2026-11-23": 20
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2338,
+      "depth_cm_model": 36,
+      "new_cm_next_7_days": 52
+     },
+     "mid": {
+      "elev_m": 2779,
+      "depth_cm_model": 61,
+      "new_cm_next_7_days": 56
+     },
+     "top": {
+      "elev_m": 3221,
+      "depth_cm_model": 104,
+      "new_cm_next_7_days": 55
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2360,
+      "max": 2600
+     },
+     "2026-11-22": {
+      "min": 2500,
+      "max": 2780
+     },
+     "2026-11-23": {
+      "min": 2100,
+      "max": 2780
+     },
+     "2026-11-24": {
+      "min": 2130,
+      "max": 2350
+     }
+    },
+    "past_winters": {
+     "height_m": 2779,
+     "snow_cm_at_this_height_today_model": 49,
+     "deeper_than_n_of_past_winters": 17,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 64
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-14"
+    },
+    "nearest_station": {
+     "station": "Les Menuires",
+     "elev_m": 1800,
+     "depth_cm_measured": 7,
+     "new_cm_measured_24h": 4,
+     "measured_on": "2026-11-19",
+     "km_away": 8.2
+    }
+   },
+   {
+    "name": "La Plagne",
+    "country": "France",
+    "top_m": 3058,
+    "base_m": 1217,
+    "depth_cm_upper_slopes_today": 144,
+    "new_cm_last_24h": 50,
+    "new_cm_last_72h": 125,
+    "new_cm_forecast_next_days": 77,
+    "slug": "la_plagne",
+    "new_cm_by_day": {
+     "2026-11-18": 29,
+     "2026-11-19": 49,
+     "2026-11-20": 50,
+     "2026-11-21": 7,
+     "2026-11-22": 52,
+     "2026-11-23": 18
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1217,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 3
+     },
+     "mid": {
+      "elev_m": 2137,
+      "depth_cm_model": 36,
+      "new_cm_next_7_days": 48
+     },
+     "top": {
+      "elev_m": 3058,
+      "depth_cm_model": 84,
+      "new_cm_next_7_days": 46
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2030,
+      "max": 2750
+     },
+     "2026-11-22": {
+      "min": 1870,
+      "max": 2750
+     },
+     "2026-11-23": {
+      "min": 1340,
+      "max": 1740
+     },
+     "2026-11-24": {
+      "min": 1350,
+      "max": 2350
+     }
+    },
+    "past_winters": {
+     "height_m": 2137,
+     "snow_cm_at_this_height_today_model": 36,
+     "deeper_than_n_of_past_winters": 22,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 38
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-18"
+    },
+    "nearest_station": {
+     "station": "Courchevel",
+     "elev_m": 1780,
+     "depth_cm_measured": 10,
+     "new_cm_measured_24h": 9,
+     "measured_on": "2026-11-19",
+     "km_away": 11.7
+    }
+   },
+   {
+    "name": "La Grave",
+    "country": "France",
+    "top_m": 3543,
+    "base_m": 3196,
+    "depth_cm_upper_slopes_today": 133,
+    "new_cm_last_24h": 44,
+    "new_cm_last_72h": 122,
+    "new_cm_forecast_next_days": 108,
+    "slug": "la_grave",
+    "new_cm_by_day": {
+     "2026-11-18": 27,
+     "2026-11-19": 52,
+     "2026-11-20": 44,
+     "2026-11-21": 5,
+     "2026-11-22": 81,
+     "2026-11-23": 22
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3196,
+      "depth_cm_model": 108,
+      "new_cm_next_7_days": 68
+     },
+     "mid": {
+      "elev_m": 3369,
+      "depth_cm_model": 116,
+      "new_cm_next_7_days": 68
+     },
+     "top": {
+      "elev_m": 3543,
+      "depth_cm_model": 118,
+      "new_cm_next_7_days": 68
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 2740,
+      "max": 2990
+     },
+     "2026-11-22": {
+      "min": 2810,
+      "max": 3210
+     },
+     "2026-11-23": {
+      "min": 2360,
+      "max": 3210
+     },
+     "2026-11-24": {
+      "min": 2420,
+      "max": 2480
+     }
+    },
+    "past_winters": {
+     "height_m": 3369,
+     "snow_cm_at_this_height_today_model": 39,
+     "deeper_than_n_of_past_winters": 10,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 80
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-18"
+    }
+   },
+   {
+    "name": "La Rosière",
+    "country": "France / Italy",
+    "top_m": 2799,
+    "base_m": 1192,
+    "depth_cm_upper_slopes_today": 131,
+    "new_cm_last_24h": 49,
+    "new_cm_last_72h": 130,
+    "new_cm_forecast_next_days": 72,
+    "slug": "la_rosiere",
+    "new_cm_by_day": {
+     "2026-11-18": 36,
+     "2026-11-19": 48,
+     "2026-11-20": 49,
+     "2026-11-21": 7,
+     "2026-11-22": 49,
+     "2026-11-23": 16
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1192,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": null
+     },
+     "mid": {
+      "elev_m": 1995,
+      "depth_cm_model": 34,
+      "new_cm_next_7_days": null
+     },
+     "top": {
+      "elev_m": 2799,
+      "depth_cm_model": 66,
+      "new_cm_next_7_days": null
+     }
+    },
+    "past_winters": {
+     "height_m": 1995,
+     "snow_cm_at_this_height_today_model": 36,
+     "deeper_than_n_of_past_winters": 27,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 28
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-14"
+    }
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Les Arcs",
+     "slug": "les_arcs",
+     "now_cm": 44,
+     "usual_cm": 32,
+     "high_cm": null,
+     "week_ago_cm": null,
+     "height_m": 2213,
+     "best_weeks": [],
+     "ratio_pct": 138,
+     "deeper_than": 28,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Les Arcs",
+   "top_cm": 74,
+   "top_m": 3205,
+   "base_cm": 4,
+   "base_m": 1222,
+   "next_cm": 77,
+   "second": "Orelle",
+   "second_cm": 145,
+   "depth_cm": 166
+  },
+  "story": {
+   "id": "vs_normal_high",
+   "place": "resort:les_arcs",
+   "score": 50,
+   "resort": "Les Arcs"
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/alps-snow-vs-past-winters-20-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/alps-snow-vs-past-winters-20-november-2026/map_t.webp",
+   "bytes": 58238,
+   "snow_frac": 0.6364,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Les Arcs snow depth: is the snow above or below normal? (20 November)",
+   "description": "5 resorts in the Alps, 46 past winters, one date: here is how today compares. Clearly above normal: 0. Confidence: good for the trend, lower for any …",
+   "lede": "Les Arcs snow depth – 5 resorts in the Alps, 46 past winters, one date: here is how today compares. Clearly above normal: 0. Confidence: good for the trend, lower for any single number.",
+   "sections": [
+    {
+     "h": "Today's snow map",
+     "p": [
+      "Top of this list: Les Arcs, about 166 cm up high. Then Orelle 145 cm and La Plagne 144 cm.",
+      "Snow-covered ground in the Alps: 77,180 km². Resorts with snow: 874 of 1,204.",
+      "Resort values: modelled, area-wide. Station values: measured, one point. Read them together."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 2,213 m, Les Arcs has 44 cm today; a normal 20 November has 32 cm there.",
+      "That is more than in 28 of the 46 past winters on this date.",
+      "An early lead like this matters most for the lower and middle runs, which usually wait until December for this much snow.",
+      "Day by day at Les Arcs: Friday 20 November 53 cm; Saturday 21 November 8 cm; Sunday 22 November 52 cm; Monday 23 November 17 cm.",
+      "Height by height at Les Arcs: 1,222 m 4 cm on the ground, 4 cm more in the next 7 days; 2,213 m 38 cm on the ground, 46 cm more in the next 7 days; 3,205 m 74 cm on the ground, 48 cm more in the next 7 days."
+     ]
+    },
+    {
+     "h": "Is this normal?",
+     "p": [
+      "Near average at Les Arcs: 44 cm at 2,213 m, deeper than in 28 of the past 46 winters on this date (usual: 32 cm).",
+      "Orelle, 2,779 m: 49 cm, close to normal (usual: 64 cm); deeper than in 17 of the past 46 winters.",
+      "Near average at La Plagne: 36 cm at 2,137 m, deeper than in 22 of the past 46 winters on this date (usual: 38 cm).",
+      "Below par at La Grave: 39 cm at 3,369 m against a usual 80 cm, and only 10 of the past 46 winters had less on 20 November.",
+      "La Rosière, 1,995 m: 36 cm, close to normal (usual: 28 cm); deeper than in 27 of the past 46 winters."
+     ]
+    },
+    {
+     "h": "The forecast in short",
+     "p": [
+      "Forecast to 23 November: 108 cm at La Grave, 92 cm at Orelle and 77 cm at Les Arcs. Treat the later days with care.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "South-facing slopes take the most sun and melt first; high, north-facing slopes keep their snow the longest.",
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "Get a powder alert in the SnowScope app to know when Les Arcs gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the Alps on 20 November 2026 (SnowScope snow model): Les Arcs, Orelle, La Plagne, La Grave, La Rosière."
+   }
+  },
+  "fr": {
+   "title": "Alpes : la neige au-dessus ou en dessous de la normale ? (20 novembre)",
+   "description": "5 stations dans les Alpes, 46 hivers passés, une date : voici comment se situe aujourd'hui. Nettement au-dessus de la normale : 0. Confiance : bonne …",
+   "lede": "5 stations dans les Alpes, 46 hivers passés, une date : voici comment se situe aujourd'hui. Nettement au-dessus de la normale : 0. Confiance : bonne pour la tendance, plus faible pour chaque chiffre pris seul.",
+   "sections": [
+    {
+     "h": "La carte de neige du jour",
+     "p": [
+      "En haut de la liste : Les Arcs, environ 166 cm en altitude. Puis Orelle 145 cm et La Plagne 144 cm.",
+      "Le compte du jour dans les Alpes : 874 stations sur 1 204 avec de la neige en haut, 77 180 km² de sol enneigé.",
+      "Quelle confiance ? Les valeurs des stations de ski sont des estimations du modèle pour le haut du domaine ; les stations de mesure donnent des mesures, chacune en un point à la date indiquée."
+     ]
+    },
+    {
+     "h": "Face aux hivers passés",
+     "p": [
+      "Vers 2 213 m, Les Arcs a 44 cm aujourd'hui ; un 20 novembre normal y compte 32 cm.",
+      "C'est plus que lors de 28 des 46 hivers passés à cette date.",
+      "Une telle avance compte surtout pour les pistes basses et moyennes, qui attendent d'habitude décembre pour autant de neige.",
+      "Jour après jour à Les Arcs : vendredi 20 novembre 53 cm; samedi 21 novembre 8 cm; dimanche 22 novembre 52 cm; lundi 23 novembre 17 cm.",
+      "Altitude par altitude à Les Arcs : 1 222 m 4 cm au sol, 4 cm de plus dans les 7 prochains jours; 2 213 m 38 cm au sol, 46 cm de plus dans les 7 prochains jours; 3 205 m 74 cm au sol, 48 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
+     "h": "Est-ce normal ?",
+     "p": [
+      "Dans la moyenne à Les Arcs : 44 cm à 2 213 m, plus que lors de 28 des 46 hivers passés à cette date (habituel : 32 cm).",
+      "Orelle, 2 779 m : 49 cm, proche de la normale (habituel : 64 cm) ; plus que lors de 17 des 46 hivers passés.",
+      "Dans la moyenne à La Plagne : 36 cm à 2 137 m, plus que lors de 22 des 46 hivers passés à cette date (habituel : 38 cm).",
+      "Sous la moyenne à La Grave : 39 cm à 3 369 m contre 80 cm d'habitude, et seuls 10 des 46 hivers passés en avaient moins un 20 novembre.",
+      "La Rosière, 1 995 m : 36 cm, proche de la normale (habituel : 28 cm) ; plus que lors de 27 des 46 hivers passés."
+     ]
+    },
+    {
+     "h": "La prévision en bref",
+     "p": [
+      "Prévision jusqu'au 23 novembre : 108 cm à La Grave, 92 cm à Orelle et 77 cm à Les Arcs. Prudence sur les derniers jours.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Les pentes sud prennent le plus de soleil et fondent d'abord ; les pentes nord en altitude gardent leur neige le plus longtemps.",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Les Arcs reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans les Alpes le 20 novembre 2026 (modèle de neige SnowScope) : Les Arcs, Orelle, La Plagne, La Grave, La Rosière."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "usd": 0.0,
+   "rejected_numbers": [
+    [
+     "3000",
+     "146",
+     "2800",
+     "2300",
+     "1200"
+    ],
+    [
+     "2200"
+    ]
+   ],
+   "voice": "sat"
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "sat"
+  }
+ },
+ "words_en": 366,
+ "indexable": false,
+ "main": {
+  "slug": "les_arcs",
+  "name": "Les Arcs",
+  "lat": 45.5707,
+  "lon": 6.8069
+ },
+ "places": [
+  {
+   "name": "Les Arcs",
+   "lat": 45.5707,
+   "lon": 6.8069
+  },
+  {
+   "name": "Orelle",
+   "lat": 45.2542,
+   "lon": 6.5773
+  },
+  {
+   "name": "La Plagne",
+   "lat": 45.5088,
+   "lon": 6.6956
+  },
+  {
+   "name": "La Grave",
+   "lat": 45.0195,
+   "lon": 6.2771
+  },
+  {
+   "name": "La Rosière",
+   "lat": 45.6407,
+   "lon": 6.864
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "les_arcs",
+   "name": "Les Arcs"
+  },
+  {
+   "slug": "orelle",
+   "name": "Orelle"
+  },
+  {
+   "slug": "la_plagne",
+   "name": "La Plagne"
+  },
+  {
+   "slug": "la_grave",
+   "name": "La Grave"
+  },
+  {
+   "slug": "la_rosiere",
+   "name": "La Rosière"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "les_arcs",
+    "name": "Les Arcs",
+    "depth": 166,
+    "new72": 134,
+    "next": 77,
+    "top_m": 3205
+   },
+   {
+    "slug": "orelle",
+    "name": "Orelle",
+    "depth": 145,
+    "new72": 143,
+    "next": 92,
+    "top_m": 3221
+   },
+   {
+    "slug": "la_plagne",
+    "name": "La Plagne",
+    "depth": 144,
+    "new72": 125,
+    "next": 77,
+    "top_m": 3058
+   },
+   {
+    "slug": "la_grave",
+    "name": "La Grave",
+    "depth": 133,
+    "new72": 122,
+    "next": 108,
+    "top_m": 3543
+   },
+   {
+    "slug": "la_rosiere",
+    "name": "La Rosière",
+    "depth": 131,
+    "new72": 130,
+    "next": 72,
+    "top_m": 2799
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "EAWS (Alps)",
+   "url": "https://www.avalanches.org/"
+  }
+ ],
+ "trip_day": "2026-11-21",
+ "map_link": "https://snowscope.app/#@45.571,6.807,9.0",
+ "seconds": 51.5,
+ "facts_used": 36,
+ "voice": "sat",
+ "media_ids": [
+  "map"
+ ],
+ "seo_target": {
+  "topic": "les_arcs:depth",
+  "query": "les arcs snow depth",
+  "lang": "en",
+  "slug": "les_arcs",
+  "region": "ALPS",
+  "intent": "depth",
+  "priority": "B",
+  "position": 48.6,
+  "impressions": 5,
+  "applied": true
+ },
+ "overlap": {
+  "before": 20.3,
+  "after": 20.3,
+  "with": "western-canada-marmot-basin-snow-depth-today-20-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.143,
+  "with": "western-canada-marmot-basin-snow-depth-today-20-november-2026"
+ },
+ "publish_utc": "2026-11-21T11:18:20Z",
+ "noindex_why": "quality: words 458 < 600; sentence-bank template article (AdSense review)",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 458 < 600",
+   "sentence-bank template article (AdSense review)"
+  ],
+  "words": 458,
+  "overlap": 4.3,
+  "with": "alps-les-grands-montets-fresh-snow-powder-alert-17-november-2026",
+  "langs_off": [],
+  "score": 209.7,
+  "intent": "resort:les_arcs|vs_normal_high",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "split",
+  "files": {
+   "en": [
+    "blog/media/2026/11/alps-snow-vs-past-winters-20-november-2026/cover-en.webp",
+    "blog/media/2026/11/alps-snow-vs-past-winters-20-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/alps-snow-vs-past-winters-20-november-2026/cover-fr.webp",
+    "blog/media/2026/11/alps-snow-vs-past-winters-20-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}
