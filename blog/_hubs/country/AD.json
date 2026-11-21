@@ -444,6 +444,109 @@
 },
 "change_vs_yesterday_km2": -20,
 "change_vs_7_days_km2": 0
+},
+"2026-11-21": {
+"country": "Andorra",
+"country_code": "AD",
+"date": "2026-11-21",
+"quiet": false,
+"modelled_km2": 440,
+"snow_km2_today": 20,
+"snow_km2_yesterday": 30,
+"snow_km2_7_days_ago": 10,
+"new_cm_24h_max": 1,
+"new_cm_72h_max": 4,
+"area_km2_5cm_new_72h": 0,
+"next_3_days_max_cm": 7,
+"next_7_days_max_cm": 26,
+"snowiest_day": "2026-11-25",
+"snowiest_day_cm": 14,
+"first_snow_day": "2026-11-22",
+"hotspots": [
+{
+"name": "the Andorran peaks",
+"new_cm_72h": 6,
+"lat": 42.597,
+"lon": 1.438
+}
+],
+"bands": [
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 1
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 9
+},
+{
+"from_m": 2500,
+"to_m": 5000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 8
+}
+],
+"snow_line_m": null,
+"white_share_pct": 5,
+"resorts": [
+{
+"name": "Canaro",
+"slug": "canaro",
+"depth_cm": 15,
+"new_cm_72h": 4,
+"next_3_days_cm": 7,
+"top_m": 2500
+},
+{
+"name": "GrandValira",
+"slug": "grandvalira",
+"depth_cm": 13,
+"new_cm_72h": 4,
+"next_3_days_cm": 7,
+"top_m": 2619
+},
+{
+"name": "Ordino-Arcalis",
+"slug": "ordino_arcalis",
+"depth_cm": 6,
+"new_cm_72h": 5,
+"next_3_days_cm": 7,
+"top_m": 2626
+},
+{
+"name": "Pal-Arinsal",
+"slug": "pal_arinsal",
+"depth_cm": 5,
+"new_cm_72h": 3,
+"next_3_days_cm": 8,
+"top_m": 2494
+}
+],
+"n_resorts": 4,
+"n_resorts_with_snow": 4,
+"resort_next_until": "2026-11-24",
+"week2": {
+"week1_max_cm": 20,
+"week2_max_cm": 25,
+"week2_days": [
+"2026-11-29",
+"2026-12-05"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": -10,
+"change_vs_7_days_km2": 10
 }
 }
 }

@@ -645,6 +645,135 @@
 },
 "change_vs_yesterday_km2": -2320,
 "change_vs_7_days_km2": -1980
+},
+"2026-11-21": {
+"country": "Austria",
+"country_code": "AT",
+"date": "2026-11-21",
+"quiet": false,
+"modelled_km2": 52110,
+"snow_km2_today": 29110,
+"snow_km2_yesterday": 25310,
+"snow_km2_7_days_ago": 19900,
+"new_cm_24h_max": 13,
+"new_cm_72h_max": 30,
+"area_km2_5cm_new_72h": 25840,
+"next_3_days_max_cm": 28,
+"next_7_days_max_cm": 35,
+"snowiest_day": "2026-11-26",
+"snowiest_day_cm": 17,
+"first_snow_day": "2026-11-22",
+"hotspots": [
+{
+"name": "Vorarlberg",
+"new_cm_72h": 47,
+"lat": 47.062,
+"lon": 9.679
+},
+{
+"name": "Carinthia",
+"new_cm_72h": 33,
+"lat": 46.441,
+"lon": 14.214
+},
+{
+"name": "the Ötztal Alps",
+"new_cm_72h": 31,
+"lat": 46.887,
+"lon": 10.865
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 9
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 3,
+"snow_cover_pct": 63
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 10,
+"snow_cover_pct": 100
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 19,
+"snow_cover_pct": 100
+},
+{
+"from_m": 2500,
+"to_m": 5000,
+"mean_depth_cm": 30,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 1100,
+"white_share_pct": 56,
+"resorts": [
+{
+"name": "Stubaier Gletscher",
+"slug": "stubaier_gletscher",
+"depth_cm": 63,
+"new_cm_72h": 24,
+"next_3_days_cm": 19,
+"top_m": 3208
+},
+{
+"name": "Kaprun",
+"slug": "kaprun_kitzsteinhorn_maiskogel",
+"depth_cm": 62,
+"new_cm_72h": 18,
+"next_3_days_cm": 11,
+"top_m": 3024
+},
+{
+"name": "Pitztaler Gletscher",
+"slug": "pitztaler_gletscher",
+"depth_cm": 54,
+"new_cm_72h": 26,
+"next_3_days_cm": 21,
+"top_m": 3424
+},
+{
+"name": "Kühtai",
+"slug": "kuhtai",
+"depth_cm": 53,
+"new_cm_72h": 24,
+"next_3_days_cm": 21,
+"top_m": 2507
+},
+{
+"name": "Weißsee Gletscherwelt",
+"slug": "weisee_gletscherwelt",
+"depth_cm": 51,
+"new_cm_72h": 17,
+"next_3_days_cm": 11,
+"top_m": 2555
+}
+],
+"n_resorts": 277,
+"n_resorts_with_snow": 255,
+"resort_next_until": "2026-11-24",
+"week2": {
+"week1_max_cm": 27,
+"week2_max_cm": 9,
+"week2_days": [
+"2026-11-29",
+"2026-12-05"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 3800,
+"change_vs_7_days_km2": 9210
 }
 }
 }

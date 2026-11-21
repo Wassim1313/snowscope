@@ -550,6 +550,119 @@
 "week2": null,
 "change_vs_yesterday_km2": -10,
 "change_vs_7_days_km2": 40
+},
+"2026-11-21": {
+"country": "Bulgaria",
+"country_code": "BG",
+"date": "2026-11-21",
+"quiet": false,
+"modelled_km2": 31250,
+"snow_km2_today": 330,
+"snow_km2_yesterday": 260,
+"snow_km2_7_days_ago": 100,
+"new_cm_24h_max": 2,
+"new_cm_72h_max": 3,
+"area_km2_5cm_new_72h": 90,
+"next_3_days_max_cm": 6,
+"next_7_days_max_cm": 22,
+"snowiest_day": "2026-11-27",
+"snowiest_day_cm": 8,
+"first_snow_day": "2026-11-22",
+"hotspots": [
+{
+"name": "the Rila Mountains",
+"new_cm_72h": 9,
+"lat": 42.2,
+"lon": 23.274
+},
+{
+"name": "Vitosha",
+"new_cm_72h": 4,
+"lat": 42.569,
+"lon": 23.274
+},
+{
+"name": "the Pirin Mountains",
+"new_cm_72h": 3,
+"lat": 41.84,
+"lon": 23.323
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 2
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 1,
+"snow_cover_pct": 22
+},
+{
+"from_m": 2500,
+"to_m": 5000,
+"mean_depth_cm": 3,
+"snow_cover_pct": 88
+}
+],
+"snow_line_m": 2400,
+"white_share_pct": 1,
+"resorts": [
+{
+"name": "Bansko",
+"slug": "bansko",
+"depth_cm": 10,
+"new_cm_72h": 2,
+"next_3_days_cm": 7,
+"top_m": 2516
+},
+{
+"name": "Borovets",
+"slug": "borovets",
+"depth_cm": 8,
+"new_cm_72h": 5,
+"next_3_days_cm": 7,
+"top_m": 2538
+},
+{
+"name": "Panichishte",
+"slug": "panichishte",
+"depth_cm": 1,
+"new_cm_72h": 3,
+"next_3_days_cm": 5,
+"top_m": 2092
+}
+],
+"n_resorts": 11,
+"n_resorts_with_snow": 3,
+"resort_next_until": "2026-11-24",
+"week2": {
+"week1_max_cm": 29,
+"week2_max_cm": 30,
+"week2_days": [
+"2026-11-29",
+"2026-12-05"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 70,
+"change_vs_7_days_km2": 230
 }
 }
 }
