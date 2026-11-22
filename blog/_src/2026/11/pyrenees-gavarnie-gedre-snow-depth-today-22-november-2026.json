@@ -1,0 +1,694 @@
+{
+ "id": "2026-11-22-pyrenees-deepest",
+ "slug": "pyrenees-gavarnie-gedre-snow-depth-today-22-november-2026",
+ "date": "2026-11-22",
+ "published_utc": "2026-11-22T10:48:48Z",
+ "updated_utc": "2026-11-22T10:48:48Z",
+ "region": "PYRENEES",
+ "angle": "deepest",
+ "score": 136.5,
+ "signature": "gavarnie_gedre:30|formigueres:20|cauterets:20",
+ "keyword": {
+  "family": "snow-depth",
+  "entity": "gavarnie_gedre",
+  "region": "PYRENEES",
+  "date": "2026-11-22"
+ },
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "Pyrenees",
+  "date": "2026-11-22",
+  "weekday": "Sunday",
+  "model_run": "2026-11-22",
+  "forecast_days": [
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 3460,
+   "resorts_with_snow": 44,
+   "resorts_in_region": 53
+  },
+  "region_before": {
+   "date": "2026-11-20",
+   "snow_covered_area_km2": 1570,
+   "resorts_with_snow": 39
+  },
+  "region_forecast": {
+   "date": "2026-11-25",
+   "snow_covered_area_km2": 9560,
+   "resorts_with_snow": 51
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Gavarnie-Gèdre",
+    "country": "France",
+    "top_m": 2283,
+    "base_m": 1818,
+    "depth_cm_upper_slopes_today": 26,
+    "new_cm_last_24h": 7,
+    "new_cm_last_72h": 10,
+    "new_cm_forecast_next_days": 14,
+    "slug": "gavarnie_gedre",
+    "new_cm_by_day": {
+     "2026-11-20": 0,
+     "2026-11-21": 3,
+     "2026-11-22": 7,
+     "2026-11-23": 0,
+     "2026-11-24": 5,
+     "2026-11-25": 9
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1818,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 12
+     },
+     "mid": {
+      "elev_m": 2050,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 15
+     },
+     "top": {
+      "elev_m": 2283,
+      "depth_cm_model": 4,
+      "new_cm_next_7_days": 16
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-22": {
+      "min": 2090,
+      "max": 2190
+     },
+     "2026-11-23": {
+      "min": 1990,
+      "max": 2950
+     },
+     "2026-11-24": {
+      "min": 2060,
+      "max": 2840
+     },
+     "2026-11-25": {
+      "min": 1950,
+      "max": 2030
+     }
+    },
+    "past_winters": {
+     "height_m": 2050,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 11,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 4
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-19"
+    }
+   },
+   {
+    "name": "Formiguères",
+    "country": "France",
+    "top_m": 2305,
+    "base_m": 1738,
+    "depth_cm_upper_slopes_today": 25,
+    "new_cm_last_24h": 4,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 7,
+    "slug": "formigueres",
+    "new_cm_by_day": {
+     "2026-11-20": 0,
+     "2026-11-21": 0,
+     "2026-11-22": 4,
+     "2026-11-23": 1,
+     "2026-11-24": 1,
+     "2026-11-25": 5
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1738,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 4
+     },
+     "mid": {
+      "elev_m": 2021,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 7
+     },
+     "top": {
+      "elev_m": 2305,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 8
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-22": {
+      "min": 1830,
+      "max": 1890
+     },
+     "2026-11-23": {
+      "min": 1860,
+      "max": 2990
+     },
+     "2026-11-24": {
+      "min": 1980,
+      "max": 3070
+     },
+     "2026-11-25": {
+      "min": 1830,
+      "max": 1980
+     }
+    },
+    "past_winters": {
+     "height_m": 2021,
+     "snow_cm_at_this_height_today_model": 3,
+     "deeper_than_n_of_past_winters": 21,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 3
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-19"
+    }
+   },
+   {
+    "name": "Cauterets Cirque du Lys",
+    "country": "France",
+    "top_m": 2420,
+    "base_m": 1725,
+    "depth_cm_upper_slopes_today": 24,
+    "new_cm_last_24h": 12,
+    "new_cm_last_72h": 14,
+    "new_cm_forecast_next_days": 26,
+    "slug": "cauterets",
+    "new_cm_by_day": {
+     "2026-11-20": 0,
+     "2026-11-21": 4,
+     "2026-11-22": 12,
+     "2026-11-23": 1,
+     "2026-11-24": 6,
+     "2026-11-25": 19
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1725,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 14
+     },
+     "mid": {
+      "elev_m": 2072,
+      "depth_cm_model": 3,
+      "new_cm_next_7_days": 20
+     },
+     "top": {
+      "elev_m": 2420,
+      "depth_cm_model": 9,
+      "new_cm_next_7_days": 24
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-22": {
+      "min": 2240,
+      "max": 2240
+     },
+     "2026-11-23": {
+      "min": 2240,
+      "max": 2930
+     },
+     "2026-11-24": {
+      "min": 2240,
+      "max": 2870
+     },
+     "2026-11-25": {
+      "min": 2240,
+      "max": 2240
+     }
+    },
+    "past_winters": {
+     "height_m": 2072,
+     "snow_cm_at_this_height_today_model": 1,
+     "deeper_than_n_of_past_winters": 9,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 7
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-19"
+    }
+   },
+   {
+    "name": "Peyragudes",
+    "country": "France",
+    "top_m": 2360,
+    "base_m": 1389,
+    "depth_cm_upper_slopes_today": 19,
+    "new_cm_last_24h": 5,
+    "new_cm_last_72h": 6,
+    "new_cm_forecast_next_days": 9,
+    "slug": "peyragudes",
+    "new_cm_by_day": {
+     "2026-11-20": 0,
+     "2026-11-21": 1,
+     "2026-11-22": 5,
+     "2026-11-23": 0,
+     "2026-11-24": 3,
+     "2026-11-25": 6
+    }
+   },
+   {
+    "name": "Piau-Engaly",
+    "country": "France",
+    "top_m": 2527,
+    "base_m": 1762,
+    "depth_cm_upper_slopes_today": 17,
+    "new_cm_last_24h": 8,
+    "new_cm_last_72h": 13,
+    "new_cm_forecast_next_days": 14,
+    "slug": "piau_engaly",
+    "new_cm_by_day": {
+     "2026-11-20": 0,
+     "2026-11-21": 5,
+     "2026-11-22": 8,
+     "2026-11-23": 0,
+     "2026-11-24": 5,
+     "2026-11-25": 9
+    }
+   }
+  ],
+  "measured_at_stations": [
+   {
+    "station": "Boí (2.537 m)",
+    "elev_m": 2537,
+    "depth_cm_measured": 9,
+    "new_cm_measured_24h": 3,
+    "measured_on": "2026-11-21",
+    "network": "smc_xema"
+   },
+   {
+    "station": "Núria (1.971 m)",
+    "elev_m": 1971,
+    "depth_cm_measured": 6,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-21",
+    "network": "smc_xema"
+   },
+   {
+    "station": "Das - Aeròdrom",
+    "elev_m": 1096,
+    "depth_cm_measured": 3,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-21",
+    "network": "smc_xema"
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Gavarnie-Gèdre",
+     "slug": "gavarnie_gedre",
+     "now_cm": 0,
+     "usual_cm": 4,
+     "high_cm": 34,
+     "week_ago_cm": null,
+     "height_m": 2050,
+     "best_weeks": [
+      9,
+      7,
+      8
+     ],
+     "ratio_pct": 0,
+     "deeper_than": 11,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Gavarnie-Gèdre",
+   "top_cm": 4,
+   "top_m": 2283,
+   "base_cm": 0,
+   "base_m": 1818,
+   "rain_day": "2026-11-23",
+   "freezing_m": 2950,
+   "lift_top_m": 2283,
+   "next_cm": 14,
+   "second": "Formiguères",
+   "second_cm": 25,
+   "depth_cm": 26
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/pyrenees-gavarnie-gedre-snow-depth-today-22-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/pyrenees-gavarnie-gedre-snow-depth-today-22-november-2026/map_t.webp",
+   "bytes": 54224,
+   "snow_frac": 0.1441,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Where is the deepest snow in the Pyrenees? Gavarnie-Gèdre, with 26 cm (22 November)",
+   "description": "Where is the deepest snow in the Pyrenees today? If you want the most snow in the Pyrenees today, look at Gavarnie-Gèdre (France): about 26 cm up …",
+   "lede": "Where is the deepest snow in the Pyrenees today? If you want the most snow in the Pyrenees today, look at Gavarnie-Gèdre (France): about 26 cm up high. After it come Formiguères (25 cm) and Cauterets Cirque du Lys (24 cm). Across the region, 44 of 53 resorts in the Pyrenees have snow up high today, and our model finds 3,460 km² of white ground. In the field we always carry a probe; numbers like these tell you where to go, the probe tells you what is under your skis.",
+   "sections": [
+    {
+     "h": "Snow on the slopes today",
+     "p": [
+      "The snow has spread since 20 November, from 1,570 km² to 3,460 km² today; for 25 November our forecast gives 9,560 km²."
+     ]
+    },
+    {
+     "h": "What to expect next",
+     "p": [
+      "Between now and 25 November we expect 26 cm at Cauterets Cirque du Lys, 14 cm at Gavarnie-Gèdre and 14 cm at Piau-Engaly.",
+      "On 23 November the freezing level at Gavarnie-Gèdre climbs to 1,990 m to 2,950 m, higher than the top of the lifts (2,283 m): expect rain or wet snow on every slope.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    },
+    {
+     "h": "What the stations saw",
+     "p": [
+      "On 21 November, the Boí (2.537 m) station (2,537 m) measured 9 cm on the ground, including 3 cm of new snow in 24 hours. On 21 November, the Núria (1.971 m) station (1,971 m) measured 6 cm on the ground. At the Das - Aeròdrom station (1,096 m), the measured snow on the ground was 3 cm on 21 November.",
+      "Our resort numbers are estimates for the upper slopes. The station numbers are real measurements, but only at one point and on the date shown."
+     ]
+    },
+    {
+     "h": "Against other winters",
+     "p": [
+      "At Gavarnie-Gèdre, the ground at 2,050 m is still bare today, while 4 cm is usual for the date. Only 11 of the past 46 winters had as little.",
+      "Nothing unusual at Formiguères: 3 cm at 2,021 m today, more than in 21 of the past 46 winters, with 3 cm as the usual.",
+      "A slow start at Cauterets Cirque du Lys: at 2,072 m our model shows just 1 cm, below the usual 7 cm; on 22 November, only 9 of the past 46 winters had less."
+     ]
+    }
+   ],
+   "advice": [
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "South-facing slopes take the most sun and melt first; high, north-facing slopes keep their snow the longest.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Gavarnie-Gèdre gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the Pyrenees on 22 November 2026 (SnowScope snow model): Gavarnie-Gèdre, Formiguères, Cauterets Cirque du Lys, Peyragudes, Piau-Engaly."
+   }
+  },
+  "fr": {
+   "title": "Où est la neige la plus épaisse dans les Pyrénées ? À Gavarnie-Gèdre, avec 26 cm (22 novembre)",
+   "description": "Où la neige est-elle la plus épaisse dans les Pyrénées aujourd'hui ? Pour trouver le plus de neige dans les Pyrénées aujourd'hui, regardez …",
+   "lede": "Où la neige est-elle la plus épaisse dans les Pyrénées aujourd'hui ? Pour trouver le plus de neige dans les Pyrénées aujourd'hui, regardez Gavarnie-Gèdre (France) : environ 26 cm en altitude. Ensuite viennent Formiguères (25 cm) et Cauterets Cirque du Lys (24 cm). Dans la région, 44 stations sur 53 dans les Pyrénées ont de la neige en altitude aujourd'hui, et notre modèle trouve 3 460 km² de sol blanc. Sur le terrain, nous avons toujours une sonde ; ces chiffres disent où aller, la sonde dit ce qu'il y a sous les skis.",
+   "sections": [
+    {
+     "h": "La neige sur les pentes aujourd'hui",
+     "p": [
+      "La surface blanche a changé : 1 570 km² le 20 novembre, 3 460 km² aujourd'hui, et 9 560 km² attendus le 25 novembre."
+     ]
+    },
+    {
+     "h": "À quoi s'attendre ensuite",
+     "p": [
+      "Entre aujourd'hui et le 25 novembre, nous attendons 26 cm à Cauterets Cirque du Lys, 14 cm à Gavarnie-Gèdre et 14 cm à Piau-Engaly.",
+      "Le 23 novembre, l'isotherme 0 °C à Gavarnie-Gèdre grimpe entre 1 990 m et 2 950 m, plus haut que le sommet des remontées (2 283 m) : attendez-vous à de la pluie ou de la neige mouillée sur toutes les pentes.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    },
+    {
+     "h": "Ce qu'ont vu les stations",
+     "p": [
+      "Le 21 novembre, la station de mesure Boí (2.537 m) (2 537 m) a relevé 9 cm au sol, dont 3 cm de neige fraîche en 24 heures. Le 21 novembre, la station de mesure Núria (1.971 m) (1 971 m) a relevé 6 cm au sol. À la station de mesure Das - Aeròdrom (1 096 m), la neige mesurée au sol était de 3 cm le 21 novembre.",
+      "Nos chiffres des stations de ski sont des estimations pour le haut du domaine. Ceux des stations de mesure sont de vraies mesures, mais en un seul point et à la date indiquée."
+     ]
+    },
+    {
+     "h": "Face aux autres hivers",
+     "p": [
+      "À Gavarnie-Gèdre, le sol est encore nu à 2 050 m aujourd'hui, alors que 4 cm est habituel à cette date. Seuls 11 des 46 hivers passés en avaient aussi peu.",
+      "Rien d'anormal à Formiguères : 3 cm à 2 021 m aujourd'hui, plus que lors de 21 des 46 hivers passés, avec 3 cm comme valeur habituelle.",
+      "Départ lent à Cauterets Cirque du Lys : à 2 072 m, notre modèle ne montre que 1 cm, moins que les 7 cm habituels ; un 22 novembre, seuls 9 des 46 hivers passés en avaient moins."
+     ]
+    }
+   ],
+   "advice": [
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Les pentes sud prennent le plus de soleil et fondent d'abord ; les pentes nord en altitude gardent leur neige le plus longtemps.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Gavarnie-Gèdre reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans les Pyrénées le 22 novembre 2026 (modèle de neige SnowScope) : Gavarnie-Gèdre, Formiguères, Cauterets Cirque du Lys, Peyragudes, Piau-Engaly."
+   }
+  },
+  "es": {
+   "title": "Espesores nieve pirineo: ¿Dónde hay más nieve en los Pirineos? En Gavarnie-Gèdre, con 26 cm (22 de noviembre)",
+   "description": "¿Dónde hay hoy más nieve en los Pirineos? Si buscas la mayor cantidad de nieve en los Pirineos hoy, mira Gavarnie-Gèdre (Francia): unos 26 cm arriba. …",
+   "lede": "Espesores nieve pirineo – ¿Dónde hay hoy más nieve en los Pirineos? Si buscas la mayor cantidad de nieve en los Pirineos hoy, mira Gavarnie-Gèdre (Francia): unos 26 cm arriba. Después vienen Formiguères (25 cm) y Cauterets Cirque du Lys (24 cm). En la región, 44 de 53 estaciones en los Pirineos tienen nieve arriba hoy, y nuestro modelo encuentra 3460 km² de suelo blanco. En el campo siempre llevamos una sonda; estas cifras dicen adónde ir, la sonda dice qué hay bajo los esquís.",
+   "sections": [
+    {
+     "h": "La nieve en las pistas hoy",
+     "p": [
+      "La superficie blanca ha cambiado: 1570 km² el 20 de noviembre, 3460 km² hoy y 9560 km² esperados el 25 de noviembre."
+     ]
+    },
+    {
+     "h": "Qué esperar después",
+     "p": [
+      "Entre hoy y el 25 de noviembre esperamos 26 cm en Cauterets Cirque du Lys, 14 cm en Gavarnie-Gèdre y 14 cm en Piau-Engaly.",
+      "El 23 de noviembre la cota de congelación en Gavarnie-Gèdre sube a 1990 m-2950 m, más alta que la cima de los remontes (2283 m): cuenta con lluvia o nieve húmeda en todas las pistas.",
+      "Las previsiones a varios días pueden cambiar: vuelve a mirar el mapa el día antes de viajar."
+     ]
+    },
+    {
+     "h": "Lo que vieron las estaciones",
+     "p": [
+      "El 21 de noviembre, la estación de medida Boí (2.537 m) (2537 m) midió 9 cm en el suelo, con 3 cm de nieve nueva en 24 horas. El 21 de noviembre, la estación de medida Núria (1.971 m) (1971 m) midió 6 cm en el suelo. En la estación de medida Das - Aeròdrom (1096 m), la nieve medida en el suelo era de 3 cm el 21 de noviembre.",
+      "Nuestras cifras de las estaciones de esquí son estimaciones para las pistas altas. Las de las estaciones de medida son medidas reales, pero de un solo punto y en la fecha indicada."
+     ]
+    },
+    {
+     "h": "Frente a otros inviernos",
+     "p": [
+      "En Gavarnie-Gèdre, el suelo a 2050 m sigue desnudo hoy, cuando lo habitual en esta fecha es 4 cm. Solo 11 de los 46 inviernos pasados tenían tan poca.",
+      "Nada raro en Formiguères: 3 cm a 2021 m hoy, más que en 21 de los 46 inviernos pasados, con 3 cm como lo habitual.",
+      "Comienzo lento en Cauterets Cirque du Lys: a 2072 m nuestro modelo muestra solo 1 cm, menos que los 7 cm habituales; el 22 de noviembre, solo 9 de los 46 inviernos pasados tenían menos."
+     ]
+    }
+   ],
+   "advice": [
+    "Nieve en el mapa no significa que la estación esté abierta: consulta remontes y fechas de apertura en su web.",
+    "La nieve de principio de temporada es fina. Quédate en pistas abiertas y pisadas: piedras y hierba están justo debajo.",
+    "Las laderas sur reciben más sol y se funden antes; las laderas norte en altura guardan su nieve más tiempo.",
+    "Antes de salir fuera de pista o de travesía, lee el boletín oficial de aludes (enlaces abajo).",
+    "Activa una alerta de nieve polvo en la app SnowScope para saber cuándo Gavarnie-Gèdre recibe nieve nueva."
+   ],
+   "captions": {
+    "map": "Espesor de nieve en los Pirineos el 22 de noviembre 2026 (modelo de nieve de SnowScope): Gavarnie-Gèdre, Formiguères, Cauterets Cirque du Lys, Peyragudes, Piau-Engaly."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "es": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  }
+ },
+ "words_en": 358,
+ "indexable": false,
+ "main": {
+  "slug": "gavarnie_gedre",
+  "name": "Gavarnie-Gèdre",
+  "lat": 42.7238,
+  "lon": -0.0385
+ },
+ "places": [
+  {
+   "name": "Gavarnie-Gèdre",
+   "lat": 42.7238,
+   "lon": -0.0385
+  },
+  {
+   "name": "Formiguères",
+   "lat": 42.6253,
+   "lon": 2.0533
+  },
+  {
+   "name": "Cauterets Cirque du Lys",
+   "lat": 42.8826,
+   "lon": -0.1635
+  },
+  {
+   "name": "Peyragudes",
+   "lat": 42.7801,
+   "lon": 0.4559
+  },
+  {
+   "name": "Piau-Engaly",
+   "lat": 42.7771,
+   "lon": 0.1571
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "gavarnie_gedre",
+   "name": "Gavarnie-Gèdre"
+  },
+  {
+   "slug": "formigueres",
+   "name": "Formiguères"
+  },
+  {
+   "slug": "cauterets",
+   "name": "Cauterets Cirque du Lys"
+  },
+  {
+   "slug": "peyragudes",
+   "name": "Peyragudes"
+  },
+  {
+   "slug": "piau_engaly",
+   "name": "Piau-Engaly"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "gavarnie_gedre",
+    "name": "Gavarnie-Gèdre",
+    "depth": 26,
+    "new72": 10,
+    "next": 14,
+    "top_m": 2283
+   },
+   {
+    "slug": "formigueres",
+    "name": "Formiguères",
+    "depth": 25,
+    "new72": 4,
+    "next": 7,
+    "top_m": 2305
+   },
+   {
+    "slug": "cauterets",
+    "name": "Cauterets Cirque du Lys",
+    "depth": 24,
+    "new72": 14,
+    "next": 26,
+    "top_m": 2420
+   },
+   {
+    "slug": "peyragudes",
+    "name": "Peyragudes",
+    "depth": 19,
+    "new72": 6,
+    "next": 9,
+    "top_m": 2360
+   },
+   {
+    "slug": "piau_engaly",
+    "name": "Piau-Engaly",
+    "depth": 17,
+    "new72": 13,
+    "next": 14,
+    "top_m": 2527
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Météo-France / Meteocat / AEMET",
+   "url": "https://www.avalanches.org/"
+  }
+ ],
+ "trip_day": "2026-11-28",
+ "map_link": "https://snowscope.app/#@42.724,-0.038,9.0",
+ "seconds": 33.4,
+ "facts_used": 24,
+ "voice": "field",
+ "media_ids": [
+  "map"
+ ],
+ "seo_target": {
+  "topic": "pyrenees:depth",
+  "query": "espesores nieve pirineo",
+  "lang": "es",
+  "slug": null,
+  "region": "PYRENEES",
+  "intent": "depth",
+  "priority": "B",
+  "position": 59.0,
+  "impressions": 1,
+  "applied": true
+ },
+ "overlap": {
+  "before": 38.2,
+  "after": 23.1,
+  "with": "alps-dent-de-vaulion-snow-depth-today-11-november-2026",
+  "tries": 1
+ },
+ "similarity": {
+  "max": 0.175,
+  "with": "alps-la-grave-snow-depth-today-15-november-2026"
+ },
+ "publish_utc": "2026-11-22T10:48:48Z",
+ "noindex_why": "quality: words 467 < 600; dated pure-numbers daily; sentence-bank template article (AdSense review)",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 467 < 600",
+   "dated pure-numbers daily",
+   "sentence-bank template article (AdSense review)"
+  ],
+  "words": 467,
+  "overlap": 4.3,
+  "with": "early-season-snow-check-3-november-2026",
+  "langs_off": [],
+  "score": 160.7,
+  "intent": "gavarnie_gedre|snow-depth",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "ranked",
+  "files": {
+   "en": [
+    "blog/media/2026/11/pyrenees-gavarnie-gedre-snow-depth-today-22-november-2026/cover-en.webp",
+    "blog/media/2026/11/pyrenees-gavarnie-gedre-snow-depth-today-22-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/pyrenees-gavarnie-gedre-snow-depth-today-22-november-2026/cover-fr.webp",
+    "blog/media/2026/11/pyrenees-gavarnie-gedre-snow-depth-today-22-november-2026/cover-fr_t.webp"
+   ],
+   "es": [
+    "blog/media/2026/11/pyrenees-gavarnie-gedre-snow-depth-today-22-november-2026/cover-es.webp",
+    "blog/media/2026/11/pyrenees-gavarnie-gedre-snow-depth-today-22-november-2026/cover-es_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}
