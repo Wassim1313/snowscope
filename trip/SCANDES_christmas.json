@@ -75,7 +75,7 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
+       "horizon_days": 14,
        "snowfall_p50_cm": 5,
        "p50_cm": 55
       },
@@ -169,13 +169,13 @@
      "p20": 30,
      "p50": 35,
      "p80": 45,
-     "p_ge50": 0.07,
+     "p_ge50": 0.06,
      "basis": "ensemble+climatology",
      "normal_cm": 30,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
+       "horizon_days": 14,
        "snowfall_p50_cm": 4,
        "p50_cm": 40
       },
@@ -222,6 +222,106 @@
    "rank": 2
   },
   {
+   "slug": "hafjell",
+   "label": "Hafjell",
+   "country": "NO",
+   "area": "Innlandet",
+   "lat": 61.23692,
+   "lon": 10.46792,
+   "top_m": 1058,
+   "base_m": 192,
+   "km": 39.0,
+   "lifts": 17,
+   "opens": "2026-11-28",
+   "pass_day_eur": 65.22,
+   "pass_day_walkup": 65.22,
+   "pass_day_multi_eur": 51.3,
+   "pass_multi": {
+    "days": 6,
+    "price": 3299.0,
+    "ccy": "NOK",
+    "per_day": 549.83,
+    "estimated": false,
+    "note": "Alpinco Fjellpass, 2025-26 table carried forward, shared across Hafjell/Kvitfjell/Oppdal",
+    "src": "https://www.onthesnow.co.uk/eastern-norway/hafjell/skipass"
+   },
+   "pass_day_local": {
+    "ccy": "NOK",
+    "holiday": 699.0,
+    "regular": 599.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "Alpinco dynamic pricing, 599-699 NOK range reported for the 2026-27 adult day pass",
+   "pass_src": "https://www.onthesnow.co.uk/eastern-norway/hafjell/skipass",
+   "night_eur": 65.31,
+   "food_day_eur": 37.32,
+   "stay_src": "estimate: Hafjell/Lillehammer area, mid-range Norwegian pricing, Olympic-legacy family resort",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 20,
+    "start": {
+     "cm": 30,
+     "p20": 20,
+     "p50": 30,
+     "p80": 35,
+     "p_ge50": 0.04,
+     "basis": "ensemble+climatology",
+     "normal_cm": 55,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 4,
+       "p50_cm": 30
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 18,
+       "p50_cm": 25
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 308,
+    "hotel_eur": 457,
+    "food_eur": 261,
+    "total_eur": 1026,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 391,
+    "party_total_eur": 1026,
+    "left_eur": -26,
+    "need_eur": 26,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "MID",
+    "pistes": "LOW",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.58,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,026 EUR per person",
+    "only 39 km of pistes",
+    "~30 cm at the start"
+   ],
+   "score": 72.4,
+   "score_parts": {
+    "MONEY": 95,
+    "SNOW": 50
+   },
+   "rank": 3
+  },
+  {
    "slug": "are",
    "label": "Åre",
    "country": "SE",
@@ -266,15 +366,15 @@
      "cm": 30,
      "p20": 25,
      "p50": 30,
-     "p80": 40,
-     "p_ge50": 0.05,
+     "p80": 35,
+     "p_ge50": 0.04,
      "basis": "ensemble+climatology",
      "normal_cm": 50,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 2,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 3,
        "p50_cm": 30
       },
       "GFS": {
@@ -318,7 +418,7 @@
     "MONEY": 87,
     "SNOW": 50
    },
-   "rank": 3
+   "rank": 4
   },
   {
    "slug": "rukatunturi_ruka",
@@ -372,7 +472,7 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
+       "horizon_days": 14,
        "snowfall_p50_cm": 4,
        "p50_cm": 30
       },
@@ -417,106 +517,6 @@
    "score_parts": {
     "MONEY": 84,
     "SNOW": 50
-   },
-   "rank": 4
-  },
-  {
-   "slug": "hafjell",
-   "label": "Hafjell",
-   "country": "NO",
-   "area": "Innlandet",
-   "lat": 61.23692,
-   "lon": 10.46792,
-   "top_m": 1058,
-   "base_m": 192,
-   "km": 39.0,
-   "lifts": 17,
-   "opens": "2026-11-28",
-   "pass_day_eur": 65.22,
-   "pass_day_walkup": 65.22,
-   "pass_day_multi_eur": 51.3,
-   "pass_multi": {
-    "days": 6,
-    "price": 3299.0,
-    "ccy": "NOK",
-    "per_day": 549.83,
-    "estimated": false,
-    "note": "Alpinco Fjellpass, 2025-26 table carried forward, shared across Hafjell/Kvitfjell/Oppdal",
-    "src": "https://www.onthesnow.co.uk/eastern-norway/hafjell/skipass"
-   },
-   "pass_day_local": {
-    "ccy": "NOK",
-    "holiday": 699.0,
-    "regular": 599.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "Alpinco dynamic pricing, 599-699 NOK range reported for the 2026-27 adult day pass",
-   "pass_src": "https://www.onthesnow.co.uk/eastern-norway/hafjell/skipass",
-   "night_eur": 65.31,
-   "food_day_eur": 37.32,
-   "stay_src": "estimate: Hafjell/Lillehammer area, mid-range Norwegian pricing, Olympic-legacy family resort",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 20,
-    "start": {
-     "cm": 25,
-     "p20": 20,
-     "p50": 25,
-     "p80": 35,
-     "p_ge50": 0.04,
-     "basis": "ensemble+climatology",
-     "normal_cm": 55,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 5,
-       "p50_cm": 30
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 18,
-       "p50_cm": 25
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 308,
-    "hotel_eur": 457,
-    "food_eur": 261,
-    "total_eur": 1026,
-    "pass_basis": "advance 6-day pass",
-    "pass_walkup": 391,
-    "party_total_eur": 1026,
-    "left_eur": -26,
-    "need_eur": 26,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "MID",
-    "hotel": "MID",
-    "pistes": "LOW",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.49,
-   "pros": [
-    "solid all-rounder"
-   ],
-   "cons": [
-    "1,026 EUR per person",
-    "only 39 km of pistes",
-    "~25 cm at the start"
-   ],
-   "score": 66.1,
-   "score_parts": {
-    "MONEY": 95,
-    "SNOW": 38
    },
    "rank": 5
   },
@@ -572,8 +572,8 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 6,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 5,
        "p50_cm": 25
       },
       "GFS": {
@@ -672,7 +672,7 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
+       "horizon_days": 14,
        "snowfall_p50_cm": 4,
        "p50_cm": 20
       },
@@ -765,14 +765,14 @@
      "p20": 10,
      "p50": 15,
      "p80": 25,
-     "p_ge50": 0.01,
+     "p_ge50": 0.0,
      "basis": "ensemble+climatology",
      "normal_cm": 55,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 3,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 4,
        "p50_cm": 20
       },
       "GFS": {
@@ -861,7 +861,7 @@
     "now_cm": 5,
     "start": {
      "cm": 10,
-     "p20": 5,
+     "p20": 10,
      "p50": 10,
      "p80": 15,
      "p_ge50": 0.0,
@@ -870,8 +870,8 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 2,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 3,
        "p50_cm": 15
       },
       "GFS": {
@@ -961,7 +961,7 @@
     "now_cm": 5,
     "start": {
      "cm": 10,
-     "p20": 5,
+     "p20": 10,
      "p50": 10,
      "p80": 15,
      "p_ge50": 0.0,
@@ -970,8 +970,8 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 2,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 3,
        "p50_cm": 15
       },
       "GFS": {
