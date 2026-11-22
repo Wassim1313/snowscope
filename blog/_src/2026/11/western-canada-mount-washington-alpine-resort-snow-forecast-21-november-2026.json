@@ -1,0 +1,710 @@
+{
+ "id": "2026-11-21-ca_west-coming",
+ "slug": "western-canada-mount-washington-alpine-resort-snow-forecast-21-november-2026",
+ "date": "2026-11-21",
+ "published_utc": "2026-11-22T10:03:10Z",
+ "updated_utc": "2026-11-22T10:03:10Z",
+ "region": "CA_WEST",
+ "angle": "coming",
+ "score": 78,
+ "signature": "mount_washington_alpine_resort:80|mount_cain_alpine_park:60|whistler:30",
+ "keyword": {
+  "family": "snow-forecast",
+  "entity": "mount_washington_alpine_resort",
+  "region": "CA_WEST",
+  "date": "2026-11-21"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "snow_forecast",
+  "region": "Western Canada",
+  "date": "2026-11-21",
+  "weekday": "Saturday",
+  "model_run": "2026-11-21",
+  "forecast_days": [
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 401010,
+   "resorts_with_snow": 51,
+   "resorts_in_region": 57
+  },
+  "region_before": {
+   "date": "2026-11-19",
+   "snow_covered_area_km2": 403130,
+   "resorts_with_snow": 51
+  },
+  "region_forecast": {
+   "date": "2026-11-24",
+   "snow_covered_area_km2": 403620,
+   "resorts_with_snow": 51
+  },
+  "question": "Where will new snow fall in the next days, and at which height?",
+  "resorts": [
+   {
+    "name": "Mount Washington Alpine Resort",
+    "country": "Canada",
+    "top_m": 1569,
+    "base_m": 1081,
+    "depth_cm_upper_slopes_today": 95,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 76,
+    "slug": "mount_washington_alpine_resort",
+    "new_cm_by_day": {
+     "2026-11-19": 0,
+     "2026-11-20": 0,
+     "2026-11-21": 1,
+     "2026-11-22": 3,
+     "2026-11-23": 7,
+     "2026-11-24": 66
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1081,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 54
+     },
+     "mid": {
+      "elev_m": 1325,
+      "depth_cm_model": 3,
+      "new_cm_next_7_days": 63
+     },
+     "top": {
+      "elev_m": 1569,
+      "depth_cm_model": 3,
+      "new_cm_next_7_days": 63
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 680,
+      "max": 880
+     },
+     "2026-11-22": {
+      "min": 720,
+      "max": 900
+     },
+     "2026-11-23": {
+      "min": 740,
+      "max": 910
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-19"
+    },
+    "valley_rain": {
+     "snow_line_m": 640.0,
+     "place": "Courtenay"
+    }
+   },
+   {
+    "name": "Mount Cain Alpine Park",
+    "country": "Canada",
+    "top_m": 1616,
+    "base_m": 1190,
+    "depth_cm_upper_slopes_today": 93,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 57,
+    "slug": "mount_cain_alpine_park",
+    "new_cm_by_day": {
+     "2026-11-19": 0,
+     "2026-11-20": 0,
+     "2026-11-21": 0,
+     "2026-11-22": 1,
+     "2026-11-23": 3,
+     "2026-11-24": 53
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1190,
+      "depth_cm_model": 4,
+      "new_cm_next_7_days": 7
+     },
+     "mid": {
+      "elev_m": 1403,
+      "depth_cm_model": 21,
+      "new_cm_next_7_days": 7
+     },
+     "top": {
+      "elev_m": 1616,
+      "depth_cm_model": 66,
+      "new_cm_next_7_days": 7
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 620,
+      "max": 890
+     },
+     "2026-11-22": {
+      "min": 690,
+      "max": 930
+     },
+     "2026-11-23": {
+      "min": 810,
+      "max": 990
+     }
+    },
+    "past_winters": {
+     "height_m": 1403,
+     "snow_cm_at_this_height_today_model": 33,
+     "deeper_than_n_of_past_winters": 17,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 55
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-19"
+    }
+   },
+   {
+    "name": "Whistler Blackcomb",
+    "country": "Canada",
+    "top_m": 2259,
+    "base_m": 653,
+    "depth_cm_upper_slopes_today": 150,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 33,
+    "slug": "whistler",
+    "new_cm_by_day": {
+     "2026-11-19": 0,
+     "2026-11-20": 0,
+     "2026-11-21": 0,
+     "2026-11-22": 4,
+     "2026-11-23": 2,
+     "2026-11-24": 27
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 653,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 1
+     },
+     "mid": {
+      "elev_m": 1456,
+      "depth_cm_model": 48,
+      "new_cm_next_7_days": 13
+     },
+     "top": {
+      "elev_m": 2259,
+      "depth_cm_model": 104,
+      "new_cm_next_7_days": 15
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 500,
+      "max": 1290
+     },
+     "2026-11-22": {
+      "min": 550,
+      "max": 1200
+     },
+     "2026-11-23": {
+      "min": 750,
+      "max": 1260
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-20"
+    }
+   },
+   {
+    "name": "Sasquatch",
+    "country": "Canada",
+    "top_m": 1316,
+    "base_m": 975,
+    "depth_cm_upper_slopes_today": 13,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 25,
+    "slug": "sasquatch_mountain_resort",
+    "new_cm_by_day": {
+     "2026-11-19": 0,
+     "2026-11-20": 0,
+     "2026-11-21": 0,
+     "2026-11-22": 2,
+     "2026-11-23": 1,
+     "2026-11-24": 22
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 975,
+      "depth_cm_model": 3,
+      "new_cm_next_7_days": 11
+     },
+     "mid": {
+      "elev_m": 1145,
+      "depth_cm_model": 4,
+      "new_cm_next_7_days": 17
+     },
+     "top": {
+      "elev_m": 1316,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 22
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 460,
+      "max": 1460
+     },
+     "2026-11-22": {
+      "min": 620,
+      "max": 950
+     },
+     "2026-11-23": {
+      "min": 410,
+      "max": 1300
+     }
+    },
+    "past_winters": {
+     "height_m": 1145,
+     "snow_cm_at_this_height_today_model": 2,
+     "deeper_than_n_of_past_winters": 1,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 68
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-19"
+    }
+   },
+   {
+    "name": "Ski Callaghan",
+    "country": "Canada",
+    "top_m": 998,
+    "base_m": 848,
+    "depth_cm_upper_slopes_today": 15,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 25,
+    "slug": "ski_callaghan",
+    "new_cm_by_day": {
+     "2026-11-19": 0,
+     "2026-11-20": 0,
+     "2026-11-21": 0,
+     "2026-11-22": 2,
+     "2026-11-23": 1,
+     "2026-11-24": 22
+    }
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Mount Washington Alpine Resort",
+     "slug": "mount_washington_alpine_resort",
+     "now_cm": 6,
+     "usual_cm": 43,
+     "high_cm": 97,
+     "week_ago_cm": 4,
+     "height_m": 1325,
+     "best_weeks": [
+      8,
+      53,
+      13
+     ],
+     "ratio_pct": 14
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Mount Washington Alpine Resort",
+   "top_cm": 3,
+   "top_m": 1569,
+   "base_cm": 0,
+   "base_m": 1081,
+   "next_cm": 76,
+   "second": "Mount Cain Alpine Park",
+   "second_cm": 93,
+   "depth_cm": 95
+  },
+  "story": {
+   "id": "storm_next",
+   "place": "resort:mount_washington_alpine_resort",
+   "score": 51,
+   "resort": "Mount Washington Alpine Resort"
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/western-canada-mount-washington-alpine-resort-snow-forecast-21-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/western-canada-mount-washington-alpine-resort-snow-forecast-21-november-2026/map_t.webp",
+   "bytes": 78496,
+   "snow_frac": 0.8876,
+   "weak": false
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "sv": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nysnö, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "nb": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nysnø, 72 t\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "fi": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Uusi lumi, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "nl": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Verse sneeuw, 72 u\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "ru": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Новый снег, 72 ч\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "sl": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Novi sneg, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "ca": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neu nova, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "pt": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve nova, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "pl": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Świeży śnieg, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "cs": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nový sníh, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "sk": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nový sneh, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "hu": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Friss hó, 72 óra\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "ro": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Zăpadă nouă, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "uk": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Новий сніг, 72 год\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "bg": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Нов сняг, 72 ч\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "sr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Novi sneg, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "bs": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Novi snijeg, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "hr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Novi snijeg, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "cnr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Novi snijeg, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "mk": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Нов снег, 72 ч\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "sq": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Borë e re, 72 orë\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "el": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Φρέσκο χιόνι, 72 ώρες\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>",
+    "ja": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"新雪（72時間）\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">19/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">20/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">21/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">22/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">23/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">24/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mount Washington Alp</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"49\" class=\"vl\">1</text><rect x=\"395\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"49\" class=\"vl\">3</text><rect x=\"475\" y=\"36\" width=\"7\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"485\" y=\"49\" class=\"vl\">7</text><rect x=\"555\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"622\" y=\"49\" text-anchor=\"end\" class=\"vl in\">66</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"83\" class=\"vl\">1</text><rect x=\"475\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"83\" class=\"vl\">3</text><rect x=\"555\" y=\"70\" width=\"56\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"614\" y=\"83\" class=\"vl\">53</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"402\" y=\"117\" class=\"vl\">4</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"117\" class=\"vl\">2</text><rect x=\"555\" y=\"104\" width=\"29\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"587\" y=\"117\" class=\"vl\">27</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Sasquatch</text><rect x=\"155\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"151\" class=\"vl\">22</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"23\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"581\" y=\"185\" class=\"vl\">22</text></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>",
+    "sv": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Tidigare dagar (modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognos</span></div>",
+    "nb": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Tidligere dager (modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "fi": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Menneet päivät (malli)</span><span><i style=\"background:var(--chart-fc)\"></i>Ennuste</span></div>",
+    "nl": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "ru": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "sl": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "ca": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "pt": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "pl": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "cs": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "sk": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "hu": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "ro": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "uk": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "bg": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "sr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "bs": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "hr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "cnr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "mk": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "sq": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "el": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "ja": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "76 cm by 24 November: where the snow forecast is best in Western Canada",
+   "description": "Up to 76 cm: that is what our forecast gives Mount Washington Alpine Resort by 24 November. And more is coming: by 24 November, the forecast brings …",
+   "lede": "Up to 76 cm: that is what our forecast gives Mount Washington Alpine Resort by 24 November. And more is coming: by 24 November, the forecast brings 76 cm at Mount Washington Alpine Resort, 57 cm at Mount Cain Alpine Park and 33 cm at Whistler Blackcomb. In the valley it will rain: the snow is for the upper slopes of Mount Washington Alpine Resort. Our resort numbers are estimates for the upper slopes. The station numbers are real measurements, but only at one point and on the date shown. Field work in dry mountains teaches one thing: the map is a start, the slope itself has the last word.",
+   "sections": [
+    {
+     "h": "Snow on the slopes today",
+     "p": [
+      "Of the places named here, Whistler Blackcomb leads with about 150 cm on its upper slopes; Mount Washington Alpine Resort 95 cm and Mount Cain Alpine Park 93 cm come next.",
+      "Today 51 of the 57 resorts in Western Canada have snow on their upper slopes; in all, our model counts 401,010 km² under snow."
+     ]
+    },
+    {
+     "h": "The snow still to come",
+     "p": [
+      "Up to 76 cm of new snow is forecast at Mount Washington Alpine Resort over the next days.",
+      "Forecasts move: the timing is usually more reliable than the totals, so check again two days before you go.",
+      "At about 1,325 m, Mount Washington Alpine Resort has 6 cm today; a normal 21 November has 43 cm there.",
+      "Only one winter in ten has more than 97 cm on this date.",
+      "A week ago the same spot had 4 cm.",
+      "In past winters the best snow at Mount Washington Alpine Resort usually came early January / late February.",
+      "Day by day at Mount Washington Alpine Resort: Saturday 21 November 1 cm; Sunday 22 November 3 cm; Monday 23 November 7 cm; Tuesday 24 November 66 cm.",
+      "Height by height at Mount Washington Alpine Resort: 1,081 m 0 cm on the ground, 54 cm more in the next 7 days; 1,325 m 3 cm on the ground, 63 cm more in the next 7 days; 1,569 m 3 cm on the ground, 63 cm more in the next 7 days."
+     ]
+    },
+    {
+     "h": "Top, middle, bottom",
+     "p": [
+      "Cold enough at Mount Washington Alpine Resort on 23 November: the freezing level of 740 m to 910 m is under the base, so precipitation should come as snow.",
+      "On 23 November the freezing level at Mount Cain Alpine Park stays at 810 m to 990 m, below the base: if anything falls, it falls as snow.",
+      "Expect two seasons in one resort at Whistler Blackcomb on 21 November: a freezing level of 500 m to 1,290 m means wet snow below and wintry snow above."
+     ]
+    },
+    {
+     "h": "What to expect next",
+     "p": [
+      "The snow is not done yet: we expect 25 cm at Sasquatch and 25 cm at Ski Callaghan by 24 November.",
+      "The snow has pulled back since 19 November, from 403,130 km² to 401,010 km² today; for 24 November our forecast gives 403,620 km²."
+     ]
+    },
+    {
+     "h": "Safety first",
+     "p": [
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Forecasts a few days ahead can change: look at the map again the day before you travel.",
+    "If the freezing level climbs above the lifts, the snow will be wet and heavy: head for the highest chairs.",
+    "Fresh snow changes fast once the sun is on it: it settles, gets wet and loses its lightness. Morning is the time to ski it.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Mount Washington Alpine Resort gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in Western Canada on 21 November 2026 (SnowScope snow model): Mount Washington Alpine Resort, Mount Cain Alpine Park, Whistler Blackcomb, Sasquatch, Ski Callaghan."
+   }
+  },
+  "fr": {
+   "title": "76 cm d'ici le 24 novembre : où les prévisions neige sont les meilleures dans l'Ouest canadien",
+   "description": "Jusqu'à 76 cm : c'est ce que notre prévision donne à Mount Washington Alpine Resort d'ici le 24 novembre. Entre aujourd'hui et le 24 novembre, nous …",
+   "lede": "Jusqu'à 76 cm : c'est ce que notre prévision donne à Mount Washington Alpine Resort d'ici le 24 novembre. Entre aujourd'hui et le 24 novembre, nous attendons 76 cm à Mount Washington Alpine Resort, 57 cm à Mount Cain Alpine Park et 33 cm à Whistler Blackcomb. Dans la vallée, il pleuvra : la neige concerne le haut du domaine de Mount Washington Alpine Resort. Nos chiffres des stations de ski sont des estimations pour le haut du domaine. Ceux des stations de mesure sont de vraies mesures, mais en un seul point et à la date indiquée. Le terrain en montagne sèche apprend une chose : la carte est un début, la pente a le dernier mot.",
+   "sections": [
+    {
+     "h": "La neige sur les pentes aujourd'hui",
+     "p": [
+      "Des lieux cités ici, Whistler Blackcomb est en tête avec environ 150 cm sur le haut du domaine ; Mount Washington Alpine Resort 95 cm et Mount Cain Alpine Park 93 cm viennent ensuite.",
+      "Aujourd'hui, 51 des 57 stations dans l'Ouest canadien ont de la neige sur le haut du domaine ; au total, notre modèle compte 401 010 km² sous la neige."
+     ]
+    },
+    {
+     "h": "La neige encore à venir",
+     "p": [
+      "Jusqu'à 76 cm de neige fraîche sont prévus à Mount Washington Alpine Resort dans les prochains jours.",
+      "Les prévisions bougent : le moment est souvent plus fiable que les quantités, revérifiez deux jours avant de partir.",
+      "Vers 1 325 m, Mount Washington Alpine Resort a 6 cm aujourd'hui ; un 21 novembre normal y compte 43 cm.",
+      "Un hiver sur dix seulement dépasse 97 cm à cette date.",
+      "Il y a une semaine, le même endroit avait 4 cm.",
+      "Les hivers passés, la meilleure neige à Mount Washington Alpine Resort arrivait d'habitude début janvier / fin février.",
+      "Jour après jour à Mount Washington Alpine Resort : samedi 21 novembre 1 cm; dimanche 22 novembre 3 cm; lundi 23 novembre 7 cm; mardi 24 novembre 66 cm.",
+      "Altitude par altitude à Mount Washington Alpine Resort : 1 081 m 0 cm au sol, 54 cm de plus dans les 7 prochains jours; 1 325 m 3 cm au sol, 63 cm de plus dans les 7 prochains jours; 1 569 m 3 cm au sol, 63 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
+     "h": "En haut, au milieu, en bas",
+     "p": [
+      "Assez froid à Mount Washington Alpine Resort le 23 novembre : une isotherme 0 °C entre 740 m et 910 m, sous le bas du domaine, donc les précipitations devraient tomber en neige.",
+      "Le 23 novembre, l'isotherme 0 °C à Mount Cain Alpine Park reste entre 810 m et 990 m, sous le bas de la station : s'il tombe quelque chose, ce sera de la neige.",
+      "Deux saisons dans une station à Whistler Blackcomb le 21 novembre : une isotherme 0 °C entre 500 m et 1 290 m, c'est de la neige mouillée en bas et de la neige d'hiver en haut."
+     ]
+    },
+    {
+     "h": "À quoi s'attendre ensuite",
+     "p": [
+      "D'ici le 24 novembre, la prévision apporte 25 cm à Sasquatch et 25 cm à Ski Callaghan.",
+      "Depuis le 19 novembre, la neige est passée de 403 130 km² à 401 010 km² aujourd'hui ; pour le 24 novembre, notre prévision donne 403 620 km²."
+     ]
+    },
+    {
+     "h": "La sécurité d'abord",
+     "p": [
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ.",
+    "Si l'isotherme 0 °C monte au-dessus des remontées, la neige sera mouillée et lourde : filez vers les télésièges les plus hauts.",
+    "La neige fraîche change vite au soleil : elle se tasse, s'humidifie et perd sa légèreté. Le matin est le moment de la skier.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Mount Washington Alpine Resort reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest canadien le 21 novembre 2026 (modèle de neige SnowScope) : Mount Washington Alpine Resort, Mount Cain Alpine Park, Whistler Blackcomb, Sasquatch, Ski Callaghan."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  }
+ },
+ "words_en": 490,
+ "indexable": false,
+ "main": {
+  "slug": "mount_washington_alpine_resort",
+  "name": "Mount Washington Alpine Resort",
+  "lat": 49.7487,
+  "lon": -125.2978
+ },
+ "places": [
+  {
+   "name": "Mount Washington Alpine Resort",
+   "lat": 49.7487,
+   "lon": -125.2978
+  },
+  {
+   "name": "Mount Cain Alpine Park",
+   "lat": 50.2232,
+   "lon": -126.3468
+  },
+  {
+   "name": "Whistler Blackcomb",
+   "lat": 50.0888,
+   "lon": -122.9419
+  },
+  {
+   "name": "Sasquatch",
+   "lat": 49.3814,
+   "lon": -121.9441
+  },
+  {
+   "name": "Ski Callaghan",
+   "lat": 50.1655,
+   "lon": -123.1659
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "mount_washington_alpine_resort",
+   "name": "Mount Washington Alpine Resort"
+  },
+  {
+   "slug": "mount_cain_alpine_park",
+   "name": "Mount Cain Alpine Park"
+  },
+  {
+   "slug": "whistler",
+   "name": "Whistler Blackcomb"
+  },
+  {
+   "slug": "sasquatch_mountain_resort",
+   "name": "Sasquatch"
+  },
+  {
+   "slug": "ski_callaghan",
+   "name": "Ski Callaghan"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "mount_washington_alpine_resort",
+    "name": "Mount Washington Alpine Resort",
+    "depth": 95,
+    "new72": 1,
+    "next": 76,
+    "top_m": 1569
+   },
+   {
+    "slug": "mount_cain_alpine_park",
+    "name": "Mount Cain Alpine Park",
+    "depth": 93,
+    "new72": 0,
+    "next": 57,
+    "top_m": 1616
+   },
+   {
+    "slug": "whistler",
+    "name": "Whistler Blackcomb",
+    "depth": 150,
+    "new72": 0,
+    "next": 33,
+    "top_m": 2259
+   },
+   {
+    "slug": "sasquatch_mountain_resort",
+    "name": "Sasquatch",
+    "depth": 13,
+    "new72": 0,
+    "next": 25,
+    "top_m": 1316
+   },
+   {
+    "slug": "ski_callaghan",
+    "name": "Ski Callaghan",
+    "depth": 15,
+    "new72": 0,
+    "next": 25,
+    "top_m": 998
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Avalanche Canada",
+   "url": "https://avalanche.ca/"
+  }
+ ],
+ "trip_day": "2026-11-28",
+ "map_link": "https://snowscope.app/#@49.749,-125.298,9.0",
+ "seconds": 38.6,
+ "facts_used": 30,
+ "voice": "field",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 37.9,
+  "after": 18.7,
+  "with": "alps-les-deux-alpes-snow-forecast-11-november-2026",
+  "tries": 1
+ },
+ "similarity": {
+  "max": 0.164,
+  "with": "us-northeast-stowe-snow-forecast-13-november-2026"
+ },
+ "publish_utc": "2026-11-21T14:53:09Z",
+ "noindex_why": "quality: words 593 < 600; sentence-bank template article (AdSense review)",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 593 < 600",
+   "sentence-bank template article (AdSense review)"
+  ],
+  "words": 593,
+  "overlap": 2.8,
+  "with": "alps-les-grands-montets-fresh-snow-powder-alert-17-november-2026",
+  "langs_off": [],
+  "score": 106.2,
+  "intent": "resort:mount_washington_alpine_resort|storm_next",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "poster",
+  "files": {
+   "en": [
+    "blog/media/2026/11/western-canada-mount-washington-alpine-resort-snow-forecast-21-november-2026/cover-en.webp",
+    "blog/media/2026/11/western-canada-mount-washington-alpine-resort-snow-forecast-21-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/western-canada-mount-washington-alpine-resort-snow-forecast-21-november-2026/cover-fr.webp",
+    "blog/media/2026/11/western-canada-mount-washington-alpine-resort-snow-forecast-21-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}

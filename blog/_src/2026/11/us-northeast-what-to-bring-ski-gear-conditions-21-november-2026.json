@@ -1,0 +1,508 @@
+{
+ "id": "2026-11-21-us_ne-gear",
+ "slug": "us-northeast-what-to-bring-ski-gear-conditions-21-november-2026",
+ "date": "2026-11-21",
+ "published_utc": "2026-11-22T10:03:10Z",
+ "updated_utc": "2026-11-22T10:03:10Z",
+ "region": "US_NE",
+ "angle": "gear",
+ "score": 54,
+ "signature": "melt_freeze:Cannon Mountain,Mad River Glen,Saddleback Mountain,Smugglers' Notch Resort|rain_crust_risk:Cannon Mountain,Killington Resort,Mad River Glen,Saddleback Mountain,Smugglers' Notch Resort|thin_snow:Cannon Mountain,Killington Resort,Mad River Glen,Saddleback Mountain,Smugglers' Notch Resort",
+ "keyword": {
+  "family": "ski-gear",
+  "entity": "us_ne",
+  "region": "US_NE",
+  "date": "2026-11-21"
+ },
+ "tags": [
+  "advice",
+  "where-to-ski",
+  "avalanche",
+  "early-season"
+ ],
+ "facts": {
+  "angle": "gear_for_conditions",
+  "region": "US Northeast",
+  "date": "2026-11-21",
+  "weekday": "Saturday",
+  "model_run": "2026-11-21",
+  "forecast_days": [
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 1450,
+   "resorts_with_snow": 36,
+   "resorts_in_region": 112
+  },
+  "region_before": {
+   "date": "2026-11-19",
+   "snow_covered_area_km2": 3560,
+   "resorts_with_snow": 44
+  },
+  "region_forecast": {
+   "date": "2026-11-24",
+   "snow_covered_area_km2": 230,
+   "resorts_with_snow": 16
+  },
+  "question": "What should skiers bring and wear for today's snow and the next days?",
+  "conditions": {
+   "thin_snow": [
+    "Mad River Glen",
+    "Saddleback Mountain",
+    "Cannon Mountain",
+    "Killington Resort",
+    "Smugglers' Notch Resort"
+   ],
+   "melt_freeze": [
+    "Mad River Glen",
+    "Saddleback Mountain",
+    "Cannon Mountain",
+    "Smugglers' Notch Resort"
+   ],
+   "rain_crust_risk": [
+    "Mad River Glen",
+    "Saddleback Mountain",
+    "Cannon Mountain",
+    "Killington Resort",
+    "Smugglers' Notch Resort"
+   ]
+  },
+  "rules": {
+   "thin_snow": "upper slopes under 30 cm",
+   "fresh_powder": "20 cm or more in the last 72 hours",
+   "storm_coming": "20 cm or more forecast in the next days",
+   "melt_freeze": "0 °C level above mid-mountain by day and below the base at night",
+   "rain_crust_risk": "snow line above the top on a warm day without much new snow",
+   "deep_cold": "0 °C level below the base all day"
+  },
+  "resorts": [
+   {
+    "name": "Mad River Glen",
+    "country": "United States",
+    "top_m": 1106,
+    "base_m": 502,
+    "depth_cm_upper_slopes_today": 22,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "mad_river_glen",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 3660,
+      "max": 3890
+     },
+     "2026-11-22": {
+      "min": 2920,
+      "max": 3830
+     },
+     "2026-11-23": {
+      "min": 340,
+      "max": 3000
+     }
+    }
+   },
+   {
+    "name": "Saddleback Mountain",
+    "country": "United States",
+    "top_m": 1218,
+    "base_m": 655,
+    "depth_cm_upper_slopes_today": 19,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "saddleback_mountain",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 3440,
+      "max": 3850
+     },
+     "2026-11-22": {
+      "min": 2820,
+      "max": 3860
+     },
+     "2026-11-23": {
+      "min": 280,
+      "max": 3070
+     },
+     "2026-11-24": {
+      "min": 0,
+      "max": 200
+     }
+    }
+   },
+   {
+    "name": "Cannon Mountain",
+    "country": "United States",
+    "top_m": 1231,
+    "base_m": 574,
+    "depth_cm_upper_slopes_today": 18,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "cannon_mountain",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 3660,
+      "max": 3920
+     },
+     "2026-11-22": {
+      "min": 2840,
+      "max": 3920
+     },
+     "2026-11-23": {
+      "min": 260,
+      "max": 3010
+     },
+     "2026-11-24": {
+      "min": 0,
+      "max": 200
+     }
+    }
+   },
+   {
+    "name": "Killington Resort",
+    "country": "United States",
+    "top_m": 1262,
+    "base_m": 354,
+    "depth_cm_upper_slopes_today": 17,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "killington",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 3660,
+      "max": 3890
+     },
+     "2026-11-22": {
+      "min": 2610,
+      "max": 3820
+     },
+     "2026-11-23": {
+      "min": 630,
+      "max": 3600
+     }
+    }
+   },
+   {
+    "name": "Smugglers' Notch Resort",
+    "country": "United States",
+    "top_m": 1112,
+    "base_m": 340,
+    "depth_cm_upper_slopes_today": 14,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "smugglers_notch_resort",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 3380,
+      "max": 3850
+     },
+     "2026-11-22": {
+      "min": 2510,
+      "max": 3740
+     },
+     "2026-11-23": {
+      "min": 320,
+      "max": 3510
+     }
+    }
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Mad River Glen",
+     "slug": "mad_river_glen",
+     "now_cm": 1,
+     "usual_cm": 4,
+     "high_cm": 16,
+     "week_ago_cm": 1,
+     "height_m": 804,
+     "best_weeks": [
+      9,
+      8,
+      7
+     ],
+     "ratio_pct": 25
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Mad River Glen",
+   "rain_day": "2026-11-21",
+   "freezing_m": 3890,
+   "lift_top_m": 1106,
+   "next_cm": 0,
+   "second": "Saddleback Mountain",
+   "second_cm": 19,
+   "depth_cm": 22
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:mad_river_glen",
+   "score": 34,
+   "resort": "Mad River Glen"
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-northeast-what-to-bring-ski-gear-conditions-21-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-northeast-what-to-bring-ski-gear-conditions-21-november-2026/map_t.webp",
+   "bytes": 34764,
+   "snow_frac": 0.0305,
+   "weak": true
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Ski gear for Mad River Glen today: ready for thin early-season snow (US Northeast, 21 November)",
+   "description": "Today's snow in the US Northeast, read from our model and forecast, means thin early-season snow, icy mornings and soft afternoons and warm air that …",
+   "lede": "Today's snow in the US Northeast, read from our model and forecast, means thin early-season snow, icy mornings and soft afternoons and warm air that can leave a crust. Here is what to pack and wear at each resort, and when to ski. Snow in the mountains is water held back for spring: what falls now feeds rivers and reservoirs later.",
+   "sections": [
+    {
+     "h": "Today's snow and weather",
+     "p": [
+      "Thin early-season snow (upper slopes under 12 in (30 cm)): Mad River Glen (9 in (22 cm)), Saddleback Mountain (7 in (19 cm)) and Cannon Mountain (7 in (18 cm)).",
+      "Icy mornings and soft afternoons (0 °C level above mid-mountain by day, below the base at night): Mad River Glen, Saddleback Mountain and Cannon Mountain.",
+      "Warm air that can leave a crust (snow line above the top on a warm day without much new snow): Mad River Glen, Saddleback Mountain and Cannon Mountain."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Saturday 21 November the freezing level climbs to about 12,762 ft (3,890 m), above the top of the lifts at 3,629 ft (1,106 m): rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 2,638 ft (804 m), Mad River Glen has 0 in (1 cm) today; a normal 21 November has 2 in (4 cm) there.",
+      "Only one winter in ten has more than 6 in (16 cm) on this date.",
+      "A week ago the same spot had 0 in (1 cm).",
+      "In past winters the best snow at Mad River Glen usually came mid-February / late February."
+     ]
+    },
+    {
+     "h": "The snowpack at each resort",
+     "p": [
+      "Mad River Glen (top 3,629 ft (1,106 m)) holds about 9 in (22 cm) on its upper slopes, gained 0 in (0 cm) in 72 hours and should get 0 in (0 cm) in the next days, and the 0 °C level moves between 1,115 ft (340 m) and 12,762 ft (3,890 m).",
+      "Saddleback Mountain (top 3,996 ft (1,218 m)): about 7 in (19 cm) stored up high, 0 in (0 cm) added in 72 hours, 0 in (0 cm) forecast for the next days, and the 0 °C level moves between 0 ft (0 m) and 12,664 ft (3,860 m).",
+      "Cannon Mountain (top 4,039 ft (1,231 m)) holds about 7 in (18 cm) on its upper slopes, gained 0 in (0 cm) in 72 hours and should get 0 in (0 cm) in the next days, and the 0 °C level moves between 0 ft (0 m) and 12,861 ft (3,920 m).",
+      "Killington Resort (top 4,140 ft (1,262 m)): about 7 in (17 cm) stored up high, 0 in (0 cm) added in 72 hours, 0 in (0 cm) forecast for the next days, and the 0 °C level moves between 2,067 ft (630 m) and 12,762 ft (3,890 m).",
+      "Smugglers' Notch Resort (top 3,648 ft (1,112 m)) holds about 6 in (14 cm) on its upper slopes, gained 0 in (0 cm) in 72 hours and should get 0 in (0 cm) in the next days, and the 0 °C level moves between 1,050 ft (320 m) and 12,631 ft (3,850 m)."
+     ]
+    },
+    {
+     "h": "Clothes and gear for this snow",
+     "p": [
+      "With so little snow on the ground, stones sit just below the surface: older or rented skis, sharp edges and groomed runs are the right choice.",
+      "Melt by day, refreeze by night means ice in the morning: freshly sharpened edges, a helmet, lighter layers, sunglasses and sun cream.",
+      "Rain soaks the snow and then it refreezes into a hard crust: a waterproof shell, sharp edges, a helmet and groomed runs."
+     ]
+    },
+    {
+     "h": "Timing and slopes",
+     "p": [
+      "Snow survives best on high runs that face north.",
+      "The sun softens east-facing slopes first: start there, and stop before the snow turns heavy and wet late in the day.",
+      "The highest slopes stay coldest and keep the snow driest."
+     ]
+    },
+    {
+     "h": "Off-piste safety kit",
+     "p": [
+      "Off the groomed runs, carry an avalanche transceiver, a shovel and a probe, know how to use them, and never go alone. Read the official avalanche bulletin first."
+     ]
+    }
+   ],
+   "advice": [
+    "Local service beats a guess: shops tune edges for the snow of the day.",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below).",
+    "The 0 °C level is a forecast with an error of several hundred metres: check the map again the day before you go."
+   ],
+   "captions": {
+    "map": "Snow depth in the US Northeast on 21 November (SnowScope snow model) at the resorts named in this gear guide."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "usd": 0.0,
+   "rejected_numbers": [
+    [
+     "3630",
+     "2300"
+    ],
+    [
+     "35",
+     "35",
+     "3630",
+     "35",
+     "35"
+    ]
+   ],
+   "voice": "hydro"
+  }
+ },
+ "words_en": 659,
+ "indexable": false,
+ "main": {
+  "slug": "mad_river_glen",
+  "name": "Mad River Glen",
+  "lat": 44.1985,
+  "lon": -72.9228
+ },
+ "places": [
+  {
+   "name": "Mad River Glen",
+   "lat": 44.1985,
+   "lon": -72.9228
+  },
+  {
+   "name": "Saddleback Mountain",
+   "lat": 44.9425,
+   "lon": -70.5244
+  },
+  {
+   "name": "Cannon Mountain",
+   "lat": 44.1728,
+   "lon": -71.7031
+  },
+  {
+   "name": "Killington Resort",
+   "lat": 43.6125,
+   "lon": -72.7948
+  },
+  {
+   "name": "Smugglers' Notch Resort",
+   "lat": 44.573,
+   "lon": -72.7704
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "mad_river_glen",
+   "name": "Mad River Glen"
+  },
+  {
+   "slug": "saddleback_mountain",
+   "name": "Saddleback Mountain"
+  },
+  {
+   "slug": "cannon_mountain",
+   "name": "Cannon Mountain"
+  },
+  {
+   "slug": "killington",
+   "name": "Killington Resort"
+  },
+  {
+   "slug": "smugglers_notch_resort",
+   "name": "Smugglers' Notch Resort"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "mad_river_glen",
+    "name": "Mad River Glen",
+    "depth": 22,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1106
+   },
+   {
+    "slug": "saddleback_mountain",
+    "name": "Saddleback Mountain",
+    "depth": 19,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1218
+   },
+   {
+    "slug": "cannon_mountain",
+    "name": "Cannon Mountain",
+    "depth": 18,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1231
+   },
+   {
+    "slug": "killington",
+    "name": "Killington Resort",
+    "depth": 17,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1262
+   },
+   {
+    "slug": "smugglers_notch_resort",
+    "name": "Smugglers' Notch Resort",
+    "depth": 14,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1112
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Mount Washington Avalanche Center",
+   "url": "https://www.mountwashingtonavalanchecenter.org/"
+  }
+ ],
+ "trip_day": "2026-11-28",
+ "map_link": "https://snowscope.app/#@44.199,-72.923,9.0",
+ "seconds": 36.5,
+ "facts_used": 35,
+ "voice": "hydro",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 21.2,
+  "after": 21.2,
+  "with": "pyrenees-what-to-bring-ski-gear-conditions-11-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.163,
+  "with": "pyrenees-what-to-bring-ski-gear-conditions-11-november-2026"
+ },
+ "publish_utc": "2026-11-21T19:26:06Z",
+ "noindex_why": "quality: sentence-bank template article (AdSense review)",
+ "quality": {
+  "ok": false,
+  "why": [
+   "sentence-bank template article (AdSense review)"
+  ],
+  "words": 763,
+  "overlap": 4.2,
+  "with": "alps-les-grands-montets-fresh-snow-powder-alert-17-november-2026",
+  "langs_off": [],
+  "score": 93.0,
+  "intent": "resort:mad_river_glen|rain_risk",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "hero",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-northeast-what-to-bring-ski-gear-conditions-21-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-northeast-what-to-bring-ski-gear-conditions-21-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}

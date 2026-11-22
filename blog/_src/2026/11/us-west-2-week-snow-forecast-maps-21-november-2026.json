@@ -1,0 +1,942 @@
+{
+ "id": "2026-11-21-us_west-outlook14",
+ "slug": "us-west-2-week-snow-forecast-maps-21-november-2026",
+ "date": "2026-11-21",
+ "published_utc": "2026-11-22T10:03:10Z",
+ "updated_utc": "2026-11-22T10:03:10Z",
+ "region": "US_WEST",
+ "angle": "outlook14",
+ "score": 180,
+ "signature": "2026-11-21|hurricane_ridge:100|mt_baker:100|timberline_lodge_ski_area:90",
+ "keyword": {
+  "family": "two-week-forecast",
+  "entity": "us_west",
+  "region": "US_WEST",
+  "date": "2026-11-21"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "two_week_snow_outlook",
+  "region": "US West",
+  "date": "2026-11-21",
+  "weekday": "Saturday",
+  "model_run": "2026-11-21",
+  "forecast_days": [
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 1127240,
+   "resorts_with_snow": 183,
+   "resorts_in_region": 193
+  },
+  "region_before": {
+   "date": "2026-11-19",
+   "snow_covered_area_km2": 935900,
+   "resorts_with_snow": 183
+  },
+  "region_forecast": {
+   "date": "2026-11-24",
+   "snow_covered_area_km2": 995230,
+   "resorts_with_snow": 186
+  },
+  "question": "Where will new snow fall in the next two weeks, how much, in which week, and at which height?",
+  "outlook_days": [
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30",
+   "2026-12-01",
+   "2026-12-02",
+   "2026-12-03",
+   "2026-12-04",
+   "2026-12-05"
+  ],
+  "week1": {
+   "from": "2026-11-22",
+   "to": "2026-11-28"
+  },
+  "week2": {
+   "from": "2026-11-29",
+   "to": "2026-12-05"
+  },
+  "models": [
+   "ECMWF IFS",
+   "NOAA GFS"
+  ],
+  "lattice_points": 3512,
+  "region_outlook": {
+   "max_new_cm_next_14_days": 199,
+   "area_km2_with_20cm_or_more": 122460,
+   "area_km2_with_50cm_or_more": 18607,
+   "area_km2_mountains": 3131058,
+   "week1_share_pct": 52
+  },
+  "new_cm_next_14_days_by_height": [
+   {
+    "from_m": 1000,
+    "to_m": 1500,
+    "new_cm_next_14_days_median": 1,
+    "new_cm_next_14_days_upper_quarter": 4
+   },
+   {
+    "from_m": 1500,
+    "to_m": 2000,
+    "new_cm_next_14_days_median": 3,
+    "new_cm_next_14_days_upper_quarter": 7
+   },
+   {
+    "from_m": 2000,
+    "to_m": 2500,
+    "new_cm_next_14_days_median": 5,
+    "new_cm_next_14_days_upper_quarter": 9
+   },
+   {
+    "from_m": 2500,
+    "to_m": 3000,
+    "new_cm_next_14_days_median": 9,
+    "new_cm_next_14_days_upper_quarter": 13
+   },
+   {
+    "from_m": 3000,
+    "to_m": 4500,
+    "new_cm_next_14_days_median": 11,
+    "new_cm_next_14_days_upper_quarter": 13
+   }
+  ],
+  "resorts_followed": 193,
+  "thresholds_cm": [
+   1,
+   5,
+   20,
+   50
+  ],
+  "best_days": [
+   {
+    "date": "2026-11-26",
+    "resorts_with_5cm_or_more": 42,
+    "max_cm": 32,
+    "top_resort": "Timberline Lodge"
+   },
+   {
+    "date": "2026-11-27",
+    "resorts_with_5cm_or_more": 26,
+    "max_cm": 20,
+    "top_resort": "Crystal Mountain"
+   },
+   {
+    "date": "2026-11-29",
+    "resorts_with_5cm_or_more": 41,
+    "max_cm": 22,
+    "top_resort": "Bear Valley"
+   },
+   {
+    "date": "2026-11-30",
+    "resorts_with_5cm_or_more": 43,
+    "max_cm": 16,
+    "top_resort": "Alta"
+   }
+  ],
+  "resorts": [
+   {
+    "name": "Hurricane Ridge",
+    "country": "United States",
+    "top_m": 1660,
+    "base_m": 1485,
+    "depth_cm_upper_slopes_today": 19,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 2,
+    "new_cm_forecast_next_days": 40,
+    "slug": "hurricane_ridge",
+    "new_cm_next_14_days": 105,
+    "new_cm_next_14_days_low": 69,
+    "new_cm_next_14_days_high": 140,
+    "new_cm_days_1_7": 96,
+    "new_cm_days_8_14": 9,
+    "snowiest_day": "2026-11-24",
+    "snowiest_day_cm": 35,
+    "days_with_5cm_or_more": 5,
+    "days_with_snow": 9,
+    "daily": [
+     {
+      "date": "2026-11-22",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 35
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 16
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 27
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 4
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 2
+     }
+    ],
+    "upper_slopes_height_m": 1655
+   },
+   {
+    "name": "Mt Baker",
+    "country": "United States",
+    "top_m": 1556,
+    "base_m": 1106,
+    "depth_cm_upper_slopes_today": 16,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 22,
+    "slug": "mt_baker",
+    "new_cm_next_14_days": 99,
+    "new_cm_next_14_days_low": 55,
+    "new_cm_next_14_days_high": 142,
+    "new_cm_days_1_7": 79,
+    "new_cm_days_8_14": 20,
+    "snowiest_day": "2026-11-26",
+    "snowiest_day_cm": 28,
+    "days_with_5cm_or_more": 7,
+    "days_with_snow": 12,
+    "daily": [
+     {
+      "date": "2026-11-22",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 23
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 11
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 28
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 8
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 8
+     }
+    ],
+    "upper_slopes_height_m": 1516
+   },
+   {
+    "name": "Timberline Lodge",
+    "country": "United States",
+    "top_m": 2586,
+    "base_m": 1214,
+    "depth_cm_upper_slopes_today": 45,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 25,
+    "slug": "timberline_lodge_ski_area",
+    "new_cm_next_14_days": 92,
+    "new_cm_next_14_days_low": 42,
+    "new_cm_next_14_days_high": 142,
+    "new_cm_days_1_7": 67,
+    "new_cm_days_8_14": 25,
+    "snowiest_day": "2026-11-26",
+    "snowiest_day_cm": 32,
+    "days_with_5cm_or_more": 6,
+    "days_with_snow": 11,
+    "daily": [
+     {
+      "date": "2026-11-22",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 7
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 12
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 32
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 9
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 13
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 4
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 6
+     }
+    ],
+    "upper_slopes_height_m": 2164
+   },
+   {
+    "name": "Crystal Mountain",
+    "country": "United States",
+    "top_m": 2072,
+    "base_m": 1344,
+    "depth_cm_upper_slopes_today": 35,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 3,
+    "new_cm_forecast_next_days": 18,
+    "slug": "crystal_mountain",
+    "new_cm_next_14_days": 86,
+    "new_cm_next_14_days_low": 47,
+    "new_cm_next_14_days_high": 125,
+    "new_cm_days_1_7": 71,
+    "new_cm_days_8_14": 16,
+    "snowiest_day": "2026-11-26",
+    "snowiest_day_cm": 21,
+    "days_with_5cm_or_more": 6,
+    "days_with_snow": 11,
+    "daily": [
+     {
+      "date": "2026-11-22",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 13
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 21
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 20
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 7
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 8
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 3
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 3
+     }
+    ],
+    "upper_slopes_height_m": 1827
+   },
+   {
+    "name": "White Pass",
+    "country": "United States",
+    "top_m": 1987,
+    "base_m": 1367,
+    "depth_cm_upper_slopes_today": 33,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 14,
+    "slug": "white_pass_ski_area",
+    "new_cm_next_14_days": 80,
+    "new_cm_next_14_days_low": 42,
+    "new_cm_next_14_days_high": 119,
+    "new_cm_days_1_7": 66,
+    "new_cm_days_8_14": 14,
+    "snowiest_day": "2026-11-26",
+    "snowiest_day_cm": 23,
+    "days_with_5cm_or_more": 5,
+    "days_with_snow": 10,
+    "daily": [
+     {
+      "date": "2026-11-22",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 9
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 23
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 18
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 7
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 3
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 4
+     }
+    ],
+    "upper_slopes_height_m": 1802
+   },
+   {
+    "name": "Alpental",
+    "country": "United States",
+    "top_m": 1659,
+    "base_m": 958,
+    "depth_cm_upper_slopes_today": 9,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 15,
+    "slug": "alpental",
+    "new_cm_next_14_days": 79,
+    "new_cm_next_14_days_low": 48,
+    "new_cm_next_14_days_high": 110,
+    "new_cm_days_1_7": 61,
+    "new_cm_days_8_14": 19,
+    "snowiest_day": "2026-11-26",
+    "snowiest_day_cm": 18,
+    "days_with_5cm_or_more": 5,
+    "days_with_snow": 11,
+    "daily": [
+     {
+      "date": "2026-11-22",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 13
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 18
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 17
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 8
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 6
+     }
+    ],
+    "upper_slopes_height_m": 1447
+   }
+  ],
+  "notes": [
+   "new snow = middle of the two models' daily snowfall, brought onto the terrain (1 km); low / high = the two models",
+   "resort values = the slopes at or above mid-mountain within a few km of the resort, not the village",
+   "days 1-14 = tomorrow to day 14; week 1 = days 1-7, week 2 = days 8-14",
+   "snow by height = all the mountain terrain of the region, not only resorts"
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Hurricane Ridge",
+     "slug": "hurricane_ridge",
+     "now_cm": 8,
+     "usual_cm": 24,
+     "high_cm": 102,
+     "week_ago_cm": 2,
+     "height_m": 1572,
+     "best_weeks": [
+      14,
+      10,
+      9
+     ],
+     "ratio_pct": 33
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Hurricane Ridge",
+   "next_cm": 40,
+   "second": "Mt Baker",
+   "second_cm": 16,
+   "depth_cm": 19
+  },
+  "story": {
+   "id": "storm_next",
+   "place": "resort:hurricane_ridge",
+   "score": 63.3,
+   "resort": "Hurricane Ridge"
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-21-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-21-november-2026/map_t.webp",
+   "bytes": 34592,
+   "snow_frac": 0.4682,
+   "weak": false
+  },
+  {
+   "id": "week1",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-21-november-2026/week1.webp",
+   "thumb": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-21-november-2026/week1_t.webp",
+   "bytes": 28222,
+   "snow_frac": 0.3104,
+   "weak": false
+  },
+  {
+   "id": "week2",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-21-november-2026/week2.webp",
+   "thumb": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-21-november-2026/week2_t.webp",
+   "bytes": 31244,
+   "snow_frac": 0.4172,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Alpental snow forecast: where it falls first",
+   "description": "Our snow model forecasts up to 199 cm across the US West in the next two weeks, with the heaviest snow arriving in week one. Data from 21 November 2026.",
+   "lede": "Alpental snow forecast – Our model shows the US West will collect 199 cm (78 in) of new snow over the next 14 days, with more than half arriving in the coming week. The pattern favors high terrain above 2500 m, where some areas could see 11 to 13 cm, while lower slopes will receive less but still meaningful accumulation.",
+   "sections": [
+    {
+     "h": "When the snow comes: heavy week one, light week two",
+     "p": [
+      "The next seven days will carry the bulk of the forecast snow. Week one (22-28 November) is modelled to bring 52 percent of the full 14-day total, with two strong snow days forecast. Wednesday 26 November stands out as the heaviest single day, with 42 resorts across the region expected to pick up 5 cm or more, and the peak modelled at 32 cm at Timberline Lodge.",
+      "Week two (29 November to 5 December) turns quieter. The model shows scattered snow days but far less volume. November 29-30 offers a brief window of activity, with the snowiest day on the 29th bringing 22 cm at Bear Valley. After that, the region dries out until a small burst late in the second week. Early-season snow at lower elevations will thin quickly in dry air, so timing matters."
+     ]
+    },
+    {
+     "h": "Height matters most: high peaks win",
+     "p": [
+      "Snow will not fall evenly across the mountains. Our model shows terrain above 3000 m (9843 ft) will receive a median of 11 cm over 14 days, reaching 13 cm in the upper quarter of outcomes. Drop to 2500-3000 m and the median is 9 cm. Below 2000 m, accumulation falls sharply: only 1-3 cm at 1000-1500 m elevations.",
+      "This means high ridges and upper slopes will hold good snow by late November, but mid-mountain and base areas in the Cascades and Sierra remain thin. Around 122,460 km² of terrain across the region will see 20 cm or more, but just 18,607 km² will exceed 50 cm. Early-season climbing to higher aspects and elevations is essential."
+     ]
+    },
+    {
+     "h": "Where to look: northern ranges lead",
+     "p": [
+      "Hurricane Ridge in the Cascades tops the two-week forecast with 105 cm (41 in), peaking at 35 cm on 24 November. Mt Baker follows with 99 cm, also strong early in the week. Timberline Lodge will collect 92 cm with its heaviest day on the 26th. These northern and higher resorts benefit from both the week-one surge and secondary snow in week two.",
+      "Lower Cascades areas like Alpental sit at 79 cm and will feel the shortage of early-season moisture at their base elevation of 958 m. The model spreads 186 resorts across the tracked region will have snow on the ground by 24 November, up from 183 today. That gain comes from fresh accumulation on bare terrain, so actual skiable depth remains thin in many valleys."
+     ]
+    },
+    {
+     "h": "Forecast uncertainty: models agree on week one",
+     "p": [
+      "Both ECMWF and NOAA models agree on the broad pattern: a wet week arriving tomorrow, heaviest on the 26th, then drying. The range between low and high forecasts is wide at many resorts—Hurricane Ridge shows 69 to 140 cm spread—because steering and intensity can shift in a marginal season. By Friday 24 November we will have better clarity.",
+      "On the ground, rocks will show through thin base snow, especially below 1500 m. Sun and wind can erase gains quickly in dry mountain air. Treat this as a guide to mountain snow state, not a promise of deep pow."
+     ]
+    },
+    {
+     "h": "What to do now",
+     "p": [
+      "If you plan to ski in late November, watch the 26th: that is your best betting day for fresh tracks. High peaks—Mount Hood, the northern Cascades, the crest of the Sierra—will be in best shape. Lower resort bases and south-facing slopes will stay thin; plan for rocks and variable coverage. By early December, week-two snow will be sparse. Wait for a bigger pattern shift in mid-December if you want truly skiable conditions across the board."
+     ]
+    }
+   ],
+   "advice": [
+    "Wednesday 26 November is the snowiest day: aim for upper slopes above 2000 m (6562 ft) and north-facing aspects where snow will accumulate fastest and persist longest.",
+    "High terrain above 2500 m (8202 ft) will hold 9-13 cm by the end of week one; lower mid-mountain zones will see 3-5 cm and may need active grooming or will develop thin, breakable crust.",
+    "Watch Hurricane Ridge and Mt Baker as early-week guides. If they are loading as forecast, the broader north Cascades pattern is on track; if they lag, entire forecast shifts.",
+    "Second wind on 29-30 November is light; do not plan week-two trips on fresh snow expectations. Most of the 14-day total arrives in the next seven days.",
+    "Check the official avalanche bulletin if you venture off-piste, especially on steep north-facing slopes after Wednesday's heavy fall. Thin base and rapid loading raise concern."
+   ],
+   "captions": {
+    "map": "Snow coverage across the US West on 21 November 2026, with 183 resorts reporting snow. Areas above 2500 m hold the most reliable depth.",
+    "week1": "Modelled new snow for 22-28 November 2026, showing peak accumulation on the 26th and heaviest falls on high north-facing slopes.",
+    "week2": "Modelled new snow for 29 November to 5 December 2026, showing lighter, scattered accumulation and mostly dry conditions after the 30th."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "rejected_numbers": [
+    [
+     "1200",
+     "122,000"
+    ]
+   ],
+   "voice": "field"
+  }
+ },
+ "words_en": 608,
+ "indexable": true,
+ "main": {
+  "slug": "hurricane_ridge",
+  "name": "Hurricane Ridge",
+  "lat": 47.971,
+  "lon": -123.4945
+ },
+ "places": [
+  {
+   "name": "Hurricane Ridge",
+   "lat": 47.971,
+   "lon": -123.4945
+  },
+  {
+   "name": "Mt Baker",
+   "lat": 48.8571,
+   "lon": -121.6652
+  },
+  {
+   "name": "Timberline Lodge",
+   "lat": 45.3232,
+   "lon": -121.7167
+  },
+  {
+   "name": "Crystal Mountain",
+   "lat": 46.9348,
+   "lon": -121.4902
+  },
+  {
+   "name": "White Pass",
+   "lat": 46.6241,
+   "lon": -121.3969
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "hurricane_ridge",
+   "name": "Hurricane Ridge"
+  },
+  {
+   "slug": "mt_baker",
+   "name": "Mt Baker"
+  },
+  {
+   "slug": "timberline_lodge_ski_area",
+   "name": "Timberline Lodge"
+  },
+  {
+   "slug": "crystal_mountain",
+   "name": "Crystal Mountain"
+  },
+  {
+   "slug": "white_pass_ski_area",
+   "name": "White Pass"
+  },
+  {
+   "slug": "alpental",
+   "name": "Alpental"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "hurricane_ridge",
+    "name": "Hurricane Ridge",
+    "depth": 19,
+    "new72": 2,
+    "next": 40,
+    "top_m": 1660
+   },
+   {
+    "slug": "mt_baker",
+    "name": "Mt Baker",
+    "depth": 16,
+    "new72": 1,
+    "next": 22,
+    "top_m": 1556
+   },
+   {
+    "slug": "timberline_lodge_ski_area",
+    "name": "Timberline Lodge",
+    "depth": 45,
+    "new72": 1,
+    "next": 25,
+    "top_m": 2586
+   },
+   {
+    "slug": "crystal_mountain",
+    "name": "Crystal Mountain",
+    "depth": 35,
+    "new72": 3,
+    "next": 18,
+    "top_m": 2072
+   },
+   {
+    "slug": "white_pass_ski_area",
+    "name": "White Pass",
+    "depth": 33,
+    "new72": 4,
+    "next": 14,
+    "top_m": 1987
+   },
+   {
+    "slug": "alpental",
+    "name": "Alpental",
+    "depth": 9,
+    "new72": 1,
+    "next": 15,
+    "top_m": 1659
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-28",
+ "map_link": "https://snowscope.app/#@47.971,-123.495,9.0",
+ "seconds": 41.0,
+ "facts_used": 37,
+ "voice": "field",
+ "media_ids": [
+  "map",
+  "week1",
+  "week2"
+ ],
+ "seo_target": {
+  "topic": "alpental:forecast",
+  "query": "alpental snow forecast",
+  "lang": "en",
+  "slug": "alpental",
+  "region": "US_WEST",
+  "intent": "forecast",
+  "priority": "B",
+  "position": 47.5,
+  "impressions": 2,
+  "applied": true
+ },
+ "overlap": {
+  "before": 1.3,
+  "after": 1.3,
+  "with": "pyrenees-2-week-snow-forecast-maps-18-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.007,
+  "with": "pyrenees-2-week-snow-forecast-maps-18-november-2026"
+ },
+ "publish_utc": "2026-11-21T14:07:10Z",
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 786,
+  "overlap": 0.9,
+  "with": "alps-2-week-snow-forecast-maps-18-november-2026",
+  "langs_off": [],
+  "score": 248.6,
+  "intent": "resort:hurricane_ridge|storm_next",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "ranked",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-2-week-snow-forecast-maps-21-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-2-week-snow-forecast-maps-21-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}

@@ -1,0 +1,1027 @@
+{
+ "id": "2026-11-21-ca_west-outlook14",
+ "slug": "western-canada-2-week-snow-forecast-maps-21-november-2026",
+ "date": "2026-11-21",
+ "published_utc": "2026-11-22T10:03:10Z",
+ "updated_utc": "2026-11-22T10:03:10Z",
+ "region": "CA_WEST",
+ "angle": "outlook14",
+ "score": 80,
+ "signature": "2026-11-21|mount_washington_alpine_resort:200|mount_cain_alpine_park:170|sasquatch_mountain_resort:100",
+ "keyword": {
+  "family": "two-week-forecast",
+  "entity": "ca_west",
+  "region": "CA_WEST",
+  "date": "2026-11-21"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "two_week_snow_outlook",
+  "region": "Western Canada",
+  "date": "2026-11-21",
+  "weekday": "Saturday",
+  "model_run": "2026-11-21",
+  "forecast_days": [
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 401010,
+   "resorts_with_snow": 51,
+   "resorts_in_region": 57
+  },
+  "region_before": {
+   "date": "2026-11-19",
+   "snow_covered_area_km2": 403130,
+   "resorts_with_snow": 51
+  },
+  "region_forecast": {
+   "date": "2026-11-24",
+   "snow_covered_area_km2": 403620,
+   "resorts_with_snow": 51
+  },
+  "question": "Where will new snow fall in the next two weeks, how much, in which week, and at which height?",
+  "outlook_days": [
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30",
+   "2026-12-01",
+   "2026-12-02",
+   "2026-12-03",
+   "2026-12-04",
+   "2026-12-05"
+  ],
+  "week1": {
+   "from": "2026-11-22",
+   "to": "2026-11-28"
+  },
+  "week2": {
+   "from": "2026-11-29",
+   "to": "2026-12-05"
+  },
+  "models": [
+   "ECMWF IFS",
+   "NOAA GFS"
+  ],
+  "lattice_points": 1255,
+  "region_outlook": {
+   "max_new_cm_next_14_days": 258,
+   "area_km2_with_20cm_or_more": 102272,
+   "area_km2_with_50cm_or_more": 43395,
+   "area_km2_mountains": 630552,
+   "week1_share_pct": 65
+  },
+  "new_cm_next_14_days_by_height": [
+   {
+    "from_m": 1000,
+    "to_m": 1500,
+    "new_cm_next_14_days_median": 8,
+    "new_cm_next_14_days_upper_quarter": 15
+   },
+   {
+    "from_m": 1500,
+    "to_m": 2000,
+    "new_cm_next_14_days_median": 15,
+    "new_cm_next_14_days_upper_quarter": 23
+   },
+   {
+    "from_m": 2000,
+    "to_m": 2500,
+    "new_cm_next_14_days_median": 12,
+    "new_cm_next_14_days_upper_quarter": 22
+   },
+   {
+    "from_m": 2500,
+    "to_m": 3000,
+    "new_cm_next_14_days_median": 9,
+    "new_cm_next_14_days_upper_quarter": 16
+   },
+   {
+    "from_m": 3000,
+    "to_m": 4500,
+    "new_cm_next_14_days_median": 10,
+    "new_cm_next_14_days_upper_quarter": 15
+   }
+  ],
+  "resorts_followed": 51,
+  "thresholds_cm": [
+   1,
+   5,
+   20,
+   50
+  ],
+  "best_days": [
+   {
+    "date": "2026-11-24",
+    "resorts_with_5cm_or_more": 8,
+    "max_cm": 64,
+    "top_resort": "Mount Washington Alpine Resort"
+   },
+   {
+    "date": "2026-11-25",
+    "resorts_with_5cm_or_more": 8,
+    "max_cm": 38,
+    "top_resort": "Mount Washington Alpine Resort"
+   },
+   {
+    "date": "2026-11-26",
+    "resorts_with_5cm_or_more": 18,
+    "max_cm": 37,
+    "top_resort": "Mount Washington Alpine Resort"
+   },
+   {
+    "date": "2026-11-27",
+    "resorts_with_5cm_or_more": 6,
+    "max_cm": 9,
+    "top_resort": "Sasquatch"
+   }
+  ],
+  "resorts": [
+   {
+    "name": "Mount Washington Alpine Resort",
+    "country": "Canada",
+    "top_m": 1569,
+    "base_m": 1081,
+    "depth_cm_upper_slopes_today": 95,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 76,
+    "slug": "mount_washington_alpine_resort",
+    "new_cm_next_14_days": 202,
+    "new_cm_next_14_days_low": 109,
+    "new_cm_next_14_days_high": 296,
+    "new_cm_days_1_7": 178,
+    "new_cm_days_8_14": 24,
+    "snowiest_day": "2026-11-24",
+    "snowiest_day_cm": 64,
+    "days_with_5cm_or_more": 8,
+    "days_with_snow": 11,
+    "daily": [
+     {
+      "date": "2026-11-22",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 9
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 64
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 38
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 37
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 7
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 20
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 8
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 4
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 9
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 1
+     }
+    ],
+    "upper_slopes_height_m": 1349
+   },
+   {
+    "name": "Mount Cain Alpine Park",
+    "country": "Canada",
+    "top_m": 1616,
+    "base_m": 1190,
+    "depth_cm_upper_slopes_today": 93,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 57,
+    "slug": "mount_cain_alpine_park",
+    "new_cm_next_14_days": 166,
+    "new_cm_next_14_days_low": 83,
+    "new_cm_next_14_days_high": 249,
+    "new_cm_days_1_7": 139,
+    "new_cm_days_8_14": 27,
+    "snowiest_day": "2026-11-24",
+    "snowiest_day_cm": 48,
+    "days_with_5cm_or_more": 7,
+    "days_with_snow": 11,
+    "daily": [
+     {
+      "date": "2026-11-22",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 48
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 36
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 30
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 15
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 14
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 8
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 2
+     }
+    ],
+    "upper_slopes_height_m": 1500
+   },
+   {
+    "name": "Sasquatch",
+    "country": "Canada",
+    "top_m": 1316,
+    "base_m": 975,
+    "depth_cm_upper_slopes_today": 13,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 25,
+    "slug": "sasquatch_mountain_resort",
+    "new_cm_next_14_days": 102,
+    "new_cm_next_14_days_low": 56,
+    "new_cm_next_14_days_high": 149,
+    "new_cm_days_1_7": 79,
+    "new_cm_days_8_14": 23,
+    "snowiest_day": "2026-11-24",
+    "snowiest_day_cm": 22,
+    "days_with_5cm_or_more": 7,
+    "days_with_snow": 10,
+    "daily": [
+     {
+      "date": "2026-11-22",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 22
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 16
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 22
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 9
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 9
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 10
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 4
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 7
+     }
+    ],
+    "upper_slopes_height_m": 1213
+   },
+   {
+    "name": "Whistler Blackcomb",
+    "country": "Canada",
+    "top_m": 2259,
+    "base_m": 653,
+    "depth_cm_upper_slopes_today": 150,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 33,
+    "slug": "whistler",
+    "new_cm_next_14_days": 102,
+    "new_cm_next_14_days_low": 65,
+    "new_cm_next_14_days_high": 140,
+    "new_cm_days_1_7": 91,
+    "new_cm_days_8_14": 11,
+    "snowiest_day": "2026-11-26",
+    "snowiest_day_cm": 29,
+    "days_with_5cm_or_more": 5,
+    "days_with_snow": 11,
+    "daily": [
+     {
+      "date": "2026-11-22",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 19
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 21
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 29
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 14
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 3
+     }
+    ],
+    "upper_slopes_height_m": 1746
+   },
+   {
+    "name": "Mt Seymour",
+    "country": "Canada",
+    "top_m": 1255,
+    "base_m": 934,
+    "depth_cm_upper_slopes_today": 18,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 10,
+    "slug": "mt_seymour",
+    "new_cm_next_14_days": 86,
+    "new_cm_next_14_days_low": 45,
+    "new_cm_next_14_days_high": 128,
+    "new_cm_days_1_7": 68,
+    "new_cm_days_8_14": 18,
+    "snowiest_day": "2026-11-24",
+    "snowiest_day_cm": 26,
+    "days_with_5cm_or_more": 5,
+    "days_with_snow": 11,
+    "daily": [
+     {
+      "date": "2026-11-22",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 26
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 16
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 14
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 7
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 3
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 3
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 6
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 3
+     }
+    ],
+    "upper_slopes_height_m": 1157
+   },
+   {
+    "name": "Ski Callaghan",
+    "country": "Canada",
+    "top_m": 998,
+    "base_m": 848,
+    "depth_cm_upper_slopes_today": 15,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 25,
+    "slug": "ski_callaghan",
+    "new_cm_next_14_days": 73,
+    "new_cm_next_14_days_low": 45,
+    "new_cm_next_14_days_high": 101,
+    "new_cm_days_1_7": 61,
+    "new_cm_days_8_14": 11,
+    "snowiest_day": "2026-11-26",
+    "snowiest_day_cm": 19,
+    "days_with_5cm_or_more": 4,
+    "days_with_snow": 11,
+    "daily": [
+     {
+      "date": "2026-11-22",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 18
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 14
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 19
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 4
+     }
+    ],
+    "upper_slopes_height_m": 1266
+   }
+  ],
+  "notes": [
+   "new snow = middle of the two models' daily snowfall, brought onto the terrain (1 km); low / high = the two models",
+   "resort values = the slopes at or above mid-mountain within a few km of the resort, not the village",
+   "days 1-14 = tomorrow to day 14; week 1 = days 1-7, week 2 = days 8-14",
+   "snow by height = all the mountain terrain of the region, not only resorts"
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Mount Washington Alpine Resort",
+     "slug": "mount_washington_alpine_resort",
+     "now_cm": 6,
+     "usual_cm": 43,
+     "high_cm": 97,
+     "week_ago_cm": 4,
+     "height_m": 1325,
+     "best_weeks": [
+      8,
+      53,
+      13
+     ],
+     "ratio_pct": 14
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Mount Washington Alpine Resort",
+   "next_cm": 76,
+   "second": "Mount Cain Alpine Park",
+   "second_cm": 93,
+   "depth_cm": 95
+  },
+  "story": {
+   "id": "storm_next",
+   "place": "resort:mount_washington_alpine_resort",
+   "score": 63,
+   "resort": "Mount Washington Alpine Resort"
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/western-canada-2-week-snow-forecast-maps-21-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/western-canada-2-week-snow-forecast-maps-21-november-2026/map_t.webp",
+   "bytes": 54970,
+   "snow_frac": 0.8688,
+   "weak": false
+  },
+  {
+   "id": "week1",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/western-canada-2-week-snow-forecast-maps-21-november-2026/week1.webp",
+   "thumb": "blog/media/2026/11/western-canada-2-week-snow-forecast-maps-21-november-2026/week1_t.webp",
+   "bytes": 52080,
+   "snow_frac": 0.6292,
+   "weak": false
+  },
+  {
+   "id": "week2",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/western-canada-2-week-snow-forecast-maps-21-november-2026/week2.webp",
+   "thumb": "blog/media/2026/11/western-canada-2-week-snow-forecast-maps-21-november-2026/week2_t.webp",
+   "bytes": 47270,
+   "snow_frac": 0.8541,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Where it snows in Western Canada in the next 14 days: Mount Washington Alpine Resort leads with 202 cm",
+   "description": "Our two-week maps show where new snow should fall in Western Canada between 22 November and 5 December, from the two global models that reach two …",
+   "lede": "Our two-week maps show where new snow should fall in Western Canada between 22 November and 5 December, from the two global models that reach two weeks, ECMWF and GFS: we take the middle of the two and always give their range. The most goes to Mount Washington Alpine Resort: about 202 cm on its upper slopes, 109 cm–296 cm depending on the model, then Mount Cain Alpine Park with 166 cm. Confidence: good for the trend, lower for any single number.",
+   "sections": [
+    {
+     "h": "Resort by resort, the next 14 days",
+     "p": [
+      "Mount Washington Alpine Resort (Canada): about 202 cm in 14 days (109 cm–296 cm between the models), 178 cm in the first week and 24 cm in the second. Mark 24 November: that is the biggest day, with 64 cm, out of 8 days at 5 cm or more.",
+      "At Mount Cain Alpine Park (Canada) the two weeks add up to about 166 cm (83 cm–249 cm depending on the model): 139 cm by the end of the first week, then 27 cm more. Mark 24 November: that is the biggest day, with 48 cm, out of 7 days at 5 cm or more.",
+      "Sasquatch (Canada): about 102 cm in 14 days (56 cm–149 cm between the models), 79 cm in the first week and 23 cm in the second. The snowiest day is 24 November with 22 cm; 7 days bring 5 cm or more.",
+      "At Whistler Blackcomb (Canada) the two weeks add up to about 102 cm (65 cm–140 cm depending on the model): 91 cm by the end of the first week, then 11 cm more. The snowiest day is 26 November with 29 cm; 5 days bring 5 cm or more.",
+      "At Mt Seymour (Canada) the two weeks add up to about 86 cm (45 cm–128 cm depending on the model): 68 cm by the end of the first week, then 18 cm more. Mark 24 November: that is the biggest day, with 26 cm, out of 5 days at 5 cm or more.",
+      "Ski Callaghan (Canada): about 73 cm in 14 days (45 cm–101 cm between the models), 61 cm in the first week and 11 cm in the second. The snowiest day is 26 November with 19 cm; 4 days bring 5 cm or more."
+     ]
+    },
+    {
+     "h": "The snow still to come",
+     "p": [
+      "Up to 76 cm of new snow is forecast at Mount Washington Alpine Resort over the next days.",
+      "Forecasts move: the timing is usually more reliable than the totals, so check again two days before you go.",
+      "At about 1,325 m, Mount Washington Alpine Resort has 6 cm today; a normal 21 November has 43 cm there.",
+      "Only one winter in ten has more than 97 cm on this date.",
+      "A week ago the same spot had 4 cm.",
+      "In past winters the best snow at Mount Washington Alpine Resort usually came early January / late February."
+     ]
+    },
+    {
+     "h": "First week against second week",
+     "p": [
+      "Add the region up and 65 % of the fortnight's snow is already down by 28 November; what the maps show from 29 November to 5 December is the rest.",
+      "Early birds: Mount Washington Alpine Resort, Mount Cain Alpine Park, Sasquatch, Whistler Blackcomb, Mt Seymour and Ski Callaghan see most of their snow before the first week is out.",
+      "On the map, about 102,272 km² of mountain terrain get 20 cm or more over the two weeks, and 43,395 km² get 50 cm or more."
+     ]
+    },
+    {
+     "h": "New snow by height",
+     "p": [
+      "The same two weeks by height, over all the mountains of the region (every square kilometre of terrain, not only the resorts): between 1,000 m and 1,500 m: typically 8 cm, the snowiest quarter of that band 15 cm or more; between 1,500 m and 2,000 m: typically 15 cm, the snowiest quarter of that band 23 cm or more; between 2,000 m and 2,500 m: typically 12 cm, the snowiest quarter of that band 22 cm or more; between 2,500 m and 3,000 m: typically 9 cm, the snowiest quarter of that band 16 cm or more; between 3,000 m and 4,500 m: typically 10 cm, the snowiest quarter of that band 15 cm or more."
+     ]
+    },
+    {
+     "h": "The days to watch",
+     "p": [
+      "Snow days across the region, over the 51 resorts in our list: Tuesday 24 November (8 of 51 resorts at 5 cm or more, up to 64 cm at Mount Washington Alpine Resort), Wednesday 25 November (8 of 51 resorts at 5 cm or more, up to 38 cm at Mount Washington Alpine Resort), Thursday 26 November (18 of 51 resorts at 5 cm or more, up to 37 cm at Mount Washington Alpine Resort) and Friday 27 November (6 of 51 resorts at 5 cm or more, up to 9 cm at Sasquatch)."
+     ]
+    },
+    {
+     "h": "How to read the maps",
+     "p": [
+      "Three maps: the whole fortnight, then the first and the second week. Colours start at one centimetre of new snow and darken with the amount; the pins give the value on the upper slopes of the resorts in this post.",
+      "Beyond a week, a forecast is a tendency, not a promise: the two models often disagree on the second week, which is why every number here comes with its range. The maps are redrawn every morning."
+     ]
+    }
+   ],
+   "advice": [
+    "Plan the first week with these maps; keep the second week loose and check again in a few days.",
+    "The 0 °C level is a forecast and can move by several hundred metres, which changes where rain turns to snow: check the map again the day before you go.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website."
+   ],
+   "captions": {
+    "map": "New snow in Western Canada forecast for the 14 days from 22 November to 5 December (middle of the ECMWF and GFS models, brought onto the terrain), with the resorts of this outlook.",
+    "week1": "The first week only: new snow from 22 November to 28 November.",
+    "week2": "The second week only: new snow from 29 November to 5 December, where the two models disagree most."
+   }
+  },
+  "fr": {
+   "title": "Où il va neiger dans l'Ouest canadien dans les 14 prochains jours : Mount Washington Alpine Resort en tête avec 202 cm",
+   "description": "Nos cartes à deux semaines montrent où la neige fraîche devrait tomber dans l'Ouest canadien entre le 22 novembre et le 5 décembre, d'après les deux …",
+   "lede": "Nos cartes à deux semaines montrent où la neige fraîche devrait tomber dans l'Ouest canadien entre le 22 novembre et le 5 décembre, d'après les deux modèles mondiaux qui portent à deux semaines, ECMWF et GFS : nous prenons le milieu des deux et donnons toujours leur fourchette. Le plus gros lot va à Mount Washington Alpine Resort : 202 cm ou presque sur le haut du domaine, 109 cm–296 cm selon le modèle, puis Mount Cain Alpine Park avec 166 cm. Confiance : bonne pour la tendance, plus faible pour chaque chiffre pris seul.",
+   "sections": [
+    {
+     "h": "Station par station, les 14 prochains jours",
+     "p": [
+      "Mount Washington Alpine Resort (Canada) : environ 202 cm en 14 jours (109 cm–296 cm selon le modèle), 178 cm la première semaine et 24 cm la seconde. Notez le 24 novembre : c'est la plus grosse journée, avec 64 cm, sur 8 jours à 5 cm ou plus.",
+      "À Mount Cain Alpine Park (Canada), les deux semaines totalisent environ 166 cm (83 cm–249 cm selon le modèle) : 139 cm à la fin de la première semaine, puis 27 cm de plus. Notez le 24 novembre : c'est la plus grosse journée, avec 48 cm, sur 7 jours à 5 cm ou plus.",
+      "Sasquatch (Canada) : environ 102 cm en 14 jours (56 cm–149 cm selon le modèle), 79 cm la première semaine et 23 cm la seconde. Le jour le plus neigeux est le 24 novembre avec 22 cm ; 7 jours apportent 5 cm ou plus.",
+      "À Whistler Blackcomb (Canada), les deux semaines totalisent environ 102 cm (65 cm–140 cm selon le modèle) : 91 cm à la fin de la première semaine, puis 11 cm de plus. Le jour le plus neigeux est le 26 novembre avec 29 cm ; 5 jours apportent 5 cm ou plus.",
+      "À Mt Seymour (Canada), les deux semaines totalisent environ 86 cm (45 cm–128 cm selon le modèle) : 68 cm à la fin de la première semaine, puis 18 cm de plus. Notez le 24 novembre : c'est la plus grosse journée, avec 26 cm, sur 5 jours à 5 cm ou plus.",
+      "Ski Callaghan (Canada) : environ 73 cm en 14 jours (45 cm–101 cm selon le modèle), 61 cm la première semaine et 11 cm la seconde. Le jour le plus neigeux est le 26 novembre avec 19 cm ; 4 jours apportent 5 cm ou plus."
+     ]
+    },
+    {
+     "h": "La neige encore à venir",
+     "p": [
+      "Jusqu'à 76 cm de neige fraîche sont prévus à Mount Washington Alpine Resort dans les prochains jours.",
+      "Les prévisions bougent : le moment est souvent plus fiable que les quantités, revérifiez deux jours avant de partir.",
+      "Vers 1 325 m, Mount Washington Alpine Resort a 6 cm aujourd'hui ; un 21 novembre normal y compte 43 cm.",
+      "Un hiver sur dix seulement dépasse 97 cm à cette date.",
+      "Il y a une semaine, le même endroit avait 4 cm.",
+      "Les hivers passés, la meilleure neige à Mount Washington Alpine Resort arrivait d'habitude début janvier / fin février."
+     ]
+    },
+    {
+     "h": "Première semaine contre seconde",
+     "p": [
+      "Additionnez la région et 65 % de la neige de la quinzaine est déjà tombée le 28 novembre ; ce que les cartes montrent du 29 novembre au 5 décembre est le reste.",
+      "Les précoces : Mount Washington Alpine Resort, Mount Cain Alpine Park, Sasquatch, Whistler Blackcomb, Mt Seymour et Ski Callaghan voient l'essentiel de leur neige avant la fin de la première semaine.",
+      "Sur la carte, environ 102 272 km² de terrain de montagne reçoivent 20 cm ou plus sur les deux semaines, et 43 395 km² reçoivent 50 cm ou plus."
+     ]
+    },
+    {
+     "h": "Neige fraîche par altitude",
+     "p": [
+      "Les mêmes deux semaines par altitude, sur toutes les montagnes de la région (chaque kilomètre carré de terrain, pas seulement les stations) : entre 1 000 m et 1 500 m : typiquement 8 cm, le quart le plus enneigé de cette tranche 15 cm ou plus; entre 1 500 m et 2 000 m : typiquement 15 cm, le quart le plus enneigé de cette tranche 23 cm ou plus; entre 2 000 m et 2 500 m : typiquement 12 cm, le quart le plus enneigé de cette tranche 22 cm ou plus; entre 2 500 m et 3 000 m : typiquement 9 cm, le quart le plus enneigé de cette tranche 16 cm ou plus; entre 3 000 m et 4 500 m : typiquement 10 cm, le quart le plus enneigé de cette tranche 15 cm ou plus."
+     ]
+    },
+    {
+     "h": "Les jours à surveiller",
+     "p": [
+      "Les journées de neige sur la région, sur les 51 stations de notre liste : mardi 24 novembre (8 stations sur 51 à 5 cm ou plus, jusqu'à 64 cm à Mount Washington Alpine Resort), mercredi 25 novembre (8 stations sur 51 à 5 cm ou plus, jusqu'à 38 cm à Mount Washington Alpine Resort), jeudi 26 novembre (18 stations sur 51 à 5 cm ou plus, jusqu'à 37 cm à Mount Washington Alpine Resort) et vendredi 27 novembre (6 stations sur 51 à 5 cm ou plus, jusqu'à 9 cm à Sasquatch)."
+     ]
+    },
+    {
+     "h": "Comment lire les cartes",
+     "p": [
+      "Trois cartes : toute la quinzaine, puis la première et la seconde semaine. Les couleurs commencent à un centimètre de neige fraîche et foncent avec la quantité ; les épingles donnent la valeur sur le haut des stations de ce bulletin.",
+      "Au-delà d'une semaine, une prévision est une tendance, pas une promesse : les deux modèles divergent souvent sur la seconde semaine, d'où la fourchette donnée avec chaque chiffre. Les cartes sont refaites chaque matin."
+     ]
+    }
+   ],
+   "advice": [
+    "Planifiez la première semaine avec ces cartes ; gardez la seconde souple et revérifiez dans quelques jours.",
+    "L'isotherme 0 °C est une prévision et peut bouger de plusieurs centaines de mètres, ce qui change l'endroit où la pluie devient neige : revoyez la carte la veille.",
+    "Avant toute sortie hors-piste ou en randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates sur son site."
+   ],
+   "captions": {
+    "map": "Neige fraîche dans l'Ouest canadien prévue sur les 14 jours du 22 novembre au 5 décembre (milieu des modèles ECMWF et GFS, ramené sur le relief), avec les stations de ce bulletin.",
+    "week1": "La première semaine seule : neige fraîche du 22 novembre au 28 novembre.",
+    "week2": "La seconde semaine seule : neige fraîche du 29 novembre au 5 décembre, là où les deux modèles divergent le plus."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "usd": 0.0,
+   "rejected_numbers": [
+    [
+     "1200",
+     "1600",
+     "1200"
+    ],
+    [
+     "297",
+     "115"
+    ]
+   ],
+   "voice": "sat"
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "sat"
+  }
+ },
+ "words_en": 842,
+ "indexable": false,
+ "main": {
+  "slug": "mount_washington_alpine_resort",
+  "name": "Mount Washington Alpine Resort",
+  "lat": 49.7487,
+  "lon": -125.2978
+ },
+ "places": [
+  {
+   "name": "Mount Washington Alpine Resort",
+   "lat": 49.7487,
+   "lon": -125.2978
+  },
+  {
+   "name": "Mount Cain Alpine Park",
+   "lat": 50.2232,
+   "lon": -126.3468
+  },
+  {
+   "name": "Sasquatch",
+   "lat": 49.3814,
+   "lon": -121.9441
+  },
+  {
+   "name": "Whistler Blackcomb",
+   "lat": 50.0888,
+   "lon": -122.9419
+  },
+  {
+   "name": "Mt Seymour",
+   "lat": 49.3711,
+   "lon": -122.9451
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "mount_washington_alpine_resort",
+   "name": "Mount Washington Alpine Resort"
+  },
+  {
+   "slug": "mount_cain_alpine_park",
+   "name": "Mount Cain Alpine Park"
+  },
+  {
+   "slug": "sasquatch_mountain_resort",
+   "name": "Sasquatch"
+  },
+  {
+   "slug": "whistler",
+   "name": "Whistler Blackcomb"
+  },
+  {
+   "slug": "mt_seymour",
+   "name": "Mt Seymour"
+  },
+  {
+   "slug": "ski_callaghan",
+   "name": "Ski Callaghan"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "mount_washington_alpine_resort",
+    "name": "Mount Washington Alpine Resort",
+    "depth": 95,
+    "new72": 1,
+    "next": 76,
+    "top_m": 1569
+   },
+   {
+    "slug": "mount_cain_alpine_park",
+    "name": "Mount Cain Alpine Park",
+    "depth": 93,
+    "new72": 0,
+    "next": 57,
+    "top_m": 1616
+   },
+   {
+    "slug": "sasquatch_mountain_resort",
+    "name": "Sasquatch",
+    "depth": 13,
+    "new72": 0,
+    "next": 25,
+    "top_m": 1316
+   },
+   {
+    "slug": "whistler",
+    "name": "Whistler Blackcomb",
+    "depth": 150,
+    "new72": 0,
+    "next": 33,
+    "top_m": 2259
+   },
+   {
+    "slug": "mt_seymour",
+    "name": "Mt Seymour",
+    "depth": 18,
+    "new72": 0,
+    "next": 10,
+    "top_m": 1255
+   },
+   {
+    "slug": "ski_callaghan",
+    "name": "Ski Callaghan",
+    "depth": 15,
+    "new72": 0,
+    "next": 25,
+    "top_m": 998
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Avalanche Canada",
+   "url": "https://avalanche.ca/"
+  }
+ ],
+ "trip_day": "2026-11-28",
+ "map_link": "https://snowscope.app/#@49.749,-125.298,9.0",
+ "seconds": 45.9,
+ "facts_used": 56,
+ "voice": "sat",
+ "media_ids": [
+  "map",
+  "week1",
+  "week2"
+ ],
+ "overlap": {
+  "before": 27.0,
+  "after": 27.0,
+  "with": "pyrenees-2-week-snow-forecast-maps-12-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.12,
+  "with": "pyrenees-2-week-snow-forecast-maps-12-november-2026"
+ },
+ "publish_utc": "2026-11-21T16:33:18Z",
+ "noindex_why": "quality: sentence-bank template article (AdSense review)",
+ "quality": {
+  "ok": false,
+  "why": [
+   "sentence-bank template article (AdSense review)"
+  ],
+  "words": 945,
+  "overlap": 1.0,
+  "with": "early-season-snow-check-3-november-2026",
+  "langs_off": [],
+  "score": 136.2,
+  "intent": "resort:mount_washington_alpine_resort|storm_next",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "hero",
+  "files": {
+   "en": [
+    "blog/media/2026/11/western-canada-2-week-snow-forecast-maps-21-november-2026/cover-en.webp",
+    "blog/media/2026/11/western-canada-2-week-snow-forecast-maps-21-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/western-canada-2-week-snow-forecast-maps-21-november-2026/cover-fr.webp",
+    "blog/media/2026/11/western-canada-2-week-snow-forecast-maps-21-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}

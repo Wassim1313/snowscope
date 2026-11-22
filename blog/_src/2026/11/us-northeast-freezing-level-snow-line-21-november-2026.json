@@ -1,0 +1,590 @@
+{
+ "id": "2026-11-21-us_ne-isotherm",
+ "slug": "us-northeast-freezing-level-snow-line-21-november-2026",
+ "date": "2026-11-21",
+ "published_utc": "2026-11-22T10:03:10Z",
+ "updated_utc": "2026-11-22T10:03:10Z",
+ "region": "US_NE",
+ "angle": "isotherm",
+ "score": 48,
+ "signature": "whiteface_mountain_ski_center:3800|cannon_mountain:3900|smugglers_notch_resort:3800",
+ "keyword": {
+  "family": "snow-line",
+  "entity": "us_ne",
+  "region": "US_NE",
+  "date": "2026-11-21"
+ },
+ "tags": [
+  "snow-line",
+  "forecast",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "freezing_level_analysis",
+  "region": "US Northeast",
+  "date": "2026-11-21",
+  "weekday": "Saturday",
+  "model_run": "2026-11-21",
+  "forecast_days": [
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 1450,
+   "resorts_with_snow": 36,
+   "resorts_in_region": 112
+  },
+  "region_before": {
+   "date": "2026-11-19",
+   "snow_covered_area_km2": 3560,
+   "resorts_with_snow": 44
+  },
+  "region_forecast": {
+   "date": "2026-11-24",
+   "snow_covered_area_km2": 230,
+   "resorts_with_snow": 16
+  },
+  "question": "How high is the 0 °C level in the next days, where does rain turn to snow, and is rain falling on the snowpack?",
+  "snow_line_below_freezing_level_m": 300,
+  "region_freezing_level_m_by_day": {
+   "2026-11-21": {
+    "lowest": 3380,
+    "highest": 3920
+   },
+   "2026-11-22": {
+    "lowest": 2210,
+    "highest": 3920
+   },
+   "2026-11-23": {
+    "lowest": 50,
+    "highest": 3510
+   },
+   "2026-11-24": {
+    "lowest": 0,
+    "highest": 200
+   }
+  },
+  "forecast_points": [
+   {
+    "place": "Tug Hill",
+    "elev_m": 520,
+    "precip_mm_total_next_days": 6,
+    "precip_mm_by_day": {
+     "2026-11-21": 0,
+     "2026-11-22": 0,
+     "2026-11-23": 1,
+     "2026-11-24": 0,
+     "2026-11-25": 0,
+     "2026-11-26": 6
+    },
+    "freezing_level_m_when_wet": 770,
+    "snow_line_m_when_wet": 470,
+    "share_of_precip_as_snow_at_this_height_pct": 88
+   },
+   {
+    "place": "Stowe",
+    "elev_m": 1339,
+    "precip_mm_total_next_days": 16,
+    "precip_mm_by_day": {
+     "2026-11-21": 0,
+     "2026-11-22": 0,
+     "2026-11-23": 4,
+     "2026-11-24": 0,
+     "2026-11-25": 0,
+     "2026-11-26": 12
+    },
+    "freezing_level_m_when_wet": 1460,
+    "snow_line_m_when_wet": 1160,
+    "share_of_precip_as_snow_at_this_height_pct": 43
+   },
+   {
+    "place": "Buffalo",
+    "elev_m": 180,
+    "precip_mm_total_next_days": 3,
+    "precip_mm_by_day": {
+     "2026-11-21": 0,
+     "2026-11-22": 0,
+     "2026-11-23": 0,
+     "2026-11-24": 0,
+     "2026-11-25": 0,
+     "2026-11-26": 2
+    },
+    "freezing_level_m_when_wet": 980,
+    "snow_line_m_when_wet": 680,
+    "share_of_precip_as_snow_at_this_height_pct": 11
+   }
+  ],
+  "notes": [
+   "0 °C level = height where the air temperature crosses 0 °C (forecast, daily lowest and highest)",
+   "snow line = about 300 m below the 0 °C level, at the warmest hours of the day",
+   "rain-on-snow risk = snow on the slopes and a snow line above mid-mountain on a day with precipitation"
+  ],
+  "resorts": [
+   {
+    "name": "Whiteface Mountain",
+    "country": "United States",
+    "top_m": 1333,
+    "base_m": 372,
+    "depth_cm_upper_slopes_today": 5,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "whiteface_mountain_ski_center",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 3580,
+      "max": 3760
+     },
+     "2026-11-22": {
+      "min": 3100,
+      "max": 3640
+     },
+     "2026-11-23": {
+      "min": 50,
+      "max": 3080
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-21": 3500,
+     "2026-11-22": 3300,
+     "2026-11-23": 2800
+    },
+    "days_snow_line_above_top": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Cannon Mountain",
+    "country": "United States",
+    "top_m": 1231,
+    "base_m": 574,
+    "depth_cm_upper_slopes_today": 18,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "cannon_mountain",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 3660,
+      "max": 3920
+     },
+     "2026-11-22": {
+      "min": 2840,
+      "max": 3920
+     },
+     "2026-11-23": {
+      "min": 260,
+      "max": 3010
+     },
+     "2026-11-24": {
+      "min": 0,
+      "max": 200
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-21": 3600,
+     "2026-11-22": 3600,
+     "2026-11-23": 2700,
+     "2026-11-24": 0
+    },
+    "days_snow_line_above_top": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "days_all_day_below_0c_at_base": [
+     "2026-11-24"
+    ],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Smugglers' Notch Resort",
+    "country": "United States",
+    "top_m": 1112,
+    "base_m": 340,
+    "depth_cm_upper_slopes_today": 14,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "smugglers_notch_resort",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 3380,
+      "max": 3850
+     },
+     "2026-11-22": {
+      "min": 2510,
+      "max": 3740
+     },
+     "2026-11-23": {
+      "min": 320,
+      "max": 3510
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-21": 3600,
+     "2026-11-22": 3400,
+     "2026-11-23": 3200
+    },
+    "days_snow_line_above_top": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Bolton Valley Resort",
+    "country": "United States",
+    "top_m": 950,
+    "base_m": 475,
+    "depth_cm_upper_slopes_today": 11,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "bolton_valley_resort",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 3400,
+      "max": 3530
+     },
+     "2026-11-22": {
+      "min": 2210,
+      "max": 3370
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-21": 3200,
+     "2026-11-22": 3100
+    },
+    "days_snow_line_above_top": [
+     "2026-11-21",
+     "2026-11-22"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-21",
+     "2026-11-22"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   },
+   {
+    "name": "Middlebury College Snow Bowl",
+    "country": "United States",
+    "top_m": 811,
+    "base_m": 521,
+    "depth_cm_upper_slopes_today": 12,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "middlebury_college_snow_bowl",
+    "freezing_level_m_by_day": {
+     "2026-11-21": {
+      "min": 3600,
+      "max": 3780
+     },
+     "2026-11-22": {
+      "min": 3190,
+      "max": 3710
+     },
+     "2026-11-23": {
+      "min": 110,
+      "max": 3170
+     }
+    },
+    "snow_line_m_by_day_warmest_hours": {
+     "2026-11-21": 3500,
+     "2026-11-22": 3400,
+     "2026-11-23": 2900
+    },
+    "days_snow_line_above_top": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "days_snow_line_above_base": [
+     "2026-11-21",
+     "2026-11-22",
+     "2026-11-23"
+    ],
+    "days_all_day_below_0c_at_base": [],
+    "rain_on_snow_risk_days": []
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Whiteface Mountain",
+     "slug": "whiteface_mountain_ski_center",
+     "now_cm": 0,
+     "usual_cm": 5,
+     "high_cm": 22,
+     "week_ago_cm": 1,
+     "height_m": 852,
+     "best_weeks": [
+      8,
+      10,
+      11
+     ],
+     "ratio_pct": 0
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Whiteface Mountain",
+   "rain_day": "2026-11-21",
+   "freezing_m": 3760,
+   "lift_top_m": 1333,
+   "next_cm": 0,
+   "second": "Cannon Mountain",
+   "second_cm": 18,
+   "depth_cm": 5
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-northeast-freezing-level-snow-line-21-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-northeast-freezing-level-snow-line-21-november-2026/map_t.webp",
+   "bytes": 46044,
+   "snow_frac": 0.0409,
+   "weak": true
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Rain or snow in the US Northeast? The snow line climbs to 11,811 ft at Cannon Mountain (21 November)",
+   "description": "The forecast keeps the 0 °C level in the US Northeast between 0 ft (0 m) and 12,861 ft (3,920 m) for the next days. The snow line, about 984 ft …",
+   "lede": "The forecast keeps the 0 °C level in the US Northeast between 0 ft (0 m) and 12,861 ft (3,920 m) for the next days. The snow line, about 984 ft (300 m) lower, peaks at 11,811 ft (3,600 m) at Cannon Mountain on Saturday 21 November. Confidence: good for the trend, lower for any single number.",
+   "sections": [
+    {
+     "h": "The 0 °C level, daily",
+     "p": [
+      "The 0 °C level at the resorts below, from the coldest to the warmest hour of each day: Saturday 21 November: from 11,089 ft (3,380 m) to 12,861 ft (3,920 m). Sunday 22 November: from 7,251 ft (2,210 m) to 12,861 ft (3,920 m). Monday 23 November: from 164 ft (50 m) to 11,516 ft (3,510 m). Tuesday 24 November: from 0 ft (0 m) to 656 ft (200 m)."
+     ]
+    },
+    {
+     "h": "Snow line by resort",
+     "p": [
+      "Whiteface Mountain, base 1,220 ft (372 m), top 4,373 ft (1,333 m): snow line near 11,483 ft (3,500 m) on 21 November, over the top of the lifts; rain or wet snow everywhere if anything falls.",
+      "Cannon Mountain (base 1,883 ft (574 m), top 4,039 ft (1,231 m)): snow line about 11,811 ft (3,600 m) on 21 November, above the top. The whole mountain is in the rain-or-wet-snow zone if precipitation falls.",
+      "Smugglers' Notch Resort, base 1,115 ft (340 m), top 3,648 ft (1,112 m): snow line near 11,811 ft (3,600 m) on 21 November, over the top of the lifts; rain or wet snow everywhere if anything falls.",
+      "Bolton Valley Resort (base 1,558 ft (475 m), top 3,117 ft (950 m)): snow line about 10,499 ft (3,200 m) on 21 November, above the top. The whole mountain is in the rain-or-wet-snow zone if precipitation falls.",
+      "Middlebury College Snow Bowl, base 1,709 ft (521 m), top 2,661 ft (811 m): snow line near 11,483 ft (3,500 m) on 21 November, over the top of the lifts; rain or wet snow everywhere if anything falls."
+     ]
+    },
+    {
+     "h": "Rain-on-snow risk",
+     "p": [
+      "Rain-on-snow risk in the next days: none that we can see. The snow line stays low enough on the wet days.",
+      "Tug Hill (1,706 ft (520 m)): 6 mm forecast, snow line near 1,542 ft (470 m) while it falls.",
+      "The forecast gives Stowe (4,393 ft (1,339 m)) 16 mm of precipitation, with the snow line near 3,806 ft (1,160 m) during the wet hours."
+     ]
+    },
+    {
+     "h": "The 0 °C level and the snow line, briefly",
+     "p": [
+      "Air cools with height, as a rule. Below the 0 °C level flakes begin to melt; melting is slow, so rain starts only some 984 ft (300 m) lower. That is the snow line. Dry air cools the snow by evaporation and pushes the line lower still."
+     ]
+    }
+   ],
+   "advice": [
+    "When it is warm, the morning on high, north-facing slopes gives the best snow, before it softens.",
+    "Do not plan on the 0 °C level to the metre: it can move by several hundred metres, so check the map the day before.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website."
+   ],
+   "captions": {
+    "map": "Snow depth in the US Northeast on 21 November (SnowScope snow model) with the resorts of this freezing-level analysis and their top heights."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 2
+  }
+ },
+ "words_en": 423,
+ "indexable": false,
+ "main": {
+  "slug": "whiteface_mountain_ski_center",
+  "name": "Whiteface Mountain",
+  "lat": 44.3739,
+  "lon": -73.8779
+ },
+ "places": [
+  {
+   "name": "Whiteface Mountain",
+   "lat": 44.3739,
+   "lon": -73.8779
+  },
+  {
+   "name": "Cannon Mountain",
+   "lat": 44.1728,
+   "lon": -71.7031
+  },
+  {
+   "name": "Smugglers' Notch Resort",
+   "lat": 44.573,
+   "lon": -72.7704
+  },
+  {
+   "name": "Bolton Valley Resort",
+   "lat": 44.4184,
+   "lon": -72.8491
+  },
+  {
+   "name": "Middlebury College Snow Bowl",
+   "lat": 43.9319,
+   "lon": -72.9554
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "whiteface_mountain_ski_center",
+   "name": "Whiteface Mountain"
+  },
+  {
+   "slug": "cannon_mountain",
+   "name": "Cannon Mountain"
+  },
+  {
+   "slug": "smugglers_notch_resort",
+   "name": "Smugglers' Notch Resort"
+  },
+  {
+   "slug": "bolton_valley_resort",
+   "name": "Bolton Valley Resort"
+  },
+  {
+   "slug": "middlebury_college_snow_bowl",
+   "name": "Middlebury College Snow Bowl"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "whiteface_mountain_ski_center",
+    "name": "Whiteface Mountain",
+    "depth": 5,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1333
+   },
+   {
+    "slug": "cannon_mountain",
+    "name": "Cannon Mountain",
+    "depth": 18,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1231
+   },
+   {
+    "slug": "smugglers_notch_resort",
+    "name": "Smugglers' Notch Resort",
+    "depth": 14,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1112
+   },
+   {
+    "slug": "bolton_valley_resort",
+    "name": "Bolton Valley Resort",
+    "depth": 11,
+    "new72": 0,
+    "next": 0,
+    "top_m": 950
+   },
+   {
+    "slug": "middlebury_college_snow_bowl",
+    "name": "Middlebury College Snow Bowl",
+    "depth": 12,
+    "new72": 0,
+    "next": 0,
+    "top_m": 811
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Mount Washington Avalanche Center",
+   "url": "https://www.mountwashingtonavalanchecenter.org/"
+  }
+ ],
+ "trip_day": "2026-11-28",
+ "map_link": "https://snowscope.app/#@44.374,-73.878,9.0",
+ "seconds": 30.6,
+ "facts_used": 53,
+ "voice": "sat",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 36.6,
+  "after": 20.2,
+  "with": "western-canada-freezing-level-snow-line-12-november-2026",
+  "tries": 2
+ },
+ "similarity": {
+  "max": 0.12,
+  "with": "pyrenees-freezing-level-snow-line-10-november-2026"
+ },
+ "publish_utc": "2026-11-21T20:54:35Z",
+ "noindex_why": "quality: words 551 < 600; dated pure-numbers daily; sentence-bank template article (AdSense review)",
+ "quality": {
+  "ok": false,
+  "why": [
+   "words 551 < 600",
+   "dated pure-numbers daily",
+   "sentence-bank template article (AdSense review)"
+  ],
+  "words": 551,
+  "overlap": 1.1,
+  "with": "how-to-get-to-telluride-airports-gondola",
+  "langs_off": [],
+  "score": 47.1,
+  "intent": "us_ne|snow-line",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 1,
+  "style": "poster",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-northeast-freezing-level-snow-line-21-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-northeast-freezing-level-snow-line-21-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}
