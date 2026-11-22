@@ -18,7 +18,7 @@
   "MONEY",
   "SNOW"
  ],
- "snow_day0": "2026-11-21",
+ "snow_day0": "2026-11-22",
  "snow_stale": false,
  "projection": true,
  "travel": null,
@@ -68,7 +68,7 @@
      "cm": 110,
      "p20": 105,
      "p50": 110,
-     "p80": 125,
+     "p80": 130,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 85,
@@ -76,13 +76,13 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 19,
+       "snowfall_p50_cm": 26,
        "p50_cm": 125
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 17,
+       "snowfall_p50_cm": 18,
        "p50_cm": 110
       }
      },
@@ -114,10 +114,10 @@
    "cons": [
     "1,230 EUR per person"
    ],
-   "score": 70.7,
+   "score": 69.8,
    "score_parts": {
     "MONEY": 100,
-    "SNOW": 41
+    "SNOW": 40
    },
    "rank": 1
   },
@@ -162,12 +162,12 @@
     "pass_multi"
    ],
    "snow": {
-    "now_cm": 70,
+    "now_cm": 85,
     "start": {
-     "cm": 80,
-     "p20": 75,
-     "p50": 80,
-     "p80": 85,
+     "cm": 90,
+     "p20": 85,
+     "p50": 90,
+     "p80": 100,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 35,
@@ -175,14 +175,14 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 6,
-       "p50_cm": 85
+       "snowfall_p50_cm": 7,
+       "p50_cm": 95
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 75
+       "snowfall_p50_cm": 12,
+       "p50_cm": 90
       }
      },
      "winters": 46
@@ -206,19 +206,19 @@
     "pistes": "MID",
     "snow": "MID"
    },
-   "value_cm_per_eur": 1.05,
+   "value_cm_per_eur": 1.18,
    "pros": [
     "solid all-rounder"
    ],
    "cons": [
     "1,282 EUR per person",
-    "~80 cm at the start",
+    "~90 cm at the start",
     "6-day pass 720 CAD"
    ],
-   "score": 58.6,
+   "score": 60.3,
    "score_parts": {
     "MONEY": 90,
-    "SNOW": 27
+    "SNOW": 30
    },
    "rank": 2
   },
@@ -276,13 +276,13 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 15,
+       "snowfall_p50_cm": 20,
        "p50_cm": 45
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 30,
+       "snowfall_p50_cm": 32,
        "p50_cm": 35
       }
      },
@@ -316,7 +316,7 @@
     "~35 cm at the start",
     "6-day pass 720 CAD"
    ],
-   "score": 51.8,
+   "score": 51.7,
    "score_parts": {
     "MONEY": 99,
     "SNOW": 5
@@ -363,12 +363,12 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 150,
+    "now_cm": 155,
     "start": {
-     "cm": 230,
-     "p20": 190,
-     "p50": 230,
-     "p80": 260,
+     "cm": 240,
+     "p20": 215,
+     "p50": 240,
+     "p80": 275,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 250,
@@ -376,8 +376,8 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 98,
-       "p50_cm": 240
+       "snowfall_p50_cm": 132,
+       "p50_cm": 255
       },
       "GFS": {
        "members": 31,
@@ -407,9 +407,9 @@
     "pistes": "HIGH",
     "snow": "HIGH"
    },
-   "value_cm_per_eur": 2.52,
+   "value_cm_per_eur": 2.63,
    "pros": [
-    "~230 cm at the start",
+    "~240 cm at the start",
     "299 km of pistes",
     "36 lifts"
    ],
@@ -470,21 +470,21 @@
      "cm": 70,
      "p20": 55,
      "p50": 70,
-     "p80": 80,
-     "p_ge50": 0.94,
+     "p80": 85,
+     "p_ge50": 0.95,
      "basis": "ensemble+climatology",
      "normal_cm": 150,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 32,
+       "snowfall_p50_cm": 38,
        "p50_cm": 75
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 52,
+       "snowfall_p50_cm": 53,
        "p50_cm": 65
       }
      },
@@ -518,10 +518,10 @@
     "~70 cm at the start",
     "6-day pass 827 CAD"
    ],
-   "score": 49.9,
+   "score": 49.4,
    "score_parts": {
     "MONEY": 78,
-    "SNOW": 22
+    "SNOW": 21
    },
    "rank": 5
   },
@@ -578,13 +578,13 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 45
+       "snowfall_p50_cm": 16,
+       "p50_cm": 40
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 30,
+       "snowfall_p50_cm": 28,
        "p50_cm": 35
       }
      },
@@ -618,7 +618,7 @@
     "only 46 km of pistes",
     "~35 cm at the start"
    ],
-   "score": 43.6,
+   "score": 43.5,
    "score_parts": {
     "MONEY": 82,
     "SNOW": 5
@@ -667,24 +667,24 @@
    "snow": {
     "now_cm": 40,
     "start": {
-     "cm": 55,
+     "cm": 50,
      "p20": 45,
-     "p50": 55,
+     "p50": 50,
      "p80": 65,
-     "p_ge50": 0.61,
+     "p_ge50": 0.54,
      "basis": "ensemble+climatology",
      "normal_cm": 65,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 15,
+       "snowfall_p50_cm": 18,
        "p50_cm": 60
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 13,
+       "snowfall_p50_cm": 15,
        "p50_cm": 45
       }
      },
@@ -709,19 +709,19 @@
     "pistes": "HIGH",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.59,
+   "value_cm_per_eur": 0.54,
    "pros": [
     "156 km of pistes"
    ],
    "cons": [
     "1,427 EUR per person",
-    "~55 cm at the start",
+    "~50 cm at the start",
     "5-day pass 732 CAD"
    ],
-   "score": 39.1,
+   "score": 37.6,
    "score_parts": {
     "MONEY": 64,
-    "SNOW": 15
+    "SNOW": 12
    },
    "rank": 7
   },
@@ -778,7 +778,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 8,
+       "snowfall_p50_cm": 11,
        "p50_cm": 35
       },
       "GFS": {
@@ -817,7 +817,7 @@
     "1,422 EUR per person",
     "~30 cm at the start"
    ],
-   "score": 33.5,
+   "score": 33.4,
    "score_parts": {
     "MONEY": 65,
     "SNOW": 2
@@ -870,20 +870,20 @@
      "p20": 20,
      "p50": 25,
      "p80": 35,
-     "p_ge50": 0.02,
+     "p_ge50": 0.03,
      "basis": "ensemble+climatology",
      "normal_cm": 75,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 9,
+       "snowfall_p50_cm": 13,
        "p50_cm": 30
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 13,
+       "snowfall_p50_cm": 11,
        "p50_cm": 20
       }
      },

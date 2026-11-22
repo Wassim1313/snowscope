@@ -18,7 +18,7 @@
   "MONEY",
   "SNOW"
  ],
- "snow_day0": "2026-11-21",
+ "snow_day0": "2026-11-22",
  "snow_stale": false,
  "projection": true,
  "travel": null,
@@ -65,24 +65,24 @@
    "snow": {
     "now_cm": 5,
     "start": {
-     "cm": 20,
+     "cm": 15,
      "p20": 10,
-     "p50": 20,
-     "p80": 30,
-     "p_ge50": 0.04,
+     "p50": 15,
+     "p80": 25,
+     "p_ge50": 0.03,
      "basis": "ensemble+climatology",
      "normal_cm": 25,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 12,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 8,
        "p50_cm": 20
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 32,
+       "snowfall_p50_cm": 28,
        "p50_cm": 15
       }
      },
@@ -107,19 +107,19 @@
     "pistes": "LOW",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.28,
+   "value_cm_per_eur": 0.21,
    "pros": [
     "solid all-rounder"
    ],
    "cons": [
     "1,487 EUR per person",
     "only 41 km of pistes",
-    "~20 cm at the start"
+    "~15 cm at the start"
    ],
-   "score": 83.3,
+   "score": 66.7,
    "score_parts": {
     "MONEY": 100,
-    "SNOW": 67
+    "SNOW": 33
    },
    "rank": 1
   },
@@ -169,15 +169,15 @@
      "p20": 20,
      "p50": 25,
      "p80": 40,
-     "p_ge50": 0.09,
+     "p_ge50": 0.06,
      "basis": "ensemble+climatology",
      "normal_cm": 20,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 35
+       "horizon_days": 13,
+       "snowfall_p50_cm": 8,
+       "p50_cm": 30
       },
       "GFS": {
        "members": 31,
@@ -269,21 +269,21 @@
      "p20": 15,
      "p50": 20,
      "p80": 30,
-     "p_ge50": 0.03,
+     "p_ge50": 0.02,
      "basis": "ensemble+climatology",
      "normal_cm": 25,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 9,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 6,
        "p50_cm": 25
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 22,
-       "p50_cm": 20
+       "snowfall_p50_cm": 15,
+       "p50_cm": 15
       }
      },
      "winters": 46
@@ -368,21 +368,21 @@
      "cm": 15,
      "p20": 10,
      "p50": 15,
-     "p80": 30,
-     "p_ge50": 0.03,
+     "p80": 25,
+     "p_ge50": 0.02,
      "basis": "ensemble+climatology",
      "normal_cm": 20,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 20
+       "horizon_days": 13,
+       "snowfall_p50_cm": 8,
+       "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 19,
+       "snowfall_p50_cm": 22,
        "p50_cm": 10
       }
      },
@@ -475,15 +475,15 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 14,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 10,
        "p50_cm": 30
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 24,
-       "p50_cm": 20
+       "snowfall_p50_cm": 16,
+       "p50_cm": 15
       }
      },
      "winters": 46
@@ -522,106 +522,6 @@
     "SNOW": 67
    },
    "rank": 5
-  },
-  {
-   "slug": "stratton_mountain_resort",
-   "label": "Stratton",
-   "country": "US",
-   "area": "Vermont",
-   "lat": 43.10215,
-   "lon": -72.91156,
-   "top_m": 1183,
-   "base_m": 607,
-   "km": 72.0,
-   "lifts": 17,
-   "opens": "2026-11-25",
-   "pass_day_eur": 190.17,
-   "pass_day_walkup": 190.17,
-   "pass_day_multi_eur": 120.34,
-   "pass_multi": {
-    "days": 4,
-    "price": 529.0,
-    "ccy": "USD",
-    "per_day": 132.25,
-    "estimated": false,
-    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
-    "src": "https://www.ikonpass.com/en/passes/session-pass"
-   },
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 209.0,
-    "regular": 139.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult 1-day, online advance, dynamic by date; Ikon-partner resort; 2026-27 Stratton publishes an explicit 'Peak Days + Weekends' adult rate of $209, with weekday/weekend list prices of $201/$229 and early-booking online rates as low as $127-$139",
-   "pass_src": "https://www.onthesnow.com/vermont/stratton-mountain/lift-tickets ; early-booking rate via https://www.stratton.com/plan-your-trip/deals-and-packages/early-booking-offer",
-   "night_eur": 136.49,
-   "food_day_eur": 63.69,
-   "stay_src": "estimate: Stratton/Manchester VT area is on the pricier side similar to Stowe; general hotel/condo search context, no exact Christmas-week figure found",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 10,
-    "start": {
-     "cm": 20,
-     "p20": 10,
-     "p50": 20,
-     "p80": 30,
-     "p_ge50": 0.04,
-     "basis": "ensemble+climatology",
-     "normal_cm": 20,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 25
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 19,
-       "p50_cm": 15
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 722,
-    "hotel_eur": 955,
-    "food_eur": 446,
-    "total_eur": 2123,
-    "pass_basis": "advance 4-day pass",
-    "pass_walkup": 1141,
-    "party_total_eur": 2123,
-    "left_eur": -1123,
-    "need_eur": 1123,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "HIGH",
-    "pistes": "MID",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.17,
-   "pros": [
-    "solid all-rounder"
-   ],
-   "cons": [
-    "2,123 EUR per person",
-    "nights from 136 EUR per person",
-    "~20 cm at the start"
-   ],
-   "score": 33.3,
-   "score_parts": {
-    "MONEY": 0,
-    "SNOW": 67
-   },
-   "rank": 6
   },
   {
    "slug": "sugarbush_resort",
@@ -663,27 +563,27 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 10,
+    "now_cm": 5,
     "start": {
      "cm": 15,
-     "p20": 15,
+     "p20": 10,
      "p50": 15,
      "p80": 30,
-     "p_ge50": 0.04,
+     "p_ge50": 0.03,
      "basis": "ensemble+climatology",
      "normal_cm": 20,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 25
+       "horizon_days": 13,
+       "snowfall_p50_cm": 7,
+       "p50_cm": 20
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 19,
-       "p50_cm": 15
+       "snowfall_p50_cm": 16,
+       "p50_cm": 10
       }
      },
      "winters": 46
@@ -721,7 +621,7 @@
     "MONEY": 25,
     "SNOW": 33
    },
-   "rank": 7
+   "rank": 6
   },
   {
    "slug": "okemo_mountain",
@@ -763,7 +663,7 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 0,
+    "now_cm": 5,
     "start": {
      "cm": 10,
      "p20": 5,
@@ -775,14 +675,14 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 20
+       "horizon_days": 13,
+       "snowfall_p50_cm": 5,
+       "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 17,
+       "snowfall_p50_cm": 18,
        "p50_cm": 10
       }
      },
@@ -821,7 +721,7 @@
     "MONEY": 47,
     "SNOW": 0
    },
-   "rank": 8
+   "rank": 7
   },
   {
    "slug": "sunday_river",
@@ -868,21 +768,21 @@
      "cm": 10,
      "p20": 5,
      "p50": 10,
-     "p80": 25,
-     "p_ge50": 0.02,
+     "p80": 20,
+     "p_ge50": 0.01,
      "basis": "ensemble+climatology",
      "normal_cm": 30,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 14,
-       "p50_cm": 20
+       "horizon_days": 13,
+       "snowfall_p50_cm": 8,
+       "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 26,
+       "snowfall_p50_cm": 23,
        "p50_cm": 10
       }
      },
@@ -920,6 +820,106 @@
    "score_parts": {
     "MONEY": 40,
     "SNOW": 0
+   },
+   "rank": 8
+  },
+  {
+   "slug": "stratton_mountain_resort",
+   "label": "Stratton",
+   "country": "US",
+   "area": "Vermont",
+   "lat": 43.10215,
+   "lon": -72.91156,
+   "top_m": 1183,
+   "base_m": 607,
+   "km": 72.0,
+   "lifts": 17,
+   "opens": "2026-11-25",
+   "pass_day_eur": 190.17,
+   "pass_day_walkup": 190.17,
+   "pass_day_multi_eur": 120.34,
+   "pass_multi": {
+    "days": 4,
+    "price": 529.0,
+    "ccy": "USD",
+    "per_day": 132.25,
+    "estimated": false,
+    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
+    "src": "https://www.ikonpass.com/en/passes/session-pass"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 209.0,
+    "regular": 139.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day, online advance, dynamic by date; Ikon-partner resort; 2026-27 Stratton publishes an explicit 'Peak Days + Weekends' adult rate of $209, with weekday/weekend list prices of $201/$229 and early-booking online rates as low as $127-$139",
+   "pass_src": "https://www.onthesnow.com/vermont/stratton-mountain/lift-tickets ; early-booking rate via https://www.stratton.com/plan-your-trip/deals-and-packages/early-booking-offer",
+   "night_eur": 136.49,
+   "food_day_eur": 63.69,
+   "stay_src": "estimate: Stratton/Manchester VT area is on the pricier side similar to Stowe; general hotel/condo search context, no exact Christmas-week figure found",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 5,
+    "start": {
+     "cm": 15,
+     "p20": 10,
+     "p50": 15,
+     "p80": 25,
+     "p_ge50": 0.02,
+     "basis": "ensemble+climatology",
+     "normal_cm": 20,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 9,
+       "p50_cm": 20
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 22,
+       "p50_cm": 15
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 722,
+    "hotel_eur": 955,
+    "food_eur": 446,
+    "total_eur": 2123,
+    "pass_basis": "advance 4-day pass",
+    "pass_walkup": 1141,
+    "party_total_eur": 2123,
+    "left_eur": -1123,
+    "need_eur": 1123,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "HIGH",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.12,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "2,123 EUR per person",
+    "nights from 136 EUR per person",
+    "~15 cm at the start"
+   ],
+   "score": 16.7,
+   "score_parts": {
+    "MONEY": 0,
+    "SNOW": 33
    },
    "rank": 9
   }
