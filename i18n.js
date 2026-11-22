@@ -408,8 +408,6 @@
     "Layers": ["Calques", "Ebenen", "Livelli", "Capas", "الطبقات"],
     "Map layers": ["Calques de la carte", "Kartenebenen", "Livelli della mappa", "Capas del mapa", "الطبقات ديال الخريطة"],
     "Find a ski resort": ["Trouver une station", "Skigebiet suchen", "Cerca una stazione", "Buscar una estación", "قلب على محطة ديال التزلج"],
-    "Resort or mountain town": ["Station ou ville de montagne", "Skigebiet oder Bergort", "Stazione o località di montagna", "Estación o pueblo de montaña", "محطة ولا مدينة فالجبل"],
-    "Find a ski resort or a mountain town": ["Trouver une station ou une ville de montagne", "Skigebiet oder Bergort suchen", "Cerca una stazione o una località di montagna", "Buscar una estación o un pueblo de montaña", "قلب على محطة ولا مدينة فالجبل"],
     "Sign in": ["Se connecter", "Anmelden", "Accedi", "Iniciar sesión", "دخل"],
     "Get the app": ["Obtenir l'appli", "App holen", "Scarica l'app", "Descargar la app", "جيب التطبيق"],
     "Plan ski trip": ["Planifier mon séjour", "Skiurlaub planen", "Pianifica il viaggio", "Planear viaje de esquí", "خطط لرحلة التزلج"],
@@ -1183,9 +1181,6 @@
   const pick = () => {
     let q = null;
     try { q = new URLSearchParams(location.search).get("lang"); } catch { /* ignore */ }
-    // #lang=xx (the blog's links since 2026-11-22: a fragment is not a new URL for Google, ?lang=xx was), dropped from the address
-    const hm = /^#lang=([a-z]{2})$/.exec(location.hash);
-    if (hm) { q = q || hm[1]; try { history.replaceState(history.state, "", location.pathname + location.search); } catch { /* old browser */ } }
     if (q && LANGS[q]) { try { localStorage.setItem("ss_lang", q); } catch { /* private */ } return q; }
     const dl = document.documentElement.dataset.lang;        // a page written in one language (resorts/<slug>.<lang>.html)
     if (dl && LANGS[dl]) return dl;
