@@ -82,8 +82,8 @@
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 28,
-       "p50_cm": 15
+       "snowfall_p50_cm": 24,
+       "p50_cm": 10
       }
      },
      "winters": 46
@@ -168,7 +168,7 @@
      "cm": 25,
      "p20": 20,
      "p50": 25,
-     "p80": 40,
+     "p80": 35,
      "p_ge50": 0.06,
      "basis": "ensemble+climatology",
      "normal_cm": 20,
@@ -182,8 +182,8 @@
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 19,
-       "p50_cm": 25
+       "snowfall_p50_cm": 16,
+       "p50_cm": 20
       }
      },
      "winters": 46
@@ -282,8 +282,8 @@
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 15,
-       "p50_cm": 15
+       "snowfall_p50_cm": 22,
+       "p50_cm": 20
       }
      },
      "winters": 46
@@ -382,7 +382,7 @@
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 22,
+       "snowfall_p50_cm": 20,
        "p50_cm": 10
       }
      },
@@ -424,102 +424,102 @@
    "rank": 4
   },
   {
-   "slug": "stowe",
-   "label": "Stowe",
+   "slug": "sunday_river",
+   "label": "Sunday River",
    "country": "US",
-   "area": "Vermont",
-   "lat": 44.53036,
-   "lon": -72.78816,
-   "top_m": 1112,
-   "base_m": 400,
-   "km": 67.0,
-   "lifts": 12,
-   "opens": "2026-11-21",
-   "pass_day_eur": 204.73,
-   "pass_day_walkup": 204.73,
-   "pass_day_multi_eur": 91.12,
+   "area": "Maine",
+   "lat": 44.46687,
+   "lon": -70.87441,
+   "top_m": 955,
+   "base_m": 249,
+   "km": 86.0,
+   "lifts": 20,
+   "opens": "2026-11-18",
+   "pass_day_eur": 144.68,
+   "pass_day_walkup": 144.68,
+   "pass_day_multi_eur": 120.34,
    "pass_multi": {
-    "days": 7,
-    "price": 701.0,
+    "days": 4,
+    "price": 529.0,
     "ccy": "USD",
-    "per_day": 100.14,
+    "per_day": 132.25,
     "estimated": false,
-    "note": "Epic Day Pass 7-Day unrestricted tier (no blackout dates, holiday-valid), 2026-27 adult, advance online",
-    "src": "https://www.onthesnow.com/news/epic-pass-buyers-guide/"
+    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
+    "src": "https://www.ikonpass.com/en/passes/session-pass"
    },
    "pass_day_local": {
     "ccy": "USD",
-    "holiday": 225.0,
-    "regular": 169.0
+    "holiday": 159.0,
+    "regular": 81.0
    },
    "pass_period": "holiday",
-   "pass_note": "adult 1-day, online advance, dynamic by date; 2026-27 adult day tickets reported in the $169-$239 range with weekday listed around $207; holiday figure is a representative peak-week price, not exact published holiday rate",
-   "pass_src": "https://www.onthesnow.com/vermont/stowe-mountain-resort/lift-tickets (official stowe.com ticket calendar did not return static prices for this fetch, Nov 2026)",
-   "night_eur": 145.59,
-   "food_day_eur": 63.69,
-   "stay_src": "estimate: based on Stowe hotel search (general range ~$90-$500+/night, Green Mountain Inn Christmas package ~$534 pp/2 nights) and Stowe's higher cost tier vs other VT resorts; food slightly above Killington/Okemo tier",
+   "pass_note": "adult 1-day, online advance, dynamic by date; Ikon-partner (Boyne) resort; 2026-27 adult day tickets reported ranging ~$89-$159 at peak, with weekday ~$81/weekend ~$117 cited separately; holiday figure is the top of that reported peak range",
+   "pass_src": "https://www.sundayriver.com/lift-tickets/full-day ; range cross-checked via https://www.onthesnow.com/maine/sunday-river/lift-tickets (Nov 2026)",
+   "night_eur": 109.19,
+   "food_day_eur": 54.6,
+   "stay_src": "estimate: based on Sunday River condo-rental search (condos roughly $120-$680/night total depending on size), per-person figure assumes sharing a 2-4 person condo; Bethel ME area food costs modest",
    "estimates": [
     "night_eur",
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 10,
+    "now_cm": 0,
     "start": {
-     "cm": 20,
-     "p20": 15,
-     "p50": 20,
-     "p80": 30,
-     "p_ge50": 0.05,
+     "cm": 15,
+     "p20": 5,
+     "p50": 15,
+     "p80": 20,
+     "p_ge50": 0.01,
      "basis": "ensemble+climatology",
      "normal_cm": 30,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 12,
-       "p50_cm": 30
+       "snowfall_p50_cm": 7,
+       "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 16,
-       "p50_cm": 15
+       "snowfall_p50_cm": 25,
+       "p50_cm": 10
       }
      },
      "winters": 46
     }
    },
    "cost": {
-    "pass_eur": 547,
-    "hotel_eur": 1019,
-    "food_eur": 446,
-    "total_eur": 2012,
-    "pass_basis": "advance 7-day pass",
-    "pass_walkup": 1228,
-    "party_total_eur": 2012,
-    "left_eur": -1012,
-    "need_eur": 1012,
+    "pass_eur": 722,
+    "hotel_eur": 764,
+    "food_eur": 382,
+    "total_eur": 1868,
+    "pass_basis": "advance 4-day pass",
+    "pass_walkup": 868,
+    "party_total_eur": 1868,
+    "left_eur": -868,
+    "need_eur": 868,
     "fits": false
    },
    "tiers": {
     "pass": "HIGH",
-    "hotel": "HIGH",
+    "hotel": "MID",
     "pistes": "MID",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.22,
+   "value_cm_per_eur": 0.12,
    "pros": [
     "solid all-rounder"
    ],
    "cons": [
-    "2,012 EUR per person",
-    "nights from 146 EUR per person",
-    "~20 cm at the start"
+    "1,868 EUR per person",
+    "~15 cm at the start",
+    "4-day pass 529 USD"
    ],
-   "score": 42.1,
+   "score": 36.7,
    "score_parts": {
-    "MONEY": 17,
-    "SNOW": 67
+    "MONEY": 40,
+    "SNOW": 33
    },
    "rank": 5
   },
@@ -582,7 +582,7 @@
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 16,
+       "snowfall_p50_cm": 13,
        "p50_cm": 10
       }
      },
@@ -622,6 +622,106 @@
     "SNOW": 33
    },
    "rank": 6
+  },
+  {
+   "slug": "stowe",
+   "label": "Stowe",
+   "country": "US",
+   "area": "Vermont",
+   "lat": 44.53036,
+   "lon": -72.78816,
+   "top_m": 1112,
+   "base_m": 400,
+   "km": 67.0,
+   "lifts": 12,
+   "opens": "2026-11-21",
+   "pass_day_eur": 204.73,
+   "pass_day_walkup": 204.73,
+   "pass_day_multi_eur": 91.12,
+   "pass_multi": {
+    "days": 7,
+    "price": 701.0,
+    "ccy": "USD",
+    "per_day": 100.14,
+    "estimated": false,
+    "note": "Epic Day Pass 7-Day unrestricted tier (no blackout dates, holiday-valid), 2026-27 adult, advance online",
+    "src": "https://www.onthesnow.com/news/epic-pass-buyers-guide/"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 225.0,
+    "regular": 169.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day, online advance, dynamic by date; 2026-27 adult day tickets reported in the $169-$239 range with weekday listed around $207; holiday figure is a representative peak-week price, not exact published holiday rate",
+   "pass_src": "https://www.onthesnow.com/vermont/stowe-mountain-resort/lift-tickets (official stowe.com ticket calendar did not return static prices for this fetch, Nov 2026)",
+   "night_eur": 145.59,
+   "food_day_eur": 63.69,
+   "stay_src": "estimate: based on Stowe hotel search (general range ~$90-$500+/night, Green Mountain Inn Christmas package ~$534 pp/2 nights) and Stowe's higher cost tier vs other VT resorts; food slightly above Killington/Okemo tier",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 10,
+    "start": {
+     "cm": 15,
+     "p20": 10,
+     "p50": 15,
+     "p80": 30,
+     "p_ge50": 0.05,
+     "basis": "ensemble+climatology",
+     "normal_cm": 30,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 12,
+       "p50_cm": 30
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 15,
+       "p50_cm": 15
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 547,
+    "hotel_eur": 1019,
+    "food_eur": 446,
+    "total_eur": 2012,
+    "pass_basis": "advance 7-day pass",
+    "pass_walkup": 1228,
+    "party_total_eur": 2012,
+    "left_eur": -1012,
+    "need_eur": 1012,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "HIGH",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.16,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "2,012 EUR per person",
+    "nights from 146 EUR per person",
+    "~15 cm at the start"
+   ],
+   "score": 25.4,
+   "score_parts": {
+    "MONEY": 17,
+    "SNOW": 33
+   },
+   "rank": 7
   },
   {
    "slug": "okemo_mountain",
@@ -668,7 +768,7 @@
      "cm": 10,
      "p20": 5,
      "p50": 10,
-     "p80": 25,
+     "p80": 20,
      "p_ge50": 0.01,
      "basis": "ensemble+climatology",
      "normal_cm": 20,
@@ -682,7 +782,7 @@
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 18,
+       "snowfall_p50_cm": 19,
        "p50_cm": 10
       }
      },
@@ -719,106 +819,6 @@
    "score": 23.7,
    "score_parts": {
     "MONEY": 47,
-    "SNOW": 0
-   },
-   "rank": 7
-  },
-  {
-   "slug": "sunday_river",
-   "label": "Sunday River",
-   "country": "US",
-   "area": "Maine",
-   "lat": 44.46687,
-   "lon": -70.87441,
-   "top_m": 955,
-   "base_m": 249,
-   "km": 86.0,
-   "lifts": 20,
-   "opens": "2026-11-18",
-   "pass_day_eur": 144.68,
-   "pass_day_walkup": 144.68,
-   "pass_day_multi_eur": 120.34,
-   "pass_multi": {
-    "days": 4,
-    "price": 529.0,
-    "ccy": "USD",
-    "per_day": 132.25,
-    "estimated": false,
-    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
-    "src": "https://www.ikonpass.com/en/passes/session-pass"
-   },
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 159.0,
-    "regular": 81.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult 1-day, online advance, dynamic by date; Ikon-partner (Boyne) resort; 2026-27 adult day tickets reported ranging ~$89-$159 at peak, with weekday ~$81/weekend ~$117 cited separately; holiday figure is the top of that reported peak range",
-   "pass_src": "https://www.sundayriver.com/lift-tickets/full-day ; range cross-checked via https://www.onthesnow.com/maine/sunday-river/lift-tickets (Nov 2026)",
-   "night_eur": 109.19,
-   "food_day_eur": 54.6,
-   "stay_src": "estimate: based on Sunday River condo-rental search (condos roughly $120-$680/night total depending on size), per-person figure assumes sharing a 2-4 person condo; Bethel ME area food costs modest",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 0,
-    "start": {
-     "cm": 10,
-     "p20": 5,
-     "p50": 10,
-     "p80": 20,
-     "p_ge50": 0.01,
-     "basis": "ensemble+climatology",
-     "normal_cm": 30,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 7,
-       "p50_cm": 15
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 23,
-       "p50_cm": 10
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 722,
-    "hotel_eur": 764,
-    "food_eur": 382,
-    "total_eur": 1868,
-    "pass_basis": "advance 4-day pass",
-    "pass_walkup": 868,
-    "party_total_eur": 1868,
-    "left_eur": -868,
-    "need_eur": 868,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "MID",
-    "pistes": "MID",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.08,
-   "pros": [
-    "solid all-rounder"
-   ],
-   "cons": [
-    "1,868 EUR per person",
-    "~10 cm at the start",
-    "4-day pass 529 USD"
-   ],
-   "score": 20.0,
-   "score_parts": {
-    "MONEY": 40,
     "SNOW": 0
    },
    "rank": 8
@@ -882,8 +882,8 @@
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 22,
-       "p50_cm": 15
+       "snowfall_p50_cm": 20,
+       "p50_cm": 10
       }
      },
      "winters": 46
