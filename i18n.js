@@ -1181,6 +1181,9 @@
   const pick = () => {
     let q = null;
     try { q = new URLSearchParams(location.search).get("lang"); } catch { /* ignore */ }
+    // #lang=xx (the blog's links since 2026-11-22: a fragment is not a new URL for Google, ?lang=xx was), dropped from the address
+    const hm = /^#lang=([a-z]{2})$/.exec(location.hash);
+    if (hm) { q = q || hm[1]; try { history.replaceState(history.state, "", location.pathname + location.search); } catch { /* old browser */ } }
     if (q && LANGS[q]) { try { localStorage.setItem("ss_lang", q); } catch { /* private */ } return q; }
     const dl = document.documentElement.dataset.lang;        // a page written in one language (resorts/<slug>.<lang>.html)
     if (dl && LANGS[dl]) return dl;
