@@ -663,6 +663,126 @@
 },
 "change_vs_yesterday_km2": 70,
 "change_vs_7_days_km2": 230
+},
+"2026-11-22": {
+"country": "Bulgaria",
+"country_code": "BG",
+"date": "2026-11-22",
+"quiet": false,
+"modelled_km2": 31250,
+"snow_km2_today": 420,
+"snow_km2_yesterday": 380,
+"snow_km2_7_days_ago": 440,
+"new_cm_24h_max": 1,
+"new_cm_72h_max": 3,
+"area_km2_5cm_new_72h": 60,
+"next_3_days_max_cm": 7,
+"next_7_days_max_cm": 25,
+"snowiest_day": "2026-11-28",
+"snowiest_day_cm": 10,
+"first_snow_day": "2026-11-23",
+"hotspots": [
+{
+"name": "the Rila Mountains",
+"new_cm_72h": 7,
+"lat": 42.205,
+"lon": 23.274
+},
+{
+"name": "Vitosha",
+"new_cm_72h": 4,
+"lat": 42.16,
+"lon": 22.539
+},
+{
+"name": "the Pirin Mountains",
+"new_cm_72h": 4,
+"lat": 41.845,
+"lon": 23.317
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 2
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 1,
+"snow_cover_pct": 35
+},
+{
+"from_m": 2500,
+"to_m": 5000,
+"mean_depth_cm": 5,
+"snow_cover_pct": 93
+}
+],
+"snow_line_m": 2300,
+"white_share_pct": 1,
+"resorts": [
+{
+"name": "Bansko",
+"slug": "bansko",
+"depth_cm": 9,
+"new_cm_72h": 3,
+"next_3_days_cm": 7,
+"top_m": 2516
+},
+{
+"name": "Borovets",
+"slug": "borovets",
+"depth_cm": 4,
+"new_cm_72h": 4,
+"next_3_days_cm": 8,
+"top_m": 2538
+},
+{
+"name": "Malyovista",
+"slug": "malyovista",
+"depth_cm": 4,
+"new_cm_72h": 3,
+"next_3_days_cm": 7,
+"top_m": 1974
+},
+{
+"name": "Kartala",
+"slug": "kartala",
+"depth_cm": 1,
+"new_cm_72h": 3,
+"next_3_days_cm": 8,
+"top_m": 2245
+},
+{
+"name": "Dobrinishte",
+"slug": "dobrinishte",
+"depth_cm": 1,
+"new_cm_72h": 3,
+"next_3_days_cm": 6,
+"top_m": 2226
+}
+],
+"n_resorts": 11,
+"n_resorts_with_snow": 5,
+"resort_next_until": "2026-11-25",
+"week2": null,
+"change_vs_yesterday_km2": 40,
+"change_vs_7_days_km2": -20
 }
 }
 }

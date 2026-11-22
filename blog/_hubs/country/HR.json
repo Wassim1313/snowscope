@@ -488,6 +488,99 @@
 },
 "change_vs_yesterday_km2": 0,
 "change_vs_7_days_km2": -2510
+},
+"2026-11-22": {
+"country": "Croatia",
+"country_code": "HR",
+"date": "2026-11-22",
+"quiet": false,
+"modelled_km2": 8760,
+"snow_km2_today": 100,
+"snow_km2_yesterday": 0,
+"snow_km2_7_days_ago": 1530,
+"new_cm_24h_max": 1,
+"new_cm_72h_max": 1,
+"area_km2_5cm_new_72h": 0,
+"next_3_days_max_cm": 6,
+"next_7_days_max_cm": 33,
+"snowiest_day": "2026-11-28",
+"snowiest_day_cm": 14,
+"first_snow_day": "2026-11-23",
+"hotspots": [
+{
+"name": "the Dinara range",
+"new_cm_72h": 8,
+"lat": 44.056,
+"lon": 16.384
+},
+{
+"name": "Gorski kotar",
+"new_cm_72h": 7,
+"lat": 45.51,
+"lon": 14.531
+},
+{
+"name": "the Velebit",
+"new_cm_72h": 4,
+"lat": 44.371,
+"lon": 15.49
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 5
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+}
+],
+"snow_line_m": null,
+"white_share_pct": 1,
+"resorts": [
+{
+"name": "Platak",
+"slug": "platak",
+"depth_cm": 3,
+"new_cm_72h": 4,
+"next_3_days_cm": 8,
+"top_m": 1354
+},
+{
+"name": "Sljeme",
+"slug": "sljeme",
+"depth_cm": 3,
+"new_cm_72h": 0,
+"next_3_days_cm": 3,
+"top_m": 1029
+}
+],
+"n_resorts": 4,
+"n_resorts_with_snow": 2,
+"resort_next_until": "2026-11-25",
+"week2": {
+"week1_max_cm": 47,
+"week2_max_cm": 16,
+"week2_days": [
+"2026-11-30",
+"2026-12-06"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 100,
+"change_vs_7_days_km2": -1430
 }
 }
 }

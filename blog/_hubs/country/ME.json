@@ -527,6 +527,88 @@
 },
 "change_vs_yesterday_km2": -300,
 "change_vs_7_days_km2": -3240
+},
+"2026-11-22": {
+"country": "Montenegro",
+"country_code": "ME",
+"date": "2026-11-22",
+"quiet": false,
+"modelled_km2": 11370,
+"snow_km2_today": 190,
+"snow_km2_yesterday": 450,
+"snow_km2_7_days_ago": 1360,
+"new_cm_24h_max": 2,
+"new_cm_72h_max": 8,
+"area_km2_5cm_new_72h": 150,
+"next_3_days_max_cm": 21,
+"next_7_days_max_cm": 54,
+"snowiest_day": "2026-11-28",
+"snowiest_day_cm": 19,
+"first_snow_day": "2026-11-23",
+"hotspots": [
+{
+"name": "the Prokletije",
+"new_cm_72h": 23,
+"lat": 42.484,
+"lon": 19.872
+},
+{
+"name": "Durmitor",
+"new_cm_72h": 16,
+"lat": 43.15,
+"lon": 19.022
+},
+{
+"name": "Bjelasica",
+"new_cm_72h": 10,
+"lat": 42.745,
+"lon": 19.247
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 3
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 3,
+"snow_cover_pct": 81
+}
+],
+"snow_line_m": 2000,
+"white_share_pct": 2,
+"resorts": [
+{
+"name": "Ski centar Savin kuk",
+"slug": "ski_centar_savin_kuk",
+"depth_cm": 20,
+"new_cm_72h": 13,
+"next_3_days_cm": 27,
+"top_m": 2175
+}
+],
+"n_resorts": 3,
+"n_resorts_with_snow": 1,
+"resort_next_until": "2026-11-25",
+"week2": null,
+"change_vs_yesterday_km2": -260,
+"change_vs_7_days_km2": -1170
 }
 }
 }
