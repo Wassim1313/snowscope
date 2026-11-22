@@ -763,7 +763,7 @@
   }
  },
  "words_en": 608,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "hurricane_ridge",
   "name": "Hurricane Ridge",
@@ -916,8 +916,10 @@
  },
  "publish_utc": "2026-11-21T14:07:10Z",
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "day cap 6 reached"
+  ],
   "words": 786,
   "overlap": 0.9,
   "with": "alps-2-week-snow-forecast-maps-18-november-2026",
@@ -938,5 +940,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: day cap 6 reached"
 }

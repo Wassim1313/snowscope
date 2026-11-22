@@ -388,7 +388,7 @@
   }
  },
  "words_en": 564,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "balea_lac",
   "name": "Balea Lac",
@@ -533,8 +533,10 @@
  },
  "publish_utc": "2026-11-21T14:23:22Z",
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "day cap 6 reached"
+  ],
   "words": 695,
   "overlap": 0.9,
   "with": "slovenia-snow-report-17-november-2026",
@@ -559,5 +561,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: day cap 6 reached"
 }

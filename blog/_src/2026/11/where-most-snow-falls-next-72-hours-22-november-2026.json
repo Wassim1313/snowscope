@@ -430,7 +430,7 @@
   }
  },
  "words_en": 691,
- "indexable": true,
+ "indexable": false,
  "main": {
   "slug": "mount_cain_alpine_park",
   "name": "Mount Cain Alpine Park",
@@ -836,8 +836,10 @@
  },
  "publish_utc": "2026-11-22T10:35:20Z",
  "quality": {
-  "ok": true,
-  "why": [],
+  "ok": false,
+  "why": [
+   "day cap 6 reached"
+  ],
   "words": 908,
   "overlap": 0.6,
   "with": "where-most-snow-falls-next-72-hours-11-november-2026",
@@ -858,5 +860,6 @@
   },
   "credit": null,
   "photo": null
- }
+ },
+ "noindex_why": "quality: day cap 6 reached"
 }
