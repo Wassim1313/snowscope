@@ -249,3 +249,25 @@ html[dir="rtl"] .tl-tile b,html[dir="rtl"] .tl-tile small,html[dir="rtl"] .tl-f{
 .staymap iframe{display:block;width:100%;height:460px;border:0;border-radius:12px}
 .staymap figcaption{margin-top:8px;font-size:13px;color:var(--ink3)}
 .featured{margin:6px 0 26px}.featured .cards{margin-top:6px}
+
+/* blog lists 2026-11-23 (owner: "beautiful page, ordered by date"): equal cards, short text, one lead story, clear day rules */
+.cards{grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px}
+.card{transition:transform .15s ease,box-shadow .15s ease;box-shadow:0 1px 2px rgba(11,18,32,.04)}
+.card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(11,18,32,.10)}
+.card img,.card .noimg{display:block;width:100%;height:auto}
+.card .c{display:flex;flex-direction:column;flex:1;padding:14px 16px 16px}
+.card .k{text-transform:uppercase;letter-spacing:.04em;font-size:11.5px;color:var(--accent)}
+.card b{font-size:17.5px;line-height:1.28;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card p{font-size:14.5px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card.hero{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:stretch}
+.card.hero img,.card.hero .noimg{height:100%;object-fit:cover;aspect-ratio:auto;min-height:280px}
+.card.hero .c{justify-content:center;padding:26px 30px}
+.card.hero b{font-size:clamp(22px,2.6vw,30px);line-height:1.2;-webkit-line-clamp:4;margin:8px 0 12px}
+.card.hero p{font-size:16px;-webkit-line-clamp:4}
+.featured .cards{grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+div.day,h2.day{display:flex;align-items:center;gap:12px;margin:34px 0 14px;font-size:14px;color:var(--ink2)}
+div.day::after,h2.day::after{content:"";flex:1;height:1px;background:var(--outline)}
+.featured h2.day{margin-top:18px}
+@media (max-width:720px){.card.hero{grid-template-columns:1fr}.card.hero img,.card.hero .noimg{min-height:0;aspect-ratio:1200/630;height:auto}
+  .card.hero .c{padding:16px 16px 18px}.card.hero b{font-size:22px}.card.hero p{font-size:15px}}
+@media (max-width:560px){.cards{gap:14px}.card p{-webkit-line-clamp:2}}
