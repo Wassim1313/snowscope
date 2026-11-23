@@ -2156,8 +2156,8 @@
 
   // ------------------------------------------------------------------ any point: season vs past winters + next days
   function openPoint(pt, { quiet = false } = {}) {
-    st.point = { lat: +pt.lat.toFixed(4), lon: +pt.lon.toFixed(4), name: pt.name || "" }; st.slug = null; clearPiste();
-    history.replaceState(null, "", BASE + "?p=" + st.point.lat + "," + st.point.lon + (st.day !== DATA.today ? "&d=" + st.day : "") + (st.point.name ? "&n=" + encodeURIComponent(st.point.name) : "") + location.hash.replace(/^#@.*/, ""));
+    st.point = { lat: +pt.lat.toFixed(4), lon: +pt.lon.toFixed(4) }; st.slug = null; clearPiste();
+    history.replaceState(null, "", BASE + "?p=" + st.point.lat + "," + st.point.lon + (st.day !== DATA.today ? "&d=" + st.day : "") + location.hash.replace(/^#@.*/, ""));
     if (map && map.getSource("pt")) map.getSource("pt").setData({ type: "Feature", geometry: { type: "Point", coordinates: [st.point.lon, st.point.lat] } });
     if (innerWidth <= 760 && !quiet) setSheet("half");
     $("pbody").scrollTop = 0;
@@ -2334,12 +2334,12 @@
     const ns = nearestStation(pt.lat, pt.lon, elev);
     showMeasuredLink(pt, ns);
     const head = '<div class="phead"><button class="back" data-back><span class="ms">arrow_back</span>' + esc(r ? r.name : "Back") + "</button>" +
-      '<div class="over">Snow here</div><h1>' + (pt.name ? esc(pt.name) : n ? "Near " + esc(n[0].short) : esc(r ? r.name : "This spot")) + '</h1><p class="lede" id="ptMeta">' +
+      '<div class="over">Snow here</div><h1>' + (n ? "Near " + esc(n[0].short) : esc(r ? r.name : "This spot")) + '</h1><p class="lede" id="ptMeta">' +
       (elev != null ? '<span class="ms">landscape</span>' + U.elev(elev) + " · " : "") + pt.lat.toFixed(3) + ", " + pt.lon.toFixed(3) + "</p></div>";
     // v3 (UX audit P0): one headline card (today's depth, the verdict vs past winters, new snow and the next snow as
     // one line each), the key actions right under it, then collapsible sections; a sticky mini-header keeps the place
     // in view while scrolling
-    const place = pt.name ? esc(pt.name) : n ? "Near " + esc(n[0].short) : esc(r ? r.name : "This spot");
+    const place = n ? "Near " + esc(n[0].short) : esc(r ? r.name : "This spot");
     box.innerHTML = '<div class="minihead" id="ptMini" aria-hidden="true"><b>' + place + "</b><span>" + (elev != null ? U.elev(elev) + " · " : "") +
       (today.dep == null ? "–" : U.depth(today.dep >= 1 ? today.dep : 0)) + "</span></div>" + head +
       '<div class="card pthero"><div class="over">' + esc(I18N.t("Snow today")) + '</div><div class="pthn"><b class="n">' + (today.dep == null ? "–" : today.dep >= 1 ? cmS(today.dep) : cmS(0)) + "</b>" +
@@ -3451,9 +3451,7 @@
   st.region = homeRegion();
   st.ski.region = st.region;
   initialSlug = document.body.dataset.slug || null;
-  window.SSApp = { open: (slug) => openResort(slug),
-    // header search, a town (snow/places.json): fly there and open the point forecast under the town's name
-    point: (lat, lon, name) => { if (map) map.flyTo({ center: [lon, lat], zoom: 10 }); openPoint({ lat, lon, name }); } };
+  window.SSApp = { open: (slug) => openResort(slug) };
   // bridge for the expert chrome (expert.js: layer rail, timeline scrub, hour steps, meteogram, keyboard, theme)
   window.SSApp.x = { st, data: () => DATA, map: () => map, setMain, setDay, toggleOver, overOn, layersSheet, play, isPlaying: () => !!playT, scrub, settle, radarFrame,
     isStatic, dayLocked, proLive, addDays, wd, dnum, longDay, D, fmt, toast, codeAt, regionAt, decDepth, renderMain, drawLegend, openPoint, closePoint, openPiste, pointBlend,
@@ -3510,7 +3508,7 @@
   map.on("load", () => {
     const r = initialSlug && BY[initialSlug];
     const pq = /^(-?[\d.]+),(-?[\d.]+)$/.exec(new URLSearchParams(location.search).get("p") || "");
-    if (pq) { map.jumpTo({ center: [+pq[2], +pq[1]], zoom: 9 }); openPoint({ lat: +pq[1], lon: +pq[2], name: (new URLSearchParams(location.search).get("n") || "").slice(0, 80) }, { quiet: true }); }
+    if (pq) { map.jumpTo({ center: [+pq[2], +pq[1]], zoom: 9 }); openPoint({ lat: +pq[1], lon: +pq[2] }, { quiet: true }); }
     const rq = new URLSearchParams(location.search).get("r");
     const rll = rq && /^(-?[\d.]+),(-?[\d.]+)$/.exec(rq);
     if (rq && BY[rq] && !r) openResort(rq, { push: false });

@@ -800,60 +800,34 @@
     });
     return RES;
   }
-  // mountain towns worldwide (tools/build_places.py, GeoNames CC BY 4.0): [name, alt ('|'), cc, admin1, lat, lon, ele, pop]
-  let PLC = null;
-  function places() {
-    if (!PLC) PLC = getJSON(ROOT + "snow/places.json?v=1").then((j) => j.rows).catch(() => []);
-    return PLC;
-  }
-  const CN = (() => { try { const d = new Intl.DisplayNames([(window.I18N && I18N.lang) || "en"], { type: "region" }); return (c) => { try { return d.of(c); } catch { return c; } }; } catch { return (c) => c; } })();
   function setupFind() {
     const box = document.querySelector(".find");
     if (!box) return;
     const inp = box.querySelector("input"), ul = box.querySelector("ul");
-    const norm = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    const norm = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
     let sel = -1, items = [];
-    const href = (it) => it.slug ? ROOT + "resorts/" + encodeURIComponent(it.slug) + ".html"
-      : ROOT + "?p=" + it.lat + "," + it.lon + "&n=" + encodeURIComponent(it.name);
     const draw = () => {
       ul.hidden = !items.length;
-      ul.innerHTML = items.map((r, i) => '<li><a class="' + (i === sel ? "on" : "") + '" href="' + href(r) + '" data-i="' + i + '"><span>' +
-        (r.slug ? "" : '<span class="ms" aria-hidden="true" style="font-size:16px;vertical-align:-3px;margin-right:4px">location_on</span>') +
-        esc(r.short || r.name) + "</span><small>" + esc(r.slug ? r.country : r.sub) + "</small></a></li>").join("");
+      ul.innerHTML = items.map((r, i) => '<li><a class="' + (i === sel ? "on" : "") + '" href="' + ROOT + "resorts/" + encodeURIComponent(r.slug) + '.html"><span>' +
+        esc(r.short || r.name) + "</span><small>" + esc(r.country) + "</small></a></li>").join("");
     };
-    const go = (it) => {
+    const go = (slug) => {
       items = []; draw(); inp.blur(); box.classList.remove("show");
-      if (it.slug) { if (window.SSApp) window.SSApp.open(it.slug); else location.href = href(it); }
-      else if (window.SSApp && window.SSApp.point) window.SSApp.point(it.lat, it.lon, it.name);
-      else location.href = href(it);
+      if (window.SSApp) window.SSApp.open(slug); else location.href = ROOT + "resorts/" + encodeURIComponent(slug) + ".html";
     };
-    ul.addEventListener("mousedown", (e) => { const a = e.target.closest("a"); if (a) { e.preventDefault(); go(items[+a.dataset.i]); } });
-    inp.addEventListener("focus", () => { resorts(); places(); });
-    // rank: -1 exact name, 0 the name starts with the query, 1 a word of it does, 2 it is inside, 3 another spelling matches
-    const rank = (nm, alt, q) => { const n = norm(nm); if (n === q) return -1; if (n.startsWith(q)) return 0; if ((" " + n.replace(/[-'’(),]/g, " ")).includes(" " + q)) return 1;
-      if (n.includes(q)) return 2; return alt && norm(alt).split("|").some((a) => a.startsWith(q) || a.includes(" " + q)) ? 3 : 9; };
+    ul.addEventListener("mousedown", (e) => { const a = e.target.closest("a"); if (a && window.SSApp) { e.preventDefault(); go(decodeURIComponent(a.pathname.split("/").pop().replace(/\.html$/, ""))); } });
+    inp.addEventListener("focus", () => resorts());
     inp.addEventListener("input", async () => {
-      const raw = inp.value.trim(), q = norm(raw);
+      const q = norm(inp.value.trim());
       if (q.length < 2) { items = []; draw(); return; }
-      const [{ rows }, pl] = await Promise.all([resorts(), places()]);
-      if (norm(inp.value.trim()) !== q) return;              // typed on meanwhile
-      const rs = rows.map((r) => [r, rank(r.name, "", q)]).filter((x) => x[1] < 9)
-        .sort((a, b) => a[1] - b[1] || (b[0].km || 0) - (a[0].km || 0)).slice(0, 5).map((x) => x[0]);
-      const ps = [];
-      for (const p of pl) { const k = rank(p[0], p[1], q); if (k < 9) ps.push([p, k]); }
-      ps.sort((a, b) => a[1] - b[1] || b[0][7] - a[0][7]);    // rows are already by population
-      const seen = new Set(rs.map((r) => norm(r.short || r.name)));
-      const pi = ps.filter((x) => !seen.has(norm(x[0][0]))).slice(0, 8 - Math.min(rs.length, 4)).map(([p]) => ({
-        name: p[0], lat: p[4], lon: p[5], sub: [p[3], CN(p[2])].filter(Boolean).join(", ") + (p[6] ? " · " + (window.U && U.elev ? U.elev(p[6]) : p[6] + " m") : "") }));
-      // a town that ranks better than the resorts comes first (typing "Cusco" or "Kathmandu")
-      const best = pi.length && ps[0][1] < (rs.length ? rank(rs[0].name, "", q) : 9);
-      items = best ? [...pi.slice(0, 4), ...rs.slice(0, 4), ...pi.slice(4)].slice(0, 8) : [...rs.slice(0, 4), ...pi].slice(0, 8);
+      const { rows } = await resorts();
+      items = rows.filter((r) => norm(r.name).includes(q)).sort((a, b) => (norm(a.name).startsWith(q) ? 0 : 1) - (norm(b.name).startsWith(q) ? 0 : 1) || (b.km || 0) - (a.km || 0)).slice(0, 8);
       sel = -1; draw();
     });
     inp.addEventListener("keydown", (e) => {
       if (e.key === "ArrowDown") { sel = Math.min(items.length - 1, sel + 1); draw(); e.preventDefault(); }
       else if (e.key === "ArrowUp") { sel = Math.max(0, sel - 1); draw(); e.preventDefault(); }
-      else if (e.key === "Enter" && items.length) { go(items[Math.max(0, sel)]); }
+      else if (e.key === "Enter" && items.length) { go(items[Math.max(0, sel)].slug); }
       else if (e.key === "Escape") { items = []; draw(); box.classList.remove("show"); }
     });
     inp.addEventListener("blur", () => setTimeout(() => { items = []; draw(); box.classList.remove("show"); }, 200));
