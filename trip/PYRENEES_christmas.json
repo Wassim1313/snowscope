@@ -18,7 +18,7 @@
   "MONEY",
   "SNOW"
  ],
- "snow_day0": "2026-11-22",
+ "snow_day0": "2026-11-23",
  "snow_stale": false,
  "projection": true,
  "travel": null,
@@ -68,22 +68,22 @@
      "cm": 25,
      "p20": 20,
      "p50": 25,
-     "p80": 45,
-     "p_ge50": 0.17,
+     "p80": 40,
+     "p_ge50": 0.14,
      "basis": "ensemble+climatology",
      "normal_cm": 30,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 37,
-       "p50_cm": 35
+       "horizon_days": 13,
+       "snowfall_p50_cm": 28,
+       "p50_cm": 30
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 26,
-       "p50_cm": 25
+       "snowfall_p50_cm": 23,
+       "p50_cm": 20
       }
      },
      "winters": 46
@@ -166,22 +166,22 @@
      "cm": 25,
      "p20": 20,
      "p50": 25,
-     "p80": 40,
-     "p_ge50": 0.1,
+     "p80": 35,
+     "p_ge50": 0.09,
      "basis": "ensemble+climatology",
      "normal_cm": 20,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 17,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 14,
        "p50_cm": 30
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 12,
-       "p50_cm": 25
+       "snowfall_p50_cm": 10,
+       "p50_cm": 20
       }
      },
      "winters": 46
@@ -219,6 +219,106 @@
     "SNOW": 100
    },
    "rank": 2
+  },
+  {
+   "slug": "ax_3_domaines",
+   "label": "Ax 3 Domaines",
+   "country": "FR",
+   "area": "Ariege",
+   "lat": 42.67662,
+   "lon": 1.80243,
+   "top_m": 2345,
+   "base_m": 1376,
+   "km": 51.0,
+   "lifts": 24,
+   "opens": "2026-12-05",
+   "pass_day_eur": 50.0,
+   "pass_day_walkup": 50.0,
+   "pass_day_multi_eur": 42.5,
+   "pass_multi": {
+    "days": 6,
+    "price": 255.0,
+    "ccy": "EUR",
+    "per_day": 42.5,
+    "estimated": true,
+    "note": "estimate: 0.85 x day pass x 6; ax.ski unreachable (network block), only unverifiable aggregator figure (185 EUR, labelled indicative) found",
+    "src": "https://www.ax.ski/fr/forfait-journee-ax"
+   },
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 50.0,
+    "regular": 47.5
+   },
+   "pass_period": "holiday",
+   "pass_note": "47.50 EUR is the current published public day rate (site notes this may be a reduced rate during partial opening); modest holiday uplift estimated, no official split found",
+   "pass_src": "https://www.ax.ski/fr/forfait-journee-ax",
+   "night_eur": 48.0,
+   "food_day_eur": 32.0,
+   "stay_src": "estimate: Ax-les-Thermes is a budget Pyrenees spa town, among the cheapest lodging/dining options in the French Pyrenees",
+   "estimates": [
+    "night_eur",
+    "food_day_eur",
+    "pass_multi"
+   ],
+   "snow": {
+    "now_cm": 10,
+    "start": {
+     "cm": 20,
+     "p20": 15,
+     "p50": 20,
+     "p80": 30,
+     "p_ge50": 0.01,
+     "basis": "ensemble+climatology",
+     "normal_cm": 25,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 12,
+       "p50_cm": 20
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 21,
+       "p50_cm": 15
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 255,
+    "hotel_eur": 336,
+    "food_eur": 224,
+    "total_eur": 815,
+    "pass_basis": "advance 6-day pass (estimate)",
+    "pass_walkup": 300,
+    "party_total_eur": 815,
+    "left_eur": 185,
+    "need_eur": 0,
+    "fits": true
+   },
+   "tiers": {
+    "pass": "LOW",
+    "hotel": "LOW",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.47,
+   "pros": [
+    "6-day pass 255 EUR",
+    "cheap places to stay"
+   ],
+   "cons": [
+    "~20 cm at the start"
+   ],
+   "score": 83.3,
+   "score_parts": {
+    "MONEY": 100,
+    "SNOW": 67
+   },
+   "rank": 3
   },
   {
    "slug": "formigal",
@@ -262,25 +362,25 @@
    "snow": {
     "now_cm": 10,
     "start": {
-     "cm": 25,
+     "cm": 20,
      "p20": 15,
-     "p50": 25,
-     "p80": 40,
+     "p50": 20,
+     "p80": 35,
      "p_ge50": 0.14,
      "basis": "ensemble+climatology",
      "normal_cm": 35,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 33,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 31,
        "p50_cm": 25
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 36,
-       "p50_cm": 25
+       "snowfall_p50_cm": 29,
+       "p50_cm": 20
       }
      },
      "winters": 46
@@ -304,118 +404,18 @@
     "pistes": "MID",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.48,
+   "value_cm_per_eur": 0.39,
    "pros": [
     "solid all-rounder"
    ],
    "cons": [
     "1,080 EUR per person",
-    "~25 cm at the start"
+    "~20 cm at the start"
    ],
-   "score": 77.8,
+   "score": 61.1,
    "score_parts": {
     "MONEY": 56,
-    "SNOW": 100
-   },
-   "rank": 3
-  },
-  {
-   "slug": "ax_3_domaines",
-   "label": "Ax 3 Domaines",
-   "country": "FR",
-   "area": "Ariege",
-   "lat": 42.67662,
-   "lon": 1.80243,
-   "top_m": 2345,
-   "base_m": 1376,
-   "km": 51.0,
-   "lifts": 24,
-   "opens": "2026-12-05",
-   "pass_day_eur": 50.0,
-   "pass_day_walkup": 50.0,
-   "pass_day_multi_eur": 42.5,
-   "pass_multi": {
-    "days": 6,
-    "price": 255.0,
-    "ccy": "EUR",
-    "per_day": 42.5,
-    "estimated": true,
-    "note": "estimate: 0.85 x day pass x 6; ax.ski unreachable (network block), only unverifiable aggregator figure (185 EUR, labelled indicative) found",
-    "src": "https://www.ax.ski/fr/forfait-journee-ax"
-   },
-   "pass_day_local": {
-    "ccy": "EUR",
-    "holiday": 50.0,
-    "regular": 47.5
-   },
-   "pass_period": "holiday",
-   "pass_note": "47.50 EUR is the current published public day rate (site notes this may be a reduced rate during partial opening); modest holiday uplift estimated, no official split found",
-   "pass_src": "https://www.ax.ski/fr/forfait-journee-ax",
-   "night_eur": 48.0,
-   "food_day_eur": 32.0,
-   "stay_src": "estimate: Ax-les-Thermes is a budget Pyrenees spa town, among the cheapest lodging/dining options in the French Pyrenees",
-   "estimates": [
-    "night_eur",
-    "food_day_eur",
-    "pass_multi"
-   ],
-   "snow": {
-    "now_cm": 5,
-    "start": {
-     "cm": 15,
-     "p20": 10,
-     "p50": 15,
-     "p80": 25,
-     "p_ge50": 0.01,
-     "basis": "ensemble+climatology",
-     "normal_cm": 25,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 13,
-       "p50_cm": 15
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 25,
-       "p50_cm": 15
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 255,
-    "hotel_eur": 336,
-    "food_eur": 224,
-    "total_eur": 815,
-    "pass_basis": "advance 6-day pass (estimate)",
-    "pass_walkup": 300,
-    "party_total_eur": 815,
-    "left_eur": 185,
-    "need_eur": 0,
-    "fits": true
-   },
-   "tiers": {
-    "pass": "LOW",
-    "hotel": "LOW",
-    "pistes": "MID",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.35,
-   "pros": [
-    "6-day pass 255 EUR",
-    "cheap places to stay"
-   ],
-   "cons": [
-    "~15 cm at the start"
-   ],
-   "score": 66.7,
-   "score_parts": {
-    "MONEY": 100,
-    "SNOW": 33
+    "SNOW": 67
    },
    "rank": 4
   },
@@ -471,14 +471,14 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 27,
-       "p50_cm": 30
+       "horizon_days": 13,
+       "snowfall_p50_cm": 22,
+       "p50_cm": 25
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 12,
+       "snowfall_p50_cm": 10,
        "p50_cm": 15
       }
      },
@@ -516,6 +516,106 @@
     "SNOW": 33
    },
    "rank": 5
+  },
+  {
+   "slug": "baqueira",
+   "label": "Baqueira Beret",
+   "country": "ES",
+   "area": "Val d'Aran",
+   "lat": 42.70488,
+   "lon": 0.96644,
+   "top_m": 2600,
+   "base_m": 1504,
+   "km": 154.0,
+   "lifts": 36,
+   "opens": "2026-11-28",
+   "pass_day_eur": 70.0,
+   "pass_day_walkup": 70.0,
+   "pass_day_multi_eur": 59.1,
+   "pass_multi": {
+    "days": 5,
+    "price": 295.5,
+    "ccy": "EUR",
+    "per_day": 59.1,
+    "estimated": false,
+    "note": "closest product is 5-day BaqueiraPASS (no 6-day sold); 7-day BaqueiraPASS is 367.50 EUR",
+    "src": "https://baqueira.net/blog/baqueira-lift-pass"
+   },
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 70.0,
+    "regular": 70.0
+   },
+   "pass_period": "mixed",
+   "pass_note": "flat daily rate all season on the BaqueiraPASS online card (no demand pricing); ticket-window walk-up price is 74 EUR",
+   "pass_src": "https://baqueira.net/blog/baqueira-lift-pass",
+   "night_eur": 100.0,
+   "food_day_eur": 50.0,
+   "stay_src": "estimate: 3-4 star doubles ~170-280 EUR/night over Christmas on booking sites (Eurostars La Pleta ~138 EUR pp, AC Baqueira ~170 EUR pp); slope lunch + dinner ~45-55 EUR pp",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 10,
+    "start": {
+     "cm": 25,
+     "p20": 15,
+     "p50": 25,
+     "p80": 35,
+     "p_ge50": 0.09,
+     "basis": "ensemble+climatology",
+     "normal_cm": 30,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 22,
+       "p50_cm": 30
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 23,
+       "p50_cm": 20
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 355,
+    "hotel_eur": 700,
+    "food_eur": 350,
+    "total_eur": 1405,
+    "pass_basis": "advance 5-day pass",
+    "pass_walkup": 420,
+    "party_total_eur": 1405,
+    "left_eur": -405,
+    "need_eur": 405,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "MID",
+    "pistes": "HIGH",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.42,
+   "pros": [
+    "154 km of pistes",
+    "36 lifts"
+   ],
+   "cons": [
+    "1,405 EUR per person",
+    "~25 cm at the start"
+   ],
+   "score": 50.5,
+   "score_parts": {
+    "MONEY": 1,
+    "SNOW": 100
+   },
+   "rank": 6
   },
   {
    "slug": "font_romeu_pyrenees_2000_font_romeu",
@@ -560,23 +660,23 @@
     "now_cm": 0,
     "start": {
      "cm": 10,
-     "p20": 5,
+     "p20": 0,
      "p50": 10,
-     "p80": 20,
+     "p80": 15,
      "p_ge50": 0.0,
      "basis": "ensemble+climatology",
      "normal_cm": 20,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 6,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 5,
        "p50_cm": 5
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 25,
+       "snowfall_p50_cm": 20,
        "p50_cm": 10
       }
      },
@@ -615,7 +715,7 @@
     "MONEY": 100,
     "SNOW": 0
    },
-   "rank": 6
+   "rank": 7
   },
   {
    "slug": "aramon_cerler",
@@ -660,23 +760,23 @@
     "now_cm": 10,
     "start": {
      "cm": 15,
-     "p20": 15,
+     "p20": 10,
      "p50": 15,
      "p80": 25,
-     "p_ge50": 0.07,
+     "p_ge50": 0.06,
      "basis": "ensemble+climatology",
      "normal_cm": 25,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
+       "horizon_days": 13,
        "snowfall_p50_cm": 6,
        "p50_cm": 20
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 9,
+       "snowfall_p50_cm": 12,
        "p50_cm": 15
       }
      },
@@ -714,7 +814,7 @@
     "MONEY": 62,
     "SNOW": 33
    },
-   "rank": 7
+   "rank": 8
   },
   {
    "slug": "pal_arinsal",
@@ -762,20 +862,20 @@
      "p20": 10,
      "p50": 15,
      "p80": 30,
-     "p_ge50": 0.02,
+     "p_ge50": 0.03,
      "basis": "ensemble+climatology",
      "normal_cm": 35,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
+       "horizon_days": 13,
        "snowfall_p50_cm": 10,
-       "p50_cm": 15
+       "p50_cm": 20
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 27,
+       "snowfall_p50_cm": 25,
        "p50_cm": 15
       }
      },
@@ -813,106 +913,6 @@
    "score_parts": {
     "MONEY": 51,
     "SNOW": 33
-   },
-   "rank": 8
-  },
-  {
-   "slug": "baqueira",
-   "label": "Baqueira Beret",
-   "country": "ES",
-   "area": "Val d'Aran",
-   "lat": 42.70488,
-   "lon": 0.96644,
-   "top_m": 2600,
-   "base_m": 1504,
-   "km": 154.0,
-   "lifts": 36,
-   "opens": "2026-11-28",
-   "pass_day_eur": 70.0,
-   "pass_day_walkup": 70.0,
-   "pass_day_multi_eur": 59.1,
-   "pass_multi": {
-    "days": 5,
-    "price": 295.5,
-    "ccy": "EUR",
-    "per_day": 59.1,
-    "estimated": false,
-    "note": "closest product is 5-day BaqueiraPASS (no 6-day sold); 7-day BaqueiraPASS is 367.50 EUR",
-    "src": "https://baqueira.net/blog/baqueira-lift-pass"
-   },
-   "pass_day_local": {
-    "ccy": "EUR",
-    "holiday": 70.0,
-    "regular": 70.0
-   },
-   "pass_period": "mixed",
-   "pass_note": "flat daily rate all season on the BaqueiraPASS online card (no demand pricing); ticket-window walk-up price is 74 EUR",
-   "pass_src": "https://baqueira.net/blog/baqueira-lift-pass",
-   "night_eur": 100.0,
-   "food_day_eur": 50.0,
-   "stay_src": "estimate: 3-4 star doubles ~170-280 EUR/night over Christmas on booking sites (Eurostars La Pleta ~138 EUR pp, AC Baqueira ~170 EUR pp); slope lunch + dinner ~45-55 EUR pp",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 10,
-    "start": {
-     "cm": 20,
-     "p20": 15,
-     "p50": 20,
-     "p80": 35,
-     "p_ge50": 0.09,
-     "basis": "ensemble+climatology",
-     "normal_cm": 30,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 30,
-       "p50_cm": 30
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 23,
-       "p50_cm": 20
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 355,
-    "hotel_eur": 700,
-    "food_eur": 350,
-    "total_eur": 1405,
-    "pass_basis": "advance 5-day pass",
-    "pass_walkup": 420,
-    "party_total_eur": 1405,
-    "left_eur": -405,
-    "need_eur": 405,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "MID",
-    "hotel": "MID",
-    "pistes": "HIGH",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.34,
-   "pros": [
-    "154 km of pistes",
-    "36 lifts"
-   ],
-   "cons": [
-    "1,405 EUR per person",
-    "~20 cm at the start"
-   ],
-   "score": 33.8,
-   "score_parts": {
-    "MONEY": 1,
-    "SNOW": 67
    },
    "rank": 9
   },
@@ -956,27 +956,27 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 5,
+    "now_cm": 0,
     "start": {
-     "cm": 15,
+     "cm": 10,
      "p20": 10,
-     "p50": 15,
+     "p50": 10,
      "p80": 30,
-     "p_ge50": 0.03,
+     "p_ge50": 0.02,
      "basis": "ensemble+climatology",
      "normal_cm": 45,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 13,
-       "p50_cm": 20
+       "horizon_days": 13,
+       "snowfall_p50_cm": 11,
+       "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 27,
-       "p50_cm": 15
+       "snowfall_p50_cm": 25,
+       "p50_cm": 10
       }
      },
      "winters": 46
@@ -1000,20 +1000,20 @@
     "pistes": "HIGH",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.23,
+   "value_cm_per_eur": 0.15,
    "pros": [
     "136 km of pistes",
     "53 lifts"
    ],
    "cons": [
     "1,411 EUR per person",
-    "~15 cm at the start",
+    "~10 cm at the start",
     "6-day pass 396 EUR"
    ],
-   "score": 16.7,
+   "score": 0.0,
    "score_parts": {
     "MONEY": 0,
-    "SNOW": 33
+    "SNOW": 0
    },
    "rank": 10
   }

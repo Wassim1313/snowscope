@@ -18,7 +18,7 @@
   "MONEY",
   "SNOW"
  ],
- "snow_day0": "2026-11-22",
+ "snow_day0": "2026-11-23",
  "snow_stale": false,
  "projection": true,
  "travel": null,
@@ -63,10 +63,10 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 115,
+    "now_cm": 110,
     "start": {
      "cm": 135,
-     "p20": 125,
+     "p20": 120,
      "p50": 135,
      "p80": 160,
      "p_ge50": 1.0,
@@ -76,14 +76,14 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 30,
-       "p50_cm": 145
+       "snowfall_p50_cm": 23,
+       "p50_cm": 140
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 55,
-       "p50_cm": 135
+       "snowfall_p50_cm": 60,
+       "p50_cm": 130
       }
      },
      "winters": 46
@@ -165,10 +165,10 @@
    "snow": {
     "now_cm": 90,
     "start": {
-     "cm": 115,
-     "p20": 105,
-     "p50": 115,
-     "p80": 140,
+     "cm": 110,
+     "p20": 100,
+     "p50": 110,
+     "p80": 135,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 135,
@@ -176,14 +176,14 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 17,
-       "p50_cm": 130
+       "snowfall_p50_cm": 19,
+       "p50_cm": 125
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 46,
-       "p50_cm": 110
+       "snowfall_p50_cm": 48,
+       "p50_cm": 105
       }
      },
      "winters": 46
@@ -207,7 +207,7 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.96,
+   "value_cm_per_eur": 0.91,
    "pros": [
     "97 km of pistes",
     "skiing up to 3340 m"
@@ -217,10 +217,10 @@
     "nights from 127 EUR per person",
     "4-day pass 529 USD"
    ],
-   "score": 86.9,
+   "score": 84.5,
    "score_parts": {
     "MONEY": 93,
-    "SNOW": 81
+    "SNOW": 76
    },
    "rank": 2
   },
@@ -264,27 +264,27 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 55,
+    "now_cm": 50,
     "start": {
      "cm": 80,
      "p20": 65,
      "p50": 80,
-     "p80": 105,
-     "p_ge50": 0.91,
+     "p80": 100,
+     "p_ge50": 0.9,
      "basis": "ensemble+climatology",
      "normal_cm": 90,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 27,
-       "p50_cm": 80
+       "snowfall_p50_cm": 24,
+       "p50_cm": 75
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 48,
-       "p50_cm": 75
+       "snowfall_p50_cm": 74,
+       "p50_cm": 80
       }
      },
      "winters": 46
@@ -324,108 +324,6 @@
     "SNOW": 48
    },
    "rank": 3
-  },
-  {
-   "slug": "park_city",
-   "label": "Park City",
-   "country": "US",
-   "area": "Utah",
-   "lat": 40.6569,
-   "lon": -111.53786,
-   "top_m": 3041,
-   "base_m": 2101,
-   "km": 256.0,
-   "lifts": 43,
-   "opens": "2026-11-20",
-   "pass_day_eur": 262.97,
-   "pass_day_walkup": 262.97,
-   "pass_day_multi_eur": 91.12,
-   "pass_multi": {
-    "days": 7,
-    "price": 701.0,
-    "ccy": "USD",
-    "per_day": 100.14,
-    "estimated": false,
-    "note": "Epic Day Pass 7-Day unrestricted tier (no blackout dates, holiday-valid), 2026-27 adult, advance online",
-    "src": "https://www.onthesnow.com/news/epic-pass-buyers-guide/"
-   },
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 289.0,
-    "regular": 215.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult 1-day online advance purchase, dynamic pricing; December online range reported as $202-249 with a top peak-day ceiling of $369 (walk-up/peak online days per 2026-27 reporting) - $289 used as a representative holiday-window figure between those; Epic Pass ecosystem",
-   "pass_src": "https://townlift.com/2026/09/park-city-deer-valley-among-the-countrys-priciest-ski-days-as-2026-27-tickets-climb-again/",
-   "night_eur": 145.59,
-   "food_day_eur": 72.79,
-   "stay_src": "estimate: Park City lodging is comparable to Vail/Colorado high-tier resorts for holiday-week doubles/condos near Park City Mountain or Main Street; on-mountain lunch ~$25-35",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 60,
-    "start": {
-     "cm": 80,
-     "p20": 70,
-     "p50": 80,
-     "p80": 95,
-     "p_ge50": 1.0,
-     "basis": "ensemble+climatology",
-     "normal_cm": 85,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 17,
-       "p50_cm": 90
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 32,
-       "snowfall_p50_cm": 46,
-       "p50_cm": 75
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 547,
-    "hotel_eur": 1019,
-    "food_eur": 510,
-    "total_eur": 2076,
-    "pass_basis": "advance 7-day pass",
-    "pass_walkup": 1578,
-    "party_total_eur": 2076,
-    "left_eur": -1076,
-    "need_eur": 1076,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "HIGH",
-    "pistes": "HIGH",
-    "snow": "MID"
-   },
-   "value_cm_per_eur": 0.88,
-   "pros": [
-    "256 km of pistes",
-    "skiing up to 3041 m",
-    "43 lifts"
-   ],
-   "cons": [
-    "2,076 EUR per person",
-    "nights from 146 EUR per person",
-    "~80 cm at the start"
-   ],
-   "score": 69.8,
-   "score_parts": {
-    "MONEY": 92,
-    "SNOW": 48
-   },
-   "rank": 4
   },
   {
    "slug": "big_sky",
@@ -486,7 +384,7 @@
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 8,
+       "snowfall_p50_cm": 9,
        "p50_cm": 80
       }
      },
@@ -526,6 +424,108 @@
    "score_parts": {
     "MONEY": 88,
     "SNOW": 48
+   },
+   "rank": 4
+  },
+  {
+   "slug": "park_city",
+   "label": "Park City",
+   "country": "US",
+   "area": "Utah",
+   "lat": 40.6569,
+   "lon": -111.53786,
+   "top_m": 3041,
+   "base_m": 2101,
+   "km": 256.0,
+   "lifts": 43,
+   "opens": "2026-11-20",
+   "pass_day_eur": 262.97,
+   "pass_day_walkup": 262.97,
+   "pass_day_multi_eur": 91.12,
+   "pass_multi": {
+    "days": 7,
+    "price": 701.0,
+    "ccy": "USD",
+    "per_day": 100.14,
+    "estimated": false,
+    "note": "Epic Day Pass 7-Day unrestricted tier (no blackout dates, holiday-valid), 2026-27 adult, advance online",
+    "src": "https://www.onthesnow.com/news/epic-pass-buyers-guide/"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 289.0,
+    "regular": 215.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day online advance purchase, dynamic pricing; December online range reported as $202-249 with a top peak-day ceiling of $369 (walk-up/peak online days per 2026-27 reporting) - $289 used as a representative holiday-window figure between those; Epic Pass ecosystem",
+   "pass_src": "https://townlift.com/2026/09/park-city-deer-valley-among-the-countrys-priciest-ski-days-as-2026-27-tickets-climb-again/",
+   "night_eur": 145.59,
+   "food_day_eur": 72.79,
+   "stay_src": "estimate: Park City lodging is comparable to Vail/Colorado high-tier resorts for holiday-week doubles/condos near Park City Mountain or Main Street; on-mountain lunch ~$25-35",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 55,
+    "start": {
+     "cm": 75,
+     "p20": 65,
+     "p50": 75,
+     "p80": 95,
+     "p_ge50": 1.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 85,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 19,
+       "p50_cm": 85
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 32,
+       "snowfall_p50_cm": 48,
+       "p50_cm": 75
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 547,
+    "hotel_eur": 1019,
+    "food_eur": 510,
+    "total_eur": 2076,
+    "pass_basis": "advance 7-day pass",
+    "pass_walkup": 1578,
+    "party_total_eur": 2076,
+    "left_eur": -1076,
+    "need_eur": 1076,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "HIGH",
+    "pistes": "HIGH",
+    "snow": "MID"
+   },
+   "value_cm_per_eur": 0.82,
+   "pros": [
+    "256 km of pistes",
+    "skiing up to 3041 m",
+    "43 lifts"
+   ],
+   "cons": [
+    "2,076 EUR per person",
+    "nights from 146 EUR per person",
+    "~75 cm at the start"
+   ],
+   "score": 67.4,
+   "score_parts": {
+    "MONEY": 92,
+    "SNOW": 43
    },
    "rank": 5
   },
@@ -575,14 +575,14 @@
      "p20": 40,
      "p50": 45,
      "p80": 65,
-     "p_ge50": 0.37,
+     "p_ge50": 0.39,
      "basis": "ensemble+climatology",
      "normal_cm": 80,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 18,
+       "snowfall_p50_cm": 20,
        "p50_cm": 60
       },
       "GFS": {
@@ -632,108 +632,6 @@
    "rank": 6
   },
   {
-   "slug": "vail",
-   "label": "Vail",
-   "country": "US",
-   "area": "Colorado",
-   "lat": 39.62379,
-   "lon": -106.36546,
-   "top_m": 3526,
-   "base_m": 2452,
-   "km": 215.0,
-   "lifts": 32,
-   "opens": "2026-11-13",
-   "pass_day_eur": 235.67,
-   "pass_day_walkup": 235.67,
-   "pass_day_multi_eur": 91.12,
-   "pass_multi": {
-    "days": 7,
-    "price": 701.0,
-    "ccy": "USD",
-    "per_day": 100.14,
-    "estimated": false,
-    "note": "Epic Day Pass 7-Day unrestricted tier (no blackout dates, holiday-valid), 2026-27 adult, advance online",
-    "src": "https://www.onthesnow.com/news/epic-pass-buyers-guide/"
-   },
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 259.0,
-    "regular": 202.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult 1-day online advance purchase, dynamic pricing; official vail.com ticket page uses a JS calendar with no static price, so figures are from aggregator reporting of Vail Resorts 2026-27 pricing ($202-259 advance online range, up to $374 at walk-up window on peak days); Epic Pass ecosystem",
-   "pass_src": "https://snowstash.com/usa/colorado/vail/lift-tickets",
-   "night_eur": 145.59,
-   "food_day_eur": 72.79,
-   "stay_src": "estimate: based on booking.com/orbitz Vail hotel listings for Dec 13-20 2026 (Highline DoubleTree ~$176/room, Lodge at Vail ~$228/room, Arrabelle ~$397/room night; per-person-sharing taken as a fraction of mid-tier room) + typical $25-40 on-mountain lunch in Vail Village/Lionshead",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 35,
-    "start": {
-     "cm": 45,
-     "p20": 40,
-     "p50": 45,
-     "p80": 65,
-     "p_ge50": 0.36,
-     "basis": "ensemble+climatology",
-     "normal_cm": 85,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 18,
-       "p50_cm": 60
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 32,
-       "snowfall_p50_cm": 26,
-       "p50_cm": 45
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 547,
-    "hotel_eur": 1019,
-    "food_eur": 510,
-    "total_eur": 2076,
-    "pass_basis": "advance 7-day pass",
-    "pass_walkup": 1414,
-    "party_total_eur": 2076,
-    "left_eur": -1076,
-    "need_eur": 1076,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "HIGH",
-    "pistes": "HIGH",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.49,
-   "pros": [
-    "215 km of pistes",
-    "skiing up to 3526 m",
-    "32 lifts"
-   ],
-   "cons": [
-    "2,076 EUR per person",
-    "nights from 146 EUR per person",
-    "~45 cm at the start"
-   ],
-   "score": 53.1,
-   "score_parts": {
-    "MONEY": 92,
-    "SNOW": 14
-   },
-   "rank": 7
-  },
-  {
    "slug": "jackson_hole",
    "label": "Jackson Hole",
    "country": "US",
@@ -775,25 +673,25 @@
    "snow": {
     "now_cm": 50,
     "start": {
-     "cm": 75,
+     "cm": 80,
      "p20": 65,
-     "p50": 75,
+     "p50": 80,
      "p80": 95,
-     "p_ge50": 0.94,
+     "p_ge50": 0.95,
      "basis": "ensemble+climatology",
      "normal_cm": 125,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 19,
+       "snowfall_p50_cm": 20,
        "p50_cm": 90
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 50,
-       "p50_cm": 70
+       "snowfall_p50_cm": 61,
+       "p50_cm": 75
       }
      },
      "winters": 46
@@ -817,7 +715,7 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.62,
+   "value_cm_per_eur": 0.66,
    "pros": [
     "78 km of pistes",
     "skiing up to 3169 m"
@@ -825,12 +723,114 @@
    "cons": [
     "2,696 EUR per person",
     "nights from 200 EUR per person",
-    "~75 cm at the start"
+    "~80 cm at the start"
    ],
-   "score": 51.8,
+   "score": 54.2,
    "score_parts": {
     "MONEY": 61,
-    "SNOW": 43
+    "SNOW": 48
+   },
+   "rank": 7
+  },
+  {
+   "slug": "vail",
+   "label": "Vail",
+   "country": "US",
+   "area": "Colorado",
+   "lat": 39.62379,
+   "lon": -106.36546,
+   "top_m": 3526,
+   "base_m": 2452,
+   "km": 215.0,
+   "lifts": 32,
+   "opens": "2026-11-13",
+   "pass_day_eur": 235.67,
+   "pass_day_walkup": 235.67,
+   "pass_day_multi_eur": 91.12,
+   "pass_multi": {
+    "days": 7,
+    "price": 701.0,
+    "ccy": "USD",
+    "per_day": 100.14,
+    "estimated": false,
+    "note": "Epic Day Pass 7-Day unrestricted tier (no blackout dates, holiday-valid), 2026-27 adult, advance online",
+    "src": "https://www.onthesnow.com/news/epic-pass-buyers-guide/"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 259.0,
+    "regular": 202.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day online advance purchase, dynamic pricing; official vail.com ticket page uses a JS calendar with no static price, so figures are from aggregator reporting of Vail Resorts 2026-27 pricing ($202-259 advance online range, up to $374 at walk-up window on peak days); Epic Pass ecosystem",
+   "pass_src": "https://snowstash.com/usa/colorado/vail/lift-tickets",
+   "night_eur": 145.59,
+   "food_day_eur": 72.79,
+   "stay_src": "estimate: based on booking.com/orbitz Vail hotel listings for Dec 13-20 2026 (Highline DoubleTree ~$176/room, Lodge at Vail ~$228/room, Arrabelle ~$397/room night; per-person-sharing taken as a fraction of mid-tier room) + typical $25-40 on-mountain lunch in Vail Village/Lionshead",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 30,
+    "start": {
+     "cm": 45,
+     "p20": 40,
+     "p50": 45,
+     "p80": 65,
+     "p_ge50": 0.44,
+     "basis": "ensemble+climatology",
+     "normal_cm": 85,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 20,
+       "p50_cm": 60
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 32,
+       "snowfall_p50_cm": 32,
+       "p50_cm": 45
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 547,
+    "hotel_eur": 1019,
+    "food_eur": 510,
+    "total_eur": 2076,
+    "pass_basis": "advance 7-day pass",
+    "pass_walkup": 1414,
+    "party_total_eur": 2076,
+    "left_eur": -1076,
+    "need_eur": 1076,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "HIGH",
+    "pistes": "HIGH",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.49,
+   "pros": [
+    "215 km of pistes",
+    "skiing up to 3526 m",
+    "32 lifts"
+   ],
+   "cons": [
+    "2,076 EUR per person",
+    "nights from 146 EUR per person",
+    "~45 cm at the start"
+   ],
+   "score": 53.1,
+   "score_parts": {
+    "MONEY": 92,
+    "SNOW": 14
    },
    "rank": 8
   },
@@ -874,26 +874,26 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 15,
+    "now_cm": 10,
     "start": {
      "cm": 30,
      "p20": 20,
      "p50": 30,
-     "p80": 60,
-     "p_ge50": 0.27,
+     "p80": 55,
+     "p_ge50": 0.24,
      "basis": "ensemble+climatology",
      "normal_cm": 110,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 32,
-       "p50_cm": 55
+       "snowfall_p50_cm": 35,
+       "p50_cm": 50
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 30,
+       "snowfall_p50_cm": 37,
        "p50_cm": 25
       }
      },
@@ -977,10 +977,10 @@
    "snow": {
     "now_cm": 75,
     "start": {
-     "cm": 90,
+     "cm": 95,
      "p20": 85,
-     "p50": 90,
-     "p80": 115,
+     "p50": 95,
+     "p80": 110,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 100,
@@ -988,13 +988,13 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 28,
+       "snowfall_p50_cm": 29,
        "p50_cm": 105
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 30,
+       "snowfall_p50_cm": 37,
        "p50_cm": 90
       }
      },
@@ -1019,7 +1019,7 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.62,
+   "value_cm_per_eur": 0.65,
    "pros": [
     "120 km of pistes",
     "skiing up to 3815 m"
@@ -1027,12 +1027,12 @@
    "cons": [
     "3,899 EUR per person",
     "nights from 341 EUR per person",
-    "~90 cm at the start"
+    "~95 cm at the start"
    ],
-   "score": 28.6,
+   "score": 31.0,
    "score_parts": {
     "MONEY": 0,
-    "SNOW": 57
+    "SNOW": 62
    },
    "rank": 10
   }
