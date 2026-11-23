@@ -591,6 +591,114 @@
 },
 "change_vs_yesterday_km2": 0,
 "change_vs_7_days_km2": -340
+},
+"2026-11-23": {
+"country": "Serbia",
+"country_code": "RS",
+"date": "2026-11-23",
+"quiet": false,
+"modelled_km2": 21120,
+"snow_km2_today": 5450,
+"snow_km2_yesterday": 40,
+"snow_km2_7_days_ago": 140,
+"new_cm_24h_max": 4,
+"new_cm_72h_max": 4,
+"area_km2_5cm_new_72h": 200,
+"next_3_days_max_cm": 3,
+"next_7_days_max_cm": 14,
+"snowiest_day": "2026-11-28",
+"snowiest_day_cm": 10,
+"first_snow_day": "2026-11-25",
+"hotspots": [
+{
+"name": "Kopaonik",
+"new_cm_72h": 10,
+"lat": 42.835,
+"lon": 20.358
+},
+{
+"name": "Stara Planina",
+"new_cm_72h": 7,
+"lat": 43.397,
+"lon": 22.715
+},
+{
+"name": "Zlatibor",
+"new_cm_72h": 7,
+"lat": 43.235,
+"lon": 19.988
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 3
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 1,
+"snow_cover_pct": 62
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 2,
+"snow_cover_pct": 93
+}
+],
+"snow_line_m": 1100,
+"white_share_pct": 26,
+"resorts": [
+{
+"name": "Kopaonik",
+"slug": "kopaonik",
+"depth_cm": 10,
+"new_cm_72h": 5,
+"next_3_days_cm": 1,
+"top_m": 1975
+},
+{
+"name": "Stara planina",
+"slug": "ski_center_stara_planina",
+"depth_cm": 10,
+"new_cm_72h": 3,
+"next_3_days_cm": 0,
+"top_m": 1754
+},
+{
+"name": "Tornik",
+"slug": "tornik",
+"depth_cm": 5,
+"new_cm_72h": 3,
+"next_3_days_cm": 1,
+"top_m": 1486
+},
+{
+"name": "Ски центар Жари",
+"slug": "zari_ski_centre_ski_centar_zari",
+"depth_cm": 3,
+"new_cm_72h": 7,
+"next_3_days_cm": 1,
+"top_m": 1383
+},
+{
+"name": "Skijalište Putevi Nova Varoš",
+"slug": "skijaliste_putevi_nova_varos",
+"depth_cm": 2,
+"new_cm_72h": 3,
+"next_3_days_cm": 1,
+"top_m": 1196
+}
+],
+"n_resorts": 9,
+"n_resorts_with_snow": 7,
+"resort_next_until": "2026-11-26",
+"week2": null,
+"change_vs_yesterday_km2": 5410,
+"change_vs_7_days_km2": 5310
 }
 }
 }

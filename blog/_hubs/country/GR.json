@@ -653,6 +653,98 @@
 },
 "change_vs_yesterday_km2": 0,
 "change_vs_7_days_km2": 0
+},
+"2026-11-23": {
+"country": "Greece",
+"country_code": "GR",
+"date": "2026-11-23",
+"quiet": false,
+"modelled_km2": 26150,
+"snow_km2_today": 120,
+"snow_km2_yesterday": 10,
+"snow_km2_7_days_ago": 10,
+"new_cm_24h_max": 2,
+"new_cm_72h_max": 2,
+"area_km2_5cm_new_72h": 70,
+"next_3_days_max_cm": 0,
+"next_7_days_max_cm": 28,
+"snowiest_day": "2026-11-29",
+"snowiest_day_cm": 17,
+"first_snow_day": "2026-11-27",
+"hotspots": [
+{
+"name": "the Pindus",
+"new_cm_72h": 11,
+"lat": 40.36,
+"lon": 20.784
+},
+{
+"name": "the Vermio mountains",
+"new_cm_72h": 8,
+"lat": 40.855,
+"lon": 21.263
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 2
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 1,
+"snow_cover_pct": 35
+}
+],
+"snow_line_m": null,
+"white_share_pct": 0,
+"resorts": [
+{
+"name": "Kaimaktsalan",
+"slug": "kaimaktsalan",
+"depth_cm": 0,
+"new_cm_72h": 2,
+"next_3_days_cm": 5,
+"top_m": 2470
+},
+{
+"name": "Εθνικό χιονοδρομικό κέντρο Βασιλ",
+"slug": "area_greece",
+"depth_cm": 0,
+"new_cm_72h": 4,
+"next_3_days_cm": 0,
+"top_m": 2104
+},
+{
+"name": "Tottis Vigla",
+"slug": "tottis_vigla",
+"depth_cm": 0,
+"new_cm_72h": 3,
+"next_3_days_cm": 0,
+"top_m": 1899
+}
+],
+"n_resorts": 12,
+"n_resorts_with_snow": 0,
+"resort_next_until": "2026-11-26",
+"week2": null,
+"change_vs_yesterday_km2": 110,
+"change_vs_7_days_km2": 110
 }
 }
 }
