@@ -82,7 +82,7 @@
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 60,
+       "snowfall_p50_cm": 52,
        "p50_cm": 130
       }
      },
@@ -269,7 +269,7 @@
      "cm": 80,
      "p20": 65,
      "p50": 80,
-     "p80": 100,
+     "p80": 105,
      "p_ge50": 0.92,
      "basis": "ensemble+climatology",
      "normal_cm": 90,
@@ -283,8 +283,8 @@
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 74,
-       "p50_cm": 80
+       "snowfall_p50_cm": 61,
+       "p50_cm": 75
       }
      },
      "winters": 46
@@ -368,7 +368,7 @@
     "now_cm": 75,
     "start": {
      "cm": 80,
-     "p20": 75,
+     "p20": 80,
      "p50": 80,
      "p80": 110,
      "p_ge50": 1.0,
@@ -470,9 +470,9 @@
     "now_cm": 55,
     "start": {
      "cm": 75,
-     "p20": 65,
+     "p20": 70,
      "p50": 75,
-     "p80": 95,
+     "p80": 90,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 85,
@@ -575,7 +575,7 @@
      "p20": 40,
      "p50": 45,
      "p80": 65,
-     "p_ge50": 0.39,
+     "p_ge50": 0.37,
      "basis": "ensemble+climatology",
      "normal_cm": 80,
      "families": {
@@ -588,7 +588,7 @@
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 18,
+       "snowfall_p50_cm": 20,
        "p50_cm": 40
       }
      },
@@ -632,107 +632,6 @@
    "rank": 6
   },
   {
-   "slug": "jackson_hole",
-   "label": "Jackson Hole",
-   "country": "US",
-   "area": "Wyoming",
-   "lat": 43.60325,
-   "lon": -110.84999,
-   "top_m": 3169,
-   "base_m": 1929,
-   "km": 78.0,
-   "lifts": 17,
-   "opens": "2026-11-27",
-   "pass_day_eur": 262.97,
-   "pass_day_walkup": 262.97,
-   "pass_day_multi_eur": 120.34,
-   "pass_multi": {
-    "days": 4,
-    "price": 529.0,
-    "ccy": "USD",
-    "per_day": 132.25,
-    "estimated": false,
-    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
-    "src": "https://www.ikonpass.com/en/passes/session-pass"
-   },
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 289.0,
-    "regular": 225.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult 1-day online advance purchase; $289/day reported specifically for the Christmas Day-New Year's Day window, $225 is the published regular weekday rate; day tickets are sold online in limited date-based price tiers that rise as each tier sells out, so booking early matters more here than at most resorts",
-   "pass_src": "https://www.powder.com/news/jackson-hole-lift-ticket-sale",
-   "night_eur": 200.18,
-   "food_day_eur": 81.89,
-   "stay_src": "estimate: Teton Village/Jackson Hole lodging is expensive and skews luxury (Four Seasons ~$569-683/night, Gravity Haus ~$400-410/night, Hotel Terra ~$1,029/night per room); per-person-sharing figure reflects a mid-tier (Gravity Haus-level) double room over Christmas week; apres-ski dining is pricey",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 50,
-    "start": {
-     "cm": 80,
-     "p20": 65,
-     "p50": 80,
-     "p80": 95,
-     "p_ge50": 0.96,
-     "basis": "ensemble+climatology",
-     "normal_cm": 125,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 25,
-       "p50_cm": 90
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 32,
-       "snowfall_p50_cm": 61,
-       "p50_cm": 75
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 722,
-    "hotel_eur": 1401,
-    "food_eur": 573,
-    "total_eur": 2696,
-    "pass_basis": "advance 4-day pass",
-    "pass_walkup": 1578,
-    "party_total_eur": 2696,
-    "left_eur": -1696,
-    "need_eur": 1696,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "HIGH",
-    "pistes": "HIGH",
-    "snow": "MID"
-   },
-   "value_cm_per_eur": 0.66,
-   "pros": [
-    "78 km of pistes",
-    "skiing up to 3169 m"
-   ],
-   "cons": [
-    "2,696 EUR per person",
-    "nights from 200 EUR per person",
-    "~80 cm at the start"
-   ],
-   "score": 54.2,
-   "score_parts": {
-    "MONEY": 61,
-    "SNOW": 48
-   },
-   "rank": 7
-  },
-  {
    "slug": "vail",
    "label": "Vail",
    "country": "US",
@@ -774,11 +673,11 @@
    "snow": {
     "now_cm": 30,
     "start": {
-     "cm": 45,
+     "cm": 50,
      "p20": 40,
-     "p50": 45,
+     "p50": 50,
      "p80": 65,
-     "p_ge50": 0.43,
+     "p_ge50": 0.4,
      "basis": "ensemble+climatology",
      "normal_cm": 85,
      "families": {
@@ -791,7 +690,7 @@
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 32,
+       "snowfall_p50_cm": 34,
        "p50_cm": 45
       }
      },
@@ -816,7 +715,7 @@
     "pistes": "HIGH",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.49,
+   "value_cm_per_eur": 0.55,
    "pros": [
     "215 km of pistes",
     "skiing up to 3526 m",
@@ -825,12 +724,113 @@
    "cons": [
     "2,076 EUR per person",
     "nights from 146 EUR per person",
-    "~45 cm at the start"
+    "~50 cm at the start"
    ],
-   "score": 53.1,
+   "score": 55.5,
    "score_parts": {
     "MONEY": 92,
-    "SNOW": 14
+    "SNOW": 19
+   },
+   "rank": 7
+  },
+  {
+   "slug": "jackson_hole",
+   "label": "Jackson Hole",
+   "country": "US",
+   "area": "Wyoming",
+   "lat": 43.60325,
+   "lon": -110.84999,
+   "top_m": 3169,
+   "base_m": 1929,
+   "km": 78.0,
+   "lifts": 17,
+   "opens": "2026-11-27",
+   "pass_day_eur": 262.97,
+   "pass_day_walkup": 262.97,
+   "pass_day_multi_eur": 120.34,
+   "pass_multi": {
+    "days": 4,
+    "price": 529.0,
+    "ccy": "USD",
+    "per_day": 132.25,
+    "estimated": false,
+    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
+    "src": "https://www.ikonpass.com/en/passes/session-pass"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 289.0,
+    "regular": 225.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day online advance purchase; $289/day reported specifically for the Christmas Day-New Year's Day window, $225 is the published regular weekday rate; day tickets are sold online in limited date-based price tiers that rise as each tier sells out, so booking early matters more here than at most resorts",
+   "pass_src": "https://www.powder.com/news/jackson-hole-lift-ticket-sale",
+   "night_eur": 200.18,
+   "food_day_eur": 81.89,
+   "stay_src": "estimate: Teton Village/Jackson Hole lodging is expensive and skews luxury (Four Seasons ~$569-683/night, Gravity Haus ~$400-410/night, Hotel Terra ~$1,029/night per room); per-person-sharing figure reflects a mid-tier (Gravity Haus-level) double room over Christmas week; apres-ski dining is pricey",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 50,
+    "start": {
+     "cm": 75,
+     "p20": 65,
+     "p50": 75,
+     "p80": 100,
+     "p_ge50": 0.96,
+     "basis": "ensemble+climatology",
+     "normal_cm": 125,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 25,
+       "p50_cm": 90
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 32,
+       "snowfall_p50_cm": 58,
+       "p50_cm": 75
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 722,
+    "hotel_eur": 1401,
+    "food_eur": 573,
+    "total_eur": 2696,
+    "pass_basis": "advance 4-day pass",
+    "pass_walkup": 1578,
+    "party_total_eur": 2696,
+    "left_eur": -1696,
+    "need_eur": 1696,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "HIGH",
+    "pistes": "HIGH",
+    "snow": "MID"
+   },
+   "value_cm_per_eur": 0.62,
+   "pros": [
+    "78 km of pistes",
+    "skiing up to 3169 m"
+   ],
+   "cons": [
+    "2,696 EUR per person",
+    "nights from 200 EUR per person",
+    "~75 cm at the start"
+   ],
+   "score": 51.8,
+   "score_parts": {
+    "MONEY": 61,
+    "SNOW": 43
    },
    "rank": 8
   },
@@ -877,7 +877,7 @@
     "now_cm": 10,
     "start": {
      "cm": 30,
-     "p20": 20,
+     "p20": 25,
      "p50": 30,
      "p80": 55,
      "p_ge50": 0.24,
@@ -893,7 +893,7 @@
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 37,
+       "snowfall_p50_cm": 35,
        "p50_cm": 25
       }
      },
@@ -977,9 +977,9 @@
    "snow": {
     "now_cm": 75,
     "start": {
-     "cm": 95,
+     "cm": 90,
      "p20": 85,
-     "p50": 95,
+     "p50": 90,
      "p80": 110,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
@@ -994,7 +994,7 @@
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 37,
+       "snowfall_p50_cm": 40,
        "p50_cm": 90
       }
      },
@@ -1019,7 +1019,7 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.65,
+   "value_cm_per_eur": 0.62,
    "pros": [
     "120 km of pistes",
     "skiing up to 3815 m"
@@ -1027,12 +1027,12 @@
    "cons": [
     "3,899 EUR per person",
     "nights from 341 EUR per person",
-    "~95 cm at the start"
+    "~90 cm at the start"
    ],
-   "score": 31.0,
+   "score": 28.6,
    "score_parts": {
     "MONEY": 0,
-    "SNOW": 62
+    "SNOW": 57
    },
    "rank": 10
   }
