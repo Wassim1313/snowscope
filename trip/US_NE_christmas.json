@@ -18,7 +18,7 @@
   "MONEY",
   "SNOW"
  ],
- "snow_day0": "2026-11-23",
+ "snow_day0": "2026-11-24",
  "snow_stale": false,
  "projection": true,
  "travel": null,
@@ -68,22 +68,22 @@
      "cm": 15,
      "p20": 10,
      "p50": 15,
-     "p80": 25,
+     "p80": 20,
      "p_ge50": 0.0,
      "basis": "ensemble+climatology",
      "normal_cm": 25,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
+       "horizon_days": 13,
        "snowfall_p50_cm": 7,
        "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 29,
-       "p50_cm": 15
+       "snowfall_p50_cm": 22,
+       "p50_cm": 10
       }
      },
      "winters": 46
@@ -116,12 +116,112 @@
     "only 41 km of pistes",
     "~15 cm at the start"
    ],
-   "score": 100.0,
+   "score": 75.0,
    "score_parts": {
     "MONEY": 100,
-    "SNOW": 100
+    "SNOW": 50
    },
    "rank": 1
+  },
+  {
+   "slug": "stowe",
+   "label": "Stowe",
+   "country": "US",
+   "area": "Vermont",
+   "lat": 44.53036,
+   "lon": -72.78816,
+   "top_m": 1112,
+   "base_m": 400,
+   "km": 67.0,
+   "lifts": 12,
+   "opens": "2026-11-21",
+   "pass_day_eur": 204.73,
+   "pass_day_walkup": 204.73,
+   "pass_day_multi_eur": 91.12,
+   "pass_multi": {
+    "days": 7,
+    "price": 701.0,
+    "ccy": "USD",
+    "per_day": 100.14,
+    "estimated": false,
+    "note": "Epic Day Pass 7-Day unrestricted tier (no blackout dates, holiday-valid), 2026-27 adult, advance online",
+    "src": "https://www.onthesnow.com/news/epic-pass-buyers-guide/"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 225.0,
+    "regular": 169.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day, online advance, dynamic by date; 2026-27 adult day tickets reported in the $169-$239 range with weekday listed around $207; holiday figure is a representative peak-week price, not exact published holiday rate",
+   "pass_src": "https://www.onthesnow.com/vermont/stowe-mountain-resort/lift-tickets (official stowe.com ticket calendar did not return static prices for this fetch, Nov 2026)",
+   "night_eur": 145.59,
+   "food_day_eur": 63.69,
+   "stay_src": "estimate: based on Stowe hotel search (general range ~$90-$500+/night, Green Mountain Inn Christmas package ~$534 pp/2 nights) and Stowe's higher cost tier vs other VT resorts; food slightly above Killington/Okemo tier",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 10,
+    "start": {
+     "cm": 20,
+     "p20": 10,
+     "p50": 20,
+     "p80": 30,
+     "p_ge50": 0.02,
+     "basis": "ensemble+climatology",
+     "normal_cm": 30,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 8,
+       "p50_cm": 25
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 19,
+       "p50_cm": 15
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 547,
+    "hotel_eur": 1019,
+    "food_eur": 446,
+    "total_eur": 2012,
+    "pass_basis": "advance 7-day pass",
+    "pass_walkup": 1228,
+    "party_total_eur": 2012,
+    "left_eur": -1012,
+    "need_eur": 1012,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "HIGH",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.22,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "2,012 EUR per person",
+    "nights from 146 EUR per person",
+    "~20 cm at the start"
+   ],
+   "score": 58.7,
+   "score_parts": {
+    "MONEY": 17,
+    "SNOW": 100
+   },
+   "rank": 2
   },
   {
    "slug": "killington",
@@ -175,14 +275,14 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 3,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 4,
        "p50_cm": 20
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 17,
+       "snowfall_p50_cm": 20,
        "p50_cm": 15
       }
      },
@@ -216,12 +316,12 @@
     "nights from 127 EUR per person",
     "~15 cm at the start"
    ],
-   "score": 66.6,
+   "score": 41.6,
    "score_parts": {
     "MONEY": 33,
-    "SNOW": 100
+    "SNOW": 50
    },
-   "rank": 2
+   "rank": 3
   },
   {
    "slug": "sugarbush_resort",
@@ -266,23 +366,23 @@
     "now_cm": 5,
     "start": {
      "cm": 15,
-     "p20": 5,
+     "p20": 10,
      "p50": 15,
      "p80": 20,
-     "p_ge50": 0.0,
+     "p_ge50": 0.01,
      "basis": "ensemble+climatology",
      "normal_cm": 20,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 5,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 4,
        "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 20,
+       "snowfall_p50_cm": 19,
        "p50_cm": 10
       }
      },
@@ -316,12 +416,12 @@
     "~15 cm at the start",
     "4-day pass 529 USD"
    ],
-   "score": 62.5,
+   "score": 37.5,
    "score_parts": {
     "MONEY": 25,
-    "SNOW": 100
+    "SNOW": 50
    },
-   "rank": 3
+   "rank": 4
   },
   {
    "slug": "loon_mountain_resort",
@@ -375,15 +475,15 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 4,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 6,
        "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 26,
-       "p50_cm": 15
+       "snowfall_p50_cm": 20,
+       "p50_cm": 10
       }
      },
      "winters": 46
@@ -416,110 +516,10 @@
     "nights from 127 EUR per person",
     "only 46 km of pistes"
    ],
-   "score": 60.0,
+   "score": 35.0,
    "score_parts": {
     "MONEY": 20,
-    "SNOW": 100
-   },
-   "rank": 4
-  },
-  {
-   "slug": "stowe",
-   "label": "Stowe",
-   "country": "US",
-   "area": "Vermont",
-   "lat": 44.53036,
-   "lon": -72.78816,
-   "top_m": 1112,
-   "base_m": 400,
-   "km": 67.0,
-   "lifts": 12,
-   "opens": "2026-11-21",
-   "pass_day_eur": 204.73,
-   "pass_day_walkup": 204.73,
-   "pass_day_multi_eur": 91.12,
-   "pass_multi": {
-    "days": 7,
-    "price": 701.0,
-    "ccy": "USD",
-    "per_day": 100.14,
-    "estimated": false,
-    "note": "Epic Day Pass 7-Day unrestricted tier (no blackout dates, holiday-valid), 2026-27 adult, advance online",
-    "src": "https://www.onthesnow.com/news/epic-pass-buyers-guide/"
-   },
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 225.0,
-    "regular": 169.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult 1-day, online advance, dynamic by date; 2026-27 adult day tickets reported in the $169-$239 range with weekday listed around $207; holiday figure is a representative peak-week price, not exact published holiday rate",
-   "pass_src": "https://www.onthesnow.com/vermont/stowe-mountain-resort/lift-tickets (official stowe.com ticket calendar did not return static prices for this fetch, Nov 2026)",
-   "night_eur": 145.59,
-   "food_day_eur": 63.69,
-   "stay_src": "estimate: based on Stowe hotel search (general range ~$90-$500+/night, Green Mountain Inn Christmas package ~$534 pp/2 nights) and Stowe's higher cost tier vs other VT resorts; food slightly above Killington/Okemo tier",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 5,
-    "start": {
-     "cm": 15,
-     "p20": 10,
-     "p50": 15,
-     "p80": 25,
-     "p_ge50": 0.01,
-     "basis": "ensemble+climatology",
-     "normal_cm": 30,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 9,
-       "p50_cm": 20
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 22,
-       "p50_cm": 15
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 547,
-    "hotel_eur": 1019,
-    "food_eur": 446,
-    "total_eur": 2012,
-    "pass_basis": "advance 7-day pass",
-    "pass_walkup": 1228,
-    "party_total_eur": 2012,
-    "left_eur": -1012,
-    "need_eur": 1012,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "HIGH",
-    "pistes": "MID",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.16,
-   "pros": [
-    "solid all-rounder"
-   ],
-   "cons": [
-    "2,012 EUR per person",
-    "nights from 146 EUR per person",
-    "~15 cm at the start"
-   ],
-   "score": 58.7,
-   "score_parts": {
-    "MONEY": 17,
-    "SNOW": 100
+    "SNOW": 50
    },
    "rank": 5
   },
@@ -575,15 +575,15 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
+       "horizon_days": 13,
        "snowfall_p50_cm": 8,
        "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 18,
-       "p50_cm": 5
+       "snowfall_p50_cm": 17,
+       "p50_cm": 10
       }
      },
      "winters": 46
@@ -666,7 +666,7 @@
     "now_cm": 0,
     "start": {
      "cm": 10,
-     "p20": 5,
+     "p20": 0,
      "p50": 10,
      "p80": 20,
      "p_ge50": 0.0,
@@ -675,15 +675,15 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 3,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 4,
        "p50_cm": 10
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 16,
-       "p50_cm": 5
+       "snowfall_p50_cm": 19,
+       "p50_cm": 10
       }
      },
      "winters": 46
@@ -775,14 +775,14 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 2,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 4,
        "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 26,
+       "snowfall_p50_cm": 23,
        "p50_cm": 10
       }
      },
@@ -875,14 +875,14 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 8,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 9,
        "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 18,
+       "snowfall_p50_cm": 17,
        "p50_cm": 5
       }
      },
