@@ -543,6 +543,73 @@
     "phase": "Prévision des précipitations et de la phase (pluie, neige mouillée, neige) selon les altitudes de 500 m à 3 000 m, montrant la division entre pluie au-dessous de 1 500 m et neige au-dessus de 2 000 m le 8 novembre.",
     "photo": "Les Montagnes Côtières près de Whistler, où les crêtes hautes attrapent la neige tandis que les pentes inférieures au sud reçoivent de la pluie."
    }
+  },
+  "es": {
+   "title": "Tormenta en Whistler: unos 92 cm en altura, lluvia en el North Shore",
+   "description": "Una tormenta húmeda del Pacífico: 92 cm de nieve nueva en las pistas altas de Whistler del 8 al 10 de noviembre, lluvia por debajo de unos 1.620 m.",
+   "lede": "Una tormenta húmeda del Pacífico llega a las Coast Mountains. Nuestro modelo de nieve da unos 92 cm de nieve nueva en las pistas altas de Whistler Blackcomb del 8 al 10 de noviembre, mientras las montañas sobre Vancouver reciben sobre todo lluvia: 72 mm en Grouse Mountain con solo 4 cm de nieve.",
+   "sections": [
+    {
+     "h": "Nieve en altura, lluvia más abajo",
+     "p": [
+      "La animación muestra la tormenta intensificándose día a día. La nieve nueva más abundante cae en el terreno alto al norte de Squamish: 92 cm en Whistler Blackcomb y 86 cm en Ski Callaghan. Al sur de la frontera, Mt Baker recibe 48 cm.",
+      "El North Shore es otra historia. Cypress Mountain recibe 68 mm de lluvia y 3 cm de nieve, Mt Seymour 75 mm de lluvia y ninguna nieve nueva. La diferencia es la altitud: estas zonas terminan donde la tormenta todavía es lluvia."
+     ]
+    },
+    {
+     "h": "¿Dónde está el límite de nieve?",
+     "p": [
+      "Durante las horas de precipitación, el límite de nieve en la región se sitúa sobre todo entre 1.190 y 2.230 m, con un valor medio cercano a 1.620 m. A 2.000 m, cerca del 70 % de la precipitación debería caer como nieve; a 1.500 m solo el 28 %, con un 26 % de aguanieve y un 46 % de lluvia.",
+      "En el propio Whistler, la isoterma de 0 °C se sitúa cerca de 2.100 m durante la lluvia, por lo que el límite de nieve está cerca de 1.800 m: la zona alpina recibe nieve, el pueblo y las pistas bajas sobre todo lluvia. La previsión da allí 110 mm de precipitación del 8 al 12 de noviembre."
+     ]
+    },
+    {
+     "h": "La física: una tormenta cálida y húmeda choca con una pared de montañas",
+     "p": [
+      "El aire que llega del Pacífico es templado y está cargado de vapor de agua. Cuando el viento lo empuja contra las Coast Mountains, se ve obligado a ascender, se enfría y el vapor se condensa en lluvia y nieve intensas en las laderas expuestas al viento.",
+      "Como el aire es templado, la isoterma de 0 °C se mantiene alta. La nieve se derrite al caer a través del aire más cálido y se convierte en lluvia unos 300 m por debajo de la isoterma de 0 °C. Unos pocos cientos de metros de altura deciden, por tanto, entre un día de nieve polvo y una buena mojada."
+     ]
+    }
+   ],
+   "advice": [
+    "Las previsiones cambian: vuelve a comprobar el mapa de nieve en directo antes de salir.",
+    "Mucha nieve nueva sobre una base húmeda: en zona no controlada, lee primero el parte de Avalanche Canada.",
+    "Al conducir por la Sea-to-Sky: espera lluvia en el valle y nieve en las carreteras más altas."
+   ],
+   "method": "Nieve nueva por estación: modelo de nieve SnowScope (cuadrícula de 500 m, valor en pistas altas), del 8 al 10 de noviembre, ejecución del 7 de noviembre. Límite de nieve: ECMWF IFS (vía Open-Meteo), precipitación horaria y perfil de temperatura en 54 puntos; límite de nieve = isoterma de 0 °C menos 300 m, aguanieve dentro de 150 m de ella. Las previsiones cambian.",
+   "captions": {
+    "phase": "Dónde la precipitación del 8 al 10 de noviembre debería caer como nieve (azul), aguanieve (lila) o lluvia (verde).",
+    "photo": "Whistler Blackcomb"
+   },
+   "references": [
+    {
+     "text": "Roe, G. H. (2005). Orographic precipitation. Annual Review of Earth and Planetary Sciences 33, 645-671.",
+     "url": "https://doi.org/10.1146/annurev.earth.33.092203.122541"
+    },
+    {
+     "text": "Minder, J. R., Durran, D. R. and Roe, G. H. (2011). Mesoscale controls on the mountainside snow line. Journal of the Atmospheric Sciences 68, 2107-2127.",
+     "url": "https://doi.org/10.1175/JAS-D-10-05006.1"
+    },
+    {
+     "text": "American Meteorological Society, Glossary of Meteorology: 'Orographic precipitation'.",
+     "url": "https://glossary.ametsoc.org/wiki/Orographic_precipitation"
+    },
+    {
+     "text": "American Meteorological Society, Glossary of Meteorology: 'Freezing level'.",
+     "url": "https://glossary.ametsoc.org/wiki/Freezing_level"
+    },
+    {
+     "text": "Wallace, J. M. and Hobbs, P. V. (2006). Atmospheric Science: An Introductory Survey, 2nd edition. Academic Press / Elsevier. ISBN 978-0-12-732951-2."
+    },
+    {
+     "text": "Open-Meteo.com forecast API, ECMWF IFS 0.25° model (CC BY 4.0): hourly precipitation and temperature on pressure levels.",
+     "url": "https://open-meteo.com/en/docs/ecmwf-api"
+    },
+    {
+     "text": "SnowScope snow model and forecast maps (SnowScope, Atlas Labs).",
+     "url": "https://snowscope.app/"
+    }
+   ]
   }
  },
  "writers": {
@@ -613,6 +680,10 @@
    "fr": [
     "blog/media/2026/11/whistler-storm-snow-up-high-rain-below-8-10-november-2026/cover-fr.webp",
     "blog/media/2026/11/whistler-storm-snow-up-high-rain-below-8-10-november-2026/cover-fr_t.webp"
+   ],
+   "es": [
+    "blog/media/2026/11/whistler-storm-snow-up-high-rain-below-8-10-november-2026/cover-es.webp",
+    "blog/media/2026/11/whistler-storm-snow-up-high-rain-below-8-10-november-2026/cover-es_t.webp"
    ]
   },
   "credit": null,
