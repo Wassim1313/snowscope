@@ -1056,6 +1056,17 @@
       "Ogni giorno di previsione, i totali di neve a 72 ore e 7 giorni, la previsione a 7 giorni, tutta la classifica neve fresca, avvisi illimitati e niente pubblicità. Nell'app anche: ogni vetta con il nome, video 3D, pacchetti offline e la stagione contro gli inverni passati.",
       "Todos los días del pronóstico, los totales de nieve a 72 h y 7 días, el pronóstico de 7 días, toda la clasificación de nieve polvo, alertas ilimitadas y sin anuncios. En la app también: todas las cumbres con nombre, vídeos 3D, paquetes sin conexión y la temporada frente a inviernos pasados.",
       "كل أيام التوقعات، مجموع التلج ف72 ساعة و7 أيام، توقعات 7 أيام، الترتيب كامل ديال التلج الطري، تنبيهات بلا حدود وبلا إشهار. فالتطبيق زيادة: سمية كل جبل، فيديوهات 3D، باكات بلا انترنت والموسم مقارنة مع الشتوات اللي فاتو."],
+    // snow quality / best powder (app.js densCard, fillBestPowder; docs/SNOW_DENSITY.md, owner 2026-11-24)
+    "Snow quality": ["Qualité de la neige", "Schneequalität", "Qualità della neve", "Calidad de la nieve", "النوع ديال التلج"],
+    "Cold smoke / very light powder": ["Poudreuse très légère", "Sehr leichter Pulverschnee", "Polvere leggerissima", "Polvo muy ligero", "تلج طري خفيف بزاف"],
+    "Light powder": ["Poudreuse légère", "Leichter Pulverschnee", "Polvere leggera", "Polvo ligero", "تلج طري خفيف"],
+    "Medium / packable": ["Neige moyenne", "Mittelschwerer Schnee", "Neve media", "Nieve media", "تلج متوسط"],
+    "Heavy / wet": ["Neige lourde", "Schwerer Schnee", "Neve pesante", "Nieve pesada", "تلج تقيل"],
+    "Wet, dense": ["Neige mouillée et dense", "Nasser, dichter Schnee", "Neve bagnata e densa", "Nieve húmeda y densa", "تلج مفزگ وتقيل"],
+    "Next 3 days": ["3 prochains jours", "Nächste 3 Tage", "Prossimi 3 giorni", "Próximos 3 días", "3 أيام الجايين"],
+    "No new snow expected": ["Pas de neige fraîche prévue", "Kein Neuschnee erwartet", "Nessuna neve fresca prevista", "No se espera nieve nueva", "ما متوقعش تلج جديد"],
+    "Best powder": ["Meilleure poudreuse", "Bester Pulverschnee", "Migliore neve fresca", "Mejor nieve polvo", "أحسن تلج طري"],
+    "then {a} kg/m³": ["puis {a} kg/m³", "danach {a} kg/m³", "poi {a} kg/m³", "luego {a} kg/m³", "من بعد {a} kg/m³"],
   };
   // patterns: {a} {b} are kept (numbers, names); a captured value found in T is translated too
   const P = {

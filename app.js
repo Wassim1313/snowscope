@@ -1798,7 +1798,7 @@
   }
   function afterRender() {
     const box = $("pbody");
-    fillDemos();
+    fillDemos(); fillBestPowder();
     bindFolds(box); bindStays(box);
     box.querySelectorAll("[data-open]").forEach((b) => { b.onclick = (e) => { e.preventDefault(); openResort(b.dataset.open); }; });
     box.querySelectorAll("[data-openstays]").forEach((b) => { b.onclick = (e) => { e.preventDefault(); openStays(b.dataset.openstays, b.dataset.via || "panel"); }; });
@@ -2070,6 +2070,7 @@
       : '<p class="none">' + esc(I18N.tu("Nothing over {b} cm in the last {a}. Check tomorrow.", I18N.t(nwk === 7 ? "7 days" : nwk === 2 ? "48 hours" : "24 hours"), U.dep(1))) + "</p>";
     if (rkMore > 0) h += '<button type="button" class="rrow plock" data-pro-lock="ranking_full" data-src="ranking"><span class="ms f">lock</span>' + esc(I18N.tu("+{a} more resorts with Pro", rkMore)) + "</button>";
     if (rows.length) h += '<button class="btn ghost" data-propost="powder" style="margin-top:10px"><span class="ms">add_photo_alternate</span>Create post' + (st.pro ? "" : ' <span class="pro">PRO</span>') + "</button>";
+    h += '<div id="bestPw" data-region="' + esc(st.region || "ALPS") + '"></div>';   // best powder, next 3 / 7 days (fillBestPowder)
     const storms = (DATA.storms || []).map((x, i) => [x, i]).sort((a, b) => b[0].cm - a[0].cm).slice(0, 8);
     h += '<div class="sect">Snow storms</div>' + (storms.length ? storms.map(([x, i]) => '<article class="card storm"><div class="over">' + esc((x.date === DATA.today ? "Today" : wd(x.date) + " " + dnum(x.date)) + " · " + (NAMES[x.region] || "")) + '</div>' +
       '<div class="pwtop"><div class="nm"><b>' + esc(x.place || NAMES[x.region] || x.region) + "</b><small>" + (x.hours === 72 ? "in 3 days" : "in 24 hours") + "</small></div><b class=\"big\" style=\"color:" + newTier(x.cm) + '">+' + cmS(x.cm) + "</b></div>" +
@@ -3130,6 +3131,39 @@
         "</b><small>" + esc(I18N.t("{a} open jobs: lifts, ski school, kitchens, hotels").replace("{a}", e.n)) + '</small></span><span class="ms">chevron_right</span></a>');
     });
   }
+  // Snow quality (owner 2026-11-24, docs/SNOW_DENSITY.md): how light the new snow is, from the API `snow_density`
+  // blocks (category code + kg/m³). Plain words only on screen (owner rule: no method / source wording).
+  const DENS_LBL = { cold_smoke: "Cold smoke / very light powder", light: "Light powder", medium: "Medium / packable", heavy: "Heavy / wet", wet: "Wet, dense" };
+  const DENS_COL = { cold_smoke: "#0C2C84", light: "var(--accent-ink)", medium: "var(--ink)", heavy: "var(--ink2)", wet: "var(--ink3)" };
+  const densLbl = (c) => (c && DENS_LBL[c] ? I18N.t(DENS_LBL[c]) : "");
+  function densCard(sd) {          // resort forecast card: next 3 days + next 7 days, at fall and a few days later
+    if (!sd) return "";
+    const row = (w, lab) => (w && w.category ? "<tr><th>" + esc(I18N.t(lab)) + '</th><td><b style="color:' + DENS_COL[w.category] + '">' + esc(densLbl(w.category)) + "</b><small> · " + w.density_at_fall_kg_m3 + " kg/m³</small></td><td><small>" +
+      esc(I18N.tu("then {a} kg/m³", w.density_settled_kg_m3)) + "</small></td></tr>" : "");
+    const a = row(sd.next_3d, "Next 3 days"), b = row(sd.next_7d, "Next 7 days");
+    return '<div class="card dens" style="margin:0 0 10px"><div class="over">' + esc(I18N.t("Snow quality")) + "</div>" +
+      (a || b ? '<table class="fc"><tbody>' + a + b + "</tbody></table>" : '<p class="none">' + esc(I18N.t("No new snow expected")) + "</p>") + "</div>";
+  }
+  // "Best powder" list (Powder tab): the region's resorts ranked by deep AND light new snow over the next 3 / 7 days
+  let bestPwWin = 3;
+  async function fillBestPowder() {
+    const el = $("bestPw"); if (!el) return;
+    const reg = el.dataset.region, win = bestPwWin;
+    let j = null;
+    try { j = await SS.api("/v1/powder/top?region=" + encodeURIComponent(reg) + "&window=" + win, { timeout: 15000 }); } catch { j = null; }
+    const box = $("bestPw"); if (!box || box.dataset.region !== reg || win !== bestPwWin) return;
+    const rows = (j && j.top) || [];
+    const k = "next_" + win + "d";
+    box.innerHTML = '<div class="sect">' + esc(I18N.t("Best powder")) + (NAMES[reg] ? " · " + esc(NAMES[reg]) : "") + "</div>" +
+      '<div class="filters"><div class="seg2" role="group" aria-label="' + esc(I18N.t("Best powder")) + '">' + [[3, "Next 3 days"], [7, "Next 7 days"]].map(([w, l]) => '<button data-bpw="' + w + '" aria-pressed="' + (win === w) + '">' + esc(I18N.t(l)) + "</button>").join("") + "</div></div>" +
+      (rows.length ? rows.map((x, i) => { const w = (x.snow_density || {})[k] || {};
+        return '<a class="rrow pw" href="' + BASE + "resorts/" + encodeURIComponent(x.resort) + '.html" data-open="' + esc(x.resort) + '"><span class="rk' + (i < 3 ? " top" : "") + '">' + (i + 1) + '</span><span class="nm"><b>' + esc(x.name) + "</b><small>" +
+          esc(densLbl(w.category)) + (w.density_at_fall_kg_m3 != null ? " · " + w.density_at_fall_kg_m3 + " kg/m³" : "") + '</small></span><span class="val"><b style="color:' + newTier(w.new_cm || 0) + '">+' + cmS(w.new_cm || 0) + "</b></span></a>"; }).join("")
+        : '<p class="none">' + esc(I18N.t(j ? "No new snow expected" : "Couldn't load the forecast.")) + "</p>") +
+      (j && j.locked > 0 ? '<button type="button" class="rrow plock" data-pro-lock="ranking_full" data-src="bestpowder"><span class="ms f">lock</span>' + esc(I18N.tu("+{a} more resorts with Pro", j.locked)) + "</button>" : "");
+    box.querySelectorAll("[data-bpw]").forEach((b) => { b.onclick = () => { bestPwWin = +b.dataset.bpw; fillBestPowder(); }; });
+    box.querySelectorAll("[data-open]").forEach((b) => { b.onclick = (e) => { e.preventDefault(); openResort(b.dataset.open); }; });
+  }
   // "3D videos" card (Powder tab): the first demo cover from the static studio/demos.json, opens the 3D Studio page
   let demosLoad = null;
   function fillDemos() {
@@ -3423,7 +3457,7 @@
       const m = (q) => (q && q.median != null ? q.median : null);
       const WK = window.SSC && (rep.outlook || []).length >= 3 ? SSC.week({ box, days: rep.outlook.map((d) => ({ date: d.date, sn: d.snowfall_cm, fl: d.freezing_level_max_m })),
         base: x.base_m, top: x.top_m, mid: x.base_m && x.top_m ? Math.round((x.base_m + x.top_m) / 2 / 10) * 10 : null }) : null;
-      box.innerHTML = (WK ? WK.html : "") + (rep.powder_score ? '<p style="margin:0 0 8px">Powder score today: <b>' + (Math.round(rep.powder_score.score * 10) / 10) + " / 10</b></p>" : "") +
+      box.innerHTML = (WK ? WK.html : "") + densCard(rep.snow_density) + (rep.powder_score ? '<p style="margin:0 0 8px">Powder score today: <b>' + (Math.round(rep.powder_score.score * 10) / 10) + " / 10</b></p>" : "") +
         '<table class="fc"><thead><tr><th>Day</th><th>New snow</th><th>Low / high</th><th>Wind</th></tr></thead><tbody>' +
         (rep.outlook || []).map((d) => "<tr><td>" + wd(d.date) + " " + dnum(d.date) + "</td><td>" + (m(d.snowfall_cm) >= 1 ? U.depth(Math.round(m(d.snowfall_cm))) + "" : "–") + "</td><td>" +
           (m(d.temp_min_c) != null ? U.tv(m(d.temp_min_c)) + "° / " + U.tv(m(d.temp_max_c)) + "°" : "–") + "</td><td>" + (m(d.wind_max_kmh) != null ? U.wind(m(d.wind_max_kmh)) : "–") + "</td></tr>").join("") + "</tbody></table>" +
