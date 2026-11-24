@@ -24,206 +24,6 @@
  "travel": null,
  "resorts": [
   {
-   "slug": "jay_peak_resort",
-   "label": "Jay Peak",
-   "country": "US",
-   "area": "Vermont",
-   "lat": 44.92819,
-   "lon": -72.5154,
-   "top_m": 1166,
-   "base_m": 560,
-   "km": 41.0,
-   "lifts": 9,
-   "opens": "2026-11-26",
-   "pass_day_eur": 95.54,
-   "pass_day_walkup": 95.54,
-   "pass_day_multi_eur": 72.61,
-   "pass_multi": {
-    "days": 5,
-    "price": 399.0,
-    "ccy": "USD",
-    "per_day": 79.8,
-    "estimated": false,
-    "note": "Jay Peak's own max 5-consecutive-day multi-day ticket, peak/holiday-period rate, independent resort",
-    "src": "https://jaypeakresort.com/skiing-riding/tickets-passes/202627-lift-tickets"
-   },
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 129.0,
-    "regular": 105.0
-   },
-   "pass_period": "regular",
-   "pass_note": "adult 1-day, online advance (resort's own 'advance purchase' rate, $20 off vs walk-up); independent resort (not Epic/Ikon); holiday window per resort's own 2026-27 ticket page",
-   "pass_src": "https://jaypeakresort.com/skiing-riding/tickets-passes/202627-lift-tickets",
-   "night_eur": 100.09,
-   "food_day_eur": 50.05,
-   "stay_src": "estimate: Jay Peak is in a remote/rural part of far-northern Vermont with generally lower lodging and food costs than central/southern VT resorts",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 0,
-    "start": {
-     "cm": 15,
-     "p20": 10,
-     "p50": 15,
-     "p80": 20,
-     "p_ge50": 0.0,
-     "basis": "ensemble+climatology",
-     "normal_cm": 25,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 7,
-       "p50_cm": 15
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 22,
-       "p50_cm": 10
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 436,
-    "hotel_eur": 701,
-    "food_eur": 350,
-    "total_eur": 1487,
-    "pass_basis": "advance 5-day pass",
-    "pass_walkup": 573,
-    "party_total_eur": 1487,
-    "left_eur": -487,
-    "need_eur": 487,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "MID",
-    "pistes": "LOW",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.21,
-   "pros": [
-    "solid all-rounder"
-   ],
-   "cons": [
-    "1,487 EUR per person",
-    "only 41 km of pistes",
-    "~15 cm at the start"
-   ],
-   "score": 75.0,
-   "score_parts": {
-    "MONEY": 100,
-    "SNOW": 50
-   },
-   "rank": 1
-  },
-  {
-   "slug": "stowe",
-   "label": "Stowe",
-   "country": "US",
-   "area": "Vermont",
-   "lat": 44.53036,
-   "lon": -72.78816,
-   "top_m": 1112,
-   "base_m": 400,
-   "km": 67.0,
-   "lifts": 12,
-   "opens": "2026-11-21",
-   "pass_day_eur": 204.73,
-   "pass_day_walkup": 204.73,
-   "pass_day_multi_eur": 91.12,
-   "pass_multi": {
-    "days": 7,
-    "price": 701.0,
-    "ccy": "USD",
-    "per_day": 100.14,
-    "estimated": false,
-    "note": "Epic Day Pass 7-Day unrestricted tier (no blackout dates, holiday-valid), 2026-27 adult, advance online",
-    "src": "https://www.onthesnow.com/news/epic-pass-buyers-guide/"
-   },
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 225.0,
-    "regular": 169.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult 1-day, online advance, dynamic by date; 2026-27 adult day tickets reported in the $169-$239 range with weekday listed around $207; holiday figure is a representative peak-week price, not exact published holiday rate",
-   "pass_src": "https://www.onthesnow.com/vermont/stowe-mountain-resort/lift-tickets (official stowe.com ticket calendar did not return static prices for this fetch, Nov 2026)",
-   "night_eur": 145.59,
-   "food_day_eur": 63.69,
-   "stay_src": "estimate: based on Stowe hotel search (general range ~$90-$500+/night, Green Mountain Inn Christmas package ~$534 pp/2 nights) and Stowe's higher cost tier vs other VT resorts; food slightly above Killington/Okemo tier",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 10,
-    "start": {
-     "cm": 20,
-     "p20": 10,
-     "p50": 20,
-     "p80": 30,
-     "p_ge50": 0.02,
-     "basis": "ensemble+climatology",
-     "normal_cm": 30,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 8,
-       "p50_cm": 25
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 19,
-       "p50_cm": 15
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 547,
-    "hotel_eur": 1019,
-    "food_eur": 446,
-    "total_eur": 2012,
-    "pass_basis": "advance 7-day pass",
-    "pass_walkup": 1228,
-    "party_total_eur": 2012,
-    "left_eur": -1012,
-    "need_eur": 1012,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "HIGH",
-    "pistes": "MID",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.22,
-   "pros": [
-    "solid all-rounder"
-   ],
-   "cons": [
-    "2,012 EUR per person",
-    "nights from 146 EUR per person",
-    "~20 cm at the start"
-   ],
-   "score": 58.7,
-   "score_parts": {
-    "MONEY": 17,
-    "SNOW": 100
-   },
-   "rank": 2
-  },
-  {
    "slug": "killington",
    "label": "Killington",
    "country": "US",
@@ -275,8 +75,8 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 4,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 3,
        "p50_cm": 20
       },
       "GFS": {
@@ -316,112 +116,12 @@
     "nights from 127 EUR per person",
     "~15 cm at the start"
    ],
-   "score": 41.6,
+   "score": 66.6,
    "score_parts": {
     "MONEY": 33,
-    "SNOW": 50
+    "SNOW": 100
    },
-   "rank": 3
-  },
-  {
-   "slug": "sugarbush_resort",
-   "label": "Sugarbush",
-   "country": "US",
-   "area": "Vermont",
-   "lat": 44.14817,
-   "lon": -72.90809,
-   "top_m": 1238,
-   "base_m": 461,
-   "km": 80.0,
-   "lifts": 18,
-   "opens": "2026-11-21",
-   "pass_day_eur": 181.07,
-   "pass_day_walkup": 181.07,
-   "pass_day_multi_eur": 120.34,
-   "pass_multi": {
-    "days": 4,
-    "price": 529.0,
-    "ccy": "USD",
-    "per_day": 132.25,
-    "estimated": false,
-    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
-    "src": "https://www.ikonpass.com/en/passes/session-pass"
-   },
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 199.0,
-    "regular": 129.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult 1-day, online advance; Sugarbush publishes a flat weekday ($129) / weekend ($199) adult online price rather than per-day dynamic calendar pricing for 2026-27 (Ikon-partner resort); holiday period treated as weekend-tier pricing",
-   "pass_src": "https://www.sugarbush.com/plan-your-trip/lift-tickets",
-   "night_eur": 118.29,
-   "food_day_eur": 59.14,
-   "stay_src": "estimate: based on general Mad River Valley (Warren/Waitsfield VT) lodging cost tier, similar to Killington/Okemo, plus ~$20-25 on-mountain lunch",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 5,
-    "start": {
-     "cm": 15,
-     "p20": 10,
-     "p50": 15,
-     "p80": 20,
-     "p_ge50": 0.01,
-     "basis": "ensemble+climatology",
-     "normal_cm": 20,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 4,
-       "p50_cm": 15
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 19,
-       "p50_cm": 10
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 722,
-    "hotel_eur": 828,
-    "food_eur": 414,
-    "total_eur": 1964,
-    "pass_basis": "advance 4-day pass",
-    "pass_walkup": 1086,
-    "party_total_eur": 1964,
-    "left_eur": -964,
-    "need_eur": 964,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "MID",
-    "pistes": "MID",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.12,
-   "pros": [
-    "solid all-rounder"
-   ],
-   "cons": [
-    "1,964 EUR per person",
-    "~15 cm at the start",
-    "4-day pass 529 USD"
-   ],
-   "score": 37.5,
-   "score_parts": {
-    "MONEY": 25,
-    "SNOW": 50
-   },
-   "rank": 4
+   "rank": 1
   },
   {
    "slug": "loon_mountain_resort",
@@ -475,8 +175,8 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 6,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 4,
        "p50_cm": 15
       },
       "GFS": {
@@ -516,12 +216,212 @@
     "nights from 127 EUR per person",
     "only 46 km of pistes"
    ],
-   "score": 35.0,
+   "score": 60.0,
    "score_parts": {
     "MONEY": 20,
-    "SNOW": 50
+    "SNOW": 100
    },
-   "rank": 5
+   "rank": 2
+  },
+  {
+   "slug": "stowe",
+   "label": "Stowe",
+   "country": "US",
+   "area": "Vermont",
+   "lat": 44.53036,
+   "lon": -72.78816,
+   "top_m": 1112,
+   "base_m": 400,
+   "km": 67.0,
+   "lifts": 12,
+   "opens": "2026-11-21",
+   "pass_day_eur": 204.73,
+   "pass_day_walkup": 204.73,
+   "pass_day_multi_eur": 91.12,
+   "pass_multi": {
+    "days": 7,
+    "price": 701.0,
+    "ccy": "USD",
+    "per_day": 100.14,
+    "estimated": false,
+    "note": "Epic Day Pass 7-Day unrestricted tier (no blackout dates, holiday-valid), 2026-27 adult, advance online",
+    "src": "https://www.onthesnow.com/news/epic-pass-buyers-guide/"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 225.0,
+    "regular": 169.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day, online advance, dynamic by date; 2026-27 adult day tickets reported in the $169-$239 range with weekday listed around $207; holiday figure is a representative peak-week price, not exact published holiday rate",
+   "pass_src": "https://www.onthesnow.com/vermont/stowe-mountain-resort/lift-tickets (official stowe.com ticket calendar did not return static prices for this fetch, Nov 2026)",
+   "night_eur": 145.59,
+   "food_day_eur": 63.69,
+   "stay_src": "estimate: based on Stowe hotel search (general range ~$90-$500+/night, Green Mountain Inn Christmas package ~$534 pp/2 nights) and Stowe's higher cost tier vs other VT resorts; food slightly above Killington/Okemo tier",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 10,
+    "start": {
+     "cm": 15,
+     "p20": 10,
+     "p50": 15,
+     "p80": 30,
+     "p_ge50": 0.02,
+     "basis": "ensemble+climatology",
+     "normal_cm": 30,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 8,
+       "p50_cm": 25
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 19,
+       "p50_cm": 15
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 547,
+    "hotel_eur": 1019,
+    "food_eur": 446,
+    "total_eur": 2012,
+    "pass_basis": "advance 7-day pass",
+    "pass_walkup": 1228,
+    "party_total_eur": 2012,
+    "left_eur": -1012,
+    "need_eur": 1012,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "HIGH",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.16,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "2,012 EUR per person",
+    "nights from 146 EUR per person",
+    "~15 cm at the start"
+   ],
+   "score": 58.7,
+   "score_parts": {
+    "MONEY": 17,
+    "SNOW": 100
+   },
+   "rank": 3
+  },
+  {
+   "slug": "jay_peak_resort",
+   "label": "Jay Peak",
+   "country": "US",
+   "area": "Vermont",
+   "lat": 44.92819,
+   "lon": -72.5154,
+   "top_m": 1166,
+   "base_m": 560,
+   "km": 41.0,
+   "lifts": 9,
+   "opens": "2026-11-26",
+   "pass_day_eur": 95.54,
+   "pass_day_walkup": 95.54,
+   "pass_day_multi_eur": 72.61,
+   "pass_multi": {
+    "days": 5,
+    "price": 399.0,
+    "ccy": "USD",
+    "per_day": 79.8,
+    "estimated": false,
+    "note": "Jay Peak's own max 5-consecutive-day multi-day ticket, peak/holiday-period rate, independent resort",
+    "src": "https://jaypeakresort.com/skiing-riding/tickets-passes/202627-lift-tickets"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 129.0,
+    "regular": 105.0
+   },
+   "pass_period": "regular",
+   "pass_note": "adult 1-day, online advance (resort's own 'advance purchase' rate, $20 off vs walk-up); independent resort (not Epic/Ikon); holiday window per resort's own 2026-27 ticket page",
+   "pass_src": "https://jaypeakresort.com/skiing-riding/tickets-passes/202627-lift-tickets",
+   "night_eur": 100.09,
+   "food_day_eur": 50.05,
+   "stay_src": "estimate: Jay Peak is in a remote/rural part of far-northern Vermont with generally lower lodging and food costs than central/southern VT resorts",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 0,
+    "start": {
+     "cm": 10,
+     "p20": 5,
+     "p50": 10,
+     "p80": 20,
+     "p_ge50": 0.01,
+     "basis": "ensemble+climatology",
+     "normal_cm": 25,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 7,
+       "p50_cm": 15
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 22,
+       "p50_cm": 10
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 436,
+    "hotel_eur": 701,
+    "food_eur": 350,
+    "total_eur": 1487,
+    "pass_basis": "advance 5-day pass",
+    "pass_walkup": 573,
+    "party_total_eur": 1487,
+    "left_eur": -487,
+    "need_eur": 487,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "LOW",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.14,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,487 EUR per person",
+    "only 41 km of pistes",
+    "~10 cm at the start"
+   ],
+   "score": 50.0,
+   "score_parts": {
+    "MONEY": 100,
+    "SNOW": 0
+   },
+   "rank": 4
   },
   {
    "slug": "mount_snow",
@@ -575,9 +475,9 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 8,
-       "p50_cm": 15
+       "horizon_days": 14,
+       "snowfall_p50_cm": 7,
+       "p50_cm": 10
       },
       "GFS": {
        "members": 31,
@@ -621,7 +521,7 @@
     "MONEY": 53,
     "SNOW": 0
    },
-   "rank": 6
+   "rank": 5
   },
   {
    "slug": "okemo_mountain",
@@ -675,8 +575,8 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 4,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 3,
        "p50_cm": 10
       },
       "GFS": {
@@ -721,7 +621,7 @@
     "MONEY": 47,
     "SNOW": 0
    },
-   "rank": 7
+   "rank": 6
   },
   {
    "slug": "sunday_river",
@@ -775,9 +675,9 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
+       "horizon_days": 14,
        "snowfall_p50_cm": 4,
-       "p50_cm": 15
+       "p50_cm": 10
       },
       "GFS": {
        "members": 31,
@@ -819,6 +719,106 @@
    "score": 20.0,
    "score_parts": {
     "MONEY": 40,
+    "SNOW": 0
+   },
+   "rank": 7
+  },
+  {
+   "slug": "sugarbush_resort",
+   "label": "Sugarbush",
+   "country": "US",
+   "area": "Vermont",
+   "lat": 44.14817,
+   "lon": -72.90809,
+   "top_m": 1238,
+   "base_m": 461,
+   "km": 80.0,
+   "lifts": 18,
+   "opens": "2026-11-21",
+   "pass_day_eur": 181.07,
+   "pass_day_walkup": 181.07,
+   "pass_day_multi_eur": 120.34,
+   "pass_multi": {
+    "days": 4,
+    "price": 529.0,
+    "ccy": "USD",
+    "per_day": 132.25,
+    "estimated": false,
+    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
+    "src": "https://www.ikonpass.com/en/passes/session-pass"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 199.0,
+    "regular": 129.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day, online advance; Sugarbush publishes a flat weekday ($129) / weekend ($199) adult online price rather than per-day dynamic calendar pricing for 2026-27 (Ikon-partner resort); holiday period treated as weekend-tier pricing",
+   "pass_src": "https://www.sugarbush.com/plan-your-trip/lift-tickets",
+   "night_eur": 118.29,
+   "food_day_eur": 59.14,
+   "stay_src": "estimate: based on general Mad River Valley (Warren/Waitsfield VT) lodging cost tier, similar to Killington/Okemo, plus ~$20-25 on-mountain lunch",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 5,
+    "start": {
+     "cm": 10,
+     "p20": 5,
+     "p50": 10,
+     "p80": 20,
+     "p_ge50": 0.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 20,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 4,
+       "p50_cm": 15
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 19,
+       "p50_cm": 10
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 722,
+    "hotel_eur": 828,
+    "food_eur": 414,
+    "total_eur": 1964,
+    "pass_basis": "advance 4-day pass",
+    "pass_walkup": 1086,
+    "party_total_eur": 1964,
+    "left_eur": -964,
+    "need_eur": 964,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.08,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,964 EUR per person",
+    "~10 cm at the start",
+    "4-day pass 529 USD"
+   ],
+   "score": 12.5,
+   "score_parts": {
+    "MONEY": 25,
     "SNOW": 0
    },
    "rank": 8
@@ -866,7 +866,7 @@
     "now_cm": 0,
     "start": {
      "cm": 10,
-     "p20": 5,
+     "p20": 0,
      "p50": 10,
      "p80": 20,
      "p_ge50": 0.0,
@@ -875,9 +875,9 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 9,
-       "p50_cm": 15
+       "horizon_days": 14,
+       "snowfall_p50_cm": 7,
+       "p50_cm": 10
       },
       "GFS": {
        "members": 31,

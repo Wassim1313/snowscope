@@ -68,16 +68,16 @@
      "cm": 50,
      "p20": 45,
      "p50": 50,
-     "p80": 65,
-     "p_ge50": 0.4,
+     "p80": 60,
+     "p_ge50": 0.38,
      "basis": "ensemble+climatology",
      "normal_cm": 90,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 15,
-       "p50_cm": 60
+       "horizon_days": 14,
+       "snowfall_p50_cm": 13,
+       "p50_cm": 55
       },
       "GFS": {
        "members": 31,
@@ -122,105 +122,6 @@
     "SNOW": 100
    },
    "rank": 1
-  },
-  {
-   "slug": "are",
-   "label": "Åre",
-   "country": "SE",
-   "area": "Jamtland",
-   "lat": 63.40571,
-   "lon": 13.02728,
-   "top_m": 1318,
-   "base_m": 389,
-   "km": 116.0,
-   "lifts": 48,
-   "opens": "2026-12-12",
-   "pass_day_eur": 74.47,
-   "pass_day_walkup": 74.47,
-   "pass_day_multi_eur": 54.54,
-   "pass_multi": {
-    "days": 6,
-    "price": 3669.0,
-    "ccy": "SEK",
-    "per_day": 611.5,
-    "estimated": false,
-    "note": "6-8 day SkiPass flat price band, advance-online rate (same-day 3919 SEK)",
-    "src": "https://www.skistar.com/sv/boka-online/skipass/are"
-   },
-   "pass_day_local": {
-    "ccy": "SEK",
-    "holiday": 835.0,
-    "regular": 750.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "SkiStar dynamic pricing; 835 SEK reported as the 2026-27 adult day rate (peak weeks), 750 SEK the from-price in lower-demand periods",
-   "pass_src": "https://www.freeride.se/liftkortspriser-sverige-fjallen/",
-   "night_eur": 80.27,
-   "food_day_eur": 35.67,
-   "stay_src": "estimate: Are village hotels ~110-180 USD/night per room on booking.com (~SEK 1000-1900 total for 2); on-mountain dagens lunch 120-180 SEK + village dinner 200-400 SEK",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 30,
-    "start": {
-     "cm": 40,
-     "p20": 35,
-     "p50": 40,
-     "p80": 45,
-     "p_ge50": 0.12,
-     "basis": "ensemble+climatology",
-     "normal_cm": 50,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 40
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 17,
-       "p50_cm": 35
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 327,
-    "hotel_eur": 562,
-    "food_eur": 250,
-    "total_eur": 1139,
-    "pass_basis": "advance 6-day pass",
-    "pass_walkup": 447,
-    "party_total_eur": 1139,
-    "left_eur": -139,
-    "need_eur": 139,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "MID",
-    "hotel": "MID",
-    "pistes": "MID",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.73,
-   "pros": [
-    "48 lifts"
-   ],
-   "cons": [
-    "1,139 EUR per person",
-    "~40 cm at the start"
-   ],
-   "score": 80.9,
-   "score_parts": {
-    "MONEY": 87,
-    "SNOW": 75
-   },
-   "rank": 2
   },
   {
    "slug": "salen",
@@ -274,8 +175,8 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 10,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 7,
        "p50_cm": 30
       },
       "GFS": {
@@ -317,6 +218,105 @@
    "score_parts": {
     "MONEY": 100,
     "SNOW": 50
+   },
+   "rank": 2
+  },
+  {
+   "slug": "are",
+   "label": "Åre",
+   "country": "SE",
+   "area": "Jamtland",
+   "lat": 63.40571,
+   "lon": 13.02728,
+   "top_m": 1318,
+   "base_m": 389,
+   "km": 116.0,
+   "lifts": 48,
+   "opens": "2026-12-12",
+   "pass_day_eur": 74.47,
+   "pass_day_walkup": 74.47,
+   "pass_day_multi_eur": 54.54,
+   "pass_multi": {
+    "days": 6,
+    "price": 3669.0,
+    "ccy": "SEK",
+    "per_day": 611.5,
+    "estimated": false,
+    "note": "6-8 day SkiPass flat price band, advance-online rate (same-day 3919 SEK)",
+    "src": "https://www.skistar.com/sv/boka-online/skipass/are"
+   },
+   "pass_day_local": {
+    "ccy": "SEK",
+    "holiday": 835.0,
+    "regular": 750.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "SkiStar dynamic pricing; 835 SEK reported as the 2026-27 adult day rate (peak weeks), 750 SEK the from-price in lower-demand periods",
+   "pass_src": "https://www.freeride.se/liftkortspriser-sverige-fjallen/",
+   "night_eur": 80.27,
+   "food_day_eur": 35.67,
+   "stay_src": "estimate: Are village hotels ~110-180 USD/night per room on booking.com (~SEK 1000-1900 total for 2); on-mountain dagens lunch 120-180 SEK + village dinner 200-400 SEK",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 30,
+    "start": {
+     "cm": 35,
+     "p20": 35,
+     "p50": 35,
+     "p80": 45,
+     "p_ge50": 0.09,
+     "basis": "ensemble+climatology",
+     "normal_cm": 50,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 6,
+       "p50_cm": 40
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 17,
+       "p50_cm": 35
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 327,
+    "hotel_eur": 562,
+    "food_eur": 250,
+    "total_eur": 1139,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 447,
+    "party_total_eur": 1139,
+    "left_eur": -139,
+    "need_eur": 139,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.64,
+   "pros": [
+    "48 lifts"
+   ],
+   "cons": [
+    "1,139 EUR per person",
+    "~35 cm at the start"
+   ],
+   "score": 74.6,
+   "score_parts": {
+    "MONEY": 87,
+    "SNOW": 62
    },
    "rank": 3
   },
@@ -372,8 +372,8 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 7,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 5,
        "p50_cm": 35
       },
       "GFS": {
@@ -466,14 +466,14 @@
      "p20": 20,
      "p50": 25,
      "p80": 35,
-     "p_ge50": 0.04,
+     "p_ge50": 0.03,
      "basis": "ensemble+climatology",
      "normal_cm": 55,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 13,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 10,
        "p50_cm": 30
       },
       "GFS": {
@@ -565,15 +565,15 @@
      "cm": 20,
      "p20": 15,
      "p50": 20,
-     "p80": 30,
-     "p_ge50": 0.01,
+     "p80": 25,
+     "p_ge50": 0.0,
      "basis": "ensemble+climatology",
      "normal_cm": 60,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 13,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 12,
        "p50_cm": 25
       },
       "GFS": {
@@ -665,15 +665,15 @@
      "cm": 15,
      "p20": 10,
      "p50": 15,
-     "p80": 25,
+     "p80": 20,
      "p_ge50": 0.0,
      "basis": "ensemble+climatology",
      "normal_cm": 55,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 9,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 8,
        "p50_cm": 20
       },
       "GFS": {
@@ -771,9 +771,9 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 20
+       "horizon_days": 14,
+       "snowfall_p50_cm": 8,
+       "p50_cm": 15
       },
       "GFS": {
        "members": 31,
@@ -870,8 +870,8 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 8,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 7,
        "p50_cm": 20
       },
       "GFS": {
@@ -970,8 +970,8 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 8,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 6,
        "p50_cm": 20
       },
       "GFS": {
