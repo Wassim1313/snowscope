@@ -1,0 +1,644 @@
+{
+ "id": "2026-11-06-alps-deepest",
+ "slug": "alps-snow-depth-today-6-november-2026",
+ "date": "2026-11-06",
+ "published_utc": "2026-11-06T11:31:00Z",
+ "updated_utc": "2026-11-06T11:31:00Z",
+ "region": "ALPS",
+ "angle": "deepest",
+ "score": 53.0,
+ "signature": "bonneval_sur_arc:50|la_grave:50|orelle:50",
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "Alps",
+  "date": "2026-11-06",
+  "weekday": "Friday",
+  "model_run": "2026-11-05",
+  "forecast_days": [
+   "2026-11-07",
+   "2026-11-08",
+   "2026-11-09"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 39100,
+   "resorts_with_snow": 725,
+   "resorts_in_region": 1178
+  },
+  "region_before": {
+   "date": "2026-11-04",
+   "snow_covered_area_km2": 47470,
+   "resorts_with_snow": 794
+  },
+  "region_forecast": {
+   "date": "2026-11-09",
+   "snow_covered_area_km2": 40240,
+   "resorts_with_snow": 774
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Bonneval-sur-Arc",
+    "country": "France",
+    "top_m": 2948,
+    "base_m": 1794,
+    "depth_cm_upper_slopes_today": 52,
+    "new_cm_last_24h": 7,
+    "new_cm_last_72h": 32,
+    "new_cm_forecast_next_days": 7,
+    "slug": "bonneval_sur_arc",
+    "new_cm_by_day": {
+     "2026-11-04": 13,
+     "2026-11-05": 12,
+     "2026-11-06": 7,
+     "2026-11-07": 1,
+     "2026-11-08": 0,
+     "2026-11-09": 6
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1794,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 1
+     },
+     "mid": {
+      "elev_m": 2371,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 13
+     },
+     "top": {
+      "elev_m": 2948,
+      "depth_cm_model": 21,
+      "new_cm_next_7_days": 20
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-06": {
+      "min": 2140,
+      "max": 2410
+     },
+     "2026-11-07": {
+      "min": 1930,
+      "max": 2360
+     },
+     "2026-11-08": {
+      "min": 1860,
+      "max": 2410
+     },
+     "2026-11-09": {
+      "min": 2250,
+      "max": 2610
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-01"
+    }
+   },
+   {
+    "name": "La Grave",
+    "country": "France",
+    "top_m": 3543,
+    "base_m": 3196,
+    "depth_cm_upper_slopes_today": 52,
+    "new_cm_last_24h": 16,
+    "new_cm_last_72h": 25,
+    "new_cm_forecast_next_days": 15,
+    "slug": "la_grave",
+    "new_cm_by_day": {
+     "2026-11-04": 3,
+     "2026-11-05": 6,
+     "2026-11-06": 16,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 15
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3196,
+      "depth_cm_model": 34,
+      "new_cm_next_7_days": 40
+     },
+     "mid": {
+      "elev_m": 3369,
+      "depth_cm_model": 39,
+      "new_cm_next_7_days": 42
+     },
+     "top": {
+      "elev_m": 3543,
+      "depth_cm_model": 40,
+      "new_cm_next_7_days": 44
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-06": {
+      "min": 2630,
+      "max": 2880
+     },
+     "2026-11-07": {
+      "min": 2600,
+      "max": 3210
+     },
+     "2026-11-08": {
+      "min": 2500,
+      "max": 3210
+     },
+     "2026-11-09": {
+      "min": 2790,
+      "max": 2790
+     }
+    },
+    "past_winters": {
+     "height_m": 3369,
+     "snow_cm_at_this_height_today_model": 4,
+     "deeper_than_n_of_past_winters": 9,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 36
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-01"
+    }
+   },
+   {
+    "name": "Orelle",
+    "country": "France",
+    "top_m": 3221,
+    "base_m": 2338,
+    "depth_cm_upper_slopes_today": 52,
+    "new_cm_last_24h": 6,
+    "new_cm_last_72h": 12,
+    "new_cm_forecast_next_days": 6,
+    "slug": "orelle",
+    "new_cm_by_day": {
+     "2026-11-04": 4,
+     "2026-11-05": 4,
+     "2026-11-06": 6,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 6
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2338,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 17
+     },
+     "mid": {
+      "elev_m": 2779,
+      "depth_cm_model": 14,
+      "new_cm_next_7_days": 22
+     },
+     "top": {
+      "elev_m": 3221,
+      "depth_cm_model": 33,
+      "new_cm_next_7_days": 25
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-06": {
+      "min": 2300,
+      "max": 2630
+     },
+     "2026-11-07": {
+      "min": 2280,
+      "max": 2780
+     },
+     "2026-11-08": {
+      "min": 2390,
+      "max": 2780
+     },
+     "2026-11-09": {
+      "min": 2640,
+      "max": 2820
+     }
+    },
+    "past_winters": {
+     "height_m": 2779,
+     "snow_cm_at_this_height_today_model": 1,
+     "deeper_than_n_of_past_winters": 5,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 26
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-01"
+    }
+   },
+   {
+    "name": "Les Deux Alpes",
+    "country": "France",
+    "top_m": 3511,
+    "base_m": 1284,
+    "depth_cm_upper_slopes_today": 51,
+    "new_cm_last_24h": 13,
+    "new_cm_last_72h": 20,
+    "new_cm_forecast_next_days": 15,
+    "slug": "les_deux_alpes",
+    "new_cm_by_day": {
+     "2026-11-04": 3,
+     "2026-11-05": 4,
+     "2026-11-06": 13,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 15
+    }
+   },
+   {
+    "name": "Pralognan-la-Vanoise",
+    "country": "France",
+    "top_m": 2336,
+    "base_m": 1406,
+    "depth_cm_upper_slopes_today": 41,
+    "new_cm_last_24h": 5,
+    "new_cm_last_72h": 11,
+    "new_cm_forecast_next_days": 7,
+    "slug": "pralognan_la_vanoise",
+    "new_cm_by_day": {
+     "2026-11-04": 4,
+     "2026-11-05": 4,
+     "2026-11-06": 5,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 7
+    }
+   }
+  ],
+  "measured_at_stations": [
+   {
+    "station": "Rosskar",
+    "elev_m": 2680,
+    "depth_cm_measured": 32,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-02",
+    "network": "euregio"
+   },
+   {
+    "station": "Plattkopf",
+    "elev_m": 2220,
+    "depth_cm_measured": 30,
+    "new_cm_measured_24h": 8,
+    "measured_on": "2026-11-02",
+    "network": "euregio"
+   },
+   {
+    "station": "Pian Camuno Roncaglia SCM2",
+    "elev_m": 600,
+    "depth_cm_measured": 26,
+    "new_cm_measured_24h": null,
+    "measured_on": "2026-11-01",
+    "network": "lombardia"
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Bonneval-sur-Arc",
+     "slug": "bonneval_sur_arc",
+     "now_cm": 18,
+     "usual_cm": 14,
+     "high_cm": 46,
+     "week_ago_cm": 5,
+     "height_m": 2371,
+     "best_weeks": [
+      10,
+      11,
+      9
+     ],
+     "ratio_pct": 129
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Bonneval-sur-Arc",
+   "top_cm": 21,
+   "top_m": 2948,
+   "base_cm": 1,
+   "base_m": 1794,
+   "next_cm": 7,
+   "second": "La Grave",
+   "second_cm": 52,
+   "depth_cm": 52
+  },
+  "story": {
+   "id": "height_gap",
+   "place": "resort:bonneval_sur_arc",
+   "score": 46,
+   "resort": "Bonneval-sur-Arc"
+  }
+ },
+ "media": [
+  {
+   "id": "photo",
+   "kind": "photo",
+   "file": "blog/media/2026/11/alps-snow-depth-today-6-november-2026/photo.webp",
+   "thumb": "blog/media/2026/11/alps-snow-depth-today-6-november-2026/photo_t.webp",
+   "bytes": 160036,
+   "w": 1200,
+   "h": 630,
+   "credit": {
+    "source": "Wikimedia Commons, Florian Pépellin",
+    "link": "https://commons.wikimedia.org/wiki/File:Bonneval-sur-Arc_et_piste_de_ski_de_fond_(f%C3%A9vrier_2023)_2.JPG",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+   }
+  },
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/alps-snow-depth-today-6-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/alps-snow-depth-today-6-november-2026/map_t.webp",
+   "bytes": 50750
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Alps snow depth today: Bonneval-sur-Arc leads with 52 cm (6 November)",
+   "description": "Bonneval-sur-Arc (France) has the deepest snow in the Alps today, with about 52 cm on its upper slopes. La Grave follows with 52 cm, then Orelle with …",
+   "lede": "Bonneval-sur-Arc (France) has the deepest snow in the Alps today, with about 52 cm on its upper slopes. La Grave follows with 52 cm, then Orelle with 52 cm. Our snow model shows 39,100 km² of snow-covered ground in the Alps today, with snow at 725 of 1,178 resorts.",
+   "sections": [
+    {
+     "h": "Today's snow",
+     "p": [
+      "The snow cover shrank from 47,470 km² on 4 November to 39,100 km² today, and our forecast gives 40,240 km² on 9 November.",
+      "Height matters: at Bonneval-sur-Arc, our model gives 21 cm at the top (2,948 m), 6 cm at mid-mountain (2,371 m) and 1 cm at the base (1,794 m)."
+     ]
+    },
+    {
+     "h": "Top and bottom are two different worlds",
+     "p": [
+      "The top of Bonneval-sur-Arc has about 21 cm at 2,948 m, the bottom about 1 cm at 1,794 m.",
+      "Ski the upper lifts and plan to ride down by lift if the lower runs are thin.",
+      "At about 2,371 m, Bonneval-sur-Arc has 18 cm today; a normal 6 November has 14 cm there.",
+      "Only one winter in ten has more than 46 cm on this date.",
+      "A week ago the same spot had 5 cm.",
+      "In past winters the best snow at Bonneval-sur-Arc usually came early March / mid-March.",
+      "Day by day at Bonneval-sur-Arc: Friday 6 November 7 cm; Saturday 7 November 1 cm; Monday 9 November 6 cm.",
+      "Height by height at Bonneval-sur-Arc: 1,794 m 1 cm on the ground, 1 cm more in the next 7 days; 2,371 m 6 cm on the ground, 13 cm more in the next 7 days; 2,948 m 21 cm on the ground, 20 cm more in the next 7 days."
+     ]
+    },
+    {
+     "h": "Measured on the ground",
+     "p": [
+      "The Rosskar station (2,680 m) measured 32 cm of snow on the ground on 2 November. The Plattkopf station (2,220 m) measured 30 cm of snow on the ground on 2 November, with 8 cm of new snow in 24 hours. The Pian Camuno Roncaglia SCM2 station (600 m) measured 26 cm of snow on the ground on 1 November.",
+      "Keep in mind: resort values come from our snow model and describe an area, while stations measure one point."
+     ]
+    },
+    {
+     "h": "Is it a good start?",
+     "p": [
+      "At 3,369 m on La Grave the season is late: our model has only 4 cm today, below the usual 36 cm. Only 9 of the past 46 winters had less snow there on 6 November.",
+      "At 2,779 m on Orelle the season is late: our model has only 1 cm today, below the usual 26 cm. Only 5 of the past 46 winters had less snow there on 6 November."
+     ]
+    },
+    {
+     "h": "The next days",
+     "p": [
+      "More snow is on the way: by 9 November our forecast gives 15 cm at La Grave, 15 cm at Les Deux Alpes and 7 cm at Bonneval-sur-Arc.",
+      "At Bonneval-sur-Arc, the freezing level reaches 2,250 m to 2,610 m on 9 November, so the lower slopes may get wet snow while the top stays wintry.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "Look for snow high up and on north-facing slopes: they keep it longest, while south-facing slopes lose it first in the sun.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Bonneval-sur-Arc gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the Alps on 6 November 2026 (SnowScope snow model): Bonneval-sur-Arc, La Grave, Orelle, Les Deux Alpes, Pralognan-la-Vanoise.",
+    "photo": "Bonneval-sur-Arc"
+   }
+  },
+  "fr": {
+   "title": "Neige dans les Alpes : Bonneval-sur-Arc en tête avec 52 cm (6 novembre)",
+   "description": "Bonneval-sur-Arc (France) a la neige la plus épaisse dans les Alpes aujourd'hui, avec environ 52 cm sur le haut du domaine. Suivent La Grave avec …",
+   "lede": "Bonneval-sur-Arc (France) a la neige la plus épaisse dans les Alpes aujourd'hui, avec environ 52 cm sur le haut du domaine. Suivent La Grave avec 52 cm, puis Orelle avec 52 cm. 725 stations sur 1 178 dans les Alpes ont de la neige sur le haut du domaine aujourd'hui, et notre modèle compte 39 100 km² de surface enneigée.",
+   "sections": [
+    {
+     "h": "Où est la neige aujourd'hui",
+     "p": [
+      "La surface enneigée est passée de 47 470 km² le 4 novembre à 39 100 km² aujourd'hui, et notre prévision donne 40 240 km² le 9 novembre.",
+      "L'altitude compte : à Bonneval-sur-Arc, notre modèle donne 21 cm au sommet (2 948 m), 6 cm à mi-pente (2 371 m) et 1 cm en bas (1 794 m)."
+     ]
+    },
+    {
+     "h": "Le haut et le bas, deux mondes",
+     "p": [
+      "Le haut de Bonneval-sur-Arc compte environ 21 cm à 2 948 m, le bas environ 1 cm à 1 794 m.",
+      "Skiez sur les remontées du haut et prévoyez de redescendre en remontée si le bas est trop maigre.",
+      "Vers 2 371 m, Bonneval-sur-Arc a 18 cm aujourd'hui ; un 6 novembre normal y compte 14 cm.",
+      "Un hiver sur dix seulement dépasse 46 cm à cette date.",
+      "Il y a une semaine, le même endroit avait 5 cm.",
+      "Les hivers passés, la meilleure neige à Bonneval-sur-Arc arrivait d'habitude début mars / mi-mars.",
+      "Jour après jour à Bonneval-sur-Arc : vendredi 6 novembre 7 cm; samedi 7 novembre 1 cm; lundi 9 novembre 6 cm.",
+      "Altitude par altitude à Bonneval-sur-Arc : 1 794 m 1 cm au sol, 1 cm de plus dans les 7 prochains jours; 2 371 m 6 cm au sol, 13 cm de plus dans les 7 prochains jours; 2 948 m 21 cm au sol, 20 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
+     "h": "Ce que mesurent les stations",
+     "p": [
+      "La station de mesure Rosskar (2 680 m) a mesuré 32 cm de neige au sol le 2 novembre. La station de mesure Plattkopf (2 220 m) a mesuré 30 cm de neige au sol le 2 novembre, dont 8 cm de neige fraîche en 24 heures. La station de mesure Pian Camuno Roncaglia SCM2 (600 m) a mesuré 26 cm de neige au sol le 1 novembre.",
+      "Les chiffres des stations de ski sont des estimations du modèle pour le haut du domaine ; ceux des stations de mesure sont mesurés en un point, à la date indiquée."
+     ]
+    },
+    {
+     "h": "Comparé aux hivers passés",
+     "p": [
+      "À 3 369 m à La Grave, la saison est en retard : notre modèle ne donne que 4 cm, moins que les 36 cm habituels. Seuls 9 des 46 hivers passés avaient moins de neige à cet endroit un 6 novembre.",
+      "À 2 779 m à Orelle, la saison est en retard : notre modèle ne donne que 1 cm, moins que les 26 cm habituels. Seuls 5 des 46 hivers passés avaient moins de neige à cet endroit un 6 novembre."
+     ]
+    },
+    {
+     "h": "Ce qui arrive",
+     "p": [
+      "D'ici le 9 novembre, notre prévision donne 15 cm à La Grave, 15 cm à Les Deux Alpes et 7 cm à Bonneval-sur-Arc.",
+      "À Bonneval-sur-Arc, l'isotherme 0 °C monte entre 2 250 m et 2 610 m le 9 novembre : le bas du domaine peut recevoir de la neige mouillée, le haut reste bien hivernal.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Cherchez la neige en altitude et sur les pentes orientées au nord : elles la gardent le plus longtemps, les pentes sud la perdent en premier.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Bonneval-sur-Arc reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans les Alpes le 6 novembre 2026 (modèle de neige SnowScope) : Bonneval-sur-Arc, La Grave, Orelle, Les Deux Alpes, Pralognan-la-Vanoise.",
+    "photo": "Bonneval-sur-Arc"
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  },
+  "fr": {
+   "writer": "template"
+  }
+ },
+ "words_en": 617,
+ "indexable": true,
+ "main": {
+  "slug": "bonneval_sur_arc",
+  "name": "Bonneval-sur-Arc",
+  "lat": 45.3614,
+  "lon": 7.0569
+ },
+ "places": [
+  {
+   "name": "Bonneval-sur-Arc",
+   "lat": 45.3614,
+   "lon": 7.0569
+  },
+  {
+   "name": "La Grave",
+   "lat": 45.0195,
+   "lon": 6.2771
+  },
+  {
+   "name": "Orelle",
+   "lat": 45.2542,
+   "lon": 6.5773
+  },
+  {
+   "name": "Les Deux Alpes",
+   "lat": 45.0083,
+   "lon": 6.15
+  },
+  {
+   "name": "Pralognan-la-Vanoise",
+   "lat": 45.3852,
+   "lon": 6.7334
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "bonneval_sur_arc",
+   "name": "Bonneval-sur-Arc"
+  },
+  {
+   "slug": "la_grave",
+   "name": "La Grave"
+  },
+  {
+   "slug": "orelle",
+   "name": "Orelle"
+  },
+  {
+   "slug": "les_deux_alpes",
+   "name": "Les Deux Alpes"
+  },
+  {
+   "slug": "pralognan_la_vanoise",
+   "name": "Pralognan-la-Vanoise"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "bonneval_sur_arc",
+    "name": "Bonneval-sur-Arc",
+    "depth": 52,
+    "new72": 32,
+    "next": 7,
+    "top_m": 2948
+   },
+   {
+    "slug": "la_grave",
+    "name": "La Grave",
+    "depth": 52,
+    "new72": 25,
+    "next": 15,
+    "top_m": 3543
+   },
+   {
+    "slug": "orelle",
+    "name": "Orelle",
+    "depth": 52,
+    "new72": 12,
+    "next": 6,
+    "top_m": 3221
+   },
+   {
+    "slug": "les_deux_alpes",
+    "name": "Les Deux Alpes",
+    "depth": 51,
+    "new72": 20,
+    "next": 15,
+    "top_m": 3511
+   },
+   {
+    "slug": "pralognan_la_vanoise",
+    "name": "Pralognan-la-Vanoise",
+    "depth": 41,
+    "new72": 11,
+    "next": 7,
+    "top_m": 2336
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "EAWS (Alps)",
+   "url": "https://www.avalanches.org/"
+  }
+ ],
+ "trip_day": "2026-11-07",
+ "map_link": "https://snowscope.app/#@45.361,7.057,9.0",
+ "seconds": 0.0,
+ "publish_utc": "2026-11-06T11:31:00Z",
+ "rewrite": {
+  "v": 1,
+  "story": "height_gap",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 617,
+  "overlap": 44.4,
+  "with": "western-canada-snow-depth-today-5-november-2026",
+  "langs_off": [],
+  "score": 97.4,
+  "intent": "resort:bonneval_sur_arc|height_gap",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ },
+ "cover": {
+  "v": 1,
+  "style": "hero",
+  "files": {
+   "en": [
+    "blog/media/2026/11/alps-snow-depth-today-6-november-2026/cover-en.webp",
+    "blog/media/2026/11/alps-snow-depth-today-6-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/alps-snow-depth-today-6-november-2026/cover-fr.webp",
+    "blog/media/2026/11/alps-snow-depth-today-6-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": {
+   "source": "Wikimedia Commons, Florian Pépellin",
+   "link": "https://commons.wikimedia.org/wiki/File:Bonneval-sur-Arc_et_piste_de_ski_de_fond_(f%C3%A9vrier_2023)_2.JPG",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "photo": null
+ }
+}

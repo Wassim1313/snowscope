@@ -1,0 +1,524 @@
+{
+ "id": "2026-11-15-ca_west-powder",
+ "slug": "western-canada-manning-park-resort-fresh-snow-powder-alert-15-november-2026",
+ "date": "2026-11-15",
+ "published_utc": "2026-11-15T16:33:57Z",
+ "updated_utc": "2026-11-15T16:33:57Z",
+ "region": "CA_WEST",
+ "angle": "powder",
+ "score": 88,
+ "signature": "whistler:80|mount_cain_alpine_park:70|manning_park_resort:10",
+ "keyword": {
+  "family": "fresh-snow",
+  "entity": "manning_park_resort",
+  "region": "CA_WEST",
+  "date": "2026-11-15"
+ },
+ "tags": [
+  "powder",
+  "stations",
+  "where-to-ski",
+  "avalanche"
+ ],
+ "facts": {
+  "angle": "powder_alert",
+  "region": "Western Canada",
+  "date": "2026-11-15",
+  "weekday": "Sunday",
+  "model_run": "2026-11-15",
+  "forecast_days": [
+   "2026-11-16",
+   "2026-11-17",
+   "2026-11-18"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 253880,
+   "resorts_with_snow": 41,
+   "resorts_in_region": 57
+  },
+  "region_before": {
+   "date": "2026-11-13",
+   "snow_covered_area_km2": 258160,
+   "resorts_with_snow": 40
+  },
+  "region_forecast": {
+   "date": "2026-11-18",
+   "snow_covered_area_km2": 298900,
+   "resorts_with_snow": 41
+  },
+  "question": "Where did fresh snow fall in the last 72 hours, and is more coming?",
+  "resorts": [
+   {
+    "name": "Whistler Blackcomb",
+    "country": "Canada",
+    "top_m": 2259,
+    "base_m": 653,
+    "depth_cm_upper_slopes_today": 138,
+    "new_cm_last_24h": 49,
+    "new_cm_last_72h": 82,
+    "new_cm_forecast_next_days": 13,
+    "slug": "whistler",
+    "new_cm_by_day": {
+     "2026-11-13": 6,
+     "2026-11-14": 27,
+     "2026-11-15": 49,
+     "2026-11-16": 13,
+     "2026-11-17": 0,
+     "2026-11-18": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 653,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 1
+     },
+     "mid": {
+      "elev_m": 1456,
+      "depth_cm_model": 48,
+      "new_cm_next_7_days": 26
+     },
+     "top": {
+      "elev_m": 2259,
+      "depth_cm_model": 103,
+      "new_cm_next_7_days": 39
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-15": {
+      "min": 1040,
+      "max": 1580
+     },
+     "2026-11-16": {
+      "min": 720,
+      "max": 1300
+     },
+     "2026-11-17": {
+      "min": 0,
+      "max": 1200
+     },
+     "2026-11-18": {
+      "min": 0,
+      "max": 40
+     }
+    },
+    "past_winters": {
+     "height_m": 1456,
+     "snow_cm_at_this_height_today_model": 31,
+     "deeper_than_n_of_past_winters": 2,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 98
+    }
+   },
+   {
+    "name": "Mount Cain Alpine Park",
+    "country": "Canada",
+    "top_m": 1616,
+    "base_m": 1190,
+    "depth_cm_upper_slopes_today": 97,
+    "new_cm_last_24h": 47,
+    "new_cm_last_72h": 66,
+    "new_cm_forecast_next_days": 9,
+    "slug": "mount_cain_alpine_park",
+    "new_cm_by_day": {
+     "2026-11-13": 4,
+     "2026-11-14": 15,
+     "2026-11-15": 47,
+     "2026-11-16": 9,
+     "2026-11-17": 0,
+     "2026-11-18": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1190,
+      "depth_cm_model": 4,
+      "new_cm_next_7_days": 12
+     },
+     "mid": {
+      "elev_m": 1403,
+      "depth_cm_model": 23,
+      "new_cm_next_7_days": 19
+     },
+     "top": {
+      "elev_m": 1616,
+      "depth_cm_model": 66,
+      "new_cm_next_7_days": 25
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-15": {
+      "min": 900,
+      "max": 1290
+     },
+     "2026-11-16": {
+      "min": 500,
+      "max": 1060
+     },
+     "2026-11-17": {
+      "min": 170,
+      "max": 1070
+     },
+     "2026-11-18": {
+      "min": 260,
+      "max": 430
+     }
+    },
+    "past_winters": {
+     "height_m": 1403,
+     "snow_cm_at_this_height_today_model": 32,
+     "deeper_than_n_of_past_winters": 27,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 26
+    },
+    "reliability": {
+     "range_cm": [
+      66,
+      66
+     ],
+     "mixed": true,
+     "snow_line_m": 1440.0,
+     "height_m": 1616
+    }
+   },
+   {
+    "name": "Manning Park Resort",
+    "country": "Canada",
+    "top_m": 1789,
+    "base_m": 1359,
+    "depth_cm_upper_slopes_today": 31,
+    "new_cm_last_24h": 8,
+    "new_cm_last_72h": 11,
+    "new_cm_forecast_next_days": 2,
+    "slug": "manning_park_resort",
+    "new_cm_by_day": {
+     "2026-11-13": 0,
+     "2026-11-14": 3,
+     "2026-11-15": 8,
+     "2026-11-16": 2,
+     "2026-11-17": 0,
+     "2026-11-18": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1359,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 1
+     },
+     "mid": {
+      "elev_m": 1574,
+      "depth_cm_model": 7,
+      "new_cm_next_7_days": 3
+     },
+     "top": {
+      "elev_m": 1789,
+      "depth_cm_model": 17,
+      "new_cm_next_7_days": 4
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-15": {
+      "min": 1290,
+      "max": 1680
+     },
+     "2026-11-16": {
+      "min": 590,
+      "max": 1560
+     },
+     "2026-11-17": {
+      "min": 500,
+      "max": 1400
+     },
+     "2026-11-18": {
+      "min": 470,
+      "max": 500
+     }
+    }
+   }
+  ],
+  "storm_cells_72h": [
+   {
+    "near": "Ski Callaghan",
+    "cm_in_72h": 118,
+    "km_from_resort": 26
+   },
+   {
+    "near": "Mount Washington Alpine Resort",
+    "cm_in_72h": 116,
+    "km_from_resort": 23
+   },
+   {
+    "near": "Sasquatch",
+    "cm_in_72h": 33,
+    "km_from_resort": 30
+   }
+  ],
+  "focus_index": 2,
+  "title_focus_resort": "Manning Park Resort",
+  "normal": {
+   "rows": [
+    {
+     "name": "Manning Park Resort",
+     "slug": "manning_park_resort",
+     "now_cm": 8,
+     "usual_cm": 37,
+     "high_cm": 82,
+     "week_ago_cm": 7,
+     "height_m": 1574,
+     "best_weeks": [
+      14,
+      13,
+      12
+     ],
+     "ratio_pct": 22
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Manning Park Resort",
+   "top_cm": 17,
+   "top_m": 1789,
+   "base_cm": 1,
+   "base_m": 1359,
+   "next_cm": 2
+  },
+  "story": {
+   "id": "best_week",
+   "place": "resort:manning_park_resort",
+   "score": 31,
+   "resort": "Manning Park Resort"
+  }
+ },
+ "media": [
+  {
+   "id": "map_new",
+   "kind": "new_map",
+   "file": "blog/media/2026/11/western-canada-manning-park-resort-fresh-snow-powder-alert-15-november-2026/map_new.webp",
+   "thumb": "blog/media/2026/11/western-canada-manning-park-resort-fresh-snow-powder-alert-15-november-2026/map_new_t.webp",
+   "bytes": 73370,
+   "snow_frac": 0.5146,
+   "weak": false
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"49\" class=\"vl\">6</text><rect x=\"235\" y=\"36\" width=\"39\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"277\" y=\"49\" class=\"vl\">27</text><rect x=\"315\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"49\" text-anchor=\"end\" class=\"vl in\">49</text><rect x=\"395\" y=\"36\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"49\" class=\"vl\">13</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"259\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"67\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"379\" y=\"83\" text-anchor=\"end\" class=\"vl in\">47</text><rect x=\"395\" y=\"70\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"411\" y=\"83\" class=\"vl\">9</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Manning Park Resort</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"117\" class=\"vl\">8</text><rect x=\"395\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"49\" class=\"vl\">6</text><rect x=\"235\" y=\"36\" width=\"39\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"277\" y=\"49\" class=\"vl\">27</text><rect x=\"315\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"49\" text-anchor=\"end\" class=\"vl in\">49</text><rect x=\"395\" y=\"36\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"49\" class=\"vl\">13</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"259\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"67\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"379\" y=\"83\" text-anchor=\"end\" class=\"vl in\">47</text><rect x=\"395\" y=\"70\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"411\" y=\"83\" class=\"vl\">9</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Manning Park Resort</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"117\" class=\"vl\">8</text><rect x=\"395\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"49\" class=\"vl\">6</text><rect x=\"235\" y=\"36\" width=\"39\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"277\" y=\"49\" class=\"vl\">27</text><rect x=\"315\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"49\" text-anchor=\"end\" class=\"vl in\">49</text><rect x=\"395\" y=\"36\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"49\" class=\"vl\">13</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"259\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"67\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"379\" y=\"83\" text-anchor=\"end\" class=\"vl in\">47</text><rect x=\"395\" y=\"70\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"411\" y=\"83\" class=\"vl\">9</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Manning Park Resort</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"117\" class=\"vl\">8</text><rect x=\"395\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"49\" class=\"vl\">6</text><rect x=\"235\" y=\"36\" width=\"39\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"277\" y=\"49\" class=\"vl\">27</text><rect x=\"315\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"49\" text-anchor=\"end\" class=\"vl in\">49</text><rect x=\"395\" y=\"36\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"49\" class=\"vl\">13</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"259\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"67\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"379\" y=\"83\" text-anchor=\"end\" class=\"vl in\">47</text><rect x=\"395\" y=\"70\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"411\" y=\"83\" class=\"vl\">9</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Manning Park Resort</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"117\" class=\"vl\">8</text><rect x=\"395\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"49\" class=\"vl\">6</text><rect x=\"235\" y=\"36\" width=\"39\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"277\" y=\"49\" class=\"vl\">27</text><rect x=\"315\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"49\" text-anchor=\"end\" class=\"vl in\">49</text><rect x=\"395\" y=\"36\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"49\" class=\"vl\">13</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"259\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"67\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"379\" y=\"83\" text-anchor=\"end\" class=\"vl in\">47</text><rect x=\"395\" y=\"70\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"411\" y=\"83\" class=\"vl\">9</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Manning Park Resort</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"117\" class=\"vl\">8</text><rect x=\"395\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"49\" class=\"vl\">6</text><rect x=\"235\" y=\"36\" width=\"39\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"277\" y=\"49\" class=\"vl\">27</text><rect x=\"315\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"49\" text-anchor=\"end\" class=\"vl in\">49</text><rect x=\"395\" y=\"36\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"49\" class=\"vl\">13</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"259\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"67\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"379\" y=\"83\" text-anchor=\"end\" class=\"vl in\">47</text><rect x=\"395\" y=\"70\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"411\" y=\"83\" class=\"vl\">9</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Manning Park Resort</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"117\" class=\"vl\">8</text><rect x=\"395\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "sv": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"Nysnö, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"49\" class=\"vl\">6</text><rect x=\"235\" y=\"36\" width=\"39\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"277\" y=\"49\" class=\"vl\">27</text><rect x=\"315\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"49\" text-anchor=\"end\" class=\"vl in\">49</text><rect x=\"395\" y=\"36\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"49\" class=\"vl\">13</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"259\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"67\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"379\" y=\"83\" text-anchor=\"end\" class=\"vl in\">47</text><rect x=\"395\" y=\"70\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"411\" y=\"83\" class=\"vl\">9</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Manning Park Resort</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"117\" class=\"vl\">8</text><rect x=\"395\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "nb": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"Nysnø, 72 t\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"49\" class=\"vl\">6</text><rect x=\"235\" y=\"36\" width=\"39\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"277\" y=\"49\" class=\"vl\">27</text><rect x=\"315\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"49\" text-anchor=\"end\" class=\"vl in\">49</text><rect x=\"395\" y=\"36\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"49\" class=\"vl\">13</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"259\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"67\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"379\" y=\"83\" text-anchor=\"end\" class=\"vl in\">47</text><rect x=\"395\" y=\"70\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"411\" y=\"83\" class=\"vl\">9</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Manning Park Resort</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"117\" class=\"vl\">8</text><rect x=\"395\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "fi": "<svg class=\"chart\" viewBox=\"0 0 640 142\" role=\"img\" aria-label=\"Uusi lumi, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">13/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">14/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">15/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">16/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">17/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">18/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"167\" y=\"49\" class=\"vl\">6</text><rect x=\"235\" y=\"36\" width=\"39\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"277\" y=\"49\" class=\"vl\">27</text><rect x=\"315\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"382\" y=\"49\" text-anchor=\"end\" class=\"vl in\">49</text><rect x=\"395\" y=\"36\" width=\"19\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"417\" y=\"49\" class=\"vl\">13</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"83\" class=\"vl\">4</text><rect x=\"235\" y=\"70\" width=\"21\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"259\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"67\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"379\" y=\"83\" text-anchor=\"end\" class=\"vl in\">47</text><rect x=\"395\" y=\"70\" width=\"13\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"411\" y=\"83\" class=\"vl\">9</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Manning Park Resort</text><rect x=\"155\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"104\" width=\"4\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"242\" y=\"117\" class=\"vl\">3</text><rect x=\"315\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"117\" class=\"vl\">8</text><rect x=\"395\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>",
+    "sv": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Tidigare dagar (modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognos</span></div>",
+    "nb": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Tidligere dager (modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "fi": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Menneet päivät (malli)</span><span><i style=\"background:var(--chart-fc)\"></i>Ennuste</span></div>"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Manning Park Resort 22 percent of normal; peak snow weeks 12-14",
+   "description": "Manning Park Resort has 22 percent of normal snow on 2026-11-15, with best historical snow arriving in weeks 12-14, still months away.",
+   "lede": "Manning Park Resort holds the least snow of three main resorts in this region, with just 31 cm on the upper slopes after 11 cm fell over the last three days. Historically, the deepest snow here arrives in weeks 12 to 14; for now, the site sits at 22 percent of normal for mid-November.",
+   "sections": [
+    {
+     "h": "Fresh snow fell across the high country",
+     "p": [
+      "Three distinct storm cells moved through Western Canada in the past 72 hours. The heaviest snow fell in the northern interior: near Ski Callaghan, models show 118 cm of new depth; Mount Washington Alpine Resort, 23 km away, recorded 116 cm in the same period.",
+      "Sasquatch, to the south, received only 33 cm. As systems move inland from the Pacific, they lose moisture and energy, so snow totals decline with distance from the ocean toward lower elevations in the south. This is why Manning Park, which sits further inland and south, received less."
+     ]
+    },
+    {
+     "h": "Whistler Blackcomb leads by a large margin",
+     "p": [
+      "Whistler Blackcomb received the most snow in the region, with 82 cm of new snow in 72 hours and now 138 cm on the upper slopes. Mount Cain Alpine Park also fared well with 66 cm new snow and 97 cm total on upper slopes.",
+      "Manning Park received only 11 cm, leaving 31 cm on upper slopes. The gap between these resorts reflects their locations: Whistler sits at 653 m base and 2,259 m summit and sits north and west, tall enough to squeeze moisture from passing systems. Manning Park's base is 1,359 m; it sits in a rain shadow to the south."
+     ]
+    },
+    {
+     "h": "Regional snow cover declined but should recover",
+     "p": [
+      "The region as a whole lost ground in the past two days. Snow-covered area fell from 258,160 km² on 2026-11-13 to 253,880 km² today as lower elevations thawed in milder air.",
+      "The number of resorts with snow held steady at 41 out of 57 total. However, another system is moving in and forecast to arrive by 2026-11-18, when the region is modelled to expand to 298,900 km² of snow cover. This pattern—systems bringing snow to high terrain, followed by warm spells—is typical in November."
+     ]
+    },
+    {
+     "h": "Manning Park shows why elevation and aspect matter",
+     "p": [
+      "Only 11 cm fell at Manning Park over three days, leaving the upper slopes at 31 cm total. Breaking this down by elevation: at the summit (1,789 m), the model shows 17 cm; at mid-elevation (1,574 m), just 7 cm; at the base (1,359 m), only 1 cm.",
+      "For mid-November, 7 cm at mid-elevation is just 19 percent of the usual depth. The freezing level on 2026-11-15 ranged from 1,290 m to 1,680 m, meaning the temperature hovered near the snow-to-rain boundary at mid-slope during part of the day. South-facing slopes likely received wet snow or rain."
+     ]
+    },
+    {
+     "h": "The best weeks historically are March and April",
+     "p": [
+      "At Manning Park, records show that deep snow arrives in weeks 12 to 14, which span late March and early April. The usual depth here in mid-November is 37 cm at mid-elevation; today's 7 cm is 19 percent of normal.",
+      "This gap will close gradually as systems arrive through December and January, then more rapidly as spring systems inject moisture. Early season snow is sparse everywhere on dry mountains; patience is required. For skiers planning a November trip, focus on higher resorts like Whistler or Mount Cain, which have better conditions."
+     ]
+    },
+    {
+     "h": "More snow is forecast; rocks may still be near",
+     "p": [
+      "Another 2 cm is expected at Manning Park on 2026-11-16, with the freezing level dropping sharply to 590 m to 1,560 m—a sign of colder, drier air. After 2026-11-16, models show no precipitation until the next system.",
+      "When snow is this thin (31 cm on upper slopes), rocks and vegetation are close to the surface. If you venture off-piste, check the official avalanche bulletin for your area first. Early-season powder skiing requires careful route-finding and conservative decision-making."
+     ]
+    }
+   ],
+   "advice": [
+    "At the highest elevations (above 1,750 m), rocks and vegetation are close to the surface; stay on established routes and move slowly. Thin coverage hides obstacles.",
+    "South-facing slopes at mid-elevation (1,500–1,700 m) may have received rain or wet snow when the freezing level reached 1,680 m on 2026-11-15. North-facing slopes with fresh powder are safer; check aspect carefully.",
+    "Skip the base areas entirely; at 1,359 m elevation, models show only 1 cm depth. All skiable snow is above 1,500 m; plan your route accordingly.",
+    "Before going off-piste, check the official avalanche bulletin for your area. Early-season snow is thin and irregular, with weak layering over frozen ground; stability cannot be assumed.",
+    "If Manning Park's thin snow discourages you, consider a drive north. Whistler has 138 cm and Mount Cain has 97 cm, 100+ km away. The elevation gain and latitude make a large difference in mid-November."
+   ],
+   "captions": {
+    "map_new": "Modelled new snow depth in 72 hours (2026-11-13 to 2026-11-15) across Western Canada. Heaviest accumulation (118 cm) near Ski Callaghan in the north; Manning Park received only 11 cm.",
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast)."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "voice": "field"
+  }
+ },
+ "words_en": 802,
+ "indexable": true,
+ "main": {
+  "slug": "manning_park_resort",
+  "name": "Manning Park Resort",
+  "lat": 49.077,
+  "lon": -120.8384
+ },
+ "places": [
+  {
+   "name": "Whistler Blackcomb",
+   "lat": 50.0888,
+   "lon": -122.9419
+  },
+  {
+   "name": "Mount Cain Alpine Park",
+   "lat": 50.2232,
+   "lon": -126.3468
+  },
+  {
+   "name": "Manning Park Resort",
+   "lat": 49.077,
+   "lon": -120.8384
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "whistler",
+   "name": "Whistler Blackcomb"
+  },
+  {
+   "slug": "mount_cain_alpine_park",
+   "name": "Mount Cain Alpine Park"
+  },
+  {
+   "slug": "manning_park_resort",
+   "name": "Manning Park Resort"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "whistler",
+    "name": "Whistler Blackcomb",
+    "depth": 138,
+    "new72": 82,
+    "next": 13,
+    "top_m": 2259
+   },
+   {
+    "slug": "mount_cain_alpine_park",
+    "name": "Mount Cain Alpine Park",
+    "depth": 97,
+    "new72": 66,
+    "next": 9,
+    "top_m": 1616
+   },
+   {
+    "slug": "manning_park_resort",
+    "name": "Manning Park Resort",
+    "depth": 31,
+    "new72": 11,
+    "next": 2,
+    "top_m": 1789
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Avalanche Canada",
+   "url": "https://avalanche.ca/"
+  }
+ ],
+ "trip_day": "2026-11-21",
+ "map_link": "https://snowscope.app/#@49.077,-120.838,9.0",
+ "seconds": 32.5,
+ "facts_used": 20,
+ "voice": "sat",
+ "media_ids": [
+  "map_new",
+  "bars"
+ ],
+ "overlap": {
+  "before": 68.3,
+  "after": 17.2,
+  "with": "western-canada-mount-cain-alpine-park-fresh-snow-powder-alert-12-november-2026",
+  "tries": 1
+ },
+ "similarity": {
+  "max": 0.198,
+  "with": "us-northeast-stratton-fresh-snow-powder-alert-13-november-2026"
+ },
+ "publish_utc": "2026-11-15T16:33:57Z",
+ "cover": {
+  "v": 1,
+  "style": "ranked",
+  "files": {
+   "en": [
+    "blog/media/2026/11/western-canada-manning-park-resort-fresh-snow-powder-alert-15-november-2026/cover-en.webp",
+    "blog/media/2026/11/western-canada-manning-park-resort-fresh-snow-powder-alert-15-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ },
+ "rewrite": {
+  "v": 1,
+  "story": "best_week",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 802,
+  "overlap": 2.6,
+  "with": "atlas-morocco-atlas-snow-check-6-november-2026",
+  "langs_off": [],
+  "score": 98.7,
+  "intent": "resort:manning_park_resort|best_week",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ }
+}

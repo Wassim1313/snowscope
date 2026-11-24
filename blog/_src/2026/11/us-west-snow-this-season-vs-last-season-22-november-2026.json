@@ -1,0 +1,469 @@
+{
+ "id": "2026-11-22-us_west-season",
+ "slug": "us-west-snow-this-season-vs-last-season-22-november-2026",
+ "date": "2026-11-22",
+ "published_utc": "2026-11-23T09:01:01Z",
+ "updated_utc": "2026-11-23T09:01:01Z",
+ "region": "US_WEST",
+ "angle": "season",
+ "score": 62,
+ "signature": "brian_head_resort:5|telluride_ski_area:3|mount_rose_ski_tahoe:7",
+ "keyword": {
+  "family": "vs-last-season",
+  "entity": "us_west",
+  "region": "US_WEST",
+  "date": "2026-11-22"
+ },
+ "tags": [
+  "past-winters",
+  "snow-depth",
+  "stations"
+ ],
+ "facts": {
+  "angle": "season_vs_last_season",
+  "region": "US West",
+  "date": "2026-11-22",
+  "weekday": "Sunday",
+  "model_run": "2026-11-22",
+  "forecast_days": [
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 1124430,
+   "resorts_with_snow": 186,
+   "resorts_in_region": 193
+  },
+  "region_before": {
+   "date": "2026-11-20",
+   "snow_covered_area_km2": 1052360,
+   "resorts_with_snow": 182
+  },
+  "region_forecast": {
+   "date": "2026-11-25",
+   "snow_covered_area_km2": 926930,
+   "resorts_with_snow": 184
+  },
+  "question": "Is there more or less snow than on the same date last winter, and why?",
+  "last_winter": "2025-26",
+  "same_date_last_winter": "2025-11-22",
+  "notes": [
+   "model values = SnowScope snow history at one height of each resort (an estimate for an area)",
+   "measured values = a snow station on the date given (one point), only where a station history exists",
+   "days with a gain of 10 cm or more = snowfall days this winter; days with a loss of 5 cm or more = melt, rain or wind"
+  ],
+  "measured_at_stations_today": [
+   {
+    "station": "Leavitt Lake",
+    "elev_m": 2926,
+    "depth_cm_measured": 122,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-20",
+    "network": "snotel"
+   },
+   {
+    "station": "Mt Rose Ski Area",
+    "elev_m": 2685,
+    "depth_cm_measured": 122,
+    "new_cm_measured_24h": null,
+    "measured_on": "2026-11-20",
+    "network": "snotel"
+   },
+   {
+    "station": "Lost Lakes",
+    "elev_m": 2633,
+    "depth_cm_measured": 117,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-20",
+    "network": "snotel"
+   }
+  ],
+  "resorts": [
+   {
+    "name": "Brian Head Resort",
+    "slug": "brian_head_resort",
+    "country": "United States",
+    "top_m": 3325,
+    "base_m": 2929,
+    "height_m": 3127,
+    "model_cm_today_this_winter": 103,
+    "model_cm_same_date_last_winter": 46,
+    "last_winter": "2025-26",
+    "last_winter_peak_cm_model": 81,
+    "last_winter_peak_date": "2026-02-20",
+    "usual_cm_on_this_date_model": 12,
+    "this_winter_days_with_10cm_or_more_gain": 3,
+    "this_winter_days_with_5cm_or_more_loss": 0,
+    "this_winter_first_day_with_5cm": "2026-11-01",
+    "past_winters_compared": 46,
+    "difference_cm_vs_last_winter": 57,
+    "measured_station": {
+     "station": "Brian Head",
+     "elev_m": 3060,
+     "km_away": 1.4,
+     "depth_cm_measured_today": 76,
+     "depth_cm_measured_same_date_last_winter": 30,
+     "measured_on": [
+      "2026-11-22",
+      "2025-11-22"
+     ],
+     "network": "USDA NRCS SNOTEL"
+    }
+   },
+   {
+    "name": "Telluride",
+    "slug": "telluride_ski_area",
+    "country": "United States",
+    "top_m": 3812,
+    "base_m": 2662,
+    "height_m": 3237,
+    "model_cm_today_this_winter": 53,
+    "model_cm_same_date_last_winter": 17,
+    "last_winter": "2025-26",
+    "last_winter_peak_cm_model": 76,
+    "last_winter_peak_date": "2026-02-21",
+    "usual_cm_on_this_date_model": 31,
+    "this_winter_days_with_10cm_or_more_gain": 1,
+    "this_winter_days_with_5cm_or_more_loss": 0,
+    "this_winter_first_day_with_5cm": "2026-10-17",
+    "past_winters_compared": 46,
+    "difference_cm_vs_last_winter": 36,
+    "measured_station": {
+     "station": "Alta Lakes",
+     "elev_m": 3441,
+     "km_away": 3.5,
+     "depth_cm_measured_today": 71,
+     "depth_cm_measured_same_date_last_winter": 28,
+     "measured_on": [
+      "2026-11-22",
+      "2025-11-22"
+     ],
+     "network": "USDA NRCS SNOTEL"
+    }
+   },
+   {
+    "name": "Mount Rose Ski Tahoe",
+    "slug": "mount_rose_ski_tahoe",
+    "country": "United States",
+    "top_m": 2916,
+    "base_m": 2310,
+    "height_m": 2613,
+    "model_cm_today_this_winter": 97,
+    "model_cm_same_date_last_winter": 23,
+    "last_winter": "2025-26",
+    "last_winter_peak_cm_model": 244,
+    "last_winter_peak_date": "2026-02-20",
+    "usual_cm_on_this_date_model": 11,
+    "this_winter_days_with_10cm_or_more_gain": 5,
+    "this_winter_days_with_5cm_or_more_loss": 1,
+    "this_winter_first_day_with_5cm": "2026-10-31",
+    "past_winters_compared": 46,
+    "difference_cm_vs_last_winter": 74,
+    "measured_station": {
+     "station": "Mt Rose Ski Area",
+     "elev_m": 2685,
+     "km_away": 1.0,
+     "depth_cm_measured_today": 117,
+     "depth_cm_measured_same_date_last_winter": 43,
+     "measured_on": [
+      "2026-11-22",
+      "2025-11-22"
+     ],
+     "network": "USDA NRCS SNOTEL"
+    }
+   },
+   {
+    "name": "Palisades Tahoe Alpine Meadows",
+    "slug": "palisades_tahoe_alpine_meadows",
+    "country": "United States",
+    "top_m": 2589,
+    "base_m": 1897,
+    "height_m": 2243,
+    "model_cm_today_this_winter": 77,
+    "model_cm_same_date_last_winter": 15,
+    "last_winter": "2025-26",
+    "last_winter_peak_cm_model": 152,
+    "last_winter_peak_date": "2026-02-20",
+    "usual_cm_on_this_date_model": 13,
+    "this_winter_days_with_10cm_or_more_gain": 4,
+    "this_winter_days_with_5cm_or_more_loss": 3,
+    "this_winter_first_day_with_5cm": "2026-10-31",
+    "past_winters_compared": 46,
+    "difference_cm_vs_last_winter": 62,
+    "measured_station": {
+     "station": "Ward Creek #3",
+     "elev_m": 2057,
+     "km_away": 2.7,
+     "depth_cm_measured_today": 86,
+     "depth_cm_measured_same_date_last_winter": 5,
+     "measured_on": [
+      "2026-11-22",
+      "2025-11-22"
+     ],
+     "network": "USDA NRCS SNOTEL"
+    }
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Brian Head Resort",
+     "slug": "brian_head_resort",
+     "now_cm": 70,
+     "usual_cm": 12,
+     "high_cm": 78,
+     "week_ago_cm": 32,
+     "height_m": 3127,
+     "best_weeks": [
+      12,
+      11,
+      10
+     ],
+     "ratio_pct": 583
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Brian Head Resort"
+  },
+  "story": {
+   "id": "week_jump",
+   "place": "resort:brian_head_resort",
+   "score": 50,
+   "resort": "Brian Head Resort"
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-snow-this-season-vs-last-season-22-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-snow-this-season-vs-last-season-22-november-2026/map_t.webp",
+   "bytes": 50982,
+   "snow_frac": 0.4017,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "US West snow this season vs last season: Mount Rose Ski Tahoe 38 in against 9 in (22 November)",
+   "description": "Is there more snow than a year ago? We compared today with 22 November last winter at 4 resorts in the US West: 4 of them have more snow now, …",
+   "lede": "Is there more snow than a year ago? We compared today with 22 November last winter at 4 resorts in the US West: 4 of them have more snow now, according to our snow model. The biggest change is at Mount Rose Ski Tahoe: 38 in (97 cm) today against 9 in (23 cm) a year ago. Field work in dry mountains teaches one thing: the map is a start, the slope itself has the last word.",
+   "sections": [
+    {
+     "h": "Resort by resort",
+     "p": [
+      "Brian Head Resort at 10,259 ft (3,127 m) has 41 in (103 cm) today: more than the 18 in (46 cm) of 22 November last winter. For this date, the usual depth is 5 in (12 cm).",
+      "At Telluride (10,620 ft (3,237 m)) there is 21 in (53 cm) today, more than the 7 in (17 cm) of 22 November last winter. A normal year has 12 in (31 cm) on this date.",
+      "Mount Rose Ski Tahoe at 8,573 ft (2,613 m) has 38 in (97 cm) today: more than the 9 in (23 cm) of 22 November last winter. For this date, the usual depth is 4 in (11 cm).",
+      "At Palisades Tahoe Alpine Meadows (7,359 ft (2,243 m)) there is 30 in (77 cm) today, more than the 6 in (15 cm) of 22 November last winter. A normal year has 5 in (13 cm) on this date."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 10,259 ft (3,127 m), Brian Head Resort has 28 in (70 cm) today; a normal 22 November has 5 in (12 cm) there.",
+      "Only one winter in ten has more than 31 in (78 cm) on this date.",
+      "A week ago the same spot had 13 in (32 cm).",
+      "In past winters the best snow at Brian Head Resort usually came early March / mid-March."
+     ]
+    },
+    {
+     "h": "From the ground stations",
+     "p": [
+      "Measured: the Brian Head station (10,039 ft (3,060 m), 1.4 km from Brian Head Resort) reports 30 in (76 cm) today and had 12 in (30 cm) on 22 November last winter.",
+      "Measured: the Alta Lakes station (11,289 ft (3,441 m), 3.5 km from Telluride) reports 28 in (71 cm) today and had 11 in (28 cm) on 22 November last winter.",
+      "Measured: the Mt Rose Ski Area station (8,809 ft (2,685 m), 1.0 km from Mount Rose Ski Tahoe) reports 46 in (117 cm) today and had 17 in (43 cm) on 22 November last winter.",
+      "Measured: the Ward Creek #3 station (6,749 ft (2,057 m), 2.7 km from Palisades Tahoe Alpine Meadows) reports 34 in (86 cm) today and had 2 in (5 cm) on 22 November last winter.",
+      "The Leavitt Lake station (9,600 ft (2,926 m)) measured 48 in (122 cm) on 20 November.",
+      "The Mt Rose Ski Area station (8,809 ft (2,685 m)) measured 48 in (122 cm) on 20 November."
+     ]
+    },
+    {
+     "h": "Why the difference",
+     "p": [
+      "This winter at Brian Head Resort: 3 days gained 4 in (10 cm) or more of snow and 0 days lost 2 in (5 cm) or more to melt, rain or wind, by our model.",
+      "So far this winter at Telluride, our model counts 1 days that added 4 in (10 cm) or more and 0 days that lost 2 in (5 cm) or more to melt, rain or wind.",
+      "This winter at Mount Rose Ski Tahoe: 5 days gained 4 in (10 cm) or more of snow and 1 days lost 2 in (5 cm) or more to melt, rain or wind, by our model.",
+      "Early in the winter, one storm can change everything, so these gaps say little about the rest of the season."
+     ]
+    },
+    {
+     "h": "Last winter in numbers",
+     "p": [
+      "Last winter (2025-26), Brian Head Resort reached its peak of 32 in (81 cm) on 20 February at this height.",
+      "Telluride at this height: last winter (2025-26) topped out at 30 in (76 cm) on 21 February.",
+      "Last winter (2025-26), Mount Rose Ski Tahoe reached its peak of 96 in (244 cm) on 20 February at this height."
+     ]
+    }
+   ],
+   "advice": [
+    "A better start than last year is no promise for the holidays: watch the forecast, not only the snow already on the ground.",
+    "Model values describe an area at one height; a station measures one point. Read both before you decide.",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below)."
+   ],
+   "captions": {
+    "map": "Snow depth in the US West on 22 November (SnowScope snow model) at the resorts compared with last winter."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "usd": 0.0,
+   "rejected_numbers": [
+    [
+     "1,052,000",
+     "1,124,000",
+     "1,052,000",
+     "1,124,000"
+    ],
+    [
+     "580",
+     "197,000"
+    ]
+   ],
+   "voice": "field"
+  }
+ },
+ "words_en": 643,
+ "indexable": true,
+ "main": {
+  "slug": "brian_head_resort",
+  "name": "Brian Head Resort",
+  "lat": 37.6892,
+  "lon": -112.8461
+ },
+ "places": [
+  {
+   "name": "Brian Head Resort",
+   "lat": 37.6892,
+   "lon": -112.8461
+  },
+  {
+   "name": "Telluride",
+   "lat": 37.9197,
+   "lon": -107.8348
+  },
+  {
+   "name": "Mount Rose Ski Tahoe",
+   "lat": 39.3207,
+   "lon": -119.8844
+  },
+  {
+   "name": "Palisades Tahoe Alpine Meadows",
+   "lat": 39.1543,
+   "lon": -120.2382
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "brian_head_resort",
+   "name": "Brian Head Resort"
+  },
+  {
+   "slug": "telluride_ski_area",
+   "name": "Telluride"
+  },
+  {
+   "slug": "mount_rose_ski_tahoe",
+   "name": "Mount Rose Ski Tahoe"
+  },
+  {
+   "slug": "palisades_tahoe_alpine_meadows",
+   "name": "Palisades Tahoe Alpine Meadows"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "brian_head_resort",
+    "name": "Brian Head Resort",
+    "depth": 143,
+    "new72": 12,
+    "next": 0,
+    "top_m": 3325
+   },
+   {
+    "slug": "telluride_ski_area",
+    "name": "Telluride",
+    "depth": 128,
+    "new72": 13,
+    "next": 11,
+    "top_m": 3812
+   },
+   {
+    "slug": "mount_rose_ski_tahoe",
+    "name": "Mount Rose Ski Tahoe",
+    "depth": 121,
+    "new72": 8,
+    "next": 4,
+    "top_m": 2916
+   },
+   {
+    "slug": "palisades_tahoe_alpine_meadows",
+    "name": "Palisades Tahoe Alpine Meadows",
+    "depth": 113,
+    "new72": 10,
+    "next": 7,
+    "top_m": 2589
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-28",
+ "map_link": "https://snowscope.app/#@37.689,-112.846,9.0",
+ "seconds": 42.3,
+ "facts_used": 56,
+ "voice": "field",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 29.8,
+  "after": 29.8,
+  "with": "us-northeast-snow-this-season-vs-last-season-12-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.167,
+  "with": "us-northeast-snow-this-season-vs-last-season-12-november-2026"
+ },
+ "publish_utc": "2026-11-22T18:52:23Z",
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 747,
+  "overlap": 53.9,
+  "with": "us-northeast-snow-this-season-vs-last-season-12-november-2026",
+  "langs_off": [],
+  "score": 109.8,
+  "intent": "resort:brian_head_resort|week_jump",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ },
+ "cover": {
+  "v": 1,
+  "style": "poster",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-snow-this-season-vs-last-season-22-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-snow-this-season-vs-last-season-22-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}

@@ -1,0 +1,541 @@
+{
+ "id": "2026-11-07-ca_west-powder",
+ "slug": "western-canada-fresh-snow-powder-alert-7-november-2026",
+ "date": "2026-11-07",
+ "published_utc": "2026-11-07T15:18:21Z",
+ "updated_utc": "2026-11-07T15:18:21Z",
+ "region": "CA_WEST",
+ "angle": "powder",
+ "score": 81.0,
+ "signature": "ski_callaghan:60|tweedsmuir_ski_club:60|whistler:40",
+ "tags": [
+  "powder",
+  "stations",
+  "where-to-ski",
+  "avalanche"
+ ],
+ "facts": {
+  "angle": "powder_alert",
+  "region": "Western Canada",
+  "date": "2026-11-07",
+  "weekday": "Saturday",
+  "model_run": "2026-11-06",
+  "forecast_days": [
+   "2026-11-08",
+   "2026-11-09",
+   "2026-11-10"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 300720,
+   "resorts_with_snow": 50,
+   "resorts_in_region": 57
+  },
+  "region_before": {
+   "date": "2026-11-05",
+   "snow_covered_area_km2": 310410,
+   "resorts_with_snow": 53
+  },
+  "region_forecast": {
+   "date": "2026-11-10",
+   "snow_covered_area_km2": 278020,
+   "resorts_with_snow": 45
+  },
+  "question": "Where did fresh snow fall in the last 72 hours, and is more coming?",
+  "resorts": [
+   {
+    "name": "Ski Callaghan",
+    "country": "Canada",
+    "top_m": 998,
+    "base_m": 848,
+    "depth_cm_upper_slopes_today": 48,
+    "new_cm_last_24h": 9,
+    "new_cm_last_72h": 56,
+    "new_cm_forecast_next_days": 99,
+    "slug": "ski_callaghan",
+    "new_cm_by_day": {
+     "2026-11-05": 12,
+     "2026-11-06": 36,
+     "2026-11-07": 9,
+     "2026-11-08": 62,
+     "2026-11-09": 3,
+     "2026-11-10": 34
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 848,
+      "depth_cm_model": 3,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 923,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 5
+     },
+     "top": {
+      "elev_m": 998,
+      "depth_cm_model": 10,
+      "new_cm_next_7_days": 10
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 1120,
+      "max": 2090
+     },
+     "2026-11-08": {
+      "min": 980,
+      "max": 1540
+     },
+     "2026-11-09": {
+      "min": 210,
+      "max": 1310
+     }
+    },
+    "past_winters": {
+     "height_m": 923,
+     "snow_cm_at_this_height_today_model": 13,
+     "deeper_than_n_of_past_winters": 10,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 38
+    }
+   },
+   {
+    "name": "Tweedsmuir Ski Club",
+    "country": "Canada",
+    "top_m": 1650,
+    "base_m": 1588,
+    "depth_cm_upper_slopes_today": 55,
+    "new_cm_last_24h": 11,
+    "new_cm_last_72h": 55,
+    "new_cm_forecast_next_days": 26,
+    "slug": "tweedsmuir_ski_club",
+    "new_cm_by_day": {
+     "2026-11-05": 1,
+     "2026-11-06": 44,
+     "2026-11-07": 11,
+     "2026-11-08": 19,
+     "2026-11-09": 1,
+     "2026-11-10": 6
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1588,
+      "depth_cm_model": 47,
+      "new_cm_next_7_days": 51
+     },
+     "mid": {
+      "elev_m": 1619,
+      "depth_cm_model": 47,
+      "new_cm_next_7_days": 51
+     },
+     "top": {
+      "elev_m": 1650,
+      "depth_cm_model": 48,
+      "new_cm_next_7_days": 52
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 530,
+      "max": 1110
+     },
+     "2026-11-08": {
+      "min": 710,
+      "max": 1430
+     },
+     "2026-11-09": {
+      "min": 70,
+      "max": 1080
+     }
+    },
+    "past_winters": {
+     "height_m": 1619,
+     "snow_cm_at_this_height_today_model": 46,
+     "deeper_than_n_of_past_winters": 24,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 45
+    }
+   },
+   {
+    "name": "Whistler Blackcomb",
+    "country": "Canada",
+    "top_m": 2259,
+    "base_m": 653,
+    "depth_cm_upper_slopes_today": 85,
+    "new_cm_last_24h": 10,
+    "new_cm_last_72h": 45,
+    "new_cm_forecast_next_days": 103,
+    "slug": "whistler",
+    "new_cm_by_day": {
+     "2026-11-05": 11,
+     "2026-11-06": 25,
+     "2026-11-07": 10,
+     "2026-11-08": 67,
+     "2026-11-09": 3,
+     "2026-11-10": 33
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 653,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 1456,
+      "depth_cm_model": 37,
+      "new_cm_next_7_days": 97
+     },
+     "top": {
+      "elev_m": 2259,
+      "depth_cm_model": 56,
+      "new_cm_next_7_days": 137
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 1500,
+      "max": 2380
+     },
+     "2026-11-08": {
+      "min": 1060,
+      "max": 1580
+     },
+     "2026-11-09": {
+      "min": 180,
+      "max": 1410
+     }
+    },
+    "past_winters": {
+     "height_m": 1456,
+     "snow_cm_at_this_height_today_model": 31,
+     "deeper_than_n_of_past_winters": 8,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 72
+    }
+   },
+   {
+    "name": "Mount Cain Alpine Park",
+    "country": "Canada",
+    "top_m": 1616,
+    "base_m": 1190,
+    "depth_cm_upper_slopes_today": 66,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 20,
+    "new_cm_forecast_next_days": 74,
+    "slug": "mount_cain_alpine_park",
+    "new_cm_by_day": {
+     "2026-11-05": 10,
+     "2026-11-06": 8,
+     "2026-11-07": 2,
+     "2026-11-08": 46,
+     "2026-11-09": 4,
+     "2026-11-10": 24
+    }
+   },
+   {
+    "name": "Purden Ski Village",
+    "country": "Canada",
+    "top_m": 1365,
+    "base_m": 1042,
+    "depth_cm_upper_slopes_today": 20,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 12,
+    "new_cm_forecast_next_days": 4,
+    "slug": "purden_ski_village",
+    "new_cm_by_day": {
+     "2026-11-05": 0,
+     "2026-11-06": 9,
+     "2026-11-07": 3,
+     "2026-11-08": 2,
+     "2026-11-09": 0,
+     "2026-11-10": 2
+    }
+   }
+  ],
+  "storm_cells_72h": [
+   {
+    "near": "Ski Callaghan",
+    "cm_in_72h": 98,
+    "km_from_resort": 26
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Ski Callaghan",
+     "slug": "ski_callaghan",
+     "now_cm": 13,
+     "usual_cm": 38,
+     "high_cm": 100,
+     "week_ago_cm": null,
+     "height_m": 923,
+     "best_weeks": [
+      12,
+      13,
+      14
+     ],
+     "ratio_pct": 34,
+     "deeper_than": 10,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Ski Callaghan",
+   "top_cm": 10,
+   "top_m": 998,
+   "base_cm": 3,
+   "base_m": 848,
+   "rain_day": "2026-11-07",
+   "freezing_m": 2090,
+   "lift_top_m": 998,
+   "next_cm": 99,
+   "second": "Tweedsmuir Ski Club",
+   "second_cm": 55,
+   "depth_cm": 48
+  },
+  "story": {
+   "id": "best_week",
+   "place": "resort:ski_callaghan",
+   "score": 31,
+   "resort": "Ski Callaghan"
+  }
+ },
+ "media": [
+  {
+   "id": "map_new",
+   "kind": "new_map",
+   "file": "blog/media/2026/11/western-canada-fresh-snow-powder-alert-7-november-2026/map_new.webp",
+   "thumb": "blog/media/2026/11/western-canada-fresh-snow-powder-alert-7-november-2026/map_new_t.webp",
+   "bytes": 76554
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"36\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"171\" y=\"49\" class=\"vl\">12</text><rect x=\"235\" y=\"36\" width=\"38\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"276\" y=\"49\" class=\"vl\">36</text><rect x=\"315\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"327\" y=\"49\" class=\"vl\">9</text><rect x=\"395\" y=\"36\" width=\"65\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"457\" y=\"49\" text-anchor=\"end\" class=\"vl in\">62</text><rect x=\"475\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"49\" class=\"vl\">3</text><rect x=\"555\" y=\"36\" width=\"36\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"594\" y=\"49\" class=\"vl\">34</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Tweedsmuir Ski Club</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"160\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"46\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"284\" y=\"83\" class=\"vl\">44</text><rect x=\"315\" y=\"70\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"83\" class=\"vl\">11</text><rect x=\"395\" y=\"70\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"418\" y=\"83\" class=\"vl\">19</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"83\" class=\"vl\">6</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"169\" y=\"117\" class=\"vl\">11</text><rect x=\"235\" y=\"104\" width=\"26\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"264\" y=\"117\" class=\"vl\">25</text><rect x=\"315\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"328\" y=\"117\" class=\"vl\">10</text><rect x=\"395\" y=\"104\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"117\" text-anchor=\"end\" class=\"vl in\">67</text><rect x=\"475\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"117\" class=\"vl\">3</text><rect x=\"555\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"117\" class=\"vl\">33</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"138\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"151\" class=\"vl\">10</text><rect x=\"235\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"246\" y=\"151\" class=\"vl\">8</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"48\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"446\" y=\"151\" class=\"vl\">46</text><rect x=\"475\" y=\"138\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"482\" y=\"151\" class=\"vl\">4</text><rect x=\"555\" y=\"138\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"583\" y=\"151\" class=\"vl\">24</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Purden Ski Village</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"247\" y=\"185\" class=\"vl\">9</text><rect x=\"315\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"185\" class=\"vl\">2</text></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"36\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"171\" y=\"49\" class=\"vl\">12</text><rect x=\"235\" y=\"36\" width=\"38\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"276\" y=\"49\" class=\"vl\">36</text><rect x=\"315\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"327\" y=\"49\" class=\"vl\">9</text><rect x=\"395\" y=\"36\" width=\"65\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"457\" y=\"49\" text-anchor=\"end\" class=\"vl in\">62</text><rect x=\"475\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"49\" class=\"vl\">3</text><rect x=\"555\" y=\"36\" width=\"36\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"594\" y=\"49\" class=\"vl\">34</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Tweedsmuir Ski Club</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"160\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"46\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"284\" y=\"83\" class=\"vl\">44</text><rect x=\"315\" y=\"70\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"83\" class=\"vl\">11</text><rect x=\"395\" y=\"70\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"418\" y=\"83\" class=\"vl\">19</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"83\" class=\"vl\">6</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"169\" y=\"117\" class=\"vl\">11</text><rect x=\"235\" y=\"104\" width=\"26\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"264\" y=\"117\" class=\"vl\">25</text><rect x=\"315\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"328\" y=\"117\" class=\"vl\">10</text><rect x=\"395\" y=\"104\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"117\" text-anchor=\"end\" class=\"vl in\">67</text><rect x=\"475\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"117\" class=\"vl\">3</text><rect x=\"555\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"117\" class=\"vl\">33</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"138\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"151\" class=\"vl\">10</text><rect x=\"235\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"246\" y=\"151\" class=\"vl\">8</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"48\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"446\" y=\"151\" class=\"vl\">46</text><rect x=\"475\" y=\"138\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"482\" y=\"151\" class=\"vl\">4</text><rect x=\"555\" y=\"138\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"583\" y=\"151\" class=\"vl\">24</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Purden Ski Village</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"247\" y=\"185\" class=\"vl\">9</text><rect x=\"315\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"185\" class=\"vl\">2</text></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"36\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"171\" y=\"49\" class=\"vl\">12</text><rect x=\"235\" y=\"36\" width=\"38\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"276\" y=\"49\" class=\"vl\">36</text><rect x=\"315\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"327\" y=\"49\" class=\"vl\">9</text><rect x=\"395\" y=\"36\" width=\"65\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"457\" y=\"49\" text-anchor=\"end\" class=\"vl in\">62</text><rect x=\"475\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"49\" class=\"vl\">3</text><rect x=\"555\" y=\"36\" width=\"36\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"594\" y=\"49\" class=\"vl\">34</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Tweedsmuir Ski Club</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"160\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"46\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"284\" y=\"83\" class=\"vl\">44</text><rect x=\"315\" y=\"70\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"83\" class=\"vl\">11</text><rect x=\"395\" y=\"70\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"418\" y=\"83\" class=\"vl\">19</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"83\" class=\"vl\">6</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"169\" y=\"117\" class=\"vl\">11</text><rect x=\"235\" y=\"104\" width=\"26\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"264\" y=\"117\" class=\"vl\">25</text><rect x=\"315\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"328\" y=\"117\" class=\"vl\">10</text><rect x=\"395\" y=\"104\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"117\" text-anchor=\"end\" class=\"vl in\">67</text><rect x=\"475\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"117\" class=\"vl\">3</text><rect x=\"555\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"117\" class=\"vl\">33</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"138\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"151\" class=\"vl\">10</text><rect x=\"235\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"246\" y=\"151\" class=\"vl\">8</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"48\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"446\" y=\"151\" class=\"vl\">46</text><rect x=\"475\" y=\"138\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"482\" y=\"151\" class=\"vl\">4</text><rect x=\"555\" y=\"138\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"583\" y=\"151\" class=\"vl\">24</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Purden Ski Village</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"247\" y=\"185\" class=\"vl\">9</text><rect x=\"315\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"185\" class=\"vl\">2</text></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"36\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"171\" y=\"49\" class=\"vl\">12</text><rect x=\"235\" y=\"36\" width=\"38\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"276\" y=\"49\" class=\"vl\">36</text><rect x=\"315\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"327\" y=\"49\" class=\"vl\">9</text><rect x=\"395\" y=\"36\" width=\"65\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"457\" y=\"49\" text-anchor=\"end\" class=\"vl in\">62</text><rect x=\"475\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"49\" class=\"vl\">3</text><rect x=\"555\" y=\"36\" width=\"36\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"594\" y=\"49\" class=\"vl\">34</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Tweedsmuir Ski Club</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"160\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"46\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"284\" y=\"83\" class=\"vl\">44</text><rect x=\"315\" y=\"70\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"83\" class=\"vl\">11</text><rect x=\"395\" y=\"70\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"418\" y=\"83\" class=\"vl\">19</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"83\" class=\"vl\">6</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"169\" y=\"117\" class=\"vl\">11</text><rect x=\"235\" y=\"104\" width=\"26\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"264\" y=\"117\" class=\"vl\">25</text><rect x=\"315\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"328\" y=\"117\" class=\"vl\">10</text><rect x=\"395\" y=\"104\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"117\" text-anchor=\"end\" class=\"vl in\">67</text><rect x=\"475\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"117\" class=\"vl\">3</text><rect x=\"555\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"117\" class=\"vl\">33</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"138\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"151\" class=\"vl\">10</text><rect x=\"235\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"246\" y=\"151\" class=\"vl\">8</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"48\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"446\" y=\"151\" class=\"vl\">46</text><rect x=\"475\" y=\"138\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"482\" y=\"151\" class=\"vl\">4</text><rect x=\"555\" y=\"138\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"583\" y=\"151\" class=\"vl\">24</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Purden Ski Village</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"247\" y=\"185\" class=\"vl\">9</text><rect x=\"315\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"185\" class=\"vl\">2</text></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"36\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"171\" y=\"49\" class=\"vl\">12</text><rect x=\"235\" y=\"36\" width=\"38\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"276\" y=\"49\" class=\"vl\">36</text><rect x=\"315\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"327\" y=\"49\" class=\"vl\">9</text><rect x=\"395\" y=\"36\" width=\"65\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"457\" y=\"49\" text-anchor=\"end\" class=\"vl in\">62</text><rect x=\"475\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"49\" class=\"vl\">3</text><rect x=\"555\" y=\"36\" width=\"36\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"594\" y=\"49\" class=\"vl\">34</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Tweedsmuir Ski Club</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"160\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"46\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"284\" y=\"83\" class=\"vl\">44</text><rect x=\"315\" y=\"70\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"83\" class=\"vl\">11</text><rect x=\"395\" y=\"70\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"418\" y=\"83\" class=\"vl\">19</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"83\" class=\"vl\">6</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"169\" y=\"117\" class=\"vl\">11</text><rect x=\"235\" y=\"104\" width=\"26\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"264\" y=\"117\" class=\"vl\">25</text><rect x=\"315\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"328\" y=\"117\" class=\"vl\">10</text><rect x=\"395\" y=\"104\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"117\" text-anchor=\"end\" class=\"vl in\">67</text><rect x=\"475\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"117\" class=\"vl\">3</text><rect x=\"555\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"117\" class=\"vl\">33</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"138\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"151\" class=\"vl\">10</text><rect x=\"235\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"246\" y=\"151\" class=\"vl\">8</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"48\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"446\" y=\"151\" class=\"vl\">46</text><rect x=\"475\" y=\"138\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"482\" y=\"151\" class=\"vl\">4</text><rect x=\"555\" y=\"138\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"583\" y=\"151\" class=\"vl\">24</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Purden Ski Village</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"247\" y=\"185\" class=\"vl\">9</text><rect x=\"315\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"185\" class=\"vl\">2</text></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">10/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Ski Callaghan</text><rect x=\"155\" y=\"36\" width=\"13\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"171\" y=\"49\" class=\"vl\">12</text><rect x=\"235\" y=\"36\" width=\"38\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"276\" y=\"49\" class=\"vl\">36</text><rect x=\"315\" y=\"36\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"327\" y=\"49\" class=\"vl\">9</text><rect x=\"395\" y=\"36\" width=\"65\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"457\" y=\"49\" text-anchor=\"end\" class=\"vl in\">62</text><rect x=\"475\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"49\" class=\"vl\">3</text><rect x=\"555\" y=\"36\" width=\"36\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"594\" y=\"49\" class=\"vl\">34</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Tweedsmuir Ski Club</text><rect x=\"155\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"160\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"46\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"284\" y=\"83\" class=\"vl\">44</text><rect x=\"315\" y=\"70\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"329\" y=\"83\" class=\"vl\">11</text><rect x=\"395\" y=\"70\" width=\"20\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"418\" y=\"83\" class=\"vl\">19</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"480\" y=\"83\" class=\"vl\">1</text><rect x=\"555\" y=\"70\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"83\" class=\"vl\">6</text><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Whistler Blackcomb</text><rect x=\"155\" y=\"104\" width=\"11\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"169\" y=\"117\" class=\"vl\">11</text><rect x=\"235\" y=\"104\" width=\"26\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"264\" y=\"117\" class=\"vl\">25</text><rect x=\"315\" y=\"104\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"328\" y=\"117\" class=\"vl\">10</text><rect x=\"395\" y=\"104\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"462\" y=\"117\" text-anchor=\"end\" class=\"vl in\">67</text><rect x=\"475\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"117\" class=\"vl\">3</text><rect x=\"555\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"592\" y=\"117\" class=\"vl\">33</text><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Mount Cain Alpine Pa</text><rect x=\"155\" y=\"138\" width=\"10\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"168\" y=\"151\" class=\"vl\">10</text><rect x=\"235\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"246\" y=\"151\" class=\"vl\">8</text><rect x=\"315\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"320\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"48\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"446\" y=\"151\" class=\"vl\">46</text><rect x=\"475\" y=\"138\" width=\"4\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"482\" y=\"151\" class=\"vl\">4</text><rect x=\"555\" y=\"138\" width=\"25\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"583\" y=\"151\" class=\"vl\">24</text><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Purden Ski Village</text><rect x=\"155\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"172\" width=\"9\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"247\" y=\"185\" class=\"vl\">9</text><rect x=\"315\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"185\" class=\"vl\">3</text><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"400\" y=\"185\" class=\"vl\">2</text><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"560\" y=\"185\" class=\"vl\">2</text></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Whistler peaks at 85 cm as powder arrives; best weeks are 12-14",
+   "description": "Fresh powder arrives across Western Canada; Whistler leads at 85 cm with 100+ cm forecast ahead, though peak weeks are 12-14 (late March-April).",
+   "lede": "Fresh snow is spreading across Western Canada, with Whistler Blackcomb reaching 85 cm on upper slopes and 100+ cm forecast for the next three days. However, the region's peak accumulation weeks are 12-14 (late March to early April), meaning peak season is still four months away.",
+   "sections": [
+    {
+     "h": "Fresh snow from yesterday's storm",
+     "p": [
+      "A storm system delivered measurable snow to most major resorts over the 72 hours through Saturday, November 7th. Ski Callaghan received the heaviest resort deposit, accumulating 56 cm at upper slopes—a nearby burst of heavier snow dropped 98 cm just 26 kilometres away. Whistler Blackcomb saw 45 cm in the same period; Tweedsmuir Ski Club accumulated 55 cm and Mount Cain Alpine Park 20 cm.",
+      "The region-wide snow-covered area declined from 310,410 km² on November 5th to 300,720 km² by November 7th, suggesting that lower elevations and marginal terrain shed cover as freezing levels rose to between 1,500 and 2,380 metres at Whistler during Saturday."
+     ]
+    },
+    {
+     "h": "Forecast: 100+ cm in three days",
+     "p": [
+      "The outlook signals a dramatic shift. Our snow model forecasts 99 to 103 centimetres across the top resorts over the next three days (November 8th to 10th). Whistler Blackcomb is expected to gain 103 cm; Ski Callaghan, 99 cm; Mount Cain Alpine Park, 74 cm.",
+      "This payload comes with a temperature reset: freezing levels collapse on November 9th (down to 70–210 metres at the highest elevations), meaning even lower terrain may see wet snow briefly before stabilising. For powder-focused skiers, Sunday into Monday will offer the richest days; Tuesday's 3 cm at Whistler and 34 cm at Ski Callaghan mark the system's tail end."
+     ]
+    },
+    {
+     "h": "Depths ranked: Whistler leads",
+     "p": [
+      "By depth, Whistler Blackcomb dominates the region at 85 cm on upper slopes today, though this conceals an awkward reality: the mid-mountain at 1,456 metres holds only 37 cm—just half of what this date usually receives. Mount Cain Alpine Park sits second with 66 cm. Tweedsmuir Ski Club, at the highest elevation (1,650 m) and best-protected from early-season warmth, holds a more seasonal 55 cm.",
+      "Ski Callaghan's modest 48 cm reflects its lower average elevation (998 m summit), while Purden Ski Village lags far behind at 20 cm, with marginal conditions ahead: our model shows only 2 cm new snow in the next week."
+     ]
+    },
+    {
+     "h": "Way behind the 46-winter average",
+     "p": [
+      "Set Ski Callaghan's 13 cm mid-mountain measurement against 46 previous November 7ths, and the picture sharpens. This depth ranks deeper than only 10 of those winters—meaning 36 past Novembers started thicker. The long-term average at this date and height is 38 cm; today's 13 cm represents 34 per cent of normal.",
+      "Whistler's mid-mountain tells a similar story: 31 cm measured, against a typical 72 cm. Early snow is inherently thin and unreliable. If you venture off-piste, check the latest official avalanche bulletin for your area and probe carefully for rocks and gaps."
+     ]
+    },
+    {
+     "h": "Peak season peaks in spring",
+     "p": [
+      "The real finding here sits in the calendar. Ski Callaghan's historical record shows the richest accumulation weeks falling in weeks 12, 13, and 14 of the year—late March through early April. We are currently in week 45 (early November). The best seasons, in other words, are still four to five months distant.",
+      "This arriving powder is valuable for establishing base and opening terrain. But the region's most reliable, deepest snow comes later in spring. Our snow model is confident in the near-term forecast; the week-to-week pattern beyond November remains inherently uncertain."
+     ]
+    }
+   ],
+   "advice": [
+    "Sunday and Monday deliver the most snow; forecast 60+ cm at Whistler and Ski Callaghan between them.",
+    "Watch freezing levels Monday morning—they plunge to near-ground level (70–210 m), triggering brief wet snow that stabilises quickly.",
+    "Whistler's upper elevations (above 1,900 m) hold powder best; mid-mountain and lower runs warm and consolidate faster.",
+    "Skip Purden Ski Village this week (4 cm total forecast); prioritise Whistler, Ski Callaghan, or Mount Cain.",
+    "Off-piste skiers: check official avalanche bulletins and probe thoroughly—thin early-season snow conceals rocks."
+   ],
+   "captions": {
+    "map_new": "Western Canada ski resort snow depths on November 7th, 2026, showing fresh accumulation from the past 72 hours and forecast heavy snow for the next three days.",
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast)."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "voice": "sat"
+  }
+ },
+ "words_en": 667,
+ "indexable": true,
+ "main": {
+  "slug": "ski_callaghan",
+  "name": "Ski Callaghan",
+  "lat": 50.1655,
+  "lon": -123.1659
+ },
+ "places": [
+  {
+   "name": "Ski Callaghan",
+   "lat": 50.1655,
+   "lon": -123.1659
+  },
+  {
+   "name": "Tweedsmuir Ski Club",
+   "lat": 52.5367,
+   "lon": -125.8476
+  },
+  {
+   "name": "Whistler Blackcomb",
+   "lat": 50.0888,
+   "lon": -122.9419
+  },
+  {
+   "name": "Mount Cain Alpine Park",
+   "lat": 50.2232,
+   "lon": -126.3468
+  },
+  {
+   "name": "Purden Ski Village",
+   "lat": 53.9004,
+   "lon": -121.8847
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "ski_callaghan",
+   "name": "Ski Callaghan"
+  },
+  {
+   "slug": "tweedsmuir_ski_club",
+   "name": "Tweedsmuir Ski Club"
+  },
+  {
+   "slug": "whistler",
+   "name": "Whistler Blackcomb"
+  },
+  {
+   "slug": "mount_cain_alpine_park",
+   "name": "Mount Cain Alpine Park"
+  },
+  {
+   "slug": "purden_ski_village",
+   "name": "Purden Ski Village"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "ski_callaghan",
+    "name": "Ski Callaghan",
+    "depth": 48,
+    "new72": 56,
+    "next": 99,
+    "top_m": 998
+   },
+   {
+    "slug": "tweedsmuir_ski_club",
+    "name": "Tweedsmuir Ski Club",
+    "depth": 55,
+    "new72": 55,
+    "next": 26,
+    "top_m": 1650
+   },
+   {
+    "slug": "whistler",
+    "name": "Whistler Blackcomb",
+    "depth": 85,
+    "new72": 45,
+    "next": 103,
+    "top_m": 2259
+   },
+   {
+    "slug": "mount_cain_alpine_park",
+    "name": "Mount Cain Alpine Park",
+    "depth": 66,
+    "new72": 20,
+    "next": 74,
+    "top_m": 1616
+   },
+   {
+    "slug": "purden_ski_village",
+    "name": "Purden Ski Village",
+    "depth": 20,
+    "new72": 12,
+    "next": 4,
+    "top_m": 1365
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Avalanche Canada",
+   "url": "https://avalanche.ca/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@50.166,-123.166,9.0",
+ "seconds": 14.9,
+ "publish_utc": "2026-11-07T14:00:00Z",
+ "rewrite": {
+  "v": 1,
+  "story": "best_week",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 667,
+  "overlap": 2.1,
+  "with": "where-most-snow-falls-next-72-hours-6-november-2026",
+  "langs_off": [],
+  "score": 90.5,
+  "intent": "resort:ski_callaghan|best_week",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ },
+ "cover": {
+  "v": 1,
+  "style": "hero",
+  "files": {
+   "en": [
+    "blog/media/2026/11/western-canada-fresh-snow-powder-alert-7-november-2026/cover-en.webp",
+    "blog/media/2026/11/western-canada-fresh-snow-powder-alert-7-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}

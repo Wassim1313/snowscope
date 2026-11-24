@@ -1,0 +1,635 @@
+{
+ "id": "2026-11-04-us_west-powder",
+ "slug": "us-west-fresh-snow-powder-alert-4-november-2026",
+ "date": "2026-11-04",
+ "published_utc": "2026-11-04T14:49:22Z",
+ "updated_utc": "2026-11-04T14:49:22Z",
+ "region": "US_WEST",
+ "angle": "powder",
+ "score": 68.5,
+ "signature": "telluride_ski_area:30|silverton_mountain:30|lee_s_ski_hill:30",
+ "tags": [
+  "powder",
+  "stations",
+  "where-to-ski",
+  "avalanche"
+ ],
+ "facts": {
+  "angle": "powder_alert",
+  "region": "US West",
+  "date": "2026-11-04",
+  "weekday": "Wednesday",
+  "model_run": "2026-11-04",
+  "forecast_days": [
+   "2026-11-05",
+   "2026-11-06",
+   "2026-11-07"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 224030,
+   "resorts_with_snow": 149,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-02",
+   "snow_covered_area_km2": 289090,
+   "resorts_with_snow": 159
+  },
+  "region_forecast": {
+   "date": "2026-11-07",
+   "snow_covered_area_km2": 178500,
+   "resorts_with_snow": 131
+  },
+  "question": "Where did fresh snow fall in the last 72 hours, and is more coming?",
+  "resorts": [
+   {
+    "name": "Telluride",
+    "country": "United States",
+    "top_m": 3812,
+    "base_m": 2662,
+    "depth_cm_upper_slopes_today": 118,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 31,
+    "new_cm_forecast_next_days": 2,
+    "slug": "telluride_ski_area",
+    "new_cm_by_day": {
+     "2026-11-02": 27,
+     "2026-11-03": 1,
+     "2026-11-04": 3,
+     "2026-11-05": 2,
+     "2026-11-06": 0,
+     "2026-11-07": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2662,
+      "depth_cm_model": 3,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 3237,
+      "depth_cm_model": 21,
+      "new_cm_next_7_days": 3
+     },
+     "top": {
+      "elev_m": 3812,
+      "depth_cm_model": 97,
+      "new_cm_next_7_days": 4
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-04": {
+      "min": 2370,
+      "max": 3340
+     },
+     "2026-11-05": {
+      "min": 1990,
+      "max": 3400
+     },
+     "2026-11-06": {
+      "min": 2000,
+      "max": 3270
+     },
+     "2026-11-07": {
+      "min": 1700,
+      "max": 2000
+     }
+    },
+    "past_winters": {
+     "height_m": 3237,
+     "snow_cm_at_this_height_today_model": 24,
+     "deeper_than_n_of_past_winters": 32,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 11
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-30"
+    },
+    "nearest_station": {
+     "station": "Alta Lakes",
+     "elev_m": 3441,
+     "depth_cm_measured": 46,
+     "new_cm_measured_24h": 18,
+     "measured_on": "2026-11-01",
+     "km_away": 3.5
+    }
+   },
+   {
+    "name": "Silverton Mountain",
+    "country": "United States",
+    "top_m": 3345,
+    "base_m": 3143,
+    "depth_cm_upper_slopes_today": 119,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 29,
+    "new_cm_forecast_next_days": 2,
+    "slug": "silverton_mountain",
+    "new_cm_by_day": {
+     "2026-11-02": 26,
+     "2026-11-03": 1,
+     "2026-11-04": 2,
+     "2026-11-05": 2,
+     "2026-11-06": 0,
+     "2026-11-07": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3143,
+      "depth_cm_model": 22,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 3244,
+      "depth_cm_model": 34,
+      "new_cm_next_7_days": 2
+     },
+     "top": {
+      "elev_m": 3345,
+      "depth_cm_model": 48,
+      "new_cm_next_7_days": 2
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-04": {
+      "min": 2200,
+      "max": 3280
+     },
+     "2026-11-05": {
+      "min": 1920,
+      "max": 3380
+     },
+     "2026-11-06": {
+      "min": 2000,
+      "max": 3270
+     },
+     "2026-11-07": {
+      "min": 1700,
+      "max": 2000
+     }
+    },
+    "past_winters": {
+     "height_m": 3244,
+     "snow_cm_at_this_height_today_model": 80,
+     "deeper_than_n_of_past_winters": 46,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 7
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-30"
+    },
+    "nearest_station": {
+     "station": "Red Mountain Pass",
+     "elev_m": 3371,
+     "depth_cm_measured": 61,
+     "new_cm_measured_24h": 28,
+     "measured_on": "2026-11-01",
+     "km_away": 5.3
+    }
+   },
+   {
+    "name": "Lee's Ski Hill",
+    "country": "United States",
+    "top_m": 2421,
+    "base_m": 2401,
+    "depth_cm_upper_slopes_today": 77,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 27,
+    "new_cm_forecast_next_days": 2,
+    "slug": "lee_s_ski_hill",
+    "new_cm_by_day": {
+     "2026-11-02": 24,
+     "2026-11-03": 1,
+     "2026-11-04": 2,
+     "2026-11-05": 2,
+     "2026-11-06": 0,
+     "2026-11-07": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2401,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 2411,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     },
+     "top": {
+      "elev_m": 2421,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 0
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-04": {
+      "min": 2380,
+      "max": 3340
+     },
+     "2026-11-05": {
+      "min": 2040,
+      "max": 3370
+     },
+     "2026-11-06": {
+      "min": 2000,
+      "max": 3270
+     },
+     "2026-11-07": {
+      "min": 1700,
+      "max": 2000
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-30"
+    },
+    "nearest_station": {
+     "station": "Ouray .23 NNW",
+     "elev_m": 2352,
+     "depth_cm_measured": 0,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 0.9
+    }
+   },
+   {
+    "name": "Cimarron Mountain Club",
+    "country": "United States",
+    "top_m": 3461,
+    "base_m": 2991,
+    "depth_cm_upper_slopes_today": 68,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 22,
+    "new_cm_forecast_next_days": 3,
+    "slug": "cimarron_mountain_club",
+    "new_cm_by_day": {
+     "2026-11-02": 19,
+     "2026-11-03": 1,
+     "2026-11-04": 2,
+     "2026-11-05": 2,
+     "2026-11-06": 1,
+     "2026-11-07": 0
+    }
+   },
+   {
+    "name": "Wolf Creek",
+    "country": "United States",
+    "top_m": 3585,
+    "base_m": 3128,
+    "depth_cm_upper_slopes_today": 73,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 22,
+    "new_cm_forecast_next_days": 2,
+    "slug": "wolf_creek_ski_area",
+    "new_cm_by_day": {
+     "2026-11-02": 21,
+     "2026-11-03": 0,
+     "2026-11-04": 1,
+     "2026-11-05": 1,
+     "2026-11-06": 1,
+     "2026-11-07": 0
+    }
+   }
+  ],
+  "measured_new_snow_at_stations": [
+   {
+    "station": "Chepeta",
+    "elev_m": 3197,
+    "new_cm_measured_24h": 30,
+    "depth_cm_measured": 51,
+    "measured_on": "2026-11-01"
+   },
+   {
+    "station": "Red Mountain Pass",
+    "elev_m": 3371,
+    "new_cm_measured_24h": 28,
+    "depth_cm_measured": 61,
+    "measured_on": "2026-11-01"
+   },
+   {
+    "station": "Bison Lake",
+    "elev_m": 3338,
+    "new_cm_measured_24h": 25,
+    "depth_cm_measured": 38,
+    "measured_on": "2026-11-01"
+   }
+  ],
+  "storm_cells_72h": [
+   {
+    "near": "Telluride",
+    "cm_in_72h": 35,
+    "km_from_resort": 16
+   },
+   {
+    "near": "Hogadon Basin",
+    "cm_in_72h": 26,
+    "km_from_resort": 30
+   },
+   {
+    "near": "Lake City Ski Hill",
+    "cm_in_72h": 26,
+    "km_from_resort": 11
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Telluride",
+     "slug": "telluride_ski_area",
+     "now_cm": 24,
+     "usual_cm": 11,
+     "high_cm": 52,
+     "week_ago_cm": null,
+     "height_m": 3237,
+     "best_weeks": [
+      53,
+      11,
+      10
+     ],
+     "ratio_pct": 218,
+     "deeper_than": 32,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Telluride",
+   "top_cm": 97,
+   "top_m": 3812,
+   "base_cm": 3,
+   "base_m": 2662,
+   "next_cm": 2,
+   "second": "Silverton Mountain",
+   "second_cm": 119,
+   "depth_cm": 118
+  },
+  "story": {
+   "id": "vs_normal_high",
+   "place": "resort:telluride_ski_area",
+   "score": 62,
+   "resort": "Telluride"
+  }
+ },
+ "media": [
+  {
+   "id": "photo",
+   "kind": "photo",
+   "file": "blog/media/2026/11/us-west-fresh-snow-powder-alert-4-november-2026/photo.webp",
+   "thumb": "blog/media/2026/11/us-west-fresh-snow-powder-alert-4-november-2026/photo_t.webp",
+   "bytes": 163992,
+   "w": 1200,
+   "h": 630,
+   "credit": {
+    "source": "Wikimedia Commons, dana.m.wilson",
+    "link": "https://commons.wikimedia.org/wiki/File:Dallas_Peak,_Telluride.jpg",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0"
+   }
+  },
+  {
+   "id": "map_new",
+   "kind": "new_map",
+   "file": "blog/media/2026/11/us-west-fresh-snow-powder-alert-4-november-2026/map_new.webp",
+   "thumb": "blog/media/2026/11/us-west-fresh-snow-powder-alert-4-november-2026/map_new_t.webp",
+   "bytes": 69074
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">2/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Telluride</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">27</text><rect x=\"235\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"49\" class=\"vl\">1</text><rect x=\"315\" y=\"36\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"49\" class=\"vl\">2</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Silverton Mountain</text><rect x=\"155\" y=\"70\" width=\"67\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"219\" y=\"83\" text-anchor=\"end\" class=\"vl in\">26</text><rect x=\"235\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"83\" class=\"vl\">1</text><rect x=\"315\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"83\" class=\"vl\">2</text><rect x=\"395\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"83\" class=\"vl\">2</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Lee's Ski Hill</text><rect x=\"155\" y=\"104\" width=\"62\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"214\" y=\"117\" text-anchor=\"end\" class=\"vl in\">24</text><rect x=\"235\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"117\" class=\"vl\">1</text><rect x=\"315\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Cimarron Mountain Cl</text><rect x=\"155\" y=\"138\" width=\"49\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"207\" y=\"151\" class=\"vl\">19</text><rect x=\"235\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"151\" class=\"vl\">1</text><rect x=\"315\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Wolf Creek</text><rect x=\"155\" y=\"172\" width=\"54\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"212\" y=\"185\" class=\"vl\">21</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"185\" class=\"vl\">1</text><rect x=\"395\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"185\" class=\"vl\">1</text><rect x=\"475\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">2/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Telluride</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">27</text><rect x=\"235\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"49\" class=\"vl\">1</text><rect x=\"315\" y=\"36\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"49\" class=\"vl\">2</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Silverton Mountain</text><rect x=\"155\" y=\"70\" width=\"67\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"219\" y=\"83\" text-anchor=\"end\" class=\"vl in\">26</text><rect x=\"235\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"83\" class=\"vl\">1</text><rect x=\"315\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"83\" class=\"vl\">2</text><rect x=\"395\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"83\" class=\"vl\">2</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Lee's Ski Hill</text><rect x=\"155\" y=\"104\" width=\"62\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"214\" y=\"117\" text-anchor=\"end\" class=\"vl in\">24</text><rect x=\"235\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"117\" class=\"vl\">1</text><rect x=\"315\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Cimarron Mountain Cl</text><rect x=\"155\" y=\"138\" width=\"49\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"207\" y=\"151\" class=\"vl\">19</text><rect x=\"235\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"151\" class=\"vl\">1</text><rect x=\"315\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Wolf Creek</text><rect x=\"155\" y=\"172\" width=\"54\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"212\" y=\"185\" class=\"vl\">21</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"185\" class=\"vl\">1</text><rect x=\"395\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"185\" class=\"vl\">1</text><rect x=\"475\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">2.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Telluride</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">27</text><rect x=\"235\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"49\" class=\"vl\">1</text><rect x=\"315\" y=\"36\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"49\" class=\"vl\">2</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Silverton Mountain</text><rect x=\"155\" y=\"70\" width=\"67\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"219\" y=\"83\" text-anchor=\"end\" class=\"vl in\">26</text><rect x=\"235\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"83\" class=\"vl\">1</text><rect x=\"315\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"83\" class=\"vl\">2</text><rect x=\"395\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"83\" class=\"vl\">2</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Lee's Ski Hill</text><rect x=\"155\" y=\"104\" width=\"62\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"214\" y=\"117\" text-anchor=\"end\" class=\"vl in\">24</text><rect x=\"235\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"117\" class=\"vl\">1</text><rect x=\"315\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Cimarron Mountain Cl</text><rect x=\"155\" y=\"138\" width=\"49\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"207\" y=\"151\" class=\"vl\">19</text><rect x=\"235\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"151\" class=\"vl\">1</text><rect x=\"315\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Wolf Creek</text><rect x=\"155\" y=\"172\" width=\"54\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"212\" y=\"185\" class=\"vl\">21</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"185\" class=\"vl\">1</text><rect x=\"395\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"185\" class=\"vl\">1</text><rect x=\"475\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">2/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Telluride</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">27</text><rect x=\"235\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"49\" class=\"vl\">1</text><rect x=\"315\" y=\"36\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"49\" class=\"vl\">2</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Silverton Mountain</text><rect x=\"155\" y=\"70\" width=\"67\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"219\" y=\"83\" text-anchor=\"end\" class=\"vl in\">26</text><rect x=\"235\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"83\" class=\"vl\">1</text><rect x=\"315\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"83\" class=\"vl\">2</text><rect x=\"395\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"83\" class=\"vl\">2</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Lee's Ski Hill</text><rect x=\"155\" y=\"104\" width=\"62\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"214\" y=\"117\" text-anchor=\"end\" class=\"vl in\">24</text><rect x=\"235\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"117\" class=\"vl\">1</text><rect x=\"315\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Cimarron Mountain Cl</text><rect x=\"155\" y=\"138\" width=\"49\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"207\" y=\"151\" class=\"vl\">19</text><rect x=\"235\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"151\" class=\"vl\">1</text><rect x=\"315\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Wolf Creek</text><rect x=\"155\" y=\"172\" width=\"54\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"212\" y=\"185\" class=\"vl\">21</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"185\" class=\"vl\">1</text><rect x=\"395\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"185\" class=\"vl\">1</text><rect x=\"475\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">2/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Telluride</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">27</text><rect x=\"235\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"49\" class=\"vl\">1</text><rect x=\"315\" y=\"36\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"49\" class=\"vl\">2</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Silverton Mountain</text><rect x=\"155\" y=\"70\" width=\"67\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"219\" y=\"83\" text-anchor=\"end\" class=\"vl in\">26</text><rect x=\"235\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"83\" class=\"vl\">1</text><rect x=\"315\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"83\" class=\"vl\">2</text><rect x=\"395\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"83\" class=\"vl\">2</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Lee's Ski Hill</text><rect x=\"155\" y=\"104\" width=\"62\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"214\" y=\"117\" text-anchor=\"end\" class=\"vl in\">24</text><rect x=\"235\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"117\" class=\"vl\">1</text><rect x=\"315\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Cimarron Mountain Cl</text><rect x=\"155\" y=\"138\" width=\"49\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"207\" y=\"151\" class=\"vl\">19</text><rect x=\"235\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"151\" class=\"vl\">1</text><rect x=\"315\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Wolf Creek</text><rect x=\"155\" y=\"172\" width=\"54\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"212\" y=\"185\" class=\"vl\">21</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"185\" class=\"vl\">1</text><rect x=\"395\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"185\" class=\"vl\">1</text><rect x=\"475\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">2/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">3/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Telluride</text><rect x=\"155\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"222\" y=\"49\" text-anchor=\"end\" class=\"vl in\">27</text><rect x=\"235\" y=\"36\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"49\" class=\"vl\">1</text><rect x=\"315\" y=\"36\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"326\" y=\"49\" class=\"vl\">3</text><rect x=\"395\" y=\"36\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"49\" class=\"vl\">2</text><rect x=\"475\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Silverton Mountain</text><rect x=\"155\" y=\"70\" width=\"67\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"219\" y=\"83\" text-anchor=\"end\" class=\"vl in\">26</text><rect x=\"235\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"83\" class=\"vl\">1</text><rect x=\"315\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"83\" class=\"vl\">2</text><rect x=\"395\" y=\"70\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"83\" class=\"vl\">2</text><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Lee's Ski Hill</text><rect x=\"155\" y=\"104\" width=\"62\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"214\" y=\"117\" text-anchor=\"end\" class=\"vl in\">24</text><rect x=\"235\" y=\"104\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"117\" class=\"vl\">1</text><rect x=\"315\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"117\" class=\"vl\">2</text><rect x=\"395\" y=\"104\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"117\" class=\"vl\">2</text><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Cimarron Mountain Cl</text><rect x=\"155\" y=\"138\" width=\"49\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"207\" y=\"151\" class=\"vl\">19</text><rect x=\"235\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"241\" y=\"151\" class=\"vl\">1</text><rect x=\"315\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"323\" y=\"151\" class=\"vl\">2</text><rect x=\"395\" y=\"138\" width=\"5\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"403\" y=\"151\" class=\"vl\">2</text><rect x=\"475\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"151\" class=\"vl\">1</text><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Wolf Creek</text><rect x=\"155\" y=\"172\" width=\"54\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"212\" y=\"185\" class=\"vl\">21</text><rect x=\"235\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"315\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"185\" class=\"vl\">1</text><rect x=\"395\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"401\" y=\"185\" class=\"vl\">1</text><rect x=\"475\" y=\"172\" width=\"3\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"481\" y=\"185\" class=\"vl\">1</text><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Fresh snow in the US West: 12 in in 72 hours at Telluride (4 November)",
+   "description": "Telluride got 12 in (31 cm) of new snow in the last 72 hours, 1 in (3 cm) of it in the last 24 hours. It now has about 46 in (118 cm) on its upper …",
+   "lede": "Telluride got 12 in (31 cm) of new snow in the last 72 hours, 1 in (3 cm) of it in the last 24 hours. It now has about 46 in (118 cm) on its upper slopes, according to our snow model.",
+   "sections": [
+    {
+     "h": "Where the fresh snow fell",
+     "p": [
+      "Elsewhere, Silverton Mountain, Lee's Ski Hill and Cimarron Mountain Club got 11 in (29 cm), 11 in (27 cm) and 9 in (22 cm) in the last 72 hours.",
+      "Our snow model shows 86,498 sq mi (224,030 km²) of snow-covered ground in the US West today, with snow at 149 of 195 resorts."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 10,620 ft (3,237 m), Telluride has 9 in (24 cm) today; a normal 4 November has 4 in (11 cm) there.",
+      "That is more than in 32 of the 46 past winters on this date.",
+      "In past winters the best snow at Telluride usually came early January / early March.",
+      "An early lead like this matters most for the lower and middle runs, which usually wait until December for this much snow.",
+      "Day by day at Telluride: Wednesday 4 November 1 in (3 cm); Thursday 5 November 1 in (2 cm).",
+      "Height by height at Telluride: 8,734 ft (2,662 m) 1 in (3 cm) on the ground, 1 in (2 cm) more in the next 7 days; 10,620 ft (3,237 m) 8 in (21 cm) on the ground, 1 in (3 cm) more in the next 7 days; 12,507 ft (3,812 m) 38 in (97 cm) on the ground, 2 in (4 cm) more in the next 7 days."
+     ]
+    },
+    {
+     "h": "What the stations measured",
+     "p": [
+      "The Chepeta station (10,489 ft / 3,197 m) measured 20 in (51 cm) of snow on the ground on 1 November, with 12 in (30 cm) of new snow in 24 hours. The Red Mountain Pass station (11,060 ft / 3,371 m) measured 24 in (61 cm) of snow on the ground on 1 November, with 11 in (28 cm) of new snow in 24 hours. The Bison Lake station (10,951 ft / 3,338 m) measured 15 in (38 cm) of snow on the ground on 1 November, with 10 in (25 cm) of new snow in 24 hours.",
+      "Keep in mind: resort values come from our snow model and describe an area, while stations measure one point."
+     ]
+    },
+    {
+     "h": "Height, slopes and snow line",
+     "p": [
+      "Height matters: at Telluride, our model gives 38 in (97 cm) at the top (12,507 ft / 3,812 m), 8 in (21 cm) at mid-mountain (10,620 ft / 3,237 m) and 1 in (3 cm) at the base (8,734 ft / 2,662 m).",
+      "At Telluride, the freezing level reaches 6,529 ft (1,990 m) to 11,155 ft (3,400 m) on 5 November, so the lower slopes may get wet snow while the top stays wintry."
+     ]
+    },
+    {
+     "h": "The next days",
+     "p": [
+      "Until 7 November, our forecast gives 1 in (3 cm) at Cimarron Mountain Club, 1 in (2 cm) at Telluride and 1 in (2 cm) at Silverton Mountain.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    },
+    {
+     "h": "Safety and avalanche level",
+     "p": [
+      "After fresh snow, wind builds drifts on sheltered slopes. Off-piste, the first days after a snowfall need the most care."
+     ]
+    }
+   ],
+   "advice": [
+    "Fresh snow is best in the first hours after it stops: go early, before the sun and the crowds.",
+    "Look for snow high up and on north-facing slopes: they keep it longest, while south-facing slopes lose it first in the sun.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Get a powder alert in the SnowScope app to know when Telluride gets fresh snow."
+   ],
+   "captions": {
+    "map_new": "New snow in the last 72 hours in the US West, up to 4 November 2026 (SnowScope snow model).",
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast).",
+    "photo": "Telluride"
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  }
+ },
+ "words_en": 630,
+ "indexable": true,
+ "main": {
+  "slug": "telluride_ski_area",
+  "name": "Telluride",
+  "lat": 37.9197,
+  "lon": -107.8348
+ },
+ "places": [
+  {
+   "name": "Telluride",
+   "lat": 37.9197,
+   "lon": -107.8348
+  },
+  {
+   "name": "Silverton Mountain",
+   "lat": 37.8773,
+   "lon": -107.6562
+  },
+  {
+   "name": "Lee's Ski Hill",
+   "lat": 38.0187,
+   "lon": -107.6688
+  },
+  {
+   "name": "Cimarron Mountain Club",
+   "lat": 38.2978,
+   "lon": -107.619
+  },
+  {
+   "name": "Wolf Creek",
+   "lat": 37.4632,
+   "lon": -106.7905
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "telluride_ski_area",
+   "name": "Telluride"
+  },
+  {
+   "slug": "silverton_mountain",
+   "name": "Silverton Mountain"
+  },
+  {
+   "slug": "lee_s_ski_hill",
+   "name": "Lee's Ski Hill"
+  },
+  {
+   "slug": "cimarron_mountain_club",
+   "name": "Cimarron Mountain Club"
+  },
+  {
+   "slug": "wolf_creek_ski_area",
+   "name": "Wolf Creek"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "telluride_ski_area",
+    "name": "Telluride",
+    "depth": 118,
+    "new72": 31,
+    "next": 2,
+    "top_m": 3812
+   },
+   {
+    "slug": "silverton_mountain",
+    "name": "Silverton Mountain",
+    "depth": 119,
+    "new72": 29,
+    "next": 2,
+    "top_m": 3345
+   },
+   {
+    "slug": "lee_s_ski_hill",
+    "name": "Lee's Ski Hill",
+    "depth": 77,
+    "new72": 27,
+    "next": 2,
+    "top_m": 2421
+   },
+   {
+    "slug": "cimarron_mountain_club",
+    "name": "Cimarron Mountain Club",
+    "depth": 68,
+    "new72": 22,
+    "next": 3,
+    "top_m": 3461
+   },
+   {
+    "slug": "wolf_creek_ski_area",
+    "name": "Wolf Creek",
+    "depth": 73,
+    "new72": 22,
+    "next": 2,
+    "top_m": 3585
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-07",
+ "map_link": "https://snowscope.app/#@37.920,-107.835,9.0",
+ "seconds": 0.0,
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_high",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 630,
+  "overlap": 49.9,
+  "with": "pyrenees-fresh-snow-powder-alert-3-november-2026",
+  "langs_off": [],
+  "score": 117.2,
+  "intent": "resort:telluride_ski_area|vs_normal_high",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ },
+ "cover": {
+  "v": 1,
+  "style": "hero",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-fresh-snow-powder-alert-4-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-fresh-snow-powder-alert-4-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}

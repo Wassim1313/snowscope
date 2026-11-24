@@ -1,0 +1,629 @@
+{
+ "id": "2026-11-23-us_west-deepest",
+ "slug": "us-west-telluride-snow-depth-today-23-november-2026",
+ "date": "2026-11-23",
+ "published_utc": "2026-11-23T14:07:39Z",
+ "updated_utc": "2026-11-23T14:07:39Z",
+ "region": "US_WEST",
+ "angle": "deepest",
+ "score": 170,
+ "signature": "brian_head_resort:140|telluride_ski_area:130|mount_rose_ski_tahoe:120",
+ "keyword": {
+  "family": "snow-depth",
+  "entity": "telluride_ski_area",
+  "region": "US_WEST",
+  "date": "2026-11-23"
+ },
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "US West",
+  "date": "2026-11-23",
+  "weekday": "Monday",
+  "model_run": "2026-11-23",
+  "forecast_days": [
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 1047650,
+   "resorts_with_snow": 186,
+   "resorts_in_region": 193
+  },
+  "region_before": {
+   "date": "2026-11-21",
+   "snow_covered_area_km2": 1142540,
+   "resorts_with_snow": 184
+  },
+  "region_forecast": {
+   "date": "2026-11-26",
+   "snow_covered_area_km2": 854060,
+   "resorts_with_snow": 182
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Brian Head Resort",
+    "country": "United States",
+    "top_m": 3325,
+    "base_m": 2929,
+    "depth_cm_upper_slopes_today": 144,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 0,
+    "slug": "brian_head_resort",
+    "new_cm_by_day": {
+     "2026-11-21": 0,
+     "2026-11-22": 0,
+     "2026-11-23": 1,
+     "2026-11-24": 0,
+     "2026-11-25": 0,
+     "2026-11-26": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2929,
+      "depth_cm_model": 64,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 3127,
+      "depth_cm_model": 95,
+      "new_cm_next_7_days": 2
+     },
+     "top": {
+      "elev_m": 3325,
+      "depth_cm_model": 117,
+      "new_cm_next_7_days": 2
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-23": {
+      "min": 1490,
+      "max": 2450
+     },
+     "2026-11-24": {
+      "min": 1620,
+      "max": 3080
+     },
+     "2026-11-25": {
+      "min": 2040,
+      "max": 3410
+     }
+    },
+    "past_winters": {
+     "height_m": 3127,
+     "snow_cm_at_this_height_today_model": 103,
+     "deeper_than_n_of_past_winters": 44,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 16
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-22"
+    },
+    "nearest_station": {
+     "station": "Brian Head",
+     "elev_m": 3060,
+     "depth_cm_measured": 76,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-21",
+     "km_away": 1.4
+    }
+   },
+   {
+    "name": "Telluride",
+    "country": "United States",
+    "top_m": 3812,
+    "base_m": 2662,
+    "depth_cm_upper_slopes_today": 130,
+    "new_cm_last_24h": 9,
+    "new_cm_last_72h": 19,
+    "new_cm_forecast_next_days": 2,
+    "slug": "telluride_ski_area",
+    "new_cm_by_day": {
+     "2026-11-21": 11,
+     "2026-11-22": 0,
+     "2026-11-23": 9,
+     "2026-11-24": 2,
+     "2026-11-25": 0,
+     "2026-11-26": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2662,
+      "depth_cm_model": 14,
+      "new_cm_next_7_days": 6
+     },
+     "mid": {
+      "elev_m": 3237,
+      "depth_cm_model": 44,
+      "new_cm_next_7_days": 8
+     },
+     "top": {
+      "elev_m": 3812,
+      "depth_cm_model": 123,
+      "new_cm_next_7_days": 9
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-23": {
+      "min": 1460,
+      "max": 2660
+     },
+     "2026-11-24": {
+      "min": 1380,
+      "max": 3050
+     },
+     "2026-11-25": {
+      "min": 1730,
+      "max": 3400
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 3,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 3237,
+     "snow_cm_at_this_height_today_model": 57,
+     "deeper_than_n_of_past_winters": 28,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 33
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-21"
+    },
+    "nearest_station": {
+     "station": "Alta Lakes",
+     "elev_m": 3441,
+     "depth_cm_measured": 71,
+     "new_cm_measured_24h": 8,
+     "measured_on": "2026-11-21",
+     "km_away": 3.5
+    }
+   },
+   {
+    "name": "Mount Rose Ski Tahoe",
+    "country": "United States",
+    "top_m": 2916,
+    "base_m": 2310,
+    "depth_cm_upper_slopes_today": 117,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 2,
+    "new_cm_forecast_next_days": 0,
+    "slug": "mount_rose_ski_tahoe",
+    "new_cm_by_day": {
+     "2026-11-21": 0,
+     "2026-11-22": 1,
+     "2026-11-23": 1,
+     "2026-11-24": 0,
+     "2026-11-25": 0,
+     "2026-11-26": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2310,
+      "depth_cm_model": 59,
+      "new_cm_next_7_days": 5
+     },
+     "mid": {
+      "elev_m": 2613,
+      "depth_cm_model": 81,
+      "new_cm_next_7_days": 6
+     },
+     "top": {
+      "elev_m": 2916,
+      "depth_cm_model": 101,
+      "new_cm_next_7_days": 7
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-23": {
+      "min": 1180,
+      "max": 2350
+     },
+     "2026-11-24": {
+      "min": 1920,
+      "max": 2890
+     },
+     "2026-11-25": {
+      "min": 1780,
+      "max": 2660
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 3,
+    "avalanche_bulletin": "avalanche.org (US national portal)",
+    "past_winters": {
+     "height_m": 2613,
+     "snow_cm_at_this_height_today_model": 98,
+     "deeper_than_n_of_past_winters": 44,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 12
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-17"
+    },
+    "nearest_station": {
+     "station": "Mt Rose Ski Area",
+     "elev_m": 2685,
+     "depth_cm_measured": 117,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-21",
+     "km_away": 1.0
+    }
+   },
+   {
+    "name": "Palisades Tahoe Alpine Meadows",
+    "country": "United States",
+    "top_m": 2589,
+    "base_m": 1897,
+    "depth_cm_upper_slopes_today": 108,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 3,
+    "new_cm_forecast_next_days": 1,
+    "slug": "palisades_tahoe_alpine_meadows",
+    "new_cm_by_day": {
+     "2026-11-21": 0,
+     "2026-11-22": 2,
+     "2026-11-23": 1,
+     "2026-11-24": 0,
+     "2026-11-25": 1,
+     "2026-11-26": 0
+    }
+   },
+   {
+    "name": "Cimarron Mountain Club",
+    "country": "United States",
+    "top_m": 3461,
+    "base_m": 2991,
+    "depth_cm_upper_slopes_today": 106,
+    "new_cm_last_24h": 5,
+    "new_cm_last_72h": 17,
+    "new_cm_forecast_next_days": 1,
+    "slug": "cimarron_mountain_club",
+    "new_cm_by_day": {
+     "2026-11-21": 12,
+     "2026-11-22": 0,
+     "2026-11-23": 5,
+     "2026-11-24": 1,
+     "2026-11-25": 0,
+     "2026-11-26": 0
+    }
+   }
+  ],
+  "measured_at_stations": [
+   {
+    "station": "Mt Rose Ski Area",
+    "elev_m": 2685,
+    "depth_cm_measured": 117,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-21",
+    "network": "snotel"
+   },
+   {
+    "station": "Leavitt Lake",
+    "elev_m": 2926,
+    "depth_cm_measured": 114,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-21",
+    "network": "snotel"
+   },
+   {
+    "station": "Lost Lakes",
+    "elev_m": 2633,
+    "depth_cm_measured": 109,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-21",
+    "network": "snotel"
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Brian Head Resort",
+     "slug": "brian_head_resort",
+     "now_cm": 103,
+     "usual_cm": 16,
+     "high_cm": 79,
+     "week_ago_cm": null,
+     "height_m": 3127,
+     "best_weeks": [
+      12,
+      11,
+      10
+     ],
+     "ratio_pct": 644,
+     "deeper_than": 44,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Brian Head Resort",
+   "top_cm": 117,
+   "top_m": 3325,
+   "base_cm": 64,
+   "base_m": 2929,
+   "rain_day": "2026-11-25",
+   "freezing_m": 3410,
+   "lift_top_m": 3325,
+   "next_cm": 0,
+   "second": "Telluride",
+   "second_cm": 130,
+   "depth_cm": 144
+  },
+  "story": {
+   "id": "rare_for_date",
+   "place": "resort:brian_head_resort",
+   "score": 78,
+   "resort": "Brian Head Resort"
+  },
+  "focus_index": 1,
+  "title_focus_resort": "Telluride"
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-telluride-snow-depth-today-23-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-telluride-snow-depth-today-23-november-2026/map_t.webp",
+   "bytes": 52812,
+   "snow_frac": 0.3752,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Telluride ski report: 51 in on the upper slopes (US West, 23 November)",
+   "description": "Telluride snow depth: 51 in on the upper slopes (US West, 23 November). Brian Head Resort (United States) has the deepest snow in the US West today, …",
+   "lede": "Telluride ski report – Today the deepest snow in the US West is at Brian Head Resort (United States), about 57 in (144 cm) on the upper slopes. Telluride is next with 51 in (130 cm), and Mount Rose Ski Tahoe has 46 in (117 cm). Our model sees 404,500 sq mi (1,047,650 km²) of snowy ground in the US West today, and snow at 186 of 193 resorts. In the field we always carry a probe; numbers like these tell you where to go, the probe tells you what is under your skis.",
+   "sections": [
+    {
+     "h": "What is on the ground",
+     "p": [
+      "Less ground is white now: 441,137 sq mi (1,142,540 km²) on 21 November, only 404,500 sq mi (1,047,650 km²) today, and 329,754 sq mi (854,060 km²) expected on 26 November.",
+      "At Brian Head Resort, the difference between top and bottom is clear: 46 in (117 cm) at the top (10,909 ft / 3,325 m), 37 in (95 cm) at mid-mountain (10,259 ft / 3,127 m) and 25 in (64 cm) at the base (9,610 ft / 2,929 m)."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 10,259 ft (3,127 m), Brian Head Resort has 41 in (103 cm) today; a normal 23 November has 6 in (16 cm) there.",
+      "That is more than in 44 of the 46 past winters on this date.",
+      "In past winters the best snow at Brian Head Resort usually came early March / mid-March.",
+      "An early lead like this matters most for the lower and middle runs, which usually wait until December for this much snow.",
+      "Height by height at Brian Head Resort: 9,610 ft (2,929 m) 25 in (64 cm) on the ground, 1 in (2 cm) more in the next 7 days; 10,259 ft (3,127 m) 37 in (95 cm) on the ground, 1 in (2 cm) more in the next 7 days; 10,909 ft (3,325 m) 46 in (117 cm) on the ground, 1 in (2 cm) more in the next 7 days."
+     ]
+    },
+    {
+     "h": "What to expect next",
+     "p": [
+      "Looking ahead to 26 November, the forecast brings 1 in (2 cm) at Telluride, 0 in (1 cm) at Palisades Tahoe Alpine Meadows and 0 in (1 cm) at Cimarron Mountain Club.",
+      "Warm air at Brian Head Resort on 25 November: the freezing level goes from 6,693 ft (2,040 m) to 11,188 ft (3,410 m), above the resort's top (10,909 ft / 3,325 m), so rain or wet snow can reach every slope.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    },
+    {
+     "h": "From the ground stations",
+     "p": [
+      "On 21 November, the Mt Rose Ski Area station (8,809 ft / 2,685 m) measured 46 in (117 cm) on the ground. At the Leavitt Lake station (9,600 ft / 2,926 m), the measured snow on the ground was 45 in (114 cm) on 21 November. On 21 November, the Lost Lakes station (8,638 ft / 2,633 m) measured 43 in (109 cm) on the ground.",
+      "A word on the numbers: resort values are our model's estimate for the upper slopes, while each station measures a single spot on the date given."
+     ]
+    },
+    {
+     "h": "Against other winters",
+     "p": [
+      "Brian Head Resort is off to a good start. At 10,259 ft (3,127 m) our model has 41 in (103 cm) today, more than on this date in 44 of the past 46 winters; the usual is 6 in (16 cm).",
+      "Nothing unusual at Telluride: 22 in (57 cm) at 10,620 ft (3,237 m) today, more than in 28 of the past 46 winters, with 13 in (33 cm) as the usual.",
+      "Good news from Mount Rose Ski Tahoe: 39 in (98 cm) at 8,573 ft (2,613 m) today, deeper than in 44 of the past 46 winters on this date (usual: 5 in (12 cm))."
+     ]
+    }
+   ],
+   "advice": [
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "South-facing slopes take the most sun and melt first; high, north-facing slopes keep their snow the longest.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Brian Head Resort gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the US West on 23 November 2026 (SnowScope snow model): Brian Head Resort, Telluride, Mount Rose Ski Tahoe, Palisades Tahoe Alpine Meadows, Cimarron Mountain Club."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "usd": 0.0,
+   "rejected_numbers": [
+    [
+     "110",
+     "1,048,000",
+     "854,000"
+    ],
+    [
+     "3000"
+    ]
+   ],
+   "voice": "field"
+  }
+ },
+ "words_en": 603,
+ "indexable": true,
+ "main": {
+  "slug": "telluride_ski_area",
+  "name": "Telluride",
+  "lat": 37.9197,
+  "lon": -107.8348
+ },
+ "places": [
+  {
+   "name": "Brian Head Resort",
+   "lat": 37.6892,
+   "lon": -112.8461
+  },
+  {
+   "name": "Telluride",
+   "lat": 37.9197,
+   "lon": -107.8348
+  },
+  {
+   "name": "Mount Rose Ski Tahoe",
+   "lat": 39.3207,
+   "lon": -119.8844
+  },
+  {
+   "name": "Palisades Tahoe Alpine Meadows",
+   "lat": 39.1543,
+   "lon": -120.2382
+  },
+  {
+   "name": "Cimarron Mountain Club",
+   "lat": 38.2978,
+   "lon": -107.619
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "brian_head_resort",
+   "name": "Brian Head Resort"
+  },
+  {
+   "slug": "telluride_ski_area",
+   "name": "Telluride"
+  },
+  {
+   "slug": "mount_rose_ski_tahoe",
+   "name": "Mount Rose Ski Tahoe"
+  },
+  {
+   "slug": "palisades_tahoe_alpine_meadows",
+   "name": "Palisades Tahoe Alpine Meadows"
+  },
+  {
+   "slug": "cimarron_mountain_club",
+   "name": "Cimarron Mountain Club"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "brian_head_resort",
+    "name": "Brian Head Resort",
+    "depth": 144,
+    "new72": 1,
+    "next": 0,
+    "top_m": 3325
+   },
+   {
+    "slug": "telluride_ski_area",
+    "name": "Telluride",
+    "depth": 130,
+    "new72": 19,
+    "next": 2,
+    "top_m": 3812
+   },
+   {
+    "slug": "mount_rose_ski_tahoe",
+    "name": "Mount Rose Ski Tahoe",
+    "depth": 117,
+    "new72": 2,
+    "next": 0,
+    "top_m": 2916
+   },
+   {
+    "slug": "palisades_tahoe_alpine_meadows",
+    "name": "Palisades Tahoe Alpine Meadows",
+    "depth": 108,
+    "new72": 3,
+    "next": 1,
+    "top_m": 2589
+   },
+   {
+    "slug": "cimarron_mountain_club",
+    "name": "Cimarron Mountain Club",
+    "depth": 106,
+    "new72": 17,
+    "next": 1,
+    "top_m": 3461
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Colorado Avalanche Information Center",
+   "url": "https://avalanche.state.co.us/"
+  },
+  {
+   "provider": "avalanche.org (US national portal)",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-28",
+ "map_link": "https://snowscope.app/#@37.920,-107.835,9.0",
+ "seconds": 38.6,
+ "facts_used": 54,
+ "voice": "field",
+ "media_ids": [
+  "map"
+ ],
+ "seo_target": {
+  "topic": "telluride_ski_area:report",
+  "query": "telluride ski report",
+  "lang": "en",
+  "slug": "telluride_ski_area",
+  "region": "US_WEST",
+  "intent": "report",
+  "priority": "A",
+  "position": 7.8,
+  "impressions": 4,
+  "applied": true
+ },
+ "overlap": {
+  "before": 18.1,
+  "after": 18.1,
+  "with": "alps-alpe-d-huez-grand-domaine-fresh-snow-powder-alert-23-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.076,
+  "with": "alps-alpe-d-huez-grand-domaine-fresh-snow-powder-alert-23-november-2026"
+ },
+ "publish_utc": "2026-11-23T14:07:39Z",
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 736,
+  "overlap": 45.2,
+  "with": "us-west-telluride-snow-depth-today-19-november-2026",
+  "langs_off": [],
+  "score": 258.8,
+  "intent": "resort:brian_head_resort|rare_for_date",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ },
+ "cover": {
+  "v": 1,
+  "style": "split",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-telluride-snow-depth-today-23-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-telluride-snow-depth-today-23-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}

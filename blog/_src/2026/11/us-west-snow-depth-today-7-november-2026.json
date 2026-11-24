@@ -1,0 +1,525 @@
+{
+ "id": "2026-11-07-us_west-deepest",
+ "slug": "us-west-snow-depth-today-7-november-2026",
+ "date": "2026-11-07",
+ "published_utc": "2026-11-07T18:30:00Z",
+ "updated_utc": "2026-11-07T18:30:00Z",
+ "region": "US_WEST",
+ "angle": "deepest",
+ "score": 70,
+ "signature": "kendall_mountain_recreation_area:130|telluride_ski_area:120|crested_butte_mountain_resort:110",
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "US West",
+  "date": "2026-11-07",
+  "weekday": "Saturday",
+  "model_run": "2026-11-06",
+  "forecast_days": [
+   "2026-11-08",
+   "2026-11-09",
+   "2026-11-10"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 192600,
+   "resorts_with_snow": 136,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-05",
+   "snow_covered_area_km2": 234620,
+   "resorts_with_snow": 146
+  },
+  "region_forecast": {
+   "date": "2026-11-10",
+   "snow_covered_area_km2": 163310,
+   "resorts_with_snow": 124
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Kendall Mountain",
+    "country": "United States",
+    "top_m": 2904,
+    "base_m": 2835,
+    "depth_cm_upper_slopes_today": 127,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 0,
+    "slug": "kendall_mountain_recreation_area",
+    "new_cm_by_day": {
+     "2026-11-05": 1,
+     "2026-11-06": 0,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2835,
+      "depth_cm_model": 4,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 2869,
+      "depth_cm_model": 5,
+      "new_cm_next_7_days": 0
+     },
+     "top": {
+      "elev_m": 2904,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 0
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 2120,
+      "max": 3660
+     },
+     "2026-11-08": {
+      "min": 2370,
+      "max": 3980
+     },
+     "2026-11-09": {
+      "min": 2470,
+      "max": 4360
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 2869,
+     "snow_cm_at_this_height_today_model": 4,
+     "deeper_than_n_of_past_winters": 21,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 8
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-30"
+    },
+    "nearest_station": {
+     "station": "Mineral Creek",
+     "elev_m": 3057,
+     "depth_cm_measured": 13,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 7.4
+    }
+   },
+   {
+    "name": "Telluride",
+    "country": "United States",
+    "top_m": 3812,
+    "base_m": 2662,
+    "depth_cm_upper_slopes_today": 123,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 2,
+    "new_cm_forecast_next_days": 0,
+    "slug": "telluride_ski_area",
+    "new_cm_by_day": {
+     "2026-11-05": 2,
+     "2026-11-06": 0,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2662,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 3237,
+      "depth_cm_model": 26,
+      "new_cm_next_7_days": 0
+     },
+     "top": {
+      "elev_m": 3812,
+      "depth_cm_model": 104,
+      "new_cm_next_7_days": 0
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 2430,
+      "max": 3660
+     },
+     "2026-11-08": {
+      "min": 2870,
+      "max": 3950
+     },
+     "2026-11-09": {
+      "min": 2820,
+      "max": 4350
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 3237,
+     "snow_cm_at_this_height_today_model": 33,
+     "deeper_than_n_of_past_winters": 36,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 14
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-30"
+    },
+    "nearest_station": {
+     "station": "Alta Lakes",
+     "elev_m": 3441,
+     "depth_cm_measured": 46,
+     "new_cm_measured_24h": 18,
+     "measured_on": "2026-11-01",
+     "km_away": 3.5
+    }
+   },
+   {
+    "name": "Crested Butte",
+    "country": "United States",
+    "top_m": 3488,
+    "base_m": 2783,
+    "depth_cm_upper_slopes_today": 109,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 10,
+    "new_cm_forecast_next_days": 0,
+    "slug": "crested_butte_mountain_resort",
+    "new_cm_by_day": {
+     "2026-11-05": 10,
+     "2026-11-06": 0,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2783,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 0,
+      "depth_cm_measured": 2
+     },
+     "mid": {
+      "elev_m": 3135,
+      "depth_cm_model": 2,
+      "new_cm_next_7_days": 0,
+      "depth_cm_measured": 2
+     },
+     "top": {
+      "elev_m": 3488,
+      "depth_cm_model": 40,
+      "new_cm_next_7_days": 0
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-07": {
+      "min": 2200,
+      "max": 3700
+     },
+     "2026-11-08": {
+      "min": 2740,
+      "max": 3980
+     },
+     "2026-11-09": {
+      "min": 2910,
+      "max": 4260
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 2,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 3135,
+     "snow_cm_at_this_height_today_model": 8,
+     "deeper_than_n_of_past_winters": 16,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 14
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-10-27"
+    },
+    "nearest_station": {
+     "station": "Butte",
+     "elev_m": 3106,
+     "depth_cm_measured": 3,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 0.6
+    }
+   },
+   {
+    "name": "Lee's Ski Hill",
+    "country": "United States",
+    "top_m": 2421,
+    "base_m": 2401,
+    "depth_cm_upper_slopes_today": 86,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 0,
+    "slug": "lee_s_ski_hill",
+    "new_cm_by_day": {
+     "2026-11-05": 1,
+     "2026-11-06": 0,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0
+    }
+   },
+   {
+    "name": "Wolf Creek",
+    "country": "United States",
+    "top_m": 3585,
+    "base_m": 3128,
+    "depth_cm_upper_slopes_today": 80,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "wolf_creek_ski_area",
+    "new_cm_by_day": {
+     "2026-11-05": 0,
+     "2026-11-06": 0,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 0,
+     "2026-11-10": 0
+    }
+   }
+  ],
+  "measured_at_stations": [
+   {
+    "station": "Rat Creek",
+    "elev_m": 3560,
+    "depth_cm_measured": 66,
+    "new_cm_measured_24h": 23,
+    "measured_on": "2026-11-01",
+    "network": "snotel"
+   },
+   {
+    "station": "Beartown",
+    "elev_m": 3530,
+    "depth_cm_measured": 66,
+    "new_cm_measured_24h": 5,
+    "measured_on": "2026-11-01",
+    "network": "snotel"
+   },
+   {
+    "station": "Red Mountain Pass",
+    "elev_m": 3371,
+    "depth_cm_measured": 61,
+    "new_cm_measured_24h": 28,
+    "measured_on": "2026-11-01",
+    "network": "snotel"
+   }
+  ]
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-snow-depth-today-7-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-snow-depth-today-7-november-2026/map_t.webp",
+   "bytes": 68546
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "US West snow depth today: Kendall Mountain leads with 50 in (7 November)",
+   "description": "The most snow in the US West is at Kendall Mountain: about 50 in (127 cm) on the upper slopes, according to our snow model. Next come Telluride with …",
+   "lede": "The most snow in the US West is at Kendall Mountain: about 50 in (127 cm) on the upper slopes, according to our snow model. Next come Telluride with 48 in (123 cm) and Crested Butte with 43 in (109 cm). Our snow model shows 74,363 sq mi (192,600 km²) of snow-covered ground in the US West today, with snow at 136 of 195 resorts.",
+   "sections": [
+    {
+     "h": "Where the snow is today",
+     "p": [
+      "The snow cover shrank from 90,587 sq mi (234,620 km²) on 5 November to 74,363 sq mi (192,600 km²) today, and our forecast gives 63,054 sq mi (163,310 km²) on 10 November.",
+      "Height matters: at Telluride, our model gives 41 in (104 cm) at the top (12,507 ft / 3,812 m), 10 in (26 cm) at mid-mountain (10,620 ft / 3,237 m) and 0 in (1 cm) at the base (8,734 ft / 2,662 m)."
+     ]
+    },
+    {
+     "h": "What the stations measured",
+     "p": [
+      "The Rat Creek station (11,680 ft / 3,560 m) measured 26 in (66 cm) of snow on the ground on 1 November, with 9 in (23 cm) of new snow in 24 hours. The Beartown station (11,581 ft / 3,530 m) measured 26 in (66 cm) of snow on the ground on 1 November, with 2 in (5 cm) of new snow in 24 hours. The Red Mountain Pass station (11,060 ft / 3,371 m) measured 24 in (61 cm) of snow on the ground on 1 November, with 11 in (28 cm) of new snow in 24 hours.",
+      "Keep in mind: resort values come from our snow model and describe an area, while stations measure one point."
+     ]
+    },
+    {
+     "h": "Compared with past winters",
+     "p": [
+      "At 9,413 ft (2,869 m) on Kendall Mountain, today's 2 in (4 cm) is close to normal for the date: deeper than in 21 of the past 46 winters (usual: 3 in (8 cm)).",
+      "This is a good start at Telluride. At 10,620 ft (3,237 m), our model has 13 in (33 cm) today, deeper than on this date in 36 of the past 46 winters (usual: 6 in (14 cm)).",
+      "At 10,285 ft (3,135 m) on Crested Butte, today's 3 in (8 cm) is close to normal for the date: deeper than in 16 of the past 46 winters (usual: 6 in (14 cm))."
+     ]
+    },
+    {
+     "h": "What is coming next",
+     "p": [
+      "At Kendall Mountain, the freezing level reaches 8,104 ft (2,470 m) to 14,304 ft (4,360 m) on 9 November, above the top of the resort (9,528 ft / 2,904 m): rain or wet snow is possible on every slope that day.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "Look for snow high up and on north-facing slopes: they keep it longest, while south-facing slopes lose it first in the sun.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Kendall Mountain gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the US West on 7 November 2026 (SnowScope snow model): Kendall Mountain, Telluride, Crested Butte, Lee's Ski Hill, Wolf Creek."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  }
+ },
+ "words_en": 421,
+ "indexable": true,
+ "main": {
+  "slug": "kendall_mountain_recreation_area",
+  "name": "Kendall Mountain",
+  "lat": 37.8115,
+  "lon": -107.6563
+ },
+ "places": [
+  {
+   "name": "Kendall Mountain",
+   "lat": 37.8115,
+   "lon": -107.6563
+  },
+  {
+   "name": "Telluride",
+   "lat": 37.9197,
+   "lon": -107.8348
+  },
+  {
+   "name": "Crested Butte",
+   "lat": 38.8994,
+   "lon": -106.9498
+  },
+  {
+   "name": "Lee's Ski Hill",
+   "lat": 38.0187,
+   "lon": -107.6688
+  },
+  {
+   "name": "Wolf Creek",
+   "lat": 37.4632,
+   "lon": -106.7905
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "kendall_mountain_recreation_area",
+   "name": "Kendall Mountain"
+  },
+  {
+   "slug": "telluride_ski_area",
+   "name": "Telluride"
+  },
+  {
+   "slug": "crested_butte_mountain_resort",
+   "name": "Crested Butte"
+  },
+  {
+   "slug": "lee_s_ski_hill",
+   "name": "Lee's Ski Hill"
+  },
+  {
+   "slug": "wolf_creek_ski_area",
+   "name": "Wolf Creek"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "kendall_mountain_recreation_area",
+    "name": "Kendall Mountain",
+    "depth": 127,
+    "new72": 1,
+    "next": 0,
+    "top_m": 2904
+   },
+   {
+    "slug": "telluride_ski_area",
+    "name": "Telluride",
+    "depth": 123,
+    "new72": 2,
+    "next": 0,
+    "top_m": 3812
+   },
+   {
+    "slug": "crested_butte_mountain_resort",
+    "name": "Crested Butte",
+    "depth": 109,
+    "new72": 10,
+    "next": 0,
+    "top_m": 3488
+   },
+   {
+    "slug": "lee_s_ski_hill",
+    "name": "Lee's Ski Hill",
+    "depth": 86,
+    "new72": 1,
+    "next": 0,
+    "top_m": 2421
+   },
+   {
+    "slug": "wolf_creek_ski_area",
+    "name": "Wolf Creek",
+    "depth": 80,
+    "new72": 0,
+    "next": 0,
+    "top_m": 3585
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Colorado Avalanche Information Center",
+   "url": "https://avalanche.state.co.us/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@37.812,-107.656,9.0",
+ "seconds": 0.0,
+ "publish_utc": "2026-11-07T18:30:00Z",
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 545,
+  "overlap": 87.4,
+  "with": "us-west-snow-depth-today-3-november-2026",
+  "langs_off": [],
+  "score": 51.2,
+  "intent": "kendall_mountain_recreation_area|snow-depth",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ },
+ "cover": {
+  "v": 1,
+  "style": "map",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-snow-depth-today-7-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-snow-depth-today-7-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}

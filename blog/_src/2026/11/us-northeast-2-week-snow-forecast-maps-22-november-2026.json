@@ -1,0 +1,881 @@
+{
+ "id": "2026-11-22-us_ne-outlook14",
+ "slug": "us-northeast-2-week-snow-forecast-maps-22-november-2026",
+ "date": "2026-11-22",
+ "published_utc": "2026-11-23T00:50:01Z",
+ "updated_utc": "2026-11-23T00:50:01Z",
+ "region": "US_NE",
+ "angle": "outlook14",
+ "score": 70.0,
+ "signature": "2026-11-22|wildcat_mountain:60|jay_peak_resort:50|saddleback_mountain:50",
+ "keyword": {
+  "family": "two-week-forecast",
+  "entity": "us_ne",
+  "region": "US_NE",
+  "date": "2026-11-22"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "two_week_snow_outlook",
+  "region": "US Northeast",
+  "date": "2026-11-22",
+  "weekday": "Sunday",
+  "model_run": "2026-11-22",
+  "forecast_days": [
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 1050,
+   "resorts_with_snow": 31,
+   "resorts_in_region": 112
+  },
+  "region_before": {
+   "date": "2026-11-20",
+   "snow_covered_area_km2": 2060,
+   "resorts_with_snow": 38
+  },
+  "region_forecast": {
+   "date": "2026-11-25",
+   "snow_covered_area_km2": 340,
+   "resorts_with_snow": 19
+  },
+  "question": "Where will new snow fall in the next two weeks, how much, in which week, and at which height?",
+  "outlook_days": [
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30",
+   "2026-12-01",
+   "2026-12-02",
+   "2026-12-03",
+   "2026-12-04",
+   "2026-12-05",
+   "2026-12-06"
+  ],
+  "week1": {
+   "from": "2026-11-23",
+   "to": "2026-11-29"
+  },
+  "week2": {
+   "from": "2026-11-30",
+   "to": "2026-12-06"
+  },
+  "models": [
+   "ECMWF IFS",
+   "NOAA GFS"
+  ],
+  "lattice_points": 175,
+  "region_outlook": {
+   "max_new_cm_next_14_days": 65,
+   "area_km2_with_20cm_or_more": 4976,
+   "area_km2_with_50cm_or_more": 153,
+   "area_km2_mountains": 133200,
+   "week1_share_pct": 76
+  },
+  "new_cm_next_14_days_by_height": [
+   {
+    "from_m": 1000,
+    "to_m": 1500,
+    "new_cm_next_14_days_median": 41,
+    "new_cm_next_14_days_upper_quarter": 49
+   }
+  ],
+  "resorts_followed": 103,
+  "thresholds_cm": [
+   1,
+   5,
+   20,
+   50
+  ],
+  "best_days": [
+   {
+    "date": "2026-11-26",
+    "resorts_with_5cm_or_more": 13,
+    "max_cm": 7,
+    "top_resort": "Snow Ridge"
+   },
+   {
+    "date": "2026-11-27",
+    "resorts_with_5cm_or_more": 42,
+    "max_cm": 22,
+    "top_resort": "Wildcat Mountain"
+   }
+  ],
+  "resorts": [
+   {
+    "name": "Wildcat Mountain",
+    "country": "United States",
+    "top_m": 1211,
+    "base_m": 593,
+    "depth_cm_upper_slopes_today": 13,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "wildcat_mountain",
+    "new_cm_next_14_days": 56,
+    "new_cm_next_14_days_low": 24,
+    "new_cm_next_14_days_high": 87,
+    "new_cm_days_1_7": 29,
+    "new_cm_days_8_14": 27,
+    "snowiest_day": "2026-11-27",
+    "snowiest_day_cm": 22,
+    "days_with_5cm_or_more": 2,
+    "days_with_snow": 7,
+    "daily": [
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 22
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 3
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-06",
+      "cm": 21
+     }
+    ],
+    "upper_slopes_height_m": 1137
+   },
+   {
+    "name": "Jay Peak Resort",
+    "country": "United States",
+    "top_m": 1166,
+    "base_m": 560,
+    "depth_cm_upper_slopes_today": 3,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "jay_peak_resort",
+    "new_cm_next_14_days": 48,
+    "new_cm_next_14_days_low": 21,
+    "new_cm_next_14_days_high": 75,
+    "new_cm_days_1_7": 26,
+    "new_cm_days_8_14": 22,
+    "snowiest_day": "2026-11-27",
+    "snowiest_day_cm": 19,
+    "days_with_5cm_or_more": 2,
+    "days_with_snow": 8,
+    "daily": [
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 19
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 3
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 4
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-06",
+      "cm": 10
+     }
+    ],
+    "upper_slopes_height_m": 927
+   },
+   {
+    "name": "Saddleback Mountain",
+    "country": "United States",
+    "top_m": 1218,
+    "base_m": 655,
+    "depth_cm_upper_slopes_today": 20,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "saddleback_mountain",
+    "new_cm_next_14_days": 47,
+    "new_cm_next_14_days_low": 19,
+    "new_cm_next_14_days_high": 74,
+    "new_cm_days_1_7": 23,
+    "new_cm_days_8_14": 24,
+    "snowiest_day": "2026-12-06",
+    "snowiest_day_cm": 21,
+    "days_with_5cm_or_more": 2,
+    "days_with_snow": 5,
+    "daily": [
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 18
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-06",
+      "cm": 21
+     }
+    ],
+    "upper_slopes_height_m": 1045
+   },
+   {
+    "name": "Stowe",
+    "country": "United States",
+    "top_m": 1112,
+    "base_m": 400,
+    "depth_cm_upper_slopes_today": 9,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "stowe",
+    "new_cm_next_14_days": 41,
+    "new_cm_next_14_days_low": 20,
+    "new_cm_next_14_days_high": 61,
+    "new_cm_days_1_7": 25,
+    "new_cm_days_8_14": 16,
+    "snowiest_day": "2026-11-27",
+    "snowiest_day_cm": 16,
+    "days_with_5cm_or_more": 2,
+    "days_with_snow": 9,
+    "daily": [
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 16
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 3
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 3
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-06",
+      "cm": 6
+     }
+    ],
+    "upper_slopes_height_m": 893
+   },
+   {
+    "name": "Cannon Mountain",
+    "country": "United States",
+    "top_m": 1231,
+    "base_m": 574,
+    "depth_cm_upper_slopes_today": 16,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "cannon_mountain",
+    "new_cm_next_14_days": 35,
+    "new_cm_next_14_days_low": 10,
+    "new_cm_next_14_days_high": 60,
+    "new_cm_days_1_7": 19,
+    "new_cm_days_8_14": 16,
+    "snowiest_day": "2026-11-27",
+    "snowiest_day_cm": 11,
+    "days_with_5cm_or_more": 2,
+    "days_with_snow": 6,
+    "daily": [
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 11
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 3
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-06",
+      "cm": 11
+     }
+    ],
+    "upper_slopes_height_m": 1092
+   },
+   {
+    "name": "Waterville Valley Resort",
+    "country": "United States",
+    "top_m": 1163,
+    "base_m": 556,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "waterville_valley_resort",
+    "new_cm_next_14_days": 35,
+    "new_cm_next_14_days_low": 9,
+    "new_cm_next_14_days_high": 61,
+    "new_cm_days_1_7": 20,
+    "new_cm_days_8_14": 15,
+    "snowiest_day": "2026-11-27",
+    "snowiest_day_cm": 12,
+    "days_with_5cm_or_more": 2,
+    "days_with_snow": 6,
+    "daily": [
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 12
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-04",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-05",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-06",
+      "cm": 11
+     }
+    ],
+    "upper_slopes_height_m": 976
+   }
+  ],
+  "notes": [
+   "new snow = middle of the two models' daily snowfall, brought onto the terrain (1 km); low / high = the two models",
+   "resort values = the slopes at or above mid-mountain within a few km of the resort, not the village",
+   "days 1-14 = tomorrow to day 14; week 1 = days 1-7, week 2 = days 8-14",
+   "snow by height = all the mountain terrain of the region, not only resorts"
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Wildcat Mountain",
+     "slug": "wildcat_mountain",
+     "now_cm": 1,
+     "usual_cm": 5,
+     "high_cm": 20,
+     "week_ago_cm": 1,
+     "height_m": 902,
+     "best_weeks": [
+      9,
+      10,
+      8
+     ],
+     "ratio_pct": 20
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Wildcat Mountain",
+   "next_cm": 0,
+   "second": "Jay Peak Resort",
+   "second_cm": 3,
+   "depth_cm": 13
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-22-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-22-november-2026/map_t.webp",
+   "bytes": 38956,
+   "snow_frac": 0.7467,
+   "weak": false
+  },
+  {
+   "id": "week1",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-22-november-2026/week1.webp",
+   "thumb": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-22-november-2026/week1_t.webp",
+   "bytes": 36962,
+   "snow_frac": 0.7085,
+   "weak": false
+  },
+  {
+   "id": "week2",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-22-november-2026/week2.webp",
+   "thumb": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-22-november-2026/week2_t.webp",
+   "bytes": 33446,
+   "snow_frac": 0.338,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Wildcat Mountain 56 cm in two weeks, mostly in week one",
+   "description": "Wildcat Mountain will receive 56 cm of snow over the next 14 days, with 76 percent falling in the first week. Our snow model forecast is from 22 November.",
+   "lede": "Wildcat Mountain sits under 13 in (33 cm) of snow today, but our models show 56 cm arriving over the next two weeks. Most of that snow—about 29 in (74 cm)—will fall in week one, with a heavy day on 27 November.",
+   "sections": [
+    {
+     "h": "Water on the high slopes",
+     "p": [
+      "The Northeast is drying out fast. Only 31 of 112 resorts still have measurable snow cover today, down from 38 on 20 November. As a snow hydrologist, I track this as water storage in the mountains. Right now that storage is thin: the region holds snow across just 1,050 km² of terrain. But a change is coming.",
+      "At elevations between 1,000 and 1,500 m across the region, our forecast shows 41 cm of new snow over the next 14 days (with some slopes getting up to 49 cm). That will rebuild the water reserve. Wildcat Mountain, at 1,137 m on its upper slopes, is well-placed to catch this system."
+     ]
+    },
+    {
+     "h": "Week one: the main event",
+     "p": [
+      "Three-quarters of the two-week total will come in week one (23 to 29 November). The key day is 27 November, when Wildcat Mountain is forecast to receive 22 cm. Jay Peak Resort, slightly lower, should see 19 cm that same day. This is when the system moves in and delivers.",
+      "Before 27 November the mountains stay dry. After that date, snow continues but at a slower pace: 2 to 4 cm days through to the end of week one. By 30 November, Wildcat will have stored about 29 in (74 cm) of water as snow."
+     ]
+    },
+    {
+     "h": "Week two: scattered snow and a finish",
+     "p": [
+      "Week two (30 November to 6 December) is less certain. The models show scattered snow every few days, but totals are smaller. Wildcat Mountain picks up another 27 cm through week two, with the second significant event arriving on 6 December (21 cm).",
+      "By then, deeper snow at high elevation should protect the base layers from new melt. Watch the temperature: early-season snow can be thin and water-rich. Where rocks poke through, you are still skiing on bare ground."
+     ]
+    },
+    {
+     "h": "The regional picture",
+     "p": [
+      "Across the Northeast, an area of 4,976 km² should receive 20 cm or more over the next 14 days. Only 153 km² will see 50 cm or more, mostly at the highest ridges. This forecast is built from 175 grid points across the region, using two global weather models (ECMWF IFS and NOAA GFS). Both models agree on the timing and size of the main event on 27 November, but the range of uncertainty—especially for a second system in week two—grows as we look further ahead."
+     ]
+    }
+   ],
+   "advice": [
+    "Watch 27 November closely: this is the day most resorts will see meaningful accumulation. Plan to be on higher slopes (above 1,100 m) where snow depth and water content will be greater.",
+    "Early-season snow often sits on thin older cover or bare rock. Probe the snow carefully before committing to steep terrain. Check the official avalanche bulletin before going off-piste.",
+    "Week one snow will be wetter and denser than mid-winter snow. Tracks cut by other skiers will be noticeable. Expect firm conditions by afternoon.",
+    "By 6 December, a second wave may add another 10 to 20 cm to upper slopes, but uncertainty is higher. The range from low to high forecasts is 24 to 87 cm at Wildcat Mountain for the full 14 days.",
+    "Use SnowScope to track the actual depth at each resort as snow lands. Early forecasts can shift; we will update as the systems approach."
+   ],
+   "captions": {
+    "map": "Snow cover in the Northeast today (22 November) and forecast depth across the region by 25 November (end of day three).",
+    "week1": "Daily new snow forecast for Wildcat Mountain, Jay Peak Resort, Saddleback Mountain, Stowe, Cannon Mountain, and Waterville Valley Resort for 23 to 29 November. Week one shows the main snow event on 27 November.",
+    "week2": "Daily new snow forecast for the same six resorts for 30 November to 6 December. Week two shows smaller amounts, with a second event on 6 December."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "rejected_numbers": [
+    [
+     "1200"
+    ]
+   ],
+   "voice": "hydro"
+  }
+ },
+ "words_en": 411,
+ "indexable": true,
+ "main": {
+  "slug": "wildcat_mountain",
+  "name": "Wildcat Mountain",
+  "lat": 44.2599,
+  "lon": -71.2341
+ },
+ "places": [
+  {
+   "name": "Wildcat Mountain",
+   "lat": 44.2599,
+   "lon": -71.2341
+  },
+  {
+   "name": "Jay Peak Resort",
+   "lat": 44.9282,
+   "lon": -72.5154
+  },
+  {
+   "name": "Saddleback Mountain",
+   "lat": 44.9425,
+   "lon": -70.5244
+  },
+  {
+   "name": "Stowe",
+   "lat": 44.5304,
+   "lon": -72.7882
+  },
+  {
+   "name": "Cannon Mountain",
+   "lat": 44.1728,
+   "lon": -71.7031
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "wildcat_mountain",
+   "name": "Wildcat Mountain"
+  },
+  {
+   "slug": "jay_peak_resort",
+   "name": "Jay Peak Resort"
+  },
+  {
+   "slug": "saddleback_mountain",
+   "name": "Saddleback Mountain"
+  },
+  {
+   "slug": "stowe",
+   "name": "Stowe"
+  },
+  {
+   "slug": "cannon_mountain",
+   "name": "Cannon Mountain"
+  },
+  {
+   "slug": "waterville_valley_resort",
+   "name": "Waterville Valley Resort"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "wildcat_mountain",
+    "name": "Wildcat Mountain",
+    "depth": 13,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1211
+   },
+   {
+    "slug": "jay_peak_resort",
+    "name": "Jay Peak Resort",
+    "depth": 3,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1166
+   },
+   {
+    "slug": "saddleback_mountain",
+    "name": "Saddleback Mountain",
+    "depth": 20,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1218
+   },
+   {
+    "slug": "stowe",
+    "name": "Stowe",
+    "depth": 9,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1112
+   },
+   {
+    "slug": "cannon_mountain",
+    "name": "Cannon Mountain",
+    "depth": 16,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1231
+   },
+   {
+    "slug": "waterville_valley_resort",
+    "name": "Waterville Valley Resort",
+    "depth": 0,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1163
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Mount Washington Avalanche Center",
+   "url": "https://www.mountwashingtonavalanchecenter.org/"
+  }
+ ],
+ "trip_day": "2026-11-28",
+ "map_link": "https://snowscope.app/#@44.260,-71.234,9.0",
+ "seconds": 30.7,
+ "facts_used": 29,
+ "voice": "hydro",
+ "media_ids": [
+  "map",
+  "week1",
+  "week2"
+ ],
+ "overlap": {
+  "before": 2.0,
+  "after": 2.0,
+  "with": "pyrenees-2-week-snow-forecast-maps-18-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.011,
+  "with": "western-canada-2-week-snow-forecast-maps-22-november-2026"
+ },
+ "publish_utc": "2026-11-22T17:02:18Z",
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 577,
+  "overlap": 3.9,
+  "with": "pyrenees-2-week-snow-forecast-maps-18-november-2026",
+  "langs_off": [],
+  "score": 52.9,
+  "intent": "us_ne|two-week-forecast",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ },
+ "cover": {
+  "v": 1,
+  "style": "hero",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-22-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-22-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}

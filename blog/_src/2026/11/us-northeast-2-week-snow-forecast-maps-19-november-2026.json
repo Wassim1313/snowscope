@@ -1,0 +1,894 @@
+{
+ "id": "2026-11-19-us_ne-outlook14",
+ "slug": "us-northeast-2-week-snow-forecast-maps-19-november-2026",
+ "date": "2026-11-19",
+ "published_utc": "2026-11-19T17:59:41Z",
+ "updated_utc": "2026-11-19T17:59:41Z",
+ "region": "US_NE",
+ "angle": "outlook14",
+ "score": 63.2,
+ "signature": "2026-11-19|wildcat_mountain:30|saddleback_mountain:30|waterville_valley_resort:20",
+ "keyword": {
+  "family": "two-week-forecast",
+  "entity": "us_ne",
+  "region": "US_NE",
+  "date": "2026-11-19"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "two_week_snow_outlook",
+  "region": "US Northeast",
+  "date": "2026-11-19",
+  "weekday": "Thursday",
+  "model_run": "2026-11-18",
+  "forecast_days": [
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 260,
+   "resorts_with_snow": 13,
+   "resorts_in_region": 112
+  },
+  "region_before": {
+   "date": "2026-11-17",
+   "snow_covered_area_km2": 2040,
+   "resorts_with_snow": 23
+  },
+  "region_forecast": {
+   "date": "2026-11-22",
+   "snow_covered_area_km2": 60,
+   "resorts_with_snow": 4
+  },
+  "question": "Where will new snow fall in the next two weeks, how much, in which week, and at which height?",
+  "outlook_days": [
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30",
+   "2026-12-01",
+   "2026-12-02",
+   "2026-12-03"
+  ],
+  "week1": {
+   "from": "2026-11-20",
+   "to": "2026-11-26"
+  },
+  "week2": {
+   "from": "2026-11-27",
+   "to": "2026-12-03"
+  },
+  "models": [
+   "ECMWF IFS",
+   "NOAA GFS"
+  ],
+  "lattice_points": 175,
+  "region_outlook": {
+   "max_new_cm_next_14_days": 34,
+   "area_km2_with_20cm_or_more": 1107,
+   "area_km2_with_50cm_or_more": 0,
+   "area_km2_mountains": 133200,
+   "week1_share_pct": 49
+  },
+  "new_cm_next_14_days_by_height": [
+   {
+    "from_m": 1000,
+    "to_m": 1500,
+    "new_cm_next_14_days_median": 17,
+    "new_cm_next_14_days_upper_quarter": 26
+   }
+  ],
+  "resorts_followed": 103,
+  "thresholds_cm": [
+   1,
+   5,
+   20,
+   50
+  ],
+  "best_days": [
+   {
+    "date": "2026-11-26",
+    "resorts_with_5cm_or_more": 75,
+    "max_cm": 10,
+    "top_resort": "Mount Snow"
+   },
+   {
+    "date": "2026-11-27",
+    "resorts_with_5cm_or_more": 51,
+    "max_cm": 11,
+    "top_resort": "Bolton Valley Resort"
+   }
+  ],
+  "resorts": [
+   {
+    "name": "Wildcat Mountain",
+    "country": "United States",
+    "top_m": 1211,
+    "base_m": 593,
+    "depth_cm_upper_slopes_today": 40,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "wildcat_mountain",
+    "new_cm_next_14_days": 29,
+    "new_cm_next_14_days_low": 2,
+    "new_cm_next_14_days_high": 55,
+    "new_cm_days_1_7": 9,
+    "new_cm_days_8_14": 20,
+    "snowiest_day": "2026-12-03",
+    "snowiest_day_cm": 10,
+    "days_with_5cm_or_more": 3,
+    "days_with_snow": 5,
+    "daily": [
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 9
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 10
+     }
+    ],
+    "upper_slopes_height_m": 1137
+   },
+   {
+    "name": "Saddleback Mountain",
+    "country": "United States",
+    "top_m": 1218,
+    "base_m": 655,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "saddleback_mountain",
+    "new_cm_next_14_days": 26,
+    "new_cm_next_14_days_low": 0,
+    "new_cm_next_14_days_high": 53,
+    "new_cm_days_1_7": 8,
+    "new_cm_days_8_14": 19,
+    "snowiest_day": "2026-12-03",
+    "snowiest_day_cm": 13,
+    "days_with_5cm_or_more": 3,
+    "days_with_snow": 3,
+    "daily": [
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 8
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 13
+     }
+    ],
+    "upper_slopes_height_m": 1045
+   },
+   {
+    "name": "Waterville Valley Resort",
+    "country": "United States",
+    "top_m": 1163,
+    "base_m": 556,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "waterville_valley_resort",
+    "new_cm_next_14_days": 21,
+    "new_cm_next_14_days_low": 1,
+    "new_cm_next_14_days_high": 41,
+    "new_cm_days_1_7": 6,
+    "new_cm_days_8_14": 15,
+    "snowiest_day": "2026-12-03",
+    "snowiest_day_cm": 7,
+    "days_with_5cm_or_more": 3,
+    "days_with_snow": 4,
+    "daily": [
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 2
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 7
+     }
+    ],
+    "upper_slopes_height_m": 976
+   },
+   {
+    "name": "Bolton Valley Resort",
+    "country": "United States",
+    "top_m": 950,
+    "base_m": 475,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "bolton_valley_resort",
+    "new_cm_next_14_days": 18,
+    "new_cm_next_14_days_low": 1,
+    "new_cm_next_14_days_high": 35,
+    "new_cm_days_1_7": 5,
+    "new_cm_days_8_14": 14,
+    "snowiest_day": "2026-11-27",
+    "snowiest_day_cm": 11,
+    "days_with_5cm_or_more": 1,
+    "days_with_snow": 4,
+    "daily": [
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 11
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 814
+   },
+   {
+    "name": "Mad River Glen",
+    "country": "United States",
+    "top_m": 1106,
+    "base_m": 502,
+    "depth_cm_upper_slopes_today": 0,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "mad_river_glen",
+    "new_cm_next_14_days": 18,
+    "new_cm_next_14_days_low": 1,
+    "new_cm_next_14_days_high": 34,
+    "new_cm_days_1_7": 5,
+    "new_cm_days_8_14": 13,
+    "snowiest_day": "2026-11-27",
+    "snowiest_day_cm": 10,
+    "days_with_5cm_or_more": 1,
+    "days_with_snow": 3,
+    "daily": [
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 10
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 911
+   },
+   {
+    "name": "Smugglers' Notch Resort",
+    "country": "United States",
+    "top_m": 1112,
+    "base_m": 340,
+    "depth_cm_upper_slopes_today": 3,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 0,
+    "slug": "smugglers_notch_resort",
+    "new_cm_next_14_days": 18,
+    "new_cm_next_14_days_low": 1,
+    "new_cm_next_14_days_high": 35,
+    "new_cm_days_1_7": 5,
+    "new_cm_days_8_14": 13,
+    "snowiest_day": "2026-11-27",
+    "snowiest_day_cm": 10,
+    "days_with_5cm_or_more": 1,
+    "days_with_snow": 4,
+    "daily": [
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 10
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 0
+     },
+     {
+      "date": "2026-12-01",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-02",
+      "cm": 1
+     },
+     {
+      "date": "2026-12-03",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 877
+   }
+  ],
+  "notes": [
+   "new snow = middle of the two models' daily snowfall, brought onto the terrain (1 km); low / high = the two models",
+   "resort values = the slopes at or above mid-mountain within a few km of the resort, not the village",
+   "days 1-14 = tomorrow to day 14; week 1 = days 1-7, week 2 = days 8-14",
+   "snow by height = all the mountain terrain of the region, not only resorts"
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Wildcat Mountain",
+     "slug": "wildcat_mountain",
+     "now_cm": 1,
+     "usual_cm": 4,
+     "high_cm": 18,
+     "week_ago_cm": 2,
+     "height_m": 902,
+     "best_weeks": [
+      9,
+      10,
+      8
+     ],
+     "ratio_pct": 25
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Wildcat Mountain",
+   "next_cm": 0,
+   "second": "Saddleback Mountain",
+   "second_cm": 0,
+   "depth_cm": 40
+  },
+  "story": {
+   "id": "resort_lead",
+   "place": "resort:wildcat_mountain",
+   "score": 47,
+   "resort": "Wildcat Mountain"
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-19-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-19-november-2026/map_t.webp",
+   "bytes": 33626,
+   "snow_frac": 0.7538,
+   "weak": false
+  },
+  {
+   "id": "week1",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-19-november-2026/week1.webp",
+   "thumb": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-19-november-2026/week1_t.webp",
+   "bytes": 29264,
+   "snow_frac": 0.7488,
+   "weak": false
+  },
+  {
+   "id": "week2",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-19-november-2026/week2.webp",
+   "thumb": "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-19-november-2026/week2_t.webp",
+   "bytes": 33590,
+   "snow_frac": 0.6672,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Wildcat Mountain leads Northeast with 29 cm snow forecast over two weeks",
+   "description": "Wildcat Mountain will receive the most snow in the Northeast over the next 14 days, with 29 cm forecast by our models as of November 19.",
+   "lede": "Wildcat Mountain stands apart from other Northeast resorts over the next two weeks, with our snow model forecasting 29 cm of new snow by December 3rd. This advantage stems from both elevation and the timing of two distinct storm systems, the first arriving late next week.",
+   "sections": [
+    {
+     "h": "Why Wildcat Mountain leads",
+     "p": [
+      "Wildcat Mountain's forecast of 29 cm places it ahead of Saddleback Mountain, which will receive 26 cm, and all other tracked resorts. The difference reflects terrain exposure and elevation: Wildcat's upper slopes sit at 1,137 m, capturing snow from systems that may weaken or miss lower terrain. The two weather models we use—ECMWF IFS and NOAA GFS—show consistency here, with the range running from 2 cm to 55 cm, suggesting real but manageable uncertainty at this distance.",
+      "The Northeast region as a whole faces a modest two-week outlook. Our model estimates a maximum of 34 cm across all terrain between 1,000 m and 1,500 m elevation. Only about 1,107 km² of the region's 133,200 km² of mountains will see 20 cm or more. No area is forecast to accumulate 50 cm. This is early-season snow on thin ground."
+     ]
+    },
+    {
+     "h": "Two storms, two weeks",
+     "p": [
+      "New snow will fall in bursts rather than a continuous snow cover. Week one (November 20–26) accounts for roughly half the region's total forecast snow, with November 26th emerging as the strongest day. Mount Snow leads that day across the region, with 10 cm forecast. Wildcat Mountain will see 9 cm on November 26th, followed by 6 cm on November 27th as a second system moves through.",
+      "Week two (November 27–December 3rd) will deliver the remainder. The snowiest day for Wildcat Mountain falls on December 3rd, when 10 cm is forecast. This is a delayed peak—most resorts experience their deepest snowfall in the final days of the outlook. For comparison, Bolton Valley Resort and Mad River Glen both peak on November 27th with 11 cm and 10 cm respectively, then see minimal accumulation afterward."
+     ]
+    },
+    {
+     "h": "What 29 cm means for water storage",
+     "p": [
+      "From a hydrological perspective, 29 cm of new snow at Wildcat Mountain's elevation represents meaningful but limited water equivalent. Fresh early-season snow typically holds 8–10 percent water by weight, so this accumulation translates to roughly 23–29 mm of water. At mountain scale, this matters: snow acts as a slow-release reservoir, feeding streams and groundwater through the winter and spring melt. However, early November snow often melts partially or entirely during warm spells before a stable snowpack forms.",
+      "Wildcat Mountain currently holds 40 cm of snow on its upper slopes as of today (November 19th). The incoming 29 cm will increase that base, but rocks and vegetation may remain exposed in thin-snow patches, particularly on south-facing slopes and below 1,000 m. The model's high-end estimate of 55 cm would substantially improve conditions; the low-end scenario of 2 cm would leave the base fragile."
+     ]
+    },
+    {
+     "h": "Upper-elevation advantage",
+     "p": [
+      "Height shapes the forecast across the Northeast. Terrain between 1,000 m and 1,500 m will average 17 cm of new snow over the two weeks, with the upper quarter of that range reaching 26 cm. Below 1,000 m, snow will be scantier and more vulnerable to thaw. Wildcat Mountain benefits from both height and position: its peak reaches 1,211 m, well above the transition zone where rain becomes more likely. Lower resorts such as Bolton Valley Resort (950 m peak) and Mad River Glen (1,106 m) will accumulate less—18 cm and 18 cm respectively.",
+      "This elevation effect matters for skiing. Upper slopes will hold snow longer than base areas, and runs facing north will retain it longer than those facing south. Early-season skiers should plan to ski higher and north-facing terrain when it is available."
+     ]
+    },
+    {
+     "h": "Timing for skiers",
+     "p": [
+      "Wildcat Mountain will see snow on five separate days over the two weeks, with three days bringing 5 cm or more. The concentrated bursts on November 26–27 and December 3rd create two brief windows of fresher snow. Between these events, November 28–December 2 will be mostly dry, so early turns after November 27th will ski into settled, compacted conditions rather than powder.",
+      "The forecast carries the usual uncertainties of a two-week horizon. Storms may intensify, stall, or weaken. Warm air could reduce accumulation at lower elevations. The models agree on the broad pattern—two pulses, with the second arriving in early December—but disagree on intensity. Plan to visit Wildcat Mountain around November 26–27 or early December, check the official avalanche bulletin if venturing off-piste, and expect variable coverage below 1,000 m."
+     ]
+    }
+   ],
+   "advice": [
+    "Wildcat Mountain's upper slopes (above 1,100 m) will retain the most snow through mid-December. Focus on these elevations, especially north-facing terrain, to find the deepest pack.",
+    "Timing matters: November 26–27 and December 3rd are the forecast peaks. Snow falling between these dates will compress; fresh powder will be thin and brief.",
+    "Early-season snow at this depth (average 29 cm) can hide rocks and stumps. Check the SnowScope app for measured depth at base and mid-mountain before each visit.",
+    "If skiing off-piste, consult the official avalanche bulletin for the Northeast. Early-season snowpack stability depends on what lies beneath; a 29 cm accumulation over thin ground can slide."
+   ],
+   "captions": {
+    "map": "Snow depth and coverage across the Northeast region as of November 19, 2026, showing 260 km² of snow-covered terrain and 13 resorts currently holding snow.",
+    "week1": "Forecast new snow by resort for week one (November 20–26, 2026). Wildcat Mountain receives 9 cm on November 26th; Mount Snow leads the region that day with 10 cm.",
+    "week2": "Forecast new snow by resort for week two (November 27–December 3, 2026). Wildcat Mountain peaks on December 3rd with 10 cm; Bolton Valley Resort and Saddleback Mountain receive their heaviest falls on November 27th."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "rejected_numbers": [
+    [
+     "90"
+    ]
+   ],
+   "voice": "hydro"
+  }
+ },
+ "words_en": 725,
+ "indexable": true,
+ "main": {
+  "slug": "wildcat_mountain",
+  "name": "Wildcat Mountain",
+  "lat": 44.2599,
+  "lon": -71.2341
+ },
+ "places": [
+  {
+   "name": "Wildcat Mountain",
+   "lat": 44.2599,
+   "lon": -71.2341
+  },
+  {
+   "name": "Saddleback Mountain",
+   "lat": 44.9425,
+   "lon": -70.5244
+  },
+  {
+   "name": "Waterville Valley Resort",
+   "lat": 43.963,
+   "lon": -71.535
+  },
+  {
+   "name": "Bolton Valley Resort",
+   "lat": 44.4184,
+   "lon": -72.8491
+  },
+  {
+   "name": "Mad River Glen",
+   "lat": 44.1985,
+   "lon": -72.9228
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "wildcat_mountain",
+   "name": "Wildcat Mountain"
+  },
+  {
+   "slug": "saddleback_mountain",
+   "name": "Saddleback Mountain"
+  },
+  {
+   "slug": "waterville_valley_resort",
+   "name": "Waterville Valley Resort"
+  },
+  {
+   "slug": "bolton_valley_resort",
+   "name": "Bolton Valley Resort"
+  },
+  {
+   "slug": "mad_river_glen",
+   "name": "Mad River Glen"
+  },
+  {
+   "slug": "smugglers_notch_resort",
+   "name": "Smugglers' Notch Resort"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "wildcat_mountain",
+    "name": "Wildcat Mountain",
+    "depth": 40,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1211
+   },
+   {
+    "slug": "saddleback_mountain",
+    "name": "Saddleback Mountain",
+    "depth": 0,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1218
+   },
+   {
+    "slug": "waterville_valley_resort",
+    "name": "Waterville Valley Resort",
+    "depth": 0,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1163
+   },
+   {
+    "slug": "bolton_valley_resort",
+    "name": "Bolton Valley Resort",
+    "depth": 0,
+    "new72": 0,
+    "next": 0,
+    "top_m": 950
+   },
+   {
+    "slug": "mad_river_glen",
+    "name": "Mad River Glen",
+    "depth": 0,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1106
+   },
+   {
+    "slug": "smugglers_notch_resort",
+    "name": "Smugglers' Notch Resort",
+    "depth": 3,
+    "new72": 0,
+    "next": 0,
+    "top_m": 1112
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Mount Washington Avalanche Center",
+   "url": "https://www.mountwashingtonavalanchecenter.org/"
+  }
+ ],
+ "trip_day": "2026-11-21",
+ "map_link": "https://snowscope.app/#@44.260,-71.234,9.0",
+ "seconds": 48.1,
+ "facts_used": 23,
+ "voice": "hydro",
+ "media_ids": [
+  "map",
+  "week1",
+  "week2"
+ ],
+ "overlap": {
+  "before": 1.1,
+  "after": 1.1,
+  "with": "alps-2-week-snow-forecast-maps-18-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.008,
+  "with": "pyrenees-2-week-snow-forecast-maps-18-november-2026"
+ },
+ "publish_utc": "2026-11-19T17:59:41Z",
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 883,
+  "overlap": 2.4,
+  "with": "pyrenees-2-week-snow-forecast-maps-18-november-2026",
+  "langs_off": [],
+  "score": 113.8,
+  "intent": "resort:wildcat_mountain|resort_lead",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ },
+ "cover": {
+  "v": 1,
+  "style": "hero",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-19-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-northeast-2-week-snow-forecast-maps-19-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}

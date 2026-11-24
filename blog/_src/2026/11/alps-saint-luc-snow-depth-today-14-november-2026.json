@@ -1,0 +1,674 @@
+{
+ "id": "2026-11-14-alps-deepest",
+ "slug": "alps-saint-luc-snow-depth-today-14-november-2026",
+ "date": "2026-11-14",
+ "published_utc": "2026-11-14T12:48:16Z",
+ "updated_utc": "2026-11-14T12:48:16Z",
+ "region": "ALPS",
+ "angle": "deepest",
+ "score": 57.5,
+ "signature": "saint_luc_chandolin:110|monterosa_ski:110|aletsch_arena:100",
+ "keyword": {
+  "family": "snow-depth",
+  "entity": "saint_luc_chandolin",
+  "region": "ALPS",
+  "date": "2026-11-14"
+ },
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "Alps",
+  "date": "2026-11-14",
+  "weekday": "Saturday",
+  "model_run": "2026-11-14",
+  "forecast_days": [
+   "2026-11-15",
+   "2026-11-16",
+   "2026-11-17"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 68650,
+   "resorts_with_snow": 791,
+   "resorts_in_region": 1179
+  },
+  "region_before": {
+   "date": "2026-11-12",
+   "snow_covered_area_km2": 35250,
+   "resorts_with_snow": 567
+  },
+  "region_forecast": {
+   "date": "2026-11-17",
+   "snow_covered_area_km2": 56290,
+   "resorts_with_snow": 693
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Saint-Luc",
+    "country": "Switzerland",
+    "top_m": 2973,
+    "base_m": 1682,
+    "depth_cm_upper_slopes_today": 110,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 19,
+    "new_cm_forecast_next_days": 24,
+    "slug": "saint_luc_chandolin",
+    "new_cm_by_day": {
+     "2026-11-12": 15,
+     "2026-11-13": 4,
+     "2026-11-14": 0,
+     "2026-11-15": 4,
+     "2026-11-16": 7,
+     "2026-11-17": 13
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1682,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 37
+     },
+     "mid": {
+      "elev_m": 2327,
+      "depth_cm_model": 5,
+      "new_cm_next_7_days": 50
+     },
+     "top": {
+      "elev_m": 2973,
+      "depth_cm_model": 14,
+      "new_cm_next_7_days": 58
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-14": {
+      "min": 2070,
+      "max": 2330
+     },
+     "2026-11-15": {
+      "min": 2120,
+      "max": 2280
+     },
+     "2026-11-16": {
+      "min": 2110,
+      "max": 2890
+     },
+     "2026-11-17": {
+      "min": 2450,
+      "max": 3160
+     }
+    },
+    "past_winters": {
+     "height_m": 2327,
+     "snow_cm_at_this_height_today_model": 7,
+     "deeper_than_n_of_past_winters": 8,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 22
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-08"
+    },
+    "nearest_station": {
+     "station": "Grimentz",
+     "elev_m": 1560,
+     "depth_cm_measured": 0,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-14",
+     "km_away": 6.4
+    }
+   },
+   {
+    "name": "Monterosa Ski",
+    "country": "Italy",
+    "top_m": 3030,
+    "base_m": 1207,
+    "depth_cm_upper_slopes_today": 106,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 28,
+    "new_cm_forecast_next_days": 18,
+    "slug": "monterosa_ski",
+    "new_cm_by_day": {
+     "2026-11-12": 25,
+     "2026-11-13": 2,
+     "2026-11-14": 1,
+     "2026-11-15": 3,
+     "2026-11-16": 4,
+     "2026-11-17": 11
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1207,
+      "depth_cm_model": null,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 2118,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 23
+     },
+     "top": {
+      "elev_m": 3030,
+      "depth_cm_model": 18,
+      "new_cm_next_7_days": 36
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-14": {
+      "min": 1810,
+      "max": 2070
+     },
+     "2026-11-15": {
+      "min": 1880,
+      "max": 2250
+     },
+     "2026-11-16": {
+      "min": 2090,
+      "max": 2650
+     },
+     "2026-11-17": {
+      "min": 2570,
+      "max": 2850
+     }
+    },
+    "past_winters": {
+     "height_m": 2118,
+     "snow_cm_at_this_height_today_model": 0,
+     "deeper_than_n_of_past_winters": 2,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 13
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-07"
+    },
+    "nearest_station": {
+     "station": "Gornergratsee",
+     "elev_m": 2953,
+     "depth_cm_measured": 35,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-14",
+     "km_away": 14.8
+    }
+   },
+   {
+    "name": "Aletsch Arena",
+    "country": "Switzerland",
+    "top_m": 2869,
+    "base_m": 1057,
+    "depth_cm_upper_slopes_today": 98,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 18,
+    "new_cm_forecast_next_days": 17,
+    "slug": "aletsch_arena",
+    "new_cm_by_day": {
+     "2026-11-12": 15,
+     "2026-11-13": 3,
+     "2026-11-14": 0,
+     "2026-11-15": 2,
+     "2026-11-16": 5,
+     "2026-11-17": 10
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1057,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 8
+     },
+     "mid": {
+      "elev_m": 1963,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 44
+     },
+     "top": {
+      "elev_m": 2869,
+      "depth_cm_model": 16,
+      "new_cm_next_7_days": 65
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-14": {
+      "min": 1860,
+      "max": 2070
+     },
+     "2026-11-15": {
+      "min": 1710,
+      "max": 1950
+     },
+     "2026-11-16": {
+      "min": 1660,
+      "max": 1780
+     },
+     "2026-11-17": {
+      "min": 1690,
+      "max": 1760
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-08"
+    },
+    "nearest_station": {
+     "station": "Flesch",
+     "elev_m": 2500,
+     "depth_cm_measured": 18,
+     "new_cm_measured_24h": 4,
+     "measured_on": "2026-11-14",
+     "km_away": 2.2
+    }
+   },
+   {
+    "name": "Glacier 3000",
+    "country": "Switzerland",
+    "top_m": 2931,
+    "base_m": 1545,
+    "depth_cm_upper_slopes_today": 92,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 26,
+    "new_cm_forecast_next_days": 38,
+    "slug": "glacier_3000",
+    "new_cm_by_day": {
+     "2026-11-12": 22,
+     "2026-11-13": 4,
+     "2026-11-14": 0,
+     "2026-11-15": 9,
+     "2026-11-16": 14,
+     "2026-11-17": 15
+    }
+   },
+   {
+    "name": "Crans-Montana",
+    "country": "Switzerland",
+    "top_m": 2872,
+    "base_m": 1427,
+    "depth_cm_upper_slopes_today": 91,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 18,
+    "new_cm_forecast_next_days": 29,
+    "slug": "crans_montana",
+    "new_cm_by_day": {
+     "2026-11-12": 14,
+     "2026-11-13": 5,
+     "2026-11-14": 0,
+     "2026-11-15": 6,
+     "2026-11-16": 10,
+     "2026-11-17": 13
+    }
+   }
+  ],
+  "measured_at_stations": [
+   {
+    "station": "Weißseespitze",
+    "elev_m": 3499,
+    "depth_cm_measured": 259,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-14",
+    "network": "euregio"
+   },
+   {
+    "station": "Sonnblick",
+    "elev_m": 3109,
+    "depth_cm_measured": 60,
+    "new_cm_measured_24h": 5,
+    "measured_on": "2026-11-14",
+    "network": "geosphere"
+   },
+   {
+    "station": "Schnals Teufelsegg",
+    "elev_m": 3035,
+    "depth_cm_measured": 47,
+    "new_cm_measured_24h": 7,
+    "measured_on": "2026-11-14",
+    "network": "bolzano"
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Saint-Luc",
+     "slug": "saint_luc_chandolin",
+     "now_cm": 7,
+     "usual_cm": 22,
+     "high_cm": null,
+     "week_ago_cm": null,
+     "height_m": 2327,
+     "best_weeks": [
+      9,
+      10,
+      13
+     ],
+     "ratio_pct": 32,
+     "deeper_than": 8,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Saint-Luc",
+   "top_cm": 14,
+   "top_m": 2973,
+   "base_cm": 0,
+   "base_m": 1682,
+   "rain_day": "2026-11-17",
+   "freezing_m": 3160,
+   "lift_top_m": 2973,
+   "next_cm": 24,
+   "second": "Monterosa Ski",
+   "second_cm": 106,
+   "depth_cm": 110
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:saint_luc_chandolin",
+   "score": 58,
+   "resort": "Saint-Luc"
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/alps-saint-luc-snow-depth-today-14-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/alps-saint-luc-snow-depth-today-14-november-2026/map_t.webp",
+   "bytes": 71016,
+   "snow_frac": 0.4579,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Alps snow report: Saint-Luc tops the list at 110 cm (14 November)",
+   "description": "Alps snow report, 14 November. If you want the most snow in the Alps today, look at Saint-Luc (Switzerland): about 110 cm up high. After it come …",
+   "lede": "Alps snow report, 14 November. If you want the most snow in the Alps today, look at Saint-Luc (Switzerland): about 110 cm up high. After it come Monterosa Ski (106 cm) and Aletsch Arena (98 cm). Today 791 of the 1,179 resorts in the Alps have snow on their upper slopes; in all, our model counts 68,650 km² under snow. Deep snow on a north face and bare ground on the south side of the same ridge is normal in dry mountains.",
+   "sections": [
+    {
+     "h": "Snow on the slopes today",
+     "p": [
+      "More ground is white now: 35,250 km² on 12 November, 68,650 km² today, and 56,290 km² expected on 17 November."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Tuesday 17 November the freezing level climbs to about 3,160 m, above the top of the lifts at 2,973 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 2,327 m, Saint-Luc has 7 cm today; a normal 14 November has 22 cm there.",
+      "That is more than in 8 of the 46 past winters on this date.",
+      "In past winters the best snow at Saint-Luc usually came early March / late March.",
+      "Day by day at Saint-Luc: Sunday 15 November 4 cm; Monday 16 November 7 cm; Tuesday 17 November 13 cm.",
+      "Height by height at Saint-Luc: 1,682 m 0 cm on the ground, 37 cm more in the next 7 days; 2,327 m 5 cm on the ground, 50 cm more in the next 7 days; 2,973 m 14 cm on the ground, 58 cm more in the next 7 days."
+     ]
+    },
+    {
+     "h": "What to expect next",
+     "p": [
+      "Between now and 17 November we expect 38 cm at Glacier 3000, 29 cm at Crans-Montana and 24 cm at Saint-Luc.",
+      "On 17 November the freezing level at Saint-Luc climbs to 2,450 m to 3,160 m, higher than the top of the lifts (2,973 m): expect rain or wet snow on every slope.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    },
+    {
+     "h": "What the stations saw",
+     "p": [
+      "On 14 November, the Weißseespitze station (3,499 m) measured 259 cm on the ground. At the Sonnblick station (3,109 m), the gauge showed 60 cm of snow on the ground on 14 November, 5 cm of it new in 24 hours. On 14 November, the Schnals Teufelsegg station (3,035 m) measured 47 cm on the ground, including 7 cm of new snow in 24 hours.",
+      "Our resort numbers are estimates for the upper slopes. The station numbers are real measurements, but only at one point and on the date shown."
+     ]
+    },
+    {
+     "h": "How this start compares",
+     "p": [
+      "Saint-Luc is behind at 2,327 m: only 7 cm today, under the usual 22 cm. Only 8 of the past 46 winters had less there on 14 November.",
+      "At Monterosa Ski, the ground at 2,118 m is still bare today, while 13 cm is usual for the date. Only 2 of the past 46 winters had as little."
+     ]
+    }
+   ],
+   "advice": [
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "In dry mountains like the Atlas, snow lasts on high, north-facing slopes and melts first on the sunny side. Follow the shade.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Saint-Luc gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in the Alps on 14 November 2026 (SnowScope snow model): Saint-Luc, Monterosa Ski, Aletsch Arena, Glacier 3000, Crans-Montana."
+   }
+  },
+  "fr": {
+   "title": "Bulletin neige dans les Alpes : Saint-Luc en tête à 110 cm (14 novembre)",
+   "description": "Bulletin neige dans les Alpes, 14 novembre. Pour trouver le plus de neige dans les Alpes aujourd'hui, regardez Saint-Luc (Suisse) : environ 110 cm en …",
+   "lede": "Bulletin neige dans les Alpes, 14 novembre. Pour trouver le plus de neige dans les Alpes aujourd'hui, regardez Saint-Luc (Suisse) : environ 110 cm en altitude. Ensuite viennent Monterosa Ski (106 cm) et Aletsch Arena (98 cm). Aujourd'hui, 791 des 1 179 stations dans les Alpes ont de la neige sur le haut du domaine ; au total, notre modèle compte 68 650 km² sous la neige. Une neige épaisse sur une face nord et un sol nu sur le versant sud de la même crête, c'est normal en montagne sèche.",
+   "sections": [
+    {
+     "h": "La neige sur les pentes aujourd'hui",
+     "p": [
+      "Depuis le 12 novembre, la neige est passée de 35 250 km² à 68 650 km² aujourd'hui ; pour le 17 novembre, notre prévision donne 56 290 km²."
+     ]
+    },
+    {
+     "h": "De la pluie jusqu'en haut ?",
+     "p": [
+      "Le mardi 17 novembre, l'isotherme 0 °C monte vers 3 160 m, au-dessus du sommet des remontées à 2 973 m : il peut pleuvoir jusqu'en haut.",
+      "La pluie sur la neige fraîche l'alourdit et, après une nuit froide, la rend glacée : les jours suivants conviennent mieux aux pistes damées qu'à la poudreuse.",
+      "Vers 2 327 m, Saint-Luc a 7 cm aujourd'hui ; un 14 novembre normal y compte 22 cm.",
+      "C'est plus que lors de 8 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Saint-Luc arrivait d'habitude début mars / fin mars.",
+      "Jour après jour à Saint-Luc : dimanche 15 novembre 4 cm; lundi 16 novembre 7 cm; mardi 17 novembre 13 cm.",
+      "Altitude par altitude à Saint-Luc : 1 682 m 0 cm au sol, 37 cm de plus dans les 7 prochains jours; 2 327 m 5 cm au sol, 50 cm de plus dans les 7 prochains jours; 2 973 m 14 cm au sol, 58 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
+     "h": "À quoi s'attendre ensuite",
+     "p": [
+      "Entre aujourd'hui et le 17 novembre, nous attendons 38 cm à Glacier 3000, 29 cm à Crans-Montana et 24 cm à Saint-Luc.",
+      "Le 17 novembre, l'isotherme 0 °C à Saint-Luc grimpe entre 2 450 m et 3 160 m, plus haut que le sommet des remontées (2 973 m) : attendez-vous à de la pluie ou de la neige mouillée sur toutes les pentes.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    },
+    {
+     "h": "Ce qu'ont vu les stations",
+     "p": [
+      "Le 14 novembre, la station de mesure Weißseespitze (3 499 m) a relevé 259 cm au sol. À la station de mesure Sonnblick (3 109 m), le capteur indiquait 60 cm de neige au sol le 14 novembre, dont 5 cm tombés en 24 heures. Le 14 novembre, la station de mesure Schnals Teufelsegg (3 035 m) a relevé 47 cm au sol, dont 7 cm de neige fraîche en 24 heures.",
+      "Nos chiffres des stations de ski sont des estimations pour le haut du domaine. Ceux des stations de mesure sont de vraies mesures, mais en un seul point et à la date indiquée."
+     ]
+    },
+    {
+     "h": "Comment se situe ce début",
+     "p": [
+      "Saint-Luc est en retard à 2 327 m : seulement 7 cm aujourd'hui, sous les 22 cm habituels. Seuls 8 des 46 hivers passés en avaient moins un 14 novembre.",
+      "À Monterosa Ski, le sol est encore nu à 2 118 m aujourd'hui, alors que 13 cm est habituel à cette date. Seuls 2 des 46 hivers passés en avaient aussi peu."
+     ]
+    }
+   ],
+   "advice": [
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Dans les montagnes sèches comme l'Atlas, la neige tient en altitude sur les pentes nord et fond d'abord côté soleil. Suivez l'ombre.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Saint-Luc reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans les Alpes le 14 novembre 2026 (modèle de neige SnowScope) : Saint-Luc, Monterosa Ski, Aletsch Arena, Glacier 3000, Crans-Montana."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": 1
+  }
+ },
+ "words_en": 609,
+ "indexable": true,
+ "main": {
+  "slug": "saint_luc_chandolin",
+  "name": "Saint-Luc",
+  "lat": 46.2374,
+  "lon": 7.6175
+ },
+ "places": [
+  {
+   "name": "Saint-Luc",
+   "lat": 46.2374,
+   "lon": 7.6175
+  },
+  {
+   "name": "Monterosa Ski",
+   "lat": 45.8565,
+   "lon": 7.8192
+  },
+  {
+   "name": "Aletsch Arena",
+   "lat": 46.4003,
+   "lon": 8.0758
+  },
+  {
+   "name": "Glacier 3000",
+   "lat": 46.3374,
+   "lon": 7.2256
+  },
+  {
+   "name": "Crans-Montana",
+   "lat": 46.3318,
+   "lon": 7.4944
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "saint_luc_chandolin",
+   "name": "Saint-Luc"
+  },
+  {
+   "slug": "monterosa_ski",
+   "name": "Monterosa Ski"
+  },
+  {
+   "slug": "aletsch_arena",
+   "name": "Aletsch Arena"
+  },
+  {
+   "slug": "glacier_3000",
+   "name": "Glacier 3000"
+  },
+  {
+   "slug": "crans_montana",
+   "name": "Crans-Montana"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "saint_luc_chandolin",
+    "name": "Saint-Luc",
+    "depth": 110,
+    "new72": 19,
+    "next": 24,
+    "top_m": 2973
+   },
+   {
+    "slug": "monterosa_ski",
+    "name": "Monterosa Ski",
+    "depth": 106,
+    "new72": 28,
+    "next": 18,
+    "top_m": 3030
+   },
+   {
+    "slug": "aletsch_arena",
+    "name": "Aletsch Arena",
+    "depth": 98,
+    "new72": 18,
+    "next": 17,
+    "top_m": 2869
+   },
+   {
+    "slug": "glacier_3000",
+    "name": "Glacier 3000",
+    "depth": 92,
+    "new72": 26,
+    "next": 38,
+    "top_m": 2931
+   },
+   {
+    "slug": "crans_montana",
+    "name": "Crans-Montana",
+    "depth": 91,
+    "new72": 18,
+    "next": 29,
+    "top_m": 2872
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "EAWS (Alps)",
+   "url": "https://www.avalanches.org/"
+  }
+ ],
+ "trip_day": "2026-11-21",
+ "map_link": "https://snowscope.app/#@46.237,7.617,9.0",
+ "seconds": 0.0,
+ "facts_used": 29,
+ "voice": "field",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 46.4,
+  "after": 16.3,
+  "with": "alps-dent-de-vaulion-snow-depth-today-11-november-2026",
+  "tries": 1
+ },
+ "similarity": {
+  "max": 0.172,
+  "with": "us-west-wolf-creek-snow-depth-today-10-november-2026"
+ },
+ "publish_utc": "2026-11-14T12:48:16Z",
+ "cover": {
+  "v": 1,
+  "style": "ranked",
+  "files": {
+   "en": [
+    "blog/media/2026/11/alps-saint-luc-snow-depth-today-14-november-2026/cover-en.webp",
+    "blog/media/2026/11/alps-saint-luc-snow-depth-today-14-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/alps-saint-luc-snow-depth-today-14-november-2026/cover-fr.webp",
+    "blog/media/2026/11/alps-saint-luc-snow-depth-today-14-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ },
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 609,
+  "overlap": 36.5,
+  "with": "atlas-morocco-atlas-snow-check-12-november-2026",
+  "langs_off": [],
+  "score": 110.0,
+  "intent": "resort:saint_luc_chandolin|rain_risk",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ }
+}

@@ -1,0 +1,720 @@
+{
+ "id": "2026-11-17-europe-country_at",
+ "slug": "austria-snow-report-17-november-2026",
+ "date": "2026-11-17",
+ "published_utc": "2026-11-17T12:53:42Z",
+ "updated_utc": "2026-11-17T12:53:42Z",
+ "region": "EUROPE",
+ "angle": "country_at",
+ "score": 66.7,
+ "signature": "AT:15400:8:47",
+ "keyword": {
+  "family": "country-report",
+  "entity": "europe",
+  "region": "EUROPE",
+  "date": "2026-11-17"
+ },
+ "tags": [],
+ "facts": {
+  "angle": "country_at",
+  "date": "2026-11-17",
+  "country": "Austria",
+  "country_code": "AT",
+  "region": "Europe by country",
+  "quiet": false,
+  "modelled_km2": 52110,
+  "snow_km2_today": 15400,
+  "snow_km2_yesterday": 19550,
+  "snow_km2_7_days_ago": 15260,
+  "new_cm_24h_max": 5,
+  "new_cm_72h_max": 8,
+  "area_km2_5cm_new_72h": 3370,
+  "next_3_days_max_cm": 23,
+  "next_7_days_max_cm": 47,
+  "snowiest_day": "2026-11-21",
+  "snowiest_day_cm": 15,
+  "first_snow_day": "2026-11-18",
+  "hotspots": [
+   {
+    "name": "Vorarlberg",
+    "new_cm_72h": 14,
+    "lat": 47.233,
+    "lon": 10.061
+   },
+   {
+    "name": "Tyrol",
+    "new_cm_72h": 10,
+    "lat": 47.188,
+    "lon": 11.072
+   },
+   {
+    "name": "the Ötztal Alps",
+    "new_cm_72h": 8,
+    "lat": 47.089,
+    "lon": 10.547
+   }
+  ],
+  "bands": [
+   {
+    "from_m": 500,
+    "to_m": 1000,
+    "mean_depth_cm": 0,
+    "snow_cover_pct": 2
+   },
+   {
+    "from_m": 1000,
+    "to_m": 1500,
+    "mean_depth_cm": 0,
+    "snow_cover_pct": 12
+   },
+   {
+    "from_m": 1500,
+    "to_m": 2000,
+    "mean_depth_cm": 2,
+    "snow_cover_pct": 56
+   },
+   {
+    "from_m": 2000,
+    "to_m": 2500,
+    "mean_depth_cm": 12,
+    "snow_cover_pct": 98
+   },
+   {
+    "from_m": 2500,
+    "to_m": 5000,
+    "mean_depth_cm": 24,
+    "snow_cover_pct": 100
+   }
+  ],
+  "snow_line_m": 1700,
+  "change_vs_yesterday_km2": -4150,
+  "white_share_pct": 30,
+  "change_vs_7_days_km2": 140,
+  "resorts": [
+   {
+    "name": "Kühtai",
+    "slug": "kuhtai",
+    "depth_cm": 54,
+    "new_cm_72h": 9,
+    "next_3_days_cm": 15,
+    "top_m": 2507
+   },
+   {
+    "name": "Stubaier Gletscher",
+    "slug": "stubaier_gletscher",
+    "depth_cm": 51,
+    "new_cm_72h": 7,
+    "next_3_days_cm": 13,
+    "top_m": 3208
+   },
+   {
+    "name": "Kaprun",
+    "slug": "kaprun_kitzsteinhorn_maiskogel",
+    "depth_cm": 49,
+    "new_cm_72h": 5,
+    "next_3_days_cm": 11,
+    "top_m": 3024
+   },
+   {
+    "name": "Bergeralm",
+    "slug": "bergeralm",
+    "depth_cm": 49,
+    "new_cm_72h": 4,
+    "next_3_days_cm": 9,
+    "top_m": 2175
+   },
+   {
+    "name": "Hochoetz-Kühtai",
+    "slug": "hochoetz_kuhtai",
+    "depth_cm": 44,
+    "new_cm_72h": 9,
+    "next_3_days_cm": 15,
+    "top_m": 2507
+   }
+  ],
+  "n_resorts": 279,
+  "n_resorts_with_snow": 225,
+  "resort_next_until": "2026-11-20",
+  "outlook": null,
+  "week2": {
+   "week1_max_cm": 32,
+   "week2_max_cm": 16,
+   "week2_days": [
+    "2026-11-25",
+    "2026-12-01"
+   ],
+   "from_day": 8,
+   "to_day": 14
+  },
+  "trend": [
+   {
+    "date": "2026-11-16",
+    "snow_km2": 19550,
+    "new72": 4,
+    "leader": "Kaprun",
+    "leader_cm": 83
+   },
+   {
+    "date": "2026-11-17",
+    "snow_km2": 15400,
+    "new72": 8,
+    "leader": "Kühtai",
+    "leader_cm": 54
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Kühtai",
+     "slug": "kuhtai",
+     "now_cm": 20,
+     "usual_cm": 33,
+     "high_cm": 68,
+     "week_ago_cm": 15,
+     "height_m": 2223,
+     "best_weeks": [
+      13,
+      12,
+      10
+     ],
+     "ratio_pct": 61
+    },
+    {
+     "name": "Stubaier Gletscher",
+     "slug": "stubaier_gletscher",
+     "now_cm": 29,
+     "usual_cm": 44,
+     "high_cm": 78,
+     "week_ago_cm": 22,
+     "height_m": 2450,
+     "best_weeks": [
+      13,
+      14,
+      10
+     ],
+     "ratio_pct": 66
+    },
+    {
+     "name": "Kaprun",
+     "slug": "kaprun_kitzsteinhorn_maiskogel",
+     "now_cm": 19,
+     "usual_cm": 22,
+     "high_cm": 45,
+     "week_ago_cm": 10,
+     "height_m": 1894,
+     "best_weeks": [
+      10,
+      9,
+      12
+     ],
+     "ratio_pct": 86
+    },
+    {
+     "name": "Bergeralm",
+     "slug": "bergeralm",
+     "now_cm": 2,
+     "usual_cm": 20,
+     "high_cm": 39,
+     "week_ago_cm": 2,
+     "height_m": 1620,
+     "best_weeks": [
+      9,
+      10,
+      8
+     ],
+     "ratio_pct": 10
+    },
+    {
+     "name": "Hochoetz-Kühtai",
+     "slug": "hochoetz_kuhtai",
+     "now_cm": 8,
+     "usual_cm": 26,
+     "high_cm": 55,
+     "week_ago_cm": 6,
+     "height_m": 1958,
+     "best_weeks": [
+      13,
+      10,
+      12
+     ],
+     "ratio_pct": 31
+    }
+   ],
+   "n": 5,
+   "above": 0,
+   "median_pct": 61
+  },
+  "neighbours": [
+   {
+    "cc": "CH",
+    "name": "Switzerland",
+    "white_share_pct": 48,
+    "leader": "Zermatt",
+    "leader_cm": 47,
+    "next_7_days_max_cm": 129
+   },
+   {
+    "cc": "DE",
+    "name": "Germany",
+    "white_share_pct": 3,
+    "leader": "Zugspitze",
+    "leader_cm": 53,
+    "next_7_days_max_cm": 27
+   }
+  ],
+  "glacier": false,
+  "story": {
+   "id": "vs_normal_low",
+   "place": "cc:AT",
+   "score": 64.8,
+   "resort": "Kühtai"
+  }
+ },
+ "media": [
+  {
+   "id": "new",
+   "kind": "new_map",
+   "file": "blog/media/2026/11/austria-snow-report-17-november-2026/new.webp",
+   "thumb": "blog/media/2026/11/austria-snow-report-17-november-2026/new_t.webp",
+   "bytes": 31622,
+   "snow_frac": 0.1523,
+   "weak": false
+  },
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/austria-snow-report-17-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/austria-snow-report-17-november-2026/map_t.webp",
+   "bytes": 34200,
+   "snow_frac": 0.2176,
+   "weak": false
+  },
+  {
+   "id": "story",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg viewBox=\"0 0 640 240\" role=\"img\" aria-label=\"Snow depth today (bars) against a normal year (dashed)\" style=\"width:100%;height:auto;font:12px Inter,sans-serif\"><rect x=\"47.7\" y=\"68.0\" width=\"86.9\" height=\"138.0\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"56.9\" y=\"122.4\" width=\"68.6\" height=\"83.6\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"91.2\" y=\"116.4\" text-anchor=\"middle\" fill=\"currentColor\">20</text><text x=\"91.2\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Kühtai</text><rect x=\"162.1\" y=\"22.0\" width=\"86.9\" height=\"184.0\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"171.3\" y=\"84.7\" width=\"68.6\" height=\"121.3\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"205.6\" y=\"78.7\" text-anchor=\"middle\" fill=\"currentColor\">29</text><text x=\"205.6\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Stubaier Gle</text><rect x=\"276.5\" y=\"114.0\" width=\"86.9\" height=\"92.0\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"285.7\" y=\"126.5\" width=\"68.6\" height=\"79.5\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"320.0\" y=\"120.5\" text-anchor=\"middle\" fill=\"currentColor\">19</text><text x=\"320.0\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Kaprun</text><rect x=\"390.9\" y=\"122.4\" width=\"86.9\" height=\"83.6\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"400.1\" y=\"197.6\" width=\"68.6\" height=\"8.4\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"434.4\" y=\"191.6\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"434.4\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Bergeralm</text><rect x=\"505.3\" y=\"97.3\" width=\"86.9\" height=\"108.7\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"514.5\" y=\"172.5\" width=\"68.6\" height=\"33.5\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"548.8\" y=\"166.5\" text-anchor=\"middle\" fill=\"currentColor\">8</text><text x=\"548.8\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Hochoetz-Küh</text><line x1=\"34\" x2=\"606\" y1=\"206\" y2=\"206\" stroke=\"currentColor\" stroke-opacity=\".3\"/></svg>",
+    "de": "<svg viewBox=\"0 0 640 240\" role=\"img\" aria-label=\"Schneehöhe heute (Balken) gegenüber einem normalen Jahr (gestrichelt)\" style=\"width:100%;height:auto;font:12px Inter,sans-serif\"><rect x=\"47.7\" y=\"68.0\" width=\"86.9\" height=\"138.0\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"56.9\" y=\"122.4\" width=\"68.6\" height=\"83.6\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"91.2\" y=\"116.4\" text-anchor=\"middle\" fill=\"currentColor\">20</text><text x=\"91.2\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Kühtai</text><rect x=\"162.1\" y=\"22.0\" width=\"86.9\" height=\"184.0\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"171.3\" y=\"84.7\" width=\"68.6\" height=\"121.3\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"205.6\" y=\"78.7\" text-anchor=\"middle\" fill=\"currentColor\">29</text><text x=\"205.6\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Stubaier Gle</text><rect x=\"276.5\" y=\"114.0\" width=\"86.9\" height=\"92.0\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"285.7\" y=\"126.5\" width=\"68.6\" height=\"79.5\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"320.0\" y=\"120.5\" text-anchor=\"middle\" fill=\"currentColor\">19</text><text x=\"320.0\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Kaprun</text><rect x=\"390.9\" y=\"122.4\" width=\"86.9\" height=\"83.6\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"400.1\" y=\"197.6\" width=\"68.6\" height=\"8.4\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"434.4\" y=\"191.6\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"434.4\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Bergeralm</text><rect x=\"505.3\" y=\"97.3\" width=\"86.9\" height=\"108.7\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\".45\" stroke-dasharray=\"4 3\"/><rect x=\"514.5\" y=\"172.5\" width=\"68.6\" height=\"33.5\" rx=\"3\" fill=\"var(--accent,#2f7de1)\"/><text x=\"548.8\" y=\"166.5\" text-anchor=\"middle\" fill=\"currentColor\">8</text><text x=\"548.8\" y=\"228\" text-anchor=\"middle\" fill=\"currentColor\" fill-opacity=\".7\">Hochoetz-Küh</text><line x1=\"34\" x2=\"606\" y1=\"206\" y2=\"206\" stroke=\"currentColor\" stroke-opacity=\".3\"/></svg>"
+   },
+   "cap": {
+    "en": "Snow depth today (bars) against a normal year (dashed)",
+    "de": "Schneehöhe heute (Balken) gegenüber einem normalen Jahr (gestrichelt)"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Austria is behind: Kühtai has 20 cm, a normal 17 November has 33 cm",
+   "description": "Austria is behind: Kühtai has 20 cm, a normal 17 November has 33 cm. Snow cover, new snow, resorts and the days ahead in Austria on 17 November.",
+   "lede": "Kühtai has 20 cm at about 2,223 m today. A normal 17 November has 33 cm there, so the snow is at 61 % of the usual depth.",
+   "sections": [
+    {
+     "h": "Behind a normal year",
+     "p": [
+      "A slow start is common and says little about January. For now, plan on the highest lifts and on runs with snowmaking.",
+      "Snow covers roughly 15,400 km² in Austria on 17 November, 4,150 km² lost since yesterday. In other words, 30 % of the mapped high ground is white."
+     ]
+    },
+    {
+     "h": "Compared with past winters",
+     "p": [
+      "Here is how the deepest resorts compare with their usual 17 November: Kühtai: 20 cm at about 2,223 m, against 33 cm in a normal year; Stubaier Gletscher: 29 cm at about 2,450 m, against 44 cm in a normal year; Kaprun: 19 cm at about 1,894 m, against 22 cm in a normal year; Bergeralm: 2 cm at about 1,620 m, against 20 cm in a normal year.",
+      "0 of these 4 resorts are above their usual depth for the date.",
+      "These depths are for one height on each mountain, below the top, so they read lower than the upper-slope numbers further down.",
+      "In past winters the best snow at Kühtai usually came early March / late March."
+     ]
+    },
+    {
+     "h": "What is coming",
+     "p": [
+      "The week ahead could bring up to 47 cm, 23 cm of it in the next three days.",
+      "The snowiest day looks like Saturday 21 November, with up to 15 cm in the snowiest spots.",
+      "The second week adds up to 16 cm where it snows most."
+     ]
+    },
+    {
+     "h": "Snow depth by height",
+     "p": [
+      "Height makes the difference: between 500 and 1,000 m, under 1 cm on average, 2 % covered; between 1,000 and 1,500 m, under 1 cm on average, 12 % covered; between 1,500 and 2,000 m, 2 cm on average, 56 % covered; between 2,000 and 2,500 m, 12 cm on average, 98 % covered; above 2,500 m: on average 24 cm (100 % white)."
+     ]
+    },
+    {
+     "h": "Where to ski first",
+     "p": [
+      "The deepest snow of the country's resorts is at Kühtai: 54 cm.",
+      "Then come Stubaier Gletscher (51 cm), Kaprun (49 cm), Bergeralm (49 cm) and Hochoetz-Kühtai (44 cm).",
+      "Kühtai picked up 9 cm in the last three days and could add 15 cm by Friday 20 November.",
+      "Stubaier Gletscher picked up 7 cm in the last three days and could add 13 cm by Friday 20 November.",
+      "Snow lies on the upper slopes of 225 out of 279 resorts in Austria.",
+      "The rest of the shortlist: Kaprun: 49 cm on top, 5 cm in three days, 11 cm expected; Bergeralm: 49 cm on top, 4 cm in three days, 9 cm expected; Hochoetz-Kühtai: 44 cm on top, 9 cm in three days, 15 cm expected."
+     ]
+    },
+    {
+     "h": "On the ground",
+     "p": [
+      "The snow is retreating uphill, so plan on the higher lifts and avoid the low valley runs.",
+      "With more snow in the forecast, the next days should improve things further."
+     ]
+    },
+    {
+     "h": "How much of the country is white",
+     "p": [
+      "Over the week the white area has hardly moved from 15,260 km². The snow line sits near 1,700 m."
+     ]
+    },
+    {
+     "h": "Fresh snow",
+     "p": [
+      "Three-day totals peak at 8 cm, around Vorarlberg, Tyrol and the Ötztal Alps.",
+      "The last 24 hours alone brought up to 5 cm.",
+      "At least 5 cm fell over some 3,370 km²."
+     ]
+    },
+    {
+     "h": "The neighbours today",
+     "p": [
+      "For comparison, the neighbours on the same day: Switzerland: 48 % white, deepest Zermatt with 47 cm, up to 129 cm in the week ahead; Germany: 3 % white, deepest Zugspitze with 53 cm, up to 27 cm in the week ahead."
+     ]
+    },
+    {
+     "h": "Planning a day on the snow",
+     "p": [
+      "Above 2,000 m the ground is almost fully white (98 % covered), so runs up there have a continuous base.",
+      "Between 1,500 m and 2,000 m the cover is patchy, about 56 % white: expect grass and stones between the snow.",
+      "Below 1,000 m the slopes are still almost bare.",
+      "If you can choose the day, go after Saturday 21 November: the fresh snow then has time to settle and the roads to be cleared."
+     ]
+    }
+   ],
+   "advice": [
+    "Check the resort's own lift status before you travel.",
+    "Read the local avalanche bulletin before going off-piste.",
+    "Fresh snow on a cold base sticks badly: take care on steep slopes."
+   ],
+   "captions": {
+    "new": "Snow depth in Austria on 17 November",
+    "map": "Snow depth in Austria on 17 November",
+    "story": "Snow depth today (bars) against a normal year (dashed)"
+   }
+  },
+  "de": {
+   "title": "Österreich hinkt hinterher: Kühtai hat 20 cm, an einem normalen 17. November sind es 33 cm",
+   "description": "Österreich hinkt hinterher: Kühtai hat 20 cm, an einem normalen 17. November sind es 33 cm",
+   "lede": "Kühtai hat heute auf etwa 2.223 m 20 cm. Normal sind am 17. November dort 33 cm: Der Schnee liegt bei 61 % der üblichen Höhe.",
+   "sections": [
+    {
+     "h": "Hinter einem normalen Jahr",
+     "p": [
+      "Ein langsamer Start ist häufig und sagt wenig über den Januar. Vorerst auf die höchsten Lifte und beschneite Pisten setzen.",
+      "Schnee bedeckt am 17. November in Österreich etwa 15.400 km², 4.150 km² weniger seit gestern. Anders gesagt: 30 % des kartierten Berglands sind weiß."
+     ]
+    },
+    {
+     "h": "Im Vergleich zu früheren Wintern",
+     "p": [
+      "So stehen die schneereichsten Skigebiete im Vergleich zu ihrem üblichen 17. November da: Kühtai: 20 cm auf etwa 2.223 m, gegenüber 33 cm in einem normalen Jahr; Stubaier Gletscher: 29 cm auf etwa 2.450 m, gegenüber 44 cm in einem normalen Jahr; Kaprun: 19 cm auf etwa 1.894 m, gegenüber 22 cm in einem normalen Jahr; Bergeralm: 2 cm auf etwa 1.620 m, gegenüber 20 cm in einem normalen Jahr.",
+      "0 dieser 4 Skigebiete liegen über ihrer üblichen Höhe für dieses Datum.",
+      "Diese Höhen gelten für eine bestimmte Höhenlage jedes Bergs unterhalb des Gipfels und sind daher niedriger als die Werte der oberen Hänge weiter unten.",
+      "In früheren Wintern kam der beste Schnee in Kühtai meist Anfang März / Ende März."
+     ]
+    },
+    {
+     "h": "Was kommt",
+     "p": [
+      "Die kommende Woche könnte bis zu 47 cm bringen, davon 23 cm in den nächsten drei Tagen.",
+      "Der schneereichste Tag dürfte der Samstag, 21. November werden, mit bis zu 15 cm an den schneereichsten Stellen.",
+      "Die zweite Woche bringt bis zu 16 cm dort, wo es am meisten schneit."
+     ]
+    },
+    {
+     "h": "Schneehöhe nach Höhenlage",
+     "p": [
+      "Die Höhe macht den Unterschied: zwischen 500 und 1.000 m im Schnitt unter 1 cm, 2 % bedeckt; zwischen 1.000 und 1.500 m im Schnitt unter 1 cm, 12 % bedeckt; zwischen 1.500 und 2.000 m im Schnitt 2 cm, 56 % bedeckt; zwischen 2.000 und 2.500 m im Schnitt 12 cm, 98 % bedeckt; über 2.500 m: im Mittel 24 cm (100 % weiß)."
+     ]
+    },
+    {
+     "h": "Wo man zuerst fahren sollte",
+     "p": [
+      "Den meisten Schnee unter den Skigebieten des Landes hat Kühtai: 54 cm.",
+      "Es folgen Stubaier Gletscher (51 cm), Kaprun (49 cm), Bergeralm (49 cm) und Hochoetz-Kühtai (44 cm).",
+      "Kühtai bekam in drei Tagen 9 cm und könnte bis Freitag, 20. November weitere 15 cm dazubekommen.",
+      "Stubaier Gletscher bekam in drei Tagen 7 cm und könnte bis Freitag, 20. November weitere 13 cm dazubekommen.",
+      "Auf 225 von 279 Skigebieten in Österreich liegt oben Schnee.",
+      "Der Rest der Auswahl: Kaprun: 49 cm oben, 5 cm in drei Tagen, 11 cm erwartet; Bergeralm: 49 cm oben, 4 cm in drei Tagen, 9 cm erwartet; Hochoetz-Kühtai: 44 cm oben, 9 cm in drei Tagen, 15 cm erwartet."
+     ]
+    },
+    {
+     "h": "Vor Ort",
+     "p": [
+      "Der Schnee zieht sich nach oben zurück: auf die hohen Lifte setzen, tiefe Talabfahrten meiden.",
+      "Mit weiterem Schnee in Sicht dürften die nächsten Tage noch besser werden."
+     ]
+    },
+    {
+     "h": "Wie viel des Landes weiß ist",
+     "p": [
+      "Über die Woche hat sich die weiße Fläche gegenüber 15.260 km² kaum verändert. Die Schneegrenze liegt um 1.700 m."
+     ]
+    },
+    {
+     "h": "Neuschnee",
+     "p": [
+      "Die Dreitagessummen erreichen bis zu 8 cm, rund um Vorarlberg, Tirol und die Ötztaler Alpen.",
+      "Allein die letzten 24 Stunden brachten bis zu 5 cm.",
+      "Mindestens 5 cm fielen auf etwa 3.370 km²."
+     ]
+    },
+    {
+     "h": "Die Nachbarn heute",
+     "p": [
+      "Zum Vergleich die Nachbarn am selben Tag: Schweiz: 48 % weiß, vorn Zermatt mit 47 cm, bis zu 129 cm in der kommenden Woche; Deutschland: 3 % weiß, vorn Zugspitze mit 53 cm, bis zu 27 cm in der kommenden Woche."
+     ]
+    },
+    {
+     "h": "Einen Skitag planen",
+     "p": [
+      "Über 2.000 m ist der Boden fast ganz weiß (98 % bedeckt), die Pisten dort haben eine durchgehende Unterlage.",
+      "Zwischen 1.500 m und 2.000 m ist die Decke lückenhaft, rund 56 % weiß: Gras und Steine zwischen dem Schnee.",
+      "Unterhalb von 1.000 m sind die Hänge noch fast schneefrei.",
+      "Wer den Tag wählen kann, fährt nach dem Samstag, 21. November: Dann kann sich der Neuschnee setzen und die Straßen sind geräumt."
+     ]
+    }
+   ],
+   "advice": [
+    "Vor der Anreise den Liftstatus des Skigebiets prüfen.",
+    "Vor dem Gelände abseits der Piste den lokalen Lawinenbericht lesen.",
+    "Neuschnee auf kalter Unterlage hält schlecht: an steilen Hängen vorsichtig sein."
+   ],
+   "captions": {
+    "new": "Schneehöhe in Österreich am 17. November",
+    "map": "Schneehöhe in Österreich am 17. November",
+    "story": "Schneehöhe heute (Balken) gegenüber einem normalen Jahr (gestrichelt)"
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": "requality"
+  },
+  "de": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": "requality"
+  }
+ },
+ "words_en": 677,
+ "indexable": true,
+ "main": {
+  "slug": "kuhtai",
+  "name": "Kühtai",
+  "lat": 47.2136,
+  "lon": 11.024
+ },
+ "places": [
+  {
+   "name": "Kühtai",
+   "lat": 47.2136,
+   "lon": 11.024
+  },
+  {
+   "name": "Stubaier Gletscher",
+   "lat": 46.9916,
+   "lon": 11.1246
+  },
+  {
+   "name": "Kaprun",
+   "lat": 47.2182,
+   "lon": 12.6958
+  },
+  {
+   "name": "Bergeralm",
+   "lat": 47.0751,
+   "lon": 11.457
+  },
+  {
+   "name": "Hochoetz-Kühtai",
+   "lat": 47.2116,
+   "lon": 10.9546
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "kuhtai",
+   "name": "Kühtai"
+  },
+  {
+   "slug": "stubaier_gletscher",
+   "name": "Stubaier Gletscher"
+  },
+  {
+   "slug": "kaprun_kitzsteinhorn_maiskogel",
+   "name": "Kaprun"
+  },
+  {
+   "slug": "bergeralm",
+   "name": "Bergeralm"
+  },
+  {
+   "slug": "hochoetz_kuhtai",
+   "name": "Hochoetz-Kühtai"
+  }
+ ],
+ "table": {
+  "kind": "story",
+  "head": {
+   "en": [
+    "Resort",
+    "Today",
+    "Normal for the date",
+    "Share of normal"
+   ],
+   "fr": [
+    "Station",
+    "Aujourd'hui",
+    "Normale à cette date",
+    "Part de la normale"
+   ],
+   "de": [
+    "Skigebiet",
+    "Heute",
+    "Normal an diesem Tag",
+    "Anteil am Normalwert"
+   ]
+  },
+  "rows": [
+   [
+    {
+     "t": "Kühtai",
+     "slug": "kuhtai"
+    },
+    {
+     "cm": 20
+    },
+    {
+     "cm": 33
+    },
+    {
+     "pct": 61
+    }
+   ],
+   [
+    {
+     "t": "Stubaier Gletscher",
+     "slug": "stubaier_gletscher"
+    },
+    {
+     "cm": 29
+    },
+    {
+     "cm": 44
+    },
+    {
+     "pct": 66
+    }
+   ],
+   [
+    {
+     "t": "Kaprun",
+     "slug": "kaprun_kitzsteinhorn_maiskogel"
+    },
+    {
+     "cm": 19
+    },
+    {
+     "cm": 22
+    },
+    {
+     "pct": 86
+    }
+   ],
+   [
+    {
+     "t": "Bergeralm",
+     "slug": "bergeralm"
+    },
+    {
+     "cm": 2
+    },
+    {
+     "cm": 20
+    },
+    {
+     "pct": 10
+    }
+   ],
+   [
+    {
+     "t": "Hochoetz-Kühtai",
+     "slug": "hochoetz_kuhtai"
+    },
+    {
+     "cm": 8
+    },
+    {
+     "cm": 26
+    },
+    {
+     "pct": 31
+    }
+   ]
+  ]
+ },
+ "bulletins": [],
+ "trip_day": "",
+ "map_link": "https://snowscope.app/#@47.214,11.024,8.0",
+ "seconds": 0.0,
+ "facts_used": 30,
+ "voice": "hydro",
+ "media_ids": [
+  "new",
+  "map"
+ ],
+ "overlap": {
+  "before": 23.3,
+  "after": 23.3,
+  "with": "france-snow-report-17-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.128,
+  "with": "germany-snow-report-16-november-2026"
+ },
+ "publish_utc": "2026-11-17T10:37:42Z",
+ "cover": {
+  "v": 1,
+  "style": "ranked",
+  "files": {
+   "en": [
+    "blog/media/2026/11/austria-snow-report-17-november-2026/cover-en.webp",
+    "blog/media/2026/11/austria-snow-report-17-november-2026/cover-en_t.webp"
+   ],
+   "de": [
+    "blog/media/2026/11/austria-snow-report-17-november-2026/cover-de.webp",
+    "blog/media/2026/11/austria-snow-report-17-november-2026/cover-de_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ },
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_low",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 677,
+  "overlap": 33.5,
+  "with": "france-snow-report-16-november-2026",
+  "langs_off": [],
+  "score": 122.0,
+  "intent": "cc:AT|vs_normal_low",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ }
+}

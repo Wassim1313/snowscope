@@ -1,0 +1,610 @@
+{
+ "id": "2026-11-22-ca_west-deepest",
+ "slug": "western-canada-whistler-blackcomb-snow-depth-today-22-november-2026",
+ "date": "2026-11-22",
+ "published_utc": "2026-11-23T09:01:01Z",
+ "updated_utc": "2026-11-23T09:01:01Z",
+ "region": "CA_WEST",
+ "angle": "deepest",
+ "score": 70,
+ "signature": "whistler:150|big_white_ski_resort:100|mount_cain_alpine_park:90",
+ "keyword": {
+  "family": "snow-depth",
+  "entity": "whistler",
+  "region": "CA_WEST",
+  "date": "2026-11-22"
+ },
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "Western Canada",
+  "date": "2026-11-22",
+  "weekday": "Sunday",
+  "model_run": "2026-11-22",
+  "forecast_days": [
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 398620,
+   "resorts_with_snow": 52,
+   "resorts_in_region": 57
+  },
+  "region_before": {
+   "date": "2026-11-20",
+   "snow_covered_area_km2": 399700,
+   "resorts_with_snow": 52
+  },
+  "region_forecast": {
+   "date": "2026-11-25",
+   "snow_covered_area_km2": 385170,
+   "resorts_with_snow": 50
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Whistler Blackcomb",
+    "country": "Canada",
+    "top_m": 2259,
+    "base_m": 653,
+    "depth_cm_upper_slopes_today": 153,
+    "new_cm_last_24h": 5,
+    "new_cm_last_72h": 5,
+    "new_cm_forecast_next_days": 101,
+    "slug": "whistler",
+    "new_cm_by_day": {
+     "2026-11-20": 0,
+     "2026-11-21": 0,
+     "2026-11-22": 5,
+     "2026-11-23": 8,
+     "2026-11-24": 40,
+     "2026-11-25": 53
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 653,
+      "depth_cm_model": 4,
+      "new_cm_next_7_days": 11
+     },
+     "mid": {
+      "elev_m": 1456,
+      "depth_cm_model": 51,
+      "new_cm_next_7_days": 96
+     },
+     "top": {
+      "elev_m": 2259,
+      "depth_cm_model": 114,
+      "new_cm_next_7_days": 116
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-22": {
+      "min": 550,
+      "max": 1160
+     },
+     "2026-11-23": {
+      "min": 310,
+      "max": 1180
+     },
+     "2026-11-24": {
+      "min": 1170,
+      "max": 1490
+     }
+    },
+    "past_winters": {
+     "height_m": 1456,
+     "snow_cm_at_this_height_today_model": 40,
+     "deeper_than_n_of_past_winters": 0,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 124
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-20"
+    }
+   },
+   {
+    "name": "Big White",
+    "country": "Canada",
+    "top_m": 2271,
+    "base_m": 1512,
+    "depth_cm_upper_slopes_today": 101,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 2,
+    "slug": "big_white_ski_resort",
+    "new_cm_by_day": {
+     "2026-11-20": 0,
+     "2026-11-21": 0,
+     "2026-11-22": 1,
+     "2026-11-23": 0,
+     "2026-11-24": 1,
+     "2026-11-25": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1512,
+      "depth_cm_model": 4,
+      "new_cm_next_7_days": 8
+     },
+     "mid": {
+      "elev_m": 1891,
+      "depth_cm_model": 14,
+      "new_cm_next_7_days": 9
+     },
+     "top": {
+      "elev_m": 2271,
+      "depth_cm_model": 73,
+      "new_cm_next_7_days": 10
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-22": {
+      "min": 500,
+      "max": 1070
+     },
+     "2026-11-23": {
+      "min": 320,
+      "max": 930
+     },
+     "2026-11-24": {
+      "min": 490,
+      "max": 1500
+     }
+    },
+    "past_winters": {
+     "height_m": 1891,
+     "snow_cm_at_this_height_today_model": 53,
+     "deeper_than_n_of_past_winters": 26,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 44
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-19"
+    }
+   },
+   {
+    "name": "Mount Cain Alpine Park",
+    "country": "Canada",
+    "top_m": 1616,
+    "base_m": 1190,
+    "depth_cm_upper_slopes_today": 92,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 2,
+    "new_cm_forecast_next_days": 132,
+    "slug": "mount_cain_alpine_park",
+    "new_cm_by_day": {
+     "2026-11-20": 0,
+     "2026-11-21": 0,
+     "2026-11-22": 2,
+     "2026-11-23": 15,
+     "2026-11-24": 68,
+     "2026-11-25": 49
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1190,
+      "depth_cm_model": 9,
+      "new_cm_next_7_days": 65
+     },
+     "mid": {
+      "elev_m": 1403,
+      "depth_cm_model": 25,
+      "new_cm_next_7_days": 86
+     },
+     "top": {
+      "elev_m": 1616,
+      "depth_cm_model": 60,
+      "new_cm_next_7_days": 103
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-22": {
+      "min": 640,
+      "max": 850
+     },
+     "2026-11-23": {
+      "min": 620,
+      "max": 840
+     },
+     "2026-11-24": {
+      "min": 670,
+      "max": 1100
+     }
+    },
+    "past_winters": {
+     "height_m": 1403,
+     "snow_cm_at_this_height_today_model": 34,
+     "deeper_than_n_of_past_winters": 15,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 59
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-20"
+    }
+   },
+   {
+    "name": "Silver Star",
+    "country": "Canada",
+    "top_m": 1886,
+    "base_m": 1146,
+    "depth_cm_upper_slopes_today": 84,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 1,
+    "slug": "silver_star_mountain_resort",
+    "new_cm_by_day": {
+     "2026-11-20": 0,
+     "2026-11-21": 0,
+     "2026-11-22": 0,
+     "2026-11-23": 0,
+     "2026-11-24": 0,
+     "2026-11-25": 1
+    }
+   },
+   {
+    "name": "Mount Washington Alpine Resort",
+    "country": "Canada",
+    "top_m": 1569,
+    "base_m": 1081,
+    "depth_cm_upper_slopes_today": 73,
+    "new_cm_last_24h": 8,
+    "new_cm_last_72h": 9,
+    "new_cm_forecast_next_days": 121,
+    "slug": "mount_washington_alpine_resort",
+    "new_cm_by_day": {
+     "2026-11-20": 0,
+     "2026-11-21": 1,
+     "2026-11-22": 8,
+     "2026-11-23": 24,
+     "2026-11-24": 76,
+     "2026-11-25": 21
+    }
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Whistler Blackcomb",
+     "slug": "whistler",
+     "now_cm": 40,
+     "usual_cm": 124,
+     "high_cm": 186,
+     "week_ago_cm": null,
+     "height_m": 1456,
+     "best_weeks": [
+      13,
+      12,
+      11
+     ],
+     "ratio_pct": 32,
+     "deeper_than": 0,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Whistler Blackcomb",
+   "top_cm": 114,
+   "top_m": 2259,
+   "base_cm": 4,
+   "base_m": 653,
+   "next_cm": 101,
+   "second": "Big White",
+   "second_cm": 101,
+   "depth_cm": 153
+  },
+  "story": {
+   "id": "resort_lead",
+   "place": "resort:whistler",
+   "score": 47,
+   "resort": "Whistler Blackcomb"
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/western-canada-whistler-blackcomb-snow-depth-today-22-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/western-canada-whistler-blackcomb-snow-depth-today-22-november-2026/map_t.webp",
+   "bytes": 81444,
+   "snow_frac": 0.7506,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Western Canada snowpack check: Whistler Blackcomb holds the deepest cover, 153 cm (22 November)",
+   "description": "The early-winter snowpack in Western Canada is building unevenly, and height makes all the difference. Our model ranks Whistler Blackcomb first in …",
+   "lede": "The early-winter snowpack in Western Canada is building unevenly, and height makes all the difference. Our model ranks Whistler Blackcomb first in Western Canada today, with about 153 cm on its upper slopes, ahead of Big White (101 cm) and Mount Cain Alpine Park (92 cm). The snow map in Western Canada shows 398,620 km² of white ground today and snow at 52 of 57 resorts. The model is right more often than a hunch, and less often than we would like.",
+   "sections": [
+    {
+     "h": "Depth today, by the numbers",
+     "p": [
+      "Snow-covered area: 399,700 km² on 20 November, 398,620 km² today, 385,170 km² forecast for 25 November. The map is getting less white.",
+      "Three heights at Whistler Blackcomb, three numbers: 114 cm at the top (2,259 m), 51 cm at mid-mountain (1,456 m), 4 cm at the base (653 m)."
+     ]
+    },
+    {
+     "h": "Far ahead of the rest",
+     "p": [
+      "Whistler Blackcomb has 153 cm on its upper slopes, well ahead of Big White with 101 cm.",
+      "At about 1,456 m, Whistler Blackcomb has 40 cm today; a normal 22 November has 124 cm there.",
+      "That is more than in 0 of the 46 past winters on this date.",
+      "In past winters the best snow at Whistler Blackcomb usually came mid-March / late March.",
+      "Day by day at Whistler Blackcomb: Sunday 22 November 5 cm; Monday 23 November 8 cm; Tuesday 24 November 40 cm; Wednesday 25 November 53 cm.",
+      "Height by height at Whistler Blackcomb: 653 m 4 cm on the ground, 11 cm more in the next 7 days; 1,456 m 51 cm on the ground, 96 cm more in the next 7 days; 2,259 m 114 cm on the ground, 116 cm more in the next 7 days."
+     ]
+    },
+    {
+     "h": "Ground truth",
+     "p": [
+      "How sure are we? Resort values are model estimates for the upper slopes; stations are measurements, each at one point on the date shown."
+     ]
+    },
+    {
+     "h": "Versus past winters",
+     "p": [
+      "Below par at Whistler Blackcomb: 40 cm at 1,456 m against a usual 124 cm, and only 0 of the past 46 winters had less on 22 November.",
+      "Big White, 1,891 m: 53 cm, close to normal (usual: 44 cm); deeper than in 26 of the past 46 winters.",
+      "Mount Cain Alpine Park, 1,403 m: 34 cm today, usual 59 cm. Late. Only 15 of the past 46 winters had less snow on 22 November."
+     ]
+    },
+    {
+     "h": "Coming up",
+     "p": [
+      "Next round by 25 November: 132 cm at Mount Cain Alpine Park, 121 cm at Mount Washington Alpine Resort and 101 cm at Whistler Blackcomb, according to our forecast.",
+      "The freezing level at Whistler Blackcomb reaches 1,170 m to 1,490 m on 24 November, cutting the resort in two: wet snow below, wintry above.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "A rule of thumb that is rarely wrong: high and north-facing keeps snow, south-facing loses it first.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Whistler Blackcomb gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in Western Canada on 22 November 2026 (SnowScope snow model): Whistler Blackcomb, Big White, Mount Cain Alpine Park, Silver Star, Mount Washington Alpine Resort."
+   }
+  },
+  "fr": {
+   "title": "Manteau neigeux dans l'Ouest canadien : Whistler Blackcomb garde la couche la plus épaisse, 153 cm (22 novembre)",
+   "description": "Notre modèle classe Whistler Blackcomb premier dans l'Ouest canadien aujourd'hui, avec environ 153 cm sur le haut du domaine, devant Big White …",
+   "lede": "Notre modèle classe Whistler Blackcomb premier dans l'Ouest canadien aujourd'hui, avec environ 153 cm sur le haut du domaine, devant Big White (101 cm) et Mount Cain Alpine Park (92 cm). Le compte du jour dans l'Ouest canadien : 52 stations sur 57 avec de la neige en haut, 398 620 km² de sol enneigé. Le modèle a raison plus souvent qu'une intuition, et moins souvent que nous le voudrions.",
+   "sections": [
+    {
+     "h": "La hauteur du jour, en chiffres",
+     "p": [
+      "Surface enneigée : 399 700 km² le 20 novembre, 398 620 km² aujourd'hui, 385 170 km² prévus le 25 novembre. À suivre.",
+      "Trois altitudes à Whistler Blackcomb, trois chiffres : 114 cm au sommet (2 259 m), 51 cm à mi-pente (1 456 m), 4 cm en bas (653 m)."
+     ]
+    },
+    {
+     "h": "Loin devant les autres",
+     "p": [
+      "Whistler Blackcomb compte 153 cm sur le haut du domaine, loin devant Big White avec 101 cm.",
+      "Vers 1 456 m, Whistler Blackcomb a 40 cm aujourd'hui ; un 22 novembre normal y compte 124 cm.",
+      "C'est plus que lors de 0 des 46 hivers passés à cette date.",
+      "Les hivers passés, la meilleure neige à Whistler Blackcomb arrivait d'habitude mi-mars / fin mars.",
+      "Jour après jour à Whistler Blackcomb : dimanche 22 novembre 5 cm; lundi 23 novembre 8 cm; mardi 24 novembre 40 cm; mercredi 25 novembre 53 cm.",
+      "Altitude par altitude à Whistler Blackcomb : 653 m 4 cm au sol, 11 cm de plus dans les 7 prochains jours; 1 456 m 51 cm au sol, 96 cm de plus dans les 7 prochains jours; 2 259 m 114 cm au sol, 116 cm de plus dans les 7 prochains jours."
+     ]
+    },
+    {
+     "h": "La vérité du terrain",
+     "p": [
+      "Quelle confiance ? Les valeurs des stations de ski sont des estimations du modèle pour le haut du domaine ; les stations de mesure donnent des mesures, chacune en un point à la date indiquée."
+     ]
+    },
+    {
+     "h": "Face aux hivers passés",
+     "p": [
+      "Sous la moyenne à Whistler Blackcomb : 40 cm à 1 456 m contre 124 cm d'habitude, et seuls 0 des 46 hivers passés en avaient moins un 22 novembre.",
+      "Big White, 1 891 m : 53 cm, proche de la normale (habituel : 44 cm) ; plus que lors de 26 des 46 hivers passés.",
+      "Mount Cain Alpine Park, 1 403 m : 34 cm aujourd'hui, habituel 59 cm. En retard. Seuls 15 des 46 hivers passés avaient moins de neige un 22 novembre."
+     ]
+    },
+    {
+     "h": "À venir",
+     "p": [
+      "D'ici le 25 novembre, la prévision donne 132 cm à Mount Cain Alpine Park, 121 cm à Mount Washington Alpine Resort et 101 cm à Whistler Blackcomb, avec moins de certitude à mesure qu'on s'éloigne.",
+      "L'isotherme 0 °C à Whistler Blackcomb monte entre 1 170 m et 1 490 m le 24 novembre et coupe la station en deux : mouillé en bas, hivernal en haut.",
+      "Les prévisions à quelques jours peuvent changer : regardez à nouveau la carte la veille du départ."
+     ]
+    }
+   ],
+   "advice": [
+    "De la neige sur la carte ne veut pas dire que la station est ouverte : vérifiez remontées et dates d'ouverture sur son site.",
+    "La neige de début de saison est fine. Restez sur les pistes ouvertes et damées : cailloux et herbe se cachent juste dessous.",
+    "Une règle simple, rarement fausse : en haut et au nord, la neige reste ; au sud, elle part en premier.",
+    "Avant le hors-piste ou la randonnée, lisez le bulletin d'avalanche officiel (liens ci-dessous).",
+    "Activez une alerte poudreuse dans l'app SnowScope pour savoir quand Whistler Blackcomb reçoit de la neige fraîche."
+   ],
+   "captions": {
+    "map": "Hauteur de neige dans l'Ouest canadien le 22 novembre 2026 (modèle de neige SnowScope) : Whistler Blackcomb, Big White, Mount Cain Alpine Park, Silver Star, Mount Washington Alpine Resort."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "sat",
+   "rewrite": 1
+  }
+ },
+ "words_en": 442,
+ "indexable": true,
+ "main": {
+  "slug": "whistler",
+  "name": "Whistler Blackcomb",
+  "lat": 50.0888,
+  "lon": -122.9419
+ },
+ "places": [
+  {
+   "name": "Whistler Blackcomb",
+   "lat": 50.0888,
+   "lon": -122.9419
+  },
+  {
+   "name": "Big White",
+   "lat": 49.7358,
+   "lon": -118.9487
+  },
+  {
+   "name": "Mount Cain Alpine Park",
+   "lat": 50.2232,
+   "lon": -126.3468
+  },
+  {
+   "name": "Silver Star",
+   "lat": 50.3657,
+   "lon": -119.0516
+  },
+  {
+   "name": "Mount Washington Alpine Resort",
+   "lat": 49.7487,
+   "lon": -125.2978
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "whistler",
+   "name": "Whistler Blackcomb"
+  },
+  {
+   "slug": "big_white_ski_resort",
+   "name": "Big White"
+  },
+  {
+   "slug": "mount_cain_alpine_park",
+   "name": "Mount Cain Alpine Park"
+  },
+  {
+   "slug": "silver_star_mountain_resort",
+   "name": "Silver Star"
+  },
+  {
+   "slug": "mount_washington_alpine_resort",
+   "name": "Mount Washington Alpine Resort"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "whistler",
+    "name": "Whistler Blackcomb",
+    "depth": 153,
+    "new72": 5,
+    "next": 101,
+    "top_m": 2259
+   },
+   {
+    "slug": "big_white_ski_resort",
+    "name": "Big White",
+    "depth": 101,
+    "new72": 1,
+    "next": 2,
+    "top_m": 2271
+   },
+   {
+    "slug": "mount_cain_alpine_park",
+    "name": "Mount Cain Alpine Park",
+    "depth": 92,
+    "new72": 2,
+    "next": 132,
+    "top_m": 1616
+   },
+   {
+    "slug": "silver_star_mountain_resort",
+    "name": "Silver Star",
+    "depth": 84,
+    "new72": 0,
+    "next": 1,
+    "top_m": 1886
+   },
+   {
+    "slug": "mount_washington_alpine_resort",
+    "name": "Mount Washington Alpine Resort",
+    "depth": 73,
+    "new72": 9,
+    "next": 121,
+    "top_m": 1569
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Avalanche Canada",
+   "url": "https://avalanche.ca/"
+  }
+ ],
+ "trip_day": "2026-11-28",
+ "map_link": "https://snowscope.app/#@50.089,-122.942,9.0",
+ "seconds": 57.8,
+ "facts_used": 36,
+ "voice": "sat",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 40.8,
+  "after": 21.6,
+  "with": "alps-la-grave-snow-depth-today-15-november-2026",
+  "tries": 1
+ },
+ "similarity": {
+  "max": 0.127,
+  "with": "western-canada-manning-park-resort-snow-depth-today-10-november-2026"
+ },
+ "publish_utc": "2026-11-22T19:52:10Z",
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 549,
+  "overlap": 40.6,
+  "with": "alps-alpe-d-huez-grand-domaine-snow-depth-today-21-november-2026",
+  "langs_off": [],
+  "score": 98.5,
+  "intent": "resort:whistler|resort_lead",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ },
+ "cover": {
+  "v": 1,
+  "style": "ranked",
+  "files": {
+   "en": [
+    "blog/media/2026/11/western-canada-whistler-blackcomb-snow-depth-today-22-november-2026/cover-en.webp",
+    "blog/media/2026/11/western-canada-whistler-blackcomb-snow-depth-today-22-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/western-canada-whistler-blackcomb-snow-depth-today-22-november-2026/cover-fr.webp",
+    "blog/media/2026/11/western-canada-whistler-blackcomb-snow-depth-today-22-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}

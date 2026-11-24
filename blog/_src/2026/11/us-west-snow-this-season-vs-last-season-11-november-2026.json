@@ -1,0 +1,453 @@
+{
+ "id": "2026-11-11-us_west-season",
+ "slug": "us-west-snow-this-season-vs-last-season-11-november-2026",
+ "date": "2026-11-11",
+ "published_utc": "2026-11-11T18:44:22Z",
+ "updated_utc": "2026-11-11T18:44:22Z",
+ "region": "US_WEST",
+ "angle": "season",
+ "score": 58,
+ "signature": "wolf_creek_ski_area:6|telluride_ski_area:2|silverton_mountain:7",
+ "keyword": {
+  "family": "vs-last-season",
+  "entity": "us_west",
+  "region": "US_WEST",
+  "date": "2026-11-11"
+ },
+ "tags": [
+  "past-winters",
+  "snow-depth",
+  "stations"
+ ],
+ "facts": {
+  "angle": "season_vs_last_season",
+  "region": "US West",
+  "date": "2026-11-11",
+  "weekday": "Wednesday",
+  "model_run": "2026-11-11",
+  "forecast_days": [
+   "2026-11-12",
+   "2026-11-13",
+   "2026-11-14"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 134530,
+   "resorts_with_snow": 123,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-09",
+   "snow_covered_area_km2": 157120,
+   "resorts_with_snow": 130
+  },
+  "region_forecast": {
+   "date": "2026-11-14",
+   "snow_covered_area_km2": 213380,
+   "resorts_with_snow": 139
+  },
+  "question": "Is there more or less snow than on the same date last winter, and why?",
+  "last_winter": "2025-26",
+  "same_date_last_winter": "2025-11-11",
+  "notes": [
+   "model values = SnowScope snow history at one height of each resort (an estimate for an area)",
+   "measured values = a snow station on the date given (one point), only where a station history exists",
+   "days with a gain of 10 cm or more = snowfall days this winter; days with a loss of 5 cm or more = melt, rain or wind"
+  ],
+  "measured_at_stations_today": [
+   {
+    "station": "Beartown",
+    "elev_m": 3530,
+    "depth_cm_measured": 76,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-10",
+    "network": "snotel"
+   },
+   {
+    "station": "Bison Lake",
+    "elev_m": 3338,
+    "depth_cm_measured": 36,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-10",
+    "network": "snotel"
+   },
+   {
+    "station": "Lyman Lake",
+    "elev_m": 1826,
+    "depth_cm_measured": 36,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-10",
+    "network": "snotel"
+   }
+  ],
+  "resorts": [
+   {
+    "name": "Wolf Creek",
+    "slug": "wolf_creek_ski_area",
+    "country": "United States",
+    "top_m": 3585,
+    "base_m": 3128,
+    "height_m": 3356,
+    "model_cm_today_this_winter": 66,
+    "model_cm_same_date_last_winter": 0,
+    "last_winter": "2025-26",
+    "last_winter_peak_cm_model": 76,
+    "last_winter_peak_date": "2026-02-21",
+    "usual_cm_on_this_date_model": 20,
+    "this_winter_days_with_10cm_or_more_gain": 1,
+    "this_winter_days_with_5cm_or_more_loss": 0,
+    "this_winter_first_day_with_5cm": "2026-10-22",
+    "past_winters_compared": 46,
+    "difference_cm_vs_last_winter": 66,
+    "measured_station": {
+     "station": "Wolf Creek Summit",
+     "elev_m": 3331,
+     "km_away": 2.0,
+     "depth_cm_measured_today": 51,
+     "depth_cm_measured_same_date_last_winter": 3,
+     "measured_on": [
+      "2026-11-11",
+      "2025-11-11"
+     ],
+     "network": "USDA NRCS SNOTEL"
+    }
+   },
+   {
+    "name": "Telluride",
+    "slug": "telluride_ski_area",
+    "country": "United States",
+    "top_m": 3812,
+    "base_m": 2662,
+    "height_m": 3237,
+    "model_cm_today_this_winter": 20,
+    "model_cm_same_date_last_winter": 0,
+    "last_winter": "2025-26",
+    "last_winter_peak_cm_model": 76,
+    "last_winter_peak_date": "2026-02-21",
+    "usual_cm_on_this_date_model": 24,
+    "this_winter_days_with_10cm_or_more_gain": 0,
+    "this_winter_days_with_5cm_or_more_loss": 0,
+    "this_winter_first_day_with_5cm": "2026-10-17",
+    "past_winters_compared": 46,
+    "difference_cm_vs_last_winter": 20,
+    "measured_station": {
+     "station": "Alta Lakes",
+     "elev_m": 3441,
+     "km_away": 3.5,
+     "depth_cm_measured_today": 48,
+     "depth_cm_measured_same_date_last_winter": 8,
+     "measured_on": [
+      "2026-11-11",
+      "2025-11-11"
+     ],
+     "network": "USDA NRCS SNOTEL"
+    }
+   },
+   {
+    "name": "Silverton Mountain",
+    "slug": "silverton_mountain",
+    "country": "United States",
+    "top_m": 3345,
+    "base_m": 3143,
+    "height_m": 3244,
+    "model_cm_today_this_winter": 79,
+    "model_cm_same_date_last_winter": 0,
+    "last_winter": "2025-26",
+    "last_winter_peak_cm_model": 51,
+    "last_winter_peak_date": "2026-02-21",
+    "usual_cm_on_this_date_model": 17,
+    "this_winter_days_with_10cm_or_more_gain": 1,
+    "this_winter_days_with_5cm_or_more_loss": 0,
+    "this_winter_first_day_with_5cm": "2026-10-17",
+    "past_winters_compared": 46,
+    "difference_cm_vs_last_winter": 79,
+    "measured_station": {
+     "station": "Red Mountain Pass",
+     "elev_m": 3371,
+     "km_away": 5.3,
+     "depth_cm_measured_today": 58,
+     "depth_cm_measured_same_date_last_winter": 0,
+     "measured_on": [
+      "2026-11-11",
+      "2025-11-11"
+     ],
+     "network": "USDA NRCS SNOTEL"
+    }
+   },
+   {
+    "name": "Purgatory Resort",
+    "slug": "purgatory_resort",
+    "country": "United States",
+    "top_m": 3291,
+    "base_m": 2696,
+    "height_m": 2993,
+    "model_cm_today_this_winter": 10,
+    "model_cm_same_date_last_winter": 0,
+    "last_winter": "2025-26",
+    "last_winter_peak_cm_model": 64,
+    "last_winter_peak_date": "2026-02-21",
+    "usual_cm_on_this_date_model": 14,
+    "this_winter_days_with_10cm_or_more_gain": 0,
+    "this_winter_days_with_5cm_or_more_loss": 0,
+    "this_winter_first_day_with_5cm": null,
+    "past_winters_compared": 46,
+    "difference_cm_vs_last_winter": 10,
+    "measured_station": {
+     "station": "Cascade #2",
+     "elev_m": 2740,
+     "km_away": 4.1,
+     "depth_cm_measured_today": 0,
+     "depth_cm_measured_same_date_last_winter": 0,
+     "measured_on": [
+      "2026-11-11",
+      "2025-11-11"
+     ],
+     "network": "USDA NRCS SNOTEL"
+    }
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Wolf Creek",
+     "slug": "wolf_creek_ski_area",
+     "now_cm": 23,
+     "usual_cm": 20,
+     "high_cm": 102,
+     "week_ago_cm": 24,
+     "height_m": 3356,
+     "best_weeks": [
+      53,
+      12,
+      11
+     ],
+     "ratio_pct": 115
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Wolf Creek"
+  },
+  "story": {
+   "id": "vs_normal_par",
+   "place": "resort:wolf_creek_ski_area",
+   "score": 32,
+   "resort": "Wolf Creek"
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-snow-this-season-vs-last-season-11-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-snow-this-season-vs-last-season-11-november-2026/map_t.webp",
+   "bytes": 58974,
+   "snow_frac": 0.6668,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Wolf Creek 115 percent of normal for mid-November",
+   "description": "Wolf Creek measured 20 in (51 cm) on November 11, 2026, tracking 115% of normal while vastly outpacing last year's thin early start.",
+   "lede": "Wolf Creek's station measured 20 in (51 cm) on November 11, putting this season at 115 percent of normal for the date. Last year this same location recorded just 1 in (3 cm), so the region is making up for a late, weak start that hampered the previous winter.",
+   "sections": [
+    {
+     "h": "Tracking normal",
+     "p": [
+      "Tracking normal is not headline material, but it matters early. November is when mountains build from bare ground, and each snowfall event counts. Wolf Creek sits where November should put it.",
+      "The model estimates 26 in (66 cm) across the resort's reference height, while the measured station shows 20 in (51 cm). Both values point the same direction: this season is on schedule."
+     ]
+    },
+    {
+     "h": "Last winter's thin beginning",
+     "p": [
+      "The contrast that matters is not with normal snow but with last November. On November 11, 2025, Wolf Creek Summit recorded 1 in (3 cm). The entire region was running late.",
+      "Storms that should have arrived in October did not come reliably until December. That compressed timeline meant scrambling for adequate base depth and rushed lift openings. This year's single storm has nearly matched the entire monthly depth from last year."
+     ]
+    },
+    {
+     "h": "Wider pattern across the US West",
+     "p": [
+      "Wolf Creek is not alone. At Telluride, the Alta Lakes station measured 19 in (48 cm) on November 11. Silverton Mountain's Red Mountain Pass station recorded 23 in (58 cm).",
+      "Our model puts Purgatory at 4 in (10 cm), though a nearby station still shows no measurable snow there, suggesting the southern resorts lag behind their northern neighbors. Across the region, 123 of 195 resorts report some snow, and the snow-covered area has grown to 134,530 km² by November 11."
+     ]
+    },
+    {
+     "h": "Why the early kick",
+     "p": [
+      "Significant precipitation arrived at high elevations in October across Colorado and Utah. Wolf Creek triggered its first 5 cm gain by October 22, while Telluride and Silverton Mountain started even earlier on October 17.",
+      "The long-range pattern has shifted, bringing early-season troughs southward more often than in the drought years. One major storm per week through October was enough to establish a foundation that did not exist last year."
+     ]
+    },
+    {
+     "h": "What the forecast suggests",
+     "p": [
+      "Forecasts shift, but the model shows snow-covered area expanding to 213,380 km² by November 14 as storms continue to move through. The region is building the kind of base that lets resorts plan with confidence for opening terrain in coming weeks.",
+      "Wolf Creek is not in surplus, but it is established. For the second week of November, it is tracking where it needs to be when the season peaks."
+     ]
+    }
+   ],
+   "advice": [
+    "Wolf Creek's measured 20 in (51 cm) is enough for groomed mid-mountain runs, but check the resort about rock exposure on steeper slopes, which remains a hazard under thin early-season snow.",
+    "The forecast calls for more snow through November 14. Before skiing off-piste terrain, check the local avalanche bulletin to assess how new snow is loading the existing thin base.",
+    "Purgatory is weak at 4 in (10 cm) on the model with no measured snow nearby; expect delayed opening or base-only terrain until more accumulation arrives.",
+    "Elevation shifts the game: Wolf Creek's high elevations are snow-reliable, but Purgatory and lower resorts can see rain-on-snow events if temperatures rise, so watch the forecast high.",
+    "This 115 percent of normal may not persist if the jet stream pattern flattens by mid-December. Early-season skiers should use this window while the foundation is firm."
+   ],
+   "captions": {
+    "map": "Snow-covered area across the US West on November 11, 2026, with Wolf Creek at 115 percent of normal for the date and regional expansion expected by November 14."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "voice": "sat"
+  }
+ },
+ "words_en": 562,
+ "indexable": true,
+ "main": {
+  "slug": "wolf_creek_ski_area",
+  "name": "Wolf Creek",
+  "lat": 37.4632,
+  "lon": -106.7905
+ },
+ "places": [
+  {
+   "name": "Wolf Creek",
+   "lat": 37.4632,
+   "lon": -106.7905
+  },
+  {
+   "name": "Telluride",
+   "lat": 37.9197,
+   "lon": -107.8348
+  },
+  {
+   "name": "Silverton Mountain",
+   "lat": 37.8773,
+   "lon": -107.6562
+  },
+  {
+   "name": "Purgatory Resort",
+   "lat": 37.6261,
+   "lon": -107.8265
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "wolf_creek_ski_area",
+   "name": "Wolf Creek"
+  },
+  {
+   "slug": "telluride_ski_area",
+   "name": "Telluride"
+  },
+  {
+   "slug": "silverton_mountain",
+   "name": "Silverton Mountain"
+  },
+  {
+   "slug": "purgatory_resort",
+   "name": "Purgatory Resort"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "wolf_creek_ski_area",
+    "name": "Wolf Creek",
+    "depth": 87,
+    "new72": 0,
+    "next": 8,
+    "top_m": 3585
+   },
+   {
+    "slug": "telluride_ski_area",
+    "name": "Telluride",
+    "depth": 86,
+    "new72": 0,
+    "next": 9,
+    "top_m": 3812
+   },
+   {
+    "slug": "silverton_mountain",
+    "name": "Silverton Mountain",
+    "depth": 58,
+    "new72": 0,
+    "next": 7,
+    "top_m": 3345
+   },
+   {
+    "slug": "purgatory_resort",
+    "name": "Purgatory Resort",
+    "depth": 57,
+    "new72": 0,
+    "next": 12,
+    "top_m": 3291
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@37.463,-106.790,9.0",
+ "seconds": 0.0,
+ "facts_used": 36,
+ "voice": "sat",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 22.5,
+  "after": 22.5,
+  "with": "alps-snow-this-season-vs-last-season-8-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.13,
+  "with": "alps-snow-this-season-vs-last-season-8-november-2026"
+ },
+ "publish_utc": "2026-11-11T18:44:22Z",
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_par",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 562,
+  "overlap": 1.4,
+  "with": "us-west-snow-forecast-6-november-2026",
+  "langs_off": [],
+  "score": 81.7,
+  "intent": "resort:wolf_creek_ski_area|vs_normal_par",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ },
+ "cover": {
+  "v": 1,
+  "style": "ranked",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-snow-this-season-vs-last-season-11-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-snow-this-season-vs-last-season-11-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}

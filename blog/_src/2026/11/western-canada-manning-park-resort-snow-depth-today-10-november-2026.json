@@ -1,0 +1,541 @@
+{
+ "id": "2026-11-10-ca_west-deepest",
+ "slug": "western-canada-manning-park-resort-snow-depth-today-10-november-2026",
+ "date": "2026-11-10",
+ "published_utc": "2026-11-10T14:19:41Z",
+ "updated_utc": "2026-11-10T16:33:50Z",
+ "region": "CA_WEST",
+ "angle": "deepest",
+ "score": 67.5,
+ "signature": "manning_park_resort:110|big_white_ski_resort:80|whistler:80",
+ "keyword": {
+  "family": "snow-depth",
+  "entity": "manning_park_resort",
+  "region": "CA_WEST",
+  "date": "2026-11-10"
+ },
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "Western Canada",
+  "date": "2026-11-10",
+  "weekday": "Tuesday",
+  "model_run": "2026-11-10",
+  "forecast_days": [
+   "2026-11-11",
+   "2026-11-12",
+   "2026-11-13"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 260060,
+   "resorts_with_snow": 41,
+   "resorts_in_region": 57
+  },
+  "region_before": {
+   "date": "2026-11-08",
+   "snow_covered_area_km2": 270720,
+   "resorts_with_snow": 42
+  },
+  "region_forecast": {
+   "date": "2026-11-13",
+   "snow_covered_area_km2": 235100,
+   "resorts_with_snow": 37
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Manning Park Resort",
+    "country": "Canada",
+    "top_m": 1789,
+    "base_m": 1359,
+    "depth_cm_upper_slopes_today": 110,
+    "new_cm_last_24h": 6,
+    "new_cm_last_72h": 18,
+    "new_cm_forecast_next_days": 0,
+    "slug": "manning_park_resort",
+    "new_cm_by_day": {
+     "2026-11-08": 12,
+     "2026-11-09": 0,
+     "2026-11-10": 6,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1359,
+      "depth_cm_model": 1,
+      "new_cm_next_7_days": 4
+     },
+     "mid": {
+      "elev_m": 1574,
+      "depth_cm_model": 9,
+      "new_cm_next_7_days": 12
+     },
+     "top": {
+      "elev_m": 1789,
+      "depth_cm_model": 18,
+      "new_cm_next_7_days": 12
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 1520,
+      "max": 2860
+     },
+     "2026-11-11": {
+      "min": 2800,
+      "max": 3030
+     },
+     "2026-11-12": {
+      "min": 2610,
+      "max": 2970
+     }
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-04"
+    }
+   },
+   {
+    "name": "Big White",
+    "country": "Canada",
+    "top_m": 2271,
+    "base_m": 1512,
+    "depth_cm_upper_slopes_today": 85,
+    "new_cm_last_24h": 2,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 0,
+    "slug": "big_white_ski_resort",
+    "new_cm_by_day": {
+     "2026-11-08": 2,
+     "2026-11-09": 0,
+     "2026-11-10": 2,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1512,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 4
+     },
+     "mid": {
+      "elev_m": 1891,
+      "depth_cm_model": 10,
+      "new_cm_next_7_days": 8
+     },
+     "top": {
+      "elev_m": 2271,
+      "depth_cm_model": 62,
+      "new_cm_next_7_days": 9
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 1630,
+      "max": 2580
+     },
+     "2026-11-11": {
+      "min": 2730,
+      "max": 3440
+     },
+     "2026-11-12": {
+      "min": 2870,
+      "max": 3340
+     }
+    },
+    "past_winters": {
+     "height_m": 1891,
+     "snow_cm_at_this_height_today_model": 42,
+     "deeper_than_n_of_past_winters": 40,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 26
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-04"
+    }
+   },
+   {
+    "name": "Whistler Blackcomb",
+    "country": "Canada",
+    "top_m": 2259,
+    "base_m": 653,
+    "depth_cm_upper_slopes_today": 83,
+    "new_cm_last_24h": 19,
+    "new_cm_last_72h": 76,
+    "new_cm_forecast_next_days": 53,
+    "slug": "whistler",
+    "new_cm_by_day": {
+     "2026-11-08": 56,
+     "2026-11-09": 1,
+     "2026-11-10": 19,
+     "2026-11-11": 18,
+     "2026-11-12": 11,
+     "2026-11-13": 24
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 653,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 1456,
+      "depth_cm_model": 65,
+      "new_cm_next_7_days": 93
+     },
+     "top": {
+      "elev_m": 2259,
+      "depth_cm_model": 96,
+      "new_cm_next_7_days": 167
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-10": {
+      "min": 1480,
+      "max": 2620
+     },
+     "2026-11-11": {
+      "min": 2080,
+      "max": 2740
+     },
+     "2026-11-12": {
+      "min": 1900,
+      "max": 2500
+     }
+    },
+    "past_winters": {
+     "height_m": 1456,
+     "snow_cm_at_this_height_today_model": 55,
+     "deeper_than_n_of_past_winters": 12,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 77
+    }
+   },
+   {
+    "name": "Mount Cain Alpine Park",
+    "country": "Canada",
+    "top_m": 1616,
+    "base_m": 1190,
+    "depth_cm_upper_slopes_today": 59,
+    "new_cm_last_24h": 11,
+    "new_cm_last_72h": 45,
+    "new_cm_forecast_next_days": 40,
+    "slug": "mount_cain_alpine_park",
+    "new_cm_by_day": {
+     "2026-11-08": 32,
+     "2026-11-09": 4,
+     "2026-11-10": 11,
+     "2026-11-11": 0,
+     "2026-11-12": 19,
+     "2026-11-13": 21
+    }
+   },
+   {
+    "name": "Tweedsmuir Ski Club",
+    "country": "Canada",
+    "top_m": 1650,
+    "base_m": 1588,
+    "depth_cm_upper_slopes_today": 56,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 21,
+    "new_cm_forecast_next_days": 38,
+    "slug": "tweedsmuir_ski_club",
+    "new_cm_by_day": {
+     "2026-11-08": 18,
+     "2026-11-09": 0,
+     "2026-11-10": 3,
+     "2026-11-11": 23,
+     "2026-11-12": 11,
+     "2026-11-13": 4
+    }
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Manning Park Resort",
+     "slug": "manning_park_resort",
+     "now_cm": 8,
+     "usual_cm": 28,
+     "high_cm": 75,
+     "week_ago_cm": 5,
+     "height_m": 1574,
+     "best_weeks": [
+      14,
+      13,
+      12
+     ],
+     "ratio_pct": 29
+    }
+   ],
+   "n": 1,
+   "above": 0,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Manning Park Resort",
+   "top_cm": 18,
+   "top_m": 1789,
+   "base_cm": 1,
+   "base_m": 1359,
+   "rain_day": "2026-11-11",
+   "freezing_m": 3030,
+   "lift_top_m": 1789,
+   "next_cm": 0,
+   "second": "Big White",
+   "second_cm": 85,
+   "depth_cm": 110
+  },
+  "story": {
+   "id": "rain_risk",
+   "place": "resort:manning_park_resort",
+   "score": 58,
+   "resort": "Manning Park Resort"
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/western-canada-manning-park-resort-snow-depth-today-10-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/western-canada-manning-park-resort-snow-depth-today-10-november-2026/map_t.webp",
+   "bytes": 71280,
+   "snow_frac": 0.5778,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Where is the deepest snow in Western Canada? Manning Park Resort, with 110 cm (10 November)",
+   "description": "Where is the deepest snow in Western Canada today? Deepest snow in Western Canada today: Manning Park Resort, about 110 cm on the upper slopes …",
+   "lede": "Where is the deepest snow in Western Canada today? Deepest snow in Western Canada today: Manning Park Resort, about 110 cm on the upper slopes (model). Second Big White, 85 cm; third Whistler Blackcomb, 83 cm. Snow-covered ground in Western Canada: 260,060 km². Resorts with snow: 41 of 57. Confidence: good for the trend, lower for any single number.",
+   "sections": [
+    {
+     "h": "Today's snow map",
+     "p": [
+      "The white area on the map dropped from 270,720 km² (8 November) to 260,060 km² today, and the forecast says 235,100 km² on 13 November.",
+      "Big White by height, from our model: top 62 cm (2,271 m), middle 10 cm (1,891 m), base 0 cm (1,512 m)."
+     ]
+    },
+    {
+     "h": "Rain up to the top?",
+     "p": [
+      "On Wednesday 11 November the freezing level climbs to about 3,030 m, above the top of the lifts at 1,789 m: rain can fall even at the top.",
+      "Rain on fresh snow makes it heavy and, after a cold night, icy: the days after are better for groomed runs than for powder.",
+      "At about 1,574 m, Manning Park Resort has 8 cm today; a normal 10 November has 28 cm there.",
+      "Only one winter in ten has more than 75 cm on this date.",
+      "A week ago the same spot had 5 cm.",
+      "In past winters the best snow at Manning Park Resort usually came late March / early April.",
+      "Height by height at Manning Park Resort: 1,359 m 1 cm on the ground, 4 cm more in the next 7 days; 1,574 m 9 cm on the ground, 12 cm more in the next 7 days; 1,789 m 18 cm on the ground, 12 cm more in the next 7 days."
+     ]
+    },
+    {
+     "h": "Ground truth",
+     "p": [
+      "Model for the resorts, instruments for the stations: the first is an estimate for the upper slopes, the second one point on the date given."
+     ]
+    },
+    {
+     "h": "Is this normal?",
+     "p": [
+      "A strong opening at Big White: our model has 42 cm at 1,891 m, deeper than on this date in 40 of the past 46 winters, against a usual 26 cm.",
+      "Below par at Whistler Blackcomb: 55 cm at 1,456 m against a usual 77 cm, and only 12 of the past 46 winters had less on 10 November."
+     ]
+    },
+    {
+     "h": "The forecast in short",
+     "p": [
+      "More snow ahead: 53 cm at Whistler Blackcomb, 40 cm at Mount Cain Alpine Park and 38 cm at Tweedsmuir Ski Club by 13 November, if the forecast holds.",
+      "On 11 November the freezing level at Manning Park Resort sits at 2,800 m to 3,030 m, over the top of the resort (1,789 m): rain or wet snow could fall on all slopes.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    }
+   ],
+   "advice": [
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Early-season snow is thin. Stay on open, groomed pistes: rocks and grass can hide just under the surface.",
+    "A rule of thumb that is rarely wrong: high and north-facing keeps snow, south-facing loses it first.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Get a powder alert in the SnowScope app to know when Manning Park Resort gets fresh snow."
+   ],
+   "captions": {
+    "map": "Snow depth in Western Canada on 10 November 2026 (SnowScope snow model): Manning Park Resort, Big White, Whistler Blackcomb, Mount Cain Alpine Park, Tweedsmuir Ski Club."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  }
+ },
+ "words_en": 541,
+ "indexable": true,
+ "main": {
+  "slug": "manning_park_resort",
+  "name": "Manning Park Resort",
+  "lat": 49.077,
+  "lon": -120.8384
+ },
+ "places": [
+  {
+   "name": "Manning Park Resort",
+   "lat": 49.077,
+   "lon": -120.8384
+  },
+  {
+   "name": "Big White",
+   "lat": 49.7358,
+   "lon": -118.9487
+  },
+  {
+   "name": "Whistler Blackcomb",
+   "lat": 50.0888,
+   "lon": -122.9419
+  },
+  {
+   "name": "Mount Cain Alpine Park",
+   "lat": 50.2232,
+   "lon": -126.3468
+  },
+  {
+   "name": "Tweedsmuir Ski Club",
+   "lat": 52.5367,
+   "lon": -125.8476
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "manning_park_resort",
+   "name": "Manning Park Resort"
+  },
+  {
+   "slug": "big_white_ski_resort",
+   "name": "Big White"
+  },
+  {
+   "slug": "whistler",
+   "name": "Whistler Blackcomb"
+  },
+  {
+   "slug": "mount_cain_alpine_park",
+   "name": "Mount Cain Alpine Park"
+  },
+  {
+   "slug": "tweedsmuir_ski_club",
+   "name": "Tweedsmuir Ski Club"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "manning_park_resort",
+    "name": "Manning Park Resort",
+    "depth": 110,
+    "new72": 18,
+    "next": 0,
+    "top_m": 1789
+   },
+   {
+    "slug": "big_white_ski_resort",
+    "name": "Big White",
+    "depth": 85,
+    "new72": 4,
+    "next": 0,
+    "top_m": 2271
+   },
+   {
+    "slug": "whistler",
+    "name": "Whistler Blackcomb",
+    "depth": 83,
+    "new72": 76,
+    "next": 53,
+    "top_m": 2259
+   },
+   {
+    "slug": "mount_cain_alpine_park",
+    "name": "Mount Cain Alpine Park",
+    "depth": 59,
+    "new72": 45,
+    "next": 40,
+    "top_m": 1616
+   },
+   {
+    "slug": "tweedsmuir_ski_club",
+    "name": "Tweedsmuir Ski Club",
+    "depth": 56,
+    "new72": 21,
+    "next": 38,
+    "top_m": 1650
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Avalanche Canada",
+   "url": "https://avalanche.ca/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@49.077,-120.838,9.0",
+ "seconds": 0.0,
+ "facts_used": 27,
+ "similarity": {
+  "max": 0.378,
+  "with": "western-canada-snow-depth-today-5-november-2026"
+ },
+ "publish_utc": "2026-11-10T14:19:41Z",
+ "content_updated_utc": "2026-11-10T16:33:50Z",
+ "refresh": [
+  {
+   "utc": "2026-11-10T16:33:50Z",
+   "kind": "voice",
+   "slug": "western-canada-manning-park-resort-snow-depth-today-10-november-2026",
+   "before": 55.5,
+   "with_before": "western-canada-mount-washington-alpine-resort-snow-depth-today-8-november-2026",
+   "after": 18.9,
+   "with_after": "western-canada-mount-washington-alpine-resort-snow-depth-today-8-november-2026",
+   "voice": "sat"
+  }
+ ],
+ "rewrite": {
+  "v": 1,
+  "story": "rain_risk",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 541,
+  "overlap": 41.2,
+  "with": "western-canada-snow-depth-today-5-november-2026",
+  "langs_off": [],
+  "score": 108.5,
+  "intent": "resort:manning_park_resort|rain_risk",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ },
+ "cover": {
+  "v": 1,
+  "style": "poster",
+  "files": {
+   "en": [
+    "blog/media/2026/11/western-canada-manning-park-resort-snow-depth-today-10-november-2026/cover-en.webp",
+    "blog/media/2026/11/western-canada-manning-park-resort-snow-depth-today-10-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}

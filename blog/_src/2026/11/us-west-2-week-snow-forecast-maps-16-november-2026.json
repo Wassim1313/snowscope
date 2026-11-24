@@ -1,0 +1,945 @@
+{
+ "id": "2026-11-16-us_west-outlook14",
+ "slug": "us-west-2-week-snow-forecast-maps-16-november-2026",
+ "date": "2026-11-16",
+ "published_utc": "2026-11-17T06:57:07Z",
+ "updated_utc": "2026-11-17T06:57:07Z",
+ "region": "US_WEST",
+ "angle": "outlook14",
+ "score": 80,
+ "signature": "2026-11-16|kingvale:140|mt_shasta_ski_park:130|palisades_tahoe_olympic_valley:130",
+ "keyword": {
+  "family": "two-week-forecast",
+  "entity": "us_west",
+  "region": "US_WEST",
+  "date": "2026-11-16"
+ },
+ "tags": [
+  "forecast",
+  "snow-line",
+  "where-to-ski"
+ ],
+ "facts": {
+  "angle": "two_week_snow_outlook",
+  "region": "US West",
+  "date": "2026-11-16",
+  "weekday": "Monday",
+  "model_run": "2026-11-16",
+  "forecast_days": [
+   "2026-11-17",
+   "2026-11-18",
+   "2026-11-19"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 206080,
+   "resorts_with_snow": 142,
+   "resorts_in_region": 193
+  },
+  "region_before": {
+   "date": "2026-11-14",
+   "snow_covered_area_km2": 222040,
+   "resorts_with_snow": 150
+  },
+  "region_forecast": {
+   "date": "2026-11-19",
+   "snow_covered_area_km2": 679490,
+   "resorts_with_snow": 167
+  },
+  "question": "Where will new snow fall in the next two weeks, how much, in which week, and at which height?",
+  "outlook_days": [
+   "2026-11-17",
+   "2026-11-18",
+   "2026-11-19",
+   "2026-11-20",
+   "2026-11-21",
+   "2026-11-22",
+   "2026-11-23",
+   "2026-11-24",
+   "2026-11-25",
+   "2026-11-26",
+   "2026-11-27",
+   "2026-11-28",
+   "2026-11-29",
+   "2026-11-30"
+  ],
+  "week1": {
+   "from": "2026-11-17",
+   "to": "2026-11-23"
+  },
+  "week2": {
+   "from": "2026-11-24",
+   "to": "2026-11-30"
+  },
+  "models": [
+   "ECMWF IFS",
+   "NOAA GFS"
+  ],
+  "lattice_points": 3512,
+  "region_outlook": {
+   "max_new_cm_next_14_days": 185,
+   "area_km2_with_20cm_or_more": 580436,
+   "area_km2_with_50cm_or_more": 95330,
+   "area_km2_mountains": 3131058,
+   "week1_share_pct": 53
+  },
+  "new_cm_next_14_days_by_height": [
+   {
+    "from_m": 1000,
+    "to_m": 1500,
+    "new_cm_next_14_days_median": 5,
+    "new_cm_next_14_days_upper_quarter": 15
+   },
+   {
+    "from_m": 1500,
+    "to_m": 2000,
+    "new_cm_next_14_days_median": 9,
+    "new_cm_next_14_days_upper_quarter": 21
+   },
+   {
+    "from_m": 2000,
+    "to_m": 2500,
+    "new_cm_next_14_days_median": 13,
+    "new_cm_next_14_days_upper_quarter": 23
+   },
+   {
+    "from_m": 2500,
+    "to_m": 3000,
+    "new_cm_next_14_days_median": 21,
+    "new_cm_next_14_days_upper_quarter": 31
+   },
+   {
+    "from_m": 3000,
+    "to_m": 4500,
+    "new_cm_next_14_days_median": 23,
+    "new_cm_next_14_days_upper_quarter": 35
+   }
+  ],
+  "resorts_followed": 193,
+  "thresholds_cm": [
+   1,
+   5,
+   20,
+   50
+  ],
+  "best_days": [
+   {
+    "date": "2026-11-18",
+    "resorts_with_5cm_or_more": 75,
+    "max_cm": 37,
+    "top_resort": "Mt. Shasta Ski Park"
+   },
+   {
+    "date": "2026-11-24",
+    "resorts_with_5cm_or_more": 69,
+    "max_cm": 18,
+    "top_resort": "Kingvale"
+   },
+   {
+    "date": "2026-11-25",
+    "resorts_with_5cm_or_more": 81,
+    "max_cm": 35,
+    "top_resort": "Mt. Shasta Ski Park"
+   },
+   {
+    "date": "2026-11-26",
+    "resorts_with_5cm_or_more": 76,
+    "max_cm": 16,
+    "top_resort": "Jackson Hole"
+   }
+  ],
+  "resorts": [
+   {
+    "name": "Kingvale",
+    "country": "United States",
+    "top_m": null,
+    "base_m": null,
+    "depth_cm_upper_slopes_today": 25,
+    "new_cm_last_24h": 23,
+    "new_cm_last_72h": 38,
+    "new_cm_forecast_next_days": 69,
+    "slug": "kingvale",
+    "new_cm_next_14_days": 136,
+    "new_cm_next_14_days_low": 84,
+    "new_cm_next_14_days_high": 188,
+    "new_cm_days_1_7": 92,
+    "new_cm_days_8_14": 44,
+    "snowiest_day": "2026-11-19",
+    "snowiest_day_cm": 40,
+    "days_with_5cm_or_more": 7,
+    "days_with_snow": 9,
+    "daily": [
+     {
+      "date": "2026-11-17",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 22
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 40
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 13
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 18
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 21
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 2048
+   },
+   {
+    "name": "Mt. Shasta Ski Park",
+    "country": "United States",
+    "top_m": 2298,
+    "base_m": 1666,
+    "depth_cm_upper_slopes_today": 50,
+    "new_cm_last_24h": 5,
+    "new_cm_last_72h": 38,
+    "new_cm_forecast_next_days": 48,
+    "slug": "mt_shasta_ski_park",
+    "new_cm_next_14_days": 134,
+    "new_cm_next_14_days_low": 82,
+    "new_cm_next_14_days_high": 186,
+    "new_cm_days_1_7": 70,
+    "new_cm_days_8_14": 64,
+    "snowiest_day": "2026-11-18",
+    "snowiest_day_cm": 37,
+    "days_with_5cm_or_more": 6,
+    "days_with_snow": 11,
+    "daily": [
+     {
+      "date": "2026-11-17",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 37
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 14
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 13
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 18
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 35
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 5
+     }
+    ],
+    "upper_slopes_height_m": 2189
+   },
+   {
+    "name": "Palisades Tahoe Olympic Valley",
+    "country": "United States",
+    "top_m": 2665,
+    "base_m": 1890,
+    "depth_cm_upper_slopes_today": 40,
+    "new_cm_last_24h": 18,
+    "new_cm_last_72h": 32,
+    "new_cm_forecast_next_days": 65,
+    "slug": "palisades_tahoe_olympic_valley",
+    "new_cm_next_14_days": 128,
+    "new_cm_next_14_days_low": 88,
+    "new_cm_next_14_days_high": 168,
+    "new_cm_days_1_7": 83,
+    "new_cm_days_8_14": 45,
+    "snowiest_day": "2026-11-19",
+    "snowiest_day_cm": 37,
+    "days_with_5cm_or_more": 7,
+    "days_with_snow": 10,
+    "daily": [
+     {
+      "date": "2026-11-17",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 20
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 37
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 3
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 12
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 15
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 22
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 5
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 2394
+   },
+   {
+    "name": "Bear Valley",
+    "country": "United States",
+    "top_m": 2586,
+    "base_m": 2024,
+    "depth_cm_upper_slopes_today": 56,
+    "new_cm_last_24h": 21,
+    "new_cm_last_72h": 35,
+    "new_cm_forecast_next_days": 68,
+    "slug": "bear_valley",
+    "new_cm_next_14_days": 124,
+    "new_cm_next_14_days_low": 87,
+    "new_cm_next_14_days_high": 161,
+    "new_cm_days_1_7": 87,
+    "new_cm_days_8_14": 37,
+    "snowiest_day": "2026-11-19",
+    "snowiest_day_cm": 47,
+    "days_with_5cm_or_more": 5,
+    "days_with_snow": 11,
+    "daily": [
+     {
+      "date": "2026-11-17",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 20
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 47
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 9
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 11
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 19
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 2426
+   },
+   {
+    "name": "Badger Pass",
+    "country": "United States",
+    "top_m": 2376,
+    "base_m": 2203,
+    "depth_cm_upper_slopes_today": 25,
+    "new_cm_last_24h": 14,
+    "new_cm_last_72h": 28,
+    "new_cm_forecast_next_days": 72,
+    "slug": "badger_pass_ski_area",
+    "new_cm_next_14_days": 119,
+    "new_cm_next_14_days_low": 83,
+    "new_cm_next_14_days_high": 155,
+    "new_cm_days_1_7": 93,
+    "new_cm_days_8_14": 26,
+    "snowiest_day": "2026-11-19",
+    "snowiest_day_cm": 54,
+    "days_with_5cm_or_more": 6,
+    "days_with_snow": 9,
+    "daily": [
+     {
+      "date": "2026-11-17",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 16
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 54
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 10
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 7
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 6
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 17
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 2303
+   },
+   {
+    "name": "China Peak",
+    "country": "United States",
+    "top_m": 2630,
+    "base_m": 2143,
+    "depth_cm_upper_slopes_today": 19,
+    "new_cm_last_24h": 5,
+    "new_cm_last_72h": 23,
+    "new_cm_forecast_next_days": 86,
+    "slug": "china_peak_mountain_resort",
+    "new_cm_next_14_days": 117,
+    "new_cm_next_14_days_low": 80,
+    "new_cm_next_14_days_high": 155,
+    "new_cm_days_1_7": 92,
+    "new_cm_days_8_14": 25,
+    "snowiest_day": "2026-11-19",
+    "snowiest_day_cm": 56,
+    "days_with_5cm_or_more": 6,
+    "days_with_snow": 9,
+    "daily": [
+     {
+      "date": "2026-11-17",
+      "cm": 10
+     },
+     {
+      "date": "2026-11-18",
+      "cm": 8
+     },
+     {
+      "date": "2026-11-19",
+      "cm": 56
+     },
+     {
+      "date": "2026-11-20",
+      "cm": 11
+     },
+     {
+      "date": "2026-11-21",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-22",
+      "cm": 7
+     },
+     {
+      "date": "2026-11-23",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-24",
+      "cm": 4
+     },
+     {
+      "date": "2026-11-25",
+      "cm": 18
+     },
+     {
+      "date": "2026-11-26",
+      "cm": 1
+     },
+     {
+      "date": "2026-11-27",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-28",
+      "cm": 2
+     },
+     {
+      "date": "2026-11-29",
+      "cm": 0
+     },
+     {
+      "date": "2026-11-30",
+      "cm": 0
+     }
+    ],
+    "upper_slopes_height_m": 2555
+   }
+  ],
+  "notes": [
+   "new snow = middle of the two models' daily snowfall, brought onto the terrain (1 km); low / high = the two models",
+   "resort values = the slopes at or above mid-mountain within a few km of the resort, not the village",
+   "days 1-14 = tomorrow to day 14; week 1 = days 1-7, week 2 = days 8-14",
+   "snow by height = all the mountain terrain of the region, not only resorts"
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Kingvale",
+     "slug": "kingvale",
+     "now_cm": 18,
+     "usual_cm": 4,
+     "high_cm": 42,
+     "week_ago_cm": 0,
+     "height_m": 2144,
+     "best_weeks": [
+      10,
+      11,
+      12
+     ],
+     "ratio_pct": 450
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Kingvale",
+   "next_cm": 69,
+   "second": "Mt. Shasta Ski Park",
+   "second_cm": 50,
+   "depth_cm": 25
+  },
+  "story": {
+   "id": "storm_next",
+   "place": "resort:kingvale",
+   "score": 73.0,
+   "resort": "Kingvale"
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-16-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-16-november-2026/map_t.webp",
+   "bytes": 38976,
+   "snow_frac": 0.5494,
+   "weak": false
+  },
+  {
+   "id": "week1",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-16-november-2026/week1.webp",
+   "thumb": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-16-november-2026/week1_t.webp",
+   "bytes": 36520,
+   "snow_frac": 0.4606,
+   "weak": false
+  },
+  {
+   "id": "week2",
+   "kind": "outlook_map",
+   "file": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-16-november-2026/week2.webp",
+   "thumb": "blog/media/2026/11/us-west-2-week-snow-forecast-maps-16-november-2026/week2_t.webp",
+   "bytes": 36078,
+   "snow_frac": 0.4986,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "US West snow outlook to 30 November: 54 in at Kingvale, 53 in at Mt. Shasta Ski Park",
+   "description": "The two-week picture in the US West, 17 November to 30 November, drawn from the two global models that reach two weeks, ECMWF and GFS. Middle of the …",
+   "lede": "The two-week picture in the US West, 17 November to 30 November, drawn from the two global models that reach two weeks, ECMWF and GFS. Middle of the two on the maps, low and high of the two in the text: that is the rule of this daily series. The most goes to Kingvale: about 54 in (136 cm) on its upper slopes, 33 in (84 cm)–74 in (188 cm) depending on the model, then Mt. Shasta Ski Park with 53 in (134 cm). Every number here is an estimate with some uncertainty; the trend over several days is usually more reliable than one value.",
+   "sections": [
+    {
+     "h": "Resort by resort, the next 14 days",
+     "p": [
+      "Kingvale (United States): about 54 in (136 cm) in 14 days (33 in (84 cm)–74 in (188 cm) between the models), 36 in (92 cm) in the first week and 17 in (44 cm) in the second. Mark 19 November: that is the biggest day, with 16 in (40 cm), out of 7 days at 5 cm or more.",
+      "Mt. Shasta Ski Park (United States): about 53 in (134 cm) in 14 days (32 in (82 cm)–73 in (186 cm) between the models), 28 in (70 cm) in the first week and 25 in (64 cm) in the second. Mark 18 November: that is the biggest day, with 15 in (37 cm), out of 6 days at 5 cm or more.",
+      "At Palisades Tahoe Olympic Valley (United States) the two weeks add up to about 50 in (128 cm) (35 in (88 cm)–66 in (168 cm) depending on the model): 33 in (83 cm) by the end of the first week, then 18 in (45 cm) more. Mark 19 November: that is the biggest day, with 15 in (37 cm), out of 7 days at 5 cm or more.",
+      "Bear Valley (United States): about 49 in (124 cm) in 14 days (34 in (87 cm)–63 in (161 cm) between the models), 34 in (87 cm) in the first week and 15 in (37 cm) in the second. Mark 19 November: that is the biggest day, with 19 in (47 cm), out of 5 days at 5 cm or more.",
+      "At Badger Pass (United States) the two weeks add up to about 47 in (119 cm) (33 in (83 cm)–61 in (155 cm) depending on the model): 37 in (93 cm) by the end of the first week, then 10 in (26 cm) more. The snowiest day is 19 November with 21 in (54 cm); 6 days bring 5 cm or more.",
+      "At China Peak (United States) the two weeks add up to about 46 in (117 cm) (31 in (80 cm)–61 in (155 cm) depending on the model): 36 in (92 cm) by the end of the first week, then 10 in (25 cm) more. The snowiest day is 19 November with 22 in (56 cm); 6 days bring 5 cm or more."
+     ]
+    },
+    {
+     "h": "The snow still to come",
+     "p": [
+      "Up to 27 in (69 cm) of new snow is forecast at Kingvale over the next days.",
+      "Forecasts move: the timing is usually more reliable than the totals, so check again two days before you go.",
+      "At about 7,034 ft (2,144 m), Kingvale has 6 in (16 cm) today; a normal 16 November has 2 in (4 cm) there.",
+      "Only one winter in ten has more than 17 in (42 cm) on this date.",
+      "A week ago the same spot had 0 in (0 cm).",
+      "In past winters the best snow at Kingvale usually came early March / mid-March."
+     ]
+    },
+    {
+     "h": "New snow by height",
+     "p": [
+      "A height ladder for the fortnight, each rung the typical value and the snowiest quarter of all the terrain at that level: between 3,281 ft (1,000 m) and 4,921 ft (1,500 m): typically 2 in (5 cm), the snowiest quarter of that band 6 in (15 cm) or more; between 4,921 ft (1,500 m) and 6,562 ft (2,000 m): typically 4 in (9 cm), the snowiest quarter of that band 8 in (21 cm) or more; between 6,562 ft (2,000 m) and 8,202 ft (2,500 m): typically 5 in (13 cm), the snowiest quarter of that band 9 in (23 cm) or more; between 8,202 ft (2,500 m) and 9,843 ft (3,000 m): typically 8 in (21 cm), the snowiest quarter of that band 12 in (31 cm) or more; between 9,843 ft (3,000 m) and 14,764 ft (4,500 m): typically 9 in (23 cm), the snowiest quarter of that band 14 in (35 cm) or more."
+     ]
+    },
+    {
+     "h": "The days to watch",
+     "p": [
+      "Snow days across the region, over the 193 resorts in our list: Wednesday 18 November (75 of 193 resorts at 5 cm or more, up to 15 in (37 cm) at Mt. Shasta Ski Park), Tuesday 24 November (69 of 193 resorts at 5 cm or more, up to 7 in (18 cm) at Kingvale), Wednesday 25 November (81 of 193 resorts at 5 cm or more, up to 14 in (35 cm) at Mt. Shasta Ski Park) and Thursday 26 November (76 of 193 resorts at 5 cm or more, up to 6 in (16 cm) at Jackson Hole)."
+     ]
+    },
+    {
+     "h": "First week against second week",
+     "p": [
+      "Timing: 53 % of everything the maps show for the region lands between 17 November and 23 November; the second week, 24 November to 30 November, holds the remainder.",
+      "Front-loaded: Kingvale, Mt. Shasta Ski Park, Palisades Tahoe Olympic Valley, Bear Valley, Badger Pass and China Peak get most of their snow in the first week.",
+      "On the map, about 224,108 sq mi (580,436 km²) of mountain terrain get 20 cm or more over the two weeks, and 36,807 sq mi (95,330 km²) get 50 cm or more."
+     ]
+    },
+    {
+     "h": "How to read the maps",
+     "p": [
+      "Three pictures, one scale: the fortnight's total first, then week one and week two on their own. Pale colours are small amounts, the dark end of the scale is a lot of snow, and grey terrain gets next to nothing. The pins name the resorts and their upper-slope value.",
+      "Honest reading: beyond day seven the atmosphere has many ways to go, and the two models often pick different ones. That is why the second-week map is the one to watch move from day to day, and why we give a low and a high with every total."
+     ]
+    }
+   ],
+   "advice": [
+    "A big second-week total with a wide range is a reason to keep watching, not yet a reason to book.",
+    "The 0 °C level is a forecast and can shift by several hundred metres, so look at the map again the day before you leave.",
+    "Before any off-piste or touring day, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and dates on the resort's website."
+   ],
+   "captions": {
+    "map": "New snow in the US West forecast for the 14 days from 17 November to 30 November (middle of the ECMWF and GFS models, brought onto the terrain), with the resorts of this outlook.",
+    "week1": "The first week only: new snow from 17 November to 23 November.",
+    "week2": "The second week only: new snow from 24 November to 30 November, where the two models disagree most."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "hydro",
+   "rewrite": 1
+  }
+ },
+ "words_en": 1135,
+ "indexable": true,
+ "main": {
+  "slug": "kingvale",
+  "name": "Kingvale",
+  "lat": 39.3128,
+  "lon": -120.4487
+ },
+ "places": [
+  {
+   "name": "Kingvale",
+   "lat": 39.3128,
+   "lon": -120.4487
+  },
+  {
+   "name": "Mt. Shasta Ski Park",
+   "lat": 41.3273,
+   "lon": -122.2008
+  },
+  {
+   "name": "Palisades Tahoe Olympic Valley",
+   "lat": 39.1934,
+   "lon": -120.2454
+  },
+  {
+   "name": "Bear Valley",
+   "lat": 38.4826,
+   "lon": -120.0503
+  },
+  {
+   "name": "Badger Pass",
+   "lat": 37.6592,
+   "lon": -119.6623
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "kingvale",
+   "name": "Kingvale"
+  },
+  {
+   "slug": "mt_shasta_ski_park",
+   "name": "Mt. Shasta Ski Park"
+  },
+  {
+   "slug": "palisades_tahoe_olympic_valley",
+   "name": "Palisades Tahoe Olympic Valley"
+  },
+  {
+   "slug": "bear_valley",
+   "name": "Bear Valley"
+  },
+  {
+   "slug": "badger_pass_ski_area",
+   "name": "Badger Pass"
+  },
+  {
+   "slug": "china_peak_mountain_resort",
+   "name": "China Peak"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "kingvale",
+    "name": "Kingvale",
+    "depth": 25,
+    "new72": 38,
+    "next": 69,
+    "top_m": null
+   },
+   {
+    "slug": "mt_shasta_ski_park",
+    "name": "Mt. Shasta Ski Park",
+    "depth": 50,
+    "new72": 38,
+    "next": 48,
+    "top_m": 2298
+   },
+   {
+    "slug": "palisades_tahoe_olympic_valley",
+    "name": "Palisades Tahoe Olympic Valley",
+    "depth": 40,
+    "new72": 32,
+    "next": 65,
+    "top_m": 2665
+   },
+   {
+    "slug": "bear_valley",
+    "name": "Bear Valley",
+    "depth": 56,
+    "new72": 35,
+    "next": 68,
+    "top_m": 2586
+   },
+   {
+    "slug": "badger_pass_ski_area",
+    "name": "Badger Pass",
+    "depth": 25,
+    "new72": 28,
+    "next": 72,
+    "top_m": 2376
+   },
+   {
+    "slug": "china_peak_mountain_resort",
+    "name": "China Peak",
+    "depth": 19,
+    "new72": 23,
+    "next": 86,
+    "top_m": 2630
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-21",
+ "map_link": "https://snowscope.app/#@39.313,-120.449,9.0",
+ "seconds": 0.0,
+ "facts_used": 80,
+ "voice": "hydro",
+ "media_ids": [
+  "map",
+  "week1",
+  "week2"
+ ],
+ "overlap": {
+  "before": 30.9,
+  "after": 27.8,
+  "with": "us-west-2-week-snow-forecast-maps-12-november-2026",
+  "tries": 1
+ },
+ "similarity": {
+  "max": 0.119,
+  "with": "us-west-2-week-snow-forecast-maps-12-november-2026"
+ },
+ "publish_utc": "2026-11-16T17:56:41Z",
+ "cover": {
+  "v": 1,
+  "style": "map",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-2-week-snow-forecast-maps-16-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-2-week-snow-forecast-maps-16-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ },
+ "rewrite": {
+  "v": 1,
+  "story": "storm_next",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 1135,
+  "overlap": 34.6,
+  "with": "us-northeast-2-week-snow-forecast-maps-12-november-2026",
+  "langs_off": [],
+  "score": 155.8,
+  "intent": "resort:kingvale|storm_next",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ }
+}

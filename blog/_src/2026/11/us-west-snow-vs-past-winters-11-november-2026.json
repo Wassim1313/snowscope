@@ -1,0 +1,667 @@
+{
+ "id": "2026-11-11-us_west-history",
+ "slug": "us-west-snow-vs-past-winters-11-november-2026",
+ "date": "2026-11-11",
+ "published_utc": "2026-11-11T18:44:22Z",
+ "updated_utc": "2026-11-11T18:44:22Z",
+ "region": "US_WEST",
+ "angle": "history",
+ "score": 49,
+ "signature": "wolf_creek_ski_area:6|telluride_ski_area:4|silverton_mountain:8",
+ "keyword": {
+  "family": "vs-normal",
+  "entity": "us_west",
+  "region": "US_WEST",
+  "date": "2026-11-11"
+ },
+ "tags": [
+  "past-winters",
+  "snow-depth"
+ ],
+ "facts": {
+  "angle": "snow_vs_past_winters",
+  "region": "US West",
+  "date": "2026-11-11",
+  "weekday": "Wednesday",
+  "model_run": "2026-11-11",
+  "forecast_days": [
+   "2026-11-12",
+   "2026-11-13",
+   "2026-11-14"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 134530,
+   "resorts_with_snow": 123,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-09",
+   "snow_covered_area_km2": 157120,
+   "resorts_with_snow": 130
+  },
+  "region_forecast": {
+   "date": "2026-11-14",
+   "snow_covered_area_km2": 213380,
+   "resorts_with_snow": 139
+  },
+  "question": "Is there more or less snow than usual for the date, compared with the past 46 winters?",
+  "past_winters_period": "1980-81 to 2025-26",
+  "resorts": [
+   {
+    "name": "Wolf Creek",
+    "country": "United States",
+    "top_m": 3585,
+    "base_m": 3128,
+    "depth_cm_upper_slopes_today": 87,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 8,
+    "slug": "wolf_creek_ski_area",
+    "new_cm_by_day": {
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 8
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3128,
+      "depth_cm_model": 8,
+      "new_cm_next_7_days": 12
+     },
+     "mid": {
+      "elev_m": 3356,
+      "depth_cm_model": 37,
+      "new_cm_next_7_days": 13
+     },
+     "top": {
+      "elev_m": 3585,
+      "depth_cm_model": 47,
+      "new_cm_next_7_days": 13
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3360,
+      "max": 4040
+     },
+     "2026-11-12": {
+      "min": 2920,
+      "max": 3940
+     },
+     "2026-11-13": {
+      "min": 2670,
+      "max": 3580
+     },
+     "2026-11-14": {
+      "min": 2700,
+      "max": 3210
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 3356,
+     "snow_cm_at_this_height_today_model": 66,
+     "deeper_than_n_of_past_winters": 32,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 20
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-03"
+    }
+   },
+   {
+    "name": "Telluride",
+    "country": "United States",
+    "top_m": 3812,
+    "base_m": 2662,
+    "depth_cm_upper_slopes_today": 86,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 9,
+    "slug": "telluride_ski_area",
+    "new_cm_by_day": {
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 9
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2662,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 6
+     },
+     "mid": {
+      "elev_m": 3237,
+      "depth_cm_model": 6,
+      "new_cm_next_7_days": 15
+     },
+     "top": {
+      "elev_m": 3812,
+      "depth_cm_model": 96,
+      "new_cm_next_7_days": 19
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3500,
+      "max": 4110
+     },
+     "2026-11-12": {
+      "min": 3370,
+      "max": 3960
+     },
+     "2026-11-13": {
+      "min": 2760,
+      "max": 3720
+     },
+     "2026-11-14": {
+      "min": 2790,
+      "max": 3330
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 3237,
+     "snow_cm_at_this_height_today_model": 20,
+     "deeper_than_n_of_past_winters": 21,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 24
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-09"
+    },
+    "nearest_station": {
+     "station": "Idarado",
+     "elev_m": 2981,
+     "depth_cm_measured": 5,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-10",
+     "km_away": 14.0
+    }
+   },
+   {
+    "name": "Silverton Mountain",
+    "country": "United States",
+    "top_m": 3345,
+    "base_m": 3143,
+    "depth_cm_upper_slopes_today": 58,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 7,
+    "slug": "silverton_mountain",
+    "new_cm_by_day": {
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 7
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3143,
+      "depth_cm_model": 18,
+      "new_cm_next_7_days": 13
+     },
+     "mid": {
+      "elev_m": 3244,
+      "depth_cm_model": 33,
+      "new_cm_next_7_days": 13
+     },
+     "top": {
+      "elev_m": 3345,
+      "depth_cm_model": 49,
+      "new_cm_next_7_days": 14
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3160,
+      "max": 4100
+     },
+     "2026-11-12": {
+      "min": 3000,
+      "max": 3940
+     },
+     "2026-11-13": {
+      "min": 2760,
+      "max": 3720
+     },
+     "2026-11-14": {
+      "min": 2790,
+      "max": 3330
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 3244,
+     "snow_cm_at_this_height_today_model": 79,
+     "deeper_than_n_of_past_winters": 42,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 17
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-09"
+    },
+    "nearest_station": {
+     "station": "Idarado",
+     "elev_m": 2981,
+     "depth_cm_measured": 5,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-10",
+     "km_away": 6.5
+    }
+   },
+   {
+    "name": "Purgatory Resort",
+    "country": "United States",
+    "top_m": 3291,
+    "base_m": 2696,
+    "depth_cm_upper_slopes_today": 57,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 12,
+    "slug": "purgatory_resort",
+    "new_cm_by_day": {
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 12
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2696,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 10
+     },
+     "mid": {
+      "elev_m": 2993,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 14
+     },
+     "top": {
+      "elev_m": 3291,
+      "depth_cm_model": 7,
+      "new_cm_next_7_days": 16
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3370,
+      "max": 4110
+     },
+     "2026-11-12": {
+      "min": 3230,
+      "max": 3940
+     },
+     "2026-11-13": {
+      "min": 2690,
+      "max": 3600
+     },
+     "2026-11-14": {
+      "min": 2730,
+      "max": 3280
+     }
+    },
+    "avalanche_danger_level_today_1_to_5": 1,
+    "avalanche_bulletin": "Colorado Avalanche Information Center",
+    "past_winters": {
+     "height_m": 2993,
+     "snow_cm_at_this_height_today_model": 10,
+     "deeper_than_n_of_past_winters": 19,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 14
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-09"
+    }
+   },
+   {
+    "name": "Lost Trail",
+    "country": "United States",
+    "top_m": 2495,
+    "base_m": 1960,
+    "depth_cm_upper_slopes_today": 49,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 1,
+    "slug": "lost_trail",
+    "new_cm_by_day": {
+     "2026-11-09": 0,
+     "2026-11-10": 0,
+     "2026-11-11": 0,
+     "2026-11-12": 0,
+     "2026-11-13": 0,
+     "2026-11-14": 1
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1960,
+      "depth_cm_model": 0,
+      "new_cm_next_7_days": 4
+     },
+     "mid": {
+      "elev_m": 2227,
+      "depth_cm_model": 5,
+      "new_cm_next_7_days": 5
+     },
+     "top": {
+      "elev_m": 2495,
+      "depth_cm_model": 10,
+      "new_cm_next_7_days": 5
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-11": {
+      "min": 3740,
+      "max": 4000
+     },
+     "2026-11-12": {
+      "min": 3670,
+      "max": 4000
+     },
+     "2026-11-13": {
+      "min": 1970,
+      "max": 3620
+     },
+     "2026-11-14": {
+      "min": 2640,
+      "max": 2980
+     }
+    },
+    "past_winters": {
+     "height_m": 2227,
+     "snow_cm_at_this_height_today_model": 16,
+     "deeper_than_n_of_past_winters": 24,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 15
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-08"
+    }
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Wolf Creek",
+     "slug": "wolf_creek_ski_area",
+     "now_cm": 66,
+     "usual_cm": 20,
+     "high_cm": 102,
+     "week_ago_cm": null,
+     "height_m": 3356,
+     "best_weeks": [
+      53,
+      12,
+      11
+     ],
+     "ratio_pct": 330,
+     "deeper_than": 32,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Wolf Creek",
+   "top_cm": 47,
+   "top_m": 3585,
+   "base_cm": 8,
+   "base_m": 3128,
+   "rain_day": "2026-11-11",
+   "freezing_m": 4040,
+   "lift_top_m": 3585,
+   "next_cm": 8,
+   "second": "Telluride",
+   "second_cm": 86,
+   "depth_cm": 87
+  },
+  "story": {
+   "id": "height_gap",
+   "place": "resort:wolf_creek_ski_area",
+   "score": 34,
+   "resort": "Wolf Creek"
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-snow-vs-past-winters-11-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-snow-vs-past-winters-11-november-2026/map_t.webp",
+   "bytes": 22140,
+   "snow_frac": 0.0537,
+   "weak": true
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Wolf Creek base: why 8 inches when the top has 47 cm?",
+   "description": "Wolf Creek's base sits at only 3 in (8 cm) while its summit holds 19 in (47 cm) on 11 November, a 15 in (39 cm) gap shaped by freezing level.",
+   "lede": "Wolf Creek's base holds only 3 in (8 cm) of snow while its summit reaches 19 in (47 cm). This 15 in (39 cm) gap between top and bottom reveals how freezing level divides the resort into wet and dry zones in early November.",
+   "sections": [
+    {
+     "h": "Height and freezing level create the gap",
+     "p": [
+      "The gap appears because Wolf Creek straddles the freezing-level zone this week. The base sits at 10,260 ft (3,128 m) where the air is still warm enough to bring rain, with the freezing level around 11,000 ft (3,360 m). The summit at 11,760 ft (3,585 m) sits solidly above that threshold. When a resort spans from rain zone to snow zone, the lower half loses accumulation while the upper half keeps it.",
+      "Mid-elevation, at 11,000 ft (3,356 m), currently holds 15 in (37 cm)—deeper than 32 of the past 46 winters at this date. That shows the upper mountain is working well. But the base, at only 3 in (8 cm), is where the system breaks down. Rocks lie close beneath such thin cover."
+     ]
+    },
+    {
+     "h": "What satellite and stations tell us",
+     "p": [
+      "Our model estimates the depth gap at Wolf Creek. Satellite imagery from 3 November confirmed snow cover across the area. A weather station at Idarado, 8.7 mi (14 km) away at 9,780 ft (2,981 m), measured 2 in (5 cm) on 10 November, suggesting precipitation came as rain at lower elevations rather than snow. The model fits this pattern.",
+      "We cannot say the base depth is exact (early snow is fragile; rocks lie close beneath thin cover), but the model is consistent with station data. Forecasts are more certain at higher elevations, where snow is deeper and more stable."
+     ]
+    },
+    {
+     "h": "What is coming: freezing level drops",
+     "p": [
+      "By Friday 13 November, the freezing level will have dropped well below the base elevation. It falls from about 11,000 ft (3,360 m) on Wednesday to around 8,760 ft (2,670 m) by Friday. When the freezing level sinks below 10,260 ft (3,128 m), rain becomes snow.",
+      "The forecast calls for 3 in (8 cm) of new snow by Saturday 14 November. Even so, the base will gain only about 1 in (3 cm), while mid-elevations will gain up to 5 in (13 cm). The gap will narrow, but slowly. More storms and sustained cold are needed to close it fully."
+     ]
+    },
+    {
+     "h": "Early-season reality on a steep mountain",
+     "p": [
+      "A 15 in (39 cm) gap from base to top is not unusual for mountains in autumn when freezing level splits them into wet and dry halves. The real issue is the absolute depth at the base: 3 in (8 cm) means exposed rock is a real hazard. At mid-elevation, 15 in is skiable but thin. On the upper slopes, coverage averages 34 in (87 cm), which is better for turns.",
+      "For now, the mid and upper slopes are the smart play. The base is risky until snow arrives and builds depth. By next week, if storms continue and freezing level stays down, the base may become safer. Until then, stay at elevation."
+     ]
+    }
+   ],
+   "advice": [
+    "Avoid the base runs until 15 November. Rocks are exposed in 3 in of cover.",
+    "Stick to elevations above 10,800 ft (3,300 m), where snow depth reaches 15 in and is more stable.",
+    "Watch the forecast for 13–14 November. If freezing level drops as modelled, the base will improve quickly.",
+    "Check the Colorado Avalanche Information Center bulletin before skiing off-piste; danger is currently level 1 (low)."
+   ],
+   "captions": {
+    "map": "Snow depth across the US West on 11 November shows Wolf Creek in the central Rockies; the sharp divide between snow-covered upper terrain and thin base reveals how freezing level controls early-season accumulation."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "voice": "sat"
+  }
+ },
+ "words_en": 573,
+ "indexable": true,
+ "main": {
+  "slug": "wolf_creek_ski_area",
+  "name": "Wolf Creek",
+  "lat": 37.4632,
+  "lon": -106.7905
+ },
+ "places": [
+  {
+   "name": "Wolf Creek",
+   "lat": 37.4632,
+   "lon": -106.7905
+  },
+  {
+   "name": "Telluride",
+   "lat": 37.9197,
+   "lon": -107.8348
+  },
+  {
+   "name": "Silverton Mountain",
+   "lat": 37.8773,
+   "lon": -107.6562
+  },
+  {
+   "name": "Purgatory Resort",
+   "lat": 37.6261,
+   "lon": -107.8265
+  },
+  {
+   "name": "Lost Trail",
+   "lat": 45.6962,
+   "lon": -113.9558
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "wolf_creek_ski_area",
+   "name": "Wolf Creek"
+  },
+  {
+   "slug": "telluride_ski_area",
+   "name": "Telluride"
+  },
+  {
+   "slug": "silverton_mountain",
+   "name": "Silverton Mountain"
+  },
+  {
+   "slug": "purgatory_resort",
+   "name": "Purgatory Resort"
+  },
+  {
+   "slug": "lost_trail",
+   "name": "Lost Trail"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "wolf_creek_ski_area",
+    "name": "Wolf Creek",
+    "depth": 87,
+    "new72": 0,
+    "next": 8,
+    "top_m": 3585
+   },
+   {
+    "slug": "telluride_ski_area",
+    "name": "Telluride",
+    "depth": 86,
+    "new72": 0,
+    "next": 9,
+    "top_m": 3812
+   },
+   {
+    "slug": "silverton_mountain",
+    "name": "Silverton Mountain",
+    "depth": 58,
+    "new72": 0,
+    "next": 7,
+    "top_m": 3345
+   },
+   {
+    "slug": "purgatory_resort",
+    "name": "Purgatory Resort",
+    "depth": 57,
+    "new72": 0,
+    "next": 12,
+    "top_m": 3291
+   },
+   {
+    "slug": "lost_trail",
+    "name": "Lost Trail",
+    "depth": 49,
+    "new72": 0,
+    "next": 1,
+    "top_m": 2495
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "Colorado Avalanche Information Center",
+   "url": "https://avalanche.state.co.us/"
+  }
+ ],
+ "trip_day": "2026-11-14",
+ "map_link": "https://snowscope.app/#@37.463,-106.790,9.0",
+ "seconds": 0.0,
+ "facts_used": 35,
+ "voice": "sat",
+ "media_ids": [
+  "map"
+ ],
+ "overlap": {
+  "before": 13.3,
+  "after": 13.3,
+  "with": "us-west-mt-shasta-ski-park-snow-forecast-11-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.118,
+  "with": "us-west-where-to-ski-this-weekend-11-november-2026"
+ },
+ "publish_utc": "2026-11-11T18:44:22Z",
+ "rewrite": {
+  "v": 1,
+  "story": "height_gap",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 573,
+  "overlap": 4.3,
+  "with": "us-west-snow-depth-today-7-november-2026",
+  "langs_off": [],
+  "score": 82.5,
+  "intent": "resort:wolf_creek_ski_area|height_gap",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ },
+ "cover": {
+  "v": 1,
+  "style": "map",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-snow-vs-past-winters-11-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-snow-vs-past-winters-11-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}

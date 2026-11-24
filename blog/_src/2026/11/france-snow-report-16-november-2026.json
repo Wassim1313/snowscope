@@ -1,0 +1,666 @@
+{
+ "id": "2026-11-16-europe-country_fr",
+ "slug": "france-snow-report-16-november-2026",
+ "date": "2026-11-16",
+ "published_utc": "2026-11-16T20:42:46Z",
+ "updated_utc": "2026-11-16T20:42:46Z",
+ "region": "EUROPE",
+ "angle": "country_fr",
+ "score": 74.2,
+ "signature": "FR:9450:29:105",
+ "keyword": {
+  "family": "country-report",
+  "entity": "europe",
+  "region": "EUROPE",
+  "date": "2026-11-16"
+ },
+ "tags": [],
+ "facts": {
+  "angle": "country_fr",
+  "date": "2026-11-16",
+  "country": "France",
+  "country_code": "FR",
+  "region": "Europe by country",
+  "quiet": false,
+  "modelled_km2": 89400,
+  "snow_km2_today": 9450,
+  "snow_km2_yesterday": 10020,
+  "snow_km2_7_days_ago": 8000,
+  "new_cm_24h_max": 12,
+  "new_cm_72h_max": 29,
+  "area_km2_5cm_new_72h": 8980,
+  "next_3_days_max_cm": 65,
+  "next_7_days_max_cm": 105,
+  "snowiest_day": "2026-11-20",
+  "snowiest_day_cm": 33,
+  "first_snow_day": "2026-11-17",
+  "hotspots": [
+   {
+    "name": "the Mont Blanc massif",
+    "new_cm_72h": 65,
+    "lat": 45.834,
+    "lon": 6.861
+   },
+   {
+    "name": "the southern French Alps",
+    "new_cm_72h": 58,
+    "lat": 44.974,
+    "lon": 6.084
+   },
+   {
+    "name": "the northern French Alps",
+    "new_cm_72h": 45,
+    "lat": 45.361,
+    "lon": 6.162
+   }
+  ],
+  "bands": [
+   {
+    "from_m": 500,
+    "to_m": 1000,
+    "mean_depth_cm": 0,
+    "snow_cover_pct": 0
+   },
+   {
+    "from_m": 1000,
+    "to_m": 1500,
+    "mean_depth_cm": 0,
+    "snow_cover_pct": 1
+   },
+   {
+    "from_m": 1500,
+    "to_m": 2000,
+    "mean_depth_cm": 1,
+    "snow_cover_pct": 33
+   },
+   {
+    "from_m": 2000,
+    "to_m": 2500,
+    "mean_depth_cm": 6,
+    "snow_cover_pct": 72
+   },
+   {
+    "from_m": 2500,
+    "to_m": 5000,
+    "mean_depth_cm": 25,
+    "snow_cover_pct": 94
+   }
+  ],
+  "snow_line_m": 1900,
+  "change_vs_yesterday_km2": -570,
+  "white_share_pct": 11,
+  "change_vs_7_days_km2": 1450,
+  "resorts": [
+   {
+    "name": "Les Arcs",
+    "slug": "les_arcs",
+    "depth_cm": 94,
+    "new_cm_72h": 29,
+    "next_3_days_cm": 87,
+    "top_m": 3205
+   },
+   {
+    "name": "La Plagne",
+    "slug": "la_plagne",
+    "depth_cm": 84,
+    "new_cm_72h": 26,
+    "next_3_days_cm": 79,
+    "top_m": 3058
+   },
+   {
+    "name": "Les Grands Montets",
+    "slug": "chamonix",
+    "depth_cm": 81,
+    "new_cm_72h": 29,
+    "next_3_days_cm": 89,
+    "top_m": 2768
+   },
+   {
+    "name": "La Grave",
+    "slug": "la_grave",
+    "depth_cm": 74,
+    "new_cm_72h": 41,
+    "next_3_days_cm": 90,
+    "top_m": 3543
+   },
+   {
+    "name": "La Rosière",
+    "slug": "la_rosiere",
+    "depth_cm": 73,
+    "new_cm_72h": 25,
+    "next_3_days_cm": 86,
+    "top_m": 2799
+   }
+  ],
+  "n_resorts": 224,
+  "n_resorts_with_snow": 103,
+  "resort_next_until": "2026-11-19",
+  "outlook": null,
+  "week2": {
+   "week1_max_cm": 75,
+   "week2_max_cm": 44,
+   "week2_days": [
+    "2026-11-24",
+    "2026-11-30"
+   ],
+   "from_day": 8,
+   "to_day": 14
+  },
+  "trend": [
+   {
+    "date": "2026-11-16",
+    "snow_km2": 9450,
+    "new72": 29,
+    "leader": "Les Arcs",
+    "leader_cm": 94
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Les Arcs",
+     "slug": "les_arcs",
+     "now_cm": 20,
+     "usual_cm": 27,
+     "high_cm": 56,
+     "week_ago_cm": 6,
+     "height_m": 2214,
+     "best_weeks": [
+      10,
+      14,
+      11
+     ],
+     "ratio_pct": 74
+    },
+    {
+     "name": "La Plagne",
+     "slug": "la_plagne",
+     "now_cm": 16,
+     "usual_cm": 32,
+     "high_cm": 60,
+     "week_ago_cm": 4,
+     "height_m": 2138,
+     "best_weeks": [
+      10,
+      14,
+      9
+     ],
+     "ratio_pct": 50
+    },
+    {
+     "name": "Les Grands Montets",
+     "slug": "chamonix",
+     "now_cm": 22,
+     "usual_cm": 21,
+     "high_cm": 50,
+     "week_ago_cm": 9,
+     "height_m": 2001,
+     "best_weeks": [
+      10,
+      9,
+      8
+     ],
+     "ratio_pct": 105
+    },
+    {
+     "name": "La Grave",
+     "slug": "la_grave",
+     "now_cm": 53,
+     "usual_cm": 72,
+     "high_cm": 158,
+     "week_ago_cm": 27,
+     "height_m": 3370,
+     "best_weeks": [
+      16,
+      15,
+      17
+     ],
+     "ratio_pct": 74
+    },
+    {
+     "name": "La Rosière",
+     "slug": "la_rosiere",
+     "now_cm": 17,
+     "usual_cm": 22,
+     "high_cm": 51,
+     "week_ago_cm": 3,
+     "height_m": 1996,
+     "best_weeks": [
+      10,
+      11,
+      8
+     ],
+     "ratio_pct": 77
+    }
+   ],
+   "n": 5,
+   "above": 1,
+   "median_pct": 74
+  },
+  "neighbours": [
+   {
+    "cc": "CH",
+    "name": "Switzerland",
+    "white_share_pct": 53,
+    "leader": "Ovronnaz",
+    "leader_cm": 136,
+    "next_7_days_max_cm": 112
+   },
+   {
+    "cc": "IT",
+    "name": "Italy",
+    "white_share_pct": 23,
+    "leader": "Monterosa Ski",
+    "leader_cm": 99,
+    "next_7_days_max_cm": 75
+   }
+  ],
+  "glacier": false,
+  "story": {
+   "id": "neighbour",
+   "place": "cc:FR",
+   "score": 59,
+   "cc": "CH"
+  }
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/france-snow-report-16-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/france-snow-report-16-november-2026/map_t.webp",
+   "bytes": 19466,
+   "snow_frac": 0.1959,
+   "weak": false
+  },
+  {
+   "id": "new",
+   "kind": "new_map",
+   "file": "blog/media/2026/11/france-snow-report-16-november-2026/new.webp",
+   "thumb": "blog/media/2026/11/france-snow-report-16-november-2026/new_t.webp",
+   "bytes": 18546,
+   "snow_frac": 0.044,
+   "weak": true
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "France or Switzerland? Where the snow is better on 16 November",
+   "description": "France or Switzerland? Where the snow is better on 16 November. Snow cover, new snow, resorts and the days ahead in France on 16 November.",
+   "lede": "11 % of the mapped high ground is white in France, against 53 % in Switzerland. The deepest resort in France has 20 cm; in Switzerland it is Ovronnaz with 136 cm.",
+   "sections": [
+    {
+     "h": "Across the border",
+     "p": [
+      "For a trip near the border this decides the direction: the snow is not where the map of borders would suggest, it is where the last storm went.",
+      "9,450 km² of snow-covered ground in France this Monday, 570 km² lost since yesterday. That is 11 % of the high ground we map in France."
+     ]
+    },
+    {
+     "h": "The neighbours today",
+     "p": [
+      "For comparison, the neighbours on the same day: Switzerland: 53 % white, deepest Ovronnaz with 136 cm, up to 112 cm in the week ahead; Italy: 23 % white, deepest Monterosa Ski with 99 cm, up to 75 cm in the week ahead."
+     ]
+    },
+    {
+     "h": "Best resorts right now",
+     "p": [
+      "Les Arcs leads with 94 cm on its upper slopes.",
+      "Next on the list: La Plagne (84 cm), Les Grands Montets (81 cm), La Grave (74 cm) and La Rosière (73 cm).",
+      "Les Arcs picked up 29 cm in the last three days and could add 87 cm by Thursday 19 November.",
+      "At La Plagne: 26 cm of fresh snow over three days, 79 cm more expected by Thursday 19 November.",
+      "103 of the 224 resorts we follow in France have snow on their upper slopes.",
+      "The rest of the shortlist: Les Grands Montets: 81 cm on top, 29 cm in three days, 89 cm expected; La Grave: 74 cm on top, 41 cm in three days, 90 cm expected; La Rosière: 73 cm on top, 25 cm in three days, 86 cm expected."
+     ]
+    },
+    {
+     "h": "The next days",
+     "p": [
+      "Expect up to 65 cm on the snowiest slopes by the third day; the seven-day total reaches 105 cm.",
+      "The snowiest day looks like Friday 20 November, with up to 33 cm in the snowiest spots.",
+      "Further out, days 8 to 14 show up to 44 cm on the snowiest slopes."
+     ]
+    },
+    {
+     "h": "Snow depth by height",
+     "p": [
+      "Average depth of the snowpack by height band: 1,000-1,500 m: on average under 1 cm (1 % of the ground white); 1,500-2,000 m: on average 1 cm (33 % of the ground white); 2,000-2,500 m: on average 6 cm (72 % of the ground white); above 2,500 m: on average 25 cm (94 % white)."
+     ]
+    },
+    {
+     "h": "Snow cover today",
+     "p": [
+      "Think 1,900 m and higher for a white landscape. Last week's 8,000 km² has grown by 1,450 km²."
+     ]
+    },
+    {
+     "h": "New snow in the last three days",
+     "p": [
+      "The Mont Blanc massif, the southern French Alps and the northern French Alps got the most fresh snow over three days, up to 29 cm.",
+      "In the past day, up to 12 cm was added.",
+      "About 8,980 km² received at least 5 cm."
+     ]
+    },
+    {
+     "h": "How this start compares",
+     "p": [
+      "Resort by resort, today against a normal 16 November: Les Arcs: 20 cm at about 2,214 m, against 27 cm in a normal year; La Plagne: 16 cm at about 2,138 m, against 32 cm in a normal year; Les Grands Montets: 22 cm at about 2,001 m, against 21 cm in a normal year; La Grave: 53 cm at about 3,370 m, against 72 cm in a normal year.",
+      "1 of these 4 resorts are above their usual depth for the date.",
+      "These depths are for one height on each mountain, below the top, so they read lower than the upper-slope numbers further down.",
+      "In past winters the best snow at Les Arcs usually came early March / mid-March."
+     ]
+    },
+    {
+     "h": "Planning a day on the snow",
+     "p": [
+      "Above 2,500 m the ground is almost fully white (94 % covered), so runs up there have a continuous base.",
+      "Between 1,500 m and 2,500 m the cover is patchy, about 33 % white: expect grass and stones between the snow.",
+      "Below 1,500 m the slopes are still almost bare.",
+      "If you can choose the day, go after Friday 20 November: the fresh snow then has time to settle and the roads to be cleared."
+     ]
+    },
+    {
+     "h": "What it means on the slopes",
+     "p": [
+      "The new snow freshens the upper slopes; lower down it may already be heavy or wet.",
+      "With more snow in the forecast, the next days should improve things further."
+     ]
+    }
+   ],
+   "advice": [
+    "Read the local avalanche bulletin before going off-piste.",
+    "Fresh snow on a cold base sticks badly: take care on steep slopes.",
+    "Early-season snow is thin over rocks: ski the groomed runs first."
+   ],
+   "captions": {
+    "map": "Snow depth in France on 16 November",
+    "new": "Snow depth in France on 16 November"
+   }
+  },
+  "fr": {
+   "title": "France ou Suisse ? Où la neige est meilleure le 16 novembre",
+   "description": "France ou Suisse ? Où la neige est meilleure le 16 novembre. Couverture, neige fraîche, stations et jours à venir en France le 16 novembre.",
+   "lede": "11 % du relief cartographié est blanc en France, contre 53 % en Suisse. La station la plus enneigée en France a 20 cm ; en Suisse, c'est Ovronnaz avec 136 cm.",
+   "sections": [
+    {
+     "h": "De l'autre côté de la frontière",
+     "p": [
+      "Pour un séjour près de la frontière, cela décide de la direction : la neige n'est pas où l'on croit, elle est là où la dernière perturbation est passée.",
+      "9 450 km² de terrain enneigé en France ce lundi, 570 km² perdus depuis hier. Cela représente 11 % du relief cartographié en France."
+     ]
+    },
+    {
+     "h": "Les voisins aujourd'hui",
+     "p": [
+      "Pour comparer, les voisins le même jour : Suisse : 53 % de blanc, Ovronnaz en tête avec 136 cm, jusqu'à 112 cm dans la semaine; Italie : 23 % de blanc, Monterosa Ski en tête avec 99 cm, jusqu'à 75 cm dans la semaine."
+     ]
+    },
+    {
+     "h": "Les meilleures stations du moment",
+     "p": [
+      "Les Arcs est en tête avec 94 cm sur le haut du domaine.",
+      "Ensuite : La Plagne (84 cm), Les Grands Montets (81 cm), La Grave (74 cm) et La Rosière (73 cm).",
+      "Les Arcs a reçu 29 cm en trois jours et pourrait gagner 87 cm d'ici jeudi 19 novembre.",
+      "À La Plagne : 26 cm de neige fraîche en trois jours, 79 cm de plus attendus d'ici jeudi 19 novembre.",
+      "103 des 224 stations suivies en France ont de la neige sur le haut du domaine.",
+      "Le reste de la sélection : Les Grands Montets : 81 cm en haut, 29 cm en trois jours, 89 cm attendus; La Grave : 74 cm en haut, 41 cm en trois jours, 90 cm attendus; La Rosière : 73 cm en haut, 25 cm en trois jours, 86 cm attendus."
+     ]
+    },
+    {
+     "h": "Les prochains jours",
+     "p": [
+      "Comptez jusqu'à 65 cm sur les pentes les plus arrosées d'ici le troisième jour ; le cumul sur sept jours atteint 105 cm.",
+      "Le jour le plus neigeux devrait être le vendredi 20 novembre, avec jusqu'à 33 cm aux endroits les plus arrosés.",
+      "Plus loin, les jours 8 à 14 montrent jusqu'à 44 cm sur les pentes les plus enneigées."
+     ]
+    },
+    {
+     "h": "Hauteur de neige selon l'altitude",
+     "p": [
+      "Épaisseur moyenne du manteau par tranche d'altitude : 1 000-1 500 m : en moyenne moins de 1 cm (1 % du sol blanc); 1 500-2 000 m : en moyenne 1 cm (33 % du sol blanc); 2 000-2 500 m : en moyenne 6 cm (72 % du sol blanc); au-dessus de 2 500 m : en moyenne 25 cm (94 % blanc)."
+     ]
+    },
+    {
+     "h": "La couverture neigeuse du jour",
+     "p": [
+      "Pour un paysage blanc, visez 1 900 m et plus haut. Les 8 000 km² de la semaine dernière ont augmenté de 1 450 km²."
+     ]
+    },
+    {
+     "h": "Neige fraîche sur trois jours",
+     "p": [
+      "Le massif du Mont-Blanc, les Alpes du Sud et les Alpes du Nord ont reçu le plus de neige fraîche en trois jours, jusqu'à 29 cm.",
+      "En une journée, jusqu'à 12 cm se sont ajoutés.",
+      "Environ 8 980 km² ont reçu au moins 5 cm."
+     ]
+    },
+    {
+     "h": "Comment ce début se situe",
+     "p": [
+      "Station par station, aujourd'hui face à un 16 novembre normal : Les Arcs : 20 cm vers 2 214 m, contre 27 cm une année normale; La Plagne : 16 cm vers 2 138 m, contre 32 cm une année normale; Les Grands Montets : 22 cm vers 2 001 m, contre 21 cm une année normale; La Grave : 53 cm vers 3 370 m, contre 72 cm une année normale.",
+      "1 de ces 4 stations sont au-dessus de leur hauteur habituelle à cette date.",
+      "Ces hauteurs valent pour une altitude donnée de chaque montagne, sous le sommet : elles sont donc plus basses que les chiffres du haut des pistes plus loin.",
+      "Les hivers passés, la meilleure neige à Les Arcs arrivait d'habitude début mars / mi-mars."
+     ]
+    },
+    {
+     "h": "Préparer une journée sur la neige",
+     "p": [
+      "Au-dessus de 2 500 m, le sol est presque entièrement blanc (94 % couvert) : les pistes y ont une sous-couche continue.",
+      "Entre 1 500 m et 2 500 m, la couverture est irrégulière, environ 33 % de blanc : herbe et cailloux entre les plaques.",
+      "Sous 1 500 m, les pentes sont encore presque nues.",
+      "Si vous pouvez choisir le jour, partez après le vendredi 20 novembre : la neige fraîche aura le temps de se tasser et les routes d'être dégagées."
+     ]
+    },
+    {
+     "h": "Ce que cela donne sur les pistes",
+     "p": [
+      "La neige fraîche rafraîchit le haut des pistes ; plus bas, elle peut déjà être lourde ou mouillée.",
+      "Avec de la neige annoncée, les prochains jours devraient encore améliorer la situation."
+     ]
+    }
+   ],
+   "advice": [
+    "Lisez le bulletin d'avalanche local avant le hors-piste.",
+    "Neige fraîche sur base froide : prudence dans les pentes raides.",
+    "La neige de début de saison est fine sur les cailloux : privilégiez les pistes damées."
+   ],
+   "captions": {
+    "map": "Hauteur de neige en France le 16 novembre",
+    "new": "Hauteur de neige en France le 16 novembre"
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": "requality"
+  },
+  "fr": {
+   "writer": "template",
+   "voice": "field",
+   "rewrite": "requality"
+  }
+ },
+ "words_en": 704,
+ "indexable": true,
+ "main": {
+  "slug": "les_arcs",
+  "name": "Les Arcs",
+  "lat": 45.5707,
+  "lon": 6.8069
+ },
+ "places": [
+  {
+   "name": "Les Arcs",
+   "lat": 45.5707,
+   "lon": 6.8069
+  },
+  {
+   "name": "La Plagne",
+   "lat": 45.5088,
+   "lon": 6.6956
+  },
+  {
+   "name": "Les Grands Montets",
+   "lat": 45.9617,
+   "lon": 6.944
+  },
+  {
+   "name": "La Grave",
+   "lat": 45.0195,
+   "lon": 6.2771
+  },
+  {
+   "name": "La Rosière",
+   "lat": 45.6407,
+   "lon": 6.864
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "les_arcs",
+   "name": "Les Arcs"
+  },
+  {
+   "slug": "la_plagne",
+   "name": "La Plagne"
+  },
+  {
+   "slug": "chamonix",
+   "name": "Les Grands Montets"
+  },
+  {
+   "slug": "la_grave",
+   "name": "La Grave"
+  },
+  {
+   "slug": "la_rosiere",
+   "name": "La Rosière"
+  }
+ ],
+ "table": {
+  "kind": "story",
+  "head": {
+   "en": [
+    "Country",
+    "White",
+    "Deepest resort",
+    "Next 7 days"
+   ],
+   "fr": [
+    "Pays",
+    "Blanc",
+    "Station la plus enneigée",
+    "7 prochains jours"
+   ],
+   "de": [
+    "Land",
+    "Weiß",
+    "Schneereichstes Skigebiet",
+    "Nächste 7 Tage"
+   ]
+  },
+  "rows": [
+   [
+    {
+     "cc": "FR"
+    },
+    {
+     "pct": 11
+    },
+    {
+     "t": "Les Arcs"
+    },
+    {
+     "cm": 105
+    }
+   ],
+   [
+    {
+     "cc": "CH"
+    },
+    {
+     "pct": 53
+    },
+    {
+     "t": "Ovronnaz"
+    },
+    {
+     "cm": 112
+    }
+   ],
+   [
+    {
+     "cc": "IT"
+    },
+    {
+     "pct": 23
+    },
+    {
+     "t": "Monterosa Ski"
+    },
+    {
+     "cm": 75
+    }
+   ]
+  ]
+ },
+ "bulletins": [],
+ "trip_day": "",
+ "map_link": "https://snowscope.app/#@45.571,6.807,8.0",
+ "seconds": 0.0,
+ "facts_used": 33,
+ "voice": "sat",
+ "media_ids": [
+  "map",
+  "new"
+ ],
+ "overlap": {
+  "before": 13.8,
+  "after": 13.8,
+  "with": "switzerland-snow-report-16-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.086,
+  "with": "switzerland-snow-report-16-november-2026"
+ },
+ "publish_utc": "2026-11-16T20:42:46Z",
+ "cover": {
+  "v": 1,
+  "style": "hero",
+  "files": {
+   "en": [
+    "blog/media/2026/11/france-snow-report-16-november-2026/cover-en.webp",
+    "blog/media/2026/11/france-snow-report-16-november-2026/cover-en_t.webp"
+   ],
+   "fr": [
+    "blog/media/2026/11/france-snow-report-16-november-2026/cover-fr.webp",
+    "blog/media/2026/11/france-snow-report-16-november-2026/cover-fr_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ },
+ "rewrite": {
+  "v": 1,
+  "story": "neighbour",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 704,
+  "overlap": 2.6,
+  "with": "atlas-morocco-atlas-snow-check-6-november-2026",
+  "langs_off": [],
+  "score": 119.0,
+  "intent": "cc:FR|neighbour",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ }
+}

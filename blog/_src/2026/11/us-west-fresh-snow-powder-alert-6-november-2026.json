@@ -1,0 +1,614 @@
+{
+ "id": "2026-11-06-us_west-powder",
+ "slug": "us-west-fresh-snow-powder-alert-6-november-2026",
+ "date": "2026-11-06",
+ "published_utc": "2026-11-06T15:30:00Z",
+ "updated_utc": "2026-11-06T15:30:00Z",
+ "region": "US_WEST",
+ "angle": "powder",
+ "score": 58.5,
+ "signature": "mt_baker:30|buttermilk:20|dutch_henry_ski_hill:20",
+ "tags": [
+  "powder",
+  "stations",
+  "where-to-ski",
+  "avalanche"
+ ],
+ "facts": {
+  "angle": "powder_alert",
+  "region": "US West",
+  "date": "2026-11-06",
+  "weekday": "Friday",
+  "model_run": "2026-11-05",
+  "forecast_days": [
+   "2026-11-07",
+   "2026-11-08",
+   "2026-11-09"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 213690,
+   "resorts_with_snow": 140,
+   "resorts_in_region": 195
+  },
+  "region_before": {
+   "date": "2026-11-04",
+   "snow_covered_area_km2": 248560,
+   "resorts_with_snow": 148
+  },
+  "region_forecast": {
+   "date": "2026-11-09",
+   "snow_covered_area_km2": 176750,
+   "resorts_with_snow": 130
+  },
+  "question": "Where did fresh snow fall in the last 72 hours, and is more coming?",
+  "resorts": [
+   {
+    "name": "Mt Baker",
+    "country": "United States",
+    "top_m": 1556,
+    "base_m": 1106,
+    "depth_cm_upper_slopes_today": 47,
+    "new_cm_last_24h": 11,
+    "new_cm_last_72h": 27,
+    "new_cm_forecast_next_days": 33,
+    "slug": "mt_baker",
+    "new_cm_by_day": {
+     "2026-11-04": 0,
+     "2026-11-05": 16,
+     "2026-11-06": 11,
+     "2026-11-07": 6,
+     "2026-11-08": 25,
+     "2026-11-09": 2
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 1106,
+      "depth_cm_model": 5,
+      "new_cm_next_7_days": 2
+     },
+     "mid": {
+      "elev_m": 1331,
+      "depth_cm_model": 15,
+      "new_cm_next_7_days": 16
+     },
+     "top": {
+      "elev_m": 1556,
+      "depth_cm_model": 25,
+      "new_cm_next_7_days": 22
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-06": {
+      "min": 1220,
+      "max": 2880
+     },
+     "2026-11-07": {
+      "min": 2100,
+      "max": 2760
+     },
+     "2026-11-08": {
+      "min": 830,
+      "max": 1710
+     }
+    },
+    "nearest_station": {
+     "station": "Wells Creek",
+     "elev_m": 1231,
+     "depth_cm_measured": 13,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 9.2
+    }
+   },
+   {
+    "name": "Buttermilk",
+    "country": "United States",
+    "top_m": 3012,
+    "base_m": 2402,
+    "depth_cm_upper_slopes_today": 46,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 15,
+    "new_cm_forecast_next_days": 0,
+    "slug": "buttermilk",
+    "new_cm_by_day": {
+     "2026-11-04": 1,
+     "2026-11-05": 15,
+     "2026-11-06": 0,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2402,
+      "depth_cm_model": 13,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 2707,
+      "depth_cm_model": 18,
+      "new_cm_next_7_days": 0
+     },
+     "top": {
+      "elev_m": 3012,
+      "depth_cm_model": 31,
+      "new_cm_next_7_days": 0
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-06": {
+      "min": 2480,
+      "max": 3260
+     },
+     "2026-11-07": {
+      "min": 2400,
+      "max": 3580
+     },
+     "2026-11-08": {
+      "min": 2460,
+      "max": 4130
+     }
+    },
+    "past_winters": {
+     "height_m": 2707,
+     "snow_cm_at_this_height_today_model": 21,
+     "deeper_than_n_of_past_winters": 36,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 9
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-10-27"
+    }
+   },
+   {
+    "name": "Dutch Henry Ski Hill",
+    "country": "United States",
+    "top_m": 3056,
+    "base_m": 3031,
+    "depth_cm_upper_slopes_today": 21,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 15,
+    "new_cm_forecast_next_days": 0,
+    "slug": "dutch_henry_ski_hill",
+    "new_cm_by_day": {
+     "2026-11-04": 3,
+     "2026-11-05": 12,
+     "2026-11-06": 0,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 3031,
+      "depth_cm_model": 21,
+      "new_cm_next_7_days": 0
+     },
+     "mid": {
+      "elev_m": 3043,
+      "depth_cm_model": 21,
+      "new_cm_next_7_days": 0
+     },
+     "top": {
+      "elev_m": 3056,
+      "depth_cm_model": 21,
+      "new_cm_next_7_days": 0
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-06": {
+      "min": 2300,
+      "max": 3440
+     },
+     "2026-11-07": {
+      "min": 2300,
+      "max": 3680
+     },
+     "2026-11-08": {
+      "min": 2600,
+      "max": 4160
+     }
+    },
+    "past_winters": {
+     "height_m": 3043,
+     "snow_cm_at_this_height_today_model": 21,
+     "deeper_than_n_of_past_winters": 33,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 11
+    },
+    "satellite_latest_clear_view": {
+     "state": "no_snow",
+     "seen_on": "2026-10-27"
+    },
+    "nearest_station": {
+     "station": "Buckskin Joe",
+     "elev_m": 3402,
+     "depth_cm_measured": 8,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-01",
+     "km_away": 18.0
+    }
+   },
+   {
+    "name": "Ski Cooper",
+    "country": "United States",
+    "top_m": 3579,
+    "base_m": 3226,
+    "depth_cm_upper_slopes_today": 37,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 14,
+    "new_cm_forecast_next_days": 0,
+    "slug": "ski_cooper",
+    "new_cm_by_day": {
+     "2026-11-04": 3,
+     "2026-11-05": 11,
+     "2026-11-06": 1,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 0
+    }
+   },
+   {
+    "name": "Monarch Mountain",
+    "country": "United States",
+    "top_m": 3598,
+    "base_m": 3260,
+    "depth_cm_upper_slopes_today": 30,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 12,
+    "new_cm_forecast_next_days": 0,
+    "slug": "monarch_mountain",
+    "new_cm_by_day": {
+     "2026-11-04": 2,
+     "2026-11-05": 11,
+     "2026-11-06": 0,
+     "2026-11-07": 0,
+     "2026-11-08": 0,
+     "2026-11-09": 0
+    }
+   }
+  ],
+  "measured_new_snow_at_stations": [
+   {
+    "station": "Chepeta",
+    "elev_m": 3197,
+    "new_cm_measured_24h": 30,
+    "depth_cm_measured": 51,
+    "measured_on": "2026-11-01"
+   },
+   {
+    "station": "Red Mountain Pass",
+    "elev_m": 3371,
+    "new_cm_measured_24h": 28,
+    "depth_cm_measured": 61,
+    "measured_on": "2026-11-01"
+   },
+   {
+    "station": "Bison Lake",
+    "elev_m": 3338,
+    "new_cm_measured_24h": 25,
+    "depth_cm_measured": 38,
+    "measured_on": "2026-11-01"
+   }
+  ],
+  "storm_cells_72h": [
+   {
+    "near": "Mt Baker",
+    "cm_in_72h": 33,
+    "km_from_resort": 14
+   },
+   {
+    "near": "Dutch Henry Ski Hill",
+    "cm_in_72h": 29,
+    "km_from_resort": 30
+   },
+   {
+    "near": "Mt Baker",
+    "cm_in_72h": 39,
+    "km_from_resort": 14
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Mt Baker",
+     "slug": "mt_baker",
+     "now_cm": 14,
+     "usual_cm": 10,
+     "high_cm": 66,
+     "week_ago_cm": 18,
+     "height_m": 1331,
+     "best_weeks": [
+      13,
+      14,
+      15
+     ],
+     "ratio_pct": 140
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Mt Baker",
+   "top_cm": 25,
+   "top_m": 1556,
+   "base_cm": 5,
+   "base_m": 1106,
+   "rain_day": "2026-11-06",
+   "freezing_m": 2880,
+   "lift_top_m": 1556,
+   "next_cm": 33,
+   "second": "Buttermilk",
+   "second_cm": 46,
+   "depth_cm": 47
+  },
+  "story": {
+   "id": "vs_normal_high",
+   "place": "resort:mt_baker",
+   "score": 62,
+   "resort": "Mt Baker"
+  }
+ },
+ "media": [
+  {
+   "id": "photo",
+   "kind": "photo",
+   "file": "blog/media/2026/11/us-west-fresh-snow-powder-alert-6-november-2026/photo.webp",
+   "thumb": "blog/media/2026/11/us-west-fresh-snow-powder-alert-6-november-2026/photo_t.webp",
+   "bytes": 30314,
+   "w": 1200,
+   "h": 630,
+   "credit": {
+    "source": "Wikimedia Commons, Maia! at English Wikipedia",
+    "link": "https://commons.wikimedia.org/wiki/File:MtBakerSkiAreaLodge.JPG",
+    "licence": "Public domain",
+    "licence_url": ""
+   }
+  },
+  {
+   "id": "map_new",
+   "kind": "new_map",
+   "file": "blog/media/2026/11/us-west-fresh-snow-powder-alert-6-november-2026/map_new.webp",
+   "thumb": "blog/media/2026/11/us-west-fresh-snow-powder-alert-6-november-2026/map_new_t.webp",
+   "bytes": 25044
+  },
+  {
+   "id": "bars",
+   "kind": "svg",
+   "svg": {
+    "en": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"New snow, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"49\" class=\"vl\">16</text><rect x=\"315\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"349\" y=\"49\" class=\"vl\">11</text><rect x=\"395\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"415\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><rect x=\"555\" y=\"36\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"49\" class=\"vl\">2</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Buttermilk</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dutch Henry Ski Hill</text><rect x=\"155\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"117\" class=\"vl\">3</text><rect x=\"235\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"272\" y=\"117\" class=\"vl\">12</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Ski Cooper</text><rect x=\"155\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"172\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"185\" class=\"vl\">11</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "fr": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neige fraîche, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"49\" class=\"vl\">16</text><rect x=\"315\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"349\" y=\"49\" class=\"vl\">11</text><rect x=\"395\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"415\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><rect x=\"555\" y=\"36\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"49\" class=\"vl\">2</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Buttermilk</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dutch Henry Ski Hill</text><rect x=\"155\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"117\" class=\"vl\">3</text><rect x=\"235\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"272\" y=\"117\" class=\"vl\">12</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Ski Cooper</text><rect x=\"155\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"172\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"185\" class=\"vl\">11</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "de": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neuschnee, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4.11.</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5.11.</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6.11.</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7.11.</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8.11.</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9.11.</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"49\" class=\"vl\">16</text><rect x=\"315\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"349\" y=\"49\" class=\"vl\">11</text><rect x=\"395\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"415\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><rect x=\"555\" y=\"36\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"49\" class=\"vl\">2</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Buttermilk</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dutch Henry Ski Hill</text><rect x=\"155\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"117\" class=\"vl\">3</text><rect x=\"235\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"272\" y=\"117\" class=\"vl\">12</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Ski Cooper</text><rect x=\"155\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"172\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"185\" class=\"vl\">11</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "it": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Neve fresca, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"49\" class=\"vl\">16</text><rect x=\"315\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"349\" y=\"49\" class=\"vl\">11</text><rect x=\"395\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"415\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><rect x=\"555\" y=\"36\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"49\" class=\"vl\">2</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Buttermilk</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dutch Henry Ski Hill</text><rect x=\"155\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"117\" class=\"vl\">3</text><rect x=\"235\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"272\" y=\"117\" class=\"vl\">12</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Ski Cooper</text><rect x=\"155\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"172\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"185\" class=\"vl\">11</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "es": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"Nieve nueva, 72 h\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"49\" class=\"vl\">16</text><rect x=\"315\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"349\" y=\"49\" class=\"vl\">11</text><rect x=\"395\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"415\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><rect x=\"555\" y=\"36\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"49\" class=\"vl\">2</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Buttermilk</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dutch Henry Ski Hill</text><rect x=\"155\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"117\" class=\"vl\">3</text><rect x=\"235\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"272\" y=\"117\" class=\"vl\">12</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Ski Cooper</text><rect x=\"155\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"172\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"185\" class=\"vl\">11</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>",
+    "ar": "<svg class=\"chart\" viewBox=\"0 0 640 210\" role=\"img\" aria-label=\"تلج جديد، 72 س\" xmlns=\"http://www.w3.org/2000/svg\"><text x=\"190\" y=\"18\" text-anchor=\"middle\" class=\"ax\">4/11</text><text x=\"270\" y=\"18\" text-anchor=\"middle\" class=\"ax\">5/11</text><text x=\"350\" y=\"18\" text-anchor=\"middle\" class=\"ax\">6/11</text><text x=\"430\" y=\"18\" text-anchor=\"middle\" class=\"ax\">7/11</text><text x=\"510\" y=\"18\" text-anchor=\"middle\" class=\"ax\">8/11</text><text x=\"590\" y=\"18\" text-anchor=\"middle\" class=\"ax\">9/11</text><text x=\"142\" y=\"48\" text-anchor=\"end\" class=\"lb\">Mt Baker</text><rect x=\"155\" y=\"36\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"235\" y=\"36\" width=\"45\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"283\" y=\"49\" class=\"vl\">16</text><rect x=\"315\" y=\"36\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"349\" y=\"49\" class=\"vl\">11</text><rect x=\"395\" y=\"36\" width=\"17\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"415\" y=\"49\" class=\"vl\">6</text><rect x=\"475\" y=\"36\" width=\"70\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"542\" y=\"49\" text-anchor=\"end\" class=\"vl in\">25</text><rect x=\"555\" y=\"36\" width=\"6\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"564\" y=\"49\" class=\"vl\">2</text><text x=\"142\" y=\"82\" text-anchor=\"end\" class=\"lb\">Buttermilk</text><rect x=\"155\" y=\"70\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"161\" y=\"83\" class=\"vl\">1</text><rect x=\"235\" y=\"70\" width=\"42\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"280\" y=\"83\" class=\"vl\">15</text><rect x=\"315\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"70\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"116\" text-anchor=\"end\" class=\"lb\">Dutch Henry Ski Hill</text><rect x=\"155\" y=\"104\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"117\" class=\"vl\">3</text><rect x=\"235\" y=\"104\" width=\"34\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"272\" y=\"117\" class=\"vl\">12</text><rect x=\"315\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"104\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"150\" text-anchor=\"end\" class=\"lb\">Ski Cooper</text><rect x=\"155\" y=\"138\" width=\"8\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"166\" y=\"151\" class=\"vl\">3</text><rect x=\"235\" y=\"138\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"151\" class=\"vl\">11</text><rect x=\"315\" y=\"138\" width=\"3\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"321\" y=\"151\" class=\"vl\">1</text><rect x=\"395\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"138\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><text x=\"142\" y=\"184\" text-anchor=\"end\" class=\"lb\">Monarch Mountain</text><rect x=\"155\" y=\"172\" width=\"6\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"164\" y=\"185\" class=\"vl\">2</text><rect x=\"235\" y=\"172\" width=\"31\" height=\"16\" rx=\"3\" class=\"ob\"/><text x=\"269\" y=\"185\" class=\"vl\">11</text><rect x=\"315\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"ob\"/><rect x=\"395\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"475\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/><rect x=\"555\" y=\"172\" width=\"2\" height=\"16\" rx=\"3\" class=\"fc\"/></svg>"
+   },
+   "key": {
+    "en": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Past days (model)</span><span><i style=\"background:var(--chart-fc)\"></i>Forecast</span></div>",
+    "fr": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Jours passés (modèle)</span><span><i style=\"background:var(--chart-fc)\"></i>Prévision</span></div>",
+    "de": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Vergangene Tage (Modell)</span><span><i style=\"background:var(--chart-fc)\"></i>Prognose</span></div>",
+    "it": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Giorni passati (modello)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsione</span></div>",
+    "es": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>Días pasados (modelo)</span><span><i style=\"background:var(--chart-fc)\"></i>Previsión</span></div>",
+    "ar": "<div class=\"key\"><span><i style=\"background:var(--chart-ob)\"></i>الأيام اللي فاتو (الموديل)</span><span><i style=\"background:var(--chart-fc)\"></i>التوقعات</span></div>"
+   }
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Fresh snow in the US West: 11 in in 72 hours at Mt Baker (6 November)",
+   "description": "Mt Baker got 11 in (27 cm) of new snow in the last 72 hours, 4 in (11 cm) of it in the last 24 hours. It now has about 19 in (47 cm) on its upper …",
+   "lede": "Mt Baker got 11 in (27 cm) of new snow in the last 72 hours, 4 in (11 cm) of it in the last 24 hours. It now has about 19 in (47 cm) on its upper slopes, according to our snow model.",
+   "sections": [
+    {
+     "h": "The new snow",
+     "p": [
+      "Elsewhere, Buttermilk, Dutch Henry Ski Hill and Ski Cooper got 6 in (15 cm), 6 in (15 cm) and 6 in (14 cm) in the last 72 hours.",
+      "Our snow model shows 82,506 sq mi (213,690 km²) of snow-covered ground in the US West today, with snow at 140 of 195 resorts."
+     ]
+    },
+    {
+     "h": "Against past winters",
+     "p": [
+      "At about 4,367 ft (1,331 m), Mt Baker has 6 in (14 cm) today; a normal 6 November has 4 in (10 cm) there.",
+      "Only one winter in ten has more than 26 in (66 cm) on this date.",
+      "A week ago the same spot had 7 in (18 cm).",
+      "In past winters the best snow at Mt Baker usually came late March / early April.",
+      "An early lead like this matters most for the lower and middle runs, which usually wait until December for this much snow.",
+      "Day by day at Mt Baker: Friday 6 November 4 in (11 cm); Saturday 7 November 2 in (6 cm); Sunday 8 November 10 in (25 cm); Monday 9 November 1 in (2 cm).",
+      "Height by height at Mt Baker: 3,629 ft (1,106 m) 2 in (5 cm) on the ground, 1 in (2 cm) more in the next 7 days; 4,367 ft (1,331 m) 6 in (15 cm) on the ground, 6 in (16 cm) more in the next 7 days; 5,105 ft (1,556 m) 10 in (25 cm) on the ground, 9 in (22 cm) more in the next 7 days."
+     ]
+    },
+    {
+     "h": "What the stations measured",
+     "p": [
+      "The Chepeta station (10,489 ft / 3,197 m) measured 20 in (51 cm) of snow on the ground on 1 November, with 12 in (30 cm) of new snow in 24 hours. The Red Mountain Pass station (11,060 ft / 3,371 m) measured 24 in (61 cm) of snow on the ground on 1 November, with 11 in (28 cm) of new snow in 24 hours. The Bison Lake station (10,951 ft / 3,338 m) measured 15 in (38 cm) of snow on the ground on 1 November, with 10 in (25 cm) of new snow in 24 hours.",
+      "Keep in mind: resort values come from our snow model and describe an area, while stations measure one point."
+     ]
+    },
+    {
+     "h": "Height, slopes and snow line",
+     "p": [
+      "Height matters: at Mt Baker, our model gives 10 in (25 cm) at the top (5,105 ft / 1,556 m), 6 in (15 cm) at mid-mountain (4,367 ft / 1,331 m) and 2 in (5 cm) at the base (3,629 ft / 1,106 m).",
+      "At Mt Baker, the freezing level reaches 4,003 ft (1,220 m) to 9,449 ft (2,880 m) on 6 November, above the top of the resort (5,105 ft / 1,556 m): rain or wet snow is possible on every slope that day."
+     ]
+    },
+    {
+     "h": "The next days",
+     "p": [
+      "Until 9 November, our forecast gives 13 in (33 cm) at Mt Baker.",
+      "Forecasts a few days ahead can change: look at the map again the day before you travel."
+     ]
+    },
+    {
+     "h": "Safety and avalanche level",
+     "p": [
+      "After fresh snow, wind builds drifts on sheltered slopes. Off-piste, the first days after a snowfall need the most care."
+     ]
+    }
+   ],
+   "advice": [
+    "Fresh snow is best in the first hours after it stops: go early, before the sun and the crowds.",
+    "Look for snow high up and on north-facing slopes: they keep it longest, while south-facing slopes lose it first in the sun.",
+    "Before you ski off-piste or go touring, read the official avalanche bulletin (links below).",
+    "Snow on the map does not mean a resort is open: check lifts and opening dates on the resort's website.",
+    "Get a powder alert in the SnowScope app to know when Mt Baker gets fresh snow."
+   ],
+   "captions": {
+    "map_new": "New snow in the last 72 hours in the US West, up to 6 November 2026 (SnowScope snow model).",
+    "bars": "New snow per day at the leading resorts (past days from the model, light bars = forecast).",
+    "photo": "Mt Baker"
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "template"
+  }
+ },
+ "words_en": 657,
+ "indexable": true,
+ "main": {
+  "slug": "mt_baker",
+  "name": "Mt Baker",
+  "lat": 48.8571,
+  "lon": -121.6652
+ },
+ "places": [
+  {
+   "name": "Mt Baker",
+   "lat": 48.8571,
+   "lon": -121.6652
+  },
+  {
+   "name": "Buttermilk",
+   "lat": 39.1923,
+   "lon": -106.8701
+  },
+  {
+   "name": "Dutch Henry Ski Hill",
+   "lat": 39.2378,
+   "lon": -106.304
+  },
+  {
+   "name": "Ski Cooper",
+   "lat": 39.3559,
+   "lon": -106.2889
+  },
+  {
+   "name": "Monarch Mountain",
+   "lat": 38.5168,
+   "lon": -106.3444
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "mt_baker",
+   "name": "Mt Baker"
+  },
+  {
+   "slug": "buttermilk",
+   "name": "Buttermilk"
+  },
+  {
+   "slug": "dutch_henry_ski_hill",
+   "name": "Dutch Henry Ski Hill"
+  },
+  {
+   "slug": "ski_cooper",
+   "name": "Ski Cooper"
+  },
+  {
+   "slug": "monarch_mountain",
+   "name": "Monarch Mountain"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "mt_baker",
+    "name": "Mt Baker",
+    "depth": 47,
+    "new72": 27,
+    "next": 33,
+    "top_m": 1556
+   },
+   {
+    "slug": "buttermilk",
+    "name": "Buttermilk",
+    "depth": 46,
+    "new72": 15,
+    "next": 0,
+    "top_m": 3012
+   },
+   {
+    "slug": "dutch_henry_ski_hill",
+    "name": "Dutch Henry Ski Hill",
+    "depth": 21,
+    "new72": 15,
+    "next": 0,
+    "top_m": 3056
+   },
+   {
+    "slug": "ski_cooper",
+    "name": "Ski Cooper",
+    "depth": 37,
+    "new72": 14,
+    "next": 0,
+    "top_m": 3579
+   },
+   {
+    "slug": "monarch_mountain",
+    "name": "Monarch Mountain",
+    "depth": 30,
+    "new72": 12,
+    "next": 0,
+    "top_m": 3598
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-11-07",
+ "map_link": "https://snowscope.app/#@48.857,-121.665,9.0",
+ "seconds": 0.0,
+ "publish_utc": "2026-11-06T15:30:00Z",
+ "rewrite": {
+  "v": 1,
+  "story": "vs_normal_high",
+  "llm": false,
+  "usd": 0.0
+ },
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 657,
+  "overlap": 75.0,
+  "with": "us-west-fresh-snow-powder-alert-4-november-2026",
+  "langs_off": [],
+  "score": 116.5,
+  "intent": "resort:mt_baker|vs_normal_high",
+  "guide": false,
+  "v": 1,
+  "kept": "google"
+ },
+ "cover": {
+  "v": 1,
+  "style": "split",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-fresh-snow-powder-alert-6-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-fresh-snow-powder-alert-6-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}
