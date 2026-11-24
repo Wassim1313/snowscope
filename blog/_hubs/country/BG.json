@@ -921,6 +921,135 @@
 },
 "change_vs_yesterday_km2": 1300,
 "change_vs_7_days_km2": 1320
+},
+"2026-11-24": {
+"country": "Bulgaria",
+"country_code": "BG",
+"date": "2026-11-24",
+"quiet": false,
+"modelled_km2": 31250,
+"snow_km2_today": 1370,
+"snow_km2_yesterday": 2320,
+"snow_km2_7_days_ago": 380,
+"new_cm_24h_max": 0,
+"new_cm_72h_max": 8,
+"area_km2_5cm_new_72h": 790,
+"next_3_days_max_cm": 7,
+"next_7_days_max_cm": 46,
+"snowiest_day": "2026-11-28",
+"snowiest_day_cm": 23,
+"first_snow_day": "2026-11-26",
+"hotspots": [
+{
+"name": "the Rila Mountains",
+"new_cm_72h": 11,
+"lat": 42.2,
+"lon": 23.298
+},
+{
+"name": "the Pirin Mountains",
+"new_cm_72h": 10,
+"lat": 41.795,
+"lon": 23.39
+},
+{
+"name": "Vitosha",
+"new_cm_72h": 8,
+"lat": 42.565,
+"lon": 23.274
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 1
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 14
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 6,
+"snow_cover_pct": 85
+},
+{
+"from_m": 2500,
+"to_m": 5000,
+"mean_depth_cm": 14,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 2000,
+"white_share_pct": 4,
+"resorts": [
+{
+"name": "Bansko",
+"slug": "bansko",
+"depth_cm": 25,
+"new_cm_72h": 8,
+"next_3_days_cm": 21,
+"top_m": 2516
+},
+{
+"name": "Borovets",
+"slug": "borovets",
+"depth_cm": 23,
+"new_cm_72h": 9,
+"next_3_days_cm": 12,
+"top_m": 2538
+},
+{
+"name": "Kartala",
+"slug": "kartala",
+"depth_cm": 9,
+"new_cm_72h": 10,
+"next_3_days_cm": 7,
+"top_m": 2245
+},
+{
+"name": "Pamporovo",
+"slug": "pamporovo",
+"depth_cm": 9,
+"new_cm_72h": 1,
+"next_3_days_cm": 0,
+"top_m": 1931
+},
+{
+"name": "Vitosha",
+"slug": "vitosha",
+"depth_cm": 8,
+"new_cm_72h": 8,
+"next_3_days_cm": 0,
+"top_m": 2245
+}
+],
+"n_resorts": 11,
+"n_resorts_with_snow": 9,
+"resort_next_until": "2026-11-27",
+"week2": {
+"week1_max_cm": 36,
+"week2_max_cm": 18,
+"week2_days": [
+"2026-12-02",
+"2026-12-08"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": -950,
+"change_vs_7_days_km2": 990
 }
 }
 }

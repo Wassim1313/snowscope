@@ -1032,6 +1032,135 @@
 },
 "change_vs_yesterday_km2": -840,
 "change_vs_7_days_km2": 6170
+},
+"2026-11-24": {
+"country": "France",
+"country_code": "FR",
+"date": "2026-11-24",
+"quiet": false,
+"modelled_km2": 89350,
+"snow_km2_today": 17580,
+"snow_km2_yesterday": 15700,
+"snow_km2_7_days_ago": 8070,
+"new_cm_24h_max": 6,
+"new_cm_72h_max": 64,
+"area_km2_5cm_new_72h": 15520,
+"next_3_days_max_cm": 32,
+"next_7_days_max_cm": 33,
+"snowiest_day": "2026-11-25",
+"snowiest_day_cm": 29,
+"first_snow_day": "2026-11-25",
+"hotspots": [
+{
+"name": "the Mont Blanc massif",
+"new_cm_72h": 185,
+"lat": 45.834,
+"lon": 6.861
+},
+{
+"name": "the northern French Alps",
+"new_cm_72h": 100,
+"lat": 45.145,
+"lon": 6.136
+},
+{
+"name": "the French Pyrenees",
+"new_cm_72h": 28,
+"lat": 42.912,
+"lon": -0.472
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 1
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 1,
+"snow_cover_pct": 16
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 11,
+"snow_cover_pct": 72
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 24,
+"snow_cover_pct": 93
+},
+{
+"from_m": 2500,
+"to_m": 5000,
+"mean_depth_cm": 53,
+"snow_cover_pct": 98
+}
+],
+"snow_line_m": 1500,
+"white_share_pct": 20,
+"resorts": [
+{
+"name": "La Grave",
+"slug": "la_grave",
+"depth_cm": 158,
+"new_cm_72h": 92,
+"next_3_days_cm": 40,
+"top_m": 3543
+},
+{
+"name": "Orelle",
+"slug": "orelle",
+"depth_cm": 154,
+"new_cm_72h": 84,
+"next_3_days_cm": 20,
+"top_m": 3221
+},
+{
+"name": "Val Thorens",
+"slug": "val_thorens",
+"depth_cm": 154,
+"new_cm_72h": 84,
+"next_3_days_cm": 20,
+"top_m": 3221
+},
+{
+"name": "Les Deux Alpes",
+"slug": "les_deux_alpes",
+"depth_cm": 120,
+"new_cm_72h": 72,
+"next_3_days_cm": 32,
+"top_m": 3511
+},
+{
+"name": "Alpe d'Huez Grand Domaine",
+"slug": "alpe_dhuez",
+"depth_cm": 114,
+"new_cm_72h": 86,
+"next_3_days_cm": 36,
+"top_m": 3306
+}
+],
+"n_resorts": 224,
+"n_resorts_with_snow": 190,
+"resort_next_until": "2026-11-27",
+"week2": {
+"week1_max_cm": 32,
+"week2_max_cm": 12,
+"week2_days": [
+"2026-12-02",
+"2026-12-08"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 1880,
+"change_vs_7_days_km2": 9510
 }
 }
 }

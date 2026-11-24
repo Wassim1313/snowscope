@@ -754,6 +754,107 @@
 },
 "change_vs_yesterday_km2": 110,
 "change_vs_7_days_km2": 110
+},
+"2026-11-24": {
+"country": "Greece",
+"country_code": "GR",
+"date": "2026-11-24",
+"quiet": false,
+"modelled_km2": 26150,
+"snow_km2_today": 80,
+"snow_km2_yesterday": 230,
+"snow_km2_7_days_ago": 0,
+"new_cm_24h_max": 0,
+"new_cm_72h_max": 2,
+"area_km2_5cm_new_72h": 10,
+"next_3_days_max_cm": 0,
+"next_7_days_max_cm": 48,
+"snowiest_day": "2026-11-29",
+"snowiest_day_cm": 33,
+"first_snow_day": "2026-11-28",
+"hotspots": [
+{
+"name": "the Pindus",
+"new_cm_72h": 10,
+"lat": 39.46,
+"lon": 21.148
+},
+{
+"name": "the Vermio mountains",
+"new_cm_72h": 5,
+"lat": 40.81,
+"lon": 21.209
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 2
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 1,
+"snow_cover_pct": 13
+}
+],
+"snow_line_m": null,
+"white_share_pct": 0,
+"resorts": [
+{
+"name": "Elatohori",
+"slug": "elatohori",
+"depth_cm": 7,
+"new_cm_72h": 0,
+"next_3_days_cm": 0,
+"top_m": 1913
+},
+{
+"name": "Seli",
+"slug": "seli",
+"depth_cm": 2,
+"new_cm_72h": 0,
+"next_3_days_cm": 0,
+"top_m": 1849
+},
+{
+"name": "Εθνικό χιονοδρομικό κέντρο Βασιλ",
+"slug": "area_greece",
+"depth_cm": 1,
+"new_cm_72h": 4,
+"next_3_days_cm": 0,
+"top_m": 2104
+}
+],
+"n_resorts": 12,
+"n_resorts_with_snow": 3,
+"resort_next_until": "2026-11-27",
+"week2": {
+"week1_max_cm": 26,
+"week2_max_cm": 26,
+"week2_days": [
+"2026-12-02",
+"2026-12-08"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": -150,
+"change_vs_7_days_km2": 80
 }
 }
 }

@@ -1020,6 +1020,123 @@
 },
 "change_vs_yesterday_km2": 400,
 "change_vs_7_days_km2": 11680
+},
+"2026-11-24": {
+"country": "Austria",
+"country_code": "AT",
+"date": "2026-11-24",
+"quiet": false,
+"modelled_km2": 52110,
+"snow_km2_today": 28170,
+"snow_km2_yesterday": 31600,
+"snow_km2_7_days_ago": 18270,
+"new_cm_24h_max": 1,
+"new_cm_72h_max": 25,
+"area_km2_5cm_new_72h": 11220,
+"next_3_days_max_cm": 23,
+"next_7_days_max_cm": 24,
+"snowiest_day": "2026-11-26",
+"snowiest_day_cm": 20,
+"first_snow_day": "2026-11-25",
+"hotspots": [
+{
+"name": "Vorarlberg",
+"new_cm_72h": 52,
+"lat": 47.062,
+"lon": 9.679
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 8
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 3,
+"snow_cover_pct": 59
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 11,
+"snow_cover_pct": 98
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 20,
+"snow_cover_pct": 100
+},
+{
+"from_m": 2500,
+"to_m": 5000,
+"mean_depth_cm": 31,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 1200,
+"white_share_pct": 54,
+"resorts": [
+{
+"name": "Stubaier Gletscher",
+"slug": "stubaier_gletscher",
+"depth_cm": 65,
+"new_cm_72h": 14,
+"next_3_days_cm": 25,
+"top_m": 3208
+},
+{
+"name": "Pitztaler Gletscher",
+"slug": "pitztaler_gletscher",
+"depth_cm": 56,
+"new_cm_72h": 16,
+"next_3_days_cm": 27,
+"top_m": 3424
+},
+{
+"name": "Großglockner Heiligenblut",
+"slug": "groglockner_heiligenblut",
+"depth_cm": 56,
+"new_cm_72h": 4,
+"next_3_days_cm": 20,
+"top_m": 2905
+},
+{
+"name": "Kaprun",
+"slug": "kaprun_kitzsteinhorn_maiskogel",
+"depth_cm": 56,
+"new_cm_72h": 4,
+"next_3_days_cm": 17,
+"top_m": 3024
+},
+{
+"name": "Kühtai",
+"slug": "kuhtai",
+"depth_cm": 53,
+"new_cm_72h": 12,
+"next_3_days_cm": 12,
+"top_m": 2507
+}
+],
+"n_resorts": 277,
+"n_resorts_with_snow": 260,
+"resort_next_until": "2026-11-27",
+"week2": {
+"week1_max_cm": 18,
+"week2_max_cm": 10,
+"week2_days": [
+"2026-12-02",
+"2026-12-08"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": -3430,
+"change_vs_7_days_km2": 9900
 }
 }
 }
