@@ -1125,6 +1125,135 @@
 },
 "change_vs_yesterday_km2": -1220,
 "change_vs_7_days_km2": 7430
+},
+"2026-11-25": {
+"country": "Switzerland",
+"country_code": "CH",
+"date": "2026-11-25",
+"quiet": false,
+"modelled_km2": 31030,
+"snow_km2_today": 22350,
+"snow_km2_yesterday": 22220,
+"snow_km2_7_days_ago": 16330,
+"new_cm_24h_max": 14,
+"new_cm_72h_max": 43,
+"area_km2_5cm_new_72h": 21410,
+"next_3_days_max_cm": 8,
+"next_7_days_max_cm": 15,
+"snowiest_day": "2026-11-26",
+"snowiest_day_cm": 8,
+"first_snow_day": "2026-11-26",
+"hotspots": [
+{
+"name": "the Bernese Oberland",
+"new_cm_72h": 84,
+"lat": 46.576,
+"lon": 8.001
+},
+{
+"name": "central Switzerland",
+"new_cm_72h": 67,
+"lat": 46.81,
+"lon": 8.915
+},
+{
+"name": "the Valais Alps",
+"new_cm_72h": 57,
+"lat": 45.96,
+"lon": 7.017
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 15
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 7,
+"snow_cover_pct": 83
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 18,
+"snow_cover_pct": 100
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 23,
+"snow_cover_pct": 100
+},
+{
+"from_m": 2500,
+"to_m": 5000,
+"mean_depth_cm": 35,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 1000,
+"white_share_pct": 72,
+"resorts": [
+{
+"name": "Balme",
+"slug": "balme_vallorcine",
+"depth_cm": 120,
+"new_cm_72h": 31,
+"next_3_days_cm": 4,
+"top_m": 2252
+},
+{
+"name": "Ovronnaz",
+"slug": "ovronnaz",
+"depth_cm": 70,
+"new_cm_72h": 34,
+"next_3_days_cm": 4,
+"top_m": 2456
+},
+{
+"name": "Anzère",
+"slug": "anzere",
+"depth_cm": 69,
+"new_cm_72h": 27,
+"next_3_days_cm": 4,
+"top_m": 2411
+},
+{
+"name": "Glacier 3000",
+"slug": "glacier_3000",
+"depth_cm": 68,
+"new_cm_72h": 42,
+"next_3_days_cm": 5,
+"top_m": 2931
+},
+{
+"name": "Jungfraujoch Snow Fun Park",
+"slug": "jungfraujoch_snow_fun_park",
+"depth_cm": 67,
+"new_cm_72h": 67,
+"next_3_days_cm": 8,
+"top_m": 3461
+}
+],
+"n_resorts": 279,
+"n_resorts_with_snow": 267,
+"resort_next_until": "2026-11-28",
+"week2": {
+"week1_max_cm": 9,
+"week2_max_cm": 30,
+"week2_days": [
+"2026-12-03",
+"2026-12-09"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 130,
+"change_vs_7_days_km2": 6020
 }
 }
 }

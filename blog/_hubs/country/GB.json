@@ -987,6 +987,114 @@
 },
 "change_vs_yesterday_km2": 1060,
 "change_vs_7_days_km2": -1900
+},
+"2026-11-25": {
+"country": "UK",
+"country_code": "GB",
+"date": "2026-11-25",
+"quiet": false,
+"modelled_km2": 37520,
+"snow_km2_today": 10290,
+"snow_km2_yesterday": 9510,
+"snow_km2_7_days_ago": 9170,
+"new_cm_24h_max": 6,
+"new_cm_72h_max": 14,
+"area_km2_5cm_new_72h": 4310,
+"next_3_days_max_cm": 9,
+"next_7_days_max_cm": 11,
+"snowiest_day": "2026-11-27",
+"snowiest_day_cm": 6,
+"first_snow_day": "2026-11-26",
+"hotspots": [
+{
+"name": "Glenshee and the Grampians",
+"new_cm_72h": 22,
+"lat": 56.879,
+"lon": -3.128
+},
+{
+"name": "Glencoe",
+"new_cm_72h": 22,
+"lat": 56.542,
+"lon": -4.201
+},
+{
+"name": "the Cairngorms",
+"new_cm_72h": 17,
+"lat": 56.893,
+"lon": -3.806
+}
+],
+"bands": [
+{
+"from_m": 0,
+"to_m": 500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 12
+},
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 4,
+"snow_cover_pct": 66
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 16,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 600,
+"white_share_pct": 27,
+"resorts": [
+{
+"name": "Glenshee",
+"slug": "glenshee_ski_center",
+"depth_cm": 27,
+"new_cm_72h": 21,
+"next_3_days_cm": 8,
+"top_m": 1028
+},
+{
+"name": "Nevis Range",
+"slug": "nevis_range",
+"depth_cm": 26,
+"new_cm_72h": 10,
+"next_3_days_cm": 14,
+"top_m": 1190
+},
+{
+"name": "Glencoe",
+"slug": "glencoe_mountain_resort",
+"depth_cm": 16,
+"new_cm_72h": 10,
+"next_3_days_cm": 14,
+"top_m": 1079
+},
+{
+"name": "Yad Moss",
+"slug": "yad_moss",
+"depth_cm": 16,
+"new_cm_72h": 1,
+"next_3_days_cm": 1,
+"top_m": 719
+},
+{
+"name": "Cairngorm Mountain",
+"slug": "cairngorm_mountain",
+"depth_cm": 14,
+"new_cm_72h": 11,
+"next_3_days_cm": 4,
+"top_m": 784
+}
+],
+"n_resorts": 30,
+"n_resorts_with_snow": 13,
+"resort_next_until": "2026-11-28",
+"week2": null,
+"change_vs_yesterday_km2": 780,
+"change_vs_7_days_km2": 1120
 }
 }
 }

@@ -1101,6 +1101,129 @@
 },
 "change_vs_yesterday_km2": -2550,
 "change_vs_7_days_km2": 3850
+},
+"2026-11-25": {
+"country": "Germany",
+"country_code": "DE",
+"date": "2026-11-25",
+"quiet": false,
+"modelled_km2": 46000,
+"snow_km2_today": 6800,
+"snow_km2_yesterday": 7520,
+"snow_km2_7_days_ago": 2160,
+"new_cm_24h_max": 0,
+"new_cm_72h_max": 3,
+"area_km2_5cm_new_72h": 70,
+"next_3_days_max_cm": 9,
+"next_7_days_max_cm": 11,
+"snowiest_day": "2026-11-26",
+"snowiest_day_cm": 10,
+"first_snow_day": "2026-11-26",
+"hotspots": [
+{
+"name": "the Bavarian Alps",
+"new_cm_72h": 7,
+"lat": 47.422,
+"lon": 10.981
+},
+{
+"name": "the Allgäu Alps",
+"new_cm_72h": 6,
+"lat": 47.364,
+"lon": 10.113
+},
+{
+"name": "the Black Forest",
+"new_cm_72h": 4,
+"lat": 47.859,
+"lon": 7.872
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 9
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 5,
+"snow_cover_pct": 88
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 15,
+"snow_cover_pct": 100
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 22,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 1000,
+"white_share_pct": 15,
+"resorts": [
+{
+"name": "Zugspitze",
+"slug": "gletscher_skigebiet_zugspitze_ski_resort_zugspit",
+"depth_cm": 56,
+"new_cm_72h": 7,
+"next_3_days_cm": 15,
+"top_m": 2627
+},
+{
+"name": "Kirchberglift am Fröbelturm",
+"slug": "kirchberglift_am_frobelturm",
+"depth_cm": 55,
+"new_cm_72h": 0,
+"next_3_days_cm": 0,
+"top_m": 783
+},
+{
+"name": "Geißkopf",
+"slug": "skigebiet_geikopf",
+"depth_cm": 53,
+"new_cm_72h": 0,
+"next_3_days_cm": 1,
+"top_m": 1108
+},
+{
+"name": "Steibis",
+"slug": "steibis_hochgratbahn",
+"depth_cm": 36,
+"new_cm_72h": 5,
+"next_3_days_cm": 4,
+"top_m": 1704
+},
+{
+"name": "Garmisch-Classic",
+"slug": "skigebiet_garmisch_classic",
+"depth_cm": 36,
+"new_cm_72h": 4,
+"next_3_days_cm": 11,
+"top_m": 2047
+}
+],
+"n_resorts": 231,
+"n_resorts_with_snow": 118,
+"resort_next_until": "2026-11-28",
+"week2": {
+"week1_max_cm": 9,
+"week2_max_cm": 32,
+"week2_days": [
+"2026-12-03",
+"2026-12-09"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": -720,
+"change_vs_7_days_km2": 4640
 }
 }
 }

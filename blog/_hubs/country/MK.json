@@ -892,6 +892,96 @@
 },
 "change_vs_yesterday_km2": -2500,
 "change_vs_7_days_km2": 1450
+},
+"2026-11-25": {
+"country": "North Macedonia",
+"country_code": "MK",
+"date": "2026-11-25",
+"quiet": false,
+"modelled_km2": 15890,
+"snow_km2_today": 960,
+"snow_km2_yesterday": 1120,
+"snow_km2_7_days_ago": 50,
+"new_cm_24h_max": 1,
+"new_cm_72h_max": 15,
+"area_km2_5cm_new_72h": 750,
+"next_3_days_max_cm": 26,
+"next_7_days_max_cm": 30,
+"snowiest_day": "2026-11-28",
+"snowiest_day_cm": 17,
+"first_snow_day": "2026-11-26",
+"hotspots": [
+{
+"name": "the Mavrovo mountains",
+"new_cm_72h": 31,
+"lat": 41.8,
+"lon": 20.541
+},
+{
+"name": "the Šar Mountains",
+"new_cm_72h": 18,
+"lat": 42.097,
+"lon": 20.844
+},
+{
+"name": "Pelister",
+"new_cm_72h": 11,
+"lat": 40.936,
+"lon": 20.844
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 0
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 1
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 1,
+"snow_cover_pct": 31
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 9,
+"snow_cover_pct": 85
+}
+],
+"snow_line_m": 1800,
+"white_share_pct": 6,
+"resorts": [
+{
+"name": "Скијачки центар Попова шапка",
+"slug": "area_north_macedo",
+"depth_cm": 12,
+"new_cm_72h": 16,
+"next_3_days_cm": 62,
+"top_m": 2376
+},
+{
+"name": "Mavrovo",
+"slug": "mavrovo",
+"depth_cm": 5,
+"new_cm_72h": 7,
+"next_3_days_cm": 11,
+"top_m": 1875
+}
+],
+"n_resorts": 8,
+"n_resorts_with_snow": 2,
+"resort_next_until": "2026-11-28",
+"week2": null,
+"change_vs_yesterday_km2": -160,
+"change_vs_7_days_km2": 910
 }
 }
 }

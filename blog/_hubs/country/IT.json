@@ -1155,6 +1155,135 @@
 },
 "change_vs_yesterday_km2": 2260,
 "change_vs_7_days_km2": 11110
+},
+"2026-11-25": {
+"country": "Italy",
+"country_code": "IT",
+"date": "2026-11-25",
+"quiet": false,
+"modelled_km2": 93660,
+"snow_km2_today": 33620,
+"snow_km2_yesterday": 30630,
+"snow_km2_7_days_ago": 18780,
+"new_cm_24h_max": 21,
+"new_cm_72h_max": 28,
+"area_km2_5cm_new_72h": 21340,
+"next_3_days_max_cm": 28,
+"next_7_days_max_cm": 28,
+"snowiest_day": "2026-11-26",
+"snowiest_day_cm": 30,
+"first_snow_day": "2026-11-26",
+"hotspots": [
+{
+"name": "the Aosta Valley",
+"new_cm_72h": 79,
+"lat": 45.838,
+"lon": 6.835
+},
+{
+"name": "the Piedmont Alps",
+"new_cm_72h": 51,
+"lat": 44.209,
+"lon": 7.425
+},
+{
+"name": "the central Apennines",
+"new_cm_72h": 18,
+"lat": 42.1,
+"lon": 14.131
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 4
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 2,
+"snow_cover_pct": 39
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 7,
+"snow_cover_pct": 80
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 15,
+"snow_cover_pct": 99
+},
+{
+"from_m": 2500,
+"to_m": 5000,
+"mean_depth_cm": 32,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 1300,
+"white_share_pct": 36,
+"resorts": [
+{
+"name": "La Thuile ski",
+"slug": "la_thuile_ski",
+"depth_cm": 78,
+"new_cm_72h": 33,
+"next_3_days_cm": 3,
+"top_m": 2608
+},
+{
+"name": "Courmayeur",
+"slug": "courmayeur",
+"depth_cm": 74,
+"new_cm_72h": 36,
+"next_3_days_cm": 4,
+"top_m": 2749
+},
+{
+"name": "Argentera",
+"slug": "argentera",
+"depth_cm": 67,
+"new_cm_72h": 36,
+"next_3_days_cm": 2,
+"top_m": 2519
+},
+{
+"name": "Prali",
+"slug": "prali_italy",
+"depth_cm": 66,
+"new_cm_72h": 27,
+"next_3_days_cm": 1,
+"top_m": null
+},
+{
+"name": "Crévacol",
+"slug": "crevacol",
+"depth_cm": 52,
+"new_cm_72h": 28,
+"next_3_days_cm": 3,
+"top_m": 2450
+}
+],
+"n_resorts": 238,
+"n_resorts_with_snow": 199,
+"resort_next_until": "2026-11-28",
+"week2": {
+"week1_max_cm": 22,
+"week2_max_cm": 28,
+"week2_days": [
+"2026-12-03",
+"2026-12-09"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 2990,
+"change_vs_7_days_km2": 14840
 }
 }
 }
