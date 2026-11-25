@@ -18,7 +18,7 @@
   "MONEY",
   "SNOW"
  ],
- "snow_day0": "2026-11-24",
+ "snow_day0": "2026-11-25",
  "snow_stale": false,
  "projection": true,
  "travel": null,
@@ -69,20 +69,20 @@
      "p20": 45,
      "p50": 50,
      "p80": 60,
-     "p_ge50": 0.45,
+     "p_ge50": 0.52,
      "basis": "ensemble+climatology",
      "normal_cm": 90,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 13,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 12,
        "p50_cm": 55
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 10,
+       "snowfall_p50_cm": 16,
        "p50_cm": 45
       }
      },
@@ -122,104 +122,6 @@
     "SNOW": 100
    },
    "rank": 1
-  },
-  {
-   "slug": "salen",
-   "label": "Sälen",
-   "country": "SE",
-   "area": "Lindvallen-Hogfjallet (SkiStar)",
-   "lat": 61.16455,
-   "lon": 13.09204,
-   "top_m": 886,
-   "base_m": 567,
-   "km": 90.0,
-   "lifts": 98,
-   "opens": "2026-11-28",
-   "pass_day_eur": 71.19,
-   "pass_day_walkup": 71.19,
-   "pass_day_multi_eur": 46.33,
-   "pass_multi": {
-    "days": 6,
-    "price": 3124.0,
-    "ccy": "SEK",
-    "per_day": 520.67,
-    "estimated": false,
-    "note": "6-8 day SkiPass flat price band, advance-online rate (same-day 3336 SEK)",
-    "src": "https://www.skistar.com/sv/boka-online/skipass/salen"
-   },
-   "pass_day_local": {
-    "ccy": "SEK",
-    "holiday": 800.0,
-    "regular": 715.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "SkiStar dynamic pricing; 715 SEK is the published 2026-27 Lindvallen/Hogfjallet adult day rate (+4% YoY), holiday figure is a dynamic-pricing estimate",
-   "pass_src": "https://pistat.se/liftkortspriser",
-   "night_eur": 62.29,
-   "food_day_eur": 33.82,
-   "stay_src": "estimate: Salen cheap-hotel average ~107 USD/night, 3-star ~209 USD/night per room on booking.com; on-mountain lunch ~195 SEK confirmed (SkiStar Salen), Salen is one of the pricier food destinations in Sweden despite budget lodging",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 20,
-    "start": {
-     "cm": 30,
-     "p20": 25,
-     "p50": 30,
-     "p80": 35,
-     "p_ge50": 0.01,
-     "basis": "ensemble+climatology",
-     "normal_cm": 30,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 7,
-       "p50_cm": 30
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 9,
-       "p50_cm": 25
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 278,
-    "hotel_eur": 436,
-    "food_eur": 237,
-    "total_eur": 951,
-    "pass_basis": "advance 6-day pass",
-    "pass_walkup": 427,
-    "party_total_eur": 951,
-    "left_eur": 49,
-    "need_eur": 0,
-    "fits": true
-   },
-   "tiers": {
-    "pass": "MID",
-    "hotel": "MID",
-    "pistes": "MID",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.65,
-   "pros": [
-    "98 lifts"
-   ],
-   "cons": [
-    "~30 cm at the start"
-   ],
-   "score": 75.0,
-   "score_parts": {
-    "MONEY": 100,
-    "SNOW": 50
-   },
-   "rank": 2
   },
   {
    "slug": "are",
@@ -263,25 +165,25 @@
    "snow": {
     "now_cm": 30,
     "start": {
-     "cm": 35,
+     "cm": 40,
      "p20": 35,
-     "p50": 35,
-     "p80": 45,
-     "p_ge50": 0.09,
+     "p50": 40,
+     "p80": 50,
+     "p_ge50": 0.2,
      "basis": "ensemble+climatology",
      "normal_cm": 50,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 6,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 8,
        "p50_cm": 40
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 18,
-       "p50_cm": 35
+       "snowfall_p50_cm": 23,
+       "p50_cm": 40
       }
      },
      "winters": 46
@@ -305,18 +207,116 @@
     "pistes": "MID",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.64,
+   "value_cm_per_eur": 0.74,
    "pros": [
     "48 lifts"
    ],
    "cons": [
     "1,136 EUR per person",
-    "~35 cm at the start"
+    "~40 cm at the start"
    ],
-   "score": 74.7,
+   "score": 79.1,
    "score_parts": {
     "MONEY": 87,
-    "SNOW": 62
+    "SNOW": 71
+   },
+   "rank": 2
+  },
+  {
+   "slug": "salen",
+   "label": "Sälen",
+   "country": "SE",
+   "area": "Lindvallen-Hogfjallet (SkiStar)",
+   "lat": 61.16455,
+   "lon": 13.09204,
+   "top_m": 886,
+   "base_m": 567,
+   "km": 90.0,
+   "lifts": 98,
+   "opens": "2026-11-28",
+   "pass_day_eur": 71.19,
+   "pass_day_walkup": 71.19,
+   "pass_day_multi_eur": 46.33,
+   "pass_multi": {
+    "days": 6,
+    "price": 3124.0,
+    "ccy": "SEK",
+    "per_day": 520.67,
+    "estimated": false,
+    "note": "6-8 day SkiPass flat price band, advance-online rate (same-day 3336 SEK)",
+    "src": "https://www.skistar.com/sv/boka-online/skipass/salen"
+   },
+   "pass_day_local": {
+    "ccy": "SEK",
+    "holiday": 800.0,
+    "regular": 715.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "SkiStar dynamic pricing; 715 SEK is the published 2026-27 Lindvallen/Hogfjallet adult day rate (+4% YoY), holiday figure is a dynamic-pricing estimate",
+   "pass_src": "https://pistat.se/liftkortspriser",
+   "night_eur": 62.29,
+   "food_day_eur": 33.82,
+   "stay_src": "estimate: Salen cheap-hotel average ~107 USD/night, 3-star ~209 USD/night per room on booking.com; on-mountain lunch ~195 SEK confirmed (SkiStar Salen), Salen is one of the pricier food destinations in Sweden despite budget lodging",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 20,
+    "start": {
+     "cm": 25,
+     "p20": 25,
+     "p50": 25,
+     "p80": 35,
+     "p_ge50": 0.01,
+     "basis": "ensemble+climatology",
+     "normal_cm": 30,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 8,
+       "p50_cm": 30
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 11,
+       "p50_cm": 25
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 278,
+    "hotel_eur": 436,
+    "food_eur": 237,
+    "total_eur": 951,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 427,
+    "party_total_eur": 951,
+    "left_eur": 49,
+    "need_eur": 0,
+    "fits": true
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.54,
+   "pros": [
+    "98 lifts"
+   ],
+   "cons": [
+    "~25 cm at the start"
+   ],
+   "score": 64.3,
+   "score_parts": {
+    "MONEY": 100,
+    "SNOW": 29
    },
    "rank": 3
   },
@@ -363,7 +363,7 @@
     "now_cm": 25,
     "start": {
      "cm": 30,
-     "p20": 25,
+     "p20": 30,
      "p50": 30,
      "p80": 35,
      "p_ge50": 0.0,
@@ -372,14 +372,14 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 5,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 7,
        "p50_cm": 35
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 11,
+       "snowfall_p50_cm": 16,
        "p50_cm": 30
       }
      },
@@ -413,10 +413,10 @@
     "only 25 km of pistes",
     "~30 cm at the start"
    ],
-   "score": 67.0,
+   "score": 63.5,
    "score_parts": {
     "MONEY": 84,
-    "SNOW": 50
+    "SNOW": 43
    },
    "rank": 4
   },
@@ -472,8 +472,8 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 10,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 9,
        "p50_cm": 30
       },
       "GFS": {
@@ -513,10 +513,10 @@
     "only 39 km of pistes",
     "~25 cm at the start"
    ],
-   "score": 66.1,
+   "score": 61.7,
    "score_parts": {
     "MONEY": 95,
-    "SNOW": 38
+    "SNOW": 29
    },
    "rank": 5
   },
@@ -572,14 +572,14 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 12,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 11,
        "p50_cm": 25
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 9,
+       "snowfall_p50_cm": 13,
        "p50_cm": 15
       }
      },
@@ -613,10 +613,10 @@
     "only 35 km of pistes",
     "~20 cm at the start"
    ],
-   "score": 58.6,
+   "score": 53.3,
    "score_parts": {
     "MONEY": 92,
-    "SNOW": 25
+    "SNOW": 14
    },
    "rank": 6
   },
@@ -672,7 +672,7 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
+       "horizon_days": 13,
        "snowfall_p50_cm": 8,
        "p50_cm": 20
       },
@@ -712,10 +712,10 @@
     "only 38 km of pistes",
     "~15 cm at the start"
    ],
-   "score": 54.8,
+   "score": 48.5,
    "score_parts": {
     "MONEY": 97,
-    "SNOW": 12
+    "SNOW": 0
    },
    "rank": 7
   },
@@ -761,9 +761,9 @@
    "snow": {
     "now_cm": 5,
     "start": {
-     "cm": 10,
+     "cm": 15,
      "p20": 10,
-     "p50": 10,
+     "p50": 15,
      "p80": 20,
      "p_ge50": 0.0,
      "basis": "ensemble+climatology",
@@ -771,14 +771,14 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
+       "horizon_days": 13,
        "snowfall_p50_cm": 8,
        "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 11,
+       "snowfall_p50_cm": 13,
        "p50_cm": 10
       }
      },
@@ -803,13 +803,13 @@
     "pistes": "MID",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.18,
+   "value_cm_per_eur": 0.27,
    "pros": [
     "40 lifts"
    ],
    "cons": [
     "1,187 EUR per person",
-    "~10 cm at the start"
+    "~15 cm at the start"
    ],
    "score": 41.6,
    "score_parts": {
@@ -861,7 +861,7 @@
     "now_cm": 10,
     "start": {
      "cm": 15,
-     "p20": 10,
+     "p20": 15,
      "p50": 15,
      "p80": 20,
      "p_ge50": 0.0,
@@ -870,15 +870,15 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 7,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 8,
        "p50_cm": 20
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 10
+       "snowfall_p50_cm": 17,
+       "p50_cm": 15
       }
      },
      "winters": 46
@@ -911,10 +911,10 @@
     "nights from 150 EUR per person",
     "only 18 km of pistes"
    ],
-   "score": 31.8,
+   "score": 25.6,
    "score_parts": {
     "MONEY": 51,
-    "SNOW": 12
+    "SNOW": 0
    },
    "rank": 9
   },
@@ -961,7 +961,7 @@
     "now_cm": 10,
     "start": {
      "cm": 15,
-     "p20": 10,
+     "p20": 15,
      "p50": 15,
      "p80": 20,
      "p_ge50": 0.0,
@@ -970,15 +970,15 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
+       "horizon_days": 13,
        "snowfall_p50_cm": 6,
        "p50_cm": 20
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 8,
-       "p50_cm": 10
+       "snowfall_p50_cm": 16,
+       "p50_cm": 15
       }
      },
      "winters": 46
@@ -1011,10 +1011,10 @@
     "nights from 250 EUR per person",
     "~15 cm at the start"
    ],
-   "score": 6.2,
+   "score": 0.0,
    "score_parts": {
     "MONEY": 0,
-    "SNOW": 12
+    "SNOW": 0
    },
    "rank": 10
   }

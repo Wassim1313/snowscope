@@ -18,7 +18,7 @@
   "MONEY",
   "SNOW"
  ],
- "snow_day0": "2026-11-24",
+ "snow_day0": "2026-11-25",
  "snow_stale": false,
  "projection": true,
  "travel": null,
@@ -68,21 +68,21 @@
      "cm": 105,
      "p20": 95,
      "p50": 105,
-     "p80": 125,
+     "p80": 130,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 120,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 15,
-       "p50_cm": 110
+       "horizon_days": 13,
+       "snowfall_p50_cm": 16,
+       "p50_cm": 115
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 42,
+       "snowfall_p50_cm": 27,
        "p50_cm": 100
       }
      },
@@ -115,113 +115,12 @@
    "cons": [
     "10 lifts, queues on peak days"
    ],
-   "score": 70.2,
+   "score": 71.3,
    "score_parts": {
     "MONEY": 96,
-    "SNOW": 44
+    "SNOW": 46
    },
    "rank": 1
-  },
-  {
-   "slug": "valfrejus",
-   "label": "Valfréjus · La Norma",
-   "country": "FR",
-   "area": "Maurienne",
-   "lat": 45.15836,
-   "lon": 6.66075,
-   "top_m": 2724,
-   "base_m": 1552,
-   "km": 36.0,
-   "lifts": 9,
-   "opens": "2026-12-19",
-   "pass_day_eur": 43.6,
-   "pass_day_walkup": 43.6,
-   "pass_day_multi_eur": 36.13,
-   "pass_multi": {
-    "days": 6,
-    "price": 216.8,
-    "ccy": "EUR",
-    "per_day": 36.13,
-    "estimated": false,
-    "note": "6-day adult pass booked online >=6 days ahead; covers Valfrejus+La Norma",
-    "src": "https://www.la-norma.ski/en/ski-passes-prices/"
-   },
-   "pass_day_local": {
-    "ccy": "EUR",
-    "holiday": 43.6,
-    "regular": 43.6
-   },
-   "pass_period": "holiday",
-   "pass_note": "one pass for both resorts",
-   "pass_src": "https://www.valfrejus.com",
-   "night_eur": 48.0,
-   "food_day_eur": 38.0,
-   "stay_src": "estimate: Valfréjus / La Norma residences",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 70,
-    "start": {
-     "cm": 90,
-     "p20": 80,
-     "p50": 90,
-     "p80": 110,
-     "p_ge50": 1.0,
-     "basis": "ensemble+climatology",
-     "normal_cm": 80,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 19,
-       "p50_cm": 90
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 51,
-       "p50_cm": 90
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 217,
-    "hotel_eur": 336,
-    "food_eur": 266,
-    "total_eur": 819,
-    "pass_basis": "advance 6-day pass",
-    "pass_walkup": 262,
-    "party_total_eur": 819,
-    "left_eur": 181,
-    "need_eur": 0,
-    "fits": true
-   },
-   "tiers": {
-    "pass": "LOW",
-    "hotel": "LOW",
-    "pistes": "LOW",
-    "snow": "MID"
-   },
-   "value_cm_per_eur": 2.49,
-   "pros": [
-    "6-day pass 217 EUR",
-    "cheap places to stay"
-   ],
-   "cons": [
-    "only 36 km of pistes",
-    "~90 cm at the start",
-    "9 lifts, queues on peak days"
-   ],
-   "score": 63.5,
-   "score_parts": {
-    "MONEY": 95,
-    "SNOW": 32
-   },
-   "rank": 2
   },
   {
    "slug": "aussois",
@@ -263,11 +162,11 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 55,
+    "now_cm": 60,
     "start": {
-     "cm": 80,
+     "cm": 75,
      "p20": 70,
-     "p50": 80,
+     "p50": 75,
      "p80": 95,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
@@ -275,15 +174,15 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 19,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 17,
        "p50_cm": 80
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 51,
-       "p50_cm": 80
+       "snowfall_p50_cm": 37,
+       "p50_cm": 75
       }
      },
      "winters": 46
@@ -307,20 +206,121 @@
     "pistes": "LOW",
     "snow": "MID"
    },
-   "value_cm_per_eur": 2.26,
+   "value_cm_per_eur": 2.12,
    "pros": [
     "6-day pass 212 EUR",
     "cheap places to stay"
    ],
    "cons": [
     "only 30 km of pistes",
-    "~80 cm at the start",
+    "~75 cm at the start",
     "10 lifts, queues on peak days"
    ],
-   "score": 62.0,
+   "score": 61.5,
    "score_parts": {
     "MONEY": 100,
-    "SNOW": 24
+    "SNOW": 23
+   },
+   "rank": 2
+  },
+  {
+   "slug": "valfrejus",
+   "label": "Valfréjus · La Norma",
+   "country": "FR",
+   "area": "Maurienne",
+   "lat": 45.15836,
+   "lon": 6.66075,
+   "top_m": 2724,
+   "base_m": 1552,
+   "km": 36.0,
+   "lifts": 9,
+   "opens": "2026-12-19",
+   "pass_day_eur": 43.6,
+   "pass_day_walkup": 43.6,
+   "pass_day_multi_eur": 36.13,
+   "pass_multi": {
+    "days": 6,
+    "price": 216.8,
+    "ccy": "EUR",
+    "per_day": 36.13,
+    "estimated": false,
+    "note": "6-day adult pass booked online >=6 days ahead; covers Valfrejus+La Norma",
+    "src": "https://www.la-norma.ski/en/ski-passes-prices/"
+   },
+   "pass_day_local": {
+    "ccy": "EUR",
+    "holiday": 43.6,
+    "regular": 43.6
+   },
+   "pass_period": "holiday",
+   "pass_note": "one pass for both resorts",
+   "pass_src": "https://www.valfrejus.com",
+   "night_eur": 48.0,
+   "food_day_eur": 38.0,
+   "stay_src": "estimate: Valfréjus / La Norma residences",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 65,
+    "start": {
+     "cm": 80,
+     "p20": 75,
+     "p50": 80,
+     "p80": 100,
+     "p_ge50": 1.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 80,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 17,
+       "p50_cm": 80
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 37,
+       "p50_cm": 80
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 217,
+    "hotel_eur": 336,
+    "food_eur": 266,
+    "total_eur": 819,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 262,
+    "party_total_eur": 819,
+    "left_eur": 181,
+    "need_eur": 0,
+    "fits": true
+   },
+   "tiers": {
+    "pass": "LOW",
+    "hotel": "LOW",
+    "pistes": "LOW",
+    "snow": "MID"
+   },
+   "value_cm_per_eur": 2.21,
+   "pros": [
+    "6-day pass 217 EUR",
+    "cheap places to stay"
+   ],
+   "cons": [
+    "only 36 km of pistes",
+    "~80 cm at the start",
+    "9 lifts, queues on peak days"
+   ],
+   "score": 61.0,
+   "score_parts": {
+    "MONEY": 95,
+    "SNOW": 27
    },
    "rank": 3
   },
@@ -366,9 +366,9 @@
    "snow": {
     "now_cm": 70,
     "start": {
-     "cm": 90,
-     "p20": 80,
-     "p50": 90,
+     "cm": 85,
+     "p20": 75,
+     "p50": 85,
      "p80": 105,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
@@ -376,15 +376,15 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 15,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 16,
        "p50_cm": 95
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 42,
-       "p50_cm": 85
+       "snowfall_p50_cm": 27,
+       "p50_cm": 80
       }
      },
      "winters": 46
@@ -408,19 +408,19 @@
     "pistes": "MID",
     "snow": "MID"
    },
-   "value_cm_per_eur": 2.09,
+   "value_cm_per_eur": 1.97,
    "pros": [
     "6-day pass 258 EUR",
     "cheap places to stay",
     "32 lifts"
    ],
    "cons": [
-    "~90 cm at the start"
+    "~85 cm at the start"
    ],
-   "score": 60.7,
+   "score": 60.1,
    "score_parts": {
     "MONEY": 89,
-    "SNOW": 32
+    "SNOW": 31
    },
    "rank": 4
   },
@@ -464,26 +464,26 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 55,
+    "now_cm": 60,
     "start": {
      "cm": 75,
      "p20": 70,
      "p50": 75,
      "p80": 95,
-     "p_ge50": 0.99,
+     "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 75,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
+       "horizon_days": 13,
        "snowfall_p50_cm": 18,
        "p50_cm": 80
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 51,
+       "snowfall_p50_cm": 37,
        "p50_cm": 75
       }
      },
@@ -517,10 +517,10 @@
     "only 45 km of pistes",
     "~75 cm at the start"
    ],
-   "score": 57.4,
+   "score": 59.0,
    "score_parts": {
     "MONEY": 95,
-    "SNOW": 20
+    "SNOW": 23
    },
    "rank": 5
   },
@@ -567,25 +567,25 @@
    "snow": {
     "now_cm": 80,
     "start": {
-     "cm": 100,
-     "p20": 90,
-     "p50": 100,
-     "p80": 120,
+     "cm": 95,
+     "p20": 85,
+     "p50": 95,
+     "p80": 115,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 90,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 22,
-       "p50_cm": 115
+       "horizon_days": 13,
+       "snowfall_p50_cm": 17,
+       "p50_cm": 110
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 42,
-       "p50_cm": 95
+       "snowfall_p50_cm": 27,
+       "p50_cm": 90
       }
      },
      "winters": 46
@@ -609,17 +609,18 @@
     "pistes": "MID",
     "snow": "MID"
    },
-   "value_cm_per_eur": 1.93,
+   "value_cm_per_eur": 1.83,
    "pros": [
     "solid all-rounder"
    ],
    "cons": [
-    "1,081 EUR per person"
+    "1,081 EUR per person",
+    "~95 cm at the start"
    ],
-   "score": 56.8,
+   "score": 56.0,
    "score_parts": {
     "MONEY": 74,
-    "SNOW": 40
+    "SNOW": 38
    },
    "rank": 6
   },
@@ -666,7 +667,7 @@
     "now_cm": 155,
     "start": {
      "cm": 175,
-     "p20": 160,
+     "p20": 165,
      "p50": 175,
      "p80": 195,
      "p_ge50": 1.0,
@@ -675,15 +676,15 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
+       "horizon_days": 13,
        "snowfall_p50_cm": 18,
        "p50_cm": 185
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 38,
-       "p50_cm": 170
+       "snowfall_p50_cm": 25,
+       "p50_cm": 165
       }
      },
      "winters": 46
@@ -765,27 +766,27 @@
     "pass_multi"
    ],
    "snow": {
-    "now_cm": 60,
+    "now_cm": 55,
     "start": {
-     "cm": 75,
-     "p20": 65,
-     "p50": 75,
-     "p80": 100,
-     "p_ge50": 0.98,
+     "cm": 70,
+     "p20": 60,
+     "p50": 70,
+     "p80": 90,
+     "p_ge50": 0.97,
      "basis": "ensemble+climatology",
      "normal_cm": 115,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 14,
-       "p50_cm": 85
+       "horizon_days": 13,
+       "snowfall_p50_cm": 9,
+       "p50_cm": 80
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 24,
-       "p50_cm": 70
+       "snowfall_p50_cm": 26,
+       "p50_cm": 65
       }
      },
      "winters": 46
@@ -809,19 +810,19 @@
     "pistes": "LOW",
     "snow": "MID"
    },
-   "value_cm_per_eur": 1.25,
+   "value_cm_per_eur": 1.17,
    "pros": [
     "38 lifts"
    ],
    "cons": [
     "1,186 EUR per person",
     "only 16 km of pistes",
-    "~75 cm at the start"
+    "~70 cm at the start"
    ],
-   "score": 42.5,
+   "score": 42.1,
    "score_parts": {
     "MONEY": 65,
-    "SNOW": 20
+    "SNOW": 19
    },
    "rank": 8
   },
@@ -868,24 +869,24 @@
    "snow": {
     "now_cm": 65,
     "start": {
-     "cm": 80,
+     "cm": 75,
      "p20": 70,
-     "p50": 80,
-     "p80": 100,
-     "p_ge50": 0.95,
+     "p50": 75,
+     "p80": 95,
+     "p_ge50": 0.94,
      "basis": "ensemble+climatology",
      "normal_cm": 160,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 20,
-       "p50_cm": 90
+       "horizon_days": 13,
+       "snowfall_p50_cm": 15,
+       "p50_cm": 85
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 28,
+       "snowfall_p50_cm": 24,
        "p50_cm": 75
       }
      },
@@ -910,18 +911,18 @@
     "pistes": "MID",
     "snow": "MID"
    },
-   "value_cm_per_eur": 1.25,
+   "value_cm_per_eur": 1.17,
    "pros": [
     "skiing up to 3208 m"
    ],
    "cons": [
     "1,260 EUR per person",
-    "~80 cm at the start"
+    "~75 cm at the start"
    ],
-   "score": 41.4,
+   "score": 41.0,
    "score_parts": {
     "MONEY": 59,
-    "SNOW": 24
+    "SNOW": 23
    },
    "rank": 9
   },
@@ -966,27 +967,27 @@
     "pass_multi"
    ],
    "snow": {
-    "now_cm": 75,
+    "now_cm": 70,
     "start": {
-     "cm": 95,
-     "p20": 80,
-     "p50": 95,
-     "p80": 105,
+     "cm": 85,
+     "p20": 75,
+     "p50": 85,
+     "p80": 100,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 70,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 14,
-       "p50_cm": 100
+       "horizon_days": 13,
+       "snowfall_p50_cm": 10,
+       "p50_cm": 90
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 45,
-       "p50_cm": 90
+       "snowfall_p50_cm": 29,
+       "p50_cm": 80
       }
      },
      "winters": 46
@@ -1010,19 +1011,19 @@
     "pistes": "LOW",
     "snow": "MID"
    },
-   "value_cm_per_eur": 1.58,
+   "value_cm_per_eur": 1.41,
    "pros": [
     "solid all-rounder"
    ],
    "cons": [
     "1,504 EUR per person",
     "only 17 km of pistes",
-    "~95 cm at the start"
+    "~85 cm at the start"
    ],
-   "score": 37.4,
+   "score": 34.8,
    "score_parts": {
     "MONEY": 39,
-    "SNOW": 36
+    "SNOW": 31
    },
    "rank": 10
   },
@@ -1070,23 +1071,23 @@
     "now_cm": 35,
     "start": {
      "cm": 50,
-     "p20": 40,
+     "p20": 45,
      "p50": 50,
-     "p80": 65,
-     "p_ge50": 0.49,
+     "p80": 60,
+     "p_ge50": 0.34,
      "basis": "ensemble+climatology",
      "normal_cm": 50,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 14,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 8,
        "p50_cm": 55
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 24,
+       "snowfall_p50_cm": 26,
        "p50_cm": 45
       }
      },
@@ -1120,10 +1121,10 @@
     "only 38 km of pistes",
     "~50 cm at the start"
    ],
-   "score": 32.8,
+   "score": 34.7,
    "score_parts": {
     "MONEY": 66,
-    "SNOW": 0
+    "SNOW": 4
    },
    "rank": 11
   },
@@ -1168,27 +1169,27 @@
     "pass_multi"
    ],
    "snow": {
-    "now_cm": 35,
+    "now_cm": 30,
     "start": {
-     "cm": 50,
-     "p20": 40,
-     "p50": 50,
-     "p80": 70,
-     "p_ge50": 0.51,
+     "cm": 45,
+     "p20": 35,
+     "p50": 45,
+     "p80": 55,
+     "p_ge50": 0.29,
      "basis": "ensemble+climatology",
      "normal_cm": 70,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 19,
-       "p50_cm": 60
+       "horizon_days": 13,
+       "snowfall_p50_cm": 10,
+       "p50_cm": 50
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 20,
-       "p50_cm": 45
+       "snowfall_p50_cm": 31,
+       "p50_cm": 40
       }
      },
      "winters": 46
@@ -1212,13 +1213,13 @@
     "pistes": "MID",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.81,
+   "value_cm_per_eur": 0.73,
    "pros": [
     "52 lifts"
    ],
    "cons": [
     "1,233 EUR per person",
-    "~50 cm at the start"
+    "~45 cm at the start"
    ],
    "score": 30.5,
    "score_parts": {
