@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" data-root="../" data-noads="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Snow day chance tomorrow in Ontario · SnowScope</title>
+<meta name="description" content="Will school be closed tomorrow? The chance of a snow day for every Ontario school board area: buses cancelled or schools closed, because of snow, freezing rain, heavy rain or extreme cold.">
+<meta name="google-adsense-account" content="ca-pub-6693878731812238">
+<link rel="canonical" href="https://snowscope.app/snowday/">
+<link rel="alternate" hreflang="en" href="https://snowscope.app/snowday/"><link rel="alternate" hreflang="fr" href="https://snowscope.app/snowday/?lang=fr">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowScope">
+<meta property="og:title" content="Snow day tomorrow? Check your chance">
+<meta property="og:description" content="The chance of a snow day for every Ontario school board area. Check yours and share it.">
+<meta property="og:url" content="https://snowscope.app/snowday/">
+<meta property="og:image" content="https://snowscope.app/snowday/map.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
+<link rel="stylesheet" href="../site.css">
+<style>
+[hidden]{display:none!important}
+.sd-hero{text-align:center;margin:10px 0 6px}
+.sd-pick{display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:wrap;margin:10px 0 4px}
+.sd-pick select{font:inherit;font-size:17px;font-weight:650;padding:10px 14px;border-radius:14px;border:2px solid var(--line,#d6dee8);background:var(--surface,#fff);color:inherit;max-width:100%}
+.sd-day{color:var(--ink2);font-size:15px;margin:2px 0 0}
+.meter{position:relative;width:min(330px,82vw);aspect-ratio:2/1.12;margin:14px auto 0}
+.meter svg{width:100%;height:100%;overflow:visible}
+.meter .num{position:absolute;left:0;right:0;bottom:4%;text-align:center;font-weight:800;font-size:clamp(54px,15vw,84px);line-height:1;letter-spacing:-2px}
+.meter .lab{position:absolute;left:0;right:0;bottom:-28px;text-align:center;font-weight:700;font-size:15px;color:var(--ink2)}
+.verdict{font-size:22px;font-weight:800;margin:40px 0 4px}
+.chips{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:10px 0}
+.chip{display:inline-flex;gap:6px;align-items:center;padding:7px 12px;border-radius:999px;background:var(--surface3,#eef3f8);font-weight:650;font-size:14px}
+.sd-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:16px 0 8px}
+.btn.big{font-size:17px;padding:13px 22px;border-radius:16px;font-weight:750}
+.sd-map{width:100%;border-radius:18px;display:block;margin-top:8px;border:1px solid var(--line,#d6dee8)}
+.sd-list{list-style:none;padding:0;margin:10px 0}
+.sd-list li{display:flex;align-items:center;gap:12px;padding:11px 4px;border-bottom:1px solid var(--line,#e3e9f0)}
+.sd-list .nm{flex:1;font-weight:650}
+.sd-list .cs{font-size:13px;color:var(--ink2)}
+.sd-list .pc{font-weight:800;font-size:20px;min-width:62px;text-align:right}
+.bar{height:8px;border-radius:4px;background:var(--surface3,#eef3f8);width:90px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:4px}
+.note{font-size:13px;color:var(--ink2);text-align:center;margin:14px 0}
+.tmr{margin-top:22px}
+</style>
+</head>
+<body data-page="snowday">
+<header class="top"><div class="wrap">
+  <a class="brand" href="../"><img src="../logo.svg" alt="" width="30" height="30">SnowScope</a>
+  <button class="btn icon langbtn" id="sdlang" aria-label="Language"><span class="ms">language</span></button>
+  <div class="acct" id="acct" style="margin-left:auto"></div>
+</div></header>
+<main class="wrap" style="max-width:720px">
+  <div class="sd-hero">
+    <h1 style="margin:6px 0 0" data-t="h1">Snow day tomorrow?</h1>
+    <div class="sd-pick"><select id="zone" aria-label="Your area"></select></div>
+    <p class="sd-day" id="day"></p>
+    <div class="meter" aria-live="polite">
+      <svg viewBox="0 0 200 112"><path d="M14 100 A86 86 0 0 1 186 100" fill="none" stroke="var(--surface3,#e8eef5)" stroke-width="18" stroke-linecap="round"/>
+        <path id="arc" d="M14 100 A86 86 0 0 1 186 100" fill="none" stroke="#3b82f6" stroke-width="18" stroke-linecap="round" pathLength="100" stroke-dasharray="0 100"/></svg>
+      <div class="num" id="num">–</div>
+      <div class="lab" data-t="lab">chance of a snow day</div>
+    </div>
+    <div class="verdict" id="verdict"></div>
+    <div class="chips" id="chips"></div>
+    <div class="sd-btns">
+      <button class="btn big" id="share"><span class="ms">ios_share</span> <span data-t="share">Share my chance</span></button>
+    </div>
+    <p class="note" data-t="fun">For fun: your school board makes the real call, usually before 6:30 am.</p>
+  </div>
+
+  <h2 style="margin-top:22px" data-t="all">Every area</h2>
+  <img class="sd-map" id="map" src="map.png" alt="Map of snow day chances in Ontario" width="1200" height="900" loading="lazy">
+  <ul class="sd-list" id="list"></ul>
+  <div class="tmr" id="tmr" hidden><h2 data-t="next">The school day after</h2><ul class="sd-list" id="list2"></ul></div>
+
+  <p class="note"><span data-t="what">Snow day = all school buses cancelled or schools closed in the area. “Some buses” = some routes or zones cancelled.</span></p>
+  <p class="small" style="text-align:center"><span data-t="app">Live snow map and powder alerts:</span> <a data-app-link href="../download/" data-t="get">Get the free app</a></p>
+  <footer class="foot"><nav><a href="../about/">About</a><a href="../contact/">Contact</a><a href="../">Snow today</a><a href="../terms/">Terms</a><a href="../privacy/">Privacy</a></nav>© 2026 SnowScope · Atlas Labs</footer>
+</main>
+<script src="../i18n.js"></script>
+<script src="../core.js"></script>
+<script>
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  var q = new URLSearchParams(location.search);
+  var lang = (q.get("lang") || (navigator.language || "en")).slice(0, 2) === "fr" ? "fr" : "en";
+  var T = {
+    en: {h1: "Snow day tomorrow?", lab: "chance of a snow day", share: "Share my chance", fun: "For fun: your school board makes the real call, usually before 6:30 am.",
+         all: "Every area", next: "The school day after", what: "Snow day = all school buses cancelled or schools closed in the area. “Some buses” = some routes or zones cancelled.",
+         app: "Live snow map and powder alerts:", get: "Get the free app", some: "Some buses cancelled", v: ["Pack your bag 🎒", "Small chance 🤞", "Maybe! 👀", "Good chance ❄️", "Very likely 🎉"],
+         c: {snow: "❄️ Snow", ice: "🧊 Freezing rain", rain: "🌧️ Heavy rain", cold: "🥶 Extreme cold", calm: "✅ Normal school day likely"}, cm: "cm of snow", mm: "mm", chill: "feels like",
+         sh: "My snow day chance for {d} in {z}: {p}% ❄️ Check yours:", days: ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], fdate: "{w} {d}"},
+    fr: {h1: "Tempête demain ?", lab: "chance de journée tempête", share: "Partager ma chance", fun: "Pour le fun : c’est ton conseil scolaire qui décide, en général avant 6 h 30.",
+         all: "Toutes les régions", next: "Le jour d’école suivant", what: "Journée tempête = tous les autobus scolaires annulés ou écoles fermées dans la région. « Quelques autobus » = certains trajets ou zones annulés.",
+         app: "Carte de la neige en direct et alertes poudreuse :", get: "Télécharger l’appli gratuite", some: "Quelques autobus annulés", v: ["Prépare ton sac 🎒", "Petite chance 🤞", "Peut-être ! 👀", "Bonne chance ❄️", "Très probable 🎉"],
+         c: {snow: "❄️ Neige", ice: "🧊 Pluie verglaçante", rain: "🌧️ Fortes pluies", cold: "🥶 Froid extrême", calm: "✅ Journée normale probable"}, cm: "cm de neige", mm: "mm", chill: "ressenti",
+         sh: "Ma chance de journée tempête pour {d} à {z} : {p} % ❄️ Vérifie la tienne :", days: ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"], fdate: "{w} {d}"}
+  }[lang];
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-t]").forEach(function (e) { if (T[e.dataset.t]) e.textContent = T[e.dataset.t]; });
+  $("sdlang").onclick = function () { q.set("lang", lang === "fr" ? "en" : "fr"); location.search = q.toString(); };
+  function col(p) { return p >= 0.6 ? "#d6285a" : p >= 0.35 ? "#f59e0b" : p >= 0.15 ? "#3b82f6" : "#94a3b8"; }
+  function pct(p) { return Math.round(100 * p); }
+  function fday(iso) {
+    var d = new Date(iso + "T12:00:00"), m = d.toLocaleDateString(lang === "fr" ? "fr-CA" : "en-CA", {month: "long", day: "numeric"});
+    return T.fdate.replace("{w}", T.days[d.getDay()]).replace("{d}", m);
+  }
+  function verdict(p) { return T.v[p >= 0.75 ? 4 : p >= 0.5 ? 3 : p >= 0.3 ? 2 : p >= 0.12 ? 1 : 0]; }
+  var data, cur;
+  function row(r) {
+    var li = document.createElement("li");
+    li.innerHTML = '<div style="flex:1"><div class="nm"></div><div class="cs"></div></div><div class="bar"><i></i></div><div class="pc"></div>';
+    li.querySelector(".nm").textContent = r.name;
+    li.querySelector(".cs").textContent = T.c[r.cause] + (r.p_any > r.p_full + 0.05 ? " · " + T.some + " " + pct(r.p_any) + "%" : "");
+    li.querySelector(".bar i").style.cssText = "width:" + pct(r.p_full) + "%;background:" + col(r.p_full);
+    li.querySelector(".pc").textContent = pct(r.p_full) + "%";
+    li.querySelector(".pc").style.color = col(r.p_full);
+    li.style.cursor = "pointer";
+    li.onclick = function () { $("zone").value = r.id; show(r.id); scrollTo({top: 0, behavior: "smooth"}); };
+    return li;
+  }
+  function show(id) {
+    var r = data.zones.filter(function (z) { return z.id === id; })[0] || data.zones[0];
+    cur = r;
+    try { localStorage.setItem("sd_zone", r.id); } catch (e) {}
+    var p = r.p_full, a = $("arc"), n = 0, t0 = performance.now();
+    a.setAttribute("stroke", col(p));
+    (function step(t) {                                   // the meter climbs (the shareable moment)
+      var k = Math.min(1, (t - t0) / 1100), e = 1 - Math.pow(1 - k, 3);
+      n = Math.round(100 * p * e);
+      a.setAttribute("stroke-dasharray", (100 * p * e) + " 100");
+      $("num").textContent = n + "%";
+      $("num").style.color = col(p * e);
+      if (k < 1) requestAnimationFrame(step);
+    })(t0);
+    $("verdict").textContent = verdict(p);
+    var ch = [T.c[r.cause]];
+    if (r.snow_cm >= 1) ch.push(r.snow_cm.toFixed(0) + " " + T.cm);
+    if (r.ice_mm >= 0.5) ch.push("🧊 " + r.ice_mm.toFixed(1) + " " + T.mm);
+    if (r.rain_mm >= 10) ch.push("🌧️ " + r.rain_mm.toFixed(0) + " " + T.mm);
+    if (r.chill_c <= -20) ch.push("🥶 " + T.chill + " " + r.chill_c + "°C");
+    if (r.p_any > p + 0.05) ch.push("🚌 " + T.some + " " + pct(r.p_any) + "%");
+    $("chips").innerHTML = "";
+    ch.forEach(function (c) { var s = document.createElement("span"); s.className = "chip"; s.textContent = c; $("chips").appendChild(s); });
+  }
+  $("share").onclick = function () {
+    var txt = T.sh.replace("{d}", fday(data.day)).replace("{z}", cur.name).replace("{p}", pct(cur.p_full));
+    var url = location.origin + location.pathname + "?z=" + cur.id + (lang === "fr" ? "&lang=fr" : "");
+    if (navigator.share) navigator.share({title: "Snow day", text: txt, url: url}).catch(function () {});
+    else { try { navigator.clipboard.writeText(txt + " " + url); $("share").lastElementChild.textContent = "✓"; } catch (e) {} }
+  };
+  fetch("data.json", {cache: "no-store"}).then(function (r) { return r.json(); }).then(function (d) {
+    data = d;
+    $("day").textContent = fday(d.day);
+    var sel = $("zone"), zs = d.zones.slice().sort(function (a, b) { return a.name.localeCompare(b.name); });
+    zs.forEach(function (z) { var o = document.createElement("option"); o.value = z.id; o.textContent = z.name; sel.appendChild(o); });
+    var want = q.get("z"); try { want = want || localStorage.getItem("sd_zone"); } catch (e) {}
+    want = want || "toronto";
+    sel.value = want; show(want);
+    sel.onchange = function () { show(sel.value); };
+    d.zones.forEach(function (z) { $("list").appendChild(row(z)); });
+    if (d.next && d.next.zones) {
+      $("tmr").hidden = false;
+      $("tmr").querySelector("h2").textContent = T.next + " · " + fday(d.next.day);
+      d.next.zones.slice(0, 8).forEach(function (z) { $("list2").appendChild(row(z)); });
+    }
+  });
+})();
+</script>
+</body>
+</html>
