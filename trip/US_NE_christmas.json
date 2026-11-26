@@ -10,7 +10,7 @@
  "budget_eur": 1000.0,
  "currency": "EUR",
  "fx": {
-  "date": "2026-11-23",
+  "date": "2026-11-25",
   "source": "frankfurter.app",
   "rate": null
  },
@@ -18,7 +18,7 @@
   "MONEY",
   "SNOW"
  ],
- "snow_day0": "2026-11-25",
+ "snow_day0": "2026-11-26",
  "snow_stale": false,
  "projection": true,
  "travel": null,
@@ -35,9 +35,9 @@
    "km": 41.0,
    "lifts": 9,
    "opens": "2026-11-26",
-   "pass_day_eur": 95.99,
-   "pass_day_walkup": 95.99,
-   "pass_day_multi_eur": 72.95,
+   "pass_day_eur": 96.02,
+   "pass_day_walkup": 96.02,
+   "pass_day_multi_eur": 72.98,
    "pass_multi": {
     "days": 5,
     "price": 399.0,
@@ -55,8 +55,8 @@
    "pass_period": "regular",
    "pass_note": "adult 1-day, online advance (resort's own 'advance purchase' rate, $20 off vs walk-up); independent resort (not Epic/Ikon); holiday window per resort's own 2026-27 ticket page",
    "pass_src": "https://jaypeakresort.com/skiing-riding/tickets-passes/202627-lift-tickets",
-   "night_eur": 100.56,
-   "food_day_eur": 50.28,
+   "night_eur": 100.59,
+   "food_day_eur": 50.3,
    "stay_src": "estimate: Jay Peak is in a remote/rural part of far-northern Vermont with generally lower lodging and food costs than central/southern VT resorts",
    "estimates": [
     "night_eur",
@@ -75,14 +75,14 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 8,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 6,
        "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 19,
+       "snowfall_p50_cm": 17,
        "p50_cm": 10
       }
      },
@@ -116,12 +116,112 @@
     "only 41 km of pistes",
     "~10 cm at the start"
    ],
-   "score": 75.0,
+   "score": 100.0,
    "score_parts": {
     "MONEY": 100,
-    "SNOW": 50
+    "SNOW": 100
    },
    "rank": 1
+  },
+  {
+   "slug": "sunday_river",
+   "label": "Sunday River",
+   "country": "US",
+   "area": "Maine",
+   "lat": 44.46687,
+   "lon": -70.87441,
+   "top_m": 955,
+   "base_m": 249,
+   "km": 86.0,
+   "lifts": 20,
+   "opens": "2026-11-18",
+   "pass_day_eur": 145.4,
+   "pass_day_walkup": 145.4,
+   "pass_day_multi_eur": 120.94,
+   "pass_multi": {
+    "days": 4,
+    "price": 529.0,
+    "ccy": "USD",
+    "per_day": 132.25,
+    "estimated": false,
+    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
+    "src": "https://www.ikonpass.com/en/passes/session-pass"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 159.0,
+    "regular": 81.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day, online advance, dynamic by date; Ikon-partner (Boyne) resort; 2026-27 adult day tickets reported ranging ~$89-$159 at peak, with weekday ~$81/weekend ~$117 cited separately; holiday figure is the top of that reported peak range",
+   "pass_src": "https://www.sundayriver.com/lift-tickets/full-day ; range cross-checked via https://www.onthesnow.com/maine/sunday-river/lift-tickets (Nov 2026)",
+   "night_eur": 109.74,
+   "food_day_eur": 54.87,
+   "stay_src": "estimate: based on Sunday River condo-rental search (condos roughly $120-$680/night total depending on size), per-person figure assumes sharing a 2-4 person condo; Bethel ME area food costs modest",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 0,
+    "start": {
+     "cm": 10,
+     "p20": 0,
+     "p50": 10,
+     "p80": 20,
+     "p_ge50": 0.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 30,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 3,
+       "p50_cm": 10
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 17,
+       "p50_cm": 5
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 726,
+    "hotel_eur": 768,
+    "food_eur": 384,
+    "total_eur": 1878,
+    "pass_basis": "advance 4-day pass",
+    "pass_walkup": 872,
+    "party_total_eur": 1878,
+    "left_eur": -878,
+    "need_eur": 878,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.08,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,878 EUR per person",
+    "~10 cm at the start",
+    "4-day pass 529 USD"
+   ],
+   "score": 70.0,
+   "score_parts": {
+    "MONEY": 40,
+    "SNOW": 100
+   },
+   "rank": 2
   },
   {
    "slug": "killington",
@@ -135,9 +235,9 @@
    "km": 107.0,
    "lifts": 22,
    "opens": "2026-11-17",
-   "pass_day_eur": 163.63,
-   "pass_day_walkup": 163.63,
-   "pass_day_multi_eur": 101.47,
+   "pass_day_eur": 163.69,
+   "pass_day_walkup": 163.69,
+   "pass_day_multi_eur": 101.51,
    "pass_multi": {
     "days": 4,
     "price": 444.0,
@@ -155,35 +255,35 @@
    "pass_period": "holiday",
    "pass_note": "adult 1-day, online advance, dynamic by date; resort/OnTheSnow list 2026-27 adult day tickets ranging roughly $129-$219, walk-up window rate seen at $225; holiday figure here is a representative late-Dec price, regular is a typical mid-Jan online-advance midweek price",
    "pass_src": "https://killington.com/lift-tickets ; range cross-checked via https://www.onthesnow.com/vermont/killington-resort/lift-tickets (Nov 2026)",
-   "night_eur": 127.98,
-   "food_day_eur": 59.42,
+   "night_eur": 128.03,
+   "food_day_eur": 59.44,
    "stay_src": "estimate: based on Orbitz/Booking.com/Priceline Killington-area hotel listings (avg ~$223/night double occupancy, higher at Christmas) halved per person, plus typical $20-25 on-mountain lunch + simple breakfast/dinner",
    "estimates": [
     "night_eur",
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 10,
+    "now_cm": 5,
     "start": {
-     "cm": 15,
-     "p20": 10,
-     "p50": 15,
-     "p80": 30,
-     "p_ge50": 0.01,
+     "cm": 10,
+     "p20": 5,
+     "p50": 10,
+     "p80": 20,
+     "p_ge50": 0.0,
      "basis": "ensemble+climatology",
      "normal_cm": 20,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 5,
-       "p50_cm": 20
+       "horizon_days": 13,
+       "snowfall_p50_cm": 3,
+       "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 15
+       "snowfall_p50_cm": 10,
+       "p50_cm": 10
       }
      },
      "winters": 46
@@ -207,21 +307,21 @@
     "pistes": "MID",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.15,
+   "value_cm_per_eur": 0.1,
    "pros": [
     "solid all-rounder"
    ],
    "cons": [
     "1,921 EUR per person",
     "nights from 128 EUR per person",
-    "~15 cm at the start"
+    "~10 cm at the start"
    ],
    "score": 66.6,
    "score_parts": {
     "MONEY": 33,
     "SNOW": 100
    },
-   "rank": 2
+   "rank": 3
   },
   {
    "slug": "sugarbush_resort",
@@ -235,9 +335,9 @@
    "km": 80.0,
    "lifts": 18,
    "opens": "2026-11-21",
-   "pass_day_eur": 181.92,
-   "pass_day_walkup": 181.92,
-   "pass_day_multi_eur": 120.9,
+   "pass_day_eur": 181.98,
+   "pass_day_walkup": 181.98,
+   "pass_day_multi_eur": 120.94,
    "pass_multi": {
     "days": 4,
     "price": 529.0,
@@ -255,8 +355,8 @@
    "pass_period": "holiday",
    "pass_note": "adult 1-day, online advance; Sugarbush publishes a flat weekday ($129) / weekend ($199) adult online price rather than per-day dynamic calendar pricing for 2026-27 (Ikon-partner resort); holiday period treated as weekend-tier pricing",
    "pass_src": "https://www.sugarbush.com/plan-your-trip/lift-tickets",
-   "night_eur": 118.84,
-   "food_day_eur": 59.42,
+   "night_eur": 118.88,
+   "food_day_eur": 59.44,
    "stay_src": "estimate: based on general Mad River Valley (Warren/Waitsfield VT) lodging cost tier, similar to Killington/Okemo, plus ~$20-25 on-mountain lunch",
    "estimates": [
     "night_eur",
@@ -269,20 +369,20 @@
      "p20": 5,
      "p50": 10,
      "p80": 20,
-     "p_ge50": 0.01,
+     "p_ge50": 0.0,
      "basis": "ensemble+climatology",
      "normal_cm": 20,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 6,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 2,
        "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 11,
+       "snowfall_p50_cm": 14,
        "p50_cm": 10
       }
      },
@@ -290,15 +390,15 @@
     }
    },
    "cost": {
-    "pass_eur": 725,
+    "pass_eur": 726,
     "hotel_eur": 832,
     "food_eur": 416,
-    "total_eur": 1973,
+    "total_eur": 1974,
     "pass_basis": "advance 4-day pass",
     "pass_walkup": 1092,
-    "party_total_eur": 1973,
-    "left_eur": -973,
-    "need_eur": 973,
+    "party_total_eur": 1974,
+    "left_eur": -974,
+    "need_eur": 974,
     "fits": false
    },
    "tiers": {
@@ -312,16 +412,16 @@
     "solid all-rounder"
    ],
    "cons": [
-    "1,973 EUR per person",
+    "1,974 EUR per person",
     "~10 cm at the start",
     "4-day pass 529 USD"
    ],
-   "score": 37.5,
+   "score": 62.5,
    "score_parts": {
     "MONEY": 25,
-    "SNOW": 50
+    "SNOW": 100
    },
-   "rank": 3
+   "rank": 4
   },
   {
    "slug": "loon_mountain_resort",
@@ -335,9 +435,9 @@
    "km": 46.0,
    "lifts": 12,
    "opens": "2026-11-21",
-   "pass_day_eur": 159.98,
-   "pass_day_walkup": 159.98,
-   "pass_day_multi_eur": 120.9,
+   "pass_day_eur": 160.04,
+   "pass_day_walkup": 160.04,
+   "pass_day_multi_eur": 120.94,
    "pass_multi": {
     "days": 4,
     "price": 529.0,
@@ -355,50 +455,50 @@
    "pass_period": "holiday",
    "pass_note": "adult 1-day, online advance, dynamic by date; Ikon-partner (Boyne) resort; search results showed a wide and inconsistent range (from $89 far in advance up to a $159 'weekday' figure), so the holiday price here is an estimate toward the upper end of that range rather than a single confirmed published figure",
    "pass_src": "estimate based on https://www.loonmtn.com/lift-tickets/day-ticket and https://www.onthesnow.com/new-hampshire/loon-mountain/lift-tickets (dynamic calendar prices not statically retrievable, Nov 2026)",
-   "night_eur": 127.98,
-   "food_day_eur": 54.85,
+   "night_eur": 128.03,
+   "food_day_eur": 54.87,
    "stay_src": "estimate: Lincoln NH area hotels (e.g. RiverWalk Resort at Loon Mountain) reported around $260-$291/night total during peak season, halved per person sharing a double room; NH has no sales tax which slightly lowers food costs",
    "estimates": [
     "night_eur",
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 5,
+    "now_cm": 0,
     "start": {
      "cm": 10,
      "p20": 5,
      "p50": 10,
-     "p80": 20,
+     "p80": 15,
      "p_ge50": 0.0,
      "basis": "ensemble+climatology",
      "normal_cm": 25,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 5,
-       "p50_cm": 15
+       "horizon_days": 13,
+       "snowfall_p50_cm": 3,
+       "p50_cm": 10
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 10
+       "snowfall_p50_cm": 14,
+       "p50_cm": 5
       }
      },
      "winters": 46
     }
    },
    "cost": {
-    "pass_eur": 725,
+    "pass_eur": 726,
     "hotel_eur": 896,
     "food_eur": 384,
-    "total_eur": 2005,
+    "total_eur": 2006,
     "pass_basis": "advance 4-day pass",
     "pass_walkup": 960,
-    "party_total_eur": 2005,
-    "left_eur": -1005,
-    "need_eur": 1005,
+    "party_total_eur": 2006,
+    "left_eur": -1006,
+    "need_eur": 1006,
     "fits": false
    },
    "tiers": {
@@ -412,16 +512,16 @@
     "solid all-rounder"
    ],
    "cons": [
-    "2,005 EUR per person",
+    "2,006 EUR per person",
     "nights from 128 EUR per person",
     "only 46 km of pistes"
    ],
-   "score": 35.0,
+   "score": 60.0,
    "score_parts": {
     "MONEY": 20,
-    "SNOW": 50
+    "SNOW": 100
    },
-   "rank": 4
+   "rank": 5
   },
   {
    "slug": "stowe",
@@ -435,9 +535,9 @@
    "km": 67.0,
    "lifts": 12,
    "opens": "2026-11-21",
-   "pass_day_eur": 205.69,
-   "pass_day_walkup": 205.69,
-   "pass_day_multi_eur": 91.55,
+   "pass_day_eur": 205.76,
+   "pass_day_walkup": 205.76,
+   "pass_day_multi_eur": 91.58,
    "pass_multi": {
     "days": 7,
     "price": 701.0,
@@ -455,8 +555,8 @@
    "pass_period": "holiday",
    "pass_note": "adult 1-day, online advance, dynamic by date; 2026-27 adult day tickets reported in the $169-$239 range with weekday listed around $207; holiday figure is a representative peak-week price, not exact published holiday rate",
    "pass_src": "https://www.onthesnow.com/vermont/stowe-mountain-resort/lift-tickets (official stowe.com ticket calendar did not return static prices for this fetch, Nov 2026)",
-   "night_eur": 146.27,
-   "food_day_eur": 63.99,
+   "night_eur": 146.32,
+   "food_day_eur": 64.01,
    "stay_src": "estimate: based on Stowe hotel search (general range ~$90-$500+/night, Green Mountain Inn Christmas package ~$534 pp/2 nights) and Stowe's higher cost tier vs other VT resorts; food slightly above Killington/Okemo tier",
    "estimates": [
     "night_eur",
@@ -466,23 +566,23 @@
     "now_cm": 5,
     "start": {
      "cm": 10,
-     "p20": 10,
+     "p20": 5,
      "p50": 10,
-     "p80": 25,
+     "p80": 20,
      "p_ge50": 0.01,
      "basis": "ensemble+climatology",
      "normal_cm": 30,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 20
+       "horizon_days": 13,
+       "snowfall_p50_cm": 6,
+       "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 13,
+       "snowfall_p50_cm": 14,
        "p50_cm": 10
       }
      },
@@ -495,7 +595,7 @@
     "food_eur": 448,
     "total_eur": 2021,
     "pass_basis": "advance 7-day pass",
-    "pass_walkup": 1234,
+    "pass_walkup": 1235,
     "party_total_eur": 2021,
     "left_eur": -1021,
     "need_eur": 1021,
@@ -516,12 +616,12 @@
     "nights from 146 EUR per person",
     "~10 cm at the start"
    ],
-   "score": 33.8,
+   "score": 58.8,
    "score_parts": {
     "MONEY": 18,
-    "SNOW": 50
+    "SNOW": 100
    },
-   "rank": 5
+   "rank": 6
   },
   {
    "slug": "mount_snow",
@@ -535,9 +635,9 @@
    "km": 61.0,
    "lifts": 19,
    "opens": "2026-11-21",
-   "pass_day_eur": 181.92,
-   "pass_day_walkup": 181.92,
-   "pass_day_multi_eur": 91.55,
+   "pass_day_eur": 181.98,
+   "pass_day_walkup": 181.98,
+   "pass_day_multi_eur": 91.58,
    "pass_multi": {
     "days": 7,
     "price": 701.0,
@@ -555,8 +655,8 @@
    "pass_period": "holiday",
    "pass_note": "adult 1-day, online advance, dynamic by date; Epic-pass resort (Vail Resorts); 2026-27 adult day tickets reported ranging ~$139-$229 (weekday ~$157/weekend ~$176 cited separately); holiday figure represents a peak late-Dec day",
    "pass_src": "https://www.mountsnow.com/plan-your-trip/lift-access/passes.aspx ; range cross-checked via https://www.onthesnow.com/vermont/mount-snow/lift-tickets (Nov 2026)",
-   "night_eur": 118.84,
-   "food_day_eur": 59.42,
+   "night_eur": 118.88,
+   "food_day_eur": 59.44,
    "stay_src": "estimate: West Dover/Wilmington VT area lodging, mid-range tier similar to Killington/Okemo, plus typical on-mountain lunch cost",
    "estimates": [
     "night_eur",
@@ -568,15 +668,15 @@
      "cm": 5,
      "p20": 0,
      "p50": 5,
-     "p80": 20,
+     "p80": 15,
      "p_ge50": 0.0,
      "basis": "ensemble+climatology",
      "normal_cm": 20,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 11,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 5,
        "p50_cm": 10
       },
       "GFS": {
@@ -621,7 +721,7 @@
     "MONEY": 53,
     "SNOW": 0
    },
-   "rank": 6
+   "rank": 7
   },
   {
    "slug": "okemo_mountain",
@@ -635,9 +735,9 @@
    "km": 70.0,
    "lifts": 21,
    "opens": "2026-11-21",
-   "pass_day_eur": 209.34,
-   "pass_day_walkup": 209.34,
-   "pass_day_multi_eur": 91.55,
+   "pass_day_eur": 209.42,
+   "pass_day_walkup": 209.42,
+   "pass_day_multi_eur": 91.58,
    "pass_multi": {
     "days": 7,
     "price": 701.0,
@@ -655,8 +755,8 @@
    "pass_period": "holiday",
    "pass_note": "adult 1-day, online advance, dynamic by date; Epic-pass resort (Vail Resorts); 2026-27 adult day tickets reported ranging ~$149-$239 (weekday ~$161/weekend ~$219 cited separately); holiday figure represents a peak late-Dec day",
    "pass_src": "https://www.okemo.com/plan-your-trip/lift-access/tickets.aspx ; range cross-checked via https://www.onthesnow.com/vermont/okemo-mountain-resort/lift-tickets (Nov 2026)",
-   "night_eur": 123.41,
-   "food_day_eur": 59.42,
+   "night_eur": 123.46,
+   "food_day_eur": 59.44,
    "stay_src": "estimate: based on Ludlow VT area lodging cost tier (similar to Killington), plus typical $20-25 on-mountain lunch",
    "estimates": [
     "night_eur",
@@ -668,21 +768,21 @@
      "cm": 5,
      "p20": 0,
      "p50": 5,
-     "p80": 20,
+     "p80": 15,
      "p_ge50": 0.0,
      "basis": "ensemble+climatology",
      "normal_cm": 20,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 5,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 2,
        "p50_cm": 10
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 9,
+       "snowfall_p50_cm": 10,
        "p50_cm": 5
       }
      },
@@ -695,7 +795,7 @@
     "food_eur": 416,
     "total_eur": 1829,
     "pass_basis": "advance 7-day pass",
-    "pass_walkup": 1256,
+    "pass_walkup": 1257,
     "party_total_eur": 1829,
     "left_eur": -829,
     "need_eur": 829,
@@ -721,106 +821,6 @@
     "MONEY": 48,
     "SNOW": 0
    },
-   "rank": 7
-  },
-  {
-   "slug": "sunday_river",
-   "label": "Sunday River",
-   "country": "US",
-   "area": "Maine",
-   "lat": 44.46687,
-   "lon": -70.87441,
-   "top_m": 955,
-   "base_m": 249,
-   "km": 86.0,
-   "lifts": 20,
-   "opens": "2026-11-18",
-   "pass_day_eur": 145.35,
-   "pass_day_walkup": 145.35,
-   "pass_day_multi_eur": 120.9,
-   "pass_multi": {
-    "days": 4,
-    "price": 529.0,
-    "ccy": "USD",
-    "per_day": 132.25,
-    "estimated": false,
-    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
-    "src": "https://www.ikonpass.com/en/passes/session-pass"
-   },
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 159.0,
-    "regular": 81.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult 1-day, online advance, dynamic by date; Ikon-partner (Boyne) resort; 2026-27 adult day tickets reported ranging ~$89-$159 at peak, with weekday ~$81/weekend ~$117 cited separately; holiday figure is the top of that reported peak range",
-   "pass_src": "https://www.sundayriver.com/lift-tickets/full-day ; range cross-checked via https://www.onthesnow.com/maine/sunday-river/lift-tickets (Nov 2026)",
-   "night_eur": 109.7,
-   "food_day_eur": 54.85,
-   "stay_src": "estimate: based on Sunday River condo-rental search (condos roughly $120-$680/night total depending on size), per-person figure assumes sharing a 2-4 person condo; Bethel ME area food costs modest",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 0,
-    "start": {
-     "cm": 5,
-     "p20": 5,
-     "p50": 5,
-     "p80": 20,
-     "p_ge50": 0.0,
-     "basis": "ensemble+climatology",
-     "normal_cm": 30,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 5,
-       "p50_cm": 10
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 15,
-       "p50_cm": 5
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 725,
-    "hotel_eur": 768,
-    "food_eur": 384,
-    "total_eur": 1877,
-    "pass_basis": "advance 4-day pass",
-    "pass_walkup": 872,
-    "party_total_eur": 1877,
-    "left_eur": -877,
-    "need_eur": 877,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "MID",
-    "pistes": "MID",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.04,
-   "pros": [
-    "solid all-rounder"
-   ],
-   "cons": [
-    "1,877 EUR per person",
-    "~5 cm at the start",
-    "4-day pass 529 USD"
-   ],
-   "score": 20.0,
-   "score_parts": {
-    "MONEY": 40,
-    "SNOW": 0
-   },
    "rank": 8
   },
   {
@@ -835,9 +835,9 @@
    "km": 72.0,
    "lifts": 17,
    "opens": "2026-11-25",
-   "pass_day_eur": 191.06,
-   "pass_day_walkup": 191.06,
-   "pass_day_multi_eur": 120.9,
+   "pass_day_eur": 191.13,
+   "pass_day_walkup": 191.13,
+   "pass_day_multi_eur": 120.94,
    "pass_multi": {
     "days": 4,
     "price": 529.0,
@@ -855,8 +855,8 @@
    "pass_period": "holiday",
    "pass_note": "adult 1-day, online advance, dynamic by date; Ikon-partner resort; 2026-27 Stratton publishes an explicit 'Peak Days + Weekends' adult rate of $209, with weekday/weekend list prices of $201/$229 and early-booking online rates as low as $127-$139",
    "pass_src": "https://www.onthesnow.com/vermont/stratton-mountain/lift-tickets ; early-booking rate via https://www.stratton.com/plan-your-trip/deals-and-packages/early-booking-offer",
-   "night_eur": 137.12,
-   "food_day_eur": 63.99,
+   "night_eur": 137.17,
+   "food_day_eur": 64.01,
    "stay_src": "estimate: Stratton/Manchester VT area is on the pricier side similar to Stowe; general hotel/condo search context, no exact Christmas-week figure found",
    "estimates": [
     "night_eur",
@@ -868,21 +868,21 @@
      "cm": 5,
      "p20": 0,
      "p50": 5,
-     "p80": 20,
+     "p80": 15,
      "p_ge50": 0.0,
      "basis": "ensemble+climatology",
      "normal_cm": 20,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 12,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 6,
        "p50_cm": 10
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 9,
+       "snowfall_p50_cm": 10,
        "p50_cm": 5
       }
      },
@@ -890,15 +890,15 @@
     }
    },
    "cost": {
-    "pass_eur": 725,
+    "pass_eur": 726,
     "hotel_eur": 960,
     "food_eur": 448,
-    "total_eur": 2133,
+    "total_eur": 2134,
     "pass_basis": "advance 4-day pass",
-    "pass_walkup": 1146,
-    "party_total_eur": 2133,
-    "left_eur": -1133,
-    "need_eur": 1133,
+    "pass_walkup": 1147,
+    "party_total_eur": 2134,
+    "left_eur": -1134,
+    "need_eur": 1134,
     "fits": false
    },
    "tiers": {
@@ -912,7 +912,7 @@
     "solid all-rounder"
    ],
    "cons": [
-    "2,133 EUR per person",
+    "2,134 EUR per person",
     "nights from 137 EUR per person",
     "~5 cm at the start"
    ],
