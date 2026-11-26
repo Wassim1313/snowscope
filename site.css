@@ -1044,3 +1044,16 @@ td.plk,.plk{color:var(--gold-ink)}td.plk .ms{font-size:16px;vertical-align:-3px}
 }
 @media (prefers-reduced-motion:reduce){.planbud .fa,.planbud .fb{animation:none}}
 
+/* cookie-free stays card (2026-11-26, app.js bindStays preview): named places near the resort + Stay22 links */
+details.stays .staymap.litebox{height:auto;overflow:visible;box-shadow:none;background:transparent}
+.lite{padding:12px;border-radius:var(--r-md);background:linear-gradient(160deg,var(--accent-tint),var(--surface2));color:var(--ink)}
+.lite .lith{display:flex;align-items:center;gap:8px}.lite .lith .ms{color:var(--accent-ink);font-size:22px}.lite .lith b{flex:1;font-size:15px}
+.lite .partner{font-size:11px;color:var(--ink3)}
+.lite .litd{display:flex;align-items:center;gap:6px;margin:4px 0 8px;font-size:13px;color:var(--ink2)}.lite .litd .ms{font-size:16px}
+.lite ul{list-style:none;margin:0 0 10px;padding:0;display:grid;gap:6px}
+.lite li a{display:flex;align-items:center;gap:8px;padding:9px 10px;border-radius:12px;background:var(--surface);color:inherit;text-decoration:none;box-shadow:var(--e1)}
+.lite .ltn{flex:1;min-width:0}.lite .ltn bdi{display:block;font-weight:650;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lite .ltn small{display:block;font-size:12px;color:var(--ink3)}
+.lite .ltp{flex:none;display:inline-flex;align-items:center;font-size:13px;font-weight:700;color:var(--accent-ink)}.lite .ltp .ms{font-size:18px}
+.lite .acts3{display:flex;gap:8px;flex-wrap:wrap}.lite .acts3 .btn{flex:1;justify-content:center}
+.lite .stayck{display:block;margin-top:8px;font-size:11px;color:var(--ink3)}

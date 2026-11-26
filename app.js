@@ -2833,7 +2833,37 @@
       // no consent (EEA): the Stay22 embed sets cookies (session22, __cf_bm, Google Ads _gcl_ls in its storage; checked
       // 2026-11-09), so a still card until consent: "Show places to stay" loads the map here on an explicit tap
       // (two-click rule), the partner link opens the full list; consent given later -> the map loads by itself
-      const preview = (o) => {
+      // 2026-11-26 (Stay22 view-to-load 12.7 %; partner card asked 151x, allowed 4x): Europe without consent gets a
+      // cookie-free card instead of a grey "load the map" box: the 3-5 named places to stay near the resort
+      // (stays/<DOM>.json, OpenStreetMap) each with its own Stay22 link for the dates, "Check prices" for the whole
+      // resort, and "Show the map" (the tap = the partner consent, as before). Links = no third-party cookies here.
+      let liteSeen = false;
+      const liteView = () => { if (!liteSeen && vis && sb.querySelector(".lite")) { liteSeen = true; SS.hit("/ad/stay22/" + (d.dataset.where || "panel") + "/lite_view", "stay22"); } };
+      const preview = async (o) => {
+        const c = SS.S.cfg.stay22, x = stayNear(o.lat, o.lon), my = gen;
+        let rows = [];
+        if (x && c && c.link) { const f = await ostLoad(x.dom || "OTHER"); rows = (((f || {}).r || {})[x.slug] || []).slice(0, 4); }
+        if (my !== gen || consent) return;
+        if (!rows.length) { previewStill(o); return; }
+        const [cin, cout] = stayDates(o), lang = String(I18N.lang || "en").toLowerCase(), w = (d.dataset.where || "panel") + "_lite";
+        const link = (h) => {
+          const v = { lat: (+h[2]).toFixed(5), lon: (+h[3]).toFixed(5), place: h[0] + ", " + (stayClean(x.short) || x.short), checkin: cin, checkout: cout, adults: String(o.adults || 2), lang: lang === "ar" ? "fr" : lang };
+          return c.link.replace(/\{([a-z_]+)\}/g, (m, k) => (k in v ? encodeURIComponent(v[k]) : m)).replace("campaign=snowscope_web", "campaign=snowscope_web_" + w);
+        };
+        sb.classList.add("litebox");
+        sb.innerHTML = '<div class="lite"><div class="lith"><span class="ms">hotel</span><b>' + esc(I18N.tu("Stays near {a}", x.short)) + '</b></div>' +
+          '<div class="litd"><span class="ms">event</span>' + esc(wd(cin) + " " + dnum(cin) + " – " + wd(cout) + " " + dnum(cout)) + "</div><ul>" +
+          rows.map((h) => '<li><a target="_blank" rel="sponsored noopener" data-s22="' + esc(w) + '" href="' + esc(link(h)) + '"><span class="ltn"><bdi>' + esc(h[0]) + "</bdi><small>" +
+            esc(I18N.t(OST_KIND[h[1]] || "Hotel")) + (h[4] > 0 ? " · " + "★".repeat(Math.min(h[4], 5)) : "") + '</small></span><span class="ltp">' + esc(I18N.t("Check prices")) + ' <span class="ms">chevron_right</span></span></a></li>').join("") +
+          '</ul><div class="acts3"><a class="btn ink" target="_blank" rel="sponsored noopener" data-s22="' + esc(w) + '" href="' + esc(stayAllez(o, null)) + '"><span class="ms">search</span>' + esc(I18N.t("Check prices")) + "</a>" +
+          '<button class="btn tonal" type="button" data-stayshow><span class="ms">map</span>' + esc(I18N.t("Map")) + "</button></div>" +
+          '<small class="stayck">© OpenStreetMap · ' + esc(I18N.t("The partner map uses cookies; showing it remembers your choice (Cookie choices to change).")) + "</small></div>";
+        sb.querySelector("[data-stayshow]").onclick = () => { consent = true; sb.classList.remove("litebox"); SS.hit("/ad/stay22/" + (d.dataset.where || "panel") + "/consent_tap", "stay22"); if (SS.partnerSet) SS.partnerSet(true, "map_tap"); load(); };
+        if (out) out.href = stayAllez(o, null);
+        if (!watching) { watching = true; SS.stayConsentWatch(() => { consent = true; sb.classList.remove("litebox"); load(); }); }
+        liteView();
+      };
+      const previewStill = (o) => {
         sb.innerHTML = '<div class="stayask still"><span class="ms">hotel</span><p>Best prices for your dates on our partner\'s map.</p><div class="acts3">' +
           '<button class="btn ink" type="button" data-stayshow><span class="ms">map</span>Show places to stay</button>' +
           '<a class="btn tonal" target="_blank" rel="sponsored noopener" href="' + esc(stayAllez(o, null)) + '"><span class="ms">open_in_new</span>Open the list</a></div>' +
@@ -2894,7 +2924,7 @@
       if ("IntersectionObserver" in window) {
         const io = new IntersectionObserver((es) => {
           const e = es[es.length - 1]; vis = e.isIntersecting && e.intersectionRatio >= 0.5;
-          go(); tryView();
+          go(); tryView(); liteView();
         }, { threshold: [0, 0.5, 1] });
         io.observe(sb);
       } else vis = true;
