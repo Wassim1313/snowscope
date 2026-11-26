@@ -1104,6 +1104,123 @@
 },
 "change_vs_yesterday_km2": 780,
 "change_vs_7_days_km2": 1120
+},
+"2026-11-26": {
+"country": "UK",
+"country_code": "GB",
+"date": "2026-11-26",
+"quiet": false,
+"modelled_km2": 37520,
+"snow_km2_today": 11310,
+"snow_km2_yesterday": 10440,
+"snow_km2_7_days_ago": 4720,
+"new_cm_24h_max": 2,
+"new_cm_72h_max": 15,
+"area_km2_5cm_new_72h": 5340,
+"next_3_days_max_cm": 9,
+"next_7_days_max_cm": 12,
+"snowiest_day": "2026-11-27",
+"snowiest_day_cm": 7,
+"first_snow_day": "2026-11-27",
+"hotspots": [
+{
+"name": "Glencoe",
+"new_cm_72h": 24,
+"lat": 56.542,
+"lon": -4.201
+},
+{
+"name": "Glenshee and the Grampians",
+"new_cm_72h": 22,
+"lat": 56.843,
+"lon": -3.685
+},
+{
+"name": "Lochaber (Ben Nevis)",
+"new_cm_72h": 16,
+"lat": 56.897,
+"lon": -4.459
+}
+],
+"bands": [
+{
+"from_m": 0,
+"to_m": 500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 15
+},
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 5,
+"snow_cover_pct": 68
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 16,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 500,
+"white_share_pct": 30,
+"resorts": [
+{
+"name": "Nevis Range",
+"slug": "nevis_range",
+"depth_cm": 28,
+"new_cm_72h": 14,
+"next_3_days_cm": 17,
+"top_m": 1190
+},
+{
+"name": "Glenshee",
+"slug": "glenshee_ski_center",
+"depth_cm": 25,
+"new_cm_72h": 18,
+"next_3_days_cm": 9,
+"top_m": 1028
+},
+{
+"name": "Glencoe",
+"slug": "glencoe_mountain_resort",
+"depth_cm": 18,
+"new_cm_72h": 13,
+"next_3_days_cm": 14,
+"top_m": 1079
+},
+{
+"name": "Yad Moss",
+"slug": "yad_moss",
+"depth_cm": 16,
+"new_cm_72h": 1,
+"next_3_days_cm": 1,
+"top_m": 719
+},
+{
+"name": "Cairngorm Mountain",
+"slug": "cairngorm_mountain",
+"depth_cm": 14,
+"new_cm_72h": 12,
+"next_3_days_cm": 5,
+"top_m": 784
+}
+],
+"n_resorts": 30,
+"n_resorts_with_snow": 13,
+"resort_next_until": "2026-11-29",
+"week2": {
+"week1_max_cm": 10,
+"week2_max_cm": 1,
+"week2_days": [
+"2026-12-04",
+"2026-12-10"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 870,
+"change_vs_7_days_km2": 6590
 }
 }
 }

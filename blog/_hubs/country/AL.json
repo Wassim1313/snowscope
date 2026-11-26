@@ -871,6 +871,91 @@
 },
 "change_vs_yesterday_km2": 110,
 "change_vs_7_days_km2": 1240
+},
+"2026-11-26": {
+"country": "Albania",
+"country_code": "AL",
+"date": "2026-11-26",
+"quiet": false,
+"modelled_km2": 13930,
+"snow_km2_today": 1520,
+"snow_km2_yesterday": 2090,
+"snow_km2_7_days_ago": 40,
+"new_cm_24h_max": 3,
+"new_cm_72h_max": 8,
+"area_km2_5cm_new_72h": 240,
+"next_3_days_max_cm": 22,
+"next_7_days_max_cm": 22,
+"snowiest_day": "2026-11-28",
+"snowiest_day_cm": 15,
+"first_snow_day": "2026-11-27",
+"hotspots": [
+{
+"name": "the Albanian Alps",
+"new_cm_72h": 61,
+"lat": 42.43,
+"lon": 19.806
+},
+{
+"name": "Mount Korab",
+"new_cm_72h": 13,
+"lat": 41.782,
+"lon": 20.535
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 2
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 7
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 2,
+"snow_cover_pct": 40
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 18,
+"snow_cover_pct": 92
+}
+],
+"snow_line_m": 1700,
+"white_share_pct": 11,
+"resorts": [
+{
+"name": "Ski Pista Bigëll",
+"slug": "ski_pista_bigell_dardhe",
+"depth_cm": 0,
+"new_cm_72h": 0,
+"next_3_days_cm": 14,
+"top_m": 1678
+}
+],
+"n_resorts": 1,
+"n_resorts_with_snow": 0,
+"resort_next_until": "2026-11-29",
+"week2": {
+"week1_max_cm": 18,
+"week2_max_cm": 26,
+"week2_days": [
+"2026-12-04",
+"2026-12-10"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": -570,
+"change_vs_7_days_km2": 1480
 }
 }
 }

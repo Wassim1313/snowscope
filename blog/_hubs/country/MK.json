@@ -991,6 +991,107 @@
 },
 "change_vs_yesterday_km2": -160,
 "change_vs_7_days_km2": 910
+},
+"2026-11-26": {
+"country": "North Macedonia",
+"country_code": "MK",
+"date": "2026-11-26",
+"quiet": false,
+"modelled_km2": 15890,
+"snow_km2_today": 1200,
+"snow_km2_yesterday": 1670,
+"snow_km2_7_days_ago": 40,
+"new_cm_24h_max": 1,
+"new_cm_72h_max": 2,
+"area_km2_5cm_new_72h": 90,
+"next_3_days_max_cm": 34,
+"next_7_days_max_cm": 34,
+"snowiest_day": "2026-11-28",
+"snowiest_day_cm": 23,
+"first_snow_day": "2026-11-27",
+"hotspots": [
+{
+"name": "the Mavrovo mountains",
+"new_cm_72h": 30,
+"lat": 41.8,
+"lon": 20.541
+},
+{
+"name": "the Šar Mountains",
+"new_cm_72h": 11,
+"lat": 42.137,
+"lon": 20.972
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 0,
+"snow_cover_pct": 1
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 0,
+"snow_cover_pct": 6
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 1,
+"snow_cover_pct": 27
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 9,
+"snow_cover_pct": 85
+}
+],
+"snow_line_m": 1900,
+"white_share_pct": 8,
+"resorts": [
+{
+"name": "Mavrovo",
+"slug": "mavrovo",
+"depth_cm": 39,
+"new_cm_72h": 2,
+"next_3_days_cm": 20,
+"top_m": 1875
+},
+{
+"name": "Скијачки центар Попова шапка",
+"slug": "area_north_macedo",
+"depth_cm": 19,
+"new_cm_72h": 11,
+"next_3_days_cm": 46,
+"top_m": 2376
+},
+{
+"name": "Хотел Радика",
+"slug": "area_bf101a38",
+"depth_cm": 5,
+"new_cm_72h": 0,
+"next_3_days_cm": 18,
+"top_m": 1271
+}
+],
+"n_resorts": 8,
+"n_resorts_with_snow": 3,
+"resort_next_until": "2026-11-29",
+"week2": {
+"week1_max_cm": 29,
+"week2_max_cm": 17,
+"week2_days": [
+"2026-12-04",
+"2026-12-10"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": -470,
+"change_vs_7_days_km2": 1160
 }
 }
 }

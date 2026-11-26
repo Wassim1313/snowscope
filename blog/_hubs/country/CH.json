@@ -1254,6 +1254,135 @@
 },
 "change_vs_yesterday_km2": 130,
 "change_vs_7_days_km2": 6020
+},
+"2026-11-26": {
+"country": "Switzerland",
+"country_code": "CH",
+"date": "2026-11-26",
+"quiet": false,
+"modelled_km2": 31030,
+"snow_km2_today": 24060,
+"snow_km2_yesterday": 22450,
+"snow_km2_7_days_ago": 18240,
+"new_cm_24h_max": 16,
+"new_cm_72h_max": 24,
+"area_km2_5cm_new_72h": 21300,
+"next_3_days_max_cm": 0,
+"next_7_days_max_cm": 1,
+"snowiest_day": "2026-11-30",
+"snowiest_day_cm": 1,
+"first_snow_day": "2026-11-30",
+"hotspots": [
+{
+"name": "Graubünden",
+"new_cm_72h": 41,
+"lat": 46.387,
+"lon": 9.906
+},
+{
+"name": "the Valais Alps",
+"new_cm_72h": 39,
+"lat": 45.942,
+"lon": 7.865
+},
+{
+"name": "Ticino",
+"new_cm_72h": 34,
+"lat": 46.117,
+"lon": 8.999
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 1,
+"snow_cover_pct": 32
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 7,
+"snow_cover_pct": 85
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 19,
+"snow_cover_pct": 100
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 25,
+"snow_cover_pct": 100
+},
+{
+"from_m": 2500,
+"to_m": 5000,
+"mean_depth_cm": 36,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 900,
+"white_share_pct": 78,
+"resorts": [
+{
+"name": "Ovronnaz",
+"slug": "ovronnaz",
+"depth_cm": 70,
+"new_cm_72h": 15,
+"next_3_days_cm": 0,
+"top_m": 2456
+},
+{
+"name": "Jungfraujoch Snow Fun Park",
+"slug": "jungfraujoch_snow_fun_park",
+"depth_cm": 67,
+"new_cm_72h": 23,
+"next_3_days_cm": 0,
+"top_m": 3461
+},
+{
+"name": "Glacier 3000",
+"slug": "glacier_3000",
+"depth_cm": 66,
+"new_cm_72h": 17,
+"next_3_days_cm": 0,
+"top_m": 2931
+},
+{
+"name": "Balme",
+"slug": "balme_vallorcine",
+"depth_cm": 65,
+"new_cm_72h": 16,
+"next_3_days_cm": 0,
+"top_m": 2252
+},
+{
+"name": "Les Marecottes",
+"slug": "les_marecottes",
+"depth_cm": 64,
+"new_cm_72h": 20,
+"next_3_days_cm": 0,
+"top_m": 2195
+}
+],
+"n_resorts": 280,
+"n_resorts_with_snow": 274,
+"resort_next_until": "2026-11-29",
+"week2": {
+"week1_max_cm": 2,
+"week2_max_cm": 25,
+"week2_days": [
+"2026-12-04",
+"2026-12-10"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 1610,
+"change_vs_7_days_km2": 5820
 }
 }
 }
