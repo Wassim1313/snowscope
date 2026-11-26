@@ -3100,15 +3100,22 @@
     // the map is in the half-open sheet on phones and the first screen on desktop; partner row right after it
     // rich pages: the partner map sits inside the rich block under the forecast (owner 2026-11-20), campaign
     // snowscope_resort_<slug>, check-in next weekend (19-26 Dec with ?stay=xmas), same consent / beacon rules
+    // 2026-11-26 (Stay22: 12.7 % view-to-load): the rich-page map moves from under the forecast to the same first slot
+    // under the snow numbers as every other resort; its campaign / next-weekend (or ?stay=xmas) dates are kept
     const rsb = richOn ? box.querySelector("[data-rstay]") : null;
+    let rsHtml = "", rsDates = null;
     if (rsb) {
       const xmas = (() => { try { return new URLSearchParams(location.search).get("stay") === "xmas"; } catch { return false; } })();
-      const cin = xmas ? rsb.dataset.xcin : rsb.dataset.cin, cout = xmas ? rsb.dataset.xcout : rsb.dataset.cout;
-      rsb.outerHTML = stayModule(x.lat, x.lon, x.short, "resort", rsb.dataset.camp, !SS.S.noAds);
+      rsDates = xmas ? [rsb.dataset.xcin, rsb.dataset.xcout] : [rsb.dataset.cin, rsb.dataset.cout];
+      rsHtml = stayModule(x.lat, x.lon, x.short, "resort", rsb.dataset.camp, !SS.S.noAds);
+      if (hb) rsb.remove(); else { rsb.outerHTML = rsHtml; rsHtml = ""; }
+    }
+    if (hb) hb.insertAdjacentHTML("afterend", (richOn ? rsHtml : rsOn ? stayModule(x.lat, x.lon, x.short, "resort_stay", "snowscope_web_resort_stay", true) : stayModule(x.lat, x.lon, x.short, sVia)) + '<div data-ptrip data-where="panel" data-lat="' + x.lat + '" data-lon="' + x.lon + '" data-place="' + esc(x.short) + '"' + (st.stayDay ? ' data-day="' + st.stayDay + '"' : "") + "></div>");
+    if (rsDates) {
       const d = box.querySelector("details.stays"), ci = d && d.querySelector("[data-cin]"), co = d && d.querySelector("[data-cout]");
+      const [cin, cout] = rsDates;
       if (ci && cin && cin >= stayToday()) { ci.value = cin; if (co && cout > cin) co.value = cout; }
     }
-    if (hb) hb.insertAdjacentHTML("afterend", (richOn ? "" : rsOn ? stayModule(x.lat, x.lon, x.short, "resort_stay", "snowscope_web_resort_stay", true) : stayModule(x.lat, x.lon, x.short, sVia)) + '<div data-ptrip data-where="panel" data-lat="' + x.lat + '" data-lon="' + x.lon + '" data-place="' + esc(x.short) + '"' + (st.stayDay ? ' data-day="' + st.stayDay + '"' : "") + "></div>");
     if (ra) ra.insertAdjacentHTML("afterend", '<div id="rLive"></div>');
     liveRows(x);
     jobsRow(x);
