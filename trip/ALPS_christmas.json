@@ -10,7 +10,7 @@
  "budget_eur": 1000.0,
  "currency": "EUR",
  "fx": {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "source": "frankfurter.app",
   "rate": null
  },
@@ -68,15 +68,15 @@
      "cm": 95,
      "p20": 85,
      "p50": 95,
-     "p80": 115,
+     "p80": 110,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 120,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 6,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 3,
        "p50_cm": 100
       },
       "GFS": {
@@ -166,18 +166,18 @@
     "now_cm": 65,
     "start": {
      "cm": 75,
-     "p20": 70,
+     "p20": 65,
      "p50": 75,
-     "p80": 90,
+     "p80": 85,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 75,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 10,
-       "p50_cm": 80
+       "horizon_days": 14,
+       "snowfall_p50_cm": 7,
+       "p50_cm": 75
       },
       "GFS": {
        "members": 31,
@@ -269,16 +269,16 @@
      "cm": 70,
      "p20": 65,
      "p50": 70,
-     "p80": 85,
-     "p_ge50": 0.99,
+     "p80": 80,
+     "p_ge50": 0.98,
      "basis": "ensemble+climatology",
      "normal_cm": 80,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 10,
-       "p50_cm": 75
+       "horizon_days": 14,
+       "snowfall_p50_cm": 7,
+       "p50_cm": 70
       },
       "GFS": {
        "members": 31,
@@ -370,16 +370,16 @@
      "cm": 75,
      "p20": 65,
      "p50": 75,
-     "p80": 95,
-     "p_ge50": 1.0,
+     "p80": 90,
+     "p_ge50": 0.99,
      "basis": "ensemble+climatology",
      "normal_cm": 90,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 6,
-       "p50_cm": 80
+       "horizon_days": 14,
+       "snowfall_p50_cm": 3,
+       "p50_cm": 75
       },
       "GFS": {
        "members": 31,
@@ -471,15 +471,15 @@
      "p20": 60,
      "p50": 65,
      "p80": 80,
-     "p_ge50": 0.98,
+     "p_ge50": 0.96,
      "basis": "ensemble+climatology",
      "normal_cm": 75,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 70
+       "horizon_days": 14,
+       "snowfall_p50_cm": 7,
+       "p50_cm": 65
       },
       "GFS": {
        "members": 31,
@@ -571,15 +571,15 @@
      "cm": 85,
      "p20": 75,
      "p50": 85,
-     "p80": 105,
+     "p80": 100,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 90,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 12,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 10,
        "p50_cm": 90
       },
       "GFS": {
@@ -678,8 +678,8 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 14,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 20,
        "p50_cm": 105
       },
       "GFS": {
@@ -771,15 +771,15 @@
      "cm": 160,
      "p20": 150,
      "p50": 160,
-     "p80": 180,
+     "p80": 175,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 150,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 11,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 7,
        "p50_cm": 165
       },
       "GFS": {
@@ -874,14 +874,14 @@
      "p20": 75,
      "p50": 80,
      "p80": 100,
-     "p_ge50": 0.96,
+     "p_ge50": 0.98,
      "basis": "ensemble+climatology",
      "normal_cm": 160,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 11,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 17,
        "p50_cm": 85
       },
       "GFS": {
@@ -980,8 +980,8 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 13,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 20,
        "p50_cm": 55
       },
       "GFS": {
@@ -1040,9 +1040,9 @@
    "km": 17.0,
    "lifts": 7,
    "opens": "2026-12-12",
-   "pass_day_eur": 71.55,
-   "pass_day_walkup": 71.55,
-   "pass_day_multi_eur": 60.81,
+   "pass_day_eur": 71.01,
+   "pass_day_walkup": 71.01,
+   "pass_day_multi_eur": 60.36,
    "pass_multi": {
     "days": 6,
     "price": 331.5,
@@ -1060,8 +1060,8 @@
    "pass_period": "holiday",
    "pass_note": "adult day pass CHF 65",
    "pass_src": "https://www.ovronnaz.ch",
-   "night_eur": 102.37,
-   "food_day_eur": 62.74,
+   "night_eur": 101.61,
+   "food_day_eur": 62.27,
    "stay_src": "estimate: CHF 180-220 doubles; menu CHF 24, pasta CHF 18",
    "estimates": [
     "night_eur",
@@ -1081,9 +1081,9 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 13,
-       "p50_cm": 85
+       "horizon_days": 14,
+       "snowfall_p50_cm": 12,
+       "p50_cm": 80
       },
       "GFS": {
        "members": 31,
@@ -1096,15 +1096,15 @@
     }
    },
    "cost": {
-    "pass_eur": 365,
-    "hotel_eur": 717,
-    "food_eur": 439,
-    "total_eur": 1521,
+    "pass_eur": 362,
+    "hotel_eur": 711,
+    "food_eur": 436,
+    "total_eur": 1509,
     "pass_basis": "advance 6-day pass (estimate)",
-    "pass_walkup": 429,
-    "party_total_eur": 1521,
-    "left_eur": -521,
-    "need_eur": 521,
+    "pass_walkup": 426,
+    "party_total_eur": 1509,
+    "left_eur": -509,
+    "need_eur": 509,
     "fits": false
    },
    "tiers": {
@@ -1113,18 +1113,18 @@
     "pistes": "LOW",
     "snow": "MID"
    },
-   "value_cm_per_eur": 1.4,
+   "value_cm_per_eur": 1.41,
    "pros": [
     "solid all-rounder"
    ],
    "cons": [
-    "1,521 EUR per person",
+    "1,509 EUR per person",
     "only 17 km of pistes",
     "~85 cm at the start"
    ],
-   "score": 36.1,
+   "score": 36.6,
    "score_parts": {
-    "MONEY": 37,
+    "MONEY": 38,
     "SNOW": 35
    },
    "rank": 11
@@ -1182,8 +1182,8 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 15,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 23,
        "p50_cm": 50
       },
       "GFS": {
