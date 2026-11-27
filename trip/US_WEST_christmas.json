@@ -18,7 +18,7 @@
   "MONEY",
   "SNOW"
  ],
- "snow_day0": "2026-11-26",
+ "snow_day0": "2026-11-27",
  "snow_stale": false,
  "projection": true,
  "travel": null,
@@ -65,10 +65,10 @@
    "snow": {
     "now_cm": 90,
     "start": {
-     "cm": 115,
+     "cm": 110,
      "p20": 100,
-     "p50": 115,
-     "p80": 135,
+     "p50": 110,
+     "p80": 125,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 70,
@@ -76,13 +76,13 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 29,
-       "p50_cm": 120
+       "snowfall_p50_cm": 25,
+       "p50_cm": 115
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 52,
+       "snowfall_p50_cm": 49,
        "p50_cm": 110
       }
      },
@@ -107,7 +107,7 @@
     "pistes": "MID",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.95,
+   "value_cm_per_eur": 0.91,
    "pros": [
     "solid all-rounder"
    ],
@@ -165,10 +165,10 @@
    "snow": {
     "now_cm": 80,
     "start": {
-     "cm": 105,
+     "cm": 100,
      "p20": 90,
-     "p50": 105,
-     "p80": 125,
+     "p50": 100,
+     "p80": 120,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
      "normal_cm": 135,
@@ -176,14 +176,14 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 25,
-       "p50_cm": 115
+       "snowfall_p50_cm": 26,
+       "p50_cm": 110
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 51,
-       "p50_cm": 105
+       "snowfall_p50_cm": 46,
+       "p50_cm": 100
       }
      },
      "winters": 46
@@ -207,7 +207,7 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.87,
+   "value_cm_per_eur": 0.83,
    "pros": [
     "97 km of pistes",
     "skiing up to 3340 m"
@@ -217,27 +217,27 @@
     "nights from 128 EUR per person",
     "4-day pass 529 USD"
    ],
-   "score": 90.5,
+   "score": 89.7,
    "score_parts": {
     "MONEY": 93,
-    "SNOW": 88
+    "SNOW": 87
    },
    "rank": 2
   },
   {
-   "slug": "mammoth_mountain",
-   "label": "Mammoth Mountain",
+   "slug": "big_sky",
+   "label": "Big Sky",
    "country": "US",
-   "area": "California",
-   "lat": 37.64435,
-   "lon": -119.00884,
-   "top_m": 3360,
-   "base_m": 2457,
-   "km": 86.0,
-   "lifts": 28,
-   "opens": "2026-11-05",
-   "pass_day_eur": 246.0,
-   "pass_day_walkup": 246.0,
+   "area": "Montana",
+   "lat": 45.27389,
+   "lon": -111.41946,
+   "top_m": 3402,
+   "base_m": 2078,
+   "km": 236.0,
+   "lifts": 45,
+   "opens": "2026-11-25",
+   "pass_day_eur": 203.02,
+   "pass_day_walkup": 203.02,
    "pass_day_multi_eur": 120.94,
    "pass_multi": {
     "days": 4,
@@ -250,40 +250,40 @@
    },
    "pass_day_local": {
     "ccy": "USD",
-    "holiday": 269.0,
-    "regular": 159.0
+    "holiday": 222.0,
+    "regular": 148.0
    },
    "pass_period": "holiday",
-   "pass_note": "adult 1-day online advance purchase, dynamic pricing; resort's own range runs from $89 (early/late season) up to $269 on holidays, with a published general weekday adult rate near $209; regular mid-January midweek estimated below that weekday baseline",
-   "pass_src": "https://www.mammothmountain.com/plan-your-trip/tickets/winter-lift-tickets",
-   "night_eur": 128.03,
-   "food_day_eur": 59.44,
-   "stay_src": "estimate: Mammoth Lakes lodging is cheaper than the Colorado/Utah/Wyoming resorts in this list - booking sites show winter rates commonly $150-300+/night per room over peak weeks (vs ~$150 summer); on-mountain lunch and town dining are moderate, $20-30",
+   "pass_note": "adult 1-day online advance purchase, dynamic pricing; resort's reported 2026-27 day-ticket range is $98-222 depending on date, with published weekday/weekend baselines of $148/$200; $222 used as the holiday-window representative; Ikon Pass ecosystem",
+   "pass_src": "https://www.bigskyresort.com/winter-tickets/lift-ticket",
+   "night_eur": 137.17,
+   "food_day_eur": 68.59,
+   "stay_src": "estimate: Big Sky, Montana Mountain Village lodging is mid-to-upper tier given the remote/destination nature of the resort; on-mountain lunch ~$20-30",
    "estimates": [
     "night_eur",
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 50,
+    "now_cm": 70,
     "start": {
-     "cm": 75,
-     "p20": 55,
-     "p50": 75,
-     "p80": 95,
-     "p_ge50": 0.89,
+     "cm": 80,
+     "p20": 75,
+     "p50": 80,
+     "p80": 100,
+     "p_ge50": 1.0,
      "basis": "ensemble+climatology",
-     "normal_cm": 90,
+     "normal_cm": 130,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 38,
-       "p50_cm": 75
+       "snowfall_p50_cm": 22,
+       "p50_cm": 95
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 60,
+       "snowfall_p50_cm": 13,
        "p50_cm": 75
       }
      },
@@ -292,14 +292,14 @@
    },
    "cost": {
     "pass_eur": 726,
-    "hotel_eur": 896,
-    "food_eur": 416,
-    "total_eur": 2038,
+    "hotel_eur": 960,
+    "food_eur": 480,
+    "total_eur": 2166,
     "pass_basis": "advance 4-day pass",
-    "pass_walkup": 1476,
-    "party_total_eur": 2038,
-    "left_eur": -1038,
-    "need_eur": 1038,
+    "pass_walkup": 1218,
+    "party_total_eur": 2166,
+    "left_eur": -1166,
+    "need_eur": 1166,
     "fits": false
    },
    "tiers": {
@@ -308,20 +308,21 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.62,
+   "value_cm_per_eur": 0.66,
    "pros": [
-    "86 km of pistes",
-    "skiing up to 3360 m"
+    "236 km of pistes",
+    "skiing up to 3402 m",
+    "45 lifts"
    ],
    "cons": [
-    "2,038 EUR per person",
-    "nights from 128 EUR per person",
-    "~75 cm at the start"
+    "2,166 EUR per person",
+    "nights from 137 EUR per person",
+    "~80 cm at the start"
    ],
-   "score": 73.6,
+   "score": 74.0,
    "score_parts": {
-    "MONEY": 94,
-    "SNOW": 53
+    "MONEY": 88,
+    "SNOW": 60
    },
    "rank": 3
   },
@@ -371,20 +372,20 @@
      "p20": 65,
      "p50": 75,
      "p80": 90,
-     "p_ge50": 0.98,
+     "p_ge50": 0.97,
      "basis": "ensemble+climatology",
      "normal_cm": 85,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 22,
+       "snowfall_p50_cm": 24,
        "p50_cm": 75
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 51,
+       "snowfall_p50_cm": 46,
        "p50_cm": 75
       }
      },
@@ -420,7 +421,7 @@
     "nights from 146 EUR per person",
     "~75 cm at the start"
    ],
-   "score": 72.5,
+   "score": 72.7,
    "score_parts": {
     "MONEY": 92,
     "SNOW": 53
@@ -428,19 +429,19 @@
    "rank": 4
   },
   {
-   "slug": "big_sky",
-   "label": "Big Sky",
+   "slug": "mammoth_mountain",
+   "label": "Mammoth Mountain",
    "country": "US",
-   "area": "Montana",
-   "lat": 45.27389,
-   "lon": -111.41946,
-   "top_m": 3402,
-   "base_m": 2078,
-   "km": 236.0,
-   "lifts": 45,
-   "opens": "2026-11-25",
-   "pass_day_eur": 203.02,
-   "pass_day_walkup": 203.02,
+   "area": "California",
+   "lat": 37.64435,
+   "lon": -119.00884,
+   "top_m": 3360,
+   "base_m": 2457,
+   "km": 86.0,
+   "lifts": 28,
+   "opens": "2026-11-05",
+   "pass_day_eur": 246.0,
+   "pass_day_walkup": 246.0,
    "pass_day_multi_eur": 120.94,
    "pass_multi": {
     "days": 4,
@@ -453,41 +454,41 @@
    },
    "pass_day_local": {
     "ccy": "USD",
-    "holiday": 222.0,
-    "regular": 148.0
+    "holiday": 269.0,
+    "regular": 159.0
    },
    "pass_period": "holiday",
-   "pass_note": "adult 1-day online advance purchase, dynamic pricing; resort's reported 2026-27 day-ticket range is $98-222 depending on date, with published weekday/weekend baselines of $148/$200; $222 used as the holiday-window representative; Ikon Pass ecosystem",
-   "pass_src": "https://www.bigskyresort.com/winter-tickets/lift-ticket",
-   "night_eur": 137.17,
-   "food_day_eur": 68.59,
-   "stay_src": "estimate: Big Sky, Montana Mountain Village lodging is mid-to-upper tier given the remote/destination nature of the resort; on-mountain lunch ~$20-30",
+   "pass_note": "adult 1-day online advance purchase, dynamic pricing; resort's own range runs from $89 (early/late season) up to $269 on holidays, with a published general weekday adult rate near $209; regular mid-January midweek estimated below that weekday baseline",
+   "pass_src": "https://www.mammothmountain.com/plan-your-trip/tickets/winter-lift-tickets",
+   "night_eur": 128.03,
+   "food_day_eur": 59.44,
+   "stay_src": "estimate: Mammoth Lakes lodging is cheaper than the Colorado/Utah/Wyoming resorts in this list - booking sites show winter rates commonly $150-300+/night per room over peak weeks (vs ~$150 summer); on-mountain lunch and town dining are moderate, $20-30",
    "estimates": [
     "night_eur",
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 70,
+    "now_cm": 50,
     "start": {
-     "cm": 75,
-     "p20": 75,
-     "p50": 75,
-     "p80": 105,
-     "p_ge50": 1.0,
+     "cm": 70,
+     "p20": 60,
+     "p50": 70,
+     "p80": 90,
+     "p_ge50": 0.87,
      "basis": "ensemble+climatology",
-     "normal_cm": 130,
+     "normal_cm": 90,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 23,
-       "p50_cm": 95
+       "snowfall_p50_cm": 28,
+       "p50_cm": 70
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 15,
-       "p50_cm": 75
+       "snowfall_p50_cm": 49,
+       "p50_cm": 65
       }
      },
      "winters": 46
@@ -495,14 +496,14 @@
    },
    "cost": {
     "pass_eur": 726,
-    "hotel_eur": 960,
-    "food_eur": 480,
-    "total_eur": 2166,
+    "hotel_eur": 896,
+    "food_eur": 416,
+    "total_eur": 2038,
     "pass_basis": "advance 4-day pass",
-    "pass_walkup": 1218,
-    "party_total_eur": 2166,
-    "left_eur": -1166,
-    "need_eur": 1166,
+    "pass_walkup": 1476,
+    "party_total_eur": 2038,
+    "left_eur": -1038,
+    "need_eur": 1038,
     "fits": false
    },
    "tiers": {
@@ -511,125 +512,22 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.62,
+   "value_cm_per_eur": 0.58,
    "pros": [
-    "236 km of pistes",
-    "skiing up to 3402 m",
-    "45 lifts"
+    "86 km of pistes",
+    "skiing up to 3360 m"
    ],
    "cons": [
-    "2,166 EUR per person",
-    "nights from 137 EUR per person",
-    "~75 cm at the start"
+    "2,038 EUR per person",
+    "nights from 128 EUR per person",
+    "~70 cm at the start"
    ],
-   "score": 70.4,
+   "score": 70.5,
    "score_parts": {
-    "MONEY": 88,
-    "SNOW": 53
+    "MONEY": 94,
+    "SNOW": 47
    },
    "rank": 5
-  },
-  {
-   "slug": "breckenridge_ski_resort",
-   "label": "Breckenridge",
-   "country": "US",
-   "area": "Colorado",
-   "lat": 39.47225,
-   "lon": -106.06571,
-   "top_m": 3913,
-   "base_m": 2918,
-   "km": 113.0,
-   "lifts": 35,
-   "opens": "2026-11-11",
-   "pass_day_eur": 267.95,
-   "pass_day_walkup": 267.95,
-   "pass_day_multi_eur": 91.58,
-   "pass_multi": {
-    "days": 7,
-    "price": 701.0,
-    "ccy": "USD",
-    "per_day": 100.14,
-    "estimated": false,
-    "note": "Epic Day Pass 7-Day unrestricted tier (no blackout dates, holiday-valid), 2026-27 adult, advance online",
-    "src": "https://www.onthesnow.com/news/epic-pass-buyers-guide/"
-   },
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 293.0,
-    "regular": 199.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult 1-day online advance purchase, dynamic pricing; published weekend price $293 used as holiday-window representative, weekday price used as a conservative read for regular mid-January midweek (resort's own dynamic range runs roughly $185-332 adult/day); Epic Pass ecosystem",
-   "pass_src": "https://skiliftticketprices.com/breckenridge-lift-ticket-prices/",
-   "night_eur": 128.03,
-   "food_day_eur": 68.59,
-   "stay_src": "estimate: Breckenridge town lodging runs slightly below Vail for comparable holiday-week doubles/condos; on-mountain lunch ~$20-35",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 40,
-    "start": {
-     "cm": 45,
-     "p20": 45,
-     "p50": 45,
-     "p80": 60,
-     "p_ge50": 0.31,
-     "basis": "ensemble+climatology",
-     "normal_cm": 80,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 13,
-       "snowfall_p50_cm": 20,
-       "p50_cm": 55
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 32,
-       "snowfall_p50_cm": 18,
-       "p50_cm": 45
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 549,
-    "hotel_eur": 896,
-    "food_eur": 480,
-    "total_eur": 1925,
-    "pass_basis": "advance 7-day pass",
-    "pass_walkup": 1608,
-    "party_total_eur": 1925,
-    "left_eur": -925,
-    "need_eur": 925,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "HIGH",
-    "pistes": "HIGH",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.49,
-   "pros": [
-    "113 km of pistes",
-    "skiing up to 3913 m",
-    "35 lifts"
-   ],
-   "cons": [
-    "1,925 EUR per person",
-    "nights from 128 EUR per person",
-    "~45 cm at the start"
-   ],
-   "score": 58.8,
-   "score_parts": {
-    "MONEY": 100,
-    "SNOW": 18
-   },
-   "rank": 6
   },
   {
    "slug": "jackson_hole",
@@ -673,25 +571,25 @@
    "snow": {
     "now_cm": 45,
     "start": {
-     "cm": 75,
+     "cm": 70,
      "p20": 60,
-     "p50": 75,
+     "p50": 70,
      "p80": 85,
-     "p_ge50": 0.93,
+     "p_ge50": 0.94,
      "basis": "ensemble+climatology",
      "normal_cm": 125,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 35,
+       "snowfall_p50_cm": 36,
        "p50_cm": 80
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 63,
-       "p50_cm": 70
+       "snowfall_p50_cm": 55,
+       "p50_cm": 65
       }
      },
      "winters": 46
@@ -715,7 +613,7 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.62,
+   "value_cm_per_eur": 0.58,
    "pros": [
     "78 km of pistes",
     "skiing up to 3169 m"
@@ -723,12 +621,114 @@
    "cons": [
     "2,710 EUR per person",
     "nights from 201 EUR per person",
-    "~75 cm at the start"
+    "~70 cm at the start"
    ],
-   "score": 56.8,
+   "score": 53.6,
    "score_parts": {
     "MONEY": 61,
-    "SNOW": 53
+    "SNOW": 47
+   },
+   "rank": 6
+  },
+  {
+   "slug": "breckenridge_ski_resort",
+   "label": "Breckenridge",
+   "country": "US",
+   "area": "Colorado",
+   "lat": 39.47225,
+   "lon": -106.06571,
+   "top_m": 3913,
+   "base_m": 2918,
+   "km": 113.0,
+   "lifts": 35,
+   "opens": "2026-11-11",
+   "pass_day_eur": 267.95,
+   "pass_day_walkup": 267.95,
+   "pass_day_multi_eur": 91.58,
+   "pass_multi": {
+    "days": 7,
+    "price": 701.0,
+    "ccy": "USD",
+    "per_day": 100.14,
+    "estimated": false,
+    "note": "Epic Day Pass 7-Day unrestricted tier (no blackout dates, holiday-valid), 2026-27 adult, advance online",
+    "src": "https://www.onthesnow.com/news/epic-pass-buyers-guide/"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 293.0,
+    "regular": 199.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day online advance purchase, dynamic pricing; published weekend price $293 used as holiday-window representative, weekday price used as a conservative read for regular mid-January midweek (resort's own dynamic range runs roughly $185-332 adult/day); Epic Pass ecosystem",
+   "pass_src": "https://skiliftticketprices.com/breckenridge-lift-ticket-prices/",
+   "night_eur": 128.03,
+   "food_day_eur": 68.59,
+   "stay_src": "estimate: Breckenridge town lodging runs slightly below Vail for comparable holiday-week doubles/condos; on-mountain lunch ~$20-35",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 35,
+    "start": {
+     "cm": 40,
+     "p20": 40,
+     "p50": 40,
+     "p80": 55,
+     "p_ge50": 0.26,
+     "basis": "ensemble+climatology",
+     "normal_cm": 80,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 21,
+       "p50_cm": 50
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 32,
+       "snowfall_p50_cm": 16,
+       "p50_cm": 40
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 549,
+    "hotel_eur": 896,
+    "food_eur": 480,
+    "total_eur": 1925,
+    "pass_basis": "advance 7-day pass",
+    "pass_walkup": 1608,
+    "party_total_eur": 1925,
+    "left_eur": -925,
+    "need_eur": 925,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "HIGH",
+    "pistes": "HIGH",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.44,
+   "pros": [
+    "113 km of pistes",
+    "skiing up to 3913 m",
+    "35 lifts"
+   ],
+   "cons": [
+    "1,925 EUR per person",
+    "nights from 128 EUR per person",
+    "~40 cm at the start"
+   ],
+   "score": 53.3,
+   "score_parts": {
+    "MONEY": 100,
+    "SNOW": 7
    },
    "rank": 7
   },
@@ -772,26 +772,26 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 30,
+    "now_cm": 35,
     "start": {
      "cm": 45,
      "p20": 40,
      "p50": 45,
      "p80": 60,
-     "p_ge50": 0.3,
+     "p_ge50": 0.36,
      "basis": "ensemble+climatology",
      "normal_cm": 85,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 21,
-       "p50_cm": 50
+       "snowfall_p50_cm": 22,
+       "p50_cm": 55
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 31,
+       "snowfall_p50_cm": 28,
        "p50_cm": 45
       }
      },
@@ -827,10 +827,10 @@
     "nights from 146 EUR per person",
     "~45 cm at the start"
    ],
-   "score": 54.8,
+   "score": 52.7,
    "score_parts": {
     "MONEY": 92,
-    "SNOW": 18
+    "SNOW": 13
    },
    "rank": 8
   },
@@ -874,13 +874,13 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 15,
+    "now_cm": 20,
     "start": {
-     "cm": 30,
-     "p20": 25,
-     "p50": 30,
-     "p80": 55,
-     "p_ge50": 0.24,
+     "cm": 35,
+     "p20": 30,
+     "p50": 35,
+     "p80": 60,
+     "p_ge50": 0.28,
      "basis": "ensemble+climatology",
      "normal_cm": 110,
      "families": {
@@ -888,13 +888,13 @@
        "members": 51,
        "horizon_days": 13,
        "snowfall_p50_cm": 38,
-       "p50_cm": 50
+       "p50_cm": 55
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 30,
-       "p50_cm": 25
+       "snowfall_p50_cm": 34,
+       "p50_cm": 35
       }
      },
      "winters": 46
@@ -918,7 +918,7 @@
     "pistes": "HIGH",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.25,
+   "value_cm_per_eur": 0.29,
    "pros": [
     "118 km of pistes",
     "skiing up to 3213 m"
@@ -926,7 +926,7 @@
    "cons": [
     "2,102 EUR per person",
     "nights from 128 EUR per person",
-    "~30 cm at the start"
+    "~35 cm at the start"
    ],
    "score": 45.6,
    "score_parts": {
@@ -977,9 +977,9 @@
    "snow": {
     "now_cm": 75,
     "start": {
-     "cm": 90,
+     "cm": 85,
      "p20": 85,
-     "p50": 90,
+     "p50": 85,
      "p80": 105,
      "p_ge50": 1.0,
      "basis": "ensemble+climatology",
@@ -988,13 +988,13 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 27,
-       "p50_cm": 95
+       "snowfall_p50_cm": 32,
+       "p50_cm": 100
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 34,
+       "snowfall_p50_cm": 32,
        "p50_cm": 85
       }
      },
@@ -1019,7 +1019,7 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.62,
+   "value_cm_per_eur": 0.58,
    "pros": [
     "120 km of pistes",
     "skiing up to 3815 m"
@@ -1027,12 +1027,12 @@
    "cons": [
     "3,918 EUR per person",
     "nights from 343 EUR per person",
-    "~90 cm at the start"
+    "~85 cm at the start"
    ],
-   "score": 35.3,
+   "score": 33.3,
    "score_parts": {
     "MONEY": 0,
-    "SNOW": 71
+    "SNOW": 67
    },
    "rank": 10
   }

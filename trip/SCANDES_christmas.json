@@ -18,7 +18,7 @@
   "MONEY",
   "SNOW"
  ],
- "snow_day0": "2026-11-26",
+ "snow_day0": "2026-11-27",
  "snow_stale": false,
  "projection": true,
  "travel": null,
@@ -69,21 +69,21 @@
      "p20": 45,
      "p50": 50,
      "p80": 60,
-     "p_ge50": 0.44,
+     "p_ge50": 0.56,
      "basis": "ensemble+climatology",
      "normal_cm": 90,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 15,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 16,
        "p50_cm": 55
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 16,
-       "p50_cm": 45
+       "snowfall_p50_cm": 17,
+       "p50_cm": 50
       }
      },
      "winters": 46
@@ -163,26 +163,26 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 30,
+    "now_cm": 25,
     "start": {
-     "cm": 40,
-     "p20": 35,
-     "p50": 40,
-     "p80": 50,
-     "p_ge50": 0.17,
+     "cm": 35,
+     "p20": 30,
+     "p50": 35,
+     "p80": 45,
+     "p_ge50": 0.04,
      "basis": "ensemble+climatology",
      "normal_cm": 50,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
+       "horizon_days": 13,
        "snowfall_p50_cm": 14,
-       "p50_cm": 45
+       "p50_cm": 35
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 25,
+       "snowfall_p50_cm": 30,
        "p50_cm": 40
       }
      },
@@ -207,18 +207,18 @@
     "pistes": "MID",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.74,
+   "value_cm_per_eur": 0.64,
    "pros": [
     "48 lifts"
    ],
    "cons": [
     "1,136 EUR per person",
-    "~40 cm at the start"
+    "~35 cm at the start"
    ],
-   "score": 79.1,
+   "score": 72.0,
    "score_parts": {
     "MONEY": 87,
-    "SNOW": 71
+    "SNOW": 57
    },
    "rank": 2
   },
@@ -265,23 +265,23 @@
     "now_cm": 20,
     "start": {
      "cm": 25,
-     "p20": 20,
+     "p20": 25,
      "p50": 25,
-     "p80": 35,
+     "p80": 30,
      "p_ge50": 0.0,
      "basis": "ensemble+climatology",
      "normal_cm": 30,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
+       "horizon_days": 13,
        "snowfall_p50_cm": 11,
        "p50_cm": 30
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 12,
+       "snowfall_p50_cm": 16,
        "p50_cm": 25
       }
      },
@@ -363,7 +363,7 @@
     "now_cm": 25,
     "start": {
      "cm": 30,
-     "p20": 30,
+     "p20": 25,
      "p50": 30,
      "p80": 35,
      "p_ge50": 0.0,
@@ -372,15 +372,15 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
+       "horizon_days": 13,
        "snowfall_p50_cm": 10,
-       "p50_cm": 35
+       "p50_cm": 30
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 16,
-       "p50_cm": 30
+       "snowfall_p50_cm": 11,
+       "p50_cm": 25
       }
      },
      "winters": 46
@@ -465,21 +465,21 @@
      "cm": 25,
      "p20": 20,
      "p50": 25,
-     "p80": 35,
+     "p80": 30,
      "p_ge50": 0.01,
      "basis": "ensemble+climatology",
      "normal_cm": 55,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 14,
-       "p50_cm": 30
+       "horizon_days": 13,
+       "snowfall_p50_cm": 12,
+       "p50_cm": 25
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 15,
+       "snowfall_p50_cm": 17,
        "p50_cm": 25
       }
      },
@@ -519,6 +519,106 @@
     "SNOW": 29
    },
    "rank": 5
+  },
+  {
+   "slug": "ski_geilo",
+   "label": "Geilo",
+   "country": "NO",
+   "area": "Buskerud",
+   "lat": 60.52989,
+   "lon": 8.19991,
+   "top_m": 1163,
+   "base_m": 779,
+   "km": 35.0,
+   "lifts": 20,
+   "opens": "2026-11-28",
+   "pass_day_eur": 74.13,
+   "pass_day_walkup": 74.13,
+   "pass_day_multi_eur": 49.27,
+   "pass_multi": {
+    "days": 6,
+    "price": 3186.0,
+    "ccy": "NOK",
+    "per_day": 531.0,
+    "estimated": false,
+    "note": "6-day pass, 2025-26 carried forward; site says online always >=10% cheaper, unconfirmed",
+    "src": "https://www.onthesnow.co.uk/eastern-norway/geilo/skipass"
+   },
+   "pass_day_local": {
+    "ccy": "NOK",
+    "holiday": 799.0,
+    "regular": 693.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "dynamic pricing, 693-799 NOK range reported for the 2026-27 adult day pass",
+   "pass_src": "https://www.skiinfo.no/ostlandet/geilo/heiskort",
+   "night_eur": 69.59,
+   "food_day_eur": 38.97,
+   "stay_src": "estimate: Geilo is slightly cheaper than Hemsedal/Trysil, a traditional lower-key Norwegian resort town",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 10,
+    "start": {
+     "cm": 20,
+     "p20": 15,
+     "p50": 20,
+     "p80": 25,
+     "p_ge50": 0.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 60,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 12,
+       "p50_cm": 20
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 17,
+       "p50_cm": 20
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 296,
+    "hotel_eur": 487,
+    "food_eur": 273,
+    "total_eur": 1056,
+    "pass_basis": "advance 6-day pass",
+    "pass_walkup": 445,
+    "party_total_eur": 1056,
+    "left_eur": -56,
+    "need_eur": 56,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "MID",
+    "hotel": "MID",
+    "pistes": "LOW",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.41,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,056 EUR per person",
+    "only 35 km of pistes",
+    "~20 cm at the start"
+   ],
+   "score": 53.4,
+   "score_parts": {
+    "MONEY": 93,
+    "SNOW": 14
+   },
+   "rank": 6
   },
   {
    "slug": "kvitfjell",
@@ -572,15 +672,15 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 20
+       "horizon_days": 13,
+       "snowfall_p50_cm": 10,
+       "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
        "snowfall_p50_cm": 11,
-       "p50_cm": 15
+       "p50_cm": 10
       }
      },
      "winters": 46
@@ -615,106 +715,6 @@
    "score": 48.7,
    "score_parts": {
     "MONEY": 97,
-    "SNOW": 0
-   },
-   "rank": 6
-  },
-  {
-   "slug": "ski_geilo",
-   "label": "Geilo",
-   "country": "NO",
-   "area": "Buskerud",
-   "lat": 60.52989,
-   "lon": 8.19991,
-   "top_m": 1163,
-   "base_m": 779,
-   "km": 35.0,
-   "lifts": 20,
-   "opens": "2026-11-28",
-   "pass_day_eur": 74.13,
-   "pass_day_walkup": 74.13,
-   "pass_day_multi_eur": 49.27,
-   "pass_multi": {
-    "days": 6,
-    "price": 3186.0,
-    "ccy": "NOK",
-    "per_day": 531.0,
-    "estimated": false,
-    "note": "6-day pass, 2025-26 carried forward; site says online always >=10% cheaper, unconfirmed",
-    "src": "https://www.onthesnow.co.uk/eastern-norway/geilo/skipass"
-   },
-   "pass_day_local": {
-    "ccy": "NOK",
-    "holiday": 799.0,
-    "regular": 693.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "dynamic pricing, 693-799 NOK range reported for the 2026-27 adult day pass",
-   "pass_src": "https://www.skiinfo.no/ostlandet/geilo/heiskort",
-   "night_eur": 69.59,
-   "food_day_eur": 38.97,
-   "stay_src": "estimate: Geilo is slightly cheaper than Hemsedal/Trysil, a traditional lower-key Norwegian resort town",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 10,
-    "start": {
-     "cm": 15,
-     "p20": 15,
-     "p50": 15,
-     "p80": 25,
-     "p_ge50": 0.0,
-     "basis": "ensemble+climatology",
-     "normal_cm": 60,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 14,
-       "p50_cm": 20
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 15
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 296,
-    "hotel_eur": 487,
-    "food_eur": 273,
-    "total_eur": 1056,
-    "pass_basis": "advance 6-day pass",
-    "pass_walkup": 445,
-    "party_total_eur": 1056,
-    "left_eur": -56,
-    "need_eur": 56,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "MID",
-    "hotel": "MID",
-    "pistes": "LOW",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.3,
-   "pros": [
-    "solid all-rounder"
-   ],
-   "cons": [
-    "1,056 EUR per person",
-    "only 35 km of pistes",
-    "~15 cm at the start"
-   ],
-   "score": 46.3,
-   "score_parts": {
-    "MONEY": 93,
     "SNOW": 0
    },
    "rank": 7
@@ -759,26 +759,26 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 10,
+    "now_cm": 5,
     "start": {
      "cm": 15,
      "p20": 10,
      "p50": 15,
-     "p80": 25,
+     "p80": 20,
      "p_ge50": 0.0,
      "basis": "ensemble+climatology",
      "normal_cm": 55,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 13,
-       "p50_cm": 20
+       "horizon_days": 13,
+       "snowfall_p50_cm": 10,
+       "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 14,
+       "snowfall_p50_cm": 18,
        "p50_cm": 15
       }
      },
@@ -870,14 +870,14 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
+       "horizon_days": 13,
        "snowfall_p50_cm": 11,
        "p50_cm": 20
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 15,
+       "snowfall_p50_cm": 13,
        "p50_cm": 15
       }
      },
@@ -961,7 +961,7 @@
     "now_cm": 10,
     "start": {
      "cm": 15,
-     "p20": 10,
+     "p20": 15,
      "p50": 15,
      "p80": 20,
      "p_ge50": 0.0,
@@ -970,14 +970,14 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 10,
+       "horizon_days": 13,
+       "snowfall_p50_cm": 11,
        "p50_cm": 20
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 14,
+       "snowfall_p50_cm": 10,
        "p50_cm": 15
       }
      },

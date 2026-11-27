@@ -18,7 +18,7 @@
   "MONEY",
   "SNOW"
  ],
- "snow_day0": "2026-11-26",
+ "snow_day0": "2026-11-27",
  "snow_stale": false,
  "projection": true,
  "travel": null,
@@ -69,21 +69,21 @@
      "cm": 0,
      "p20": 0,
      "p50": 0,
-     "p80": 5,
+     "p80": 0,
      "p_ge50": 0.01,
      "basis": "ensemble+climatology",
      "normal_cm": 20,
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
+       "horizon_days": 13,
        "snowfall_p50_cm": 0,
        "p50_cm": 0
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 1,
+       "snowfall_p50_cm": 0,
        "p50_cm": 0
       }
      },
@@ -178,7 +178,7 @@
      "families": {
       "ECMWF": {
        "members": 51,
-       "horizon_days": 14,
+       "horizon_days": 13,
        "snowfall_p50_cm": 0,
        "p50_cm": 0
       },
