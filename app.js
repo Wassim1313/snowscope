@@ -52,7 +52,7 @@
   const AVAL_NAME = { 1: "Low", 2: "Moderate", 3: "Considerable", 4: "High", 5: "Very high" };
   const NAMES = { ALPS: "Alps", PYRENEES: "Pyrenees", US_WEST: "US West", US_NE: "US Northeast", ATLAS: "Atlas (Morocco)", SCANDES: "Scandinavia", CA_WEST: "Canada West",
     BRITISH: "UK & Ireland", IBERIA: "Spain & Portugal", CANTABRIA: "Cantabrian Mountains", APENNINES: "Apennines",
-    BALKANS: "Balkans", CARPATHIANS: "Carpathians", CENTRAL_EU: "Central Europe", RUSSIA: "Russia", JAPAN: "Japan" };
+    BALKANS: "Balkans", CARPATHIANS: "Carpathians", CENTRAL_EU: "Central Europe", RUSSIA: "Russia", JAPAN: "Japan", ANDES: "Andes", CHINA: "China" };
   // free, no-key basemaps (owner 2026-11-02: no Mapbox): OpenFreeMap vector styles + AWS Terrain Tiles (terrarium) for
   // relief and 3D. No satellite basemap (no free source that allows a site with ads).
   const STYLES = { outdoors: ["Outdoors", "https://tiles.openfreemap.org/styles/liberty"], light: ["Light", "https://tiles.openfreemap.org/styles/positron"] };
@@ -126,7 +126,7 @@
     US_WEST: [-125, 33, -104, 49], CA_WEST: [-128, 49, -113, 54.5], US_NE: [-75.5, 42.5, -70.5, 45.5], SCANDES: [5, 58.5, 31, 70.5],
     BRITISH: [-8.5, 51.5, -1.5, 58.7], IBERIA: [-8, 37, -0.5, 41.5], CANTABRIA: [-7.5, 42.2, -3, 43.3],
     APENNINES: [8.5, 37.5, 16.5, 44], BALKANS: [15.5, 40, 25, 44.5], CARPATHIANS: [18, 45, 26.5, 49.8],
-    CENTRAL_EU: [2, 45, 16, 51.5], RUSSIA: [30, 42, 61, 69], JAPAN: [135, 34.5, 145.5, 45.5] };
+    CENTRAL_EU: [2, 45, 16, 51.5], RUSSIA: [30, 42, 61, 69], JAPAN: [135, 34.5, 145.5, 45.5], ANDES: [-75, -45, -65, -30], CHINA: [113.5, 39.5, 129.5, 46.5] };
   const hasRegion = (c) => DATA.regions.some((r) => r.code === c);
   function nearestRange(lat, lon) {
     let best = null, bd = Infinity;
@@ -144,6 +144,8 @@
     const l0 = langs[0] || "", cc = (/[-_]([A-Za-z]{2})$/.exec(l0) || [])[1], lang = l0.slice(0, 2).toLowerCase();
     const byTz = /^Africa\/(Casablanca|El_Aaiun|Algiers|Tunis)$/.test(tz) ? "ATLAS"
       : /^(Asia\/Tokyo|Japan)$/.test(tz) ? (hasRegion("JAPAN") ? "JAPAN" : null)
+      : /^(Asia\/(Shanghai|Urumqi|Harbin|Chongqing|Chungking|Kashgar)|PRC)$/.test(tz) ? (hasRegion("CHINA") ? "CHINA" : null)
+      : /^America\/(Santiago|Punta_Arenas|La_Paz|Lima|Argentina\/.*)$|^Chile\//.test(tz) ? (hasRegion("ANDES") ? "ANDES" : null)
       : /^Europe\/(Madrid|Andorra|Lisbon)$/.test(tz) ? "PYRENEES"
       : /^America\/(Vancouver|Edmonton|Calgary|Whitehorse|Yellowknife|Dawson_Creek|Fort_Nelson|Creston)$/.test(tz) ? "CA_WEST"
       : /^America\/(New_York|Toronto|Montreal|Detroit|Halifax|Moncton|Indiana\/.*|Kentucky\/.*|St_Johns)$|^US\/Eastern$/.test(tz) ? "US_NE"
@@ -158,7 +160,7 @@
       SE: "SCANDES", NO: "SCANDES", FI: "SCANDES", DK: "SCANDES", IS: "SCANDES", GB: "BRITISH", IE: "BRITISH",
       PL: "CARPATHIANS", SK: "CARPATHIANS", RO: "CARPATHIANS", UA: "CARPATHIANS", HU: "CARPATHIANS", CZ: "CENTRAL_EU",
       BG: "BALKANS", RS: "BALKANS", BA: "BALKANS", ME: "BALKANS", MK: "BALKANS", AL: "BALKANS", GR: "BALKANS",
-      HR: "BALKANS", XK: "BALKANS", RU: "RUSSIA", BY: "RUSSIA", KZ: "RUSSIA", JP: "JAPAN" }[(cc || "").toUpperCase()];
+      HR: "BALKANS", XK: "BALKANS", RU: "RUSSIA", BY: "RUSSIA", KZ: "RUSSIA", JP: "JAPAN", CL: "ANDES", AR: "ANDES", BO: "ANDES", PE: "ANDES", CN: "CHINA" }[(cc || "").toUpperCase()];
     const byLang = { ar: "ATLAS", es: "PYRENEES", ca: "PYRENEES", eu: "PYRENEES", fr: "ALPS", de: "ALPS", it: "ALPS", sl: "ALPS",
       sv: "SCANDES", nb: "SCANDES", no: "SCANDES", nn: "SCANDES", fi: "SCANDES", da: "SCANDES", pl: "CARPATHIANS",
       sk: "CARPATHIANS", ro: "CARPATHIANS", uk: "CARPATHIANS", hu: "CARPATHIANS", cs: "CENTRAL_EU", bg: "BALKANS",
@@ -2464,7 +2466,9 @@
     for (const d of live || []) if (d.dep != null && !(fl && lockedDay(d.date)) && (d.date > DATA.today || !byDate[d.date])) byDate[d.date] = { dep: d.dep, nw: d.nw };
     const freeEnd = addDays(DATA.today, fl ? 2 : 3), end = addDays(DATA.today, 15), pPro = st.pro && !fl;
     const year = +DATA.today.slice(0, 4), m = +DATA.today.slice(5, 7);
-    const start = (m >= 8 ? year : year - 1) + "-10-01";
+    // southern hemisphere (Andes, 2026-11-27): no Oct-May season there; the chart starts a week before the first day shown
+    const first = Object.keys(byDate).sort()[0];
+    const start = pt.lat < 0 ? addDays(first || DATA.today, -7) : (m >= 8 ? year : year - 1) + "-10-01";
     const nDays = Math.round((D(end) - D(start)) / 864e5);
     const X = (d) => Math.round((D(d) - D(start)) / 864e5);
     const clim = h && h.climatology, idx = clim ? Object.fromEntries(clim.mmdd.map((k, i) => [k, i])) : {};
@@ -3083,7 +3087,7 @@
   }
   function closeResort(silent) {
     st.slug = null;
-    document.title = "SnowScope · Snow depth today in the Alps, Pyrenees and North America";
+    document.title = "SnowScope: Snow Forecast & Snow Depth Today at Every Ski Resort";
     if (st.pushed) { st.pushed = false; history.pushState(null, "", BASE + "#" + slugOf(st.region)); }
     else history.replaceState(null, "", BASE + "#" + slugOf(st.region));
     if (!silent) renderPanel();

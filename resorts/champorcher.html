@@ -1,1 +1,82 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>SnowScope</title><link rel="canonical" href="https://snowscope.app/?r=champorcher"><meta http-equiv="refresh" content="0; url=../?r=champorcher"></head><body><a href="../?r=champorcher">https://snowscope.app/?r=champorcher</a></body></html>
+<!doctype html>
+<html lang="en" data-noads="1" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Champorcher snow depth today: 35 cm, +1 cm new · forecast &amp; past winters</title>
+<meta name="description" content="35 cm of snow, +1 cm new at Champorcher today. Snow for the next days, compared with past winters, and hotels near Champorcher.">
+<meta name="google-adsense-account" content="ca-pub-6693878731812238">
+<link rel="canonical" href="https://snowscope.app/resorts/champorcher.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowScope">
+<meta property="og:title" content="Champorcher snow depth today: 35 cm, +1 cm new · forecast &amp; past winters">
+<meta property="og:description" content="35 cm of snow, +1 cm new at Champorcher today. Snow for the next days, compared with past winters, and hotels near Champorcher.">
+<meta property="og:url" content="https://snowscope.app/resorts/champorcher.html">
+<meta property="og:image" content="https://snowscope.app/og/ALPS.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F4F6F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0F17" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../icon-512.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..750&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
+<link rel="stylesheet" href="../site.css?v=f2e88d2e">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SkiResort", "name": "Champorcher", "url": "https://snowscope.app/resorts/champorcher.html", "geo": {"@type": "GeoCoordinates", "latitude": 45.61313, "longitude": 7.57998}, "address": {"@type": "PostalAddress", "addressCountry": "Italy"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the best month to ski at Champorcher?", "acceptedAnswer": {"@type": "Answer", "text": "Aim for early March and mid-March; the cover is usually good from early December to early May."}}, {"@type": "Question", "name": "How much snow does Champorcher have at Christmas?", "acceptedAnswer": {"@type": "Answer", "text": "Most years, yes. Snow lay at mid-mountain at Christmas in every winter, about 42 cm deep."}}, {"@type": "Question", "name": "How high do the lifts go at Champorcher?", "acceptedAnswer": {"@type": "Answer", "text": "Its highest lift reaches 2,489 m; the lowest starts at 1,444 m (1,045 m of vertical)."}}, {"@type": "Question", "name": "Does Champorcher have steep runs?", "acceptedAnswer": {"@type": "Answer", "text": "Yes: about 4.4 km of its graded pistes (29%) are difficult."}}, {"@type": "Question", "name": "How many km of pistes does Champorcher have?", "acceptedAnswer": {"@type": "Answer", "text": "About 15 km of pistes and 7 lifts."}}]}]}</script>
+</head>
+<body class="app" data-slug="champorcher">
+<a class="skip" href="#pbody">Skip to the snow list</a>
+<div id="map" role="region" aria-label="Snow map. The panel lists the same values."></div>
+
+<header class="appbar glass">
+  <a class="brand" href="../" data-nav="map"><img src="../logo.svg" alt="" width="30" height="30"><span>SnowScope</span></a>
+  <div class="find" role="search"><span class="ms">search</span><input type="search" placeholder="Resort or mountain town" aria-label="Find a ski resort or a mountain town" autocomplete="off"><ul hidden></ul></div>
+  <button class="btn icon only-s" data-find-open aria-label="Find a ski resort"><span class="ms">search</span></button>
+  <button class="btn alertbtn" data-fw-alert aria-label="Powder alert" title="Powder alert"><span class="ms f">notifications_active</span><span class="lbl hide-s">Powder alert</span></button>
+  <a class="btn tonal blogbtn" data-blog href="../blog/en/" aria-label="Snow reports" title="Snow reports"><span class="ms">article</span><span class="lbl hide-s">Snow reports</span></a>
+  <a class="btn tonal mabtn" data-ma href="../maroc.html" style="display:none" aria-label="Morocco weather" title="Morocco weather"><span class="ms">rainy</span><span class="lbl hide-s">Morocco weather</span></a>
+  <button class="btn icon langbtn" data-lang aria-label="Language"><span class="ms">language</span></button>
+  <div class="acct" id="acct"></div>
+</header>
+<div class="regions pills" id="regions" role="group" aria-label="Region"></div>
+<div class="mapctl">
+  <button class="mapbtn" id="layersBtn" aria-haspopup="dialog" aria-label="Map layers"><span class="ms">layers</span><span class="lbl">Layers</span></button>
+  <button class="mapbtn" id="btn3d" aria-pressed="false" aria-label="3D view"><span class="ms">view_in_ar</span><span class="lbl">3D</span></button>
+</div>
+
+<aside class="panel" id="panel" aria-label="Snow details">
+  <button class="grab" id="grab" aria-label="Expand or collapse the panel"></button>
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <button data-tab="map" aria-current="page"><span class="ms">map</span>Snow today</button>
+    <button data-tab="ski"><span class="ms">downhill_skiing</span>Where to ski</button>
+    <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
+    <button data-tab="you"><span class="ms">person</span>You</button>
+  </nav>
+  <div class="pbody" id="pbody" tabindex="-1"><div class="seo"><div class="over">Ski resort</div><h1>Champorcher</h1><p class="lede">Champorcher · Valle D&#x27;Aosta, Italy · 1,444–2,489 m</p><p>35 cm of snow, +1 cm new today.</p><p>Today Champorcher ranks 258 of 1161 resorts with snow in the Alps. Champorcher is in Valle D&#x27;Aosta, Italy, at 45.61°N 7.58°E.</p><h2>At a glance</h2><table><tbody><tr><th>Top of the slopes</th><td>2,489 m</td></tr><tr><th>Bottom of the slopes</th><td>1,444 m</td></tr><tr><th>Vertical drop</th><td>1,045 m</td></tr><tr><th>Pistes</th><td>15 km</td></tr><tr><th>Lifts</th><td>7</td></tr><tr><th>Snow on the ground today</th><td>35 cm</td></tr><tr><th>New snow, last 24 h</th><td>1 cm</td></tr><tr><th>New snow, last 48 h</th><td>2 cm</td></tr><tr><th>New snow, last 7 days</th><td>44 cm</td></tr></tbody></table><section class="rguide" id="rguide" data-for="champorcher"><h2>About Champorcher</h2><p>Champorcher is a mid-sized ski area with about <span data-km="15.0">15 km</span> of pistes, number 380 of 1,056 in the Alps by length. Skiing here happens between <span data-m="1444">1,444 m</span> and <span data-m="2489">2,489 m</span> above sea level. The closest other ski area is Cogne (<span data-km="16.8">17 km</span>, west).</p><h2>What there is to ski at Champorcher</h2><p>Champorcher has 35 graded runs adding up to about <span data-km="15.1">15 km</span>. Red runs make up the biggest part: <span data-km="9.8">9.8 km</span>, or 65%. Its heart is intermediate terrain, ideal for skiers who are confident on most slopes and want variety. Experts can count on some <span data-km="4.4">4.4 km</span> of difficult runs.</p><div class="tw"><table><thead><tr><th>Grade</th><th>Runs</th><th>Length</th><th>Share</th></tr></thead><tbody><tr><th>Green (beginner)</th><td>4 runs</td><td><span data-km="0.4">0.4 km</span></td><td>2%</td></tr><tr><th>Blue</th><td>5 runs</td><td><span data-km="0.5">0.5 km</span></td><td>4%</td></tr><tr><th>Red</th><td>20 runs</td><td><span data-km="9.8">9.8 km</span></td><td>65%</td></tr><tr><th>Black</th><td>6 runs</td><td><span data-km="4.4">4.4 km</span></td><td>29%</td></tr></tbody></table></div><h2>How much snow Champorcher usually gets</h2><p>Past winters give a clear pattern at about <span data-m="1966">1,966 m</span>, the middle of the ski area: a 30 cm base is usually there from early December to early May, about 22 weeks of good cover. Year to year the snow is steady, with <span data-cm="50">50 cm</span> to <span data-cm="112">112 cm</span> in mid-February in most winters. The snow is usually deepest around 7 March, with about <span data-cm="90">90 cm</span>. In mid-April a normal winter still leaves <span data-cm="69">69 cm</span>, so spring skiing usually holds up well. For the best snow, aim for early March and mid-March. At Christmas there was snow here in every winter, typically <span data-cm="42">42 cm</span>, with <span data-cm="77">77 cm</span> in the best years.</p><div class="tw"><table><thead><tr><th>Date</th><th>Typical depth</th><th>Winters with snow</th></tr></thead><tbody><tr><th>15 November</th><td><span data-cm="9">9 cm</span></td><td>86%</td></tr><tr><th>1 December</th><td><span data-cm="20">20 cm</span></td><td>99%</td></tr><tr><th>25 December</th><td><span data-cm="42">42 cm</span></td><td>100%</td></tr><tr><th>15 January</th><td><span data-cm="59">59 cm</span></td><td>100%</td></tr><tr><th>15 February</th><td><span data-cm="78">78 cm</span></td><td>100%</td></tr><tr><th>15 March</th><td><span data-cm="83">83 cm</span></td><td>100%</td></tr><tr><th>15 April</th><td><span data-cm="69">69 cm</span></td><td>100%</td></tr><tr><th>15 May</th><td><span data-cm="18">18 cm</span></td><td>99%</td></tr></tbody></table></div><h2>Heights, vertical and lifts</h2><p>From top to bottom that makes <span data-m="1045">1,045 m</span> of vertical, enough height for proper long runs. The bottom station at <span data-m="1444">1,444 m</span> sits at a comfortable height for snow through the main winter months. Of the 8 ski areas within 50 km, only 1 reaches higher. Getting up the mountain: 1 gondola, 2 chairlifts, 2 button lifts and 2 moving carpets, 7 lifts in all. Enclosed cabins mean non-skiers can ride up too. For small children there are 2 conveyor-belt lifts. Above the ski area rises Mont Glacier (<span data-m="3185">3,185 m</span>), <span data-km="3.8">3.8 km</span> to the north-west, about <span data-m="696">696 m</span> higher than the top lift.</p><h2>How Champorcher compares nearby</h2><p>Of the 7 ski areas compared here, Champorcher is the second biggest by piste length. If snow is the priority, Pila ski does better, with about 25 weeks of a good base instead of 22. The highest nearby is Pila ski, topping out at <span data-m="2723">2,723 m</span>.</p><div class="tw"><table><thead><tr><th>Resort</th><th>Distance</th><th>Top</th><th>Pistes</th><th>Typical snow, mid-February</th></tr></thead><tbody><tr><th>Champorcher (this resort)</th><td></td><td><span data-m="2489">2,489 m</span></td><td><span data-km="15.0">15 km</span></td><td><span data-cm="78">78 cm</span></td></tr><tr><th><a href="cogne.html">Cogne</a></th><td><span data-km="16.8">17 km</span> west</td><td><span data-m="2277">2,277 m</span></td><td><span data-km="6.0">6.0 km</span></td><td><span data-cm="63">63 cm</span></td></tr><tr><th><a href="colle_di_joux.html">Colle di Joux</a></th><td><span data-km="17.7">18 km</span> north-east</td><td><span data-m="1953">1,953 m</span></td><td><span data-km="4.0">4.0 km</span></td><td><span data-cm="66">66 cm</span></td></tr><tr><th><a href="brusson.html">Brusson</a></th><td><span data-km="21.8">22 km</span> north-east</td><td><span data-m="2236">2,236 m</span></td><td><span data-km="10.0">10 km</span></td><td><span data-cm="64">64 cm</span></td></tr><tr><th><a href="pila_ski.html">Pila ski</a></th><td><span data-km="22.1">22 km</span> west</td><td><span data-m="2723">2,723 m</span></td><td><span data-km="56.0">56 km</span></td><td><span data-cm="95">95 cm</span></td></tr><tr><th><a href="torgnon.html">Torgnon</a></th><td><span data-km="22.1">22 km</span> north</td><td><span data-m="2258">2,258 m</span></td><td><span data-km="13.0">13 km</span></td><td><span data-cm="67">67 cm</span></td></tr><tr><th><a href="la_magdeleine.html">La Magdeleine</a></th><td><span data-km="22.1">22 km</span> north</td><td></td><td></td><td><span data-cm="60">60 cm</span></td></tr></tbody></table></div><h2>This week's snow</h2><p>Today there are about <span data-cm="35">35 cm</span> of snow on the upper slopes of Champorcher. <span data-cm="1">1 cm</span> of fresh snow fell in the last 24 hours. Little new snow is expected over the next 3 days. So far the season is running close to normal, which is about <span data-cm="24">24 cm</span> at mid-mountain.</p><h2>Staying nearby</h2><p>Among the closest beds to the pistes are Hotel Chardoney (hotel), Rifugio Dondena (mountain hut), Albergo Castello da Bonino (hotel) and Hotel BeauSejour (hotel).</p><h2>Questions about Champorcher</h2><h3>What is the best month to ski at Champorcher?</h3><p>Aim for early March and mid-March; the cover is usually good from early December to early May.</p><h3>How much snow does Champorcher have at Christmas?</h3><p>Most years, yes. Snow lay at mid-mountain at Christmas in every winter, about <span data-cm="42">42 cm</span> deep.</p><h3>How high do the lifts go at Champorcher?</h3><p>Its highest lift reaches <span data-m="2489">2,489 m</span>; the lowest starts at <span data-m="1444">1,444 m</span> (<span data-m="1045">1,045 m</span> of vertical).</p><h3>Does Champorcher have steep runs?</h3><p>Yes: about <span data-km="4.4">4.4 km</span> of its graded pistes (29%) are difficult.</p><h3>How many km of pistes does Champorcher have?</h3><p>About <span data-km="15.0">15 km</span> of pistes and 7 lifts.</p></section><p><a href="./">All ski resorts</a> · Alps</p></div><footer class="foot"><nav><a href="../">Snow map</a><a href="../resorts/">All ski resorts</a><a href="../blog/en/">Snow reports</a><a href="../about/">About</a><a href="../editorial/">Editorial policy</a><a href="../contact/">Contact</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="../sources.html">Sources</a></nav>© 2026 SnowScope · Atlas Labs</footer></div>
+</aside>
+
+<div class="timeline glass" id="timeline">
+  <button class="play" id="play" aria-label="Play the days"><span class="ms f">play_arrow</span></button>
+  <div class="days" id="days" role="group" aria-label="Day"></div>
+</div>
+<div class="legend glass" id="legend"></div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<nav class="bottomnav" id="bnav" aria-label="Sections">
+  <button data-tab="map" aria-current="page"><span class="ms f">map</span>Map</button>
+  <button data-tab="ski"><span class="ms">downhill_skiing</span>Where to ski</button>
+  <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
+  <button data-tab="you"><span class="ms">person</span>You</button>
+</nav>
+<script src="../i18n.js?v=3623f3c1"></script>
+<script>/* Morocco weather reel page for visitors in Morocco / Darija (tools/morocco_reel.py) */(function(){try{var tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"",l=(window.I18N&&I18N.lang)||"",n=navigator.language||"",a=document.querySelector("[data-ma]");if(a&&(/^Africa\/(Casablanca|El_Aaiun)$/.test(tz)||l==="ar"||/-MA$/i.test(n))){var t=l==="ar"?"طقس المغرب":l==="fr"?"Météo Maroc":"Morocco weather";a.querySelector(".lbl").textContent=t;a.title=t;a.setAttribute("aria-label",t);if(l==="ar"||l==="fr")a.href=a.getAttribute("href")+"?lang="+l;a.style.display="";}}catch(e){}})();</script>
+<script src="../core.js?v=7698acde"></script>
+<script src="../follow.js?v=f32a4992" defer></script>
+<script src="../partners.js?v=08f61494" defer></script>
+<script src="../post.js?v=39100f9c" defer></script>
+<script src="../expert.js?v=7ed56ff3"></script>
+<script src="../charts.js?v=5c43184a"></script>
+<script src="../app.js?v=da4deaf5"></script>
+</body>
+</html>

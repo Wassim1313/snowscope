@@ -1,1 +1,82 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>SnowScope</title><link rel="canonical" href="https://snowscope.app/?r=borno"><meta http-equiv="refresh" content="0; url=../?r=borno"></head><body><a href="../?r=borno">https://snowscope.app/?r=borno</a></body></html>
+<!doctype html>
+<html lang="en" data-noads="1" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Borno snow depth today: 18 cm · forecast &amp; past winters</title>
+<meta name="description" content="18 cm of snow at Borno today. Snow for the next days, compared with past winters, and hotels near Borno.">
+<meta name="google-adsense-account" content="ca-pub-6693878731812238">
+<link rel="canonical" href="https://snowscope.app/resorts/borno.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowScope">
+<meta property="og:title" content="Borno snow depth today: 18 cm · forecast &amp; past winters">
+<meta property="og:description" content="18 cm of snow at Borno today. Snow for the next days, compared with past winters, and hotels near Borno.">
+<meta property="og:url" content="https://snowscope.app/resorts/borno.html">
+<meta property="og:image" content="https://snowscope.app/og/ALPS.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F4F6F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0F17" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../icon-512.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..750&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
+<link rel="stylesheet" href="../site.css?v=f2e88d2e">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SkiResort", "name": "Borno", "url": "https://snowscope.app/resorts/borno.html", "geo": {"@type": "GeoCoordinates", "latitude": 45.92342, "longitude": 10.17649}, "address": {"@type": "PostalAddress", "addressCountry": "Italy"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When does Borno have the most snow?", "acceptedAnswer": {"@type": "Answer", "text": "Aim for early March and mid-March; the cover is usually good from mid-January to early April."}}, {"@type": "Question", "name": "Can you ski at Borno at Christmas?", "acceptedAnswer": {"@type": "Answer", "text": "In general yes, with around 24 cm at mid-mountain on Christmas Day in a typical year."}}, {"@type": "Question", "name": "How high do the lifts go at Borno?", "acceptedAnswer": {"@type": "Answer", "text": "The top is at 1,686 m and the base at 950 m."}}, {"@type": "Question", "name": "What level of skier is Borno best for?", "acceptedAnswer": {"@type": "Answer", "text": "Mostly intermediates: 51% of the graded pistes are of medium difficulty."}}, {"@type": "Question", "name": "Is there a larger resort near Borno?", "acceptedAnswer": {"@type": "Answer", "text": "Montecampione, 11 km to the south, with about 20 km of pistes."}}]}]}</script>
+</head>
+<body class="app" data-slug="borno">
+<a class="skip" href="#pbody">Skip to the snow list</a>
+<div id="map" role="region" aria-label="Snow map. The panel lists the same values."></div>
+
+<header class="appbar glass">
+  <a class="brand" href="../" data-nav="map"><img src="../logo.svg" alt="" width="30" height="30"><span>SnowScope</span></a>
+  <div class="find" role="search"><span class="ms">search</span><input type="search" placeholder="Resort or mountain town" aria-label="Find a ski resort or a mountain town" autocomplete="off"><ul hidden></ul></div>
+  <button class="btn icon only-s" data-find-open aria-label="Find a ski resort"><span class="ms">search</span></button>
+  <button class="btn alertbtn" data-fw-alert aria-label="Powder alert" title="Powder alert"><span class="ms f">notifications_active</span><span class="lbl hide-s">Powder alert</span></button>
+  <a class="btn tonal blogbtn" data-blog href="../blog/en/" aria-label="Snow reports" title="Snow reports"><span class="ms">article</span><span class="lbl hide-s">Snow reports</span></a>
+  <a class="btn tonal mabtn" data-ma href="../maroc.html" style="display:none" aria-label="Morocco weather" title="Morocco weather"><span class="ms">rainy</span><span class="lbl hide-s">Morocco weather</span></a>
+  <button class="btn icon langbtn" data-lang aria-label="Language"><span class="ms">language</span></button>
+  <div class="acct" id="acct"></div>
+</header>
+<div class="regions pills" id="regions" role="group" aria-label="Region"></div>
+<div class="mapctl">
+  <button class="mapbtn" id="layersBtn" aria-haspopup="dialog" aria-label="Map layers"><span class="ms">layers</span><span class="lbl">Layers</span></button>
+  <button class="mapbtn" id="btn3d" aria-pressed="false" aria-label="3D view"><span class="ms">view_in_ar</span><span class="lbl">3D</span></button>
+</div>
+
+<aside class="panel" id="panel" aria-label="Snow details">
+  <button class="grab" id="grab" aria-label="Expand or collapse the panel"></button>
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <button data-tab="map" aria-current="page"><span class="ms">map</span>Snow today</button>
+    <button data-tab="ski"><span class="ms">downhill_skiing</span>Where to ski</button>
+    <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
+    <button data-tab="you"><span class="ms">person</span>You</button>
+  </nav>
+  <div class="pbody" id="pbody" tabindex="-1"><div class="seo"><div class="over">Ski resort</div><h1>Borno</h1><p class="lede">Borno · Brescia, Italy · 950–1,686 m</p><p>18 cm of snow today.</p><p>Today Borno ranks 739 of 1161 resorts with snow in the Alps. Borno is in Brescia, Italy, at 45.92°N 10.18°E.</p><h2>At a glance</h2><table><tbody><tr><th>Top of the slopes</th><td>1,686 m</td></tr><tr><th>Bottom of the slopes</th><td>950 m</td></tr><tr><th>Vertical drop</th><td>736 m</td></tr><tr><th>Pistes</th><td>12 km</td></tr><tr><th>Lifts</th><td>4</td></tr><tr><th>Snow on the ground today</th><td>18 cm</td></tr><tr><th>New snow, last 48 h</th><td>31 cm</td></tr><tr><th>New snow, last 7 days</th><td>58 cm</td></tr></tbody></table><section class="rguide" id="rguide" data-for="borno"><h2>About Borno</h2><p>With roughly <span data-km="12.0">12 km</span> of runs, Borno sits in the middle of the size table of the Alps. Its lifts climb from <span data-m="950">950 m</span> to <span data-m="1686">1,686 m</span>. Presolana is the next resort, <span data-km="6.7">6.7 km</span> away to the west.</p><h2>The pistes of Borno</h2><p>Borno has 11 graded runs adding up to about <span data-km="11.5">12 km</span>. Red runs make up the biggest part: <span data-km="5.9">5.9 km</span>, or 51%. Its heart is intermediate terrain, ideal for skiers who are confident on most slopes and want variety. The steepest pistes add up to about <span data-km="2.7">2.7 km</span>.</p><div class="tw"><table><thead><tr><th>Grade</th><th>Runs</th><th>Length</th><th>Share</th></tr></thead><tbody><tr><th>Green (beginner)</th><td>1 run</td><td><span data-km="0.6">0.6 km</span></td><td>5%</td></tr><tr><th>Blue</th><td>4 runs</td><td><span data-km="2.3">2.3 km</span></td><td>20%</td></tr><tr><th>Red</th><td>4 runs</td><td><span data-km="5.9">5.9 km</span></td><td>51%</td></tr><tr><th>Black</th><td>2 runs</td><td><span data-km="2.7">2.7 km</span></td><td>23%</td></tr></tbody></table></div><h2>The snow season, winter by winter</h2><p>At mid-mountain (about <span data-m="1318">1,318 m</span>), a base of at least 30 cm usually builds by 15 January and lasts to 7 April: about 12 weeks. A normal season tops out near <span data-cm="45">45 cm</span>, around 5 March. The best weeks for snow are usually early March and mid-March. Most winters land between <span data-cm="14">14 cm</span> and <span data-cm="70">70 cm</span> by mid-February. In mid-April a normal winter still leaves <span data-cm="23">23 cm</span>, enough on top while the bottom gets patchy. Christmas week brought snow on the ground in nearly every winter; the usual depth was <span data-cm="24">24 cm</span>; a snowy December gave <span data-cm="51">51 cm</span>, a dry one <span data-cm="4">4 cm</span>.</p><div class="tw"><table><thead><tr><th>Date</th><th>Typical depth</th><th>Winters with snow</th></tr></thead><tbody><tr><th>1 November</th><td><span data-cm="0">0 cm</span></td><td>24%</td></tr><tr><th>15 November</th><td><span data-cm="4">4 cm</span></td><td>64%</td></tr><tr><th>1 December</th><td><span data-cm="9">9 cm</span></td><td>90%</td></tr><tr><th>25 December</th><td><span data-cm="24">24 cm</span></td><td>96%</td></tr><tr><th>15 January</th><td><span data-cm="30">30 cm</span></td><td>98%</td></tr><tr><th>15 February</th><td><span data-cm="37">37 cm</span></td><td>98%</td></tr><tr><th>15 March</th><td><span data-cm="38">38 cm</span></td><td>99%</td></tr><tr><th>15 April</th><td><span data-cm="23">23 cm</span></td><td>84%</td></tr></tbody></table></div><h2>Heights, vertical and lifts</h2><p><span data-m="736">736 m</span> separate the highest and lowest lifts, enough height for proper long runs. The base at <span data-m="950">950 m</span> is fairly low, so expect the best snow on the upper half of the mountain. To get up there are 3 chairlifts and 1 button lift. You sit down on most of the lifts here, which suits children and snowboarders. The skyline is dominated by Pizzo Camino, <span data-m="2491">2,491 m</span> high and <span data-km="6.5">6.5 km</span> north of the resort.</p><h2>Borno and the resorts around it</h2><p>For more terrain, Montecampione (<span data-km="11.2">11 km</span> south) has about <span data-km="20.0">20 km</span> of pistes against <span data-km="12.0">12 km</span> here. If snow is the priority, Monte Pora does better, with about 20 weeks of a good base instead of 12. For higher slopes, Colere climbs to <span data-m="2174">2,174 m</span>.</p><div class="tw"><table><thead><tr><th>Resort</th><th>Distance</th><th>Top</th><th>Pistes</th><th>Typical snow, mid-February</th></tr></thead><tbody><tr><th>Borno (this resort)</th><td></td><td><span data-m="1686">1,686 m</span></td><td><span data-km="12.0">12 km</span></td><td><span data-cm="37">37 cm</span></td></tr><tr><th><a href="presolana.html">Presolana</a></th><td><span data-km="6.7">6.7 km</span> west</td><td><span data-m="1349">1,349 m</span></td><td><span data-km="3.0">3.0 km</span></td><td><span data-cm="41">41 cm</span></td></tr><tr><th><a href="monte_pora.html">Monte Pora</a></th><td><span data-km="6.9">6.9 km</span> south-west</td><td><span data-m="1866">1,866 m</span></td><td><span data-km="17.0">17 km</span></td><td><span data-cm="73">73 cm</span></td></tr><tr><th><a href="schilpario.html">Schilpario</a></th><td><span data-km="9.2">9.2 km</span> north</td><td><span data-m="1215">1,215 m</span></td><td></td><td><span data-cm="30">30 cm</span></td></tr><tr><th><a href="montecampione.html">Montecampione</a></th><td><span data-km="11.2">11 km</span> south</td><td><span data-m="1831">1,831 m</span></td><td><span data-km="20.0">20 km</span></td><td><span data-cm="48">48 cm</span></td></tr><tr><th><a href="colere.html">Colere</a></th><td><span data-km="11.5">12 km</span> north-west</td><td><span data-m="2174">2,174 m</span></td><td><span data-km="12.0">12 km</span></td><td><span data-cm="45">45 cm</span></td></tr><tr><th><a href="val_palot.html">Val Palot</a></th><td><span data-km="15.0">15 km</span> south</td><td><span data-m="1326">1,326 m</span></td><td><span data-km="2.0">2.0 km</span></td><td><span data-cm="27">27 cm</span></td></tr></tbody></table></div><h2>The snow right now</h2><p>Today there are about <span data-cm="18">18 cm</span> of snow on the upper slopes of Borno. The last seven days brought <span data-cm="58">58 cm</span> of new snow. Little new snow is expected over the next 3 days. An ordinary winter would have around <span data-cm="11">11 cm</span> at mid-mountain by now, so this one is on track.</p><h2>Where to stay</h2><p>Places to stay close to the slopes of Borno include Hotel Valle d&#x27;Oro (hotel), Capanna Plai (mountain hut), Hotel San Martino (hotel) and Hotel Aprica (hotel).</p><h2>Quick answers</h2><h3>When does Borno have the most snow?</h3><p>Aim for early March and mid-March; the cover is usually good from mid-January to early April.</p><h3>Can you ski at Borno at Christmas?</h3><p>In general yes, with around <span data-cm="24">24 cm</span> at mid-mountain on Christmas Day in a typical year.</p><h3>How high do the lifts go at Borno?</h3><p>The top is at <span data-m="1686">1,686 m</span> and the base at <span data-m="950">950 m</span>.</p><h3>What level of skier is Borno best for?</h3><p>Mostly intermediates: 51% of the graded pistes are of medium difficulty.</p><h3>Is there a larger resort near Borno?</h3><p>Montecampione, <span data-km="11.2">11 km</span> to the south, with about <span data-km="20.0">20 km</span> of pistes.</p></section><p><a href="./">All ski resorts</a> · Alps</p></div><footer class="foot"><nav><a href="../">Snow map</a><a href="../resorts/">All ski resorts</a><a href="../blog/en/">Snow reports</a><a href="../about/">About</a><a href="../editorial/">Editorial policy</a><a href="../contact/">Contact</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="../sources.html">Sources</a></nav>© 2026 SnowScope · Atlas Labs</footer></div>
+</aside>
+
+<div class="timeline glass" id="timeline">
+  <button class="play" id="play" aria-label="Play the days"><span class="ms f">play_arrow</span></button>
+  <div class="days" id="days" role="group" aria-label="Day"></div>
+</div>
+<div class="legend glass" id="legend"></div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<nav class="bottomnav" id="bnav" aria-label="Sections">
+  <button data-tab="map" aria-current="page"><span class="ms f">map</span>Map</button>
+  <button data-tab="ski"><span class="ms">downhill_skiing</span>Where to ski</button>
+  <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
+  <button data-tab="you"><span class="ms">person</span>You</button>
+</nav>
+<script src="../i18n.js?v=3623f3c1"></script>
+<script>/* Morocco weather reel page for visitors in Morocco / Darija (tools/morocco_reel.py) */(function(){try{var tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"",l=(window.I18N&&I18N.lang)||"",n=navigator.language||"",a=document.querySelector("[data-ma]");if(a&&(/^Africa\/(Casablanca|El_Aaiun)$/.test(tz)||l==="ar"||/-MA$/i.test(n))){var t=l==="ar"?"طقس المغرب":l==="fr"?"Météo Maroc":"Morocco weather";a.querySelector(".lbl").textContent=t;a.title=t;a.setAttribute("aria-label",t);if(l==="ar"||l==="fr")a.href=a.getAttribute("href")+"?lang="+l;a.style.display="";}}catch(e){}})();</script>
+<script src="../core.js?v=7698acde"></script>
+<script src="../follow.js?v=f32a4992" defer></script>
+<script src="../partners.js?v=08f61494" defer></script>
+<script src="../post.js?v=39100f9c" defer></script>
+<script src="../expert.js?v=7ed56ff3"></script>
+<script src="../charts.js?v=5c43184a"></script>
+<script src="../app.js?v=da4deaf5"></script>
+</body>
+</html>

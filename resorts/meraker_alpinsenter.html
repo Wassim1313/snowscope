@@ -1,1 +1,82 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>SnowScope</title><link rel="canonical" href="https://snowscope.app/?r=meraker_alpinsenter"><meta http-equiv="refresh" content="0; url=../?r=meraker_alpinsenter"></head><body><a href="../?r=meraker_alpinsenter">https://snowscope.app/?r=meraker_alpinsenter</a></body></html>
+<!doctype html>
+<html lang="en" data-noads="1" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meråker alpinsenter snow depth today: 20 cm · forecast &amp; past winters</title>
+<meta name="description" content="20 cm of snow at Meråker alpinsenter today. Snow for the next days, compared with past winters, and hotels near Meråker alpinsenter.">
+<meta name="google-adsense-account" content="ca-pub-6693878731812238">
+<link rel="canonical" href="https://snowscope.app/resorts/meraker_alpinsenter.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowScope">
+<meta property="og:title" content="Meråker alpinsenter snow depth today: 20 cm · forecast &amp; past winters">
+<meta property="og:description" content="20 cm of snow at Meråker alpinsenter today. Snow for the next days, compared with past winters, and hotels near Meråker alpinsenter.">
+<meta property="og:url" content="https://snowscope.app/resorts/meraker_alpinsenter.html">
+<meta property="og:image" content="https://snowscope.app/og/SCANDES.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F4F6F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0F17" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../icon-512.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..750&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
+<link rel="stylesheet" href="../site.css?v=f2e88d2e">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SkiResort", "name": "Meråker alpinsenter", "url": "https://snowscope.app/resorts/meraker_alpinsenter.html", "geo": {"@type": "GeoCoordinates", "latitude": 63.45167, "longitude": 11.68926}, "address": {"@type": "PostalAddress", "addressCountry": "Norway"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When is the best time to ski at Meråker alpinsenter?", "acceptedAnswer": {"@type": "Answer", "text": "Aim for early March and mid-March; the cover is usually good from early December to mid-May."}}, {"@type": "Question", "name": "Is there snow at Meråker alpinsenter at Christmas?", "acceptedAnswer": {"@type": "Answer", "text": "Most years, yes. Snow lay at mid-mountain at Christmas in every winter, about 51 cm deep."}}, {"@type": "Question", "name": "How high is Meråker alpinsenter?", "acceptedAnswer": {"@type": "Answer", "text": "The top is at 617 m and the base at 159 m."}}, {"@type": "Question", "name": "Is Meråker alpinsenter good for beginners?", "acceptedAnswer": {"@type": "Answer", "text": "Yes: 50% of the graded pistes, about 4.3 km, are easy."}}, {"@type": "Question", "name": "How many km of pistes does Meråker alpinsenter have?", "acceptedAnswer": {"@type": "Answer", "text": "About 8.0 km of pistes and 6 lifts."}}]}]}</script>
+</head>
+<body class="app" data-slug="meraker_alpinsenter">
+<a class="skip" href="#pbody">Skip to the snow list</a>
+<div id="map" role="region" aria-label="Snow map. The panel lists the same values."></div>
+
+<header class="appbar glass">
+  <a class="brand" href="../" data-nav="map"><img src="../logo.svg" alt="" width="30" height="30"><span>SnowScope</span></a>
+  <div class="find" role="search"><span class="ms">search</span><input type="search" placeholder="Resort or mountain town" aria-label="Find a ski resort or a mountain town" autocomplete="off"><ul hidden></ul></div>
+  <button class="btn icon only-s" data-find-open aria-label="Find a ski resort"><span class="ms">search</span></button>
+  <button class="btn alertbtn" data-fw-alert aria-label="Powder alert" title="Powder alert"><span class="ms f">notifications_active</span><span class="lbl hide-s">Powder alert</span></button>
+  <a class="btn tonal blogbtn" data-blog href="../blog/en/" aria-label="Snow reports" title="Snow reports"><span class="ms">article</span><span class="lbl hide-s">Snow reports</span></a>
+  <a class="btn tonal mabtn" data-ma href="../maroc.html" style="display:none" aria-label="Morocco weather" title="Morocco weather"><span class="ms">rainy</span><span class="lbl hide-s">Morocco weather</span></a>
+  <button class="btn icon langbtn" data-lang aria-label="Language"><span class="ms">language</span></button>
+  <div class="acct" id="acct"></div>
+</header>
+<div class="regions pills" id="regions" role="group" aria-label="Region"></div>
+<div class="mapctl">
+  <button class="mapbtn" id="layersBtn" aria-haspopup="dialog" aria-label="Map layers"><span class="ms">layers</span><span class="lbl">Layers</span></button>
+  <button class="mapbtn" id="btn3d" aria-pressed="false" aria-label="3D view"><span class="ms">view_in_ar</span><span class="lbl">3D</span></button>
+</div>
+
+<aside class="panel" id="panel" aria-label="Snow details">
+  <button class="grab" id="grab" aria-label="Expand or collapse the panel"></button>
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <button data-tab="map" aria-current="page"><span class="ms">map</span>Snow today</button>
+    <button data-tab="ski"><span class="ms">downhill_skiing</span>Where to ski</button>
+    <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
+    <button data-tab="you"><span class="ms">person</span>You</button>
+  </nav>
+  <div class="pbody" id="pbody" tabindex="-1"><div class="seo"><div class="over">Ski resort</div><h1>Meråker alpinsenter</h1><p class="lede">Meråker alpinsenter · Trøndelag, Norway · 159–617 m</p><p>20 cm of snow today.</p><p>Today Meråker alpinsenter ranks 109 of 410 resorts with snow in Scandinavia. Meråker alpinsenter is in Trøndelag, Norway, at 63.45°N 11.69°E.</p><h2>At a glance</h2><table><tbody><tr><th>Top of the slopes</th><td>617 m</td></tr><tr><th>Bottom of the slopes</th><td>159 m</td></tr><tr><th>Vertical drop</th><td>458 m</td></tr><tr><th>Pistes</th><td>8 km</td></tr><tr><th>Lifts</th><td>6</td></tr><tr><th>Snow on the ground today</th><td>20 cm</td></tr><tr><th>New snow, last 7 days</th><td>1 cm</td></tr></tbody></table><section class="rguide" id="rguide" data-for="meraker_alpinsenter"><h2>About Meråker alpinsenter</h2><p>With roughly <span data-km="8.0">8.0 km</span> of runs, Meråker alpinsenter sits in the middle of the size table of Scandinavia. The slopes start at <span data-m="159">159 m</span> and reach <span data-m="617">617 m</span> at the top. The closest other ski area is Storlien (<span data-km="25.7">26 km</span>, south-east).</p><h2>Runs by difficulty</h2><p>Meråker alpinsenter has 17 graded runs adding up to about <span data-km="8.5">8.5 km</span>. Most of the length is red (38%, about <span data-km="3.2">3.2 km</span>). Easy slopes dominate, which makes it a good choice for a first ski holiday or for young children.</p><div class="tw"><table><thead><tr><th>Grade</th><th>Runs</th><th>Length</th><th>Share</th></tr></thead><tbody><tr><th>Green (beginner)</th><td>5 runs</td><td><span data-km="1.9">1.9 km</span></td><td>22%</td></tr><tr><th>Blue</th><td>6 runs</td><td><span data-km="2.4">2.4 km</span></td><td>28%</td></tr><tr><th>Red</th><td>5 runs</td><td><span data-km="3.2">3.2 km</span></td><td>38%</td></tr><tr><th>Black</th><td>1 run</td><td><span data-km="1.0">1.0 km</span></td><td>12%</td></tr></tbody></table></div><h2>The snow season, winter by winter</h2><p>In a typical winter the snow at about <span data-m="388">388 m</span>, the middle of the ski area reaches a solid 30 cm base around 5 December and keeps it until about 11 May, roughly 23 weeks. Spring skiers should know that mid-April usually has <span data-cm="95">95 cm</span>, plenty for sunny spring days. At Christmas there was snow here in every winter, typically <span data-cm="51">51 cm</span>, with <span data-cm="86">86 cm</span> in the best years. Depth normally peaks in late March at roughly <span data-cm="110">110 cm</span>. The snow is fairly dependable: in mid-February most winters had between <span data-cm="53">53 cm</span> and <span data-cm="130">130 cm</span>. Snow conditions have usually peaked in early March and mid-March. A metre-deep snowpack is normal for around 6 weeks.</p><div class="tw"><table><thead><tr><th>Date</th><th>Typical depth</th><th>Winters with snow</th></tr></thead><tbody><tr><th>15 November</th><td><span data-cm="10">10 cm</span></td><td>80%</td></tr><tr><th>1 December</th><td><span data-cm="26">26 cm</span></td><td>96%</td></tr><tr><th>25 December</th><td><span data-cm="51">51 cm</span></td><td>100%</td></tr><tr><th>15 January</th><td><span data-cm="69">69 cm</span></td><td>100%</td></tr><tr><th>15 February</th><td><span data-cm="95">95 cm</span></td><td>100%</td></tr><tr><th>15 March</th><td><span data-cm="102">102 cm</span></td><td>100%</td></tr><tr><th>15 April</th><td><span data-cm="95">95 cm</span></td><td>100%</td></tr><tr><th>15 May</th><td><span data-cm="18">18 cm</span></td><td>68%</td></tr></tbody></table></div><h2>Meråker alpinsenter and the resorts around it</h2><p>By piste length Meråker alpinsenter comes first among these 7 resorts. For more reliable snow, Storlien usually keeps a 30 cm base for about 27 weeks, against 23 here.</p><div class="tw"><table><thead><tr><th>Resort</th><th>Distance</th><th>Top</th><th>Pistes</th><th>Typical snow, mid-February</th></tr></thead><tbody><tr><th>Meråker alpinsenter (this resort)</th><td></td><td><span data-m="617">617 m</span></td><td><span data-km="8.0">8.0 km</span></td><td><span data-cm="95">95 cm</span></td></tr><tr><th><a href="storlien.html">Storlien</a></th><td><span data-km="25.7">26 km</span> south-east</td><td><span data-m="782">782 m</span></td><td><span data-km="4.0">4.0 km</span></td><td><span data-cm="115">115 cm</span></td></tr><tr><th><a href="daltra_alpinbakke.html">Daltrøa alpinbakke</a></th><td><span data-km="31.3">31 km</span> west</td><td></td><td></td><td><span data-cm="72">72 cm</span></td></tr><tr><th><a href="torsbustaden_norway.html">Torsbustaden</a></th><td><span data-km="31.9">32 km</span> north-west</td><td></td><td></td><td><span data-cm="61">61 cm</span></td></tr><tr><th><a href="torsbustaden_alpinsenter.html">Torsbustaden alpinsenter</a></th><td><span data-km="32.0">32 km</span> north-west</td><td><span data-m="238">238 m</span></td><td><span data-km="2.0">2.0 km</span></td><td><span data-cm="64">64 cm</span></td></tr><tr><th><a href="torsbustaden.html">Torsbustaden</a></th><td><span data-km="32.2">32 km</span> north-west</td><td><span data-m="397">397 m</span></td><td></td><td><span data-cm="71">71 cm</span></td></tr><tr><th><a href="torsbustaden_alpinsenter_norway.html">Torsbustaden alpinsenter</a></th><td><span data-km="32.2">32 km</span> north-west</td><td></td><td></td><td><span data-cm="61">61 cm</span></td></tr></tbody></table></div><h2>Lifts and terrain</h2><p>Skied top to bottom, Meråker alpinsenter gives <span data-m="458">458 m</span> of descent: runs of a moderate length. Of the 5 ski areas within 50 km, only 1 reaches higher. Its 6 lifts break down into 1 T-bar and 5 drag lifts. With so many tows and T-bars, the lifts are simple and quick, but tiring for first-time snowboarders. The highest named summit within 8 km is Fonnfjellet at <span data-m="1100">1,100 m</span>, standing <span data-m="483">483 m</span> above the top lift.</p><h2>This week's snow</h2><p>Today there are about <span data-cm="20">20 cm</span> of snow on the upper slopes of Meråker alpinsenter. The last seven days brought <span data-cm="1">1 cm</span> of new snow. Little new snow is expected over the next 3 days. An ordinary winter would have around <span data-cm="29">29 cm</span> at mid-mountain by now, so this one is on track.</p><h2>Where to stay</h2><p>Near the lifts you will find Fonnfjell hotell (hotel).</p><h2>Questions about Meråker alpinsenter</h2><h3>When is the best time to ski at Meråker alpinsenter?</h3><p>Aim for early March and mid-March; the cover is usually good from early December to mid-May.</p><h3>Is there snow at Meråker alpinsenter at Christmas?</h3><p>Most years, yes. Snow lay at mid-mountain at Christmas in every winter, about <span data-cm="51">51 cm</span> deep.</p><h3>How high is Meråker alpinsenter?</h3><p>The top is at <span data-m="617">617 m</span> and the base at <span data-m="159">159 m</span>.</p><h3>Is Meråker alpinsenter good for beginners?</h3><p>Yes: 50% of the graded pistes, about <span data-km="4.3">4.3 km</span>, are easy.</p><h3>How many km of pistes does Meråker alpinsenter have?</h3><p>About <span data-km="8.0">8.0 km</span> of pistes and 6 lifts.</p></section><p><a href="./">All ski resorts</a> · Scandinavia</p></div><footer class="foot"><nav><a href="../">Snow map</a><a href="../resorts/">All ski resorts</a><a href="../blog/en/">Snow reports</a><a href="../about/">About</a><a href="../editorial/">Editorial policy</a><a href="../contact/">Contact</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="../sources.html">Sources</a></nav>© 2026 SnowScope · Atlas Labs</footer></div>
+</aside>
+
+<div class="timeline glass" id="timeline">
+  <button class="play" id="play" aria-label="Play the days"><span class="ms f">play_arrow</span></button>
+  <div class="days" id="days" role="group" aria-label="Day"></div>
+</div>
+<div class="legend glass" id="legend"></div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<nav class="bottomnav" id="bnav" aria-label="Sections">
+  <button data-tab="map" aria-current="page"><span class="ms f">map</span>Map</button>
+  <button data-tab="ski"><span class="ms">downhill_skiing</span>Where to ski</button>
+  <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
+  <button data-tab="you"><span class="ms">person</span>You</button>
+</nav>
+<script src="../i18n.js?v=3623f3c1"></script>
+<script>/* Morocco weather reel page for visitors in Morocco / Darija (tools/morocco_reel.py) */(function(){try{var tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"",l=(window.I18N&&I18N.lang)||"",n=navigator.language||"",a=document.querySelector("[data-ma]");if(a&&(/^Africa\/(Casablanca|El_Aaiun)$/.test(tz)||l==="ar"||/-MA$/i.test(n))){var t=l==="ar"?"طقس المغرب":l==="fr"?"Météo Maroc":"Morocco weather";a.querySelector(".lbl").textContent=t;a.title=t;a.setAttribute("aria-label",t);if(l==="ar"||l==="fr")a.href=a.getAttribute("href")+"?lang="+l;a.style.display="";}}catch(e){}})();</script>
+<script src="../core.js?v=7698acde"></script>
+<script src="../follow.js?v=f32a4992" defer></script>
+<script src="../partners.js?v=08f61494" defer></script>
+<script src="../post.js?v=39100f9c" defer></script>
+<script src="../expert.js?v=7ed56ff3"></script>
+<script src="../charts.js?v=5c43184a"></script>
+<script src="../app.js?v=da4deaf5"></script>
+</body>
+</html>

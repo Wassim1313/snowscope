@@ -1,1 +1,82 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>SnowScope</title><link rel="canonical" href="https://snowscope.app/?r=jochgrimm_passo_oclini"><meta http-equiv="refresh" content="0; url=../?r=jochgrimm_passo_oclini"></head><body><a href="../?r=jochgrimm_passo_oclini">https://snowscope.app/?r=jochgrimm_passo_oclini</a></body></html>
+<!doctype html>
+<html lang="en" data-noads="1" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jochgrimm snow depth today: 25 cm · forecast &amp; past winters</title>
+<meta name="description" content="25 cm of snow at Jochgrimm today. Snow for the next days, compared with past winters, and hotels near Jochgrimm.">
+<meta name="google-adsense-account" content="ca-pub-6693878731812238">
+<link rel="canonical" href="https://snowscope.app/resorts/jochgrimm_passo_oclini.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowScope">
+<meta property="og:title" content="Jochgrimm snow depth today: 25 cm · forecast &amp; past winters">
+<meta property="og:description" content="25 cm of snow at Jochgrimm today. Snow for the next days, compared with past winters, and hotels near Jochgrimm.">
+<meta property="og:url" content="https://snowscope.app/resorts/jochgrimm_passo_oclini.html">
+<meta property="og:image" content="https://snowscope.app/og/ALPS.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F4F6F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0F17" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../icon-512.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..750&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
+<link rel="stylesheet" href="../site.css?v=f2e88d2e">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SkiResort", "name": "Jochgrimm, Passo Oclini", "url": "https://snowscope.app/resorts/jochgrimm_passo_oclini.html", "geo": {"@type": "GeoCoordinates", "latitude": 46.34508, "longitude": 11.44909}, "address": {"@type": "PostalAddress", "addressCountry": "Italy"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the best month to ski at Jochgrimm?", "acceptedAnswer": {"@type": "Answer", "text": "Aim for early March and late March; the cover is usually good from mid-December to early May."}}, {"@type": "Question", "name": "How much snow does Jochgrimm have at Christmas?", "acceptedAnswer": {"@type": "Answer", "text": "Most years, yes. Snow lay at mid-mountain at Christmas in nearly every winter, about 35 cm deep."}}, {"@type": "Question", "name": "How high is Jochgrimm?", "acceptedAnswer": {"@type": "Answer", "text": "The top is at 2,227 m and the base at 1,843 m."}}, {"@type": "Question", "name": "Is Jochgrimm suitable for families?", "acceptedAnswer": {"@type": "Answer", "text": "Yes: 41% of the graded pistes, about 2.4 km, are easy."}}, {"@type": "Question", "name": "Which bigger ski area is near Jochgrimm?", "acceptedAnswer": {"@type": "Answer", "text": "Latemar Dolomites, 7.7 km to the east, with about 40 km of pistes."}}]}]}</script>
+</head>
+<body class="app" data-slug="jochgrimm_passo_oclini">
+<a class="skip" href="#pbody">Skip to the snow list</a>
+<div id="map" role="region" aria-label="Snow map. The panel lists the same values."></div>
+
+<header class="appbar glass">
+  <a class="brand" href="../" data-nav="map"><img src="../logo.svg" alt="" width="30" height="30"><span>SnowScope</span></a>
+  <div class="find" role="search"><span class="ms">search</span><input type="search" placeholder="Resort or mountain town" aria-label="Find a ski resort or a mountain town" autocomplete="off"><ul hidden></ul></div>
+  <button class="btn icon only-s" data-find-open aria-label="Find a ski resort"><span class="ms">search</span></button>
+  <button class="btn alertbtn" data-fw-alert aria-label="Powder alert" title="Powder alert"><span class="ms f">notifications_active</span><span class="lbl hide-s">Powder alert</span></button>
+  <a class="btn tonal blogbtn" data-blog href="../blog/en/" aria-label="Snow reports" title="Snow reports"><span class="ms">article</span><span class="lbl hide-s">Snow reports</span></a>
+  <a class="btn tonal mabtn" data-ma href="../maroc.html" style="display:none" aria-label="Morocco weather" title="Morocco weather"><span class="ms">rainy</span><span class="lbl hide-s">Morocco weather</span></a>
+  <button class="btn icon langbtn" data-lang aria-label="Language"><span class="ms">language</span></button>
+  <div class="acct" id="acct"></div>
+</header>
+<div class="regions pills" id="regions" role="group" aria-label="Region"></div>
+<div class="mapctl">
+  <button class="mapbtn" id="layersBtn" aria-haspopup="dialog" aria-label="Map layers"><span class="ms">layers</span><span class="lbl">Layers</span></button>
+  <button class="mapbtn" id="btn3d" aria-pressed="false" aria-label="3D view"><span class="ms">view_in_ar</span><span class="lbl">3D</span></button>
+</div>
+
+<aside class="panel" id="panel" aria-label="Snow details">
+  <button class="grab" id="grab" aria-label="Expand or collapse the panel"></button>
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <button data-tab="map" aria-current="page"><span class="ms">map</span>Snow today</button>
+    <button data-tab="ski"><span class="ms">downhill_skiing</span>Where to ski</button>
+    <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
+    <button data-tab="you"><span class="ms">person</span>You</button>
+  </nav>
+  <div class="pbody" id="pbody" tabindex="-1"><div class="seo"><div class="over">Ski resort</div><h1>Jochgrimm</h1><p class="lede">Jochgrimm, Passo Oclini · Bolzano/Bozen, Italy · 1,843–2,227 m</p><p>25 cm of snow today.</p><p>Today Jochgrimm ranks 510 of 1161 resorts with snow in the Alps. Jochgrimm is in Bolzano/Bozen, Italy, at 46.35°N 11.45°E.</p><h2>At a glance</h2><table><tbody><tr><th>Top of the slopes</th><td>2,227 m</td></tr><tr><th>Bottom of the slopes</th><td>1,843 m</td></tr><tr><th>Vertical drop</th><td>384 m</td></tr><tr><th>Pistes</th><td>6 km</td></tr><tr><th>Lifts</th><td>6</td></tr><tr><th>Snow on the ground today</th><td>25 cm</td></tr><tr><th>New snow, last 48 h</th><td>28 cm</td></tr><tr><th>New snow, last 7 days</th><td>43 cm</td></tr></tbody></table><section class="rguide" id="rguide" data-for="jochgrimm_passo_oclini"><h2>About Jochgrimm</h2><p>Neither huge nor tiny, Jochgrimm offers about <span data-km="6.0">6.0 km</span> of pistes (number 620 of 1,056 in the Alps). Skiing here happens between <span data-m="1843">1,843 m</span> and <span data-m="2227">2,227 m</span> above sea level. There are 8 other ski areas within 40 km, the closest being Passo Lavazè, <span data-km="3.0">3.0 km</span> to the east.</p><h2>When the snow is good</h2><p>Count on about 20 weeks of solid cover (30 cm or more) at about <span data-m="2035">2,035 m</span>, the middle of the ski area in an ordinary winter, from mid-December to early May. Most winters land between <span data-cm="25">25 cm</span> and <span data-cm="85">85 cm</span> by mid-February. At Christmas there was snow here in nearly every winter, typically <span data-cm="35">35 cm</span>, from <span data-cm="5">5 cm</span> in a poor year to <span data-cm="70">70 cm</span> in a big one. The best weeks for snow are usually early March and late March. The snow is usually deepest around 29 March, with about <span data-cm="61">61 cm</span>. Spring skiers should know that mid-April usually has <span data-cm="47">47 cm</span>, so spring skiing usually holds up well.</p><div class="tw"><table><thead><tr><th>Date</th><th>Typical depth</th><th>Winters with snow</th></tr></thead><tbody><tr><th>15 November</th><td><span data-cm="5">5 cm</span></td><td>62%</td></tr><tr><th>1 December</th><td><span data-cm="15">15 cm</span></td><td>91%</td></tr><tr><th>25 December</th><td><span data-cm="35">35 cm</span></td><td>96%</td></tr><tr><th>15 January</th><td><span data-cm="41">41 cm</span></td><td>100%</td></tr><tr><th>15 February</th><td><span data-cm="53">53 cm</span></td><td>100%</td></tr><tr><th>15 March</th><td><span data-cm="54">54 cm</span></td><td>98%</td></tr><tr><th>15 April</th><td><span data-cm="47">47 cm</span></td><td>95%</td></tr><tr><th>15 May</th><td><span data-cm="0">0 cm</span></td><td>37%</td></tr></tbody></table></div><h2>What there is to ski at Jochgrimm</h2><p>Jochgrimm has 13 graded runs adding up to about <span data-km="5.9">5.9 km</span>. Red runs make up the biggest part: <span data-km="3.5">3.5 km</span>, or 59%. Its heart is intermediate terrain, ideal for skiers who are confident on most slopes and want variety.</p><div class="tw"><table><thead><tr><th>Grade</th><th>Runs</th><th>Length</th><th>Share</th></tr></thead><tbody><tr><th>Blue</th><td>7 runs</td><td><span data-km="2.4">2.4 km</span></td><td>41%</td></tr><tr><th>Red</th><td>6 runs</td><td><span data-km="3.5">3.5 km</span></td><td>59%</td></tr></tbody></table></div><h2>Nearby alternatives compared</h2><p>The big name nearby is Latemar Dolomites: about <span data-km="40.0">40 km</span> of pistes, <span data-km="7.7">7.7 km</span> to the east. For snow it is second in the group, behind Latemar Dolomites (20 weeks of good cover, 20 here).</p><div class="tw"><table><thead><tr><th>Resort</th><th>Distance</th><th>Top</th><th>Pistes</th><th>Typical snow, mid-February</th></tr></thead><tbody><tr><th>Jochgrimm (this resort)</th><td></td><td><span data-m="2227">2,227 m</span></td><td><span data-km="6.0">6.0 km</span></td><td><span data-cm="53">53 cm</span></td></tr><tr><th><a href="passo_lavaze.html">Passo Lavazè</a></th><td><span data-km="3.0">3.0 km</span> east</td><td><span data-m="1837">1,837 m</span></td><td><span data-km="1.0">1.0 km</span></td><td><span data-cm="41">41 cm</span></td></tr><tr><th><a href="deutschnofen_nova_ponente_deutschnofen_nova_pone.html">Deutschnofen</a></th><td><span data-km="6.5">6.5 km</span> north</td><td><span data-m="1524">1,524 m</span></td><td><span data-km="1.0">1.0 km</span></td><td><span data-cm="29">29 cm</span></td></tr><tr><th><a href="petersberg_monte_san_pietro_petersberg_monte_san.html">Petersberg</a></th><td><span data-km="7.2">7.2 km</span> north-west</td><td><span data-m="1469">1,469 m</span></td><td><span data-km="2.0">2.0 km</span></td><td><span data-cm="28">28 cm</span></td></tr><tr><th><a href="latemar_dolomites.html">Latemar Dolomites</a></th><td><span data-km="7.7">7.7 km</span> east</td><td><span data-m="2423">2,423 m</span></td><td><span data-km="40.0">40 km</span></td><td><span data-cm="48">48 cm</span></td></tr><tr><th><a href="alpe_cermis.html">Alpe Cermis</a></th><td><span data-km="9.6">9.6 km</span> south</td><td><span data-m="2250">2,250 m</span></td><td><span data-km="18.0">18 km</span></td><td><span data-cm="30">30 cm</span></td></tr><tr><th><a href="carezza.html">Carezza</a></th><td><span data-km="13.8">14 km</span> north-east</td><td><span data-m="2322">2,322 m</span></td><td><span data-km="20.0">20 km</span></td><td><span data-cm="50">50 cm</span></td></tr></tbody></table></div><h2>The mountain at Jochgrimm</h2><p>Skied top to bottom, Jochgrimm gives <span data-m="384">384 m</span> of descent: runs of a moderate length. Even the lowest lift starts at <span data-m="1843">1,843 m</span>, high enough for the bottom of the resort to keep cold snow longer than most. The lift system counts 6 lifts: 2 chairlifts, 2 button lifts and 2 moving carpets. For small children there are 2 conveyor-belt lifts. Above the ski area rises Pala di Santa - Pala de Zanca (<span data-m="2493">2,493 m</span>), <span data-km="4.9">4.9 km</span> to the east, about <span data-m="266">266 m</span> higher than the top lift.</p><h2>This week's snow</h2><p>The upper slopes of Jochgrimm hold around <span data-cm="25">25 cm</span> of snow today. The last seven days brought <span data-cm="43">43 cm</span> of new snow. The next days look mild and dry; the cover is expected to settle to about <span data-cm="17">17 cm</span> by Monday. That is close to a normal winter for the date (about <span data-cm="19">19 cm</span> at mid-mountain).</p><h2>Staying nearby</h2><p>Near the lifts you will find 4 hotels: Berghotel Jochgrimm, Hotel Schwarzhorn, Sport Hotel Lavazè and Albergo Dolomiti.</p><h2>Questions about Jochgrimm</h2><h3>What is the best month to ski at Jochgrimm?</h3><p>Aim for early March and late March; the cover is usually good from mid-December to early May.</p><h3>How much snow does Jochgrimm have at Christmas?</h3><p>Most years, yes. Snow lay at mid-mountain at Christmas in nearly every winter, about <span data-cm="35">35 cm</span> deep.</p><h3>How high is Jochgrimm?</h3><p>The top is at <span data-m="2227">2,227 m</span> and the base at <span data-m="1843">1,843 m</span>.</p><h3>Is Jochgrimm suitable for families?</h3><p>Yes: 41% of the graded pistes, about <span data-km="2.4">2.4 km</span>, are easy.</p><h3>Which bigger ski area is near Jochgrimm?</h3><p>Latemar Dolomites, <span data-km="7.7">7.7 km</span> to the east, with about <span data-km="40.0">40 km</span> of pistes.</p></section><p><a href="./">All ski resorts</a> · Alps</p></div><footer class="foot"><nav><a href="../">Snow map</a><a href="../resorts/">All ski resorts</a><a href="../blog/en/">Snow reports</a><a href="../about/">About</a><a href="../editorial/">Editorial policy</a><a href="../contact/">Contact</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="../sources.html">Sources</a></nav>© 2026 SnowScope · Atlas Labs</footer></div>
+</aside>
+
+<div class="timeline glass" id="timeline">
+  <button class="play" id="play" aria-label="Play the days"><span class="ms f">play_arrow</span></button>
+  <div class="days" id="days" role="group" aria-label="Day"></div>
+</div>
+<div class="legend glass" id="legend"></div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<nav class="bottomnav" id="bnav" aria-label="Sections">
+  <button data-tab="map" aria-current="page"><span class="ms f">map</span>Map</button>
+  <button data-tab="ski"><span class="ms">downhill_skiing</span>Where to ski</button>
+  <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
+  <button data-tab="you"><span class="ms">person</span>You</button>
+</nav>
+<script src="../i18n.js?v=3623f3c1"></script>
+<script>/* Morocco weather reel page for visitors in Morocco / Darija (tools/morocco_reel.py) */(function(){try{var tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"",l=(window.I18N&&I18N.lang)||"",n=navigator.language||"",a=document.querySelector("[data-ma]");if(a&&(/^Africa\/(Casablanca|El_Aaiun)$/.test(tz)||l==="ar"||/-MA$/i.test(n))){var t=l==="ar"?"طقس المغرب":l==="fr"?"Météo Maroc":"Morocco weather";a.querySelector(".lbl").textContent=t;a.title=t;a.setAttribute("aria-label",t);if(l==="ar"||l==="fr")a.href=a.getAttribute("href")+"?lang="+l;a.style.display="";}}catch(e){}})();</script>
+<script src="../core.js?v=7698acde"></script>
+<script src="../follow.js?v=f32a4992" defer></script>
+<script src="../partners.js?v=08f61494" defer></script>
+<script src="../post.js?v=39100f9c" defer></script>
+<script src="../expert.js?v=7ed56ff3"></script>
+<script src="../charts.js?v=5c43184a"></script>
+<script src="../app.js?v=da4deaf5"></script>
+</body>
+</html>

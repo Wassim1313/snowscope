@@ -1,1 +1,82 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><title>SnowScope</title><link rel="canonical" href="https://snowscope.app/?r=strallegg"><meta http-equiv="refresh" content="0; url=../?r=strallegg"></head><body><a href="../?r=strallegg">https://snowscope.app/?r=strallegg</a></body></html>
+<!doctype html>
+<html lang="en" data-noads="1" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Strallegg snow depth today: 11 cm · forecast &amp; past winters</title>
+<meta name="description" content="11 cm of snow at Strallegg today. Snow for the next days, compared with past winters, and hotels near Strallegg.">
+<meta name="google-adsense-account" content="ca-pub-6693878731812238">
+<link rel="canonical" href="https://snowscope.app/resorts/strallegg.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SnowScope">
+<meta property="og:title" content="Strallegg snow depth today: 11 cm · forecast &amp; past winters">
+<meta property="og:description" content="11 cm of snow at Strallegg today. Snow for the next days, compared with past winters, and hotels near Strallegg.">
+<meta property="og:url" content="https://snowscope.app/resorts/strallegg.html">
+<meta property="og:image" content="https://snowscope.app/og/ALPS.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F4F6F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0F17" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="../icon-512.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..750&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400..500,0..1,0&display=block">
+<link rel="stylesheet" href="../site.css?v=f2e88d2e">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SkiResort", "name": "Strallegg", "url": "https://snowscope.app/resorts/strallegg.html", "geo": {"@type": "GeoCoordinates", "latitude": 47.43691, "longitude": 15.70446}, "address": {"@type": "PostalAddress", "addressCountry": "Austria"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "When does Strallegg have the most snow?", "acceptedAnswer": {"@type": "Answer", "text": "Aim for mid-February and late February."}}, {"@type": "Question", "name": "Can you ski at Strallegg at Christmas?", "acceptedAnswer": {"@type": "Answer", "text": "Sometimes. Christmas snow at mid-mountain came in nearly every winter, usually about 6 cm, so check before you go."}}, {"@type": "Question", "name": "How high is Strallegg?", "acceptedAnswer": {"@type": "Answer", "text": "Between 688 m and 989 m, so 301 m of vertical drop."}}, {"@type": "Question", "name": "Who is Strallegg best for?", "acceptedAnswer": {"@type": "Answer", "text": "Mostly intermediates: 72% of the graded pistes are of medium difficulty."}}, {"@type": "Question", "name": "Is there a larger resort near Strallegg?", "acceptedAnswer": {"@type": "Answer", "text": "Stuhleck, 18 km to the north, with about 22 km of pistes."}}]}]}</script>
+</head>
+<body class="app" data-slug="strallegg">
+<a class="skip" href="#pbody">Skip to the snow list</a>
+<div id="map" role="region" aria-label="Snow map. The panel lists the same values."></div>
+
+<header class="appbar glass">
+  <a class="brand" href="../" data-nav="map"><img src="../logo.svg" alt="" width="30" height="30"><span>SnowScope</span></a>
+  <div class="find" role="search"><span class="ms">search</span><input type="search" placeholder="Resort or mountain town" aria-label="Find a ski resort or a mountain town" autocomplete="off"><ul hidden></ul></div>
+  <button class="btn icon only-s" data-find-open aria-label="Find a ski resort"><span class="ms">search</span></button>
+  <button class="btn alertbtn" data-fw-alert aria-label="Powder alert" title="Powder alert"><span class="ms f">notifications_active</span><span class="lbl hide-s">Powder alert</span></button>
+  <a class="btn tonal blogbtn" data-blog href="../blog/en/" aria-label="Snow reports" title="Snow reports"><span class="ms">article</span><span class="lbl hide-s">Snow reports</span></a>
+  <a class="btn tonal mabtn" data-ma href="../maroc.html" style="display:none" aria-label="Morocco weather" title="Morocco weather"><span class="ms">rainy</span><span class="lbl hide-s">Morocco weather</span></a>
+  <button class="btn icon langbtn" data-lang aria-label="Language"><span class="ms">language</span></button>
+  <div class="acct" id="acct"></div>
+</header>
+<div class="regions pills" id="regions" role="group" aria-label="Region"></div>
+<div class="mapctl">
+  <button class="mapbtn" id="layersBtn" aria-haspopup="dialog" aria-label="Map layers"><span class="ms">layers</span><span class="lbl">Layers</span></button>
+  <button class="mapbtn" id="btn3d" aria-pressed="false" aria-label="3D view"><span class="ms">view_in_ar</span><span class="lbl">3D</span></button>
+</div>
+
+<aside class="panel" id="panel" aria-label="Snow details">
+  <button class="grab" id="grab" aria-label="Expand or collapse the panel"></button>
+  <nav class="tabs" id="tabs" aria-label="Sections">
+    <button data-tab="map" aria-current="page"><span class="ms">map</span>Snow today</button>
+    <button data-tab="ski"><span class="ms">downhill_skiing</span>Where to ski</button>
+    <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
+    <button data-tab="you"><span class="ms">person</span>You</button>
+  </nav>
+  <div class="pbody" id="pbody" tabindex="-1"><div class="seo"><div class="over">Ski resort</div><h1>Strallegg</h1><p class="lede">Strallegg · Styria, Austria · 688–989 m</p><p>11 cm of snow today.</p><p>Today Strallegg ranks 967 of 1161 resorts with snow in the Alps. Strallegg is in Styria, Austria, at 47.44°N 15.70°E.</p><h2>At a glance</h2><table><tbody><tr><th>Top of the slopes</th><td>989 m</td></tr><tr><th>Bottom of the slopes</th><td>688 m</td></tr><tr><th>Vertical drop</th><td>301 m</td></tr><tr><th>Pistes</th><td>1 km</td></tr><tr><th>Lifts</th><td>2</td></tr><tr><th>Snow on the ground today</th><td>11 cm</td></tr><tr><th>New snow, last 48 h</th><td>15 cm</td></tr><tr><th>New snow, last 7 days</th><td>17 cm</td></tr></tbody></table><section class="rguide" id="rguide" data-for="strallegg"><h2>About Strallegg</h2><p>Compact and local, Strallegg has about <span data-km="1.0">1.0 km</span> of runs, small for the Alps. The slopes start at <span data-m="688">688 m</span> and reach <span data-m="989">989 m</span> at the top. Schneeland Wenigzell is the next resort, <span data-km="4.1">4.1 km</span> away to the east.</p><h2>What there is to ski at Strallegg</h2><p>Strallegg has 2 graded runs adding up to about <span data-km="1.5">1.5 km</span>. The largest share is red, with <span data-km="1.1">1.1 km</span> (72%). Intermediate runs make up 72% of the length, the sweet spot for most holiday skiers.</p><div class="tw"><table><thead><tr><th>Grade</th><th>Runs</th><th>Length</th><th>Share</th></tr></thead><tbody><tr><th>Blue</th><td>1 run</td><td><span data-km="0.4">0.4 km</span></td><td>28%</td></tr><tr><th>Red</th><td>1 run</td><td><span data-km="1.1">1.1 km</span></td><td>72%</td></tr></tbody></table></div><h2>Nearby alternatives compared</h2><p>Skiers after mileage can drive <span data-km="17.7">18 km</span> north to Stuhleck, with about <span data-km="22.0">22 km</span> of runs. If snow is the priority, Stuhleck does better, with about 10 weeks of a good base instead of 0. Stuhleck reaches <span data-m="1767">1,767 m</span>, the most of the resorts listed.</p><div class="tw"><table><thead><tr><th>Resort</th><th>Distance</th><th>Top</th><th>Pistes</th><th>Typical snow, mid-February</th></tr></thead><tbody><tr><th>Strallegg (this resort)</th><td></td><td><span data-m="989">989 m</span></td><td><span data-km="1.0">1.0 km</span></td><td><span data-cm="8">8 cm</span></td></tr><tr><th><a href="unnamed_c58d8eb5.html">Schneeland Wenigzell</a></th><td><span data-km="4.1">4.1 km</span> east</td><td><span data-m="1121">1,121 m</span></td><td><span data-km="1.0">1.0 km</span></td><td><span data-cm="11">11 cm</span></td></tr><tr><th><a href="familienschiberg_st_jakob_im_walde.html">Familienschiberg St. Jakob im Wa</a></th><td><span data-km="7.7">7.7 km</span> north-east</td><td><span data-m="1190">1,190 m</span></td><td><span data-km="3.0">3.0 km</span></td><td><span data-cm="21">21 cm</span></td></tr><tr><th><a href="hauereck_st_kathrein_am_hauenstein.html">Hauereck</a></th><td><span data-km="8.5">8.5 km</span> north</td><td><span data-m="1302">1,302 m</span></td><td><span data-km="3.0">3.0 km</span></td><td><span data-cm="24">24 cm</span></td></tr><tr><th><a href="stuhleck_semmering.html">Stuhleck</a></th><td><span data-km="17.7">18 km</span> north</td><td><span data-m="1767">1,767 m</span></td><td><span data-km="22.0">22 km</span></td><td><span data-cm="50">50 cm</span></td></tr><tr><th><a href="feistritzsattel.html">Feistritzsattel</a></th><td><span data-km="19.1">19 km</span> north-east</td><td><span data-m="1282">1,282 m</span></td><td><span data-km="1.0">1.0 km</span></td><td><span data-cm="39">39 cm</span></td></tr><tr><th><a href="teichalm_lifte.html">Teichalm Lifte</a></th><td><span data-km="21.2">21 km</span> south-west</td><td><span data-m="1415">1,415 m</span></td><td><span data-km="4.0">4.0 km</span></td><td><span data-cm="27">27 cm</span></td></tr></tbody></table></div><h2>Strallegg today and the next days</h2><p>Snow on the ground at Strallegg today: about <span data-cm="11">11 cm</span> up high. The last seven days brought <span data-cm="17">17 cm</span> of new snow. Little new snow is expected over the next 3 days.</p><h2>Heights, vertical and lifts</h2><p>Skied top to bottom, Strallegg gives <span data-m="301">301 m</span> of descent: short runs, good for quick laps and for learning. Because the lifts start as low as <span data-m="688">688 m</span>, the valley runs are the first to suffer in a thaw. Its summit is modest for the area; the highest lifts nearby, at Stuhleck, reach <span data-m="1767">1,767 m</span>. All 2 lifts here are drag lifts. The skyline is dominated by Teufelstein, <span data-m="1498">1,498 m</span> high and <span data-km="7.0">7.0 km</span> north-west of the resort.</p><h2>How much snow Strallegg usually gets</h2><p>Even in a typical winter the snow at mid-mountain (about <span data-m="838">838 m</span>) rarely reaches a 30 cm base; the season relies on cold spells, the upper slopes and machine-made snow. The snow is usually deepest around 7 January, with about <span data-cm="8">8 cm</span>. For the best snow, aim for mid-February and late February. Winters vary a lot: in mid-February the depth has ranged from <span data-cm="0">0 cm</span> to <span data-cm="29">29 cm</span> in most years, so look at the snow before booking. Christmas week brought snow on the ground in nearly every winter; the usual depth was <span data-cm="6">6 cm</span>; a snowy December gave <span data-cm="20">20 cm</span>, a dry one <span data-cm="1">1 cm</span>. Spring comes early here: by mid-April the middle of the ski area is usually free of snow.</p><div class="tw"><table><thead><tr><th>Date</th><th>Typical depth</th><th>Winters with snow</th></tr></thead><tbody><tr><th>15 November</th><td><span data-cm="0">0 cm</span></td><td>33%</td></tr><tr><th>1 December</th><td><span data-cm="2">2 cm</span></td><td>66%</td></tr><tr><th>25 December</th><td><span data-cm="6">6 cm</span></td><td>87%</td></tr><tr><th>15 January</th><td><span data-cm="8">8 cm</span></td><td>80%</td></tr><tr><th>15 February</th><td><span data-cm="8">8 cm</span></td><td>76%</td></tr><tr><th>15 March</th><td><span data-cm="0">0 cm</span></td><td>40%</td></tr><tr><th>15 April</th><td><span data-cm="0">0 cm</span></td><td>21%</td></tr></tbody></table></div><h2>Beds near the slopes</h2><p>Near the lifts you will find Gh. Almblick (guesthouse), Die Jagamühl (chalet), Ferienhaus Wetzelhütter (chalet) and Chalet Teufelsteinblick (chalet).</p><h2>Quick answers</h2><h3>When does Strallegg have the most snow?</h3><p>Aim for mid-February and late February.</p><h3>Can you ski at Strallegg at Christmas?</h3><p>Sometimes. Christmas snow at mid-mountain came in nearly every winter, usually about <span data-cm="6">6 cm</span>, so check before you go.</p><h3>How high is Strallegg?</h3><p>Between <span data-m="688">688 m</span> and <span data-m="989">989 m</span>, so <span data-m="301">301 m</span> of vertical drop.</p><h3>Who is Strallegg best for?</h3><p>Mostly intermediates: 72% of the graded pistes are of medium difficulty.</p><h3>Is there a larger resort near Strallegg?</h3><p>Stuhleck, <span data-km="17.7">18 km</span> to the north, with about <span data-km="22.0">22 km</span> of pistes.</p></section><p><a href="./">All ski resorts</a> · Alps</p></div><footer class="foot"><nav><a href="../">Snow map</a><a href="../resorts/">All ski resorts</a><a href="../blog/en/">Snow reports</a><a href="../about/">About</a><a href="../editorial/">Editorial policy</a><a href="../contact/">Contact</a><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="../sources.html">Sources</a></nav>© 2026 SnowScope · Atlas Labs</footer></div>
+</aside>
+
+<div class="timeline glass" id="timeline">
+  <button class="play" id="play" aria-label="Play the days"><span class="ms f">play_arrow</span></button>
+  <div class="days" id="days" role="group" aria-label="Day"></div>
+</div>
+<div class="legend glass" id="legend"></div>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<nav class="bottomnav" id="bnav" aria-label="Sections">
+  <button data-tab="map" aria-current="page"><span class="ms f">map</span>Map</button>
+  <button data-tab="ski"><span class="ms">downhill_skiing</span>Where to ski</button>
+  <button data-tab="powder"><span class="ms">ac_unit</span>Powder</button>
+  <button data-tab="you"><span class="ms">person</span>You</button>
+</nav>
+<script src="../i18n.js?v=3623f3c1"></script>
+<script>/* Morocco weather reel page for visitors in Morocco / Darija (tools/morocco_reel.py) */(function(){try{var tz=Intl.DateTimeFormat().resolvedOptions().timeZone||"",l=(window.I18N&&I18N.lang)||"",n=navigator.language||"",a=document.querySelector("[data-ma]");if(a&&(/^Africa\/(Casablanca|El_Aaiun)$/.test(tz)||l==="ar"||/-MA$/i.test(n))){var t=l==="ar"?"طقس المغرب":l==="fr"?"Météo Maroc":"Morocco weather";a.querySelector(".lbl").textContent=t;a.title=t;a.setAttribute("aria-label",t);if(l==="ar"||l==="fr")a.href=a.getAttribute("href")+"?lang="+l;a.style.display="";}}catch(e){}})();</script>
+<script src="../core.js?v=7698acde"></script>
+<script src="../follow.js?v=f32a4992" defer></script>
+<script src="../partners.js?v=08f61494" defer></script>
+<script src="../post.js?v=39100f9c" defer></script>
+<script src="../expert.js?v=7ed56ff3"></script>
+<script src="../charts.js?v=5c43184a"></script>
+<script src="../app.js?v=da4deaf5"></script>
+</body>
+</html>
