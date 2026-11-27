@@ -346,11 +346,11 @@
     for (const dd of st.deck.dates) {
       const op = dd === d ? 0.95 * (1 - (t || 0)) : dd === next ? 0.95 * t : 0;
       for (const r of DATA.regions) {
-        const id = "m_" + r.code + "_" + dd;
-        if (!map.getLayer(id)) continue;
-        const vis = op > 0 ? "visible" : "none";
-        if (map.getLayoutProperty(id, "visibility") !== vis) map.setLayoutProperty(id, "visibility", vis);
-        if (op > 0) map.setPaintProperty(id, "raster-opacity", st.covered ? 0 : op);
+        for (const id of bandIds("m_" + r.code + "_" + dd)) {
+          const vis = op > 0 ? "visible" : "none";
+          if (map.getLayoutProperty(id, "visibility") !== vis) map.setLayoutProperty(id, "visibility", vis);
+          if (op > 0) map.setPaintProperty(id, "raster-opacity", st.covered ? 0 : op);
+        }
       }
     }
   }
@@ -543,9 +543,10 @@
   }
   // coloured picture (object URL) per picture + colour scale, painted once and kept: the deck and the scrub reuse it
   const BLOBS = new Map();
-  function coloured(url, p, coords) {   // -> { url, coords } (padded to non-power-of-two, see npot)
+  function coloured(url, p, coords) {   // -> [{ url, coords }] one per strip (see bands), padded to non-power-of-two (npot)
     const key = url + "|" + p + ":" + st.scale + ":" + nwin();
-    if (!BLOBS.has(key)) BLOBS.set(key, codesOf(url).then((cd) => cd && new Promise((ok) => { const [cv, cc] = npot(paint(cd, p), coords); cv.toBlob((b) => ok(b ? { url: URL.createObjectURL(b), coords: cc } : null), "image/png"); })));
+    const blob = ([c0, k0]) => new Promise((ok) => { const [cv, cc] = npot(c0, k0); cv.toBlob((b) => ok(b ? { url: URL.createObjectURL(b), coords: cc } : null), "image/png"); });
+    if (!BLOBS.has(key)) BLOBS.set(key, codesOf(url).then((cd) => cd && Promise.all(bands(paint(cd, p), coords).map(blob)).then((a) => (a.every(Boolean) ? a : null))));
     if (BLOBS.size > 200) BLOBS.delete(BLOBS.keys().next().value);
     return BLOBS.get(key);
   }
@@ -569,13 +570,46 @@
     const S2 = (2 * Math.atan(Math.exp(yS2)) - Math.PI / 2) * 180 / Math.PI;
     return [c, [[W, N], [E2, N], [E2, S2], [W, S2]]];
   }
+  // MapLibre stops drawing a tall image source past a tile row at high latitude (owner 2026-11-27: Scandinavia lost
+  // everything north of the z4 row at 66.5 N, Riksgransen / Abisko / Tromso blank below z7). Every picture is cut in
+  // strips of <= BAND_DEG latitude. Rows are Web-Mercator (tools/build_web.merc_rows, fieldPicture), so the strip edges
+  // are placed in Mercator. Strip i of picture `id` is the layer id + "~" + i.
+  const BAND_DEG = 2;
+  const latOf = (y) => (2 * Math.atan(Math.exp(y)) - Math.PI / 2) * 180 / Math.PI;
+  function bands(cv, coords) {          // -> [[canvas, coords]] top to bottom
+    const W = coords[0][0], N = coords[0][1], E = coords[2][0], S = coords[2][1];
+    const yN = mercY(N), yS = mercY(S), rowLat = (f) => latOf(yN - (yN - yS) * f);
+    const n = Math.max(1, Math.ceil((N - S) / BAND_DEG - 1e-9)), h = cv.height, w = cv.width;
+    // ... and at the coarse tile meridians (every 45 deg, 0 included): the Pyrenees (-2 .. 3.5 E) showed nothing west
+    // of Greenwich at z9 (owner 2026-11-27, Cauterets / Gourette blank). Columns are linear in longitude.
+    const cols = [0];
+    for (let k = Math.ceil(W / 45 + 1e-9); k * 45 < E - 1e-9; k++) { const c = Math.round((k * 45 - W) / (E - W) * w); if (c > cols[cols.length - 1] && c < w) cols.push(c); }
+    cols.push(w);
+    if (n === 1 && cols.length === 2) return [[cv, coords]];
+    const out = [];
+    for (let i = 0; i < n; i++) {
+      const r0 = Math.round(i * h / n), r1 = Math.round((i + 1) * h / n);
+      const bn = rowLat(r0 / h), bs = rowLat(r1 / h);
+      for (let j = 0; j + 1 < cols.length; j++) {
+        const c0 = cols[j], c1 = cols[j + 1], bw = W + (E - W) * c0 / w, be = W + (E - W) * c1 / w;
+        const c = document.createElement("canvas"); c.width = c1 - c0; c.height = r1 - r0;
+        c.getContext("2d").drawImage(cv, c0, r0, c1 - c0, r1 - r0, 0, 0, c1 - c0, r1 - r0);
+        out.push([c, [[bw, bn], [be, bn], [be, bs], [bw, bs]]]);
+      }
+    }
+    return out;
+  }
+  const bandIds = (id) => { const o = []; for (let i = 0; map.getLayer(id + "~" + i); i++) o.push(id + "~" + i); return o; };
   function addImage(id, cv0, coords0, opt = {}) {
-    const gen = st.gen, [cv, coords] = npot(cv0, coords0);
-    cv.toBlob((b) => {
-      if (!b || map.getSource(id) || gen !== st.gen) return;
-      map.addSource(id, { type: "image", url: URL.createObjectURL(b), coordinates: coords });
-      map.addLayer({ id, type: "raster", source: id, minzoom: opt.min || 0, maxzoom: opt.max || 24, paint: rasterPaint(0.95) }, firstS30() || beneath());
-    }, "image/png");
+    const gen = st.gen;
+    bands(cv0, coords0).forEach(([c0, k0], i) => {
+      const [cv, coords] = npot(c0, k0), bid = id + "~" + i;
+      cv.toBlob((b) => {
+        if (!b || map.getSource(bid) || gen !== st.gen) return;
+        map.addSource(bid, { type: "image", url: URL.createObjectURL(b), coordinates: coords });
+        map.addLayer({ id: bid, type: "raster", source: bid, minzoom: opt.min || 0, maxzoom: opt.max || 24, paint: rasterPaint(0.95) }, firstS30() || beneath());
+      }, "image/png");
+    });
   }
   function addRaster(id, tiles, opt) {
     map.addSource(id, { type: "raster", tiles: [tiles], tileSize: opt.tileSize || 256, bounds: opt.bounds, minzoom: opt.srcMin || 0, maxzoom: opt.srcMax || 10, attribution: opt.attribution || "" });
@@ -610,11 +644,13 @@
       await Promise.all(DATA.regions.map(async (r) => {
         const d = r.days.find((x) => x.date === d0);
         if (!d || !d.ov[p]) return;
-        const pic = await coloured(BASE + d.ov[p], p, r.coords);
+        const pics = await coloured(BASE + d.ov[p], p, r.coords);
         const id = "m_" + r.code + "_" + d0;
-        if (!pic || gen !== st.gen || map.getSource(id)) return;
-        map.addSource(id, { type: "image", url: pic.url, coordinates: pic.coords });          // no max zoom: upsampled at z13-16
-        map.addLayer({ id, type: "raster", source: id, layout: { visibility: d0 === st.day ? "visible" : "none" }, paint: rasterPaint(0.95) }, firstS30() || beneath());
+        if (!pics || gen !== st.gen || map.getSource(id + "~0")) return;
+        pics.forEach((pic, i) => {
+          map.addSource(id + "~" + i, { type: "image", url: pic.url, coordinates: pic.coords });          // no max zoom: upsampled at z13-16
+          map.addLayer({ id: id + "~" + i, type: "raster", source: id + "~" + i, layout: { visibility: d0 === st.day ? "visible" : "none" }, paint: rasterPaint(0.95) }, firstS30() || beneath());
+        });
       }));
       if (gen === st.gen && st.deck) st.deck.done.add(d0);
     };
@@ -636,7 +672,7 @@
       const d = r.days.find((x) => x.date === st.day);
       for (const [cr, cc] of (d && d.fine[p]) || []) {
         const bx = chunkBox(r, cr, cc), id = "m_f_" + r.code + "_" + cr + "_" + cc;
-        if (bx.e < b.getWest() || bx.w > b.getEast() || bx.n < b.getSouth() || bx.s > b.getNorth() || map.getSource(id)) continue;
+        if (bx.e < b.getWest() || bx.w > b.getEast() || bx.n < b.getSouth() || bx.s > b.getNorth() || map.getSource(id + "~0")) continue;
         // MapLibre draws late-added canvas sources black: hand the coloured chunk over as an image instead
         codesOf(fineUrl(r, st.day, p, cr, cc)).then((cd) => { if (cd && gen === st.gen) addImage(id, paint(cd, p), corners(bx), { min: 7 }); });
       }
