@@ -82,7 +82,7 @@
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 18,
+       "snowfall_p50_cm": 16,
        "p50_cm": 10
       }
      },
@@ -224,206 +224,6 @@
    "rank": 2
   },
   {
-   "slug": "sugarbush_resort",
-   "label": "Sugarbush",
-   "country": "US",
-   "area": "Vermont",
-   "lat": 44.14817,
-   "lon": -72.90809,
-   "top_m": 1238,
-   "base_m": 461,
-   "km": 80.0,
-   "lifts": 18,
-   "opens": "2026-11-21",
-   "pass_day_eur": 181.32,
-   "pass_day_walkup": 181.32,
-   "pass_day_multi_eur": 120.5,
-   "pass_multi": {
-    "days": 4,
-    "price": 529.0,
-    "ccy": "USD",
-    "per_day": 132.25,
-    "estimated": false,
-    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
-    "src": "https://www.ikonpass.com/en/passes/session-pass"
-   },
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 199.0,
-    "regular": 129.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult 1-day, online advance; Sugarbush publishes a flat weekday ($129) / weekend ($199) adult online price rather than per-day dynamic calendar pricing for 2026-27 (Ikon-partner resort); holiday period treated as weekend-tier pricing",
-   "pass_src": "https://www.sugarbush.com/plan-your-trip/lift-tickets",
-   "night_eur": 118.45,
-   "food_day_eur": 59.23,
-   "stay_src": "estimate: based on general Mad River Valley (Warren/Waitsfield VT) lodging cost tier, similar to Killington/Okemo, plus ~$20-25 on-mountain lunch",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 0,
-    "start": {
-     "cm": 10,
-     "p20": 5,
-     "p50": 10,
-     "p80": 15,
-     "p_ge50": 0.0,
-     "basis": "ensemble+climatology",
-     "normal_cm": 20,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 7,
-       "p50_cm": 10
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 10,
-       "p50_cm": 5
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 723,
-    "hotel_eur": 829,
-    "food_eur": 415,
-    "total_eur": 1967,
-    "pass_basis": "advance 4-day pass",
-    "pass_walkup": 1088,
-    "party_total_eur": 1967,
-    "left_eur": -967,
-    "need_eur": 967,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "MID",
-    "pistes": "MID",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.08,
-   "pros": [
-    "solid all-rounder"
-   ],
-   "cons": [
-    "1,967 EUR per person",
-    "~10 cm at the start",
-    "4-day pass 529 USD"
-   ],
-   "score": 62.5,
-   "score_parts": {
-    "MONEY": 25,
-    "SNOW": 100
-   },
-   "rank": 3
-  },
-  {
-   "slug": "loon_mountain_resort",
-   "label": "Loon Mountain",
-   "country": "US",
-   "area": "New Hampshire",
-   "lat": 44.04903,
-   "lon": -71.63661,
-   "top_m": 929,
-   "base_m": 262,
-   "km": 46.0,
-   "lifts": 12,
-   "opens": "2026-11-21",
-   "pass_day_eur": 159.45,
-   "pass_day_walkup": 159.45,
-   "pass_day_multi_eur": 120.5,
-   "pass_multi": {
-    "days": 4,
-    "price": 529.0,
-    "ccy": "USD",
-    "per_day": 132.25,
-    "estimated": false,
-    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
-    "src": "https://www.ikonpass.com/en/passes/session-pass"
-   },
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 175.0,
-    "regular": 99.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult 1-day, online advance, dynamic by date; Ikon-partner (Boyne) resort; search results showed a wide and inconsistent range (from $89 far in advance up to a $159 'weekday' figure), so the holiday price here is an estimate toward the upper end of that range rather than a single confirmed published figure",
-   "pass_src": "estimate based on https://www.loonmtn.com/lift-tickets/day-ticket and https://www.onthesnow.com/new-hampshire/loon-mountain/lift-tickets (dynamic calendar prices not statically retrievable, Nov 2026)",
-   "night_eur": 127.56,
-   "food_day_eur": 54.67,
-   "stay_src": "estimate: Lincoln NH area hotels (e.g. RiverWalk Resort at Loon Mountain) reported around $260-$291/night total during peak season, halved per person sharing a double room; NH has no sales tax which slightly lowers food costs",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 0,
-    "start": {
-     "cm": 10,
-     "p20": 5,
-     "p50": 10,
-     "p80": 15,
-     "p_ge50": 0.0,
-     "basis": "ensemble+climatology",
-     "normal_cm": 25,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 7,
-       "p50_cm": 10
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 14,
-       "p50_cm": 5
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 723,
-    "hotel_eur": 893,
-    "food_eur": 383,
-    "total_eur": 1999,
-    "pass_basis": "advance 4-day pass",
-    "pass_walkup": 957,
-    "party_total_eur": 1999,
-    "left_eur": -999,
-    "need_eur": 999,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "HIGH",
-    "pistes": "LOW",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.08,
-   "pros": [
-    "solid all-rounder"
-   ],
-   "cons": [
-    "1,999 EUR per person",
-    "nights from 128 EUR per person",
-    "only 46 km of pistes"
-   ],
-   "score": 60.0,
-   "score_parts": {
-    "MONEY": 20,
-    "SNOW": 100
-   },
-   "rank": 4
-  },
-  {
    "slug": "stowe",
    "label": "Stowe",
    "country": "US",
@@ -476,14 +276,14 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 13,
+       "snowfall_p50_cm": 12,
        "p50_cm": 15
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 11,
-       "p50_cm": 5
+       "snowfall_p50_cm": 12,
+       "p50_cm": 10
       }
      },
      "winters": 46
@@ -521,7 +321,7 @@
     "MONEY": 18,
     "SNOW": 100
    },
-   "rank": 5
+   "rank": 3
   },
   {
    "slug": "mount_snow",
@@ -582,7 +382,7 @@
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 11,
+       "snowfall_p50_cm": 10,
        "p50_cm": 5
       }
      },
@@ -621,7 +421,7 @@
     "MONEY": 53,
     "SNOW": 0
    },
-   "rank": 6
+   "rank": 4
   },
   {
    "slug": "okemo_mountain",
@@ -676,7 +476,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 7,
+       "snowfall_p50_cm": 8,
        "p50_cm": 10
       },
       "GFS": {
@@ -721,7 +521,7 @@
     "MONEY": 48,
     "SNOW": 0
    },
-   "rank": 7
+   "rank": 5
   },
   {
    "slug": "killington",
@@ -782,7 +582,7 @@
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 12,
+       "snowfall_p50_cm": 9,
        "p50_cm": 5
       }
      },
@@ -819,6 +619,206 @@
    "score": 16.6,
    "score_parts": {
     "MONEY": 33,
+    "SNOW": 0
+   },
+   "rank": 6
+  },
+  {
+   "slug": "sugarbush_resort",
+   "label": "Sugarbush",
+   "country": "US",
+   "area": "Vermont",
+   "lat": 44.14817,
+   "lon": -72.90809,
+   "top_m": 1238,
+   "base_m": 461,
+   "km": 80.0,
+   "lifts": 18,
+   "opens": "2026-11-21",
+   "pass_day_eur": 181.32,
+   "pass_day_walkup": 181.32,
+   "pass_day_multi_eur": 120.5,
+   "pass_multi": {
+    "days": 4,
+    "price": 529.0,
+    "ccy": "USD",
+    "per_day": 132.25,
+    "estimated": false,
+    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
+    "src": "https://www.ikonpass.com/en/passes/session-pass"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 199.0,
+    "regular": 129.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day, online advance; Sugarbush publishes a flat weekday ($129) / weekend ($199) adult online price rather than per-day dynamic calendar pricing for 2026-27 (Ikon-partner resort); holiday period treated as weekend-tier pricing",
+   "pass_src": "https://www.sugarbush.com/plan-your-trip/lift-tickets",
+   "night_eur": 118.45,
+   "food_day_eur": 59.23,
+   "stay_src": "estimate: based on general Mad River Valley (Warren/Waitsfield VT) lodging cost tier, similar to Killington/Okemo, plus ~$20-25 on-mountain lunch",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 0,
+    "start": {
+     "cm": 5,
+     "p20": 5,
+     "p50": 5,
+     "p80": 15,
+     "p_ge50": 0.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 20,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 8,
+       "p50_cm": 10
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 12,
+       "p50_cm": 5
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 723,
+    "hotel_eur": 829,
+    "food_eur": 415,
+    "total_eur": 1967,
+    "pass_basis": "advance 4-day pass",
+    "pass_walkup": 1088,
+    "party_total_eur": 1967,
+    "left_eur": -967,
+    "need_eur": 967,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.04,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,967 EUR per person",
+    "~5 cm at the start",
+    "4-day pass 529 USD"
+   ],
+   "score": 12.5,
+   "score_parts": {
+    "MONEY": 25,
+    "SNOW": 0
+   },
+   "rank": 7
+  },
+  {
+   "slug": "loon_mountain_resort",
+   "label": "Loon Mountain",
+   "country": "US",
+   "area": "New Hampshire",
+   "lat": 44.04903,
+   "lon": -71.63661,
+   "top_m": 929,
+   "base_m": 262,
+   "km": 46.0,
+   "lifts": 12,
+   "opens": "2026-11-21",
+   "pass_day_eur": 159.45,
+   "pass_day_walkup": 159.45,
+   "pass_day_multi_eur": 120.5,
+   "pass_multi": {
+    "days": 4,
+    "price": 529.0,
+    "ccy": "USD",
+    "per_day": 132.25,
+    "estimated": false,
+    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
+    "src": "https://www.ikonpass.com/en/passes/session-pass"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 175.0,
+    "regular": 99.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day, online advance, dynamic by date; Ikon-partner (Boyne) resort; search results showed a wide and inconsistent range (from $89 far in advance up to a $159 'weekday' figure), so the holiday price here is an estimate toward the upper end of that range rather than a single confirmed published figure",
+   "pass_src": "estimate based on https://www.loonmtn.com/lift-tickets/day-ticket and https://www.onthesnow.com/new-hampshire/loon-mountain/lift-tickets (dynamic calendar prices not statically retrievable, Nov 2026)",
+   "night_eur": 127.56,
+   "food_day_eur": 54.67,
+   "stay_src": "estimate: Lincoln NH area hotels (e.g. RiverWalk Resort at Loon Mountain) reported around $260-$291/night total during peak season, halved per person sharing a double room; NH has no sales tax which slightly lowers food costs",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 0,
+    "start": {
+     "cm": 5,
+     "p20": 5,
+     "p50": 5,
+     "p80": 15,
+     "p_ge50": 0.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 25,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 8,
+       "p50_cm": 10
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 14,
+       "p50_cm": 5
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 723,
+    "hotel_eur": 893,
+    "food_eur": 383,
+    "total_eur": 1999,
+    "pass_basis": "advance 4-day pass",
+    "pass_walkup": 957,
+    "party_total_eur": 1999,
+    "left_eur": -999,
+    "need_eur": 999,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "HIGH",
+    "pistes": "LOW",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.04,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,999 EUR per person",
+    "nights from 128 EUR per person",
+    "only 46 km of pistes"
+   ],
+   "score": 10.0,
+   "score_parts": {
+    "MONEY": 20,
     "SNOW": 0
    },
    "rank": 8
@@ -882,7 +882,7 @@
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 12,
+       "snowfall_p50_cm": 10,
        "p50_cm": 5
       }
      },

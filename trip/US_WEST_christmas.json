@@ -66,7 +66,7 @@
     "now_cm": 90,
     "start": {
      "cm": 110,
-     "p20": 100,
+     "p20": 95,
      "p50": 110,
      "p80": 125,
      "p_ge50": 1.0,
@@ -76,14 +76,14 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 26,
+       "snowfall_p50_cm": 25,
        "p50_cm": 110
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 49,
-       "p50_cm": 110
+       "snowfall_p50_cm": 46,
+       "p50_cm": 105
       }
      },
      "winters": 46
@@ -176,13 +176,13 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 24,
+       "snowfall_p50_cm": 20,
        "p50_cm": 110
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 46,
+       "snowfall_p50_cm": 43,
        "p50_cm": 100
       }
      },
@@ -277,7 +277,7 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 19,
+       "snowfall_p50_cm": 20,
        "p50_cm": 95
       },
       "GFS": {
@@ -368,10 +368,10 @@
    "snow": {
     "now_cm": 55,
     "start": {
-     "cm": 75,
+     "cm": 70,
      "p20": 65,
-     "p50": 75,
-     "p80": 90,
+     "p50": 70,
+     "p80": 85,
      "p_ge50": 0.97,
      "basis": "ensemble+climatology",
      "normal_cm": 85,
@@ -379,14 +379,14 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 22,
+       "snowfall_p50_cm": 20,
        "p50_cm": 75
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 46,
-       "p50_cm": 75
+       "snowfall_p50_cm": 43,
+       "p50_cm": 70
       }
      },
      "winters": 46
@@ -410,7 +410,7 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.82,
+   "value_cm_per_eur": 0.77,
    "pros": [
     "256 km of pistes",
     "skiing up to 3041 m",
@@ -419,12 +419,12 @@
    "cons": [
     "2,078 EUR per person",
     "nights from 146 EUR per person",
-    "~75 cm at the start"
+    "~70 cm at the start"
    ],
-   "score": 72.6,
+   "score": 69.3,
    "score_parts": {
     "MONEY": 92,
-    "SNOW": 53
+    "SNOW": 47
    },
    "rank": 4
   },
@@ -470,24 +470,24 @@
    "snow": {
     "now_cm": 50,
     "start": {
-     "cm": 70,
-     "p20": 60,
-     "p50": 70,
-     "p80": 90,
-     "p_ge50": 0.9,
+     "cm": 65,
+     "p20": 55,
+     "p50": 65,
+     "p80": 85,
+     "p_ge50": 0.88,
      "basis": "ensemble+climatology",
      "normal_cm": 90,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 37,
-       "p50_cm": 75
+       "snowfall_p50_cm": 29,
+       "p50_cm": 70
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 49,
+       "snowfall_p50_cm": 41,
        "p50_cm": 65
       }
      },
@@ -512,7 +512,7 @@
     "pistes": "HIGH",
     "snow": "MID"
    },
-   "value_cm_per_eur": 0.58,
+   "value_cm_per_eur": 0.54,
    "pros": [
     "86 km of pistes",
     "skiing up to 3360 m"
@@ -520,12 +520,12 @@
    "cons": [
     "2,031 EUR per person",
     "nights from 128 EUR per person",
-    "~70 cm at the start"
+    "~65 cm at the start"
    ],
-   "score": 70.5,
+   "score": 67.2,
    "score_parts": {
     "MONEY": 94,
-    "SNOW": 47
+    "SNOW": 40
    },
    "rank": 5
   },
@@ -572,23 +572,23 @@
     "now_cm": 45,
     "start": {
      "cm": 70,
-     "p20": 60,
+     "p20": 55,
      "p50": 70,
      "p80": 85,
-     "p_ge50": 0.94,
+     "p_ge50": 0.93,
      "basis": "ensemble+climatology",
      "normal_cm": 125,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 34,
-       "p50_cm": 80
+       "snowfall_p50_cm": 32,
+       "p50_cm": 75
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 55,
+       "snowfall_p50_cm": 53,
        "p50_cm": 65
       }
      },
@@ -675,21 +675,21 @@
      "cm": 40,
      "p20": 40,
      "p50": 40,
-     "p80": 60,
-     "p_ge50": 0.27,
+     "p80": 55,
+     "p_ge50": 0.26,
      "basis": "ensemble+climatology",
      "normal_cm": 80,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 24,
+       "snowfall_p50_cm": 22,
        "p50_cm": 50
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 16,
+       "snowfall_p50_cm": 17,
        "p50_cm": 40
       }
      },
@@ -778,14 +778,14 @@
      "p20": 40,
      "p50": 45,
      "p80": 60,
-     "p_ge50": 0.36,
+     "p_ge50": 0.34,
      "basis": "ensemble+climatology",
      "normal_cm": 85,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 24,
+       "snowfall_p50_cm": 22,
        "p50_cm": 55
       },
       "GFS": {
@@ -877,7 +877,7 @@
     "now_cm": 20,
     "start": {
      "cm": 35,
-     "p20": 30,
+     "p20": 25,
      "p50": 35,
      "p80": 60,
      "p_ge50": 0.28,
@@ -887,14 +887,14 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 40,
+       "snowfall_p50_cm": 37,
        "p50_cm": 55
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 34,
-       "p50_cm": 35
+       "snowfall_p50_cm": 28,
+       "p50_cm": 30
       }
      },
      "winters": 46
@@ -978,7 +978,7 @@
     "now_cm": 75,
     "start": {
      "cm": 90,
-     "p20": 85,
+     "p20": 80,
      "p50": 90,
      "p80": 105,
      "p_ge50": 1.0,
@@ -988,13 +988,13 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 13,
-       "snowfall_p50_cm": 35,
+       "snowfall_p50_cm": 32,
        "p50_cm": 100
       },
       "GFS": {
        "members": 31,
        "horizon_days": 32,
-       "snowfall_p50_cm": 32,
+       "snowfall_p50_cm": 33,
        "p50_cm": 85
       }
      },
