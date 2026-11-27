@@ -346,11 +346,11 @@
     for (const dd of st.deck.dates) {
       const op = dd === d ? 0.95 * (1 - (t || 0)) : dd === next ? 0.95 * t : 0;
       for (const r of DATA.regions) {
-        for (const id of bandIds("m_" + r.code + "_" + dd)) {
-          const vis = op > 0 ? "visible" : "none";
-          if (map.getLayoutProperty(id, "visibility") !== vis) map.setLayoutProperty(id, "visibility", vis);
-          if (op > 0) map.setPaintProperty(id, "raster-opacity", st.covered ? 0 : op);
-        }
+        const id = "m_" + r.code + "_" + dd;
+        if (!map.getLayer(id)) continue;
+        const vis = op > 0 ? "visible" : "none";
+        if (map.getLayoutProperty(id, "visibility") !== vis) map.setLayoutProperty(id, "visibility", vis);
+        if (op > 0) map.setPaintProperty(id, "raster-opacity", st.covered ? 0 : op);
       }
     }
   }
@@ -407,7 +407,7 @@
   }
   function clearFine() {
     for (const l of (map.getStyle().layers || []).filter((x) => x.id.startsWith("m_f_"))) map.removeLayer(l.id);
-    for (const id of Object.keys(map.getStyle().sources || {}).filter((x) => x.startsWith("m_f_"))) map.removeSource(id);
+    for (const id of Object.keys(map.getStyle().sources || {}).filter((x) => x.startsWith("m_f_"))) { map.removeSource(id); PICS.delete(id); }
   }
   function scrub(a, b, t) {             // fluid timeline: fade between two days that are both on the deck; else snap
     if (!deckReady(a) || (b && !deckReady(b))) { const d = t < 0.5 || !b ? a : b; if (d !== st.day) setDay(d); return; }
@@ -539,77 +539,64 @@
   function clearMain() {
     st.deck = null;
     for (const l of (map.getStyle().layers || []).filter((x) => x.id.startsWith("m_"))) map.removeLayer(l.id);
-    for (const id of Object.keys(map.getStyle().sources || {}).filter((x) => x.startsWith("m_"))) map.removeSource(id);
+    for (const id of Object.keys(map.getStyle().sources || {}).filter((x) => x.startsWith("m_"))) { map.removeSource(id); PICS.delete(id); }
   }
-  // coloured picture (object URL) per picture + colour scale, painted once and kept: the deck and the scrub reuse it
+  // coloured picture per picture + colour scale (RGBA pixels, Web-Mercator rows), painted once and kept: the deck and
+  // the scrub reuse it
   const BLOBS = new Map();
-  function coloured(url, p, coords) {   // -> [{ url, coords }] one per strip (see bands), padded to non-power-of-two (npot)
+  function coloured(url, p) {           // -> { px: Uint32Array, w, h } | null
     const key = url + "|" + p + ":" + st.scale + ":" + nwin();
-    const blob = ([c0, k0]) => new Promise((ok) => { const [cv, cc] = npot(c0, k0); cv.toBlob((b) => ok(b ? { url: URL.createObjectURL(b), coords: cc } : null), "image/png"); });
-    if (!BLOBS.has(key)) BLOBS.set(key, codesOf(url).then((cd) => cd && Promise.all(bands(paint(cd, p), coords).map(blob)).then((a) => (a.every(Boolean) ? a : null))));
+    if (!BLOBS.has(key)) BLOBS.set(key, codesOf(url).then((cd) => cd && rgba(paint(cd, p))));
     if (BLOBS.size > 200) BLOBS.delete(BLOBS.keys().next().value);
     return BLOBS.get(key);
   }
+  const rgba = (cv) => ({ px: new Uint32Array(cv.getContext("2d").getImageData(0, 0, cv.width, cv.height).data.buffer), w: cv.width, h: cv.height });
   const rasterPaint = (op) => ({ "raster-opacity": st.covered ? 0 : op * (st.monly ? 0.22 : 1), "raster-opacity-transition": { duration: 300 }, "raster-fade-duration": 0, "raster-resampling": st.sharp ? "nearest" : "linear" });
   function setResampling() {
     for (const l of (map.getStyle().layers || []).filter((x) => x.id.startsWith("m_") && x.type === "raster")) map.setPaintProperty(l.id, "raster-resampling", st.sharp ? "nearest" : "linear");
   }
-  function addCanvas(id, cv, coords, opt = {}) { addImage(id, cv, coords, opt); }   // see addImage (MapLibre canvas = black)
+  function addCanvas(id, cv, coords, opt = {}) { addImage(id, cv, coords, opt); }
 
-  // MapLibre (4.7 and 5.6 alike): an image source whose width or height is a power of two (the 1024 px chunks) is
-  // uploaded with mipmaps, and drawn with "nearest" resampling (Sharp) it samples as an opaque BLACK texture
-  // (the owner's "zoom in on the Alps: black"). One transparent column / row makes every picture non-power-of-two.
-  const pot = (n) => n > 0 && (n & (n - 1)) === 0;
-  function npot(cv, coords) {
-    if (!pot(cv.width) && !pot(cv.height)) return [cv, coords];
-    const w = cv.width + (pot(cv.width) ? 1 : 0), h = cv.height + (pot(cv.height) ? 1 : 0);
-    const c = document.createElement("canvas"); c.width = w; c.height = h;
-    c.getContext("2d").drawImage(cv, 0, 0);
-    const [[W, N], , [E, S]] = coords;
-    const E2 = W + (E - W) * w / cv.width, yN = mercY(N), yS2 = yN - (yN - mercY(S)) * h / cv.height;
-    const S2 = (2 * Math.atan(Math.exp(yS2)) - Math.PI / 2) * 180 / Math.PI;
-    return [c, [[W, N], [E2, N], [E2, S2], [W, S2]]];
-  }
-  // MapLibre stops drawing a tall image source past a tile row at high latitude (owner 2026-11-27: Scandinavia lost
-  // everything north of the z4 row at 66.5 N, Riksgransen / Abisko / Tromso blank below z7). Every picture is cut in
-  // strips of <= BAND_DEG latitude. Rows are Web-Mercator (tools/build_web.merc_rows, fieldPicture), so the strip edges
-  // are placed in Mercator. Strip i of picture `id` is the layer id + "~" + i.
-  const BAND_DEG = 2;
-  const latOf = (y) => (2 * Math.atan(Math.exp(y)) - Math.PI / 2) * 180 / Math.PI;
-  function bands(cv, coords) {          // -> [[canvas, coords]] top to bottom
-    const W = coords[0][0], N = coords[0][1], E = coords[2][0], S = coords[2][1];
-    const yN = mercY(N), yS = mercY(S), rowLat = (f) => latOf(yN - (yN - yS) * f);
-    const n = Math.max(1, Math.ceil((N - S) / BAND_DEG - 1e-9)), h = cv.height, w = cv.width;
-    // ... and at the coarse tile meridians (every 45 deg, 0 included): the Pyrenees (-2 .. 3.5 E) showed nothing west
-    // of Greenwich at z9 (owner 2026-11-27, Cauterets / Gourette blank). Columns are linear in longitude.
-    const cols = [0];
-    for (let k = Math.ceil(W / 45 + 1e-9); k * 45 < E - 1e-9; k++) { const c = Math.round((k * 45 - W) / (E - W) * w); if (c > cols[cols.length - 1] && c < w) cols.push(c); }
-    cols.push(w);
-    if (n === 1 && cols.length === 2) return [[cv, coords]];
-    const out = [];
-    for (let i = 0; i < n; i++) {
-      const r0 = Math.round(i * h / n), r1 = Math.round((i + 1) * h / n);
-      const bn = rowLat(r0 / h), bs = rowLat(r1 / h);
-      for (let j = 0; j + 1 < cols.length; j++) {
-        const c0 = cols[j], c1 = cols[j + 1], bw = W + (E - W) * c0 / w, be = W + (E - W) * c1 / w;
-        const c = document.createElement("canvas"); c.width = c1 - c0; c.height = r1 - r0;
-        c.getContext("2d").drawImage(cv, c0, r0, c1 - c0, r1 - r0, 0, 0, c1 - c0, r1 - r0);
-        out.push([c, [[bw, bn], [be, bn], [be, bs], [bw, bs]]]);
-      }
+  // Every picture is served to MapLibre as ordinary 256 px raster tiles cut here, in the page (protocol sspic://).
+  // MapLibre image sources lost whole tiles with 3D terrain on (owner 2026-11-27: Scandinavia blank north of 66.5 N,
+  // the Pyrenees blank west of Greenwich, both with terrain on) and drew power-of-two pictures black with "nearest".
+  // Pictures have Web-Mercator rows (tools/build_web.merc_rows, fieldPicture), so a tile is a plain pixel lookup.
+  const PICS = new Map();               // source id -> { px, w, h, x0, x1, y0, y1 } (picture box in 0..1 Mercator)
+  const mx = (lon) => (lon + 180) / 360, my = (lat) => 0.5 - mercY(lat) / (2 * Math.PI);
+  // canvas -> PNG bytes (a plain canvas: OffscreenCanvas is missing on older iPhones)
+  const pngOf = (cv) => new Promise((ok, ko) => cv.toBlob((b) => (b ? b.arrayBuffer().then(ok, ko) : ko(new Error("png"))), "image/png"));
+  let EMPTY = null;                     // transparent 1 x 1 PNG for tiles with nothing to draw
+  const empty = async () => { if (!EMPTY) { const c = document.createElement("canvas"); c.width = c.height = 1; c.getContext("2d"); EMPTY = await pngOf(c); } return EMPTY.slice(0); };
+  async function picTile(params) {     // MapLibre protocol "sspic", registered in mkMap
+    const m = /^sspic:\/\/([^/]+)\/(\d+)\/(\d+)\/(\d+)/.exec(params.url), P = m && PICS.get(decodeURIComponent(m[1]));
+    if (!P) return { data: await empty() };
+    const z = +m[2], tx = +m[3], ty = +m[4], n = 2 ** z, T = 256;
+    const im = new ImageData(T, T), o = new Uint32Array(im.data.buffer);
+    const cols = new Int32Array(T);
+    for (let i = 0; i < T; i++) { const f = ((tx + (i + 0.5) / T) / n - P.x0) / (P.x1 - P.x0); cols[i] = f >= 0 && f < 1 ? Math.floor(f * P.w) : -1; }
+    let any = false;
+    for (let j = 0; j < T; j++) {
+      const f = ((ty + (j + 0.5) / T) / n - P.y0) / (P.y1 - P.y0);
+      if (!(f >= 0 && f < 1)) continue;
+      const row = Math.floor(f * P.h) * P.w;
+      for (let i = 0; i < T; i++) { const c = cols[i]; if (c >= 0) { const v = P.px[row + c]; if (v) { o[j * T + i] = v; any = true; } } }
     }
-    return out;
+    if (!any) return { data: await empty() };
+    const cv = document.createElement("canvas"); cv.width = cv.height = T; cv.getContext("2d").putImageData(im, 0, 0);
+    return { data: await pngOf(cv) };
   }
-  const bandIds = (id) => { const o = []; for (let i = 0; map.getLayer(id + "~" + i); i++) o.push(id + "~" + i); return o; };
-  function addImage(id, cv0, coords0, opt = {}) {
-    const gen = st.gen;
-    bands(cv0, coords0).forEach(([c0, k0], i) => {
-      const [cv, coords] = npot(c0, k0), bid = id + "~" + i;
-      cv.toBlob((b) => {
-        if (!b || map.getSource(bid) || gen !== st.gen) return;
-        map.addSource(bid, { type: "image", url: URL.createObjectURL(b), coordinates: coords });
-        map.addLayer({ id: bid, type: "raster", source: bid, minzoom: opt.min || 0, maxzoom: opt.max || 24, paint: rasterPaint(0.95) }, firstS30() || beneath());
-      }, "image/png");
-    });
+  // the picture as a raster tile source + layer; native zoom = where one tile pixel is about one picture pixel
+  function addPic(id, pic, coords, opt = {}) {
+    const W = coords[0][0], N = coords[0][1], E = coords[2][0], S = coords[2][1];
+    const P = { ...pic, x0: mx(W), x1: mx(E), y0: my(N), y1: my(S) };
+    PICS.set(id, P);
+    const zn = Math.max(0, Math.min(14, Math.ceil(Math.log2(P.w / ((P.x1 - P.x0) * 256)))));
+    map.addSource(id, { type: "raster", tiles: ["sspic://" + encodeURIComponent(id) + "/{z}/{x}/{y}"], tileSize: 256, bounds: [W, S, E, N], maxzoom: zn });
+    map.addLayer({ id, type: "raster", source: id, minzoom: opt.min || 0, maxzoom: opt.max || 24, layout: { visibility: opt.hidden ? "none" : "visible" }, paint: rasterPaint(0.95) }, firstS30() || beneath());
+  }
+  function addImage(id, cv, coords, opt = {}) {
+    if (map.getSource(id)) return;
+    addPic(id, rgba(cv), coords, opt);
   }
   function addRaster(id, tiles, opt) {
     map.addSource(id, { type: "raster", tiles: [tiles], tileSize: opt.tileSize || 256, bounds: opt.bounds, minzoom: opt.srcMin || 0, maxzoom: opt.srcMax || 10, attribution: opt.attribution || "" });
@@ -644,13 +631,10 @@
       await Promise.all(DATA.regions.map(async (r) => {
         const d = r.days.find((x) => x.date === d0);
         if (!d || !d.ov[p]) return;
-        const pics = await coloured(BASE + d.ov[p], p, r.coords);
+        const pic = await coloured(BASE + d.ov[p], p);
         const id = "m_" + r.code + "_" + d0;
-        if (!pics || gen !== st.gen || map.getSource(id + "~0")) return;
-        pics.forEach((pic, i) => {
-          map.addSource(id + "~" + i, { type: "image", url: pic.url, coordinates: pic.coords });          // no max zoom: upsampled at z13-16
-          map.addLayer({ id: id + "~" + i, type: "raster", source: id + "~" + i, layout: { visibility: d0 === st.day ? "visible" : "none" }, paint: rasterPaint(0.95) }, firstS30() || beneath());
-        });
+        if (!pic || gen !== st.gen || map.getSource(id)) return;
+        addPic(id, pic, r.coords, { hidden: d0 !== st.day });          // no max zoom: overscaled at z13-16
       }));
       if (gen === st.gen && st.deck) st.deck.done.add(d0);
     };
@@ -672,7 +656,7 @@
       const d = r.days.find((x) => x.date === st.day);
       for (const [cr, cc] of (d && d.fine[p]) || []) {
         const bx = chunkBox(r, cr, cc), id = "m_f_" + r.code + "_" + cr + "_" + cc;
-        if (bx.e < b.getWest() || bx.w > b.getEast() || bx.n < b.getSouth() || bx.s > b.getNorth() || map.getSource(id + "~0")) continue;
+        if (bx.e < b.getWest() || bx.w > b.getEast() || bx.n < b.getSouth() || bx.s > b.getNorth() || map.getSource(id)) continue;
         // MapLibre draws late-added canvas sources black: hand the coloured chunk over as an image instead
         codesOf(fineUrl(r, st.day, p, cr, cc)).then((cd) => { if (cd && gen === st.gen) addImage(id, paint(cd, p), corners(bx), { min: 7 }); });
       }
@@ -3608,7 +3592,7 @@
     window.addEventListener("popstate", (e) => { const s = (e.state && e.state.slug) || null; if (s) openResort(s, { push: false }); else { st.slug = null; renderPanel(); } });
     return;
   }
-  function mkMap() { return new LIB.Map({ container: "map", style: styleUrl(), center: startLL ? [startLL.lng, startLL.lat] : R0.center, zoom: startLL ? 10 : 5, minZoom: 2, attributionControl: { compact: true },
+  function mkMap() { if (LIB.addProtocol) try { LIB.addProtocol("sspic", picTile); } catch { /* already there */ } return new LIB.Map({ container: "map", style: styleUrl(), center: startLL ? [startLL.lng, startLL.lat] : R0.center, zoom: startLL ? 10 : 5, minZoom: 2, attributionControl: { compact: true },
     ...(b0 ? { bounds: b0, fitBoundsOptions: { padding: startPad(), maxZoom: 8.2 } } : {}),
     transformRequest: (url) => SS.transformRequest(url), preserveDrawingBuffer: true, maxPitch: 75, dragRotate: true, pitchWithRotate: true }); }
   window.SSApp.map = map;
