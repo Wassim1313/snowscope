@@ -1,0 +1,607 @@
+{
+ "id": "2026-11-28-us_west-deepest",
+ "slug": "us-west-wolf-creek-snow-depth-today-28-november-2026",
+ "date": "2026-11-28",
+ "published_utc": "2026-11-28T14:07:01Z",
+ "updated_utc": "2026-11-28T14:07:01Z",
+ "region": "US_WEST",
+ "angle": "deepest",
+ "score": 170,
+ "signature": "telluride_ski_area:140|brian_head_resort:120|cimarron_mountain_club:110",
+ "keyword": {
+  "family": "snow-depth",
+  "entity": "wolf_creek_ski_area",
+  "region": "US_WEST",
+  "date": "2026-11-28"
+ },
+ "tags": [
+  "snow-depth",
+  "where-to-ski",
+  "past-winters",
+  "stations"
+ ],
+ "facts": {
+  "angle": "snow_depth_analysis",
+  "region": "US West",
+  "date": "2026-11-28",
+  "weekday": "Saturday",
+  "model_run": "2026-11-28",
+  "forecast_days": [
+   "2026-11-29",
+   "2026-11-30",
+   "2026-12-01"
+  ],
+  "region_today": {
+   "snow_covered_area_km2": 794350,
+   "resorts_with_snow": 183,
+   "resorts_in_region": 193
+  },
+  "region_before": {
+   "date": "2026-11-26",
+   "snow_covered_area_km2": 771110,
+   "resorts_with_snow": 185
+  },
+  "region_forecast": {
+   "date": "2026-12-01",
+   "snow_covered_area_km2": 640070,
+   "resorts_with_snow": 189
+  },
+  "question": "Where is the deepest snow in the region today, and how does it compare?",
+  "resorts": [
+   {
+    "name": "Telluride",
+    "country": "United States",
+    "top_m": 3812,
+    "base_m": 2662,
+    "depth_cm_upper_slopes_today": 135,
+    "new_cm_last_24h": 4,
+    "new_cm_last_72h": 4,
+    "new_cm_forecast_next_days": 1,
+    "slug": "telluride_ski_area",
+    "new_cm_by_day": {
+     "2026-11-26": 0,
+     "2026-11-27": 0,
+     "2026-11-28": 4,
+     "2026-11-29": 1,
+     "2026-11-30": 0,
+     "2026-12-01": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2662,
+      "depth_cm_model": 4,
+      "new_cm_next_7_days": 11
+     },
+     "mid": {
+      "elev_m": 3237,
+      "depth_cm_model": 43,
+      "new_cm_next_7_days": 17
+     },
+     "top": {
+      "elev_m": 3812,
+      "depth_cm_model": 126,
+      "new_cm_next_7_days": 19
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-28": {
+      "min": 1530,
+      "max": 2900
+     },
+     "2026-11-29": {
+      "min": 1550,
+      "max": 3350
+     },
+     "2026-11-30": {
+      "min": 2190,
+      "max": 3240
+     }
+    },
+    "past_winters": {
+     "height_m": 3237,
+     "snow_cm_at_this_height_today_model": 56,
+     "deeper_than_n_of_past_winters": 27,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 46
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-26"
+    },
+    "nearest_station": {
+     "station": "Alta Lakes",
+     "elev_m": 3441,
+     "depth_cm_measured": 74,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-24",
+     "km_away": 3.5
+    }
+   },
+   {
+    "name": "Brian Head Resort",
+    "country": "United States",
+    "top_m": 3325,
+    "base_m": 2929,
+    "depth_cm_upper_slopes_today": 115,
+    "new_cm_last_24h": 0,
+    "new_cm_last_72h": 0,
+    "new_cm_forecast_next_days": 6,
+    "slug": "brian_head_resort",
+    "new_cm_by_day": {
+     "2026-11-26": 0,
+     "2026-11-27": 0,
+     "2026-11-28": 0,
+     "2026-11-29": 0,
+     "2026-11-30": 0,
+     "2026-12-01": 6
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2929,
+      "depth_cm_model": 48,
+      "new_cm_next_7_days": 14
+     },
+     "mid": {
+      "elev_m": 3127,
+      "depth_cm_model": 72,
+      "new_cm_next_7_days": 14
+     },
+     "top": {
+      "elev_m": 3325,
+      "depth_cm_model": 91,
+      "new_cm_next_7_days": 15
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-28": {
+      "min": 2440,
+      "max": 3180
+     },
+     "2026-11-29": {
+      "min": 2480,
+      "max": 3600
+     },
+     "2026-11-30": {
+      "min": 2410,
+      "max": 3170
+     }
+    },
+    "past_winters": {
+     "height_m": 3127,
+     "snow_cm_at_this_height_today_model": 79,
+     "deeper_than_n_of_past_winters": 40,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 25
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-27"
+    },
+    "nearest_station": {
+     "station": "Brian Head",
+     "elev_m": 3060,
+     "depth_cm_measured": 71,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-24",
+     "km_away": 1.4
+    }
+   },
+   {
+    "name": "Cimarron Mountain Club",
+    "country": "United States",
+    "top_m": 3461,
+    "base_m": 2991,
+    "depth_cm_upper_slopes_today": 112,
+    "new_cm_last_24h": 3,
+    "new_cm_last_72h": 3,
+    "new_cm_forecast_next_days": 1,
+    "slug": "cimarron_mountain_club",
+    "new_cm_by_day": {
+     "2026-11-26": 0,
+     "2026-11-27": 0,
+     "2026-11-28": 3,
+     "2026-11-29": 1,
+     "2026-11-30": 0,
+     "2026-12-01": 0
+    },
+    "by_height": {
+     "base": {
+      "elev_m": 2991,
+      "depth_cm_model": 12,
+      "new_cm_next_7_days": 11
+     },
+     "mid": {
+      "elev_m": 3226,
+      "depth_cm_model": 38,
+      "new_cm_next_7_days": 12
+     },
+     "top": {
+      "elev_m": 3461,
+      "depth_cm_model": 68,
+      "new_cm_next_7_days": 13
+     }
+    },
+    "freezing_level_m_by_day": {
+     "2026-11-28": {
+      "min": 1520,
+      "max": 2800
+     },
+     "2026-11-29": {
+      "min": 1400,
+      "max": 3070
+     },
+     "2026-11-30": {
+      "min": 2120,
+      "max": 3160
+     }
+    },
+    "past_winters": {
+     "height_m": 3226,
+     "snow_cm_at_this_height_today_model": 23,
+     "deeper_than_n_of_past_winters": 15,
+     "past_winters_compared": 46,
+     "usual_cm_on_this_date": 43
+    },
+    "satellite_latest_clear_view": {
+     "state": "snow",
+     "seen_on": "2026-11-26"
+    },
+    "nearest_station": {
+     "station": "Ridgway 3.4 N",
+     "elev_m": 2298,
+     "depth_cm_measured": 10,
+     "new_cm_measured_24h": 0,
+     "measured_on": "2026-11-25",
+     "km_away": 16.4
+    }
+   },
+   {
+    "name": "Mt. Hood Meadows",
+    "country": "United States",
+    "top_m": 2226,
+    "base_m": 1380,
+    "depth_cm_upper_slopes_today": 100,
+    "new_cm_last_24h": 14,
+    "new_cm_last_72h": 63,
+    "new_cm_forecast_next_days": 35,
+    "slug": "mt_hood_meadows_ski_resort",
+    "new_cm_by_day": {
+     "2026-11-26": 24,
+     "2026-11-27": 27,
+     "2026-11-28": 14,
+     "2026-11-29": 4,
+     "2026-11-30": 26,
+     "2026-12-01": 5
+    }
+   },
+   {
+    "name": "Wolf Creek",
+    "country": "United States",
+    "top_m": 3585,
+    "base_m": 3128,
+    "depth_cm_upper_slopes_today": 99,
+    "new_cm_last_24h": 1,
+    "new_cm_last_72h": 1,
+    "new_cm_forecast_next_days": 0,
+    "slug": "wolf_creek_ski_area",
+    "new_cm_by_day": {
+     "2026-11-26": 0,
+     "2026-11-27": 0,
+     "2026-11-28": 1,
+     "2026-11-29": 0,
+     "2026-11-30": 0,
+     "2026-12-01": 0
+    }
+   }
+  ],
+  "measured_at_stations": [
+   {
+    "station": "Beartown",
+    "elev_m": 3530,
+    "depth_cm_measured": 109,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-24",
+    "network": "snotel"
+   },
+   {
+    "station": "Leavitt Lake",
+    "elev_m": 2926,
+    "depth_cm_measured": 102,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-24",
+    "network": "snotel"
+   },
+   {
+    "station": "Mt Rose Ski Area",
+    "elev_m": 2685,
+    "depth_cm_measured": 102,
+    "new_cm_measured_24h": 0,
+    "measured_on": "2026-11-24",
+    "network": "snotel"
+   }
+  ],
+  "normal": {
+   "rows": [
+    {
+     "name": "Telluride",
+     "slug": "telluride_ski_area",
+     "now_cm": 56,
+     "usual_cm": 46,
+     "high_cm": 104,
+     "week_ago_cm": null,
+     "height_m": 3237,
+     "best_weeks": [
+      53,
+      11,
+      10
+     ],
+     "ratio_pct": 122,
+     "deeper_than": 27,
+     "of": 46
+    }
+   ],
+   "n": 1,
+   "above": 1,
+   "median_pct": null
+  },
+  "spot": {
+   "name": "Telluride",
+   "top_cm": 126,
+   "top_m": 3812,
+   "base_cm": 4,
+   "base_m": 2662,
+   "next_cm": 1,
+   "second": "Brian Head Resort",
+   "second_cm": 115,
+   "depth_cm": 135
+  },
+  "story": {
+   "id": "height_gap",
+   "place": "resort:telluride_ski_area",
+   "score": 46,
+   "resort": "Telluride"
+  },
+  "focus_index": 4,
+  "title_focus_resort": "Wolf Creek"
+ },
+ "media": [
+  {
+   "id": "map",
+   "kind": "snow_map",
+   "file": "blog/media/2026/11/us-west-wolf-creek-snow-depth-today-28-november-2026/map.webp",
+   "thumb": "blog/media/2026/11/us-west-wolf-creek-snow-depth-today-28-november-2026/map_t.webp",
+   "bytes": 41682,
+   "snow_frac": 0.3879,
+   "weak": false
+  }
+ ],
+ "docs": {
+  "en": {
+   "title": "Wolf Creek ski conditions: steep drop from summit to base",
+   "description": "Wolf Creek holds 99 cm on upper slopes but just 1 cm at the base. Snow depth varies sharply with elevation across the US West on 28 November.",
+   "lede": "Wolf Creek ski conditions – Wolf Creek's upper slopes hold 99 cm of snow, yet the base sits at just 1 cm. This extreme height gap shows how mountain water storage is locked at elevation right now across much of the region.",
+   "sections": [
+    {
+     "h": "Wolf Creek leads, but the story is elevation",
+     "p": [
+      "Wolf Creek tops the region with 99 cm on its upper slopes today. The resort sits high: its base is at 3,128 m and the peak at 3,585 m. Yet that 1 cm at the base tells the real story. The freezing level—where snow turns to rain—sat between 1,520 m and 2,800 m yesterday. Wolf Creek's base is well above that range, so snow survives there. But in the valleys and lower mountains, rain fell instead.",
+      "Telluride, in second place with 135 cm on upper slopes, shows the same pattern even more sharply. Its summit sits at 3,812 m and holds 126 cm. The base at 2,662 m has only 4 cm. That 122 cm gap between top and base reflects how warm air pushes snow higher each day at this season."
+     ]
+    },
+    {
+     "h": "Water stored high, scarce low",
+     "p": [
+      "Early season snow at high elevation means water locked in cold storage where it cannot feed rivers or reservoirs. The region's 183 resorts now have snow cover, but most of that snow sits above 3,000 m. Stations measured at mid-elevation tell the picture: Leavitt Lake at 2,926 m held 102 cm on 24 November, while lower stations like Mt Rose Ski Area at 2,685 m also measured 102 cm. But step down to Brian Head station at 3,060 m—just 71 cm. Snow amount does not rise smoothly with height; it depends on which air masses bring moisture and where the freezing level sits each day.",
+      "This uneven storage matters for water supply. Snow at 3,500 m melts later and feeds spring flows. Snow at 2,600 m melts sooner and runs off faster. Right now most water is locked high."
+     ]
+    },
+    {
+     "h": "What brought snow yesterday, what comes next",
+     "p": [
+      "Yesterday, 28 November, Wolf Creek gained 1 cm and Telluride added 4 cm. Neither resort received heavy snow. Cimarron Mountain Club, slightly lower at a top of 3,461 m, added 3 cm. Mt. Hood Meadows in Oregon, the wettest spot, added 14 cm in 24 hours and received 63 cm in 72 hours. The Pacific storm that fed Mt. Hood is now moving east.",
+      "Ahead of 1 December, the region forecast shows mixed signals. Brian Head Resort may see 6 cm arrive on 1 December. Wolf Creek and Telluride are forecast 0-1 cm in the next three days. By 1 December, total snow-covered ground in the region is expected to shrink from 794,350 square km today to 640,070 square km. Thaw will outpace fresh snow."
+     ]
+    },
+    {
+     "h": "Height is destiny right now",
+     "p": [
+      "Telluride's upper slopes lie 10 cm above its usual depth for this date and sit deeper than depths in 27 of the past 46 winters at this point in November. But at mid-height (3,237 m), SnowScope shows 43 cm today versus 46 cm normal. The gap widens toward the base. This tells us that snow arrival has been uneven by height and that early-season melt is active at lower elevations.",
+      "Brian Head, sitting lower overall (top 3,325 m, base 2,929 m), shows 115 cm on upper slopes. That is well above the usual 25 cm for late November—a strong start. Yet the same height rule applies: rock and thin snow likely show through below 3,100 m."
+     ]
+    },
+    {
+     "h": "What this means for skiers and water managers",
+     "p": [
+      "If you plan to ski, head high. Snow is reliable above 3,200 m across most resorts. Below 3,000 m, cover is thin to spotty. If you manage water resources, note that most November snow will not reach reservoirs until spring. The mountains are still cold enough to store it. Watch the freezing level each day; when it climbs above 3,000 m, melt from upper slopes will accelerate."
+     ]
+    }
+   ],
+   "advice": [
+    "Ski above 3,200 m where SnowScope shows reliable snow depth. Lower runs rely on fresh snow or grooming.",
+    "Plan multi-day trips around the forecast: Brian Head may improve 1 December; Telluride and Wolf Creek stay dry through that date.",
+    "If going off-piste, check the official avalanche bulletin. Thin early-season snow can hide rocks and uneven ground.",
+    "Watch freezing levels. Yesterday's range (1,520–2,800 m) means rain fell in valleys. Next week's levels will reset daily.",
+    "Use SnowScope's height breakdown to pick your run. Upper slopes hold 2–3 times more snow than base elevations right now."
+   ],
+   "captions": {
+    "map": "Snow depth across the US West on 28 November 2026, showing Wolf Creek with 99 cm on upper slopes and deep pockets above 3,200 m; lower elevations and valleys remain thin."
+   }
+  }
+ },
+ "writers": {
+  "en": {
+   "writer": "claude_cli:haiku",
+   "usd": 0.0,
+   "rejected_numbers": [
+    [
+     "457",
+     "500"
+    ]
+   ],
+   "voice": "hydro"
+  }
+ },
+ "words_en": 616,
+ "indexable": true,
+ "main": {
+  "slug": "wolf_creek_ski_area",
+  "name": "Wolf Creek",
+  "lat": 37.4632,
+  "lon": -106.7905
+ },
+ "places": [
+  {
+   "name": "Telluride",
+   "lat": 37.9197,
+   "lon": -107.8348
+  },
+  {
+   "name": "Brian Head Resort",
+   "lat": 37.6892,
+   "lon": -112.8461
+  },
+  {
+   "name": "Cimarron Mountain Club",
+   "lat": 38.2978,
+   "lon": -107.619
+  },
+  {
+   "name": "Mt. Hood Meadows",
+   "lat": 45.3352,
+   "lon": -121.6618
+  },
+  {
+   "name": "Wolf Creek",
+   "lat": 37.4632,
+   "lon": -106.7905
+  }
+ ],
+ "resort_links": [
+  {
+   "slug": "telluride_ski_area",
+   "name": "Telluride"
+  },
+  {
+   "slug": "brian_head_resort",
+   "name": "Brian Head Resort"
+  },
+  {
+   "slug": "cimarron_mountain_club",
+   "name": "Cimarron Mountain Club"
+  },
+  {
+   "slug": "mt_hood_meadows_ski_resort",
+   "name": "Mt. Hood Meadows"
+  },
+  {
+   "slug": "wolf_creek_ski_area",
+   "name": "Wolf Creek"
+  }
+ ],
+ "table": {
+  "kind": "resorts",
+  "rows": [
+   {
+    "slug": "telluride_ski_area",
+    "name": "Telluride",
+    "depth": 135,
+    "new72": 4,
+    "next": 1,
+    "top_m": 3812
+   },
+   {
+    "slug": "brian_head_resort",
+    "name": "Brian Head Resort",
+    "depth": 115,
+    "new72": 0,
+    "next": 6,
+    "top_m": 3325
+   },
+   {
+    "slug": "cimarron_mountain_club",
+    "name": "Cimarron Mountain Club",
+    "depth": 112,
+    "new72": 3,
+    "next": 1,
+    "top_m": 3461
+   },
+   {
+    "slug": "mt_hood_meadows_ski_resort",
+    "name": "Mt. Hood Meadows",
+    "depth": 100,
+    "new72": 63,
+    "next": 35,
+    "top_m": 2226
+   },
+   {
+    "slug": "wolf_creek_ski_area",
+    "name": "Wolf Creek",
+    "depth": 99,
+    "new72": 1,
+    "next": 0,
+    "top_m": 3585
+   }
+  ]
+ },
+ "bulletins": [
+  {
+   "provider": "avalanche.org",
+   "url": "https://avalanche.org/"
+  }
+ ],
+ "trip_day": "2026-12-05",
+ "map_link": "https://snowscope.app/#@37.463,-106.790,9.0",
+ "seconds": 51.2,
+ "facts_used": 32,
+ "voice": "hydro",
+ "media_ids": [
+  "map"
+ ],
+ "seo_target": {
+  "topic": "wolf_creek_ski_area:conditions",
+  "query": "wolf creek ski conditions",
+  "lang": "en",
+  "slug": "wolf_creek_ski_area",
+  "region": "US_WEST",
+  "intent": "conditions",
+  "priority": "A",
+  "position": 9.5,
+  "impressions": 2,
+  "applied": true
+ },
+ "overlap": {
+  "before": 2.4,
+  "after": 2.4,
+  "with": "western-canada-where-to-ski-this-weekend-11-november-2026",
+  "tries": 0
+ },
+ "similarity": {
+  "max": 0.007,
+  "with": "bosnia-and-herzegovina-snow-report-17-november-2026"
+ },
+ "publish_utc": "2026-11-28T14:07:01Z",
+ "quality": {
+  "ok": true,
+  "why": [],
+  "words": 760,
+  "overlap": 2.4,
+  "with": "western-canada-where-to-ski-this-weekend-11-november-2026",
+  "langs_off": [],
+  "score": 228.0,
+  "intent": "resort:telluride_ski_area|height_gap",
+  "guide": false,
+  "v": 1
+ },
+ "cover": {
+  "v": 2,
+  "style": "relief",
+  "files": {
+   "en": [
+    "blog/media/2026/11/us-west-wolf-creek-snow-depth-today-28-november-2026/cover-en.webp",
+    "blog/media/2026/11/us-west-wolf-creek-snow-depth-today-28-november-2026/cover-en_t.webp"
+   ]
+  },
+  "credit": null,
+  "photo": null
+ }
+}
