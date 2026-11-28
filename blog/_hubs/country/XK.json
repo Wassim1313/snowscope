@@ -999,6 +999,91 @@
 },
 "change_vs_yesterday_km2": -90,
 "change_vs_7_days_km2": 660
+},
+"2026-11-28": {
+"country": "Kosovo",
+"country_code": "XK",
+"date": "2026-11-28",
+"quiet": false,
+"modelled_km2": 7040,
+"snow_km2_today": 7040,
+"snow_km2_yesterday": 760,
+"snow_km2_7_days_ago": 200,
+"new_cm_24h_max": 18,
+"new_cm_72h_max": 25,
+"area_km2_5cm_new_72h": 6510,
+"next_3_days_max_cm": 9,
+"next_7_days_max_cm": 9,
+"snowiest_day": "2026-11-29",
+"snowiest_day_cm": 8,
+"first_snow_day": "2026-11-29",
+"hotspots": [
+{
+"name": "the Accursed Mountains",
+"new_cm_72h": 40,
+"lat": 42.529,
+"lon": 20.115
+},
+{
+"name": "the Šar Mountains",
+"new_cm_72h": 40,
+"lat": 42.155,
+"lon": 21.008
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 7,
+"snow_cover_pct": 100
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 11,
+"snow_cover_pct": 100
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 14,
+"snow_cover_pct": 100
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 24,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 600,
+"white_share_pct": 100,
+"resorts": [
+{
+"name": "Brezovica",
+"slug": "ski_center_brezovica",
+"depth_cm": 36,
+"new_cm_72h": 38,
+"next_3_days_cm": 11,
+"top_m": 2261
+}
+],
+"n_resorts": 1,
+"n_resorts_with_snow": 1,
+"resort_next_until": "2026-12-01",
+"week2": {
+"week1_max_cm": 6,
+"week2_max_cm": 15,
+"week2_days": [
+"2026-12-06",
+"2026-12-12"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 6280,
+"change_vs_7_days_km2": 6840
 }
 }
 }

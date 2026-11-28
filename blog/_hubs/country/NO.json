@@ -1431,6 +1431,129 @@
 },
 "change_vs_yesterday_km2": 1990,
 "change_vs_7_days_km2": 2130
+},
+"2026-11-28": {
+"country": "Norway",
+"country_code": "NO",
+"date": "2026-11-28",
+"quiet": false,
+"modelled_km2": 282220,
+"snow_km2_today": 269720,
+"snow_km2_yesterday": 266090,
+"snow_km2_7_days_ago": 269330,
+"new_cm_24h_max": 3,
+"new_cm_72h_max": 3,
+"area_km2_5cm_new_72h": 620,
+"next_3_days_max_cm": 13,
+"next_7_days_max_cm": 54,
+"snowiest_day": "2026-12-04",
+"snowiest_day_cm": 21,
+"first_snow_day": "2026-11-29",
+"hotspots": [
+{
+"name": "the Narvik mountains",
+"new_cm_72h": 9,
+"lat": 68.522,
+"lon": 15.458
+},
+{
+"name": "Hardangervidda",
+"new_cm_72h": 4,
+"lat": 59.608,
+"lon": 8.078
+}
+],
+"bands": [
+{
+"from_m": 0,
+"to_m": 500,
+"mean_depth_cm": 8,
+"snow_cover_pct": 91
+},
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 18,
+"snow_cover_pct": 100
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 23,
+"snow_cover_pct": 100
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 27,
+"snow_cover_pct": 100
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 37,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 0,
+"white_share_pct": 96,
+"resorts": [
+{
+"name": "Riksgränsen",
+"slug": "riksgransen",
+"depth_cm": 165,
+"new_cm_72h": 2,
+"next_3_days_cm": 0,
+"top_m": 900
+},
+{
+"name": "Sulitjelma Fjellandsby",
+"slug": "sulitjelma_fjellandsby",
+"depth_cm": 126,
+"new_cm_72h": 1,
+"next_3_days_cm": 2,
+"top_m": 542
+},
+{
+"name": "Tromsø Alpinpark",
+"slug": "troms_alpinpark_norway",
+"depth_cm": 106,
+"new_cm_72h": 2,
+"next_3_days_cm": 2,
+"top_m": null
+},
+{
+"name": "Steilia",
+"slug": "steilia",
+"depth_cm": 65,
+"new_cm_72h": 2,
+"next_3_days_cm": 0,
+"top_m": null
+},
+{
+"name": "Galdhøpiggen Sommerskisenter",
+"slug": "galdhpiggen_sommerskisenter",
+"depth_cm": 56,
+"new_cm_72h": 0,
+"next_3_days_cm": 10,
+"top_m": 2180
+}
+],
+"n_resorts": 155,
+"n_resorts_with_snow": 155,
+"resort_next_until": "2026-12-01",
+"week2": {
+"week1_max_cm": 61,
+"week2_max_cm": 72,
+"week2_days": [
+"2026-12-06",
+"2026-12-12"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 3630,
+"change_vs_7_days_km2": 390
 }
 }
 }

@@ -1338,6 +1338,123 @@
 },
 "change_vs_yesterday_km2": 3560,
 "change_vs_7_days_km2": 7270
+},
+"2026-11-28": {
+"country": "UK",
+"country_code": "GB",
+"date": "2026-11-28",
+"quiet": false,
+"modelled_km2": 37520,
+"snow_km2_today": 12310,
+"snow_km2_yesterday": 14850,
+"snow_km2_7_days_ago": 13140,
+"new_cm_24h_max": 3,
+"new_cm_72h_max": 13,
+"area_km2_5cm_new_72h": 7340,
+"next_3_days_max_cm": 5,
+"next_7_days_max_cm": 8,
+"snowiest_day": "2026-11-29",
+"snowiest_day_cm": 5,
+"first_snow_day": "2026-11-29",
+"hotspots": [
+{
+"name": "Glenshee and the Grampians",
+"new_cm_72h": 19,
+"lat": 56.879,
+"lon": -3.128
+},
+{
+"name": "Glencoe",
+"new_cm_72h": 16,
+"lat": 56.276,
+"lon": -4.75
+},
+{
+"name": "Lochaber (Ben Nevis)",
+"new_cm_72h": 15,
+"lat": 56.803,
+"lon": -5.024
+}
+],
+"bands": [
+{
+"from_m": 0,
+"to_m": 500,
+"mean_depth_cm": 1,
+"snow_cover_pct": 17
+},
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 7,
+"snow_cover_pct": 73
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 22,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 500,
+"white_share_pct": 33,
+"resorts": [
+{
+"name": "Glenshee",
+"slug": "glenshee_ski_center",
+"depth_cm": 35,
+"new_cm_72h": 16,
+"next_3_days_cm": 1,
+"top_m": 1028
+},
+{
+"name": "Nevis Range",
+"slug": "nevis_range",
+"depth_cm": 35,
+"new_cm_72h": 13,
+"next_3_days_cm": 12,
+"top_m": 1190
+},
+{
+"name": "Glencoe",
+"slug": "glencoe_mountain_resort",
+"depth_cm": 26,
+"new_cm_72h": 13,
+"next_3_days_cm": 8,
+"top_m": 1079
+},
+{
+"name": "Cairngorm Mountain",
+"slug": "cairngorm_mountain",
+"depth_cm": 19,
+"new_cm_72h": 8,
+"next_3_days_cm": 1,
+"top_m": 784
+},
+{
+"name": "Yad Moss",
+"slug": "yad_moss",
+"depth_cm": 15,
+"new_cm_72h": 1,
+"next_3_days_cm": 0,
+"top_m": 719
+}
+],
+"n_resorts": 30,
+"n_resorts_with_snow": 12,
+"resort_next_until": "2026-12-01",
+"week2": {
+"week1_max_cm": 3,
+"week2_max_cm": 5,
+"week2_days": [
+"2026-12-06",
+"2026-12-12"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": -2540,
+"change_vs_7_days_km2": -830
 }
 }
 }

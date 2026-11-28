@@ -1279,6 +1279,117 @@
 },
 "change_vs_yesterday_km2": 170,
 "change_vs_7_days_km2": 1300
+},
+"2026-11-28": {
+"country": "Sweden",
+"country_code": "SE",
+"date": "2026-11-28",
+"quiet": false,
+"modelled_km2": 326490,
+"snow_km2_today": 315190,
+"snow_km2_yesterday": 314840,
+"snow_km2_7_days_ago": 314320,
+"new_cm_24h_max": 1,
+"new_cm_72h_max": 1,
+"area_km2_5cm_new_72h": 0,
+"next_3_days_max_cm": 4,
+"next_7_days_max_cm": 32,
+"snowiest_day": "2026-12-04",
+"snowiest_day_cm": 15,
+"first_snow_day": "2026-11-29",
+"hotspots": [
+{
+"name": "the Lapland fjells",
+"new_cm_72h": 3,
+"lat": 68.099,
+"lon": 17.339
+}
+],
+"bands": [
+{
+"from_m": 0,
+"to_m": 500,
+"mean_depth_cm": 14,
+"snow_cover_pct": 95
+},
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 15,
+"snow_cover_pct": 100
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 42,
+"snow_cover_pct": 100
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 66,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 0,
+"white_share_pct": 97,
+"resorts": [
+{
+"name": "Björkliden",
+"slug": "bjorkliden",
+"depth_cm": 136,
+"new_cm_72h": 1,
+"next_3_days_cm": 0,
+"top_m": 933
+},
+{
+"name": "Abisko",
+"slug": "abisko",
+"depth_cm": 136,
+"new_cm_72h": 0,
+"next_3_days_cm": 0,
+"top_m": 902
+},
+{
+"name": "Skulebacken",
+"slug": "skulebacken",
+"depth_cm": 42,
+"new_cm_72h": 0,
+"next_3_days_cm": 0,
+"top_m": 286
+},
+{
+"name": "Hallsta Ski",
+"slug": "hallsta_ski",
+"depth_cm": 40,
+"new_cm_72h": 0,
+"next_3_days_cm": 0,
+"top_m": 320
+},
+{
+"name": "Bjästabacken",
+"slug": "bjastabacken",
+"depth_cm": 38,
+"new_cm_72h": 0,
+"next_3_days_cm": 0,
+"top_m": 142
+}
+],
+"n_resorts": 75,
+"n_resorts_with_snow": 72,
+"resort_next_until": "2026-12-01",
+"week2": {
+"week1_max_cm": 28,
+"week2_max_cm": 30,
+"week2_days": [
+"2026-12-06",
+"2026-12-12"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": 350,
+"change_vs_7_days_km2": 870
 }
 }
 }

@@ -1428,6 +1428,129 @@
 },
 "change_vs_yesterday_km2": -110,
 "change_vs_7_days_km2": 6280
+},
+"2026-11-28": {
+"country": "Slovenia",
+"country_code": "SI",
+"date": "2026-11-28",
+"quiet": false,
+"modelled_km2": 7340,
+"snow_km2_today": 6790,
+"snow_km2_yesterday": 6960,
+"snow_km2_7_days_ago": 760,
+"new_cm_24h_max": 1,
+"new_cm_72h_max": 32,
+"area_km2_5cm_new_72h": 6640,
+"next_3_days_max_cm": 1,
+"next_7_days_max_cm": 2,
+"snowiest_day": "2026-11-29",
+"snowiest_day_cm": 1,
+"first_snow_day": "2026-11-29",
+"hotspots": [
+{
+"name": "the Julian Alps",
+"new_cm_72h": 42,
+"lat": 46.423,
+"lon": 13.676
+},
+{
+"name": "the Kamnik-Savinja Alps",
+"new_cm_72h": 27,
+"lat": 45.604,
+"lon": 14.868
+},
+{
+"name": "Pohorje",
+"new_cm_72h": 20,
+"lat": 46.491,
+"lon": 15.237
+}
+],
+"bands": [
+{
+"from_m": 500,
+"to_m": 1000,
+"mean_depth_cm": 7,
+"snow_cover_pct": 89
+},
+{
+"from_m": 1000,
+"to_m": 1500,
+"mean_depth_cm": 12,
+"snow_cover_pct": 100
+},
+{
+"from_m": 1500,
+"to_m": 2000,
+"mean_depth_cm": 26,
+"snow_cover_pct": 100
+},
+{
+"from_m": 2000,
+"to_m": 2500,
+"mean_depth_cm": 39,
+"snow_cover_pct": 100
+}
+],
+"snow_line_m": 600,
+"white_share_pct": 93,
+"resorts": [
+{
+"name": "Sella Nevea",
+"slug": "sella_nevea_kanin_sella_nevea_canin_kanin_sella_",
+"depth_cm": 50,
+"new_cm_72h": 34,
+"next_3_days_cm": 0,
+"top_m": 2137
+},
+{
+"name": "Vogel",
+"slug": "vogel",
+"depth_cm": 46,
+"new_cm_72h": 31,
+"next_3_days_cm": 0,
+"top_m": 1731
+},
+{
+"name": "Kranjska Gora",
+"slug": "kranjska_gora",
+"depth_cm": 38,
+"new_cm_72h": 29,
+"next_3_days_cm": 0,
+"top_m": 1568
+},
+{
+"name": "Krvavec",
+"slug": "krvavec",
+"depth_cm": 34,
+"new_cm_72h": 20,
+"next_3_days_cm": 0,
+"top_m": 1963
+},
+{
+"name": "Pokljuka",
+"slug": "pokljuka",
+"depth_cm": 33,
+"new_cm_72h": 27,
+"next_3_days_cm": 0,
+"top_m": 1564
+}
+],
+"n_resorts": 27,
+"n_resorts_with_snow": 25,
+"resort_next_until": "2026-12-01",
+"week2": {
+"week1_max_cm": 2,
+"week2_max_cm": 3,
+"week2_days": [
+"2026-12-06",
+"2026-12-12"
+],
+"from_day": 8,
+"to_day": 14
+},
+"change_vs_yesterday_km2": -170,
+"change_vs_7_days_km2": 6030
 }
 }
 }
