@@ -18,7 +18,7 @@
   "MONEY",
   "SNOW"
  ],
- "snow_day0": "2026-11-27",
+ "snow_day0": "2026-11-28",
  "snow_stale": false,
  "projection": true,
  "travel": null,
@@ -63,27 +63,27 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 0,
+    "now_cm": 10,
     "start": {
-     "cm": 10,
-     "p20": 5,
-     "p50": 10,
+     "cm": 15,
+     "p20": 10,
+     "p50": 15,
      "p80": 20,
-     "p_ge50": 0.0,
+     "p_ge50": 0.01,
      "basis": "ensemble+climatology",
      "normal_cm": 25,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 13,
-       "p50_cm": 15
+       "snowfall_p50_cm": 11,
+       "p50_cm": 20
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 16,
-       "p50_cm": 10
+       "snowfall_p50_cm": 20,
+       "p50_cm": 15
       }
      },
      "winters": 46
@@ -107,14 +107,14 @@
     "pistes": "LOW",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.14,
+   "value_cm_per_eur": 0.21,
    "pros": [
     "solid all-rounder"
    ],
    "cons": [
     "1,489 EUR per person",
     "only 41 km of pistes",
-    "~10 cm at the start"
+    "~15 cm at the start"
    ],
    "score": 100.0,
    "score_parts": {
@@ -122,106 +122,6 @@
     "SNOW": 100
    },
    "rank": 1
-  },
-  {
-   "slug": "sunday_river",
-   "label": "Sunday River",
-   "country": "US",
-   "area": "Maine",
-   "lat": 44.46687,
-   "lon": -70.87441,
-   "top_m": 955,
-   "base_m": 249,
-   "km": 86.0,
-   "lifts": 20,
-   "opens": "2026-11-18",
-   "pass_day_eur": 144.87,
-   "pass_day_walkup": 144.87,
-   "pass_day_multi_eur": 120.5,
-   "pass_multi": {
-    "days": 4,
-    "price": 529.0,
-    "ccy": "USD",
-    "per_day": 132.25,
-    "estimated": false,
-    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
-    "src": "https://www.ikonpass.com/en/passes/session-pass"
-   },
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 159.0,
-    "regular": 81.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult 1-day, online advance, dynamic by date; Ikon-partner (Boyne) resort; 2026-27 adult day tickets reported ranging ~$89-$159 at peak, with weekday ~$81/weekend ~$117 cited separately; holiday figure is the top of that reported peak range",
-   "pass_src": "https://www.sundayriver.com/lift-tickets/full-day ; range cross-checked via https://www.onthesnow.com/maine/sunday-river/lift-tickets (Nov 2026)",
-   "night_eur": 109.34,
-   "food_day_eur": 54.67,
-   "stay_src": "estimate: based on Sunday River condo-rental search (condos roughly $120-$680/night total depending on size), per-person figure assumes sharing a 2-4 person condo; Bethel ME area food costs modest",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 0,
-    "start": {
-     "cm": 10,
-     "p20": 5,
-     "p50": 10,
-     "p80": 15,
-     "p_ge50": 0.0,
-     "basis": "ensemble+climatology",
-     "normal_cm": 30,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 7,
-       "p50_cm": 10
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 16,
-       "p50_cm": 5
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 723,
-    "hotel_eur": 765,
-    "food_eur": 383,
-    "total_eur": 1871,
-    "pass_basis": "advance 4-day pass",
-    "pass_walkup": 869,
-    "party_total_eur": 1871,
-    "left_eur": -871,
-    "need_eur": 871,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "MID",
-    "pistes": "MID",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.08,
-   "pros": [
-    "solid all-rounder"
-   ],
-   "cons": [
-    "1,871 EUR per person",
-    "~10 cm at the start",
-    "4-day pass 529 USD"
-   ],
-   "score": 70.0,
-   "score_parts": {
-    "MONEY": 40,
-    "SNOW": 100
-   },
-   "rank": 2
   },
   {
    "slug": "stowe",
@@ -263,27 +163,27 @@
     "food_day_eur"
    ],
    "snow": {
-    "now_cm": 5,
+    "now_cm": 10,
     "start": {
-     "cm": 10,
-     "p20": 5,
-     "p50": 10,
-     "p80": 20,
-     "p_ge50": 0.01,
+     "cm": 15,
+     "p20": 10,
+     "p50": 15,
+     "p80": 25,
+     "p_ge50": 0.02,
      "basis": "ensemble+climatology",
      "normal_cm": 30,
      "families": {
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 12,
-       "p50_cm": 15
+       "snowfall_p50_cm": 14,
+       "p50_cm": 20
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 12,
-       "p50_cm": 10
+       "snowfall_p50_cm": 8,
+       "p50_cm": 15
       }
      },
      "winters": 46
@@ -307,19 +207,119 @@
     "pistes": "MID",
     "snow": "LOW"
    },
-   "value_cm_per_eur": 0.11,
+   "value_cm_per_eur": 0.16,
    "pros": [
     "solid all-rounder"
    ],
    "cons": [
     "2,014 EUR per person",
     "nights from 146 EUR per person",
-    "~10 cm at the start"
+    "~15 cm at the start"
    ],
    "score": 58.8,
    "score_parts": {
     "MONEY": 18,
     "SNOW": 100
+   },
+   "rank": 2
+  },
+  {
+   "slug": "sugarbush_resort",
+   "label": "Sugarbush",
+   "country": "US",
+   "area": "Vermont",
+   "lat": 44.14817,
+   "lon": -72.90809,
+   "top_m": 1238,
+   "base_m": 461,
+   "km": 80.0,
+   "lifts": 18,
+   "opens": "2026-11-21",
+   "pass_day_eur": 181.32,
+   "pass_day_walkup": 181.32,
+   "pass_day_multi_eur": 120.5,
+   "pass_multi": {
+    "days": 4,
+    "price": 529.0,
+    "ccy": "USD",
+    "per_day": 132.25,
+    "estimated": false,
+    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
+    "src": "https://www.ikonpass.com/en/passes/session-pass"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 199.0,
+    "regular": 129.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day, online advance; Sugarbush publishes a flat weekday ($129) / weekend ($199) adult online price rather than per-day dynamic calendar pricing for 2026-27 (Ikon-partner resort); holiday period treated as weekend-tier pricing",
+   "pass_src": "https://www.sugarbush.com/plan-your-trip/lift-tickets",
+   "night_eur": 118.45,
+   "food_day_eur": 59.23,
+   "stay_src": "estimate: based on general Mad River Valley (Warren/Waitsfield VT) lodging cost tier, similar to Killington/Okemo, plus ~$20-25 on-mountain lunch",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 5,
+    "start": {
+     "cm": 10,
+     "p20": 10,
+     "p50": 10,
+     "p80": 20,
+     "p_ge50": 0.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 20,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 8,
+       "p50_cm": 15
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 6,
+       "p50_cm": 10
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 723,
+    "hotel_eur": 829,
+    "food_eur": 415,
+    "total_eur": 1967,
+    "pass_basis": "advance 4-day pass",
+    "pass_walkup": 1088,
+    "party_total_eur": 1967,
+    "left_eur": -967,
+    "need_eur": 967,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.08,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,967 EUR per person",
+    "~10 cm at the start",
+    "4-day pass 529 USD"
+   ],
+   "score": 37.5,
+   "score_parts": {
+    "MONEY": 25,
+    "SNOW": 50
    },
    "rank": 3
   },
@@ -376,13 +376,13 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 12,
+       "snowfall_p50_cm": 9,
        "p50_cm": 10
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 10,
+       "snowfall_p50_cm": 8,
        "p50_cm": 5
       }
      },
@@ -476,14 +476,14 @@
       "ECMWF": {
        "members": 51,
        "horizon_days": 14,
-       "snowfall_p50_cm": 8,
+       "snowfall_p50_cm": 7,
        "p50_cm": 10
       },
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 8,
-       "p50_cm": 5
+       "snowfall_p50_cm": 5,
+       "p50_cm": 0
       }
      },
      "winters": 46
@@ -522,6 +522,106 @@
     "SNOW": 0
    },
    "rank": 5
+  },
+  {
+   "slug": "sunday_river",
+   "label": "Sunday River",
+   "country": "US",
+   "area": "Maine",
+   "lat": 44.46687,
+   "lon": -70.87441,
+   "top_m": 955,
+   "base_m": 249,
+   "km": 86.0,
+   "lifts": 20,
+   "opens": "2026-11-18",
+   "pass_day_eur": 144.87,
+   "pass_day_walkup": 144.87,
+   "pass_day_multi_eur": 120.5,
+   "pass_multi": {
+    "days": 4,
+    "price": 529.0,
+    "ccy": "USD",
+    "per_day": 132.25,
+    "estimated": false,
+    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
+    "src": "https://www.ikonpass.com/en/passes/session-pass"
+   },
+   "pass_day_local": {
+    "ccy": "USD",
+    "holiday": 159.0,
+    "regular": 81.0
+   },
+   "pass_period": "holiday",
+   "pass_note": "adult 1-day, online advance, dynamic by date; Ikon-partner (Boyne) resort; 2026-27 adult day tickets reported ranging ~$89-$159 at peak, with weekday ~$81/weekend ~$117 cited separately; holiday figure is the top of that reported peak range",
+   "pass_src": "https://www.sundayriver.com/lift-tickets/full-day ; range cross-checked via https://www.onthesnow.com/maine/sunday-river/lift-tickets (Nov 2026)",
+   "night_eur": 109.34,
+   "food_day_eur": 54.67,
+   "stay_src": "estimate: based on Sunday River condo-rental search (condos roughly $120-$680/night total depending on size), per-person figure assumes sharing a 2-4 person condo; Bethel ME area food costs modest",
+   "estimates": [
+    "night_eur",
+    "food_day_eur"
+   ],
+   "snow": {
+    "now_cm": 0,
+    "start": {
+     "cm": 5,
+     "p20": 0,
+     "p50": 5,
+     "p80": 15,
+     "p_ge50": 0.0,
+     "basis": "ensemble+climatology",
+     "normal_cm": 30,
+     "families": {
+      "ECMWF": {
+       "members": 51,
+       "horizon_days": 14,
+       "snowfall_p50_cm": 5,
+       "p50_cm": 10
+      },
+      "GFS": {
+       "members": 31,
+       "horizon_days": 33,
+       "snowfall_p50_cm": 15,
+       "p50_cm": 5
+      }
+     },
+     "winters": 46
+    }
+   },
+   "cost": {
+    "pass_eur": 723,
+    "hotel_eur": 765,
+    "food_eur": 383,
+    "total_eur": 1871,
+    "pass_basis": "advance 4-day pass",
+    "pass_walkup": 869,
+    "party_total_eur": 1871,
+    "left_eur": -871,
+    "need_eur": 871,
+    "fits": false
+   },
+   "tiers": {
+    "pass": "HIGH",
+    "hotel": "MID",
+    "pistes": "MID",
+    "snow": "LOW"
+   },
+   "value_cm_per_eur": 0.04,
+   "pros": [
+    "solid all-rounder"
+   ],
+   "cons": [
+    "1,871 EUR per person",
+    "~5 cm at the start",
+    "4-day pass 529 USD"
+   ],
+   "score": 20.0,
+   "score_parts": {
+    "MONEY": 40,
+    "SNOW": 0
+   },
+   "rank": 6
   },
   {
    "slug": "killington",
@@ -582,7 +682,7 @@
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 9,
+       "snowfall_p50_cm": 6,
        "p50_cm": 5
       }
      },
@@ -619,106 +719,6 @@
    "score": 16.6,
    "score_parts": {
     "MONEY": 33,
-    "SNOW": 0
-   },
-   "rank": 6
-  },
-  {
-   "slug": "sugarbush_resort",
-   "label": "Sugarbush",
-   "country": "US",
-   "area": "Vermont",
-   "lat": 44.14817,
-   "lon": -72.90809,
-   "top_m": 1238,
-   "base_m": 461,
-   "km": 80.0,
-   "lifts": 18,
-   "opens": "2026-11-21",
-   "pass_day_eur": 181.32,
-   "pass_day_walkup": 181.32,
-   "pass_day_multi_eur": 120.5,
-   "pass_multi": {
-    "days": 4,
-    "price": 529.0,
-    "ccy": "USD",
-    "per_day": 132.25,
-    "estimated": false,
-    "note": "Ikon Session Pass 4-Day, adult 23+, 2026-27 season, advance online purchase",
-    "src": "https://www.ikonpass.com/en/passes/session-pass"
-   },
-   "pass_day_local": {
-    "ccy": "USD",
-    "holiday": 199.0,
-    "regular": 129.0
-   },
-   "pass_period": "holiday",
-   "pass_note": "adult 1-day, online advance; Sugarbush publishes a flat weekday ($129) / weekend ($199) adult online price rather than per-day dynamic calendar pricing for 2026-27 (Ikon-partner resort); holiday period treated as weekend-tier pricing",
-   "pass_src": "https://www.sugarbush.com/plan-your-trip/lift-tickets",
-   "night_eur": 118.45,
-   "food_day_eur": 59.23,
-   "stay_src": "estimate: based on general Mad River Valley (Warren/Waitsfield VT) lodging cost tier, similar to Killington/Okemo, plus ~$20-25 on-mountain lunch",
-   "estimates": [
-    "night_eur",
-    "food_day_eur"
-   ],
-   "snow": {
-    "now_cm": 0,
-    "start": {
-     "cm": 5,
-     "p20": 5,
-     "p50": 5,
-     "p80": 15,
-     "p_ge50": 0.0,
-     "basis": "ensemble+climatology",
-     "normal_cm": 20,
-     "families": {
-      "ECMWF": {
-       "members": 51,
-       "horizon_days": 14,
-       "snowfall_p50_cm": 8,
-       "p50_cm": 10
-      },
-      "GFS": {
-       "members": 31,
-       "horizon_days": 33,
-       "snowfall_p50_cm": 12,
-       "p50_cm": 5
-      }
-     },
-     "winters": 46
-    }
-   },
-   "cost": {
-    "pass_eur": 723,
-    "hotel_eur": 829,
-    "food_eur": 415,
-    "total_eur": 1967,
-    "pass_basis": "advance 4-day pass",
-    "pass_walkup": 1088,
-    "party_total_eur": 1967,
-    "left_eur": -967,
-    "need_eur": 967,
-    "fits": false
-   },
-   "tiers": {
-    "pass": "HIGH",
-    "hotel": "MID",
-    "pistes": "MID",
-    "snow": "LOW"
-   },
-   "value_cm_per_eur": 0.04,
-   "pros": [
-    "solid all-rounder"
-   ],
-   "cons": [
-    "1,967 EUR per person",
-    "~5 cm at the start",
-    "4-day pass 529 USD"
-   ],
-   "score": 12.5,
-   "score_parts": {
-    "MONEY": 25,
     "SNOW": 0
    },
    "rank": 7
@@ -782,7 +782,7 @@
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 14,
+       "snowfall_p50_cm": 10,
        "p50_cm": 5
       }
      },
@@ -882,7 +882,7 @@
       "GFS": {
        "members": 31,
        "horizon_days": 33,
-       "snowfall_p50_cm": 10,
+       "snowfall_p50_cm": 8,
        "p50_cm": 5
       }
      },
