@@ -62,8 +62,26 @@
       install: "حمّل", close: "سدّ", app_h: "حمّل التطبيق المجاني", app_push: "توصل بتنبيه فالليلة اللي قبل نهار التلج", app_on: "حمّلو من", app_ios: "حمّلو من",
       app_scan: "سكاني بالتليفون ديالك" },
   };
+  // follow bar + weekly outlook texts (owner 2026-11-28); Arabic pages fall back to English like the sheet
+  const TB = {
+    en: { bar_h: "Snow for {p} every morning", bar_hr: "Where it snows in the {r} this weekend", bar_h0: "Where it snows this weekend",
+      bar_s: "Free e-mail: today and tomorrow, plus the weekend outlook on Thursdays", bar_s0: "Free e-mail every Thursday: the snowiest resorts for the weekend",
+      go: "Send", weekly: "Thursdays: the weekend powder outlook for the region (free)" },
+    fr: { bar_h: "La neige à {p} chaque matin", bar_hr: "Où il neige ce week-end : {r}", bar_h0: "Où il neige ce week-end",
+      bar_s: "E-mail gratuit : aujourd'hui et demain, plus la tendance du week-end le jeudi", bar_s0: "E-mail gratuit chaque jeudi : les stations les plus enneigées du week-end",
+      go: "Envoyer", weekly: "Le jeudi : la tendance poudreuse du week-end pour la région (gratuit)" },
+    de: { bar_h: "Schnee in {p} jeden Morgen", bar_hr: "Wo es am Wochenende schneit: {r}", bar_h0: "Wo es am Wochenende schneit",
+      bar_s: "Gratis E-Mail: heute und morgen, dazu donnerstags der Wochenend-Ausblick", bar_s0: "Gratis E-Mail jeden Donnerstag: die schneereichsten Gebiete fürs Wochenende",
+      go: "Senden", weekly: "Donnerstags: der Powder-Ausblick fürs Wochenende für die Region (gratis)" },
+    it: { bar_h: "La neve a {p} ogni mattina", bar_hr: "Dove nevica questo weekend: {r}", bar_h0: "Dove nevica questo weekend",
+      bar_s: "E-mail gratuita: oggi e domani, più le previsioni del weekend il giovedì", bar_s0: "E-mail gratuita ogni giovedì: le località con più neve per il weekend",
+      go: "Invia", weekly: "Il giovedì: le previsioni neve del weekend per la regione (gratis)" },
+    es: { bar_h: "La nieve en {p} cada mañana", bar_hr: "Dónde nieva este fin de semana: {r}", bar_h0: "Dónde nieva este fin de semana",
+      bar_s: "E-mail gratis: hoy y mañana, más la previsión del fin de semana los jueves", bar_s0: "E-mail gratis cada jueves: las estaciones con más nieve para el fin de semana",
+      go: "Enviar", weekly: "Los jueves: la previsión de nieve del fin de semana para la región (gratis)" },
+  };
   const lang = () => { const l = ((W.I18N && I18N.lang) || D.documentElement.lang || "en").slice(0, 2).toLowerCase(); return T[l] ? l : "en"; };
-  const t = (k, v) => { const s = (T[lang()][k] || T.en[k] || k); return v ? s.replace(/\{(\w)\}/g, (_, x) => (v[x] != null ? v[x] : "")) : s; };
+  const t = (k, v) => { const s = (T[lang()][k] || (TB[lang()] || {})[k] || T.en[k] || TB.en[k] || k); return v ? s.replace(/\{(\w)\}/g, (_, x) => (v[x] != null ? v[x] : "")) : s; };
   const us = () => { try { return !!(W.SS && SS.U && SS.U.us && SS.U.us()); } catch { return false; } };
   const hit = (p) => { try { if (W.SS && SS.hit) SS.hit(p, "web"); } catch { /* ignore */ } };
   const ANDROID = /Android/i.test(navigator.userAgent || "");
@@ -156,7 +174,7 @@
 .fw-btn.alt{background:#0d1b2e}@media(prefers-color-scheme:dark){.fw-btn.alt{background:#e8eef7;color:#0d1b2e}}
 .fw-btn[disabled]{opacity:.6}.fw-or{text-align:center;margin:12px 0 0;font-size:13px;opacity:.75}.fw-row2{display:flex;gap:8px;margin-top:8px}.fw-row2 .fw-btn{margin:0;width:auto;padding:0 16px}
 .fw-msg{margin:12px 0 0;padding:10px 12px;border-radius:12px;font-weight:600}.fw-msg.ok{background:#e3f6e8;color:#0d5a26}.fw-msg.err{background:#fde8e8;color:#8a1111}
-.fw-note{margin:12px 0 0;font-size:12.5px;opacity:.75}.fw-app{display:flex;align-items:center;gap:10px;margin-top:12px;padding:12px;border-radius:14px;background:rgba(20,99,243,.08);color:inherit;text-decoration:none;font-weight:700}
+.fw-note{margin:12px 0 0;font-size:12.5px;opacity:.75}.fw-bar{position:fixed;left:8px;right:8px;bottom:8px;z-index:60;display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding:10px 36px 10px 12px;border-radius:16px;background:#fff;color:#111;box-shadow:0 8px 30px rgba(0,0,0,.28);font:500 14px/1.3 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;max-width:560px;margin:0 auto}.fw-bar img{width:36px;height:36px;border-radius:9px;flex:none}.fw-bar-tx{flex:1;min-width:150px}.fw-bar-tx b{display:block;font-size:15px;line-height:1.25}.fw-bar-tx small{color:#555;display:block;margin-top:2px}.fw-bar-f{display:flex;gap:6px;flex:1 1 100%;margin:0}.fw-bar-f input{flex:1;min-width:0;padding:10px;border:1px solid #cfd6e4;border-radius:10px;font:inherit;background:#fff;color:inherit}.fw-bar-f button{padding:10px 14px;border:0;border-radius:10px;background:#1463F3;color:#fff;font:inherit;font-weight:700;cursor:pointer}.fw-bar-f button[data-bell]{background:#fff;color:#1463F3;border:1px solid #cfd6e4;padding:8px 10px}.fw-bar [data-x]{position:absolute;top:2px;right:6px;border:0;background:none;font-size:22px;line-height:1;color:#666;cursor:pointer;padding:4px}.fw-bar.ok{justify-content:center;padding:14px 16px}.fw-bar.ok p{margin:0;font-weight:600}.fw-bar .fw-msg{flex:1 1 100%;margin:0}@media (prefers-color-scheme:dark){.fw-bar{background:#1c2230;color:#eef}.fw-bar-tx small{color:#aab}.fw-bar-f input{background:#0f1420;color:#eef;border-color:#3a4458}.fw-bar-f button[data-bell]{background:#0f1420;border-color:#3a4458}}.fw-app{display:flex;align-items:center;gap:10px;margin-top:12px;padding:12px;border-radius:14px;background:rgba(20,99,243,.08);color:inherit;text-decoration:none;font-weight:700}
 .fw-app{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:12px 0;padding:12px 14px;border-radius:16px;background:var(--surface,#fff);border:1px solid var(--outline,#D3DAE3);box-shadow:0 1px 2px rgba(11,18,32,.06);color:inherit;text-align:start}
 .fw-app-ic{width:56px;height:56px;border-radius:14px;flex:none}.fw-app-tx{min-width:0;flex:1 1 150px}.fw-app-tx b{display:block;font-size:16px;font-weight:700;line-height:1.2}.fw-app-tx small{display:block;font-size:13px;opacity:.8;margin-top:2px;line-height:1.3}
 .fw-badge{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;margin-top:8px;padding:5px 12px 5px 9px;border-radius:8px;background:#000;color:#fff;text-decoration:none;line-height:1.05;border:1px solid #777}
@@ -233,6 +251,7 @@
       '<span class="fw-lab">' + esc(t("when")) + '</span><div class="fw-seg" role="group">' + TH.map((v, i) => '<button type="button" data-t="' + v + '" aria-pressed="' + (i === 1) + '"' + (alertsLocked() && v !== FREE_TH ? ' data-tlock="1"' : "") + ">" + (U ? [4, 8, 12][i] + " in" : v + " cm") + (alertsLocked() && v !== FREE_TH ? ' <span class="ms f" style="font-size:14px;color:var(--gold-ink,#7A5A00)" aria-label="Pro">lock</span>' : "") + "</button>").join("") + "</div>" +
       (alertsLocked() ? '<p class="fw-note" style="margin-top:6px"><span class="pro" style="font-size:10px">PRO</span> ' + esc((W.I18N ? I18N.t("Free: 1 resort at the default threshold. Pro: every resort, regions and your own threshold.") : "Free: 1 resort at the default threshold. Pro: every resort, regions and your own threshold.")) + "</p>" : "") +
       '<label class="fw-chk"><input type="checkbox" data-daily checked> <span>' + esc(t("daily")) + "</span></label>" +
+      '<label class="fw-chk"><input type="checkbox" data-weekly checked> <span>' + esc(t("weekly")) + "</span></label>" +
       (PUSH_OK ? '<button class="fw-btn" data-push><span class="ms f" aria-hidden="true">notifications</span>' + esc(t("notify")) + '</button><p class="fw-or">' + esc(t("or_email")) + "</p>" : "") +
       '<div class="fw-row2"><input class="fw-in" type="email" data-email autocomplete="email" inputmode="email" placeholder="you@example.com" aria-label="E-mail"><button class="fw-btn' + (PUSH_OK ? " alt" : "") + '" data-mail>' + esc(t("send")) + "</button></div>" +
       '<p class="fw-msg" data-msg hidden role="status"></p><div data-after></div><p class="fw-note">' + esc(t("note")) + "</p></div>";
@@ -248,6 +267,7 @@
       const v = el.querySelector("#fw-sel").value, th = +((el.querySelector('[data-t][aria-pressed="true"]') || {}).dataset || {}).t || 20;
       const r = v.startsWith("r:") ? [v.slice(2)] : [], g = v.startsWith("g:") ? [v.slice(2)] : [];
       return { resorts: r, regions: g, threshold: th, daily: el.querySelector("[data-daily]").checked && r.length > 0, alerts: true, via,
+        weekly: el.querySelector("[data-weekly]").checked,
         lang: ["fr", "de", "it", "es"].includes(lang()) ? lang() : "en", units: U ? "imperial" : "metric", _key: v, _label: el.querySelector("#fw-sel").selectedOptions[0].textContent.replace(/^★ /, "") };
     };
     const after = (s, how) => {
@@ -341,7 +361,7 @@
     const c = context(), btn = D.querySelector("[data-fw-alert][data-fw-slug]");
     const slug = c.slug || (btn && btn.dataset.fwSlug) || (favs()[0] || {}).s || "";
     const show = async () => {
-      if (D.querySelector(".fw-banner") || D.querySelector(".fw-scrim") || D.querySelector(".fw-app")) return;   // the card is already on the page
+      if (D.querySelector(".fw-banner, .fw-scrim, .fw-app, .fw-bar")) return;   // the card / bar is already on the page
       let name = (btn && btn.dataset.fwSlug === slug && btn.dataset.fwName) || ((favs().find((f) => f.s === slug) || {}).n) || "";
       if (slug && !name && c.slug) { const r = await nameOf(slug); name = r ? r.n : ""; }
       style();
@@ -354,6 +374,68 @@
       hit("/follow/banner/show");
     };
     setTimeout(show, 6000);
+  }
+
+
+  // ---------------------------------------------------------------- follow bar (owner 2026-11-28): a slim bottom bar, never a full-screen
+  // popup (Google counts those as intrusive interstitials on pages opened from search). Shown once a week per browser after
+  // 45 % scroll, 25 s, or desktop exit intent; not when the visitor already follows something, in the apps, or while the
+  // sheet / Android banner is up. One field: e-mail (morning forecast for the page's resort + Thursday weekend outlook),
+  // plus the bell (browser notifications) where the browser supports them.
+  function bar() {
+    if (STANDALONE || D.body.classList.contains("app")) return;
+    if (Object.keys(followed()).length) return;
+    const x = LS.get("ss_bar_x");
+    if (typeof x === "number" && Date.now() - x < 7 * 864e5) return;
+    const c = context(), btn = D.querySelector("[data-fw-alert][data-fw-slug]");
+    const slug = c.slug || (btn && btn.dataset.fwSlug) || "", region = c.region || (btn && btn.dataset.fwRegion) || "";
+    if (!slug && alertsLocked()) return;                       // Pro split: a region follow is Pro, no free offer to make
+    let name = (btn && btn.dataset.fwSlug === slug && btn.dataset.fwName) || "", shown = false;
+    const rl = (k) => ((W.I18N && I18N.t) ? I18N.t(REGIONS[k]) : REGIONS[k]);
+    const show = async () => {
+      if (shown || D.querySelector(".fw-scrim, .fw-bar, .fw-banner")) return;
+      shown = true;
+      if (slug && !name) { const r = await nameOf(slug); name = r ? r.n : ""; }
+      style();
+      const g = region && REGIONS[region] ? region : "";
+      const b = D.createElement("div");
+      b.className = "fw-bar"; b.setAttribute("role", "complementary");
+      b.innerHTML = '<button type="button" data-x aria-label="' + esc(t("close")) + '">×</button><img src="' + esc(ROOT + "icon-192.png") + '" alt="" width="36" height="36">' +
+        '<div class="fw-bar-tx"><b>' + esc(slug ? t("bar_h", { p: name || slug }) : g ? t("bar_hr", { r: rl(g) }) : t("bar_h0")) + "</b><small>" + esc(slug ? t("bar_s") : t("bar_s0")) + "</small></div>" +
+        '<form class="fw-bar-f" novalidate><input type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" aria-label="E-mail" required><button type="submit">' + esc(t("go")) + "</button>" +
+        (PUSH_OK ? '<button type="button" data-bell title="' + esc(t("notify")) + '" aria-label="' + esc(t("notify")) + '"><span class="ms f" aria-hidden="true">notifications</span></button>' : "") + "</form>";
+      D.body.appendChild(b);
+      hit("/follow/bar/show");
+      b.querySelector("[data-x]").onclick = () => { LS.set("ss_bar_x", Date.now()); b.remove(); hit("/follow/bar/close"); };
+      const selB = () => ({ resorts: slug ? [slug] : [], regions: slug ? [] : [g || "ALPS"], threshold: FREE_TH, daily: !!slug, weekly: true, alerts: true, via: "bar",
+        lang: ["fr", "de", "it", "es"].includes(lang()) ? lang() : "en", units: us() ? "imperial" : "metric" });
+      const key = (s) => (slug ? "r:" + slug : "g:" + s.regions[0]);
+      const done = (m) => { b.classList.add("ok"); b.innerHTML = '<p role="status">' + esc(m) + "</p>"; LS.set("ss_bar_x", Date.now()); setTimeout(() => b.remove(), 7000); paintAlerts(); };
+      const fail = (m) => { let p = b.querySelector(".fw-msg"); if (!p) { p = D.createElement("p"); p.className = "fw-msg err"; b.appendChild(p); } p.hidden = false; p.textContent = m; };
+      b.querySelector("form").onsubmit = async (e) => {
+        e.preventDefault();
+        const em = b.querySelector("input").value.trim(), s = selB();
+        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { fail(t("bad_email")); return; }
+        const sb = b.querySelector('[type="submit"]'); sb.disabled = true;
+        try {
+          const r = await post("/v1/alerts/powder/subscribe", { email: em, storm: true, ...s });
+          markFollowed(key(s), "mail"); if (slug && !isFav(slug)) toggleFav(slug, name || slug, g);
+          hit("/follow/email/ok"); hit("/follow/bar/ok"); done(r && r.status === "active" ? t("ok_mail_active") : t("ok_mail"));
+        } catch (err) { fail(err.status === 429 ? t("later") : err.status === 422 ? t("bad_email") : t("err")); hit("/follow/email/error"); sb.disabled = false; }
+      };
+      const bell = b.querySelector("[data-bell]");
+      if (bell) bell.onclick = async () => {
+        const s = selB(); bell.disabled = true;
+        try {
+          await pushSubscribe(s); markFollowed(key(s), "push"); if (slug && !isFav(slug)) toggleFav(slug, name || slug, g);
+          hit("/follow/push/ok"); hit("/follow/bar/ok"); done(t("ok_push", { p: name || slug || rl(g || "ALPS") }));
+        } catch (err) { fail(err.code === "denied" ? t("denied") : t("err")); hit("/follow/push/" + (err.code === "denied" ? "denied" : "error")); bell.disabled = false; }
+      };
+    };
+    const onScroll = () => { const h = D.documentElement; if ((W.scrollY + W.innerHeight) / Math.max(1, h.scrollHeight) > 0.45) { W.removeEventListener("scroll", onScroll); show(); } };
+    W.addEventListener("scroll", onScroll, { passive: true });
+    setTimeout(show, 25000);
+    if (!ANDROID && !IOS) D.addEventListener("mouseleave", (e) => { if (e.clientY <= 0) show(); });
   }
 
   // ---------------------------------------------------------------- clicks (delegated: buttons rendered later work too)
@@ -391,6 +473,6 @@
   }
 
   W.Follow = { open, favs, isFav, toggleFav, yourRow, playUrl, playClick, appCard, source, paintFavs, paintAlerts, style, t, proGate, proSheet };
-  const boot = () => { style(); manifest(); paintFavs(); paintAlerts(); cfgReady().then(() => { blogCard(); banner(); }); W.addEventListener("load", sw); if (D.readyState === "complete") sw(); };
+  const boot = () => { style(); manifest(); paintFavs(); paintAlerts(); cfgReady().then(() => { blogCard(); banner(); bar(); }); W.addEventListener("load", sw); if (D.readyState === "complete") sw(); };
   if (D.readyState === "loading") D.addEventListener("DOMContentLoaded", boot); else boot();
 })();

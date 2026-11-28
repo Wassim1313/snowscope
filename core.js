@@ -915,12 +915,15 @@
     return store.get("ss_first") === today ? 0 : null;     // storage blocked: unknown
   }
   let RET;
+  // the owner's own browsers are not visitors (2026-11-28): open snowscope.app/?me=1 once in a browser; every beacon
+  // from it then carries me=1 (the API drops it) and GA4 page views are skipped
+  const ME = (() => { try { if (/[?&]me=1(&|$)/.test(location.search)) store.set("ss_me", 1); return store.get("ss_me") ? 1 : undefined; } catch { return undefined; } })();
   function beacon(path, ref, src) {
     if (BOT || !S.api || !navigator.sendBeacon) return;
     if (RET === undefined) RET = retFlag();
     try {
       navigator.sendBeacon(base("/v1/hit") + "/v1/hit", new Blob([JSON.stringify({ path: String(path).slice(0, 200), ref: ref || "", src: src || "web",
-        lang: (window.I18N && I18N.lang) || "", ret: RET })], { type: "text/plain" }));
+        lang: (window.I18N && I18N.lang) || "", ret: RET, me: ME })], { type: "text/plain" }));
     } catch { /* ignore */ }
   }
   function pageView(path) {
@@ -932,7 +935,7 @@
       return;
     }
     lastPath = path;
-    if (window.gtag) gtag("event", "page_view", { page_location: location.origin + path, page_path: path, page_title: document.title });
+    if (window.gtag && !ME) gtag("event", "page_view", { page_location: location.origin + path, page_path: path, page_title: document.title });
     beacon(path, refHost(), "web");                   // first-party counter: no cookie, hashed + daily-rotating id
   }
   // first-party event beacon (same counter as page views, src "stay22"): /ad/stay22/<placement>/<load|view|click|tap>
@@ -953,7 +956,7 @@
     if (lastPath === null || secs < 1 || BOT || !S.api || !navigator.sendBeacon) return;
     try {
       navigator.sendBeacon(base("/v1/hit") + "/v1/hit", new Blob([JSON.stringify({ path: "/web/time", src: "web",
-        secs: Math.min(secs, 14400), lang: (window.I18N && I18N.lang) || "" })], { type: "text/plain" }));
+        secs: Math.min(secs, 14400), lang: (window.I18N && I18N.lang) || "", me: ME })], { type: "text/plain" }));
     } catch { /* ignore */ }
   }
   document.addEventListener("visibilitychange", () => {
